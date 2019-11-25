@@ -27,8 +27,8 @@ object IAnnotation {
     val __obj = js.Dynamic.literal()
     if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnnotation]
   }
 }

@@ -14,8 +14,8 @@ trait OptimizedSvg extends js.Object {
 object OptimizedSvg {
   @scala.inline
   def apply(data: String, info: Anon_Height, path: String = null): OptimizedSvg = {
-    val __obj = js.Dynamic.literal(data = data, info = info)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptimizedSvg]
   }
 }

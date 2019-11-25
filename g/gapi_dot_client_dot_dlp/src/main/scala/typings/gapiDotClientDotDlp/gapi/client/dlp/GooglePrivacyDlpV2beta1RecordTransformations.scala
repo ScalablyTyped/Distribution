@@ -21,8 +21,8 @@ object GooglePrivacyDlpV2beta1RecordTransformations {
     recordSuppressions: js.Array[GooglePrivacyDlpV2beta1RecordSuppression] = null
   ): GooglePrivacyDlpV2beta1RecordTransformations = {
     val __obj = js.Dynamic.literal()
-    if (fieldTransformations != null) __obj.updateDynamic("fieldTransformations")(fieldTransformations)
-    if (recordSuppressions != null) __obj.updateDynamic("recordSuppressions")(recordSuppressions)
+    if (fieldTransformations != null) __obj.updateDynamic("fieldTransformations")(fieldTransformations.asInstanceOf[js.Any])
+    if (recordSuppressions != null) __obj.updateDynamic("recordSuppressions")(recordSuppressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1RecordTransformations]
   }
 }

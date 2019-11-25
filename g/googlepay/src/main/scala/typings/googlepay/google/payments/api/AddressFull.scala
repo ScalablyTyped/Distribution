@@ -28,8 +28,8 @@ object AddressFull {
     sortingCode: String,
     phoneNumber: String = null
   ): AddressFull = {
-    val __obj = js.Dynamic.literal(address1 = address1, address2 = address2, address3 = address3, administrativeArea = administrativeArea, countryCode = countryCode, locality = locality, name = name, postalCode = postalCode, sortingCode = sortingCode)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    val __obj = js.Dynamic.literal(address1 = address1.asInstanceOf[js.Any], address2 = address2.asInstanceOf[js.Any], address3 = address3.asInstanceOf[js.Any], administrativeArea = administrativeArea.asInstanceOf[js.Any], countryCode = countryCode.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], sortingCode = sortingCode.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressFull]
   }
 }

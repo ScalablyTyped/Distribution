@@ -19,8 +19,8 @@ object GeometryCollection {
     `type`: typings.geojson.geojsonStrings.GeometryCollection,
     bbox: BBox = null
   ): GeometryCollection = {
-    val __obj = js.Dynamic.literal(geometries = geometries)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometryCollection]
   }

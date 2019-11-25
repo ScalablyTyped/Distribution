@@ -14,7 +14,9 @@ import scala.scalajs.js.annotation._
 object typesDecodeMod extends js.Object {
   def decode[T /* <: Record[_, _] */](src: Observable[String], cases: T): Property[DecodedValueOf[T]] = js.native
   def default[T /* <: Record[_, _] */](src: Observable[String], cases: T): Property[DecodedValueOf[T]] = js.native
-  type DecodedValueOf[O] = FlattenedObservable[/* import warning: ImportType.apply Failed type conversion: O[keyof O] */ js.Any]
+  type DecodedValueOf[O] = FlattenedObservable[
+    /* import warning: importer.ImportType#apply Failed type conversion: O[keyof O] */ js.Any
+  ]
   type FlattenedObservable[O] = O
 }
 

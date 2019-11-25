@@ -31,7 +31,7 @@ object ReplyContext {
     reply: StringDictionary[js.Any],
     request: ClientRequest
   ): ReplyContext = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend, reply = reply, request = request)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReplyContext]
   }

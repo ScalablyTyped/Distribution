@@ -12,7 +12,7 @@ trait CountCollectionResult extends js.Object {
 object CountCollectionResult {
   @scala.inline
   def apply(stats: Anon_Total): CountCollectionResult = {
-    val __obj = js.Dynamic.literal(stats = stats)
+    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CountCollectionResult]
   }

@@ -18,7 +18,7 @@ trait TimeNormalizedObject extends js.Object {
 object TimeNormalizedObject {
   @scala.inline
   def apply(count: Double, unitRange: Double): TimeNormalizedObject = {
-    val __obj = js.Dynamic.literal(count = count, unitRange = unitRange)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], unitRange = unitRange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeNormalizedObject]
   }

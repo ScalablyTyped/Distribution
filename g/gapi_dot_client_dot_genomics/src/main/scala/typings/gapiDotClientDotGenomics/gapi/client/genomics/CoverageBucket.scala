@@ -19,7 +19,7 @@ object CoverageBucket {
   def apply(meanCoverage: Int | Double = null, range: Range = null): CoverageBucket = {
     val __obj = js.Dynamic.literal()
     if (meanCoverage != null) __obj.updateDynamic("meanCoverage")(meanCoverage.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverageBucket]
   }
 }

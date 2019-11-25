@@ -35,15 +35,15 @@ object ClusterOptions {
     projection: ProjectionLike = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
   ): ClusterOptions = {
-    val __obj = js.Dynamic.literal(source = source)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(js.Any.fromFunction1(geometryFunction))
-    if (logo != null) __obj.updateDynamic("logo")(logo)
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOptions]
   }
 }

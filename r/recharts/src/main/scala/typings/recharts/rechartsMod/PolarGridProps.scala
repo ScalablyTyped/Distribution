@@ -34,8 +34,8 @@ object PolarGridProps {
     if (gridType != null) __obj.updateDynamic("gridType")(gridType.asInstanceOf[js.Any])
     if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
     if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
-    if (polarAngles != null) __obj.updateDynamic("polarAngles")(polarAngles)
-    if (polarRadius != null) __obj.updateDynamic("polarRadius")(polarRadius)
+    if (polarAngles != null) __obj.updateDynamic("polarAngles")(polarAngles.asInstanceOf[js.Any])
+    if (polarRadius != null) __obj.updateDynamic("polarRadius")(polarRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolarGridProps]
   }
 }

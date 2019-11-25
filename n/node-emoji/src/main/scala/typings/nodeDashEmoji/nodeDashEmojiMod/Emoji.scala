@@ -12,7 +12,7 @@ trait Emoji extends js.Object {
 object Emoji {
   @scala.inline
   def apply(emoji: String, key: String): Emoji = {
-    val __obj = js.Dynamic.literal(emoji = emoji, key = key)
+    val __obj = js.Dynamic.literal(emoji = emoji.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Emoji]
   }

@@ -341,12 +341,12 @@ object types extends js.Object {
   @JSName("appendToMemberExpression")
   def appendToMemberExpression_property[T /* <: Pick[MemberExpression, `object` | property] */](
     member: T,
-    append: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any
+    append: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any
   ): T = js.native
   @JSName("appendToMemberExpression")
   def appendToMemberExpression_property[T /* <: Pick[MemberExpression, `object` | property] */](
     member: T,
-    append: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any,
+    append: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any,
     computed: Boolean
   ): T = js.native
   def argumentPlaceholder(): ArgumentPlaceholder = js.native
@@ -2466,10 +2466,10 @@ object types extends js.Object {
   ): /* is @babel/types.@babel/types.Node */ Boolean = js.native
   def is(`type`: String, n: Null, required: Partial[typings.atBabelTypes.atBabelTypesMod.Node]): /* is @babel/types.@babel/types.Node */ Boolean = js.native
   def is(`type`: String, n: typings.atBabelTypes.atBabelTypesMod.Node): /* is @babel/types.@babel/types.Node */ Boolean = js.native
-  def is[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.Anon_Type<T>> */ Boolean = js.native
-  def is[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T, n: typings.atBabelTypes.atBabelTypesMod.Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.Anon_Type<T>> */ Boolean = js.native
-  def is[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Type[T]] */](`type`: T, n: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node], required: Partial[P]): /* is P */ Boolean = js.native
-  def is[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Type[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = js.native
+  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.Anon_Type<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T, n: typings.atBabelTypes.atBabelTypesMod.Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.Anon_Type<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Type[T]] */](`type`: T, n: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node], required: Partial[P]): /* is P */ Boolean = js.native
+  def is[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Type[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = js.native
   def isAnyTypeAnnotation(): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
   def isAnyTypeAnnotation(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
   def isAnyTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
@@ -3315,8 +3315,8 @@ object types extends js.Object {
   def isPlaceholder(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = js.native
   @JSName("isPlaceholderType")
   def isPlaceholderType_type(
-    placeholderType: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any,
-    targetType: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any
+    placeholderType: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any,
+    targetType: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any
   ): Boolean = js.native
   def isPrivate(): /* is @babel/types.@babel/types.Private */ Boolean = js.native
   def isPrivate(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.Private */ Boolean = js.native
@@ -3804,7 +3804,7 @@ object types extends js.Object {
   def isType(nodetype: js.UndefOr[scala.Nothing], targetType: String): Boolean = js.native
   def isType(nodetype: String, targetType: String): Boolean = js.native
   def isType(nodetype: Null, targetType: String): Boolean = js.native
-  def isType[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](nodetype: String, targetType: T): /* is T */ Boolean = js.native
+  def isType[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](nodetype: String, targetType: T): /* is T */ Boolean = js.native
   def isTypeAlias(): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
   def isTypeAlias(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
   def isTypeAlias(node: js.Object): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
@@ -5336,9 +5336,13 @@ object types extends js.Object {
   def validate[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */, K /* <: String */](
     n: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node],
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): Unit = js.native
-  def validate[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */, K /* <: String */](n: Null, key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): Unit = js.native
+  def validate[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */, K /* <: String */](
+    n: Null,
+    key: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): Unit = js.native
   def valueToNode(): NullLiteral = js.native
   def valueToNode(value: String): StringLiteral = js.native
   def valueToNode(value: js.Array[js.UndefOr[Boolean | Null | String | Double | RegExp | js.Object]]): ArrayExpression = js.native

@@ -48,17 +48,17 @@ object Anon_AltAnnotationIdCountry {
     userIp: String = null
   ): Anon_AltAnnotationIdCountry = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (annotationId != null) __obj.updateDynamic("annotationId")(annotationId)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (!js.isUndefined(showOnlySummaryInResponse)) __obj.updateDynamic("showOnlySummaryInResponse")(showOnlySummaryInResponse)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (annotationId != null) __obj.updateDynamic("annotationId")(annotationId.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnlySummaryInResponse)) __obj.updateDynamic("showOnlySummaryInResponse")(showOnlySummaryInResponse.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltAnnotationIdCountry]
   }
 }

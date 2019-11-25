@@ -24,7 +24,7 @@ trait Fabric extends js.Object {
 object Fabric {
   @scala.inline
   def apply(Answers: Anon_Attributes, Crashlytics: Anon_Crash): Fabric = {
-    val __obj = js.Dynamic.literal(Answers = Answers, Crashlytics = Crashlytics)
+    val __obj = js.Dynamic.literal(Answers = Answers.asInstanceOf[js.Any], Crashlytics = Crashlytics.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Fabric]
   }

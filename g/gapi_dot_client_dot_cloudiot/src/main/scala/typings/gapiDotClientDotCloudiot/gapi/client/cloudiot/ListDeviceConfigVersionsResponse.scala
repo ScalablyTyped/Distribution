@@ -16,7 +16,7 @@ object ListDeviceConfigVersionsResponse {
   @scala.inline
   def apply(deviceConfigs: js.Array[DeviceConfig] = null): ListDeviceConfigVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (deviceConfigs != null) __obj.updateDynamic("deviceConfigs")(deviceConfigs)
+    if (deviceConfigs != null) __obj.updateDynamic("deviceConfigs")(deviceConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeviceConfigVersionsResponse]
   }
 }

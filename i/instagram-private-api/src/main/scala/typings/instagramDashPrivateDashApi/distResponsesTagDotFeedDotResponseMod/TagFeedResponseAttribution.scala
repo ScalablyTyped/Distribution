@@ -11,7 +11,7 @@ trait TagFeedResponseAttribution extends js.Object {
 object TagFeedResponseAttribution {
   @scala.inline
   def apply(name: String): TagFeedResponseAttribution = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagFeedResponseAttribution]
   }

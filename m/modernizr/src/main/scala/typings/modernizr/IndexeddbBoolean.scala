@@ -12,7 +12,7 @@ trait IndexeddbBoolean extends Boolean {
 object IndexeddbBoolean {
   @scala.inline
   def apply(deletedatabase: scala.Boolean): IndexeddbBoolean = {
-    val __obj = js.Dynamic.literal(deletedatabase = deletedatabase)
+    val __obj = js.Dynamic.literal(deletedatabase = deletedatabase.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IndexeddbBoolean]
   }

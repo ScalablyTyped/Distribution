@@ -15,8 +15,8 @@ object TestStatus {
   @scala.inline
   def apply(details: String = null, status: String = null): TestStatus = {
     val __obj = js.Dynamic.literal()
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestStatus]
   }
 }

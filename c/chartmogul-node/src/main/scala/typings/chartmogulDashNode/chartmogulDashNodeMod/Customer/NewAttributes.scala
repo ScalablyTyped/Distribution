@@ -14,8 +14,8 @@ object NewAttributes {
   @scala.inline
   def apply(custom: js.Array[NewCustomAttributes] = null, tags: Strings = null): NewAttributes = {
     val __obj = js.Dynamic.literal()
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewAttributes]
   }
 }

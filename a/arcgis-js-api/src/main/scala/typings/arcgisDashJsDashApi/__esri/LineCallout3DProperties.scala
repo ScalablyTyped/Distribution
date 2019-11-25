@@ -40,10 +40,10 @@ object LineCallout3DProperties {
     `type`: line = null
   ): LineCallout3DProperties = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineCallout3DProperties]
   }
 }

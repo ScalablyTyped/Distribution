@@ -12,7 +12,7 @@ trait WebfontList extends js.Object {
 object WebfontList {
   @scala.inline
   def apply(items: js.Array[WebfontFamily], kind: String): WebfontList = {
-    val __obj = js.Dynamic.literal(items = items, kind = kind)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebfontList]
   }

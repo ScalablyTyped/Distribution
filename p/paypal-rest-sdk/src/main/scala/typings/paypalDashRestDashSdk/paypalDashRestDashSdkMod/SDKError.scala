@@ -21,8 +21,8 @@ object SDKError {
     stack: String,
     response_stringified: String = null
   ): SDKError = {
-    val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode, message = message, response = response, stack = stack)
-    if (response_stringified != null) __obj.updateDynamic("response_stringified")(response_stringified)
+    val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+    if (response_stringified != null) __obj.updateDynamic("response_stringified")(response_stringified.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDKError]
   }
 }

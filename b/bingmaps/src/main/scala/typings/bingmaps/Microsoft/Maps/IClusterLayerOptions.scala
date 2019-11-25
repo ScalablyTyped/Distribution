@@ -55,12 +55,12 @@ object IClusterLayerOptions {
   ): IClusterLayerOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (clusterPlacementType != null) __obj.updateDynamic("clusterPlacementType")(clusterPlacementType)
+    if (clusterPlacementType != null) __obj.updateDynamic("clusterPlacementType")(clusterPlacementType.asInstanceOf[js.Any])
     if (clusteredPinCallback != null) __obj.updateDynamic("clusteredPinCallback")(js.Any.fromFunction1(clusteredPinCallback))
-    if (!js.isUndefined(clusteringEnabled)) __obj.updateDynamic("clusteringEnabled")(clusteringEnabled)
+    if (!js.isUndefined(clusteringEnabled)) __obj.updateDynamic("clusteringEnabled")(clusteringEnabled.asInstanceOf[js.Any])
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
-    if (layerOffset != null) __obj.updateDynamic("layerOffset")(layerOffset)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (layerOffset != null) __obj.updateDynamic("layerOffset")(layerOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClusterLayerOptions]
   }

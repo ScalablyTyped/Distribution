@@ -20,10 +20,10 @@ object Anon_AdapterOptionsBackgroundReload {
     reload: js.UndefOr[Boolean] = js.undefined
   ): Anon_AdapterOptionsBackgroundReload = {
     val __obj = js.Dynamic.literal()
-    if (adapterOptions != null) __obj.updateDynamic("adapterOptions")(adapterOptions)
-    if (!js.isUndefined(backgroundReload)) __obj.updateDynamic("backgroundReload")(backgroundReload)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload)
+    if (adapterOptions != null) __obj.updateDynamic("adapterOptions")(adapterOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(backgroundReload)) __obj.updateDynamic("backgroundReload")(backgroundReload.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AdapterOptionsBackgroundReload]
   }
 }

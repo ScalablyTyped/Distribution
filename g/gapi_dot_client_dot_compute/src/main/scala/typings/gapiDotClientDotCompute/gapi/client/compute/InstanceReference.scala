@@ -13,7 +13,7 @@ object InstanceReference {
   @scala.inline
   def apply(instance: String = null): InstanceReference = {
     val __obj = js.Dynamic.literal()
-    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceReference]
   }
 }

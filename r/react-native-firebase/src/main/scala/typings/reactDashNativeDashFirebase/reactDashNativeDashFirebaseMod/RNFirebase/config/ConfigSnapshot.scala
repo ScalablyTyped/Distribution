@@ -12,7 +12,7 @@ trait ConfigSnapshot extends js.Object {
 object ConfigSnapshot {
   @scala.inline
   def apply(source: String, `val`: () => js.Any): ConfigSnapshot = {
-    val __obj = js.Dynamic.literal(source = source)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
     __obj.asInstanceOf[ConfigSnapshot]
   }

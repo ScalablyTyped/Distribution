@@ -21,8 +21,8 @@ object ValidatorFunctionContext {
     value: js.Any,
     message: String = null
   ): ValidatorFunctionContext = {
-    val __obj = js.Dynamic.literal(displayName = displayName, messageTemplate = messageTemplate, validatorName = validatorName, value = value)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], messageTemplate = messageTemplate.asInstanceOf[js.Any], validatorName = validatorName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorFunctionContext]
   }
 }

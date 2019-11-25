@@ -35,10 +35,10 @@ object _SelectParameters {
     OutputSerialization: _OutputSerialization = null
   ): _SelectParameters = {
     val __obj = js.Dynamic.literal()
-    if (Expression != null) __obj.updateDynamic("Expression")(Expression)
+    if (Expression != null) __obj.updateDynamic("Expression")(Expression.asInstanceOf[js.Any])
     if (ExpressionType != null) __obj.updateDynamic("ExpressionType")(ExpressionType.asInstanceOf[js.Any])
-    if (InputSerialization != null) __obj.updateDynamic("InputSerialization")(InputSerialization)
-    if (OutputSerialization != null) __obj.updateDynamic("OutputSerialization")(OutputSerialization)
+    if (InputSerialization != null) __obj.updateDynamic("InputSerialization")(InputSerialization.asInstanceOf[js.Any])
+    if (OutputSerialization != null) __obj.updateDynamic("OutputSerialization")(OutputSerialization.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SelectParameters]
   }
 }

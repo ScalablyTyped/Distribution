@@ -29,10 +29,10 @@ object Anon_Exponent {
   ): Anon_Exponent = {
     val __obj = js.Dynamic.literal()
     if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra)
+    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (mult != null) __obj.updateDynamic("mult")(mult.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Exponent]
   }
 }

@@ -24,12 +24,12 @@ object Options {
     systemNaming: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(conected)) __obj.updateDynamic("conected")(conected)
+    if (!js.isUndefined(conected)) __obj.updateDynamic("conected")(conected.asInstanceOf[js.Any])
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (fetchMode != null) __obj.updateDynamic("fetchMode")(fetchMode.asInstanceOf[js.Any])
-    if (odbc != null) __obj.updateDynamic("odbc")(odbc)
+    if (odbc != null) __obj.updateDynamic("odbc")(odbc.asInstanceOf[js.Any])
     if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (!js.isUndefined(systemNaming)) __obj.updateDynamic("systemNaming")(systemNaming)
+    if (!js.isUndefined(systemNaming)) __obj.updateDynamic("systemNaming")(systemNaming.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

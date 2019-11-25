@@ -134,10 +134,10 @@ object detectDashBrowserStrings {
   sealed trait instagram extends Browser
   
   @js.native
-  sealed trait ios extends Browser
+  sealed trait `ios-webview` extends Browser
   
   @js.native
-  sealed trait `ios-webview` extends Browser
+  sealed trait ios_ extends Browser
   
   @js.native
   sealed trait kakaotalk extends Browser
@@ -260,9 +260,9 @@ object detectDashBrowserStrings {
   @scala.inline
   def instagram: instagram = "instagram".asInstanceOf[instagram]
   @scala.inline
-  def ios: ios = "ios".asInstanceOf[ios]
-  @scala.inline
   def `ios-webview`: `ios-webview` = "ios-webview".asInstanceOf[`ios-webview`]
+  @scala.inline
+  def ios_ : ios_ = "ios".asInstanceOf[ios_]
   @scala.inline
   def kakaotalk: kakaotalk = "kakaotalk".asInstanceOf[kakaotalk]
   @scala.inline

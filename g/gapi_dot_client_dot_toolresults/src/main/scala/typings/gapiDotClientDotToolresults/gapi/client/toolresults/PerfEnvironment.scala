@@ -15,8 +15,8 @@ object PerfEnvironment {
   @scala.inline
   def apply(cpuInfo: CPUInfo = null, memoryInfo: MemoryInfo = null): PerfEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (cpuInfo != null) __obj.updateDynamic("cpuInfo")(cpuInfo)
-    if (memoryInfo != null) __obj.updateDynamic("memoryInfo")(memoryInfo)
+    if (cpuInfo != null) __obj.updateDynamic("cpuInfo")(cpuInfo.asInstanceOf[js.Any])
+    if (memoryInfo != null) __obj.updateDynamic("memoryInfo")(memoryInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerfEnvironment]
   }
 }

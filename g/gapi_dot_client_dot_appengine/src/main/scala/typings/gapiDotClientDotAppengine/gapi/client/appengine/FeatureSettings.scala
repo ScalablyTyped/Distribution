@@ -17,7 +17,7 @@ object FeatureSettings {
   @scala.inline
   def apply(splitHealthChecks: js.UndefOr[Boolean] = js.undefined): FeatureSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(splitHealthChecks)) __obj.updateDynamic("splitHealthChecks")(splitHealthChecks)
+    if (!js.isUndefined(splitHealthChecks)) __obj.updateDynamic("splitHealthChecks")(splitHealthChecks.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureSettings]
   }
 }

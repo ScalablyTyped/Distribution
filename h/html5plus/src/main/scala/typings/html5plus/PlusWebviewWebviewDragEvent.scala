@@ -87,13 +87,13 @@ object PlusWebviewWebviewDragEvent {
     `type`: String = null
   ): PlusWebviewWebviewDragEvent = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (otherId != null) __obj.updateDynamic("otherId")(otherId)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (otherId != null) __obj.updateDynamic("otherId")(otherId.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewDragEvent]
   }
 }

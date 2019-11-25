@@ -31,10 +31,10 @@ object OperationMetadataV1Beta2 {
     versionId: String = null
   ): OperationMetadataV1Beta2 = {
     val __obj = js.Dynamic.literal()
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId)
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationMetadataV1Beta2]
   }
 }

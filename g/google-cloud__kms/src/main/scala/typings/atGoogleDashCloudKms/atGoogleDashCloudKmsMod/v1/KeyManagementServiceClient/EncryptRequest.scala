@@ -14,8 +14,8 @@ trait EncryptRequest extends js.Object {
 object EncryptRequest {
   @scala.inline
   def apply(name: String, plaintext: Buffer, additionalAuthenticatedData: String = null): EncryptRequest = {
-    val __obj = js.Dynamic.literal(name = name, plaintext = plaintext)
-    if (additionalAuthenticatedData != null) __obj.updateDynamic("additionalAuthenticatedData")(additionalAuthenticatedData)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], plaintext = plaintext.asInstanceOf[js.Any])
+    if (additionalAuthenticatedData != null) __obj.updateDynamic("additionalAuthenticatedData")(additionalAuthenticatedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptRequest]
   }
 }

@@ -29,12 +29,12 @@ object KeyboardProps {
   ): KeyboardProps = {
     val __obj = js.Dynamic.literal()
     if (callbackParent != null) __obj.updateDynamic("callbackParent")(js.Any.fromFunction3(callbackParent))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onAccepted != null) __obj.updateDynamic("onAccepted")(js.Any.fromFunction3(onAccepted))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardProps]
   }
 }

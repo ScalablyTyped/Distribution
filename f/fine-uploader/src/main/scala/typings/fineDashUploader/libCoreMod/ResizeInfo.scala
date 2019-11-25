@@ -48,9 +48,9 @@ object ResizeInfo {
     val __obj = js.Dynamic.literal()
     if (blob != null) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (sourceCanvas != null) __obj.updateDynamic("sourceCanvas")(sourceCanvas)
-    if (targetCanvas != null) __obj.updateDynamic("targetCanvas")(targetCanvas)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (sourceCanvas != null) __obj.updateDynamic("sourceCanvas")(sourceCanvas.asInstanceOf[js.Any])
+    if (targetCanvas != null) __obj.updateDynamic("targetCanvas")(targetCanvas.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeInfo]
   }

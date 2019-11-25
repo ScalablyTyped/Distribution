@@ -31,7 +31,7 @@ object ReportingWorkItemLink {
     sourceId: Double,
     targetId: Double
   ): ReportingWorkItemLink = {
-    val __obj = js.Dynamic.literal(changedBy = changedBy, changedDate = changedDate, changedOperation = changedOperation, comment = comment, isActive = isActive, linkType = linkType, rel = rel, sourceId = sourceId, targetId = targetId)
+    val __obj = js.Dynamic.literal(changedBy = changedBy.asInstanceOf[js.Any], changedDate = changedDate.asInstanceOf[js.Any], changedOperation = changedOperation.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], linkType = linkType.asInstanceOf[js.Any], rel = rel.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReportingWorkItemLink]
   }

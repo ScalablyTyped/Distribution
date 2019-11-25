@@ -19,7 +19,7 @@ object IApprovalAssignmentClassInfo {
     SignatureForApproval: ISignatureSettings,
     SignatureForRejection: ISignatureSettings
   ): IApprovalAssignmentClassInfo = {
-    val __obj = js.Dynamic.literal(AnyAssigneeApproves = AnyAssigneeApproves, Clone = js.Any.fromFunction0(Clone), SignatureForApproval = SignatureForApproval, SignatureForRejection = SignatureForRejection)
+    val __obj = js.Dynamic.literal(AnyAssigneeApproves = AnyAssigneeApproves.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), SignatureForApproval = SignatureForApproval.asInstanceOf[js.Any], SignatureForRejection = SignatureForRejection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IApprovalAssignmentClassInfo]
   }

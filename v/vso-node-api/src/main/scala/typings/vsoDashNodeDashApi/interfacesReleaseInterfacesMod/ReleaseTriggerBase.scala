@@ -11,7 +11,7 @@ trait ReleaseTriggerBase extends js.Object {
 object ReleaseTriggerBase {
   @scala.inline
   def apply(triggerType: ReleaseTriggerType): ReleaseTriggerBase = {
-    val __obj = js.Dynamic.literal(triggerType = triggerType)
+    val __obj = js.Dynamic.literal(triggerType = triggerType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseTriggerBase]
   }

@@ -31,12 +31,12 @@ object UpdateIntentParams {
     new_intent: String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): UpdateIntentParams = {
-    val __obj = js.Dynamic.literal(intent = intent, workspace_id = workspace_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (new_description != null) __obj.updateDynamic("new_description")(new_description)
-    if (new_examples != null) __obj.updateDynamic("new_examples")(new_examples)
-    if (new_intent != null) __obj.updateDynamic("new_intent")(new_intent)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (new_description != null) __obj.updateDynamic("new_description")(new_description.asInstanceOf[js.Any])
+    if (new_examples != null) __obj.updateDynamic("new_examples")(new_examples.asInstanceOf[js.Any])
+    if (new_intent != null) __obj.updateDynamic("new_intent")(new_intent.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateIntentParams]
   }
 }

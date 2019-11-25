@@ -11,7 +11,7 @@ trait ExplicitParam extends js.Object {
 object ExplicitParam {
   @scala.inline
   def apply(explicit: Boolean): ExplicitParam = {
-    val __obj = js.Dynamic.literal(explicit = explicit)
+    val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExplicitParam]
   }

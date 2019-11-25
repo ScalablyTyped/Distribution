@@ -29,15 +29,15 @@ object Anon_CompanyCustomFields {
     phone: String = null,
     website: String = null
   ): Anon_CompanyCustomFields = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (company != null) __obj.updateDynamic("company")(company)
-    if (customFields != null) __obj.updateDynamic("customFields")(customFields)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (fax != null) __obj.updateDynamic("fax")(fax)
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (website != null) __obj.updateDynamic("website")(website)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
+    if (customFields != null) __obj.updateDynamic("customFields")(customFields.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (fax != null) __obj.updateDynamic("fax")(fax.asInstanceOf[js.Any])
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompanyCustomFields]
   }
 }

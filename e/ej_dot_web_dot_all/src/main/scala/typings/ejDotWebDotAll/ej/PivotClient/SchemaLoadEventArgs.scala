@@ -14,7 +14,7 @@ object SchemaLoadEventArgs {
   @scala.inline
   def apply(action: String = null): SchemaLoadEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLoadEventArgs]
   }
 }

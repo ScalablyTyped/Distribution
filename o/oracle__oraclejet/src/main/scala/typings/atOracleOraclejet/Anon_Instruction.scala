@@ -12,7 +12,7 @@ object Anon_Instruction {
   @scala.inline
   def apply(instruction: String = null): Anon_Instruction = {
     val __obj = js.Dynamic.literal()
-    if (instruction != null) __obj.updateDynamic("instruction")(instruction)
+    if (instruction != null) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Instruction]
   }
 }

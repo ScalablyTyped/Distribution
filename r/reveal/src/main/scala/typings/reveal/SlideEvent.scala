@@ -16,9 +16,9 @@ trait SlideEvent extends js.Object {
 object SlideEvent {
   @scala.inline
   def apply(currentSlide: Element, indexh: Double, indexv: Int | Double = null, previousSlide: Element = null): SlideEvent = {
-    val __obj = js.Dynamic.literal(currentSlide = currentSlide, indexh = indexh)
+    val __obj = js.Dynamic.literal(currentSlide = currentSlide.asInstanceOf[js.Any], indexh = indexh.asInstanceOf[js.Any])
     if (indexv != null) __obj.updateDynamic("indexv")(indexv.asInstanceOf[js.Any])
-    if (previousSlide != null) __obj.updateDynamic("previousSlide")(previousSlide)
+    if (previousSlide != null) __obj.updateDynamic("previousSlide")(previousSlide.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideEvent]
   }
 }

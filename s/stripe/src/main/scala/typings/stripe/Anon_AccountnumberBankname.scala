@@ -27,10 +27,10 @@ object Anon_AccountnumberBankname {
     refund_account_holder_type: String = null,
     refund_routing_number: String = null
   ): Anon_AccountnumberBankname = {
-    val __obj = js.Dynamic.literal(account_number = account_number, bank_name = bank_name, fingerprint = fingerprint, routing_number = routing_number, swift_code = swift_code)
-    if (refund_account_holder_name != null) __obj.updateDynamic("refund_account_holder_name")(refund_account_holder_name)
-    if (refund_account_holder_type != null) __obj.updateDynamic("refund_account_holder_type")(refund_account_holder_type)
-    if (refund_routing_number != null) __obj.updateDynamic("refund_routing_number")(refund_routing_number)
+    val __obj = js.Dynamic.literal(account_number = account_number.asInstanceOf[js.Any], bank_name = bank_name.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], swift_code = swift_code.asInstanceOf[js.Any])
+    if (refund_account_holder_name != null) __obj.updateDynamic("refund_account_holder_name")(refund_account_holder_name.asInstanceOf[js.Any])
+    if (refund_account_holder_type != null) __obj.updateDynamic("refund_account_holder_type")(refund_account_holder_type.asInstanceOf[js.Any])
+    if (refund_routing_number != null) __obj.updateDynamic("refund_routing_number")(refund_routing_number.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccountnumberBankname]
   }
 }

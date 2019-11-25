@@ -20,7 +20,7 @@ object Anon_Frame {
   def apply(frame: Double | String = null, key: String = null): Anon_Frame = {
     val __obj = js.Dynamic.literal()
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Frame]
   }
 }

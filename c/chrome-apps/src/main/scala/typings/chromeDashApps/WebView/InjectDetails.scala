@@ -39,8 +39,8 @@ object InjectDetails {
   @scala.inline
   def apply(code: String = null, file: String = null): InjectDetails = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (file != null) __obj.updateDynamic("file")(file)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectDetails]
   }
 }

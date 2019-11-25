@@ -14,8 +14,8 @@ trait AbstractNode extends js.Object {
 object AbstractNode {
   @scala.inline
   def apply(attrs: StringDictionary[String | Boolean], tag: String, children: js.Array[AbstractNode] = null): AbstractNode = {
-    val __obj = js.Dynamic.literal(attrs = attrs, tag = tag)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractNode]
   }
 }

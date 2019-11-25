@@ -20,8 +20,8 @@ object ErrorSettings {
   @scala.inline
   def apply(message: js.Array[String] = null, style: js.Any = null): ErrorSettings = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorSettings]
   }
 }

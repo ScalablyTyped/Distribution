@@ -12,7 +12,7 @@ object Anon_Sv {
   @scala.inline
   def apply(`.sv`: String): Anon_Sv = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic(".sv")(`.sv`)
+    __obj.updateDynamic(".sv")(`.sv`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Sv]
   }
 }

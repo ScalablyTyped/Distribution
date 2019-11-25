@@ -24,9 +24,9 @@ object Anon_Label {
   @scala.inline
   def apply(label: String = null, parent: String | Function = null, skip: js.UndefOr[Boolean] = js.undefined): Anon_Label = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }
 }

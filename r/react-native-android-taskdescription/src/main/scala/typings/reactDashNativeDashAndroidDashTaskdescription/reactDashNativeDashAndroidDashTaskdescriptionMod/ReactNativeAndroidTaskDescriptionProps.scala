@@ -13,8 +13,8 @@ object ReactNativeAndroidTaskDescriptionProps {
   @scala.inline
   def apply(backgroundColor: String = null, label: String = null): ReactNativeAndroidTaskDescriptionProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactNativeAndroidTaskDescriptionProps]
   }
 }

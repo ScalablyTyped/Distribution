@@ -16,8 +16,8 @@ trait Definition extends js.Object {
 object Definition {
   @scala.inline
   def apply(component: accordion, items: Anon_DataDimensions, `type`: items): Definition = {
-    val __obj = js.Dynamic.literal(component = component, items = items)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
 }

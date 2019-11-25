@@ -32,10 +32,10 @@ object IFieldStat {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (errorsCount != null) __obj.updateDynamic("errorsCount")(errorsCount.asInstanceOf[js.Any])
-    if (latencyCount != null) __obj.updateDynamic("latencyCount")(latencyCount)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (latencyCount != null) __obj.updateDynamic("latencyCount")(latencyCount.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (requestsWithErrorsCount != null) __obj.updateDynamic("requestsWithErrorsCount")(requestsWithErrorsCount.asInstanceOf[js.Any])
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType)
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldStat]
   }
 }

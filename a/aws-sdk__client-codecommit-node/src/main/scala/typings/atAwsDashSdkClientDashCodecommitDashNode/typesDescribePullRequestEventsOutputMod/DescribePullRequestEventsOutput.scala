@@ -30,8 +30,8 @@ object DescribePullRequestEventsOutput {
     pullRequestEvents: js.Array[_UnmarshalledPullRequestEvent],
     nextToken: String = null
   ): DescribePullRequestEventsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, pullRequestEvents = pullRequestEvents)
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], pullRequestEvents = pullRequestEvents.asInstanceOf[js.Any])
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePullRequestEventsOutput]
   }
 }

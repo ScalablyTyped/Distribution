@@ -39,7 +39,7 @@ object ReleaseApprovalPendingEvent {
     title: String,
     webAccessUri: String
   ): ReleaseApprovalPendingEvent = {
-    val __obj = js.Dynamic.literal(approval = approval, approvalOptions = approvalOptions, completedApprovals = completedApprovals, definitionName = definitionName, deployment = deployment, environmentId = environmentId, environmentName = environmentName, environments = environments, isMultipleRankApproval = isMultipleRankApproval, pendingApprovals = pendingApprovals, releaseCreator = releaseCreator, releaseName = releaseName, title = title, webAccessUri = webAccessUri)
+    val __obj = js.Dynamic.literal(approval = approval.asInstanceOf[js.Any], approvalOptions = approvalOptions.asInstanceOf[js.Any], completedApprovals = completedApprovals.asInstanceOf[js.Any], definitionName = definitionName.asInstanceOf[js.Any], deployment = deployment.asInstanceOf[js.Any], environmentId = environmentId.asInstanceOf[js.Any], environmentName = environmentName.asInstanceOf[js.Any], environments = environments.asInstanceOf[js.Any], isMultipleRankApproval = isMultipleRankApproval.asInstanceOf[js.Any], pendingApprovals = pendingApprovals.asInstanceOf[js.Any], releaseCreator = releaseCreator.asInstanceOf[js.Any], releaseName = releaseName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], webAccessUri = webAccessUri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseApprovalPendingEvent]
   }

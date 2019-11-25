@@ -13,7 +13,7 @@ trait HealthCounts extends js.Object {
 object HealthCounts {
   @scala.inline
   def apply(errorCount: Double, errorPercentage: Double, totalCount: Double): HealthCounts = {
-    val __obj = js.Dynamic.literal(errorCount = errorCount, errorPercentage = errorPercentage, totalCount = totalCount)
+    val __obj = js.Dynamic.literal(errorCount = errorCount.asInstanceOf[js.Any], errorPercentage = errorPercentage.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HealthCounts]
   }

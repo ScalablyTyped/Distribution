@@ -21,11 +21,11 @@ object SetSelectedParams {
     rangeSelect: js.UndefOr[Boolean] = js.undefined,
     suppressFinishActions: js.UndefOr[Boolean] = js.undefined
   ): SetSelectedParams = {
-    val __obj = js.Dynamic.literal(newValue = newValue)
-    if (!js.isUndefined(clearSelection)) __obj.updateDynamic("clearSelection")(clearSelection)
-    if (!js.isUndefined(groupSelectsFiltered)) __obj.updateDynamic("groupSelectsFiltered")(groupSelectsFiltered)
-    if (!js.isUndefined(rangeSelect)) __obj.updateDynamic("rangeSelect")(rangeSelect)
-    if (!js.isUndefined(suppressFinishActions)) __obj.updateDynamic("suppressFinishActions")(suppressFinishActions)
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearSelection)) __obj.updateDynamic("clearSelection")(clearSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupSelectsFiltered)) __obj.updateDynamic("groupSelectsFiltered")(groupSelectsFiltered.asInstanceOf[js.Any])
+    if (!js.isUndefined(rangeSelect)) __obj.updateDynamic("rangeSelect")(rangeSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressFinishActions)) __obj.updateDynamic("suppressFinishActions")(suppressFinishActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSelectedParams]
   }
 }

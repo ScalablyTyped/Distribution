@@ -41,11 +41,11 @@ object GetParametersForImportOutput {
     ParametersValidTo: Date = null,
     PublicKey: Uint8Array = null
   ): GetParametersForImportOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ImportToken != null) __obj.updateDynamic("ImportToken")(ImportToken)
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
-    if (ParametersValidTo != null) __obj.updateDynamic("ParametersValidTo")(ParametersValidTo)
-    if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ImportToken != null) __obj.updateDynamic("ImportToken")(ImportToken.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
+    if (ParametersValidTo != null) __obj.updateDynamic("ParametersValidTo")(ParametersValidTo.asInstanceOf[js.Any])
+    if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersForImportOutput]
   }
 }

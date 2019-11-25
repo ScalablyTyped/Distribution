@@ -11,7 +11,7 @@ trait VoiceErrorResponse extends js.Object {
 object VoiceErrorResponse {
   @scala.inline
   def apply(result: String): VoiceErrorResponse = {
-    val __obj = js.Dynamic.literal(result = result)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VoiceErrorResponse]
   }

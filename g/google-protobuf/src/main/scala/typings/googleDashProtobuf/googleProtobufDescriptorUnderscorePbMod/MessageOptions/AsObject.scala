@@ -25,11 +25,11 @@ object AsObject {
     messageSetWireFormat: js.UndefOr[Boolean] = js.undefined,
     noStandardDescriptorAccessor: js.UndefOr[Boolean] = js.undefined
   ): AsObject = {
-    val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (!js.isUndefined(mapEntry)) __obj.updateDynamic("mapEntry")(mapEntry)
-    if (!js.isUndefined(messageSetWireFormat)) __obj.updateDynamic("messageSetWireFormat")(messageSetWireFormat)
-    if (!js.isUndefined(noStandardDescriptorAccessor)) __obj.updateDynamic("noStandardDescriptorAccessor")(noStandardDescriptorAccessor)
+    val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapEntry)) __obj.updateDynamic("mapEntry")(mapEntry.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageSetWireFormat)) __obj.updateDynamic("messageSetWireFormat")(messageSetWireFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(noStandardDescriptorAccessor)) __obj.updateDynamic("noStandardDescriptorAccessor")(noStandardDescriptorAccessor.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

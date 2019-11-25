@@ -35,9 +35,9 @@ object ImageResource {
     imageId: String = null,
     orientation: landscape | portrait = null
   ): ImageResource = {
-    val __obj = js.Dynamic.literal(dest = dest, height = height, name = name, nodeAttributes = nodeAttributes, nodeName = nodeName, platform = platform, resType = resType, width = width)
-    if (density != null) __obj.updateDynamic("density")(density)
-    if (imageId != null) __obj.updateDynamic("imageId")(imageId)
+    val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeAttributes = nodeAttributes.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], resType = resType.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageResource]
   }

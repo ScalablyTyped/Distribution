@@ -23,7 +23,7 @@ object TracekitStackTrace {
     url: String,
     useragent: String
   ): TracekitStackTrace = {
-    val __obj = js.Dynamic.literal(message = message, mode = mode, name = name, stack = stack, url = url, useragent = useragent)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], useragent = useragent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TracekitStackTrace]
   }

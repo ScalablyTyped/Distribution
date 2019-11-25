@@ -19,10 +19,10 @@ object ParamMapper {
     defaultValue: ValueType = null,
     notSupported: js.UndefOr[Boolean] = js.undefined
   ): ParamMapper = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(notSupported)) __obj.updateDynamic("notSupported")(notSupported)
+    if (!js.isUndefined(notSupported)) __obj.updateDynamic("notSupported")(notSupported.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamMapper]
   }
 }

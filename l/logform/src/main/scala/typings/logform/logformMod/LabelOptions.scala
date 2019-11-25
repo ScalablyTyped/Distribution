@@ -20,8 +20,8 @@ object LabelOptions {
   @scala.inline
   def apply(label: String = null, message: js.UndefOr[Boolean] = js.undefined): LabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOptions]
   }
 }

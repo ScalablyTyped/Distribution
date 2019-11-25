@@ -16,8 +16,8 @@ object Anon_ReminderNotifyEmail {
     reminderNotifyInApp: js.UndefOr[Boolean] = js.undefined
   ): Anon_ReminderNotifyEmail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reminderNotifyEmail)) __obj.updateDynamic("reminderNotifyEmail")(reminderNotifyEmail)
-    if (!js.isUndefined(reminderNotifyInApp)) __obj.updateDynamic("reminderNotifyInApp")(reminderNotifyInApp)
+    if (!js.isUndefined(reminderNotifyEmail)) __obj.updateDynamic("reminderNotifyEmail")(reminderNotifyEmail.asInstanceOf[js.Any])
+    if (!js.isUndefined(reminderNotifyInApp)) __obj.updateDynamic("reminderNotifyInApp")(reminderNotifyInApp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ReminderNotifyEmail]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_MinHeight extends js.Object {
 object Anon_MinHeight {
   @scala.inline
   def apply(minHeight: Double): Anon_MinHeight = {
-    val __obj = js.Dynamic.literal(minHeight = minHeight)
+    val __obj = js.Dynamic.literal(minHeight = minHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MinHeight]
   }

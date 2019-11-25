@@ -16,7 +16,7 @@ trait ReceiveEventArgs extends js.Object {
 object ReceiveEventArgs {
   @scala.inline
   def apply(data: ArrayBuffer, socketId: integer): ReceiveEventArgs = {
-    val __obj = js.Dynamic.literal(data = data, socketId = socketId)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReceiveEventArgs]
   }

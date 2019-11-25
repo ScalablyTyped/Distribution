@@ -14,7 +14,7 @@ trait Anon_I18nNodesByMsgIdLocale extends js.Object {
 object Anon_I18nNodesByMsgIdLocale {
   @scala.inline
   def apply(i18nNodesByMsgId: StringDictionary[js.Array[Node]], locale: String): Anon_I18nNodesByMsgIdLocale = {
-    val __obj = js.Dynamic.literal(i18nNodesByMsgId = i18nNodesByMsgId, locale = locale)
+    val __obj = js.Dynamic.literal(i18nNodesByMsgId = i18nNodesByMsgId.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_I18nNodesByMsgIdLocale]
   }

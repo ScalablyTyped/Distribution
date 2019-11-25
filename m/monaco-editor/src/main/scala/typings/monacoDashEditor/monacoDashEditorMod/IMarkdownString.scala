@@ -18,9 +18,9 @@ object IMarkdownString {
     isTrusted: js.UndefOr[Boolean] = js.undefined,
     uris: StringDictionary[UriComponents] = null
   ): IMarkdownString = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted)
-    if (uris != null) __obj.updateDynamic("uris")(uris)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted.asInstanceOf[js.Any])
+    if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarkdownString]
   }
 }

@@ -22,16 +22,12 @@ object SwitchProps {
     AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
     ClassAttributes: ClassAttributes[js.Any] = null,
     RippleComponent: RippleComponent = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     onChange: FormEvent[Switch] => Unit = null
   ): SwitchProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, RippleComponent)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[SwitchProps]
   }

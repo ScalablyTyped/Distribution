@@ -35,13 +35,13 @@ object NewsFeedResponseArgs {
     second_profile_id: Int | Double = null,
     second_profile_image: String = null
   ): NewsFeedResponseArgs = {
-    val __obj = js.Dynamic.literal(links = links, profile_id = profile_id, profile_image = profile_image, text = text, timestamp = timestamp, tuuid = tuuid)
-    if (comment_id != null) __obj.updateDynamic("comment_id")(comment_id)
-    if (comment_ids != null) __obj.updateDynamic("comment_ids")(comment_ids)
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (profile_image_destination != null) __obj.updateDynamic("profile_image_destination")(profile_image_destination)
+    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], profile_id = profile_id.asInstanceOf[js.Any], profile_image = profile_image.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], tuuid = tuuid.asInstanceOf[js.Any])
+    if (comment_id != null) __obj.updateDynamic("comment_id")(comment_id.asInstanceOf[js.Any])
+    if (comment_ids != null) __obj.updateDynamic("comment_ids")(comment_ids.asInstanceOf[js.Any])
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (profile_image_destination != null) __obj.updateDynamic("profile_image_destination")(profile_image_destination.asInstanceOf[js.Any])
     if (second_profile_id != null) __obj.updateDynamic("second_profile_id")(second_profile_id.asInstanceOf[js.Any])
-    if (second_profile_image != null) __obj.updateDynamic("second_profile_image")(second_profile_image)
+    if (second_profile_image != null) __obj.updateDynamic("second_profile_image")(second_profile_image.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsFeedResponseArgs]
   }
 }

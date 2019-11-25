@@ -12,7 +12,7 @@ trait Anon_DataReadonlyArray extends js.Object {
 object Anon_DataReadonlyArray {
   @scala.inline
   def apply(data: js.Array[UserInfo]): Anon_DataReadonlyArray = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataReadonlyArray]
   }

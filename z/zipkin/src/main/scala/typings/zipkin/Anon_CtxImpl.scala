@@ -35,14 +35,14 @@ object Anon_CtxImpl {
     supportsJoin: js.UndefOr[Boolean] = js.undefined,
     traceId128Bit: js.UndefOr[Boolean] = js.undefined
   ): Anon_CtxImpl = {
-    val __obj = js.Dynamic.literal(ctxImpl = ctxImpl, recorder = recorder)
-    if (defaultTags != null) __obj.updateDynamic("defaultTags")(defaultTags)
-    if (localEndpoint != null) __obj.updateDynamic("localEndpoint")(localEndpoint)
-    if (localServiceName != null) __obj.updateDynamic("localServiceName")(localServiceName)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (sampler != null) __obj.updateDynamic("sampler")(sampler)
-    if (!js.isUndefined(supportsJoin)) __obj.updateDynamic("supportsJoin")(supportsJoin)
-    if (!js.isUndefined(traceId128Bit)) __obj.updateDynamic("traceId128Bit")(traceId128Bit)
+    val __obj = js.Dynamic.literal(ctxImpl = ctxImpl.asInstanceOf[js.Any], recorder = recorder.asInstanceOf[js.Any])
+    if (defaultTags != null) __obj.updateDynamic("defaultTags")(defaultTags.asInstanceOf[js.Any])
+    if (localEndpoint != null) __obj.updateDynamic("localEndpoint")(localEndpoint.asInstanceOf[js.Any])
+    if (localServiceName != null) __obj.updateDynamic("localServiceName")(localServiceName.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (sampler != null) __obj.updateDynamic("sampler")(sampler.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsJoin)) __obj.updateDynamic("supportsJoin")(supportsJoin.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceId128Bit)) __obj.updateDynamic("traceId128Bit")(traceId128Bit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CtxImpl]
   }
 }

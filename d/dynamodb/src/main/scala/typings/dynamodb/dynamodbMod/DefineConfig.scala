@@ -29,13 +29,13 @@ object DefineConfig {
     timestamps: js.UndefOr[Boolean] = js.undefined,
     updatedAt: Boolean | String = null
   ): DefineConfig = {
-    val __obj = js.Dynamic.literal(hashKey = hashKey)
+    val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
-    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
+    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps)
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineConfig]
   }

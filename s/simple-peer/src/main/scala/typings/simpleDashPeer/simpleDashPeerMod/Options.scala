@@ -51,19 +51,19 @@ object Options {
     wrtc: js.Object = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (answerConstraints != null) __obj.updateDynamic("answerConstraints")(answerConstraints)
-    if (channelConfig != null) __obj.updateDynamic("channelConfig")(channelConfig)
-    if (channelName != null) __obj.updateDynamic("channelName")(channelName)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
-    if (!js.isUndefined(initiator)) __obj.updateDynamic("initiator")(initiator)
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
-    if (offerConstraints != null) __obj.updateDynamic("offerConstraints")(offerConstraints)
+    if (answerConstraints != null) __obj.updateDynamic("answerConstraints")(answerConstraints.asInstanceOf[js.Any])
+    if (channelConfig != null) __obj.updateDynamic("channelConfig")(channelConfig.asInstanceOf[js.Any])
+    if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (!js.isUndefined(initiator)) __obj.updateDynamic("initiator")(initiator.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (offerConstraints != null) __obj.updateDynamic("offerConstraints")(offerConstraints.asInstanceOf[js.Any])
     if (reconnectTimer != null) __obj.updateDynamic("reconnectTimer")(reconnectTimer.asInstanceOf[js.Any])
     if (sdpTransform != null) __obj.updateDynamic("sdpTransform")(js.Any.fromFunction1(sdpTransform))
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (!js.isUndefined(trickle)) __obj.updateDynamic("trickle")(trickle)
-    if (wrtc != null) __obj.updateDynamic("wrtc")(wrtc)
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (!js.isUndefined(trickle)) __obj.updateDynamic("trickle")(trickle.asInstanceOf[js.Any])
+    if (wrtc != null) __obj.updateDynamic("wrtc")(wrtc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

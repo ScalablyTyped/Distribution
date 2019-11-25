@@ -21,10 +21,10 @@ object TableBodyProps {
     style: CSSProperties = null
   ): TableBodyProps = {
     val __obj = js.Dynamic.literal()
-    if (Row != null) __obj.updateDynamic("Row")(Row)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (rowIds != null) __obj.updateDynamic("rowIds")(rowIds)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (Row != null) __obj.updateDynamic("Row")(Row.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (rowIds != null) __obj.updateDynamic("rowIds")(rowIds.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableBodyProps]
   }
 }

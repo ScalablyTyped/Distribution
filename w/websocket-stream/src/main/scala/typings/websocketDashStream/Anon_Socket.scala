@@ -12,7 +12,7 @@ trait Anon_Socket extends js.Object {
 object Anon_Socket {
   @scala.inline
   def apply(socket: ^): Anon_Socket = {
-    val __obj = js.Dynamic.literal(socket = socket)
+    val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Socket]
   }

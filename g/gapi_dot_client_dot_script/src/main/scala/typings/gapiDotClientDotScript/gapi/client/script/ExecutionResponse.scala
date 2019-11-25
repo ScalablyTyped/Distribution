@@ -19,7 +19,7 @@ object ExecutionResponse {
   @scala.inline
   def apply(result: js.Any = null): ExecutionResponse = {
     val __obj = js.Dynamic.literal()
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionResponse]
   }
 }

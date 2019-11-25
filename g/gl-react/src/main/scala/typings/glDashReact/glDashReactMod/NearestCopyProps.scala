@@ -12,7 +12,7 @@ object NearestCopyProps {
   @scala.inline
   def apply(children: js.Any = null): NearestCopyProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[NearestCopyProps]
   }
 }

@@ -30,15 +30,15 @@ object FailedAssertion {
     stack: String = null
   ): FailedAssertion = {
     val __obj = js.Dynamic.literal()
-    if (actual != null) __obj.updateDynamic("actual")(actual)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (expected != null) __obj.updateDynamic("expected")(expected)
-    if (!js.isUndefined(isNot)) __obj.updateDynamic("isNot")(isNot)
-    if (matcherName != null) __obj.updateDynamic("matcherName")(matcherName)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(pass)) __obj.updateDynamic("pass")(pass)
-    if (!js.isUndefined(passed)) __obj.updateDynamic("passed")(passed)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (actual != null) __obj.updateDynamic("actual")(actual.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNot)) __obj.updateDynamic("isNot")(isNot.asInstanceOf[js.Any])
+    if (matcherName != null) __obj.updateDynamic("matcherName")(matcherName.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(pass)) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
+    if (!js.isUndefined(passed)) __obj.updateDynamic("passed")(passed.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedAssertion]
   }
 }

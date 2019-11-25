@@ -24,7 +24,7 @@ object ScalesSubGauge {
   def apply(height: Int | Double = null, position: ScalesSubGaugesPosition = null, width: Int | Double = null): ScalesSubGauge = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesSubGauge]
   }

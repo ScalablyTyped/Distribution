@@ -22,10 +22,10 @@ object GanttMoveEndEvent {
     start: Date = null,
     task: GanttTask = null
   ): GanttMoveEndEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (task != null) __obj.updateDynamic("task")(task)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttMoveEndEvent]
   }
 }

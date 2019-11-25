@@ -13,7 +13,7 @@ object DeleteDimensionGroupResponse {
   @scala.inline
   def apply(dimensionGroups: js.Array[DimensionGroup] = null): DeleteDimensionGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (dimensionGroups != null) __obj.updateDynamic("dimensionGroups")(dimensionGroups)
+    if (dimensionGroups != null) __obj.updateDynamic("dimensionGroups")(dimensionGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDimensionGroupResponse]
   }
 }

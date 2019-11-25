@@ -55,10 +55,10 @@ object ReferenceOptions {
     val __obj = js.Dynamic.literal()
     if (adjust != null) __obj.updateDynamic("adjust")(js.Any.fromFunction1(adjust))
     if (ancestor != null) __obj.updateDynamic("ancestor")(ancestor.asInstanceOf[js.Any])
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in)
-    if (!js.isUndefined(iterables)) __obj.updateDynamic("iterables")(iterables)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
+    if (!js.isUndefined(iterables)) __obj.updateDynamic("iterables")(iterables.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceOptions]
   }

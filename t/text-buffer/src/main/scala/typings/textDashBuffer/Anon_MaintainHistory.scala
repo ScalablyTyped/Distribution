@@ -16,8 +16,8 @@ object Anon_MaintainHistory {
     persistent: js.UndefOr[Boolean] = js.undefined
   ): Anon_MaintainHistory = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maintainHistory)) __obj.updateDynamic("maintainHistory")(maintainHistory)
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    if (!js.isUndefined(maintainHistory)) __obj.updateDynamic("maintainHistory")(maintainHistory.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaintainHistory]
   }
 }

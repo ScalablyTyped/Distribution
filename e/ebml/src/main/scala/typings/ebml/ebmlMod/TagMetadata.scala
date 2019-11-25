@@ -10,7 +10,7 @@ trait TagMetadata extends js.Object {
   /** End byte offset if known, else `-1` */
   var end: Double
   /** Element name */
-  var name: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any
+  var name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any
   /** Start byte offset */
   var start: Double
   /** EBML ID */
@@ -18,7 +18,7 @@ trait TagMetadata extends js.Object {
   /** EBML ID as a hex string */
   var tagStr: String
   /** Data type */
-  var `type`: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.EBMLTagSchema['type'] */ js.Any
+  var `type`: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['type'] */ js.Any
 }
 
 object TagMetadata {
@@ -26,14 +26,14 @@ object TagMetadata {
   def apply(
     dataSize: Double,
     end: Double,
-    name: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
+    name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
     start: Double,
     tag: Double,
     tagStr: String,
-    `type`: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.EBMLTagSchema['type'] */ js.Any
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['type'] */ js.Any
   ): TagMetadata = {
-    val __obj = js.Dynamic.literal(dataSize = dataSize, end = end, name = name, start = start, tag = tag, tagStr = tagStr)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(dataSize = dataSize.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagStr = tagStr.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagMetadata]
   }
 }

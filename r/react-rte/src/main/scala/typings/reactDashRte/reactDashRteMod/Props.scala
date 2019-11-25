@@ -50,24 +50,24 @@ object Props {
     toolbarConfig: ToolbarConfig = null,
     toolbarStyle: js.Object = null
   ): Props = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(js.Any.fromFunction1(blockStyleFn))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (customControls != null) __obj.updateDynamic("customControls")(customControls)
-    if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (editorClassName != null) __obj.updateDynamic("editorClassName")(editorClassName)
-    if (editorStyle != null) __obj.updateDynamic("editorStyle")(editorStyle)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (customControls != null) __obj.updateDynamic("customControls")(customControls.asInstanceOf[js.Any])
+    if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (editorClassName != null) __obj.updateDynamic("editorClassName")(editorClassName.asInstanceOf[js.Any])
+    if (editorStyle != null) __obj.updateDynamic("editorStyle")(editorStyle.asInstanceOf[js.Any])
     if (handleReturn != null) __obj.updateDynamic("handleReturn")(js.Any.fromFunction1(handleReturn))
     if (keyBindingFn != null) __obj.updateDynamic("keyBindingFn")(js.Any.fromFunction1(keyBindingFn))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (rootStyle != null) __obj.updateDynamic("rootStyle")(rootStyle)
-    if (toolbarClassName != null) __obj.updateDynamic("toolbarClassName")(toolbarClassName)
-    if (toolbarConfig != null) __obj.updateDynamic("toolbarConfig")(toolbarConfig)
-    if (toolbarStyle != null) __obj.updateDynamic("toolbarStyle")(toolbarStyle)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (rootStyle != null) __obj.updateDynamic("rootStyle")(rootStyle.asInstanceOf[js.Any])
+    if (toolbarClassName != null) __obj.updateDynamic("toolbarClassName")(toolbarClassName.asInstanceOf[js.Any])
+    if (toolbarConfig != null) __obj.updateDynamic("toolbarConfig")(toolbarConfig.asInstanceOf[js.Any])
+    if (toolbarStyle != null) __obj.updateDynamic("toolbarStyle")(toolbarStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

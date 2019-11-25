@@ -14,8 +14,8 @@ trait ScriptParams extends js.Object {
 object ScriptParams {
   @scala.inline
   def apply(lastRefresh: String, sampleExtraction: js.UndefOr[Boolean] = js.undefined): ScriptParams = {
-    val __obj = js.Dynamic.literal(lastRefresh = lastRefresh)
-    if (!js.isUndefined(sampleExtraction)) __obj.updateDynamic("sampleExtraction")(sampleExtraction)
+    val __obj = js.Dynamic.literal(lastRefresh = lastRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleExtraction)) __obj.updateDynamic("sampleExtraction")(sampleExtraction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptParams]
   }
 }

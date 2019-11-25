@@ -30,8 +30,8 @@ object LoggingEvent {
     startTime: Date,
     cluster: Anon_Worker = null
   ): LoggingEvent = {
-    val __obj = js.Dynamic.literal(categoryName = categoryName, context = context, data = data, level = level, pid = pid, startTime = startTime)
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster)
+    val __obj = js.Dynamic.literal(categoryName = categoryName.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingEvent]
   }
 }

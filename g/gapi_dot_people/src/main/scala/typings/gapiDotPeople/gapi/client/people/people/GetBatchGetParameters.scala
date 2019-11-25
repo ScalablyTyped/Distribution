@@ -13,8 +13,8 @@ trait GetBatchGetParameters extends js.Object {
 object GetBatchGetParameters {
   @scala.inline
   def apply(personFields: String, resourcesName: String = null): GetBatchGetParameters = {
-    val __obj = js.Dynamic.literal(personFields = personFields)
-    if (resourcesName != null) __obj.updateDynamic("resourcesName")(resourcesName)
+    val __obj = js.Dynamic.literal(personFields = personFields.asInstanceOf[js.Any])
+    if (resourcesName != null) __obj.updateDynamic("resourcesName")(resourcesName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBatchGetParameters]
   }
 }

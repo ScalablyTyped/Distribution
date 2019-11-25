@@ -28,7 +28,7 @@ trait IPositionComponent extends js.Object {
 object IPositionComponent {
   @scala.inline
   def apply(x: Double, y: Double, z: Double): IPositionComponent = {
-    val __obj = js.Dynamic.literal(x = x, y = y, z = z)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPositionComponent]
   }

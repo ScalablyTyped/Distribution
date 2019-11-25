@@ -17,7 +17,7 @@ trait Anon_Icon extends js.Object {
 object Anon_Icon {
   @scala.inline
   def apply(icon: Element, mode: String, onClick: () => Unit, styles: StringDictionary[RegisteredStyle[_]]): Anon_Icon = {
-    val __obj = js.Dynamic.literal(icon = icon, mode = mode, onClick = js.Any.fromFunction0(onClick), styles = styles)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Icon]
   }

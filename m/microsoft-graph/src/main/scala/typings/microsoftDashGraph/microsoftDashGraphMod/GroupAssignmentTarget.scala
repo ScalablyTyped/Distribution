@@ -13,7 +13,7 @@ object GroupAssignmentTarget {
   @scala.inline
   def apply(groupId: String = null): GroupAssignmentTarget = {
     val __obj = js.Dynamic.literal()
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupAssignmentTarget]
   }
 }

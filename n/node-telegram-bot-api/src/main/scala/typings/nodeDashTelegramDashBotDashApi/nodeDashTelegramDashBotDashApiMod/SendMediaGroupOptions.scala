@@ -13,7 +13,7 @@ object SendMediaGroupOptions {
   @scala.inline
   def apply(disable_notification: js.UndefOr[Boolean] = js.undefined, reply_to_message_id: Int | Double = null): SendMediaGroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification)
+    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification.asInstanceOf[js.Any])
     if (reply_to_message_id != null) __obj.updateDynamic("reply_to_message_id")(reply_to_message_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMediaGroupOptions]
   }

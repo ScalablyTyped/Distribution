@@ -14,7 +14,7 @@ object Anon_ProjectName {
   @scala.inline
   def apply(projects: StringDictionary[GraphQLResolvedConfigData] = null): Anon_ProjectName = {
     val __obj = js.Dynamic.literal()
-    if (projects != null) __obj.updateDynamic("projects")(projects)
+    if (projects != null) __obj.updateDynamic("projects")(projects.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ProjectName]
   }
 }

@@ -66,12 +66,12 @@ object SketchViewModelUpdateUpdateOptions {
     toggleToolOnClick: js.UndefOr[Boolean] = js.undefined,
     tool: String = null
   ): SketchViewModelUpdateUpdateOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation)
-    if (!js.isUndefined(enableScaling)) __obj.updateDynamic("enableScaling")(enableScaling)
-    if (!js.isUndefined(preserveAspectRatio)) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
-    if (!js.isUndefined(toggleToolOnClick)) __obj.updateDynamic("toggleToolOnClick")(toggleToolOnClick)
-    if (tool != null) __obj.updateDynamic("tool")(tool)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableScaling)) __obj.updateDynamic("enableScaling")(enableScaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveAspectRatio)) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleToolOnClick)) __obj.updateDynamic("toggleToolOnClick")(toggleToolOnClick.asInstanceOf[js.Any])
+    if (tool != null) __obj.updateDynamic("tool")(tool.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchViewModelUpdateUpdateOptions]
   }
 }

@@ -22,7 +22,7 @@ object ReportedParallelism {
   @scala.inline
   def apply(isInfinite: js.UndefOr[Boolean] = js.undefined, value: Int | Double = null): ReportedParallelism = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isInfinite)) __obj.updateDynamic("isInfinite")(isInfinite)
+    if (!js.isUndefined(isInfinite)) __obj.updateDynamic("isInfinite")(isInfinite.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportedParallelism]
   }

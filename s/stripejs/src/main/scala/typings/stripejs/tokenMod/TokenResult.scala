@@ -20,8 +20,8 @@ object TokenResult {
   @scala.inline
   def apply(error: StripeError = null, token: Token = null): TokenResult = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenResult]
   }
 }

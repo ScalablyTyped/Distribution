@@ -33,10 +33,10 @@ object DiagnosticsOptions {
     validate: js.UndefOr[Boolean] = js.undefined
   ): DiagnosticsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowComments)) __obj.updateDynamic("allowComments")(allowComments)
-    if (!js.isUndefined(enableSchemaRequest)) __obj.updateDynamic("enableSchemaRequest")(enableSchemaRequest)
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (!js.isUndefined(allowComments)) __obj.updateDynamic("allowComments")(allowComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSchemaRequest)) __obj.updateDynamic("enableSchemaRequest")(enableSchemaRequest.asInstanceOf[js.Any])
+    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticsOptions]
   }
 }

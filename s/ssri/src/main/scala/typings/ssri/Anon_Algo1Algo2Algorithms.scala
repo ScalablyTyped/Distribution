@@ -28,13 +28,13 @@ object Anon_Algo1Algo2Algorithms {
     strict: js.UndefOr[Boolean] = js.undefined
   ): Anon_Algo1Algo2Algorithms = {
     val __obj = js.Dynamic.literal()
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(js.Any.fromFunction2(pickAlgorithm))
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Algo1Algo2Algorithms]
   }
 }

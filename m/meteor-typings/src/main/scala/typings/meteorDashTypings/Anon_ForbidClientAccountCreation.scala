@@ -22,11 +22,11 @@ object Anon_ForbidClientAccountCreation {
     sendVerificationEmail: js.UndefOr[Boolean] = js.undefined
   ): Anon_ForbidClientAccountCreation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forbidClientAccountCreation)) __obj.updateDynamic("forbidClientAccountCreation")(forbidClientAccountCreation)
+    if (!js.isUndefined(forbidClientAccountCreation)) __obj.updateDynamic("forbidClientAccountCreation")(forbidClientAccountCreation.asInstanceOf[js.Any])
     if (loginExpirationInDays != null) __obj.updateDynamic("loginExpirationInDays")(loginExpirationInDays.asInstanceOf[js.Any])
-    if (oauthSecretKey != null) __obj.updateDynamic("oauthSecretKey")(oauthSecretKey)
+    if (oauthSecretKey != null) __obj.updateDynamic("oauthSecretKey")(oauthSecretKey.asInstanceOf[js.Any])
     if (restrictCreationByEmailDomain != null) __obj.updateDynamic("restrictCreationByEmailDomain")(restrictCreationByEmailDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendVerificationEmail)) __obj.updateDynamic("sendVerificationEmail")(sendVerificationEmail)
+    if (!js.isUndefined(sendVerificationEmail)) __obj.updateDynamic("sendVerificationEmail")(sendVerificationEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ForbidClientAccountCreation]
   }
 }

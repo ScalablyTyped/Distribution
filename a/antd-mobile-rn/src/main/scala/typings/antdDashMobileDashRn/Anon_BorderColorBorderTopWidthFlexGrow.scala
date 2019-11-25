@@ -14,7 +14,7 @@ trait Anon_BorderColorBorderTopWidthFlexGrow extends js.Object {
 object Anon_BorderColorBorderTopWidthFlexGrow {
   @scala.inline
   def apply(borderColor: String, borderTopWidth: Double, flexGrow: Double, paddingVertical: Double): Anon_BorderColorBorderTopWidthFlexGrow = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, borderTopWidth = borderTopWidth, flexGrow = flexGrow, paddingVertical = paddingVertical)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderTopWidth = borderTopWidth.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderColorBorderTopWidthFlexGrow]
   }

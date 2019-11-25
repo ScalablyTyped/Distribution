@@ -19,8 +19,8 @@ trait ProjectsCreateForOrgParams extends js.Object {
 object ProjectsCreateForOrgParams {
   @scala.inline
   def apply(name: String, org: String, body: String = null): ProjectsCreateForOrgParams = {
-    val __obj = js.Dynamic.literal(name = name, org = org)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsCreateForOrgParams]
   }
 }

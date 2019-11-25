@@ -22,8 +22,8 @@ object Anon_CommentsDeclarationLoc {
     loc: SourceLocationKind = null
   ): Anon_CommentsDeclarationLoc = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsDeclarationLoc]
   }
 }

@@ -13,8 +13,8 @@ trait Anon_PropNameViewModel
 object Anon_PropNameViewModel {
   @scala.inline
   def apply(viewModel: js.Object, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_PropNameViewModel = {
-    val __obj = js.Dynamic.literal(viewModel = viewModel)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(viewModel = viewModel.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_PropNameViewModel]
   }
 }

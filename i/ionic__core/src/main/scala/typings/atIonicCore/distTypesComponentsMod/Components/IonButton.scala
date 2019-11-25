@@ -14,8 +14,6 @@ import typings.atIonicCore.atIonicCoreStrings.round
 import typings.atIonicCore.atIonicCoreStrings.small
 import typings.atIonicCore.atIonicCoreStrings.solid
 import typings.atIonicCore.atIonicCoreStrings.submit
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +26,9 @@ trait IonButton extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * If `true`, the user cannot interact with the button.
     */
@@ -60,7 +60,7 @@ trait IonButton extends js.Object {
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: RouterDirection
+  var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
   /**
     * The button shape.
     */
@@ -88,10 +88,10 @@ object IonButton {
   def apply(
     buttonType: String,
     disabled: Boolean,
-    routerDirection: RouterDirection,
+    routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any,
     strong: Boolean,
     `type`: submit | reset | button,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     download: String = null,
     expand: full | block = null,
     fill: clear | outline | solid | default = null,
@@ -102,18 +102,18 @@ object IonButton {
     size: small | default | large = null,
     target: String = null
   ): IonButton = {
-    val __obj = js.Dynamic.literal(buttonType = buttonType, disabled = disabled, routerDirection = routerDirection, strong = strong)
+    val __obj = js.Dynamic.literal(buttonType = buttonType.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], routerDirection = routerDirection.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download)
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonButton]
   }
 }

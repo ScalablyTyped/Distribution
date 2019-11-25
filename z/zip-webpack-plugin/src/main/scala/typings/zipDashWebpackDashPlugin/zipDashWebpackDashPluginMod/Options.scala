@@ -66,14 +66,14 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fileOptions != null) __obj.updateDynamic("fileOptions")(fileOptions)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fileOptions != null) __obj.updateDynamic("fileOptions")(fileOptions.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pathMapper != null) __obj.updateDynamic("pathMapper")(js.Any.fromFunction1(pathMapper))
-    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
-    if (zipOptions != null) __obj.updateDynamic("zipOptions")(zipOptions)
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix.asInstanceOf[js.Any])
+    if (zipOptions != null) __obj.updateDynamic("zipOptions")(zipOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

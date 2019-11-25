@@ -41,14 +41,14 @@ object LeaderboardConfiguration {
     token: String = null
   ): LeaderboardConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (draft != null) __obj.updateDynamic("draft")(draft)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (published != null) __obj.updateDynamic("published")(published)
-    if (scoreMax != null) __obj.updateDynamic("scoreMax")(scoreMax)
-    if (scoreMin != null) __obj.updateDynamic("scoreMin")(scoreMin)
-    if (scoreOrder != null) __obj.updateDynamic("scoreOrder")(scoreOrder)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (draft != null) __obj.updateDynamic("draft")(draft.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (scoreMax != null) __obj.updateDynamic("scoreMax")(scoreMax.asInstanceOf[js.Any])
+    if (scoreMin != null) __obj.updateDynamic("scoreMin")(scoreMin.asInstanceOf[js.Any])
+    if (scoreOrder != null) __obj.updateDynamic("scoreOrder")(scoreOrder.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaderboardConfiguration]
   }
 }

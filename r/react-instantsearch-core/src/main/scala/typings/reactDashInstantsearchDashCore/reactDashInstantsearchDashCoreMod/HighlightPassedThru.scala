@@ -13,8 +13,8 @@ trait HighlightPassedThru[TDoc] extends js.Object {
 object HighlightPassedThru {
   @scala.inline
   def apply[TDoc](attribute: String, hit: Hit[TDoc], highlightProperty: String = null): HighlightPassedThru[TDoc] = {
-    val __obj = js.Dynamic.literal(attribute = attribute, hit = hit.asInstanceOf[js.Any])
-    if (highlightProperty != null) __obj.updateDynamic("highlightProperty")(highlightProperty)
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], hit = hit.asInstanceOf[js.Any])
+    if (highlightProperty != null) __obj.updateDynamic("highlightProperty")(highlightProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightPassedThru[TDoc]]
   }
 }

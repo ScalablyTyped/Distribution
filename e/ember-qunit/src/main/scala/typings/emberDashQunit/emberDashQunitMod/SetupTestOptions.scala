@@ -16,7 +16,7 @@ object SetupTestOptions {
   @scala.inline
   def apply(resolver: Resolver = null): SetupTestOptions = {
     val __obj = js.Dynamic.literal()
-    if (resolver != null) __obj.updateDynamic("resolver")(resolver)
+    if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetupTestOptions]
   }
 }

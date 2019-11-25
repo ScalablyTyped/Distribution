@@ -18,7 +18,7 @@ object IPropertyValueIconClue {
     PropertyDef: MFBuiltInPropertyDef | Double,
     ValueListItem: Double
   ): IPropertyValueIconClue = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PropertyDef = PropertyDef.asInstanceOf[js.Any], ValueListItem = ValueListItem)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PropertyDef = PropertyDef.asInstanceOf[js.Any], ValueListItem = ValueListItem.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPropertyValueIconClue]
   }

@@ -44,10 +44,10 @@ object IAnimationOptions {
     val __obj = js.Dynamic.literal()
     if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimationOptions]
   }
 }

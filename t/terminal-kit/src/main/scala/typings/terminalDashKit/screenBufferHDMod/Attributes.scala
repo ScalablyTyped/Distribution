@@ -53,22 +53,22 @@ object Attributes {
     transparency: js.UndefOr[Boolean] = js.undefined,
     underline: js.UndefOr[Boolean] = js.undefined
   ): Attributes = {
-    val __obj = js.Dynamic.literal(b = b, bgB = bgB, bgG = bgG, bgR = bgR, g = g, r = r)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], bgB = bgB.asInstanceOf[js.Any], bgG = bgG.asInstanceOf[js.Any], bgR = bgR.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
     if (bgA != null) __obj.updateDynamic("bgA")(bgA.asInstanceOf[js.Any])
-    if (!js.isUndefined(bgDefaultColor)) __obj.updateDynamic("bgDefaultColor")(bgDefaultColor)
-    if (!js.isUndefined(blink)) __obj.updateDynamic("blink")(blink)
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
-    if (!js.isUndefined(charTransparency)) __obj.updateDynamic("charTransparency")(charTransparency)
-    if (!js.isUndefined(defaultColor)) __obj.updateDynamic("defaultColor")(defaultColor)
-    if (!js.isUndefined(dim)) __obj.updateDynamic("dim")(dim)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse)
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
-    if (!js.isUndefined(strike)) __obj.updateDynamic("strike")(strike)
-    if (!js.isUndefined(styleTransparency)) __obj.updateDynamic("styleTransparency")(styleTransparency)
-    if (!js.isUndefined(transparency)) __obj.updateDynamic("transparency")(transparency)
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline)
+    if (!js.isUndefined(bgDefaultColor)) __obj.updateDynamic("bgDefaultColor")(bgDefaultColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(blink)) __obj.updateDynamic("blink")(blink.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (!js.isUndefined(charTransparency)) __obj.updateDynamic("charTransparency")(charTransparency.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultColor)) __obj.updateDynamic("defaultColor")(defaultColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(dim)) __obj.updateDynamic("dim")(dim.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
+    if (!js.isUndefined(strike)) __obj.updateDynamic("strike")(strike.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleTransparency)) __obj.updateDynamic("styleTransparency")(styleTransparency.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparency)) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
 }

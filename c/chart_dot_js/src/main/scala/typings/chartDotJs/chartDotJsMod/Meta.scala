@@ -31,14 +31,14 @@ object Meta {
     xAxisID: String = null,
     yAxisID: String = null
   ): Meta = {
-    val __obj = js.Dynamic.literal(controller = controller, data = data)
-    __obj.updateDynamic("type")(`type`)
-    if ($filler != null) __obj.updateDynamic("$filler")($filler)
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (total != null) __obj.updateDynamic("total")(total)
-    if (xAxisID != null) __obj.updateDynamic("xAxisID")(xAxisID)
-    if (yAxisID != null) __obj.updateDynamic("yAxisID")(yAxisID)
+    val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if ($filler != null) __obj.updateDynamic("$filler")($filler.asInstanceOf[js.Any])
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (xAxisID != null) __obj.updateDynamic("xAxisID")(xAxisID.asInstanceOf[js.Any])
+    if (yAxisID != null) __obj.updateDynamic("yAxisID")(yAxisID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meta]
   }
 }

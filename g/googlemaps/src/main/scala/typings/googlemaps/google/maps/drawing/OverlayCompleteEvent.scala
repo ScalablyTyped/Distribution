@@ -21,7 +21,7 @@ object OverlayCompleteEvent {
   @scala.inline
   def apply(overlay: Marker | Polygon | Polyline | Rectangle | Circle, `type`: OverlayType): OverlayCompleteEvent = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayCompleteEvent]
   }
 }

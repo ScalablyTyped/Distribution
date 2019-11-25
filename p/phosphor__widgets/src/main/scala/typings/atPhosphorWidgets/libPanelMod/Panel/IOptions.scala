@@ -21,7 +21,7 @@ object IOptions {
   @scala.inline
   def apply(layout: PanelLayout = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

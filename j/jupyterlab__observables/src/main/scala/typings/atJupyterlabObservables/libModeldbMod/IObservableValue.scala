@@ -38,8 +38,8 @@ object IObservableValue {
     set: JSONValue => Unit,
     `type`: Value
   ): IObservableValue = {
-    val __obj = js.Dynamic.literal(changed = changed, dispose = js.Any.fromFunction0(dispose), get = js.Any.fromFunction0(get), isDisposed = isDisposed, set = js.Any.fromFunction1(set))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), get = js.Any.fromFunction0(get), isDisposed = isDisposed.asInstanceOf[js.Any], set = js.Any.fromFunction1(set))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObservableValue]
   }
 }

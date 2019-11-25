@@ -13,7 +13,7 @@ trait AttachmentData extends js.Object {
 object AttachmentData {
   @scala.inline
   def apply(content_type: js.Any, data: js.Any, name: String): AttachmentData = {
-    val __obj = js.Dynamic.literal(content_type = content_type, data = data, name = name)
+    val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AttachmentData]
   }

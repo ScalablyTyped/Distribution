@@ -22,8 +22,8 @@ object HighlightProps {
     language: Language,
     theme: PrismTheme = null
   ): HighlightProps = {
-    val __obj = js.Dynamic.literal(Prism = Prism, children = js.Any.fromFunction1(children), code = code, language = language)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(Prism = Prism.asInstanceOf[js.Any], children = js.Any.fromFunction1(children), code = code.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightProps]
   }
 }

@@ -25,9 +25,9 @@ object PathPaymentStrictReceive {
     path: js.Array[Asset] = null,
     source: String = null
   ): PathPaymentStrictReceive = {
-    val __obj = js.Dynamic.literal(destAmount = destAmount, destAsset = destAsset, destination = destination, sendAsset = sendAsset, sendMax = sendMax)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(destAmount = destAmount.asInstanceOf[js.Any], destAsset = destAsset.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], sendAsset = sendAsset.asInstanceOf[js.Any], sendMax = sendMax.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathPaymentStrictReceive]
   }
 }

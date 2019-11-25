@@ -105,10 +105,10 @@ object IProduct {
     `type`: ProductType = null,
     unit_label: String = null
   ): IProduct = {
-    val __obj = js.Dynamic.literal(active = active, attributes = attributes, caption = caption, created = created, deactivated_on = deactivated_on, description = description, id = id, images = images, livemode = livemode, metadata = metadata, name = name, package_dimensions = package_dimensions, shippable = shippable, skus = skus, statement_descriptor = statement_descriptor, updated = updated, url = url)
-    __obj.updateDynamic("object")(`object`)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (unit_label != null) __obj.updateDynamic("unit_label")(unit_label)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], deactivated_on = deactivated_on.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], package_dimensions = package_dimensions.asInstanceOf[js.Any], shippable = shippable.asInstanceOf[js.Any], skus = skus.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (unit_label != null) __obj.updateDynamic("unit_label")(unit_label.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProduct]
   }
 }

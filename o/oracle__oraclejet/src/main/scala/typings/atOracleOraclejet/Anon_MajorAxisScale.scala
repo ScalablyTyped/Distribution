@@ -22,8 +22,8 @@ object Anon_MajorAxisScale {
     viewportStart: String,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_MajorAxisScale = {
-    val __obj = js.Dynamic.literal(majorAxisScale = majorAxisScale, minorAxisScale = minorAxisScale, viewportEnd = viewportEnd, viewportStart = viewportStart)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(majorAxisScale = majorAxisScale.asInstanceOf[js.Any], minorAxisScale = minorAxisScale.asInstanceOf[js.Any], viewportEnd = viewportEnd.asInstanceOf[js.Any], viewportStart = viewportStart.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_MajorAxisScale]
   }
 }

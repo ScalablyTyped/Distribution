@@ -17,7 +17,7 @@ object BlockAction {
     `type`: ROUTER_BLOCK
   ): BlockAction = {
     val __obj = js.Dynamic.literal(payload = js.Any.fromFunction2(payload))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockAction]
   }
 }

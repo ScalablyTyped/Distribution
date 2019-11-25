@@ -23,8 +23,8 @@ object _UnmarshalledAccessControlPolicy {
   @scala.inline
   def apply(Grants: js.Array[_UnmarshalledGrant] = null, Owner: _UnmarshalledOwner = null): _UnmarshalledAccessControlPolicy = {
     val __obj = js.Dynamic.literal()
-    if (Grants != null) __obj.updateDynamic("Grants")(Grants)
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    if (Grants != null) __obj.updateDynamic("Grants")(Grants.asInstanceOf[js.Any])
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledAccessControlPolicy]
   }
 }

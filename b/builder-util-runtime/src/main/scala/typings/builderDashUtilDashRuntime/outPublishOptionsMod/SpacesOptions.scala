@@ -38,13 +38,13 @@ object SpacesOptions {
     publisherName: js.Array[String] = null,
     updaterCacheDirName: String = null
   ): SpacesOptions = {
-    val __obj = js.Dynamic.literal(name = name, provider = provider, region = region)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpacesOptions]
   }
 }

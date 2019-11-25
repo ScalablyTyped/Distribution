@@ -14,7 +14,7 @@ trait Anon_BundleOptions[T /* <: String */] extends js.Object {
 object Anon_BundleOptions {
   @scala.inline
   def apply[T /* <: String */](bundle: Bundle with Anon_Type[T], options: Options = null): Anon_BundleOptions[T] = {
-    val __obj = js.Dynamic.literal(bundle = bundle)
+    val __obj = js.Dynamic.literal(bundle = bundle.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BundleOptions[T]]
   }

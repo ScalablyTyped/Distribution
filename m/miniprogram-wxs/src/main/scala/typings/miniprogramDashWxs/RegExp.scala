@@ -40,7 +40,7 @@ object RegExp {
     source: java.lang.String,
     test: java.lang.String => scala.Boolean
   ): RegExp = {
-    val __obj = js.Dynamic.literal(compile = js.Any.fromFunction0(compile), exec = js.Any.fromFunction1(exec), global = global, ignoreCase = ignoreCase, lastIndex = lastIndex, multiline = multiline, source = source, test = js.Any.fromFunction1(test))
+    val __obj = js.Dynamic.literal(compile = js.Any.fromFunction0(compile), exec = js.Any.fromFunction1(exec), global = global.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], lastIndex = lastIndex.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[RegExp]
   }

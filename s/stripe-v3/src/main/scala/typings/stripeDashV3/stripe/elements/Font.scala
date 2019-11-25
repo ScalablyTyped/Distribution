@@ -26,13 +26,13 @@ object Font {
     weight: String = null
   ): Font = {
     val __obj = js.Dynamic.literal()
-    if (cssSrc != null) __obj.updateDynamic("cssSrc")(cssSrc)
-    if (display != null) __obj.updateDynamic("display")(display)
-    if (family != null) __obj.updateDynamic("family")(family)
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (cssSrc != null) __obj.updateDynamic("cssSrc")(cssSrc.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Font]
   }
 }

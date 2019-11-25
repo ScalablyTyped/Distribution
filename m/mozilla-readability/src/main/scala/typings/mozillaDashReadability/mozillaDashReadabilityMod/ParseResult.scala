@@ -25,7 +25,7 @@ object ParseResult {
     textContent: String,
     title: String
   ): ParseResult = {
-    val __obj = js.Dynamic.literal(byline = byline, content = content, dir = dir, excerpt = excerpt, length = length, textContent = textContent, title = title)
+    val __obj = js.Dynamic.literal(byline = byline.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], excerpt = excerpt.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], textContent = textContent.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParseResult]
   }

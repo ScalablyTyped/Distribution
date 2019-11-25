@@ -14,8 +14,8 @@ trait WorkerInfo extends js.Object {
 object WorkerInfo {
   @scala.inline
   def apply(title: java.lang.String, `type`: java.lang.String, url: java.lang.String, workerId: WorkerID): WorkerInfo = {
-    val __obj = js.Dynamic.literal(title = title, url = url, workerId = workerId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], workerId = workerId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerInfo]
   }
 }

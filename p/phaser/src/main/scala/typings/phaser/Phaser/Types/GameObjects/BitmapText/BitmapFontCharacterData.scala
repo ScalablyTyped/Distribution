@@ -67,7 +67,7 @@ object BitmapFontCharacterData {
     y: Double,
     yOffset: Double
   ): BitmapFontCharacterData = {
-    val __obj = js.Dynamic.literal(centerX = centerX, centerY = centerY, data = data, height = height, kerning = kerning, width = width, x = x, xOffset = xOffset, y = y, yOffset = yOffset)
+    val __obj = js.Dynamic.literal(centerX = centerX.asInstanceOf[js.Any], centerY = centerY.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], kerning = kerning.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xOffset = xOffset.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yOffset = yOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BitmapFontCharacterData]
   }

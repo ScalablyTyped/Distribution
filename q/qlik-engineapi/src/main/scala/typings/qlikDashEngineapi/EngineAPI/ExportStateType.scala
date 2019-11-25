@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ExportStateType extends js.Object
 
+object ExportStateType {
+  @scala.inline
+  def A: typings.qlikDashEngineapi.qlikDashEngineapiStrings.A = this.cast("A")
+  @scala.inline
+  def P: typings.qlikDashEngineapi.qlikDashEngineapiStrings.P = this.cast("P")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

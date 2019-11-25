@@ -18,7 +18,7 @@ trait UsersTogglePrimaryEmailVisibilityParams extends js.Object {
 object UsersTogglePrimaryEmailVisibilityParams {
   @scala.inline
   def apply(email: String, visibility: String): UsersTogglePrimaryEmailVisibilityParams = {
-    val __obj = js.Dynamic.literal(email = email, visibility = visibility)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersTogglePrimaryEmailVisibilityParams]
   }

@@ -19,11 +19,11 @@ object RTCPeerConnectionIceEventInit {
     url: java.lang.String = null
   ): RTCPeerConnectionIceEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
-    if (candidate != null) __obj.updateDynamic("candidate")(candidate)
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (candidate != null) __obj.updateDynamic("candidate")(candidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCPeerConnectionIceEventInit]
   }
 }

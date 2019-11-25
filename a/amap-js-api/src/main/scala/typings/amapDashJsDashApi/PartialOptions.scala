@@ -25,11 +25,11 @@ object PartialOptions {
     zooms: js.Tuple2[Double, Double] = null
   ): PartialOptions = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialOptions]
   }
 }

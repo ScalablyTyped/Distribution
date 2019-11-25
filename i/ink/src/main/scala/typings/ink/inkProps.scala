@@ -12,7 +12,7 @@ trait inkProps {
   def ColorProps: typings.ink.inkMod.ColorProps.type = typings.ink.inkMod.ColorProps
   type ColorProps = typings.ink.inkMod.ColorProps
   @scala.inline
-  def StaticProps: typings.ink.Anon_Children.type = typings.ink.Anon_Children
+  def StaticProps: Anon_Children.type = typings.ink.Anon_Children
   type StaticProps = Anon_Children
   @scala.inline
   def TextProps: typings.ink.inkMod.TextProps.type = typings.ink.inkMod.TextProps

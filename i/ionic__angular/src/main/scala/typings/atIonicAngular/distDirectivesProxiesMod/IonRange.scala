@@ -4,7 +4,6 @@ import typings.atAngularCore.atAngularCoreMod.ChangeDetectorRef
 import typings.atAngularCore.atAngularCoreMod.ElementRef
 import typings.atAngularCore.atAngularCoreMod.EventEmitter
 import typings.atAngularCore.atAngularCoreMod.NgZone
-import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod.RangeValue
 import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -74,7 +73,7 @@ class IonRange protected ()
     * the value of the range.
     */
   /* CompleteClass */
-  override var value: RangeValue = js.native
+  override var value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any = js.native
   var z: NgZone = js.native
 }
 

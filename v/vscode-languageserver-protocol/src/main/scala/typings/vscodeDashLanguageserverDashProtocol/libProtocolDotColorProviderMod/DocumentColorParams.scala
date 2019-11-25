@@ -15,7 +15,7 @@ trait DocumentColorParams extends js.Object {
 object DocumentColorParams {
   @scala.inline
   def apply(textDocument: TextDocumentIdentifier): DocumentColorParams = {
-    val __obj = js.Dynamic.literal(textDocument = textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocumentColorParams]
   }

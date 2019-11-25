@@ -40,7 +40,7 @@ object IObjectFile {
     ToJSON: () => String,
     Version: Double
   ): IObjectFile = {
-    val __obj = js.Dynamic.literal(ChangeTimeUtc = ChangeTimeUtc, CreationTimeUtc = CreationTimeUtc, Extension = Extension, FileGUID = FileGUID, FileVer = FileVer, GetNameForFileSystem = js.Any.fromFunction0(GetNameForFileSystem), ID = ID, LastAccessTimeUtc = LastAccessTimeUtc, LastWriteTimeUtc = LastWriteTimeUtc, LogicalSize = LogicalSize, LogicalSize_32bit = LogicalSize_32bit, Title = Title, ToJSON = js.Any.fromFunction0(ToJSON), Version = Version)
+    val __obj = js.Dynamic.literal(ChangeTimeUtc = ChangeTimeUtc.asInstanceOf[js.Any], CreationTimeUtc = CreationTimeUtc.asInstanceOf[js.Any], Extension = Extension.asInstanceOf[js.Any], FileGUID = FileGUID.asInstanceOf[js.Any], FileVer = FileVer.asInstanceOf[js.Any], GetNameForFileSystem = js.Any.fromFunction0(GetNameForFileSystem), ID = ID.asInstanceOf[js.Any], LastAccessTimeUtc = LastAccessTimeUtc.asInstanceOf[js.Any], LastWriteTimeUtc = LastWriteTimeUtc.asInstanceOf[js.Any], LogicalSize = LogicalSize.asInstanceOf[js.Any], LogicalSize_32bit = LogicalSize_32bit.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], ToJSON = js.Any.fromFunction0(ToJSON), Version = Version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IObjectFile]
   }

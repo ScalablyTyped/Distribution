@@ -14,9 +14,9 @@ trait NumberSkeleton extends Skeleton {
 object NumberSkeleton {
   @scala.inline
   def apply(tokens: js.Array[NumberSkeletonToken], `type`: `0`, location: Location = null): NumberSkeleton = {
-    val __obj = js.Dynamic.literal(tokens = tokens)
-    __obj.updateDynamic("type")(`type`)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(tokens = tokens.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberSkeleton]
   }
 }

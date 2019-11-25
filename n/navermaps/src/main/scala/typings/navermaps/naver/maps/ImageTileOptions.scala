@@ -30,14 +30,14 @@ object ImageTileOptions {
     transition: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null
   ): ImageTileOptions = {
-    val __obj = js.Dynamic.literal(urls = urls)
+    val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
     if (imgonerror != null) __obj.updateDynamic("imgonerror")(js.Any.fromFunction0(imgonerror))
     if (imgonload != null) __obj.updateDynamic("imgonload")(js.Any.fromFunction0(imgonload))
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition)
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageTileOptions]
   }

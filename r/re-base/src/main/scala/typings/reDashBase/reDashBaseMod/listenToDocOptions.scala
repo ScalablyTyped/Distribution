@@ -24,7 +24,7 @@ trait listenToDocOptions extends js.Object {
 object listenToDocOptions {
   @scala.inline
   def apply(context: js.Object, onFailure: () => Unit = null, `then`: () => Unit = null): listenToDocOptions = {
-    val __obj = js.Dynamic.literal(context = context)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
     if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
     __obj.asInstanceOf[listenToDocOptions]

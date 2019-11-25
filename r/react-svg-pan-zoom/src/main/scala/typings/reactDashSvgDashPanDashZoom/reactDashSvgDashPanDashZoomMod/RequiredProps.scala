@@ -29,8 +29,8 @@ object RequiredProps {
     width: Double,
     value: Value = null
   ): RequiredProps = {
-    val __obj = js.Dynamic.literal(height = height, onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool, width = width)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredProps]
   }
 }

@@ -13,7 +13,7 @@ object Anon_Compact {
   @scala.inline
   def apply(compact: js.UndefOr[Boolean] = js.undefined, customAttribution: String | js.Array[String] = null): Anon_Compact = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
     if (customAttribution != null) __obj.updateDynamic("customAttribution")(customAttribution.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Compact]
   }

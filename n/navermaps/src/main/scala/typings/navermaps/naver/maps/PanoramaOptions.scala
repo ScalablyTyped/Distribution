@@ -41,7 +41,7 @@ object PanoramaOptions {
     zoomControl: Boolean,
     zoomControlOptions: ZoomControlOptions
   ): PanoramaOptions = {
-    val __obj = js.Dynamic.literal(aroundControl = aroundControl, aroundControlOptions = aroundControlOptions, logoControl = logoControl, logoControlOptions = logoControlOptions, maxScale = maxScale, maxZoom = maxZoom, minScale = minScale, minZoom = minZoom, panoId = panoId, position = position.asInstanceOf[js.Any], pov = pov, size = size.asInstanceOf[js.Any], visible = visible, zoomControl = zoomControl, zoomControlOptions = zoomControlOptions)
+    val __obj = js.Dynamic.literal(aroundControl = aroundControl.asInstanceOf[js.Any], aroundControlOptions = aroundControlOptions.asInstanceOf[js.Any], logoControl = logoControl.asInstanceOf[js.Any], logoControlOptions = logoControlOptions.asInstanceOf[js.Any], maxScale = maxScale.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minScale = minScale.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], panoId = panoId.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], pov = pov.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], zoomControl = zoomControl.asInstanceOf[js.Any], zoomControlOptions = zoomControlOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PanoramaOptions]
   }

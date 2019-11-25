@@ -19,9 +19,9 @@ object Anon_Active {
     active: js.UndefOr[Boolean] = js.undefined,
     description: String = null
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal(attributes = attributes, name = name)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Active]
   }
 }

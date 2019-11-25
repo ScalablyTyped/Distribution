@@ -16,8 +16,8 @@ object GooglePrivacyDlpV2beta1Table {
     rows: js.Array[GooglePrivacyDlpV2beta1Row] = null
   ): GooglePrivacyDlpV2beta1Table = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Table]
   }
 }

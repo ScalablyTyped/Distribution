@@ -23,8 +23,8 @@ object KnockstrapProgressDefaults {
     textHidden: Boolean,
     `type`: String
   ): KnockstrapProgressDefaults = {
-    val __obj = js.Dynamic.literal(animated = animated, css = css, striped = striped, text = text, textHidden = textHidden)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], striped = striped.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textHidden = textHidden.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockstrapProgressDefaults]
   }
 }

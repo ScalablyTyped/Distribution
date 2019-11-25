@@ -36,9 +36,9 @@ object AnnotationsVerticalLineTypeConnectorOptions {
   ): AnnotationsVerticalLineTypeConnectorOptions = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd)
+    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
     if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsVerticalLineTypeConnectorOptions]
   }

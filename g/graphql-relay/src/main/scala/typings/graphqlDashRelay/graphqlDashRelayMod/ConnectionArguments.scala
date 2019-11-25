@@ -20,8 +20,8 @@ object ConnectionArguments {
     last: Int | Double = null
   ): ConnectionArguments = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionArguments]

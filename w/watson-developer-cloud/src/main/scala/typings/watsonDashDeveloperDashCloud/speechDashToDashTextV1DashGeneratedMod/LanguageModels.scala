@@ -13,7 +13,7 @@ trait LanguageModels extends js.Object {
 object LanguageModels {
   @scala.inline
   def apply(customizations: js.Array[LanguageModel]): LanguageModels = {
-    val __obj = js.Dynamic.literal(customizations = customizations)
+    val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LanguageModels]
   }

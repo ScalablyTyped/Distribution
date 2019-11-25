@@ -15,7 +15,7 @@ object ValueAxisSettingsFont {
   @scala.inline
   def apply(size: String = null): ValueAxisSettingsFont = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueAxisSettingsFont]
   }
 }

@@ -36,9 +36,9 @@ object Cohort {
   @scala.inline
   def apply(dateRange: DateRange = null, name: String = null, `type`: String = null): Cohort = {
     val __obj = js.Dynamic.literal()
-    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cohort]
   }
 }

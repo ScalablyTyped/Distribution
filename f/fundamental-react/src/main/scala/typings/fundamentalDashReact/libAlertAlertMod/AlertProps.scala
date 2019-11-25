@@ -43,16 +43,16 @@ object AlertProps {
     `type`: AlertType = null
   ): AlertProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps)
-    if (linkText != null) __obj.updateDynamic("linkText")(linkText)
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps.asInstanceOf[js.Any])
+    if (linkText != null) __obj.updateDynamic("linkText")(linkText.asInstanceOf[js.Any])
+    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
     if (onCloseClicked != null) __obj.updateDynamic("onCloseClicked")(js.Any.fromFunction1(onCloseClicked))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertProps]
   }
 }

@@ -32,10 +32,10 @@ object SelectionSettings {
     selectionMode: js.Array[_] = null
   ): SelectionSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDragSelection)) __obj.updateDynamic("allowDragSelection")(allowDragSelection)
+    if (!js.isUndefined(allowDragSelection)) __obj.updateDynamic("allowDragSelection")(allowDragSelection.asInstanceOf[js.Any])
     if (cellSelectionMode != null) __obj.updateDynamic("cellSelectionMode")(cellSelectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableToggle)) __obj.updateDynamic("enableToggle")(enableToggle)
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
+    if (!js.isUndefined(enableToggle)) __obj.updateDynamic("enableToggle")(enableToggle.asInstanceOf[js.Any])
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionSettings]
   }
 }

@@ -37,11 +37,11 @@ object ShellOptions {
     outputEncoding: String = null
   ): ShellOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debugMsg)) __obj.updateDynamic("debugMsg")(debugMsg)
-    if (executionPolicy != null) __obj.updateDynamic("executionPolicy")(executionPolicy)
-    if (inputEncoding != null) __obj.updateDynamic("inputEncoding")(inputEncoding)
-    if (!js.isUndefined(noProfile)) __obj.updateDynamic("noProfile")(noProfile)
-    if (outputEncoding != null) __obj.updateDynamic("outputEncoding")(outputEncoding)
+    if (!js.isUndefined(debugMsg)) __obj.updateDynamic("debugMsg")(debugMsg.asInstanceOf[js.Any])
+    if (executionPolicy != null) __obj.updateDynamic("executionPolicy")(executionPolicy.asInstanceOf[js.Any])
+    if (inputEncoding != null) __obj.updateDynamic("inputEncoding")(inputEncoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(noProfile)) __obj.updateDynamic("noProfile")(noProfile.asInstanceOf[js.Any])
+    if (outputEncoding != null) __obj.updateDynamic("outputEncoding")(outputEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShellOptions]
   }
 }

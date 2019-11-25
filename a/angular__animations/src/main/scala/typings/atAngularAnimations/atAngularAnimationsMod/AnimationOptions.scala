@@ -26,7 +26,7 @@ object AnimationOptions {
   def apply(delay: Double | String = null, params: StringDictionary[js.Any] = null): AnimationOptions = {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptions]
   }
 }

@@ -13,8 +13,8 @@ object Anon_Progressbar {
   @scala.inline
   def apply(progressbar: String = null, toast: String = null): Anon_Progressbar = {
     val __obj = js.Dynamic.literal()
-    if (progressbar != null) __obj.updateDynamic("progressbar")(progressbar)
-    if (toast != null) __obj.updateDynamic("toast")(toast)
+    if (progressbar != null) __obj.updateDynamic("progressbar")(progressbar.asInstanceOf[js.Any])
+    if (toast != null) __obj.updateDynamic("toast")(toast.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Progressbar]
   }
 }

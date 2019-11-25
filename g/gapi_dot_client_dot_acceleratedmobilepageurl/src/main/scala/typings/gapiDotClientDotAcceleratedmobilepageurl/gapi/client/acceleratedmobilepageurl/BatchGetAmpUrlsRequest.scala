@@ -19,8 +19,8 @@ object BatchGetAmpUrlsRequest {
   @scala.inline
   def apply(lookupStrategy: String = null, urls: js.Array[String] = null): BatchGetAmpUrlsRequest = {
     val __obj = js.Dynamic.literal()
-    if (lookupStrategy != null) __obj.updateDynamic("lookupStrategy")(lookupStrategy)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (lookupStrategy != null) __obj.updateDynamic("lookupStrategy")(lookupStrategy.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetAmpUrlsRequest]
   }
 }

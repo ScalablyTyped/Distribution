@@ -12,7 +12,7 @@ trait Anon_Size extends js.Object {
 object Anon_Size {
   @scala.inline
   def apply(size: String, value: String): Anon_Size = {
-    val __obj = js.Dynamic.literal(size = size, value = value)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Size]
   }

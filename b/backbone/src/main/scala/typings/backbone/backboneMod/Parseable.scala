@@ -12,7 +12,7 @@ object Parseable {
   @scala.inline
   def apply(parse: js.Any = null): Parseable = {
     val __obj = js.Dynamic.literal()
-    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parseable]
   }
 }

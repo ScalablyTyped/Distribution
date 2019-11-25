@@ -12,8 +12,8 @@ trait DurationLabelTypeDef extends js.Object {
 object DurationLabelTypeDef {
   @scala.inline
   def apply(string: String, `type`: DurationLabelType): DurationLabelTypeDef = {
-    val __obj = js.Dynamic.literal(string = string)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(string = string.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationLabelTypeDef]
   }
 }

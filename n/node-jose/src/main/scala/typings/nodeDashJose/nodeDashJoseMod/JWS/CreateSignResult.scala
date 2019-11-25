@@ -11,7 +11,7 @@ trait CreateSignResult extends js.Object {
 object CreateSignResult {
   @scala.inline
   def apply(signResult: js.Object): CreateSignResult = {
-    val __obj = js.Dynamic.literal(signResult = signResult)
+    val __obj = js.Dynamic.literal(signResult = signResult.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateSignResult]
   }

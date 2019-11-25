@@ -12,7 +12,7 @@ trait Anon_Compilation_1566266350 extends js.Object {
 object Anon_Compilation_1566266350 {
   @scala.inline
   def apply(compilation: Compilation): Anon_Compilation_1566266350 = {
-    val __obj = js.Dynamic.literal(compilation = compilation)
+    val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Compilation_1566266350]
   }

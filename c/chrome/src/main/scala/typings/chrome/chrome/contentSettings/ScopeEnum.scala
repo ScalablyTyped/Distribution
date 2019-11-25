@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ScopeEnum extends js.Object
 
+object ScopeEnum {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def incognito_session_only: typings.chrome.chromeStrings.incognito_session_only = this.cast("incognito_session_only")
+  @scala.inline
+  def regular: typings.chrome.chromeStrings.regular = this.cast("regular")
+}
+

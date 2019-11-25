@@ -13,7 +13,7 @@ trait Anon_Api extends js.Object {
 object Anon_Api {
   @scala.inline
   def apply(checkResult: StringDictionary[Boolean], errMsg: String): Anon_Api = {
-    val __obj = js.Dynamic.literal(checkResult = checkResult, errMsg = errMsg)
+    val __obj = js.Dynamic.literal(checkResult = checkResult.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Api]
   }

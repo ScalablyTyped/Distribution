@@ -27,12 +27,12 @@ object Anon_ActiveRouteAutoSelection {
     zoomMargin: (js.Array[js.Array[Double] | Double]) | Double = null
   ): Anon_ActiveRouteAutoSelection = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(activeRouteAutoSelection)) __obj.updateDynamic("activeRouteAutoSelection")(activeRouteAutoSelection)
-    if (!js.isUndefined(boundsAutoApply)) __obj.updateDynamic("boundsAutoApply")(boundsAutoApply)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(activeRouteAutoSelection)) __obj.updateDynamic("activeRouteAutoSelection")(activeRouteAutoSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(boundsAutoApply)) __obj.updateDynamic("boundsAutoApply")(boundsAutoApply.asInstanceOf[js.Any])
     if (dragUpdateInterval != null) __obj.updateDynamic("dragUpdateInterval")(dragUpdateInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDragUpdate)) __obj.updateDynamic("preventDragUpdate")(preventDragUpdate)
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin)
+    if (!js.isUndefined(preventDragUpdate)) __obj.updateDynamic("preventDragUpdate")(preventDragUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.asInstanceOf[js.Any])
     if (zoomMargin != null) __obj.updateDynamic("zoomMargin")(zoomMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActiveRouteAutoSelection]
   }

@@ -36,7 +36,7 @@ object ClientCertificateRequest {
     certificateAuthorities: js.Array[ArrayBuffer],
     certificateTypes: js.Array[ToStringLiteral[Anon_ECDSASIGN, String, Exclude[String, rsaSign | ecdsaSign]]]
   ): ClientCertificateRequest = {
-    val __obj = js.Dynamic.literal(certificateAuthorities = certificateAuthorities, certificateTypes = certificateTypes)
+    val __obj = js.Dynamic.literal(certificateAuthorities = certificateAuthorities.asInstanceOf[js.Any], certificateTypes = certificateTypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientCertificateRequest]
   }

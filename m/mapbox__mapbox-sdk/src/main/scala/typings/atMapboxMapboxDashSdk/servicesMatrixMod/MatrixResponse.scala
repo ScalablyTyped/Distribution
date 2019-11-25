@@ -21,9 +21,9 @@ object MatrixResponse {
     distances: js.Array[js.Array[Double]] = null,
     durations: js.Array[js.Array[Double]] = null
   ): MatrixResponse = {
-    val __obj = js.Dynamic.literal(code = code, destinations = destinations, sources = sources)
-    if (distances != null) __obj.updateDynamic("distances")(distances)
-    if (durations != null) __obj.updateDynamic("durations")(durations)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], destinations = destinations.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
+    if (distances != null) __obj.updateDynamic("distances")(distances.asInstanceOf[js.Any])
+    if (durations != null) __obj.updateDynamic("durations")(durations.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatrixResponse]
   }
 }

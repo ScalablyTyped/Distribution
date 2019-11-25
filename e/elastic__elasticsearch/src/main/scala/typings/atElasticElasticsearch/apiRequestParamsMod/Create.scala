@@ -47,22 +47,22 @@ object Create {
     version_type: internal | external | external_gte | force = null,
     wait_for_active_shards: String = null
   ): Create[T] = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id, index = index)
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
     if (refresh != null) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (version_type != null) __obj.updateDynamic("version_type")(version_type.asInstanceOf[js.Any])
-    if (wait_for_active_shards != null) __obj.updateDynamic("wait_for_active_shards")(wait_for_active_shards)
+    if (wait_for_active_shards != null) __obj.updateDynamic("wait_for_active_shards")(wait_for_active_shards.asInstanceOf[js.Any])
     __obj.asInstanceOf[Create[T]]
   }
 }

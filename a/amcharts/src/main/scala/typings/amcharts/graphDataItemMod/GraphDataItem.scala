@@ -86,7 +86,7 @@ object GraphDataItem {
     x: Double,
     y: Double
   ): GraphDataItem = {
-    val __obj = js.Dynamic.literal(alpha = alpha, bullet = bullet, bulletSize = bulletSize, category = category, color = color, customBullet = customBullet, dataContext = dataContext, description = description, fillColors = fillColors, percents = percents, serialDataItem = serialDataItem, url = url, values = values, x = x, y = y)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], bullet = bullet.asInstanceOf[js.Any], bulletSize = bulletSize.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], customBullet = customBullet.asInstanceOf[js.Any], dataContext = dataContext.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], fillColors = fillColors.asInstanceOf[js.Any], percents = percents.asInstanceOf[js.Any], serialDataItem = serialDataItem.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GraphDataItem]
   }

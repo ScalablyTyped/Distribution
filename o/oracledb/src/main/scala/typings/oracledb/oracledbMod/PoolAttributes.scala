@@ -191,15 +191,15 @@ object PoolAttributes {
     user: String = null
   ): PoolAttributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_enableStats)) __obj.updateDynamic("_enableStats")(_enableStats)
-    if (connectString != null) __obj.updateDynamic("connectString")(connectString)
-    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString)
-    if (edition != null) __obj.updateDynamic("edition")(edition)
-    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events)
-    if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth)
-    if (!js.isUndefined(homogeneous)) __obj.updateDynamic("homogeneous")(homogeneous)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias)
+    if (!js.isUndefined(_enableStats)) __obj.updateDynamic("_enableStats")(_enableStats.asInstanceOf[js.Any])
+    if (connectString != null) __obj.updateDynamic("connectString")(connectString.asInstanceOf[js.Any])
+    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
+    if (edition != null) __obj.updateDynamic("edition")(edition.asInstanceOf[js.Any])
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth.asInstanceOf[js.Any])
+    if (!js.isUndefined(homogeneous)) __obj.updateDynamic("homogeneous")(homogeneous.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias.asInstanceOf[js.Any])
     if (poolIncrement != null) __obj.updateDynamic("poolIncrement")(poolIncrement.asInstanceOf[js.Any])
     if (poolMax != null) __obj.updateDynamic("poolMax")(poolMax.asInstanceOf[js.Any])
     if (poolMin != null) __obj.updateDynamic("poolMin")(poolMin.asInstanceOf[js.Any])
@@ -208,7 +208,7 @@ object PoolAttributes {
     if (queueTimeout != null) __obj.updateDynamic("queueTimeout")(queueTimeout.asInstanceOf[js.Any])
     if (sessionCallback != null) __obj.updateDynamic("sessionCallback")(sessionCallback.asInstanceOf[js.Any])
     if (stmtCacheSize != null) __obj.updateDynamic("stmtCacheSize")(stmtCacheSize.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolAttributes]
   }
 }

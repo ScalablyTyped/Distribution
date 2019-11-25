@@ -14,8 +14,8 @@ object Anon_Expires {
   @scala.inline
   def apply(StringDictionary: /* other */ StringDictionary[js.Any] = null, expires: String = null): Anon_Expires = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (expires != null) __obj.updateDynamic("expires")(expires)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Expires]
   }
 }

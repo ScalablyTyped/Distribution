@@ -12,7 +12,7 @@ trait ITraditionalFolder extends js.Object {
 object ITraditionalFolder {
   @scala.inline
   def apply(ID: Double, Name: String): ITraditionalFolder = {
-    val __obj = js.Dynamic.literal(ID = ID, Name = Name)
+    val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITraditionalFolder]
   }

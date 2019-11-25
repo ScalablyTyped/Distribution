@@ -41,12 +41,12 @@ object RaygunV2UserDetails {
     isAnonymous: js.UndefOr[Boolean] = js.undefined,
     uuid: String = null
   ): RaygunV2UserDetails = {
-    val __obj = js.Dynamic.literal(identifier = identifier)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
-    if (!js.isUndefined(isAnonymous)) __obj.updateDynamic("isAnonymous")(isAnonymous)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAnonymous)) __obj.updateDynamic("isAnonymous")(isAnonymous.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaygunV2UserDetails]
   }
 }

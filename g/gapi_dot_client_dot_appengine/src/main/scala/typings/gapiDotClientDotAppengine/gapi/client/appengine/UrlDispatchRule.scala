@@ -20,9 +20,9 @@ object UrlDispatchRule {
   @scala.inline
   def apply(domain: String = null, path: String = null, service: String = null): UrlDispatchRule = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlDispatchRule]
   }
 }

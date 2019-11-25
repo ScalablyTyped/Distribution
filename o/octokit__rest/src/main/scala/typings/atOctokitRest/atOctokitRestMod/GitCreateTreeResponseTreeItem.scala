@@ -16,8 +16,8 @@ trait GitCreateTreeResponseTreeItem extends js.Object {
 object GitCreateTreeResponseTreeItem {
   @scala.inline
   def apply(mode: String, path: String, sha: String, size: Double, `type`: String, url: String): GitCreateTreeResponseTreeItem = {
-    val __obj = js.Dynamic.literal(mode = mode, path = path, sha = sha, size = size, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateTreeResponseTreeItem]
   }
 }

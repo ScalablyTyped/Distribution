@@ -17,8 +17,8 @@ trait Anon_Req extends js.Object {
 object Anon_Req {
   @scala.inline
   def apply(req: ClientRequest, start: Double, url: URL, res: IncomingMessage = null): Anon_Req = {
-    val __obj = js.Dynamic.literal(req = req, start = start, url = url)
-    if (res != null) __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Req]
   }
 }

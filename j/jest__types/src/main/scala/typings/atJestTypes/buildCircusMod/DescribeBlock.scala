@@ -23,8 +23,8 @@ object DescribeBlock {
     tests: js.Array[TestEntry],
     parent: DescribeBlock = null
   ): DescribeBlock = {
-    val __obj = js.Dynamic.literal(children = children, hooks = hooks, mode = mode.asInstanceOf[js.Any], name = name, tests = tests)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBlock]
   }
 }

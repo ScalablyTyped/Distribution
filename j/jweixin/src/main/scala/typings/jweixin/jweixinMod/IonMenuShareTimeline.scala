@@ -29,7 +29,7 @@ object IonMenuShareTimeline {
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IonMenuShareTimeline = {
-    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), imgUrl = imgUrl, link = link, success = js.Any.fromFunction0(success), title = title)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), imgUrl = imgUrl.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], success = js.Any.fromFunction0(success), title = title.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IonMenuShareTimeline]

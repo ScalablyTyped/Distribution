@@ -24,9 +24,9 @@ object AudioBufferSourceOptions {
     playbackRate: Int | Double = null
   ): AudioBufferSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
     if (detune != null) __obj.updateDynamic("detune")(detune.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (loopEnd != null) __obj.updateDynamic("loopEnd")(loopEnd.asInstanceOf[js.Any])
     if (loopStart != null) __obj.updateDynamic("loopStart")(loopStart.asInstanceOf[js.Any])
     if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])

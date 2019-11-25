@@ -13,7 +13,7 @@ trait KiiError extends js.Object {
 object KiiError {
   @scala.inline
   def apply(code: String, message: String, status: Double): KiiError = {
-    val __obj = js.Dynamic.literal(code = code, message = message, status = status)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KiiError]
   }

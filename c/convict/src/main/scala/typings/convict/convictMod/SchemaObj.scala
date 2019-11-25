@@ -36,11 +36,11 @@ object SchemaObj {
     sensitive: js.UndefOr[Boolean] = js.undefined
   ): SchemaObj[T] = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
-    if (arg != null) __obj.updateDynamic("arg")(arg)
-    if (doc != null) __obj.updateDynamic("doc")(doc)
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (arg != null) __obj.updateDynamic("arg")(arg.asInstanceOf[js.Any])
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObj[T]]
   }
 }

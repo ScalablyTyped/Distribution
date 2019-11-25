@@ -15,7 +15,7 @@ trait ExampleCollection extends js.Object {
 object ExampleCollection {
   @scala.inline
   def apply(examples: js.Array[Example], pagination: Pagination): ExampleCollection = {
-    val __obj = js.Dynamic.literal(examples = examples, pagination = pagination)
+    val __obj = js.Dynamic.literal(examples = examples.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExampleCollection]
   }

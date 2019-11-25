@@ -53,16 +53,16 @@ object ContextMenuClickEventArgs {
     `type`: String = null
   ): ContextMenuClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
-    if (parentText != null) __obj.updateDynamic("parentText")(parentText)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (parentText != null) __obj.updateDynamic("parentText")(parentText.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuClickEventArgs]
   }
 }

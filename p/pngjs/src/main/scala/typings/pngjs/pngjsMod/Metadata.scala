@@ -35,7 +35,7 @@ object Metadata {
     palette: Boolean,
     width: Double
   ): Metadata = {
-    val __obj = js.Dynamic.literal(alpha = alpha, bpp = bpp.asInstanceOf[js.Any], color = color, colorType = colorType, depth = depth.asInstanceOf[js.Any], height = height, interlace = interlace, palette = palette, width = width)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], bpp = bpp.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], colorType = colorType.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], interlace = interlace.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Metadata]
   }

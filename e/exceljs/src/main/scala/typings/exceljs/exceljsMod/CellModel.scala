@@ -33,13 +33,13 @@ object CellModel {
     text: String = null,
     value: CellValue = null
   ): CellModel = {
-    val __obj = js.Dynamic.literal(address = address, comment = comment, master = master, style = style)
-    __obj.updateDynamic("type")(`type`)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], master = master.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (sharedFormula != null) __obj.updateDynamic("sharedFormula")(sharedFormula)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (sharedFormula != null) __obj.updateDynamic("sharedFormula")(sharedFormula.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellModel]
   }

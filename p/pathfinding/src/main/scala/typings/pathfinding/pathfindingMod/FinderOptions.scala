@@ -17,7 +17,7 @@ object FinderOptions {
     weight: Int | Double = null
   ): FinderOptions = {
     val __obj = js.Dynamic.literal()
-    if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement)
+    if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement.asInstanceOf[js.Any])
     if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2(heuristic))
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinderOptions]

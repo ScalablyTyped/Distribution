@@ -68,17 +68,17 @@ object ReactCropProps {
     ruleOfThirds: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): ReactCropProps = {
-    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), src = src)
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), src = src.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(circularCrop)) __obj.updateDynamic("circularCrop")(circularCrop)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (crop != null) __obj.updateDynamic("crop")(crop)
+    if (!js.isUndefined(circularCrop)) __obj.updateDynamic("circularCrop")(circularCrop.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (crop != null) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
     if (crossorigin != null) __obj.updateDynamic("crossorigin")(crossorigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (imageAlt != null) __obj.updateDynamic("imageAlt")(imageAlt)
-    if (imageStyle != null) __obj.updateDynamic("imageStyle")(imageStyle)
-    if (!js.isUndefined(keepSelection)) __obj.updateDynamic("keepSelection")(keepSelection)
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (imageAlt != null) __obj.updateDynamic("imageAlt")(imageAlt.asInstanceOf[js.Any])
+    if (imageStyle != null) __obj.updateDynamic("imageStyle")(imageStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepSelection)) __obj.updateDynamic("keepSelection")(keepSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
@@ -90,8 +90,8 @@ object ReactCropProps {
     if (onImageLoaded != null) __obj.updateDynamic("onImageLoaded")(js.Any.fromFunction1(onImageLoaded))
     if (renderComponent != null) __obj.updateDynamic("renderComponent")(renderComponent.asInstanceOf[js.Any])
     if (renderSelectionAddon != null) __obj.updateDynamic("renderSelectionAddon")(js.Any.fromFunction1(renderSelectionAddon))
-    if (!js.isUndefined(ruleOfThirds)) __obj.updateDynamic("ruleOfThirds")(ruleOfThirds)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(ruleOfThirds)) __obj.updateDynamic("ruleOfThirds")(ruleOfThirds.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactCropProps]
   }
 }

@@ -24,9 +24,9 @@ object GeoHaystackSearchOptions {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (maxDistance != null) __obj.updateDynamic("maxDistance")(maxDistance.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (search != null) __obj.updateDynamic("search")(search)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoHaystackSearchOptions]
   }
 }

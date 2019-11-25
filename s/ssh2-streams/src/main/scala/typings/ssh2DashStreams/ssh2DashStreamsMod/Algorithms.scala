@@ -22,11 +22,11 @@ object Algorithms {
     serverHostKey: js.Array[String] = null
   ): Algorithms = {
     val __obj = js.Dynamic.literal()
-    if (cipher != null) __obj.updateDynamic("cipher")(cipher)
-    if (compress != null) __obj.updateDynamic("compress")(compress)
-    if (hmac != null) __obj.updateDynamic("hmac")(hmac)
-    if (kex != null) __obj.updateDynamic("kex")(kex)
-    if (serverHostKey != null) __obj.updateDynamic("serverHostKey")(serverHostKey)
+    if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
+    if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (hmac != null) __obj.updateDynamic("hmac")(hmac.asInstanceOf[js.Any])
+    if (kex != null) __obj.updateDynamic("kex")(kex.asInstanceOf[js.Any])
+    if (serverHostKey != null) __obj.updateDynamic("serverHostKey")(serverHostKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Algorithms]
   }
 }

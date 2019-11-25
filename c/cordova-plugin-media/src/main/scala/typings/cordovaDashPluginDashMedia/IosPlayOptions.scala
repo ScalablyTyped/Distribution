@@ -21,7 +21,7 @@ object IosPlayOptions {
   ): IosPlayOptions = {
     val __obj = js.Dynamic.literal()
     if (numberOfLoops != null) __obj.updateDynamic("numberOfLoops")(numberOfLoops.asInstanceOf[js.Any])
-    if (!js.isUndefined(playAudioWhenScreenIsLocked)) __obj.updateDynamic("playAudioWhenScreenIsLocked")(playAudioWhenScreenIsLocked)
+    if (!js.isUndefined(playAudioWhenScreenIsLocked)) __obj.updateDynamic("playAudioWhenScreenIsLocked")(playAudioWhenScreenIsLocked.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosPlayOptions]
   }
 }

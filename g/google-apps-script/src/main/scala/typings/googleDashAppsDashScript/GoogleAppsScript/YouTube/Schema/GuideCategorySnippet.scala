@@ -13,8 +13,8 @@ object GuideCategorySnippet {
   @scala.inline
   def apply(channelId: String = null, title: String = null): GuideCategorySnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GuideCategorySnippet]
   }
 }

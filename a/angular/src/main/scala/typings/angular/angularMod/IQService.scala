@@ -30,7 +30,7 @@ trait IQService
     * @param promises A hash of promises.
     */
   def all[T](
-    promises: /* import warning: ImportType.apply c Unsupported type mapping: 
+    promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: angular.angular.IPromise<T[K]> | T[K]}
     */ typings.angular.angularStrings.IQService with js.Any
   ): IPromise[T] = js.native

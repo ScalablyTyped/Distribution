@@ -32,12 +32,12 @@ object Win32Metadata {
     `requested-execution-level`: asInvoker | highestAvailable | requireAdministrator = null
   ): Win32Metadata = {
     val __obj = js.Dynamic.literal()
-    if (CompanyName != null) __obj.updateDynamic("CompanyName")(CompanyName)
-    if (FileDescription != null) __obj.updateDynamic("FileDescription")(FileDescription)
-    if (InternalName != null) __obj.updateDynamic("InternalName")(InternalName)
-    if (OriginalFilename != null) __obj.updateDynamic("OriginalFilename")(OriginalFilename)
-    if (ProductName != null) __obj.updateDynamic("ProductName")(ProductName)
-    if (`application-manifest` != null) __obj.updateDynamic("application-manifest")(`application-manifest`)
+    if (CompanyName != null) __obj.updateDynamic("CompanyName")(CompanyName.asInstanceOf[js.Any])
+    if (FileDescription != null) __obj.updateDynamic("FileDescription")(FileDescription.asInstanceOf[js.Any])
+    if (InternalName != null) __obj.updateDynamic("InternalName")(InternalName.asInstanceOf[js.Any])
+    if (OriginalFilename != null) __obj.updateDynamic("OriginalFilename")(OriginalFilename.asInstanceOf[js.Any])
+    if (ProductName != null) __obj.updateDynamic("ProductName")(ProductName.asInstanceOf[js.Any])
+    if (`application-manifest` != null) __obj.updateDynamic("application-manifest")(`application-manifest`.asInstanceOf[js.Any])
     if (`requested-execution-level` != null) __obj.updateDynamic("requested-execution-level")(`requested-execution-level`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Win32Metadata]
   }

@@ -11,7 +11,9 @@ object atPhosphorDragdropStrings {
   sealed trait all extends SupportedActions
   
   @js.native
-  sealed trait copy extends DropAction
+  sealed trait copy
+    extends DropAction
+       with SupportedActions
   
   @js.native
   sealed trait `copy-link` extends SupportedActions
@@ -20,16 +22,22 @@ object atPhosphorDragdropStrings {
   sealed trait `copy-move` extends SupportedActions
   
   @js.native
-  sealed trait link extends DropAction
+  sealed trait link
+    extends DropAction
+       with SupportedActions
   
   @js.native
   sealed trait `link-move` extends SupportedActions
   
   @js.native
-  sealed trait move extends DropAction
+  sealed trait move
+    extends DropAction
+       with SupportedActions
   
   @js.native
-  sealed trait none extends DropAction
+  sealed trait none
+    extends DropAction
+       with SupportedActions
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

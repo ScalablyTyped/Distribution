@@ -14,8 +14,8 @@ object Anon_EncodingFalse {
   @scala.inline
   def apply(encoding: BufferEncoding = null, withFileTypes: `false` = null): Anon_EncodingFalse = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (withFileTypes != null) __obj.updateDynamic("withFileTypes")(withFileTypes)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (withFileTypes != null) __obj.updateDynamic("withFileTypes")(withFileTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EncodingFalse]
   }
 }

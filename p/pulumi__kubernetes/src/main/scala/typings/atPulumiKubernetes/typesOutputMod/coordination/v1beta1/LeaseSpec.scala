@@ -40,7 +40,7 @@ object LeaseSpec {
     leaseTransitions: Double,
     renewTime: String
   ): LeaseSpec = {
-    val __obj = js.Dynamic.literal(acquireTime = acquireTime, holderIdentity = holderIdentity, leaseDurationSeconds = leaseDurationSeconds, leaseTransitions = leaseTransitions, renewTime = renewTime)
+    val __obj = js.Dynamic.literal(acquireTime = acquireTime.asInstanceOf[js.Any], holderIdentity = holderIdentity.asInstanceOf[js.Any], leaseDurationSeconds = leaseDurationSeconds.asInstanceOf[js.Any], leaseTransitions = leaseTransitions.asInstanceOf[js.Any], renewTime = renewTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LeaseSpec]
   }

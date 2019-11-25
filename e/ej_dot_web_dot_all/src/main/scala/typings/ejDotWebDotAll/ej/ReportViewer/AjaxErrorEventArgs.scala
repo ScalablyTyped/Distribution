@@ -14,7 +14,7 @@ object AjaxErrorEventArgs {
   @scala.inline
   def apply(msg: String = null): AjaxErrorEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (msg != null) __obj.updateDynamic("msg")(msg)
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxErrorEventArgs]
   }
 }

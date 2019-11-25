@@ -21,7 +21,7 @@ object TensorData {
     texData: TextureData,
     uniformValues: TypedArray = null
   ): TensorData = {
-    val __obj = js.Dynamic.literal(isUniform = isUniform, shape = shape, texData = texData)
+    val __obj = js.Dynamic.literal(isUniform = isUniform.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], texData = texData.asInstanceOf[js.Any])
     if (uniformValues != null) __obj.updateDynamic("uniformValues")(uniformValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[TensorData]
   }

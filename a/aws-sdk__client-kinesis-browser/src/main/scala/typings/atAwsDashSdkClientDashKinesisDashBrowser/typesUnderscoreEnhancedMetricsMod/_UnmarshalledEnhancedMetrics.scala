@@ -32,7 +32,7 @@ object _UnmarshalledEnhancedMetrics {
     ] = null
   ): _UnmarshalledEnhancedMetrics = {
     val __obj = js.Dynamic.literal()
-    if (ShardLevelMetrics != null) __obj.updateDynamic("ShardLevelMetrics")(ShardLevelMetrics)
+    if (ShardLevelMetrics != null) __obj.updateDynamic("ShardLevelMetrics")(ShardLevelMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEnhancedMetrics]
   }
 }

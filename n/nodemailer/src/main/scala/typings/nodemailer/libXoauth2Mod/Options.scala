@@ -53,17 +53,17 @@ object Options {
     user: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (accessUrl != null) __obj.updateDynamic("accessUrl")(accessUrl)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (accessUrl != null) __obj.updateDynamic("accessUrl")(accessUrl.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
     if (provisionCallback != null) __obj.updateDynamic("provisionCallback")(js.Any.fromFunction3(provisionCallback))
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
-    if (serviceClient != null) __obj.updateDynamic("serviceClient")(serviceClient)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
+    if (serviceClient != null) __obj.updateDynamic("serviceClient")(serviceClient.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

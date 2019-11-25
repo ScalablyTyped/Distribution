@@ -36,8 +36,8 @@ trait IUIProperties extends js.Object {
 object IUIProperties {
   @scala.inline
   def apply(element: String, name: String, state: String = null): IUIProperties = {
-    val __obj = js.Dynamic.literal(element = element, name = name)
-    if (state != null) __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUIProperties]
   }
 }

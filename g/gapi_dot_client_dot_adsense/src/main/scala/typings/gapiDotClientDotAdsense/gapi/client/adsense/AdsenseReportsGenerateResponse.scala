@@ -49,15 +49,15 @@ object AdsenseReportsGenerateResponse {
     warnings: js.Array[String] = null
   ): AdsenseReportsGenerateResponse = {
     val __obj = js.Dynamic.literal()
-    if (averages != null) __obj.updateDynamic("averages")(averages)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
-    if (totalMatchedRows != null) __obj.updateDynamic("totalMatchedRows")(totalMatchedRows)
-    if (totals != null) __obj.updateDynamic("totals")(totals)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (averages != null) __obj.updateDynamic("averages")(averages.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (totalMatchedRows != null) __obj.updateDynamic("totalMatchedRows")(totalMatchedRows.asInstanceOf[js.Any])
+    if (totals != null) __obj.updateDynamic("totals")(totals.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdsenseReportsGenerateResponse]
   }
 }

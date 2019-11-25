@@ -31,7 +31,7 @@ trait Busline extends js.Object {
 object Busline {
   @scala.inline
   def apply(end_stop: String, id: String, location: LngLat, name: String, start_stop: String): Busline = {
-    val __obj = js.Dynamic.literal(end_stop = end_stop, id = id, location = location, name = name, start_stop = start_stop)
+    val __obj = js.Dynamic.literal(end_stop = end_stop.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start_stop = start_stop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Busline]
   }

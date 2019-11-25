@@ -42,15 +42,15 @@ object Classifier {
     status: String = null,
     updated: String = null
   ): Classifier = {
-    val __obj = js.Dynamic.literal(classifier_id = classifier_id, name = name)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (!js.isUndefined(core_ml_enabled)) __obj.updateDynamic("core_ml_enabled")(core_ml_enabled)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (explanation != null) __obj.updateDynamic("explanation")(explanation)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (retrained != null) __obj.updateDynamic("retrained")(retrained)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(classifier_id = classifier_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (!js.isUndefined(core_ml_enabled)) __obj.updateDynamic("core_ml_enabled")(core_ml_enabled.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (explanation != null) __obj.updateDynamic("explanation")(explanation.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (retrained != null) __obj.updateDynamic("retrained")(retrained.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classifier]
   }
 }

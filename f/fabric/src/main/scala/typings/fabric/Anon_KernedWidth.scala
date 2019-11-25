@@ -12,7 +12,7 @@ trait Anon_KernedWidth extends js.Object {
 object Anon_KernedWidth {
   @scala.inline
   def apply(kernedWidth: Double, width: Double): Anon_KernedWidth = {
-    val __obj = js.Dynamic.literal(kernedWidth = kernedWidth, width = width)
+    val __obj = js.Dynamic.literal(kernedWidth = kernedWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_KernedWidth]
   }

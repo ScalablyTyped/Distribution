@@ -65,13 +65,13 @@ object PostCommentForComparedCommitInput {
     clientRequestToken: String = null,
     location: _Location = null
   ): PostCommentForComparedCommitInput = {
-    val __obj = js.Dynamic.literal(afterCommitId = afterCommitId, content = content, repositoryName = repositoryName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(afterCommitId = afterCommitId.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId)
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId.asInstanceOf[js.Any])
+    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCommentForComparedCommitInput]
   }
 }

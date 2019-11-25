@@ -14,7 +14,7 @@ trait WorkspaceSymbolParams extends js.Object {
 object WorkspaceSymbolParams {
   @scala.inline
   def apply(query: String): WorkspaceSymbolParams = {
-    val __obj = js.Dynamic.literal(query = query)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkspaceSymbolParams]
   }

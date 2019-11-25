@@ -13,7 +13,7 @@ object SurveysStartResponse {
   @scala.inline
   def apply(requestId: String = null): SurveysStartResponse = {
     val __obj = js.Dynamic.literal()
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurveysStartResponse]
   }
 }

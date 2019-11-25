@@ -23,12 +23,12 @@ object Options {
     method: String = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (!js.isUndefined(cached)) __obj.updateDynamic("cached")(cached)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(cached)) __obj.updateDynamic("cached")(cached.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

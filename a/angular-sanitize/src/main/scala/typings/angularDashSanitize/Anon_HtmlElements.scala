@@ -18,9 +18,9 @@ object Anon_HtmlElements {
     svgElements: js.Array[String] = null
   ): Anon_HtmlElements = {
     val __obj = js.Dynamic.literal()
-    if (htmlElements != null) __obj.updateDynamic("htmlElements")(htmlElements)
-    if (htmlVoidElements != null) __obj.updateDynamic("htmlVoidElements")(htmlVoidElements)
-    if (svgElements != null) __obj.updateDynamic("svgElements")(svgElements)
+    if (htmlElements != null) __obj.updateDynamic("htmlElements")(htmlElements.asInstanceOf[js.Any])
+    if (htmlVoidElements != null) __obj.updateDynamic("htmlVoidElements")(htmlVoidElements.asInstanceOf[js.Any])
+    if (svgElements != null) __obj.updateDynamic("svgElements")(svgElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HtmlElements]
   }
 }

@@ -13,7 +13,7 @@ object CommitResponse {
   @scala.inline
   def apply(commitTimestamp: String = null): CommitResponse = {
     val __obj = js.Dynamic.literal()
-    if (commitTimestamp != null) __obj.updateDynamic("commitTimestamp")(commitTimestamp)
+    if (commitTimestamp != null) __obj.updateDynamic("commitTimestamp")(commitTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitResponse]
   }
 }

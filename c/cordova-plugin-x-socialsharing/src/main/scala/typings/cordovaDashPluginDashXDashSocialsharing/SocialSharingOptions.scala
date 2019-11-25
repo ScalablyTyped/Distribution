@@ -25,12 +25,12 @@ object SocialSharingOptions {
     url: String = null
   ): SocialSharingOptions = {
     val __obj = js.Dynamic.literal()
-    if (appPackageName != null) __obj.updateDynamic("appPackageName")(appPackageName)
-    if (chooserTitle != null) __obj.updateDynamic("chooserTitle")(chooserTitle)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (appPackageName != null) __obj.updateDynamic("appPackageName")(appPackageName.asInstanceOf[js.Any])
+    if (chooserTitle != null) __obj.updateDynamic("chooserTitle")(chooserTitle.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocialSharingOptions]
   }
 }

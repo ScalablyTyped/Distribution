@@ -17,9 +17,9 @@ object Anon_Command {
   @scala.inline
   def apply(command: String = null, keystrokes: String = null, target: Element = null): Anon_Command = {
     val __obj = js.Dynamic.literal()
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (keystrokes != null) __obj.updateDynamic("keystrokes")(keystrokes)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (keystrokes != null) __obj.updateDynamic("keystrokes")(keystrokes.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Command]
   }
 }

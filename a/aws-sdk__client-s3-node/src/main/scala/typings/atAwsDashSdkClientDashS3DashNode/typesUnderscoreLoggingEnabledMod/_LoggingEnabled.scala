@@ -28,7 +28,7 @@ object _LoggingEnabled {
     TargetPrefix: String,
     TargetGrants: js.Array[_TargetGrant] | Iterable[_TargetGrant] = null
   ): _LoggingEnabled = {
-    val __obj = js.Dynamic.literal(TargetBucket = TargetBucket, TargetPrefix = TargetPrefix)
+    val __obj = js.Dynamic.literal(TargetBucket = TargetBucket.asInstanceOf[js.Any], TargetPrefix = TargetPrefix.asInstanceOf[js.Any])
     if (TargetGrants != null) __obj.updateDynamic("TargetGrants")(TargetGrants.asInstanceOf[js.Any])
     __obj.asInstanceOf[_LoggingEnabled]
   }

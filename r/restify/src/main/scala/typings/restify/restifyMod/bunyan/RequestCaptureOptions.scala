@@ -42,12 +42,12 @@ object RequestCaptureOptions {
     streams: js.Array[Stream] = null
   ): RequestCaptureOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dumpDefault)) __obj.updateDynamic("dumpDefault")(dumpDefault)
+    if (!js.isUndefined(dumpDefault)) __obj.updateDynamic("dumpDefault")(dumpDefault.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (maxRecords != null) __obj.updateDynamic("maxRecords")(maxRecords.asInstanceOf[js.Any])
     if (maxRequestIds != null) __obj.updateDynamic("maxRequestIds")(maxRequestIds.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (streams != null) __obj.updateDynamic("streams")(streams)
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestCaptureOptions]
   }
 }

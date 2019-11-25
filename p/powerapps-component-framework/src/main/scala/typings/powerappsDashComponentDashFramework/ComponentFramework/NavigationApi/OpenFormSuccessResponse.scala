@@ -15,7 +15,7 @@ trait OpenFormSuccessResponse extends js.Object {
 object OpenFormSuccessResponse {
   @scala.inline
   def apply(savedEntityReference: js.Array[EntityReference]): OpenFormSuccessResponse = {
-    val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference)
+    val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenFormSuccessResponse]
   }

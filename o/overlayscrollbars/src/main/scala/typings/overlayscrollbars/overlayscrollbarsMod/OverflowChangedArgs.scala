@@ -15,7 +15,7 @@ trait OverflowChangedArgs extends js.Object {
 object OverflowChangedArgs {
   @scala.inline
   def apply(clipped: Boolean, x: Boolean, xScrollable: Boolean, y: Boolean, yScrollable: Boolean): OverflowChangedArgs = {
-    val __obj = js.Dynamic.literal(clipped = clipped, x = x, xScrollable = xScrollable, y = y, yScrollable = yScrollable)
+    val __obj = js.Dynamic.literal(clipped = clipped.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xScrollable = xScrollable.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yScrollable = yScrollable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OverflowChangedArgs]
   }

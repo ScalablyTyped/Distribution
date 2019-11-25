@@ -23,7 +23,7 @@ object Anon_DrawThreshold {
   ): Anon_DrawThreshold = {
     val __obj = js.Dynamic.literal()
     if (drawThreshold != null) __obj.updateDynamic("drawThreshold")(drawThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxVisible != null) __obj.updateDynamic("maxVisible")(maxVisible.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

@@ -24,7 +24,7 @@ object LayersResource {
     list: Anon_AltContentVersionFieldsKey => Request[Layersummaries],
     volumeAnnotations: VolumeAnnotationsResource
   ): LayersResource = {
-    val __obj = js.Dynamic.literal(annotationData = annotationData, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), volumeAnnotations = volumeAnnotations)
+    val __obj = js.Dynamic.literal(annotationData = annotationData.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), volumeAnnotations = volumeAnnotations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LayersResource]
   }

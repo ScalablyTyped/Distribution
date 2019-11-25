@@ -21,10 +21,10 @@ object Metadata {
     footnotes: js.Array[Footnote] = null,
     groups: js.Array[String] = null
   ): Metadata = {
-    val __obj = js.Dynamic.literal(name = name, summary = summary)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
 }

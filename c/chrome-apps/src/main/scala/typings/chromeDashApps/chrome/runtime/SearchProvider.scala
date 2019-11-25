@@ -42,21 +42,21 @@ object SearchProvider {
     suggest_url: String = null,
     suggest_url_post_params: String = null
   ): SearchProvider = {
-    val __obj = js.Dynamic.literal(search_url = search_url)
-    if (alternate_urls != null) __obj.updateDynamic("alternate_urls")(alternate_urls)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (favicon_url != null) __obj.updateDynamic("favicon_url")(favicon_url)
-    if (image_url != null) __obj.updateDynamic("image_url")(image_url)
-    if (image_url_post_params != null) __obj.updateDynamic("image_url_post_params")(image_url_post_params)
-    if (instant_url != null) __obj.updateDynamic("instant_url")(instant_url)
-    if (instant_url_post_params != null) __obj.updateDynamic("instant_url_post_params")(instant_url_post_params)
-    if (!js.isUndefined(is_default)) __obj.updateDynamic("is_default")(is_default)
-    if (keyword != null) __obj.updateDynamic("keyword")(keyword)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(search_url = search_url.asInstanceOf[js.Any])
+    if (alternate_urls != null) __obj.updateDynamic("alternate_urls")(alternate_urls.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (favicon_url != null) __obj.updateDynamic("favicon_url")(favicon_url.asInstanceOf[js.Any])
+    if (image_url != null) __obj.updateDynamic("image_url")(image_url.asInstanceOf[js.Any])
+    if (image_url_post_params != null) __obj.updateDynamic("image_url_post_params")(image_url_post_params.asInstanceOf[js.Any])
+    if (instant_url != null) __obj.updateDynamic("instant_url")(instant_url.asInstanceOf[js.Any])
+    if (instant_url_post_params != null) __obj.updateDynamic("instant_url_post_params")(instant_url_post_params.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_default)) __obj.updateDynamic("is_default")(is_default.asInstanceOf[js.Any])
+    if (keyword != null) __obj.updateDynamic("keyword")(keyword.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (prepopulated_id != null) __obj.updateDynamic("prepopulated_id")(prepopulated_id.asInstanceOf[js.Any])
-    if (search_url_post_params != null) __obj.updateDynamic("search_url_post_params")(search_url_post_params)
-    if (suggest_url != null) __obj.updateDynamic("suggest_url")(suggest_url)
-    if (suggest_url_post_params != null) __obj.updateDynamic("suggest_url_post_params")(suggest_url_post_params)
+    if (search_url_post_params != null) __obj.updateDynamic("search_url_post_params")(search_url_post_params.asInstanceOf[js.Any])
+    if (suggest_url != null) __obj.updateDynamic("suggest_url")(suggest_url.asInstanceOf[js.Any])
+    if (suggest_url_post_params != null) __obj.updateDynamic("suggest_url_post_params")(suggest_url_post_params.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchProvider]
   }
 }

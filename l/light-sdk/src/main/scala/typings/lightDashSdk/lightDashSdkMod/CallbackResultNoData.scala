@@ -11,7 +11,7 @@ trait CallbackResultNoData extends js.Object {
 object CallbackResultNoData {
   @scala.inline
   def apply(info: Info): CallbackResultNoData = {
-    val __obj = js.Dynamic.literal(info = info)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CallbackResultNoData]
   }

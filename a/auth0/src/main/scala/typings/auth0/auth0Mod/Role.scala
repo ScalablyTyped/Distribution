@@ -14,9 +14,9 @@ object Role {
   @scala.inline
   def apply(description: String = null, id: String = null, name: String = null): Role = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Role]
   }
 }

@@ -20,10 +20,10 @@ object ParseOptions {
     style: js.UndefOr[Boolean] = js.undefined
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lowerCaseTagName)) __obj.updateDynamic("lowerCaseTagName")(lowerCaseTagName)
-    if (!js.isUndefined(pre)) __obj.updateDynamic("pre")(pre)
-    if (!js.isUndefined(script)) __obj.updateDynamic("script")(script)
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(lowerCaseTagName)) __obj.updateDynamic("lowerCaseTagName")(lowerCaseTagName.asInstanceOf[js.Any])
+    if (!js.isUndefined(pre)) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
+    if (!js.isUndefined(script)) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

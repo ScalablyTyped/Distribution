@@ -17,7 +17,7 @@ object PushSubscriptionOptionsInit {
   ): PushSubscriptionOptionsInit = {
     val __obj = js.Dynamic.literal()
     if (applicationServerKey != null) __obj.updateDynamic("applicationServerKey")(applicationServerKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(userVisibleOnly)) __obj.updateDynamic("userVisibleOnly")(userVisibleOnly)
+    if (!js.isUndefined(userVisibleOnly)) __obj.updateDynamic("userVisibleOnly")(userVisibleOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushSubscriptionOptionsInit]
   }
 }

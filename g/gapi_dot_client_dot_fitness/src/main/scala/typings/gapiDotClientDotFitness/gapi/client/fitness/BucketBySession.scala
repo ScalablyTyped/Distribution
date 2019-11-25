@@ -13,7 +13,7 @@ object BucketBySession {
   @scala.inline
   def apply(minDurationMillis: String = null): BucketBySession = {
     val __obj = js.Dynamic.literal()
-    if (minDurationMillis != null) __obj.updateDynamic("minDurationMillis")(minDurationMillis)
+    if (minDurationMillis != null) __obj.updateDynamic("minDurationMillis")(minDurationMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketBySession]
   }
 }

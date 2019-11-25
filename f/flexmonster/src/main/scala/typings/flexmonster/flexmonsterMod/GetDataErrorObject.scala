@@ -13,7 +13,7 @@ trait GetDataErrorObject extends js.Object {
 object GetDataErrorObject {
   @scala.inline
   def apply(dataHeight: Double, dataWidth: Double, errorMessage: String): GetDataErrorObject = {
-    val __obj = js.Dynamic.literal(dataHeight = dataHeight, dataWidth = dataWidth, errorMessage = errorMessage)
+    val __obj = js.Dynamic.literal(dataHeight = dataHeight.asInstanceOf[js.Any], dataWidth = dataWidth.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetDataErrorObject]
   }

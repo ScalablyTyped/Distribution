@@ -14,7 +14,7 @@ object CopyConfig {
   def apply(onCopy: () => Unit = null, text: String = null): CopyConfig = {
     val __obj = js.Dynamic.literal()
     if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction0(onCopy))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyConfig]
   }
 }

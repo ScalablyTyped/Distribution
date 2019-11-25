@@ -35,19 +35,19 @@ object SecurityPolicyViolationEventInit {
     violatedDirective: java.lang.String = null
   ): SecurityPolicyViolationEventInit = {
     val __obj = js.Dynamic.literal()
-    if (blockedURI != null) __obj.updateDynamic("blockedURI")(blockedURI)
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
+    if (blockedURI != null) __obj.updateDynamic("blockedURI")(blockedURI.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
-    if (documentURI != null) __obj.updateDynamic("documentURI")(documentURI)
-    if (effectiveDirective != null) __obj.updateDynamic("effectiveDirective")(effectiveDirective)
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
+    if (documentURI != null) __obj.updateDynamic("documentURI")(documentURI.asInstanceOf[js.Any])
+    if (effectiveDirective != null) __obj.updateDynamic("effectiveDirective")(effectiveDirective.asInstanceOf[js.Any])
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (originalPolicy != null) __obj.updateDynamic("originalPolicy")(originalPolicy)
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
-    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile)
+    if (originalPolicy != null) __obj.updateDynamic("originalPolicy")(originalPolicy.asInstanceOf[js.Any])
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
+    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (violatedDirective != null) __obj.updateDynamic("violatedDirective")(violatedDirective)
+    if (violatedDirective != null) __obj.updateDynamic("violatedDirective")(violatedDirective.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityPolicyViolationEventInit]
   }
 }

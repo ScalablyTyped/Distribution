@@ -30,15 +30,15 @@ object ShortcutTags {
     year: String = null
   ): ShortcutTags = {
     val __obj = js.Dynamic.literal()
-    if (album != null) __obj.updateDynamic("album")(album)
-    if (artist != null) __obj.updateDynamic("artist")(artist)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (genre != null) __obj.updateDynamic("genre")(genre)
-    if (lyrics != null) __obj.updateDynamic("lyrics")(lyrics)
-    if (picture != null) __obj.updateDynamic("picture")(picture)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (track != null) __obj.updateDynamic("track")(track)
-    if (year != null) __obj.updateDynamic("year")(year)
+    if (album != null) __obj.updateDynamic("album")(album.asInstanceOf[js.Any])
+    if (artist != null) __obj.updateDynamic("artist")(artist.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (genre != null) __obj.updateDynamic("genre")(genre.asInstanceOf[js.Any])
+    if (lyrics != null) __obj.updateDynamic("lyrics")(lyrics.asInstanceOf[js.Any])
+    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
+    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortcutTags]
   }
 }

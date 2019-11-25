@@ -25,7 +25,7 @@ trait Handler extends js.Object {
 object Handler {
   @scala.inline
   def apply(exec: ExecAction, httpGet: HTTPGetAction, tcpSocket: TCPSocketAction): Handler = {
-    val __obj = js.Dynamic.literal(exec = exec, httpGet = httpGet, tcpSocket = tcpSocket)
+    val __obj = js.Dynamic.literal(exec = exec.asInstanceOf[js.Any], httpGet = httpGet.asInstanceOf[js.Any], tcpSocket = tcpSocket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Handler]
   }

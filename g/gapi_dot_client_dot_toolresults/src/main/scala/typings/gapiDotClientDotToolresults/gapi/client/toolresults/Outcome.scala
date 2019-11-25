@@ -55,11 +55,11 @@ object Outcome {
     summary: String = null
   ): Outcome = {
     val __obj = js.Dynamic.literal()
-    if (failureDetail != null) __obj.updateDynamic("failureDetail")(failureDetail)
-    if (inconclusiveDetail != null) __obj.updateDynamic("inconclusiveDetail")(inconclusiveDetail)
-    if (skippedDetail != null) __obj.updateDynamic("skippedDetail")(skippedDetail)
-    if (successDetail != null) __obj.updateDynamic("successDetail")(successDetail)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (failureDetail != null) __obj.updateDynamic("failureDetail")(failureDetail.asInstanceOf[js.Any])
+    if (inconclusiveDetail != null) __obj.updateDynamic("inconclusiveDetail")(inconclusiveDetail.asInstanceOf[js.Any])
+    if (skippedDetail != null) __obj.updateDynamic("skippedDetail")(skippedDetail.asInstanceOf[js.Any])
+    if (successDetail != null) __obj.updateDynamic("successDetail")(successDetail.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Outcome]
   }
 }

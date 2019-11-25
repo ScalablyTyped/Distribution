@@ -24,10 +24,10 @@ object Anon_Body {
     subject: String = null
   ): Anon_Body = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (!js.isUndefined(openWindow)) __obj.updateDynamic("openWindow")(openWindow)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(openWindow)) __obj.updateDynamic("openWindow")(openWindow.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

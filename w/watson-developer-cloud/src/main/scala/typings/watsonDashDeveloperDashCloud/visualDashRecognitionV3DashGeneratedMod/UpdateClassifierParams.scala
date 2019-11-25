@@ -32,12 +32,12 @@ object UpdateClassifierParams {
     positive_examples: Map[String, ReadableStream | FileObject | Buffer] = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): UpdateClassifierParams = {
-    val __obj = js.Dynamic.literal(classifier_id = classifier_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(classifier_id = classifier_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (negative_examples != null) __obj.updateDynamic("negative_examples")(negative_examples.asInstanceOf[js.Any])
-    if (negative_examples_filename != null) __obj.updateDynamic("negative_examples_filename")(negative_examples_filename)
-    if (positive_examples != null) __obj.updateDynamic("positive_examples")(positive_examples)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (negative_examples_filename != null) __obj.updateDynamic("negative_examples_filename")(negative_examples_filename.asInstanceOf[js.Any])
+    if (positive_examples != null) __obj.updateDynamic("positive_examples")(positive_examples.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateClassifierParams]
   }
 }

@@ -28,13 +28,13 @@ object HTMLAttributesidclassNamestylecolorstringbackgroun {
     style: CSSProperties = null
   ): HTMLAttributesidclassNamestylecolorstringbackgroun = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNamestylecolorstringbackgroun]
   }
 }

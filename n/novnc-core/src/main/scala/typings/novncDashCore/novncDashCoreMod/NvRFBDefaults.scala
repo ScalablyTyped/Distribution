@@ -73,9 +73,9 @@ object NvRFBDefaults {
   ): NvRFBDefaults = {
     val __obj = js.Dynamic.literal()
     if (disconnectTimeout != null) __obj.updateDynamic("disconnectTimeout")(disconnectTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(encrypt)) __obj.updateDynamic("encrypt")(encrypt)
-    if (focusContainer != null) __obj.updateDynamic("focusContainer")(focusContainer)
-    if (!js.isUndefined(local_cursor)) __obj.updateDynamic("local_cursor")(local_cursor)
+    if (!js.isUndefined(encrypt)) __obj.updateDynamic("encrypt")(encrypt.asInstanceOf[js.Any])
+    if (focusContainer != null) __obj.updateDynamic("focusContainer")(focusContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(local_cursor)) __obj.updateDynamic("local_cursor")(local_cursor.asInstanceOf[js.Any])
     if (onBell != null) __obj.updateDynamic("onBell")(js.Any.fromFunction1(onBell))
     if (onClipboard != null) __obj.updateDynamic("onClipboard")(js.Any.fromFunction2(onClipboard))
     if (onDesktopName != null) __obj.updateDynamic("onDesktopName")(js.Any.fromFunction2(onDesktopName))
@@ -87,13 +87,13 @@ object NvRFBDefaults {
     if (onPasswordRequired != null) __obj.updateDynamic("onPasswordRequired")(js.Any.fromFunction2(onPasswordRequired))
     if (onUpdateState != null) __obj.updateDynamic("onUpdateState")(js.Any.fromFunction3(onUpdateState))
     if (onXvpInit != null) __obj.updateDynamic("onXvpInit")(js.Any.fromFunction1(onXvpInit))
-    if (repeaterID != null) __obj.updateDynamic("repeaterID")(repeaterID)
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (!js.isUndefined(view_only)) __obj.updateDynamic("view_only")(view_only)
-    if (!js.isUndefined(viewportDrag)) __obj.updateDynamic("viewportDrag")(viewportDrag)
-    if (wsProtocols != null) __obj.updateDynamic("wsProtocols")(wsProtocols)
-    if (xvp_password_sep != null) __obj.updateDynamic("xvp_password_sep")(xvp_password_sep)
+    if (repeaterID != null) __obj.updateDynamic("repeaterID")(repeaterID.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(view_only)) __obj.updateDynamic("view_only")(view_only.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewportDrag)) __obj.updateDynamic("viewportDrag")(viewportDrag.asInstanceOf[js.Any])
+    if (wsProtocols != null) __obj.updateDynamic("wsProtocols")(wsProtocols.asInstanceOf[js.Any])
+    if (xvp_password_sep != null) __obj.updateDynamic("xvp_password_sep")(xvp_password_sep.asInstanceOf[js.Any])
     __obj.asInstanceOf[NvRFBDefaults]
   }
 }

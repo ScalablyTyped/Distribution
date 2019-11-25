@@ -12,7 +12,7 @@ trait ExtensionsDirective extends js.Object {
 object ExtensionsDirective {
   @scala.inline
   def apply(args: DirectiveArgs, name: String): ExtensionsDirective = {
-    val __obj = js.Dynamic.literal(args = args, name = name)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionsDirective]
   }

@@ -15,7 +15,7 @@ trait NamespaceInfoSchema extends js.Object {
 object NamespaceInfoSchema {
   @scala.inline
   def apply(full_path: String, id: Double, kind: String, name: String, path: String): NamespaceInfoSchema = {
-    val __obj = js.Dynamic.literal(full_path = full_path, id = id, kind = kind, name = name, path = path)
+    val __obj = js.Dynamic.literal(full_path = full_path.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NamespaceInfoSchema]
   }

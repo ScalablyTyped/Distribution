@@ -14,8 +14,8 @@ object SparklinesCurveProps {
   @scala.inline
   def apply(color: String = null, style: CSSProperties = null): SparklinesCurveProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklinesCurveProps]
   }
 }

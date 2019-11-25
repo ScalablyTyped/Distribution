@@ -18,7 +18,7 @@ object PlanEnvironment {
     options: StringDictionary[JobOption],
     variables: StringDictionary[String]
   ): PlanEnvironment = {
-    val __obj = js.Dynamic.literal(mask = mask, options = options, variables = variables)
+    val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlanEnvironment]
   }

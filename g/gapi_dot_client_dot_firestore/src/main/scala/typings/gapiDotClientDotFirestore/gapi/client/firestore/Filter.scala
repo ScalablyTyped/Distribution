@@ -21,9 +21,9 @@ object Filter {
     unaryFilter: UnaryFilter = null
   ): Filter = {
     val __obj = js.Dynamic.literal()
-    if (compositeFilter != null) __obj.updateDynamic("compositeFilter")(compositeFilter)
-    if (fieldFilter != null) __obj.updateDynamic("fieldFilter")(fieldFilter)
-    if (unaryFilter != null) __obj.updateDynamic("unaryFilter")(unaryFilter)
+    if (compositeFilter != null) __obj.updateDynamic("compositeFilter")(compositeFilter.asInstanceOf[js.Any])
+    if (fieldFilter != null) __obj.updateDynamic("fieldFilter")(fieldFilter.asInstanceOf[js.Any])
+    if (unaryFilter != null) __obj.updateDynamic("unaryFilter")(unaryFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
 }

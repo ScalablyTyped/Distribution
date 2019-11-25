@@ -35,7 +35,7 @@ object GetBucketLocationOutput {
     $metadata: ResponseMetadata,
     LocationConstraint: EU | `eu-west-1` | `us-west-1` | `us-west-2` | `ap-south-1` | `ap-southeast-1` | `ap-southeast-2` | `ap-northeast-1` | `sa-east-1` | `cn-north-1` | `eu-central-1` | String = null
   ): GetBucketLocationOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (LocationConstraint != null) __obj.updateDynamic("LocationConstraint")(LocationConstraint.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketLocationOutput]
   }

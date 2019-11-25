@@ -61,9 +61,9 @@ object PlusWebviewWebviewSubNViewStyles {
     `type`: NView | ImageSlider = null
   ): PlusWebviewWebviewSubNViewStyles = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewSubNViewStyles]
   }

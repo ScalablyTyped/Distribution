@@ -24,12 +24,12 @@ object DriveItem {
     title: String = null
   ): DriveItem = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (folder != null) __obj.updateDynamic("folder")(folder)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveItem]
   }
 }

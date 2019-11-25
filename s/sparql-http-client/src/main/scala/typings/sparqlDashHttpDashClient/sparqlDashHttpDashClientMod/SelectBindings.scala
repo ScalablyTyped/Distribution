@@ -12,7 +12,7 @@ trait SelectBindings extends js.Object {
 object SelectBindings {
   @scala.inline
   def apply(results: Anon_Bindings): SelectBindings = {
-    val __obj = js.Dynamic.literal(results = results)
+    val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SelectBindings]
   }

@@ -12,7 +12,7 @@ trait DeleteDocumentsRequestData extends js.Object {
 object DeleteDocumentsRequestData {
   @scala.inline
   def apply(_id: String): DeleteDocumentsRequestData = {
-    val __obj = js.Dynamic.literal(_id = _id)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteDocumentsRequestData]
   }

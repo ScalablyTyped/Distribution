@@ -39,6 +39,5 @@ object Tree extends js.Object {
     callback: js.Function
   ): js.Promise[typings.nodegit.treeMod.Tree] = js.native
   def lookupPrefix(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid, len: Double): js.Promise[typings.nodegit.treeMod.Tree] = js.native
-  type WALK_MODE = typings.nodegit.treeMod.Tree.WALK_MODE
 }
 

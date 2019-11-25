@@ -13,8 +13,8 @@ object MapLayerDefaultsBubbleStyle {
   @scala.inline
   def apply(fill: MapLayerDefaultsBubbleStyleFill = null, stroke: MapLayerDefaultsBubbleStyleStroke = null): MapLayerDefaultsBubbleStyle = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsBubbleStyle]
   }
 }

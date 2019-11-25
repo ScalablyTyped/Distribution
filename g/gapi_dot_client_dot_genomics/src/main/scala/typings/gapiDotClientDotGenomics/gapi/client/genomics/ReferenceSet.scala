@@ -54,14 +54,14 @@ object ReferenceSet {
     sourceUri: String = null
   ): ReferenceSet = {
     val __obj = js.Dynamic.literal()
-    if (assemblyId != null) __obj.updateDynamic("assemblyId")(assemblyId)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (md5checksum != null) __obj.updateDynamic("md5checksum")(md5checksum)
+    if (assemblyId != null) __obj.updateDynamic("assemblyId")(assemblyId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (md5checksum != null) __obj.updateDynamic("md5checksum")(md5checksum.asInstanceOf[js.Any])
     if (ncbiTaxonId != null) __obj.updateDynamic("ncbiTaxonId")(ncbiTaxonId.asInstanceOf[js.Any])
-    if (referenceIds != null) __obj.updateDynamic("referenceIds")(referenceIds)
-    if (sourceAccessions != null) __obj.updateDynamic("sourceAccessions")(sourceAccessions)
-    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri)
+    if (referenceIds != null) __obj.updateDynamic("referenceIds")(referenceIds.asInstanceOf[js.Any])
+    if (sourceAccessions != null) __obj.updateDynamic("sourceAccessions")(sourceAccessions.asInstanceOf[js.Any])
+    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceSet]
   }
 }

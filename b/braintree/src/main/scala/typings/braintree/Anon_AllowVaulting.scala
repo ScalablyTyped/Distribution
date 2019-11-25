@@ -19,9 +19,9 @@ object Anon_AllowVaulting {
     revokeAfter: Date = null
   ): Anon_AllowVaulting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowVaulting)) __obj.updateDynamic("allowVaulting")(allowVaulting)
-    if (!js.isUndefined(includeBillingPostalCode)) __obj.updateDynamic("includeBillingPostalCode")(includeBillingPostalCode)
-    if (revokeAfter != null) __obj.updateDynamic("revokeAfter")(revokeAfter)
+    if (!js.isUndefined(allowVaulting)) __obj.updateDynamic("allowVaulting")(allowVaulting.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBillingPostalCode)) __obj.updateDynamic("includeBillingPostalCode")(includeBillingPostalCode.asInstanceOf[js.Any])
+    if (revokeAfter != null) __obj.updateDynamic("revokeAfter")(revokeAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowVaulting]
   }
 }

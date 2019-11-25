@@ -18,9 +18,9 @@ object QueryParameter {
     parameterValue: QueryParameterValue = null
   ): QueryParameter = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parameterType != null) __obj.updateDynamic("parameterType")(parameterType)
-    if (parameterValue != null) __obj.updateDynamic("parameterValue")(parameterValue)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parameterType != null) __obj.updateDynamic("parameterType")(parameterType.asInstanceOf[js.Any])
+    if (parameterValue != null) __obj.updateDynamic("parameterValue")(parameterValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameter]
   }
 }

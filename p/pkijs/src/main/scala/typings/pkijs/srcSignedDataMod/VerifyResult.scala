@@ -24,10 +24,10 @@ object VerifyResult {
     signerCertificate: typings.pkijs.srcCertificateMod.default = null,
     signerCertificateVerified: js.UndefOr[Boolean] = js.undefined
   ): VerifyResult = {
-    val __obj = js.Dynamic.literal(code = code, date = date, message = message)
-    if (!js.isUndefined(signatureVerified)) __obj.updateDynamic("signatureVerified")(signatureVerified)
-    if (signerCertificate != null) __obj.updateDynamic("signerCertificate")(signerCertificate)
-    if (!js.isUndefined(signerCertificateVerified)) __obj.updateDynamic("signerCertificateVerified")(signerCertificateVerified)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (!js.isUndefined(signatureVerified)) __obj.updateDynamic("signatureVerified")(signatureVerified.asInstanceOf[js.Any])
+    if (signerCertificate != null) __obj.updateDynamic("signerCertificate")(signerCertificate.asInstanceOf[js.Any])
+    if (!js.isUndefined(signerCertificateVerified)) __obj.updateDynamic("signerCertificateVerified")(signerCertificateVerified.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyResult]
   }
 }

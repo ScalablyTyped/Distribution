@@ -15,7 +15,7 @@ trait RangeSelection extends js.Object {
 object RangeSelection {
   @scala.inline
   def apply(columns: js.Array[Column], end: GridCell, start: GridCell): RangeSelection = {
-    val __obj = js.Dynamic.literal(columns = columns, end = end, start = start)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RangeSelection]
   }

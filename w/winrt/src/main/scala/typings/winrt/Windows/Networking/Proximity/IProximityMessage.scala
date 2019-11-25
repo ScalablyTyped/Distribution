@@ -15,7 +15,7 @@ trait IProximityMessage extends js.Object {
 object IProximityMessage {
   @scala.inline
   def apply(data: IBuffer, dataAsString: String, messageType: String, subscriptionId: Double): IProximityMessage = {
-    val __obj = js.Dynamic.literal(data = data, dataAsString = dataAsString, messageType = messageType, subscriptionId = subscriptionId)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataAsString = dataAsString.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], subscriptionId = subscriptionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProximityMessage]
   }

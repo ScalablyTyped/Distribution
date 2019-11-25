@@ -20,7 +20,7 @@ object TypeofnetworkStatus {
     getLinkInfo: () => js.Promise[NetworkLinkInfo],
     onConnectionChanged: WebExtEvent[js.Function1[/* details */ NetworkLinkInfo, Unit]]
   ): TypeofnetworkStatus = {
-    val __obj = js.Dynamic.literal(getLinkInfo = js.Any.fromFunction0(getLinkInfo), onConnectionChanged = onConnectionChanged)
+    val __obj = js.Dynamic.literal(getLinkInfo = js.Any.fromFunction0(getLinkInfo), onConnectionChanged = onConnectionChanged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofnetworkStatus]
   }

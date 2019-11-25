@@ -19,10 +19,10 @@ object AirportData {
   @scala.inline
   def apply(city: String = null, code: String = null, kind: String = null, name: String = null): AirportData = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AirportData]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_CompilerStats extends js.Object {
 object Anon_CompilerStats {
   @scala.inline
   def apply(compiler: Compiler, stats: Stats): Anon_CompilerStats = {
-    val __obj = js.Dynamic.literal(compiler = compiler, stats = stats)
+    val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CompilerStats]
   }

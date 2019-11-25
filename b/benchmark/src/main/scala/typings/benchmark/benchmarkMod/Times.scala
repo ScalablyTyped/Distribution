@@ -14,7 +14,7 @@ trait Times extends js.Object {
 object Times {
   @scala.inline
   def apply(cycle: Double, elapsed: Double, period: Double, timeStamp: Double): Times = {
-    val __obj = js.Dynamic.literal(cycle = cycle, elapsed = elapsed, period = period, timeStamp = timeStamp)
+    val __obj = js.Dynamic.literal(cycle = cycle.asInstanceOf[js.Any], elapsed = elapsed.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Times]
   }

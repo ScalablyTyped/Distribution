@@ -15,7 +15,7 @@ object GroupColorMapping {
   @scala.inline
   def apply(groupID: String = null): GroupColorMapping = {
     val __obj = js.Dynamic.literal()
-    if (groupID != null) __obj.updateDynamic("groupID")(groupID)
+    if (groupID != null) __obj.updateDynamic("groupID")(groupID.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupColorMapping]
   }
 }

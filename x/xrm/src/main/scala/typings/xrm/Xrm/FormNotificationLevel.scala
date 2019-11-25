@@ -15,3 +15,14 @@ import scala.scalajs.js.annotation._
 */
 trait FormNotificationLevel extends js.Object
 
+object FormNotificationLevel {
+  @scala.inline
+  def ERROR: typings.xrm.xrmStrings.ERROR = this.cast("ERROR")
+  @scala.inline
+  def INFO: typings.xrm.xrmStrings.INFO = this.cast("INFO")
+  @scala.inline
+  def WARNING: typings.xrm.xrmStrings.WARNING = this.cast("WARNING")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

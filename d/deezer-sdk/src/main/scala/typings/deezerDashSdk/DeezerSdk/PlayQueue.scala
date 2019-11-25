@@ -14,7 +14,7 @@ trait PlayQueue extends js.Object {
 object PlayQueue {
   @scala.inline
   def apply(tracks: js.Array[Track]): PlayQueue = {
-    val __obj = js.Dynamic.literal(tracks = tracks)
+    val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlayQueue]
   }

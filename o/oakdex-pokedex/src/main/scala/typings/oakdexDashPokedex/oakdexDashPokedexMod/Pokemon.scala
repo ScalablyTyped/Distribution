@@ -84,19 +84,19 @@ object Pokemon {
     unova_id: Int | Double = null,
     variation_names: Translations = null
   ): Pokemon = {
-    val __obj = js.Dynamic.literal(abilities = abilities, base_exp_yield = base_exp_yield, base_friendship = base_friendship, base_stats = base_stats, catch_rate = catch_rate, categories = categories, color = color, egg_groups = egg_groups, ev_yield = ev_yield, evolutions = evolutions, hatch_time = hatch_time, height_eu = height_eu, height_us = height_us, leveling_rate = leveling_rate, mega_evolutions = mega_evolutions, move_learnsets = move_learnsets, names = names, national_id = national_id, pokedex_entries = pokedex_entries, types = types, variations = variations, weight_eu = weight_eu, weight_us = weight_us)
+    val __obj = js.Dynamic.literal(abilities = abilities.asInstanceOf[js.Any], base_exp_yield = base_exp_yield.asInstanceOf[js.Any], base_friendship = base_friendship.asInstanceOf[js.Any], base_stats = base_stats.asInstanceOf[js.Any], catch_rate = catch_rate.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], egg_groups = egg_groups.asInstanceOf[js.Any], ev_yield = ev_yield.asInstanceOf[js.Any], evolutions = evolutions.asInstanceOf[js.Any], hatch_time = hatch_time.asInstanceOf[js.Any], height_eu = height_eu.asInstanceOf[js.Any], height_us = height_us.asInstanceOf[js.Any], leveling_rate = leveling_rate.asInstanceOf[js.Any], mega_evolutions = mega_evolutions.asInstanceOf[js.Any], move_learnsets = move_learnsets.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], national_id = national_id.asInstanceOf[js.Any], pokedex_entries = pokedex_entries.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], variations = variations.asInstanceOf[js.Any], weight_eu = weight_eu.asInstanceOf[js.Any], weight_us = weight_us.asInstanceOf[js.Any])
     if (alola_id != null) __obj.updateDynamic("alola_id")(alola_id.asInstanceOf[js.Any])
-    if (evolution_from != null) __obj.updateDynamic("evolution_from")(evolution_from)
-    if (gender_ratios != null) __obj.updateDynamic("gender_ratios")(gender_ratios)
+    if (evolution_from != null) __obj.updateDynamic("evolution_from")(evolution_from.asInstanceOf[js.Any])
+    if (gender_ratios != null) __obj.updateDynamic("gender_ratios")(gender_ratios.asInstanceOf[js.Any])
     if (hoenn_id != null) __obj.updateDynamic("hoenn_id")(hoenn_id.asInstanceOf[js.Any])
     if (johto_id != null) __obj.updateDynamic("johto_id")(johto_id.asInstanceOf[js.Any])
     if (kalos_id != null) __obj.updateDynamic("kalos_id")(kalos_id.asInstanceOf[js.Any])
     if (kanto_id != null) __obj.updateDynamic("kanto_id")(kanto_id.asInstanceOf[js.Any])
-    if (pokeathlon_stats != null) __obj.updateDynamic("pokeathlon_stats")(pokeathlon_stats)
+    if (pokeathlon_stats != null) __obj.updateDynamic("pokeathlon_stats")(pokeathlon_stats.asInstanceOf[js.Any])
     if (sinnoh_id != null) __obj.updateDynamic("sinnoh_id")(sinnoh_id.asInstanceOf[js.Any])
     if (ultra_alola_id != null) __obj.updateDynamic("ultra_alola_id")(ultra_alola_id.asInstanceOf[js.Any])
     if (unova_id != null) __obj.updateDynamic("unova_id")(unova_id.asInstanceOf[js.Any])
-    if (variation_names != null) __obj.updateDynamic("variation_names")(variation_names)
+    if (variation_names != null) __obj.updateDynamic("variation_names")(variation_names.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pokemon]
   }
 }

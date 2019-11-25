@@ -27,11 +27,11 @@ object Options {
     stylisPlugins: Plugin | js.Array[Plugin] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy)
+    if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy.asInstanceOf[js.Any])
     if (stylisPlugins != null) __obj.updateDynamic("stylisPlugins")(stylisPlugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

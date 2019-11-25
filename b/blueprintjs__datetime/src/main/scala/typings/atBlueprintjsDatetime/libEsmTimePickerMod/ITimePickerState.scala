@@ -25,12 +25,12 @@ object ITimePickerState {
     value: Date = null
   ): ITimePickerState = {
     val __obj = js.Dynamic.literal()
-    if (hourText != null) __obj.updateDynamic("hourText")(hourText)
-    if (!js.isUndefined(isPm)) __obj.updateDynamic("isPm")(isPm)
-    if (millisecondText != null) __obj.updateDynamic("millisecondText")(millisecondText)
-    if (minuteText != null) __obj.updateDynamic("minuteText")(minuteText)
-    if (secondText != null) __obj.updateDynamic("secondText")(secondText)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (hourText != null) __obj.updateDynamic("hourText")(hourText.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPm)) __obj.updateDynamic("isPm")(isPm.asInstanceOf[js.Any])
+    if (millisecondText != null) __obj.updateDynamic("millisecondText")(millisecondText.asInstanceOf[js.Any])
+    if (minuteText != null) __obj.updateDynamic("minuteText")(minuteText.asInstanceOf[js.Any])
+    if (secondText != null) __obj.updateDynamic("secondText")(secondText.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimePickerState]
   }
 }

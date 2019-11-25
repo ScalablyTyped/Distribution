@@ -15,9 +15,9 @@ object Anon_BaseUrl {
   @scala.inline
   def apply(baseUrl: String = null, httpAgent: Agent = null, httpsAgent: typings.node.httpsMod.Agent = null): Anon_BaseUrl = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent)
-    if (httpsAgent != null) __obj.updateDynamic("httpsAgent")(httpsAgent)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
+    if (httpsAgent != null) __obj.updateDynamic("httpsAgent")(httpsAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseUrl]
   }
 }

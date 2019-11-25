@@ -19,9 +19,9 @@ object Options {
     systemInfo: js.Array[String] = null,
     warningLevel: Double | String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(bugsnagClient = bugsnagClient)
+    val __obj = js.Dynamic.literal(bugsnagClient = bugsnagClient.asInstanceOf[js.Any])
     if (errorLevel != null) __obj.updateDynamic("errorLevel")(errorLevel.asInstanceOf[js.Any])
-    if (systemInfo != null) __obj.updateDynamic("systemInfo")(systemInfo)
+    if (systemInfo != null) __obj.updateDynamic("systemInfo")(systemInfo.asInstanceOf[js.Any])
     if (warningLevel != null) __obj.updateDynamic("warningLevel")(warningLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

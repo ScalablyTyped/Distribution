@@ -23,7 +23,7 @@ object IArcOptions {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (endangle != null) __obj.updateDynamic("endangle")(endangle.asInstanceOf[js.Any])
-    if (!js.isUndefined(maketangent)) __obj.updateDynamic("maketangent")(maketangent)
+    if (!js.isUndefined(maketangent)) __obj.updateDynamic("maketangent")(maketangent.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     if (startangle != null) __obj.updateDynamic("startangle")(startangle.asInstanceOf[js.Any])

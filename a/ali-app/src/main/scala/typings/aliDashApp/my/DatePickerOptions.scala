@@ -42,17 +42,14 @@ object DatePickerOptions {
   def apply(
     currentDate: String,
     endDate: String,
-    fail_11: `11` => Unit,
+    fail: `11` => Unit,
     format: `yyyy-MM-dd` | `HH:mm` | (`yyyy-MM-dd HH:mm`) | `yyyy-MM` | yyyy,
     startDate: String,
     success: Anon_Date => Unit,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null
+    complete: /* res */ js.Any => Unit = null
   ): DatePickerOptions = {
-    val __obj = js.Dynamic.literal(currentDate = currentDate, endDate = endDate, format = format.asInstanceOf[js.Any], startDate = startDate, success = js.Any.fromFunction1(success))
-    __obj.updateDynamic("fail")(js.Any.fromFunction1(fail_11))
+    val __obj = js.Dynamic.literal(currentDate = currentDate.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], fail = js.Any.fromFunction1(fail), format = format.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[DatePickerOptions]
   }
 }

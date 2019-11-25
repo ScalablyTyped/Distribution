@@ -12,7 +12,7 @@ trait Anon_Returning extends js.Object {
 object Anon_Returning {
   @scala.inline
   def apply(returning: `true`): Anon_Returning = {
-    val __obj = js.Dynamic.literal(returning = returning)
+    val __obj = js.Dynamic.literal(returning = returning.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Returning]
   }

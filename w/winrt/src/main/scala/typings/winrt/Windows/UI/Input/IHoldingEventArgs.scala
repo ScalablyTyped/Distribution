@@ -15,7 +15,7 @@ trait IHoldingEventArgs extends js.Object {
 object IHoldingEventArgs {
   @scala.inline
   def apply(holdingState: HoldingState, pointerDeviceType: PointerDeviceType, position: Point): IHoldingEventArgs = {
-    val __obj = js.Dynamic.literal(holdingState = holdingState, pointerDeviceType = pointerDeviceType, position = position)
+    val __obj = js.Dynamic.literal(holdingState = holdingState.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IHoldingEventArgs]
   }

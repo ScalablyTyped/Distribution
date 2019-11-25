@@ -31,11 +31,11 @@ object GerritSourceContext {
     revisionId: String = null
   ): GerritSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (aliasContext != null) __obj.updateDynamic("aliasContext")(aliasContext)
-    if (aliasName != null) __obj.updateDynamic("aliasName")(aliasName)
-    if (gerritProject != null) __obj.updateDynamic("gerritProject")(gerritProject)
-    if (hostUri != null) __obj.updateDynamic("hostUri")(hostUri)
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
+    if (aliasContext != null) __obj.updateDynamic("aliasContext")(aliasContext.asInstanceOf[js.Any])
+    if (aliasName != null) __obj.updateDynamic("aliasName")(aliasName.asInstanceOf[js.Any])
+    if (gerritProject != null) __obj.updateDynamic("gerritProject")(gerritProject.asInstanceOf[js.Any])
+    if (hostUri != null) __obj.updateDynamic("hostUri")(hostUri.asInstanceOf[js.Any])
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GerritSourceContext]
   }
 }

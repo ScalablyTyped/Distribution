@@ -27,11 +27,11 @@ object Anon_CanComment {
     resharingDisabled: js.UndefOr[Boolean] = js.undefined
   ): Anon_CanComment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canComment)) __obj.updateDynamic("canComment")(canComment)
-    if (!js.isUndefined(canPlusone)) __obj.updateDynamic("canPlusone")(canPlusone)
-    if (!js.isUndefined(canUpdate)) __obj.updateDynamic("canUpdate")(canUpdate)
-    if (!js.isUndefined(isPlusOned)) __obj.updateDynamic("isPlusOned")(isPlusOned)
-    if (!js.isUndefined(resharingDisabled)) __obj.updateDynamic("resharingDisabled")(resharingDisabled)
+    if (!js.isUndefined(canComment)) __obj.updateDynamic("canComment")(canComment.asInstanceOf[js.Any])
+    if (!js.isUndefined(canPlusone)) __obj.updateDynamic("canPlusone")(canPlusone.asInstanceOf[js.Any])
+    if (!js.isUndefined(canUpdate)) __obj.updateDynamic("canUpdate")(canUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPlusOned)) __obj.updateDynamic("isPlusOned")(isPlusOned.asInstanceOf[js.Any])
+    if (!js.isUndefined(resharingDisabled)) __obj.updateDynamic("resharingDisabled")(resharingDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CanComment]
   }
 }

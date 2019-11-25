@@ -31,9 +31,9 @@ object Anon_CommentsKey {
     loc: SourceLocationKind = null,
     variance: VarianceKind | plus | minus = null
   ): Anon_CommentsKey = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], optional = optional, value = value)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsKey]
   }

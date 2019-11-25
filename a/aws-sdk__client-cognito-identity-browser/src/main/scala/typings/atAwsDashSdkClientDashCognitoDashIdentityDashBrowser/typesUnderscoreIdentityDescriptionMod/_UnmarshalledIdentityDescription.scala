@@ -32,10 +32,10 @@ object _UnmarshalledIdentityDescription {
     Logins: js.Array[String] = null
   ): _UnmarshalledIdentityDescription = {
     val __obj = js.Dynamic.literal()
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (Logins != null) __obj.updateDynamic("Logins")(Logins)
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
+    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
+    if (Logins != null) __obj.updateDynamic("Logins")(Logins.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledIdentityDescription]
   }
 }

@@ -23,7 +23,7 @@ object Anon_Entity {
     observedPropertyNames: js.Array[String],
     scene: Scene
   ): Anon_Entity = {
-    val __obj = js.Dynamic.literal(entity = entity, geometryOptions = geometryOptions, geometryPropertyName = geometryPropertyName, observedPropertyNames = observedPropertyNames, scene = scene)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], geometryOptions = geometryOptions.asInstanceOf[js.Any], geometryPropertyName = geometryPropertyName.asInstanceOf[js.Any], observedPropertyNames = observedPropertyNames.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Entity]
   }

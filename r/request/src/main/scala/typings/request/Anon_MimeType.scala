@@ -14,8 +14,8 @@ object Anon_MimeType {
   @scala.inline
   def apply(mimeType: String = null, params: js.Array[NameValuePair] = null): Anon_MimeType = {
     val __obj = js.Dynamic.literal()
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MimeType]
   }
 }

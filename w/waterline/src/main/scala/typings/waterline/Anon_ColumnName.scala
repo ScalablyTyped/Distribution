@@ -31,15 +31,15 @@ object Anon_ColumnName {
     unique: js.UndefOr[Boolean] = js.undefined
   ): Anon_ColumnName[T] = {
     val __obj = js.Dynamic.literal()
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
     if (defaultsTo != null) __obj.updateDynamic("defaultsTo")(defaultsTo.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum)
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
-    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnName[T]]
   }
 }

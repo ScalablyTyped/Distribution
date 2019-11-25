@@ -13,8 +13,8 @@ trait Anon_ContentBlocks extends js.Object {
 object Anon_ContentBlocks {
   @scala.inline
   def apply(contentBlocks: js.Array[ContentBlock], entityMap: js.Any = null): Anon_ContentBlocks = {
-    val __obj = js.Dynamic.literal(contentBlocks = contentBlocks)
-    if (entityMap != null) __obj.updateDynamic("entityMap")(entityMap)
+    val __obj = js.Dynamic.literal(contentBlocks = contentBlocks.asInstanceOf[js.Any])
+    if (entityMap != null) __obj.updateDynamic("entityMap")(entityMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentBlocks]
   }
 }

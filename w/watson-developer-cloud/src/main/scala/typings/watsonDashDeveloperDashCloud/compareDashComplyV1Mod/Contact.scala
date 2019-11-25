@@ -16,8 +16,8 @@ object Contact {
   @scala.inline
   def apply(name: String = null, role: String = null): Contact = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contact]
   }
 }

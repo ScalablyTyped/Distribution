@@ -13,7 +13,7 @@ object Anon_Apiscript {
   @scala.inline
   def apply(api_script: ExtensionURL = null): Anon_Apiscript = {
     val __obj = js.Dynamic.literal()
-    if (api_script != null) __obj.updateDynamic("api_script")(api_script)
+    if (api_script != null) __obj.updateDynamic("api_script")(api_script.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Apiscript]
   }
 }

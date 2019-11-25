@@ -17,8 +17,8 @@ object Extensions {
     directives: js.Array[ExtensionsDirective] = null
   ): Extensions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extensions]
   }
 }

@@ -11,14 +11,8 @@ trait FormatSettings extends ISettings {
 
 object FormatSettings {
   @scala.inline
-  def apply(
-    DefaultFormat: String,
-    Format: String,
-    isSet: () => Boolean,
-    reset: () => Unit,
-    toString: () => String
-  ): FormatSettings = {
-    val __obj = js.Dynamic.literal(DefaultFormat = DefaultFormat, Format = Format, isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset), toString = js.Any.fromFunction0(toString))
+  def apply(DefaultFormat: String, Format: String, isSet: () => Boolean, reset: () => Unit): FormatSettings = {
+    val __obj = js.Dynamic.literal(DefaultFormat = DefaultFormat.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[FormatSettings]
   }

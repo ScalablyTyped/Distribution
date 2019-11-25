@@ -19,8 +19,8 @@ object AnnotationsMeasureOptions {
     typeOptions: AnnotationsMeasureTypeOptions = null
   ): AnnotationsMeasureOptions = {
     val __obj = js.Dynamic.literal()
-    if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions)
-    if (typeOptions != null) __obj.updateDynamic("typeOptions")(typeOptions)
+    if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions.asInstanceOf[js.Any])
+    if (typeOptions != null) __obj.updateDynamic("typeOptions")(typeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsMeasureOptions]
   }
 }

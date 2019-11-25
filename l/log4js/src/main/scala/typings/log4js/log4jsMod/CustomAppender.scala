@@ -16,7 +16,7 @@ object CustomAppender {
   def apply(`type`: String | AppenderModule, StringDictionary: /* key */ StringDictionary[js.Any] = null): CustomAppender = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CustomAppender]
   }
 }

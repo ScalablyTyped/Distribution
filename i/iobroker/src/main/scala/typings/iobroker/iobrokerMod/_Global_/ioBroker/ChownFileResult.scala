@@ -34,7 +34,7 @@ object ChownFileResult {
     path: String,
     stats: Stats
   ): ChownFileResult = {
-    val __obj = js.Dynamic.literal(acl = acl, createdAt = createdAt, file = file, isDir = isDir, modifiedAt = modifiedAt, path = path, stats = stats)
+    val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], modifiedAt = modifiedAt.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChownFileResult]
   }

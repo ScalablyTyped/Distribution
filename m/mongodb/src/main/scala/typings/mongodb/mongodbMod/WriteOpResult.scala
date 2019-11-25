@@ -13,7 +13,7 @@ trait WriteOpResult extends js.Object {
 object WriteOpResult {
   @scala.inline
   def apply(connection: js.Any, ops: js.Array[_], result: js.Any): WriteOpResult = {
-    val __obj = js.Dynamic.literal(connection = connection, ops = ops, result = result)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WriteOpResult]
   }

@@ -18,7 +18,7 @@ object DevicesLongRunningOperationMetadata {
   def apply(devicesCount: Int | Double = null, processingStatus: String = null, progress: Int | Double = null): DevicesLongRunningOperationMetadata = {
     val __obj = js.Dynamic.literal()
     if (devicesCount != null) __obj.updateDynamic("devicesCount")(devicesCount.asInstanceOf[js.Any])
-    if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus)
+    if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicesLongRunningOperationMetadata]
   }

@@ -11,7 +11,7 @@ trait Anon_Midstream extends js.Object {
 object Anon_Midstream {
   @scala.inline
   def apply(midstream: Boolean): Anon_Midstream = {
-    val __obj = js.Dynamic.literal(midstream = midstream)
+    val __obj = js.Dynamic.literal(midstream = midstream.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Midstream]
   }

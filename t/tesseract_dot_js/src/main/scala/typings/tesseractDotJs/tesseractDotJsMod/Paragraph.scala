@@ -31,7 +31,7 @@ object Paragraph {
     text: String,
     words: js.Array[Word]
   ): Paragraph = {
-    val __obj = js.Dynamic.literal(baseline = baseline, bbox = bbox, block = block, confidence = confidence, is_ltr = is_ltr, lines = lines, page = page, symbols = symbols, text = text, words = words)
+    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], is_ltr = is_ltr.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Paragraph]
   }

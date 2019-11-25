@@ -27,7 +27,7 @@ object SSEConnect {
     updateSubscriberUrl: String,
     userId: String
   ): SSEConnect = {
-    val __obj = js.Dynamic.literal(channels = channels, displayName = displayName, heartbeatIntervalMs = heartbeatIntervalMs, heartbeatUrl = heartbeatUrl, id = id, idleTimeoutMs = idleTimeoutMs, profileUrl = profileUrl, unRegisterUrl = unRegisterUrl, updateSubscriberUrl = updateSubscriberUrl, userId = userId)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], heartbeatIntervalMs = heartbeatIntervalMs.asInstanceOf[js.Any], heartbeatUrl = heartbeatUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], idleTimeoutMs = idleTimeoutMs.asInstanceOf[js.Any], profileUrl = profileUrl.asInstanceOf[js.Any], unRegisterUrl = unRegisterUrl.asInstanceOf[js.Any], updateSubscriberUrl = updateSubscriberUrl.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SSEConnect]
   }

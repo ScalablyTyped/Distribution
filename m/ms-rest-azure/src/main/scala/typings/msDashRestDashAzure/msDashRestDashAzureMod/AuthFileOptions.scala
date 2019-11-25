@@ -21,8 +21,8 @@ object AuthFileOptions {
   @scala.inline
   def apply(filePath: String = null, subscriptionEnvVariableName: String = null): AuthFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
-    if (subscriptionEnvVariableName != null) __obj.updateDynamic("subscriptionEnvVariableName")(subscriptionEnvVariableName)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
+    if (subscriptionEnvVariableName != null) __obj.updateDynamic("subscriptionEnvVariableName")(subscriptionEnvVariableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthFileOptions]
   }
 }

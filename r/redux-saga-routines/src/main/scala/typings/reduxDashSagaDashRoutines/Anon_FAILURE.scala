@@ -17,14 +17,6 @@ trait Anon_FAILURE[TRequestPayloadCreator, TFulfillPayloadCreator, TSuccessPaylo
   var trigger: js.UndefOr[TTriggerPayloadCreator] = js.undefined
 }
 
-trait Anon_Failure[TFailureActionCreator, TTriggerActionCreator, TFulfillActionCreator, TRequestActionCreator, TSuccessActionCreator] extends js.Object {
-  var failure: TFailureActionCreator
-  var fulfill: TFulfillActionCreator
-  var request: TRequestActionCreator
-  var success: TSuccessActionCreator
-  var trigger: TTriggerActionCreator
-}
-
 object Anon_FAILURE {
   @scala.inline
   def apply[TRequestPayloadCreator, TFulfillPayloadCreator, TSuccessPayloadCreator, TTriggerPayloadCreator, TFailurePayloadCreator](
@@ -63,6 +55,14 @@ object Anon_FAILURE {
   TTriggerPayloadCreator, 
   TFailurePayloadCreator]]
   }
+}
+
+trait Anon_Failure[TFailureActionCreator, TTriggerActionCreator, TFulfillActionCreator, TRequestActionCreator, TSuccessActionCreator] extends js.Object {
+  var failure: TFailureActionCreator
+  var fulfill: TFulfillActionCreator
+  var request: TRequestActionCreator
+  var success: TSuccessActionCreator
+  var trigger: TTriggerActionCreator
 }
 
 object Anon_Failure {

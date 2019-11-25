@@ -24,8 +24,8 @@ object CPUTime {
   def apply(rate: Int | Double = null, timestamp: String = null, totalMs: String = null): CPUTime = {
     val __obj = js.Dynamic.literal()
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
-    if (totalMs != null) __obj.updateDynamic("totalMs")(totalMs)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (totalMs != null) __obj.updateDynamic("totalMs")(totalMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPUTime]
   }
 }

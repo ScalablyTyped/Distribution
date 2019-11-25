@@ -23,10 +23,10 @@ object ThrownCall {
     `type`: `throw`,
     `this`: js.UndefOr[scala.Nothing] = js.undefined
   ): ThrownCall[T] = {
-    val __obj = js.Dynamic.literal(arguments = arguments)
-    __obj.updateDynamic("throw")(`throw`)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(`this`)) __obj.updateDynamic("this")(`this`)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
+    __obj.updateDynamic("throw")(`throw`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`this`)) __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrownCall[T]]
   }
 }

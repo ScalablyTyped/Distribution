@@ -25,8 +25,8 @@ object Anon_01AnonItemStyleLabelNameValue {
   @scala.inline
   def apply(`0`: Anon_ItemStyleLabelNameValue = null, `1`: Anon_ItemStyleLabelNameValue = null): Anon_01AnonItemStyleLabelNameValue = {
     val __obj = js.Dynamic.literal()
-    if (`0` != null) __obj.updateDynamic("0")(`0`)
-    if (`1` != null) __obj.updateDynamic("1")(`1`)
+    if (`0` != null) __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    if (`1` != null) __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_01AnonItemStyleLabelNameValue]
   }
 }

@@ -13,7 +13,7 @@ object Anon_TrustedCerts {
   @scala.inline
   def apply(trustedCerts: js.Array[default] = null): Anon_TrustedCerts = {
     val __obj = js.Dynamic.literal()
-    if (trustedCerts != null) __obj.updateDynamic("trustedCerts")(trustedCerts)
+    if (trustedCerts != null) __obj.updateDynamic("trustedCerts")(trustedCerts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TrustedCerts]
   }
 }

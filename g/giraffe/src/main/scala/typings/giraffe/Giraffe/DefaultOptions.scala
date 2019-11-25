@@ -21,10 +21,10 @@ object DefaultOptions {
     saveScrollPosition: js.UndefOr[Boolean] = js.undefined
   ): DefaultOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender)
-    if (!js.isUndefined(disposeOnDetach)) __obj.updateDynamic("disposeOnDetach")(disposeOnDetach)
-    if (documentTitle != null) __obj.updateDynamic("documentTitle")(documentTitle)
-    if (!js.isUndefined(saveScrollPosition)) __obj.updateDynamic("saveScrollPosition")(saveScrollPosition)
+    if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(disposeOnDetach)) __obj.updateDynamic("disposeOnDetach")(disposeOnDetach.asInstanceOf[js.Any])
+    if (documentTitle != null) __obj.updateDynamic("documentTitle")(documentTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveScrollPosition)) __obj.updateDynamic("saveScrollPosition")(saveScrollPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultOptions]
   }
 }

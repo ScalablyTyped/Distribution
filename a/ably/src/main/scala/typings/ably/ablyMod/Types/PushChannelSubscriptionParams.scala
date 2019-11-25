@@ -20,9 +20,9 @@ object PushChannelSubscriptionParams {
     limit: Int | Double = null
   ): PushChannelSubscriptionParams = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushChannelSubscriptionParams]
   }

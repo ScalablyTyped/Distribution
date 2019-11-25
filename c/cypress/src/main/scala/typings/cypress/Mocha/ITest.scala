@@ -2,7 +2,6 @@ package typings.cypress.Mocha
 
 import typings.cypress.cypressStrings.failed
 import typings.cypress.cypressStrings.passed
-import typings.cypress.cypressStrings.test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,7 @@ trait ITest extends IRunnable {
   var parent: js.UndefOr[ISuite] = js.native
   var pending: Boolean = js.native
   var state: js.UndefOr[failed | passed] = js.native
-  var `type`: test = js.native
+  var `type`: typings.cypress.cypressStrings.test = js.native
   def fullTitle(): String = js.native
 }
 

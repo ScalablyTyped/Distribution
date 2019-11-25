@@ -108,17 +108,17 @@ object CompletionItem {
     sortText: String = null,
     tags: js.Array[CompletionItemTag] = null
   ): CompletionItem = {
-    val __obj = js.Dynamic.literal(insertText = insertText, kind = kind, label = label, range = range)
-    if (additionalTextEdits != null) __obj.updateDynamic("additionalTextEdits")(additionalTextEdits)
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (commitCharacters != null) __obj.updateDynamic("commitCharacters")(commitCharacters)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
+    val __obj = js.Dynamic.literal(insertText = insertText.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+    if (additionalTextEdits != null) __obj.updateDynamic("additionalTextEdits")(additionalTextEdits.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (commitCharacters != null) __obj.updateDynamic("commitCharacters")(commitCharacters.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (filterText != null) __obj.updateDynamic("filterText")(filterText)
-    if (insertTextRules != null) __obj.updateDynamic("insertTextRules")(insertTextRules)
-    if (!js.isUndefined(preselect)) __obj.updateDynamic("preselect")(preselect)
-    if (sortText != null) __obj.updateDynamic("sortText")(sortText)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (filterText != null) __obj.updateDynamic("filterText")(filterText.asInstanceOf[js.Any])
+    if (insertTextRules != null) __obj.updateDynamic("insertTextRules")(insertTextRules.asInstanceOf[js.Any])
+    if (!js.isUndefined(preselect)) __obj.updateDynamic("preselect")(preselect.asInstanceOf[js.Any])
+    if (sortText != null) __obj.updateDynamic("sortText")(sortText.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionItem]
   }
 }

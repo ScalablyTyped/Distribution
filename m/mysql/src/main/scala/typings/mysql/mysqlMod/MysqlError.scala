@@ -57,13 +57,13 @@ object MysqlError {
     sqlStateMarker: String = null,
     stack: String = null
   ): MysqlError = {
-    val __obj = js.Dynamic.literal(code = code, errno = errno, fatal = fatal, message = message, name = name)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (fieldCount != null) __obj.updateDynamic("fieldCount")(fieldCount.asInstanceOf[js.Any])
-    if (sql != null) __obj.updateDynamic("sql")(sql)
-    if (sqlMessage != null) __obj.updateDynamic("sqlMessage")(sqlMessage)
-    if (sqlState != null) __obj.updateDynamic("sqlState")(sqlState)
-    if (sqlStateMarker != null) __obj.updateDynamic("sqlStateMarker")(sqlStateMarker)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
+    if (sqlMessage != null) __obj.updateDynamic("sqlMessage")(sqlMessage.asInstanceOf[js.Any])
+    if (sqlState != null) __obj.updateDynamic("sqlState")(sqlState.asInstanceOf[js.Any])
+    if (sqlStateMarker != null) __obj.updateDynamic("sqlStateMarker")(sqlStateMarker.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MysqlError]
   }
 }

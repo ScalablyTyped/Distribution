@@ -16,7 +16,7 @@ trait UIRouter extends js.Object {
 object UIRouter {
   @scala.inline
   def apply(stateProvider: StateProvider, urlRouterProvider: UrlRouterProvider): UIRouter = {
-    val __obj = js.Dynamic.literal(stateProvider = stateProvider, urlRouterProvider = urlRouterProvider)
+    val __obj = js.Dynamic.literal(stateProvider = stateProvider.asInstanceOf[js.Any], urlRouterProvider = urlRouterProvider.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UIRouter]
   }

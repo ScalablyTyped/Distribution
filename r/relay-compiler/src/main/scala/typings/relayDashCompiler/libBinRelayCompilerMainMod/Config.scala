@@ -45,12 +45,12 @@ object Config {
     persistOutput: String = null,
     watch: js.UndefOr[Boolean] = js.undefined
   ): Config = {
-    val __obj = js.Dynamic.literal(exclude = exclude, extensions = extensions, include = include, language = language.asInstanceOf[js.Any], noFutureProofEnums = noFutureProofEnums, quiet = quiet, schema = schema, src = src, validate = validate, verbose = verbose, watchman = watchman)
-    if (artifactDirectory != null) __obj.updateDynamic("artifactDirectory")(artifactDirectory)
-    if (customScalars != null) __obj.updateDynamic("customScalars")(customScalars)
+    val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], noFutureProofEnums = noFutureProofEnums.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
+    if (artifactDirectory != null) __obj.updateDynamic("artifactDirectory")(artifactDirectory.asInstanceOf[js.Any])
+    if (customScalars != null) __obj.updateDynamic("customScalars")(customScalars.asInstanceOf[js.Any])
     if (persistFunction != null) __obj.updateDynamic("persistFunction")(persistFunction.asInstanceOf[js.Any])
-    if (persistOutput != null) __obj.updateDynamic("persistOutput")(persistOutput)
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    if (persistOutput != null) __obj.updateDynamic("persistOutput")(persistOutput.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

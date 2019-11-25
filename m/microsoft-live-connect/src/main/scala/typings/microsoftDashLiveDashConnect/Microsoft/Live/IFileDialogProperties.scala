@@ -32,9 +32,9 @@ trait IFileDialogProperties extends js.Object {
 object IFileDialogProperties {
   @scala.inline
   def apply(mode: String, lightbox: String = null, select: String = null): IFileDialogProperties = {
-    val __obj = js.Dynamic.literal(mode = mode)
-    if (lightbox != null) __obj.updateDynamic("lightbox")(lightbox)
-    if (select != null) __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    if (lightbox != null) __obj.updateDynamic("lightbox")(lightbox.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileDialogProperties]
   }
 }

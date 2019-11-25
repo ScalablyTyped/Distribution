@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait HTTPMethod extends js.Object
 
+object HTTPMethod {
+  @scala.inline
+  def DELETE: typings.wpapi.wpapiStrings.DELETE = this.cast("DELETE")
+  @scala.inline
+  def GET: typings.wpapi.wpapiStrings.GET = this.cast("GET")
+  @scala.inline
+  def PATCH: typings.wpapi.wpapiStrings.PATCH = this.cast("PATCH")
+  @scala.inline
+  def POST: typings.wpapi.wpapiStrings.POST = this.cast("POST")
+  @scala.inline
+  def PUT: typings.wpapi.wpapiStrings.PUT = this.cast("PUT")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

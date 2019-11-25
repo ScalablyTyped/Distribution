@@ -42,13 +42,13 @@ object PlayerAchievement {
     lastUpdatedTimestamp: String = null
   ): PlayerAchievement = {
     val __obj = js.Dynamic.literal()
-    if (achievementState != null) __obj.updateDynamic("achievementState")(achievementState)
+    if (achievementState != null) __obj.updateDynamic("achievementState")(achievementState.asInstanceOf[js.Any])
     if (currentSteps != null) __obj.updateDynamic("currentSteps")(currentSteps.asInstanceOf[js.Any])
-    if (experiencePoints != null) __obj.updateDynamic("experiencePoints")(experiencePoints)
-    if (formattedCurrentStepsString != null) __obj.updateDynamic("formattedCurrentStepsString")(formattedCurrentStepsString)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp)
+    if (experiencePoints != null) __obj.updateDynamic("experiencePoints")(experiencePoints.asInstanceOf[js.Any])
+    if (formattedCurrentStepsString != null) __obj.updateDynamic("formattedCurrentStepsString")(formattedCurrentStepsString.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerAchievement]
   }
 }

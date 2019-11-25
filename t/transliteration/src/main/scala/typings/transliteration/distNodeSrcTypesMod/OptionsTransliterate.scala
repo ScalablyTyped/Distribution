@@ -44,11 +44,11 @@ object OptionsTransliterate {
     unknown: String = null
   ): OptionsTransliterate = {
     val __obj = js.Dynamic.literal()
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     if (replaceAfter != null) __obj.updateDynamic("replaceAfter")(replaceAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
-    if (unknown != null) __obj.updateDynamic("unknown")(unknown)
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
+    if (unknown != null) __obj.updateDynamic("unknown")(unknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsTransliterate]
   }
 }

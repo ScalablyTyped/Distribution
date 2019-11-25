@@ -22,11 +22,11 @@ object Item {
     statusText: String = null
   ): Item = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (responseText != null) __obj.updateDynamic("responseText")(responseText)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (responseText != null) __obj.updateDynamic("responseText")(responseText.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
 }

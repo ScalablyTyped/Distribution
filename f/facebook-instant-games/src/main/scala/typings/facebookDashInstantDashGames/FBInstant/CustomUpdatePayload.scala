@@ -70,11 +70,11 @@ object CustomUpdatePayload {
     notification: String = null,
     strategy: String = null
   ): CustomUpdatePayload = {
-    val __obj = js.Dynamic.literal(action = action, image = image, template = template, text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (cta != null) __obj.updateDynamic("cta")(cta.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomUpdatePayload]
   }
 }

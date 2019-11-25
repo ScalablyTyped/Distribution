@@ -13,7 +13,7 @@ trait Anon_Automatic extends js.Object {
 object Anon_Automatic {
   @scala.inline
   def apply(automatic: Double, deploymentSubmitter: Double, firstPreDeploymentApprover: Double): Anon_Automatic = {
-    val __obj = js.Dynamic.literal(automatic = automatic, deploymentSubmitter = deploymentSubmitter, firstPreDeploymentApprover = firstPreDeploymentApprover)
+    val __obj = js.Dynamic.literal(automatic = automatic.asInstanceOf[js.Any], deploymentSubmitter = deploymentSubmitter.asInstanceOf[js.Any], firstPreDeploymentApprover = firstPreDeploymentApprover.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Automatic]
   }

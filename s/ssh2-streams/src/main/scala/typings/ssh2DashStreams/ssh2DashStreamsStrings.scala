@@ -147,7 +147,7 @@ object ssh2DashStreamsStrings {
   sealed trait `auth-agent@opensshDOTcom` extends js.Object
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait close_ extends js.Object
   
   @js.native
   sealed trait continue extends js.Object
@@ -313,7 +313,7 @@ object ssh2DashStreamsStrings {
   @scala.inline
   def `auth-agent@opensshDOTcom`: `auth-agent@opensshDOTcom` = "auth-agent@openssh.com".asInstanceOf[`auth-agent@opensshDOTcom`]
   @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  def close_ : close_ = "close".asInstanceOf[close_]
   @scala.inline
   def continue: continue = "continue".asInstanceOf[continue]
   @scala.inline

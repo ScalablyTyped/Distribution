@@ -12,7 +12,7 @@ trait MediaFeature extends js.Object {
 object MediaFeature {
   @scala.inline
   def apply(name: String, value: String): MediaFeature = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaFeature]
   }

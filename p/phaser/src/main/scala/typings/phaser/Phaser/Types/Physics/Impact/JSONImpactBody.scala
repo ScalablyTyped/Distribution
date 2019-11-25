@@ -79,8 +79,8 @@ object JSONImpactBody {
     `type`: TYPE,
     vel: Vector2Like
   ): JSONImpactBody = {
-    val __obj = js.Dynamic.literal(accel = accel, bounciness = bounciness, checkAgainst = checkAgainst, collides = collides, friction = friction, gravityFactor = gravityFactor, maxVel = maxVel, minBounceVelocity = minBounceVelocity, name = name, pos = pos, size = size, vel = vel)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(accel = accel.asInstanceOf[js.Any], bounciness = bounciness.asInstanceOf[js.Any], checkAgainst = checkAgainst.asInstanceOf[js.Any], collides = collides.asInstanceOf[js.Any], friction = friction.asInstanceOf[js.Any], gravityFactor = gravityFactor.asInstanceOf[js.Any], maxVel = maxVel.asInstanceOf[js.Any], minBounceVelocity = minBounceVelocity.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], vel = vel.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONImpactBody]
   }
 }

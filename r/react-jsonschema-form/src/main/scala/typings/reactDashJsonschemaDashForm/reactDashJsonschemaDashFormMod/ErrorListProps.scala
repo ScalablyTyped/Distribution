@@ -22,7 +22,7 @@ object ErrorListProps {
     schema: JSONSchema6,
     uiSchema: UiSchema
   ): ErrorListProps = {
-    val __obj = js.Dynamic.literal(errorSchema = errorSchema, errors = errors, formContext = formContext, schema = schema, uiSchema = uiSchema)
+    val __obj = js.Dynamic.literal(errorSchema = errorSchema.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], formContext = formContext.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], uiSchema = uiSchema.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ErrorListProps]
   }

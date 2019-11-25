@@ -20,10 +20,10 @@ object DateRange {
     startDate: String = null
   ): DateRange = {
     val __obj = js.Dynamic.literal()
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (relativeDateRange != null) __obj.updateDynamic("relativeDateRange")(relativeDateRange)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (relativeDateRange != null) __obj.updateDynamic("relativeDateRange")(relativeDateRange.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateRange]
   }
 }

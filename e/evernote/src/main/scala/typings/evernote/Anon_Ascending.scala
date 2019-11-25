@@ -28,14 +28,14 @@ object Anon_Ascending {
     words: String = null
   ): Anon_Ascending = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
-    if (emphasized != null) __obj.updateDynamic("emphasized")(emphasized)
-    if (!js.isUndefined(inactive)) __obj.updateDynamic("inactive")(inactive)
-    if (notebookGuid != null) __obj.updateDynamic("notebookGuid")(notebookGuid)
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
+    if (emphasized != null) __obj.updateDynamic("emphasized")(emphasized.asInstanceOf[js.Any])
+    if (!js.isUndefined(inactive)) __obj.updateDynamic("inactive")(inactive.asInstanceOf[js.Any])
+    if (notebookGuid != null) __obj.updateDynamic("notebookGuid")(notebookGuid.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (tagGuids != null) __obj.updateDynamic("tagGuids")(tagGuids)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
-    if (words != null) __obj.updateDynamic("words")(words)
+    if (tagGuids != null) __obj.updateDynamic("tagGuids")(tagGuids.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ascending]
   }
 }

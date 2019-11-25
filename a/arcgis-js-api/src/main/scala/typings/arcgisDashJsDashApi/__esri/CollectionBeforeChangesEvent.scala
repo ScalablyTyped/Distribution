@@ -14,7 +14,7 @@ trait CollectionBeforeChangesEvent extends js.Object {
 object CollectionBeforeChangesEvent {
   @scala.inline
   def apply(cancellable: Boolean, defaultPrevented: Boolean, item: js.Any, preventDefault: js.Function): CollectionBeforeChangesEvent = {
-    val __obj = js.Dynamic.literal(cancellable = cancellable, defaultPrevented = defaultPrevented, item = item, preventDefault = preventDefault)
+    val __obj = js.Dynamic.literal(cancellable = cancellable.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollectionBeforeChangesEvent]
   }

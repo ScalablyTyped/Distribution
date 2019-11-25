@@ -28,9 +28,9 @@ object WebRequestBody {
     raw: js.Array[UploadData] = null
   ): WebRequestBody = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (formData != null) __obj.updateDynamic("formData")(formData)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebRequestBody]
   }
 }

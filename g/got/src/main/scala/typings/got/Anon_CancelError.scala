@@ -13,12 +13,12 @@ import typings.got.gotMod.GotJSONOptions
 import typings.got.gotMod.GotOptions
 import typings.got.gotMod.GotStreamFn
 import typings.got.gotMod.GotUrl
-import typings.got.gotStrings.delete
-import typings.got.gotStrings.get
-import typings.got.gotStrings.head
+import typings.got.gotStrings.delete_
+import typings.got.gotStrings.get_
+import typings.got.gotStrings.head_
 import typings.got.gotStrings.patch
-import typings.got.gotStrings.post
-import typings.got.gotStrings.put
+import typings.got.gotStrings.post_
+import typings.got.gotStrings.put_
 import typings.node.streamMod.Duplex
 import typings.std.Record
 import scala.scalajs.js
@@ -38,7 +38,7 @@ trait Anon_CancelError extends js.Object {
   @JSName("extend")
   var extend_Original: GotExtend = js.native
   @JSName("stream")
-  var stream_Original: GotStreamFn with (Record[get | post | put | patch | head | delete, GotStreamFn]) = js.native
+  var stream_Original: GotStreamFn with (Record[get_ | post_ | put_ | patch | head_ | delete_, GotStreamFn]) = js.native
   def extend(options: GotBodyOptions[Null | String]): GotInstance[GotBodyFn[String]] = js.native
   def extend(options: GotFormOptions[Null | String]): GotInstance[GotFormFn[String]] = js.native
   def extend(options: GotJSONOptions): GotInstance[GotJSONFn] = js.native

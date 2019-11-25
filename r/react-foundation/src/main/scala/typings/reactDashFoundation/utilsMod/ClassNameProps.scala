@@ -13,8 +13,8 @@ object ClassNameProps {
   @scala.inline
   def apply(className: String = null, noDefaultClassName: String = null): ClassNameProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (noDefaultClassName != null) __obj.updateDynamic("noDefaultClassName")(noDefaultClassName)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (noDefaultClassName != null) __obj.updateDynamic("noDefaultClassName")(noDefaultClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassNameProps]
   }
 }

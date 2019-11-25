@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait EventType extends js.Object
 
+object EventType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def close: typings.k6.k6Strings.close = this.cast("close")
+  @scala.inline
+  def error: typings.k6.k6Strings.error = this.cast("error")
+  @scala.inline
+  def message: typings.k6.k6Strings.message = this.cast("message")
+  @scala.inline
+  def open: typings.k6.k6Strings.open = this.cast("open")
+  @scala.inline
+  def ping: typings.k6.k6Strings.ping = this.cast("ping")
+  @scala.inline
+  def pong: typings.k6.k6Strings.pong = this.cast("pong")
+}
+

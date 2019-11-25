@@ -23,7 +23,7 @@ trait CodeVerification extends js.Object {
 object CodeVerification {
   @scala.inline
   def apply(attempts_remaining: Double, status: pending | attempts_remaining | succeeded | failed): CodeVerification = {
-    val __obj = js.Dynamic.literal(attempts_remaining = attempts_remaining, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attempts_remaining = attempts_remaining.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CodeVerification]
   }

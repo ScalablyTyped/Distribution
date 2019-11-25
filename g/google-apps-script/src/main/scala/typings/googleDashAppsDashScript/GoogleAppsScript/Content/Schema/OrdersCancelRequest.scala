@@ -14,9 +14,9 @@ object OrdersCancelRequest {
   @scala.inline
   def apply(operationId: String = null, reason: String = null, reasonText: String = null): OrdersCancelRequest = {
     val __obj = js.Dynamic.literal()
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCancelRequest]
   }
 }

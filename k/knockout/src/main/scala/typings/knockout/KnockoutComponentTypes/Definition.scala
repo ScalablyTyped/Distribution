@@ -17,7 +17,7 @@ object Definition {
     template: js.Array[Node],
     createViewModel: (/* params */ js.Any, /* options */ Anon_ElementNode) => _ = null
   ): Definition = {
-    val __obj = js.Dynamic.literal(template = template)
+    val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     if (createViewModel != null) __obj.updateDynamic("createViewModel")(js.Any.fromFunction2(createViewModel))
     __obj.asInstanceOf[Definition]
   }

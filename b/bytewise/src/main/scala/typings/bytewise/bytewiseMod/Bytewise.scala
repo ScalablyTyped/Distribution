@@ -20,7 +20,7 @@ object Bytewise {
     StringDictionary: /* k */ StringDictionary[js.Any] = null
   ): Bytewise = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Bytewise]
   }
 }

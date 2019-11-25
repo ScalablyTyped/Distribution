@@ -19,7 +19,7 @@ object ReleaseTaskLogUpdatedEvent {
     releaseId: Double,
     timelineRecordId: String
   ): ReleaseTaskLogUpdatedEvent = {
-    val __obj = js.Dynamic.literal(environmentId = environmentId, lines = lines, projectId = projectId, releaseId = releaseId, timelineRecordId = timelineRecordId)
+    val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], releaseId = releaseId.asInstanceOf[js.Any], timelineRecordId = timelineRecordId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseTaskLogUpdatedEvent]
   }

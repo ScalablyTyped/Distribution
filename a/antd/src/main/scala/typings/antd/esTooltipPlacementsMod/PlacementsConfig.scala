@@ -22,7 +22,7 @@ object PlacementsConfig {
     verticalArrowShift: Int | Double = null
   ): PlacementsConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter)
+    if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter.asInstanceOf[js.Any])
     if (arrowWidth != null) __obj.updateDynamic("arrowWidth")(arrowWidth.asInstanceOf[js.Any])
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
     if (horizontalArrowShift != null) __obj.updateDynamic("horizontalArrowShift")(horizontalArrowShift.asInstanceOf[js.Any])

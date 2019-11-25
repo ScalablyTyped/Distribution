@@ -14,7 +14,7 @@ object Anon_InterpolationAlgorithm {
   @scala.inline
   def apply(interpolationAlgorithm: InterpolationAlgorithm = null, interpolationDegree: Int | Double = null): Anon_InterpolationAlgorithm = {
     val __obj = js.Dynamic.literal()
-    if (interpolationAlgorithm != null) __obj.updateDynamic("interpolationAlgorithm")(interpolationAlgorithm)
+    if (interpolationAlgorithm != null) __obj.updateDynamic("interpolationAlgorithm")(interpolationAlgorithm.asInstanceOf[js.Any])
     if (interpolationDegree != null) __obj.updateDynamic("interpolationDegree")(interpolationDegree.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InterpolationAlgorithm]
   }

@@ -53,7 +53,7 @@ trait ExpandPrompt[TQuestion /* <: Question */]
     */
   @JSName("generateChoicesString")
   /* protected */ def generateChoicesString_choices(
-    choices: /* import warning: ImportType.apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
+    choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
     defaultChoice: js.Any
   ): String = js.native
   /**
@@ -116,7 +116,7 @@ trait ExpandPrompt[TQuestion /* <: Question */]
     */
   @JSName("renderChoices")
   /* protected */ def renderChoices_choices(
-    choices: /* import warning: ImportType.apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
+    choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any,
     pointer: String
   ): String = js.native
   /**
@@ -127,7 +127,7 @@ trait ExpandPrompt[TQuestion /* <: Question */]
     */
   @JSName("validateChoices")
   /* protected */ def validateChoices_choices(
-    choices: /* import warning: ImportType.apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any
+    choices: /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.prompts.PromptOptions<TQuestion>['choices'] */ js.Any
   ): Unit = js.native
 }
 

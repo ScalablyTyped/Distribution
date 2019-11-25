@@ -13,8 +13,8 @@ trait TooltipLinkListProps extends js.Object {
 object TooltipLinkListProps {
   @scala.inline
   def apply(links: js.Array[Link], LinkWrapper: LinkWrapperType = null): TooltipLinkListProps = {
-    val __obj = js.Dynamic.literal(links = links)
-    if (LinkWrapper != null) __obj.updateDynamic("LinkWrapper")(LinkWrapper)
+    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
+    if (LinkWrapper != null) __obj.updateDynamic("LinkWrapper")(LinkWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipLinkListProps]
   }
 }

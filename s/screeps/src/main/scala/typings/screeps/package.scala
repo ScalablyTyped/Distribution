@@ -250,7 +250,7 @@ package object screeps {
   type FIND_STRUCTURES = `107`
   type FIND_TOMBSTONES = `118`
   type FilterFunction[T /* <: FindConstant */] = js.Function1[
-    /* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[T] */ /* object */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ /* object */ js.Any, 
     Boolean
   ]
   type FilterObject = StringDictionary[js.Any]

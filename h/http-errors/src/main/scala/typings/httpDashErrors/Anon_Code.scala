@@ -16,8 +16,8 @@ object Anon_Code {
     HttpError: HttpErrorConstructor,
     StringDictionary: /* code */ StringDictionary[HttpErrorConstructor] = null
   ): Anon_Code = {
-    val __obj = js.Dynamic.literal(HttpError = HttpError)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(HttpError = HttpError.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Code]
   }
 }

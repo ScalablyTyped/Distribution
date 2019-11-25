@@ -12,7 +12,7 @@ object PlotIkhChikouLineOptions {
   @scala.inline
   def apply(styles: PlotIkhChikouLineStylesOptions = null): PlotIkhChikouLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotIkhChikouLineOptions]
   }
 }

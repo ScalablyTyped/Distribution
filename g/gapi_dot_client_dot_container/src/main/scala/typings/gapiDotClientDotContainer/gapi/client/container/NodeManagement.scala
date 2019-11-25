@@ -30,9 +30,9 @@ object NodeManagement {
     upgradeOptions: AutoUpgradeOptions = null
   ): NodeManagement = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRepair)) __obj.updateDynamic("autoRepair")(autoRepair)
-    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade)
-    if (upgradeOptions != null) __obj.updateDynamic("upgradeOptions")(upgradeOptions)
+    if (!js.isUndefined(autoRepair)) __obj.updateDynamic("autoRepair")(autoRepair.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade.asInstanceOf[js.Any])
+    if (upgradeOptions != null) __obj.updateDynamic("upgradeOptions")(upgradeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeManagement]
   }
 }

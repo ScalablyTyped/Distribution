@@ -34,10 +34,10 @@ object CompleteMultipartUploadOutput {
     checksum: String = null,
     location: String = null
   ): CompleteMultipartUploadOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (archiveId != null) __obj.updateDynamic("archiveId")(archiveId)
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (archiveId != null) __obj.updateDynamic("archiveId")(archiveId.asInstanceOf[js.Any])
+    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteMultipartUploadOutput]
   }
 }

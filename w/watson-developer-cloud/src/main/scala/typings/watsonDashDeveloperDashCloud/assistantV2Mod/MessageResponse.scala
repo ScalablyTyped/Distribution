@@ -15,8 +15,8 @@ trait MessageResponse extends js.Object {
 object MessageResponse {
   @scala.inline
   def apply(output: MessageOutput, context: MessageContext = null): MessageResponse = {
-    val __obj = js.Dynamic.literal(output = output)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageResponse]
   }
 }

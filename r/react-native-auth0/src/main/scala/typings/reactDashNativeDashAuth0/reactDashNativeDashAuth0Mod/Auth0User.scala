@@ -37,10 +37,10 @@ object Auth0User {
     picture: String = null,
     userMetadata: T = null
   ): Auth0User[T] = {
-    val __obj = js.Dynamic.literal(created_at = created_at, email = email, emailVerified = emailVerified, identities = identities, logins_count = logins_count, name = name, nickname = nickname, updated_at = updated_at, userId = userId)
-    if (last_ip != null) __obj.updateDynamic("last_ip")(last_ip)
-    if (last_login != null) __obj.updateDynamic("last_login")(last_login)
-    if (picture != null) __obj.updateDynamic("picture")(picture)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any], identities = identities.asInstanceOf[js.Any], logins_count = logins_count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    if (last_ip != null) __obj.updateDynamic("last_ip")(last_ip.asInstanceOf[js.Any])
+    if (last_login != null) __obj.updateDynamic("last_login")(last_login.asInstanceOf[js.Any])
+    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
     if (userMetadata != null) __obj.updateDynamic("userMetadata")(userMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0User[T]]
   }

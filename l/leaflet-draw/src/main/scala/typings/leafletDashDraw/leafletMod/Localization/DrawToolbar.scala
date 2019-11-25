@@ -15,7 +15,7 @@ trait DrawToolbar extends js.Object {
 object DrawToolbar {
   @scala.inline
   def apply(actions: Action, buttons: Anon_Circle, finish: Action, undo: Action): DrawToolbar = {
-    val __obj = js.Dynamic.literal(actions = actions, buttons = buttons, finish = finish, undo = undo)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], finish = finish.asInstanceOf[js.Any], undo = undo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DrawToolbar]
   }

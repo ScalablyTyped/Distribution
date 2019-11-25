@@ -13,7 +13,7 @@ trait NumberDisplayWidgetHTML extends js.Object {
 object NumberDisplayWidgetHTML {
   @scala.inline
   def apply(none: String, one: String, some: String): NumberDisplayWidgetHTML = {
-    val __obj = js.Dynamic.literal(none = none, one = one, some = some)
+    val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], one = one.asInstanceOf[js.Any], some = some.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NumberDisplayWidgetHTML]
   }

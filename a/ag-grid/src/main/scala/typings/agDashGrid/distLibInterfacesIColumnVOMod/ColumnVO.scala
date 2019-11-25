@@ -14,7 +14,7 @@ trait ColumnVO extends js.Object {
 object ColumnVO {
   @scala.inline
   def apply(aggFunc: String, displayName: String, field: String, id: String): ColumnVO = {
-    val __obj = js.Dynamic.literal(aggFunc = aggFunc, displayName = displayName, field = field, id = id)
+    val __obj = js.Dynamic.literal(aggFunc = aggFunc.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColumnVO]
   }

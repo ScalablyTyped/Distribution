@@ -15,10 +15,10 @@ object ResponseInterceptorReturnValue {
   @scala.inline
   def apply(data: js.Any = null, headers: Headers = null, method: String = null, url: String = null): ResponseInterceptorReturnValue = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseInterceptorReturnValue]
   }
 }

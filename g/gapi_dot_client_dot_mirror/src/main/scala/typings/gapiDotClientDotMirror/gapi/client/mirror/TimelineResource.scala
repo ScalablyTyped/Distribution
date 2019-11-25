@@ -35,7 +35,7 @@ object TimelineResource {
     patch: Anon_Alt => Request[TimelineItem],
     update: Anon_Alt => Request[TimelineItem]
   ): TimelineResource = {
-    val __obj = js.Dynamic.literal(attachments = attachments, delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction1(insert), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[TimelineResource]
   }

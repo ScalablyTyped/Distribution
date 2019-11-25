@@ -11,7 +11,7 @@ trait Anon_NativeEventAnonContentSize extends js.Object {
 object Anon_NativeEventAnonContentSize {
   @scala.inline
   def apply(nativeEvent: Anon_ContentSize): Anon_NativeEventAnonContentSize = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NativeEventAnonContentSize]
   }

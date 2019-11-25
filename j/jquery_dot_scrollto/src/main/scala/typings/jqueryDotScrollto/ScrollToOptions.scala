@@ -60,15 +60,15 @@ object ScrollToOptions {
     queue: js.UndefOr[Boolean] = js.undefined
   ): ScrollToOptions = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction0(onAfter))
     if (onAfterFirst != null) __obj.updateDynamic("onAfterFirst")(js.Any.fromFunction0(onAfterFirst))
-    if (over != null) __obj.updateDynamic("over")(over)
-    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue)
+    if (over != null) __obj.updateDynamic("over")(over.asInstanceOf[js.Any])
+    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollToOptions]
   }
 }

@@ -25,8 +25,8 @@ object KeyboardItemProps {
     tdRef: Ref[HTMLTableDataCellElement] = null
   ): KeyboardItemProps = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction2(onClick))
-    if (!js.isUndefined(iconOnly)) __obj.updateDynamic("iconOnly")(iconOnly)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (!js.isUndefined(iconOnly)) __obj.updateDynamic("iconOnly")(iconOnly.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (tdRef != null) __obj.updateDynamic("tdRef")(tdRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardItemProps]
   }

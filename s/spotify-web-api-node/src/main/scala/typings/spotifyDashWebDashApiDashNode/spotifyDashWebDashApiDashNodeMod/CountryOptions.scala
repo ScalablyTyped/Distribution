@@ -12,7 +12,7 @@ object CountryOptions {
   @scala.inline
   def apply(country: String = null): CountryOptions = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountryOptions]
   }
 }

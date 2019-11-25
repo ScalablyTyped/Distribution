@@ -12,7 +12,7 @@ trait SerializedTokenUser extends js.Object {
 object SerializedTokenUser {
   @scala.inline
   def apply(adminToken: String, server: String): SerializedTokenUser = {
-    val __obj = js.Dynamic.literal(adminToken = adminToken, server = server)
+    val __obj = js.Dynamic.literal(adminToken = adminToken.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SerializedTokenUser]
   }

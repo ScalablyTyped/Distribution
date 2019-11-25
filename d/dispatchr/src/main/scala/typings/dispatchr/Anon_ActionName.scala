@@ -14,9 +14,9 @@ trait Anon_ActionName extends js.Object {
 object Anon_ActionName {
   @scala.inline
   def apply(error: Error, actionName: String = null, payload: js.Any = null): Anon_ActionName = {
-    val __obj = js.Dynamic.literal(error = error)
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActionName]
   }
 }

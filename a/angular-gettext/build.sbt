@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular-gettext"
-version := "v2.1.1-dt-20190322Z-3a7c02"
+version := "v2.1.1-dt-20190322Z-f1f9f4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20191119Z-fa1b72",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20191119Z-af02cb",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

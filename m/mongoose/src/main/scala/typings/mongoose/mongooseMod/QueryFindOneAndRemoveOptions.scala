@@ -34,10 +34,10 @@ object QueryFindOneAndRemoveOptions {
   ): QueryFindOneAndRemoveOptions = {
     val __obj = js.Dynamic.literal()
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryFindOneAndRemoveOptions]
   }

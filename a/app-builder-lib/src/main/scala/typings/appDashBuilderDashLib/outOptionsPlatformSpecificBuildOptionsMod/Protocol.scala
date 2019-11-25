@@ -27,7 +27,7 @@ trait Protocol extends js.Object {
 object Protocol {
   @scala.inline
   def apply(name: String, schemes: js.Array[String], role: Editor | Viewer | Shell | None = null): Protocol = {
-    val __obj = js.Dynamic.literal(name = name, schemes = schemes)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], schemes = schemes.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Protocol]
   }

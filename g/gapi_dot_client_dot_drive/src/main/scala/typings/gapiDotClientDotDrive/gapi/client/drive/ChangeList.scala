@@ -27,10 +27,10 @@ object ChangeList {
     nextPageToken: String = null
   ): ChangeList = {
     val __obj = js.Dynamic.literal()
-    if (changes != null) __obj.updateDynamic("changes")(changes)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (newStartPageToken != null) __obj.updateDynamic("newStartPageToken")(newStartPageToken)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (changes != null) __obj.updateDynamic("changes")(changes.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (newStartPageToken != null) __obj.updateDynamic("newStartPageToken")(newStartPageToken.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeList]
   }
 }

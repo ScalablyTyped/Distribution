@@ -13,8 +13,8 @@ trait EIP712LegacyField extends js.Object {
 object EIP712LegacyField {
   @scala.inline
   def apply(name: String, `type`: String, value: js.Any): EIP712LegacyField = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EIP712LegacyField]
   }
 }

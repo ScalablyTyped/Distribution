@@ -34,18 +34,18 @@ object LinkProps {
     withArrow: js.UndefOr[Boolean] = js.undefined
   ): LinkProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(containsIcon)) __obj.updateDynamic("containsIcon")(containsIcon)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse)
-    if (!js.isUndefined(isButton)) __obj.updateDynamic("isButton")(isButton)
-    if (!js.isUndefined(nochrome)) __obj.updateDynamic("nochrome")(nochrome)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(containsIcon)) __obj.updateDynamic("containsIcon")(containsIcon.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(isButton)) __obj.updateDynamic("isButton")(isButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(nochrome)) __obj.updateDynamic("nochrome")(nochrome.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(tertiary)) __obj.updateDynamic("tertiary")(tertiary)
-    if (!js.isUndefined(withArrow)) __obj.updateDynamic("withArrow")(withArrow)
+    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(tertiary)) __obj.updateDynamic("tertiary")(tertiary.asInstanceOf[js.Any])
+    if (!js.isUndefined(withArrow)) __obj.updateDynamic("withArrow")(withArrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps]
   }
 }

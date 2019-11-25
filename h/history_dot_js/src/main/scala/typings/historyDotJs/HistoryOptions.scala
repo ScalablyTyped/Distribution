@@ -33,13 +33,13 @@ object HistoryOptions {
   ): HistoryOptions = {
     val __obj = js.Dynamic.literal()
     if (busyDelay != null) __obj.updateDynamic("busyDelay")(busyDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (delayInit != null) __obj.updateDynamic("delayInit")(delayInit.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSuid)) __obj.updateDynamic("disableSuid")(disableSuid)
+    if (!js.isUndefined(disableSuid)) __obj.updateDynamic("disableSuid")(disableSuid.asInstanceOf[js.Any])
     if (doubleCheckInterval != null) __obj.updateDynamic("doubleCheckInterval")(doubleCheckInterval.asInstanceOf[js.Any])
     if (hashChangeInterval != null) __obj.updateDynamic("hashChangeInterval")(hashChangeInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(html4Mode)) __obj.updateDynamic("html4Mode")(html4Mode)
-    if (initialTitle != null) __obj.updateDynamic("initialTitle")(initialTitle)
+    if (!js.isUndefined(html4Mode)) __obj.updateDynamic("html4Mode")(html4Mode.asInstanceOf[js.Any])
+    if (initialTitle != null) __obj.updateDynamic("initialTitle")(initialTitle.asInstanceOf[js.Any])
     if (safariPollInterval != null) __obj.updateDynamic("safariPollInterval")(safariPollInterval.asInstanceOf[js.Any])
     if (storeInterval != null) __obj.updateDynamic("storeInterval")(storeInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryOptions]

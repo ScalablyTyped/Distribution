@@ -241,13 +241,13 @@ object gmStrings {
   sealed trait Gaussian extends FilterType
   
   @js.native
-  sealed trait Gray extends NamedColor
-  
-  @js.native
   sealed trait GrayScale extends VisualType
   
   @js.native
-  sealed trait Grayscale
+  sealed trait Gray_ extends NamedColor
+  
+  @js.native
+  sealed trait Grayscale_
     extends ImageType
        with PreviewType
   
@@ -630,7 +630,7 @@ object gmStrings {
   sealed trait XYZ extends ColorSpace
   
   @js.native
-  sealed trait Xor
+  sealed trait Xor_
     extends ChannelOperator
        with ComposeOperator
   
@@ -658,10 +658,10 @@ object gmStrings {
   sealed trait `_backtick^_backtick` extends ResizeOption
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center_ extends js.Object
   
   @js.native
-  sealed trait color extends SetDrawProperty
+  sealed trait color_ extends SetDrawProperty
   
   @js.native
   sealed trait concatenate extends OperationMode
@@ -685,7 +685,7 @@ object gmStrings {
   sealed trait frame extends OperationMode
   
   @js.native
-  sealed trait gaussian extends NoiseType
+  sealed trait gaussian_ extends NoiseType
   
   @js.native
   sealed trait impulse extends NoiseType
@@ -697,7 +697,7 @@ object gmStrings {
   sealed trait map extends LimitType
   
   @js.native
-  sealed trait matte extends SetDrawProperty
+  sealed trait matte_ extends SetDrawProperty
   
   @js.native
   sealed trait memory extends LimitType
@@ -709,7 +709,7 @@ object gmStrings {
   sealed trait pixels extends LimitType
   
   @js.native
-  sealed trait point extends SetDrawMethod
+  sealed trait point_ extends SetDrawMethod
   
   @js.native
   sealed trait poisson extends NoiseType
@@ -869,11 +869,11 @@ object gmStrings {
   @scala.inline
   def Gaussian: Gaussian = "Gaussian".asInstanceOf[Gaussian]
   @scala.inline
-  def Gray: Gray = "Gray".asInstanceOf[Gray]
-  @scala.inline
   def GrayScale: GrayScale = "GrayScale".asInstanceOf[GrayScale]
   @scala.inline
-  def Grayscale: Grayscale = "Grayscale".asInstanceOf[Grayscale]
+  def Gray_ : Gray_ = "Gray".asInstanceOf[Gray_]
+  @scala.inline
+  def Grayscale_ : Grayscale_ = "Grayscale".asInstanceOf[Grayscale_]
   @scala.inline
   def Green: Green = "Green".asInstanceOf[Green]
   @scala.inline
@@ -1109,7 +1109,7 @@ object gmStrings {
   @scala.inline
   def XYZ: XYZ = "XYZ".asInstanceOf[XYZ]
   @scala.inline
-  def Xor: Xor = "Xor".asInstanceOf[Xor]
+  def Xor_ : Xor_ = "Xor".asInstanceOf[Xor_]
   @scala.inline
   def YCbCr: YCbCr = "YCbCr".asInstanceOf[YCbCr]
   @scala.inline
@@ -1125,9 +1125,9 @@ object gmStrings {
   @scala.inline
   def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  def center_ : center_ = "center".asInstanceOf[center_]
   @scala.inline
-  def color: color = "color".asInstanceOf[color]
+  def color_ : color_ = "color".asInstanceOf[color_]
   @scala.inline
   def concatenate: concatenate = "concatenate".asInstanceOf[concatenate]
   @scala.inline
@@ -1143,7 +1143,7 @@ object gmStrings {
   @scala.inline
   def frame: frame = "frame".asInstanceOf[frame]
   @scala.inline
-  def gaussian: gaussian = "gaussian".asInstanceOf[gaussian]
+  def gaussian_ : gaussian_ = "gaussian".asInstanceOf[gaussian_]
   @scala.inline
   def impulse: impulse = "impulse".asInstanceOf[impulse]
   @scala.inline
@@ -1151,7 +1151,7 @@ object gmStrings {
   @scala.inline
   def map: map = "map".asInstanceOf[map]
   @scala.inline
-  def matte: matte = "matte".asInstanceOf[matte]
+  def matte_ : matte_ = "matte".asInstanceOf[matte_]
   @scala.inline
   def memory: memory = "memory".asInstanceOf[memory]
   @scala.inline
@@ -1159,7 +1159,7 @@ object gmStrings {
   @scala.inline
   def pixels: pixels = "pixels".asInstanceOf[pixels]
   @scala.inline
-  def point: point = "point".asInstanceOf[point]
+  def point_ : point_ = "point".asInstanceOf[point_]
   @scala.inline
   def poisson: poisson = "poisson".asInstanceOf[poisson]
   @scala.inline

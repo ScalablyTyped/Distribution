@@ -30,7 +30,7 @@ object PixelBlockAddDataPlaneData {
     propertyIsEnumerable: PropertyKey => Boolean,
     statistics: js.Array[_]
   ): PixelBlockAddDataPlaneData = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pixels = pixels, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statistics = statistics)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pixels = pixels.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statistics = statistics.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PixelBlockAddDataPlaneData]
   }

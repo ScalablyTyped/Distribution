@@ -24,7 +24,7 @@ object ConnectionSnapshot {
     seenRecords: RecordMap,
     state: TState
   ): ConnectionSnapshot[TEdge, TState] = {
-    val __obj = js.Dynamic.literal(edgeSnapshots = edgeSnapshots, id = id, reference = reference, seenRecords = seenRecords, state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(edgeSnapshots = edgeSnapshots.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], seenRecords = seenRecords.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectionSnapshot[TEdge, TState]]
   }

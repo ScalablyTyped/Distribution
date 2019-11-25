@@ -11,7 +11,7 @@ trait IBaseSelectedItemsListState[T] extends js.Object {
 object IBaseSelectedItemsListState {
   @scala.inline
   def apply[T](items: js.Array[T]): IBaseSelectedItemsListState[T] = {
-    val __obj = js.Dynamic.literal(items = items)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBaseSelectedItemsListState[T]]
   }

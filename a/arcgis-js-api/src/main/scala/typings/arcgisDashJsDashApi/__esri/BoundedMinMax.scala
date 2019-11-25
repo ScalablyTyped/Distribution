@@ -83,12 +83,12 @@ object BoundedMinMax {
     valueExpression: String = null,
     valueExpressionTitle: String = null
   ): BoundedMinMax = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxDataValue = maxDataValue, maxSize = maxSize.asInstanceOf[js.Any], minDataValue = minDataValue, minSize = minSize.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    __obj.updateDynamic("type")(`type`)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxDataValue = maxDataValue.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], minDataValue = minDataValue.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundedMinMax]
   }
 }

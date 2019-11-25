@@ -13,7 +13,7 @@ trait AppsFindUserInstallationResponsePermissions extends js.Object {
 object AppsFindUserInstallationResponsePermissions {
   @scala.inline
   def apply(checks: String, contents: String, metadata: String): AppsFindUserInstallationResponsePermissions = {
-    val __obj = js.Dynamic.literal(checks = checks, contents = contents, metadata = metadata)
+    val __obj = js.Dynamic.literal(checks = checks.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsFindUserInstallationResponsePermissions]
   }

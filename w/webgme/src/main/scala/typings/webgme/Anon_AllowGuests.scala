@@ -57,7 +57,7 @@ object Anon_AllowGuests {
     logOutUrl: String,
     salts: Double
   ): Anon_AllowGuests = {
-    val __obj = js.Dynamic.literal(allowGuests = allowGuests, allowUserRegistration = allowUserRegistration, authorizer = authorizer, enable = enable, guestAccount = guestAccount, jwt = jwt, logInUrl = logInUrl, logOutUrl = logOutUrl, salts = salts)
+    val __obj = js.Dynamic.literal(allowGuests = allowGuests.asInstanceOf[js.Any], allowUserRegistration = allowUserRegistration.asInstanceOf[js.Any], authorizer = authorizer.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], guestAccount = guestAccount.asInstanceOf[js.Any], jwt = jwt.asInstanceOf[js.Any], logInUrl = logInUrl.asInstanceOf[js.Any], logOutUrl = logOutUrl.asInstanceOf[js.Any], salts = salts.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllowGuests]
   }

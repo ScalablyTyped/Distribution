@@ -18,9 +18,9 @@ object DiagramSelectable {
     stroke: DiagramSelectableStroke = null
   ): DiagramSelectable = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramSelectable]
   }
 }

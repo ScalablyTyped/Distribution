@@ -39,7 +39,7 @@ object TeamDto {
     teamStatDetails: js.Array[TeamStatDetailDto],
     thirdLastJoinDate: Double
   ): TeamDto = {
-    val __obj = js.Dynamic.literal(createDate = createDate, fullId = fullId, lastGameDate = lastGameDate, lastJoinDate = lastJoinDate, lastJoinedRankedTeamQueueDate = lastJoinedRankedTeamQueueDate, matchHistory = matchHistory, modifyDate = modifyDate, name = name, roster = roster, secondLastJoinDate = secondLastJoinDate, status = status, tag = tag, teamStatDetails = teamStatDetails, thirdLastJoinDate = thirdLastJoinDate)
+    val __obj = js.Dynamic.literal(createDate = createDate.asInstanceOf[js.Any], fullId = fullId.asInstanceOf[js.Any], lastGameDate = lastGameDate.asInstanceOf[js.Any], lastJoinDate = lastJoinDate.asInstanceOf[js.Any], lastJoinedRankedTeamQueueDate = lastJoinedRankedTeamQueueDate.asInstanceOf[js.Any], matchHistory = matchHistory.asInstanceOf[js.Any], modifyDate = modifyDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], roster = roster.asInstanceOf[js.Any], secondLastJoinDate = secondLastJoinDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], teamStatDetails = teamStatDetails.asInstanceOf[js.Any], thirdLastJoinDate = thirdLastJoinDate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamDto]
   }

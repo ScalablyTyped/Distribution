@@ -26,9 +26,9 @@ object Anon_Address {
   @scala.inline
   def apply(address: String = null, collection: String = null, options: js.Any = null): Anon_Address = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Address]
   }
 }

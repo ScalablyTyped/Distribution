@@ -56,17 +56,17 @@ object Anon_AltFieldsKey {
     roles: String = null,
     userIp: String = null
   ): Anon_AltFieldsKey = {
-    val __obj = js.Dynamic.literal(ocdId = ocdId)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (levels != null) __obj.updateDynamic("levels")(levels)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
-    if (roles != null) __obj.updateDynamic("roles")(roles)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    val __obj = js.Dynamic.literal(ocdId = ocdId.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltFieldsKey]
   }
 }

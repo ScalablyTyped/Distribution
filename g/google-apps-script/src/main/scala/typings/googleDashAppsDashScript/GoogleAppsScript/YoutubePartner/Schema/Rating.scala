@@ -13,8 +13,8 @@ object Rating {
   @scala.inline
   def apply(rating: String = null, ratingSystem: String = null): Rating = {
     val __obj = js.Dynamic.literal()
-    if (rating != null) __obj.updateDynamic("rating")(rating)
-    if (ratingSystem != null) __obj.updateDynamic("ratingSystem")(ratingSystem)
+    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
+    if (ratingSystem != null) __obj.updateDynamic("ratingSystem")(ratingSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rating]
   }
 }

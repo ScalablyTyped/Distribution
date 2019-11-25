@@ -19,9 +19,9 @@ object Anon_DeferredPropNameSilent {
     silent: js.UndefOr[Boolean] = js.undefined
   ): Anon_DeferredPropNameSilent = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DeferredPropNameSilent]
   }
 }

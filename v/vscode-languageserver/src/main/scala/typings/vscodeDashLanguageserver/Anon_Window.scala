@@ -12,7 +12,7 @@ trait Anon_Window extends js.Object {
 object Anon_Window {
   @scala.inline
   def apply(window: RemoteWindow): Anon_Window = {
-    val __obj = js.Dynamic.literal(window = window)
+    val __obj = js.Dynamic.literal(window = window.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Window]
   }

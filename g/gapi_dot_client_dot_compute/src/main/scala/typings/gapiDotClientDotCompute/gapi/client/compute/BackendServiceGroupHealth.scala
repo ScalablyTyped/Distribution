@@ -14,8 +14,8 @@ object BackendServiceGroupHealth {
   @scala.inline
   def apply(healthStatus: js.Array[HealthStatus] = null, kind: String = null): BackendServiceGroupHealth = {
     val __obj = js.Dynamic.literal()
-    if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendServiceGroupHealth]
   }
 }

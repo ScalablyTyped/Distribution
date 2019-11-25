@@ -14,7 +14,7 @@ trait Anon_ResourceId extends js.Object {
 object Anon_ResourceId {
   @scala.inline
   def apply(resourceId: Anon_Kind): Anon_ResourceId = {
-    val __obj = js.Dynamic.literal(resourceId = resourceId)
+    val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ResourceId]
   }

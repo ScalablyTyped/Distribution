@@ -26,12 +26,12 @@ object KmlLayerOptions {
     zIndex: Int | Double = null
   ): KmlLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (!js.isUndefined(preserveViewport)) __obj.updateDynamic("preserveViewport")(preserveViewport)
-    if (!js.isUndefined(screenOverlays)) __obj.updateDynamic("screenOverlays")(screenOverlays)
-    if (!js.isUndefined(suppressInfoWindows)) __obj.updateDynamic("suppressInfoWindows")(suppressInfoWindows)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveViewport)) __obj.updateDynamic("preserveViewport")(preserveViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenOverlays)) __obj.updateDynamic("screenOverlays")(screenOverlays.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressInfoWindows)) __obj.updateDynamic("suppressInfoWindows")(suppressInfoWindows.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[KmlLayerOptions]
   }

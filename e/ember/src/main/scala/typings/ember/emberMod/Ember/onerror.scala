@@ -1,6 +1,5 @@
 package typings.ember.emberMod.Ember
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +12,6 @@ object onerror extends js.Object {
     * internals encounter an error. This is useful for specialized error handling
     * and reporting code.
     */
-  def apply(error: Error): Unit = js.native
+  def apply(error: typings.std.Error): Unit = js.native
 }
 

@@ -20,7 +20,7 @@ trait GitBlobRef extends js.Object {
 object GitBlobRef {
   @scala.inline
   def apply(_links: js.Any, objectId: String, size: Double, url: String): GitBlobRef = {
-    val __obj = js.Dynamic.literal(_links = _links, objectId = objectId, size = size, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitBlobRef]
   }

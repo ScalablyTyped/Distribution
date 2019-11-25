@@ -12,7 +12,7 @@ trait Anon_DataErr extends js.Object {
 object Anon_DataErr {
   @scala.inline
   def apply(DataErr: Double, Response: Double): Anon_DataErr = {
-    val __obj = js.Dynamic.literal(DataErr = DataErr, Response = Response)
+    val __obj = js.Dynamic.literal(DataErr = DataErr.asInstanceOf[js.Any], Response = Response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataErr]
   }

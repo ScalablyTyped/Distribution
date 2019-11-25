@@ -11,7 +11,7 @@ package object asyncMod {
   type AsyncAutoTask[R1, R /* <: Dictionary[_] */, E] = (AsyncAutoTaskFunctionWithoutDependencies[R1, E]) | (js.Array[String | (AsyncAutoTaskFunction[R1, R, E])])
   type AsyncAutoTaskFunction[R1, R /* <: Dictionary[_] */, E] = js.Function2[/* results */ R, /* cb */ (AsyncResultCallback[R1, E]) | ErrorCallback[E], Unit]
   type AsyncAutoTaskFunctionWithoutDependencies[R1, E] = js.Function1[/* cb */ (AsyncResultCallback[R1, E]) | ErrorCallback[E], Unit]
-  type AsyncAutoTasks[R /* <: Dictionary[_] */, E] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type AsyncAutoTasks[R /* <: Dictionary[_] */, E] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof R ]: async.async.AsyncAutoTask<R[K], R, E>}
     */ typings.async.asyncStrings.AsyncAutoTasks with R
   type AsyncBooleanIterator[T, E] = js.Function2[/* item */ T, /* callback */ AsyncBooleanResultCallback[E], Unit]

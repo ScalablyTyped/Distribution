@@ -12,8 +12,8 @@ trait SystemError extends js.Object {
 object SystemError {
   @scala.inline
   def apply(message: String, `type`: SystemErrorType): SystemError = {
-    val __obj = js.Dynamic.literal(message = message)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemError]
   }
 }

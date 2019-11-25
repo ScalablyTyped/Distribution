@@ -51,16 +51,16 @@ object Location {
     sortingCode: String = null
   ): Location = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (addressLine != null) __obj.updateDynamic("addressLine")(addressLine)
-    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea)
-    if (dependentLocality != null) __obj.updateDynamic("dependentLocality")(dependentLocality)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (latLng != null) __obj.updateDynamic("latLng")(latLng)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
-    if (sortingCode != null) __obj.updateDynamic("sortingCode")(sortingCode)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (addressLine != null) __obj.updateDynamic("addressLine")(addressLine.asInstanceOf[js.Any])
+    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea.asInstanceOf[js.Any])
+    if (dependentLocality != null) __obj.updateDynamic("dependentLocality")(dependentLocality.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
+    if (sortingCode != null) __obj.updateDynamic("sortingCode")(sortingCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
 }

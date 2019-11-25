@@ -19,8 +19,8 @@ object Options {
   @scala.inline
   def apply(format: HTMLFormatConfiguration = null, suggest: CompletionConfiguration = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (suggest != null) __obj.updateDynamic("suggest")(suggest)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (suggest != null) __obj.updateDynamic("suggest")(suggest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

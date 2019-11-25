@@ -34,17 +34,17 @@ object ApsAlert {
     titleLocKey: String = null
   ): ApsAlert = {
     val __obj = js.Dynamic.literal()
-    if (actionLocKey != null) __obj.updateDynamic("actionLocKey")(actionLocKey)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (launchImage != null) __obj.updateDynamic("launchImage")(launchImage)
-    if (locArgs != null) __obj.updateDynamic("locArgs")(locArgs)
-    if (locKey != null) __obj.updateDynamic("locKey")(locKey)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (subtitleLocArgs != null) __obj.updateDynamic("subtitleLocArgs")(subtitleLocArgs)
-    if (subtitleLocKey != null) __obj.updateDynamic("subtitleLocKey")(subtitleLocKey)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (titleLocArgs != null) __obj.updateDynamic("titleLocArgs")(titleLocArgs)
-    if (titleLocKey != null) __obj.updateDynamic("titleLocKey")(titleLocKey)
+    if (actionLocKey != null) __obj.updateDynamic("actionLocKey")(actionLocKey.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (launchImage != null) __obj.updateDynamic("launchImage")(launchImage.asInstanceOf[js.Any])
+    if (locArgs != null) __obj.updateDynamic("locArgs")(locArgs.asInstanceOf[js.Any])
+    if (locKey != null) __obj.updateDynamic("locKey")(locKey.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (subtitleLocArgs != null) __obj.updateDynamic("subtitleLocArgs")(subtitleLocArgs.asInstanceOf[js.Any])
+    if (subtitleLocKey != null) __obj.updateDynamic("subtitleLocKey")(subtitleLocKey.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleLocArgs != null) __obj.updateDynamic("titleLocArgs")(titleLocArgs.asInstanceOf[js.Any])
+    if (titleLocKey != null) __obj.updateDynamic("titleLocKey")(titleLocKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApsAlert]
   }
 }

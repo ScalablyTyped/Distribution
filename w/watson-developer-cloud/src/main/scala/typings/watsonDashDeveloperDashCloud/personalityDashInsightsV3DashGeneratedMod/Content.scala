@@ -13,7 +13,7 @@ trait Content extends js.Object {
 object Content {
   @scala.inline
   def apply(content_items: js.Array[ContentItem]): Content = {
-    val __obj = js.Dynamic.literal(content_items = content_items)
+    val __obj = js.Dynamic.literal(content_items = content_items.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Content]
   }

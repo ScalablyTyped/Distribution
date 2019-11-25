@@ -35,13 +35,13 @@ object TypeConstructorOptions {
   ): TypeConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (construct != null) __obj.updateDynamic("construct")(js.Any.fromFunction1(construct))
-    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
-    if (instanceOf != null) __obj.updateDynamic("instanceOf")(instanceOf)
+    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle.asInstanceOf[js.Any])
+    if (instanceOf != null) __obj.updateDynamic("instanceOf")(instanceOf.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
     if (represent != null) __obj.updateDynamic("represent")(represent.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
-    if (styleAliases != null) __obj.updateDynamic("styleAliases")(styleAliases)
+    if (styleAliases != null) __obj.updateDynamic("styleAliases")(styleAliases.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeConstructorOptions]
   }
 }

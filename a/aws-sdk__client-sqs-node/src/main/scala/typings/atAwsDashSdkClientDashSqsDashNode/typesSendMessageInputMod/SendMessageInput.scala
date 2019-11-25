@@ -69,14 +69,14 @@ object SendMessageInput {
     MessageDeduplicationId: String = null,
     MessageGroupId: String = null
   ): SendMessageInput = {
-    val __obj = js.Dynamic.literal(MessageBody = MessageBody, QueueUrl = QueueUrl)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(MessageBody = MessageBody.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     if (DelaySeconds != null) __obj.updateDynamic("DelaySeconds")(DelaySeconds.asInstanceOf[js.Any])
     if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes.asInstanceOf[js.Any])
-    if (MessageDeduplicationId != null) __obj.updateDynamic("MessageDeduplicationId")(MessageDeduplicationId)
-    if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId)
+    if (MessageDeduplicationId != null) __obj.updateDynamic("MessageDeduplicationId")(MessageDeduplicationId.asInstanceOf[js.Any])
+    if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMessageInput]
   }
 }

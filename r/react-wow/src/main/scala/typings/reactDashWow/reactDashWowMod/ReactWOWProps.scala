@@ -79,17 +79,17 @@ object ReactWOWProps {
     resize: js.UndefOr[Boolean] = js.undefined,
     scroll: js.UndefOr[Boolean] = js.undefined
   ): ReactWOWProps = {
-    val __obj = js.Dynamic.literal(animation = animation, children = children)
-    if (animateClass != null) __obj.updateDynamic("animateClass")(animateClass)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
+    if (animateClass != null) __obj.updateDynamic("animateClass")(animateClass.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (iteration != null) __obj.updateDynamic("iteration")(iteration)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (iteration != null) __obj.updateDynamic("iteration")(iteration.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow)
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactWOWProps]
   }
 }

@@ -15,7 +15,7 @@ trait IMetadataCardSelectionListItem extends js.Object {
 object IMetadataCardSelectionListItem {
   @scala.inline
   def apply(ChildItems: js.Any, HasParent: Boolean, ParentID: Double, Selectable: Boolean, Value: js.Any): IMetadataCardSelectionListItem = {
-    val __obj = js.Dynamic.literal(ChildItems = ChildItems, HasParent = HasParent, ParentID = ParentID, Selectable = Selectable, Value = Value)
+    val __obj = js.Dynamic.literal(ChildItems = ChildItems.asInstanceOf[js.Any], HasParent = HasParent.asInstanceOf[js.Any], ParentID = ParentID.asInstanceOf[js.Any], Selectable = Selectable.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMetadataCardSelectionListItem]
   }

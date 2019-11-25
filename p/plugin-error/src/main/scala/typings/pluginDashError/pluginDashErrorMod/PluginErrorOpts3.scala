@@ -22,9 +22,9 @@ object PluginErrorOpts3 {
   ): PluginErrorOpts3 = {
     val __obj = js.Dynamic.literal()
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (plugin != null) __obj.updateDynamic("plugin")(plugin)
-    if (!js.isUndefined(showProperties)) __obj.updateDynamic("showProperties")(showProperties)
-    if (!js.isUndefined(showStack)) __obj.updateDynamic("showStack")(showStack)
+    if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
+    if (!js.isUndefined(showProperties)) __obj.updateDynamic("showProperties")(showProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(showStack)) __obj.updateDynamic("showStack")(showStack.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginErrorOpts3]
   }
 }

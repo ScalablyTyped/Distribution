@@ -53,13 +53,13 @@ object GetJobOutputOutput {
     contentType: String = null,
     status: Int | Double = null
   ): GetJobOutputOutput[StreamType] = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (acceptRanges != null) __obj.updateDynamic("acceptRanges")(acceptRanges)
-    if (archiveDescription != null) __obj.updateDynamic("archiveDescription")(archiveDescription)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (acceptRanges != null) __obj.updateDynamic("acceptRanges")(acceptRanges.asInstanceOf[js.Any])
+    if (archiveDescription != null) __obj.updateDynamic("archiveDescription")(archiveDescription.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum)
-    if (contentRange != null) __obj.updateDynamic("contentRange")(contentRange)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
+    if (contentRange != null) __obj.updateDynamic("contentRange")(contentRange.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobOutputOutput[StreamType]]
   }

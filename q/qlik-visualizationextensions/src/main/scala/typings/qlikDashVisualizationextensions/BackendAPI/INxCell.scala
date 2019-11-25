@@ -97,9 +97,9 @@ object INxCell {
     qNum: Int | Double = null,
     qText: String = null
   ): INxCell = {
-    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qElemNumber = qElemNumber, qFrequency = qFrequency, qHighlightRanges = qHighlightRanges, qIsEmpty = qIsEmpty, qIsNull = qIsNull, qIsOtherCell = qIsOtherCell, qIsTotalCell = qIsTotalCell, qState = qState)
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims.asInstanceOf[js.Any], qAttrExps = qAttrExps.asInstanceOf[js.Any], qElemNumber = qElemNumber.asInstanceOf[js.Any], qFrequency = qFrequency.asInstanceOf[js.Any], qHighlightRanges = qHighlightRanges.asInstanceOf[js.Any], qIsEmpty = qIsEmpty.asInstanceOf[js.Any], qIsNull = qIsNull.asInstanceOf[js.Any], qIsOtherCell = qIsOtherCell.asInstanceOf[js.Any], qIsTotalCell = qIsTotalCell.asInstanceOf[js.Any], qState = qState.asInstanceOf[js.Any])
     if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
-    if (qText != null) __obj.updateDynamic("qText")(qText)
+    if (qText != null) __obj.updateDynamic("qText")(qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxCell]
   }
 }

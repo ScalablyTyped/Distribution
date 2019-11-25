@@ -22,11 +22,11 @@ object EditorFileBrowser {
     transport: EditorFileBrowserTransport = null
   ): EditorFileBrowser = {
     val __obj = js.Dynamic.literal()
-    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorFileBrowser]
   }
 }

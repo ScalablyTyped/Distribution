@@ -21,12 +21,12 @@ object RuleTesterTestRejected {
     message: String = null,
     only: js.UndefOr[Boolean] = js.undefined
   ): RuleTesterTestRejected = {
-    val __obj = js.Dynamic.literal(code = code)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleTesterTestRejected]
   }
 }

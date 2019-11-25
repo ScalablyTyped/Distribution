@@ -26,9 +26,9 @@ object AsObject {
     listValue: typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.ListValue.AsObject = null,
     structValue: typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Struct.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(boolValue = boolValue, nullValue = nullValue, numberValue = numberValue, stringValue = stringValue)
-    if (listValue != null) __obj.updateDynamic("listValue")(listValue)
-    if (structValue != null) __obj.updateDynamic("structValue")(structValue)
+    val __obj = js.Dynamic.literal(boolValue = boolValue.asInstanceOf[js.Any], nullValue = nullValue.asInstanceOf[js.Any], numberValue = numberValue.asInstanceOf[js.Any], stringValue = stringValue.asInstanceOf[js.Any])
+    if (listValue != null) __obj.updateDynamic("listValue")(listValue.asInstanceOf[js.Any])
+    if (structValue != null) __obj.updateDynamic("structValue")(structValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

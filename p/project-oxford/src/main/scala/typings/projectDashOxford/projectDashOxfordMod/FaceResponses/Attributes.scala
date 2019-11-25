@@ -14,7 +14,7 @@ trait Attributes extends js.Object {
 object Attributes {
   @scala.inline
   def apply(age: Double, gender: String, headPose: Anon_Pitch): Attributes = {
-    val __obj = js.Dynamic.literal(age = age, gender = gender, headPose = headPose)
+    val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], headPose = headPose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Attributes]
   }

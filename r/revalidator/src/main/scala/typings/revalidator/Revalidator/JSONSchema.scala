@@ -15,9 +15,9 @@ object JSONSchema {
   @scala.inline
   def apply[T](patternProperties: ISchemas[T] = null, properties: ISchemas[T] = null, `type`: `object` = null): JSONSchema[T] = {
     val __obj = js.Dynamic.literal()
-    if (patternProperties != null) __obj.updateDynamic("patternProperties")(patternProperties)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (patternProperties != null) __obj.updateDynamic("patternProperties")(patternProperties.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONSchema[T]]
   }
 }

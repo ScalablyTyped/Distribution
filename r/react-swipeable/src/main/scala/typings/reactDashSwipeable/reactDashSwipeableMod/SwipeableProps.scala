@@ -26,10 +26,10 @@ object SwipeableProps {
   ): SwipeableProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(js.Any.fromFunction1(innerRef))
-    if (nodeName != null) __obj.updateDynamic("nodeName")(nodeName)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (nodeName != null) __obj.updateDynamic("nodeName")(nodeName.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeableProps]
   }
 }

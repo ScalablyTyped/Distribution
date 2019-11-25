@@ -13,7 +13,7 @@ object Media {
   @scala.inline
   def apply(resourceName: String = null): Media = {
     val __obj = js.Dynamic.literal()
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Media]
   }
 }

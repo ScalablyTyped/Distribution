@@ -14,9 +14,9 @@ object Brand {
   @scala.inline
   def apply(image: String = null, title: String = null, url: String = null): Brand = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Brand]
   }
 }

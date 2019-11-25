@@ -14,7 +14,7 @@ object SortSettings {
   @scala.inline
   def apply(sortedColumns: js.Array[SortSettingsSortedColumn] = null): SortSettings = {
     val __obj = js.Dynamic.literal()
-    if (sortedColumns != null) __obj.updateDynamic("sortedColumns")(sortedColumns)
+    if (sortedColumns != null) __obj.updateDynamic("sortedColumns")(sortedColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortSettings]
   }
 }

@@ -21,11 +21,11 @@ object Learnset {
     tm: String = null,
     variations: js.Array[String] = null
   ): Learnset = {
-    val __obj = js.Dynamic.literal(move = move)
-    if (!js.isUndefined(egg_move)) __obj.updateDynamic("egg_move")(egg_move)
+    val __obj = js.Dynamic.literal(move = move.asInstanceOf[js.Any])
+    if (!js.isUndefined(egg_move)) __obj.updateDynamic("egg_move")(egg_move.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (tm != null) __obj.updateDynamic("tm")(tm)
-    if (variations != null) __obj.updateDynamic("variations")(variations)
+    if (tm != null) __obj.updateDynamic("tm")(tm.asInstanceOf[js.Any])
+    if (variations != null) __obj.updateDynamic("variations")(variations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Learnset]
   }
 }

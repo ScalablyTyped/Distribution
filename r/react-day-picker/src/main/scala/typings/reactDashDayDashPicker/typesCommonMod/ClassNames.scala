@@ -57,7 +57,7 @@ object ClassNames {
     weekdaysRow: String,
     wrapper: String
   ): ClassNames = {
-    val __obj = js.Dynamic.literal(body = body, caption = caption, container = container, day = day, disabled = disabled, footer = footer, interactionDisabled = interactionDisabled, month = month, months = months, navBar = navBar, navButtonInteractionDisabled = navButtonInteractionDisabled, navButtonNext = navButtonNext, navButtonPrev = navButtonPrev, outside = outside, selected = selected, today = today, todayButton = todayButton, week = week, weekNumber = weekNumber, weekday = weekday, weekdays = weekdays, weekdaysRow = weekdaysRow, wrapper = wrapper)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], interactionDisabled = interactionDisabled.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], navBar = navBar.asInstanceOf[js.Any], navButtonInteractionDisabled = navButtonInteractionDisabled.asInstanceOf[js.Any], navButtonNext = navButtonNext.asInstanceOf[js.Any], navButtonPrev = navButtonPrev.asInstanceOf[js.Any], outside = outside.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any], todayButton = todayButton.asInstanceOf[js.Any], week = week.asInstanceOf[js.Any], weekNumber = weekNumber.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any], weekdaysRow = weekdaysRow.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClassNames]
   }

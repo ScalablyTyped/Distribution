@@ -21,10 +21,10 @@ object Anon_BaseUrl {
     promisify: `false` = null
   ): Anon_BaseUrl = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (!js.isUndefined(crumbIssuer)) __obj.updateDynamic("crumbIssuer")(crumbIssuer)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (promisify != null) __obj.updateDynamic("promisify")(promisify)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(crumbIssuer)) __obj.updateDynamic("crumbIssuer")(crumbIssuer.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (promisify != null) __obj.updateDynamic("promisify")(promisify.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseUrl]
   }
 }

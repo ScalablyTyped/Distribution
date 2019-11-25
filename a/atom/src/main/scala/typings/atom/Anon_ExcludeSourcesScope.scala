@@ -19,9 +19,9 @@ object Anon_ExcludeSourcesScope {
     sources: js.Array[String] = null
   ): Anon_ExcludeSourcesScope = {
     val __obj = js.Dynamic.literal()
-    if (excludeSources != null) __obj.updateDynamic("excludeSources")(excludeSources)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (excludeSources != null) __obj.updateDynamic("excludeSources")(excludeSources.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExcludeSourcesScope]
   }
 }

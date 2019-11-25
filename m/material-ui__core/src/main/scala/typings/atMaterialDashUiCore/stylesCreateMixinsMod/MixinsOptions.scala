@@ -19,7 +19,7 @@ object MixinsOptions {
   ): MixinsOptions = {
     val __obj = js.Dynamic.literal()
     if (gutters != null) __obj.updateDynamic("gutters")(js.Any.fromFunction1(gutters))
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[MixinsOptions]
   }
 }

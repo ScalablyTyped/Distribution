@@ -36,8 +36,8 @@ object ARIARoleDefinition {
     requiredProps: ARIAPropertyMap,
     superClass: js.Array[js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole]]
   ): ARIARoleDefinition = {
-    val __obj = js.Dynamic.literal(baseConcepts = baseConcepts, childrenPresentational = childrenPresentational, props = props, relatedConcepts = relatedConcepts, requiredProps = requiredProps, superClass = superClass)
-    __obj.updateDynamic("abstract")(`abstract`)
+    val __obj = js.Dynamic.literal(baseConcepts = baseConcepts.asInstanceOf[js.Any], childrenPresentational = childrenPresentational.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], relatedConcepts = relatedConcepts.asInstanceOf[js.Any], requiredProps = requiredProps.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any])
+    __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIARoleDefinition]
   }
 }

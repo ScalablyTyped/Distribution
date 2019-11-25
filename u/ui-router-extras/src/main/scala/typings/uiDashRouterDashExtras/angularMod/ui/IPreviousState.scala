@@ -20,8 +20,8 @@ object IPreviousState {
     state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IState */ js.Any,
     params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any = null
   ): IPreviousState = {
-    val __obj = js.Dynamic.literal(state = state)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPreviousState]
   }
 }

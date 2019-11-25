@@ -22,9 +22,9 @@ object HeatMapData {
     maxValue: Double | auto = null,
     minValue: Double | auto = null
   ): HeatMapData = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (indexBy != null) __obj.updateDynamic("indexBy")(indexBy.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatMapData]

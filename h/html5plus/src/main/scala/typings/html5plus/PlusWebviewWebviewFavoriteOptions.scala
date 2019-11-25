@@ -38,9 +38,9 @@ object PlusWebviewWebviewFavoriteOptions {
   @scala.inline
   def apply(href: String = null, icon: String = null, title: String = null): PlusWebviewWebviewFavoriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewFavoriteOptions]
   }
 }

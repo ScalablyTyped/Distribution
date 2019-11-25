@@ -20,9 +20,9 @@ object LineComputedSerieData {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     color: String = null
   ): LineComputedSerieData = {
-    val __obj = js.Dynamic.literal(data = data, id = id.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineComputedSerieData]
   }
 }

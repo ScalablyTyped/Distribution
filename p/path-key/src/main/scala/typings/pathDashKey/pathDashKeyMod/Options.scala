@@ -21,8 +21,8 @@ object Options {
   @scala.inline
   def apply(env: StringDictionary[js.UndefOr[String]] = null, platform: Platform = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

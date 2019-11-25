@@ -16,17 +16,17 @@ import typings.videoDotJs.videoDotJsStrings.ModalDialog
 import typings.videoDotJs.videoDotJsStrings.MouseTimeDisplay
 import typings.videoDotJs.videoDotJsStrings.Spacer
 import typings.videoDotJs.videoDotJsStrings.TimeTooltip
-import typings.videoDotJs.videoDotJsStrings.button
-import typings.videoDotJs.videoDotJsStrings.clickablecomponent
-import typings.videoDotJs.videoDotJsStrings.component
-import typings.videoDotJs.videoDotJsStrings.menu
-import typings.videoDotJs.videoDotJsStrings.menubutton
-import typings.videoDotJs.videoDotJsStrings.menuitem
-import typings.videoDotJs.videoDotJsStrings.modaldialog
-import typings.videoDotJs.videoDotJsStrings.mouseTimeDisplay
-import typings.videoDotJs.videoDotJsStrings.player
-import typings.videoDotJs.videoDotJsStrings.spacer
-import typings.videoDotJs.videoDotJsStrings.timeTooltip
+import typings.videoDotJs.videoDotJsStrings.button_
+import typings.videoDotJs.videoDotJsStrings.clickablecomponent_
+import typings.videoDotJs.videoDotJsStrings.component_
+import typings.videoDotJs.videoDotJsStrings.menu_
+import typings.videoDotJs.videoDotJsStrings.menubutton_
+import typings.videoDotJs.videoDotJsStrings.menuitem_
+import typings.videoDotJs.videoDotJsStrings.modaldialog_
+import typings.videoDotJs.videoDotJsStrings.mouseTimeDisplay_
+import typings.videoDotJs.videoDotJsStrings.player_
+import typings.videoDotJs.videoDotJsStrings.spacer_
+import typings.videoDotJs.videoDotJsStrings.timeTooltip_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,7 +58,7 @@ Instantiable1[/* player */ Player, Component]
       /* ready */ ReadyCallback, 
       Component
     ] {
-  def getComponent(name: String): /* import warning: ImportType.apply Failed type conversion: typeof Component */ js.Any = js.native
+  def getComponent(name: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any = js.native
   /**
     * Get a `Component` based on the name it was registered with.
     *
@@ -73,49 +73,49 @@ Instantiable1[/* player */ Player, Component]
     *             return that if it exists.
     */
   @JSName("getComponent")
-  def getComponent_Button(name: Button): /* import warning: ImportType.apply Failed type conversion: typeof Button */ js.Any = js.native
+  def getComponent_Button(name: Button): /* import warning: importer.ImportType#apply Failed type conversion: typeof Button */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_ClickableComponent(name: ClickableComponent): /* import warning: ImportType.apply Failed type conversion: typeof ClickableComponent */ js.Any = js.native
+  def getComponent_ClickableComponent(name: ClickableComponent): /* import warning: importer.ImportType#apply Failed type conversion: typeof ClickableComponent */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_Component(name: typings.videoDotJs.videoDotJsStrings.Component): /* import warning: ImportType.apply Failed type conversion: typeof Component */ js.Any = js.native
+  def getComponent_Component(name: typings.videoDotJs.videoDotJsStrings.Component): /* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_Menu(name: Menu): /* import warning: ImportType.apply Failed type conversion: typeof Menu */ js.Any = js.native
+  def getComponent_Menu(name: Menu): /* import warning: importer.ImportType#apply Failed type conversion: typeof Menu */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_MenuButton(name: MenuButton): /* import warning: ImportType.apply Failed type conversion: typeof MenuButton */ js.Any = js.native
+  def getComponent_MenuButton(name: MenuButton): /* import warning: importer.ImportType#apply Failed type conversion: typeof MenuButton */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_MenuItem(name: MenuItem): /* import warning: ImportType.apply Failed type conversion: typeof MenuItem */ js.Any = js.native
+  def getComponent_MenuItem(name: MenuItem): /* import warning: importer.ImportType#apply Failed type conversion: typeof MenuItem */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_ModalDialog(name: ModalDialog): /* import warning: ImportType.apply Failed type conversion: typeof ModalDialog */ js.Any = js.native
+  def getComponent_ModalDialog(name: ModalDialog): /* import warning: importer.ImportType#apply Failed type conversion: typeof ModalDialog */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): /* import warning: ImportType.apply Failed type conversion: typeof MouseTimeDisplay */ js.Any = js.native
+  def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): /* import warning: importer.ImportType#apply Failed type conversion: typeof MouseTimeDisplay */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_Player(name: typings.videoDotJs.videoDotJsStrings.Player): /* import warning: ImportType.apply Failed type conversion: typeof Player */ js.Any = js.native
+  def getComponent_Player(name: typings.videoDotJs.videoDotJsStrings.Player): /* import warning: importer.ImportType#apply Failed type conversion: typeof Player */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_Spacer(name: Spacer): /* import warning: ImportType.apply Failed type conversion: typeof Spacer */ js.Any = js.native
+  def getComponent_Spacer(name: Spacer): /* import warning: importer.ImportType#apply Failed type conversion: typeof Spacer */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_TimeTooltip(name: TimeTooltip): /* import warning: ImportType.apply Failed type conversion: typeof TimeToolTip */ js.Any = js.native
+  def getComponent_TimeTooltip(name: TimeTooltip): /* import warning: importer.ImportType#apply Failed type conversion: typeof TimeToolTip */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_button(name: button): /* import warning: ImportType.apply Failed type conversion: typeof Button */ js.Any = js.native
+  def getComponent_button(name: button_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Button */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_clickablecomponent(name: clickablecomponent): /* import warning: ImportType.apply Failed type conversion: typeof ClickableComponent */ js.Any = js.native
+  def getComponent_clickablecomponent(name: clickablecomponent_): /* import warning: importer.ImportType#apply Failed type conversion: typeof ClickableComponent */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_component(name: component): /* import warning: ImportType.apply Failed type conversion: typeof Component */ js.Any = js.native
+  def getComponent_component(name: component_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_menu(name: menu): /* import warning: ImportType.apply Failed type conversion: typeof Menu */ js.Any = js.native
+  def getComponent_menu(name: menu_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Menu */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_menubutton(name: menubutton): /* import warning: ImportType.apply Failed type conversion: typeof MenuButton */ js.Any = js.native
+  def getComponent_menubutton(name: menubutton_): /* import warning: importer.ImportType#apply Failed type conversion: typeof MenuButton */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_menuitem(name: menuitem): /* import warning: ImportType.apply Failed type conversion: typeof MenuItem */ js.Any = js.native
+  def getComponent_menuitem(name: menuitem_): /* import warning: importer.ImportType#apply Failed type conversion: typeof MenuItem */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_modaldialog(name: modaldialog): /* import warning: ImportType.apply Failed type conversion: typeof ModalDialog */ js.Any = js.native
+  def getComponent_modaldialog(name: modaldialog_): /* import warning: importer.ImportType#apply Failed type conversion: typeof ModalDialog */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_mouseTimeDisplay(name: mouseTimeDisplay): /* import warning: ImportType.apply Failed type conversion: typeof MouseTimeDisplay */ js.Any = js.native
+  def getComponent_mouseTimeDisplay(name: mouseTimeDisplay_): /* import warning: importer.ImportType#apply Failed type conversion: typeof MouseTimeDisplay */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_player(name: player): /* import warning: ImportType.apply Failed type conversion: typeof Player */ js.Any = js.native
+  def getComponent_player(name: player_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Player */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_spacer(name: spacer): /* import warning: ImportType.apply Failed type conversion: typeof Spacer */ js.Any = js.native
+  def getComponent_spacer(name: spacer_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Spacer */ js.Any = js.native
   @JSName("getComponent")
-  def getComponent_timeTooltip(name: timeTooltip): /* import warning: ImportType.apply Failed type conversion: typeof TimeToolTip */ js.Any = js.native
+  def getComponent_timeTooltip(name: timeTooltip_): /* import warning: importer.ImportType#apply Failed type conversion: typeof TimeToolTip */ js.Any = js.native
   /**
     * Register a `Component` with `videojs` given the name and the component.
     *

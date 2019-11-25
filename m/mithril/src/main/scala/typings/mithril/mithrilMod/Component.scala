@@ -33,12 +33,12 @@ object Component {
     onupdate: js.ThisFunction1[State, /* vnode */ VnodeDOM[Attrs, State], _] = null
   ): Component[Attrs, State] = {
     val __obj = js.Dynamic.literal(view = js.Any.fromFunction2(view))
-    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove)
-    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate)
-    if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate)
-    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
-    if (onremove != null) __obj.updateDynamic("onremove")(onremove)
-    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
+    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove.asInstanceOf[js.Any])
+    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate.asInstanceOf[js.Any])
+    if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate.asInstanceOf[js.Any])
+    if (oninit != null) __obj.updateDynamic("oninit")(oninit.asInstanceOf[js.Any])
+    if (onremove != null) __obj.updateDynamic("onremove")(onremove.asInstanceOf[js.Any])
+    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Component[Attrs, State]]
   }
 }

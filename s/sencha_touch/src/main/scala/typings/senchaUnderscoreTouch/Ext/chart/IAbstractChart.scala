@@ -180,7 +180,6 @@ object IAbstractChart {
     colors: js.Any = null,
     flatten: (/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[java.lang.String]) => _ = null,
     getAxes: () => _ = null,
-    getBackground: () => _ = null,
     getColors: () => _ = null,
     getHighlightItem: () => _ = null,
     getInnerPadding: () => _ = null,
@@ -195,7 +194,6 @@ object IAbstractChart {
     getStore: () => IStore = null,
     getSurface: (/* name */ js.UndefOr[js.Any], /* type */ js.UndefOr[js.Any]) => ISurface = null,
     highlightItem: js.Any = null,
-    initialize: () => Unit = null,
     innerPadding: js.Any = null,
     insetPadding: js.Any = null,
     interactions: Array = null,
@@ -206,7 +204,6 @@ object IAbstractChart {
     series: js.Any = null,
     setAnimate: /* animate */ js.UndefOr[js.Any] => Unit = null,
     setAxes: /* axes */ js.UndefOr[js.Any] => Unit = null,
-    setBackground: /* background */ js.UndefOr[js.Any] => Unit = null,
     setColors: /* colors */ js.UndefOr[js.Any] => Unit = null,
     setHighlightItem: /* highlightItem */ js.UndefOr[js.Any] => Unit = null,
     setInnerPadding: /* innerPadding */ js.UndefOr[js.Any] => Unit = null,
@@ -222,16 +219,15 @@ object IAbstractChart {
     version: java.lang.String = null
   ): IAbstractChart = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (animate != null) __obj.updateDynamic("animate")(animate)
-    if (axes != null) __obj.updateDynamic("axes")(axes)
-    if (background != null) __obj.updateDynamic("background")(background)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction1(bindStore))
     if (cancelLayout != null) __obj.updateDynamic("cancelLayout")(js.Any.fromFunction0(cancelLayout))
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (flatten != null) __obj.updateDynamic("flatten")(js.Any.fromFunction2(flatten))
     if (getAxes != null) __obj.updateDynamic("getAxes")(js.Any.fromFunction0(getAxes))
-    if (getBackground != null) __obj.updateDynamic("getBackground")(js.Any.fromFunction0(getBackground))
     if (getColors != null) __obj.updateDynamic("getColors")(js.Any.fromFunction0(getColors))
     if (getHighlightItem != null) __obj.updateDynamic("getHighlightItem")(js.Any.fromFunction0(getHighlightItem))
     if (getInnerPadding != null) __obj.updateDynamic("getInnerPadding")(js.Any.fromFunction0(getInnerPadding))
@@ -245,19 +241,17 @@ object IAbstractChart {
     if (getShadow != null) __obj.updateDynamic("getShadow")(js.Any.fromFunction0(getShadow))
     if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
     if (getSurface != null) __obj.updateDynamic("getSurface")(js.Any.fromFunction2(getSurface))
-    if (highlightItem != null) __obj.updateDynamic("highlightItem")(highlightItem)
-    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
-    if (innerPadding != null) __obj.updateDynamic("innerPadding")(innerPadding)
-    if (insetPadding != null) __obj.updateDynamic("insetPadding")(insetPadding)
-    if (interactions != null) __obj.updateDynamic("interactions")(interactions)
-    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (highlightItem != null) __obj.updateDynamic("highlightItem")(highlightItem.asInstanceOf[js.Any])
+    if (innerPadding != null) __obj.updateDynamic("innerPadding")(innerPadding.asInstanceOf[js.Any])
+    if (insetPadding != null) __obj.updateDynamic("insetPadding")(insetPadding.asInstanceOf[js.Any])
+    if (interactions != null) __obj.updateDynamic("interactions")(interactions.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (redraw != null) __obj.updateDynamic("redraw")(js.Any.fromFunction0(redraw))
     if (resumeThicknessChanged != null) __obj.updateDynamic("resumeThicknessChanged")(js.Any.fromFunction0(resumeThicknessChanged))
     if (scheduleLayout != null) __obj.updateDynamic("scheduleLayout")(js.Any.fromFunction0(scheduleLayout))
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (setAnimate != null) __obj.updateDynamic("setAnimate")(js.Any.fromFunction1(setAnimate))
     if (setAxes != null) __obj.updateDynamic("setAxes")(js.Any.fromFunction1(setAxes))
-    if (setBackground != null) __obj.updateDynamic("setBackground")(js.Any.fromFunction1(setBackground))
     if (setColors != null) __obj.updateDynamic("setColors")(js.Any.fromFunction1(setColors))
     if (setHighlightItem != null) __obj.updateDynamic("setHighlightItem")(js.Any.fromFunction1(setHighlightItem))
     if (setInnerPadding != null) __obj.updateDynamic("setInnerPadding")(js.Any.fromFunction1(setInnerPadding))
@@ -267,10 +261,10 @@ object IAbstractChart {
     if (setSeries != null) __obj.updateDynamic("setSeries")(js.Any.fromFunction1(setSeries))
     if (setShadow != null) __obj.updateDynamic("setShadow")(js.Any.fromFunction1(setShadow))
     if (setStore != null) __obj.updateDynamic("setStore")(js.Any.fromFunction1(setStore))
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (suspendThicknessChanged != null) __obj.updateDynamic("suspendThicknessChanged")(js.Any.fromFunction0(suspendThicknessChanged))
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstractChart]
   }
 }

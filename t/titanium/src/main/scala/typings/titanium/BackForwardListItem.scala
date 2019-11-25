@@ -26,9 +26,9 @@ object BackForwardListItem {
   @scala.inline
   def apply(initialUrl: String = null, title: String = null, url: String = null): BackForwardListItem = {
     val __obj = js.Dynamic.literal()
-    if (initialUrl != null) __obj.updateDynamic("initialUrl")(initialUrl)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (initialUrl != null) __obj.updateDynamic("initialUrl")(initialUrl.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackForwardListItem]
   }
 }

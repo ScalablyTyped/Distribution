@@ -13,7 +13,7 @@ object Anon_Canonical {
   @scala.inline
   def apply(canonical: js.UndefOr[Boolean] = js.undefined, indent: Boolean | Double | String = null): Anon_Canonical = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canonical)) __obj.updateDynamic("canonical")(canonical)
+    if (!js.isUndefined(canonical)) __obj.updateDynamic("canonical")(canonical.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Canonical]
   }

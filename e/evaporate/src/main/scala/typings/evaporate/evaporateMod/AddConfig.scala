@@ -58,15 +58,15 @@ object AddConfig {
     xAmzHeadersAtUpload: StringDictionary[String] = null,
     xAmzHeadersCommon: StringDictionary[String] = null
   ): AddConfig = {
-    val __obj = js.Dynamic.literal(file = file, name = name)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (beforeSigner != null) __obj.updateDynamic("beforeSigner")(js.Any.fromFunction2(beforeSigner))
     if (cancelled != null) __obj.updateDynamic("cancelled")(js.Any.fromFunction0(cancelled))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction3(complete))
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (info != null) __obj.updateDynamic("info")(js.Any.fromFunction1(info))
     if (nameChanged != null) __obj.updateDynamic("nameChanged")(js.Any.fromFunction1(nameChanged))
-    if (notSignedHeadersAtInitiate != null) __obj.updateDynamic("notSignedHeadersAtInitiate")(notSignedHeadersAtInitiate)
+    if (notSignedHeadersAtInitiate != null) __obj.updateDynamic("notSignedHeadersAtInitiate")(notSignedHeadersAtInitiate.asInstanceOf[js.Any])
     if (paused != null) __obj.updateDynamic("paused")(js.Any.fromFunction1(paused))
     if (pausing != null) __obj.updateDynamic("pausing")(js.Any.fromFunction1(pausing))
     if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction2(progress))
@@ -74,10 +74,10 @@ object AddConfig {
     if (started != null) __obj.updateDynamic("started")(js.Any.fromFunction1(started))
     if (uploadInitiated != null) __obj.updateDynamic("uploadInitiated")(js.Any.fromFunction1(uploadInitiated))
     if (warn != null) __obj.updateDynamic("warn")(js.Any.fromFunction1(warn))
-    if (xAmzHeadersAtComplete != null) __obj.updateDynamic("xAmzHeadersAtComplete")(xAmzHeadersAtComplete)
-    if (xAmzHeadersAtInitiate != null) __obj.updateDynamic("xAmzHeadersAtInitiate")(xAmzHeadersAtInitiate)
-    if (xAmzHeadersAtUpload != null) __obj.updateDynamic("xAmzHeadersAtUpload")(xAmzHeadersAtUpload)
-    if (xAmzHeadersCommon != null) __obj.updateDynamic("xAmzHeadersCommon")(xAmzHeadersCommon)
+    if (xAmzHeadersAtComplete != null) __obj.updateDynamic("xAmzHeadersAtComplete")(xAmzHeadersAtComplete.asInstanceOf[js.Any])
+    if (xAmzHeadersAtInitiate != null) __obj.updateDynamic("xAmzHeadersAtInitiate")(xAmzHeadersAtInitiate.asInstanceOf[js.Any])
+    if (xAmzHeadersAtUpload != null) __obj.updateDynamic("xAmzHeadersAtUpload")(xAmzHeadersAtUpload.asInstanceOf[js.Any])
+    if (xAmzHeadersCommon != null) __obj.updateDynamic("xAmzHeadersCommon")(xAmzHeadersCommon.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddConfig]
   }
 }

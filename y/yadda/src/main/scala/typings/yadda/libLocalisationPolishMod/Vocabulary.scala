@@ -36,8 +36,8 @@ object Vocabulary {
     wtedy: String,
     zakladajac: String
   ): Vocabulary = {
-    val __obj = js.Dynamic.literal(_steps = _steps, background = background, examples = examples, feature = feature, gdy = gdy, given = given, jesli = jesli, jezeli = jezeli, kiedy = kiedy, majac = majac, only = only, pending = pending, scenario = scenario, when = when, wtedy = wtedy, zakladajac = zakladajac)
-    __obj.updateDynamic("then")(`then`)
+    val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], gdy = gdy.asInstanceOf[js.Any], given = given.asInstanceOf[js.Any], jesli = jesli.asInstanceOf[js.Any], jezeli = jezeli.asInstanceOf[js.Any], kiedy = kiedy.asInstanceOf[js.Any], majac = majac.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any], wtedy = wtedy.asInstanceOf[js.Any], zakladajac = zakladajac.asInstanceOf[js.Any])
+    __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vocabulary]
   }
 }

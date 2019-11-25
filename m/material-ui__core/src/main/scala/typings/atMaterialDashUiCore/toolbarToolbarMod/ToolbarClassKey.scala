@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ToolbarClassKey extends js.Object
 
+object ToolbarClassKey {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dense: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.dense = this.cast("dense")
+  @scala.inline
+  def gutters: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.gutters = this.cast("gutters")
+  @scala.inline
+  def regular: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.regular = this.cast("regular")
+  @scala.inline
+  def root: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.root = this.cast("root")
+}
+

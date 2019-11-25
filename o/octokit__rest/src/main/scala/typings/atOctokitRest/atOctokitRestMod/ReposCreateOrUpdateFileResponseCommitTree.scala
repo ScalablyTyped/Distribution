@@ -12,7 +12,7 @@ trait ReposCreateOrUpdateFileResponseCommitTree extends js.Object {
 object ReposCreateOrUpdateFileResponseCommitTree {
   @scala.inline
   def apply(sha: String, url: String): ReposCreateOrUpdateFileResponseCommitTree = {
-    val __obj = js.Dynamic.literal(sha = sha, url = url)
+    val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCreateOrUpdateFileResponseCommitTree]
   }

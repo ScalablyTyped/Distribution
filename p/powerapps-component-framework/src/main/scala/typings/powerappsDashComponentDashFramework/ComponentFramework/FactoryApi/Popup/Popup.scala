@@ -48,11 +48,11 @@ object Popup {
     id: String = null,
     popupToOpen: String = null
   ): Popup = {
-    val __obj = js.Dynamic.literal(content = content, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(closeOnOutsideClick)) __obj.updateDynamic("closeOnOutsideClick")(closeOnOutsideClick)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (popupToOpen != null) __obj.updateDynamic("popupToOpen")(popupToOpen)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnOutsideClick)) __obj.updateDynamic("closeOnOutsideClick")(closeOnOutsideClick.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (popupToOpen != null) __obj.updateDynamic("popupToOpen")(popupToOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[Popup]
   }
 }

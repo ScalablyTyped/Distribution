@@ -12,7 +12,7 @@ trait KMLLayerLayerviewCreateEvent extends js.Object {
 object KMLLayerLayerviewCreateEvent {
   @scala.inline
   def apply(layerView: LayerView, view: View): KMLLayerLayerviewCreateEvent = {
-    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+    val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KMLLayerLayerviewCreateEvent]
   }

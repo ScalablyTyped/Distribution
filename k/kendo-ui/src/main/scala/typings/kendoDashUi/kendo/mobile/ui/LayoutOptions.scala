@@ -25,10 +25,10 @@ object LayoutOptions {
   ): LayoutOptions = {
     val __obj = js.Dynamic.literal()
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
     __obj.asInstanceOf[LayoutOptions]
   }

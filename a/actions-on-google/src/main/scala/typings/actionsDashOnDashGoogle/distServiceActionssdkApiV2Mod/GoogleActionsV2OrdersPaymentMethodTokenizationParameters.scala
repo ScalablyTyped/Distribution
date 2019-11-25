@@ -55,8 +55,8 @@ object GoogleActionsV2OrdersPaymentMethodTokenizationParameters {
     tokenizationType: GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType = null
   ): GoogleActionsV2OrdersPaymentMethodTokenizationParameters = {
     val __obj = js.Dynamic.literal()
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (tokenizationType != null) __obj.updateDynamic("tokenizationType")(tokenizationType)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (tokenizationType != null) __obj.updateDynamic("tokenizationType")(tokenizationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersPaymentMethodTokenizationParameters]
   }
 }

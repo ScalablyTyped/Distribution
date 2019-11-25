@@ -13,8 +13,8 @@ trait ProjectDetailsResultBase extends js.Object {
 object ProjectDetailsResultBase {
   @scala.inline
   def apply(errors: js.Array[ProjectDetailsError], `type`: ProjectType = null): ProjectDetailsResultBase = {
-    val __obj = js.Dynamic.literal(errors = errors)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectDetailsResultBase]
   }
 }

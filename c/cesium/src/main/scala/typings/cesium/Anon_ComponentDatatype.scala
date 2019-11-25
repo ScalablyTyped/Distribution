@@ -21,10 +21,10 @@ object Anon_ComponentDatatype {
     values: js.Array[Double] = null
   ): Anon_ComponentDatatype = {
     val __obj = js.Dynamic.literal()
-    if (componentDatatype != null) __obj.updateDynamic("componentDatatype")(componentDatatype)
+    if (componentDatatype != null) __obj.updateDynamic("componentDatatype")(componentDatatype.asInstanceOf[js.Any])
     if (componentsPerAttribute != null) __obj.updateDynamic("componentsPerAttribute")(componentsPerAttribute.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ComponentDatatype]
   }
 }

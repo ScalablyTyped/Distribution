@@ -28,12 +28,12 @@ object Anon_Attributes {
     endOnNext: js.UndefOr[Boolean] = js.undefined,
     plannedDuration: Int | Double = null
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal(id = id, start = start)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (classId != null) __obj.updateDynamic("classId")(classId)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (classId != null) __obj.updateDynamic("classId")(classId.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (!js.isUndefined(endOnNext)) __obj.updateDynamic("endOnNext")(endOnNext)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(endOnNext)) __obj.updateDynamic("endOnNext")(endOnNext.asInstanceOf[js.Any])
     if (plannedDuration != null) __obj.updateDynamic("plannedDuration")(plannedDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attributes]
   }

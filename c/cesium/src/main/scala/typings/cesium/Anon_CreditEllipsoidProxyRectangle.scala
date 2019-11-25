@@ -24,11 +24,11 @@ object Anon_CreditEllipsoidProxyRectangle {
     proxy: js.Any = null,
     rectangle: Rectangle = null
   ): Anon_CreditEllipsoidProxyRectangle = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreditEllipsoidProxyRectangle]
   }
 }

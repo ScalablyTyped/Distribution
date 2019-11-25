@@ -16,7 +16,9 @@ import typings.semanticDashUiDashReact.srcGenericMod.SemanticICONS
 import typings.semanticDashUiDashReact.srcGenericMod.SemanticSIZES
 import typings.semanticDashUiDashReact.srcGenericMod.SemanticSTATICTRANSITIONS
 import typings.semanticDashUiDashReact.srcGenericMod.SemanticTEXTALIGNMENTS
+import typings.semanticDashUiDashReact.srcGenericMod.SemanticTRANSITIONS
 import typings.semanticDashUiDashReact.srcGenericMod.SemanticVERTICALALIGNMENTS
+import typings.semanticDashUiDashReact.srcGenericMod.SemanticWIDTHS
 import typings.semanticDashUiDashReact.srcGenericMod.SemanticWIDTHSSTRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,42 +27,58 @@ import scala.scalajs.js.annotation._
 object semanticDashUiDashReactStrings {
   @js.native
   sealed trait `1`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `10`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `11`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `12`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `13`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `14`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `15`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `16`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -68,7 +86,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait `2`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -76,12 +96,16 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait `3`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `4`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -89,7 +113,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait `5`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -99,22 +125,30 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait `6`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `7`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `8`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `9`
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -1088,6 +1122,8 @@ object semanticDashUiDashReactStrings {
   sealed trait bounce
     extends SemanticSTATICTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `bouvet island` extends FlagNameValues
@@ -1140,11 +1176,15 @@ object semanticDashUiDashReactStrings {
   sealed trait browse
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `browse right`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait browser
@@ -2343,6 +2383,8 @@ object semanticDashUiDashReactStrings {
   sealed trait drop
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait dropbox
@@ -2407,7 +2449,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait eight
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -2425,7 +2469,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait eleven
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -2683,26 +2729,36 @@ object semanticDashUiDashReactStrings {
   sealed trait fade
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fade down`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fade left`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fade right`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fade up`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `falkland islands` extends FlagNameValues
@@ -2750,7 +2806,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait fifteen
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -2934,7 +2992,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait five
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -2962,6 +3022,8 @@ object semanticDashUiDashReactStrings {
   sealed trait flash
     extends SemanticSTATICTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait flask
@@ -2987,21 +3049,29 @@ object semanticDashUiDashReactStrings {
   sealed trait `fly down`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fly left`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fly right`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fly up`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait fm extends FlagNameValues
@@ -3099,7 +3169,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait four
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -3109,7 +3181,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait fourteen
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -3335,6 +3409,8 @@ object semanticDashUiDashReactStrings {
   sealed trait glow
     extends SemanticSTATICTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait gm extends FlagNameValues
@@ -3799,6 +3875,8 @@ object semanticDashUiDashReactStrings {
   sealed trait `horizontal flip`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait horizontally extends js.Object
@@ -4135,6 +4213,8 @@ object semanticDashUiDashReactStrings {
   sealed trait jiggle
     extends SemanticSTATICTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait jm extends FlagNameValues
@@ -5210,7 +5290,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait nine
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -5329,7 +5411,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait one
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -5827,6 +5911,8 @@ object semanticDashUiDashReactStrings {
   sealed trait pulse
     extends SemanticSTATICTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait purple
@@ -6273,6 +6359,8 @@ object semanticDashUiDashReactStrings {
   sealed trait scale
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `scale down` extends js.Object
@@ -6364,7 +6452,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait seven
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -6380,6 +6470,8 @@ object semanticDashUiDashReactStrings {
   sealed trait shake
     extends SemanticSTATICTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait share
@@ -6580,12 +6672,16 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait six
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait sixteen
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -6627,11 +6723,15 @@ object semanticDashUiDashReactStrings {
   sealed trait `slide down`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `slide left`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `slide out` extends js.Object
@@ -6640,11 +6740,15 @@ object semanticDashUiDashReactStrings {
   sealed trait `slide right`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `slide up`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait sliders
@@ -7126,21 +7230,29 @@ object semanticDashUiDashReactStrings {
   sealed trait `swing down`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `swing left`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `swing right`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `swing up`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait switzerland extends FlagNameValues
@@ -7206,6 +7318,8 @@ object semanticDashUiDashReactStrings {
   sealed trait tada
     extends SemanticSTATICTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait tag
@@ -7279,7 +7393,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait ten
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -7382,12 +7498,16 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait thirteen
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait three
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -7696,7 +7816,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait twelve
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -7716,7 +7838,9 @@ object semanticDashUiDashReactStrings {
   
   @js.native
   sealed trait two
-    extends SemanticWIDTHSSTRING
+    extends SemanticWIDTHS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+       with SemanticWIDTHSSTRING
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
@@ -8025,6 +8149,8 @@ object semanticDashUiDashReactStrings {
   sealed trait `vertical flip`
     extends SemanticDIRECTIONALTRANSITIONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `vertical rectangle` extends js.Object
@@ -8503,6 +8629,8 @@ object semanticDashUiDashReactStrings {
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticICONS
        with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+       with SemanticTRANSITIONS
+       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `zoom in`

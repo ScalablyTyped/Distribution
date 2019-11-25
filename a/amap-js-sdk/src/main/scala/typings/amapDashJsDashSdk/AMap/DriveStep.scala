@@ -41,9 +41,9 @@ object DriveStep {
     cities: js.Array[ViaCity] = null,
     tmcs: js.Array[TMC] = null
   ): DriveStep = {
-    val __obj = js.Dynamic.literal(action = action, assist_action = assist_action, distance = distance, end_location = end_location, instruction = instruction, orientation = orientation, path = path, road = road, start_location = start_location, time = time, toll_road = toll_road, tolls = tolls, tolls_distance = tolls_distance)
-    if (cities != null) __obj.updateDynamic("cities")(cities)
-    if (tmcs != null) __obj.updateDynamic("tmcs")(tmcs)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], assist_action = assist_action.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], end_location = end_location.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], road = road.asInstanceOf[js.Any], start_location = start_location.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], toll_road = toll_road.asInstanceOf[js.Any], tolls = tolls.asInstanceOf[js.Any], tolls_distance = tolls_distance.asInstanceOf[js.Any])
+    if (cities != null) __obj.updateDynamic("cities")(cities.asInstanceOf[js.Any])
+    if (tmcs != null) __obj.updateDynamic("tmcs")(tmcs.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveStep]
   }
 }

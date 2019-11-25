@@ -40,7 +40,7 @@ object Remote {
     fillServerCapabilities: ServerCapabilities => Unit,
     initialize: ClientCapabilities => Unit
   ): Remote = {
-    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), connection = connection, fillServerCapabilities = js.Any.fromFunction1(fillServerCapabilities), initialize = js.Any.fromFunction1(initialize))
+    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), connection = connection.asInstanceOf[js.Any], fillServerCapabilities = js.Any.fromFunction1(fillServerCapabilities), initialize = js.Any.fromFunction1(initialize))
   
     __obj.asInstanceOf[Remote]
   }

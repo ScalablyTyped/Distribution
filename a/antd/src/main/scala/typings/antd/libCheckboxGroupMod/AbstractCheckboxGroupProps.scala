@@ -23,11 +23,11 @@ object AbstractCheckboxGroupProps {
     style: CSSProperties = null
   ): AbstractCheckboxGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractCheckboxGroupProps]
   }
 }

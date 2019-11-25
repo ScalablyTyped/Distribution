@@ -33,13 +33,13 @@ object Settings {
     layout: String | `false` = null,
     viewExt: String = null
   ): Settings = {
-    val __obj = js.Dynamic.literal(root = root)
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (viewExt != null) __obj.updateDynamic("viewExt")(viewExt)
+    if (viewExt != null) __obj.updateDynamic("viewExt")(viewExt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

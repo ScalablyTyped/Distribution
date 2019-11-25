@@ -20,10 +20,10 @@ object Form {
     title: String = null
   ): Form = {
     val __obj = js.Dynamic.literal()
-    if (formUrl != null) __obj.updateDynamic("formUrl")(formUrl)
-    if (responseUrl != null) __obj.updateDynamic("responseUrl")(responseUrl)
-    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (formUrl != null) __obj.updateDynamic("formUrl")(formUrl.asInstanceOf[js.Any])
+    if (responseUrl != null) __obj.updateDynamic("responseUrl")(responseUrl.asInstanceOf[js.Any])
+    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Form]
   }
 }

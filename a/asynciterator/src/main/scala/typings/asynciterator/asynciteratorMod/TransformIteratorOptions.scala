@@ -18,10 +18,10 @@ object TransformIteratorOptions {
     source: AsyncIterator[S] = null
   ): TransformIteratorOptions[S] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
     if (maxBufferSize != null) __obj.updateDynamic("maxBufferSize")(maxBufferSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformIteratorOptions[S]]
   }
 }

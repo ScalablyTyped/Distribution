@@ -52,10 +52,10 @@ object ZoomSettings {
     minValue: Int | Double = null
   ): ZoomSettings = {
     val __obj = js.Dynamic.literal()
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration)
-    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom)
-    if (!js.isUndefined(enableZoom)) __obj.updateDynamic("enableZoom")(enableZoom)
-    if (!js.isUndefined(enableZoomOnSelection)) __obj.updateDynamic("enableZoomOnSelection")(enableZoomOnSelection)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableZoom)) __obj.updateDynamic("enableZoom")(enableZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableZoomOnSelection)) __obj.updateDynamic("enableZoomOnSelection")(enableZoomOnSelection.asInstanceOf[js.Any])
     if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])

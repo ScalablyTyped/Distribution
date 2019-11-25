@@ -130,7 +130,7 @@ object ApplePay {
     performValidation: (Anon_DisplayName, callback) => Unit,
     tokenize: (Anon_Token, callback) => Unit
   ): ApplePay = {
-    val __obj = js.Dynamic.literal(VERSION = VERSION, create = js.Any.fromFunction2(create), createPaymentRequest = js.Any.fromFunction1(createPaymentRequest), performValidation = js.Any.fromFunction2(performValidation), tokenize = js.Any.fromFunction2(tokenize))
+    val __obj = js.Dynamic.literal(VERSION = VERSION.asInstanceOf[js.Any], create = js.Any.fromFunction2(create), createPaymentRequest = js.Any.fromFunction1(createPaymentRequest), performValidation = js.Any.fromFunction2(performValidation), tokenize = js.Any.fromFunction2(tokenize))
   
     __obj.asInstanceOf[ApplePay]
   }

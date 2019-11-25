@@ -23,8 +23,8 @@ object DebugNode__POST_R3__ {
     references: StringDictionary[js.Any],
     parent: DebugElement = null
   ): DebugNode__POST_R3__ = {
-    val __obj = js.Dynamic.literal(componentInstance = componentInstance, context = context, injector = injector, listeners = listeners, nativeNode = nativeNode, providerTokens = providerTokens, references = references)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(componentInstance = componentInstance.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], nativeNode = nativeNode.asInstanceOf[js.Any], providerTokens = providerTokens.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugNode__POST_R3__]
   }
 }

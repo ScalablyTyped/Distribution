@@ -14,9 +14,9 @@ object UpdateDimensionPropertiesRequest {
   @scala.inline
   def apply(fields: String = null, properties: DimensionProperties = null, range: DimensionRange = null): UpdateDimensionPropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDimensionPropertiesRequest]
   }
 }

@@ -46,9 +46,9 @@ object Transcript {
   @scala.inline
   def apply(codingSequence: CodingSequence = null, exons: js.Array[Exon] = null, geneId: String = null): Transcript = {
     val __obj = js.Dynamic.literal()
-    if (codingSequence != null) __obj.updateDynamic("codingSequence")(codingSequence)
-    if (exons != null) __obj.updateDynamic("exons")(exons)
-    if (geneId != null) __obj.updateDynamic("geneId")(geneId)
+    if (codingSequence != null) __obj.updateDynamic("codingSequence")(codingSequence.asInstanceOf[js.Any])
+    if (exons != null) __obj.updateDynamic("exons")(exons.asInstanceOf[js.Any])
+    if (geneId != null) __obj.updateDynamic("geneId")(geneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transcript]
   }
 }

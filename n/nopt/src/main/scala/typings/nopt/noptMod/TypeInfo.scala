@@ -13,7 +13,7 @@ object TypeInfo {
   @scala.inline
   def apply(`type`: js.Object, validate: (CommandData, String, String) => Boolean): TypeInfo = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeInfo]
   }
 }

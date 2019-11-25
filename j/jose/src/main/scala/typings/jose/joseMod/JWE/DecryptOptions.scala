@@ -14,9 +14,9 @@ object DecryptOptions {
   @scala.inline
   def apply[komplet](algorithms: js.Array[String] = null, complete: komplet = null, crit: js.Array[String] = null): DecryptOptions[komplet] = {
     val __obj = js.Dynamic.literal()
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
-    if (crit != null) __obj.updateDynamic("crit")(crit)
+    if (crit != null) __obj.updateDynamic("crit")(crit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptOptions[komplet]]
   }
 }

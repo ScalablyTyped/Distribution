@@ -26,8 +26,8 @@ object Props {
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     if (updateIntervalInSeconds != null) __obj.updateDynamic("updateIntervalInSeconds")(updateIntervalInSeconds.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

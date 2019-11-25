@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonCaseSensitive extends js.Object {
 object Anon_EnumValuesAnonCaseSensitive {
   @scala.inline
   def apply(enumValues: Anon_CaseSensitive): Anon_EnumValuesAnonCaseSensitive = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonCaseSensitive]
   }

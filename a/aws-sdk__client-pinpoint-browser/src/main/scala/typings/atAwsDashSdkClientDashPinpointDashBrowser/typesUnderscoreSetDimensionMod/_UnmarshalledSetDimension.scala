@@ -19,7 +19,7 @@ object _UnmarshalledSetDimension {
   def apply(DimensionType: INCLUSIVE | EXCLUSIVE | String = null, Values: js.Array[String] = null): _UnmarshalledSetDimension = {
     val __obj = js.Dynamic.literal()
     if (DimensionType != null) __obj.updateDynamic("DimensionType")(DimensionType.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values)
+    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSetDimension]
   }
 }

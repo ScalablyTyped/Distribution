@@ -13,7 +13,7 @@ package object typesSinonMod {
     *
     * @template TType Object type being stubbed.
     */
-  type SinonStubbedInstance[TType] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type SinonStubbedInstance[TType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TType ]: cypress.cypress/types/sinon.SinonStubbedMember<TType[P]>}
     */ typings.cypress.cypressStrings.SinonStubbedInstance with TType
   /**

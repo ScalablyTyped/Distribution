@@ -23,7 +23,7 @@ object LayoutAnimationTypes {
     linear: String,
     spring: String
   ): LayoutAnimationTypes = {
-    val __obj = js.Dynamic.literal(easeIn = easeIn, easeInEaseOut = easeInEaseOut, easeOut = easeOut, keyboard = keyboard, linear = linear, spring = spring)
+    val __obj = js.Dynamic.literal(easeIn = easeIn.asInstanceOf[js.Any], easeInEaseOut = easeInEaseOut.asInstanceOf[js.Any], easeOut = easeOut.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], linear = linear.asInstanceOf[js.Any], spring = spring.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LayoutAnimationTypes]
   }

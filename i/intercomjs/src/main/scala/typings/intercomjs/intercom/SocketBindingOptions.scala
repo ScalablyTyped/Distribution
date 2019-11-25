@@ -13,8 +13,8 @@ object SocketBindingOptions {
   @scala.inline
   def apply(receive: js.Any = null, send: js.Any = null): SocketBindingOptions = {
     val __obj = js.Dynamic.literal()
-    if (receive != null) __obj.updateDynamic("receive")(receive)
-    if (send != null) __obj.updateDynamic("send")(send)
+    if (receive != null) __obj.updateDynamic("receive")(receive.asInstanceOf[js.Any])
+    if (send != null) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketBindingOptions]
   }
 }

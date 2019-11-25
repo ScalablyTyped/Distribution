@@ -20,7 +20,7 @@ trait HistoryChangeEvent extends js.Object {
 object HistoryChangeEvent {
   @scala.inline
   def apply(location: UrlLocation, state: State = null): HistoryChangeEvent = {
-    val __obj = js.Dynamic.literal(location = location)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryChangeEvent]
   }

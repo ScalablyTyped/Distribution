@@ -51,9 +51,9 @@ object MotorHatOptions {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (busnum != null) __obj.updateDynamic("busnum")(busnum.asInstanceOf[js.Any])
-    if (dcs != null) __obj.updateDynamic("dcs")(dcs)
-    if (servos != null) __obj.updateDynamic("servos")(servos)
-    if (steppers != null) __obj.updateDynamic("steppers")(steppers)
+    if (dcs != null) __obj.updateDynamic("dcs")(dcs.asInstanceOf[js.Any])
+    if (servos != null) __obj.updateDynamic("servos")(servos.asInstanceOf[js.Any])
+    if (steppers != null) __obj.updateDynamic("steppers")(steppers.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotorHatOptions]
   }
 }

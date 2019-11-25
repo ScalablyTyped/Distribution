@@ -54,16 +54,16 @@ object CounterStructuredName {
     workerId: String = null
   ): CounterStructuredName = {
     val __obj = js.Dynamic.literal()
-    if (componentStepName != null) __obj.updateDynamic("componentStepName")(componentStepName)
-    if (executionStepName != null) __obj.updateDynamic("executionStepName")(executionStepName)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (originNamespace != null) __obj.updateDynamic("originNamespace")(originNamespace)
-    if (originalShuffleStepName != null) __obj.updateDynamic("originalShuffleStepName")(originalShuffleStepName)
-    if (originalStepName != null) __obj.updateDynamic("originalStepName")(originalStepName)
-    if (portion != null) __obj.updateDynamic("portion")(portion)
-    if (sideInput != null) __obj.updateDynamic("sideInput")(sideInput)
-    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    if (componentStepName != null) __obj.updateDynamic("componentStepName")(componentStepName.asInstanceOf[js.Any])
+    if (executionStepName != null) __obj.updateDynamic("executionStepName")(executionStepName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (originNamespace != null) __obj.updateDynamic("originNamespace")(originNamespace.asInstanceOf[js.Any])
+    if (originalShuffleStepName != null) __obj.updateDynamic("originalShuffleStepName")(originalShuffleStepName.asInstanceOf[js.Any])
+    if (originalStepName != null) __obj.updateDynamic("originalStepName")(originalStepName.asInstanceOf[js.Any])
+    if (portion != null) __obj.updateDynamic("portion")(portion.asInstanceOf[js.Any])
+    if (sideInput != null) __obj.updateDynamic("sideInput")(sideInput.asInstanceOf[js.Any])
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterStructuredName]
   }
 }

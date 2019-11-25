@@ -19,9 +19,9 @@ object WindowErrorEvent {
     status: String = null,
     xhr: JQueryXHR = null
   ): WindowErrorEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowErrorEvent]
   }
 }

@@ -44,7 +44,7 @@ object JobAttachment {
     propertyIsEnumerable: PropertyKey => Boolean,
     storageType: String
   ): JobAttachment = {
-    val __obj = js.Dynamic.literal(constructor = constructor, filename = filename, folder = folder, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), storageType = storageType)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), storageType = storageType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobAttachment]
   }

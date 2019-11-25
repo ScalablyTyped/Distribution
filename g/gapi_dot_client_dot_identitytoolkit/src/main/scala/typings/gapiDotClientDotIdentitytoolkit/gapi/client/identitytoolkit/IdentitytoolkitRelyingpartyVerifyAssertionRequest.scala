@@ -48,17 +48,17 @@ object IdentitytoolkitRelyingpartyVerifyAssertionRequest {
     sessionId: String = null
   ): IdentitytoolkitRelyingpartyVerifyAssertionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate)
-    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
-    if (pendingIdToken != null) __obj.updateDynamic("pendingIdToken")(pendingIdToken)
-    if (postBody != null) __obj.updateDynamic("postBody")(postBody)
-    if (requestUri != null) __obj.updateDynamic("requestUri")(requestUri)
-    if (!js.isUndefined(returnIdpCredential)) __obj.updateDynamic("returnIdpCredential")(returnIdpCredential)
-    if (!js.isUndefined(returnRefreshToken)) __obj.updateDynamic("returnRefreshToken")(returnRefreshToken)
-    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken)
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
+    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate.asInstanceOf[js.Any])
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (pendingIdToken != null) __obj.updateDynamic("pendingIdToken")(pendingIdToken.asInstanceOf[js.Any])
+    if (postBody != null) __obj.updateDynamic("postBody")(postBody.asInstanceOf[js.Any])
+    if (requestUri != null) __obj.updateDynamic("requestUri")(requestUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnIdpCredential)) __obj.updateDynamic("returnIdpCredential")(returnIdpCredential.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnRefreshToken)) __obj.updateDynamic("returnRefreshToken")(returnRefreshToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken.asInstanceOf[js.Any])
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyAssertionRequest]
   }
 }

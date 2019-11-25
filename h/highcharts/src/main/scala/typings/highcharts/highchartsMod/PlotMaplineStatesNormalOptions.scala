@@ -15,7 +15,7 @@ object PlotMaplineStatesNormalOptions {
   @scala.inline
   def apply(animation: js.UndefOr[Boolean] = js.undefined): PlotMaplineStatesNormalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMaplineStatesNormalOptions]
   }
 }

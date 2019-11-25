@@ -73,22 +73,16 @@ object IDate {
     IPicker: typings.extjs.Ext.form.field.IPicker = null,
     altFormats: java.lang.String = null,
     beforeBlur: () => Unit = null,
-    createPicker: () => Unit = null,
     disabledDates: Array = null,
     disabledDatesText: java.lang.String = null,
     disabledDays: Array = null,
     disabledDaysText: java.lang.String = null,
     format: java.lang.String = null,
-    getErrors: /* value */ js.UndefOr[js.Any] => Array = null,
-    initComponent: () => Unit = null,
     initValue: () => Unit = null,
-    invalidText: java.lang.String = null,
-    matchFieldWidth: js.UndefOr[Boolean] = js.undefined,
     maxText: java.lang.String = null,
     maxValue: js.Any = null,
     minText: java.lang.String = null,
     minValue: js.Any = null,
-    rawToValue: /* rawValue */ js.UndefOr[js.Any] => _ = null,
     safeParse: js.Any = null,
     setDisabledDates: /* disabledDates */ js.UndefOr[Array] => Unit = null,
     setDisabledDays: /* disabledDays */ js.UndefOr[Array] => Unit = null,
@@ -98,42 +92,32 @@ object IDate {
     showToday: js.UndefOr[Boolean] = js.undefined,
     startDay: Int | Double = null,
     submitFormat: java.lang.String = null,
-    triggerCls: java.lang.String = null,
-    useStrict: js.UndefOr[Boolean] = js.undefined,
-    valueToRaw: /* value */ js.UndefOr[js.Any] => _ = null
+    useStrict: js.UndefOr[Boolean] = js.undefined
   ): IDate = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IPicker)
-    if (altFormats != null) __obj.updateDynamic("altFormats")(altFormats)
+    if (IPicker != null) js.Dynamic.global.Object.assign(__obj, IPicker)
+    if (altFormats != null) __obj.updateDynamic("altFormats")(altFormats.asInstanceOf[js.Any])
     if (beforeBlur != null) __obj.updateDynamic("beforeBlur")(js.Any.fromFunction0(beforeBlur))
-    if (createPicker != null) __obj.updateDynamic("createPicker")(js.Any.fromFunction0(createPicker))
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates)
-    if (disabledDatesText != null) __obj.updateDynamic("disabledDatesText")(disabledDatesText)
-    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays)
-    if (disabledDaysText != null) __obj.updateDynamic("disabledDaysText")(disabledDaysText)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (getErrors != null) __obj.updateDynamic("getErrors")(js.Any.fromFunction1(getErrors))
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
+    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
+    if (disabledDatesText != null) __obj.updateDynamic("disabledDatesText")(disabledDatesText.asInstanceOf[js.Any])
+    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays.asInstanceOf[js.Any])
+    if (disabledDaysText != null) __obj.updateDynamic("disabledDaysText")(disabledDaysText.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (initValue != null) __obj.updateDynamic("initValue")(js.Any.fromFunction0(initValue))
-    if (invalidText != null) __obj.updateDynamic("invalidText")(invalidText)
-    if (!js.isUndefined(matchFieldWidth)) __obj.updateDynamic("matchFieldWidth")(matchFieldWidth)
-    if (maxText != null) __obj.updateDynamic("maxText")(maxText)
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
-    if (minText != null) __obj.updateDynamic("minText")(minText)
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue)
-    if (rawToValue != null) __obj.updateDynamic("rawToValue")(js.Any.fromFunction1(rawToValue))
-    if (safeParse != null) __obj.updateDynamic("safeParse")(safeParse)
+    if (maxText != null) __obj.updateDynamic("maxText")(maxText.asInstanceOf[js.Any])
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minText != null) __obj.updateDynamic("minText")(minText.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (safeParse != null) __obj.updateDynamic("safeParse")(safeParse.asInstanceOf[js.Any])
     if (setDisabledDates != null) __obj.updateDynamic("setDisabledDates")(js.Any.fromFunction1(setDisabledDates))
     if (setDisabledDays != null) __obj.updateDynamic("setDisabledDays")(js.Any.fromFunction1(setDisabledDays))
     if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
     if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday)
+    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.asInstanceOf[js.Any])
     if (startDay != null) __obj.updateDynamic("startDay")(startDay.asInstanceOf[js.Any])
-    if (submitFormat != null) __obj.updateDynamic("submitFormat")(submitFormat)
-    if (triggerCls != null) __obj.updateDynamic("triggerCls")(triggerCls)
-    if (!js.isUndefined(useStrict)) __obj.updateDynamic("useStrict")(useStrict)
-    if (valueToRaw != null) __obj.updateDynamic("valueToRaw")(js.Any.fromFunction1(valueToRaw))
+    if (submitFormat != null) __obj.updateDynamic("submitFormat")(submitFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStrict)) __obj.updateDynamic("useStrict")(useStrict.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDate]
   }
 }

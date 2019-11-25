@@ -25,7 +25,7 @@ object DuckDuckGoImage {
     url: String,
     width: Double
   ): DuckDuckGoImage = {
-    val __obj = js.Dynamic.literal(height = height, image = image, source = source, thumbnail = thumbnail, title = title, url = url, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DuckDuckGoImage]
   }

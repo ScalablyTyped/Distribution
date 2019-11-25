@@ -19,9 +19,9 @@ object PermissionRedirectConfigation {
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ js.Any = null,
     params: js.Object = null
   ): PermissionRedirectConfigation = {
-    val __obj = js.Dynamic.literal(state = state)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionRedirectConfigation]
   }
 }

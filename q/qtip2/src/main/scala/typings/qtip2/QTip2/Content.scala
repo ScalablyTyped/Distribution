@@ -22,7 +22,7 @@ object Content {
     title: Title | Anon_Text = null
   ): Content = {
     val __obj = js.Dynamic.literal()
-    if (attr != null) __obj.updateDynamic("attr")(attr)
+    if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

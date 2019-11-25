@@ -12,7 +12,7 @@ trait MaxZoomResult extends js.Object {
 object MaxZoomResult {
   @scala.inline
   def apply(status: MaxZoomStatus, zoom: Double): MaxZoomResult = {
-    val __obj = js.Dynamic.literal(status = status, zoom = zoom)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MaxZoomResult]
   }

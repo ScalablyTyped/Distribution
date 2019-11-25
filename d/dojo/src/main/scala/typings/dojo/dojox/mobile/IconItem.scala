@@ -1,8 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.`lazy`
 import typings.dojo.dojoStrings.badge
 import typings.dojo.dojoStrings.badgeClass
@@ -189,22 +187,94 @@ class IconItem () extends _ItemBase {
     */
   def unhighlight(): Unit = js.native
   @JSName("watch")
-  def watch_badge(property: badge, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_badge(
+    property: badge,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_badgeClass(property: badgeClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_badgeClass(
+    property: badgeClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_content(property: content, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_content(
+    property: content,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_deletable(property: deletable, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_deletable(
+    property: deletable,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_deleteIcon(property: deleteIcon, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_deleteIcon(
+    property: deleteIcon,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_lazy(property: `lazy`, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_lazy(
+    property: `lazy`,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_requires(property: requires, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_requires(
+    property: requires,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_tag(property: tag, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_tag(
+    property: tag,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_timeout(property: timeout, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_timeout(
+    property: timeout,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

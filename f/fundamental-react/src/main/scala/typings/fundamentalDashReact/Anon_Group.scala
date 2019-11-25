@@ -21,7 +21,7 @@ object Anon_Group {
     Item: FunctionComponent[MenuItemProps],
     List: FunctionComponent[MenuListProps]
   ): Anon_Group = {
-    val __obj = js.Dynamic.literal(Group = Group, Item = Item, List = List)
+    val __obj = js.Dynamic.literal(Group = Group.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], List = List.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Group]
   }

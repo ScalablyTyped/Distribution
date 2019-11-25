@@ -15,8 +15,8 @@ object Errors {
   def apply(code: Int | Double = null, errors: js.Array[Error] = null, message: String = null): Errors = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Errors]
   }
 }

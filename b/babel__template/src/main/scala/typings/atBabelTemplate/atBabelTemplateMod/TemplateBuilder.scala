@@ -1,6 +1,5 @@
 package typings.atBabelTemplate.atBabelTemplateMod
 
-import typings.atBabelTemplate.Fn_Args
 import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TemplateBuilder[T] extends js.Object {
-  // Allow users to explicitly create templates that produce ASTs, skipping the need for an intermediate function.
-  @JSName("ast")
-  var ast_Original: Fn_Args[T] = js.native
   /**
     * Building from a string produces an AST builder function by default.
     */

@@ -11,7 +11,7 @@ trait Anon_Latitude extends js.Object {
 object Anon_Latitude {
   @scala.inline
   def apply(latitude: Double): Anon_Latitude = {
-    val __obj = js.Dynamic.literal(latitude = latitude)
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Latitude]
   }

@@ -13,7 +13,7 @@ trait Anon_ColorFontSizePaddingLeft extends js.Object {
 object Anon_ColorFontSizePaddingLeft {
   @scala.inline
   def apply(color: String, fontSize: Double, paddingLeft: Double): Anon_ColorFontSizePaddingLeft = {
-    val __obj = js.Dynamic.literal(color = color, fontSize = fontSize, paddingLeft = paddingLeft)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorFontSizePaddingLeft]
   }

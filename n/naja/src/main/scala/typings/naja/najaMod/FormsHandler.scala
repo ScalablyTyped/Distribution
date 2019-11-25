@@ -15,7 +15,7 @@ trait FormsHandler extends js.Object {
 object FormsHandler {
   @scala.inline
   def apply(initForms: Element => Unit, netteForms: js.Object, processForm: Event => Unit): FormsHandler = {
-    val __obj = js.Dynamic.literal(initForms = js.Any.fromFunction1(initForms), netteForms = netteForms, processForm = js.Any.fromFunction1(processForm))
+    val __obj = js.Dynamic.literal(initForms = js.Any.fromFunction1(initForms), netteForms = netteForms.asInstanceOf[js.Any], processForm = js.Any.fromFunction1(processForm))
   
     __obj.asInstanceOf[FormsHandler]
   }

@@ -24,8 +24,8 @@ object WFSOptions {
     val __obj = js.Dynamic.literal()
     if (featureNS != null) __obj.updateDynamic("featureNS")(featureNS.asInstanceOf[js.Any])
     if (featureType != null) __obj.updateDynamic("featureType")(featureType.asInstanceOf[js.Any])
-    if (gmlFormat != null) __obj.updateDynamic("gmlFormat")(gmlFormat)
-    if (schemaLocation != null) __obj.updateDynamic("schemaLocation")(schemaLocation)
+    if (gmlFormat != null) __obj.updateDynamic("gmlFormat")(gmlFormat.asInstanceOf[js.Any])
+    if (schemaLocation != null) __obj.updateDynamic("schemaLocation")(schemaLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[WFSOptions]
   }
 }

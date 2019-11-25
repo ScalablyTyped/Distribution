@@ -11,7 +11,7 @@ trait IWaitForReturn extends js.Object {
 object IWaitForReturn {
   @scala.inline
   def apply(force: js.Function): IWaitForReturn = {
-    val __obj = js.Dynamic.literal(force = force)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWaitForReturn]
   }

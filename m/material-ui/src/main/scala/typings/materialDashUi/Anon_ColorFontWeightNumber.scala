@@ -13,7 +13,7 @@ object Anon_ColorFontWeightNumber {
   @scala.inline
   def apply(color: String = null, fontWeight: Int | Double = null): Anon_ColorFontWeightNumber = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorFontWeightNumber]
   }

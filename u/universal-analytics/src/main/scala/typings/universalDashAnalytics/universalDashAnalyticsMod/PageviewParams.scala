@@ -23,11 +23,11 @@ object PageviewParams {
     dt: String = null
   ): PageviewParams = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dh != null) __obj.updateDynamic("dh")(dh)
-    if (dl != null) __obj.updateDynamic("dl")(dl)
-    if (dp != null) __obj.updateDynamic("dp")(dp)
-    if (dt != null) __obj.updateDynamic("dt")(dt)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dh != null) __obj.updateDynamic("dh")(dh.asInstanceOf[js.Any])
+    if (dl != null) __obj.updateDynamic("dl")(dl.asInstanceOf[js.Any])
+    if (dp != null) __obj.updateDynamic("dp")(dp.asInstanceOf[js.Any])
+    if (dt != null) __obj.updateDynamic("dt")(dt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageviewParams]
   }
 }

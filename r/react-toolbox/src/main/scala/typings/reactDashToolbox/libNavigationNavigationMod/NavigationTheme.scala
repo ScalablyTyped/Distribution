@@ -27,10 +27,10 @@ object NavigationTheme {
   @scala.inline
   def apply(button: String = null, horizontal: String = null, link: String = null, vertical: String = null): NavigationTheme = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationTheme]
   }
 }

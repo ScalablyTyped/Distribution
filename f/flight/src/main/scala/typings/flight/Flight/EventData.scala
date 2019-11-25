@@ -12,7 +12,7 @@ trait EventData extends js.Object {
 object EventData {
   @scala.inline
   def apply(el: HTMLElement): EventData = {
-    val __obj = js.Dynamic.literal(el = el)
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventData]
   }

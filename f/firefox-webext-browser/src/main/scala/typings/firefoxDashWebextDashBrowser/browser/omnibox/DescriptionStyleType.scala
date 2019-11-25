@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait DescriptionStyleType extends js.Object
 
+object DescriptionStyleType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dim: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.dim = this.cast("dim")
+  @scala.inline
+  def `match`: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.`match` = this.cast("match")
+  @scala.inline
+  def url: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.url = this.cast("url")
+}
+

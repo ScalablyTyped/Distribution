@@ -13,9 +13,9 @@ trait SendAuthenticatedRequestParams extends js.Object {
 object SendAuthenticatedRequestParams {
   @scala.inline
   def apply(url: String, data: js.Any = null, headers: js.Any = null): SendAuthenticatedRequestParams = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAuthenticatedRequestParams]
   }
 }

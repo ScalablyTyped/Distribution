@@ -13,7 +13,7 @@ object Anon_Port {
   @scala.inline
   def apply(port: PortModel = null): Anon_Port = {
     val __obj = js.Dynamic.literal()
-    if (port != null) __obj.updateDynamic("port")(port)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Port]
   }
 }

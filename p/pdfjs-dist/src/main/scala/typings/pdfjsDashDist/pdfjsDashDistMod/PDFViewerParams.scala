@@ -13,8 +13,8 @@ trait PDFViewerParams extends js.Object {
 object PDFViewerParams {
   @scala.inline
   def apply(container: HTMLElement, viewer: HTMLElement = null): PDFViewerParams = {
-    val __obj = js.Dynamic.literal(container = container)
-    if (viewer != null) __obj.updateDynamic("viewer")(viewer)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
+    if (viewer != null) __obj.updateDynamic("viewer")(viewer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerParams]
   }
 }

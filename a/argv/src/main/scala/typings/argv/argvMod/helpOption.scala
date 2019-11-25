@@ -21,11 +21,11 @@ object helpOption {
     example: String = null,
     short: String = null
   ): helpOption = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (example != null) __obj.updateDynamic("example")(example)
-    if (short != null) __obj.updateDynamic("short")(short)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
+    if (short != null) __obj.updateDynamic("short")(short.asInstanceOf[js.Any])
     __obj.asInstanceOf[helpOption]
   }
 }

@@ -30,7 +30,7 @@ object SpeechModel {
     supported_features: SupportedFeatures,
     url: String
   ): SpeechModel = {
-    val __obj = js.Dynamic.literal(description = description, language = language, name = name, rate = rate, supported_features = supported_features, url = url)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rate = rate.asInstanceOf[js.Any], supported_features = supported_features.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SpeechModel]
   }

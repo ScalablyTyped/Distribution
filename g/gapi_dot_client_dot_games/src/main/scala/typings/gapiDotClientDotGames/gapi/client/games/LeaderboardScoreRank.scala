@@ -27,11 +27,11 @@ object LeaderboardScoreRank {
     rank: String = null
   ): LeaderboardScoreRank = {
     val __obj = js.Dynamic.literal()
-    if (formattedNumScores != null) __obj.updateDynamic("formattedNumScores")(formattedNumScores)
-    if (formattedRank != null) __obj.updateDynamic("formattedRank")(formattedRank)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (numScores != null) __obj.updateDynamic("numScores")(numScores)
-    if (rank != null) __obj.updateDynamic("rank")(rank)
+    if (formattedNumScores != null) __obj.updateDynamic("formattedNumScores")(formattedNumScores.asInstanceOf[js.Any])
+    if (formattedRank != null) __obj.updateDynamic("formattedRank")(formattedRank.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (numScores != null) __obj.updateDynamic("numScores")(numScores.asInstanceOf[js.Any])
+    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaderboardScoreRank]
   }
 }

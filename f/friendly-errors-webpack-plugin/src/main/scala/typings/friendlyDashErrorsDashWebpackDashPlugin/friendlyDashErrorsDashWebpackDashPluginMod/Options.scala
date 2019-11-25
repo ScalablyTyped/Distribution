@@ -29,10 +29,10 @@ object Options {
     onErrors: (/* severity */ Severity, /* errors */ String) => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (additionalFormatters != null) __obj.updateDynamic("additionalFormatters")(additionalFormatters)
-    if (additionalTransformers != null) __obj.updateDynamic("additionalTransformers")(additionalTransformers)
-    if (!js.isUndefined(clearConsole)) __obj.updateDynamic("clearConsole")(clearConsole)
-    if (compilationSuccessInfo != null) __obj.updateDynamic("compilationSuccessInfo")(compilationSuccessInfo)
+    if (additionalFormatters != null) __obj.updateDynamic("additionalFormatters")(additionalFormatters.asInstanceOf[js.Any])
+    if (additionalTransformers != null) __obj.updateDynamic("additionalTransformers")(additionalTransformers.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearConsole)) __obj.updateDynamic("clearConsole")(clearConsole.asInstanceOf[js.Any])
+    if (compilationSuccessInfo != null) __obj.updateDynamic("compilationSuccessInfo")(compilationSuccessInfo.asInstanceOf[js.Any])
     if (onErrors != null) __obj.updateDynamic("onErrors")(js.Any.fromFunction2(onErrors))
     __obj.asInstanceOf[Options]
   }

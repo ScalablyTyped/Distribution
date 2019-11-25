@@ -13,8 +13,8 @@ trait ITheme extends /* key */ StringDictionary[String | Boolean | Double] {
 object ITheme {
   @scala.inline
   def apply(last: `0`, StringDictionary: /* key */ StringDictionary[String | Boolean | Double] = null): ITheme = {
-    val __obj = js.Dynamic.literal(last = last)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(last = last.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ITheme]
   }
 }

@@ -13,7 +13,7 @@ object SitesListResponse {
   @scala.inline
   def apply(siteEntry: js.Array[WmxSite] = null): SitesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (siteEntry != null) __obj.updateDynamic("siteEntry")(siteEntry)
+    if (siteEntry != null) __obj.updateDynamic("siteEntry")(siteEntry.asInstanceOf[js.Any])
     __obj.asInstanceOf[SitesListResponse]
   }
 }

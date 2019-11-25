@@ -4,7 +4,7 @@ import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDas
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings.activity
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings.authorization
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings.background
-import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings.error
+import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings.error_
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings.foreground
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings.http_authorization
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings.location
@@ -278,7 +278,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     * @param callback
     */
   @JSName("on")
-  def on_error(eventName: error, callback: js.Function1[/* error */ BackgroundGeolocationError, Unit]): Unit = js.native
+  def on_error(eventName: error_, callback: js.Function1[/* error */ BackgroundGeolocationError, Unit]): Unit = js.native
   /**
     * Register foreground event listener.
     *

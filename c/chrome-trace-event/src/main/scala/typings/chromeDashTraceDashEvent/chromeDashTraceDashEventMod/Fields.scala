@@ -19,9 +19,9 @@ object Fields {
     cat: js.Any = null
   ): Fields = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (cat != null) __obj.updateDynamic("cat")(cat)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (cat != null) __obj.updateDynamic("cat")(cat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
 }

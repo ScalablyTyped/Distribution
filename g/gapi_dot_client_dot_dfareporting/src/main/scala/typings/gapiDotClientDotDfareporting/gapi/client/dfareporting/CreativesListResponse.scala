@@ -17,9 +17,9 @@ object CreativesListResponse {
   @scala.inline
   def apply(creatives: js.Array[Creative] = null, kind: String = null, nextPageToken: String = null): CreativesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (creatives != null) __obj.updateDynamic("creatives")(creatives)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (creatives != null) __obj.updateDynamic("creatives")(creatives.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativesListResponse]
   }
 }

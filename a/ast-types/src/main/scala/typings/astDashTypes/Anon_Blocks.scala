@@ -25,10 +25,10 @@ object Anon_Blocks {
     filter: ExpressionKind = null,
     loc: SourceLocationKind = null
   ): Anon_Blocks = {
-    val __obj = js.Dynamic.literal(blocks = blocks, body = body)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Blocks]
   }
 }

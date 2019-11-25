@@ -18,8 +18,8 @@ object Result {
   @scala.inline
   def apply(undefined: js.Any = null, value: js.Any = null): Result = {
     val __obj = js.Dynamic.literal()
-    if (undefined != null) __obj.updateDynamic("undefined")(undefined)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (undefined != null) __obj.updateDynamic("undefined")(undefined.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

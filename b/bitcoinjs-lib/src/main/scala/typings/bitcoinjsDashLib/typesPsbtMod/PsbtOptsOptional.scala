@@ -15,7 +15,7 @@ object PsbtOptsOptional {
   def apply(maximumFeeRate: Int | Double = null, network: Network = null): PsbtOptsOptional = {
     val __obj = js.Dynamic.literal()
     if (maximumFeeRate != null) __obj.updateDynamic("maximumFeeRate")(maximumFeeRate.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network)
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     __obj.asInstanceOf[PsbtOptsOptional]
   }
 }

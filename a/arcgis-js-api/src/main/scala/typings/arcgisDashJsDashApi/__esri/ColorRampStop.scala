@@ -44,7 +44,7 @@ object ColorRampStop {
     propertyIsEnumerable: PropertyKey => Boolean,
     value: Double
   ): ColorRampStop = {
-    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label, offset = offset, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColorRampStop]
   }

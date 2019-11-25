@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(allowUnassigned: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnassigned)) __obj.updateDynamic("allowUnassigned")(allowUnassigned)
+    if (!js.isUndefined(allowUnassigned)) __obj.updateDynamic("allowUnassigned")(allowUnassigned.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -150,13 +150,13 @@ object Anon_ColorConstantSpeed {
     trailLength: Int | Double = null
   ): Anon_ColorConstantSpeed = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (constantSpeed != null) __obj.updateDynamic("constantSpeed")(constantSpeed.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     if (trailLength != null) __obj.updateDynamic("trailLength")(trailLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorConstantSpeed]

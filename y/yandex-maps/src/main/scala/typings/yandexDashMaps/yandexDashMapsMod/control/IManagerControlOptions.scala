@@ -20,7 +20,7 @@ object IManagerControlOptions {
     val __obj = js.Dynamic.literal()
     if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
     if (floatIndex != null) __obj.updateDynamic("floatIndex")(floatIndex.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IManagerControlOptions]
   }
 }

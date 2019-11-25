@@ -51,7 +51,7 @@ object PivotingProps {
     pivotValKey: String,
     subRowsKey: String
   ): PivotingProps = {
-    val __obj = js.Dynamic.literal(aggregatedKey = aggregatedKey, expandedRows = expandedRows, groupedByPivotKey = groupedByPivotKey, indexKey = indexKey, nestingLevelKey = nestingLevelKey, onExpandRow = js.Any.fromFunction1(onExpandRow), originalKey = originalKey, pivotBy = pivotBy, pivotColumnWidth = pivotColumnWidth, pivotIDKey = pivotIDKey, pivotValKey = pivotValKey, subRowsKey = subRowsKey)
+    val __obj = js.Dynamic.literal(aggregatedKey = aggregatedKey.asInstanceOf[js.Any], expandedRows = expandedRows.asInstanceOf[js.Any], groupedByPivotKey = groupedByPivotKey.asInstanceOf[js.Any], indexKey = indexKey.asInstanceOf[js.Any], nestingLevelKey = nestingLevelKey.asInstanceOf[js.Any], onExpandRow = js.Any.fromFunction1(onExpandRow), originalKey = originalKey.asInstanceOf[js.Any], pivotBy = pivotBy.asInstanceOf[js.Any], pivotColumnWidth = pivotColumnWidth.asInstanceOf[js.Any], pivotIDKey = pivotIDKey.asInstanceOf[js.Any], pivotValKey = pivotValKey.asInstanceOf[js.Any], subRowsKey = subRowsKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PivotingProps]
   }

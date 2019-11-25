@@ -26,7 +26,7 @@ object WifiAccessPoint {
     signalStrength: Int | Double = null,
     signalToNoiseRatio: Int | Double = null
   ): WifiAccessPoint = {
-    val __obj = js.Dynamic.literal(macAddress = macAddress)
+    val __obj = js.Dynamic.literal(macAddress = macAddress.asInstanceOf[js.Any])
     if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
     if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (signalStrength != null) __obj.updateDynamic("signalStrength")(signalStrength.asInstanceOf[js.Any])

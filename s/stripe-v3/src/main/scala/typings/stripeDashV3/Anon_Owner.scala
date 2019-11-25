@@ -13,7 +13,7 @@ object Anon_Owner {
   @scala.inline
   def apply(owner: OwnerInfo = null): Anon_Owner = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Owner]
   }
 }

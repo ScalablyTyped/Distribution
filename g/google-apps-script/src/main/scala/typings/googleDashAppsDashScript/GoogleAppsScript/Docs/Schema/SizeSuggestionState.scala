@@ -16,8 +16,8 @@ object SizeSuggestionState {
     widthSuggested: js.UndefOr[Boolean] = js.undefined
   ): SizeSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(heightSuggested)) __obj.updateDynamic("heightSuggested")(heightSuggested)
-    if (!js.isUndefined(widthSuggested)) __obj.updateDynamic("widthSuggested")(widthSuggested)
+    if (!js.isUndefined(heightSuggested)) __obj.updateDynamic("heightSuggested")(heightSuggested.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthSuggested)) __obj.updateDynamic("widthSuggested")(widthSuggested.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeSuggestionState]
   }
 }

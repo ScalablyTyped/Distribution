@@ -11,7 +11,7 @@ trait IPackageStatics extends js.Object {
 object IPackageStatics {
   @scala.inline
   def apply(current: Package): IPackageStatics = {
-    val __obj = js.Dynamic.literal(current = current)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPackageStatics]
   }

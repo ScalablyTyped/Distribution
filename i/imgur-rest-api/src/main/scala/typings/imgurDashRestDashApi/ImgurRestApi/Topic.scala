@@ -13,7 +13,7 @@ trait Topic extends js.Object {
 object Topic {
   @scala.inline
   def apply(description: String, id: Double, name: String): Topic = {
-    val __obj = js.Dynamic.literal(description = description, id = id, name = name)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Topic]
   }

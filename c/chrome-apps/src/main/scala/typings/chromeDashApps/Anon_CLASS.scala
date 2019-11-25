@@ -18,7 +18,7 @@ trait Anon_CLASS extends js.Object {
 object Anon_CLASS {
   @scala.inline
   def apply(CLASS: `class`, RESERVED: reserved, STANDARD: standard, VENDOR: vendor): Anon_CLASS = {
-    val __obj = js.Dynamic.literal(CLASS = CLASS, RESERVED = RESERVED, STANDARD = STANDARD, VENDOR = VENDOR)
+    val __obj = js.Dynamic.literal(CLASS = CLASS.asInstanceOf[js.Any], RESERVED = RESERVED.asInstanceOf[js.Any], STANDARD = STANDARD.asInstanceOf[js.Any], VENDOR = VENDOR.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CLASS]
   }

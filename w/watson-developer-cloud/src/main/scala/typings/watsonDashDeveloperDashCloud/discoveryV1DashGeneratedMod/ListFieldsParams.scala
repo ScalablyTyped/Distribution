@@ -22,9 +22,9 @@ object ListFieldsParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): ListFieldsParams = {
-    val __obj = js.Dynamic.literal(collection_ids = collection_ids, environment_id = environment_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(collection_ids = collection_ids.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFieldsParams]
   }
 }

@@ -25,7 +25,7 @@ object Anon_Approvals {
     tags: Double,
     variables: Double
   ): Anon_Approvals = {
-    val __obj = js.Dynamic.literal(approvals = approvals, artifacts = artifacts, environments = environments, manualInterventions = manualInterventions, none = none, tags = tags, variables = variables)
+    val __obj = js.Dynamic.literal(approvals = approvals.asInstanceOf[js.Any], artifacts = artifacts.asInstanceOf[js.Any], environments = environments.asInstanceOf[js.Any], manualInterventions = manualInterventions.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Approvals]
   }

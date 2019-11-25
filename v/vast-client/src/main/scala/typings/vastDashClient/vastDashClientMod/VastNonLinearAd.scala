@@ -43,14 +43,14 @@ object VastNonLinearAd {
     staticResource: String = null,
     `type`: String = null
   ): VastNonLinearAd = {
-    val __obj = js.Dynamic.literal(apiFramework = apiFramework, expandedHeight = expandedHeight, expandedWidth = expandedWidth, height = height, maintainAspectRatio = maintainAspectRatio, minSuggestedDuration = minSuggestedDuration, nonLinearClickTrackingURLTemplates = nonLinearClickTrackingURLTemplates, scalable = scalable, width = width)
-    if (adParameters != null) __obj.updateDynamic("adParameters")(adParameters)
-    if (htmlResource != null) __obj.updateDynamic("htmlResource")(htmlResource)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (iframeResource != null) __obj.updateDynamic("iframeResource")(iframeResource)
-    if (nonLinearClickThroughURLTemplate != null) __obj.updateDynamic("nonLinearClickThroughURLTemplate")(nonLinearClickThroughURLTemplate)
-    if (staticResource != null) __obj.updateDynamic("staticResource")(staticResource)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(apiFramework = apiFramework.asInstanceOf[js.Any], expandedHeight = expandedHeight.asInstanceOf[js.Any], expandedWidth = expandedWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maintainAspectRatio = maintainAspectRatio.asInstanceOf[js.Any], minSuggestedDuration = minSuggestedDuration.asInstanceOf[js.Any], nonLinearClickTrackingURLTemplates = nonLinearClickTrackingURLTemplates.asInstanceOf[js.Any], scalable = scalable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (adParameters != null) __obj.updateDynamic("adParameters")(adParameters.asInstanceOf[js.Any])
+    if (htmlResource != null) __obj.updateDynamic("htmlResource")(htmlResource.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (iframeResource != null) __obj.updateDynamic("iframeResource")(iframeResource.asInstanceOf[js.Any])
+    if (nonLinearClickThroughURLTemplate != null) __obj.updateDynamic("nonLinearClickThroughURLTemplate")(nonLinearClickThroughURLTemplate.asInstanceOf[js.Any])
+    if (staticResource != null) __obj.updateDynamic("staticResource")(staticResource.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastNonLinearAd]
   }
 }

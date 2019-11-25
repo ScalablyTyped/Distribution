@@ -49,9 +49,9 @@ object LolexInstallOpts {
     if (advanceTimeDelta != null) __obj.updateDynamic("advanceTimeDelta")(advanceTimeDelta.asInstanceOf[js.Any])
     if (loopLimit != null) __obj.updateDynamic("loopLimit")(loopLimit.asInstanceOf[js.Any])
     if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldAdvanceTime)) __obj.updateDynamic("shouldAdvanceTime")(shouldAdvanceTime)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (toFake != null) __obj.updateDynamic("toFake")(toFake)
+    if (!js.isUndefined(shouldAdvanceTime)) __obj.updateDynamic("shouldAdvanceTime")(shouldAdvanceTime.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (toFake != null) __obj.updateDynamic("toFake")(toFake.asInstanceOf[js.Any])
     __obj.asInstanceOf[LolexInstallOpts]
   }
 }

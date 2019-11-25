@@ -45,12 +45,12 @@ object CloudCheckinsResponse {
     success: js.UndefOr[Boolean] = js.undefined
   ): CloudCheckinsResponse = {
     val __obj = js.Dynamic.literal()
-    if (checkins != null) __obj.updateDynamic("checkins")(checkins)
+    if (checkins != null) __obj.updateDynamic("checkins")(checkins.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudCheckinsResponse]
   }
 }

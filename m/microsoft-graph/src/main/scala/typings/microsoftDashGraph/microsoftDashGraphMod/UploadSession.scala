@@ -27,9 +27,9 @@ object UploadSession {
     uploadUrl: String = null
   ): UploadSession = {
     val __obj = js.Dynamic.literal()
-    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime)
-    if (nextExpectedRanges != null) __obj.updateDynamic("nextExpectedRanges")(nextExpectedRanges)
-    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl)
+    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime.asInstanceOf[js.Any])
+    if (nextExpectedRanges != null) __obj.updateDynamic("nextExpectedRanges")(nextExpectedRanges.asInstanceOf[js.Any])
+    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadSession]
   }
 }

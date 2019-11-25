@@ -21,7 +21,5 @@ object Filter extends js.Object {
   def listStreamData(filters: js.Any, data: typings.nodegit.bufMod.Buf, target: WriteStream): Double = js.native
   def listStreamFile(filters: js.Any, repo: typings.nodegit.repositoryMod.Repository, path: String, target: WriteStream): Double = js.native
   def unregister(name: String): Double = js.native
-  type FLAG = typings.nodegit.filterMod.Filter.FLAG
-  type MODE = typings.nodegit.filterMod.Filter.MODE
 }
 

@@ -13,16 +13,16 @@ trait Anon_Acc extends js.Object {
   def combine[T](combiner: js.Function1[/* repeated */ js.Any, T], streams: js.Array[Stream[_]]): Stream[T] = js.native
   def lift[S /* <: js.Array[_] */, T](
     fn: js.Function1[/* values */ S, T],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param streams because its type {[ I in keyof S ]: Stream<S[I]>} is not an array type */ streams: /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param streams because its type {[ I in keyof S ]: Stream<S[I]>} is not an array type */ streams: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}
     */ typings.mithrilDashGlobal.mithrilDashGlobalStrings.Anon_Acc with S
   ): Stream[T] = js.native
   def merge[S /* <: js.Array[_] */](
-    streams: /* import warning: ImportType.apply c Unsupported type mapping: 
+    streams: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ I in keyof S ]: mithril.mithril/stream.Stream<S[I]>}
     */ typings.mithrilDashGlobal.mithrilDashGlobalStrings.Anon_Acc with S
   ): Stream[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ I in keyof S ]: S[I]}
     */ typings.mithrilDashGlobal.mithrilDashGlobalStrings.Anon_Acc with S
   ] = js.native

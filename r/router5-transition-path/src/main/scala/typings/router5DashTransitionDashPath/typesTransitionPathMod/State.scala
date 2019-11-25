@@ -21,10 +21,10 @@ object State {
     meta: Anon_Key = null,
     params: StringDictionary[js.Any] = null
   ): State = {
-    val __obj = js.Dynamic.literal(name = name)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

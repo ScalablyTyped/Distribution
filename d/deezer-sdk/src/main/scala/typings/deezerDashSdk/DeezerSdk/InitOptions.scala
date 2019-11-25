@@ -18,8 +18,8 @@ trait InitOptions extends js.Object {
 object InitOptions {
   @scala.inline
   def apply(appId: String, channelUrl: String, player: PlayerOptions = null): InitOptions = {
-    val __obj = js.Dynamic.literal(appId = appId, channelUrl = channelUrl)
-    if (player != null) __obj.updateDynamic("player")(player)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], channelUrl = channelUrl.asInstanceOf[js.Any])
+    if (player != null) __obj.updateDynamic("player")(player.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

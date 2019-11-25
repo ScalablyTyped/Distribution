@@ -14,8 +14,8 @@ object CustomIconOptions {
   @scala.inline
   def apply(extraCommonProps: StringDictionary[js.Any] = null, scriptUrl: String = null): CustomIconOptions = {
     val __obj = js.Dynamic.literal()
-    if (extraCommonProps != null) __obj.updateDynamic("extraCommonProps")(extraCommonProps)
-    if (scriptUrl != null) __obj.updateDynamic("scriptUrl")(scriptUrl)
+    if (extraCommonProps != null) __obj.updateDynamic("extraCommonProps")(extraCommonProps.asInstanceOf[js.Any])
+    if (scriptUrl != null) __obj.updateDynamic("scriptUrl")(scriptUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomIconOptions]
   }
 }

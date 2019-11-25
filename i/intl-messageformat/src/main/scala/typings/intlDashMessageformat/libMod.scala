@@ -230,6 +230,5 @@ object libMod extends js.Object {
     var formats: Anon_Date = js.native
   }
   
-  type PART_TYPE = typings.intlDashMessageformat.libFormattersMod.PART_TYPE
 }
 

@@ -1,14 +1,14 @@
 package typings.webgl2
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.std.WebGLObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLVertexArrayObject")
 @js.native
-class WebGLVertexArrayObject ()
-  extends typings.std.WebGLVertexArrayObject
+class WebGLVertexArrayObject () extends WebGLObject
 
 @JSGlobal("WebGLVertexArrayObject")
 @js.native

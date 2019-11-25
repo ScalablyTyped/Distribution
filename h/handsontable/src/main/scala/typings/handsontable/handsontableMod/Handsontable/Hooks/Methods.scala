@@ -10,23 +10,23 @@ import scala.scalajs.js.annotation._
 trait Methods extends js.Object {
   def add[K /* <: String */](
     key: K,
-    callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+    callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
   ): Methods = js.native
   def add[K /* <: String */](
     key: K,
-    callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any,
+    callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any,
     context: Handsontable
   ): Methods = js.native
   def add[K /* <: String */](
     key: K,
     callback: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ]
   ): Methods = js.native
   def add[K /* <: String */](
     key: K,
     callback: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ],
     context: Handsontable
   ): Methods = js.native
@@ -42,23 +42,23 @@ trait Methods extends js.Object {
   def isRegistered(key: String): Boolean = js.native
   def once[K /* <: String */](
     key: K,
-    callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+    callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
   ): Unit = js.native
   def once[K /* <: String */](
     key: K,
-    callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any,
+    callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any,
     context: Handsontable
   ): Unit = js.native
   def once[K /* <: String */](
     key: K,
     callback: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ]
   ): Unit = js.native
   def once[K /* <: String */](
     key: K,
     callback: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ],
     context: Handsontable
   ): Unit = js.native

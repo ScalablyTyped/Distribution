@@ -24,7 +24,7 @@ object Anon_Checkforupdate {
     updatestate: Double,
     url: String
   ): Anon_Checkforupdate = {
-    val __obj = js.Dynamic.literal(checkforupdate = checkforupdate, devicetypes = devicetypes, notify = notify, text = text, updatestate = updatestate, url = url)
+    val __obj = js.Dynamic.literal(checkforupdate = checkforupdate.asInstanceOf[js.Any], devicetypes = devicetypes.asInstanceOf[js.Any], notify = notify.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], updatestate = updatestate.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Checkforupdate]
   }

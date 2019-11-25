@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait LogLevel extends js.Object
 
+object LogLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `debug+`: typings.seneca.senecaStrings.`debug+` = this.cast("debug+")
+  @scala.inline
+  def `info+`: typings.seneca.senecaStrings.`info+` = this.cast("info+")
+  @scala.inline
+  def none: typings.seneca.senecaStrings.none = this.cast("none")
+  @scala.inline
+  def `warn+`: typings.seneca.senecaStrings.`warn+` = this.cast("warn+")
+}
+

@@ -59,9 +59,9 @@ object ITaxId {
     value: String,
     verification: ITaxIdVerification
   ): ITaxId = {
-    val __obj = js.Dynamic.literal(country = country, created = created, customer = customer, id = id, livemode = livemode, value = value, verification = verification)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITaxId]
   }
 }

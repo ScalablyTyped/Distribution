@@ -36,13 +36,13 @@ object HardwareStatus {
     skinTemperatures: js.Array[Double] = null
   ): HardwareStatus = {
     val __obj = js.Dynamic.literal()
-    if (batteryTemperatures != null) __obj.updateDynamic("batteryTemperatures")(batteryTemperatures)
-    if (cpuTemperatures != null) __obj.updateDynamic("cpuTemperatures")(cpuTemperatures)
-    if (cpuUsages != null) __obj.updateDynamic("cpuUsages")(cpuUsages)
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (fanSpeeds != null) __obj.updateDynamic("fanSpeeds")(fanSpeeds)
-    if (gpuTemperatures != null) __obj.updateDynamic("gpuTemperatures")(gpuTemperatures)
-    if (skinTemperatures != null) __obj.updateDynamic("skinTemperatures")(skinTemperatures)
+    if (batteryTemperatures != null) __obj.updateDynamic("batteryTemperatures")(batteryTemperatures.asInstanceOf[js.Any])
+    if (cpuTemperatures != null) __obj.updateDynamic("cpuTemperatures")(cpuTemperatures.asInstanceOf[js.Any])
+    if (cpuUsages != null) __obj.updateDynamic("cpuUsages")(cpuUsages.asInstanceOf[js.Any])
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (fanSpeeds != null) __obj.updateDynamic("fanSpeeds")(fanSpeeds.asInstanceOf[js.Any])
+    if (gpuTemperatures != null) __obj.updateDynamic("gpuTemperatures")(gpuTemperatures.asInstanceOf[js.Any])
+    if (skinTemperatures != null) __obj.updateDynamic("skinTemperatures")(skinTemperatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[HardwareStatus]
   }
 }

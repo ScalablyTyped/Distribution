@@ -12,7 +12,7 @@ trait Anon_FontSizeLineHeight extends js.Object {
 object Anon_FontSizeLineHeight {
   @scala.inline
   def apply(fontSize: String, lineHeight: String): Anon_FontSizeLineHeight = {
-    val __obj = js.Dynamic.literal(fontSize = fontSize, lineHeight = lineHeight)
+    val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FontSizeLineHeight]
   }

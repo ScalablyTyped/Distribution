@@ -24,10 +24,10 @@ object Anon_ChangedAttributesSinceTimestamp {
     startDate: String = null
   ): Anon_ChangedAttributesSinceTimestamp = {
     val __obj = js.Dynamic.literal()
-    if (changedAttributesSinceTimestamp != null) __obj.updateDynamic("changedAttributesSinceTimestamp")(changedAttributesSinceTimestamp)
-    if (changedMetricsSinceTimestamp != null) __obj.updateDynamic("changedMetricsSinceTimestamp")(changedMetricsSinceTimestamp)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (changedAttributesSinceTimestamp != null) __obj.updateDynamic("changedAttributesSinceTimestamp")(changedAttributesSinceTimestamp.asInstanceOf[js.Any])
+    if (changedMetricsSinceTimestamp != null) __obj.updateDynamic("changedMetricsSinceTimestamp")(changedMetricsSinceTimestamp.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChangedAttributesSinceTimestamp]
   }
 }

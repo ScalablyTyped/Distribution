@@ -57,15 +57,15 @@ object Asset {
     value: String = null
   ): Asset = {
     val __obj = js.Dynamic.literal()
-    if (attachment != null) __obj.updateDynamic("attachment")(attachment)
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (public_url != null) __obj.updateDynamic("public_url")(public_url)
+    if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (public_url != null) __obj.updateDynamic("public_url")(public_url.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (theme_id != null) __obj.updateDynamic("theme_id")(theme_id.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Asset]
   }
 }

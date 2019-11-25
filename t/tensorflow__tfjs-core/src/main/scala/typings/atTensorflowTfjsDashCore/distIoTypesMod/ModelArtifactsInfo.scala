@@ -52,7 +52,7 @@ object ModelArtifactsInfo {
     weightDataBytes: Int | Double = null,
     weightSpecsBytes: Int | Double = null
   ): ModelArtifactsInfo = {
-    val __obj = js.Dynamic.literal(dateSaved = dateSaved, modelTopologyType = modelTopologyType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dateSaved = dateSaved.asInstanceOf[js.Any], modelTopologyType = modelTopologyType.asInstanceOf[js.Any])
     if (modelTopologyBytes != null) __obj.updateDynamic("modelTopologyBytes")(modelTopologyBytes.asInstanceOf[js.Any])
     if (weightDataBytes != null) __obj.updateDynamic("weightDataBytes")(weightDataBytes.asInstanceOf[js.Any])
     if (weightSpecsBytes != null) __obj.updateDynamic("weightSpecsBytes")(weightSpecsBytes.asInstanceOf[js.Any])

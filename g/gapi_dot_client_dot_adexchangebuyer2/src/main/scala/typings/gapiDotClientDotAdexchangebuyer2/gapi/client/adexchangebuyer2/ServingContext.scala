@@ -33,12 +33,12 @@ object ServingContext {
     securityType: SecurityContext = null
   ): ServingContext = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all)
-    if (appType != null) __obj.updateDynamic("appType")(appType)
-    if (auctionType != null) __obj.updateDynamic("auctionType")(auctionType)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (securityType != null) __obj.updateDynamic("securityType")(securityType)
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (appType != null) __obj.updateDynamic("appType")(appType.asInstanceOf[js.Any])
+    if (auctionType != null) __obj.updateDynamic("auctionType")(auctionType.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (securityType != null) __obj.updateDynamic("securityType")(securityType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServingContext]
   }
 }

@@ -11,7 +11,7 @@ trait ExportResponse extends js.Object {
 object ExportResponse {
   @scala.inline
   def apply(body: ExportResponseData): ExportResponse = {
-    val __obj = js.Dynamic.literal(body = body)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExportResponse]
   }

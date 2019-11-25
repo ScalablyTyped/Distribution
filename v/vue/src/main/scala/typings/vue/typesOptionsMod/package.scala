@@ -16,7 +16,7 @@ package object typesOptionsMod {
   import typings.vue.typesVueMod.Vue
   import typings.vue.typesVueMod.VueConstructor
 
-  type Accessors[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Accessors[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: (): T[K] | vue.vue/types/options.ComputedOptions<T[K]>}
     */ typings.vue.vueStrings.Accessors with js.Any
   type ArrayPropsDefinition[T] = js.Array[String]
@@ -49,10 +49,16 @@ package object typesOptionsMod {
   ]
   type InjectKey = String | js.Symbol
   type InjectOptions = (StringDictionary[InjectKey | Anon_Default]) | js.Array[String]
+  /* Rewritten from type alias, can be one of: 
+    - js.Function0[T]
+    - typings.vue.Anon_Args[T]
+    - typings.vue.Anon_ArgsFunction
+  */
+  type Prop[T] = _Prop[T] | js.Function0[T]
   type PropType[T] = Prop[T] | js.Array[Prop[T]]
   type PropValidator[T] = PropOptions[T] | PropType[T]
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
-  type RecordPropsDefinition[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: vue.vue/types/options.PropValidator<T[K]>}
     */ typings.vue.vueStrings.RecordPropsDefinition with T
   type ThisTypedComponentOptionsWithArrayProps[V /* <: Vue */, Data, Methods, Computed, PropNames /* <: String */] = js.Object with (ComponentOptions[

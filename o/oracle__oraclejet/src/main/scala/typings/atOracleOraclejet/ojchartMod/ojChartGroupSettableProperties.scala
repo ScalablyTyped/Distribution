@@ -25,9 +25,9 @@ object ojChartGroupSettableProperties {
   ): ojChartGroupSettableProperties = {
     val __obj = js.Dynamic.literal()
     if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojChartGroupSettableProperties]
   }
 }

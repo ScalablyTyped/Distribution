@@ -16,7 +16,7 @@ trait Room extends js.Object {
 object Room {
   @scala.inline
   def apply(length: Double, sockets: StringDictionary[Boolean]): Room = {
-    val __obj = js.Dynamic.literal(length = length, sockets = sockets)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], sockets = sockets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Room]
   }

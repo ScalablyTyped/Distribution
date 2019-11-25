@@ -13,7 +13,7 @@ trait Anon_CurrentIndex extends js.Object {
 object Anon_CurrentIndex {
   @scala.inline
   def apply(currentIndex: Double, item: Anon_CurrentIndex, itemIndex: Double): Anon_CurrentIndex = {
-    val __obj = js.Dynamic.literal(currentIndex = currentIndex, item = item, itemIndex = itemIndex)
+    val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CurrentIndex]
   }

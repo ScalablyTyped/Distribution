@@ -26,25 +26,17 @@ object IRadio {
   @scala.inline
   def apply(
     ICheckbox: typings.extjs.Ext.form.field.ICheckbox = null,
-    focusCls: java.lang.String = null,
     getGroupValue: () => java.lang.String = null,
     getModelData: () => _ = null,
-    getSubmitValue: () => _ = null,
-    inputType: java.lang.String = null,
     isRadio: js.UndefOr[Boolean] = js.undefined,
-    onRemoved: () => Unit = null,
-    setValue: /* value */ js.UndefOr[js.Any] => IRadio = null
+    onRemoved: () => Unit = null
   ): IRadio = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ICheckbox)
-    if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls)
+    if (ICheckbox != null) js.Dynamic.global.Object.assign(__obj, ICheckbox)
     if (getGroupValue != null) __obj.updateDynamic("getGroupValue")(js.Any.fromFunction0(getGroupValue))
     if (getModelData != null) __obj.updateDynamic("getModelData")(js.Any.fromFunction0(getModelData))
-    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(js.Any.fromFunction0(getSubmitValue))
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
-    if (!js.isUndefined(isRadio)) __obj.updateDynamic("isRadio")(isRadio)
+    if (!js.isUndefined(isRadio)) __obj.updateDynamic("isRadio")(isRadio.asInstanceOf[js.Any])
     if (onRemoved != null) __obj.updateDynamic("onRemoved")(js.Any.fromFunction0(onRemoved))
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[IRadio]
   }
 }

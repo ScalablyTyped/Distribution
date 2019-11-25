@@ -16,9 +16,9 @@ object ListPartsQuery {
   @scala.inline
   def apply(`encoding-type`: String, `max-parts`: Double, `part-number-marker`: Double): ListPartsQuery = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding-type")(`encoding-type`)
-    __obj.updateDynamic("max-parts")(`max-parts`)
-    __obj.updateDynamic("part-number-marker")(`part-number-marker`)
+    __obj.updateDynamic("encoding-type")(`encoding-type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("max-parts")(`max-parts`.asInstanceOf[js.Any])
+    __obj.updateDynamic("part-number-marker")(`part-number-marker`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPartsQuery]
   }
 }

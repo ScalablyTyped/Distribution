@@ -13,7 +13,7 @@ trait Anon_IsReorderable extends js.Object {
 object Anon_IsReorderable {
   @scala.inline
   def apply(isReorderable: Boolean, isResizable: Boolean, loading: Boolean): Anon_IsReorderable = {
-    val __obj = js.Dynamic.literal(isReorderable = isReorderable, isResizable = isResizable, loading = loading)
+    val __obj = js.Dynamic.literal(isReorderable = isReorderable.asInstanceOf[js.Any], isResizable = isResizable.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsReorderable]
   }

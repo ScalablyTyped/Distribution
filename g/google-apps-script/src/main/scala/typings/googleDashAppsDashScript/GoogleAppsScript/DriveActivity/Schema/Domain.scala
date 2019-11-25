@@ -13,8 +13,8 @@ object Domain {
   @scala.inline
   def apply(legacyId: String = null, name: String = null): Domain = {
     val __obj = js.Dynamic.literal()
-    if (legacyId != null) __obj.updateDynamic("legacyId")(legacyId)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (legacyId != null) __obj.updateDynamic("legacyId")(legacyId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Domain]
   }
 }

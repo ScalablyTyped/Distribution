@@ -34,7 +34,7 @@ object RsaOptions {
     fail: js.Any => Unit = null,
     success: /* res */ Anon_Text => Unit = null
   ): RsaOptions = {
-    val __obj = js.Dynamic.literal(action = action, key = key, text = text)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

@@ -53,10 +53,10 @@ object RenderMathInElementSpecificOptions {
     ] = null
   ): RenderMathInElementSpecificOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters)
+    if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters.asInstanceOf[js.Any])
     if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction2(errorCallback))
-    if (ignoredClasses != null) __obj.updateDynamic("ignoredClasses")(ignoredClasses)
-    if (ignoredTags != null) __obj.updateDynamic("ignoredTags")(ignoredTags)
+    if (ignoredClasses != null) __obj.updateDynamic("ignoredClasses")(ignoredClasses.asInstanceOf[js.Any])
+    if (ignoredTags != null) __obj.updateDynamic("ignoredTags")(ignoredTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderMathInElementSpecificOptions]
   }
 }

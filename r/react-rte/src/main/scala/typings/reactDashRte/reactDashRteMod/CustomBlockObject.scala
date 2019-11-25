@@ -13,8 +13,8 @@ object CustomBlockObject {
   @scala.inline
   def apply(data: js.Object = null, `type`: String = null): CustomBlockObject = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomBlockObject]
   }
 }

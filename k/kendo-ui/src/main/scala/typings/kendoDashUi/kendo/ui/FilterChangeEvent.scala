@@ -16,8 +16,8 @@ object FilterChangeEvent {
     sender: Filter,
     expression: js.Any = null
   ): FilterChangeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterChangeEvent]
   }
 }

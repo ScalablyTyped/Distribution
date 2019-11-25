@@ -18,7 +18,7 @@ object RelationJoin {
     through: RelationThrough = null
   ): RelationJoin = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (through != null) __obj.updateDynamic("through")(through)
+    if (through != null) __obj.updateDynamic("through")(through.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationJoin]
   }
 }

@@ -28,10 +28,10 @@ object AutoFillObject {
     fillType: String = null
   ): AutoFillObject = {
     val __obj = js.Dynamic.literal()
-    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (fillRange != null) __obj.updateDynamic("fillRange")(fillRange)
-    if (fillType != null) __obj.updateDynamic("fillType")(fillType)
+    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (fillRange != null) __obj.updateDynamic("fillRange")(fillRange.asInstanceOf[js.Any])
+    if (fillType != null) __obj.updateDynamic("fillType")(fillType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoFillObject]
   }
 }

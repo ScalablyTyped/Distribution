@@ -23,12 +23,12 @@ object ItemDefinition {
   ): ItemDefinition = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (responses != null) __obj.updateDynamic("responses")(responses)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDefinition]
   }
 }

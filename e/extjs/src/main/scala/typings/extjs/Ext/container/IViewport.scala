@@ -21,8 +21,8 @@ object IViewport {
     onRender: () => Unit = null
   ): IViewport = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(isViewport)) __obj.updateDynamic("isViewport")(isViewport)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(isViewport)) __obj.updateDynamic("isViewport")(isViewport.asInstanceOf[js.Any])
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     __obj.asInstanceOf[IViewport]
   }

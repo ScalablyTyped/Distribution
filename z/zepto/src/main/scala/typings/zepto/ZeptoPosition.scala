@@ -12,7 +12,7 @@ trait ZeptoPosition extends js.Object {
 object ZeptoPosition {
   @scala.inline
   def apply(left: Double, top: Double): ZeptoPosition = {
-    val __obj = js.Dynamic.literal(left = left, top = top)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ZeptoPosition]
   }

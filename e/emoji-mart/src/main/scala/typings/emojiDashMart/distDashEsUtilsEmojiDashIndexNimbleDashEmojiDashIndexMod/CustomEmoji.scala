@@ -28,11 +28,11 @@ object CustomEmoji {
     id: String = null,
     keywords: js.Array[String] = null
   ): CustomEmoji = {
-    val __obj = js.Dynamic.literal(imageUrl = imageUrl, name = name, short_names = short_names)
-    if (colons != null) __obj.updateDynamic("colons")(colons)
-    if (emoticons != null) __obj.updateDynamic("emoticons")(emoticons)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
+    val __obj = js.Dynamic.literal(imageUrl = imageUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], short_names = short_names.asInstanceOf[js.Any])
+    if (colons != null) __obj.updateDynamic("colons")(colons.asInstanceOf[js.Any])
+    if (emoticons != null) __obj.updateDynamic("emoticons")(emoticons.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomEmoji]
   }
 }

@@ -12,7 +12,7 @@ trait AgentQueueEvent extends js.Object {
 object AgentQueueEvent {
   @scala.inline
   def apply(eventType: String, queue: TaskAgentQueue): AgentQueueEvent = {
-    val __obj = js.Dynamic.literal(eventType = eventType, queue = queue)
+    val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AgentQueueEvent]
   }

@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 object stridedSlice
   extends TopLevel[
       js.Function9[
-        /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] | TensorLike, 
+        /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
         /* begin */ js.Array[Double], 
         /* end */ js.Array[Double], 
         /* strides */ js.UndefOr[js.Array[Double]], 
@@ -21,7 +20,7 @@ object stridedSlice
         /* ellipsisMask */ js.UndefOr[Double], 
         /* newAxisMask */ js.UndefOr[Double], 
         /* shrinkAxisMask */ js.UndefOr[Double], 
-        typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+        typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
       ]
     ]
 

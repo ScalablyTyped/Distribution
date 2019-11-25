@@ -22,9 +22,9 @@ object Anon_CssProperty {
     transform: js.Any = null
   ): Anon_CssProperty = {
     val __obj = js.Dynamic.literal(cssProperty = cssProperty.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (themeGet != null) __obj.updateDynamic("themeGet")(themeGet)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (themeGet != null) __obj.updateDynamic("themeGet")(themeGet.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CssProperty]
   }
 }

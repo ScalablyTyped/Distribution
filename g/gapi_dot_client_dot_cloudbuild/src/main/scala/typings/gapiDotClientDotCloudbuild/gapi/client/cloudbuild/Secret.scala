@@ -23,8 +23,8 @@ object Secret {
   @scala.inline
   def apply(kmsKeyName: String = null, secretEnv: Record[String, String] = null): Secret = {
     val __obj = js.Dynamic.literal()
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)
-    if (secretEnv != null) __obj.updateDynamic("secretEnv")(secretEnv)
+    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
+    if (secretEnv != null) __obj.updateDynamic("secretEnv")(secretEnv.asInstanceOf[js.Any])
     __obj.asInstanceOf[Secret]
   }
 }

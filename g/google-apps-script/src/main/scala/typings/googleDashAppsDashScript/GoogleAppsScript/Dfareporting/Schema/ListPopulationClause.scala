@@ -12,7 +12,7 @@ object ListPopulationClause {
   @scala.inline
   def apply(terms: js.Array[ListPopulationTerm] = null): ListPopulationClause = {
     val __obj = js.Dynamic.literal()
-    if (terms != null) __obj.updateDynamic("terms")(terms)
+    if (terms != null) __obj.updateDynamic("terms")(terms.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPopulationClause]
   }
 }

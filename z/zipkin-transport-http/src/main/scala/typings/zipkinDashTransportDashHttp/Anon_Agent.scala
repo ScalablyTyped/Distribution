@@ -32,12 +32,12 @@ object Anon_Agent {
     maxPayloadSize: Int | Double = null,
     timeout: Int | Double = null
   ): Anon_Agent = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint)
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (httpInterval != null) __obj.updateDynamic("httpInterval")(httpInterval.asInstanceOf[js.Any])
-    if (jsonEncoder != null) __obj.updateDynamic("jsonEncoder")(jsonEncoder)
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (jsonEncoder != null) __obj.updateDynamic("jsonEncoder")(jsonEncoder.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (maxPayloadSize != null) __obj.updateDynamic("maxPayloadSize")(maxPayloadSize.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Agent]

@@ -12,7 +12,7 @@ trait ReelsMediaFeedResponseRootObject extends js.Object {
 object ReelsMediaFeedResponseRootObject {
   @scala.inline
   def apply(reels: ReelsMediaFeedResponseReels, status: String): ReelsMediaFeedResponseRootObject = {
-    val __obj = js.Dynamic.literal(reels = reels, status = status)
+    val __obj = js.Dynamic.literal(reels = reels.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReelsMediaFeedResponseRootObject]
   }

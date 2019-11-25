@@ -26,7 +26,7 @@ object AsObject {
     responseTypeUrl: String,
     syntax: Syntax
   ): AsObject = {
-    val __obj = js.Dynamic.literal(name = name, optionsList = optionsList, requestStreaming = requestStreaming, requestTypeUrl = requestTypeUrl, responseStreaming = responseStreaming, responseTypeUrl = responseTypeUrl, syntax = syntax)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], optionsList = optionsList.asInstanceOf[js.Any], requestStreaming = requestStreaming.asInstanceOf[js.Any], requestTypeUrl = requestTypeUrl.asInstanceOf[js.Any], responseStreaming = responseStreaming.asInstanceOf[js.Any], responseTypeUrl = responseTypeUrl.asInstanceOf[js.Any], syntax = syntax.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

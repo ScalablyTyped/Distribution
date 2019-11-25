@@ -27,10 +27,10 @@ object SslCertsInsertResponse {
     serverCaCert: SslCert = null
   ): SslCertsInsertResponse = {
     val __obj = js.Dynamic.literal()
-    if (clientCert != null) __obj.updateDynamic("clientCert")(clientCert)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (serverCaCert != null) __obj.updateDynamic("serverCaCert")(serverCaCert)
+    if (clientCert != null) __obj.updateDynamic("clientCert")(clientCert.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (serverCaCert != null) __obj.updateDynamic("serverCaCert")(serverCaCert.asInstanceOf[js.Any])
     __obj.asInstanceOf[SslCertsInsertResponse]
   }
 }

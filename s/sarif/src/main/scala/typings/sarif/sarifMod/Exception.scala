@@ -38,11 +38,11 @@ object Exception {
     stack: Stack = null
   ): Exception = {
     val __obj = js.Dynamic.literal()
-    if (innerExceptions != null) __obj.updateDynamic("innerExceptions")(innerExceptions)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (innerExceptions != null) __obj.updateDynamic("innerExceptions")(innerExceptions.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[Exception]
   }
 }

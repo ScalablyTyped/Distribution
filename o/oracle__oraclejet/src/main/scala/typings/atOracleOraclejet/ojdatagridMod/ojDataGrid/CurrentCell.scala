@@ -39,9 +39,9 @@ object CurrentCell {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentCell[K]]
   }

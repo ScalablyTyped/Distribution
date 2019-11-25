@@ -20,9 +20,9 @@ object CellMouseEnterEventArgs {
   @scala.inline
   def apply(cell: js.Any = null, cellValue: String = null, source: js.Any = null): CellMouseEnterEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellMouseEnterEventArgs]
   }
 }

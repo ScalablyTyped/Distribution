@@ -40,11 +40,11 @@ trait Accordion_ extends js.Object {
     */
   def apply(behavior: toggle, index: Double): JQuery = js.native
   def apply(settings: AccordionSettings): JQuery = js.native
-  def apply[K /* <: String */](behavior: setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-accordion.SemanticUI.AccordionSettings._Impl[K] */ js.Any = js.native
+  def apply[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-accordion.SemanticUI.AccordionSettings._Impl[K] */ js.Any = js.native
   def apply[K /* <: String */](
     behavior: setting,
     name: K,
-    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-accordion.SemanticUI.AccordionSettings._Impl[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-accordion.SemanticUI.AccordionSettings._Impl[K] */ js.Any
   ): JQuery = js.native
 }
 

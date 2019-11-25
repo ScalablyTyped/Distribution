@@ -1,6 +1,5 @@
 package typings.nock.nockMod
 
-import typings.nock.Fn_Uri
 import typings.node.NodeJS.EventEmitter
 import typings.std.Date
 import typings.std.RegExp
@@ -31,9 +30,13 @@ trait Scope extends EventEmitter {
   def delete(uri: String): Interceptor = js.native
   def delete(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def delete(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
-  def delete(uri: Fn_Uri): Interceptor = js.native
-  def delete(uri: Fn_Uri, requestBody: RequestBodyMatcher): Interceptor = js.native
-  def delete(uri: Fn_Uri, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+  def delete(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+  def delete(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
+  def delete(
+    uri: js.Function1[/* uri */ String, Boolean],
+    requestBody: RequestBodyMatcher,
+    interceptorOptions: Options
+  ): Interceptor = js.native
   def delete(uri: RegExp): Interceptor = js.native
   def delete(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
   def delete(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
@@ -45,27 +48,40 @@ trait Scope extends EventEmitter {
   def get(uri: String): Interceptor = js.native
   def get(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def get(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
-  def get(uri: Fn_Uri): Interceptor = js.native
-  def get(uri: Fn_Uri, requestBody: RequestBodyMatcher): Interceptor = js.native
-  def get(uri: Fn_Uri, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+  def get(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+  def get(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
+  def get(
+    uri: js.Function1[/* uri */ String, Boolean],
+    requestBody: RequestBodyMatcher,
+    interceptorOptions: Options
+  ): Interceptor = js.native
   def get(uri: RegExp): Interceptor = js.native
   def get(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
   def get(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
   def head(uri: String): Interceptor = js.native
   def head(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def head(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
-  def head(uri: Fn_Uri): Interceptor = js.native
-  def head(uri: Fn_Uri, requestBody: RequestBodyMatcher): Interceptor = js.native
-  def head(uri: Fn_Uri, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+  def head(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+  def head(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
+  def head(
+    uri: js.Function1[/* uri */ String, Boolean],
+    requestBody: RequestBodyMatcher,
+    interceptorOptions: Options
+  ): Interceptor = js.native
   def head(uri: RegExp): Interceptor = js.native
   def head(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
   def head(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
   def intercept(uri: String, method: String): Interceptor = js.native
   def intercept(uri: String, method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def intercept(uri: String, method: String, requestBody: RequestBodyMatcher, options: Options): Interceptor = js.native
-  def intercept(uri: Fn_Uri, method: String): Interceptor = js.native
-  def intercept(uri: Fn_Uri, method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
-  def intercept(uri: Fn_Uri, method: String, requestBody: RequestBodyMatcher, options: Options): Interceptor = js.native
+  def intercept(uri: js.Function1[/* uri */ String, Boolean], method: String): Interceptor = js.native
+  def intercept(uri: js.Function1[/* uri */ String, Boolean], method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
+  def intercept(
+    uri: js.Function1[/* uri */ String, Boolean],
+    method: String,
+    requestBody: RequestBodyMatcher,
+    options: Options
+  ): Interceptor = js.native
   def intercept(uri: RegExp, method: String): Interceptor = js.native
   def intercept(uri: RegExp, method: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def intercept(uri: RegExp, method: String, requestBody: RequestBodyMatcher, options: Options): Interceptor = js.native
@@ -75,27 +91,39 @@ trait Scope extends EventEmitter {
   def merge(uri: String): Interceptor = js.native
   def merge(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def merge(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
-  def merge(uri: Fn_Uri): Interceptor = js.native
-  def merge(uri: Fn_Uri, requestBody: RequestBodyMatcher): Interceptor = js.native
-  def merge(uri: Fn_Uri, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+  def merge(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+  def merge(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
+  def merge(
+    uri: js.Function1[/* uri */ String, Boolean],
+    requestBody: RequestBodyMatcher,
+    interceptorOptions: Options
+  ): Interceptor = js.native
   def merge(uri: RegExp): Interceptor = js.native
   def merge(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
   def merge(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
   def options(uri: String): Interceptor = js.native
   def options(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def options(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
-  def options(uri: Fn_Uri): Interceptor = js.native
-  def options(uri: Fn_Uri, requestBody: RequestBodyMatcher): Interceptor = js.native
-  def options(uri: Fn_Uri, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+  def options(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+  def options(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
+  def options(
+    uri: js.Function1[/* uri */ String, Boolean],
+    requestBody: RequestBodyMatcher,
+    interceptorOptions: Options
+  ): Interceptor = js.native
   def options(uri: RegExp): Interceptor = js.native
   def options(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
   def options(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: String): Interceptor = js.native
   def patch(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def patch(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
-  def patch(uri: Fn_Uri): Interceptor = js.native
-  def patch(uri: Fn_Uri, requestBody: RequestBodyMatcher): Interceptor = js.native
-  def patch(uri: Fn_Uri, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+  def patch(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+  def patch(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
+  def patch(
+    uri: js.Function1[/* uri */ String, Boolean],
+    requestBody: RequestBodyMatcher,
+    interceptorOptions: Options
+  ): Interceptor = js.native
   def patch(uri: RegExp): Interceptor = js.native
   def patch(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
   def patch(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
@@ -105,18 +133,26 @@ trait Scope extends EventEmitter {
   def post(uri: String): Interceptor = js.native
   def post(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def post(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
-  def post(uri: Fn_Uri): Interceptor = js.native
-  def post(uri: Fn_Uri, requestBody: RequestBodyMatcher): Interceptor = js.native
-  def post(uri: Fn_Uri, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+  def post(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+  def post(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
+  def post(
+    uri: js.Function1[/* uri */ String, Boolean],
+    requestBody: RequestBodyMatcher,
+    interceptorOptions: Options
+  ): Interceptor = js.native
   def post(uri: RegExp): Interceptor = js.native
   def post(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
   def post(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
   def put(uri: String): Interceptor = js.native
   def put(uri: String, requestBody: RequestBodyMatcher): Interceptor = js.native
   def put(uri: String, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
-  def put(uri: Fn_Uri): Interceptor = js.native
-  def put(uri: Fn_Uri, requestBody: RequestBodyMatcher): Interceptor = js.native
-  def put(uri: Fn_Uri, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native
+  def put(uri: js.Function1[/* uri */ String, Boolean]): Interceptor = js.native
+  def put(uri: js.Function1[/* uri */ String, Boolean], requestBody: RequestBodyMatcher): Interceptor = js.native
+  def put(
+    uri: js.Function1[/* uri */ String, Boolean],
+    requestBody: RequestBodyMatcher,
+    interceptorOptions: Options
+  ): Interceptor = js.native
   def put(uri: RegExp): Interceptor = js.native
   def put(uri: RegExp, requestBody: RequestBodyMatcher): Interceptor = js.native
   def put(uri: RegExp, requestBody: RequestBodyMatcher, interceptorOptions: Options): Interceptor = js.native

@@ -14,7 +14,7 @@ trait StyleActiveLine extends js.Object {
 object StyleActiveLine {
   @scala.inline
   def apply(nonEmpty: Boolean): StyleActiveLine = {
-    val __obj = js.Dynamic.literal(nonEmpty = nonEmpty)
+    val __obj = js.Dynamic.literal(nonEmpty = nonEmpty.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StyleActiveLine]
   }

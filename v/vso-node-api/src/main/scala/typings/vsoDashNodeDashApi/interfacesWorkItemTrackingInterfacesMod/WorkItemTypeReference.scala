@@ -14,7 +14,7 @@ trait WorkItemTypeReference extends WorkItemTrackingResourceReference {
 object WorkItemTypeReference {
   @scala.inline
   def apply(name: String, url: String): WorkItemTypeReference = {
-    val __obj = js.Dynamic.literal(name = name, url = url)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemTypeReference]
   }

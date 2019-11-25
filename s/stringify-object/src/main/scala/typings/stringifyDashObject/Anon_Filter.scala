@@ -30,9 +30,9 @@ object Anon_Filter {
   ): Anon_Filter = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (inlineCharacterLimit != null) __obj.updateDynamic("inlineCharacterLimit")(inlineCharacterLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleQuotes)) __obj.updateDynamic("singleQuotes")(singleQuotes)
+    if (!js.isUndefined(singleQuotes)) __obj.updateDynamic("singleQuotes")(singleQuotes.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction3(transform))
     __obj.asInstanceOf[Anon_Filter]
   }

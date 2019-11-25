@@ -30,7 +30,7 @@ trait ISearchResult extends js.Object {
 object ISearchResult {
   @scala.inline
   def apply(qSearchGroupArray: ISearchGroup, qSearchTerms: js.Array[String], qTotalNumberOfGroups: Double): ISearchResult = {
-    val __obj = js.Dynamic.literal(qSearchGroupArray = qSearchGroupArray, qSearchTerms = qSearchTerms, qTotalNumberOfGroups = qTotalNumberOfGroups)
+    val __obj = js.Dynamic.literal(qSearchGroupArray = qSearchGroupArray.asInstanceOf[js.Any], qSearchTerms = qSearchTerms.asInstanceOf[js.Any], qTotalNumberOfGroups = qTotalNumberOfGroups.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchResult]
   }

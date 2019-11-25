@@ -18,9 +18,9 @@ object Wildcard {
     value: typings.esquery.esqueryStrings.`*`,
     subject: js.UndefOr[Boolean] = js.undefined
   ): Wildcard = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Wildcard]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait CSVFieldType extends js.Object
 
+object CSVFieldType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def number: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.number = this.cast("number")
+  @scala.inline
+  def string: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.string = this.cast("string")
+}
+

@@ -21,10 +21,10 @@ object Options {
   @scala.inline
   def apply(path: String = null, subDomain: String = null, `type`: String = null, version: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -30,8 +30,8 @@ object ImageryLayerViewPixelData {
     propertyIsEnumerable: PropertyKey => Boolean,
     extent: Extent = null
   ): ImageryLayerViewPixelData = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pixelBlock = pixelBlock, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (extent != null) __obj.updateDynamic("extent")(extent)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pixelBlock = pixelBlock.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageryLayerViewPixelData]
   }
 }

@@ -37,9 +37,9 @@ object GoogleActionsV2UiElementsImage {
     width: Int | Double = null
   ): GoogleActionsV2UiElementsImage = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityText != null) __obj.updateDynamic("accessibilityText")(accessibilityText)
+    if (accessibilityText != null) __obj.updateDynamic("accessibilityText")(accessibilityText.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsImage]
   }

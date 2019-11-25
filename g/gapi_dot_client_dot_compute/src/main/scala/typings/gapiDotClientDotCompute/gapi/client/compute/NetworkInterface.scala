@@ -56,13 +56,13 @@ object NetworkInterface {
     subnetwork: String = null
   ): NetworkInterface = {
     val __obj = js.Dynamic.literal()
-    if (accessConfigs != null) __obj.updateDynamic("accessConfigs")(accessConfigs)
-    if (aliasIpRanges != null) __obj.updateDynamic("aliasIpRanges")(aliasIpRanges)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (network != null) __obj.updateDynamic("network")(network)
-    if (networkIP != null) __obj.updateDynamic("networkIP")(networkIP)
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork)
+    if (accessConfigs != null) __obj.updateDynamic("accessConfigs")(accessConfigs.asInstanceOf[js.Any])
+    if (aliasIpRanges != null) __obj.updateDynamic("aliasIpRanges")(aliasIpRanges.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
+    if (networkIP != null) __obj.updateDynamic("networkIP")(networkIP.asInstanceOf[js.Any])
+    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterface]
   }
 }

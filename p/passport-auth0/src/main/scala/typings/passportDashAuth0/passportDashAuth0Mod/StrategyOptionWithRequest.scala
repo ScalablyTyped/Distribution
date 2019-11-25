@@ -22,11 +22,11 @@ object StrategyOptionWithRequest {
     scopeSeparator: String = null,
     state: js.UndefOr[Boolean] = js.undefined
   ): StrategyOptionWithRequest = {
-    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret, domain = domain, passReqToCallback = passReqToCallback)
-    if (!js.isUndefined(enableProof)) __obj.updateDynamic("enableProof")(enableProof)
-    if (profileFields != null) __obj.updateDynamic("profileFields")(profileFields)
-    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator)
-    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableProof)) __obj.updateDynamic("enableProof")(enableProof.asInstanceOf[js.Any])
+    if (profileFields != null) __obj.updateDynamic("profileFields")(profileFields.asInstanceOf[js.Any])
+    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptionWithRequest]
   }
 }

@@ -13,8 +13,8 @@ object IColumnOptions {
   @scala.inline
   def apply(nullable: js.UndefOr[Boolean] = js.undefined, primary: js.UndefOr[Boolean] = js.undefined): IColumnOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnOptions]
   }
 }

@@ -14,7 +14,7 @@ object AdminGroupsMigration_ {
   @scala.inline
   def apply(Archive: ArchiveCollection = null): AdminGroupsMigration_ = {
     val __obj = js.Dynamic.literal()
-    if (Archive != null) __obj.updateDynamic("Archive")(Archive)
+    if (Archive != null) __obj.updateDynamic("Archive")(Archive.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminGroupsMigration_]
   }
 }

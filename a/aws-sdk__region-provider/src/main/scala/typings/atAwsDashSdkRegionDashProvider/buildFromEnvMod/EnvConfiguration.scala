@@ -12,7 +12,7 @@ object EnvConfiguration {
   @scala.inline
   def apply(environmentVariableName: String = null): EnvConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (environmentVariableName != null) __obj.updateDynamic("environmentVariableName")(environmentVariableName)
+    if (environmentVariableName != null) __obj.updateDynamic("environmentVariableName")(environmentVariableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvConfiguration]
   }
 }

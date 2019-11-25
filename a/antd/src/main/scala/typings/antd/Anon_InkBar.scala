@@ -12,7 +12,7 @@ trait Anon_InkBar extends js.Object {
 object Anon_InkBar {
   @scala.inline
   def apply(inkBar: Boolean, tabPane: Boolean): Anon_InkBar = {
-    val __obj = js.Dynamic.literal(inkBar = inkBar, tabPane = tabPane)
+    val __obj = js.Dynamic.literal(inkBar = inkBar.asInstanceOf[js.Any], tabPane = tabPane.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InkBar]
   }

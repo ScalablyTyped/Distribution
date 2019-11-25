@@ -18,14 +18,12 @@ object GetMenuPropsOptions {
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     ClassAttributes: ClassAttributes[HTMLElement] = null,
-    `aria-label`: String = null,
     refKey: String = null
   ): GetMenuPropsOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
-    if (refKey != null) __obj.updateDynamic("refKey")(refKey)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (refKey != null) __obj.updateDynamic("refKey")(refKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMenuPropsOptions]
   }
 }

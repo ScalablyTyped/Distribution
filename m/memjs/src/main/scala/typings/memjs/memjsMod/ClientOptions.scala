@@ -46,7 +46,7 @@ object ClientOptions {
     val __obj = js.Dynamic.literal()
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (failoverTime != null) __obj.updateDynamic("failoverTime")(failoverTime.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (retry_delay != null) __obj.updateDynamic("retry_delay")(retry_delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]

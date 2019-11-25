@@ -8,11 +8,9 @@ trait IBorderSplitter extends ISplitter
 
 object IBorderSplitter {
   @scala.inline
-  def apply(ISplitter: ISplitter = null, collapseTarget: js.Any = null, getTrackerConfig: () => Unit = null): IBorderSplitter = {
+  def apply(ISplitter: ISplitter = null): IBorderSplitter = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ISplitter)
-    if (collapseTarget != null) __obj.updateDynamic("collapseTarget")(collapseTarget)
-    if (getTrackerConfig != null) __obj.updateDynamic("getTrackerConfig")(js.Any.fromFunction0(getTrackerConfig))
+    if (ISplitter != null) js.Dynamic.global.Object.assign(__obj, ISplitter)
     __obj.asInstanceOf[IBorderSplitter]
   }
 }

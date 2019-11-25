@@ -42,12 +42,12 @@ object QuantitativeScaleSettingsFields {
     tableName: String = null
   ): QuantitativeScaleSettingsFields = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (comparativeMeasure != null) __obj.updateDynamic("comparativeMeasure")(comparativeMeasure)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (featureMeasures != null) __obj.updateDynamic("featureMeasures")(featureMeasures)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (comparativeMeasure != null) __obj.updateDynamic("comparativeMeasure")(comparativeMeasure.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (featureMeasures != null) __obj.updateDynamic("featureMeasures")(featureMeasures.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantitativeScaleSettingsFields]
   }
 }

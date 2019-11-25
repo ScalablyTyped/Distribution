@@ -21,9 +21,9 @@ object ListJobMessagesResponse {
     nextPageToken: String = null
   ): ListJobMessagesResponse = {
     val __obj = js.Dynamic.literal()
-    if (autoscalingEvents != null) __obj.updateDynamic("autoscalingEvents")(autoscalingEvents)
-    if (jobMessages != null) __obj.updateDynamic("jobMessages")(jobMessages)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (autoscalingEvents != null) __obj.updateDynamic("autoscalingEvents")(autoscalingEvents.asInstanceOf[js.Any])
+    if (jobMessages != null) __obj.updateDynamic("jobMessages")(jobMessages.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJobMessagesResponse]
   }
 }

@@ -60,17 +60,17 @@ object Events {
     updated: String = null
   ): Events = {
     val __obj = js.Dynamic.literal()
-    if (accessRole != null) __obj.updateDynamic("accessRole")(accessRole)
-    if (defaultReminders != null) __obj.updateDynamic("defaultReminders")(defaultReminders)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (accessRole != null) __obj.updateDynamic("accessRole")(accessRole.asInstanceOf[js.Any])
+    if (defaultReminders != null) __obj.updateDynamic("defaultReminders")(defaultReminders.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Events]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_1 extends js.Object {
 object Anon_1 {
   @scala.inline
   def apply(max: `1`, min: `1`): Anon_1 = {
-    val __obj = js.Dynamic.literal(max = max, min = min)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_1]
   }

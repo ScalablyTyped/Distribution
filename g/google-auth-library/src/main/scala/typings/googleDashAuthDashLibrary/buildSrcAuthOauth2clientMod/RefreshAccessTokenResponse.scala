@@ -14,8 +14,8 @@ trait RefreshAccessTokenResponse extends js.Object {
 object RefreshAccessTokenResponse {
   @scala.inline
   def apply(credentials: Credentials, res: GaxiosResponse[_] = null): RefreshAccessTokenResponse = {
-    val __obj = js.Dynamic.literal(credentials = credentials)
-    if (res != null) __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any])
+    if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshAccessTokenResponse]
   }
 }

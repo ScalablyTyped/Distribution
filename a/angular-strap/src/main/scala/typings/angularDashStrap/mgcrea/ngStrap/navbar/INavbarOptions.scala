@@ -13,8 +13,8 @@ object INavbarOptions {
   @scala.inline
   def apply(activeClass: String = null, routeAttr: String = null): INavbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
-    if (routeAttr != null) __obj.updateDynamic("routeAttr")(routeAttr)
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
+    if (routeAttr != null) __obj.updateDynamic("routeAttr")(routeAttr.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavbarOptions]
   }
 }

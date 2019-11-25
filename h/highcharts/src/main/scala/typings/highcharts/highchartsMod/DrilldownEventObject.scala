@@ -55,12 +55,12 @@ object DrilldownEventObject {
     points: Boolean | js.Array[Point] = null,
     seriesOptions: SeriesOptionsType = null
   ): DrilldownEventObject = {
-    val __obj = js.Dynamic.literal(point = point, preventDefault = preventDefault, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (seriesOptions != null) __obj.updateDynamic("seriesOptions")(seriesOptions)
+    if (seriesOptions != null) __obj.updateDynamic("seriesOptions")(seriesOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrilldownEventObject]
   }
 }

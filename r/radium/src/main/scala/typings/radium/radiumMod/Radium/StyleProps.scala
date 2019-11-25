@@ -23,7 +23,7 @@ object StyleProps {
   @scala.inline
   def apply(rules: CSSProperties | StyleRules, scopeSelector: String = null): StyleProps = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
-    if (scopeSelector != null) __obj.updateDynamic("scopeSelector")(scopeSelector)
+    if (scopeSelector != null) __obj.updateDynamic("scopeSelector")(scopeSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleProps]
   }
 }

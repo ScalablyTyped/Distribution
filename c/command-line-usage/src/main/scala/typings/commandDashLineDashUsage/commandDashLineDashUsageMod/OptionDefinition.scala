@@ -49,16 +49,16 @@ object OptionDefinition {
     `type`: js.Any = null,
     typeLabel: String = null
   ): OptionDefinition = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (!js.isUndefined(defaultOption)) __obj.updateDynamic("defaultOption")(defaultOption)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultOption)) __obj.updateDynamic("defaultOption")(defaultOption.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyMultiple)) __obj.updateDynamic("lazyMultiple")(lazyMultiple)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (typeLabel != null) __obj.updateDynamic("typeLabel")(typeLabel)
+    if (!js.isUndefined(lazyMultiple)) __obj.updateDynamic("lazyMultiple")(lazyMultiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (typeLabel != null) __obj.updateDynamic("typeLabel")(typeLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionDefinition]
   }
 }

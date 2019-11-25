@@ -14,9 +14,9 @@ object Anon_Connection {
   @scala.inline
   def apply(connection: js.Object = null, idGeneration: String = null, transform: js.Function = null): Anon_Connection = {
     val __obj = js.Dynamic.literal()
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (idGeneration != null) __obj.updateDynamic("idGeneration")(idGeneration)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (idGeneration != null) __obj.updateDynamic("idGeneration")(idGeneration.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Connection]
   }
 }

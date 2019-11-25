@@ -13,8 +13,8 @@ object SetOptions {
   @scala.inline
   def apply(merge: js.UndefOr[Boolean] = js.undefined, mergeFields: js.Array[String | FieldPath] = null): SetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
-    if (mergeFields != null) __obj.updateDynamic("mergeFields")(mergeFields)
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
+    if (mergeFields != null) __obj.updateDynamic("mergeFields")(mergeFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
 }

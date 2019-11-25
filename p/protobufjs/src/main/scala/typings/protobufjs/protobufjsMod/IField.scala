@@ -19,10 +19,10 @@ trait IField extends js.Object {
 object IField {
   @scala.inline
   def apply(id: Double, `type`: String, options: StringDictionary[js.Any] = null, rule: String = null): IField = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }
 }

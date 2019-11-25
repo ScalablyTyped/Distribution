@@ -13,8 +13,8 @@ trait SubscriptionOptions extends js.Object {
 object SubscriptionOptions {
   @scala.inline
   def apply(requestManager: js.Any, subscription: String, `type`: String): SubscriptionOptions = {
-    val __obj = js.Dynamic.literal(requestManager = requestManager, subscription = subscription)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(requestManager = requestManager.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionOptions]
   }
 }

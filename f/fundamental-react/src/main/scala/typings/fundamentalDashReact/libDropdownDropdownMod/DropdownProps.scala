@@ -20,9 +20,9 @@ object DropdownProps {
     standard: js.UndefOr[Boolean] = js.undefined
   ): DropdownProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(standard)) __obj.updateDynamic("standard")(standard)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(standard)) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownProps]
   }
 }

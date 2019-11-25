@@ -11,7 +11,7 @@ trait Anon_QLineage extends js.Object {
 object Anon_QLineage {
   @scala.inline
   def apply(qLineage: js.Array[Anon_QDiscriminator]): Anon_QLineage = {
-    val __obj = js.Dynamic.literal(qLineage = qLineage)
+    val __obj = js.Dynamic.literal(qLineage = qLineage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QLineage]
   }

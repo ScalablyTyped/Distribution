@@ -42,10 +42,10 @@ object IInstruction {
     text: Int | Double = null,
     `type`: Straight | SlightRight | Right | SharpRight | TurnAround | SharpLeft | Left | SlightLeft | WaypointReached | Roundabout | StartAt | DestinationReached | EnterAgainstAllowedDirection | LeaveAgainstAllowedDirection = null
   ): IInstruction = {
-    val __obj = js.Dynamic.literal(distance = distance, time = time)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
-    if (road != null) __obj.updateDynamic("road")(road)
+    if (road != null) __obj.updateDynamic("road")(road.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInstruction]

@@ -27,9 +27,9 @@ object ojLegendSectionSettableProperties {
   ): ojLegendSectionSettableProperties = {
     val __obj = js.Dynamic.literal()
     if (collapsible != null) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textHalign != null) __obj.updateDynamic("textHalign")(textHalign.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojLegendSectionSettableProperties]
   }
 }

@@ -15,8 +15,8 @@ trait Utterance extends js.Object {
 object Utterance {
   @scala.inline
   def apply(text: String, user: String = null): Utterance = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Utterance]
   }
 }

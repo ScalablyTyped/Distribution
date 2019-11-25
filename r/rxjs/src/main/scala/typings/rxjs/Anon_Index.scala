@@ -23,7 +23,7 @@ object Anon_Index {
     subscriber: Subscriber[js.Tuple2[String, T]],
     subscription: Subscription
   ): Anon_Index[T] = {
-    val __obj = js.Dynamic.literal(index = index, keys = keys, obj = obj, subscriber = subscriber, subscription = subscription)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], subscriber = subscriber.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Index[T]]
   }

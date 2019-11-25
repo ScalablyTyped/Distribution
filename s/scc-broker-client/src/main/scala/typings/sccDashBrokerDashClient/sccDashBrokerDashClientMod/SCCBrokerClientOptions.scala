@@ -34,12 +34,12 @@ object SCCBrokerClientOptions {
     stateServerPort: Int | Double = null,
     stateServerReconnectRandomness: Int | Double = null
   ): SCCBrokerClientOptions = {
-    val __obj = js.Dynamic.literal(stateServerHost = stateServerHost)
+    val __obj = js.Dynamic.literal(stateServerHost = stateServerHost.asInstanceOf[js.Any])
     if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
     if (brokerRetryDelay != null) __obj.updateDynamic("brokerRetryDelay")(brokerRetryDelay.asInstanceOf[js.Any])
     if (clientPoolSize != null) __obj.updateDynamic("clientPoolSize")(clientPoolSize.asInstanceOf[js.Any])
     if (mappingEngine != null) __obj.updateDynamic("mappingEngine")(mappingEngine.asInstanceOf[js.Any])
-    if (!js.isUndefined(noErrorLogging)) __obj.updateDynamic("noErrorLogging")(noErrorLogging)
+    if (!js.isUndefined(noErrorLogging)) __obj.updateDynamic("noErrorLogging")(noErrorLogging.asInstanceOf[js.Any])
     if (stateServerAckTimeout != null) __obj.updateDynamic("stateServerAckTimeout")(stateServerAckTimeout.asInstanceOf[js.Any])
     if (stateServerConnectTimeout != null) __obj.updateDynamic("stateServerConnectTimeout")(stateServerConnectTimeout.asInstanceOf[js.Any])
     if (stateServerPort != null) __obj.updateDynamic("stateServerPort")(stateServerPort.asInstanceOf[js.Any])

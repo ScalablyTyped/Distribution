@@ -15,7 +15,7 @@ trait UpdatedLabelsIn extends js.Object {
 object UpdatedLabelsIn {
   @scala.inline
   def apply(categories: js.Array[Category], types: js.Array[TypeLabel]): UpdatedLabelsIn = {
-    val __obj = js.Dynamic.literal(categories = categories, types = types)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdatedLabelsIn]
   }

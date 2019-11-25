@@ -36,7 +36,7 @@ object QueueItem {
     uriPath: String,
     url: String
   ): QueueItem = {
-    val __obj = js.Dynamic.literal(depth = depth, fetched = fetched, host = host, id = id, path = path, port = port, protocol = protocol, referrer = referrer, stateData = stateData, status = status, uriPath = uriPath, url = url)
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], fetched = fetched.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], stateData = stateData.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], uriPath = uriPath.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueueItem]
   }

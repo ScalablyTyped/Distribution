@@ -19,8 +19,8 @@ object TextContent {
   @scala.inline
   def apply(lists: Record[String, List] = null, textElements: js.Array[TextElement] = null): TextContent = {
     val __obj = js.Dynamic.literal()
-    if (lists != null) __obj.updateDynamic("lists")(lists)
-    if (textElements != null) __obj.updateDynamic("textElements")(textElements)
+    if (lists != null) __obj.updateDynamic("lists")(lists.asInstanceOf[js.Any])
+    if (textElements != null) __obj.updateDynamic("textElements")(textElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextContent]
   }
 }

@@ -14,7 +14,7 @@ trait IConfigurableMapOptions extends js.Object {
 object IConfigurableMapOptions {
   @scala.inline
   def apply(mapOptions: IMapOptions, modules: js.Array[IConfigurableMapModule]): IConfigurableMapOptions = {
-    val __obj = js.Dynamic.literal(mapOptions = mapOptions, modules = modules)
+    val __obj = js.Dynamic.literal(mapOptions = mapOptions.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IConfigurableMapOptions]
   }

@@ -27,9 +27,9 @@ object SyncAddressBookOptions {
   @scala.inline
   def apply(sandbox: Sandbox = null, syncMethod: basic | webdav = null, xhr: Transport = null): SyncAddressBookOptions = {
     val __obj = js.Dynamic.literal()
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
     if (syncMethod != null) __obj.updateDynamic("syncMethod")(syncMethod.asInstanceOf[js.Any])
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncAddressBookOptions]
   }
 }

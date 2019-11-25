@@ -13,7 +13,7 @@ trait NodeContext extends js.Object {
 object NodeContext {
   @scala.inline
   def apply(indexPath: js.Array[Double], subId: String): NodeContext = {
-    val __obj = js.Dynamic.literal(indexPath = indexPath, subId = subId)
+    val __obj = js.Dynamic.literal(indexPath = indexPath.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeContext]
   }

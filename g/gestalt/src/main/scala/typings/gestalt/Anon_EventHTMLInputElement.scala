@@ -14,7 +14,7 @@ trait Anon_EventHTMLInputElement extends js.Object {
 object Anon_EventHTMLInputElement {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLInputElement, Event]): Anon_EventHTMLInputElement = {
-    val __obj = js.Dynamic.literal(event = event)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventHTMLInputElement]
   }

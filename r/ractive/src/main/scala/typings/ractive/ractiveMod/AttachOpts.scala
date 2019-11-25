@@ -24,10 +24,10 @@ object AttachOpts {
     target: String = null
   ): AttachOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append)
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
     if (insertAt != null) __obj.updateDynamic("insertAt")(insertAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachOpts]
   }
 }

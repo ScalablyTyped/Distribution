@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait DSNOption extends js.Object
 
+object DSNOption {
+  @scala.inline
+  def DELAY: typings.nodemailer.nodemailerStrings.DELAY = this.cast("DELAY")
+  @scala.inline
+  def FAILURE: typings.nodemailer.nodemailerStrings.FAILURE = this.cast("FAILURE")
+  @scala.inline
+  def NEVER: typings.nodemailer.nodemailerStrings.NEVER = this.cast("NEVER")
+  @scala.inline
+  def SUCCESS: typings.nodemailer.nodemailerStrings.SUCCESS = this.cast("SUCCESS")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

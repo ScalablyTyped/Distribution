@@ -22,9 +22,9 @@ object IOutputAudioConfig {
     synthesizeSpeechConfig: ISynthesizeSpeechConfig = null
   ): IOutputAudioConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding)
+    if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
     if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
-    if (synthesizeSpeechConfig != null) __obj.updateDynamic("synthesizeSpeechConfig")(synthesizeSpeechConfig)
+    if (synthesizeSpeechConfig != null) __obj.updateDynamic("synthesizeSpeechConfig")(synthesizeSpeechConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOutputAudioConfig]
   }
 }

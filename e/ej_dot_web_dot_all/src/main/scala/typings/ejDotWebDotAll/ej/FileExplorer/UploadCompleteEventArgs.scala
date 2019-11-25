@@ -44,14 +44,14 @@ object UploadCompleteEventArgs {
     xhr: js.Any = null
   ): UploadCompleteEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (e != null) __obj.updateDynamic("e")(e)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (responseText != null) __obj.updateDynamic("responseText")(responseText)
-    if (success != null) __obj.updateDynamic("success")(success)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (responseText != null) __obj.updateDynamic("responseText")(responseText.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadCompleteEventArgs]
   }
 }

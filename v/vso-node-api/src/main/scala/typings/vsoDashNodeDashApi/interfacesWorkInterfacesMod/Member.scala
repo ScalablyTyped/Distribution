@@ -15,7 +15,7 @@ trait Member extends js.Object {
 object Member {
   @scala.inline
   def apply(displayName: String, id: String, imageUrl: String, uniqueName: String, url: String): Member = {
-    val __obj = js.Dynamic.literal(displayName = displayName, id = id, imageUrl = imageUrl, uniqueName = uniqueName, url = url)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Member]
   }

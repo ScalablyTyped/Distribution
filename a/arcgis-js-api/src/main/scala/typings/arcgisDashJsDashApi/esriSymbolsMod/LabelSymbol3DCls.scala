@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.esriSymbolsMod
 
-import typings.arcgisDashJsDashApi.__esri.LabelSymbol3D
 import typings.arcgisDashJsDashApi.__esri.LabelSymbol3DProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation._
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html)
   */
-class LabelSymbol3DCls () extends LabelSymbol3D {
+class LabelSymbol3DCls ()
+  extends typings.arcgisDashJsDashApi.__esri.LabelSymbol3D {
   def this(properties: LabelSymbol3DProperties) = this()
   /**
     * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.

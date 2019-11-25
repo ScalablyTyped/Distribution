@@ -83,25 +83,25 @@ object GraphQLServerOptions {
     tracing: js.UndefOr[Boolean] = js.undefined,
     validationRules: js.Array[js.Function1[/* context */ ValidationContext, _]] = null
   ): GraphQLServerOptions[TContext, TRootValue] = {
-    val __obj = js.Dynamic.literal(schema = schema)
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (dataSources != null) __obj.updateDynamic("dataSources")(js.Any.fromFunction0(dataSources))
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (documentStore != null) __obj.updateDynamic("documentStore")(documentStore)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (documentStore != null) __obj.updateDynamic("documentStore")(documentStore.asInstanceOf[js.Any])
     if (executor != null) __obj.updateDynamic("executor")(js.Any.fromFunction1(executor))
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (formatResponse != null) __obj.updateDynamic("formatResponse")(js.Any.fromFunction2(formatResponse))
-    if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions)
-    if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (!js.isUndefined(reporting)) __obj.updateDynamic("reporting")(reporting)
+    if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions.asInstanceOf[js.Any])
+    if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(reporting)) __obj.updateDynamic("reporting")(reporting.asInstanceOf[js.Any])
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracing)) __obj.updateDynamic("tracing")(tracing)
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (!js.isUndefined(tracing)) __obj.updateDynamic("tracing")(tracing.asInstanceOf[js.Any])
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLServerOptions[TContext, TRootValue]]
   }
 }

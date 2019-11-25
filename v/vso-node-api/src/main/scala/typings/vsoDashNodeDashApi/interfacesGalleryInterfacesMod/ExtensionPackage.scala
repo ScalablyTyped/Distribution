@@ -14,7 +14,7 @@ trait ExtensionPackage extends js.Object {
 object ExtensionPackage {
   @scala.inline
   def apply(extensionManifest: String): ExtensionPackage = {
-    val __obj = js.Dynamic.literal(extensionManifest = extensionManifest)
+    val __obj = js.Dynamic.literal(extensionManifest = extensionManifest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionPackage]
   }

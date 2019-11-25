@@ -74,10 +74,10 @@ object IconSymbol3DLayerProperties {
   ): IconSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (anchorPosition != null) __obj.updateDynamic("anchorPosition")(anchorPosition)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (anchorPosition != null) __obj.updateDynamic("anchorPosition")(anchorPosition.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconSymbol3DLayerProperties]
   }

@@ -34,7 +34,7 @@ object ListProps {
     limit: Int | Double = null,
     offset: Int | Double = null
   ): ListProps = {
-    val __obj = js.Dynamic.literal(src = src)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction2(children))
     if (container != null) __obj.updateDynamic("container")(js.Any.fromFunction1(container))
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction3(filter))

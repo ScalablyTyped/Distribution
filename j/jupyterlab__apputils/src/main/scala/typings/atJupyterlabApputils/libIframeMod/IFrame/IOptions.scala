@@ -22,8 +22,8 @@ object IOptions {
   @scala.inline
   def apply(referrerPolicy: ReferrerPolicy = null, sandbox: js.Array[SandboxExceptions] = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy)
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

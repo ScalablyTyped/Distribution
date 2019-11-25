@@ -18,8 +18,8 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(css: String, map: js.Object = null): Result = {
-    val __obj = js.Dynamic.literal(css = css)
-    if (map != null) __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

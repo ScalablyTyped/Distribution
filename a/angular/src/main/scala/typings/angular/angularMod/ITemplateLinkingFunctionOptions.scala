@@ -21,9 +21,9 @@ object ITemplateLinkingFunctionOptions {
     transcludeControllers: StringDictionary[Anon_Instance] = null
   ): ITemplateLinkingFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (futureParentElement != null) __obj.updateDynamic("futureParentElement")(futureParentElement)
-    if (parentBoundTranscludeFn != null) __obj.updateDynamic("parentBoundTranscludeFn")(parentBoundTranscludeFn)
-    if (transcludeControllers != null) __obj.updateDynamic("transcludeControllers")(transcludeControllers)
+    if (futureParentElement != null) __obj.updateDynamic("futureParentElement")(futureParentElement.asInstanceOf[js.Any])
+    if (parentBoundTranscludeFn != null) __obj.updateDynamic("parentBoundTranscludeFn")(parentBoundTranscludeFn.asInstanceOf[js.Any])
+    if (transcludeControllers != null) __obj.updateDynamic("transcludeControllers")(transcludeControllers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITemplateLinkingFunctionOptions]
   }
 }

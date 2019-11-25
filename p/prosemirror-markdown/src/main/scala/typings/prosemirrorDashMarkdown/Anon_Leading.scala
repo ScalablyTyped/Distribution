@@ -13,8 +13,8 @@ object Anon_Leading {
   @scala.inline
   def apply(leading: String = null, trailing: String = null): Anon_Leading = {
     val __obj = js.Dynamic.literal()
-    if (leading != null) __obj.updateDynamic("leading")(leading)
-    if (trailing != null) __obj.updateDynamic("trailing")(trailing)
+    if (leading != null) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
+    if (trailing != null) __obj.updateDynamic("trailing")(trailing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Leading]
   }
 }

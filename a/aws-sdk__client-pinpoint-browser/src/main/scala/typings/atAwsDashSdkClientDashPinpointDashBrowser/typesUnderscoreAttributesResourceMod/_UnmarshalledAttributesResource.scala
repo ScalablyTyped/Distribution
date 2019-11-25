@@ -16,9 +16,9 @@ object _UnmarshalledAttributesResource {
   @scala.inline
   def apply(ApplicationId: String = null, AttributeType: String = null, Attributes: js.Array[String] = null): _UnmarshalledAttributesResource = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (AttributeType != null) __obj.updateDynamic("AttributeType")(AttributeType)
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (AttributeType != null) __obj.updateDynamic("AttributeType")(AttributeType.asInstanceOf[js.Any])
+    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledAttributesResource]
   }
 }

@@ -88,20 +88,20 @@ object Anon_CheckedCommand {
     visible: js.UndefOr[Boolean] = js.undefined
   ): Anon_CheckedCommand = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
-    if (documentUrlPatterns != null) __obj.updateDynamic("documentUrlPatterns")(documentUrlPatterns)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
+    if (documentUrlPatterns != null) __obj.updateDynamic("documentUrlPatterns")(documentUrlPatterns.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction2(onclick))
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (targetUrlPatterns != null) __obj.updateDynamic("targetUrlPatterns")(targetUrlPatterns)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (viewTypes != null) __obj.updateDynamic("viewTypes")(viewTypes)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (targetUrlPatterns != null) __obj.updateDynamic("targetUrlPatterns")(targetUrlPatterns.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (viewTypes != null) __obj.updateDynamic("viewTypes")(viewTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CheckedCommand]
   }
 }

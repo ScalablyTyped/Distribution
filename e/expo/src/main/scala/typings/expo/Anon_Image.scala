@@ -14,8 +14,8 @@ object Anon_Image {
   @scala.inline
   def apply(`type`: Image, image: Anon_Name = null): Anon_Image = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (image != null) __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Image]
   }
 }

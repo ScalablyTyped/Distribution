@@ -23,8 +23,8 @@ object Anon_ChunkNames {
     size: Double,
     isOverSizeLimit: js.UndefOr[Boolean] = js.undefined
   ): Anon_ChunkNames = {
-    val __obj = js.Dynamic.literal(chunkNames = chunkNames, chunks = chunks, emitted = emitted, name = name, size = size)
-    if (!js.isUndefined(isOverSizeLimit)) __obj.updateDynamic("isOverSizeLimit")(isOverSizeLimit)
+    val __obj = js.Dynamic.literal(chunkNames = chunkNames.asInstanceOf[js.Any], chunks = chunks.asInstanceOf[js.Any], emitted = emitted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOverSizeLimit)) __obj.updateDynamic("isOverSizeLimit")(isOverSizeLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChunkNames]
   }
 }

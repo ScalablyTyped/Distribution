@@ -12,7 +12,7 @@ object LinkedContentReferenceSuggestionState {
   @scala.inline
   def apply(sheetsChartReferenceSuggestionState: SheetsChartReferenceSuggestionState = null): LinkedContentReferenceSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (sheetsChartReferenceSuggestionState != null) __obj.updateDynamic("sheetsChartReferenceSuggestionState")(sheetsChartReferenceSuggestionState)
+    if (sheetsChartReferenceSuggestionState != null) __obj.updateDynamic("sheetsChartReferenceSuggestionState")(sheetsChartReferenceSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkedContentReferenceSuggestionState]
   }
 }

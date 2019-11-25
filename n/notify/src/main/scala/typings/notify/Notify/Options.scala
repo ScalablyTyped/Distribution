@@ -88,20 +88,20 @@ object Options {
     style: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowShow)) __obj.updateDynamic("arrowShow")(arrowShow)
+    if (!js.isUndefined(arrowShow)) __obj.updateDynamic("arrowShow")(arrowShow.asInstanceOf[js.Any])
     if (arrowSize != null) __obj.updateDynamic("arrowSize")(arrowSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
     if (autoHideDelay != null) __obj.updateDynamic("autoHideDelay")(autoHideDelay.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(clickToHide)) __obj.updateDynamic("clickToHide")(clickToHide)
-    if (elementPosition != null) __obj.updateDynamic("elementPosition")(elementPosition)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToHide)) __obj.updateDynamic("clickToHide")(clickToHide.asInstanceOf[js.Any])
+    if (elementPosition != null) __obj.updateDynamic("elementPosition")(elementPosition.asInstanceOf[js.Any])
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (globalPosition != null) __obj.updateDynamic("globalPosition")(globalPosition)
-    if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation)
+    if (globalPosition != null) __obj.updateDynamic("globalPosition")(globalPosition.asInstanceOf[js.Any])
+    if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation.asInstanceOf[js.Any])
     if (hideDuration != null) __obj.updateDynamic("hideDuration")(hideDuration.asInstanceOf[js.Any])
-    if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation)
+    if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation.asInstanceOf[js.Any])
     if (showDuration != null) __obj.updateDynamic("showDuration")(showDuration.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

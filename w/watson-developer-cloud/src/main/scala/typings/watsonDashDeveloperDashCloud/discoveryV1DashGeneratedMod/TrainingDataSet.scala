@@ -22,9 +22,9 @@ object TrainingDataSet {
     queries: js.Array[TrainingQuery] = null
   ): TrainingDataSet = {
     val __obj = js.Dynamic.literal()
-    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id)
-    if (environment_id != null) __obj.updateDynamic("environment_id")(environment_id)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
+    if (environment_id != null) __obj.updateDynamic("environment_id")(environment_id.asInstanceOf[js.Any])
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingDataSet]
   }
 }

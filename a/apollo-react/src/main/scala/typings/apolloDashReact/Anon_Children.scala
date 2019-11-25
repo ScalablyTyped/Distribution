@@ -16,7 +16,7 @@ trait Anon_Children extends js.Object {
 object Anon_Children {
   @scala.inline
   def apply(children: Validator[_], client: Validator[_], immutable: Requireable[_], store: Requireable[_]): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children, client = client, immutable = immutable, store = store)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], immutable = immutable.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Children]
   }

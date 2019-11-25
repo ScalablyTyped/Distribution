@@ -24,8 +24,8 @@ object Options {
     includeSymbols: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeObjectPrototype)) __obj.updateDynamic("includeObjectPrototype")(includeObjectPrototype)
-    if (!js.isUndefined(includeSymbols)) __obj.updateDynamic("includeSymbols")(includeSymbols)
+    if (!js.isUndefined(includeObjectPrototype)) __obj.updateDynamic("includeObjectPrototype")(includeObjectPrototype.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSymbols)) __obj.updateDynamic("includeSymbols")(includeSymbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

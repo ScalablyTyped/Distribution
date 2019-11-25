@@ -44,19 +44,19 @@ object TabsProps {
     unmountOnExit: js.UndefOr[Boolean] = js.undefined
   ): TabsProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey)
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
-    if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey)
-    if (!js.isUndefined(justified)) __obj.updateDynamic("justified")(justified)
-    if (!js.isUndefined(mountOnEnter)) __obj.updateDynamic("mountOnEnter")(mountOnEnter)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (paneWidth != null) __obj.updateDynamic("paneWidth")(paneWidth)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (tabWidth != null) __obj.updateDynamic("tabWidth")(tabWidth)
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
+    if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(justified)) __obj.updateDynamic("justified")(justified.asInstanceOf[js.Any])
+    if (!js.isUndefined(mountOnEnter)) __obj.updateDynamic("mountOnEnter")(mountOnEnter.asInstanceOf[js.Any])
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
+    if (paneWidth != null) __obj.updateDynamic("paneWidth")(paneWidth.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (tabWidth != null) __obj.updateDynamic("tabWidth")(tabWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsProps]
   }
 }

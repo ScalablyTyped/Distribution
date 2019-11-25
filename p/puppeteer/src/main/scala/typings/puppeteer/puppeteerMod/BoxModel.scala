@@ -27,7 +27,7 @@ object BoxModel {
     padding: js.Array[Box],
     width: Double
   ): BoxModel = {
-    val __obj = js.Dynamic.literal(border = border, content = content, height = height, margin = margin, padding = padding, width = width)
+    val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BoxModel]
   }

@@ -13,7 +13,7 @@ trait NearestRoadsResponse extends js.Object {
 object NearestRoadsResponse {
   @scala.inline
   def apply(snappedPoints: js.Array[Anon_Location]): NearestRoadsResponse = {
-    val __obj = js.Dynamic.literal(snappedPoints = snappedPoints)
+    val __obj = js.Dynamic.literal(snappedPoints = snappedPoints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NearestRoadsResponse]
   }

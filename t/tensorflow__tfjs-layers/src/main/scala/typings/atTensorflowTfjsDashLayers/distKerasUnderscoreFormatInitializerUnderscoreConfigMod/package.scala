@@ -18,7 +18,7 @@ package object distKerasUnderscoreFormatInitializerUnderscoreConfigMod {
 
   type ConstantSerialization = BaseSerialization[Constant, ConstantConfig]
   type IdentitySerialization = BaseSerialization[Identity, IdentityConfig]
-  type InitializerClassName = /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/initializer_config.InitializerSerialization['class_name'] */ js.Any
+  type InitializerClassName = /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/initializer_config.InitializerSerialization['class_name'] */ js.Any
   type InitializerSerialization = ZerosSerialization | OnesSerialization | ConstantSerialization | RandomUniformSerialization | RandomNormalSerialization | TruncatedNormalSerialization | IdentitySerialization | VarianceScalingSerialization | OrthogonalSerialization
   type OnesSerialization = BaseSerialization[Ones, js.Object]
   type OrthogonalSerialization = BaseSerialization[Orthogonal, OrthogonalConfig]

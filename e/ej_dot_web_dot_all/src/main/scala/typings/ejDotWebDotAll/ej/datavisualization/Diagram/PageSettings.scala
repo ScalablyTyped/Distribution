@@ -77,19 +77,19 @@ object PageSettings {
     showPageBreak: js.UndefOr[Boolean] = js.undefined
   ): PageSettings = {
     val __obj = js.Dynamic.literal()
-    if (autoScrollBorder != null) __obj.updateDynamic("autoScrollBorder")(autoScrollBorder)
+    if (autoScrollBorder != null) __obj.updateDynamic("autoScrollBorder")(autoScrollBorder.asInstanceOf[js.Any])
     if (boundaryConstraints != null) __obj.updateDynamic("boundaryConstraints")(boundaryConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage)
-    if (pageBackgroundColor != null) __obj.updateDynamic("pageBackgroundColor")(pageBackgroundColor)
-    if (pageBorderColor != null) __obj.updateDynamic("pageBorderColor")(pageBorderColor)
+    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage.asInstanceOf[js.Any])
+    if (pageBackgroundColor != null) __obj.updateDynamic("pageBackgroundColor")(pageBackgroundColor.asInstanceOf[js.Any])
+    if (pageBorderColor != null) __obj.updateDynamic("pageBorderColor")(pageBorderColor.asInstanceOf[js.Any])
     if (pageBorderWidth != null) __obj.updateDynamic("pageBorderWidth")(pageBorderWidth.asInstanceOf[js.Any])
     if (pageHeight != null) __obj.updateDynamic("pageHeight")(pageHeight.asInstanceOf[js.Any])
     if (pageMargin != null) __obj.updateDynamic("pageMargin")(pageMargin.asInstanceOf[js.Any])
     if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation.asInstanceOf[js.Any])
     if (pageWidth != null) __obj.updateDynamic("pageWidth")(pageWidth.asInstanceOf[js.Any])
     if (scrollLimit != null) __obj.updateDynamic("scrollLimit")(scrollLimit.asInstanceOf[js.Any])
-    if (scrollableArea != null) __obj.updateDynamic("scrollableArea")(scrollableArea)
-    if (!js.isUndefined(showPageBreak)) __obj.updateDynamic("showPageBreak")(showPageBreak)
+    if (scrollableArea != null) __obj.updateDynamic("scrollableArea")(scrollableArea.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPageBreak)) __obj.updateDynamic("showPageBreak")(showPageBreak.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSettings]
   }
 }

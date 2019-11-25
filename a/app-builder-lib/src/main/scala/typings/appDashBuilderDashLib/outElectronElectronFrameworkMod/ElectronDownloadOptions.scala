@@ -38,15 +38,15 @@ object ElectronDownloadOptions {
     version: String = null
   ): ElectronDownloadOptions = {
     val __obj = js.Dynamic.literal()
-    if (arch != null) __obj.updateDynamic("arch")(arch)
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (customDir != null) __obj.updateDynamic("customDir")(customDir)
-    if (customFilename != null) __obj.updateDynamic("customFilename")(customFilename)
-    if (!js.isUndefined(isVerifyChecksum)) __obj.updateDynamic("isVerifyChecksum")(isVerifyChecksum)
-    if (mirror != null) __obj.updateDynamic("mirror")(mirror)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (customDir != null) __obj.updateDynamic("customDir")(customDir.asInstanceOf[js.Any])
+    if (customFilename != null) __obj.updateDynamic("customFilename")(customFilename.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVerifyChecksum)) __obj.updateDynamic("isVerifyChecksum")(isVerifyChecksum.asInstanceOf[js.Any])
+    if (mirror != null) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElectronDownloadOptions]
   }
 }

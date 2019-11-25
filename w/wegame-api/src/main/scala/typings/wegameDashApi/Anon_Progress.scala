@@ -13,7 +13,7 @@ trait Anon_Progress extends js.Object {
 object Anon_Progress {
   @scala.inline
   def apply(progress: Double, totalBytesExpectedToWrite: Double, totalBytesWritten: Double): Anon_Progress = {
-    val __obj = js.Dynamic.literal(progress = progress, totalBytesExpectedToWrite = totalBytesExpectedToWrite, totalBytesWritten = totalBytesWritten)
+    val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], totalBytesExpectedToWrite = totalBytesExpectedToWrite.asInstanceOf[js.Any], totalBytesWritten = totalBytesWritten.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Progress]
   }

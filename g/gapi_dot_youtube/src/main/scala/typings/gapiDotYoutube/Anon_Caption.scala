@@ -46,7 +46,7 @@ object Anon_Caption {
     licensedContent: Boolean,
     regionRestriction: Anon_Allowed
   ): Anon_Caption = {
-    val __obj = js.Dynamic.literal(caption = caption, contentRating = contentRating, definition = definition, dimension = dimension, duration = duration, licensedContent = licensedContent, regionRestriction = regionRestriction)
+    val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], contentRating = contentRating.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], dimension = dimension.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], licensedContent = licensedContent.asInstanceOf[js.Any], regionRestriction = regionRestriction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Caption]
   }

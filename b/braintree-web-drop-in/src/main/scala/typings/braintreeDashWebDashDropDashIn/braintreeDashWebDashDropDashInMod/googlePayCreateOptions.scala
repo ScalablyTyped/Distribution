@@ -19,9 +19,9 @@ object googlePayCreateOptions {
     button: js.Any = null,
     googlePayVersion: String = null
   ): googlePayCreateOptions = {
-    val __obj = js.Dynamic.literal(merchantId = merchantId, transactionInfo = transactionInfo)
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (googlePayVersion != null) __obj.updateDynamic("googlePayVersion")(googlePayVersion)
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], transactionInfo = transactionInfo.asInstanceOf[js.Any])
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (googlePayVersion != null) __obj.updateDynamic("googlePayVersion")(googlePayVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[googlePayCreateOptions]
   }
 }

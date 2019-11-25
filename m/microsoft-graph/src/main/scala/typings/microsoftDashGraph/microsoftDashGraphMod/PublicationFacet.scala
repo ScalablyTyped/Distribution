@@ -15,8 +15,8 @@ object PublicationFacet {
   @scala.inline
   def apply(level: String = null, versionId: String = null): PublicationFacet = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicationFacet]
   }
 }

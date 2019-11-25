@@ -24,7 +24,7 @@ object Anon_CanvasIdData {
     y: Double,
     height: Int | Double = null
   ): Anon_CanvasIdData = {
-    val __obj = js.Dynamic.literal(canvasId = canvasId, data = data, wdith = wdith, x = x, y = y)
+    val __obj = js.Dynamic.literal(canvasId = canvasId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], wdith = wdith.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CanvasIdData]
   }

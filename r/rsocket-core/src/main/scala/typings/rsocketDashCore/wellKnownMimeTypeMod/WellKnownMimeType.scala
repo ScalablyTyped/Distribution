@@ -16,8 +16,8 @@ trait WellKnownMimeType extends js.Object {
 
 object WellKnownMimeType {
   @scala.inline
-  def apply(identifier: Double, string: String, toString: () => String): WellKnownMimeType = {
-    val __obj = js.Dynamic.literal(identifier = identifier, string = string, toString = js.Any.fromFunction0(toString))
+  def apply(identifier: Double, string: String): WellKnownMimeType = {
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WellKnownMimeType]
   }

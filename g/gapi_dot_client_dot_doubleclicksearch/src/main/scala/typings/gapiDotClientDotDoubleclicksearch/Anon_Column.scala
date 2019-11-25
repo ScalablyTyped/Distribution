@@ -18,9 +18,9 @@ object Anon_Column {
   @scala.inline
   def apply(column: ReportApiColumnSpec = null, operator: String = null, values: js.Array[_] = null): Anon_Column = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Column]
   }
 }

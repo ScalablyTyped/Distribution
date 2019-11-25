@@ -46,13 +46,13 @@ object TranslationMetadata {
     properties: PropertyBag = null,
     shortDescription: MultiformatMessageString = null
   ): TranslationMetadata = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (downloadUri != null) __obj.updateDynamic("downloadUri")(downloadUri)
-    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription)
-    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
-    if (informationUri != null) __obj.updateDynamic("informationUri")(informationUri)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (downloadUri != null) __obj.updateDynamic("downloadUri")(downloadUri.asInstanceOf[js.Any])
+    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription.asInstanceOf[js.Any])
+    if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
+    if (informationUri != null) __obj.updateDynamic("informationUri")(informationUri.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationMetadata]
   }
 }

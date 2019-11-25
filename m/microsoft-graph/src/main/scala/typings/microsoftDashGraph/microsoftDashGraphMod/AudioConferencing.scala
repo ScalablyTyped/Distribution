@@ -20,10 +20,10 @@ object AudioConferencing {
     tollNumber: String = null
   ): AudioConferencing = {
     val __obj = js.Dynamic.literal()
-    if (conferenceId != null) __obj.updateDynamic("conferenceId")(conferenceId)
-    if (dialinUrl != null) __obj.updateDynamic("dialinUrl")(dialinUrl)
-    if (tollFreeNumber != null) __obj.updateDynamic("tollFreeNumber")(tollFreeNumber)
-    if (tollNumber != null) __obj.updateDynamic("tollNumber")(tollNumber)
+    if (conferenceId != null) __obj.updateDynamic("conferenceId")(conferenceId.asInstanceOf[js.Any])
+    if (dialinUrl != null) __obj.updateDynamic("dialinUrl")(dialinUrl.asInstanceOf[js.Any])
+    if (tollFreeNumber != null) __obj.updateDynamic("tollFreeNumber")(tollFreeNumber.asInstanceOf[js.Any])
+    if (tollNumber != null) __obj.updateDynamic("tollNumber")(tollNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioConferencing]
   }
 }

@@ -16,9 +16,9 @@ object OfflineChecks {
   @scala.inline
   def apply(active: String = null, image: OfflineCheck = null, xhr: OfflineCheck = null): OfflineChecks = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineChecks]
   }
 }

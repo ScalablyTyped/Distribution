@@ -56,7 +56,7 @@ object RefinementInfo {
     UniqueCount: Double,
     UrlZone: Double
   ): RefinementInfo = {
-    val __obj = js.Dynamic.literal(Culture = Culture, DisplayName = DisplayName, Entropy = Entropy, HitCount = HitCount, Max = Max, Mean = Mean, Min = Min, Modifier = Modifier, NonZeroCount = NonZeroCount, PartitionId = PartitionId, Ratio = Ratio, RefinementCount = RefinementCount, RefinementName = RefinementName, RefinementToken = RefinementToken, RefinementValue = RefinementValue, RefinerName = RefinerName, RenderTemplateId = RenderTemplateId, Score = Score, Sum = Sum, Type = Type, UniqueCount = UniqueCount, UrlZone = UrlZone)
+    val __obj = js.Dynamic.literal(Culture = Culture.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], Entropy = Entropy.asInstanceOf[js.Any], HitCount = HitCount.asInstanceOf[js.Any], Max = Max.asInstanceOf[js.Any], Mean = Mean.asInstanceOf[js.Any], Min = Min.asInstanceOf[js.Any], Modifier = Modifier.asInstanceOf[js.Any], NonZeroCount = NonZeroCount.asInstanceOf[js.Any], PartitionId = PartitionId.asInstanceOf[js.Any], Ratio = Ratio.asInstanceOf[js.Any], RefinementCount = RefinementCount.asInstanceOf[js.Any], RefinementName = RefinementName.asInstanceOf[js.Any], RefinementToken = RefinementToken.asInstanceOf[js.Any], RefinementValue = RefinementValue.asInstanceOf[js.Any], RefinerName = RefinerName.asInstanceOf[js.Any], RenderTemplateId = RenderTemplateId.asInstanceOf[js.Any], Score = Score.asInstanceOf[js.Any], Sum = Sum.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UniqueCount = UniqueCount.asInstanceOf[js.Any], UrlZone = UrlZone.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RefinementInfo]
   }

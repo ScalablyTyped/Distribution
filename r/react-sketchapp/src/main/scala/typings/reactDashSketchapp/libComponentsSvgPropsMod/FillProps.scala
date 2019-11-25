@@ -16,7 +16,7 @@ object FillProps {
   @scala.inline
   def apply(fill: String = null, fillOpacity: NumberProp = null, fillRule: evenodd | nonzero = null): FillProps = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillProps]

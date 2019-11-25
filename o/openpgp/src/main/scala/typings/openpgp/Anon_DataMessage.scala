@@ -19,7 +19,7 @@ object Anon_DataMessage {
     message: Message,
     signature: String | ReadableStream[String] | Signature
   ): Anon_DataMessage = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message, signature = signature.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataMessage]
   }

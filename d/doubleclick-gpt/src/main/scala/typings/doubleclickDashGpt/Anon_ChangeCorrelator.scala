@@ -11,7 +11,7 @@ trait Anon_ChangeCorrelator extends js.Object {
 object Anon_ChangeCorrelator {
   @scala.inline
   def apply(changeCorrelator: Boolean): Anon_ChangeCorrelator = {
-    val __obj = js.Dynamic.literal(changeCorrelator = changeCorrelator)
+    val __obj = js.Dynamic.literal(changeCorrelator = changeCorrelator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChangeCorrelator]
   }

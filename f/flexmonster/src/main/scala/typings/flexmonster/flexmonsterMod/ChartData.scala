@@ -25,12 +25,12 @@ object ChartData {
     rows: js.Array[js.Object] = null,
     value: Int | Double = null
   ): ChartData = {
-    val __obj = js.Dynamic.literal(element = element)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (measure != null) __obj.updateDynamic("measure")(measure)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartData]
   }

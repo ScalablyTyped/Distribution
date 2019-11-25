@@ -19,8 +19,8 @@ object DataSourceValue {
   @scala.inline
   def apply(axis: String = null, measures: js.Array[DataSourceValuesMeasure] = null): DataSourceValue = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (measures != null) __obj.updateDynamic("measures")(measures)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceValue]
   }
 }

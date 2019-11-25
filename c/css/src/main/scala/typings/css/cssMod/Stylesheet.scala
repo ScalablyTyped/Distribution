@@ -18,10 +18,10 @@ object Stylesheet {
     `type`: String = null
   ): Stylesheet = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stylesheet]
   }
 }

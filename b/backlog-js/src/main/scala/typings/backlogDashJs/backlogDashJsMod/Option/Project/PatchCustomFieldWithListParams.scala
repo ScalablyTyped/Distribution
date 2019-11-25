@@ -22,13 +22,13 @@ object PatchCustomFieldWithListParams {
     required: js.UndefOr[Boolean] = js.undefined
   ): PatchCustomFieldWithListParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAddItem)) __obj.updateDynamic("allowAddItem")(allowAddItem)
-    if (!js.isUndefined(allowInput)) __obj.updateDynamic("allowInput")(allowInput)
-    if (applicableIssueTypes != null) __obj.updateDynamic("applicableIssueTypes")(applicableIssueTypes)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(allowAddItem)) __obj.updateDynamic("allowAddItem")(allowAddItem.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInput)) __obj.updateDynamic("allowInput")(allowInput.asInstanceOf[js.Any])
+    if (applicableIssueTypes != null) __obj.updateDynamic("applicableIssueTypes")(applicableIssueTypes.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchCustomFieldWithListParams]
   }
 }

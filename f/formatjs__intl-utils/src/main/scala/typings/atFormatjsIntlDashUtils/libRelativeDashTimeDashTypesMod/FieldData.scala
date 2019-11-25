@@ -29,14 +29,14 @@ object FieldData {
     `2`: String = null,
     `3`: String = null
   ): FieldData = {
-    val __obj = js.Dynamic.literal(future = future, past = past)
-    if (`-1` != null) __obj.updateDynamic("-1")(`-1`)
-    if (`-2` != null) __obj.updateDynamic("-2")(`-2`)
-    if (`-3` != null) __obj.updateDynamic("-3")(`-3`)
-    if (`0` != null) __obj.updateDynamic("0")(`0`)
-    if (`1` != null) __obj.updateDynamic("1")(`1`)
-    if (`2` != null) __obj.updateDynamic("2")(`2`)
-    if (`3` != null) __obj.updateDynamic("3")(`3`)
+    val __obj = js.Dynamic.literal(future = future.asInstanceOf[js.Any], past = past.asInstanceOf[js.Any])
+    if (`-1` != null) __obj.updateDynamic("-1")(`-1`.asInstanceOf[js.Any])
+    if (`-2` != null) __obj.updateDynamic("-2")(`-2`.asInstanceOf[js.Any])
+    if (`-3` != null) __obj.updateDynamic("-3")(`-3`.asInstanceOf[js.Any])
+    if (`0` != null) __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    if (`1` != null) __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    if (`2` != null) __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    if (`3` != null) __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldData]
   }
 }

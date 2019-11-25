@@ -12,7 +12,7 @@ trait Anon_MetalnessMap extends js.Object {
 object Anon_MetalnessMap {
   @scala.inline
   def apply(metalnessMap: IUniform): Anon_MetalnessMap = {
-    val __obj = js.Dynamic.literal(metalnessMap = metalnessMap)
+    val __obj = js.Dynamic.literal(metalnessMap = metalnessMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MetalnessMap]
   }

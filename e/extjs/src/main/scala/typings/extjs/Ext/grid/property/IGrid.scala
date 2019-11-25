@@ -58,10 +58,8 @@ object IGrid {
   @scala.inline
   def apply(
     IPanel: typings.extjs.Ext.grid.IPanel = null,
-    columnLines: js.UndefOr[Boolean] = js.undefined,
     customEditors: js.Any = null,
     customRenderers: js.Any = null,
-    enableColumnMove: js.UndefOr[Boolean] = js.undefined,
     getSource: () => _ = null,
     inferTypes: js.UndefOr[Boolean] = js.undefined,
     nameColumnWidth: js.Any = null,
@@ -75,22 +73,20 @@ object IGrid {
     valueField: java.lang.String = null
   ): IGrid = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IPanel)
-    if (!js.isUndefined(columnLines)) __obj.updateDynamic("columnLines")(columnLines)
-    if (customEditors != null) __obj.updateDynamic("customEditors")(customEditors)
-    if (customRenderers != null) __obj.updateDynamic("customRenderers")(customRenderers)
-    if (!js.isUndefined(enableColumnMove)) __obj.updateDynamic("enableColumnMove")(enableColumnMove)
+    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
+    if (customEditors != null) __obj.updateDynamic("customEditors")(customEditors.asInstanceOf[js.Any])
+    if (customRenderers != null) __obj.updateDynamic("customRenderers")(customRenderers.asInstanceOf[js.Any])
     if (getSource != null) __obj.updateDynamic("getSource")(js.Any.fromFunction0(getSource))
-    if (!js.isUndefined(inferTypes)) __obj.updateDynamic("inferTypes")(inferTypes)
-    if (nameColumnWidth != null) __obj.updateDynamic("nameColumnWidth")(nameColumnWidth)
-    if (nameField != null) __obj.updateDynamic("nameField")(nameField)
-    if (propertyNames != null) __obj.updateDynamic("propertyNames")(propertyNames)
+    if (!js.isUndefined(inferTypes)) __obj.updateDynamic("inferTypes")(inferTypes.asInstanceOf[js.Any])
+    if (nameColumnWidth != null) __obj.updateDynamic("nameColumnWidth")(nameColumnWidth.asInstanceOf[js.Any])
+    if (nameField != null) __obj.updateDynamic("nameField")(nameField.asInstanceOf[js.Any])
+    if (propertyNames != null) __obj.updateDynamic("propertyNames")(propertyNames.asInstanceOf[js.Any])
     if (removeProperty != null) __obj.updateDynamic("removeProperty")(js.Any.fromFunction1(removeProperty))
     if (setProperty != null) __obj.updateDynamic("setProperty")(js.Any.fromFunction3(setProperty))
     if (setSource != null) __obj.updateDynamic("setSource")(js.Any.fromFunction2(setSource))
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (sourceConfig != null) __obj.updateDynamic("sourceConfig")(sourceConfig)
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (sourceConfig != null) __obj.updateDynamic("sourceConfig")(sourceConfig.asInstanceOf[js.Any])
+    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGrid]
   }
 }

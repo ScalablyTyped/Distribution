@@ -14,9 +14,9 @@ trait ControlWrapperOptions extends js.Object {
 object ControlWrapperOptions {
   @scala.inline
   def apply(containerId: String, controlType: String, options: js.Object = null, state: js.Object = null): ControlWrapperOptions = {
-    val __obj = js.Dynamic.literal(containerId = containerId, controlType = controlType)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (state != null) __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(containerId = containerId.asInstanceOf[js.Any], controlType = controlType.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlWrapperOptions]
   }
 }

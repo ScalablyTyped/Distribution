@@ -33,14 +33,14 @@ object HTMLAttributesidclassNamestylemodifierstringdataSo {
     style: CSSProperties = null
   ): HTMLAttributesidclassNamestylemodifierstringdataSo = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
     if (renderFooter != null) __obj.updateDynamic("renderFooter")(js.Any.fromFunction0(renderFooter))
     if (renderHeader != null) __obj.updateDynamic("renderHeader")(js.Any.fromFunction0(renderHeader))
     if (renderRow != null) __obj.updateDynamic("renderRow")(js.Any.fromFunction2(renderRow))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNamestylemodifierstringdataSo]
   }
 }

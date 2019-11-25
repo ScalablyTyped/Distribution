@@ -17,7 +17,7 @@ trait Collection extends js.Object {
 object Collection {
   @scala.inline
   def apply(reportIds: js.Array[integer], usage: integer, usagePage: integer): Collection = {
-    val __obj = js.Dynamic.literal(reportIds = reportIds, usage = usage, usagePage = usagePage)
+    val __obj = js.Dynamic.literal(reportIds = reportIds.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], usagePage = usagePage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Collection]
   }

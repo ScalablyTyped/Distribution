@@ -82,18 +82,18 @@ trait NajaEventTarget extends EventTarget {
   def addEventListener_success(`type`: success, listener: NajaEventListener[SuccessEvent[_]], options: AddEventListenerOptions): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_type[T /* <: Event */](
-    `type`: /* import warning: ImportType.apply Failed type conversion: T['type'] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any,
     listener: NajaEventListener[T]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_type[T /* <: Event */](
-    `type`: /* import warning: ImportType.apply Failed type conversion: T['type'] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any,
     listener: NajaEventListener[T],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_type[T /* <: Event */](
-    `type`: /* import warning: ImportType.apply Failed type conversion: T['type'] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any,
     listener: NajaEventListener[T],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -161,18 +161,18 @@ trait NajaEventTarget extends EventTarget {
   def removeEventListener_success(`type`: success, listener: NajaEventListener[SuccessEvent[_]], options: AddEventListenerOptions): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_type[T /* <: Event */](
-    `type`: /* import warning: ImportType.apply Failed type conversion: T['type'] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any,
     listener: NajaEventListener[T]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_type[T /* <: Event */](
-    `type`: /* import warning: ImportType.apply Failed type conversion: T['type'] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any,
     listener: NajaEventListener[T],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_type[T /* <: Event */](
-    `type`: /* import warning: ImportType.apply Failed type conversion: T['type'] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any,
     listener: NajaEventListener[T],
     options: AddEventListenerOptions
   ): Unit = js.native

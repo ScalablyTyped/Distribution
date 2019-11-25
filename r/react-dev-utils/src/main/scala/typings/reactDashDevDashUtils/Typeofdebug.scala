@@ -24,7 +24,7 @@ trait Typeofdebug extends js.Object {
 object Typeofdebug {
   @scala.inline
   def apply(ProfilingPlugin: Instantiable0[ProfilingPlugin]): Typeofdebug = {
-    val __obj = js.Dynamic.literal(ProfilingPlugin = ProfilingPlugin)
+    val __obj = js.Dynamic.literal(ProfilingPlugin = ProfilingPlugin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofdebug]
   }

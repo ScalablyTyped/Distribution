@@ -13,7 +13,7 @@ object PartialClassNameMapMenuClassKey {
   @scala.inline
   def apply(paper: String = null): PartialClassNameMapMenuClassKey = {
     val __obj = js.Dynamic.literal()
-    if (paper != null) __obj.updateDynamic("paper")(paper)
+    if (paper != null) __obj.updateDynamic("paper")(paper.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapMenuClassKey]
   }
 }

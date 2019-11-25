@@ -44,10 +44,10 @@ object BookmarkCreationOptionsScreenshotSettings {
     layers: js.Array[Layer] = null,
     width: Int | Double = null
   ): BookmarkCreationOptionsScreenshotSettings = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (area != null) __obj.updateDynamic("area")(area)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookmarkCreationOptionsScreenshotSettings]
   }

@@ -13,8 +13,8 @@ object Anon_MessageDetail {
   @scala.inline
   def apply(messageDetail: String = null, messageSummary: String = null): Anon_MessageDetail = {
     val __obj = js.Dynamic.literal()
-    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)
-    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary)
+    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail.asInstanceOf[js.Any])
+    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MessageDetail]
   }
 }

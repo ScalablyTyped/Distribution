@@ -16,8 +16,8 @@ object SentimentOptions {
   @scala.inline
   def apply(document: js.UndefOr[Boolean] = js.undefined, targets: js.Array[String] = null): SentimentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(document)) __obj.updateDynamic("document")(document)
-    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (!js.isUndefined(document)) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentimentOptions]
   }
 }

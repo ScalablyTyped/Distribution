@@ -34,11 +34,11 @@ object AnnotationProps {
     if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationProps]
   }

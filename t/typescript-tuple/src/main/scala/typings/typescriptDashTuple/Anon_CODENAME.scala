@@ -14,7 +14,7 @@ trait Anon_CODENAME extends js.Object {
 object Anon_CODENAME {
   @scala.inline
   def apply(CODENAME: InfiniteTuple, ERROR: `Cannot reverse an infinite tuple`): Anon_CODENAME = {
-    val __obj = js.Dynamic.literal(CODENAME = CODENAME, ERROR = ERROR)
+    val __obj = js.Dynamic.literal(CODENAME = CODENAME.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CODENAME]
   }

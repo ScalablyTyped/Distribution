@@ -68,16 +68,16 @@ object ISignInProperties {
     theme: String = null,
     `type`: String = null
   ): ISignInProperties = {
-    val __obj = js.Dynamic.literal(element = element, name = name)
-    if (brand != null) __obj.updateDynamic("brand")(brand)
-    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
-    if (onloggedin != null) __obj.updateDynamic("onloggedin")(onloggedin)
-    if (onloggedout != null) __obj.updateDynamic("onloggedout")(onloggedout)
-    if (sign_in_text != null) __obj.updateDynamic("sign_in_text")(sign_in_text)
-    if (sign_out_text != null) __obj.updateDynamic("sign_out_text")(sign_out_text)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror.asInstanceOf[js.Any])
+    if (onloggedin != null) __obj.updateDynamic("onloggedin")(onloggedin.asInstanceOf[js.Any])
+    if (onloggedout != null) __obj.updateDynamic("onloggedout")(onloggedout.asInstanceOf[js.Any])
+    if (sign_in_text != null) __obj.updateDynamic("sign_in_text")(sign_in_text.asInstanceOf[js.Any])
+    if (sign_out_text != null) __obj.updateDynamic("sign_out_text")(sign_out_text.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISignInProperties]
   }
 }

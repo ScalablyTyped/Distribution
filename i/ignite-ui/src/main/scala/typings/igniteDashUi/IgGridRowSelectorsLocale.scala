@@ -45,11 +45,11 @@ object IgGridRowSelectorsLocale {
     selectedRecordsText: String = null
   ): IgGridRowSelectorsLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (deselectAllText != null) __obj.updateDynamic("deselectAllText")(deselectAllText)
-    if (deselectedRecordsText != null) __obj.updateDynamic("deselectedRecordsText")(deselectedRecordsText)
-    if (selectAllText != null) __obj.updateDynamic("selectAllText")(selectAllText)
-    if (selectedRecordsText != null) __obj.updateDynamic("selectedRecordsText")(selectedRecordsText)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (deselectAllText != null) __obj.updateDynamic("deselectAllText")(deselectAllText.asInstanceOf[js.Any])
+    if (deselectedRecordsText != null) __obj.updateDynamic("deselectedRecordsText")(deselectedRecordsText.asInstanceOf[js.Any])
+    if (selectAllText != null) __obj.updateDynamic("selectAllText")(selectAllText.asInstanceOf[js.Any])
+    if (selectedRecordsText != null) __obj.updateDynamic("selectedRecordsText")(selectedRecordsText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridRowSelectorsLocale]
   }
 }

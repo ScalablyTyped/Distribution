@@ -25,7 +25,7 @@ object ClientUtils {
     createRealtimeFile: (String, String, js.Function1[/* file */ DriveAPIFileResource, Unit]) => Unit,
     params: Anon_FileIds
   ): ClientUtils = {
-    val __obj = js.Dynamic.literal(RealtimeLoader = RealtimeLoader, createRealtimeFile = js.Any.fromFunction3(createRealtimeFile), params = params)
+    val __obj = js.Dynamic.literal(RealtimeLoader = RealtimeLoader.asInstanceOf[js.Any], createRealtimeFile = js.Any.fromFunction3(createRealtimeFile), params = params.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientUtils]
   }

@@ -13,8 +13,8 @@ object GetUserStarsCountParams {
   @scala.inline
   def apply(since: String = null, until: String = null): GetUserStarsCountParams = {
     val __obj = js.Dynamic.literal()
-    if (since != null) __obj.updateDynamic("since")(since)
-    if (until != null) __obj.updateDynamic("until")(until)
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
+    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserStarsCountParams]
   }
 }

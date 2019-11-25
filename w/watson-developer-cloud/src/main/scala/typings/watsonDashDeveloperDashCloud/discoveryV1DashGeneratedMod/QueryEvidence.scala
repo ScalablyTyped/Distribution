@@ -28,10 +28,10 @@ object QueryEvidence {
     start_offset: Int | Double = null
   ): QueryEvidence = {
     val __obj = js.Dynamic.literal()
-    if (document_id != null) __obj.updateDynamic("document_id")(document_id)
+    if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
     if (end_offset != null) __obj.updateDynamic("end_offset")(end_offset.asInstanceOf[js.Any])
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (start_offset != null) __obj.updateDynamic("start_offset")(start_offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryEvidence]
   }

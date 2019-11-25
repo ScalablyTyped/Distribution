@@ -12,7 +12,7 @@ trait Anon_BorderStyle extends js.Object {
 object Anon_BorderStyle {
   @scala.inline
   def apply(borderStyle: String, padding: Double): Anon_BorderStyle = {
-    val __obj = js.Dynamic.literal(borderStyle = borderStyle, padding = padding)
+    val __obj = js.Dynamic.literal(borderStyle = borderStyle.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderStyle]
   }

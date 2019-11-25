@@ -34,7 +34,7 @@ object Config {
     uphost: String,
     useCdnDomain: Boolean
   ): Config = {
-    val __obj = js.Dynamic.literal(checkByMD5 = checkByMD5, concurrentRequestLimit = concurrentRequestLimit, disableStatisticsReport = disableStatisticsReport, forceDirect = forceDirect, region = region.asInstanceOf[js.Any], retryCount = retryCount, uphost = uphost, useCdnDomain = useCdnDomain)
+    val __obj = js.Dynamic.literal(checkByMD5 = checkByMD5.asInstanceOf[js.Any], concurrentRequestLimit = concurrentRequestLimit.asInstanceOf[js.Any], disableStatisticsReport = disableStatisticsReport.asInstanceOf[js.Any], forceDirect = forceDirect.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], retryCount = retryCount.asInstanceOf[js.Any], uphost = uphost.asInstanceOf[js.Any], useCdnDomain = useCdnDomain.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

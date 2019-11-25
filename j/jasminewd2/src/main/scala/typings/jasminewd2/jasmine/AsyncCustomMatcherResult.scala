@@ -13,7 +13,7 @@ object AsyncCustomMatcherResult {
   @scala.inline
   def apply(pass: Boolean | js.Promise[Boolean], message: String = null): AsyncCustomMatcherResult = {
     val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncCustomMatcherResult]
   }
 }

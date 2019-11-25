@@ -22,10 +22,10 @@ object ServerPattern {
     maxMessages$: Int | Double = null,
     pubsub$: js.UndefOr[Boolean] = js.undefined
   ): ServerPattern = {
-    val __obj = js.Dynamic.literal(topic = topic)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (maxMessages$ != null) __obj.updateDynamic("maxMessages$")(maxMessages$.asInstanceOf[js.Any])
-    if (!js.isUndefined(pubsub$)) __obj.updateDynamic("pubsub$")(pubsub$)
+    if (!js.isUndefined(pubsub$)) __obj.updateDynamic("pubsub$")(pubsub$.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerPattern]
   }
 }

@@ -13,7 +13,7 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(typeUrl: String, value: Uint8Array | String): AsObject = {
-    val __obj = js.Dynamic.literal(typeUrl = typeUrl, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(typeUrl = typeUrl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

@@ -20,7 +20,7 @@ trait Anon_Rangemax extends js.Object {
 object Anon_Rangemax {
   @scala.inline
   def apply(range_max: Double, range_min: Double): Anon_Rangemax = {
-    val __obj = js.Dynamic.literal(range_max = range_max, range_min = range_min)
+    val __obj = js.Dynamic.literal(range_max = range_max.asInstanceOf[js.Any], range_min = range_min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rangemax]
   }

@@ -18,7 +18,7 @@ trait Anon_Cooldown extends js.Object {
 object Anon_Cooldown {
   @scala.inline
   def apply(level: Double, cooldown: Int | Double = null): Anon_Cooldown = {
-    val __obj = js.Dynamic.literal(level = level)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     if (cooldown != null) __obj.updateDynamic("cooldown")(cooldown.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cooldown]
   }

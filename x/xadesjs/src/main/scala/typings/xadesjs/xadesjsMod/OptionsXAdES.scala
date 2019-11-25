@@ -38,15 +38,15 @@ object OptionsXAdES {
     x509: js.Array[String] = null
   ): OptionsXAdES = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue)
-    if (policy != null) __obj.updateDynamic("policy")(policy)
-    if (productionPlace != null) __obj.updateDynamic("productionPlace")(productionPlace)
-    if (references != null) __obj.updateDynamic("references")(references)
-    if (signerRole != null) __obj.updateDynamic("signerRole")(signerRole)
-    if (signingCertificate != null) __obj.updateDynamic("signingCertificate")(signingCertificate)
-    if (signingTime != null) __obj.updateDynamic("signingTime")(signingTime)
-    if (x509 != null) __obj.updateDynamic("x509")(x509)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (productionPlace != null) __obj.updateDynamic("productionPlace")(productionPlace.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (signerRole != null) __obj.updateDynamic("signerRole")(signerRole.asInstanceOf[js.Any])
+    if (signingCertificate != null) __obj.updateDynamic("signingCertificate")(signingCertificate.asInstanceOf[js.Any])
+    if (signingTime != null) __obj.updateDynamic("signingTime")(signingTime.asInstanceOf[js.Any])
+    if (x509 != null) __obj.updateDynamic("x509")(x509.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsXAdES]
   }
 }

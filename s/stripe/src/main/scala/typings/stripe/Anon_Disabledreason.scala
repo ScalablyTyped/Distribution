@@ -31,7 +31,7 @@ trait Anon_Disabledreason extends js.Object {
 object Anon_Disabledreason {
   @scala.inline
   def apply(disabled_reason: String, due_by: Double, fields_needed: js.Array[String]): Anon_Disabledreason = {
-    val __obj = js.Dynamic.literal(disabled_reason = disabled_reason, due_by = due_by, fields_needed = fields_needed)
+    val __obj = js.Dynamic.literal(disabled_reason = disabled_reason.asInstanceOf[js.Any], due_by = due_by.asInstanceOf[js.Any], fields_needed = fields_needed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Disabledreason]
   }

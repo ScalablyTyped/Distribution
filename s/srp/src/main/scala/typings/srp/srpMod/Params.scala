@@ -16,7 +16,7 @@ trait Params extends js.Object {
 object Params {
   @scala.inline
   def apply(N: ^, N_length_bits: Double, g: ^, hash: String): Params = {
-    val __obj = js.Dynamic.literal(N = N, N_length_bits = N_length_bits, g = g, hash = hash)
+    val __obj = js.Dynamic.literal(N = N.asInstanceOf[js.Any], N_length_bits = N_length_bits.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Params]
   }

@@ -23,11 +23,11 @@ object OpenAPIParametersAsJSONSchema {
     query: IJsonSchema = null
   ): OpenAPIParametersAsJSONSchema = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (formData != null) __obj.updateDynamic("formData")(formData)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPIParametersAsJSONSchema]
   }
 }

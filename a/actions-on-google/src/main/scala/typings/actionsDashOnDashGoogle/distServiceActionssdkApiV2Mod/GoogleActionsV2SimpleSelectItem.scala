@@ -20,8 +20,8 @@ object GoogleActionsV2SimpleSelectItem {
   @scala.inline
   def apply(optionInfo: GoogleActionsV2OptionInfo = null, title: String = null): GoogleActionsV2SimpleSelectItem = {
     val __obj = js.Dynamic.literal()
-    if (optionInfo != null) __obj.updateDynamic("optionInfo")(optionInfo)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (optionInfo != null) __obj.updateDynamic("optionInfo")(optionInfo.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2SimpleSelectItem]
   }
 }

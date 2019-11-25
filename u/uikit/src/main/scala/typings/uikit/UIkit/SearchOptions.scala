@@ -46,8 +46,8 @@ object SearchOptions {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (param != null) __obj.updateDynamic("param")(param)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }
 }

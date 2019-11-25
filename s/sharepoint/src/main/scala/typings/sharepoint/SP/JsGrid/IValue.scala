@@ -14,8 +14,8 @@ object IValue {
   @scala.inline
   def apply(data: js.Any = null, localized: String = null): IValue = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (localized != null) __obj.updateDynamic("localized")(localized)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (localized != null) __obj.updateDynamic("localized")(localized.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValue]
   }
 }

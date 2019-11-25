@@ -4,7 +4,7 @@ import typings.chromeDashApps.Anon_ALL
 import typings.chromeDashApps.Anon_CHECKBOX
 import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chrome.integer
-import typings.chromeDashApps.chromeDashAppsStrings.all
+import typings.chromeDashApps.chromeDashAppsStrings.all_
 import typings.chromeDashApps.chromeDashAppsStrings.browser_action
 import typings.chromeDashApps.chromeDashAppsStrings.checkbox
 import typings.chromeDashApps.chromeDashAppsStrings.editable
@@ -44,7 +44,7 @@ trait CreateProperties extends js.Object {
         String, 
         Exclude[
           String, 
-          browser_action | launcher | all | frame | typings.chromeDashApps.chromeDashAppsStrings.audio | link | page | selection | page_action | editable | video | image
+          browser_action | launcher | all_ | frame | typings.chromeDashApps.chromeDashAppsStrings.audio | link | page | selection | page_action | editable | video | image
         ]
       ]
     ]
@@ -116,7 +116,7 @@ object CreateProperties {
         String, 
         Exclude[
           String, 
-          browser_action | launcher | all | frame | typings.chromeDashApps.chromeDashAppsStrings.audio | link | page | selection | page_action | editable | video | image
+          browser_action | launcher | all_ | frame | typings.chromeDashApps.chromeDashAppsStrings.audio | link | page | selection | page_action | editable | video | image
         ]
       ]
     ] = null,
@@ -131,17 +131,17 @@ object CreateProperties {
     visible: js.UndefOr[Boolean] = js.undefined
   ): CreateProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
-    if (documentUrlPatterns != null) __obj.updateDynamic("documentUrlPatterns")(documentUrlPatterns)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
+    if (documentUrlPatterns != null) __obj.updateDynamic("documentUrlPatterns")(documentUrlPatterns.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (targetUrlPatterns != null) __obj.updateDynamic("targetUrlPatterns")(targetUrlPatterns)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (targetUrlPatterns != null) __obj.updateDynamic("targetUrlPatterns")(targetUrlPatterns.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProperties]
   }
 }

@@ -13,7 +13,7 @@ object CurrencyColumn {
   @scala.inline
   def apply(locale: String = null): CurrencyColumn = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrencyColumn]
   }
 }

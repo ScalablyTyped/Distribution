@@ -17,8 +17,8 @@ object IRbmCarouselCard {
   @scala.inline
   def apply(cardContents: js.Array[IRbmCardContent] = null, cardWidth: CardWidth = null): IRbmCarouselCard = {
     val __obj = js.Dynamic.literal()
-    if (cardContents != null) __obj.updateDynamic("cardContents")(cardContents)
-    if (cardWidth != null) __obj.updateDynamic("cardWidth")(cardWidth)
+    if (cardContents != null) __obj.updateDynamic("cardContents")(cardContents.asInstanceOf[js.Any])
+    if (cardWidth != null) __obj.updateDynamic("cardWidth")(cardWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmCarouselCard]
   }
 }

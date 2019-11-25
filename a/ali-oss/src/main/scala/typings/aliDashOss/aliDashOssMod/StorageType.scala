@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait StorageType extends js.Object
 
+object StorageType {
+  @scala.inline
+  def Archive: typings.aliDashOss.aliDashOssStrings.Archive = this.cast("Archive")
+  @scala.inline
+  def IA: typings.aliDashOss.aliDashOssStrings.IA = this.cast("IA")
+  @scala.inline
+  def Standard: typings.aliDashOss.aliDashOssStrings.Standard = this.cast("Standard")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

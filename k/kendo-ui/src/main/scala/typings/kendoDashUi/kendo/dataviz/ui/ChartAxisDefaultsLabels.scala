@@ -34,17 +34,17 @@ object ChartAxisDefaultsLabels {
     visual: js.Function = null
   ): ChartAxisDefaultsLabels = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
-    if (visual != null) __obj.updateDynamic("visual")(visual)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisDefaultsLabels]
   }
 }

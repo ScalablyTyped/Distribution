@@ -18,7 +18,7 @@ object XmlSchemaItemParser {
   @scala.inline
   def apply(parser: IXmlSerializableConstructor = null): XmlSchemaItemParser = {
     val __obj = js.Dynamic.literal()
-    if (parser != null) __obj.updateDynamic("parser")(parser)
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlSchemaItemParser]
   }
 }

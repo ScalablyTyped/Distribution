@@ -26,9 +26,9 @@ object Anon_ActionConfiguration {
     continuationToken: String = null,
     encryptionKey: EncryptionKey with Anon_KMS = null
   ): Anon_ActionConfiguration = {
-    val __obj = js.Dynamic.literal(actionConfiguration = actionConfiguration, artifactCredentials = artifactCredentials, inputArtifacts = inputArtifacts, outputArtifacts = outputArtifacts)
-    if (continuationToken != null) __obj.updateDynamic("continuationToken")(continuationToken)
-    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey)
+    val __obj = js.Dynamic.literal(actionConfiguration = actionConfiguration.asInstanceOf[js.Any], artifactCredentials = artifactCredentials.asInstanceOf[js.Any], inputArtifacts = inputArtifacts.asInstanceOf[js.Any], outputArtifacts = outputArtifacts.asInstanceOf[js.Any])
+    if (continuationToken != null) __obj.updateDynamic("continuationToken")(continuationToken.asInstanceOf[js.Any])
+    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActionConfiguration]
   }
 }

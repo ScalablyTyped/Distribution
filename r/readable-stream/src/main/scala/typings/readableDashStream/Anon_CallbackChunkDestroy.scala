@@ -71,10 +71,10 @@ object Anon_CallbackChunkDestroy {
     ] = null
   ): Anon_CallbackChunkDestroy = {
     val __obj = js.Dynamic.literal()
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (`final` != null) __obj.updateDynamic("final")(`final`)
-    if (write != null) __obj.updateDynamic("write")(write)
-    if (writev != null) __obj.updateDynamic("writev")(writev)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (`final` != null) __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
+    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
+    if (writev != null) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CallbackChunkDestroy]
   }
 }

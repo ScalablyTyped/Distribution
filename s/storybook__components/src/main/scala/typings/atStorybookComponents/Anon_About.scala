@@ -99,7 +99,7 @@ object Anon_About {
       Theme
     ]) with Anon_DisplayName
   ): Anon_About = {
-    val __obj = js.Dynamic.literal(Button = Button, Field = Field, Input = Input, Select = Select, Textarea = Textarea)
+    val __obj = js.Dynamic.literal(Button = Button.asInstanceOf[js.Any], Field = Field.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any], Select = Select.asInstanceOf[js.Any], Textarea = Textarea.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_About]
   }

@@ -82,14 +82,14 @@ object ReactOptions {
     val __obj = js.Dynamic.literal()
     if (bindI18n != null) __obj.updateDynamic("bindI18n")(bindI18n.asInstanceOf[js.Any])
     if (bindStore != null) __obj.updateDynamic("bindStore")(bindStore.asInstanceOf[js.Any])
-    if (defaultTransParent != null) __obj.updateDynamic("defaultTransParent")(defaultTransParent)
+    if (defaultTransParent != null) __obj.updateDynamic("defaultTransParent")(defaultTransParent.asInstanceOf[js.Any])
     if (hashTransKey != null) __obj.updateDynamic("hashTransKey")(js.Any.fromFunction1(hashTransKey))
     if (nsMode != null) __obj.updateDynamic("nsMode")(nsMode.asInstanceOf[js.Any])
-    if (transEmptyNodeValue != null) __obj.updateDynamic("transEmptyNodeValue")(transEmptyNodeValue)
-    if (transKeepBasicHtmlNodesFor != null) __obj.updateDynamic("transKeepBasicHtmlNodesFor")(transKeepBasicHtmlNodesFor)
-    if (!js.isUndefined(transSupportBasicHtmlNodes)) __obj.updateDynamic("transSupportBasicHtmlNodes")(transSupportBasicHtmlNodes)
-    if (!js.isUndefined(useSuspense)) __obj.updateDynamic("useSuspense")(useSuspense)
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (transEmptyNodeValue != null) __obj.updateDynamic("transEmptyNodeValue")(transEmptyNodeValue.asInstanceOf[js.Any])
+    if (transKeepBasicHtmlNodesFor != null) __obj.updateDynamic("transKeepBasicHtmlNodesFor")(transKeepBasicHtmlNodesFor.asInstanceOf[js.Any])
+    if (!js.isUndefined(transSupportBasicHtmlNodes)) __obj.updateDynamic("transSupportBasicHtmlNodes")(transSupportBasicHtmlNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSuspense)) __obj.updateDynamic("useSuspense")(useSuspense.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactOptions]
   }
 }

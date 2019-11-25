@@ -13,7 +13,7 @@ trait Props[FormFields] extends js.Object {
 object Props {
   @scala.inline
   def apply[FormFields](url: String, render: /* hooks */ FormHooks[FormFields] => ReactNode = null): Props[FormFields] = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     __obj.asInstanceOf[Props[FormFields]]
   }

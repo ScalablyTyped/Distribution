@@ -38,19 +38,19 @@ object OutgoingRequestMessageOptions {
     viaHost: String = null
   ): OutgoingRequestMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (callId != null) __obj.updateDynamic("callId")(callId)
-    if (callIdPrefix != null) __obj.updateDynamic("callIdPrefix")(callIdPrefix)
+    if (callId != null) __obj.updateDynamic("callId")(callId.asInstanceOf[js.Any])
+    if (callIdPrefix != null) __obj.updateDynamic("callIdPrefix")(callIdPrefix.asInstanceOf[js.Any])
     if (cseq != null) __obj.updateDynamic("cseq")(cseq.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRport)) __obj.updateDynamic("forceRport")(forceRport)
-    if (fromDisplayName != null) __obj.updateDynamic("fromDisplayName")(fromDisplayName)
-    if (fromTag != null) __obj.updateDynamic("fromTag")(fromTag)
-    if (!js.isUndefined(hackViaTcp)) __obj.updateDynamic("hackViaTcp")(hackViaTcp)
-    if (optionTags != null) __obj.updateDynamic("optionTags")(optionTags)
-    if (routeSet != null) __obj.updateDynamic("routeSet")(routeSet)
-    if (toDisplayName != null) __obj.updateDynamic("toDisplayName")(toDisplayName)
-    if (toTag != null) __obj.updateDynamic("toTag")(toTag)
-    if (userAgentString != null) __obj.updateDynamic("userAgentString")(userAgentString)
-    if (viaHost != null) __obj.updateDynamic("viaHost")(viaHost)
+    if (!js.isUndefined(forceRport)) __obj.updateDynamic("forceRport")(forceRport.asInstanceOf[js.Any])
+    if (fromDisplayName != null) __obj.updateDynamic("fromDisplayName")(fromDisplayName.asInstanceOf[js.Any])
+    if (fromTag != null) __obj.updateDynamic("fromTag")(fromTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(hackViaTcp)) __obj.updateDynamic("hackViaTcp")(hackViaTcp.asInstanceOf[js.Any])
+    if (optionTags != null) __obj.updateDynamic("optionTags")(optionTags.asInstanceOf[js.Any])
+    if (routeSet != null) __obj.updateDynamic("routeSet")(routeSet.asInstanceOf[js.Any])
+    if (toDisplayName != null) __obj.updateDynamic("toDisplayName")(toDisplayName.asInstanceOf[js.Any])
+    if (toTag != null) __obj.updateDynamic("toTag")(toTag.asInstanceOf[js.Any])
+    if (userAgentString != null) __obj.updateDynamic("userAgentString")(userAgentString.asInstanceOf[js.Any])
+    if (viaHost != null) __obj.updateDynamic("viaHost")(viaHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutgoingRequestMessageOptions]
   }
 }

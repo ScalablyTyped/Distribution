@@ -15,12 +15,16 @@ trait LodashOrderBy1x2 extends js.Object {
   def apply[T /* <: js.Object */](
     iteratees: Many[
       (js.Function1[
-        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         NotVoid
-      ]) | (ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any])
+      ]) | (ValueIteratee[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+      ])
     ],
     collection: T
-  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  ): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   def apply[T](iteratees: Many[(js.Function1[/* value */ T, NotVoid]) | ValueIteratee[T]], collection: List[T]): js.Array[T] = js.native
   def apply[T /* <: js.Object */](iteratees: __): LodashOrderBy3x6[T] = js.native
   def apply[T /* <: js.Object */](iteratees: __, collection: T): LodashOrderBy3x6[T] = js.native

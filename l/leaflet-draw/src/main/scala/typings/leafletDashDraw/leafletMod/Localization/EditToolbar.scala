@@ -14,7 +14,7 @@ trait EditToolbar extends js.Object {
 object EditToolbar {
   @scala.inline
   def apply(actions: Anon_Cancel, buttons: Anon_Edit): EditToolbar = {
-    val __obj = js.Dynamic.literal(actions = actions, buttons = buttons)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EditToolbar]
   }

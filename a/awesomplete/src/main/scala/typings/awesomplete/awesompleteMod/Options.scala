@@ -35,7 +35,7 @@ object Options {
     sort: Boolean | SortFunction = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFirst)) __obj.updateDynamic("autoFirst")(autoFirst)
+    if (!js.isUndefined(autoFirst)) __obj.updateDynamic("autoFirst")(autoFirst.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(js.Any.fromFunction2(data))
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (item != null) __obj.updateDynamic("item")(js.Any.fromFunction2(item))

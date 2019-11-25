@@ -36,16 +36,16 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (ca != null) __obj.updateDynamic("ca")(ca)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(forceSave)) __obj.updateDynamic("forceSave")(forceSave)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceSave)) __obj.updateDynamic("forceSave")(forceSave.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (retryTimeout != null) __obj.updateDynamic("retryTimeout")(retryTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

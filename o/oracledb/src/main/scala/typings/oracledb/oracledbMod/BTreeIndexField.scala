@@ -26,8 +26,8 @@ object BTreeIndexField {
     maxlength: Int | Double = null,
     order: String | Double = null
   ): BTreeIndexField = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[BTreeIndexField]

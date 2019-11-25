@@ -26,13 +26,13 @@ object RTCConfiguration {
     rtcpMuxPolicy: RTCRtcpMuxPolicy = null
   ): RTCConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (bundlePolicy != null) __obj.updateDynamic("bundlePolicy")(bundlePolicy)
-    if (certificates != null) __obj.updateDynamic("certificates")(certificates)
+    if (bundlePolicy != null) __obj.updateDynamic("bundlePolicy")(bundlePolicy.asInstanceOf[js.Any])
+    if (certificates != null) __obj.updateDynamic("certificates")(certificates.asInstanceOf[js.Any])
     if (iceCandidatePoolSize != null) __obj.updateDynamic("iceCandidatePoolSize")(iceCandidatePoolSize.asInstanceOf[js.Any])
-    if (iceServers != null) __obj.updateDynamic("iceServers")(iceServers)
-    if (iceTransportPolicy != null) __obj.updateDynamic("iceTransportPolicy")(iceTransportPolicy)
-    if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity)
-    if (rtcpMuxPolicy != null) __obj.updateDynamic("rtcpMuxPolicy")(rtcpMuxPolicy)
+    if (iceServers != null) __obj.updateDynamic("iceServers")(iceServers.asInstanceOf[js.Any])
+    if (iceTransportPolicy != null) __obj.updateDynamic("iceTransportPolicy")(iceTransportPolicy.asInstanceOf[js.Any])
+    if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity.asInstanceOf[js.Any])
+    if (rtcpMuxPolicy != null) __obj.updateDynamic("rtcpMuxPolicy")(rtcpMuxPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCConfiguration]
   }
 }

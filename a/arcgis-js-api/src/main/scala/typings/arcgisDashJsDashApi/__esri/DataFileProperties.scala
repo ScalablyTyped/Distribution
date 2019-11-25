@@ -23,8 +23,8 @@ object DataFileProperties {
   @scala.inline
   def apply(itemId: String = null, url: String = null): DataFileProperties = {
     val __obj = js.Dynamic.literal()
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataFileProperties]
   }
 }

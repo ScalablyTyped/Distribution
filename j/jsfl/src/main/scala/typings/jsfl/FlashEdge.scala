@@ -27,7 +27,7 @@ object FlashEdge {
     splitEdge: Double => Unit,
     stroke: FlashStroke
   ): FlashEdge = {
-    val __obj = js.Dynamic.literal(cubicSegmentIndex = cubicSegmentIndex, getControl = js.Any.fromFunction1(getControl), getHalfEdge = js.Any.fromFunction1(getHalfEdge), id = id, isLine = isLine, setControl = js.Any.fromFunction3(setControl), splitEdge = js.Any.fromFunction1(splitEdge), stroke = stroke)
+    val __obj = js.Dynamic.literal(cubicSegmentIndex = cubicSegmentIndex.asInstanceOf[js.Any], getControl = js.Any.fromFunction1(getControl), getHalfEdge = js.Any.fromFunction1(getHalfEdge), id = id.asInstanceOf[js.Any], isLine = isLine.asInstanceOf[js.Any], setControl = js.Any.fromFunction3(setControl), splitEdge = js.Any.fromFunction1(splitEdge), stroke = stroke.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlashEdge]
   }

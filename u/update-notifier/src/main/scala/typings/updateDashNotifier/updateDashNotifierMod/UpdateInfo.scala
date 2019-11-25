@@ -14,8 +14,8 @@ trait UpdateInfo extends js.Object {
 object UpdateInfo {
   @scala.inline
   def apply(current: String, latest: String, name: String, `type`: String): UpdateInfo = {
-    val __obj = js.Dynamic.literal(current = current, latest = latest, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], latest = latest.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInfo]
   }
 }

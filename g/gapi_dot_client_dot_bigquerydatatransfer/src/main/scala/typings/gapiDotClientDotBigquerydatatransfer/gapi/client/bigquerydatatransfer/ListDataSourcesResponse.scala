@@ -20,8 +20,8 @@ object ListDataSourcesResponse {
   @scala.inline
   def apply(dataSources: js.Array[DataSource] = null, nextPageToken: String = null): ListDataSourcesResponse = {
     val __obj = js.Dynamic.literal()
-    if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataSourcesResponse]
   }
 }

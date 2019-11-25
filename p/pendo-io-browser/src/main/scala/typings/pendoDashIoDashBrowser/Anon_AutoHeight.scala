@@ -23,7 +23,7 @@ object Anon_AutoHeight {
     variables: js.Any,
     width: Double
   ): Anon_AutoHeight = {
-    val __obj = js.Dynamic.literal(autoHeight = autoHeight, css = css, height = height, position = position, variables = variables, width = width)
+    val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoHeight]
   }

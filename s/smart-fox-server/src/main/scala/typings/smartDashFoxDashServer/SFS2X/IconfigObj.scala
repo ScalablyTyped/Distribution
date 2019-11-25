@@ -27,11 +27,11 @@ object IconfigObj {
     zone: String = null
   ): IconfigObj = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL)
-    if (zone != null) __obj.updateDynamic("zone")(zone)
+    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.asInstanceOf[js.Any])
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconfigObj]
   }
 }

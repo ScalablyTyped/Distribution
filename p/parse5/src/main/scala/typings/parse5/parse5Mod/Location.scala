@@ -41,7 +41,7 @@ object Location {
     startLine: Double,
     startOffset: Double
   ): Location = {
-    val __obj = js.Dynamic.literal(endCol = endCol, endLine = endLine, endOffset = endOffset, startCol = startCol, startLine = startLine, startOffset = startOffset)
+    val __obj = js.Dynamic.literal(endCol = endCol.asInstanceOf[js.Any], endLine = endLine.asInstanceOf[js.Any], endOffset = endOffset.asInstanceOf[js.Any], startCol = startCol.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Location]
   }

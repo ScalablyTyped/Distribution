@@ -15,7 +15,7 @@ trait ERGTrainingResult extends js.Object {
 object ERGTrainingResult {
   @scala.inline
   def apply(error: Double, generate: js.Any, iterations: Double, test: js.Any, time: Double): ERGTrainingResult = {
-    val __obj = js.Dynamic.literal(error = error, generate = generate, iterations = iterations, test = test, time = time)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], generate = generate.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ERGTrainingResult]
   }

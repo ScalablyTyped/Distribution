@@ -51,10 +51,10 @@ object heatmapStatisticsHeatmapStatisticsParams {
     features: js.Array[Graphic] = null,
     field: String = null
   ): heatmapStatisticsHeatmapStatisticsParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[heatmapStatisticsHeatmapStatisticsParams]
   }
 }

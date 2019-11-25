@@ -32,7 +32,7 @@ object ICursorSelectionChangedEvent {
     selection: Selection,
     source: String
   ): ICursorSelectionChangedEvent = {
-    val __obj = js.Dynamic.literal(reason = reason, secondarySelections = secondarySelections, selection = selection, source = source)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], secondarySelections = secondarySelections.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICursorSelectionChangedEvent]
   }

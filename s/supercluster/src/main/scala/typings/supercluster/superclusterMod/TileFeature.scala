@@ -14,8 +14,8 @@ trait TileFeature[C, P] extends js.Object {
 object TileFeature {
   @scala.inline
   def apply[C, P](geometry: js.Array[js.Tuple2[Double, Double]], tags: (ClusterProperties with C) | P, `type`: `1`): TileFeature[C, P] = {
-    val __obj = js.Dynamic.literal(geometry = geometry, tags = tags.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileFeature[C, P]]
   }
 }

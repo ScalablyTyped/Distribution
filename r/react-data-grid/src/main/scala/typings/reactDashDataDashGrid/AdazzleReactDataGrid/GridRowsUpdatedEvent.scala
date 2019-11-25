@@ -45,7 +45,7 @@ object GridRowsUpdatedEvent {
     toRow: Double,
     updated: T
   ): GridRowsUpdatedEvent[T] = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], cellKey = cellKey, fromRow = fromRow, toRow = toRow, updated = updated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], cellKey = cellKey.asInstanceOf[js.Any], fromRow = fromRow.asInstanceOf[js.Any], toRow = toRow.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridRowsUpdatedEvent[T]]
   }

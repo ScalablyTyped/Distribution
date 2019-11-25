@@ -12,7 +12,7 @@ trait FaceProps extends js.Object {
 object FaceProps {
   @scala.inline
   def apply(chilren: js.Array[Element]): FaceProps = {
-    val __obj = js.Dynamic.literal(chilren = chilren)
+    val __obj = js.Dynamic.literal(chilren = chilren.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FaceProps]
   }

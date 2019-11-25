@@ -11,7 +11,7 @@ trait ConnectOpts extends js.Object {
 object ConnectOpts {
   @scala.inline
   def apply(adapter: String): ConnectOpts = {
-    val __obj = js.Dynamic.literal(adapter = adapter)
+    val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectOpts]
   }

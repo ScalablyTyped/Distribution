@@ -28,14 +28,14 @@ object DiagramShapeContent {
     text: String = null
   ): DiagramShapeContent = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramShapeContent]
   }
 }

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait _MostVisitedURLType extends js.Object
 
+object _MostVisitedURLType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def search: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.search = this.cast("search")
+  @scala.inline
+  def url: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.url = this.cast("url")
+}
+

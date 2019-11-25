@@ -17,7 +17,7 @@ trait RangeFilterOptions extends js.Object {
 object RangeFilterOptions {
   @scala.inline
   def apply(max: Double | Date, min: Double | Date, nullOption: NullOption): RangeFilterOptions = {
-    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], nullOption = nullOption)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], nullOption = nullOption.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RangeFilterOptions]
   }

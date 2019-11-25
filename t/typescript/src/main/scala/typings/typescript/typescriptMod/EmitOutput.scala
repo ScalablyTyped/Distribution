@@ -12,7 +12,7 @@ trait EmitOutput extends js.Object {
 object EmitOutput {
   @scala.inline
   def apply(emitSkipped: Boolean, outputFiles: js.Array[OutputFile]): EmitOutput = {
-    val __obj = js.Dynamic.literal(emitSkipped = emitSkipped, outputFiles = outputFiles)
+    val __obj = js.Dynamic.literal(emitSkipped = emitSkipped.asInstanceOf[js.Any], outputFiles = outputFiles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmitOutput]
   }

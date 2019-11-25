@@ -12,7 +12,7 @@ object UserUndelete {
   @scala.inline
   def apply(orgUnitPath: String = null): UserUndelete = {
     val __obj = js.Dynamic.literal()
-    if (orgUnitPath != null) __obj.updateDynamic("orgUnitPath")(orgUnitPath)
+    if (orgUnitPath != null) __obj.updateDynamic("orgUnitPath")(orgUnitPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserUndelete]
   }
 }

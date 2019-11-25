@@ -38,9 +38,9 @@ object RowSelectionChangingEventUIParam {
   ): RowSelectionChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (row != null) __obj.updateDynamic("row")(row)
-    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSelectionChangingEventUIParam]
   }

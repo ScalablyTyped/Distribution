@@ -27,13 +27,13 @@ object CreditCardUpdateRequest {
     number: String = null
   ): CreditCardUpdateRequest = {
     val __obj = js.Dynamic.literal()
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress)
-    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName)
-    if (cvv != null) __obj.updateDynamic("cvv")(cvv)
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
-    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth)
-    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear)
-    if (number != null) __obj.updateDynamic("number")(number)
+    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
+    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName.asInstanceOf[js.Any])
+    if (cvv != null) __obj.updateDynamic("cvv")(cvv.asInstanceOf[js.Any])
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
+    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreditCardUpdateRequest]
   }
 }

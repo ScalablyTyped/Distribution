@@ -81,10 +81,10 @@ object PullTasksRequest {
     responseView: String = null
   ): PullTasksRequest = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (leaseDuration != null) __obj.updateDynamic("leaseDuration")(leaseDuration)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (leaseDuration != null) __obj.updateDynamic("leaseDuration")(leaseDuration.asInstanceOf[js.Any])
     if (maxTasks != null) __obj.updateDynamic("maxTasks")(maxTasks.asInstanceOf[js.Any])
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullTasksRequest]
   }
 }

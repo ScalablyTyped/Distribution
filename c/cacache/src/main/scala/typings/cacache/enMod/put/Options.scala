@@ -63,10 +63,10 @@ object Options {
     size: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity)
-    if (!js.isUndefined(memoize)) __obj.updateDynamic("memoize")(memoize)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
+    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoize)) __obj.updateDynamic("memoize")(memoize.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

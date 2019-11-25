@@ -13,7 +13,7 @@ object Anon_Schema {
   @scala.inline
   def apply(schema: GraphQLSchema = null): Anon_Schema = {
     val __obj = js.Dynamic.literal()
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Schema]
   }
 }

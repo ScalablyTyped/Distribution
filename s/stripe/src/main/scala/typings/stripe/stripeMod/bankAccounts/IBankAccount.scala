@@ -51,13 +51,13 @@ object IBankAccount {
     customer: String = null,
     default_for_currency: js.UndefOr[Boolean] = js.undefined
   ): IBankAccount = {
-    val __obj = js.Dynamic.literal(bank_name = bank_name, country = country, currency = currency, fingerprint = fingerprint, id = id, last4 = last4, metadata = metadata, routing_number = routing_number, status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
-    if (account != null) __obj.updateDynamic("account")(account)
-    if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name)
+    val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
+    if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name.asInstanceOf[js.Any])
     if (account_holder_type != null) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer)
-    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency)
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBankAccount]
   }
 }

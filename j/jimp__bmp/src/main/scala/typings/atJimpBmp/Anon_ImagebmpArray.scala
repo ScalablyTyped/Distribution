@@ -12,7 +12,7 @@ object Anon_ImagebmpArray {
   @scala.inline
   def apply(`image/bmp`: js.Array[String]): Anon_ImagebmpArray = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image/bmp")(`image/bmp`)
+    __obj.updateDynamic("image/bmp")(`image/bmp`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ImagebmpArray]
   }
 }

@@ -22,9 +22,9 @@ object InferenceClassificationOverride {
     senderEmailAddress: EmailAddress = null
   ): InferenceClassificationOverride = {
     val __obj = js.Dynamic.literal()
-    if (classifyAs != null) __obj.updateDynamic("classifyAs")(classifyAs)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (senderEmailAddress != null) __obj.updateDynamic("senderEmailAddress")(senderEmailAddress)
+    if (classifyAs != null) __obj.updateDynamic("classifyAs")(classifyAs.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (senderEmailAddress != null) __obj.updateDynamic("senderEmailAddress")(senderEmailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferenceClassificationOverride]
   }
 }

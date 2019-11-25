@@ -1,8 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.defaultTimeout
 import typings.dojo.dojoStrings.largeDelta
 import typings.dojo.dojoStrings.minimumTimeout
@@ -99,16 +97,54 @@ class _Spinner () extends RangeBoundTextBox {
   @JSName("set")
   def set_value(property: value, value: String): Unit = js.native
   @JSName("watch")
-  def watch_defaultTimeout(property: defaultTimeout, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_defaultTimeout(
+    property: defaultTimeout,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_largeDelta(property: largeDelta, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_largeDelta(
+    property: largeDelta,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_minimumTimeout(property: minimumTimeout, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_minimumTimeout(
+    property: minimumTimeout,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_smallDelta(property: smallDelta, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_smallDelta(
+    property: smallDelta,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_timeoutChangeRate(property: timeoutChangeRate, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_timeoutChangeRate(
+    property: timeoutChangeRate,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

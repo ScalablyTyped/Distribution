@@ -15,7 +15,7 @@ trait Conf[T]
   extends Iterable[
       js.Tuple2[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
       ]
     ] {
   @JSName(scala.scalajs.js.Symbol.iterator)
@@ -23,7 +23,7 @@ trait Conf[T]
     IterableIterator[
       js.Tuple2[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
       ]
     ]
   ] = js.native
@@ -44,8 +44,11 @@ trait Conf[T]
   	@param key - The key of the item to get.
   	@param defaultValue - The default value if the item does not exist.
   	*/
-  def get[K /* <: String */](key: K): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native
-  def get[K /* <: String */](key: K, defaultValue: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native
+  def get[K /* <: String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def get[K /* <: String */](
+    key: K,
+    defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   /**
   	Check if an item exists.
   	@param key - The key of the item to check.
@@ -64,8 +67,12 @@ trait Conf[T]
   def onDidChange[K /* <: String */](
     key: K,
     callback: js.Function2[
-      /* newValue */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
-      /* oldValue */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
+      /* newValue */ js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ], 
+      /* oldValue */ js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ], 
       Unit
     ]
   ): js.Function0[Unit] = js.native
@@ -84,6 +91,6 @@ trait Conf[T]
   	@param key - You can use [dot-notation](https://github.com/sindresorhus/dot-prop) in a key to access nested properties.
   	@param value - Must be JSON serializable. Trying to set the type `undefined`, `function`, or `symbol` will result in a `TypeError`.
   	*/
-  def set[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): Unit = js.native
+  def set[K /* <: String */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): Unit = js.native
 }
 

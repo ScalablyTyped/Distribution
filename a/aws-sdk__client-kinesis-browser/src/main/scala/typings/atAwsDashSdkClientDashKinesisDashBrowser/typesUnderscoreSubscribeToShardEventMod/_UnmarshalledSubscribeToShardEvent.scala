@@ -20,7 +20,7 @@ object _UnmarshalledSubscribeToShardEvent {
     MillisBehindLatest: Double,
     Records: js.Array[_UnmarshalledRecord]
   ): _UnmarshalledSubscribeToShardEvent = {
-    val __obj = js.Dynamic.literal(ContinuationSequenceNumber = ContinuationSequenceNumber, MillisBehindLatest = MillisBehindLatest, Records = Records)
+    val __obj = js.Dynamic.literal(ContinuationSequenceNumber = ContinuationSequenceNumber.asInstanceOf[js.Any], MillisBehindLatest = MillisBehindLatest.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledSubscribeToShardEvent]
   }

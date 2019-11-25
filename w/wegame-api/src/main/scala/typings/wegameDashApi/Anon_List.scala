@@ -14,7 +14,7 @@ trait Anon_List extends js.Object {
 object Anon_List {
   @scala.inline
   def apply(list: js.Array[Anon_AvatarUrl]): Anon_List = {
-    val __obj = js.Dynamic.literal(list = list)
+    val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_List]
   }

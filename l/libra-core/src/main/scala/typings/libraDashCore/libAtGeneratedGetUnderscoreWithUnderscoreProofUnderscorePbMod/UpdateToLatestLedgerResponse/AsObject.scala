@@ -27,8 +27,8 @@ object AsObject {
     ],
     ledgerInfoWithSigs: typings.libraDashCore.libAtGeneratedLedgerUnderscoreInfoUnderscorePbMod.LedgerInfoWithSignatures.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(responseItemsList = responseItemsList, validatorChangeEventsList = validatorChangeEventsList)
-    if (ledgerInfoWithSigs != null) __obj.updateDynamic("ledgerInfoWithSigs")(ledgerInfoWithSigs)
+    val __obj = js.Dynamic.literal(responseItemsList = responseItemsList.asInstanceOf[js.Any], validatorChangeEventsList = validatorChangeEventsList.asInstanceOf[js.Any])
+    if (ledgerInfoWithSigs != null) __obj.updateDynamic("ledgerInfoWithSigs")(ledgerInfoWithSigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

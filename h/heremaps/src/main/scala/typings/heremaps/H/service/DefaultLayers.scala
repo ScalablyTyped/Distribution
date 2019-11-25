@@ -26,7 +26,7 @@ object DefaultLayers {
     terrain: MapType,
     venues: TileLayer
   ): DefaultLayers = {
-    val __obj = js.Dynamic.literal(incidents = incidents, normal = normal, satellite = satellite, terrain = terrain, venues = venues)
+    val __obj = js.Dynamic.literal(incidents = incidents.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], satellite = satellite.asInstanceOf[js.Any], terrain = terrain.asInstanceOf[js.Any], venues = venues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefaultLayers]
   }

@@ -61,13 +61,13 @@ object NodesSubProcess {
     `type`: BPMNSubProcessTypes | String = null
   ): NodesSubProcess = {
     val __obj = js.Dynamic.literal()
-    if (Processes != null) __obj.updateDynamic("Processes")(Processes)
-    if (!js.isUndefined(adhoc)) __obj.updateDynamic("adhoc")(adhoc)
+    if (Processes != null) __obj.updateDynamic("Processes")(Processes.asInstanceOf[js.Any])
+    if (!js.isUndefined(adhoc)) __obj.updateDynamic("adhoc")(adhoc.asInstanceOf[js.Any])
     if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
-    if (!js.isUndefined(compensation)) __obj.updateDynamic("compensation")(compensation)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(compensation)) __obj.updateDynamic("compensation")(compensation.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

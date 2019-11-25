@@ -24,11 +24,11 @@ object PostingAlbumVideoItem {
     usertags: PostingUsertags = null,
     videoInfo: Anon_Duration = null
   ): PostingAlbumVideoItem = {
-    val __obj = js.Dynamic.literal(coverImage = coverImage, video = video)
+    val __obj = js.Dynamic.literal(coverImage = coverImage.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
     if (transcodeDelay != null) __obj.updateDynamic("transcodeDelay")(transcodeDelay.asInstanceOf[js.Any])
-    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId)
-    if (usertags != null) __obj.updateDynamic("usertags")(usertags)
-    if (videoInfo != null) __obj.updateDynamic("videoInfo")(videoInfo)
+    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])
+    if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
+    if (videoInfo != null) __obj.updateDynamic("videoInfo")(videoInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostingAlbumVideoItem]
   }
 }

@@ -18,7 +18,7 @@ object Anon_ScrollToFirstRowOnChange {
     y: Boolean | Double | String = null
   ): Anon_ScrollToFirstRowOnChange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(scrollToFirstRowOnChange)) __obj.updateDynamic("scrollToFirstRowOnChange")(scrollToFirstRowOnChange)
+    if (!js.isUndefined(scrollToFirstRowOnChange)) __obj.updateDynamic("scrollToFirstRowOnChange")(scrollToFirstRowOnChange.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ScrollToFirstRowOnChange]

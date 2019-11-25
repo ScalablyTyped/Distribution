@@ -74,7 +74,7 @@ object Anon_Clockwise {
     startAngle: Int | Double = null
   ): Anon_Clockwise = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise)
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise.asInstanceOf[js.Any])
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])

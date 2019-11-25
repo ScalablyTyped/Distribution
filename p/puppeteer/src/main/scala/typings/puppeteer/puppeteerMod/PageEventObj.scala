@@ -76,9 +76,9 @@ object PageEventObj {
     close: js.UndefOr[scala.Nothing] = js.undefined,
     load: js.UndefOr[scala.Nothing] = js.undefined
   ): PageEventObj = {
-    val __obj = js.Dynamic.literal(console = console, dialog = dialog, error = error, frameattached = frameattached, framedetached = framedetached, framenavigated = framenavigated, metrics = metrics, pageerror = pageerror, popup = popup, request = request, requestfailed = requestfailed, requestfinished = requestfinished, response = response, workercreated = workercreated, workerdestroyed = workerdestroyed)
-    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close)
-    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load)
+    val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], frameattached = frameattached.asInstanceOf[js.Any], framedetached = framedetached.asInstanceOf[js.Any], framenavigated = framenavigated.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], pageerror = pageerror.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], requestfailed = requestfailed.asInstanceOf[js.Any], requestfinished = requestfinished.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], workercreated = workercreated.asInstanceOf[js.Any], workerdestroyed = workerdestroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageEventObj]
   }
 }

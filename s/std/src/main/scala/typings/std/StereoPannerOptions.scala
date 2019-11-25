@@ -18,8 +18,8 @@ object StereoPannerOptions {
   ): StereoPannerOptions = {
     val __obj = js.Dynamic.literal()
     if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode)
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation)
+    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
+    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
     if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
     __obj.asInstanceOf[StereoPannerOptions]
   }

@@ -13,7 +13,7 @@ trait AssertQueue extends js.Object {
 object AssertQueue {
   @scala.inline
   def apply(consumerCount: Double, messageCount: Double, queue: String): AssertQueue = {
-    val __obj = js.Dynamic.literal(consumerCount = consumerCount, messageCount = messageCount, queue = queue)
+    val __obj = js.Dynamic.literal(consumerCount = consumerCount.asInstanceOf[js.Any], messageCount = messageCount.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AssertQueue]
   }

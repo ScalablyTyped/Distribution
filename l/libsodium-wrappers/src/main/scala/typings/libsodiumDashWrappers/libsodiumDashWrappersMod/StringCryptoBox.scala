@@ -12,7 +12,7 @@ trait StringCryptoBox extends js.Object {
 object StringCryptoBox {
   @scala.inline
   def apply(ciphertext: String, mac: String): StringCryptoBox = {
-    val __obj = js.Dynamic.literal(ciphertext = ciphertext, mac = mac)
+    val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StringCryptoBox]
   }

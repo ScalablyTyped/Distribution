@@ -11,7 +11,7 @@ trait Anon_FieldList extends js.Object {
 object Anon_FieldList {
   @scala.inline
   def apply(FieldList: Double): Anon_FieldList = {
-    val __obj = js.Dynamic.literal(FieldList = FieldList)
+    val __obj = js.Dynamic.literal(FieldList = FieldList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FieldList]
   }

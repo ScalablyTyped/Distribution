@@ -34,8 +34,8 @@ trait MessageReceived extends VoxImplantIMEvent {
 object MessageReceived {
   @scala.inline
   def apply(content: String, id: String, message_id: String, to: String, resource: String = null): MessageReceived = {
-    val __obj = js.Dynamic.literal(content = content, id = id, message_id = message_id, to = to)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageReceived]
   }
 }

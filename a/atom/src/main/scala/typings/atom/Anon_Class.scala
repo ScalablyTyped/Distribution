@@ -34,11 +34,11 @@ object Anon_Class {
     trigger: click | hover | focus | manual = null
   ): Anon_Class = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (keyBindingCommand != null) __obj.updateDynamic("keyBindingCommand")(keyBindingCommand)
-    if (keyBindingTarget != null) __obj.updateDynamic("keyBindingTarget")(keyBindingTarget)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (keyBindingCommand != null) __obj.updateDynamic("keyBindingCommand")(keyBindingCommand.asInstanceOf[js.Any])
+    if (keyBindingTarget != null) __obj.updateDynamic("keyBindingTarget")(keyBindingTarget.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])

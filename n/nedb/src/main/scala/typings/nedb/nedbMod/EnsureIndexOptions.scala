@@ -19,10 +19,10 @@ object EnsureIndexOptions {
     sparse: js.UndefOr[Boolean] = js.undefined,
     unique: js.UndefOr[Boolean] = js.undefined
   ): EnsureIndexOptions = {
-    val __obj = js.Dynamic.literal(fieldName = fieldName)
+    val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any])
     if (expireAfterSeconds != null) __obj.updateDynamic("expireAfterSeconds")(expireAfterSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnsureIndexOptions]
   }
 }

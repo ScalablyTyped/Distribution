@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait InputAdornmentClassKey extends js.Object
 
+object InputAdornmentClassKey {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def disablePointerEvents: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.disablePointerEvents = this.cast("disablePointerEvents")
+  @scala.inline
+  def filled: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.filled = this.cast("filled")
+  @scala.inline
+  def positionEnd: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.positionEnd = this.cast("positionEnd")
+  @scala.inline
+  def positionStart: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.positionStart = this.cast("positionStart")
+  @scala.inline
+  def root: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.root = this.cast("root")
+}
+

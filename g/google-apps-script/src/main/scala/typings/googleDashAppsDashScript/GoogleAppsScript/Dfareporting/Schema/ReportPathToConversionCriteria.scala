@@ -30,15 +30,15 @@ object ReportPathToConversionCriteria {
     reportProperties: ReportPathToConversionCriteriaReportProperties = null
   ): ReportPathToConversionCriteria = {
     val __obj = js.Dynamic.literal()
-    if (activityFilters != null) __obj.updateDynamic("activityFilters")(activityFilters)
-    if (conversionDimensions != null) __obj.updateDynamic("conversionDimensions")(conversionDimensions)
-    if (customFloodlightVariables != null) __obj.updateDynamic("customFloodlightVariables")(customFloodlightVariables)
-    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents)
-    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
-    if (floodlightConfigId != null) __obj.updateDynamic("floodlightConfigId")(floodlightConfigId)
-    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
-    if (perInteractionDimensions != null) __obj.updateDynamic("perInteractionDimensions")(perInteractionDimensions)
-    if (reportProperties != null) __obj.updateDynamic("reportProperties")(reportProperties)
+    if (activityFilters != null) __obj.updateDynamic("activityFilters")(activityFilters.asInstanceOf[js.Any])
+    if (conversionDimensions != null) __obj.updateDynamic("conversionDimensions")(conversionDimensions.asInstanceOf[js.Any])
+    if (customFloodlightVariables != null) __obj.updateDynamic("customFloodlightVariables")(customFloodlightVariables.asInstanceOf[js.Any])
+    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents.asInstanceOf[js.Any])
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
+    if (floodlightConfigId != null) __obj.updateDynamic("floodlightConfigId")(floodlightConfigId.asInstanceOf[js.Any])
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames.asInstanceOf[js.Any])
+    if (perInteractionDimensions != null) __obj.updateDynamic("perInteractionDimensions")(perInteractionDimensions.asInstanceOf[js.Any])
+    if (reportProperties != null) __obj.updateDynamic("reportProperties")(reportProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportPathToConversionCriteria]
   }
 }

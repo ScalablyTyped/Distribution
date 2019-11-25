@@ -34,16 +34,16 @@ object MakeStoreOptions {
     serializeState: /* any */ js.Any => _ = null,
     storeKey: String = null
   ): MakeStoreOptions = {
-    val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], isServer = isServer, pathname = pathname, query = query, store = store)
-    if (asPath != null) __obj.updateDynamic("asPath")(asPath)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+    if (asPath != null) __obj.updateDynamic("asPath")(asPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (deserializeState != null) __obj.updateDynamic("deserializeState")(js.Any.fromFunction1(deserializeState))
-    if (err != null) __obj.updateDynamic("err")(err)
-    if (!js.isUndefined(overrideIsServer)) __obj.updateDynamic("overrideIsServer")(overrideIsServer)
-    if (req != null) __obj.updateDynamic("req")(req)
-    if (res != null) __obj.updateDynamic("res")(res)
+    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideIsServer)) __obj.updateDynamic("overrideIsServer")(overrideIsServer.asInstanceOf[js.Any])
+    if (req != null) __obj.updateDynamic("req")(req.asInstanceOf[js.Any])
+    if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
     if (serializeState != null) __obj.updateDynamic("serializeState")(js.Any.fromFunction1(serializeState))
-    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey)
+    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeStoreOptions]
   }
 }

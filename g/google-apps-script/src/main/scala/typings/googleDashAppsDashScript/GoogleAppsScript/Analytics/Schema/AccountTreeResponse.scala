@@ -20,10 +20,10 @@ object AccountTreeResponse {
     webproperty: Webproperty = null
   ): AccountTreeResponse = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (webproperty != null) __obj.updateDynamic("webproperty")(webproperty)
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (webproperty != null) __obj.updateDynamic("webproperty")(webproperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountTreeResponse]
   }
 }

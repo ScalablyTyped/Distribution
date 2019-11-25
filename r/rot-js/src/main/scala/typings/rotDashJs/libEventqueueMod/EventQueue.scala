@@ -59,7 +59,7 @@ object EventQueue {
     getTime: () => Double,
     remove: T => Boolean
   ): EventQueue[T] = {
-    val __obj = js.Dynamic.literal(_eventTimes = _eventTimes, _events = _events, _remove = js.Any.fromFunction1(_remove), _time = _time, add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction0(get), getEventTime = js.Any.fromFunction1(getEventTime), getTime = js.Any.fromFunction0(getTime), remove = js.Any.fromFunction1(remove))
+    val __obj = js.Dynamic.literal(_eventTimes = _eventTimes.asInstanceOf[js.Any], _events = _events.asInstanceOf[js.Any], _remove = js.Any.fromFunction1(_remove), _time = _time.asInstanceOf[js.Any], add = js.Any.fromFunction2(add), clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction0(get), getEventTime = js.Any.fromFunction1(getEventTime), getTime = js.Any.fromFunction0(getTime), remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[EventQueue[T]]
   }

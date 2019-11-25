@@ -20,7 +20,7 @@ object ConsumerPropsExplicitRender {
   ): ConsumerPropsExplicitRender[T] = {
     val __obj = js.Dynamic.literal()
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (select != null) __obj.updateDynamic("select")(select)
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumerPropsExplicitRender[T]]
   }
 }

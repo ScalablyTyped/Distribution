@@ -25,7 +25,7 @@ object CascadeConfiguration {
     Share: CascadeType,
     Unshare: CascadeType
   ): CascadeConfiguration = {
-    val __obj = js.Dynamic.literal(Assign = Assign, Delete = Delete, ExtensionData = ExtensionData, Merge = Merge, Reparent = Reparent, Share = Share, Unshare = Unshare)
+    val __obj = js.Dynamic.literal(Assign = Assign.asInstanceOf[js.Any], Delete = Delete.asInstanceOf[js.Any], ExtensionData = ExtensionData.asInstanceOf[js.Any], Merge = Merge.asInstanceOf[js.Any], Reparent = Reparent.asInstanceOf[js.Any], Share = Share.asInstanceOf[js.Any], Unshare = Unshare.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CascadeConfiguration]
   }

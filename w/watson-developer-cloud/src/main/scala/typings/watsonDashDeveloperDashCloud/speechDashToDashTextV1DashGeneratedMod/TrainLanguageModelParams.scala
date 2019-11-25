@@ -26,10 +26,10 @@ object TrainLanguageModelParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     word_type_to_add: WordTypeToAdd | String = null
   ): TrainLanguageModelParams = {
-    val __obj = js.Dynamic.literal(customization_id = customization_id)
+    val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
     if (customization_weight != null) __obj.updateDynamic("customization_weight")(customization_weight.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     if (word_type_to_add != null) __obj.updateDynamic("word_type_to_add")(word_type_to_add.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainLanguageModelParams]
   }

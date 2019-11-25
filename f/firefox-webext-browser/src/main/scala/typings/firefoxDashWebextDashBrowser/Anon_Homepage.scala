@@ -13,8 +13,8 @@ object Anon_Homepage {
   @scala.inline
   def apply(homepage: String = null, search_provider: Anon_Alternateurls = null): Anon_Homepage = {
     val __obj = js.Dynamic.literal()
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage)
-    if (search_provider != null) __obj.updateDynamic("search_provider")(search_provider)
+    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
+    if (search_provider != null) __obj.updateDynamic("search_provider")(search_provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Homepage]
   }
 }

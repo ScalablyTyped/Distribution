@@ -50,7 +50,7 @@ object ActionObject {
     view: (/* req */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, js.Any, js.Any], /* res */ typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response[js.Any], /* next */ NextFunction) => js.Any = null
   ): ActionObject = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction3(copy))
     if (del != null) __obj.updateDynamic("del")(js.Any.fromFunction3(del))
     if (delete != null) __obj.updateDynamic("delete")(js.Any.fromFunction3(delete))

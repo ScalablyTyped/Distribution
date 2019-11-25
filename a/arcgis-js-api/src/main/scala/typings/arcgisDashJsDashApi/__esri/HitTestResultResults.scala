@@ -30,7 +30,7 @@ object HitTestResultResults {
     mapPoint: Point,
     propertyIsEnumerable: PropertyKey => Boolean
   ): HitTestResultResults = {
-    val __obj = js.Dynamic.literal(constructor = constructor, graphic = graphic, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mapPoint = mapPoint, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], graphic = graphic.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mapPoint = mapPoint.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[HitTestResultResults]
   }

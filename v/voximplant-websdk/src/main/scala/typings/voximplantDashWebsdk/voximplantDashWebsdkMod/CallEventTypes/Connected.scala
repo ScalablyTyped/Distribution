@@ -23,8 +23,8 @@ trait Connected extends VoxImplantCallEvent {
 object Connected {
   @scala.inline
   def apply(call: Call, headers: js.Object = null): Connected = {
-    val __obj = js.Dynamic.literal(call = call)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connected]
   }
 }

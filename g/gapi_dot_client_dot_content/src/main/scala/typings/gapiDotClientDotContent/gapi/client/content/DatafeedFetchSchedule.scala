@@ -43,14 +43,14 @@ object DatafeedFetchSchedule {
   ): DatafeedFetchSchedule = {
     val __obj = js.Dynamic.literal()
     if (dayOfMonth != null) __obj.updateDynamic("dayOfMonth")(dayOfMonth.asInstanceOf[js.Any])
-    if (fetchUrl != null) __obj.updateDynamic("fetchUrl")(fetchUrl)
+    if (fetchUrl != null) __obj.updateDynamic("fetchUrl")(fetchUrl.asInstanceOf[js.Any])
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
     if (minuteOfHour != null) __obj.updateDynamic("minuteOfHour")(minuteOfHour.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
-    if (username != null) __obj.updateDynamic("username")(username)
-    if (weekday != null) __obj.updateDynamic("weekday")(weekday)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (weekday != null) __obj.updateDynamic("weekday")(weekday.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedFetchSchedule]
   }
 }

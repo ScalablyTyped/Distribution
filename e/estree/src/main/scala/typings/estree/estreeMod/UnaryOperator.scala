@@ -15,3 +15,22 @@ import scala.scalajs.js.annotation._
 */
 trait UnaryOperator extends js.Object
 
+object UnaryOperator {
+  @scala.inline
+  def `!`: typings.estree.estreeStrings.`!` = this.cast("!")
+  @scala.inline
+  def `+`: typings.estree.estreeStrings.`+` = this.cast("+")
+  @scala.inline
+  def `-`: typings.estree.estreeStrings.`-` = this.cast("-")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def delete: typings.estree.estreeStrings.delete = this.cast("delete")
+  @scala.inline
+  def typeof: typings.estree.estreeStrings.typeof = this.cast("typeof")
+  @scala.inline
+  def void: typings.estree.estreeStrings.void = this.cast("void")
+  @scala.inline
+  def `~`: typings.estree.estreeStrings.`~` = this.cast("~")
+}
+

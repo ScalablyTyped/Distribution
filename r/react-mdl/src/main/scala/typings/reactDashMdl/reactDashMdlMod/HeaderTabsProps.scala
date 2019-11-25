@@ -27,9 +27,9 @@ object HeaderTabsProps {
     onChange: FormEvent[Header] => Unit = null
   ): HeaderTabsProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, RippleComponent)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
     if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[HeaderTabsProps]

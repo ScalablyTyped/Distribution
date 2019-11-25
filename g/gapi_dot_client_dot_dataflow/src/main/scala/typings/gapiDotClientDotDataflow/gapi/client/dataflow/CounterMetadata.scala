@@ -24,10 +24,10 @@ object CounterMetadata {
     standardUnits: String = null
   ): CounterMetadata = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (otherUnits != null) __obj.updateDynamic("otherUnits")(otherUnits)
-    if (standardUnits != null) __obj.updateDynamic("standardUnits")(standardUnits)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (otherUnits != null) __obj.updateDynamic("otherUnits")(otherUnits.asInstanceOf[js.Any])
+    if (standardUnits != null) __obj.updateDynamic("standardUnits")(standardUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterMetadata]
   }
 }

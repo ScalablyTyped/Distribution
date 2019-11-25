@@ -15,8 +15,8 @@ object AchievementUpdateMultipleResponse {
   @scala.inline
   def apply(kind: String = null, updatedAchievements: js.Array[AchievementUpdateResponse] = null): AchievementUpdateMultipleResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (updatedAchievements != null) __obj.updateDynamic("updatedAchievements")(updatedAchievements)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (updatedAchievements != null) __obj.updateDynamic("updatedAchievements")(updatedAchievements.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementUpdateMultipleResponse]
   }
 }

@@ -15,7 +15,7 @@ trait IRequestInfo extends js.Object {
 object IRequestInfo {
   @scala.inline
   def apply(httpModule: js.Any, options: RequestOptions, parsedUrl: Url): IRequestInfo = {
-    val __obj = js.Dynamic.literal(httpModule = httpModule, options = options, parsedUrl = parsedUrl)
+    val __obj = js.Dynamic.literal(httpModule = httpModule.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parsedUrl = parsedUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRequestInfo]
   }

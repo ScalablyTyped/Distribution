@@ -17,9 +17,9 @@ object SavedColumn {
   @scala.inline
   def apply(kind: String = null, savedColumnName: String = null, `type`: String = null): SavedColumn = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (savedColumnName != null) __obj.updateDynamic("savedColumnName")(savedColumnName)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (savedColumnName != null) __obj.updateDynamic("savedColumnName")(savedColumnName.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedColumn]
   }
 }

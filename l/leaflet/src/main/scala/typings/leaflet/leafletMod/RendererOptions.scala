@@ -18,9 +18,9 @@ object RendererOptions {
     tolerance: Int | Double = null
   ): RendererOptions = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererOptions]
   }

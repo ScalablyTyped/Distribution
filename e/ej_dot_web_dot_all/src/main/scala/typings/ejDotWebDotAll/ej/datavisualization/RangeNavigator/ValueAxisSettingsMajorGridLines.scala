@@ -15,7 +15,7 @@ object ValueAxisSettingsMajorGridLines {
   @scala.inline
   def apply(visible: js.UndefOr[Boolean] = js.undefined): ValueAxisSettingsMajorGridLines = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueAxisSettingsMajorGridLines]
   }
 }

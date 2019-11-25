@@ -13,9 +13,9 @@ trait ASTElementHandler extends js.Object {
 object ASTElementHandler {
   @scala.inline
   def apply(value: String, modifiers: ASTModifiers = null, params: js.Array[_] = null): ASTElementHandler = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTElementHandler]
   }
 }

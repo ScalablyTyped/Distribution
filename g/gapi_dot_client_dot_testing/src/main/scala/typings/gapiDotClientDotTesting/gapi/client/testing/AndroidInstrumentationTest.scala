@@ -71,13 +71,13 @@ object AndroidInstrumentationTest {
     testTargets: js.Array[String] = null
   ): AndroidInstrumentationTest = {
     val __obj = js.Dynamic.literal()
-    if (appApk != null) __obj.updateDynamic("appApk")(appApk)
-    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId)
-    if (orchestratorOption != null) __obj.updateDynamic("orchestratorOption")(orchestratorOption)
-    if (testApk != null) __obj.updateDynamic("testApk")(testApk)
-    if (testPackageId != null) __obj.updateDynamic("testPackageId")(testPackageId)
-    if (testRunnerClass != null) __obj.updateDynamic("testRunnerClass")(testRunnerClass)
-    if (testTargets != null) __obj.updateDynamic("testTargets")(testTargets)
+    if (appApk != null) __obj.updateDynamic("appApk")(appApk.asInstanceOf[js.Any])
+    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId.asInstanceOf[js.Any])
+    if (orchestratorOption != null) __obj.updateDynamic("orchestratorOption")(orchestratorOption.asInstanceOf[js.Any])
+    if (testApk != null) __obj.updateDynamic("testApk")(testApk.asInstanceOf[js.Any])
+    if (testPackageId != null) __obj.updateDynamic("testPackageId")(testPackageId.asInstanceOf[js.Any])
+    if (testRunnerClass != null) __obj.updateDynamic("testRunnerClass")(testRunnerClass.asInstanceOf[js.Any])
+    if (testTargets != null) __obj.updateDynamic("testTargets")(testTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidInstrumentationTest]
   }
 }

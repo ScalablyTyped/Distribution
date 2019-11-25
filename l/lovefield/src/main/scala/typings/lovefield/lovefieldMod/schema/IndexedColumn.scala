@@ -14,7 +14,7 @@ trait IndexedColumn extends js.Object {
 object IndexedColumn {
   @scala.inline
   def apply(autoIncrement: Boolean, name: String, order: Order): IndexedColumn = {
-    val __obj = js.Dynamic.literal(autoIncrement = autoIncrement, name = name, order = order)
+    val __obj = js.Dynamic.literal(autoIncrement = autoIncrement.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IndexedColumn]
   }

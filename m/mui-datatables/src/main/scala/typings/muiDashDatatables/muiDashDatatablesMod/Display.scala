@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Display extends js.Object
 
+object Display {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def excluded: typings.muiDashDatatables.muiDashDatatablesStrings.excluded = this.cast("excluded")
+  @scala.inline
+  def `false`: typings.muiDashDatatables.muiDashDatatablesStrings.`false` = this.cast("false")
+  @scala.inline
+  def `true`: typings.muiDashDatatables.muiDashDatatablesStrings.`true` = this.cast("true")
+}
+

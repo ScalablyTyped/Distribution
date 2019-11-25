@@ -37,11 +37,11 @@ object IGeoXmlDataSet {
     summary: IGeoXmlSummaryMetadata = null
   ): IGeoXmlDataSet = {
     val __obj = js.Dynamic.literal()
-    if (layers != null) __obj.updateDynamic("layers")(layers)
-    if (screenOverlays != null) __obj.updateDynamic("screenOverlays")(screenOverlays)
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (screenOverlays != null) __obj.updateDynamic("screenOverlays")(screenOverlays.asInstanceOf[js.Any])
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoXmlDataSet]
   }
 }

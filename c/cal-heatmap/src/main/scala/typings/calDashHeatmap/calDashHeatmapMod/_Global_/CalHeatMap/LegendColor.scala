@@ -20,10 +20,10 @@ trait LegendColor extends js.Object {
 object LegendColor {
   @scala.inline
   def apply(max: String, min: String, base: String = null, empty: String = null, overflow: String = null): LegendColor = {
-    val __obj = js.Dynamic.literal(max = max, min = min)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendColor]
   }
 }

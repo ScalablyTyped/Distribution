@@ -30,10 +30,10 @@ object GoogleCloudVideointelligenceV1_VideoAnnotationProgress {
     updateTime: String = null
   ): GoogleCloudVideointelligenceV1_VideoAnnotationProgress = {
     val __obj = js.Dynamic.literal()
-    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri)
+    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri.asInstanceOf[js.Any])
     if (progressPercent != null) __obj.updateDynamic("progressPercent")(progressPercent.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1_VideoAnnotationProgress]
   }
 }

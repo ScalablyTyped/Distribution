@@ -27,7 +27,7 @@ object Anon_Current {
     size: String,
     status: String
   ): Anon_Current = {
-    val __obj = js.Dynamic.literal(current = current, direction = direction, iconPrefix = iconPrefix, labelPlacement = labelPlacement, prefixCls = prefixCls, progressDot = progressDot, size = size, status = status)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], iconPrefix = iconPrefix.asInstanceOf[js.Any], labelPlacement = labelPlacement.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], progressDot = progressDot.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Current]
   }

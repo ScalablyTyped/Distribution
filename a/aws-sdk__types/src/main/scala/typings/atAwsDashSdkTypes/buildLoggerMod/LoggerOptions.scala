@@ -13,8 +13,8 @@ object LoggerOptions {
   @scala.inline
   def apply(logLevel: LogLevel = null, logger: Logger = null): LoggerOptions = {
     val __obj = js.Dynamic.literal()
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerOptions]
   }
 }

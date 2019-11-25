@@ -15,8 +15,8 @@ object Anon_LogBucket {
   @scala.inline
   def apply(logBucket: String = null, logObjectPrefix: String = null): Anon_LogBucket = {
     val __obj = js.Dynamic.literal()
-    if (logBucket != null) __obj.updateDynamic("logBucket")(logBucket)
-    if (logObjectPrefix != null) __obj.updateDynamic("logObjectPrefix")(logObjectPrefix)
+    if (logBucket != null) __obj.updateDynamic("logBucket")(logBucket.asInstanceOf[js.Any])
+    if (logObjectPrefix != null) __obj.updateDynamic("logObjectPrefix")(logObjectPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LogBucket]
   }
 }

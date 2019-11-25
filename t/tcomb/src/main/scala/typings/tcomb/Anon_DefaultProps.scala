@@ -24,7 +24,7 @@ object Anon_DefaultProps {
     props: StructProps,
     strict: Boolean
   ): Anon_DefaultProps = {
-    val __obj = js.Dynamic.literal(defaultProps = defaultProps, identity = identity, kind = kind, name = name, props = props, strict = strict)
+    val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefaultProps]
   }

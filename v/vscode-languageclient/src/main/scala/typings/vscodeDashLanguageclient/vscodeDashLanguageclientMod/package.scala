@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 package object vscodeDashLanguageclientMod {
   import typings.node.childUnderscoreProcessMod.ChildProcess
   import typings.vscodeDashJsonrpc.Thenable
-  import typings.vscodeDashLanguageclient.libClientMod.MessageTransports
 
   /* Rewritten from type alias, can be one of: 
     - typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.Executable
@@ -19,5 +18,9 @@ package object vscodeDashLanguageclientMod {
     typings.node.childUnderscoreProcessMod.ChildProcess | typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.StreamInfo | typings.vscodeDashLanguageclient.libClientMod.MessageTransports | typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.ChildProcessInfo
   ]]
   */
-  type ServerOptions = _ServerOptions | (js.Function0[Thenable[ChildProcess | StreamInfo | MessageTransports | ChildProcessInfo]])
+  type ServerOptions = _ServerOptions | (js.Function0[
+    Thenable[
+      ChildProcess | StreamInfo | typings.vscodeDashLanguageclient.libClientMod.MessageTransports | ChildProcessInfo
+    ]
+  ])
 }

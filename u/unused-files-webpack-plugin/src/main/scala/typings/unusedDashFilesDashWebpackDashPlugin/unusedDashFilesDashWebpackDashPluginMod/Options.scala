@@ -22,11 +22,11 @@ object Options {
     ignore: String | js.Array[String] = null,
     patterns: js.Array[String] = null
   ): Options = {
-    val __obj = js.Dynamic.literal(failOnUnused = failOnUnused)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (globOptions != null) __obj.updateDynamic("globOptions")(globOptions)
+    val __obj = js.Dynamic.literal(failOnUnused = failOnUnused.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (globOptions != null) __obj.updateDynamic("globOptions")(globOptions.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (patterns != null) __obj.updateDynamic("patterns")(patterns)
+    if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

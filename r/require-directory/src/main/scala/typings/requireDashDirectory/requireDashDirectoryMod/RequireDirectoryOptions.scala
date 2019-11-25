@@ -54,9 +54,9 @@ object RequireDirectoryOptions {
   ): RequireDirectoryOptions[T, U] = {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse)
+    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.asInstanceOf[js.Any])
     if (rename != null) __obj.updateDynamic("rename")(js.Any.fromFunction1(rename))
     if (visit != null) __obj.updateDynamic("visit")(js.Any.fromFunction1(visit))
     __obj.asInstanceOf[RequireDirectoryOptions[T, U]]

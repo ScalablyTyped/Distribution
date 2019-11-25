@@ -27,8 +27,8 @@ object GoogleCloudVideointelligenceV1_LabelLocation {
   ): GoogleCloudVideointelligenceV1_LabelLocation = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (segment != null) __obj.updateDynamic("segment")(segment)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1_LabelLocation]
   }
 }

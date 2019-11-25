@@ -15,8 +15,8 @@ object OpenOptions {
   @scala.inline
   def apply(app: String = null, path: String = null): OpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (app != null) __obj.updateDynamic("app")(app)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenOptions]
   }
 }

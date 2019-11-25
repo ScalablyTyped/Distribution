@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerColumn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +8,15 @@ trait IonPickerColumn extends js.Object {
   /**
     * Picker column data
     */
-  var col: PickerColumn
+  var col: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerColumn */ js.Any
 }
 
 object IonPickerColumn {
   @scala.inline
-  def apply(col: PickerColumn): IonPickerColumn = {
-    val __obj = js.Dynamic.literal(col = col)
+  def apply(
+    col: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerColumn */ js.Any
+  ): IonPickerColumn = {
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IonPickerColumn]
   }

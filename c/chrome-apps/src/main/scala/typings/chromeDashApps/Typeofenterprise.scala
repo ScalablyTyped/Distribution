@@ -34,7 +34,7 @@ trait Typeofenterprise extends js.Object {
 object Typeofenterprise {
   @scala.inline
   def apply(deviceAttributes: TypeofdeviceAttributes, platformKeys: TypeofplatformKeys): Typeofenterprise = {
-    val __obj = js.Dynamic.literal(deviceAttributes = deviceAttributes, platformKeys = platformKeys)
+    val __obj = js.Dynamic.literal(deviceAttributes = deviceAttributes.asInstanceOf[js.Any], platformKeys = platformKeys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofenterprise]
   }

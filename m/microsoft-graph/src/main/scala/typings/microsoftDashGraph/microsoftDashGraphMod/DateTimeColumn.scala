@@ -18,8 +18,8 @@ object DateTimeColumn {
   @scala.inline
   def apply(displayAs: String = null, format: String = null): DateTimeColumn = {
     val __obj = js.Dynamic.literal()
-    if (displayAs != null) __obj.updateDynamic("displayAs")(displayAs)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (displayAs != null) __obj.updateDynamic("displayAs")(displayAs.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeColumn]
   }
 }

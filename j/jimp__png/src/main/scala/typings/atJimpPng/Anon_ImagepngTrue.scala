@@ -13,7 +13,7 @@ object Anon_ImagepngTrue {
   @scala.inline
   def apply(`image/png`: `true`): Anon_ImagepngTrue = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image/png")(`image/png`)
+    __obj.updateDynamic("image/png")(`image/png`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ImagepngTrue]
   }
 }

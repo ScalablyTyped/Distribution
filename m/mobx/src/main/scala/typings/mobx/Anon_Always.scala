@@ -40,13 +40,13 @@ object Anon_Always {
     reactionScheduler: /* f */ js.Function0[Unit] => Unit = null
   ): Anon_Always = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(computedConfigurable)) __obj.updateDynamic("computedConfigurable")(computedConfigurable)
-    if (!js.isUndefined(computedRequiresReaction)) __obj.updateDynamic("computedRequiresReaction")(computedRequiresReaction)
-    if (!js.isUndefined(disableErrorBoundaries)) __obj.updateDynamic("disableErrorBoundaries")(disableErrorBoundaries)
+    if (!js.isUndefined(computedConfigurable)) __obj.updateDynamic("computedConfigurable")(computedConfigurable.asInstanceOf[js.Any])
+    if (!js.isUndefined(computedRequiresReaction)) __obj.updateDynamic("computedRequiresReaction")(computedRequiresReaction.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableErrorBoundaries)) __obj.updateDynamic("disableErrorBoundaries")(disableErrorBoundaries.asInstanceOf[js.Any])
     if (enforceActions != null) __obj.updateDynamic("enforceActions")(enforceActions.asInstanceOf[js.Any])
-    if (!js.isUndefined(isolateGlobalState)) __obj.updateDynamic("isolateGlobalState")(isolateGlobalState)
-    if (!js.isUndefined(observableRequiresReaction)) __obj.updateDynamic("observableRequiresReaction")(observableRequiresReaction)
-    if (!js.isUndefined(reactionRequiresObservable)) __obj.updateDynamic("reactionRequiresObservable")(reactionRequiresObservable)
+    if (!js.isUndefined(isolateGlobalState)) __obj.updateDynamic("isolateGlobalState")(isolateGlobalState.asInstanceOf[js.Any])
+    if (!js.isUndefined(observableRequiresReaction)) __obj.updateDynamic("observableRequiresReaction")(observableRequiresReaction.asInstanceOf[js.Any])
+    if (!js.isUndefined(reactionRequiresObservable)) __obj.updateDynamic("reactionRequiresObservable")(reactionRequiresObservable.asInstanceOf[js.Any])
     if (reactionScheduler != null) __obj.updateDynamic("reactionScheduler")(js.Any.fromFunction1(reactionScheduler))
     __obj.asInstanceOf[Anon_Always]
   }

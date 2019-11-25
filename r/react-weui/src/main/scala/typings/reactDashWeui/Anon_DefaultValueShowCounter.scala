@@ -12,7 +12,7 @@ trait Anon_DefaultValueShowCounter extends js.Object {
 object Anon_DefaultValueShowCounter {
   @scala.inline
   def apply(defaultValue: js.Any, showCounter: Boolean): Anon_DefaultValueShowCounter = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, showCounter = showCounter)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], showCounter = showCounter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefaultValueShowCounter]
   }

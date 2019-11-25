@@ -28,10 +28,10 @@ object ResourceOperation {
     resourceName: String = null
   ): ResourceOperation = {
     val __obj = js.Dynamic.literal()
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
+    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceOperation]
   }
 }

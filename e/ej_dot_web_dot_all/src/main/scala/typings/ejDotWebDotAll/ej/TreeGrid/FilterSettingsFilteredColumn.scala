@@ -23,10 +23,10 @@ object FilterSettingsFilteredColumn {
   @scala.inline
   def apply(field: String = null, operator: String = null, predicate: String = null, value: String = null): FilterSettingsFilteredColumn = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (predicate != null) __obj.updateDynamic("predicate")(predicate)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (predicate != null) __obj.updateDynamic("predicate")(predicate.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterSettingsFilteredColumn]
   }
 }

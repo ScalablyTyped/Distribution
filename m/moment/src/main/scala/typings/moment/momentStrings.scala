@@ -5,6 +5,9 @@ import typings.moment.momentMod.RelativeTimeKey
 import typings.moment.momentMod._CalendarKey
 import typings.moment.momentMod.unitOfTime.All
 import typings.moment.momentMod.unitOfTime.Base
+import typings.moment.momentMod.unitOfTime.Diff
+import typings.moment.momentMod.unitOfTime.DurationConstructor
+import typings.moment.momentMod.unitOfTime.MomentConstructor
 import typings.moment.momentMod.unitOfTime._date
 import typings.moment.momentMod.unitOfTime._isoWeek
 import typings.moment.momentMod.unitOfTime._quarter
@@ -20,7 +23,10 @@ object momentStrings {
   sealed trait `(]` extends js.Object
   
   @js.native
-  sealed trait D extends _date
+  sealed trait D
+    extends _date
+       with All
+       with MomentConstructor
   
   @js.native
   sealed trait DDD extends All
@@ -52,16 +58,26 @@ object momentStrings {
   @js.native
   sealed trait M
     extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
        with RelativeTimeKey
   
   @js.native
   sealed trait MM extends RelativeTimeKey
   
   @js.native
-  sealed trait Q extends _quarter
+  sealed trait Q
+    extends _quarter
+       with All
+       with Diff
+       with DurationConstructor
   
   @js.native
-  sealed trait W extends _isoWeek
+  sealed trait W
+    extends _isoWeek
+       with All
   
   @js.native
   sealed trait `[)` extends js.Object
@@ -70,18 +86,33 @@ object momentStrings {
   sealed trait `[]` extends js.Object
   
   @js.native
-  sealed trait d
+  sealed trait d_
     extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
        with RelativeTimeKey
   
   @js.native
-  sealed trait date extends _date
+  sealed trait date
+    extends _date
+       with All
+       with MomentConstructor
   
   @js.native
-  sealed trait dates extends _date
+  sealed trait dates
+    extends _date
+       with All
+       with MomentConstructor
   
   @js.native
-  sealed trait day extends Base
+  sealed trait day
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
   sealed trait dayOfYear extends All
@@ -90,33 +121,54 @@ object momentStrings {
   sealed trait dayOfYears extends All
   
   @js.native
-  sealed trait days extends Base
+  sealed trait days
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
   sealed trait dd extends RelativeTimeKey
   
   @js.native
-  sealed trait e extends All
+  sealed trait e_ extends All
   
   @js.native
-  sealed trait gg extends All
+  sealed trait gg_ extends All
   
   @js.native
   sealed trait h
     extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
        with RelativeTimeKey
   
   @js.native
   sealed trait hh extends RelativeTimeKey
   
   @js.native
-  sealed trait hour extends Base
+  sealed trait hour
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait hours extends Base
+  sealed trait hours
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait isoWeek extends _isoWeek
+  sealed trait isoWeek
+    extends _isoWeek
+       with All
   
   @js.native
   sealed trait isoWeekYear extends All
@@ -131,10 +183,12 @@ object momentStrings {
   sealed trait isoWeekdays extends All
   
   @js.native
-  sealed trait isoWeeks extends _isoWeek
+  sealed trait isoWeeks
+    extends _isoWeek
+       with All
   
   @js.native
-  sealed trait l extends LongDateFormatKey
+  sealed trait l_ extends LongDateFormatKey
   
   @js.native
   sealed trait lastDay extends _CalendarKey
@@ -143,48 +197,87 @@ object momentStrings {
   sealed trait lastWeek extends _CalendarKey
   
   @js.native
-  sealed trait ll extends LongDateFormatKey
+  sealed trait ll_ extends LongDateFormatKey
   
   @js.native
-  sealed trait lll extends LongDateFormatKey
+  sealed trait lll_ extends LongDateFormatKey
   
   @js.native
-  sealed trait llll extends LongDateFormatKey
+  sealed trait llll_ extends LongDateFormatKey
   
   @js.native
-  sealed trait lt extends LongDateFormatKey
+  sealed trait lt_ extends LongDateFormatKey
   
   @js.native
-  sealed trait lts extends LongDateFormatKey
+  sealed trait lts_ extends LongDateFormatKey
   
   @js.native
-  sealed trait m
+  sealed trait m_
     extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
        with RelativeTimeKey
   
   @js.native
-  sealed trait millisecond extends Base
+  sealed trait millisecond
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait milliseconds extends Base
+  sealed trait milliseconds
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait minute extends Base
+  sealed trait minute
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait minutes extends Base
+  sealed trait minutes
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait mm extends RelativeTimeKey
+  sealed trait mm_ extends RelativeTimeKey
   
   @js.native
-  sealed trait month extends Base
+  sealed trait month
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait months extends Base
+  sealed trait months
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait ms extends Base
+  sealed trait ms
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
   sealed trait nextDay extends _CalendarKey
@@ -193,14 +286,26 @@ object momentStrings {
   sealed trait nextWeek extends _CalendarKey
   
   @js.native
-  sealed trait quarter extends _quarter
+  sealed trait quarter
+    extends _quarter
+       with All
+       with Diff
+       with DurationConstructor
   
   @js.native
-  sealed trait quarters extends _quarter
+  sealed trait quarters
+    extends _quarter
+       with All
+       with Diff
+       with DurationConstructor
   
   @js.native
   sealed trait s
     extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
        with RelativeTimeKey
   
   @js.native
@@ -210,19 +315,39 @@ object momentStrings {
   sealed trait sameElse extends _CalendarKey
   
   @js.native
-  sealed trait second extends Base
+  sealed trait second
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait seconds extends Base
+  sealed trait seconds
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
   sealed trait ss extends RelativeTimeKey
   
   @js.native
-  sealed trait w extends Base
+  sealed trait w_
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait week extends Base
+  sealed trait week
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
   sealed trait weekYear extends All
@@ -237,18 +362,37 @@ object momentStrings {
   sealed trait weekdays extends All
   
   @js.native
-  sealed trait weeks extends Base
+  sealed trait weeks
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
   sealed trait y
     extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
        with RelativeTimeKey
   
   @js.native
-  sealed trait year extends Base
+  sealed trait year
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
-  sealed trait years extends Base
+  sealed trait years
+    extends Base
+       with All
+       with Diff
+       with DurationConstructor
+       with MomentConstructor
   
   @js.native
   sealed trait yy extends RelativeTimeKey
@@ -290,7 +434,7 @@ object momentStrings {
   @scala.inline
   def `[]`: `[]` = "[]".asInstanceOf[`[]`]
   @scala.inline
-  def d: d = "d".asInstanceOf[d]
+  def d_ : d_ = "d".asInstanceOf[d_]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
@@ -306,9 +450,9 @@ object momentStrings {
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
   @scala.inline
-  def e: e = "e".asInstanceOf[e]
+  def e_ : e_ = "e".asInstanceOf[e_]
   @scala.inline
-  def gg: gg = "gg".asInstanceOf[gg]
+  def gg_ : gg_ = "gg".asInstanceOf[gg_]
   @scala.inline
   def h: h = "h".asInstanceOf[h]
   @scala.inline
@@ -330,23 +474,23 @@ object momentStrings {
   @scala.inline
   def isoWeeks: isoWeeks = "isoWeeks".asInstanceOf[isoWeeks]
   @scala.inline
-  def l: l = "l".asInstanceOf[l]
+  def l_ : l_ = "l".asInstanceOf[l_]
   @scala.inline
   def lastDay: lastDay = "lastDay".asInstanceOf[lastDay]
   @scala.inline
   def lastWeek: lastWeek = "lastWeek".asInstanceOf[lastWeek]
   @scala.inline
-  def ll: ll = "ll".asInstanceOf[ll]
+  def ll_ : ll_ = "ll".asInstanceOf[ll_]
   @scala.inline
-  def lll: lll = "lll".asInstanceOf[lll]
+  def lll_ : lll_ = "lll".asInstanceOf[lll_]
   @scala.inline
-  def llll: llll = "llll".asInstanceOf[llll]
+  def llll_ : llll_ = "llll".asInstanceOf[llll_]
   @scala.inline
-  def lt: lt = "lt".asInstanceOf[lt]
+  def lt_ : lt_ = "lt".asInstanceOf[lt_]
   @scala.inline
-  def lts: lts = "lts".asInstanceOf[lts]
+  def lts_ : lts_ = "lts".asInstanceOf[lts_]
   @scala.inline
-  def m: m = "m".asInstanceOf[m]
+  def m_ : m_ = "m".asInstanceOf[m_]
   @scala.inline
   def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   @scala.inline
@@ -356,7 +500,7 @@ object momentStrings {
   @scala.inline
   def minutes: minutes = "minutes".asInstanceOf[minutes]
   @scala.inline
-  def mm: mm = "mm".asInstanceOf[mm]
+  def mm_ : mm_ = "mm".asInstanceOf[mm_]
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   @scala.inline
@@ -384,7 +528,7 @@ object momentStrings {
   @scala.inline
   def ss: ss = "ss".asInstanceOf[ss]
   @scala.inline
-  def w: w = "w".asInstanceOf[w]
+  def w_ : w_ = "w".asInstanceOf[w_]
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   @scala.inline

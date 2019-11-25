@@ -23,11 +23,11 @@ object PluginConfig {
     path: String = null
   ): PluginConfig = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`package` != null) __obj.updateDynamic("package")(`package`)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginConfig]
   }
 }

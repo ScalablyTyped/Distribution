@@ -12,7 +12,7 @@ trait Anon_PEvtObj extends js.Object {
 object Anon_PEvtObj {
   @scala.inline
   def apply(pEvtObj: IHTMLEventObj): Anon_PEvtObj = {
-    val __obj = js.Dynamic.literal(pEvtObj = pEvtObj)
+    val __obj = js.Dynamic.literal(pEvtObj = pEvtObj.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PEvtObj]
   }

@@ -11,7 +11,7 @@ trait Anon_NewRoot extends js.Object {
 object Anon_NewRoot {
   @scala.inline
   def apply(newRoot: js.Any): Anon_NewRoot = {
-    val __obj = js.Dynamic.literal(newRoot = newRoot)
+    val __obj = js.Dynamic.literal(newRoot = newRoot.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NewRoot]
   }

@@ -23,11 +23,11 @@ object ZipOptions {
     zlib: ZlibOptions = null
   ): ZipOptions = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (!js.isUndefined(forceLocalTime)) __obj.updateDynamic("forceLocalTime")(forceLocalTime)
-    if (!js.isUndefined(forceZip64)) __obj.updateDynamic("forceZip64")(forceZip64)
-    if (!js.isUndefined(store)) __obj.updateDynamic("store")(store)
-    if (zlib != null) __obj.updateDynamic("zlib")(zlib)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceLocalTime)) __obj.updateDynamic("forceLocalTime")(forceLocalTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceZip64)) __obj.updateDynamic("forceZip64")(forceZip64.asInstanceOf[js.Any])
+    if (!js.isUndefined(store)) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (zlib != null) __obj.updateDynamic("zlib")(zlib.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipOptions]
   }
 }

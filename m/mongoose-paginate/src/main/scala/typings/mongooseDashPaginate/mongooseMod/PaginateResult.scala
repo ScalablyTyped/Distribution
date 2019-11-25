@@ -23,7 +23,7 @@ object PaginateResult {
     page: Int | Double = null,
     pages: Int | Double = null
   ): PaginateResult[T] = {
-    val __obj = js.Dynamic.literal(docs = docs, limit = limit, total = total)
+    val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])

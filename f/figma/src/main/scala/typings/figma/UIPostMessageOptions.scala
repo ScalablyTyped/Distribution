@@ -12,7 +12,7 @@ object UIPostMessageOptions {
   @scala.inline
   def apply(origin: String = null): UIPostMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIPostMessageOptions]
   }
 }

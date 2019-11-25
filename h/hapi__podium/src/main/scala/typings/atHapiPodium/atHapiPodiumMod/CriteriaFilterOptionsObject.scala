@@ -15,7 +15,7 @@ object CriteriaFilterOptionsObject {
   @scala.inline
   def apply(all: js.UndefOr[Boolean] = js.undefined, tags: String | js.Array[String] = null): CriteriaFilterOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CriteriaFilterOptionsObject]
   }

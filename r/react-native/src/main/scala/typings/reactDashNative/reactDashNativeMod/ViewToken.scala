@@ -15,9 +15,9 @@ trait ViewToken extends js.Object {
 object ViewToken {
   @scala.inline
   def apply(isViewable: Boolean, item: js.Any, key: String, index: Int | Double = null, section: js.Any = null): ViewToken = {
-    val __obj = js.Dynamic.literal(isViewable = isViewable, item = item, key = key)
+    val __obj = js.Dynamic.literal(isViewable = isViewable.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (section != null) __obj.updateDynamic("section")(section)
+    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewToken]
   }
 }

@@ -30,7 +30,7 @@ object Anon_Dot {
     textDom: RegisteredStyle[ViewStyle],
     wrap: RegisteredStyle[ViewStyle]
   ): Anon_Dot = {
-    val __obj = js.Dynamic.literal(dot = dot, dotSizelarge = dotSizelarge, text = text, textCorner = textCorner, textCornerWrap = textCornerWrap, textCornerlarge = textCornerlarge, textDom = textDom, wrap = wrap)
+    val __obj = js.Dynamic.literal(dot = dot.asInstanceOf[js.Any], dotSizelarge = dotSizelarge.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textCorner = textCorner.asInstanceOf[js.Any], textCornerWrap = textCornerWrap.asInstanceOf[js.Any], textCornerlarge = textCornerlarge.asInstanceOf[js.Any], textDom = textDom.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dot]
   }

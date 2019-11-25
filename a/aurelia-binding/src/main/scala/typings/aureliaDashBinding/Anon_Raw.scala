@@ -16,7 +16,7 @@ object Anon_Raw {
   @scala.inline
   def apply(raw: js.Array[String] = null): Anon_Raw = {
     val __obj = js.Dynamic.literal()
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Raw]
   }
 }

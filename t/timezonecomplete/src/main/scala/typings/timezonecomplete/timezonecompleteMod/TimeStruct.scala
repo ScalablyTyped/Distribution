@@ -2,7 +2,6 @@ package typings.timezonecomplete.timezonecompleteMod
 
 import typings.std.Date
 import typings.timezonecomplete.distLibBasicsMod.TimeComponentOpts
-import typings.timezonecomplete.distLibJavascriptMod.DateFunctions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,7 +65,7 @@ object TimeStruct extends js.Object {
     * @param df Which functions to take (getX() or getUTCX())
     * @throws nothing
     */
-  def fromDate(d: Date, df: DateFunctions): typings.timezonecomplete.distLibBasicsMod.TimeStruct = js.native
+  def fromDate(d: Date, df: typings.timezonecomplete.distLibJavascriptMod.DateFunctions): typings.timezonecomplete.distLibBasicsMod.TimeStruct = js.native
   /**
     * Returns a TimeStruct from an ISO 8601 string WITHOUT time zone
     * @throws timezonecomplete.Argument.S if `s` is not a proper iso string

@@ -53,8 +53,8 @@ object ISelectInfo {
     qRangeLo: Double,
     qTextSearch: String = null
   ): ISelectInfo = {
-    val __obj = js.Dynamic.literal(qContinuousRangeInfo = qContinuousRangeInfo, qNumberFormat = qNumberFormat, qRangeHi = qRangeHi, qRangeInfo = qRangeInfo, qRangeLo = qRangeLo)
-    if (qTextSearch != null) __obj.updateDynamic("qTextSearch")(qTextSearch)
+    val __obj = js.Dynamic.literal(qContinuousRangeInfo = qContinuousRangeInfo.asInstanceOf[js.Any], qNumberFormat = qNumberFormat.asInstanceOf[js.Any], qRangeHi = qRangeHi.asInstanceOf[js.Any], qRangeInfo = qRangeInfo.asInstanceOf[js.Any], qRangeLo = qRangeLo.asInstanceOf[js.Any])
+    if (qTextSearch != null) __obj.updateDynamic("qTextSearch")(qTextSearch.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISelectInfo]
   }
 }

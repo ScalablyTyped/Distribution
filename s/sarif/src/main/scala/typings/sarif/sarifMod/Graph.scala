@@ -32,10 +32,10 @@ object Graph {
     properties: PropertyBag = null
   ): Graph = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (edges != null) __obj.updateDynamic("edges")(edges)
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graph]
   }
 }

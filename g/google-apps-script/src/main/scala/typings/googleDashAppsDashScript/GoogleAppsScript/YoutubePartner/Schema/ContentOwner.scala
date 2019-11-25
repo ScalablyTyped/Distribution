@@ -26,13 +26,13 @@ object ContentOwner {
     primaryNotificationEmails: js.Array[String] = null
   ): ContentOwner = {
     val __obj = js.Dynamic.literal()
-    if (conflictNotificationEmail != null) __obj.updateDynamic("conflictNotificationEmail")(conflictNotificationEmail)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (disputeNotificationEmails != null) __obj.updateDynamic("disputeNotificationEmails")(disputeNotificationEmails)
-    if (fingerprintReportNotificationEmails != null) __obj.updateDynamic("fingerprintReportNotificationEmails")(fingerprintReportNotificationEmails)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (primaryNotificationEmails != null) __obj.updateDynamic("primaryNotificationEmails")(primaryNotificationEmails)
+    if (conflictNotificationEmail != null) __obj.updateDynamic("conflictNotificationEmail")(conflictNotificationEmail.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (disputeNotificationEmails != null) __obj.updateDynamic("disputeNotificationEmails")(disputeNotificationEmails.asInstanceOf[js.Any])
+    if (fingerprintReportNotificationEmails != null) __obj.updateDynamic("fingerprintReportNotificationEmails")(fingerprintReportNotificationEmails.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (primaryNotificationEmails != null) __obj.updateDynamic("primaryNotificationEmails")(primaryNotificationEmails.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentOwner]
   }
 }

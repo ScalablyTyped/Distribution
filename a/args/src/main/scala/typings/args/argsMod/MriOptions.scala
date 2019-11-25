@@ -25,10 +25,10 @@ object MriOptions {
     unknown: /* param */ String => Boolean = null
   ): MriOptions = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (args != null) __obj.updateDynamic("args")(args)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     if (unknown != null) __obj.updateDynamic("unknown")(js.Any.fromFunction1(unknown))
     __obj.asInstanceOf[MriOptions]

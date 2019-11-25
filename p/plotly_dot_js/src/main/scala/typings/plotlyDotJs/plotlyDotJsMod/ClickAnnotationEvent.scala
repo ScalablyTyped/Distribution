@@ -15,7 +15,7 @@ trait ClickAnnotationEvent extends js.Object {
 object ClickAnnotationEvent {
   @scala.inline
   def apply(annotation: Annotations, event: MouseEvent, fullAnnotation: Annotations, index: Double): ClickAnnotationEvent = {
-    val __obj = js.Dynamic.literal(annotation = annotation, event = event, fullAnnotation = fullAnnotation, index = index)
+    val __obj = js.Dynamic.literal(annotation = annotation.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fullAnnotation = fullAnnotation.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClickAnnotationEvent]
   }

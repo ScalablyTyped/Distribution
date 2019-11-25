@@ -28,11 +28,11 @@ object AppEngineTaskTarget {
     relativeUrl: String = null
   ): AppEngineTaskTarget = {
     val __obj = js.Dynamic.literal()
-    if (appEngineRouting != null) __obj.updateDynamic("appEngineRouting")(appEngineRouting)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (relativeUrl != null) __obj.updateDynamic("relativeUrl")(relativeUrl)
+    if (appEngineRouting != null) __obj.updateDynamic("appEngineRouting")(appEngineRouting.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (relativeUrl != null) __obj.updateDynamic("relativeUrl")(relativeUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppEngineTaskTarget]
   }
 }

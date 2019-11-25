@@ -14,7 +14,7 @@ trait Anon_Character extends js.Object {
 object Anon_Character {
   @scala.inline
   def apply(character: Requireable[ReactNodeLike], prefixCls: Requireable[String]): Anon_Character = {
-    val __obj = js.Dynamic.literal(character = character, prefixCls = prefixCls)
+    val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Character]
   }

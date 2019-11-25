@@ -40,7 +40,7 @@ object CypressCommonOptions {
     env: js.Object,
     project: String
   ): CypressCommonOptions = {
-    val __obj = js.Dynamic.literal(config = config, configFile = configFile.asInstanceOf[js.Any], env = env, project = project)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CypressCommonOptions]
   }

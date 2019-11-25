@@ -27,11 +27,11 @@ object CdnSettings {
     resolution: String = null
   ): CdnSettings = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate)
-    if (ingestionInfo != null) __obj.updateDynamic("ingestionInfo")(ingestionInfo)
-    if (ingestionType != null) __obj.updateDynamic("ingestionType")(ingestionType)
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
+    if (ingestionInfo != null) __obj.updateDynamic("ingestionInfo")(ingestionInfo.asInstanceOf[js.Any])
+    if (ingestionType != null) __obj.updateDynamic("ingestionType")(ingestionType.asInstanceOf[js.Any])
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[CdnSettings]
   }
 }

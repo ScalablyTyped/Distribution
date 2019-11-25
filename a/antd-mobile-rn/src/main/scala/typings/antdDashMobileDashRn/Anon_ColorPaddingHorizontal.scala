@@ -13,7 +13,7 @@ trait Anon_ColorPaddingHorizontal extends js.Object {
 object Anon_ColorPaddingHorizontal {
   @scala.inline
   def apply(color: String, paddingHorizontal: Double, textAlign: String): Anon_ColorPaddingHorizontal = {
-    val __obj = js.Dynamic.literal(color = color, paddingHorizontal = paddingHorizontal, textAlign = textAlign)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorPaddingHorizontal]
   }

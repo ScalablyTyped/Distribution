@@ -22,8 +22,8 @@ object Anon_Event {
     ref: js.Any = null
   ): Anon_Event = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), onMouseEnter = js.Any.fromFunction1(onMouseEnter))
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Event]
   }
 }

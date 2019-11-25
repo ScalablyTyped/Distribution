@@ -1,7 +1,6 @@
 package typings.tern.ternMod
 
 import typings.tern.libTernMod.ConstructorOptions
-import typings.tern.libTernMod.Server
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,11 @@ import scala.scalajs.js.annotation._
 object registerPlugin extends js.Object {
   def apply(
     name: String,
-    init: js.Function2[/* server */ Server, /* options */ js.UndefOr[ConstructorOptions], Unit]
+    init: js.Function2[
+      /* server */ typings.tern.libTernMod.Server, 
+      /* options */ js.UndefOr[ConstructorOptions], 
+      Unit
+    ]
   ): Unit = js.native
 }
 

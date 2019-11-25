@@ -28,18 +28,18 @@ object ClientConfig {
     user: String = null
   ): ClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString)
+    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
     if (connectionTimeoutMillis != null) __obj.updateDynamic("connectionTimeoutMillis")(connectionTimeoutMillis.asInstanceOf[js.Any])
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
     if (keepAliveInitialDelayMillis != null) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     if (statement_timeout != null) __obj.updateDynamic("statement_timeout")(statement_timeout.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]
   }
 }

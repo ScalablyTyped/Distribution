@@ -11,7 +11,7 @@ trait SpreadOption extends js.Object {
 object SpreadOption {
   @scala.inline
   def apply(spread: Boolean): SpreadOption = {
-    val __obj = js.Dynamic.literal(spread = spread)
+    val __obj = js.Dynamic.literal(spread = spread.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SpreadOption]
   }

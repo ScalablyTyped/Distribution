@@ -12,7 +12,7 @@ trait Anon_GrowthFactor extends js.Object {
 object Anon_GrowthFactor {
   @scala.inline
   def apply(growthFactor: Double, size: Double): Anon_GrowthFactor = {
-    val __obj = js.Dynamic.literal(growthFactor = growthFactor, size = size)
+    val __obj = js.Dynamic.literal(growthFactor = growthFactor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GrowthFactor]
   }

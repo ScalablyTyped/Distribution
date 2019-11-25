@@ -20,7 +20,7 @@ trait WillSaveTextDocumentParams extends js.Object {
 object WillSaveTextDocumentParams {
   @scala.inline
   def apply(reason: TextDocumentSaveReason, textDocument: TextDocumentIdentifier): WillSaveTextDocumentParams = {
-    val __obj = js.Dynamic.literal(reason = reason, textDocument = textDocument)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WillSaveTextDocumentParams]
   }

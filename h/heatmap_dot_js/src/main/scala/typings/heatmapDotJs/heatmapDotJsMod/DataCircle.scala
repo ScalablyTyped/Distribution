@@ -14,7 +14,7 @@ trait DataCircle extends js.Object {
 object DataCircle {
   @scala.inline
   def apply(radius: Double, value: Double, x: Double, y: Double): DataCircle = {
-    val __obj = js.Dynamic.literal(radius = radius, value = value, x = x, y = y)
+    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataCircle]
   }

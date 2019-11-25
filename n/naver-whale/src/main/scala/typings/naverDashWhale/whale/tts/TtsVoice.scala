@@ -36,12 +36,12 @@ object TtsVoice {
     voiceName: String = null
   ): TtsVoice = {
     val __obj = js.Dynamic.literal()
-    if (eventTypes != null) __obj.updateDynamic("eventTypes")(eventTypes)
-    if (extensionsId != null) __obj.updateDynamic("extensionsId")(extensionsId)
-    if (gender != null) __obj.updateDynamic("gender")(gender)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote)
-    if (voiceName != null) __obj.updateDynamic("voiceName")(voiceName)
+    if (eventTypes != null) __obj.updateDynamic("eventTypes")(eventTypes.asInstanceOf[js.Any])
+    if (extensionsId != null) __obj.updateDynamic("extensionsId")(extensionsId.asInstanceOf[js.Any])
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
+    if (voiceName != null) __obj.updateDynamic("voiceName")(voiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TtsVoice]
   }
 }

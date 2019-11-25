@@ -16,7 +16,7 @@ trait Anon_EVEN extends js.Object {
 object Anon_EVEN {
   @scala.inline
   def apply(EVEN: even, NO: no, ODD: odd): Anon_EVEN = {
-    val __obj = js.Dynamic.literal(EVEN = EVEN, NO = NO, ODD = ODD)
+    val __obj = js.Dynamic.literal(EVEN = EVEN.asInstanceOf[js.Any], NO = NO.asInstanceOf[js.Any], ODD = ODD.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EVEN]
   }

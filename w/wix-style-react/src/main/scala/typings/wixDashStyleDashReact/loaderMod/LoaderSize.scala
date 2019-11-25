@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait LoaderSize extends js.Object
 
+object LoaderSize {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def large: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.large = this.cast("large")
+  @scala.inline
+  def medium: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.medium = this.cast("medium")
+  @scala.inline
+  def small: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.small = this.cast("small")
+  @scala.inline
+  def tiny: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.tiny = this.cast("tiny")
+}
+

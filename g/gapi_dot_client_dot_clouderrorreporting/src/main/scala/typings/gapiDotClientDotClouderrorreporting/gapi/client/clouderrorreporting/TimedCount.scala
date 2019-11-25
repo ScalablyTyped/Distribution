@@ -17,9 +17,9 @@ object TimedCount {
   @scala.inline
   def apply(count: String = null, endTime: String = null, startTime: String = null): TimedCount = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimedCount]
   }
 }

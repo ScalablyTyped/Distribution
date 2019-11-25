@@ -13,7 +13,7 @@ object GetReportsResponse {
   @scala.inline
   def apply(reports: js.Array[Report] = null): GetReportsResponse = {
     val __obj = js.Dynamic.literal()
-    if (reports != null) __obj.updateDynamic("reports")(reports)
+    if (reports != null) __obj.updateDynamic("reports")(reports.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReportsResponse]
   }
 }

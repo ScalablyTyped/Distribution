@@ -25,12 +25,12 @@ object Anon_Debug {
     traceId: String = null
   ): Anon_Debug = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
-    if (sampled != null) __obj.updateDynamic("sampled")(sampled)
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
-    if (spanId != null) __obj.updateDynamic("spanId")(spanId)
-    if (traceId != null) __obj.updateDynamic("traceId")(traceId)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (sampled != null) __obj.updateDynamic("sampled")(sampled.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
+    if (spanId != null) __obj.updateDynamic("spanId")(spanId.asInstanceOf[js.Any])
+    if (traceId != null) __obj.updateDynamic("traceId")(traceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Debug]
   }
 }

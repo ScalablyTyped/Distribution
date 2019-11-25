@@ -66,14 +66,14 @@ object Anon_Algorithm {
     rounds: Int | Double = null,
     saltSeparator: String = null
   ): Anon_Algorithm = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any])
     if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
     if (derivedKeyLength != null) __obj.updateDynamic("derivedKeyLength")(derivedKeyLength.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (memoryCost != null) __obj.updateDynamic("memoryCost")(memoryCost.asInstanceOf[js.Any])
     if (parallelization != null) __obj.updateDynamic("parallelization")(parallelization.asInstanceOf[js.Any])
     if (rounds != null) __obj.updateDynamic("rounds")(rounds.asInstanceOf[js.Any])
-    if (saltSeparator != null) __obj.updateDynamic("saltSeparator")(saltSeparator)
+    if (saltSeparator != null) __obj.updateDynamic("saltSeparator")(saltSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Algorithm]
   }
 }

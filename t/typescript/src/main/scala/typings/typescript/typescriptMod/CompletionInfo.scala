@@ -23,7 +23,7 @@ object CompletionInfo {
     isMemberCompletion: Boolean,
     isNewIdentifierLocation: Boolean
   ): CompletionInfo = {
-    val __obj = js.Dynamic.literal(entries = entries, isGlobalCompletion = isGlobalCompletion, isMemberCompletion = isMemberCompletion, isNewIdentifierLocation = isNewIdentifierLocation)
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], isGlobalCompletion = isGlobalCompletion.asInstanceOf[js.Any], isMemberCompletion = isMemberCompletion.asInstanceOf[js.Any], isNewIdentifierLocation = isNewIdentifierLocation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CompletionInfo]
   }

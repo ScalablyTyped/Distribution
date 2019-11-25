@@ -95,21 +95,21 @@ object SwaggerConfigs {
     urls: js.Array[Url] = null
   ): SwaggerConfigs = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (configUrl != null) __obj.updateDynamic("configUrl")(configUrl)
-    if (!js.isUndefined(deepLinking)) __obj.updateDynamic("deepLinking")(deepLinking)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (configUrl != null) __obj.updateDynamic("configUrl")(configUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(deepLinking)) __obj.updateDynamic("deepLinking")(deepLinking.asInstanceOf[js.Any])
     if (docExpansion != null) __obj.updateDynamic("docExpansion")(docExpansion.asInstanceOf[js.Any])
     if (domNode != null) __obj.updateDynamic("domNode")(domNode.asInstanceOf[js.Any])
-    if (dom_id != null) __obj.updateDynamic("dom_id")(dom_id)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (dom_id != null) __obj.updateDynamic("dom_id")(dom_id.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (maxDisplayedTags != null) __obj.updateDynamic("maxDisplayedTags")(maxDisplayedTags.asInstanceOf[js.Any])
     if (operationsSorter != null) __obj.updateDynamic("operationsSorter")(js.Any.fromFunction0(operationsSorter))
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (presets != null) __obj.updateDynamic("presets")(presets)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
     if (requestInterceptor != null) __obj.updateDynamic("requestInterceptor")(js.Any.fromFunction1(requestInterceptor))
-    if (spec != null) __obj.updateDynamic("spec")(spec)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerConfigs]
   }
 }

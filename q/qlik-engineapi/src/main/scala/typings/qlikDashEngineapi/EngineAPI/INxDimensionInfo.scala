@@ -175,10 +175,10 @@ object INxDimensionInfo {
     qNumFormat: FieldAttributesType = null,
     qSortIndicator: SortIndicatorType = null
   ): INxDimensionInfo = {
-    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount, qAttrDimInfo = qAttrDimInfo, qAttrExprInfo = qAttrExprInfo, qCardinal = qCardinal, qContinuousAxes = qContinuousAxes, qDerivedField = qDerivedField, qDimensionType = qDimensionType, qFallbackTitle = qFallbackTitle, qGroupFallbackTitles = qGroupFallbackTitles, qGroupFieldDefs = qGroupFieldDefs, qGroupPos = qGroupPos, qGrouping = qGrouping.asInstanceOf[js.Any], qIsAutoFormat = qIsAutoFormat, qIsCyclic = qIsCyclic, qIsSemantic = qIsSemantic, qLocked = qLocked, qMax = qMax, qMin = qMin, qReverseSort = qReverseSort, qStateCounts = qStateCounts, qTags = qTags)
-    if (qError != null) __obj.updateDynamic("qError")(qError)
-    if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat)
-    if (qSortIndicator != null) __obj.updateDynamic("qSortIndicator")(qSortIndicator)
+    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount.asInstanceOf[js.Any], qAttrDimInfo = qAttrDimInfo.asInstanceOf[js.Any], qAttrExprInfo = qAttrExprInfo.asInstanceOf[js.Any], qCardinal = qCardinal.asInstanceOf[js.Any], qContinuousAxes = qContinuousAxes.asInstanceOf[js.Any], qDerivedField = qDerivedField.asInstanceOf[js.Any], qDimensionType = qDimensionType.asInstanceOf[js.Any], qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qGroupFallbackTitles = qGroupFallbackTitles.asInstanceOf[js.Any], qGroupFieldDefs = qGroupFieldDefs.asInstanceOf[js.Any], qGroupPos = qGroupPos.asInstanceOf[js.Any], qGrouping = qGrouping.asInstanceOf[js.Any], qIsAutoFormat = qIsAutoFormat.asInstanceOf[js.Any], qIsCyclic = qIsCyclic.asInstanceOf[js.Any], qIsSemantic = qIsSemantic.asInstanceOf[js.Any], qLocked = qLocked.asInstanceOf[js.Any], qMax = qMax.asInstanceOf[js.Any], qMin = qMin.asInstanceOf[js.Any], qReverseSort = qReverseSort.asInstanceOf[js.Any], qStateCounts = qStateCounts.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
+    if (qError != null) __obj.updateDynamic("qError")(qError.asInstanceOf[js.Any])
+    if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat.asInstanceOf[js.Any])
+    if (qSortIndicator != null) __obj.updateDynamic("qSortIndicator")(qSortIndicator.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxDimensionInfo]
   }
 }

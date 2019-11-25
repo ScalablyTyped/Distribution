@@ -22,9 +22,9 @@ object BottomNavigationProps {
     style: Anon_ContainerViewStyle = null
   ): BottomNavigationProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomNavigationProps]
   }
 }

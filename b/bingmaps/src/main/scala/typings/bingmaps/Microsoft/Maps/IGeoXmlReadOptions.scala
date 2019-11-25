@@ -47,14 +47,14 @@ object IGeoXmlReadOptions {
     setPushpinTitles: js.UndefOr[Boolean] = js.undefined
   ): IGeoXmlReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowKmlScreenOverlays)) __obj.updateDynamic("allowKmlScreenOverlays")(allowKmlScreenOverlays)
-    if (!js.isUndefined(captureGpxPathWaypoints)) __obj.updateDynamic("captureGpxPathWaypoints")(captureGpxPathWaypoints)
-    if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles)
+    if (!js.isUndefined(allowKmlScreenOverlays)) __obj.updateDynamic("allowKmlScreenOverlays")(allowKmlScreenOverlays.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureGpxPathWaypoints)) __obj.updateDynamic("captureGpxPathWaypoints")(captureGpxPathWaypoints.asInstanceOf[js.Any])
+    if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (!js.isUndefined(ignoreVisibility)) __obj.updateDynamic("ignoreVisibility")(ignoreVisibility)
+    if (!js.isUndefined(ignoreVisibility)) __obj.updateDynamic("ignoreVisibility")(ignoreVisibility.asInstanceOf[js.Any])
     if (maxNetworkLinkDepth != null) __obj.updateDynamic("maxNetworkLinkDepth")(maxNetworkLinkDepth.asInstanceOf[js.Any])
     if (maxNetworkLinks != null) __obj.updateDynamic("maxNetworkLinks")(maxNetworkLinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(setPushpinTitles)) __obj.updateDynamic("setPushpinTitles")(setPushpinTitles)
+    if (!js.isUndefined(setPushpinTitles)) __obj.updateDynamic("setPushpinTitles")(setPushpinTitles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoXmlReadOptions]
   }
 }

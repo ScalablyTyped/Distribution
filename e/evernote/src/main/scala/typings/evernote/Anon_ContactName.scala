@@ -22,11 +22,11 @@ object Anon_ContactName {
     notebookDisplayName: String = null
   ): Anon_ContactName = {
     val __obj = js.Dynamic.literal()
-    if (contactName != null) __obj.updateDynamic("contactName")(contactName)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (!js.isUndefined(hasSharedNotebook)) __obj.updateDynamic("hasSharedNotebook")(hasSharedNotebook)
+    if (contactName != null) __obj.updateDynamic("contactName")(contactName.asInstanceOf[js.Any])
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasSharedNotebook)) __obj.updateDynamic("hasSharedNotebook")(hasSharedNotebook.asInstanceOf[js.Any])
     if (joinedUserCount != null) __obj.updateDynamic("joinedUserCount")(joinedUserCount.asInstanceOf[js.Any])
-    if (notebookDisplayName != null) __obj.updateDynamic("notebookDisplayName")(notebookDisplayName)
+    if (notebookDisplayName != null) __obj.updateDynamic("notebookDisplayName")(notebookDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContactName]
   }
 }

@@ -18,7 +18,7 @@ trait ProjectWorkItemStateColors extends js.Object {
 object ProjectWorkItemStateColors {
   @scala.inline
   def apply(projectName: String, workItemTypeStateColors: js.Array[WorkItemTypeStateColors]): ProjectWorkItemStateColors = {
-    val __obj = js.Dynamic.literal(projectName = projectName, workItemTypeStateColors = workItemTypeStateColors)
+    val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any], workItemTypeStateColors = workItemTypeStateColors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectWorkItemStateColors]
   }

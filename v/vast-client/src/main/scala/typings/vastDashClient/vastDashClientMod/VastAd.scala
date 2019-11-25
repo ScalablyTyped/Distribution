@@ -35,15 +35,15 @@ object VastAd {
     system: VastSystem | String = null,
     title: String = null
   ): VastAd = {
-    val __obj = js.Dynamic.literal(creatives = creatives, errorURLTemplates = errorURLTemplates, extensions = extensions, impressionURLTemplates = impressionURLTemplates)
-    if (advertiser != null) __obj.updateDynamic("advertiser")(advertiser)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (pricing != null) __obj.updateDynamic("pricing")(pricing)
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence)
-    if (survey != null) __obj.updateDynamic("survey")(survey)
+    val __obj = js.Dynamic.literal(creatives = creatives.asInstanceOf[js.Any], errorURLTemplates = errorURLTemplates.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], impressionURLTemplates = impressionURLTemplates.asInstanceOf[js.Any])
+    if (advertiser != null) __obj.updateDynamic("advertiser")(advertiser.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (pricing != null) __obj.updateDynamic("pricing")(pricing.asInstanceOf[js.Any])
+    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
+    if (survey != null) __obj.updateDynamic("survey")(survey.asInstanceOf[js.Any])
     if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastAd]
   }
 }

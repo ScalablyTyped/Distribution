@@ -25,11 +25,11 @@ object Anon_Contentid {
     promotions: js.Array[Promotion] = null
   ): Anon_Contentid = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (content_id != null) __obj.updateDynamic("content_id")(content_id)
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (promotions != null) __obj.updateDynamic("promotions")(promotions)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (content_id != null) __obj.updateDynamic("content_id")(content_id.asInstanceOf[js.Any])
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (promotions != null) __obj.updateDynamic("promotions")(promotions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Contentid]
   }
 }

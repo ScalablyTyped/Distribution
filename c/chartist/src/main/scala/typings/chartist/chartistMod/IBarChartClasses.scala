@@ -36,18 +36,18 @@ object IBarChartClasses {
     vertical: String = null
   ): IBarChartClasses = {
     val __obj = js.Dynamic.literal()
-    if (bar != null) __obj.updateDynamic("bar")(bar)
-    if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (gridGroup != null) __obj.updateDynamic("gridGroup")(gridGroup)
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal)
-    if (horizontalBars != null) __obj.updateDynamic("horizontalBars")(horizontalBars)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelGroup != null) __obj.updateDynamic("labelGroup")(labelGroup)
-    if (series != null) __obj.updateDynamic("series")(series)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical)
+    if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (gridGroup != null) __obj.updateDynamic("gridGroup")(gridGroup.asInstanceOf[js.Any])
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (horizontalBars != null) __obj.updateDynamic("horizontalBars")(horizontalBars.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelGroup != null) __obj.updateDynamic("labelGroup")(labelGroup.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBarChartClasses]
   }
 }

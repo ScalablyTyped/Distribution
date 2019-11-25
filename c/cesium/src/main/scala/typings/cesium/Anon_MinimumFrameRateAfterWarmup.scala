@@ -24,7 +24,7 @@ object Anon_MinimumFrameRateAfterWarmup {
     samplingWindow: Int | Double = null,
     warmupPeriod: Int | Double = null
   ): Anon_MinimumFrameRateAfterWarmup = {
-    val __obj = js.Dynamic.literal(scene = scene)
+    val __obj = js.Dynamic.literal(scene = scene.asInstanceOf[js.Any])
     if (minimumFrameRateAfterWarmup != null) __obj.updateDynamic("minimumFrameRateAfterWarmup")(minimumFrameRateAfterWarmup.asInstanceOf[js.Any])
     if (minimumFrameRateDuringWarmup != null) __obj.updateDynamic("minimumFrameRateDuringWarmup")(minimumFrameRateDuringWarmup.asInstanceOf[js.Any])
     if (quietPeriod != null) __obj.updateDynamic("quietPeriod")(quietPeriod.asInstanceOf[js.Any])

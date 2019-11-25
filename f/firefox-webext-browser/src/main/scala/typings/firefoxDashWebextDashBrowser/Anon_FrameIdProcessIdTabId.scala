@@ -25,7 +25,7 @@ trait Anon_FrameIdProcessIdTabId extends js.Object {
 object Anon_FrameIdProcessIdTabId {
   @scala.inline
   def apply(frameId: Double, tabId: Double, timeStamp: Double, url: String, processId: Int | Double = null): Anon_FrameIdProcessIdTabId = {
-    val __obj = js.Dynamic.literal(frameId = frameId, tabId = tabId, timeStamp = timeStamp, url = url)
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FrameIdProcessIdTabId]
   }

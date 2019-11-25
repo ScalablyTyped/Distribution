@@ -12,7 +12,7 @@ trait ConfigDefs extends js.Object {
 object ConfigDefs {
   @scala.inline
   def apply(defaults: ConfigOptions, types: ConfigTypes): ConfigDefs = {
-    val __obj = js.Dynamic.literal(defaults = defaults, types = types)
+    val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfigDefs]
   }

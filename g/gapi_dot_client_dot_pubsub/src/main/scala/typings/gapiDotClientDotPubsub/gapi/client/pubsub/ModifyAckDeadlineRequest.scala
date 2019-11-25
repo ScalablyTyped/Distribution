@@ -24,7 +24,7 @@ object ModifyAckDeadlineRequest {
   def apply(ackDeadlineSeconds: Int | Double = null, ackIds: js.Array[String] = null): ModifyAckDeadlineRequest = {
     val __obj = js.Dynamic.literal()
     if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
-    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds)
+    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyAckDeadlineRequest]
   }
 }

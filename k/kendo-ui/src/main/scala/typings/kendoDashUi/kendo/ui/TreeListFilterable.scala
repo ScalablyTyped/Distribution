@@ -18,9 +18,9 @@ object TreeListFilterable {
     operators: TreeListFilterableOperators = null
   ): TreeListFilterable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (operators != null) __obj.updateDynamic("operators")(operators)
+    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListFilterable]
   }
 }

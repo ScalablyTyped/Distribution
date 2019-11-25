@@ -13,8 +13,8 @@ object Anon_Imageformat {
   @scala.inline
   def apply(image_format: String = null, image_scaling: String = null): Anon_Imageformat = {
     val __obj = js.Dynamic.literal()
-    if (image_format != null) __obj.updateDynamic("image_format")(image_format)
-    if (image_scaling != null) __obj.updateDynamic("image_scaling")(image_scaling)
+    if (image_format != null) __obj.updateDynamic("image_format")(image_format.asInstanceOf[js.Any])
+    if (image_scaling != null) __obj.updateDynamic("image_scaling")(image_scaling.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Imageformat]
   }
 }

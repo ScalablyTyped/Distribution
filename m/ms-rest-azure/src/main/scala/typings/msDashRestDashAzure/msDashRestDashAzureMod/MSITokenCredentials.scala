@@ -1,7 +1,6 @@
 package typings.msDashRestDashAzure.msDashRestDashAzureMod
 
 import typings.msDashRest.msDashRestMod.WebResource
-import typings.msDashRestDashAzure.Fn_Err
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,6 +35,6 @@ class MSITokenCredentials () extends js.Object {
     * @param {function(error)}  callback  The callback function.
     * @return {undefined}
     */
-  def signRequest(webResource: WebResource, callback: Fn_Err): Unit = js.native
+  def signRequest(webResource: WebResource, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
 

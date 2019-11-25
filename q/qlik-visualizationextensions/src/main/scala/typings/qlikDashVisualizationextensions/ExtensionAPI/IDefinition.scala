@@ -16,8 +16,8 @@ trait IDefinition extends js.Object {
 object IDefinition {
   @scala.inline
   def apply(component: accordion, items: IItems, `type`: items): IDefinition = {
-    val __obj = js.Dynamic.literal(component = component, items = items)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDefinition]
   }
 }

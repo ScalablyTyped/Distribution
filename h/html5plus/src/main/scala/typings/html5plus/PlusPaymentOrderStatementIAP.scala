@@ -35,9 +35,9 @@ object PlusPaymentOrderStatementIAP {
   @scala.inline
   def apply(productid: String = null, quantity: String = null, username: String = null): PlusPaymentOrderStatementIAP = {
     val __obj = js.Dynamic.literal()
-    if (productid != null) __obj.updateDynamic("productid")(productid)
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (productid != null) __obj.updateDynamic("productid")(productid.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPaymentOrderStatementIAP]
   }
 }

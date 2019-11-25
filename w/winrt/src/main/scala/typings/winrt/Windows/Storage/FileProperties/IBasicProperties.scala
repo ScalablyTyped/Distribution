@@ -14,7 +14,7 @@ trait IBasicProperties extends js.Object {
 object IBasicProperties {
   @scala.inline
   def apply(dateModified: Date, itemDate: Date, size: Double): IBasicProperties = {
-    val __obj = js.Dynamic.literal(dateModified = dateModified, itemDate = itemDate, size = size)
+    val __obj = js.Dynamic.literal(dateModified = dateModified.asInstanceOf[js.Any], itemDate = itemDate.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBasicProperties]
   }

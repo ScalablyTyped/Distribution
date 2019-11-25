@@ -14,7 +14,7 @@ trait Anon_Label extends js.Object {
 object Anon_Label {
   @scala.inline
   def apply(label: String, value: /* searchState */ SearchState => SearchState): Anon_Label = {
-    val __obj = js.Dynamic.literal(label = label, value = js.Any.fromFunction1(value))
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = js.Any.fromFunction1(value))
   
     __obj.asInstanceOf[Anon_Label]
   }

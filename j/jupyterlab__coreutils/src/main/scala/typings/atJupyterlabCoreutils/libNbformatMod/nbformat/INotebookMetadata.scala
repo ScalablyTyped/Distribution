@@ -21,9 +21,9 @@ object INotebookMetadata {
     kernelspec: IKernelspecMetadata = null,
     language_info: ILanguageInfoMetadata = null
   ): INotebookMetadata = {
-    val __obj = js.Dynamic.literal(orig_nbformat = orig_nbformat)
-    if (kernelspec != null) __obj.updateDynamic("kernelspec")(kernelspec)
-    if (language_info != null) __obj.updateDynamic("language_info")(language_info)
+    val __obj = js.Dynamic.literal(orig_nbformat = orig_nbformat.asInstanceOf[js.Any])
+    if (kernelspec != null) __obj.updateDynamic("kernelspec")(kernelspec.asInstanceOf[js.Any])
+    if (language_info != null) __obj.updateDynamic("language_info")(language_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotebookMetadata]
   }
 }

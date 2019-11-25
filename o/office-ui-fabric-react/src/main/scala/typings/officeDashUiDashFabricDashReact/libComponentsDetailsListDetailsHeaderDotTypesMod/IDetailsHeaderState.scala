@@ -20,10 +20,10 @@ object IDetailsHeaderState {
     isSizing: js.UndefOr[Boolean] = js.undefined
   ): IDetailsHeaderState = {
     val __obj = js.Dynamic.literal()
-    if (columnResizeDetails != null) __obj.updateDynamic("columnResizeDetails")(columnResizeDetails)
-    if (!js.isUndefined(isAllCollapsed)) __obj.updateDynamic("isAllCollapsed")(isAllCollapsed)
-    if (!js.isUndefined(isAllSelected)) __obj.updateDynamic("isAllSelected")(isAllSelected)
-    if (!js.isUndefined(isSizing)) __obj.updateDynamic("isSizing")(isSizing)
+    if (columnResizeDetails != null) __obj.updateDynamic("columnResizeDetails")(columnResizeDetails.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllCollapsed)) __obj.updateDynamic("isAllCollapsed")(isAllCollapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAllSelected)) __obj.updateDynamic("isAllSelected")(isAllSelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSizing)) __obj.updateDynamic("isSizing")(isSizing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsHeaderState]
   }
 }

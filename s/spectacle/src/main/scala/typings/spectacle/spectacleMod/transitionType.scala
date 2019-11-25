@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
 */
 trait transitionType extends js.Object
 
+object transitionType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fade: typings.spectacle.spectacleStrings.fade = this.cast("fade")
+  @scala.inline
+  def slide: typings.spectacle.spectacleStrings.slide = this.cast("slide")
+  @scala.inline
+  def spin: typings.spectacle.spectacleStrings.spin = this.cast("spin")
+  @scala.inline
+  def zoom: typings.spectacle.spectacleStrings.zoom = this.cast("zoom")
+}
+

@@ -13,8 +13,8 @@ object RTCRtcpFeedback {
   @scala.inline
   def apply(parameter: java.lang.String = null, `type`: java.lang.String = null): RTCRtcpFeedback = {
     val __obj = js.Dynamic.literal()
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtcpFeedback]
   }
 }

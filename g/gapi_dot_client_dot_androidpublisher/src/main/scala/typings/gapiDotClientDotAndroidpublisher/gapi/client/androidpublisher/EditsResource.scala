@@ -50,7 +50,7 @@ object EditsResource {
     tracks: TracksResource,
     validate: Anon_AltEditId => Request[AppEdit]
   ): EditsResource = {
-    val __obj = js.Dynamic.literal(apklistings = apklistings, apks = apks, commit = js.Any.fromFunction1(commit), delete = js.Any.fromFunction1(delete), deobfuscationfiles = deobfuscationfiles, details = details, expansionfiles = expansionfiles, get = js.Any.fromFunction1(get), images = images, insert = js.Any.fromFunction1(insert), listings = listings, testers = testers, tracks = tracks, validate = js.Any.fromFunction1(validate))
+    val __obj = js.Dynamic.literal(apklistings = apklistings.asInstanceOf[js.Any], apks = apks.asInstanceOf[js.Any], commit = js.Any.fromFunction1(commit), delete = js.Any.fromFunction1(delete), deobfuscationfiles = deobfuscationfiles.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], expansionfiles = expansionfiles.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), images = images.asInstanceOf[js.Any], insert = js.Any.fromFunction1(insert), listings = listings.asInstanceOf[js.Any], testers = testers.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate))
   
     __obj.asInstanceOf[EditsResource]
   }

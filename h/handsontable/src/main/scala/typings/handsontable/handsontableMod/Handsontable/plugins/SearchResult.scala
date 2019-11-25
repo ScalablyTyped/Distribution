@@ -17,7 +17,7 @@ object SearchResult {
     data: typings.handsontable.handsontableMod.Handsontable.plugins.CellValue,
     row: Double
   ): SearchResult = {
-    val __obj = js.Dynamic.literal(col = col, data = data, row = row)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchResult]
   }

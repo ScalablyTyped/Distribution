@@ -15,7 +15,7 @@ trait Anon_HexObj extends js.Object {
 object Anon_HexObj {
   @scala.inline
   def apply(hex: String, obj: RSAKey | DSA | ECDSA): Anon_HexObj = {
-    val __obj = js.Dynamic.literal(hex = hex, obj = obj.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hex = hex.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HexObj]
   }

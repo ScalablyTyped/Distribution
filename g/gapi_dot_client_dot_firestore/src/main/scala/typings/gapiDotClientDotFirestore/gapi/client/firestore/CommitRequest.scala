@@ -22,8 +22,8 @@ object CommitRequest {
   @scala.inline
   def apply(transaction: String = null, writes: js.Array[Write] = null): CommitRequest = {
     val __obj = js.Dynamic.literal()
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
-    if (writes != null) __obj.updateDynamic("writes")(writes)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
+    if (writes != null) __obj.updateDynamic("writes")(writes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitRequest]
   }
 }

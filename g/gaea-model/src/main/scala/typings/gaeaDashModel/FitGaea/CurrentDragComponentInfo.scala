@@ -33,11 +33,11 @@ object CurrentDragComponentInfo {
     newInfo: Anon_UniqueKey = null,
     viewportInfo: Anon_MapUniqueKey = null
   ): CurrentDragComponentInfo = {
-    val __obj = js.Dynamic.literal(dragStartIndex = dragStartIndex, dragStartParentElement = dragStartParentElement)
+    val __obj = js.Dynamic.literal(dragStartIndex = dragStartIndex.asInstanceOf[js.Any], dragStartParentElement = dragStartParentElement.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (comboInfo != null) __obj.updateDynamic("comboInfo")(comboInfo)
-    if (newInfo != null) __obj.updateDynamic("newInfo")(newInfo)
-    if (viewportInfo != null) __obj.updateDynamic("viewportInfo")(viewportInfo)
+    if (comboInfo != null) __obj.updateDynamic("comboInfo")(comboInfo.asInstanceOf[js.Any])
+    if (newInfo != null) __obj.updateDynamic("newInfo")(newInfo.asInstanceOf[js.Any])
+    if (viewportInfo != null) __obj.updateDynamic("viewportInfo")(viewportInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentDragComponentInfo]
   }
 }

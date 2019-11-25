@@ -25,8 +25,8 @@ trait ChatRoomParticipant extends js.Object {
 object ChatRoomParticipant {
   @scala.inline
   def apply(id: String, name: String, owner: js.UndefOr[Boolean] = js.undefined): ChatRoomParticipant = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
-    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomParticipant]
   }
 }

@@ -20,10 +20,10 @@ object ITouchProps {
     disabled: js.UndefOr[Boolean] = js.undefined
   ): ITouchProps = {
     val __obj = js.Dynamic.literal()
-    if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName)
-    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName.asInstanceOf[js.Any])
+    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITouchProps]
   }
 }

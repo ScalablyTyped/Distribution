@@ -14,8 +14,8 @@ object Anon_ArrayUri {
   @scala.inline
   def apply(array: js.Array[ASN1Object] = null, uri: String = null): Anon_ArrayUri = {
     val __obj = js.Dynamic.literal()
-    if (array != null) __obj.updateDynamic("array")(array)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (array != null) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArrayUri]
   }
 }

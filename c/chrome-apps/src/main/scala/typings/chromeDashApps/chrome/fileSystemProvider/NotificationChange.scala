@@ -25,7 +25,7 @@ object NotificationChange {
     changeType: ToStringLiteral[Anon_CHANGED, String, Exclude[String, CHANGED | DELETED]],
     entryPath: String
   ): NotificationChange = {
-    val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], entryPath = entryPath)
+    val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], entryPath = entryPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationChange]
   }

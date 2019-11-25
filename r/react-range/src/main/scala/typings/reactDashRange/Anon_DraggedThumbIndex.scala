@@ -13,7 +13,7 @@ trait Anon_DraggedThumbIndex extends js.Object {
 object Anon_DraggedThumbIndex {
   @scala.inline
   def apply(draggedThumbIndex: Double, isChanged: Boolean, thumbZIndexes: js.Array[Double]): Anon_DraggedThumbIndex = {
-    val __obj = js.Dynamic.literal(draggedThumbIndex = draggedThumbIndex, isChanged = isChanged, thumbZIndexes = thumbZIndexes)
+    val __obj = js.Dynamic.literal(draggedThumbIndex = draggedThumbIndex.asInstanceOf[js.Any], isChanged = isChanged.asInstanceOf[js.Any], thumbZIndexes = thumbZIndexes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DraggedThumbIndex]
   }

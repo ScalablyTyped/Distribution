@@ -1,8 +1,7 @@
 package typings.highcharts.highchartsMod
 
-import typings.highcharts.highchartsStrings.chart
+import typings.highcharts.highchartsStrings.chart_
 import typings.highcharts.highchartsStrings.flap
-import typings.highcharts.highchartsStrings.offset
 import typings.highcharts.highchartsStrings.ortho
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,7 +47,7 @@ trait YAxisTitleOptions extends AxisTitleOptions {
     *
     * - `undefined`: Will use the config from `labels.position3d`
     */
-  var position3d: js.UndefOr[chart | flap | offset | ortho | Null] = js.undefined
+  var position3d: js.UndefOr[chart_ | flap | typings.highcharts.highchartsStrings.offset | ortho | Null] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Whether to reserve space for the title
     * when laying out the axis.
@@ -141,7 +140,7 @@ object YAxisTitleOptions {
     align: AxisTitleAlignValue = null,
     margin: Int | Double = null,
     offset: Int | Double = null,
-    position3d: chart | flap | offset | ortho = null,
+    position3d: chart_ | flap | typings.highcharts.highchartsStrings.offset | ortho = null,
     reserveSpace: js.UndefOr[Boolean] = js.undefined,
     rotation: Int | Double = null,
     skew3d: js.UndefOr[Boolean] = js.undefined,
@@ -153,17 +152,17 @@ object YAxisTitleOptions {
     y: Int | Double = null
   ): YAxisTitleOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position3d != null) __obj.updateDynamic("position3d")(position3d.asInstanceOf[js.Any])
-    if (!js.isUndefined(reserveSpace)) __obj.updateDynamic("reserveSpace")(reserveSpace)
+    if (!js.isUndefined(reserveSpace)) __obj.updateDynamic("reserveSpace")(reserveSpace.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(skew3d)) __obj.updateDynamic("skew3d")(skew3d)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML)
+    if (!js.isUndefined(skew3d)) __obj.updateDynamic("skew3d")(skew3d.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisTitleOptions]

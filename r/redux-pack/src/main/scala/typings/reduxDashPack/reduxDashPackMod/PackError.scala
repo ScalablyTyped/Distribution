@@ -12,7 +12,7 @@ trait PackError extends js.Object {
 object PackError {
   @scala.inline
   def apply(error: Boolean, payload: js.Any): PackError = {
-    val __obj = js.Dynamic.literal(error = error, payload = payload)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PackError]
   }

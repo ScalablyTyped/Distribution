@@ -35,10 +35,10 @@ object Anon_Aliases {
     IPAMConfig: js.Any = null,
     Links: js.Any = null
   ): Anon_Aliases = {
-    val __obj = js.Dynamic.literal(EndpointID = EndpointID, Gateway = Gateway, GlobalIPv6Address = GlobalIPv6Address, GlobalIPv6PrefixLen = GlobalIPv6PrefixLen, IPAddress = IPAddress, IPPrefixLen = IPPrefixLen, IPv6Gateway = IPv6Gateway, MacAddress = MacAddress, NetworkID = NetworkID)
-    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases)
-    if (IPAMConfig != null) __obj.updateDynamic("IPAMConfig")(IPAMConfig)
-    if (Links != null) __obj.updateDynamic("Links")(Links)
+    val __obj = js.Dynamic.literal(EndpointID = EndpointID.asInstanceOf[js.Any], Gateway = Gateway.asInstanceOf[js.Any], GlobalIPv6Address = GlobalIPv6Address.asInstanceOf[js.Any], GlobalIPv6PrefixLen = GlobalIPv6PrefixLen.asInstanceOf[js.Any], IPAddress = IPAddress.asInstanceOf[js.Any], IPPrefixLen = IPPrefixLen.asInstanceOf[js.Any], IPv6Gateway = IPv6Gateway.asInstanceOf[js.Any], MacAddress = MacAddress.asInstanceOf[js.Any], NetworkID = NetworkID.asInstanceOf[js.Any])
+    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases.asInstanceOf[js.Any])
+    if (IPAMConfig != null) __obj.updateDynamic("IPAMConfig")(IPAMConfig.asInstanceOf[js.Any])
+    if (Links != null) __obj.updateDynamic("Links")(Links.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Aliases]
   }
 }

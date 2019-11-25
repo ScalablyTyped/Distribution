@@ -19,8 +19,8 @@ object SharedOptions {
   @scala.inline
   def apply(algorithm: Algorithm = null, encoding: Encoding = null): SharedOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedOptions]
   }
 }

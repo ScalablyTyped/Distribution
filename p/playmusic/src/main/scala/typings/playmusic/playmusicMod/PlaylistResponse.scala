@@ -14,9 +14,9 @@ object PlaylistResponse {
   @scala.inline
   def apply(data: PlaylistData = null, kind: String = null, nextPageToken: String = null): PlaylistResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistResponse]
   }
 }

@@ -65,16 +65,16 @@ object Config {
     theme: Theme = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowMarkerAbsolute)) __obj.updateDynamic("arrowMarkerAbsolute")(arrowMarkerAbsolute)
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (flowchart != null) __obj.updateDynamic("flowchart")(flowchart)
-    if (gantt != null) __obj.updateDynamic("gantt")(gantt)
-    if (git != null) __obj.updateDynamic("git")(git)
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
-    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel)
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence)
-    if (!js.isUndefined(startOnLoad)) __obj.updateDynamic("startOnLoad")(startOnLoad)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(arrowMarkerAbsolute)) __obj.updateDynamic("arrowMarkerAbsolute")(arrowMarkerAbsolute.asInstanceOf[js.Any])
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (flowchart != null) __obj.updateDynamic("flowchart")(flowchart.asInstanceOf[js.Any])
+    if (gantt != null) __obj.updateDynamic("gantt")(gantt.asInstanceOf[js.Any])
+    if (git != null) __obj.updateDynamic("git")(git.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel.asInstanceOf[js.Any])
+    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOnLoad)) __obj.updateDynamic("startOnLoad")(startOnLoad.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

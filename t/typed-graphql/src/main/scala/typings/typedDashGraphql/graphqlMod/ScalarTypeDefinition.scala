@@ -15,8 +15,8 @@ trait ScalarTypeDefinition
 object ScalarTypeDefinition {
   @scala.inline
   def apply(kind: String, name: Name, loc: Location = null): ScalarTypeDefinition = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalarTypeDefinition]
   }
 }

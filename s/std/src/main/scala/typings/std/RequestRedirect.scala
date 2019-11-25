@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait RequestRedirect extends js.Object
 
+object RequestRedirect {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def error: typings.std.stdStrings.error = this.cast("error")
+  @scala.inline
+  def follow: typings.std.stdStrings.follow = this.cast("follow")
+  @scala.inline
+  def manual: typings.std.stdStrings.manual = this.cast("manual")
+}
+

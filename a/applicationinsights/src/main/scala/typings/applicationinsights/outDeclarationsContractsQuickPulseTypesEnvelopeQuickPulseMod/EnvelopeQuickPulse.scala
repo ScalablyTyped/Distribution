@@ -31,7 +31,7 @@ object EnvelopeQuickPulse {
     Timestamp: String,
     Version: String
   ): EnvelopeQuickPulse = {
-    val __obj = js.Dynamic.literal(Documents = Documents, Instance = Instance, InstrumentationKey = InstrumentationKey, InvariantVersion = InvariantVersion, MachineName = MachineName, Metrics = Metrics, StreamId = StreamId, Timestamp = Timestamp, Version = Version)
+    val __obj = js.Dynamic.literal(Documents = Documents.asInstanceOf[js.Any], Instance = Instance.asInstanceOf[js.Any], InstrumentationKey = InstrumentationKey.asInstanceOf[js.Any], InvariantVersion = InvariantVersion.asInstanceOf[js.Any], MachineName = MachineName.asInstanceOf[js.Any], Metrics = Metrics.asInstanceOf[js.Any], StreamId = StreamId.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EnvelopeQuickPulse]
   }

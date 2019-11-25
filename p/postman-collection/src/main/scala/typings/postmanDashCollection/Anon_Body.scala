@@ -24,9 +24,9 @@ object Anon_Body {
     headers: js.Array[HeaderDefinition] = null,
     statusMessage: String = null
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], elapsedTime = elapsedTime, statusCode = statusCode)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

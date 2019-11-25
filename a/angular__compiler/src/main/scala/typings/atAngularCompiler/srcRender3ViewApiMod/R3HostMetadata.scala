@@ -31,7 +31,7 @@ object R3HostMetadata {
     properties: StringDictionary[String],
     specialAttributes: Anon_ClassAttr
   ): R3HostMetadata = {
-    val __obj = js.Dynamic.literal(attributes = attributes, listeners = listeners, properties = properties, specialAttributes = specialAttributes)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], specialAttributes = specialAttributes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[R3HostMetadata]
   }

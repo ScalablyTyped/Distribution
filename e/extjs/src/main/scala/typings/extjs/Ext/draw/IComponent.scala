@@ -26,26 +26,20 @@ object IComponent {
   def apply(
     IComponent: typings.extjs.Ext.IComponent = null,
     autoSize: js.UndefOr[Boolean] = js.undefined,
-    baseCls: java.lang.String = null,
-    componentLayout: js.Any = null,
     enginePriority: Array = null,
     gradients: Array = null,
     items: Array = null,
-    shrinkWrap: js.Any = null,
     surface: ISurface = null,
     viewBox: js.UndefOr[Boolean] = js.undefined
   ): IComponent = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (enginePriority != null) __obj.updateDynamic("enginePriority")(enginePriority)
-    if (gradients != null) __obj.updateDynamic("gradients")(gradients)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (shrinkWrap != null) __obj.updateDynamic("shrinkWrap")(shrinkWrap)
-    if (surface != null) __obj.updateDynamic("surface")(surface)
-    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
+    if (enginePriority != null) __obj.updateDynamic("enginePriority")(enginePriority.asInstanceOf[js.Any])
+    if (gradients != null) __obj.updateDynamic("gradients")(gradients.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (surface != null) __obj.updateDynamic("surface")(surface.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponent]
   }
 }

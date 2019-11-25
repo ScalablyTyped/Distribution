@@ -31,13 +31,13 @@ object Anon_Context {
   ): Anon_Context = {
     val __obj = js.Dynamic.literal()
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (inner != null) __obj.updateDynamic("inner")(inner)
-    if (lines != null) __obj.updateDynamic("lines")(lines)
-    if (mainLabel != null) __obj.updateDynamic("mainLabel")(mainLabel)
-    if (outer != null) __obj.updateDynamic("outer")(outer)
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage)
-    if (truncation != null) __obj.updateDynamic("truncation")(truncation)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (inner != null) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (mainLabel != null) __obj.updateDynamic("mainLabel")(mainLabel.asInstanceOf[js.Any])
+    if (outer != null) __obj.updateDynamic("outer")(outer.asInstanceOf[js.Any])
+    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (truncation != null) __obj.updateDynamic("truncation")(truncation.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context]
   }
 }

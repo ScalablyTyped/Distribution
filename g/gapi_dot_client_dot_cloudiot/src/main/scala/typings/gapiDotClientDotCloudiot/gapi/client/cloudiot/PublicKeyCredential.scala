@@ -15,8 +15,8 @@ object PublicKeyCredential {
   @scala.inline
   def apply(format: String = null, key: String = null): PublicKeyCredential = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredential]
   }
 }

@@ -12,12 +12,12 @@ trait Expand extends Effect {
 object Expand {
   @scala.inline
   def apply(
-    add: Effect => Expand,
+    add: Effect => Effect,
     direction: String => Expand,
-    duration: Double => Expand,
+    duration: Double => Effect,
     play: () => JQueryPromise[_],
     reverse: () => JQueryPromise[_],
-    stop: () => Expand
+    stop: () => Effect
   ): Expand = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), direction = js.Any.fromFunction1(direction), duration = js.Any.fromFunction1(duration), play = js.Any.fromFunction0(play), reverse = js.Any.fromFunction0(reverse), stop = js.Any.fromFunction0(stop))
   

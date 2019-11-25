@@ -16,17 +16,9 @@ import scala.scalajs.js.annotation._
 
 object Reference {
   @scala.inline
-  def apply(
-    depth: Double,
-    display: String,
-    key: String,
-    path: js.Array[String],
-    root: String,
-    toString: () => String,
-    `type`: String
-  ): Reference = {
-    val __obj = js.Dynamic.literal(depth = depth, display = display, key = key, path = path, root = root, toString = js.Any.fromFunction0(toString))
-    __obj.updateDynamic("type")(`type`)
+  def apply(depth: Double, display: String, key: String, path: js.Array[String], root: String, `type`: String): Reference = {
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
 }

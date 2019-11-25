@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(decodeValues: js.UndefOr[Boolean] = js.undefined, map: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decodeValues)) __obj.updateDynamic("decodeValues")(decodeValues)
-    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map)
+    if (!js.isUndefined(decodeValues)) __obj.updateDynamic("decodeValues")(decodeValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

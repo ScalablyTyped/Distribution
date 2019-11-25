@@ -51,9 +51,9 @@ object LengthsParametersProperties {
   ): LengthsParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (calculationType != null) __obj.updateDynamic("calculationType")(calculationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
     if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
-    if (polylines != null) __obj.updateDynamic("polylines")(polylines)
+    if (polylines != null) __obj.updateDynamic("polylines")(polylines.asInstanceOf[js.Any])
     __obj.asInstanceOf[LengthsParametersProperties]
   }
 }

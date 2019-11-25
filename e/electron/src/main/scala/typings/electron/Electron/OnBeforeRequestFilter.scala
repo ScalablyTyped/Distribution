@@ -15,7 +15,7 @@ trait OnBeforeRequestFilter extends js.Object {
 object OnBeforeRequestFilter {
   @scala.inline
   def apply(urls: js.Array[String]): OnBeforeRequestFilter = {
-    val __obj = js.Dynamic.literal(urls = urls)
+    val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnBeforeRequestFilter]
   }

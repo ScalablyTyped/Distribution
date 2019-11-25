@@ -30,15 +30,15 @@ object Auth0DecodedHash {
     tokenType: String = null
   ): Auth0DecodedHash = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (appState != null) __obj.updateDynamic("appState")(appState)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (appState != null) __obj.updateDynamic("appState")(appState.asInstanceOf[js.Any])
     if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (idTokenPayload != null) __obj.updateDynamic("idTokenPayload")(idTokenPayload)
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (idTokenPayload != null) __obj.updateDynamic("idTokenPayload")(idTokenPayload.asInstanceOf[js.Any])
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0DecodedHash]
   }
 }

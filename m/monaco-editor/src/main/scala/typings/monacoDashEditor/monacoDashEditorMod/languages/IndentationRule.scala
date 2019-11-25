@@ -32,9 +32,9 @@ object IndentationRule {
     indentNextLinePattern: RegExp = null,
     unIndentedLinePattern: RegExp = null
   ): IndentationRule = {
-    val __obj = js.Dynamic.literal(decreaseIndentPattern = decreaseIndentPattern, increaseIndentPattern = increaseIndentPattern)
-    if (indentNextLinePattern != null) __obj.updateDynamic("indentNextLinePattern")(indentNextLinePattern)
-    if (unIndentedLinePattern != null) __obj.updateDynamic("unIndentedLinePattern")(unIndentedLinePattern)
+    val __obj = js.Dynamic.literal(decreaseIndentPattern = decreaseIndentPattern.asInstanceOf[js.Any], increaseIndentPattern = increaseIndentPattern.asInstanceOf[js.Any])
+    if (indentNextLinePattern != null) __obj.updateDynamic("indentNextLinePattern")(indentNextLinePattern.asInstanceOf[js.Any])
+    if (unIndentedLinePattern != null) __obj.updateDynamic("unIndentedLinePattern")(unIndentedLinePattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndentationRule]
   }
 }

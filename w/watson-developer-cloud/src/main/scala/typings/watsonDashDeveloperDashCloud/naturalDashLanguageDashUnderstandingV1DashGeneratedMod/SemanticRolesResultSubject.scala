@@ -22,9 +22,9 @@ object SemanticRolesResultSubject {
     text: String = null
   ): SemanticRolesResultSubject = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticRolesResultSubject]
   }
 }

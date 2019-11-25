@@ -23,7 +23,7 @@ object DiscoverFeedResponseRootObject {
     status: String,
     suggested_users: DiscoverFeedResponseSuggested_users
   ): DiscoverFeedResponseRootObject = {
-    val __obj = js.Dynamic.literal(max_id = max_id, more_available = more_available, new_suggested_users = new_suggested_users, next_max_id = next_max_id, status = status, suggested_users = suggested_users)
+    val __obj = js.Dynamic.literal(max_id = max_id.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any], new_suggested_users = new_suggested_users.asInstanceOf[js.Any], next_max_id = next_max_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], suggested_users = suggested_users.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DiscoverFeedResponseRootObject]
   }

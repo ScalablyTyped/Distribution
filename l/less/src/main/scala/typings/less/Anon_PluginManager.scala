@@ -12,7 +12,7 @@ trait Anon_PluginManager extends js.Object {
 object Anon_PluginManager {
   @scala.inline
   def apply(pluginManager: PluginManager): Anon_PluginManager = {
-    val __obj = js.Dynamic.literal(pluginManager = pluginManager)
+    val __obj = js.Dynamic.literal(pluginManager = pluginManager.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PluginManager]
   }

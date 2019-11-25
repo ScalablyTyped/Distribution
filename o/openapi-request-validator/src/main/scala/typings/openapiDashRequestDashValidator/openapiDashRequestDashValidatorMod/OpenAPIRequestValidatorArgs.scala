@@ -43,15 +43,15 @@ object OpenAPIRequestValidatorArgs {
     requestBody: RequestBodyObject = null,
     schemas: js.Array[IJsonSchema] = null
   ): OpenAPIRequestValidatorArgs = {
-    val __obj = js.Dynamic.literal(parameters = parameters)
-    if (componentSchemas != null) __obj.updateDynamic("componentSchemas")(componentSchemas)
-    if (customFormats != null) __obj.updateDynamic("customFormats")(customFormats)
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
+    if (componentSchemas != null) __obj.updateDynamic("componentSchemas")(componentSchemas.asInstanceOf[js.Any])
+    if (customFormats != null) __obj.updateDynamic("customFormats")(customFormats.asInstanceOf[js.Any])
     if (errorTransformer != null) __obj.updateDynamic("errorTransformer")(js.Any.fromFunction2(errorTransformer))
-    if (externalSchemas != null) __obj.updateDynamic("externalSchemas")(externalSchemas)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (loggingKey != null) __obj.updateDynamic("loggingKey")(loggingKey)
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody)
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas)
+    if (externalSchemas != null) __obj.updateDynamic("externalSchemas")(externalSchemas.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (loggingKey != null) __obj.updateDynamic("loggingKey")(loggingKey.asInstanceOf[js.Any])
+    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
+    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPIRequestValidatorArgs]
   }
 }

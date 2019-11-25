@@ -13,7 +13,7 @@ trait Anon_Container extends js.Object {
 object Anon_Container {
   @scala.inline
   def apply(container: Container, globalResources: /* repeated */ String => js.Any): Anon_Container = {
-    val __obj = js.Dynamic.literal(container = container, globalResources = js.Any.fromFunction1(globalResources))
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], globalResources = js.Any.fromFunction1(globalResources))
   
     __obj.asInstanceOf[Anon_Container]
   }

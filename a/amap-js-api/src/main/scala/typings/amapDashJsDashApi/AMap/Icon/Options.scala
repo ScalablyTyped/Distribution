@@ -34,8 +34,8 @@ object Options {
     size: SizeValue = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (imageOffset != null) __obj.updateDynamic("imageOffset")(imageOffset)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (imageOffset != null) __obj.updateDynamic("imageOffset")(imageOffset.asInstanceOf[js.Any])
     if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

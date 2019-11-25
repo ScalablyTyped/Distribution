@@ -16,8 +16,8 @@ object InstanceGroupManagersScopedList {
   @scala.inline
   def apply(instanceGroupManagers: js.Array[InstanceGroupManager] = null, warning: Anon_Code = null): InstanceGroupManagersScopedList = {
     val __obj = js.Dynamic.literal()
-    if (instanceGroupManagers != null) __obj.updateDynamic("instanceGroupManagers")(instanceGroupManagers)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (instanceGroupManagers != null) __obj.updateDynamic("instanceGroupManagers")(instanceGroupManagers.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupManagersScopedList]
   }
 }

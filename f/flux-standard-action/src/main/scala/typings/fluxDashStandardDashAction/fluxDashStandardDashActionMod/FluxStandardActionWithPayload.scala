@@ -22,7 +22,7 @@ object FluxStandardActionWithPayload {
   def apply[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type, error: js.UndefOr[Boolean] = js.undefined, meta: Meta = null): FluxStandardActionWithPayload[Type, Payload, Meta] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[FluxStandardActionWithPayload[Type, Payload, Meta]]
   }

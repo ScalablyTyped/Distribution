@@ -23,8 +23,8 @@ object Provider {
     renderPreview: () => ReactElement = null
   ): Provider = {
     val __obj = js.Dynamic.literal(handleAPI = js.Any.fromFunction1(handleAPI))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (renderPreview != null) __obj.updateDynamic("renderPreview")(js.Any.fromFunction0(renderPreview))
     __obj.asInstanceOf[Provider]
   }

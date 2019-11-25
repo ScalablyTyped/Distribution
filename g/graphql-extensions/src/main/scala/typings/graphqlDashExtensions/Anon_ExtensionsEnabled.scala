@@ -12,7 +12,7 @@ object Anon_ExtensionsEnabled {
   @scala.inline
   def apply(_extensionsEnabled: js.UndefOr[Boolean] = js.undefined): Anon_ExtensionsEnabled = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_extensionsEnabled)) __obj.updateDynamic("_extensionsEnabled")(_extensionsEnabled)
+    if (!js.isUndefined(_extensionsEnabled)) __obj.updateDynamic("_extensionsEnabled")(_extensionsEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtensionsEnabled]
   }
 }

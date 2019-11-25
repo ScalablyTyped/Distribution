@@ -18,9 +18,9 @@ object IDblClickZoomOptions {
     useMapMargin: js.UndefOr[Boolean] = js.undefined
   ): IDblClickZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(centering)) __obj.updateDynamic("centering")(centering)
+    if (!js.isUndefined(centering)) __obj.updateDynamic("centering")(centering.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin)
+    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDblClickZoomOptions]
   }
 }

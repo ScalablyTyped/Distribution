@@ -18,8 +18,8 @@ object ListMonitoredResourceDescriptorsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, resourceDescriptors: js.Array[MonitoredResourceDescriptor] = null): ListMonitoredResourceDescriptorsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (resourceDescriptors != null) __obj.updateDynamic("resourceDescriptors")(resourceDescriptors)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (resourceDescriptors != null) __obj.updateDynamic("resourceDescriptors")(resourceDescriptors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMonitoredResourceDescriptorsResponse]
   }
 }

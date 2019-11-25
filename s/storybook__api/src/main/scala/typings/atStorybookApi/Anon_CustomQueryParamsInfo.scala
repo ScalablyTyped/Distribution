@@ -31,7 +31,7 @@ object Anon_CustomQueryParamsInfo {
     storyId: String,
     viewMode: story | info | settings
   ): Anon_CustomQueryParamsInfo = {
-    val __obj = js.Dynamic.literal(customQueryParams = customQueryParams, layout = layout, location = location, path = path, selectedPanel = selectedPanel, storyId = storyId, viewMode = viewMode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(customQueryParams = customQueryParams.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], selectedPanel = selectedPanel.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CustomQueryParamsInfo]
   }

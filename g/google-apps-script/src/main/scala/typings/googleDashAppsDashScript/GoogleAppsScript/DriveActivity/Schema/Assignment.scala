@@ -12,7 +12,7 @@ object Assignment {
   @scala.inline
   def apply(subtype: String = null): Assignment = {
     val __obj = js.Dynamic.literal()
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[Assignment]
   }
 }

@@ -23,9 +23,9 @@ object TileMinimizingEventUIParam {
   @scala.inline
   def apply(maximizingTile: js.Any = null, owner: js.Any = null, tile: js.Any = null): TileMinimizingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (maximizingTile != null) __obj.updateDynamic("maximizingTile")(maximizingTile)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (tile != null) __obj.updateDynamic("tile")(tile)
+    if (maximizingTile != null) __obj.updateDynamic("maximizingTile")(maximizingTile.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (tile != null) __obj.updateDynamic("tile")(tile.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileMinimizingEventUIParam]
   }
 }

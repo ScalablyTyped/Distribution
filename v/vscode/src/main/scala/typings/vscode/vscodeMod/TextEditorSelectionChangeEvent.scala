@@ -27,8 +27,8 @@ object TextEditorSelectionChangeEvent {
     textEditor: TextEditor,
     kind: TextEditorSelectionChangeKind = null
   ): TextEditorSelectionChangeEvent = {
-    val __obj = js.Dynamic.literal(selections = selections, textEditor = textEditor)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(selections = selections.asInstanceOf[js.Any], textEditor = textEditor.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEditorSelectionChangeEvent]
   }
 }

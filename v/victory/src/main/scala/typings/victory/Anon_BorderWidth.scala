@@ -14,7 +14,7 @@ object Anon_BorderWidth {
   def apply(borderWidth: Int | Double = null, style: Anon_DataLabels = null): Anon_BorderWidth = {
     val __obj = js.Dynamic.literal()
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderWidth]
   }
 }

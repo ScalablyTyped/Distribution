@@ -19,7 +19,7 @@ trait PublishDiagnosticsParams extends js.Object {
 object PublishDiagnosticsParams {
   @scala.inline
   def apply(diagnostics: js.Array[Diagnostic], uri: String): PublishDiagnosticsParams = {
-    val __obj = js.Dynamic.literal(diagnostics = diagnostics, uri = uri)
+    val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PublishDiagnosticsParams]
   }

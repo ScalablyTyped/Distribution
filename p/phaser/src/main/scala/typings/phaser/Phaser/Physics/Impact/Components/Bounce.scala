@@ -30,7 +30,7 @@ trait Bounce extends js.Object {
 object Bounce {
   @scala.inline
   def apply(bounce: Double, setBounce: Double => GameObject, setMinBounceVelocity: Double => GameObject): Bounce = {
-    val __obj = js.Dynamic.literal(bounce = bounce, setBounce = js.Any.fromFunction1(setBounce), setMinBounceVelocity = js.Any.fromFunction1(setMinBounceVelocity))
+    val __obj = js.Dynamic.literal(bounce = bounce.asInstanceOf[js.Any], setBounce = js.Any.fromFunction1(setBounce), setMinBounceVelocity = js.Any.fromFunction1(setMinBounceVelocity))
   
     __obj.asInstanceOf[Bounce]
   }

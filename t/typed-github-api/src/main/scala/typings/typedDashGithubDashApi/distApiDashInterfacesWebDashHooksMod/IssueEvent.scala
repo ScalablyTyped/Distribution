@@ -27,7 +27,7 @@ object IssueEvent {
     action: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened,
     issue: Issue
   ): IssueEvent = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssueEvent]
   }

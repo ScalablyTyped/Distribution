@@ -9,32 +9,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConnectionEvent[TEdge] extends js.Object {
-  var args: js.UndefOr[Variables] = js.undefined
-  var edge: js.UndefOr[TEdge] = js.undefined
-  var edgeData: js.UndefOr[StringDictionary[TEdge]] = js.undefined
-  var edges: js.UndefOr[js.Array[TEdge]] = js.undefined
-  var kind: js.UndefOr[fetch | insert | update] = js.undefined
-  var pageInfo: js.UndefOr[PageInfo] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.relayDashRuntime.Anon_ArgsEdges[TEdge]
+  - typings.relayDashRuntime.Anon_EdgeData[TEdge]
+  - typings.relayDashRuntime.Anon_ArgsEdge[TEdge]
+*/
+trait ConnectionEvent[TEdge] extends js.Object
 
 object ConnectionEvent {
   @scala.inline
-  def apply[TEdge](
-    args: Variables = null,
-    edge: TEdge = null,
-    edgeData: StringDictionary[TEdge] = null,
-    edges: js.Array[TEdge] = null,
-    kind: fetch = null,
-    pageInfo: PageInfo = null
-  ): ConnectionEvent[TEdge] = {
-    val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
-    if (edgeData != null) __obj.updateDynamic("edgeData")(edgeData)
-    if (edges != null) __obj.updateDynamic("edges")(edges)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
+  def Anon_ArgsEdges[TEdge](args: Variables, edges: js.Array[TEdge], kind: fetch, pageInfo: PageInfo): ConnectionEvent[TEdge] = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], pageInfo = pageInfo.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ConnectionEvent[TEdge]]
+  }
+  @scala.inline
+  def Anon_EdgeData[TEdge](edgeData: StringDictionary[TEdge], kind: update): ConnectionEvent[TEdge] = {
+    val __obj = js.Dynamic.literal(edgeData = edgeData.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ConnectionEvent[TEdge]]
+  }
+  @scala.inline
+  def Anon_ArgsEdge[TEdge](args: Variables, edge: TEdge, kind: insert): ConnectionEvent[TEdge] = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ConnectionEvent[TEdge]]
   }
 }

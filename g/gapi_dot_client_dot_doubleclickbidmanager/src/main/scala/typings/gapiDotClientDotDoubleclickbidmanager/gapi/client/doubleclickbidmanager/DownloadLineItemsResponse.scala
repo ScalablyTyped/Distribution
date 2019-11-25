@@ -13,7 +13,7 @@ object DownloadLineItemsResponse {
   @scala.inline
   def apply(lineItems: String = null): DownloadLineItemsResponse = {
     val __obj = js.Dynamic.literal()
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadLineItemsResponse]
   }
 }

@@ -25,8 +25,8 @@ object Anon_ColumnFilenameLinenoPrefixed {
     string: String,
     `val`: String
   ): Anon_ColumnFilenameLinenoPrefixed = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, prefixed = prefixed, string = string)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], prefixed = prefixed.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoPrefixed]
   }
 }

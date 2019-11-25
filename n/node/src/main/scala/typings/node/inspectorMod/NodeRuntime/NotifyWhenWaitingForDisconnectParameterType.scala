@@ -11,7 +11,7 @@ trait NotifyWhenWaitingForDisconnectParameterType extends js.Object {
 object NotifyWhenWaitingForDisconnectParameterType {
   @scala.inline
   def apply(enabled: Boolean): NotifyWhenWaitingForDisconnectParameterType = {
-    val __obj = js.Dynamic.literal(enabled = enabled)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotifyWhenWaitingForDisconnectParameterType]
   }

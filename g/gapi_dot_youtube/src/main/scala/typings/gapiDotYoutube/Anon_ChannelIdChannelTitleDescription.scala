@@ -56,7 +56,7 @@ object Anon_ChannelIdChannelTitleDescription {
     thumbnails: GoogleApiYouTubeThumbnailResource,
     title: String
   ): Anon_ChannelIdChannelTitleDescription = {
-    val __obj = js.Dynamic.literal(channelId = channelId, channelTitle = channelTitle, description = description, playlistId = playlistId, position = position, publishedAt = publishedAt, resourceId = resourceId, thumbnails = thumbnails, title = title)
+    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], channelTitle = channelTitle.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], playlistId = playlistId.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], publishedAt = publishedAt.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], thumbnails = thumbnails.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChannelIdChannelTitleDescription]
   }

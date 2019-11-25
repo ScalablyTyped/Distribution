@@ -18,7 +18,7 @@ object StreamHandlerOptions {
     filter: /* record */ LogRecord => Boolean = null,
     formatter: /* record */ LogRecord => String = null
   ): StreamHandlerOptions = {
-    val __obj = js.Dynamic.literal(stream = stream)
+    val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     __obj.asInstanceOf[StreamHandlerOptions]

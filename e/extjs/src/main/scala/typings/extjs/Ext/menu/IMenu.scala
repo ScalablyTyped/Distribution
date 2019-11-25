@@ -66,45 +66,33 @@ object IMenu {
     IPanel: typings.extjs.Ext.panel.IPanel = null,
     afterShow: () => Unit = null,
     allowOtherMenus: js.UndefOr[Boolean] = js.undefined,
-    beforeShow: () => Unit = null,
     canActivateItem: /* item */ js.UndefOr[js.Any] => Boolean = null,
     deactivateActiveItem: /* andBlurFocusedItem */ js.UndefOr[js.Any] => Unit = null,
     enableKeyNav: js.UndefOr[Boolean] = js.undefined,
-    floating: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
     hide: () => IComponent = null,
-    hideMode: java.lang.String = null,
     ignoreParentClicks: js.UndefOr[Boolean] = js.undefined,
     isMenu: js.UndefOr[Boolean] = js.undefined,
     isVisible: () => Boolean = null,
-    minWidth: Int | Double = null,
-    onDestroy: () => Unit = null,
     parentMenu: IMenu = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     showBy: (/* cmp */ js.UndefOr[js.Any], /* pos */ js.UndefOr[js.Any], /* off */ js.UndefOr[js.Any]) => IComponent = null,
     showSeparator: js.UndefOr[Boolean] = js.undefined
   ): IMenu = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IPanel)
+    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
     if (afterShow != null) __obj.updateDynamic("afterShow")(js.Any.fromFunction0(afterShow))
-    if (!js.isUndefined(allowOtherMenus)) __obj.updateDynamic("allowOtherMenus")(allowOtherMenus)
-    if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction0(beforeShow))
+    if (!js.isUndefined(allowOtherMenus)) __obj.updateDynamic("allowOtherMenus")(allowOtherMenus.asInstanceOf[js.Any])
     if (canActivateItem != null) __obj.updateDynamic("canActivateItem")(js.Any.fromFunction1(canActivateItem))
     if (deactivateActiveItem != null) __obj.updateDynamic("deactivateActiveItem")(js.Any.fromFunction1(deactivateActiveItem))
-    if (!js.isUndefined(enableKeyNav)) __obj.updateDynamic("enableKeyNav")(enableKeyNav)
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(enableKeyNav)) __obj.updateDynamic("enableKeyNav")(enableKeyNav.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
-    if (hideMode != null) __obj.updateDynamic("hideMode")(hideMode)
-    if (!js.isUndefined(ignoreParentClicks)) __obj.updateDynamic("ignoreParentClicks")(ignoreParentClicks)
-    if (!js.isUndefined(isMenu)) __obj.updateDynamic("isMenu")(isMenu)
+    if (!js.isUndefined(ignoreParentClicks)) __obj.updateDynamic("ignoreParentClicks")(ignoreParentClicks.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMenu)) __obj.updateDynamic("isMenu")(isMenu.asInstanceOf[js.Any])
     if (isVisible != null) __obj.updateDynamic("isVisible")(js.Any.fromFunction0(isVisible))
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
-    if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu)
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     if (showBy != null) __obj.updateDynamic("showBy")(js.Any.fromFunction3(showBy))
-    if (!js.isUndefined(showSeparator)) __obj.updateDynamic("showSeparator")(showSeparator)
+    if (!js.isUndefined(showSeparator)) __obj.updateDynamic("showSeparator")(showSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMenu]
   }
 }

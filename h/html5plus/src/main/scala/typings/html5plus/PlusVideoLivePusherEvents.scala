@@ -75,9 +75,9 @@ object PlusVideoLivePusherEvents {
   @scala.inline
   def apply(error: String = null, netstatus: String = null, statechange: String = null): PlusVideoLivePusherEvents = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (netstatus != null) __obj.updateDynamic("netstatus")(netstatus)
-    if (statechange != null) __obj.updateDynamic("statechange")(statechange)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (netstatus != null) __obj.updateDynamic("netstatus")(netstatus.asInstanceOf[js.Any])
+    if (statechange != null) __obj.updateDynamic("statechange")(statechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusVideoLivePusherEvents]
   }
 }

@@ -22,11 +22,11 @@ object Entity {
     variable: Variable = null
   ): Entity = {
     val __obj = js.Dynamic.literal()
-    if (changeStatus != null) __obj.updateDynamic("changeStatus")(changeStatus)
-    if (folder != null) __obj.updateDynamic("folder")(folder)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
-    if (variable != null) __obj.updateDynamic("variable")(variable)
+    if (changeStatus != null) __obj.updateDynamic("changeStatus")(changeStatus.asInstanceOf[js.Any])
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity]
   }
 }

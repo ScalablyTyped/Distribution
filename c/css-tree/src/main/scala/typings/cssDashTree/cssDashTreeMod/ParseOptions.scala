@@ -36,18 +36,18 @@ object ParseOptions {
     positions: js.UndefOr[Boolean] = js.undefined
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (atrule != null) __obj.updateDynamic("atrule")(atrule)
+    if (atrule != null) __obj.updateDynamic("atrule")(atrule.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onParseError != null) __obj.updateDynamic("onParseError")(js.Any.fromFunction2(onParseError))
-    if (!js.isUndefined(parseAtrulePrelude)) __obj.updateDynamic("parseAtrulePrelude")(parseAtrulePrelude)
-    if (!js.isUndefined(parseCustomProperty)) __obj.updateDynamic("parseCustomProperty")(parseCustomProperty)
-    if (!js.isUndefined(parseRulePrelude)) __obj.updateDynamic("parseRulePrelude")(parseRulePrelude)
-    if (!js.isUndefined(parseValue)) __obj.updateDynamic("parseValue")(parseValue)
-    if (!js.isUndefined(positions)) __obj.updateDynamic("positions")(positions)
+    if (!js.isUndefined(parseAtrulePrelude)) __obj.updateDynamic("parseAtrulePrelude")(parseAtrulePrelude.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseCustomProperty)) __obj.updateDynamic("parseCustomProperty")(parseCustomProperty.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseRulePrelude)) __obj.updateDynamic("parseRulePrelude")(parseRulePrelude.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseValue)) __obj.updateDynamic("parseValue")(parseValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(positions)) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

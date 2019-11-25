@@ -15,8 +15,8 @@ trait PayRequest extends js.Object {
 object PayRequest {
   @scala.inline
   def apply(amount: Currency, date: String, method: String, note: String = null): PayRequest = {
-    val __obj = js.Dynamic.literal(amount = amount, date = date, method = method)
-    if (note != null) __obj.updateDynamic("note")(note)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayRequest]
   }
 }

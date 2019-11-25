@@ -26,7 +26,7 @@ trait ReleaseUpdateMetadata extends js.Object {
 object ReleaseUpdateMetadata {
   @scala.inline
   def apply(comment: String, keepForever: Boolean, manualEnvironments: js.Array[String], status: ReleaseStatus): ReleaseUpdateMetadata = {
-    val __obj = js.Dynamic.literal(comment = comment, keepForever = keepForever, manualEnvironments = manualEnvironments, status = status)
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], keepForever = keepForever.asInstanceOf[js.Any], manualEnvironments = manualEnvironments.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseUpdateMetadata]
   }

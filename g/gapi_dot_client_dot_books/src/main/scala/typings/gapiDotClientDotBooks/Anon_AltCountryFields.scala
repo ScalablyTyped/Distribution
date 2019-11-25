@@ -55,20 +55,20 @@ object Anon_AltCountryFields {
     userIp: String = null,
     user_library_consistent_read: js.UndefOr[Boolean] = js.undefined
   ): Anon_AltCountryFields = {
-    val __obj = js.Dynamic.literal(volumeId = volumeId)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(includeNonComicsSeries)) __obj.updateDynamic("includeNonComicsSeries")(includeNonComicsSeries)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (partner != null) __obj.updateDynamic("partner")(partner)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
-    if (!js.isUndefined(user_library_consistent_read)) __obj.updateDynamic("user_library_consistent_read")(user_library_consistent_read)
+    val __obj = js.Dynamic.literal(volumeId = volumeId.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNonComicsSeries)) __obj.updateDynamic("includeNonComicsSeries")(includeNonComicsSeries.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (partner != null) __obj.updateDynamic("partner")(partner.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
+    if (!js.isUndefined(user_library_consistent_read)) __obj.updateDynamic("user_library_consistent_read")(user_library_consistent_read.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltCountryFields]
   }
 }

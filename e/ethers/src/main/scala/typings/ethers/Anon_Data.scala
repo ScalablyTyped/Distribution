@@ -13,7 +13,7 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(data: String, value: BigNumberish = null): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]
   }

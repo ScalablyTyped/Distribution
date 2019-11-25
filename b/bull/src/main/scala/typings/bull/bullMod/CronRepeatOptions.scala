@@ -25,11 +25,11 @@ object CronRepeatOptions {
     startDate: Date | String | Double = null,
     tz: String = null
   ): CronRepeatOptions = {
-    val __obj = js.Dynamic.literal(cron = cron)
+    val __obj = js.Dynamic.literal(cron = cron.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (tz != null) __obj.updateDynamic("tz")(tz)
+    if (tz != null) __obj.updateDynamic("tz")(tz.asInstanceOf[js.Any])
     __obj.asInstanceOf[CronRepeatOptions]
   }
 }

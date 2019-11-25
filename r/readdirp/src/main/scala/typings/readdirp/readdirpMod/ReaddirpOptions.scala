@@ -30,12 +30,12 @@ object ReaddirpOptions {
     `type`: files | directories | files_directories | all = null
   ): ReaddirpOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysStat)) __obj.updateDynamic("alwaysStat")(alwaysStat)
+    if (!js.isUndefined(alwaysStat)) __obj.updateDynamic("alwaysStat")(alwaysStat.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (directoryFilter != null) __obj.updateDynamic("directoryFilter")(js.Any.fromFunction1(directoryFilter))
     if (fileFilter != null) __obj.updateDynamic("fileFilter")(fileFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(lstat)) __obj.updateDynamic("lstat")(lstat)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (!js.isUndefined(lstat)) __obj.updateDynamic("lstat")(lstat.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaddirpOptions]
   }

@@ -32,7 +32,7 @@ trait ChatRoomPresenceUpdate extends VoxImplantIMEvent {
 object ChatRoomPresenceUpdate {
   @scala.inline
   def apply(message: String, participant: ParticipantInfo, presence: UserStatuses, room: String): ChatRoomPresenceUpdate = {
-    val __obj = js.Dynamic.literal(message = message, participant = participant, presence = presence, room = room)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], participant = participant.asInstanceOf[js.Any], presence = presence.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChatRoomPresenceUpdate]
   }

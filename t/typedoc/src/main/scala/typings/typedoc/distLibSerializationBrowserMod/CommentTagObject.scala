@@ -13,8 +13,8 @@ trait CommentTagObject extends js.Object {
 object CommentTagObject {
   @scala.inline
   def apply(tag: String, text: String, param: String = null): CommentTagObject = {
-    val __obj = js.Dynamic.literal(tag = tag, text = text)
-    if (param != null) __obj.updateDynamic("param")(param)
+    val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentTagObject]
   }
 }

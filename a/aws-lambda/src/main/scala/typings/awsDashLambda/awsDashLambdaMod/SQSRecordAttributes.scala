@@ -19,7 +19,7 @@ object SQSRecordAttributes {
     SenderId: String,
     SentTimestamp: String
   ): SQSRecordAttributes = {
-    val __obj = js.Dynamic.literal(ApproximateFirstReceiveTimestamp = ApproximateFirstReceiveTimestamp, ApproximateReceiveCount = ApproximateReceiveCount, SenderId = SenderId, SentTimestamp = SentTimestamp)
+    val __obj = js.Dynamic.literal(ApproximateFirstReceiveTimestamp = ApproximateFirstReceiveTimestamp.asInstanceOf[js.Any], ApproximateReceiveCount = ApproximateReceiveCount.asInstanceOf[js.Any], SenderId = SenderId.asInstanceOf[js.Any], SentTimestamp = SentTimestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SQSRecordAttributes]
   }

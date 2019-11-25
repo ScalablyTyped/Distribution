@@ -15,7 +15,7 @@ object GoogleActionsOrdersV3ActionActionMetadata {
   @scala.inline
   def apply(expireTime: String = null): GoogleActionsOrdersV3ActionActionMetadata = {
     val __obj = js.Dynamic.literal()
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime)
+    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3ActionActionMetadata]
   }
 }

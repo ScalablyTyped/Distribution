@@ -21,9 +21,9 @@ object ActiveXObjectNameMap {
     `InfoPath.ExternalApplication`: ExternalApplication
   ): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InfoPath.Application")(`InfoPath.Application`)
-    __obj.updateDynamic("InfoPath.Editor")(`InfoPath.Editor`)
-    __obj.updateDynamic("InfoPath.ExternalApplication")(`InfoPath.ExternalApplication`)
+    __obj.updateDynamic("InfoPath.Application")(`InfoPath.Application`.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.Editor")(`InfoPath.Editor`.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.ExternalApplication")(`InfoPath.ExternalApplication`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

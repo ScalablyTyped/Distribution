@@ -23,11 +23,11 @@ object NavigationOptions {
     skipTransition: js.UndefOr[Boolean] = js.undefined
   ): NavigationOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload)
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
-    if (!js.isUndefined(skipTransition)) __obj.updateDynamic("skipTransition")(skipTransition)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipTransition)) __obj.updateDynamic("skipTransition")(skipTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationOptions]
   }
 }

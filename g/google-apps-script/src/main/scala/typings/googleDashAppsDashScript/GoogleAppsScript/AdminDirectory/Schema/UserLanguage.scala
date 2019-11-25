@@ -13,8 +13,8 @@ object UserLanguage {
   @scala.inline
   def apply(customLanguage: String = null, languageCode: String = null): UserLanguage = {
     val __obj = js.Dynamic.literal()
-    if (customLanguage != null) __obj.updateDynamic("customLanguage")(customLanguage)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (customLanguage != null) __obj.updateDynamic("customLanguage")(customLanguage.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserLanguage]
   }
 }

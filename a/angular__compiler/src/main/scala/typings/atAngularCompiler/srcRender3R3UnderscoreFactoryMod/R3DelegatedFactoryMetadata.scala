@@ -24,8 +24,8 @@ object R3DelegatedFactoryMetadata {
     `type`: Expression,
     deps: js.Array[R3DependencyMetadata] | invalid = null
   ): R3DelegatedFactoryMetadata = {
-    val __obj = js.Dynamic.literal(delegate = delegate, delegateType = delegateType, injectFn = injectFn, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3DelegatedFactoryMetadata]
   }

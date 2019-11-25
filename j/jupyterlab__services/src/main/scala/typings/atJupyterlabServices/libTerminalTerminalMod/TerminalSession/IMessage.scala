@@ -23,8 +23,8 @@ object IMessage {
   @scala.inline
   def apply(`type`: MessageType, content: js.Array[JSONPrimitive] = null): IMessage = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (content != null) __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessage]
   }
 }

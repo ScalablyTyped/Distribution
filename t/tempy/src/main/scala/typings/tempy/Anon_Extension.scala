@@ -16,7 +16,7 @@ object Anon_Extension {
   @scala.inline
   def apply(extension: String = null): Anon_Extension = {
     val __obj = js.Dynamic.literal()
-    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Extension]
   }
 }

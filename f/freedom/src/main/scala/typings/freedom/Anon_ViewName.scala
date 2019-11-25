@@ -12,7 +12,7 @@ trait Anon_ViewName extends js.Object {
 object Anon_ViewName {
   @scala.inline
   def apply(views: StringDictionary[js.Object]): Anon_ViewName = {
-    val __obj = js.Dynamic.literal(views = views)
+    val __obj = js.Dynamic.literal(views = views.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ViewName]
   }

@@ -29,9 +29,9 @@ object SearchResultBase {
     end: Poi = null,
     start: Poi = null
   ): SearchResultBase = {
-    val __obj = js.Dynamic.literal(count = count, destination = destination, info = info, origin = origin, routes = routes)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (start != null) __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResultBase]
   }
 }

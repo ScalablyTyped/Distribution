@@ -30,12 +30,12 @@ object RewriteResponse {
     totalBytesRewritten: String = null
   ): RewriteResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (objectSize != null) __obj.updateDynamic("objectSize")(objectSize)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (rewriteToken != null) __obj.updateDynamic("rewriteToken")(rewriteToken)
-    if (totalBytesRewritten != null) __obj.updateDynamic("totalBytesRewritten")(totalBytesRewritten)
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (objectSize != null) __obj.updateDynamic("objectSize")(objectSize.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (rewriteToken != null) __obj.updateDynamic("rewriteToken")(rewriteToken.asInstanceOf[js.Any])
+    if (totalBytesRewritten != null) __obj.updateDynamic("totalBytesRewritten")(totalBytesRewritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[RewriteResponse]
   }
 }

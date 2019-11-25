@@ -37,12 +37,12 @@ object PartialGroupByKeyInstruction {
     valueCombiningFn: Record[String, _] = null
   ): PartialGroupByKeyInstruction = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (inputElementCodec != null) __obj.updateDynamic("inputElementCodec")(inputElementCodec)
-    if (originalCombineValuesInputStoreName != null) __obj.updateDynamic("originalCombineValuesInputStoreName")(originalCombineValuesInputStoreName)
-    if (originalCombineValuesStepName != null) __obj.updateDynamic("originalCombineValuesStepName")(originalCombineValuesStepName)
-    if (sideInputs != null) __obj.updateDynamic("sideInputs")(sideInputs)
-    if (valueCombiningFn != null) __obj.updateDynamic("valueCombiningFn")(valueCombiningFn)
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (inputElementCodec != null) __obj.updateDynamic("inputElementCodec")(inputElementCodec.asInstanceOf[js.Any])
+    if (originalCombineValuesInputStoreName != null) __obj.updateDynamic("originalCombineValuesInputStoreName")(originalCombineValuesInputStoreName.asInstanceOf[js.Any])
+    if (originalCombineValuesStepName != null) __obj.updateDynamic("originalCombineValuesStepName")(originalCombineValuesStepName.asInstanceOf[js.Any])
+    if (sideInputs != null) __obj.updateDynamic("sideInputs")(sideInputs.asInstanceOf[js.Any])
+    if (valueCombiningFn != null) __obj.updateDynamic("valueCombiningFn")(valueCombiningFn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialGroupByKeyInstruction]
   }
 }

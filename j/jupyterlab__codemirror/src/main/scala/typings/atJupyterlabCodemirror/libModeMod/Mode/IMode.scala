@@ -16,8 +16,8 @@ trait IMode extends /* key */ StringDictionary[JSONValue] {
 object IMode {
   @scala.inline
   def apply(name: String, StringDictionary: /* key */ StringDictionary[JSONValue] = null): IMode = {
-    val __obj = js.Dynamic.literal(name = name)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IMode]
   }
 }

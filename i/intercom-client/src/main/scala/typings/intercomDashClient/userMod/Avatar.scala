@@ -14,8 +14,8 @@ object Avatar {
   @scala.inline
   def apply(`type`: avatar, image_url: String = null): Avatar = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (image_url != null) __obj.updateDynamic("image_url")(image_url)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (image_url != null) __obj.updateDynamic("image_url")(image_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Avatar]
   }
 }

@@ -83,17 +83,17 @@ object IInteractDef {
     qTitle: String = null,
     qType: InteractionType = null
   ): IInteractDef = {
-    val __obj = js.Dynamic.literal(qResult = qResult)
+    val __obj = js.Dynamic.literal(qResult = qResult.asInstanceOf[js.Any])
     if (qButtons != null) __obj.updateDynamic("qButtons")(qButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(qHidden)) __obj.updateDynamic("qHidden")(qHidden)
-    if (qInput != null) __obj.updateDynamic("qInput")(qInput)
-    if (qLine != null) __obj.updateDynamic("qLine")(qLine)
-    if (qMsg != null) __obj.updateDynamic("qMsg")(qMsg)
+    if (!js.isUndefined(qHidden)) __obj.updateDynamic("qHidden")(qHidden.asInstanceOf[js.Any])
+    if (qInput != null) __obj.updateDynamic("qInput")(qInput.asInstanceOf[js.Any])
+    if (qLine != null) __obj.updateDynamic("qLine")(qLine.asInstanceOf[js.Any])
+    if (qMsg != null) __obj.updateDynamic("qMsg")(qMsg.asInstanceOf[js.Any])
     if (qNewLineNr != null) __obj.updateDynamic("qNewLineNr")(qNewLineNr.asInstanceOf[js.Any])
     if (qOldLineNr != null) __obj.updateDynamic("qOldLineNr")(qOldLineNr.asInstanceOf[js.Any])
-    if (qPath != null) __obj.updateDynamic("qPath")(qPath)
-    if (qTitle != null) __obj.updateDynamic("qTitle")(qTitle)
-    if (qType != null) __obj.updateDynamic("qType")(qType)
+    if (qPath != null) __obj.updateDynamic("qPath")(qPath.asInstanceOf[js.Any])
+    if (qTitle != null) __obj.updateDynamic("qTitle")(qTitle.asInstanceOf[js.Any])
+    if (qType != null) __obj.updateDynamic("qType")(qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInteractDef]
   }
 }

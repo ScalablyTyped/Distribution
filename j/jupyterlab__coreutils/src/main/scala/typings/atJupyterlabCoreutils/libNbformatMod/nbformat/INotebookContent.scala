@@ -18,7 +18,7 @@ trait INotebookContent extends JSONObject {
 object INotebookContent {
   @scala.inline
   def apply(cells: js.Array[ICell], metadata: INotebookMetadata, nbformat: Double, nbformat_minor: Double): INotebookContent = {
-    val __obj = js.Dynamic.literal(cells = cells, metadata = metadata, nbformat = nbformat, nbformat_minor = nbformat_minor)
+    val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], nbformat = nbformat.asInstanceOf[js.Any], nbformat_minor = nbformat_minor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INotebookContent]
   }

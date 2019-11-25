@@ -48,12 +48,12 @@ object FilterView {
     title: String = null
   ): FilterView = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
     if (filterViewId != null) __obj.updateDynamic("filterViewId")(filterViewId.asInstanceOf[js.Any])
-    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterView]
   }
 }

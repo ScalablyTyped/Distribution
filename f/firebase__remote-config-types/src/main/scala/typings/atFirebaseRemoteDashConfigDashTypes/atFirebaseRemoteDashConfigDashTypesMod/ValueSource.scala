@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ValueSource extends js.Object
 
+object ValueSource {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def default: typings.atFirebaseRemoteDashConfigDashTypes.atFirebaseRemoteDashConfigDashTypesStrings.default = this.cast("default")
+  @scala.inline
+  def remote: typings.atFirebaseRemoteDashConfigDashTypes.atFirebaseRemoteDashConfigDashTypesStrings.remote = this.cast("remote")
+  @scala.inline
+  def static: typings.atFirebaseRemoteDashConfigDashTypes.atFirebaseRemoteDashConfigDashTypesStrings.static = this.cast("static")
+}
+

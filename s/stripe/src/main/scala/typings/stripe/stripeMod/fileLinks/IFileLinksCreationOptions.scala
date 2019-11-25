@@ -26,11 +26,11 @@ object IFileLinksCreationOptions {
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null
   ): IFileLinksCreationOptions = {
-    val __obj = js.Dynamic.literal(file = file)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (expires_at != null) __obj.updateDynamic("expires_at")(expires_at.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileLinksCreationOptions]
   }
 }

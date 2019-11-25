@@ -42,17 +42,17 @@ object SignaleConfig {
     uppercaseLabel: js.UndefOr[Boolean] = js.undefined
   ): SignaleConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(displayBadge)) __obj.updateDynamic("displayBadge")(displayBadge)
-    if (!js.isUndefined(displayDate)) __obj.updateDynamic("displayDate")(displayDate)
-    if (!js.isUndefined(displayFilename)) __obj.updateDynamic("displayFilename")(displayFilename)
-    if (!js.isUndefined(displayLabel)) __obj.updateDynamic("displayLabel")(displayLabel)
-    if (!js.isUndefined(displayScope)) __obj.updateDynamic("displayScope")(displayScope)
-    if (!js.isUndefined(displayTimestamp)) __obj.updateDynamic("displayTimestamp")(displayTimestamp)
-    if (!js.isUndefined(underlineLabel)) __obj.updateDynamic("underlineLabel")(underlineLabel)
-    if (!js.isUndefined(underlineMessage)) __obj.updateDynamic("underlineMessage")(underlineMessage)
-    if (!js.isUndefined(underlinePrefix)) __obj.updateDynamic("underlinePrefix")(underlinePrefix)
-    if (!js.isUndefined(underlineSuffix)) __obj.updateDynamic("underlineSuffix")(underlineSuffix)
-    if (!js.isUndefined(uppercaseLabel)) __obj.updateDynamic("uppercaseLabel")(uppercaseLabel)
+    if (!js.isUndefined(displayBadge)) __obj.updateDynamic("displayBadge")(displayBadge.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayDate)) __obj.updateDynamic("displayDate")(displayDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayFilename)) __obj.updateDynamic("displayFilename")(displayFilename.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayLabel)) __obj.updateDynamic("displayLabel")(displayLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayScope)) __obj.updateDynamic("displayScope")(displayScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayTimestamp)) __obj.updateDynamic("displayTimestamp")(displayTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(underlineLabel)) __obj.updateDynamic("underlineLabel")(underlineLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(underlineMessage)) __obj.updateDynamic("underlineMessage")(underlineMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(underlinePrefix)) __obj.updateDynamic("underlinePrefix")(underlinePrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(underlineSuffix)) __obj.updateDynamic("underlineSuffix")(underlineSuffix.asInstanceOf[js.Any])
+    if (!js.isUndefined(uppercaseLabel)) __obj.updateDynamic("uppercaseLabel")(uppercaseLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignaleConfig]
   }
 }

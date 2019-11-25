@@ -12,8 +12,8 @@ trait Anon_LabelValue extends js.Object {
 object Anon_LabelValue {
   @scala.inline
   def apply(value: js.Any, label: String = null): Anon_LabelValue = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LabelValue]
   }
 }

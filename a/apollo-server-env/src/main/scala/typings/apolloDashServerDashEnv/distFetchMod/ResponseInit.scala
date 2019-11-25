@@ -23,8 +23,8 @@ object ResponseInit {
     val __obj = js.Dynamic.literal()
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseInit]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait IPConfigType extends js.Object
 
+object IPConfigType {
+  @scala.inline
+  def DHCP: typings.chromeDashApps.chromeDashAppsStrings.DHCP = this.cast("DHCP")
+  @scala.inline
+  def Static: typings.chromeDashApps.chromeDashAppsStrings.Static = this.cast("Static")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

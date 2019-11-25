@@ -15,7 +15,7 @@ object Anon_Columns {
     columns: Anon_DataTypesDragEnterDragLeaveDragOverDrop,
     rows: Anon_DataTypesDragEnterDragLeaveDragOverDropParam0
   ): Anon_Columns = {
-    val __obj = js.Dynamic.literal(columns = columns, rows = rows)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Columns]
   }

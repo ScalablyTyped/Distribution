@@ -44,14 +44,14 @@ object Anon_Body {
     method: _DownloadMethod = null,
     saveAs: js.UndefOr[Boolean] = js.undefined
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (conflictAction != null) __obj.updateDynamic("conflictAction")(conflictAction)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (conflictAction != null) __obj.updateDynamic("conflictAction")(conflictAction.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

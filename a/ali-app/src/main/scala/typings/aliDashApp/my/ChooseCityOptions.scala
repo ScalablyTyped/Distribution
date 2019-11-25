@@ -30,7 +30,7 @@ object ChooseCityOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): ChooseCityOptions = {
-    val __obj = js.Dynamic.literal(cities = cities, hotCities = hotCities, showHotCities = showHotCities, showLocatedCity = showLocatedCity, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(cities = cities.asInstanceOf[js.Any], hotCities = hotCities.asInstanceOf[js.Any], showHotCities = showHotCities.asInstanceOf[js.Any], showLocatedCity = showLocatedCity.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[ChooseCityOptions]

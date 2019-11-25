@@ -13,9 +13,9 @@ trait MUIDataTableColumn extends js.Object {
 object MUIDataTableColumn {
   @scala.inline
   def apply(name: String, label: String = null, options: MUIDataTableColumnOptions = null): MUIDataTableColumn = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableColumn]
   }
 }

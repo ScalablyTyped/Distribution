@@ -9,10 +9,3 @@ import scala.scalajs.js.annotation._
 class Error ()
   extends typings.nodegit.errorMod.Error
 
-@JSImport("nodegit", "Error")
-@js.native
-object Error extends js.Object {
-  type CODE = typings.nodegit.errorMod.Error.CODE
-  type ERROR = typings.nodegit.errorMod.Error.ERROR
-}
-

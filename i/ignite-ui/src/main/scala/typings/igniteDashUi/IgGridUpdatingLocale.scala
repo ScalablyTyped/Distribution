@@ -69,15 +69,15 @@ object IgGridUpdatingLocale {
     doneTooltip: String = null
   ): IgGridUpdatingLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (addRowLabel != null) __obj.updateDynamic("addRowLabel")(addRowLabel)
-    if (addRowTooltip != null) __obj.updateDynamic("addRowTooltip")(addRowTooltip)
-    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
-    if (cancelTooltip != null) __obj.updateDynamic("cancelTooltip")(cancelTooltip)
-    if (deleteRowLabel != null) __obj.updateDynamic("deleteRowLabel")(deleteRowLabel)
-    if (deleteRowTooltip != null) __obj.updateDynamic("deleteRowTooltip")(deleteRowTooltip)
-    if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel)
-    if (doneTooltip != null) __obj.updateDynamic("doneTooltip")(doneTooltip)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (addRowLabel != null) __obj.updateDynamic("addRowLabel")(addRowLabel.asInstanceOf[js.Any])
+    if (addRowTooltip != null) __obj.updateDynamic("addRowTooltip")(addRowTooltip.asInstanceOf[js.Any])
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
+    if (cancelTooltip != null) __obj.updateDynamic("cancelTooltip")(cancelTooltip.asInstanceOf[js.Any])
+    if (deleteRowLabel != null) __obj.updateDynamic("deleteRowLabel")(deleteRowLabel.asInstanceOf[js.Any])
+    if (deleteRowTooltip != null) __obj.updateDynamic("deleteRowTooltip")(deleteRowTooltip.asInstanceOf[js.Any])
+    if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel.asInstanceOf[js.Any])
+    if (doneTooltip != null) __obj.updateDynamic("doneTooltip")(doneTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridUpdatingLocale]
   }
 }

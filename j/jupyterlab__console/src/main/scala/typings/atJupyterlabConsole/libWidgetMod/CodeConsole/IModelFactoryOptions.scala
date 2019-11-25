@@ -18,7 +18,7 @@ object IModelFactoryOptions {
   @scala.inline
   def apply(codeCellContentFactory: typings.atJupyterlabCells.libModelMod.CodeCellModel.IContentFactory = null): IModelFactoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (codeCellContentFactory != null) __obj.updateDynamic("codeCellContentFactory")(codeCellContentFactory)
+    if (codeCellContentFactory != null) __obj.updateDynamic("codeCellContentFactory")(codeCellContentFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelFactoryOptions]
   }
 }

@@ -19,9 +19,9 @@ object NvKeyboardDefaults {
     target: Element = null
   ): NvKeyboardDefaults = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction3(onKeyPress))
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[NvKeyboardDefaults]
   }
 }

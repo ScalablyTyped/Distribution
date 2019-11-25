@@ -23,7 +23,7 @@ object Anon_AppearTransition {
     styles: StringDictionary[RegisteredStyle[_]],
     unfilled: Boolean
   ): Anon_AppearTransition = {
-    val __obj = js.Dynamic.literal(appearTransition = appearTransition, percent = percent, position = position, styles = styles, unfilled = unfilled)
+    val __obj = js.Dynamic.literal(appearTransition = appearTransition.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], unfilled = unfilled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AppearTransition]
   }

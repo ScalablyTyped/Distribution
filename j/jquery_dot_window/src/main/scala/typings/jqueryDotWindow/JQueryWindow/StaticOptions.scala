@@ -51,12 +51,12 @@ object StaticOptions {
   ): StaticOptions = {
     val __obj = js.Dynamic.literal()
     if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
-    if (dock != null) __obj.updateDynamic("dock")(dock)
+    if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
     if (dockArea != null) __obj.updateDynamic("dockArea")(dockArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleScrollbar)) __obj.updateDynamic("handleScrollbar")(handleScrollbar)
+    if (!js.isUndefined(handleScrollbar)) __obj.updateDynamic("handleScrollbar")(handleScrollbar.asInstanceOf[js.Any])
     if (minWinLong != null) __obj.updateDynamic("minWinLong")(minWinLong.asInstanceOf[js.Any])
     if (minWinNarrow != null) __obj.updateDynamic("minWinNarrow")(minWinNarrow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLog)) __obj.updateDynamic("showLog")(showLog)
+    if (!js.isUndefined(showLog)) __obj.updateDynamic("showLog")(showLog.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticOptions]
   }
 }

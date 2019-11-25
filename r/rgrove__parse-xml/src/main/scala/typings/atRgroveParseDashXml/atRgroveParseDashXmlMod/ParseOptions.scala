@@ -20,9 +20,9 @@ object ParseOptions {
     resolveUndefinedEntity: /* ref */ String => String = null
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreUndefinedEntities)) __obj.updateDynamic("ignoreUndefinedEntities")(ignoreUndefinedEntities)
-    if (!js.isUndefined(preserveCdata)) __obj.updateDynamic("preserveCdata")(preserveCdata)
-    if (!js.isUndefined(preserveComments)) __obj.updateDynamic("preserveComments")(preserveComments)
+    if (!js.isUndefined(ignoreUndefinedEntities)) __obj.updateDynamic("ignoreUndefinedEntities")(ignoreUndefinedEntities.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveCdata)) __obj.updateDynamic("preserveCdata")(preserveCdata.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveComments)) __obj.updateDynamic("preserveComments")(preserveComments.asInstanceOf[js.Any])
     if (resolveUndefinedEntity != null) __obj.updateDynamic("resolveUndefinedEntity")(js.Any.fromFunction1(resolveUndefinedEntity))
     __obj.asInstanceOf[ParseOptions]
   }

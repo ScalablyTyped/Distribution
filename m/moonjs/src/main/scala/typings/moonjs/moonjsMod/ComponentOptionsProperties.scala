@@ -34,13 +34,13 @@ object ComponentOptionsProperties {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (functional != null) __obj.updateDynamic("functional")(functional)
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
+    if (functional != null) __obj.updateDynamic("functional")(functional.asInstanceOf[js.Any])
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptionsProperties[Props, Data, Methods]]
   }
 }

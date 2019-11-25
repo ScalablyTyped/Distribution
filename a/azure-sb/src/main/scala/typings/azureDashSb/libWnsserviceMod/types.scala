@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait types extends js.Object
 
+object types {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `wns/badge`: typings.azureDashSb.azureDashSbStrings.`wns/badge` = this.cast("wns/badge")
+  @scala.inline
+  def `wns/raw`: typings.azureDashSb.azureDashSbStrings.`wns/raw` = this.cast("wns/raw")
+  @scala.inline
+  def `wns/tile`: typings.azureDashSb.azureDashSbStrings.`wns/tile` = this.cast("wns/tile")
+  @scala.inline
+  def `wns/toast`: typings.azureDashSb.azureDashSbStrings.`wns/toast` = this.cast("wns/toast")
+}
+

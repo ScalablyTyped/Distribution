@@ -25,7 +25,7 @@ object CameraCalibrationData {
     lensDistortionLookupTable: js.Any,
     pixelSize: Double
   ): CameraCalibrationData = {
-    val __obj = js.Dynamic.literal(extrinsicMatrix = extrinsicMatrix, intrinsicMatrix = intrinsicMatrix, intrinsicMatrixReferenceDimensions = intrinsicMatrixReferenceDimensions, inverseLensDistortionLookupTable = inverseLensDistortionLookupTable, lensDistortionCenter = lensDistortionCenter, lensDistortionLookupTable = lensDistortionLookupTable, pixelSize = pixelSize)
+    val __obj = js.Dynamic.literal(extrinsicMatrix = extrinsicMatrix.asInstanceOf[js.Any], intrinsicMatrix = intrinsicMatrix.asInstanceOf[js.Any], intrinsicMatrixReferenceDimensions = intrinsicMatrixReferenceDimensions.asInstanceOf[js.Any], inverseLensDistortionLookupTable = inverseLensDistortionLookupTable.asInstanceOf[js.Any], lensDistortionCenter = lensDistortionCenter.asInstanceOf[js.Any], lensDistortionLookupTable = lensDistortionLookupTable.asInstanceOf[js.Any], pixelSize = pixelSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CameraCalibrationData]
   }

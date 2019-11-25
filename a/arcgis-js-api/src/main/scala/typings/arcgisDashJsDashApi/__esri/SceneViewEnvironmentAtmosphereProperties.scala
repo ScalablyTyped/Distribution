@@ -31,8 +31,8 @@ object SceneViewEnvironmentAtmosphereProperties {
     propertyIsEnumerable: PropertyKey => Boolean,
     quality: String = null
   ): SceneViewEnvironmentAtmosphereProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (quality != null) __obj.updateDynamic("quality")(quality)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewEnvironmentAtmosphereProperties]
   }
 }

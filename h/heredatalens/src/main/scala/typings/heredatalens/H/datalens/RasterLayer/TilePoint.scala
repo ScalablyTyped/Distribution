@@ -20,7 +20,7 @@ trait TilePoint extends js.Object {
 object TilePoint {
   @scala.inline
   def apply(x: Double, y: Double, data: Int | Double = null): TilePoint = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[TilePoint]
   }

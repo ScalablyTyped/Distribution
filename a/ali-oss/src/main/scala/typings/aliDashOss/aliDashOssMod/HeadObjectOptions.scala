@@ -13,7 +13,7 @@ object HeadObjectOptions {
   @scala.inline
   def apply(headers: js.Object = null, timeout: Int | Double = null): HeadObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadObjectOptions]
   }

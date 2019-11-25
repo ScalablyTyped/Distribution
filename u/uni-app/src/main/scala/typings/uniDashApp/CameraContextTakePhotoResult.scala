@@ -15,7 +15,7 @@ object CameraContextTakePhotoResult {
   @scala.inline
   def apply(tempImagePath: String = null): CameraContextTakePhotoResult = {
     val __obj = js.Dynamic.literal()
-    if (tempImagePath != null) __obj.updateDynamic("tempImagePath")(tempImagePath)
+    if (tempImagePath != null) __obj.updateDynamic("tempImagePath")(tempImagePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraContextTakePhotoResult]
   }
 }

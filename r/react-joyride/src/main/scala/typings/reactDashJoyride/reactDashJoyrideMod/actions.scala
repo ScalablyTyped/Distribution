@@ -32,10 +32,6 @@ trait actions extends js.Object {
   var UPDATE: update
 }
 
-@JSImport("react-joyride", "ACTIONS")
-@js.native
-object ACTIONS extends TopLevel[actions]
-
 object actions {
   @scala.inline
   def apply(
@@ -52,9 +48,13 @@ object actions {
     STOP: stop,
     UPDATE: update
   ): actions = {
-    val __obj = js.Dynamic.literal(CLOSE = CLOSE, GO = GO, INDEX = INDEX, INIT = INIT, NEXT = NEXT, PREV = PREV, RESET = RESET, RESTART = RESTART, SKIP = SKIP, START = START, STOP = STOP, UPDATE = UPDATE)
+    val __obj = js.Dynamic.literal(CLOSE = CLOSE.asInstanceOf[js.Any], GO = GO.asInstanceOf[js.Any], INDEX = INDEX.asInstanceOf[js.Any], INIT = INIT.asInstanceOf[js.Any], NEXT = NEXT.asInstanceOf[js.Any], PREV = PREV.asInstanceOf[js.Any], RESET = RESET.asInstanceOf[js.Any], RESTART = RESTART.asInstanceOf[js.Any], SKIP = SKIP.asInstanceOf[js.Any], START = START.asInstanceOf[js.Any], STOP = STOP.asInstanceOf[js.Any], UPDATE = UPDATE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[actions]
   }
 }
+
+@JSImport("react-joyride", "ACTIONS")
+@js.native
+object ACTIONS extends TopLevel[actions]
 

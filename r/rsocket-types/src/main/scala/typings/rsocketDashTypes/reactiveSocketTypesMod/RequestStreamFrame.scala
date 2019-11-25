@@ -26,8 +26,8 @@ object RequestStreamFrame {
     `type`: `0x06`,
     length: Int | Double = null
   ): RequestStreamFrame = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], flags = flags, metadata = metadata.asInstanceOf[js.Any], requestN = requestN, streamId = streamId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], requestN = requestN.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestStreamFrame]
   }

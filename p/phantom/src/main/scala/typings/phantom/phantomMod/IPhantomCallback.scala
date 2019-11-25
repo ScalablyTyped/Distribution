@@ -21,7 +21,7 @@ object IPhantomCallback {
     target: js.Function,
     transform: `true`
   ): IPhantomCallback = {
-    val __obj = js.Dynamic.literal(method = method, parent = parent, target = target, transform = transform)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPhantomCallback]
   }

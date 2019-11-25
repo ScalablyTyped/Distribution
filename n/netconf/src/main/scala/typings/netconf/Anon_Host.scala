@@ -21,9 +21,9 @@ object Anon_Host {
     pkey: String = null,
     port: Int | Double = null
   ): Anon_Host = {
-    val __obj = js.Dynamic.literal(host = host, username = username)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (pkey != null) __obj.updateDynamic("pkey")(pkey)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (pkey != null) __obj.updateDynamic("pkey")(pkey.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Host]
   }

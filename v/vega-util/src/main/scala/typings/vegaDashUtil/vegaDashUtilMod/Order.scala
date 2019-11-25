@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Order extends js.Object
 
+object Order {
+  @scala.inline
+  def ascending: typings.vegaDashUtil.vegaDashUtilStrings.ascending = this.cast("ascending")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def descending: typings.vegaDashUtil.vegaDashUtilStrings.descending = this.cast("descending")
+}
+

@@ -57,12 +57,12 @@ object GraphicProperties {
     visible: js.UndefOr[Boolean] = js.undefined
   ): GraphicProperties = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphicProperties]
   }
 }

@@ -15,7 +15,7 @@ trait CameraRollPickerStyle extends js.Object {
 object CameraRollPickerStyle {
   @scala.inline
   def apply(marker: ViewStyle, row: ViewStyle, spinner: ViewStyle, wrapper: ViewStyle): CameraRollPickerStyle = {
-    val __obj = js.Dynamic.literal(marker = marker, row = row, spinner = spinner, wrapper = wrapper)
+    val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], spinner = spinner.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CameraRollPickerStyle]
   }

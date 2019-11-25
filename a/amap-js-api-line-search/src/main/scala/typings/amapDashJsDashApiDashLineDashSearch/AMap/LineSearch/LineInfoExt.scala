@@ -62,8 +62,8 @@ object LineInfoExt {
     `type`: String,
     via_stops: js.Array[BusStop]
   ): LineInfoExt = {
-    val __obj = js.Dynamic.literal(basic_price = basic_price, bounds = bounds, citycode = citycode, company = company, distance = distance, end_stop = end_stop, etime = etime, id = id, name = name, path = path, start_stop = start_stop, stime = stime, total_price = total_price, via_stops = via_stops)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(basic_price = basic_price.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], end_stop = end_stop.asInstanceOf[js.Any], etime = etime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], start_stop = start_stop.asInstanceOf[js.Any], stime = stime.asInstanceOf[js.Any], total_price = total_price.asInstanceOf[js.Any], via_stops = via_stops.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineInfoExt]
   }
 }

@@ -13,7 +13,7 @@ trait ArrayOption extends js.Object {
 object ArrayOption {
   @scala.inline
   def apply(emitter: Double | String, pins: js.Array[Double | String], freq: Int | Double = null): ArrayOption = {
-    val __obj = js.Dynamic.literal(emitter = emitter.asInstanceOf[js.Any], pins = pins)
+    val __obj = js.Dynamic.literal(emitter = emitter.asInstanceOf[js.Any], pins = pins.asInstanceOf[js.Any])
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayOption]
   }

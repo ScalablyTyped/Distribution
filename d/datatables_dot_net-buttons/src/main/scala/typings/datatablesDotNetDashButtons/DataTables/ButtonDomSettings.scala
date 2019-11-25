@@ -22,11 +22,11 @@ object ButtonDomSettings {
     container: ButtonDomButtomCommon = null
   ): ButtonDomSettings = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (buttonContainer != null) __obj.updateDynamic("buttonContainer")(buttonContainer)
-    if (buttonLiner != null) __obj.updateDynamic("buttonLiner")(buttonLiner)
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (buttonContainer != null) __obj.updateDynamic("buttonContainer")(buttonContainer.asInstanceOf[js.Any])
+    if (buttonLiner != null) __obj.updateDynamic("buttonLiner")(buttonLiner.asInstanceOf[js.Any])
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonDomSettings]
   }
 }

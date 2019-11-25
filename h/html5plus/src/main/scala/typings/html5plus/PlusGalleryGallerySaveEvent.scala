@@ -22,7 +22,7 @@ object PlusGalleryGallerySaveEvent {
   @scala.inline
   def apply(path: String = null): PlusGalleryGallerySaveEvent = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGalleryGallerySaveEvent]
   }
 }

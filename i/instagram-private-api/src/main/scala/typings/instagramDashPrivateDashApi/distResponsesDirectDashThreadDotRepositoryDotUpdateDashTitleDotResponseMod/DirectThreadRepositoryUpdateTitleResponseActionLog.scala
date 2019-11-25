@@ -17,7 +17,7 @@ object DirectThreadRepositoryUpdateTitleResponseActionLog {
     description: String,
     text_attributes: js.Array[DirectThreadRepositoryUpdateTitleResponseTextAttributesItem]
   ): DirectThreadRepositoryUpdateTitleResponseActionLog = {
-    val __obj = js.Dynamic.literal(bold = bold, description = description, text_attributes = text_attributes)
+    val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], text_attributes = text_attributes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectThreadRepositoryUpdateTitleResponseActionLog]
   }

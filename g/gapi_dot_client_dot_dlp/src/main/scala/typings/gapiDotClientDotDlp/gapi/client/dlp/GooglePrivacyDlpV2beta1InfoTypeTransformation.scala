@@ -21,8 +21,8 @@ object GooglePrivacyDlpV2beta1InfoTypeTransformation {
     primitiveTransformation: GooglePrivacyDlpV2beta1PrimitiveTransformation = null
   ): GooglePrivacyDlpV2beta1InfoTypeTransformation = {
     val __obj = js.Dynamic.literal()
-    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes)
-    if (primitiveTransformation != null) __obj.updateDynamic("primitiveTransformation")(primitiveTransformation)
+    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes.asInstanceOf[js.Any])
+    if (primitiveTransformation != null) __obj.updateDynamic("primitiveTransformation")(primitiveTransformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1InfoTypeTransformation]
   }
 }

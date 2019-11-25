@@ -27,11 +27,11 @@ object PhysicalAddress {
     street: String = null
   ): PhysicalAddress = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (countryOrRegion != null) __obj.updateDynamic("countryOrRegion")(countryOrRegion)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (street != null) __obj.updateDynamic("street")(street)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (countryOrRegion != null) __obj.updateDynamic("countryOrRegion")(countryOrRegion.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (street != null) __obj.updateDynamic("street")(street.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhysicalAddress]
   }
 }

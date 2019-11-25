@@ -13,7 +13,7 @@ trait Anon_Content extends js.Object {
 object Anon_Content {
   @scala.inline
   def apply(content: String, offset: Pixel): Anon_Content = {
-    val __obj = js.Dynamic.literal(content = content, offset = offset)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Content]
   }

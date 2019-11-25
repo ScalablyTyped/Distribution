@@ -28,10 +28,10 @@ object DirectiveDefinitionNode {
     description: StringValueNode = null,
     loc: Location = null
   ): DirectiveDefinitionNode = {
-    val __obj = js.Dynamic.literal(kind = kind, locations = locations, name = name, repeatable = repeatable)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], repeatable = repeatable.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectiveDefinitionNode]
   }
 }

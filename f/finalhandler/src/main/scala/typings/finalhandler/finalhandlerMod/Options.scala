@@ -20,7 +20,7 @@ object Options {
     onerror: (/* err */ js.Any, /* req */ IncomingMessage, /* res */ ServerResponse) => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction3(onerror))
     __obj.asInstanceOf[Options]
   }

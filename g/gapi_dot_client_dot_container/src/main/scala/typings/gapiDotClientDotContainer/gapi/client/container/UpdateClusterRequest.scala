@@ -13,7 +13,7 @@ object UpdateClusterRequest {
   @scala.inline
   def apply(update: ClusterUpdate = null): UpdateClusterRequest = {
     val __obj = js.Dynamic.literal()
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateClusterRequest]
   }
 }

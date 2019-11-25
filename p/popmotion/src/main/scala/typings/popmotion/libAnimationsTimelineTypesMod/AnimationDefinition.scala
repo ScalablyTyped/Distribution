@@ -25,7 +25,7 @@ object AnimationDefinition {
     from: Value = null,
     to: Value = null
   ): AnimationDefinition = {
-    val __obj = js.Dynamic.literal(track = track)
+    val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
     if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(js.Any.fromFunction1(ease))

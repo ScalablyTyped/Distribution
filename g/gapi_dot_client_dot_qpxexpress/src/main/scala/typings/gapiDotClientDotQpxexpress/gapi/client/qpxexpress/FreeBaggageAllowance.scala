@@ -30,10 +30,10 @@ object FreeBaggageAllowance {
     pounds: Int | Double = null
   ): FreeBaggageAllowance = {
     val __obj = js.Dynamic.literal()
-    if (bagDescriptor != null) __obj.updateDynamic("bagDescriptor")(bagDescriptor)
+    if (bagDescriptor != null) __obj.updateDynamic("bagDescriptor")(bagDescriptor.asInstanceOf[js.Any])
     if (kilos != null) __obj.updateDynamic("kilos")(kilos.asInstanceOf[js.Any])
     if (kilosPerPiece != null) __obj.updateDynamic("kilosPerPiece")(kilosPerPiece.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (pieces != null) __obj.updateDynamic("pieces")(pieces.asInstanceOf[js.Any])
     if (pounds != null) __obj.updateDynamic("pounds")(pounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBaggageAllowance]

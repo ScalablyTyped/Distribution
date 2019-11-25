@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ChannelCountMode extends js.Object
 
+object ChannelCountMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `clamped-max`: typings.std.stdStrings.`clamped-max` = this.cast("clamped-max")
+  @scala.inline
+  def explicit: typings.std.stdStrings.explicit = this.cast("explicit")
+  @scala.inline
+  def max: typings.std.stdStrings.max = this.cast("max")
+}
+

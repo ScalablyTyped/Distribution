@@ -39,7 +39,7 @@ object FfprobeStreamDisposition {
     visual_impaired: Int | Double = null
   ): FfprobeStreamDisposition = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (attached_pic != null) __obj.updateDynamic("attached_pic")(attached_pic.asInstanceOf[js.Any])
     if (clean_effects != null) __obj.updateDynamic("clean_effects")(clean_effects.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])

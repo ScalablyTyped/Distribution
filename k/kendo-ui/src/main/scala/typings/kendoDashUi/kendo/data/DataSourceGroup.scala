@@ -21,7 +21,7 @@ object DataSourceGroup {
     items: js.Array[DataSourceItemOrGroup],
     value: js.Any
   ): DataSourceGroup = {
-    val __obj = js.Dynamic.literal(aggregates = aggregates, field = field, hasSubgroups = hasSubgroups, items = items, value = value)
+    val __obj = js.Dynamic.literal(aggregates = aggregates.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasSubgroups = hasSubgroups.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataSourceGroup]
   }

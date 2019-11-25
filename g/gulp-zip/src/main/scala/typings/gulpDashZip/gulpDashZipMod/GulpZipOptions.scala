@@ -27,8 +27,8 @@ object GulpZipOptions {
   @scala.inline
   def apply(compress: js.UndefOr[Boolean] = js.undefined, modifiedTime: Date = null): GulpZipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
-    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime)
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GulpZipOptions]
   }
 }

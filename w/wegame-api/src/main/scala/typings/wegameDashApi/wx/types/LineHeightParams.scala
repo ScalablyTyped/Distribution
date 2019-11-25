@@ -31,7 +31,7 @@ object LineHeightParams {
     fontWeight: normal | bold = null,
     success: /* res */ Anon_LineHeight => Unit = null
   ): LineHeightParams = {
-    val __obj = js.Dynamic.literal(fontFamily = fontFamily, text = text)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

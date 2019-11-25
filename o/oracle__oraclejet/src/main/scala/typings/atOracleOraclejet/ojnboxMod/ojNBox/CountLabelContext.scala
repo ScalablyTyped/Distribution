@@ -22,7 +22,7 @@ object CountLabelContext {
     row: String,
     totalNodeCount: Double
   ): CountLabelContext = {
-    val __obj = js.Dynamic.literal(column = column, highlightedNodeCount = highlightedNodeCount, nodeCount = nodeCount, row = row, totalNodeCount = totalNodeCount)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], highlightedNodeCount = highlightedNodeCount.asInstanceOf[js.Any], nodeCount = nodeCount.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], totalNodeCount = totalNodeCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CountLabelContext]
   }

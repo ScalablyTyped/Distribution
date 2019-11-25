@@ -12,7 +12,7 @@ trait Anon_Redo extends js.Object {
 object Anon_Redo {
   @scala.inline
   def apply(redo: Double, undo: Double): Anon_Redo = {
-    val __obj = js.Dynamic.literal(redo = redo, undo = undo)
+    val __obj = js.Dynamic.literal(redo = redo.asInstanceOf[js.Any], undo = undo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Redo]
   }

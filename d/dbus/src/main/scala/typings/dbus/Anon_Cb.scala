@@ -18,7 +18,7 @@ object Anon_Cb {
     setter: (/* value */ js.Any, /* done */ js.Function0[Unit]) => Unit = null
   ): Anon_Cb = {
     val __obj = js.Dynamic.literal(getter = js.Any.fromFunction1(getter))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (setter != null) __obj.updateDynamic("setter")(js.Any.fromFunction2(setter))
     __obj.asInstanceOf[Anon_Cb]
   }

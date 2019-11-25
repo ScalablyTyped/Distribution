@@ -26,7 +26,7 @@ trait Typeofbunyan extends js.Object {
   ]
   val TRACE: Double
   val WARN: Double
-  val levelFromName: /* import warning: ImportType.apply c Unsupported type mapping: 
+  val levelFromName: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in bunyan.bunyan.LogLevelString ]: number}
     */ typings.browserDashBunyan.browserDashBunyanStrings.Typeofbunyan with js.Any
   val nameFromLevel: NumberDictionary[String]
@@ -48,7 +48,7 @@ object Typeofbunyan {
     TRACE: Double,
     WARN: Double,
     createLogger: LoggerOptions => Logger,
-    levelFromName: /* import warning: ImportType.apply c Unsupported type mapping: 
+    levelFromName: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in bunyan.bunyan.LogLevelString ]: number}
     */ typings.browserDashBunyan.browserDashBunyanStrings.Typeofbunyan with js.Any,
     nameFromLevel: NumberDictionary[String],
@@ -56,7 +56,7 @@ object Typeofbunyan {
     safeCycles: () => js.Function2[/* key */ String, /* value */ js.Any, _],
     stdSerializers: StdSerializers
   ): Typeofbunyan = {
-    val __obj = js.Dynamic.literal(DEBUG = DEBUG, ERROR = ERROR, FATAL = FATAL, INFO = INFO, RingBuffer = RingBuffer, RotatingFileStream = RotatingFileStream, TRACE = TRACE, WARN = WARN, createLogger = js.Any.fromFunction1(createLogger), levelFromName = levelFromName, nameFromLevel = nameFromLevel, resolveLevel = js.Any.fromFunction1(resolveLevel), safeCycles = js.Any.fromFunction0(safeCycles), stdSerializers = stdSerializers)
+    val __obj = js.Dynamic.literal(DEBUG = DEBUG.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], FATAL = FATAL.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], RingBuffer = RingBuffer.asInstanceOf[js.Any], RotatingFileStream = RotatingFileStream.asInstanceOf[js.Any], TRACE = TRACE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any], createLogger = js.Any.fromFunction1(createLogger), levelFromName = levelFromName.asInstanceOf[js.Any], nameFromLevel = nameFromLevel.asInstanceOf[js.Any], resolveLevel = js.Any.fromFunction1(resolveLevel), safeCycles = js.Any.fromFunction0(safeCycles), stdSerializers = stdSerializers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofbunyan]
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WordcloudTransform extends Transforms {
+trait WordcloudTransform extends _Transforms {
   var as: js.UndefOr[(Vector7[String | SignalRef]) | SignalRef] = js.undefined
   var font: js.UndefOr[String | TransformField] = js.undefined
   var fontSize: js.UndefOr[Double | TransformField] = js.undefined
@@ -42,7 +42,7 @@ object WordcloudTransform {
     text: String | TransformField = null
   ): WordcloudTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

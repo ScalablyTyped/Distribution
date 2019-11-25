@@ -16,7 +16,7 @@ object IColumnDef {
   @scala.inline
   def apply(enableColumnResizing: js.UndefOr[Boolean] = js.undefined): IColumnDef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing)
+    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDef]
   }
 }

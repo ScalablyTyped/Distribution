@@ -11,7 +11,7 @@ trait Anon_Convert extends js.Object {
 object Anon_Convert {
   @scala.inline
   def apply(convert: js.Function): Anon_Convert = {
-    val __obj = js.Dynamic.literal(convert = convert)
+    val __obj = js.Dynamic.literal(convert = convert.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Convert]
   }

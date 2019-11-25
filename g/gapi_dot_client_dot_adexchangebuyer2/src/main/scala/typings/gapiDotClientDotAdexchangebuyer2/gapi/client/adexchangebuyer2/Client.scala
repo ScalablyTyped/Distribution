@@ -69,14 +69,14 @@ object Client {
     visibleToSeller: js.UndefOr[Boolean] = js.undefined
   ): Client = {
     val __obj = js.Dynamic.literal()
-    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId)
-    if (clientName != null) __obj.updateDynamic("clientName")(clientName)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (entityName != null) __obj.updateDynamic("entityName")(entityName)
-    if (entityType != null) __obj.updateDynamic("entityType")(entityType)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (!js.isUndefined(visibleToSeller)) __obj.updateDynamic("visibleToSeller")(visibleToSeller)
+    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId.asInstanceOf[js.Any])
+    if (clientName != null) __obj.updateDynamic("clientName")(clientName.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (entityName != null) __obj.updateDynamic("entityName")(entityName.asInstanceOf[js.Any])
+    if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleToSeller)) __obj.updateDynamic("visibleToSeller")(visibleToSeller.asInstanceOf[js.Any])
     __obj.asInstanceOf[Client]
   }
 }

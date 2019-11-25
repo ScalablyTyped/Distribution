@@ -23,10 +23,10 @@ object PopOverOptions {
   ): PopOverOptions = {
     val __obj = js.Dynamic.literal()
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
-    if (pane != null) __obj.updateDynamic("pane")(pane)
-    if (popup != null) __obj.updateDynamic("popup")(popup)
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
+    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopOverOptions]
   }
 }

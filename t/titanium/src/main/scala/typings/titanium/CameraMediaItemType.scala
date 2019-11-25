@@ -59,13 +59,13 @@ object CameraMediaItemType {
   ): CameraMediaItemType = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (cropRect != null) __obj.updateDynamic("cropRect")(cropRect)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (livePhoto != null) __obj.updateDynamic("livePhoto")(livePhoto)
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
-    if (previewRect != null) __obj.updateDynamic("previewRect")(previewRect)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (cropRect != null) __obj.updateDynamic("cropRect")(cropRect.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (livePhoto != null) __obj.updateDynamic("livePhoto")(livePhoto.asInstanceOf[js.Any])
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    if (previewRect != null) __obj.updateDynamic("previewRect")(previewRect.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraMediaItemType]
   }
 }

@@ -29,10 +29,10 @@ object ProjectsCreateCardParams {
     content_type: String = null,
     note: String = null
   ): ProjectsCreateCardParams = {
-    val __obj = js.Dynamic.literal(column_id = column_id)
+    val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any])
     if (content_id != null) __obj.updateDynamic("content_id")(content_id.asInstanceOf[js.Any])
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
-    if (note != null) __obj.updateDynamic("note")(note)
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsCreateCardParams]
   }
 }

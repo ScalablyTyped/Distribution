@@ -30,7 +30,7 @@ object IOCRZoneResult {
     Top: Double,
     Width: Double
   ): IOCRZoneResult = {
-    val __obj = js.Dynamic.literal(Confidence = Confidence, DimensionUnit = DimensionUnit, Height = Height, ID = ID, Left = Left, RecognizedOnPage = RecognizedOnPage, ResultValue = ResultValue, Top = Top, Width = Width)
+    val __obj = js.Dynamic.literal(Confidence = Confidence.asInstanceOf[js.Any], DimensionUnit = DimensionUnit.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Left = Left.asInstanceOf[js.Any], RecognizedOnPage = RecognizedOnPage.asInstanceOf[js.Any], ResultValue = ResultValue.asInstanceOf[js.Any], Top = Top.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOCRZoneResult]
   }

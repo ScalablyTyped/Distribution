@@ -62,7 +62,7 @@ object Math {
     radians: Double => Double,
     scale: (Double, Double, Double, Double, Double) => Double
   ): Math = {
-    val __obj = js.Dynamic.literal(DEG_PER_RAD = DEG_PER_RAD, RAD_PER_DEG = RAD_PER_DEG, clamp = js.Any.fromFunction3(clamp), degrees = js.Any.fromFunction1(degrees), fscale = js.Any.fromFunction5(fscale), radians = js.Any.fromFunction1(radians), scale = js.Any.fromFunction5(scale))
+    val __obj = js.Dynamic.literal(DEG_PER_RAD = DEG_PER_RAD.asInstanceOf[js.Any], RAD_PER_DEG = RAD_PER_DEG.asInstanceOf[js.Any], clamp = js.Any.fromFunction3(clamp), degrees = js.Any.fromFunction1(degrees), fscale = js.Any.fromFunction5(fscale), radians = js.Any.fromFunction1(radians), scale = js.Any.fromFunction5(scale))
   
     __obj.asInstanceOf[Math]
   }

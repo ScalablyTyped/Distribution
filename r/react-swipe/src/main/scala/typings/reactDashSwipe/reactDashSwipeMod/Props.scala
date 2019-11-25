@@ -24,10 +24,10 @@ object Props {
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (childCount != null) __obj.updateDynamic("childCount")(childCount.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (swipeOptions != null) __obj.updateDynamic("swipeOptions")(swipeOptions)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (swipeOptions != null) __obj.updateDynamic("swipeOptions")(swipeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

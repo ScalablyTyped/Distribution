@@ -32,9 +32,9 @@ object ReadDirItem {
     ctime: Date = null,
     mtime: Date = null
   ): ReadDirItem = {
-    val __obj = js.Dynamic.literal(isDirectory = js.Any.fromFunction0(isDirectory), isFile = js.Any.fromFunction0(isFile), name = name, path = path, size = size)
-    if (ctime != null) __obj.updateDynamic("ctime")(ctime)
-    if (mtime != null) __obj.updateDynamic("mtime")(mtime)
+    val __obj = js.Dynamic.literal(isDirectory = js.Any.fromFunction0(isDirectory), isFile = js.Any.fromFunction0(isFile), name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (ctime != null) __obj.updateDynamic("ctime")(ctime.asInstanceOf[js.Any])
+    if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadDirItem]
   }
 }

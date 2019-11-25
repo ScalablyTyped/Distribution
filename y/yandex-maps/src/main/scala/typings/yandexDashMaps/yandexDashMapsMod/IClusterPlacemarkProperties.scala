@@ -11,7 +11,7 @@ trait IClusterPlacemarkProperties extends IDataManager {
 object IClusterPlacemarkProperties {
   @scala.inline
   def apply(events: IEventManager, geoObjects: js.Array[IGeoObject], get: (String, js.Object) => js.Object): IClusterPlacemarkProperties = {
-    val __obj = js.Dynamic.literal(events = events, geoObjects = geoObjects, get = js.Any.fromFunction2(get))
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], geoObjects = geoObjects.asInstanceOf[js.Any], get = js.Any.fromFunction2(get))
   
     __obj.asInstanceOf[IClusterPlacemarkProperties]
   }

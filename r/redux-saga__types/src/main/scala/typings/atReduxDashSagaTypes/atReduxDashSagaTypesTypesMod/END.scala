@@ -13,7 +13,7 @@ object END {
   @scala.inline
   def apply(`type`: `@@redux-saga/CHANNEL_END`): END = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[END]
   }
 }

@@ -27,7 +27,7 @@ object ParsedCurrency {
     symbol: String,
     value: Double
   ): ParsedCurrency = {
-    val __obj = js.Dynamic.literal(currency = currency, decimalSeparator = decimalSeparator, decimals = decimals, groupSeparator = groupSeparator, integer = integer, raw = raw, symbol = symbol, value = value)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], decimalSeparator = decimalSeparator.asInstanceOf[js.Any], decimals = decimals.asInstanceOf[js.Any], groupSeparator = groupSeparator.asInstanceOf[js.Any], integer = integer.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParsedCurrency]
   }

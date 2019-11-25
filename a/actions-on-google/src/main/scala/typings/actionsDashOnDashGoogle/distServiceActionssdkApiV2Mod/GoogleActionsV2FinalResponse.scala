@@ -22,8 +22,8 @@ object GoogleActionsV2FinalResponse {
     speechResponse: GoogleActionsV2SpeechResponse = null
   ): GoogleActionsV2FinalResponse = {
     val __obj = js.Dynamic.literal()
-    if (richResponse != null) __obj.updateDynamic("richResponse")(richResponse)
-    if (speechResponse != null) __obj.updateDynamic("speechResponse")(speechResponse)
+    if (richResponse != null) __obj.updateDynamic("richResponse")(richResponse.asInstanceOf[js.Any])
+    if (speechResponse != null) __obj.updateDynamic("speechResponse")(speechResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2FinalResponse]
   }
 }

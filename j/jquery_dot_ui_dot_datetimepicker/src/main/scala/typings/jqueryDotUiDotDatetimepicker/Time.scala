@@ -26,7 +26,7 @@ object Time {
     if (millisecond != null) __obj.updateDynamic("millisecond")(millisecond.asInstanceOf[js.Any])
     if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
     if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Time]
   }
 }

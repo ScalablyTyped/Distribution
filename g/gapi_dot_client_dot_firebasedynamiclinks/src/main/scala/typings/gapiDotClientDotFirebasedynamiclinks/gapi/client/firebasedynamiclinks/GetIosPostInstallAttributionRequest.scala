@@ -53,14 +53,14 @@ object GetIosPostInstallAttributionRequest {
     visualStyle: String = null
   ): GetIosPostInstallAttributionRequest = {
     val __obj = js.Dynamic.literal()
-    if (appInstallationTime != null) __obj.updateDynamic("appInstallationTime")(appInstallationTime)
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (iosVersion != null) __obj.updateDynamic("iosVersion")(iosVersion)
-    if (retrievalMethod != null) __obj.updateDynamic("retrievalMethod")(retrievalMethod)
-    if (sdkVersion != null) __obj.updateDynamic("sdkVersion")(sdkVersion)
-    if (uniqueMatchLinkToCheck != null) __obj.updateDynamic("uniqueMatchLinkToCheck")(uniqueMatchLinkToCheck)
-    if (visualStyle != null) __obj.updateDynamic("visualStyle")(visualStyle)
+    if (appInstallationTime != null) __obj.updateDynamic("appInstallationTime")(appInstallationTime.asInstanceOf[js.Any])
+    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (iosVersion != null) __obj.updateDynamic("iosVersion")(iosVersion.asInstanceOf[js.Any])
+    if (retrievalMethod != null) __obj.updateDynamic("retrievalMethod")(retrievalMethod.asInstanceOf[js.Any])
+    if (sdkVersion != null) __obj.updateDynamic("sdkVersion")(sdkVersion.asInstanceOf[js.Any])
+    if (uniqueMatchLinkToCheck != null) __obj.updateDynamic("uniqueMatchLinkToCheck")(uniqueMatchLinkToCheck.asInstanceOf[js.Any])
+    if (visualStyle != null) __obj.updateDynamic("visualStyle")(visualStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIosPostInstallAttributionRequest]
   }
 }

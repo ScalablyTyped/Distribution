@@ -13,8 +13,8 @@ object TimelineOrientationOption {
   @scala.inline
   def apply(axis: String = null, item: String = null): TimelineOrientationOption = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (item != null) __obj.updateDynamic("item")(item)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineOrientationOption]
   }
 }

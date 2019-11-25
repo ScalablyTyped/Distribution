@@ -13,8 +13,8 @@ trait FailedAttemptError extends Error {
 object FailedAttemptError {
   @scala.inline
   def apply(attemptNumber: Double, message: String, name: String, retriesLeft: Double, stack: String = null): FailedAttemptError = {
-    val __obj = js.Dynamic.literal(attemptNumber = attemptNumber, message = message, name = name, retriesLeft = retriesLeft)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(attemptNumber = attemptNumber.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], retriesLeft = retriesLeft.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedAttemptError]
   }
 }

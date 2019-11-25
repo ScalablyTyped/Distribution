@@ -38,9 +38,9 @@ object _Shard {
     AdjacentParentShardId: String = null,
     ParentShardId: String = null
   ): _Shard = {
-    val __obj = js.Dynamic.literal(HashKeyRange = HashKeyRange, SequenceNumberRange = SequenceNumberRange, ShardId = ShardId)
-    if (AdjacentParentShardId != null) __obj.updateDynamic("AdjacentParentShardId")(AdjacentParentShardId)
-    if (ParentShardId != null) __obj.updateDynamic("ParentShardId")(ParentShardId)
+    val __obj = js.Dynamic.literal(HashKeyRange = HashKeyRange.asInstanceOf[js.Any], SequenceNumberRange = SequenceNumberRange.asInstanceOf[js.Any], ShardId = ShardId.asInstanceOf[js.Any])
+    if (AdjacentParentShardId != null) __obj.updateDynamic("AdjacentParentShardId")(AdjacentParentShardId.asInstanceOf[js.Any])
+    if (ParentShardId != null) __obj.updateDynamic("ParentShardId")(ParentShardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Shard]
   }
 }

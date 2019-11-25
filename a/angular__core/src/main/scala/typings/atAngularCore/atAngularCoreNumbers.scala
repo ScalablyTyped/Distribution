@@ -411,7 +411,7 @@ object atAngularCoreNumbers {
   @scala.inline
   def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
   @scala.inline
-  def _4294901760: _4294901760 = _4294901760.asInstanceOf[_4294901760]
+  def _4294901760: _4294901760 = 4294901760.0.asInstanceOf[_4294901760]
   @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
   @scala.inline

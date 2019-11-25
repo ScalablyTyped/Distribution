@@ -12,7 +12,7 @@ trait Anon_HasCondensedHeadline extends js.Object {
 object Anon_HasCondensedHeadline {
   @scala.inline
   def apply(hasCondensedHeadline: Boolean, imageProps: Anon_Height): Anon_HasCondensedHeadline = {
-    val __obj = js.Dynamic.literal(hasCondensedHeadline = hasCondensedHeadline, imageProps = imageProps)
+    val __obj = js.Dynamic.literal(hasCondensedHeadline = hasCondensedHeadline.asInstanceOf[js.Any], imageProps = imageProps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HasCondensedHeadline]
   }

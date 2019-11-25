@@ -24,12 +24,12 @@ object ScriptOptions {
     timeout: Int | Double = null
   ): ScriptOptions = {
     val __obj = js.Dynamic.literal()
-    if (cachedData != null) __obj.updateDynamic("cachedData")(cachedData)
+    if (cachedData != null) __obj.updateDynamic("cachedData")(cachedData.asInstanceOf[js.Any])
     if (columnOffset != null) __obj.updateDynamic("columnOffset")(columnOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayErrors)) __obj.updateDynamic("displayErrors")(displayErrors)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(displayErrors)) __obj.updateDynamic("displayErrors")(displayErrors.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (lineOffset != null) __obj.updateDynamic("lineOffset")(lineOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(produceCachedData)) __obj.updateDynamic("produceCachedData")(produceCachedData)
+    if (!js.isUndefined(produceCachedData)) __obj.updateDynamic("produceCachedData")(produceCachedData.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptOptions]
   }

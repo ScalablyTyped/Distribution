@@ -31,8 +31,8 @@ object carClassifyOptions {
     success: /* res */ carClassifyResponse => Unit = null,
     top_num: Int | Double = null
   ): carClassifyOptions = {
-    val __obj = js.Dynamic.literal(image = image)
-    if (color_result != null) __obj.updateDynamic("color_result")(color_result)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
+    if (color_result != null) __obj.updateDynamic("color_result")(color_result.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

@@ -13,8 +13,8 @@ object GraphQLResult {
   @scala.inline
   def apply(data: js.Any = null, errors: js.Array[GraphQLError] = null): GraphQLResult = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLResult]
   }
 }

@@ -64,12 +64,12 @@ object PassportSocketIoOptions {
     secret: String = null,
     success: (/* data */ js.Any, /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit]) => Unit = null
   ): PassportSocketIoOptions = {
-    val __obj = js.Dynamic.literal(store = store)
+    val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
     if (cookieParser != null) __obj.updateDynamic("cookieParser")(js.Any.fromFunction3(cookieParser))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction4(fail))
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (passport != null) __obj.updateDynamic("passport")(passport)
-    if (secret != null) __obj.updateDynamic("secret")(secret)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (passport != null) __obj.updateDynamic("passport")(passport.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction2(success))
     __obj.asInstanceOf[PassportSocketIoOptions]
   }

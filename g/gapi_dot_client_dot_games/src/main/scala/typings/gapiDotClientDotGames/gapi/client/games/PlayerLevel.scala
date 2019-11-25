@@ -24,10 +24,10 @@ object PlayerLevel {
     minExperiencePoints: String = null
   ): PlayerLevel = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (maxExperiencePoints != null) __obj.updateDynamic("maxExperiencePoints")(maxExperiencePoints)
-    if (minExperiencePoints != null) __obj.updateDynamic("minExperiencePoints")(minExperiencePoints)
+    if (maxExperiencePoints != null) __obj.updateDynamic("maxExperiencePoints")(maxExperiencePoints.asInstanceOf[js.Any])
+    if (minExperiencePoints != null) __obj.updateDynamic("minExperiencePoints")(minExperiencePoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerLevel]
   }
 }

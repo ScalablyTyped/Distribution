@@ -13,7 +13,7 @@ object Anon_Cache {
   @scala.inline
   def apply(cache: GraphQLCache = null): Anon_Cache = {
     val __obj = js.Dynamic.literal()
-    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cache]
   }
 }

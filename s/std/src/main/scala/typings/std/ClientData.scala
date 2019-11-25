@@ -23,9 +23,9 @@ object ClientData {
     extensions: WebAuthnExtensions = null,
     tokenBinding: java.lang.String = null
   ): ClientData = {
-    val __obj = js.Dynamic.literal(challenge = challenge, hashAlg = hashAlg.asInstanceOf[js.Any], origin = origin, rpId = rpId)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (tokenBinding != null) __obj.updateDynamic("tokenBinding")(tokenBinding)
+    val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], hashAlg = hashAlg.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], rpId = rpId.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (tokenBinding != null) __obj.updateDynamic("tokenBinding")(tokenBinding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientData]
   }
 }

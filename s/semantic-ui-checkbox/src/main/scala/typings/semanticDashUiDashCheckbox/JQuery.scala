@@ -122,12 +122,12 @@ trait JQuery extends js.Object {
   @JSName("checkbox")
   def checkbox_setting(behavior: setting, value: CheckboxSettings): JQuery = js.native
   @JSName("checkbox")
-  def checkbox_setting[K /* <: String */](behavior: setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any = js.native
+  def checkbox_setting[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any = js.native
   @JSName("checkbox")
   def checkbox_setting[K /* <: String */](
     behavior: setting,
     name: K,
-    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl[K] */ js.Any
   ): JQuery = js.native
   /**
     * Set a checkbox state to unchecked without callbacks

@@ -39,15 +39,15 @@ object Configuration {
     source: Source = null,
     updated: String = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id)
-    if (conversions != null) __obj.updateDynamic("conversions")(conversions)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (enrichments != null) __obj.updateDynamic("enrichments")(enrichments)
-    if (normalizations != null) __obj.updateDynamic("normalizations")(normalizations)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id.asInstanceOf[js.Any])
+    if (conversions != null) __obj.updateDynamic("conversions")(conversions.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enrichments != null) __obj.updateDynamic("enrichments")(enrichments.asInstanceOf[js.Any])
+    if (normalizations != null) __obj.updateDynamic("normalizations")(normalizations.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

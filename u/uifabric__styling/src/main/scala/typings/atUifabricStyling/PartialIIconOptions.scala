@@ -17,8 +17,8 @@ object PartialIIconOptions {
     warnOnMissingIcons: js.UndefOr[Boolean] = js.undefined
   ): PartialIIconOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableWarnings)) __obj.updateDynamic("disableWarnings")(disableWarnings)
-    if (!js.isUndefined(warnOnMissingIcons)) __obj.updateDynamic("warnOnMissingIcons")(warnOnMissingIcons)
+    if (!js.isUndefined(disableWarnings)) __obj.updateDynamic("disableWarnings")(disableWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(warnOnMissingIcons)) __obj.updateDynamic("warnOnMissingIcons")(warnOnMissingIcons.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialIIconOptions]
   }
 }

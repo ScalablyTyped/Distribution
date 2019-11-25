@@ -22,11 +22,11 @@ object CrossDimensionReachReportCompatibleFields {
     overlapMetrics: js.Array[Metric] = null
   ): CrossDimensionReachReportCompatibleFields = {
     val __obj = js.Dynamic.literal()
-    if (breakdown != null) __obj.updateDynamic("breakdown")(breakdown)
-    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (overlapMetrics != null) __obj.updateDynamic("overlapMetrics")(overlapMetrics)
+    if (breakdown != null) __obj.updateDynamic("breakdown")(breakdown.asInstanceOf[js.Any])
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (overlapMetrics != null) __obj.updateDynamic("overlapMetrics")(overlapMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossDimensionReachReportCompatibleFields]
   }
 }

@@ -30,11 +30,11 @@ object IShimmerStyleProps {
     shimmerWaveColor: String = null,
     transitionAnimationInterval: Int | Double = null
   ): IShimmerStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isDataLoaded)) __obj.updateDynamic("isDataLoaded")(isDataLoaded)
-    if (shimmerColor != null) __obj.updateDynamic("shimmerColor")(shimmerColor)
-    if (shimmerWaveColor != null) __obj.updateDynamic("shimmerWaveColor")(shimmerWaveColor)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDataLoaded)) __obj.updateDynamic("isDataLoaded")(isDataLoaded.asInstanceOf[js.Any])
+    if (shimmerColor != null) __obj.updateDynamic("shimmerColor")(shimmerColor.asInstanceOf[js.Any])
+    if (shimmerWaveColor != null) __obj.updateDynamic("shimmerWaveColor")(shimmerWaveColor.asInstanceOf[js.Any])
     if (transitionAnimationInterval != null) __obj.updateDynamic("transitionAnimationInterval")(transitionAnimationInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerStyleProps]
   }

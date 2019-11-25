@@ -43,14 +43,14 @@ object UserRole {
     subaccountId: String = null
   ): UserRole = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (!js.isUndefined(defaultUserRole)) __obj.updateDynamic("defaultUserRole")(defaultUserRole)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parentUserRoleId != null) __obj.updateDynamic("parentUserRoleId")(parentUserRoleId)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultUserRole)) __obj.updateDynamic("defaultUserRole")(defaultUserRole.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentUserRoleId != null) __obj.updateDynamic("parentUserRoleId")(parentUserRoleId.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserRole]
   }
 }

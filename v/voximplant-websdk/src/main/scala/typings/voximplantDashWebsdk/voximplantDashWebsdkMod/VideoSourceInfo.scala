@@ -21,7 +21,7 @@ trait VideoSourceInfo extends js.Object {
 object VideoSourceInfo {
   @scala.inline
   def apply(id: Double | String, name: String): VideoSourceInfo = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VideoSourceInfo]
   }

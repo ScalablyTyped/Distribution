@@ -15,7 +15,7 @@ trait Data extends js.Object {
 object Data {
   @scala.inline
   def apply(challenge: String, geetest_id: String, gt: String, new_captcha: String, success: Success): Data = {
-    val __obj = js.Dynamic.literal(challenge = challenge, geetest_id = geetest_id, gt = gt, new_captcha = new_captcha, success = success)
+    val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], geetest_id = geetest_id.asInstanceOf[js.Any], gt = gt.asInstanceOf[js.Any], new_captcha = new_captcha.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Data]
   }

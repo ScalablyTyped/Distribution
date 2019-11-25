@@ -28,14 +28,14 @@ object Anon_Conjugations {
     synonyms: js.Array[Anon_Source] = null
   ): Anon_Conjugations = {
     val __obj = js.Dynamic.literal()
-    if (conjugations != null) __obj.updateDynamic("conjugations")(conjugations)
-    if (definitions != null) __obj.updateDynamic("definitions")(definitions)
-    if (partOfSpeech != null) __obj.updateDynamic("partOfSpeech")(partOfSpeech)
-    if (pronunciation != null) __obj.updateDynamic("pronunciation")(pronunciation)
-    if (pronunciationUrl != null) __obj.updateDynamic("pronunciationUrl")(pronunciationUrl)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (syllabification != null) __obj.updateDynamic("syllabification")(syllabification)
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms)
+    if (conjugations != null) __obj.updateDynamic("conjugations")(conjugations.asInstanceOf[js.Any])
+    if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
+    if (partOfSpeech != null) __obj.updateDynamic("partOfSpeech")(partOfSpeech.asInstanceOf[js.Any])
+    if (pronunciation != null) __obj.updateDynamic("pronunciation")(pronunciation.asInstanceOf[js.Any])
+    if (pronunciationUrl != null) __obj.updateDynamic("pronunciationUrl")(pronunciationUrl.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (syllabification != null) __obj.updateDynamic("syllabification")(syllabification.asInstanceOf[js.Any])
+    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Conjugations]
   }
 }

@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(layers: js.Array[String] = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

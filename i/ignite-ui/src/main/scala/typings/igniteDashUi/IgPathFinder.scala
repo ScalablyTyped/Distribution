@@ -23,8 +23,8 @@ object IgPathFinder {
     items: js.Any = null
   ): IgPathFinder = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPathFinder]
   }
 }

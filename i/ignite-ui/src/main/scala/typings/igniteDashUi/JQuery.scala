@@ -226,7 +226,7 @@ import typings.igniteDashUi.igniteDashUiStrings.checkNode
 import typings.igniteDashUi.igniteDashUiStrings.checkState
 import typings.igniteDashUi.igniteDashUiStrings.checkStateById
 import typings.igniteDashUi.igniteDashUiStrings.checkUnfixingAllowed
-import typings.igniteDashUi.igniteDashUiStrings.checkboxMode
+import typings.igniteDashUi.igniteDashUiStrings.checkboxMode_
 import typings.igniteDashUi.igniteDashUiStrings.checked
 import typings.igniteDashUi.igniteDashUiStrings.checkedNodes
 import typings.igniteDashUi.igniteDashUiStrings.checkedRows
@@ -720,7 +720,7 @@ import typings.igniteDashUi.igniteDashUiStrings.firstSortDirection
 import typings.igniteDashUi.igniteDashUiStrings.fixColumn
 import typings.igniteDashUi.igniteDashUiStrings.fixDataSkippedColumns
 import typings.igniteDashUi.igniteDashUiStrings.fixNonDataColumns
-import typings.igniteDashUi.igniteDashUiStrings.fixNondataColumns
+import typings.igniteDashUi.igniteDashUiStrings.fixNondataColumns_
 import typings.igniteDashUi.igniteDashUiStrings.fixedBodyContainer
 import typings.igniteDashUi.igniteDashUiStrings.fixedContainer
 import typings.igniteDashUi.igniteDashUiStrings.fixedDecimalPlaceCount
@@ -1877,7 +1877,7 @@ import typings.igniteDashUi.igniteDashUiStrings.showSummariesButton
 import typings.igniteDashUi.igniteDashUiStrings.showTextToolbar
 import typings.igniteDashUi.igniteDashUiStrings.showToolTip
 import typings.igniteDashUi.igniteDashUiStrings.showToolTipTimeout
-import typings.igniteDashUi.igniteDashUiStrings.showTooltip
+import typings.igniteDashUi.igniteDashUiStrings.showTooltip_
 import typings.igniteDashUi.igniteDashUiStrings.showTopOrBottomDialogForTable
 import typings.igniteDashUi.igniteDashUiStrings.showTopOrBottomDialogForWorksheet
 import typings.igniteDashUi.igniteDashUiStrings.showing
@@ -2042,7 +2042,7 @@ import typings.igniteDashUi.igniteDashUiStrings.todayButton
 import typings.igniteDashUi.igniteDashUiStrings.toggle
 import typings.igniteDashUi.igniteDashUiStrings.toggleCheckState
 import typings.igniteDashUi.igniteDashUiStrings.toggleCheckStateById
-import typings.igniteDashUi.igniteDashUiStrings.toggleCheckstate
+import typings.igniteDashUi.igniteDashUiStrings.toggleCheckstate_
 import typings.igniteDashUi.igniteDashUiStrings.toggleDropDown
 import typings.igniteDashUi.igniteDashUiStrings.toggleFilterRowByFeatureChooser
 import typings.igniteDashUi.igniteDashUiStrings.toggleGroup
@@ -17179,14 +17179,14 @@ trait JQuery extends js.Object {
   	 * Specify initial fixing of all non data columns. Non-data columns are columns in the grid rendered for specific features, like the row selectors feature. The column containing the row numbering is such a column. This option is applicable when [fixingDirection](ui.iggridcolumnfixing#options:fixingDirection) is set to left. For a full column fixing configuration summary please refer to [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#configuration-summary).
   	 *
   	 */
-  def igGridColumnFixing(optionLiteral: option, optionName: fixNondataColumns): Boolean = js.native
+  def igGridColumnFixing(optionLiteral: option, optionName: fixNondataColumns_): Boolean = js.native
   /**
   	 * Specify initial fixing of all non data columns. Non-data columns are columns in the grid rendered for specific features, like the row selectors feature. The column containing the row numbering is such a column. This option is applicable when [fixingDirection](ui.iggridcolumnfixing#options:fixingDirection) is set to left. For a full column fixing configuration summary please refer to [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#configuration-summary).
   	 *
   	 *
   	 * @optionValue New value to be set.
   	 */
-  def igGridColumnFixing(optionLiteral: option, optionName: fixNondataColumns, optionValue: Boolean): Unit = js.native
+  def igGridColumnFixing(optionLiteral: option, optionName: fixNondataColumns_, optionValue: Boolean): Unit = js.native
   /**
   	 * Configures which side the fixed columns of the grid will be rendered on. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#direction) out of more information.
   	 *
@@ -23159,7 +23159,7 @@ trait JQuery extends js.Object {
   @JSName("igGridSummaries")
   def igGridSummaries_summaryCollection(methodName: summaryCollection): Unit = js.native
   @JSName("igGridSummaries")
-  def igGridSummaries_toggleCheckstate(methodName: toggleCheckstate, $checkbox: js.Object): Unit = js.native
+  def igGridSummaries_toggleCheckstate(methodName: toggleCheckstate_, $checkbox: js.Object): Unit = js.native
   @JSName("igGridSummaries")
   def igGridSummaries_toggleDropDown(methodName: toggleDropDown, columnKey: String, event: js.Object): Unit = js.native
   @JSName("igGridSummaries")
@@ -30957,13 +30957,13 @@ trait JQuery extends js.Object {
   /**
   	 * Whether the chart should render a tooltip.
   	 */
-  def igPieChart(optionLiteral: option, optionName: showTooltip): Boolean = js.native
+  def igPieChart(optionLiteral: option, optionName: showTooltip_): Boolean = js.native
   /**
   	 * Whether the chart should render a tooltip.
   	 *
   	 * @optionValue New value to be set.
   	 */
-  def igPieChart(optionLiteral: option, optionName: showTooltip, optionValue: Boolean): Unit = js.native
+  def igPieChart(optionLiteral: option, optionName: showTooltip_, optionValue: Boolean): Unit = js.native
   /**
   	 * Raised when the slice is clicked.
   	 * Function takes arguments evt and ui.
@@ -42163,14 +42163,14 @@ trait JQuery extends js.Object {
   	 * Gets the behavior and type of the checkboxes rendered for the tree nodes. Can be set only at initialization.
   	 *
   	 */
-  def igTree(optionLiteral: option, optionName: checkboxMode): String = js.native
+  def igTree(optionLiteral: option, optionName: checkboxMode_): String = js.native
   /**
   	 * The behavior and type of the checkboxes rendered for the tree nodes. Can be set only at initialization.
   	 *
   	 *
   	 * @optionValue New value to be set.
   	 */
-  def igTree(optionLiteral: option, optionName: checkboxMode, optionValue: String): Unit = js.native
+  def igTree(optionLiteral: option, optionName: checkboxMode_, optionValue: String): Unit = js.native
   /**
   	 * Fired before databinding is performed.
   	 */
@@ -43875,14 +43875,14 @@ trait JQuery extends js.Object {
   	 * Specify initial fixing of all non data columns. Non-data columns are columns in the grid rendered for specific features, like the row selectors feature. The column containing the row numbering is such a column. This option is applicable when [fixingDirection](ui.iggridcolumnfixing#options:fixingDirection) is set to left. For a full column fixing configuration summary please refer to [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#configuration-summary).
   	 *
   	 */
-  def igTreeGridColumnFixing(optionLiteral: option, optionName: fixNondataColumns): Boolean = js.native
+  def igTreeGridColumnFixing(optionLiteral: option, optionName: fixNondataColumns_): Boolean = js.native
   /**
   	 * Specify initial fixing of all non data columns. Non-data columns are columns in the grid rendered for specific features, like the row selectors feature. The column containing the row numbering is such a column. This option is applicable when [fixingDirection](ui.iggridcolumnfixing#options:fixingDirection) is set to left. For a full column fixing configuration summary please refer to [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#configuration-summary).
   	 *
   	 *
   	 * @optionValue New value to be set.
   	 */
-  def igTreeGridColumnFixing(optionLiteral: option, optionName: fixNondataColumns, optionValue: Boolean): Unit = js.native
+  def igTreeGridColumnFixing(optionLiteral: option, optionName: fixNondataColumns_, optionValue: Boolean): Unit = js.native
   /**
   	 * Configures which side the fixed columns of the grid will be rendered on. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#direction) out of more information.
   	 *
@@ -48939,9 +48939,9 @@ trait JQuery extends js.Object {
   @JSName("igTree")
   def igTree_toggle(methodName: toggle, node: js.Object, event: js.Object): Unit = js.native
   @JSName("igTree")
-  def igTree_toggleCheckstate(methodName: toggleCheckstate, node: js.Object): Unit = js.native
+  def igTree_toggleCheckstate(methodName: toggleCheckstate_, node: js.Object): Unit = js.native
   @JSName("igTree")
-  def igTree_toggleCheckstate(methodName: toggleCheckstate, node: js.Object, event: js.Object): Unit = js.native
+  def igTree_toggleCheckstate(methodName: toggleCheckstate_, node: js.Object, event: js.Object): Unit = js.native
   @JSName("igTree")
   def igTree_transactionLog(methodName: transactionLog): js.Array[_] = js.native
   @JSName("igTree")

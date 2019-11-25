@@ -49,7 +49,7 @@ object ColorAxisDataClassesOptions {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorAxisDataClassesOptions]
   }

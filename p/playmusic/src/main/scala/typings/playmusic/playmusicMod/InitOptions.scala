@@ -20,10 +20,10 @@ object InitOptions {
     password: String = null
   ): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (androidId != null) __obj.updateDynamic("androidId")(androidId)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (masterToken != null) __obj.updateDynamic("masterToken")(masterToken)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (androidId != null) __obj.updateDynamic("androidId")(androidId.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (masterToken != null) __obj.updateDynamic("masterToken")(masterToken.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

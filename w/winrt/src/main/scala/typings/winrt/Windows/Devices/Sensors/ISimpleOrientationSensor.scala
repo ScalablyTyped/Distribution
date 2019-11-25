@@ -12,7 +12,7 @@ trait ISimpleOrientationSensor extends js.Object {
 object ISimpleOrientationSensor {
   @scala.inline
   def apply(getCurrentOrientation: () => SimpleOrientation, onorientationchanged: js.Any): ISimpleOrientationSensor = {
-    val __obj = js.Dynamic.literal(getCurrentOrientation = js.Any.fromFunction0(getCurrentOrientation), onorientationchanged = onorientationchanged)
+    val __obj = js.Dynamic.literal(getCurrentOrientation = js.Any.fromFunction0(getCurrentOrientation), onorientationchanged = onorientationchanged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISimpleOrientationSensor]
   }

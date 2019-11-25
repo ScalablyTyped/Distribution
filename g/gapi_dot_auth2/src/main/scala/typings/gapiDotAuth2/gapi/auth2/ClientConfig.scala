@@ -64,13 +64,13 @@ object ClientConfig {
     ux_mode: popup | redirect = null
   ): ClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (cookie_policy != null) __obj.updateDynamic("cookie_policy")(cookie_policy)
-    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile)
-    if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain)
-    if (openid_realm != null) __obj.updateDynamic("openid_realm")(openid_realm)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (cookie_policy != null) __obj.updateDynamic("cookie_policy")(cookie_policy.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile.asInstanceOf[js.Any])
+    if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain.asInstanceOf[js.Any])
+    if (openid_realm != null) __obj.updateDynamic("openid_realm")(openid_realm.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (ux_mode != null) __obj.updateDynamic("ux_mode")(ux_mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]
   }

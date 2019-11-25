@@ -47,13 +47,13 @@ object CheckboxTheme {
     text: String = null
   ): CheckboxTheme = {
     val __obj = js.Dynamic.literal()
-    if (check != null) __obj.updateDynamic("check")(check)
-    if (checked != null) __obj.updateDynamic("checked")(checked)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (ripple != null) __obj.updateDynamic("ripple")(ripple)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (ripple != null) __obj.updateDynamic("ripple")(ripple.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxTheme]
   }
 }

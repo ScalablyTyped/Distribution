@@ -12,7 +12,7 @@ trait Anon_False extends js.Object {
 object Anon_False {
   @scala.inline
   def apply(forceSync: `false`): Anon_False = {
-    val __obj = js.Dynamic.literal(forceSync = forceSync)
+    val __obj = js.Dynamic.literal(forceSync = forceSync.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_False]
   }

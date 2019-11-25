@@ -13,8 +13,8 @@ object Anon_Optional {
   @scala.inline
   def apply(optional: js.Array[String] = null, required: js.Array[String] = null): Anon_Optional = {
     val __obj = js.Dynamic.literal()
-    if (optional != null) __obj.updateDynamic("optional")(optional)
-    if (required != null) __obj.updateDynamic("required")(required)
+    if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Optional]
   }
 }

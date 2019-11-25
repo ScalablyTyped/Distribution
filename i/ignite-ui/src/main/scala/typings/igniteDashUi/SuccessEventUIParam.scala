@@ -37,11 +37,11 @@ object SuccessEventUIParam {
     value: js.Any = null
   ): SuccessEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuccessEventUIParam]
   }
 }

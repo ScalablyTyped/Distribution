@@ -16,3 +16,24 @@ import scala.scalajs.js.annotation._
 */
 trait JSONSchema6TypeName extends js.Object
 
+object JSONSchema6TypeName {
+  @scala.inline
+  def any: typings.jsonDashSchema.jsonDashSchemaStrings.any = this.cast("any")
+  @scala.inline
+  def array: typings.jsonDashSchema.jsonDashSchemaStrings.array = this.cast("array")
+  @scala.inline
+  def boolean: typings.jsonDashSchema.jsonDashSchemaStrings.boolean = this.cast("boolean")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def integer: typings.jsonDashSchema.jsonDashSchemaStrings.integer = this.cast("integer")
+  @scala.inline
+  def `null`: typings.jsonDashSchema.jsonDashSchemaStrings.`null` = this.cast("null")
+  @scala.inline
+  def number: typings.jsonDashSchema.jsonDashSchemaStrings.number = this.cast("number")
+  @scala.inline
+  def `object`: typings.jsonDashSchema.jsonDashSchemaStrings.`object` = this.cast("object")
+  @scala.inline
+  def string: typings.jsonDashSchema.jsonDashSchemaStrings.string = this.cast("string")
+}
+

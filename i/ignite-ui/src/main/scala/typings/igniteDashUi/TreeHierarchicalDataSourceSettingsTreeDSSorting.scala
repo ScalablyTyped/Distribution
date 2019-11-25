@@ -31,7 +31,7 @@ object TreeHierarchicalDataSourceSettingsTreeDSSorting {
     toLevel: Int | Double = null
   ): TreeHierarchicalDataSourceSettingsTreeDSSorting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (fromLevel != null) __obj.updateDynamic("fromLevel")(fromLevel.asInstanceOf[js.Any])
     if (toLevel != null) __obj.updateDynamic("toLevel")(toLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSSorting]

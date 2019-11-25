@@ -19,10 +19,10 @@ object EsriJSONMultiPolygon {
     hasZ: js.UndefOr[Boolean] = js.undefined,
     spatialReference: EsriJSONSpatialReferenceWkid = null
   ): EsriJSONMultiPolygon = {
-    val __obj = js.Dynamic.literal(rings = rings)
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    val __obj = js.Dynamic.literal(rings = rings.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[EsriJSONMultiPolygon]
   }
 }

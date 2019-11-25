@@ -14,7 +14,7 @@ object MultiColumnComboBoxAnimationClose {
   def apply(duration: Int | Double = null, effects: String = null): MultiColumnComboBoxAnimationClose = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (effects != null) __obj.updateDynamic("effects")(effects)
+    if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiColumnComboBoxAnimationClose]
   }
 }

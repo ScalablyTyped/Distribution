@@ -40,7 +40,7 @@ object Anon_BuiltinPlacements {
     subMenuOpenDelay: Double,
     triggerSubMenuAction: String
   ): Anon_BuiltinPlacements = {
-    val __obj = js.Dynamic.literal(className = className, defaultOpenKeys = defaultOpenKeys, defaultSelectedKeys = defaultSelectedKeys, mode = mode, onClick = js.Any.fromFunction0(onClick), onDeselect = js.Any.fromFunction0(onDeselect), onOpenChange = js.Any.fromFunction0(onOpenChange), onSelect = js.Any.fromFunction0(onSelect), overflowedIndicator = overflowedIndicator, prefixCls = prefixCls, selectable = selectable, subMenuCloseDelay = subMenuCloseDelay, subMenuOpenDelay = subMenuOpenDelay, triggerSubMenuAction = triggerSubMenuAction)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], defaultOpenKeys = defaultOpenKeys.asInstanceOf[js.Any], defaultSelectedKeys = defaultSelectedKeys.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), onDeselect = js.Any.fromFunction0(onDeselect), onOpenChange = js.Any.fromFunction0(onOpenChange), onSelect = js.Any.fromFunction0(onSelect), overflowedIndicator = overflowedIndicator.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], subMenuCloseDelay = subMenuCloseDelay.asInstanceOf[js.Any], subMenuOpenDelay = subMenuOpenDelay.asInstanceOf[js.Any], triggerSubMenuAction = triggerSubMenuAction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BuiltinPlacements]
   }

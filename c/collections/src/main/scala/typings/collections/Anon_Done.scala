@@ -13,7 +13,7 @@ trait Anon_Done[T] extends js.Object {
 object Anon_Done {
   @scala.inline
   def apply[T](done: `true`, value: T = null): Anon_Done[T] = {
-    val __obj = js.Dynamic.literal(done = done)
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Done[T]]
   }

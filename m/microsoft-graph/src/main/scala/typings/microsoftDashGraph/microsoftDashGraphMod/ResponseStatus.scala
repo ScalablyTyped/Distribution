@@ -18,8 +18,8 @@ object ResponseStatus {
   @scala.inline
   def apply(response: ResponseType = null, time: String = null): ResponseStatus = {
     val __obj = js.Dynamic.literal()
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseStatus]
   }
 }

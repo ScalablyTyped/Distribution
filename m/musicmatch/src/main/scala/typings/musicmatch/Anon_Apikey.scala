@@ -13,8 +13,8 @@ object Anon_Apikey {
   @scala.inline
   def apply(apikey: String = null, format: String = null): Anon_Apikey = {
     val __obj = js.Dynamic.literal()
-    if (apikey != null) __obj.updateDynamic("apikey")(apikey)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (apikey != null) __obj.updateDynamic("apikey")(apikey.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Apikey]
   }
 }

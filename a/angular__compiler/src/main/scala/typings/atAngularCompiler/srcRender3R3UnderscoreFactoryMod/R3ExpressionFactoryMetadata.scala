@@ -21,8 +21,8 @@ object R3ExpressionFactoryMetadata {
     `type`: Expression,
     deps: js.Array[R3DependencyMetadata] | invalid = null
   ): R3ExpressionFactoryMetadata = {
-    val __obj = js.Dynamic.literal(expression = expression, injectFn = injectFn, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3ExpressionFactoryMetadata]
   }

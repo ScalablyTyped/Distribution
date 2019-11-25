@@ -32,8 +32,8 @@ object Anon_CloseOnOutOfBoundaries {
     usePortal: Boolean,
     portalContainer: HTMLElement = null
   ): Anon_CloseOnOutOfBoundaries = {
-    val __obj = js.Dynamic.literal(closeOnOutOfBoundaries = closeOnOutOfBoundaries, defaultTooltipShown = defaultTooltipShown, delayHide = delayHide, delayShow = delayShow, followCursor = followCursor, onVisibilityChange = js.Any.fromFunction0(onVisibilityChange), placement = placement, trigger = trigger, usePortal = usePortal)
-    if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer)
+    val __obj = js.Dynamic.literal(closeOnOutOfBoundaries = closeOnOutOfBoundaries.asInstanceOf[js.Any], defaultTooltipShown = defaultTooltipShown.asInstanceOf[js.Any], delayHide = delayHide.asInstanceOf[js.Any], delayShow = delayShow.asInstanceOf[js.Any], followCursor = followCursor.asInstanceOf[js.Any], onVisibilityChange = js.Any.fromFunction0(onVisibilityChange), placement = placement.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal.asInstanceOf[js.Any])
+    if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CloseOnOutOfBoundaries]
   }
 }

@@ -14,7 +14,7 @@ trait IPFSFile extends js.Object {
 object IPFSFile {
   @scala.inline
   def apply(hash: String, path: String, size: Double, content: FileContent = null): IPFSFile = {
-    val __obj = js.Dynamic.literal(hash = hash, path = path, size = size)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPFSFile]
   }

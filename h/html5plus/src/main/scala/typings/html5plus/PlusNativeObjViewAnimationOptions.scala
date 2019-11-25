@@ -59,8 +59,8 @@ object PlusNativeObjViewAnimationOptions {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjViewAnimationOptions]
   }
 }

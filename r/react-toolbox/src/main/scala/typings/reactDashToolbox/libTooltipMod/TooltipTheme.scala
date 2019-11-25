@@ -23,9 +23,9 @@ object TooltipTheme {
   @scala.inline
   def apply(tooltip: String = null, tooltipActive: String = null, tooltipWrapper: String = null): TooltipTheme = {
     val __obj = js.Dynamic.literal()
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipActive != null) __obj.updateDynamic("tooltipActive")(tooltipActive)
-    if (tooltipWrapper != null) __obj.updateDynamic("tooltipWrapper")(tooltipWrapper)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipActive != null) __obj.updateDynamic("tooltipActive")(tooltipActive.asInstanceOf[js.Any])
+    if (tooltipWrapper != null) __obj.updateDynamic("tooltipWrapper")(tooltipWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipTheme]
   }
 }

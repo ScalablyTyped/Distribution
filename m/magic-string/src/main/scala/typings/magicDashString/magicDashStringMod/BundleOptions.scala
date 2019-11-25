@@ -13,8 +13,8 @@ object BundleOptions {
   @scala.inline
   def apply(intro: String = null, separator: String = null): BundleOptions = {
     val __obj = js.Dynamic.literal()
-    if (intro != null) __obj.updateDynamic("intro")(intro)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (intro != null) __obj.updateDynamic("intro")(intro.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleOptions]
   }
 }

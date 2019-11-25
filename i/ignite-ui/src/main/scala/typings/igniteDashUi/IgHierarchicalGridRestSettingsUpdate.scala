@@ -36,10 +36,10 @@ object IgHierarchicalGridRestSettingsUpdate {
     url: String = null
   ): IgHierarchicalGridRestSettingsUpdate = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgHierarchicalGridRestSettingsUpdate]
   }
 }

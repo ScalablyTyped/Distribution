@@ -18,9 +18,9 @@ object AddditionalExportOptions {
     rowGroups: js.UndefOr[Boolean] = js.undefined
   ): AddditionalExportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columnCalcs)) __obj.updateDynamic("columnCalcs")(columnCalcs)
-    if (!js.isUndefined(columnGroups)) __obj.updateDynamic("columnGroups")(columnGroups)
-    if (!js.isUndefined(rowGroups)) __obj.updateDynamic("rowGroups")(rowGroups)
+    if (!js.isUndefined(columnCalcs)) __obj.updateDynamic("columnCalcs")(columnCalcs.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnGroups)) __obj.updateDynamic("columnGroups")(columnGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowGroups)) __obj.updateDynamic("rowGroups")(rowGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddditionalExportOptions]
   }
 }

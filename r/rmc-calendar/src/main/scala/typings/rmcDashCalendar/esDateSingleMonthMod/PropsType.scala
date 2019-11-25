@@ -28,7 +28,7 @@ object PropsType {
     onCellClick: (/* data */ CellData, /* monthData */ MonthData) => Unit = null,
     rowSize: normal | xl = null
   ): PropsType = {
-    val __obj = js.Dynamic.literal(locale = locale, monthData = monthData)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], monthData = monthData.asInstanceOf[js.Any])
     if (getDateExtra != null) __obj.updateDynamic("getDateExtra")(js.Any.fromFunction1(getDateExtra))
     if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2(onCellClick))
     if (rowSize != null) __obj.updateDynamic("rowSize")(rowSize.asInstanceOf[js.Any])

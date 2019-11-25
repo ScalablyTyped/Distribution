@@ -58,15 +58,15 @@ object SquirrelWindowsOptions {
     useAppIdAsId: js.UndefOr[Boolean] = js.undefined
   ): SquirrelWindowsOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (loadingGif != null) __obj.updateDynamic("loadingGif")(loadingGif)
-    if (!js.isUndefined(msi)) __obj.updateDynamic("msi")(msi)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
+    if (loadingGif != null) __obj.updateDynamic("loadingGif")(loadingGif.asInstanceOf[js.Any])
+    if (!js.isUndefined(msi)) __obj.updateDynamic("msi")(msi.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (remoteReleases != null) __obj.updateDynamic("remoteReleases")(remoteReleases.asInstanceOf[js.Any])
-    if (remoteToken != null) __obj.updateDynamic("remoteToken")(remoteToken)
-    if (!js.isUndefined(useAppIdAsId)) __obj.updateDynamic("useAppIdAsId")(useAppIdAsId)
+    if (remoteToken != null) __obj.updateDynamic("remoteToken")(remoteToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAppIdAsId)) __obj.updateDynamic("useAppIdAsId")(useAppIdAsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SquirrelWindowsOptions]
   }
 }

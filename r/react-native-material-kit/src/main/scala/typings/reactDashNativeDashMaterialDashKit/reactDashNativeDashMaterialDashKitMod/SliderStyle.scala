@@ -13,8 +13,8 @@ object SliderStyle {
   @scala.inline
   def apply(lowerTrackColor: String = null, upperTrackColor: String = null): SliderStyle = {
     val __obj = js.Dynamic.literal()
-    if (lowerTrackColor != null) __obj.updateDynamic("lowerTrackColor")(lowerTrackColor)
-    if (upperTrackColor != null) __obj.updateDynamic("upperTrackColor")(upperTrackColor)
+    if (lowerTrackColor != null) __obj.updateDynamic("lowerTrackColor")(lowerTrackColor.asInstanceOf[js.Any])
+    if (upperTrackColor != null) __obj.updateDynamic("upperTrackColor")(upperTrackColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderStyle]
   }
 }

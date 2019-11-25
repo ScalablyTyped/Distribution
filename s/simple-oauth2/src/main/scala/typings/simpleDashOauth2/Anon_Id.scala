@@ -18,9 +18,9 @@ trait Anon_Id[ClientIdName /* <: String */] extends js.Object {
 object Anon_Id {
   @scala.inline
   def apply[ClientIdName /* <: String */](id: String, secret: String, idParamName: ClientIdName = null, secretParamName: String = null): Anon_Id[ClientIdName] = {
-    val __obj = js.Dynamic.literal(id = id, secret = secret)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     if (idParamName != null) __obj.updateDynamic("idParamName")(idParamName.asInstanceOf[js.Any])
-    if (secretParamName != null) __obj.updateDynamic("secretParamName")(secretParamName)
+    if (secretParamName != null) __obj.updateDynamic("secretParamName")(secretParamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Id[ClientIdName]]
   }
 }

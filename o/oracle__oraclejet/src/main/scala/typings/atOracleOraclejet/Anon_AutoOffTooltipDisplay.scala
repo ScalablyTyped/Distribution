@@ -14,7 +14,7 @@ trait Anon_AutoOffTooltipDisplay extends js.Object {
 object Anon_AutoOffTooltipDisplay {
   @scala.inline
   def apply(tooltipDisplay: off | auto, tooltipLabel: String): Anon_AutoOffTooltipDisplay = {
-    val __obj = js.Dynamic.literal(tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], tooltipLabel = tooltipLabel)
+    val __obj = js.Dynamic.literal(tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], tooltipLabel = tooltipLabel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoOffTooltipDisplay]
   }

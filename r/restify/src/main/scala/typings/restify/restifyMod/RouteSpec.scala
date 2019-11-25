@@ -15,9 +15,9 @@ trait RouteSpec extends js.Object {
 object RouteSpec {
   @scala.inline
   def apply(method: String, path: String | RegExp, name: String = null, versions: js.Array[String] = null): RouteSpec = {
-    val __obj = js.Dynamic.literal(method = method, path = path.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (versions != null) __obj.updateDynamic("versions")(versions)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpec]
   }
 }

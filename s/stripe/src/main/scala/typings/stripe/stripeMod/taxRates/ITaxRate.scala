@@ -69,12 +69,12 @@ object ITaxRate {
     jurisdiction: String = null,
     percentage: Int | Double = null
   ): ITaxRate = {
-    val __obj = js.Dynamic.literal(active = active, id = id, inclusive = inclusive, livemode = livemode, metadata = metadata)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (display_name != null) __obj.updateDynamic("display_name")(display_name)
-    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (display_name != null) __obj.updateDynamic("display_name")(display_name.asInstanceOf[js.Any])
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction.asInstanceOf[js.Any])
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITaxRate]
   }

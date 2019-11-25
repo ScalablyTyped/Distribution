@@ -14,8 +14,8 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(name: String, context: CredstashContext = null, limit: Int | Double = null): Anon_Context = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context]
   }

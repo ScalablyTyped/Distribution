@@ -31,12 +31,12 @@ object AudioListing {
     status: String = null
   ): AudioListing = {
     val __obj = js.Dynamic.literal()
-    if (audio != null) __obj.updateDynamic("audio")(audio)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (details != null) __obj.updateDynamic("details")(details)
+    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioListing]
   }
 }

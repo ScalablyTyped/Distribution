@@ -31,12 +31,12 @@ object GroupOptions {
     visible: js.UndefOr[Boolean] = js.undefined
   ): GroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (addTo != null) __obj.updateDynamic("addTo")(addTo)
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate)
+    if (addTo != null) __obj.updateDynamic("addTo")(addTo.asInstanceOf[js.Any])
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate)
-    if (!js.isUndefined(updateSort)) __obj.updateDynamic("updateSort")(updateSort)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateSort)) __obj.updateDynamic("updateSort")(updateSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupOptions]
   }
 }

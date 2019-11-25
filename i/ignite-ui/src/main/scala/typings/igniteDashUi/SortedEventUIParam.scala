@@ -27,9 +27,9 @@ object SortedEventUIParam {
     sortDirections: js.Array[_] = null
   ): SortedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (appliedSortDirections != null) __obj.updateDynamic("appliedSortDirections")(appliedSortDirections)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections)
+    if (appliedSortDirections != null) __obj.updateDynamic("appliedSortDirections")(appliedSortDirections.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortedEventUIParam]
   }
 }

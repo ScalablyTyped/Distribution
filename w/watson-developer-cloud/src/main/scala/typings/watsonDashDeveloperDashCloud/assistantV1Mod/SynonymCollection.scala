@@ -15,7 +15,7 @@ trait SynonymCollection extends js.Object {
 object SynonymCollection {
   @scala.inline
   def apply(pagination: Pagination, synonyms: js.Array[Synonym]): SynonymCollection = {
-    val __obj = js.Dynamic.literal(pagination = pagination, synonyms = synonyms)
+    val __obj = js.Dynamic.literal(pagination = pagination.asInstanceOf[js.Any], synonyms = synonyms.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SynonymCollection]
   }

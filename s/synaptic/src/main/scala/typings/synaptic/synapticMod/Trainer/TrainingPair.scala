@@ -12,7 +12,7 @@ trait TrainingPair extends js.Object {
 object TrainingPair {
   @scala.inline
   def apply(input: js.Array[Double], output: js.Array[Double]): TrainingPair = {
-    val __obj = js.Dynamic.literal(input = input, output = output)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TrainingPair]
   }

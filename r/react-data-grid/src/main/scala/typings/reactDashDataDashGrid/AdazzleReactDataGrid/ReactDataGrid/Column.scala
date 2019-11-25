@@ -121,20 +121,20 @@ object Column {
     sortable: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null
   ): Column[T] = {
-    val __obj = js.Dynamic.literal(key = key, name = name)
-    if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (filterRenderer != null) __obj.updateDynamic("filterRenderer")(filterRenderer.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable)
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (getRowMetaData != null) __obj.updateDynamic("getRowMetaData")(js.Any.fromFunction2(getRowMetaData))
     if (headerRenderer != null) __obj.updateDynamic("headerRenderer")(headerRenderer.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column[T]]
   }

@@ -16,9 +16,9 @@ trait ICacheArgs extends js.Object {
 object ICacheArgs {
   @scala.inline
   def apply(cacheKey: String, childrenOf: Int | Double = null, section: String = null): ICacheArgs = {
-    val __obj = js.Dynamic.literal(cacheKey = cacheKey)
+    val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any])
     if (childrenOf != null) __obj.updateDynamic("childrenOf")(childrenOf.asInstanceOf[js.Any])
-    if (section != null) __obj.updateDynamic("section")(section)
+    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICacheArgs]
   }
 }

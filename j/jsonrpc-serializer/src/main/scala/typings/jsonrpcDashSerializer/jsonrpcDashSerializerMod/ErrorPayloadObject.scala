@@ -20,10 +20,10 @@ object ErrorPayloadObject {
     params: js.Any = null,
     result: js.Any = null
   ): ErrorPayloadObject = {
-    val __obj = js.Dynamic.literal(error = error, id = id.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (result != null) __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorPayloadObject]
   }
 }

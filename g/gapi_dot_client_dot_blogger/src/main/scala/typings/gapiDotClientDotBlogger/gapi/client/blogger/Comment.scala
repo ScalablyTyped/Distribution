@@ -47,17 +47,17 @@ object Comment {
     updated: String = null
   ): Comment = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (blog != null) __obj.updateDynamic("blog")(blog)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (published != null) __obj.updateDynamic("published")(published)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (blog != null) __obj.updateDynamic("blog")(blog.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

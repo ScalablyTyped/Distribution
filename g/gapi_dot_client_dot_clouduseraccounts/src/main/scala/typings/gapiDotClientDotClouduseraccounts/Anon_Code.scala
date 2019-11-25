@@ -17,9 +17,9 @@ object Anon_Code {
   @scala.inline
   def apply(code: String = null, location: String = null, message: String = null): Anon_Code = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Code]
   }
 }

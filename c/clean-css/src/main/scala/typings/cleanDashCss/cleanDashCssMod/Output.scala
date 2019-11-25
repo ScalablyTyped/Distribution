@@ -40,7 +40,7 @@ object Output {
     styles: String,
     warnings: js.Array[String]
   ): Output = {
-    val __obj = js.Dynamic.literal(errors = errors, sourceMap = sourceMap, stats = stats, styles = styles, warnings = warnings)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], sourceMap = sourceMap.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Output]
   }

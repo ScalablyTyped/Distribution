@@ -23,9 +23,9 @@ object FromCognitoIdentityParameters {
     customRoleArn: String = null,
     logins: Logins = null
   ): FromCognitoIdentityParameters = {
-    val __obj = js.Dynamic.literal(client = client, identityId = identityId)
-    if (customRoleArn != null) __obj.updateDynamic("customRoleArn")(customRoleArn)
-    if (logins != null) __obj.updateDynamic("logins")(logins)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], identityId = identityId.asInstanceOf[js.Any])
+    if (customRoleArn != null) __obj.updateDynamic("customRoleArn")(customRoleArn.asInstanceOf[js.Any])
+    if (logins != null) __obj.updateDynamic("logins")(logins.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromCognitoIdentityParameters]
   }
 }

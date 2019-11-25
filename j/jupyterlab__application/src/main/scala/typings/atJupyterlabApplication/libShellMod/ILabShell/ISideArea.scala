@@ -26,9 +26,9 @@ trait ISideArea extends js.Object {
 object ISideArea {
   @scala.inline
   def apply(collapsed: Boolean, currentWidget: Widget = null, widgets: js.Array[Widget] = null): ISideArea = {
-    val __obj = js.Dynamic.literal(collapsed = collapsed)
-    if (currentWidget != null) __obj.updateDynamic("currentWidget")(currentWidget)
-    if (widgets != null) __obj.updateDynamic("widgets")(widgets)
+    val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any])
+    if (currentWidget != null) __obj.updateDynamic("currentWidget")(currentWidget.asInstanceOf[js.Any])
+    if (widgets != null) __obj.updateDynamic("widgets")(widgets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISideArea]
   }
 }

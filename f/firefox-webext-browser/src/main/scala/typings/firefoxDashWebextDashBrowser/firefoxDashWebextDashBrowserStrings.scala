@@ -736,7 +736,7 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait isArticle extends UpdatePropertyName
   
   @js.native
-  sealed trait isarticle extends UpdatePropertyName
+  sealed trait isarticle_ extends UpdatePropertyName
   
   @js.native
   sealed trait java extends ProfilerFeature
@@ -1845,7 +1845,7 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def isArticle: isArticle = "isArticle".asInstanceOf[isArticle]
   @scala.inline
-  def isarticle: isarticle = "isarticle".asInstanceOf[isarticle]
+  def isarticle_ : isarticle_ = "isarticle".asInstanceOf[isarticle_]
   @scala.inline
   def java: java = "java".asInstanceOf[java]
   @scala.inline

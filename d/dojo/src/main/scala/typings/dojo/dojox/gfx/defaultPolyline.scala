@@ -26,8 +26,8 @@ trait defaultPolyline extends js.Object {
 object defaultPolyline {
   @scala.inline
   def apply(points: js.Array[_], `type`: String): defaultPolyline = {
-    val __obj = js.Dynamic.literal(points = points)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultPolyline]
   }
 }

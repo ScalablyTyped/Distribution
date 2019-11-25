@@ -24,11 +24,11 @@ object CreateFilterOptionsConfig {
     trim: js.UndefOr[Boolean] = js.undefined
   ): CreateFilterOptionsConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreAccents)) __obj.updateDynamic("ignoreAccents")(ignoreAccents)
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    if (!js.isUndefined(ignoreAccents)) __obj.updateDynamic("ignoreAccents")(ignoreAccents.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
     if (matchFrom != null) __obj.updateDynamic("matchFrom")(matchFrom.asInstanceOf[js.Any])
     if (stringify != null) __obj.updateDynamic("stringify")(js.Any.fromFunction1(stringify))
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFilterOptionsConfig]
   }
 }

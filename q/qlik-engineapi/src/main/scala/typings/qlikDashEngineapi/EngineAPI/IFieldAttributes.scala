@@ -72,7 +72,7 @@ object IFieldAttributes {
     qUseThou: Boolean,
     qnDec: Double
   ): IFieldAttributes = {
-    val __obj = js.Dynamic.literal(qDec = qDec, qFmt = qFmt, qSAFEARRAY = qSAFEARRAY, qThou = qThou, qType = qType, qUseThou = qUseThou, qnDec = qnDec)
+    val __obj = js.Dynamic.literal(qDec = qDec.asInstanceOf[js.Any], qFmt = qFmt.asInstanceOf[js.Any], qSAFEARRAY = qSAFEARRAY.asInstanceOf[js.Any], qThou = qThou.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any], qUseThou = qUseThou.asInstanceOf[js.Any], qnDec = qnDec.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFieldAttributes]
   }

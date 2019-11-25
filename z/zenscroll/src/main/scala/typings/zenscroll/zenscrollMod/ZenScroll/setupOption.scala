@@ -12,7 +12,7 @@ trait setupOption extends js.Object {
 object setupOption {
   @scala.inline
   def apply(defaultDuration: Double, edgeOffset: Double): setupOption = {
-    val __obj = js.Dynamic.literal(defaultDuration = defaultDuration, edgeOffset = edgeOffset)
+    val __obj = js.Dynamic.literal(defaultDuration = defaultDuration.asInstanceOf[js.Any], edgeOffset = edgeOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[setupOption]
   }

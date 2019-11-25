@@ -27,11 +27,11 @@ object ToneChatParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): ToneChatParams = {
-    val __obj = js.Dynamic.literal(utterances = utterances)
+    val __obj = js.Dynamic.literal(utterances = utterances.asInstanceOf[js.Any])
     if (accept_language != null) __obj.updateDynamic("accept_language")(accept_language.asInstanceOf[js.Any])
     if (content_language != null) __obj.updateDynamic("content_language")(content_language.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneChatParams]
   }
 }

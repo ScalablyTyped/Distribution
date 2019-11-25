@@ -23,9 +23,9 @@ object AppointmentDialogClosedEventUIParam {
   @scala.inline
   def apply(element: js.Any = null, isAppointmentNew: js.UndefOr[Boolean] = js.undefined, owner: js.Any = null): AppointmentDialogClosedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (!js.isUndefined(isAppointmentNew)) __obj.updateDynamic("isAppointmentNew")(isAppointmentNew)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAppointmentNew)) __obj.updateDynamic("isAppointmentNew")(isAppointmentNew.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentDialogClosedEventUIParam]
   }
 }

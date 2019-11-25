@@ -41,14 +41,14 @@ object PlannerPlan {
     title: String = null
   ): PlannerPlan = {
     val __obj = js.Dynamic.literal()
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (tasks != null) __obj.updateDynamic("tasks")(tasks)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
+    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (tasks != null) __obj.updateDynamic("tasks")(tasks.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerPlan]
   }
 }

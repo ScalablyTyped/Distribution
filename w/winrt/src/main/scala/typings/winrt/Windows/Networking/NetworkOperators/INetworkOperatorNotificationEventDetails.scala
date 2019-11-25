@@ -24,7 +24,7 @@ object INetworkOperatorNotificationEventDetails {
     ruleId: String,
     smsMessage: ISmsMessage
   ): INetworkOperatorNotificationEventDetails = {
-    val __obj = js.Dynamic.literal(encodingType = encodingType, message = message, networkAccountId = networkAccountId, notificationType = notificationType, ruleId = ruleId, smsMessage = smsMessage)
+    val __obj = js.Dynamic.literal(encodingType = encodingType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], networkAccountId = networkAccountId.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any], smsMessage = smsMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INetworkOperatorNotificationEventDetails]
   }

@@ -20,10 +20,10 @@ object ContentOwnerAdvertisingOption {
     kind: String = null
   ): ContentOwnerAdvertisingOption = {
     val __obj = js.Dynamic.literal()
-    if (allowedOptions != null) __obj.updateDynamic("allowedOptions")(allowedOptions)
-    if (claimedVideoOptions != null) __obj.updateDynamic("claimedVideoOptions")(claimedVideoOptions)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (allowedOptions != null) __obj.updateDynamic("allowedOptions")(allowedOptions.asInstanceOf[js.Any])
+    if (claimedVideoOptions != null) __obj.updateDynamic("claimedVideoOptions")(claimedVideoOptions.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentOwnerAdvertisingOption]
   }
 }

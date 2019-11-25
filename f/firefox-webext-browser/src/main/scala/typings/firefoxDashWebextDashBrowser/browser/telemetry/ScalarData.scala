@@ -25,10 +25,10 @@ object ScalarData {
     keyed: js.UndefOr[Boolean] = js.undefined,
     record_on_release: js.UndefOr[Boolean] = js.undefined
   ): ScalarData = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    if (!js.isUndefined(expired)) __obj.updateDynamic("expired")(expired)
-    if (!js.isUndefined(keyed)) __obj.updateDynamic("keyed")(keyed)
-    if (!js.isUndefined(record_on_release)) __obj.updateDynamic("record_on_release")(record_on_release)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(expired)) __obj.updateDynamic("expired")(expired.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyed)) __obj.updateDynamic("keyed")(keyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(record_on_release)) __obj.updateDynamic("record_on_release")(record_on_release.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalarData]
   }
 }

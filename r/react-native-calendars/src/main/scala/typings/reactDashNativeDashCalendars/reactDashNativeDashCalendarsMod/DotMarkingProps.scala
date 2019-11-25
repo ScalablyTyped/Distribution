@@ -14,8 +14,8 @@ trait DotMarkingProps extends _CalendarMarkingProps {
 object DotMarkingProps {
   @scala.inline
   def apply(markedDates: StringDictionary[DotMarking], markingType: simple = null): DotMarkingProps = {
-    val __obj = js.Dynamic.literal(markedDates = markedDates)
-    if (markingType != null) __obj.updateDynamic("markingType")(markingType)
+    val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any])
+    if (markingType != null) __obj.updateDynamic("markingType")(markingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotMarkingProps]
   }
 }

@@ -18,9 +18,9 @@ object Config {
     remove: js.UndefOr[Boolean] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (browsers != null) __obj.updateDynamic("browsers")(browsers)
-    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (browsers != null) __obj.updateDynamic("browsers")(browsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

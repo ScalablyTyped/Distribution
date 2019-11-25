@@ -32,7 +32,7 @@ trait ISerachFieldMatch extends js.Object {
 object ISerachFieldMatch {
   @scala.inline
   def apply(qField: Double, qNoOfMatches: Double, qTerms: js.Array[Double], qValues: js.Array[Double]): ISerachFieldMatch = {
-    val __obj = js.Dynamic.literal(qField = qField, qNoOfMatches = qNoOfMatches, qTerms = qTerms, qValues = qValues)
+    val __obj = js.Dynamic.literal(qField = qField.asInstanceOf[js.Any], qNoOfMatches = qNoOfMatches.asInstanceOf[js.Any], qTerms = qTerms.asInstanceOf[js.Any], qValues = qValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISerachFieldMatch]
   }

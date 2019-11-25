@@ -30,13 +30,13 @@ object webdriverioStrings {
   sealed trait dragAndDrop extends js.Object
   
   @js.native
-  sealed trait element extends js.Object
-  
-  @js.native
   sealed trait `element-6066-11e4-a52e-4f735466cecf` extends js.Object
   
   @js.native
   sealed trait elementId extends js.Object
+  
+  @js.native
+  sealed trait element_ extends js.Object
   
   @js.native
   sealed trait options extends js.Object
@@ -67,11 +67,11 @@ object webdriverioStrings {
   @scala.inline
   def dragAndDrop: dragAndDrop = "dragAndDrop".asInstanceOf[dragAndDrop]
   @scala.inline
-  def element: element = "element".asInstanceOf[element]
-  @scala.inline
   def `element-6066-11e4-a52e-4f735466cecf`: `element-6066-11e4-a52e-4f735466cecf` = "element-6066-11e4-a52e-4f735466cecf".asInstanceOf[`element-6066-11e4-a52e-4f735466cecf`]
   @scala.inline
   def elementId: elementId = "elementId".asInstanceOf[elementId]
+  @scala.inline
+  def element_ : element_ = "element".asInstanceOf[element_]
   @scala.inline
   def options: options = "options".asInstanceOf[options]
   @scala.inline

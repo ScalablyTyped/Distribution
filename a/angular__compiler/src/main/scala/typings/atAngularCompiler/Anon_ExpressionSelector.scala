@@ -12,7 +12,7 @@ trait Anon_ExpressionSelector extends js.Object {
 object Anon_ExpressionSelector {
   @scala.inline
   def apply(expression: js.Any, selector: String): Anon_ExpressionSelector = {
-    val __obj = js.Dynamic.literal(expression = expression, selector = selector)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExpressionSelector]
   }

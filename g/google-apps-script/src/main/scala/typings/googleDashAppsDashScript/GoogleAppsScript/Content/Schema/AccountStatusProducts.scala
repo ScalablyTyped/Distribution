@@ -22,11 +22,11 @@ object AccountStatusProducts {
     statistics: AccountStatusStatistics = null
   ): AccountStatusProducts = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (itemLevelIssues != null) __obj.updateDynamic("itemLevelIssues")(itemLevelIssues)
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (itemLevelIssues != null) __obj.updateDynamic("itemLevelIssues")(itemLevelIssues.asInstanceOf[js.Any])
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountStatusProducts]
   }
 }

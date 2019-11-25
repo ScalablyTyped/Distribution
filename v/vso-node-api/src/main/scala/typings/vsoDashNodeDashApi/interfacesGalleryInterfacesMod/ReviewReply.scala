@@ -52,7 +52,7 @@ object ReviewReply {
     updatedDate: Date,
     userId: String
   ): ReviewReply = {
-    val __obj = js.Dynamic.literal(id = id, isDeleted = isDeleted, productVersion = productVersion, replyText = replyText, reviewId = reviewId, title = title, updatedDate = updatedDate, userId = userId)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isDeleted = isDeleted.asInstanceOf[js.Any], productVersion = productVersion.asInstanceOf[js.Any], replyText = replyText.asInstanceOf[js.Any], reviewId = reviewId.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReviewReply]
   }

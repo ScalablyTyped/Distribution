@@ -19,8 +19,8 @@ object GoogleActionsV2OrdersOrderLocation {
   @scala.inline
   def apply(location: GoogleActionsV2Location = null, `type`: GoogleActionsV2OrdersOrderLocationType = null): GoogleActionsV2OrdersOrderLocation = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderLocation]
   }
 }

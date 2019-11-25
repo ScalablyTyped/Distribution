@@ -30,10 +30,10 @@ object ICardPaymentMethod {
     billing_details: Anon_AddressEmail = null,
     customer: String | ICustomer = null
   ): ICardPaymentMethod = {
-    val __obj = js.Dynamic.literal(card = card, created = created, id = id, livemode = livemode, metadata = metadata)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
-    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details)
+    val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICardPaymentMethod]
   }

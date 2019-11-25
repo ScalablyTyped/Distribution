@@ -20,8 +20,8 @@ object Anon_AuthorizationUrlRefreshUrl {
     tokenUrl: String,
     refreshUrl: String = null
   ): Anon_AuthorizationUrlRefreshUrl = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, scopes = scopes, tokenUrl = tokenUrl)
-    if (refreshUrl != null) __obj.updateDynamic("refreshUrl")(refreshUrl)
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
+    if (refreshUrl != null) __obj.updateDynamic("refreshUrl")(refreshUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthorizationUrlRefreshUrl]
   }
 }

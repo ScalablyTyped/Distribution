@@ -24,9 +24,9 @@ object NewPermissionsEvent {
     requestedPermissions: js.Array[String] = null
   ): NewPermissionsEvent = {
     val __obj = js.Dynamic.literal()
-    if (approvedPermissions != null) __obj.updateDynamic("approvedPermissions")(approvedPermissions)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (requestedPermissions != null) __obj.updateDynamic("requestedPermissions")(requestedPermissions)
+    if (approvedPermissions != null) __obj.updateDynamic("approvedPermissions")(approvedPermissions.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (requestedPermissions != null) __obj.updateDynamic("requestedPermissions")(requestedPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewPermissionsEvent]
   }
 }

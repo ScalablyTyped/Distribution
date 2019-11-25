@@ -27,8 +27,8 @@ object SetTypings {
     typings_ : js.Array[String],
     unresolvedImports: SortedReadonlyArray[String]
   ): SetTypings = {
-    val __obj = js.Dynamic.literal(compilerOptions = compilerOptions, kind = kind, projectName = projectName, typeAcquisition = typeAcquisition, unresolvedImports = unresolvedImports)
-    __obj.updateDynamic("typings")(typings_)
+    val __obj = js.Dynamic.literal(compilerOptions = compilerOptions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], typeAcquisition = typeAcquisition.asInstanceOf[js.Any], unresolvedImports = unresolvedImports.asInstanceOf[js.Any])
+    __obj.updateDynamic("typings")(typings_.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTypings]
   }
 }

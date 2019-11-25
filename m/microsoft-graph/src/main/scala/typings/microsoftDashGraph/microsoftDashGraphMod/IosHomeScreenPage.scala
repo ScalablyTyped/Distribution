@@ -15,8 +15,8 @@ object IosHomeScreenPage {
   @scala.inline
   def apply(displayName: String = null, icons: js.Array[IosHomeScreenItem] = null): IosHomeScreenPage = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosHomeScreenPage]
   }
 }

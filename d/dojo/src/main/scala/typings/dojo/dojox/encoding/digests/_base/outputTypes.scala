@@ -32,7 +32,7 @@ trait outputTypes extends js.Object {
 object outputTypes {
   @scala.inline
   def apply(Base64: Double, Hex: Double, Raw: Double, String: Double): outputTypes = {
-    val __obj = js.Dynamic.literal(Base64 = Base64, Hex = Hex, Raw = Raw, String = String)
+    val __obj = js.Dynamic.literal(Base64 = Base64.asInstanceOf[js.Any], Hex = Hex.asInstanceOf[js.Any], Raw = Raw.asInstanceOf[js.Any], String = String.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[outputTypes]
   }

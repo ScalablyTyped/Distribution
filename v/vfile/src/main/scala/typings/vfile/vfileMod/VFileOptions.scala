@@ -32,15 +32,15 @@ object VFileOptions {
     stem: String = null
   ): VFileOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (basename != null) __obj.updateDynamic("basename")(basename)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (dirname != null) __obj.updateDynamic("dirname")(dirname)
-    if (extname != null) __obj.updateDynamic("extname")(extname)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (stem != null) __obj.updateDynamic("stem")(stem)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dirname != null) __obj.updateDynamic("dirname")(dirname.asInstanceOf[js.Any])
+    if (extname != null) __obj.updateDynamic("extname")(extname.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (stem != null) __obj.updateDynamic("stem")(stem.asInstanceOf[js.Any])
     __obj.asInstanceOf[VFileOptions]
   }
 }

@@ -50,7 +50,7 @@ object ManagedFieldsEntry {
     operation: String,
     time: String
   ): ManagedFieldsEntry = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, fieldsType = fieldsType, fieldsV1 = fieldsV1, manager = manager, operation = operation, time = time)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], fieldsType = fieldsType.asInstanceOf[js.Any], fieldsV1 = fieldsV1.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ManagedFieldsEntry]
   }

@@ -25,9 +25,9 @@ object LegacyItem {
     revision: Int | Double = null,
     selection: Anon_StoryId = null
   ): LegacyItem = {
-    val __obj = js.Dynamic.literal(fileName = fileName, index = index, kind = kind, stories = stories)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
     if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegacyItem]
   }
 }

@@ -24,12 +24,12 @@ object OktaOpenIDOptions {
     state: String = null
   ): OktaOpenIDOptions = {
     val __obj = js.Dynamic.literal()
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
-    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[OktaOpenIDOptions]
   }
 }

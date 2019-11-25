@@ -27,9 +27,9 @@ object DimensionProperties {
     pixelSize: Int | Double = null
   ): DimensionProperties = {
     val __obj = js.Dynamic.literal()
-    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata)
-    if (!js.isUndefined(hiddenByFilter)) __obj.updateDynamic("hiddenByFilter")(hiddenByFilter)
-    if (!js.isUndefined(hiddenByUser)) __obj.updateDynamic("hiddenByUser")(hiddenByUser)
+    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(hiddenByFilter)) __obj.updateDynamic("hiddenByFilter")(hiddenByFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(hiddenByUser)) __obj.updateDynamic("hiddenByUser")(hiddenByUser.asInstanceOf[js.Any])
     if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionProperties]
   }

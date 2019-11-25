@@ -15,8 +15,8 @@ object StreamingSideInputLocation {
   @scala.inline
   def apply(stateFamily: String = null, tag: String = null): StreamingSideInputLocation = {
     val __obj = js.Dynamic.literal()
-    if (stateFamily != null) __obj.updateDynamic("stateFamily")(stateFamily)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (stateFamily != null) __obj.updateDynamic("stateFamily")(stateFamily.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingSideInputLocation]
   }
 }

@@ -31,12 +31,12 @@ object MessageInput {
     text: String = null
   ): MessageInput = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (intents != null) __obj.updateDynamic("intents")(intents)
-    if (message_type != null) __obj.updateDynamic("message_type")(message_type)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (suggestion_id != null) __obj.updateDynamic("suggestion_id")(suggestion_id)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (message_type != null) __obj.updateDynamic("message_type")(message_type.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (suggestion_id != null) __obj.updateDynamic("suggestion_id")(suggestion_id.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageInput]
   }
 }

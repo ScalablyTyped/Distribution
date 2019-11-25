@@ -27,9 +27,9 @@ object MapTask {
     systemName: String = null
   ): MapTask = {
     val __obj = js.Dynamic.literal()
-    if (instructions != null) __obj.updateDynamic("instructions")(instructions)
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName)
-    if (systemName != null) __obj.updateDynamic("systemName")(systemName)
+    if (instructions != null) __obj.updateDynamic("instructions")(instructions.asInstanceOf[js.Any])
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    if (systemName != null) __obj.updateDynamic("systemName")(systemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTask]
   }
 }

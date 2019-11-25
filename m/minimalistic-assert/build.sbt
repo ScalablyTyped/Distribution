@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "minimalistic-assert"
-version := "1.0-dt-20191002Z-a73f92"
+version := "1.0-dt-20191002Z-504091"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

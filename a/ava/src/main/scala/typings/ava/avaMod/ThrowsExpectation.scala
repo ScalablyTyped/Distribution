@@ -30,10 +30,10 @@ object ThrowsExpectation {
   ): ThrowsExpectation = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (instanceOf != null) __obj.updateDynamic("instanceOf")(instanceOf)
-    if (is != null) __obj.updateDynamic("is")(is)
+    if (instanceOf != null) __obj.updateDynamic("instanceOf")(instanceOf.asInstanceOf[js.Any])
+    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrowsExpectation]
   }
 }

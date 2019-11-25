@@ -16,9 +16,9 @@ object IGetFilesOptions {
   @scala.inline
   def apply(filter: String = null, format: json | zip = null, path: String = null): IGetFilesOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetFilesOptions]
   }
 }

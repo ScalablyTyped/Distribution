@@ -19,8 +19,8 @@ object LogRecord {
     format: js.UndefOr[Boolean] = js.undefined,
     level: Int | Double = null
   ): LogRecord = {
-    val __obj = js.Dynamic.literal(logger = logger, msg = msg)
-    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogRecord]
   }

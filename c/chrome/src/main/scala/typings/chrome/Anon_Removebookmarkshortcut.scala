@@ -16,8 +16,8 @@ object Anon_Removebookmarkshortcut {
     remove_button: js.UndefOr[Boolean] = js.undefined
   ): Anon_Removebookmarkshortcut = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(remove_bookmark_shortcut)) __obj.updateDynamic("remove_bookmark_shortcut")(remove_bookmark_shortcut)
-    if (!js.isUndefined(remove_button)) __obj.updateDynamic("remove_button")(remove_button)
+    if (!js.isUndefined(remove_bookmark_shortcut)) __obj.updateDynamic("remove_bookmark_shortcut")(remove_bookmark_shortcut.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove_button)) __obj.updateDynamic("remove_button")(remove_button.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Removebookmarkshortcut]
   }
 }

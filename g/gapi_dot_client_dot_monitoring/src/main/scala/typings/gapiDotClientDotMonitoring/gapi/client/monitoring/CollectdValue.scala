@@ -17,9 +17,9 @@ object CollectdValue {
   @scala.inline
   def apply(dataSourceName: String = null, dataSourceType: String = null, value: TypedValue = null): CollectdValue = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceName != null) __obj.updateDynamic("dataSourceName")(dataSourceName)
-    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (dataSourceName != null) __obj.updateDynamic("dataSourceName")(dataSourceName.asInstanceOf[js.Any])
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectdValue]
   }
 }

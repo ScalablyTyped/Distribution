@@ -20,8 +20,8 @@ object RequestedData {
   @scala.inline
   def apply(animate: js.UndefOr[Boolean] = js.undefined, camera: CameraData = null, zoom: Int | Double = null): RequestedData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (camera != null) __obj.updateDynamic("camera")(camera)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestedData]
   }

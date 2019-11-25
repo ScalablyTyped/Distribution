@@ -34,9 +34,9 @@ object AnnotationsMeasureTypeCrosshairYOptions {
     zIndex: Int | Double = null
   ): AnnotationsMeasureTypeCrosshairYOptions = {
     val __obj = js.Dynamic.literal()
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd)
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsMeasureTypeCrosshairYOptions]
   }

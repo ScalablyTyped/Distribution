@@ -13,15 +13,22 @@ trait UpdateableQueryBuilder[T] extends js.Object {
   def add(`object`: Partial[T]): this.type = js.native
   def add[K /* <: String */](
     key: K,
-    value: js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+    value: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
   ): TypeMatchedValue[T, K, js.Array[_] | Set[_], this.type] = js.native
   def add[K /* <: String */](
     key: K,
-    value: StringDictionary[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+    value: StringDictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
   ): TypeMatchedValue[
     T, 
     K, 
-    Map[String, /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
+    Map[
+      String, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ], 
     this.type
   ] = js.native
   def decrement(column: String, amount: Double): this.type = js.native
@@ -31,9 +38,11 @@ trait UpdateableQueryBuilder[T] extends js.Object {
   def remove(`object`: Partial[T]): this.type = js.native
   def remove[K /* <: String */](
     key: K,
-    value: js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+    value: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
   ): this.type = js.native
   def set(`object`: Partial[T]): this.type = js.native
-  def set[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
+  def set[K /* <: String */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): this.type = js.native
 }
 

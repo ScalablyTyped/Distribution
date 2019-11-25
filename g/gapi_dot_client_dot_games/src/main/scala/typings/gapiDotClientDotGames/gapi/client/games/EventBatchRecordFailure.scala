@@ -26,9 +26,9 @@ object EventBatchRecordFailure {
   @scala.inline
   def apply(failureCause: String = null, kind: String = null, range: EventPeriodRange = null): EventBatchRecordFailure = {
     val __obj = js.Dynamic.literal()
-    if (failureCause != null) __obj.updateDynamic("failureCause")(failureCause)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (failureCause != null) __obj.updateDynamic("failureCause")(failureCause.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventBatchRecordFailure]
   }
 }

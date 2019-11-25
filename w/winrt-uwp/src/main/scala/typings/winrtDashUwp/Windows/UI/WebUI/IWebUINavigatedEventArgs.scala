@@ -13,7 +13,7 @@ trait IWebUINavigatedEventArgs extends js.Object {
 object IWebUINavigatedEventArgs {
   @scala.inline
   def apply(navigatedOperation: WebUINavigatedOperation): IWebUINavigatedEventArgs = {
-    val __obj = js.Dynamic.literal(navigatedOperation = navigatedOperation)
+    val __obj = js.Dynamic.literal(navigatedOperation = navigatedOperation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWebUINavigatedEventArgs]
   }

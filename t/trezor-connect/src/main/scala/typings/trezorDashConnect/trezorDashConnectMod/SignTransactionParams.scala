@@ -34,16 +34,16 @@ object SignTransactionParams {
     useEmptyPassphrase: js.UndefOr[Boolean] = js.undefined,
     version: Int | Double = null
   ): SignTransactionParams = {
-    val __obj = js.Dynamic.literal(coin = coin, inputs = inputs, outputs = outputs)
-    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
+    val __obj = js.Dynamic.literal(coin = coin.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice.asInstanceOf[js.Any])
     if (branchId != null) __obj.updateDynamic("branchId")(branchId.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device)
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)
+    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession.asInstanceOf[js.Any])
     if (locktime != null) __obj.updateDynamic("locktime")(locktime.asInstanceOf[js.Any])
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push)
-    if (refTxs != null) __obj.updateDynamic("refTxs")(refTxs)
-    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase)
+    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (refTxs != null) __obj.updateDynamic("refTxs")(refTxs.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignTransactionParams]
   }

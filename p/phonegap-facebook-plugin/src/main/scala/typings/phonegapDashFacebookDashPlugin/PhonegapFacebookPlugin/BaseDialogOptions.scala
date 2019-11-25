@@ -24,7 +24,7 @@ trait BaseDialogOptions extends js.Object {
 object BaseDialogOptions {
   @scala.inline
   def apply(method: String): BaseDialogOptions = {
-    val __obj = js.Dynamic.literal(method = method)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseDialogOptions]
   }

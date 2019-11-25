@@ -13,7 +13,7 @@ object Account {
   @scala.inline
   def apply(googleAuto: js.Any = null): Account = {
     val __obj = js.Dynamic.literal()
-    if (googleAuto != null) __obj.updateDynamic("googleAuto")(googleAuto)
+    if (googleAuto != null) __obj.updateDynamic("googleAuto")(googleAuto.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
 }

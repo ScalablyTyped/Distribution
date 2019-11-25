@@ -39,11 +39,11 @@ object _Redirect {
     ReplaceKeyWith: String = null
   ): _Redirect = {
     val __obj = js.Dynamic.literal()
-    if (HostName != null) __obj.updateDynamic("HostName")(HostName)
-    if (HttpRedirectCode != null) __obj.updateDynamic("HttpRedirectCode")(HttpRedirectCode)
+    if (HostName != null) __obj.updateDynamic("HostName")(HostName.asInstanceOf[js.Any])
+    if (HttpRedirectCode != null) __obj.updateDynamic("HttpRedirectCode")(HttpRedirectCode.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (ReplaceKeyPrefixWith != null) __obj.updateDynamic("ReplaceKeyPrefixWith")(ReplaceKeyPrefixWith)
-    if (ReplaceKeyWith != null) __obj.updateDynamic("ReplaceKeyWith")(ReplaceKeyWith)
+    if (ReplaceKeyPrefixWith != null) __obj.updateDynamic("ReplaceKeyPrefixWith")(ReplaceKeyPrefixWith.asInstanceOf[js.Any])
+    if (ReplaceKeyWith != null) __obj.updateDynamic("ReplaceKeyWith")(ReplaceKeyWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Redirect]
   }
 }

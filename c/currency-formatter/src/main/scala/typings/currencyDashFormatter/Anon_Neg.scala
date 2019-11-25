@@ -13,7 +13,7 @@ trait Anon_Neg extends js.Object {
 object Anon_Neg {
   @scala.inline
   def apply(neg: String, pos: String, zero: String): Anon_Neg = {
-    val __obj = js.Dynamic.literal(neg = neg, pos = pos, zero = zero)
+    val __obj = js.Dynamic.literal(neg = neg.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Neg]
   }

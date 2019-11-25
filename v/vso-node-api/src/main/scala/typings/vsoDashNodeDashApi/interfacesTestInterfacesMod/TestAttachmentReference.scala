@@ -12,7 +12,7 @@ trait TestAttachmentReference extends js.Object {
 object TestAttachmentReference {
   @scala.inline
   def apply(id: Double, url: String): TestAttachmentReference = {
-    val __obj = js.Dynamic.literal(id = id, url = url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestAttachmentReference]
   }

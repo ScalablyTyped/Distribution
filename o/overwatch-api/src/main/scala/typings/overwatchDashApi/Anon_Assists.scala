@@ -28,7 +28,7 @@ object Anon_Assists {
     miscellaneous: QuickplayCompetitiveStats,
     top_heroes: Anon_CompetitiveQuickplayAnonEliminationsperlife
   ): Anon_Assists = {
-    val __obj = js.Dynamic.literal(assists = assists, average = average, best = best, combat = combat, game = game, match_awards = match_awards, miscellaneous = miscellaneous, top_heroes = top_heroes)
+    val __obj = js.Dynamic.literal(assists = assists.asInstanceOf[js.Any], average = average.asInstanceOf[js.Any], best = best.asInstanceOf[js.Any], combat = combat.asInstanceOf[js.Any], game = game.asInstanceOf[js.Any], match_awards = match_awards.asInstanceOf[js.Any], miscellaneous = miscellaneous.asInstanceOf[js.Any], top_heroes = top_heroes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Assists]
   }

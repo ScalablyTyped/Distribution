@@ -19,8 +19,8 @@ object CommonSeriesOptionsDragSettings {
   @scala.inline
   def apply(enable: js.UndefOr[Boolean] = js.undefined, `type`: String = null): CommonSeriesOptionsDragSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonSeriesOptionsDragSettings]
   }
 }

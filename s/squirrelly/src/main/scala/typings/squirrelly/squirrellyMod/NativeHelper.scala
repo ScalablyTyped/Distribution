@@ -22,7 +22,7 @@ object NativeHelper {
     selfClosing: /* param */ js.UndefOr[String] => String = null
   ): NativeHelper = {
     val __obj = js.Dynamic.literal()
-    if (blocks != null) __obj.updateDynamic("blocks")(blocks)
+    if (blocks != null) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
     if (helperEnd != null) __obj.updateDynamic("helperEnd")(js.Any.fromFunction0(helperEnd))
     if (helperStart != null) __obj.updateDynamic("helperStart")(js.Any.fromFunction2(helperStart))
     if (selfClosing != null) __obj.updateDynamic("selfClosing")(js.Any.fromFunction1(selfClosing))

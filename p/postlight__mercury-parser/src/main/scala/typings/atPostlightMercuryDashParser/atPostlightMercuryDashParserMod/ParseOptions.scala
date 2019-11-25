@@ -23,7 +23,7 @@ object ParseOptions {
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }

@@ -28,14 +28,14 @@ object AppImageOptions {
     synopsis: String = null
   ): AppImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop)
-    if (license != null) __obj.updateDynamic("license")(license)
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis)
+    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppImageOptions]
   }
 }

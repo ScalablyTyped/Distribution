@@ -14,8 +14,8 @@ trait NullableType extends Type {
 object NullableType {
   @scala.inline
   def apply(expression: Type, prefix: Boolean, `type`: typings.doctrine.doctrineStrings.NullableType): NullableType = {
-    val __obj = js.Dynamic.literal(expression = expression, prefix = prefix)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullableType]
   }
 }

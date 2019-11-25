@@ -12,7 +12,7 @@ object FlowLock {
   @scala.inline
   def apply(locked: js.UndefOr[Boolean] = js.undefined): FlowLock = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowLock]
   }
 }

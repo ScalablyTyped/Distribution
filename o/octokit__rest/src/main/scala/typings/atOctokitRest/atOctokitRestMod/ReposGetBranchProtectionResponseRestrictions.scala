@@ -25,7 +25,7 @@ object ReposGetBranchProtectionResponseRestrictions {
     users: js.Array[ReposGetBranchProtectionResponseRestrictionsUsersItem],
     users_url: String
   ): ReposGetBranchProtectionResponseRestrictions = {
-    val __obj = js.Dynamic.literal(apps = apps, apps_url = apps_url, teams = teams, teams_url = teams_url, url = url, users = users, users_url = users_url)
+    val __obj = js.Dynamic.literal(apps = apps.asInstanceOf[js.Any], apps_url = apps_url.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], teams_url = teams_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], users_url = users_url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetBranchProtectionResponseRestrictions]
   }

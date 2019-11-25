@@ -15,7 +15,7 @@ trait NodeName extends js.Object {
 object NodeName {
   @scala.inline
   def apply(path: js.Array[String], size: Double, `type`: `object` | array): NodeName = {
-    val __obj = js.Dynamic.literal(path = path, size = size)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeName]
   }

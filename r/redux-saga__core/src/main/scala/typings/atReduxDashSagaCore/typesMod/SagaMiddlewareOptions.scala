@@ -37,9 +37,9 @@ object SagaMiddlewareOptions {
   ): SagaMiddlewareOptions[C] = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (effectMiddlewares != null) __obj.updateDynamic("effectMiddlewares")(effectMiddlewares)
+    if (effectMiddlewares != null) __obj.updateDynamic("effectMiddlewares")(effectMiddlewares.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction2(onError))
-    if (sagaMonitor != null) __obj.updateDynamic("sagaMonitor")(sagaMonitor)
+    if (sagaMonitor != null) __obj.updateDynamic("sagaMonitor")(sagaMonitor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SagaMiddlewareOptions[C]]
   }
 }

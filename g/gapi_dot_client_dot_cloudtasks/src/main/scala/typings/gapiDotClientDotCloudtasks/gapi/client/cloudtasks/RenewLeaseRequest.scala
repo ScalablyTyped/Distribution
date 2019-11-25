@@ -45,9 +45,9 @@ object RenewLeaseRequest {
   @scala.inline
   def apply(newLeaseDuration: String = null, responseView: String = null, scheduleTime: String = null): RenewLeaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (newLeaseDuration != null) __obj.updateDynamic("newLeaseDuration")(newLeaseDuration)
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    if (newLeaseDuration != null) __obj.updateDynamic("newLeaseDuration")(newLeaseDuration.asInstanceOf[js.Any])
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewLeaseRequest]
   }
 }

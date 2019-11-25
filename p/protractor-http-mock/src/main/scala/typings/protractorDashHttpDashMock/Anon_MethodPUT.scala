@@ -14,8 +14,8 @@ trait Anon_MethodPUT extends js.Object {
 object Anon_MethodPUT {
   @scala.inline
   def apply(method: PUT, path: String, regex: js.UndefOr[Boolean] = js.undefined): Anon_MethodPUT = {
-    val __obj = js.Dynamic.literal(method = method, path = path)
-    if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MethodPUT]
   }
 }

@@ -28,14 +28,14 @@ object Anon_ActiveSuggestion {
     tags: String = null
   ): Anon_ActiveSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (activeSuggestion != null) __obj.updateDynamic("activeSuggestion")(activeSuggestion)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (tagInput != null) __obj.updateDynamic("tagInput")(tagInput)
-    if (tagInputField != null) __obj.updateDynamic("tagInputField")(tagInputField)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (activeSuggestion != null) __obj.updateDynamic("activeSuggestion")(activeSuggestion.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (tagInput != null) __obj.updateDynamic("tagInput")(tagInput.asInstanceOf[js.Any])
+    if (tagInputField != null) __obj.updateDynamic("tagInputField")(tagInputField.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActiveSuggestion]
   }
 }

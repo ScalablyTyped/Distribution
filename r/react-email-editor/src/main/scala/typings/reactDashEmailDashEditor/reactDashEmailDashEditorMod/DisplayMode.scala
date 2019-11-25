@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DisplayMode extends js.Object
 
+object DisplayMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def email: typings.reactDashEmailDashEditor.reactDashEmailDashEditorStrings.email = this.cast("email")
+  @scala.inline
+  def web: typings.reactDashEmailDashEditor.reactDashEmailDashEditorStrings.web = this.cast("web")
+}
+

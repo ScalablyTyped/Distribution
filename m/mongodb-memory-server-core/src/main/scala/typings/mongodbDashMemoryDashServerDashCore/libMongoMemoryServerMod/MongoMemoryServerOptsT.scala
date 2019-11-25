@@ -25,11 +25,11 @@ object MongoMemoryServerOptsT {
     spawn: SpawnOptions = null
   ): MongoMemoryServerOptsT = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
-    if (binary != null) __obj.updateDynamic("binary")(binary)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (spawn != null) __obj.updateDynamic("spawn")(spawn)
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (spawn != null) __obj.updateDynamic("spawn")(spawn.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoMemoryServerOptsT]
   }
 }

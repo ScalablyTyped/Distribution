@@ -12,7 +12,7 @@ trait PluginArgsInstance extends js.Object {
 object PluginArgsInstance {
   @scala.inline
   def apply(instance: Ractive[Ractive[_]], proto: Ractive[Ractive[_]]): PluginArgsInstance = {
-    val __obj = js.Dynamic.literal(instance = instance, proto = proto)
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], proto = proto.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluginArgsInstance]
   }

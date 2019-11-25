@@ -20,8 +20,8 @@ object IntrospectExtras {
   @scala.inline
   def apply(clientAssertionPayload: js.Object = null, introspectBody: js.Object = null): IntrospectExtras = {
     val __obj = js.Dynamic.literal()
-    if (clientAssertionPayload != null) __obj.updateDynamic("clientAssertionPayload")(clientAssertionPayload)
-    if (introspectBody != null) __obj.updateDynamic("introspectBody")(introspectBody)
+    if (clientAssertionPayload != null) __obj.updateDynamic("clientAssertionPayload")(clientAssertionPayload.asInstanceOf[js.Any])
+    if (introspectBody != null) __obj.updateDynamic("introspectBody")(introspectBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectExtras]
   }
 }

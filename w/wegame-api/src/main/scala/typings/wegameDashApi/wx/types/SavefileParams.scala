@@ -23,10 +23,10 @@ object SavefileParams {
     filePath: String = null,
     success: /* res */ Anon_SavedFilePath => Unit = null
   ): SavefileParams = {
-    val __obj = js.Dynamic.literal(tempFilePath = tempFilePath)
+    val __obj = js.Dynamic.literal(tempFilePath = tempFilePath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[SavefileParams]
   }

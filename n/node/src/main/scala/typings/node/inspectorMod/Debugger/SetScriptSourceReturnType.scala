@@ -41,11 +41,11 @@ object SetScriptSourceReturnType {
     stackChanged: js.UndefOr[Boolean] = js.undefined
   ): SetScriptSourceReturnType = {
     val __obj = js.Dynamic.literal()
-    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace)
-    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId)
-    if (callFrames != null) __obj.updateDynamic("callFrames")(callFrames)
-    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
-    if (!js.isUndefined(stackChanged)) __obj.updateDynamic("stackChanged")(stackChanged)
+    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace.asInstanceOf[js.Any])
+    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId.asInstanceOf[js.Any])
+    if (callFrames != null) __obj.updateDynamic("callFrames")(callFrames.asInstanceOf[js.Any])
+    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails.asInstanceOf[js.Any])
+    if (!js.isUndefined(stackChanged)) __obj.updateDynamic("stackChanged")(stackChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScriptSourceReturnType]
   }
 }

@@ -21,9 +21,9 @@ object ExecutionStageState {
     executionStageState: String = null
   ): ExecutionStageState = {
     val __obj = js.Dynamic.literal()
-    if (currentStateTime != null) __obj.updateDynamic("currentStateTime")(currentStateTime)
-    if (executionStageName != null) __obj.updateDynamic("executionStageName")(executionStageName)
-    if (executionStageState != null) __obj.updateDynamic("executionStageState")(executionStageState)
+    if (currentStateTime != null) __obj.updateDynamic("currentStateTime")(currentStateTime.asInstanceOf[js.Any])
+    if (executionStageName != null) __obj.updateDynamic("executionStageName")(executionStageName.asInstanceOf[js.Any])
+    if (executionStageState != null) __obj.updateDynamic("executionStageState")(executionStageState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionStageState]
   }
 }

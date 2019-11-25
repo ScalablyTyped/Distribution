@@ -23,7 +23,7 @@ object Anon_ErrorFailed {
     pending: Double,
     succeeded: Double
   ): Anon_ErrorFailed = {
-    val __obj = js.Dynamic.literal(error = error, failed = failed, notApplicable = notApplicable, notSet = notSet, pending = pending, succeeded = succeeded)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], notApplicable = notApplicable.asInstanceOf[js.Any], notSet = notSet.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ErrorFailed]
   }

@@ -12,7 +12,7 @@ object GaDataDataTableRows {
   @scala.inline
   def apply(c: js.Array[GaDataDataTableRowsC] = null): GaDataDataTableRows = {
     val __obj = js.Dynamic.literal()
-    if (c != null) __obj.updateDynamic("c")(c)
+    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
     __obj.asInstanceOf[GaDataDataTableRows]
   }
 }

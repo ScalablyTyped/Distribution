@@ -25,10 +25,10 @@ object ITunesConnectAnalytics {
   @scala.inline
   def apply(at: String = null, ct: String = null, mt: String = null, pt: String = null): ITunesConnectAnalytics = {
     val __obj = js.Dynamic.literal()
-    if (at != null) __obj.updateDynamic("at")(at)
-    if (ct != null) __obj.updateDynamic("ct")(ct)
-    if (mt != null) __obj.updateDynamic("mt")(mt)
-    if (pt != null) __obj.updateDynamic("pt")(pt)
+    if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
+    if (ct != null) __obj.updateDynamic("ct")(ct.asInstanceOf[js.Any])
+    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
+    if (pt != null) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITunesConnectAnalytics]
   }
 }

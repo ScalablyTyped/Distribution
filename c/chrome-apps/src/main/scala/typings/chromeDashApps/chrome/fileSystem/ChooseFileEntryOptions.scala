@@ -31,10 +31,10 @@ object ChooseFileEntryOptions {
   ): ChooseFileEntryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
-    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
-    if (acceptsMultiple != null) __obj.updateDynamic("acceptsMultiple")(acceptsMultiple)
-    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes.asInstanceOf[js.Any])
+    if (acceptsMultiple != null) __obj.updateDynamic("acceptsMultiple")(acceptsMultiple.asInstanceOf[js.Any])
+    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseFileEntryOptions]
   }
 }

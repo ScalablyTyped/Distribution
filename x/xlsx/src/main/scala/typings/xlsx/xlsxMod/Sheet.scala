@@ -32,10 +32,10 @@ object Sheet {
   /* cell */ StringDictionary[CellObject | SheetKeys | js.Any] = null
   ): Sheet = {
     val __obj = js.Dynamic.literal()
-    if (`!margins` != null) __obj.updateDynamic("!margins")(`!margins`)
-    if (`!ref` != null) __obj.updateDynamic("!ref")(`!ref`)
-    if (`!type` != null) __obj.updateDynamic("!type")(`!type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`!margins` != null) __obj.updateDynamic("!margins")(`!margins`.asInstanceOf[js.Any])
+    if (`!ref` != null) __obj.updateDynamic("!ref")(`!ref`.asInstanceOf[js.Any])
+    if (`!type` != null) __obj.updateDynamic("!type")(`!type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Sheet]
   }
 }

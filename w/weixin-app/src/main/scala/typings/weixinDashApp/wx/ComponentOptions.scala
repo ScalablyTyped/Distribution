@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 	 * Component组件参数
 	 */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof weixin-app.wx.Lifetimes ]:? weixin-app.wx.Lifetimes[P]} */ trait ComponentOptions[Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] extends js.Object {
+- Dropped {[ P in keyof weixin-app.wx.Lifetimes ]:? weixin-app.wx.Lifetimes[P]} */ trait ComponentOptions[Instance /* <: typings.weixinDashApp.wx.Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */] extends js.Object {
   /**
   		 * 类似于mixins和traits的组件间代码复用机制
   		 * 参见 [behaviors](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/behaviors.html)
@@ -68,7 +68,7 @@ import scala.scalajs.js.annotation._
 
 object ComponentOptions {
   @scala.inline
-  def apply[Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */](
+  def apply[Instance /* <: typings.weixinDashApp.wx.Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */](
     behaviors: Behaviors = null,
     data: Data = null,
     externalClasses: js.Array[String] = null,
@@ -83,14 +83,14 @@ object ComponentOptions {
     val __obj = js.Dynamic.literal()
     if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (externalClasses != null) __obj.updateDynamic("externalClasses")(externalClasses)
-    if (lifetimes != null) __obj.updateDynamic("lifetimes")(lifetimes)
+    if (externalClasses != null) __obj.updateDynamic("externalClasses")(externalClasses.asInstanceOf[js.Any])
+    if (lifetimes != null) __obj.updateDynamic("lifetimes")(lifetimes.asInstanceOf[js.Any])
     if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (observers != null) __obj.updateDynamic("observers")(observers)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (pageLifetimes != null) __obj.updateDynamic("pageLifetimes")(pageLifetimes)
+    if (observers != null) __obj.updateDynamic("observers")(observers.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (pageLifetimes != null) __obj.updateDynamic("pageLifetimes")(pageLifetimes.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (relations != null) __obj.updateDynamic("relations")(relations)
+    if (relations != null) __obj.updateDynamic("relations")(relations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions[Instance, Data, Methods, Props, Behaviors]]
   }
 }

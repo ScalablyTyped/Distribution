@@ -31,12 +31,12 @@ object RoleDefinition {
     rolePermissions: js.Array[RolePermission] = null
   ): RoleDefinition = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isBuiltIn)) __obj.updateDynamic("isBuiltIn")(isBuiltIn)
-    if (roleAssignments != null) __obj.updateDynamic("roleAssignments")(roleAssignments)
-    if (rolePermissions != null) __obj.updateDynamic("rolePermissions")(rolePermissions)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBuiltIn)) __obj.updateDynamic("isBuiltIn")(isBuiltIn.asInstanceOf[js.Any])
+    if (roleAssignments != null) __obj.updateDynamic("roleAssignments")(roleAssignments.asInstanceOf[js.Any])
+    if (rolePermissions != null) __obj.updateDynamic("rolePermissions")(rolePermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleDefinition]
   }
 }

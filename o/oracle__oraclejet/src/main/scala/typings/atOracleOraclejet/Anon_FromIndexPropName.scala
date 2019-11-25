@@ -21,8 +21,8 @@ object Anon_FromIndexPropName {
     toIndex: Double,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_FromIndexPropName = {
-    val __obj = js.Dynamic.literal(fromIndex = fromIndex, tile = tile, toIndex = toIndex)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(fromIndex = fromIndex.asInstanceOf[js.Any], tile = tile.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FromIndexPropName]
   }
 }

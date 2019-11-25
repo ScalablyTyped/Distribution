@@ -17,8 +17,8 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(payload: js.Object, source: SourceType, `type`: ResultType): Result = {
-    val __obj = js.Dynamic.literal(payload = payload, source = source)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

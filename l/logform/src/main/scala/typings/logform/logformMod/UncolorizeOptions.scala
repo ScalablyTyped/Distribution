@@ -27,9 +27,9 @@ object UncolorizeOptions {
     raw: js.UndefOr[Boolean] = js.undefined
   ): UncolorizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level)
-    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(message)) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[UncolorizeOptions]
   }
 }

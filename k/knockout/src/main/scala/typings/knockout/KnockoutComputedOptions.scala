@@ -48,11 +48,11 @@ object KnockoutComputedOptions {
     write: /* value */ T => Unit = null
   ): KnockoutComputedOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deferEvaluation)) __obj.updateDynamic("deferEvaluation")(deferEvaluation)
+    if (!js.isUndefined(deferEvaluation)) __obj.updateDynamic("deferEvaluation")(deferEvaluation.asInstanceOf[js.Any])
     if (disposeWhen != null) __obj.updateDynamic("disposeWhen")(js.Any.fromFunction0(disposeWhen))
-    if (disposeWhenNodeIsRemoved != null) __obj.updateDynamic("disposeWhenNodeIsRemoved")(disposeWhenNodeIsRemoved)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure)
+    if (disposeWhenNodeIsRemoved != null) __obj.updateDynamic("disposeWhenNodeIsRemoved")(disposeWhenNodeIsRemoved.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
     __obj.asInstanceOf[KnockoutComputedOptions[T]]
   }

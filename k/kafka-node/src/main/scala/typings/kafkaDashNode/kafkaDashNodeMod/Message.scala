@@ -24,7 +24,7 @@ object Message {
     offset: Int | Double = null,
     partition: Int | Double = null
   ): Message = {
-    val __obj = js.Dynamic.literal(topic = topic, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (highWaterOffset != null) __obj.updateDynamic("highWaterOffset")(highWaterOffset.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

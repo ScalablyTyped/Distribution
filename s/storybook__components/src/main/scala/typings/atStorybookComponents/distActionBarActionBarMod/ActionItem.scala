@@ -21,7 +21,7 @@ object ActionItem {
     disabled: js.UndefOr[Boolean] = js.undefined
   ): ActionItem = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionItem]
   }
 }

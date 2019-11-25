@@ -18,8 +18,8 @@ object WindowsUpdateScheduledInstall {
   @scala.inline
   def apply(scheduledInstallDay: WeeklySchedule = null, scheduledInstallTime: String = null): WindowsUpdateScheduledInstall = {
     val __obj = js.Dynamic.literal()
-    if (scheduledInstallDay != null) __obj.updateDynamic("scheduledInstallDay")(scheduledInstallDay)
-    if (scheduledInstallTime != null) __obj.updateDynamic("scheduledInstallTime")(scheduledInstallTime)
+    if (scheduledInstallDay != null) __obj.updateDynamic("scheduledInstallDay")(scheduledInstallDay.asInstanceOf[js.Any])
+    if (scheduledInstallTime != null) __obj.updateDynamic("scheduledInstallTime")(scheduledInstallTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsUpdateScheduledInstall]
   }
 }

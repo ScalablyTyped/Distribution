@@ -57,12 +57,12 @@ object TeXInputProcessor {
     val __obj = js.Dynamic.literal()
     if (MAXBUFFER != null) __obj.updateDynamic("MAXBUFFER")(MAXBUFFER.asInstanceOf[js.Any])
     if (MAXMACROS != null) __obj.updateDynamic("MAXMACROS")(MAXMACROS.asInstanceOf[js.Any])
-    if (Macros != null) __obj.updateDynamic("Macros")(Macros)
-    if (MultLineWidth != null) __obj.updateDynamic("MultLineWidth")(MultLineWidth)
-    if (TagIndent != null) __obj.updateDynamic("TagIndent")(TagIndent)
-    if (TagSide != null) __obj.updateDynamic("TagSide")(TagSide)
-    if (equationNumbers != null) __obj.updateDynamic("equationNumbers")(equationNumbers)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (Macros != null) __obj.updateDynamic("Macros")(Macros.asInstanceOf[js.Any])
+    if (MultLineWidth != null) __obj.updateDynamic("MultLineWidth")(MultLineWidth.asInstanceOf[js.Any])
+    if (TagIndent != null) __obj.updateDynamic("TagIndent")(TagIndent.asInstanceOf[js.Any])
+    if (TagSide != null) __obj.updateDynamic("TagSide")(TagSide.asInstanceOf[js.Any])
+    if (equationNumbers != null) __obj.updateDynamic("equationNumbers")(equationNumbers.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeXInputProcessor]
   }
 }

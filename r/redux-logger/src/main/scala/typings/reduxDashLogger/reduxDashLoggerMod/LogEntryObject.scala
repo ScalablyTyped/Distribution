@@ -32,7 +32,7 @@ object LogEntryObject {
     if (nextState != null) __obj.updateDynamic("nextState")(js.Any.fromFunction1(nextState))
     if (prevState != null) __obj.updateDynamic("prevState")(js.Any.fromFunction1(prevState))
     if (started != null) __obj.updateDynamic("started")(started.asInstanceOf[js.Any])
-    if (startedTime != null) __obj.updateDynamic("startedTime")(startedTime)
+    if (startedTime != null) __obj.updateDynamic("startedTime")(startedTime.asInstanceOf[js.Any])
     if (took != null) __obj.updateDynamic("took")(took.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogEntryObject]
   }

@@ -11,7 +11,7 @@ trait PerformanceEventMap extends js.Object {
 object PerformanceEventMap {
   @scala.inline
   def apply(resourcetimingbufferfull: Event): PerformanceEventMap = {
-    val __obj = js.Dynamic.literal(resourcetimingbufferfull = resourcetimingbufferfull)
+    val __obj = js.Dynamic.literal(resourcetimingbufferfull = resourcetimingbufferfull.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PerformanceEventMap]
   }

@@ -23,11 +23,11 @@ object Anon_Duplicate {
     warnings: js.UndefOr[Boolean] = js.undefined
   ): Anon_Duplicate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(duplicate)) __obj.updateDynamic("duplicate")(duplicate)
-    if (!js.isUndefined(relaxed)) __obj.updateDynamic("relaxed")(relaxed)
-    if (reviver != null) __obj.updateDynamic("reviver")(reviver)
-    if (!js.isUndefined(tolerant)) __obj.updateDynamic("tolerant")(tolerant)
-    if (!js.isUndefined(warnings)) __obj.updateDynamic("warnings")(warnings)
+    if (!js.isUndefined(duplicate)) __obj.updateDynamic("duplicate")(duplicate.asInstanceOf[js.Any])
+    if (!js.isUndefined(relaxed)) __obj.updateDynamic("relaxed")(relaxed.asInstanceOf[js.Any])
+    if (reviver != null) __obj.updateDynamic("reviver")(reviver.asInstanceOf[js.Any])
+    if (!js.isUndefined(tolerant)) __obj.updateDynamic("tolerant")(tolerant.asInstanceOf[js.Any])
+    if (!js.isUndefined(warnings)) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Duplicate]
   }
 }

@@ -11,7 +11,7 @@ trait TaskOrchestrationPlanGroupsStartedEvent extends js.Object {
 object TaskOrchestrationPlanGroupsStartedEvent {
   @scala.inline
   def apply(planGroups: js.Array[TaskOrchestrationPlanGroupReference]): TaskOrchestrationPlanGroupsStartedEvent = {
-    val __obj = js.Dynamic.literal(planGroups = planGroups)
+    val __obj = js.Dynamic.literal(planGroups = planGroups.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskOrchestrationPlanGroupsStartedEvent]
   }

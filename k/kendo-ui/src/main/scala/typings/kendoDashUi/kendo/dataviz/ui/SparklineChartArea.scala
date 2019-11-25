@@ -24,8 +24,8 @@ object SparklineChartArea {
     width: Int | Double = null
   ): SparklineChartArea = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

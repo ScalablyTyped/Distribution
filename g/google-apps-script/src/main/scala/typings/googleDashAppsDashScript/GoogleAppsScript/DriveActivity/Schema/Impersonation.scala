@@ -12,7 +12,7 @@ object Impersonation {
   @scala.inline
   def apply(impersonatedUser: User = null): Impersonation = {
     val __obj = js.Dynamic.literal()
-    if (impersonatedUser != null) __obj.updateDynamic("impersonatedUser")(impersonatedUser)
+    if (impersonatedUser != null) __obj.updateDynamic("impersonatedUser")(impersonatedUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[Impersonation]
   }
 }

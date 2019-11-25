@@ -21,7 +21,7 @@ object SyncConstructorOptions {
   @scala.inline
   def apply(async: `false` = null, getFile: /* filename */ String => String = null): SyncConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (async != null) __obj.updateDynamic("async")(async)
+    if (async != null) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
     if (getFile != null) __obj.updateDynamic("getFile")(js.Any.fromFunction1(getFile))
     __obj.asInstanceOf[SyncConstructorOptions]
   }

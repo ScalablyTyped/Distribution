@@ -35,17 +35,17 @@ object NodesHotThreadsParams {
     `type`: cpu | wait | blocked = null
   ): NodesHotThreadsParams = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreIdleThreads)) __obj.updateDynamic("ignoreIdleThreads")(ignoreIdleThreads)
-    if (interval != null) __obj.updateDynamic("interval")(interval)
+    if (!js.isUndefined(ignoreIdleThreads)) __obj.updateDynamic("ignoreIdleThreads")(ignoreIdleThreads.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     if (snapshots != null) __obj.updateDynamic("snapshots")(snapshots.asInstanceOf[js.Any])
     if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesHotThreadsParams]
   }

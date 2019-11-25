@@ -35,12 +35,12 @@ object Transaction {
     to: String = null,
     v: Int | Double = null
   ): Transaction = {
-    val __obj = js.Dynamic.literal(chainId = chainId, data = data, gasLimit = gasLimit, gasPrice = gasPrice, nonce = nonce, value = value)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (r != null) __obj.updateDynamic("r")(r)
-    if (s != null) __obj.updateDynamic("s")(s)
-    if (to != null) __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(chainId = chainId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasPrice = gasPrice.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }

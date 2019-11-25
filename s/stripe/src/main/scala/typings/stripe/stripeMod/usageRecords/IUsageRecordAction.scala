@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait IUsageRecordAction extends js.Object
 
+object IUsageRecordAction {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def increment: typings.stripe.stripeStrings.increment = this.cast("increment")
+  @scala.inline
+  def set: typings.stripe.stripeStrings.set = this.cast("set")
+}
+

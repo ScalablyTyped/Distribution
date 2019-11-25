@@ -17,8 +17,8 @@ object LeafProperties {
   def apply(marks: Set[Mark] | js.Array[Mark] = null, `object`: leaf = null, text: String = null): LeafProperties = {
     val __obj = js.Dynamic.literal()
     if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafProperties]
   }
 }

@@ -25,11 +25,11 @@ object IIconStyleProps {
     styles: Partial[IIconStyles] = null,
     theme: ITheme = null
   ): IIconStyleProps = {
-    val __obj = js.Dynamic.literal(isImage = isImage, isPlaceholder = isPlaceholder)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(isImage = isImage.asInstanceOf[js.Any], isPlaceholder = isPlaceholder.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIconStyleProps]
   }
 }

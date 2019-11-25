@@ -31,7 +31,7 @@ object Anon_AsyncOperationNotFound {
     targetBranchDeleted: Double,
     writePermissionRequired: Double
   ): Anon_AsyncOperationNotFound = {
-    val __obj = js.Dynamic.literal(asyncOperationNotFound = asyncOperationNotFound, createBranchPermissionRequired = createBranchPermissionRequired, gitObjectTooLarge = gitObjectTooLarge, invalidRefName = invalidRefName, none = none, operationIndentityNotFound = operationIndentityNotFound, other = other, refNameConflict = refNameConflict, targetBranchDeleted = targetBranchDeleted, writePermissionRequired = writePermissionRequired)
+    val __obj = js.Dynamic.literal(asyncOperationNotFound = asyncOperationNotFound.asInstanceOf[js.Any], createBranchPermissionRequired = createBranchPermissionRequired.asInstanceOf[js.Any], gitObjectTooLarge = gitObjectTooLarge.asInstanceOf[js.Any], invalidRefName = invalidRefName.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], operationIndentityNotFound = operationIndentityNotFound.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], refNameConflict = refNameConflict.asInstanceOf[js.Any], targetBranchDeleted = targetBranchDeleted.asInstanceOf[js.Any], writePermissionRequired = writePermissionRequired.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AsyncOperationNotFound]
   }

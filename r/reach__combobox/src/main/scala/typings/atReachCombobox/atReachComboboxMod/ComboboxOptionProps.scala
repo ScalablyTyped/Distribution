@@ -2,7 +2,6 @@ package typings.atReachCombobox.atReachComboboxMod
 
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.ClassAttributes
-import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,13 +19,11 @@ object ComboboxOptionProps {
   def apply(
     value: String,
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
-    ClassAttributes: ClassAttributes[HTMLElement] = null,
-    children: ReactNode = null
+    ClassAttributes: ClassAttributes[HTMLElement] = null
   ): ComboboxOptionProps = {
-    val __obj = js.Dynamic.literal(value = value)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[ComboboxOptionProps]
   }
 }

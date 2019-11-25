@@ -35,17 +35,17 @@ object PartialClassNameMapDrawerClassKey {
     paperAnchorTop: String = null
   ): PartialClassNameMapDrawerClassKey = {
     val __obj = js.Dynamic.literal()
-    if (docked != null) __obj.updateDynamic("docked")(docked)
-    if (modal != null) __obj.updateDynamic("modal")(modal)
-    if (paper != null) __obj.updateDynamic("paper")(paper)
-    if (paperAnchorBottom != null) __obj.updateDynamic("paperAnchorBottom")(paperAnchorBottom)
-    if (paperAnchorDockedBottom != null) __obj.updateDynamic("paperAnchorDockedBottom")(paperAnchorDockedBottom)
-    if (paperAnchorDockedLeft != null) __obj.updateDynamic("paperAnchorDockedLeft")(paperAnchorDockedLeft)
-    if (paperAnchorDockedRight != null) __obj.updateDynamic("paperAnchorDockedRight")(paperAnchorDockedRight)
-    if (paperAnchorDockedTop != null) __obj.updateDynamic("paperAnchorDockedTop")(paperAnchorDockedTop)
-    if (paperAnchorLeft != null) __obj.updateDynamic("paperAnchorLeft")(paperAnchorLeft)
-    if (paperAnchorRight != null) __obj.updateDynamic("paperAnchorRight")(paperAnchorRight)
-    if (paperAnchorTop != null) __obj.updateDynamic("paperAnchorTop")(paperAnchorTop)
+    if (docked != null) __obj.updateDynamic("docked")(docked.asInstanceOf[js.Any])
+    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (paper != null) __obj.updateDynamic("paper")(paper.asInstanceOf[js.Any])
+    if (paperAnchorBottom != null) __obj.updateDynamic("paperAnchorBottom")(paperAnchorBottom.asInstanceOf[js.Any])
+    if (paperAnchorDockedBottom != null) __obj.updateDynamic("paperAnchorDockedBottom")(paperAnchorDockedBottom.asInstanceOf[js.Any])
+    if (paperAnchorDockedLeft != null) __obj.updateDynamic("paperAnchorDockedLeft")(paperAnchorDockedLeft.asInstanceOf[js.Any])
+    if (paperAnchorDockedRight != null) __obj.updateDynamic("paperAnchorDockedRight")(paperAnchorDockedRight.asInstanceOf[js.Any])
+    if (paperAnchorDockedTop != null) __obj.updateDynamic("paperAnchorDockedTop")(paperAnchorDockedTop.asInstanceOf[js.Any])
+    if (paperAnchorLeft != null) __obj.updateDynamic("paperAnchorLeft")(paperAnchorLeft.asInstanceOf[js.Any])
+    if (paperAnchorRight != null) __obj.updateDynamic("paperAnchorRight")(paperAnchorRight.asInstanceOf[js.Any])
+    if (paperAnchorTop != null) __obj.updateDynamic("paperAnchorTop")(paperAnchorTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapDrawerClassKey]
   }
 }

@@ -66,11 +66,11 @@ object ExportingCsvOptions {
     lineDelimiter: String = null
   ): ExportingCsvOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnHeaderFormatter != null) __obj.updateDynamic("columnHeaderFormatter")(columnHeaderFormatter)
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
-    if (decimalPoint != null) __obj.updateDynamic("decimalPoint")(decimalPoint)
-    if (itemDelimiter != null) __obj.updateDynamic("itemDelimiter")(itemDelimiter)
-    if (lineDelimiter != null) __obj.updateDynamic("lineDelimiter")(lineDelimiter)
+    if (columnHeaderFormatter != null) __obj.updateDynamic("columnHeaderFormatter")(columnHeaderFormatter.asInstanceOf[js.Any])
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
+    if (decimalPoint != null) __obj.updateDynamic("decimalPoint")(decimalPoint.asInstanceOf[js.Any])
+    if (itemDelimiter != null) __obj.updateDynamic("itemDelimiter")(itemDelimiter.asInstanceOf[js.Any])
+    if (lineDelimiter != null) __obj.updateDynamic("lineDelimiter")(lineDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingCsvOptions]
   }
 }

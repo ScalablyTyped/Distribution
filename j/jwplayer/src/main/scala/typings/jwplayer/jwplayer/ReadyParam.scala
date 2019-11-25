@@ -14,7 +14,7 @@ trait ReadyParam extends js.Object {
 object ReadyParam {
   @scala.inline
   def apply(setupTime: Double, viewable: `0` | `1`): ReadyParam = {
-    val __obj = js.Dynamic.literal(setupTime = setupTime, viewable = viewable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(setupTime = setupTime.asInstanceOf[js.Any], viewable = viewable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadyParam]
   }

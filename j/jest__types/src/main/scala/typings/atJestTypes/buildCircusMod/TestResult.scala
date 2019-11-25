@@ -24,9 +24,9 @@ object TestResult {
     duration: Int | Double = null,
     location: Anon_Column = null
   ): TestResult = {
-    val __obj = js.Dynamic.literal(errors = errors, invocations = invocations, status = status, testPath = testPath)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], invocations = invocations.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResult]
   }
 }

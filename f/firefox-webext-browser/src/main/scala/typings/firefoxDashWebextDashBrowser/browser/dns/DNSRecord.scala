@@ -20,8 +20,8 @@ trait DNSRecord extends js.Object {
 object DNSRecord {
   @scala.inline
   def apply(addresses: js.Array[String], isTRR: String, canonicalName: String = null): DNSRecord = {
-    val __obj = js.Dynamic.literal(addresses = addresses, isTRR = isTRR)
-    if (canonicalName != null) __obj.updateDynamic("canonicalName")(canonicalName)
+    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], isTRR = isTRR.asInstanceOf[js.Any])
+    if (canonicalName != null) __obj.updateDynamic("canonicalName")(canonicalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DNSRecord]
   }
 }

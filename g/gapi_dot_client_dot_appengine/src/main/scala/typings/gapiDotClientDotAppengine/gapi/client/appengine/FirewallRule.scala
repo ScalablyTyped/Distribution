@@ -33,10 +33,10 @@ object FirewallRule {
     sourceRange: String = null
   ): FirewallRule = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (sourceRange != null) __obj.updateDynamic("sourceRange")(sourceRange)
+    if (sourceRange != null) __obj.updateDynamic("sourceRange")(sourceRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallRule]
   }
 }

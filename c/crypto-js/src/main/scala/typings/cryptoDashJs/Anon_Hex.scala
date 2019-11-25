@@ -12,7 +12,7 @@ trait Anon_Hex extends js.Object {
 object Anon_Hex {
   @scala.inline
   def apply(Hex: js.Any, OpenSSL: js.Any): Anon_Hex = {
-    val __obj = js.Dynamic.literal(Hex = Hex, OpenSSL = OpenSSL)
+    val __obj = js.Dynamic.literal(Hex = Hex.asInstanceOf[js.Any], OpenSSL = OpenSSL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hex]
   }

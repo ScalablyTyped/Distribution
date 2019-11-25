@@ -21,7 +21,7 @@ object Anon_BufferFlushDelay {
     pageTracking: Anon_AutoBasePath,
     trackExceptions: Boolean
   ): Anon_BufferFlushDelay = {
-    val __obj = js.Dynamic.literal(bufferFlushDelay = bufferFlushDelay, developerMode = developerMode, optOut = optOut, pageTracking = pageTracking, trackExceptions = trackExceptions)
+    val __obj = js.Dynamic.literal(bufferFlushDelay = bufferFlushDelay.asInstanceOf[js.Any], developerMode = developerMode.asInstanceOf[js.Any], optOut = optOut.asInstanceOf[js.Any], pageTracking = pageTracking.asInstanceOf[js.Any], trackExceptions = trackExceptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BufferFlushDelay]
   }

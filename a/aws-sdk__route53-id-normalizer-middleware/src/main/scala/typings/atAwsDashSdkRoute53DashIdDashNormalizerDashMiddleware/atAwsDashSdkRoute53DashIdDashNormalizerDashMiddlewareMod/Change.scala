@@ -12,7 +12,7 @@ trait Change extends js.Object {
 object Change {
   @scala.inline
   def apply(ResourceRecordSet: Anon_AliasTarget): Change = {
-    val __obj = js.Dynamic.literal(ResourceRecordSet = ResourceRecordSet)
+    val __obj = js.Dynamic.literal(ResourceRecordSet = ResourceRecordSet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Change]
   }

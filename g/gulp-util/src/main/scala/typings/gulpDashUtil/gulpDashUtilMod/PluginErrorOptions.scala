@@ -50,15 +50,15 @@ object PluginErrorOptions {
     stack: String = null
   ): PluginErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (plugin != null) __obj.updateDynamic("plugin")(plugin)
-    if (!js.isUndefined(showProperties)) __obj.updateDynamic("showProperties")(showProperties)
-    if (!js.isUndefined(showStack)) __obj.updateDynamic("showStack")(showStack)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
+    if (!js.isUndefined(showProperties)) __obj.updateDynamic("showProperties")(showProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(showStack)) __obj.updateDynamic("showStack")(showStack.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginErrorOptions]
   }
 }

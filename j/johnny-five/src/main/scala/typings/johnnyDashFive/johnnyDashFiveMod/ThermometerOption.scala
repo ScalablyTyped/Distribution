@@ -20,7 +20,7 @@ object ThermometerOption {
     toCelsius: /* val */ Double => Double = null
   ): ThermometerOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     if (toCelsius != null) __obj.updateDynamic("toCelsius")(js.Any.fromFunction1(toCelsius))
     __obj.asInstanceOf[ThermometerOption]

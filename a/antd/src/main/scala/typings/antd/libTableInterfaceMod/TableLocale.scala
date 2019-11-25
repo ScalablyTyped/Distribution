@@ -31,15 +31,15 @@ object TableLocale {
     sortTitle: String = null
   ): TableLocale = {
     val __obj = js.Dynamic.literal()
-    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (filterConfirm != null) __obj.updateDynamic("filterConfirm")(filterConfirm.asInstanceOf[js.Any])
     if (filterReset != null) __obj.updateDynamic("filterReset")(filterReset.asInstanceOf[js.Any])
-    if (filterTitle != null) __obj.updateDynamic("filterTitle")(filterTitle)
+    if (filterTitle != null) __obj.updateDynamic("filterTitle")(filterTitle.asInstanceOf[js.Any])
     if (selectAll != null) __obj.updateDynamic("selectAll")(selectAll.asInstanceOf[js.Any])
     if (selectInvert != null) __obj.updateDynamic("selectInvert")(selectInvert.asInstanceOf[js.Any])
-    if (sortTitle != null) __obj.updateDynamic("sortTitle")(sortTitle)
+    if (sortTitle != null) __obj.updateDynamic("sortTitle")(sortTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableLocale]
   }
 }

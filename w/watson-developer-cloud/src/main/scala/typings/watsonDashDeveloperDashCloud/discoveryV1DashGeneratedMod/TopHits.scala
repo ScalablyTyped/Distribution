@@ -15,7 +15,7 @@ object TopHits {
   @scala.inline
   def apply(hits: TopHitsResults = null, size: Int | Double = null): TopHits = {
     val __obj = js.Dynamic.literal()
-    if (hits != null) __obj.updateDynamic("hits")(hits)
+    if (hits != null) __obj.updateDynamic("hits")(hits.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopHits]
   }

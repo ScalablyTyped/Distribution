@@ -26,10 +26,10 @@ object Anon_Arguments {
     loc: SourceLocationKind = null,
     typeArguments: TypeParameterInstantiationKind = null
   ): Anon_Arguments = {
-    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Arguments]
   }
 }

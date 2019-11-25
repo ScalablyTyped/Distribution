@@ -26,9 +26,9 @@ object Anon_CheckType {
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null
   ): Anon_CheckType = {
-    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, falseType = falseType, trueType = trueType)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(checkType = checkType.asInstanceOf[js.Any], extendsType = extendsType.asInstanceOf[js.Any], falseType = falseType.asInstanceOf[js.Any], trueType = trueType.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CheckType]
   }
 }

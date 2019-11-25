@@ -26,7 +26,7 @@ trait IProps extends js.Object {
 object IProps {
   @scala.inline
   def apply(column: Double, handleClick: () => Unit, line: Double): IProps = {
-    val __obj = js.Dynamic.literal(column = column, handleClick = js.Any.fromFunction0(handleClick), line = line)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], handleClick = js.Any.fromFunction0(handleClick), line = line.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProps]
   }

@@ -15,8 +15,8 @@ object ListReportsResponse {
   @scala.inline
   def apply(kind: String = null, reports: js.Array[Report] = null): ListReportsResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (reports != null) __obj.updateDynamic("reports")(reports)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (reports != null) __obj.updateDynamic("reports")(reports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReportsResponse]
   }
 }

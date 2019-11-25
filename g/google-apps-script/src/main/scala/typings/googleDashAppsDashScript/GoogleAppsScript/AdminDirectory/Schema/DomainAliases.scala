@@ -14,9 +14,9 @@ object DomainAliases {
   @scala.inline
   def apply(domainAliases: js.Array[DomainAlias] = null, etag: String = null, kind: String = null): DomainAliases = {
     val __obj = js.Dynamic.literal()
-    if (domainAliases != null) __obj.updateDynamic("domainAliases")(domainAliases)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (domainAliases != null) __obj.updateDynamic("domainAliases")(domainAliases.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainAliases]
   }
 }

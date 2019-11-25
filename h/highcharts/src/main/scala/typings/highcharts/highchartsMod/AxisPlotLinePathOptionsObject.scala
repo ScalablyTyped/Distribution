@@ -52,11 +52,11 @@ object AxisPlotLinePathOptionsObject {
     value: Int | Double = null
   ): AxisPlotLinePathOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acrossPanes)) __obj.updateDynamic("acrossPanes")(acrossPanes)
+    if (!js.isUndefined(acrossPanes)) __obj.updateDynamic("acrossPanes")(acrossPanes.asInstanceOf[js.Any])
     if (force != null) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(old)) __obj.updateDynamic("old")(old)
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (!js.isUndefined(old)) __obj.updateDynamic("old")(old.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     if (translatedValue != null) __obj.updateDynamic("translatedValue")(translatedValue.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisPlotLinePathOptionsObject]

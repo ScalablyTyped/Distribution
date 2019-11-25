@@ -23,9 +23,9 @@ object FormValidatedEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, target: String = null, valid: js.UndefOr[Boolean] = js.undefined): FormValidatedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormValidatedEventUIParam]
   }
 }

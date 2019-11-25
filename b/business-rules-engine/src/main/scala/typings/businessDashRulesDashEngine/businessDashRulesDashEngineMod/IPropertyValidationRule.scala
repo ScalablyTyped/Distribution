@@ -19,7 +19,7 @@ object IPropertyValidationRule {
     ValidateAsync: IValidationContext[T] => Promise[js.Array[IValidationFailure]],
     Validators: StringDictionary[js.Any]
   ): IPropertyValidationRule[T] = {
-    val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate), ValidateAsync = js.Any.fromFunction1(ValidateAsync), Validators = Validators)
+    val __obj = js.Dynamic.literal(Validate = js.Any.fromFunction1(Validate), ValidateAsync = js.Any.fromFunction1(ValidateAsync), Validators = Validators.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPropertyValidationRule[T]]
   }

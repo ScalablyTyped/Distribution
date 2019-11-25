@@ -145,7 +145,7 @@ trait IAngularStatic extends js.Object {
   def forEach[T, U /* <: ArrayLike[T] */](
     obj: U,
     iterator: js.Function3[
-      /* import warning: ImportType.apply Failed type conversion: U[number] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: U[number] */ /* value */ js.Any, 
       /* key */ Double, 
       /* obj */ U, 
       Unit
@@ -154,7 +154,7 @@ trait IAngularStatic extends js.Object {
   def forEach[T, U /* <: ArrayLike[T] */](
     obj: U,
     iterator: js.Function3[
-      /* import warning: ImportType.apply Failed type conversion: U[number] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: U[number] */ /* value */ js.Any, 
       /* key */ Double, 
       /* obj */ U, 
       Unit

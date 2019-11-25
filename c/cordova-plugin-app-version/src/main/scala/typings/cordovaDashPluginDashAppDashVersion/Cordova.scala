@@ -11,7 +11,7 @@ trait Cordova extends js.Object {
 object Cordova {
   @scala.inline
   def apply(getAppVersion: Anon_GetAppName): Cordova = {
-    val __obj = js.Dynamic.literal(getAppVersion = getAppVersion)
+    val __obj = js.Dynamic.literal(getAppVersion = getAppVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Cordova]
   }

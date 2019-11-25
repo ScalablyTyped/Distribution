@@ -43,10 +43,10 @@ object RulesetInfo {
     rulesetIds: js.Array[String] = null
   ): RulesetInfo = {
     val __obj = js.Dynamic.literal()
-    if (authority != null) __obj.updateDynamic("authority")(authority)
+    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
     if (maxLocationChange != null) __obj.updateDynamic("maxLocationChange")(maxLocationChange.asInstanceOf[js.Any])
     if (maxPollingSecs != null) __obj.updateDynamic("maxPollingSecs")(maxPollingSecs.asInstanceOf[js.Any])
-    if (rulesetIds != null) __obj.updateDynamic("rulesetIds")(rulesetIds)
+    if (rulesetIds != null) __obj.updateDynamic("rulesetIds")(rulesetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulesetInfo]
   }
 }

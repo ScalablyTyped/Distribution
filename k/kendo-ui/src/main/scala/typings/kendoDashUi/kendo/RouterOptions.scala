@@ -29,11 +29,11 @@ object RouterOptions {
   ): RouterOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (!js.isUndefined(hashBang)) __obj.updateDynamic("hashBang")(hashBang)
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    if (!js.isUndefined(hashBang)) __obj.updateDynamic("hashBang")(hashBang.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (routeMissing != null) __obj.updateDynamic("routeMissing")(js.Any.fromFunction1(routeMissing))
     if (same != null) __obj.updateDynamic("same")(js.Any.fromFunction1(same))
     __obj.asInstanceOf[RouterOptions]

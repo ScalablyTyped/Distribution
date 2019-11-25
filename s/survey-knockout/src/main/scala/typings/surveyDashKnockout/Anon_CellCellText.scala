@@ -39,7 +39,7 @@ object Anon_CellCellText {
     root: String,
     tableWrapper: String
   ): Anon_CellCellText = {
-    val __obj = js.Dynamic.literal(cell = cell, cellText = cellText, cellTextDisabled = cellTextDisabled, cellTextSelected = cellTextSelected, headerCell = headerCell, itemChecked = itemChecked, itemDecorator = itemDecorator, itemDisabled = itemDisabled, itemHover = itemHover, itemValue = itemValue, label = label, materialDecorator = materialDecorator, root = root, tableWrapper = tableWrapper)
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], cellText = cellText.asInstanceOf[js.Any], cellTextDisabled = cellTextDisabled.asInstanceOf[js.Any], cellTextSelected = cellTextSelected.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], tableWrapper = tableWrapper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CellCellText]
   }

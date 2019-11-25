@@ -20,10 +20,10 @@ object RTCIceCandidateInit {
     usernameFragment: java.lang.String = null
   ): RTCIceCandidateInit = {
     val __obj = js.Dynamic.literal()
-    if (candidate != null) __obj.updateDynamic("candidate")(candidate)
+    if (candidate != null) __obj.updateDynamic("candidate")(candidate.asInstanceOf[js.Any])
     if (sdpMLineIndex != null) __obj.updateDynamic("sdpMLineIndex")(sdpMLineIndex.asInstanceOf[js.Any])
-    if (sdpMid != null) __obj.updateDynamic("sdpMid")(sdpMid)
-    if (usernameFragment != null) __obj.updateDynamic("usernameFragment")(usernameFragment)
+    if (sdpMid != null) __obj.updateDynamic("sdpMid")(sdpMid.asInstanceOf[js.Any])
+    if (usernameFragment != null) __obj.updateDynamic("usernameFragment")(usernameFragment.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceCandidateInit]
   }
 }

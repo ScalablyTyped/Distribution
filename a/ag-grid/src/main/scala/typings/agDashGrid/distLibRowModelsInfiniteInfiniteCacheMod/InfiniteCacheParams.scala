@@ -28,7 +28,7 @@ object InfiniteCacheParams {
     rowNodeBlockLoader: RowNodeBlockLoader,
     sortModel: js.Any
   ): InfiniteCacheParams = {
-    val __obj = js.Dynamic.literal(blockSize = blockSize, datasource = datasource, dynamicRowHeight = dynamicRowHeight, filterModel = filterModel, initialRowCount = initialRowCount, lastAccessedSequence = lastAccessedSequence, maxBlocksInCache = maxBlocksInCache, maxConcurrentRequests = maxConcurrentRequests, overflowSize = overflowSize, rowHeight = rowHeight, rowNodeBlockLoader = rowNodeBlockLoader, sortModel = sortModel)
+    val __obj = js.Dynamic.literal(blockSize = blockSize.asInstanceOf[js.Any], datasource = datasource.asInstanceOf[js.Any], dynamicRowHeight = dynamicRowHeight.asInstanceOf[js.Any], filterModel = filterModel.asInstanceOf[js.Any], initialRowCount = initialRowCount.asInstanceOf[js.Any], lastAccessedSequence = lastAccessedSequence.asInstanceOf[js.Any], maxBlocksInCache = maxBlocksInCache.asInstanceOf[js.Any], maxConcurrentRequests = maxConcurrentRequests.asInstanceOf[js.Any], overflowSize = overflowSize.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any], rowNodeBlockLoader = rowNodeBlockLoader.asInstanceOf[js.Any], sortModel = sortModel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InfiniteCacheParams]
   }

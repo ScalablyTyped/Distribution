@@ -21,11 +21,11 @@ object GraphQLResponseWithData {
     label: String = null,
     path: js.Array[Double | String] = null
   ): GraphQLResponseWithData = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLResponseWithData]
   }
 }

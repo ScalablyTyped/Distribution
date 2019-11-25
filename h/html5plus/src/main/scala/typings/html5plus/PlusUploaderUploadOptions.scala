@@ -67,7 +67,7 @@ object PlusUploaderUploadOptions {
   ): PlusUploaderUploadOptions = {
     val __obj = js.Dynamic.literal()
     if (blocksize != null) __obj.updateDynamic("blocksize")(blocksize.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (retryInterval != null) __obj.updateDynamic("retryInterval")(retryInterval.asInstanceOf[js.Any])

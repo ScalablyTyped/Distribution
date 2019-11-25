@@ -18,7 +18,7 @@ object Anon_App {
     InstantSearch: ComponentClass[_, ComponentState],
     findResultsState: (ComponentType[_], js.Any) => js.Promise[_]
   ): Anon_App = {
-    val __obj = js.Dynamic.literal(InstantSearch = InstantSearch, findResultsState = js.Any.fromFunction2(findResultsState))
+    val __obj = js.Dynamic.literal(InstantSearch = InstantSearch.asInstanceOf[js.Any], findResultsState = js.Any.fromFunction2(findResultsState))
   
     __obj.asInstanceOf[Anon_App]
   }

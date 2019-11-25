@@ -18,9 +18,9 @@ object DataProviderMutationEventDetail {
     update: DataProviderOperationEventDetail[K, D] = null
   ): DataProviderMutationEventDetail[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (add != null) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProviderMutationEventDetail[K, D]]
   }
 }

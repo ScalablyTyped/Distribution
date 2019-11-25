@@ -19,7 +19,7 @@ object RenderedModule {
     renderedExports: js.Array[String],
     renderedLength: Double
   ): RenderedModule = {
-    val __obj = js.Dynamic.literal(originalLength = originalLength, removedExports = removedExports, renderedExports = renderedExports, renderedLength = renderedLength)
+    val __obj = js.Dynamic.literal(originalLength = originalLength.asInstanceOf[js.Any], removedExports = removedExports.asInstanceOf[js.Any], renderedExports = renderedExports.asInstanceOf[js.Any], renderedLength = renderedLength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderedModule]
   }

@@ -51,12 +51,12 @@ object MeshCreateBoxParams {
     size: Double | MeshCreateBoxParamsSize = null,
     unit: String = null
   ): MeshCreateBoxParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
-    if (imageFace != null) __obj.updateDynamic("imageFace")(imageFace)
-    if (material != null) __obj.updateDynamic("material")(material)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic.asInstanceOf[js.Any])
+    if (imageFace != null) __obj.updateDynamic("imageFace")(imageFace.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshCreateBoxParams]
   }
 }

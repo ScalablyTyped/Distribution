@@ -12,7 +12,7 @@ object Anon_Timezone {
   @scala.inline
   def apply(timezone: String = null): Anon_Timezone = {
     val __obj = js.Dynamic.literal()
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Timezone]
   }
 }

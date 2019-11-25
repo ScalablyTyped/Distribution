@@ -12,8 +12,8 @@ trait LoginButtonProps extends js.Object {
 object LoginButtonProps {
   @scala.inline
   def apply(popup: String, className: String = null): LoginButtonProps = {
-    val __obj = js.Dynamic.literal(popup = popup)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginButtonProps]
   }
 }

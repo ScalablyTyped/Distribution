@@ -14,7 +14,7 @@ trait Presets extends js.Object {
 object Presets {
   @scala.inline
   def apply(components: StringDictionary[Anon_Rules], options: Options): Presets = {
-    val __obj = js.Dynamic.literal(components = components, options = options)
+    val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Presets]
   }

@@ -15,8 +15,8 @@ object UploadStatus {
   @scala.inline
   def apply(errors: js.Array[String] = null, rowStatus: js.Array[RowStatus] = null): UploadStatus = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (rowStatus != null) __obj.updateDynamic("rowStatus")(rowStatus)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (rowStatus != null) __obj.updateDynamic("rowStatus")(rowStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadStatus]
   }
 }

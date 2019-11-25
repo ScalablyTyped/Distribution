@@ -16,7 +16,7 @@ trait Typeofwiiu extends js.Object {
 object Typeofwiiu {
   @scala.inline
   def apply(gamepad: WiiuGamePad, imageview: ImageView, videoplayer: VideoPlayer): Typeofwiiu = {
-    val __obj = js.Dynamic.literal(gamepad = gamepad, imageview = imageview, videoplayer = videoplayer)
+    val __obj = js.Dynamic.literal(gamepad = gamepad.asInstanceOf[js.Any], imageview = imageview.asInstanceOf[js.Any], videoplayer = videoplayer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofwiiu]
   }

@@ -13,8 +13,8 @@ trait UpdateAction extends Action {
 object UpdateAction {
   @scala.inline
   def apply(fields: js.Object, `type`: UPDATE): UpdateAction = {
-    val __obj = js.Dynamic.literal(fields = fields)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAction]
   }
 }

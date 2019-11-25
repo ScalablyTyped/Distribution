@@ -17,7 +17,7 @@ object TabBarAnimationOptions {
     fail: /* res */ js.Any => Unit = null,
     success: /* res */ js.Any => Unit = null
   ): TabBarAnimationOptions = {
-    val __obj = js.Dynamic.literal(animation = animation)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

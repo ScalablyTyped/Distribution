@@ -33,7 +33,7 @@ object upmConf {
     skipOffline: Boolean,
     whiteList: String | RegExp | js.Array[String] | whiteList
   ): upmConf = {
-    val __obj = js.Dynamic.literal(clientId = clientId, clientSecret = clientSecret, domain = domain, enableMock = enableMock, failHook = js.Any.fromFunction3(failHook), getPath = js.Any.fromFunction1(getPath), path = path, skipOffline = skipOffline, whiteList = whiteList.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], enableMock = enableMock.asInstanceOf[js.Any], failHook = js.Any.fromFunction3(failHook), getPath = js.Any.fromFunction1(getPath), path = path.asInstanceOf[js.Any], skipOffline = skipOffline.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[upmConf]
   }

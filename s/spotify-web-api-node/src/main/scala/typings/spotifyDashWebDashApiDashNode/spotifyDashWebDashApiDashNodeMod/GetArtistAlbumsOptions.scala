@@ -19,8 +19,8 @@ object GetArtistAlbumsOptions {
     offset: Int | Double = null
   ): GetArtistAlbumsOptions = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (include_groups != null) __obj.updateDynamic("include_groups")(include_groups)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (include_groups != null) __obj.updateDynamic("include_groups")(include_groups.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetArtistAlbumsOptions]

@@ -17,9 +17,9 @@ object PublicKeyCertificate {
   @scala.inline
   def apply(certificate: String = null, format: String = null, x509Details: X509CertificateDetails = null): PublicKeyCertificate = {
     val __obj = js.Dynamic.literal()
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (x509Details != null) __obj.updateDynamic("x509Details")(x509Details)
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (x509Details != null) __obj.updateDynamic("x509Details")(x509Details.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCertificate]
   }
 }

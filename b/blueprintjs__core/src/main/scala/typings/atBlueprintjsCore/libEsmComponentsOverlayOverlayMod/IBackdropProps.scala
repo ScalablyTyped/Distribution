@@ -33,10 +33,10 @@ object IBackdropProps {
     hasBackdrop: js.UndefOr[Boolean] = js.undefined
   ): IBackdropProps = {
     val __obj = js.Dynamic.literal()
-    if (backdropClassName != null) __obj.updateDynamic("backdropClassName")(backdropClassName)
-    if (backdropProps != null) __obj.updateDynamic("backdropProps")(backdropProps)
-    if (!js.isUndefined(canOutsideClickClose)) __obj.updateDynamic("canOutsideClickClose")(canOutsideClickClose)
-    if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop)
+    if (backdropClassName != null) __obj.updateDynamic("backdropClassName")(backdropClassName.asInstanceOf[js.Any])
+    if (backdropProps != null) __obj.updateDynamic("backdropProps")(backdropProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(canOutsideClickClose)) __obj.updateDynamic("canOutsideClickClose")(canOutsideClickClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackdropProps]
   }
 }

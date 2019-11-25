@@ -14,9 +14,9 @@ trait GatewayDestProps extends js.Object {
 object GatewayDestProps {
   @scala.inline
   def apply(name: String, component: String | ComponentType[js.Object] = null, tagName: String = null): GatewayDestProps = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayDestProps]
   }
 }

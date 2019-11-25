@@ -12,8 +12,8 @@ trait RouteNode extends RouteEntry {
 object RouteNode {
   @scala.inline
   def apply(children: RouteTree, id: String, path: js.Array[String], params: StringDictionary[js.Any] = null): RouteNode = {
-    val __obj = js.Dynamic.literal(children = children, id = id, path = path)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteNode]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Prop extends js.Object {
 object Anon_Prop {
   @scala.inline
   def apply(prop: String, value: String): Anon_Prop = {
-    val __obj = js.Dynamic.literal(prop = prop, value = value)
+    val __obj = js.Dynamic.literal(prop = prop.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Prop]
   }

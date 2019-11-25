@@ -65,12 +65,12 @@ object UpdateGlobalTableSettingsInput {
     GlobalTableProvisionedWriteCapacityUnits: Int | Double = null,
     ReplicaSettingsUpdate: js.Array[_ReplicaSettingsUpdate] | Iterable[_ReplicaSettingsUpdate] = null
   ): UpdateGlobalTableSettingsInput = {
-    val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     if (GlobalTableGlobalSecondaryIndexSettingsUpdate != null) __obj.updateDynamic("GlobalTableGlobalSecondaryIndexSettingsUpdate")(GlobalTableGlobalSecondaryIndexSettingsUpdate.asInstanceOf[js.Any])
-    if (GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate")(GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate)
+    if (GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate")(GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate.asInstanceOf[js.Any])
     if (GlobalTableProvisionedWriteCapacityUnits != null) __obj.updateDynamic("GlobalTableProvisionedWriteCapacityUnits")(GlobalTableProvisionedWriteCapacityUnits.asInstanceOf[js.Any])
     if (ReplicaSettingsUpdate != null) __obj.updateDynamic("ReplicaSettingsUpdate")(ReplicaSettingsUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGlobalTableSettingsInput]

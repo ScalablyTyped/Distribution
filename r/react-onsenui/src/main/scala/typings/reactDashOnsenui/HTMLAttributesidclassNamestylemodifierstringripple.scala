@@ -37,15 +37,15 @@ object HTMLAttributesidclassNamestylemodifierstringripple {
     style: CSSProperties = null
   ): HTMLAttributesidclassNamestylemodifierstringripple = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(ripple)) __obj.updateDynamic("ripple")(ripple)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(ripple)) __obj.updateDynamic("ripple")(ripple.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNamestylemodifierstringripple]
   }
 }

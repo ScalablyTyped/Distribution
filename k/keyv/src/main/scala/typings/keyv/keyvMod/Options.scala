@@ -43,14 +43,14 @@ object Options {
     uri: String = null
   ): Options[TValue] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
     if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction1(deserialize))
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[TValue]]
   }
 }

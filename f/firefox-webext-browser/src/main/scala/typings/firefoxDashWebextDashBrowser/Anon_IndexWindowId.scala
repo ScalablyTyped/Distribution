@@ -14,7 +14,7 @@ trait Anon_IndexWindowId extends js.Object {
 object Anon_IndexWindowId {
   @scala.inline
   def apply(index: Double, windowId: Int | Double = null): Anon_IndexWindowId = {
-    val __obj = js.Dynamic.literal(index = index)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IndexWindowId]
   }

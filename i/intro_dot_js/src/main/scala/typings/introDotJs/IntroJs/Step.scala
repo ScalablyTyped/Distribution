@@ -40,13 +40,13 @@ object Step {
     scrollTo: off | tooltip | element = null,
     tooltipClass: String = null
   ): Step = {
-    val __obj = js.Dynamic.literal(intro = intro)
-    if (!js.isUndefined(disableInteraction)) __obj.updateDynamic("disableInteraction")(disableInteraction)
+    val __obj = js.Dynamic.literal(intro = intro.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableInteraction)) __obj.updateDynamic("disableInteraction")(disableInteraction.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (highlightClass != null) __obj.updateDynamic("highlightClass")(highlightClass)
+    if (highlightClass != null) __obj.updateDynamic("highlightClass")(highlightClass.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (scrollTo != null) __obj.updateDynamic("scrollTo")(scrollTo.asInstanceOf[js.Any])
-    if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass)
+    if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
 }

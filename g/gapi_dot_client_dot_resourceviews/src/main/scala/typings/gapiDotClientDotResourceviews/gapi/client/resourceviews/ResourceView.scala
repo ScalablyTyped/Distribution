@@ -48,17 +48,17 @@ object ResourceView {
     size: Int | Double = null
   ): ResourceView = {
     val __obj = js.Dynamic.literal()
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (network != null) __obj.updateDynamic("network")(network)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceView]
   }

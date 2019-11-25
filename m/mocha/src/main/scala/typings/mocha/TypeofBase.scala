@@ -77,7 +77,7 @@ object TypeofBase {
     useColors: Boolean,
     window: Anon_Width
   ): TypeofBase = {
-    val __obj = js.Dynamic.literal(color = js.Any.fromFunction2(color), colors = colors, cursor = cursor, generateDiff = js.Any.fromFunction2(generateDiff), inlineDiffs = inlineDiffs, list = js.Any.fromFunction1(list), symbols = symbols, useColors = useColors, window = window)
+    val __obj = js.Dynamic.literal(color = js.Any.fromFunction2(color), colors = colors.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], generateDiff = js.Any.fromFunction2(generateDiff), inlineDiffs = inlineDiffs.asInstanceOf[js.Any], list = js.Any.fromFunction1(list), symbols = symbols.asInstanceOf[js.Any], useColors = useColors.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofBase]
   }

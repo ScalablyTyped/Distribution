@@ -12,7 +12,7 @@ trait withI18nProps extends js.Object {
 object withI18nProps {
   @scala.inline
   def apply(i18n: I18n): withI18nProps = {
-    val __obj = js.Dynamic.literal(i18n = i18n)
+    val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[withI18nProps]
   }

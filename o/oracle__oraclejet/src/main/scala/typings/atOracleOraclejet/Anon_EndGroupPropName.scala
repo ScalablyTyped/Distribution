@@ -26,8 +26,8 @@ object Anon_EndGroupPropName {
     yMin: Double,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_EndGroupPropName = {
-    val __obj = js.Dynamic.literal(endGroup = endGroup, startGroup = startGroup, xMax = xMax, xMin = xMin, yMax = yMax, yMin = yMin)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(endGroup = endGroup.asInstanceOf[js.Any], startGroup = startGroup.asInstanceOf[js.Any], xMax = xMax.asInstanceOf[js.Any], xMin = xMin.asInstanceOf[js.Any], yMax = yMax.asInstanceOf[js.Any], yMin = yMin.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_EndGroupPropName]
   }
 }

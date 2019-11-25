@@ -21,8 +21,8 @@ object Anon_Color {
   @scala.inline
   def apply(color: js.Array[Double] = null, grayscale: js.Array[Double] = null): Anon_Color = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (grayscale != null) __obj.updateDynamic("grayscale")(grayscale)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (grayscale != null) __obj.updateDynamic("grayscale")(grayscale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Color]
   }
 }

@@ -12,8 +12,8 @@ trait Limit extends js.Object {
 object Limit {
   @scala.inline
   def apply(`type`: String, value: Double): Limit = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limit]
   }
 }

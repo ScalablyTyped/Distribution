@@ -1,5 +1,6 @@
 package typings.subscribeDashUiDashEvent
 
+import typings.subscribeDashUiDashEvent.subscribeDashUiDashEventMod.EventType
 import typings.subscribeDashUiDashEvent.subscribeDashUiDashEventMod.TouchEventType
 import typings.subscribeDashUiDashEvent.subscribeDashUiDashEventMod.UIEventType
 import scala.scalajs.js
@@ -11,40 +12,64 @@ object subscribeDashUiDashEventStrings {
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait resize extends UIEventType
+  sealed trait resize
+    extends EventType
+       with UIEventType
   
   @js.native
-  sealed trait resizeEnd extends UIEventType
+  sealed trait resizeEnd
+    extends EventType
+       with UIEventType
   
   @js.native
-  sealed trait resizeStart extends UIEventType
+  sealed trait resizeStart
+    extends EventType
+       with UIEventType
   
   @js.native
-  sealed trait scroll extends UIEventType
+  sealed trait scroll
+    extends EventType
+       with UIEventType
   
   @js.native
-  sealed trait scrollEnd extends UIEventType
+  sealed trait scrollEnd
+    extends EventType
+       with UIEventType
   
   @js.native
-  sealed trait scrollStart extends UIEventType
+  sealed trait scrollStart
+    extends EventType
+       with UIEventType
   
   @js.native
-  sealed trait touchend extends TouchEventType
+  sealed trait touchend
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchmove extends TouchEventType
+  sealed trait touchmove
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchmoveEnd extends TouchEventType
+  sealed trait touchmoveEnd
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchmoveStart extends TouchEventType
+  sealed trait touchmoveStart
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchstart extends TouchEventType
+  sealed trait touchstart
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait visibilitychange extends UIEventType
+  sealed trait visibilitychange
+    extends EventType
+       with UIEventType
   
   @js.native
   sealed trait x extends js.Object

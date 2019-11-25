@@ -18,9 +18,9 @@ object CreateLogoutResponseUrlOptions {
     sign_get_request: js.UndefOr[Boolean] = js.undefined
   ): CreateLogoutResponseUrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (in_response_to != null) __obj.updateDynamic("in_response_to")(in_response_to)
-    if (relay_state != null) __obj.updateDynamic("relay_state")(relay_state)
-    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request)
+    if (in_response_to != null) __obj.updateDynamic("in_response_to")(in_response_to.asInstanceOf[js.Any])
+    if (relay_state != null) __obj.updateDynamic("relay_state")(relay_state.asInstanceOf[js.Any])
+    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLogoutResponseUrlOptions]
   }
 }

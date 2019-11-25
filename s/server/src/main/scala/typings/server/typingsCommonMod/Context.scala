@@ -19,7 +19,7 @@ trait Context extends js.Object {
   var headers: StringDictionary[String]
   var ip: String
   var ips: js.UndefOr[js.Array[String]] = js.undefined
-  var log: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var log: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in server.server/typings/common.LogLevel ]: server.server/typings/common.LogFn}
     */ typings.server.serverStrings.Context with js.Any
   var method: String
@@ -44,7 +44,7 @@ object Context {
     files: Files,
     headers: StringDictionary[String],
     ip: String,
-    log: /* import warning: ImportType.apply c Unsupported type mapping: 
+    log: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in server.server/typings/common.LogLevel ]: server.server/typings/common.LogFn}
     */ typings.server.serverStrings.Context with js.Any,
     method: String,
@@ -60,8 +60,8 @@ object Context {
     xhr: Boolean,
     ips: js.Array[String] = null
   ): Context = {
-    val __obj = js.Dynamic.literal(cookie = cookie, data = data, error = error, files = files, headers = headers, ip = ip, log = log, method = method, options = options, params = params, path = path, query = query, req = req, res = res, secure = secure, session = session, url = url, xhr = xhr)
-    if (ips != null) __obj.updateDynamic("ips")(ips)
+    val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
+    if (ips != null) __obj.updateDynamic("ips")(ips.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

@@ -1,9 +1,6 @@
 package typings.dojo.dijit
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyHTMLElement
 import typings.dojo.dojoStrings.clickableIncrement
 import typings.dojo.dojoStrings.constraints
 import typings.dojo.dojoStrings.filterString
@@ -231,19 +228,65 @@ class _TimePicker () extends _WidgetBase {
   @JSName("set")
   def set_visibleIncrement(property: visibleIncrement, value: String): Unit = js.native
   @JSName("watch")
-  def watch_clickableIncrement(property: clickableIncrement, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_clickableIncrement(
+    property: clickableIncrement,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_constraints(property: constraints, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_constraints(
+    property: constraints,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_filterString(property: filterString, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_filterString(
+    property: filterString,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_selected(property: selected, callback: Fn_NewValueOldValuePropertyHTMLElement): Anon_Unwatch = js.native
+  def watch_selected(
+    property: selected,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[HTMLElement], 
+      /* newValue */ js.UndefOr[HTMLElement], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_value(
+    property: value,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_visibleIncrement(property: visibleIncrement, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_visibleIncrement(
+    property: visibleIncrement,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 
 @JSGlobal("dijit._TimePicker")

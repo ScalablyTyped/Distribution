@@ -14,10 +14,10 @@ trait Anon_NamePartnerid extends js.Object {
 object Anon_NamePartnerid {
   @scala.inline
   def apply(name: String, partner_id: String = null, url: String = null, version: String = null): Anon_NamePartnerid = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (partner_id != null) __obj.updateDynamic("partner_id")(partner_id)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (partner_id != null) __obj.updateDynamic("partner_id")(partner_id.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NamePartnerid]
   }
 }

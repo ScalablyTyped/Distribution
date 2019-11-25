@@ -44,18 +44,18 @@ object JpegOptions {
     trellisQuantisation: js.UndefOr[Boolean] = js.undefined
   ): JpegOptions = {
     val __obj = js.Dynamic.literal()
-    if (chromaSubsampling != null) __obj.updateDynamic("chromaSubsampling")(chromaSubsampling)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(optimiseCoding)) __obj.updateDynamic("optimiseCoding")(optimiseCoding)
-    if (!js.isUndefined(optimiseScans)) __obj.updateDynamic("optimiseScans")(optimiseScans)
-    if (!js.isUndefined(optimizeCoding)) __obj.updateDynamic("optimizeCoding")(optimizeCoding)
-    if (!js.isUndefined(optimizeScans)) __obj.updateDynamic("optimizeScans")(optimizeScans)
-    if (!js.isUndefined(overshootDeringing)) __obj.updateDynamic("overshootDeringing")(overshootDeringing)
-    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive)
+    if (chromaSubsampling != null) __obj.updateDynamic("chromaSubsampling")(chromaSubsampling.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimiseCoding)) __obj.updateDynamic("optimiseCoding")(optimiseCoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimiseScans)) __obj.updateDynamic("optimiseScans")(optimiseScans.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeCoding)) __obj.updateDynamic("optimizeCoding")(optimizeCoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeScans)) __obj.updateDynamic("optimizeScans")(optimizeScans.asInstanceOf[js.Any])
+    if (!js.isUndefined(overshootDeringing)) __obj.updateDynamic("overshootDeringing")(overshootDeringing.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (quantisationTable != null) __obj.updateDynamic("quantisationTable")(quantisationTable.asInstanceOf[js.Any])
     if (quantizationTable != null) __obj.updateDynamic("quantizationTable")(quantizationTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(trellisQuantisation)) __obj.updateDynamic("trellisQuantisation")(trellisQuantisation)
+    if (!js.isUndefined(trellisQuantisation)) __obj.updateDynamic("trellisQuantisation")(trellisQuantisation.asInstanceOf[js.Any])
     __obj.asInstanceOf[JpegOptions]
   }
 }

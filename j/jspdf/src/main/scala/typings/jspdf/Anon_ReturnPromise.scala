@@ -11,7 +11,7 @@ trait Anon_ReturnPromise extends js.Object {
 object Anon_ReturnPromise {
   @scala.inline
   def apply(returnPromise: Boolean): Anon_ReturnPromise = {
-    val __obj = js.Dynamic.literal(returnPromise = returnPromise)
+    val __obj = js.Dynamic.literal(returnPromise = returnPromise.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ReturnPromise]
   }

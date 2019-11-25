@@ -14,7 +14,7 @@ trait Anon_IdAscending extends js.Object {
 object Anon_IdAscending {
   @scala.inline
   def apply(idAscending: Double, idDescending: Double, nameAscending: Double, nameDescending: Double): Anon_IdAscending = {
-    val __obj = js.Dynamic.literal(idAscending = idAscending, idDescending = idDescending, nameAscending = nameAscending, nameDescending = nameDescending)
+    val __obj = js.Dynamic.literal(idAscending = idAscending.asInstanceOf[js.Any], idDescending = idDescending.asInstanceOf[js.Any], nameAscending = nameAscending.asInstanceOf[js.Any], nameDescending = nameDescending.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdAscending]
   }

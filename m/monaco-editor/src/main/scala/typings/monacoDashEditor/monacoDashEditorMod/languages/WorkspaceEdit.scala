@@ -11,7 +11,7 @@ trait WorkspaceEdit extends js.Object {
 object WorkspaceEdit {
   @scala.inline
   def apply(edits: js.Array[ResourceTextEdit | ResourceFileEdit]): WorkspaceEdit = {
-    val __obj = js.Dynamic.literal(edits = edits)
+    val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkspaceEdit]
   }

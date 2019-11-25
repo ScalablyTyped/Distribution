@@ -24,8 +24,8 @@ object MetricValue {
   @scala.inline
   def apply(value: String = null, variance: String = null): MetricValue = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (variance != null) __obj.updateDynamic("variance")(variance)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricValue]
   }
 }

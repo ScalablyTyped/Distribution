@@ -1,6 +1,5 @@
 package typings.extjs.Ext.toolbar
 
-import typings.extjs.Ext.IComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,31 +22,19 @@ object IToolbar {
   @scala.inline
   def apply(
     IContainer: typings.extjs.Ext.container.IContainer = null,
-    add: /* args */ js.UndefOr[js.Any] => _ = null,
-    baseCls: java.lang.String = null,
     defaultButtonUI: java.lang.String = null,
-    defaultType: java.lang.String = null,
     enableOverflow: js.UndefOr[Boolean] = js.undefined,
-    getRefItems: /* deep */ js.UndefOr[js.Any] => Unit = null,
-    insert: (/* index */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any]) => IComponent = null,
     isToolbar: js.UndefOr[Boolean] = js.undefined,
-    layout: js.Any = null,
     menuTriggerCls: java.lang.String = null,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): IToolbar = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (defaultButtonUI != null) __obj.updateDynamic("defaultButtonUI")(defaultButtonUI)
-    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
-    if (!js.isUndefined(enableOverflow)) __obj.updateDynamic("enableOverflow")(enableOverflow)
-    if (getRefItems != null) __obj.updateDynamic("getRefItems")(js.Any.fromFunction1(getRefItems))
-    if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction2(insert))
-    if (!js.isUndefined(isToolbar)) __obj.updateDynamic("isToolbar")(isToolbar)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (menuTriggerCls != null) __obj.updateDynamic("menuTriggerCls")(menuTriggerCls)
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (defaultButtonUI != null) __obj.updateDynamic("defaultButtonUI")(defaultButtonUI.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableOverflow)) __obj.updateDynamic("enableOverflow")(enableOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(isToolbar)) __obj.updateDynamic("isToolbar")(isToolbar.asInstanceOf[js.Any])
+    if (menuTriggerCls != null) __obj.updateDynamic("menuTriggerCls")(menuTriggerCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToolbar]
   }
 }

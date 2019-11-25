@@ -13,8 +13,8 @@ object Anon_Diff {
   @scala.inline
   def apply(diff: js.UndefOr[Boolean] = js.undefined, localIdeographFontFamily: String = null): Anon_Diff = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(diff)) __obj.updateDynamic("diff")(diff)
-    if (localIdeographFontFamily != null) __obj.updateDynamic("localIdeographFontFamily")(localIdeographFontFamily)
+    if (!js.isUndefined(diff)) __obj.updateDynamic("diff")(diff.asInstanceOf[js.Any])
+    if (localIdeographFontFamily != null) __obj.updateDynamic("localIdeographFontFamily")(localIdeographFontFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Diff]
   }
 }

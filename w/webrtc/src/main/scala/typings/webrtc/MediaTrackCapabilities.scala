@@ -22,7 +22,7 @@ object MediaTrackCapabilities {
   @scala.inline
   def apply(latency: DoubleRange = null): MediaTrackCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (latency != null) __obj.updateDynamic("latency")(latency)
+    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackCapabilities]
   }
 }

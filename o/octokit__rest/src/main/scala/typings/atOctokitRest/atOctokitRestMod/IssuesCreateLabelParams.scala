@@ -24,8 +24,8 @@ trait IssuesCreateLabelParams extends js.Object {
 object IssuesCreateLabelParams {
   @scala.inline
   def apply(color: String, name: String, owner: String, repo: String, description: String = null): IssuesCreateLabelParams = {
-    val __obj = js.Dynamic.literal(color = color, name = name, owner = owner, repo = repo)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesCreateLabelParams]
   }
 }

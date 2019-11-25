@@ -13,8 +13,8 @@ trait AuthOAuthToken extends js.Object {
 object AuthOAuthToken {
   @scala.inline
   def apply(token: String, `type`: oauth): AuthOAuthToken = {
-    val __obj = js.Dynamic.literal(token = token)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOAuthToken]
   }
 }

@@ -21,9 +21,9 @@ object TaskCompletionRequirements {
   ): TaskCompletionRequirements = {
     val __obj = js.Dynamic.literal()
     if (minimumAge != null) __obj.updateDynamic("minimumAge")(minimumAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(notes)) __obj.updateDynamic("notes")(notes)
-    if (!js.isUndefined(photo)) __obj.updateDynamic("photo")(photo)
-    if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature)
+    if (!js.isUndefined(notes)) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (!js.isUndefined(photo)) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
+    if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskCompletionRequirements]
   }
 }

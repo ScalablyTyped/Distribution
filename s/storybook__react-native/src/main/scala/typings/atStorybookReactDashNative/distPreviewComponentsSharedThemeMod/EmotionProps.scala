@@ -12,7 +12,7 @@ trait EmotionProps extends js.Object {
 object EmotionProps {
   @scala.inline
   def apply(theme: Anon_BackgroundColor): EmotionProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmotionProps]
   }

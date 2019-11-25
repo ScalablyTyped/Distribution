@@ -35,17 +35,17 @@ object Anon_AssocLanguage {
     language: String = null,
     uri: String = null
   ): Anon_AssocLanguage[T] = {
-    val __obj = js.Dynamic.literal(groupId = groupId, name = name)
+    val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (assocLanguage != null) __obj.updateDynamic("assocLanguage")(assocLanguage)
-    if (!js.isUndefined(autoselect)) __obj.updateDynamic("autoselect")(autoselect)
-    if (channels != null) __obj.updateDynamic("channels")(channels)
-    if (characteristics != null) __obj.updateDynamic("characteristics")(characteristics)
-    if (!js.isUndefined(forced)) __obj.updateDynamic("forced")(forced)
-    if (instreamId != null) __obj.updateDynamic("instreamId")(instreamId)
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (assocLanguage != null) __obj.updateDynamic("assocLanguage")(assocLanguage.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoselect)) __obj.updateDynamic("autoselect")(autoselect.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (characteristics != null) __obj.updateDynamic("characteristics")(characteristics.asInstanceOf[js.Any])
+    if (!js.isUndefined(forced)) __obj.updateDynamic("forced")(forced.asInstanceOf[js.Any])
+    if (instreamId != null) __obj.updateDynamic("instreamId")(instreamId.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AssocLanguage[T]]
   }
 }

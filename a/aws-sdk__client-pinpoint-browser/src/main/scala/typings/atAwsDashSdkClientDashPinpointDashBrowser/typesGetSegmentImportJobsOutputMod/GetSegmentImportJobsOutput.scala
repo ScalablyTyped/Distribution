@@ -22,7 +22,7 @@ trait GetSegmentImportJobsOutput extends OutputTypesUnion {
 object GetSegmentImportJobsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ImportJobsResponse: _UnmarshalledImportJobsResponse): GetSegmentImportJobsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, ImportJobsResponse = ImportJobsResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ImportJobsResponse = ImportJobsResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetSegmentImportJobsOutput]
   }

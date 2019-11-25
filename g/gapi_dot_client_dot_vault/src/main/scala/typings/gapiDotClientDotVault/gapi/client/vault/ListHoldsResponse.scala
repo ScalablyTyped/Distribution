@@ -18,8 +18,8 @@ object ListHoldsResponse {
   @scala.inline
   def apply(holds: js.Array[Hold] = null, nextPageToken: String = null): ListHoldsResponse = {
     val __obj = js.Dynamic.literal()
-    if (holds != null) __obj.updateDynamic("holds")(holds)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (holds != null) __obj.updateDynamic("holds")(holds.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHoldsResponse]
   }
 }

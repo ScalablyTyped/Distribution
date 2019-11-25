@@ -22,11 +22,11 @@ object Anon_DateField {
     timeZone: String = null
   ): Anon_DateField = {
     val __obj = js.Dynamic.literal()
-    if (dateField != null) __obj.updateDynamic("dateField")(dateField)
-    if (!js.isUndefined(dateOnly)) __obj.updateDynamic("dateOnly")(dateOnly)
-    if (formatUsing != null) __obj.updateDynamic("formatUsing")(formatUsing)
-    if (relativeTime != null) __obj.updateDynamic("relativeTime")(relativeTime)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (dateField != null) __obj.updateDynamic("dateField")(dateField.asInstanceOf[js.Any])
+    if (!js.isUndefined(dateOnly)) __obj.updateDynamic("dateOnly")(dateOnly.asInstanceOf[js.Any])
+    if (formatUsing != null) __obj.updateDynamic("formatUsing")(formatUsing.asInstanceOf[js.Any])
+    if (relativeTime != null) __obj.updateDynamic("relativeTime")(relativeTime.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DateField]
   }
 }

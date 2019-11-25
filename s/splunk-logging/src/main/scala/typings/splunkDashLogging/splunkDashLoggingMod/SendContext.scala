@@ -13,9 +13,9 @@ trait SendContext extends js.Object {
 object SendContext {
   @scala.inline
   def apply(message: js.Any, metadata: SendContextMetadata = null, severity: String = null): SendContext = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendContext]
   }
 }

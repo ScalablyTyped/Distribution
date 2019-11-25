@@ -27,8 +27,8 @@ trait defaultVectorFont extends js.Object {
 object defaultVectorFont {
   @scala.inline
   def apply(family: js.Object, size: String, `type`: String): defaultVectorFont = {
-    val __obj = js.Dynamic.literal(family = family, size = size)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultVectorFont]
   }
 }

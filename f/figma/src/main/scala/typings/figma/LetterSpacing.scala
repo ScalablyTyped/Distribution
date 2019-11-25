@@ -14,7 +14,7 @@ trait LetterSpacing extends js.Object {
 object LetterSpacing {
   @scala.inline
   def apply(unit: PIXELS | PERCENT, value: Double): LetterSpacing = {
-    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LetterSpacing]
   }

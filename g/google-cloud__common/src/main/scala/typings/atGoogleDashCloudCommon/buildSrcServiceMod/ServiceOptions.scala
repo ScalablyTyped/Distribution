@@ -36,16 +36,16 @@ object ServiceOptions {
   ): ServiceOptions = {
     val __obj = js.Dynamic.literal()
     if (clientOptions != null) __obj.updateDynamic("clientOptions")(clientOptions.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (interceptors_ != null) __obj.updateDynamic("interceptors_")(interceptors_)
-    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)
-    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (promise != null) __obj.updateDynamic("promise")(promise)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (interceptors_ != null) __obj.updateDynamic("interceptors_")(interceptors_.asInstanceOf[js.Any])
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile.asInstanceOf[js.Any])
+    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOptions]
   }
 }

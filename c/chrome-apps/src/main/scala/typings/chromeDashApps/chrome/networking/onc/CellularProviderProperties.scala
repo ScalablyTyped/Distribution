@@ -16,8 +16,8 @@ trait CellularProviderProperties extends js.Object {
 object CellularProviderProperties {
   @scala.inline
   def apply(Code: String, Name: String, Country: String = null): CellularProviderProperties = {
-    val __obj = js.Dynamic.literal(Code = Code, Name = Name)
-    if (Country != null) __obj.updateDynamic("Country")(Country)
+    val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
+    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellularProviderProperties]
   }
 }

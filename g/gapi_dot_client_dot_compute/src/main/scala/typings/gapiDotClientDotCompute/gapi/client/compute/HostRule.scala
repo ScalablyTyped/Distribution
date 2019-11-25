@@ -20,9 +20,9 @@ object HostRule {
   @scala.inline
   def apply(description: String = null, hosts: js.Array[String] = null, pathMatcher: String = null): HostRule = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts)
-    if (pathMatcher != null) __obj.updateDynamic("pathMatcher")(pathMatcher)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
+    if (pathMatcher != null) __obj.updateDynamic("pathMatcher")(pathMatcher.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostRule]
   }
 }

@@ -39,7 +39,7 @@ trait Theme
     * fonts, etc.
     */
   var styles: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in theme-ui.theme-ui.StyledTags ]:? @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.themeDashUi.themeDashUiStrings.Theme with js.Any
   ] = js.undefined
@@ -73,7 +73,7 @@ object Theme {
     shadows: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[BoxShadowProperty] = null,
     sizes: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object]] = null,
     space: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[Double | String] = null,
-    styles: /* import warning: ImportType.apply c Unsupported type mapping: 
+    styles: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in theme-ui.theme-ui.StyledTags ]:? @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.themeDashUi.themeDashUiStrings.Theme with js.Any = null,
     textStyles: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[StandardProperties[String | `0`]] = null,
@@ -87,21 +87,21 @@ object Theme {
     if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (colorStyles != null) __obj.updateDynamic("colorStyles")(colorStyles.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (fontSizes != null) __obj.updateDynamic("fontSizes")(fontSizes.asInstanceOf[js.Any])
     if (fontWeights != null) __obj.updateDynamic("fontWeights")(fontWeights.asInstanceOf[js.Any])
     if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
-    if (initialColorMode != null) __obj.updateDynamic("initialColorMode")(initialColorMode)
+    if (initialColorMode != null) __obj.updateDynamic("initialColorMode")(initialColorMode.asInstanceOf[js.Any])
     if (letterSpacings != null) __obj.updateDynamic("letterSpacings")(letterSpacings.asInstanceOf[js.Any])
     if (lineHeights != null) __obj.updateDynamic("lineHeights")(lineHeights.asInstanceOf[js.Any])
-    if (mediaQueries != null) __obj.updateDynamic("mediaQueries")(mediaQueries)
+    if (mediaQueries != null) __obj.updateDynamic("mediaQueries")(mediaQueries.asInstanceOf[js.Any])
     if (radii != null) __obj.updateDynamic("radii")(radii.asInstanceOf[js.Any])
     if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomProperties)) __obj.updateDynamic("useCustomProperties")(useCustomProperties)
+    if (!js.isUndefined(useCustomProperties)) __obj.updateDynamic("useCustomProperties")(useCustomProperties.asInstanceOf[js.Any])
     if (zIndices != null) __obj.updateDynamic("zIndices")(zIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }

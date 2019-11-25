@@ -18,7 +18,7 @@ trait CopyrightObject extends js.Object {
 object CopyrightObject {
   @scala.inline
   def apply(text: String, `type`: C | P): CopyrightObject = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyrightObject]
   }

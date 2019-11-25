@@ -37,8 +37,8 @@ object FeatureViewModelLastEditInfo {
     `type`: String,
     user: String
   ): FeatureViewModelLastEditInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, date = date, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureViewModelLastEditInfo]
   }
 }

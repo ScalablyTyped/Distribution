@@ -14,9 +14,9 @@ trait FieldType extends Type {
 object FieldType {
   @scala.inline
   def apply(key: String, `type`: typings.doctrine.doctrineStrings.FieldType, value: Type = null): FieldType = {
-    val __obj = js.Dynamic.literal(key = key)
-    __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldType]
   }
 }

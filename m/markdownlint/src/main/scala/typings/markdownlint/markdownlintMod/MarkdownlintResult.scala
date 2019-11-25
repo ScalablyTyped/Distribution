@@ -25,9 +25,9 @@ object MarkdownlintResult {
     errorDetail: String = null,
     errorRange: js.Tuple2[Double, Double] = null
   ): MarkdownlintResult = {
-    val __obj = js.Dynamic.literal(errorContext = errorContext, lineNumber = lineNumber, ruleAlias = ruleAlias, ruleDescription = ruleDescription, ruleName = ruleName)
-    if (errorDetail != null) __obj.updateDynamic("errorDetail")(errorDetail)
-    if (errorRange != null) __obj.updateDynamic("errorRange")(errorRange)
+    val __obj = js.Dynamic.literal(errorContext = errorContext.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], ruleAlias = ruleAlias.asInstanceOf[js.Any], ruleDescription = ruleDescription.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
+    if (errorDetail != null) __obj.updateDynamic("errorDetail")(errorDetail.asInstanceOf[js.Any])
+    if (errorRange != null) __obj.updateDynamic("errorRange")(errorRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkdownlintResult]
   }
 }

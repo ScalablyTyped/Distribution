@@ -27,7 +27,7 @@ object MiddlewareOptions {
     execute: (/* action */ Action[_], /* emitBound */ Socket, /* next */ Dispatch[_], /* dispatch */ Dispatch[_]) => _ = null
   ): MiddlewareOptions = {
     val __obj = js.Dynamic.literal()
-    if (eventName != null) __obj.updateDynamic("eventName")(eventName)
+    if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
     if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction4(execute))
     __obj.asInstanceOf[MiddlewareOptions]
   }

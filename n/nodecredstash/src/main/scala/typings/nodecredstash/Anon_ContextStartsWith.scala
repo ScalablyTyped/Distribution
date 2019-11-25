@@ -15,8 +15,8 @@ object Anon_ContextStartsWith {
   @scala.inline
   def apply(context: CredstashContext = null, startsWith: String = null, version: Int | Double = null): Anon_ContextStartsWith = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (startsWith != null) __obj.updateDynamic("startsWith")(startsWith)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (startsWith != null) __obj.updateDynamic("startsWith")(startsWith.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContextStartsWith]
   }

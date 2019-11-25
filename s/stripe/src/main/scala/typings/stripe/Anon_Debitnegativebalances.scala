@@ -33,9 +33,9 @@ object Anon_Debitnegativebalances {
     statement_descriptor: String = null
   ): Anon_Debitnegativebalances = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debit_negative_balances)) __obj.updateDynamic("debit_negative_balances")(debit_negative_balances)
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (!js.isUndefined(debit_negative_balances)) __obj.updateDynamic("debit_negative_balances")(debit_negative_balances.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Debitnegativebalances]
   }
 }

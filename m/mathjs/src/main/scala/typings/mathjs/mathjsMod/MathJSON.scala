@@ -14,9 +14,9 @@ trait MathJSON extends js.Object {
 object MathJSON {
   @scala.inline
   def apply(unit: String, value: Double, fixPrefix: js.UndefOr[Boolean] = js.undefined, mathjs: String = null): MathJSON = {
-    val __obj = js.Dynamic.literal(unit = unit, value = value)
-    if (!js.isUndefined(fixPrefix)) __obj.updateDynamic("fixPrefix")(fixPrefix)
-    if (mathjs != null) __obj.updateDynamic("mathjs")(mathjs)
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixPrefix)) __obj.updateDynamic("fixPrefix")(fixPrefix.asInstanceOf[js.Any])
+    if (mathjs != null) __obj.updateDynamic("mathjs")(mathjs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathJSON]
   }
 }

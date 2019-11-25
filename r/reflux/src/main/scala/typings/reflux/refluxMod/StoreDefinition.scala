@@ -21,10 +21,10 @@ object StoreDefinition {
     listenables: js.Array[_] = null
   ): StoreDefinition = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (getInitialState != null) __obj.updateDynamic("getInitialState")(getInitialState)
-    if (init != null) __obj.updateDynamic("init")(init)
-    if (listenables != null) __obj.updateDynamic("listenables")(listenables)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (getInitialState != null) __obj.updateDynamic("getInitialState")(getInitialState.asInstanceOf[js.Any])
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (listenables != null) __obj.updateDynamic("listenables")(listenables.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreDefinition]
   }
 }

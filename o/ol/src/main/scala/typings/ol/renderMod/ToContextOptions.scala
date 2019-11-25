@@ -15,7 +15,7 @@ object ToContextOptions {
   def apply(pixelRatio: Int | Double = null, size: Size = null): ToContextOptions = {
     val __obj = js.Dynamic.literal()
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToContextOptions]
   }
 }

@@ -18,8 +18,8 @@ trait SelectionParams extends js.Object {
 object SelectionParams {
   @scala.inline
   def apply(suggestedName: String, allowedFileExtensions: js.Array[String] = null): SelectionParams = {
-    val __obj = js.Dynamic.literal(suggestedName = suggestedName)
-    if (allowedFileExtensions != null) __obj.updateDynamic("allowedFileExtensions")(allowedFileExtensions)
+    val __obj = js.Dynamic.literal(suggestedName = suggestedName.asInstanceOf[js.Any])
+    if (allowedFileExtensions != null) __obj.updateDynamic("allowedFileExtensions")(allowedFileExtensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionParams]
   }
 }

@@ -33,7 +33,7 @@ object CameraData {
     yaw: Int | Double = null,
     zoom: Int | Double = null
   ): CameraData = {
-    val __obj = js.Dynamic.literal(position = position)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     if (fov != null) __obj.updateDynamic("fov")(fov.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     if (roll != null) __obj.updateDynamic("roll")(roll.asInstanceOf[js.Any])

@@ -95,8 +95,8 @@ object Anon_EdgeLength {
     val __obj = js.Dynamic.literal()
     if (edgeLength != null) __obj.updateDynamic("edgeLength")(edgeLength.asInstanceOf[js.Any])
     if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (initLayout != null) __obj.updateDynamic("initLayout")(initLayout)
-    if (!js.isUndefined(layoutAnimation)) __obj.updateDynamic("layoutAnimation")(layoutAnimation)
+    if (initLayout != null) __obj.updateDynamic("initLayout")(initLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(layoutAnimation)) __obj.updateDynamic("layoutAnimation")(layoutAnimation.asInstanceOf[js.Any])
     if (repulsion != null) __obj.updateDynamic("repulsion")(repulsion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EdgeLength]
   }

@@ -46,9 +46,9 @@ object JobInfoProperties {
     messages: js.Array[GPMessageProperties] = null
   ): JobInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
     if (jobStatus != null) __obj.updateDynamic("jobStatus")(jobStatus.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobInfoProperties]
   }
 }

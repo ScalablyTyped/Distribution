@@ -12,7 +12,7 @@ trait Anon_Checksum extends js.Object {
 object Anon_Checksum {
   @scala.inline
   def apply(checksum: Null, failedScanCount: Double): Anon_Checksum = {
-    val __obj = js.Dynamic.literal(checksum = checksum, failedScanCount = failedScanCount)
+    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], failedScanCount = failedScanCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Checksum]
   }

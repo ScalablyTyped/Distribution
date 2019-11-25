@@ -25,7 +25,7 @@ object ProxySettings {
   ): ProxySettings[M, S, SL] = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     if (ExcludeDomains != null) __obj.updateDynamic("ExcludeDomains")(ExcludeDomains.asInstanceOf[js.Any])
-    if (Manual != null) __obj.updateDynamic("Manual")(Manual)
+    if (Manual != null) __obj.updateDynamic("Manual")(Manual.asInstanceOf[js.Any])
     if (PAC != null) __obj.updateDynamic("PAC")(PAC.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxySettings[M, S, SL]]
   }

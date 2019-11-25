@@ -19,7 +19,7 @@ object IPlugin {
     destroy: () => Unit = null
   ): IPlugin = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
-    if (configSchema != null) __obj.updateDynamic("configSchema")(configSchema)
+    if (configSchema != null) __obj.updateDynamic("configSchema")(configSchema.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[IPlugin]
   }

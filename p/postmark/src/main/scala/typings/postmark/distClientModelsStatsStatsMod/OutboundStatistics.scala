@@ -45,7 +45,7 @@ object OutboundStatistics {
     WithPlatformRecorded: Double,
     WithReadTimeRecorded: Double
   ): OutboundStatistics = {
-    val __obj = js.Dynamic.literal(BounceRate = BounceRate, Bounced = Bounced, Opens = Opens, SMTPApiErrors = SMTPApiErrors, Sent = Sent, SpamComplaints = SpamComplaints, SpamComplaintsRate = SpamComplaintsRate, TotalClicks = TotalClicks, TotalTrackedLinksSent = TotalTrackedLinksSent, Tracked = Tracked, UniqueLinksClicked = UniqueLinksClicked, UniqueOpens = UniqueOpens, WithClientRecorded = WithClientRecorded, WithLinkTracking = WithLinkTracking, WithOpenTracking = WithOpenTracking, WithPlatformRecorded = WithPlatformRecorded, WithReadTimeRecorded = WithReadTimeRecorded)
+    val __obj = js.Dynamic.literal(BounceRate = BounceRate.asInstanceOf[js.Any], Bounced = Bounced.asInstanceOf[js.Any], Opens = Opens.asInstanceOf[js.Any], SMTPApiErrors = SMTPApiErrors.asInstanceOf[js.Any], Sent = Sent.asInstanceOf[js.Any], SpamComplaints = SpamComplaints.asInstanceOf[js.Any], SpamComplaintsRate = SpamComplaintsRate.asInstanceOf[js.Any], TotalClicks = TotalClicks.asInstanceOf[js.Any], TotalTrackedLinksSent = TotalTrackedLinksSent.asInstanceOf[js.Any], Tracked = Tracked.asInstanceOf[js.Any], UniqueLinksClicked = UniqueLinksClicked.asInstanceOf[js.Any], UniqueOpens = UniqueOpens.asInstanceOf[js.Any], WithClientRecorded = WithClientRecorded.asInstanceOf[js.Any], WithLinkTracking = WithLinkTracking.asInstanceOf[js.Any], WithOpenTracking = WithOpenTracking.asInstanceOf[js.Any], WithPlatformRecorded = WithPlatformRecorded.asInstanceOf[js.Any], WithReadTimeRecorded = WithReadTimeRecorded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutboundStatistics]
   }

@@ -59,18 +59,18 @@ object Image {
     vote: String = null,
     webm: String = null
   ): Image = {
-    val __obj = js.Dynamic.literal(animated = animated, bandwidth = bandwidth, datetime = datetime, description = description, favorite = favorite, height = height, id = id, link = link, section = section, size = size, title = title, views = views, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any], bandwidth = bandwidth.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], favorite = favorite.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (account_id != null) __obj.updateDynamic("account_id")(account_id.asInstanceOf[js.Any])
-    if (account_url != null) __obj.updateDynamic("account_url")(account_url)
-    if (deletehash != null) __obj.updateDynamic("deletehash")(deletehash)
-    if (gifv != null) __obj.updateDynamic("gifv")(gifv)
-    if (!js.isUndefined(looping)) __obj.updateDynamic("looping")(looping)
-    if (mp4 != null) __obj.updateDynamic("mp4")(mp4)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw)
-    if (vote != null) __obj.updateDynamic("vote")(vote)
-    if (webm != null) __obj.updateDynamic("webm")(webm)
+    if (account_url != null) __obj.updateDynamic("account_url")(account_url.asInstanceOf[js.Any])
+    if (deletehash != null) __obj.updateDynamic("deletehash")(deletehash.asInstanceOf[js.Any])
+    if (gifv != null) __obj.updateDynamic("gifv")(gifv.asInstanceOf[js.Any])
+    if (!js.isUndefined(looping)) __obj.updateDynamic("looping")(looping.asInstanceOf[js.Any])
+    if (mp4 != null) __obj.updateDynamic("mp4")(mp4.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw.asInstanceOf[js.Any])
+    if (vote != null) __obj.updateDynamic("vote")(vote.asInstanceOf[js.Any])
+    if (webm != null) __obj.updateDynamic("webm")(webm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
 }

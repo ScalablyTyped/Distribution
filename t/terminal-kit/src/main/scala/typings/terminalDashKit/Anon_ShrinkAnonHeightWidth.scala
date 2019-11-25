@@ -12,7 +12,7 @@ object Anon_ShrinkAnonHeightWidth {
   @scala.inline
   def apply(shrink: Anon_HeightWidth = null): Anon_ShrinkAnonHeightWidth = {
     val __obj = js.Dynamic.literal()
-    if (shrink != null) __obj.updateDynamic("shrink")(shrink)
+    if (shrink != null) __obj.updateDynamic("shrink")(shrink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ShrinkAnonHeightWidth]
   }
 }

@@ -21,9 +21,9 @@ object CreateTemplateOptions {
     transactional: js.UndefOr[Boolean] = js.undefined
   ): CreateTemplateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(click_tracking)) __obj.updateDynamic("click_tracking")(click_tracking)
-    if (!js.isUndefined(open_tracking)) __obj.updateDynamic("open_tracking")(open_tracking)
-    if (!js.isUndefined(transactional)) __obj.updateDynamic("transactional")(transactional)
+    if (!js.isUndefined(click_tracking)) __obj.updateDynamic("click_tracking")(click_tracking.asInstanceOf[js.Any])
+    if (!js.isUndefined(open_tracking)) __obj.updateDynamic("open_tracking")(open_tracking.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactional)) __obj.updateDynamic("transactional")(transactional.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTemplateOptions]
   }
 }

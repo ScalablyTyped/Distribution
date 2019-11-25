@@ -52,11 +52,11 @@ object ProjectsUpdateParams {
     `private`: js.UndefOr[Boolean] = js.undefined,
     state: open | closed = null
   ): ProjectsUpdateParams = {
-    val __obj = js.Dynamic.literal(project_id = project_id)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (organization_permission != null) __obj.updateDynamic("organization_permission")(organization_permission)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (organization_permission != null) __obj.updateDynamic("organization_permission")(organization_permission.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsUpdateParams]
   }

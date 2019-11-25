@@ -22,11 +22,11 @@ object TrustedAppId {
     kind: String = null
   ): TrustedAppId = {
     val __obj = js.Dynamic.literal()
-    if (androidPackageName != null) __obj.updateDynamic("androidPackageName")(androidPackageName)
-    if (certificateHashSHA1 != null) __obj.updateDynamic("certificateHashSHA1")(certificateHashSHA1)
-    if (certificateHashSHA256 != null) __obj.updateDynamic("certificateHashSHA256")(certificateHashSHA256)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (androidPackageName != null) __obj.updateDynamic("androidPackageName")(androidPackageName.asInstanceOf[js.Any])
+    if (certificateHashSHA1 != null) __obj.updateDynamic("certificateHashSHA1")(certificateHashSHA1.asInstanceOf[js.Any])
+    if (certificateHashSHA256 != null) __obj.updateDynamic("certificateHashSHA256")(certificateHashSHA256.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustedAppId]
   }
 }

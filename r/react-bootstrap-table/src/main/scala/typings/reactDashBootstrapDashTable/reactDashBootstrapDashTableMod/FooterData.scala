@@ -36,8 +36,8 @@ object FooterData {
     align: DataAlignType = null,
     formatter: /* tableData */ js.Array[_] => String | Double | ReactElement = null
   ): FooterData = {
-    val __obj = js.Dynamic.literal(columnIndex = columnIndex, label = label)
-    if (align != null) __obj.updateDynamic("align")(align)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     __obj.asInstanceOf[FooterData]
   }

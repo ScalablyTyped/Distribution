@@ -31,13 +31,13 @@ object Anon_CouponCurrency {
     value: Int | Double = null
   ): Anon_CouponCurrency = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (coupon != null) __obj.updateDynamic("coupon")(coupon)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
-    if (transaction_id != null) __obj.updateDynamic("transaction_id")(transaction_id)
+    if (transaction_id != null) __obj.updateDynamic("transaction_id")(transaction_id.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CouponCurrency]
   }

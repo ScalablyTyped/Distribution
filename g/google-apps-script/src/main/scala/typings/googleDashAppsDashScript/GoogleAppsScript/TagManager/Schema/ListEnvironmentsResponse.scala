@@ -13,8 +13,8 @@ object ListEnvironmentsResponse {
   @scala.inline
   def apply(environment: js.Array[Environment] = null, nextPageToken: String = null): ListEnvironmentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEnvironmentsResponse]
   }
 }

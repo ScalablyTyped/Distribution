@@ -32,10 +32,10 @@ object Provider {
     resourceTypes: js.Array[ProviderResourceType] = null
   ): Provider = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (registrationState != null) __obj.updateDynamic("registrationState")(registrationState)
-    if (resourceTypes != null) __obj.updateDynamic("resourceTypes")(resourceTypes)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (registrationState != null) __obj.updateDynamic("registrationState")(registrationState.asInstanceOf[js.Any])
+    if (resourceTypes != null) __obj.updateDynamic("resourceTypes")(resourceTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Provider]
   }
 }

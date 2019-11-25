@@ -30,7 +30,7 @@ trait SearchLabelsParams extends js.Object {
 object SearchLabelsParams {
   @scala.inline
   def apply(q: String, repository_id: Double, order: desc | asc = null, sort: created | updated = null): SearchLabelsParams = {
-    val __obj = js.Dynamic.literal(q = q, repository_id = repository_id)
+    val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any], repository_id = repository_id.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchLabelsParams]

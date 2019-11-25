@@ -15,7 +15,7 @@ object PlotMomentumPointOptions {
   @scala.inline
   def apply(events: PlotMomentumPointEventsOptions = null): PlotMomentumPointOptions = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMomentumPointOptions]
   }
 }

@@ -49,7 +49,7 @@ object Anon_AES {
     SHA512: Hasher,
     TripleDES: BlockCipher
   ): Anon_AES = {
-    val __obj = js.Dynamic.literal(AES = AES, DES = DES, EvpKDF = EvpKDF, HMAC = HMAC, MD5 = MD5, PBKDF2 = PBKDF2, RC4 = RC4, RC4Drop = RC4Drop, RIPEMD160 = RIPEMD160, Rabbit = Rabbit, RabbitLegacy = RabbitLegacy, SHA1 = SHA1, SHA256 = SHA256, SHA3 = SHA3, SHA384 = SHA384, SHA512 = SHA512, TripleDES = TripleDES)
+    val __obj = js.Dynamic.literal(AES = AES.asInstanceOf[js.Any], DES = DES.asInstanceOf[js.Any], EvpKDF = EvpKDF.asInstanceOf[js.Any], HMAC = HMAC.asInstanceOf[js.Any], MD5 = MD5.asInstanceOf[js.Any], PBKDF2 = PBKDF2.asInstanceOf[js.Any], RC4 = RC4.asInstanceOf[js.Any], RC4Drop = RC4Drop.asInstanceOf[js.Any], RIPEMD160 = RIPEMD160.asInstanceOf[js.Any], Rabbit = Rabbit.asInstanceOf[js.Any], RabbitLegacy = RabbitLegacy.asInstanceOf[js.Any], SHA1 = SHA1.asInstanceOf[js.Any], SHA256 = SHA256.asInstanceOf[js.Any], SHA3 = SHA3.asInstanceOf[js.Any], SHA384 = SHA384.asInstanceOf[js.Any], SHA512 = SHA512.asInstanceOf[js.Any], TripleDES = TripleDES.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AES]
   }

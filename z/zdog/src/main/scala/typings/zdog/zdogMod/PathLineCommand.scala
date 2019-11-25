@@ -12,7 +12,7 @@ trait PathLineCommand extends PathCommand {
 object PathLineCommand {
   @scala.inline
   def apply(line: VectorOptions): PathLineCommand = {
-    val __obj = js.Dynamic.literal(line = line)
+    val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PathLineCommand]
   }

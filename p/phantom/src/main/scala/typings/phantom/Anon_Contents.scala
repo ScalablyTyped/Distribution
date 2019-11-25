@@ -13,7 +13,7 @@ trait Anon_Contents extends js.Object {
 object Anon_Contents {
   @scala.inline
   def apply(contents: IPhantomCallback, height: String): Anon_Contents = {
-    val __obj = js.Dynamic.literal(contents = contents, height = height)
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Contents]
   }

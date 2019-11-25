@@ -21,11 +21,11 @@ object SavedFeedResponseInItem {
     start_time_in_video_in_sec: Null = null,
     user: SavedFeedResponseUser = null
   ): SavedFeedResponseInItem = {
-    val __obj = js.Dynamic.literal(position = position)
-    if (duration_in_video_in_sec != null) __obj.updateDynamic("duration_in_video_in_sec")(duration_in_video_in_sec)
-    if (product != null) __obj.updateDynamic("product")(product)
-    if (start_time_in_video_in_sec != null) __obj.updateDynamic("start_time_in_video_in_sec")(start_time_in_video_in_sec)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
+    if (duration_in_video_in_sec != null) __obj.updateDynamic("duration_in_video_in_sec")(duration_in_video_in_sec.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (start_time_in_video_in_sec != null) __obj.updateDynamic("start_time_in_video_in_sec")(start_time_in_video_in_sec.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseInItem]
   }
 }

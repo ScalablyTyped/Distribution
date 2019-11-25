@@ -14,8 +14,8 @@ object Anon_Document {
   @scala.inline
   def apply(document: Document = null, warn: js.UndefOr[Boolean] = js.undefined): Anon_Document = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (!js.isUndefined(warn)) __obj.updateDynamic("warn")(warn)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (!js.isUndefined(warn)) __obj.updateDynamic("warn")(warn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Document]
   }
 }

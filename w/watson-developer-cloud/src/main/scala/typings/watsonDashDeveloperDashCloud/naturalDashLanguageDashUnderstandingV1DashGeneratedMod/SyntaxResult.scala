@@ -14,8 +14,8 @@ object SyntaxResult {
   @scala.inline
   def apply(sentences: js.Array[SentenceResult] = null, tokens: js.Array[TokenResult] = null): SyntaxResult = {
     val __obj = js.Dynamic.literal()
-    if (sentences != null) __obj.updateDynamic("sentences")(sentences)
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens)
+    if (sentences != null) __obj.updateDynamic("sentences")(sentences.asInstanceOf[js.Any])
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxResult]
   }
 }

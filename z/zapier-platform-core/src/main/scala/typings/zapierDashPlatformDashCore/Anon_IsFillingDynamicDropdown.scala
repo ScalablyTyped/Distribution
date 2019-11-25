@@ -25,8 +25,8 @@ object Anon_IsFillingDynamicDropdown {
     page: Double,
     zap: Anon_Id = null
   ): Anon_IsFillingDynamicDropdown = {
-    val __obj = js.Dynamic.literal(isFillingDynamicDropdown = isFillingDynamicDropdown, isLoadingSample = isLoadingSample, isPopulatingDedupe = isPopulatingDedupe, isTestingAuth = isTestingAuth, limit = limit, page = page)
-    if (zap != null) __obj.updateDynamic("zap")(zap)
+    val __obj = js.Dynamic.literal(isFillingDynamicDropdown = isFillingDynamicDropdown.asInstanceOf[js.Any], isLoadingSample = isLoadingSample.asInstanceOf[js.Any], isPopulatingDedupe = isPopulatingDedupe.asInstanceOf[js.Any], isTestingAuth = isTestingAuth.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
+    if (zap != null) __obj.updateDynamic("zap")(zap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsFillingDynamicDropdown]
   }
 }

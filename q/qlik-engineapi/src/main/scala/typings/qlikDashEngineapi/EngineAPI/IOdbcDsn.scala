@@ -37,9 +37,9 @@ object IOdbcDsn {
     qBit32: js.UndefOr[Boolean] = js.undefined,
     qUserOnly: js.UndefOr[Boolean] = js.undefined
   ): IOdbcDsn = {
-    val __obj = js.Dynamic.literal(qDescription = qDescription, qName = qName)
-    if (!js.isUndefined(qBit32)) __obj.updateDynamic("qBit32")(qBit32)
-    if (!js.isUndefined(qUserOnly)) __obj.updateDynamic("qUserOnly")(qUserOnly)
+    val __obj = js.Dynamic.literal(qDescription = qDescription.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
+    if (!js.isUndefined(qBit32)) __obj.updateDynamic("qBit32")(qBit32.asInstanceOf[js.Any])
+    if (!js.isUndefined(qUserOnly)) __obj.updateDynamic("qUserOnly")(qUserOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOdbcDsn]
   }
 }

@@ -20,8 +20,8 @@ object Anon_Container {
     timeout: Int | Double = null
   ): Anon_Container = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (mutationObserverOptions != null) __obj.updateDynamic("mutationObserverOptions")(mutationObserverOptions)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (mutationObserverOptions != null) __obj.updateDynamic("mutationObserverOptions")(mutationObserverOptions.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Container]
   }

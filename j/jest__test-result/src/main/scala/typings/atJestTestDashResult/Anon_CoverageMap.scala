@@ -13,7 +13,7 @@ object Anon_CoverageMap {
   @scala.inline
   def apply(coverageMap: CoverageMap = null): Anon_CoverageMap = {
     val __obj = js.Dynamic.literal()
-    if (coverageMap != null) __obj.updateDynamic("coverageMap")(coverageMap)
+    if (coverageMap != null) __obj.updateDynamic("coverageMap")(coverageMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CoverageMap]
   }
 }

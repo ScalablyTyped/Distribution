@@ -50,7 +50,7 @@ object Metrics {
     TaskDuration: Double,
     Timestamp: Double
   ): Metrics = {
-    val __obj = js.Dynamic.literal(Documents = Documents, Frames = Frames, JSEventListeners = JSEventListeners, JSHeapTotalSize = JSHeapTotalSize, JSHeapUsedSize = JSHeapUsedSize, LayoutCount = LayoutCount, LayoutDuration = LayoutDuration, Nodes = Nodes, RecalcStyleCount = RecalcStyleCount, RecalcStyleDuration = RecalcStyleDuration, ScriptDuration = ScriptDuration, TaskDuration = TaskDuration, Timestamp = Timestamp)
+    val __obj = js.Dynamic.literal(Documents = Documents.asInstanceOf[js.Any], Frames = Frames.asInstanceOf[js.Any], JSEventListeners = JSEventListeners.asInstanceOf[js.Any], JSHeapTotalSize = JSHeapTotalSize.asInstanceOf[js.Any], JSHeapUsedSize = JSHeapUsedSize.asInstanceOf[js.Any], LayoutCount = LayoutCount.asInstanceOf[js.Any], LayoutDuration = LayoutDuration.asInstanceOf[js.Any], Nodes = Nodes.asInstanceOf[js.Any], RecalcStyleCount = RecalcStyleCount.asInstanceOf[js.Any], RecalcStyleDuration = RecalcStyleDuration.asInstanceOf[js.Any], ScriptDuration = ScriptDuration.asInstanceOf[js.Any], TaskDuration = TaskDuration.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Metrics]
   }

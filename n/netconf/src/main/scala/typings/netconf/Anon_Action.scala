@@ -24,7 +24,7 @@ object Anon_Action {
     action: merge | replace | `override` | update | set = null,
     format: text | xml = null
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal(config = config)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Action]

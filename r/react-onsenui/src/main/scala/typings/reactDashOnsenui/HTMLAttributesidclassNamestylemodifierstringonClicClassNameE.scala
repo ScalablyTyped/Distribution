@@ -29,11 +29,11 @@ object HTMLAttributesidclassNamestylemodifierstringonClicClassNameE {
     style: CSSProperties = null
   ): HTMLAttributesidclassNamestylemodifierstringonClicClassNameE = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNamestylemodifierstringonClicClassNameE]
   }
 }

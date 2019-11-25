@@ -23,12 +23,12 @@ object HasteConfig {
     platforms: js.Array[String] = null,
     throwOnModuleCollision: js.UndefOr[Boolean] = js.undefined
   ): HasteConfig = {
-    val __obj = js.Dynamic.literal(providesModuleNodeModules = providesModuleNodeModules)
-    if (!js.isUndefined(computeSha1)) __obj.updateDynamic("computeSha1")(computeSha1)
-    if (defaultPlatform != null) __obj.updateDynamic("defaultPlatform")(defaultPlatform)
-    if (hasteImplModulePath != null) __obj.updateDynamic("hasteImplModulePath")(hasteImplModulePath)
-    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
-    if (!js.isUndefined(throwOnModuleCollision)) __obj.updateDynamic("throwOnModuleCollision")(throwOnModuleCollision)
+    val __obj = js.Dynamic.literal(providesModuleNodeModules = providesModuleNodeModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(computeSha1)) __obj.updateDynamic("computeSha1")(computeSha1.asInstanceOf[js.Any])
+    if (defaultPlatform != null) __obj.updateDynamic("defaultPlatform")(defaultPlatform.asInstanceOf[js.Any])
+    if (hasteImplModulePath != null) __obj.updateDynamic("hasteImplModulePath")(hasteImplModulePath.asInstanceOf[js.Any])
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnModuleCollision)) __obj.updateDynamic("throwOnModuleCollision")(throwOnModuleCollision.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasteConfig]
   }
 }

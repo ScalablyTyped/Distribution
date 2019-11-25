@@ -21,7 +21,7 @@ object RollupBuild {
     write: OutputOptions => js.Promise[RollupOutput],
     getTimings: () => SerializedTimings = null
   ): RollupBuild = {
-    val __obj = js.Dynamic.literal(cache = cache, generate = js.Any.fromFunction1(generate), watchFiles = watchFiles, write = js.Any.fromFunction1(write))
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], generate = js.Any.fromFunction1(generate), watchFiles = watchFiles.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
     if (getTimings != null) __obj.updateDynamic("getTimings")(js.Any.fromFunction0(getTimings))
     __obj.asInstanceOf[RollupBuild]
   }

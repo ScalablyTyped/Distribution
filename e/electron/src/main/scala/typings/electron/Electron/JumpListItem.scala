@@ -70,15 +70,15 @@ object JumpListItem {
     workingDirectory: String = null
   ): JumpListItem = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (iconIndex != null) __obj.updateDynamic("iconIndex")(iconIndex.asInstanceOf[js.Any])
-    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (program != null) __obj.updateDynamic("program")(program)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory)
+    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[JumpListItem]
   }
 }

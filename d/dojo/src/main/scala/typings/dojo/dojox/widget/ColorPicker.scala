@@ -1,9 +1,6 @@
 package typings.dojo.dojox.widget
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit.form._FormWidget
 import typings.dojo.dojoStrings.PICKER_HUE_H
 import typings.dojo.dojoStrings.PICKER_HUE_SELECTOR_H
@@ -181,32 +178,134 @@ class ColorPicker () extends _FormWidget {
   @JSName("set")
   def set_webSafe(property: webSafe, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_PICKERHUEH(property: PICKER_HUE_H, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_PICKERHUEH(
+    property: PICKER_HUE_H,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_PICKERHUESELECTORH(property: PICKER_HUE_SELECTOR_H, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_PICKERHUESELECTORH(
+    property: PICKER_HUE_SELECTOR_H,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_PICKERSATSELECTORH(property: PICKER_SAT_SELECTOR_H, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_PICKERSATSELECTORH(
+    property: PICKER_SAT_SELECTOR_H,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_PICKERSATSELECTORW(property: PICKER_SAT_SELECTOR_W, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_PICKERSATSELECTORW(
+    property: PICKER_SAT_SELECTOR_W,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_PICKERSATVALH(property: PICKER_SAT_VAL_H, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_PICKERSATVALH(
+    property: PICKER_SAT_VAL_H,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_PICKERSATVALW(property: PICKER_SAT_VAL_W, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_PICKERSATVALW(
+    property: PICKER_SAT_VAL_W,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_animatePoint(property: animatePoint, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_animatePoint(
+    property: animatePoint,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_liveUpdate(property: liveUpdate, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_liveUpdate(
+    property: liveUpdate,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_showHex(property: showHex, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_showHex(
+    property: showHex,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_showHsv(property: showHsv, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_showHsv(
+    property: showHsv,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_showRgb(property: showRgb, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_showRgb(
+    property: showRgb,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_slideDuration(property: slideDuration, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_slideDuration(
+    property: slideDuration,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_webSafe(property: webSafe, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_webSafe(
+    property: webSafe,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

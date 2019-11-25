@@ -15,7 +15,7 @@ trait Connection extends VisitNode {
 object Connection {
   @scala.inline
   def apply(conditional: Boolean, key: String, value: TypeReferenceNode): Connection = {
-    val __obj = js.Dynamic.literal(conditional = conditional, key = key, value = value)
+    val __obj = js.Dynamic.literal(conditional = conditional.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Connection]
   }

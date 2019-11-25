@@ -16,8 +16,8 @@ object MutationOptions {
     refetchQueriesOnFailure: js.UndefOr[Boolean] = js.undefined
   ): MutationOptions = {
     val __obj = js.Dynamic.literal()
-    if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries)
-    if (!js.isUndefined(refetchQueriesOnFailure)) __obj.updateDynamic("refetchQueriesOnFailure")(refetchQueriesOnFailure)
+    if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
+    if (!js.isUndefined(refetchQueriesOnFailure)) __obj.updateDynamic("refetchQueriesOnFailure")(refetchQueriesOnFailure.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationOptions]
   }
 }

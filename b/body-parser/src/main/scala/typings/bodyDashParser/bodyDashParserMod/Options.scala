@@ -31,7 +31,7 @@ object Options {
     verify: (/* req */ IncomingMessage, /* res */ ServerResponse, /* buf */ Buffer, /* encoding */ String) => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate)
+    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction4(verify))

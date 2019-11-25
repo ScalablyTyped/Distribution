@@ -50,23 +50,23 @@ object ClassProperty {
     typeAnnotation: TypeAnnotation | TSTypeAnnotation | Noop = null,
     value: Expression = null
   ): ClassProperty = {
-    val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any], static = static)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
-    if (!js.isUndefined(definite)) __obj.updateDynamic("definite")(definite)
+    if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
+    if (!js.isUndefined(definite)) __obj.updateDynamic("definite")(definite.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassProperty]
   }
 }

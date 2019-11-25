@@ -1,6 +1,5 @@
 package typings.postmark.distClientModelsMod
 
-import typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,16 @@ class TemplateFilteringParameters ()
   extends typings.postmark.distClientModelsTemplatesTemplateMod.TemplateFilteringParameters {
   def this(count: Double) = this()
   def this(count: Double, offset: Double) = this()
-  def this(count: Double, offset: Double, templateType: TemplateTypes) = this()
-  def this(count: Double, offset: Double, templateType: TemplateTypes, layoutTemplate: String) = this()
+  def this(
+    count: Double,
+    offset: Double,
+    templateType: typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes
+  ) = this()
+  def this(
+    count: Double,
+    offset: Double,
+    templateType: typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes,
+    layoutTemplate: String
+  ) = this()
 }
 

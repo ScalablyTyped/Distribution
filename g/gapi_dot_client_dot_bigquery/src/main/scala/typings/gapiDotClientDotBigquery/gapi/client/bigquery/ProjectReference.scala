@@ -13,7 +13,7 @@ object ProjectReference {
   @scala.inline
   def apply(projectId: String = null): ProjectReference = {
     val __obj = js.Dynamic.literal()
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectReference]
   }
 }

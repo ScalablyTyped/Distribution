@@ -66,12 +66,12 @@ object PlusNavigatorShortcutOptions {
     toast: String = null
   ): PlusNavigatorShortcutOptions = {
     val __obj = js.Dynamic.literal()
-    if (classname != null) __obj.updateDynamic("classname")(classname)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (toast != null) __obj.updateDynamic("toast")(toast)
+    if (classname != null) __obj.updateDynamic("classname")(classname.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (toast != null) __obj.updateDynamic("toast")(toast.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNavigatorShortcutOptions]
   }
 }

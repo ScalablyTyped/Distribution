@@ -21,7 +21,7 @@ object Anon_ActionsContent {
     Content: FunctionComponent[TileContentProps],
     Media: FunctionComponent[TileMediaProps]
   ): Anon_ActionsContent = {
-    val __obj = js.Dynamic.literal(Actions = Actions, Content = Content, Media = Media)
+    val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Content = Content.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActionsContent]
   }

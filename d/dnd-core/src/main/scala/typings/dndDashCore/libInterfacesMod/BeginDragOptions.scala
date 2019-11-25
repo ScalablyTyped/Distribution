@@ -18,9 +18,9 @@ object BeginDragOptions {
     publishSource: js.UndefOr[Boolean] = js.undefined
   ): BeginDragOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset)
+    if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset.asInstanceOf[js.Any])
     if (getSourceClientOffset != null) __obj.updateDynamic("getSourceClientOffset")(js.Any.fromFunction1(getSourceClientOffset))
-    if (!js.isUndefined(publishSource)) __obj.updateDynamic("publishSource")(publishSource)
+    if (!js.isUndefined(publishSource)) __obj.updateDynamic("publishSource")(publishSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeginDragOptions]
   }
 }

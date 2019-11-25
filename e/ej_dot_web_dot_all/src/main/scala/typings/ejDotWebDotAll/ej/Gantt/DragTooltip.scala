@@ -27,9 +27,9 @@ object DragTooltip {
     tooltipTemplate: String = null
   ): DragTooltip = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
-    if (tooltipItems != null) __obj.updateDynamic("tooltipItems")(tooltipItems)
-    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (tooltipItems != null) __obj.updateDynamic("tooltipItems")(tooltipItems.asInstanceOf[js.Any])
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragTooltip]
   }
 }

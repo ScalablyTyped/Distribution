@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DeliverableState extends js.Object
 
+object DeliverableState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def deliverable: typings.nodeDashZendesk.nodeDashZendeskStrings.deliverable = this.cast("deliverable")
+  @scala.inline
+  def undeliverable: typings.nodeDashZendesk.nodeDashZendeskStrings.undeliverable = this.cast("undeliverable")
+}
+

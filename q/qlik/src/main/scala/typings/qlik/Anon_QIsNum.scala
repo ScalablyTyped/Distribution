@@ -12,7 +12,7 @@ trait Anon_QIsNum extends js.Object {
 object Anon_QIsNum {
   @scala.inline
   def apply(qIsNum: Boolean, qString: String): Anon_QIsNum = {
-    val __obj = js.Dynamic.literal(qIsNum = qIsNum, qString = qString)
+    val __obj = js.Dynamic.literal(qIsNum = qIsNum.asInstanceOf[js.Any], qString = qString.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QIsNum]
   }

@@ -24,13 +24,13 @@ object CordovaPackageJson {
     main: String = null,
     scripts: StringDictionary[js.UndefOr[String]] = null
   ): CordovaPackageJson = {
-    val __obj = js.Dynamic.literal(cordova = cordova, name = name, version = version)
-    if (bin != null) __obj.updateDynamic("bin")(bin)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies)
-    if (main != null) __obj.updateDynamic("main")(main)
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts)
+    val __obj = js.Dynamic.literal(cordova = cordova.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPackageJson]
   }
 }

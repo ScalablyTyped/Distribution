@@ -11,7 +11,7 @@ trait DynamoDBStreamEvent extends js.Object {
 object DynamoDBStreamEvent {
   @scala.inline
   def apply(Records: js.Array[DynamoDBRecord]): DynamoDBStreamEvent = {
-    val __obj = js.Dynamic.literal(Records = Records)
+    val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DynamoDBStreamEvent]
   }

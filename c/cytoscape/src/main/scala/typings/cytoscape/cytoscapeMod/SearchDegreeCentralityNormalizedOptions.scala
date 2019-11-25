@@ -34,7 +34,7 @@ object SearchDegreeCentralityNormalizedOptions {
   ): SearchDegreeCentralityNormalizedOptions = {
     val __obj = js.Dynamic.literal(weight = js.Any.fromFunction1(weight))
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedOptions]
   }
 }

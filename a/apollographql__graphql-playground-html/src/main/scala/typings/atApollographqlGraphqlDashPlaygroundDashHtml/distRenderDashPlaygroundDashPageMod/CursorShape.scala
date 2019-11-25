@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait CursorShape extends js.Object
 
+object CursorShape {
+  @scala.inline
+  def block: typings.atApollographqlGraphqlDashPlaygroundDashHtml.atApollographqlGraphqlDashPlaygroundDashHtmlStrings.block = this.cast("block")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def line: typings.atApollographqlGraphqlDashPlaygroundDashHtml.atApollographqlGraphqlDashPlaygroundDashHtmlStrings.line = this.cast("line")
+  @scala.inline
+  def underline: typings.atApollographqlGraphqlDashPlaygroundDashHtml.atApollographqlGraphqlDashPlaygroundDashHtmlStrings.underline = this.cast("underline")
+}
+

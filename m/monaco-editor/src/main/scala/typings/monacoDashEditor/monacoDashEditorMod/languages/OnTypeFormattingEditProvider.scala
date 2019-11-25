@@ -31,7 +31,7 @@ object OnTypeFormattingEditProvider {
     autoFormatTriggerCharacters: js.Array[String],
     provideOnTypeFormattingEdits: (ITextModel, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): OnTypeFormattingEditProvider = {
-    val __obj = js.Dynamic.literal(autoFormatTriggerCharacters = autoFormatTriggerCharacters, provideOnTypeFormattingEdits = js.Any.fromFunction5(provideOnTypeFormattingEdits))
+    val __obj = js.Dynamic.literal(autoFormatTriggerCharacters = autoFormatTriggerCharacters.asInstanceOf[js.Any], provideOnTypeFormattingEdits = js.Any.fromFunction5(provideOnTypeFormattingEdits))
   
     __obj.asInstanceOf[OnTypeFormattingEditProvider]
   }

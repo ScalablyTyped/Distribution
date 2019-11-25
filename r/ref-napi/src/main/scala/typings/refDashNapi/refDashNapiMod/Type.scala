@@ -30,9 +30,9 @@ object Type {
     alignment: Int | Double = null,
     name: String = null
   ): Type = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), indirection = indirection, set = js.Any.fromFunction3(set), size = size)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), indirection = indirection.asInstanceOf[js.Any], set = js.Any.fromFunction3(set), size = size.asInstanceOf[js.Any])
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
 }

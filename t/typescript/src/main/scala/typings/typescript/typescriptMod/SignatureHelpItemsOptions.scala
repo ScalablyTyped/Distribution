@@ -12,7 +12,7 @@ object SignatureHelpItemsOptions {
   @scala.inline
   def apply(triggerReason: SignatureHelpTriggerReason = null): SignatureHelpItemsOptions = {
     val __obj = js.Dynamic.literal()
-    if (triggerReason != null) __obj.updateDynamic("triggerReason")(triggerReason)
+    if (triggerReason != null) __obj.updateDynamic("triggerReason")(triggerReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpItemsOptions]
   }
 }

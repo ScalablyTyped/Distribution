@@ -30,11 +30,11 @@ object ListOffersHistoryResponse {
     totalResults: Int | Double = null
   ): ListOffersHistoryResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canShowEntireCompany)) __obj.updateDynamic("canShowEntireCompany")(canShowEntireCompany)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (offers != null) __obj.updateDynamic("offers")(offers)
-    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
-    if (!js.isUndefined(showingEntireCompany)) __obj.updateDynamic("showingEntireCompany")(showingEntireCompany)
+    if (!js.isUndefined(canShowEntireCompany)) __obj.updateDynamic("canShowEntireCompany")(canShowEntireCompany.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (offers != null) __obj.updateDynamic("offers")(offers.asInstanceOf[js.Any])
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(showingEntireCompany)) __obj.updateDynamic("showingEntireCompany")(showingEntireCompany.asInstanceOf[js.Any])
     if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOffersHistoryResponse]
   }

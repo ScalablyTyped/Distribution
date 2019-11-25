@@ -13,7 +13,7 @@ trait Anon_DateHTML extends js.Object {
 object Anon_DateHTML {
   @scala.inline
   def apply(Date: String, HTML: Double, Text: Double): Anon_DateHTML = {
-    val __obj = js.Dynamic.literal(Date = Date, HTML = HTML, Text = Text)
+    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], HTML = HTML.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DateHTML]
   }

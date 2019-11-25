@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait PopoverReference extends js.Object
 
+object PopoverReference {
+  @scala.inline
+  def anchorEl: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.anchorEl = this.cast("anchorEl")
+  @scala.inline
+  def anchorPosition: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.anchorPosition = this.cast("anchorPosition")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def none: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none = this.cast("none")
+}
+

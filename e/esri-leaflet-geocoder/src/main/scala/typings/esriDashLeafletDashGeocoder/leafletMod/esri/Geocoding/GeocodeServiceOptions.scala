@@ -19,11 +19,11 @@ object GeocodeServiceOptions {
     useCors: js.UndefOr[Boolean] = js.undefined
   ): GeocodeServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (!js.isUndefined(supportsSuggest)) __obj.updateDynamic("supportsSuggest")(supportsSuggest)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsSuggest)) __obj.updateDynamic("supportsSuggest")(supportsSuggest.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (!js.isUndefined(useCors)) __obj.updateDynamic("useCors")(useCors)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCors)) __obj.updateDynamic("useCors")(useCors.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodeServiceOptions]
   }
 }

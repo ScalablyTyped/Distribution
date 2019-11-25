@@ -15,8 +15,8 @@ object FileHash {
   @scala.inline
   def apply(hashType: FileHashType = null, hashValue: String = null): FileHash = {
     val __obj = js.Dynamic.literal()
-    if (hashType != null) __obj.updateDynamic("hashType")(hashType)
-    if (hashValue != null) __obj.updateDynamic("hashValue")(hashValue)
+    if (hashType != null) __obj.updateDynamic("hashType")(hashType.asInstanceOf[js.Any])
+    if (hashValue != null) __obj.updateDynamic("hashValue")(hashValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileHash]
   }
 }

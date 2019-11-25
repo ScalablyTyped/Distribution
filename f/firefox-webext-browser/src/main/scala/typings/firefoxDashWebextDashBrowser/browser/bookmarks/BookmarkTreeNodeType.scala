@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait BookmarkTreeNodeType extends js.Object
 
+object BookmarkTreeNodeType {
+  @scala.inline
+  def bookmark: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.bookmark = this.cast("bookmark")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def folder: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.folder = this.cast("folder")
+  @scala.inline
+  def separator: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.separator = this.cast("separator")
+}
+

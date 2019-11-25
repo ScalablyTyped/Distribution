@@ -20,8 +20,8 @@ object CommitResponse {
   @scala.inline
   def apply(commitTime: String = null, writeResults: js.Array[WriteResult] = null): CommitResponse = {
     val __obj = js.Dynamic.literal()
-    if (commitTime != null) __obj.updateDynamic("commitTime")(commitTime)
-    if (writeResults != null) __obj.updateDynamic("writeResults")(writeResults)
+    if (commitTime != null) __obj.updateDynamic("commitTime")(commitTime.asInstanceOf[js.Any])
+    if (writeResults != null) __obj.updateDynamic("writeResults")(writeResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitResponse]
   }
 }

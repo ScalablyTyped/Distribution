@@ -194,18 +194,18 @@ object ExtraOptions {
   ): ExtraOptions = {
     val __obj = js.Dynamic.literal()
     if (anchorScrolling != null) __obj.updateDynamic("anchorScrolling")(anchorScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTracing)) __obj.updateDynamic("enableTracing")(enableTracing)
+    if (!js.isUndefined(enableTracing)) __obj.updateDynamic("enableTracing")(enableTracing.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction1(errorHandler))
-    if (initialNavigation != null) __obj.updateDynamic("initialNavigation")(initialNavigation)
+    if (initialNavigation != null) __obj.updateDynamic("initialNavigation")(initialNavigation.asInstanceOf[js.Any])
     if (malformedUriErrorHandler != null) __obj.updateDynamic("malformedUriErrorHandler")(js.Any.fromFunction3(malformedUriErrorHandler))
     if (onSameUrlNavigation != null) __obj.updateDynamic("onSameUrlNavigation")(onSameUrlNavigation.asInstanceOf[js.Any])
     if (paramsInheritanceStrategy != null) __obj.updateDynamic("paramsInheritanceStrategy")(paramsInheritanceStrategy.asInstanceOf[js.Any])
-    if (preloadingStrategy != null) __obj.updateDynamic("preloadingStrategy")(preloadingStrategy)
+    if (preloadingStrategy != null) __obj.updateDynamic("preloadingStrategy")(preloadingStrategy.asInstanceOf[js.Any])
     if (relativeLinkResolution != null) __obj.updateDynamic("relativeLinkResolution")(relativeLinkResolution.asInstanceOf[js.Any])
     if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
     if (scrollPositionRestoration != null) __obj.updateDynamic("scrollPositionRestoration")(scrollPositionRestoration.asInstanceOf[js.Any])
     if (urlUpdateStrategy != null) __obj.updateDynamic("urlUpdateStrategy")(urlUpdateStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash)
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraOptions]
   }
 }

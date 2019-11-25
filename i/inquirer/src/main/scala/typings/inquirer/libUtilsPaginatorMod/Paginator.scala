@@ -43,7 +43,7 @@ object Paginator {
     pointer: Double,
     screen: typings.inquirer.libUtilsScreenDashManagerMod.^
   ): Paginator = {
-    val __obj = js.Dynamic.literal(lastIndex = lastIndex, paginate = js.Any.fromFunction2(paginate), pointer = pointer, screen = screen)
+    val __obj = js.Dynamic.literal(lastIndex = lastIndex.asInstanceOf[js.Any], paginate = js.Any.fromFunction2(paginate), pointer = pointer.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Paginator]
   }

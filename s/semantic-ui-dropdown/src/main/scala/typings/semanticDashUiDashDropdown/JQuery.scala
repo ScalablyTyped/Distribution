@@ -210,12 +210,12 @@ trait JQuery extends js.Object {
   @JSName("dropdown")
   def dropdown_setting(behavior: setting, value: DropdownSettings): JQuery = js.native
   @JSName("dropdown")
-  def dropdown_setting[K /* <: String */](behavior: setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl[K] */ js.Any = js.native
+  def dropdown_setting[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl[K] */ js.Any = js.native
   @JSName("dropdown")
   def dropdown_setting[K /* <: String */](
     behavior: setting,
     name: K,
-    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl[K] */ js.Any
   ): JQuery = js.native
   /**
     * Recreates dropdown menu from select option values.

@@ -12,7 +12,7 @@ trait Anon_Records[T /* <: BaseResponse[scala.Nothing] */] extends js.Object {
 object Anon_Records {
   @scala.inline
   def apply[T /* <: BaseResponse[scala.Nothing] */](records: js.Array[T]): Anon_Records[T] = {
-    val __obj = js.Dynamic.literal(records = records)
+    val __obj = js.Dynamic.literal(records = records.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Records[T]]
   }

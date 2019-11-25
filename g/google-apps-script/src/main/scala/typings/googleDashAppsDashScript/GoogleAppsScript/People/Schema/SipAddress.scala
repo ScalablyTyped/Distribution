@@ -20,10 +20,10 @@ object SipAddress {
     value: String = null
   ): SipAddress = {
     val __obj = js.Dynamic.literal()
-    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SipAddress]
   }
 }

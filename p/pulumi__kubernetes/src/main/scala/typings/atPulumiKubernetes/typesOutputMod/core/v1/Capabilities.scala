@@ -21,7 +21,7 @@ trait Capabilities extends js.Object {
 object Capabilities {
   @scala.inline
   def apply(add: js.Array[String], drop: js.Array[String]): Capabilities = {
-    val __obj = js.Dynamic.literal(add = add, drop = drop)
+    val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Capabilities]
   }

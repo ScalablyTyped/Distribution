@@ -14,19 +14,24 @@ sealed trait MacAlgorithm extends js.Object
 @js.native
 object MacAlgorithm extends js.Object {
   @js.native
-  sealed trait HMAC_MD5 extends MacAlgorithm
+  sealed trait HMAC_MD5
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
   
   @js.native
-  sealed trait HMAC_SHA_1 extends MacAlgorithm
+  sealed trait HMAC_SHA_1
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
   
   @js.native
-  sealed trait HMAC_SHA_256 extends MacAlgorithm
+  sealed trait HMAC_SHA_256
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
   
   @js.native
-  sealed trait HMAC_SHA_384 extends MacAlgorithm
+  sealed trait HMAC_SHA_384
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
   
   @js.native
-  sealed trait HMAC_SHA_512 extends MacAlgorithm
+  sealed trait HMAC_SHA_512
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
   
   /* 0 */ val HMAC_MD5: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_MD5 with Double = js.native
   /* 1 */ val HMAC_SHA_1: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_1 with Double = js.native
@@ -34,6 +39,8 @@ object MacAlgorithm extends js.Object {
   /* 3 */ val HMAC_SHA_384: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_384 with Double = js.native
   /* 4 */ val HMAC_SHA_512: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_512 with Double = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MacAlgorithm with Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm with Double
+  ] = js.native
 }
 

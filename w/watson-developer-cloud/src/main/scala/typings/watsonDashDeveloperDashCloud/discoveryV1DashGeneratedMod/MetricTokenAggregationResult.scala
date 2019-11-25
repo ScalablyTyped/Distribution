@@ -19,7 +19,7 @@ object MetricTokenAggregationResult {
   def apply(event_rate: Int | Double = null, key: String = null, matching_results: Int | Double = null): MetricTokenAggregationResult = {
     val __obj = js.Dynamic.literal()
     if (event_rate != null) __obj.updateDynamic("event_rate")(event_rate.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (matching_results != null) __obj.updateDynamic("matching_results")(matching_results.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricTokenAggregationResult]
   }

@@ -22,11 +22,11 @@ object DataSourceParameterMapDataFilter {
     value: js.Any = null
   ): DataSourceParameterMapDataFilter = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (logic != null) __obj.updateDynamic("logic")(logic)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (logic != null) __obj.updateDynamic("logic")(logic.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceParameterMapDataFilter]
   }
 }

@@ -40,10 +40,10 @@ object CodePathOptions {
     logResource: Resource = null
   ): CodePathOptions = {
     val __obj = js.Dynamic.literal()
-    if (extraExcludePackages != null) __obj.updateDynamic("extraExcludePackages")(extraExcludePackages)
-    if (extraIncludePackages != null) __obj.updateDynamic("extraIncludePackages")(extraIncludePackages)
-    if (extraIncludePaths != null) __obj.updateDynamic("extraIncludePaths")(extraIncludePaths)
-    if (logResource != null) __obj.updateDynamic("logResource")(logResource)
+    if (extraExcludePackages != null) __obj.updateDynamic("extraExcludePackages")(extraExcludePackages.asInstanceOf[js.Any])
+    if (extraIncludePackages != null) __obj.updateDynamic("extraIncludePackages")(extraIncludePackages.asInstanceOf[js.Any])
+    if (extraIncludePaths != null) __obj.updateDynamic("extraIncludePaths")(extraIncludePaths.asInstanceOf[js.Any])
+    if (logResource != null) __obj.updateDynamic("logResource")(logResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodePathOptions]
   }
 }

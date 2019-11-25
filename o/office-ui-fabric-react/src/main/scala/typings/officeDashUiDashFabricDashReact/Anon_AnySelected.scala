@@ -45,17 +45,17 @@ object Anon_AnySelected {
     isSelected: js.UndefOr[Boolean] = js.undefined
   ): Anon_AnySelected = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anySelected)) __obj.updateDynamic("anySelected")(anySelected)
-    if (!js.isUndefined(canSelect)) __obj.updateDynamic("canSelect")(canSelect)
-    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps)
-    if (checkboxCellClassName != null) __obj.updateDynamic("checkboxCellClassName")(checkboxCellClassName)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (droppingClassName != null) __obj.updateDynamic("droppingClassName")(droppingClassName)
-    if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations)
-    if (!js.isUndefined(isCheckVisible)) __obj.updateDynamic("isCheckVisible")(isCheckVisible)
-    if (!js.isUndefined(isRowHeader)) __obj.updateDynamic("isRowHeader")(isRowHeader)
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    if (!js.isUndefined(anySelected)) __obj.updateDynamic("anySelected")(anySelected.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSelect)) __obj.updateDynamic("canSelect")(canSelect.asInstanceOf[js.Any])
+    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
+    if (checkboxCellClassName != null) __obj.updateDynamic("checkboxCellClassName")(checkboxCellClassName.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (droppingClassName != null) __obj.updateDynamic("droppingClassName")(droppingClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCheckVisible)) __obj.updateDynamic("isCheckVisible")(isCheckVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRowHeader)) __obj.updateDynamic("isRowHeader")(isRowHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AnySelected]
   }
 }

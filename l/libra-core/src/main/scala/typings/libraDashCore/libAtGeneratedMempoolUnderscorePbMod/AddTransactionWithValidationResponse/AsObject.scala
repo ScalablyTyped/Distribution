@@ -17,8 +17,8 @@ object AsObject {
     currentVersion: String,
     status: typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatus.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(currentVersion = currentVersion)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(currentVersion = currentVersion.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

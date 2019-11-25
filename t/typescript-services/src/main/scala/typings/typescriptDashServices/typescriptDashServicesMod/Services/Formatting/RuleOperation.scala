@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services.Formatting
 
-import typings.typescriptDashServices.TypeScript.Services.Formatting.RuleAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,10 +13,10 @@ class RuleOperation ()
 @JSImport("typescript-services", "Services.Formatting.RuleOperation")
 @js.native
 object RuleOperation extends js.Object {
-  def create1(action: RuleAction): typings.typescriptDashServices.TypeScript.Services.Formatting.RuleOperation = js.native
+  def create1(action: typings.typescriptDashServices.TypeScript.Services.Formatting.RuleAction): typings.typescriptDashServices.TypeScript.Services.Formatting.RuleOperation = js.native
   def create2(
     context: typings.typescriptDashServices.TypeScript.Services.Formatting.RuleOperationContext,
-    action: RuleAction
+    action: typings.typescriptDashServices.TypeScript.Services.Formatting.RuleAction
   ): typings.typescriptDashServices.TypeScript.Services.Formatting.RuleOperation = js.native
 }
 

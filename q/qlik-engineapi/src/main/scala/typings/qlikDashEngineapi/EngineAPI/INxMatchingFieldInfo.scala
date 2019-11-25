@@ -21,7 +21,7 @@ trait INxMatchingFieldInfo extends js.Object {
 object INxMatchingFieldInfo {
   @scala.inline
   def apply(qName: String, qTags: js.Array[String]): INxMatchingFieldInfo = {
-    val __obj = js.Dynamic.literal(qName = qName, qTags = qTags)
+    val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxMatchingFieldInfo]
   }

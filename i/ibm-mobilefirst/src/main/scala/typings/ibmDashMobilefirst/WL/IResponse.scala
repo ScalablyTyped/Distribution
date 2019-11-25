@@ -12,7 +12,7 @@ object IResponse {
   @scala.inline
   def apply(invocationContext: js.Any = null): IResponse = {
     val __obj = js.Dynamic.literal()
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
+    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResponse]
   }
 }

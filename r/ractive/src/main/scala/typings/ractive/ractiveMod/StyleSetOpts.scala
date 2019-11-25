@@ -19,9 +19,9 @@ object StyleSetOpts {
     shuffle: Shuffler = null
   ): StyleSetOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(apply)) __obj.updateDynamic("apply")(apply)
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
-    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep)
+    if (!js.isUndefined(apply)) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep.asInstanceOf[js.Any])
     if (shuffle != null) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSetOpts]
   }

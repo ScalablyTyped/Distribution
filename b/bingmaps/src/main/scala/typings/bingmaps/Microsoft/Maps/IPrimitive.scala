@@ -33,7 +33,7 @@ object IPrimitive {
     metadata: js.Any = null
   ): IPrimitive = {
     val __obj = js.Dynamic.literal(getCursor = js.Any.fromFunction0(getCursor), getVisible = js.Any.fromFunction0(getVisible), setOptions = js.Any.fromFunction1(setOptions))
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrimitive]
   }
 }

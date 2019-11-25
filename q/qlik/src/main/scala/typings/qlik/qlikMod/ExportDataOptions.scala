@@ -19,8 +19,8 @@ trait ExportDataOptions extends js.Object {
 object ExportDataOptions {
   @scala.inline
   def apply(download: Boolean, format: OOXML | CSV_C | CSV_T, state: A | P, filename: String = null): ExportDataOptions = {
-    val __obj = js.Dynamic.literal(download = download, format = format.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(download = download.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportDataOptions]
   }
 }

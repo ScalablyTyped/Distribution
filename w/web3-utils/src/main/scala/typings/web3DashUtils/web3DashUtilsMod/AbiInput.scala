@@ -19,10 +19,10 @@ object AbiInput {
     components: js.Array[AbiInput] = null,
     indexed: js.UndefOr[Boolean] = js.undefined
   ): AbiInput = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbiInput]
   }
 }

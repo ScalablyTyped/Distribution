@@ -17,7 +17,7 @@ trait AudioSpriteSound extends js.Object {
 object AudioSpriteSound {
   @scala.inline
   def apply(spritemap: js.Object): AudioSpriteSound = {
-    val __obj = js.Dynamic.literal(spritemap = spritemap)
+    val __obj = js.Dynamic.literal(spritemap = spritemap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AudioSpriteSound]
   }

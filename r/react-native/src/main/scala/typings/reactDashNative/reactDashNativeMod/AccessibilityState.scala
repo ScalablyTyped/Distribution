@@ -38,11 +38,11 @@ object AccessibilityState {
     selected: js.UndefOr[Boolean] = js.undefined
   ): AccessibilityState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(busy)) __obj.updateDynamic("busy")(busy)
+    if (!js.isUndefined(busy)) __obj.updateDynamic("busy")(busy.asInstanceOf[js.Any])
     if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityState]
   }
 }

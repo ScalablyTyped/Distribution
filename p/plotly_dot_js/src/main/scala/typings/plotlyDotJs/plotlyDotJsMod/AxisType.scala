@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait AxisType extends js.Object
 
+object AxisType {
+  @scala.inline
+  def `-`: typings.plotlyDotJs.plotlyDotJsStrings.`-` = this.cast("-")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def category: typings.plotlyDotJs.plotlyDotJsStrings.category = this.cast("category")
+  @scala.inline
+  def date: typings.plotlyDotJs.plotlyDotJsStrings.date = this.cast("date")
+  @scala.inline
+  def linear: typings.plotlyDotJs.plotlyDotJsStrings.linear = this.cast("linear")
+  @scala.inline
+  def log: typings.plotlyDotJs.plotlyDotJsStrings.log = this.cast("log")
+}
+

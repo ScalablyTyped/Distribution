@@ -14,8 +14,8 @@ trait ForeignKeySpec extends js.Object {
 object ForeignKeySpec {
   @scala.inline
   def apply(mapping: String | js.Any, name: String, table: String, rules: ForeignKeyRules = null): ForeignKeySpec = {
-    val __obj = js.Dynamic.literal(mapping = mapping.asInstanceOf[js.Any], name = name, table = table)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(mapping = mapping.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForeignKeySpec]
   }
 }

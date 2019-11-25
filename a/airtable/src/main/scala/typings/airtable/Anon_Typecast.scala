@@ -11,7 +11,7 @@ trait Anon_Typecast extends js.Object {
 object Anon_Typecast {
   @scala.inline
   def apply(typecast: Boolean): Anon_Typecast = {
-    val __obj = js.Dynamic.literal(typecast = typecast)
+    val __obj = js.Dynamic.literal(typecast = typecast.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Typecast]
   }

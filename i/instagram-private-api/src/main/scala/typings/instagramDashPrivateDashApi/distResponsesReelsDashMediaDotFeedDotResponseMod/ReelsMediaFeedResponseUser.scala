@@ -27,14 +27,14 @@ object ReelsMediaFeedResponseUser {
     profile_pic_url: String = null,
     username: String = null
   ): ReelsMediaFeedResponseUser = {
-    val __obj = js.Dynamic.literal(pk = pk)
-    if (friendship_status != null) __obj.updateDynamic("friendship_status")(friendship_status)
-    if (full_name != null) __obj.updateDynamic("full_name")(full_name)
-    if (!js.isUndefined(is_private)) __obj.updateDynamic("is_private")(is_private)
-    if (!js.isUndefined(is_verified)) __obj.updateDynamic("is_verified")(is_verified)
-    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id)
-    if (profile_pic_url != null) __obj.updateDynamic("profile_pic_url")(profile_pic_url)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(pk = pk.asInstanceOf[js.Any])
+    if (friendship_status != null) __obj.updateDynamic("friendship_status")(friendship_status.asInstanceOf[js.Any])
+    if (full_name != null) __obj.updateDynamic("full_name")(full_name.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_private)) __obj.updateDynamic("is_private")(is_private.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_verified)) __obj.updateDynamic("is_verified")(is_verified.asInstanceOf[js.Any])
+    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id.asInstanceOf[js.Any])
+    if (profile_pic_url != null) __obj.updateDynamic("profile_pic_url")(profile_pic_url.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsMediaFeedResponseUser]
   }
 }

@@ -20,10 +20,10 @@ object CodemirrorOptions {
     theme: String = null
   ): CodemirrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(htmlNode)) __obj.updateDynamic("htmlNode")(htmlNode)
-    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(htmlNode)) __obj.updateDynamic("htmlNode")(htmlNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodemirrorOptions]
   }
 }

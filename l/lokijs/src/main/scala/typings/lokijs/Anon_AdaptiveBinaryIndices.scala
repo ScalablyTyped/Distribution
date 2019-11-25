@@ -12,7 +12,7 @@ object Anon_AdaptiveBinaryIndices {
   @scala.inline
   def apply(adaptiveBinaryIndices: js.UndefOr[Boolean] = js.undefined): Anon_AdaptiveBinaryIndices = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adaptiveBinaryIndices)) __obj.updateDynamic("adaptiveBinaryIndices")(adaptiveBinaryIndices)
+    if (!js.isUndefined(adaptiveBinaryIndices)) __obj.updateDynamic("adaptiveBinaryIndices")(adaptiveBinaryIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AdaptiveBinaryIndices]
   }
 }

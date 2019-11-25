@@ -15,8 +15,8 @@ object SourceSplitRequest {
   @scala.inline
   def apply(options: SourceSplitOptions = null, source: Source = null): SourceSplitRequest = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceSplitRequest]
   }
 }

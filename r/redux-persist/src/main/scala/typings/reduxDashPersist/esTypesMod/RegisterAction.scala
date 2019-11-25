@@ -13,8 +13,8 @@ trait RegisterAction extends PersistorAction {
 object RegisterAction {
   @scala.inline
   def apply(key: String, `type`: `persist/REGISTER`): RegisterAction = {
-    val __obj = js.Dynamic.literal(key = key)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterAction]
   }
 }

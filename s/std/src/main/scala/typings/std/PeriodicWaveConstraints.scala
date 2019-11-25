@@ -12,7 +12,7 @@ object PeriodicWaveConstraints {
   @scala.inline
   def apply(disableNormalization: js.UndefOr[scala.Boolean] = js.undefined): PeriodicWaveConstraints = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableNormalization)) __obj.updateDynamic("disableNormalization")(disableNormalization)
+    if (!js.isUndefined(disableNormalization)) __obj.updateDynamic("disableNormalization")(disableNormalization.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeriodicWaveConstraints]
   }
 }

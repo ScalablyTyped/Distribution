@@ -15,6 +15,5 @@ class Fetch ()
 @js.native
 object Fetch extends js.Object {
   def initOptions(opts: FetchOptions, version: Double): Double = js.native
-  type PRUNE = typings.nodegit.fetchMod.Fetch.PRUNE
 }
 

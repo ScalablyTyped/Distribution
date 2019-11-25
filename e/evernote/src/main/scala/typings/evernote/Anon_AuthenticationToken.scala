@@ -31,13 +31,13 @@ object Anon_AuthenticationToken {
     user: User = null,
     webApiUrlPrefix: String = null
   ): Anon_AuthenticationToken = {
-    val __obj = js.Dynamic.literal(authenticationToken = authenticationToken, currentTime = currentTime, expiration = expiration)
-    if (noteStoreUrl != null) __obj.updateDynamic("noteStoreUrl")(noteStoreUrl)
-    if (publicUserInfo != null) __obj.updateDynamic("publicUserInfo")(publicUserInfo)
-    if (secondFactorDeliveryHint != null) __obj.updateDynamic("secondFactorDeliveryHint")(secondFactorDeliveryHint)
-    if (!js.isUndefined(secondFactorRequired)) __obj.updateDynamic("secondFactorRequired")(secondFactorRequired)
-    if (user != null) __obj.updateDynamic("user")(user)
-    if (webApiUrlPrefix != null) __obj.updateDynamic("webApiUrlPrefix")(webApiUrlPrefix)
+    val __obj = js.Dynamic.literal(authenticationToken = authenticationToken.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any])
+    if (noteStoreUrl != null) __obj.updateDynamic("noteStoreUrl")(noteStoreUrl.asInstanceOf[js.Any])
+    if (publicUserInfo != null) __obj.updateDynamic("publicUserInfo")(publicUserInfo.asInstanceOf[js.Any])
+    if (secondFactorDeliveryHint != null) __obj.updateDynamic("secondFactorDeliveryHint")(secondFactorDeliveryHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondFactorRequired)) __obj.updateDynamic("secondFactorRequired")(secondFactorRequired.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (webApiUrlPrefix != null) __obj.updateDynamic("webApiUrlPrefix")(webApiUrlPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthenticationToken]
   }
 }

@@ -17,9 +17,9 @@ object Anon_Description {
   @scala.inline
   def apply(description: String = null, extraDescription: String = null, url: String = null): Anon_Description = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extraDescription != null) __obj.updateDynamic("extraDescription")(extraDescription)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extraDescription != null) __obj.updateDynamic("extraDescription")(extraDescription.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Description]
   }
 }

@@ -19,9 +19,9 @@ object ManagedEBookAssignment {
     target: DeviceAndAppManagementAssignmentTarget = null
   ): ManagedEBookAssignment = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (installIntent != null) __obj.updateDynamic("installIntent")(installIntent)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (installIntent != null) __obj.updateDynamic("installIntent")(installIntent.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedEBookAssignment]
   }
 }

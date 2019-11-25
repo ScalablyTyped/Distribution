@@ -28,11 +28,11 @@ object CompareReturn {
     unaligned_elements: js.Array[UnalignedElement] = null
   ): CompareReturn = {
     val __obj = js.Dynamic.literal()
-    if (aligned_elements != null) __obj.updateDynamic("aligned_elements")(aligned_elements)
-    if (documents != null) __obj.updateDynamic("documents")(documents)
-    if (model_id != null) __obj.updateDynamic("model_id")(model_id)
-    if (model_version != null) __obj.updateDynamic("model_version")(model_version)
-    if (unaligned_elements != null) __obj.updateDynamic("unaligned_elements")(unaligned_elements)
+    if (aligned_elements != null) __obj.updateDynamic("aligned_elements")(aligned_elements.asInstanceOf[js.Any])
+    if (documents != null) __obj.updateDynamic("documents")(documents.asInstanceOf[js.Any])
+    if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
+    if (model_version != null) __obj.updateDynamic("model_version")(model_version.asInstanceOf[js.Any])
+    if (unaligned_elements != null) __obj.updateDynamic("unaligned_elements")(unaligned_elements.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompareReturn]
   }
 }

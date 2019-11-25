@@ -16,11 +16,11 @@ package object libUseRefetchableFragmentNodeMod {
   type RefetchFnBase[TVars, TOptions] = js.Function2[/* vars */ TVars, /* options */ js.UndefOr[TOptions], Disposable]
   type RefetchFnDynamic[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */, TOptions] = (RefetchInexactDynamicResponse[TQuery, TOptions]) with (RefetchExactDynamicResponse[TQuery, TOptions])
   type RefetchFnExact[TQuery /* <: OperationType */, TOptions] = RefetchFnBase[
-    /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any, 
     TOptions
   ]
   type RefetchFnInexact[TQuery /* <: OperationType */, TOptions] = RefetchFnBase[
-    /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any, 
     TOptions
   ]
   type RefetchInexact[TQuery /* <: OperationType */, TOptions] = js.Function1[/* data */ js.UndefOr[js.Any], RefetchFnInexact[TQuery, TOptions]]

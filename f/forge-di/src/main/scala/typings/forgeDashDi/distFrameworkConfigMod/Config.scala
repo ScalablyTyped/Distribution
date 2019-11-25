@@ -13,7 +13,7 @@ object Config {
   @scala.inline
   def apply(inspector: Inspector = null): Config = {
     val __obj = js.Dynamic.literal()
-    if (inspector != null) __obj.updateDynamic("inspector")(inspector)
+    if (inspector != null) __obj.updateDynamic("inspector")(inspector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

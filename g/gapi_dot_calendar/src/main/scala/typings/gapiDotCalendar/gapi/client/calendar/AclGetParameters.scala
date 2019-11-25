@@ -12,7 +12,7 @@ trait AclGetParameters extends js.Object {
 object AclGetParameters {
   @scala.inline
   def apply(calendarId: String, ruleId: String): AclGetParameters = {
-    val __obj = js.Dynamic.literal(calendarId = calendarId, ruleId = ruleId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AclGetParameters]
   }

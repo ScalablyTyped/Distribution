@@ -14,7 +14,7 @@ trait Anon_ApFilePaths extends js.Object {
 object Anon_ApFilePaths {
   @scala.inline
   def apply(apFilePaths: js.Array[String]): Anon_ApFilePaths = {
-    val __obj = js.Dynamic.literal(apFilePaths = apFilePaths)
+    val __obj = js.Dynamic.literal(apFilePaths = apFilePaths.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApFilePaths]
   }

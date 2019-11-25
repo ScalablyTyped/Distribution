@@ -12,7 +12,7 @@ object MSearchResponse {
   @scala.inline
   def apply[T](responses: js.Array[SearchResponse[T]] = null): MSearchResponse[T] = {
     val __obj = js.Dynamic.literal()
-    if (responses != null) __obj.updateDynamic("responses")(responses)
+    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSearchResponse[T]]
   }
 }

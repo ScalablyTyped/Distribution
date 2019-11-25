@@ -21,10 +21,10 @@ object DaylightTimeZoneOffset {
   ): DaylightTimeZoneOffset = {
     val __obj = js.Dynamic.literal()
     if (dayOccurrence != null) __obj.updateDynamic("dayOccurrence")(dayOccurrence.asInstanceOf[js.Any])
-    if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek)
+    if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
     if (daylightBias != null) __obj.updateDynamic("daylightBias")(daylightBias.asInstanceOf[js.Any])
     if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DaylightTimeZoneOffset]
   }

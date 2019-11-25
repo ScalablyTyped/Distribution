@@ -80,19 +80,19 @@ object ListObjectsV2Output {
     Prefix: String = null,
     StartAfter: String = null
   ): ListObjectsV2Output = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (CommonPrefixes != null) __obj.updateDynamic("CommonPrefixes")(CommonPrefixes)
-    if (Contents != null) __obj.updateDynamic("Contents")(Contents)
-    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken)
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (CommonPrefixes != null) __obj.updateDynamic("CommonPrefixes")(CommonPrefixes.asInstanceOf[js.Any])
+    if (Contents != null) __obj.updateDynamic("Contents")(Contents.asInstanceOf[js.Any])
+    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
+    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
     if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
     if (KeyCount != null) __obj.updateDynamic("KeyCount")(KeyCount.asInstanceOf[js.Any])
     if (MaxKeys != null) __obj.updateDynamic("MaxKeys")(MaxKeys.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken)
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
-    if (StartAfter != null) __obj.updateDynamic("StartAfter")(StartAfter)
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken.asInstanceOf[js.Any])
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
+    if (StartAfter != null) __obj.updateDynamic("StartAfter")(StartAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectsV2Output]
   }
 }

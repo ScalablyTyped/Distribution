@@ -16,7 +16,7 @@ trait EventMap extends js.Object {
 object EventMap {
   @scala.inline
   def apply(complete: Event[complete, js.UndefOr[scala.Nothing]]): EventMap = {
-    val __obj = js.Dynamic.literal(complete = complete)
+    val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap]
   }

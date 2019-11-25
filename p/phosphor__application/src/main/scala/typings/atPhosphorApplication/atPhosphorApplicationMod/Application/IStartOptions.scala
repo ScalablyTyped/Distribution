@@ -39,9 +39,9 @@ object IStartOptions {
     startPlugins: js.Array[String] = null
   ): IStartOptions = {
     val __obj = js.Dynamic.literal()
-    if (hostID != null) __obj.updateDynamic("hostID")(hostID)
-    if (ignorePlugins != null) __obj.updateDynamic("ignorePlugins")(ignorePlugins)
-    if (startPlugins != null) __obj.updateDynamic("startPlugins")(startPlugins)
+    if (hostID != null) __obj.updateDynamic("hostID")(hostID.asInstanceOf[js.Any])
+    if (ignorePlugins != null) __obj.updateDynamic("ignorePlugins")(ignorePlugins.asInstanceOf[js.Any])
+    if (startPlugins != null) __obj.updateDynamic("startPlugins")(startPlugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStartOptions]
   }
 }

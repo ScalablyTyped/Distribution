@@ -39,9 +39,9 @@ object FieldInfo {
     zeroFill: Boolean,
     default: String = null
   ): FieldInfo = {
-    val __obj = js.Dynamic.literal(catalog = catalog, charsetNr = charsetNr, db = db, decimals = decimals, flags = flags, length = length, name = name, orgName = orgName, orgTable = orgTable, protocol41 = protocol41, table = table, zeroFill = zeroFill)
-    __obj.updateDynamic("type")(`type`)
-    if (default != null) __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(catalog = catalog.asInstanceOf[js.Any], charsetNr = charsetNr.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], decimals = decimals.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], orgName = orgName.asInstanceOf[js.Any], orgTable = orgTable.asInstanceOf[js.Any], protocol41 = protocol41.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], zeroFill = zeroFill.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInfo]
   }
 }

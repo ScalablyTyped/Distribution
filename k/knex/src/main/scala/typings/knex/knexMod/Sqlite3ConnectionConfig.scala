@@ -13,8 +13,8 @@ trait Sqlite3ConnectionConfig extends js.Object {
 object Sqlite3ConnectionConfig {
   @scala.inline
   def apply(filename: String, debug: js.UndefOr[Boolean] = js.undefined): Sqlite3ConnectionConfig = {
-    val __obj = js.Dynamic.literal(filename = filename)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sqlite3ConnectionConfig]
   }
 }

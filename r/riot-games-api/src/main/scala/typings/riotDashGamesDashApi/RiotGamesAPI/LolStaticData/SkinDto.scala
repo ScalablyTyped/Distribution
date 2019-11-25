@@ -13,7 +13,7 @@ trait SkinDto extends js.Object {
 object SkinDto {
   @scala.inline
   def apply(id: Double, name: String, num: Double): SkinDto = {
-    val __obj = js.Dynamic.literal(id = id, name = name, num = num)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], num = num.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SkinDto]
   }

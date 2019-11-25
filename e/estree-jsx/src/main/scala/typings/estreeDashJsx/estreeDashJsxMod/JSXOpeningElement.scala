@@ -25,12 +25,12 @@ object JSXOpeningElement {
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): JSXOpeningElement = {
-    val __obj = js.Dynamic.literal(attributes = attributes, name = name.asInstanceOf[js.Any], selfClosing = selfClosing)
-    __obj.updateDynamic("type")(`type`)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSXOpeningElement]
   }
 }

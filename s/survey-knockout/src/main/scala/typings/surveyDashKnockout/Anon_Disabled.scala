@@ -25,7 +25,7 @@ object Anon_Disabled {
     root: String,
     selected: String
   ): Anon_Disabled = {
-    val __obj = js.Dynamic.literal(disabled = disabled, item = item, itemText = itemText, maxText = maxText, minText = minText, root = root, selected = selected)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemText = itemText.asInstanceOf[js.Any], maxText = maxText.asInstanceOf[js.Any], minText = minText.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Disabled]
   }

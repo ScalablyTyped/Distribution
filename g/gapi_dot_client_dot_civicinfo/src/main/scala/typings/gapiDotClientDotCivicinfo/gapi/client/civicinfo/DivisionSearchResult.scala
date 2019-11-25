@@ -21,9 +21,9 @@ object DivisionSearchResult {
   @scala.inline
   def apply(aliases: js.Array[String] = null, name: String = null, ocdId: String = null): DivisionSearchResult = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (ocdId != null) __obj.updateDynamic("ocdId")(ocdId)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ocdId != null) __obj.updateDynamic("ocdId")(ocdId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DivisionSearchResult]
   }
 }

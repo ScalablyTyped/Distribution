@@ -20,10 +20,10 @@ object PDFViewerDplProcessing {
     upload: PDFViewerDplProcessingUpload = null
   ): PDFViewerDplProcessing = {
     val __obj = js.Dynamic.literal()
-    if (download != null) __obj.updateDynamic("download")(download)
-    if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand)
-    if (read != null) __obj.updateDynamic("read")(read)
-    if (upload != null) __obj.updateDynamic("upload")(upload)
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerDplProcessing]
   }
 }

@@ -15,8 +15,8 @@ object Anon_Entity {
   @scala.inline
   def apply(entity: String = null, entityId: String = null): Anon_Entity = {
     val __obj = js.Dynamic.literal()
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Entity]
   }
 }

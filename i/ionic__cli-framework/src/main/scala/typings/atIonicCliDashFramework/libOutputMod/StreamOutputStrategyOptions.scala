@@ -14,8 +14,8 @@ trait StreamOutputStrategyOptions extends js.Object {
 object StreamOutputStrategyOptions {
   @scala.inline
   def apply(stream: WritableStream, colors: Colors = null): StreamOutputStrategyOptions = {
-    val __obj = js.Dynamic.literal(stream = stream)
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamOutputStrategyOptions]
   }
 }

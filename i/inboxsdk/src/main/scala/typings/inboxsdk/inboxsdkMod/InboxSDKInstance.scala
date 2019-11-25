@@ -47,7 +47,7 @@ object InboxSDKInstance {
     User: UserInstance,
     Widgets: WidgetsInstance
   ): InboxSDKInstance = {
-    val __obj = js.Dynamic.literal(ButterBar = ButterBar, Compose = Compose, Conversations = Conversations, Global = Global, Keyboard = Keyboard, Lists = Lists, NavMenu = NavMenu, Router = Router, Search = Search, Toolbars = Toolbars, User = User, Widgets = Widgets)
+    val __obj = js.Dynamic.literal(ButterBar = ButterBar.asInstanceOf[js.Any], Compose = Compose.asInstanceOf[js.Any], Conversations = Conversations.asInstanceOf[js.Any], Global = Global.asInstanceOf[js.Any], Keyboard = Keyboard.asInstanceOf[js.Any], Lists = Lists.asInstanceOf[js.Any], NavMenu = NavMenu.asInstanceOf[js.Any], Router = Router.asInstanceOf[js.Any], Search = Search.asInstanceOf[js.Any], Toolbars = Toolbars.asInstanceOf[js.Any], User = User.asInstanceOf[js.Any], Widgets = Widgets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InboxSDKInstance]
   }

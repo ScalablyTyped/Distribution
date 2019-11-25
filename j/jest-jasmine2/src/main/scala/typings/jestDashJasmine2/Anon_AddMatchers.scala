@@ -38,10 +38,10 @@ trait Anon_AddMatchers extends js.Object {
   var _DEFAULT_TIMEOUT_INTERVAL: Double = js.native
   var addMatchers: js.Function = js.native
   var createSpy: js.Function2[/* name */ String, /* originalFn */ Fn, Spy] = js.native
-  var currentEnv_ : /* import warning: ImportType.apply Failed type conversion: std.ReturnType<(j$ : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/types.Jasmine * / object): jest-jasmine2.Anon_Options>['prototype'] */ js.Any = js.native
+  var currentEnv_ : /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(j$ : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/types.Jasmine * / object): jest-jasmine2.Anon_Options>['prototype'] */ js.Any = js.native
   var testPath: Path = js.native
   var version: String = js.native
-  def getEnv(): /* import warning: ImportType.apply Failed type conversion: std.ReturnType<(j$ : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/types.Jasmine * / object): jest-jasmine2.Anon_Options>['prototype'] */ js.Any = js.native
-  def getEnv(options: js.Object): /* import warning: ImportType.apply Failed type conversion: std.ReturnType<(j$ : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/types.Jasmine * / object): jest-jasmine2.Anon_Options>['prototype'] */ js.Any = js.native
+  def getEnv(): /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(j$ : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/types.Jasmine * / object): jest-jasmine2.Anon_Options>['prototype'] */ js.Any = js.native
+  def getEnv(options: js.Object): /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<(j$ : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/types.Jasmine * / object): jest-jasmine2.Anon_Options>['prototype'] */ js.Any = js.native
 }
 

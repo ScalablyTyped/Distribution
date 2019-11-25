@@ -23,9 +23,9 @@ object ProgressiveLoadStatusChangedEventUIParam {
   @scala.inline
   def apply(chart: js.Any = null, currentStatus: js.Any = null, series: js.Any = null): ProgressiveLoadStatusChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (currentStatus != null) __obj.updateDynamic("currentStatus")(currentStatus)
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
+    if (currentStatus != null) __obj.updateDynamic("currentStatus")(currentStatus.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressiveLoadStatusChangedEventUIParam]
   }
 }

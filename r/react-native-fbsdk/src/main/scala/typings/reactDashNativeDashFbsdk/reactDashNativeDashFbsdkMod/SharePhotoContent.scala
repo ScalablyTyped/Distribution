@@ -32,9 +32,9 @@ object SharePhotoContent {
     commonParameters: ShareContentCommonParameters = null,
     contentUrl: String = null
   ): SharePhotoContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType, photos = photos)
-    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any])
+    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters.asInstanceOf[js.Any])
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePhotoContent]
   }
 }

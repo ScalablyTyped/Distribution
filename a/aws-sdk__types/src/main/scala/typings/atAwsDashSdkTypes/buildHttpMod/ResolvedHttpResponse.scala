@@ -13,7 +13,7 @@ trait ResolvedHttpResponse extends HttpResponse[Uint8Array] {
 object ResolvedHttpResponse {
   @scala.inline
   def apply(body: String, headers: HeaderBag, statusCode: Double): ResolvedHttpResponse = {
-    val __obj = js.Dynamic.literal(body = body, headers = headers, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResolvedHttpResponse]
   }

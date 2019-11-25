@@ -35,10 +35,10 @@ object Server {
     use: js.Any = null
   ): Server = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (static != null) __obj.updateDynamic("static")(static)
-    if (use != null) __obj.updateDynamic("use")(use)
+    if (static != null) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[Server]
   }
 }

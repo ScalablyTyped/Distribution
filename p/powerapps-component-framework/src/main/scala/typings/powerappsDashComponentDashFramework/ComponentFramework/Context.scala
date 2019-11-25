@@ -38,7 +38,7 @@ object Context {
     utils: Utility,
     webAPI: WebApi
   ): Context[TInputs] = {
-    val __obj = js.Dynamic.literal(client = client, device = device, factory = factory, formatting = formatting, mode = mode, navigation = navigation, parameters = parameters.asInstanceOf[js.Any], resources = resources, updatedProperties = updatedProperties, userSettings = userSettings, utils = utils, webAPI = webAPI)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], factory = factory.asInstanceOf[js.Any], formatting = formatting.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], updatedProperties = updatedProperties.asInstanceOf[js.Any], userSettings = userSettings.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any], webAPI = webAPI.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Context[TInputs]]
   }

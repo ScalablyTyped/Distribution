@@ -41,16 +41,16 @@ object Scope {
     usermeta: js.Object = null
   ): Scope = {
     val __obj = js.Dynamic.literal()
-    if (axes != null) __obj.updateDynamic("axes")(axes)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (legends != null) __obj.updateDynamic("legends")(legends)
-    if (marks != null) __obj.updateDynamic("marks")(marks)
-    if (projections != null) __obj.updateDynamic("projections")(projections)
-    if (scales != null) __obj.updateDynamic("scales")(scales)
-    if (signals != null) __obj.updateDynamic("signals")(signals)
+    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
+    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
+    if (projections != null) __obj.updateDynamic("projections")(projections.asInstanceOf[js.Any])
+    if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
+    if (signals != null) __obj.updateDynamic("signals")(signals.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (usermeta != null) __obj.updateDynamic("usermeta")(usermeta)
+    if (usermeta != null) __obj.updateDynamic("usermeta")(usermeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
 }

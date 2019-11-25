@@ -24,10 +24,10 @@ object ChannelProfileDetails {
     profileImageUrl: String = null
   ): ChannelProfileDetails = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (channelUrl != null) __obj.updateDynamic("channelUrl")(channelUrl)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (profileImageUrl != null) __obj.updateDynamic("profileImageUrl")(profileImageUrl)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (channelUrl != null) __obj.updateDynamic("channelUrl")(channelUrl.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (profileImageUrl != null) __obj.updateDynamic("profileImageUrl")(profileImageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelProfileDetails]
   }
 }

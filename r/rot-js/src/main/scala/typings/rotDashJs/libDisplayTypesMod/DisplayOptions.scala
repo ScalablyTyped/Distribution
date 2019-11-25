@@ -50,7 +50,7 @@ object DisplayOptions {
     width: Double,
     tileSet: HTMLCanvasElement | HTMLImageElement | HTMLVideoElement | ImageBitmap = null
   ): DisplayOptions = {
-    val __obj = js.Dynamic.literal(bg = bg, border = border, fg = fg, fontFamily = fontFamily, fontSize = fontSize, fontStyle = fontStyle, forceSquareRatio = forceSquareRatio, height = height, layout = layout, spacing = spacing, tileColorize = tileColorize, tileHeight = tileHeight, tileMap = tileMap, tileWidth = tileWidth, transpose = transpose, width = width)
+    val __obj = js.Dynamic.literal(bg = bg.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], fg = fg.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], forceSquareRatio = forceSquareRatio.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], tileColorize = tileColorize.asInstanceOf[js.Any], tileHeight = tileHeight.asInstanceOf[js.Any], tileMap = tileMap.asInstanceOf[js.Any], tileWidth = tileWidth.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (tileSet != null) __obj.updateDynamic("tileSet")(tileSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayOptions]
   }

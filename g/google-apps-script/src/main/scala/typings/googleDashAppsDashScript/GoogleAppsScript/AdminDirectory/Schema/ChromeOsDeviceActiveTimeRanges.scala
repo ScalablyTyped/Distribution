@@ -14,7 +14,7 @@ object ChromeOsDeviceActiveTimeRanges {
   def apply(activeTime: Int | Double = null, date: String = null): ChromeOsDeviceActiveTimeRanges = {
     val __obj = js.Dynamic.literal()
     if (activeTime != null) __obj.updateDynamic("activeTime")(activeTime.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOsDeviceActiveTimeRanges]
   }
 }

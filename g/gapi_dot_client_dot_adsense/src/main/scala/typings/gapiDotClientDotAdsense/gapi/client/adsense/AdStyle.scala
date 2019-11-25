@@ -29,10 +29,10 @@ object AdStyle {
     kind: String = null
   ): AdStyle = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (corners != null) __obj.updateDynamic("corners")(corners)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (corners != null) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdStyle]
   }
 }

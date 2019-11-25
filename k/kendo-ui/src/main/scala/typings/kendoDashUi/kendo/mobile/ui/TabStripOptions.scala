@@ -18,7 +18,7 @@ object TabStripOptions {
     selectedIndex: Int | Double = null
   ): TabStripOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabStripOptions]

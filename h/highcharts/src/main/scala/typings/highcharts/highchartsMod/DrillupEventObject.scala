@@ -32,9 +32,9 @@ object DrillupEventObject {
     `type`: drillup,
     seriesOptions: SeriesOptionsType = null
   ): DrillupEventObject = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault, target = target)
-    __obj.updateDynamic("type")(`type`)
-    if (seriesOptions != null) __obj.updateDynamic("seriesOptions")(seriesOptions)
+    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (seriesOptions != null) __obj.updateDynamic("seriesOptions")(seriesOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrillupEventObject]
   }
 }

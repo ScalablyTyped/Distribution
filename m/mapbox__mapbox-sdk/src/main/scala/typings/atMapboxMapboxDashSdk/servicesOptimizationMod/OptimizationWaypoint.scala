@@ -32,9 +32,9 @@ object OptimizationWaypoint {
     bearing: js.Array[Double] = null,
     radius: Double | unlimited = null
   ): OptimizationWaypoint = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates)
-    if (approach != null) __obj.updateDynamic("approach")(approach)
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+    if (approach != null) __obj.updateDynamic("approach")(approach.asInstanceOf[js.Any])
+    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptimizationWaypoint]
   }

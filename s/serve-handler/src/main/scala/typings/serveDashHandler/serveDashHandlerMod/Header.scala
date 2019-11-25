@@ -13,7 +13,7 @@ trait Header extends js.Object {
 object Header {
   @scala.inline
   def apply(headers: js.Array[Anon_Key], source: String): Header = {
-    val __obj = js.Dynamic.literal(headers = headers, source = source)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Header]
   }

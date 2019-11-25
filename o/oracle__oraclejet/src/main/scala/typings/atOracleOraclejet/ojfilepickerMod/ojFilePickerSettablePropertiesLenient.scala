@@ -13,7 +13,7 @@ object ojFilePickerSettablePropertiesLenient {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null): ojFilePickerSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ojFilePickerSettablePropertiesLenient]
   }
 }

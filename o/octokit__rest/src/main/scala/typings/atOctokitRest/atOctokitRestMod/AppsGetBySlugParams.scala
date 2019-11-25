@@ -11,7 +11,7 @@ trait AppsGetBySlugParams extends js.Object {
 object AppsGetBySlugParams {
   @scala.inline
   def apply(app_slug: String): AppsGetBySlugParams = {
-    val __obj = js.Dynamic.literal(app_slug = app_slug)
+    val __obj = js.Dynamic.literal(app_slug = app_slug.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsGetBySlugParams]
   }

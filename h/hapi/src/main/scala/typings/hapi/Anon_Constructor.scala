@@ -14,7 +14,7 @@ trait Anon_Constructor[T /* <: ClientOptions */] extends js.Object {
 object Anon_Constructor {
   @scala.inline
   def apply[T /* <: ClientOptions */](constructor: EnginePrototype[_], options: T = null): Anon_Constructor[T] = {
-    val __obj = js.Dynamic.literal(constructor = constructor)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Constructor[T]]
   }

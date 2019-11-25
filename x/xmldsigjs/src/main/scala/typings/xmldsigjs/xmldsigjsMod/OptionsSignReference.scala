@@ -41,10 +41,10 @@ object OptionsSignReference {
     uri: String = null
   ): OptionsSignReference = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsSignReference]
   }
 }

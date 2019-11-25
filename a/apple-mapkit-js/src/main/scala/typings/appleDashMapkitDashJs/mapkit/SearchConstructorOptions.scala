@@ -36,10 +36,10 @@ object SearchConstructorOptions {
     region: CoordinateRegion = null
   ): SearchConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate)
-    if (!js.isUndefined(getsUserLocation)) __obj.updateDynamic("getsUserLocation")(getsUserLocation)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate.asInstanceOf[js.Any])
+    if (!js.isUndefined(getsUserLocation)) __obj.updateDynamic("getsUserLocation")(getsUserLocation.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchConstructorOptions]
   }
 }

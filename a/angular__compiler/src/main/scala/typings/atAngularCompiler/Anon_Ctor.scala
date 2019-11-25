@@ -13,7 +13,7 @@ trait Anon_Ctor extends js.Object {
 object Anon_Ctor {
   @scala.inline
   def apply(ctor: js.Any, filePath: String, name: String): Anon_Ctor = {
-    val __obj = js.Dynamic.literal(ctor = ctor, filePath = filePath, name = name)
+    val __obj = js.Dynamic.literal(ctor = ctor.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ctor]
   }

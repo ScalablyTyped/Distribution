@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ScrollSetting extends js.Object
 
+object ScrollSetting {
+  @scala.inline
+  def Empty: typings.std.stdStrings.Empty = this.cast("")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def up: typings.std.stdStrings.up = this.cast("up")
+}
+

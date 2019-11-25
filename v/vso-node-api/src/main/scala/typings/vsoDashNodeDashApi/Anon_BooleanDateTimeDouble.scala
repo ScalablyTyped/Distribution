@@ -25,7 +25,7 @@ object Anon_BooleanDateTimeDouble {
     string: Double,
     treePath: Double
   ): Anon_BooleanDateTimeDouble = {
-    val __obj = js.Dynamic.literal(boolean = boolean, dateTime = dateTime, double = double, integer = integer, plainText = plainText, string = string, treePath = treePath)
+    val __obj = js.Dynamic.literal(boolean = boolean.asInstanceOf[js.Any], dateTime = dateTime.asInstanceOf[js.Any], double = double.asInstanceOf[js.Any], integer = integer.asInstanceOf[js.Any], plainText = plainText.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], treePath = treePath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BooleanDateTimeDouble]
   }

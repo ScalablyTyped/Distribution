@@ -22,11 +22,11 @@ object Publisher {
     name: String = null
   ): Publisher = {
     val __obj = js.Dynamic.literal()
-    if (caeNumber != null) __obj.updateDynamic("caeNumber")(caeNumber)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (ipiNumber != null) __obj.updateDynamic("ipiNumber")(ipiNumber)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (caeNumber != null) __obj.updateDynamic("caeNumber")(caeNumber.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (ipiNumber != null) __obj.updateDynamic("ipiNumber")(ipiNumber.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Publisher]
   }
 }

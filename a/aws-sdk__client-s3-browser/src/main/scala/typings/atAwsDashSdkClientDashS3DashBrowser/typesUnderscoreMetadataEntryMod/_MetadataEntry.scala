@@ -19,8 +19,8 @@ object _MetadataEntry {
   @scala.inline
   def apply(Name: String = null, Value: String = null): _MetadataEntry = {
     val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (Value != null) __obj.updateDynamic("Value")(Value)
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MetadataEntry]
   }
 }

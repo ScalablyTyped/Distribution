@@ -52,8 +52,8 @@ object SlideCreateFromOptionsScreenshot {
     quality: Int | Double = null,
     width: Int | Double = null
   ): SlideCreateFromOptionsScreenshot = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (format != null) __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

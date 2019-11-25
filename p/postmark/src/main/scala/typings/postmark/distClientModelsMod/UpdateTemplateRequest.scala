@@ -1,6 +1,5 @@
 package typings.postmark.distClientModelsMod
 
-import typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ class UpdateTemplateRequest protected ()
     HtmlBody: js.UndefOr[String],
     TextBody: js.UndefOr[String],
     Alias: js.UndefOr[Null | String],
-    TemplateType: js.UndefOr[TemplateTypes],
+    TemplateType: js.UndefOr[typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes],
     LayoutTemplate: js.UndefOr[String]
   ) = this()
 }

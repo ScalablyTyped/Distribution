@@ -60,7 +60,7 @@ object TypeofStore {
     SortInformation: Instantiable0[SortInformation],
     Transaction: Instantiable0[Transaction]
   ): TypeofStore = {
-    val __obj = js.Dynamic.literal(PutDirectives = PutDirectives, QueryOptions = QueryOptions, QueryResults = QueryResults, SortInformation = SortInformation, Transaction = Transaction)
+    val __obj = js.Dynamic.literal(PutDirectives = PutDirectives.asInstanceOf[js.Any], QueryOptions = QueryOptions.asInstanceOf[js.Any], QueryResults = QueryResults.asInstanceOf[js.Any], SortInformation = SortInformation.asInstanceOf[js.Any], Transaction = Transaction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofStore]
   }

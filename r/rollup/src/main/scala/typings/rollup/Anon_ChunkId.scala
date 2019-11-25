@@ -13,7 +13,7 @@ trait Anon_ChunkId extends js.Object {
 object Anon_ChunkId {
   @scala.inline
   def apply(chunkId: String, format: String, moduleId: String): Anon_ChunkId = {
-    val __obj = js.Dynamic.literal(chunkId = chunkId, format = format, moduleId = moduleId)
+    val __obj = js.Dynamic.literal(chunkId = chunkId.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChunkId]
   }

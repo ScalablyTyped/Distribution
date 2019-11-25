@@ -23,10 +23,10 @@ object LiveChatBanSnippet {
     `type`: String = null
   ): LiveChatBanSnippet = {
     val __obj = js.Dynamic.literal()
-    if (banDurationSeconds != null) __obj.updateDynamic("banDurationSeconds")(banDurationSeconds)
-    if (bannedUserDetails != null) __obj.updateDynamic("bannedUserDetails")(bannedUserDetails)
-    if (liveChatId != null) __obj.updateDynamic("liveChatId")(liveChatId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (banDurationSeconds != null) __obj.updateDynamic("banDurationSeconds")(banDurationSeconds.asInstanceOf[js.Any])
+    if (bannedUserDetails != null) __obj.updateDynamic("bannedUserDetails")(bannedUserDetails.asInstanceOf[js.Any])
+    if (liveChatId != null) __obj.updateDynamic("liveChatId")(liveChatId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatBanSnippet]
   }
 }

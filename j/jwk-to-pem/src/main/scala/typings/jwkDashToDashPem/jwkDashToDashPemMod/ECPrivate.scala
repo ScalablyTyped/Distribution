@@ -21,9 +21,9 @@ object ECPrivate {
     x: String = null,
     y: String = null
   ): ECPrivate = {
-    val __obj = js.Dynamic.literal(crv = crv, d = d, kty = kty)
-    if (x != null) __obj.updateDynamic("x")(x)
-    if (y != null) __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ECPrivate]
   }
 }

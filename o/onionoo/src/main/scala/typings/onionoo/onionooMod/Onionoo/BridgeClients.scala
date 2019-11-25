@@ -32,8 +32,8 @@ object BridgeClients {
     fingerprint: String,
     average_clients: Partial[Record[`6_months` | `1_year` | `5_years`, Histogram]] = null
   ): BridgeClients = {
-    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
-    if (average_clients != null) __obj.updateDynamic("average_clients")(average_clients)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
+    if (average_clients != null) __obj.updateDynamic("average_clients")(average_clients.asInstanceOf[js.Any])
     __obj.asInstanceOf[BridgeClients]
   }
 }

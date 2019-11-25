@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait TextTranformation extends js.Object
 
+object TextTranformation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def lowercase: typings.cytoscape.cytoscapeStrings.lowercase = this.cast("lowercase")
+  @scala.inline
+  def none: typings.cytoscape.cytoscapeStrings.none = this.cast("none")
+  @scala.inline
+  def uppercase: typings.cytoscape.cytoscapeStrings.uppercase = this.cast("uppercase")
+}
+

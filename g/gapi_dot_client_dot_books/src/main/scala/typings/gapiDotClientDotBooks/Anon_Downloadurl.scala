@@ -22,11 +22,11 @@ object Anon_Downloadurl {
     version: String = null
   ): Anon_Downloadurl = {
     val __obj = js.Dynamic.literal()
-    if (download_url != null) __obj.updateDynamic("download_url")(download_url)
-    if (encrypted_key != null) __obj.updateDynamic("encrypted_key")(encrypted_key)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (download_url != null) __obj.updateDynamic("download_url")(download_url.asInstanceOf[js.Any])
+    if (encrypted_key != null) __obj.updateDynamic("encrypted_key")(encrypted_key.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Downloadurl]
   }
 }

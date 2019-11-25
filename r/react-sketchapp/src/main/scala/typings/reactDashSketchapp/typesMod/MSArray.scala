@@ -12,8 +12,8 @@ trait MSArray[T] extends /* key */ NumberDictionary[T] {
 object MSArray {
   @scala.inline
   def apply[T](length: Double, NumberDictionary: /* key */ NumberDictionary[T] = null): MSArray[T] = {
-    val __obj = js.Dynamic.literal(length = length)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[MSArray[T]]
   }
 }

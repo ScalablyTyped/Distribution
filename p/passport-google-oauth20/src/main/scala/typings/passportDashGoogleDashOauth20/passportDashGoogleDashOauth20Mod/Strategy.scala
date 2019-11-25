@@ -2,14 +2,14 @@ package typings.passportDashGoogleDashOauth20.passportDashGoogleDashOauth20Mod
 
 import typings.express.expressMod.Request
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.passportDashOauth2.passportDashOauth2Mod.OAuth2Strategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("passport-google-oauth20", "Strategy")
 @js.native
-class Strategy protected ()
-  extends typings.passportDashOauth2.passportDashOauth2Mod.Strategy {
+class Strategy protected () extends OAuth2Strategy {
   def this(
     options: StrategyOptionsWithRequest,
     verify: js.Function5[

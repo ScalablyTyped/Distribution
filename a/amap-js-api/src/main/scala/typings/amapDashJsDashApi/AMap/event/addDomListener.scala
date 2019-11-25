@@ -17,21 +17,21 @@ object addDomListener extends js.Object {
     */
   def apply[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: String */, C](
     // tslint:disable-next-line: no-unnecessary-generics
-  instance: /* import warning: ImportType.apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
+  instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
     handler: js.ThisFunction1[
       /* this */ C, 
-      /* import warning: ImportType.apply Failed type conversion: std.HTMLElementEventMap[E] */ /* event */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap[E] */ /* event */ js.Any, 
       Unit
     ]
   ): EventListener[`0`] = js.native
   def apply[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: String */, C](
     // tslint:disable-next-line: no-unnecessary-generics
-  instance: /* import warning: ImportType.apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
+  instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
     handler: js.ThisFunction1[
       /* this */ C, 
-      /* import warning: ImportType.apply Failed type conversion: std.HTMLElementEventMap[E] */ /* event */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap[E] */ /* event */ js.Any, 
       Unit
     ],
     context: C

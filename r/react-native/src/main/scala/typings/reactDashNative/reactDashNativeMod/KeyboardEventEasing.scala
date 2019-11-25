@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait KeyboardEventEasing extends js.Object
 
+object KeyboardEventEasing {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def easeIn: typings.reactDashNative.reactDashNativeStrings.easeIn = this.cast("easeIn")
+  @scala.inline
+  def easeInEaseOut: typings.reactDashNative.reactDashNativeStrings.easeInEaseOut = this.cast("easeInEaseOut")
+  @scala.inline
+  def easeOut: typings.reactDashNative.reactDashNativeStrings.easeOut = this.cast("easeOut")
+  @scala.inline
+  def keyboard: typings.reactDashNative.reactDashNativeStrings.keyboard = this.cast("keyboard")
+  @scala.inline
+  def linear: typings.reactDashNative.reactDashNativeStrings.linear = this.cast("linear")
+}
+

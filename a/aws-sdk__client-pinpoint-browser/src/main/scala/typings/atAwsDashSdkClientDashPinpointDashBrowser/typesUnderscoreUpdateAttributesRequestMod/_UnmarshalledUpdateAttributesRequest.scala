@@ -16,7 +16,7 @@ object _UnmarshalledUpdateAttributesRequest {
   @scala.inline
   def apply(Blacklist: js.Array[String] = null): _UnmarshalledUpdateAttributesRequest = {
     val __obj = js.Dynamic.literal()
-    if (Blacklist != null) __obj.updateDynamic("Blacklist")(Blacklist)
+    if (Blacklist != null) __obj.updateDynamic("Blacklist")(Blacklist.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledUpdateAttributesRequest]
   }
 }

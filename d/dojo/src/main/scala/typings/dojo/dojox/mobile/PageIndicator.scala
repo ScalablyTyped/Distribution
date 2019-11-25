@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.refId
 import typings.dojo.dojoStrings.style
@@ -107,8 +106,14 @@ class PageIndicator () extends _WidgetBase {
   @JSName("set")
   def set_style(property: style, value: String): Unit = js.native
   @JSName("watch")
-  def watch_refId(property: refId, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_refId(
+    property: refId,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

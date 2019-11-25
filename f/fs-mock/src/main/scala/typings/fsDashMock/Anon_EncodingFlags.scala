@@ -14,9 +14,9 @@ object Anon_EncodingFlags {
   @scala.inline
   def apply(encoding: String = null, flags: String = null, string: String = null): Anon_EncodingFlags = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (string != null) __obj.updateDynamic("string")(string)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EncodingFlags]
   }
 }

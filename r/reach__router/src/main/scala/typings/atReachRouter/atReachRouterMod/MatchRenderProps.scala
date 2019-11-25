@@ -14,8 +14,8 @@ trait MatchRenderProps[TParams] extends js.Object {
 object MatchRenderProps {
   @scala.inline
   def apply[TParams](location: WindowLocation, navigate: NavigateFn, `match`: Anon_Path with TParams = null): MatchRenderProps[TParams] = {
-    val __obj = js.Dynamic.literal(location = location, navigate = navigate)
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], navigate = navigate.asInstanceOf[js.Any])
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchRenderProps[TParams]]
   }
 }

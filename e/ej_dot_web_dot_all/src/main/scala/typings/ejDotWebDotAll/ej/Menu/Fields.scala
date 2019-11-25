@@ -64,19 +64,19 @@ object Fields {
     url: String = null
   ): Fields = {
     val __obj = js.Dynamic.literal()
-    if (child != null) __obj.updateDynamic("child")(child)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (htmlAttribute != null) __obj.updateDynamic("htmlAttribute")(htmlAttribute)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (imageAttribute != null) __obj.updateDynamic("imageAttribute")(imageAttribute)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (linkAttribute != null) __obj.updateDynamic("linkAttribute")(linkAttribute)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (htmlAttribute != null) __obj.updateDynamic("htmlAttribute")(htmlAttribute.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (imageAttribute != null) __obj.updateDynamic("imageAttribute")(imageAttribute.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (linkAttribute != null) __obj.updateDynamic("linkAttribute")(linkAttribute.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
 }

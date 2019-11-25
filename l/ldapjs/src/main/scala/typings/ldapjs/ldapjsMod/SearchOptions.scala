@@ -33,10 +33,10 @@ object SearchOptions {
     if (derefAliases != null) __obj.updateDynamic("derefAliases")(derefAliases.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (paged != null) __obj.updateDynamic("paged")(paged.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (sizeLimit != null) __obj.updateDynamic("sizeLimit")(sizeLimit.asInstanceOf[js.Any])
     if (timeLimit != null) __obj.updateDynamic("timeLimit")(timeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(typesOnly)) __obj.updateDynamic("typesOnly")(typesOnly)
+    if (!js.isUndefined(typesOnly)) __obj.updateDynamic("typesOnly")(typesOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }
 }

@@ -23,8 +23,8 @@ object DrawProperties {
   @scala.inline
   def apply(activeAction: DrawActionProperties = null, view: MapViewProperties = null): DrawProperties = {
     val __obj = js.Dynamic.literal()
-    if (activeAction != null) __obj.updateDynamic("activeAction")(activeAction)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (activeAction != null) __obj.updateDynamic("activeAction")(activeAction.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawProperties]
   }
 }

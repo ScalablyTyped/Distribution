@@ -26,13 +26,13 @@ object ExphbsOptions {
     partialsDir: js.Any = null
   ): ExphbsOptions = {
     val __obj = js.Dynamic.literal()
-    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions)
-    if (defaultLayout != null) __obj.updateDynamic("defaultLayout")(defaultLayout)
-    if (extname != null) __obj.updateDynamic("extname")(extname)
-    if (handlebars != null) __obj.updateDynamic("handlebars")(handlebars)
-    if (helpers != null) __obj.updateDynamic("helpers")(helpers)
-    if (layoutsDir != null) __obj.updateDynamic("layoutsDir")(layoutsDir)
-    if (partialsDir != null) __obj.updateDynamic("partialsDir")(partialsDir)
+    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions.asInstanceOf[js.Any])
+    if (defaultLayout != null) __obj.updateDynamic("defaultLayout")(defaultLayout.asInstanceOf[js.Any])
+    if (extname != null) __obj.updateDynamic("extname")(extname.asInstanceOf[js.Any])
+    if (handlebars != null) __obj.updateDynamic("handlebars")(handlebars.asInstanceOf[js.Any])
+    if (helpers != null) __obj.updateDynamic("helpers")(helpers.asInstanceOf[js.Any])
+    if (layoutsDir != null) __obj.updateDynamic("layoutsDir")(layoutsDir.asInstanceOf[js.Any])
+    if (partialsDir != null) __obj.updateDynamic("partialsDir")(partialsDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExphbsOptions]
   }
 }

@@ -29,12 +29,12 @@ object MousePositionOptions {
     undefinedHTML: String = null
   ): MousePositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (coordinateFormat != null) __obj.updateDynamic("coordinateFormat")(js.Any.fromFunction1(coordinateFormat))
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (undefinedHTML != null) __obj.updateDynamic("undefinedHTML")(undefinedHTML)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (undefinedHTML != null) __obj.updateDynamic("undefinedHTML")(undefinedHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[MousePositionOptions]
   }
 }

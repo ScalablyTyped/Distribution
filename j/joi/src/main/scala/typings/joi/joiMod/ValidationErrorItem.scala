@@ -21,10 +21,10 @@ object ValidationErrorItem {
     context: Context = null,
     options: ValidationOptions = null
   ): ValidationErrorItem = {
-    val __obj = js.Dynamic.literal(message = message, path = path)
-    __obj.updateDynamic("type")(`type`)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationErrorItem]
   }
 }

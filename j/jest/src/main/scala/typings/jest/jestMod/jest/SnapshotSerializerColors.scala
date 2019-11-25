@@ -21,7 +21,7 @@ object SnapshotSerializerColors {
     tag: SnapshotSerializerColor,
     value: SnapshotSerializerColor
   ): SnapshotSerializerColors = {
-    val __obj = js.Dynamic.literal(comment = comment, content = content, prop = prop, tag = tag, value = value)
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SnapshotSerializerColors]
   }

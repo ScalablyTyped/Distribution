@@ -32,13 +32,13 @@ object ClassModel {
     meteorMethods: js.Object = null,
     secured: Anon_Insert | Boolean = null
   ): ClassModel[T] = {
-    val __obj = js.Dynamic.literal(fields = fields, name = name)
-    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (helpers != null) __obj.updateDynamic("helpers")(helpers)
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
-    if (meteorMethods != null) __obj.updateDynamic("meteorMethods")(meteorMethods)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (helpers != null) __obj.updateDynamic("helpers")(helpers.asInstanceOf[js.Any])
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
+    if (meteorMethods != null) __obj.updateDynamic("meteorMethods")(meteorMethods.asInstanceOf[js.Any])
     if (secured != null) __obj.updateDynamic("secured")(secured.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassModel[T]]
   }

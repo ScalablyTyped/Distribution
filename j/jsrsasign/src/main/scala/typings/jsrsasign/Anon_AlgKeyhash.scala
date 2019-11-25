@@ -14,7 +14,7 @@ trait Anon_AlgKeyhash extends js.Object {
 object Anon_AlgKeyhash {
   @scala.inline
   def apply(alg: String, keyhash: String, namehash: String, serial: String): Anon_AlgKeyhash = {
-    val __obj = js.Dynamic.literal(alg = alg, keyhash = keyhash, namehash = namehash, serial = serial)
+    val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], keyhash = keyhash.asInstanceOf[js.Any], namehash = namehash.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlgKeyhash]
   }

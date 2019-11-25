@@ -17,7 +17,7 @@ object GoogleActionsV2SignInValueSpec {
   @scala.inline
   def apply(optContext: String = null): GoogleActionsV2SignInValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (optContext != null) __obj.updateDynamic("optContext")(optContext)
+    if (optContext != null) __obj.updateDynamic("optContext")(optContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2SignInValueSpec]
   }
 }

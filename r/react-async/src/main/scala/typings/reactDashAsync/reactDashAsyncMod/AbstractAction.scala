@@ -13,8 +13,8 @@ trait AbstractAction extends js.Object {
 object AbstractAction {
   @scala.inline
   def apply(meta: Anon_Counter, `type`: String): AbstractAction = {
-    val __obj = js.Dynamic.literal(meta = meta)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractAction]
   }
 }

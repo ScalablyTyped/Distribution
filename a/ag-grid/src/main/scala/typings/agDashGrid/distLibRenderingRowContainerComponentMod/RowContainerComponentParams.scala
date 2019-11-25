@@ -18,9 +18,9 @@ object RowContainerComponentParams {
     eViewport: HTMLElement = null,
     hideWhenNoChildren: js.UndefOr[Boolean] = js.undefined
   ): RowContainerComponentParams = {
-    val __obj = js.Dynamic.literal(eContainer = eContainer)
-    if (eViewport != null) __obj.updateDynamic("eViewport")(eViewport)
-    if (!js.isUndefined(hideWhenNoChildren)) __obj.updateDynamic("hideWhenNoChildren")(hideWhenNoChildren)
+    val __obj = js.Dynamic.literal(eContainer = eContainer.asInstanceOf[js.Any])
+    if (eViewport != null) __obj.updateDynamic("eViewport")(eViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideWhenNoChildren)) __obj.updateDynamic("hideWhenNoChildren")(hideWhenNoChildren.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowContainerComponentParams]
   }
 }

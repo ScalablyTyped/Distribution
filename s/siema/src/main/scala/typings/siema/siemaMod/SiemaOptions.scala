@@ -35,11 +35,11 @@ object SiemaOptions {
     threshold: Int | Double = null
   ): SiemaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (!js.isUndefined(multipleDrag)) __obj.updateDynamic("multipleDrag")(multipleDrag)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleDrag)) __obj.updateDynamic("multipleDrag")(multipleDrag.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction0(onChange))
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
     if (perPage != null) __obj.updateDynamic("perPage")(perPage.asInstanceOf[js.Any])

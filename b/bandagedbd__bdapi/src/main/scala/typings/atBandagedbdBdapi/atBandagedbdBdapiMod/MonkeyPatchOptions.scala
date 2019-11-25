@@ -26,10 +26,10 @@ object MonkeyPatchOptions {
     val __obj = js.Dynamic.literal()
     if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (instead != null) __obj.updateDynamic("instead")(js.Any.fromFunction1(instead))
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonkeyPatchOptions]
   }
 }

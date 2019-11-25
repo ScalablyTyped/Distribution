@@ -23,7 +23,7 @@ object ActivityTracker {
     span: js.Object,
     start: () => js.Function0[Unit]
   ): ActivityTracker = {
-    val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), panic = js.Any.fromFunction2(panic), panicOnBuild = js.Any.fromFunction2(panicOnBuild), setStatus = js.Any.fromFunction1(setStatus), span = span, start = js.Any.fromFunction0(start))
+    val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), panic = js.Any.fromFunction2(panic), panicOnBuild = js.Any.fromFunction2(panicOnBuild), setStatus = js.Any.fromFunction1(setStatus), span = span.asInstanceOf[js.Any], start = js.Any.fromFunction0(start))
   
     __obj.asInstanceOf[ActivityTracker]
   }

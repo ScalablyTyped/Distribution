@@ -19,8 +19,8 @@ object _KeyListEntry {
   @scala.inline
   def apply(KeyArn: String = null, KeyId: String = null): _KeyListEntry = {
     val __obj = js.Dynamic.literal()
-    if (KeyArn != null) __obj.updateDynamic("KeyArn")(KeyArn)
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
+    if (KeyArn != null) __obj.updateDynamic("KeyArn")(KeyArn.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_KeyListEntry]
   }
 }

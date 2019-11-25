@@ -21,9 +21,9 @@ object ShippingsettingsCustomBatchResponseEntry {
   ): ShippingsettingsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (shippingSettings != null) __obj.updateDynamic("shippingSettings")(shippingSettings)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (shippingSettings != null) __obj.updateDynamic("shippingSettings")(shippingSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingsettingsCustomBatchResponseEntry]
   }
 }

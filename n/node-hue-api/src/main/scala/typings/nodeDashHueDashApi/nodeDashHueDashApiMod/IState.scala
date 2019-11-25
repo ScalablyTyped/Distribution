@@ -20,7 +20,7 @@ object IState {
     lights: StringDictionary[ILight],
     schedules: StringDictionary[ISchedule]
   ): IState = {
-    val __obj = js.Dynamic.literal(config = config, groups = groups, lights = lights, schedules = schedules)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], schedules = schedules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IState]
   }

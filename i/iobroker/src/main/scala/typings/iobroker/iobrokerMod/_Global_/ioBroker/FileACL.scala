@@ -17,7 +17,7 @@ trait FileACL extends js.Object {
 object FileACL {
   @scala.inline
   def apply(owner: String, ownerGroup: String, permissions: Double): FileACL = {
-    val __obj = js.Dynamic.literal(owner = owner, ownerGroup = ownerGroup, permissions = permissions)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ownerGroup = ownerGroup.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileACL]
   }

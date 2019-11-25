@@ -14,9 +14,9 @@ object ActivityContentDetailsPlaylistItem {
   @scala.inline
   def apply(playlistId: String = null, playlistItemId: String = null, resourceId: ResourceId = null): ActivityContentDetailsPlaylistItem = {
     val __obj = js.Dynamic.literal()
-    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId)
-    if (playlistItemId != null) __obj.updateDynamic("playlistItemId")(playlistItemId)
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
+    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId.asInstanceOf[js.Any])
+    if (playlistItemId != null) __obj.updateDynamic("playlistItemId")(playlistItemId.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityContentDetailsPlaylistItem]
   }
 }

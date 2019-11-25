@@ -12,7 +12,7 @@ trait Identify extends js.Object {
 object Identify {
   @scala.inline
   def apply(maxNumOfCandidatesReturned: Double, personGroupId: String): Identify = {
-    val __obj = js.Dynamic.literal(maxNumOfCandidatesReturned = maxNumOfCandidatesReturned, personGroupId = personGroupId)
+    val __obj = js.Dynamic.literal(maxNumOfCandidatesReturned = maxNumOfCandidatesReturned.asInstanceOf[js.Any], personGroupId = personGroupId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Identify]
   }

@@ -28,14 +28,14 @@ object ActivitySnippet {
     `type`: String = null
   ): ActivitySnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (channelTitle != null) __obj.updateDynamic("channelTitle")(channelTitle)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (channelTitle != null) __obj.updateDynamic("channelTitle")(channelTitle.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitySnippet]
   }
 }

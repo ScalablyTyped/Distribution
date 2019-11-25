@@ -49,8 +49,8 @@ object Anon_LengthLineStyle {
   ): Anon_LengthLineStyle = {
     val __obj = js.Dynamic.literal()
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (splitNumber != null) __obj.updateDynamic("splitNumber")(splitNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LengthLineStyle]
   }

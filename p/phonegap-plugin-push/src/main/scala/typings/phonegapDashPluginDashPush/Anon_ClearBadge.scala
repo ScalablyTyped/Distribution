@@ -63,16 +63,16 @@ object Anon_ClearBadge {
     vibrate: js.UndefOr[Boolean] = js.undefined
   ): Anon_ClearBadge = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clearBadge)) __obj.updateDynamic("clearBadge")(clearBadge)
-    if (!js.isUndefined(clearNotifications)) __obj.updateDynamic("clearNotifications")(clearNotifications)
-    if (!js.isUndefined(forceShow)) __obj.updateDynamic("forceShow")(forceShow)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
-    if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey)
-    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
-    if (titleKey != null) __obj.updateDynamic("titleKey")(titleKey)
-    if (topics != null) __obj.updateDynamic("topics")(topics)
-    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate)
+    if (!js.isUndefined(clearBadge)) __obj.updateDynamic("clearBadge")(clearBadge.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearNotifications)) __obj.updateDynamic("clearNotifications")(clearNotifications.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceShow)) __obj.updateDynamic("forceShow")(forceShow.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
+    if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (titleKey != null) __obj.updateDynamic("titleKey")(titleKey.asInstanceOf[js.Any])
+    if (topics != null) __obj.updateDynamic("topics")(topics.asInstanceOf[js.Any])
+    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClearBadge]
   }
 }

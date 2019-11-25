@@ -32,16 +32,16 @@ object UserPosixAccount {
     username: String = null
   ): UserPosixAccount = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (gecos != null) __obj.updateDynamic("gecos")(gecos)
-    if (gid != null) __obj.updateDynamic("gid")(gid)
-    if (homeDirectory != null) __obj.updateDynamic("homeDirectory")(homeDirectory)
-    if (operatingSystemType != null) __obj.updateDynamic("operatingSystemType")(operatingSystemType)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (shell != null) __obj.updateDynamic("shell")(shell)
-    if (systemId != null) __obj.updateDynamic("systemId")(systemId)
-    if (uid != null) __obj.updateDynamic("uid")(uid)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (gecos != null) __obj.updateDynamic("gecos")(gecos.asInstanceOf[js.Any])
+    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (homeDirectory != null) __obj.updateDynamic("homeDirectory")(homeDirectory.asInstanceOf[js.Any])
+    if (operatingSystemType != null) __obj.updateDynamic("operatingSystemType")(operatingSystemType.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
+    if (systemId != null) __obj.updateDynamic("systemId")(systemId.asInstanceOf[js.Any])
+    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPosixAccount]
   }
 }

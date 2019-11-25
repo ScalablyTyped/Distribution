@@ -23,11 +23,11 @@ object CSSTransitionGroupTransitionName {
     enterActive: String = null,
     leaveActive: String = null
   ): CSSTransitionGroupTransitionName = {
-    val __obj = js.Dynamic.literal(enter = enter, leave = leave)
-    if (appear != null) __obj.updateDynamic("appear")(appear)
-    if (appearActive != null) __obj.updateDynamic("appearActive")(appearActive)
-    if (enterActive != null) __obj.updateDynamic("enterActive")(enterActive)
-    if (leaveActive != null) __obj.updateDynamic("leaveActive")(leaveActive)
+    val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any], leave = leave.asInstanceOf[js.Any])
+    if (appear != null) __obj.updateDynamic("appear")(appear.asInstanceOf[js.Any])
+    if (appearActive != null) __obj.updateDynamic("appearActive")(appearActive.asInstanceOf[js.Any])
+    if (enterActive != null) __obj.updateDynamic("enterActive")(enterActive.asInstanceOf[js.Any])
+    if (leaveActive != null) __obj.updateDynamic("leaveActive")(leaveActive.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSTransitionGroupTransitionName]
   }
 }

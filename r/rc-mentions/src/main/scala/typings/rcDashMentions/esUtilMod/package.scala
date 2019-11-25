@@ -12,7 +12,7 @@ package object esUtilMod {
   type OmitFunc = js.Function2[
     /* obj */ js.Object, 
     /* keys */ js.Array[String], 
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K2 in std.Exclude<keyof object, [...keyof object][number]> ]: object[K2]}
     */ typings.rcDashMentions.rcDashMentionsStrings.OmitFunc with js.Object
   ]

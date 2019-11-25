@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait Status extends js.Object
 
+object Status {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def connected: typings.meteor.meteorStrings.connected = this.cast("connected")
+  @scala.inline
+  def connecting: typings.meteor.meteorStrings.connecting = this.cast("connecting")
+  @scala.inline
+  def failed: typings.meteor.meteorStrings.failed = this.cast("failed")
+  @scala.inline
+  def offline: typings.meteor.meteorStrings.offline = this.cast("offline")
+  @scala.inline
+  def waiting: typings.meteor.meteorStrings.waiting = this.cast("waiting")
+}
+

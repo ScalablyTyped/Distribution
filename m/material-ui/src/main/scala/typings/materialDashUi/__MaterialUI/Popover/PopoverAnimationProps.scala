@@ -13,8 +13,8 @@ trait PopoverAnimationProps extends js.Object {
 object PopoverAnimationProps {
   @scala.inline
   def apply(open: Boolean, style: CSSProperties = null): PopoverAnimationProps = {
-    val __obj = js.Dynamic.literal(open = open)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverAnimationProps]
   }
 }

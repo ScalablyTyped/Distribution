@@ -17,8 +17,8 @@ trait locationChangeAction[P /* <: Pathname */, S /* <: Search */, H /* <: Hash 
 object locationChangeAction {
   @scala.inline
   def apply[P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](payload: Anon_Hash[P, S, H], `type`: `ROUTER/LOCATION_CHANGE`): locationChangeAction[P, S, H] = {
-    val __obj = js.Dynamic.literal(payload = payload)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[locationChangeAction[P, S, H]]
   }
 }

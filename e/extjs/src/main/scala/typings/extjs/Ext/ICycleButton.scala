@@ -54,16 +54,16 @@ object ICycleButton {
     toggleSelected: () => Unit = null
   ): ICycleButton = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ISplit)
-    if (changeHandler != null) __obj.updateDynamic("changeHandler")(changeHandler)
-    if (forceGlyph != null) __obj.updateDynamic("forceGlyph")(forceGlyph)
-    if (forceIcon != null) __obj.updateDynamic("forceIcon")(forceIcon)
+    if (ISplit != null) js.Dynamic.global.Object.assign(__obj, ISplit)
+    if (changeHandler != null) __obj.updateDynamic("changeHandler")(changeHandler.asInstanceOf[js.Any])
+    if (forceGlyph != null) __obj.updateDynamic("forceGlyph")(forceGlyph.asInstanceOf[js.Any])
+    if (forceIcon != null) __obj.updateDynamic("forceIcon")(forceIcon.asInstanceOf[js.Any])
     if (getActiveItem != null) __obj.updateDynamic("getActiveItem")(js.Any.fromFunction0(getActiveItem))
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (prependText != null) __obj.updateDynamic("prependText")(prependText)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (prependText != null) __obj.updateDynamic("prependText")(prependText.asInstanceOf[js.Any])
     if (setActiveItem != null) __obj.updateDynamic("setActiveItem")(js.Any.fromFunction2(setActiveItem))
-    if (!js.isUndefined(showText)) __obj.updateDynamic("showText")(showText)
+    if (!js.isUndefined(showText)) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
     if (toggleSelected != null) __obj.updateDynamic("toggleSelected")(js.Any.fromFunction0(toggleSelected))
     __obj.asInstanceOf[ICycleButton]
   }

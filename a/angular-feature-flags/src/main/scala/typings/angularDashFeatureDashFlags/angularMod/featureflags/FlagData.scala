@@ -27,7 +27,7 @@ trait FlagData extends js.Object {
 object FlagData {
   @scala.inline
   def apply(active: Boolean, description: String, key: String, name: String): FlagData = {
-    val __obj = js.Dynamic.literal(active = active, description = description, key = key, name = name)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlagData]
   }

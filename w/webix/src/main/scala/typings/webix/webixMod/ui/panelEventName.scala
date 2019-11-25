@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait panelEventName extends js.Object
 
+object panelEventName {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def onBindRequest: typings.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
+  @scala.inline
+  def onDestruct: typings.webix.webixStrings.onDestruct = this.cast("onDestruct")
+  @scala.inline
+  def onViewResize: typings.webix.webixStrings.onViewResize = this.cast("onViewResize")
+  @scala.inline
+  def onViewShow: typings.webix.webixStrings.onViewShow = this.cast("onViewShow")
+}
+

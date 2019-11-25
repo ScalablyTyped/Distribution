@@ -25,9 +25,9 @@ object MakeDecoratorOptions {
     allowDeprecatedUsage: js.UndefOr[Boolean] = js.undefined,
     skipIfNoParametersOrOptions: js.UndefOr[Boolean] = js.undefined
   ): MakeDecoratorOptions = {
-    val __obj = js.Dynamic.literal(name = name, parameterName = parameterName, wrapper = js.Any.fromFunction3(wrapper))
-    if (!js.isUndefined(allowDeprecatedUsage)) __obj.updateDynamic("allowDeprecatedUsage")(allowDeprecatedUsage)
-    if (!js.isUndefined(skipIfNoParametersOrOptions)) __obj.updateDynamic("skipIfNoParametersOrOptions")(skipIfNoParametersOrOptions)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any], wrapper = js.Any.fromFunction3(wrapper))
+    if (!js.isUndefined(allowDeprecatedUsage)) __obj.updateDynamic("allowDeprecatedUsage")(allowDeprecatedUsage.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipIfNoParametersOrOptions)) __obj.updateDynamic("skipIfNoParametersOrOptions")(skipIfNoParametersOrOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeDecoratorOptions]
   }
 }

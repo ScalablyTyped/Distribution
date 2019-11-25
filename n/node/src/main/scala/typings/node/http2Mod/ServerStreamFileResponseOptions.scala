@@ -32,7 +32,7 @@ object ServerStreamFileResponseOptions {
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (statCheck != null) __obj.updateDynamic("statCheck")(js.Any.fromFunction3(statCheck))
-    if (!js.isUndefined(waitForTrailers)) __obj.updateDynamic("waitForTrailers")(waitForTrailers)
+    if (!js.isUndefined(waitForTrailers)) __obj.updateDynamic("waitForTrailers")(waitForTrailers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerStreamFileResponseOptions]
   }
 }

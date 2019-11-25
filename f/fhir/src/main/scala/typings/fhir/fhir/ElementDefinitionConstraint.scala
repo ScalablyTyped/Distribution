@@ -89,22 +89,22 @@ object ElementDefinitionConstraint {
     source: uri = null,
     xpath: String = null
   ): ElementDefinitionConstraint = {
-    val __obj = js.Dynamic.literal(expression = expression, human = human, key = key, severity = severity)
-    if (_expression != null) __obj.updateDynamic("_expression")(_expression)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_human != null) __obj.updateDynamic("_human")(_human)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_key != null) __obj.updateDynamic("_key")(_key)
-    if (_requirements != null) __obj.updateDynamic("_requirements")(_requirements)
-    if (_severity != null) __obj.updateDynamic("_severity")(_severity)
-    if (_source != null) __obj.updateDynamic("_source")(_source)
-    if (_xpath != null) __obj.updateDynamic("_xpath")(_xpath)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (xpath != null) __obj.updateDynamic("xpath")(xpath)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], human = human.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
+    if (_expression != null) __obj.updateDynamic("_expression")(_expression.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_human != null) __obj.updateDynamic("_human")(_human.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_key != null) __obj.updateDynamic("_key")(_key.asInstanceOf[js.Any])
+    if (_requirements != null) __obj.updateDynamic("_requirements")(_requirements.asInstanceOf[js.Any])
+    if (_severity != null) __obj.updateDynamic("_severity")(_severity.asInstanceOf[js.Any])
+    if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
+    if (_xpath != null) __obj.updateDynamic("_xpath")(_xpath.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (xpath != null) __obj.updateDynamic("xpath")(xpath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionConstraint]
   }
 }

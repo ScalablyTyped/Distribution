@@ -26,7 +26,7 @@ object PKCS8Info {
     pbkdf2Salt: String,
     pkbdf2Iter: String
   ): PKCS8Info = {
-    val __obj = js.Dynamic.literal(ciphertext = ciphertext, encryptionSchemeAlg = encryptionSchemeAlg, encryptionSchemeIV = encryptionSchemeIV, pbkdf2Salt = pbkdf2Salt, pkbdf2Iter = pkbdf2Iter)
+    val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], encryptionSchemeAlg = encryptionSchemeAlg.asInstanceOf[js.Any], encryptionSchemeIV = encryptionSchemeIV.asInstanceOf[js.Any], pbkdf2Salt = pbkdf2Salt.asInstanceOf[js.Any], pkbdf2Iter = pkbdf2Iter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PKCS8Info]
   }

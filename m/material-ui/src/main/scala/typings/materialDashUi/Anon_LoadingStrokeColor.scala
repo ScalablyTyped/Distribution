@@ -13,8 +13,8 @@ object Anon_LoadingStrokeColor {
   @scala.inline
   def apply(loadingStrokeColor: String = null, strokeColor: String = null): Anon_LoadingStrokeColor = {
     val __obj = js.Dynamic.literal()
-    if (loadingStrokeColor != null) __obj.updateDynamic("loadingStrokeColor")(loadingStrokeColor)
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (loadingStrokeColor != null) __obj.updateDynamic("loadingStrokeColor")(loadingStrokeColor.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LoadingStrokeColor]
   }
 }

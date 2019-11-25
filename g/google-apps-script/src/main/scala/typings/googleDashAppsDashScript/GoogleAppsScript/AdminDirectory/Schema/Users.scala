@@ -22,11 +22,11 @@ object Users {
     users: js.Array[User] = null
   ): Users = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (trigger_event != null) __obj.updateDynamic("trigger_event")(trigger_event)
-    if (users != null) __obj.updateDynamic("users")(users)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (trigger_event != null) __obj.updateDynamic("trigger_event")(trigger_event.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[Users]
   }
 }

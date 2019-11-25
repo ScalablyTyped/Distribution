@@ -29,9 +29,9 @@ object Anon_AM {
     patterns: Anon_D,
     twoDigitYearMax: Double
   ): Anon_AM = {
-    val __obj = js.Dynamic.literal(AM = AM, PM = PM, days = days, firstDay = firstDay, months = months, patterns = patterns, twoDigitYearMax = twoDigitYearMax)
-    __obj.updateDynamic("/")(`/`)
-    __obj.updateDynamic(":")(`:`)
+    val __obj = js.Dynamic.literal(AM = AM.asInstanceOf[js.Any], PM = PM.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], firstDay = firstDay.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], twoDigitYearMax = twoDigitYearMax.asInstanceOf[js.Any])
+    __obj.updateDynamic("/")(`/`.asInstanceOf[js.Any])
+    __obj.updateDynamic(":")(`:`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AM]
   }
 }

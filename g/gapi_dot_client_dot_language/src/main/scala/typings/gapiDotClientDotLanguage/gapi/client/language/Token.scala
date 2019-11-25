@@ -24,10 +24,10 @@ object Token {
     text: TextSpan = null
   ): Token = {
     val __obj = js.Dynamic.literal()
-    if (dependencyEdge != null) __obj.updateDynamic("dependencyEdge")(dependencyEdge)
-    if (lemma != null) __obj.updateDynamic("lemma")(lemma)
-    if (partOfSpeech != null) __obj.updateDynamic("partOfSpeech")(partOfSpeech)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (dependencyEdge != null) __obj.updateDynamic("dependencyEdge")(dependencyEdge.asInstanceOf[js.Any])
+    if (lemma != null) __obj.updateDynamic("lemma")(lemma.asInstanceOf[js.Any])
+    if (partOfSpeech != null) __obj.updateDynamic("partOfSpeech")(partOfSpeech.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
 }

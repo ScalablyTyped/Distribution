@@ -55,8 +55,8 @@ object Session {
   /* _ */ StringDictionary[js.Any] = null,
     maxAge: Double | session = null
   ): Session = {
-    val __obj = js.Dynamic.literal(inspect = js.Any.fromFunction0(inspect), length = length, populated = populated, save = js.Any.fromFunction0(save), toJSON = js.Any.fromFunction0(toJSON))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(inspect = js.Any.fromFunction0(inspect), length = length.asInstanceOf[js.Any], populated = populated.asInstanceOf[js.Any], save = js.Any.fromFunction0(save), toJSON = js.Any.fromFunction0(toJSON))
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }

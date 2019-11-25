@@ -19,8 +19,8 @@ object TypeDomOptions {
     value: String | (js.Function1[/* url */ String, String]) = null
   ): TypeDomOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDomOptions]
   }

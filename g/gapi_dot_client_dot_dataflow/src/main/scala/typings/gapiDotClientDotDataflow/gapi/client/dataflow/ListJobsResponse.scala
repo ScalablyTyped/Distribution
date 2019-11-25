@@ -21,9 +21,9 @@ object ListJobsResponse {
     nextPageToken: String = null
   ): ListJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (failedLocation != null) __obj.updateDynamic("failedLocation")(failedLocation)
-    if (jobs != null) __obj.updateDynamic("jobs")(jobs)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (failedLocation != null) __obj.updateDynamic("failedLocation")(failedLocation.asInstanceOf[js.Any])
+    if (jobs != null) __obj.updateDynamic("jobs")(jobs.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJobsResponse]
   }
 }

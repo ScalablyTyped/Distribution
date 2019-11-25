@@ -41,7 +41,7 @@ object GraphicsDisplayData {
     sizey: Double,
     vendor: String
   ): GraphicsDisplayData = {
-    val __obj = js.Dynamic.literal(builtin = builtin, connection = connection, currentRefreshRate = currentRefreshRate, currentResX = currentResX, currentResY = currentResY, main = main, model = model, pixeldepth = pixeldepth, positionX = positionX, positionY = positionY, resolutionx = resolutionx, resolutiony = resolutiony, sizex = sizex, sizey = sizey, vendor = vendor)
+    val __obj = js.Dynamic.literal(builtin = builtin.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], currentRefreshRate = currentRefreshRate.asInstanceOf[js.Any], currentResX = currentResX.asInstanceOf[js.Any], currentResY = currentResY.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], pixeldepth = pixeldepth.asInstanceOf[js.Any], positionX = positionX.asInstanceOf[js.Any], positionY = positionY.asInstanceOf[js.Any], resolutionx = resolutionx.asInstanceOf[js.Any], resolutiony = resolutiony.asInstanceOf[js.Any], sizex = sizex.asInstanceOf[js.Any], sizey = sizey.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GraphicsDisplayData]
   }

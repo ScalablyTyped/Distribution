@@ -28,11 +28,11 @@ object _UnmarshalledEndpointSendConfiguration {
     TitleOverride: String = null
   ): _UnmarshalledEndpointSendConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (BodyOverride != null) __obj.updateDynamic("BodyOverride")(BodyOverride)
-    if (Context != null) __obj.updateDynamic("Context")(Context)
-    if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent)
-    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions)
-    if (TitleOverride != null) __obj.updateDynamic("TitleOverride")(TitleOverride)
+    if (BodyOverride != null) __obj.updateDynamic("BodyOverride")(BodyOverride.asInstanceOf[js.Any])
+    if (Context != null) __obj.updateDynamic("Context")(Context.asInstanceOf[js.Any])
+    if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent.asInstanceOf[js.Any])
+    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
+    if (TitleOverride != null) __obj.updateDynamic("TitleOverride")(TitleOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEndpointSendConfiguration]
   }
 }

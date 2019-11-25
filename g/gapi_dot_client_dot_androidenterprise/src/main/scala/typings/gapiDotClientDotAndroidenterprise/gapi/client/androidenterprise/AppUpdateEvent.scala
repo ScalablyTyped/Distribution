@@ -13,7 +13,7 @@ object AppUpdateEvent {
   @scala.inline
   def apply(productId: String = null): AppUpdateEvent = {
     val __obj = js.Dynamic.literal()
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppUpdateEvent]
   }
 }

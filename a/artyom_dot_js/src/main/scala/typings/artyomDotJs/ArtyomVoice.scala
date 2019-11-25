@@ -15,7 +15,7 @@ trait ArtyomVoice extends js.Object {
 object ArtyomVoice {
   @scala.inline
   def apply(default: Boolean, lang: String, localService: Boolean, name: String, voiceURI: String): ArtyomVoice = {
-    val __obj = js.Dynamic.literal(default = default, lang = lang, localService = localService, name = name, voiceURI = voiceURI)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], localService = localService.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], voiceURI = voiceURI.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtyomVoice]
   }

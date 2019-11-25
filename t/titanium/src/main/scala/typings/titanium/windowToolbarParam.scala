@@ -35,10 +35,10 @@ object windowToolbarParam {
     translucent: js.UndefOr[Boolean] = js.undefined
   ): windowToolbarParam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (barColor != null) __obj.updateDynamic("barColor")(barColor)
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (barColor != null) __obj.updateDynamic("barColor")(barColor.asInstanceOf[js.Any])
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
     __obj.asInstanceOf[windowToolbarParam]
   }
 }

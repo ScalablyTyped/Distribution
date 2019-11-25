@@ -28,7 +28,7 @@ object GoogleActionsTransactionsV3PresentationOptions {
   @scala.inline
   def apply(actionDisplayName: String = null): GoogleActionsTransactionsV3PresentationOptions = {
     val __obj = js.Dynamic.literal()
-    if (actionDisplayName != null) __obj.updateDynamic("actionDisplayName")(actionDisplayName)
+    if (actionDisplayName != null) __obj.updateDynamic("actionDisplayName")(actionDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3PresentationOptions]
   }
 }

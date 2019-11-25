@@ -38,23 +38,23 @@ object IModalNativeProps {
     title: ReactNode = null,
     transparent: js.UndefOr[Boolean] = js.undefined
   ): IModalNativeProps = {
-    val __obj = js.Dynamic.literal(visible = visible)
-    if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear)
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (animationType != null) __obj.updateDynamic("animationType")(animationType)
+    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (!js.isUndefined(operation)) __obj.updateDynamic("operation")(operation)
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)
+    if (!js.isUndefined(operation)) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModalNativeProps]
   }
 }

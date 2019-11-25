@@ -18,7 +18,7 @@ object Source {
     cancel: () => js.Promise[Unit],
     read: () => js.Promise[Anon_Done[RecordType]]
   ): Source[RecordType] = {
-    val __obj = js.Dynamic.literal(bbox = bbox, cancel = js.Any.fromFunction0(cancel), read = js.Any.fromFunction0(read))
+    val __obj = js.Dynamic.literal(bbox = bbox.asInstanceOf[js.Any], cancel = js.Any.fromFunction0(cancel), read = js.Any.fromFunction0(read))
   
     __obj.asInstanceOf[Source[RecordType]]
   }

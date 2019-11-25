@@ -19,10 +19,10 @@ object IProxyConfiguration {
     proxyPassword: String = null,
     proxyUsername: String = null
   ): IProxyConfiguration = {
-    val __obj = js.Dynamic.literal(proxyUrl = proxyUrl)
-    if (proxyBypassHosts != null) __obj.updateDynamic("proxyBypassHosts")(proxyBypassHosts)
-    if (proxyPassword != null) __obj.updateDynamic("proxyPassword")(proxyPassword)
-    if (proxyUsername != null) __obj.updateDynamic("proxyUsername")(proxyUsername)
+    val __obj = js.Dynamic.literal(proxyUrl = proxyUrl.asInstanceOf[js.Any])
+    if (proxyBypassHosts != null) __obj.updateDynamic("proxyBypassHosts")(proxyBypassHosts.asInstanceOf[js.Any])
+    if (proxyPassword != null) __obj.updateDynamic("proxyPassword")(proxyPassword.asInstanceOf[js.Any])
+    if (proxyUsername != null) __obj.updateDynamic("proxyUsername")(proxyUsername.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProxyConfiguration]
   }
 }

@@ -20,8 +20,8 @@ object Graph2dDrawPointsOption {
     onRender: () => Boolean = null,
     size: Int | Double = null
   ): Graph2dDrawPointsOption = {
-    val __obj = js.Dynamic.literal(style = style)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graph2dDrawPointsOption]

@@ -30,7 +30,7 @@ object Options {
     onError: Error => js.Any,
     shouldCheckApkHasDownloaded: Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal(downloadApkEnd = js.Any.fromFunction1(downloadApkEnd), downloadApkName = downloadApkName, downloadDescription = downloadDescription, downloadDestDirectory = downloadDestDirectory, downloadTitle = downloadTitle, iOSAppId = iOSAppId, iOSAppLookupUrl = iOSAppLookupUrl, onError = js.Any.fromFunction1(onError), shouldCheckApkHasDownloaded = shouldCheckApkHasDownloaded)
+    val __obj = js.Dynamic.literal(downloadApkEnd = js.Any.fromFunction1(downloadApkEnd), downloadApkName = downloadApkName.asInstanceOf[js.Any], downloadDescription = downloadDescription.asInstanceOf[js.Any], downloadDestDirectory = downloadDestDirectory.asInstanceOf[js.Any], downloadTitle = downloadTitle.asInstanceOf[js.Any], iOSAppId = iOSAppId.asInstanceOf[js.Any], iOSAppLookupUrl = iOSAppLookupUrl.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError), shouldCheckApkHasDownloaded = shouldCheckApkHasDownloaded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

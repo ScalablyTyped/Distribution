@@ -24,12 +24,12 @@ object BigtableColumn {
     `type`: String = null
   ): BigtableColumn = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (!js.isUndefined(onlyReadLatest)) __obj.updateDynamic("onlyReadLatest")(onlyReadLatest)
-    if (qualifierEncoded != null) __obj.updateDynamic("qualifierEncoded")(qualifierEncoded)
-    if (qualifierString != null) __obj.updateDynamic("qualifierString")(qualifierString)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyReadLatest)) __obj.updateDynamic("onlyReadLatest")(onlyReadLatest.asInstanceOf[js.Any])
+    if (qualifierEncoded != null) __obj.updateDynamic("qualifierEncoded")(qualifierEncoded.asInstanceOf[js.Any])
+    if (qualifierString != null) __obj.updateDynamic("qualifierString")(qualifierString.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BigtableColumn]
   }
 }

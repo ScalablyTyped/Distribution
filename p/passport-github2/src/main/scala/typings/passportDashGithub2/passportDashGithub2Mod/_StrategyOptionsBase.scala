@@ -37,16 +37,16 @@ object _StrategyOptionsBase {
     userEmailURL: String = null,
     userProfileURL: String = null
   ): _StrategyOptionsBase = {
-    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
-    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
-    if (userEmailURL != null) __obj.updateDynamic("userEmailURL")(userEmailURL)
-    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
+    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL.asInstanceOf[js.Any])
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
+    if (userEmailURL != null) __obj.updateDynamic("userEmailURL")(userEmailURL.asInstanceOf[js.Any])
+    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[_StrategyOptionsBase]
   }
 }

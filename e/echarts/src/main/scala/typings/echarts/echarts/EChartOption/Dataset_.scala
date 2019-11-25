@@ -45,8 +45,8 @@ object Dataset_ {
     source: js.Array[_] | js.Object = null
   ): Dataset_ = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dataset_]
   }

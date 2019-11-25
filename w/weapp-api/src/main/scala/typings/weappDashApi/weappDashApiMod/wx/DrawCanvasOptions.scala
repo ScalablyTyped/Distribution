@@ -17,7 +17,7 @@ trait DrawCanvasOptions extends js.Object {
 object DrawCanvasOptions {
   @scala.inline
   def apply(actions: js.Array[CanvasAction], canvasId: Double | String): DrawCanvasOptions = {
-    val __obj = js.Dynamic.literal(actions = actions, canvasId = canvasId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], canvasId = canvasId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DrawCanvasOptions]
   }

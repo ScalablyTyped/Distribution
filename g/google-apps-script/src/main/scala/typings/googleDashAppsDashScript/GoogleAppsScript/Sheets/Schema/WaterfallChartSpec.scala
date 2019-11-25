@@ -24,12 +24,12 @@ object WaterfallChartSpec {
     stackedType: String = null
   ): WaterfallChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (connectorLineStyle != null) __obj.updateDynamic("connectorLineStyle")(connectorLineStyle)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (!js.isUndefined(firstValueIsTotal)) __obj.updateDynamic("firstValueIsTotal")(firstValueIsTotal)
-    if (!js.isUndefined(hideConnectorLines)) __obj.updateDynamic("hideConnectorLines")(hideConnectorLines)
-    if (series != null) __obj.updateDynamic("series")(series)
-    if (stackedType != null) __obj.updateDynamic("stackedType")(stackedType)
+    if (connectorLineStyle != null) __obj.updateDynamic("connectorLineStyle")(connectorLineStyle.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstValueIsTotal)) __obj.updateDynamic("firstValueIsTotal")(firstValueIsTotal.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideConnectorLines)) __obj.updateDynamic("hideConnectorLines")(hideConnectorLines.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (stackedType != null) __obj.updateDynamic("stackedType")(stackedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaterfallChartSpec]
   }
 }

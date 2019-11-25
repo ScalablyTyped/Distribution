@@ -17,7 +17,7 @@ object DispatcherOption {
   ): DispatcherOption = {
     val __obj = js.Dynamic.literal()
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction2(errorHandler))
-    if (stores != null) __obj.updateDynamic("stores")(stores)
+    if (stores != null) __obj.updateDynamic("stores")(stores.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatcherOption]
   }
 }

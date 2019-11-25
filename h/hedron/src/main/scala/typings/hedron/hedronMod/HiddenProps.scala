@@ -40,11 +40,11 @@ object HiddenProps {
     xs: js.UndefOr[Boolean] = js.undefined
   ): HiddenProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(lg)) __obj.updateDynamic("lg")(lg)
-    if (!js.isUndefined(md)) __obj.updateDynamic("md")(md)
-    if (!js.isUndefined(sm)) __obj.updateDynamic("sm")(sm)
-    if (!js.isUndefined(xs)) __obj.updateDynamic("xs")(xs)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(lg)) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
+    if (!js.isUndefined(md)) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
+    if (!js.isUndefined(sm)) __obj.updateDynamic("sm")(sm.asInstanceOf[js.Any])
+    if (!js.isUndefined(xs)) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
     __obj.asInstanceOf[HiddenProps]
   }
 }

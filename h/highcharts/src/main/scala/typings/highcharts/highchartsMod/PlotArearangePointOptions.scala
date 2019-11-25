@@ -15,7 +15,7 @@ object PlotArearangePointOptions {
   @scala.inline
   def apply(events: PlotArearangePointEventsOptions = null): PlotArearangePointOptions = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotArearangePointOptions]
   }
 }

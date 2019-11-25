@@ -25,7 +25,7 @@ trait java_ extends js.Object {
 object java_ {
   @scala.inline
   def apply(defaultMode: js.Object, modes: js.Array[_]): java_ = {
-    val __obj = js.Dynamic.literal(defaultMode = defaultMode, modes = modes)
+    val __obj = js.Dynamic.literal(defaultMode = defaultMode.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[java_]
   }

@@ -29,10 +29,10 @@ object Options {
     useCIT: js.UndefOr[Boolean] = js.undefined,
     useHTTPS: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(app_code = app_code, app_id = app_id)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (!js.isUndefined(useCIT)) __obj.updateDynamic("useCIT")(useCIT)
-    if (!js.isUndefined(useHTTPS)) __obj.updateDynamic("useHTTPS")(useHTTPS)
+    val __obj = js.Dynamic.literal(app_code = app_code.asInstanceOf[js.Any], app_id = app_id.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCIT)) __obj.updateDynamic("useCIT")(useCIT.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHTTPS)) __obj.updateDynamic("useHTTPS")(useHTTPS.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -18,8 +18,8 @@ object PowerManagementEvent {
   def apply(batteryLevel: Int | Double = null, createTime: String = null, eventType: String = null): PowerManagementEvent = {
     val __obj = js.Dynamic.literal()
     if (batteryLevel != null) __obj.updateDynamic("batteryLevel")(batteryLevel.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PowerManagementEvent]
   }
 }

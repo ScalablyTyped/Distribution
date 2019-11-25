@@ -38,19 +38,19 @@ object CaptionSnippet {
     videoId: String = null
   ): CaptionSnippet = {
     val __obj = js.Dynamic.literal()
-    if (audioTrackType != null) __obj.updateDynamic("audioTrackType")(audioTrackType)
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
-    if (!js.isUndefined(isAutoSynced)) __obj.updateDynamic("isAutoSynced")(isAutoSynced)
-    if (!js.isUndefined(isCC)) __obj.updateDynamic("isCC")(isCC)
-    if (!js.isUndefined(isDraft)) __obj.updateDynamic("isDraft")(isDraft)
-    if (!js.isUndefined(isEasyReader)) __obj.updateDynamic("isEasyReader")(isEasyReader)
-    if (!js.isUndefined(isLarge)) __obj.updateDynamic("isLarge")(isLarge)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (lastUpdated != null) __obj.updateDynamic("lastUpdated")(lastUpdated)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (trackKind != null) __obj.updateDynamic("trackKind")(trackKind)
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (audioTrackType != null) __obj.updateDynamic("audioTrackType")(audioTrackType.asInstanceOf[js.Any])
+    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAutoSynced)) __obj.updateDynamic("isAutoSynced")(isAutoSynced.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCC)) __obj.updateDynamic("isCC")(isCC.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDraft)) __obj.updateDynamic("isDraft")(isDraft.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEasyReader)) __obj.updateDynamic("isEasyReader")(isEasyReader.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLarge)) __obj.updateDynamic("isLarge")(isLarge.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (lastUpdated != null) __obj.updateDynamic("lastUpdated")(lastUpdated.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (trackKind != null) __obj.updateDynamic("trackKind")(trackKind.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSnippet]
   }
 }

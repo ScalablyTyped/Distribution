@@ -23,11 +23,11 @@ object AxeOptions {
     selectors: js.UndefOr[Boolean] = js.undefined
   ): AxeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(elementRef)) __obj.updateDynamic("elementRef")(elementRef)
-    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (runOnly != null) __obj.updateDynamic("runOnly")(runOnly)
-    if (!js.isUndefined(selectors)) __obj.updateDynamic("selectors")(selectors)
+    if (!js.isUndefined(elementRef)) __obj.updateDynamic("elementRef")(elementRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (runOnly != null) __obj.updateDynamic("runOnly")(runOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectors)) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxeOptions]
   }
 }

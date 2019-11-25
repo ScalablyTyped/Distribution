@@ -12,7 +12,7 @@ trait WithRouterProps extends js.Object {
 object WithRouterProps {
   @scala.inline
   def apply(router: NextRouter): WithRouterProps = {
-    val __obj = js.Dynamic.literal(router = router)
+    val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WithRouterProps]
   }

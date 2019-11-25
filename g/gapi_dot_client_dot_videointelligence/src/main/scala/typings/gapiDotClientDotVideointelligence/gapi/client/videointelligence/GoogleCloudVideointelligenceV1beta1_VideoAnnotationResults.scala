@@ -33,11 +33,11 @@ object GoogleCloudVideointelligenceV1beta1_VideoAnnotationResults {
     shotAnnotations: js.Array[GoogleCloudVideointelligenceV1beta1_VideoSegment] = null
   ): GoogleCloudVideointelligenceV1beta1_VideoAnnotationResults = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri)
-    if (labelAnnotations != null) __obj.updateDynamic("labelAnnotations")(labelAnnotations)
-    if (safeSearchAnnotations != null) __obj.updateDynamic("safeSearchAnnotations")(safeSearchAnnotations)
-    if (shotAnnotations != null) __obj.updateDynamic("shotAnnotations")(shotAnnotations)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri.asInstanceOf[js.Any])
+    if (labelAnnotations != null) __obj.updateDynamic("labelAnnotations")(labelAnnotations.asInstanceOf[js.Any])
+    if (safeSearchAnnotations != null) __obj.updateDynamic("safeSearchAnnotations")(safeSearchAnnotations.asInstanceOf[js.Any])
+    if (shotAnnotations != null) __obj.updateDynamic("shotAnnotations")(shotAnnotations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_VideoAnnotationResults]
   }
 }

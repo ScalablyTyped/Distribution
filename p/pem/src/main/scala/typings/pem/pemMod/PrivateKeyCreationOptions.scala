@@ -12,7 +12,7 @@ trait PrivateKeyCreationOptions extends js.Object {
 object PrivateKeyCreationOptions {
   @scala.inline
   def apply(cipher: PrivateKeyCipher, password: String): PrivateKeyCreationOptions = {
-    val __obj = js.Dynamic.literal(cipher = cipher.asInstanceOf[js.Any], password = password)
+    val __obj = js.Dynamic.literal(cipher = cipher.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PrivateKeyCreationOptions]
   }

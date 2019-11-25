@@ -16,8 +16,8 @@ trait Batch extends js.Object {
 object Batch {
   @scala.inline
   def apply(_defer: Boolean, _expirationTime: ExpirationTime, _onComplete: () => js.Any, _next: Batch = null): Batch = {
-    val __obj = js.Dynamic.literal(_defer = _defer, _expirationTime = _expirationTime, _onComplete = js.Any.fromFunction0(_onComplete))
-    if (_next != null) __obj.updateDynamic("_next")(_next)
+    val __obj = js.Dynamic.literal(_defer = _defer.asInstanceOf[js.Any], _expirationTime = _expirationTime.asInstanceOf[js.Any], _onComplete = js.Any.fromFunction0(_onComplete))
+    if (_next != null) __obj.updateDynamic("_next")(_next.asInstanceOf[js.Any])
     __obj.asInstanceOf[Batch]
   }
 }

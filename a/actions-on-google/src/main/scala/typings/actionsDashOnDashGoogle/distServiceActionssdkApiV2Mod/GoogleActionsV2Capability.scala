@@ -15,7 +15,7 @@ object GoogleActionsV2Capability {
   @scala.inline
   def apply(name: String = null): GoogleActionsV2Capability = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2Capability]
   }
 }

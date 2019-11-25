@@ -21,9 +21,9 @@ object SongRelationships {
     genres: Relationship[Genre] = null,
     station: Anon_Data = null
   ): SongRelationships = {
-    val __obj = js.Dynamic.literal(albums = albums, artists = artists)
-    if (genres != null) __obj.updateDynamic("genres")(genres)
-    if (station != null) __obj.updateDynamic("station")(station)
+    val __obj = js.Dynamic.literal(albums = albums.asInstanceOf[js.Any], artists = artists.asInstanceOf[js.Any])
+    if (genres != null) __obj.updateDynamic("genres")(genres.asInstanceOf[js.Any])
+    if (station != null) __obj.updateDynamic("station")(station.asInstanceOf[js.Any])
     __obj.asInstanceOf[SongRelationships]
   }
 }

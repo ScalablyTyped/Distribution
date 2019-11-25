@@ -15,10 +15,10 @@ object PopOverPane {
   @scala.inline
   def apply(initial: String = null, layout: String = null, loading: String = null, transition: String = null): PopOverPane = {
     val __obj = js.Dynamic.literal()
-    if (initial != null) __obj.updateDynamic("initial")(initial)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (loading != null) __obj.updateDynamic("loading")(loading)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopOverPane]
   }
 }

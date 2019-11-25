@@ -40,19 +40,19 @@ object ITooltipOptions {
     vOffset: Int | Double = null
   ): ITooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickOpen)) __obj.updateDynamic("clickOpen")(clickOpen)
-    if (!js.isUndefined(disableHover)) __obj.updateDynamic("disableHover")(disableHover)
+    if (!js.isUndefined(clickOpen)) __obj.updateDynamic("clickOpen")(clickOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHover)) __obj.updateDynamic("disableHover")(disableHover.asInstanceOf[js.Any])
     if (fadeInDuration != null) __obj.updateDynamic("fadeInDuration")(fadeInDuration.asInstanceOf[js.Any])
     if (fadeOutDuration != null) __obj.updateDynamic("fadeOutDuration")(fadeOutDuration.asInstanceOf[js.Any])
     if (hOffset != null) __obj.updateDynamic("hOffset")(hOffset.asInstanceOf[js.Any])
     if (hoverDelay != null) __obj.updateDynamic("hoverDelay")(hoverDelay.asInstanceOf[js.Any])
-    if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass)
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (templateClasses != null) __obj.updateDynamic("templateClasses")(templateClasses)
-    if (tipText != null) __obj.updateDynamic("tipText")(tipText)
-    if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass)
-    if (triggerClass != null) __obj.updateDynamic("triggerClass")(triggerClass)
+    if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass.asInstanceOf[js.Any])
+    if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateClasses != null) __obj.updateDynamic("templateClasses")(templateClasses.asInstanceOf[js.Any])
+    if (tipText != null) __obj.updateDynamic("tipText")(tipText.asInstanceOf[js.Any])
+    if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass.asInstanceOf[js.Any])
+    if (triggerClass != null) __obj.updateDynamic("triggerClass")(triggerClass.asInstanceOf[js.Any])
     if (vOffset != null) __obj.updateDynamic("vOffset")(vOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITooltipOptions]
   }

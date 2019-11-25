@@ -14,8 +14,8 @@ trait AuthOAuthSecret extends js.Object {
 object AuthOAuthSecret {
   @scala.inline
   def apply(key: String, secret: String, `type`: oauth): AuthOAuthSecret = {
-    val __obj = js.Dynamic.literal(key = key, secret = secret)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOAuthSecret]
   }
 }

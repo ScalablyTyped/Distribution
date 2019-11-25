@@ -13,7 +13,7 @@ trait EncryptorConfig extends js.Object {
 object EncryptorConfig {
   @scala.inline
   def apply(secretKey: String, onError: /* err */ Error => Unit = null): EncryptorConfig = {
-    val __obj = js.Dynamic.literal(secretKey = secretKey)
+    val __obj = js.Dynamic.literal(secretKey = secretKey.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     __obj.asInstanceOf[EncryptorConfig]
   }

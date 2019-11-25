@@ -52,11 +52,11 @@ object IKernelUser {
     restartKernelAndClear: /* widget */ T => js.Promise[Boolean] = null,
     shutdownKernel: /* widget */ T => js.Promise[Unit] = null
   ): IKernelUser[T] = {
-    val __obj = js.Dynamic.literal(tracker = tracker)
+    val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
     if (changeKernel != null) __obj.updateDynamic("changeKernel")(js.Any.fromFunction1(changeKernel))
     if (interruptKernel != null) __obj.updateDynamic("interruptKernel")(js.Any.fromFunction1(interruptKernel))
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
-    if (noun != null) __obj.updateDynamic("noun")(noun)
+    if (noun != null) __obj.updateDynamic("noun")(noun.asInstanceOf[js.Any])
     if (restartKernel != null) __obj.updateDynamic("restartKernel")(js.Any.fromFunction1(restartKernel))
     if (restartKernelAndClear != null) __obj.updateDynamic("restartKernelAndClear")(js.Any.fromFunction1(restartKernelAndClear))
     if (shutdownKernel != null) __obj.updateDynamic("shutdownKernel")(js.Any.fromFunction1(shutdownKernel))

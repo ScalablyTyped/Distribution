@@ -26,9 +26,9 @@ object UpdateFilter {
     windowId: Int | Double = null
   ): UpdateFilter = {
     val __obj = js.Dynamic.literal()
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFilter]
   }

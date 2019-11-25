@@ -12,7 +12,7 @@ trait InsightsServiceAccountResponseAccount_hashtags extends js.Object {
 object InsightsServiceAccountResponseAccount_hashtags {
   @scala.inline
   def apply(count: Double, nodes: js.Array[_]): InsightsServiceAccountResponseAccount_hashtags = {
-    val __obj = js.Dynamic.literal(count = count, nodes = nodes)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseAccount_hashtags]
   }

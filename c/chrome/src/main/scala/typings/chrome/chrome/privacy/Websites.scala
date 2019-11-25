@@ -25,7 +25,7 @@ object Websites {
     referrersEnabled: ChromeSetting,
     thirdPartyCookiesAllowed: ChromeSetting
   ): Websites = {
-    val __obj = js.Dynamic.literal(doNotTrackEnabled = doNotTrackEnabled, hyperlinkAuditingEnabled = hyperlinkAuditingEnabled, protectedContentEnabled = protectedContentEnabled, referrersEnabled = referrersEnabled, thirdPartyCookiesAllowed = thirdPartyCookiesAllowed)
+    val __obj = js.Dynamic.literal(doNotTrackEnabled = doNotTrackEnabled.asInstanceOf[js.Any], hyperlinkAuditingEnabled = hyperlinkAuditingEnabled.asInstanceOf[js.Any], protectedContentEnabled = protectedContentEnabled.asInstanceOf[js.Any], referrersEnabled = referrersEnabled.asInstanceOf[js.Any], thirdPartyCookiesAllowed = thirdPartyCookiesAllowed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Websites]
   }

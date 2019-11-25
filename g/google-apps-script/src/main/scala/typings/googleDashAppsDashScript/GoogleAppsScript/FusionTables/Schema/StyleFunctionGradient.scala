@@ -18,7 +18,7 @@ object StyleFunctionGradient {
     min: Int | Double = null
   ): StyleFunctionGradient = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleFunctionGradient]

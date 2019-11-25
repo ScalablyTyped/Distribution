@@ -14,7 +14,7 @@ trait Anon_Opacity extends js.Object {
 object Anon_Opacity {
   @scala.inline
   def apply(src: String, opacity: Int | Double = null, x: Int | Double = null, y: Int | Double = null): Anon_Opacity = {
-    val __obj = js.Dynamic.literal(src = src)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

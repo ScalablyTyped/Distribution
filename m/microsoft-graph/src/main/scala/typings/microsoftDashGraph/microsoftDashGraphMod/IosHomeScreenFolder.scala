@@ -16,8 +16,8 @@ object IosHomeScreenFolder {
   @scala.inline
   def apply(displayName: String = null, pages: js.Array[IosHomeScreenFolderPage] = null): IosHomeScreenFolder = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (pages != null) __obj.updateDynamic("pages")(pages)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosHomeScreenFolder]
   }
 }

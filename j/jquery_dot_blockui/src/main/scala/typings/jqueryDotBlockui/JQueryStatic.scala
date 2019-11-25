@@ -15,8 +15,8 @@ object JQueryStatic {
   @scala.inline
   def apply(blockUI: JQBlockUIStatic = null, unblockUI: JQBlockUIStatic = null): JQueryStatic = {
     val __obj = js.Dynamic.literal()
-    if (blockUI != null) __obj.updateDynamic("blockUI")(blockUI)
-    if (unblockUI != null) __obj.updateDynamic("unblockUI")(unblockUI)
+    if (blockUI != null) __obj.updateDynamic("blockUI")(blockUI.asInstanceOf[js.Any])
+    if (unblockUI != null) __obj.updateDynamic("unblockUI")(unblockUI.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
 }

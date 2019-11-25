@@ -40,7 +40,7 @@ trait Frequency extends js.Object {
 object Frequency {
   @scala.inline
   def apply(backoff: Boolean | Double, interval: Double, max: Double): Frequency = {
-    val __obj = js.Dynamic.literal(backoff = backoff.asInstanceOf[js.Any], interval = interval, max = max)
+    val __obj = js.Dynamic.literal(backoff = backoff.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Frequency]
   }

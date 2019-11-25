@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait StructureState extends js.Object
 
+object StructureState {
+  @scala.inline
+  def attached: typings.mendixmodelsdk.mendixmodelsdkStrings.attached = this.cast("attached")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def deleted: typings.mendixmodelsdk.mendixmodelsdkStrings.deleted = this.cast("deleted")
+  @scala.inline
+  def detached: typings.mendixmodelsdk.mendixmodelsdkStrings.detached = this.cast("detached")
+  @scala.inline
+  def `new`: typings.mendixmodelsdk.mendixmodelsdkStrings.`new` = this.cast("new")
+}
+

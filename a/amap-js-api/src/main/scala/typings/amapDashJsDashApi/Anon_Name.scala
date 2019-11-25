@@ -14,7 +14,7 @@ object Anon_Name {
   @scala.inline
   def apply(name: String = null, position: LocationValue = null): Anon_Name = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Name]
   }

@@ -27,9 +27,9 @@ object PullsCreateReviewRequestParams {
     reviewers: js.Array[String] = null,
     team_reviewers: js.Array[String] = null
   ): PullsCreateReviewRequestParams = {
-    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
-    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers)
-    if (team_reviewers != null) __obj.updateDynamic("team_reviewers")(team_reviewers)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers.asInstanceOf[js.Any])
+    if (team_reviewers != null) __obj.updateDynamic("team_reviewers")(team_reviewers.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsCreateReviewRequestParams]
   }
 }

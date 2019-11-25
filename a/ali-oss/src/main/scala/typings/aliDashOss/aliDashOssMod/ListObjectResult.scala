@@ -21,7 +21,7 @@ object ListObjectResult {
     prefixes: js.Array[String],
     res: NormalSuccessResponse
   ): ListObjectResult = {
-    val __obj = js.Dynamic.literal(isTruncated = isTruncated, nextMarker = nextMarker, objects = objects, prefixes = prefixes, res = res)
+    val __obj = js.Dynamic.literal(isTruncated = isTruncated.asInstanceOf[js.Any], nextMarker = nextMarker.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any], prefixes = prefixes.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListObjectResult]
   }

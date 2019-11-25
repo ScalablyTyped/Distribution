@@ -13,9 +13,9 @@ trait FormattedMessageChain extends js.Object {
 object FormattedMessageChain {
   @scala.inline
   def apply(message: String, next: FormattedMessageChain = null, position: Position = null): FormattedMessageChain = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (position != null) __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormattedMessageChain]
   }
 }

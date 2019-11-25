@@ -21,7 +21,7 @@ object Anon_AllowInInput {
     preventDefault: Boolean,
     stopPropagation: Boolean
   ): Anon_AllowInInput = {
-    val __obj = js.Dynamic.literal(allowInInput = allowInInput, disabled = disabled, global = global, preventDefault = preventDefault, stopPropagation = stopPropagation)
+    val __obj = js.Dynamic.literal(allowInInput = allowInInput.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllowInInput]
   }

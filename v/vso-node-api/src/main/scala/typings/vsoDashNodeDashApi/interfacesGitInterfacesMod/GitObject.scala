@@ -18,7 +18,7 @@ trait GitObject extends js.Object {
 object GitObject {
   @scala.inline
   def apply(objectId: String, objectType: GitObjectType): GitObject = {
-    val __obj = js.Dynamic.literal(objectId = objectId, objectType = objectType)
+    val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitObject]
   }

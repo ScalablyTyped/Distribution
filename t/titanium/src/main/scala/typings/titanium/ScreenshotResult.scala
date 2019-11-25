@@ -19,7 +19,7 @@ object ScreenshotResult {
   @scala.inline
   def apply(media: Blob = null): ScreenshotResult = {
     val __obj = js.Dynamic.literal()
-    if (media != null) __obj.updateDynamic("media")(media)
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenshotResult]
   }
 }

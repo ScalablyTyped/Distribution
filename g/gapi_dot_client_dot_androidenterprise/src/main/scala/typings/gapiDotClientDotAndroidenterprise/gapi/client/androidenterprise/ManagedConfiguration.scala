@@ -17,9 +17,9 @@ object ManagedConfiguration {
   @scala.inline
   def apply(kind: String = null, managedProperty: js.Array[ManagedProperty] = null, productId: String = null): ManagedConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (managedProperty != null) __obj.updateDynamic("managedProperty")(managedProperty)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (managedProperty != null) __obj.updateDynamic("managedProperty")(managedProperty.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedConfiguration]
   }
 }

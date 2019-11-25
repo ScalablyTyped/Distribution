@@ -47,24 +47,24 @@ object IndexSpecification {
     unique: js.UndefOr[Boolean] = js.undefined,
     weights: js.Object = null
   ): IndexSpecification = {
-    val __obj = js.Dynamic.literal(key = key)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (`2dsphereIndexVersion` != null) __obj.updateDynamic("2dsphereIndexVersion")(`2dsphereIndexVersion`.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (bits != null) __obj.updateDynamic("bits")(bits.asInstanceOf[js.Any])
     if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
-    if (collation != null) __obj.updateDynamic("collation")(collation)
-    if (default_language != null) __obj.updateDynamic("default_language")(default_language)
+    if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
+    if (default_language != null) __obj.updateDynamic("default_language")(default_language.asInstanceOf[js.Any])
     if (expireAfterSeconds != null) __obj.updateDynamic("expireAfterSeconds")(expireAfterSeconds.asInstanceOf[js.Any])
-    if (language_override != null) __obj.updateDynamic("language_override")(language_override)
+    if (language_override != null) __obj.updateDynamic("language_override")(language_override.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (partialFilterExpression != null) __obj.updateDynamic("partialFilterExpression")(partialFilterExpression)
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse)
-    if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (partialFilterExpression != null) __obj.updateDynamic("partialFilterExpression")(partialFilterExpression.asInstanceOf[js.Any])
+    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
+    if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine.asInstanceOf[js.Any])
     if (textIndexVersion != null) __obj.updateDynamic("textIndexVersion")(textIndexVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
-    if (weights != null) __obj.updateDynamic("weights")(weights)
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexSpecification]
   }
 }

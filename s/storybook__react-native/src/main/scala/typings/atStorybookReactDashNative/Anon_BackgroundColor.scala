@@ -25,7 +25,7 @@ object Anon_BackgroundColor {
     labelColor: String,
     previewBorderColor: String
   ): Anon_BackgroundColor = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, buttonActiveTextColor = buttonActiveTextColor, buttonTextColor = buttonTextColor, headerTextColor = headerTextColor, labelColor = labelColor, previewBorderColor = previewBorderColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], buttonActiveTextColor = buttonActiveTextColor.asInstanceOf[js.Any], buttonTextColor = buttonTextColor.asInstanceOf[js.Any], headerTextColor = headerTextColor.asInstanceOf[js.Any], labelColor = labelColor.asInstanceOf[js.Any], previewBorderColor = previewBorderColor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColor]
   }

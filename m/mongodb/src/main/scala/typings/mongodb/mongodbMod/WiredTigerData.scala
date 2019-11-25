@@ -35,8 +35,8 @@ object WiredTigerData {
     cursor: Anon_Bulkloadedcursorinsertcalls,
     reconciliation: Anon_Dictionarymatches
   ): WiredTigerData = {
-    val __obj = js.Dynamic.literal(LSM = LSM, btree = btree, cache = cache, cache_walk = cache_walk, compression = compression, cursor = cursor, reconciliation = reconciliation)
-    __obj.updateDynamic("block-manager")(`block-manager`)
+    val __obj = js.Dynamic.literal(LSM = LSM.asInstanceOf[js.Any], btree = btree.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cache_walk = cache_walk.asInstanceOf[js.Any], compression = compression.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], reconciliation = reconciliation.asInstanceOf[js.Any])
+    __obj.updateDynamic("block-manager")(`block-manager`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiredTigerData]
   }
 }

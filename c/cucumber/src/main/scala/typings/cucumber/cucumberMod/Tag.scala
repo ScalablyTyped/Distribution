@@ -12,7 +12,7 @@ trait Tag extends js.Object {
 object Tag {
   @scala.inline
   def apply(line: Double, name: String): Tag = {
-    val __obj = js.Dynamic.literal(line = line, name = name)
+    val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tag]
   }

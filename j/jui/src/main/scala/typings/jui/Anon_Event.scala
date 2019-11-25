@@ -23,10 +23,10 @@ object Anon_Event {
   @scala.inline
   def apply(event: js.Any = null, target: js.Any = null, tpl: js.Any = null, words: js.Array[String] = null): Anon_Event = {
     val __obj = js.Dynamic.literal()
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
-    if (words != null) __obj.updateDynamic("words")(words)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Event]
   }
 }

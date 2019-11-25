@@ -14,7 +14,7 @@ trait AuthResponse extends js.Object {
 object AuthResponse {
   @scala.inline
   def apply(accessToken: String, expiresIn: Double, signedRequest: String, userID: String): AuthResponse = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, signedRequest = signedRequest, userID = userID)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], signedRequest = signedRequest.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthResponse]
   }

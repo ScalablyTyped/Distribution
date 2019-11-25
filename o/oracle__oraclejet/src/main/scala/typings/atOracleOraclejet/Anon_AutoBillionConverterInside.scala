@@ -32,7 +32,7 @@ object Anon_AutoBillionConverterInside {
     scaling: none | thousand | million | billion | trillion | quadrillion | auto,
     style: js.Object
   ): Anon_AutoBillionConverterInside = {
-    val __obj = js.Dynamic.literal(converter = converter, position = position.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any], style = style)
+    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoBillionConverterInside]
   }

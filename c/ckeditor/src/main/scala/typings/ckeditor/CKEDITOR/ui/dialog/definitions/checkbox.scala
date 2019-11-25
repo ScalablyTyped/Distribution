@@ -14,8 +14,8 @@ object checkbox {
   @scala.inline
   def apply(checked: js.UndefOr[Boolean] = js.undefined, label: String = null, validate: () => Boolean = null): checkbox = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[checkbox]
   }

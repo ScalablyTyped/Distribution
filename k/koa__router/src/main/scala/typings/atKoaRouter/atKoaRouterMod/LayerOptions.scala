@@ -23,12 +23,12 @@ object LayerOptions {
     sensitive: js.UndefOr[Boolean] = js.undefined,
     strict: js.UndefOr[Boolean] = js.undefined
   ): LayerOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end)
-    if (!js.isUndefined(ignoreCaptures)) __obj.updateDynamic("ignoreCaptures")(ignoreCaptures)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCaptures)) __obj.updateDynamic("ignoreCaptures")(ignoreCaptures.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerOptions]
   }
 }

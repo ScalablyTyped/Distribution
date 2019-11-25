@@ -52,14 +52,14 @@ object Options {
     thousands: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(affixesStay)) __obj.updateDynamic("affixesStay")(affixesStay)
-    if (!js.isUndefined(allowNegative)) __obj.updateDynamic("allowNegative")(allowNegative)
-    if (!js.isUndefined(allowZero)) __obj.updateDynamic("allowZero")(allowZero)
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
+    if (!js.isUndefined(affixesStay)) __obj.updateDynamic("affixesStay")(affixesStay.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNegative)) __obj.updateDynamic("allowNegative")(allowNegative.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowZero)) __obj.updateDynamic("allowZero")(allowZero.asInstanceOf[js.Any])
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
-    if (thousands != null) __obj.updateDynamic("thousands")(thousands)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (thousands != null) __obj.updateDynamic("thousands")(thousands.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

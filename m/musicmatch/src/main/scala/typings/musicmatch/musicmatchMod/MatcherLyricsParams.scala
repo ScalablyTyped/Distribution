@@ -13,8 +13,8 @@ object MatcherLyricsParams {
   @scala.inline
   def apply(q_artist: String = null, q_track: String = null): MatcherLyricsParams = {
     val __obj = js.Dynamic.literal()
-    if (q_artist != null) __obj.updateDynamic("q_artist")(q_artist)
-    if (q_track != null) __obj.updateDynamic("q_track")(q_track)
+    if (q_artist != null) __obj.updateDynamic("q_artist")(q_artist.asInstanceOf[js.Any])
+    if (q_track != null) __obj.updateDynamic("q_track")(q_track.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatcherLyricsParams]
   }
 }

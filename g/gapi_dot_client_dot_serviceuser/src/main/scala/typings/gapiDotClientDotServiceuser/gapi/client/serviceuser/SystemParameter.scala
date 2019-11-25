@@ -23,9 +23,9 @@ object SystemParameter {
   @scala.inline
   def apply(httpHeader: String = null, name: String = null, urlQueryParameter: String = null): SystemParameter = {
     val __obj = js.Dynamic.literal()
-    if (httpHeader != null) __obj.updateDynamic("httpHeader")(httpHeader)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (urlQueryParameter != null) __obj.updateDynamic("urlQueryParameter")(urlQueryParameter)
+    if (httpHeader != null) __obj.updateDynamic("httpHeader")(httpHeader.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (urlQueryParameter != null) __obj.updateDynamic("urlQueryParameter")(urlQueryParameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemParameter]
   }
 }

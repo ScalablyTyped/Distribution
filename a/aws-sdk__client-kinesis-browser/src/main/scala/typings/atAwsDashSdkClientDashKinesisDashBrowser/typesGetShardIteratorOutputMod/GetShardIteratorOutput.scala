@@ -21,8 +21,8 @@ trait GetShardIteratorOutput extends OutputTypesUnion {
 object GetShardIteratorOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ShardIterator: String = null): GetShardIteratorOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ShardIterator != null) __obj.updateDynamic("ShardIterator")(ShardIterator)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ShardIterator != null) __obj.updateDynamic("ShardIterator")(ShardIterator.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetShardIteratorOutput]
   }
 }

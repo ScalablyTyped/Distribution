@@ -39,16 +39,16 @@ object DeclarationReflectionObject {
     setSignature: js.Array[SignatureReflectionObject] = null,
     signatures: js.Array[SignatureReflectionObject] = null
   ): DeclarationReflectionObject = {
-    val __obj = js.Dynamic.literal(children = children, defaultValue = defaultValue, flags = flags, id = id, kind = kind, kindString = kindString, name = name)
-    if (extendedBy != null) __obj.updateDynamic("extendedBy")(extendedBy)
-    if (extendedTypes != null) __obj.updateDynamic("extendedTypes")(extendedTypes)
-    if (getSignature != null) __obj.updateDynamic("getSignature")(getSignature)
-    if (implementedBy != null) __obj.updateDynamic("implementedBy")(implementedBy)
-    if (implementedTypes != null) __obj.updateDynamic("implementedTypes")(implementedTypes)
-    if (indexSignature != null) __obj.updateDynamic("indexSignature")(indexSignature)
-    if (originalName != null) __obj.updateDynamic("originalName")(originalName)
-    if (setSignature != null) __obj.updateDynamic("setSignature")(setSignature)
-    if (signatures != null) __obj.updateDynamic("signatures")(signatures)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindString = kindString.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (extendedBy != null) __obj.updateDynamic("extendedBy")(extendedBy.asInstanceOf[js.Any])
+    if (extendedTypes != null) __obj.updateDynamic("extendedTypes")(extendedTypes.asInstanceOf[js.Any])
+    if (getSignature != null) __obj.updateDynamic("getSignature")(getSignature.asInstanceOf[js.Any])
+    if (implementedBy != null) __obj.updateDynamic("implementedBy")(implementedBy.asInstanceOf[js.Any])
+    if (implementedTypes != null) __obj.updateDynamic("implementedTypes")(implementedTypes.asInstanceOf[js.Any])
+    if (indexSignature != null) __obj.updateDynamic("indexSignature")(indexSignature.asInstanceOf[js.Any])
+    if (originalName != null) __obj.updateDynamic("originalName")(originalName.asInstanceOf[js.Any])
+    if (setSignature != null) __obj.updateDynamic("setSignature")(setSignature.asInstanceOf[js.Any])
+    if (signatures != null) __obj.updateDynamic("signatures")(signatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarationReflectionObject]
   }
 }

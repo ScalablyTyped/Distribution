@@ -12,7 +12,7 @@ trait Shortcuts extends js.Object {
 object Shortcuts {
   @scala.inline
   def apply(onClick: () => js.Any, text: String): Shortcuts = {
-    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), text = text)
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Shortcuts]
   }

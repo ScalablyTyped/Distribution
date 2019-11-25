@@ -29,7 +29,7 @@ object IRowConfig {
     selectWithCheckboxOnly: Boolean,
     selectedItems: js.Array[_]
   ): IRowConfig = {
-    val __obj = js.Dynamic.literal(afterSelectionChangeCallback = js.Any.fromFunction0(afterSelectionChangeCallback), beforeSelectionChangeCallback = js.Any.fromFunction0(beforeSelectionChangeCallback), enableCellSelection = enableCellSelection, enableRowSelection = enableRowSelection, jqueryUITheme = jqueryUITheme, rowClasses = rowClasses, rowHeight = rowHeight, selectWithCheckboxOnly = selectWithCheckboxOnly, selectedItems = selectedItems)
+    val __obj = js.Dynamic.literal(afterSelectionChangeCallback = js.Any.fromFunction0(afterSelectionChangeCallback), beforeSelectionChangeCallback = js.Any.fromFunction0(beforeSelectionChangeCallback), enableCellSelection = enableCellSelection.asInstanceOf[js.Any], enableRowSelection = enableRowSelection.asInstanceOf[js.Any], jqueryUITheme = jqueryUITheme.asInstanceOf[js.Any], rowClasses = rowClasses.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any], selectWithCheckboxOnly = selectWithCheckboxOnly.asInstanceOf[js.Any], selectedItems = selectedItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRowConfig]
   }

@@ -19,10 +19,10 @@ object AsObject {
     end: Int | Double = null,
     sourceFile: String = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(pathList = pathList)
+    val __obj = js.Dynamic.literal(pathList = pathList.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile)
+    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

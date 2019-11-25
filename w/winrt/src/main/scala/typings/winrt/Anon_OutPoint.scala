@@ -13,7 +13,7 @@ trait Anon_OutPoint extends js.Object {
 object Anon_OutPoint {
   @scala.inline
   def apply(outPoint: Point, returnValue: Boolean): Anon_OutPoint = {
-    val __obj = js.Dynamic.literal(outPoint = outPoint, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(outPoint = outPoint.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OutPoint]
   }

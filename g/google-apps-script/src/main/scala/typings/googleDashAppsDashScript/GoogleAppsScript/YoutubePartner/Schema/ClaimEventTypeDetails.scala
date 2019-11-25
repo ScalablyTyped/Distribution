@@ -20,10 +20,10 @@ object ClaimEventTypeDetails {
     updateStatus: String = null
   ): ClaimEventTypeDetails = {
     val __obj = js.Dynamic.literal()
-    if (appealExplanation != null) __obj.updateDynamic("appealExplanation")(appealExplanation)
-    if (disputeNotes != null) __obj.updateDynamic("disputeNotes")(disputeNotes)
-    if (disputeReason != null) __obj.updateDynamic("disputeReason")(disputeReason)
-    if (updateStatus != null) __obj.updateDynamic("updateStatus")(updateStatus)
+    if (appealExplanation != null) __obj.updateDynamic("appealExplanation")(appealExplanation.asInstanceOf[js.Any])
+    if (disputeNotes != null) __obj.updateDynamic("disputeNotes")(disputeNotes.asInstanceOf[js.Any])
+    if (disputeReason != null) __obj.updateDynamic("disputeReason")(disputeReason.asInstanceOf[js.Any])
+    if (updateStatus != null) __obj.updateDynamic("updateStatus")(updateStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimEventTypeDetails]
   }
 }

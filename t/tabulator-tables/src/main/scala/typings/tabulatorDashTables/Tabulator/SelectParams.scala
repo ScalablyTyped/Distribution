@@ -22,8 +22,8 @@ object SelectParams {
     listItemFormatter: (/* value */ String, /* text */ String) => String = null
   ): SelectParams = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
     if (listItemFormatter != null) __obj.updateDynamic("listItemFormatter")(js.Any.fromFunction2(listItemFormatter))
     __obj.asInstanceOf[SelectParams]
   }

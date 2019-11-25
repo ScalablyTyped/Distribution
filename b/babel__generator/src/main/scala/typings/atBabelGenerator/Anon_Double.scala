@@ -23,7 +23,7 @@ object Anon_Double {
   def apply(quotes: single | double = null, wrap: js.UndefOr[Boolean] = js.undefined): Anon_Double = {
     val __obj = js.Dynamic.literal()
     if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Double]
   }
 }

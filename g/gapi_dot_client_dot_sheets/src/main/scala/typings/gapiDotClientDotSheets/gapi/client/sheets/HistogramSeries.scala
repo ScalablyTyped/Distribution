@@ -18,8 +18,8 @@ object HistogramSeries {
   @scala.inline
   def apply(barColor: Color = null, data: ChartData = null): HistogramSeries = {
     val __obj = js.Dynamic.literal()
-    if (barColor != null) __obj.updateDynamic("barColor")(barColor)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (barColor != null) __obj.updateDynamic("barColor")(barColor.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramSeries]
   }
 }

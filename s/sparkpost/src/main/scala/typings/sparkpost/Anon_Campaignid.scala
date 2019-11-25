@@ -13,8 +13,8 @@ object Anon_Campaignid {
   @scala.inline
   def apply(campaign_id: String = null, template_id: String = null): Anon_Campaignid = {
     val __obj = js.Dynamic.literal()
-    if (campaign_id != null) __obj.updateDynamic("campaign_id")(campaign_id)
-    if (template_id != null) __obj.updateDynamic("template_id")(template_id)
+    if (campaign_id != null) __obj.updateDynamic("campaign_id")(campaign_id.asInstanceOf[js.Any])
+    if (template_id != null) __obj.updateDynamic("template_id")(template_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Campaignid]
   }
 }

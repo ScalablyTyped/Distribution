@@ -15,10 +15,10 @@ object GalleriaEntry {
   @scala.inline
   def apply(description: String = null, image: String = null, thumbnail: String = null, title: String = null): GalleriaEntry = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GalleriaEntry]
   }
 }

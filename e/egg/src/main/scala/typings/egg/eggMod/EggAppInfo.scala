@@ -21,7 +21,7 @@ trait EggAppInfo extends js.Object {
 object EggAppInfo {
   @scala.inline
   def apply(HOME: String, baseDir: String, env: EggEnvType, name: String, pkg: js.Any, root: String): EggAppInfo = {
-    val __obj = js.Dynamic.literal(HOME = HOME, baseDir = baseDir, env = env.asInstanceOf[js.Any], name = name, pkg = pkg, root = root)
+    val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pkg = pkg.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EggAppInfo]
   }

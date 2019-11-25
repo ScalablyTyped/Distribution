@@ -21,9 +21,9 @@ object Webhook {
     id: String = null,
     links: js.Array[Link] = null
   ): Webhook = {
-    val __obj = js.Dynamic.literal(event_types = event_types, url = url)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (links != null) __obj.updateDynamic("links")(links)
+    val __obj = js.Dynamic.literal(event_types = event_types.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webhook]
   }
 }

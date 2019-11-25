@@ -12,7 +12,7 @@ trait Stat extends js.Object {
 object Stat {
   @scala.inline
   def apply(title: String, value: String): Stat = {
-    val __obj = js.Dynamic.literal(title = title, value = value)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stat]
   }

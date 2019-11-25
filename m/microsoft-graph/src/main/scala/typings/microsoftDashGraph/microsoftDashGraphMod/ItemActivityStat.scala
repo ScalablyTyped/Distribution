@@ -43,17 +43,17 @@ object ItemActivityStat {
     startDateTime: String = null
   ): ItemActivityStat = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access)
-    if (activities != null) __obj.updateDynamic("activities")(activities)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (edit != null) __obj.updateDynamic("edit")(edit)
-    if (endDateTime != null) __obj.updateDynamic("endDateTime")(endDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (incompleteData != null) __obj.updateDynamic("incompleteData")(incompleteData)
-    if (!js.isUndefined(isTrending)) __obj.updateDynamic("isTrending")(isTrending)
-    if (move != null) __obj.updateDynamic("move")(move)
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime)
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (endDateTime != null) __obj.updateDynamic("endDateTime")(endDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (incompleteData != null) __obj.updateDynamic("incompleteData")(incompleteData.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTrending)) __obj.updateDynamic("isTrending")(isTrending.asInstanceOf[js.Any])
+    if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
+    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemActivityStat]
   }
 }

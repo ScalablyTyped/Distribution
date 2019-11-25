@@ -27,10 +27,10 @@ object ListCheckboxTheme {
   @scala.inline
   def apply(checkbox: String = null, checkboxItem: String = null, disabled: String = null, item: String = null): ListCheckboxTheme = {
     val __obj = js.Dynamic.literal()
-    if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox)
-    if (checkboxItem != null) __obj.updateDynamic("checkboxItem")(checkboxItem)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (item != null) __obj.updateDynamic("item")(item)
+    if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox.asInstanceOf[js.Any])
+    if (checkboxItem != null) __obj.updateDynamic("checkboxItem")(checkboxItem.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCheckboxTheme]
   }
 }

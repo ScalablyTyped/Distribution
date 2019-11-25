@@ -20,9 +20,9 @@ trait IScrollablePaneStyleProps extends js.Object {
 object IScrollablePaneStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null, scrollbarVisibility: ScrollbarVisibility = null): IScrollablePaneStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (scrollbarVisibility != null) __obj.updateDynamic("scrollbarVisibility")(scrollbarVisibility)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (scrollbarVisibility != null) __obj.updateDynamic("scrollbarVisibility")(scrollbarVisibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScrollablePaneStyleProps]
   }
 }

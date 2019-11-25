@@ -20,10 +20,10 @@ object BrowserOptions {
     `type`: String = null
   ): BrowserOptions = {
     val __obj = js.Dynamic.literal()
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (subtypes != null) __obj.updateDynamic("subtypes")(subtypes)
-    if (txt != null) __obj.updateDynamic("txt")(txt)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (subtypes != null) __obj.updateDynamic("subtypes")(subtypes.asInstanceOf[js.Any])
+    if (txt != null) __obj.updateDynamic("txt")(txt.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserOptions]
   }
 }

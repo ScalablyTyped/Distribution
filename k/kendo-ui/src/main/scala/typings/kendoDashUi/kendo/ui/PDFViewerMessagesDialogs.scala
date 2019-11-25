@@ -20,10 +20,10 @@ object PDFViewerMessagesDialogs {
     save: String = null
   ): PDFViewerMessagesDialogs = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (exportAsDialog != null) __obj.updateDynamic("exportAsDialog")(exportAsDialog)
-    if (okText != null) __obj.updateDynamic("okText")(okText)
-    if (save != null) __obj.updateDynamic("save")(save)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (exportAsDialog != null) __obj.updateDynamic("exportAsDialog")(exportAsDialog.asInstanceOf[js.Any])
+    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
+    if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessagesDialogs]
   }
 }

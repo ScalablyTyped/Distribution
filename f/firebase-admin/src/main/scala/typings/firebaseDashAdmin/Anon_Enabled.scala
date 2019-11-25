@@ -19,8 +19,8 @@ trait Anon_Enabled extends js.Object {
 object Anon_Enabled {
   @scala.inline
   def apply(enabled: Boolean, passwordRequired: js.UndefOr[Boolean] = js.undefined): Anon_Enabled = {
-    val __obj = js.Dynamic.literal(enabled = enabled)
-    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Enabled]
   }
 }

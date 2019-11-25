@@ -20,8 +20,8 @@ object CloneTaskOptions {
     includeMetadata: Boolean,
     overrides: Anon_CompleteAfter = null
   ): CloneTaskOptions = {
-    val __obj = js.Dynamic.literal(includeBarCodes = includeBarCodes, includeDependencies = includeDependencies, includeMetadata = includeMetadata)
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    val __obj = js.Dynamic.literal(includeBarCodes = includeBarCodes.asInstanceOf[js.Any], includeDependencies = includeDependencies.asInstanceOf[js.Any], includeMetadata = includeMetadata.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloneTaskOptions]
   }
 }

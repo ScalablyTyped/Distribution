@@ -14,7 +14,7 @@ trait HtmlPluginDataHookV3[T] extends js.Object {
 object HtmlPluginDataHookV3 {
   @scala.inline
   def apply[T](htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, _, _]): HtmlPluginDataHookV3[T] = {
-    val __obj = js.Dynamic.literal(htmlWebpackPluginAfterHtmlProcessing = htmlWebpackPluginAfterHtmlProcessing)
+    val __obj = js.Dynamic.literal(htmlWebpackPluginAfterHtmlProcessing = htmlWebpackPluginAfterHtmlProcessing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HtmlPluginDataHookV3[T]]
   }

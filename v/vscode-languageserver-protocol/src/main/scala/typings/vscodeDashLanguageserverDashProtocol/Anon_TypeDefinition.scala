@@ -15,7 +15,7 @@ object Anon_TypeDefinition {
   @scala.inline
   def apply(typeDefinition: Anon_DynamicRegistrationLinkSupport = null): Anon_TypeDefinition = {
     val __obj = js.Dynamic.literal()
-    if (typeDefinition != null) __obj.updateDynamic("typeDefinition")(typeDefinition)
+    if (typeDefinition != null) __obj.updateDynamic("typeDefinition")(typeDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TypeDefinition]
   }
 }

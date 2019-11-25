@@ -30,12 +30,12 @@ object ReachReportCompatibleFields {
     reachByFrequencyMetrics: js.Array[Metric] = null
   ): ReachReportCompatibleFields = {
     val __obj = js.Dynamic.literal()
-    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (pivotedActivityMetrics != null) __obj.updateDynamic("pivotedActivityMetrics")(pivotedActivityMetrics)
-    if (reachByFrequencyMetrics != null) __obj.updateDynamic("reachByFrequencyMetrics")(reachByFrequencyMetrics)
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (pivotedActivityMetrics != null) __obj.updateDynamic("pivotedActivityMetrics")(pivotedActivityMetrics.asInstanceOf[js.Any])
+    if (reachByFrequencyMetrics != null) __obj.updateDynamic("reachByFrequencyMetrics")(reachByFrequencyMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReachReportCompatibleFields]
   }
 }

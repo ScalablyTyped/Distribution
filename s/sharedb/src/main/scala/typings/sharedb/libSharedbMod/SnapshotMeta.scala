@@ -20,8 +20,8 @@ object SnapshotMeta {
     StringDictionary: // Users can use server middleware to add additional metadata to snapshots.
   /* key */ StringDictionary[js.Any] = null
   ): SnapshotMeta = {
-    val __obj = js.Dynamic.literal(ctime = ctime, mtime = mtime)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ctime = ctime.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SnapshotMeta]
   }
 }

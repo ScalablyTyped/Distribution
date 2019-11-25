@@ -39,18 +39,18 @@ object AotCompilerOptions {
     translations: String = null
   ): AotCompilerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmptyCodegenFiles)) __obj.updateDynamic("allowEmptyCodegenFiles")(allowEmptyCodegenFiles)
-    if (!js.isUndefined(createExternalSymbolFactoryReexports)) __obj.updateDynamic("createExternalSymbolFactoryReexports")(createExternalSymbolFactoryReexports)
+    if (!js.isUndefined(allowEmptyCodegenFiles)) __obj.updateDynamic("allowEmptyCodegenFiles")(allowEmptyCodegenFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(createExternalSymbolFactoryReexports)) __obj.updateDynamic("createExternalSymbolFactoryReexports")(createExternalSymbolFactoryReexports.asInstanceOf[js.Any])
     if (enableIvy != null) __obj.updateDynamic("enableIvy")(enableIvy.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSummariesForJit)) __obj.updateDynamic("enableSummariesForJit")(enableSummariesForJit)
-    if (!js.isUndefined(fullTemplateTypeCheck)) __obj.updateDynamic("fullTemplateTypeCheck")(fullTemplateTypeCheck)
-    if (i18nFormat != null) __obj.updateDynamic("i18nFormat")(i18nFormat)
-    if (!js.isUndefined(i18nUseExternalIds)) __obj.updateDynamic("i18nUseExternalIds")(i18nUseExternalIds)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (missingTranslation != null) __obj.updateDynamic("missingTranslation")(missingTranslation)
-    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces)
-    if (!js.isUndefined(strictInjectionParameters)) __obj.updateDynamic("strictInjectionParameters")(strictInjectionParameters)
-    if (translations != null) __obj.updateDynamic("translations")(translations)
+    if (!js.isUndefined(enableSummariesForJit)) __obj.updateDynamic("enableSummariesForJit")(enableSummariesForJit.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullTemplateTypeCheck)) __obj.updateDynamic("fullTemplateTypeCheck")(fullTemplateTypeCheck.asInstanceOf[js.Any])
+    if (i18nFormat != null) __obj.updateDynamic("i18nFormat")(i18nFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(i18nUseExternalIds)) __obj.updateDynamic("i18nUseExternalIds")(i18nUseExternalIds.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (missingTranslation != null) __obj.updateDynamic("missingTranslation")(missingTranslation.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictInjectionParameters)) __obj.updateDynamic("strictInjectionParameters")(strictInjectionParameters.asInstanceOf[js.Any])
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[AotCompilerOptions]
   }
 }

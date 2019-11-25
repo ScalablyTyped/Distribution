@@ -32,10 +32,10 @@ object SummariesMethodSelectionChangedEventUIParam {
     owner: js.Any = null
   ): SummariesMethodSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummariesMethodSelectionChangedEventUIParam]
   }
 }

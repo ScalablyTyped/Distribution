@@ -41,12 +41,12 @@ object RequestOptions {
     method: String = null,
     params: js.Any = null
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

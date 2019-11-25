@@ -14,7 +14,7 @@ trait LoadingImage extends js.Object {
 object LoadingImage {
   @scala.inline
   def apply(img: HTMLImageElement, isLoaded: Boolean): LoadingImage = {
-    val __obj = js.Dynamic.literal(img = img, isLoaded = isLoaded)
+    val __obj = js.Dynamic.literal(img = img.asInstanceOf[js.Any], isLoaded = isLoaded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoadingImage]
   }

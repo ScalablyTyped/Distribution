@@ -17,7 +17,7 @@ object _UnmarshalledAliasRoutingConfiguration {
   @scala.inline
   def apply(AdditionalVersionWeights: StringDictionary[Double] = null): _UnmarshalledAliasRoutingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (AdditionalVersionWeights != null) __obj.updateDynamic("AdditionalVersionWeights")(AdditionalVersionWeights)
+    if (AdditionalVersionWeights != null) __obj.updateDynamic("AdditionalVersionWeights")(AdditionalVersionWeights.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledAliasRoutingConfiguration]
   }
 }

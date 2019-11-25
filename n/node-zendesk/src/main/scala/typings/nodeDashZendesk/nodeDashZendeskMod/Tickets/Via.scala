@@ -12,7 +12,7 @@ trait Via extends js.Object {
 object Via {
   @scala.inline
   def apply(channel: ViaChannel, source: ViaSource): Via = {
-    val __obj = js.Dynamic.literal(channel = channel, source = source)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Via]
   }

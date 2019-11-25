@@ -14,8 +14,8 @@ trait RemovedResult extends js.Object {
 object RemovedResult {
   @scala.inline
   def apply(allHistory: Boolean, urls: js.Array[String] = null): RemovedResult = {
-    val __obj = js.Dynamic.literal(allHistory = allHistory)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(allHistory = allHistory.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovedResult]
   }
 }

@@ -20,9 +20,9 @@ object PartialStyleRulesCardActionAreaClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesCardActionAreaClassKey = {
     val __obj = js.Dynamic.literal()
-    if (focusHighlight != null) __obj.updateDynamic("focusHighlight")(focusHighlight)
-    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (focusHighlight != null) __obj.updateDynamic("focusHighlight")(focusHighlight.asInstanceOf[js.Any])
+    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesCardActionAreaClassKey]
   }
 }

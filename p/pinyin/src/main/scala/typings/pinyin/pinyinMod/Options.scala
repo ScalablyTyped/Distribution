@@ -36,8 +36,8 @@ object Options {
     style: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(heteronym)) __obj.updateDynamic("heteronym")(heteronym)
-    if (!js.isUndefined(segment)) __obj.updateDynamic("segment")(segment)
+    if (!js.isUndefined(heteronym)) __obj.updateDynamic("heteronym")(heteronym.asInstanceOf[js.Any])
+    if (!js.isUndefined(segment)) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

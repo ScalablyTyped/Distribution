@@ -23,8 +23,8 @@ object ListBreakpointsResponse {
   @scala.inline
   def apply(breakpoints: js.Array[Breakpoint] = null, nextWaitToken: String = null): ListBreakpointsResponse = {
     val __obj = js.Dynamic.literal()
-    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
-    if (nextWaitToken != null) __obj.updateDynamic("nextWaitToken")(nextWaitToken)
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
+    if (nextWaitToken != null) __obj.updateDynamic("nextWaitToken")(nextWaitToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBreakpointsResponse]
   }
 }

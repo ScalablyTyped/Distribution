@@ -14,8 +14,8 @@ trait Base extends js.Object {
 object Base {
   @scala.inline
   def apply(CreatedAt: DateString, `_`: Anon_Author): Base = {
-    val __obj = js.Dynamic.literal(CreatedAt = CreatedAt)
-    __obj.updateDynamic("_")(`_`)
+    val __obj = js.Dynamic.literal(CreatedAt = CreatedAt.asInstanceOf[js.Any])
+    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base]
   }
 }

@@ -20,7 +20,7 @@ trait Anon_ResultCode extends js.Object {
 object Anon_ResultCode {
   @scala.inline
   def apply(resultCode: String): Anon_ResultCode = {
-    val __obj = js.Dynamic.literal(resultCode = resultCode)
+    val __obj = js.Dynamic.literal(resultCode = resultCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ResultCode]
   }

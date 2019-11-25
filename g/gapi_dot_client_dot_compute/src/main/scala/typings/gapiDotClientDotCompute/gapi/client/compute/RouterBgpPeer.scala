@@ -34,11 +34,11 @@ object RouterBgpPeer {
   ): RouterBgpPeer = {
     val __obj = js.Dynamic.literal()
     if (advertisedRoutePriority != null) __obj.updateDynamic("advertisedRoutePriority")(advertisedRoutePriority.asInstanceOf[js.Any])
-    if (interfaceName != null) __obj.updateDynamic("interfaceName")(interfaceName)
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (interfaceName != null) __obj.updateDynamic("interfaceName")(interfaceName.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (peerAsn != null) __obj.updateDynamic("peerAsn")(peerAsn.asInstanceOf[js.Any])
-    if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress)
+    if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterBgpPeer]
   }
 }

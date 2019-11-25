@@ -15,7 +15,7 @@ trait Anon_IndexItem extends js.Object {
 object Anon_IndexItem {
   @scala.inline
   def apply(index: Double, item: MenuItem, originalEvent: Event): Anon_IndexItem = {
-    val __obj = js.Dynamic.literal(index = index, item = item, originalEvent = originalEvent)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IndexItem]
   }

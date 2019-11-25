@@ -122,20 +122,20 @@ class KernelBackend ()
   def expm1[T /* <: Tensor[Rank] */](x: T): T = js.native
   def fft(x: Tensor2D): Tensor2D = js.native
   def fill[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: String
   ): Tensor[R] = js.native
   def fill[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: String,
     dtype: DataType
   ): Tensor[R] = js.native
   def fill[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: Double
   ): Tensor[R] = js.native
   def fill[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: Double,
     dtype: DataType
   ): Tensor[R] = js.native
@@ -199,7 +199,7 @@ class KernelBackend ()
   def relu6[T /* <: Tensor[Rank] */](x: T): T = js.native
   def reshape[T /* <: Tensor[Rank] */, R /* <: Rank */](
     x: T,
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
   def resizeBilinear(x: Tensor4D, newHeight: Double, newWidth: Double, alignCorners: Boolean): Tensor4D = js.native
   def resizeBilinearBackprop(dy: Tensor4D, x: Tensor4D, alignCorners: Boolean): Tensor4D = js.native
@@ -211,7 +211,7 @@ class KernelBackend ()
   def scatterND[R /* <: Rank */](
     indices: Tensor[Rank],
     updates: Tensor[Rank],
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
   def select(condition: Tensor[Rank], a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def selu[T /* <: Tensor[Rank] */](x: T): T = js.native
@@ -225,7 +225,7 @@ class KernelBackend ()
   def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],
-    outputShape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: Scalar
   ): Tensor[R] = js.native
   def split[T /* <: Tensor[Rank] */](value: T, sizeSplits: js.Array[Double], axis: Double): js.Array[T] = js.native

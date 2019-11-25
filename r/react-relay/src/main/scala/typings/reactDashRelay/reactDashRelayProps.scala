@@ -9,6 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashRelayProps {
+  @scala.inline
+  def LazyLoadEntryPointContainerProps: Anon_EntryPointEntryPointParams.type = typings.reactDashRelay.Anon_EntryPointEntryPointParams
   type LazyLoadEntryPointContainerProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] = EntryPointContainerProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
   @scala.inline
   def LocalQueryRendererProps: QueryRendererProps.type = typings.reactDashRelay.reactDashRelayMod.QueryRendererProps

@@ -19,7 +19,7 @@ object InstancesStartWithEncryptionKeyRequest {
   @scala.inline
   def apply(disks: js.Array[CustomerEncryptionKeyProtectedDisk] = null): InstancesStartWithEncryptionKeyRequest = {
     val __obj = js.Dynamic.literal()
-    if (disks != null) __obj.updateDynamic("disks")(disks)
+    if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesStartWithEncryptionKeyRequest]
   }
 }

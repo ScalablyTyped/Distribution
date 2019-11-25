@@ -18,8 +18,8 @@ object GitSourceContext {
   @scala.inline
   def apply(revisionId: String = null, url: String = null): GitSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitSourceContext]
   }
 }

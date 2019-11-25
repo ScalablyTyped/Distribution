@@ -33,9 +33,9 @@ object _UnmarshalledBackupDescription {
     SourceTableFeatureDetails: _UnmarshalledSourceTableFeatureDetails = null
   ): _UnmarshalledBackupDescription = {
     val __obj = js.Dynamic.literal()
-    if (BackupDetails != null) __obj.updateDynamic("BackupDetails")(BackupDetails)
-    if (SourceTableDetails != null) __obj.updateDynamic("SourceTableDetails")(SourceTableDetails)
-    if (SourceTableFeatureDetails != null) __obj.updateDynamic("SourceTableFeatureDetails")(SourceTableFeatureDetails)
+    if (BackupDetails != null) __obj.updateDynamic("BackupDetails")(BackupDetails.asInstanceOf[js.Any])
+    if (SourceTableDetails != null) __obj.updateDynamic("SourceTableDetails")(SourceTableDetails.asInstanceOf[js.Any])
+    if (SourceTableFeatureDetails != null) __obj.updateDynamic("SourceTableFeatureDetails")(SourceTableFeatureDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledBackupDescription]
   }
 }

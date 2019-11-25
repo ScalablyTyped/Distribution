@@ -14,8 +14,8 @@ object GoogleCloudDialogflowV2OriginalDetectIntentRequest {
   @scala.inline
   def apply(payload: ApiClientObjectMap[_] = null, source: String = null): GoogleCloudDialogflowV2OriginalDetectIntentRequest = {
     val __obj = js.Dynamic.literal()
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2OriginalDetectIntentRequest]
   }
 }

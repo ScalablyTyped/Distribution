@@ -19,8 +19,8 @@ object CollapsePinSettings {
   @scala.inline
   def apply(customToolTip: js.Any = null, toolTip: String = null): CollapsePinSettings = {
     val __obj = js.Dynamic.literal()
-    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip)
-    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip.asInstanceOf[js.Any])
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapsePinSettings]
   }
 }

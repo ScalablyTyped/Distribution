@@ -19,7 +19,7 @@ object GoogleCloudVideointelligenceV1beta2_LabelFrame {
   def apply(confidence: Int | Double = null, timeOffset: String = null): GoogleCloudVideointelligenceV1beta2_LabelFrame = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset)
+    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_LabelFrame]
   }
 }

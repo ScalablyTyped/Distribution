@@ -16,7 +16,7 @@ trait BumpSequenceOperationResponse
 object BumpSequenceOperationResponse {
   @scala.inline
   def apply(
-    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     bump_to: String,
@@ -28,8 +28,8 @@ object BumpSequenceOperationResponse {
     `type`: bumpSequence,
     type_i: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseTypeI.bumpSequence
   ): BumpSequenceOperationResponse = {
-    val __obj = js.Dynamic.literal(_links = _links, bump_to = bump_to, created_at = created_at, id = id, paging_token = paging_token, source_account = source_account, transaction_hash = transaction_hash, type_i = type_i)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], bump_to = bump_to.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], source_account = source_account.asInstanceOf[js.Any], transaction_hash = transaction_hash.asInstanceOf[js.Any], type_i = type_i.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BumpSequenceOperationResponse]
   }
 }

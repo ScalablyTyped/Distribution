@@ -23,9 +23,9 @@ object _BlobMetadata {
   @scala.inline
   def apply(blobId: String = null, mode: String = null, path: String = null): _BlobMetadata = {
     val __obj = js.Dynamic.literal()
-    if (blobId != null) __obj.updateDynamic("blobId")(blobId)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (blobId != null) __obj.updateDynamic("blobId")(blobId.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BlobMetadata]
   }
 }

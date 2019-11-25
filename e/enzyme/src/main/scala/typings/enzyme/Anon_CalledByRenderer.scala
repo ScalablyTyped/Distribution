@@ -13,8 +13,8 @@ trait Anon_CalledByRenderer
 object Anon_CalledByRenderer {
   @scala.inline
   def apply(calledByRenderer: Boolean, StringDictionary: /* key */ StringDictionary[js.Any] = null): Anon_CalledByRenderer = {
-    val __obj = js.Dynamic.literal(calledByRenderer = calledByRenderer)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(calledByRenderer = calledByRenderer.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CalledByRenderer]
   }
 }

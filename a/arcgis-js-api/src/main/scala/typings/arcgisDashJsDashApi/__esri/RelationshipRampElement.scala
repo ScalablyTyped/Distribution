@@ -74,10 +74,10 @@ object RelationshipRampElement {
     infos: js.Array[_] = null,
     title: String = null
   ): RelationshipRampElement = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, focus = focus, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), labels = labels, numClasses = numClasses, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rotation = rotation)
-    __obj.updateDynamic("type")(`type`)
-    if (infos != null) __obj.updateDynamic("infos")(infos)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), labels = labels.asInstanceOf[js.Any], numClasses = numClasses.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rotation = rotation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (infos != null) __obj.updateDynamic("infos")(infos.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipRampElement]
   }
 }

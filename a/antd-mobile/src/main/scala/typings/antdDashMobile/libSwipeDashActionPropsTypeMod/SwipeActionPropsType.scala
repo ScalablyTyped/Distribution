@@ -28,13 +28,13 @@ object SwipeActionPropsType {
     title: String = null
   ): SwipeActionPropsType[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (left != null) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
-    if (right != null) __obj.updateDynamic("right")(right)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeActionPropsType[T]]
   }
 }

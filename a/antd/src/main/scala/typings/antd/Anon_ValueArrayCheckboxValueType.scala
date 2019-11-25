@@ -12,7 +12,7 @@ trait Anon_ValueArrayCheckboxValueType extends js.Object {
 object Anon_ValueArrayCheckboxValueType {
   @scala.inline
   def apply(value: js.Array[CheckboxValueType]): Anon_ValueArrayCheckboxValueType = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ValueArrayCheckboxValueType]
   }

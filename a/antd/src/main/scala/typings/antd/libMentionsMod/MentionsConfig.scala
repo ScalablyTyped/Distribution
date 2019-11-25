@@ -14,7 +14,7 @@ object MentionsConfig {
   def apply(prefix: String | js.Array[String] = null, split: String = null): MentionsConfig = {
     val __obj = js.Dynamic.literal()
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (split != null) __obj.updateDynamic("split")(split)
+    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[MentionsConfig]
   }
 }

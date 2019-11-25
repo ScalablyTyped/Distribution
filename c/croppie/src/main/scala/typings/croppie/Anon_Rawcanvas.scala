@@ -13,7 +13,7 @@ object Anon_Rawcanvas {
   @scala.inline
   def apply(`type`: rawcanvas): Anon_Rawcanvas = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Rawcanvas]
   }
 }

@@ -25,8 +25,8 @@ object TokenRequest {
     clientId: String = null,
     ttl: Int | Double = null
   ): TokenRequest = {
-    val __obj = js.Dynamic.literal(capability = capability, keyName = keyName, mac = mac, nonce = nonce, timestamp = timestamp)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    val __obj = js.Dynamic.literal(capability = capability.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenRequest]
   }

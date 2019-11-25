@@ -20,10 +20,10 @@ object ExampleObject {
     value: js.Any = null
   ): ExampleObject = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (externalValue != null) __obj.updateDynamic("externalValue")(externalValue)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (externalValue != null) __obj.updateDynamic("externalValue")(externalValue.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExampleObject]
   }
 }

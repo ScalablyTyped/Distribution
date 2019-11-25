@@ -14,9 +14,9 @@ object PDFViewerMessagesErrorMessages {
   @scala.inline
   def apply(notFound: String = null, notSupported: String = null, parseError: String = null): PDFViewerMessagesErrorMessages = {
     val __obj = js.Dynamic.literal()
-    if (notFound != null) __obj.updateDynamic("notFound")(notFound)
-    if (notSupported != null) __obj.updateDynamic("notSupported")(notSupported)
-    if (parseError != null) __obj.updateDynamic("parseError")(parseError)
+    if (notFound != null) __obj.updateDynamic("notFound")(notFound.asInstanceOf[js.Any])
+    if (notSupported != null) __obj.updateDynamic("notSupported")(notSupported.asInstanceOf[js.Any])
+    if (parseError != null) __obj.updateDynamic("parseError")(parseError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessagesErrorMessages]
   }
 }

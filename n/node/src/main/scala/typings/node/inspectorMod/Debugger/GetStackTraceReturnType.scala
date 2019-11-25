@@ -12,7 +12,7 @@ trait GetStackTraceReturnType extends js.Object {
 object GetStackTraceReturnType {
   @scala.inline
   def apply(stackTrace: StackTrace): GetStackTraceReturnType = {
-    val __obj = js.Dynamic.literal(stackTrace = stackTrace)
+    val __obj = js.Dynamic.literal(stackTrace = stackTrace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetStackTraceReturnType]
   }

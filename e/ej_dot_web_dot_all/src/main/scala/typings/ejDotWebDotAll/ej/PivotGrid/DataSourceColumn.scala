@@ -66,17 +66,17 @@ object DataSourceColumn {
     sortOrder: typings.ejDotWebDotAll.ej.PivotAnalysis.SortOrder | String = null
   ): DataSourceColumn = {
     val __obj = js.Dynamic.literal()
-    if (advancedFilter != null) __obj.updateDynamic("advancedFilter")(advancedFilter)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (drilledItems != null) __obj.updateDynamic("drilledItems")(drilledItems)
-    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption)
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (formatString != null) __obj.updateDynamic("formatString")(formatString)
-    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets)
-    if (!js.isUndefined(showSubTotal)) __obj.updateDynamic("showSubTotal")(showSubTotal)
+    if (advancedFilter != null) __obj.updateDynamic("advancedFilter")(advancedFilter.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (drilledItems != null) __obj.updateDynamic("drilledItems")(drilledItems.asInstanceOf[js.Any])
+    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption.asInstanceOf[js.Any])
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formatString != null) __obj.updateDynamic("formatString")(formatString.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSubTotal)) __obj.updateDynamic("showSubTotal")(showSubTotal.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceColumn]
   }

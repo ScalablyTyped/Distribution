@@ -11,7 +11,7 @@ trait Alpha extends js.Object {
 object Alpha {
   @scala.inline
   def apply(a: Double): Alpha = {
-    val __obj = js.Dynamic.literal(a = a)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Alpha]
   }

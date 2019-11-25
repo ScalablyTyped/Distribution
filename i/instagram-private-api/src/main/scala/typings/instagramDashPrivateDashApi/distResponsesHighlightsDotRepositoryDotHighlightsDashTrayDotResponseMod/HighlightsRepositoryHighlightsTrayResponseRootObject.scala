@@ -19,7 +19,7 @@ object HighlightsRepositoryHighlightsTrayResponseRootObject {
     tray: js.Array[HighlightsRepositoryHighlightsTrayResponseTrayItem],
     tv_channel: HighlightsRepositoryHighlightsTrayResponseTv_channel
   ): HighlightsRepositoryHighlightsTrayResponseRootObject = {
-    val __obj = js.Dynamic.literal(show_empty_state = show_empty_state, status = status, tray = tray, tv_channel = tv_channel)
+    val __obj = js.Dynamic.literal(show_empty_state = show_empty_state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tray = tray.asInstanceOf[js.Any], tv_channel = tv_channel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseRootObject]
   }

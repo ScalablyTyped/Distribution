@@ -12,7 +12,7 @@ object Shading {
   @scala.inline
   def apply(backgroundColor: OptionalColor = null): Shading = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shading]
   }
 }

@@ -13,8 +13,8 @@ trait Anon_FiltersKey extends js.Object {
 object Anon_FiltersKey {
   @scala.inline
   def apply(key: String, filters: Variables = null): Anon_FiltersKey = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FiltersKey]
   }
 }

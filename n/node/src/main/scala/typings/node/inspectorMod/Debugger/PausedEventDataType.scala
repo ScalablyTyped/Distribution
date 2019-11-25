@@ -50,12 +50,12 @@ object PausedEventDataType {
     data: js.Object = null,
     hitBreakpoints: js.Array[java.lang.String] = null
   ): PausedEventDataType = {
-    val __obj = js.Dynamic.literal(callFrames = callFrames, reason = reason)
-    if (asyncCallStackTraceId != null) __obj.updateDynamic("asyncCallStackTraceId")(asyncCallStackTraceId)
-    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace)
-    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (hitBreakpoints != null) __obj.updateDynamic("hitBreakpoints")(hitBreakpoints)
+    val __obj = js.Dynamic.literal(callFrames = callFrames.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+    if (asyncCallStackTraceId != null) __obj.updateDynamic("asyncCallStackTraceId")(asyncCallStackTraceId.asInstanceOf[js.Any])
+    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace.asInstanceOf[js.Any])
+    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (hitBreakpoints != null) __obj.updateDynamic("hitBreakpoints")(hitBreakpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[PausedEventDataType]
   }
 }

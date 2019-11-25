@@ -29,9 +29,9 @@ object ICustomerInvoiceSettings {
     footer: String = null
   ): ICustomerInvoiceSettings = {
     val __obj = js.Dynamic.literal()
-    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields)
-    if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
+    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
+    if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomerInvoiceSettings]
   }
 }

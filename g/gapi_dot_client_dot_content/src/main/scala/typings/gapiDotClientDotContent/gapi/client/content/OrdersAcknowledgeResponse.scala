@@ -15,8 +15,8 @@ object OrdersAcknowledgeResponse {
   @scala.inline
   def apply(executionStatus: String = null, kind: String = null): OrdersAcknowledgeResponse = {
     val __obj = js.Dynamic.literal()
-    if (executionStatus != null) __obj.updateDynamic("executionStatus")(executionStatus)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (executionStatus != null) __obj.updateDynamic("executionStatus")(executionStatus.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersAcknowledgeResponse]
   }
 }

@@ -19,9 +19,9 @@ object ListBoxDragstartEvent {
     draggableEvent: js.Any = null,
     items: JQuery = null
   ): ListBoxDragstartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent)
-    if (items != null) __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxDragstartEvent]
   }
 }

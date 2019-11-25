@@ -44,7 +44,7 @@ object SkillsRequestObject {
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
     if (season_rank != null) __obj.updateDynamic("season_rank")(season_rank.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

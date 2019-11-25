@@ -115,7 +115,7 @@ object tsutilsMod extends js.Object {
   @JSName("getModifier")
   def getModifier_kind(
     node: Node,
-    kind: /* import warning: ImportType.apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any
+    kind: /* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any
   ): js.UndefOr[Modifier] = js.native
   def getNextStatement(statement: Statement): js.UndefOr[Statement] = js.native
   def getNextToken(node: Node): js.UndefOr[Node] = js.native
@@ -138,12 +138,12 @@ object tsutilsMod extends js.Object {
   def hasAccessModifier(node: ParameterDeclaration): Boolean = js.native
   @JSName("hasModifier")
   def hasModifier_kind(
-    kinds: (/* import warning: ImportType.apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
+    kinds: (/* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
   ): Boolean = js.native
   @JSName("hasModifier")
   def hasModifier_kind(
     modifiers: ModifiersArray,
-    kinds: (/* import warning: ImportType.apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
+    kinds: (/* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
   ): Boolean = js.native
   def hasOwnThisReference(node: Node): Boolean = js.native
   def hasSideEffects(node: Expression): Boolean = js.native

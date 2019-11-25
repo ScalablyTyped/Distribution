@@ -13,11 +13,11 @@ import typings.chromeDashApps.chromeDashAppsStrings.OPEN_FULL_SCREEN
 import typings.chromeDashApps.chromeDashAppsStrings.admin
 import typings.chromeDashApps.chromeDashAppsStrings.development
 import typings.chromeDashApps.chromeDashAppsStrings.normal
-import typings.chromeDashApps.chromeDashAppsStrings.other
+import typings.chromeDashApps.chromeDashAppsStrings.other_
 import typings.chromeDashApps.chromeDashAppsStrings.packaged_app
 import typings.chromeDashApps.chromeDashAppsStrings.permissions_increase
 import typings.chromeDashApps.chromeDashAppsStrings.sideload
-import typings.chromeDashApps.chromeDashAppsStrings.unknown
+import typings.chromeDashApps.chromeDashAppsStrings.unknown_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -55,7 +55,7 @@ trait ExtensionInfo extends js.Object {
     * @see enum ExtensionDisabledReason
     */
   var disabledReason: js.UndefOr[
-    ToStringLiteral[Anon_PERMISSIONSINCREASE, String, Exclude[String, unknown | permissions_increase]]
+    ToStringLiteral[Anon_PERMISSIONSINCREASE, String, Exclude[String, unknown_ | permissions_increase]]
   ] = js.undefined
   /** Whether it is currently enabled or disabled. */
   var enabled: Boolean
@@ -83,7 +83,11 @@ trait ExtensionInfo extends js.Object {
     * How the app was installed.
     * @since Chrome 22.
     */
-  var installType: ToStringLiteral[Anon_ADMIN, String, Exclude[String, other | admin | development | sideload | normal]]
+  var installType: ToStringLiteral[
+    Anon_ADMIN, 
+    String, 
+    Exclude[String, other_ | admin | development | sideload | normal]
+  ]
   /**
     * True if this is an app, which it will be till this is removed.
     * @deprecated since Chrome 33. Please use management.ExtensionInfo.type.
@@ -146,7 +150,11 @@ object ExtensionInfo {
     enabled: Boolean,
     hostPermissions: js.Array[String],
     id: String,
-    installType: ToStringLiteral[Anon_ADMIN, String, Exclude[String, other | admin | development | sideload | normal]],
+    installType: ToStringLiteral[
+      Anon_ADMIN, 
+      String, 
+      Exclude[String, other_ | admin | development | sideload | normal]
+    ],
     mayDisable: Boolean,
     name: String,
     offlineEnabled: Boolean,
@@ -166,7 +174,7 @@ object ExtensionInfo {
         ]
       ]
     ] = null,
-    disabledReason: ToStringLiteral[Anon_PERMISSIONSINCREASE, String, Exclude[String, unknown | permissions_increase]] = null,
+    disabledReason: ToStringLiteral[Anon_PERMISSIONSINCREASE, String, Exclude[String, unknown_ | permissions_increase]] = null,
     homepageUrl: String = null,
     icons: js.Array[IconInfo] = null,
     isApp: `true` = null,
@@ -180,16 +188,16 @@ object ExtensionInfo {
     ] = null,
     updateUrl: String = null
   ): ExtensionInfo = {
-    val __obj = js.Dynamic.literal(description = description, enabled = enabled, hostPermissions = hostPermissions, id = id, installType = installType.asInstanceOf[js.Any], mayDisable = mayDisable, name = name, offlineEnabled = offlineEnabled, permissions = permissions, shortName = shortName, version = version, versionName = versionName)
-    __obj.updateDynamic("type")(`type`)
-    if (appLaunchUrl != null) __obj.updateDynamic("appLaunchUrl")(appLaunchUrl)
-    if (availableLaunchTypes != null) __obj.updateDynamic("availableLaunchTypes")(availableLaunchTypes)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], hostPermissions = hostPermissions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], installType = installType.asInstanceOf[js.Any], mayDisable = mayDisable.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offlineEnabled = offlineEnabled.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versionName = versionName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (appLaunchUrl != null) __obj.updateDynamic("appLaunchUrl")(appLaunchUrl.asInstanceOf[js.Any])
+    if (availableLaunchTypes != null) __obj.updateDynamic("availableLaunchTypes")(availableLaunchTypes.asInstanceOf[js.Any])
     if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason.asInstanceOf[js.Any])
-    if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (isApp != null) __obj.updateDynamic("isApp")(isApp)
+    if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (isApp != null) __obj.updateDynamic("isApp")(isApp.asInstanceOf[js.Any])
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionInfo]
   }
 }

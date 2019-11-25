@@ -23,9 +23,9 @@ trait IDocumentCardActivityStyleProps extends js.Object {
 object IDocumentCardActivityStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null, multiplePeople: js.UndefOr[Boolean] = js.undefined): IDocumentCardActivityStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(multiplePeople)) __obj.updateDynamic("multiplePeople")(multiplePeople)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplePeople)) __obj.updateDynamic("multiplePeople")(multiplePeople.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardActivityStyleProps]
   }
 }

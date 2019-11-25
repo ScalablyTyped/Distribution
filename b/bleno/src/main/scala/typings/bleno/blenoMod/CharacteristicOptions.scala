@@ -50,17 +50,17 @@ object CharacteristicOptions {
     secure: js.Array[Property] = null,
     value: Buffer = null
   ): CharacteristicOptions = {
-    val __obj = js.Dynamic.literal(uuid = uuid)
-    if (descriptors != null) __obj.updateDynamic("descriptors")(descriptors)
+    val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
+    if (descriptors != null) __obj.updateDynamic("descriptors")(descriptors.asInstanceOf[js.Any])
     if (onIndicate != null) __obj.updateDynamic("onIndicate")(js.Any.fromFunction0(onIndicate))
     if (onNotify != null) __obj.updateDynamic("onNotify")(js.Any.fromFunction0(onNotify))
     if (onReadRequest != null) __obj.updateDynamic("onReadRequest")(js.Any.fromFunction2(onReadRequest))
     if (onSubscribe != null) __obj.updateDynamic("onSubscribe")(js.Any.fromFunction2(onSubscribe))
     if (onUnsubscribe != null) __obj.updateDynamic("onUnsubscribe")(js.Any.fromFunction0(onUnsubscribe))
     if (onWriteRequest != null) __obj.updateDynamic("onWriteRequest")(js.Any.fromFunction4(onWriteRequest))
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (secure != null) __obj.updateDynamic("secure")(secure)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacteristicOptions]
   }
 }

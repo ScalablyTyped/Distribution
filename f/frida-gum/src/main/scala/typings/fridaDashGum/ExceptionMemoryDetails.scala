@@ -18,7 +18,7 @@ trait ExceptionMemoryDetails extends js.Object {
 object ExceptionMemoryDetails {
   @scala.inline
   def apply(address: NativePointer, operation: MemoryOperation): ExceptionMemoryDetails = {
-    val __obj = js.Dynamic.literal(address = address, operation = operation)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExceptionMemoryDetails]
   }

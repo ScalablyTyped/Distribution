@@ -40,17 +40,17 @@ object DropoutLayerArgs {
     trainable: js.UndefOr[Boolean] = js.undefined,
     weights: js.Array[Tensor[Rank]] = null
   ): DropoutLayerArgs = {
-    val __obj = js.Dynamic.literal(rate = rate)
-    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape)
+    val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
+    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype)
-    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType)
-    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (noiseShape != null) __obj.updateDynamic("noiseShape")(noiseShape)
+    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
+    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
+    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (noiseShape != null) __obj.updateDynamic("noiseShape")(noiseShape.asInstanceOf[js.Any])
     if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable)
-    if (weights != null) __obj.updateDynamic("weights")(weights)
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
+    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropoutLayerArgs]
   }
 }

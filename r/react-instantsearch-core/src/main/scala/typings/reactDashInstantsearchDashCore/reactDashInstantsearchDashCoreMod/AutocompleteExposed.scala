@@ -12,7 +12,7 @@ object AutocompleteExposed {
   @scala.inline
   def apply(defaultRefinement: String = null): AutocompleteExposed = {
     val __obj = js.Dynamic.literal()
-    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement)
+    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteExposed]
   }
 }

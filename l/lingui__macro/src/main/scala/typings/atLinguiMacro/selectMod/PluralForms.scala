@@ -27,7 +27,7 @@ object PluralForms {
     zero: String | MessageDescriptor = null
   ): PluralForms = {
     val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     if (few != null) __obj.updateDynamic("few")(few.asInstanceOf[js.Any])
     if (many != null) __obj.updateDynamic("many")(many.asInstanceOf[js.Any])
     if (one != null) __obj.updateDynamic("one")(one.asInstanceOf[js.Any])

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__
   extends TopLevel[
       js.Function2[
-        /* import warning: ImportType.apply Failed type conversion: typeof ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
-        /* import warning: ImportType.apply Failed type conversion: typeof ElementRef */ /* ElementRefToken */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof ElementRef */ /* ElementRefToken */ js.Any, 
         ViewContainerRef
       ]
     ]

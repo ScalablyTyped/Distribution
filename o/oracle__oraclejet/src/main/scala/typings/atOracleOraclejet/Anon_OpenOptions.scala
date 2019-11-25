@@ -14,8 +14,8 @@ trait Anon_OpenOptions
 object Anon_OpenOptions {
   @scala.inline
   def apply(openOptions: OpenOptions, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_OpenOptions = {
-    val __obj = js.Dynamic.literal(openOptions = openOptions)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(openOptions = openOptions.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_OpenOptions]
   }
 }

@@ -30,15 +30,15 @@ object Anon_AutoDetect {
     wrap: js.UndefOr[Boolean] = js.undefined
   ): Anon_AutoDetect = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDetect)) __obj.updateDynamic("autoDetect")(autoDetect)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (!js.isUndefined(autoDetect)) __obj.updateDynamic("autoDetect")(autoDetect.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (firstLine != null) __obj.updateDynamic("firstLine")(firstLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(gutter)) __obj.updateDynamic("gutter")(gutter)
-    if (!js.isUndefined(hljs)) __obj.updateDynamic("hljs")(hljs)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (mark != null) __obj.updateDynamic("mark")(mark)
-    if (tab != null) __obj.updateDynamic("tab")(tab)
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)
+    if (!js.isUndefined(gutter)) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(hljs)) __obj.updateDynamic("hljs")(hljs.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (mark != null) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
+    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoDetect]
   }
 }

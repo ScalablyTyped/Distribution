@@ -21,7 +21,7 @@ trait SdkOptions extends js.Object {
 object SdkOptions {
   @scala.inline
   def apply(player: PlayerState, token: Anon_Accesstoken): SdkOptions = {
-    val __obj = js.Dynamic.literal(player = player, token = token)
+    val __obj = js.Dynamic.literal(player = player.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SdkOptions]
   }

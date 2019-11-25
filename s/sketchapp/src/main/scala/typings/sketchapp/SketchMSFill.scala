@@ -30,9 +30,9 @@ object SketchMSFill {
     color: SketchMSColor = null,
     image: SketchMSImageDataReference = null
   ): SketchMSFill = {
-    val __obj = js.Dynamic.literal(_class = _class, fillType = fillType, isEnabled = isEnabled, noiseIndex = noiseIndex, noiseIntensity = noiseIntensity, patternFillType = patternFillType, patternTileScale = patternTileScale)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (image != null) __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], fillType = fillType.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], noiseIndex = noiseIndex.asInstanceOf[js.Any], noiseIntensity = noiseIntensity.asInstanceOf[js.Any], patternFillType = patternFillType.asInstanceOf[js.Any], patternTileScale = patternTileScale.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSFill]
   }
 }

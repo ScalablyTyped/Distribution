@@ -31,7 +31,7 @@ object receiveArgs {
     publishingClient: publishingClient,
     timestamp: Date
   ): receiveArgs = {
-    val __obj = js.Dynamic.literal(channel = channel, client = client, clientId = clientId, data = data, meta = meta, publishingClient = publishingClient, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], publishingClient = publishingClient.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[receiveArgs]
   }

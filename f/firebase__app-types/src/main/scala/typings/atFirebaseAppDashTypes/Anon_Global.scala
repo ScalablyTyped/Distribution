@@ -11,7 +11,7 @@ trait Anon_Global extends js.Object {
 object Anon_Global {
   @scala.inline
   def apply(global: Boolean): Anon_Global = {
-    val __obj = js.Dynamic.literal(global = global)
+    val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Global]
   }

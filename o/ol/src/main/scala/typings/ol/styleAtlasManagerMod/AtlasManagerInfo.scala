@@ -15,7 +15,7 @@ trait AtlasManagerInfo extends js.Object {
 object AtlasManagerInfo {
   @scala.inline
   def apply(hitImage: HTMLCanvasElement, image: HTMLCanvasElement, offsetX: Double, offsetY: Double): AtlasManagerInfo = {
-    val __obj = js.Dynamic.literal(hitImage = hitImage, image = image, offsetX = offsetX, offsetY = offsetY)
+    val __obj = js.Dynamic.literal(hitImage = hitImage.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AtlasManagerInfo]
   }

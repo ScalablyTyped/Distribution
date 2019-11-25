@@ -13,8 +13,8 @@ object Anon_ContentDisposition {
   @scala.inline
   def apply(contentDisposition: String = null, ifMatch: String = null): Anon_ContentDisposition = {
     val __obj = js.Dynamic.literal()
-    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition)
-    if (ifMatch != null) __obj.updateDynamic("ifMatch")(ifMatch)
+    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
+    if (ifMatch != null) __obj.updateDynamic("ifMatch")(ifMatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentDisposition]
   }
 }

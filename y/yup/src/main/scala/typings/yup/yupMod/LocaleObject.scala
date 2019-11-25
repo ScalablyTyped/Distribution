@@ -26,13 +26,13 @@ object LocaleObject {
     string: StringLocale = null
   ): LocaleObject = {
     val __obj = js.Dynamic.literal()
-    if (array != null) __obj.updateDynamic("array")(array)
-    if (boolean != null) __obj.updateDynamic("boolean")(boolean)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (mixed != null) __obj.updateDynamic("mixed")(mixed)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (string != null) __obj.updateDynamic("string")(string)
+    if (array != null) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (mixed != null) __obj.updateDynamic("mixed")(mixed.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocaleObject]
   }
 }

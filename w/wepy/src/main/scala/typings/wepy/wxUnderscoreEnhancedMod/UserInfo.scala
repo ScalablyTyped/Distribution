@@ -25,7 +25,7 @@ object UserInfo {
     nickName: String,
     province: String
   ): UserInfo = {
-    val __obj = js.Dynamic.literal(avatarUrl = avatarUrl, city = city, country = country, gender = gender, language = language, nickName = nickName, province = province)
+    val __obj = js.Dynamic.literal(avatarUrl = avatarUrl.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], nickName = nickName.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserInfo]
   }

@@ -24,8 +24,8 @@ object Anon_ColorStopsGlobal {
     x: Double,
     y: Double
   ): Anon_ColorStopsGlobal = {
-    val __obj = js.Dynamic.literal(colorStops = colorStops, global = global, r = r, x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(colorStops = colorStops.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorStopsGlobal]
   }
 }

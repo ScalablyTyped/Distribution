@@ -17,7 +17,7 @@ trait SentenceOptions extends js.Object {
 object SentenceOptions {
   @scala.inline
   def apply(punctuation: DOT | `?` | `;` | `!` | `:` | Boolean, words: Double): SentenceOptions = {
-    val __obj = js.Dynamic.literal(punctuation = punctuation.asInstanceOf[js.Any], words = words)
+    val __obj = js.Dynamic.literal(punctuation = punctuation.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SentenceOptions]
   }

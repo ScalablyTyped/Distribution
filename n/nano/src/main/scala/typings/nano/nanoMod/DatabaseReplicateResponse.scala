@@ -27,7 +27,7 @@ object DatabaseReplicateResponse {
     session_id: String,
     source_last_seq: Double
   ): DatabaseReplicateResponse = {
-    val __obj = js.Dynamic.literal(history = history, ok = ok, replication_id_version = replication_id_version, session_id = session_id, source_last_seq = source_last_seq)
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], replication_id_version = replication_id_version.asInstanceOf[js.Any], session_id = session_id.asInstanceOf[js.Any], source_last_seq = source_last_seq.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatabaseReplicateResponse]
   }

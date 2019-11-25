@@ -24,8 +24,8 @@ object OnDropData {
     node: InternalTreeNode,
     dropToGap: js.UndefOr[Boolean] = js.undefined
   ): OnDropData = {
-    val __obj = js.Dynamic.literal(dragNode = dragNode, dragNodesKeys = dragNodesKeys, dropPosition = dropPosition, event = event, node = node)
-    if (!js.isUndefined(dropToGap)) __obj.updateDynamic("dropToGap")(dropToGap)
+    val __obj = js.Dynamic.literal(dragNode = dragNode.asInstanceOf[js.Any], dragNodesKeys = dragNodesKeys.asInstanceOf[js.Any], dropPosition = dropPosition.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropToGap)) __obj.updateDynamic("dropToGap")(dropToGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDropData]
   }
 }

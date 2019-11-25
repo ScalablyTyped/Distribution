@@ -35,9 +35,9 @@ object IWarnControlledUsageParams {
     oldProps: P = null,
     readOnlyProp: String = null
   ): IWarnControlledUsageParams[P] = {
-    val __obj = js.Dynamic.literal(componentId = componentId, componentName = componentName, defaultValueProp = defaultValueProp, onChangeProp = onChangeProp, props = props.asInstanceOf[js.Any], valueProp = valueProp)
+    val __obj = js.Dynamic.literal(componentId = componentId.asInstanceOf[js.Any], componentName = componentName.asInstanceOf[js.Any], defaultValueProp = defaultValueProp.asInstanceOf[js.Any], onChangeProp = onChangeProp.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueProp = valueProp.asInstanceOf[js.Any])
     if (oldProps != null) __obj.updateDynamic("oldProps")(oldProps.asInstanceOf[js.Any])
-    if (readOnlyProp != null) __obj.updateDynamic("readOnlyProp")(readOnlyProp)
+    if (readOnlyProp != null) __obj.updateDynamic("readOnlyProp")(readOnlyProp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWarnControlledUsageParams[P]]
   }
 }

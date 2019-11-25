@@ -15,7 +15,7 @@ object OrderShipmentLineItemShipment {
   @scala.inline
   def apply(lineItemId: String = null, quantity: Int | Double = null): OrderShipmentLineItemShipment = {
     val __obj = js.Dynamic.literal()
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId)
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderShipmentLineItemShipment]
   }

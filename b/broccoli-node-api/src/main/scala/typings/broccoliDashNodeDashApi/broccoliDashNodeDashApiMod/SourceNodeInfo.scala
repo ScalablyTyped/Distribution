@@ -31,8 +31,8 @@ object SourceNodeInfo {
     watched: Boolean,
     annotation: String = null
   ): SourceNodeInfo = {
-    val __obj = js.Dynamic.literal(instantiationStack = instantiationStack, name = name, nodeType = nodeType, sourceDirectory = sourceDirectory, watched = watched)
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    val __obj = js.Dynamic.literal(instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], sourceDirectory = sourceDirectory.asInstanceOf[js.Any], watched = watched.asInstanceOf[js.Any])
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceNodeInfo]
   }
 }

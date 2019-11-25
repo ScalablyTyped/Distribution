@@ -27,14 +27,14 @@ object HmacKeyMetadata {
     timeCreated: String = null,
     updated: String = null
   ): HmacKeyMetadata = {
-    val __obj = js.Dynamic.literal(accessId = accessId)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(accessId = accessId.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[HmacKeyMetadata]
   }
 }

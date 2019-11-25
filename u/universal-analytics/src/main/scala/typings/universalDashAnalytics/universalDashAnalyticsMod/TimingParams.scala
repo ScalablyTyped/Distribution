@@ -23,11 +23,11 @@ object TimingParams {
     utv: String = null
   ): TimingParams = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (utc != null) __obj.updateDynamic("utc")(utc)
-    if (utl != null) __obj.updateDynamic("utl")(utl)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (utc != null) __obj.updateDynamic("utc")(utc.asInstanceOf[js.Any])
+    if (utl != null) __obj.updateDynamic("utl")(utl.asInstanceOf[js.Any])
     if (utt != null) __obj.updateDynamic("utt")(utt.asInstanceOf[js.Any])
-    if (utv != null) __obj.updateDynamic("utv")(utv)
+    if (utv != null) __obj.updateDynamic("utv")(utv.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimingParams]
   }
 }

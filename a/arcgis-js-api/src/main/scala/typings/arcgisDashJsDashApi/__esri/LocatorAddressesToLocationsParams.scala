@@ -50,10 +50,10 @@ object LocatorAddressesToLocationsParams {
     countryCode: String = null,
     locationType: String = null
   ): LocatorAddressesToLocationsParams = {
-    val __obj = js.Dynamic.literal(addresses = addresses, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
+    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocatorAddressesToLocationsParams]
   }
 }

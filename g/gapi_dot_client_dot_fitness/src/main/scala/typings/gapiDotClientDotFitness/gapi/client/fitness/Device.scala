@@ -30,11 +30,11 @@ object Device {
     version: String = null
   ): Device = {
     val __obj = js.Dynamic.literal()
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (uid != null) __obj.updateDynamic("uid")(uid)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
 }

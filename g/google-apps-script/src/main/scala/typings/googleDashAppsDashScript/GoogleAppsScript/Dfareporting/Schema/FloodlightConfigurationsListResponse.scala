@@ -13,8 +13,8 @@ object FloodlightConfigurationsListResponse {
   @scala.inline
   def apply(floodlightConfigurations: js.Array[FloodlightConfiguration] = null, kind: String = null): FloodlightConfigurationsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (floodlightConfigurations != null) __obj.updateDynamic("floodlightConfigurations")(floodlightConfigurations)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (floodlightConfigurations != null) __obj.updateDynamic("floodlightConfigurations")(floodlightConfigurations.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloodlightConfigurationsListResponse]
   }
 }

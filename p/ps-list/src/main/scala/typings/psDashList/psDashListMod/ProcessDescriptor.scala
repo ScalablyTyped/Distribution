@@ -37,8 +37,8 @@ object ProcessDescriptor {
     memory: Int | Double = null,
     uid: Int | Double = null
   ): ProcessDescriptor = {
-    val __obj = js.Dynamic.literal(name = name, pid = pid, ppid = ppid)
-    if (cmd != null) __obj.updateDynamic("cmd")(cmd)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], ppid = ppid.asInstanceOf[js.Any])
+    if (cmd != null) __obj.updateDynamic("cmd")(cmd.asInstanceOf[js.Any])
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])

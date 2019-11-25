@@ -30,15 +30,15 @@ object Anon_Delay {
     timingFunction: String = null
   ): Anon_Delay = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (endMaxHeight != null) __obj.updateDynamic("endMaxHeight")(endMaxHeight)
-    if (endMaxWidth != null) __obj.updateDynamic("endMaxWidth")(endMaxWidth)
-    if (persist != null) __obj.updateDynamic("persist")(persist)
-    if (startMaxHeight != null) __obj.updateDynamic("startMaxHeight")(startMaxHeight)
-    if (startMaxWidth != null) __obj.updateDynamic("startMaxWidth")(startMaxWidth)
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (endMaxHeight != null) __obj.updateDynamic("endMaxHeight")(endMaxHeight.asInstanceOf[js.Any])
+    if (endMaxWidth != null) __obj.updateDynamic("endMaxWidth")(endMaxWidth.asInstanceOf[js.Any])
+    if (persist != null) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
+    if (startMaxHeight != null) __obj.updateDynamic("startMaxHeight")(startMaxHeight.asInstanceOf[js.Any])
+    if (startMaxWidth != null) __obj.updateDynamic("startMaxWidth")(startMaxWidth.asInstanceOf[js.Any])
+    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Delay]
   }
 }

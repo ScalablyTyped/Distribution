@@ -21,6 +21,6 @@ trait Tuple[T] extends Type[T] {
 @js.native
 object tuple extends js.Object {
   def apply[T](types: js.Array[Constructor[_]]): Tuple[T] = js.native
-  def apply[T](types: js.Array[Constructor[_]], name: String): Tuple[T] = js.native
+  def apply[T](types: js.Array[Constructor[_]], name: java.lang.String): Tuple[T] = js.native
 }
 

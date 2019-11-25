@@ -23,11 +23,11 @@ object Resolve {
     preserveSymlinks: js.UndefOr[Boolean] = js.undefined
   ): Resolve = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (mainFile != null) __obj.updateDynamic("mainFile")(mainFile)
-    if (modules != null) __obj.updateDynamic("modules")(modules)
-    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (mainFile != null) __obj.updateDynamic("mainFile")(mainFile.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resolve]
   }
 }

@@ -15,8 +15,8 @@ trait DevAppDetails extends js.Object {
 object DevAppDetails {
   @scala.inline
   def apply(commPort: Double, interfaces: js.Array[Anon_Address], port: Double, channel: String = null): DevAppDetails = {
-    val __obj = js.Dynamic.literal(commPort = commPort, interfaces = interfaces, port = port)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
+    val __obj = js.Dynamic.literal(commPort = commPort.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevAppDetails]
   }
 }

@@ -17,7 +17,7 @@ trait Anon_EnableCustomConstraints extends js.Object {
 object Anon_EnableCustomConstraints {
   @scala.inline
   def apply(enableCustomConstraints: Boolean): Anon_EnableCustomConstraints = {
-    val __obj = js.Dynamic.literal(enableCustomConstraints = enableCustomConstraints)
+    val __obj = js.Dynamic.literal(enableCustomConstraints = enableCustomConstraints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnableCustomConstraints]
   }

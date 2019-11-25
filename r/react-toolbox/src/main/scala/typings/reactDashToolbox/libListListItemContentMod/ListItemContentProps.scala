@@ -43,8 +43,8 @@ object ListItemContentProps {
     val __obj = js.Dynamic.literal()
     if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemContentProps]
   }

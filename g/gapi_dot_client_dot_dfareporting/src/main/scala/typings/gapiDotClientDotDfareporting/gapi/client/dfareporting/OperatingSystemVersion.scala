@@ -30,12 +30,12 @@ object OperatingSystemVersion {
     operatingSystem: OperatingSystem = null
   ): OperatingSystemVersion = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (majorVersion != null) __obj.updateDynamic("majorVersion")(majorVersion)
-    if (minorVersion != null) __obj.updateDynamic("minorVersion")(minorVersion)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (majorVersion != null) __obj.updateDynamic("majorVersion")(majorVersion.asInstanceOf[js.Any])
+    if (minorVersion != null) __obj.updateDynamic("minorVersion")(minorVersion.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperatingSystemVersion]
   }
 }

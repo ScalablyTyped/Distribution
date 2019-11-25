@@ -23,12 +23,12 @@ object Route {
     testID: String = null,
     title: String = null
   ): Route = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (testID != null) __obj.updateDynamic("testID")(testID)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
 }

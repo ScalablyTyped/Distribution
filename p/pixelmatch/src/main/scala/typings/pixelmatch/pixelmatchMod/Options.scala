@@ -27,10 +27,10 @@ object Options {
     threshold: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (aaColor != null) __obj.updateDynamic("aaColor")(aaColor)
+    if (aaColor != null) __obj.updateDynamic("aaColor")(aaColor.asInstanceOf[js.Any])
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (diffColor != null) __obj.updateDynamic("diffColor")(diffColor)
-    if (!js.isUndefined(includeAA)) __obj.updateDynamic("includeAA")(includeAA)
+    if (diffColor != null) __obj.updateDynamic("diffColor")(diffColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAA)) __obj.updateDynamic("includeAA")(includeAA.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

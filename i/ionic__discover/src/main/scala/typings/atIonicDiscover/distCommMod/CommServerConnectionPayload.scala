@@ -13,7 +13,7 @@ trait CommServerConnectionPayload extends js.Object {
 object CommServerConnectionPayload {
   @scala.inline
   def apply(device: String, event: connect): CommServerConnectionPayload = {
-    val __obj = js.Dynamic.literal(device = device, event = event)
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommServerConnectionPayload]
   }

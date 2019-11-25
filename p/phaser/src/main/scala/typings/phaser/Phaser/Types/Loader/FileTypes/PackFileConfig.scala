@@ -37,11 +37,11 @@ object PackFileConfig {
     url: String | js.Any = null,
     xhrSettings: XHRSettingsObject = null
   ): PackFileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings)
+    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackFileConfig]
   }
 }

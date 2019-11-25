@@ -19,7 +19,7 @@ object Voice {
     naturalSampleRateHertz: Double,
     ssmlGender: SsmlVoiceGender
   ): Voice = {
-    val __obj = js.Dynamic.literal(language_codes = language_codes, name = name, naturalSampleRateHertz = naturalSampleRateHertz, ssmlGender = ssmlGender)
+    val __obj = js.Dynamic.literal(language_codes = language_codes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], naturalSampleRateHertz = naturalSampleRateHertz.asInstanceOf[js.Any], ssmlGender = ssmlGender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Voice]
   }

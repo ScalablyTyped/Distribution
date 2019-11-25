@@ -1,7 +1,6 @@
 package typings.asana.asanaMod.resources
 
 import typings.asana.asanaMod.resources.Events.Type
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,11 +47,11 @@ trait Events_ extends Resource {
     *     {Object[]} [data] The changes on the resource since the last sync,
     *                       may not exist if sync token is new.
     */
-  def get(resourceId: String): ^[Type] = js.native
-  def get(resourceId: String, syncToken: String): ^[Type] = js.native
-  def get(resourceId: String, syncToken: String, params: Params): ^[Type] = js.native
-  def get(resourceId: Double): ^[Type] = js.native
-  def get(resourceId: Double, syncToken: String): ^[Type] = js.native
-  def get(resourceId: Double, syncToken: String, params: Params): ^[Type] = js.native
+  def get(resourceId: String): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def get(resourceId: String, syncToken: String): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def get(resourceId: String, syncToken: String, params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def get(resourceId: Double): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def get(resourceId: Double, syncToken: String): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def get(resourceId: Double, syncToken: String, params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
 }
 

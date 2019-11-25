@@ -12,7 +12,7 @@ trait TorrentPiece extends js.Object {
 object TorrentPiece {
   @scala.inline
   def apply(length: Double, missing: Double): TorrentPiece = {
-    val __obj = js.Dynamic.literal(length = length, missing = missing)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TorrentPiece]
   }

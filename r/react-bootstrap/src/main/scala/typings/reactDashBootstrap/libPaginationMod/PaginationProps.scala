@@ -21,9 +21,9 @@ object PaginationProps {
     bsSize: Sizes = null
   ): PaginationProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
 }

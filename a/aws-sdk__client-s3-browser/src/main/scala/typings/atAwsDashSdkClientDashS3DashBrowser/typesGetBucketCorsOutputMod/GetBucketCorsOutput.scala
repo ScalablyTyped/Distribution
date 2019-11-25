@@ -20,8 +20,8 @@ trait GetBucketCorsOutput
 object GetBucketCorsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, CORSRules: js.Array[_UnmarshalledCORSRule] = null): GetBucketCorsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (CORSRules != null) __obj.updateDynamic("CORSRules")(CORSRules)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (CORSRules != null) __obj.updateDynamic("CORSRules")(CORSRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketCorsOutput]
   }
 }

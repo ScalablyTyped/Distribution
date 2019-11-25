@@ -19,7 +19,7 @@ object IOptions {
   @scala.inline
   def apply(serverSettings: ISettings = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings)
+    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

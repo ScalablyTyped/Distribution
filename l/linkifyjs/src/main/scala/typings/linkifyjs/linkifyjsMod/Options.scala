@@ -144,7 +144,7 @@ object Options {
     if (defaultProtocol != null) __obj.updateDynamic("defaultProtocol")(defaultProtocol.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formatHref != null) __obj.updateDynamic("formatHref")(formatHref.asInstanceOf[js.Any])
-    if (!js.isUndefined(nl2br)) __obj.updateDynamic("nl2br")(nl2br)
+    if (!js.isUndefined(nl2br)) __obj.updateDynamic("nl2br")(nl2br.asInstanceOf[js.Any])
     if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])

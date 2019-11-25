@@ -26,13 +26,13 @@ object GridColumnCommandItem {
     visible: js.Function = null
   ): GridColumnCommandItem = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (click != null) __obj.updateDynamic("click")(click)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible)
+    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnCommandItem]
   }
 }

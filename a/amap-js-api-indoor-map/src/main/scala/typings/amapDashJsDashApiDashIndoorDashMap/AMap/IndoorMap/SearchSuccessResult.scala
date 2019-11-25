@@ -20,7 +20,7 @@ trait SearchSuccessResult extends SearchResult {
 object SearchSuccessResult {
   @scala.inline
   def apply(building: Building, id: String, status: `0`): SearchSuccessResult = {
-    val __obj = js.Dynamic.literal(building = building, id = id, status = status)
+    val __obj = js.Dynamic.literal(building = building.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchSuccessResult]
   }

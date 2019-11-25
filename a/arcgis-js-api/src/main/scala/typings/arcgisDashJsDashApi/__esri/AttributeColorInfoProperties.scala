@@ -48,10 +48,10 @@ object AttributeColorInfoProperties {
   ): AttributeColorInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeColorInfoProperties]
   }
 }

@@ -52,14 +52,14 @@ object AtlasJSONFileConfig {
     textureURL: String = null,
     textureXhrSettings: XHRSettingsObject = null
   ): AtlasJSONFileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (atlasExtension != null) __obj.updateDynamic("atlasExtension")(atlasExtension)
-    if (atlasURL != null) __obj.updateDynamic("atlasURL")(atlasURL)
-    if (atlasXhrSettings != null) __obj.updateDynamic("atlasXhrSettings")(atlasXhrSettings)
-    if (normalMap != null) __obj.updateDynamic("normalMap")(normalMap)
-    if (textureExtension != null) __obj.updateDynamic("textureExtension")(textureExtension)
-    if (textureURL != null) __obj.updateDynamic("textureURL")(textureURL)
-    if (textureXhrSettings != null) __obj.updateDynamic("textureXhrSettings")(textureXhrSettings)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (atlasExtension != null) __obj.updateDynamic("atlasExtension")(atlasExtension.asInstanceOf[js.Any])
+    if (atlasURL != null) __obj.updateDynamic("atlasURL")(atlasURL.asInstanceOf[js.Any])
+    if (atlasXhrSettings != null) __obj.updateDynamic("atlasXhrSettings")(atlasXhrSettings.asInstanceOf[js.Any])
+    if (normalMap != null) __obj.updateDynamic("normalMap")(normalMap.asInstanceOf[js.Any])
+    if (textureExtension != null) __obj.updateDynamic("textureExtension")(textureExtension.asInstanceOf[js.Any])
+    if (textureURL != null) __obj.updateDynamic("textureURL")(textureURL.asInstanceOf[js.Any])
+    if (textureXhrSettings != null) __obj.updateDynamic("textureXhrSettings")(textureXhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtlasJSONFileConfig]
   }
 }

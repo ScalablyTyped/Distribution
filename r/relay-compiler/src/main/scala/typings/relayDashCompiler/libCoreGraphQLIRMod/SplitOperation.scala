@@ -32,7 +32,7 @@ object SplitOperation {
     `type`: GraphQLCompositeType,
     metadata: Metadata = null
   ): SplitOperation = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, name = name, selections = selections)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitOperation]

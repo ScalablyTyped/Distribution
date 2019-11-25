@@ -12,7 +12,7 @@ trait RedisClientConnectionOptions extends ConnectionOptions {
 object RedisClientConnectionOptions {
   @scala.inline
   def apply(redis: ClientOpts): RedisClientConnectionOptions = {
-    val __obj = js.Dynamic.literal(redis = redis)
+    val __obj = js.Dynamic.literal(redis = redis.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RedisClientConnectionOptions]
   }

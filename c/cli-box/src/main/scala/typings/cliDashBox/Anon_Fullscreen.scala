@@ -15,7 +15,7 @@ trait Anon_Fullscreen extends js.Object {
 object Anon_Fullscreen {
   @scala.inline
   def apply(fullscreen: Boolean, height: Double, marks: Marks, stringify: Boolean, width: Double): Anon_Fullscreen = {
-    val __obj = js.Dynamic.literal(fullscreen = fullscreen, height = height, marks = marks, stringify = stringify, width = width)
+    val __obj = js.Dynamic.literal(fullscreen = fullscreen.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], marks = marks.asInstanceOf[js.Any], stringify = stringify.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fullscreen]
   }

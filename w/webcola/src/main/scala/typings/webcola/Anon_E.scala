@@ -14,7 +14,7 @@ trait Anon_E extends js.Object {
 object Anon_E {
   @scala.inline
   def apply(E: js.Array[VisibilityEdge], V: js.Array[VisibilityVertex]): Anon_E = {
-    val __obj = js.Dynamic.literal(E = E, V = V)
+    val __obj = js.Dynamic.literal(E = E.asInstanceOf[js.Any], V = V.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_E]
   }

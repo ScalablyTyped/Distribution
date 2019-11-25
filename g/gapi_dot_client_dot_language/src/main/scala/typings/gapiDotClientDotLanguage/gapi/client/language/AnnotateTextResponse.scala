@@ -45,11 +45,11 @@ object AnnotateTextResponse {
     tokens: js.Array[Token] = null
   ): AnnotateTextResponse = {
     val __obj = js.Dynamic.literal()
-    if (documentSentiment != null) __obj.updateDynamic("documentSentiment")(documentSentiment)
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (sentences != null) __obj.updateDynamic("sentences")(sentences)
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens)
+    if (documentSentiment != null) __obj.updateDynamic("documentSentiment")(documentSentiment.asInstanceOf[js.Any])
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (sentences != null) __obj.updateDynamic("sentences")(sentences.asInstanceOf[js.Any])
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotateTextResponse]
   }
 }

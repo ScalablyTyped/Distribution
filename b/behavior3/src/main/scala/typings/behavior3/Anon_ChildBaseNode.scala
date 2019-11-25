@@ -13,7 +13,7 @@ object Anon_ChildBaseNode {
   @scala.inline
   def apply(child: BaseNode = null): Anon_ChildBaseNode = {
     val __obj = js.Dynamic.literal()
-    if (child != null) __obj.updateDynamic("child")(child)
+    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildBaseNode]
   }
 }

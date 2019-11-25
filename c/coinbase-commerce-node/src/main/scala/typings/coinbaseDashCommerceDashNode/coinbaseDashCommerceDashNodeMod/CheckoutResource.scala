@@ -43,10 +43,10 @@ object CheckoutResource {
     logo_url: String = null,
     requested_info: js.Array[email | name] = null
   ): CheckoutResource = {
-    val __obj = js.Dynamic.literal(description = description, id = id, name = name, pricing_type = pricing_type, resource = resource)
-    if (local_price != null) __obj.updateDynamic("local_price")(local_price)
-    if (logo_url != null) __obj.updateDynamic("logo_url")(logo_url)
-    if (requested_info != null) __obj.updateDynamic("requested_info")(requested_info)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    if (local_price != null) __obj.updateDynamic("local_price")(local_price.asInstanceOf[js.Any])
+    if (logo_url != null) __obj.updateDynamic("logo_url")(logo_url.asInstanceOf[js.Any])
+    if (requested_info != null) __obj.updateDynamic("requested_info")(requested_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckoutResource]
   }
 }

@@ -24,12 +24,12 @@ object Anon_Alg {
     use: String = null
   ): Anon_Alg = {
     val __obj = js.Dynamic.literal()
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (e != null) __obj.updateDynamic("e")(e)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (kty != null) __obj.updateDynamic("kty")(kty)
-    if (n != null) __obj.updateDynamic("n")(n)
-    if (use != null) __obj.updateDynamic("use")(use)
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (kty != null) __obj.updateDynamic("kty")(kty.asInstanceOf[js.Any])
+    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alg]
   }
 }

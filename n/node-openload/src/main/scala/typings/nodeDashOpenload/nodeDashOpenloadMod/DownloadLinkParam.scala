@@ -13,7 +13,7 @@ trait DownloadLinkParam extends js.Object {
 object DownloadLinkParam {
   @scala.inline
   def apply(captcha_response: String, file: String, ticket: String): DownloadLinkParam = {
-    val __obj = js.Dynamic.literal(captcha_response = captcha_response, file = file, ticket = ticket)
+    val __obj = js.Dynamic.literal(captcha_response = captcha_response.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], ticket = ticket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DownloadLinkParam]
   }

@@ -13,8 +13,8 @@ object Anon_Next {
   @scala.inline
   def apply(next: js.Any = null, previous: js.Any = null): Anon_Next = {
     val __obj = js.Dynamic.literal()
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Next]
   }
 }

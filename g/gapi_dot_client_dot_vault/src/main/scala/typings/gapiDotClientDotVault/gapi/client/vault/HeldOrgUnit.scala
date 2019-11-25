@@ -15,8 +15,8 @@ object HeldOrgUnit {
   @scala.inline
   def apply(holdTime: String = null, orgUnitId: String = null): HeldOrgUnit = {
     val __obj = js.Dynamic.literal()
-    if (holdTime != null) __obj.updateDynamic("holdTime")(holdTime)
-    if (orgUnitId != null) __obj.updateDynamic("orgUnitId")(orgUnitId)
+    if (holdTime != null) __obj.updateDynamic("holdTime")(holdTime.asInstanceOf[js.Any])
+    if (orgUnitId != null) __obj.updateDynamic("orgUnitId")(orgUnitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeldOrgUnit]
   }
 }

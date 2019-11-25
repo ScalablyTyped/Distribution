@@ -22,9 +22,9 @@ object Credentials {
     source_type: String = null
   ): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (credential_details != null) __obj.updateDynamic("credential_details")(credential_details)
-    if (credential_id != null) __obj.updateDynamic("credential_id")(credential_id)
-    if (source_type != null) __obj.updateDynamic("source_type")(source_type)
+    if (credential_details != null) __obj.updateDynamic("credential_details")(credential_details.asInstanceOf[js.Any])
+    if (credential_id != null) __obj.updateDynamic("credential_id")(credential_id.asInstanceOf[js.Any])
+    if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

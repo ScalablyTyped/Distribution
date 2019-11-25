@@ -22,7 +22,7 @@ object AsObject {
     code: Uint8Array | String,
     modulesList: js.Array[Uint8Array | String]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(argumentsList = argumentsList, code = code.asInstanceOf[js.Any], modulesList = modulesList)
+    val __obj = js.Dynamic.literal(argumentsList = argumentsList.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], modulesList = modulesList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

@@ -34,8 +34,8 @@ object requestPolymerPaymentOptions {
     fail: js.Any => Unit = null,
     success: /* res */ Anon_AuthSetting => Unit = null
   ): requestPolymerPaymentOptions = {
-    val __obj = js.Dynamic.literal(orderInfo = orderInfo)
-    if (bannedChannels != null) __obj.updateDynamic("bannedChannels")(bannedChannels)
+    val __obj = js.Dynamic.literal(orderInfo = orderInfo.asInstanceOf[js.Any])
+    if (bannedChannels != null) __obj.updateDynamic("bannedChannels")(bannedChannels.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

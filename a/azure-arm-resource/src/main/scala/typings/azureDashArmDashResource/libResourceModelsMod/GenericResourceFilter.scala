@@ -23,9 +23,9 @@ object GenericResourceFilter {
   @scala.inline
   def apply(resourceType: String = null, tagname: String = null, tagvalue: String = null): GenericResourceFilter = {
     val __obj = js.Dynamic.literal()
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
-    if (tagname != null) __obj.updateDynamic("tagname")(tagname)
-    if (tagvalue != null) __obj.updateDynamic("tagvalue")(tagvalue)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
+    if (tagname != null) __obj.updateDynamic("tagname")(tagname.asInstanceOf[js.Any])
+    if (tagvalue != null) __obj.updateDynamic("tagvalue")(tagvalue.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericResourceFilter]
   }
 }

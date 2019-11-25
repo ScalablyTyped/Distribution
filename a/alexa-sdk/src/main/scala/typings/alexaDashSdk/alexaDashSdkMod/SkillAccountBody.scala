@@ -11,7 +11,7 @@ trait SkillAccountBody extends js.Object {
 object SkillAccountBody {
   @scala.inline
   def apply(accessToken: String): SkillAccountBody = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SkillAccountBody]
   }

@@ -13,7 +13,7 @@ trait ShapeLine extends js.Object {
 object ShapeLine {
   @scala.inline
   def apply(color: String, dash: Dash, width: Double): ShapeLine = {
-    val __obj = js.Dynamic.literal(color = color, dash = dash, width = width)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], dash = dash.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShapeLine]
   }

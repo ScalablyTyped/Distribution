@@ -11,7 +11,7 @@ trait PutSpaceNotificationParams extends js.Object {
 object PutSpaceNotificationParams {
   @scala.inline
   def apply(content: String): PutSpaceNotificationParams = {
-    val __obj = js.Dynamic.literal(content = content)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutSpaceNotificationParams]
   }

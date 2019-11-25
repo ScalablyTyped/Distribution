@@ -38,12 +38,12 @@ object SessionStats {
     UserCount: String = null
   ): SessionStats = {
     val __obj = js.Dynamic.literal()
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration)
-    if (RecvBitrate != null) __obj.updateDynamic("RecvBitrate")(RecvBitrate)
-    if (RecvBytes != null) __obj.updateDynamic("RecvBytes")(RecvBytes)
-    if (SendBitrate != null) __obj.updateDynamic("SendBitrate")(SendBitrate)
-    if (SendBytes != null) __obj.updateDynamic("SendBytes")(SendBytes)
-    if (UserCount != null) __obj.updateDynamic("UserCount")(UserCount)
+    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
+    if (RecvBitrate != null) __obj.updateDynamic("RecvBitrate")(RecvBitrate.asInstanceOf[js.Any])
+    if (RecvBytes != null) __obj.updateDynamic("RecvBytes")(RecvBytes.asInstanceOf[js.Any])
+    if (SendBitrate != null) __obj.updateDynamic("SendBitrate")(SendBitrate.asInstanceOf[js.Any])
+    if (SendBytes != null) __obj.updateDynamic("SendBytes")(SendBytes.asInstanceOf[js.Any])
+    if (UserCount != null) __obj.updateDynamic("UserCount")(UserCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionStats]
   }
 }

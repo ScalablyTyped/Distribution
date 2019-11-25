@@ -20,10 +20,10 @@ object LibraryConfig {
     token: String = null
   ): LibraryConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (networkTimeout != null) __obj.updateDynamic("networkTimeout")(networkTimeout.asInstanceOf[js.Any])
     if (timeoutWindow != null) __obj.updateDynamic("timeoutWindow")(timeoutWindow.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[LibraryConfig]
   }
 }

@@ -12,7 +12,7 @@ trait TypeBackground extends js.Object {
 object TypeBackground {
   @scala.inline
   def apply(default: String, paper: String): TypeBackground = {
-    val __obj = js.Dynamic.literal(default = default, paper = paper)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], paper = paper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeBackground]
   }

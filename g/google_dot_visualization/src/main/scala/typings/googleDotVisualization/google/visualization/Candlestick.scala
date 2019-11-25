@@ -18,9 +18,9 @@ object Candlestick {
     risingColor: ChartStrokeFill = null
   ): Candlestick = {
     val __obj = js.Dynamic.literal()
-    if (fallingColor != null) __obj.updateDynamic("fallingColor")(fallingColor)
-    if (!js.isUndefined(hollowIsRising)) __obj.updateDynamic("hollowIsRising")(hollowIsRising)
-    if (risingColor != null) __obj.updateDynamic("risingColor")(risingColor)
+    if (fallingColor != null) __obj.updateDynamic("fallingColor")(fallingColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(hollowIsRising)) __obj.updateDynamic("hollowIsRising")(hollowIsRising.asInstanceOf[js.Any])
+    if (risingColor != null) __obj.updateDynamic("risingColor")(risingColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Candlestick]
   }
 }

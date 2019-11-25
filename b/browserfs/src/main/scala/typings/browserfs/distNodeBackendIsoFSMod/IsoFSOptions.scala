@@ -13,8 +13,8 @@ trait IsoFSOptions extends js.Object {
 object IsoFSOptions {
   @scala.inline
   def apply(data: Buffer, name: String = null): IsoFSOptions = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsoFSOptions]
   }
 }

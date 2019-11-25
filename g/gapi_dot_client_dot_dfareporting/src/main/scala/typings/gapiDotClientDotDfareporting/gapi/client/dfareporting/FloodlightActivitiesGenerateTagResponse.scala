@@ -15,8 +15,8 @@ object FloodlightActivitiesGenerateTagResponse {
   @scala.inline
   def apply(floodlightActivityTag: String = null, kind: String = null): FloodlightActivitiesGenerateTagResponse = {
     val __obj = js.Dynamic.literal()
-    if (floodlightActivityTag != null) __obj.updateDynamic("floodlightActivityTag")(floodlightActivityTag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (floodlightActivityTag != null) __obj.updateDynamic("floodlightActivityTag")(floodlightActivityTag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloodlightActivitiesGenerateTagResponse]
   }
 }

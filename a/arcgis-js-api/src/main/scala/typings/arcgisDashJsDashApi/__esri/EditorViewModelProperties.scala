@@ -61,12 +61,12 @@ object EditorViewModelProperties {
     view: MapViewProperties = null
   ): EditorViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (allowedWorkflows != null) __obj.updateDynamic("allowedWorkflows")(allowedWorkflows)
-    if (featureFormViewModel != null) __obj.updateDynamic("featureFormViewModel")(featureFormViewModel)
-    if (featureTemplatesViewModel != null) __obj.updateDynamic("featureTemplatesViewModel")(featureTemplatesViewModel)
-    if (layerInfos != null) __obj.updateDynamic("layerInfos")(layerInfos)
-    if (sketchViewModel != null) __obj.updateDynamic("sketchViewModel")(sketchViewModel)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (allowedWorkflows != null) __obj.updateDynamic("allowedWorkflows")(allowedWorkflows.asInstanceOf[js.Any])
+    if (featureFormViewModel != null) __obj.updateDynamic("featureFormViewModel")(featureFormViewModel.asInstanceOf[js.Any])
+    if (featureTemplatesViewModel != null) __obj.updateDynamic("featureTemplatesViewModel")(featureTemplatesViewModel.asInstanceOf[js.Any])
+    if (layerInfos != null) __obj.updateDynamic("layerInfos")(layerInfos.asInstanceOf[js.Any])
+    if (sketchViewModel != null) __obj.updateDynamic("sketchViewModel")(sketchViewModel.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorViewModelProperties]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_Recovery extends js.Object {
 object Anon_Recovery {
   @scala.inline
   def apply(recovery: Double, signature: Buffer): Anon_Recovery = {
-    val __obj = js.Dynamic.literal(recovery = recovery, signature = signature)
+    val __obj = js.Dynamic.literal(recovery = recovery.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Recovery]
   }

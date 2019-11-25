@@ -35,15 +35,15 @@ object PatientCommunication {
     modifierExtension: js.Array[Extension] = null,
     preferred: js.UndefOr[Boolean] = js.undefined
   ): PatientCommunication = {
-    val __obj = js.Dynamic.literal(language = language)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_preferred != null) __obj.updateDynamic("_preferred")(_preferred)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred)
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_preferred != null) __obj.updateDynamic("_preferred")(_preferred.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatientCommunication]
   }
 }

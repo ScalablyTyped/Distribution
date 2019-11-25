@@ -23,7 +23,7 @@ object Anon_LeftMsTransformPosition {
     top: String,
     transform: String
   ): Anon_LeftMsTransformPosition = {
-    val __obj = js.Dynamic.literal(WebkitTransform = WebkitTransform, left = left, msTransform = msTransform, position = position, top = top, transform = transform)
+    val __obj = js.Dynamic.literal(WebkitTransform = WebkitTransform.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], msTransform = msTransform.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LeftMsTransformPosition]
   }

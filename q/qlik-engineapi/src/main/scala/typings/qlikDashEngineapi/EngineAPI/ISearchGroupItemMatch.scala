@@ -38,7 +38,7 @@ trait ISearchGroupItemMatch extends js.Object {
 object ISearchGroupItemMatch {
   @scala.inline
   def apply(qAttributes: js.Array[ISearchAttribute], qRanges: js.Array[ISearchCharRange], qText: String): ISearchGroupItemMatch = {
-    val __obj = js.Dynamic.literal(qAttributes = qAttributes, qRanges = qRanges, qText = qText)
+    val __obj = js.Dynamic.literal(qAttributes = qAttributes.asInstanceOf[js.Any], qRanges = qRanges.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchGroupItemMatch]
   }

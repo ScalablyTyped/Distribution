@@ -26,12 +26,12 @@ object Code {
     meta: String = null,
     position: Position = null
   ): Code = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (position != null) __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Code]
   }
 }

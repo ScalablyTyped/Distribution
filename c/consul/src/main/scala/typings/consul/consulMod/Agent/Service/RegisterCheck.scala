@@ -24,12 +24,12 @@ object RegisterCheck {
     ttl: String = null
   ): RegisterCheck = {
     val __obj = js.Dynamic.literal()
-    if (http != null) __obj.updateDynamic("http")(http)
-    if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (script != null) __obj.updateDynamic("script")(script)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl)
+    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterCheck]
   }
 }

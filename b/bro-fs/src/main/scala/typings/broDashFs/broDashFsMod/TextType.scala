@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait TextType extends js.Object
 
+object TextType {
+  @scala.inline
+  def BinaryString: typings.broDashFs.broDashFsStrings.BinaryString = this.cast("BinaryString")
+  @scala.inline
+  def DataURL: typings.broDashFs.broDashFsStrings.DataURL = this.cast("DataURL")
+  @scala.inline
+  def Text: typings.broDashFs.broDashFsStrings.Text = this.cast("Text")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

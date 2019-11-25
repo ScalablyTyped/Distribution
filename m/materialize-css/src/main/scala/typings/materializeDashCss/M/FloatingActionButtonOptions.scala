@@ -29,7 +29,7 @@ trait FloatingActionButtonOptions extends js.Object {
 object FloatingActionButtonOptions {
   @scala.inline
   def apply(direction: top | right | buttom | left, hoverEnabled: Boolean, toolbarEnabled: Boolean): FloatingActionButtonOptions = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], hoverEnabled = hoverEnabled, toolbarEnabled = toolbarEnabled)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], hoverEnabled = hoverEnabled.asInstanceOf[js.Any], toolbarEnabled = toolbarEnabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FloatingActionButtonOptions]
   }

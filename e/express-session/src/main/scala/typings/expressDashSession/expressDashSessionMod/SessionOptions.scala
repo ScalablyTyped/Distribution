@@ -35,15 +35,15 @@ object SessionOptions {
     unset: String = null
   ): SessionOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (genid != null) __obj.updateDynamic("genid")(js.Any.fromFunction1(genid))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy)
-    if (!js.isUndefined(resave)) __obj.updateDynamic("resave")(resave)
-    if (!js.isUndefined(rolling)) __obj.updateDynamic("rolling")(rolling)
-    if (!js.isUndefined(saveUninitialized)) __obj.updateDynamic("saveUninitialized")(saveUninitialized)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(resave)) __obj.updateDynamic("resave")(resave.asInstanceOf[js.Any])
+    if (!js.isUndefined(rolling)) __obj.updateDynamic("rolling")(rolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveUninitialized)) __obj.updateDynamic("saveUninitialized")(saveUninitialized.asInstanceOf[js.Any])
     if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (unset != null) __obj.updateDynamic("unset")(unset)
+    if (unset != null) __obj.updateDynamic("unset")(unset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
 }

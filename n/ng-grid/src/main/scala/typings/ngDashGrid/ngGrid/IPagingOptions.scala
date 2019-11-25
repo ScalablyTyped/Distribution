@@ -26,7 +26,7 @@ object IPagingOptions {
     val __obj = js.Dynamic.literal()
     if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes)
+    if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
     if (totalServerItems != null) __obj.updateDynamic("totalServerItems")(totalServerItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPagingOptions]
   }

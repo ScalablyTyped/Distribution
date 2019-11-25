@@ -18,7 +18,7 @@ object Types {
     key: String | (js.Function1[/* obj */ js.Any, String]),
     typeMap: HashMap[Constructor[T]]
   ): Types[T, Base] = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], typeMap = typeMap)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], typeMap = typeMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Types[T, Base]]
   }

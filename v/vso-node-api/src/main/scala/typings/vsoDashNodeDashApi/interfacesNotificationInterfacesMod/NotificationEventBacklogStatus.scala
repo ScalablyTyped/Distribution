@@ -15,7 +15,7 @@ object NotificationEventBacklogStatus {
     eventBacklogStatus: js.Array[EventBacklogStatus],
     notificationBacklogStatus: js.Array[NotificationBacklogStatus]
   ): NotificationEventBacklogStatus = {
-    val __obj = js.Dynamic.literal(eventBacklogStatus = eventBacklogStatus, notificationBacklogStatus = notificationBacklogStatus)
+    val __obj = js.Dynamic.literal(eventBacklogStatus = eventBacklogStatus.asInstanceOf[js.Any], notificationBacklogStatus = notificationBacklogStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationEventBacklogStatus]
   }

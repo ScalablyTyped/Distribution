@@ -11,7 +11,7 @@ trait SerializedFilter extends js.Object {
 object SerializedFilter {
   @scala.inline
   def apply(filterType: String): SerializedFilter = {
-    val __obj = js.Dynamic.literal(filterType = filterType)
+    val __obj = js.Dynamic.literal(filterType = filterType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SerializedFilter]
   }

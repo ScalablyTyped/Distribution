@@ -14,7 +14,7 @@ trait IGenericBookmarkListLayout extends IGenericBaseLayout {
 object IGenericBookmarkListLayout {
   @scala.inline
   def apply(qBookmarkList: IBookmarkList, qInfo: INxInfo, qMeta: INxMeta): IGenericBookmarkListLayout = {
-    val __obj = js.Dynamic.literal(qBookmarkList = qBookmarkList, qInfo = qInfo, qMeta = qMeta)
+    val __obj = js.Dynamic.literal(qBookmarkList = qBookmarkList.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGenericBookmarkListLayout]
   }

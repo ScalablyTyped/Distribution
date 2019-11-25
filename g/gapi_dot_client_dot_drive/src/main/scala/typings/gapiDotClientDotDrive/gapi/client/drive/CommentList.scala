@@ -20,9 +20,9 @@ object CommentList {
   @scala.inline
   def apply(comments: js.Array[Comment] = null, kind: String = null, nextPageToken: String = null): CommentList = {
     val __obj = js.Dynamic.literal()
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentList]
   }
 }

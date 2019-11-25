@@ -27,11 +27,11 @@ object OpenIDCallbackChecks {
     state: String = null
   ): OpenIDCallbackChecks = {
     val __obj = js.Dynamic.literal()
-    if (code_verifier != null) __obj.updateDynamic("code_verifier")(code_verifier)
+    if (code_verifier != null) __obj.updateDynamic("code_verifier")(code_verifier.asInstanceOf[js.Any])
     if (max_age != null) __obj.updateDynamic("max_age")(max_age.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenIDCallbackChecks]
   }
 }

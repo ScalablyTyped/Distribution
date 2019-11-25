@@ -32,12 +32,12 @@ object MediaType {
     validateFn: /* file */ File => Boolean | js.Thenable[_] = null
   ): MediaType = {
     val __obj = js.Dynamic.literal()
-    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
-    if (externals != null) __obj.updateDynamic("externals")(externals)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onInsert != null) __obj.updateDynamic("onInsert")(onInsert)
-    if (!js.isUndefined(pasteImage)) __obj.updateDynamic("pasteImage")(pasteImage)
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
+    if (externals != null) __obj.updateDynamic("externals")(externals.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
+    if (onInsert != null) __obj.updateDynamic("onInsert")(onInsert.asInstanceOf[js.Any])
+    if (!js.isUndefined(pasteImage)) __obj.updateDynamic("pasteImage")(pasteImage.asInstanceOf[js.Any])
     if (uploadFn != null) __obj.updateDynamic("uploadFn")(js.Any.fromFunction1(uploadFn))
     if (validateFn != null) __obj.updateDynamic("validateFn")(js.Any.fromFunction1(validateFn))
     __obj.asInstanceOf[MediaType]

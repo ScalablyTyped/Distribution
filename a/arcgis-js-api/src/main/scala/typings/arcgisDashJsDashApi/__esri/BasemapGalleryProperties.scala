@@ -52,15 +52,15 @@ object BasemapGalleryProperties {
     viewModel: BasemapGalleryViewModelProperties = null
   ): BasemapGalleryProperties = {
     val __obj = js.Dynamic.literal()
-    if (activeBasemap != null) __obj.updateDynamic("activeBasemap")(activeBasemap)
+    if (activeBasemap != null) __obj.updateDynamic("activeBasemap")(activeBasemap.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasemapGalleryProperties]
   }
 }

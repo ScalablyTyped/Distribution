@@ -12,7 +12,7 @@ trait Anon_4Capacity extends js.Object {
 object Anon_4Capacity {
   @scala.inline
   def apply(capacity: `4`): Anon_4Capacity = {
-    val __obj = js.Dynamic.literal(capacity = capacity)
+    val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_4Capacity]
   }

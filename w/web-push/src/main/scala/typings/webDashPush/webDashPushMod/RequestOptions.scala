@@ -29,11 +29,11 @@ object RequestOptions {
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
     if (TTL != null) __obj.updateDynamic("TTL")(TTL.asInstanceOf[js.Any])
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)
-    if (gcmAPIKey != null) __obj.updateDynamic("gcmAPIKey")(gcmAPIKey)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (vapidDetails != null) __obj.updateDynamic("vapidDetails")(vapidDetails)
+    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
+    if (gcmAPIKey != null) __obj.updateDynamic("gcmAPIKey")(gcmAPIKey.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (vapidDetails != null) __obj.updateDynamic("vapidDetails")(vapidDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

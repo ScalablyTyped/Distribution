@@ -21,7 +21,7 @@ object Input {
     prev_index: Double,
     script_type: String
   ): Input = {
-    val __obj = js.Dynamic.literal(address_n = address_n, amount = amount, prev_hash = prev_hash, prev_index = prev_index, script_type = script_type)
+    val __obj = js.Dynamic.literal(address_n = address_n.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], prev_hash = prev_hash.asInstanceOf[js.Any], prev_index = prev_index.asInstanceOf[js.Any], script_type = script_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Input]
   }

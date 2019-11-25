@@ -1,6 +1,5 @@
 package typings.hexoDashFs.hexoDashFsMod
 
-import typings.bluebird.bluebirdMod.^
 import typings.hexoDashFs.Anon_BufferEncoding
 import typings.hexoDashFs.Anon_Encoding
 import typings.hexoDashFs.Anon_EncodingNull
@@ -14,11 +13,11 @@ import scala.scalajs.js.annotation._
 @JSImport("hexo-fs", "readdir")
 @js.native
 object readdir extends js.Object {
-  def apply(path: PathLike): ^[js.Array[String]] = js.native
-  def apply(path: PathLike, options: String): ^[js.Array[String | Buffer]] = js.native
-  def apply(path: PathLike, options: Anon_BufferEncoding): ^[js.Array[Buffer]] = js.native
-  def apply(path: PathLike, options: Anon_Encoding): ^[js.Array[String]] = js.native
-  def apply(path: PathLike, options: Anon_EncodingNull): ^[js.Array[String | Buffer]] = js.native
-  def apply(path: PathLike, options: BufferEncoding): ^[js.Array[String]] = js.native
+  def apply(path: PathLike): typings.bluebird.bluebirdMod.^[js.Array[String]] = js.native
+  def apply(path: PathLike, options: String): typings.bluebird.bluebirdMod.^[js.Array[String | Buffer]] = js.native
+  def apply(path: PathLike, options: Anon_BufferEncoding): typings.bluebird.bluebirdMod.^[js.Array[Buffer]] = js.native
+  def apply(path: PathLike, options: Anon_Encoding): typings.bluebird.bluebirdMod.^[js.Array[String]] = js.native
+  def apply(path: PathLike, options: Anon_EncodingNull): typings.bluebird.bluebirdMod.^[js.Array[String | Buffer]] = js.native
+  def apply(path: PathLike, options: BufferEncoding): typings.bluebird.bluebirdMod.^[js.Array[String]] = js.native
 }
 

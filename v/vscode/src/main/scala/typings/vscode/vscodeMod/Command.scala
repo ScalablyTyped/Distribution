@@ -28,9 +28,9 @@ trait Command extends js.Object {
 object Command {
   @scala.inline
   def apply(command: String, title: String, arguments: js.Array[_] = null, tooltip: String = null): Command = {
-    val __obj = js.Dynamic.literal(command = command, title = title)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
 }

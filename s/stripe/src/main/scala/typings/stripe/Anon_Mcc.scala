@@ -54,14 +54,14 @@ object Anon_Mcc {
     url: String = null
   ): Anon_Mcc = {
     val __obj = js.Dynamic.literal()
-    if (mcc != null) __obj.updateDynamic("mcc")(mcc)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (product_description != null) __obj.updateDynamic("product_description")(product_description)
-    if (support_address != null) __obj.updateDynamic("support_address")(support_address)
-    if (support_email != null) __obj.updateDynamic("support_email")(support_email)
-    if (support_phone != null) __obj.updateDynamic("support_phone")(support_phone)
-    if (support_url != null) __obj.updateDynamic("support_url")(support_url)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (mcc != null) __obj.updateDynamic("mcc")(mcc.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (product_description != null) __obj.updateDynamic("product_description")(product_description.asInstanceOf[js.Any])
+    if (support_address != null) __obj.updateDynamic("support_address")(support_address.asInstanceOf[js.Any])
+    if (support_email != null) __obj.updateDynamic("support_email")(support_email.asInstanceOf[js.Any])
+    if (support_phone != null) __obj.updateDynamic("support_phone")(support_phone.asInstanceOf[js.Any])
+    if (support_url != null) __obj.updateDynamic("support_url")(support_url.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Mcc]
   }
 }

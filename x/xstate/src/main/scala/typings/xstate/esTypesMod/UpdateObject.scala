@@ -14,8 +14,8 @@ trait UpdateObject extends EventObject {
 object UpdateObject {
   @scala.inline
   def apply(id: String | Double, state: State[_, _], `type`: String): UpdateObject = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], state = state)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateObject]
   }
 }

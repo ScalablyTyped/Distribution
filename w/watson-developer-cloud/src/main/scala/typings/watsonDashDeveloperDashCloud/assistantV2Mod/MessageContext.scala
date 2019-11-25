@@ -16,8 +16,8 @@ object MessageContext {
   @scala.inline
   def apply(global: MessageContextGlobal = null, skills: MessageContextSkills = null): MessageContext = {
     val __obj = js.Dynamic.literal()
-    if (global != null) __obj.updateDynamic("global")(global)
-    if (skills != null) __obj.updateDynamic("skills")(skills)
+    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (skills != null) __obj.updateDynamic("skills")(skills.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageContext]
   }
 }

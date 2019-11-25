@@ -14,7 +14,7 @@ trait GetPhotosReturnType extends js.Object {
 object GetPhotosReturnType {
   @scala.inline
   def apply(edges: js.Array[Anon_Node], page_info: Anon_EndcursorHasnextpage): GetPhotosReturnType = {
-    val __obj = js.Dynamic.literal(edges = edges, page_info = page_info)
+    val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], page_info = page_info.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetPhotosReturnType]
   }

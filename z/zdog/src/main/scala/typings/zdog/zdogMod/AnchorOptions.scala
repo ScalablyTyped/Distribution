@@ -39,10 +39,10 @@ object AnchorOptions {
     translate: VectorOptions = null
   ): AnchorOptions = {
     val __obj = js.Dynamic.literal()
-    if (addTo != null) __obj.updateDynamic("addTo")(addTo)
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate)
+    if (addTo != null) __obj.updateDynamic("addTo")(addTo.asInstanceOf[js.Any])
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate)
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnchorOptions]
   }
 }

@@ -16,7 +16,7 @@ trait Anon_Center extends js.Object {
 object Anon_Center {
   @scala.inline
   def apply(title: String, titleHalign: center | end | start, titleStyle: js.Object): Anon_Center = {
-    val __obj = js.Dynamic.literal(title = title, titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Center]
   }

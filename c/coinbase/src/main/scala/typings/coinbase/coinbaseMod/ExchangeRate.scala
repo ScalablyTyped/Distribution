@@ -12,7 +12,7 @@ trait ExchangeRate extends js.Object {
 object ExchangeRate {
   @scala.inline
   def apply(data: Anon_Currency): ExchangeRate = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExchangeRate]
   }

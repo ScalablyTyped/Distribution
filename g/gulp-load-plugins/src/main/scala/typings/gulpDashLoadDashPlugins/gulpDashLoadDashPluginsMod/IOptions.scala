@@ -34,13 +34,13 @@ object IOptions {
     scope: js.Array[String] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(camelize)) __obj.updateDynamic("camelize")(camelize)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (rename != null) __obj.updateDynamic("rename")(rename)
-    if (replaceString != null) __obj.updateDynamic("replaceString")(replaceString)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (!js.isUndefined(camelize)) __obj.updateDynamic("camelize")(camelize.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (rename != null) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
+    if (replaceString != null) __obj.updateDynamic("replaceString")(replaceString.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -18,10 +18,10 @@ object DrawerStyles {
     mainOverlay: ViewStyle = null
   ): DrawerStyles = {
     val __obj = js.Dynamic.literal()
-    if (drawer != null) __obj.updateDynamic("drawer")(drawer)
-    if (drawerOverlay != null) __obj.updateDynamic("drawerOverlay")(drawerOverlay)
-    if (main != null) __obj.updateDynamic("main")(main)
-    if (mainOverlay != null) __obj.updateDynamic("mainOverlay")(mainOverlay)
+    if (drawer != null) __obj.updateDynamic("drawer")(drawer.asInstanceOf[js.Any])
+    if (drawerOverlay != null) __obj.updateDynamic("drawerOverlay")(drawerOverlay.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (mainOverlay != null) __obj.updateDynamic("mainOverlay")(mainOverlay.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerStyles]
   }
 }

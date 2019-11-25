@@ -32,16 +32,16 @@ object Anon_186 {
     `221`: Double
   ): Anon_186 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("186")(`186`)
-    __obj.updateDynamic("187")(`187`)
-    __obj.updateDynamic("188")(`188`)
-    __obj.updateDynamic("189")(`189`)
-    __obj.updateDynamic("190")(`190`)
-    __obj.updateDynamic("191")(`191`)
-    __obj.updateDynamic("192")(`192`)
-    __obj.updateDynamic("219")(`219`)
-    __obj.updateDynamic("220")(`220`)
-    __obj.updateDynamic("221")(`221`)
+    __obj.updateDynamic("186")(`186`.asInstanceOf[js.Any])
+    __obj.updateDynamic("187")(`187`.asInstanceOf[js.Any])
+    __obj.updateDynamic("188")(`188`.asInstanceOf[js.Any])
+    __obj.updateDynamic("189")(`189`.asInstanceOf[js.Any])
+    __obj.updateDynamic("190")(`190`.asInstanceOf[js.Any])
+    __obj.updateDynamic("191")(`191`.asInstanceOf[js.Any])
+    __obj.updateDynamic("192")(`192`.asInstanceOf[js.Any])
+    __obj.updateDynamic("219")(`219`.asInstanceOf[js.Any])
+    __obj.updateDynamic("220")(`220`.asInstanceOf[js.Any])
+    __obj.updateDynamic("221")(`221`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_186]
   }
 }

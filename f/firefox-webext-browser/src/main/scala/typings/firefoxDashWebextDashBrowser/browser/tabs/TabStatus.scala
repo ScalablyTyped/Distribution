@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait TabStatus extends js.Object
 
+object TabStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def complete: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.complete = this.cast("complete")
+  @scala.inline
+  def loading: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.loading = this.cast("loading")
+}
+

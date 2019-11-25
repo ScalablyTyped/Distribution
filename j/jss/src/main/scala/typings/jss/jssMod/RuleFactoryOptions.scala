@@ -26,13 +26,13 @@ object RuleFactoryOptions {
     sheet: StyleSheet[String] = null
   ): RuleFactoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (Renderer != null) __obj.updateDynamic("Renderer")(Renderer)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (Renderer != null) __obj.updateDynamic("Renderer")(Renderer.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (generateId != null) __obj.updateDynamic("generateId")(js.Any.fromFunction2(generateId))
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (jss != null) __obj.updateDynamic("jss")(jss)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (sheet != null) __obj.updateDynamic("sheet")(sheet)
+    if (jss != null) __obj.updateDynamic("jss")(jss.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (sheet != null) __obj.updateDynamic("sheet")(sheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleFactoryOptions]
   }
 }

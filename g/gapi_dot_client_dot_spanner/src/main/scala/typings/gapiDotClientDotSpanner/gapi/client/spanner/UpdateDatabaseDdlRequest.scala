@@ -35,8 +35,8 @@ object UpdateDatabaseDdlRequest {
   @scala.inline
   def apply(operationId: String = null, statements: js.Array[String] = null): UpdateDatabaseDdlRequest = {
     val __obj = js.Dynamic.literal()
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (statements != null) __obj.updateDynamic("statements")(statements)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (statements != null) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDatabaseDdlRequest]
   }
 }

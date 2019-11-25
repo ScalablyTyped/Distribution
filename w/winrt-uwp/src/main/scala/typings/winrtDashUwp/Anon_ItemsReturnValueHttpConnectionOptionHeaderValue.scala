@@ -13,7 +13,7 @@ trait Anon_ItemsReturnValueHttpConnectionOptionHeaderValue extends js.Object {
 object Anon_ItemsReturnValueHttpConnectionOptionHeaderValue {
   @scala.inline
   def apply(items: HttpConnectionOptionHeaderValue, returnValue: Double): Anon_ItemsReturnValueHttpConnectionOptionHeaderValue = {
-    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemsReturnValueHttpConnectionOptionHeaderValue]
   }

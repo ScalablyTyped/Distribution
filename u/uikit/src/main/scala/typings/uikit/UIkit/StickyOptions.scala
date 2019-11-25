@@ -92,15 +92,15 @@ object StickyOptions {
     top: Int | Double = null
   ): StickyOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (clsactive != null) __obj.updateDynamic("clsactive")(clsactive)
-    if (clsinactive != null) __obj.updateDynamic("clsinactive")(clsinactive)
-    if (clsinit != null) __obj.updateDynamic("clsinit")(clsinit)
-    if (getWidthFrom != null) __obj.updateDynamic("getWidthFrom")(getWidthFrom)
+    if (clsactive != null) __obj.updateDynamic("clsactive")(clsactive.asInstanceOf[js.Any])
+    if (clsinactive != null) __obj.updateDynamic("clsinactive")(clsinactive.asInstanceOf[js.Any])
+    if (clsinit != null) __obj.updateDynamic("clsinit")(clsinit.asInstanceOf[js.Any])
+    if (getWidthFrom != null) __obj.updateDynamic("getWidthFrom")(getWidthFrom.asInstanceOf[js.Any])
     if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (!js.isUndefined(showup)) __obj.updateDynamic("showup")(showup)
-    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(showup)) __obj.updateDynamic("showup")(showup.asInstanceOf[js.Any])
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickyOptions]
   }

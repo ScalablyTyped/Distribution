@@ -84,9 +84,9 @@ object PlusGeolocationPositionOptions {
     timeout: Int | Double = null
   ): PlusGeolocationPositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordsType != null) __obj.updateDynamic("coordsType")(coordsType)
-    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy)
-    if (!js.isUndefined(geocode)) __obj.updateDynamic("geocode")(geocode)
+    if (coordsType != null) __obj.updateDynamic("coordsType")(coordsType.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(geocode)) __obj.updateDynamic("geocode")(geocode.asInstanceOf[js.Any])
     if (maximumAge != null) __obj.updateDynamic("maximumAge")(maximumAge.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

@@ -39,10 +39,10 @@ object OrderCancelOptions {
   ): OrderCancelOptions = {
     val __obj = js.Dynamic.literal()
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (!js.isUndefined(email)) __obj.updateDynamic("email")(email)
+    if (!js.isUndefined(email)) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (refund != null) __obj.updateDynamic("refund")(refund)
-    if (!js.isUndefined(restock)) __obj.updateDynamic("restock")(restock)
+    if (refund != null) __obj.updateDynamic("refund")(refund.asInstanceOf[js.Any])
+    if (!js.isUndefined(restock)) __obj.updateDynamic("restock")(restock.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderCancelOptions]
   }
 }

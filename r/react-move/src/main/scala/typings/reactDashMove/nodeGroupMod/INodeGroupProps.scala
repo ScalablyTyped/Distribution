@@ -30,7 +30,7 @@ object INodeGroupProps {
     leave: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap] = null,
     update: (/* data */ js.Any, /* index */ Double) => HashMap | js.Array[HashMap] = null
   ): INodeGroupProps = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), data = data, keyAccessor = js.Any.fromFunction2(keyAccessor), start = js.Any.fromFunction2(start))
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), data = data.asInstanceOf[js.Any], keyAccessor = js.Any.fromFunction2(keyAccessor), start = js.Any.fromFunction2(start))
     if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction2(enter))
     if (interpolation != null) __obj.updateDynamic("interpolation")(js.Any.fromFunction4(interpolation))
     if (leave != null) __obj.updateDynamic("leave")(js.Any.fromFunction2(leave))

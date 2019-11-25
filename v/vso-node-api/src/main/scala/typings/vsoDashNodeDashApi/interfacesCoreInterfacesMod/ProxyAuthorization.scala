@@ -28,7 +28,7 @@ trait ProxyAuthorization extends js.Object {
 object ProxyAuthorization {
   @scala.inline
   def apply(authorizationUrl: String, clientId: String, identity: IdentityDescriptor, publicKey: PublicKey): ProxyAuthorization = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, clientId = clientId, identity = identity, publicKey = publicKey)
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProxyAuthorization]
   }

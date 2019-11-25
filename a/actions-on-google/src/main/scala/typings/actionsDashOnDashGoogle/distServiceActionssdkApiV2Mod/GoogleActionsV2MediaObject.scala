@@ -38,11 +38,11 @@ object GoogleActionsV2MediaObject {
     name: String = null
   ): GoogleActionsV2MediaObject = {
     val __obj = js.Dynamic.literal()
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (largeImage != null) __obj.updateDynamic("largeImage")(largeImage)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (largeImage != null) __obj.updateDynamic("largeImage")(largeImage.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2MediaObject]
   }
 }

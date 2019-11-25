@@ -35,10 +35,10 @@ object PhysicsConfig {
     matter: MatterWorldConfig = null
   ): PhysicsConfig = {
     val __obj = js.Dynamic.literal()
-    if (arcade != null) __obj.updateDynamic("arcade")(arcade)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (impact != null) __obj.updateDynamic("impact")(impact)
-    if (matter != null) __obj.updateDynamic("matter")(matter)
+    if (arcade != null) __obj.updateDynamic("arcade")(arcade.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (impact != null) __obj.updateDynamic("impact")(impact.asInstanceOf[js.Any])
+    if (matter != null) __obj.updateDynamic("matter")(matter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhysicsConfig]
   }
 }

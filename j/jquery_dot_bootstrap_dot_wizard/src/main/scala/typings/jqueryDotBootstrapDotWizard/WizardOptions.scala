@@ -54,9 +54,9 @@ object WizardOptions {
     tabClass: String = null
   ): WizardOptions = {
     val __obj = js.Dynamic.literal()
-    if (firstSelector != null) __obj.updateDynamic("firstSelector")(firstSelector)
-    if (lastSelector != null) __obj.updateDynamic("lastSelector")(lastSelector)
-    if (nextSelector != null) __obj.updateDynamic("nextSelector")(nextSelector)
+    if (firstSelector != null) __obj.updateDynamic("firstSelector")(firstSelector.asInstanceOf[js.Any])
+    if (lastSelector != null) __obj.updateDynamic("lastSelector")(lastSelector.asInstanceOf[js.Any])
+    if (nextSelector != null) __obj.updateDynamic("nextSelector")(nextSelector.asInstanceOf[js.Any])
     if (onFirst != null) __obj.updateDynamic("onFirst")(js.Any.fromFunction3(onFirst))
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction3(onInit))
     if (onLast != null) __obj.updateDynamic("onLast")(js.Any.fromFunction3(onLast))
@@ -65,8 +65,8 @@ object WizardOptions {
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction3(onShow))
     if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction3(onTabClick))
     if (onTabShow != null) __obj.updateDynamic("onTabShow")(js.Any.fromFunction3(onTabShow))
-    if (previousSelector != null) __obj.updateDynamic("previousSelector")(previousSelector)
-    if (tabClass != null) __obj.updateDynamic("tabClass")(tabClass)
+    if (previousSelector != null) __obj.updateDynamic("previousSelector")(previousSelector.asInstanceOf[js.Any])
+    if (tabClass != null) __obj.updateDynamic("tabClass")(tabClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[WizardOptions]
   }
 }

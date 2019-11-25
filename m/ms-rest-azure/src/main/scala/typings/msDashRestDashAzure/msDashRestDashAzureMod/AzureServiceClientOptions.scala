@@ -41,12 +41,12 @@ object AzureServiceClientOptions {
     rpRegistrationRetryTimeout: Int | Double = null
   ): AzureServiceClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (acceptLanguage != null) __obj.updateDynamic("acceptLanguage")(acceptLanguage)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(generateClientRequestId)) __obj.updateDynamic("generateClientRequestId")(generateClientRequestId)
+    if (acceptLanguage != null) __obj.updateDynamic("acceptLanguage")(acceptLanguage.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateClientRequestId)) __obj.updateDynamic("generateClientRequestId")(generateClientRequestId.asInstanceOf[js.Any])
     if (longRunningOperationRetryTimeout != null) __obj.updateDynamic("longRunningOperationRetryTimeout")(longRunningOperationRetryTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(noRetryPolicy)) __obj.updateDynamic("noRetryPolicy")(noRetryPolicy)
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (!js.isUndefined(noRetryPolicy)) __obj.updateDynamic("noRetryPolicy")(noRetryPolicy.asInstanceOf[js.Any])
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
     if (rpRegistrationRetryTimeout != null) __obj.updateDynamic("rpRegistrationRetryTimeout")(rpRegistrationRetryTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureServiceClientOptions]
   }

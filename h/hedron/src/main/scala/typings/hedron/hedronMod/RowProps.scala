@@ -56,14 +56,14 @@ object RowProps {
     tagName: String = null
   ): RowProps = {
     val __obj = js.Dynamic.literal()
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent)
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems)
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
+    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (divisions != null) __obj.updateDynamic("divisions")(divisions.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowProps]
   }
 }

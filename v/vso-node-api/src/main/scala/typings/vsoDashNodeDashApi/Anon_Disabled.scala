@@ -13,7 +13,7 @@ trait Anon_Disabled extends js.Object {
 object Anon_Disabled {
   @scala.inline
   def apply(disabled: Double, enabled: Double, paused: Double): Anon_Disabled = {
-    val __obj = js.Dynamic.literal(disabled = disabled, enabled = enabled, paused = paused)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Disabled]
   }

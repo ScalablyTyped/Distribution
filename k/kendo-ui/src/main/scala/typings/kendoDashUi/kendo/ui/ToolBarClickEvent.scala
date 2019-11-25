@@ -19,9 +19,9 @@ object ToolBarClickEvent {
     id: String = null,
     target: JQuery = null
   ): ToolBarClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarClickEvent]
   }
 }

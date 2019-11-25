@@ -23,9 +23,9 @@ trait Advertisement extends js.Object {
 object Advertisement {
   @scala.inline
   def apply(name: String, key: String = null, namespace: String = null): Advertisement = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Advertisement]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait OnBeforeRequestOptions extends js.Object
 
+object OnBeforeRequestOptions {
+  @scala.inline
+  def blocking: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.blocking = this.cast("blocking")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def requestBody: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.requestBody = this.cast("requestBody")
+}
+

@@ -12,7 +12,7 @@ trait Anon_NewShortcut extends js.Object {
 object Anon_NewShortcut {
   @scala.inline
   def apply(NewShortcut: OutlookBarShortcut): Anon_NewShortcut = {
-    val __obj = js.Dynamic.literal(NewShortcut = NewShortcut)
+    val __obj = js.Dynamic.literal(NewShortcut = NewShortcut.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NewShortcut]
   }

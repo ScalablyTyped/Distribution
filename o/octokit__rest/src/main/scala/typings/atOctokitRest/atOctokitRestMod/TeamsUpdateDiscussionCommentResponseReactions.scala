@@ -27,9 +27,9 @@ object TeamsUpdateDiscussionCommentResponseReactions {
     total_count: Double,
     url: String
   ): TeamsUpdateDiscussionCommentResponseReactions = {
-    val __obj = js.Dynamic.literal(confused = confused, heart = heart, hooray = hooray, laugh = laugh, total_count = total_count, url = url)
-    __obj.updateDynamic("+1")(`+1`)
-    __obj.updateDynamic("-1")(`-1`)
+    val __obj = js.Dynamic.literal(confused = confused.asInstanceOf[js.Any], heart = heart.asInstanceOf[js.Any], hooray = hooray.asInstanceOf[js.Any], laugh = laugh.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("+1")(`+1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("-1")(`-1`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsUpdateDiscussionCommentResponseReactions]
   }
 }

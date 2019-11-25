@@ -15,7 +15,7 @@ object Anon_ExtendSizeAnonLargeMediumSmallX {
   def apply(extend: ExtendType = null, size: Anon_LargeMediumSmallX = null): Anon_ExtendSizeAnonLargeMediumSmallX = {
     val __obj = js.Dynamic.literal()
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtendSizeAnonLargeMediumSmallX]
   }
 }

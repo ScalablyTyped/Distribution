@@ -19,9 +19,9 @@ trait PaymentButtonOptions extends js.Object {
 object PaymentButtonOptions {
   @scala.inline
   def apply(paymentRequest: js.Any, classes: Anon_Base = null, style: Anon_BaseComplete = null): PaymentButtonOptions = {
-    val __obj = js.Dynamic.literal(paymentRequest = paymentRequest)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(paymentRequest = paymentRequest.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentButtonOptions]
   }
 }

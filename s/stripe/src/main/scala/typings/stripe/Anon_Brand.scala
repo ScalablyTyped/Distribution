@@ -6,7 +6,7 @@ import typings.stripe.stripeMod.paymentMethods.CardWallet
 import typings.stripe.stripeStrings.credit
 import typings.stripe.stripeStrings.debit
 import typings.stripe.stripeStrings.prepaid
-import typings.stripe.stripeStrings.unknown
+import typings.stripe.stripeStrings.unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ trait Anon_Brand extends js.Object {
   /**
     * Card funding type. Can be credit, debit, prepaid, or unknown.
     */
-  var funding: credit | debit | prepaid | unknown
+  var funding: credit | debit | prepaid | unknown_
   /**
     * The last four digits of the card.
     */
@@ -65,14 +65,14 @@ object Anon_Brand {
     exp_month: Double,
     exp_year: Double,
     fingerprint: String,
-    funding: credit | debit | prepaid | unknown,
+    funding: credit | debit | prepaid | unknown_,
     last4: String,
     three_d_secure: Anon_Authenticated = null,
     wallet: CardWallet = null
   ): Anon_Brand = {
-    val __obj = js.Dynamic.literal(brand = brand, checks = checks, country = country, exp_month = exp_month, exp_year = exp_year, fingerprint = fingerprint, funding = funding.asInstanceOf[js.Any], last4 = last4)
-    if (three_d_secure != null) __obj.updateDynamic("three_d_secure")(three_d_secure)
-    if (wallet != null) __obj.updateDynamic("wallet")(wallet)
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
+    if (three_d_secure != null) __obj.updateDynamic("three_d_secure")(three_d_secure.asInstanceOf[js.Any])
+    if (wallet != null) __obj.updateDynamic("wallet")(wallet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Brand]
   }
 }

@@ -37,11 +37,11 @@ object CardTitleTheme {
     title: String = null
   ): CardTitleTheme = {
     val __obj = js.Dynamic.literal()
-    if (cardTitle != null) __obj.updateDynamic("cardTitle")(cardTitle)
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (small != null) __obj.updateDynamic("small")(small)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (cardTitle != null) __obj.updateDynamic("cardTitle")(cardTitle.asInstanceOf[js.Any])
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardTitleTheme]
   }
 }

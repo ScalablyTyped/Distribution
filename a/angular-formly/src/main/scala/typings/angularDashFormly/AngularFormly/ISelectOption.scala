@@ -21,10 +21,10 @@ object ISelectOption {
     value: String = null
   ): ISelectOption = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISelectOption]
   }
 }

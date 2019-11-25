@@ -14,7 +14,7 @@ trait BadRequestErrorMessageResult extends IHttpActionResult {
 object BadRequestErrorMessageResult {
   @scala.inline
   def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], message: js.Any): BadRequestErrorMessageResult = {
-    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = js.Any.fromFunction0(executeAsync), message = message)
+    val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync), message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BadRequestErrorMessageResult]
   }

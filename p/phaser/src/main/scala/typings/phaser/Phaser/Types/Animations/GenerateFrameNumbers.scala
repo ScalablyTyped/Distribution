@@ -41,7 +41,7 @@ object GenerateFrameNumbers {
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
     if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
-    if (outputArray != null) __obj.updateDynamic("outputArray")(outputArray)
+    if (outputArray != null) __obj.updateDynamic("outputArray")(outputArray.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateFrameNumbers]
   }

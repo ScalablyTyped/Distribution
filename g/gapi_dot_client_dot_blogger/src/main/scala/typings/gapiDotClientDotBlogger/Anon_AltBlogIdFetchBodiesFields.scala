@@ -50,16 +50,16 @@ object Anon_AltBlogIdFetchBodiesFields {
     quotaUser: String = null,
     userIp: String = null
   ): Anon_AltBlogIdFetchBodiesFields = {
-    val __obj = js.Dynamic.literal(blogId = blogId, q = q)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (!js.isUndefined(fetchBodies)) __obj.updateDynamic("fetchBodies")(fetchBodies)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    val __obj = js.Dynamic.literal(blogId = blogId.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchBodies)) __obj.updateDynamic("fetchBodies")(fetchBodies.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltBlogIdFetchBodiesFields]
   }
 }

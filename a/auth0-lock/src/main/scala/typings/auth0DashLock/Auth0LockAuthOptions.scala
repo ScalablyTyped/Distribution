@@ -28,14 +28,14 @@ object Auth0LockAuthOptions {
     sso: js.UndefOr[Boolean] = js.undefined
   ): Auth0LockAuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (!js.isUndefined(autoParseHash)) __obj.updateDynamic("autoParseHash")(autoParseHash)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
-    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
-    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso)
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoParseHash)) __obj.updateDynamic("autoParseHash")(autoParseHash.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockAuthOptions]
   }
 }

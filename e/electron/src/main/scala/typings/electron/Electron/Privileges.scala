@@ -42,12 +42,12 @@ object Privileges {
     supportFetchAPI: js.UndefOr[Boolean] = js.undefined
   ): Privileges = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowServiceWorkers)) __obj.updateDynamic("allowServiceWorkers")(allowServiceWorkers)
-    if (!js.isUndefined(bypassCSP)) __obj.updateDynamic("bypassCSP")(bypassCSP)
-    if (!js.isUndefined(corsEnabled)) __obj.updateDynamic("corsEnabled")(corsEnabled)
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
-    if (!js.isUndefined(standard)) __obj.updateDynamic("standard")(standard)
-    if (!js.isUndefined(supportFetchAPI)) __obj.updateDynamic("supportFetchAPI")(supportFetchAPI)
+    if (!js.isUndefined(allowServiceWorkers)) __obj.updateDynamic("allowServiceWorkers")(allowServiceWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(bypassCSP)) __obj.updateDynamic("bypassCSP")(bypassCSP.asInstanceOf[js.Any])
+    if (!js.isUndefined(corsEnabled)) __obj.updateDynamic("corsEnabled")(corsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(standard)) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportFetchAPI)) __obj.updateDynamic("supportFetchAPI")(supportFetchAPI.asInstanceOf[js.Any])
     __obj.asInstanceOf[Privileges]
   }
 }

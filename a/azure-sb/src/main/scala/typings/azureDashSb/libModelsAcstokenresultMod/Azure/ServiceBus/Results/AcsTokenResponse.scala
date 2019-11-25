@@ -16,7 +16,7 @@ object AcsTokenResponse {
     WrapAccessToken: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any,
     WrapAccessTokenExpiresIn: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
   ): AcsTokenResponse = {
-    val __obj = js.Dynamic.literal(WrapAccessToken = WrapAccessToken, WrapAccessTokenExpiresIn = WrapAccessTokenExpiresIn)
+    val __obj = js.Dynamic.literal(WrapAccessToken = WrapAccessToken.asInstanceOf[js.Any], WrapAccessTokenExpiresIn = WrapAccessTokenExpiresIn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AcsTokenResponse]
   }

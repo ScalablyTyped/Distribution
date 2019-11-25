@@ -35,10 +35,10 @@ object _UnmarshalledConsumedCapacity {
   ): _UnmarshalledConsumedCapacity = {
     val __obj = js.Dynamic.literal()
     if (CapacityUnits != null) __obj.updateDynamic("CapacityUnits")(CapacityUnits.asInstanceOf[js.Any])
-    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes)
-    if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes)
-    if (Table != null) __obj.updateDynamic("Table")(Table)
-    if (TableName != null) __obj.updateDynamic("TableName")(TableName)
+    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes.asInstanceOf[js.Any])
+    if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes.asInstanceOf[js.Any])
+    if (Table != null) __obj.updateDynamic("Table")(Table.asInstanceOf[js.Any])
+    if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledConsumedCapacity]
   }
 }

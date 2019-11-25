@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mongo-sanitize"
-version := "1.0-dt-20190310Z-777f22"
+version := "1.0-dt-20190310Z-abc32d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

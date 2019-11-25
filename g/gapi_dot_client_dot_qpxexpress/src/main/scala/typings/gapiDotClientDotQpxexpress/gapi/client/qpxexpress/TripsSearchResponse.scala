@@ -15,8 +15,8 @@ object TripsSearchResponse {
   @scala.inline
   def apply(kind: String = null, trips: TripOptionsResponse = null): TripsSearchResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (trips != null) __obj.updateDynamic("trips")(trips)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (trips != null) __obj.updateDynamic("trips")(trips.asInstanceOf[js.Any])
     __obj.asInstanceOf[TripsSearchResponse]
   }
 }

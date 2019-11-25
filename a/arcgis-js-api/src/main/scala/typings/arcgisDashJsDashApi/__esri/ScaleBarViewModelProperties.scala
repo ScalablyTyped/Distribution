@@ -17,7 +17,7 @@ object ScaleBarViewModelProperties {
   @scala.inline
   def apply(view: MapViewProperties = null): ScaleBarViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleBarViewModelProperties]
   }
 }

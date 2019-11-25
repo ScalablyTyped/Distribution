@@ -1,6 +1,6 @@
 package typings.hapi.hapiMod
 
-import typings.hapi.Anon_Default
+import typings.hapi.Anon_DefaultServerAuthConfig
 import typings.hapi.hapiMod.Util.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ trait ServerAuth extends js.Object {
     * Contains the default authentication configuration is a default strategy was set via
     * [server.auth.default()](https://github.com/hapijs/hapi/blob/master/API.md#server.auth.default()).
     */
-  val settings: Anon_Default = js.native
+  val settings: Anon_DefaultServerAuthConfig = js.native
   /**
     * Sets a default strategy which is applied to every route where:
     * @param options - one of:

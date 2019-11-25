@@ -34,7 +34,7 @@ trait IItem[T] extends js.Object {
 object IItem {
   @scala.inline
   def apply[T](data: T, groupKey: String, handle: String, index: Double, key: String): IItem[T] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], groupKey = groupKey, handle = handle, index = index, key = key)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], groupKey = groupKey.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IItem[T]]
   }

@@ -19,7 +19,7 @@ trait MigrationResponse extends js.Object {
 object MigrationResponse {
   @scala.inline
   def apply(id: String, status: `not-run` | skipped | pending | ok | error | rollback | `rollback-error`): MigrationResponse = {
-    val __obj = js.Dynamic.literal(id = id, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MigrationResponse]
   }

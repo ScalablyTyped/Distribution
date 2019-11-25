@@ -21,10 +21,10 @@ object Anon_Format {
     highRes: js.UndefOr[Boolean] = js.undefined,
     ownerId: String = null
   ): Anon_Format = {
-    val __obj = js.Dynamic.literal(styleId = styleId)
+    val __obj = js.Dynamic.literal(styleId = styleId.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(highRes)) __obj.updateDynamic("highRes")(highRes)
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId)
+    if (!js.isUndefined(highRes)) __obj.updateDynamic("highRes")(highRes.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]
   }
 }

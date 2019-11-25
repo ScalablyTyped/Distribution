@@ -165,12 +165,9 @@ object IField {
   @scala.inline
   def apply(
     IDecorator: IDecorator = null,
-    baseCls: java.lang.String = null,
     clearIcon: js.UndefOr[Boolean] = js.undefined,
-    component: js.Any = null,
     fieldCls: java.lang.String = null,
     fieldLabel: java.lang.String = null,
-    getBaseCls: () => java.lang.String = null,
     getClearIcon: () => Boolean = null,
     getInputCls: () => java.lang.String = null,
     getInputType: () => java.lang.String = null,
@@ -200,7 +197,6 @@ object IField {
     requiredCls: java.lang.String = null,
     reset: () => IField = null,
     resetOriginalValue: () => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setClearIcon: /* clearIcon */ js.UndefOr[Boolean] => Unit = null,
     setInputCls: /* inputCls */ js.UndefOr[java.lang.String] => Unit = null,
     setInputType: /* inputType */ js.UndefOr[java.lang.String] => Unit = null,
@@ -219,13 +215,10 @@ object IField {
     value: js.Any = null
   ): IField = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IDecorator)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (!js.isUndefined(clearIcon)) __obj.updateDynamic("clearIcon")(clearIcon)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (fieldCls != null) __obj.updateDynamic("fieldCls")(fieldCls)
-    if (fieldLabel != null) __obj.updateDynamic("fieldLabel")(fieldLabel)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (IDecorator != null) js.Dynamic.global.Object.assign(__obj, IDecorator)
+    if (!js.isUndefined(clearIcon)) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
+    if (fieldCls != null) __obj.updateDynamic("fieldCls")(fieldCls.asInstanceOf[js.Any])
+    if (fieldLabel != null) __obj.updateDynamic("fieldLabel")(fieldLabel.asInstanceOf[js.Any])
     if (getClearIcon != null) __obj.updateDynamic("getClearIcon")(js.Any.fromFunction0(getClearIcon))
     if (getInputCls != null) __obj.updateDynamic("getInputCls")(js.Any.fromFunction0(getInputCls))
     if (getInputType != null) __obj.updateDynamic("getInputType")(js.Any.fromFunction0(getInputType))
@@ -239,23 +232,22 @@ object IField {
     if (getRequiredCls != null) __obj.updateDynamic("getRequiredCls")(js.Any.fromFunction0(getRequiredCls))
     if (getTabIndex != null) __obj.updateDynamic("getTabIndex")(js.Any.fromFunction0(getTabIndex))
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
-    if (inputCls != null) __obj.updateDynamic("inputCls")(inputCls)
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
+    if (inputCls != null) __obj.updateDynamic("inputCls")(inputCls.asInstanceOf[js.Any])
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
     if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
-    if (!js.isUndefined(isField)) __obj.updateDynamic("isField")(isField)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign)
-    if (labelCls != null) __obj.updateDynamic("labelCls")(labelCls)
-    if (labelEl != null) __obj.updateDynamic("labelEl")(labelEl)
-    if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth)
-    if (!js.isUndefined(labelWrap)) __obj.updateDynamic("labelWrap")(labelWrap)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (requiredCls != null) __obj.updateDynamic("requiredCls")(requiredCls)
+    if (!js.isUndefined(isField)) __obj.updateDynamic("isField")(isField.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
+    if (labelCls != null) __obj.updateDynamic("labelCls")(labelCls.asInstanceOf[js.Any])
+    if (labelEl != null) __obj.updateDynamic("labelEl")(labelEl.asInstanceOf[js.Any])
+    if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelWrap)) __obj.updateDynamic("labelWrap")(labelWrap.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (requiredCls != null) __obj.updateDynamic("requiredCls")(requiredCls.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(js.Any.fromFunction0(resetOriginalValue))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setClearIcon != null) __obj.updateDynamic("setClearIcon")(js.Any.fromFunction1(setClearIcon))
     if (setInputCls != null) __obj.updateDynamic("setInputCls")(js.Any.fromFunction1(setInputCls))
     if (setInputType != null) __obj.updateDynamic("setInputType")(js.Any.fromFunction1(setInputType))
@@ -270,8 +262,8 @@ object IField {
     if (setTabIndex != null) __obj.updateDynamic("setTabIndex")(js.Any.fromFunction1(setTabIndex))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (useClearIcon != null) __obj.updateDynamic("useClearIcon")(useClearIcon)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (useClearIcon != null) __obj.updateDynamic("useClearIcon")(useClearIcon.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }
 }

@@ -12,7 +12,7 @@ trait Metadata extends js.Object {
 object Metadata {
   @scala.inline
   def apply(modificationTime: Date): Metadata = {
-    val __obj = js.Dynamic.literal(modificationTime = modificationTime)
+    val __obj = js.Dynamic.literal(modificationTime = modificationTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Metadata]
   }

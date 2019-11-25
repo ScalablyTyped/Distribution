@@ -6,7 +6,6 @@ import typings.openpgp.Integer
 import typings.openpgp.openpgpMod.`type`.mpi.MPI
 import typings.openpgp.openpgpMod.`type`.oid.OID
 import typings.openpgp.openpgpMod.crypto.public_key.elliptic.curve.Curve
-import typings.openpgp.openpgpMod.enums.hash
 import typings.openpgp.openpgpMod.enums.symmetric
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -123,7 +122,7 @@ object public_key extends js.Object {
       def decrypt(
         oid: OID,
         cipher_algo: symmetric,
-        hash_algo: hash,
+        hash_algo: typings.openpgp.openpgpMod.enums.hash,
         V: Uint8Array,
         C: Uint8Array,
         d: Uint8Array,
@@ -141,7 +140,14 @@ object public_key extends js.Object {
         * @param fingerprint Recipient fingerprint
         * @returns Returns public part of ephemeral key and encoded session key
         */
-      def encrypt(oid: OID, cipher_algo: symmetric, hash_algo: hash, m: MPI, Q: Uint8Array, fingerprint: String): js.Promise[Anon_C] = js.native
+      def encrypt(
+        oid: OID,
+        cipher_algo: symmetric,
+        hash_algo: typings.openpgp.openpgpMod.enums.hash,
+        m: MPI,
+        Q: Uint8Array,
+        fingerprint: String
+      ): js.Promise[Anon_C] = js.native
       /**
         * Generate ECDHE secret from private key and public part of ephemeral key
         * @param curve Elliptic curve object
@@ -172,7 +178,13 @@ object public_key extends js.Object {
         * @param hashed The hashed message
         * @returns Signature of the message
         */
-      def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = js.native
+      def sign(
+        oid: OID,
+        hash_algo: typings.openpgp.openpgpMod.enums.hash,
+        m: Uint8Array,
+        d: Uint8Array,
+        hashed: Uint8Array
+      ): js.Object = js.native
       /**
         * Verifies if a signature is valid for a message
         * @param oid Elliptic curve object identifier
@@ -183,7 +195,14 @@ object public_key extends js.Object {
         * @param hashed The hashed message
         * @returns
         */
-      def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = js.native
+      def verify(
+        oid: OID,
+        hash_algo: typings.openpgp.openpgpMod.enums.hash,
+        signature: js.Object,
+        m: Uint8Array,
+        Q: Uint8Array,
+        hashed: Uint8Array
+      ): Boolean = js.native
     }
     
     @js.native
@@ -197,7 +216,13 @@ object public_key extends js.Object {
         * @param hashed The hashed message
         * @returns Signature of the message
         */
-      def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = js.native
+      def sign(
+        oid: OID,
+        hash_algo: typings.openpgp.openpgpMod.enums.hash,
+        m: Uint8Array,
+        d: Uint8Array,
+        hashed: Uint8Array
+      ): js.Object = js.native
       /**
         * Verifies if a signature is valid for a message
         * @param oid Elliptic curve object identifier
@@ -208,7 +233,14 @@ object public_key extends js.Object {
         * @param hashed The hashed message
         * @returns
         */
-      def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = js.native
+      def verify(
+        oid: OID,
+        hash_algo: typings.openpgp.openpgpMod.enums.hash,
+        signature: js.Object,
+        m: Uint8Array,
+        Q: Uint8Array,
+        hashed: Uint8Array
+      ): Boolean = js.native
     }
     
     @js.native

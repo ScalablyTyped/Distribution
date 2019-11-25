@@ -15,8 +15,8 @@ object Context {
   @scala.inline
   def apply(session: Session = null, sessionOptions: opts = null): Context = {
     val __obj = js.Dynamic.literal()
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (sessionOptions != null) __obj.updateDynamic("sessionOptions")(sessionOptions)
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (sessionOptions != null) __obj.updateDynamic("sessionOptions")(sessionOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

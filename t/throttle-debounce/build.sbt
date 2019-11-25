@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "throttle-debounce"
-version := "2.1-dt-20190826Z-14dee7"
+version := "2.1-dt-20190826Z-414907"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

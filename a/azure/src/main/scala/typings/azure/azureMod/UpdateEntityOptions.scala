@@ -17,8 +17,8 @@ object UpdateEntityOptions {
     timeoutIntervalInMs: Int | Double = null
   ): UpdateEntityOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkEtag)) __obj.updateDynamic("checkEtag")(checkEtag)
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)
+    if (!js.isUndefined(checkEtag)) __obj.updateDynamic("checkEtag")(checkEtag.asInstanceOf[js.Any])
+    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
     if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
     if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEntityOptions]

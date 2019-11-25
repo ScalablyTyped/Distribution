@@ -18,11 +18,11 @@ object PaymentDetailsInit {
     modifiers: js.Array[PaymentDetailsModifier] = null,
     shippingOptions: js.Array[PaymentShippingOption] = null
   ): PaymentDetailsInit = {
-    val __obj = js.Dynamic.literal(total = total)
-    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions)
+    val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
+    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
+    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetailsInit]
   }
 }

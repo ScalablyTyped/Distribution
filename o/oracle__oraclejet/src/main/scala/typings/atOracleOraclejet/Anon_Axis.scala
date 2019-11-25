@@ -34,17 +34,17 @@ object Anon_Axis {
     transformOrigin: String = null
   ): Anon_Axis = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (backfaceVisibility != null) __obj.updateDynamic("backfaceVisibility")(backfaceVisibility)
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle)
-    if (flipTarget != null) __obj.updateDynamic("flipTarget")(flipTarget)
-    if (persist != null) __obj.updateDynamic("persist")(persist)
-    if (perspective != null) __obj.updateDynamic("perspective")(perspective)
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle)
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction)
-    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (backfaceVisibility != null) __obj.updateDynamic("backfaceVisibility")(backfaceVisibility.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (flipTarget != null) __obj.updateDynamic("flipTarget")(flipTarget.asInstanceOf[js.Any])
+    if (persist != null) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
+    if (perspective != null) __obj.updateDynamic("perspective")(perspective.asInstanceOf[js.Any])
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
+    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Axis]
   }
 }

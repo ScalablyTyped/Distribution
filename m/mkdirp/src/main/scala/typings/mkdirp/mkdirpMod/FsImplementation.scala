@@ -14,7 +14,7 @@ trait FsImplementation extends js.Object {
 object FsImplementation {
   @scala.inline
   def apply(mkdir: Typeofmkdir, stat: Typeofstat): FsImplementation = {
-    val __obj = js.Dynamic.literal(mkdir = mkdir, stat = stat)
+    val __obj = js.Dynamic.literal(mkdir = mkdir.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FsImplementation]
   }

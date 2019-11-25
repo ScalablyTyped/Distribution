@@ -18,7 +18,7 @@ trait FacetSearchHit extends js.Object {
 object FacetSearchHit {
   @scala.inline
   def apply(count: Double, highlighted: String, isRefined: Boolean, value: String): FacetSearchHit = {
-    val __obj = js.Dynamic.literal(count = count, highlighted = highlighted, isRefined = isRefined, value = value)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], highlighted = highlighted.asInstanceOf[js.Any], isRefined = isRefined.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FacetSearchHit]
   }

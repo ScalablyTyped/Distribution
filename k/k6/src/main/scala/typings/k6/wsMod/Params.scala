@@ -16,8 +16,8 @@ object Params {
   @scala.inline
   def apply(headers: StringDictionary[String] = null, tags: StringDictionary[String] = null): Params = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

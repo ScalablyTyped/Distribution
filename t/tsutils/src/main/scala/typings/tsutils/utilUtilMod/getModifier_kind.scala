@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object getModifier_kind extends js.Object {
   def apply(
     node: Node,
-    kind: /* import warning: ImportType.apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any
+    kind: /* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any
   ): js.UndefOr[Modifier] = js.native
 }
 

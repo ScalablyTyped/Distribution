@@ -13,8 +13,8 @@ object UpdateProfile {
   @scala.inline
   def apply(displayName: String = null, photoURL: String = null): UpdateProfile = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProfile]
   }
 }

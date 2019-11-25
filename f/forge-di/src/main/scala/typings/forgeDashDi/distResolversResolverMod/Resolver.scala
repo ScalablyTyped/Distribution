@@ -27,7 +27,7 @@ object Resolver {
     resolve: (typings.forgeDashDi.distFrameworkContextMod.default, Arguments) => js.Any,
     resolveDependencies: (typings.forgeDashDi.distFrameworkContextMod.default, js.Array[Dependency], Arguments) => js.Any
   ): Resolver = {
-    val __obj = js.Dynamic.literal(binding = binding, dependencies = dependencies, forge = forge, resolve = js.Any.fromFunction2(resolve), resolveDependencies = js.Any.fromFunction3(resolveDependencies))
+    val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], forge = forge.asInstanceOf[js.Any], resolve = js.Any.fromFunction2(resolve), resolveDependencies = js.Any.fromFunction3(resolveDependencies))
   
     __obj.asInstanceOf[Resolver]
   }

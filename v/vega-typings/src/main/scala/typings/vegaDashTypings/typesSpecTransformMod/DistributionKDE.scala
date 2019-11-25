@@ -21,9 +21,9 @@ object DistributionKDE {
     bandwidth: Double | SignalRef = null,
     from: DataName = null
   ): DistributionKDE = {
-    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = function)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionKDE]
   }
 }

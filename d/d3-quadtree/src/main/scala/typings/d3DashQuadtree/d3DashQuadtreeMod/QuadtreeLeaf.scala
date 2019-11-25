@@ -23,8 +23,8 @@ object QuadtreeLeaf {
   @scala.inline
   def apply[T](data: T, length: js.UndefOr[scala.Nothing] = js.undefined, next: QuadtreeLeaf[T] = null): QuadtreeLeaf[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length)
-    if (next != null) __obj.updateDynamic("next")(next)
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuadtreeLeaf[T]]
   }
 }

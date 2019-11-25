@@ -29,8 +29,8 @@ trait CriticalSound extends js.Object {
 object CriticalSound {
   @scala.inline
   def apply(name: String, critical: js.UndefOr[Boolean] = js.undefined, volume: Int | Double = null): CriticalSound = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical.asInstanceOf[js.Any])
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[CriticalSound]
   }

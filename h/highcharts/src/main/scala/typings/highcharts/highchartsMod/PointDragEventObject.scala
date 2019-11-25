@@ -37,8 +37,8 @@ object PointDragEventObject {
     target: Point,
     `type`: drag
   ): PointDragEventObject = {
-    val __obj = js.Dynamic.literal(newPoints = newPoints, origin = origin, preventDefault = preventDefault, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(newPoints = newPoints.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointDragEventObject]
   }
 }

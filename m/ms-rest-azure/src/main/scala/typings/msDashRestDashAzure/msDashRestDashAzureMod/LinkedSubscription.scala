@@ -47,7 +47,7 @@ object LinkedSubscription {
     tenantId: String,
     user: LinkedUser
   ): LinkedSubscription = {
-    val __obj = js.Dynamic.literal(authorizationSource = authorizationSource, environmentName = environmentName, id = id, name = name, state = state, tenantId = tenantId, user = user)
+    val __obj = js.Dynamic.literal(authorizationSource = authorizationSource.asInstanceOf[js.Any], environmentName = environmentName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tenantId = tenantId.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LinkedSubscription]
   }

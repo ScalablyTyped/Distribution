@@ -25,7 +25,7 @@ object NightwatchAssertion {
     value: U => T,
     failure: /* result */ U => Boolean = null
   ): NightwatchAssertion[T, U] = {
-    val __obj = js.Dynamic.literal(api = api, command = js.Any.fromFunction1(command), expected = expected.asInstanceOf[js.Any], message = message, pass = js.Any.fromFunction1(pass), value = js.Any.fromFunction1(value))
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], command = js.Any.fromFunction1(command), expected = expected.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pass = js.Any.fromFunction1(pass), value = js.Any.fromFunction1(value))
     if (failure != null) __obj.updateDynamic("failure")(js.Any.fromFunction1(failure))
     __obj.asInstanceOf[NightwatchAssertion[T, U]]
   }

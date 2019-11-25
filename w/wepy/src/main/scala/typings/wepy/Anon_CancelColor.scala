@@ -25,12 +25,12 @@ object Anon_CancelColor {
     confirmText: String = null,
     showCancel: js.UndefOr[Boolean] = js.undefined
   ): Anon_CancelColor = {
-    val __obj = js.Dynamic.literal(content = content, title = title)
-    if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor)
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
-    if (confirmColor != null) __obj.updateDynamic("confirmColor")(confirmColor)
-    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText)
-    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor.asInstanceOf[js.Any])
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
+    if (confirmColor != null) __obj.updateDynamic("confirmColor")(confirmColor.asInstanceOf[js.Any])
+    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CancelColor]
   }
 }

@@ -43,18 +43,18 @@ object BrowserPlatformDetails {
     versionKey: String = null
   ): BrowserPlatformDetails = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (defaultLocation != null) __obj.updateDynamic("defaultLocation")(defaultLocation)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (defaultLocation != null) __obj.updateDynamic("defaultLocation")(defaultLocation.asInstanceOf[js.Any])
     if (getCommand != null) __obj.updateDynamic("getCommand")(js.Any.fromFunction3(getCommand))
-    if (imageName != null) __obj.updateDynamic("imageName")(imageName)
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
-    if (!js.isUndefined(opensTab)) __obj.updateDynamic("opensTab")(opensTab)
-    if (pathQuery != null) __obj.updateDynamic("pathQuery")(pathQuery)
-    if (plistPath != null) __obj.updateDynamic("plistPath")(plistPath)
-    if (process != null) __obj.updateDynamic("process")(process)
-    if (versionKey != null) __obj.updateDynamic("versionKey")(versionKey)
+    if (imageName != null) __obj.updateDynamic("imageName")(imageName.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (!js.isUndefined(opensTab)) __obj.updateDynamic("opensTab")(opensTab.asInstanceOf[js.Any])
+    if (pathQuery != null) __obj.updateDynamic("pathQuery")(pathQuery.asInstanceOf[js.Any])
+    if (plistPath != null) __obj.updateDynamic("plistPath")(plistPath.asInstanceOf[js.Any])
+    if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
+    if (versionKey != null) __obj.updateDynamic("versionKey")(versionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserPlatformDetails]
   }
 }

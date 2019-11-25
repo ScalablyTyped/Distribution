@@ -32,8 +32,8 @@ object VertexAttributes {
     propertyIsEnumerable: PropertyKey => Boolean,
     normal: Float32Array = null
   ): VertexAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), position = position, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (normal != null) __obj.updateDynamic("normal")(normal)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), position = position.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
     __obj.asInstanceOf[VertexAttributes]
   }
 }

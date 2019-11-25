@@ -26,7 +26,7 @@ object PDFAnnotationData {
     rect: js.Array[Double],
     subtype: String
   ): PDFAnnotationData = {
-    val __obj = js.Dynamic.literal(annotationFlags = annotationFlags, borderWidth = borderWidth, color = color, hasAppearance = hasAppearance, rect = rect, subtype = subtype)
+    val __obj = js.Dynamic.literal(annotationFlags = annotationFlags.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], hasAppearance = hasAppearance.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PDFAnnotationData]
   }

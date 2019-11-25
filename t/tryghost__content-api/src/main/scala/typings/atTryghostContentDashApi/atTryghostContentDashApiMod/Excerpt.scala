@@ -13,8 +13,8 @@ object Excerpt {
   @scala.inline
   def apply(custom_excerpt: String = null, excerpt: String = null): Excerpt = {
     val __obj = js.Dynamic.literal()
-    if (custom_excerpt != null) __obj.updateDynamic("custom_excerpt")(custom_excerpt)
-    if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt)
+    if (custom_excerpt != null) __obj.updateDynamic("custom_excerpt")(custom_excerpt.asInstanceOf[js.Any])
+    if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Excerpt]
   }
 }

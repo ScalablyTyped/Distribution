@@ -13,9 +13,9 @@ trait FirstLevelDependency extends js.Object {
 object FirstLevelDependency {
   @scala.inline
   def apply(version: String, dependencies: Dependency = null, resolved: String = null): FirstLevelDependency = {
-    val __obj = js.Dynamic.literal(version = version)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (resolved != null) __obj.updateDynamic("resolved")(resolved)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (resolved != null) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirstLevelDependency]
   }
 }

@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait ImageSizeType extends js.Object
 
+object ImageSizeType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def compressed: typings.baiduDashApp.baiduDashAppStrings.compressed = this.cast("compressed")
+  @scala.inline
+  def original: typings.baiduDashApp.baiduDashAppStrings.original = this.cast("original")
+}
+

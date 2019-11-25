@@ -15,9 +15,9 @@ trait VectorSegment extends js.Object {
 object VectorSegment {
   @scala.inline
   def apply(end: Double, start: Double, tangentEnd: Vector = null, tangentStart: Vector = null): VectorSegment = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
-    if (tangentEnd != null) __obj.updateDynamic("tangentEnd")(tangentEnd)
-    if (tangentStart != null) __obj.updateDynamic("tangentStart")(tangentStart)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    if (tangentEnd != null) __obj.updateDynamic("tangentEnd")(tangentEnd.asInstanceOf[js.Any])
+    if (tangentStart != null) __obj.updateDynamic("tangentStart")(tangentStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorSegment]
   }
 }

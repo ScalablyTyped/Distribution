@@ -13,6 +13,15 @@ trait Pagesize extends js.Object {
   var width: Double
 }
 
+object Pagesize {
+  @scala.inline
+  def apply(height: Double, orientation: PageOrientation, width: Double): Pagesize = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Pagesize]
+  }
+}
+
 @JSImport("pdfmake/build/pdfmake", "PageSize")
 @js.native
 object PageSize extends js.Object {
@@ -210,14 +219,5 @@ object PageSize extends js.Object {
   /* "TABLOID" */ val TABLOID: typings.pdfmake.buildPdfmakeMod.PageSize.TABLOID with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PageSize with String] = js.native
-}
-
-object Pagesize {
-  @scala.inline
-  def apply(height: Double, orientation: PageOrientation, width: Double): Pagesize = {
-    val __obj = js.Dynamic.literal(height = height, orientation = orientation, width = width)
-  
-    __obj.asInstanceOf[Pagesize]
-  }
 }
 

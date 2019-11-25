@@ -105,13 +105,13 @@ object Options {
     updater: /* item */ String => String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (addItem != null) __obj.updateDynamic("addItem")(addItem)
+    if (addItem != null) __obj.updateDynamic("addItem")(addItem.asInstanceOf[js.Any])
     if (afterSelect != null) __obj.updateDynamic("afterSelect")(js.Any.fromFunction1(afterSelect))
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
-    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (displayText != null) __obj.updateDynamic("displayText")(js.Any.fromFunction1(displayText))
-    if (!js.isUndefined(fitToElement)) __obj.updateDynamic("fitToElement")(fitToElement)
+    if (!js.isUndefined(fitToElement)) __obj.updateDynamic("fitToElement")(fitToElement.asInstanceOf[js.Any])
     if (highlighter != null) __obj.updateDynamic("highlighter")(js.Any.fromFunction1(highlighter))
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction1(matcher))

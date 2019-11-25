@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
 import typings.dojo.dojoStrings.readOnly
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -35,6 +34,14 @@ class CheckBox () extends ToggleButton {
   @JSName("set")
   def set_readOnly(property: readOnly, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_readOnly(property: readOnly, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_readOnly(
+    property: readOnly,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

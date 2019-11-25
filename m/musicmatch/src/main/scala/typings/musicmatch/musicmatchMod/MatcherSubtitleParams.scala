@@ -20,8 +20,8 @@ object MatcherSubtitleParams {
     val __obj = js.Dynamic.literal()
     if (f_subtitle_length != null) __obj.updateDynamic("f_subtitle_length")(f_subtitle_length.asInstanceOf[js.Any])
     if (f_subtitle_length_max_deviation != null) __obj.updateDynamic("f_subtitle_length_max_deviation")(f_subtitle_length_max_deviation.asInstanceOf[js.Any])
-    if (q_artist != null) __obj.updateDynamic("q_artist")(q_artist)
-    if (q_track != null) __obj.updateDynamic("q_track")(q_track)
+    if (q_artist != null) __obj.updateDynamic("q_artist")(q_artist.asInstanceOf[js.Any])
+    if (q_track != null) __obj.updateDynamic("q_track")(q_track.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatcherSubtitleParams]
   }
 }

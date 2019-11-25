@@ -16,5 +16,14 @@ import scala.scalajs.js.annotation._
   - typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_request
   - typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_reply
 */
-trait ControlMessageType extends MessageType
+trait ControlMessageType extends js.Object
+
+object ControlMessageType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def debug_reply: typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_reply = this.cast("debug_reply")
+  @scala.inline
+  def debug_request: typings.atJupyterlabServices.atJupyterlabServicesStrings.debug_request = this.cast("debug_request")
+}
 

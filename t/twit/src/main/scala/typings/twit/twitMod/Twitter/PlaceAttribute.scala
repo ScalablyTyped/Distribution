@@ -29,8 +29,8 @@ object PlaceAttribute {
     twitter: String,
     url: String
   ): PlaceAttribute = {
-    val __obj = js.Dynamic.literal(iso3 = iso3, locality = locality, phone = phone, postal_code = postal_code, region = region, street_address = street_address, twitter = twitter, url = url)
-    __obj.updateDynamic("app:id")(`app:id`)
+    val __obj = js.Dynamic.literal(iso3 = iso3.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], postal_code = postal_code.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], street_address = street_address.asInstanceOf[js.Any], twitter = twitter.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("app:id")(`app:id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAttribute]
   }
 }

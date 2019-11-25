@@ -14,7 +14,7 @@ object Location {
   def apply(index: Int | Double = null, segmentId: String = null): Location = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId)
+    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
 }

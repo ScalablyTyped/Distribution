@@ -20,9 +20,9 @@ object HtmlOptions {
     rules: js.Array[Rule] = null
   ): HtmlOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultBlock != null) __obj.updateDynamic("defaultBlock")(defaultBlock)
+    if (defaultBlock != null) __obj.updateDynamic("defaultBlock")(defaultBlock.asInstanceOf[js.Any])
     if (parseHtml != null) __obj.updateDynamic("parseHtml")(js.Any.fromFunction1(parseHtml))
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlOptions]
   }
 }

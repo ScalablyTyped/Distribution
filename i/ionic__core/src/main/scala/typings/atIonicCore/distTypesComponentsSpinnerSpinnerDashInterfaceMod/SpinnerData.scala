@@ -27,12 +27,12 @@ object SpinnerData {
     y1: Int | Double = null,
     y2: Int | Double = null
   ): SpinnerData = {
-    val __obj = js.Dynamic.literal(style = style)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform)
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
     if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerData]

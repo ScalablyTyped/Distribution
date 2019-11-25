@@ -14,7 +14,7 @@ trait Anon_Base extends js.Object {
 object Anon_Base {
   @scala.inline
   def apply(base: CustomBase, palette: CustomPalette): Anon_Base = {
-    val __obj = js.Dynamic.literal(base = base, palette = palette)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Base]
   }

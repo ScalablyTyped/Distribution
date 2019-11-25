@@ -14,7 +14,7 @@ object Options {
   @scala.inline
   def apply(algorithm: String = null, iterations: Int | Double = null, saltLength: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
     if (saltLength != null) __obj.updateDynamic("saltLength")(saltLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

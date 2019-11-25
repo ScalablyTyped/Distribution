@@ -20,8 +20,8 @@ object Context {
     sessionSave: js.UndefOr[Boolean] = js.undefined
   ): Context = {
     val __obj = js.Dynamic.literal(regenerateSession = js.Any.fromFunction0(regenerateSession))
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (!js.isUndefined(sessionSave)) __obj.updateDynamic("sessionSave")(sessionSave)
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionSave)) __obj.updateDynamic("sessionSave")(sessionSave.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DeviceManagementExchangeConnectorSyncType extends js.Object
 
+object DeviceManagementExchangeConnectorSyncType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def deltaSync: typings.microsoftDashGraph.microsoftDashGraphStrings.deltaSync = this.cast("deltaSync")
+  @scala.inline
+  def fullSync: typings.microsoftDashGraph.microsoftDashGraphStrings.fullSync = this.cast("fullSync")
+}
+

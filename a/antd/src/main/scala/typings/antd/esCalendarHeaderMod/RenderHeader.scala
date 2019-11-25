@@ -20,8 +20,8 @@ object RenderHeader {
     value: Moment,
     onChange: /* value */ Moment => Unit = null
   ): RenderHeader = {
-    val __obj = js.Dynamic.literal(onTypeChange = js.Any.fromFunction1(onTypeChange), value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(onTypeChange = js.Any.fromFunction1(onTypeChange), value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[RenderHeader]
   }

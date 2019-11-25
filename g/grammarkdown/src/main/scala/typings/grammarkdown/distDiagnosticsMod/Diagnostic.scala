@@ -13,8 +13,8 @@ trait Diagnostic extends js.Object {
 object Diagnostic {
   @scala.inline
   def apply(code: Double, message: String, warning: js.UndefOr[Boolean] = js.undefined): Diagnostic = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
-    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostic]
   }
 }

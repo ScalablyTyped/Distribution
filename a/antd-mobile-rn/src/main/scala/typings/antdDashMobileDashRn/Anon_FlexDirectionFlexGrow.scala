@@ -12,7 +12,7 @@ trait Anon_FlexDirectionFlexGrow extends js.Object {
 object Anon_FlexDirectionFlexGrow {
   @scala.inline
   def apply(flexDirection: String, flexGrow: Double): Anon_FlexDirectionFlexGrow = {
-    val __obj = js.Dynamic.literal(flexDirection = flexDirection, flexGrow = flexGrow)
+    val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FlexDirectionFlexGrow]
   }

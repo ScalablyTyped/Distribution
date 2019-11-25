@@ -55,13 +55,13 @@ object StrictAccordionAccordionProps {
   ): StrictAccordionAccordionProps = {
     val __obj = js.Dynamic.literal()
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultActiveIndex != null) __obj.updateDynamic("defaultActiveIndex")(defaultActiveIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
     if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction2(onTitleClick))
-    if (panels != null) __obj.updateDynamic("panels")(panels)
+    if (panels != null) __obj.updateDynamic("panels")(panels.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictAccordionAccordionProps]
   }
 }

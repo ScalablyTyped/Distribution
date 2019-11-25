@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object aliasMethod
   extends TopLevel[
       js.Function1[
-        /* methodName */ String, 
+        /* methodName */ java.lang.String, 
         typings.atEmberObject.computedMod.ComputedProperty[js.Any, js.Any]
       ]
     ]

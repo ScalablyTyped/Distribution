@@ -34,7 +34,7 @@ object IProps {
     voiceover: IVoiceover,
     beforeDrag: /* params */ Anon_Elements => Unit = null
   ): IProps[Value] = {
-    val __obj = js.Dynamic.literal(lockVertically = lockVertically, onChange = js.Any.fromFunction1(onChange), removableByMove = removableByMove, renderItem = js.Any.fromFunction1(renderItem), renderList = js.Any.fromFunction1(renderList), transitionDuration = transitionDuration, values = values, voiceover = voiceover)
+    val __obj = js.Dynamic.literal(lockVertically = lockVertically.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), removableByMove = removableByMove.asInstanceOf[js.Any], renderItem = js.Any.fromFunction1(renderItem), renderList = js.Any.fromFunction1(renderList), transitionDuration = transitionDuration.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], voiceover = voiceover.asInstanceOf[js.Any])
     if (beforeDrag != null) __obj.updateDynamic("beforeDrag")(js.Any.fromFunction1(beforeDrag))
     __obj.asInstanceOf[IProps[Value]]
   }

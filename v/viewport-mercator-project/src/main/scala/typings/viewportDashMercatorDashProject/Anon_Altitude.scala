@@ -24,9 +24,9 @@ object Anon_Altitude {
     center: CoordinatesZ = null,
     flipY: js.UndefOr[Boolean] = js.undefined
   ): Anon_Altitude = {
-    val __obj = js.Dynamic.literal(altitude = altitude, bearing = bearing, height = height, pitch = pitch)
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)
+    val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], bearing = bearing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Altitude]
   }
 }

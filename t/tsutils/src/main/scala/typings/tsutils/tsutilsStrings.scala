@@ -43,7 +43,7 @@ object tsutilsStrings {
   sealed trait stripInternal extends js.Object
   
   @js.native
-  sealed trait symbol extends js.Object
+  sealed trait symbol_ extends js.Object
   
   @scala.inline
   def BACKSLASHn: BACKSLASHn = "\n".asInstanceOf[BACKSLASHn]
@@ -70,6 +70,6 @@ object tsutilsStrings {
   @scala.inline
   def stripInternal: stripInternal = "stripInternal".asInstanceOf[stripInternal]
   @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
+  def symbol_ : symbol_ = "symbol".asInstanceOf[symbol_]
 }
 

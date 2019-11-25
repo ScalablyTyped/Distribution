@@ -16,7 +16,7 @@ trait Pronunciation extends js.Object {
 object Pronunciation {
   @scala.inline
   def apply(pronunciation: String): Pronunciation = {
-    val __obj = js.Dynamic.literal(pronunciation = pronunciation)
+    val __obj = js.Dynamic.literal(pronunciation = pronunciation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Pronunciation]
   }

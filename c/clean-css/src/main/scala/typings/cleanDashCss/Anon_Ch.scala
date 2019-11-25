@@ -57,15 +57,15 @@ object Anon_Ch {
     vmin: js.UndefOr[Boolean] = js.undefined
   ): Anon_Ch = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ch)) __obj.updateDynamic("ch")(ch)
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in)
-    if (!js.isUndefined(pc)) __obj.updateDynamic("pc")(pc)
-    if (!js.isUndefined(pt)) __obj.updateDynamic("pt")(pt)
-    if (!js.isUndefined(rem)) __obj.updateDynamic("rem")(rem)
-    if (!js.isUndefined(vh)) __obj.updateDynamic("vh")(vh)
-    if (!js.isUndefined(vm)) __obj.updateDynamic("vm")(vm)
-    if (!js.isUndefined(vmax)) __obj.updateDynamic("vmax")(vmax)
-    if (!js.isUndefined(vmin)) __obj.updateDynamic("vmin")(vmin)
+    if (!js.isUndefined(ch)) __obj.updateDynamic("ch")(ch.asInstanceOf[js.Any])
+    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
+    if (!js.isUndefined(pc)) __obj.updateDynamic("pc")(pc.asInstanceOf[js.Any])
+    if (!js.isUndefined(pt)) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
+    if (!js.isUndefined(rem)) __obj.updateDynamic("rem")(rem.asInstanceOf[js.Any])
+    if (!js.isUndefined(vh)) __obj.updateDynamic("vh")(vh.asInstanceOf[js.Any])
+    if (!js.isUndefined(vm)) __obj.updateDynamic("vm")(vm.asInstanceOf[js.Any])
+    if (!js.isUndefined(vmax)) __obj.updateDynamic("vmax")(vmax.asInstanceOf[js.Any])
+    if (!js.isUndefined(vmin)) __obj.updateDynamic("vmin")(vmin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ch]
   }
 }

@@ -31,14 +31,14 @@ object ConditionEvidence {
     modifierExtension: js.Array[Extension] = null
   ): ConditionEvidence = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionEvidence]
   }
 }

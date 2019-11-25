@@ -18,7 +18,7 @@ trait GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject extends js.Object {
 object GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject {
   @scala.inline
   def apply(count: String, id: String): GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject = {
-    val __obj = js.Dynamic.literal(count = count, id = id)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]
   }

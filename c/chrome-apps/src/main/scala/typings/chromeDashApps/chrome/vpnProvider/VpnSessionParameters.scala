@@ -73,10 +73,10 @@ object VpnSessionParameters {
     domainSearch: js.Array[String] = null,
     mtu: String = null
   ): VpnSessionParameters = {
-    val __obj = js.Dynamic.literal(address = address, dnsServers = dnsServers, exclusionList = exclusionList, inclusionList = inclusionList, reconnect = reconnect)
-    if (broadcastAddress != null) __obj.updateDynamic("broadcastAddress")(broadcastAddress)
-    if (domainSearch != null) __obj.updateDynamic("domainSearch")(domainSearch)
-    if (mtu != null) __obj.updateDynamic("mtu")(mtu)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], dnsServers = dnsServers.asInstanceOf[js.Any], exclusionList = exclusionList.asInstanceOf[js.Any], inclusionList = inclusionList.asInstanceOf[js.Any], reconnect = reconnect.asInstanceOf[js.Any])
+    if (broadcastAddress != null) __obj.updateDynamic("broadcastAddress")(broadcastAddress.asInstanceOf[js.Any])
+    if (domainSearch != null) __obj.updateDynamic("domainSearch")(domainSearch.asInstanceOf[js.Any])
+    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpnSessionParameters]
   }
 }

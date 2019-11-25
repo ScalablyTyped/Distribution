@@ -53,7 +53,7 @@ object Typeofhistory {
     onVisited: WebExtEvent[js.Function1[/* result */ HistoryItem, Unit]],
     search: Anon_EndTime => js.Promise[js.Array[HistoryItem]]
   ): Typeofhistory = {
-    val __obj = js.Dynamic.literal(addUrl = js.Any.fromFunction1(addUrl), deleteAll = js.Any.fromFunction0(deleteAll), deleteRange = js.Any.fromFunction1(deleteRange), deleteUrl = js.Any.fromFunction1(deleteUrl), getVisits = js.Any.fromFunction1(getVisits), onTitleChanged = onTitleChanged, onVisitRemoved = onVisitRemoved, onVisited = onVisited, search = js.Any.fromFunction1(search))
+    val __obj = js.Dynamic.literal(addUrl = js.Any.fromFunction1(addUrl), deleteAll = js.Any.fromFunction0(deleteAll), deleteRange = js.Any.fromFunction1(deleteRange), deleteUrl = js.Any.fromFunction1(deleteUrl), getVisits = js.Any.fromFunction1(getVisits), onTitleChanged = onTitleChanged.asInstanceOf[js.Any], onVisitRemoved = onVisitRemoved.asInstanceOf[js.Any], onVisited = onVisited.asInstanceOf[js.Any], search = js.Any.fromFunction1(search))
   
     __obj.asInstanceOf[Typeofhistory]
   }

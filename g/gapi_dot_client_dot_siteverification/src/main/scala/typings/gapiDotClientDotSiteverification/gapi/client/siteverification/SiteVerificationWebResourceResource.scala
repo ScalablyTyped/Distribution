@@ -18,9 +18,9 @@ object SiteVerificationWebResourceResource {
   @scala.inline
   def apply(id: String = null, owners: js.Array[String] = null, site: Anon_Identifier = null): SiteVerificationWebResourceResource = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (owners != null) __obj.updateDynamic("owners")(owners)
-    if (site != null) __obj.updateDynamic("site")(site)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
+    if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteVerificationWebResourceResource]
   }
 }

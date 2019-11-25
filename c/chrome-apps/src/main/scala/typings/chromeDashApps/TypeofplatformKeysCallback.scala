@@ -86,7 +86,7 @@ object TypeofplatformKeysCallback {
     subtleCrypto: () => SubtleCrypto,
     verifyTLSServerCertificate: (VerificationDetails, js.Function1[/* result */ VerificationResult, Unit]) => Unit
   ): TypeofplatformKeysCallback = {
-    val __obj = js.Dynamic.literal(ClientCertificateType = ClientCertificateType, getKeyPair = js.Any.fromFunction3(getKeyPair), selectClientCertificates = js.Any.fromFunction2(selectClientCertificates), subtleCrypto = js.Any.fromFunction0(subtleCrypto), verifyTLSServerCertificate = js.Any.fromFunction2(verifyTLSServerCertificate))
+    val __obj = js.Dynamic.literal(ClientCertificateType = ClientCertificateType.asInstanceOf[js.Any], getKeyPair = js.Any.fromFunction3(getKeyPair), selectClientCertificates = js.Any.fromFunction2(selectClientCertificates), subtleCrypto = js.Any.fromFunction0(subtleCrypto), verifyTLSServerCertificate = js.Any.fromFunction2(verifyTLSServerCertificate))
   
     __obj.asInstanceOf[TypeofplatformKeysCallback]
   }

@@ -26,9 +26,9 @@ object NumericMenuExposed {
     id: String = null,
     transformItems: /* repeated */ js.Any => _ = null
   ): NumericMenuExposed = {
-    val __obj = js.Dynamic.literal(attribute = attribute, items = items)
-    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (transformItems != null) __obj.updateDynamic("transformItems")(js.Any.fromFunction1(transformItems))
     __obj.asInstanceOf[NumericMenuExposed]
   }

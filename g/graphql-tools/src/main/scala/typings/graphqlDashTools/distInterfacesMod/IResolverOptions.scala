@@ -33,7 +33,7 @@ object IResolverOptions {
     val __obj = js.Dynamic.literal()
     if (__isTypeOf != null) __obj.updateDynamic("__isTypeOf")(js.Any.fromFunction3(__isTypeOf))
     if (__resolveType != null) __obj.updateDynamic("__resolveType")(js.Any.fromFunction4(__resolveType))
-    if (fragment != null) __obj.updateDynamic("fragment")(fragment)
+    if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction4(resolve))
     if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction4(subscribe))
     __obj.asInstanceOf[IResolverOptions[TSource, TContext, TArgs]]

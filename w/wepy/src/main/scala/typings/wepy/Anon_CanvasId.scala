@@ -15,7 +15,7 @@ trait Anon_CanvasId extends js.Object {
 object Anon_CanvasId {
   @scala.inline
   def apply(canvasId: String, height: Double, width: Double, x: Double, y: Double): Anon_CanvasId = {
-    val __obj = js.Dynamic.literal(canvasId = canvasId, height = height, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(canvasId = canvasId.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CanvasId]
   }

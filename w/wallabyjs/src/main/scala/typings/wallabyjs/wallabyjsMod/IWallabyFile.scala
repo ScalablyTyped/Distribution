@@ -15,8 +15,8 @@ object IWallabyFile {
   @scala.inline
   def apply(changeExt: String => Unit, rename: String => Unit, content: String = null, path: String = null): IWallabyFile = {
     val __obj = js.Dynamic.literal(changeExt = js.Any.fromFunction1(changeExt), rename = js.Any.fromFunction1(rename))
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallabyFile]
   }
 }

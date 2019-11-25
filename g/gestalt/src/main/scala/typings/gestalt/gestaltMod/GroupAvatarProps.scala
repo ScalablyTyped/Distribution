@@ -21,8 +21,8 @@ object GroupAvatarProps {
     outline: js.UndefOr[Boolean] = js.undefined,
     size: sm | md | lg = null
   ): GroupAvatarProps = {
-    val __obj = js.Dynamic.literal(collaborators = collaborators)
-    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
+    val __obj = js.Dynamic.literal(collaborators = collaborators.asInstanceOf[js.Any])
+    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupAvatarProps]
   }

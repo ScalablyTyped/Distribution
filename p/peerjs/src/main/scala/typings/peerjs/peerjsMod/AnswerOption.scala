@@ -12,7 +12,7 @@ object AnswerOption {
   @scala.inline
   def apply(sdpTransform: js.Function = null): AnswerOption = {
     val __obj = js.Dynamic.literal()
-    if (sdpTransform != null) __obj.updateDynamic("sdpTransform")(sdpTransform)
+    if (sdpTransform != null) __obj.updateDynamic("sdpTransform")(sdpTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerOption]
   }
 }

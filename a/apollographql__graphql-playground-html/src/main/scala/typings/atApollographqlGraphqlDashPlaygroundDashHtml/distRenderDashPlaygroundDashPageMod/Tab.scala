@@ -24,11 +24,11 @@ object Tab {
     responses: js.Array[String] = null,
     variables: String = null
   ): Tab = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint, query = query)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (responses != null) __obj.updateDynamic("responses")(responses)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tab]
   }
 }

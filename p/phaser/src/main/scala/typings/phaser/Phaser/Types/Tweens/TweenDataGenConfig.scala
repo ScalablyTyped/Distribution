@@ -36,7 +36,7 @@ object TweenDataGenConfig {
     repeat: js.Function,
     repeatDelay: js.Function
   ): TweenDataGenConfig = {
-    val __obj = js.Dynamic.literal(delay = delay, duration = duration, hold = hold, repeat = repeat, repeatDelay = repeatDelay)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], hold = hold.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any], repeatDelay = repeatDelay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TweenDataGenConfig]
   }

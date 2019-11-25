@@ -54,11 +54,11 @@ object CellTypeObject {
     validator: typings.handsontable.handsontableMod.Handsontable.validators.Base = null
   ): CellTypeObject = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, GridSettings)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (editor != null) __obj.updateDynamic("editor")(editor)
+    if (GridSettings != null) js.Dynamic.global.Object.assign(__obj, GridSettings)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction7(renderer))
-    if (validator != null) __obj.updateDynamic("validator")(validator)
+    if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellTypeObject]
   }
 }

@@ -25,7 +25,7 @@ trait RuntimeClassStrategyOptions extends js.Object {
 object RuntimeClassStrategyOptions {
   @scala.inline
   def apply(allowedRuntimeClassNames: js.Array[String], defaultRuntimeClassName: String): RuntimeClassStrategyOptions = {
-    val __obj = js.Dynamic.literal(allowedRuntimeClassNames = allowedRuntimeClassNames, defaultRuntimeClassName = defaultRuntimeClassName)
+    val __obj = js.Dynamic.literal(allowedRuntimeClassNames = allowedRuntimeClassNames.asInstanceOf[js.Any], defaultRuntimeClassName = defaultRuntimeClassName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RuntimeClassStrategyOptions]
   }

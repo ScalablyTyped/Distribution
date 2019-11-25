@@ -15,7 +15,7 @@ trait DataTypeInfo extends js.Object {
 object DataTypeInfo {
   @scala.inline
   def apply(code: dataTypes, info: String | DataTypeInfo | js.Array[DataTypeInfo], options: Anon_Frozen): DataTypeInfo = {
-    val __obj = js.Dynamic.literal(code = code, info = info.asInstanceOf[js.Any], options = options)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataTypeInfo]
   }

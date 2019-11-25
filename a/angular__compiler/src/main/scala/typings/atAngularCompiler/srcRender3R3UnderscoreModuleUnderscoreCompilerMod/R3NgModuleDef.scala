@@ -16,8 +16,8 @@ trait R3NgModuleDef extends js.Object {
 object R3NgModuleDef {
   @scala.inline
   def apply(additionalStatements: js.Array[Statement], expression: Expression, `type`: Type): R3NgModuleDef = {
-    val __obj = js.Dynamic.literal(additionalStatements = additionalStatements, expression = expression)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(additionalStatements = additionalStatements.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3NgModuleDef]
   }
 }

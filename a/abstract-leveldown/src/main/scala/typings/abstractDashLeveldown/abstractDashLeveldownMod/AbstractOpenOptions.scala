@@ -18,9 +18,9 @@ object AbstractOpenOptions {
     errorIfExists: js.UndefOr[Boolean] = js.undefined
   ): AbstractOpenOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(createIfMissing)) __obj.updateDynamic("createIfMissing")(createIfMissing)
-    if (!js.isUndefined(errorIfExists)) __obj.updateDynamic("errorIfExists")(errorIfExists)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(createIfMissing)) __obj.updateDynamic("createIfMissing")(createIfMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorIfExists)) __obj.updateDynamic("errorIfExists")(errorIfExists.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractOpenOptions]
   }
 }

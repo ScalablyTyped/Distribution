@@ -13,8 +13,8 @@ trait Anon_LowFrameRateMessage extends js.Object {
 object Anon_LowFrameRateMessage {
   @scala.inline
   def apply(scene: Scene, lowFrameRateMessage: String = null): Anon_LowFrameRateMessage = {
-    val __obj = js.Dynamic.literal(scene = scene)
-    if (lowFrameRateMessage != null) __obj.updateDynamic("lowFrameRateMessage")(lowFrameRateMessage)
+    val __obj = js.Dynamic.literal(scene = scene.asInstanceOf[js.Any])
+    if (lowFrameRateMessage != null) __obj.updateDynamic("lowFrameRateMessage")(lowFrameRateMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LowFrameRateMessage]
   }
 }

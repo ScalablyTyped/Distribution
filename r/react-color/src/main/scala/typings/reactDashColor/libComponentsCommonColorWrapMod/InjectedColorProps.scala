@@ -24,10 +24,10 @@ object InjectedColorProps {
     rgb: RGBColor = null
   ): InjectedColorProps = {
     val __obj = js.Dynamic.literal()
-    if (hex != null) __obj.updateDynamic("hex")(hex)
-    if (hsl != null) __obj.updateDynamic("hsl")(hsl)
+    if (hex != null) __obj.updateDynamic("hex")(hex.asInstanceOf[js.Any])
+    if (hsl != null) __obj.updateDynamic("hsl")(hsl.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (rgb != null) __obj.updateDynamic("rgb")(rgb)
+    if (rgb != null) __obj.updateDynamic("rgb")(rgb.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectedColorProps]
   }
 }

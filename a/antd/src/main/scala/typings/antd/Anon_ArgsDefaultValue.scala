@@ -21,7 +21,7 @@ object Anon_ArgsDefaultValue {
     options: Validator[js.Array[_]],
     value: Requireable[js.Array[_]]
   ): Anon_ArgsDefaultValue = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, onChange = onChange, options = options, value = value)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArgsDefaultValue]
   }

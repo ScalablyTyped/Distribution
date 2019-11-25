@@ -36,9 +36,9 @@ object ListItemEventType {
     sectionIndex: Int | Double = null
   ): ListItemEventType = {
     val __obj = js.Dynamic.literal()
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
     if (itemIndex != null) __obj.updateDynamic("itemIndex")(itemIndex.asInstanceOf[js.Any])
-    if (section != null) __obj.updateDynamic("section")(section)
+    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
     if (sectionIndex != null) __obj.updateDynamic("sectionIndex")(sectionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemEventType]
   }

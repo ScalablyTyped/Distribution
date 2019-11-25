@@ -13,7 +13,7 @@ trait BucketItemFromList extends js.Object {
 object BucketItemFromList {
   @scala.inline
   def apply(creationDate: Date, name: String): BucketItemFromList = {
-    val __obj = js.Dynamic.literal(creationDate = creationDate, name = name)
+    val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BucketItemFromList]
   }

@@ -13,8 +13,8 @@ object OriginProps {
   @scala.inline
   def apply(crossOrigin: String = null, nonce: String = null): OriginProps = {
     val __obj = js.Dynamic.literal()
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginProps]
   }
 }

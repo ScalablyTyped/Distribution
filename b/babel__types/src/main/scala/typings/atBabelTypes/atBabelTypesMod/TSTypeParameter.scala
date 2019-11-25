@@ -28,16 +28,16 @@ object TSTypeParameter {
     start: Int | Double = null,
     trailingComments: js.Array[Comment] = null
   ): TSTypeParameter = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
-    if (default != null) __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSTypeParameter]
   }
 }

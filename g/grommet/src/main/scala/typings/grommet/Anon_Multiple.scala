@@ -12,7 +12,7 @@ object Anon_Multiple {
   @scala.inline
   def apply(multiple: String = null): Anon_Multiple = {
     val __obj = js.Dynamic.literal()
-    if (multiple != null) __obj.updateDynamic("multiple")(multiple)
+    if (multiple != null) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Multiple]
   }
 }

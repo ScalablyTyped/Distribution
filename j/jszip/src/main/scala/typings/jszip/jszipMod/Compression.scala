@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Compression extends js.Object
 
+object Compression {
+  @scala.inline
+  def DEFLATE: typings.jszip.jszipStrings.DEFLATE = this.cast("DEFLATE")
+  @scala.inline
+  def STORE: typings.jszip.jszipStrings.STORE = this.cast("STORE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

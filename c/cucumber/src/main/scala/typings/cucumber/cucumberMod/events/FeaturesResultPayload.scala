@@ -21,7 +21,7 @@ object FeaturesResultPayload {
     strict: Boolean,
     success: Boolean
   ): FeaturesResultPayload = {
-    val __obj = js.Dynamic.literal(duration = duration, scenarioResults = scenarioResults, stepsResults = stepsResults, strict = strict, success = success)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], scenarioResults = scenarioResults.asInstanceOf[js.Any], stepsResults = stepsResults.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeaturesResultPayload]
   }

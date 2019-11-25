@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait OpenDirectionShape extends js.Object
 
+object OpenDirectionShape {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def down: typings.reactDashDates.reactDashDatesStrings.down = this.cast("down")
+  @scala.inline
+  def up: typings.reactDashDates.reactDashDatesStrings.up = this.cast("up")
+}
+

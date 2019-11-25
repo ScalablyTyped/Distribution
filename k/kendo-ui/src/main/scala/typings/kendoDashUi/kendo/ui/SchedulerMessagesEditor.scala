@@ -38,19 +38,19 @@ object SchedulerMessagesEditor {
     title: String = null
   ): SchedulerMessagesEditor = {
     val __obj = js.Dynamic.literal()
-    if (allDayEvent != null) __obj.updateDynamic("allDayEvent")(allDayEvent)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (editorTitle != null) __obj.updateDynamic("editorTitle")(editorTitle)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (endTimezone != null) __obj.updateDynamic("endTimezone")(endTimezone)
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat)
-    if (separateTimezones != null) __obj.updateDynamic("separateTimezones")(separateTimezones)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (startTimezone != null) __obj.updateDynamic("startTimezone")(startTimezone)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
-    if (timezoneEditorButton != null) __obj.updateDynamic("timezoneEditorButton")(timezoneEditorButton)
-    if (timezoneEditorTitle != null) __obj.updateDynamic("timezoneEditorTitle")(timezoneEditorTitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (allDayEvent != null) __obj.updateDynamic("allDayEvent")(allDayEvent.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (editorTitle != null) __obj.updateDynamic("editorTitle")(editorTitle.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (endTimezone != null) __obj.updateDynamic("endTimezone")(endTimezone.asInstanceOf[js.Any])
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    if (separateTimezones != null) __obj.updateDynamic("separateTimezones")(separateTimezones.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (startTimezone != null) __obj.updateDynamic("startTimezone")(startTimezone.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (timezoneEditorButton != null) __obj.updateDynamic("timezoneEditorButton")(timezoneEditorButton.asInstanceOf[js.Any])
+    if (timezoneEditorTitle != null) __obj.updateDynamic("timezoneEditorTitle")(timezoneEditorTitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesEditor]
   }
 }

@@ -13,7 +13,7 @@ trait AsyncMirrorOptions extends js.Object {
 object AsyncMirrorOptions {
   @scala.inline
   def apply(async: FileSystem, sync: FileSystem): AsyncMirrorOptions = {
-    val __obj = js.Dynamic.literal(async = async, sync = sync)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsyncMirrorOptions]
   }

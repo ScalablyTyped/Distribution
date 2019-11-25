@@ -23,9 +23,9 @@ object RequestParameters {
     id: String = null,
     text: String = null
   ): RequestParameters = {
-    val __obj = js.Dynamic.literal(metadata = metadata, name = name, operationKind = operationKind)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operationKind = operationKind.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestParameters]
   }
 }

@@ -23,10 +23,10 @@ object ServerActionSettings {
   @scala.inline
   def apply(download: String = null, fileUpload: String = null, load: String = null, print: String = null): ServerActionSettings = {
     val __obj = js.Dynamic.literal()
-    if (download != null) __obj.updateDynamic("download")(download)
-    if (fileUpload != null) __obj.updateDynamic("fileUpload")(fileUpload)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (print != null) __obj.updateDynamic("print")(print)
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (fileUpload != null) __obj.updateDynamic("fileUpload")(fileUpload.asInstanceOf[js.Any])
+    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (print != null) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerActionSettings]
   }
 }

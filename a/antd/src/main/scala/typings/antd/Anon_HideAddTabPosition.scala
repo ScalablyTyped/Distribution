@@ -13,7 +13,7 @@ trait Anon_HideAddTabPosition extends js.Object {
 object Anon_HideAddTabPosition {
   @scala.inline
   def apply(hideAdd: Boolean, tabPosition: TabsPosition): Anon_HideAddTabPosition = {
-    val __obj = js.Dynamic.literal(hideAdd = hideAdd, tabPosition = tabPosition)
+    val __obj = js.Dynamic.literal(hideAdd = hideAdd.asInstanceOf[js.Any], tabPosition = tabPosition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HideAddTabPosition]
   }

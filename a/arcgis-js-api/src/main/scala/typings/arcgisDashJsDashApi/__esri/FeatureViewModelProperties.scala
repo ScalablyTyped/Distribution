@@ -55,10 +55,10 @@ object FeatureViewModelProperties {
     view: MapViewProperties | SceneViewProperties = null
   ): FeatureViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultPopupTemplateEnabled)) __obj.updateDynamic("defaultPopupTemplateEnabled")(defaultPopupTemplateEnabled)
-    if (graphic != null) __obj.updateDynamic("graphic")(graphic)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (!js.isUndefined(defaultPopupTemplateEnabled)) __obj.updateDynamic("defaultPopupTemplateEnabled")(defaultPopupTemplateEnabled.asInstanceOf[js.Any])
+    if (graphic != null) __obj.updateDynamic("graphic")(graphic.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureViewModelProperties]
   }

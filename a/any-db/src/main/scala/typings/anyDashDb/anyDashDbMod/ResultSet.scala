@@ -47,11 +47,11 @@ object ResultSet {
     fieldCount: Int | Double = null,
     lastInsertId: js.Any = null
   ): ResultSet = {
-    val __obj = js.Dynamic.literal(fields = fields, rowCount = rowCount, rows = rows)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     if (affectedRows != null) __obj.updateDynamic("affectedRows")(affectedRows.asInstanceOf[js.Any])
     if (changedRows != null) __obj.updateDynamic("changedRows")(changedRows.asInstanceOf[js.Any])
     if (fieldCount != null) __obj.updateDynamic("fieldCount")(fieldCount.asInstanceOf[js.Any])
-    if (lastInsertId != null) __obj.updateDynamic("lastInsertId")(lastInsertId)
+    if (lastInsertId != null) __obj.updateDynamic("lastInsertId")(lastInsertId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSet]
   }
 }

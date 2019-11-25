@@ -21,9 +21,9 @@ object Anon_Focus {
     width: Int | Double = null
   ): Anon_Focus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Focus]
   }

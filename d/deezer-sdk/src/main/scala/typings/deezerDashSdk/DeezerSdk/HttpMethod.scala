@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait HttpMethod extends js.Object
 
+object HttpMethod {
+  @scala.inline
+  def DELETE: typings.deezerDashSdk.deezerDashSdkStrings.DELETE = this.cast("DELETE")
+  @scala.inline
+  def GET: typings.deezerDashSdk.deezerDashSdkStrings.GET = this.cast("GET")
+  @scala.inline
+  def POST: typings.deezerDashSdk.deezerDashSdkStrings.POST = this.cast("POST")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

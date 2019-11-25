@@ -33,10 +33,10 @@ object DiffResult {
     stables: js.Array[String] = null
   ): DiffResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(changes)) __obj.updateDynamic("changes")(changes)
-    if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace)
-    if (replaces != null) __obj.updateDynamic("replaces")(replaces)
-    if (stables != null) __obj.updateDynamic("stables")(stables)
+    if (!js.isUndefined(changes)) __obj.updateDynamic("changes")(changes.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace.asInstanceOf[js.Any])
+    if (replaces != null) __obj.updateDynamic("replaces")(replaces.asInstanceOf[js.Any])
+    if (stables != null) __obj.updateDynamic("stables")(stables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffResult]
   }
 }

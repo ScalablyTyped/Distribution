@@ -27,11 +27,11 @@ object GetPutOptions {
     if (accessed != null) __obj.updateDynamic("accessed")(accessed.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired)
+    if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (onExpire != null) __obj.updateDynamic("onExpire")(js.Any.fromFunction3(onExpire))
-    if (!js.isUndefined(storeOnReject)) __obj.updateDynamic("storeOnReject")(storeOnReject)
-    if (!js.isUndefined(storeOnResolve)) __obj.updateDynamic("storeOnResolve")(storeOnResolve)
+    if (!js.isUndefined(storeOnReject)) __obj.updateDynamic("storeOnReject")(storeOnReject.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeOnResolve)) __obj.updateDynamic("storeOnResolve")(storeOnResolve.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPutOptions]
   }
 }

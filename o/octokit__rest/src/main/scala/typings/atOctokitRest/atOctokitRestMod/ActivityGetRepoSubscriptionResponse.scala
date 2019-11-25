@@ -23,7 +23,7 @@ object ActivityGetRepoSubscriptionResponse {
     subscribed: Boolean,
     url: String
   ): ActivityGetRepoSubscriptionResponse = {
-    val __obj = js.Dynamic.literal(created_at = created_at, ignored = ignored, reason = reason, repository_url = repository_url, subscribed = subscribed, url = url)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], ignored = ignored.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], subscribed = subscribed.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActivityGetRepoSubscriptionResponse]
   }

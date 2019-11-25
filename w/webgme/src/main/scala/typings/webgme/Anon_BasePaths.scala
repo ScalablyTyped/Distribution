@@ -32,7 +32,7 @@ trait Anon_BasePaths extends js.Object {
 object Anon_BasePaths {
   @scala.inline
   def apply(basePaths: js.Array[String], enable: Boolean, monitorTimeout: Double): Anon_BasePaths = {
-    val __obj = js.Dynamic.literal(basePaths = basePaths, enable = enable, monitorTimeout = monitorTimeout)
+    val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], monitorTimeout = monitorTimeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BasePaths]
   }

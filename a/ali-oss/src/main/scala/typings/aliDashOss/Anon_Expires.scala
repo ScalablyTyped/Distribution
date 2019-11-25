@@ -13,8 +13,8 @@ object Anon_Expires {
   @scala.inline
   def apply(expires: String = null, timeout: String = null): Anon_Expires = {
     val __obj = js.Dynamic.literal()
-    if (expires != null) __obj.updateDynamic("expires")(expires)
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Expires]
   }
 }

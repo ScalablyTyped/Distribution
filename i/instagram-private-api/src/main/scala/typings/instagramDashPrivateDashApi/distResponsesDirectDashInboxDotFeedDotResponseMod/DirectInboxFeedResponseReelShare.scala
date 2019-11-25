@@ -23,8 +23,8 @@ object DirectInboxFeedResponseReelShare {
     text: String,
     `type`: String
   ): DirectInboxFeedResponseReelShare = {
-    val __obj = js.Dynamic.literal(is_reel_persisted = is_reel_persisted, media = media, reel_owner_id = reel_owner_id, reel_type = reel_type, text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(is_reel_persisted = is_reel_persisted.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], reel_owner_id = reel_owner_id.asInstanceOf[js.Any], reel_type = reel_type.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectInboxFeedResponseReelShare]
   }
 }

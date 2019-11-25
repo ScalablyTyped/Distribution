@@ -90,15 +90,18 @@ object libRouterMod extends js.Object {
       * @return the named plugin (undefined if not found), or all plugins (if `pluginName` is omitted)
       */
     def getPlugin(pluginName: String): UIRouterPlugin = js.native
+    /** Add plugin (as javascript constructor function) */
+    /** Add plugin (as javascript factory function) */
+    def plugin[T /* <: UIRouterPlugin */](
+      plugin: (js.Function2[/* router */ this.type, /* options */ js.UndefOr[js.Any], Unit]) | PluginFactory[T]
+    ): T = js.native
+    def plugin[T /* <: UIRouterPlugin */](
+      plugin: (js.Function2[/* router */ this.type, /* options */ js.UndefOr[js.Any], Unit]) | PluginFactory[T],
+      options: js.Any
+    ): T = js.native
     /** Add plugin (as ES6 class) */
     def plugin[T /* <: UIRouterPlugin */](plugin: Anon_Options[T]): T = js.native
     def plugin[T /* <: UIRouterPlugin */](plugin: Anon_Options[T], options: js.Any): T = js.native
-    /** Add plugin (as javascript constructor function) */
-    def plugin[T /* <: UIRouterPlugin */](plugin: Fn_Options): T = js.native
-    def plugin[T /* <: UIRouterPlugin */](plugin: Fn_Options, options: js.Any): T = js.native
-    /** Add plugin (as javascript factory function) */
-    def plugin[T /* <: UIRouterPlugin */](plugin: PluginFactory[T]): T = js.native
-    def plugin[T /* <: UIRouterPlugin */](plugin: PluginFactory[T], options: js.Any): T = js.native
   }
   
   type PluginFactory[T] = js.Function2[/* router */ UIRouter, /* options */ js.UndefOr[js.Any], T]

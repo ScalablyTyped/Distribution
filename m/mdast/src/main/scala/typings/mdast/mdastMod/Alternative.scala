@@ -12,7 +12,7 @@ object Alternative {
   @scala.inline
   def apply(alt: String = null): Alternative = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alternative]
   }
 }

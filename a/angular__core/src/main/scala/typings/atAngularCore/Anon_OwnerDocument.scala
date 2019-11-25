@@ -12,7 +12,7 @@ trait Anon_OwnerDocument extends js.Object {
 object Anon_OwnerDocument {
   @scala.inline
   def apply(ownerDocument: Document): Anon_OwnerDocument = {
-    val __obj = js.Dynamic.literal(ownerDocument = ownerDocument)
+    val __obj = js.Dynamic.literal(ownerDocument = ownerDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OwnerDocument]
   }

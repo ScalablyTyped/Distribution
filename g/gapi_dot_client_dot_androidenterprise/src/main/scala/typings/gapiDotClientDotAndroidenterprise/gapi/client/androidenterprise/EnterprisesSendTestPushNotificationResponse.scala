@@ -15,8 +15,8 @@ object EnterprisesSendTestPushNotificationResponse {
   @scala.inline
   def apply(messageId: String = null, topicName: String = null): EnterprisesSendTestPushNotificationResponse = {
     val __obj = js.Dynamic.literal()
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
-    if (topicName != null) __obj.updateDynamic("topicName")(topicName)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (topicName != null) __obj.updateDynamic("topicName")(topicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterprisesSendTestPushNotificationResponse]
   }
 }

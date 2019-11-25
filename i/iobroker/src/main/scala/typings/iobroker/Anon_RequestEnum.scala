@@ -13,7 +13,7 @@ trait Anon_RequestEnum extends js.Object {
 object Anon_RequestEnum {
   @scala.inline
   def apply(requestEnum: String, result: Record[String, _]): Anon_RequestEnum = {
-    val __obj = js.Dynamic.literal(requestEnum = requestEnum, result = result)
+    val __obj = js.Dynamic.literal(requestEnum = requestEnum.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RequestEnum]
   }

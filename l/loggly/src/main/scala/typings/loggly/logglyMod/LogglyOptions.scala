@@ -24,11 +24,11 @@ object LogglyOptions {
     json: js.UndefOr[Boolean] = js.undefined,
     tags: js.Array[String] = null
   ): LogglyOptions = {
-    val __obj = js.Dynamic.literal(subdomain = subdomain, token = token)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(subdomain = subdomain.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogglyOptions]
   }
 }

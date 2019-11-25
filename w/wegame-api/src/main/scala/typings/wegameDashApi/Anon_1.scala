@@ -60,8 +60,8 @@ object Anon_1 {
     audioSource: AudioSourceType = null,
     duration: Int | Double = null
   ): Anon_1 = {
-    val __obj = js.Dynamic.literal(encodeBitRate = encodeBitRate, format = format.asInstanceOf[js.Any], frameSize = frameSize, numberOfChannels = numberOfChannels.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any])
-    if (audioSource != null) __obj.updateDynamic("audioSource")(audioSource)
+    val __obj = js.Dynamic.literal(encodeBitRate = encodeBitRate.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], frameSize = frameSize.asInstanceOf[js.Any], numberOfChannels = numberOfChannels.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any])
+    if (audioSource != null) __obj.updateDynamic("audioSource")(audioSource.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_1]
   }

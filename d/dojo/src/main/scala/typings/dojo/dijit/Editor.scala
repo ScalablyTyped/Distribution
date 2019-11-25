@@ -1,9 +1,6 @@
 package typings.dojo.dijit
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit._editor.RichText
 import typings.dojo.dojoStrings.customUndo
 import typings.dojo.dojoStrings.editActionInterval
@@ -157,12 +154,44 @@ class Editor protected () extends RichText {
   @JSName("set")
   def set_plugins(property: plugins, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_customUndo(property: customUndo, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_customUndo(
+    property: customUndo,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_editActionInterval(property: editActionInterval, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_editActionInterval(
+    property: editActionInterval,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_extraPlugins(property: extraPlugins, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_extraPlugins(
+    property: extraPlugins,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_plugins(property: plugins, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_plugins(
+    property: plugins,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

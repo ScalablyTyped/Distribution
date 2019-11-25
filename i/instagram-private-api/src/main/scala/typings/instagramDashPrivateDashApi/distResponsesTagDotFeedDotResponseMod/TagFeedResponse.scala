@@ -27,7 +27,7 @@ object TagFeedResponse {
     status: String,
     story: TagFeedResponseStory
   ): TagFeedResponse = {
-    val __obj = js.Dynamic.literal(auto_load_more_enabled = auto_load_more_enabled, items = items, more_available = more_available, next_max_id = next_max_id, num_results = num_results, ranked_items = ranked_items, status = status, story = story)
+    val __obj = js.Dynamic.literal(auto_load_more_enabled = auto_load_more_enabled.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any], next_max_id = next_max_id.asInstanceOf[js.Any], num_results = num_results.asInstanceOf[js.Any], ranked_items = ranked_items.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagFeedResponse]
   }

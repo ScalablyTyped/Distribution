@@ -20,7 +20,7 @@ object Options {
   @scala.inline
   def apply(commentDescriptions: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(commentDescriptions)) __obj.updateDynamic("commentDescriptions")(commentDescriptions)
+    if (!js.isUndefined(commentDescriptions)) __obj.updateDynamic("commentDescriptions")(commentDescriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

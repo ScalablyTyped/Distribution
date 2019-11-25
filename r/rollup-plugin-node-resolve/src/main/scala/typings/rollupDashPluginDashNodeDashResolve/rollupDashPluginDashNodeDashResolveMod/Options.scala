@@ -105,18 +105,18 @@ object Options {
     preferBuiltins: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser)
-    if (customResolveOptions != null) __obj.updateDynamic("customResolveOptions")(customResolveOptions)
+    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (customResolveOptions != null) __obj.updateDynamic("customResolveOptions")(customResolveOptions.asInstanceOf[js.Any])
     if (dedupe != null) __obj.updateDynamic("dedupe")(dedupe.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (jail != null) __obj.updateDynamic("jail")(jail)
-    if (!js.isUndefined(jsnext)) __obj.updateDynamic("jsnext")(jsnext)
-    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main)
-    if (mainFields != null) __obj.updateDynamic("mainFields")(mainFields)
-    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module)
-    if (!js.isUndefined(modulesOnly)) __obj.updateDynamic("modulesOnly")(modulesOnly)
-    if (only != null) __obj.updateDynamic("only")(only)
-    if (!js.isUndefined(preferBuiltins)) __obj.updateDynamic("preferBuiltins")(preferBuiltins)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (jail != null) __obj.updateDynamic("jail")(jail.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsnext)) __obj.updateDynamic("jsnext")(jsnext.asInstanceOf[js.Any])
+    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (mainFields != null) __obj.updateDynamic("mainFields")(mainFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (!js.isUndefined(modulesOnly)) __obj.updateDynamic("modulesOnly")(modulesOnly.asInstanceOf[js.Any])
+    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferBuiltins)) __obj.updateDynamic("preferBuiltins")(preferBuiltins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

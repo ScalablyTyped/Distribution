@@ -11,7 +11,7 @@ trait Anon_Ed25519PublicKey extends js.Object {
 object Anon_Ed25519PublicKey {
   @scala.inline
   def apply(ed25519PublicKey: js.Any): Anon_Ed25519PublicKey = {
-    val __obj = js.Dynamic.literal(ed25519PublicKey = ed25519PublicKey)
+    val __obj = js.Dynamic.literal(ed25519PublicKey = ed25519PublicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ed25519PublicKey]
   }

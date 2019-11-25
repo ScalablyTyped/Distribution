@@ -23,7 +23,7 @@ trait IEntityEquippedArmorEventData extends js.Object {
 object IEntityEquippedArmorEventData {
   @scala.inline
   def apply(entity: IEntity, item_stack: IItemStack): IEntityEquippedArmorEventData = {
-    val __obj = js.Dynamic.literal(entity = entity, item_stack = item_stack)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], item_stack = item_stack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEntityEquippedArmorEventData]
   }

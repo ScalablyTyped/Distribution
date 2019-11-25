@@ -52,17 +52,17 @@ object MapType {
     xbase: TileLayer = null,
     xbasenight: TileLayer = null
   ): MapType = {
-    val __obj = js.Dynamic.literal(map = map, mapnight = mapnight)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (basenight != null) __obj.updateDynamic("basenight")(basenight)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (panorama != null) __obj.updateDynamic("panorama")(panorama)
-    if (panoramanight != null) __obj.updateDynamic("panoramanight")(panoramanight)
-    if (traffic != null) __obj.updateDynamic("traffic")(traffic)
-    if (trafficnight != null) __obj.updateDynamic("trafficnight")(trafficnight)
-    if (transit != null) __obj.updateDynamic("transit")(transit)
-    if (xbase != null) __obj.updateDynamic("xbase")(xbase)
-    if (xbasenight != null) __obj.updateDynamic("xbasenight")(xbasenight)
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], mapnight = mapnight.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (basenight != null) __obj.updateDynamic("basenight")(basenight.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (panorama != null) __obj.updateDynamic("panorama")(panorama.asInstanceOf[js.Any])
+    if (panoramanight != null) __obj.updateDynamic("panoramanight")(panoramanight.asInstanceOf[js.Any])
+    if (traffic != null) __obj.updateDynamic("traffic")(traffic.asInstanceOf[js.Any])
+    if (trafficnight != null) __obj.updateDynamic("trafficnight")(trafficnight.asInstanceOf[js.Any])
+    if (transit != null) __obj.updateDynamic("transit")(transit.asInstanceOf[js.Any])
+    if (xbase != null) __obj.updateDynamic("xbase")(xbase.asInstanceOf[js.Any])
+    if (xbasenight != null) __obj.updateDynamic("xbasenight")(xbasenight.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapType]
   }
 }

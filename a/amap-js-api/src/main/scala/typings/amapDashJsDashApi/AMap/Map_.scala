@@ -11,7 +11,7 @@ import typings.amapDashJsDashApi.amapDashJsDashApiNumbers.`false`
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.all
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.circle
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.marker
-import typings.amapDashJsDashApi.amapDashJsDashApiStrings.polygon
+import typings.amapDashJsDashApi.amapDashJsDashApiStrings.polygon_
 import typings.amapDashJsDashApi.amapDashJsDashApiStrings.polyline
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -79,7 +79,7 @@ class Map_ protected () extends EventEmitter {
   @JSName("getAllOverlays")
   def getAllOverlays_marker(`type`: marker): js.Array[Overlay[_]] = js.native
   @JSName("getAllOverlays")
-  def getAllOverlays_polygon(`type`: polygon): js.Array[Overlay[_]] = js.native
+  def getAllOverlays_polygon(`type`: polygon_): js.Array[Overlay[_]] = js.native
   @JSName("getAllOverlays")
   def getAllOverlays_polyline(`type`: polyline): js.Array[Overlay[_]] = js.native
   /**

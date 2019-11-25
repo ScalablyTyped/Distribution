@@ -14,7 +14,7 @@ trait Anon_Chrome extends js.Object {
 object Anon_Chrome {
   @scala.inline
   def apply(chrome: Typeofchrome, firefox: Typeoffirefox, http: Typeofhttp, remote: Typeofremote): Anon_Chrome = {
-    val __obj = js.Dynamic.literal(chrome = chrome, firefox = firefox, http = http, remote = remote)
+    val __obj = js.Dynamic.literal(chrome = chrome.asInstanceOf[js.Any], firefox = firefox.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Chrome]
   }

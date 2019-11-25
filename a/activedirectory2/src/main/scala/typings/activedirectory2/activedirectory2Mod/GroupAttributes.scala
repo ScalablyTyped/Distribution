@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait GroupAttributes extends js.Object
 
+object GroupAttributes {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cn: typings.activedirectory2.activedirectory2Strings.cn = this.cast("cn")
+  @scala.inline
+  def description: typings.activedirectory2.activedirectory2Strings.description = this.cast("description")
+  @scala.inline
+  def distinguishedName: typings.activedirectory2.activedirectory2Strings.distinguishedName = this.cast("distinguishedName")
+  @scala.inline
+  def objectCategory: typings.activedirectory2.activedirectory2Strings.objectCategory = this.cast("objectCategory")
+}
+

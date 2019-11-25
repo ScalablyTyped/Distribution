@@ -16,7 +16,7 @@ trait ISymbol extends js.Object {
 object ISymbol {
   @scala.inline
   def apply(chart: IChart, format: IFormat, height: Double, padding: Double, visible: Boolean, width: Double): ISymbol = {
-    val __obj = js.Dynamic.literal(chart = chart, format = format, height = height, padding = padding, visible = visible, width = width)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISymbol]
   }

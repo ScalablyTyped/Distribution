@@ -15,7 +15,7 @@ trait IntercomError extends js.Object {
 object IntercomError {
   @scala.inline
   def apply(body: Anon_Errorlist, headers: Anon_K, statusCode: Double): IntercomError = {
-    val __obj = js.Dynamic.literal(body = body, headers = headers, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IntercomError]
   }

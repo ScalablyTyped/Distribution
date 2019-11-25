@@ -18,8 +18,8 @@ object SetOptions {
   @scala.inline
   def apply(format: String = null, muted: js.UndefOr[Boolean] = js.undefined): SetOptions = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
 }

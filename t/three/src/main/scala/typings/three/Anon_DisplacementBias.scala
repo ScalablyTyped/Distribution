@@ -14,7 +14,7 @@ trait Anon_DisplacementBias extends js.Object {
 object Anon_DisplacementBias {
   @scala.inline
   def apply(displacementBias: IUniform, displacementMap: IUniform, displacementScale: IUniform): Anon_DisplacementBias = {
-    val __obj = js.Dynamic.literal(displacementBias = displacementBias, displacementMap = displacementMap, displacementScale = displacementScale)
+    val __obj = js.Dynamic.literal(displacementBias = displacementBias.asInstanceOf[js.Any], displacementMap = displacementMap.asInstanceOf[js.Any], displacementScale = displacementScale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DisplacementBias]
   }

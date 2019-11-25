@@ -23,9 +23,9 @@ object TriangulationStatusChangedEventUIParam {
   @scala.inline
   def apply(currentStatus: js.Any = null, map: js.Any = null, series: js.Any = null): TriangulationStatusChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentStatus != null) __obj.updateDynamic("currentStatus")(currentStatus)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (currentStatus != null) __obj.updateDynamic("currentStatus")(currentStatus.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriangulationStatusChangedEventUIParam]
   }
 }

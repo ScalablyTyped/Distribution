@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLFramebuffer")
 @js.native
-class WebGLFramebufferCls () extends WebGLFramebuffer
+class WebGLFramebufferCls () extends WebGLObject
 

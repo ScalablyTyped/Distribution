@@ -22,8 +22,8 @@ object Point {
     id: Double | String = null,
     properties: P = null
   ): Point[P] = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])

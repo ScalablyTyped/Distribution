@@ -23,8 +23,8 @@ object CoverageWorkerData {
     path: Path,
     options: CoverageReporterSerializedOptions = null
   ): CoverageWorkerData = {
-    val __obj = js.Dynamic.literal(config = config, globalConfig = globalConfig, path = path)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], globalConfig = globalConfig.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverageWorkerData]
   }
 }

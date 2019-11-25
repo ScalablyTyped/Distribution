@@ -35,8 +35,8 @@ object Function extends js.Object {
     def lock(): SugarDefaultChainable[js.Function] = js.native
     def lock(n: Double): SugarDefaultChainable[js.Function] = js.native
     def memoize(): SugarDefaultChainable[js.Function] = js.native
-    def memoize(hashFn: String): SugarDefaultChainable[js.Function] = js.native
-    def memoize(hashFn: String, limit: Double): SugarDefaultChainable[js.Function] = js.native
+    def memoize(hashFn: java.lang.String): SugarDefaultChainable[js.Function] = js.native
+    def memoize(hashFn: java.lang.String, limit: Double): SugarDefaultChainable[js.Function] = js.native
     def memoize(hashFn: js.Function): SugarDefaultChainable[js.Function] = js.native
     def memoize(hashFn: js.Function, limit: Double): SugarDefaultChainable[js.Function] = js.native
     def once(): SugarDefaultChainable[js.Function] = js.native
@@ -67,8 +67,8 @@ object Function extends js.Object {
     def lock(instance: js.Function): js.Function = js.native
     def lock(instance: js.Function, n: Double): js.Function = js.native
     def memoize(instance: js.Function): js.Function = js.native
-    def memoize(instance: js.Function, hashFn: String): js.Function = js.native
-    def memoize(instance: js.Function, hashFn: String, limit: Double): js.Function = js.native
+    def memoize(instance: js.Function, hashFn: java.lang.String): js.Function = js.native
+    def memoize(instance: js.Function, hashFn: java.lang.String, limit: Double): js.Function = js.native
     def memoize(instance: js.Function, hashFn: js.Function): js.Function = js.native
     def memoize(instance: js.Function, hashFn: js.Function, limit: Double): js.Function = js.native
     def once(instance: js.Function): js.Function = js.native

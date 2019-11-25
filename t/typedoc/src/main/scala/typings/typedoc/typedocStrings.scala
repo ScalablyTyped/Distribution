@@ -30,7 +30,7 @@ object typedocStrings {
   sealed trait number extends js.Object
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait object_ extends js.Object
   
   @js.native
   sealed trait predicate extends js.Object
@@ -82,7 +82,7 @@ object typedocStrings {
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  def object_ : object_ = "object".asInstanceOf[object_]
   @scala.inline
   def predicate: predicate = "predicate".asInstanceOf[predicate]
   @scala.inline

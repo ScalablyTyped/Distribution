@@ -84,15 +84,15 @@ object Anon_Challenger {
     responseHeaders: HttpHeaders = null,
     urlClassification: UrlClassification = null
   ): Anon_Challenger = {
-    val __obj = js.Dynamic.literal(challenger = challenger, frameId = frameId, isProxy = isProxy, method = method, parentFrameId = parentFrameId, requestId = requestId, scheme = scheme, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId)
-    if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
-    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
-    if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
-    if (urlClassification != null) __obj.updateDynamic("urlClassification")(urlClassification)
+    val __obj = js.Dynamic.literal(challenger = challenger.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], isProxy = isProxy.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusLine = statusLine.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId.asInstanceOf[js.Any])
+    if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])
+    if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
+    if (urlClassification != null) __obj.updateDynamic("urlClassification")(urlClassification.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Challenger]
   }
 }

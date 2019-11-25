@@ -16,7 +16,7 @@ trait SourceFileUpload extends js.Object {
 object SourceFileUpload {
   @scala.inline
   def apply(file_name: String, file_size: Double, file_upload_time: String): SourceFileUpload = {
-    val __obj = js.Dynamic.literal(file_name = file_name, file_size = file_size, file_upload_time = file_upload_time)
+    val __obj = js.Dynamic.literal(file_name = file_name.asInstanceOf[js.Any], file_size = file_size.asInstanceOf[js.Any], file_upload_time = file_upload_time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceFileUpload]
   }

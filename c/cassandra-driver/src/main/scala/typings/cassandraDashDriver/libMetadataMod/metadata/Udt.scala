@@ -12,7 +12,7 @@ trait Udt extends js.Object {
 object Udt {
   @scala.inline
   def apply(fields: js.Array[ColumnInfo], name: String): Udt = {
-    val __obj = js.Dynamic.literal(fields = fields, name = name)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Udt]
   }

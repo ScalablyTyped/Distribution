@@ -675,7 +675,7 @@ object atPulumiKubernetesStrings {
   sealed trait `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList` extends js.Object
   
   @js.native
-  sealed trait endpoints extends js.Object
+  sealed trait endpoints_ extends js.Object
   
   @js.native
   sealed trait event_time extends js.Object
@@ -993,7 +993,7 @@ object atPulumiKubernetesStrings {
   sealed trait spec extends js.Object
   
   @js.native
-  sealed trait status extends js.Object
+  sealed trait status_ extends js.Object
   
   @js.native
   sealed trait `storageDOTk8sDOTio/v1` extends js.Object
@@ -1625,7 +1625,7 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList` = "discovery.k8s.io/v1alpha1/EndpointSliceList".asInstanceOf[`discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`]
   @scala.inline
-  def endpoints: endpoints = "endpoints".asInstanceOf[endpoints]
+  def endpoints_ : endpoints_ = "endpoints".asInstanceOf[endpoints_]
   @scala.inline
   def event_time: event_time = "event_time".asInstanceOf[event_time]
   @scala.inline
@@ -1837,7 +1837,7 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def spec: spec = "spec".asInstanceOf[spec]
   @scala.inline
-  def status: status = "status".asInstanceOf[status]
+  def status_ : status_ = "status".asInstanceOf[status_]
   @scala.inline
   def `storageDOTk8sDOTio/v1`: `storageDOTk8sDOTio/v1` = "storage.k8s.io/v1".asInstanceOf[`storageDOTk8sDOTio/v1`]
   @scala.inline

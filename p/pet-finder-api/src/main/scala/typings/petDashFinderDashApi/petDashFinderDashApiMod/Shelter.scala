@@ -37,7 +37,7 @@ object Shelter {
     state: String,
     zip: String
   ): Shelter = {
-    val __obj = js.Dynamic.literal(address1 = address1, address2 = address2, city = city, country = country, email = email, fax = fax, id = id, latitude = latitude, longitude = longitude, name = name, phone = phone, state = state, zip = zip)
+    val __obj = js.Dynamic.literal(address1 = address1.asInstanceOf[js.Any], address2 = address2.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], fax = fax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], zip = zip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Shelter]
   }

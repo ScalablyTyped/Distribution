@@ -33,7 +33,7 @@ trait IKeyBinding extends js.Object {
 object IKeyBinding {
   @scala.inline
   def apply(args: ReadonlyJSONObject, command: String, keys: js.Array[String], selector: String): IKeyBinding = {
-    val __obj = js.Dynamic.literal(args = args, command = command, keys = keys, selector = selector)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IKeyBinding]
   }

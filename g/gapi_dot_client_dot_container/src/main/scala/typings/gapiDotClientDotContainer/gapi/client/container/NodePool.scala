@@ -57,16 +57,16 @@ object NodePool {
     version: String = null
   ): NodePool = {
     val __obj = js.Dynamic.literal()
-    if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling)
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (initialNodeCount != null) __obj.updateDynamic("initialNodeCount")(initialNodeCount.asInstanceOf[js.Any])
-    if (instanceGroupUrls != null) __obj.updateDynamic("instanceGroupUrls")(instanceGroupUrls)
-    if (management != null) __obj.updateDynamic("management")(management)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (instanceGroupUrls != null) __obj.updateDynamic("instanceGroupUrls")(instanceGroupUrls.asInstanceOf[js.Any])
+    if (management != null) __obj.updateDynamic("management")(management.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodePool]
   }
 }

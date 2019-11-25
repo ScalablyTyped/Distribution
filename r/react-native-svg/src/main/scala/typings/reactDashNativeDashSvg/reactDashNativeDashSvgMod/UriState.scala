@@ -12,7 +12,7 @@ object UriState {
   @scala.inline
   def apply(xml: String = null): UriState = {
     val __obj = js.Dynamic.literal()
-    if (xml != null) __obj.updateDynamic("xml")(xml)
+    if (xml != null) __obj.updateDynamic("xml")(xml.asInstanceOf[js.Any])
     __obj.asInstanceOf[UriState]
   }
 }

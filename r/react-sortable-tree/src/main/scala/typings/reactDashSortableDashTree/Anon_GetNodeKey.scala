@@ -15,7 +15,7 @@ trait Anon_GetNodeKey extends js.Object {
 object Anon_GetNodeKey {
   @scala.inline
   def apply(getNodeKey: /* data */ TreeIndex with TreeNode => String | Double, index: Double): Anon_GetNodeKey = {
-    val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), index = index)
+    val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GetNodeKey]
   }

@@ -35,7 +35,7 @@ object ExcelFont {
     underline: String,
     verticalAlign: String
   ): ExcelFont = {
-    val __obj = js.Dynamic.literal(bold = bold, charSet = charSet, color = color, family = family, fontName = fontName, italic = italic, outline = outline, shadow = shadow, size = size, strikeThrough = strikeThrough, underline = underline, verticalAlign = verticalAlign)
+    val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], charSet = charSet.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], fontName = fontName.asInstanceOf[js.Any], italic = italic.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], shadow = shadow.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strikeThrough = strikeThrough.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any], verticalAlign = verticalAlign.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExcelFont]
   }

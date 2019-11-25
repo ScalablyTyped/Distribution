@@ -48,22 +48,22 @@ object CreateTaskProps {
     recipientSkipSMSNotifications: js.UndefOr[Boolean] = js.undefined,
     requirements: TaskCompletionRequirements = null
   ): CreateTaskProps = {
-    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], recipients = recipients)
-    if (autoAssign != null) __obj.updateDynamic("autoAssign")(autoAssign)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any])
+    if (autoAssign != null) __obj.updateDynamic("autoAssign")(autoAssign.asInstanceOf[js.Any])
     if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
     if (completeAfter != null) __obj.updateDynamic("completeAfter")(completeAfter.asInstanceOf[js.Any])
     if (completeBefore != null) __obj.updateDynamic("completeBefore")(completeBefore.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (executor != null) __obj.updateDynamic("executor")(executor)
-    if (merchant != null) __obj.updateDynamic("merchant")(merchant)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (!js.isUndefined(pickupTask)) __obj.updateDynamic("pickupTask")(pickupTask)
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (executor != null) __obj.updateDynamic("executor")(executor.asInstanceOf[js.Any])
+    if (merchant != null) __obj.updateDynamic("merchant")(merchant.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (!js.isUndefined(pickupTask)) __obj.updateDynamic("pickupTask")(pickupTask.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (recipientName != null) __obj.updateDynamic("recipientName")(recipientName)
-    if (recipientNotes != null) __obj.updateDynamic("recipientNotes")(recipientNotes)
-    if (!js.isUndefined(recipientSkipSMSNotifications)) __obj.updateDynamic("recipientSkipSMSNotifications")(recipientSkipSMSNotifications)
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
+    if (recipientName != null) __obj.updateDynamic("recipientName")(recipientName.asInstanceOf[js.Any])
+    if (recipientNotes != null) __obj.updateDynamic("recipientNotes")(recipientNotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(recipientSkipSMSNotifications)) __obj.updateDynamic("recipientSkipSMSNotifications")(recipientSkipSMSNotifications.asInstanceOf[js.Any])
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTaskProps]
   }
 }

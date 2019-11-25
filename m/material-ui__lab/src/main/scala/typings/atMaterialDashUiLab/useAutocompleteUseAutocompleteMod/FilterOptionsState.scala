@@ -11,7 +11,7 @@ trait FilterOptionsState extends js.Object {
 object FilterOptionsState {
   @scala.inline
   def apply(inputValue: String): FilterOptionsState = {
-    val __obj = js.Dynamic.literal(inputValue = inputValue)
+    val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilterOptionsState]
   }

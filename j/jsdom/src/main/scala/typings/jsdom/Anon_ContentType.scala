@@ -24,8 +24,8 @@ object Anon_ContentType {
   @scala.inline
   def apply(contentType: String = null, url: String = null): Anon_ContentType = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentType]
   }
 }

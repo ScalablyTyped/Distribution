@@ -24,15 +24,15 @@ object CollectionDefinition {
     variable: VariableDefinition = null
   ): CollectionDefinition = {
     val __obj = js.Dynamic.literal()
-    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (variable != null) __obj.updateDynamic("variable")(variable)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionDefinition]
   }
 }

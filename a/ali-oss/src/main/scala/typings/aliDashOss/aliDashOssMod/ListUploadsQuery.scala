@@ -20,10 +20,10 @@ object ListUploadsQuery {
     `upload-id-marker`: String = null
   ): ListUploadsQuery = {
     val __obj = js.Dynamic.literal()
-    if (`key-marker` != null) __obj.updateDynamic("key-marker")(`key-marker`)
+    if (`key-marker` != null) __obj.updateDynamic("key-marker")(`key-marker`.asInstanceOf[js.Any])
     if (`max-uploads` != null) __obj.updateDynamic("max-uploads")(`max-uploads`.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (`upload-id-marker` != null) __obj.updateDynamic("upload-id-marker")(`upload-id-marker`)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (`upload-id-marker` != null) __obj.updateDynamic("upload-id-marker")(`upload-id-marker`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUploadsQuery]
   }
 }

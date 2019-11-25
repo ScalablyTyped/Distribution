@@ -19,7 +19,7 @@ trait ProjectsMoveCardParams extends js.Object {
 object ProjectsMoveCardParams {
   @scala.inline
   def apply(card_id: Double, position: String, column_id: Int | Double = null): ProjectsMoveCardParams = {
-    val __obj = js.Dynamic.literal(card_id = card_id, position = position)
+    val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     if (column_id != null) __obj.updateDynamic("column_id")(column_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsMoveCardParams]
   }

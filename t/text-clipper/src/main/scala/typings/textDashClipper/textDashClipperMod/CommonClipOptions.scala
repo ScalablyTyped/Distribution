@@ -29,8 +29,8 @@ object CommonClipOptions {
     maxLines: Int | Double = null
   ): CommonClipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breakWords)) __obj.updateDynamic("breakWords")(breakWords)
-    if (indicator != null) __obj.updateDynamic("indicator")(indicator)
+    if (!js.isUndefined(breakWords)) __obj.updateDynamic("breakWords")(breakWords.asInstanceOf[js.Any])
+    if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
     if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonClipOptions]
   }

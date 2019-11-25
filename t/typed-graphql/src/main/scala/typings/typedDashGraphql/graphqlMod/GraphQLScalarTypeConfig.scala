@@ -21,8 +21,8 @@ object GraphQLScalarTypeConfig {
     parseLiteral: /* valueAST */ Value => _ = null,
     parseValue: /* value */ js.Any => _ = null
   ): GraphQLScalarTypeConfig = {
-    val __obj = js.Dynamic.literal(name = name, serialize = js.Any.fromFunction1(serialize))
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serialize = js.Any.fromFunction1(serialize))
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (parseLiteral != null) __obj.updateDynamic("parseLiteral")(js.Any.fromFunction1(parseLiteral))
     if (parseValue != null) __obj.updateDynamic("parseValue")(js.Any.fromFunction1(parseValue))
     __obj.asInstanceOf[GraphQLScalarTypeConfig]

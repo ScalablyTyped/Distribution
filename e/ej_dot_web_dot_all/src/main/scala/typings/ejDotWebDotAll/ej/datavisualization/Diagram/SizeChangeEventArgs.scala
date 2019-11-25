@@ -44,14 +44,14 @@ object SizeChangeEventArgs {
     resizeState: String = null
   ): SizeChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
-    if (resizeState != null) __obj.updateDynamic("resizeState")(resizeState)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    if (resizeState != null) __obj.updateDynamic("resizeState")(resizeState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeChangeEventArgs]
   }
 }

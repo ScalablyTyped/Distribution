@@ -71,15 +71,15 @@ object InvokeInput {
     Payload: ArrayBuffer | ArrayBufferView | String = null,
     Qualifier: String = null
   ): InvokeInput = {
-    val __obj = js.Dynamic.literal(FunctionName = FunctionName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (ClientContext != null) __obj.updateDynamic("ClientContext")(ClientContext)
+    if (ClientContext != null) __obj.updateDynamic("ClientContext")(ClientContext.asInstanceOf[js.Any])
     if (InvocationType != null) __obj.updateDynamic("InvocationType")(InvocationType.asInstanceOf[js.Any])
     if (LogType != null) __obj.updateDynamic("LogType")(LogType.asInstanceOf[js.Any])
     if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
-    if (Qualifier != null) __obj.updateDynamic("Qualifier")(Qualifier)
+    if (Qualifier != null) __obj.updateDynamic("Qualifier")(Qualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeInput]
   }
 }

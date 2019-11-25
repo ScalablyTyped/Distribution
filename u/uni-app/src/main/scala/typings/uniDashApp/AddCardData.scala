@@ -19,8 +19,8 @@ object AddCardData {
   @scala.inline
   def apply(cardExt: String = null, cardId: String = null): AddCardData = {
     val __obj = js.Dynamic.literal()
-    if (cardExt != null) __obj.updateDynamic("cardExt")(cardExt)
-    if (cardId != null) __obj.updateDynamic("cardId")(cardId)
+    if (cardExt != null) __obj.updateDynamic("cardExt")(cardExt.asInstanceOf[js.Any])
+    if (cardId != null) __obj.updateDynamic("cardId")(cardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCardData]
   }
 }

@@ -15,7 +15,7 @@ object RefreshCompletedEventUIParam {
   @scala.inline
   def apply(chart: js.Any = null): RefreshCompletedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (chart != null) __obj.updateDynamic("chart")(chart)
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshCompletedEventUIParam]
   }
 }

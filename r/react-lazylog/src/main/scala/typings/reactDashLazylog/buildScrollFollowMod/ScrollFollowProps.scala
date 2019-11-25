@@ -14,7 +14,7 @@ object ScrollFollowProps {
   @scala.inline
   def apply(render: ScrollFollowRenderProps => ReactNode, startFollowing: js.UndefOr[Boolean] = js.undefined): ScrollFollowProps = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
-    if (!js.isUndefined(startFollowing)) __obj.updateDynamic("startFollowing")(startFollowing)
+    if (!js.isUndefined(startFollowing)) __obj.updateDynamic("startFollowing")(startFollowing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollFollowProps]
   }
 }

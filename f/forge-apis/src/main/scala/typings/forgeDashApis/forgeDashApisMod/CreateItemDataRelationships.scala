@@ -13,8 +13,8 @@ object CreateItemDataRelationships {
   @scala.inline
   def apply(parent: CreateStorageDataRelationshipsTarget = null, tip: CreateItemDataRelationshipsTip = null): CreateItemDataRelationships = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (tip != null) __obj.updateDynamic("tip")(tip)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (tip != null) __obj.updateDynamic("tip")(tip.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateItemDataRelationships]
   }
 }

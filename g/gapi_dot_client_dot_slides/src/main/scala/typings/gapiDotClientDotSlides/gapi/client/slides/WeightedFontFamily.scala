@@ -29,7 +29,7 @@ object WeightedFontFamily {
   @scala.inline
   def apply(fontFamily: String = null, weight: Int | Double = null): WeightedFontFamily = {
     val __obj = js.Dynamic.literal()
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightedFontFamily]
   }

@@ -14,7 +14,7 @@ trait Anon_PBC extends js.Object {
 object Anon_PBC {
   @scala.inline
   def apply(PBC: PBC, PIN: PIN): Anon_PBC = {
-    val __obj = js.Dynamic.literal(PBC = PBC, PIN = PIN)
+    val __obj = js.Dynamic.literal(PBC = PBC.asInstanceOf[js.Any], PIN = PIN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PBC]
   }

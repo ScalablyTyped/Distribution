@@ -39,15 +39,15 @@ object WaterfallOptions {
     requests: String = null
   ): WaterfallOptions = {
     val __obj = js.Dynamic.literal()
-    if (chartType != null) __obj.updateDynamic("chartType")(chartType)
+    if (chartType != null) __obj.updateDynamic("chartType")(chartType.asInstanceOf[js.Any])
     if (chartWidth != null) __obj.updateDynamic("chartWidth")(chartWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorByMime)) __obj.updateDynamic("colorByMime")(colorByMime)
+    if (!js.isUndefined(colorByMime)) __obj.updateDynamic("colorByMime")(colorByMime.asInstanceOf[js.Any])
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(noBandwidth)) __obj.updateDynamic("noBandwidth")(noBandwidth)
-    if (!js.isUndefined(noCPU)) __obj.updateDynamic("noCPU")(noCPU)
-    if (!js.isUndefined(noEllipsis)) __obj.updateDynamic("noEllipsis")(noEllipsis)
-    if (!js.isUndefined(noLabels)) __obj.updateDynamic("noLabels")(noLabels)
-    if (requests != null) __obj.updateDynamic("requests")(requests)
+    if (!js.isUndefined(noBandwidth)) __obj.updateDynamic("noBandwidth")(noBandwidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCPU)) __obj.updateDynamic("noCPU")(noCPU.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEllipsis)) __obj.updateDynamic("noEllipsis")(noEllipsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLabels)) __obj.updateDynamic("noLabels")(noLabels.asInstanceOf[js.Any])
+    if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaterfallOptions]
   }
 }

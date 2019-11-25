@@ -14,7 +14,7 @@ trait EncryptedData extends js.Object {
 object EncryptedData {
   @scala.inline
   def apply(ciphertext: String, ephemPublicKey: String, nonce: String, version: EncryptionType): EncryptedData = {
-    val __obj = js.Dynamic.literal(ciphertext = ciphertext, ephemPublicKey = ephemPublicKey, nonce = nonce, version = version)
+    val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], ephemPublicKey = ephemPublicKey.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EncryptedData]
   }

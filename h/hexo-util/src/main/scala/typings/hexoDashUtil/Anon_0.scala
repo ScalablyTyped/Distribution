@@ -20,9 +20,9 @@ object Anon_0 {
     StringDictionary: /* name */ StringDictionary[js.Any] = null
   ): Anon_0 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("0")(`0`)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_0]
   }
 }

@@ -13,8 +13,8 @@ object Anon_Template {
   @scala.inline
   def apply(template: String = null, `type`: String = null): Anon_Template = {
     val __obj = js.Dynamic.literal()
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Template]
   }
 }

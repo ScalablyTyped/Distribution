@@ -11,7 +11,7 @@ trait GridViewColumnCancelEventArgs extends CancelEventArgs {
 object GridViewColumnCancelEventArgs {
   @scala.inline
   def apply(cancel: Boolean, column: BootstrapGridViewColumn, sender: Control): GridViewColumnCancelEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, column = column, sender = sender)
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridViewColumnCancelEventArgs]
   }

@@ -21,7 +21,7 @@ object Id {
     protocolVersion: String,
     publicKey: String
   ): Id = {
-    val __obj = js.Dynamic.literal(addresses = addresses, agentVersion = agentVersion, id = id, protocolVersion = protocolVersion, publicKey = publicKey)
+    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], agentVersion = agentVersion.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], protocolVersion = protocolVersion.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Id]
   }

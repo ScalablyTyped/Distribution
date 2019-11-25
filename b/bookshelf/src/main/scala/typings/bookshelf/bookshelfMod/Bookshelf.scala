@@ -1,6 +1,5 @@
 package typings.bookshelf.bookshelfMod
 
-import typings.bluebird.bluebirdMod.^
 import typings.knex.knexMod.AliasDict
 import typings.knex.knexMod.Knex
 import typings.knex.knexMod.QueryBuilder
@@ -27,6 +26,6 @@ trait Bookshelf
   def plugin(name: js.Array[String], options: js.Any): Bookshelf = js.native
   def plugin(name: js.Function): Bookshelf = js.native
   def plugin(name: js.Function, options: js.Any): Bookshelf = js.native
-  def transaction[T](callback: js.Function1[/* transaction */ Transaction[_, _], js.Thenable[T]]): ^[T] = js.native
+  def transaction[T](callback: js.Function1[/* transaction */ Transaction[_, _], js.Thenable[T]]): typings.bluebird.bluebirdMod.^[T] = js.native
 }
 

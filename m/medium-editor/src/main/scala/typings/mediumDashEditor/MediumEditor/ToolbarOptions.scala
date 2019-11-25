@@ -39,19 +39,19 @@ object ToolbarOptions {
     updateOnEmptySelection: js.UndefOr[Boolean] = js.undefined
   ): ToolbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (!js.isUndefined(allowMultiParagraphSelection)) __obj.updateDynamic("allowMultiParagraphSelection")(allowMultiParagraphSelection)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiParagraphSelection)) __obj.updateDynamic("allowMultiParagraphSelection")(allowMultiParagraphSelection.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (diffLeft != null) __obj.updateDynamic("diffLeft")(diffLeft.asInstanceOf[js.Any])
     if (diffTop != null) __obj.updateDynamic("diffTop")(diffTop.asInstanceOf[js.Any])
-    if (firstButtonClass != null) __obj.updateDynamic("firstButtonClass")(firstButtonClass)
-    if (lastButtonClass != null) __obj.updateDynamic("lastButtonClass")(lastButtonClass)
-    if (relativeContainer != null) __obj.updateDynamic("relativeContainer")(relativeContainer)
-    if (!js.isUndefined(standardizeSelectionStart)) __obj.updateDynamic("standardizeSelectionStart")(standardizeSelectionStart)
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)
+    if (firstButtonClass != null) __obj.updateDynamic("firstButtonClass")(firstButtonClass.asInstanceOf[js.Any])
+    if (lastButtonClass != null) __obj.updateDynamic("lastButtonClass")(lastButtonClass.asInstanceOf[js.Any])
+    if (relativeContainer != null) __obj.updateDynamic("relativeContainer")(relativeContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(standardizeSelectionStart)) __obj.updateDynamic("standardizeSelectionStart")(standardizeSelectionStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
     if (stickyTopOffset != null) __obj.updateDynamic("stickyTopOffset")(stickyTopOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateOnEmptySelection)) __obj.updateDynamic("updateOnEmptySelection")(updateOnEmptySelection)
+    if (!js.isUndefined(updateOnEmptySelection)) __obj.updateDynamic("updateOnEmptySelection")(updateOnEmptySelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarOptions]
   }
 }

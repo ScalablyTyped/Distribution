@@ -18,7 +18,7 @@ trait Record[TProps /* <: js.Object */] extends js.Object {
     IterableIterator[
       js.Tuple2[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: TProps[keyof TProps] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TProps[keyof TProps] */ js.Any
       ]
     ]
   ] = js.native
@@ -56,8 +56,8 @@ trait Record[TProps /* <: js.Object */] extends js.Object {
     * notSetValue will be returned if provided. Note that this scenario would
     * produce an error when using Flow or TypeScript.
     */
-  def get[K /* <: String */](key: K): /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any = js.native
-  def get[K /* <: String */](key: K, notSetValue: js.Any): /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any = js.native
+  def get[K /* <: String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any = js.native
+  def get[K /* <: String */](key: K, notSetValue: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any = js.native
   def get[T](key: String, notSetValue: T): T = js.native
   def getIn(keyPath: Iterable[_]): js.Any = js.native
   // Reading values
@@ -79,7 +79,10 @@ trait Record[TProps /* <: js.Object */] extends js.Object {
   def remove[K /* <: String */](key: K): this.type = js.native
   def removeIn(keyPath: Iterable[_]): this.type = js.native
   // Persistent changes
-  def set[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any): this.type = js.native
+  def set[K /* <: String */](
+    key: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any
+  ): this.type = js.native
   // Deep persistent changes
   def setIn(keyPath: Iterable[_], value: js.Any): this.type = js.native
   // Conversion to JavaScript types
@@ -89,7 +92,7 @@ trait Record[TProps /* <: js.Object */] extends js.Object {
     * Note: This method may not be overridden. Objects with custom
     * serialization to plain JS may override toJSON() instead.
     */
-  def toJS(): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def toJS(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TProps ]: any}
     */ typings.immutable.immutableStrings.Record with js.Any = js.native
   /**
@@ -103,13 +106,13 @@ trait Record[TProps /* <: js.Object */] extends js.Object {
   // Sequence algorithms
   def toSeq(): Keyed[
     String, 
-    /* import warning: ImportType.apply Failed type conversion: TProps[keyof TProps] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TProps[keyof TProps] */ js.Any
   ] = js.native
   def update[K /* <: String */](
     key: K,
     updater: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: TProps[K] */ /* value */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: TProps[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TProps[K] */ js.Any
     ]
   ): this.type = js.native
   def updateIn(keyPath: Iterable[_], updater: js.Function1[/* value */ js.Any, _]): this.type = js.native

@@ -27,10 +27,10 @@ object Anon_Index {
     line: Int | Double = null,
     word: String = null
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal(message = message, node = node, result = result, ruleName = ruleName)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (word != null) __obj.updateDynamic("word")(word)
+    if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Index]
   }
 }

@@ -26,7 +26,7 @@ trait X11ForwardingConfig extends js.Object {
 object X11ForwardingConfig {
   @scala.inline
   def apply(cookie: String, protocol: String, screen: Double, single: Boolean): X11ForwardingConfig = {
-    val __obj = js.Dynamic.literal(cookie = cookie, protocol = protocol, screen = screen, single = single)
+    val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[X11ForwardingConfig]
   }

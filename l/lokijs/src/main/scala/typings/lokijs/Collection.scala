@@ -51,10 +51,10 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
   var DynamicViews: js.Array[DynamicView[js.Object]] = js.native
   var adaptiveBinaryIndices: Boolean = js.native
   var autoupdate: Boolean = js.native
-  var binaryIndices: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var binaryIndices: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.BinaryIndex}
     */ typings.lokijs.lokijsStrings.Collection with js.Any = js.native
-  var cachedBinaryIndex: (/* import warning: ImportType.apply c Unsupported type mapping: 
+  var cachedBinaryIndex: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]: lokijs.BinaryIndex}
     */ typings.lokijs.lokijsStrings.Collection with js.Any) | Null = js.native
   var cachedData: js.Array[E] | Null = js.native

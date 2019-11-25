@@ -84,19 +84,19 @@ object Options {
     showTraffic: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFitView)) __obj.updateDynamic("autoFitView")(autoFitView)
+    if (!js.isUndefined(autoFitView)) __obj.updateDynamic("autoFitView")(autoFitView.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(ferry)) __obj.updateDynamic("ferry")(ferry)
-    if (!js.isUndefined(hideMarkers)) __obj.updateDynamic("hideMarkers")(hideMarkers)
-    if (!js.isUndefined(isOutline)) __obj.updateDynamic("isOutline")(isOutline)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
+    if (!js.isUndefined(ferry)) __obj.updateDynamic("ferry")(ferry.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideMarkers)) __obj.updateDynamic("hideMarkers")(hideMarkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOutline)) __obj.updateDynamic("isOutline")(isOutline.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy)
-    if (province != null) __obj.updateDynamic("province")(province)
-    if (!js.isUndefined(showDir)) __obj.updateDynamic("showDir")(showDir)
-    if (!js.isUndefined(showTraffic)) __obj.updateDynamic("showTraffic")(showTraffic)
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (province != null) __obj.updateDynamic("province")(province.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDir)) __obj.updateDynamic("showDir")(showDir.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTraffic)) __obj.updateDynamic("showTraffic")(showTraffic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

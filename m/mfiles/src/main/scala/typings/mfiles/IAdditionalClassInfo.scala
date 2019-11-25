@@ -20,7 +20,7 @@ object IAdditionalClassInfo {
     Clone: () => IAdditionalClassInfo,
     InfoType: MFAdditionalClassInfoType
   ): IAdditionalClassInfo = {
-    val __obj = js.Dynamic.literal(AssignmentClassInfo = AssignmentClassInfo, Clear = js.Any.fromFunction0(Clear), Clone = js.Any.fromFunction0(Clone), InfoType = InfoType)
+    val __obj = js.Dynamic.literal(AssignmentClassInfo = AssignmentClassInfo.asInstanceOf[js.Any], Clear = js.Any.fromFunction0(Clear), Clone = js.Any.fromFunction0(Clone), InfoType = InfoType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAdditionalClassInfo]
   }

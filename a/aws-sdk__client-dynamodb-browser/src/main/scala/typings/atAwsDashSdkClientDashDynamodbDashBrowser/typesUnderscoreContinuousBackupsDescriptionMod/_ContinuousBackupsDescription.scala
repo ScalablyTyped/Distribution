@@ -25,7 +25,7 @@ object _ContinuousBackupsDescription {
     PointInTimeRecoveryDescription: _PointInTimeRecoveryDescription = null
   ): _ContinuousBackupsDescription = {
     val __obj = js.Dynamic.literal(ContinuousBackupsStatus = ContinuousBackupsStatus.asInstanceOf[js.Any])
-    if (PointInTimeRecoveryDescription != null) __obj.updateDynamic("PointInTimeRecoveryDescription")(PointInTimeRecoveryDescription)
+    if (PointInTimeRecoveryDescription != null) __obj.updateDynamic("PointInTimeRecoveryDescription")(PointInTimeRecoveryDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ContinuousBackupsDescription]
   }
 }

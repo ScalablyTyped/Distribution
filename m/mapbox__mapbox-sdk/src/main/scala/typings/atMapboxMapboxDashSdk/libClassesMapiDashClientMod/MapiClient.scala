@@ -14,8 +14,8 @@ trait MapiClient extends js.Object {
 object MapiClient {
   @scala.inline
   def apply(accessToken: String, createRequest: js.Any => MapiRequest, origin: String = null): MapiClient = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, createRequest = js.Any.fromFunction1(createRequest))
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], createRequest = js.Any.fromFunction1(createRequest))
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapiClient]
   }
 }

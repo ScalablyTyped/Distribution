@@ -12,7 +12,7 @@ trait AndQueryCondition[T] extends BinaryQueryCondition[T] {
 object AndQueryCondition {
   @scala.inline
   def apply[T]($and: js.Array[Query[T]]): AndQueryCondition[T] = {
-    val __obj = js.Dynamic.literal($and = $and)
+    val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AndQueryCondition[T]]
   }

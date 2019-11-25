@@ -18,10 +18,10 @@ object DefaultPortLabelProps {
     className: String = null,
     extraProps: js.Any = null
   ): DefaultPortLabelProps = {
-    val __obj = js.Dynamic.literal(model = model)
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
+    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultPortLabelProps]
   }
 }

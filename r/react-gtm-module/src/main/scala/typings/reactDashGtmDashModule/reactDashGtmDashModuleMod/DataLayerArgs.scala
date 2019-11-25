@@ -19,8 +19,8 @@ object DataLayerArgs {
   @scala.inline
   def apply(dataLayer: js.Object = null, dataLayerName: String = null): DataLayerArgs = {
     val __obj = js.Dynamic.literal()
-    if (dataLayer != null) __obj.updateDynamic("dataLayer")(dataLayer)
-    if (dataLayerName != null) __obj.updateDynamic("dataLayerName")(dataLayerName)
+    if (dataLayer != null) __obj.updateDynamic("dataLayer")(dataLayer.asInstanceOf[js.Any])
+    if (dataLayerName != null) __obj.updateDynamic("dataLayerName")(dataLayerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLayerArgs]
   }
 }

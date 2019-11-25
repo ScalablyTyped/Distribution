@@ -24,9 +24,9 @@ object IosNetworkUsageRule {
     managedApps: js.Array[AppListItem] = null
   ): IosNetworkUsageRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cellularDataBlockWhenRoaming)) __obj.updateDynamic("cellularDataBlockWhenRoaming")(cellularDataBlockWhenRoaming)
-    if (!js.isUndefined(cellularDataBlocked)) __obj.updateDynamic("cellularDataBlocked")(cellularDataBlocked)
-    if (managedApps != null) __obj.updateDynamic("managedApps")(managedApps)
+    if (!js.isUndefined(cellularDataBlockWhenRoaming)) __obj.updateDynamic("cellularDataBlockWhenRoaming")(cellularDataBlockWhenRoaming.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellularDataBlocked)) __obj.updateDynamic("cellularDataBlocked")(cellularDataBlocked.asInstanceOf[js.Any])
+    if (managedApps != null) __obj.updateDynamic("managedApps")(managedApps.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosNetworkUsageRule]
   }
 }

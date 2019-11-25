@@ -14,7 +14,7 @@ trait IGenericMeasureProperties extends IGenericProperties {
 object IGenericMeasureProperties {
   @scala.inline
   def apply(qInfo: INxInfo, qMeasure: INxLibraryMeasureDef): IGenericMeasureProperties = {
-    val __obj = js.Dynamic.literal(qInfo = qInfo, qMeasure = qMeasure)
+    val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qMeasure = qMeasure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGenericMeasureProperties]
   }

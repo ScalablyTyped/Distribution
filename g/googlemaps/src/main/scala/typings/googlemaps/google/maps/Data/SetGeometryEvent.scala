@@ -13,7 +13,7 @@ trait SetGeometryEvent extends js.Object {
 object SetGeometryEvent {
   @scala.inline
   def apply(feature: Feature, newGeometry: Geometry, oldGeometry: Geometry): SetGeometryEvent = {
-    val __obj = js.Dynamic.literal(feature = feature, newGeometry = newGeometry, oldGeometry = oldGeometry)
+    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], newGeometry = newGeometry.asInstanceOf[js.Any], oldGeometry = oldGeometry.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetGeometryEvent]
   }

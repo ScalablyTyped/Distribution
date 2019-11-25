@@ -60,7 +60,7 @@ object ServiceAccount {
     metadata: ObjectMeta,
     secrets: js.Array[ObjectReference]
   ): ServiceAccount = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, automountServiceAccountToken = automountServiceAccountToken, imagePullSecrets = imagePullSecrets, kind = kind, metadata = metadata, secrets = secrets)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], automountServiceAccountToken = automountServiceAccountToken.asInstanceOf[js.Any], imagePullSecrets = imagePullSecrets.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], secrets = secrets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServiceAccount]
   }

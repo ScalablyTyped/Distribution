@@ -34,14 +34,14 @@ object JSNLogAppenderOptions {
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (batchTimeout != null) __obj.updateDynamic("batchTimeout")(batchTimeout.asInstanceOf[js.Any])
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
-    if (disallow != null) __obj.updateDynamic("disallow")(disallow)
-    if (ipRegex != null) __obj.updateDynamic("ipRegex")(ipRegex)
+    if (disallow != null) __obj.updateDynamic("disallow")(disallow.asInstanceOf[js.Any])
+    if (ipRegex != null) __obj.updateDynamic("ipRegex")(ipRegex.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (maxBatchSize != null) __obj.updateDynamic("maxBatchSize")(maxBatchSize.asInstanceOf[js.Any])
     if (sendTimeout != null) __obj.updateDynamic("sendTimeout")(sendTimeout.asInstanceOf[js.Any])
     if (sendWithBufferLevel != null) __obj.updateDynamic("sendWithBufferLevel")(sendWithBufferLevel.asInstanceOf[js.Any])
     if (storeInBufferLevel != null) __obj.updateDynamic("storeInBufferLevel")(storeInBufferLevel.asInstanceOf[js.Any])
-    if (userAgentRegex != null) __obj.updateDynamic("userAgentRegex")(userAgentRegex)
+    if (userAgentRegex != null) __obj.updateDynamic("userAgentRegex")(userAgentRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSNLogAppenderOptions]
   }
 }

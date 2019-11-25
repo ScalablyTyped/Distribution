@@ -12,7 +12,7 @@ trait BaseDistanceScalesInput extends js.Object {
 object BaseDistanceScalesInput {
   @scala.inline
   def apply(latitude: Double, longitude: Double): BaseDistanceScalesInput = {
-    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseDistanceScalesInput]
   }

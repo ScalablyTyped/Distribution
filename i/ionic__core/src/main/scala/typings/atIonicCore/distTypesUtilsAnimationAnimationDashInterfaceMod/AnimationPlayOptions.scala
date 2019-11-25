@@ -11,7 +11,7 @@ trait AnimationPlayOptions extends js.Object {
 object AnimationPlayOptions {
   @scala.inline
   def apply(sync: Boolean): AnimationPlayOptions = {
-    val __obj = js.Dynamic.literal(sync = sync)
+    val __obj = js.Dynamic.literal(sync = sync.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnimationPlayOptions]
   }

@@ -19,7 +19,7 @@ package object distKerasUnderscoreFormatOptimizerUnderscoreConfigMod {
   type AdamSerialization = BaseSerialization[Adam, AdamOptimizerConfig]
   type AdamaxSerialization = BaseSerialization[Adamax, AdamaxOptimizerConfig]
   type MomentumSerialization = BaseSerialization[Momentum, MomentumOptimizerConfig]
-  type OptimizerClassName = /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/optimizer_config.OptimizerSerialization['class_name'] */ js.Any
+  type OptimizerClassName = /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/optimizer_config.OptimizerSerialization['class_name'] */ js.Any
   type OptimizerSerialization = AdadeltaSerialization | AdagradSerialization | AdamSerialization | AdamaxSerialization | MomentumSerialization | RMSPropSerialization | SGDSerialization
   type RMSPropSerialization = BaseSerialization[RMSProp, RMSPropOptimizerConfig]
   type SGDSerialization = BaseSerialization[SGD, SGDOptimizerConfig]

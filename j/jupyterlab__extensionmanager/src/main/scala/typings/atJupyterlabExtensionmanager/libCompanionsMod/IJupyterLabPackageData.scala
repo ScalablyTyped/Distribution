@@ -13,7 +13,7 @@ object IJupyterLabPackageData {
   @scala.inline
   def apply(jupyterlab: Anon_Discovery = null): IJupyterLabPackageData = {
     val __obj = js.Dynamic.literal()
-    if (jupyterlab != null) __obj.updateDynamic("jupyterlab")(jupyterlab)
+    if (jupyterlab != null) __obj.updateDynamic("jupyterlab")(jupyterlab.asInstanceOf[js.Any])
     __obj.asInstanceOf[IJupyterLabPackageData]
   }
 }

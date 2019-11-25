@@ -12,7 +12,7 @@ object TableStyle {
   @scala.inline
   def apply(tableColumnProperties: js.Array[TableColumnProperties] = null): TableStyle = {
     val __obj = js.Dynamic.literal()
-    if (tableColumnProperties != null) __obj.updateDynamic("tableColumnProperties")(tableColumnProperties)
+    if (tableColumnProperties != null) __obj.updateDynamic("tableColumnProperties")(tableColumnProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableStyle]
   }
 }

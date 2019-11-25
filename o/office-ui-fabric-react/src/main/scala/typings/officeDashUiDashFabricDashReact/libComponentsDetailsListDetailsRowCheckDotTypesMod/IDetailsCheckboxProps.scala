@@ -13,8 +13,8 @@ trait IDetailsCheckboxProps extends js.Object {
 object IDetailsCheckboxProps {
   @scala.inline
   def apply(checked: Boolean, theme: ITheme = null): IDetailsCheckboxProps = {
-    val __obj = js.Dynamic.literal(checked = checked)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsCheckboxProps]
   }
 }

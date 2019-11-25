@@ -13,8 +13,8 @@ object PivotGroupValueMetadata {
   @scala.inline
   def apply(collapsed: js.UndefOr[Boolean] = js.undefined, value: ExtendedValue = null): PivotGroupValueMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGroupValueMetadata]
   }
 }

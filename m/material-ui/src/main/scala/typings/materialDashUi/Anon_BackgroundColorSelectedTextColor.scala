@@ -14,9 +14,9 @@ object Anon_BackgroundColorSelectedTextColor {
   @scala.inline
   def apply(backgroundColor: String = null, selectedTextColor: String = null, textColor: String = null): Anon_BackgroundColorSelectedTextColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (selectedTextColor != null) __obj.updateDynamic("selectedTextColor")(selectedTextColor)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (selectedTextColor != null) __obj.updateDynamic("selectedTextColor")(selectedTextColor.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorSelectedTextColor]
   }
 }

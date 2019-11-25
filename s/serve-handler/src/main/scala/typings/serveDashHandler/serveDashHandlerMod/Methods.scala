@@ -27,10 +27,10 @@ object Methods {
     sendError: (/* absolutePath */ js.UndefOr[String], /* response */ js.UndefOr[ServerResponse], /* acceptsJSON */ js.UndefOr[Boolean], /* current */ js.UndefOr[String], /* handlers */ js.UndefOr[Methods], /* config */ js.UndefOr[Config], /* spec */ js.UndefOr[js.Any]) => js.Promise[Unit] = null
   ): Methods = {
     val __obj = js.Dynamic.literal()
-    if (createReadStream != null) __obj.updateDynamic("createReadStream")(createReadStream)
-    if (lstat != null) __obj.updateDynamic("lstat")(lstat)
-    if (readdir != null) __obj.updateDynamic("readdir")(readdir)
-    if (realpath != null) __obj.updateDynamic("realpath")(realpath)
+    if (createReadStream != null) __obj.updateDynamic("createReadStream")(createReadStream.asInstanceOf[js.Any])
+    if (lstat != null) __obj.updateDynamic("lstat")(lstat.asInstanceOf[js.Any])
+    if (readdir != null) __obj.updateDynamic("readdir")(readdir.asInstanceOf[js.Any])
+    if (realpath != null) __obj.updateDynamic("realpath")(realpath.asInstanceOf[js.Any])
     if (sendError != null) __obj.updateDynamic("sendError")(js.Any.fromFunction7(sendError))
     __obj.asInstanceOf[Methods]
   }

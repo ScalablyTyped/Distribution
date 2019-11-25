@@ -44,11 +44,11 @@ object INodeOptions {
     fallback: js.UndefOr[Boolean] = js.undefined,
     title: String = null
   ): INodeOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    js.Dynamic.global.Object.assign(__obj, IIconStyle)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (IIconStyle != null) js.Dynamic.global.Object.assign(__obj, IIconStyle)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[INodeOptions]
   }
 }

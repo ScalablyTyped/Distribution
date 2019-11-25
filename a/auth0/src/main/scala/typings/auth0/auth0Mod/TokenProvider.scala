@@ -12,7 +12,7 @@ trait TokenProvider extends js.Object {
 object TokenProvider {
   @scala.inline
   def apply(enableCache: Boolean, cacheTTLInSeconds: Int | Double = null): TokenProvider = {
-    val __obj = js.Dynamic.literal(enableCache = enableCache)
+    val __obj = js.Dynamic.literal(enableCache = enableCache.asInstanceOf[js.Any])
     if (cacheTTLInSeconds != null) __obj.updateDynamic("cacheTTLInSeconds")(cacheTTLInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenProvider]
   }

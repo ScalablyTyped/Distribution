@@ -36,12 +36,12 @@ object InitEventArgs {
     `type`: String = null
   ): InitEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Model != null) __obj.updateDynamic("Model")(Model)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitEventArgs]
   }
 }

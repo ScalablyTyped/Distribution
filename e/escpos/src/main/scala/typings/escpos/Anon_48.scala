@@ -18,7 +18,7 @@ trait Anon_48 extends js.Object {
 object Anon_48 {
   @scala.inline
   def apply(H: `51`, L: `48`, M: `49`, Q: `50`): Anon_48 = {
-    val __obj = js.Dynamic.literal(H = H, L = L, M = M, Q = Q)
+    val __obj = js.Dynamic.literal(H = H.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], M = M.asInstanceOf[js.Any], Q = Q.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_48]
   }

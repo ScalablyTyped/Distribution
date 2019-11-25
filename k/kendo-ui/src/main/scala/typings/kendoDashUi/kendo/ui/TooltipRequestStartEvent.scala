@@ -19,9 +19,9 @@ object TooltipRequestStartEvent {
     options: js.Any = null,
     target: JQuery = null
   ): TooltipRequestStartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipRequestStartEvent]
   }
 }

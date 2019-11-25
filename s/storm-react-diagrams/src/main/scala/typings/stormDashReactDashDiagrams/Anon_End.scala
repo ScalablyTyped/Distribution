@@ -19,7 +19,7 @@ object Anon_End {
     pathToStart: js.Array[js.Array[Double]],
     start: Anon_X
   ): Anon_End = {
-    val __obj = js.Dynamic.literal(end = end, pathToEnd = pathToEnd, pathToStart = pathToStart, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], pathToEnd = pathToEnd.asInstanceOf[js.Any], pathToStart = pathToStart.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_End]
   }

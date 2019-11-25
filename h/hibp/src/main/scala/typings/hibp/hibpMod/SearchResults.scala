@@ -13,8 +13,8 @@ object SearchResults {
   @scala.inline
   def apply(breaches: js.Array[Breach] = null, pastes: js.Array[Paste] = null): SearchResults = {
     val __obj = js.Dynamic.literal()
-    if (breaches != null) __obj.updateDynamic("breaches")(breaches)
-    if (pastes != null) __obj.updateDynamic("pastes")(pastes)
+    if (breaches != null) __obj.updateDynamic("breaches")(breaches.asInstanceOf[js.Any])
+    if (pastes != null) __obj.updateDynamic("pastes")(pastes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResults]
   }
 }

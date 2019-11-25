@@ -35,17 +35,17 @@ object BarcodeScanOptions {
     showTorchButton: js.UndefOr[Boolean] = js.undefined,
     torchOn: js.UndefOr[Boolean] = js.undefined
   ): BarcodeScanOptions = {
-    val __obj = js.Dynamic.literal(disableAnimations = disableAnimations)
-    if (!js.isUndefined(disableSuccessBeep)) __obj.updateDynamic("disableSuccessBeep")(disableSuccessBeep)
-    if (formats != null) __obj.updateDynamic("formats")(formats)
+    val __obj = js.Dynamic.literal(disableAnimations = disableAnimations.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSuccessBeep)) __obj.updateDynamic("disableSuccessBeep")(disableSuccessBeep.asInstanceOf[js.Any])
+    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferFrontCamera)) __obj.updateDynamic("preferFrontCamera")(preferFrontCamera)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (!js.isUndefined(preferFrontCamera)) __obj.updateDynamic("preferFrontCamera")(preferFrontCamera.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (resultDisplayDuration != null) __obj.updateDynamic("resultDisplayDuration")(resultDisplayDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveHistory)) __obj.updateDynamic("saveHistory")(saveHistory)
-    if (!js.isUndefined(showFlipCameraButton)) __obj.updateDynamic("showFlipCameraButton")(showFlipCameraButton)
-    if (!js.isUndefined(showTorchButton)) __obj.updateDynamic("showTorchButton")(showTorchButton)
-    if (!js.isUndefined(torchOn)) __obj.updateDynamic("torchOn")(torchOn)
+    if (!js.isUndefined(saveHistory)) __obj.updateDynamic("saveHistory")(saveHistory.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFlipCameraButton)) __obj.updateDynamic("showFlipCameraButton")(showFlipCameraButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTorchButton)) __obj.updateDynamic("showTorchButton")(showTorchButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(torchOn)) __obj.updateDynamic("torchOn")(torchOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarcodeScanOptions]
   }
 }

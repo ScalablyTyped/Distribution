@@ -19,8 +19,8 @@ trait Parameters extends js.Object {
 object Parameters {
   @scala.inline
   def apply(jobName: String, groupings: StringDictionary[String] = null): Parameters = {
-    val __obj = js.Dynamic.literal(jobName = jobName)
-    if (groupings != null) __obj.updateDynamic("groupings")(groupings)
+    val __obj = js.Dynamic.literal(jobName = jobName.asInstanceOf[js.Any])
+    if (groupings != null) __obj.updateDynamic("groupings")(groupings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters]
   }
 }

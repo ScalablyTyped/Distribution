@@ -14,9 +14,9 @@ object ScrollerMessages {
   @scala.inline
   def apply(pullTemplate: String = null, refreshTemplate: String = null, releaseTemplate: String = null): ScrollerMessages = {
     val __obj = js.Dynamic.literal()
-    if (pullTemplate != null) __obj.updateDynamic("pullTemplate")(pullTemplate)
-    if (refreshTemplate != null) __obj.updateDynamic("refreshTemplate")(refreshTemplate)
-    if (releaseTemplate != null) __obj.updateDynamic("releaseTemplate")(releaseTemplate)
+    if (pullTemplate != null) __obj.updateDynamic("pullTemplate")(pullTemplate.asInstanceOf[js.Any])
+    if (refreshTemplate != null) __obj.updateDynamic("refreshTemplate")(refreshTemplate.asInstanceOf[js.Any])
+    if (releaseTemplate != null) __obj.updateDynamic("releaseTemplate")(releaseTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollerMessages]
   }
 }

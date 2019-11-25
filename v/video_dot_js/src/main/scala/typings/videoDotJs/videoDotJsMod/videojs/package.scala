@@ -22,6 +22,7 @@ package object videojs {
   type PlayerOptions = VideoJsPlayerOptions
   type Plugin = Plugin_
   type Tech = Tech_
+  type TextTrack = TextTrack_
   type TextTrackCueList = TextTrackCueList_
   type XhrCallback = js.Function3[
     /* error */ js.UndefOr[Error], 

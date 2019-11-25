@@ -18,7 +18,7 @@ trait WritableSpecification extends js.Object {
 object WritableSpecification {
   @scala.inline
   def apply(db: Database, name: String, pk: String, schema: String): WritableSpecification = {
-    val __obj = js.Dynamic.literal(db = db, name = name, pk = pk, schema = schema)
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WritableSpecification]
   }

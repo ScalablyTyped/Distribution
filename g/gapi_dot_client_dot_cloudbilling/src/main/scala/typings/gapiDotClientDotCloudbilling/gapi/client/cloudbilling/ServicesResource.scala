@@ -15,7 +15,7 @@ trait ServicesResource extends js.Object {
 object ServicesResource {
   @scala.inline
   def apply(list: Anon_AccesstokenAltBearertoken => Request[ListServicesResponse], skus: SkusResource): ServicesResource = {
-    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), skus = skus)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), skus = skus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServicesResource]
   }

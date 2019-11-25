@@ -13,7 +13,7 @@ trait Anon_ImportedBy extends js.Object {
 object Anon_ImportedBy {
   @scala.inline
   def apply(importedBy: js.Array[String], imports: js.Array[String], modified: String): Anon_ImportedBy = {
-    val __obj = js.Dynamic.literal(importedBy = importedBy, imports = imports, modified = modified)
+    val __obj = js.Dynamic.literal(importedBy = importedBy.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ImportedBy]
   }

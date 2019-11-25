@@ -28,10 +28,10 @@ object Update {
     next: Update[State] = null,
     nextEffect: Update[State] = null
   ): Update[State] = {
-    val __obj = js.Dynamic.literal(expirationTime = expirationTime, payload = payload, tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expirationTime = expirationTime.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (nextEffect != null) __obj.updateDynamic("nextEffect")(nextEffect)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (nextEffect != null) __obj.updateDynamic("nextEffect")(nextEffect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Update[State]]
   }
 }

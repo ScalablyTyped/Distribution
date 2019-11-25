@@ -22,8 +22,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (busyTimeout != null) __obj.updateDynamic("busyTimeout")(busyTimeout.asInstanceOf[js.Any])
     if (keySize != null) __obj.updateDynamic("keySize")(keySize.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

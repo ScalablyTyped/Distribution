@@ -32,11 +32,11 @@ object ExpandedEventArgs {
     requestType: String = null
   ): ExpandedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
     if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex.asInstanceOf[js.Any])
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandedEventArgs]
   }
 }

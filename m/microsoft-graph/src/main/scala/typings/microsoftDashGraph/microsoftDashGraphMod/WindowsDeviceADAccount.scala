@@ -15,9 +15,9 @@ object WindowsDeviceADAccount {
   @scala.inline
   def apply(domainName: String = null, password: String = null, userName: String = null): WindowsDeviceADAccount = {
     val __obj = js.Dynamic.literal()
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsDeviceADAccount]
   }
 }

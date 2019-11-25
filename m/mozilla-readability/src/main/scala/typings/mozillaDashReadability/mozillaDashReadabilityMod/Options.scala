@@ -22,8 +22,8 @@ object Options {
     wordThreshold: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (classesToPreserve != null) __obj.updateDynamic("classesToPreserve")(classesToPreserve)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (classesToPreserve != null) __obj.updateDynamic("classesToPreserve")(classesToPreserve.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (maxElemsToParse != null) __obj.updateDynamic("maxElemsToParse")(maxElemsToParse.asInstanceOf[js.Any])
     if (nbTopCandidates != null) __obj.updateDynamic("nbTopCandidates")(nbTopCandidates.asInstanceOf[js.Any])
     if (wordThreshold != null) __obj.updateDynamic("wordThreshold")(wordThreshold.asInstanceOf[js.Any])

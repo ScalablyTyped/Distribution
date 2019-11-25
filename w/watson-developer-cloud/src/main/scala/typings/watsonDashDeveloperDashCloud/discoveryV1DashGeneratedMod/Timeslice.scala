@@ -18,9 +18,9 @@ object Timeslice {
   @scala.inline
   def apply(anomaly: js.UndefOr[Boolean] = js.undefined, field: String = null, interval: String = null): Timeslice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anomaly)) __obj.updateDynamic("anomaly")(anomaly)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (interval != null) __obj.updateDynamic("interval")(interval)
+    if (!js.isUndefined(anomaly)) __obj.updateDynamic("anomaly")(anomaly.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timeslice]
   }
 }

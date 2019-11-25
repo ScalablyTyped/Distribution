@@ -26,10 +26,10 @@ object SyncfileAppender {
     layout: Layout = null,
     maxLogSize: Double | String = null
   ): SyncfileAppender = {
-    val __obj = js.Dynamic.literal(filename = filename)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncfileAppender]
   }

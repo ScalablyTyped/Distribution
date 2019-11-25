@@ -15,7 +15,7 @@ trait Anon_Band extends js.Object {
 object Anon_Band {
   @scala.inline
   def apply(band: String, southHemi: Boolean, x: Double, y: Double, zone: Double): Anon_Band = {
-    val __obj = js.Dynamic.literal(band = band, southHemi = southHemi, x = x, y = y, zone = zone)
+    val __obj = js.Dynamic.literal(band = band.asInstanceOf[js.Any], southHemi = southHemi.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Band]
   }

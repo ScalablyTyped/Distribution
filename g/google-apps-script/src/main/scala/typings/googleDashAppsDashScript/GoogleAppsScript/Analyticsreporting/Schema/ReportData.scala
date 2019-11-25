@@ -30,15 +30,15 @@ object ReportData {
     totals: js.Array[DateRangeValues] = null
   ): ReportData = {
     val __obj = js.Dynamic.literal()
-    if (dataLastRefreshed != null) __obj.updateDynamic("dataLastRefreshed")(dataLastRefreshed)
-    if (!js.isUndefined(isDataGolden)) __obj.updateDynamic("isDataGolden")(isDataGolden)
-    if (maximums != null) __obj.updateDynamic("maximums")(maximums)
-    if (minimums != null) __obj.updateDynamic("minimums")(minimums)
+    if (dataLastRefreshed != null) __obj.updateDynamic("dataLastRefreshed")(dataLastRefreshed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDataGolden)) __obj.updateDynamic("isDataGolden")(isDataGolden.asInstanceOf[js.Any])
+    if (maximums != null) __obj.updateDynamic("maximums")(maximums.asInstanceOf[js.Any])
+    if (minimums != null) __obj.updateDynamic("minimums")(minimums.asInstanceOf[js.Any])
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (samplesReadCounts != null) __obj.updateDynamic("samplesReadCounts")(samplesReadCounts)
-    if (samplingSpaceSizes != null) __obj.updateDynamic("samplingSpaceSizes")(samplingSpaceSizes)
-    if (totals != null) __obj.updateDynamic("totals")(totals)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (samplesReadCounts != null) __obj.updateDynamic("samplesReadCounts")(samplesReadCounts.asInstanceOf[js.Any])
+    if (samplingSpaceSizes != null) __obj.updateDynamic("samplingSpaceSizes")(samplingSpaceSizes.asInstanceOf[js.Any])
+    if (totals != null) __obj.updateDynamic("totals")(totals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportData]
   }
 }

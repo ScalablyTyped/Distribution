@@ -63,16 +63,16 @@ object ScreenAnimationOptions {
     y: OptionsAnimationPropertyConfig = null
   ): ScreenAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation)
-    if (rotationX != null) __obj.updateDynamic("rotationX")(rotationX)
-    if (rotationY != null) __obj.updateDynamic("rotationY")(rotationY)
-    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX)
-    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY)
-    if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender)
-    if (x != null) __obj.updateDynamic("x")(x)
-    if (y != null) __obj.updateDynamic("y")(y)
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (rotationX != null) __obj.updateDynamic("rotationX")(rotationX.asInstanceOf[js.Any])
+    if (rotationY != null) __obj.updateDynamic("rotationY")(rotationY.asInstanceOf[js.Any])
+    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
+    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenAnimationOptions]
   }
 }

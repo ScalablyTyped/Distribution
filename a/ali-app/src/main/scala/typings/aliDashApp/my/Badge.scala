@@ -29,7 +29,7 @@ trait Badge extends js.Object {
 object Badge {
   @scala.inline
   def apply(index: Double, text: String, `type`: none | point | num | text | more | String): Badge = {
-    val __obj = js.Dynamic.literal(index = index, text = text)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Badge]
   }

@@ -93,7 +93,7 @@ object JWT {
     valid: Boolean,
     verify: String => JWT
   ): JWT = {
-    val __obj = js.Dynamic.literal(expired = expired, options = options, payload = payload, resign = js.Any.fromFunction0(resign), revoke = js.Any.fromFunction0(revoke), secret = secret, sign = js.Any.fromFunction1(sign), stale = stale, store = js.Any.fromFunction1(store), toJSON = js.Any.fromFunction0(toJSON), token = token, valid = valid, verify = js.Any.fromFunction1(verify))
+    val __obj = js.Dynamic.literal(expired = expired.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], resign = js.Any.fromFunction0(resign), revoke = js.Any.fromFunction0(revoke), secret = secret.asInstanceOf[js.Any], sign = js.Any.fromFunction1(sign), stale = stale.asInstanceOf[js.Any], store = js.Any.fromFunction1(store), toJSON = js.Any.fromFunction0(toJSON), token = token.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], verify = js.Any.fromFunction1(verify))
   
     __obj.asInstanceOf[JWT]
   }

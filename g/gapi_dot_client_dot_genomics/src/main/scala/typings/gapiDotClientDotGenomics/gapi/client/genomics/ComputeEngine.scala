@@ -24,10 +24,10 @@ object ComputeEngine {
     zone: String = null
   ): ComputeEngine = {
     val __obj = js.Dynamic.literal()
-    if (diskNames != null) __obj.updateDynamic("diskNames")(diskNames)
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName)
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
-    if (zone != null) __obj.updateDynamic("zone")(zone)
+    if (diskNames != null) __obj.updateDynamic("diskNames")(diskNames.asInstanceOf[js.Any])
+    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeEngine]
   }
 }

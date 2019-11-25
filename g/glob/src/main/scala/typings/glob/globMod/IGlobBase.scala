@@ -33,7 +33,7 @@ object IGlobBase {
     statCache: StringDictionary[js.UndefOr[`false` | Anon_IsDirectory]],
     symlinks: StringDictionary[js.UndefOr[Boolean]]
   ): IGlobBase = {
-    val __obj = js.Dynamic.literal(aborted = aborted, cache = cache, found = found, minimatch = minimatch, options = options, realpathCache = realpathCache, statCache = statCache, symlinks = symlinks)
+    val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], found = found.asInstanceOf[js.Any], minimatch = minimatch.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], realpathCache = realpathCache.asInstanceOf[js.Any], statCache = statCache.asInstanceOf[js.Any], symlinks = symlinks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGlobBase]
   }

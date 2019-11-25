@@ -21,7 +21,7 @@ object FbsearchRepositoryTopsearchFlatResponseHashtag {
     profile_pic_url: String,
     search_result_subtitle: String
   ): FbsearchRepositoryTopsearchFlatResponseHashtag = {
-    val __obj = js.Dynamic.literal(id = id, media_count = media_count, name = name, profile_pic_url = profile_pic_url, search_result_subtitle = search_result_subtitle)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], media_count = media_count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], search_result_subtitle = search_result_subtitle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponseHashtag]
   }

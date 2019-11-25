@@ -1,8 +1,6 @@
 package typings.dojo.dojox.widget
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojoStrings.invalidRendering
 import typings.dojo.dojoStrings.invalidatingProperties
@@ -65,8 +63,24 @@ class _Invalidating () extends Stateful {
     */
   def validateRendering(): Unit = js.native
   @JSName("watch")
-  def watch_invalidRendering(property: invalidRendering, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_invalidRendering(
+    property: invalidRendering,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_invalidatingProperties(property: invalidatingProperties, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_invalidatingProperties(
+    property: invalidatingProperties,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

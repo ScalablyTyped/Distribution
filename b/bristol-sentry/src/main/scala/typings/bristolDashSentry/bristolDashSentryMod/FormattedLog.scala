@@ -14,8 +14,8 @@ trait FormattedLog extends js.Object {
 object FormattedLog {
   @scala.inline
   def apply(extra: js.Array[js.Object], message: String, error: Error = null): FormattedLog = {
-    val __obj = js.Dynamic.literal(extra = extra, message = message)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormattedLog]
   }
 }

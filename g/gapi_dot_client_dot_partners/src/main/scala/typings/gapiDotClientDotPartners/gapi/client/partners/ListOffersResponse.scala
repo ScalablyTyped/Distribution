@@ -21,9 +21,9 @@ object ListOffersResponse {
     responseMetadata: ResponseMetadata = null
   ): ListOffersResponse = {
     val __obj = js.Dynamic.literal()
-    if (availableOffers != null) __obj.updateDynamic("availableOffers")(availableOffers)
-    if (noOfferReason != null) __obj.updateDynamic("noOfferReason")(noOfferReason)
-    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    if (availableOffers != null) __obj.updateDynamic("availableOffers")(availableOffers.asInstanceOf[js.Any])
+    if (noOfferReason != null) __obj.updateDynamic("noOfferReason")(noOfferReason.asInstanceOf[js.Any])
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOffersResponse]
   }
 }

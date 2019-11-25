@@ -64,14 +64,14 @@ object HotNotifierInfo {
     outdatedModules: js.Array[Double] = null,
     parentId: Int | Double = null
   ): HotNotifierInfo = {
-    val __obj = js.Dynamic.literal(moduleId = moduleId)
+    val __obj = js.Dynamic.literal(moduleId = moduleId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (chain != null) __obj.updateDynamic("chain")(chain)
+    if (chain != null) __obj.updateDynamic("chain")(chain.asInstanceOf[js.Any])
     if (dependencyId != null) __obj.updateDynamic("dependencyId")(dependencyId.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (originalError != null) __obj.updateDynamic("originalError")(originalError)
-    if (outdatedDependencies != null) __obj.updateDynamic("outdatedDependencies")(outdatedDependencies)
-    if (outdatedModules != null) __obj.updateDynamic("outdatedModules")(outdatedModules)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (originalError != null) __obj.updateDynamic("originalError")(originalError.asInstanceOf[js.Any])
+    if (outdatedDependencies != null) __obj.updateDynamic("outdatedDependencies")(outdatedDependencies.asInstanceOf[js.Any])
+    if (outdatedModules != null) __obj.updateDynamic("outdatedModules")(outdatedModules.asInstanceOf[js.Any])
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotNotifierInfo]
   }

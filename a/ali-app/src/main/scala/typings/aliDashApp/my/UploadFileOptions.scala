@@ -41,11 +41,11 @@ object UploadFileOptions {
     header: RequestHeader = null,
     success: /* res */ Anon_DataHeader => Unit = null
   ): UploadFileOptions = {
-    val __obj = js.Dynamic.literal(fileName = fileName, filePath = filePath, fileType = fileType.asInstanceOf[js.Any], url = url)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (formData != null) __obj.updateDynamic("formData")(formData)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[UploadFileOptions]
   }

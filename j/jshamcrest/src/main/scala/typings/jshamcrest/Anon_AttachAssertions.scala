@@ -13,8 +13,8 @@ object Anon_AttachAssertions {
   @scala.inline
   def apply(attachAssertions: js.UndefOr[Boolean] = js.undefined, scope: js.Object = null): Anon_AttachAssertions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attachAssertions)) __obj.updateDynamic("attachAssertions")(attachAssertions)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (!js.isUndefined(attachAssertions)) __obj.updateDynamic("attachAssertions")(attachAssertions.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AttachAssertions]
   }
 }

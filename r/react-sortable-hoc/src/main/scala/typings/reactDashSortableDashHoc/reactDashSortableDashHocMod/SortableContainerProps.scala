@@ -61,18 +61,18 @@ object SortableContainerProps {
     useWindowAsScrollContainer: js.UndefOr[Boolean] = js.undefined
   ): SortableContainerProps = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction1(getContainer))
     if (getHelperDimensions != null) __obj.updateDynamic("getHelperDimensions")(js.Any.fromFunction1(getHelperDimensions))
-    if (helperClass != null) __obj.updateDynamic("helperClass")(helperClass)
+    if (helperClass != null) __obj.updateDynamic("helperClass")(helperClass.asInstanceOf[js.Any])
     if (helperContainer != null) __obj.updateDynamic("helperContainer")(helperContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideSortableGhost)) __obj.updateDynamic("hideSortableGhost")(hideSortableGhost)
-    if (keyCodes != null) __obj.updateDynamic("keyCodes")(keyCodes)
+    if (!js.isUndefined(hideSortableGhost)) __obj.updateDynamic("hideSortableGhost")(hideSortableGhost.asInstanceOf[js.Any])
+    if (keyCodes != null) __obj.updateDynamic("keyCodes")(keyCodes.asInstanceOf[js.Any])
     if (keyboardSortingTransitionDuration != null) __obj.updateDynamic("keyboardSortingTransitionDuration")(keyboardSortingTransitionDuration.asInstanceOf[js.Any])
-    if (lockAxis != null) __obj.updateDynamic("lockAxis")(lockAxis)
+    if (lockAxis != null) __obj.updateDynamic("lockAxis")(lockAxis.asInstanceOf[js.Any])
     if (lockOffset != null) __obj.updateDynamic("lockOffset")(lockOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockToContainerEdges)) __obj.updateDynamic("lockToContainerEdges")(lockToContainerEdges)
+    if (!js.isUndefined(lockToContainerEdges)) __obj.updateDynamic("lockToContainerEdges")(lockToContainerEdges.asInstanceOf[js.Any])
     if (onSortEnd != null) __obj.updateDynamic("onSortEnd")(js.Any.fromFunction2(onSortEnd))
     if (onSortMove != null) __obj.updateDynamic("onSortMove")(js.Any.fromFunction1(onSortMove))
     if (onSortOver != null) __obj.updateDynamic("onSortOver")(js.Any.fromFunction2(onSortOver))
@@ -82,8 +82,8 @@ object SortableContainerProps {
     if (shouldCancelStart != null) __obj.updateDynamic("shouldCancelStart")(js.Any.fromFunction1(shouldCancelStart))
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     if (updateBeforeSortStart != null) __obj.updateDynamic("updateBeforeSortStart")(js.Any.fromFunction2(updateBeforeSortStart))
-    if (!js.isUndefined(useDragHandle)) __obj.updateDynamic("useDragHandle")(useDragHandle)
-    if (!js.isUndefined(useWindowAsScrollContainer)) __obj.updateDynamic("useWindowAsScrollContainer")(useWindowAsScrollContainer)
+    if (!js.isUndefined(useDragHandle)) __obj.updateDynamic("useDragHandle")(useDragHandle.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWindowAsScrollContainer)) __obj.updateDynamic("useWindowAsScrollContainer")(useWindowAsScrollContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableContainerProps]
   }
 }

@@ -12,7 +12,7 @@ trait ReposUpdateBranchProtectionResponseEnforceAdmins extends js.Object {
 object ReposUpdateBranchProtectionResponseEnforceAdmins {
   @scala.inline
   def apply(enabled: Boolean, url: String): ReposUpdateBranchProtectionResponseEnforceAdmins = {
-    val __obj = js.Dynamic.literal(enabled = enabled, url = url)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposUpdateBranchProtectionResponseEnforceAdmins]
   }

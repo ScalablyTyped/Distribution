@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait TransactionMode extends js.Object
 
+object TransactionMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def r: typings.dexie.dexieStrings.r = this.cast("r")
+  @scala.inline
+  def `r!`: typings.dexie.dexieStrings.`r!` = this.cast("r!")
+  @scala.inline
+  def `r?`: typings.dexie.dexieStrings.`r?` = this.cast("r?")
+  @scala.inline
+  def rw: typings.dexie.dexieStrings.rw = this.cast("rw")
+  @scala.inline
+  def `rw!`: typings.dexie.dexieStrings.`rw!` = this.cast("rw!")
+  @scala.inline
+  def `rw?`: typings.dexie.dexieStrings.`rw?` = this.cast("rw?")
+}
+

@@ -29,19 +29,19 @@ object RenderPageOptions {
     workspaceName: String = null
   ): RenderPageOptions = {
     val __obj = js.Dynamic.literal()
-    if (cdnUrl != null) __obj.updateDynamic("cdnUrl")(cdnUrl)
-    if (codeTheme != null) __obj.updateDynamic("codeTheme")(codeTheme)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (faviconUrl != null) __obj.updateDynamic("faviconUrl")(faviconUrl)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
-    if (subscriptionEndpoint != null) __obj.updateDynamic("subscriptionEndpoint")(subscriptionEndpoint)
-    if (tabs != null) __obj.updateDynamic("tabs")(tabs)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (version != null) __obj.updateDynamic("version")(version)
-    if (workspaceName != null) __obj.updateDynamic("workspaceName")(workspaceName)
+    if (cdnUrl != null) __obj.updateDynamic("cdnUrl")(cdnUrl.asInstanceOf[js.Any])
+    if (codeTheme != null) __obj.updateDynamic("codeTheme")(codeTheme.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (faviconUrl != null) __obj.updateDynamic("faviconUrl")(faviconUrl.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (subscriptionEndpoint != null) __obj.updateDynamic("subscriptionEndpoint")(subscriptionEndpoint.asInstanceOf[js.Any])
+    if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (workspaceName != null) __obj.updateDynamic("workspaceName")(workspaceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderPageOptions]
   }
 }

@@ -24,10 +24,10 @@ object WBProps {
     WBProps: WorkbookProperties = null
   ): WBProps = {
     val __obj = js.Dynamic.literal()
-    if (Names != null) __obj.updateDynamic("Names")(Names)
-    if (Sheets != null) __obj.updateDynamic("Sheets")(Sheets)
-    if (Views != null) __obj.updateDynamic("Views")(Views)
-    if (WBProps != null) __obj.updateDynamic("WBProps")(WBProps)
+    if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
+    if (Sheets != null) __obj.updateDynamic("Sheets")(Sheets.asInstanceOf[js.Any])
+    if (Views != null) __obj.updateDynamic("Views")(Views.asInstanceOf[js.Any])
+    if (WBProps != null) __obj.updateDynamic("WBProps")(WBProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[WBProps]
   }
 }

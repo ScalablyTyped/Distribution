@@ -19,7 +19,7 @@ object RequestSigningArguments {
   def apply(signingDate: DateInput = null, unsignableHeaders: Set[String] = null): RequestSigningArguments = {
     val __obj = js.Dynamic.literal()
     if (signingDate != null) __obj.updateDynamic("signingDate")(signingDate.asInstanceOf[js.Any])
-    if (unsignableHeaders != null) __obj.updateDynamic("unsignableHeaders")(unsignableHeaders)
+    if (unsignableHeaders != null) __obj.updateDynamic("unsignableHeaders")(unsignableHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSigningArguments]
   }
 }

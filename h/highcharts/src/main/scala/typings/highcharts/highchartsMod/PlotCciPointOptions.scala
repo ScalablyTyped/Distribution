@@ -15,7 +15,7 @@ object PlotCciPointOptions {
   @scala.inline
   def apply(events: PlotCciPointEventsOptions = null): PlotCciPointOptions = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotCciPointOptions]
   }
 }

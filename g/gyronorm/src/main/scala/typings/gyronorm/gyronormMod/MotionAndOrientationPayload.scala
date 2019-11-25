@@ -14,8 +14,8 @@ trait MotionAndOrientationPayload extends js.Object {
 object MotionAndOrientationPayload {
   @scala.inline
   def apply(dm: Anon_Alpha, `do`: Anon_Absolute): MotionAndOrientationPayload = {
-    val __obj = js.Dynamic.literal(dm = dm)
-    __obj.updateDynamic("do")(`do`)
+    val __obj = js.Dynamic.literal(dm = dm.asInstanceOf[js.Any])
+    __obj.updateDynamic("do")(`do`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotionAndOrientationPayload]
   }
 }

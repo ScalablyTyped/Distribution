@@ -25,11 +25,11 @@ object AuthOptions {
   ): AuthOptions = {
     val __obj = js.Dynamic.literal()
     if (bearer != null) __obj.updateDynamic("bearer")(bearer.asInstanceOf[js.Any])
-    if (pass != null) __obj.updateDynamic("pass")(pass)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (!js.isUndefined(sendImmediately)) __obj.updateDynamic("sendImmediately")(sendImmediately)
-    if (user != null) __obj.updateDynamic("user")(user)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (pass != null) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendImmediately)) __obj.updateDynamic("sendImmediately")(sendImmediately.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

@@ -21,11 +21,11 @@ object NavigationReplaceActionPayload {
     newKey: String = null,
     params: NavigationParams = null
   ): NavigationReplaceActionPayload = {
-    val __obj = js.Dynamic.literal(routeName = routeName)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (newKey != null) __obj.updateDynamic("newKey")(newKey)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (newKey != null) __obj.updateDynamic("newKey")(newKey.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationReplaceActionPayload]
   }
 }

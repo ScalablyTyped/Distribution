@@ -57,11 +57,11 @@ object IMouseConstraintDefinition {
     `type`: String = null
   ): IMouseConstraintDefinition = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (collisionFilter != null) __obj.updateDynamic("collisionFilter")(collisionFilter)
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
-    if (mouse != null) __obj.updateDynamic("mouse")(mouse)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (collisionFilter != null) __obj.updateDynamic("collisionFilter")(collisionFilter.asInstanceOf[js.Any])
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (mouse != null) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMouseConstraintDefinition]
   }
 }

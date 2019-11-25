@@ -46,9 +46,9 @@ object ConfigFileOpts {
     transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]] = null
   ): ConfigFileOpts = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix)
-    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix.asInstanceOf[js.Any])
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigFileOpts]
   }
 }

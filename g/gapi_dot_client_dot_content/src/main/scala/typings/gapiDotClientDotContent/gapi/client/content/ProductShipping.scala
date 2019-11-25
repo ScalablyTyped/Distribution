@@ -36,13 +36,13 @@ object ProductShipping {
     service: String = null
   ): ProductShipping = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (locationGroupName != null) __obj.updateDynamic("locationGroupName")(locationGroupName)
-    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (price != null) __obj.updateDynamic("price")(price)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (locationGroupName != null) __obj.updateDynamic("locationGroupName")(locationGroupName.asInstanceOf[js.Any])
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductShipping]
   }
 }

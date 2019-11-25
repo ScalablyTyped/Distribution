@@ -55,12 +55,12 @@ object Component {
     directions: js.Array[String] = null,
     imageBaseURL: String = null
   ): Component = {
-    val __obj = js.Dynamic.literal(active = active, text = text)
-    __obj.updateDynamic("type")(`type`)
-    if (abbr != null) __obj.updateDynamic("abbr")(abbr)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
     if (abbr_priority != null) __obj.updateDynamic("abbr_priority")(abbr_priority.asInstanceOf[js.Any])
-    if (directions != null) __obj.updateDynamic("directions")(directions)
-    if (imageBaseURL != null) __obj.updateDynamic("imageBaseURL")(imageBaseURL)
+    if (directions != null) __obj.updateDynamic("directions")(directions.asInstanceOf[js.Any])
+    if (imageBaseURL != null) __obj.updateDynamic("imageBaseURL")(imageBaseURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Component]
   }
 }

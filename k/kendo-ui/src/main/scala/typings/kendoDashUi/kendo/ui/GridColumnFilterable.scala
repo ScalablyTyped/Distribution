@@ -33,15 +33,15 @@ object GridColumnFilterable {
     ui: String | js.Function = null
   ): GridColumnFilterable = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (!js.isUndefined(checkAll)) __obj.updateDynamic("checkAll")(checkAll)
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkAll)) __obj.updateDynamic("checkAll")(checkAll.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra)
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
-    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate)
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
-    if (operators != null) __obj.updateDynamic("operators")(operators)
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
+    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
+    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnFilterable]
   }

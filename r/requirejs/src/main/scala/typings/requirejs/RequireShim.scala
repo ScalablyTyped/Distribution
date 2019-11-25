@@ -28,8 +28,8 @@ object RequireShim {
   @scala.inline
   def apply(deps: js.Array[String] = null, exports: String = null, init: /* repeated */ js.Any => _ = null): RequireShim = {
     val __obj = js.Dynamic.literal()
-    if (deps != null) __obj.updateDynamic("deps")(deps)
-    if (exports != null) __obj.updateDynamic("exports")(exports)
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
+    if (exports != null) __obj.updateDynamic("exports")(exports.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     __obj.asInstanceOf[RequireShim]
   }

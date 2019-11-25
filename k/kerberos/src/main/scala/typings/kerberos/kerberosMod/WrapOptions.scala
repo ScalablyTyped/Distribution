@@ -15,7 +15,7 @@ object WrapOptions {
   @scala.inline
   def apply(user: String = null): WrapOptions = {
     val __obj = js.Dynamic.literal()
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrapOptions]
   }
 }

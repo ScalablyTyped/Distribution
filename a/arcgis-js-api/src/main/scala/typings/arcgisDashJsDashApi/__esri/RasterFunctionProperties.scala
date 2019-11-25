@@ -58,10 +58,10 @@ object RasterFunctionProperties {
     variableName: String = null
   ): RasterFunctionProperties = {
     val __obj = js.Dynamic.literal()
-    if (functionArguments != null) __obj.updateDynamic("functionArguments")(functionArguments)
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
+    if (functionArguments != null) __obj.updateDynamic("functionArguments")(functionArguments.asInstanceOf[js.Any])
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
     if (outputPixelType != null) __obj.updateDynamic("outputPixelType")(outputPixelType.asInstanceOf[js.Any])
-    if (variableName != null) __obj.updateDynamic("variableName")(variableName)
+    if (variableName != null) __obj.updateDynamic("variableName")(variableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterFunctionProperties]
   }
 }

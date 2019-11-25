@@ -13,8 +13,8 @@ object Anon_RangeOverflow {
   @scala.inline
   def apply(rangeOverflow: String = null, rangeUnderflow: String = null): Anon_RangeOverflow = {
     val __obj = js.Dynamic.literal()
-    if (rangeOverflow != null) __obj.updateDynamic("rangeOverflow")(rangeOverflow)
-    if (rangeUnderflow != null) __obj.updateDynamic("rangeUnderflow")(rangeUnderflow)
+    if (rangeOverflow != null) __obj.updateDynamic("rangeOverflow")(rangeOverflow.asInstanceOf[js.Any])
+    if (rangeUnderflow != null) __obj.updateDynamic("rangeUnderflow")(rangeUnderflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RangeOverflow]
   }
 }

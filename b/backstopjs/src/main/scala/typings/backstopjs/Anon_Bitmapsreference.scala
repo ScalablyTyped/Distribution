@@ -24,12 +24,12 @@ object Anon_Bitmapsreference {
     json_report: String = null
   ): Anon_Bitmapsreference = {
     val __obj = js.Dynamic.literal()
-    if (bitmaps_reference != null) __obj.updateDynamic("bitmaps_reference")(bitmaps_reference)
-    if (bitmaps_test != null) __obj.updateDynamic("bitmaps_test")(bitmaps_test)
-    if (ci_report != null) __obj.updateDynamic("ci_report")(ci_report)
-    if (engine_scripts != null) __obj.updateDynamic("engine_scripts")(engine_scripts)
-    if (html_report != null) __obj.updateDynamic("html_report")(html_report)
-    if (json_report != null) __obj.updateDynamic("json_report")(json_report)
+    if (bitmaps_reference != null) __obj.updateDynamic("bitmaps_reference")(bitmaps_reference.asInstanceOf[js.Any])
+    if (bitmaps_test != null) __obj.updateDynamic("bitmaps_test")(bitmaps_test.asInstanceOf[js.Any])
+    if (ci_report != null) __obj.updateDynamic("ci_report")(ci_report.asInstanceOf[js.Any])
+    if (engine_scripts != null) __obj.updateDynamic("engine_scripts")(engine_scripts.asInstanceOf[js.Any])
+    if (html_report != null) __obj.updateDynamic("html_report")(html_report.asInstanceOf[js.Any])
+    if (json_report != null) __obj.updateDynamic("json_report")(json_report.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bitmapsreference]
   }
 }

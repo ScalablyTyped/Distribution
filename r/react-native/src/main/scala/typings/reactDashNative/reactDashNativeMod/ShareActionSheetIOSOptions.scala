@@ -23,10 +23,10 @@ object ShareActionSheetIOSOptions {
     url: String = null
   ): ShareActionSheetIOSOptions = {
     val __obj = js.Dynamic.literal()
-    if (excludedActivityTypes != null) __obj.updateDynamic("excludedActivityTypes")(excludedActivityTypes)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (excludedActivityTypes != null) __obj.updateDynamic("excludedActivityTypes")(excludedActivityTypes.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareActionSheetIOSOptions]
   }
 }

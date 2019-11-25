@@ -23,10 +23,10 @@ object IProblem {
     errorCode: String = null,
     locations: js.Array[IProblemLocation] = null
   ): IProblem = {
-    val __obj = js.Dynamic.literal(message = message, name = name, severity = severity)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProblem]
   }
 }

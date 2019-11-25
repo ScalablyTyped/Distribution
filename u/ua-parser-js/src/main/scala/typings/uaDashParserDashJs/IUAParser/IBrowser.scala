@@ -33,9 +33,9 @@ object IBrowser {
   @scala.inline
   def apply(major: String = null, name: String = null, version: String = null): IBrowser = {
     val __obj = js.Dynamic.literal()
-    if (major != null) __obj.updateDynamic("major")(major)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBrowser]
   }
 }

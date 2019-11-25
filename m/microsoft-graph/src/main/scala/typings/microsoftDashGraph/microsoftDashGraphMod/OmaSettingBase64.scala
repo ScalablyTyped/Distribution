@@ -21,11 +21,11 @@ object OmaSettingBase64 {
     value: String = null
   ): OmaSettingBase64 = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (omaUri != null) __obj.updateDynamic("omaUri")(omaUri)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (omaUri != null) __obj.updateDynamic("omaUri")(omaUri.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmaSettingBase64]
   }
 }

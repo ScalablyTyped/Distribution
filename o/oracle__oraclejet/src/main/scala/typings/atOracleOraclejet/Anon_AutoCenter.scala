@@ -18,8 +18,8 @@ object Anon_AutoCenter {
   def apply(position: center | start | auto = null, style: js.Object = null, text: String = null): Anon_AutoCenter = {
     val __obj = js.Dynamic.literal()
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoCenter]
   }
 }

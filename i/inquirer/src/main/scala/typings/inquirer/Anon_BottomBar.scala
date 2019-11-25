@@ -35,7 +35,7 @@ object Anon_BottomBar {
       typings.inquirer.libUiPromptMod.^
     ]
   ): Anon_BottomBar = {
-    val __obj = js.Dynamic.literal(BottomBar = BottomBar, Prompt = Prompt)
+    val __obj = js.Dynamic.literal(BottomBar = BottomBar.asInstanceOf[js.Any], Prompt = Prompt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BottomBar]
   }

@@ -11,7 +11,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(NativeKeyboard: NativeKeyboard): Window = {
-    val __obj = js.Dynamic.literal(NativeKeyboard = NativeKeyboard)
+    val __obj = js.Dynamic.literal(NativeKeyboard = NativeKeyboard.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

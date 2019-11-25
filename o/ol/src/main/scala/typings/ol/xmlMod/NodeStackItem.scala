@@ -12,7 +12,7 @@ trait NodeStackItem extends js.Object {
 object NodeStackItem {
   @scala.inline
   def apply(node: Node): NodeStackItem = {
-    val __obj = js.Dynamic.literal(node = node)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeStackItem]
   }

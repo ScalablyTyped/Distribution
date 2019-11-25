@@ -13,7 +13,7 @@ object AuditData {
   @scala.inline
   def apply(policyDelta: PolicyDelta = null): AuditData = {
     val __obj = js.Dynamic.literal()
-    if (policyDelta != null) __obj.updateDynamic("policyDelta")(policyDelta)
+    if (policyDelta != null) __obj.updateDynamic("policyDelta")(policyDelta.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditData]
   }
 }

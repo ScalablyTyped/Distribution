@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait ZoomSettingsScope extends js.Object
 
+object ZoomSettingsScope {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `per-origin`: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.`per-origin` = this.cast("per-origin")
+  @scala.inline
+  def `per-tab`: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.`per-tab` = this.cast("per-tab")
+}
+

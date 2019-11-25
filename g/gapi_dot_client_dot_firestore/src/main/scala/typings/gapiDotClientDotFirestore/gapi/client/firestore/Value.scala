@@ -68,17 +68,17 @@ object Value {
     timestampValue: String = null
   ): Value = {
     val __obj = js.Dynamic.literal()
-    if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue)
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue)
-    if (bytesValue != null) __obj.updateDynamic("bytesValue")(bytesValue)
+    if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.asInstanceOf[js.Any])
+    if (bytesValue != null) __obj.updateDynamic("bytesValue")(bytesValue.asInstanceOf[js.Any])
     if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (geoPointValue != null) __obj.updateDynamic("geoPointValue")(geoPointValue)
-    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue)
-    if (mapValue != null) __obj.updateDynamic("mapValue")(mapValue)
-    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue)
-    if (referenceValue != null) __obj.updateDynamic("referenceValue")(referenceValue)
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
-    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue)
+    if (geoPointValue != null) __obj.updateDynamic("geoPointValue")(geoPointValue.asInstanceOf[js.Any])
+    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
+    if (mapValue != null) __obj.updateDynamic("mapValue")(mapValue.asInstanceOf[js.Any])
+    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
+    if (referenceValue != null) __obj.updateDynamic("referenceValue")(referenceValue.asInstanceOf[js.Any])
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
+    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
 }

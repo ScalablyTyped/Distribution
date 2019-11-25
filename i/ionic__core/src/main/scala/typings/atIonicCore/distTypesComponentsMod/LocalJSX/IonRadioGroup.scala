@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
-import typings.atIonicCore.distTypesComponentsRadioDashGroupRadioDashGroupDashInterfaceMod.RadioGroupChangeEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +17,14 @@ trait IonRadioGroup extends js.Object {
   /**
     * Emitted when the value has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RadioGroupChangeEventDetail], Unit]] = js.undefined
+  var onIonChange: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RadioGroupChangeEventDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * the value of the radio group.
     */
@@ -30,14 +36,16 @@ object IonRadioGroup {
   def apply(
     allowEmptySelection: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onIonChange: /* event */ CustomEvent[RadioGroupChangeEventDetail] => Unit = null,
+    onIonChange: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RadioGroupChangeEventDetail */ _
+    ] => Unit = null,
     value: js.Any = null
   ): IonRadioGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmptySelection)) __obj.updateDynamic("allowEmptySelection")(allowEmptySelection)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(allowEmptySelection)) __obj.updateDynamic("allowEmptySelection")(allowEmptySelection.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onIonChange != null) __obj.updateDynamic("onIonChange")(js.Any.fromFunction1(onIonChange))
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRadioGroup]
   }
 }

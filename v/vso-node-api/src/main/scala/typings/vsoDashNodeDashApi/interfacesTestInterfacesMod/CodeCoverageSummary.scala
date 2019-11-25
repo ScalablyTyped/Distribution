@@ -22,7 +22,7 @@ trait CodeCoverageSummary extends js.Object {
 object CodeCoverageSummary {
   @scala.inline
   def apply(build: ShallowReference, coverageData: js.Array[CodeCoverageData], deltaBuild: ShallowReference): CodeCoverageSummary = {
-    val __obj = js.Dynamic.literal(build = build, coverageData = coverageData, deltaBuild = deltaBuild)
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], coverageData = coverageData.asInstanceOf[js.Any], deltaBuild = deltaBuild.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CodeCoverageSummary]
   }

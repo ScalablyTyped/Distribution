@@ -15,8 +15,8 @@ object Anon_BucketId {
   @scala.inline
   def apply(bucketId: String = null, objectId: String = null): Anon_BucketId = {
     val __obj = js.Dynamic.literal()
-    if (bucketId != null) __obj.updateDynamic("bucketId")(bucketId)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (bucketId != null) __obj.updateDynamic("bucketId")(bucketId.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BucketId]
   }
 }

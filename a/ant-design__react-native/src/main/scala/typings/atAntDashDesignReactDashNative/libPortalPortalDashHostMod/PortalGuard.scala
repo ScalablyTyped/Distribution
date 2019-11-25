@@ -14,7 +14,7 @@ trait PortalGuard extends js.Object {
 object PortalGuard {
   @scala.inline
   def apply(add: ReactNode => Double, nextKey: js.Any, remove: Double => Unit): PortalGuard = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), nextKey = nextKey, remove = js.Any.fromFunction1(remove))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), nextKey = nextKey.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[PortalGuard]
   }

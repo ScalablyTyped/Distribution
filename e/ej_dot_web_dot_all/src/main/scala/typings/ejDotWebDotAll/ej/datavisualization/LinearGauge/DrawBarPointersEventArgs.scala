@@ -60,18 +60,18 @@ object DrawBarPointersEventArgs {
     `type`: js.Any = null
   ): DrawBarPointersEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Model != null) __obj.updateDynamic("Model")(Model)
+    if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
     if (PointerValue != null) __obj.updateDynamic("PointerValue")(PointerValue.asInstanceOf[js.Any])
-    if (barElement != null) __obj.updateDynamic("barElement")(barElement)
+    if (barElement != null) __obj.updateDynamic("barElement")(barElement.asInstanceOf[js.Any])
     if (barPointerIndex != null) __obj.updateDynamic("barPointerIndex")(barPointerIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
     if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawBarPointersEventArgs]
   }
 }

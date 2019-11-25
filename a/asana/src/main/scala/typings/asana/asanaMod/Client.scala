@@ -13,7 +13,6 @@ import typings.asana.asanaMod.resources.Tasks
 import typings.asana.asanaMod.resources.Teams
 import typings.asana.asanaMod.resources.Users
 import typings.asana.asanaMod.resources.Workspaces
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -88,7 +87,7 @@ trait Client extends js.Object {
     * @returns {Promise<Client>} A promise that resolves to this client when
     *     authorization is complete.
     */
-  def authorize(): ^[Client] = js.native
+  def authorize(): typings.bluebird.bluebirdMod.^[Client] = js.native
   /**
     * Configure the client to authenticate using a Personal Access Token.
     * @param  {String} accessToken The Personal Access Token to use for

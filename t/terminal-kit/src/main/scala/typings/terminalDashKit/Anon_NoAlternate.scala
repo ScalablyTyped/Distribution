@@ -11,7 +11,7 @@ trait Anon_NoAlternate extends js.Object {
 object Anon_NoAlternate {
   @scala.inline
   def apply(noAlternate: Boolean): Anon_NoAlternate = {
-    val __obj = js.Dynamic.literal(noAlternate = noAlternate)
+    val __obj = js.Dynamic.literal(noAlternate = noAlternate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NoAlternate]
   }

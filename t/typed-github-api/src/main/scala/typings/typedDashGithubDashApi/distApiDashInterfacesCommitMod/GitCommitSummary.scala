@@ -26,8 +26,8 @@ object GitCommitSummary {
     url: String,
     verification: Anon_Payload = null
   ): GitCommitSummary = {
-    val __obj = js.Dynamic.literal(author = author, comment_count = comment_count, committer = committer, message = message, tree = tree, url = url)
-    if (verification != null) __obj.updateDynamic("verification")(verification)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (verification != null) __obj.updateDynamic("verification")(verification.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCommitSummary]
   }
 }

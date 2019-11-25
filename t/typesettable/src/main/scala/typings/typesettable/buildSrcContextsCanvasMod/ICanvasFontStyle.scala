@@ -32,9 +32,9 @@ object ICanvasFontStyle {
   @scala.inline
   def apply(fill: String = null, font: String = null, stroke: String = null): ICanvasFontStyle = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICanvasFontStyle]
   }
 }

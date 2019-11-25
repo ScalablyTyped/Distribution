@@ -13,7 +13,7 @@ trait Anon_TouchableComponentTouchableWithoutFeedback extends js.Object {
 object Anon_TouchableComponentTouchableWithoutFeedback {
   @scala.inline
   def apply(touchableComponent: Instantiable0[TouchableWithoutFeedback]): Anon_TouchableComponentTouchableWithoutFeedback = {
-    val __obj = js.Dynamic.literal(touchableComponent = touchableComponent)
+    val __obj = js.Dynamic.literal(touchableComponent = touchableComponent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TouchableComponentTouchableWithoutFeedback]
   }

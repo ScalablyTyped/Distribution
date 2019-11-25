@@ -12,7 +12,7 @@ object ConferenceRequestStatus {
   @scala.inline
   def apply(statusCode: String = null): ConferenceRequestStatus = {
     val __obj = js.Dynamic.literal()
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConferenceRequestStatus]
   }
 }

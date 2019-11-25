@@ -30,8 +30,8 @@ object ShortConf {
   ): ShortConf = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
     if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
-    if (g != null) __obj.updateDynamic("g")(g)
-    if (gRed != null) __obj.updateDynamic("gRed")(gRed)
+    if (g != null) __obj.updateDynamic("g")(g.asInstanceOf[js.Any])
+    if (gRed != null) __obj.updateDynamic("gRed")(gRed.asInstanceOf[js.Any])
     if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
     if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
     if (prime != null) __obj.updateDynamic("prime")(prime.asInstanceOf[js.Any])

@@ -32,14 +32,14 @@ object ClientOptions {
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
     if (customLogger != null) __obj.updateDynamic("customLogger")(js.Any.fromFunction2(customLogger))
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(explicitSocketBind)) __obj.updateDynamic("explicitSocketBind")(explicitSocketBind)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces)
-    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr)
-    if (ssdpIp != null) __obj.updateDynamic("ssdpIp")(ssdpIp)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(explicitSocketBind)) __obj.updateDynamic("explicitSocketBind")(explicitSocketBind.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.asInstanceOf[js.Any])
+    if (ssdpIp != null) __obj.updateDynamic("ssdpIp")(ssdpIp.asInstanceOf[js.Any])
     if (ssdpPort != null) __obj.updateDynamic("ssdpPort")(ssdpPort.asInstanceOf[js.Any])
-    if (ssdpSig != null) __obj.updateDynamic("ssdpSig")(ssdpSig)
+    if (ssdpSig != null) __obj.updateDynamic("ssdpSig")(ssdpSig.asInstanceOf[js.Any])
     if (ssdpTtl != null) __obj.updateDynamic("ssdpTtl")(ssdpTtl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }

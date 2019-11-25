@@ -19,8 +19,8 @@ object ClientVersioningData {
   @scala.inline
   def apply(apiVersion: String = null, requestUrl: String = null): ClientVersioningData = {
     val __obj = js.Dynamic.literal()
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
-    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientVersioningData]
   }
 }

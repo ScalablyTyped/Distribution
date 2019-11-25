@@ -17,7 +17,7 @@ object DefaultComponents {
     rotation: Component[Coordinate, System[_]],
     scale: Component[Coordinate, System[_]]
   ): DefaultComponents = {
-    val __obj = js.Dynamic.literal(position = position, rotation = rotation, scale = scale)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefaultComponents]
   }

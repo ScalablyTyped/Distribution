@@ -29,11 +29,11 @@ object IDetectIntentRequest {
     session: String = null
   ): IDetectIntentRequest = {
     val __obj = js.Dynamic.literal()
-    if (inputAudio != null) __obj.updateDynamic("inputAudio")(inputAudio)
-    if (outputAudioConfig != null) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig)
-    if (queryInput != null) __obj.updateDynamic("queryInput")(queryInput)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (inputAudio != null) __obj.updateDynamic("inputAudio")(inputAudio.asInstanceOf[js.Any])
+    if (outputAudioConfig != null) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
+    if (queryInput != null) __obj.updateDynamic("queryInput")(queryInput.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetectIntentRequest]
   }
 }

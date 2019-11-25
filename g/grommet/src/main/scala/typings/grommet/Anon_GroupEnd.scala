@@ -24,12 +24,12 @@ object Anon_GroupEnd {
     resize: Anon_BorderAnonColorSideColorType = null
   ): Anon_GroupEnd = {
     val __obj = js.Dynamic.literal()
-    if (groupEnd != null) __obj.updateDynamic("groupEnd")(groupEnd)
-    if (groupHeader != null) __obj.updateDynamic("groupHeader")(groupHeader)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (resize != null) __obj.updateDynamic("resize")(resize)
+    if (groupEnd != null) __obj.updateDynamic("groupEnd")(groupEnd.asInstanceOf[js.Any])
+    if (groupHeader != null) __obj.updateDynamic("groupHeader")(groupHeader.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GroupEnd]
   }
 }

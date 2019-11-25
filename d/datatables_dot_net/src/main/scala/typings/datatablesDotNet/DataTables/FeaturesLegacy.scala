@@ -33,7 +33,7 @@ object FeaturesLegacy {
     bSortClasses: Boolean,
     bStateSave: Boolean
   ): FeaturesLegacy = {
-    val __obj = js.Dynamic.literal(bAutoWidth = bAutoWidth, bDeferRender = bDeferRender, bFilter = bFilter, bInfo = bInfo, bLengthChange = bLengthChange, bPaginate = bPaginate, bProcessing = bProcessing, bServerSide = bServerSide, bSort = bSort, bSortClasses = bSortClasses, bStateSave = bStateSave)
+    val __obj = js.Dynamic.literal(bAutoWidth = bAutoWidth.asInstanceOf[js.Any], bDeferRender = bDeferRender.asInstanceOf[js.Any], bFilter = bFilter.asInstanceOf[js.Any], bInfo = bInfo.asInstanceOf[js.Any], bLengthChange = bLengthChange.asInstanceOf[js.Any], bPaginate = bPaginate.asInstanceOf[js.Any], bProcessing = bProcessing.asInstanceOf[js.Any], bServerSide = bServerSide.asInstanceOf[js.Any], bSort = bSort.asInstanceOf[js.Any], bSortClasses = bSortClasses.asInstanceOf[js.Any], bStateSave = bStateSave.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeaturesLegacy]
   }

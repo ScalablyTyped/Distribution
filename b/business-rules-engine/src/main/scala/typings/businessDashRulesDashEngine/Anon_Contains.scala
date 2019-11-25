@@ -53,7 +53,7 @@ object Anon_Contains {
     step: String,
     url: String
   ): Anon_Contains = {
-    val __obj = js.Dynamic.literal(contains = contains, creditcard = creditcard, custom = custom, date = date, dateISO = dateISO, digits = digits, email = email, equalTo = equalTo, mask = mask, max = max, maxlength = maxlength, min = min, minlength = minlength, number = number, range = range, rangelength = rangelength, remote = remote, required = required, signedDigits = signedDigits, step = step, url = url)
+    val __obj = js.Dynamic.literal(contains = contains.asInstanceOf[js.Any], creditcard = creditcard.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], dateISO = dateISO.asInstanceOf[js.Any], digits = digits.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], equalTo = equalTo.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], maxlength = maxlength.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], minlength = minlength.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], rangelength = rangelength.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], signedDigits = signedDigits.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Contains]
   }

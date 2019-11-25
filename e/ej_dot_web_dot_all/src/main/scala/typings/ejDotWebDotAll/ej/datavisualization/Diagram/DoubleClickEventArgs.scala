@@ -28,10 +28,10 @@ object DoubleClickEventArgs {
     element: js.Any = null
   ): DoubleClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (actualObject != null) __obj.updateDynamic("actualObject")(actualObject)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (actualObject != null) __obj.updateDynamic("actualObject")(actualObject.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoubleClickEventArgs]
   }
 }

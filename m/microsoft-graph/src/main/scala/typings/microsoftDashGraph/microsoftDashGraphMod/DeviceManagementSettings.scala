@@ -22,8 +22,8 @@ object DeviceManagementSettings {
   ): DeviceManagementSettings = {
     val __obj = js.Dynamic.literal()
     if (deviceComplianceCheckinThresholdDays != null) __obj.updateDynamic("deviceComplianceCheckinThresholdDays")(deviceComplianceCheckinThresholdDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScheduledActionEnabled)) __obj.updateDynamic("isScheduledActionEnabled")(isScheduledActionEnabled)
-    if (!js.isUndefined(secureByDefault)) __obj.updateDynamic("secureByDefault")(secureByDefault)
+    if (!js.isUndefined(isScheduledActionEnabled)) __obj.updateDynamic("isScheduledActionEnabled")(isScheduledActionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(secureByDefault)) __obj.updateDynamic("secureByDefault")(secureByDefault.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceManagementSettings]
   }
 }

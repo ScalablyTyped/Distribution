@@ -26,16 +26,16 @@ object ReadError {
     stack: String = null,
     url: String = null
   ): ReadError = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadError]
   }
 }

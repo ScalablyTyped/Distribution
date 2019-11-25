@@ -19,9 +19,9 @@ object TabStripSelectEvent {
     contentElement: Element = null,
     item: Element = null
   ): TabStripSelectEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement)
-    if (item != null) __obj.updateDynamic("item")(item)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabStripSelectEvent]
   }
 }

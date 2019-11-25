@@ -26,8 +26,8 @@ object Anon_Buffer {
     toJSON: () => js.Array[T],
     NumberDictionary: /* i */ NumberDictionary[T] = null
   ): Anon_Buffer[T] = {
-    val __obj = js.Dynamic.literal(buffer = buffer, inspect = js.Any.fromFunction0(inspect), length = length, ref = js.Any.fromFunction0(ref), toArray = js.Any.fromFunction0(toArray), toJSON = js.Any.fromFunction0(toJSON))
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], inspect = js.Any.fromFunction0(inspect), length = length.asInstanceOf[js.Any], ref = js.Any.fromFunction0(ref), toArray = js.Any.fromFunction0(toArray), toJSON = js.Any.fromFunction0(toJSON))
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Anon_Buffer[T]]
   }
 }

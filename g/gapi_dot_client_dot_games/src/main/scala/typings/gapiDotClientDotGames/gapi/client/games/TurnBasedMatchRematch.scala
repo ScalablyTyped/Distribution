@@ -17,9 +17,9 @@ object TurnBasedMatchRematch {
   @scala.inline
   def apply(kind: String = null, previousMatch: TurnBasedMatch = null, rematch: TurnBasedMatch = null): TurnBasedMatchRematch = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (previousMatch != null) __obj.updateDynamic("previousMatch")(previousMatch)
-    if (rematch != null) __obj.updateDynamic("rematch")(rematch)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (previousMatch != null) __obj.updateDynamic("previousMatch")(previousMatch.asInstanceOf[js.Any])
+    if (rematch != null) __obj.updateDynamic("rematch")(rematch.asInstanceOf[js.Any])
     __obj.asInstanceOf[TurnBasedMatchRematch]
   }
 }

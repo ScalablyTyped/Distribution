@@ -68,18 +68,18 @@ object Subnetwork {
     selfLink: String = null
   ): Subnetwork = {
     val __obj = js.Dynamic.literal()
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (gatewayAddress != null) __obj.updateDynamic("gatewayAddress")(gatewayAddress)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (network != null) __obj.updateDynamic("network")(network)
-    if (!js.isUndefined(privateIpGoogleAccess)) __obj.updateDynamic("privateIpGoogleAccess")(privateIpGoogleAccess)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (secondaryIpRanges != null) __obj.updateDynamic("secondaryIpRanges")(secondaryIpRanges)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (gatewayAddress != null) __obj.updateDynamic("gatewayAddress")(gatewayAddress.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
+    if (!js.isUndefined(privateIpGoogleAccess)) __obj.updateDynamic("privateIpGoogleAccess")(privateIpGoogleAccess.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (secondaryIpRanges != null) __obj.updateDynamic("secondaryIpRanges")(secondaryIpRanges.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subnetwork]
   }
 }

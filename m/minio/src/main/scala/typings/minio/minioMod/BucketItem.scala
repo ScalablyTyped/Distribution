@@ -16,7 +16,7 @@ trait BucketItem extends js.Object {
 object BucketItem {
   @scala.inline
   def apply(etag: String, lastModified: Date, name: String, prefix: String, size: Double): BucketItem = {
-    val __obj = js.Dynamic.literal(etag = etag, lastModified = lastModified, name = name, prefix = prefix, size = size)
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BucketItem]
   }

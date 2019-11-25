@@ -14,7 +14,7 @@ object ColdSubscription {
   @scala.inline
   def apply(stop: () => Unit, StringDictionary: /* key */ StringDictionary[js.UndefOr[js.Function]] = null): ColdSubscription = {
     val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ColdSubscription]
   }
 }

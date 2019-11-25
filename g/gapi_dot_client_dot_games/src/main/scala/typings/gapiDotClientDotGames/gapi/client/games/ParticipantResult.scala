@@ -36,10 +36,10 @@ object ParticipantResult {
     result: String = null
   ): ParticipantResult = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (participantId != null) __obj.updateDynamic("participantId")(participantId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (participantId != null) __obj.updateDynamic("participantId")(participantId.asInstanceOf[js.Any])
     if (placing != null) __obj.updateDynamic("placing")(placing.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticipantResult]
   }
 }

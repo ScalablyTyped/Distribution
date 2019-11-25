@@ -18,8 +18,8 @@ object WriteFragmentOptions {
     fragmentName: String = null,
     variables: TVariables = null
   ): WriteFragmentOptions[TData, TVariables] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fragment = fragment, id = id)
-    if (fragmentName != null) __obj.updateDynamic("fragmentName")(fragmentName)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (fragmentName != null) __obj.updateDynamic("fragmentName")(fragmentName.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteFragmentOptions[TData, TVariables]]
   }

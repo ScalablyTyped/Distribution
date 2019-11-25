@@ -60,19 +60,19 @@ object Meta {
     versionId: id = null
   ): Meta = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_lastUpdated != null) __obj.updateDynamic("_lastUpdated")(_lastUpdated)
-    if (_profile != null) __obj.updateDynamic("_profile")(_profile)
-    if (_versionId != null) __obj.updateDynamic("_versionId")(_versionId)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastUpdated != null) __obj.updateDynamic("lastUpdated")(lastUpdated)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (security != null) __obj.updateDynamic("security")(security)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_lastUpdated != null) __obj.updateDynamic("_lastUpdated")(_lastUpdated.asInstanceOf[js.Any])
+    if (_profile != null) __obj.updateDynamic("_profile")(_profile.asInstanceOf[js.Any])
+    if (_versionId != null) __obj.updateDynamic("_versionId")(_versionId.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastUpdated != null) __obj.updateDynamic("lastUpdated")(lastUpdated.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meta]
   }
 }

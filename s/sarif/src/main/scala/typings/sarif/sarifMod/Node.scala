@@ -36,11 +36,11 @@ object Node {
     location: Location = null,
     properties: PropertyBag = null
   ): Node = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

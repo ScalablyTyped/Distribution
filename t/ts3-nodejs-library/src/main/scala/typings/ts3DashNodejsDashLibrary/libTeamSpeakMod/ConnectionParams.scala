@@ -1,6 +1,5 @@
 package typings.ts3DashNodejsDashLibrary.libTeamSpeakMod
 
-import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.QueryProtocol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,7 @@ trait ConnectionParams extends js.Object {
   /** the password to use with the login (default: none) */
   var password: js.UndefOr[String] = js.undefined
   /** the query protocol to use (default: @see QueryProtocol ) */
-  var protocol: QueryProtocol
+  var protocol: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.QueryProtocol
   /** the queryport to use (default: raw=10011 ssh=10022) */
   var queryport: Double
   /** time to wait until a timeout gets fired (default: 10000) */
@@ -33,7 +32,7 @@ object ConnectionParams {
   def apply(
     host: String,
     keepAlive: Boolean,
-    protocol: QueryProtocol,
+    protocol: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.QueryProtocol,
     queryport: Double,
     readyTimeout: Double,
     localAddress: String = null,
@@ -42,12 +41,12 @@ object ConnectionParams {
     serverport: Int | Double = null,
     username: String = null
   ): ConnectionParams = {
-    val __obj = js.Dynamic.literal(host = host, keepAlive = keepAlive, protocol = protocol, queryport = queryport, readyTimeout = readyTimeout)
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
-    if (password != null) __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], keepAlive = keepAlive.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], queryport = queryport.asInstanceOf[js.Any], readyTimeout = readyTimeout.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (serverport != null) __obj.updateDynamic("serverport")(serverport.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionParams]
   }
 }

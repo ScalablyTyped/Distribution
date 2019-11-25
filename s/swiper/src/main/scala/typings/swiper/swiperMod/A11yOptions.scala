@@ -61,13 +61,13 @@ object A11yOptions {
     prevSlideMessage: String = null
   ): A11yOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (firstSlideMessage != null) __obj.updateDynamic("firstSlideMessage")(firstSlideMessage)
-    if (lastSlideMessage != null) __obj.updateDynamic("lastSlideMessage")(lastSlideMessage)
-    if (nextSlideMessage != null) __obj.updateDynamic("nextSlideMessage")(nextSlideMessage)
-    if (notificationClass != null) __obj.updateDynamic("notificationClass")(notificationClass)
-    if (paginationBulletMessage != null) __obj.updateDynamic("paginationBulletMessage")(paginationBulletMessage)
-    if (prevSlideMessage != null) __obj.updateDynamic("prevSlideMessage")(prevSlideMessage)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (firstSlideMessage != null) __obj.updateDynamic("firstSlideMessage")(firstSlideMessage.asInstanceOf[js.Any])
+    if (lastSlideMessage != null) __obj.updateDynamic("lastSlideMessage")(lastSlideMessage.asInstanceOf[js.Any])
+    if (nextSlideMessage != null) __obj.updateDynamic("nextSlideMessage")(nextSlideMessage.asInstanceOf[js.Any])
+    if (notificationClass != null) __obj.updateDynamic("notificationClass")(notificationClass.asInstanceOf[js.Any])
+    if (paginationBulletMessage != null) __obj.updateDynamic("paginationBulletMessage")(paginationBulletMessage.asInstanceOf[js.Any])
+    if (prevSlideMessage != null) __obj.updateDynamic("prevSlideMessage")(prevSlideMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[A11yOptions]
   }
 }

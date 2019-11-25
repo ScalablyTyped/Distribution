@@ -91,7 +91,7 @@ object TypeofStatusBar {
     removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
     setBubbleParent: Boolean => Unit
   ): TypeofStatusBar = {
-    val __obj = js.Dynamic.literal(ANIMATION_STYLE_FADE = ANIMATION_STYLE_FADE, ANIMATION_STYLE_NONE = ANIMATION_STYLE_NONE, ANIMATION_STYLE_SLIDE = ANIMATION_STYLE_SLIDE, DEFAULT = DEFAULT, GRAY = GRAY, GREY = GREY, LIGHT_CONTENT = LIGHT_CONTENT, addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
+    val __obj = js.Dynamic.literal(ANIMATION_STYLE_FADE = ANIMATION_STYLE_FADE.asInstanceOf[js.Any], ANIMATION_STYLE_NONE = ANIMATION_STYLE_NONE.asInstanceOf[js.Any], ANIMATION_STYLE_SLIDE = ANIMATION_STYLE_SLIDE.asInstanceOf[js.Any], DEFAULT = DEFAULT.asInstanceOf[js.Any], GRAY = GRAY.asInstanceOf[js.Any], GREY = GREY.asInstanceOf[js.Any], LIGHT_CONTENT = LIGHT_CONTENT.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
   
     __obj.asInstanceOf[TypeofStatusBar]
   }

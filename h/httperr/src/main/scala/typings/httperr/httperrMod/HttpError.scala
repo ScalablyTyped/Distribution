@@ -27,8 +27,8 @@ object HttpError {
     toObject: /* repeated */ String | RegExp => js.Any,
     stack: String = null
   ): HttpError = {
-    val __obj = js.Dynamic.literal(code = code, message = message, name = name, statusCode = statusCode, title = title, toObject = js.Any.fromFunction1(toObject))
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], toObject = js.Any.fromFunction1(toObject))
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpError]
   }
 }

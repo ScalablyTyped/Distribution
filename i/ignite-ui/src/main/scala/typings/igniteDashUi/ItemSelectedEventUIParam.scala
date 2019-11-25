@@ -27,10 +27,10 @@ object ItemSelectedEventUIParam {
   @scala.inline
   def apply(calendar: js.Any = null, dateFromPicker: js.Any = null, item: js.Any = null, owner: js.Any = null): ItemSelectedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (calendar != null) __obj.updateDynamic("calendar")(calendar)
-    if (dateFromPicker != null) __obj.updateDynamic("dateFromPicker")(dateFromPicker)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])
+    if (dateFromPicker != null) __obj.updateDynamic("dateFromPicker")(dateFromPicker.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemSelectedEventUIParam]
   }
 }

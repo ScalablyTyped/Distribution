@@ -58,12 +58,12 @@ object GetFolderOutput {
     symbolicLinks: js.Array[_UnmarshalledSymbolicLink] = null,
     treeId: String = null
   ): GetFolderOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, commitId = commitId, folderPath = folderPath)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (subFolders != null) __obj.updateDynamic("subFolders")(subFolders)
-    if (subModules != null) __obj.updateDynamic("subModules")(subModules)
-    if (symbolicLinks != null) __obj.updateDynamic("symbolicLinks")(symbolicLinks)
-    if (treeId != null) __obj.updateDynamic("treeId")(treeId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], folderPath = folderPath.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (subFolders != null) __obj.updateDynamic("subFolders")(subFolders.asInstanceOf[js.Any])
+    if (subModules != null) __obj.updateDynamic("subModules")(subModules.asInstanceOf[js.Any])
+    if (symbolicLinks != null) __obj.updateDynamic("symbolicLinks")(symbolicLinks.asInstanceOf[js.Any])
+    if (treeId != null) __obj.updateDynamic("treeId")(treeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFolderOutput]
   }
 }

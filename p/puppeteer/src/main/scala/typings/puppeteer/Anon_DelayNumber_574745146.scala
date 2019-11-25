@@ -11,7 +11,7 @@ trait Anon_DelayNumber_574745146 extends js.Object {
 object Anon_DelayNumber_574745146 {
   @scala.inline
   def apply(delay: Double): Anon_DelayNumber_574745146 = {
-    val __obj = js.Dynamic.literal(delay = delay)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DelayNumber_574745146]
   }

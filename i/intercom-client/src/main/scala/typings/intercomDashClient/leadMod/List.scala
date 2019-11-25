@@ -16,8 +16,8 @@ trait List extends js.Object {
 object List {
   @scala.inline
   def apply(contacts: js.Array[Lead], pages: Anon_Next, total_count: Double, `type`: userDOTlist): List = {
-    val __obj = js.Dynamic.literal(contacts = contacts, pages = pages, total_count = total_count)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[List]
   }
 }

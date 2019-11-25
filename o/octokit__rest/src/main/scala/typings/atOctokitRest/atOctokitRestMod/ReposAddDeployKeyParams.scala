@@ -32,9 +32,9 @@ object ReposAddDeployKeyParams {
     read_only: js.UndefOr[Boolean] = js.undefined,
     title: String = null
   ): ReposAddDeployKeyParams = {
-    val __obj = js.Dynamic.literal(key = key, owner = owner, repo = repo)
-    if (!js.isUndefined(read_only)) __obj.updateDynamic("read_only")(read_only)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(read_only)) __obj.updateDynamic("read_only")(read_only.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposAddDeployKeyParams]
   }
 }

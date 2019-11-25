@@ -23,10 +23,10 @@ object Anon_Position {
     superscript: String = null,
     text: String = null
   ): Anon_Position = {
-    val __obj = js.Dynamic.literal(start = start, stop = stop)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (superscript != null) __obj.updateDynamic("superscript")(superscript)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (superscript != null) __obj.updateDynamic("superscript")(superscript.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Position]
   }
 }

@@ -24,8 +24,8 @@ object Options {
     removeNull: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encodeComponents)) __obj.updateDynamic("encodeComponents")(encodeComponents)
-    if (!js.isUndefined(removeNull)) __obj.updateDynamic("removeNull")(removeNull)
+    if (!js.isUndefined(encodeComponents)) __obj.updateDynamic("encodeComponents")(encodeComponents.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeNull)) __obj.updateDynamic("removeNull")(removeNull.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

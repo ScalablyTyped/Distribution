@@ -22,8 +22,8 @@ trait PostCommentReplyOutput extends OutputTypesUnion {
 object PostCommentReplyOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, comment: _UnmarshalledComment = null): PostCommentReplyOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCommentReplyOutput]
   }
 }

@@ -56,9 +56,9 @@ object IOptions {
     opener: /* widget */ Widget => Unit = null,
     setBusy: () => IDisposable = null
   ): IOptions[T] = {
-    val __obj = js.Dynamic.literal(factory = factory, manager = manager, path = path)
-    if (kernelPreference != null) __obj.updateDynamic("kernelPreference")(kernelPreference)
-    if (modelDBFactory != null) __obj.updateDynamic("modelDBFactory")(modelDBFactory)
+    val __obj = js.Dynamic.literal(factory = factory.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (kernelPreference != null) __obj.updateDynamic("kernelPreference")(kernelPreference.asInstanceOf[js.Any])
+    if (modelDBFactory != null) __obj.updateDynamic("modelDBFactory")(modelDBFactory.asInstanceOf[js.Any])
     if (opener != null) __obj.updateDynamic("opener")(js.Any.fromFunction1(opener))
     if (setBusy != null) __obj.updateDynamic("setBusy")(js.Any.fromFunction0(setBusy))
     __obj.asInstanceOf[IOptions[T]]

@@ -13,7 +13,7 @@ trait Node extends js.Object {
 object Node {
   @scala.inline
   def apply(walkable: Boolean, x: Double, y: Double): Node = {
-    val __obj = js.Dynamic.literal(walkable = walkable, x = x, y = y)
+    val __obj = js.Dynamic.literal(walkable = walkable.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Node]
   }

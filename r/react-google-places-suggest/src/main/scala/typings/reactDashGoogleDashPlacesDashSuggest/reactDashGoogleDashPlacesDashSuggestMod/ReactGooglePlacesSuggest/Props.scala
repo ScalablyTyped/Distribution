@@ -31,12 +31,12 @@ object Props {
     onSelectSuggest: (/* geocodedPrediction */ GeocodedPrediction, /* originalPrediction */ Prediction) => _ = null,
     textNoResults: String = null
   ): Props = {
-    val __obj = js.Dynamic.literal(autocompletionRequest = autocompletionRequest, googleMaps = googleMaps)
+    val __obj = js.Dynamic.literal(autocompletionRequest = autocompletionRequest.asInstanceOf[js.Any], googleMaps = googleMaps.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (customContainerRender != null) __obj.updateDynamic("customContainerRender")(js.Any.fromFunction1(customContainerRender))
     if (customRender != null) __obj.updateDynamic("customRender")(js.Any.fromFunction1(customRender))
     if (onSelectSuggest != null) __obj.updateDynamic("onSelectSuggest")(js.Any.fromFunction2(onSelectSuggest))
-    if (textNoResults != null) __obj.updateDynamic("textNoResults")(textNoResults)
+    if (textNoResults != null) __obj.updateDynamic("textNoResults")(textNoResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

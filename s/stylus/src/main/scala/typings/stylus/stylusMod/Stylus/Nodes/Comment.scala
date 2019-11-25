@@ -1,6 +1,6 @@
 package typings.stylus.stylusMod.Stylus.Nodes
 
-import typings.stylus.Anon_ColumnFilenameInline
+import typings.stylus.Anon_Column
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,6 @@ trait Comment extends Node {
 object Comment {
   @scala.inline
   def apply(
-    clone: () => Node,
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -30,10 +29,10 @@ object Comment {
     suppress: scala.Boolean,
     toBoolean: () => Boolean,
     toExpression: () => Expression,
-    toJSON: () => Anon_ColumnFilenameInline
+    toJSON: () => Anon_Column
   ): Comment = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, eval = js.Any.fromFunction0(eval), filename = filename, first = first, hash = hash, lineno = lineno, nodeName = nodeName, operate = js.Any.fromFunction2(operate), shouldCoerce = js.Any.fromFunction1(shouldCoerce), str = str, suppress = suppress, toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
-    __obj.updateDynamic("inline")(`inline`)
+    val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce), column = column.asInstanceOf[js.Any], eval = js.Any.fromFunction0(eval), filename = filename.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], operate = js.Any.fromFunction2(operate), shouldCoerce = js.Any.fromFunction1(shouldCoerce), str = str.asInstanceOf[js.Any], suppress = suppress.asInstanceOf[js.Any], toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

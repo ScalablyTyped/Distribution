@@ -14,20 +14,20 @@ trait TypeofClassSchemaDirectiveVisitor extends Instantiable1[/* config */ Anon_
   /* protected */ def getDeclaredDirectives(
     schema: GraphQLSchema,
     directiveVisitors: StringDictionary[
-      /* import warning: ImportType.apply Failed type conversion: typeof SchemaDirectiveVisitor */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof SchemaDirectiveVisitor */ js.Any
     ]
   ): StringDictionary[GraphQLDirective] = js.native
   def getDirectiveDeclaration(directiveName: String, schema: GraphQLSchema): GraphQLDirective = js.native
   def visitSchemaDirectives(
     schema: GraphQLSchema,
     directiveVisitors: StringDictionary[
-      /* import warning: ImportType.apply Failed type conversion: typeof SchemaDirectiveVisitor */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof SchemaDirectiveVisitor */ js.Any
     ]
   ): StringDictionary[js.Array[SchemaDirectiveVisitor]] = js.native
   def visitSchemaDirectives(
     schema: GraphQLSchema,
     directiveVisitors: StringDictionary[
-      /* import warning: ImportType.apply Failed type conversion: typeof SchemaDirectiveVisitor */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof SchemaDirectiveVisitor */ js.Any
     ],
     context: StringDictionary[js.Any]
   ): StringDictionary[js.Array[SchemaDirectiveVisitor]] = js.native

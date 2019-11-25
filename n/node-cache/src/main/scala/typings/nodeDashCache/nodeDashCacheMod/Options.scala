@@ -78,15 +78,15 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (arrayValueSize != null) __obj.updateDynamic("arrayValueSize")(arrayValueSize.asInstanceOf[js.Any])
     if (checkperiod != null) __obj.updateDynamic("checkperiod")(checkperiod.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteOnExpire)) __obj.updateDynamic("deleteOnExpire")(deleteOnExpire)
-    if (!js.isUndefined(enableLegacyCallbacks)) __obj.updateDynamic("enableLegacyCallbacks")(enableLegacyCallbacks)
-    if (!js.isUndefined(errorOnMissing)) __obj.updateDynamic("errorOnMissing")(errorOnMissing)
-    if (!js.isUndefined(forceString)) __obj.updateDynamic("forceString")(forceString)
+    if (!js.isUndefined(deleteOnExpire)) __obj.updateDynamic("deleteOnExpire")(deleteOnExpire.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLegacyCallbacks)) __obj.updateDynamic("enableLegacyCallbacks")(enableLegacyCallbacks.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorOnMissing)) __obj.updateDynamic("errorOnMissing")(errorOnMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceString)) __obj.updateDynamic("forceString")(forceString.asInstanceOf[js.Any])
     if (maxKeys != null) __obj.updateDynamic("maxKeys")(maxKeys.asInstanceOf[js.Any])
     if (objectValueSize != null) __obj.updateDynamic("objectValueSize")(objectValueSize.asInstanceOf[js.Any])
     if (promiseValueSize != null) __obj.updateDynamic("promiseValueSize")(promiseValueSize.asInstanceOf[js.Any])
     if (stdTTL != null) __obj.updateDynamic("stdTTL")(stdTTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(useClones)) __obj.updateDynamic("useClones")(useClones)
+    if (!js.isUndefined(useClones)) __obj.updateDynamic("useClones")(useClones.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

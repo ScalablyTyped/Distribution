@@ -14,7 +14,7 @@ trait PinchGestureHandlerEventExtra extends js.Object {
 object PinchGestureHandlerEventExtra {
   @scala.inline
   def apply(focalX: Double, focalY: Double, scale: Double, velocity: Double): PinchGestureHandlerEventExtra = {
-    val __obj = js.Dynamic.literal(focalX = focalX, focalY = focalY, scale = scale, velocity = velocity)
+    val __obj = js.Dynamic.literal(focalX = focalX.asInstanceOf[js.Any], focalY = focalY.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PinchGestureHandlerEventExtra]
   }

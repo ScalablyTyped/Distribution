@@ -20,8 +20,8 @@ object strings {
     PRIMARY_BAR_SELECTOR: `DOTmdc-linear-progress__primary-bar`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(BUFFER_SELECTOR = BUFFER_SELECTOR, PRIMARY_BAR_SELECTOR = PRIMARY_BAR_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(BUFFER_SELECTOR = BUFFER_SELECTOR.asInstanceOf[js.Any], PRIMARY_BAR_SELECTOR = PRIMARY_BAR_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

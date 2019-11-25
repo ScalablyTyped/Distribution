@@ -24,10 +24,10 @@ object Anon_CustomerId {
     userEmail: String = null
   ): Anon_CustomerId = {
     val __obj = js.Dynamic.literal()
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail)
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
+    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomerId]
   }
 }

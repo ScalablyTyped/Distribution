@@ -15,7 +15,7 @@ object SaveOptions {
   @scala.inline
   def apply(includeText: js.UndefOr[Boolean] = js.undefined): SaveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeText)) __obj.updateDynamic("includeText")(includeText)
+    if (!js.isUndefined(includeText)) __obj.updateDynamic("includeText")(includeText.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveOptions]
   }
 }

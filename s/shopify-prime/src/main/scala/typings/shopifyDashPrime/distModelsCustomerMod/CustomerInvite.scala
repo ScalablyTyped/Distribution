@@ -22,11 +22,11 @@ object CustomerInvite {
     to: String = null
   ): CustomerInvite = {
     val __obj = js.Dynamic.literal()
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
-    if (custom_message != null) __obj.updateDynamic("custom_message")(custom_message)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (custom_message != null) __obj.updateDynamic("custom_message")(custom_message.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerInvite]
   }
 }

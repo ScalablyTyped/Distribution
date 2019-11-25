@@ -25,14 +25,14 @@ object FileOptions {
     tries: Int | Double = null
   ): FileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detachDescriptor)) __obj.updateDynamic("detachDescriptor")(detachDescriptor)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (!js.isUndefined(discardDescriptor)) __obj.updateDynamic("discardDescriptor")(discardDescriptor)
-    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep)
+    if (!js.isUndefined(detachDescriptor)) __obj.updateDynamic("detachDescriptor")(detachDescriptor.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (!js.isUndefined(discardDescriptor)) __obj.updateDynamic("discardDescriptor")(discardDescriptor.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (postfix != null) __obj.updateDynamic("postfix")(postfix)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (tries != null) __obj.updateDynamic("tries")(tries.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }

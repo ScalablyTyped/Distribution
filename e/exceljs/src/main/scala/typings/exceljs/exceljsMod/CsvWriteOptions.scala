@@ -12,7 +12,7 @@ trait CsvWriteOptions extends js.Object {
 object CsvWriteOptions {
   @scala.inline
   def apply(dateFormat: String, dateUTC: Boolean): CsvWriteOptions = {
-    val __obj = js.Dynamic.literal(dateFormat = dateFormat, dateUTC = dateUTC)
+    val __obj = js.Dynamic.literal(dateFormat = dateFormat.asInstanceOf[js.Any], dateUTC = dateUTC.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CsvWriteOptions]
   }

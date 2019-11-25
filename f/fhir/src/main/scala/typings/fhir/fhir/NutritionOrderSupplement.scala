@@ -56,19 +56,19 @@ object NutritionOrderSupplement {
     `type`: CodeableConcept = null
   ): NutritionOrderSupplement = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_instruction != null) __obj.updateDynamic("_instruction")(_instruction)
-    if (_productName != null) __obj.updateDynamic("_productName")(_productName)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (instruction != null) __obj.updateDynamic("instruction")(instruction)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (productName != null) __obj.updateDynamic("productName")(productName)
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_instruction != null) __obj.updateDynamic("_instruction")(_instruction.asInstanceOf[js.Any])
+    if (_productName != null) __obj.updateDynamic("_productName")(_productName.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (instruction != null) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NutritionOrderSupplement]
   }
 }

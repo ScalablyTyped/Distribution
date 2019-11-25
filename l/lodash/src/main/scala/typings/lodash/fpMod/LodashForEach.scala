@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 trait LodashForEach extends js.Object {
   def apply[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ]
   ): js.UndefOr[T | Null] = js.native
   def apply[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T

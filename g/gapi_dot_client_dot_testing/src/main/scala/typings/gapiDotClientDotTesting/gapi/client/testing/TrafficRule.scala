@@ -29,7 +29,7 @@ object TrafficRule {
     val __obj = js.Dynamic.literal()
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
     if (burst != null) __obj.updateDynamic("burst")(burst.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (packetDuplicationRatio != null) __obj.updateDynamic("packetDuplicationRatio")(packetDuplicationRatio.asInstanceOf[js.Any])
     if (packetLossRatio != null) __obj.updateDynamic("packetLossRatio")(packetLossRatio.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficRule]

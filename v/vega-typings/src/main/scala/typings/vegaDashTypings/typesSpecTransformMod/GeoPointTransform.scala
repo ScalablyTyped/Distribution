@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GeoPointTransform extends Transforms {
+trait GeoPointTransform extends _Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var fields: Vector2[FieldRef] | SignalRef
   var projection: ProjectionName
@@ -22,8 +22,8 @@ object GeoPointTransform {
     `type`: geopoint,
     as: (Vector2[String | SignalRef]) | SignalRef = null
   ): GeoPointTransform = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], projection = projection)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoPointTransform]
   }

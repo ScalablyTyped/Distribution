@@ -29,7 +29,7 @@ object Anon_ColumnFilenameIsListLineno {
     nodes: js.Array[Node],
     preserve: Boolean
   ): Anon_ColumnFilenameIsListLineno = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, isList = isList, lineno = lineno, map = map, nodes = nodes, preserve = preserve)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], isList = isList.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], preserve = preserve.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnFilenameIsListLineno]
   }

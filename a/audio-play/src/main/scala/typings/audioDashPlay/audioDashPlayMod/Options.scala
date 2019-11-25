@@ -40,11 +40,11 @@ object Options {
     volume: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (detune != null) __obj.updateDynamic("detune")(detune.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])

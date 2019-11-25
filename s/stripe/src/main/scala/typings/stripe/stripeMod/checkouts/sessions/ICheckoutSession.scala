@@ -97,17 +97,17 @@ object ICheckoutSession {
     setup_intent: String = null,
     subscription: String | ISubscription = null
   ): ICheckoutSession = {
-    val __obj = js.Dynamic.literal(cancel_url = cancel_url, display_items = display_items, id = id, livemode = livemode, success_url = success_url)
-    __obj.updateDynamic("object")(`object`)
-    if (billing_address_collection != null) __obj.updateDynamic("billing_address_collection")(billing_address_collection)
-    if (client_reference_id != null) __obj.updateDynamic("client_reference_id")(client_reference_id)
+    val __obj = js.Dynamic.literal(cancel_url = cancel_url.asInstanceOf[js.Any], display_items = display_items.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], success_url = success_url.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (billing_address_collection != null) __obj.updateDynamic("billing_address_collection")(billing_address_collection.asInstanceOf[js.Any])
+    if (client_reference_id != null) __obj.updateDynamic("client_reference_id")(client_reference_id.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (customer_email != null) __obj.updateDynamic("customer_email")(customer_email)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (customer_email != null) __obj.updateDynamic("customer_email")(customer_email.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent.asInstanceOf[js.Any])
-    if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types)
-    if (setup_intent != null) __obj.updateDynamic("setup_intent")(setup_intent)
+    if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types.asInstanceOf[js.Any])
+    if (setup_intent != null) __obj.updateDynamic("setup_intent")(setup_intent.asInstanceOf[js.Any])
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckoutSession]
   }

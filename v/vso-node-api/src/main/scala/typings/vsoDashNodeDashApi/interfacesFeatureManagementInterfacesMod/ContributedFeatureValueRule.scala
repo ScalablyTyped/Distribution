@@ -19,7 +19,7 @@ trait ContributedFeatureValueRule extends js.Object {
 object ContributedFeatureValueRule {
   @scala.inline
   def apply(name: String, properties: StringDictionary[js.Any]): ContributedFeatureValueRule = {
-    val __obj = js.Dynamic.literal(name = name, properties = properties)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContributedFeatureValueRule]
   }

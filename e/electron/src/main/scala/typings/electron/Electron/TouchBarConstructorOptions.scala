@@ -21,7 +21,7 @@ object TouchBarConstructorOptions {
     ],
     escapeItem: TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer = null
   ): TouchBarConstructorOptions = {
-    val __obj = js.Dynamic.literal(items = items)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     if (escapeItem != null) __obj.updateDynamic("escapeItem")(escapeItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarConstructorOptions]
   }

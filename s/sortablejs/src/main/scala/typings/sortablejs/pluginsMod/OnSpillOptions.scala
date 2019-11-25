@@ -33,8 +33,8 @@ object OnSpillOptions {
   ): OnSpillOptions = {
     val __obj = js.Dynamic.literal()
     if (onSpill != null) __obj.updateDynamic("onSpill")(js.Any.fromFunction1(onSpill))
-    if (!js.isUndefined(removeOnSpill)) __obj.updateDynamic("removeOnSpill")(removeOnSpill)
-    if (!js.isUndefined(revertOnSpill)) __obj.updateDynamic("revertOnSpill")(revertOnSpill)
+    if (!js.isUndefined(removeOnSpill)) __obj.updateDynamic("removeOnSpill")(removeOnSpill.asInstanceOf[js.Any])
+    if (!js.isUndefined(revertOnSpill)) __obj.updateDynamic("revertOnSpill")(revertOnSpill.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSpillOptions]
   }
 }

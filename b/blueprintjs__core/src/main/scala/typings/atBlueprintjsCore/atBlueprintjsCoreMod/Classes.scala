@@ -1,9 +1,5 @@
 package typings.atBlueprintjsCore.atBlueprintjsCoreMod
 
-import typings.atBlueprintjsCore.libEsmCommonAlignmentMod.Alignment
-import typings.atBlueprintjsCore.libEsmCommonElevationMod.Elevation
-import typings.atBlueprintjsCore.libEsmCommonIntentMod.Intent
-import typings.atBlueprintjsCore.libEsmCommonPositionMod.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -217,13 +213,13 @@ object Classes extends js.Object {
   val TREE_ROOT: String = js.native
   val UI_TEXT: String = js.native
   val VERTICAL: String = js.native
-  def alignmentClass(alignment: Alignment): String = js.native
-  def elevationClass(elevation: Elevation): String = js.native
+  def alignmentClass(alignment: typings.atBlueprintjsCore.libEsmCommonAlignmentMod.Alignment): String = js.native
+  def elevationClass(elevation: typings.atBlueprintjsCore.libEsmCommonElevationMod.Elevation): String = js.native
   def getClassNamespace(): String = js.native
   def iconClass(): String = js.native
   def iconClass(iconName: String): String = js.native
   def intentClass(): String = js.native
-  def intentClass(intent: Intent): String = js.native
-  def positionClass(position: Position): String = js.native
+  def intentClass(intent: typings.atBlueprintjsCore.libEsmCommonIntentMod.Intent): String = js.native
+  def positionClass(position: typings.atBlueprintjsCore.libEsmCommonPositionMod.Position): String = js.native
 }
 

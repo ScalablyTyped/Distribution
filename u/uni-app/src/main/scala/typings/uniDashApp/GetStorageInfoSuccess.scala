@@ -24,7 +24,7 @@ object GetStorageInfoSuccess {
   def apply(currentSize: Int | Double = null, keys: js.Array[String] = null, limitSize: Int | Double = null): GetStorageInfoSuccess = {
     val __obj = js.Dynamic.literal()
     if (currentSize != null) __obj.updateDynamic("currentSize")(currentSize.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (limitSize != null) __obj.updateDynamic("limitSize")(limitSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStorageInfoSuccess]
   }

@@ -13,7 +13,7 @@ trait ScrollbarPresenceParams extends js.Object {
 object ScrollbarPresenceParams {
   @scala.inline
   def apply(horizontal: Boolean, size: Double, vertical: Boolean): ScrollbarPresenceParams = {
-    val __obj = js.Dynamic.literal(horizontal = horizontal, size = size, vertical = vertical)
+    val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScrollbarPresenceParams]
   }

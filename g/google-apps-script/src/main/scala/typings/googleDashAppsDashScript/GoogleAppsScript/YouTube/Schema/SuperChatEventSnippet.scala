@@ -36,18 +36,18 @@ object SuperChatEventSnippet {
     supporterDetails: ChannelProfileDetails = null
   ): SuperChatEventSnippet = {
     val __obj = js.Dynamic.literal()
-    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros)
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (commentText != null) __obj.updateDynamic("commentText")(commentText)
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (displayString != null) __obj.updateDynamic("displayString")(displayString)
-    if (!js.isUndefined(isSuperChatForGood)) __obj.updateDynamic("isSuperChatForGood")(isSuperChatForGood)
-    if (!js.isUndefined(isSuperStickerEvent)) __obj.updateDynamic("isSuperStickerEvent")(isSuperStickerEvent)
+    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (commentText != null) __obj.updateDynamic("commentText")(commentText.asInstanceOf[js.Any])
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (displayString != null) __obj.updateDynamic("displayString")(displayString.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSuperChatForGood)) __obj.updateDynamic("isSuperChatForGood")(isSuperChatForGood.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSuperStickerEvent)) __obj.updateDynamic("isSuperStickerEvent")(isSuperStickerEvent.asInstanceOf[js.Any])
     if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
-    if (nonprofit != null) __obj.updateDynamic("nonprofit")(nonprofit)
-    if (superStickerMetadata != null) __obj.updateDynamic("superStickerMetadata")(superStickerMetadata)
-    if (supporterDetails != null) __obj.updateDynamic("supporterDetails")(supporterDetails)
+    if (nonprofit != null) __obj.updateDynamic("nonprofit")(nonprofit.asInstanceOf[js.Any])
+    if (superStickerMetadata != null) __obj.updateDynamic("superStickerMetadata")(superStickerMetadata.asInstanceOf[js.Any])
+    if (supporterDetails != null) __obj.updateDynamic("supporterDetails")(supporterDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuperChatEventSnippet]
   }
 }

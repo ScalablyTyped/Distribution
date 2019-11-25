@@ -45,16 +45,16 @@ object ConstructorParams {
     testModeLogger: (/* httpOptions */ LoggerHttpOptions, /* payload */ String, /* form */ typings.formDashData.formDashDataMod.^) => Unit = null,
     timeout: Int | Double = null
   ): ConstructorParams = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey, domain = domain)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute)
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (publicApiKey != null) __obj.updateDynamic("publicApiKey")(publicApiKey)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (publicApiKey != null) __obj.updateDynamic("publicApiKey")(publicApiKey.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (!js.isUndefined(testMode)) __obj.updateDynamic("testMode")(testMode)
+    if (!js.isUndefined(testMode)) __obj.updateDynamic("testMode")(testMode.asInstanceOf[js.Any])
     if (testModeLogger != null) __obj.updateDynamic("testModeLogger")(js.Any.fromFunction3(testModeLogger))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorParams]

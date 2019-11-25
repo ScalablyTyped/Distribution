@@ -167,7 +167,7 @@ object antdComponents extends antdProps {
   @scala.inline
   def Modal: ComponentType[ModalProps] = js.constructorOf[typings.antd.esModalMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ModalProps]]
   @scala.inline
-  def Operation: ComponentType[OperationProps] = typings.antd.esTransferMod.default.asInstanceOf[js.Dynamic].selectDynamic("Operation").asInstanceOf[typings.react.reactMod.ComponentType[OperationProps]]
+  def Operation: ComponentType[OperationProps] = typings.antd.esTransferOperationMod.default.asInstanceOf[typings.react.reactMod.ComponentType[OperationProps]]
   @scala.inline
   def OptGroup: ComponentType[OptGroupProps] = typings.antd.esSelectMod.default.OptGroup.asInstanceOf[typings.react.reactMod.ComponentType[OptGroupProps]]
   @scala.inline
@@ -194,6 +194,8 @@ object antdComponents extends antdProps {
   def RadioButton: ComponentType[RadioButtonProps] = js.constructorOf[typings.antd.esRadioRadioButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RadioButtonProps]]
   @scala.inline
   def Rate: ComponentType[RateProps] = js.constructorOf[typings.antd.esRateMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RateProps]]
+  @scala.inline
+  def RenderListBody: ComponentType[RenderListBodyProps] = typings.antd.esTransferRenderListBodyMod.default.asInstanceOf[typings.react.reactMod.ComponentType[RenderListBodyProps]]
   @scala.inline
   def ResizableTextArea: ComponentType[ResizableTextAreaProps] = js.constructorOf[typings.antd.esInputResizableTextAreaMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ResizableTextAreaProps]]
   @scala.inline
@@ -227,6 +229,8 @@ object antdComponents extends antdProps {
   @scala.inline
   def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.antd.esSwitchMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SwitchProps]]
   @scala.inline
+  def TabPane: ComponentType[TabPaneProps] = typings.antd.esTabsMod.default.TabPane.asInstanceOf[typings.react.reactMod.ComponentType[TabPaneProps]]
+  @scala.inline
   def Table[T]: ComponentType[TableProps[T]] = js.constructorOf[typings.antd.esTableMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[TableProps[T]]]
   @scala.inline
   def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.antd.esTabsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabsProps]]
@@ -257,11 +261,11 @@ object antdComponents extends antdProps {
   @scala.inline
   def Tree: ComponentType[TreeProps] = js.constructorOf[typings.antd.esTreeMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TreeProps]]
   @scala.inline
-  def TreeDashSelect[T /* <: TreeNodeValue */]: ComponentType[TreeDashSelectProps[T]] = js.constructorOf[typings.antd.esTreeDashSelectMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[TreeDashSelectProps[T]]]
+  def TreeDashSelect: ComponentType[TreeDashSelectProps[TreeNodeValue]] = js.constructorOf[typings.antd.esTreeDashSelectMod.default[typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue]].asInstanceOf[typings.react.reactMod.ComponentType[TreeDashSelectProps[typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue]]]
   @scala.inline
   def TreeNode: ComponentType[TreeNodeProps] = typings.antd.esTreeTreeMod.default.TreeNode.asInstanceOf[typings.react.reactMod.ComponentType[TreeNodeProps]]
   @scala.inline
-  def TreeSelect[T /* <: TreeNodeValue */]: ComponentType[TreeSelectProps[T]] = js.constructorOf[typings.antd.esMod.TreeSelect[T]].asInstanceOf[typings.react.reactMod.ComponentType[TreeSelectProps[T]]]
+  def TreeSelect: ComponentType[TreeSelectProps[TreeNodeValue]] = js.constructorOf[typings.antd.esMod.TreeSelect[typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue]].asInstanceOf[typings.react.reactMod.ComponentType[TreeSelectProps[typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue]]]
   @scala.inline
   def TreeTreeNode: ComponentType[TreeTreeNodeProps] = typings.antd.esMod.Tree.TreeNode.asInstanceOf[typings.react.reactMod.ComponentType[TreeTreeNodeProps]]
   @scala.inline

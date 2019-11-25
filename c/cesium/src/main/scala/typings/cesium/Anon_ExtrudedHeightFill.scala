@@ -39,18 +39,18 @@ object Anon_ExtrudedHeightFill {
     stRotation: Property = null
   ): Anon_ExtrudedHeightFill = {
     val __obj = js.Dynamic.literal()
-    if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight)
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
-    if (granularity != null) __obj.updateDynamic("granularity")(granularity)
+    if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy)
+    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy.asInstanceOf[js.Any])
     if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
+    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
-    if (perPositionHeight != null) __obj.updateDynamic("perPositionHeight")(perPositionHeight)
-    if (show != null) __obj.updateDynamic("show")(show)
-    if (stRotation != null) __obj.updateDynamic("stRotation")(stRotation)
+    if (perPositionHeight != null) __obj.updateDynamic("perPositionHeight")(perPositionHeight.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (stRotation != null) __obj.updateDynamic("stRotation")(stRotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtrudedHeightFill]
   }
 }

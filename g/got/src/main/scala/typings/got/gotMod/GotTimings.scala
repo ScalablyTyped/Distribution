@@ -29,7 +29,7 @@ object GotTimings {
     start: Double,
     upload: Double
   ): GotTimings = {
-    val __obj = js.Dynamic.literal(connect = connect, end = end, error = error, lookup = lookup, phases = phases, response = response, socket = socket, start = start, upload = upload)
+    val __obj = js.Dynamic.literal(connect = connect.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any], phases = phases.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GotTimings]
   }

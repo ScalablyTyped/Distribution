@@ -32,10 +32,10 @@ object _UnmarshalledDestination {
     EncryptionConfiguration: _UnmarshalledEncryptionConfiguration = null,
     StorageClass: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String = null
   ): _UnmarshalledDestination = {
-    val __obj = js.Dynamic.literal(Bucket = Bucket)
-    if (AccessControlTranslation != null) __obj.updateDynamic("AccessControlTranslation")(AccessControlTranslation)
-    if (Account != null) __obj.updateDynamic("Account")(Account)
-    if (EncryptionConfiguration != null) __obj.updateDynamic("EncryptionConfiguration")(EncryptionConfiguration)
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
+    if (AccessControlTranslation != null) __obj.updateDynamic("AccessControlTranslation")(AccessControlTranslation.asInstanceOf[js.Any])
+    if (Account != null) __obj.updateDynamic("Account")(Account.asInstanceOf[js.Any])
+    if (EncryptionConfiguration != null) __obj.updateDynamic("EncryptionConfiguration")(EncryptionConfiguration.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledDestination]
   }

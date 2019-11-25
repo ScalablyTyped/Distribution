@@ -49,15 +49,15 @@ object EventAttendee {
   ): EventAttendee = {
     val __obj = js.Dynamic.literal()
     if (additionalGuests != null) __obj.updateDynamic("additionalGuests")(additionalGuests.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (!js.isUndefined(organizer)) __obj.updateDynamic("organizer")(organizer)
-    if (!js.isUndefined(resource)) __obj.updateDynamic("resource")(resource)
-    if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus)
-    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(organizer)) __obj.updateDynamic("organizer")(organizer.asInstanceOf[js.Any])
+    if (!js.isUndefined(resource)) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus.asInstanceOf[js.Any])
+    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventAttendee]
   }
 }

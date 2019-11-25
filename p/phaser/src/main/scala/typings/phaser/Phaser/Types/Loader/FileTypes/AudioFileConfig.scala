@@ -33,10 +33,10 @@ object AudioFileConfig {
     urlConfig: String = null,
     xhrSettings: XHRSettingsObject = null
   ): AudioFileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (audioContext != null) __obj.updateDynamic("audioContext")(audioContext)
-    if (urlConfig != null) __obj.updateDynamic("urlConfig")(urlConfig)
-    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (audioContext != null) __obj.updateDynamic("audioContext")(audioContext.asInstanceOf[js.Any])
+    if (urlConfig != null) __obj.updateDynamic("urlConfig")(urlConfig.asInstanceOf[js.Any])
+    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioFileConfig]
   }
 }

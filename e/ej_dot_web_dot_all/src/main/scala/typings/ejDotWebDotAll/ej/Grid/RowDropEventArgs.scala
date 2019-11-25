@@ -44,14 +44,14 @@ object RowDropEventArgs {
     `type`: String = null
   ): RowDropEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (draggableType != null) __obj.updateDynamic("draggableType")(draggableType)
-    if (droppedRecords != null) __obj.updateDynamic("droppedRecords")(droppedRecords)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (draggableType != null) __obj.updateDynamic("draggableType")(draggableType.asInstanceOf[js.Any])
+    if (droppedRecords != null) __obj.updateDynamic("droppedRecords")(droppedRecords.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDropEventArgs]
   }
 }

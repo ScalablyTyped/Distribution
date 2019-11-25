@@ -46,17 +46,18 @@ object Choice {
     disabled: Boolean,
     name: String,
     short: String,
-    value: js.Any,
     checked: js.UndefOr[Boolean] = js.undefined,
     extra: js.Any = null,
     key: String = null,
-    `type`: choice = null
+    `type`: choice = null,
+    value: js.Any = null
   ): Choice[T] = {
-    val __obj = js.Dynamic.literal(disabled = disabled, name = name, short = short, value = value)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Choice[T]]
   }
 }

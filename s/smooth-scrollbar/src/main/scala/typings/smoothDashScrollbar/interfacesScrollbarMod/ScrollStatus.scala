@@ -13,7 +13,7 @@ trait ScrollStatus extends js.Object {
 object ScrollStatus {
   @scala.inline
   def apply(limit: Data2d, offset: Data2d): ScrollStatus = {
-    val __obj = js.Dynamic.literal(limit = limit, offset = offset)
+    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScrollStatus]
   }

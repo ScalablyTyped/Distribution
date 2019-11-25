@@ -18,8 +18,8 @@ object IBrowseCarouselCard {
   @scala.inline
   def apply(imageDisplayOptions: ImageDisplayOptions = null, items: js.Array[IBrowseCarouselCardItem] = null): IBrowseCarouselCard = {
     val __obj = js.Dynamic.literal()
-    if (imageDisplayOptions != null) __obj.updateDynamic("imageDisplayOptions")(imageDisplayOptions)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (imageDisplayOptions != null) __obj.updateDynamic("imageDisplayOptions")(imageDisplayOptions.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBrowseCarouselCard]
   }
 }

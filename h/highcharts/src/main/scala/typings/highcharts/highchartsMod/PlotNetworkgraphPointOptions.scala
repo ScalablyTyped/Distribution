@@ -15,7 +15,7 @@ object PlotNetworkgraphPointOptions {
   @scala.inline
   def apply(events: PlotNetworkgraphPointEventsOptions = null): PlotNetworkgraphPointOptions = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotNetworkgraphPointOptions]
   }
 }

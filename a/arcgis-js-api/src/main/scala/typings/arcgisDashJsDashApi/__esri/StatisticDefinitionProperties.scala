@@ -40,8 +40,8 @@ object StatisticDefinitionProperties {
     statisticType: count | sum | min | max | avg | stddev | `var` = null
   ): StatisticDefinitionProperties = {
     val __obj = js.Dynamic.literal()
-    if (onStatisticField != null) __obj.updateDynamic("onStatisticField")(onStatisticField)
-    if (outStatisticFieldName != null) __obj.updateDynamic("outStatisticFieldName")(outStatisticFieldName)
+    if (onStatisticField != null) __obj.updateDynamic("onStatisticField")(onStatisticField.asInstanceOf[js.Any])
+    if (outStatisticFieldName != null) __obj.updateDynamic("outStatisticFieldName")(outStatisticFieldName.asInstanceOf[js.Any])
     if (statisticType != null) __obj.updateDynamic("statisticType")(statisticType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatisticDefinitionProperties]
   }

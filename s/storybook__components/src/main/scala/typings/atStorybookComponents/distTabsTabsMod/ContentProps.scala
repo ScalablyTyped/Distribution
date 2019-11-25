@@ -12,7 +12,7 @@ object ContentProps {
   @scala.inline
   def apply(absolute: js.UndefOr[Boolean] = js.undefined): ContentProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute)
+    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentProps]
   }
 }

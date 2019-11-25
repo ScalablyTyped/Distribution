@@ -54,12 +54,12 @@ object ListMultipartUploadsInput {
     limit: String = null,
     marker: String = null
   ): ListMultipartUploadsInput = {
-    val __obj = js.Dynamic.literal(accountId = accountId, vaultName = vaultName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit)
-    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMultipartUploadsInput]
   }
 }

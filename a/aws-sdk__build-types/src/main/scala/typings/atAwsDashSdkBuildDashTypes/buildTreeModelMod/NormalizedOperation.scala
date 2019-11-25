@@ -30,11 +30,11 @@ object NormalizedOperation {
     documentation: String = null,
     documentationUrl: String = null
   ): NormalizedOperation = {
-    val __obj = js.Dynamic.literal(errors = errors, http = http, input = input, name = name, output = output)
-    if (authtype != null) __obj.updateDynamic("authtype")(authtype)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (documentationUrl != null) __obj.updateDynamic("documentationUrl")(documentationUrl)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
+    if (authtype != null) __obj.updateDynamic("authtype")(authtype.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (documentationUrl != null) __obj.updateDynamic("documentationUrl")(documentationUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizedOperation]
   }
 }

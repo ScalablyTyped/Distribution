@@ -51,8 +51,8 @@ object BuildOptionInputDefinition {
     `type`: BuildOptionInputType,
     visibleRule: String
   ): BuildOptionInputDefinition = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, groupName = groupName, help = help, label = label, name = name, options = options, required = required, visibleRule = visibleRule)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], groupName = groupName.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], visibleRule = visibleRule.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptionInputDefinition]
   }
 }

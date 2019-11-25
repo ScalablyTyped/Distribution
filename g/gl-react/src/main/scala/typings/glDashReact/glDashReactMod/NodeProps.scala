@@ -39,16 +39,16 @@ object NodeProps {
     width: Int | Double = null
   ): NodeProps = {
     val __obj = js.Dynamic.literal(shader = shader.asInstanceOf[js.Any])
-    if (!js.isUndefined(backbuffering)) __obj.updateDynamic("backbuffering")(backbuffering)
-    if (blendFunc != null) __obj.updateDynamic("blendFunc")(blendFunc)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (!js.isUndefined(backbuffering)) __obj.updateDynamic("backbuffering")(backbuffering.asInstanceOf[js.Any])
+    if (blendFunc != null) __obj.updateDynamic("blendFunc")(blendFunc.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (ignoreUnusedUniforms != null) __obj.updateDynamic("ignoreUnusedUniforms")(ignoreUnusedUniforms.asInstanceOf[js.Any])
     if (onDraw != null) __obj.updateDynamic("onDraw")(js.Any.fromFunction0(onDraw))
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
-    if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms)
-    if (uniformsOptions != null) __obj.updateDynamic("uniformsOptions")(uniformsOptions)
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
+    if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms.asInstanceOf[js.Any])
+    if (uniformsOptions != null) __obj.updateDynamic("uniformsOptions")(uniformsOptions.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeProps]
   }

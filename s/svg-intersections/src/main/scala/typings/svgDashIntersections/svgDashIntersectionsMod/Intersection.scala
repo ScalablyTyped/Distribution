@@ -12,7 +12,7 @@ trait Intersection extends js.Object {
 object Intersection {
   @scala.inline
   def apply(points: js.Array[Point2D], status: String): Intersection = {
-    val __obj = js.Dynamic.literal(points = points, status = status)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Intersection]
   }

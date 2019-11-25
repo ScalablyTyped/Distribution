@@ -31,7 +31,7 @@ object Edits {
     shapePosition: Boolean,
     titleText: Boolean
   ): Edits = {
-    val __obj = js.Dynamic.literal(annotationPosition = annotationPosition, annotationTail = annotationTail, annotationText = annotationText, axisTitleText = axisTitleText, colorbarPosition = colorbarPosition, colorbarTitleText = colorbarTitleText, legendPosition = legendPosition, legendText = legendText, shapePosition = shapePosition, titleText = titleText)
+    val __obj = js.Dynamic.literal(annotationPosition = annotationPosition.asInstanceOf[js.Any], annotationTail = annotationTail.asInstanceOf[js.Any], annotationText = annotationText.asInstanceOf[js.Any], axisTitleText = axisTitleText.asInstanceOf[js.Any], colorbarPosition = colorbarPosition.asInstanceOf[js.Any], colorbarTitleText = colorbarTitleText.asInstanceOf[js.Any], legendPosition = legendPosition.asInstanceOf[js.Any], legendText = legendText.asInstanceOf[js.Any], shapePosition = shapePosition.asInstanceOf[js.Any], titleText = titleText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Edits]
   }

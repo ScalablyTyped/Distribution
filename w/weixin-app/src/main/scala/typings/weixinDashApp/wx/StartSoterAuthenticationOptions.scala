@@ -27,8 +27,8 @@ object StartSoterAuthenticationOptions {
     fail: js.Any => Unit = null,
     success: /* res */ Anon_AuthMode => Unit = null
   ): StartSoterAuthenticationOptions = {
-    val __obj = js.Dynamic.literal(challenge = challenge, requestAuthModes = requestAuthModes)
-    if (authContent != null) __obj.updateDynamic("authContent")(authContent)
+    val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], requestAuthModes = requestAuthModes.asInstanceOf[js.Any])
+    if (authContent != null) __obj.updateDynamic("authContent")(authContent.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

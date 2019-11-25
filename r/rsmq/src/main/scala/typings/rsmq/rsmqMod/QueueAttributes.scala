@@ -84,7 +84,7 @@ object QueueAttributes {
     totalsent: Double,
     vt: Double
   ): QueueAttributes = {
-    val __obj = js.Dynamic.literal(created = created, delay = delay, hiddenmsgs = hiddenmsgs, maxsize = maxsize, modified = modified, msgs = msgs, totalrecv = totalrecv, totalsent = totalsent, vt = vt)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], hiddenmsgs = hiddenmsgs.asInstanceOf[js.Any], maxsize = maxsize.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], msgs = msgs.asInstanceOf[js.Any], totalrecv = totalrecv.asInstanceOf[js.Any], totalsent = totalsent.asInstanceOf[js.Any], vt = vt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueueAttributes]
   }

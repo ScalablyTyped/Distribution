@@ -12,7 +12,7 @@ trait Anon_Link extends _Link {
 object Anon_Link {
   @scala.inline
   def apply(link: String): Anon_Link = {
-    val __obj = js.Dynamic.literal(link = link)
+    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Link]
   }

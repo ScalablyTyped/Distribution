@@ -25,7 +25,7 @@ object RowsRequestingEventUIParam {
     val __obj = js.Dynamic.literal()
     if (chunkIndex != null) __obj.updateDynamic("chunkIndex")(chunkIndex.asInstanceOf[js.Any])
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowsRequestingEventUIParam]
   }
 }

@@ -53,8 +53,8 @@ object LinearGradient {
     y1: Int | Double = null,
     y2: Int | Double = null
   ): LinearGradient = {
-    val __obj = js.Dynamic.literal(gradient = gradient, stops = stops)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
     if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
     if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])

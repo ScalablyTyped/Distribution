@@ -48,14 +48,14 @@ object IConversionOptions {
     oneofs: js.UndefOr[Boolean] = js.undefined
   ): IConversionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrays)) __obj.updateDynamic("arrays")(arrays)
-    if (bytes != null) __obj.updateDynamic("bytes")(bytes)
-    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults)
-    if (enums != null) __obj.updateDynamic("enums")(enums)
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
-    if (longs != null) __obj.updateDynamic("longs")(longs)
-    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects)
-    if (!js.isUndefined(oneofs)) __obj.updateDynamic("oneofs")(oneofs)
+    if (!js.isUndefined(arrays)) __obj.updateDynamic("arrays")(arrays.asInstanceOf[js.Any])
+    if (bytes != null) __obj.updateDynamic("bytes")(bytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (longs != null) __obj.updateDynamic("longs")(longs.asInstanceOf[js.Any])
+    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneofs)) __obj.updateDynamic("oneofs")(oneofs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConversionOptions]
   }
 }

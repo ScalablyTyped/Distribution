@@ -24,11 +24,11 @@ object ExposeOptions {
     until: Int | Double = null
   ): ExposeOptions = {
     val __obj = js.Dynamic.literal()
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
-    if (!js.isUndefined(toClassOnly)) __obj.updateDynamic("toClassOnly")(toClassOnly)
-    if (!js.isUndefined(toPlainOnly)) __obj.updateDynamic("toPlainOnly")(toPlainOnly)
+    if (!js.isUndefined(toClassOnly)) __obj.updateDynamic("toClassOnly")(toClassOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(toPlainOnly)) __obj.updateDynamic("toPlainOnly")(toPlainOnly.asInstanceOf[js.Any])
     if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExposeOptions]
   }

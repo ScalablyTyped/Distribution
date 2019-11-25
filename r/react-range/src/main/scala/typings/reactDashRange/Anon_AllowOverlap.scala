@@ -26,7 +26,7 @@ object Anon_AllowOverlap {
     rtl: Boolean,
     step: Double
   ): Anon_AllowOverlap = {
-    val __obj = js.Dynamic.literal(allowOverlap = allowOverlap, direction = direction, disabled = disabled, max = max, min = min, rtl = rtl, step = step)
+    val __obj = js.Dynamic.literal(allowOverlap = allowOverlap.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllowOverlap]
   }

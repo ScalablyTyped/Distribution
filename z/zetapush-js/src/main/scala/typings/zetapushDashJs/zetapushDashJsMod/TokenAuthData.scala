@@ -11,7 +11,7 @@ trait TokenAuthData extends js.Object {
 object TokenAuthData {
   @scala.inline
   def apply(token: String): TokenAuthData = {
-    val __obj = js.Dynamic.literal(token = token)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TokenAuthData]
   }

@@ -26,7 +26,7 @@ object Anon_EXTENSION {
     PACKAGED_APP: packaged_app,
     THEME: theme
   ): Anon_EXTENSION = {
-    val __obj = js.Dynamic.literal(EXTENSION = EXTENSION, HOSTED_APP = HOSTED_APP, LEGACY_PACKAGED_APP = LEGACY_PACKAGED_APP, PACKAGED_APP = PACKAGED_APP, THEME = THEME)
+    val __obj = js.Dynamic.literal(EXTENSION = EXTENSION.asInstanceOf[js.Any], HOSTED_APP = HOSTED_APP.asInstanceOf[js.Any], LEGACY_PACKAGED_APP = LEGACY_PACKAGED_APP.asInstanceOf[js.Any], PACKAGED_APP = PACKAGED_APP.asInstanceOf[js.Any], THEME = THEME.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EXTENSION]
   }

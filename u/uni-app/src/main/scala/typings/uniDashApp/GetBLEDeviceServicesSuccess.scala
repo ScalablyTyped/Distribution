@@ -19,8 +19,8 @@ object GetBLEDeviceServicesSuccess {
   @scala.inline
   def apply(errMsg: String = null, services: js.Array[GetBLEDeviceServicesSuccessData] = null): GetBLEDeviceServicesSuccess = {
     val __obj = js.Dynamic.literal()
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
-    if (services != null) __obj.updateDynamic("services")(services)
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBLEDeviceServicesSuccess]
   }
 }

@@ -19,7 +19,7 @@ object LocationRepositorySearchResponseRootObject {
     status: String,
     venues: js.Array[LocationRepositorySearchResponseVenuesItem]
   ): LocationRepositorySearchResponseRootObject = {
-    val __obj = js.Dynamic.literal(rank_token = rank_token, request_id = request_id, status = status, venues = venues)
+    val __obj = js.Dynamic.literal(rank_token = rank_token.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], venues = venues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocationRepositorySearchResponseRootObject]
   }

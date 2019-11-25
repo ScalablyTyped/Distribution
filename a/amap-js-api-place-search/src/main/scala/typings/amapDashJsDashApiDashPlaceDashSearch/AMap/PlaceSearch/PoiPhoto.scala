@@ -18,7 +18,7 @@ trait PoiPhoto extends js.Object {
 object PoiPhoto {
   @scala.inline
   def apply(title: String, url: String): PoiPhoto = {
-    val __obj = js.Dynamic.literal(title = title, url = url)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PoiPhoto]
   }

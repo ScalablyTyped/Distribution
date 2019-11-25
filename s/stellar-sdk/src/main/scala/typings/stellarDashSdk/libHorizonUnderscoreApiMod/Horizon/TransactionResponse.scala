@@ -32,7 +32,7 @@ trait TransactionResponse
 object TransactionResponse {
   @scala.inline
   def apply(
-    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     created_at: String,
@@ -54,8 +54,8 @@ object TransactionResponse {
     source_account_sequence: String,
     memo: String = null
   ): TransactionResponse = {
-    val __obj = js.Dynamic.literal(_links = _links, created_at = created_at, envelope_xdr = envelope_xdr, fee_charged = fee_charged, fee_meta_xdr = fee_meta_xdr, fee_paid = fee_paid, hash = hash, id = id, ledger = ledger, max_fee = max_fee, memo_type = memo_type.asInstanceOf[js.Any], operation_count = operation_count, paging_token = paging_token, result_meta_xdr = result_meta_xdr, result_xdr = result_xdr, signatures = signatures, source_account = source_account, source_account_sequence = source_account_sequence)
-    if (memo != null) __obj.updateDynamic("memo")(memo)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], envelope_xdr = envelope_xdr.asInstanceOf[js.Any], fee_charged = fee_charged.asInstanceOf[js.Any], fee_meta_xdr = fee_meta_xdr.asInstanceOf[js.Any], fee_paid = fee_paid.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ledger = ledger.asInstanceOf[js.Any], max_fee = max_fee.asInstanceOf[js.Any], memo_type = memo_type.asInstanceOf[js.Any], operation_count = operation_count.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], result_meta_xdr = result_meta_xdr.asInstanceOf[js.Any], result_xdr = result_xdr.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any], source_account = source_account.asInstanceOf[js.Any], source_account_sequence = source_account_sequence.asInstanceOf[js.Any])
+    if (memo != null) __obj.updateDynamic("memo")(memo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionResponse]
   }
 }

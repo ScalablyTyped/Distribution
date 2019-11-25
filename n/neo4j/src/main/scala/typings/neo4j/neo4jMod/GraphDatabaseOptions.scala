@@ -41,10 +41,10 @@ object GraphDatabaseOptions {
     headers: js.Object = null,
     proxy: String = null
   ): GraphDatabaseOptions = {
-    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], url = url)
-    if (agent != null) __obj.updateDynamic("agent")(agent)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphDatabaseOptions]
   }
 }

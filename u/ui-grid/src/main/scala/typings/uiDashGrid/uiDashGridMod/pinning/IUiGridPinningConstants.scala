@@ -12,7 +12,7 @@ trait IUiGridPinningConstants extends js.Object {
 object IUiGridPinningConstants {
   @scala.inline
   def apply(container: Anon_LEFT): IUiGridPinningConstants = {
-    val __obj = js.Dynamic.literal(container = container)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IUiGridPinningConstants]
   }

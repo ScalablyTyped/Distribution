@@ -24,8 +24,8 @@ object GeocoderConstructorOptions {
   @scala.inline
   def apply(getsUserLocation: js.UndefOr[Boolean] = js.undefined, language: String = null): GeocoderConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(getsUserLocation)) __obj.updateDynamic("getsUserLocation")(getsUserLocation)
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (!js.isUndefined(getsUserLocation)) __obj.updateDynamic("getsUserLocation")(getsUserLocation.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocoderConstructorOptions]
   }
 }

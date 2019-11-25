@@ -1,7 +1,6 @@
 package typings.asana.asanaMod.resources
 
 import org.scalablytyped.runtime.TopLevel
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,8 +27,8 @@ trait Resource extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchDelete(path: String): ^[_] = js.native
-  def dispatchDelete(path: String, dispatchOptions: js.Any): ^[_] = js.native
+  def dispatchDelete(path: String): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatchDelete(path: String, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
   /**
     * Dispatches a GET request to the API, where the expected result is a
     * single resource.
@@ -43,9 +42,9 @@ trait Resource extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchGet(path: String): ^[_] = js.native
-  def dispatchGet(path: String, query: js.Any): ^[_] = js.native
-  def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+  def dispatchGet(path: String): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatchGet(path: String, query: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
   /**
     * Dispatches a GET request to the API, where the expected result is a
     * collection.
@@ -59,9 +58,9 @@ trait Resource extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchGetCollection(path: String): ^[_] = js.native
-  def dispatchGetCollection(path: String, query: js.Any): ^[_] = js.native
-  def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+  def dispatchGetCollection(path: String): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatchGetCollection(path: String, query: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
   /**
     * Dispatches a POST request to the API, where the expected response is a
     * single resource.
@@ -75,9 +74,9 @@ trait Resource extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchPost(path: String): ^[_] = js.native
-  def dispatchPost(path: String, query: js.Any): ^[_] = js.native
-  def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+  def dispatchPost(path: String): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatchPost(path: String, query: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
   /**
     * Dispatches a POST request to the API, where the expected response is a
     * single resource.
@@ -91,9 +90,9 @@ trait Resource extends js.Object {
     * @param dispatchOptions?
     * @return
     */
-  def dispatchPut(path: String): ^[_] = js.native
-  def dispatchPut(path: String, query: js.Any): ^[_] = js.native
-  def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+  def dispatchPut(path: String): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatchPut(path: String, query: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
 }
 
 @JSImport("asana", "resources.Resource")

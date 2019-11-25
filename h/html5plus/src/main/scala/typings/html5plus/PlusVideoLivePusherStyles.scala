@@ -139,19 +139,19 @@ object PlusVideoLivePusherStyles {
     width: String = null
   ): PlusVideoLivePusherStyles = {
     val __obj = js.Dynamic.literal()
-    if (aspect != null) __obj.updateDynamic("aspect")(aspect)
-    if (!js.isUndefined(`auto-focus`)) __obj.updateDynamic("auto-focus")(`auto-focus`)
+    if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
+    if (!js.isUndefined(`auto-focus`)) __obj.updateDynamic("auto-focus")(`auto-focus`.asInstanceOf[js.Any])
     if (beauty != null) __obj.updateDynamic("beauty")(beauty.asInstanceOf[js.Any])
-    if (!js.isUndefined(`enable-camera`)) __obj.updateDynamic("enable-camera")(`enable-camera`)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (top != null) __obj.updateDynamic("top")(top)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(`enable-camera`)) __obj.updateDynamic("enable-camera")(`enable-camera`.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (whiteness != null) __obj.updateDynamic("whiteness")(whiteness.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusVideoLivePusherStyles]
   }
 }

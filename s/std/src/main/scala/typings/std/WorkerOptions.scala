@@ -14,9 +14,9 @@ object WorkerOptions {
   @scala.inline
   def apply(credentials: RequestCredentials = null, name: java.lang.String = null, `type`: WorkerType = null): WorkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerOptions]
   }
 }

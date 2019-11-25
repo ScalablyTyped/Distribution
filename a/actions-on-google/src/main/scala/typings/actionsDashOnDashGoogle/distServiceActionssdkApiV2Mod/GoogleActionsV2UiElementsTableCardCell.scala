@@ -15,7 +15,7 @@ object GoogleActionsV2UiElementsTableCardCell {
   @scala.inline
   def apply(text: String = null): GoogleActionsV2UiElementsTableCardCell = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCardCell]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_MuteConfig extends js.Object {
 object Anon_MuteConfig {
   @scala.inline
   def apply(muteConfig: Anon_MuteEarphone): Anon_MuteConfig = {
-    val __obj = js.Dynamic.literal(muteConfig = muteConfig)
+    val __obj = js.Dynamic.literal(muteConfig = muteConfig.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MuteConfig]
   }

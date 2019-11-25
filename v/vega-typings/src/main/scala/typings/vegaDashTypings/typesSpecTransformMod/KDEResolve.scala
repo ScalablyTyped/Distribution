@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait KDEResolve extends js.Object
 
+object KDEResolve {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def independent: typings.vegaDashTypings.vegaDashTypingsStrings.independent = this.cast("independent")
+  @scala.inline
+  def shared: typings.vegaDashTypings.vegaDashTypingsStrings.shared = this.cast("shared")
+}
+

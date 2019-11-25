@@ -25,8 +25,8 @@ object AggregationResult {
     matching_results: Int | Double = null
   ): AggregationResult = {
     val __obj = js.Dynamic.literal()
-    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (matching_results != null) __obj.updateDynamic("matching_results")(matching_results.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregationResult]
   }

@@ -20,8 +20,8 @@ object OpenAPIDefaultSetterArgs {
     ],
     loggingKey: String = null
   ): OpenAPIDefaultSetterArgs = {
-    val __obj = js.Dynamic.literal(parameters = parameters)
-    if (loggingKey != null) __obj.updateDynamic("loggingKey")(loggingKey)
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
+    if (loggingKey != null) __obj.updateDynamic("loggingKey")(loggingKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPIDefaultSetterArgs]
   }
 }

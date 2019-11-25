@@ -13,8 +13,8 @@ object TeardownTag {
   @scala.inline
   def apply(stopTeardownOnFailure: js.UndefOr[Boolean] = js.undefined, tagName: String = null): TeardownTag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stopTeardownOnFailure)) __obj.updateDynamic("stopTeardownOnFailure")(stopTeardownOnFailure)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (!js.isUndefined(stopTeardownOnFailure)) __obj.updateDynamic("stopTeardownOnFailure")(stopTeardownOnFailure.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeardownTag]
   }
 }

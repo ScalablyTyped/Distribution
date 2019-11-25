@@ -38,7 +38,7 @@ object TouchBarSliderConstructorOptions {
   ): TouchBarSliderConstructorOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

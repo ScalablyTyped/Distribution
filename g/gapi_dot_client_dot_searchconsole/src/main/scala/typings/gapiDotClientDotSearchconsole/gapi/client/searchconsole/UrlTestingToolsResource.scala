@@ -11,7 +11,7 @@ trait UrlTestingToolsResource extends js.Object {
 object UrlTestingToolsResource {
   @scala.inline
   def apply(mobileFriendlyTest: MobileFriendlyTestResource): UrlTestingToolsResource = {
-    val __obj = js.Dynamic.literal(mobileFriendlyTest = mobileFriendlyTest)
+    val __obj = js.Dynamic.literal(mobileFriendlyTest = mobileFriendlyTest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UrlTestingToolsResource]
   }

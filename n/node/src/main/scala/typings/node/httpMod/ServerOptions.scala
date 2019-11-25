@@ -18,8 +18,8 @@ object ServerOptions {
     ServerResponse: Instantiable1[/* req */ IncomingMessage, ServerResponse] = null
   ): ServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (IncomingMessage != null) __obj.updateDynamic("IncomingMessage")(IncomingMessage)
-    if (ServerResponse != null) __obj.updateDynamic("ServerResponse")(ServerResponse)
+    if (IncomingMessage != null) __obj.updateDynamic("IncomingMessage")(IncomingMessage.asInstanceOf[js.Any])
+    if (ServerResponse != null) __obj.updateDynamic("ServerResponse")(ServerResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
 }

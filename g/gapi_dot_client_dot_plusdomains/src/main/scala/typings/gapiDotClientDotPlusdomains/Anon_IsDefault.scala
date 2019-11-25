@@ -18,8 +18,8 @@ object Anon_IsDefault {
   @scala.inline
   def apply(isDefault: js.UndefOr[Boolean] = js.undefined, url: String = null): Anon_IsDefault = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsDefault]
   }
 }

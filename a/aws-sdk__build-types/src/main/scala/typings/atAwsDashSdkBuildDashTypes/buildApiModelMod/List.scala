@@ -29,14 +29,14 @@ object List {
     min: Int | scala.Double = null,
     sensitive: js.UndefOr[scala.Boolean] = js.undefined
   ): List = {
-    val __obj = js.Dynamic.literal(member = member)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened)
+    val __obj = js.Dynamic.literal(member = member.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[List]
   }
 }

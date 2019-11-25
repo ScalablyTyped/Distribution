@@ -37,9 +37,9 @@ object ChecksListSuitesForRefParams {
     page: Int | Double = null,
     per_page: Int | Double = null
   ): ChecksListSuitesForRefParams = {
-    val __obj = js.Dynamic.literal(owner = owner, ref = ref, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (check_name != null) __obj.updateDynamic("check_name")(check_name)
+    if (check_name != null) __obj.updateDynamic("check_name")(check_name.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksListSuitesForRefParams]

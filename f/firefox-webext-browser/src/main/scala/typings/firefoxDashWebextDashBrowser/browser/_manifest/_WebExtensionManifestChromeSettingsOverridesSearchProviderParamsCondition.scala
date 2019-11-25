@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition extends js.Object
 
+object _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def pref: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.pref = this.cast("pref")
+  @scala.inline
+  def purpose: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.purpose = this.cast("purpose")
+}
+

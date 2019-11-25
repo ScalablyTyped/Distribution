@@ -11,7 +11,7 @@ trait OutboundMessageDump extends js.Object {
 object OutboundMessageDump {
   @scala.inline
   def apply(Body: String): OutboundMessageDump = {
-    val __obj = js.Dynamic.literal(Body = Body)
+    val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutboundMessageDump]
   }

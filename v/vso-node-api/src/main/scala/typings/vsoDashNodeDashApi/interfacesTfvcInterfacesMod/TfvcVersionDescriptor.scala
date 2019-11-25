@@ -13,7 +13,7 @@ trait TfvcVersionDescriptor extends js.Object {
 object TfvcVersionDescriptor {
   @scala.inline
   def apply(version: String, versionOption: TfvcVersionOption, versionType: TfvcVersionType): TfvcVersionDescriptor = {
-    val __obj = js.Dynamic.literal(version = version, versionOption = versionOption, versionType = versionType)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any], versionOption = versionOption.asInstanceOf[js.Any], versionType = versionType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcVersionDescriptor]
   }

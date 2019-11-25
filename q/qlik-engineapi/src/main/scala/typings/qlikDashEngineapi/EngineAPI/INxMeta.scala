@@ -19,7 +19,7 @@ object INxMeta {
   @scala.inline
   def apply(qName: String = null): INxMeta = {
     val __obj = js.Dynamic.literal()
-    if (qName != null) __obj.updateDynamic("qName")(qName)
+    if (qName != null) __obj.updateDynamic("qName")(qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxMeta]
   }
 }

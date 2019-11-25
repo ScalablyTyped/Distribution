@@ -13,7 +13,7 @@ trait RenderResultObject extends js.Object {
 object RenderResultObject {
   @scala.inline
   def apply(label: ReactElement, value: String): RenderResultObject = {
-    val __obj = js.Dynamic.literal(label = label, value = value)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderResultObject]
   }

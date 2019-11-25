@@ -43,16 +43,16 @@ object Adsense_ {
     Urlchannels: UrlchannelsCollection = null
   ): Adsense_ = {
     val __obj = js.Dynamic.literal()
-    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts)
-    if (Adclients != null) __obj.updateDynamic("Adclients")(Adclients)
-    if (Adunits != null) __obj.updateDynamic("Adunits")(Adunits)
-    if (Alerts != null) __obj.updateDynamic("Alerts")(Alerts)
-    if (Customchannels != null) __obj.updateDynamic("Customchannels")(Customchannels)
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata)
-    if (Payments != null) __obj.updateDynamic("Payments")(Payments)
-    if (Reports != null) __obj.updateDynamic("Reports")(Reports)
-    if (Savedadstyles != null) __obj.updateDynamic("Savedadstyles")(Savedadstyles)
-    if (Urlchannels != null) __obj.updateDynamic("Urlchannels")(Urlchannels)
+    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts.asInstanceOf[js.Any])
+    if (Adclients != null) __obj.updateDynamic("Adclients")(Adclients.asInstanceOf[js.Any])
+    if (Adunits != null) __obj.updateDynamic("Adunits")(Adunits.asInstanceOf[js.Any])
+    if (Alerts != null) __obj.updateDynamic("Alerts")(Alerts.asInstanceOf[js.Any])
+    if (Customchannels != null) __obj.updateDynamic("Customchannels")(Customchannels.asInstanceOf[js.Any])
+    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
+    if (Payments != null) __obj.updateDynamic("Payments")(Payments.asInstanceOf[js.Any])
+    if (Reports != null) __obj.updateDynamic("Reports")(Reports.asInstanceOf[js.Any])
+    if (Savedadstyles != null) __obj.updateDynamic("Savedadstyles")(Savedadstyles.asInstanceOf[js.Any])
+    if (Urlchannels != null) __obj.updateDynamic("Urlchannels")(Urlchannels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Adsense_]
   }
 }

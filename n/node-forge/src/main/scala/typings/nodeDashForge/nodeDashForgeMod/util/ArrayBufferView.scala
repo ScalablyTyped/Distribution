@@ -13,7 +13,7 @@ trait ArrayBufferView extends js.Object {
 object ArrayBufferView {
   @scala.inline
   def apply(buffer: ArrayBuffer, byteLength: Double): ArrayBufferView = {
-    val __obj = js.Dynamic.literal(buffer = buffer, byteLength = byteLength)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], byteLength = byteLength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArrayBufferView]
   }

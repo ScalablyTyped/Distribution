@@ -30,9 +30,9 @@ object AnimationTriggerMetadata {
     `type`: AnimationMetadataType,
     options: Anon_NameParams = null
   ): AnimationTriggerMetadata = {
-    val __obj = js.Dynamic.literal(definitions = definitions, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTriggerMetadata]
   }
 }

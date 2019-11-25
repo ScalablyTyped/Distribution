@@ -13,7 +13,7 @@ trait Anon_Cwd extends js.Object {
 object Anon_Cwd {
   @scala.inline
   def apply(cwd: String, pwd: ProcessEnv): Anon_Cwd = {
-    val __obj = js.Dynamic.literal(cwd = cwd, pwd = pwd)
+    val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any], pwd = pwd.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cwd]
   }

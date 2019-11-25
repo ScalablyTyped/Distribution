@@ -31,9 +31,9 @@ object History {
   @scala.inline
   def apply(displayName: String = null, historyId: String = null, name: String = null): History = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[History]
   }
 }

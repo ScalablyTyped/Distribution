@@ -14,10 +14,10 @@ trait GraphQLArgument extends js.Object {
 object GraphQLArgument {
   @scala.inline
   def apply(name: String, `type`: GraphQLInputType, defaultValue: js.Any = null, description: String = null): GraphQLArgument = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLArgument]
   }
 }

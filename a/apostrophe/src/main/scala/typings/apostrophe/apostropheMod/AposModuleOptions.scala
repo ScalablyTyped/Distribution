@@ -40,17 +40,17 @@ object AposModuleOptions {
     removeFields: js.Array[Field] = null,
     scene: user = null
   ): AposModuleOptions[C] = {
-    val __obj = js.Dynamic.literal(extend = extend.asInstanceOf[js.Any], label = label)
-    if (addFields != null) __obj.updateDynamic("addFields")(addFields)
-    if (arrangeFields != null) __obj.updateDynamic("arrangeFields")(arrangeFields)
+    val __obj = js.Dynamic.literal(extend = extend.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (addFields != null) __obj.updateDynamic("addFields")(addFields.asInstanceOf[js.Any])
+    if (arrangeFields != null) __obj.updateDynamic("arrangeFields")(arrangeFields.asInstanceOf[js.Any])
     if (beforeConstruct != null) __obj.updateDynamic("beforeConstruct")(js.Any.fromFunction2(beforeConstruct))
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (playerData != null) __obj.updateDynamic("playerData")(playerData.asInstanceOf[js.Any])
-    if (pluralLabel != null) __obj.updateDynamic("pluralLabel")(pluralLabel)
-    if (removeFields != null) __obj.updateDynamic("removeFields")(removeFields)
-    if (scene != null) __obj.updateDynamic("scene")(scene)
+    if (pluralLabel != null) __obj.updateDynamic("pluralLabel")(pluralLabel.asInstanceOf[js.Any])
+    if (removeFields != null) __obj.updateDynamic("removeFields")(removeFields.asInstanceOf[js.Any])
+    if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[AposModuleOptions[C]]
   }
 }

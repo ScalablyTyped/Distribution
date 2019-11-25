@@ -15,7 +15,7 @@ object PlotMapDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: PlotMapDragDropGuideBoxDefaultOptions = null): PlotMapDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMapDragDropGuideBoxOptions]
   }
 }

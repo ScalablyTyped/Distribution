@@ -17,7 +17,7 @@ trait Anon_ExcludeIOS11 extends js.Object {
 object Anon_ExcludeIOS11 {
   @scala.inline
   def apply(excludeIOS11: Boolean, timeout: Double): Anon_ExcludeIOS11 = {
-    val __obj = js.Dynamic.literal(excludeIOS11 = excludeIOS11, timeout = timeout)
+    val __obj = js.Dynamic.literal(excludeIOS11 = excludeIOS11.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExcludeIOS11]
   }

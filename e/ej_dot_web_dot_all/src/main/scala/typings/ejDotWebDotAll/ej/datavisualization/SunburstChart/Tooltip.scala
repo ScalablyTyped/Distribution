@@ -45,13 +45,13 @@ object Tooltip {
     visible: js.UndefOr[Boolean] = js.undefined
   ): Tooltip = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tooltip]
   }
 }

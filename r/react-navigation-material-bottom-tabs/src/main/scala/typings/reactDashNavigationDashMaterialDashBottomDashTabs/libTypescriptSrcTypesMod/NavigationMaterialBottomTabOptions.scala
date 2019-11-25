@@ -33,15 +33,15 @@ object NavigationMaterialBottomTabOptions {
     title: String = null
   ): NavigationMaterialBottomTabOptions = {
     val __obj = js.Dynamic.literal()
-    if (tabBarAccessibilityLabel != null) __obj.updateDynamic("tabBarAccessibilityLabel")(tabBarAccessibilityLabel)
+    if (tabBarAccessibilityLabel != null) __obj.updateDynamic("tabBarAccessibilityLabel")(tabBarAccessibilityLabel.asInstanceOf[js.Any])
     if (tabBarBadge != null) __obj.updateDynamic("tabBarBadge")(tabBarBadge.asInstanceOf[js.Any])
-    if (tabBarColor != null) __obj.updateDynamic("tabBarColor")(tabBarColor)
+    if (tabBarColor != null) __obj.updateDynamic("tabBarColor")(tabBarColor.asInstanceOf[js.Any])
     if (tabBarIcon != null) __obj.updateDynamic("tabBarIcon")(tabBarIcon.asInstanceOf[js.Any])
     if (tabBarLabel != null) __obj.updateDynamic("tabBarLabel")(tabBarLabel.asInstanceOf[js.Any])
     if (tabBarOnPress != null) __obj.updateDynamic("tabBarOnPress")(js.Any.fromFunction1(tabBarOnPress))
-    if (tabBarTestID != null) __obj.updateDynamic("tabBarTestID")(tabBarTestID)
-    if (!js.isUndefined(tabBarVisible)) __obj.updateDynamic("tabBarVisible")(tabBarVisible)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (tabBarTestID != null) __obj.updateDynamic("tabBarTestID")(tabBarTestID.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBarVisible)) __obj.updateDynamic("tabBarVisible")(tabBarVisible.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationMaterialBottomTabOptions]
   }
 }

@@ -64,15 +64,15 @@ object Anon_Audience {
     scope: String = null,
     state: String = null
   ): Anon_Audience = {
-    val __obj = js.Dynamic.literal(domain = domain, redirectUri = redirectUri, responseType = responseType)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (!js.isUndefined(owp)) __obj.updateDynamic("owp")(owp)
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (!js.isUndefined(owp)) __obj.updateDynamic("owp")(owp.asInstanceOf[js.Any])
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Audience]
   }
 }

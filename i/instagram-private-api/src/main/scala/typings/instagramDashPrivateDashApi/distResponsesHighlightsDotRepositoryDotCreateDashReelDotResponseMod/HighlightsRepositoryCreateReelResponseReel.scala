@@ -45,7 +45,7 @@ object HighlightsRepositoryCreateReelResponseReel {
     title: String,
     user: HighlightsRepositoryCreateReelResponseUser
   ): HighlightsRepositoryCreateReelResponseReel = {
-    val __obj = js.Dynamic.literal(can_reply = can_reply, can_reshare = can_reshare, contains_stitched_media_blocked_by_rm = contains_stitched_media_blocked_by_rm, cover_media = cover_media, created_at = created_at, has_pride_media = has_pride_media, id = id, items = items, latest_reel_media = latest_reel_media, media_count = media_count, prefetch_count = prefetch_count, ranked_position = ranked_position, reel_type = reel_type, seen = seen, seen_ranked_position = seen_ranked_position, title = title, user = user)
+    val __obj = js.Dynamic.literal(can_reply = can_reply.asInstanceOf[js.Any], can_reshare = can_reshare.asInstanceOf[js.Any], contains_stitched_media_blocked_by_rm = contains_stitched_media_blocked_by_rm.asInstanceOf[js.Any], cover_media = cover_media.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], has_pride_media = has_pride_media.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], latest_reel_media = latest_reel_media.asInstanceOf[js.Any], media_count = media_count.asInstanceOf[js.Any], prefetch_count = prefetch_count.asInstanceOf[js.Any], ranked_position = ranked_position.asInstanceOf[js.Any], reel_type = reel_type.asInstanceOf[js.Any], seen = seen.asInstanceOf[js.Any], seen_ranked_position = seen_ranked_position.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HighlightsRepositoryCreateReelResponseReel]
   }

@@ -78,7 +78,7 @@ object IObjectPool {
     updated: ISignal[IObjectPool[T], T],
     current: T = null
   ): IObjectPool[T] = {
-    val __obj = js.Dynamic.literal(added = added, currentChanged = currentChanged, dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), isDisposed = isDisposed, size = size, updated = updated)
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], currentChanged = currentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), isDisposed = isDisposed.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObjectPool[T]]
   }

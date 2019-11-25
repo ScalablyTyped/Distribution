@@ -12,7 +12,7 @@ trait SourceBufferListEventMap extends js.Object {
 object SourceBufferListEventMap {
   @scala.inline
   def apply(addsourcebuffer: Event, removesourcebuffer: Event): SourceBufferListEventMap = {
-    val __obj = js.Dynamic.literal(addsourcebuffer = addsourcebuffer, removesourcebuffer = removesourcebuffer)
+    val __obj = js.Dynamic.literal(addsourcebuffer = addsourcebuffer.asInstanceOf[js.Any], removesourcebuffer = removesourcebuffer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceBufferListEventMap]
   }

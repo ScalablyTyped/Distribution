@@ -24,11 +24,11 @@ object IMagellanOptions {
     threshold: Int | Double = null
   ): IMagellanOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
     if (barOffset != null) __obj.updateDynamic("barOffset")(barOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(deepLinking)) __obj.updateDynamic("deepLinking")(deepLinking)
+    if (!js.isUndefined(deepLinking)) __obj.updateDynamic("deepLinking")(deepLinking.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMagellanOptions]
   }

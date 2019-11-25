@@ -31,10 +31,10 @@ object TransformModuleJSON {
     originalSourcemap: ExistingDecodedSourceMap = null,
     resolvedIds: ResolvedIdMap = null
   ): TransformModuleJSON = {
-    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, originalCode = originalCode, sourcemapChain = sourcemapChain, transformDependencies = transformDependencies)
-    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects)
-    if (originalSourcemap != null) __obj.updateDynamic("originalSourcemap")(originalSourcemap)
-    if (resolvedIds != null) __obj.updateDynamic("resolvedIds")(resolvedIds)
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], customTransformCache = customTransformCache.asInstanceOf[js.Any], originalCode = originalCode.asInstanceOf[js.Any], sourcemapChain = sourcemapChain.asInstanceOf[js.Any], transformDependencies = transformDependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects.asInstanceOf[js.Any])
+    if (originalSourcemap != null) __obj.updateDynamic("originalSourcemap")(originalSourcemap.asInstanceOf[js.Any])
+    if (resolvedIds != null) __obj.updateDynamic("resolvedIds")(resolvedIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformModuleJSON]
   }
 }

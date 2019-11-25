@@ -44,15 +44,15 @@ object CriteriaObject {
     spread: js.UndefOr[Boolean] = js.undefined,
     tags: js.UndefOr[Boolean] = js.undefined
   ): CriteriaObject = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (listener != null) __obj.updateDynamic("listener")(js.Any.fromFunction3(listener))
-    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread)
-    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags)
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CriteriaObject]
   }
 }

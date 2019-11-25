@@ -61,13 +61,13 @@ object ISkyDrivePickerProperies {
     state: String = null,
     theme: String = null
   ): ISkyDrivePickerProperies = {
-    val __obj = js.Dynamic.literal(element = element, mode = mode, name = name)
-    if (lightbox != null) __obj.updateDynamic("lightbox")(lightbox)
-    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
-    if (onselected != null) __obj.updateDynamic("onselected")(onselected)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (lightbox != null) __obj.updateDynamic("lightbox")(lightbox.asInstanceOf[js.Any])
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror.asInstanceOf[js.Any])
+    if (onselected != null) __obj.updateDynamic("onselected")(onselected.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISkyDrivePickerProperies]
   }
 }

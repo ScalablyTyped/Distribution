@@ -31,14 +31,14 @@ object DynamoDBRecord {
     userIdentity: js.Any = null
   ): DynamoDBRecord = {
     val __obj = js.Dynamic.literal()
-    if (awsRegion != null) __obj.updateDynamic("awsRegion")(awsRegion)
-    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb)
-    if (eventID != null) __obj.updateDynamic("eventID")(eventID)
+    if (awsRegion != null) __obj.updateDynamic("awsRegion")(awsRegion.asInstanceOf[js.Any])
+    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb.asInstanceOf[js.Any])
+    if (eventID != null) __obj.updateDynamic("eventID")(eventID.asInstanceOf[js.Any])
     if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
-    if (eventSource != null) __obj.updateDynamic("eventSource")(eventSource)
-    if (eventSourceARN != null) __obj.updateDynamic("eventSourceARN")(eventSourceARN)
-    if (eventVersion != null) __obj.updateDynamic("eventVersion")(eventVersion)
-    if (userIdentity != null) __obj.updateDynamic("userIdentity")(userIdentity)
+    if (eventSource != null) __obj.updateDynamic("eventSource")(eventSource.asInstanceOf[js.Any])
+    if (eventSourceARN != null) __obj.updateDynamic("eventSourceARN")(eventSourceARN.asInstanceOf[js.Any])
+    if (eventVersion != null) __obj.updateDynamic("eventVersion")(eventVersion.asInstanceOf[js.Any])
+    if (userIdentity != null) __obj.updateDynamic("userIdentity")(userIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamoDBRecord]
   }
 }

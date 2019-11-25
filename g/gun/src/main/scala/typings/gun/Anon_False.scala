@@ -20,7 +20,7 @@ object Anon_False {
     key: ReferenceKey,
     put: ArrayAsRecord[DataType]
   ): Anon_False[DataType, ReferenceKey] = {
-    val __obj = js.Dynamic.literal(gun = gun, key = key.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(gun = gun.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_False[DataType, ReferenceKey]]
   }

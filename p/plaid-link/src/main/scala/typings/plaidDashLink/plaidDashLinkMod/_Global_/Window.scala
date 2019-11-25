@@ -12,7 +12,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(Plaid: Anon_Create): Window = {
-    val __obj = js.Dynamic.literal(Plaid = Plaid)
+    val __obj = js.Dynamic.literal(Plaid = Plaid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

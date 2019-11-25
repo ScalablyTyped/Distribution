@@ -14,8 +14,8 @@ trait TypeLookup extends js.Object {
 object TypeLookup {
   @scala.inline
   def apply(`class`: Instantiable0[EmberObject], instance: EmberObject): TypeLookup = {
-    val __obj = js.Dynamic.literal(instance = instance)
-    __obj.updateDynamic("class")(`class`)
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeLookup]
   }
 }

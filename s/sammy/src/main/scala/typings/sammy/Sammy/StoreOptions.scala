@@ -28,14 +28,14 @@ object StoreOptions {
     `type`: String = null
   ): StoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (local != null) __obj.updateDynamic("local")(local)
-    if (memory != null) __obj.updateDynamic("memory")(memory)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreOptions]
   }
 }

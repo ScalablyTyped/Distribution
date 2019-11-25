@@ -12,7 +12,7 @@ trait Domain extends js.Object {
 object Domain {
   @scala.inline
   def apply(fqdn: String, zone_uuid: String): Domain = {
-    val __obj = js.Dynamic.literal(fqdn = fqdn, zone_uuid = zone_uuid)
+    val __obj = js.Dynamic.literal(fqdn = fqdn.asInstanceOf[js.Any], zone_uuid = zone_uuid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Domain]
   }

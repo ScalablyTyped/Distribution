@@ -36,16 +36,16 @@ object Configuration {
     video_size: Anon_MaxHeight = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (audio_remote != null) __obj.updateDynamic("audio_remote")(audio_remote)
-    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth)
-    if (events_listener != null) __obj.updateDynamic("events_listener")(events_listener)
+    if (audio_remote != null) __obj.updateDynamic("audio_remote")(audio_remote.asInstanceOf[js.Any])
+    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
+    if (events_listener != null) __obj.updateDynamic("events_listener")(events_listener.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (sip_caps != null) __obj.updateDynamic("sip_caps")(sip_caps)
-    if (sip_headers != null) __obj.updateDynamic("sip_headers")(sip_headers)
-    if (video_local != null) __obj.updateDynamic("video_local")(video_local)
-    if (video_remote != null) __obj.updateDynamic("video_remote")(video_remote)
-    if (video_size != null) __obj.updateDynamic("video_size")(video_size)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (sip_caps != null) __obj.updateDynamic("sip_caps")(sip_caps.asInstanceOf[js.Any])
+    if (sip_headers != null) __obj.updateDynamic("sip_headers")(sip_headers.asInstanceOf[js.Any])
+    if (video_local != null) __obj.updateDynamic("video_local")(video_local.asInstanceOf[js.Any])
+    if (video_remote != null) __obj.updateDynamic("video_remote")(video_remote.asInstanceOf[js.Any])
+    if (video_size != null) __obj.updateDynamic("video_size")(video_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ascii2mathml"
-version := "0.5-dt-20181011Z-9e7d21"
+version := "0.5-dt-20181011Z-377037"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

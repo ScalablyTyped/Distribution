@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait BillingAddressFormat extends js.Object
 
+object BillingAddressFormat {
+  @scala.inline
+  def FULL: typings.googlepay.googlepayStrings.FULL = this.cast("FULL")
+  @scala.inline
+  def MIN: typings.googlepay.googlepayStrings.MIN = this.cast("MIN")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

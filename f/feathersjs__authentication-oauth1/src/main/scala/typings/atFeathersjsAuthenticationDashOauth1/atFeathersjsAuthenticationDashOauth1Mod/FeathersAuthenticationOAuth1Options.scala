@@ -66,7 +66,7 @@ object FeathersAuthenticationOAuth1Options {
     service: String,
     session: Boolean
   ): FeathersAuthenticationOAuth1Options = {
-    val __obj = js.Dynamic.literal(Verifier = Verifier, callbackPath = callbackPath, callbackURL = callbackURL, entity = entity, formatter = formatter, handler = handler, idField = idField, passReqToCallback = passReqToCallback, path = path, service = service, session = session)
+    val __obj = js.Dynamic.literal(Verifier = Verifier.asInstanceOf[js.Any], callbackPath = callbackPath.asInstanceOf[js.Any], callbackURL = callbackURL.asInstanceOf[js.Any], entity = entity.asInstanceOf[js.Any], formatter = formatter.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], idField = idField.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeathersAuthenticationOAuth1Options]
   }

@@ -26,7 +26,7 @@ trait IFieldDefEx extends js.Object {
 object IFieldDefEx {
   @scala.inline
   def apply(qName: String, qType: FieldDefExType): IFieldDefEx = {
-    val __obj = js.Dynamic.literal(qName = qName, qType = qType)
+    val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFieldDefEx]
   }

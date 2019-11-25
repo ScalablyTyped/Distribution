@@ -83,13 +83,13 @@ object Event {
     origintype: String = null,
     sendid: String = null
   ): Event = {
-    val __obj = js.Dynamic.literal($$type = $$type, name = name)
+    val __obj = js.Dynamic.literal($$type = $$type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (invokeid != null) __obj.updateDynamic("invokeid")(invokeid)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (origintype != null) __obj.updateDynamic("origintype")(origintype)
-    if (sendid != null) __obj.updateDynamic("sendid")(sendid)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (invokeid != null) __obj.updateDynamic("invokeid")(invokeid.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (origintype != null) __obj.updateDynamic("origintype")(origintype.asInstanceOf[js.Any])
+    if (sendid != null) __obj.updateDynamic("sendid")(sendid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

@@ -113,15 +113,15 @@ object PrintTemplateProperties {
     showLabels: js.UndefOr[Boolean] = js.undefined
   ): PrintTemplateProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attributionVisible)) __obj.updateDynamic("attributionVisible")(attributionVisible)
-    if (exportOptions != null) __obj.updateDynamic("exportOptions")(exportOptions)
-    if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(attributionVisible)) __obj.updateDynamic("attributionVisible")(attributionVisible.asInstanceOf[js.Any])
+    if (exportOptions != null) __obj.updateDynamic("exportOptions")(exportOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (layoutOptions != null) __obj.updateDynamic("layoutOptions")(layoutOptions)
+    if (layoutOptions != null) __obj.updateDynamic("layoutOptions")(layoutOptions.asInstanceOf[js.Any])
     if (outScale != null) __obj.updateDynamic("outScale")(outScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveScale)) __obj.updateDynamic("preserveScale")(preserveScale)
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels)
+    if (!js.isUndefined(preserveScale)) __obj.updateDynamic("preserveScale")(preserveScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTemplateProperties]
   }
 }

@@ -23,9 +23,9 @@ object RadioTheme {
   @scala.inline
   def apply(radio: String = null, radioChecked: String = null, ripple: String = null): RadioTheme = {
     val __obj = js.Dynamic.literal()
-    if (radio != null) __obj.updateDynamic("radio")(radio)
-    if (radioChecked != null) __obj.updateDynamic("radioChecked")(radioChecked)
-    if (ripple != null) __obj.updateDynamic("ripple")(ripple)
+    if (radio != null) __obj.updateDynamic("radio")(radio.asInstanceOf[js.Any])
+    if (radioChecked != null) __obj.updateDynamic("radioChecked")(radioChecked.asInstanceOf[js.Any])
+    if (ripple != null) __obj.updateDynamic("ripple")(ripple.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioTheme]
   }
 }

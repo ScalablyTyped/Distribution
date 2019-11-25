@@ -29,7 +29,7 @@ object BookmarksViewModelProperties {
     val __obj = js.Dynamic.literal()
     if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookmarksViewModelProperties]
   }
 }

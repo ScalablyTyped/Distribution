@@ -54,14 +54,14 @@ object CreateAccountOptions {
     timezone: String = null,
     xhr: Transport = null
   ): CreateAccountOptions = {
-    val __obj = js.Dynamic.literal(server = server)
+    val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
     if (accountType != null) __obj.updateDynamic("accountType")(accountType.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(loadCollections)) __obj.updateDynamic("loadCollections")(loadCollections)
-    if (!js.isUndefined(loadObjects)) __obj.updateDynamic("loadObjects")(loadObjects)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadCollections)) __obj.updateDynamic("loadCollections")(loadCollections.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadObjects)) __obj.updateDynamic("loadObjects")(loadObjects.asInstanceOf[js.Any])
     if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccountOptions]
   }
 }

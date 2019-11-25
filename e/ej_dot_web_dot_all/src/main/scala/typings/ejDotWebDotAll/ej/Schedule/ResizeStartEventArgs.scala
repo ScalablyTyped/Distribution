@@ -32,11 +32,11 @@ object ResizeStartEventArgs {
     `type`: String = null
   ): ResizeStartEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeStartEventArgs]
   }
 }

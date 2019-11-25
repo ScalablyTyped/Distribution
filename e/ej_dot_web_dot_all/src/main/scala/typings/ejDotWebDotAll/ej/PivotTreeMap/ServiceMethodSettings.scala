@@ -19,8 +19,8 @@ object ServiceMethodSettings {
   @scala.inline
   def apply(drillDown: String = null, initialize: String = null): ServiceMethodSettings = {
     val __obj = js.Dynamic.literal()
-    if (drillDown != null) __obj.updateDynamic("drillDown")(drillDown)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (drillDown != null) __obj.updateDynamic("drillDown")(drillDown.asInstanceOf[js.Any])
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceMethodSettings]
   }
 }

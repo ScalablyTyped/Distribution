@@ -27,10 +27,10 @@ object CtorOptions {
     plugins: StringDictionary[js.Object] = null
   ): CtorOptions = {
     val __obj = js.Dynamic.literal()
-    if (defs != null) __obj.updateDynamic("defs")(defs)
+    if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
     if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
     if (fetchTimeout != null) __obj.updateDynamic("fetchTimeout")(fetchTimeout.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[CtorOptions]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_SchemaTableNameString extends js.Object {
 object Anon_SchemaTableNameString {
   @scala.inline
   def apply(schema: String, tableName: String): Anon_SchemaTableNameString = {
-    val __obj = js.Dynamic.literal(schema = schema, tableName = tableName)
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SchemaTableNameString]
   }

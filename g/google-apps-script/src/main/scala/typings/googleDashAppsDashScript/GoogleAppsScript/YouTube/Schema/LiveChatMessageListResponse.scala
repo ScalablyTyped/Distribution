@@ -33,16 +33,16 @@ object LiveChatMessageListResponse {
     visitorId: String = null
   ): LiveChatMessageListResponse = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (offlineAt != null) __obj.updateDynamic("offlineAt")(offlineAt)
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (offlineAt != null) __obj.updateDynamic("offlineAt")(offlineAt.asInstanceOf[js.Any])
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
     if (pollingIntervalMillis != null) __obj.updateDynamic("pollingIntervalMillis")(pollingIntervalMillis.asInstanceOf[js.Any])
-    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
-    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId)
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination.asInstanceOf[js.Any])
+    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatMessageListResponse]
   }
 }

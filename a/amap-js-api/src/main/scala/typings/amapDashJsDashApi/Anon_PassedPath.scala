@@ -12,7 +12,7 @@ trait Anon_PassedPath extends js.Object {
 object Anon_PassedPath {
   @scala.inline
   def apply(passedPath: js.Array[LngLat]): Anon_PassedPath = {
-    val __obj = js.Dynamic.literal(passedPath = passedPath)
+    val __obj = js.Dynamic.literal(passedPath = passedPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PassedPath]
   }

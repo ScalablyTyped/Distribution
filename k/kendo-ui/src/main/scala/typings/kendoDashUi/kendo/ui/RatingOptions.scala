@@ -47,18 +47,18 @@ object RatingOptions {
   ): RatingOptions = {
     val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (hoveredTemplate != null) __obj.updateDynamic("hoveredTemplate")(hoveredTemplate.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
     if (selectValueOnFocus != null) __obj.updateDynamic("selectValueOnFocus")(selectValueOnFocus.asInstanceOf[js.Any])
     if (selectedTemplate != null) __obj.updateDynamic("selectedTemplate")(selectedTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[RatingOptions]
   }
 }

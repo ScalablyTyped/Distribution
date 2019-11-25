@@ -89,8 +89,8 @@ object DisplayInfo {
     workArea: Bounds,
     edid: Anon_ManufacturerId = null
   ): DisplayInfo = {
-    val __obj = js.Dynamic.literal(availableDisplayZoomFactors = availableDisplayZoomFactors, bounds = bounds, displayZoomFactor = displayZoomFactor, dpiX = dpiX, dpiY = dpiY, hasTouchSupport = hasTouchSupport, id = id, isEnabled = isEnabled, isInternal = isInternal, isPrimary = isPrimary, mirroringDestinationIds = mirroringDestinationIds, mirroringSourceId = mirroringSourceId, modes = modes, name = name, overscan = overscan, rotation = rotation, workArea = workArea)
-    if (edid != null) __obj.updateDynamic("edid")(edid)
+    val __obj = js.Dynamic.literal(availableDisplayZoomFactors = availableDisplayZoomFactors.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], displayZoomFactor = displayZoomFactor.asInstanceOf[js.Any], dpiX = dpiX.asInstanceOf[js.Any], dpiY = dpiY.asInstanceOf[js.Any], hasTouchSupport = hasTouchSupport.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isInternal = isInternal.asInstanceOf[js.Any], isPrimary = isPrimary.asInstanceOf[js.Any], mirroringDestinationIds = mirroringDestinationIds.asInstanceOf[js.Any], mirroringSourceId = mirroringSourceId.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], overscan = overscan.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], workArea = workArea.asInstanceOf[js.Any])
+    if (edid != null) __obj.updateDynamic("edid")(edid.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayInfo]
   }
 }

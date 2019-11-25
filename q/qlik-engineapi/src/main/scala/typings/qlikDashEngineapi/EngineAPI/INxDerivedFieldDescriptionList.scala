@@ -17,7 +17,7 @@ trait INxDerivedFieldDescriptionList extends js.Object {
 object INxDerivedFieldDescriptionList {
   @scala.inline
   def apply(qDerivedFieldLists: js.Array[INxDerivedFieldsData]): INxDerivedFieldDescriptionList = {
-    val __obj = js.Dynamic.literal(qDerivedFieldLists = qDerivedFieldLists)
+    val __obj = js.Dynamic.literal(qDerivedFieldLists = qDerivedFieldLists.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxDerivedFieldDescriptionList]
   }

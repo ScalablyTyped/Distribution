@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-relay/lib/relay-experimental/usePreloadedQuery", JSImport.Namespace)
 @js.native
 object libRelayDashExperimentalUsePreloadedQueryMod extends js.Object {
-  def usePreloadedQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions]): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  def usePreloadedQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions]): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
 }
 

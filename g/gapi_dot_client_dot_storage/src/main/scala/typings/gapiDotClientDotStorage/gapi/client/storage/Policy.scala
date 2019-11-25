@@ -29,10 +29,10 @@ object Policy {
     resourceId: String = null
   ): Policy = {
     val __obj = js.Dynamic.literal()
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policy]
   }
 }

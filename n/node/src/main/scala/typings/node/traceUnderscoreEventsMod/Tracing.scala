@@ -42,7 +42,7 @@ trait Tracing extends js.Object {
 object Tracing {
   @scala.inline
   def apply(categories: java.lang.String, disable: () => Unit, enable: () => Unit, enabled: Boolean): Tracing = {
-    val __obj = js.Dynamic.literal(categories = categories, disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), enabled = enabled)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), enabled = enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tracing]
   }

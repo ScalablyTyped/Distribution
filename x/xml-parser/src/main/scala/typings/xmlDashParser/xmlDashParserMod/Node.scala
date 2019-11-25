@@ -14,8 +14,8 @@ trait Node extends js.Object {
 object Node {
   @scala.inline
   def apply(attributes: Attributes, children: js.Array[Node], name: String, content: String = null): Node = {
-    val __obj = js.Dynamic.literal(attributes = attributes, children = children, name = name)
-    if (content != null) __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

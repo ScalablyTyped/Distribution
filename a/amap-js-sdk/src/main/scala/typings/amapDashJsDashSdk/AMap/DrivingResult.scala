@@ -25,7 +25,7 @@ object DrivingResult {
     taxi_cost: Double,
     waypoints: Poi
   ): DrivingResult = {
-    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], info = info, origin = origin, routes = routes, start = start, taxi_cost = taxi_cost, waypoints = waypoints)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], taxi_cost = taxi_cost.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DrivingResult]
   }

@@ -163,8 +163,8 @@ object ISession {
     `type`: String,
     unhandledMessage: ISignal[ISession, IMessage[MessageType]]
   ): ISession = {
-    val __obj = js.Dynamic.literal(anyMessage = anyMessage, changeKernel = js.Any.fromFunction1(changeKernel), dispose = js.Any.fromFunction0(dispose), id = id, iopubMessage = iopubMessage, isDisposed = isDisposed, kernel = kernel, kernelChanged = kernelChanged, model = model, name = name, path = path, propertyChanged = propertyChanged, serverSettings = serverSettings, setName = js.Any.fromFunction1(setName), setPath = js.Any.fromFunction1(setPath), setType = js.Any.fromFunction1(setType), shutdown = js.Any.fromFunction0(shutdown), status = status, statusChanged = statusChanged, terminated = terminated, unhandledMessage = unhandledMessage)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(anyMessage = anyMessage.asInstanceOf[js.Any], changeKernel = js.Any.fromFunction1(changeKernel), dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], iopubMessage = iopubMessage.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], kernelChanged = kernelChanged.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], propertyChanged = propertyChanged.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], setName = js.Any.fromFunction1(setName), setPath = js.Any.fromFunction1(setPath), setType = js.Any.fromFunction1(setType), shutdown = js.Any.fromFunction0(shutdown), status = status.asInstanceOf[js.Any], statusChanged = statusChanged.asInstanceOf[js.Any], terminated = terminated.asInstanceOf[js.Any], unhandledMessage = unhandledMessage.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISession]
   }
 }

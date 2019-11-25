@@ -26,13 +26,13 @@ object ScheduleOptions {
     `type`: String = null
   ): ScheduleOptions = {
     val __obj = js.Dynamic.literal()
-    if (cron != null) __obj.updateDynamic("cron")(cron)
-    if (cronOptions != null) __obj.updateDynamic("cronOptions")(cronOptions)
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (cron != null) __obj.updateDynamic("cron")(cron.asInstanceOf[js.Any])
+    if (cronOptions != null) __obj.updateDynamic("cronOptions")(cronOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleOptions]
   }
 }

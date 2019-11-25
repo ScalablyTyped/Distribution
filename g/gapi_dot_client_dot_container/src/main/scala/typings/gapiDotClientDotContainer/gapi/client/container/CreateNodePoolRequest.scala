@@ -13,7 +13,7 @@ object CreateNodePoolRequest {
   @scala.inline
   def apply(nodePool: NodePool = null): CreateNodePoolRequest = {
     val __obj = js.Dynamic.literal()
-    if (nodePool != null) __obj.updateDynamic("nodePool")(nodePool)
+    if (nodePool != null) __obj.updateDynamic("nodePool")(nodePool.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNodePoolRequest]
   }
 }

@@ -21,30 +21,74 @@ trait Utilities extends js.Object {
   var MacAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MacAlgorithm */ js.Any = js.native
   var RsaAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RsaAlgorithm */ js.Any = js.native
   def base64Decode(encoded: String): js.Array[Byte] = js.native
-  def base64Decode(encoded: String, charset: Charset): js.Array[Byte] = js.native
+  def base64Decode(encoded: String, charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset): js.Array[Byte] = js.native
   def base64DecodeWebSafe(encoded: String): js.Array[Byte] = js.native
-  def base64DecodeWebSafe(encoded: String, charset: Charset): js.Array[Byte] = js.native
+  def base64DecodeWebSafe(encoded: String, charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset): js.Array[Byte] = js.native
   def base64Encode(data: String): String = js.native
-  def base64Encode(data: String, charset: Charset): String = js.native
+  def base64Encode(data: String, charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset): String = js.native
   def base64Encode(data: js.Array[Byte]): String = js.native
   def base64EncodeWebSafe(data: String): String = js.native
-  def base64EncodeWebSafe(data: String, charset: Charset): String = js.native
+  def base64EncodeWebSafe(data: String, charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset): String = js.native
   def base64EncodeWebSafe(data: js.Array[Byte]): String = js.native
-  def computeDigest(algorithm: DigestAlgorithm, value: String): js.Array[Byte] = js.native
-  def computeDigest(algorithm: DigestAlgorithm, value: String, charset: Charset): js.Array[Byte] = js.native
-  def computeDigest(algorithm: DigestAlgorithm, value: js.Array[Byte]): js.Array[Byte] = js.native
+  def computeDigest(
+    algorithm: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm,
+    value: String
+  ): js.Array[Byte] = js.native
+  def computeDigest(
+    algorithm: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm,
+    value: String,
+    charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset
+  ): js.Array[Byte] = js.native
+  def computeDigest(
+    algorithm: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm,
+    value: js.Array[Byte]
+  ): js.Array[Byte] = js.native
   def computeHmacSha256Signature(value: String, key: String): js.Array[Byte] = js.native
-  def computeHmacSha256Signature(value: String, key: String, charset: Charset): js.Array[Byte] = js.native
+  def computeHmacSha256Signature(
+    value: String,
+    key: String,
+    charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset
+  ): js.Array[Byte] = js.native
   def computeHmacSha256Signature(value: js.Array[Byte], key: js.Array[Byte]): js.Array[Byte] = js.native
-  def computeHmacSignature(algorithm: MacAlgorithm, value: String, key: String): js.Array[Byte] = js.native
-  def computeHmacSignature(algorithm: MacAlgorithm, value: String, key: String, charset: Charset): js.Array[Byte] = js.native
-  def computeHmacSignature(algorithm: MacAlgorithm, value: js.Array[Byte], key: js.Array[Byte]): js.Array[Byte] = js.native
+  def computeHmacSignature(
+    algorithm: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm,
+    value: String,
+    key: String
+  ): js.Array[Byte] = js.native
+  def computeHmacSignature(
+    algorithm: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm,
+    value: String,
+    key: String,
+    charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset
+  ): js.Array[Byte] = js.native
+  def computeHmacSignature(
+    algorithm: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm,
+    value: js.Array[Byte],
+    key: js.Array[Byte]
+  ): js.Array[Byte] = js.native
   def computeRsaSha1Signature(value: String, key: String): js.Array[Byte] = js.native
-  def computeRsaSha1Signature(value: String, key: String, charset: Charset): js.Array[Byte] = js.native
+  def computeRsaSha1Signature(
+    value: String,
+    key: String,
+    charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset
+  ): js.Array[Byte] = js.native
   def computeRsaSha256Signature(value: String, key: String): js.Array[Byte] = js.native
-  def computeRsaSha256Signature(value: String, key: String, charset: Charset): js.Array[Byte] = js.native
-  def computeRsaSignature(algorithm: RsaAlgorithm, value: String, key: String): js.Array[Byte] = js.native
-  def computeRsaSignature(algorithm: RsaAlgorithm, value: String, key: String, charset: Charset): js.Array[Byte] = js.native
+  def computeRsaSha256Signature(
+    value: String,
+    key: String,
+    charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset
+  ): js.Array[Byte] = js.native
+  def computeRsaSignature(
+    algorithm: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm,
+    value: String,
+    key: String
+  ): js.Array[Byte] = js.native
+  def computeRsaSignature(
+    algorithm: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm,
+    value: String,
+    key: String,
+    charset: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.Charset
+  ): js.Array[Byte] = js.native
   def formatDate(date: Date, timeZone: String, format: String): String = js.native
   def formatString(template: String, args: js.Any*): String = js.native
   def getUuid(): String = js.native

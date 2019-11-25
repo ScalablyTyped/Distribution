@@ -2,6 +2,7 @@ package typings.nodeDashRsa
 
 import typings.nodeDashRsa.nodeDashRsaMod.Encoding
 import typings.nodeDashRsa.nodeDashRsaMod.EncryptionScheme
+import typings.nodeDashRsa.nodeDashRsaMod.Format
 import typings.nodeDashRsa.nodeDashRsaMod.FormatComponentsPrivate
 import typings.nodeDashRsa.nodeDashRsaMod.FormatComponentsPublic
 import typings.nodeDashRsa.nodeDashRsaMod.FormatDer
@@ -30,31 +31,49 @@ object nodeDashRsaStrings {
   sealed trait buffer extends Encoding
   
   @js.native
-  sealed trait components extends FormatComponentsPrivate
+  sealed trait components
+    extends Format
+       with FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-der` extends FormatComponentsPrivate
+  sealed trait `components-der`
+    extends Format
+       with FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-pem` extends FormatComponentsPrivate
+  sealed trait `components-pem`
+    extends Format
+       with FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-private` extends FormatComponentsPrivate
+  sealed trait `components-private`
+    extends Format
+       with FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-private-der` extends FormatComponentsPrivate
+  sealed trait `components-private-der`
+    extends Format
+       with FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-private-pem` extends FormatComponentsPrivate
+  sealed trait `components-private-pem`
+    extends Format
+       with FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-public` extends FormatComponentsPublic
+  sealed trait `components-public`
+    extends Format
+       with FormatComponentsPublic
   
   @js.native
-  sealed trait `components-public-der` extends FormatComponentsPublic
+  sealed trait `components-public-der`
+    extends Format
+       with FormatComponentsPublic
   
   @js.native
-  sealed trait `components-public-pem` extends FormatComponentsPublic
+  sealed trait `components-public-pem`
+    extends Format
+       with FormatComponentsPublic
   
   @js.native
   sealed trait hex extends Encoding
@@ -76,12 +95,15 @@ object nodeDashRsaStrings {
   
   @js.native
   sealed trait pkcs1
-    extends FormatPem
-       with EncryptionScheme
+    extends EncryptionScheme
+       with Format
+       with FormatPem
        with SigningScheme
   
   @js.native
-  sealed trait `pkcs1-der` extends FormatDer
+  sealed trait `pkcs1-der`
+    extends Format
+       with FormatDer
   
   @js.native
   sealed trait `pkcs1-md4` extends SigningSchemeHash
@@ -90,25 +112,39 @@ object nodeDashRsaStrings {
   sealed trait `pkcs1-md5` extends SigningSchemeHash
   
   @js.native
-  sealed trait `pkcs1-pem` extends FormatPem
+  sealed trait `pkcs1-pem`
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `pkcs1-private` extends FormatPem
+  sealed trait `pkcs1-private`
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `pkcs1-private-der` extends FormatDer
+  sealed trait `pkcs1-private-der`
+    extends Format
+       with FormatDer
   
   @js.native
-  sealed trait `pkcs1-private-pem` extends FormatPem
+  sealed trait `pkcs1-private-pem`
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `pkcs1-public` extends FormatPem
+  sealed trait `pkcs1-public`
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `pkcs1-public-der` extends FormatDer
+  sealed trait `pkcs1-public-der`
+    extends Format
+       with FormatDer
   
   @js.native
-  sealed trait `pkcs1-public-pem` extends FormatPem
+  sealed trait `pkcs1-public-pem`
+    extends Format
+       with FormatPem
   
   @js.native
   sealed trait `pkcs1-ripemd160` extends SigningSchemeHash
@@ -135,34 +171,54 @@ object nodeDashRsaStrings {
   sealed trait pkcs1_oaep extends EncryptionScheme
   
   @js.native
-  sealed trait pkcs8 extends FormatPem
+  sealed trait pkcs8
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `pkcs8-der` extends FormatDer
+  sealed trait `pkcs8-der`
+    extends Format
+       with FormatDer
   
   @js.native
-  sealed trait `pkcs8-pem` extends FormatPem
+  sealed trait `pkcs8-pem`
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `pkcs8-private` extends FormatPem
+  sealed trait `pkcs8-private`
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `pkcs8-private-der` extends FormatDer
+  sealed trait `pkcs8-private-der`
+    extends Format
+       with FormatDer
   
   @js.native
-  sealed trait `pkcs8-private-pem` extends FormatPem
+  sealed trait `pkcs8-private-pem`
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `pkcs8-public` extends FormatPem
+  sealed trait `pkcs8-public`
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `pkcs8-public-der` extends FormatDer
+  sealed trait `pkcs8-public-der`
+    extends Format
+       with FormatDer
   
   @js.native
-  sealed trait `pkcs8-public-pem` extends FormatPem
+  sealed trait `pkcs8-public-pem`
+    extends Format
+       with FormatPem
   
   @js.native
-  sealed trait `private` extends FormatPem
+  sealed trait `private`
+    extends Format
+       with FormatPem
   
   @js.native
   sealed trait pss extends SigningScheme
@@ -195,7 +251,9 @@ object nodeDashRsaStrings {
   sealed trait `pss-sha512` extends SigningSchemeHash
   
   @js.native
-  sealed trait public extends FormatPem
+  sealed trait public
+    extends Format
+       with FormatPem
   
   @js.native
   sealed trait ripemd160 extends HashingAlgorithm

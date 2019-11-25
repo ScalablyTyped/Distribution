@@ -1,12 +1,5 @@
 package typings.consul.consulMod
 
-import typings.consul.Fn_CallbackIdOptsDestroyOptions
-import typings.consul.Fn_CallbackIdOptsGetOptionsString
-import typings.consul.Fn_CallbackIdOptsInfoOptions
-import typings.consul.Fn_CallbackIdOptsRenewOptions
-import typings.consul.Fn_CallbackNodeOptsNodeOptionsString
-import typings.consul.Fn_CallbackOptsCreateOptions
-import typings.consul.Fn_CallbackOptsListOptionsTDataThenableVoid
 import typings.consul.consulMod.Session.CreateOptions
 import typings.consul.consulMod.Session.DestroyOptions
 import typings.consul.consulMod.Session.GetOptions
@@ -22,38 +15,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Session_ extends js.Object {
   var consul: Consul = js.native
-  /**
-    * Creates a new session
-    */
-  @JSName("create")
-  var create_Original: Fn_CallbackOptsCreateOptions = js.native
-  /**
-    * Destroys a given session
-    */
-  @JSName("destroy")
-  var destroy_Original: Fn_CallbackIdOptsDestroyOptions = js.native
-  @JSName("get")
-  var get_Original: Fn_CallbackIdOptsGetOptionsString = js.native
-  /**
-    * Queries a given session
-    */
-  @JSName("info")
-  var info_Original: Fn_CallbackIdOptsInfoOptions = js.native
-  /**
-    * Lists all the active sessions
-    */
-  @JSName("list")
-  var list_Original: Fn_CallbackOptsListOptionsTDataThenableVoid = js.native
-  /**
-    * Lists sessions belonging to a node
-    */
-  @JSName("node")
-  var node_Original: Fn_CallbackNodeOptsNodeOptionsString = js.native
-  /**
-    * Renews a TTL-based session
-    */
-  @JSName("renew")
-  var renew_Original: Fn_CallbackIdOptsRenewOptions = js.native
   /**
     * Creates a new session
     */

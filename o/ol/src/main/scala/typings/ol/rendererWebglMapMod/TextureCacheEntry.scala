@@ -14,7 +14,7 @@ trait TextureCacheEntry extends js.Object {
 object TextureCacheEntry {
   @scala.inline
   def apply(magFilter: Double, minFilter: Double, texture: WebGLTexture): TextureCacheEntry = {
-    val __obj = js.Dynamic.literal(magFilter = magFilter, minFilter = minFilter, texture = texture)
+    val __obj = js.Dynamic.literal(magFilter = magFilter.asInstanceOf[js.Any], minFilter = minFilter.asInstanceOf[js.Any], texture = texture.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextureCacheEntry]
   }

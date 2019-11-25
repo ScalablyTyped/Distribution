@@ -42,10 +42,10 @@ object WebStyleSymbolProperties {
   ): WebStyleSymbolProperties = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (portal != null) __obj.updateDynamic("portal")(portal)
-    if (styleName != null) __obj.updateDynamic("styleName")(styleName)
-    if (styleUrl != null) __obj.updateDynamic("styleUrl")(styleUrl)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
+    if (styleName != null) __obj.updateDynamic("styleName")(styleName.asInstanceOf[js.Any])
+    if (styleUrl != null) __obj.updateDynamic("styleUrl")(styleUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebStyleSymbolProperties]
   }
 }

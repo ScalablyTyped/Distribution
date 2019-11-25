@@ -24,13 +24,13 @@ object CertificateField {
     valueTagClass: Class = null
   ): CertificateField = {
     val __obj = js.Dynamic.literal()
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueConstructed)) __obj.updateDynamic("valueConstructed")(valueConstructed)
-    if (valueTagClass != null) __obj.updateDynamic("valueTagClass")(valueTagClass)
+    if (!js.isUndefined(valueConstructed)) __obj.updateDynamic("valueConstructed")(valueConstructed.asInstanceOf[js.Any])
+    if (valueTagClass != null) __obj.updateDynamic("valueTagClass")(valueTagClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateField]
   }
 }

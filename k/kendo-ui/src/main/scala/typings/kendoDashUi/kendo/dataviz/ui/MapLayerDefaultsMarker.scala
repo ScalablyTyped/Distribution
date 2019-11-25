@@ -15,8 +15,8 @@ object MapLayerDefaultsMarker {
   def apply(opacity: Int | Double = null, shape: String = null, tooltip: MapLayerDefaultsMarkerTooltip = null): MapLayerDefaultsMarker = {
     val __obj = js.Dynamic.literal()
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsMarker]
   }
 }

@@ -80,15 +80,15 @@ object options {
     track: js.UndefOr[Boolean] = js.undefined
   ): options = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (limit != null) __obj.updateDynamic("limit")(limit)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[options]
   }
 }

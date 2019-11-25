@@ -12,7 +12,7 @@ trait DirectThreadRepositoryUpdateTitleResponseRootObject extends js.Object {
 object DirectThreadRepositoryUpdateTitleResponseRootObject {
   @scala.inline
   def apply(status: String, thread: DirectThreadRepositoryUpdateTitleResponseThread): DirectThreadRepositoryUpdateTitleResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status, thread = thread)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], thread = thread.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectThreadRepositoryUpdateTitleResponseRootObject]
   }

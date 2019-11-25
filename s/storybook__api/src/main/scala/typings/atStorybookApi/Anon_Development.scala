@@ -15,7 +15,7 @@ trait Anon_Development extends js.Object {
 object Anon_Development {
   @scala.inline
   def apply(state: State, mode: production | development = null): Anon_Development = {
-    val __obj = js.Dynamic.literal(state = state)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Development]
   }

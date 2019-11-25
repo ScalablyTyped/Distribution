@@ -11,7 +11,7 @@ trait Anon_DistanceFromEnd extends js.Object {
 object Anon_DistanceFromEnd {
   @scala.inline
   def apply(distanceFromEnd: Double): Anon_DistanceFromEnd = {
-    val __obj = js.Dynamic.literal(distanceFromEnd = distanceFromEnd)
+    val __obj = js.Dynamic.literal(distanceFromEnd = distanceFromEnd.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DistanceFromEnd]
   }

@@ -12,7 +12,7 @@ trait Mode extends js.Object {
 object Mode {
   @scala.inline
   def apply(tag: ByteStringBuffer): Mode = {
-    val __obj = js.Dynamic.literal(tag = tag)
+    val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Mode]
   }

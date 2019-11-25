@@ -20,10 +20,10 @@ object FolderEntities {
     variable: js.Array[Variable] = null
   ): FolderEntities = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
-    if (variable != null) __obj.updateDynamic("variable")(variable)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderEntities]
   }
 }

@@ -38,10 +38,10 @@ object ToStringOptions {
   ): ToStringOptions = {
     val __obj = js.Dynamic.literal()
     if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (north != null) __obj.updateDynamic("north")(north)
-    if (sep != null) __obj.updateDynamic("sep")(sep)
-    if (south != null) __obj.updateDynamic("south")(south)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (north != null) __obj.updateDynamic("north")(north.asInstanceOf[js.Any])
+    if (sep != null) __obj.updateDynamic("sep")(sep.asInstanceOf[js.Any])
+    if (south != null) __obj.updateDynamic("south")(south.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToStringOptions]
   }
 }

@@ -31,7 +31,7 @@ object Anon_Activationsentences {
     trace_sentences: js.Any,
     variables: js.Any
   ): Anon_Activationsentences = {
-    val __obj = js.Dynamic.literal(activation_sentences = activation_sentences, inputs = inputs, layers = layers, memory = memory, neurons = neurons, outputs = outputs, propagation_sentences = propagation_sentences, targets = targets, trace_sentences = trace_sentences, variables = variables)
+    val __obj = js.Dynamic.literal(activation_sentences = activation_sentences.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], neurons = neurons.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], propagation_sentences = propagation_sentences.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any], trace_sentences = trace_sentences.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Activationsentences]
   }

@@ -12,7 +12,7 @@ trait Anon_IncludeScore extends js.Object {
 object Anon_IncludeScore {
   @scala.inline
   def apply(includeScore: `true`): Anon_IncludeScore = {
-    val __obj = js.Dynamic.literal(includeScore = includeScore)
+    val __obj = js.Dynamic.literal(includeScore = includeScore.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IncludeScore]
   }

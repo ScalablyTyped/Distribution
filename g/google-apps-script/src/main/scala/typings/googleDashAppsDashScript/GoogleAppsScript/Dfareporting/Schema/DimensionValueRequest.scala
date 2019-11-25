@@ -22,11 +22,11 @@ object DimensionValueRequest {
     startDate: String = null
   ): DimensionValueRequest = {
     val __obj = js.Dynamic.literal()
-    if (dimensionName != null) __obj.updateDynamic("dimensionName")(dimensionName)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (dimensionName != null) __obj.updateDynamic("dimensionName")(dimensionName.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionValueRequest]
   }
 }

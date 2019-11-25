@@ -37,20 +37,20 @@ object IndicesForcemergeParams {
     waitForMerge: js.UndefOr[Boolean] = js.undefined
   ): IndicesForcemergeParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards)
+    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(flush)) __obj.updateDynamic("flush")(flush)
+    if (!js.isUndefined(flush)) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable)
+    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.asInstanceOf[js.Any])
     if (maxNumSegments != null) __obj.updateDynamic("maxNumSegments")(maxNumSegments.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(onlyExpungeDeletes)) __obj.updateDynamic("onlyExpungeDeletes")(onlyExpungeDeletes)
-    if (operationThreading != null) __obj.updateDynamic("operationThreading")(operationThreading)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyExpungeDeletes)) __obj.updateDynamic("onlyExpungeDeletes")(onlyExpungeDeletes.asInstanceOf[js.Any])
+    if (operationThreading != null) __obj.updateDynamic("operationThreading")(operationThreading.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForMerge)) __obj.updateDynamic("waitForMerge")(waitForMerge)
+    if (!js.isUndefined(waitForMerge)) __obj.updateDynamic("waitForMerge")(waitForMerge.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesForcemergeParams]
   }
 }

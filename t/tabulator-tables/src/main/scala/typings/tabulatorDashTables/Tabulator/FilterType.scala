@@ -17,3 +17,26 @@ import scala.scalajs.js.annotation._
 */
 trait FilterType extends js.Object
 
+object FilterType {
+  @scala.inline
+  def `!=`: typings.tabulatorDashTables.tabulatorDashTablesStrings.`!=` = this.cast("!=")
+  @scala.inline
+  def `<`: typings.tabulatorDashTables.tabulatorDashTablesStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.tabulatorDashTables.tabulatorDashTablesStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `=`: typings.tabulatorDashTables.tabulatorDashTablesStrings.`=` = this.cast("=")
+  @scala.inline
+  def `>`: typings.tabulatorDashTables.tabulatorDashTablesStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.tabulatorDashTables.tabulatorDashTablesStrings.`>=` = this.cast(">=")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def in: typings.tabulatorDashTables.tabulatorDashTablesStrings.in = this.cast("in")
+  @scala.inline
+  def like: typings.tabulatorDashTables.tabulatorDashTablesStrings.like = this.cast("like")
+  @scala.inline
+  def regex: typings.tabulatorDashTables.tabulatorDashTablesStrings.regex = this.cast("regex")
+}
+

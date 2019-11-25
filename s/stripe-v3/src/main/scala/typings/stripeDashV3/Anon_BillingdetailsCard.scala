@@ -17,8 +17,8 @@ object Anon_BillingdetailsCard {
   @scala.inline
   def apply(billing_details: BillingDetails = null, card: Anon_Token = null): Anon_BillingdetailsCard = {
     val __obj = js.Dynamic.literal()
-    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details)
-    if (card != null) __obj.updateDynamic("card")(card)
+    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details.asInstanceOf[js.Any])
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BillingdetailsCard]
   }
 }

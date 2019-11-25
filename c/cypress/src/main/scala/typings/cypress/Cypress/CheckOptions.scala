@@ -14,7 +14,7 @@ trait CheckOptions
 object CheckOptions {
   @scala.inline
   def apply(force: Boolean, interval: Double, log: Boolean, timeout: Double): CheckOptions = {
-    val __obj = js.Dynamic.literal(force = force, interval = interval, log = log, timeout = timeout)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CheckOptions]
   }

@@ -87,17 +87,17 @@ object Anon_Autoplay {
     x: Int | Double = null,
     y: Int | Double = null
   ): Anon_Autoplay = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (initialTime != null) __obj.updateDynamic("initialTime")(initialTime.asInstanceOf[js.Any])
     if (live != null) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
     if (objectFit != null) __obj.updateDynamic("objectFit")(objectFit.asInstanceOf[js.Any])
     if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
-    if (poster != null) __obj.updateDynamic("poster")(poster)
+    if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "combine-source-map"
-version := "0.8-dt-20180214Z-017ceb"
+version := "0.8-dt-20180214Z-f5664e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -16,10 +16,10 @@ trait Anon_AttributesGeometry extends js.Object {
 object Anon_AttributesGeometry {
   @scala.inline
   def apply(geometry: Geometry, attributes: js.Any = null, id: js.Any = null, modelMatrix: Matrix4 = null): Anon_AttributesGeometry = {
-    val __obj = js.Dynamic.literal(geometry = geometry)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix)
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AttributesGeometry]
   }
 }

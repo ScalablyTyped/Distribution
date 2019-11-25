@@ -19,10 +19,10 @@ object AudioSpecimenProps {
     loop: js.UndefOr[Boolean] = js.undefined,
     title: String = null
   ): AudioSpecimenProps = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioSpecimenProps]
   }
 }

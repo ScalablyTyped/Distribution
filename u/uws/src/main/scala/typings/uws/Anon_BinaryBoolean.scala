@@ -11,7 +11,7 @@ trait Anon_BinaryBoolean extends js.Object {
 object Anon_BinaryBoolean {
   @scala.inline
   def apply(binary: Boolean): Anon_BinaryBoolean = {
-    val __obj = js.Dynamic.literal(binary = binary)
+    val __obj = js.Dynamic.literal(binary = binary.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BinaryBoolean]
   }

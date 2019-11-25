@@ -11,7 +11,7 @@ object atJupyterlabExtensionmanagerComponents extends atJupyterlabExtensionmanag
   @scala.inline
   def CollapsibleSection_ : ComponentType[CollapsibleSection_Props] = js.constructorOf[typings.atJupyterlabExtensionmanager.libWidgetMod.CollapsibleSection_].asInstanceOf[typings.react.reactMod.ComponentType[CollapsibleSection_Props]]
   @scala.inline
-  def ListView: ComponentType[ListViewProps] = typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.ListView.asInstanceOf[typings.react.reactMod.ComponentType[ListViewProps]]
+  def ListView: ComponentType[ListViewProps] = typings.atJupyterlabExtensionmanager.libWidgetMod.ListView.^.asInstanceOf[typings.react.reactMod.ComponentType[ListViewProps]]
   @scala.inline
   def SearchBar: ComponentType[SearchBarProps] = js.constructorOf[typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.SearchBar].asInstanceOf[typings.react.reactMod.ComponentType[SearchBarProps]]
   @scala.inline

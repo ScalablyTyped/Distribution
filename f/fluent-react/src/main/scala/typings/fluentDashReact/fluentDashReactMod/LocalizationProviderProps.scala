@@ -14,7 +14,7 @@ trait LocalizationProviderProps extends js.Object {
 object LocalizationProviderProps {
   @scala.inline
   def apply(bundles: IterableIterator[FluentBundle], parseMarkup: /* str */ String => js.Array[Node] = null): LocalizationProviderProps = {
-    val __obj = js.Dynamic.literal(bundles = bundles)
+    val __obj = js.Dynamic.literal(bundles = bundles.asInstanceOf[js.Any])
     if (parseMarkup != null) __obj.updateDynamic("parseMarkup")(js.Any.fromFunction1(parseMarkup))
     __obj.asInstanceOf[LocalizationProviderProps]
   }

@@ -62,46 +62,32 @@ object ITabPanel {
   @scala.inline
   def apply(
     IContainer: IContainer = null,
-    cls: js.Any = null,
     doTabChange: (/* tabBar */ js.UndefOr[js.Any], /* newTab */ js.UndefOr[js.Any]) => Boolean = null,
     getCls: () => java.lang.String = null,
     getLayout: () => _ = null,
     getTabBar: () => _ = null,
     getTabBarPosition: () => java.lang.String = null,
-    getUi: () => java.lang.String = null,
-    initialize: () => Unit = null,
-    layout: js.Any = null,
     setCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
-    setLayout: /* layout */ js.UndefOr[js.Any] => Unit = null,
     setTabBar: /* tabBar */ js.UndefOr[js.Any] => Unit = null,
     setTabBarPosition: /* tabBarPosition */ js.UndefOr[java.lang.String] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
     tabBar: js.Any = null,
     tabBarDock: js.UndefOr[Boolean] = js.undefined,
     tabBarPosition: java.lang.String = null,
-    ui: java.lang.String = null,
     updateUi: (/* newUi */ js.UndefOr[js.Any], /* oldUi */ js.UndefOr[js.Any]) => Unit = null
   ): ITabPanel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     if (doTabChange != null) __obj.updateDynamic("doTabChange")(js.Any.fromFunction2(doTabChange))
     if (getCls != null) __obj.updateDynamic("getCls")(js.Any.fromFunction0(getCls))
     if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
     if (getTabBar != null) __obj.updateDynamic("getTabBar")(js.Any.fromFunction0(getTabBar))
     if (getTabBarPosition != null) __obj.updateDynamic("getTabBarPosition")(js.Any.fromFunction0(getTabBarPosition))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
-    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
-    if (layout != null) __obj.updateDynamic("layout")(layout)
     if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
-    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
     if (setTabBar != null) __obj.updateDynamic("setTabBar")(js.Any.fromFunction1(setTabBar))
     if (setTabBarPosition != null) __obj.updateDynamic("setTabBarPosition")(js.Any.fromFunction1(setTabBarPosition))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
-    if (tabBar != null) __obj.updateDynamic("tabBar")(tabBar)
-    if (!js.isUndefined(tabBarDock)) __obj.updateDynamic("tabBarDock")(tabBarDock)
-    if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition)
-    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (tabBar != null) __obj.updateDynamic("tabBar")(tabBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBarDock)) __obj.updateDynamic("tabBarDock")(tabBarDock.asInstanceOf[js.Any])
+    if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
     if (updateUi != null) __obj.updateDynamic("updateUi")(js.Any.fromFunction2(updateUi))
     __obj.asInstanceOf[ITabPanel]
   }

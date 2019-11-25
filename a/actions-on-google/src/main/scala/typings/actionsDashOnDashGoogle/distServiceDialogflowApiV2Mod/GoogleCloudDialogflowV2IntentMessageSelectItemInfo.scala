@@ -13,8 +13,8 @@ object GoogleCloudDialogflowV2IntentMessageSelectItemInfo {
   @scala.inline
   def apply(key: String = null, synonyms: js.Array[String] = null): GoogleCloudDialogflowV2IntentMessageSelectItemInfo = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageSelectItemInfo]
   }
 }

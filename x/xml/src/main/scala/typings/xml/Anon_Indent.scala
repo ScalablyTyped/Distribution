@@ -13,8 +13,8 @@ trait Anon_Indent extends js.Object {
 object Anon_Indent {
   @scala.inline
   def apply(stream: `true`, indent: String = null): Anon_Indent = {
-    val __obj = js.Dynamic.literal(stream = stream)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
+    val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Indent]
   }
 }

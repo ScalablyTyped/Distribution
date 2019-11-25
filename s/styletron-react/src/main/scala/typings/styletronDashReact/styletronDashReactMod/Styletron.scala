@@ -28,8 +28,8 @@ object Styletron {
     wrapper: /* fc */ FC[js.Any] => ComponentType[js.Any],
     debug: Anon_StackIndex = null
   ): Styletron = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], driver = js.Any.fromFunction2(driver), getInitialStyle = js.Any.fromFunction0(getInitialStyle), reducers = reducers, wrapper = js.Any.fromFunction1(wrapper))
-    if (debug != null) __obj.updateDynamic("debug")(debug)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], driver = js.Any.fromFunction2(driver), getInitialStyle = js.Any.fromFunction0(getInitialStyle), reducers = reducers.asInstanceOf[js.Any], wrapper = js.Any.fromFunction1(wrapper))
+    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[Styletron]
   }
 }

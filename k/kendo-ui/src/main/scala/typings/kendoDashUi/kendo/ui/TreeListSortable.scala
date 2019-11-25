@@ -13,8 +13,8 @@ object TreeListSortable {
   @scala.inline
   def apply(allowUnsort: js.UndefOr[Boolean] = js.undefined, mode: String = null): TreeListSortable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnsort)) __obj.updateDynamic("allowUnsort")(allowUnsort)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (!js.isUndefined(allowUnsort)) __obj.updateDynamic("allowUnsort")(allowUnsort.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListSortable]
   }
 }

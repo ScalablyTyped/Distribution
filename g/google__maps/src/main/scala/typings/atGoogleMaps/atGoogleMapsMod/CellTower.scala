@@ -38,7 +38,7 @@ object CellTower {
     signalStrength: Int | Double = null,
     timingAdvance: Int | Double = null
   ): CellTower = {
-    val __obj = js.Dynamic.literal(cellId = cellId, locationAreaCode = locationAreaCode, mobileCountryCode = mobileCountryCode, mobileNetworkCode = mobileNetworkCode)
+    val __obj = js.Dynamic.literal(cellId = cellId.asInstanceOf[js.Any], locationAreaCode = locationAreaCode.asInstanceOf[js.Any], mobileCountryCode = mobileCountryCode.asInstanceOf[js.Any], mobileNetworkCode = mobileNetworkCode.asInstanceOf[js.Any])
     if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
     if (signalStrength != null) __obj.updateDynamic("signalStrength")(signalStrength.asInstanceOf[js.Any])
     if (timingAdvance != null) __obj.updateDynamic("timingAdvance")(timingAdvance.asInstanceOf[js.Any])

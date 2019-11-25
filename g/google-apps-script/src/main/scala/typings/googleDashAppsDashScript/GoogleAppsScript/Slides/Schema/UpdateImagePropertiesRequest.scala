@@ -14,9 +14,9 @@ object UpdateImagePropertiesRequest {
   @scala.inline
   def apply(fields: String = null, imageProperties: ImageProperties = null, objectId: String = null): UpdateImagePropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (imageProperties != null) __obj.updateDynamic("imageProperties")(imageProperties)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (imageProperties != null) __obj.updateDynamic("imageProperties")(imageProperties.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateImagePropertiesRequest]
   }
 }

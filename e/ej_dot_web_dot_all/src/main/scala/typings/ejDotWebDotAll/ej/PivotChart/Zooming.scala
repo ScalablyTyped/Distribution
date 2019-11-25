@@ -15,7 +15,7 @@ object Zooming {
   @scala.inline
   def apply(enableScrollbar: js.UndefOr[Boolean] = js.undefined): Zooming = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableScrollbar)) __obj.updateDynamic("enableScrollbar")(enableScrollbar)
+    if (!js.isUndefined(enableScrollbar)) __obj.updateDynamic("enableScrollbar")(enableScrollbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[Zooming]
   }
 }

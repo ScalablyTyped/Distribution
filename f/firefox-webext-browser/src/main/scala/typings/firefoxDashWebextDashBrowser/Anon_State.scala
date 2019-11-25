@@ -13,7 +13,7 @@ trait Anon_State extends js.Object {
 object Anon_State {
   @scala.inline
   def apply(state: _UndefinedState): Anon_State = {
-    val __obj = js.Dynamic.literal(state = state)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_State]
   }

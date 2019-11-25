@@ -24,12 +24,12 @@ object TableFieldSchema {
     `type`: String = null
   ): TableFieldSchema = {
     val __obj = js.Dynamic.literal()
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableFieldSchema]
   }
 }

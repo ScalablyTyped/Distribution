@@ -23,10 +23,10 @@ object Anon_Action {
     originalEvent: js.Any = null,
     searchTerm: String = null
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], dataItem = dataItem)
-    if (lastValue != null) __obj.updateDynamic("lastValue")(lastValue)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
-    if (searchTerm != null) __obj.updateDynamic("searchTerm")(searchTerm)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], dataItem = dataItem.asInstanceOf[js.Any])
+    if (lastValue != null) __obj.updateDynamic("lastValue")(lastValue.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
+    if (searchTerm != null) __obj.updateDynamic("searchTerm")(searchTerm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Action]
   }
 }

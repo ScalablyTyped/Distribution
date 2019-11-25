@@ -18,9 +18,9 @@ object ConcordContext {
     supportedResourceTypes: js.Array[String] = null
   ): ConcordContext = {
     val __obj = js.Dynamic.literal()
-    if (environments != null) __obj.updateDynamic("environments")(environments)
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
-    if (supportedResourceTypes != null) __obj.updateDynamic("supportedResourceTypes")(supportedResourceTypes)
+    if (environments != null) __obj.updateDynamic("environments")(environments.asInstanceOf[js.Any])
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
+    if (supportedResourceTypes != null) __obj.updateDynamic("supportedResourceTypes")(supportedResourceTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConcordContext]
   }
 }

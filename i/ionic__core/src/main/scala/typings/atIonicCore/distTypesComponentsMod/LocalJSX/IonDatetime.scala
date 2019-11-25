@@ -2,8 +2,6 @@ package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
-import typings.atIonicCore.distTypesComponentsDatetimeDatetimeDashInterfaceMod.DatetimeChangeEventDetail
-import typings.atIonicCore.distTypesComponentsDatetimeDatetimeDashInterfaceMod.DatetimeOptions
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -85,7 +83,14 @@ trait IonDatetime extends js.Object {
   /**
     * Emitted when the value (selected date) has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[DatetimeChangeEventDetail], Unit]] = js.undefined
+  var onIonChange: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeChangeEventDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Emitted when the datetime has focus.
     */
@@ -97,7 +102,9 @@ trait IonDatetime extends js.Object {
   /**
     * Any additional options that the picker interface can accept. See the [Picker API docs](../picker) for the picker options.
     */
-  var pickerOptions: js.UndefOr[DatetimeOptions] = js.undefined
+  var pickerOptions: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any
+  ] = js.undefined
   /**
     * The text to display when there's no date selected yet. Using lowercase to match the input attribute
     */
@@ -137,41 +144,43 @@ object IonDatetime {
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
     onIonCancel: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[DatetimeChangeEventDetail] => Unit = null,
+    onIonChange: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeChangeEventDetail */ _
+    ] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     pickerFormat: String = null,
-    pickerOptions: DatetimeOptions = null,
+    pickerOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any = null,
     placeholder: String = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
     value: String = null,
     yearValues: js.Array[Double] | Double | String = null
   ): IonDatetime = {
     val __obj = js.Dynamic.literal()
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
     if (dayShortNames != null) __obj.updateDynamic("dayShortNames")(dayShortNames.asInstanceOf[js.Any])
     if (dayValues != null) __obj.updateDynamic("dayValues")(dayValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (displayFormat != null) __obj.updateDynamic("displayFormat")(displayFormat)
-    if (doneText != null) __obj.updateDynamic("doneText")(doneText)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (displayFormat != null) __obj.updateDynamic("displayFormat")(displayFormat.asInstanceOf[js.Any])
+    if (doneText != null) __obj.updateDynamic("doneText")(doneText.asInstanceOf[js.Any])
     if (hourValues != null) __obj.updateDynamic("hourValues")(hourValues.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minuteValues != null) __obj.updateDynamic("minuteValues")(minuteValues.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
     if (monthShortNames != null) __obj.updateDynamic("monthShortNames")(monthShortNames.asInstanceOf[js.Any])
     if (monthValues != null) __obj.updateDynamic("monthValues")(monthValues.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
     if (onIonCancel != null) __obj.updateDynamic("onIonCancel")(js.Any.fromFunction1(onIonCancel))
     if (onIonChange != null) __obj.updateDynamic("onIonChange")(js.Any.fromFunction1(onIonChange))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
-    if (pickerFormat != null) __obj.updateDynamic("pickerFormat")(pickerFormat)
-    if (pickerOptions != null) __obj.updateDynamic("pickerOptions")(pickerOptions)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (pickerFormat != null) __obj.updateDynamic("pickerFormat")(pickerFormat.asInstanceOf[js.Any])
+    if (pickerOptions != null) __obj.updateDynamic("pickerOptions")(pickerOptions.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (yearValues != null) __obj.updateDynamic("yearValues")(yearValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonDatetime]
   }

@@ -30,9 +30,9 @@ object ListBackupsOutput {
     BackupSummaries: js.Array[_UnmarshalledBackupSummary] = null,
     LastEvaluatedBackupArn: String = null
   ): ListBackupsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (BackupSummaries != null) __obj.updateDynamic("BackupSummaries")(BackupSummaries)
-    if (LastEvaluatedBackupArn != null) __obj.updateDynamic("LastEvaluatedBackupArn")(LastEvaluatedBackupArn)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (BackupSummaries != null) __obj.updateDynamic("BackupSummaries")(BackupSummaries.asInstanceOf[js.Any])
+    if (LastEvaluatedBackupArn != null) __obj.updateDynamic("LastEvaluatedBackupArn")(LastEvaluatedBackupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBackupsOutput]
   }
 }

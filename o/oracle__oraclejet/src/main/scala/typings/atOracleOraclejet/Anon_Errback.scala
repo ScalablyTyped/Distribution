@@ -27,7 +27,7 @@ object Anon_Errback {
       Unit
     ]) = null
   ): Anon_Errback = {
-    val __obj = js.Dynamic.literal(viewPath = viewPath)
+    val __obj = js.Dynamic.literal(viewPath = viewPath.asInstanceOf[js.Any])
     if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Errback]
   }

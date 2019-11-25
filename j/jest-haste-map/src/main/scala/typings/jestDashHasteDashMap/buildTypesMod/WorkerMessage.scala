@@ -23,9 +23,9 @@ object WorkerMessage {
     dependencyExtractor: String = null,
     hasteImplModulePath: String = null
   ): WorkerMessage = {
-    val __obj = js.Dynamic.literal(computeDependencies = computeDependencies, computeSha1 = computeSha1, filePath = filePath, rootDir = rootDir)
-    if (dependencyExtractor != null) __obj.updateDynamic("dependencyExtractor")(dependencyExtractor)
-    if (hasteImplModulePath != null) __obj.updateDynamic("hasteImplModulePath")(hasteImplModulePath)
+    val __obj = js.Dynamic.literal(computeDependencies = computeDependencies.asInstanceOf[js.Any], computeSha1 = computeSha1.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
+    if (dependencyExtractor != null) __obj.updateDynamic("dependencyExtractor")(dependencyExtractor.asInstanceOf[js.Any])
+    if (hasteImplModulePath != null) __obj.updateDynamic("hasteImplModulePath")(hasteImplModulePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerMessage]
   }
 }

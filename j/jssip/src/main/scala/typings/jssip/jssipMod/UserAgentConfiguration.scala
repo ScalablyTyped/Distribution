@@ -49,24 +49,24 @@ object UserAgentConfiguration {
     use_reloaded_route: js.UndefOr[Boolean] = js.undefined,
     user_agent: String = null
   ): UserAgentConfiguration = {
-    val __obj = js.Dynamic.literal(sockets = sockets.asInstanceOf[js.Any], uri = uri)
-    if (authorization_user != null) __obj.updateDynamic("authorization_user")(authorization_user)
+    val __obj = js.Dynamic.literal(sockets = sockets.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (authorization_user != null) __obj.updateDynamic("authorization_user")(authorization_user.asInstanceOf[js.Any])
     if (connection_recovery_max_interval != null) __obj.updateDynamic("connection_recovery_max_interval")(connection_recovery_max_interval.asInstanceOf[js.Any])
     if (connection_recovery_min_interval != null) __obj.updateDynamic("connection_recovery_min_interval")(connection_recovery_min_interval.asInstanceOf[js.Any])
-    if (contact_uri != null) __obj.updateDynamic("contact_uri")(contact_uri)
-    if (display_name != null) __obj.updateDynamic("display_name")(display_name)
-    if (ha1 != null) __obj.updateDynamic("ha1")(ha1)
-    if (instance_id != null) __obj.updateDynamic("instance_id")(instance_id)
+    if (contact_uri != null) __obj.updateDynamic("contact_uri")(contact_uri.asInstanceOf[js.Any])
+    if (display_name != null) __obj.updateDynamic("display_name")(display_name.asInstanceOf[js.Any])
+    if (ha1 != null) __obj.updateDynamic("ha1")(ha1.asInstanceOf[js.Any])
+    if (instance_id != null) __obj.updateDynamic("instance_id")(instance_id.asInstanceOf[js.Any])
     if (no_answer_timeout != null) __obj.updateDynamic("no_answer_timeout")(no_answer_timeout.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
-    if (!js.isUndefined(register)) __obj.updateDynamic("register")(register)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    if (!js.isUndefined(register)) __obj.updateDynamic("register")(register.asInstanceOf[js.Any])
     if (register_expires != null) __obj.updateDynamic("register_expires")(register_expires.asInstanceOf[js.Any])
-    if (registrar_server != null) __obj.updateDynamic("registrar_server")(registrar_server)
-    if (!js.isUndefined(session_timers)) __obj.updateDynamic("session_timers")(session_timers)
-    if (session_timers_refresh_method != null) __obj.updateDynamic("session_timers_refresh_method")(session_timers_refresh_method)
-    if (!js.isUndefined(use_reloaded_route)) __obj.updateDynamic("use_reloaded_route")(use_reloaded_route)
-    if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent)
+    if (registrar_server != null) __obj.updateDynamic("registrar_server")(registrar_server.asInstanceOf[js.Any])
+    if (!js.isUndefined(session_timers)) __obj.updateDynamic("session_timers")(session_timers.asInstanceOf[js.Any])
+    if (session_timers_refresh_method != null) __obj.updateDynamic("session_timers_refresh_method")(session_timers_refresh_method.asInstanceOf[js.Any])
+    if (!js.isUndefined(use_reloaded_route)) __obj.updateDynamic("use_reloaded_route")(use_reloaded_route.asInstanceOf[js.Any])
+    if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentConfiguration]
   }
 }

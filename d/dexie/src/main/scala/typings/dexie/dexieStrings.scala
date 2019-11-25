@@ -109,7 +109,7 @@ object dexieStrings {
   sealed trait deleting extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error_ extends js.Object
   
   @js.native
   sealed trait populate extends js.Object
@@ -213,7 +213,7 @@ object dexieStrings {
   @scala.inline
   def deleting: deleting = "deleting".asInstanceOf[deleting]
   @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  def error_ : error_ = "error".asInstanceOf[error_]
   @scala.inline
   def populate: populate = "populate".asInstanceOf[populate]
   @scala.inline

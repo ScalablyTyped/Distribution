@@ -12,7 +12,7 @@ object CustomFormatConfig {
   @scala.inline
   def apply(format: String = null): CustomFormatConfig = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomFormatConfig]
   }
 }

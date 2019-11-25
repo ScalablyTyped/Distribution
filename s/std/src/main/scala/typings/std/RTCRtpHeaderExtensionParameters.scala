@@ -13,8 +13,8 @@ trait RTCRtpHeaderExtensionParameters extends js.Object {
 object RTCRtpHeaderExtensionParameters {
   @scala.inline
   def apply(id: Double, uri: java.lang.String, encrypted: js.UndefOr[scala.Boolean] = js.undefined): RTCRtpHeaderExtensionParameters = {
-    val __obj = js.Dynamic.literal(id = id, uri = uri)
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpHeaderExtensionParameters]
   }
 }

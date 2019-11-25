@@ -21,8 +21,8 @@ object Anon_Column {
     onChange: /* value */ js.UndefOr[js.Any] => Unit,
     key: String = null
   ): Anon_Column = {
-    val __obj = js.Dynamic.literal(column = column, filter = filter, onChange = js.Any.fromFunction1(onChange))
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Column]
   }
 }

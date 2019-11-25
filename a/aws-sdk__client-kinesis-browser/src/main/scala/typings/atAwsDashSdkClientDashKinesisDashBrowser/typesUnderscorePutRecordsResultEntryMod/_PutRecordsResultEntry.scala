@@ -32,10 +32,10 @@ object _PutRecordsResultEntry {
     ShardId: String = null
   ): _PutRecordsResultEntry = {
     val __obj = js.Dynamic.literal()
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode)
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber)
-    if (ShardId != null) __obj.updateDynamic("ShardId")(ShardId)
+    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
+    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
+    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber.asInstanceOf[js.Any])
+    if (ShardId != null) __obj.updateDynamic("ShardId")(ShardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_PutRecordsResultEntry]
   }
 }

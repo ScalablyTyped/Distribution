@@ -24,7 +24,7 @@ object PlusWebviewWebviewListenResourceOptions {
   @scala.inline
   def apply(`match`: String = null): PlusWebviewWebviewListenResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewListenResourceOptions]
   }
 }

@@ -38,15 +38,15 @@ object Options {
     title: String = null,
     url: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (!js.isUndefined(delayOnHover)) __obj.updateDynamic("delayOnHover")(delayOnHover)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayOnHover)) __obj.updateDynamic("delayOnHover")(delayOnHover.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

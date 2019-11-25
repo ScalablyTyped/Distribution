@@ -20,8 +20,8 @@ object Anon_BaseUrl {
     urlAdapter: urlPathAdapter | urlParamAdapter = null
   ): Anon_BaseUrl = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (rootInstanceName != null) __obj.updateDynamic("rootInstanceName")(rootInstanceName)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (rootInstanceName != null) __obj.updateDynamic("rootInstanceName")(rootInstanceName.asInstanceOf[js.Any])
     if (urlAdapter != null) __obj.updateDynamic("urlAdapter")(urlAdapter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseUrl]
   }

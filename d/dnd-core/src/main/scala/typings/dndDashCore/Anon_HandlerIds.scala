@@ -13,7 +13,7 @@ object Anon_HandlerIds {
   @scala.inline
   def apply(handlerIds: js.Array[Identifier] = null): Anon_HandlerIds = {
     val __obj = js.Dynamic.literal()
-    if (handlerIds != null) __obj.updateDynamic("handlerIds")(handlerIds)
+    if (handlerIds != null) __obj.updateDynamic("handlerIds")(handlerIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HandlerIds]
   }
 }

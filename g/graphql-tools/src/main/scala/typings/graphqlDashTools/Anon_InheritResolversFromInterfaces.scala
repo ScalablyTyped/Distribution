@@ -29,12 +29,12 @@ object Anon_InheritResolversFromInterfaces {
     resolvers: IResolversParameter = null,
     schemaDirectives: StringDictionary[TypeofClassSchemaDirectiveVisitor] = null
   ): Anon_InheritResolversFromInterfaces = {
-    val __obj = js.Dynamic.literal(schemas = schemas)
-    if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces)
-    if (!js.isUndefined(mergeDirectives)) __obj.updateDynamic("mergeDirectives")(mergeDirectives)
+    val __obj = js.Dynamic.literal(schemas = schemas.asInstanceOf[js.Any])
+    if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeDirectives)) __obj.updateDynamic("mergeDirectives")(mergeDirectives.asInstanceOf[js.Any])
     if (onTypeConflict != null) __obj.updateDynamic("onTypeConflict")(js.Any.fromFunction3(onTypeConflict))
     if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
-    if (schemaDirectives != null) __obj.updateDynamic("schemaDirectives")(schemaDirectives)
+    if (schemaDirectives != null) __obj.updateDynamic("schemaDirectives")(schemaDirectives.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InheritResolversFromInterfaces]
   }
 }

@@ -33,12 +33,12 @@ object MutationOptions {
     variables: js.Object = null
   ): MutationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceFetch)) __obj.updateDynamic("forceFetch")(forceFetch)
-    if (fragments != null) __obj.updateDynamic("fragments")(fragments)
-    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse)
-    if (resultBehaviors != null) __obj.updateDynamic("resultBehaviors")(resultBehaviors)
-    if (updateQueries != null) __obj.updateDynamic("updateQueries")(updateQueries)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (!js.isUndefined(forceFetch)) __obj.updateDynamic("forceFetch")(forceFetch.asInstanceOf[js.Any])
+    if (fragments != null) __obj.updateDynamic("fragments")(fragments.asInstanceOf[js.Any])
+    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
+    if (resultBehaviors != null) __obj.updateDynamic("resultBehaviors")(resultBehaviors.asInstanceOf[js.Any])
+    if (updateQueries != null) __obj.updateDynamic("updateQueries")(updateQueries.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationOptions]
   }
 }

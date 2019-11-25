@@ -13,8 +13,8 @@ trait Anon_Code extends js.Object {
 object Anon_Code {
   @scala.inline
   def apply(code: String, host: String, redirectUri: String = null): Anon_Code = {
-    val __obj = js.Dynamic.literal(code = code, host = host)
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any])
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Code]
   }
 }

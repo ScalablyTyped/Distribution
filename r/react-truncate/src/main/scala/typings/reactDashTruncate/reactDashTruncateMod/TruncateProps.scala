@@ -28,12 +28,12 @@ object TruncateProps {
     trimWhitespace: js.UndefOr[Boolean] = js.undefined
   ): TruncateProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     if (onTruncate != null) __obj.updateDynamic("onTruncate")(js.Any.fromFunction1(onTruncate))
-    if (!js.isUndefined(trimWhitespace)) __obj.updateDynamic("trimWhitespace")(trimWhitespace)
+    if (!js.isUndefined(trimWhitespace)) __obj.updateDynamic("trimWhitespace")(trimWhitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[TruncateProps]
   }
 }

@@ -13,9 +13,9 @@ trait MessageFailedEvent extends js.Object {
 object MessageFailedEvent {
   @scala.inline
   def apply(originator: String, cause: String = null, response: IncomingResponse = null): MessageFailedEvent = {
-    val __obj = js.Dynamic.literal(originator = originator)
-    if (cause != null) __obj.updateDynamic("cause")(cause)
-    if (response != null) __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
+    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageFailedEvent]
   }
 }

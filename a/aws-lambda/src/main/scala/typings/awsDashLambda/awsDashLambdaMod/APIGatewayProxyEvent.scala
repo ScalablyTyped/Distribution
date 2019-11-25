@@ -36,12 +36,12 @@ object APIGatewayProxyEvent {
     queryStringParameters: StringDictionary[String] = null,
     stageVariables: StringDictionary[String] = null
   ): APIGatewayProxyEvent = {
-    val __obj = js.Dynamic.literal(headers = headers, httpMethod = httpMethod, isBase64Encoded = isBase64Encoded, multiValueHeaders = multiValueHeaders, path = path, requestContext = requestContext, resource = resource)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (multiValueQueryStringParameters != null) __obj.updateDynamic("multiValueQueryStringParameters")(multiValueQueryStringParameters)
-    if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters)
-    if (queryStringParameters != null) __obj.updateDynamic("queryStringParameters")(queryStringParameters)
-    if (stageVariables != null) __obj.updateDynamic("stageVariables")(stageVariables)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], multiValueHeaders = multiValueHeaders.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (multiValueQueryStringParameters != null) __obj.updateDynamic("multiValueQueryStringParameters")(multiValueQueryStringParameters.asInstanceOf[js.Any])
+    if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters.asInstanceOf[js.Any])
+    if (queryStringParameters != null) __obj.updateDynamic("queryStringParameters")(queryStringParameters.asInstanceOf[js.Any])
+    if (stageVariables != null) __obj.updateDynamic("stageVariables")(stageVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIGatewayProxyEvent]
   }
 }

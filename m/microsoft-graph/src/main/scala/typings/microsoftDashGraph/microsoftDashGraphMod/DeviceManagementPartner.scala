@@ -37,15 +37,15 @@ object DeviceManagementPartner {
     whenPartnerDevicesWillBeRemovedDateTime: String = null
   ): DeviceManagementPartner = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isConfigured)) __obj.updateDynamic("isConfigured")(isConfigured)
-    if (lastHeartbeatDateTime != null) __obj.updateDynamic("lastHeartbeatDateTime")(lastHeartbeatDateTime)
-    if (partnerAppType != null) __obj.updateDynamic("partnerAppType")(partnerAppType)
-    if (partnerState != null) __obj.updateDynamic("partnerState")(partnerState)
-    if (singleTenantAppId != null) __obj.updateDynamic("singleTenantAppId")(singleTenantAppId)
-    if (whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime != null) __obj.updateDynamic("whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime")(whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime)
-    if (whenPartnerDevicesWillBeRemovedDateTime != null) __obj.updateDynamic("whenPartnerDevicesWillBeRemovedDateTime")(whenPartnerDevicesWillBeRemovedDateTime)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConfigured)) __obj.updateDynamic("isConfigured")(isConfigured.asInstanceOf[js.Any])
+    if (lastHeartbeatDateTime != null) __obj.updateDynamic("lastHeartbeatDateTime")(lastHeartbeatDateTime.asInstanceOf[js.Any])
+    if (partnerAppType != null) __obj.updateDynamic("partnerAppType")(partnerAppType.asInstanceOf[js.Any])
+    if (partnerState != null) __obj.updateDynamic("partnerState")(partnerState.asInstanceOf[js.Any])
+    if (singleTenantAppId != null) __obj.updateDynamic("singleTenantAppId")(singleTenantAppId.asInstanceOf[js.Any])
+    if (whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime != null) __obj.updateDynamic("whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime")(whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime.asInstanceOf[js.Any])
+    if (whenPartnerDevicesWillBeRemovedDateTime != null) __obj.updateDynamic("whenPartnerDevicesWillBeRemovedDateTime")(whenPartnerDevicesWillBeRemovedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceManagementPartner]
   }
 }

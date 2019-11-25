@@ -30,8 +30,8 @@ object Anon_CallbackName {
     timeout: Int | Double = null
   ): Anon_CallbackName = {
     val __obj = js.Dynamic.literal()
-    if (callbackName != null) __obj.updateDynamic("callbackName")(callbackName)
-    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear)
+    if (callbackName != null) __obj.updateDynamic("callbackName")(callbackName.asInstanceOf[js.Any])
+    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CallbackName]
   }

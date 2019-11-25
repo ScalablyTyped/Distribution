@@ -37,23 +37,23 @@ object SvgIconSetOptions {
     iconIdResolver: /* id */ String => String = null,
     iconSize: Int | Double = null,
     preloadable: js.UndefOr[Boolean] = js.undefined,
-    size: /* import warning: ImportType.apply Failed type conversion: this['iconSize'] */ js.Any = null,
-    svgIconSize: /* import warning: ImportType.apply Failed type conversion: this['iconSize'] */ js.Any = null,
-    uri: /* import warning: ImportType.apply Failed type conversion: this['url'] */ js.Any = null,
+    size: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
+    svgIconSize: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
+    uri: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any = null,
     url: UrlConfig[scala.Nothing] = null,
     viewBox: String = null
   ): SvgIconSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (cumulative != null) __obj.updateDynamic("cumulative")(cumulative)
+    if (cumulative != null) __obj.updateDynamic("cumulative")(cumulative.asInstanceOf[js.Any])
     if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
     if (iconIdResolver != null) __obj.updateDynamic("iconIdResolver")(js.Any.fromFunction1(iconIdResolver))
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(preloadable)) __obj.updateDynamic("preloadable")(preloadable)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (svgIconSize != null) __obj.updateDynamic("svgIconSize")(svgIconSize)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (!js.isUndefined(preloadable)) __obj.updateDynamic("preloadable")(preloadable.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (svgIconSize != null) __obj.updateDynamic("svgIconSize")(svgIconSize.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgIconSetOptions]
   }
 }

@@ -38,11 +38,11 @@ object DefaultLayersOptions {
   ): DefaultLayersOptions = {
     val __obj = js.Dynamic.literal()
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (lg != null) __obj.updateDynamic("lg")(lg)
-    if (lg2 != null) __obj.updateDynamic("lg2")(lg2)
-    if (!js.isUndefined(pois)) __obj.updateDynamic("pois")(pois)
+    if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
+    if (lg2 != null) __obj.updateDynamic("lg2")(lg2.asInstanceOf[js.Any])
+    if (!js.isUndefined(pois)) __obj.updateDynamic("pois")(pois.asInstanceOf[js.Any])
     if (ppi != null) __obj.updateDynamic("ppi")(ppi.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultLayersOptions]
   }

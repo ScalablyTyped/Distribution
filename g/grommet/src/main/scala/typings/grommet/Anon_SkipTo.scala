@@ -12,7 +12,7 @@ object Anon_SkipTo {
   @scala.inline
   def apply(skipTo: String = null): Anon_SkipTo = {
     val __obj = js.Dynamic.literal()
-    if (skipTo != null) __obj.updateDynamic("skipTo")(skipTo)
+    if (skipTo != null) __obj.updateDynamic("skipTo")(skipTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SkipTo]
   }
 }

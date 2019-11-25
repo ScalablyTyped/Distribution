@@ -27,11 +27,11 @@ object ThumbnailDetails {
     standard: Thumbnail = null
   ): ThumbnailDetails = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (high != null) __obj.updateDynamic("high")(high)
-    if (maxres != null) __obj.updateDynamic("maxres")(maxres)
-    if (medium != null) __obj.updateDynamic("medium")(medium)
-    if (standard != null) __obj.updateDynamic("standard")(standard)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
+    if (maxres != null) __obj.updateDynamic("maxres")(maxres.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (standard != null) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbnailDetails]
   }
 }

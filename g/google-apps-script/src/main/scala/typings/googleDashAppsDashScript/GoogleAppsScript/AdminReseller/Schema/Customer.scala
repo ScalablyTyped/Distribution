@@ -28,14 +28,14 @@ object Customer {
     resourceUiUrl: String = null
   ): Customer = {
     val __obj = js.Dynamic.literal()
-    if (alternateEmail != null) __obj.updateDynamic("alternateEmail")(alternateEmail)
-    if (customerDomain != null) __obj.updateDynamic("customerDomain")(customerDomain)
-    if (!js.isUndefined(customerDomainVerified)) __obj.updateDynamic("customerDomainVerified")(customerDomainVerified)
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress)
-    if (resourceUiUrl != null) __obj.updateDynamic("resourceUiUrl")(resourceUiUrl)
+    if (alternateEmail != null) __obj.updateDynamic("alternateEmail")(alternateEmail.asInstanceOf[js.Any])
+    if (customerDomain != null) __obj.updateDynamic("customerDomain")(customerDomain.asInstanceOf[js.Any])
+    if (!js.isUndefined(customerDomainVerified)) __obj.updateDynamic("customerDomainVerified")(customerDomainVerified.asInstanceOf[js.Any])
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress.asInstanceOf[js.Any])
+    if (resourceUiUrl != null) __obj.updateDynamic("resourceUiUrl")(resourceUiUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Customer]
   }
 }

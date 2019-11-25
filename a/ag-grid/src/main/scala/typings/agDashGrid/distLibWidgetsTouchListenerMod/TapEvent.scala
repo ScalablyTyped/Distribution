@@ -13,8 +13,8 @@ trait TapEvent extends AgEvent {
 object TapEvent {
   @scala.inline
   def apply(touchStart: Touch, `type`: String): TapEvent = {
-    val __obj = js.Dynamic.literal(touchStart = touchStart)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(touchStart = touchStart.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TapEvent]
   }
 }

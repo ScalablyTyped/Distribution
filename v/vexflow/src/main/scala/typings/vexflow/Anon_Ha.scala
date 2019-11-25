@@ -14,7 +14,7 @@ trait Anon_Ha extends js.Object {
 object Anon_Ha {
   @scala.inline
   def apply(ha: Double, o: js.Array[String], x_max: Double, x_min: Double): Anon_Ha = {
-    val __obj = js.Dynamic.literal(ha = ha, o = o, x_max = x_max, x_min = x_min)
+    val __obj = js.Dynamic.literal(ha = ha.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any], x_max = x_max.asInstanceOf[js.Any], x_min = x_min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ha]
   }

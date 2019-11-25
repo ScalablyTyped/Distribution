@@ -57,15 +57,15 @@ object MatchOptions {
   ): MatchOptions = {
     val __obj = js.Dynamic.literal()
     if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
-    if (hints != null) __obj.updateDynamic("hints")(hints)
-    if (overview != null) __obj.updateDynamic("overview")(overview)
-    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
-    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps)
-    if (timestamps != null) __obj.updateDynamic("timestamps")(timestamps)
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints.asInstanceOf[js.Any])
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
+    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
+    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (timestamps != null) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchOptions]
   }
 }

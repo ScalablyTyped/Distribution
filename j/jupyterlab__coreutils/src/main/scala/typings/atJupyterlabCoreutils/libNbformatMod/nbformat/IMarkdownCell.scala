@@ -31,8 +31,8 @@ object IMarkdownCell {
     source: MultilineString,
     attachments: IAttachments = null
   ): IMarkdownCell = {
-    val __obj = js.Dynamic.literal(cell_type = cell_type, metadata = metadata, source = source.asInstanceOf[js.Any])
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    val __obj = js.Dynamic.literal(cell_type = cell_type.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarkdownCell]
   }
 }

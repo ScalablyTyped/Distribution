@@ -25,7 +25,7 @@ object IStructuralType {
     unmappedProperties: js.Array[DataProperty],
     validators: js.Array[Validator]
   ): IStructuralType = {
-    val __obj = js.Dynamic.literal(complexProperties = complexProperties, dataProperties = dataProperties, name = name, namespace = namespace, shortName = shortName, unmappedProperties = unmappedProperties, validators = validators)
+    val __obj = js.Dynamic.literal(complexProperties = complexProperties.asInstanceOf[js.Any], dataProperties = dataProperties.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any], unmappedProperties = unmappedProperties.asInstanceOf[js.Any], validators = validators.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IStructuralType]
   }

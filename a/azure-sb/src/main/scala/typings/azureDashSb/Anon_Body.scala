@@ -14,10 +14,10 @@ trait Anon_Body extends js.Object {
 object Anon_Body {
   @scala.inline
   def apply(body: String, expiry: String = null, headers: js.Any = null, tags: js.Array[String] = null): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (expiry != null) __obj.updateDynamic("expiry")(expiry)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

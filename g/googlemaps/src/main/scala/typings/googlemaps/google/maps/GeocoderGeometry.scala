@@ -19,7 +19,7 @@ object GeocoderGeometry {
     location_type: GeocoderLocationType,
     viewport: LatLngBounds
   ): GeocoderGeometry = {
-    val __obj = js.Dynamic.literal(bounds = bounds, location = location, location_type = location_type, viewport = viewport)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], location_type = location_type.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeocoderGeometry]
   }

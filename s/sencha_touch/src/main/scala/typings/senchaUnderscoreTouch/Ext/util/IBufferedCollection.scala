@@ -364,8 +364,8 @@ object IBufferedCollection {
     addAll: /* addItems */ js.UndefOr[js.Any] => Unit = null,
     addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addFilter: /* filter */ js.UndefOr[js.Any] => Unit = null,
-    addFilters: /* filters */ js.UndefOr[js.Any] => _ = null,
+    addFilter: js.UndefOr[js.Any] => Unit = null,
+    addFilters: js.UndefOr[js.Any | Array] => _ = null,
     addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
     addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     addSorter: (/* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
@@ -392,7 +392,13 @@ object IBufferedCollection {
     eachKey: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
     extend: java.lang.String = null,
-    filter: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[js.Any], /* caseSensitive */ js.UndefOr[js.Any]) => Array = null,
+    filter: (js.Function1[/* data */ js.UndefOr[Array], Array]) | (js.Function4[
+      /* property */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[js.Any], 
+      /* anyMatch */ js.UndefOr[js.Any], 
+      /* caseSensitive */ js.UndefOr[js.Any], 
+      Array
+    ]) = null,
     filterBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection = null,
     filterRoot: java.lang.String = null,
     filtered: js.UndefOr[Boolean] = js.undefined,
@@ -431,8 +437,8 @@ object IBufferedCollection {
     inheritableStatics: js.Any = null,
     initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
     insert: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[java.lang.String], /* item */ js.UndefOr[js.Any]) => _ = null,
-    insertFilter: (/* index */ js.UndefOr[Double], /* filter */ js.UndefOr[js.Any]) => _ = null,
-    insertFilters: (/* index */ js.UndefOr[Double], /* filters */ js.UndefOr[Array]) => Array = null,
+    insertFilter: (js.UndefOr[Double], js.UndefOr[js.Any]) => _ = null,
+    insertFilters: (js.UndefOr[Double], js.UndefOr[Array]) => Array = null,
     insertSorter: (/* index */ js.UndefOr[Double], /* sorter */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[java.lang.String]) => Unit = null,
     insertSorters: () => IBufferedCollection = null,
     items: Array = null,
@@ -455,7 +461,7 @@ object IBufferedCollection {
     removeAt: /* index */ js.UndefOr[Double] => _ = null,
     removeAtKey: /* key */ js.UndefOr[java.lang.String] => _ = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeFilters: /* filters */ js.UndefOr[js.Any] => IBufferedCollection = null,
+    removeFilters: js.UndefOr[js.Any | Array] => IBufferedCollection | Unit = null,
     removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
     removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     removeSorter: /* sorter */ js.UndefOr[js.Any] => Unit = null,
@@ -467,8 +473,8 @@ object IBufferedCollection {
     setAutoSort: /* autoSort */ js.UndefOr[Boolean] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
     setDefaultSortDirection: /* defaultSortDirection */ js.UndefOr[java.lang.String] => Unit = null,
-    setFilterRoot: /* filterRoot */ js.UndefOr[java.lang.String] => Unit = null,
-    setFilters: /* filters */ js.UndefOr[Array] => Unit = null,
+    setFilterRoot: js.UndefOr[java.lang.String] => Unit = null,
+    setFilters: js.UndefOr[Array] => Unit = null,
     setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
     setPageSize: /* pageSize */ js.UndefOr[Double] => Unit = null,
     setSortRoot: /* sortRoot */ js.UndefOr[java.lang.String] => Unit = null,
@@ -498,33 +504,33 @@ object IBufferedCollection {
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
     if (addSorter != null) __obj.updateDynamic("addSorter")(js.Any.fromFunction2(addSorter))
     if (addSorters != null) __obj.updateDynamic("addSorters")(js.Any.fromFunction2(addSorters))
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (all != null) __obj.updateDynamic("all")(all)
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
+    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (clear != null) __obj.updateDynamic("clear")(js.Any.fromFunction0(clear))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (clone != null) __obj.updateDynamic("clone")(js.Any.fromFunction0(clone))
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
     if (containsKey != null) __obj.updateDynamic("containsKey")(js.Any.fromFunction1(containsKey))
-    if (currentSortFn != null) __obj.updateDynamic("currentSortFn")(currentSortFn)
-    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection)
+    if (currentSortFn != null) __obj.updateDynamic("currentSortFn")(currentSortFn.asInstanceOf[js.Any])
+    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(dirtyFilterFn)) __obj.updateDynamic("dirtyFilterFn")(dirtyFilterFn)
-    if (!js.isUndefined(dirtySortFn)) __obj.updateDynamic("dirtySortFn")(dirtySortFn)
+    if (!js.isUndefined(dirtyFilterFn)) __obj.updateDynamic("dirtyFilterFn")(dirtyFilterFn.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirtySortFn)) __obj.updateDynamic("dirtySortFn")(dirtySortFn.asInstanceOf[js.Any])
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
     if (eachKey != null) __obj.updateDynamic("eachKey")(js.Any.fromFunction2(eachKey))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterBy != null) __obj.updateDynamic("filterBy")(js.Any.fromFunction2(filterBy))
-    if (filterRoot != null) __obj.updateDynamic("filterRoot")(filterRoot)
-    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (filterRoot != null) __obj.updateDynamic("filterRoot")(filterRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (findBy != null) __obj.updateDynamic("findBy")(js.Any.fromFunction2(findBy))
     if (findIndexBy != null) __obj.updateDynamic("findIndexBy")(js.Any.fromFunction3(findIndexBy))
     if (findInsertionIndex != null) __obj.updateDynamic("findInsertionIndex")(js.Any.fromFunction2(findInsertionIndex))
@@ -555,27 +561,27 @@ object IBufferedCollection {
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
     if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
     if (indexOfKey != null) __obj.updateDynamic("indexOfKey")(js.Any.fromFunction1(indexOfKey))
-    if (indices != null) __obj.updateDynamic("indices")(indices)
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction3(insert))
     if (insertFilter != null) __obj.updateDynamic("insertFilter")(js.Any.fromFunction2(insertFilter))
     if (insertFilters != null) __obj.updateDynamic("insertFilters")(js.Any.fromFunction2(insertFilters))
     if (insertSorter != null) __obj.updateDynamic("insertSorter")(js.Any.fromFunction3(insertSorter))
     if (insertSorters != null) __obj.updateDynamic("insertSorters")(js.Any.fromFunction0(insertSorters))
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (last != null) __obj.updateDynamic("last")(js.Any.fromFunction0(last))
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
@@ -590,7 +596,7 @@ object IBufferedCollection {
     if (removeSorters != null) __obj.updateDynamic("removeSorters")(js.Any.fromFunction1(removeSorters))
     if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction2(replace))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (self != null) __obj.updateDynamic("self")(self)
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setAutoFilter != null) __obj.updateDynamic("setAutoFilter")(js.Any.fromFunction1(setAutoFilter))
     if (setAutoSort != null) __obj.updateDynamic("setAutoSort")(js.Any.fromFunction1(setAutoSort))
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
@@ -602,17 +608,17 @@ object IBufferedCollection {
     if (setSortRoot != null) __obj.updateDynamic("setSortRoot")(js.Any.fromFunction1(setSortRoot))
     if (setSorters != null) __obj.updateDynamic("setSorters")(js.Any.fromFunction1(setSorters))
     if (setTotalCount != null) __obj.updateDynamic("setTotalCount")(js.Any.fromFunction1(setTotalCount))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot)
-    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted)
-    if (sorters != null) __obj.updateDynamic("sorters")(sorters)
-    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
+    if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])
+    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBufferedCollection]
   }
 }

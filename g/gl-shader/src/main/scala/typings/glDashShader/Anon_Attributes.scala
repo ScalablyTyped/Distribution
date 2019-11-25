@@ -20,9 +20,9 @@ object Anon_Attributes {
     attributes: js.Array[Parameter] = null,
     uniforms: js.Array[Parameter] = null
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal(fragment = fragment, vertex = vertex)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms)
+    val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], vertex = vertex.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attributes]
   }
 }

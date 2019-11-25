@@ -21,9 +21,9 @@ object AsObject {
     leadingComments: String = null,
     trailingComments: String = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(leadingDetachedCommentsList = leadingDetachedCommentsList, pathList = pathList, spanList = spanList)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    val __obj = js.Dynamic.literal(leadingDetachedCommentsList = leadingDetachedCommentsList.asInstanceOf[js.Any], pathList = pathList.asInstanceOf[js.Any], spanList = spanList.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

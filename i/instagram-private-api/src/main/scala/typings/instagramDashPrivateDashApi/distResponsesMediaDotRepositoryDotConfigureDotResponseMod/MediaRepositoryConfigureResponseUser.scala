@@ -37,7 +37,7 @@ object MediaRepositoryConfigureResponseUser {
     show_insights_terms: Boolean,
     username: String
   ): MediaRepositoryConfigureResponseUser = {
-    val __obj = js.Dynamic.literal(allowed_commenter_type = allowed_commenter_type, can_boost_post = can_boost_post, can_see_organic_insights = can_see_organic_insights, full_name = full_name, has_anonymous_profile_picture = has_anonymous_profile_picture, is_private = is_private, is_unpublished = is_unpublished, pk = pk, profile_pic_id = profile_pic_id, profile_pic_url = profile_pic_url, reel_auto_archive = reel_auto_archive, show_insights_terms = show_insights_terms, username = username)
+    val __obj = js.Dynamic.literal(allowed_commenter_type = allowed_commenter_type.asInstanceOf[js.Any], can_boost_post = can_boost_post.asInstanceOf[js.Any], can_see_organic_insights = can_see_organic_insights.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], has_anonymous_profile_picture = has_anonymous_profile_picture.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_unpublished = is_unpublished.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_id = profile_pic_id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], reel_auto_archive = reel_auto_archive.asInstanceOf[js.Any], show_insights_terms = show_insights_terms.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaRepositoryConfigureResponseUser]
   }

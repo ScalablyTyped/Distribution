@@ -12,7 +12,7 @@ trait ISuggestionsState extends js.Object {
 object ISuggestionsState {
   @scala.inline
   def apply(selectedActionType: SuggestionActionType): ISuggestionsState = {
-    val __obj = js.Dynamic.literal(selectedActionType = selectedActionType)
+    val __obj = js.Dynamic.literal(selectedActionType = selectedActionType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISuggestionsState]
   }

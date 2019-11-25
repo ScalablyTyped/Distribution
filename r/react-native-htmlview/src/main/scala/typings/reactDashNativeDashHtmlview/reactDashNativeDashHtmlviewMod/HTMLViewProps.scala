@@ -111,21 +111,21 @@ object HTMLViewProps {
     stylesheet: StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]] = null,
     textComponentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null
   ): HTMLViewProps = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (NodeComponent != null) __obj.updateDynamic("NodeComponent")(NodeComponent.asInstanceOf[js.Any])
     if (RootComponent != null) __obj.updateDynamic("RootComponent")(RootComponent.asInstanceOf[js.Any])
     if (TextComponent != null) __obj.updateDynamic("TextComponent")(TextComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(addLineBreaks)) __obj.updateDynamic("addLineBreaks")(addLineBreaks)
-    if (bullet != null) __obj.updateDynamic("bullet")(bullet)
-    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak)
-    if (nodeComponentProps != null) __obj.updateDynamic("nodeComponentProps")(nodeComponentProps)
+    if (!js.isUndefined(addLineBreaks)) __obj.updateDynamic("addLineBreaks")(addLineBreaks.asInstanceOf[js.Any])
+    if (bullet != null) __obj.updateDynamic("bullet")(bullet.asInstanceOf[js.Any])
+    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
+    if (nodeComponentProps != null) __obj.updateDynamic("nodeComponentProps")(nodeComponentProps.asInstanceOf[js.Any])
     if (onLinkLongPress != null) __obj.updateDynamic("onLinkLongPress")(js.Any.fromFunction1(onLinkLongPress))
     if (onLinkPress != null) __obj.updateDynamic("onLinkPress")(js.Any.fromFunction1(onLinkPress))
-    if (paragraphBreak != null) __obj.updateDynamic("paragraphBreak")(paragraphBreak)
+    if (paragraphBreak != null) __obj.updateDynamic("paragraphBreak")(paragraphBreak.asInstanceOf[js.Any])
     if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction5(renderNode))
-    if (rootComponentProps != null) __obj.updateDynamic("rootComponentProps")(rootComponentProps)
-    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet)
-    if (textComponentProps != null) __obj.updateDynamic("textComponentProps")(textComponentProps)
+    if (rootComponentProps != null) __obj.updateDynamic("rootComponentProps")(rootComponentProps.asInstanceOf[js.Any])
+    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
+    if (textComponentProps != null) __obj.updateDynamic("textComponentProps")(textComponentProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLViewProps]
   }
 }

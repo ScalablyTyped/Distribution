@@ -100,10 +100,10 @@ object IItem {
     keyBinding: IKeyBinding = null,
     submenu: typings.atPhosphorWidgets.libMenuMod.Menu = null
   ): IItem = {
-    val __obj = js.Dynamic.literal(args = args, caption = caption, className = className, command = command, dataset = dataset, icon = icon, iconClass = iconClass, iconLabel = iconLabel, isEnabled = isEnabled, isToggled = isToggled, isVisible = isVisible, label = label, mnemonic = mnemonic)
-    __obj.updateDynamic("type")(`type`)
-    if (keyBinding != null) __obj.updateDynamic("keyBinding")(keyBinding)
-    if (submenu != null) __obj.updateDynamic("submenu")(submenu)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], iconLabel = iconLabel.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isToggled = isToggled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], mnemonic = mnemonic.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (keyBinding != null) __obj.updateDynamic("keyBinding")(keyBinding.asInstanceOf[js.Any])
+    if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItem]
   }
 }

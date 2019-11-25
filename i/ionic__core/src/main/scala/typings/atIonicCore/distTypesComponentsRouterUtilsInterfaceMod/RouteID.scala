@@ -15,9 +15,9 @@ trait RouteID extends js.Object {
 object RouteID {
   @scala.inline
   def apply(id: String, element: HTMLElement = null, params: StringDictionary[js.Any] = null): RouteID = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteID]
   }
 }

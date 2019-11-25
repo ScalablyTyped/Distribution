@@ -22,11 +22,11 @@ object PanoramaOptions {
     navigationControl: js.UndefOr[Boolean] = js.undefined
   ): PanoramaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(albumsControl)) __obj.updateDynamic("albumsControl")(albumsControl)
-    if (albumsControlOptions != null) __obj.updateDynamic("albumsControlOptions")(albumsControlOptions)
-    if (!js.isUndefined(indoorSceneSwitchControl)) __obj.updateDynamic("indoorSceneSwitchControl")(indoorSceneSwitchControl)
-    if (!js.isUndefined(linksControl)) __obj.updateDynamic("linksControl")(linksControl)
-    if (!js.isUndefined(navigationControl)) __obj.updateDynamic("navigationControl")(navigationControl)
+    if (!js.isUndefined(albumsControl)) __obj.updateDynamic("albumsControl")(albumsControl.asInstanceOf[js.Any])
+    if (albumsControlOptions != null) __obj.updateDynamic("albumsControlOptions")(albumsControlOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(indoorSceneSwitchControl)) __obj.updateDynamic("indoorSceneSwitchControl")(indoorSceneSwitchControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(linksControl)) __obj.updateDynamic("linksControl")(linksControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationControl)) __obj.updateDynamic("navigationControl")(navigationControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanoramaOptions]
   }
 }

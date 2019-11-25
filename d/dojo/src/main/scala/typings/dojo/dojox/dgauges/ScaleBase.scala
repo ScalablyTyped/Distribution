@@ -1,9 +1,6 @@
 package typings.dojo.dojox.dgauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.font
 import typings.dojo.dojoStrings.labelGap
 import typings.dojo.dojoStrings.labelPosition
@@ -129,14 +126,54 @@ class ScaleBase () extends _Invalidating {
     */
   def valueForPosition(position: Double): Double = js.native
   @JSName("watch")
-  def watch_font(property: font, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_font(
+    property: font,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_labelGap(property: labelGap, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_labelGap(
+    property: labelGap,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_labelPosition(property: labelPosition, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_labelPosition(
+    property: labelPosition,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_scaler(property: scaler, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_scaler(
+    property: scaler,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_tickStroke(property: tickStroke, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_tickStroke(
+    property: tickStroke,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

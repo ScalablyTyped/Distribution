@@ -26,7 +26,7 @@ trait WorkItemStateInputModel extends js.Object {
 object WorkItemStateInputModel {
   @scala.inline
   def apply(color: String, name: String, order: Double, stateCategory: String): WorkItemStateInputModel = {
-    val __obj = js.Dynamic.literal(color = color, name = name, order = order, stateCategory = stateCategory)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], stateCategory = stateCategory.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemStateInputModel]
   }

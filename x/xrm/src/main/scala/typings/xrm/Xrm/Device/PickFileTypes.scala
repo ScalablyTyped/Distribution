@@ -15,3 +15,14 @@ import scala.scalajs.js.annotation._
 */
 trait PickFileTypes extends js.Object
 
+object PickFileTypes {
+  @scala.inline
+  def audio: typings.xrm.xrmStrings.audio = this.cast("audio")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def image: typings.xrm.xrmStrings.image = this.cast("image")
+  @scala.inline
+  def video: typings.xrm.xrmStrings.video = this.cast("video")
+}
+

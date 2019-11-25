@@ -22,10 +22,10 @@ object AreaStyle {
     rejectTexture: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): AreaStyle = {
-    val __obj = js.Dynamic.literal(color1 = color1, path = path)
-    if (color2 != null) __obj.updateDynamic("color2")(color2)
-    if (!js.isUndefined(rejectTexture)) __obj.updateDynamic("rejectTexture")(rejectTexture)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(color1 = color1.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (color2 != null) __obj.updateDynamic("color2")(color2.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectTexture)) __obj.updateDynamic("rejectTexture")(rejectTexture.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaStyle]
   }
 }

@@ -17,7 +17,7 @@ object _UnmarshalledSegmentBehaviors {
   @scala.inline
   def apply(Recency: _UnmarshalledRecencyDimension = null): _UnmarshalledSegmentBehaviors = {
     val __obj = js.Dynamic.literal()
-    if (Recency != null) __obj.updateDynamic("Recency")(Recency)
+    if (Recency != null) __obj.updateDynamic("Recency")(Recency.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSegmentBehaviors]
   }
 }

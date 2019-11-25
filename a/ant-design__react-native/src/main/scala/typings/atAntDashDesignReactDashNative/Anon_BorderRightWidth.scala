@@ -12,7 +12,7 @@ trait Anon_BorderRightWidth extends js.Object {
 object Anon_BorderRightWidth {
   @scala.inline
   def apply(borderRightWidth: Double, height: Double): Anon_BorderRightWidth = {
-    val __obj = js.Dynamic.literal(borderRightWidth = borderRightWidth, height = height)
+    val __obj = js.Dynamic.literal(borderRightWidth = borderRightWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderRightWidth]
   }

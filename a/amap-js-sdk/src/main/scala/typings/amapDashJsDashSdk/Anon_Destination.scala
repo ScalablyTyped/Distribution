@@ -21,10 +21,10 @@ object Anon_Destination {
     originName: String = null
   ): Anon_Destination = {
     val __obj = js.Dynamic.literal()
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (originName != null) __obj.updateDynamic("originName")(originName)
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (originName != null) __obj.updateDynamic("originName")(originName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Destination]
   }
 }

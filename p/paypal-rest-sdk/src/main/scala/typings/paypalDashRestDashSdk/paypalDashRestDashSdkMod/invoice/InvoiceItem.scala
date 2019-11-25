@@ -28,12 +28,12 @@ object InvoiceItem {
     tax: Tax = null,
     unit_of_measure: String = null
   ): InvoiceItem = {
-    val __obj = js.Dynamic.literal(name = name, quantity = quantity, unit_price = unit_price)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (discount != null) __obj.updateDynamic("discount")(discount)
-    if (tax != null) __obj.updateDynamic("tax")(tax)
-    if (unit_of_measure != null) __obj.updateDynamic("unit_of_measure")(unit_of_measure)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], unit_price = unit_price.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (discount != null) __obj.updateDynamic("discount")(discount.asInstanceOf[js.Any])
+    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
+    if (unit_of_measure != null) __obj.updateDynamic("unit_of_measure")(unit_of_measure.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceItem]
   }
 }

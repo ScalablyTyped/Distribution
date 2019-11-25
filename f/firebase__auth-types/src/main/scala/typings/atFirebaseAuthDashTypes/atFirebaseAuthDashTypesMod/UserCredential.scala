@@ -20,10 +20,10 @@ object UserCredential {
     user: User = null
   ): UserCredential = {
     val __obj = js.Dynamic.literal()
-    if (additionalUserInfo != null) __obj.updateDynamic("additionalUserInfo")(additionalUserInfo)
-    if (credential != null) __obj.updateDynamic("credential")(credential)
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (additionalUserInfo != null) __obj.updateDynamic("additionalUserInfo")(additionalUserInfo.asInstanceOf[js.Any])
+    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserCredential]
   }
 }

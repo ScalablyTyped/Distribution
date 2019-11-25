@@ -12,7 +12,7 @@ trait LocaleProviderProps extends js.Object {
 object LocaleProviderProps {
   @scala.inline
   def apply(locale: Anon_DatePicker): LocaleProviderProps = {
-    val __obj = js.Dynamic.literal(locale = locale)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocaleProviderProps]
   }

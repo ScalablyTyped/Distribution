@@ -44,14 +44,14 @@ object Cluster {
     statusHistory: js.Array[ClusterStatus] = null
   ): Cluster = {
     val __obj = js.Dynamic.literal()
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName)
-    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory)
+    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
+    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cluster]
   }
 }

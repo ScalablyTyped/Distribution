@@ -15,8 +15,8 @@ object Anon_ReadPreferenceSession {
   @scala.inline
   def apply(readPreference: ReadPreferenceOrMode = null, session: ClientSession = null): Anon_ReadPreferenceSession = {
     val __obj = js.Dynamic.literal()
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ReadPreferenceSession]
   }
 }

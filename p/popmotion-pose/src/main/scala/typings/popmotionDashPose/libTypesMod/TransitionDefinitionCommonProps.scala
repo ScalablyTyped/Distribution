@@ -23,7 +23,7 @@ object TransitionDefinitionCommonProps {
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionDefinitionCommonProps]
   }
 }

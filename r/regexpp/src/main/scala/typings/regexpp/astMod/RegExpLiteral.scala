@@ -26,8 +26,8 @@ object RegExpLiteral {
     start: Double,
     `type`: typings.regexpp.regexppStrings.RegExpLiteral
   ): RegExpLiteral = {
-    val __obj = js.Dynamic.literal(end = end, flags = flags, parent = parent, pattern = pattern, raw = raw, start = start)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegExpLiteral]
   }
 }

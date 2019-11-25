@@ -21,8 +21,8 @@ object Anon_Groupname {
     timestamp: Double,
     `type`: String
   ): Anon_Groupname = {
-    val __obj = js.Dynamic.literal(group_name = group_name, image = image, location = location, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(group_name = group_name.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Groupname]
   }
 }

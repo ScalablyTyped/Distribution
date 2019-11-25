@@ -27,11 +27,11 @@ object SwitchOptions {
   ): SwitchOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchOptions]
   }

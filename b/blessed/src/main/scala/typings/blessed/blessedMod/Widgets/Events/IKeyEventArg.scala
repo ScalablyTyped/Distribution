@@ -16,7 +16,7 @@ trait IKeyEventArg extends js.Object {
 object IKeyEventArg {
   @scala.inline
   def apply(ctrl: Boolean, full: String, meta: Boolean, name: String, sequence: String, shift: Boolean): IKeyEventArg = {
-    val __obj = js.Dynamic.literal(ctrl = ctrl, full = full, meta = meta, name = name, sequence = sequence, shift = shift)
+    val __obj = js.Dynamic.literal(ctrl = ctrl.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IKeyEventArg]
   }

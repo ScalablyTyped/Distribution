@@ -13,7 +13,7 @@ object TableColumnProperties {
   @scala.inline
   def apply(columnWidth: Dimension = null): TableColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth)
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumnProperties]
   }
 }

@@ -13,8 +13,8 @@ object ClaimMatchInfoTotalMatch {
   @scala.inline
   def apply(referenceDurationSecs: String = null, userVideoDurationSecs: String = null): ClaimMatchInfoTotalMatch = {
     val __obj = js.Dynamic.literal()
-    if (referenceDurationSecs != null) __obj.updateDynamic("referenceDurationSecs")(referenceDurationSecs)
-    if (userVideoDurationSecs != null) __obj.updateDynamic("userVideoDurationSecs")(userVideoDurationSecs)
+    if (referenceDurationSecs != null) __obj.updateDynamic("referenceDurationSecs")(referenceDurationSecs.asInstanceOf[js.Any])
+    if (userVideoDurationSecs != null) __obj.updateDynamic("userVideoDurationSecs")(userVideoDurationSecs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimMatchInfoTotalMatch]
   }
 }

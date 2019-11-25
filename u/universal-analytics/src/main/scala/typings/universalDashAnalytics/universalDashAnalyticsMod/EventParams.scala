@@ -27,13 +27,13 @@ object EventParams {
     p: String = null
   ): EventParams = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dp != null) __obj.updateDynamic("dp")(dp)
-    if (ea != null) __obj.updateDynamic("ea")(ea)
-    if (ec != null) __obj.updateDynamic("ec")(ec)
-    if (el != null) __obj.updateDynamic("el")(el)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dp != null) __obj.updateDynamic("dp")(dp.asInstanceOf[js.Any])
+    if (ea != null) __obj.updateDynamic("ea")(ea.asInstanceOf[js.Any])
+    if (ec != null) __obj.updateDynamic("ec")(ec.asInstanceOf[js.Any])
+    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
     if (ev != null) __obj.updateDynamic("ev")(ev.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p)
+    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventParams]
   }
 }

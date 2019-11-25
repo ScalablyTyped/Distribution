@@ -26,9 +26,9 @@ object EntryData {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryData]
   }
 }

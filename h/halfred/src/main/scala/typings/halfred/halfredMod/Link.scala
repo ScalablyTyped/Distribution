@@ -108,14 +108,14 @@ object Link {
     title: String = null,
     `type`: String = null
   ): Link = {
-    val __obj = js.Dynamic.literal(href = href)
-    if (deprecation != null) __obj.updateDynamic("deprecation")(deprecation)
-    if (hreflang != null) __obj.updateDynamic("hreflang")(hreflang)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (!js.isUndefined(templated)) __obj.updateDynamic("templated")(templated)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    if (deprecation != null) __obj.updateDynamic("deprecation")(deprecation.asInstanceOf[js.Any])
+    if (hreflang != null) __obj.updateDynamic("hreflang")(hreflang.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (!js.isUndefined(templated)) __obj.updateDynamic("templated")(templated.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Link]
   }
 }

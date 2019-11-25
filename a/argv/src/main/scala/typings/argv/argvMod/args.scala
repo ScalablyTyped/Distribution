@@ -13,7 +13,7 @@ trait args extends js.Object {
 object args {
   @scala.inline
   def apply(options: StringDictionary[js.Any], targets: js.Array[String]): args = {
-    val __obj = js.Dynamic.literal(options = options, targets = targets)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[args]
   }

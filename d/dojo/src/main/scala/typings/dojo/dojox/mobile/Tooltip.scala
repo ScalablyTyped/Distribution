@@ -1,7 +1,5 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.style
 import typings.std.Event
@@ -50,7 +48,5 @@ class Tooltip () extends _WidgetBase {
     * @param positions Ordered list of positions to try matching up.before-centered: places drop down before the aroundNodeafter-centered: places drop down after the aroundNodeabove-centered: drop down goes above aroundNodebelow-centered: drop down goes below aroundNode
     */
   def show(aroundNode: HTMLElement, positions: js.Array[_]): js.Any = js.native
-  @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
 }
 

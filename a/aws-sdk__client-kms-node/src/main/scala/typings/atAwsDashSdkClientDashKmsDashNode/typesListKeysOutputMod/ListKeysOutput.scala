@@ -35,10 +35,10 @@ object ListKeysOutput {
     NextMarker: String = null,
     Truncated: js.UndefOr[Boolean] = js.undefined
   ): ListKeysOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Keys != null) __obj.updateDynamic("Keys")(Keys)
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
-    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Keys != null) __obj.updateDynamic("Keys")(Keys.asInstanceOf[js.Any])
+    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListKeysOutput]
   }
 }

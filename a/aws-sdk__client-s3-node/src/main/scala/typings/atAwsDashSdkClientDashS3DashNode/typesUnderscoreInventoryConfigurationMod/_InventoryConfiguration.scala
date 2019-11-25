@@ -69,8 +69,8 @@ object _InventoryConfiguration {
       Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String
     ]) = null
   ): _InventoryConfiguration = {
-    val __obj = js.Dynamic.literal(Destination = Destination, Id = Id, IncludedObjectVersions = IncludedObjectVersions.asInstanceOf[js.Any], IsEnabled = IsEnabled, Schedule = Schedule)
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter)
+    val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], IncludedObjectVersions = IncludedObjectVersions.asInstanceOf[js.Any], IsEnabled = IsEnabled.asInstanceOf[js.Any], Schedule = Schedule.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     if (OptionalFields != null) __obj.updateDynamic("OptionalFields")(OptionalFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[_InventoryConfiguration]
   }

@@ -20,9 +20,9 @@ object TableProps {
     visibleRows: Int | Double = null
   ): TableProps = {
     val __obj = js.Dynamic.literal()
-    if (NoResults != null) __obj.updateDynamic("NoResults")(NoResults)
-    if (TableBody != null) __obj.updateDynamic("TableBody")(TableBody)
-    if (TableHeading != null) __obj.updateDynamic("TableHeading")(TableHeading)
+    if (NoResults != null) __obj.updateDynamic("NoResults")(NoResults.asInstanceOf[js.Any])
+    if (TableBody != null) __obj.updateDynamic("TableBody")(TableBody.asInstanceOf[js.Any])
+    if (TableHeading != null) __obj.updateDynamic("TableHeading")(TableHeading.asInstanceOf[js.Any])
     if (visibleRows != null) __obj.updateDynamic("visibleRows")(visibleRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProps]
   }

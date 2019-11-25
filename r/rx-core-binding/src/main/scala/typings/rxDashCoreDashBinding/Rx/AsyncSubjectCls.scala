@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Rx.AsyncSubject")
 @js.native
-class AsyncSubjectCls[T] () extends AsyncSubject[T] {
+class AsyncSubjectCls[T] () extends ISubject[T] {
   /* CompleteClass */
   override def checked(): Observer[_] = js.native
   /* CompleteClass */

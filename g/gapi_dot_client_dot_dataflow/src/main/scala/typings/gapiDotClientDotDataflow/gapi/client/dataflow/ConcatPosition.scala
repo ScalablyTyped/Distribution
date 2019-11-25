@@ -16,7 +16,7 @@ object ConcatPosition {
   def apply(index: Int | Double = null, position: Position = null): ConcatPosition = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConcatPosition]
   }
 }

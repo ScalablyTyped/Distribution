@@ -14,8 +14,8 @@ trait IPnpObjectUpdate extends js.Object {
 object IPnpObjectUpdate {
   @scala.inline
   def apply(id: String, properties: IMapView[String, _], `type`: PnpObjectType): IPnpObjectUpdate = {
-    val __obj = js.Dynamic.literal(id = id, properties = properties)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPnpObjectUpdate]
   }
 }

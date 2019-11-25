@@ -14,9 +14,9 @@ object ChatRenderAttachmentsSender {
   @scala.inline
   def apply(iconUrl: String = null, id: js.Any = null, name: String = null): ChatRenderAttachmentsSender = {
     val __obj = js.Dynamic.literal()
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRenderAttachmentsSender]
   }
 }

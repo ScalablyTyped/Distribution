@@ -15,8 +15,8 @@ object Anon_CompactIsCollapsed {
   @scala.inline
   def apply(compact: js.UndefOr[Boolean] = js.undefined, isCollapsed: js.UndefOr[Boolean] = js.undefined): Anon_CompactIsCollapsed = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed)
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompactIsCollapsed]
   }
 }

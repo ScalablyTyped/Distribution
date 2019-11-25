@@ -19,7 +19,7 @@ object WorkerHealthReportResponse {
   @scala.inline
   def apply(reportInterval: String = null): WorkerHealthReportResponse = {
     val __obj = js.Dynamic.literal()
-    if (reportInterval != null) __obj.updateDynamic("reportInterval")(reportInterval)
+    if (reportInterval != null) __obj.updateDynamic("reportInterval")(reportInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerHealthReportResponse]
   }
 }

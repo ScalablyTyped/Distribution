@@ -30,7 +30,7 @@ object Storage {
     saveValue: (String, js.Any) => Unit,
     savedKeys: js.Array[String]
   ): Storage = {
-    val __obj = js.Dynamic.literal(clearSavedKeys = js.Any.fromFunction0(clearSavedKeys), loadSavedKeys = js.Any.fromFunction0(loadSavedKeys), loadValue = js.Any.fromFunction2(loadValue), prefix = prefix, resetAll = js.Any.fromFunction0(resetAll), rootWindow = rootWindow, saveSavedKeys = js.Any.fromFunction0(saveSavedKeys), saveValue = js.Any.fromFunction2(saveValue), savedKeys = savedKeys)
+    val __obj = js.Dynamic.literal(clearSavedKeys = js.Any.fromFunction0(clearSavedKeys), loadSavedKeys = js.Any.fromFunction0(loadSavedKeys), loadValue = js.Any.fromFunction2(loadValue), prefix = prefix.asInstanceOf[js.Any], resetAll = js.Any.fromFunction0(resetAll), rootWindow = rootWindow.asInstanceOf[js.Any], saveSavedKeys = js.Any.fromFunction0(saveSavedKeys), saveValue = js.Any.fromFunction2(saveValue), savedKeys = savedKeys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Storage]
   }

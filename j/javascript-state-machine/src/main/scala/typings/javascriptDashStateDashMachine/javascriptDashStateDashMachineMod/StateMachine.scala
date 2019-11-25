@@ -1,6 +1,5 @@
 package typings.javascriptDashStateDashMachine.javascriptDashStateDashMachineMod
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +34,7 @@ trait StateMachine extends js.Object {
     args: js.UndefOr[js.Array[_]],
     errorCode: js.UndefOr[Double],
     errorMessage: js.UndefOr[String],
-    ex: js.UndefOr[Error]
+    ex: js.UndefOr[typings.std.Error]
   ): Unit = js.native
   def is(state: String): Boolean = js.native
   def isFinished(state: String): Boolean = js.native

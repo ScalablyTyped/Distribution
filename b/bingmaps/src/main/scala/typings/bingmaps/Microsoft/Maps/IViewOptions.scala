@@ -42,12 +42,12 @@ object IViewOptions {
     zoom: Int | Double = null
   ): IViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (centerOffset != null) __obj.updateDynamic("centerOffset")(centerOffset)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (centerOffset != null) __obj.updateDynamic("centerOffset")(centerOffset.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (labelOverlay != null) __obj.updateDynamic("labelOverlay")(labelOverlay)
-    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId)
+    if (labelOverlay != null) __obj.updateDynamic("labelOverlay")(labelOverlay.asInstanceOf[js.Any])
+    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])

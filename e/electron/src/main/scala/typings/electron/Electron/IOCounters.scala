@@ -42,7 +42,7 @@ object IOCounters {
     writeOperationCount: Double,
     writeTransferCount: Double
   ): IOCounters = {
-    val __obj = js.Dynamic.literal(otherOperationCount = otherOperationCount, otherTransferCount = otherTransferCount, readOperationCount = readOperationCount, readTransferCount = readTransferCount, writeOperationCount = writeOperationCount, writeTransferCount = writeTransferCount)
+    val __obj = js.Dynamic.literal(otherOperationCount = otherOperationCount.asInstanceOf[js.Any], otherTransferCount = otherTransferCount.asInstanceOf[js.Any], readOperationCount = readOperationCount.asInstanceOf[js.Any], readTransferCount = readTransferCount.asInstanceOf[js.Any], writeOperationCount = writeOperationCount.asInstanceOf[js.Any], writeTransferCount = writeTransferCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOCounters]
   }

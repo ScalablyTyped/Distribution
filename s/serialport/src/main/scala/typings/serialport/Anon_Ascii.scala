@@ -27,7 +27,7 @@ object Anon_Ascii {
   ): Anon_Ascii = {
     val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDelimiter)) __obj.updateDynamic("includeDelimiter")(includeDelimiter)
+    if (!js.isUndefined(includeDelimiter)) __obj.updateDynamic("includeDelimiter")(includeDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ascii]
   }
 }

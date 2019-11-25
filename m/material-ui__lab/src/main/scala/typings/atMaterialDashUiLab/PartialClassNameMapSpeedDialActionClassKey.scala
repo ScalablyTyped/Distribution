@@ -25,12 +25,12 @@ object PartialClassNameMapSpeedDialActionClassKey {
     tooltipPlacementLeft: String = null
   ): PartialClassNameMapSpeedDialActionClassKey = {
     val __obj = js.Dynamic.literal()
-    if (fab != null) __obj.updateDynamic("fab")(fab)
-    if (fabClosed != null) __obj.updateDynamic("fabClosed")(fabClosed)
-    if (staticTooltip != null) __obj.updateDynamic("staticTooltip")(staticTooltip)
-    if (staticTooltipClosed != null) __obj.updateDynamic("staticTooltipClosed")(staticTooltipClosed)
-    if (staticTooltipLabel != null) __obj.updateDynamic("staticTooltipLabel")(staticTooltipLabel)
-    if (tooltipPlacementLeft != null) __obj.updateDynamic("tooltipPlacementLeft")(tooltipPlacementLeft)
+    if (fab != null) __obj.updateDynamic("fab")(fab.asInstanceOf[js.Any])
+    if (fabClosed != null) __obj.updateDynamic("fabClosed")(fabClosed.asInstanceOf[js.Any])
+    if (staticTooltip != null) __obj.updateDynamic("staticTooltip")(staticTooltip.asInstanceOf[js.Any])
+    if (staticTooltipClosed != null) __obj.updateDynamic("staticTooltipClosed")(staticTooltipClosed.asInstanceOf[js.Any])
+    if (staticTooltipLabel != null) __obj.updateDynamic("staticTooltipLabel")(staticTooltipLabel.asInstanceOf[js.Any])
+    if (tooltipPlacementLeft != null) __obj.updateDynamic("tooltipPlacementLeft")(tooltipPlacementLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapSpeedDialActionClassKey]
   }
 }

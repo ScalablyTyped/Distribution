@@ -12,7 +12,7 @@ trait MentionWithIndices extends EntityWithIndices {
 object MentionWithIndices {
   @scala.inline
   def apply(indices: js.Tuple2[Double, Double], screenName: String): MentionWithIndices = {
-    val __obj = js.Dynamic.literal(indices = indices, screenName = screenName)
+    val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], screenName = screenName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MentionWithIndices]
   }

@@ -47,8 +47,8 @@ object Anon_Alternatives {
     string: StringSchema,
     symbol: SymbolSchema
   ): Anon_Alternatives = {
-    val __obj = js.Dynamic.literal(alternatives = alternatives, any = any, array = array, binary = binary, boolean = boolean, date = date, function = function, link = link, number = number, string = string, symbol = symbol)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], any = any.asInstanceOf[js.Any], array = array.asInstanceOf[js.Any], binary = binary.asInstanceOf[js.Any], boolean = boolean.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alternatives]
   }
 }

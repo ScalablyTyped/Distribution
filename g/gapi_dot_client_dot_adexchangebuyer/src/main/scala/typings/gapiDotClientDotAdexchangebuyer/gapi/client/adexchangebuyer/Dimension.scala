@@ -13,8 +13,8 @@ object Dimension {
   @scala.inline
   def apply(dimensionType: String = null, dimensionValues: js.Array[DimensionDimensionValue] = null): Dimension = {
     val __obj = js.Dynamic.literal()
-    if (dimensionType != null) __obj.updateDynamic("dimensionType")(dimensionType)
-    if (dimensionValues != null) __obj.updateDynamic("dimensionValues")(dimensionValues)
+    if (dimensionType != null) __obj.updateDynamic("dimensionType")(dimensionType.asInstanceOf[js.Any])
+    if (dimensionValues != null) __obj.updateDynamic("dimensionValues")(dimensionValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimension]
   }
 }

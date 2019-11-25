@@ -12,7 +12,7 @@ trait Anon_KeyQuoted extends js.Object {
 object Anon_KeyQuoted {
   @scala.inline
   def apply(key: String, quoted: Boolean): Anon_KeyQuoted = {
-    val __obj = js.Dynamic.literal(key = key, quoted = quoted)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_KeyQuoted]
   }

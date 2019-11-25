@@ -29,12 +29,12 @@ object MagellanOptions {
     throttle_delay: Int | Double = null
   ): MagellanOptions = {
     val __obj = js.Dynamic.literal()
-    if (active_class != null) __obj.updateDynamic("active_class")(active_class)
+    if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
     if (destination_threshold != null) __obj.updateDynamic("destination_threshold")(destination_threshold.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (fixed_top != null) __obj.updateDynamic("fixed_top")(fixed_top.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset_by_height)) __obj.updateDynamic("offset_by_height")(offset_by_height)
+    if (!js.isUndefined(offset_by_height)) __obj.updateDynamic("offset_by_height")(offset_by_height.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (throttle_delay != null) __obj.updateDynamic("throttle_delay")(throttle_delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[MagellanOptions]

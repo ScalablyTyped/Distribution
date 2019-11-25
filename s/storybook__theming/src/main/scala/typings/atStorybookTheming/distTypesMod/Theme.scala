@@ -43,8 +43,8 @@ object Theme {
     typography: Typography,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): Theme = {
-    val __obj = js.Dynamic.literal(animation = animation, appBorderColor = appBorderColor, appBorderRadius = appBorderRadius, background = background, barBg = barBg, barSelectedColor = barSelectedColor, barTextColor = barTextColor, brand = brand, code = code, color = color, easing = easing, input = input, layoutMargin = layoutMargin, typography = typography)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], appBorderColor = appBorderColor.asInstanceOf[js.Any], appBorderRadius = appBorderRadius.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], barBg = barBg.asInstanceOf[js.Any], barSelectedColor = barSelectedColor.asInstanceOf[js.Any], barTextColor = barTextColor.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], layoutMargin = layoutMargin.asInstanceOf[js.Any], typography = typography.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Theme]
   }
 }

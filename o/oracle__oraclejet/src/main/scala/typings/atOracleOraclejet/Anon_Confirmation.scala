@@ -15,10 +15,10 @@ object Anon_Confirmation {
   @scala.inline
   def apply(confirmation: String = null, error: String = null, info: String = null, warning: String = null): Anon_Confirmation = {
     val __obj = js.Dynamic.literal()
-    if (confirmation != null) __obj.updateDynamic("confirmation")(confirmation)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (confirmation != null) __obj.updateDynamic("confirmation")(confirmation.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Confirmation]
   }
 }

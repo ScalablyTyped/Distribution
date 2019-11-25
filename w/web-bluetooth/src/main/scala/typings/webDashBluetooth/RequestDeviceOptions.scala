@@ -4,23 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RequestDeviceOptions extends js.Object {
-  var acceptAllDevices: js.UndefOr[Boolean] = js.undefined
-  var filters: js.UndefOr[js.Array[BluetoothRequestDeviceFilter]] = js.undefined
-  var optionalServices: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.webDashBluetooth.Anon_Filters
+  - typings.webDashBluetooth.Anon_AcceptAllDevices
+*/
+trait RequestDeviceOptions extends js.Object
 
 object RequestDeviceOptions {
   @scala.inline
-  def apply(
-    acceptAllDevices: js.UndefOr[Boolean] = js.undefined,
-    filters: js.Array[BluetoothRequestDeviceFilter] = null,
+  def Anon_Filters(
+    filters: js.Array[BluetoothRequestDeviceFilter],
     optionalServices: js.Array[BluetoothServiceUUID] = null
   ): RequestDeviceOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptAllDevices)) __obj.updateDynamic("acceptAllDevices")(acceptAllDevices)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (optionalServices != null) __obj.updateDynamic("optionalServices")(optionalServices)
+    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
+    if (optionalServices != null) __obj.updateDynamic("optionalServices")(optionalServices.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestDeviceOptions]
+  }
+  @scala.inline
+  def Anon_AcceptAllDevices(acceptAllDevices: Boolean, optionalServices: js.Array[BluetoothServiceUUID] = null): RequestDeviceOptions = {
+    val __obj = js.Dynamic.literal(acceptAllDevices = acceptAllDevices.asInstanceOf[js.Any])
+    if (optionalServices != null) __obj.updateDynamic("optionalServices")(optionalServices.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDeviceOptions]
   }
 }

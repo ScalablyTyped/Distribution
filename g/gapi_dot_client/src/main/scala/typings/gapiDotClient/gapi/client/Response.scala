@@ -29,10 +29,10 @@ object Response {
     status: Int | Double = null,
     statusText: String = null
   ): Response[T] = {
-    val __obj = js.Dynamic.literal(body = body, result = result.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[T]]
   }
 }

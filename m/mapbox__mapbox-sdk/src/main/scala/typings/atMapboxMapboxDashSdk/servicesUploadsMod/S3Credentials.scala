@@ -23,7 +23,7 @@ object S3Credentials {
     sessionToken: String,
     url: String
   ): S3Credentials = {
-    val __obj = js.Dynamic.literal(accessKeyId = accessKeyId, bucket = bucket, key = key, secretAccessKey = secretAccessKey, sessionToken = sessionToken, url = url)
+    val __obj = js.Dynamic.literal(accessKeyId = accessKeyId.asInstanceOf[js.Any], bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], secretAccessKey = secretAccessKey.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[S3Credentials]
   }

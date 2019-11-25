@@ -12,7 +12,7 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(prettyPhoto: moduleJQueryStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal(prettyPhoto = prettyPhoto)
+    val __obj = js.Dynamic.literal(prettyPhoto = prettyPhoto.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JQueryStatic]
   }

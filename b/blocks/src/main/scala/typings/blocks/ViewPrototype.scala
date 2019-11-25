@@ -52,15 +52,15 @@ object ViewPrototype {
     routed: js.Function = null
   ): ViewPrototype = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (isActive != null) __obj.updateDynamic("isActive")(js.Any.fromFunction0(isActive))
-    if (navigateTo != null) __obj.updateDynamic("navigateTo")(navigateTo)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (parentView != null) __obj.updateDynamic("parentView")(parentView)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (navigateTo != null) __obj.updateDynamic("navigateTo")(navigateTo.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (parentView != null) __obj.updateDynamic("parentView")(parentView.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
     if (route != null) __obj.updateDynamic("route")(js.Any.fromFunction1(route))
-    if (routed != null) __obj.updateDynamic("routed")(routed)
+    if (routed != null) __obj.updateDynamic("routed")(routed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPrototype]
   }
 }

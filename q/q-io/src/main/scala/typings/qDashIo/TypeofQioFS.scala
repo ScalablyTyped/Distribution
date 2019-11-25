@@ -63,7 +63,7 @@ trait TypeofQioFS extends js.Object {
   def remove(path: String): Promise[Unit] = js.native
   def removeTree(path: String): Promise[Unit] = js.native
   def rename(source: String, target: String): Promise[Unit] = js.native
-  def reroot(path: String): /* import warning: ImportType.apply Failed type conversion: typeof QioFS */ js.Any = js.native
+  def reroot(path: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof QioFS */ js.Any = js.native
   def resolve(path: String*): String = js.native
   def resolve(paths: js.Array[String]): String = js.native
   def root(path: String): String = js.native

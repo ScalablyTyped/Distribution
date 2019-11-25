@@ -12,8 +12,8 @@ trait Query extends js.Object {
 object Query {
   @scala.inline
   def apply(args: js.Array[_], `type`: String): Query = {
-    val __obj = js.Dynamic.literal(args = args)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
 }

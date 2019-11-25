@@ -12,8 +12,8 @@ trait Anon_Read extends js.Object {
 object Anon_Read {
   @scala.inline
   def apply(static: Boolean, read: js.Any = null): Anon_Read = {
-    val __obj = js.Dynamic.literal(static = static)
-    if (read != null) __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(static = static.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Read]
   }
 }

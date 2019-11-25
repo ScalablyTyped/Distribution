@@ -25,9 +25,9 @@ object InvitedUserMessageInfo {
     messageLanguage: String = null
   ): InvitedUserMessageInfo = {
     val __obj = js.Dynamic.literal()
-    if (ccRecipients != null) __obj.updateDynamic("ccRecipients")(ccRecipients)
-    if (customizedMessageBody != null) __obj.updateDynamic("customizedMessageBody")(customizedMessageBody)
-    if (messageLanguage != null) __obj.updateDynamic("messageLanguage")(messageLanguage)
+    if (ccRecipients != null) __obj.updateDynamic("ccRecipients")(ccRecipients.asInstanceOf[js.Any])
+    if (customizedMessageBody != null) __obj.updateDynamic("customizedMessageBody")(customizedMessageBody.asInstanceOf[js.Any])
+    if (messageLanguage != null) __obj.updateDynamic("messageLanguage")(messageLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvitedUserMessageInfo]
   }
 }

@@ -12,7 +12,7 @@ trait SongHeader extends js.Object {
 object SongHeader {
   @scala.inline
   def apply(subtitle: String, title: String): SongHeader = {
-    val __obj = js.Dynamic.literal(subtitle = subtitle, title = title)
+    val __obj = js.Dynamic.literal(subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SongHeader]
   }

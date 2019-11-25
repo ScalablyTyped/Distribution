@@ -11,7 +11,7 @@ trait AppsCreateFromManifestParams extends js.Object {
 object AppsCreateFromManifestParams {
   @scala.inline
   def apply(code: String): AppsCreateFromManifestParams = {
-    val __obj = js.Dynamic.literal(code = code)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsCreateFromManifestParams]
   }

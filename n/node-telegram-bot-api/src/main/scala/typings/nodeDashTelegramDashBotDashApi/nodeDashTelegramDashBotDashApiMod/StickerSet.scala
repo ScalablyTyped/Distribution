@@ -14,7 +14,7 @@ trait StickerSet extends js.Object {
 object StickerSet {
   @scala.inline
   def apply(contains_masks: Boolean, name: String, stickers: js.Array[Sticker], title: String): StickerSet = {
-    val __obj = js.Dynamic.literal(contains_masks = contains_masks, name = name, stickers = stickers, title = title)
+    val __obj = js.Dynamic.literal(contains_masks = contains_masks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stickers = stickers.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StickerSet]
   }

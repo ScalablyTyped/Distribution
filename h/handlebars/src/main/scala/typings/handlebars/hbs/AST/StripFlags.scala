@@ -12,7 +12,7 @@ trait StripFlags extends js.Object {
 object StripFlags {
   @scala.inline
   def apply(close: Boolean, open: Boolean): StripFlags = {
-    val __obj = js.Dynamic.literal(close = close, open = open)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StripFlags]
   }

@@ -38,10 +38,10 @@ object OutboundMessageDetails {
     Tag: String = null,
     TextBody: String = null
   ): OutboundMessageDetails = {
-    val __obj = js.Dynamic.literal(Attachments = Attachments, Bcc = Bcc, Body = Body, Cc = Cc, From = From, MessageEvents = MessageEvents, MessageID = MessageID, MessageStream = MessageStream, Metadata = Metadata, ReceivedAt = ReceivedAt, Recipients = Recipients, Status = Status, Subject = Subject, To = To, TrackLinks = TrackLinks, TrackOpens = TrackOpens)
-    if (HtmlBody != null) __obj.updateDynamic("HtmlBody")(HtmlBody)
-    if (Tag != null) __obj.updateDynamic("Tag")(Tag)
-    if (TextBody != null) __obj.updateDynamic("TextBody")(TextBody)
+    val __obj = js.Dynamic.literal(Attachments = Attachments.asInstanceOf[js.Any], Bcc = Bcc.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any], Cc = Cc.asInstanceOf[js.Any], From = From.asInstanceOf[js.Any], MessageEvents = MessageEvents.asInstanceOf[js.Any], MessageID = MessageID.asInstanceOf[js.Any], MessageStream = MessageStream.asInstanceOf[js.Any], Metadata = Metadata.asInstanceOf[js.Any], ReceivedAt = ReceivedAt.asInstanceOf[js.Any], Recipients = Recipients.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any], TrackLinks = TrackLinks.asInstanceOf[js.Any], TrackOpens = TrackOpens.asInstanceOf[js.Any])
+    if (HtmlBody != null) __obj.updateDynamic("HtmlBody")(HtmlBody.asInstanceOf[js.Any])
+    if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
+    if (TextBody != null) __obj.updateDynamic("TextBody")(TextBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutboundMessageDetails]
   }
 }

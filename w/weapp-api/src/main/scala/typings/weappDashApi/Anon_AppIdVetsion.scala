@@ -14,7 +14,7 @@ trait Anon_AppIdVetsion extends js.Object {
 object Anon_AppIdVetsion {
   @scala.inline
   def apply(appId: String, vetsion: String): Anon_AppIdVetsion = {
-    val __obj = js.Dynamic.literal(appId = appId, vetsion = vetsion)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], vetsion = vetsion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AppIdVetsion]
   }

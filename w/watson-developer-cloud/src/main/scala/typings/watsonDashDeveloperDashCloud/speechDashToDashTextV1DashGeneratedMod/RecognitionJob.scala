@@ -36,12 +36,12 @@ object RecognitionJob {
     user_token: String = null,
     warnings: js.Array[String] = null
   ): RecognitionJob = {
-    val __obj = js.Dynamic.literal(created = created, id = id, status = status)
-    if (results != null) __obj.updateDynamic("results")(results)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (user_token != null) __obj.updateDynamic("user_token")(user_token)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (user_token != null) __obj.updateDynamic("user_token")(user_token.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognitionJob]
   }
 }

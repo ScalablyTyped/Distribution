@@ -15,7 +15,7 @@ object AddCardRes {
   @scala.inline
   def apply(cardList: js.Array[CardData] = null): AddCardRes = {
     val __obj = js.Dynamic.literal()
-    if (cardList != null) __obj.updateDynamic("cardList")(cardList)
+    if (cardList != null) __obj.updateDynamic("cardList")(cardList.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCardRes]
   }
 }

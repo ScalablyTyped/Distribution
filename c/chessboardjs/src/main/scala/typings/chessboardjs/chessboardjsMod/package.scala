@@ -9,7 +9,7 @@ package object chessboardjsMod {
   import typings.chessboardjs.chessboardjsStrings.flip
   import typings.chessboardjs.chessboardjsStrings.start
 
-  type BoardPositionType = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type BoardPositionType = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in chessboardjs.chessboardjs.Square ]:? chessboardjs.chessboardjs.Piece}
     */ typings.chessboardjs.chessboardjsStrings.BoardPositionType with js.Any
   type Callback = js.Function0[Unit]

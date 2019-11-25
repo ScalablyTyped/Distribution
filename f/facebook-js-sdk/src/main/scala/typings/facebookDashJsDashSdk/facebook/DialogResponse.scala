@@ -14,7 +14,7 @@ object DialogResponse {
   def apply(error_code: Int | Double = null, error_message: String = null): DialogResponse = {
     val __obj = js.Dynamic.literal()
     if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogResponse]
   }
 }

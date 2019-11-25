@@ -21,9 +21,9 @@ object DatabaseCreateResponse {
   @scala.inline
   def apply(error: String = null, ok: js.UndefOr[Boolean] = js.undefined, reason: String = null): DatabaseCreateResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(ok)) __obj.updateDynamic("ok")(ok)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(ok)) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseCreateResponse]
   }
 }

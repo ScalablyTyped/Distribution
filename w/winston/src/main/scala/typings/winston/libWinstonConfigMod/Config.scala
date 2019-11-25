@@ -24,7 +24,7 @@ object Config {
     npm: Anon_ColorsLevels,
     syslog: Anon_ColorsLevelsSyslogConfigSetColors
   ): Config = {
-    val __obj = js.Dynamic.literal(addColors = js.Any.fromFunction1(addColors), allColors = allColors, cli = cli, npm = npm, syslog = syslog)
+    val __obj = js.Dynamic.literal(addColors = js.Any.fromFunction1(addColors), allColors = allColors.asInstanceOf[js.Any], cli = cli.asInstanceOf[js.Any], npm = npm.asInstanceOf[js.Any], syslog = syslog.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

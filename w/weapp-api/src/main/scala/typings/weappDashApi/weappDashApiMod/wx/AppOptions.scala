@@ -44,7 +44,7 @@ object AppOptions {
     onShow: /* options */ onShowOptions => Unit = null
   ): AppOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
     if (onLaunch != null) __obj.updateDynamic("onLaunch")(js.Any.fromFunction1(onLaunch))

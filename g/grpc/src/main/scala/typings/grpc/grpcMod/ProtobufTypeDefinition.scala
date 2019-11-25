@@ -14,8 +14,8 @@ trait ProtobufTypeDefinition extends js.Object {
 object ProtobufTypeDefinition {
   @scala.inline
   def apply(fileDescriptorProtos: js.Array[Buffer], format: String, `type`: js.Object): ProtobufTypeDefinition = {
-    val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos, format = format)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtobufTypeDefinition]
   }
 }

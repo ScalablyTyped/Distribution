@@ -60,10 +60,10 @@ object IEvent {
     `type`: String,
     account: String = null
   ): IEvent = {
-    val __obj = js.Dynamic.literal(api_version = api_version, created = created, data = data, id = id, livemode = livemode, pending_webhooks = pending_webhooks, request = request)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
-    if (account != null) __obj.updateDynamic("account")(account)
+    val __obj = js.Dynamic.literal(api_version = api_version.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], pending_webhooks = pending_webhooks.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }
 }

@@ -32,13 +32,13 @@ object FareInfo {
     `private`: js.UndefOr[Boolean] = js.undefined
   ): FareInfo = {
     val __obj = js.Dynamic.literal()
-    if (basisCode != null) __obj.updateDynamic("basisCode")(basisCode)
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    if (basisCode != null) __obj.updateDynamic("basisCode")(basisCode.asInstanceOf[js.Any])
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FareInfo]
   }
 }

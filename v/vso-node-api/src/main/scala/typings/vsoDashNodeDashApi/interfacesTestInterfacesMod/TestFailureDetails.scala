@@ -12,7 +12,7 @@ trait TestFailureDetails extends js.Object {
 object TestFailureDetails {
   @scala.inline
   def apply(count: Double, testResults: js.Array[TestCaseResultIdentifier]): TestFailureDetails = {
-    val __obj = js.Dynamic.literal(count = count, testResults = testResults)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], testResults = testResults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestFailureDetails]
   }

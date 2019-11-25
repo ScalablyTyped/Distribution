@@ -1,7 +1,6 @@
 package typings.asana.asanaMod.resources
 
 import typings.asana.asanaMod.resources.Attachments.Type
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,9 +26,9 @@ trait Attachments_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findById(attachment: Double): ^[Type] = js.native
-  def findById(attachment: Double, params: Params): ^[Type] = js.native
-  def findById(attachment: Double, params: Params, dispatchOptions: js.Any): ^[Type] = js.native
+  def findById(attachment: Double): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(attachment: Double, params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(attachment: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
   /**
     * * Returns the compact records for all attachments on the task.
     *   * @param {Number} task Globally unique identifier for the task.
@@ -41,11 +40,11 @@ trait Attachments_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findByTask(task: String): ^[ResourceList[Type]] = js.native
-  def findByTask(task: String, params: PaginationParams): ^[ResourceList[Type]] = js.native
-  def findByTask(task: String, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[Type]] = js.native
-  def findByTask(task: Double): ^[ResourceList[Type]] = js.native
-  def findByTask(task: Double, params: PaginationParams): ^[ResourceList[Type]] = js.native
-  def findByTask(task: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[Type]] = js.native
+  def findByTask(task: String): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: String, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: Double): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
 }
 

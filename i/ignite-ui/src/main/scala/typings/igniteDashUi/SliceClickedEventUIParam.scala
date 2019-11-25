@@ -27,10 +27,10 @@ object SliceClickedEventUIParam {
   @scala.inline
   def apply(index: js.Any = null, item: js.Any = null, owner: js.Any = null, selected: js.Any = null): SliceClickedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliceClickedEventUIParam]
   }
 }

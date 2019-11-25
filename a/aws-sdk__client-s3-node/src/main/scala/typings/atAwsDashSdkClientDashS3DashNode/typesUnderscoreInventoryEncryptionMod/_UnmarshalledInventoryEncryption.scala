@@ -23,8 +23,8 @@ object _UnmarshalledInventoryEncryption {
   @scala.inline
   def apply(SSEKMS: _UnmarshalledSSEKMS = null, SSES3: _UnmarshalledSSES3 = null): _UnmarshalledInventoryEncryption = {
     val __obj = js.Dynamic.literal()
-    if (SSEKMS != null) __obj.updateDynamic("SSEKMS")(SSEKMS)
-    if (SSES3 != null) __obj.updateDynamic("SSES3")(SSES3)
+    if (SSEKMS != null) __obj.updateDynamic("SSEKMS")(SSEKMS.asInstanceOf[js.Any])
+    if (SSES3 != null) __obj.updateDynamic("SSES3")(SSES3.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledInventoryEncryption]
   }
 }

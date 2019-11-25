@@ -19,8 +19,8 @@ object IDropdownConfig {
   @scala.inline
   def apply(appendToOpenClass: String = null, openClass: String = null): IDropdownConfig = {
     val __obj = js.Dynamic.literal()
-    if (appendToOpenClass != null) __obj.updateDynamic("appendToOpenClass")(appendToOpenClass)
-    if (openClass != null) __obj.updateDynamic("openClass")(openClass)
+    if (appendToOpenClass != null) __obj.updateDynamic("appendToOpenClass")(appendToOpenClass.asInstanceOf[js.Any])
+    if (openClass != null) __obj.updateDynamic("openClass")(openClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDropdownConfig]
   }
 }

@@ -1,15 +1,14 @@
 package typings.videoDotJs.distAltVideoDotCoreDotNovttMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.CloseButton
 import typings.videoDotJs.videoDotJsMod.videojs.CloseButtonOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("video.js/dist/alt/video.core.novtt", "CloseButton")
 @js.native
-class CloseButtonCls protected () extends CloseButton {
+class CloseButtonCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.CloseButton {
   /**
     * Creates an instance of the this class.
     *
@@ -19,7 +18,7 @@ class CloseButtonCls protected () extends CloseButton {
     * @param [options]
     *         The key/value store of player options.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: CloseButtonOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: CloseButtonOptions) = this()
 }
 

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AppendMode extends js.Object
 
+object AppendMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def segments: typings.std.stdStrings.segments = this.cast("segments")
+  @scala.inline
+  def sequence: typings.std.stdStrings.sequence = this.cast("sequence")
+}
+

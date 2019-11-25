@@ -12,7 +12,7 @@ trait Anon_DistributionDomainName extends js.Object {
 object Anon_DistributionDomainName {
   @scala.inline
   def apply(distributionDomainName: String, distributionId: String): Anon_DistributionDomainName = {
-    val __obj = js.Dynamic.literal(distributionDomainName = distributionDomainName, distributionId = distributionId)
+    val __obj = js.Dynamic.literal(distributionDomainName = distributionDomainName.asInstanceOf[js.Any], distributionId = distributionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DistributionDomainName]
   }

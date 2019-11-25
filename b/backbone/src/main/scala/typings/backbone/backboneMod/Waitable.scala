@@ -13,7 +13,7 @@ object Waitable {
   @scala.inline
   def apply(wait: js.UndefOr[Boolean] = js.undefined): Waitable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[Waitable]
   }
 }

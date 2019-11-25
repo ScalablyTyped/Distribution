@@ -14,7 +14,7 @@ trait Anon_IndexName extends js.Object {
 object Anon_IndexName {
   @scala.inline
   def apply(indexName: String, params: QueryParameters, query: String): Anon_IndexName = {
-    val __obj = js.Dynamic.literal(indexName = indexName, params = params, query = query)
+    val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IndexName]
   }

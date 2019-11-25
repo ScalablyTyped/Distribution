@@ -76,6 +76,35 @@ trait PlotMapPointEventsOptions extends js.Object {
   var update: js.UndefOr[PointUpdateCallbackFunction] = js.undefined
 }
 
+object PlotMapPointEventsOptions {
+  @scala.inline
+  def apply(
+    click: PointClickCallbackFunction = null,
+    drag: PointDragCallbackFunction = null,
+    dragStart: PointDragStartCallbackFunction = null,
+    drop: PointDropCallbackFunction = null,
+    mouseOut: PointMouseOutCallbackFunction = null,
+    mouseOver: PointMouseOverCallbackFunction = null,
+    remove: PointRemoveCallbackFunction = null,
+    select: PointSelectCallbackFunction = null,
+    unselect: PointUnselectCallbackFunction = null,
+    update: PointUpdateCallbackFunction = null
+  ): PlotMapPointEventsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (drag != null) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
+    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart.asInstanceOf[js.Any])
+    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
+    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut.asInstanceOf[js.Any])
+    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (unselect != null) __obj.updateDynamic("unselect")(unselect.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlotMapPointEventsOptions]
+  }
+}
+
 trait PlotMappointEventsOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Gantt) Fires after the series has finished its
@@ -129,35 +158,6 @@ trait PlotMappointEventsOptions extends js.Object {
   var show: js.UndefOr[SeriesShowCallbackFunction] = js.undefined
 }
 
-object PlotMapPointEventsOptions {
-  @scala.inline
-  def apply(
-    click: PointClickCallbackFunction = null,
-    drag: PointDragCallbackFunction = null,
-    dragStart: PointDragStartCallbackFunction = null,
-    drop: PointDropCallbackFunction = null,
-    mouseOut: PointMouseOutCallbackFunction = null,
-    mouseOver: PointMouseOverCallbackFunction = null,
-    remove: PointRemoveCallbackFunction = null,
-    select: PointSelectCallbackFunction = null,
-    unselect: PointUnselectCallbackFunction = null,
-    update: PointUpdateCallbackFunction = null
-  ): PlotMapPointEventsOptions = {
-    val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
-    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut)
-    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (unselect != null) __obj.updateDynamic("unselect")(unselect)
-    if (update != null) __obj.updateDynamic("update")(update)
-    __obj.asInstanceOf[PlotMapPointEventsOptions]
-  }
-}
-
 object PlotMappointEventsOptions {
   @scala.inline
   def apply(
@@ -171,14 +171,14 @@ object PlotMappointEventsOptions {
     show: SeriesShowCallbackFunction = null
   ): PlotMappointEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterAnimate != null) __obj.updateDynamic("afterAnimate")(afterAnimate)
-    if (checkboxClick != null) __obj.updateDynamic("checkboxClick")(checkboxClick)
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick)
-    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut)
-    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (afterAnimate != null) __obj.updateDynamic("afterAnimate")(afterAnimate.asInstanceOf[js.Any])
+    if (checkboxClick != null) __obj.updateDynamic("checkboxClick")(checkboxClick.asInstanceOf[js.Any])
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick.asInstanceOf[js.Any])
+    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut.asInstanceOf[js.Any])
+    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMappointEventsOptions]
   }
 }

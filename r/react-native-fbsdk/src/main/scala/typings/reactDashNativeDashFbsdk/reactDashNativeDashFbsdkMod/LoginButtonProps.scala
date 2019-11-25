@@ -57,14 +57,14 @@ object LoginButtonProps {
     tooltipBehaviorIOS: TooltipBehaviorIOS = null
   ): LoginButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (defaultAudience != null) __obj.updateDynamic("defaultAudience")(defaultAudience)
-    if (loginBehaviorAndroid != null) __obj.updateDynamic("loginBehaviorAndroid")(loginBehaviorAndroid)
-    if (loginBehaviorIOS != null) __obj.updateDynamic("loginBehaviorIOS")(loginBehaviorIOS)
+    if (defaultAudience != null) __obj.updateDynamic("defaultAudience")(defaultAudience.asInstanceOf[js.Any])
+    if (loginBehaviorAndroid != null) __obj.updateDynamic("loginBehaviorAndroid")(loginBehaviorAndroid.asInstanceOf[js.Any])
+    if (loginBehaviorIOS != null) __obj.updateDynamic("loginBehaviorIOS")(loginBehaviorIOS.asInstanceOf[js.Any])
     if (onLoginFinished != null) __obj.updateDynamic("onLoginFinished")(js.Any.fromFunction2(onLoginFinished))
     if (onLogoutFinished != null) __obj.updateDynamic("onLogoutFinished")(js.Any.fromFunction0(onLogoutFinished))
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tooltipBehaviorIOS != null) __obj.updateDynamic("tooltipBehaviorIOS")(tooltipBehaviorIOS)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tooltipBehaviorIOS != null) __obj.updateDynamic("tooltipBehaviorIOS")(tooltipBehaviorIOS.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginButtonProps]
   }
 }

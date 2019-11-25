@@ -29,7 +29,7 @@ object PageInfo {
     size: js.Array[Double],
     width: Double
   ): PageInfo = {
-    val __obj = js.Dynamic.literal(height = height, layout = layout, mediaBox = mediaBox, offsetX = offsetX, offsetY = offsetY, pageNumber = pageNumber, rotate = rotate, size = size, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], mediaBox = mediaBox.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageNumber = pageNumber.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageInfo]
   }

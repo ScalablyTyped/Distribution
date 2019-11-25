@@ -25,13 +25,13 @@ object PortInfo {
     serialNumber: String = null,
     vendorId: String = null
   ): PortInfo = {
-    val __obj = js.Dynamic.literal(comName = comName)
-    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
-    if (pnpId != null) __obj.updateDynamic("pnpId")(pnpId)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber)
-    if (vendorId != null) __obj.updateDynamic("vendorId")(vendorId)
+    val __obj = js.Dynamic.literal(comName = comName.asInstanceOf[js.Any])
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
+    if (pnpId != null) __obj.updateDynamic("pnpId")(pnpId.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
+    if (vendorId != null) __obj.updateDynamic("vendorId")(vendorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortInfo]
   }
 }

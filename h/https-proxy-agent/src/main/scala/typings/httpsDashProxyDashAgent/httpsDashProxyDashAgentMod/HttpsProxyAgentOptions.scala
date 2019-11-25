@@ -22,10 +22,10 @@ object HttpsProxyAgentOptions {
     headers: StringDictionary[String] = null,
     secureProxy: js.UndefOr[Boolean] = js.undefined
   ): HttpsProxyAgentOptions = {
-    val __obj = js.Dynamic.literal(host = host, port = port)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(secureProxy)) __obj.updateDynamic("secureProxy")(secureProxy)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(secureProxy)) __obj.updateDynamic("secureProxy")(secureProxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpsProxyAgentOptions]
   }
 }

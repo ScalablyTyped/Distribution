@@ -42,10 +42,10 @@ object PortalBasemapsSourceProperties {
   ): PortalBasemapsSourceProperties = {
     val __obj = js.Dynamic.literal()
     if (basemaps != null) __obj.updateDynamic("basemaps")(basemaps.asInstanceOf[js.Any])
-    if (filterFunction != null) __obj.updateDynamic("filterFunction")(filterFunction)
-    if (portal != null) __obj.updateDynamic("portal")(portal)
+    if (filterFunction != null) __obj.updateDynamic("filterFunction")(filterFunction.asInstanceOf[js.Any])
+    if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (updateBasemapsCallback != null) __obj.updateDynamic("updateBasemapsCallback")(updateBasemapsCallback)
+    if (updateBasemapsCallback != null) __obj.updateDynamic("updateBasemapsCallback")(updateBasemapsCallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalBasemapsSourceProperties]
   }
 }

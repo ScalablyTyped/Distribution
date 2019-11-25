@@ -29,13 +29,13 @@ object OracleDbConnectionConfig {
     password: String = null,
     requestTimeout: Int | Double = null
   ): OracleDbConnectionConfig = {
-    val __obj = js.Dynamic.literal(host = host, user = user)
-    if (connectString != null) __obj.updateDynamic("connectString")(connectString)
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName)
-    if (password != null) __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (connectString != null) __obj.updateDynamic("connectString")(connectString.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[OracleDbConnectionConfig]
   }

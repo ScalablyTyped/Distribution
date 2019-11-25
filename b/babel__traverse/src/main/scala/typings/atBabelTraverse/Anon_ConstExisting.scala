@@ -29,7 +29,7 @@ object Anon_ConstExisting {
     path: NodePath[Node],
     scope: Scope
   ): Anon_ConstExisting = {
-    val __obj = js.Dynamic.literal(existing = existing, identifier = identifier, kind = kind.asInstanceOf[js.Any], path = path, scope = scope)
+    val __obj = js.Dynamic.literal(existing = existing.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ConstExisting]
   }

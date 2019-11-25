@@ -24,11 +24,11 @@ object SigmaConfigs {
     settings: StringDictionary[js.Any] = null
   ): SigmaConfigs = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (graph != null) __obj.updateDynamic("graph")(graph)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (renderers != null) __obj.updateDynamic("renderers")(renderers)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (renderers != null) __obj.updateDynamic("renderers")(renderers.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigmaConfigs]
   }
 }

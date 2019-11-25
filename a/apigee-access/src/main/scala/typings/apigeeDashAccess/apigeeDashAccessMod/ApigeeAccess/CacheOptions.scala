@@ -24,7 +24,7 @@ object CacheOptions {
   ): CacheOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOptions]

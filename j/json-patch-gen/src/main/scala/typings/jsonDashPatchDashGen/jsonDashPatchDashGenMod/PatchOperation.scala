@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait PatchOperation extends js.Object
 
+object PatchOperation {
+  @scala.inline
+  def add: typings.jsonDashPatchDashGen.jsonDashPatchDashGenStrings.add = this.cast("add")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def remove: typings.jsonDashPatchDashGen.jsonDashPatchDashGenStrings.remove = this.cast("remove")
+  @scala.inline
+  def replace: typings.jsonDashPatchDashGen.jsonDashPatchDashGenStrings.replace = this.cast("replace")
+}
+

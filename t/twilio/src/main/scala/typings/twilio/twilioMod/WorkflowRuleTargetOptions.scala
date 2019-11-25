@@ -19,8 +19,8 @@ object WorkflowRuleTargetOptions {
     priority: Int | Double = null,
     timeout: Int | Double = null
   ): WorkflowRuleTargetOptions = {
-    val __obj = js.Dynamic.literal(queue = queue)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowRuleTargetOptions]

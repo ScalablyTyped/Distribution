@@ -58,16 +58,16 @@ object WritingOptions {
     `type`: base64 | binary | buffer | file | array | string = null
   ): WritingOptions = {
     val __obj = js.Dynamic.literal()
-    if (Props != null) __obj.updateDynamic("Props")(Props)
-    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF)
-    if (!js.isUndefined(bookSST)) __obj.updateDynamic("bookSST")(bookSST)
-    if (bookType != null) __obj.updateDynamic("bookType")(bookType)
-    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA)
-    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates)
-    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles)
-    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression)
-    if (!js.isUndefined(ignoreEC)) __obj.updateDynamic("ignoreEC")(ignoreEC)
-    if (sheet != null) __obj.updateDynamic("sheet")(sheet)
+    if (Props != null) __obj.updateDynamic("Props")(Props.asInstanceOf[js.Any])
+    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF.asInstanceOf[js.Any])
+    if (!js.isUndefined(bookSST)) __obj.updateDynamic("bookSST")(bookSST.asInstanceOf[js.Any])
+    if (bookType != null) __obj.updateDynamic("bookType")(bookType.asInstanceOf[js.Any])
+    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEC)) __obj.updateDynamic("ignoreEC")(ignoreEC.asInstanceOf[js.Any])
+    if (sheet != null) __obj.updateDynamic("sheet")(sheet.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WritingOptions]
   }

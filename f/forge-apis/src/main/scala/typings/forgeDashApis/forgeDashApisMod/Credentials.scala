@@ -14,8 +14,8 @@ trait Credentials extends js.Object {
 object Credentials {
   @scala.inline
   def apply(client_id: String, client_secret: String, grant_type: String, scope: Scope = null): Credentials = {
-    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, grant_type = grant_type)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], grant_type = grant_type.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

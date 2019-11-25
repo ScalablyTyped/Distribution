@@ -23,7 +23,7 @@ trait IKeyBindingChangedArgs extends js.Object {
 object IKeyBindingChangedArgs {
   @scala.inline
   def apply(binding: IKeyBinding, `type`: added | removed): IKeyBindingChangedArgs = {
-    val __obj = js.Dynamic.literal(binding = binding)
+    val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyBindingChangedArgs]
   }

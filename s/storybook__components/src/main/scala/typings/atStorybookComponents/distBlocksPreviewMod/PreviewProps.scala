@@ -24,10 +24,10 @@ object PreviewProps {
   ): PreviewProps = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(isColumn)) __obj.updateDynamic("isColumn")(isColumn)
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
-    if (withSource != null) __obj.updateDynamic("withSource")(withSource)
-    if (!js.isUndefined(withToolbar)) __obj.updateDynamic("withToolbar")(withToolbar)
+    if (!js.isUndefined(isColumn)) __obj.updateDynamic("isColumn")(isColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (withSource != null) __obj.updateDynamic("withSource")(withSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(withToolbar)) __obj.updateDynamic("withToolbar")(withToolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewProps]
   }
 }

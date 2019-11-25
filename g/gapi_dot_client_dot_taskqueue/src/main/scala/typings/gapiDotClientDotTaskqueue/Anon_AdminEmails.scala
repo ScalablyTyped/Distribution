@@ -21,9 +21,9 @@ object Anon_AdminEmails {
     producerEmails: js.Array[String] = null
   ): Anon_AdminEmails = {
     val __obj = js.Dynamic.literal()
-    if (adminEmails != null) __obj.updateDynamic("adminEmails")(adminEmails)
-    if (consumerEmails != null) __obj.updateDynamic("consumerEmails")(consumerEmails)
-    if (producerEmails != null) __obj.updateDynamic("producerEmails")(producerEmails)
+    if (adminEmails != null) __obj.updateDynamic("adminEmails")(adminEmails.asInstanceOf[js.Any])
+    if (consumerEmails != null) __obj.updateDynamic("consumerEmails")(consumerEmails.asInstanceOf[js.Any])
+    if (producerEmails != null) __obj.updateDynamic("producerEmails")(producerEmails.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AdminEmails]
   }
 }

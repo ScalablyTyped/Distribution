@@ -14,8 +14,8 @@ object JQRangeSliderDateRange {
   @scala.inline
   def apply(max: Date = null, min: Date = null): JQRangeSliderDateRange = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQRangeSliderDateRange]
   }
 }

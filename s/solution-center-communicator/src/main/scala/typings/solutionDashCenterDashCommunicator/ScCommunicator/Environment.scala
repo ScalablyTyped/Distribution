@@ -61,14 +61,14 @@ object Environment {
     USER_SERVICE: String = null,
     USER_SERVICE_NEW: String = null
   ): Environment = {
-    val __obj = js.Dynamic.literal(DOMAIN = DOMAIN, NAME = NAME, URL = URL)
-    if (GOODDATA_SERVICE != null) __obj.updateDynamic("GOODDATA_SERVICE")(GOODDATA_SERVICE)
-    if (MERCHANT_SERVICE != null) __obj.updateDynamic("MERCHANT_SERVICE")(MERCHANT_SERVICE)
-    if (MODULE_SERVICE != null) __obj.updateDynamic("MODULE_SERVICE")(MODULE_SERVICE)
-    if (PORT != null) __obj.updateDynamic("PORT")(PORT)
-    if (TOKEN_SERVICE != null) __obj.updateDynamic("TOKEN_SERVICE")(TOKEN_SERVICE)
-    if (USER_SERVICE != null) __obj.updateDynamic("USER_SERVICE")(USER_SERVICE)
-    if (USER_SERVICE_NEW != null) __obj.updateDynamic("USER_SERVICE_NEW")(USER_SERVICE_NEW)
+    val __obj = js.Dynamic.literal(DOMAIN = DOMAIN.asInstanceOf[js.Any], NAME = NAME.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
+    if (GOODDATA_SERVICE != null) __obj.updateDynamic("GOODDATA_SERVICE")(GOODDATA_SERVICE.asInstanceOf[js.Any])
+    if (MERCHANT_SERVICE != null) __obj.updateDynamic("MERCHANT_SERVICE")(MERCHANT_SERVICE.asInstanceOf[js.Any])
+    if (MODULE_SERVICE != null) __obj.updateDynamic("MODULE_SERVICE")(MODULE_SERVICE.asInstanceOf[js.Any])
+    if (PORT != null) __obj.updateDynamic("PORT")(PORT.asInstanceOf[js.Any])
+    if (TOKEN_SERVICE != null) __obj.updateDynamic("TOKEN_SERVICE")(TOKEN_SERVICE.asInstanceOf[js.Any])
+    if (USER_SERVICE != null) __obj.updateDynamic("USER_SERVICE")(USER_SERVICE.asInstanceOf[js.Any])
+    if (USER_SERVICE_NEW != null) __obj.updateDynamic("USER_SERVICE_NEW")(USER_SERVICE_NEW.asInstanceOf[js.Any])
     __obj.asInstanceOf[Environment]
   }
 }

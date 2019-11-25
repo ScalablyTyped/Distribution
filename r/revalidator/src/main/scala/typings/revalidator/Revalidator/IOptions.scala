@@ -27,11 +27,11 @@ object IOptions {
     validateFormatsStrict: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(additionalProperties)) __obj.updateDynamic("additionalProperties")(additionalProperties)
-    if (!js.isUndefined(cast)) __obj.updateDynamic("cast")(cast)
-    if (!js.isUndefined(validateFormatExtensions)) __obj.updateDynamic("validateFormatExtensions")(validateFormatExtensions)
-    if (!js.isUndefined(validateFormats)) __obj.updateDynamic("validateFormats")(validateFormats)
-    if (!js.isUndefined(validateFormatsStrict)) __obj.updateDynamic("validateFormatsStrict")(validateFormatsStrict)
+    if (!js.isUndefined(additionalProperties)) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(cast)) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateFormatExtensions)) __obj.updateDynamic("validateFormatExtensions")(validateFormatExtensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateFormats)) __obj.updateDynamic("validateFormats")(validateFormats.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateFormatsStrict)) __obj.updateDynamic("validateFormatsStrict")(validateFormatsStrict.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

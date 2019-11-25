@@ -19,10 +19,10 @@ object ImageConfiguration {
   @scala.inline
   def apply(imageType: String = null, kind: String = null, resourceId: String = null, url: String = null): ImageConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (imageType != null) __obj.updateDynamic("imageType")(imageType)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (imageType != null) __obj.updateDynamic("imageType")(imageType.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageConfiguration]
   }
 }

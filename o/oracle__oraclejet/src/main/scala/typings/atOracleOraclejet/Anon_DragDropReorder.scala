@@ -17,9 +17,9 @@ object Anon_DragDropReorder {
     drag: Anon_ItemsAnonDataTypesDragDragEnd = null,
     drop: Anon_ItemsAnonDataTypesDragEnterDragLeaveDragOver = null
   ): Anon_DragDropReorder = {
-    val __obj = js.Dynamic.literal(reorder = reorder)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
+    val __obj = js.Dynamic.literal(reorder = reorder.asInstanceOf[js.Any])
+    if (drag != null) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
+    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DragDropReorder]
   }
 }

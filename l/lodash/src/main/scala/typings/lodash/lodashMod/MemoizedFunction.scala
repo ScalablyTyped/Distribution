@@ -12,7 +12,7 @@ trait MemoizedFunction extends js.Object {
 object MemoizedFunction {
   @scala.inline
   def apply(cache: MapCache): MemoizedFunction = {
-    val __obj = js.Dynamic.literal(cache = cache)
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MemoizedFunction]
   }

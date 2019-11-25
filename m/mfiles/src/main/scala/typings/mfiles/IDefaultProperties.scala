@@ -19,7 +19,7 @@ object IDefaultProperties {
     Item: Double => IDefaultProperty,
     Remove: Double => Unit
   ): IDefaultProperties = {
-    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Count = Count, Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Remove = js.Any.fromFunction1(Remove))
   
     __obj.asInstanceOf[IDefaultProperties]
   }

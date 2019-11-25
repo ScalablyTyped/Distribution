@@ -30,13 +30,13 @@ object ScrollNumberProps {
     title: String | Double = null
   ): ScrollNumberProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (component != null) __obj.updateDynamic("component")(component)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (displayComponent != null) __obj.updateDynamic("displayComponent")(displayComponent)
-    if (onAnimated != null) __obj.updateDynamic("onAnimated")(onAnimated)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (displayComponent != null) __obj.updateDynamic("displayComponent")(displayComponent.asInstanceOf[js.Any])
+    if (onAnimated != null) __obj.updateDynamic("onAnimated")(onAnimated.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollNumberProps]
   }

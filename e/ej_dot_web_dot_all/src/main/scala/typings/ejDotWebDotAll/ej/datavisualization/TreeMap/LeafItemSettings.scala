@@ -57,14 +57,14 @@ object LeafItemSettings {
     textOverflow: TextOverflow | String = null
   ): LeafItemSettings = {
     val __obj = js.Dynamic.literal()
-    if (borderBrush != null) __obj.updateDynamic("borderBrush")(borderBrush)
+    if (borderBrush != null) __obj.updateDynamic("borderBrush")(borderBrush.asInstanceOf[js.Any])
     if (borderThickness != null) __obj.updateDynamic("borderThickness")(borderThickness.asInstanceOf[js.Any])
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate)
-    if (labelPath != null) __obj.updateDynamic("labelPath")(labelPath)
+    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
+    if (labelPath != null) __obj.updateDynamic("labelPath")(labelPath.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelVisibilityMode != null) __obj.updateDynamic("labelVisibilityMode")(labelVisibilityMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels)
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
     if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafItemSettings]
   }

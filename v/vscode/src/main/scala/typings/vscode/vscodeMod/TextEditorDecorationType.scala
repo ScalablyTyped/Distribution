@@ -18,7 +18,7 @@ trait TextEditorDecorationType extends js.Object {
 object TextEditorDecorationType {
   @scala.inline
   def apply(dispose: () => Unit, key: String): TextEditorDecorationType = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), key = key)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextEditorDecorationType]
   }

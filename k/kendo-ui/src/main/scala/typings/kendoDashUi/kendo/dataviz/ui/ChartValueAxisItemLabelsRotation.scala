@@ -13,7 +13,7 @@ object ChartValueAxisItemLabelsRotation {
   @scala.inline
   def apply(align: String = null, angle: Double | String = null): ChartValueAxisItemLabelsRotation = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartValueAxisItemLabelsRotation]
   }

@@ -16,7 +16,7 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
   // https://github.com/andywer/typed-emitter/blob/master/index.d.ts
   def addListener[E /* <: String */](
     event: E with String,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
   /**
     * Adds a listener after the target listener in the listeners array for the specified event.
@@ -27,8 +27,8 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
     */
   def after[E /* <: String */](
     event: E with String,
-    target: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    target: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any,
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
   /**
     * Adds a listener at the specified index in the listeners array for the specified event.
@@ -40,7 +40,7 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
   def at[E /* <: String */](
     event: E with String,
     index: Double,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
   /**
     * Adds a listener before the target listener in the listeners array for the specified event.
@@ -51,8 +51,8 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
     */
   def before[E /* <: String */](
     event: E with String,
-    target: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    target: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any,
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
   /**
     * Executes all listeners for the event in order with the supplied data argument.
@@ -63,7 +63,9 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
     */
   def emit[E /* <: String */](
     event: E with String,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<T[E]> is not an array type */ args: Parameters[/* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any]
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<T[E]> is not an array type */ args: Parameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
+    ]
   ): Boolean = js.native
   /**
     * Adds a listener to the beginning of the listeners array for the specified event.
@@ -73,27 +75,27 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
     */
   def first[E /* <: String */](
     event: E with String,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
   def on[E /* <: String */](
     event: E with String,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
   def once[E /* <: String */](
     event: E with String,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
   def prependListener[E /* <: String */](
     event: E with String,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
   def prependOnceListener[E /* <: String */](
     event: E with String,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
   def removeListener[E /* <: String */](
     event: E with String,
-    listener: /* import warning: ImportType.apply Failed type conversion: T[E] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
   ): this.type = js.native
 }
 

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait CarouselEffect extends js.Object
 
+object CarouselEffect {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fade: typings.antd.antdStrings.fade = this.cast("fade")
+  @scala.inline
+  def scrollx: typings.antd.antdStrings.scrollx = this.cast("scrollx")
+}
+

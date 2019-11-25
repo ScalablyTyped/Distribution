@@ -23,10 +23,10 @@ object StashApplyOptions {
     version: Int | Double = null
   ): StashApplyOptions = {
     val __obj = js.Dynamic.literal()
-    if (checkoutOptions != null) __obj.updateDynamic("checkoutOptions")(checkoutOptions)
+    if (checkoutOptions != null) __obj.updateDynamic("checkoutOptions")(checkoutOptions.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (progressCb != null) __obj.updateDynamic("progressCb")(progressCb)
-    if (progressPayload != null) __obj.updateDynamic("progressPayload")(progressPayload)
+    if (progressCb != null) __obj.updateDynamic("progressCb")(progressCb.asInstanceOf[js.Any])
+    if (progressPayload != null) __obj.updateDynamic("progressPayload")(progressPayload.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[StashApplyOptions]
   }

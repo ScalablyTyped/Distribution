@@ -2452,25 +2452,25 @@ object srcMod extends js.Object {
   @JSName("createSelector")
   def createSelector_SR1T[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputSelector[S, T, js.Function1[/* res */ R1, T]] = js.native
   def createStructuredSelector[S, T](
-    selectors: /* import warning: ImportType.apply c Unsupported type mapping: 
+    selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect/src.Selector<S, T[K]>}
     */ typings.reselect.reselectStrings.createStructuredSelector with T
   ): Selector[S, T] = js.native
   def createStructuredSelector[S, T](
-    selectors: /* import warning: ImportType.apply c Unsupported type mapping: 
+    selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect/src.Selector<S, T[K]>}
     */ typings.reselect.reselectStrings.createStructuredSelector with T,
     selectorCreator: Fn_CombinerRes
   ): Selector[S, T] = js.native
   @JSName("createStructuredSelector")
   def createStructuredSelector_SPT_ParametricSelector[S, P, T](
-    selectors: /* import warning: ImportType.apply c Unsupported type mapping: 
+    selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect/src.ParametricSelector<S, P, T[K]>}
     */ createStructuredSelector with T
   ): ParametricSelector[S, P, T] = js.native
   @JSName("createStructuredSelector")
   def createStructuredSelector_SPT_ParametricSelector[S, P, T](
-    selectors: /* import warning: ImportType.apply c Unsupported type mapping: 
+    selectors: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect/src.ParametricSelector<S, P, T[K]>}
     */ createStructuredSelector with T,
     selectorCreator: Fn_CombinerRes

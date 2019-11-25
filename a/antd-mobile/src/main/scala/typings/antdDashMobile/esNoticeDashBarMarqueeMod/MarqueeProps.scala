@@ -29,13 +29,13 @@ object MarqueeProps {
     trailing: Int | Double = null
   ): MarqueeProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
     if (leading != null) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (trailing != null) __obj.updateDynamic("trailing")(trailing.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarqueeProps]
   }

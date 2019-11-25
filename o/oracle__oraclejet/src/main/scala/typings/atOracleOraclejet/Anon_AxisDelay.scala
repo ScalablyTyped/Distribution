@@ -24,12 +24,12 @@ object Anon_AxisDelay {
     transformOrigin: String = null
   ): Anon_AxisDelay = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (persist != null) __obj.updateDynamic("persist")(persist)
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction)
-    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (persist != null) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
+    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
+    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AxisDelay]
   }
 }

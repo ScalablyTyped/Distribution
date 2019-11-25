@@ -28,7 +28,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(anchor: Widget, body: Widget, align: left | right = null): IOptions = {
-    val __obj = js.Dynamic.literal(anchor = anchor, body = body)
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

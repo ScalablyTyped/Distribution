@@ -28,9 +28,9 @@ object ExportReadGroupSetRequest {
   @scala.inline
   def apply(exportUri: String = null, projectId: String = null, referenceNames: js.Array[String] = null): ExportReadGroupSetRequest = {
     val __obj = js.Dynamic.literal()
-    if (exportUri != null) __obj.updateDynamic("exportUri")(exportUri)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (referenceNames != null) __obj.updateDynamic("referenceNames")(referenceNames)
+    if (exportUri != null) __obj.updateDynamic("exportUri")(exportUri.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (referenceNames != null) __obj.updateDynamic("referenceNames")(referenceNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportReadGroupSetRequest]
   }
 }

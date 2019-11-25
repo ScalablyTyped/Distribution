@@ -23,8 +23,8 @@ trait zoom100 extends js.Object {
 object zoom100 {
   @scala.inline
   def apply(text: String, `type`: String): zoom100 = {
-    val __obj = js.Dynamic.literal(text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[zoom100]
   }
 }

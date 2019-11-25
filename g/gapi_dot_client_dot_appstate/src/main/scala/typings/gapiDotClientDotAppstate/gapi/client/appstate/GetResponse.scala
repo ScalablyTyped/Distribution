@@ -24,9 +24,9 @@ object GetResponse {
     stateKey: Int | Double = null
   ): GetResponse = {
     val __obj = js.Dynamic.literal()
-    if (currentStateVersion != null) __obj.updateDynamic("currentStateVersion")(currentStateVersion)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (currentStateVersion != null) __obj.updateDynamic("currentStateVersion")(currentStateVersion.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (stateKey != null) __obj.updateDynamic("stateKey")(stateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponse]
   }

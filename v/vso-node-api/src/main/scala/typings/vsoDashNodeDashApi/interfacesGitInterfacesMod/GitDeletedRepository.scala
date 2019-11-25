@@ -26,7 +26,7 @@ object GitDeletedRepository {
     name: String,
     project: TeamProjectReference
   ): GitDeletedRepository = {
-    val __obj = js.Dynamic.literal(createdDate = createdDate, deletedBy = deletedBy, deletedDate = deletedDate, id = id, name = name, project = project)
+    val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], deletedBy = deletedBy.asInstanceOf[js.Any], deletedDate = deletedDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitDeletedRepository]
   }

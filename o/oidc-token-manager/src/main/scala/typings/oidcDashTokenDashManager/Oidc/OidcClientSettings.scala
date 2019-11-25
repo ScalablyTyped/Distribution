@@ -24,12 +24,12 @@ object OidcClientSettings {
     response_type: String = null
   ): OidcClientSettings = {
     val __obj = js.Dynamic.literal()
-    if (authority != null) __obj.updateDynamic("authority")(authority)
-    if (!js.isUndefined(filter_protocol_claims)) __obj.updateDynamic("filter_protocol_claims")(filter_protocol_claims)
-    if (!js.isUndefined(load_user_profile)) __obj.updateDynamic("load_user_profile")(load_user_profile)
-    if (request_state_key != null) __obj.updateDynamic("request_state_key")(request_state_key)
-    if (request_state_store != null) __obj.updateDynamic("request_state_store")(request_state_store)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter_protocol_claims)) __obj.updateDynamic("filter_protocol_claims")(filter_protocol_claims.asInstanceOf[js.Any])
+    if (!js.isUndefined(load_user_profile)) __obj.updateDynamic("load_user_profile")(load_user_profile.asInstanceOf[js.Any])
+    if (request_state_key != null) __obj.updateDynamic("request_state_key")(request_state_key.asInstanceOf[js.Any])
+    if (request_state_store != null) __obj.updateDynamic("request_state_store")(request_state_store.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[OidcClientSettings]
   }
 }

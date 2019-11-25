@@ -21,10 +21,10 @@ object HtmlTagCfg {
     tagName: String = null
   ): HtmlTagCfg = {
     val __obj = js.Dynamic.literal()
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML)
-    if (innerHtml != null) __obj.updateDynamic("innerHtml")(innerHtml)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML.asInstanceOf[js.Any])
+    if (innerHtml != null) __obj.updateDynamic("innerHtml")(innerHtml.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlTagCfg]
   }
 }

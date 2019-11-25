@@ -17,8 +17,8 @@ object PublicKeyCredentialUserEntity {
     name: java.lang.String,
     icon: java.lang.String = null
   ): PublicKeyCredentialUserEntity = {
-    val __obj = js.Dynamic.literal(displayName = displayName, id = id, name = name)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialUserEntity]
   }
 }

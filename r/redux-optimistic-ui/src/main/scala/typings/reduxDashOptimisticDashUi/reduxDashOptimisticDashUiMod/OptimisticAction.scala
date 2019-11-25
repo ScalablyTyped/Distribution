@@ -12,7 +12,7 @@ trait OptimisticAction extends js.Object {
 object OptimisticAction {
   @scala.inline
   def apply(meta: Anon_Optimistic): OptimisticAction = {
-    val __obj = js.Dynamic.literal(meta = meta)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OptimisticAction]
   }

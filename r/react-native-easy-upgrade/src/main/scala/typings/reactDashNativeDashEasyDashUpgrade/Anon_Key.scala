@@ -14,8 +14,8 @@ trait Anon_Key
 object Anon_Key {
   @scala.inline
   def apply(trackViewUrl: String, version: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): Anon_Key = {
-    val __obj = js.Dynamic.literal(trackViewUrl = trackViewUrl, version = version)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(trackViewUrl = trackViewUrl.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Key]
   }
 }

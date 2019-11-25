@@ -19,7 +19,7 @@ object BounceOptions {
     easing: /* t */ Double => Double = null,
     start: Int | Double = null
   ): BounceOptions = {
-    val __obj = js.Dynamic.literal(resolution = resolution)
+    val __obj = js.Dynamic.literal(resolution = resolution.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

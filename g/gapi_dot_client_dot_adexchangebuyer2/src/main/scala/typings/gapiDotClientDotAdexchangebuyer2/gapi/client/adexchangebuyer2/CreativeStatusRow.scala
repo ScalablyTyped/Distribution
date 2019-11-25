@@ -24,9 +24,9 @@ object CreativeStatusRow {
     rowDimensions: RowDimensions = null
   ): CreativeStatusRow = {
     val __obj = js.Dynamic.literal()
-    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount)
+    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount.asInstanceOf[js.Any])
     if (creativeStatusId != null) __obj.updateDynamic("creativeStatusId")(creativeStatusId.asInstanceOf[js.Any])
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeStatusRow]
   }
 }

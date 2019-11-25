@@ -23,8 +23,8 @@ object ObjectOrderFixed {
   @scala.inline
   def apply(post: js.Array[_] = null, pre: js.Array[_] = null): ObjectOrderFixed = {
     val __obj = js.Dynamic.literal()
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (pre != null) __obj.updateDynamic("pre")(pre)
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectOrderFixed]
   }
 }

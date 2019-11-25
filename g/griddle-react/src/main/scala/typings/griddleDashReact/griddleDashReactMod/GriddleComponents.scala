@@ -320,7 +320,7 @@ object GriddleComponents {
     if (RowContainerEnhancer != null) __obj.updateDynamic("RowContainerEnhancer")(js.Any.fromFunction1(RowContainerEnhancer))
     if (RowEnhancer != null) __obj.updateDynamic("RowEnhancer")(js.Any.fromFunction1(RowEnhancer))
     if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
-    if (SettingsComponents != null) __obj.updateDynamic("SettingsComponents")(SettingsComponents)
+    if (SettingsComponents != null) __obj.updateDynamic("SettingsComponents")(SettingsComponents.asInstanceOf[js.Any])
     if (SettingsContainer != null) __obj.updateDynamic("SettingsContainer")(js.Any.fromFunction1(SettingsContainer))
     if (SettingsContainerEnhancer != null) __obj.updateDynamic("SettingsContainerEnhancer")(js.Any.fromFunction1(SettingsContainerEnhancer))
     if (SettingsEnhancer != null) __obj.updateDynamic("SettingsEnhancer")(js.Any.fromFunction1(SettingsEnhancer))

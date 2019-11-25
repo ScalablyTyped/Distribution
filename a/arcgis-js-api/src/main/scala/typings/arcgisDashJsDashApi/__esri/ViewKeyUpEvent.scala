@@ -15,8 +15,8 @@ trait ViewKeyUpEvent extends js.Object {
 object ViewKeyUpEvent {
   @scala.inline
   def apply(key: String, native: js.Any, stopPropagation: js.Function, timestamp: Double, `type`: String): ViewKeyUpEvent = {
-    val __obj = js.Dynamic.literal(key = key, native = native, stopPropagation = stopPropagation, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewKeyUpEvent]
   }
 }

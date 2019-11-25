@@ -25,8 +25,8 @@ object Descriptor {
     title: String,
     `type`: Type
   ): Descriptor = {
-    val __obj = js.Dynamic.literal(action = action, badge = badge, body = body, data = data, sound = sound, title = title)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], badge = badge.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Descriptor]
   }
 }

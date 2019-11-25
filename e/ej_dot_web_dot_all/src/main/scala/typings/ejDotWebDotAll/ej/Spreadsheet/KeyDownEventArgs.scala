@@ -45,14 +45,14 @@ object KeyDownEventArgs {
     `type`: String = null
   ): KeyDownEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (!js.isUndefined(isCommentEdit)) __obj.updateDynamic("isCommentEdit")(isCommentEdit)
-    if (!js.isUndefined(isEdit)) __obj.updateDynamic("isEdit")(isEdit)
-    if (!js.isUndefined(isSheetRename)) __obj.updateDynamic("isSheetRename")(isSheetRename)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCommentEdit)) __obj.updateDynamic("isCommentEdit")(isCommentEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEdit)) __obj.updateDynamic("isEdit")(isEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSheetRename)) __obj.updateDynamic("isSheetRename")(isSheetRename.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (sheetIndex != null) __obj.updateDynamic("sheetIndex")(sheetIndex.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyDownEventArgs]
   }
 }

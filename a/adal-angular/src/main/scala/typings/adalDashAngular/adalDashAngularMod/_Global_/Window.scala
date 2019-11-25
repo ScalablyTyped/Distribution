@@ -12,7 +12,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(Logging: LoggingConfig): Window = {
-    val __obj = js.Dynamic.literal(Logging = Logging)
+    val __obj = js.Dynamic.literal(Logging = Logging.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

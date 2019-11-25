@@ -12,7 +12,7 @@ trait SaveDetails extends js.Object {
 object SaveDetails {
   @scala.inline
   def apply(tabId: Double): SaveDetails = {
-    val __obj = js.Dynamic.literal(tabId = tabId)
+    val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SaveDetails]
   }

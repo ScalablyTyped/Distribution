@@ -46,17 +46,17 @@ object PlanDefinitionGoalTarget {
     modifierExtension: js.Array[Extension] = null
   ): PlanDefinitionGoalTarget = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (detailCodeableConcept != null) __obj.updateDynamic("detailCodeableConcept")(detailCodeableConcept)
-    if (detailQuantity != null) __obj.updateDynamic("detailQuantity")(detailQuantity)
-    if (detailRange != null) __obj.updateDynamic("detailRange")(detailRange)
-    if (due != null) __obj.updateDynamic("due")(due)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (measure != null) __obj.updateDynamic("measure")(measure)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (detailCodeableConcept != null) __obj.updateDynamic("detailCodeableConcept")(detailCodeableConcept.asInstanceOf[js.Any])
+    if (detailQuantity != null) __obj.updateDynamic("detailQuantity")(detailQuantity.asInstanceOf[js.Any])
+    if (detailRange != null) __obj.updateDynamic("detailRange")(detailRange.asInstanceOf[js.Any])
+    if (due != null) __obj.updateDynamic("due")(due.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanDefinitionGoalTarget]
   }
 }

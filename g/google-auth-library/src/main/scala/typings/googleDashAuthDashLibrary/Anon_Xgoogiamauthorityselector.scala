@@ -13,8 +13,8 @@ object Anon_Xgoogiamauthorityselector {
   @scala.inline
   def apply(`x-goog-iam-authority-selector`: String, `x-goog-iam-authorization-token`: String): Anon_Xgoogiamauthorityselector = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x-goog-iam-authority-selector")(`x-goog-iam-authority-selector`)
-    __obj.updateDynamic("x-goog-iam-authorization-token")(`x-goog-iam-authorization-token`)
+    __obj.updateDynamic("x-goog-iam-authority-selector")(`x-goog-iam-authority-selector`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-goog-iam-authorization-token")(`x-goog-iam-authorization-token`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Xgoogiamauthorityselector]
   }
 }

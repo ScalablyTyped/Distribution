@@ -44,7 +44,7 @@ object locationRendererResult {
     propertyIsEnumerable: PropertyKey => Boolean,
     renderer: SimpleRenderer
   ): locationRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), locationScheme = locationScheme, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
+    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), locationScheme = locationScheme.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[locationRendererResult]
   }

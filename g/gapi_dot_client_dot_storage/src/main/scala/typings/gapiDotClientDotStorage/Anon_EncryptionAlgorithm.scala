@@ -15,8 +15,8 @@ object Anon_EncryptionAlgorithm {
   @scala.inline
   def apply(encryptionAlgorithm: String = null, keySha256: String = null): Anon_EncryptionAlgorithm = {
     val __obj = js.Dynamic.literal()
-    if (encryptionAlgorithm != null) __obj.updateDynamic("encryptionAlgorithm")(encryptionAlgorithm)
-    if (keySha256 != null) __obj.updateDynamic("keySha256")(keySha256)
+    if (encryptionAlgorithm != null) __obj.updateDynamic("encryptionAlgorithm")(encryptionAlgorithm.asInstanceOf[js.Any])
+    if (keySha256 != null) __obj.updateDynamic("keySha256")(keySha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EncryptionAlgorithm]
   }
 }

@@ -61,17 +61,17 @@ object Metadata {
     version: String = null
   ): Metadata = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (build != null) __obj.updateDynamic("build")(build)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage)
-    if (license != null) __obj.updateDynamic("license")(license)
-    if (main != null) __obj.updateDynamic("main")(main)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (productName != null) __obj.updateDynamic("productName")(productName)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
+    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
     if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
 }

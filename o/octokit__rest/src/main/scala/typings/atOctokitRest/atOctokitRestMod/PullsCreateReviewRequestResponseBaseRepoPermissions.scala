@@ -13,7 +13,7 @@ trait PullsCreateReviewRequestResponseBaseRepoPermissions extends js.Object {
 object PullsCreateReviewRequestResponseBaseRepoPermissions {
   @scala.inline
   def apply(admin: Boolean, pull: Boolean, push: Boolean): PullsCreateReviewRequestResponseBaseRepoPermissions = {
-    val __obj = js.Dynamic.literal(admin = admin, pull = pull, push = push)
+    val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsCreateReviewRequestResponseBaseRepoPermissions]
   }

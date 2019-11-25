@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ns-api"
-version := "2.0-dt-20180801Z-529bd5"
+version := "2.0-dt-20180801Z-6b6758"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -23,15 +23,19 @@ object StreamTransport {
     mailer: typings.nodemailer.libMailerMod.^,
     name: String,
     options: Options,
-    send: (typings.nodemailer.libMailerMailDashMessageMod.^, js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]) => Unit,
+    send: (typings.nodemailer.libMailerMailDashMessageMod.^, js.Function2[
+      /* err */ Error | Null, 
+      /* info */ typings.nodemailer.nodemailerMod.SentMessageInfo, 
+      Unit
+    ]) => Unit,
     version: String,
     winbreak: Boolean,
     close: () => Unit = null,
     verify: (js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]) with js.Function0[js.Promise[`true`]] = null
   ): StreamTransport = {
-    val __obj = js.Dynamic.literal(logger = logger, mailer = mailer, name = name, options = options, send = js.Any.fromFunction2(send), version = version, winbreak = winbreak)
+    val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any], mailer = mailer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], send = js.Any.fromFunction2(send), version = version.asInstanceOf[js.Any], winbreak = winbreak.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (verify != null) __obj.updateDynamic("verify")(verify)
+    if (verify != null) __obj.updateDynamic("verify")(verify.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamTransport]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_Bottomup extends js.Object {
 object Anon_Bottomup {
   @scala.inline
   def apply(bottomup: bottomup, topdown: topdown): Anon_Bottomup = {
-    val __obj = js.Dynamic.literal(bottomup = bottomup, topdown = topdown)
+    val __obj = js.Dynamic.literal(bottomup = bottomup.asInstanceOf[js.Any], topdown = topdown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bottomup]
   }

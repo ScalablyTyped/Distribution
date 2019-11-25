@@ -24,12 +24,12 @@ object Anon_Email {
     UUID: js.Any = null
   ): Anon_Email = {
     val __obj = js.Dynamic.literal()
-    if (Email != null) __obj.updateDynamic("Email")(Email)
-    if (FirstName != null) __obj.updateDynamic("FirstName")(FirstName)
-    if (FullName != null) __obj.updateDynamic("FullName")(FullName)
-    if (Identifier != null) __obj.updateDynamic("Identifier")(Identifier)
-    if (!js.isUndefined(IsAnonymous)) __obj.updateDynamic("IsAnonymous")(IsAnonymous)
-    if (UUID != null) __obj.updateDynamic("UUID")(UUID)
+    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
+    if (FirstName != null) __obj.updateDynamic("FirstName")(FirstName.asInstanceOf[js.Any])
+    if (FullName != null) __obj.updateDynamic("FullName")(FullName.asInstanceOf[js.Any])
+    if (Identifier != null) __obj.updateDynamic("Identifier")(Identifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsAnonymous)) __obj.updateDynamic("IsAnonymous")(IsAnonymous.asInstanceOf[js.Any])
+    if (UUID != null) __obj.updateDynamic("UUID")(UUID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Email]
   }
 }

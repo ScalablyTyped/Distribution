@@ -14,8 +14,8 @@ trait NormalizationInlineFragment extends NormalizationSelection {
 object NormalizationInlineFragment {
   @scala.inline
   def apply(kind: String, selections: js.Array[NormalizationSelection], `type`: String): NormalizationInlineFragment = {
-    val __obj = js.Dynamic.literal(kind = kind, selections = selections)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationInlineFragment]
   }
 }

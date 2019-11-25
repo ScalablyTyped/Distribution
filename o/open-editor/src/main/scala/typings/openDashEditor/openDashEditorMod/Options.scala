@@ -17,7 +17,7 @@ object Options {
   @scala.inline
   def apply(editor: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (editor != null) __obj.updateDynamic("editor")(editor)
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

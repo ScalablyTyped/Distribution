@@ -14,9 +14,9 @@ trait Anon_Dir1 extends js.Object {
 object Anon_Dir1 {
   @scala.inline
   def apply(dir1: String, list1: String, dir2: String = null, list2: String = null): Anon_Dir1 = {
-    val __obj = js.Dynamic.literal(dir1 = dir1, list1 = list1)
-    if (dir2 != null) __obj.updateDynamic("dir2")(dir2)
-    if (list2 != null) __obj.updateDynamic("list2")(list2)
+    val __obj = js.Dynamic.literal(dir1 = dir1.asInstanceOf[js.Any], list1 = list1.asInstanceOf[js.Any])
+    if (dir2 != null) __obj.updateDynamic("dir2")(dir2.asInstanceOf[js.Any])
+    if (list2 != null) __obj.updateDynamic("list2")(list2.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dir1]
   }
 }

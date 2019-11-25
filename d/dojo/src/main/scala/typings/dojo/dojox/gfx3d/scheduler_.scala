@@ -28,7 +28,7 @@ trait scheduler_ extends js.Object {
 object scheduler_ {
   @scala.inline
   def apply(BinarySearchTree: () => Unit, drawer: js.Object, scheduler: js.Object): scheduler_ = {
-    val __obj = js.Dynamic.literal(BinarySearchTree = js.Any.fromFunction0(BinarySearchTree), drawer = drawer, scheduler = scheduler)
+    val __obj = js.Dynamic.literal(BinarySearchTree = js.Any.fromFunction0(BinarySearchTree), drawer = drawer.asInstanceOf[js.Any], scheduler = scheduler.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[scheduler_]
   }

@@ -25,8 +25,8 @@ object CreateChannelOpts {
   @scala.inline
   def apply(json: js.UndefOr[Boolean] = js.undefined, name: String = null, setup: SetupFunc = null): CreateChannelOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateChannelOpts]
   }

@@ -12,7 +12,7 @@ object SVGAttributes {
   @scala.inline
   def apply[T](styleName: String = null): SVGAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (styleName != null) __obj.updateDynamic("styleName")(styleName)
+    if (styleName != null) __obj.updateDynamic("styleName")(styleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAttributes[T]]
   }
 }

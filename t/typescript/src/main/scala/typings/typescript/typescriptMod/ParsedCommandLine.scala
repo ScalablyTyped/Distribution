@@ -27,12 +27,12 @@ object ParsedCommandLine {
     typeAcquisition: TypeAcquisition = null,
     wildcardDirectories: MapLike[WatchDirectoryFlags] = null
   ): ParsedCommandLine = {
-    val __obj = js.Dynamic.literal(errors = errors, fileNames = fileNames, options = options)
-    if (!js.isUndefined(compileOnSave)) __obj.updateDynamic("compileOnSave")(compileOnSave)
-    if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
-    if (typeAcquisition != null) __obj.updateDynamic("typeAcquisition")(typeAcquisition)
-    if (wildcardDirectories != null) __obj.updateDynamic("wildcardDirectories")(wildcardDirectories)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], fileNames = fileNames.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    if (!js.isUndefined(compileOnSave)) __obj.updateDynamic("compileOnSave")(compileOnSave.asInstanceOf[js.Any])
+    if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (typeAcquisition != null) __obj.updateDynamic("typeAcquisition")(typeAcquisition.asInstanceOf[js.Any])
+    if (wildcardDirectories != null) __obj.updateDynamic("wildcardDirectories")(wildcardDirectories.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedCommandLine]
   }
 }

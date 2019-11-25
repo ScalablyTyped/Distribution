@@ -19,7 +19,7 @@ object ListOnItemsRenderedProps {
     visibleStartIndex: Double,
     visibleStopIndex: Double
   ): ListOnItemsRenderedProps = {
-    val __obj = js.Dynamic.literal(overscanStartIndex = overscanStartIndex, overscanStopIndex = overscanStopIndex, visibleStartIndex = visibleStartIndex, visibleStopIndex = visibleStopIndex)
+    val __obj = js.Dynamic.literal(overscanStartIndex = overscanStartIndex.asInstanceOf[js.Any], overscanStopIndex = overscanStopIndex.asInstanceOf[js.Any], visibleStartIndex = visibleStartIndex.asInstanceOf[js.Any], visibleStopIndex = visibleStopIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListOnItemsRenderedProps]
   }

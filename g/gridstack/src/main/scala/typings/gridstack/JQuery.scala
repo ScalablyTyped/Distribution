@@ -13,11 +13,11 @@ trait JQuery extends js.Object {
 object JQuery {
   @scala.inline
   def apply(
-    data_gridstack: typings.gridstack.gridstackStrings.gridstack => GridStack,
+    data: typings.gridstack.gridstackStrings.gridstack => GridStack,
     gridstack: GridstackOptions => JQuery
   ): JQuery = {
-    val __obj = js.Dynamic.literal(gridstack = js.Any.fromFunction1(gridstack))
-    __obj.updateDynamic("data")(js.Any.fromFunction1(data_gridstack))
+    val __obj = js.Dynamic.literal(data = js.Any.fromFunction1(data), gridstack = js.Any.fromFunction1(gridstack))
+  
     __obj.asInstanceOf[JQuery]
   }
 }

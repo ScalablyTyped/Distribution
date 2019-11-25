@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 */
 trait BundleType extends js.Object
 
+object BundleType {
+  @scala.inline
+  def `0`: typings.reactDashReconciler.reactDashReconcilerNumbers.`0` = this.cast(0)
+  @scala.inline
+  def `1`: typings.reactDashReconciler.reactDashReconcilerNumbers.`1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

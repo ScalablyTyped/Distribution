@@ -29,11 +29,11 @@ object TiffOptions {
     yres: Int | Double = null
   ): TiffOptions = {
     val __obj = js.Dynamic.literal()
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (predictor != null) __obj.updateDynamic("predictor")(predictor)
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (predictor != null) __obj.updateDynamic("predictor")(predictor.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash)
+    if (!js.isUndefined(squash)) __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
     if (xres != null) __obj.updateDynamic("xres")(xres.asInstanceOf[js.Any])
     if (yres != null) __obj.updateDynamic("yres")(yres.asInstanceOf[js.Any])
     __obj.asInstanceOf[TiffOptions]

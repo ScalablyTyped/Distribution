@@ -11,7 +11,7 @@ trait CleanupResult extends js.Object {
 object CleanupResult {
   @scala.inline
   def apply(deletedCacheRequests: js.Array[String]): CleanupResult = {
-    val __obj = js.Dynamic.literal(deletedCacheRequests = deletedCacheRequests)
+    val __obj = js.Dynamic.literal(deletedCacheRequests = deletedCacheRequests.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CleanupResult]
   }

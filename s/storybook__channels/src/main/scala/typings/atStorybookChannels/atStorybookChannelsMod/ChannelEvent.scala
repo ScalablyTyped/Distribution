@@ -13,8 +13,8 @@ trait ChannelEvent extends js.Object {
 object ChannelEvent {
   @scala.inline
   def apply(args: js.Array[_], from: String, `type`: String): ChannelEvent = {
-    val __obj = js.Dynamic.literal(args = args, from = from)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelEvent]
   }
 }

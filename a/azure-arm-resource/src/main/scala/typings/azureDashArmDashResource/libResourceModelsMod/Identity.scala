@@ -36,10 +36,10 @@ object Identity {
     userAssignedIdentities: StringDictionary[IdentityUserAssignedIdentitiesValue] = null
   ): Identity = {
     val __obj = js.Dynamic.literal()
-    if (principalId != null) __obj.updateDynamic("principalId")(principalId)
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (userAssignedIdentities != null) __obj.updateDynamic("userAssignedIdentities")(userAssignedIdentities)
+    if (principalId != null) __obj.updateDynamic("principalId")(principalId.asInstanceOf[js.Any])
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (userAssignedIdentities != null) __obj.updateDynamic("userAssignedIdentities")(userAssignedIdentities.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identity]
   }
 }

@@ -17,8 +17,8 @@ object ToolBarCloseEvent {
     sender: ToolBar,
     SplitButton: JQuery = null
   ): ToolBarCloseEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (SplitButton != null) __obj.updateDynamic("SplitButton")(SplitButton)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (SplitButton != null) __obj.updateDynamic("SplitButton")(SplitButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarCloseEvent]
   }
 }

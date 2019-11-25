@@ -16,7 +16,7 @@ trait ExitSignalChannelRequest extends ChannelRequest {
 object ExitSignalChannelRequest {
   @scala.inline
   def apply(coredump: Boolean, description: String, recipient: Double, request: `exit-signal`, signal: String): ExitSignalChannelRequest = {
-    val __obj = js.Dynamic.literal(coredump = coredump, description = description, recipient = recipient, request = request, signal = signal)
+    val __obj = js.Dynamic.literal(coredump = coredump.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExitSignalChannelRequest]
   }

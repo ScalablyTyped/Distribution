@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PivotTransform extends Transforms {
+trait PivotTransform extends _Transforms {
   var field: FieldRef
   var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   var key: js.UndefOr[String | TransformField] = js.undefined
@@ -28,7 +28,7 @@ object PivotTransform {
     op: String | SignalRef = null
   ): PivotTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])

@@ -19,7 +19,7 @@ object LocalStorage {
     removeItem: js.Any => Unit,
     setItem: (js.Any, js.Any) => js.Any
   ): LocalStorage = {
-    val __obj = js.Dynamic.literal(_data = _data, getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
+    val __obj = js.Dynamic.literal(_data = _data.asInstanceOf[js.Any], getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
   
     __obj.asInstanceOf[LocalStorage]
   }

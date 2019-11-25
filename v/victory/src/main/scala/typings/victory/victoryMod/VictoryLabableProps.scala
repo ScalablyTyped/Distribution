@@ -26,7 +26,7 @@ object VictoryLabableProps {
   @scala.inline
   def apply(labelComponent: ReactElement = null): VictoryLabableProps = {
     val __obj = js.Dynamic.literal()
-    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryLabableProps]
   }
 }

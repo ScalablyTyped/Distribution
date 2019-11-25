@@ -36,10 +36,10 @@ object GetIdentityPoolRolesOutput {
     RoleMappings: StringDictionary[_UnmarshalledRoleMapping] = null,
     Roles: StringDictionary[String] = null
   ): GetIdentityPoolRolesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId)
-    if (RoleMappings != null) __obj.updateDynamic("RoleMappings")(RoleMappings)
-    if (Roles != null) __obj.updateDynamic("Roles")(Roles)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId.asInstanceOf[js.Any])
+    if (RoleMappings != null) __obj.updateDynamic("RoleMappings")(RoleMappings.asInstanceOf[js.Any])
+    if (Roles != null) __obj.updateDynamic("Roles")(Roles.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIdentityPoolRolesOutput]
   }
 }

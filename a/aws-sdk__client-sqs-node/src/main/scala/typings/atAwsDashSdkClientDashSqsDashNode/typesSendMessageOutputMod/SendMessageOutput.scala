@@ -39,11 +39,11 @@ object SendMessageOutput {
     MessageId: String = null,
     SequenceNumber: String = null
   ): SendMessageOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes)
-    if (MD5OfMessageBody != null) __obj.updateDynamic("MD5OfMessageBody")(MD5OfMessageBody)
-    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId)
-    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes.asInstanceOf[js.Any])
+    if (MD5OfMessageBody != null) __obj.updateDynamic("MD5OfMessageBody")(MD5OfMessageBody.asInstanceOf[js.Any])
+    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId.asInstanceOf[js.Any])
+    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMessageOutput]
   }
 }

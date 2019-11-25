@@ -12,7 +12,7 @@ trait Anon_DateSpamComplaint extends js.Object {
 object Anon_DateSpamComplaint {
   @scala.inline
   def apply(Date: String, SpamComplaint: Double): Anon_DateSpamComplaint = {
-    val __obj = js.Dynamic.literal(Date = Date, SpamComplaint = SpamComplaint)
+    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], SpamComplaint = SpamComplaint.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DateSpamComplaint]
   }

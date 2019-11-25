@@ -39,8 +39,8 @@ object OpenDocumentOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[OpenDocumentOptions]
   }

@@ -20,10 +20,10 @@ object InstanceOptions {
     silent: js.UndefOr[Boolean] = js.undefined
   ): InstanceOptions = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceOptions]
   }
 }

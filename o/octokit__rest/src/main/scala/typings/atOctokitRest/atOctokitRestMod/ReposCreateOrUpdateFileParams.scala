@@ -47,11 +47,11 @@ object ReposCreateOrUpdateFileParams {
     committer: ReposCreateOrUpdateFileParamsCommitter = null,
     sha: String = null
   ): ReposCreateOrUpdateFileParams = {
-    val __obj = js.Dynamic.literal(content = content, message = message, owner = owner, path = path, repo = repo)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (branch != null) __obj.updateDynamic("branch")(branch)
-    if (committer != null) __obj.updateDynamic("committer")(committer)
-    if (sha != null) __obj.updateDynamic("sha")(sha)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (committer != null) __obj.updateDynamic("committer")(committer.asInstanceOf[js.Any])
+    if (sha != null) __obj.updateDynamic("sha")(sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateOrUpdateFileParams]
   }
 }

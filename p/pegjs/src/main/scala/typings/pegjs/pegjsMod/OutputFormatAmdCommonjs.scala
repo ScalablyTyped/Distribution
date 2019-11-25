@@ -30,13 +30,13 @@ object OutputFormatAmdCommonjs {
     plugins: js.Array[_] = null,
     trace: js.UndefOr[Boolean] = js.undefined
   ): OutputFormatAmdCommonjs = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], output = output)
-    if (allowedStartRules != null) __obj.updateDynamic("allowedStartRules")(allowedStartRules)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
+    if (allowedStartRules != null) __obj.updateDynamic("allowedStartRules")(allowedStartRules.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (optimize != null) __obj.updateDynamic("optimize")(optimize.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputFormatAmdCommonjs]
   }
 }

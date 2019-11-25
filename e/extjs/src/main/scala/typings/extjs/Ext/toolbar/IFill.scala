@@ -14,8 +14,8 @@ object IFill {
   @scala.inline
   def apply(IComponent: IComponent = null, isFill: js.UndefOr[Boolean] = js.undefined): IFill = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(isFill)) __obj.updateDynamic("isFill")(isFill)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(isFill)) __obj.updateDynamic("isFill")(isFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFill]
   }
 }

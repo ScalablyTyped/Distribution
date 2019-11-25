@@ -21,7 +21,7 @@ object IaddCard {
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IaddCard = {
-    val __obj = js.Dynamic.literal(cardList = cardList, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IaddCard]

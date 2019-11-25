@@ -22,7 +22,7 @@ trait Anon_None extends js.Object {
 object Anon_None {
   @scala.inline
   def apply(none: String, primary: String, secondary: String): Anon_None = {
-    val __obj = js.Dynamic.literal(none = none, primary = primary, secondary = secondary)
+    val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], secondary = secondary.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_None]
   }

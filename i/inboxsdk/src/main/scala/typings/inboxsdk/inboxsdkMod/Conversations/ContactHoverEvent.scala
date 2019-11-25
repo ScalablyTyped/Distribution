@@ -22,7 +22,7 @@ object ContactHoverEvent {
     messageView: MessageView,
     threadView: ThreadView
   ): ContactHoverEvent = {
-    val __obj = js.Dynamic.literal(contact = contact, contactType = contactType.asInstanceOf[js.Any], messageView = messageView, threadView = threadView)
+    val __obj = js.Dynamic.literal(contact = contact.asInstanceOf[js.Any], contactType = contactType.asInstanceOf[js.Any], messageView = messageView.asInstanceOf[js.Any], threadView = threadView.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContactHoverEvent]
   }

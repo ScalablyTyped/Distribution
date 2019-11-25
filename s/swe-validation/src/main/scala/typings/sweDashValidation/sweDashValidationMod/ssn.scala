@@ -13,8 +13,8 @@ trait ssn extends js.Object {
 object ssn {
   @scala.inline
   def apply(isValid: Boolean, person: Anon_Sex = null): ssn = {
-    val __obj = js.Dynamic.literal(isValid = isValid)
-    if (person != null) __obj.updateDynamic("person")(person)
+    val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
+    if (person != null) __obj.updateDynamic("person")(person.asInstanceOf[js.Any])
     __obj.asInstanceOf[ssn]
   }
 }

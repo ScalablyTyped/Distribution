@@ -23,10 +23,10 @@ object Anon_CommentsExportedLocSource {
     exported: IdentifierKind = null,
     loc: SourceLocationKind = null
   ): Anon_CommentsExportedLocSource = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (exported != null) __obj.updateDynamic("exported")(exported)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (exported != null) __obj.updateDynamic("exported")(exported.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsExportedLocSource]
   }
 }

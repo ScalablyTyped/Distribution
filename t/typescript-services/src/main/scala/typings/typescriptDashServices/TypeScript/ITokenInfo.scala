@@ -18,9 +18,9 @@ object ITokenInfo {
     trailingTrivia: js.Array[ISyntaxTrivia] = null
   ): ITokenInfo = {
     val __obj = js.Dynamic.literal()
-    if (leadingTrivia != null) __obj.updateDynamic("leadingTrivia")(leadingTrivia)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (trailingTrivia != null) __obj.updateDynamic("trailingTrivia")(trailingTrivia)
+    if (leadingTrivia != null) __obj.updateDynamic("leadingTrivia")(leadingTrivia.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (trailingTrivia != null) __obj.updateDynamic("trailingTrivia")(trailingTrivia.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITokenInfo]
   }
 }

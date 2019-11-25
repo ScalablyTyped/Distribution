@@ -25,11 +25,11 @@ object ResultOptions {
     `type`: Type = null
   ): ResultOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(circle)) __obj.updateDynamic("circle")(circle)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(circle)) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultOptions]
   }
 }

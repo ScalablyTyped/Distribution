@@ -11,7 +11,7 @@ trait TransactionID extends js.Object {
 object TransactionID {
   @scala.inline
   def apply(txid: String): TransactionID = {
-    val __obj = js.Dynamic.literal(txid = txid)
+    val __obj = js.Dynamic.literal(txid = txid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransactionID]
   }

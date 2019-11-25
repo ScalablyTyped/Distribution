@@ -16,7 +16,7 @@ trait LabelsLayerEvent[I] extends js.Object {
 object LabelsLayerEvent {
   @scala.inline
   def apply[I](data: EventData, lnglat: LngLat, pixel: Pixel, target: I): LabelsLayerEvent[I] = {
-    val __obj = js.Dynamic.literal(data = data, lnglat = lnglat, pixel = pixel, target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], pixel = pixel.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LabelsLayerEvent[I]]
   }

@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait CloseReason extends js.Object
 
+object CloseReason {
+  @scala.inline
+  def blur: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.blur = this.cast("blur")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def escapeKeyDown: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.escapeKeyDown = this.cast("escapeKeyDown")
+  @scala.inline
+  def mouseLeave: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.mouseLeave = this.cast("mouseLeave")
+  @scala.inline
+  def toggle: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.toggle = this.cast("toggle")
+}
+

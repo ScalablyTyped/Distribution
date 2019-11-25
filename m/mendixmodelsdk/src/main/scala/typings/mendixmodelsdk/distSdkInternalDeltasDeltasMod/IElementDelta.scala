@@ -11,7 +11,7 @@ trait IElementDelta extends IDelta {
 object IElementDelta {
   @scala.inline
   def apply(elementId: String, unitId: String): IElementDelta = {
-    val __obj = js.Dynamic.literal(elementId = elementId, unitId = unitId)
+    val __obj = js.Dynamic.literal(elementId = elementId.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IElementDelta]
   }

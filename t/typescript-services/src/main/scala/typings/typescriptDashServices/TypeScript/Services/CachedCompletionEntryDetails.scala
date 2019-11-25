@@ -19,8 +19,8 @@ object CachedCompletionEntryDetails {
     name: String,
     `type`: String
   ): CachedCompletionEntryDetails = {
-    val __obj = js.Dynamic.literal(docComment = docComment, fullSymbolName = fullSymbolName, isResolved = js.Any.fromFunction0(isResolved), kind = kind, kindModifiers = kindModifiers, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(docComment = docComment.asInstanceOf[js.Any], fullSymbolName = fullSymbolName.asInstanceOf[js.Any], isResolved = js.Any.fromFunction0(isResolved), kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachedCompletionEntryDetails]
   }
 }

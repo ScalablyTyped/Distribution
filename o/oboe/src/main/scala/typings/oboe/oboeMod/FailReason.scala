@@ -21,10 +21,10 @@ object FailReason {
     thrown: Error = null
   ): FailReason = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (jsonBody != null) __obj.updateDynamic("jsonBody")(jsonBody)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (jsonBody != null) __obj.updateDynamic("jsonBody")(jsonBody.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (thrown != null) __obj.updateDynamic("thrown")(thrown)
+    if (thrown != null) __obj.updateDynamic("thrown")(thrown.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailReason]
   }
 }

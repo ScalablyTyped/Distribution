@@ -14,9 +14,9 @@ object Anon_BeginsWith {
   @scala.inline
   def apply(beginsWith: String = null, limit: Int | Double = null, startAt: String = null): Anon_BeginsWith = {
     val __obj = js.Dynamic.literal()
-    if (beginsWith != null) __obj.updateDynamic("beginsWith")(beginsWith)
+    if (beginsWith != null) __obj.updateDynamic("beginsWith")(beginsWith.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt)
+    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BeginsWith]
   }
 }

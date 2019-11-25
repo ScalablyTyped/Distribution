@@ -13,8 +13,8 @@ object CommandOptions {
   @scala.inline
   def apply(failsafe: js.UndefOr[Boolean] = js.undefined, silent: js.UndefOr[Boolean] = js.undefined): CommandOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(failsafe)) __obj.updateDynamic("failsafe")(failsafe)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(failsafe)) __obj.updateDynamic("failsafe")(failsafe.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandOptions]
   }
 }

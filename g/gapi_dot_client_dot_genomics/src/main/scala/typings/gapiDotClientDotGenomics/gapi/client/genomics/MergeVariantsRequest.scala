@@ -25,9 +25,9 @@ object MergeVariantsRequest {
     variants: js.Array[Variant] = null
   ): MergeVariantsRequest = {
     val __obj = js.Dynamic.literal()
-    if (infoMergeConfig != null) __obj.updateDynamic("infoMergeConfig")(infoMergeConfig)
-    if (variantSetId != null) __obj.updateDynamic("variantSetId")(variantSetId)
-    if (variants != null) __obj.updateDynamic("variants")(variants)
+    if (infoMergeConfig != null) __obj.updateDynamic("infoMergeConfig")(infoMergeConfig.asInstanceOf[js.Any])
+    if (variantSetId != null) __obj.updateDynamic("variantSetId")(variantSetId.asInstanceOf[js.Any])
+    if (variants != null) __obj.updateDynamic("variants")(variants.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeVariantsRequest]
   }
 }

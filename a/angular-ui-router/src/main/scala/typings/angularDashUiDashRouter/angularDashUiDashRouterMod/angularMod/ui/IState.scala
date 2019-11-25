@@ -2,7 +2,6 @@ package typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.angularMod._Global_.Function
-import typings.angularDashUiDashRouter.Fn_Params
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,7 +65,12 @@ trait IState extends js.Object {
   /**
     * String HTML content, or function that returns an HTML string
     */
-  var template: js.UndefOr[String | Fn_Params] = js.undefined
+  var template: js.UndefOr[
+    String | (js.Function1[
+      /* params */ typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService, 
+      String
+    ])
+  ] = js.undefined
   /**
     * Function, returns HTML content string
     */
@@ -74,7 +78,12 @@ trait IState extends js.Object {
   /**
     * String URL path to template file OR Function, returns URL path string
     */
-  var templateUrl: js.UndefOr[String | Fn_Params] = js.undefined
+  var templateUrl: js.UndefOr[
+    String | (js.Function1[
+      /* params */ typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService, 
+      String
+    ])
+  ] = js.undefined
   /**
     * A url with optional parameters. When a state is navigated or transitioned to, the $stateParams service will be populated with any parameters that were passed.
     */
@@ -107,33 +116,39 @@ object IState {
     redirectTo: String | Function | typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState = null,
     reloadOnSearch: js.UndefOr[Boolean] = js.undefined,
     resolve: StringDictionary[js.Any] = null,
-    template: String | Fn_Params = null,
+    template: String | (js.Function1[
+      /* params */ typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService, 
+      String
+    ]) = null,
     templateProvider: Function | (js.Array[String | Function]) = null,
-    templateUrl: String | Fn_Params = null,
+    templateUrl: String | (js.Function1[
+      /* params */ typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IStateParamsService, 
+      String
+    ]) = null,
     url: String | typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IUrlMatcher = null,
     views: StringDictionary[typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState] = null
   ): IState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (component != null) __obj.updateDynamic("component")(component)
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
     if (controllerProvider != null) __obj.updateDynamic("controllerProvider")(controllerProvider.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
     if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadOnSearch)) __obj.updateDynamic("reloadOnSearch")(reloadOnSearch)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (!js.isUndefined(reloadOnSearch)) __obj.updateDynamic("reloadOnSearch")(reloadOnSearch.asInstanceOf[js.Any])
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateProvider != null) __obj.updateDynamic("templateProvider")(templateProvider.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views)
+    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[IState]
   }
 }

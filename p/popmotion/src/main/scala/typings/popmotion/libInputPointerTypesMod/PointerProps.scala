@@ -22,7 +22,7 @@ object PointerProps {
     y: Int | Double = null
   ): PointerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault)
+    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])

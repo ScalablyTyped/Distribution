@@ -32,16 +32,16 @@ object DatafeedStatus {
     warnings: js.Array[DatafeedStatusError] = null
   ): DatafeedStatus = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (datafeedId != null) __obj.updateDynamic("datafeedId")(datafeedId)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (itemsTotal != null) __obj.updateDynamic("itemsTotal")(itemsTotal)
-    if (itemsValid != null) __obj.updateDynamic("itemsValid")(itemsValid)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (lastUploadDate != null) __obj.updateDynamic("lastUploadDate")(lastUploadDate)
-    if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (datafeedId != null) __obj.updateDynamic("datafeedId")(datafeedId.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (itemsTotal != null) __obj.updateDynamic("itemsTotal")(itemsTotal.asInstanceOf[js.Any])
+    if (itemsValid != null) __obj.updateDynamic("itemsValid")(itemsValid.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (lastUploadDate != null) __obj.updateDynamic("lastUploadDate")(lastUploadDate.asInstanceOf[js.Any])
+    if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedStatus]
   }
 }

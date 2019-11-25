@@ -29,7 +29,7 @@ object DEVICE {
     VENDOR: String,
     WEARABLE: String
   ): DEVICE = {
-    val __obj = js.Dynamic.literal(CONSOLE = CONSOLE, EMBEDDED = EMBEDDED, MOBILE = MOBILE, MODEL = MODEL, SMARTTV = SMARTTV, TABLET = TABLET, TYPE = TYPE, VENDOR = VENDOR, WEARABLE = WEARABLE)
+    val __obj = js.Dynamic.literal(CONSOLE = CONSOLE.asInstanceOf[js.Any], EMBEDDED = EMBEDDED.asInstanceOf[js.Any], MOBILE = MOBILE.asInstanceOf[js.Any], MODEL = MODEL.asInstanceOf[js.Any], SMARTTV = SMARTTV.asInstanceOf[js.Any], TABLET = TABLET.asInstanceOf[js.Any], TYPE = TYPE.asInstanceOf[js.Any], VENDOR = VENDOR.asInstanceOf[js.Any], WEARABLE = WEARABLE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DEVICE]
   }

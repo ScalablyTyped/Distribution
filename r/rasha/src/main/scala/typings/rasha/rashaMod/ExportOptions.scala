@@ -13,7 +13,7 @@ trait ExportOptions extends js.Object {
 object ExportOptions {
   @scala.inline
   def apply(format: String, jwk: Jwk, public: Boolean): ExportOptions = {
-    val __obj = js.Dynamic.literal(format = format, jwk = jwk, public = public)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], jwk = jwk.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExportOptions]
   }

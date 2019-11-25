@@ -24,9 +24,9 @@ object Attachment {
     url: String,
     thumbnails: Anon_Full = null
   ): Attachment = {
-    val __obj = js.Dynamic.literal(filename = filename, id = id, size = size, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
 }

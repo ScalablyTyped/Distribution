@@ -21,9 +21,9 @@ object ConfigInfo {
     Spec: ConfigSpec = null,
     UpdatedAt: String = null
   ): ConfigInfo = {
-    val __obj = js.Dynamic.literal(CreatedAt = CreatedAt, ID = ID, Version = Version)
-    if (Spec != null) __obj.updateDynamic("Spec")(Spec)
-    if (UpdatedAt != null) __obj.updateDynamic("UpdatedAt")(UpdatedAt)
+    val __obj = js.Dynamic.literal(CreatedAt = CreatedAt.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
+    if (Spec != null) __obj.updateDynamic("Spec")(Spec.asInstanceOf[js.Any])
+    if (UpdatedAt != null) __obj.updateDynamic("UpdatedAt")(UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigInfo]
   }
 }

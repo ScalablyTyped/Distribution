@@ -15,7 +15,7 @@ trait BalanceLineNative extends js.Object {
 object BalanceLineNative {
   @scala.inline
   def apply(asset_type: native, balance: String, buying_liabilities: String, selling_liabilities: String): BalanceLineNative = {
-    val __obj = js.Dynamic.literal(asset_type = asset_type, balance = balance, buying_liabilities = buying_liabilities, selling_liabilities = selling_liabilities)
+    val __obj = js.Dynamic.literal(asset_type = asset_type.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], buying_liabilities = buying_liabilities.asInstanceOf[js.Any], selling_liabilities = selling_liabilities.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BalanceLineNative]
   }

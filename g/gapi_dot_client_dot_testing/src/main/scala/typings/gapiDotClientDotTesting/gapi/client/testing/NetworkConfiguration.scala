@@ -20,9 +20,9 @@ object NetworkConfiguration {
   @scala.inline
   def apply(downRule: TrafficRule = null, id: String = null, upRule: TrafficRule = null): NetworkConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (downRule != null) __obj.updateDynamic("downRule")(downRule)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (upRule != null) __obj.updateDynamic("upRule")(upRule)
+    if (downRule != null) __obj.updateDynamic("downRule")(downRule.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (upRule != null) __obj.updateDynamic("upRule")(upRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkConfiguration]
   }
 }

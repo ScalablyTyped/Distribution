@@ -1,7 +1,6 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services.Formatting
 
 import typings.typescriptDashServices.FormattingOptions
-import typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingRequestKind
 import typings.typescriptDashServices.TypeScript.Services.Formatting.ITextSnapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +17,7 @@ class Formatter protected ()
     options: FormattingOptions,
     snapshot: ITextSnapshot,
     rulesProvider: typings.typescriptDashServices.TypeScript.Services.Formatting.RulesProvider,
-    formattingRequestKind: FormattingRequestKind
+    formattingRequestKind: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingRequestKind
   ) = this()
 }
 
@@ -33,7 +32,7 @@ object Formatter extends js.Object {
     indentFirstToken: Boolean,
     snapshot: ITextSnapshot,
     rulesProvider: typings.typescriptDashServices.TypeScript.Services.Formatting.RulesProvider,
-    formattingRequestKind: FormattingRequestKind
+    formattingRequestKind: typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingRequestKind
   ): js.Array[typings.typescriptDashServices.TypeScript.Services.Formatting.TextEditInfo] = js.native
 }
 

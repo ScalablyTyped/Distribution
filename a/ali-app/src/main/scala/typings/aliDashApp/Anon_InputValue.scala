@@ -12,7 +12,7 @@ trait Anon_InputValue extends js.Object {
 object Anon_InputValue {
   @scala.inline
   def apply(inputValue: String, ok: Boolean): Anon_InputValue = {
-    val __obj = js.Dynamic.literal(inputValue = inputValue, ok = ok)
+    val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InputValue]
   }

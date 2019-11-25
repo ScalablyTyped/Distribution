@@ -19,8 +19,8 @@ object GetTempFileOptions {
   ): GetTempFileOptions = {
     val __obj = js.Dynamic.literal()
     if (disposer != null) __obj.updateDynamic("disposer")(js.Any.fromFunction1(disposer))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTempFileOptions]
   }
 }

@@ -15,7 +15,7 @@ object Anon_SubscriptionData {
     subscriptionData: Anon_DataTSubscriptionData[TSubscriptionData],
     variables: TSubscriptionVariables = null
   ): Anon_SubscriptionData[TSubscriptionData, TSubscriptionVariables] = {
-    val __obj = js.Dynamic.literal(subscriptionData = subscriptionData)
+    val __obj = js.Dynamic.literal(subscriptionData = subscriptionData.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SubscriptionData[TSubscriptionData, TSubscriptionVariables]]
   }

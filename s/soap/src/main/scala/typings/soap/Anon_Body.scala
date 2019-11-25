@@ -12,7 +12,7 @@ object Anon_Body {
   @scala.inline
   def apply(body: js.Any = null): Anon_Body = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

@@ -24,8 +24,8 @@ object Anon_ContentFormat {
     dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   ): Anon_ContentFormat = {
     val __obj = js.Dynamic.literal()
-    if (contentFormat != null) __obj.updateDynamic("contentFormat")(contentFormat)
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
+    if (contentFormat != null) __obj.updateDynamic("contentFormat")(contentFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentFormat]
   }
 }

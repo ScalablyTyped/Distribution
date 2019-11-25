@@ -19,7 +19,7 @@ trait Loggable extends js.Object {
 object Loggable {
   @scala.inline
   def apply(log: Boolean): Loggable = {
-    val __obj = js.Dynamic.literal(log = log)
+    val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Loggable]
   }

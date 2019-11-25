@@ -12,7 +12,7 @@ object RTCOfferAnswerOptions {
   @scala.inline
   def apply(voiceActivityDetection: js.UndefOr[scala.Boolean] = js.undefined): RTCOfferAnswerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection)
+    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCOfferAnswerOptions]
   }
 }

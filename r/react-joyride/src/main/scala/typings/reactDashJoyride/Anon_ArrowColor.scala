@@ -30,13 +30,13 @@ object Anon_ArrowColor {
     zIndex: Int | Double = null
   ): Anon_ArrowColor = {
     val __obj = js.Dynamic.literal()
-    if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (beaconSize != null) __obj.updateDynamic("beaconSize")(beaconSize.asInstanceOf[js.Any])
-    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor)
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
-    if (spotlightShadow != null) __obj.updateDynamic("spotlightShadow")(spotlightShadow)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor.asInstanceOf[js.Any])
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
+    if (spotlightShadow != null) __obj.updateDynamic("spotlightShadow")(spotlightShadow.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArrowColor]

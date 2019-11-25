@@ -65,23 +65,23 @@ object toastOptions {
     textAlign: left | right | center = null,
     textColor: String = null
   ): toastOptions = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (afterHidden != null) __obj.updateDynamic("afterHidden")(js.Any.fromFunction0(afterHidden))
     if (afterShown != null) __obj.updateDynamic("afterShown")(js.Any.fromFunction0(afterShown))
-    if (!js.isUndefined(allowToastClose)) __obj.updateDynamic("allowToastClose")(allowToastClose)
+    if (!js.isUndefined(allowToastClose)) __obj.updateDynamic("allowToastClose")(allowToastClose.asInstanceOf[js.Any])
     if (beforeHide != null) __obj.updateDynamic("beforeHide")(js.Any.fromFunction0(beforeHide))
     if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction0(beforeShow))
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
-    if (heading != null) __obj.updateDynamic("heading")(heading)
+    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     if (hideAfter != null) __obj.updateDynamic("hideAfter")(hideAfter.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(loader)) __obj.updateDynamic("loader")(loader)
-    if (loaderBg != null) __obj.updateDynamic("loaderBg")(loaderBg)
+    if (!js.isUndefined(loader)) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
+    if (loaderBg != null) __obj.updateDynamic("loaderBg")(loaderBg.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (showHideTransition != null) __obj.updateDynamic("showHideTransition")(showHideTransition.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[toastOptions]
   }
 }

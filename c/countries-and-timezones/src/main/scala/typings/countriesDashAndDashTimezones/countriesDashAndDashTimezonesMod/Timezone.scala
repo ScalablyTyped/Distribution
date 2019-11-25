@@ -25,9 +25,9 @@ object Timezone {
     aliasOf: String = null,
     country: String = null
   ): Timezone = {
-    val __obj = js.Dynamic.literal(dstOffset = dstOffset, dstOffsetStr = dstOffsetStr, name = name, utcOffset = utcOffset, utcOffsetStr = utcOffsetStr)
-    if (aliasOf != null) __obj.updateDynamic("aliasOf")(aliasOf)
-    if (country != null) __obj.updateDynamic("country")(country)
+    val __obj = js.Dynamic.literal(dstOffset = dstOffset.asInstanceOf[js.Any], dstOffsetStr = dstOffsetStr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], utcOffset = utcOffset.asInstanceOf[js.Any], utcOffsetStr = utcOffsetStr.asInstanceOf[js.Any])
+    if (aliasOf != null) __obj.updateDynamic("aliasOf")(aliasOf.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timezone]
   }
 }

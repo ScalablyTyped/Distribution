@@ -27,7 +27,7 @@ object TradePayOptions {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (tradeNO != null) __obj.updateDynamic("tradeNO")(tradeNO)
+    if (tradeNO != null) __obj.updateDynamic("tradeNO")(tradeNO.asInstanceOf[js.Any])
     __obj.asInstanceOf[TradePayOptions]
   }
 }

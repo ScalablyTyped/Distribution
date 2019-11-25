@@ -34,11 +34,11 @@ object SubscriptionArgs {
     subscribeFieldResolver: (_, StringDictionary[_], _, /* info */ GraphQLResolveInfo) => js.Any = null,
     variableValues: Maybe[Record[String, _]] = null
   ): SubscriptionArgs = {
-    val __obj = js.Dynamic.literal(document = document, schema = schema)
-    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue.asInstanceOf[js.Any])
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(js.Any.fromFunction4(fieldResolver))
     if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
-    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
+    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
     if (subscribeFieldResolver != null) __obj.updateDynamic("subscribeFieldResolver")(js.Any.fromFunction4(subscribeFieldResolver))
     if (variableValues != null) __obj.updateDynamic("variableValues")(variableValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionArgs]

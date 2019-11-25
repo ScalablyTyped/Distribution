@@ -23,7 +23,7 @@ object ScaleRangeSliderVisibleElements {
     preview: Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
   ): ScaleRangeSliderVisibleElements = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), preview = preview, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), preview = preview.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[ScaleRangeSliderVisibleElements]
   }

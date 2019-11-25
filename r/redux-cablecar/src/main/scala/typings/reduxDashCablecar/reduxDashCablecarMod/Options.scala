@@ -24,9 +24,9 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (connected != null) __obj.updateDynamic("connected")(js.Any.fromFunction0(connected))
     if (disconnected != null) __obj.updateDynamic("disconnected")(js.Any.fromFunction0(disconnected))
-    if (!js.isUndefined(optimisticOnFail)) __obj.updateDynamic("optimisticOnFail")(optimisticOnFail)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(optimisticOnFail)) __obj.updateDynamic("optimisticOnFail")(optimisticOnFail.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

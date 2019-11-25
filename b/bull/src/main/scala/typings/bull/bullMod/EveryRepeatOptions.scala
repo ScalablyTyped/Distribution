@@ -20,10 +20,10 @@ object EveryRepeatOptions {
     limit: Int | Double = null,
     tz: String = null
   ): EveryRepeatOptions = {
-    val __obj = js.Dynamic.literal(every = every)
+    val __obj = js.Dynamic.literal(every = every.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (tz != null) __obj.updateDynamic("tz")(tz)
+    if (tz != null) __obj.updateDynamic("tz")(tz.asInstanceOf[js.Any])
     __obj.asInstanceOf[EveryRepeatOptions]
   }
 }

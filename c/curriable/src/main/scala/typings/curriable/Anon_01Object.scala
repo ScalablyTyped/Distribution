@@ -16,7 +16,7 @@ object Anon_01Object {
     `1`: R
   ): Anon_01Object[R] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("0")(`0`)
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_01Object[R]]
   }

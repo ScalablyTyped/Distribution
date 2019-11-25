@@ -78,13 +78,13 @@ object SourceControl {
     rootUri: Uri = null,
     statusBarCommands: js.Array[Command] = null
   ): SourceControl = {
-    val __obj = js.Dynamic.literal(createResourceGroup = js.Any.fromFunction2(createResourceGroup), dispose = js.Any.fromFunction0(dispose), id = id, inputBox = inputBox, label = label)
-    if (acceptInputCommand != null) __obj.updateDynamic("acceptInputCommand")(acceptInputCommand)
-    if (commitTemplate != null) __obj.updateDynamic("commitTemplate")(commitTemplate)
+    val __obj = js.Dynamic.literal(createResourceGroup = js.Any.fromFunction2(createResourceGroup), dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], inputBox = inputBox.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (acceptInputCommand != null) __obj.updateDynamic("acceptInputCommand")(acceptInputCommand.asInstanceOf[js.Any])
+    if (commitTemplate != null) __obj.updateDynamic("commitTemplate")(commitTemplate.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (quickDiffProvider != null) __obj.updateDynamic("quickDiffProvider")(quickDiffProvider)
-    if (rootUri != null) __obj.updateDynamic("rootUri")(rootUri)
-    if (statusBarCommands != null) __obj.updateDynamic("statusBarCommands")(statusBarCommands)
+    if (quickDiffProvider != null) __obj.updateDynamic("quickDiffProvider")(quickDiffProvider.asInstanceOf[js.Any])
+    if (rootUri != null) __obj.updateDynamic("rootUri")(rootUri.asInstanceOf[js.Any])
+    if (statusBarCommands != null) __obj.updateDynamic("statusBarCommands")(statusBarCommands.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceControl]
   }
 }

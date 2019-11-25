@@ -21,9 +21,6 @@ trait rcDashMentionsProps {
   def MentionsProps: typings.rcDashMentions.esMentionsMod.MentionsProps.type = typings.rcDashMentions.esMentionsMod.MentionsProps
   type MentionsProps = typings.rcDashMentions.esMentionsMod.MentionsProps
   @scala.inline
-  def MentionsOptionProps: typings.rcDashMentions.esOptionMod.OptionProps.type = typings.rcDashMentions.esOptionMod.OptionProps
-  type MentionsOptionProps = typings.rcDashMentions.esOptionMod.OptionProps
-  @scala.inline
   def OptionProps: typings.rcDashMentions.esOptionMod.OptionProps.type = typings.rcDashMentions.esOptionMod.OptionProps
   type OptionProps = typings.rcDashMentions.esOptionMod.OptionProps
 }

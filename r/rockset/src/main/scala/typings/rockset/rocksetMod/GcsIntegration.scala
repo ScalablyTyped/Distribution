@@ -13,7 +13,7 @@ object GcsIntegration {
   @scala.inline
   def apply(gcp_service_account: GcpServiceAccount = null): GcsIntegration = {
     val __obj = js.Dynamic.literal()
-    if (gcp_service_account != null) __obj.updateDynamic("gcp_service_account")(gcp_service_account)
+    if (gcp_service_account != null) __obj.updateDynamic("gcp_service_account")(gcp_service_account.asInstanceOf[js.Any])
     __obj.asInstanceOf[GcsIntegration]
   }
 }

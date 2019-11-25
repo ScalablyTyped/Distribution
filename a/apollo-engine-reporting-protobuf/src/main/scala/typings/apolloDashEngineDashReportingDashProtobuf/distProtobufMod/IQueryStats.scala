@@ -28,11 +28,11 @@ object IQueryStats {
     typeStatsWithContext: js.Array[IContextualizedTypeStats] = null
   ): IQueryStats = {
     val __obj = js.Dynamic.literal()
-    if (perClientName != null) __obj.updateDynamic("perClientName")(perClientName)
-    if (perType != null) __obj.updateDynamic("perType")(perType)
-    if (perTypeStat != null) __obj.updateDynamic("perTypeStat")(perTypeStat)
-    if (queryStatsWithContext != null) __obj.updateDynamic("queryStatsWithContext")(queryStatsWithContext)
-    if (typeStatsWithContext != null) __obj.updateDynamic("typeStatsWithContext")(typeStatsWithContext)
+    if (perClientName != null) __obj.updateDynamic("perClientName")(perClientName.asInstanceOf[js.Any])
+    if (perType != null) __obj.updateDynamic("perType")(perType.asInstanceOf[js.Any])
+    if (perTypeStat != null) __obj.updateDynamic("perTypeStat")(perTypeStat.asInstanceOf[js.Any])
+    if (queryStatsWithContext != null) __obj.updateDynamic("queryStatsWithContext")(queryStatsWithContext.asInstanceOf[js.Any])
+    if (typeStatsWithContext != null) __obj.updateDynamic("typeStatsWithContext")(typeStatsWithContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryStats]
   }
 }

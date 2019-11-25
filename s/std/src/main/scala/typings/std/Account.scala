@@ -24,9 +24,9 @@ object Account {
     imageURL: java.lang.String = null,
     name: java.lang.String = null
   ): Account = {
-    val __obj = js.Dynamic.literal(displayName = displayName, id = id, rpDisplayName = rpDisplayName)
-    if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], rpDisplayName = rpDisplayName.asInstanceOf[js.Any])
+    if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
 }

@@ -40,8 +40,8 @@ object CollisionOptions {
     val __obj = js.Dynamic.literal()
     if (defaultCollidingSlope != null) __obj.updateDynamic("defaultCollidingSlope")(defaultCollidingSlope.asInstanceOf[js.Any])
     if (defaultNonCollidingSlope != null) __obj.updateDynamic("defaultNonCollidingSlope")(defaultNonCollidingSlope.asInstanceOf[js.Any])
-    if (slopeMap != null) __obj.updateDynamic("slopeMap")(slopeMap)
-    if (slopeTileProperty != null) __obj.updateDynamic("slopeTileProperty")(slopeTileProperty)
+    if (slopeMap != null) __obj.updateDynamic("slopeMap")(slopeMap.asInstanceOf[js.Any])
+    if (slopeTileProperty != null) __obj.updateDynamic("slopeTileProperty")(slopeTileProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollisionOptions]
   }
 }

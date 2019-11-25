@@ -33,9 +33,9 @@ object ResultTable {
     rows: js.Array[js.Array[_]] = null
   ): ResultTable = {
     val __obj = js.Dynamic.literal()
-    if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultTable]
   }
 }

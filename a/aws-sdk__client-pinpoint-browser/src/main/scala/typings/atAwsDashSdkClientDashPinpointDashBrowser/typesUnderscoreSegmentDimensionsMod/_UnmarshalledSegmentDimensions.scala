@@ -54,12 +54,12 @@ object _UnmarshalledSegmentDimensions {
     UserAttributes: StringDictionary[_UnmarshalledAttributeDimension] = null
   ): _UnmarshalledSegmentDimensions = {
     val __obj = js.Dynamic.literal()
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
-    if (Behavior != null) __obj.updateDynamic("Behavior")(Behavior)
-    if (Demographic != null) __obj.updateDynamic("Demographic")(Demographic)
-    if (Location != null) __obj.updateDynamic("Location")(Location)
-    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics)
-    if (UserAttributes != null) __obj.updateDynamic("UserAttributes")(UserAttributes)
+    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
+    if (Behavior != null) __obj.updateDynamic("Behavior")(Behavior.asInstanceOf[js.Any])
+    if (Demographic != null) __obj.updateDynamic("Demographic")(Demographic.asInstanceOf[js.Any])
+    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
+    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
+    if (UserAttributes != null) __obj.updateDynamic("UserAttributes")(UserAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSegmentDimensions]
   }
 }

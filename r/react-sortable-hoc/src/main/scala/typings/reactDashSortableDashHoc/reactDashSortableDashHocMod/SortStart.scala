@@ -15,7 +15,7 @@ trait SortStart extends js.Object {
 object SortStart {
   @scala.inline
   def apply(collection: Offset, index: Double, isKeySorting: Boolean, node: Element): SortStart = {
-    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], index = index, isKeySorting = isKeySorting, node = node)
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isKeySorting = isKeySorting.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortStart]
   }

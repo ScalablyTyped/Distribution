@@ -12,7 +12,7 @@ trait Anon_IsRemoved extends js.Object {
 object Anon_IsRemoved {
   @scala.inline
   def apply(isRemoved: Boolean, uniqueName: String): Anon_IsRemoved = {
-    val __obj = js.Dynamic.literal(isRemoved = isRemoved, uniqueName = uniqueName)
+    val __obj = js.Dynamic.literal(isRemoved = isRemoved.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsRemoved]
   }

@@ -29,7 +29,7 @@ object Anon_ActualDataSize {
     requestTime: Double,
     sentIncorrectSize: Boolean
   ): Anon_ActualDataSize = {
-    val __obj = js.Dynamic.literal(actualDataSize = actualDataSize, code = code, contentLength = contentLength, contentType = contentType, downloadTime = downloadTime, headers = headers, requestLatency = requestLatency, requestTime = requestTime, sentIncorrectSize = sentIncorrectSize)
+    val __obj = js.Dynamic.literal(actualDataSize = actualDataSize.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], contentLength = contentLength.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], downloadTime = downloadTime.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], requestLatency = requestLatency.asInstanceOf[js.Any], requestTime = requestTime.asInstanceOf[js.Any], sentIncorrectSize = sentIncorrectSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActualDataSize]
   }

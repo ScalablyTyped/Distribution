@@ -12,7 +12,7 @@ trait UI extends js.Object {
 object UI {
   @scala.inline
   def apply(dynatree: DynatreeNamespace): UI = {
-    val __obj = js.Dynamic.literal(dynatree = dynatree)
+    val __obj = js.Dynamic.literal(dynatree = dynatree.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UI]
   }

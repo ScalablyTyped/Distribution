@@ -29,10 +29,10 @@ object Anon_Biding {
   ): Anon_Biding = {
     val __obj = js.Dynamic.literal()
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction3(handler))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(preloadData)) __obj.updateDynamic("preloadData")(preloadData)
-    if (rootInterface != null) __obj.updateDynamic("rootInterface")(rootInterface)
-    if (templateDelimiters != null) __obj.updateDynamic("templateDelimiters")(templateDelimiters)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(preloadData)) __obj.updateDynamic("preloadData")(preloadData.asInstanceOf[js.Any])
+    if (rootInterface != null) __obj.updateDynamic("rootInterface")(rootInterface.asInstanceOf[js.Any])
+    if (templateDelimiters != null) __obj.updateDynamic("templateDelimiters")(templateDelimiters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Biding]
   }
 }

@@ -28,8 +28,8 @@ object AsObject {
     version: String,
     sourceContext: typings.googleDashProtobuf.googleProtobufSourceUnderscoreContextUnderscorePbMod.SourceContext.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(methodsList = methodsList, mixinsList = mixinsList, name = name, optionsList = optionsList, syntax = syntax, version = version)
-    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext)
+    val __obj = js.Dynamic.literal(methodsList = methodsList.asInstanceOf[js.Any], mixinsList = mixinsList.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optionsList = optionsList.asInstanceOf[js.Any], syntax = syntax.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

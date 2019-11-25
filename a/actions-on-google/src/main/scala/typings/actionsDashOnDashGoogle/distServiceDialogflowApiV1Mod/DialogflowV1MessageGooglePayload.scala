@@ -16,9 +16,9 @@ trait DialogflowV1MessageGooglePayload
 object DialogflowV1MessageGooglePayload {
   @scala.inline
   def apply(platform: google, payload: ApiClientObjectMap[_] = null, `type`: custom_payload = null): DialogflowV1MessageGooglePayload = {
-    val __obj = js.Dynamic.literal(platform = platform)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1MessageGooglePayload]
   }
 }

@@ -55,19 +55,19 @@ object PlanDefinitionGoal {
     start: CodeableConcept = null,
     target: js.Array[PlanDefinitionGoalTarget] = null
   ): PlanDefinitionGoal = {
-    val __obj = js.Dynamic.literal(description = description)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (priority != null) __obj.updateDynamic("priority")(priority)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanDefinitionGoal]
   }
 }

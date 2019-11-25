@@ -26,7 +26,7 @@ object UnitFormatterOptions {
   ): UnitFormatterOptions = {
     val __obj = js.Dynamic.literal()
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (numberFormatter != null) __obj.updateDynamic("numberFormatter")(numberFormatter)
+    if (numberFormatter != null) __obj.updateDynamic("numberFormatter")(numberFormatter.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitFormatterOptions]
   }
 }

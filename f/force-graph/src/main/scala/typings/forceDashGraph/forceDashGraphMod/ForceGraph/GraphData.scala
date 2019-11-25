@@ -15,7 +15,7 @@ trait GraphData extends js.Object {
 object GraphData {
   @scala.inline
   def apply(links: js.Array[GraphLink], nodes: js.Array[GraphNode]): GraphData = {
-    val __obj = js.Dynamic.literal(links = links, nodes = nodes)
+    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GraphData]
   }

@@ -14,9 +14,9 @@ object GlobalHookOptions {
   @scala.inline
   def apply(after: LocalHookOptions = null, all: LocalHookOptions = null, before: LocalHookOptions = null): GlobalHookOptions = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (all != null) __obj.updateDynamic("all")(all)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalHookOptions]
   }
 }

@@ -32,16 +32,16 @@ object CompileOptions {
     strict: js.UndefOr[Boolean] = js.undefined
   ): CompileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assumeObjects)) __obj.updateDynamic("assumeObjects")(assumeObjects)
-    if (!js.isUndefined(compat)) __obj.updateDynamic("compat")(compat)
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(explicitPartialContext)) __obj.updateDynamic("explicitPartialContext")(explicitPartialContext)
-    if (!js.isUndefined(ignoreStandalone)) __obj.updateDynamic("ignoreStandalone")(ignoreStandalone)
-    if (knownHelpers != null) __obj.updateDynamic("knownHelpers")(knownHelpers)
-    if (!js.isUndefined(knownHelpersOnly)) __obj.updateDynamic("knownHelpersOnly")(knownHelpersOnly)
-    if (!js.isUndefined(noEscape)) __obj.updateDynamic("noEscape")(noEscape)
-    if (!js.isUndefined(preventIndent)) __obj.updateDynamic("preventIndent")(preventIndent)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(assumeObjects)) __obj.updateDynamic("assumeObjects")(assumeObjects.asInstanceOf[js.Any])
+    if (!js.isUndefined(compat)) __obj.updateDynamic("compat")(compat.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(explicitPartialContext)) __obj.updateDynamic("explicitPartialContext")(explicitPartialContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreStandalone)) __obj.updateDynamic("ignoreStandalone")(ignoreStandalone.asInstanceOf[js.Any])
+    if (knownHelpers != null) __obj.updateDynamic("knownHelpers")(knownHelpers.asInstanceOf[js.Any])
+    if (!js.isUndefined(knownHelpersOnly)) __obj.updateDynamic("knownHelpersOnly")(knownHelpersOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEscape)) __obj.updateDynamic("noEscape")(noEscape.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventIndent)) __obj.updateDynamic("preventIndent")(preventIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileOptions]
   }
 }

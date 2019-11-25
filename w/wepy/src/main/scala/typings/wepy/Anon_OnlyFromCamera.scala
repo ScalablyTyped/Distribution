@@ -13,8 +13,8 @@ object Anon_OnlyFromCamera {
   @scala.inline
   def apply(onlyFromCamera: js.UndefOr[Boolean] = js.undefined, scanType: js.Array[String] = null): Anon_OnlyFromCamera = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(onlyFromCamera)) __obj.updateDynamic("onlyFromCamera")(onlyFromCamera)
-    if (scanType != null) __obj.updateDynamic("scanType")(scanType)
+    if (!js.isUndefined(onlyFromCamera)) __obj.updateDynamic("onlyFromCamera")(onlyFromCamera.asInstanceOf[js.Any])
+    if (scanType != null) __obj.updateDynamic("scanType")(scanType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OnlyFromCamera]
   }
 }

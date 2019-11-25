@@ -54,7 +54,7 @@ object Product {
     price: Double,
     productIdentifier: String
   ): Product = {
-    val __obj = js.Dynamic.literal(contentLengths = contentLengths, contentVersion = contentVersion, formattedPrice = formattedPrice, isDownloadable = isDownloadable, localizedDescription = localizedDescription, localizedTitle = localizedTitle, price = price, productIdentifier = productIdentifier)
+    val __obj = js.Dynamic.literal(contentLengths = contentLengths.asInstanceOf[js.Any], contentVersion = contentVersion.asInstanceOf[js.Any], formattedPrice = formattedPrice.asInstanceOf[js.Any], isDownloadable = isDownloadable.asInstanceOf[js.Any], localizedDescription = localizedDescription.asInstanceOf[js.Any], localizedTitle = localizedTitle.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], productIdentifier = productIdentifier.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Product]
   }

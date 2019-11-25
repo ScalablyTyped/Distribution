@@ -14,8 +14,8 @@ trait StorageStatics extends js.Object {
 object StorageStatics {
   @scala.inline
   def apply(TaskEvent: TaskEvent, TaskState: TaskState, Native: Anon_CACHESDIRECTORYPATH = null): StorageStatics = {
-    val __obj = js.Dynamic.literal(TaskEvent = TaskEvent, TaskState = TaskState)
-    if (Native != null) __obj.updateDynamic("Native")(Native)
+    val __obj = js.Dynamic.literal(TaskEvent = TaskEvent.asInstanceOf[js.Any], TaskState = TaskState.asInstanceOf[js.Any])
+    if (Native != null) __obj.updateDynamic("Native")(Native.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageStatics]
   }
 }

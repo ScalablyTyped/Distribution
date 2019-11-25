@@ -21,7 +21,7 @@ object Options {
   @scala.inline
   def apply(https: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https)
+    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

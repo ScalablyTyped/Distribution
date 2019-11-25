@@ -32,8 +32,8 @@ object CanvasGetImageDataRes {
     width: Int | Double = null
   ): CanvasGetImageDataRes = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasGetImageDataRes]

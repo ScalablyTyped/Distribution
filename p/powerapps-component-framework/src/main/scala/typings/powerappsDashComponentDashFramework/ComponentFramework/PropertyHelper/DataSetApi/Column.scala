@@ -59,10 +59,10 @@ object Column {
     isHidden: js.UndefOr[Boolean] = js.undefined,
     isPrimary: js.UndefOr[Boolean] = js.undefined
   ): Column = {
-    val __obj = js.Dynamic.literal(alias = alias, dataType = dataType, displayName = displayName, name = name, order = order, visualSizeFactor = visualSizeFactor)
-    if (!js.isUndefined(disableSorting)) __obj.updateDynamic("disableSorting")(disableSorting)
-    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden)
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], visualSizeFactor = visualSizeFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSorting)) __obj.updateDynamic("disableSorting")(disableSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
 }

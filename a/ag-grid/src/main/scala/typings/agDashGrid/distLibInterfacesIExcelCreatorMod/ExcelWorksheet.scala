@@ -12,7 +12,7 @@ trait ExcelWorksheet extends js.Object {
 object ExcelWorksheet {
   @scala.inline
   def apply(name: String, table: ExcelTable): ExcelWorksheet = {
-    val __obj = js.Dynamic.literal(name = name, table = table)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExcelWorksheet]
   }

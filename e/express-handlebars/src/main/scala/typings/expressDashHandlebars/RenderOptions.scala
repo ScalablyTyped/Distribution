@@ -20,10 +20,10 @@ object RenderOptions {
     partials: js.Any = null
   ): RenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (helpers != null) __obj.updateDynamic("helpers")(helpers)
-    if (partials != null) __obj.updateDynamic("partials")(partials)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (helpers != null) __obj.updateDynamic("helpers")(helpers.asInstanceOf[js.Any])
+    if (partials != null) __obj.updateDynamic("partials")(partials.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
 }

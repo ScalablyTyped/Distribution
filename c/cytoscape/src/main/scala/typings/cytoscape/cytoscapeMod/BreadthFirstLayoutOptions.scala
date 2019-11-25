@@ -43,15 +43,15 @@ object BreadthFirstLayoutOptions {
     spacingFactor: Int | Double = null,
     stop: /* e */ LayoutEventObject => Unit = null
   ): BreadthFirstLayoutOptions = {
-    val __obj = js.Dynamic.literal(circle = circle, directed = directed, fit = fit, maximalAdjustments = maximalAdjustments, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    val __obj = js.Dynamic.literal(circle = circle.asInstanceOf[js.Any], directed = directed.asInstanceOf[js.Any], fit = fit.asInstanceOf[js.Any], maximalAdjustments = maximalAdjustments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)
-    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap)
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.asInstanceOf[js.Any])
     if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (roots != null) __obj.updateDynamic("roots")(roots)
+    if (roots != null) __obj.updateDynamic("roots")(roots.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
     if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))

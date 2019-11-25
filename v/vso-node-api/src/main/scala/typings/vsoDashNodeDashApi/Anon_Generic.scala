@@ -13,7 +13,7 @@ trait Anon_Generic extends js.Object {
 object Anon_Generic {
   @scala.inline
   def apply(generic: Double, serviceHost: Double, teamProject: Double): Anon_Generic = {
-    val __obj = js.Dynamic.literal(generic = generic, serviceHost = serviceHost, teamProject = teamProject)
+    val __obj = js.Dynamic.literal(generic = generic.asInstanceOf[js.Any], serviceHost = serviceHost.asInstanceOf[js.Any], teamProject = teamProject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Generic]
   }

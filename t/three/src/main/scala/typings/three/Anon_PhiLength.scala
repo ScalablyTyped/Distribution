@@ -15,7 +15,7 @@ trait Anon_PhiLength extends js.Object {
 object Anon_PhiLength {
   @scala.inline
   def apply(phiLength: Double, phiStart: Double, points: js.Array[Vector2], segments: Double): Anon_PhiLength = {
-    val __obj = js.Dynamic.literal(phiLength = phiLength, phiStart = phiStart, points = points, segments = segments)
+    val __obj = js.Dynamic.literal(phiLength = phiLength.asInstanceOf[js.Any], phiStart = phiStart.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PhiLength]
   }

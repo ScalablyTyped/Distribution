@@ -19,8 +19,8 @@ object ListSessionsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, sessions: js.Array[Session] = null): ListSessionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (sessions != null) __obj.updateDynamic("sessions")(sessions)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (sessions != null) __obj.updateDynamic("sessions")(sessions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSessionsResponse]
   }
 }

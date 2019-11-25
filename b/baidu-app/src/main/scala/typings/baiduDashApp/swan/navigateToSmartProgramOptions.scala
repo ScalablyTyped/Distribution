@@ -34,11 +34,11 @@ object navigateToSmartProgramOptions {
     path: String = null,
     success: js.Any => Unit = null
   ): navigateToSmartProgramOptions = {
-    val __obj = js.Dynamic.literal(appKey = appKey)
+    val __obj = js.Dynamic.literal(appKey = appKey.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (extraData != null) __obj.updateDynamic("extraData")(extraData)
+    if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[navigateToSmartProgramOptions]
   }

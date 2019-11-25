@@ -42,16 +42,16 @@ object RouterStatusBgpPeerStatus {
     uptimeSeconds: String = null
   ): RouterStatusBgpPeerStatus = {
     val __obj = js.Dynamic.literal()
-    if (advertisedRoutes != null) __obj.updateDynamic("advertisedRoutes")(advertisedRoutes)
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
-    if (linkedVpnTunnel != null) __obj.updateDynamic("linkedVpnTunnel")(linkedVpnTunnel)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (advertisedRoutes != null) __obj.updateDynamic("advertisedRoutes")(advertisedRoutes.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (linkedVpnTunnel != null) __obj.updateDynamic("linkedVpnTunnel")(linkedVpnTunnel.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (numLearnedRoutes != null) __obj.updateDynamic("numLearnedRoutes")(numLearnedRoutes.asInstanceOf[js.Any])
-    if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (uptime != null) __obj.updateDynamic("uptime")(uptime)
-    if (uptimeSeconds != null) __obj.updateDynamic("uptimeSeconds")(uptimeSeconds)
+    if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (uptime != null) __obj.updateDynamic("uptime")(uptime.asInstanceOf[js.Any])
+    if (uptimeSeconds != null) __obj.updateDynamic("uptimeSeconds")(uptimeSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterStatusBgpPeerStatus]
   }
 }

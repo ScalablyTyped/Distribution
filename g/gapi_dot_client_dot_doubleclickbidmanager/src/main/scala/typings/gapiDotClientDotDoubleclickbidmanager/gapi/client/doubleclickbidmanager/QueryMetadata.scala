@@ -50,17 +50,17 @@ object QueryMetadata {
     title: String = null
   ): QueryMetadata = {
     val __obj = js.Dynamic.literal()
-    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (googleCloudStoragePathForLatestReport != null) __obj.updateDynamic("googleCloudStoragePathForLatestReport")(googleCloudStoragePathForLatestReport)
-    if (googleDrivePathForLatestReport != null) __obj.updateDynamic("googleDrivePathForLatestReport")(googleDrivePathForLatestReport)
-    if (latestReportRunTimeMs != null) __obj.updateDynamic("latestReportRunTimeMs")(latestReportRunTimeMs)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (googleCloudStoragePathForLatestReport != null) __obj.updateDynamic("googleCloudStoragePathForLatestReport")(googleCloudStoragePathForLatestReport.asInstanceOf[js.Any])
+    if (googleDrivePathForLatestReport != null) __obj.updateDynamic("googleDrivePathForLatestReport")(googleDrivePathForLatestReport.asInstanceOf[js.Any])
+    if (latestReportRunTimeMs != null) __obj.updateDynamic("latestReportRunTimeMs")(latestReportRunTimeMs.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (reportCount != null) __obj.updateDynamic("reportCount")(reportCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running)
-    if (!js.isUndefined(sendNotification)) __obj.updateDynamic("sendNotification")(sendNotification)
-    if (shareEmailAddress != null) __obj.updateDynamic("shareEmailAddress")(shareEmailAddress)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendNotification)) __obj.updateDynamic("sendNotification")(sendNotification.asInstanceOf[js.Any])
+    if (shareEmailAddress != null) __obj.updateDynamic("shareEmailAddress")(shareEmailAddress.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryMetadata]
   }
 }

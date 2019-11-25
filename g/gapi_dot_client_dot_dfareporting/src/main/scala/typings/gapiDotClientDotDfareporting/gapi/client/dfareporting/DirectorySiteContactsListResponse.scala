@@ -21,9 +21,9 @@ object DirectorySiteContactsListResponse {
     nextPageToken: String = null
   ): DirectorySiteContactsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (directorySiteContacts != null) __obj.updateDynamic("directorySiteContacts")(directorySiteContacts)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (directorySiteContacts != null) __obj.updateDynamic("directorySiteContacts")(directorySiteContacts.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectorySiteContactsListResponse]
   }
 }

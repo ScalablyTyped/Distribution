@@ -14,7 +14,7 @@ object IEntityTypeBatch {
   @scala.inline
   def apply(entityTypes: js.Array[IEntityType] = null): IEntityTypeBatch = {
     val __obj = js.Dynamic.literal()
-    if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes)
+    if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityTypeBatch]
   }
 }

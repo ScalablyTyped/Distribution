@@ -28,7 +28,7 @@ object Anon_Angular {
     shape: angular | bullet,
     threshold: Anon_Line
   ): Anon_Angular = {
-    val __obj = js.Dynamic.literal(axis = axis, bar = bar, bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderwidth = borderwidth, shape = shape.asInstanceOf[js.Any], threshold = threshold)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], bar = bar.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderwidth = borderwidth.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Angular]
   }

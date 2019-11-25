@@ -13,7 +13,7 @@ trait Anon_Position1 extends js.Object {
 object Anon_Position1 {
   @scala.inline
   def apply(position1: Cartesian2, position2: Cartesian2): Anon_Position1 = {
-    val __obj = js.Dynamic.literal(position1 = position1, position2 = position2)
+    val __obj = js.Dynamic.literal(position1 = position1.asInstanceOf[js.Any], position2 = position2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Position1]
   }

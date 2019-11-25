@@ -27,10 +27,10 @@ object ValidatorFormProps {
     onError: /* errors */ js.Array[_] => Unit = null
   ): ValidatorFormProps = {
     val __obj = js.Dynamic.literal(onSubmit = js.Any.fromFunction1(onSubmit))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (debounceTime != null) __obj.updateDynamic("debounceTime")(debounceTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(instantValidate)) __obj.updateDynamic("instantValidate")(instantValidate)
+    if (!js.isUndefined(instantValidate)) __obj.updateDynamic("instantValidate")(instantValidate.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     __obj.asInstanceOf[ValidatorFormProps]
   }

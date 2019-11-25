@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait _OverrideContextContext extends js.Object
 
+object _OverrideContextContext {
+  @scala.inline
+  def bookmark: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.bookmark = this.cast("bookmark")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def tab: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.tab = this.cast("tab")
+}
+

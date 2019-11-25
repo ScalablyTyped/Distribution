@@ -19,10 +19,10 @@ object SlotValue {
     resolutions: Resolutions = null,
     value: js.Any = null
   ): SlotValue = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (confirmationStatus != null) __obj.updateDynamic("confirmationStatus")(confirmationStatus)
-    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (confirmationStatus != null) __obj.updateDynamic("confirmationStatus")(confirmationStatus.asInstanceOf[js.Any])
+    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlotValue]
   }
 }

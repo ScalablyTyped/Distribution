@@ -20,8 +20,8 @@ object strings {
     TILE_SELECTOR: `DOTmdc-grid-tile`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(TILES_SELECTOR = TILES_SELECTOR, TILE_SELECTOR = TILE_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(TILES_SELECTOR = TILES_SELECTOR.asInstanceOf[js.Any], TILE_SELECTOR = TILE_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

@@ -27,11 +27,11 @@ object GetReleaseExecutableResponse {
     updateTime: String = null
   ): GetReleaseExecutableResponse = {
     val __obj = js.Dynamic.literal()
-    if (executable != null) __obj.updateDynamic("executable")(executable)
-    if (executableVersion != null) __obj.updateDynamic("executableVersion")(executableVersion)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (rulesetName != null) __obj.updateDynamic("rulesetName")(rulesetName)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (executable != null) __obj.updateDynamic("executable")(executable.asInstanceOf[js.Any])
+    if (executableVersion != null) __obj.updateDynamic("executableVersion")(executableVersion.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (rulesetName != null) __obj.updateDynamic("rulesetName")(rulesetName.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReleaseExecutableResponse]
   }
 }

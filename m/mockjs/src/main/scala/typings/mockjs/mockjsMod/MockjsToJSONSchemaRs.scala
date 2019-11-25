@@ -25,11 +25,11 @@ object MockjsToJSONSchemaRs {
     name: S = null,
     properties: js.Array[MockjsToJSONSchemaRs] = null
   ): MockjsToJSONSchemaRs = {
-    val __obj = js.Dynamic.literal(path = path, rule = rule, template = template)
-    __obj.updateDynamic("type")(`type`)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockjsToJSONSchemaRs]
   }
 }

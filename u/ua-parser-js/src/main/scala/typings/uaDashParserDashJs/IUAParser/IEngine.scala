@@ -21,8 +21,8 @@ object IEngine {
   @scala.inline
   def apply(name: String = null, version: String = null): IEngine = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEngine]
   }
 }

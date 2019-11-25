@@ -12,7 +12,7 @@ trait ReposDeleteResponse extends js.Object {
 object ReposDeleteResponse {
   @scala.inline
   def apply(documentation_url: String, message: String): ReposDeleteResponse = {
-    val __obj = js.Dynamic.literal(documentation_url = documentation_url, message = message)
+    val __obj = js.Dynamic.literal(documentation_url = documentation_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposDeleteResponse]
   }

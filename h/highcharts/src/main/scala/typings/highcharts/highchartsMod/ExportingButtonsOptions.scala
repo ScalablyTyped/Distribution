@@ -18,7 +18,7 @@ object ExportingButtonsOptions {
   @scala.inline
   def apply(contextButton: ExportingButtonsContextButtonOptions = null): ExportingButtonsOptions = {
     val __obj = js.Dynamic.literal()
-    if (contextButton != null) __obj.updateDynamic("contextButton")(contextButton)
+    if (contextButton != null) __obj.updateDynamic("contextButton")(contextButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingButtonsOptions]
   }
 }

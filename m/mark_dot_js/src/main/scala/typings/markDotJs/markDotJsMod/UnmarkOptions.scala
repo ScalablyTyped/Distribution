@@ -28,14 +28,14 @@ object UnmarkOptions {
     log: js.Object = null
   ): UnmarkOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction1(done))
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes.asInstanceOf[js.Any])
     if (iframesTimeout != null) __obj.updateDynamic("iframesTimeout")(iframesTimeout.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarkOptions]
   }
 }

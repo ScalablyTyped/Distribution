@@ -15,7 +15,7 @@ object _InvalidRequestExceptionDetails {
   @scala.inline
   def apply(Message: String = null): _InvalidRequestExceptionDetails = {
     val __obj = js.Dynamic.literal()
-    if (Message != null) __obj.updateDynamic("Message")(Message)
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[_InvalidRequestExceptionDetails]
   }
 }

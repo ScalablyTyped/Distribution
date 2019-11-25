@@ -40,14 +40,14 @@ object OpenLocationConfig {
     success: /* res */ js.UndefOr[js.Any] => Unit = null
   ): OpenLocationConfig = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (infoUrl != null) __obj.updateDynamic("infoUrl")(infoUrl)
+    if (infoUrl != null) __obj.updateDynamic("infoUrl")(infoUrl.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[OpenLocationConfig]

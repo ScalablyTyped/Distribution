@@ -41,11 +41,11 @@ object ExportVariantSetRequest {
     projectId: String = null
   ): ExportVariantSetRequest = {
     val __obj = js.Dynamic.literal()
-    if (bigqueryDataset != null) __obj.updateDynamic("bigqueryDataset")(bigqueryDataset)
-    if (bigqueryTable != null) __obj.updateDynamic("bigqueryTable")(bigqueryTable)
-    if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (bigqueryDataset != null) __obj.updateDynamic("bigqueryDataset")(bigqueryDataset.asInstanceOf[js.Any])
+    if (bigqueryTable != null) __obj.updateDynamic("bigqueryTable")(bigqueryTable.asInstanceOf[js.Any])
+    if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportVariantSetRequest]
   }
 }

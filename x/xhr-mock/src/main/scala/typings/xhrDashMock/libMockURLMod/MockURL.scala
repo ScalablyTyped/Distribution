@@ -19,7 +19,6 @@ trait MockURL extends js.Object {
 object MockURL {
   @scala.inline
   def apply(
-    toString: () => String,
     hash: String = null,
     host: String = null,
     password: String = null,
@@ -29,15 +28,15 @@ object MockURL {
     query: StringDictionary[String] = null,
     username: String = null
   ): MockURL = {
-    val __obj = js.Dynamic.literal(toString = js.Any.fromFunction0(toString))
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal()
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockURL]
   }
 }

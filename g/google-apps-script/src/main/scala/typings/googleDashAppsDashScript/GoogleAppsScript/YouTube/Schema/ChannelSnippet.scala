@@ -28,14 +28,14 @@ object ChannelSnippet {
     title: String = null
   ): ChannelSnippet = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (customUrl != null) __obj.updateDynamic("customUrl")(customUrl)
-    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (localized != null) __obj.updateDynamic("localized")(localized)
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (customUrl != null) __obj.updateDynamic("customUrl")(customUrl.asInstanceOf[js.Any])
+    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (localized != null) __obj.updateDynamic("localized")(localized.asInstanceOf[js.Any])
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSnippet]
   }
 }

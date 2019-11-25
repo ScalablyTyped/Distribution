@@ -14,9 +14,9 @@ object Domains2 {
   @scala.inline
   def apply(domains: js.Array[Domains] = null, etag: String = null, kind: String = null): Domains2 = {
     val __obj = js.Dynamic.literal()
-    if (domains != null) __obj.updateDynamic("domains")(domains)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Domains2]
   }
 }

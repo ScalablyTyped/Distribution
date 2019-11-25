@@ -12,8 +12,8 @@ trait Anon_ForceIncludeInactive extends js.Object {
 object Anon_ForceIncludeInactive {
   @scala.inline
   def apply(includeInactive: Boolean, force: js.UndefOr[Boolean] = js.undefined): Anon_ForceIncludeInactive = {
-    val __obj = js.Dynamic.literal(includeInactive = includeInactive)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    val __obj = js.Dynamic.literal(includeInactive = includeInactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ForceIncludeInactive]
   }
 }

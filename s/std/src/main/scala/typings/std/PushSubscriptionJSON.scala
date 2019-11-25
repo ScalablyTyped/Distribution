@@ -18,9 +18,9 @@ object PushSubscriptionJSON {
     keys: Record[java.lang.String, java.lang.String] = null
   ): PushSubscriptionJSON = {
     val __obj = js.Dynamic.literal()
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushSubscriptionJSON]
   }
 }

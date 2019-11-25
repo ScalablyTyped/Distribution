@@ -19,7 +19,7 @@ object WebpushFcmOptions {
   @scala.inline
   def apply(link: String = null): WebpushFcmOptions = {
     val __obj = js.Dynamic.literal()
-    if (link != null) __obj.updateDynamic("link")(link)
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebpushFcmOptions]
   }
 }

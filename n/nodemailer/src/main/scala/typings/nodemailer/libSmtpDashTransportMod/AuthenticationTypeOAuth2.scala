@@ -16,8 +16,8 @@ trait AuthenticationTypeOAuth2 extends AuthenticationType {
 object AuthenticationTypeOAuth2 {
   @scala.inline
   def apply(method: XOAUTH2, oauth2: typings.nodemailer.libXoauth2Mod.^, `type`: OAUTH2, user: String): AuthenticationTypeOAuth2 = {
-    val __obj = js.Dynamic.literal(method = method, oauth2 = oauth2, user = user)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], oauth2 = oauth2.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationTypeOAuth2]
   }
 }

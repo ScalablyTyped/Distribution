@@ -21,10 +21,10 @@ object Anon_CoreConnectionsPerHost {
     warmup: js.UndefOr[Boolean] = js.undefined
   ): Anon_CoreConnectionsPerHost = {
     val __obj = js.Dynamic.literal()
-    if (coreConnectionsPerHost != null) __obj.updateDynamic("coreConnectionsPerHost")(coreConnectionsPerHost)
+    if (coreConnectionsPerHost != null) __obj.updateDynamic("coreConnectionsPerHost")(coreConnectionsPerHost.asInstanceOf[js.Any])
     if (heartBeatInterval != null) __obj.updateDynamic("heartBeatInterval")(heartBeatInterval.asInstanceOf[js.Any])
     if (maxRequestsPerConnection != null) __obj.updateDynamic("maxRequestsPerConnection")(maxRequestsPerConnection.asInstanceOf[js.Any])
-    if (!js.isUndefined(warmup)) __obj.updateDynamic("warmup")(warmup)
+    if (!js.isUndefined(warmup)) __obj.updateDynamic("warmup")(warmup.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CoreConnectionsPerHost]
   }
 }

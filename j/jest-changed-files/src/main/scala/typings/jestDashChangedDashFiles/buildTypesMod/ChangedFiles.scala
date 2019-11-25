@@ -12,7 +12,7 @@ trait ChangedFiles extends js.Object {
 object ChangedFiles {
   @scala.inline
   def apply(changedFiles: Paths, repos: Repos): ChangedFiles = {
-    val __obj = js.Dynamic.literal(changedFiles = changedFiles, repos = repos)
+    val __obj = js.Dynamic.literal(changedFiles = changedFiles.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangedFiles]
   }

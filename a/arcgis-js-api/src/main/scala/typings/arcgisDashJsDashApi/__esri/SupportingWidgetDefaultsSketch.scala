@@ -44,11 +44,11 @@ object SupportingWidgetDefaultsSketch {
     polygonSymbol: SimpleFillSymbol = null,
     polylineSymbol: SimpleLineSymbol = null
   ): SupportingWidgetDefaultsSketch = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (defaultUpdateOptions != null) __obj.updateDynamic("defaultUpdateOptions")(defaultUpdateOptions)
-    if (markerSymbol != null) __obj.updateDynamic("markerSymbol")(markerSymbol)
-    if (polygonSymbol != null) __obj.updateDynamic("polygonSymbol")(polygonSymbol)
-    if (polylineSymbol != null) __obj.updateDynamic("polylineSymbol")(polylineSymbol)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (defaultUpdateOptions != null) __obj.updateDynamic("defaultUpdateOptions")(defaultUpdateOptions.asInstanceOf[js.Any])
+    if (markerSymbol != null) __obj.updateDynamic("markerSymbol")(markerSymbol.asInstanceOf[js.Any])
+    if (polygonSymbol != null) __obj.updateDynamic("polygonSymbol")(polygonSymbol.asInstanceOf[js.Any])
+    if (polylineSymbol != null) __obj.updateDynamic("polylineSymbol")(polylineSymbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportingWidgetDefaultsSketch]
   }
 }

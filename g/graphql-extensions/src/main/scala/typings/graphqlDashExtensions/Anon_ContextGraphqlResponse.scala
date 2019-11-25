@@ -13,7 +13,7 @@ trait Anon_ContextGraphqlResponse[TContext] extends js.Object {
 object Anon_ContextGraphqlResponse {
   @scala.inline
   def apply[TContext](context: TContext, graphqlResponse: GraphQLResponse): Anon_ContextGraphqlResponse[TContext] = {
-    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], graphqlResponse = graphqlResponse)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], graphqlResponse = graphqlResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContextGraphqlResponse[TContext]]
   }

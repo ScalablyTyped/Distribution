@@ -22,11 +22,11 @@ object MobileDeviceApplications {
     versionName: String = null
   ): MobileDeviceApplications = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (permission != null) __obj.updateDynamic("permission")(permission)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
-    if (versionName != null) __obj.updateDynamic("versionName")(versionName)
+    if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileDeviceApplications]
   }
 }

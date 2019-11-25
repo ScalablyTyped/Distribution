@@ -13,8 +13,8 @@ trait Preview extends js.Object {
 object Preview {
   @scala.inline
   def apply(url: String, artwork: Artwork = null): Preview = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (artwork != null) __obj.updateDynamic("artwork")(artwork)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (artwork != null) __obj.updateDynamic("artwork")(artwork.asInstanceOf[js.Any])
     __obj.asInstanceOf[Preview]
   }
 }

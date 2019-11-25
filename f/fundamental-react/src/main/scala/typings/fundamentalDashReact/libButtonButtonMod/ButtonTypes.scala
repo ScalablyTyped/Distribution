@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ButtonTypes extends js.Object
 
+object ButtonTypes {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def medium: typings.fundamentalDashReact.fundamentalDashReactStrings.medium = this.cast("medium")
+  @scala.inline
+  def negative: typings.fundamentalDashReact.fundamentalDashReactStrings.negative = this.cast("negative")
+  @scala.inline
+  def positive: typings.fundamentalDashReact.fundamentalDashReactStrings.positive = this.cast("positive")
+  @scala.inline
+  def standard: typings.fundamentalDashReact.fundamentalDashReactStrings.standard = this.cast("standard")
+}
+

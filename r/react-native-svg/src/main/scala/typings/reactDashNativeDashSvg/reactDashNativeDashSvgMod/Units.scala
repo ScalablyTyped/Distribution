@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Units extends js.Object
 
+object Units {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def objectBoundingBox: typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.objectBoundingBox = this.cast("objectBoundingBox")
+  @scala.inline
+  def userSpaceOnUse: typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.userSpaceOnUse = this.cast("userSpaceOnUse")
+}
+

@@ -70,10 +70,10 @@ object Service {
     lifecycleContainer: Window | TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, Unit]) = null
   ): Service = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), foregroundCancel = js.Any.fromFunction0(foregroundCancel), foregroundNotify = js.Any.fromFunction2(foregroundNotify), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getIntent = js.Any.fromFunction0(getIntent), getServiceInstanceId = js.Any.fromFunction0(getServiceInstanceId), intent = intent, removeEventListener = js.Any.fromFunction2(removeEventListener), serviceInstanceId = serviceInstanceId, setBubbleParent = js.Any.fromFunction1(setBubbleParent), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), foregroundCancel = js.Any.fromFunction0(foregroundCancel), foregroundNotify = js.Any.fromFunction2(foregroundNotify), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), getIntent = js.Any.fromFunction0(getIntent), getServiceInstanceId = js.Any.fromFunction0(getServiceInstanceId), intent = intent.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener), serviceInstanceId = serviceInstanceId.asInstanceOf[js.Any], setBubbleParent = js.Any.fromFunction1(setBubbleParent), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
     if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
 }

@@ -31,9 +31,9 @@ object ComposeUnionTypeConfig {
     resolveType: (TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, StringDictionary[_]]) | String]] = null,
     types: Thunk[js.Array[ComposeObjectType]] = null
   ): ComposeUnionTypeConfig[TSource, TContext] = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (resolveType != null) __obj.updateDynamic("resolveType")(js.Any.fromFunction4(resolveType))
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposeUnionTypeConfig[TSource, TContext]]

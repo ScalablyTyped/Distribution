@@ -14,8 +14,8 @@ trait RequesterAnonymous extends js.Object {
 object RequesterAnonymous {
   @scala.inline
   def apply(name: String, email: String = null, locale_id: Int | Double = null): RequesterAnonymous = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (email != null) __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (locale_id != null) __obj.updateDynamic("locale_id")(locale_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequesterAnonymous]
   }

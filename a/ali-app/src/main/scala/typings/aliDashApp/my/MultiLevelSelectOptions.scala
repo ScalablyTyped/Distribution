@@ -33,11 +33,11 @@ object MultiLevelSelectOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (list != null) __obj.updateDynamic("list")(list)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (subList != null) __obj.updateDynamic("subList")(subList)
+    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subList != null) __obj.updateDynamic("subList")(subList.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiLevelSelectOptions]
   }
 }

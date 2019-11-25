@@ -32,9 +32,9 @@ object DeviceOptions {
     vendorId: js.UndefOr[scala.Nothing] = js.undefined
   ): DeviceOptions = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(productId)) __obj.updateDynamic("productId")(productId)
-    if (!js.isUndefined(vendorId)) __obj.updateDynamic("vendorId")(vendorId)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(productId)) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (!js.isUndefined(vendorId)) __obj.updateDynamic("vendorId")(vendorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceOptions]
   }
 }

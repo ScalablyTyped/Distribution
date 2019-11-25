@@ -24,7 +24,7 @@ object Anon_Body {
     cookies: StringDictionary[String],
     query: StringDictionary[String | js.Array[String]]
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body, cookies = cookies, query = query)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Body]
   }

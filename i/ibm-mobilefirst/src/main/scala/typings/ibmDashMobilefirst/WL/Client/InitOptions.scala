@@ -61,13 +61,13 @@ object InitOptions {
     validateArguments: js.UndefOr[Boolean] = js.undefined
   ): InitOptions = {
     val __obj = js.Dynamic.literal(onGetCustomDeviceProvisioningProperties = js.Any.fromFunction1(onGetCustomDeviceProvisioningProperties))
-    if (authenticator != null) __obj.updateDynamic("authenticator")(authenticator)
-    if (!js.isUndefined(autoHideSplash)) __obj.updateDynamic("autoHideSplash")(autoHideSplash)
-    if (!js.isUndefined(connectOnStartup)) __obj.updateDynamic("connectOnStartup")(connectOnStartup)
-    if (!js.isUndefined(enableLogger)) __obj.updateDynamic("enableLogger")(enableLogger)
+    if (authenticator != null) __obj.updateDynamic("authenticator")(authenticator.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHideSplash)) __obj.updateDynamic("autoHideSplash")(autoHideSplash.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectOnStartup)) __obj.updateDynamic("connectOnStartup")(connectOnStartup.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLogger)) __obj.updateDynamic("enableLogger")(enableLogger.asInstanceOf[js.Any])
     if (heartBeatIntervalInSecs != null) __obj.updateDynamic("heartBeatIntervalInSecs")(heartBeatIntervalInSecs.asInstanceOf[js.Any])
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (onConnectionFailure != null) __obj.updateDynamic("onConnectionFailure")(js.Any.fromFunction1(onConnectionFailure))
     if (onDisabledCookies != null) __obj.updateDynamic("onDisabledCookies")(js.Any.fromFunction1(onDisabledCookies))
     if (onErrorAppVersionAccessDenial != null) __obj.updateDynamic("onErrorAppVersionAccessDenial")(js.Any.fromFunction1(onErrorAppVersionAccessDenial))
@@ -79,7 +79,7 @@ object InitOptions {
     if (onUnsupportedVersion != null) __obj.updateDynamic("onUnsupportedVersion")(js.Any.fromFunction1(onUnsupportedVersion))
     if (onUserInstanceAccessViolation != null) __obj.updateDynamic("onUserInstanceAccessViolation")(js.Any.fromFunction1(onUserInstanceAccessViolation))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateArguments)) __obj.updateDynamic("validateArguments")(validateArguments)
+    if (!js.isUndefined(validateArguments)) __obj.updateDynamic("validateArguments")(validateArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

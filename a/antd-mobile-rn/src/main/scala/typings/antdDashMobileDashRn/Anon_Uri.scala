@@ -11,7 +11,7 @@ trait Anon_Uri extends js.Object {
 object Anon_Uri {
   @scala.inline
   def apply(uri: String): Anon_Uri = {
-    val __obj = js.Dynamic.literal(uri = uri)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Uri]
   }

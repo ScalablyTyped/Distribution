@@ -1,10 +1,6 @@
 package typings.dojo.dojox.grid
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValuePropertyAnyArray
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.aggregator
 import typings.dojo.dojoStrings.defaultOpen
 import typings.dojo.dojoStrings.expandoCell
@@ -151,16 +147,64 @@ class TreeGrid () extends DataGrid {
     */
   def styleRowNode(inRowIndex: js.Any, inRowNode: js.Any): Unit = js.native
   @JSName("watch")
-  def watch_aggregator(property: aggregator, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_aggregator(
+    property: aggregator,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_defaultOpen(property: defaultOpen, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_defaultOpen(
+    property: defaultOpen,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_expandoCell(property: expandoCell, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_expandoCell(
+    property: expandoCell,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_openAtLevels(property: openAtLevels, callback: Fn_NewValueOldValuePropertyAnyArray): Anon_Unwatch = js.native
+  def watch_openAtLevels(
+    property: openAtLevels,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Array[_]], 
+      /* newValue */ js.UndefOr[js.Array[_]], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_sortChildItems(property: sortChildItems, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_sortChildItems(
+    property: sortChildItems,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_treeModel(property: treeModel, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_treeModel(
+    property: treeModel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

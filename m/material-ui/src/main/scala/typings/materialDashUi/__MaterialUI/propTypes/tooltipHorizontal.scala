@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait tooltipHorizontal extends js.Object
 
+object tooltipHorizontal {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.materialDashUi.materialDashUiStrings.center = this.cast("center")
+  @scala.inline
+  def left: typings.materialDashUi.materialDashUiStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.materialDashUi.materialDashUiStrings.right = this.cast("right")
+}
+

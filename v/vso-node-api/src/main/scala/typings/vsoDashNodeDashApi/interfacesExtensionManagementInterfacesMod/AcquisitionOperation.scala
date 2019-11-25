@@ -31,7 +31,7 @@ object AcquisitionOperation {
     reason: String,
     reasons: js.Array[AcquisitionOperationDisallowReason]
   ): AcquisitionOperation = {
-    val __obj = js.Dynamic.literal(operationState = operationState, operationType = operationType, reason = reason, reasons = reasons)
+    val __obj = js.Dynamic.literal(operationState = operationState.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AcquisitionOperation]
   }

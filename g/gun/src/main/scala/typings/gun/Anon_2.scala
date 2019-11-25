@@ -27,7 +27,7 @@ object Anon_2 {
     sea: CryptoKeyPair,
     soul: String
   ): Anon_2 = {
-    val __obj = js.Dynamic.literal(ack = ack, get = get, on = js.Any.fromFunction1(on), put = put, sea = sea, soul = soul)
+    val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], on = js.Any.fromFunction1(on), put = put.asInstanceOf[js.Any], sea = sea.asInstanceOf[js.Any], soul = soul.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_2]
   }

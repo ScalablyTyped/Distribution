@@ -56,9 +56,9 @@ object names {
     tabindex: String,
     valuetype: String
   ): names = {
-    val __obj = js.Dynamic.literal(colspan = colspan, frameborder = frameborder, readonly = readonly, rowspan = rowspan, tabindex = tabindex, valuetype = valuetype)
-    __obj.updateDynamic("class")(`class`)
-    __obj.updateDynamic("for")(`for`)
+    val __obj = js.Dynamic.literal(colspan = colspan.asInstanceOf[js.Any], frameborder = frameborder.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], rowspan = rowspan.asInstanceOf[js.Any], tabindex = tabindex.asInstanceOf[js.Any], valuetype = valuetype.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
     __obj.asInstanceOf[names]
   }
 }

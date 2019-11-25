@@ -28,13 +28,13 @@ object LocalNotification {
     ios: Anon_DisplayInForeground = null,
     web: NotificationOptions = null
   ): LocalNotification = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (ios != null) __obj.updateDynamic("ios")(ios)
-    if (web != null) __obj.updateDynamic("web")(web)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
+    if (web != null) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalNotification]
   }
 }

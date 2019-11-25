@@ -13,7 +13,7 @@ trait Anon_Architecture extends js.Object {
 object Anon_Architecture {
   @scala.inline
   def apply(architecture: String, name: String, version: String): Anon_Architecture = {
-    val __obj = js.Dynamic.literal(architecture = architecture, name = name, version = version)
+    val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Architecture]
   }

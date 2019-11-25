@@ -22,8 +22,8 @@ object ApnsFcmOptions {
   @scala.inline
   def apply(analyticsLabel: String = null, imageUrl: String = null): ApnsFcmOptions = {
     val __obj = js.Dynamic.literal()
-    if (analyticsLabel != null) __obj.updateDynamic("analyticsLabel")(analyticsLabel)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (analyticsLabel != null) __obj.updateDynamic("analyticsLabel")(analyticsLabel.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApnsFcmOptions]
   }
 }

@@ -15,7 +15,7 @@ trait ReaderCondition extends ReaderSelection {
 object ReaderCondition {
   @scala.inline
   def apply(condition: String, kind: String, passingValue: Boolean, selections: js.Array[ReaderSelection]): ReaderCondition = {
-    val __obj = js.Dynamic.literal(condition = condition, kind = kind, passingValue = passingValue, selections = selections)
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], passingValue = passingValue.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReaderCondition]
   }

@@ -22,11 +22,11 @@ object Options {
     title: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysNotify)) __obj.updateDynamic("alwaysNotify")(alwaysNotify)
-    if (contentImage != null) __obj.updateDynamic("contentImage")(contentImage)
-    if (!js.isUndefined(excludeWarnings)) __obj.updateDynamic("excludeWarnings")(excludeWarnings)
-    if (!js.isUndefined(skipFirstNotification)) __obj.updateDynamic("skipFirstNotification")(skipFirstNotification)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(alwaysNotify)) __obj.updateDynamic("alwaysNotify")(alwaysNotify.asInstanceOf[js.Any])
+    if (contentImage != null) __obj.updateDynamic("contentImage")(contentImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeWarnings)) __obj.updateDynamic("excludeWarnings")(excludeWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipFirstNotification)) __obj.updateDynamic("skipFirstNotification")(skipFirstNotification.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

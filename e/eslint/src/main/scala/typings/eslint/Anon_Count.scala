@@ -23,7 +23,7 @@ object Anon_Count {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(includeComments)) __obj.updateDynamic("includeComments")(includeComments)
+    if (!js.isUndefined(includeComments)) __obj.updateDynamic("includeComments")(includeComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Count]
   }
 }

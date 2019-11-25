@@ -16,8 +16,8 @@ object SubnetworksScopedList {
   @scala.inline
   def apply(subnetworks: js.Array[Subnetwork] = null, warning: Anon_Code = null): SubnetworksScopedList = {
     val __obj = js.Dynamic.literal()
-    if (subnetworks != null) __obj.updateDynamic("subnetworks")(subnetworks)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (subnetworks != null) __obj.updateDynamic("subnetworks")(subnetworks.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubnetworksScopedList]
   }
 }

@@ -52,14 +52,14 @@ object Options {
     unicode: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dotAll)) __obj.updateDynamic("dotAll")(dotAll)
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    if (!js.isUndefined(dotAll)) __obj.updateDynamic("dotAll")(dotAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
     if (lastIndex != null) __obj.updateDynamic("lastIndex")(lastIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)
-    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode)
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

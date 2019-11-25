@@ -18,7 +18,7 @@ object NumeralJsFormat {
     regexps: Anon_Format,
     unformat: String => Double
   ): NumeralJsFormat = {
-    val __obj = js.Dynamic.literal(format = js.Any.fromFunction3(format), regexps = regexps, unformat = js.Any.fromFunction1(unformat))
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction3(format), regexps = regexps.asInstanceOf[js.Any], unformat = js.Any.fromFunction1(unformat))
   
     __obj.asInstanceOf[NumeralJsFormat]
   }

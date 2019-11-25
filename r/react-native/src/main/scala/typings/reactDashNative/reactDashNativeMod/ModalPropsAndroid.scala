@@ -15,7 +15,7 @@ object ModalPropsAndroid {
   @scala.inline
   def apply(hardwareAccelerated: js.UndefOr[Boolean] = js.undefined): ModalPropsAndroid = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated)
+    if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalPropsAndroid]
   }
 }

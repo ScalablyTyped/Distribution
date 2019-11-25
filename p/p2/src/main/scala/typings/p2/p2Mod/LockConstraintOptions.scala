@@ -20,11 +20,11 @@ object LockConstraintOptions {
     wakeUpBodies: js.UndefOr[Boolean] = js.undefined
   ): LockConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected)
+    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected.asInstanceOf[js.Any])
     if (localAngleB != null) __obj.updateDynamic("localAngleB")(localAngleB.asInstanceOf[js.Any])
-    if (localOffsetB != null) __obj.updateDynamic("localOffsetB")(localOffsetB)
+    if (localOffsetB != null) __obj.updateDynamic("localOffsetB")(localOffsetB.asInstanceOf[js.Any])
     if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
-    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies)
+    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies.asInstanceOf[js.Any])
     __obj.asInstanceOf[LockConstraintOptions]
   }
 }

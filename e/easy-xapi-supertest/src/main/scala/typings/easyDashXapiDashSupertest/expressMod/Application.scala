@@ -1,6 +1,5 @@
 package typings.easyDashXapiDashSupertest.expressMod
 
-import typings.easyDashXapiDashSupertest.Fn_Handlers
 import typings.easyDashXapiDashSupertest.httpMod.Server
 import typings.std.Error
 import scala.scalajs.js
@@ -11,8 +10,6 @@ import scala.scalajs.js.annotation._
 trait Application
   extends IRouter[Application]
      with typings.easyDashXapiDashSupertest.Express.Application {
-  @JSName("get")
-  var get_Original_Application: Fn_Handlers = js.native
   var locals: js.Any = js.native
   var map: js.Any = js.native
   var resource: js.Any = js.native

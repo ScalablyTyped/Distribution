@@ -36,17 +36,17 @@ object OrderListProps {
     value: js.Array[_] = null
   ): OrderListProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(dragdrop)) __obj.updateDynamic("dragdrop")(dragdrop)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragdrop)) __obj.updateDynamic("dragdrop")(dragdrop.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1(itemTemplate))
-    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle)
+    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderListProps]
   }
 }

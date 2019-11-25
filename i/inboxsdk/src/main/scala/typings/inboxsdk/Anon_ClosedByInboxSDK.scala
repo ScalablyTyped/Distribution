@@ -12,7 +12,7 @@ trait Anon_ClosedByInboxSDK extends js.Object {
 object Anon_ClosedByInboxSDK {
   @scala.inline
   def apply(closedByInboxSDK: Boolean, messageID: String): Anon_ClosedByInboxSDK = {
-    val __obj = js.Dynamic.literal(closedByInboxSDK = closedByInboxSDK, messageID = messageID)
+    val __obj = js.Dynamic.literal(closedByInboxSDK = closedByInboxSDK.asInstanceOf[js.Any], messageID = messageID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClosedByInboxSDK]
   }

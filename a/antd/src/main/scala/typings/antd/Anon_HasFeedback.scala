@@ -11,7 +11,7 @@ trait Anon_HasFeedback extends js.Object {
 object Anon_HasFeedback {
   @scala.inline
   def apply(hasFeedback: Boolean): Anon_HasFeedback = {
-    val __obj = js.Dynamic.literal(hasFeedback = hasFeedback)
+    val __obj = js.Dynamic.literal(hasFeedback = hasFeedback.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HasFeedback]
   }

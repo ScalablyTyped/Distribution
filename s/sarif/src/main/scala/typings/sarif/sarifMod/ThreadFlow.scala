@@ -43,12 +43,12 @@ object ThreadFlow {
     message: Message = null,
     properties: PropertyBag = null
   ): ThreadFlow = {
-    val __obj = js.Dynamic.literal(locations = locations)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (immutableState != null) __obj.updateDynamic("immutableState")(immutableState)
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (immutableState != null) __obj.updateDynamic("immutableState")(immutableState.asInstanceOf[js.Any])
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadFlow]
   }
 }

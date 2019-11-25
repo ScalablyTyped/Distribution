@@ -11,7 +11,7 @@ trait Anon_IgnoreOwnVariables extends js.Object {
 object Anon_IgnoreOwnVariables {
   @scala.inline
   def apply(ignoreOwnVariables: Boolean): Anon_IgnoreOwnVariables = {
-    val __obj = js.Dynamic.literal(ignoreOwnVariables = ignoreOwnVariables)
+    val __obj = js.Dynamic.literal(ignoreOwnVariables = ignoreOwnVariables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IgnoreOwnVariables]
   }

@@ -15,7 +15,7 @@ trait SourceLocation extends Location {
 object SourceLocation {
   @scala.inline
   def apply(end: Double, kind: Source, source: typings.graphql.graphqlMod.Source, start: Double): SourceLocation = {
-    val __obj = js.Dynamic.literal(end = end, kind = kind, source = source, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceLocation]
   }

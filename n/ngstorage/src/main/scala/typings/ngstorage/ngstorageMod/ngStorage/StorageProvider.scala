@@ -27,7 +27,7 @@ object StorageProvider {
     setSerializer: js.Function1[/* value */ js.Any, String] => Unit,
     supported: () => Boolean
   ): StorageProvider = {
-    val __obj = js.Dynamic.literal($get = $get, get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), setDeserializer = js.Any.fromFunction1(setDeserializer), setKeyPrefix = js.Any.fromFunction1(setKeyPrefix), setSerializer = js.Any.fromFunction1(setSerializer), supported = js.Any.fromFunction0(supported))
+    val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), setDeserializer = js.Any.fromFunction1(setDeserializer), setKeyPrefix = js.Any.fromFunction1(setKeyPrefix), setSerializer = js.Any.fromFunction1(setSerializer), supported = js.Any.fromFunction0(supported))
   
     __obj.asInstanceOf[StorageProvider]
   }

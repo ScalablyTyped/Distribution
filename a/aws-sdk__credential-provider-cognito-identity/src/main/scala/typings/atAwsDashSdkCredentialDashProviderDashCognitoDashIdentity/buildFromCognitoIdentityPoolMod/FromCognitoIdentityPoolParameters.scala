@@ -52,12 +52,12 @@ object FromCognitoIdentityPoolParameters {
     logins: Logins = null,
     userIdentifier: String = null
   ): FromCognitoIdentityPoolParameters = {
-    val __obj = js.Dynamic.literal(client = client, identityPoolId = identityPoolId)
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (customRoleArn != null) __obj.updateDynamic("customRoleArn")(customRoleArn)
-    if (logins != null) __obj.updateDynamic("logins")(logins)
-    if (userIdentifier != null) __obj.updateDynamic("userIdentifier")(userIdentifier)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], identityPoolId = identityPoolId.asInstanceOf[js.Any])
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (customRoleArn != null) __obj.updateDynamic("customRoleArn")(customRoleArn.asInstanceOf[js.Any])
+    if (logins != null) __obj.updateDynamic("logins")(logins.asInstanceOf[js.Any])
+    if (userIdentifier != null) __obj.updateDynamic("userIdentifier")(userIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromCognitoIdentityPoolParameters]
   }
 }

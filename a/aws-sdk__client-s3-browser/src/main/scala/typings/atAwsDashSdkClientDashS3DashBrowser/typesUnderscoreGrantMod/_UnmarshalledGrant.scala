@@ -25,7 +25,7 @@ object _UnmarshalledGrant {
     Permission: FULL_CONTROL | WRITE | WRITE_ACP | READ | READ_ACP | String = null
   ): _UnmarshalledGrant = {
     val __obj = js.Dynamic.literal()
-    if (Grantee != null) __obj.updateDynamic("Grantee")(Grantee)
+    if (Grantee != null) __obj.updateDynamic("Grantee")(Grantee.asInstanceOf[js.Any])
     if (Permission != null) __obj.updateDynamic("Permission")(Permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledGrant]
   }

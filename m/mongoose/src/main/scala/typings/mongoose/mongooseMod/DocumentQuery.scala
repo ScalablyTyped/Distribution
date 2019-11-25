@@ -495,22 +495,22 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     * @param criteria mongodb selector
     */
   def remove(): (Query[
-    /* import warning: ImportType.apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
   ]) with QueryHelpers = js.native
   def remove(callback: js.Function1[/* err */ js.Any, Unit]): (Query[
-    /* import warning: ImportType.apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
   ]) with QueryHelpers = js.native
   def remove(criteria: js.Any): (Query[
-    /* import warning: ImportType.apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
   ]) with QueryHelpers = js.native
   def remove(criteria: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): (Query[
-    /* import warning: ImportType.apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
   ]) with QueryHelpers = js.native
   def remove(criteria: Query[_]): (Query[
-    /* import warning: ImportType.apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
   ]) with QueryHelpers = js.native
   def remove(criteria: Query[_], callback: js.Function1[/* err */ js.Any, Unit]): (Query[
-    /* import warning: ImportType.apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: mongodb.mongodb.WriteOpResult['result'] */ js.Any
   ]) with QueryHelpers = js.native
   /** Specifies which document fields to include or exclude (also known as the query "projection") */
   def select(arg: String): this.type = js.native

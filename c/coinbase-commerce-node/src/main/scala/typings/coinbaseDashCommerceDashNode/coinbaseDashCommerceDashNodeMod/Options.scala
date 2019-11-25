@@ -26,7 +26,7 @@ object Options {
     timeout: Double,
     url: String
   ): Options = {
-    val __obj = js.Dynamic.literal(body = body, headers = headers, method = method.asInstanceOf[js.Any], timeout = timeout, url = url)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

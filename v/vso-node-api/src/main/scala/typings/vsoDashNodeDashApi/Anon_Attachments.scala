@@ -14,7 +14,7 @@ trait Anon_Attachments extends js.Object {
 object Anon_Attachments {
   @scala.inline
   def apply(attachments: Double, custom: Double, history: Double, links: Double): Anon_Attachments = {
-    val __obj = js.Dynamic.literal(attachments = attachments, custom = custom, history = history, links = links)
+    val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Attachments]
   }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AnimationPlayTo extends js.Object
 
+object AnimationPlayTo {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def end: typings.atIonicCore.atIonicCoreStrings.end = this.cast("end")
+  @scala.inline
+  def start: typings.atIonicCore.atIonicCoreStrings.start = this.cast("start")
+}
+

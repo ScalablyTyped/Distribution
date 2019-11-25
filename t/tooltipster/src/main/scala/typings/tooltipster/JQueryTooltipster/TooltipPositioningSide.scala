@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait TooltipPositioningSide extends js.Object
 
+object TooltipPositioningSide {
+  @scala.inline
+  def bottom: typings.tooltipster.tooltipsterStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.tooltipster.tooltipsterStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.tooltipster.tooltipsterStrings.right = this.cast("right")
+  @scala.inline
+  def top: typings.tooltipster.tooltipsterStrings.top = this.cast("top")
+}
+

@@ -43,18 +43,18 @@ object Anon_OnContentSizeChanged {
     onUpdated: UpdatedCallback = null
   ): Anon_OnContentSizeChanged = {
     val __obj = js.Dynamic.literal()
-    if (onContentSizeChanged != null) __obj.updateDynamic("onContentSizeChanged")(onContentSizeChanged)
-    if (onDestroyed != null) __obj.updateDynamic("onDestroyed")(onDestroyed)
-    if (onDirectionChanged != null) __obj.updateDynamic("onDirectionChanged")(onDirectionChanged)
-    if (onHostSizeChanged != null) __obj.updateDynamic("onHostSizeChanged")(onHostSizeChanged)
-    if (onInitializationWithdrawn != null) __obj.updateDynamic("onInitializationWithdrawn")(onInitializationWithdrawn)
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(onInitialized)
-    if (onOverflowAmountChanged != null) __obj.updateDynamic("onOverflowAmountChanged")(onOverflowAmountChanged)
-    if (onOverflowChanged != null) __obj.updateDynamic("onOverflowChanged")(onOverflowChanged)
-    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onScrollStart != null) __obj.updateDynamic("onScrollStart")(onScrollStart)
-    if (onScrollStop != null) __obj.updateDynamic("onScrollStop")(onScrollStop)
-    if (onUpdated != null) __obj.updateDynamic("onUpdated")(onUpdated)
+    if (onContentSizeChanged != null) __obj.updateDynamic("onContentSizeChanged")(onContentSizeChanged.asInstanceOf[js.Any])
+    if (onDestroyed != null) __obj.updateDynamic("onDestroyed")(onDestroyed.asInstanceOf[js.Any])
+    if (onDirectionChanged != null) __obj.updateDynamic("onDirectionChanged")(onDirectionChanged.asInstanceOf[js.Any])
+    if (onHostSizeChanged != null) __obj.updateDynamic("onHostSizeChanged")(onHostSizeChanged.asInstanceOf[js.Any])
+    if (onInitializationWithdrawn != null) __obj.updateDynamic("onInitializationWithdrawn")(onInitializationWithdrawn.asInstanceOf[js.Any])
+    if (onInitialized != null) __obj.updateDynamic("onInitialized")(onInitialized.asInstanceOf[js.Any])
+    if (onOverflowAmountChanged != null) __obj.updateDynamic("onOverflowAmountChanged")(onOverflowAmountChanged.asInstanceOf[js.Any])
+    if (onOverflowChanged != null) __obj.updateDynamic("onOverflowChanged")(onOverflowChanged.asInstanceOf[js.Any])
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll.asInstanceOf[js.Any])
+    if (onScrollStart != null) __obj.updateDynamic("onScrollStart")(onScrollStart.asInstanceOf[js.Any])
+    if (onScrollStop != null) __obj.updateDynamic("onScrollStop")(onScrollStop.asInstanceOf[js.Any])
+    if (onUpdated != null) __obj.updateDynamic("onUpdated")(onUpdated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OnContentSizeChanged]
   }
 }

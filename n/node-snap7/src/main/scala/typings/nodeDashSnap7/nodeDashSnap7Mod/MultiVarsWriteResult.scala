@@ -11,7 +11,7 @@ trait MultiVarsWriteResult extends js.Object {
 object MultiVarsWriteResult {
   @scala.inline
   def apply(Result: Double): MultiVarsWriteResult = {
-    val __obj = js.Dynamic.literal(Result = Result)
+    val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MultiVarsWriteResult]
   }

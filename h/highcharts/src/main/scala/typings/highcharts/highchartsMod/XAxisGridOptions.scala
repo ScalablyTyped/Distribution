@@ -41,11 +41,11 @@ object XAxisGridOptions {
     enabled: js.UndefOr[Boolean] = js.undefined
   ): XAxisGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[XAxisGridOptions]
   }
 }

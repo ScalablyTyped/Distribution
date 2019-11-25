@@ -14,7 +14,7 @@ trait Anon_BeforeName extends js.Object {
 object Anon_BeforeName {
   @scala.inline
   def apply(beforeName: String, beforeProps: ComponentProps): Anon_BeforeName = {
-    val __obj = js.Dynamic.literal(beforeName = beforeName, beforeProps = beforeProps)
+    val __obj = js.Dynamic.literal(beforeName = beforeName.asInstanceOf[js.Any], beforeProps = beforeProps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BeforeName]
   }

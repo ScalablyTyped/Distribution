@@ -1,7 +1,6 @@
 package typings.openpgp.openpgpMod.crypto
 
 import typings.openpgp.openpgpMod.`type`.mpi.MPI
-import typings.openpgp.openpgpMod.enums.hash
 import typings.openpgp.openpgpMod.enums.publicKey
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -23,7 +22,13 @@ object signature extends js.Object {
     * @param hashed The hashed data
     * @returns Signature
     */
-  def sign(algo: publicKey, hash_algo: hash, key_params: js.Array[MPI], data: Uint8Array, hashed: Uint8Array): Uint8Array = js.native
+  def sign(
+    algo: publicKey,
+    hash_algo: typings.openpgp.openpgpMod.enums.hash,
+    key_params: js.Array[MPI],
+    data: Uint8Array,
+    hashed: Uint8Array
+  ): Uint8Array = js.native
   /**
     * Verifies the signature provided for data using specified algorithms and public key parameters.
     * See {@link https://tools.ietf.org/html/rfc4880#section-9.1|RFC 4880 9.1}
@@ -39,7 +44,7 @@ object signature extends js.Object {
     */
   def verify(
     algo: publicKey,
-    hash_algo: hash,
+    hash_algo: typings.openpgp.openpgpMod.enums.hash,
     msg_MPIs: js.Array[MPI],
     pub_MPIs: js.Array[MPI],
     data: Uint8Array,

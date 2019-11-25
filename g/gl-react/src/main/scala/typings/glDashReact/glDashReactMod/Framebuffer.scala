@@ -23,7 +23,7 @@ object Framebuffer {
     handle: WebGLFramebuffer,
     syncSize: (Double, Double) => Unit
   ): Framebuffer = {
-    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction0(bind), color = color, dispose = js.Any.fromFunction0(dispose), handle = handle, syncSize = js.Any.fromFunction2(syncSize))
+    val __obj = js.Dynamic.literal(bind = js.Any.fromFunction0(bind), color = color.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), handle = handle.asInstanceOf[js.Any], syncSize = js.Any.fromFunction2(syncSize))
   
     __obj.asInstanceOf[Framebuffer]
   }

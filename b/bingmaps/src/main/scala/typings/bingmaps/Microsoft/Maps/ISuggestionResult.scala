@@ -41,7 +41,7 @@ object ISuggestionResult {
     subtitle: String,
     title: String
   ): ISuggestionResult = {
-    val __obj = js.Dynamic.literal(address = address, bestView = bestView, entityId = entityId, entitySubType = entitySubType, entityType = entityType, formattedSuggestion = formattedSuggestion, location = location, subtitle = subtitle, title = title)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], bestView = bestView.asInstanceOf[js.Any], entityId = entityId.asInstanceOf[js.Any], entitySubType = entitySubType.asInstanceOf[js.Any], entityType = entityType.asInstanceOf[js.Any], formattedSuggestion = formattedSuggestion.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISuggestionResult]
   }

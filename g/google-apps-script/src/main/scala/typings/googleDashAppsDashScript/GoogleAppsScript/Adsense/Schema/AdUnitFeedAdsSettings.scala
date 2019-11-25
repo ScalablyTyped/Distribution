@@ -20,10 +20,10 @@ object AdUnitFeedAdsSettings {
     `type`: String = null
   ): AdUnitFeedAdsSettings = {
     val __obj = js.Dynamic.literal()
-    if (adPosition != null) __obj.updateDynamic("adPosition")(adPosition)
+    if (adPosition != null) __obj.updateDynamic("adPosition")(adPosition.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     if (minimumWordCount != null) __obj.updateDynamic("minimumWordCount")(minimumWordCount.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdUnitFeedAdsSettings]
   }
 }

@@ -25,11 +25,11 @@ object FilterProps {
     style: CSSProperties = null
   ): FilterProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (setFilter != null) __obj.updateDynamic("setFilter")(js.Any.fromFunction1(setFilter))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterProps]
   }
 }

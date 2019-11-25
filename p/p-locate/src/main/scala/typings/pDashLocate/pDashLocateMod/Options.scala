@@ -23,7 +23,7 @@ object Options {
   def apply(concurrency: Int | Double = null, preserveOrder: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveOrder)) __obj.updateDynamic("preserveOrder")(preserveOrder)
+    if (!js.isUndefined(preserveOrder)) __obj.updateDynamic("preserveOrder")(preserveOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

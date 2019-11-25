@@ -30,11 +30,11 @@ object TgfancyOptions {
     val __obj = js.Dynamic.literal()
     if (chatIdResolution != null) __obj.updateDynamic("chatIdResolution")(chatIdResolution.asInstanceOf[js.Any])
     if (emojification != null) __obj.updateDynamic("emojification")(emojification.asInstanceOf[js.Any])
-    if (!js.isUndefined(kickWithoutBan)) __obj.updateDynamic("kickWithoutBan")(kickWithoutBan)
-    if (!js.isUndefined(openshiftWebHook)) __obj.updateDynamic("openshiftWebHook")(openshiftWebHook)
-    if (!js.isUndefined(orderedSending)) __obj.updateDynamic("orderedSending")(orderedSending)
+    if (!js.isUndefined(kickWithoutBan)) __obj.updateDynamic("kickWithoutBan")(kickWithoutBan.asInstanceOf[js.Any])
+    if (!js.isUndefined(openshiftWebHook)) __obj.updateDynamic("openshiftWebHook")(openshiftWebHook.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderedSending)) __obj.updateDynamic("orderedSending")(orderedSending.asInstanceOf[js.Any])
     if (ratelimiting != null) __obj.updateDynamic("ratelimiting")(ratelimiting.asInstanceOf[js.Any])
-    if (!js.isUndefined(textPaging)) __obj.updateDynamic("textPaging")(textPaging)
+    if (!js.isUndefined(textPaging)) __obj.updateDynamic("textPaging")(textPaging.asInstanceOf[js.Any])
     if (webSocket != null) __obj.updateDynamic("webSocket")(webSocket.asInstanceOf[js.Any])
     __obj.asInstanceOf[TgfancyOptions]
   }

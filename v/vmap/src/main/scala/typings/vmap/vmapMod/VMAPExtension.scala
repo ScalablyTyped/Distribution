@@ -25,7 +25,7 @@ trait VMAPExtension extends js.Object {
 object VMAPExtension {
   @scala.inline
   def apply(attribute: js.Any, children: js.Any, value: js.Any): VMAPExtension = {
-    val __obj = js.Dynamic.literal(attribute = attribute, children = children, value = value)
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VMAPExtension]
   }

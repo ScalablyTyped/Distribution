@@ -108,18 +108,18 @@ object ReplOptions {
     writer: REPLWriter = null
   ): ReplOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breakEvalOnSigint)) __obj.updateDynamic("breakEvalOnSigint")(breakEvalOnSigint)
+    if (!js.isUndefined(breakEvalOnSigint)) __obj.updateDynamic("breakEvalOnSigint")(breakEvalOnSigint.asInstanceOf[js.Any])
     if (completer != null) __obj.updateDynamic("completer")(completer.asInstanceOf[js.Any])
-    if (eval != null) __obj.updateDynamic("eval")(eval)
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (replMode != null) __obj.updateDynamic("replMode")(replMode)
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal)
-    if (!js.isUndefined(useColors)) __obj.updateDynamic("useColors")(useColors)
-    if (!js.isUndefined(useGlobal)) __obj.updateDynamic("useGlobal")(useGlobal)
-    if (writer != null) __obj.updateDynamic("writer")(writer)
+    if (eval != null) __obj.updateDynamic("eval")(eval.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (replMode != null) __obj.updateDynamic("replMode")(replMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
+    if (!js.isUndefined(useColors)) __obj.updateDynamic("useColors")(useColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGlobal)) __obj.updateDynamic("useGlobal")(useGlobal.asInstanceOf[js.Any])
+    if (writer != null) __obj.updateDynamic("writer")(writer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplOptions]
   }
 }

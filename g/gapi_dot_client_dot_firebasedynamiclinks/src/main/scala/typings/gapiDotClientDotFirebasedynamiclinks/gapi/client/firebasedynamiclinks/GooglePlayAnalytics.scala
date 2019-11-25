@@ -43,12 +43,12 @@ object GooglePlayAnalytics {
     utmTerm: String = null
   ): GooglePlayAnalytics = {
     val __obj = js.Dynamic.literal()
-    if (gclid != null) __obj.updateDynamic("gclid")(gclid)
-    if (utmCampaign != null) __obj.updateDynamic("utmCampaign")(utmCampaign)
-    if (utmContent != null) __obj.updateDynamic("utmContent")(utmContent)
-    if (utmMedium != null) __obj.updateDynamic("utmMedium")(utmMedium)
-    if (utmSource != null) __obj.updateDynamic("utmSource")(utmSource)
-    if (utmTerm != null) __obj.updateDynamic("utmTerm")(utmTerm)
+    if (gclid != null) __obj.updateDynamic("gclid")(gclid.asInstanceOf[js.Any])
+    if (utmCampaign != null) __obj.updateDynamic("utmCampaign")(utmCampaign.asInstanceOf[js.Any])
+    if (utmContent != null) __obj.updateDynamic("utmContent")(utmContent.asInstanceOf[js.Any])
+    if (utmMedium != null) __obj.updateDynamic("utmMedium")(utmMedium.asInstanceOf[js.Any])
+    if (utmSource != null) __obj.updateDynamic("utmSource")(utmSource.asInstanceOf[js.Any])
+    if (utmTerm != null) __obj.updateDynamic("utmTerm")(utmTerm.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePlayAnalytics]
   }
 }

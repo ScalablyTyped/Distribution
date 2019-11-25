@@ -35,11 +35,11 @@ object FileEncryptionInfo {
     val __obj = js.Dynamic.literal()
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     if (fileDigest != null) __obj.updateDynamic("fileDigest")(fileDigest.asInstanceOf[js.Any])
-    if (fileDigestAlgorithm != null) __obj.updateDynamic("fileDigestAlgorithm")(fileDigestAlgorithm)
+    if (fileDigestAlgorithm != null) __obj.updateDynamic("fileDigestAlgorithm")(fileDigestAlgorithm.asInstanceOf[js.Any])
     if (initializationVector != null) __obj.updateDynamic("initializationVector")(initializationVector.asInstanceOf[js.Any])
     if (mac != null) __obj.updateDynamic("mac")(mac.asInstanceOf[js.Any])
     if (macKey != null) __obj.updateDynamic("macKey")(macKey.asInstanceOf[js.Any])
-    if (profileIdentifier != null) __obj.updateDynamic("profileIdentifier")(profileIdentifier)
+    if (profileIdentifier != null) __obj.updateDynamic("profileIdentifier")(profileIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileEncryptionInfo]
   }
 }

@@ -14,8 +14,8 @@ object Anon_Mode {
   @scala.inline
   def apply(mode: TransactionMode = null, tag: js.Any = null): Anon_Mode = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Mode]
   }
 }

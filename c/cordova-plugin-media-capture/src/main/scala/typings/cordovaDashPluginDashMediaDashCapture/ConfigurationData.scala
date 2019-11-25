@@ -17,8 +17,8 @@ trait ConfigurationData extends js.Object {
 object ConfigurationData {
   @scala.inline
   def apply(height: Double, `type`: String, width: Double): ConfigurationData = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationData]
   }
 }

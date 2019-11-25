@@ -44,7 +44,7 @@ object IOptions {
   ): IOptions = {
     val __obj = js.Dynamic.literal()
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]

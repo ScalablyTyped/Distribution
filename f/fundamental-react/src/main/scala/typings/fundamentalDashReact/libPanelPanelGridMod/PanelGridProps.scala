@@ -29,10 +29,10 @@ object PanelGridProps {
     nogap: js.UndefOr[Boolean] = js.undefined
   ): PanelGridProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (!js.isUndefined(nogap)) __obj.updateDynamic("nogap")(nogap)
+    if (!js.isUndefined(nogap)) __obj.updateDynamic("nogap")(nogap.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelGridProps]
   }
 }

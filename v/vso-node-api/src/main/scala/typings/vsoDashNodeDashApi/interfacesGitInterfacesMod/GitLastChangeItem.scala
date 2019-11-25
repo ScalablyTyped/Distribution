@@ -18,7 +18,7 @@ trait GitLastChangeItem extends js.Object {
 object GitLastChangeItem {
   @scala.inline
   def apply(commitId: String, path: String): GitLastChangeItem = {
-    val __obj = js.Dynamic.literal(commitId = commitId, path = path)
+    val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitLastChangeItem]
   }

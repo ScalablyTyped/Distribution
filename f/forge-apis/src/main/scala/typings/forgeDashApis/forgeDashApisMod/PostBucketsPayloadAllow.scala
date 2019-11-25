@@ -12,7 +12,7 @@ trait PostBucketsPayloadAllow extends js.Object {
 object PostBucketsPayloadAllow {
   @scala.inline
   def apply(access: String, authId: String): PostBucketsPayloadAllow = {
-    val __obj = js.Dynamic.literal(access = access, authId = authId)
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], authId = authId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostBucketsPayloadAllow]
   }

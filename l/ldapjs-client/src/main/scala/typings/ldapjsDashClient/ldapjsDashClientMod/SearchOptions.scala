@@ -24,12 +24,12 @@ object SearchOptions {
     typesOnly: js.UndefOr[Boolean] = js.undefined
   ): SearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (sizeLimit != null) __obj.updateDynamic("sizeLimit")(sizeLimit.asInstanceOf[js.Any])
     if (timeLimit != null) __obj.updateDynamic("timeLimit")(timeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(typesOnly)) __obj.updateDynamic("typesOnly")(typesOnly)
+    if (!js.isUndefined(typesOnly)) __obj.updateDynamic("typesOnly")(typesOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }
 }

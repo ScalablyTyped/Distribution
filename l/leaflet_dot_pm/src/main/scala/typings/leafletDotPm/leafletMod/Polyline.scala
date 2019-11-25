@@ -12,7 +12,7 @@ trait Polyline extends js.Object {
 object Polyline {
   @scala.inline
   def apply(pm: Line): Polyline = {
-    val __obj = js.Dynamic.literal(pm = pm)
+    val __obj = js.Dynamic.literal(pm = pm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Polyline]
   }

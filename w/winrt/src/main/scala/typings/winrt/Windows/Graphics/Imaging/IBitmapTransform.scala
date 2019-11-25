@@ -23,7 +23,7 @@ object IBitmapTransform {
     scaledHeight: Double,
     scaledWidth: Double
   ): IBitmapTransform = {
-    val __obj = js.Dynamic.literal(bounds = bounds, flip = flip, interpolationMode = interpolationMode, rotation = rotation, scaledHeight = scaledHeight, scaledWidth = scaledWidth)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], flip = flip.asInstanceOf[js.Any], interpolationMode = interpolationMode.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scaledHeight = scaledHeight.asInstanceOf[js.Any], scaledWidth = scaledWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBitmapTransform]
   }

@@ -21,9 +21,9 @@ object Anon_HighlightLuminosity {
   ): Anon_HighlightLuminosity = {
     val __obj = js.Dynamic.literal()
     if (highlightLuminosity != null) __obj.updateDynamic("highlightLuminosity")(highlightLuminosity.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightSegmentOnMouseover)) __obj.updateDynamic("highlightSegmentOnMouseover")(highlightSegmentOnMouseover)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (pullOutSegmentOnClick != null) __obj.updateDynamic("pullOutSegmentOnClick")(pullOutSegmentOnClick)
+    if (!js.isUndefined(highlightSegmentOnMouseover)) __obj.updateDynamic("highlightSegmentOnMouseover")(highlightSegmentOnMouseover.asInstanceOf[js.Any])
+    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (pullOutSegmentOnClick != null) __obj.updateDynamic("pullOutSegmentOnClick")(pullOutSegmentOnClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HighlightLuminosity]
   }
 }

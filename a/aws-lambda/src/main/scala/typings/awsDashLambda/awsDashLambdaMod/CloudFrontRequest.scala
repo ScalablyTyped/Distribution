@@ -26,9 +26,9 @@ object CloudFrontRequest {
     body: Anon_ActionBase64 = null,
     origin: CloudFrontOrigin = null
   ): CloudFrontRequest = {
-    val __obj = js.Dynamic.literal(clientIp = clientIp, headers = headers, method = method, querystring = querystring, uri = uri)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(clientIp = clientIp.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], querystring = querystring.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudFrontRequest]
   }
 }

@@ -14,7 +14,7 @@ trait Icon extends js.Object {
 object Icon {
   @scala.inline
   def apply(ascent: Double, descent: Double, path: String, width: Double): Icon = {
-    val __obj = js.Dynamic.literal(ascent = ascent, descent = descent, path = path, width = width)
+    val __obj = js.Dynamic.literal(ascent = ascent.asInstanceOf[js.Any], descent = descent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Icon]
   }

@@ -14,10 +14,10 @@ trait OrgsUpdateHookParamsConfig extends js.Object {
 object OrgsUpdateHookParamsConfig {
   @scala.inline
   def apply(url: String, content_type: String = null, insecure_ssl: String = null, secret: String = null): OrgsUpdateHookParamsConfig = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
-    if (insecure_ssl != null) __obj.updateDynamic("insecure_ssl")(insecure_ssl)
-    if (secret != null) __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
+    if (insecure_ssl != null) __obj.updateDynamic("insecure_ssl")(insecure_ssl.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsUpdateHookParamsConfig]
   }
 }

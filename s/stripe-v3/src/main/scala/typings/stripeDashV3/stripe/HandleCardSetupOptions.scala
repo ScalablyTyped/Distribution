@@ -17,7 +17,7 @@ object HandleCardSetupOptions {
   @scala.inline
   def apply(payment_method_data: Anon_Billingdetails = null): HandleCardSetupOptions = {
     val __obj = js.Dynamic.literal()
-    if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data)
+    if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleCardSetupOptions]
   }
 }

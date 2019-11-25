@@ -27,12 +27,12 @@ object ButtonOptions {
   ): ButtonOptions = {
     val __obj = js.Dynamic.literal()
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]
   }
 }

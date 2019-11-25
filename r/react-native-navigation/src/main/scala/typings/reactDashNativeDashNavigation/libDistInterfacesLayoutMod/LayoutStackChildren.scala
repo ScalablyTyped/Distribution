@@ -19,8 +19,8 @@ object LayoutStackChildren {
   @scala.inline
   def apply(component: LayoutComponent[js.Object] = null, externalComponent: ExternalComponent = null): LayoutStackChildren = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (externalComponent != null) __obj.updateDynamic("externalComponent")(externalComponent)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (externalComponent != null) __obj.updateDynamic("externalComponent")(externalComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutStackChildren]
   }
 }

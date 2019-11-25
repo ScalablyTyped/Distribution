@@ -56,12 +56,12 @@ object MiddlewareCustomizationDefinition {
     imports: js.Array[Import] = null,
     tags: String = null
   ): MiddlewareCustomizationDefinition = {
-    val __obj = js.Dynamic.literal(expression = expression, priority = priority, step = step)
-    __obj.updateDynamic("type")(`type`)
-    if (conditionExpression != null) __obj.updateDynamic("conditionExpression")(conditionExpression)
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (conditionExpression != null) __obj.updateDynamic("conditionExpression")(conditionExpression.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiddlewareCustomizationDefinition]
   }
 }

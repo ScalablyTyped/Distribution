@@ -15,8 +15,8 @@ object ReportKey {
   @scala.inline
   def apply(queryId: String = null, reportId: String = null): ReportKey = {
     val __obj = js.Dynamic.literal()
-    if (queryId != null) __obj.updateDynamic("queryId")(queryId)
-    if (reportId != null) __obj.updateDynamic("reportId")(reportId)
+    if (queryId != null) __obj.updateDynamic("queryId")(queryId.asInstanceOf[js.Any])
+    if (reportId != null) __obj.updateDynamic("reportId")(reportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportKey]
   }
 }

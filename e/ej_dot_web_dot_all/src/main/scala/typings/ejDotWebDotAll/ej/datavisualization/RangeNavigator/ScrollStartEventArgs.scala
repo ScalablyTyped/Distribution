@@ -36,12 +36,12 @@ object ScrollStartEventArgs {
     `type`: String = null
   ): ScrollStartEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (dataEndRange != null) __obj.updateDynamic("dataEndRange")(dataEndRange)
-    if (dataStartRange != null) __obj.updateDynamic("dataStartRange")(dataStartRange)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dataEndRange != null) __obj.updateDynamic("dataEndRange")(dataEndRange.asInstanceOf[js.Any])
+    if (dataStartRange != null) __obj.updateDynamic("dataStartRange")(dataStartRange.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollStartEventArgs]
   }
 }

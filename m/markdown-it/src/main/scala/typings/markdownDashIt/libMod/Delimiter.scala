@@ -27,7 +27,7 @@ object Delimiter {
     open: Boolean,
     token: Double
   ): Delimiter = {
-    val __obj = js.Dynamic.literal(close = close, end = end, jump = jump, length = length, level = level, marker = marker, open = open, token = token)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], jump = jump.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Delimiter]
   }

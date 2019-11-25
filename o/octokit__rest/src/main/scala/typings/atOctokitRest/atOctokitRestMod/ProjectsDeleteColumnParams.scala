@@ -11,7 +11,7 @@ trait ProjectsDeleteColumnParams extends js.Object {
 object ProjectsDeleteColumnParams {
   @scala.inline
   def apply(column_id: Double): ProjectsDeleteColumnParams = {
-    val __obj = js.Dynamic.literal(column_id = column_id)
+    val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectsDeleteColumnParams]
   }

@@ -39,11 +39,11 @@ object ITaxRateUpdateOptions {
     metadata: IOptionsMetadata = null
   ): ITaxRateUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (display_name != null) __obj.updateDynamic("display_name")(display_name)
-    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (display_name != null) __obj.updateDynamic("display_name")(display_name.asInstanceOf[js.Any])
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITaxRateUpdateOptions]
   }
 }

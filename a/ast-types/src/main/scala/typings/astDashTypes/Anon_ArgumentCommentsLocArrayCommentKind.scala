@@ -16,9 +16,9 @@ trait Anon_ArgumentCommentsLocArrayCommentKind extends js.Object {
 object Anon_ArgumentCommentsLocArrayCommentKind {
   @scala.inline
   def apply(argument: FlowTypeKind, comments: js.Array[CommentKind] = null, loc: SourceLocationKind = null): Anon_ArgumentCommentsLocArrayCommentKind = {
-    val __obj = js.Dynamic.literal(argument = argument)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArgumentCommentsLocArrayCommentKind]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_PartiallyResolved extends js.Object {
 object Anon_PartiallyResolved {
   @scala.inline
   def apply(partiallyResolved: Double, resolved: Double, unresolved: Double): Anon_PartiallyResolved = {
-    val __obj = js.Dynamic.literal(partiallyResolved = partiallyResolved, resolved = resolved, unresolved = unresolved)
+    val __obj = js.Dynamic.literal(partiallyResolved = partiallyResolved.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], unresolved = unresolved.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PartiallyResolved]
   }

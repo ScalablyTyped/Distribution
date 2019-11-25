@@ -20,7 +20,7 @@ trait _ReplicationConfiguration extends js.Object {
 object _ReplicationConfiguration {
   @scala.inline
   def apply(Role: String, Rules: js.Array[_ReplicationRule] | Iterable[_ReplicationRule]): _ReplicationConfiguration = {
-    val __obj = js.Dynamic.literal(Role = Role, Rules = Rules.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_ReplicationConfiguration]
   }

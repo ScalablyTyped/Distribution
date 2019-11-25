@@ -24,11 +24,11 @@ object ProducerMessage {
     groupId: String = null,
     messageAttributes: StringDictionary[ProducerMessageAttribute] = null
   ): ProducerMessage = {
-    val __obj = js.Dynamic.literal(body = body, id = id)
-    if (deduplicationId != null) __obj.updateDynamic("deduplicationId")(deduplicationId)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (deduplicationId != null) __obj.updateDynamic("deduplicationId")(deduplicationId.asInstanceOf[js.Any])
     if (delaySeconds != null) __obj.updateDynamic("delaySeconds")(delaySeconds.asInstanceOf[js.Any])
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
-    if (messageAttributes != null) __obj.updateDynamic("messageAttributes")(messageAttributes)
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
+    if (messageAttributes != null) __obj.updateDynamic("messageAttributes")(messageAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerMessage]
   }
 }

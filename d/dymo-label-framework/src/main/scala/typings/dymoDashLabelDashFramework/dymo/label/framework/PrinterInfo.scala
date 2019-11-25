@@ -32,7 +32,7 @@ object PrinterInfo {
     name: String,
     printerType: String
   ): PrinterInfo = {
-    val __obj = js.Dynamic.literal(isAutoCutSupported = isAutoCutSupported, isConnected = isConnected, isLocal = isLocal, isTwinTurbo = isTwinTurbo, modelName = modelName, name = name, printerType = printerType)
+    val __obj = js.Dynamic.literal(isAutoCutSupported = isAutoCutSupported.asInstanceOf[js.Any], isConnected = isConnected.asInstanceOf[js.Any], isLocal = isLocal.asInstanceOf[js.Any], isTwinTurbo = isTwinTurbo.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], printerType = printerType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PrinterInfo]
   }

@@ -56,11 +56,11 @@ object GetOpenIdTokenForDeveloperIdentityInput {
     IdentityId: String = null,
     TokenDuration: Int | Double = null
   ): GetOpenIdTokenForDeveloperIdentityInput = {
-    val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId, Logins = Logins.asInstanceOf[js.Any])
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], Logins = Logins.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
+    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
     if (TokenDuration != null) __obj.updateDynamic("TokenDuration")(TokenDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOpenIdTokenForDeveloperIdentityInput]
   }

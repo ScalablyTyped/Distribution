@@ -13,8 +13,8 @@ object ImageSourceOptions {
   @scala.inline
   def apply(coordinates: js.Array[js.Array[Double]] = null, url: String = null): ImageSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageSourceOptions]
   }
 }

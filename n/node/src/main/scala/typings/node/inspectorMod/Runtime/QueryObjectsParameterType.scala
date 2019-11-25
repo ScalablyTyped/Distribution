@@ -14,7 +14,7 @@ trait QueryObjectsParameterType extends js.Object {
 object QueryObjectsParameterType {
   @scala.inline
   def apply(prototypeObjectId: RemoteObjectId): QueryObjectsParameterType = {
-    val __obj = js.Dynamic.literal(prototypeObjectId = prototypeObjectId)
+    val __obj = js.Dynamic.literal(prototypeObjectId = prototypeObjectId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryObjectsParameterType]
   }

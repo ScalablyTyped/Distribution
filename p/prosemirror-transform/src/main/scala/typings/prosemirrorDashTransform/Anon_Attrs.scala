@@ -16,8 +16,8 @@ object Anon_Attrs {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](`type`: NodeType[S], attrs: StringDictionary[js.Any] = null): Anon_Attrs[S] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attrs[S]]
   }
 }

@@ -36,9 +36,9 @@ object Url {
     hash: String = null,
     path: String = null
   ): Url = {
-    val __obj = js.Dynamic.literal(auth = auth, host = host, hostname = hostname, href = href, pathname = pathname, port = port, protocol = protocol, query = query, search = search, slashes = slashes)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], slashes = slashes.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Url]
   }
 }

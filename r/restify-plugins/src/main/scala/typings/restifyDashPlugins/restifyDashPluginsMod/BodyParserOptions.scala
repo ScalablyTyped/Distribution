@@ -79,19 +79,19 @@ object BodyParserOptions {
     uploadDir: String = null
   ): BodyParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (!js.isUndefined(keepExtensions)) __obj.updateDynamic("keepExtensions")(keepExtensions)
-    if (!js.isUndefined(mapFiles)) __obj.updateDynamic("mapFiles")(mapFiles)
-    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepExtensions)) __obj.updateDynamic("keepExtensions")(keepExtensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapFiles)) __obj.updateDynamic("mapFiles")(mapFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.asInstanceOf[js.Any])
     if (maxBodySize != null) __obj.updateDynamic("maxBodySize")(maxBodySize.asInstanceOf[js.Any])
     if (maxFieldsSize != null) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.asInstanceOf[js.Any])
     if (multipartFileHandler != null) __obj.updateDynamic("multipartFileHandler")(js.Any.fromFunction0(multipartFileHandler))
     if (multipartHandler != null) __obj.updateDynamic("multipartHandler")(js.Any.fromFunction0(multipartHandler))
-    if (!js.isUndefined(multiples)) __obj.updateDynamic("multiples")(multiples)
-    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams)
-    if (!js.isUndefined(rejectUnknown)) __obj.updateDynamic("rejectUnknown")(rejectUnknown)
-    if (reviver != null) __obj.updateDynamic("reviver")(reviver)
-    if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir)
+    if (!js.isUndefined(multiples)) __obj.updateDynamic("multiples")(multiples.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnknown)) __obj.updateDynamic("rejectUnknown")(rejectUnknown.asInstanceOf[js.Any])
+    if (reviver != null) __obj.updateDynamic("reviver")(reviver.asInstanceOf[js.Any])
+    if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyParserOptions]
   }
 }

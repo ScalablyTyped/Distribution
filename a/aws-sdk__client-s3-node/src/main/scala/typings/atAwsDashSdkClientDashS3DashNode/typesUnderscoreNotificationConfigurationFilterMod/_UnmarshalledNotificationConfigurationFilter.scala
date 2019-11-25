@@ -17,7 +17,7 @@ object _UnmarshalledNotificationConfigurationFilter {
   @scala.inline
   def apply(Key: _UnmarshalledS3KeyFilter = null): _UnmarshalledNotificationConfigurationFilter = {
     val __obj = js.Dynamic.literal()
-    if (Key != null) __obj.updateDynamic("Key")(Key)
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledNotificationConfigurationFilter]
   }
 }

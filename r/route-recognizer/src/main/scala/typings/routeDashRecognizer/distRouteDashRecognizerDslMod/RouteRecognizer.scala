@@ -13,7 +13,7 @@ object RouteRecognizer {
   @scala.inline
   def apply(add: js.Array[Route] => Unit, delegate: Delegate = null): RouteRecognizer = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
-    if (delegate != null) __obj.updateDynamic("delegate")(delegate)
+    if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteRecognizer]
   }
 }

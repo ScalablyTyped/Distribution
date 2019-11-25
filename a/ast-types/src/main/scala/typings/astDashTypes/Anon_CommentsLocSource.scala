@@ -17,9 +17,9 @@ object Anon_CommentsLocSource {
   @scala.inline
   def apply(comments: js.Array[CommentKind] = null, loc: SourceLocationKind = null, source: LiteralKind = null): Anon_CommentsLocSource = {
     val __obj = js.Dynamic.literal()
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocSource]
   }
 }

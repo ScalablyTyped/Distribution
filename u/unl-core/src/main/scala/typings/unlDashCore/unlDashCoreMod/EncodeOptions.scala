@@ -12,7 +12,7 @@ trait EncodeOptions extends js.Object {
 object EncodeOptions {
   @scala.inline
   def apply(elevation: Double, elevationType: ElevationType): EncodeOptions = {
-    val __obj = js.Dynamic.literal(elevation = elevation, elevationType = elevationType)
+    val __obj = js.Dynamic.literal(elevation = elevation.asInstanceOf[js.Any], elevationType = elevationType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EncodeOptions]
   }

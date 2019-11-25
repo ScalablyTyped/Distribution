@@ -31,8 +31,8 @@ trait zoomIn extends js.Object {
 object zoomIn {
   @scala.inline
   def apply(borderWidth: Double, closePath: Boolean, points: js.Array[_], `type`: String): zoomIn = {
-    val __obj = js.Dynamic.literal(borderWidth = borderWidth, closePath = closePath, points = points)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(borderWidth = borderWidth.asInstanceOf[js.Any], closePath = closePath.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[zoomIn]
   }
 }

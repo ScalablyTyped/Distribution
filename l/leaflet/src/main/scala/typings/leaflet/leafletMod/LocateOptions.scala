@@ -24,12 +24,12 @@ object LocateOptions {
     watch: js.UndefOr[Boolean] = js.undefined
   ): LocateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy)
+    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (maximumAge != null) __obj.updateDynamic("maximumAge")(maximumAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(setView)) __obj.updateDynamic("setView")(setView)
+    if (!js.isUndefined(setView)) __obj.updateDynamic("setView")(setView.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocateOptions]
   }
 }

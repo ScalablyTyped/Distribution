@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait InfoGitMode extends js.Object
 
+object InfoGitMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def full: typings.expressDashActuator.expressDashActuatorStrings.full = this.cast("full")
+  @scala.inline
+  def simple: typings.expressDashActuator.expressDashActuatorStrings.simple = this.cast("simple")
+}
+

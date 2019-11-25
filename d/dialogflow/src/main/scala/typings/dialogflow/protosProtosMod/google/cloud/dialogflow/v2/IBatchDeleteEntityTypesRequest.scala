@@ -16,8 +16,8 @@ object IBatchDeleteEntityTypesRequest {
   @scala.inline
   def apply(entityTypeNames: js.Array[String] = null, parent: String = null): IBatchDeleteEntityTypesRequest = {
     val __obj = js.Dynamic.literal()
-    if (entityTypeNames != null) __obj.updateDynamic("entityTypeNames")(entityTypeNames)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (entityTypeNames != null) __obj.updateDynamic("entityTypeNames")(entityTypeNames.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchDeleteEntityTypesRequest]
   }
 }

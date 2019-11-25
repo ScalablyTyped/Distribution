@@ -12,7 +12,7 @@ object InspectRequestedEventDataType {
   @scala.inline
   def apply(`object`: RemoteObject): InspectRequestedEventDataType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InspectRequestedEventDataType]
   }
 }

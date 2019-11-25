@@ -16,7 +16,7 @@ trait Anon_Default extends js.Object {
 object Anon_Default {
   @scala.inline
   def apply(default: default, denied: denied, granted: granted): Anon_Default = {
-    val __obj = js.Dynamic.literal(default = default, denied = denied, granted = granted)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], denied = denied.asInstanceOf[js.Any], granted = granted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Default]
   }

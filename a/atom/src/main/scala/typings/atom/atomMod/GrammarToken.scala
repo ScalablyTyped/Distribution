@@ -12,7 +12,7 @@ trait GrammarToken extends js.Object {
 object GrammarToken {
   @scala.inline
   def apply(scopes: js.Array[String], value: String): GrammarToken = {
-    val __obj = js.Dynamic.literal(scopes = scopes, value = value)
+    val __obj = js.Dynamic.literal(scopes = scopes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GrammarToken]
   }

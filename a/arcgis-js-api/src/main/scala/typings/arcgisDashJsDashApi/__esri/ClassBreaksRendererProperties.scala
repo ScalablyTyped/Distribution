@@ -105,19 +105,19 @@ object ClassBreaksRendererProperties {
     visualVariables: js.Array[VisualVariableProperties] = null
   ): ClassBreaksRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
     if (backgroundFillSymbol != null) __obj.updateDynamic("backgroundFillSymbol")(backgroundFillSymbol.asInstanceOf[js.Any])
-    if (classBreakInfos != null) __obj.updateDynamic("classBreakInfos")(classBreakInfos)
-    if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel)
-    if (defaultSymbol != null) __obj.updateDynamic("defaultSymbol")(defaultSymbol)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    if (classBreakInfos != null) __obj.updateDynamic("classBreakInfos")(classBreakInfos.asInstanceOf[js.Any])
+    if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel.asInstanceOf[js.Any])
+    if (defaultSymbol != null) __obj.updateDynamic("defaultSymbol")(defaultSymbol.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
     if (normalizationTotal != null) __obj.updateDynamic("normalizationTotal")(normalizationTotal.asInstanceOf[js.Any])
     if (normalizationType != null) __obj.updateDynamic("normalizationType")(normalizationType.asInstanceOf[js.Any])
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassBreaksRendererProperties]
   }
 }

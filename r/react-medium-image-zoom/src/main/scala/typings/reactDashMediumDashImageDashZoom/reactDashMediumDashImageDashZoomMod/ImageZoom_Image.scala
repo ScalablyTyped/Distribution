@@ -14,10 +14,10 @@ trait ImageZoom_Image extends js.Object {
 object ImageZoom_Image {
   @scala.inline
   def apply(src: String, alt: String = null, className: String = null, style: js.Object = null): ImageZoom_Image = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageZoom_Image]
   }
 }

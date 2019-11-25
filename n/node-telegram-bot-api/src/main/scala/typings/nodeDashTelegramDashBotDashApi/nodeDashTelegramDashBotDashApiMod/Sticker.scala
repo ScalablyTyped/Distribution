@@ -27,12 +27,12 @@ object Sticker {
     set_name: String = null,
     thumb: PhotoSize = null
   ): Sticker = {
-    val __obj = js.Dynamic.literal(file_id = file_id, height = height, width = width)
-    if (emoji != null) __obj.updateDynamic("emoji")(emoji)
+    val __obj = js.Dynamic.literal(file_id = file_id.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (emoji != null) __obj.updateDynamic("emoji")(emoji.asInstanceOf[js.Any])
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
-    if (mask_position != null) __obj.updateDynamic("mask_position")(mask_position)
-    if (set_name != null) __obj.updateDynamic("set_name")(set_name)
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
+    if (mask_position != null) __obj.updateDynamic("mask_position")(mask_position.asInstanceOf[js.Any])
+    if (set_name != null) __obj.updateDynamic("set_name")(set_name.asInstanceOf[js.Any])
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sticker]
   }
 }

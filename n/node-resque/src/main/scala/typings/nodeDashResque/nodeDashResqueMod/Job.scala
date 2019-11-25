@@ -19,8 +19,8 @@ object Job {
     plugins: js.Array[String] = null
   ): Job[TResult] = {
     val __obj = js.Dynamic.literal(perform = js.Any.fromFunction1(perform))
-    if (pluginOptions != null) __obj.updateDynamic("pluginOptions")(pluginOptions)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (pluginOptions != null) __obj.updateDynamic("pluginOptions")(pluginOptions.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Job[TResult]]
   }
 }

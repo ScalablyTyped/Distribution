@@ -107,11 +107,8 @@ object ITextField {
   @scala.inline
   def apply(
     IBase: typings.extjs.Ext.form.field.IBase = null,
-    afterComponentLayout: () => Unit = null,
-    afterRender: () => Unit = null,
     allowBlank: js.UndefOr[Boolean] = js.undefined,
     allowOnlyWhitespace: js.UndefOr[Boolean] = js.undefined,
-    applyState: /* state */ js.UndefOr[js.Any] => Unit = null,
     autoSize: () => Unit = null,
     beforeFocus: () => Unit = null,
     blankText: java.lang.String = null,
@@ -122,22 +119,15 @@ object ITextField {
     enforceMaxLength: js.UndefOr[Boolean] = js.undefined,
     getErrors: /* value */ js.UndefOr[js.Any] => Array = null,
     getRawValue: () => java.lang.String = null,
-    getState: () => _ = null,
-    getSubTplData: () => _ = null,
     grow: js.UndefOr[Boolean] = js.undefined,
     growAppend: java.lang.String = null,
     growMax: Int | Double = null,
     growMin: Int | Double = null,
-    initComponent: () => Unit = null,
-    initEvents: () => Unit = null,
     maskRe: RegExp = null,
     maxLength: Int | Double = null,
     maxLengthText: java.lang.String = null,
     minLength: Int | Double = null,
     minLengthText: java.lang.String = null,
-    onDestroy: () => Unit = null,
-    onDisable: () => Unit = null,
-    onEnable: () => Unit = null,
     postBlur: () => Unit = null,
     processRawValue: /* value */ js.UndefOr[java.lang.String] => java.lang.String = null,
     regex: RegExp = null,
@@ -155,53 +145,43 @@ object ITextField {
     vtypeText: java.lang.String = null
   ): ITextField = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IBase)
-    if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(js.Any.fromFunction0(afterComponentLayout))
-    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
-    if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank)
-    if (!js.isUndefined(allowOnlyWhitespace)) __obj.updateDynamic("allowOnlyWhitespace")(allowOnlyWhitespace)
-    if (applyState != null) __obj.updateDynamic("applyState")(js.Any.fromFunction1(applyState))
+    if (IBase != null) js.Dynamic.global.Object.assign(__obj, IBase)
+    if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowOnlyWhitespace)) __obj.updateDynamic("allowOnlyWhitespace")(allowOnlyWhitespace.asInstanceOf[js.Any])
     if (autoSize != null) __obj.updateDynamic("autoSize")(js.Any.fromFunction0(autoSize))
     if (beforeFocus != null) __obj.updateDynamic("beforeFocus")(js.Any.fromFunction0(beforeFocus))
-    if (blankText != null) __obj.updateDynamic("blankText")(blankText)
-    if (!js.isUndefined(disableKeyFilter)) __obj.updateDynamic("disableKeyFilter")(disableKeyFilter)
-    if (emptyCls != null) __obj.updateDynamic("emptyCls")(emptyCls)
-    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText)
-    if (!js.isUndefined(enableKeyEvents)) __obj.updateDynamic("enableKeyEvents")(enableKeyEvents)
-    if (!js.isUndefined(enforceMaxLength)) __obj.updateDynamic("enforceMaxLength")(enforceMaxLength)
+    if (blankText != null) __obj.updateDynamic("blankText")(blankText.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableKeyFilter)) __obj.updateDynamic("disableKeyFilter")(disableKeyFilter.asInstanceOf[js.Any])
+    if (emptyCls != null) __obj.updateDynamic("emptyCls")(emptyCls.asInstanceOf[js.Any])
+    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKeyEvents)) __obj.updateDynamic("enableKeyEvents")(enableKeyEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforceMaxLength)) __obj.updateDynamic("enforceMaxLength")(enforceMaxLength.asInstanceOf[js.Any])
     if (getErrors != null) __obj.updateDynamic("getErrors")(js.Any.fromFunction1(getErrors))
     if (getRawValue != null) __obj.updateDynamic("getRawValue")(js.Any.fromFunction0(getRawValue))
-    if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
-    if (!js.isUndefined(grow)) __obj.updateDynamic("grow")(grow)
-    if (growAppend != null) __obj.updateDynamic("growAppend")(growAppend)
+    if (!js.isUndefined(grow)) __obj.updateDynamic("grow")(grow.asInstanceOf[js.Any])
+    if (growAppend != null) __obj.updateDynamic("growAppend")(growAppend.asInstanceOf[js.Any])
     if (growMax != null) __obj.updateDynamic("growMax")(growMax.asInstanceOf[js.Any])
     if (growMin != null) __obj.updateDynamic("growMin")(growMin.asInstanceOf[js.Any])
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (initEvents != null) __obj.updateDynamic("initEvents")(js.Any.fromFunction0(initEvents))
-    if (maskRe != null) __obj.updateDynamic("maskRe")(maskRe)
+    if (maskRe != null) __obj.updateDynamic("maskRe")(maskRe.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxLengthText != null) __obj.updateDynamic("maxLengthText")(maxLengthText)
+    if (maxLengthText != null) __obj.updateDynamic("maxLengthText")(maxLengthText.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (minLengthText != null) __obj.updateDynamic("minLengthText")(minLengthText)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
-    if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction0(onDisable))
-    if (onEnable != null) __obj.updateDynamic("onEnable")(js.Any.fromFunction0(onEnable))
+    if (minLengthText != null) __obj.updateDynamic("minLengthText")(minLengthText.asInstanceOf[js.Any])
     if (postBlur != null) __obj.updateDynamic("postBlur")(js.Any.fromFunction0(postBlur))
     if (processRawValue != null) __obj.updateDynamic("processRawValue")(js.Any.fromFunction1(processRawValue))
-    if (regex != null) __obj.updateDynamic("regex")(regex)
-    if (regexText != null) __obj.updateDynamic("regexText")(regexText)
-    if (requiredCls != null) __obj.updateDynamic("requiredCls")(requiredCls)
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
+    if (regexText != null) __obj.updateDynamic("regexText")(regexText.asInstanceOf[js.Any])
+    if (requiredCls != null) __obj.updateDynamic("requiredCls")(requiredCls.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
-    if (!js.isUndefined(selectOnFocus)) __obj.updateDynamic("selectOnFocus")(selectOnFocus)
+    if (!js.isUndefined(selectOnFocus)) __obj.updateDynamic("selectOnFocus")(selectOnFocus.asInstanceOf[js.Any])
     if (selectText != null) __obj.updateDynamic("selectText")(js.Any.fromFunction2(selectText))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (stripCharsRe != null) __obj.updateDynamic("stripCharsRe")(stripCharsRe)
-    if (!js.isUndefined(validateBlank)) __obj.updateDynamic("validateBlank")(validateBlank)
-    if (validator != null) __obj.updateDynamic("validator")(validator)
-    if (vtype != null) __obj.updateDynamic("vtype")(vtype)
-    if (vtypeText != null) __obj.updateDynamic("vtypeText")(vtypeText)
+    if (stripCharsRe != null) __obj.updateDynamic("stripCharsRe")(stripCharsRe.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateBlank)) __obj.updateDynamic("validateBlank")(validateBlank.asInstanceOf[js.Any])
+    if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
+    if (vtype != null) __obj.updateDynamic("vtype")(vtype.asInstanceOf[js.Any])
+    if (vtypeText != null) __obj.updateDynamic("vtypeText")(vtypeText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextField]
   }
 }

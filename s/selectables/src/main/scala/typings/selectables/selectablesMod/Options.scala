@@ -34,16 +34,16 @@ object Options {
     zone: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (elements != null) __obj.updateDynamic("elements")(elements)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (moreUsing != null) __obj.updateDynamic("moreUsing")(moreUsing)
+    if (moreUsing != null) __obj.updateDynamic("moreUsing")(moreUsing.asInstanceOf[js.Any])
     if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1(onDeselect))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass)
+    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))
-    if (zone != null) __obj.updateDynamic("zone")(zone)
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

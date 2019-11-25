@@ -21,10 +21,10 @@ object Anon_Attrs {
     prefix: String = null
   ): Anon_Attrs = {
     val __obj = js.Dynamic.literal()
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (existingPrefixes != null) __obj.updateDynamic("existingPrefixes")(existingPrefixes)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (existingPrefixes != null) __obj.updateDynamic("existingPrefixes")(existingPrefixes.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attrs]
   }
 }

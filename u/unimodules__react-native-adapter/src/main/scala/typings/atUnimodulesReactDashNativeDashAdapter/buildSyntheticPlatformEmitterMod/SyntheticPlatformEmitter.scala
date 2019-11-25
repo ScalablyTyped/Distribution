@@ -12,7 +12,7 @@ trait SyntheticPlatformEmitter extends js.Object {
 object SyntheticPlatformEmitter {
   @scala.inline
   def apply(_emitter: js.Any, emit: (String, js.Any) => Unit): SyntheticPlatformEmitter = {
-    val __obj = js.Dynamic.literal(_emitter = _emitter, emit = js.Any.fromFunction2(emit))
+    val __obj = js.Dynamic.literal(_emitter = _emitter.asInstanceOf[js.Any], emit = js.Any.fromFunction2(emit))
   
     __obj.asInstanceOf[SyntheticPlatformEmitter]
   }

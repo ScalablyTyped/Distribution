@@ -5,7 +5,7 @@ import typings.ebml.ebmlStrings.`1 - bzlib,`
 import typings.ebml.ebmlStrings.`2 - lzo1x`
 import typings.ebml.ebmlStrings.f
 import typings.ebml.ebmlStrings.i
-import typings.ebml.ebmlStrings.informational
+import typings.ebml.ebmlStrings.informational_
 import typings.ebml.ebmlStrings.u
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,24 +40,24 @@ object EBMLNumericTagSchema {
     minver: Int | Double = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     recursive: js.UndefOr[Boolean] = js.undefined,
-    strong: informational | Informational = null,
+    strong: informational_ | Informational = null,
     webm: js.UndefOr[Boolean] = js.undefined
   ): EBMLNumericTagSchema = {
-    val __obj = js.Dynamic.literal(description = description, level = level, name = name, range = range)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (br != null) __obj.updateDynamic("br")(br.asInstanceOf[js.Any])
-    if (cppname != null) __obj.updateDynamic("cppname")(cppname)
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (cppname != null) __obj.updateDynamic("cppname")(cppname.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (del != null) __obj.updateDynamic("del")(del.asInstanceOf[js.Any])
-    if (!js.isUndefined(divx)) __obj.updateDynamic("divx")(divx)
-    if (i != null) __obj.updateDynamic("i")(i)
-    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory)
-    if (maxver != null) __obj.updateDynamic("maxver")(maxver)
+    if (!js.isUndefined(divx)) __obj.updateDynamic("divx")(divx.asInstanceOf[js.Any])
+    if (i != null) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.asInstanceOf[js.Any])
+    if (maxver != null) __obj.updateDynamic("maxver")(maxver.asInstanceOf[js.Any])
     if (minver != null) __obj.updateDynamic("minver")(minver.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
     if (strong != null) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
-    if (!js.isUndefined(webm)) __obj.updateDynamic("webm")(webm)
+    if (!js.isUndefined(webm)) __obj.updateDynamic("webm")(webm.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBMLNumericTagSchema]
   }
 }

@@ -17,7 +17,7 @@ object LiveFinalViewersResponseRootObject {
     total_unique_viewer_count: Double,
     users: js.Array[LiveFinalViewersResponseUsersItem]
   ): LiveFinalViewersResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status, total_unique_viewer_count = total_unique_viewer_count, users = users)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], total_unique_viewer_count = total_unique_viewer_count.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LiveFinalViewersResponseRootObject]
   }

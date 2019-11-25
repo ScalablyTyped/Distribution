@@ -28,7 +28,7 @@ object SignatureHelp {
     activeParameter: Int | Double = null,
     activeSignature: Int | Double = null
   ): SignatureHelp = {
-    val __obj = js.Dynamic.literal(signatures = signatures)
+    val __obj = js.Dynamic.literal(signatures = signatures.asInstanceOf[js.Any])
     if (activeParameter != null) __obj.updateDynamic("activeParameter")(activeParameter.asInstanceOf[js.Any])
     if (activeSignature != null) __obj.updateDynamic("activeSignature")(activeSignature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelp]

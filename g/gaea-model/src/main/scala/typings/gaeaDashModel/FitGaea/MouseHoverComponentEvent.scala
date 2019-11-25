@@ -12,8 +12,8 @@ trait MouseHoverComponentEvent extends js.Object {
 object MouseHoverComponentEvent {
   @scala.inline
   def apply(mapUniqueKey: String, `type`: String): MouseHoverComponentEvent = {
-    val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseHoverComponentEvent]
   }
 }

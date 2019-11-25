@@ -24,11 +24,11 @@ object PartialStyleRulesStepIconClasskey {
     text: CSSProperties = null
   ): PartialStyleRulesStepIconClasskey = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (completed != null) __obj.updateDynamic("completed")(completed)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (completed != null) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesStepIconClasskey]
   }
 }

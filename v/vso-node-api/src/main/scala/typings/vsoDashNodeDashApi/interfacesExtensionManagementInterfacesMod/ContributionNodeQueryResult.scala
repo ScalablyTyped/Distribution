@@ -22,7 +22,7 @@ object ContributionNodeQueryResult {
     nodes: StringDictionary[ClientContributionNode],
     providerDetails: StringDictionary[ClientContributionProviderDetails]
   ): ContributionNodeQueryResult = {
-    val __obj = js.Dynamic.literal(nodes = nodes, providerDetails = providerDetails)
+    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], providerDetails = providerDetails.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContributionNodeQueryResult]
   }

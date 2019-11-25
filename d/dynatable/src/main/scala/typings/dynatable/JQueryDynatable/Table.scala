@@ -53,11 +53,11 @@ object Table {
     headRowSelector: String = null
   ): Table = {
     val __obj = js.Dynamic.literal()
-    if (bodyRowSelector != null) __obj.updateDynamic("bodyRowSelector")(bodyRowSelector)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (defaultColumnIdStyle != null) __obj.updateDynamic("defaultColumnIdStyle")(defaultColumnIdStyle)
-    if (headRowClass != null) __obj.updateDynamic("headRowClass")(headRowClass)
-    if (headRowSelector != null) __obj.updateDynamic("headRowSelector")(headRowSelector)
+    if (bodyRowSelector != null) __obj.updateDynamic("bodyRowSelector")(bodyRowSelector.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (defaultColumnIdStyle != null) __obj.updateDynamic("defaultColumnIdStyle")(defaultColumnIdStyle.asInstanceOf[js.Any])
+    if (headRowClass != null) __obj.updateDynamic("headRowClass")(headRowClass.asInstanceOf[js.Any])
+    if (headRowSelector != null) __obj.updateDynamic("headRowSelector")(headRowSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table]
   }
 }

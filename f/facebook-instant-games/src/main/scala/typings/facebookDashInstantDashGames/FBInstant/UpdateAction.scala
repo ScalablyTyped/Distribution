@@ -16,3 +16,12 @@ import scala.scalajs.js.annotation._
 */
 trait UpdateAction extends js.Object
 
+object UpdateAction {
+  @scala.inline
+  def CUSTOM: typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.CUSTOM = this.cast("CUSTOM")
+  @scala.inline
+  def LEADERBOARD: typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.LEADERBOARD = this.cast("LEADERBOARD")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

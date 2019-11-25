@@ -13,9 +13,9 @@ trait Anon_AliasIndex extends js.Object {
 object Anon_AliasIndex {
   @scala.inline
   def apply(alias: String, index: String = null, indices: js.Array[String] = null): Anon_AliasIndex = {
-    val __obj = js.Dynamic.literal(alias = alias)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (indices != null) __obj.updateDynamic("indices")(indices)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AliasIndex]
   }
 }

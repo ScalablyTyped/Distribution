@@ -29,19 +29,19 @@ object StrategyOptions {
     userAgent: String = null,
     userProfileURL: String = null
   ): StrategyOptions = {
-    val __obj = js.Dynamic.literal(clientID = clientID, clientSecret = clientSecret)
-    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
-    if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL)
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
+    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL.asInstanceOf[js.Any])
+    if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL.asInstanceOf[js.Any])
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator)
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
-    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL)
+    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator.asInstanceOf[js.Any])
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
+    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptions]
   }
 }

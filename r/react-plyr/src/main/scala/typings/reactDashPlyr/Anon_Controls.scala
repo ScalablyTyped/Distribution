@@ -13,8 +13,8 @@ object Anon_Controls {
   @scala.inline
   def apply(controls: js.UndefOr[Boolean] = js.undefined, seek: js.UndefOr[Boolean] = js.undefined): Anon_Controls = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
-    if (!js.isUndefined(seek)) __obj.updateDynamic("seek")(seek)
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(seek)) __obj.updateDynamic("seek")(seek.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Controls]
   }
 }

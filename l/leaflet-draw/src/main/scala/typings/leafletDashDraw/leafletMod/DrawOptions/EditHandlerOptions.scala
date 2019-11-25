@@ -19,7 +19,7 @@ object EditHandlerOptions {
   @scala.inline
   def apply(selectedPathOptions: PathOptions = null): EditHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (selectedPathOptions != null) __obj.updateDynamic("selectedPathOptions")(selectedPathOptions)
+    if (selectedPathOptions != null) __obj.updateDynamic("selectedPathOptions")(selectedPathOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditHandlerOptions]
   }
 }

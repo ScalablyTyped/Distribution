@@ -19,8 +19,8 @@ object Anon_MutationResult {
     queryVariables: Record[String, _],
     queryName: String = null
   ): Anon_MutationResult[T] = {
-    val __obj = js.Dynamic.literal(mutationResult = mutationResult, queryVariables = queryVariables)
-    if (queryName != null) __obj.updateDynamic("queryName")(queryName)
+    val __obj = js.Dynamic.literal(mutationResult = mutationResult.asInstanceOf[js.Any], queryVariables = queryVariables.asInstanceOf[js.Any])
+    if (queryName != null) __obj.updateDynamic("queryName")(queryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MutationResult[T]]
   }
 }

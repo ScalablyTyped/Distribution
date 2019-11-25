@@ -14,7 +14,7 @@ trait EncryptionResult extends js.Object {
 object EncryptionResult {
   @scala.inline
   def apply(cipherText: Buffer, localPublicKey: String, salt: String): EncryptionResult = {
-    val __obj = js.Dynamic.literal(cipherText = cipherText, localPublicKey = localPublicKey, salt = salt)
+    val __obj = js.Dynamic.literal(cipherText = cipherText.asInstanceOf[js.Any], localPublicKey = localPublicKey.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EncryptionResult]
   }

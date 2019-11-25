@@ -20,9 +20,9 @@ object WhileStatement {
     `type`: typings.luaparse.luaparseStrings.WhileStatement,
     loc: Anon_End = null
   ): WhileStatement = {
-    val __obj = js.Dynamic.literal(body = body, condition = condition)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhileStatement]
   }
 }

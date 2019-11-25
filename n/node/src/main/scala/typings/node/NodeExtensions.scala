@@ -24,7 +24,7 @@ object NodeExtensions {
     __obj.updateDynamic(".js")(js.Any.fromFunction2(`.js`))
     __obj.updateDynamic(".json")(js.Any.fromFunction2(`.json`))
     __obj.updateDynamic(".node")(js.Any.fromFunction2(`.node`))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[NodeExtensions]
   }
 }

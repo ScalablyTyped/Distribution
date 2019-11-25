@@ -20,10 +20,10 @@ object HashClientIdResponse {
     webPropertyId: String = null
   ): HashClientIdResponse = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (hashedClientId != null) __obj.updateDynamic("hashedClientId")(hashedClientId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (hashedClientId != null) __obj.updateDynamic("hashedClientId")(hashedClientId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashClientIdResponse]
   }
 }

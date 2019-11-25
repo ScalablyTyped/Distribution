@@ -78,10 +78,10 @@ object INxMeasureInfo {
     qNumFormat: IFieldAttributes = null,
     qSortIndicator: SortIndicatorType = null
   ): INxMeasureInfo = {
-    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount, qAttrDimInfo = qAttrDimInfo, qAttrExprInfo = qAttrExprInfo, qCardinal = qCardinal, qFallbackTitle = qFallbackTitle, qIsAutoFormat = qIsAutoFormat, qMax = qMax, qMin = qMin, qReverseSort = qReverseSort)
-    if (qError != null) __obj.updateDynamic("qError")(qError)
-    if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat)
-    if (qSortIndicator != null) __obj.updateDynamic("qSortIndicator")(qSortIndicator)
+    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount.asInstanceOf[js.Any], qAttrDimInfo = qAttrDimInfo.asInstanceOf[js.Any], qAttrExprInfo = qAttrExprInfo.asInstanceOf[js.Any], qCardinal = qCardinal.asInstanceOf[js.Any], qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qIsAutoFormat = qIsAutoFormat.asInstanceOf[js.Any], qMax = qMax.asInstanceOf[js.Any], qMin = qMin.asInstanceOf[js.Any], qReverseSort = qReverseSort.asInstanceOf[js.Any])
+    if (qError != null) __obj.updateDynamic("qError")(qError.asInstanceOf[js.Any])
+    if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat.asInstanceOf[js.Any])
+    if (qSortIndicator != null) __obj.updateDynamic("qSortIndicator")(qSortIndicator.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxMeasureInfo]
   }
 }

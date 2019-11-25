@@ -12,7 +12,7 @@ trait VapidKeys extends js.Object {
 object VapidKeys {
   @scala.inline
   def apply(privateKey: String, publicKey: String): VapidKeys = {
-    val __obj = js.Dynamic.literal(privateKey = privateKey, publicKey = publicKey)
+    val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VapidKeys]
   }

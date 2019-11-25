@@ -48,16 +48,16 @@ object UploadOptions {
     success: (/* data */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any], /* xhr */ js.UndefOr[js.Any]) => Unit = null,
     `type`: String = null
   ): UploadOptions = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (beforeStart != null) __obj.updateDynamic("beforeStart")(js.Any.fromFunction0(beforeStart))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (!js.isUndefined(isBtn)) __obj.updateDynamic("isBtn")(isBtn)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBtn)) __obj.updateDynamic("isBtn")(isBtn.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadOptions]
   }
 }

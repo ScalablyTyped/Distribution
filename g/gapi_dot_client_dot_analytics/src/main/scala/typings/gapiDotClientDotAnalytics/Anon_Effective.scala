@@ -16,7 +16,7 @@ object Anon_Effective {
   @scala.inline
   def apply(effective: js.Array[String] = null): Anon_Effective = {
     val __obj = js.Dynamic.literal()
-    if (effective != null) __obj.updateDynamic("effective")(effective)
+    if (effective != null) __obj.updateDynamic("effective")(effective.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Effective]
   }
 }

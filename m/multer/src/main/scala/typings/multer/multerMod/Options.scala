@@ -41,11 +41,11 @@ object Options {
     storage: StorageEngine = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (fileFilter != null) __obj.updateDynamic("fileFilter")(js.Any.fromFunction3(fileFilter))
-    if (limits != null) __obj.updateDynamic("limits")(limits)
-    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath)
-    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
+    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

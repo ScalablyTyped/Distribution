@@ -21,9 +21,9 @@ object OverviewMapControlOptions {
   ): OverviewMapControlOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverviewMapControlOptions]
   }
 }

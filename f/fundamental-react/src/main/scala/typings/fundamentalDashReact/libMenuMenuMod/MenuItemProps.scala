@@ -35,14 +35,14 @@ object MenuItemProps {
     urlProps: StringDictionary[js.Any] = null
   ): MenuItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (addon != null) __obj.updateDynamic("addon")(addon)
-    if (addonProps != null) __obj.updateDynamic("addonProps")(addonProps)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isLink)) __obj.updateDynamic("isLink")(isLink)
-    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (urlProps != null) __obj.updateDynamic("urlProps")(urlProps)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (addon != null) __obj.updateDynamic("addon")(addon.asInstanceOf[js.Any])
+    if (addonProps != null) __obj.updateDynamic("addonProps")(addonProps.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLink)) __obj.updateDynamic("isLink")(isLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (urlProps != null) __obj.updateDynamic("urlProps")(urlProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemProps]
   }
 }

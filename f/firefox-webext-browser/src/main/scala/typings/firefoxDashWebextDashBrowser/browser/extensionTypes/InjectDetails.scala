@@ -50,13 +50,13 @@ object InjectDetails {
     runAt: RunAt = null
   ): InjectDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (cssOrigin != null) __obj.updateDynamic("cssOrigin")(cssOrigin)
-    if (file != null) __obj.updateDynamic("file")(file)
+    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (cssOrigin != null) __obj.updateDynamic("cssOrigin")(cssOrigin.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank)
-    if (runAt != null) __obj.updateDynamic("runAt")(runAt)
+    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank.asInstanceOf[js.Any])
+    if (runAt != null) __obj.updateDynamic("runAt")(runAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectDetails]
   }
 }

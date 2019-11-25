@@ -16,8 +16,8 @@ object UploadAccountResponse {
   @scala.inline
   def apply(error: js.Array[Anon_Index] = null, kind: String = null): UploadAccountResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadAccountResponse]
   }
 }

@@ -25,8 +25,8 @@ object ICustomTextArea {
     show: valueOrfunc[Boolean],
     `type`: String
   ): ICustomTextArea = {
-    val __obj = js.Dynamic.literal(component = component, defaultValue = defaultValue, label = label, maxlength = maxlength, ref = ref, rows = rows, show = show.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], maxlength = maxlength.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomTextArea]
   }
 }

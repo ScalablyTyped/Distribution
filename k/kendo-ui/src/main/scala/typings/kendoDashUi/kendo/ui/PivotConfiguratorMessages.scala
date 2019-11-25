@@ -28,14 +28,14 @@ object PivotConfiguratorMessages {
     rowsLabel: String = null
   ): PivotConfiguratorMessages = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (columnsLabel != null) __obj.updateDynamic("columnsLabel")(columnsLabel)
-    if (fieldMenu != null) __obj.updateDynamic("fieldMenu")(fieldMenu)
-    if (fieldsLabel != null) __obj.updateDynamic("fieldsLabel")(fieldsLabel)
-    if (measures != null) __obj.updateDynamic("measures")(measures)
-    if (measuresLabel != null) __obj.updateDynamic("measuresLabel")(measuresLabel)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (rowsLabel != null) __obj.updateDynamic("rowsLabel")(rowsLabel)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (columnsLabel != null) __obj.updateDynamic("columnsLabel")(columnsLabel.asInstanceOf[js.Any])
+    if (fieldMenu != null) __obj.updateDynamic("fieldMenu")(fieldMenu.asInstanceOf[js.Any])
+    if (fieldsLabel != null) __obj.updateDynamic("fieldsLabel")(fieldsLabel.asInstanceOf[js.Any])
+    if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
+    if (measuresLabel != null) __obj.updateDynamic("measuresLabel")(measuresLabel.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (rowsLabel != null) __obj.updateDynamic("rowsLabel")(rowsLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotConfiguratorMessages]
   }
 }

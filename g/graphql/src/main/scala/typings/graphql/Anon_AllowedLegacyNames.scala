@@ -28,7 +28,7 @@ object Anon_AllowedLegacyNames {
     types: js.Array[GraphQLNamedType],
     extensions: Maybe[Record[String, _]] = null
   ): Anon_AllowedLegacyNames = {
-    val __obj = js.Dynamic.literal(allowedLegacyNames = allowedLegacyNames, assumeValid = assumeValid, directives = directives, extensionASTNodes = extensionASTNodes, types = types)
+    val __obj = js.Dynamic.literal(allowedLegacyNames = allowedLegacyNames.asInstanceOf[js.Any], assumeValid = assumeValid.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], extensionASTNodes = extensionASTNodes.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowedLegacyNames]
   }

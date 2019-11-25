@@ -28,13 +28,13 @@ object AzureTableStoreOptions {
     table: String = null
   ): AzureTableStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
+    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (errorLogger != null) __obj.updateDynamic("errorLogger")(js.Any.fromFunction1(errorLogger))
     if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
-    if (overrideCron != null) __obj.updateDynamic("overrideCron")(overrideCron)
+    if (overrideCron != null) __obj.updateDynamic("overrideCron")(overrideCron.asInstanceOf[js.Any])
     if (sessionTimeOut != null) __obj.updateDynamic("sessionTimeOut")(sessionTimeOut.asInstanceOf[js.Any])
-    if (storageAccount != null) __obj.updateDynamic("storageAccount")(storageAccount)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (storageAccount != null) __obj.updateDynamic("storageAccount")(storageAccount.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureTableStoreOptions]
   }
 }

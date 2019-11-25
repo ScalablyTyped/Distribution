@@ -13,7 +13,7 @@ trait Anon_LogLevel extends js.Object {
 object Anon_LogLevel {
   @scala.inline
   def apply(logLevel: OSLogLevel, visualLevel: OSLogLevel): Anon_LogLevel = {
-    val __obj = js.Dynamic.literal(logLevel = logLevel, visualLevel = visualLevel)
+    val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any], visualLevel = visualLevel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LogLevel]
   }

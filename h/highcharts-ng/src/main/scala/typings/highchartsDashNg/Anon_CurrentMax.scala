@@ -16,7 +16,7 @@ object Anon_CurrentMax {
     val __obj = js.Dynamic.literal()
     if (currentMax != null) __obj.updateDynamic("currentMax")(currentMax.asInstanceOf[js.Any])
     if (currentMin != null) __obj.updateDynamic("currentMin")(currentMin.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurrentMax]
   }
 }

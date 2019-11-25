@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait UpdateReason extends js.Object
 
+object UpdateReason {
+  @scala.inline
+  def attributes: typings.twilioDashChat.twilioDashChatStrings.attributes = this.cast("attributes")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dateCreated: typings.twilioDashChat.twilioDashChatStrings.dateCreated = this.cast("dateCreated")
+  @scala.inline
+  def dateUpdated: typings.twilioDashChat.twilioDashChatStrings.dateUpdated = this.cast("dateUpdated")
+  @scala.inline
+  def lastConsumedMessageIndex: typings.twilioDashChat.twilioDashChatStrings.lastConsumedMessageIndex = this.cast("lastConsumedMessageIndex")
+  @scala.inline
+  def lastConsumptionTimestamp: typings.twilioDashChat.twilioDashChatStrings.lastConsumptionTimestamp = this.cast("lastConsumptionTimestamp")
+  @scala.inline
+  def roleSid: typings.twilioDashChat.twilioDashChatStrings.roleSid = this.cast("roleSid")
+}
+

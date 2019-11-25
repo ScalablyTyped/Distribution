@@ -13,7 +13,7 @@ object MenuUIParams {
   @scala.inline
   def apply(item: JQuery = null): MenuUIParams = {
     val __obj = js.Dynamic.literal()
-    if (item != null) __obj.updateDynamic("item")(item)
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuUIParams]
   }
 }

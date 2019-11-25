@@ -22,8 +22,8 @@ object QueryTarget {
   @scala.inline
   def apply(parent: String = null, structuredQuery: StructuredQuery = null): QueryTarget = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (structuredQuery != null) __obj.updateDynamic("structuredQuery")(structuredQuery)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (structuredQuery != null) __obj.updateDynamic("structuredQuery")(structuredQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryTarget]
   }
 }

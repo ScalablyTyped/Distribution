@@ -28,14 +28,14 @@ object GridMessagesCommands {
     update: String = null
   ): GridMessagesCommands = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (canceledit != null) __obj.updateDynamic("canceledit")(canceledit)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (edit != null) __obj.updateDynamic("edit")(edit)
-    if (excel != null) __obj.updateDynamic("excel")(excel)
-    if (save != null) __obj.updateDynamic("save")(save)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (canceledit != null) __obj.updateDynamic("canceledit")(canceledit.asInstanceOf[js.Any])
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (excel != null) __obj.updateDynamic("excel")(excel.asInstanceOf[js.Any])
+    if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridMessagesCommands]
   }
 }

@@ -14,8 +14,8 @@ trait CustomerChurnRate extends js.Object {
 object CustomerChurnRate {
   @scala.inline
   def apply(`customer-churn-rate`: Double, date: String): CustomerChurnRate = {
-    val __obj = js.Dynamic.literal(date = date)
-    __obj.updateDynamic("customer-churn-rate")(`customer-churn-rate`)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+    __obj.updateDynamic("customer-churn-rate")(`customer-churn-rate`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerChurnRate]
   }
 }

@@ -37,7 +37,7 @@ object PhaseCallbacks {
     render: /* event */ js.UndefOr[PhaseEvent] => Unit = null,
     update: /* event */ js.UndefOr[PhaseEvent] => Unit = null
   ): PhaseCallbacks = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (prepare != null) __obj.updateDynamic("prepare")(js.Any.fromFunction1(prepare))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))

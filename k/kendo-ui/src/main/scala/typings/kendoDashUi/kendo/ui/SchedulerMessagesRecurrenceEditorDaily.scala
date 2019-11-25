@@ -13,8 +13,8 @@ object SchedulerMessagesRecurrenceEditorDaily {
   @scala.inline
   def apply(interval: String = null, repeatEvery: String = null): SchedulerMessagesRecurrenceEditorDaily = {
     val __obj = js.Dynamic.literal()
-    if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (repeatEvery != null) __obj.updateDynamic("repeatEvery")(repeatEvery)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (repeatEvery != null) __obj.updateDynamic("repeatEvery")(repeatEvery.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorDaily]
   }
 }

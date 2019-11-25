@@ -16,7 +16,7 @@ object InstancesSetMachineTypeRequest {
   @scala.inline
   def apply(machineType: String = null): InstancesSetMachineTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesSetMachineTypeRequest]
   }
 }

@@ -22,10 +22,10 @@ object ICreditNoteUpdateOptions {
     metadata: IOptionsMetadata = null
   ): ICreditNoteUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (memo != null) __obj.updateDynamic("memo")(memo)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (memo != null) __obj.updateDynamic("memo")(memo.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreditNoteUpdateOptions]
   }
 }

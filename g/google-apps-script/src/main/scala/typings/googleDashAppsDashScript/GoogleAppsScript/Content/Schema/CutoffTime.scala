@@ -16,7 +16,7 @@ object CutoffTime {
     val __obj = js.Dynamic.literal()
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
     if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[CutoffTime]
   }
 }

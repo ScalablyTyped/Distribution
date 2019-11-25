@@ -19,7 +19,7 @@ trait DialogButton extends js.Object {
 object DialogButton {
   @scala.inline
   def apply(buttonType: buttonType, text: String): DialogButton = {
-    val __obj = js.Dynamic.literal(buttonType = buttonType, text = text)
+    val __obj = js.Dynamic.literal(buttonType = buttonType.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DialogButton]
   }

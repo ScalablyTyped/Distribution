@@ -16,7 +16,7 @@ trait CustomTestNotWorkingResult
 object CustomTestNotWorkingResult {
   @scala.inline
   def apply(data: String, error: Anon_Code, headers: Headers, ok: `false`, status: Double): CustomTestNotWorkingResult = {
-    val __obj = js.Dynamic.literal(data = data, error = error, headers = headers, ok = ok, status = status)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomTestNotWorkingResult]
   }

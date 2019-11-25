@@ -26,7 +26,7 @@ object IResultExt {
     rows: js.Array[_],
     duration: Int | Double = null
   ): IResultExt = {
-    val __obj = js.Dynamic.literal(_parsers = _parsers, _types = _types, command = command, fields = fields, rowAsArray = rowAsArray, rowCount = rowCount, rows = rows)
+    val __obj = js.Dynamic.literal(_parsers = _parsers.asInstanceOf[js.Any], _types = _types.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], rowAsArray = rowAsArray.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResultExt]
   }

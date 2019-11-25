@@ -12,7 +12,7 @@ object SelectLocale {
   @scala.inline
   def apply(notFoundContent: String = null): SelectLocale = {
     val __obj = js.Dynamic.literal()
-    if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent)
+    if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectLocale]
   }
 }

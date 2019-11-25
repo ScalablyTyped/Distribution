@@ -12,7 +12,7 @@ object Anon_WrapArrays {
   @scala.inline
   def apply(wrapArrays: js.UndefOr[Boolean] = js.undefined): Anon_WrapArrays = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(wrapArrays)) __obj.updateDynamic("wrapArrays")(wrapArrays)
+    if (!js.isUndefined(wrapArrays)) __obj.updateDynamic("wrapArrays")(wrapArrays.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_WrapArrays]
   }
 }

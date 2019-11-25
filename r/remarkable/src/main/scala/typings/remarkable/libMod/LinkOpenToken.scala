@@ -28,10 +28,10 @@ object LinkOpenToken {
     lines: js.Tuple2[Double, Double] = null,
     title: String = null
   ): LinkOpenToken = {
-    val __obj = js.Dynamic.literal(href = href, level = level)
-    __obj.updateDynamic("type")(`type`)
-    if (lines != null) __obj.updateDynamic("lines")(lines)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkOpenToken]
   }
 }

@@ -24,10 +24,10 @@ object ClusterOperationStatus {
     stateStartTime: String = null
   ): ClusterOperationStatus = {
     val __obj = js.Dynamic.literal()
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (innerState != null) __obj.updateDynamic("innerState")(innerState)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (stateStartTime != null) __obj.updateDynamic("stateStartTime")(stateStartTime)
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (innerState != null) __obj.updateDynamic("innerState")(innerState.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (stateStartTime != null) __obj.updateDynamic("stateStartTime")(stateStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOperationStatus]
   }
 }

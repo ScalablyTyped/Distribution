@@ -26,10 +26,10 @@ object RsaPrivateKey {
     passphrase: java.lang.String = null
   ): RsaPrivateKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (oaepHash != null) __obj.updateDynamic("oaepHash")(oaepHash)
+    if (oaepHash != null) __obj.updateDynamic("oaepHash")(oaepHash.asInstanceOf[js.Any])
     if (oaepLabel != null) __obj.updateDynamic("oaepLabel")(oaepLabel.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaPrivateKey]
   }
 }

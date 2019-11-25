@@ -21,9 +21,9 @@ object ButtonText {
   @scala.inline
   def apply(apply: String = null, cancel: String = null, swatches: String = null): ButtonText = {
     val __obj = js.Dynamic.literal()
-    if (apply != null) __obj.updateDynamic("apply")(apply)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (swatches != null) __obj.updateDynamic("swatches")(swatches)
+    if (apply != null) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (swatches != null) __obj.updateDynamic("swatches")(swatches.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonText]
   }
 }

@@ -13,8 +13,8 @@ object WitEntityValue {
   @scala.inline
   def apply(expressions: js.Array[String] = null, value: String = null): WitEntityValue = {
     val __obj = js.Dynamic.literal()
-    if (expressions != null) __obj.updateDynamic("expressions")(expressions)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (expressions != null) __obj.updateDynamic("expressions")(expressions.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WitEntityValue]
   }
 }

@@ -42,14 +42,14 @@ object Query {
     timezoneCode: String = null
   ): Query = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (queryId != null) __obj.updateDynamic("queryId")(queryId)
-    if (reportDataEndTimeMs != null) __obj.updateDynamic("reportDataEndTimeMs")(reportDataEndTimeMs)
-    if (reportDataStartTimeMs != null) __obj.updateDynamic("reportDataStartTimeMs")(reportDataStartTimeMs)
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
-    if (timezoneCode != null) __obj.updateDynamic("timezoneCode")(timezoneCode)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (queryId != null) __obj.updateDynamic("queryId")(queryId.asInstanceOf[js.Any])
+    if (reportDataEndTimeMs != null) __obj.updateDynamic("reportDataEndTimeMs")(reportDataEndTimeMs.asInstanceOf[js.Any])
+    if (reportDataStartTimeMs != null) __obj.updateDynamic("reportDataStartTimeMs")(reportDataStartTimeMs.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (timezoneCode != null) __obj.updateDynamic("timezoneCode")(timezoneCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
 }

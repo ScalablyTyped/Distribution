@@ -16,9 +16,9 @@ object SetOptions {
   @scala.inline
   def apply(error: js.Function = null, promise: js.Any = null, silent: js.UndefOr[Boolean] = js.undefined): SetOptions = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (promise != null) __obj.updateDynamic("promise")(promise)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
 }

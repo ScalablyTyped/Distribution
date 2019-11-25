@@ -29,10 +29,10 @@ object Options {
     onStart: /* x */ Anon_Compilation_1566266350 => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAsyncCycles)) __obj.updateDynamic("allowAsyncCycles")(allowAsyncCycles)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError)
+    if (!js.isUndefined(allowAsyncCycles)) __obj.updateDynamic("allowAsyncCycles")(allowAsyncCycles.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError.asInstanceOf[js.Any])
     if (onDetected != null) __obj.updateDynamic("onDetected")(js.Any.fromFunction1(onDetected))
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))

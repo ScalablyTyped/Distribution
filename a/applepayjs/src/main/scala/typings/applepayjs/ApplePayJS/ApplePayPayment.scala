@@ -29,9 +29,9 @@ object ApplePayPayment {
     billingContact: ApplePayPaymentContact = null,
     shippingContact: ApplePayPaymentContact = null
   ): ApplePayPayment = {
-    val __obj = js.Dynamic.literal(token = token)
-    if (billingContact != null) __obj.updateDynamic("billingContact")(billingContact)
-    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+    if (billingContact != null) __obj.updateDynamic("billingContact")(billingContact.asInstanceOf[js.Any])
+    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPayment]
   }
 }

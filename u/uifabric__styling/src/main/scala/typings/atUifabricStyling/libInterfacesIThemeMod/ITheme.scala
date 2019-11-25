@@ -33,9 +33,9 @@ object ITheme {
     rtl: js.UndefOr[Boolean] = js.undefined,
     schemes: PinISchemeNamesIScheme = null
   ): ITheme = {
-    val __obj = js.Dynamic.literal(disableGlobalClassNames = disableGlobalClassNames, effects = effects, fonts = fonts, isInverted = isInverted, palette = palette, semanticColors = semanticColors, spacing = spacing)
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
-    if (schemes != null) __obj.updateDynamic("schemes")(schemes)
+    val __obj = js.Dynamic.literal(disableGlobalClassNames = disableGlobalClassNames.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], fonts = fonts.asInstanceOf[js.Any], isInverted = isInverted.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any], semanticColors = semanticColors.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (schemes != null) __obj.updateDynamic("schemes")(schemes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITheme]
   }
 }

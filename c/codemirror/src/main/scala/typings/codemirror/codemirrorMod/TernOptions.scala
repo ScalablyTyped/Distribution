@@ -36,7 +36,7 @@ trait TernOptions extends js.Object {
   ] = js.undefined
   /** An object mapping plugin names to configuration options. */
   var plugins: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any
   ] = js.undefined
   /** This function will be applied to the Tern responses before treating them */
   var responseFilter: js.UndefOr[
@@ -46,7 +46,7 @@ trait TernOptions extends js.Object {
       /* request */ Document, 
       /* error */ js.UndefOr[Error], 
       /* data */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[tern.tern/lib/tern.Query['type']]['result'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[tern.tern/lib/tern.Query['type']]['result'] */ js.Any
       ], 
       _
     ]
@@ -81,9 +81,9 @@ object TernOptions {
     defs: js.Array[Def] = null,
     fileFilter: (/* value */ String, /* docName */ String, /* doc */ Doc) => String = null,
     getFile: (/* name */ String, /* callback */ js.Function1[/* doc */ Doc | Null, _]) => _ = null,
-    plugins: /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any = null,
+    plugins: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any = null,
     responseFilter: (/* doc */ Doc, /* query */ Query, /* request */ Document, /* error */ js.UndefOr[Error], /* data */ js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[tern.tern/lib/tern.Query['type']]['result'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[tern.tern/lib/tern.Query['type']]['result'] */ js.Any
     ]) => _ = null,
     showError: (/* editor */ Editor, /* message */ Error) => _ = null,
     switchToDoc: (/* name */ String, /* doc */ Doc) => _ = null,
@@ -94,17 +94,17 @@ object TernOptions {
   ): TernOptions = {
     val __obj = js.Dynamic.literal()
     if (completionTip != null) __obj.updateDynamic("completionTip")(js.Any.fromFunction1(completionTip))
-    if (defs != null) __obj.updateDynamic("defs")(defs)
+    if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
     if (fileFilter != null) __obj.updateDynamic("fileFilter")(js.Any.fromFunction3(fileFilter))
     if (getFile != null) __obj.updateDynamic("getFile")(js.Any.fromFunction2(getFile))
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (responseFilter != null) __obj.updateDynamic("responseFilter")(js.Any.fromFunction5(responseFilter))
     if (showError != null) __obj.updateDynamic("showError")(js.Any.fromFunction2(showError))
     if (switchToDoc != null) __obj.updateDynamic("switchToDoc")(js.Any.fromFunction2(switchToDoc))
     if (typeTip != null) __obj.updateDynamic("typeTip")(js.Any.fromFunction1(typeTip))
-    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker)
-    if (workerDeps != null) __obj.updateDynamic("workerDeps")(workerDeps)
-    if (workerScript != null) __obj.updateDynamic("workerScript")(workerScript)
+    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker.asInstanceOf[js.Any])
+    if (workerDeps != null) __obj.updateDynamic("workerDeps")(workerDeps.asInstanceOf[js.Any])
+    if (workerScript != null) __obj.updateDynamic("workerScript")(workerScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[TernOptions]
   }
 }

@@ -39,9 +39,9 @@ object _UnmarshalledTopicConfiguration {
     Filter: _UnmarshalledNotificationConfigurationFilter = null,
     Id: String = null
   ): _UnmarshalledTopicConfiguration = {
-    val __obj = js.Dynamic.literal(Events = Events, TopicArn = TopicArn)
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
+    val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledTopicConfiguration]
   }
 }

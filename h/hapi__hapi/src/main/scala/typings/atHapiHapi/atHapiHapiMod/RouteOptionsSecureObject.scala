@@ -50,10 +50,10 @@ object RouteOptionsSecureObject {
     referrer: `false` | ReferrerPolicy = null,
     xframe: `true` | deny | sameorigin | Anon_Allowfrom = null
   ): RouteOptionsSecureObject = {
-    val __obj = js.Dynamic.literal(xss = xss)
+    val __obj = js.Dynamic.literal(xss = xss.asInstanceOf[js.Any])
     if (hsts != null) __obj.updateDynamic("hsts")(hsts.asInstanceOf[js.Any])
-    if (!js.isUndefined(noOpen)) __obj.updateDynamic("noOpen")(noOpen)
-    if (!js.isUndefined(noSniff)) __obj.updateDynamic("noSniff")(noSniff)
+    if (!js.isUndefined(noOpen)) __obj.updateDynamic("noOpen")(noOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSniff)) __obj.updateDynamic("noSniff")(noSniff.asInstanceOf[js.Any])
     if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
     if (xframe != null) __obj.updateDynamic("xframe")(xframe.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsSecureObject]

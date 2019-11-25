@@ -18,7 +18,7 @@ trait WorkspaceFoldersChangeEvent extends js.Object {
 object WorkspaceFoldersChangeEvent {
   @scala.inline
   def apply(added: js.Array[WorkspaceFolder], removed: js.Array[WorkspaceFolder]): WorkspaceFoldersChangeEvent = {
-    val __obj = js.Dynamic.literal(added = added, removed = removed)
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkspaceFoldersChangeEvent]
   }

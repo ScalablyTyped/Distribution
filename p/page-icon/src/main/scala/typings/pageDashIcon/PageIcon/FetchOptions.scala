@@ -12,7 +12,7 @@ object FetchOptions {
   @scala.inline
   def apply(ext: String = null): FetchOptions = {
     val __obj = js.Dynamic.literal()
-    if (ext != null) __obj.updateDynamic("ext")(ext)
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchOptions]
   }
 }

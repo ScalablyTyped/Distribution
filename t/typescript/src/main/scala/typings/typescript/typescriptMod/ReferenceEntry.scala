@@ -24,12 +24,12 @@ object ReferenceEntry {
     originalFileName: String = null,
     originalTextSpan: TextSpan = null
   ): ReferenceEntry = {
-    val __obj = js.Dynamic.literal(fileName = fileName, isDefinition = isDefinition, isWriteAccess = isWriteAccess, textSpan = textSpan)
-    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan)
-    if (isInString != null) __obj.updateDynamic("isInString")(isInString)
-    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan)
-    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
-    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isDefinition = isDefinition.asInstanceOf[js.Any], isWriteAccess = isWriteAccess.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
+    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan.asInstanceOf[js.Any])
+    if (isInString != null) __obj.updateDynamic("isInString")(isInString.asInstanceOf[js.Any])
+    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan.asInstanceOf[js.Any])
+    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName.asInstanceOf[js.Any])
+    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceEntry]
   }
 }

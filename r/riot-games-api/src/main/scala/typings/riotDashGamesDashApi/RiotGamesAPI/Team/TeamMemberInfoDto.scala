@@ -14,7 +14,7 @@ trait TeamMemberInfoDto extends js.Object {
 object TeamMemberInfoDto {
   @scala.inline
   def apply(inviteDate: Double, joinDate: Double, playerId: Double, status: String): TeamMemberInfoDto = {
-    val __obj = js.Dynamic.literal(inviteDate = inviteDate, joinDate = joinDate, playerId = playerId, status = status)
+    val __obj = js.Dynamic.literal(inviteDate = inviteDate.asInstanceOf[js.Any], joinDate = joinDate.asInstanceOf[js.Any], playerId = playerId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamMemberInfoDto]
   }

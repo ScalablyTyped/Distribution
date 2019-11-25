@@ -34,7 +34,7 @@ object TeamsListMembersParams {
     per_page: Int | Double = null,
     role: member | maintainer | all = null
   ): TeamsListMembersParams = {
-    val __obj = js.Dynamic.literal(team_id = team_id)
+    val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])

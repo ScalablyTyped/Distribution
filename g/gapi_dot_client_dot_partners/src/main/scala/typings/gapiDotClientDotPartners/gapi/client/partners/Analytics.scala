@@ -33,10 +33,10 @@ object Analytics {
     searchViews: AnalyticsDataPoint = null
   ): Analytics = {
     val __obj = js.Dynamic.literal()
-    if (contacts != null) __obj.updateDynamic("contacts")(contacts)
-    if (eventDate != null) __obj.updateDynamic("eventDate")(eventDate)
-    if (profileViews != null) __obj.updateDynamic("profileViews")(profileViews)
-    if (searchViews != null) __obj.updateDynamic("searchViews")(searchViews)
+    if (contacts != null) __obj.updateDynamic("contacts")(contacts.asInstanceOf[js.Any])
+    if (eventDate != null) __obj.updateDynamic("eventDate")(eventDate.asInstanceOf[js.Any])
+    if (profileViews != null) __obj.updateDynamic("profileViews")(profileViews.asInstanceOf[js.Any])
+    if (searchViews != null) __obj.updateDynamic("searchViews")(searchViews.asInstanceOf[js.Any])
     __obj.asInstanceOf[Analytics]
   }
 }

@@ -12,8 +12,8 @@ trait IssueRecordField extends js.Object {
 object IssueRecordField {
   @scala.inline
   def apply(id: Double, name: String = null): IssueRecordField = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssueRecordField]
   }
 }

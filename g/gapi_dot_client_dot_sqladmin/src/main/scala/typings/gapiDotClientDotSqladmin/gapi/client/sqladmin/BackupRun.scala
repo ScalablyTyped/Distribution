@@ -48,18 +48,18 @@ object BackupRun {
     windowStartTime: String = null
   ): BackupRun = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (enqueuedTime != null) __obj.updateDynamic("enqueuedTime")(enqueuedTime)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (windowStartTime != null) __obj.updateDynamic("windowStartTime")(windowStartTime)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (enqueuedTime != null) __obj.updateDynamic("enqueuedTime")(enqueuedTime.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (windowStartTime != null) __obj.updateDynamic("windowStartTime")(windowStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupRun]
   }
 }

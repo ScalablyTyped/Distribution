@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait EditionUpgradeLicenseType extends js.Object
 
+object EditionUpgradeLicenseType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def licenseFile: typings.microsoftDashGraph.microsoftDashGraphStrings.licenseFile = this.cast("licenseFile")
+  @scala.inline
+  def productKey: typings.microsoftDashGraph.microsoftDashGraphStrings.productKey = this.cast("productKey")
+}
+

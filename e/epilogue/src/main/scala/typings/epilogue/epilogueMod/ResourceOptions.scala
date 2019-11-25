@@ -37,17 +37,17 @@ object ResourceOptions {
     sort: ResourceSortOption = null,
     updateMethod: String = null
   ): ResourceOptions = {
-    val __obj = js.Dynamic.literal(endpoints = endpoints, model = model)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (associations != null) __obj.updateDynamic("associations")(associations)
-    if (excludeAttributes != null) __obj.updateDynamic("excludeAttributes")(excludeAttributes)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
-    if (readOnlyAttributes != null) __obj.updateDynamic("readOnlyAttributes")(readOnlyAttributes)
-    if (!js.isUndefined(reloadInstances)) __obj.updateDynamic("reloadInstances")(reloadInstances)
-    if (search != null) __obj.updateDynamic("search")(search)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (updateMethod != null) __obj.updateDynamic("updateMethod")(updateMethod)
+    val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (associations != null) __obj.updateDynamic("associations")(associations.asInstanceOf[js.Any])
+    if (excludeAttributes != null) __obj.updateDynamic("excludeAttributes")(excludeAttributes.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
+    if (readOnlyAttributes != null) __obj.updateDynamic("readOnlyAttributes")(readOnlyAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadInstances)) __obj.updateDynamic("reloadInstances")(reloadInstances.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (updateMethod != null) __obj.updateDynamic("updateMethod")(updateMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceOptions]
   }
 }

@@ -25,10 +25,10 @@ object Source {
     `type`: String = null
   ): Source = {
     val __obj = js.Dynamic.literal()
-    if (credential_id != null) __obj.updateDynamic("credential_id")(credential_id)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (credential_id != null) __obj.updateDynamic("credential_id")(credential_id.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

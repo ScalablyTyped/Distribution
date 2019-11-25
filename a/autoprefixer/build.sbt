@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "autoprefixer"
-version := "9.6-dt-20190819Z-4d91b0"
+version := "9.6-dt-20190819Z-81fec3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "browserslist" % "4.4-dt-20190311Z-da7bd1",
-  "org.scalablytyped" %%% "postcss" % "7.0.18-98059c",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-00bd51",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "browserslist" % "4.4-dt-20190311Z-955567",
+  "org.scalablytyped" %%% "postcss" % "7.0.18-56dffc",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-651620",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

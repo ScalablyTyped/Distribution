@@ -37,14 +37,14 @@ object ClusterOperationMetadata {
     warnings: js.Array[String] = null
   ): ClusterOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName)
-    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
+    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOperationMetadata]
   }
 }

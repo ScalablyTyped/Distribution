@@ -25,7 +25,7 @@ object Anon_Args {
     onPressIn: Requireable[js.Function1[/* repeated */ _, _]],
     touchableComponent: Requireable[js.Function1[/* repeated */ _, _]]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(children = children, onPeekIn = onPeekIn, onPeekOut = onPeekOut, onPress = onPress, onPressIn = onPressIn, touchableComponent = touchableComponent)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], onPeekIn = onPeekIn.asInstanceOf[js.Any], onPeekOut = onPeekOut.asInstanceOf[js.Any], onPress = onPress.asInstanceOf[js.Any], onPressIn = onPressIn.asInstanceOf[js.Any], touchableComponent = touchableComponent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Args]
   }

@@ -19,8 +19,8 @@ object ModalDialogOpenedEventUIParam {
   @scala.inline
   def apply(modalDialogElement: String = null, owner: js.Any = null): ModalDialogOpenedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogOpenedEventUIParam]
   }
 }

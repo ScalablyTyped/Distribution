@@ -15,7 +15,7 @@ trait SetRangeLocalPromise extends js.Object {
 object SetRangeLocalPromise {
   @scala.inline
   def apply(count: Double, models: js.Array[Model], start: Double): SetRangeLocalPromise = {
-    val __obj = js.Dynamic.literal(count = count, models = models, start = start)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], models = models.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetRangeLocalPromise]
   }

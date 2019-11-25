@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.esriSymbolsMod
 
-import typings.arcgisDashJsDashApi.__esri.ExtrudeSymbol3DLayer
 import typings.arcgisDashJsDashApi.__esri.ExtrudeSymbol3DLayerProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation._
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html)
   */
-class ExtrudeSymbol3DLayerCls () extends ExtrudeSymbol3DLayer {
+class ExtrudeSymbol3DLayerCls ()
+  extends typings.arcgisDashJsDashApi.__esri.ExtrudeSymbol3DLayer {
   def this(properties: ExtrudeSymbol3DLayerProperties) = this()
   /**
     * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.

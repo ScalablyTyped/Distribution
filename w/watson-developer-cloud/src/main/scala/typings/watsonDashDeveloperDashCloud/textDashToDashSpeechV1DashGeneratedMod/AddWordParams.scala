@@ -29,10 +29,10 @@ object AddWordParams {
     part_of_speech: PartOfSpeech | String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): AddWordParams = {
-    val __obj = js.Dynamic.literal(customization_id = customization_id, translation = translation, word = word)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any], translation = translation.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (part_of_speech != null) __obj.updateDynamic("part_of_speech")(part_of_speech.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddWordParams]
   }
 }

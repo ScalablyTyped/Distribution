@@ -59,13 +59,13 @@ object LanguageConfiguration {
     wordPattern: RegExp = null
   ): LanguageConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (__characterPairSupport != null) __obj.updateDynamic("__characterPairSupport")(__characterPairSupport)
-    if (__electricCharacterSupport != null) __obj.updateDynamic("__electricCharacterSupport")(__electricCharacterSupport)
-    if (brackets != null) __obj.updateDynamic("brackets")(brackets)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (indentationRules != null) __obj.updateDynamic("indentationRules")(indentationRules)
-    if (onEnterRules != null) __obj.updateDynamic("onEnterRules")(onEnterRules)
-    if (wordPattern != null) __obj.updateDynamic("wordPattern")(wordPattern)
+    if (__characterPairSupport != null) __obj.updateDynamic("__characterPairSupport")(__characterPairSupport.asInstanceOf[js.Any])
+    if (__electricCharacterSupport != null) __obj.updateDynamic("__electricCharacterSupport")(__electricCharacterSupport.asInstanceOf[js.Any])
+    if (brackets != null) __obj.updateDynamic("brackets")(brackets.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (indentationRules != null) __obj.updateDynamic("indentationRules")(indentationRules.asInstanceOf[js.Any])
+    if (onEnterRules != null) __obj.updateDynamic("onEnterRules")(onEnterRules.asInstanceOf[js.Any])
+    if (wordPattern != null) __obj.updateDynamic("wordPattern")(wordPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageConfiguration]
   }
 }

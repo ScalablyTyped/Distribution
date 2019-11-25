@@ -27,7 +27,7 @@ object FragmentSpread {
     name: String,
     metadata: Metadata = null
   ): FragmentSpread = {
-    val __obj = js.Dynamic.literal(args = args, directives = directives, kind = kind, loc = loc, name = name)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentSpread]
   }

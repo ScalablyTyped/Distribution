@@ -32,7 +32,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (mangle != null) __obj.updateDynamic("mangle")(mangle.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

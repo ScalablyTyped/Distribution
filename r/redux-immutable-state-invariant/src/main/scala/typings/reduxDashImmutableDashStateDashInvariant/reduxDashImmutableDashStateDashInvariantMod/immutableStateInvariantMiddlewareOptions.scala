@@ -13,7 +13,7 @@ object immutableStateInvariantMiddlewareOptions {
   @scala.inline
   def apply(ignore: js.Array[String] = null, isImmutable: /* value */ js.Any => Boolean = null): immutableStateInvariantMiddlewareOptions = {
     val __obj = js.Dynamic.literal()
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (isImmutable != null) __obj.updateDynamic("isImmutable")(js.Any.fromFunction1(isImmutable))
     __obj.asInstanceOf[immutableStateInvariantMiddlewareOptions]
   }

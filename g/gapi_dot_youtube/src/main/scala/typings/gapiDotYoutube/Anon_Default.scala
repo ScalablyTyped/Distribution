@@ -18,7 +18,7 @@ trait Anon_Default extends js.Object {
 object Anon_Default {
   @scala.inline
   def apply(default: String, localized: js.Array[Anon_Language]): Anon_Default = {
-    val __obj = js.Dynamic.literal(default = default, localized = localized)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], localized = localized.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Default]
   }

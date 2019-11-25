@@ -13,8 +13,8 @@ trait UnnestSqlTokenType extends _SqlTokenType {
 object UnnestSqlTokenType {
   @scala.inline
   def apply(columnTypes: js.Array[String], tuples: js.Array[PositionalParameterValuesType], `type`: js.Symbol): UnnestSqlTokenType = {
-    val __obj = js.Dynamic.literal(columnTypes = columnTypes, tuples = tuples)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(columnTypes = columnTypes.asInstanceOf[js.Any], tuples = tuples.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnnestSqlTokenType]
   }
 }

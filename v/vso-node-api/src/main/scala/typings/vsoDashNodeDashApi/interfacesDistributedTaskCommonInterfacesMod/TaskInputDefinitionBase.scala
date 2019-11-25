@@ -32,8 +32,8 @@ object TaskInputDefinitionBase {
     `type`: String,
     visibleRule: String
   ): TaskInputDefinitionBase = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, groupName = groupName, helpMarkDown = helpMarkDown, label = label, name = name, options = options, properties = properties, required = required, visibleRule = visibleRule)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], groupName = groupName.asInstanceOf[js.Any], helpMarkDown = helpMarkDown.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], visibleRule = visibleRule.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskInputDefinitionBase]
   }
 }

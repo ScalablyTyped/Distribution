@@ -33,20 +33,16 @@ object IInfinite {
   @scala.inline
   def apply(
     ICarousel: typings.senchaUnderscoreTouch.Ext.carousel.ICarousel = null,
-    getIndicator: () => _ = null,
     getInnerItemConfig: () => _ = null,
     getMaxItemIndex: () => _ = null,
-    indicator: js.UndefOr[Boolean] = js.undefined,
     setIndicator: /* indicator */ js.UndefOr[js.Any] => Unit = null,
     setInnerItemConfig: /* innerItemConfig */ js.UndefOr[js.Any] => Unit = null,
     setMaxItemIndex: /* maxItemIndex */ js.UndefOr[js.Any] => Unit = null
   ): IInfinite = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ICarousel)
-    if (getIndicator != null) __obj.updateDynamic("getIndicator")(js.Any.fromFunction0(getIndicator))
+    if (ICarousel != null) js.Dynamic.global.Object.assign(__obj, ICarousel)
     if (getInnerItemConfig != null) __obj.updateDynamic("getInnerItemConfig")(js.Any.fromFunction0(getInnerItemConfig))
     if (getMaxItemIndex != null) __obj.updateDynamic("getMaxItemIndex")(js.Any.fromFunction0(getMaxItemIndex))
-    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator)
     if (setIndicator != null) __obj.updateDynamic("setIndicator")(js.Any.fromFunction1(setIndicator))
     if (setInnerItemConfig != null) __obj.updateDynamic("setInnerItemConfig")(js.Any.fromFunction1(setInnerItemConfig))
     if (setMaxItemIndex != null) __obj.updateDynamic("setMaxItemIndex")(js.Any.fromFunction1(setMaxItemIndex))

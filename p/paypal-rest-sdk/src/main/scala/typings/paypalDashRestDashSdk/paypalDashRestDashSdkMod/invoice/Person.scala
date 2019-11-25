@@ -28,13 +28,13 @@ object Person {
     website: String = null
   ): Person = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (business_name != null) __obj.updateDynamic("business_name")(business_name)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (website != null) __obj.updateDynamic("website")(website)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (business_name != null) __obj.updateDynamic("business_name")(business_name.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[Person]
   }
 }

@@ -18,7 +18,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(docManager: IDocumentManager): IOptions = {
-    val __obj = js.Dynamic.literal(docManager = docManager)
+    val __obj = js.Dynamic.literal(docManager = docManager.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

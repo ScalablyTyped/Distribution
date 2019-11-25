@@ -12,8 +12,8 @@ trait DictionaryType extends BaseMapperType {
 object DictionaryType {
   @scala.inline
   def apply(name: MapperType, `type`: Anon_NameValue): DictionaryType = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictionaryType]
   }
 }

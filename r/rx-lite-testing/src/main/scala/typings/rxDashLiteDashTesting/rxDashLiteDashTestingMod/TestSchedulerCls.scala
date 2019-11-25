@@ -4,15 +4,14 @@ import typings.rxDashCore.Rx.IDisposable
 import typings.rxDashCore.Rx.IScheduler
 import typings.rxDashCore.Rx.Observable
 import typings.rxDashLite.Rx.internals.ScheduledItem
-import typings.rxDashLiteDashTesting.Rx.MockObserver
-import typings.rxDashLiteDashTesting.Rx.TestScheduler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rx-lite-testing", "TestScheduler")
 @js.native
-class TestSchedulerCls () extends TestScheduler {
+class TestSchedulerCls ()
+  extends typings.rxDashLiteDashTesting.Rx.TestScheduler {
   /* CompleteClass */
   override var isEnabled: Boolean = js.native
   /* protected abstract */ /* CompleteClass */
@@ -27,7 +26,7 @@ class TestSchedulerCls () extends TestScheduler {
   /* CompleteClass */
   override def createHotObservable[T](records: typings.rxDashLiteDashTesting.Rx.Recorded*): Observable[T] = js.native
   /* CompleteClass */
-  override def createObserver[T](): MockObserver[T] = js.native
+  override def createObserver[T](): typings.rxDashLiteDashTesting.Rx.MockObserver[T] = js.native
   /* protected */ /* CompleteClass */
   override def getNext(): ScheduledItem[Double] = js.native
   /* CompleteClass */
@@ -110,11 +109,11 @@ class TestSchedulerCls () extends TestScheduler {
   /* CompleteClass */
   override def start(): IDisposable = js.native
   /* CompleteClass */
-  override def startWithCreate[T](create: js.Function0[Observable[T]]): MockObserver[T] = js.native
+  override def startWithCreate[T](create: js.Function0[Observable[T]]): typings.rxDashLiteDashTesting.Rx.MockObserver[T] = js.native
   /* CompleteClass */
-  override def startWithDispose[T](create: js.Function0[Observable[T]], disposedAt: Double): MockObserver[T] = js.native
+  override def startWithDispose[T](create: js.Function0[Observable[T]], disposedAt: Double): typings.rxDashLiteDashTesting.Rx.MockObserver[T] = js.native
   /* CompleteClass */
-  override def startWithTiming[T](create: js.Function0[Observable[T]], createdAt: Double, subscribedAt: Double, disposedAt: Double): MockObserver[T] = js.native
+  override def startWithTiming[T](create: js.Function0[Observable[T]], createdAt: Double, subscribedAt: Double, disposedAt: Double): typings.rxDashLiteDashTesting.Rx.MockObserver[T] = js.native
   /* CompleteClass */
   override def stop(): Unit = js.native
   /* protected abstract */ /* CompleteClass */

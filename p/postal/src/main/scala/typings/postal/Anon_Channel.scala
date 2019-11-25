@@ -14,9 +14,9 @@ object Anon_Channel {
   @scala.inline
   def apply(channel: String = null, context: js.Any = null, topic: String = null): Anon_Channel = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (topic != null) __obj.updateDynamic("topic")(topic)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Channel]
   }
 }

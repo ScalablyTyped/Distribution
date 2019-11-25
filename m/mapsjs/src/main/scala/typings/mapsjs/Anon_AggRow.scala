@@ -27,7 +27,7 @@ object Anon_AggRow {
     marginPixels: Int | Double = null,
     valueFunction: /* row */ js.Any => Double = null
   ): Anon_AggRow = {
-    val __obj = js.Dynamic.literal(data = data, mapUnitsPerPixel = mapUnitsPerPixel, pointKey = pointKey, radiusFunction = js.Any.fromFunction1(radiusFunction))
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mapUnitsPerPixel = mapUnitsPerPixel.asInstanceOf[js.Any], pointKey = pointKey.asInstanceOf[js.Any], radiusFunction = js.Any.fromFunction1(radiusFunction))
     if (aggregateFunction != null) __obj.updateDynamic("aggregateFunction")(js.Any.fromFunction3(aggregateFunction))
     if (marginPixels != null) __obj.updateDynamic("marginPixels")(marginPixels.asInstanceOf[js.Any])
     if (valueFunction != null) __obj.updateDynamic("valueFunction")(js.Any.fromFunction1(valueFunction))

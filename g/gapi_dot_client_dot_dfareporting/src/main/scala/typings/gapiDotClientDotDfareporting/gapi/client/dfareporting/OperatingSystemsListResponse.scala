@@ -15,8 +15,8 @@ object OperatingSystemsListResponse {
   @scala.inline
   def apply(kind: String = null, operatingSystems: js.Array[OperatingSystem] = null): OperatingSystemsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (operatingSystems != null) __obj.updateDynamic("operatingSystems")(operatingSystems)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (operatingSystems != null) __obj.updateDynamic("operatingSystems")(operatingSystems.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperatingSystemsListResponse]
   }
 }

@@ -96,6 +96,17 @@ package object JQuery {
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tween-hooks }\`
     * @since 1.8
     */
+  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - typings.jquery.Anon_Get[TElement]
+    - typings.jquery.Anon_Set[TElement]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
+  type PropHook[TElement] = _PropHook[TElement] | StringDictionary[scala.Nothing]
+  /**
+    * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tween-hooks }\`
+    * @since 1.8
+    */
   type PropHooks = StringDictionary[PropHook[Node]]
   // #endregion
   // region Queue
@@ -107,7 +118,43 @@ package object JQuery {
     * A selector is used in jQuery to select DOM elements from a DOM document. That document is, in most cases, the DOM document present in all browsers, but can also be an XML document received via Ajax.
     */
   type Selector = String
+  // region Special event hooks
+  // #region Special event hooks
+  /**
+    * The jQuery special event hooks are a set of per-event-name functions and properties that allow code to control the behavior of event processing within jQuery. The mechanism is similar to `fixHooks` in that the special event information is stored in `jQuery.event.special.NAME`, where `NAME` is the name of the special event. Event names are case sensitive.
+    *
+    * As with `fixHooks`, the special event hooks design assumes it will be very rare that two unrelated pieces of code want to process the same event name. Special event authors who need to modify events with existing hooks will need to take precautions to avoid introducing unwanted side-effects by clobbering those hooks.
+    * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
+    */
+  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - typings.jquery.Anon_NoBubble
+    - typings.jquery.Anon_BindType
+    - typings.jquery.Anon_DelegateType
+    - typings.jquery.Anon_Data[TTarget, TData]
+    - typings.jquery.Anon_False[TTarget]
+    - typings.jquery.Anon_Add[TTarget, TData]
+    - typings.jquery.Anon_HandleObj[TTarget, TData]
+    - typings.jquery.Anon_DataEvent[TTarget, TData]
+    - typings.jquery.Anon_DataDefault[TTarget, TData]
+    - typings.jquery.Anon_DataEventHandle[TTarget, TData]
+    - typings.jquery.Anon_Event[TTarget]
+    - typings.jquery.Anon_EventPostDispatch[TTarget]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
+  type SpecialEventHook[TTarget, TData] = (_SpecialEventHook[TTarget, TData]) | StringDictionary[scala.Nothing]
   type SpecialEventHooks = StringDictionary[SpecialEventHook[EventTarget, js.Any]]
+  // #endregion
+  // region Speed
+  // #region Speed
+  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - typings.jquery.Anon_Duration
+    - typings.jquery.Anon_Easing
+    - typings.jquery.Anon_Complete[TElement]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
+  type SpeedSettings[TElement] = _SpeedSettings[TElement] | StringDictionary[scala.Nothing]
   // #endregion
   // region Deferred
   // #region Deferred
@@ -128,9 +175,19 @@ package object JQuery {
   ]
   type TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, TType /* <: String */] = EventHandlerBase[
     TCurrentTarget, 
-    /* import warning: ImportType.apply Failed type conversion: jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget>[TType] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget>[TType] */ js.Any
   ]
   type TypeOrArray[T] = T | js.Array[T]
+  // #endregion
+  // region Val hooks
+  // #region Val hooks
+  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - typings.jquery.Anon_Elem[TElement]
+    - typings.jquery.Anon_ElemSet[TElement]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
+  type ValHook[TElement] = _ValHook[TElement] | StringDictionary[scala.Nothing]
   type ValHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   StringDictionary[ValHook[HTMLElement]]
   // #endregion
@@ -144,7 +201,7 @@ package object JQuery {
     - typings.std.HTMLAllCollection
   */
   type _Falsy = js.UndefOr[__Falsy | Null | HTMLAllCollection]
-  type _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ TType in keyof jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget> ]:? jquery.JQuery.TypeEventHandler<TDelegateTarget, TData, TCurrentTarget, TTarget, TType> | false | object}
     */ typings.jquery.jqueryStrings._TypeEventHandlers with js.Any
   /**

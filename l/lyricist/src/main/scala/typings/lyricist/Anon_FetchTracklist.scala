@@ -14,8 +14,8 @@ object Anon_FetchTracklist {
   @scala.inline
   def apply(fetchTracklist: js.UndefOr[Boolean] = js.undefined, textFormat: LyricistTextFormat = null): Anon_FetchTracklist = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fetchTracklist)) __obj.updateDynamic("fetchTracklist")(fetchTracklist)
-    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat)
+    if (!js.isUndefined(fetchTracklist)) __obj.updateDynamic("fetchTracklist")(fetchTracklist.asInstanceOf[js.Any])
+    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FetchTracklist]
   }
 }

@@ -22,8 +22,8 @@ object ExcludedInterval {
     val __obj = js.Dynamic.literal()
     if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
     if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcludedInterval]
   }
 }

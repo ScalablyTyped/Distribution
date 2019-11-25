@@ -19,8 +19,8 @@ object ReporterOptions {
   @scala.inline
   def apply(fail: js.UndefOr[Boolean] = js.undefined, quiet: js.UndefOr[Boolean] = js.undefined): ReporterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fail)) __obj.updateDynamic("fail")(fail)
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (!js.isUndefined(fail)) __obj.updateDynamic("fail")(fail.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReporterOptions]
   }
 }

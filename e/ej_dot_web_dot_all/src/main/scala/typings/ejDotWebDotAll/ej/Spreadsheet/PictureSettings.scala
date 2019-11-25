@@ -27,7 +27,7 @@ object PictureSettings {
     width: Int | Double = null
   ): PictureSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPictures)) __obj.updateDynamic("allowPictures")(allowPictures)
+    if (!js.isUndefined(allowPictures)) __obj.updateDynamic("allowPictures")(allowPictures.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureSettings]

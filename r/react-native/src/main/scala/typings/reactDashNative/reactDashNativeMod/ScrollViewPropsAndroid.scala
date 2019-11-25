@@ -47,10 +47,10 @@ object ScrollViewPropsAndroid {
     scrollPerfTag: String = null
   ): ScrollViewPropsAndroid = {
     val __obj = js.Dynamic.literal()
-    if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor)
-    if (!js.isUndefined(nestedScrollEnabled)) __obj.updateDynamic("nestedScrollEnabled")(nestedScrollEnabled)
+    if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(nestedScrollEnabled)) __obj.updateDynamic("nestedScrollEnabled")(nestedScrollEnabled.asInstanceOf[js.Any])
     if (overScrollMode != null) __obj.updateDynamic("overScrollMode")(overScrollMode.asInstanceOf[js.Any])
-    if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag)
+    if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewPropsAndroid]
   }
 }

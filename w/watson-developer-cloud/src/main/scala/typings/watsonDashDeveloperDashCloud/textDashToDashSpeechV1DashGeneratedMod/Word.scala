@@ -17,8 +17,8 @@ trait Word extends js.Object {
 object Word {
   @scala.inline
   def apply(translation: String, word: String, part_of_speech: String = null): Word = {
-    val __obj = js.Dynamic.literal(translation = translation, word = word)
-    if (part_of_speech != null) __obj.updateDynamic("part_of_speech")(part_of_speech)
+    val __obj = js.Dynamic.literal(translation = translation.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
+    if (part_of_speech != null) __obj.updateDynamic("part_of_speech")(part_of_speech.asInstanceOf[js.Any])
     __obj.asInstanceOf[Word]
   }
 }

@@ -12,7 +12,7 @@ object Anon_Disconnectifnecessary {
   @scala.inline
   def apply(disconnect_if_necessary: js.UndefOr[Boolean] = js.undefined): Anon_Disconnectifnecessary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disconnect_if_necessary)) __obj.updateDynamic("disconnect_if_necessary")(disconnect_if_necessary)
+    if (!js.isUndefined(disconnect_if_necessary)) __obj.updateDynamic("disconnect_if_necessary")(disconnect_if_necessary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Disconnectifnecessary]
   }
 }

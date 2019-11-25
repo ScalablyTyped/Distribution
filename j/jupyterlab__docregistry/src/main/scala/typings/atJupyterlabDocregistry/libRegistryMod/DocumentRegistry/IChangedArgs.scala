@@ -35,7 +35,7 @@ object IChangedArgs {
     name: String,
     `type`: widgetFactory | modelFactory | widgetExtension | fileType
   ): IChangedArgs = {
-    val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangedArgs]
   }

@@ -71,7 +71,7 @@ object InputDescriptor {
     valueHint: String,
     values: InputValues
   ): InputDescriptor = {
-    val __obj = js.Dynamic.literal(dependencyInputIds = dependencyInputIds, description = description, groupName = groupName, hasDynamicValueInformation = hasDynamicValueInformation, id = id, inputMode = inputMode, isConfidential = isConfidential, name = name, useInDefaultDescription = useInDefaultDescription, validation = validation, valueHint = valueHint, values = values)
+    val __obj = js.Dynamic.literal(dependencyInputIds = dependencyInputIds.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], groupName = groupName.asInstanceOf[js.Any], hasDynamicValueInformation = hasDynamicValueInformation.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputMode = inputMode.asInstanceOf[js.Any], isConfidential = isConfidential.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], useInDefaultDescription = useInDefaultDescription.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any], valueHint = valueHint.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InputDescriptor]
   }

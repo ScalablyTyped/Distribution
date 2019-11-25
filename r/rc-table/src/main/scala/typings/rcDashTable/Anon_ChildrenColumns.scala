@@ -13,7 +13,7 @@ trait Anon_ChildrenColumns extends js.Object {
 object Anon_ChildrenColumns {
   @scala.inline
   def apply(columns: js.Any, children: ReactNode = null): Anon_ChildrenColumns = {
-    val __obj = js.Dynamic.literal(columns = columns)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenColumns]
   }

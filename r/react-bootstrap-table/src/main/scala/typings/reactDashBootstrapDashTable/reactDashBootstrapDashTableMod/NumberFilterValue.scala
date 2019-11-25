@@ -12,7 +12,7 @@ trait NumberFilterValue extends _FilterValueData {
 object NumberFilterValue {
   @scala.inline
   def apply(comparator: FilterComparator, number: Double | String): NumberFilterValue = {
-    val __obj = js.Dynamic.literal(comparator = comparator, number = number.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NumberFilterValue]
   }

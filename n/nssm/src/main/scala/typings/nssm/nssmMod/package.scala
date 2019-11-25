@@ -8,7 +8,7 @@ package object nssmMod {
   import typings.std.Error
 
   type CallbackFn = js.Function2[/* error */ js.UndefOr[String], /* result */ js.UndefOr[String], Unit]
-  type Nssm = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Nssm = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in nssm.nssm.Command ]: nssm.nssm.NssmCommandFn}
     */ typings.nssm.nssmStrings.Nssm with js.Any
   type NssmCatch[T] = js.Function1[

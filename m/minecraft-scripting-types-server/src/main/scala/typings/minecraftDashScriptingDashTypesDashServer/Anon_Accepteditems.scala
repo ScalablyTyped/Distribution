@@ -37,7 +37,7 @@ object Anon_Accepteditems {
     on_unequip: MinecraftTrigger | String,
     slot: Double
   ): Anon_Accepteditems = {
-    val __obj = js.Dynamic.literal(accepted_items = accepted_items, interact_text = interact_text, on_equip = on_equip.asInstanceOf[js.Any], on_unequip = on_unequip.asInstanceOf[js.Any], slot = slot)
+    val __obj = js.Dynamic.literal(accepted_items = accepted_items.asInstanceOf[js.Any], interact_text = interact_text.asInstanceOf[js.Any], on_equip = on_equip.asInstanceOf[js.Any], on_unequip = on_unequip.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Accepteditems]
   }

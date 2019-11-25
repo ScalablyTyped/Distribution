@@ -13,8 +13,8 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(newValue: StringDictionary[js.Array[String]], oldValue: StringDictionary[js.Array[String]] = null): Anon_Key = {
-    val __obj = js.Dynamic.literal(newValue = newValue)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_NewIndex extends js.Object {
 object Anon_NewIndex {
   @scala.inline
   def apply(newIndex: Double, oldIndex: Double): Anon_NewIndex = {
-    val __obj = js.Dynamic.literal(newIndex = newIndex, oldIndex = oldIndex)
+    val __obj = js.Dynamic.literal(newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NewIndex]
   }

@@ -16,7 +16,7 @@ trait PrintPageDescription extends js.Object {
 object PrintPageDescription {
   @scala.inline
   def apply(dpiX: Double, dpiY: Double, imageableRect: Rect, pageSize: Size): PrintPageDescription = {
-    val __obj = js.Dynamic.literal(dpiX = dpiX, dpiY = dpiY, imageableRect = imageableRect, pageSize = pageSize)
+    val __obj = js.Dynamic.literal(dpiX = dpiX.asInstanceOf[js.Any], dpiY = dpiY.asInstanceOf[js.Any], imageableRect = imageableRect.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PrintPageDescription]
   }

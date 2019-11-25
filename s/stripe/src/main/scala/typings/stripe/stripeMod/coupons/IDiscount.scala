@@ -46,8 +46,8 @@ object IDiscount {
     start: Double,
     subscription: String
   ): IDiscount = {
-    val __obj = js.Dynamic.literal(coupon = coupon, customer = customer, end = end, start = start, subscription = subscription)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(coupon = coupon.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDiscount]
   }
 }

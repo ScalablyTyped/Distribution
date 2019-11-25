@@ -22,7 +22,7 @@ object IstartSearchBeacons {
     fail: /* repeated */ js.Any => Unit = null,
     success: /* repeated */ js.Any => Unit = null
   ): IstartSearchBeacons = {
-    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), ticket = ticket)
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete), ticket = ticket.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[IstartSearchBeacons]

@@ -15,7 +15,7 @@ trait ForceY extends Force {
 object ForceY {
   @scala.inline
   def apply(force: y, strength: Double | SignalRef = null, y: FieldRef = null): ForceY = {
-    val __obj = js.Dynamic.literal(force = force)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
     if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForceY]

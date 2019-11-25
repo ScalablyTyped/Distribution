@@ -11,7 +11,7 @@ trait UpdatePayload extends js.Object {
 object UpdatePayload {
   @scala.inline
   def apply(identity: typings.nodeDashZendesk.nodeDashZendeskMod.Users.Identities.UpdateModel): UpdatePayload = {
-    val __obj = js.Dynamic.literal(identity = identity)
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdatePayload]
   }

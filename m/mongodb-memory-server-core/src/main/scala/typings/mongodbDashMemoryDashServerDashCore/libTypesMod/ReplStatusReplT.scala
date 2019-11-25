@@ -11,7 +11,7 @@ trait ReplStatusReplT extends js.Object {
 object ReplStatusReplT {
   @scala.inline
   def apply(ismaster: Boolean): ReplStatusReplT = {
-    val __obj = js.Dynamic.literal(ismaster = ismaster)
+    val __obj = js.Dynamic.literal(ismaster = ismaster.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReplStatusReplT]
   }

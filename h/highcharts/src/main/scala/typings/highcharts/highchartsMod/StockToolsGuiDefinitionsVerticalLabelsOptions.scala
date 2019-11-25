@@ -24,10 +24,10 @@ object StockToolsGuiDefinitionsVerticalLabelsOptions {
     verticalLabel: StockToolsGuiDefinitionsVerticalLabelsVerticalLabelOptions = null
   ): StockToolsGuiDefinitionsVerticalLabelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (verticalArrow != null) __obj.updateDynamic("verticalArrow")(verticalArrow)
-    if (verticalCounter != null) __obj.updateDynamic("verticalCounter")(verticalCounter)
-    if (verticalLabel != null) __obj.updateDynamic("verticalLabel")(verticalLabel)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (verticalArrow != null) __obj.updateDynamic("verticalArrow")(verticalArrow.asInstanceOf[js.Any])
+    if (verticalCounter != null) __obj.updateDynamic("verticalCounter")(verticalCounter.asInstanceOf[js.Any])
+    if (verticalLabel != null) __obj.updateDynamic("verticalLabel")(verticalLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsVerticalLabelsOptions]
   }
 }

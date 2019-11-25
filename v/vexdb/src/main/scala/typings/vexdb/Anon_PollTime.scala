@@ -11,7 +11,7 @@ trait Anon_PollTime extends js.Object {
 object Anon_PollTime {
   @scala.inline
   def apply(pollTime: Double): Anon_PollTime = {
-    val __obj = js.Dynamic.literal(pollTime = pollTime)
+    val __obj = js.Dynamic.literal(pollTime = pollTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PollTime]
   }

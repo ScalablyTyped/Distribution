@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait EducationGender extends js.Object
 
+object EducationGender {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def female: typings.microsoftDashGraph.microsoftDashGraphStrings.female = this.cast("female")
+  @scala.inline
+  def male: typings.microsoftDashGraph.microsoftDashGraphStrings.male = this.cast("male")
+  @scala.inline
+  def other: typings.microsoftDashGraph.microsoftDashGraphStrings.other = this.cast("other")
+  @scala.inline
+  def unknownFutureValue: typings.microsoftDashGraph.microsoftDashGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+}
+

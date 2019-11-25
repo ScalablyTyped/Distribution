@@ -31,7 +31,7 @@ object IHistoryRequestSearch {
     raw: Boolean,
     unique: Boolean
   ): IHistoryRequestSearch = {
-    val __obj = js.Dynamic.literal(hist_access_type = hist_access_type, n = n, output = output, pattern = pattern, raw = raw, unique = unique)
+    val __obj = js.Dynamic.literal(hist_access_type = hist_access_type.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IHistoryRequestSearch]
   }

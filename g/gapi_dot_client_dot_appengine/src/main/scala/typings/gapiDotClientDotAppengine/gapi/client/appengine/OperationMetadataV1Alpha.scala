@@ -33,13 +33,13 @@ object OperationMetadataV1Alpha {
     warning: js.Array[String] = null
   ): OperationMetadataV1Alpha = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (ephemeralMessage != null) __obj.updateDynamic("ephemeralMessage")(ephemeralMessage)
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (user != null) __obj.updateDynamic("user")(user)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (ephemeralMessage != null) __obj.updateDynamic("ephemeralMessage")(ephemeralMessage.asInstanceOf[js.Any])
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationMetadataV1Alpha]
   }
 }

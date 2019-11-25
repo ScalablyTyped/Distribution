@@ -34,14 +34,14 @@ object BlockPickerProps {
   ): BlockPickerProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(js.Any.fromFunction1(onChangeComplete))
     if (onSwatchHover != null) __obj.updateDynamic("onSwatchHover")(js.Any.fromFunction2(onSwatchHover))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (triangle != null) __obj.updateDynamic("triangle")(triangle.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockPickerProps]
   }
 }

@@ -22,10 +22,10 @@ object DragZoomOptions {
     out: js.UndefOr[Boolean] = js.undefined
   ): DragZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out)
+    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragZoomOptions]
   }
 }

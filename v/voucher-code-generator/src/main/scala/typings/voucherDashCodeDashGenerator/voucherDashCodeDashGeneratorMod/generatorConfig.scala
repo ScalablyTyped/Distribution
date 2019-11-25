@@ -24,12 +24,12 @@ object generatorConfig {
     prefix: String = null
   ): generatorConfig = {
     val __obj = js.Dynamic.literal()
-    if (charset != null) __obj.updateDynamic("charset")(charset)
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (postfix != null) __obj.updateDynamic("postfix")(postfix)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[generatorConfig]
   }
 }

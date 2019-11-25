@@ -22,8 +22,8 @@ trait DebugSessionCustomEvent extends js.Object {
 object DebugSessionCustomEvent {
   @scala.inline
   def apply(event: String, session: DebugSession, body: js.Any = null): DebugSessionCustomEvent = {
-    val __obj = js.Dynamic.literal(event = event, session = session)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugSessionCustomEvent]
   }
 }

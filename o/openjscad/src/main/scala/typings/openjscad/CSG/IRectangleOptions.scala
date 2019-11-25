@@ -20,10 +20,10 @@ object IRectangleOptions {
     radius: Vector2D = null
   ): IRectangleOptions = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (corner1 != null) __obj.updateDynamic("corner1")(corner1)
-    if (corner2 != null) __obj.updateDynamic("corner2")(corner2)
-    if (radius != null) __obj.updateDynamic("radius")(radius)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (corner1 != null) __obj.updateDynamic("corner1")(corner1.asInstanceOf[js.Any])
+    if (corner2 != null) __obj.updateDynamic("corner2")(corner2.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRectangleOptions]
   }
 }

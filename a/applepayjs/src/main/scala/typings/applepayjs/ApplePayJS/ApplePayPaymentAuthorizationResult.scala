@@ -21,8 +21,8 @@ trait ApplePayPaymentAuthorizationResult extends js.Object {
 object ApplePayPaymentAuthorizationResult {
   @scala.inline
   def apply(status: Double, errors: js.Array[ApplePayError] = null): ApplePayPaymentAuthorizationResult = {
-    val __obj = js.Dynamic.literal(status = status)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentAuthorizationResult]
   }
 }

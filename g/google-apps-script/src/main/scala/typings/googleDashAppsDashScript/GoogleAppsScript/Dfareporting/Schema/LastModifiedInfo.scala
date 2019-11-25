@@ -12,7 +12,7 @@ object LastModifiedInfo {
   @scala.inline
   def apply(time: String = null): LastModifiedInfo = {
     val __obj = js.Dynamic.literal()
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastModifiedInfo]
   }
 }

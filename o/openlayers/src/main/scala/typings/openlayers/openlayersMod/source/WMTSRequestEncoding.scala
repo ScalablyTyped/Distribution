@@ -13,3 +13,12 @@ import scala.scalajs.js.annotation._
 */
 trait WMTSRequestEncoding extends js.Object
 
+object WMTSRequestEncoding {
+  @scala.inline
+  def KVP: typings.openlayers.openlayersStrings.KVP = this.cast("KVP")
+  @scala.inline
+  def REST: typings.openlayers.openlayersStrings.REST = this.cast("REST")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -12,9 +12,9 @@ trait Voice extends FileBase {
 object Voice {
   @scala.inline
   def apply(duration: Double, file_id: String, file_size: Int | Double = null, mime_type: String = null): Voice = {
-    val __obj = js.Dynamic.literal(duration = duration, file_id = file_id)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any])
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
-    if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type)
+    if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Voice]
   }
 }

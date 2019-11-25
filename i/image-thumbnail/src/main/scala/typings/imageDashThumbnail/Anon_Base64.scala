@@ -12,7 +12,7 @@ trait Anon_Base64 extends js.Object {
 object Anon_Base64 {
   @scala.inline
   def apply(responseType: base64): Anon_Base64 = {
-    val __obj = js.Dynamic.literal(responseType = responseType)
+    val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Base64]
   }

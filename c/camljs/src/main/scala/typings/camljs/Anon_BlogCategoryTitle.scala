@@ -27,7 +27,7 @@ object Anon_BlogCategoryTitle {
     Title: String,
     Url: String
   ): Anon_BlogCategoryTitle = {
-    val __obj = js.Dynamic.literal(BlogCategoryTitle = BlogCategoryTitle, BlogPostTitle = BlogPostTitle, Description = Description, RecycleBinEnabled = RecycleBinEnabled, SiteOwnerName = SiteOwnerName, SiteUrl = SiteUrl, Title = Title, Url = Url)
+    val __obj = js.Dynamic.literal(BlogCategoryTitle = BlogCategoryTitle.asInstanceOf[js.Any], BlogPostTitle = BlogPostTitle.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], RecycleBinEnabled = RecycleBinEnabled.asInstanceOf[js.Any], SiteOwnerName = SiteOwnerName.asInstanceOf[js.Any], SiteUrl = SiteUrl.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BlogCategoryTitle]
   }

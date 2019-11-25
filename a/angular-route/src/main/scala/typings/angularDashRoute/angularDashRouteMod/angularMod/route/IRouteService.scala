@@ -34,8 +34,8 @@ object IRouteService {
     updateParams: StringDictionary[String] => Unit,
     current: ICurrentRoute = null
   ): IRouteService = {
-    val __obj = js.Dynamic.literal(reload = js.Any.fromFunction0(reload), routes = routes, updateParams = js.Any.fromFunction1(updateParams))
-    if (current != null) __obj.updateDynamic("current")(current)
+    val __obj = js.Dynamic.literal(reload = js.Any.fromFunction0(reload), routes = routes.asInstanceOf[js.Any], updateParams = js.Any.fromFunction1(updateParams))
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRouteService]
   }
 }

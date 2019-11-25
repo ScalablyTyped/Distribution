@@ -430,7 +430,7 @@ object exceljsStrings {
   sealed trait minor extends js.Object
   
   @js.native
-  sealed trait none extends FillPatterns
+  sealed trait none_ extends FillPatterns
   
   @js.native
   sealed trait normal extends js.Object
@@ -812,7 +812,7 @@ object exceljsStrings {
   @scala.inline
   def minor: minor = "minor".asInstanceOf[minor]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def none_ : none_ = "none".asInstanceOf[none_]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline

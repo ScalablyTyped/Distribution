@@ -12,8 +12,8 @@ trait WhereGroup extends _WhereExpression {
 object WhereGroup {
   @scala.inline
   def apply(expressions: js.Array[WhereExpression], op: String = null): WhereGroup = {
-    val __obj = js.Dynamic.literal(expressions = expressions)
-    if (op != null) __obj.updateDynamic("op")(op)
+    val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
+    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhereGroup]
   }
 }

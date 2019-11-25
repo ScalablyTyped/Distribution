@@ -21,9 +21,9 @@ object RiotComponentShell {
     name: String = null
   ): RiotComponentShell[P, S] = {
     val __obj = js.Dynamic.literal(template = js.Any.fromFunction0(template))
-    if (css != null) __obj.updateDynamic("css")(css)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (exports != null) __obj.updateDynamic("exports")(js.Any.fromFunction0(exports))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RiotComponentShell[P, S]]
   }
 }

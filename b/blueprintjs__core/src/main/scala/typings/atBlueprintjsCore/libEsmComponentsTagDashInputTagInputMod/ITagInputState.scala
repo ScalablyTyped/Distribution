@@ -19,8 +19,8 @@ object ITagInputState {
     isInputFocused: Boolean,
     prevInputValueProp: String = null
   ): ITagInputState = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex, inputValue = inputValue, isInputFocused = isInputFocused)
-    if (prevInputValueProp != null) __obj.updateDynamic("prevInputValueProp")(prevInputValueProp)
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], isInputFocused = isInputFocused.asInstanceOf[js.Any])
+    if (prevInputValueProp != null) __obj.updateDynamic("prevInputValueProp")(prevInputValueProp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITagInputState]
   }
 }

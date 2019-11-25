@@ -26,8 +26,8 @@ trait _BatchResultErrorEntry extends js.Object {
 object _BatchResultErrorEntry {
   @scala.inline
   def apply(Code: String, Id: String, SenderFault: Boolean, Message: String = null): _BatchResultErrorEntry = {
-    val __obj = js.Dynamic.literal(Code = Code, Id = Id, SenderFault = SenderFault)
-    if (Message != null) __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], SenderFault = SenderFault.asInstanceOf[js.Any])
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BatchResultErrorEntry]
   }
 }

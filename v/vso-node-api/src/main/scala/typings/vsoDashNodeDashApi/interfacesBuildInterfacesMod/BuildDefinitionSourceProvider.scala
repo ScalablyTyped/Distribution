@@ -43,7 +43,7 @@ object BuildDefinitionSourceProvider {
     name: String,
     supportedTriggerTypes: DefinitionTriggerType
   ): BuildDefinitionSourceProvider = {
-    val __obj = js.Dynamic.literal(definitionUri = definitionUri, fields = fields, id = id, lastModified = lastModified, name = name, supportedTriggerTypes = supportedTriggerTypes)
+    val __obj = js.Dynamic.literal(definitionUri = definitionUri.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], supportedTriggerTypes = supportedTriggerTypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildDefinitionSourceProvider]
   }

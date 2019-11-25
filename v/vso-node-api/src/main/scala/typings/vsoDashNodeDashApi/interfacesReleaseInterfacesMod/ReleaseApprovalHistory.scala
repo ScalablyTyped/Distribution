@@ -25,7 +25,7 @@ object ReleaseApprovalHistory {
     modifiedOn: Date,
     revision: Double
   ): ReleaseApprovalHistory = {
-    val __obj = js.Dynamic.literal(approver = approver, changedBy = changedBy, comments = comments, createdOn = createdOn, modifiedOn = modifiedOn, revision = revision)
+    val __obj = js.Dynamic.literal(approver = approver.asInstanceOf[js.Any], changedBy = changedBy.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], createdOn = createdOn.asInstanceOf[js.Any], modifiedOn = modifiedOn.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseApprovalHistory]
   }

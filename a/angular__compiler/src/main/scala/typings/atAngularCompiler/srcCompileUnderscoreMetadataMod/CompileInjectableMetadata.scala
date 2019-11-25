@@ -28,14 +28,14 @@ object CompileInjectableMetadata {
     useFactory: StaticSymbol = null,
     useValue: js.Any = null
   ): CompileInjectableMetadata = {
-    val __obj = js.Dynamic.literal(symbol = symbol)
-    __obj.updateDynamic("type")(`type`)
-    if (deps != null) __obj.updateDynamic("deps")(deps)
-    if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn)
-    if (useClass != null) __obj.updateDynamic("useClass")(useClass)
-    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)
-    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory)
-    if (useValue != null) __obj.updateDynamic("useValue")(useValue)
+    val __obj = js.Dynamic.literal(symbol = symbol.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
+    if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])
+    if (useClass != null) __obj.updateDynamic("useClass")(useClass.asInstanceOf[js.Any])
+    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting.asInstanceOf[js.Any])
+    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory.asInstanceOf[js.Any])
+    if (useValue != null) __obj.updateDynamic("useValue")(useValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileInjectableMetadata]
   }
 }

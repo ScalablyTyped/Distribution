@@ -24,12 +24,12 @@ object Anon_BaseUrl {
     update: Anon_Url = null
   ): Anon_BaseUrl = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (idAttr != null) __obj.updateDynamic("idAttr")(idAttr)
-    if (read != null) __obj.updateDynamic("read")(read)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (idAttr != null) __obj.updateDynamic("idAttr")(idAttr.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseUrl]
   }
 }

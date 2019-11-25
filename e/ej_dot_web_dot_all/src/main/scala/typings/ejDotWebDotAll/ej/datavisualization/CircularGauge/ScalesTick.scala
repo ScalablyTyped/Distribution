@@ -48,7 +48,7 @@ object ScalesTick {
   ): ScalesTick = {
     val __obj = js.Dynamic.literal()
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])

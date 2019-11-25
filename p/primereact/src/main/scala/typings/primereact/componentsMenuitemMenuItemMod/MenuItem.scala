@@ -33,16 +33,16 @@ object MenuItem {
     url: String = null
   ): MenuItem = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (command != null) __obj.updateDynamic("command")(js.Any.fromFunction1(command))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItem]
   }
 }

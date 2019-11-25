@@ -24,12 +24,12 @@ object ProviderLike {
     useFactory: js.Function = null,
     useValue: js.Any = null
   ): ProviderLike = {
-    val __obj = js.Dynamic.literal(provide = provide)
-    if (deps != null) __obj.updateDynamic("deps")(deps)
-    if (useClass != null) __obj.updateDynamic("useClass")(useClass)
-    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)
-    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory)
-    if (useValue != null) __obj.updateDynamic("useValue")(useValue)
+    val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any])
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
+    if (useClass != null) __obj.updateDynamic("useClass")(useClass.asInstanceOf[js.Any])
+    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting.asInstanceOf[js.Any])
+    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory.asInstanceOf[js.Any])
+    if (useValue != null) __obj.updateDynamic("useValue")(useValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderLike]
   }
 }

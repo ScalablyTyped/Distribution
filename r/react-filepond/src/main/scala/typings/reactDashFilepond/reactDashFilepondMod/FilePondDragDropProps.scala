@@ -30,10 +30,10 @@ object FilePondDragDropProps {
     ignoredFiles: js.Array[String] = null
   ): FilePondDragDropProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dropOnElement)) __obj.updateDynamic("dropOnElement")(dropOnElement)
-    if (!js.isUndefined(dropOnPage)) __obj.updateDynamic("dropOnPage")(dropOnPage)
-    if (!js.isUndefined(dropValidation)) __obj.updateDynamic("dropValidation")(dropValidation)
-    if (ignoredFiles != null) __obj.updateDynamic("ignoredFiles")(ignoredFiles)
+    if (!js.isUndefined(dropOnElement)) __obj.updateDynamic("dropOnElement")(dropOnElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropOnPage)) __obj.updateDynamic("dropOnPage")(dropOnPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropValidation)) __obj.updateDynamic("dropValidation")(dropValidation.asInstanceOf[js.Any])
+    if (ignoredFiles != null) __obj.updateDynamic("ignoredFiles")(ignoredFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePondDragDropProps]
   }
 }

@@ -18,7 +18,7 @@ object S3iFrameSupportOptions {
   @scala.inline
   def apply(localBlankPagePath: String = null): S3iFrameSupportOptions = {
     val __obj = js.Dynamic.literal()
-    if (localBlankPagePath != null) __obj.updateDynamic("localBlankPagePath")(localBlankPagePath)
+    if (localBlankPagePath != null) __obj.updateDynamic("localBlankPagePath")(localBlankPagePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3iFrameSupportOptions]
   }
 }

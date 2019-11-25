@@ -22,10 +22,10 @@ object Options {
     theme: String = null,
     title: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(groups = groups, version = version)
-    if (routeHandlers != null) __obj.updateDynamic("routeHandlers")(routeHandlers)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (routeHandlers != null) __obj.updateDynamic("routeHandlers")(routeHandlers.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

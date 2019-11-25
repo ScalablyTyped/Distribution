@@ -13,7 +13,7 @@ trait Anon_IsSelectedOnFocus extends js.Object {
 object Anon_IsSelectedOnFocus {
   @scala.inline
   def apply(isSelectedOnFocus: Boolean, selectionMode: SelectionMode): Anon_IsSelectedOnFocus = {
-    val __obj = js.Dynamic.literal(isSelectedOnFocus = isSelectedOnFocus, selectionMode = selectionMode)
+    val __obj = js.Dynamic.literal(isSelectedOnFocus = isSelectedOnFocus.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsSelectedOnFocus]
   }

@@ -3,7 +3,7 @@ package typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreRestoreRequestMo
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.Bulk
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.Expedited
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.SELECT
-import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.Standard
+import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.Standard_
 import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreGlacierJobParametersMod._GlacierJobParameters
 import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreOutputLocationMod._OutputLocation
 import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreSelectParametersMod._SelectParameters
@@ -35,7 +35,7 @@ trait _RestoreRequest extends js.Object {
   /**
     * <p>Glacier retrieval tier at which the restore will be processed.</p>
     */
-  var Tier: js.UndefOr[Standard | Bulk | Expedited | String] = js.undefined
+  var Tier: js.UndefOr[Standard_ | Bulk | Expedited | String] = js.undefined
   /**
     * <p>Type of restore request.</p>
     */
@@ -50,15 +50,15 @@ object _RestoreRequest {
     GlacierJobParameters: _GlacierJobParameters = null,
     OutputLocation: _OutputLocation = null,
     SelectParameters: _SelectParameters = null,
-    Tier: Standard | Bulk | Expedited | String = null,
+    Tier: Standard_ | Bulk | Expedited | String = null,
     Type: SELECT | String = null
   ): _RestoreRequest = {
     val __obj = js.Dynamic.literal()
     if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (GlacierJobParameters != null) __obj.updateDynamic("GlacierJobParameters")(GlacierJobParameters)
-    if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation)
-    if (SelectParameters != null) __obj.updateDynamic("SelectParameters")(SelectParameters)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (GlacierJobParameters != null) __obj.updateDynamic("GlacierJobParameters")(GlacierJobParameters.asInstanceOf[js.Any])
+    if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])
+    if (SelectParameters != null) __obj.updateDynamic("SelectParameters")(SelectParameters.asInstanceOf[js.Any])
     if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[_RestoreRequest]

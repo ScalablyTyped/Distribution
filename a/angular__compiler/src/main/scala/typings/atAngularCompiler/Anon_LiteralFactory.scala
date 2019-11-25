@@ -13,7 +13,7 @@ trait Anon_LiteralFactory extends js.Object {
 object Anon_LiteralFactory {
   @scala.inline
   def apply(literalFactory: Expression, literalFactoryArguments: js.Array[Expression]): Anon_LiteralFactory = {
-    val __obj = js.Dynamic.literal(literalFactory = literalFactory, literalFactoryArguments = literalFactoryArguments)
+    val __obj = js.Dynamic.literal(literalFactory = literalFactory.asInstanceOf[js.Any], literalFactoryArguments = literalFactoryArguments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LiteralFactory]
   }

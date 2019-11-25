@@ -24,7 +24,7 @@ object Image {
     val __obj = js.Dynamic.literal()
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]

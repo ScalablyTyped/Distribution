@@ -37,15 +37,15 @@ object WorkbookWorksheet {
     visibility: String = null
   ): WorkbookWorksheet = {
     val __obj = js.Dynamic.literal()
-    if (charts != null) __obj.updateDynamic("charts")(charts)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (names != null) __obj.updateDynamic("names")(names)
-    if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables)
+    if (charts != null) __obj.updateDynamic("charts")(charts.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
+    if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (protection != null) __obj.updateDynamic("protection")(protection)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookWorksheet]
   }
 }

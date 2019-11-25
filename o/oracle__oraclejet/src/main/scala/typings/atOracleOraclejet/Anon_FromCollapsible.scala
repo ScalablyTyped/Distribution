@@ -19,8 +19,8 @@ object Anon_FromCollapsible {
     toCollapsible: Element,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_FromCollapsible = {
-    val __obj = js.Dynamic.literal(fromCollapsible = fromCollapsible, toCollapsible = toCollapsible)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(fromCollapsible = fromCollapsible.asInstanceOf[js.Any], toCollapsible = toCollapsible.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FromCollapsible]
   }
 }

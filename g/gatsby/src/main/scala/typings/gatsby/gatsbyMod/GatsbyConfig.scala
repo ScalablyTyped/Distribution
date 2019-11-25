@@ -39,12 +39,12 @@ object GatsbyConfig {
   ): GatsbyConfig = {
     val __obj = js.Dynamic.literal()
     if (developMiddleware != null) __obj.updateDynamic("developMiddleware")(js.Any.fromFunction1(developMiddleware))
-    if (mapping != null) __obj.updateDynamic("mapping")(mapping)
-    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (!js.isUndefined(polyfill)) __obj.updateDynamic("polyfill")(polyfill)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (siteMetadata != null) __obj.updateDynamic("siteMetadata")(siteMetadata)
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(polyfill)) __obj.updateDynamic("polyfill")(polyfill.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (siteMetadata != null) __obj.updateDynamic("siteMetadata")(siteMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatsbyConfig]
   }
 }

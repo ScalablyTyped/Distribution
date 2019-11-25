@@ -13,7 +13,7 @@ object AutoResizeDimensionsRequest {
   @scala.inline
   def apply(dimensions: DimensionRange = null): AutoResizeDimensionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoResizeDimensionsRequest]
   }
 }

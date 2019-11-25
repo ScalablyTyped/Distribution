@@ -59,7 +59,7 @@ object WorldDefaults {
     minBounceVelocity: Double,
     velocityDebugColor: Double
   ): WorldDefaults = {
-    val __obj = js.Dynamic.literal(bodyDebugColor = bodyDebugColor, bounciness = bounciness, debugShowBody = debugShowBody, debugShowVelocity = debugShowVelocity, gravityFactor = gravityFactor, maxVelocityX = maxVelocityX, maxVelocityY = maxVelocityY, minBounceVelocity = minBounceVelocity, velocityDebugColor = velocityDebugColor)
+    val __obj = js.Dynamic.literal(bodyDebugColor = bodyDebugColor.asInstanceOf[js.Any], bounciness = bounciness.asInstanceOf[js.Any], debugShowBody = debugShowBody.asInstanceOf[js.Any], debugShowVelocity = debugShowVelocity.asInstanceOf[js.Any], gravityFactor = gravityFactor.asInstanceOf[js.Any], maxVelocityX = maxVelocityX.asInstanceOf[js.Any], maxVelocityY = maxVelocityY.asInstanceOf[js.Any], minBounceVelocity = minBounceVelocity.asInstanceOf[js.Any], velocityDebugColor = velocityDebugColor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorldDefaults]
   }

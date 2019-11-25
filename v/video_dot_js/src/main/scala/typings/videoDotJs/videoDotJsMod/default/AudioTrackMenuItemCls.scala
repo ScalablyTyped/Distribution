@@ -1,15 +1,14 @@
 package typings.videoDotJs.videoDotJsMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.AudioTrackMenuItem
 import typings.videoDotJs.videoDotJsMod.videojs.AudioTrackMenuItemOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("video.js", "AudioTrackMenuItem")
 @js.native
-class AudioTrackMenuItemCls protected () extends AudioTrackMenuItem {
+class AudioTrackMenuItemCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.AudioTrackMenuItem {
   /**
     * Creates an instance of this class.
     *
@@ -19,7 +18,7 @@ class AudioTrackMenuItemCls protected () extends AudioTrackMenuItem {
     * @param [options]
     *        The key/value store of player options.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: AudioTrackMenuItemOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: AudioTrackMenuItemOptions) = this()
 }
 

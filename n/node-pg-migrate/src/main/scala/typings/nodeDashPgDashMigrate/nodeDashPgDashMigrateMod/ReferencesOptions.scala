@@ -27,11 +27,11 @@ object ReferencesOptions {
   ): ReferencesOptions = {
     val __obj = js.Dynamic.literal()
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
-    if (referencesConstraintComment != null) __obj.updateDynamic("referencesConstraintComment")(referencesConstraintComment)
-    if (referencesConstraintName != null) __obj.updateDynamic("referencesConstraintName")(referencesConstraintName)
+    if (referencesConstraintComment != null) __obj.updateDynamic("referencesConstraintComment")(referencesConstraintComment.asInstanceOf[js.Any])
+    if (referencesConstraintName != null) __obj.updateDynamic("referencesConstraintName")(referencesConstraintName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferencesOptions]
   }
 }

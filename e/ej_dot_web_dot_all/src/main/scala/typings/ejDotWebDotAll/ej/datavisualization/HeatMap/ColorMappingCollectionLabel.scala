@@ -46,12 +46,12 @@ object ColorMappingCollectionLabel {
     textDecoration: TextDecoration | String = null
   ): ColorMappingCollectionLabel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
-    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorMappingCollectionLabel]
   }

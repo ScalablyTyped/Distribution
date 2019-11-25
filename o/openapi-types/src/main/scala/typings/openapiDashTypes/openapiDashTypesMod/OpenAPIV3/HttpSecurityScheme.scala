@@ -15,10 +15,10 @@ trait HttpSecurityScheme extends SecuritySchemeObject {
 object HttpSecurityScheme {
   @scala.inline
   def apply(scheme: String, `type`: http, bearerFormat: String = null, description: String = null): HttpSecurityScheme = {
-    val __obj = js.Dynamic.literal(scheme = scheme)
-    __obj.updateDynamic("type")(`type`)
-    if (bearerFormat != null) __obj.updateDynamic("bearerFormat")(bearerFormat)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (bearerFormat != null) __obj.updateDynamic("bearerFormat")(bearerFormat.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpSecurityScheme]
   }
 }

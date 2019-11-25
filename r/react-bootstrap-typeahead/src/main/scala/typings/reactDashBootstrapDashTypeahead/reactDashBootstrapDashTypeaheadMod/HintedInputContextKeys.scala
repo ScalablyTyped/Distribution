@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait HintedInputContextKeys extends js.Object
 
+object HintedInputContextKeys {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def hintText: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.hintText = this.cast("hintText")
+  @scala.inline
+  def initialItem: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.initialItem = this.cast("initialItem")
+  @scala.inline
+  def onAdd: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.onAdd = this.cast("onAdd")
+  @scala.inline
+  def selectHintOnEnter: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.selectHintOnEnter = this.cast("selectHintOnEnter")
+}
+

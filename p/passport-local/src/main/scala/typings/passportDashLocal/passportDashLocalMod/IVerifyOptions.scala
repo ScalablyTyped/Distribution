@@ -11,7 +11,7 @@ trait IVerifyOptions extends js.Object {
 object IVerifyOptions {
   @scala.inline
   def apply(message: String): IVerifyOptions = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IVerifyOptions]
   }

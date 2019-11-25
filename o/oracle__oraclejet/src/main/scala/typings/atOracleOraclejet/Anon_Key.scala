@@ -20,8 +20,8 @@ object Anon_Key {
     value: js.Any,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal(path = path, previousValue = previousValue, value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], previousValue = previousValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Key]
   }
 }

@@ -13,8 +13,8 @@ trait Nickname extends js.Object {
 object Nickname {
   @scala.inline
   def apply(metadata: FieldMetadata, `type`: NicknameType, value: String): Nickname = {
-    val __obj = js.Dynamic.literal(metadata = metadata, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nickname]
   }
 }

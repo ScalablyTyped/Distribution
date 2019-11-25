@@ -73,17 +73,17 @@ object Params {
     useBuffers: js.UndefOr[Boolean] = js.undefined
   ): Params = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(crawl)) __obj.updateDynamic("crawl")(crawl)
-    if (customTests != null) __obj.updateDynamic("customTests")(customTests)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(crawl)) __obj.updateDynamic("crawl")(crawl.asInstanceOf[js.Any])
+    if (customTests != null) __obj.updateDynamic("customTests")(customTests.asInstanceOf[js.Any])
     if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (devFile != null) __obj.updateDynamic("devFile")(devFile.asInstanceOf[js.Any])
-    if (excludeTests != null) __obj.updateDynamic("excludeTests")(excludeTests)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (tests != null) __obj.updateDynamic("tests")(tests)
-    if (!js.isUndefined(uglify)) __obj.updateDynamic("uglify")(uglify)
-    if (!js.isUndefined(useBuffers)) __obj.updateDynamic("useBuffers")(useBuffers)
+    if (excludeTests != null) __obj.updateDynamic("excludeTests")(excludeTests.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (tests != null) __obj.updateDynamic("tests")(tests.asInstanceOf[js.Any])
+    if (!js.isUndefined(uglify)) __obj.updateDynamic("uglify")(uglify.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBuffers)) __obj.updateDynamic("useBuffers")(useBuffers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

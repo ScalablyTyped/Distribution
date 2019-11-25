@@ -13,8 +13,8 @@ trait ThreadRowButtonClickEvent extends js.Object {
 object ThreadRowButtonClickEvent {
   @scala.inline
   def apply(threadRowView: ThreadRowView, dropdown: DropdownView = null): ThreadRowButtonClickEvent = {
-    val __obj = js.Dynamic.literal(threadRowView = threadRowView)
-    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown)
+    val __obj = js.Dynamic.literal(threadRowView = threadRowView.asInstanceOf[js.Any])
+    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowButtonClickEvent]
   }
 }

@@ -19,7 +19,7 @@ trait KeywordResult extends js.Object {
 object KeywordResult {
   @scala.inline
   def apply(confidence: Double, end_time: Double, normalized_text: String, start_time: Double): KeywordResult = {
-    val __obj = js.Dynamic.literal(confidence = confidence, end_time = end_time, normalized_text = normalized_text, start_time = start_time)
+    val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], end_time = end_time.asInstanceOf[js.Any], normalized_text = normalized_text.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeywordResult]
   }

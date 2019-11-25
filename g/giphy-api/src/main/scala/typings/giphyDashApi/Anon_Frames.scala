@@ -16,7 +16,7 @@ trait Anon_Frames extends js.Object {
 object Anon_Frames {
   @scala.inline
   def apply(frames: String, mp4: String, mp4_size: String, size: String, webp: String, webp_size: String): Anon_Frames = {
-    val __obj = js.Dynamic.literal(frames = frames, mp4 = mp4, mp4_size = mp4_size, size = size, webp = webp, webp_size = webp_size)
+    val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], mp4 = mp4.asInstanceOf[js.Any], mp4_size = mp4_size.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], webp = webp.asInstanceOf[js.Any], webp_size = webp_size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Frames]
   }

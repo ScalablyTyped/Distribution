@@ -28,10 +28,10 @@ trait Anon_Alignment extends js.Object {
 object Anon_Alignment {
   @scala.inline
   def apply(name: String, alignment: center | fill = null, id: String = null, passProps: js.Object = null): Anon_Alignment = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (passProps != null) __obj.updateDynamic("passProps")(passProps)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (passProps != null) __obj.updateDynamic("passProps")(passProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alignment]
   }
 }

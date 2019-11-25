@@ -1,9 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod.MenuI
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuElement
-import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Animation
-import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,13 +56,22 @@ trait IonMenuController extends js.Object {
     */
   def open(): js.Promise[Boolean] = js.native
   def open(menu: String): js.Promise[Boolean] = js.native
-  def registerAnimation(name: String, animation: js.Function1[/* menu */ MenuI, Animation]): js.Promise[Unit] = js.native
   /**
     * Registers a new animation that can be used with any `ion-menu` by passing the name of the animation in its `type` property.
     * @param name The name of the animation to register.
     * @param animation The animation function to register.
     */
-  def registerAnimation(name: String, animation: AnimationBuilder): js.Promise[Unit] = js.native
+  def registerAnimation(
+    name: String,
+    animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
+  ): js.Promise[Unit] = js.native
+  def registerAnimation(
+    name: String,
+    animation: js.Function1[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ /* menu */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IonicAnimation */ _
+    ]
+  ): js.Promise[Unit] = js.native
   /**
     * Enable or disable the ability to swipe open the menu.
     * @param enable If `true`, the menu swipe gesture should be enabled.

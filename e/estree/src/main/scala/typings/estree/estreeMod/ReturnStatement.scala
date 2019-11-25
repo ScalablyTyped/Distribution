@@ -23,12 +23,12 @@ object ReturnStatement {
     trailingComments: js.Array[Comment] = null
   ): ReturnStatement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (argument != null) __obj.updateDynamic("argument")(argument)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnStatement]
   }
 }

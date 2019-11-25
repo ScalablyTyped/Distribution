@@ -18,8 +18,8 @@ trait Anon_HeadersIdOptionsResourceTypeSlot extends js.Object {
 object Anon_HeadersIdOptionsResourceTypeSlot {
   @scala.inline
   def apply(id: String, resourceType: Slot, version: String, headers: Headers = null, options: Options = null): Anon_HeadersIdOptionsResourceTypeSlot = {
-    val __obj = js.Dynamic.literal(id = id, resourceType = resourceType, version = version)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HeadersIdOptionsResourceTypeSlot]
   }

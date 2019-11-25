@@ -21,9 +21,9 @@ object ListInvoicesParams {
     per_page: Int | Double = null
   ): ListInvoicesParams = {
     val __obj = js.Dynamic.literal()
-    if (customer_uuid != null) __obj.updateDynamic("customer_uuid")(customer_uuid)
-    if (data_source_uuid != null) __obj.updateDynamic("data_source_uuid")(data_source_uuid)
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id)
+    if (customer_uuid != null) __obj.updateDynamic("customer_uuid")(customer_uuid.asInstanceOf[js.Any])
+    if (data_source_uuid != null) __obj.updateDynamic("data_source_uuid")(data_source_uuid.asInstanceOf[js.Any])
+    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInvoicesParams]

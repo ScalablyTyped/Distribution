@@ -35,14 +35,14 @@ object Anon_Customglyphcode {
     x: Int | Double = null,
     y: Int | Double = null
   ): Anon_Customglyphcode = {
-    val __obj = js.Dynamic.literal(duration = duration, line = line, x_shift = x_shift)
-    if (custom_glyph_code != null) __obj.updateDynamic("custom_glyph_code")(custom_glyph_code)
-    if (!js.isUndefined(displaced)) __obj.updateDynamic("displaced")(displaced)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], x_shift = x_shift.asInstanceOf[js.Any])
+    if (custom_glyph_code != null) __obj.updateDynamic("custom_glyph_code")(custom_glyph_code.asInstanceOf[js.Any])
+    if (!js.isUndefined(displaced)) __obj.updateDynamic("displaced")(displaced.asInstanceOf[js.Any])
     if (glyph_font_scale != null) __obj.updateDynamic("glyph_font_scale")(glyph_font_scale.asInstanceOf[js.Any])
-    if (note_type != null) __obj.updateDynamic("note_type")(note_type)
-    if (!js.isUndefined(slashed)) __obj.updateDynamic("slashed")(slashed)
+    if (note_type != null) __obj.updateDynamic("note_type")(note_type.asInstanceOf[js.Any])
+    if (!js.isUndefined(slashed)) __obj.updateDynamic("slashed")(slashed.asInstanceOf[js.Any])
     if (stem_direction != null) __obj.updateDynamic("stem_direction")(stem_direction.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Customglyphcode]

@@ -14,7 +14,7 @@ trait Anon_OriginalEventValueDate extends js.Object {
 object Anon_OriginalEventValueDate {
   @scala.inline
   def apply(originalEvent: Event, value: Date): Anon_OriginalEventValueDate = {
-    val __obj = js.Dynamic.literal(originalEvent = originalEvent, value = value)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OriginalEventValueDate]
   }

@@ -29,7 +29,7 @@ object GitBaseVersionDescriptor {
     versionOptions: GitVersionOptions,
     versionType: GitVersionType
   ): GitBaseVersionDescriptor = {
-    val __obj = js.Dynamic.literal(baseVersion = baseVersion, baseVersionOptions = baseVersionOptions, baseVersionType = baseVersionType, version = version, versionOptions = versionOptions, versionType = versionType)
+    val __obj = js.Dynamic.literal(baseVersion = baseVersion.asInstanceOf[js.Any], baseVersionOptions = baseVersionOptions.asInstanceOf[js.Any], baseVersionType = baseVersionType.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versionOptions = versionOptions.asInstanceOf[js.Any], versionType = versionType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitBaseVersionDescriptor]
   }

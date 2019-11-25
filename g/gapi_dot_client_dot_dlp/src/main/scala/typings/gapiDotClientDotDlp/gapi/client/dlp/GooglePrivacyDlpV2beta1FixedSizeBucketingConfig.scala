@@ -36,8 +36,8 @@ object GooglePrivacyDlpV2beta1FixedSizeBucketingConfig {
   ): GooglePrivacyDlpV2beta1FixedSizeBucketingConfig = {
     val __obj = js.Dynamic.literal()
     if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
-    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound)
-    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound)
+    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
+    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1FixedSizeBucketingConfig]
   }
 }

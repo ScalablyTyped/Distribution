@@ -21,9 +21,9 @@ object AppendValuesResponse {
   @scala.inline
   def apply(spreadsheetId: String = null, tableRange: String = null, updates: UpdateValuesResponse = null): AppendValuesResponse = {
     val __obj = js.Dynamic.literal()
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
-    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange)
-    if (updates != null) __obj.updateDynamic("updates")(updates)
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
+    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange.asInstanceOf[js.Any])
+    if (updates != null) __obj.updateDynamic("updates")(updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendValuesResponse]
   }
 }

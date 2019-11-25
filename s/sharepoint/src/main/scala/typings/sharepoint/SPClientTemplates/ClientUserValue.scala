@@ -29,7 +29,7 @@ object ClientUserValue {
     sip: String,
     title: String
   ): ClientUserValue = {
-    val __obj = js.Dynamic.literal(department = department, displayStr = displayStr, email = email, jobTitle = jobTitle, lookupId = lookupId, lookupValue = lookupValue, picture = picture, sip = sip, title = title)
+    val __obj = js.Dynamic.literal(department = department.asInstanceOf[js.Any], displayStr = displayStr.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], jobTitle = jobTitle.asInstanceOf[js.Any], lookupId = lookupId.asInstanceOf[js.Any], lookupValue = lookupValue.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], sip = sip.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientUserValue]
   }

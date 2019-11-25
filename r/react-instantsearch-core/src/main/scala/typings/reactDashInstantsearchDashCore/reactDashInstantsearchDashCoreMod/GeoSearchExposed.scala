@@ -12,7 +12,7 @@ object GeoSearchExposed {
   @scala.inline
   def apply(defaultRefinement: NESW = null): GeoSearchExposed = {
     val __obj = js.Dynamic.literal()
-    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement)
+    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoSearchExposed]
   }
 }

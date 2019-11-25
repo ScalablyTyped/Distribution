@@ -23,9 +23,9 @@ object Anon_DeviceFamily {
     device: String = null,
     os: String = null
   ): Anon_DeviceFamily = {
-    val __obj = js.Dynamic.literal(family = family, major = major, minor = minor, patch = patch)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (os != null) __obj.updateDynamic("os")(os)
+    val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DeviceFamily]
   }
 }

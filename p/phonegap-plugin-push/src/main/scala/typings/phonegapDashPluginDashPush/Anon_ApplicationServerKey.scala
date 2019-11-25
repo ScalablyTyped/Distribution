@@ -19,8 +19,8 @@ object Anon_ApplicationServerKey {
   @scala.inline
   def apply(applicationServerKey: String = null, pushServiceURL: String = null): Anon_ApplicationServerKey = {
     val __obj = js.Dynamic.literal()
-    if (applicationServerKey != null) __obj.updateDynamic("applicationServerKey")(applicationServerKey)
-    if (pushServiceURL != null) __obj.updateDynamic("pushServiceURL")(pushServiceURL)
+    if (applicationServerKey != null) __obj.updateDynamic("applicationServerKey")(applicationServerKey.asInstanceOf[js.Any])
+    if (pushServiceURL != null) __obj.updateDynamic("pushServiceURL")(pushServiceURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApplicationServerKey]
   }
 }

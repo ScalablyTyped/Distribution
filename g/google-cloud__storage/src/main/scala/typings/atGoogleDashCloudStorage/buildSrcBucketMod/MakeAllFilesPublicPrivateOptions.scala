@@ -20,10 +20,10 @@ object MakeAllFilesPublicPrivateOptions {
     userProject: String = null
   ): MakeAllFilesPublicPrivateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeAllFilesPublicPrivateOptions]
   }
 }

@@ -18,7 +18,7 @@ object _UnmarshalledChannelsResponse {
   @scala.inline
   def apply(Channels: StringDictionary[_UnmarshalledChannelResponse] = null): _UnmarshalledChannelsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Channels != null) __obj.updateDynamic("Channels")(Channels)
+    if (Channels != null) __obj.updateDynamic("Channels")(Channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledChannelsResponse]
   }
 }

@@ -28,14 +28,14 @@ object GriddleExtensibility {
     styleConfig: GriddleStyleConfig = null
   ): GriddleExtensibility = {
     val __obj = js.Dynamic.literal()
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
-    if (reducer != null) __obj.updateDynamic("reducer")(reducer)
-    if (renderProperties != null) __obj.updateDynamic("renderProperties")(renderProperties)
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
-    if (settingsComponentObjects != null) __obj.updateDynamic("settingsComponentObjects")(settingsComponentObjects)
-    if (styleConfig != null) __obj.updateDynamic("styleConfig")(styleConfig)
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
+    if (reducer != null) __obj.updateDynamic("reducer")(reducer.asInstanceOf[js.Any])
+    if (renderProperties != null) __obj.updateDynamic("renderProperties")(renderProperties.asInstanceOf[js.Any])
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
+    if (settingsComponentObjects != null) __obj.updateDynamic("settingsComponentObjects")(settingsComponentObjects.asInstanceOf[js.Any])
+    if (styleConfig != null) __obj.updateDynamic("styleConfig")(styleConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddleExtensibility]
   }
 }

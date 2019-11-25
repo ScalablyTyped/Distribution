@@ -66,8 +66,8 @@ object PlusNativeUIWaitingLoadingOptions {
   ): PlusNativeUIWaitingLoadingOptions = {
     val __obj = js.Dynamic.literal()
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIWaitingLoadingOptions]
   }

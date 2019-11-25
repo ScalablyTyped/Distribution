@@ -15,7 +15,7 @@ object MessageAttachmentIconDescriptorBase {
   @scala.inline
   def apply(tooltip: String | HTMLElement, iconClass: String = null, onClick: () => Unit = null): MessageAttachmentIconDescriptorBase = {
     val __obj = js.Dynamic.literal(tooltip = tooltip.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     __obj.asInstanceOf[MessageAttachmentIconDescriptorBase]
   }

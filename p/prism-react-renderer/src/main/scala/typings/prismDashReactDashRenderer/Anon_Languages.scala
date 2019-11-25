@@ -15,8 +15,8 @@ trait Anon_Languages extends js.Object {
 object Anon_Languages {
   @scala.inline
   def apply(style: PrismThemeEntry, types: js.Array[String], languages: js.Array[Language] = null): Anon_Languages = {
-    val __obj = js.Dynamic.literal(style = style, types = types)
-    if (languages != null) __obj.updateDynamic("languages")(languages)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
+    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Languages]
   }
 }

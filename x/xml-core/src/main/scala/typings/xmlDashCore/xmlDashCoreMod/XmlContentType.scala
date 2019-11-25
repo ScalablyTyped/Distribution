@@ -36,9 +36,9 @@ object XmlContentType {
     required: js.UndefOr[Boolean] = js.undefined
   ): XmlContentType[T] = {
     val __obj = js.Dynamic.literal()
-    if (converter != null) __obj.updateDynamic("converter")(converter)
+    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlContentType[T]]
   }
 }

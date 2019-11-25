@@ -14,9 +14,9 @@ object GridColumnCommandItemText {
   @scala.inline
   def apply(cancel: String = null, edit: String = null, update: String = null): GridColumnCommandItemText = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (edit != null) __obj.updateDynamic("edit")(edit)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnCommandItemText]
   }
 }

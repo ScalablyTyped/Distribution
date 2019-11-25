@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait WindowsInformationProtectionEnforcementLevel extends js.Object
 
+object WindowsInformationProtectionEnforcementLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def encryptAndAuditOnly: typings.microsoftDashGraph.microsoftDashGraphStrings.encryptAndAuditOnly = this.cast("encryptAndAuditOnly")
+  @scala.inline
+  def encryptAuditAndBlock: typings.microsoftDashGraph.microsoftDashGraphStrings.encryptAuditAndBlock = this.cast("encryptAuditAndBlock")
+  @scala.inline
+  def encryptAuditAndPrompt: typings.microsoftDashGraph.microsoftDashGraphStrings.encryptAuditAndPrompt = this.cast("encryptAuditAndPrompt")
+  @scala.inline
+  def noProtection: typings.microsoftDashGraph.microsoftDashGraphStrings.noProtection = this.cast("noProtection")
+}
+

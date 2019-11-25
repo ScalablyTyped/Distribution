@@ -28,7 +28,7 @@ object ListDescriptor {
     unique_name: String,
     url: String
   ): ListDescriptor = {
-    val __obj = js.Dynamic.literal(date_expires = date_expires, date_updated = date_updated, last_event_id = last_event_id, links = links, revision = revision, sid = sid, unique_name = unique_name, url = url)
+    val __obj = js.Dynamic.literal(date_expires = date_expires.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], last_event_id = last_event_id.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListDescriptor]
   }

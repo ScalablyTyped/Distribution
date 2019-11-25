@@ -18,9 +18,9 @@ object MakeBucketPrivateOptions {
     userProject: String = null
   ): MakeBucketPrivateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(includeFiles)) __obj.updateDynamic("includeFiles")(includeFiles)
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeFiles)) __obj.updateDynamic("includeFiles")(includeFiles.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeBucketPrivateOptions]
   }
 }

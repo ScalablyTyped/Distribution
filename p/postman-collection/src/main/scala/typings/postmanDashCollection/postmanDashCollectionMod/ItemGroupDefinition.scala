@@ -22,13 +22,13 @@ object ItemGroupDefinition {
     name: String = null
   ): ItemGroupDefinition = {
     val __obj = js.Dynamic.literal()
-    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemGroupDefinition]
   }
 }

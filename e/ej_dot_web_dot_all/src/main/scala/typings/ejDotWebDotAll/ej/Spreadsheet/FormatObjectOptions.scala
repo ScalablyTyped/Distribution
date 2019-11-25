@@ -32,11 +32,11 @@ object FormatObjectOptions {
     `type`: String = null
   ): FormatObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces)
-    if (formatStr != null) __obj.updateDynamic("formatStr")(formatStr)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (thousandSeparator != null) __obj.updateDynamic("thousandSeparator")(thousandSeparator)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
+    if (formatStr != null) __obj.updateDynamic("formatStr")(formatStr.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (thousandSeparator != null) __obj.updateDynamic("thousandSeparator")(thousandSeparator.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatObjectOptions]
   }
 }

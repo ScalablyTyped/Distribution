@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AppStateEvent extends js.Object
 
+object AppStateEvent {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def change: typings.reactDashNative.reactDashNativeStrings.change = this.cast("change")
+  @scala.inline
+  def memoryWarning: typings.reactDashNative.reactDashNativeStrings.memoryWarning = this.cast("memoryWarning")
+}
+

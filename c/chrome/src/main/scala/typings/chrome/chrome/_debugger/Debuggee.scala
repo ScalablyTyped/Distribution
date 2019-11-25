@@ -25,9 +25,9 @@ object Debuggee {
   @scala.inline
   def apply(extensionId: String = null, tabId: Int | Double = null, targetId: String = null): Debuggee = {
     val __obj = js.Dynamic.literal()
-    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId)
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Debuggee]
   }
 }

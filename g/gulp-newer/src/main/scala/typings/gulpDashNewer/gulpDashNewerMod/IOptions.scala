@@ -22,8 +22,8 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(dest: String, ext: String = null, map: /* relativePath */ String => String = null): IOptions = {
-    val __obj = js.Dynamic.literal(dest = dest)
-    if (ext != null) __obj.updateDynamic("ext")(ext)
+    val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     __obj.asInstanceOf[IOptions]
   }

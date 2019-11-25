@@ -30,7 +30,7 @@ object VisualVariablesResultSize {
     sizeScheme: SizeScheme,
     visualVariables: js.Array[SizeVariable]
   ): VisualVariablesResultSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme, visualVariables = visualVariables)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme.asInstanceOf[js.Any], visualVariables = visualVariables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VisualVariablesResultSize]
   }

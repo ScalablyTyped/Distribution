@@ -16,8 +16,8 @@ object Options {
     rejectPublicSuffixes: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(looseMode)) __obj.updateDynamic("looseMode")(looseMode)
-    if (!js.isUndefined(rejectPublicSuffixes)) __obj.updateDynamic("rejectPublicSuffixes")(rejectPublicSuffixes)
+    if (!js.isUndefined(looseMode)) __obj.updateDynamic("looseMode")(looseMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectPublicSuffixes)) __obj.updateDynamic("rejectPublicSuffixes")(rejectPublicSuffixes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

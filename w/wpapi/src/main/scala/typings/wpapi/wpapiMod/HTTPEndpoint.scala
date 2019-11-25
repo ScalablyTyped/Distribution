@@ -13,7 +13,7 @@ trait HTTPEndpoint extends js.Object {
 object HTTPEndpoint {
   @scala.inline
   def apply(args: StringDictionary[HTTPArgument], methods: js.Array[HTTPMethod]): HTTPEndpoint = {
-    val __obj = js.Dynamic.literal(args = args, methods = methods)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HTTPEndpoint]
   }

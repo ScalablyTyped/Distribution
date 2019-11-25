@@ -13,7 +13,7 @@ trait ClassifyInput extends js.Object {
 object ClassifyInput {
   @scala.inline
   def apply(text: String): ClassifyInput = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClassifyInput]
   }

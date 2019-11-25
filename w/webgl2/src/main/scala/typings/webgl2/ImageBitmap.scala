@@ -13,7 +13,7 @@ trait ImageBitmap extends js.Object {
 object ImageBitmap {
   @scala.inline
   def apply(close: () => Unit, height: Double, width: Double): ImageBitmap = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), height = height, width = width)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImageBitmap]
   }

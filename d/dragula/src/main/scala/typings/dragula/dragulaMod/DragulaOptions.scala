@@ -56,17 +56,17 @@ object DragulaOptions {
   ): DragulaOptions = {
     val __obj = js.Dynamic.literal()
     if (accepts != null) __obj.updateDynamic("accepts")(js.Any.fromFunction4(accepts))
-    if (containers != null) __obj.updateDynamic("containers")(containers)
+    if (containers != null) __obj.updateDynamic("containers")(containers.asInstanceOf[js.Any])
     if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (!js.isUndefined(ignoreInputTextSelection)) __obj.updateDynamic("ignoreInputTextSelection")(ignoreInputTextSelection)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreInputTextSelection)) __obj.updateDynamic("ignoreInputTextSelection")(ignoreInputTextSelection.asInstanceOf[js.Any])
     if (invalid != null) __obj.updateDynamic("invalid")(js.Any.fromFunction2(invalid))
     if (isContainer != null) __obj.updateDynamic("isContainer")(js.Any.fromFunction1(isContainer))
-    if (mirrorContainer != null) __obj.updateDynamic("mirrorContainer")(mirrorContainer)
+    if (mirrorContainer != null) __obj.updateDynamic("mirrorContainer")(mirrorContainer.asInstanceOf[js.Any])
     if (moves != null) __obj.updateDynamic("moves")(js.Any.fromFunction4(moves))
-    if (!js.isUndefined(removeOnSpill)) __obj.updateDynamic("removeOnSpill")(removeOnSpill)
-    if (!js.isUndefined(revertOnSpill)) __obj.updateDynamic("revertOnSpill")(revertOnSpill)
+    if (!js.isUndefined(removeOnSpill)) __obj.updateDynamic("removeOnSpill")(removeOnSpill.asInstanceOf[js.Any])
+    if (!js.isUndefined(revertOnSpill)) __obj.updateDynamic("revertOnSpill")(revertOnSpill.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragulaOptions]
   }
 }

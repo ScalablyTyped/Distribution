@@ -15,8 +15,8 @@ object EditAllOrderDealsResponse {
   @scala.inline
   def apply(deals: js.Array[MarketplaceDeal] = null, orderRevisionNumber: String = null): EditAllOrderDealsResponse = {
     val __obj = js.Dynamic.literal()
-    if (deals != null) __obj.updateDynamic("deals")(deals)
-    if (orderRevisionNumber != null) __obj.updateDynamic("orderRevisionNumber")(orderRevisionNumber)
+    if (deals != null) __obj.updateDynamic("deals")(deals.asInstanceOf[js.Any])
+    if (orderRevisionNumber != null) __obj.updateDynamic("orderRevisionNumber")(orderRevisionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditAllOrderDealsResponse]
   }
 }

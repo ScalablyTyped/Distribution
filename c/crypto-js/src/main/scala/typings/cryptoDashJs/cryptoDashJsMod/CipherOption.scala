@@ -21,10 +21,10 @@ object CipherOption {
     padding: Padding = null
   ): CipherOption = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (iv != null) __obj.updateDynamic("iv")(iv)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CipherOption]
   }
 }

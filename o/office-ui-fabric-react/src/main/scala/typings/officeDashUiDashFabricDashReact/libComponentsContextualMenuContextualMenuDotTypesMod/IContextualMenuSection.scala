@@ -37,12 +37,12 @@ object IContextualMenuSection {
     title: String = null,
     topDivider: js.UndefOr[Boolean] = js.undefined
   ): IContextualMenuSection = {
-    val __obj = js.Dynamic.literal(items = items)
-    if (!js.isUndefined(bottomDivider)) __obj.updateDynamic("bottomDivider")(bottomDivider)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (!js.isUndefined(bottomDivider)) __obj.updateDynamic("bottomDivider")(bottomDivider.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(topDivider)) __obj.updateDynamic("topDivider")(topDivider)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(topDivider)) __obj.updateDynamic("topDivider")(topDivider.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuSection]
   }
 }

@@ -44,8 +44,8 @@ object Rectangle {
     val __obj = js.Dynamic.literal()
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rectangle]

@@ -33,7 +33,7 @@ object Barcodeformat {
     UPC_A: Boolean,
     UPC_E: Boolean
   ): Barcodeformat = {
-    val __obj = js.Dynamic.literal(AZTEC = AZTEC, CODE_128 = CODE_128, CODE_39 = CODE_39, DATA_MATRIX = DATA_MATRIX, EAN_13 = EAN_13, EAN_8 = EAN_8, ITF = ITF, PDF_417 = PDF_417, QR_CODE = QR_CODE, UPC_A = UPC_A, UPC_E = UPC_E)
+    val __obj = js.Dynamic.literal(AZTEC = AZTEC.asInstanceOf[js.Any], CODE_128 = CODE_128.asInstanceOf[js.Any], CODE_39 = CODE_39.asInstanceOf[js.Any], DATA_MATRIX = DATA_MATRIX.asInstanceOf[js.Any], EAN_13 = EAN_13.asInstanceOf[js.Any], EAN_8 = EAN_8.asInstanceOf[js.Any], ITF = ITF.asInstanceOf[js.Any], PDF_417 = PDF_417.asInstanceOf[js.Any], QR_CODE = QR_CODE.asInstanceOf[js.Any], UPC_A = UPC_A.asInstanceOf[js.Any], UPC_E = UPC_E.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Barcodeformat]
   }

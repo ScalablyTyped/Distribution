@@ -15,8 +15,8 @@ object FetchThreatListUpdatesRequest {
   @scala.inline
   def apply(client: ClientInfo = null, listUpdateRequests: js.Array[ListUpdateRequest] = null): FetchThreatListUpdatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (listUpdateRequests != null) __obj.updateDynamic("listUpdateRequests")(listUpdateRequests)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (listUpdateRequests != null) __obj.updateDynamic("listUpdateRequests")(listUpdateRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchThreatListUpdatesRequest]
   }
 }

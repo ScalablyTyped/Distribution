@@ -61,7 +61,7 @@ object _truncate_singlets {
     link: Boolean,
     param: Boolean
   ): _truncate_singlets = {
-    val __obj = js.Dynamic.literal(area = area, base = base, br = br, col = col, hr = hr, img = img, input = input, link = link, param = param)
+    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_truncate_singlets]
   }

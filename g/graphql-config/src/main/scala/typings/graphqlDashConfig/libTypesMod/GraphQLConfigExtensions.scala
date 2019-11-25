@@ -18,8 +18,8 @@ object GraphQLConfigExtensions {
     endpoints: GraphQLConfigEnpointsData = null
   ): GraphQLConfigExtensions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLConfigExtensions]
   }
 }

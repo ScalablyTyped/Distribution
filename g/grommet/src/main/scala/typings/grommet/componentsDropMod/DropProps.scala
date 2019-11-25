@@ -42,16 +42,16 @@ object DropProps {
     target: js.Object = null
   ): DropProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(js.Any.fromFunction1(onClickOutside))
     if (onEsc != null) __obj.updateDynamic("onEsc")(js.Any.fromFunction1(onEsc))
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
-    if (!js.isUndefined(restrictFocus)) __obj.updateDynamic("restrictFocus")(restrictFocus)
-    if (!js.isUndefined(stretch)) __obj.updateDynamic("stretch")(stretch)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictFocus)) __obj.updateDynamic("restrictFocus")(restrictFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretch)) __obj.updateDynamic("stretch")(stretch.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropProps]
   }
 }

@@ -50,11 +50,11 @@ object ResponseMetadata {
     totalRetryDelay: Int | Double = null
   ): ResponseMetadata = {
     val __obj = js.Dynamic.literal()
-    if (cfId != null) __obj.updateDynamic("cfId")(cfId)
-    if (extendedRequestId != null) __obj.updateDynamic("extendedRequestId")(extendedRequestId)
-    if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders)
+    if (cfId != null) __obj.updateDynamic("cfId")(cfId.asInstanceOf[js.Any])
+    if (extendedRequestId != null) __obj.updateDynamic("extendedRequestId")(extendedRequestId.asInstanceOf[js.Any])
+    if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders.asInstanceOf[js.Any])
     if (httpStatusCode != null) __obj.updateDynamic("httpStatusCode")(httpStatusCode.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (totalRetryDelay != null) __obj.updateDynamic("totalRetryDelay")(totalRetryDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseMetadata]

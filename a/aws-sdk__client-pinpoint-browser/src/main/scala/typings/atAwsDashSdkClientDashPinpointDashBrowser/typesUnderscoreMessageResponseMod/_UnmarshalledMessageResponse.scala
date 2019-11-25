@@ -29,10 +29,10 @@ object _UnmarshalledMessageResponse {
     Result: StringDictionary[_UnmarshalledMessageResult] = null
   ): _UnmarshalledMessageResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (EndpointResult != null) __obj.updateDynamic("EndpointResult")(EndpointResult)
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
-    if (Result != null) __obj.updateDynamic("Result")(Result)
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (EndpointResult != null) __obj.updateDynamic("EndpointResult")(EndpointResult.asInstanceOf[js.Any])
+    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
+    if (Result != null) __obj.updateDynamic("Result")(Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledMessageResponse]
   }
 }

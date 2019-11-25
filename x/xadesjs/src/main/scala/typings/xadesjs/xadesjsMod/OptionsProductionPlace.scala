@@ -15,10 +15,10 @@ object OptionsProductionPlace {
   @scala.inline
   def apply(city: String = null, code: String = null, country: String = null, state: String = null): OptionsProductionPlace = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsProductionPlace]
   }
 }

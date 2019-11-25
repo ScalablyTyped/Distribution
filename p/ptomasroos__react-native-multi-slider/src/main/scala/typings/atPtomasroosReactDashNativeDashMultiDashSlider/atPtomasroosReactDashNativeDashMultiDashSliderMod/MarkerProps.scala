@@ -26,7 +26,7 @@ object MarkerProps {
     valuePrefix: String,
     valueSuffix: String
   ): MarkerProps = {
-    val __obj = js.Dynamic.literal(currentValue = currentValue, enabled = enabled, markerStyle = markerStyle, pressed = pressed, pressedMarkerStyle = pressedMarkerStyle, valuePrefix = valuePrefix, valueSuffix = valueSuffix)
+    val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], markerStyle = markerStyle.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any], pressedMarkerStyle = pressedMarkerStyle.asInstanceOf[js.Any], valuePrefix = valuePrefix.asInstanceOf[js.Any], valueSuffix = valueSuffix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MarkerProps]
   }

@@ -14,7 +14,7 @@ trait DOMEventListener extends js.Object {
 object DOMEventListener {
   @scala.inline
   def apply(eventName: String, listener: () => js.Any, target: HTMLElement): DOMEventListener = {
-    val __obj = js.Dynamic.literal(eventName = eventName, listener = js.Any.fromFunction0(listener), target = target)
+    val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], listener = js.Any.fromFunction0(listener), target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DOMEventListener]
   }

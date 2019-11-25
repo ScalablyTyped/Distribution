@@ -28,13 +28,13 @@ object Workbook {
     worksheets: js.Array[WorkbookWorksheet] = null
   ): Workbook = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (functions != null) __obj.updateDynamic("functions")(functions)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (names != null) __obj.updateDynamic("names")(names)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
-    if (worksheets != null) __obj.updateDynamic("worksheets")(worksheets)
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (functions != null) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
+    if (worksheets != null) __obj.updateDynamic("worksheets")(worksheets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Workbook]
   }
 }

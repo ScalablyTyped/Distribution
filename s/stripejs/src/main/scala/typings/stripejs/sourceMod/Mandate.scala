@@ -22,7 +22,7 @@ object Mandate {
   @scala.inline
   def apply(acceptance: Acceptance = null, notification_method: email | manual | none = null): Mandate = {
     val __obj = js.Dynamic.literal()
-    if (acceptance != null) __obj.updateDynamic("acceptance")(acceptance)
+    if (acceptance != null) __obj.updateDynamic("acceptance")(acceptance.asInstanceOf[js.Any])
     if (notification_method != null) __obj.updateDynamic("notification_method")(notification_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mandate]
   }

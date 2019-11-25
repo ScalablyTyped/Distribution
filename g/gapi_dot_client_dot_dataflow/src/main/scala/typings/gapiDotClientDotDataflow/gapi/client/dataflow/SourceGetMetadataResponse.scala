@@ -13,7 +13,7 @@ object SourceGetMetadataResponse {
   @scala.inline
   def apply(metadata: SourceMetadata = null): SourceGetMetadataResponse = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceGetMetadataResponse]
   }
 }

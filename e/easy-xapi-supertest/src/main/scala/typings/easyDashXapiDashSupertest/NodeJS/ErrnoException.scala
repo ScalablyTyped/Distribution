@@ -23,12 +23,12 @@ object ErrnoException {
     stack: String = null,
     syscall: String = null
   ): ErrnoException = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
-    if (code != null) __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (errno != null) __obj.updateDynamic("errno")(errno.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (syscall != null) __obj.updateDynamic("syscall")(syscall)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (syscall != null) __obj.updateDynamic("syscall")(syscall.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrnoException]
   }
 }

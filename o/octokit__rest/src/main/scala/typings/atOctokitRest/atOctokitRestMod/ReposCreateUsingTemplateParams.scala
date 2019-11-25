@@ -35,10 +35,10 @@ object ReposCreateUsingTemplateParams {
     owner: String = null,
     `private`: js.UndefOr[Boolean] = js.undefined
   ): ReposCreateUsingTemplateParams = {
-    val __obj = js.Dynamic.literal(name = name, template_owner = template_owner, template_repo = template_repo)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], template_owner = template_owner.asInstanceOf[js.Any], template_repo = template_repo.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateUsingTemplateParams]
   }
 }

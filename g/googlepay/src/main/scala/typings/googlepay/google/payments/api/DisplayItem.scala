@@ -14,9 +14,9 @@ trait DisplayItem extends js.Object {
 object DisplayItem {
   @scala.inline
   def apply(label: String, price: String, `type`: DisplayItemType, status: DisplayItemStatus = null): DisplayItem = {
-    val __obj = js.Dynamic.literal(label = label, price = price)
-    __obj.updateDynamic("type")(`type`)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayItem]
   }
 }

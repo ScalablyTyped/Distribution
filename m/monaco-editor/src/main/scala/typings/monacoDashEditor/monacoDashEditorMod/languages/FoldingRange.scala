@@ -25,8 +25,8 @@ trait FoldingRange extends js.Object {
 object FoldingRange {
   @scala.inline
   def apply(end: Double, start: Double, kind: FoldingRangeKind = null): FoldingRange = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoldingRange]
   }
 }

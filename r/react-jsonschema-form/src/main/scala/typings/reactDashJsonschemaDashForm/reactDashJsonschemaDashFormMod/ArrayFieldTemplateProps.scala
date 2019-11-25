@@ -49,7 +49,7 @@ object ArrayFieldTemplateProps {
     title: String,
     uiSchema: UiSchema
   ): ArrayFieldTemplateProps[T] = {
-    val __obj = js.Dynamic.literal(DescriptionField = DescriptionField, TitleField = TitleField, canAdd = canAdd, className = className, disabled = disabled, formContext = formContext, formData = formData.asInstanceOf[js.Any], idSchema = idSchema, items = items, onAddClick = js.Any.fromFunction1(onAddClick), readonly = readonly, registry = registry, required = required, schema = schema, title = title, uiSchema = uiSchema)
+    val __obj = js.Dynamic.literal(DescriptionField = DescriptionField.asInstanceOf[js.Any], TitleField = TitleField.asInstanceOf[js.Any], canAdd = canAdd.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], formContext = formContext.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], idSchema = idSchema.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], onAddClick = js.Any.fromFunction1(onAddClick), readonly = readonly.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uiSchema = uiSchema.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArrayFieldTemplateProps[T]]
   }

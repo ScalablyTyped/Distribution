@@ -26,9 +26,9 @@ object EditorChange {
     origin: String = null,
     removed: js.Array[String] = null
   ): EditorChange = {
-    val __obj = js.Dynamic.literal(from = from, text = text, to = to)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (removed != null) __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (removed != null) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorChange]
   }
 }

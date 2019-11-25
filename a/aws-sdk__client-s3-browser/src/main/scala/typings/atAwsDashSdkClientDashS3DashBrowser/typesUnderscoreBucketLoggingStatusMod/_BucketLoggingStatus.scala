@@ -16,7 +16,7 @@ object _BucketLoggingStatus {
   @scala.inline
   def apply(LoggingEnabled: _LoggingEnabled = null): _BucketLoggingStatus = {
     val __obj = js.Dynamic.literal()
-    if (LoggingEnabled != null) __obj.updateDynamic("LoggingEnabled")(LoggingEnabled)
+    if (LoggingEnabled != null) __obj.updateDynamic("LoggingEnabled")(LoggingEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BucketLoggingStatus]
   }
 }

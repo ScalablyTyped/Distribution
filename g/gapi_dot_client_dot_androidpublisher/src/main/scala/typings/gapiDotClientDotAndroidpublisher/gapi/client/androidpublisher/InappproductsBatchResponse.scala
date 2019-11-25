@@ -14,8 +14,8 @@ object InappproductsBatchResponse {
   @scala.inline
   def apply(entrys: js.Array[InappproductsBatchResponseEntry] = null, kind: String = null): InappproductsBatchResponse = {
     val __obj = js.Dynamic.literal()
-    if (entrys != null) __obj.updateDynamic("entrys")(entrys)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (entrys != null) __obj.updateDynamic("entrys")(entrys.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[InappproductsBatchResponse]
   }
 }

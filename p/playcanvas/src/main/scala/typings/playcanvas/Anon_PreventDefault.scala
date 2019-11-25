@@ -16,8 +16,8 @@ object Anon_PreventDefault {
     stopPropagation: js.UndefOr[Boolean] = js.undefined
   ): Anon_PreventDefault = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault)
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation)
+    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PreventDefault]
   }
 }

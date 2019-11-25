@@ -13,9 +13,9 @@ trait MerchantInfo extends js.Object {
 object MerchantInfo {
   @scala.inline
   def apply(merchantId: String, merchantName: String = null, merchantOrigin: String = null): MerchantInfo = {
-    val __obj = js.Dynamic.literal(merchantId = merchantId)
-    if (merchantName != null) __obj.updateDynamic("merchantName")(merchantName)
-    if (merchantOrigin != null) __obj.updateDynamic("merchantOrigin")(merchantOrigin)
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any])
+    if (merchantName != null) __obj.updateDynamic("merchantName")(merchantName.asInstanceOf[js.Any])
+    if (merchantOrigin != null) __obj.updateDynamic("merchantOrigin")(merchantOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantInfo]
   }
 }

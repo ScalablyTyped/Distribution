@@ -51,10 +51,10 @@ object PlusNativeUIPickTimeOption {
     title: String = null
   ): PlusNativeUIPickTimeOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour)
-    if (popover != null) __obj.updateDynamic("popover")(popover)
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.asInstanceOf[js.Any])
+    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIPickTimeOption]
   }
 }

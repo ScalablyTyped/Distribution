@@ -19,8 +19,8 @@ object SearchAnnotationsResponse {
   @scala.inline
   def apply(annotations: js.Array[Annotation] = null, nextPageToken: String = null): SearchAnnotationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchAnnotationsResponse]
   }
 }

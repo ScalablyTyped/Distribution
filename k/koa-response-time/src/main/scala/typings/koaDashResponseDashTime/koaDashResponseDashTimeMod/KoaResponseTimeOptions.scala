@@ -12,7 +12,7 @@ object KoaResponseTimeOptions {
   @scala.inline
   def apply(hrtime: js.UndefOr[Boolean] = js.undefined): KoaResponseTimeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hrtime)) __obj.updateDynamic("hrtime")(hrtime)
+    if (!js.isUndefined(hrtime)) __obj.updateDynamic("hrtime")(hrtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[KoaResponseTimeOptions]
   }
 }

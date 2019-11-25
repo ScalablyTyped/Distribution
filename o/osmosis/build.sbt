@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "osmosis"
-version := "1.1-dt-20181011Z-708495"
+version := "1.1-dt-20181011Z-33d459"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -28,7 +28,7 @@ object ReactionsCreateForTeamDiscussionParams {
     discussion_number: Double,
     team_id: Double
   ): ReactionsCreateForTeamDiscussionParams = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], discussion_number = discussion_number, team_id = team_id)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], discussion_number = discussion_number.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReactionsCreateForTeamDiscussionParams]
   }

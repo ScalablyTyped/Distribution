@@ -17,8 +17,8 @@ trait Anon_Datasource[K, D] extends js.Object {
 object Anon_Datasource {
   @scala.inline
   def apply[K, D](mode: edit | navigation, status: ContextStatus[K], datasource: DataProvider[K, D] = null): Anon_Datasource[K, D] = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], status = status)
-    if (datasource != null) __obj.updateDynamic("datasource")(datasource)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (datasource != null) __obj.updateDynamic("datasource")(datasource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Datasource[K, D]]
   }
 }

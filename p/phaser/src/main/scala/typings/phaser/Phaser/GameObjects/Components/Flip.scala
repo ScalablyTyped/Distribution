@@ -79,7 +79,7 @@ object Flip {
     toggleFlipX: () => Flip,
     toggleFlipY: () => Flip
   ): Flip = {
-    val __obj = js.Dynamic.literal(flipX = flipX, flipY = flipY, resetFlip = js.Any.fromFunction0(resetFlip), setFlip = js.Any.fromFunction2(setFlip), setFlipX = js.Any.fromFunction1(setFlipX), setFlipY = js.Any.fromFunction1(setFlipY), toggleFlipX = js.Any.fromFunction0(toggleFlipX), toggleFlipY = js.Any.fromFunction0(toggleFlipY))
+    val __obj = js.Dynamic.literal(flipX = flipX.asInstanceOf[js.Any], flipY = flipY.asInstanceOf[js.Any], resetFlip = js.Any.fromFunction0(resetFlip), setFlip = js.Any.fromFunction2(setFlip), setFlipX = js.Any.fromFunction1(setFlipX), setFlipY = js.Any.fromFunction1(setFlipY), toggleFlipX = js.Any.fromFunction0(toggleFlipX), toggleFlipY = js.Any.fromFunction0(toggleFlipY))
   
     __obj.asInstanceOf[Flip]
   }

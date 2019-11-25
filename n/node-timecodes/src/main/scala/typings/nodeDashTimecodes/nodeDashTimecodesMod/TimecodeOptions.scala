@@ -14,7 +14,7 @@ object TimecodeOptions {
   def apply(frameRate: Int | Double = null, ms: js.UndefOr[Boolean] = js.undefined): TimecodeOptions = {
     val __obj = js.Dynamic.literal()
     if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(ms)) __obj.updateDynamic("ms")(ms)
+    if (!js.isUndefined(ms)) __obj.updateDynamic("ms")(ms.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimecodeOptions]
   }
 }

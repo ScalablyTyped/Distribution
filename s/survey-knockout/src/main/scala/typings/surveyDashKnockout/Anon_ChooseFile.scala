@@ -41,7 +41,7 @@ object Anon_ChooseFile {
     root: String,
     wrapper: String
   ): Anon_ChooseFile = {
-    val __obj = js.Dynamic.literal(chooseFile = chooseFile, disabled = disabled, fileDecorator = fileDecorator, fileInput = fileInput, fileSign = fileSign, fileSignBottom = fileSignBottom, noFileChosen = noFileChosen, placeholderInput = placeholderInput, preview = preview, removeButton = removeButton, removeButtonBottom = removeButtonBottom, removeFile = removeFile, removeFileSvg = removeFileSvg, root = root, wrapper = wrapper)
+    val __obj = js.Dynamic.literal(chooseFile = chooseFile.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], fileDecorator = fileDecorator.asInstanceOf[js.Any], fileInput = fileInput.asInstanceOf[js.Any], fileSign = fileSign.asInstanceOf[js.Any], fileSignBottom = fileSignBottom.asInstanceOf[js.Any], noFileChosen = noFileChosen.asInstanceOf[js.Any], placeholderInput = placeholderInput.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], removeButton = removeButton.asInstanceOf[js.Any], removeButtonBottom = removeButtonBottom.asInstanceOf[js.Any], removeFile = removeFile.asInstanceOf[js.Any], removeFileSvg = removeFileSvg.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChooseFile]
   }

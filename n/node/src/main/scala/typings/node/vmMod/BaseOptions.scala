@@ -31,7 +31,7 @@ object BaseOptions {
   ): BaseOptions = {
     val __obj = js.Dynamic.literal()
     if (columnOffset != null) __obj.updateDynamic("columnOffset")(columnOffset.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (lineOffset != null) __obj.updateDynamic("lineOffset")(lineOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]
   }

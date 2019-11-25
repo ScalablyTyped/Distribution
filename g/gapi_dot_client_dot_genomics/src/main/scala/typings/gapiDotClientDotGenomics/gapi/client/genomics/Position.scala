@@ -24,9 +24,9 @@ object Position {
     reverseStrand: js.UndefOr[Boolean] = js.undefined
   ): Position = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
-    if (!js.isUndefined(reverseStrand)) __obj.updateDynamic("reverseStrand")(reverseStrand)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseStrand)) __obj.updateDynamic("reverseStrand")(reverseStrand.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
 }

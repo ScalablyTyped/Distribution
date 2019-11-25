@@ -29,10 +29,10 @@ object QueryResult {
     inlineCount: Int | Double = null,
     retrievedEntities: js.Array[Entity] = null
   ): QueryResult = {
-    val __obj = js.Dynamic.literal(httpResponse = httpResponse, query = query, results = results)
-    if (entityManager != null) __obj.updateDynamic("entityManager")(entityManager)
+    val __obj = js.Dynamic.literal(httpResponse = httpResponse.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
+    if (entityManager != null) __obj.updateDynamic("entityManager")(entityManager.asInstanceOf[js.Any])
     if (inlineCount != null) __obj.updateDynamic("inlineCount")(inlineCount.asInstanceOf[js.Any])
-    if (retrievedEntities != null) __obj.updateDynamic("retrievedEntities")(retrievedEntities)
+    if (retrievedEntities != null) __obj.updateDynamic("retrievedEntities")(retrievedEntities.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult]
   }
 }

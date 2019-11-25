@@ -14,8 +14,8 @@ trait DownloadPauseState extends js.Object {
 object DownloadPauseState {
   @scala.inline
   def apply(fileUri: String, options: DownloadOptions, url: String, resumeData: String = null): DownloadPauseState = {
-    val __obj = js.Dynamic.literal(fileUri = fileUri, options = options, url = url)
-    if (resumeData != null) __obj.updateDynamic("resumeData")(resumeData)
+    val __obj = js.Dynamic.literal(fileUri = fileUri.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (resumeData != null) __obj.updateDynamic("resumeData")(resumeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadPauseState]
   }
 }

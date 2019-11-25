@@ -15,8 +15,8 @@ trait GistsListResponseItemFilesHelloWorldRb extends js.Object {
 object GistsListResponseItemFilesHelloWorldRb {
   @scala.inline
   def apply(filename: String, language: String, raw_url: String, size: Double, `type`: String): GistsListResponseItemFilesHelloWorldRb = {
-    val __obj = js.Dynamic.literal(filename = filename, language = language, raw_url = raw_url, size = size)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], raw_url = raw_url.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsListResponseItemFilesHelloWorldRb]
   }
 }

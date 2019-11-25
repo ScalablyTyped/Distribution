@@ -13,7 +13,7 @@ object ResourceUtilizationReport {
   @scala.inline
   def apply(cpuTime: js.Array[CPUTime] = null): ResourceUtilizationReport = {
     val __obj = js.Dynamic.literal()
-    if (cpuTime != null) __obj.updateDynamic("cpuTime")(cpuTime)
+    if (cpuTime != null) __obj.updateDynamic("cpuTime")(cpuTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceUtilizationReport]
   }
 }

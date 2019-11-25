@@ -27,7 +27,7 @@ object VisitItem {
     visitId: String,
     visitTime: Int | Double = null
   ): VisitItem = {
-    val __obj = js.Dynamic.literal(id = id, referringVisitId = referringVisitId, transition = transition, visitId = visitId)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], referringVisitId = referringVisitId.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], visitId = visitId.asInstanceOf[js.Any])
     if (visitTime != null) __obj.updateDynamic("visitTime")(visitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisitItem]
   }

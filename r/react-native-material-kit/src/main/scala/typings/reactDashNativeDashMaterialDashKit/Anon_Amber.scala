@@ -61,7 +61,7 @@ object Anon_Amber {
     Transparent: String,
     Yellow: String
   ): Anon_Amber = {
-    val __obj = js.Dynamic.literal(Amber = Amber, Blue = Blue, BlueGrey = BlueGrey, Brown = Brown, Cyan = Cyan, DeepOrange = DeepOrange, DeepPurple = DeepPurple, Green = Green, Grey = Grey, Indigo = Indigo, LightBlue = LightBlue, LightGreen = LightGreen, Lime = Lime, Orange = Orange, Pink = Pink, Purple = Purple, RGBIndigo = RGBIndigo, RGBPink = RGBPink, RGBPurple = RGBPurple, RGBTeal = RGBTeal, Red = Red, Silver = Silver, Teal = Teal, Transparent = Transparent, Yellow = Yellow)
+    val __obj = js.Dynamic.literal(Amber = Amber.asInstanceOf[js.Any], Blue = Blue.asInstanceOf[js.Any], BlueGrey = BlueGrey.asInstanceOf[js.Any], Brown = Brown.asInstanceOf[js.Any], Cyan = Cyan.asInstanceOf[js.Any], DeepOrange = DeepOrange.asInstanceOf[js.Any], DeepPurple = DeepPurple.asInstanceOf[js.Any], Green = Green.asInstanceOf[js.Any], Grey = Grey.asInstanceOf[js.Any], Indigo = Indigo.asInstanceOf[js.Any], LightBlue = LightBlue.asInstanceOf[js.Any], LightGreen = LightGreen.asInstanceOf[js.Any], Lime = Lime.asInstanceOf[js.Any], Orange = Orange.asInstanceOf[js.Any], Pink = Pink.asInstanceOf[js.Any], Purple = Purple.asInstanceOf[js.Any], RGBIndigo = RGBIndigo.asInstanceOf[js.Any], RGBPink = RGBPink.asInstanceOf[js.Any], RGBPurple = RGBPurple.asInstanceOf[js.Any], RGBTeal = RGBTeal.asInstanceOf[js.Any], Red = Red.asInstanceOf[js.Any], Silver = Silver.asInstanceOf[js.Any], Teal = Teal.asInstanceOf[js.Any], Transparent = Transparent.asInstanceOf[js.Any], Yellow = Yellow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Amber]
   }

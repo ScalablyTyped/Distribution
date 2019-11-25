@@ -20,7 +20,7 @@ trait Anon_Cmyk extends js.Object {
 object Anon_Cmyk {
   @scala.inline
   def apply(cmyk: CMYK, hsl: HSL, hsv: HSV, lab: LAB, rgb: RGB): Anon_Cmyk = {
-    val __obj = js.Dynamic.literal(cmyk = cmyk, hsl = hsl, hsv = hsv, lab = lab, rgb = rgb)
+    val __obj = js.Dynamic.literal(cmyk = cmyk.asInstanceOf[js.Any], hsl = hsl.asInstanceOf[js.Any], hsv = hsv.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cmyk]
   }

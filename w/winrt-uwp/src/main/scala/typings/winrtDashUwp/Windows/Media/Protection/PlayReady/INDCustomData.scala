@@ -15,7 +15,7 @@ trait INDCustomData extends js.Object {
 object INDCustomData {
   @scala.inline
   def apply(customData: Double, customDataTypeID: Double): INDCustomData = {
-    val __obj = js.Dynamic.literal(customData = customData, customDataTypeID = customDataTypeID)
+    val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], customDataTypeID = customDataTypeID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INDCustomData]
   }

@@ -46,9 +46,9 @@ object Anon_AEC {
     ANS: js.UndefOr[Boolean] = js.undefined
   ): Anon_AEC = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AEC)) __obj.updateDynamic("AEC")(AEC)
-    if (!js.isUndefined(AGC)) __obj.updateDynamic("AGC")(AGC)
-    if (!js.isUndefined(ANS)) __obj.updateDynamic("ANS")(ANS)
+    if (!js.isUndefined(AEC)) __obj.updateDynamic("AEC")(AEC.asInstanceOf[js.Any])
+    if (!js.isUndefined(AGC)) __obj.updateDynamic("AGC")(AGC.asInstanceOf[js.Any])
+    if (!js.isUndefined(ANS)) __obj.updateDynamic("ANS")(ANS.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AEC]
   }
 }

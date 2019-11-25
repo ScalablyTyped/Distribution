@@ -137,8 +137,8 @@ object ServiceSpec {
     sessionAffinityConfig: SessionAffinityConfig,
     `type`: String
   ): ServiceSpec = {
-    val __obj = js.Dynamic.literal(clusterIP = clusterIP, externalIPs = externalIPs, externalName = externalName, externalTrafficPolicy = externalTrafficPolicy, healthCheckNodePort = healthCheckNodePort, ipFamily = ipFamily, loadBalancerIP = loadBalancerIP, loadBalancerSourceRanges = loadBalancerSourceRanges, ports = ports, publishNotReadyAddresses = publishNotReadyAddresses, selector = selector, sessionAffinity = sessionAffinity, sessionAffinityConfig = sessionAffinityConfig)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(clusterIP = clusterIP.asInstanceOf[js.Any], externalIPs = externalIPs.asInstanceOf[js.Any], externalName = externalName.asInstanceOf[js.Any], externalTrafficPolicy = externalTrafficPolicy.asInstanceOf[js.Any], healthCheckNodePort = healthCheckNodePort.asInstanceOf[js.Any], ipFamily = ipFamily.asInstanceOf[js.Any], loadBalancerIP = loadBalancerIP.asInstanceOf[js.Any], loadBalancerSourceRanges = loadBalancerSourceRanges.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any], publishNotReadyAddresses = publishNotReadyAddresses.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], sessionAffinity = sessionAffinity.asInstanceOf[js.Any], sessionAffinityConfig = sessionAffinityConfig.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceSpec]
   }
 }

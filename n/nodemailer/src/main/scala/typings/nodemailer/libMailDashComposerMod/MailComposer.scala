@@ -28,7 +28,7 @@ object MailComposer {
     mail: Options,
     message: typings.nodemailer.libMimeDashNodeMod.^  | `false`
   ): MailComposer = {
-    val __obj = js.Dynamic.literal(compile = js.Any.fromFunction0(compile), getAlternatives = js.Any.fromFunction0(getAlternatives), getAttachments = js.Any.fromFunction1(getAttachments), mail = mail, message = message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compile = js.Any.fromFunction0(compile), getAlternatives = js.Any.fromFunction0(getAlternatives), getAttachments = js.Any.fromFunction1(getAttachments), mail = mail.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MailComposer]
   }

@@ -28,14 +28,14 @@ object Measure {
     uniqueName: String = null
   ): Measure = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation)
-    if (availableAggregations != null) __obj.updateDynamic("availableAggregations")(availableAggregations)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (grandTotalCaption != null) __obj.updateDynamic("grandTotalCaption")(grandTotalCaption)
-    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation.asInstanceOf[js.Any])
+    if (availableAggregations != null) __obj.updateDynamic("availableAggregations")(availableAggregations.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (grandTotalCaption != null) __obj.updateDynamic("grandTotalCaption")(grandTotalCaption.asInstanceOf[js.Any])
+    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Measure]
   }
 }

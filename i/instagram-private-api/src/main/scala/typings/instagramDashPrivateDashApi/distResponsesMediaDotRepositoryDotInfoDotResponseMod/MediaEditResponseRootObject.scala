@@ -12,7 +12,7 @@ trait MediaEditResponseRootObject extends js.Object {
 object MediaEditResponseRootObject {
   @scala.inline
   def apply(media: MediaInfoResponseItemsItem, status: String): MediaEditResponseRootObject = {
-    val __obj = js.Dynamic.literal(media = media, status = status)
+    val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaEditResponseRootObject]
   }

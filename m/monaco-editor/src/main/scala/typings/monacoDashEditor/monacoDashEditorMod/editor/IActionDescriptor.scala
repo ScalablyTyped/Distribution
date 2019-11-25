@@ -58,12 +58,12 @@ object IActionDescriptor {
     keybindings: js.Array[Double] = null,
     precondition: String = null
   ): IActionDescriptor = {
-    val __obj = js.Dynamic.literal(id = id, label = label, run = js.Any.fromFunction1(run))
-    if (contextMenuGroupId != null) __obj.updateDynamic("contextMenuGroupId")(contextMenuGroupId)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], run = js.Any.fromFunction1(run))
+    if (contextMenuGroupId != null) __obj.updateDynamic("contextMenuGroupId")(contextMenuGroupId.asInstanceOf[js.Any])
     if (contextMenuOrder != null) __obj.updateDynamic("contextMenuOrder")(contextMenuOrder.asInstanceOf[js.Any])
-    if (keybindingContext != null) __obj.updateDynamic("keybindingContext")(keybindingContext)
-    if (keybindings != null) __obj.updateDynamic("keybindings")(keybindings)
-    if (precondition != null) __obj.updateDynamic("precondition")(precondition)
+    if (keybindingContext != null) __obj.updateDynamic("keybindingContext")(keybindingContext.asInstanceOf[js.Any])
+    if (keybindings != null) __obj.updateDynamic("keybindings")(keybindings.asInstanceOf[js.Any])
+    if (precondition != null) __obj.updateDynamic("precondition")(precondition.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActionDescriptor]
   }
 }

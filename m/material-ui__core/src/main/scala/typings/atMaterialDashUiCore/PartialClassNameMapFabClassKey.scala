@@ -33,16 +33,16 @@ object PartialClassNameMapFabClassKey {
     sizeSmall: String = null
   ): PartialClassNameMapFabClassKey = {
     val __obj = js.Dynamic.literal()
-    if (colorInherit != null) __obj.updateDynamic("colorInherit")(colorInherit)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (extended != null) __obj.updateDynamic("extended")(extended)
-    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary)
-    if (sizeMedium != null) __obj.updateDynamic("sizeMedium")(sizeMedium)
-    if (sizeSmall != null) __obj.updateDynamic("sizeSmall")(sizeSmall)
+    if (colorInherit != null) __obj.updateDynamic("colorInherit")(colorInherit.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (extended != null) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])
+    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (sizeMedium != null) __obj.updateDynamic("sizeMedium")(sizeMedium.asInstanceOf[js.Any])
+    if (sizeSmall != null) __obj.updateDynamic("sizeSmall")(sizeSmall.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapFabClassKey]
   }
 }

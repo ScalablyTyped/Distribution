@@ -37,9 +37,9 @@ object _UnmarshalledQueueConfigurationDeprecated {
   ): _UnmarshalledQueueConfigurationDeprecated = {
     val __obj = js.Dynamic.literal()
     if (Event != null) __obj.updateDynamic("Event")(Event.asInstanceOf[js.Any])
-    if (Events != null) __obj.updateDynamic("Events")(Events)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Queue != null) __obj.updateDynamic("Queue")(Queue)
+    if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledQueueConfigurationDeprecated]
   }
 }

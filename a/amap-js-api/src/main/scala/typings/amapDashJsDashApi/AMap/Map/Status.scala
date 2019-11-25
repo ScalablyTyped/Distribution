@@ -65,7 +65,7 @@ object Status {
     touchZoom: Boolean,
     zoomEnable: Boolean
   ): Status = {
-    val __obj = js.Dynamic.literal(animateEnable = animateEnable, doubleClickZoom = doubleClickZoom, dragEnable = dragEnable, isHotspot = isHotspot, jogEnable = jogEnable, keyboardEnable = keyboardEnable, pitchEnable = pitchEnable, resizeEnable = resizeEnable, rotateEnable = rotateEnable, scrollWheel = scrollWheel, touchZoom = touchZoom, zoomEnable = zoomEnable)
+    val __obj = js.Dynamic.literal(animateEnable = animateEnable.asInstanceOf[js.Any], doubleClickZoom = doubleClickZoom.asInstanceOf[js.Any], dragEnable = dragEnable.asInstanceOf[js.Any], isHotspot = isHotspot.asInstanceOf[js.Any], jogEnable = jogEnable.asInstanceOf[js.Any], keyboardEnable = keyboardEnable.asInstanceOf[js.Any], pitchEnable = pitchEnable.asInstanceOf[js.Any], resizeEnable = resizeEnable.asInstanceOf[js.Any], rotateEnable = rotateEnable.asInstanceOf[js.Any], scrollWheel = scrollWheel.asInstanceOf[js.Any], touchZoom = touchZoom.asInstanceOf[js.Any], zoomEnable = zoomEnable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Status]
   }

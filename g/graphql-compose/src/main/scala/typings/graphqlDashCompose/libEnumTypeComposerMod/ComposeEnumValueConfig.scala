@@ -24,11 +24,11 @@ object ComposeEnumValueConfig {
     value: js.Any = null
   ): ComposeEnumValueConfig = {
     val __obj = js.Dynamic.literal()
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode)
-    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposeEnumValueConfig]
   }
 }

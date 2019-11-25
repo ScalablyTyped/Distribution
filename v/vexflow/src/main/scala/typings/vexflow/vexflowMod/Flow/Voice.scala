@@ -12,9 +12,3 @@ class Voice protected ()
   def this(time: Anon_Beatvalue) = this()
 }
 
-@JSImport("vexflow", "Flow.Voice")
-@js.native
-object Voice extends js.Object {
-  type Mode = typings.vexflow.Vex.Flow.Voice.Mode
-}
-

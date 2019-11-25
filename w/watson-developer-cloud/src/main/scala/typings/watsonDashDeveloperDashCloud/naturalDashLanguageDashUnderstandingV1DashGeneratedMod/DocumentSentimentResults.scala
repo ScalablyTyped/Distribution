@@ -16,7 +16,7 @@ object DocumentSentimentResults {
   @scala.inline
   def apply(label: String = null, score: Int | Double = null): DocumentSentimentResults = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSentimentResults]
   }

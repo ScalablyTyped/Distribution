@@ -16,8 +16,8 @@ object Anon_RequestVertexNormals {
     requestWaterMask: js.UndefOr[Boolean] = js.undefined
   ): Anon_RequestVertexNormals = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(requestVertexNormals)) __obj.updateDynamic("requestVertexNormals")(requestVertexNormals)
-    if (!js.isUndefined(requestWaterMask)) __obj.updateDynamic("requestWaterMask")(requestWaterMask)
+    if (!js.isUndefined(requestVertexNormals)) __obj.updateDynamic("requestVertexNormals")(requestVertexNormals.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestWaterMask)) __obj.updateDynamic("requestWaterMask")(requestWaterMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RequestVertexNormals]
   }
 }

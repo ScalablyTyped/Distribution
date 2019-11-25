@@ -34,16 +34,16 @@ object JQueryCLEditorOptions {
     width: Int | Double = null
   ): JQueryCLEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (controls != null) __obj.updateDynamic("controls")(controls)
-    if (docCSSFile != null) __obj.updateDynamic("docCSSFile")(docCSSFile)
-    if (docType != null) __obj.updateDynamic("docType")(docType)
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts)
+    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (docCSSFile != null) __obj.updateDynamic("docCSSFile")(docCSSFile.asInstanceOf[js.Any])
+    if (docType != null) __obj.updateDynamic("docType")(docType.asInstanceOf[js.Any])
+    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (!js.isUndefined(useCSS)) __obj.updateDynamic("useCSS")(useCSS)
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCSS)) __obj.updateDynamic("useCSS")(useCSS.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryCLEditorOptions]
   }

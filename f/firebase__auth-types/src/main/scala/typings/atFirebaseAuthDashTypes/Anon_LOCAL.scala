@@ -14,7 +14,7 @@ trait Anon_LOCAL extends js.Object {
 object Anon_LOCAL {
   @scala.inline
   def apply(LOCAL: Persistence, NONE: Persistence, SESSION: Persistence): Anon_LOCAL = {
-    val __obj = js.Dynamic.literal(LOCAL = LOCAL, NONE = NONE, SESSION = SESSION)
+    val __obj = js.Dynamic.literal(LOCAL = LOCAL.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], SESSION = SESSION.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LOCAL]
   }

@@ -69,16 +69,16 @@ object InvoiceItemCreationOptions {
     subscription: String = null,
     unit_amount: Int | Double = null
   ): InvoiceItemCreationOptions = {
-    val __obj = js.Dynamic.literal(currency = currency, customer = customer)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(discountable)) __obj.updateDynamic("discountable")(discountable)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (invoice != null) __obj.updateDynamic("invoice")(invoice)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(discountable)) __obj.updateDynamic("discountable")(discountable.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     if (unit_amount != null) __obj.updateDynamic("unit_amount")(unit_amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceItemCreationOptions]
   }

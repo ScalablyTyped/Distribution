@@ -26,7 +26,7 @@ object _DefaultMessage {
     Substitutions: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]]) = null
   ): _DefaultMessage = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body)
+    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
     if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[_DefaultMessage]
   }

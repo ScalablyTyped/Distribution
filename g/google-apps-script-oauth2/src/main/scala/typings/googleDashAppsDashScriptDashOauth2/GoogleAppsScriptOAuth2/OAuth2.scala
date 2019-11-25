@@ -34,7 +34,7 @@ object OAuth2 {
     createService: String => OAuth2Service,
     getRedirectUri: String => String
   ): OAuth2 = {
-    val __obj = js.Dynamic.literal(STATE_PARAMETER_LOCATION = STATE_PARAMETER_LOCATION, TOKEN_FORMAT = TOKEN_FORMAT, createService = js.Any.fromFunction1(createService), getRedirectUri = js.Any.fromFunction1(getRedirectUri))
+    val __obj = js.Dynamic.literal(STATE_PARAMETER_LOCATION = STATE_PARAMETER_LOCATION.asInstanceOf[js.Any], TOKEN_FORMAT = TOKEN_FORMAT.asInstanceOf[js.Any], createService = js.Any.fromFunction1(createService), getRedirectUri = js.Any.fromFunction1(getRedirectUri))
   
     __obj.asInstanceOf[OAuth2]
   }

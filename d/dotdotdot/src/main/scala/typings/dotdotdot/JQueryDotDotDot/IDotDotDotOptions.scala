@@ -65,13 +65,13 @@ object IDotDotDotOptions {
     val __obj = js.Dynamic.literal()
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis)
-    if (!js.isUndefined(fallbackToLetter)) __obj.updateDynamic("fallbackToLetter")(fallbackToLetter)
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(fallbackToLetter)) __obj.updateDynamic("fallbackToLetter")(fallbackToLetter.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (lastCharacter != null) __obj.updateDynamic("lastCharacter")(lastCharacter)
+    if (lastCharacter != null) __obj.updateDynamic("lastCharacter")(lastCharacter.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap)
+    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDotDotDotOptions]
   }
 }

@@ -30,7 +30,7 @@ object BluetoothCharacteristicProperties {
     write: Boolean,
     writeWithoutResponse: Boolean
   ): BluetoothCharacteristicProperties = {
-    val __obj = js.Dynamic.literal(authenticatedSignedWrites = authenticatedSignedWrites, broadcast = broadcast, indicate = indicate, notify = notify, read = read, reliableWrite = reliableWrite, writableAuxiliaries = writableAuxiliaries, write = write, writeWithoutResponse = writeWithoutResponse)
+    val __obj = js.Dynamic.literal(authenticatedSignedWrites = authenticatedSignedWrites.asInstanceOf[js.Any], broadcast = broadcast.asInstanceOf[js.Any], indicate = indicate.asInstanceOf[js.Any], notify = notify.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], reliableWrite = reliableWrite.asInstanceOf[js.Any], writableAuxiliaries = writableAuxiliaries.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any], writeWithoutResponse = writeWithoutResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BluetoothCharacteristicProperties]
   }

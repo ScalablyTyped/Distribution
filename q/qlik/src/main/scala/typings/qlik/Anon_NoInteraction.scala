@@ -16,8 +16,8 @@ object Anon_NoInteraction {
     noSelections: js.UndefOr[Boolean] = js.undefined
   ): Anon_NoInteraction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noInteraction)) __obj.updateDynamic("noInteraction")(noInteraction)
-    if (!js.isUndefined(noSelections)) __obj.updateDynamic("noSelections")(noSelections)
+    if (!js.isUndefined(noInteraction)) __obj.updateDynamic("noInteraction")(noInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSelections)) __obj.updateDynamic("noSelections")(noSelections.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NoInteraction]
   }
 }

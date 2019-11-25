@@ -27,11 +27,11 @@ object RunMobileFriendlyTestResponse {
     testStatus: TestStatus = null
   ): RunMobileFriendlyTestResponse = {
     val __obj = js.Dynamic.literal()
-    if (mobileFriendliness != null) __obj.updateDynamic("mobileFriendliness")(mobileFriendliness)
-    if (mobileFriendlyIssues != null) __obj.updateDynamic("mobileFriendlyIssues")(mobileFriendlyIssues)
-    if (resourceIssues != null) __obj.updateDynamic("resourceIssues")(resourceIssues)
-    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot)
-    if (testStatus != null) __obj.updateDynamic("testStatus")(testStatus)
+    if (mobileFriendliness != null) __obj.updateDynamic("mobileFriendliness")(mobileFriendliness.asInstanceOf[js.Any])
+    if (mobileFriendlyIssues != null) __obj.updateDynamic("mobileFriendlyIssues")(mobileFriendlyIssues.asInstanceOf[js.Any])
+    if (resourceIssues != null) __obj.updateDynamic("resourceIssues")(resourceIssues.asInstanceOf[js.Any])
+    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
+    if (testStatus != null) __obj.updateDynamic("testStatus")(testStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunMobileFriendlyTestResponse]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait WindowsStartMenuModeType extends js.Object
 
+object WindowsStartMenuModeType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fullScreen: typings.microsoftDashGraph.microsoftDashGraphStrings.fullScreen = this.cast("fullScreen")
+  @scala.inline
+  def nonFullScreen: typings.microsoftDashGraph.microsoftDashGraphStrings.nonFullScreen = this.cast("nonFullScreen")
+  @scala.inline
+  def userDefined: typings.microsoftDashGraph.microsoftDashGraphStrings.userDefined = this.cast("userDefined")
+}
+

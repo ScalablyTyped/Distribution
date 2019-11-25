@@ -39,18 +39,18 @@ object ScrollViewOptions {
     velocityThreshold: Int | Double = null
   ): ScrollViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
     if (bounceVelocityThreshold != null) __obj.updateDynamic("bounceVelocityThreshold")(bounceVelocityThreshold.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (contentHeight != null) __obj.updateDynamic("contentHeight")(contentHeight.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (emptyTemplate != null) __obj.updateDynamic("emptyTemplate")(emptyTemplate)
-    if (!js.isUndefined(enablePager)) __obj.updateDynamic("enablePager")(enablePager)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (emptyTemplate != null) __obj.updateDynamic("emptyTemplate")(emptyTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePager)) __obj.updateDynamic("enablePager")(enablePager.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction1(refresh))
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (velocityThreshold != null) __obj.updateDynamic("velocityThreshold")(velocityThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewOptions]
   }

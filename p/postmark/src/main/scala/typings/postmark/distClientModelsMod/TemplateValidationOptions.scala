@@ -1,6 +1,5 @@
 package typings.postmark.distClientModelsMod
 
-import typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ class TemplateValidationOptions protected ()
     HtmlBody: js.UndefOr[String],
     TextBody: js.UndefOr[String],
     TestRenderModel: js.UndefOr[js.Object],
-    TemplateType: js.UndefOr[TemplateTypes],
+    TemplateType: js.UndefOr[typings.postmark.distClientModelsTemplatesTemplateMod.TemplateTypes],
     LayoutTemplate: js.UndefOr[String],
     InlineCssForHtmlTestRender: js.UndefOr[Boolean]
   ) = this()

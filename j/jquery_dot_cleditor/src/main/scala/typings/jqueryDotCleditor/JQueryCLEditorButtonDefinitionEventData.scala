@@ -28,7 +28,7 @@ object JQueryCLEditorButtonDefinitionEventData {
     useCSS: Boolean,
     value: js.Any
   ): JQueryCLEditorButtonDefinitionEventData = {
-    val __obj = js.Dynamic.literal(button = button, buttonName = buttonName, command = command, editor = editor, popup = popup, popupName = popupName, useCSS = useCSS, value = value)
+    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttonName = buttonName.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], popupName = popupName.asInstanceOf[js.Any], useCSS = useCSS.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JQueryCLEditorButtonDefinitionEventData]
   }

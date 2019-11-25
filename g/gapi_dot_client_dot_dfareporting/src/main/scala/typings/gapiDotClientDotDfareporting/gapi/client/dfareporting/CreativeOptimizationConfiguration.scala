@@ -24,10 +24,10 @@ object CreativeOptimizationConfiguration {
     optimizationModel: String = null
   ): CreativeOptimizationConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (optimizationActivitys != null) __obj.updateDynamic("optimizationActivitys")(optimizationActivitys)
-    if (optimizationModel != null) __obj.updateDynamic("optimizationModel")(optimizationModel)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (optimizationActivitys != null) __obj.updateDynamic("optimizationActivitys")(optimizationActivitys.asInstanceOf[js.Any])
+    if (optimizationModel != null) __obj.updateDynamic("optimizationModel")(optimizationModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeOptimizationConfiguration]
   }
 }

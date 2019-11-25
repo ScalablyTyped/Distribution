@@ -26,7 +26,7 @@ object _TimeToLiveDescription {
     TimeToLiveStatus: ENABLING | DISABLING | ENABLED | DISABLED | String = null
   ): _TimeToLiveDescription = {
     val __obj = js.Dynamic.literal()
-    if (AttributeName != null) __obj.updateDynamic("AttributeName")(AttributeName)
+    if (AttributeName != null) __obj.updateDynamic("AttributeName")(AttributeName.asInstanceOf[js.Any])
     if (TimeToLiveStatus != null) __obj.updateDynamic("TimeToLiveStatus")(TimeToLiveStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[_TimeToLiveDescription]
   }

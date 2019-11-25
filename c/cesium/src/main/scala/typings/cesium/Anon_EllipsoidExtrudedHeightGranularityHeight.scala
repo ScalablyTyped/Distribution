@@ -25,12 +25,12 @@ object Anon_EllipsoidExtrudedHeightGranularityHeight {
     height: Int | Double = null,
     perPositionHeight: js.UndefOr[Boolean] = js.undefined
   ): Anon_EllipsoidExtrudedHeightGranularityHeight = {
-    val __obj = js.Dynamic.literal(positions = positions)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(perPositionHeight)) __obj.updateDynamic("perPositionHeight")(perPositionHeight)
+    if (!js.isUndefined(perPositionHeight)) __obj.updateDynamic("perPositionHeight")(perPositionHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EllipsoidExtrudedHeightGranularityHeight]
   }
 }

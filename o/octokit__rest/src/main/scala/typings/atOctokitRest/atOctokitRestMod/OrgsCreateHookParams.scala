@@ -33,9 +33,9 @@ object OrgsCreateHookParams {
     active: js.UndefOr[Boolean] = js.undefined,
     events: js.Array[String] = null
   ): OrgsCreateHookParams = {
-    val __obj = js.Dynamic.literal(config = config, name = name, org = org)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (events != null) __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsCreateHookParams]
   }
 }

@@ -27,11 +27,11 @@ object ElectionOfficial {
     title: String = null
   ): ElectionOfficial = {
     val __obj = js.Dynamic.literal()
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
-    if (faxNumber != null) __obj.updateDynamic("faxNumber")(faxNumber)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (officePhoneNumber != null) __obj.updateDynamic("officePhoneNumber")(officePhoneNumber)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
+    if (faxNumber != null) __obj.updateDynamic("faxNumber")(faxNumber.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (officePhoneNumber != null) __obj.updateDynamic("officePhoneNumber")(officePhoneNumber.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElectionOfficial]
   }
 }

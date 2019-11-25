@@ -21,9 +21,9 @@ object Anon_CalloutClassNamePrimaryButtonClassName {
     secondaryButtonClassName: String = null
   ): Anon_CalloutClassNamePrimaryButtonClassName = {
     val __obj = js.Dynamic.literal()
-    if (calloutClassName != null) __obj.updateDynamic("calloutClassName")(calloutClassName)
-    if (primaryButtonClassName != null) __obj.updateDynamic("primaryButtonClassName")(primaryButtonClassName)
-    if (secondaryButtonClassName != null) __obj.updateDynamic("secondaryButtonClassName")(secondaryButtonClassName)
+    if (calloutClassName != null) __obj.updateDynamic("calloutClassName")(calloutClassName.asInstanceOf[js.Any])
+    if (primaryButtonClassName != null) __obj.updateDynamic("primaryButtonClassName")(primaryButtonClassName.asInstanceOf[js.Any])
+    if (secondaryButtonClassName != null) __obj.updateDynamic("secondaryButtonClassName")(secondaryButtonClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CalloutClassNamePrimaryButtonClassName]
   }
 }

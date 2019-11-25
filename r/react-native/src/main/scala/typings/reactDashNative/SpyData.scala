@@ -14,9 +14,9 @@ trait SpyData extends js.Object {
 object SpyData {
   @scala.inline
   def apply(args: js.Array[_], method: String | Double, `type`: Double, module: String = null): SpyData = {
-    val __obj = js.Dynamic.literal(args = args, method = method.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (module != null) __obj.updateDynamic("module")(module)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpyData]
   }
 }

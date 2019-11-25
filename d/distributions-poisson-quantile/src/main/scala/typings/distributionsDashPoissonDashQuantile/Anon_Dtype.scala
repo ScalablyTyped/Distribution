@@ -12,7 +12,7 @@ trait Anon_Dtype extends js.Object {
 object Anon_Dtype {
   @scala.inline
   def apply(dtype: float32): Anon_Dtype = {
-    val __obj = js.Dynamic.literal(dtype = dtype)
+    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dtype]
   }

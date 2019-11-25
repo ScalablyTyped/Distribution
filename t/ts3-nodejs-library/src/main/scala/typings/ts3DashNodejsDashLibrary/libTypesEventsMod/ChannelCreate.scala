@@ -23,7 +23,7 @@ object ChannelCreate {
     invoker: TeamSpeakClient,
     modified: Partial[QueryResponseTypes]
   ): ChannelCreate = {
-    val __obj = js.Dynamic.literal(channel = channel, cpid = cpid, invoker = invoker, modified = modified)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], cpid = cpid.asInstanceOf[js.Any], invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChannelCreate]
   }

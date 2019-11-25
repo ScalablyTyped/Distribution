@@ -14,7 +14,7 @@ trait Anon_DataGroupData extends js.Object {
 object Anon_DataGroupData {
   @scala.inline
   def apply(data: js.Object, groupData: js.Array[_], itemData: js.Object, seriesData: js.Object): Anon_DataGroupData = {
-    val __obj = js.Dynamic.literal(data = data, groupData = groupData, itemData = itemData, seriesData = seriesData)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], groupData = groupData.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], seriesData = seriesData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataGroupData]
   }

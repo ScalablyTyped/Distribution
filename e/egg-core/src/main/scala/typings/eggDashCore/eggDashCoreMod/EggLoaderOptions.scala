@@ -28,9 +28,9 @@ object EggLoaderOptions {
     plugins: Plugins = null,
     serverScope: String = null
   ): EggLoaderOptions = {
-    val __obj = js.Dynamic.literal(app = app, baseDir = baseDir, logger = logger)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (serverScope != null) __obj.updateDynamic("serverScope")(serverScope)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (serverScope != null) __obj.updateDynamic("serverScope")(serverScope.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggLoaderOptions]
   }
 }

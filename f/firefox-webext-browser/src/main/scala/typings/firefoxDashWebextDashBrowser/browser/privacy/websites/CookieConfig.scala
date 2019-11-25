@@ -18,8 +18,8 @@ object CookieConfig {
   @scala.inline
   def apply(behavior: _CookieConfigBehavior = null, nonPersistentCookies: js.UndefOr[Boolean] = js.undefined): CookieConfig = {
     val __obj = js.Dynamic.literal()
-    if (behavior != null) __obj.updateDynamic("behavior")(behavior)
-    if (!js.isUndefined(nonPersistentCookies)) __obj.updateDynamic("nonPersistentCookies")(nonPersistentCookies)
+    if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonPersistentCookies)) __obj.updateDynamic("nonPersistentCookies")(nonPersistentCookies.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieConfig]
   }
 }

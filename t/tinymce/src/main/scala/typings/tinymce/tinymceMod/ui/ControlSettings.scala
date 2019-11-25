@@ -11,7 +11,7 @@ trait ControlSettings extends js.Object {
 object ControlSettings {
   @scala.inline
   def apply(menu: Menu): ControlSettings = {
-    val __obj = js.Dynamic.literal(menu = menu)
+    val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ControlSettings]
   }

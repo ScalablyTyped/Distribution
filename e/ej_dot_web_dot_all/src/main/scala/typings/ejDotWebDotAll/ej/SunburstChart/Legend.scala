@@ -82,19 +82,19 @@ object Legend {
   ): Legend = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (clickAction != null) __obj.updateDynamic("clickAction")(clickAction.asInstanceOf[js.Any])
     if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (itemPadding != null) __obj.updateDynamic("itemPadding")(itemPadding.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Legend]
   }
 }

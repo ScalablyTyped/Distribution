@@ -38,12 +38,12 @@ object IBitcoinReceiverCreationOptions {
     metadata: IOptionsMetadata = null,
     refund_mispayments: js.UndefOr[Boolean] = js.undefined
   ): IBitcoinReceiverCreationOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, email = email)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (!js.isUndefined(refund_mispayments)) __obj.updateDynamic("refund_mispayments")(refund_mispayments)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(refund_mispayments)) __obj.updateDynamic("refund_mispayments")(refund_mispayments.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitcoinReceiverCreationOptions]
   }
 }

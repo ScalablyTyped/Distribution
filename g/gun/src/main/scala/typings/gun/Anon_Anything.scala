@@ -25,10 +25,10 @@ object Anon_Anything {
   def apply(
     ify: js.Any => js.Any,
     is: js.Any => /* is gun.gun.Gun.ChainReference<any, any, false> */ Boolean,
-    soul_false: ChainReference[_, _, `false`] => String
+    soul: ChainReference[_, _, `false`] => String
   ): Anon_Anything = {
-    val __obj = js.Dynamic.literal(ify = js.Any.fromFunction1(ify), is = js.Any.fromFunction1(is))
-    __obj.updateDynamic("soul")(js.Any.fromFunction1(soul_false))
+    val __obj = js.Dynamic.literal(ify = js.Any.fromFunction1(ify), is = js.Any.fromFunction1(is), soul = js.Any.fromFunction1(soul))
+  
     __obj.asInstanceOf[Anon_Anything]
   }
 }

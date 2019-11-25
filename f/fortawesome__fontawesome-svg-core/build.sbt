@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "fortawesome__fontawesome-svg-core"
-version := "1.2.25-d2d608"
+version := "1.2.25-9a1ca3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "fortawesome__fontawesome-common-types" % "0.2.25-fac313",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "fortawesome__fontawesome-common-types" % "0.2.25-17f159",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

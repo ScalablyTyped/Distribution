@@ -15,7 +15,7 @@ trait TransactionResult extends js.Object {
 object TransactionResult {
   @scala.inline
   def apply(hash: String, status: String): TransactionResult = {
-    val __obj = js.Dynamic.literal(hash = hash, status = status)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransactionResult]
   }

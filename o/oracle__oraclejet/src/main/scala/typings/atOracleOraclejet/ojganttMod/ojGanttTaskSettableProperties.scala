@@ -52,11 +52,11 @@ object ojGanttTaskSettableProperties {
     rowId: js.Any = null,
     shortDesc: String = null
   ): ojGanttTaskSettableProperties = {
-    val __obj = js.Dynamic.literal(baseline = baseline, borderRadius = borderRadius, end = end, label = label, labelPosition = labelPosition.asInstanceOf[js.Any], labelStyle = labelStyle, progress = progress, start = start, svgClassName = svgClassName, svgStyle = svgStyle)
+    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelPosition = labelPosition.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (rowId != null) __obj.updateDynamic("rowId")(rowId)
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
+    if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojGanttTaskSettableProperties]
   }
 }

@@ -37,10 +37,10 @@ object Options {
     defaultRoute: String = null,
     queryParams: IOptions = null
   ): Options = {
-    val __obj = js.Dynamic.literal(allowNotFound = allowNotFound, autoCleanUp = autoCleanUp, caseSensitive = caseSensitive, queryParamsMode = queryParamsMode, rewritePathOnMatch = rewritePathOnMatch, strictTrailingSlash = strictTrailingSlash, strongMatching = strongMatching, trailingSlashMode = trailingSlashMode)
-    if (defaultParams != null) __obj.updateDynamic("defaultParams")(defaultParams)
-    if (defaultRoute != null) __obj.updateDynamic("defaultRoute")(defaultRoute)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    val __obj = js.Dynamic.literal(allowNotFound = allowNotFound.asInstanceOf[js.Any], autoCleanUp = autoCleanUp.asInstanceOf[js.Any], caseSensitive = caseSensitive.asInstanceOf[js.Any], queryParamsMode = queryParamsMode.asInstanceOf[js.Any], rewritePathOnMatch = rewritePathOnMatch.asInstanceOf[js.Any], strictTrailingSlash = strictTrailingSlash.asInstanceOf[js.Any], strongMatching = strongMatching.asInstanceOf[js.Any], trailingSlashMode = trailingSlashMode.asInstanceOf[js.Any])
+    if (defaultParams != null) __obj.updateDynamic("defaultParams")(defaultParams.asInstanceOf[js.Any])
+    if (defaultRoute != null) __obj.updateDynamic("defaultRoute")(defaultRoute.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

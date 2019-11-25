@@ -61,11 +61,11 @@ object PullRequest {
     mergedAt: Moment = null,
     milestone: Milestone = null
   ): PullRequest = {
-    val __obj = js.Dynamic.literal(assignees = assignees, base = base, body = body, createdAt = createdAt, createdBy = createdBy, head = head, htmlUri = htmlUri, id = id, loadAsync = js.Any.fromFunction0(loadAsync), loadIssueAsync = js.Any.fromFunction0(loadIssueAsync), loadReviewCommentsAsync = js.Any.fromFunction0(loadReviewCommentsAsync), loadReviewRequestsAsync = js.Any.fromFunction0(loadReviewRequestsAsync), loadReviewsAsync = js.Any.fromFunction0(loadReviewsAsync), locked = locked, number = number, state = state.asInstanceOf[js.Any], title = title, updatedAt = updatedAt)
-    if (assignee != null) __obj.updateDynamic("assignee")(assignee)
-    if (closedAt != null) __obj.updateDynamic("closedAt")(closedAt)
-    if (mergedAt != null) __obj.updateDynamic("mergedAt")(mergedAt)
-    if (milestone != null) __obj.updateDynamic("milestone")(milestone)
+    val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], createdBy = createdBy.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], htmlUri = htmlUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loadAsync = js.Any.fromFunction0(loadAsync), loadIssueAsync = js.Any.fromFunction0(loadIssueAsync), loadReviewCommentsAsync = js.Any.fromFunction0(loadReviewCommentsAsync), loadReviewRequestsAsync = js.Any.fromFunction0(loadReviewRequestsAsync), loadReviewsAsync = js.Any.fromFunction0(loadReviewsAsync), locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
+    if (assignee != null) __obj.updateDynamic("assignee")(assignee.asInstanceOf[js.Any])
+    if (closedAt != null) __obj.updateDynamic("closedAt")(closedAt.asInstanceOf[js.Any])
+    if (mergedAt != null) __obj.updateDynamic("mergedAt")(mergedAt.asInstanceOf[js.Any])
+    if (milestone != null) __obj.updateDynamic("milestone")(milestone.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequest]
   }
 }

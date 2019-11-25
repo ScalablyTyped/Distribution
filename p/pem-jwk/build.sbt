@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pem-jwk"
-version := "1.5-dt-20180613Z-05aedb"
+version := "1.5-dt-20180613Z-6a94ab"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

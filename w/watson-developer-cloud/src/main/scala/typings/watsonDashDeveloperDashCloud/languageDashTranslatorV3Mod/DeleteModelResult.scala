@@ -16,7 +16,7 @@ trait DeleteModelResult extends js.Object {
 object DeleteModelResult {
   @scala.inline
   def apply(status: String): DeleteModelResult = {
-    val __obj = js.Dynamic.literal(status = status)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteModelResult]
   }

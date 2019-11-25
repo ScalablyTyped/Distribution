@@ -21,9 +21,9 @@ object OfflineAccessOptions {
   @scala.inline
   def apply(app_package_name: String = null, prompt: select_account | consent = null, scope: String = null): OfflineAccessOptions = {
     val __obj = js.Dynamic.literal()
-    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name)
+    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineAccessOptions]
   }
 }

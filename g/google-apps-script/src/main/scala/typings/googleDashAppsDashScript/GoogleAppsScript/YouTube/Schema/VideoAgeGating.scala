@@ -18,9 +18,9 @@ object VideoAgeGating {
     videoGameRating: String = null
   ): VideoAgeGating = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alcoholContent)) __obj.updateDynamic("alcoholContent")(alcoholContent)
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted)
-    if (videoGameRating != null) __obj.updateDynamic("videoGameRating")(videoGameRating)
+    if (!js.isUndefined(alcoholContent)) __obj.updateDynamic("alcoholContent")(alcoholContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.asInstanceOf[js.Any])
+    if (videoGameRating != null) __obj.updateDynamic("videoGameRating")(videoGameRating.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoAgeGating]
   }
 }

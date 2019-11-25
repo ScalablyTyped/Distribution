@@ -36,9 +36,9 @@ object GoogleApiYouTubeThumbnailResource {
     maxres: GoogleApiYouTubeThumbnailItemResource = null,
     standard: GoogleApiYouTubeThumbnailItemResource = null
   ): GoogleApiYouTubeThumbnailResource = {
-    val __obj = js.Dynamic.literal(default = default, high = high, medium = medium)
-    if (maxres != null) __obj.updateDynamic("maxres")(maxres)
-    if (standard != null) __obj.updateDynamic("standard")(standard)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any])
+    if (maxres != null) __obj.updateDynamic("maxres")(maxres.asInstanceOf[js.Any])
+    if (standard != null) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiYouTubeThumbnailResource]
   }
 }

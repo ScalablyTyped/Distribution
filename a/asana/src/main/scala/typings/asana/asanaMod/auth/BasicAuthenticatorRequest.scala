@@ -12,7 +12,7 @@ trait BasicAuthenticatorRequest extends js.Object {
 object BasicAuthenticatorRequest {
   @scala.inline
   def apply(auth: Anon_Password): BasicAuthenticatorRequest = {
-    val __obj = js.Dynamic.literal(auth = auth)
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BasicAuthenticatorRequest]
   }

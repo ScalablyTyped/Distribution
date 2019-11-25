@@ -19,7 +19,7 @@ object Anon_ApiHasApi {
     init: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify API */ js.Any => Unit,
     state: SubState
   ): Anon_ApiHasApi = {
-    val __obj = js.Dynamic.literal(api = api, init = js.Any.fromFunction1(init), state = state)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApiHasApi]
   }

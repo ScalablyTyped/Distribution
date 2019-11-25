@@ -19,11 +19,11 @@ object CustomRouteView {
     getParams: () => RouteParams,
     getRouteID: () => String,
     getRouteType: () => RouteTypes,
-    on_destroy: (destroy, js.Function0[Unit]) => Unit,
+    on: (destroy, js.Function0[Unit]) => Unit,
     setFullWidth: Boolean => Unit
   ): CustomRouteView = {
-    val __obj = js.Dynamic.literal(destroyed = destroyed, getElement = js.Any.fromFunction0(getElement), getParams = js.Any.fromFunction0(getParams), getRouteID = js.Any.fromFunction0(getRouteID), getRouteType = js.Any.fromFunction0(getRouteType), setFullWidth = js.Any.fromFunction1(setFullWidth))
-    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
+    val __obj = js.Dynamic.literal(destroyed = destroyed.asInstanceOf[js.Any], getElement = js.Any.fromFunction0(getElement), getParams = js.Any.fromFunction0(getParams), getRouteID = js.Any.fromFunction0(getRouteID), getRouteType = js.Any.fromFunction0(getRouteType), on = js.Any.fromFunction2(on), setFullWidth = js.Any.fromFunction1(setFullWidth))
+  
     __obj.asInstanceOf[CustomRouteView]
   }
 }

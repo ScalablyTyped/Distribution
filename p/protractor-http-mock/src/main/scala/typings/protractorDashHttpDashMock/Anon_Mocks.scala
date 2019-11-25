@@ -28,10 +28,10 @@ object Anon_Mocks {
     rootDirectory: String = null
   ): Anon_Mocks = {
     val __obj = js.Dynamic.literal()
-    if (mocks != null) __obj.updateDynamic("mocks")(mocks)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (protractorConfig != null) __obj.updateDynamic("protractorConfig")(protractorConfig)
-    if (rootDirectory != null) __obj.updateDynamic("rootDirectory")(rootDirectory)
+    if (mocks != null) __obj.updateDynamic("mocks")(mocks.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (protractorConfig != null) __obj.updateDynamic("protractorConfig")(protractorConfig.asInstanceOf[js.Any])
+    if (rootDirectory != null) __obj.updateDynamic("rootDirectory")(rootDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Mocks]
   }
 }

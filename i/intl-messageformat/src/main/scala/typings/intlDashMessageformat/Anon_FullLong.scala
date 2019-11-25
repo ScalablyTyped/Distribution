@@ -19,7 +19,7 @@ object Anon_FullLong {
     medium: Anon_HourMinute,
     short: Anon_Hour
   ): Anon_FullLong = {
-    val __obj = js.Dynamic.literal(full = full, long = long, medium = medium, short = short)
+    val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FullLong]
   }

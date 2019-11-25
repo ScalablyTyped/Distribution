@@ -12,7 +12,7 @@ trait ViewFocusEvent extends js.Object {
 object ViewFocusEvent {
   @scala.inline
   def apply(native: js.Any, target: View): ViewFocusEvent = {
-    val __obj = js.Dynamic.literal(native = native, target = target)
+    val __obj = js.Dynamic.literal(native = native.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViewFocusEvent]
   }

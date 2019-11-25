@@ -69,12 +69,12 @@ object MapImageProperties {
     width: Int | Double = null
   ): MapImageProperties = {
     val __obj = js.Dynamic.literal()
-    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapImageProperties]
   }

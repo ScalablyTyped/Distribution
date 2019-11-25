@@ -14,7 +14,7 @@ trait FastFieldProps[V] extends js.Object {
 object FastFieldProps {
   @scala.inline
   def apply[V](field: Anon_E, form: FormikProps[V]): FastFieldProps[V] = {
-    val __obj = js.Dynamic.literal(field = field, form = form)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FastFieldProps[V]]
   }

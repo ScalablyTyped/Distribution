@@ -26,13 +26,13 @@ object OrdersCustomBatchRequestEntryInStoreRefundLineItem {
     reasonText: String = null
   ): OrdersCustomBatchRequestEntryInStoreRefundLineItem = {
     val __obj = js.Dynamic.literal()
-    if (amountPretax != null) __obj.updateDynamic("amountPretax")(amountPretax)
-    if (amountTax != null) __obj.updateDynamic("amountTax")(amountTax)
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (amountPretax != null) __obj.updateDynamic("amountPretax")(amountPretax.asInstanceOf[js.Any])
+    if (amountTax != null) __obj.updateDynamic("amountTax")(amountTax.asInstanceOf[js.Any])
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryInStoreRefundLineItem]
   }
 }

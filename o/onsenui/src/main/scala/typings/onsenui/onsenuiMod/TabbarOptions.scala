@@ -32,10 +32,10 @@ object TabbarOptions {
     keepPage: js.UndefOr[Boolean] = js.undefined
   ): TabbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (!js.isUndefined(keepPage)) __obj.updateDynamic("keepPage")(keepPage)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepPage)) __obj.updateDynamic("keepPage")(keepPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabbarOptions]
   }
 }

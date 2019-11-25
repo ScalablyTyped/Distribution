@@ -262,10 +262,10 @@ trait Matchers[R, T] extends js.Object {
     * Instead of writing the snapshot value to a .snap file, it will be written into the source code automatically.
     * Check out [the Snapshot Testing guide](http://facebook.github.io/jest/docs/snapshot-testing.html) for more information.
     */
-  def toMatchInlineSnapshot[U /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def toMatchInlineSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
     */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[U]): R = js.native
-  def toMatchInlineSnapshot[U /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def toMatchInlineSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
     */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[U], snapshot: String): R = js.native
   /**
@@ -299,10 +299,10 @@ trait Matchers[R, T] extends js.Object {
     * This ensures that a value matches the most recent snapshot with property matchers.
     * Check out [the Snapshot Testing guide](http://facebook.github.io/jest/docs/snapshot-testing.html) for more information.
     */
-  def toMatchSnapshot[U /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def toMatchSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
     */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[U]): R = js.native
-  def toMatchSnapshot[U /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def toMatchSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
     */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[U], snapshotName: String): R = js.native
   /**

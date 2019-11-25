@@ -26,7 +26,7 @@ trait Anon_CssSass extends js.Object {
 object Anon_CssSass {
   @scala.inline
   def apply(css: RegExp, sass: RegExp, scss: RegExp): Anon_CssSass = {
-    val __obj = js.Dynamic.literal(css = css, sass = sass, scss = scss)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], sass = sass.asInstanceOf[js.Any], scss = scss.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CssSass]
   }

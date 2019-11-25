@@ -35,14 +35,14 @@ object ClientSideLoggingObject {
     query_var: String = null
   ): ClientSideLoggingObject = {
     val __obj = js.Dynamic.literal()
-    if (client_info != null) __obj.updateDynamic("client_info")(client_info)
-    if (error_url != null) __obj.updateDynamic("error_url")(error_url)
-    if (!js.isUndefined(hijack_console)) __obj.updateDynamic("hijack_console")(hijack_console)
-    if (info_url != null) __obj.updateDynamic("info_url")(info_url)
+    if (client_info != null) __obj.updateDynamic("client_info")(client_info.asInstanceOf[js.Any])
+    if (error_url != null) __obj.updateDynamic("error_url")(error_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(hijack_console)) __obj.updateDynamic("hijack_console")(hijack_console.asInstanceOf[js.Any])
+    if (info_url != null) __obj.updateDynamic("info_url")(info_url.asInstanceOf[js.Any])
     if (log_level != null) __obj.updateDynamic("log_level")(log_level.asInstanceOf[js.Any])
-    if (log_url != null) __obj.updateDynamic("log_url")(log_url)
-    if (!js.isUndefined(native_error)) __obj.updateDynamic("native_error")(native_error)
-    if (query_var != null) __obj.updateDynamic("query_var")(query_var)
+    if (log_url != null) __obj.updateDynamic("log_url")(log_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(native_error)) __obj.updateDynamic("native_error")(native_error.asInstanceOf[js.Any])
+    if (query_var != null) __obj.updateDynamic("query_var")(query_var.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientSideLoggingObject]
   }
 }

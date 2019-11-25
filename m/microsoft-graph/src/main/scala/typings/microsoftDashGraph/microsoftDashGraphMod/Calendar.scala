@@ -63,18 +63,18 @@ object Calendar {
     singleValueExtendedProperties: js.Array[SingleValueLegacyExtendedProperty] = null
   ): Calendar = {
     val __obj = js.Dynamic.literal()
-    if (calendarView != null) __obj.updateDynamic("calendarView")(calendarView)
-    if (!js.isUndefined(canEdit)) __obj.updateDynamic("canEdit")(canEdit)
-    if (!js.isUndefined(canShare)) __obj.updateDynamic("canShare")(canShare)
-    if (!js.isUndefined(canViewPrivateItems)) __obj.updateDynamic("canViewPrivateItems")(canViewPrivateItems)
-    if (changeKey != null) __obj.updateDynamic("changeKey")(changeKey)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (multiValueExtendedProperties != null) __obj.updateDynamic("multiValueExtendedProperties")(multiValueExtendedProperties)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (singleValueExtendedProperties != null) __obj.updateDynamic("singleValueExtendedProperties")(singleValueExtendedProperties)
+    if (calendarView != null) __obj.updateDynamic("calendarView")(calendarView.asInstanceOf[js.Any])
+    if (!js.isUndefined(canEdit)) __obj.updateDynamic("canEdit")(canEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(canShare)) __obj.updateDynamic("canShare")(canShare.asInstanceOf[js.Any])
+    if (!js.isUndefined(canViewPrivateItems)) __obj.updateDynamic("canViewPrivateItems")(canViewPrivateItems.asInstanceOf[js.Any])
+    if (changeKey != null) __obj.updateDynamic("changeKey")(changeKey.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (multiValueExtendedProperties != null) __obj.updateDynamic("multiValueExtendedProperties")(multiValueExtendedProperties.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (singleValueExtendedProperties != null) __obj.updateDynamic("singleValueExtendedProperties")(singleValueExtendedProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calendar]
   }
 }

@@ -30,15 +30,15 @@ object FlipswitchOptions {
     wrapperClass: String = null
   ): FlipswitchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners)
-    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(enhanced)) __obj.updateDynamic("enhanced")(enhanced)
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini)
-    if (offText != null) __obj.updateDynamic("offText")(offText)
-    if (onText != null) __obj.updateDynamic("onText")(onText)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (wrapperClass != null) __obj.updateDynamic("wrapperClass")(wrapperClass)
+    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enhanced)) __obj.updateDynamic("enhanced")(enhanced.asInstanceOf[js.Any])
+    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
+    if (offText != null) __obj.updateDynamic("offText")(offText.asInstanceOf[js.Any])
+    if (onText != null) __obj.updateDynamic("onText")(onText.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (wrapperClass != null) __obj.updateDynamic("wrapperClass")(wrapperClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlipswitchOptions]
   }
 }

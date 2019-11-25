@@ -45,10 +45,10 @@ object SerializedError {
     */
   /* key */ StringDictionary[js.Any] = null
   ): SerializedError = {
-    val __obj = js.Dynamic.literal(message = message, raw = raw, stack = stack)
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SerializedError]
   }
 }

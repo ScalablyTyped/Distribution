@@ -54,13 +54,13 @@ object OpenDialogSyncOptions {
     title: String = null
   ): OpenDialogSyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel)
-    if (defaultPath != null) __obj.updateDynamic("defaultPath")(defaultPath)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (!js.isUndefined(securityScopedBookmarks)) __obj.updateDynamic("securityScopedBookmarks")(securityScopedBookmarks)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel.asInstanceOf[js.Any])
+    if (defaultPath != null) __obj.updateDynamic("defaultPath")(defaultPath.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(securityScopedBookmarks)) __obj.updateDynamic("securityScopedBookmarks")(securityScopedBookmarks.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDialogSyncOptions]
   }
 }

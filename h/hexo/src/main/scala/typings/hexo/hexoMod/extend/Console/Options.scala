@@ -33,10 +33,10 @@ object Options {
     usage: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (desc != null) __obj.updateDynamic("desc")(desc)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (usage != null) __obj.updateDynamic("usage")(usage)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

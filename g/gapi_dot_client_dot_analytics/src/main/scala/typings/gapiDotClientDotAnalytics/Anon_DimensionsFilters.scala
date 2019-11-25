@@ -30,12 +30,12 @@ object Anon_DimensionsFilters {
     sort: js.Array[String] = null
   ): Anon_DimensionsFilters = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DimensionsFilters]
   }
 }

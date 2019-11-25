@@ -16,8 +16,8 @@ object GatewayDelete {
   @scala.inline
   def apply(gateway_id: String = null, status: String = null): GatewayDelete = {
     val __obj = js.Dynamic.literal()
-    if (gateway_id != null) __obj.updateDynamic("gateway_id")(gateway_id)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (gateway_id != null) __obj.updateDynamic("gateway_id")(gateway_id.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayDelete]
   }
 }

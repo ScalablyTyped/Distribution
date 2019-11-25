@@ -1,12 +1,12 @@
 package typings.three.threeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.three.srcConstantsMod.PixelFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("three", "RGBEFormat")
 @js.native
-object RGBEFormat extends TopLevel[PixelFormat]
+object RGBEFormat
+  extends TopLevel[typings.three.srcConstantsMod.PixelFormat]
 

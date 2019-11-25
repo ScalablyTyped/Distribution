@@ -13,7 +13,7 @@ trait Anon_AccessLocation extends js.Object {
 object Anon_AccessLocation {
   @scala.inline
   def apply(accessLocation: UriParam, accessMethod: Anon_Oid): Anon_AccessLocation = {
-    val __obj = js.Dynamic.literal(accessLocation = accessLocation, accessMethod = accessMethod)
+    val __obj = js.Dynamic.literal(accessLocation = accessLocation.asInstanceOf[js.Any], accessMethod = accessMethod.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AccessLocation]
   }

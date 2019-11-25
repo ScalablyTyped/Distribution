@@ -18,8 +18,8 @@ object SliderTooltip {
     template: String | js.Function = null
   ): SliderTooltip = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderTooltip]
   }

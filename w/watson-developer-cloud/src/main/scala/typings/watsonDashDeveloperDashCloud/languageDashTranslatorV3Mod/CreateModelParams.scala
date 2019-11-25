@@ -31,12 +31,12 @@ object CreateModelParams {
     parallel_corpus: ReadableStream | FileObject | Buffer = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): CreateModelParams = {
-    val __obj = js.Dynamic.literal(base_model_id = base_model_id)
+    val __obj = js.Dynamic.literal(base_model_id = base_model_id.asInstanceOf[js.Any])
     if (forced_glossary != null) __obj.updateDynamic("forced_glossary")(forced_glossary.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parallel_corpus != null) __obj.updateDynamic("parallel_corpus")(parallel_corpus.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModelParams]
   }
 }

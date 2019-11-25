@@ -25,10 +25,10 @@ object SemanticRolesResult {
     subject: SemanticRolesResultSubject = null
   ): SemanticRolesResult = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (sentence != null) __obj.updateDynamic("sentence")(sentence)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (sentence != null) __obj.updateDynamic("sentence")(sentence.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticRolesResult]
   }
 }

@@ -21,9 +21,9 @@ object Anon_CommentsLabel {
     loc: SourceLocationKind = null
   ): Anon_CommentsLabel = {
     val __obj = js.Dynamic.literal()
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLabel]
   }
 }

@@ -11,7 +11,7 @@ trait WindowConsole extends js.Object {
 object WindowConsole {
   @scala.inline
   def apply(console: Console): WindowConsole = {
-    val __obj = js.Dynamic.literal(console = console)
+    val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WindowConsole]
   }

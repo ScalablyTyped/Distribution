@@ -31,7 +31,7 @@ object FontCommon {
     scaleH: Double,
     scaleW: Double
   ): FontCommon = {
-    val __obj = js.Dynamic.literal(alphaChnl = alphaChnl, base = base, blueChnl = blueChnl, greenChnl = greenChnl, lineHeight = lineHeight, packed = packed, pages = pages, redChnl = redChnl, scaleH = scaleH, scaleW = scaleW)
+    val __obj = js.Dynamic.literal(alphaChnl = alphaChnl.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], blueChnl = blueChnl.asInstanceOf[js.Any], greenChnl = greenChnl.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], packed = packed.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], redChnl = redChnl.asInstanceOf[js.Any], scaleH = scaleH.asInstanceOf[js.Any], scaleW = scaleW.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FontCommon]
   }

@@ -24,12 +24,12 @@ object ParseOptions {
     tolerant: js.UndefOr[Boolean] = js.undefined
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment)
-    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx)
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range)
-    if (!js.isUndefined(tokens)) __obj.updateDynamic("tokens")(tokens)
-    if (!js.isUndefined(tolerant)) __obj.updateDynamic("tolerant")(tolerant)
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (!js.isUndefined(tokens)) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
+    if (!js.isUndefined(tolerant)) __obj.updateDynamic("tolerant")(tolerant.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

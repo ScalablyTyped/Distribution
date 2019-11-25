@@ -24,12 +24,12 @@ object BeforeSaveRequest {
     original: Object[_] = null,
     user: User[_] = null
   ): BeforeSaveRequest = {
-    val __obj = js.Dynamic.literal(context = context, headers = headers, ip = ip, log = log, triggerName = triggerName)
-    __obj.updateDynamic("object")(`object`)
-    if (installationId != null) __obj.updateDynamic("installationId")(installationId)
-    if (!js.isUndefined(master)) __obj.updateDynamic("master")(master)
-    if (original != null) __obj.updateDynamic("original")(original)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (installationId != null) __obj.updateDynamic("installationId")(installationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(master)) __obj.updateDynamic("master")(master.asInstanceOf[js.Any])
+    if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeSaveRequest]
   }
 }

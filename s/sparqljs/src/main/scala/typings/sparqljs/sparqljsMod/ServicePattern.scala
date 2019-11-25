@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 object ServicePattern {
   @scala.inline
   def apply(name: Term, patterns: js.Array[Pattern], silent: Boolean, `type`: service): ServicePattern = {
-    val __obj = js.Dynamic.literal(name = name, patterns = patterns, silent = silent)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServicePattern]
   }
 }

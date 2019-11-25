@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Method extends js.Object
 
+object Method {
+  @scala.inline
+  def align: typings.reactDashSketchapp.reactDashSketchappStrings.align = this.cast("align")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def stretch: typings.reactDashSketchapp.reactDashSketchappStrings.stretch = this.cast("stretch")
+}
+

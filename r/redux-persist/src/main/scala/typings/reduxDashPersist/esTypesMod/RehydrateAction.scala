@@ -20,10 +20,10 @@ object RehydrateAction {
     err: RehydrateErrorType = null,
     payload: js.Object = null
   ): RehydrateAction = {
-    val __obj = js.Dynamic.literal(key = key)
-    __obj.updateDynamic("type")(`type`)
-    if (err != null) __obj.updateDynamic("err")(err)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[RehydrateAction]
   }
 }

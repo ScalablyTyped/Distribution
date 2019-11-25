@@ -36,7 +36,7 @@ object PlusWebviewWebviewRenderedEventOptions {
   def apply(interval: Int | Double = null, `type`: String = null): PlusWebviewWebviewRenderedEventOptions = {
     val __obj = js.Dynamic.literal()
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewRenderedEventOptions]
   }
 }

@@ -16,7 +16,7 @@ trait Property extends js.Object {
 object Property {
   @scala.inline
   def apply(basename: String, custom: Boolean, hack: String, name: String, prefix: String, vendor: String): Property = {
-    val __obj = js.Dynamic.literal(basename = basename, custom = custom, hack = hack, name = name, prefix = prefix, vendor = vendor)
+    val __obj = js.Dynamic.literal(basename = basename.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], hack = hack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Property]
   }

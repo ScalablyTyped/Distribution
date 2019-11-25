@@ -34,18 +34,18 @@ object MobxApolloQueryOptions {
     returnPartialData: js.UndefOr[Boolean] = js.undefined,
     variables: OperationVariables = null
   ): MobxApolloQueryOptions[T] = {
-    val __obj = js.Dynamic.literal(client = client, query = query)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
-    if (!js.isUndefined(fetchResults)) __obj.updateDynamic("fetchResults")(fetchResults)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (!js.isUndefined(notifyOnNetworkStatusChange)) __obj.updateDynamic("notifyOnNetworkStatusChange")(notifyOnNetworkStatusChange)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy.asInstanceOf[js.Any])
+    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchResults)) __obj.updateDynamic("fetchResults")(fetchResults.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(notifyOnNetworkStatusChange)) __obj.updateDynamic("notifyOnNetworkStatusChange")(notifyOnNetworkStatusChange.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onFetch != null) __obj.updateDynamic("onFetch")(js.Any.fromFunction1(onFetch))
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobxApolloQueryOptions[T]]
   }
 }

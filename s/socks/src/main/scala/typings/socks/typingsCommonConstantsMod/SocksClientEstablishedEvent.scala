@@ -13,8 +13,8 @@ trait SocksClientEstablishedEvent extends js.Object {
 object SocksClientEstablishedEvent {
   @scala.inline
   def apply(socket: Socket, remoteHost: SocksRemoteHost = null): SocksClientEstablishedEvent = {
-    val __obj = js.Dynamic.literal(socket = socket)
-    if (remoteHost != null) __obj.updateDynamic("remoteHost")(remoteHost)
+    val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
+    if (remoteHost != null) __obj.updateDynamic("remoteHost")(remoteHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocksClientEstablishedEvent]
   }
 }

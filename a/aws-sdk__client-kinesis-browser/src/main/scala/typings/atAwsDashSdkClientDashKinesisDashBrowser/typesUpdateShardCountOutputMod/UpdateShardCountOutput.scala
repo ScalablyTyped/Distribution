@@ -34,9 +34,9 @@ object UpdateShardCountOutput {
     StreamName: String = null,
     TargetShardCount: Int | Double = null
   ): UpdateShardCountOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (CurrentShardCount != null) __obj.updateDynamic("CurrentShardCount")(CurrentShardCount.asInstanceOf[js.Any])
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName)
+    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
     if (TargetShardCount != null) __obj.updateDynamic("TargetShardCount")(TargetShardCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateShardCountOutput]
   }

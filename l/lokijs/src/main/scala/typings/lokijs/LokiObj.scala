@@ -13,7 +13,7 @@ trait LokiObj extends js.Object {
 object LokiObj {
   @scala.inline
   def apply($loki: Double, meta: Anon_Created): LokiObj = {
-    val __obj = js.Dynamic.literal($loki = $loki, meta = meta)
+    val __obj = js.Dynamic.literal($loki = $loki.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LokiObj]
   }

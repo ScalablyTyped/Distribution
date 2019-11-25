@@ -19,7 +19,7 @@ object RateLimitGetResponseResources {
     integration_manifest: RateLimitGetResponseResourcesIntegrationManifest,
     search: RateLimitGetResponseResourcesSearch
   ): RateLimitGetResponseResources = {
-    val __obj = js.Dynamic.literal(core = core, graphql = graphql, integration_manifest = integration_manifest, search = search)
+    val __obj = js.Dynamic.literal(core = core.asInstanceOf[js.Any], graphql = graphql.asInstanceOf[js.Any], integration_manifest = integration_manifest.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RateLimitGetResponseResources]
   }

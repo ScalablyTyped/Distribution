@@ -22,10 +22,10 @@ object PartialStyleRulesToolbarClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesToolbarClassKey = {
     val __obj = js.Dynamic.literal()
-    if (dense != null) __obj.updateDynamic("dense")(dense)
-    if (gutters != null) __obj.updateDynamic("gutters")(gutters)
-    if (regular != null) __obj.updateDynamic("regular")(regular)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (dense != null) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
+    if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
+    if (regular != null) __obj.updateDynamic("regular")(regular.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesToolbarClassKey]
   }
 }

@@ -31,11 +31,11 @@ object WorkBook {
     Workbook: WBProps = null,
     vbaraw: js.Any = null
   ): WorkBook = {
-    val __obj = js.Dynamic.literal(SheetNames = SheetNames, Sheets = Sheets)
-    if (Custprops != null) __obj.updateDynamic("Custprops")(Custprops)
-    if (Props != null) __obj.updateDynamic("Props")(Props)
-    if (Workbook != null) __obj.updateDynamic("Workbook")(Workbook)
-    if (vbaraw != null) __obj.updateDynamic("vbaraw")(vbaraw)
+    val __obj = js.Dynamic.literal(SheetNames = SheetNames.asInstanceOf[js.Any], Sheets = Sheets.asInstanceOf[js.Any])
+    if (Custprops != null) __obj.updateDynamic("Custprops")(Custprops.asInstanceOf[js.Any])
+    if (Props != null) __obj.updateDynamic("Props")(Props.asInstanceOf[js.Any])
+    if (Workbook != null) __obj.updateDynamic("Workbook")(Workbook.asInstanceOf[js.Any])
+    if (vbaraw != null) __obj.updateDynamic("vbaraw")(vbaraw.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkBook]
   }
 }

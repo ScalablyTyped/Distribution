@@ -23,9 +23,9 @@ object AssetDescriptor {
     height: Int | Double = null,
     width: Int | Double = null
   ): AssetDescriptor = {
-    val __obj = js.Dynamic.literal(name = name, uri = uri)
-    __obj.updateDynamic("type")(`type`)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetDescriptor]

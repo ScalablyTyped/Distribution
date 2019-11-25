@@ -4,7 +4,6 @@ import typings.atHyperlorisTyson.distTypesReflectTypeTokenMod.ClassType
 import typings.atHyperlorisTyson.distTypesTypeAdapterFactoryMod.TypeAdapterFactory
 import typings.atHyperlorisTyson.distTypesTypeAdapterMod.TypeAdapter
 import typings.atHyperlorisTyson.distTypesTysonBuilderMod.TysonBuilder
-import typings.atHyperlorisTyson.distTypesTysonMod.Tyson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +23,7 @@ object distTypesTysonBuilderMod extends js.Object {
       * @returns {Tyson} a Tyson instance
       * @memberof TysonBuilder
       */
-    def build(): Tyson = js.native
+    def build(): js.Any = js.native
     /**
       * Configure Tyson to serialize null fields. By default, Tyson omits all fields that are null
       * during serialization.

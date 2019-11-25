@@ -12,7 +12,7 @@ trait NumericLimit extends js.Object {
 object NumericLimit {
   @scala.inline
   def apply(max: Double, min: Double): NumericLimit = {
-    val __obj = js.Dynamic.literal(max = max, min = min)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NumericLimit]
   }

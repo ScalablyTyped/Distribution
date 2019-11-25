@@ -17,7 +17,7 @@ trait IssueLabeledEvent extends IssueEvent {
 object IssueLabeledEvent {
   @scala.inline
   def apply(action: labeled | unlabeled, issue: Issue, label: Label): IssueLabeledEvent = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue, label = label)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssueLabeledEvent]
   }

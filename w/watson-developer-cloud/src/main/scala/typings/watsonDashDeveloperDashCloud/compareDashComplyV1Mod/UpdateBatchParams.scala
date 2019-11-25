@@ -27,10 +27,10 @@ object UpdateBatchParams {
     model: Model | String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): UpdateBatchParams = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], batch_id = batch_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], batch_id = batch_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBatchParams]
   }
 }

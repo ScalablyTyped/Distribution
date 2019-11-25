@@ -48,12 +48,12 @@ object IGetListRequest {
     preloadCallback: js.Any = null,
     queryFilter: js.Any = null
   ): IGetListRequest = {
-    val __obj = js.Dynamic.literal(additionalSelectFields = additionalSelectFields, contextSiteUrl = contextSiteUrl, expandFields = expandFields, hostUrl = hostUrl, isHosted = isHosted, isPagedResult = isPagedResult, isRoot = isRoot, listName = listName, personaCheckRequired = personaCheckRequired, postData = postData, rowLimit = rowLimit, selectFields = selectFields, viewXml = viewXml)
-    if (PageManager != null) __obj.updateDynamic("PageManager")(PageManager)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
-    if (preloadCallback != null) __obj.updateDynamic("preloadCallback")(preloadCallback)
-    if (queryFilter != null) __obj.updateDynamic("queryFilter")(queryFilter)
+    val __obj = js.Dynamic.literal(additionalSelectFields = additionalSelectFields.asInstanceOf[js.Any], contextSiteUrl = contextSiteUrl.asInstanceOf[js.Any], expandFields = expandFields.asInstanceOf[js.Any], hostUrl = hostUrl.asInstanceOf[js.Any], isHosted = isHosted.asInstanceOf[js.Any], isPagedResult = isPagedResult.asInstanceOf[js.Any], isRoot = isRoot.asInstanceOf[js.Any], listName = listName.asInstanceOf[js.Any], personaCheckRequired = personaCheckRequired.asInstanceOf[js.Any], postData = postData.asInstanceOf[js.Any], rowLimit = rowLimit.asInstanceOf[js.Any], selectFields = selectFields.asInstanceOf[js.Any], viewXml = viewXml.asInstanceOf[js.Any])
+    if (PageManager != null) __obj.updateDynamic("PageManager")(PageManager.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
+    if (preloadCallback != null) __obj.updateDynamic("preloadCallback")(preloadCallback.asInstanceOf[js.Any])
+    if (queryFilter != null) __obj.updateDynamic("queryFilter")(queryFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetListRequest]
   }
 }

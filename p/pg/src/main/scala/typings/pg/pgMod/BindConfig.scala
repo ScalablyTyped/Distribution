@@ -21,10 +21,10 @@ object BindConfig {
     values: js.Array[js.UndefOr[Buffer | Null | String]] = null
   ): BindConfig = {
     val __obj = js.Dynamic.literal()
-    if (binary != null) __obj.updateDynamic("binary")(binary)
-    if (portal != null) __obj.updateDynamic("portal")(portal)
-    if (statement != null) __obj.updateDynamic("statement")(statement)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
+    if (statement != null) __obj.updateDynamic("statement")(statement.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindConfig]
   }
 }

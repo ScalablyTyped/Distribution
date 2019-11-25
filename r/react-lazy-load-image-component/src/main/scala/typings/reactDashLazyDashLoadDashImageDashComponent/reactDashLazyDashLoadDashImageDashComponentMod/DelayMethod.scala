@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DelayMethod extends js.Object
 
+object DelayMethod {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def debounce: typings.reactDashLazyDashLoadDashImageDashComponent.reactDashLazyDashLoadDashImageDashComponentStrings.debounce = this.cast("debounce")
+  @scala.inline
+  def throttle: typings.reactDashLazyDashLoadDashImageDashComponent.reactDashLazyDashLoadDashImageDashComponentStrings.throttle = this.cast("throttle")
+}
+

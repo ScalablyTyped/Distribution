@@ -14,7 +14,7 @@ object JobExecutionInfo {
   @scala.inline
   def apply(stages: Record[String, JobExecutionStageInfo] = null): JobExecutionInfo = {
     val __obj = js.Dynamic.literal()
-    if (stages != null) __obj.updateDynamic("stages")(stages)
+    if (stages != null) __obj.updateDynamic("stages")(stages.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionInfo]
   }
 }

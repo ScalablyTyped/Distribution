@@ -13,7 +13,7 @@ object ContractEnumMetadata {
   @scala.inline
   def apply(enumValues: StringDictionary[Double] = null): ContractEnumMetadata = {
     val __obj = js.Dynamic.literal()
-    if (enumValues != null) __obj.updateDynamic("enumValues")(enumValues)
+    if (enumValues != null) __obj.updateDynamic("enumValues")(enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContractEnumMetadata]
   }
 }

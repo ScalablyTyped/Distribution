@@ -44,7 +44,7 @@ object Anon_AfterVisibleChange {
     showMask: Boolean,
     wrapperClassName: String
   ): Anon_AfterVisibleChange = {
-    val __obj = js.Dynamic.literal(afterVisibleChange = js.Any.fromFunction0(afterVisibleChange), className = className, defaultOpen = defaultOpen, duration = duration, ease = ease, forceRender = forceRender, getContainer = getContainer, handler = handler, keyboard = keyboard, level = level, maskClosable = maskClosable, onChange = js.Any.fromFunction0(onChange), placement = placement, prefixCls = prefixCls, showMask = showMask, wrapperClassName = wrapperClassName)
+    val __obj = js.Dynamic.literal(afterVisibleChange = js.Any.fromFunction0(afterVisibleChange), className = className.asInstanceOf[js.Any], defaultOpen = defaultOpen.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], ease = ease.asInstanceOf[js.Any], forceRender = forceRender.asInstanceOf[js.Any], getContainer = getContainer.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], maskClosable = maskClosable.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), placement = placement.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], showMask = showMask.asInstanceOf[js.Any], wrapperClassName = wrapperClassName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AfterVisibleChange]
   }

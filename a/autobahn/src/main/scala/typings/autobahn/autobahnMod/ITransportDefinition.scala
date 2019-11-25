@@ -15,8 +15,8 @@ object ITransportDefinition {
   def apply(`type`: TransportType, protocols: js.Array[String] = null, url: String = null): ITransportDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransportDefinition]
   }
 }

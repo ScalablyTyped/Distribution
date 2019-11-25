@@ -18,8 +18,8 @@ trait Anon_InlineOverlay extends js.Object {
 object Anon_InlineOverlay {
   @scala.inline
   def apply(`inline`: String, overlay: String): Anon_InlineOverlay = {
-    val __obj = js.Dynamic.literal(overlay = overlay)
-    __obj.updateDynamic("inline")(`inline`)
+    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InlineOverlay]
   }
 }

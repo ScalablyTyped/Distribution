@@ -22,7 +22,7 @@ object ResizeObserverProps {
   ): ResizeObserverProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
     __obj.asInstanceOf[ResizeObserverProps]
   }

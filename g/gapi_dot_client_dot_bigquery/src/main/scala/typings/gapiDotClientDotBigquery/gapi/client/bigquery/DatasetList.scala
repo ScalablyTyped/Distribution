@@ -28,10 +28,10 @@ object DatasetList {
     nextPageToken: String = null
   ): DatasetList = {
     val __obj = js.Dynamic.literal()
-    if (datasets != null) __obj.updateDynamic("datasets")(datasets)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (datasets != null) __obj.updateDynamic("datasets")(datasets.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetList]
   }
 }

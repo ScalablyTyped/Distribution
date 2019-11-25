@@ -14,7 +14,7 @@ trait ScheduledReleaseTrigger extends ReleaseTriggerBase {
 object ScheduledReleaseTrigger {
   @scala.inline
   def apply(schedule: ReleaseSchedule, triggerType: ReleaseTriggerType): ScheduledReleaseTrigger = {
-    val __obj = js.Dynamic.literal(schedule = schedule, triggerType = triggerType)
+    val __obj = js.Dynamic.literal(schedule = schedule.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScheduledReleaseTrigger]
   }

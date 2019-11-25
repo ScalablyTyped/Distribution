@@ -16,8 +16,8 @@ trait StatObject extends js.Object {
 object StatObject {
   @scala.inline
   def apply(atk: Double, `def`: Double, hp: Double, sp_atk: Double, sp_def: Double, speed: Double): StatObject = {
-    val __obj = js.Dynamic.literal(atk = atk, hp = hp, sp_atk = sp_atk, sp_def = sp_def, speed = speed)
-    __obj.updateDynamic("def")(`def`)
+    val __obj = js.Dynamic.literal(atk = atk.asInstanceOf[js.Any], hp = hp.asInstanceOf[js.Any], sp_atk = sp_atk.asInstanceOf[js.Any], sp_def = sp_def.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
+    __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatObject]
   }
 }

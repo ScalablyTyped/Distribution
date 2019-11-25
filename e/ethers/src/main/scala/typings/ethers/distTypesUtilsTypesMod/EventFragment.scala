@@ -14,8 +14,8 @@ trait EventFragment extends js.Object {
 object EventFragment {
   @scala.inline
   def apply(anonymous: Boolean, inputs: js.Array[ParamType], name: String, `type`: String): EventFragment = {
-    val __obj = js.Dynamic.literal(anonymous = anonymous, inputs = inputs, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventFragment]
   }
 }

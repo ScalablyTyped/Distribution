@@ -20,7 +20,7 @@ object Lang {
     pickers: js.Array[String],
     placeholder: Anon_Date
   ): Lang = {
-    val __obj = js.Dynamic.literal(days = days, months = months, pickers = pickers, placeholder = placeholder)
+    val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], pickers = pickers.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Lang]
   }

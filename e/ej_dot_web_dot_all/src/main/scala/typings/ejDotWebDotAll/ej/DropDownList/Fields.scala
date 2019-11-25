@@ -52,16 +52,16 @@ object Fields {
     value: String = null
   ): Fields = {
     val __obj = js.Dynamic.literal()
-    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy)
-    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (imageAttributes != null) __obj.updateDynamic("imageAttributes")(imageAttributes)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (imageAttributes != null) __obj.updateDynamic("imageAttributes")(imageAttributes.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
 }

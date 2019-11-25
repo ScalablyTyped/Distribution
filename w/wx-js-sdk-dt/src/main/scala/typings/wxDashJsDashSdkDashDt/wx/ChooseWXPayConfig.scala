@@ -40,12 +40,12 @@ object ChooseWXPayConfig {
     signType: String = null,
     success: /* res */ js.UndefOr[js.Any] => Unit = null
   ): ChooseWXPayConfig = {
-    val __obj = js.Dynamic.literal(nonceStr = nonceStr, paySign = paySign, timestamp = timestamp)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(nonceStr = nonceStr.asInstanceOf[js.Any], paySign = paySign.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (signType != null) __obj.updateDynamic("signType")(signType)
+    if (signType != null) __obj.updateDynamic("signType")(signType.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseWXPayConfig]
   }

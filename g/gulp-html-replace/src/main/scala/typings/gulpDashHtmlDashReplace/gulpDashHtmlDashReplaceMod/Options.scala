@@ -18,9 +18,9 @@ object Options {
     resolvePaths: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepBlockTags)) __obj.updateDynamic("keepBlockTags")(keepBlockTags)
-    if (!js.isUndefined(keepUnassigned)) __obj.updateDynamic("keepUnassigned")(keepUnassigned)
-    if (!js.isUndefined(resolvePaths)) __obj.updateDynamic("resolvePaths")(resolvePaths)
+    if (!js.isUndefined(keepBlockTags)) __obj.updateDynamic("keepBlockTags")(keepBlockTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepUnassigned)) __obj.updateDynamic("keepUnassigned")(keepUnassigned.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolvePaths)) __obj.updateDynamic("resolvePaths")(resolvePaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

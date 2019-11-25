@@ -44,15 +44,15 @@ object IFieldOptions {
     weak: js.UndefOr[Boolean] = js.undefined
   ): IFieldOptions = {
     val __obj = js.Dynamic.literal()
-    if (`.google.api.fieldBehavior` != null) __obj.updateDynamic(".google.api.fieldBehavior")(`.google.api.fieldBehavior`)
-    if (`.google.api.resourceReference` != null) __obj.updateDynamic(".google.api.resourceReference")(`.google.api.resourceReference`)
-    if (ctype != null) __obj.updateDynamic("ctype")(ctype)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (jstype != null) __obj.updateDynamic("jstype")(jstype)
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed)
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption)
-    if (!js.isUndefined(weak)) __obj.updateDynamic("weak")(weak)
+    if (`.google.api.fieldBehavior` != null) __obj.updateDynamic(".google.api.fieldBehavior")(`.google.api.fieldBehavior`.asInstanceOf[js.Any])
+    if (`.google.api.resourceReference` != null) __obj.updateDynamic(".google.api.resourceReference")(`.google.api.resourceReference`.asInstanceOf[js.Any])
+    if (ctype != null) __obj.updateDynamic("ctype")(ctype.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (jstype != null) __obj.updateDynamic("jstype")(jstype.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed.asInstanceOf[js.Any])
+    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(weak)) __obj.updateDynamic("weak")(weak.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldOptions]
   }
 }

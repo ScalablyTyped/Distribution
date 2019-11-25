@@ -27,12 +27,12 @@ object ServiceOptions {
     subtypes: js.Array[String] = null,
     txt: js.Object = null
   ): ServiceOptions = {
-    val __obj = js.Dynamic.literal(name = name, port = port)
-    __obj.updateDynamic("type")(`type`)
-    if (host != null) __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (subtypes != null) __obj.updateDynamic("subtypes")(subtypes)
-    if (txt != null) __obj.updateDynamic("txt")(txt)
+    if (subtypes != null) __obj.updateDynamic("subtypes")(subtypes.asInstanceOf[js.Any])
+    if (txt != null) __obj.updateDynamic("txt")(txt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOptions]
   }
 }

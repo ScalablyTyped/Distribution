@@ -44,15 +44,15 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrintProfileId {
     synchronous: js.UndefOr[Boolean] = js.undefined,
     userIp: String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrintProfileId = {
-    val __obj = js.Dynamic.literal(profileId = profileId, reportId = reportId)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    val __obj = js.Dynamic.literal(profileId = profileId.asInstanceOf[js.Any], reportId = reportId.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltFieldsKeyOauthtokenPrettyPrintProfileId]
   }
 }

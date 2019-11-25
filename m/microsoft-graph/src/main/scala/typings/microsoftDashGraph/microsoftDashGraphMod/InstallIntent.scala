@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait InstallIntent extends js.Object
 
+object InstallIntent {
+  @scala.inline
+  def available: typings.microsoftDashGraph.microsoftDashGraphStrings.available = this.cast("available")
+  @scala.inline
+  def availableWithoutEnrollment: typings.microsoftDashGraph.microsoftDashGraphStrings.availableWithoutEnrollment = this.cast("availableWithoutEnrollment")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def required: typings.microsoftDashGraph.microsoftDashGraphStrings.required = this.cast("required")
+  @scala.inline
+  def uninstall: typings.microsoftDashGraph.microsoftDashGraphStrings.uninstall = this.cast("uninstall")
+}
+

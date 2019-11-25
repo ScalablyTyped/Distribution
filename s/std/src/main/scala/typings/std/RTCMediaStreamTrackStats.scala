@@ -42,8 +42,8 @@ object RTCMediaStreamTrackStats {
     ssrcIds: js.Array[java.lang.String] = null,
     trackIdentifier: java.lang.String = null
   ): RTCMediaStreamTrackStats = {
-    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (audioLevel != null) __obj.updateDynamic("audioLevel")(audioLevel.asInstanceOf[js.Any])
     if (echoReturnLoss != null) __obj.updateDynamic("echoReturnLoss")(echoReturnLoss.asInstanceOf[js.Any])
     if (echoReturnLossEnhancement != null) __obj.updateDynamic("echoReturnLossEnhancement")(echoReturnLossEnhancement.asInstanceOf[js.Any])
@@ -55,9 +55,9 @@ object RTCMediaStreamTrackStats {
     if (framesPerSecond != null) __obj.updateDynamic("framesPerSecond")(framesPerSecond.asInstanceOf[js.Any])
     if (framesReceived != null) __obj.updateDynamic("framesReceived")(framesReceived.asInstanceOf[js.Any])
     if (framesSent != null) __obj.updateDynamic("framesSent")(framesSent.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteSource)) __obj.updateDynamic("remoteSource")(remoteSource)
-    if (ssrcIds != null) __obj.updateDynamic("ssrcIds")(ssrcIds)
-    if (trackIdentifier != null) __obj.updateDynamic("trackIdentifier")(trackIdentifier)
+    if (!js.isUndefined(remoteSource)) __obj.updateDynamic("remoteSource")(remoteSource.asInstanceOf[js.Any])
+    if (ssrcIds != null) __obj.updateDynamic("ssrcIds")(ssrcIds.asInstanceOf[js.Any])
+    if (trackIdentifier != null) __obj.updateDynamic("trackIdentifier")(trackIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCMediaStreamTrackStats]
   }
 }

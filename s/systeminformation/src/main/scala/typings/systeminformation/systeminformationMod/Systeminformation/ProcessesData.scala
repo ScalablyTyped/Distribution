@@ -23,7 +23,7 @@ object ProcessesData {
     sleeping: Double,
     unknown: Double
   ): ProcessesData = {
-    val __obj = js.Dynamic.literal(all = all, blocked = blocked, list = list, running = running, sleeping = sleeping, unknown = unknown)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], blocked = blocked.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any], sleeping = sleeping.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProcessesData]
   }

@@ -49,7 +49,7 @@ trait ListMeta extends js.Object {
 object ListMeta {
   @scala.inline
   def apply(continue: String, remainingItemCount: Double, resourceVersion: String, selfLink: String): ListMeta = {
-    val __obj = js.Dynamic.literal(continue = continue, remainingItemCount = remainingItemCount, resourceVersion = resourceVersion, selfLink = selfLink)
+    val __obj = js.Dynamic.literal(continue = continue.asInstanceOf[js.Any], remainingItemCount = remainingItemCount.asInstanceOf[js.Any], resourceVersion = resourceVersion.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListMeta]
   }

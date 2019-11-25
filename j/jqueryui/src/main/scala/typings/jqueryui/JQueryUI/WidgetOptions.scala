@@ -15,9 +15,9 @@ object WidgetOptions {
   @scala.inline
   def apply(disabled: js.UndefOr[Boolean] = js.undefined, hide: js.Any = null, show: js.Any = null): WidgetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetOptions]
   }
 }

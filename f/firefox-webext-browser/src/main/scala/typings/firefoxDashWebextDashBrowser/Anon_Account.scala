@@ -19,9 +19,9 @@ object Anon_Account {
     scopes: js.Array[String] = null
   ): Anon_Account = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account)
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Account]
   }
 }

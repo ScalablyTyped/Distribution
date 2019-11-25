@@ -16,7 +16,7 @@ trait FormsOnFormSubmit extends AppsScriptEvent {
 object FormsOnFormSubmit {
   @scala.inline
   def apply(authMode: AuthMode, response: FormResponse, source: Form, triggerUid: String, user: User): FormsOnFormSubmit = {
-    val __obj = js.Dynamic.literal(authMode = authMode, response = response, source = source, triggerUid = triggerUid, user = user)
+    val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FormsOnFormSubmit]
   }

@@ -12,10 +12,14 @@ import scala.scalajs.js.annotation._
 trait LodashGroupBy extends js.Object {
   def apply[T](iteratee: ValueIteratee[T]): Dictionary[js.Array[T]] = js.native
   def apply[T /* <: js.Object */](
-    iteratee: ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
+    iteratee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ],
     collection: T
   ): Dictionary[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def apply[T](iteratee: ValueIteratee[T], collection: List[T]): Dictionary[js.Array[T]] = js.native
   def apply[T /* <: js.Object */](iteratee: __): LodashGroupBy2x2[T] = js.native

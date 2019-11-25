@@ -22,9 +22,9 @@ object Params {
     query: Query = null
   ): Params = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (paginate != null) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

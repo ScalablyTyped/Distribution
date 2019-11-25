@@ -14,8 +14,8 @@ trait Payment extends BaseOptions {
 object Payment {
   @scala.inline
   def apply(amount: String, asset: Asset, destination: String, source: String = null): Payment = {
-    val __obj = js.Dynamic.literal(amount = amount, asset = asset, destination = destination)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], asset = asset.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payment]
   }
 }

@@ -12,7 +12,7 @@ trait FromToPair extends js.Object {
 object FromToPair {
   @scala.inline
   def apply(from: String, to: String): FromToPair = {
-    val __obj = js.Dynamic.literal(from = from, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FromToPair]
   }

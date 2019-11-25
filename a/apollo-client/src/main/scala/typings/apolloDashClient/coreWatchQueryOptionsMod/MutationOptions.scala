@@ -30,15 +30,15 @@ object MutationOptions {
     updateQueries: MutationQueryReducersMap[T] = null,
     variables: TVariables = null
   ): MutationOptions[T, TVariables] = {
-    val __obj = js.Dynamic.literal(mutation = mutation)
-    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
+    val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any])
+    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy.asInstanceOf[js.Any])
+    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
-    if (updateQueries != null) __obj.updateDynamic("updateQueries")(updateQueries)
+    if (updateQueries != null) __obj.updateDynamic("updateQueries")(updateQueries.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationOptions[T, TVariables]]
   }

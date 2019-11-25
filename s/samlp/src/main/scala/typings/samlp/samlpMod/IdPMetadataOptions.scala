@@ -25,11 +25,11 @@ object IdPMetadataOptions {
     profileMapper: ProfileMapperConstructor = null,
     redirectEndpointPath: String = null
   ): IdPMetadataOptions = {
-    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], issuer = issuer)
-    if (logoutEndpointPaths != null) __obj.updateDynamic("logoutEndpointPaths")(logoutEndpointPaths)
-    if (postEndpointPath != null) __obj.updateDynamic("postEndpointPath")(postEndpointPath)
-    if (profileMapper != null) __obj.updateDynamic("profileMapper")(profileMapper)
-    if (redirectEndpointPath != null) __obj.updateDynamic("redirectEndpointPath")(redirectEndpointPath)
+    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
+    if (logoutEndpointPaths != null) __obj.updateDynamic("logoutEndpointPaths")(logoutEndpointPaths.asInstanceOf[js.Any])
+    if (postEndpointPath != null) __obj.updateDynamic("postEndpointPath")(postEndpointPath.asInstanceOf[js.Any])
+    if (profileMapper != null) __obj.updateDynamic("profileMapper")(profileMapper.asInstanceOf[js.Any])
+    if (redirectEndpointPath != null) __obj.updateDynamic("redirectEndpointPath")(redirectEndpointPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdPMetadataOptions]
   }
 }

@@ -20,10 +20,10 @@ object Comment {
     suggestion: Suggestion = null
   ): Comment = {
     val __obj = js.Dynamic.literal()
-    if (assignment != null) __obj.updateDynamic("assignment")(assignment)
-    if (mentionedUsers != null) __obj.updateDynamic("mentionedUsers")(mentionedUsers)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion)
+    if (assignment != null) __obj.updateDynamic("assignment")(assignment.asInstanceOf[js.Any])
+    if (mentionedUsers != null) __obj.updateDynamic("mentionedUsers")(mentionedUsers.asInstanceOf[js.Any])
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

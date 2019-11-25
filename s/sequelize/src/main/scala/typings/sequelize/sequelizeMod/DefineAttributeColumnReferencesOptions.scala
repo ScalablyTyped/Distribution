@@ -37,7 +37,7 @@ object DefineAttributeColumnReferencesOptions {
   ): DefineAttributeColumnReferencesOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     if (deferrable != null) __obj.updateDynamic("deferrable")(deferrable.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineAttributeColumnReferencesOptions]
   }
 }

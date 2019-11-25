@@ -23,8 +23,8 @@ object AnnotationsMeasureTypeBackgroundOptions {
   @scala.inline
   def apply(fill: String = null, stroke: js.Any = null, strokeWidth: Int | Double = null): AnnotationsMeasureTypeBackgroundOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsMeasureTypeBackgroundOptions]
   }

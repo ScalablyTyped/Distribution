@@ -15,7 +15,7 @@ object HighligherProps {
   def apply(children: ReactNode = null, search: String = null): HighligherProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search)
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighligherProps]
   }
 }

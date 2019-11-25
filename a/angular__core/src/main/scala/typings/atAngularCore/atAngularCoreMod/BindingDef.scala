@@ -23,12 +23,12 @@ object BindingDef {
     securityContext: SecurityContext = null,
     suffix: String = null
   ): BindingDef = {
-    val __obj = js.Dynamic.literal(flags = flags)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nonMinifiedName != null) __obj.updateDynamic("nonMinifiedName")(nonMinifiedName)
-    if (ns != null) __obj.updateDynamic("ns")(ns)
-    if (securityContext != null) __obj.updateDynamic("securityContext")(securityContext)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nonMinifiedName != null) __obj.updateDynamic("nonMinifiedName")(nonMinifiedName.asInstanceOf[js.Any])
+    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
+    if (securityContext != null) __obj.updateDynamic("securityContext")(securityContext.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingDef]
   }
 }

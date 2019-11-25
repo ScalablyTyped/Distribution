@@ -22,7 +22,7 @@ object MessageDocumentQuickPulse {
     Version: String,
     __type: String
   ): MessageDocumentQuickPulse = {
-    val __obj = js.Dynamic.literal(DocumentType = DocumentType, Message = Message, OperationId = OperationId, Properties = Properties, SeverityLevel = SeverityLevel, Version = Version, __type = __type)
+    val __obj = js.Dynamic.literal(DocumentType = DocumentType.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], OperationId = OperationId.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], SeverityLevel = SeverityLevel.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], __type = __type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageDocumentQuickPulse]
   }

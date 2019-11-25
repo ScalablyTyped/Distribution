@@ -35,17 +35,17 @@ object httpRequestOptions {
     socketPath: String = null
   ): httpRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[httpRequestOptions]
   }
 }

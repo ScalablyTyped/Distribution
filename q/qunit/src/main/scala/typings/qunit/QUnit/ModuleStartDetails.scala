@@ -11,7 +11,7 @@ trait ModuleStartDetails extends js.Object {
 object ModuleStartDetails {
   @scala.inline
   def apply(name: String): ModuleStartDetails = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModuleStartDetails]
   }

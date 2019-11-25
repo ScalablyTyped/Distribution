@@ -42,16 +42,16 @@ object AccountStatusDataQualityIssue {
     submittedValue: String = null
   ): AccountStatusDataQualityIssue = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (displayedValue != null) __obj.updateDynamic("displayedValue")(displayedValue)
-    if (exampleItems != null) __obj.updateDynamic("exampleItems")(exampleItems)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastChecked != null) __obj.updateDynamic("lastChecked")(lastChecked)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (displayedValue != null) __obj.updateDynamic("displayedValue")(displayedValue.asInstanceOf[js.Any])
+    if (exampleItems != null) __obj.updateDynamic("exampleItems")(exampleItems.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastChecked != null) __obj.updateDynamic("lastChecked")(lastChecked.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (numItems != null) __obj.updateDynamic("numItems")(numItems.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (submittedValue != null) __obj.updateDynamic("submittedValue")(submittedValue)
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (submittedValue != null) __obj.updateDynamic("submittedValue")(submittedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountStatusDataQualityIssue]
   }
 }

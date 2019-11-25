@@ -18,8 +18,8 @@ object Anon_ApiURL {
     defaultHeaders: StringDictionary[js.UndefOr[String | js.Array[String]]],
     _sameOrigin: js.UndefOr[Boolean] = js.undefined
   ): Anon_ApiURL = {
-    val __obj = js.Dynamic.literal(apiURL = apiURL, defaultHeaders = defaultHeaders)
-    if (!js.isUndefined(_sameOrigin)) __obj.updateDynamic("_sameOrigin")(_sameOrigin)
+    val __obj = js.Dynamic.literal(apiURL = apiURL.asInstanceOf[js.Any], defaultHeaders = defaultHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(_sameOrigin)) __obj.updateDynamic("_sameOrigin")(_sameOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApiURL]
   }
 }

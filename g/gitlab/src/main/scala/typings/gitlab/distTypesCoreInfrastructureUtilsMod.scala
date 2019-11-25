@@ -23,7 +23,7 @@ object distTypesCoreInfrastructureUtilsMod extends js.Object {
     extends Instantiable1[/* args */ js.Any, js.Any]
   
   def bundler[T /* <: StringDictionary[Constructor] */, P /* <: String */](services: T): Bundle[T, P] = js.native
-  type Mapper[T /* <: StringDictionary[Constructor] */, P /* <: String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Mapper[T /* <: StringDictionary[Constructor] */, P /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in P ]: std.InstanceType<T[name]>}
     */ typings.gitlab.gitlabStrings.Mapper with T
 }

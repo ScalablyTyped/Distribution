@@ -139,7 +139,7 @@ object mendixmodelsdkStrings {
   sealed trait fail extends js.Object
   
   @js.native
-  sealed trait failed extends IUpdateAppJobStatus
+  sealed trait failed_ extends IUpdateAppJobStatus
   
   @js.native
   sealed trait fast extends js.Object
@@ -172,7 +172,7 @@ object mendixmodelsdkStrings {
   sealed trait resuming extends IUpdateAppJobStatus
   
   @js.native
-  sealed trait started extends IUpdateAppJobStatus
+  sealed trait started_ extends IUpdateAppJobStatus
   
   @js.native
   sealed trait success extends js.Object
@@ -184,7 +184,7 @@ object mendixmodelsdkStrings {
   sealed trait update extends LockType
   
   @js.native
-  sealed trait updating extends IUpdateAppJobStatus
+  sealed trait updating_ extends IUpdateAppJobStatus
   
   @js.native
   sealed trait zip extends js.Object
@@ -274,7 +274,7 @@ object mendixmodelsdkStrings {
   @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  def failed_ : failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
   def fast: fast = "fast".asInstanceOf[fast]
   @scala.inline
@@ -296,7 +296,7 @@ object mendixmodelsdkStrings {
   @scala.inline
   def resuming: resuming = "resuming".asInstanceOf[resuming]
   @scala.inline
-  def started: started = "started".asInstanceOf[started]
+  def started_ : started_ = "started".asInstanceOf[started_]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline
@@ -304,7 +304,7 @@ object mendixmodelsdkStrings {
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline
-  def updating: updating = "updating".asInstanceOf[updating]
+  def updating_ : updating_ = "updating".asInstanceOf[updating_]
   @scala.inline
   def zip: zip = "zip".asInstanceOf[zip]
 }

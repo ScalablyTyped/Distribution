@@ -40,7 +40,7 @@ object TypeofCalendarLite {
       _MonthWidget
     ]
   ): TypeofCalendarLite = {
-    val __obj = js.Dynamic.literal(_MonthWidget = _MonthWidget)
+    val __obj = js.Dynamic.literal(_MonthWidget = _MonthWidget.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofCalendarLite]
   }

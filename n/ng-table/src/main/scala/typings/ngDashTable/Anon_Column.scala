@@ -15,8 +15,8 @@ trait Anon_Column extends js.Object {
 object Anon_Column {
   @scala.inline
   def apply($columns: js.Array[IColumnDef], $column: IColumnDef = null): Anon_Column = {
-    val __obj = js.Dynamic.literal($columns = $columns)
-    if ($column != null) __obj.updateDynamic("$column")($column)
+    val __obj = js.Dynamic.literal($columns = $columns.asInstanceOf[js.Any])
+    if ($column != null) __obj.updateDynamic("$column")($column.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Column]
   }
 }

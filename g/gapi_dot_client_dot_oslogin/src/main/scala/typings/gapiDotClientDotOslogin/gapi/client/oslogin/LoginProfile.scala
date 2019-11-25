@@ -25,10 +25,10 @@ object LoginProfile {
     suspended: js.UndefOr[Boolean] = js.undefined
   ): LoginProfile = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (posixAccounts != null) __obj.updateDynamic("posixAccounts")(posixAccounts)
-    if (sshPublicKeys != null) __obj.updateDynamic("sshPublicKeys")(sshPublicKeys)
-    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (posixAccounts != null) __obj.updateDynamic("posixAccounts")(posixAccounts.asInstanceOf[js.Any])
+    if (sshPublicKeys != null) __obj.updateDynamic("sshPublicKeys")(sshPublicKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginProfile]
   }
 }

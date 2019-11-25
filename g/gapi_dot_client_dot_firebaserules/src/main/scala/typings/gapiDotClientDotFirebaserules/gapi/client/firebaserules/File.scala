@@ -17,9 +17,9 @@ object File {
   @scala.inline
   def apply(content: String = null, fingerprint: String = null, name: String = null): File = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
 }

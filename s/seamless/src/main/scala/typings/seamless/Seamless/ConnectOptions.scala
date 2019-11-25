@@ -78,17 +78,17 @@ object ConnectOptions {
     url: String = null
   ): ConnectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAppendedStyleInjection)) __obj.updateDynamic("allowAppendedStyleInjection")(allowAppendedStyleInjection)
-    if (!js.isUndefined(allowStyleInjection)) __obj.updateDynamic("allowStyleInjection")(allowStyleInjection)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (cookieFallbackAfterMsg != null) __obj.updateDynamic("cookieFallbackAfterMsg")(cookieFallbackAfterMsg)
-    if (cookieFallbackLinkMsg != null) __obj.updateDynamic("cookieFallbackLinkMsg")(cookieFallbackLinkMsg)
-    if (cookieFallbackMsg != null) __obj.updateDynamic("cookieFallbackMsg")(cookieFallbackMsg)
+    if (!js.isUndefined(allowAppendedStyleInjection)) __obj.updateDynamic("allowAppendedStyleInjection")(allowAppendedStyleInjection.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowStyleInjection)) __obj.updateDynamic("allowStyleInjection")(allowStyleInjection.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (cookieFallbackAfterMsg != null) __obj.updateDynamic("cookieFallbackAfterMsg")(cookieFallbackAfterMsg.asInstanceOf[js.Any])
+    if (cookieFallbackLinkMsg != null) __obj.updateDynamic("cookieFallbackLinkMsg")(cookieFallbackLinkMsg.asInstanceOf[js.Any])
+    if (cookieFallbackMsg != null) __obj.updateDynamic("cookieFallbackMsg")(cookieFallbackMsg.asInstanceOf[js.Any])
     if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction1(onConnect))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (!js.isUndefined(requireCookies)) __obj.updateDynamic("requireCookies")(requireCookies)
+    if (!js.isUndefined(requireCookies)) __obj.updateDynamic("requireCookies")(requireCookies.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_RaxConfig extends js.Object {
 object Anon_RaxConfig {
   @scala.inline
   def apply(raxConfig: RetryConfig): Anon_RaxConfig = {
-    val __obj = js.Dynamic.literal(raxConfig = raxConfig)
+    val __obj = js.Dynamic.literal(raxConfig = raxConfig.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RaxConfig]
   }

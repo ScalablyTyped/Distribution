@@ -40,10 +40,10 @@ object IgPivotViewDataSelectorOptions {
     dropDownParent: js.Any = null
   ): IgPivotViewDataSelectorOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (customMoveValidation != null) __obj.updateDynamic("customMoveValidation")(customMoveValidation)
-    if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings)
-    if (dropDownParent != null) __obj.updateDynamic("dropDownParent")(dropDownParent)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (customMoveValidation != null) __obj.updateDynamic("customMoveValidation")(customMoveValidation.asInstanceOf[js.Any])
+    if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings.asInstanceOf[js.Any])
+    if (dropDownParent != null) __obj.updateDynamic("dropDownParent")(dropDownParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotViewDataSelectorOptions]
   }
 }

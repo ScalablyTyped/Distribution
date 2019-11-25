@@ -24,10 +24,10 @@ object SourceMapOptions {
     url: String | `inline` = null
   ): SourceMapOptions = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(includeSources)) __obj.updateDynamic("includeSources")(includeSources)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSources)) __obj.updateDynamic("includeSources")(includeSources.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMapOptions]
   }

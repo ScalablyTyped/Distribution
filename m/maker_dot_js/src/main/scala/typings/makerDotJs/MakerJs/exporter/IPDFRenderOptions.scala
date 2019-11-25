@@ -23,9 +23,9 @@ object IPDFRenderOptions {
   @scala.inline
   def apply(origin: IPoint = null, stroke: String = null, units: String = null): IPDFRenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPDFRenderOptions]
   }
 }

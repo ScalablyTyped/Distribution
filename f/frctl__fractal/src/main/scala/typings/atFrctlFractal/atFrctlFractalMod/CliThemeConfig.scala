@@ -22,10 +22,10 @@ object CliThemeConfig {
     styles: StringDictionary[js.Any] = null
   ): CliThemeConfig = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (`delimiter.format` != null) __obj.updateDynamic("delimiter.format")(js.Any.fromFunction1(`delimiter.format`))
-    if (`delimiter.text` != null) __obj.updateDynamic("delimiter.text")(`delimiter.text`)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (`delimiter.text` != null) __obj.updateDynamic("delimiter.text")(`delimiter.text`.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CliThemeConfig]
   }
 }

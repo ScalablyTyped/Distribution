@@ -31,9 +31,9 @@ object EncodeArgs {
     attributes: js.Any = null,
     identifier: Int | Double = null
   ): EncodeArgs = {
-    val __obj = js.Dynamic.literal(code = code, secret = secret)
-    if (!js.isUndefined(add_message_authenticator)) __obj.updateDynamic("add_message_authenticator")(add_message_authenticator)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
+    if (!js.isUndefined(add_message_authenticator)) __obj.updateDynamic("add_message_authenticator")(add_message_authenticator.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodeArgs]
   }

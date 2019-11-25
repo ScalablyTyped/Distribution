@@ -41,9 +41,9 @@ object PortalFolderProperties {
   ): PortalFolderProperties = {
     val __obj = js.Dynamic.literal()
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (portal != null) __obj.updateDynamic("portal")(portal)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalFolderProperties]
   }
 }

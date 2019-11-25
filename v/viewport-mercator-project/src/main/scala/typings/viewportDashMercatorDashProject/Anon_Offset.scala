@@ -15,7 +15,7 @@ object Anon_Offset {
   @scala.inline
   def apply(offset: Coordinates = null, padding: Padding = null): Anon_Offset = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Offset]
   }

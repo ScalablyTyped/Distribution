@@ -22,11 +22,11 @@ object StreetViewPanoramaData {
     tiles: StreetViewTileData = null
   ): StreetViewPanoramaData = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (imageDate != null) __obj.updateDynamic("imageDate")(imageDate)
-    if (links != null) __obj.updateDynamic("links")(links)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (tiles != null) __obj.updateDynamic("tiles")(tiles)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (imageDate != null) __obj.updateDynamic("imageDate")(imageDate.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreetViewPanoramaData]
   }
 }

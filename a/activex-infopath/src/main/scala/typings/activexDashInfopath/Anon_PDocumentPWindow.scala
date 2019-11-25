@@ -14,7 +14,7 @@ trait Anon_PDocumentPWindow extends js.Object {
 object Anon_PDocumentPWindow {
   @scala.inline
   def apply(pDocument: _XDocument, pWindow: Window): Anon_PDocumentPWindow = {
-    val __obj = js.Dynamic.literal(pDocument = pDocument, pWindow = pWindow)
+    val __obj = js.Dynamic.literal(pDocument = pDocument.asInstanceOf[js.Any], pWindow = pWindow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PDocumentPWindow]
   }

@@ -12,7 +12,7 @@ trait Anon_Fret extends js.Object {
 object Anon_Fret {
   @scala.inline
   def apply(fret: Double, str: Double): Anon_Fret = {
-    val __obj = js.Dynamic.literal(fret = fret, str = str)
+    val __obj = js.Dynamic.literal(fret = fret.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fret]
   }

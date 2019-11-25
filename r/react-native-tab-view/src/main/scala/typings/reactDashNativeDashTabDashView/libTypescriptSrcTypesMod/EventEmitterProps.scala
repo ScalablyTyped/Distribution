@@ -14,10 +14,9 @@ trait EventEmitterProps extends js.Object {
 
 object EventEmitterProps {
   @scala.inline
-  def apply(addListener_enter: (enter, Listener) => Unit, removeListener_enter: (enter, Listener) => Unit): EventEmitterProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(js.Any.fromFunction2(addListener_enter))
-    __obj.updateDynamic("removeListener")(js.Any.fromFunction2(removeListener_enter))
+  def apply(addListener: (enter, Listener) => Unit, removeListener: (enter, Listener) => Unit): EventEmitterProps = {
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), removeListener = js.Any.fromFunction2(removeListener))
+  
     __obj.asInstanceOf[EventEmitterProps]
   }
 }

@@ -11,8 +11,8 @@ trait ResolvedGroupOrChannel extends ResolvedChat {
 object ResolvedGroupOrChannel {
   @scala.inline
   def apply(id: Double | String, title: String, `type`: String, username: String, when: String): ResolvedGroupOrChannel = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title, username = username, when = when)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedGroupOrChannel]
   }
 }

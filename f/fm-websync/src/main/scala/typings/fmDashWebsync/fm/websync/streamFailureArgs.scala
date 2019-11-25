@@ -26,7 +26,7 @@ object streamFailureArgs {
     timestamp: Date,
     willReconnect: Boolean
   ): streamFailureArgs = {
-    val __obj = js.Dynamic.literal(client = client, clientId = clientId, error = error, meta = meta, timestamp = timestamp, willReconnect = willReconnect)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], willReconnect = willReconnect.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[streamFailureArgs]
   }

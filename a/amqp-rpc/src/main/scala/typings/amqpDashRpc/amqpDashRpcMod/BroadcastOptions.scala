@@ -20,9 +20,9 @@ object BroadcastOptions {
     ttl: Int | Double = null
   ): BroadcastOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
-    if (onResponse != null) __obj.updateDynamic("onResponse")(onResponse)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
+    if (onResponse != null) __obj.updateDynamic("onResponse")(onResponse.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadcastOptions]
   }

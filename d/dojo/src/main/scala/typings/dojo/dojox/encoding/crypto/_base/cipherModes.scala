@@ -40,7 +40,7 @@ trait cipherModes extends js.Object {
 object cipherModes {
   @scala.inline
   def apply(CBC: Double, CFB: Double, CTR: Double, ECB: Double, OFB: Double, PCBC: Double): cipherModes = {
-    val __obj = js.Dynamic.literal(CBC = CBC, CFB = CFB, CTR = CTR, ECB = ECB, OFB = OFB, PCBC = PCBC)
+    val __obj = js.Dynamic.literal(CBC = CBC.asInstanceOf[js.Any], CFB = CFB.asInstanceOf[js.Any], CTR = CTR.asInstanceOf[js.Any], ECB = ECB.asInstanceOf[js.Any], OFB = OFB.asInstanceOf[js.Any], PCBC = PCBC.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[cipherModes]
   }

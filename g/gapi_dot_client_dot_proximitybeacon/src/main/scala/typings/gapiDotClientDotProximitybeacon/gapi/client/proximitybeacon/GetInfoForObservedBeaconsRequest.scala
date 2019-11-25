@@ -25,8 +25,8 @@ object GetInfoForObservedBeaconsRequest {
   @scala.inline
   def apply(namespacedTypes: js.Array[String] = null, observations: js.Array[Observation] = null): GetInfoForObservedBeaconsRequest = {
     val __obj = js.Dynamic.literal()
-    if (namespacedTypes != null) __obj.updateDynamic("namespacedTypes")(namespacedTypes)
-    if (observations != null) __obj.updateDynamic("observations")(observations)
+    if (namespacedTypes != null) __obj.updateDynamic("namespacedTypes")(namespacedTypes.asInstanceOf[js.Any])
+    if (observations != null) __obj.updateDynamic("observations")(observations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInfoForObservedBeaconsRequest]
   }
 }

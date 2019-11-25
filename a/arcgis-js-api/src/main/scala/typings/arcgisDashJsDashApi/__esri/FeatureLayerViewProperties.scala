@@ -42,11 +42,11 @@ object FeatureLayerViewProperties {
     visible: js.UndefOr[Boolean] = js.undefined
   ): FeatureLayerViewProperties = {
     val __obj = js.Dynamic.literal()
-    if (effect != null) __obj.updateDynamic("effect")(effect)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (maximumNumberOfFeatures != null) __obj.updateDynamic("maximumNumberOfFeatures")(maximumNumberOfFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumNumberOfFeaturesExceeded)) __obj.updateDynamic("maximumNumberOfFeaturesExceeded")(maximumNumberOfFeaturesExceeded)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(maximumNumberOfFeaturesExceeded)) __obj.updateDynamic("maximumNumberOfFeaturesExceeded")(maximumNumberOfFeaturesExceeded.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerViewProperties]
   }
 }

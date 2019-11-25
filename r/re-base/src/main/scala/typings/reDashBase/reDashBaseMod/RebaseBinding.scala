@@ -14,7 +14,7 @@ trait RebaseBinding extends js.Object {
 object RebaseBinding {
   @scala.inline
   def apply(context: js.Object, endpoint: String, id: Double, method: String): RebaseBinding = {
-    val __obj = js.Dynamic.literal(context = context, endpoint = endpoint, id = id, method = method)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RebaseBinding]
   }

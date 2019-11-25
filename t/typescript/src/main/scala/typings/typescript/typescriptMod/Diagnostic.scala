@@ -24,12 +24,12 @@ object Diagnostic {
     source: String = null,
     start: Int | Double = null
   ): Diagnostic = {
-    val __obj = js.Dynamic.literal(category = category, code = code, messageText = messageText.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation)
-    if (reportsUnnecessary != null) __obj.updateDynamic("reportsUnnecessary")(reportsUnnecessary)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation.asInstanceOf[js.Any])
+    if (reportsUnnecessary != null) __obj.updateDynamic("reportsUnnecessary")(reportsUnnecessary.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostic]
   }

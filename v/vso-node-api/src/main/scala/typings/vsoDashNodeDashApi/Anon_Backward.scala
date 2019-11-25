@@ -12,7 +12,7 @@ trait Anon_Backward extends js.Object {
 object Anon_Backward {
   @scala.inline
   def apply(backward: Double, forward: Double): Anon_Backward = {
-    val __obj = js.Dynamic.literal(backward = backward, forward = forward)
+    val __obj = js.Dynamic.literal(backward = backward.asInstanceOf[js.Any], forward = forward.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Backward]
   }

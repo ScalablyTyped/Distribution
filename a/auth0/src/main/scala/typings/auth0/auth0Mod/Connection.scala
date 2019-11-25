@@ -32,14 +32,14 @@ object Connection {
     strategy: Strategy = null
   ): Connection = {
     val __obj = js.Dynamic.literal()
-    if (enabled_clients != null) __obj.updateDynamic("enabled_clients")(enabled_clients)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(is_domain_connection)) __obj.updateDynamic("is_domain_connection")(is_domain_connection)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (realms != null) __obj.updateDynamic("realms")(realms)
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    if (enabled_clients != null) __obj.updateDynamic("enabled_clients")(enabled_clients.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_domain_connection)) __obj.updateDynamic("is_domain_connection")(is_domain_connection.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (realms != null) __obj.updateDynamic("realms")(realms.asInstanceOf[js.Any])
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]
   }
 }

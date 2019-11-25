@@ -86,14 +86,14 @@ object ImageServiceIdentifyParametersProperties {
     val __obj = js.Dynamic.literal()
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
     if (maxItemCount != null) __obj.updateDynamic("maxItemCount")(maxItemCount.asInstanceOf[js.Any])
-    if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule)
-    if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize)
-    if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule)
-    if (renderingRules != null) __obj.updateDynamic("renderingRules")(renderingRules)
-    if (!js.isUndefined(returnCatalogItems)) __obj.updateDynamic("returnCatalogItems")(returnCatalogItems)
-    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
-    if (!js.isUndefined(returnPixelValues)) __obj.updateDynamic("returnPixelValues")(returnPixelValues)
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
+    if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule.asInstanceOf[js.Any])
+    if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize.asInstanceOf[js.Any])
+    if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule.asInstanceOf[js.Any])
+    if (renderingRules != null) __obj.updateDynamic("renderingRules")(renderingRules.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnCatalogItems)) __obj.updateDynamic("returnCatalogItems")(returnCatalogItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPixelValues)) __obj.updateDynamic("returnPixelValues")(returnPixelValues.asInstanceOf[js.Any])
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageServiceIdentifyParametersProperties]
   }
 }

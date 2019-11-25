@@ -22,9 +22,9 @@ trait InitCCPOptions extends js.Object {
 object InitCCPOptions {
   @scala.inline
   def apply(ccpUrl: String, loginPopup: js.UndefOr[Boolean] = js.undefined, softphone: SoftPhoneOptions = null): InitCCPOptions = {
-    val __obj = js.Dynamic.literal(ccpUrl = ccpUrl)
-    if (!js.isUndefined(loginPopup)) __obj.updateDynamic("loginPopup")(loginPopup)
-    if (softphone != null) __obj.updateDynamic("softphone")(softphone)
+    val __obj = js.Dynamic.literal(ccpUrl = ccpUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(loginPopup)) __obj.updateDynamic("loginPopup")(loginPopup.asInstanceOf[js.Any])
+    if (softphone != null) __obj.updateDynamic("softphone")(softphone.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitCCPOptions]
   }
 }

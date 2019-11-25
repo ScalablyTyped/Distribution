@@ -13,7 +13,7 @@ object Element {
   @scala.inline
   def apply(createShadowRoot: () => ShadowRoot, shadowRoot: ShadowRoot = null): Element = {
     val __obj = js.Dynamic.literal(createShadowRoot = js.Any.fromFunction0(createShadowRoot))
-    if (shadowRoot != null) __obj.updateDynamic("shadowRoot")(shadowRoot)
+    if (shadowRoot != null) __obj.updateDynamic("shadowRoot")(shadowRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
 }

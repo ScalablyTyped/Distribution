@@ -12,7 +12,7 @@ trait ServerTime extends js.Object {
 object ServerTime {
   @scala.inline
   def apply(localTimeRecorded: Double, serverTime: Double): ServerTime = {
-    val __obj = js.Dynamic.literal(localTimeRecorded = localTimeRecorded, serverTime = serverTime)
+    val __obj = js.Dynamic.literal(localTimeRecorded = localTimeRecorded.asInstanceOf[js.Any], serverTime = serverTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerTime]
   }

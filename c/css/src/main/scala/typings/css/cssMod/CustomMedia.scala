@@ -24,11 +24,11 @@ object CustomMedia {
     `type`: String = null
   ): CustomMedia = {
     val __obj = js.Dynamic.literal()
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomMedia]
   }
 }

@@ -36,9 +36,9 @@ object IField {
     desc: String = null,
     `val`: IChain = null
   ): IField = {
-    val __obj = js.Dynamic.literal(attribute = attribute, coerceTo = coerceTo, enumerated = enumerated, filterFrom = filterFrom, ignorePublic = ignorePublic, name = name, options = options, plural = plural, singular = singular, src = src)
-    if (desc != null) __obj.updateDynamic("desc")(desc)
-    if (`val` != null) __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], coerceTo = coerceTo.asInstanceOf[js.Any], enumerated = enumerated.asInstanceOf[js.Any], filterFrom = filterFrom.asInstanceOf[js.Any], ignorePublic = ignorePublic.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (`val` != null) __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }
 }

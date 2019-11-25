@@ -11,7 +11,7 @@ trait LoadingBarState extends js.Object {
 object LoadingBarState {
   @scala.inline
   def apply(position: Double): LoadingBarState = {
-    val __obj = js.Dynamic.literal(position = position)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoadingBarState]
   }

@@ -18,8 +18,7 @@ object util extends js.Object {
   }
   
   @js.native
-  class Buffer protected ()
-    extends typings.protobufjs.protobufjsMod.Buffer {
+  class Buffer protected () extends Uint8Array {
     def this(params: js.Any*) = this()
   }
   

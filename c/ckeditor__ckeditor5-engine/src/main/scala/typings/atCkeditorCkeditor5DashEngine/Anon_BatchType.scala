@@ -20,10 +20,10 @@ object Anon_BatchType {
     selectionAttributes: js.Array[js.Object] = null
   ): Anon_BatchType = {
     val __obj = js.Dynamic.literal()
-    if (batchType != null) __obj.updateDynamic("batchType")(batchType)
-    if (!js.isUndefined(lastRangeBackward)) __obj.updateDynamic("lastRangeBackward")(lastRangeBackward)
-    if (rootName != null) __obj.updateDynamic("rootName")(rootName)
-    if (selectionAttributes != null) __obj.updateDynamic("selectionAttributes")(selectionAttributes)
+    if (batchType != null) __obj.updateDynamic("batchType")(batchType.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastRangeBackward)) __obj.updateDynamic("lastRangeBackward")(lastRangeBackward.asInstanceOf[js.Any])
+    if (rootName != null) __obj.updateDynamic("rootName")(rootName.asInstanceOf[js.Any])
+    if (selectionAttributes != null) __obj.updateDynamic("selectionAttributes")(selectionAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BatchType]
   }
 }

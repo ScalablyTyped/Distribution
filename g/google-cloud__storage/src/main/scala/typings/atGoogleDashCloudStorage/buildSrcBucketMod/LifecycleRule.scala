@@ -20,8 +20,8 @@ object LifecycleRule {
     condition: StringDictionary[Boolean | Date | Double | String],
     storageClass: String = null
   ): LifecycleRule = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], condition = condition)
-    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
+    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleRule]
   }
 }

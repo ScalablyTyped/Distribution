@@ -20,9 +20,9 @@ object MenuProps {
     className: String = null
   ): MenuProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(addonBefore)) __obj.updateDynamic("addonBefore")(addonBefore)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(addonBefore)) __obj.updateDynamic("addonBefore")(addonBefore.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
 }

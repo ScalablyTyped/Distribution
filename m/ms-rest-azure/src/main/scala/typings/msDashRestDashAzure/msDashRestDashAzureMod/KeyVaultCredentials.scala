@@ -3,7 +3,6 @@ package typings.msDashRestDashAzure.msDashRestDashAzureMod
 import typings.msDashRest.msDashRestMod.ServiceCallback
 import typings.msDashRest.msDashRestMod.ServiceClientCredentials
 import typings.msDashRest.msDashRestMod.WebResource
-import typings.msDashRestDashAzure.Fn_Err
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,14 +38,6 @@ class KeyVaultCredentials protected () extends ServiceClientCredentials {
     * @param {function(error)}  callback  The callback function.
     */
   /* CompleteClass */
-  override def signRequest(webResource: WebResource, callback: typings.msDashRest.Fn_Err): Unit = js.native
-  /**
-    * Signs a request with the Authentication header.
-    *
-    * @param {webResource} The WebResource to be signed.
-    * @param {function(error)}  callback  The callback function.
-    * @return {undefined}
-    */
-  def signRequest(webResource: WebResource, callback: Fn_Err): Unit = js.native
+  override def signRequest(webResource: WebResource, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
 

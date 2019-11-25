@@ -21,8 +21,8 @@ object DocumentCollection {
     ScannedCount: Double,
     LastEvaluatedKey: js.Any = null
   ): DocumentCollection = {
-    val __obj = js.Dynamic.literal(ConsumedCapacity = ConsumedCapacity, Count = Count, Items = Items, ScannedCount = ScannedCount)
-    if (LastEvaluatedKey != null) __obj.updateDynamic("LastEvaluatedKey")(LastEvaluatedKey)
+    val __obj = js.Dynamic.literal(ConsumedCapacity = ConsumedCapacity.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Items = Items.asInstanceOf[js.Any], ScannedCount = ScannedCount.asInstanceOf[js.Any])
+    if (LastEvaluatedKey != null) __obj.updateDynamic("LastEvaluatedKey")(LastEvaluatedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentCollection]
   }
 }

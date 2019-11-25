@@ -35,10 +35,10 @@ object Filter {
     limit: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): Filter = {
-    val __obj = js.Dynamic.literal(networkType = networkType)
-    if (!js.isUndefined(configured)) __obj.updateDynamic("configured")(configured)
+    val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
+    if (!js.isUndefined(configured)) __obj.updateDynamic("configured")(configured.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
 }

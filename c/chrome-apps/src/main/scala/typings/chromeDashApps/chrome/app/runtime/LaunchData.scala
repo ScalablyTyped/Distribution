@@ -103,13 +103,13 @@ object LaunchData {
   ): LaunchData = {
     val __obj = js.Dynamic.literal()
     if (actionData != null) __obj.updateDynamic("actionData")(actionData.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isKioskSession)) __obj.updateDynamic("isKioskSession")(isKioskSession)
-    if (!js.isUndefined(isPublicSession)) __obj.updateDynamic("isPublicSession")(isPublicSession)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (referrerUrl != null) __obj.updateDynamic("referrerUrl")(referrerUrl)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isKioskSession)) __obj.updateDynamic("isKioskSession")(isKioskSession.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPublicSession)) __obj.updateDynamic("isPublicSession")(isPublicSession.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (referrerUrl != null) __obj.updateDynamic("referrerUrl")(referrerUrl.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchData]
   }
 }

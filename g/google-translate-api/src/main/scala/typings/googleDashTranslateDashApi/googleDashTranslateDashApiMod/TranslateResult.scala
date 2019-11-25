@@ -14,7 +14,7 @@ trait TranslateResult extends js.Object {
 object TranslateResult {
   @scala.inline
   def apply(from: Anon_Language, raw: String, text: String): TranslateResult = {
-    val __obj = js.Dynamic.literal(from = from, raw = raw, text = text)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TranslateResult]
   }

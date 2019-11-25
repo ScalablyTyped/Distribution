@@ -23,7 +23,7 @@ object TfvcLabel {
     owner: IdentityRef,
     url: String
   ): TfvcLabel = {
-    val __obj = js.Dynamic.literal(_links = _links, description = description, id = id, items = items, labelScope = labelScope, modifiedDate = modifiedDate, name = name, owner = owner, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], labelScope = labelScope.asInstanceOf[js.Any], modifiedDate = modifiedDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcLabel]
   }

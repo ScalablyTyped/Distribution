@@ -47,7 +47,7 @@ object common_ {
     removeUCCFromText: js.Any => js.Any,
     setTextDirForButtons: js.Any => Unit
   ): common_ = {
-    val __obj = js.Dynamic.literal(MARK = MARK, enforceTextDirWithUcc = js.Any.fromFunction2(enforceTextDirWithUcc), removeUCCFromText = js.Any.fromFunction1(removeUCCFromText), setTextDirForButtons = js.Any.fromFunction1(setTextDirForButtons))
+    val __obj = js.Dynamic.literal(MARK = MARK.asInstanceOf[js.Any], enforceTextDirWithUcc = js.Any.fromFunction2(enforceTextDirWithUcc), removeUCCFromText = js.Any.fromFunction1(removeUCCFromText), setTextDirForButtons = js.Any.fromFunction1(setTextDirForButtons))
   
     __obj.asInstanceOf[common_]
   }

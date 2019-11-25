@@ -32,10 +32,10 @@ object ColumnChooserMovingEventUIParam {
     position: js.Any = null
   ): ColumnChooserMovingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnChooserElement != null) __obj.updateDynamic("columnChooserElement")(columnChooserElement)
-    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (columnChooserElement != null) __obj.updateDynamic("columnChooserElement")(columnChooserElement.asInstanceOf[js.Any])
+    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnChooserMovingEventUIParam]
   }
 }

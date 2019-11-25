@@ -14,9 +14,9 @@ trait IConfigParam extends js.Object {
 object IConfigParam {
   @scala.inline
   def apply(resolve: js.Any, element: Node = null, module: String = null): IConfigParam = {
-    val __obj = js.Dynamic.literal(resolve = resolve)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (module != null) __obj.updateDynamic("module")(module)
+    val __obj = js.Dynamic.literal(resolve = resolve.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfigParam]
   }
 }

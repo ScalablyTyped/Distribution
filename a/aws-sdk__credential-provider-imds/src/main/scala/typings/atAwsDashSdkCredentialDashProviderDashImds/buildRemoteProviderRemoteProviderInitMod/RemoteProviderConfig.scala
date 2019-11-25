@@ -18,7 +18,7 @@ trait RemoteProviderConfig extends js.Object {
 object RemoteProviderConfig {
   @scala.inline
   def apply(maxRetries: Double, timeout: Double): RemoteProviderConfig = {
-    val __obj = js.Dynamic.literal(maxRetries = maxRetries, timeout = timeout)
+    val __obj = js.Dynamic.literal(maxRetries = maxRetries.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RemoteProviderConfig]
   }

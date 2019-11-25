@@ -23,8 +23,8 @@ object Anon_Avsfailure {
   @scala.inline
   def apply(avs_failure: js.UndefOr[Boolean] = js.undefined, cvc_failure: js.UndefOr[Boolean] = js.undefined): Anon_Avsfailure = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(avs_failure)) __obj.updateDynamic("avs_failure")(avs_failure)
-    if (!js.isUndefined(cvc_failure)) __obj.updateDynamic("cvc_failure")(cvc_failure)
+    if (!js.isUndefined(avs_failure)) __obj.updateDynamic("avs_failure")(avs_failure.asInstanceOf[js.Any])
+    if (!js.isUndefined(cvc_failure)) __obj.updateDynamic("cvc_failure")(cvc_failure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Avsfailure]
   }
 }

@@ -26,11 +26,11 @@ object Settings {
     nesting: js.UndefOr[Boolean] = js.undefined,
     sessionTimeout: Int | Double = null
   ): Settings = {
-    val __obj = js.Dynamic.literal(application = application, baseUrl = baseUrl)
+    val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any])
     if (attributesEncoder != null) __obj.updateDynamic("attributesEncoder")(js.Any.fromFunction1(attributesEncoder))
     if (attributesParser != null) __obj.updateDynamic("attributesParser")(js.Any.fromFunction1(attributesParser))
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(nesting)) __obj.updateDynamic("nesting")(nesting)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(nesting)) __obj.updateDynamic("nesting")(nesting.asInstanceOf[js.Any])
     if (sessionTimeout != null) __obj.updateDynamic("sessionTimeout")(sessionTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }

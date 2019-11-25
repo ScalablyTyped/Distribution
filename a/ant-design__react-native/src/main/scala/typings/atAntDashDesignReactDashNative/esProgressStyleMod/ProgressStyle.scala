@@ -13,7 +13,7 @@ trait ProgressStyle extends js.Object {
 object ProgressStyle {
   @scala.inline
   def apply(progressBar: ViewStyle, progressOuter: ViewStyle): ProgressStyle = {
-    val __obj = js.Dynamic.literal(progressBar = progressBar, progressOuter = progressOuter)
+    val __obj = js.Dynamic.literal(progressBar = progressBar.asInstanceOf[js.Any], progressOuter = progressOuter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProgressStyle]
   }

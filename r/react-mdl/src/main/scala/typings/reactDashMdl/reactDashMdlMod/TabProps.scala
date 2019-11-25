@@ -28,11 +28,11 @@ object TabProps {
     tabId: Int | Double = null
   ): TabProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (CustomRenderedComponent != null) js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix.asInstanceOf[js.Any])
     if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction1(onTabClick))
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]

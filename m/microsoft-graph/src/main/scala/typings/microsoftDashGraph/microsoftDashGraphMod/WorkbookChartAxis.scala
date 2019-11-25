@@ -49,15 +49,15 @@ object WorkbookChartAxis {
     title: WorkbookChartAxisTitle = null
   ): WorkbookChartAxis = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (majorGridlines != null) __obj.updateDynamic("majorGridlines")(majorGridlines)
-    if (majorUnit != null) __obj.updateDynamic("majorUnit")(majorUnit)
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum)
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum)
-    if (minorGridlines != null) __obj.updateDynamic("minorGridlines")(minorGridlines)
-    if (minorUnit != null) __obj.updateDynamic("minorUnit")(minorUnit)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (majorGridlines != null) __obj.updateDynamic("majorGridlines")(majorGridlines.asInstanceOf[js.Any])
+    if (majorUnit != null) __obj.updateDynamic("majorUnit")(majorUnit.asInstanceOf[js.Any])
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (minorGridlines != null) __obj.updateDynamic("minorGridlines")(minorGridlines.asInstanceOf[js.Any])
+    if (minorUnit != null) __obj.updateDynamic("minorUnit")(minorUnit.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartAxis]
   }
 }

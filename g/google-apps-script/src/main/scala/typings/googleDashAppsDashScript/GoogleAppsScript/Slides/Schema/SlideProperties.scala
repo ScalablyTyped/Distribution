@@ -18,9 +18,9 @@ object SlideProperties {
     notesPage: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.Page = null
   ): SlideProperties = {
     val __obj = js.Dynamic.literal()
-    if (layoutObjectId != null) __obj.updateDynamic("layoutObjectId")(layoutObjectId)
-    if (masterObjectId != null) __obj.updateDynamic("masterObjectId")(masterObjectId)
-    if (notesPage != null) __obj.updateDynamic("notesPage")(notesPage)
+    if (layoutObjectId != null) __obj.updateDynamic("layoutObjectId")(layoutObjectId.asInstanceOf[js.Any])
+    if (masterObjectId != null) __obj.updateDynamic("masterObjectId")(masterObjectId.asInstanceOf[js.Any])
+    if (notesPage != null) __obj.updateDynamic("notesPage")(notesPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideProperties]
   }
 }

@@ -24,7 +24,7 @@ object AxesOption {
     val __obj = js.Dynamic.literal()
     if (deceleration != null) __obj.updateDynamic("deceleration")(deceleration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (!js.isUndefined(interruptable)) __obj.updateDynamic("interruptable")(interruptable)
+    if (!js.isUndefined(interruptable)) __obj.updateDynamic("interruptable")(interruptable.asInstanceOf[js.Any])
     if (maximumDuration != null) __obj.updateDynamic("maximumDuration")(maximumDuration.asInstanceOf[js.Any])
     if (minimumDuration != null) __obj.updateDynamic("minimumDuration")(minimumDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxesOption]

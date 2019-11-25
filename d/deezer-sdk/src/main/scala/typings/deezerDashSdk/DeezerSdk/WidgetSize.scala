@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait WidgetSize extends js.Object
 
+object WidgetSize {
+  @scala.inline
+  def big: typings.deezerDashSdk.deezerDashSdkStrings.big = this.cast("big")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def medium: typings.deezerDashSdk.deezerDashSdkStrings.medium = this.cast("medium")
+  @scala.inline
+  def small: typings.deezerDashSdk.deezerDashSdkStrings.small = this.cast("small")
+}
+

@@ -12,7 +12,7 @@ object BandwidthProfileOptions {
   @scala.inline
   def apply(video: VideoBandwidthProfileOptions = null): BandwidthProfileOptions = {
     val __obj = js.Dynamic.literal()
-    if (video != null) __obj.updateDynamic("video")(video)
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[BandwidthProfileOptions]
   }
 }

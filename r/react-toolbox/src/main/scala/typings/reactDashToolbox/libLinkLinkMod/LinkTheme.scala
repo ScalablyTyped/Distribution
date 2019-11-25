@@ -23,9 +23,9 @@ object LinkTheme {
   @scala.inline
   def apply(active: String = null, icon: String = null, link: String = null): LinkTheme = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (link != null) __obj.updateDynamic("link")(link)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkTheme]
   }
 }

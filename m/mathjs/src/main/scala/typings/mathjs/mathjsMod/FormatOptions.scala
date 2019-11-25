@@ -55,7 +55,7 @@ object FormatOptions {
     upperExp: Int | Double = null
   ): FormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (fraction != null) __obj.updateDynamic("fraction")(fraction)
+    if (fraction != null) __obj.updateDynamic("fraction")(fraction.asInstanceOf[js.Any])
     if (lowerExp != null) __obj.updateDynamic("lowerExp")(lowerExp.asInstanceOf[js.Any])
     if (notation != null) __obj.updateDynamic("notation")(notation.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])

@@ -20,8 +20,8 @@ object ReadResult {
   @scala.inline
   def apply(id: ID = null, props: js.Any = null): ReadResult = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadResult]
   }
 }

@@ -82,22 +82,22 @@ object Anon_AltChannelId {
     regionCode: String = null,
     userIp: String = null
   ): Anon_AltChannelId = {
-    val __obj = js.Dynamic.literal(part = part)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(home)) __obj.updateDynamic("home")(home)
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(home)) __obj.updateDynamic("home")(home.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (publishedAfter != null) __obj.updateDynamic("publishedAfter")(publishedAfter)
-    if (publishedBefore != null) __obj.updateDynamic("publishedBefore")(publishedBefore)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (publishedAfter != null) __obj.updateDynamic("publishedAfter")(publishedAfter.asInstanceOf[js.Any])
+    if (publishedBefore != null) __obj.updateDynamic("publishedBefore")(publishedBefore.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltChannelId]
   }
 }

@@ -45,11 +45,11 @@ object IgGridHidingColumnSetting {
     hidden: js.UndefOr[Boolean] = js.undefined
   ): IgGridHidingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowHiding)) __obj.updateDynamic("allowHiding")(allowHiding)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowHiding)) __obj.updateDynamic("allowHiding")(allowHiding.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridHidingColumnSetting]
   }
 }

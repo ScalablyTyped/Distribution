@@ -51,7 +51,7 @@ object Anon_Braces {
     globstar: Boolean,
     negated: Boolean
   ): Anon_Braces = {
-    val __obj = js.Dynamic.literal(braces = braces, brackets = brackets, dotdir = dotdir, dotfile = dotfile, extglob = extglob, glob = glob, globstar = globstar, negated = negated)
+    val __obj = js.Dynamic.literal(braces = braces.asInstanceOf[js.Any], brackets = brackets.asInstanceOf[js.Any], dotdir = dotdir.asInstanceOf[js.Any], dotfile = dotfile.asInstanceOf[js.Any], extglob = extglob.asInstanceOf[js.Any], glob = glob.asInstanceOf[js.Any], globstar = globstar.asInstanceOf[js.Any], negated = negated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Braces]
   }

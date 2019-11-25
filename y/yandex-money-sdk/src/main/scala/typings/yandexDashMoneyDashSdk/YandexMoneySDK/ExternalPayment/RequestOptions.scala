@@ -25,12 +25,12 @@ object RequestOptions {
     message: String = null,
     to: String = null
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal(pattern_id = pattern_id)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(pattern_id = pattern_id.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (amount_due != null) __obj.updateDynamic("amount_due")(amount_due.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

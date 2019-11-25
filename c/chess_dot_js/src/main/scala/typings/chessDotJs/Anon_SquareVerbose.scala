@@ -18,8 +18,8 @@ object Anon_SquareVerbose {
   @scala.inline
   def apply(square: String = null, verbose: js.UndefOr[Boolean] = js.undefined): Anon_SquareVerbose = {
     val __obj = js.Dynamic.literal()
-    if (square != null) __obj.updateDynamic("square")(square)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (square != null) __obj.updateDynamic("square")(square.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SquareVerbose]
   }
 }

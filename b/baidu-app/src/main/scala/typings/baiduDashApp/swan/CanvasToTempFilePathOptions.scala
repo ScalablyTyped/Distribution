@@ -40,12 +40,12 @@ object CanvasToTempFilePathOptions {
     x: Int | Double = null,
     y: Int | Double = null
   ): CanvasToTempFilePathOptions = {
-    val __obj = js.Dynamic.literal(canvasId = canvasId)
+    val __obj = js.Dynamic.literal(canvasId = canvasId.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (destHeight != null) __obj.updateDynamic("destHeight")(destHeight.asInstanceOf[js.Any])
     if (destWidth != null) __obj.updateDynamic("destWidth")(destWidth.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

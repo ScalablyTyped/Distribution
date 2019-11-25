@@ -20,9 +20,9 @@ object StreetViewLocationRequest {
     source: StreetViewSource = null
   ): StreetViewLocationRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
-    if (preference != null) __obj.updateDynamic("preference")(preference)
+    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreetViewLocationRequest]
   }
 }

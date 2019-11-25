@@ -34,17 +34,17 @@ object LiasettingsCustomBatchRequestEntry {
     posExternalAccountId: String = null
   ): LiasettingsCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (contactEmail != null) __obj.updateDynamic("contactEmail")(contactEmail)
-    if (contactName != null) __obj.updateDynamic("contactName")(contactName)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (gmbEmail != null) __obj.updateDynamic("gmbEmail")(gmbEmail)
-    if (liaSettings != null) __obj.updateDynamic("liaSettings")(liaSettings)
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (posDataProviderId != null) __obj.updateDynamic("posDataProviderId")(posDataProviderId)
-    if (posExternalAccountId != null) __obj.updateDynamic("posExternalAccountId")(posExternalAccountId)
+    if (contactEmail != null) __obj.updateDynamic("contactEmail")(contactEmail.asInstanceOf[js.Any])
+    if (contactName != null) __obj.updateDynamic("contactName")(contactName.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (gmbEmail != null) __obj.updateDynamic("gmbEmail")(gmbEmail.asInstanceOf[js.Any])
+    if (liaSettings != null) __obj.updateDynamic("liaSettings")(liaSettings.asInstanceOf[js.Any])
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (posDataProviderId != null) __obj.updateDynamic("posDataProviderId")(posDataProviderId.asInstanceOf[js.Any])
+    if (posExternalAccountId != null) __obj.updateDynamic("posExternalAccountId")(posExternalAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiasettingsCustomBatchRequestEntry]
   }
 }

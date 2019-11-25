@@ -35,7 +35,7 @@ object SaveFileOptions {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath)
+    if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveFileOptions]
   }
 }

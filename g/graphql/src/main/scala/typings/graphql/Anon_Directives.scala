@@ -13,7 +13,7 @@ object Anon_Directives {
   @scala.inline
   def apply(directives: js.Array[DirectiveNode] = null): Anon_Directives = {
     val __obj = js.Dynamic.literal()
-    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Directives]
   }
 }

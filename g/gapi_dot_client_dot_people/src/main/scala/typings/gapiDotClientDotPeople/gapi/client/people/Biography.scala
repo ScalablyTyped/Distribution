@@ -17,9 +17,9 @@ object Biography {
   @scala.inline
   def apply(contentType: String = null, metadata: FieldMetadata = null, value: String = null): Biography = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Biography]
   }
 }

@@ -118,10 +118,10 @@ object Options {
     step: Int | Double = null,
     tooltips: Boolean | js.Object | (js.Function1[/* repeated */ js.Any, _]) = null
   ): Options = {
-    val __obj = js.Dynamic.literal(range = range, start = start.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (behaviour != null) __obj.updateDynamic("behaviour")(behaviour)
+    if (behaviour != null) __obj.updateDynamic("behaviour")(behaviour.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
@@ -129,8 +129,8 @@ object Options {
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pips != null) __obj.updateDynamic("pips")(pips)
-    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap)
+    if (pips != null) __obj.updateDynamic("pips")(pips.asInstanceOf[js.Any])
+    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

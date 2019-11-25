@@ -20,7 +20,7 @@ object IClient {
     make: (HttpMethod, String) => js.Promise[Anon_Req],
     paginate: PaginateArgs[js.Any] => IPaginator[js.Any, PaginatorState]
   ): IClient = {
-    val __obj = js.Dynamic.literal(config = config, make = js.Any.fromFunction2(make), paginate = js.Any.fromFunction1(paginate))
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], make = js.Any.fromFunction2(make), paginate = js.Any.fromFunction1(paginate))
     __obj.updateDynamic("do")(js.Any.fromFunction1(`do`))
     __obj.asInstanceOf[IClient]
   }

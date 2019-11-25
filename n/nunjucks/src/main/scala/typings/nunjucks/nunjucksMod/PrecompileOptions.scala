@@ -27,12 +27,12 @@ object PrecompileOptions {
     wrapper: (/* templates */ Anon_Name, PrecompileOptions) => String = null
   ): PrecompileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asFunction)) __obj.updateDynamic("asFunction")(asFunction)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(asFunction)) __obj.updateDynamic("asFunction")(asFunction.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (wrapper != null) __obj.updateDynamic("wrapper")(js.Any.fromFunction2(wrapper))
     __obj.asInstanceOf[PrecompileOptions]
   }

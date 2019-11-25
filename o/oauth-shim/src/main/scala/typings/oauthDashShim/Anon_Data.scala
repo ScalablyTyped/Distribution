@@ -14,9 +14,9 @@ object Anon_Data {
   @scala.inline
   def apply(data: Anon_Accesstoken = null, options: Anon_Key = null, redirect: String = null): Anon_Data = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]
   }
 }

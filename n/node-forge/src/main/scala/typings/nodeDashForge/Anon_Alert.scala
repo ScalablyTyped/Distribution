@@ -15,8 +15,8 @@ object Anon_Alert {
   @scala.inline
   def apply(alert: Description = null, message: String = null): Anon_Alert = {
     val __obj = js.Dynamic.literal()
-    if (alert != null) __obj.updateDynamic("alert")(alert)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alert]
   }
 }

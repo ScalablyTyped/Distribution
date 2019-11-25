@@ -151,7 +151,7 @@ object _Impl {
     silent: Boolean,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(animateChildren = animateChildren, className = className, closeNested = closeNested, collapsible = collapsible, debug = debug, duration = duration, easing = easing, error = error, exclusive = exclusive, name = name, namespace = namespace, observeChanges = observeChanges, on = on, onChange = js.Any.fromFunction1(onChange), onClose = js.Any.fromFunction1(onClose), onClosing = js.Any.fromFunction1(onClosing), onOpen = js.Any.fromFunction1(onOpen), onOpening = js.Any.fromFunction1(onOpening), performance = performance, selector = selector, silent = silent, verbose = verbose)
+    val __obj = js.Dynamic.literal(animateChildren = animateChildren.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], closeNested = closeNested.asInstanceOf[js.Any], collapsible = collapsible.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], exclusive = exclusive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onClose = js.Any.fromFunction1(onClose), onClosing = js.Any.fromFunction1(onClosing), onOpen = js.Any.fromFunction1(onOpen), onOpening = js.Any.fromFunction1(onOpening), performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

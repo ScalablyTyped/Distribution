@@ -13,7 +13,7 @@ trait Anon_MediaTypeWithQualityHeaderValue extends js.Object {
 object Anon_MediaTypeWithQualityHeaderValue {
   @scala.inline
   def apply(mediaTypeWithQualityHeaderValue: HttpMediaTypeWithQualityHeaderValue, returnValue: Boolean): Anon_MediaTypeWithQualityHeaderValue = {
-    val __obj = js.Dynamic.literal(mediaTypeWithQualityHeaderValue = mediaTypeWithQualityHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(mediaTypeWithQualityHeaderValue = mediaTypeWithQualityHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MediaTypeWithQualityHeaderValue]
   }

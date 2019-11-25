@@ -22,7 +22,7 @@ trait HSVColorObject extends js.Object {
 object HSVColorObject {
   @scala.inline
   def apply(h: Double, s: Double, v: Double): HSVColorObject = {
-    val __obj = js.Dynamic.literal(h = h, s = s, v = v)
+    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HSVColorObject]
   }

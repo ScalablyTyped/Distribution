@@ -96,12 +96,12 @@ object SlideProperties {
     val __obj = js.Dynamic.literal()
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (ground != null) __obj.updateDynamic("ground")(ground)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (ground != null) __obj.updateDynamic("ground")(ground.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
+    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint.asInstanceOf[js.Any])
     if (visibleLayers != null) __obj.updateDynamic("visibleLayers")(visibleLayers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideProperties]
   }

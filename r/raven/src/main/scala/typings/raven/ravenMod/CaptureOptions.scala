@@ -26,12 +26,12 @@ object CaptureOptions {
     user: js.Any = null
   ): CaptureOptions = {
     val __obj = js.Dynamic.literal()
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (req != null) __obj.updateDynamic("req")(req)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (req != null) __obj.updateDynamic("req")(req.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureOptions]
   }
 }

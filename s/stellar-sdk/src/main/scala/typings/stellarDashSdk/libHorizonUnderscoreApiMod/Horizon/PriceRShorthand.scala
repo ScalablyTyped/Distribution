@@ -12,7 +12,7 @@ trait PriceRShorthand extends js.Object {
 object PriceRShorthand {
   @scala.inline
   def apply(d: Double, n: Double): PriceRShorthand = {
-    val __obj = js.Dynamic.literal(d = d, n = n)
+    val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PriceRShorthand]
   }

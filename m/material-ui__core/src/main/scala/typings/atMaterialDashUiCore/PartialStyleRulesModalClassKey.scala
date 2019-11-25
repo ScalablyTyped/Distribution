@@ -15,8 +15,8 @@ object PartialStyleRulesModalClassKey {
   @scala.inline
   def apply(hidden: CSSProperties = null, root: CSSProperties = null): PartialStyleRulesModalClassKey = {
     val __obj = js.Dynamic.literal()
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesModalClassKey]
   }
 }

@@ -35,11 +35,11 @@ object State {
     expire: Int | Double = null,
     q: StateQuality = null
   ): State = {
-    val __obj = js.Dynamic.literal(ack = ack, from = from, lc = lc, ts = ts)
-    __obj.updateDynamic("val")(`val`)
-    if (c != null) __obj.updateDynamic("c")(c)
+    val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], lc = lc.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
+    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
     if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q)
+    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

@@ -14,9 +14,9 @@ trait ItemOptions extends js.Object {
 object ItemOptions {
   @scala.inline
   def apply(image: String, badge: String = null, imageSelected: String = null): ItemOptions = {
-    val __obj = js.Dynamic.literal(image = image)
-    if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (imageSelected != null) __obj.updateDynamic("imageSelected")(imageSelected)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (imageSelected != null) __obj.updateDynamic("imageSelected")(imageSelected.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemOptions]
   }
 }

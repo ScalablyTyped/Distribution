@@ -52,7 +52,7 @@ object SpriteSheetFromAtlasConfig {
     spacing: Int | Double = null,
     startFrame: Int | Double = null
   ): SpriteSheetFromAtlasConfig = {
-    val __obj = js.Dynamic.literal(atlas = atlas, frame = frame, frameWidth = frameWidth)
+    val __obj = js.Dynamic.literal(atlas = atlas.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameWidth = frameWidth.asInstanceOf[js.Any])
     if (endFrame != null) __obj.updateDynamic("endFrame")(endFrame.asInstanceOf[js.Any])
     if (frameHeight != null) __obj.updateDynamic("frameHeight")(frameHeight.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

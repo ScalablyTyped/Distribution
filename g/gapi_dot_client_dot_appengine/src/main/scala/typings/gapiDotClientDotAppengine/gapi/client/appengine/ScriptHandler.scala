@@ -13,7 +13,7 @@ object ScriptHandler {
   @scala.inline
   def apply(scriptPath: String = null): ScriptHandler = {
     val __obj = js.Dynamic.literal()
-    if (scriptPath != null) __obj.updateDynamic("scriptPath")(scriptPath)
+    if (scriptPath != null) __obj.updateDynamic("scriptPath")(scriptPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptHandler]
   }
 }

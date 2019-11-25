@@ -25,8 +25,8 @@ trait Anon_Artifacts extends js.Object {
 object Anon_Artifacts {
   @scala.inline
   def apply(credentials: AuthCredentials, strategy: String, artifacts: js.Object = null): Anon_Artifacts = {
-    val __obj = js.Dynamic.literal(credentials = credentials, strategy = strategy)
-    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
+    val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
+    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Artifacts]
   }
 }

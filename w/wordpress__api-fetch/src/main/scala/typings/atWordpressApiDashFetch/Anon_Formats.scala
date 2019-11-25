@@ -14,9 +14,9 @@ trait Anon_Formats extends js.Object {
 object Anon_Formats {
   @scala.inline
   def apply(formats: js.Array[PostFormat], `post-thumbnails`: Boolean, `responsive-embeds`: Boolean): Anon_Formats = {
-    val __obj = js.Dynamic.literal(formats = formats)
-    __obj.updateDynamic("post-thumbnails")(`post-thumbnails`)
-    __obj.updateDynamic("responsive-embeds")(`responsive-embeds`)
+    val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any])
+    __obj.updateDynamic("post-thumbnails")(`post-thumbnails`.asInstanceOf[js.Any])
+    __obj.updateDynamic("responsive-embeds")(`responsive-embeds`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Formats]
   }
 }

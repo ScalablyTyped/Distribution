@@ -60,7 +60,7 @@ object TaskAgentPool {
     serviceAccountsGroup: IdentityRef,
     size: Double
   ): TaskAgentPool = {
-    val __obj = js.Dynamic.literal(administratorsGroup = administratorsGroup, autoProvision = autoProvision, createdBy = createdBy, createdOn = createdOn, groupScopeId = groupScopeId, id = id, isHosted = isHosted, name = name, poolType = poolType, properties = properties, provisioned = provisioned, scope = scope, serviceAccountsGroup = serviceAccountsGroup, size = size)
+    val __obj = js.Dynamic.literal(administratorsGroup = administratorsGroup.asInstanceOf[js.Any], autoProvision = autoProvision.asInstanceOf[js.Any], createdBy = createdBy.asInstanceOf[js.Any], createdOn = createdOn.asInstanceOf[js.Any], groupScopeId = groupScopeId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isHosted = isHosted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], poolType = poolType.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], provisioned = provisioned.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], serviceAccountsGroup = serviceAccountsGroup.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskAgentPool]
   }

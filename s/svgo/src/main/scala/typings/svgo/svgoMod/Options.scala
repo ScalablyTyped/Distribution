@@ -38,10 +38,10 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (datauri != null) __obj.updateDynamic("datauri")(datauri.asInstanceOf[js.Any])
     if (floatPrecision != null) __obj.updateDynamic("floatPrecision")(floatPrecision.asInstanceOf[js.Any])
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
-    if (js2svg != null) __obj.updateDynamic("js2svg")(js2svg)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (svg2js != null) __obj.updateDynamic("svg2js")(svg2js)
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (js2svg != null) __obj.updateDynamic("js2svg")(js2svg.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (svg2js != null) __obj.updateDynamic("svg2js")(svg2js.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -12,8 +12,8 @@ trait PivotDataSourceAxisOptions extends js.Object {
 object PivotDataSourceAxisOptions {
   @scala.inline
   def apply(name: String, expand: js.UndefOr[Boolean] = js.undefined): PivotDataSourceAxisOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotDataSourceAxisOptions]
   }
 }

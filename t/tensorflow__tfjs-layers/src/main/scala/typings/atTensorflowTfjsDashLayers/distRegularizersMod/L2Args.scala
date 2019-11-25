@@ -12,7 +12,7 @@ trait L2Args extends js.Object {
 object L2Args {
   @scala.inline
   def apply(l2: Double): L2Args = {
-    val __obj = js.Dynamic.literal(l2 = l2)
+    val __obj = js.Dynamic.literal(l2 = l2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[L2Args]
   }

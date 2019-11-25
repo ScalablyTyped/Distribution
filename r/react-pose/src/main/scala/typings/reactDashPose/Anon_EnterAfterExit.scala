@@ -21,7 +21,7 @@ object Anon_EnterAfterExit {
     flipMove: Boolean,
     preEnterPose: String
   ): Anon_EnterAfterExit = {
-    val __obj = js.Dynamic.literal(enterAfterExit = enterAfterExit, enterPose = enterPose, exitPose = exitPose, flipMove = flipMove, preEnterPose = preEnterPose)
+    val __obj = js.Dynamic.literal(enterAfterExit = enterAfterExit.asInstanceOf[js.Any], enterPose = enterPose.asInstanceOf[js.Any], exitPose = exitPose.asInstanceOf[js.Any], flipMove = flipMove.asInstanceOf[js.Any], preEnterPose = preEnterPose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnterAfterExit]
   }

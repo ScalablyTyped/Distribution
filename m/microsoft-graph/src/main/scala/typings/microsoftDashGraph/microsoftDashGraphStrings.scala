@@ -818,7 +818,7 @@ object microsoftDashGraphStrings {
        with FollowupFlagStatus
   
   @js.native
-  sealed trait completed extends VppTokenSyncStatus
+  sealed trait completed_ extends VppTokenSyncStatus
   
   @js.native
   sealed trait compliant
@@ -915,7 +915,7 @@ object microsoftDashGraphStrings {
        with LocationType
   
   @js.native
-  sealed trait delete extends RegistryOperation
+  sealed trait delete_ extends RegistryOperation
   
   @js.native
   sealed trait deleted
@@ -1140,7 +1140,7 @@ object microsoftDashGraphStrings {
   sealed trait externalPartner extends RecipientScopeType
   
   @js.native
-  sealed trait failed
+  sealed trait failed_
     extends ActionState
        with ConnectionStatus
        with DataPolicyOperationStatus
@@ -1744,10 +1744,10 @@ object microsoftDashGraphStrings {
   sealed trait nonFullScreen extends WindowsStartMenuModeType
   
   @js.native
-  sealed trait noncompliant extends ComplianceState
+  sealed trait noncompliant_ extends ComplianceState
   
   @js.native
-  sealed trait none
+  sealed trait none_
     extends ActionState
        with AppListType
        with CategoryColor
@@ -1847,7 +1847,7 @@ object microsoftDashGraphStrings {
   sealed trait notSpecified extends SelectionLikelihoodInfo
   
   @js.native
-  sealed trait notStarted
+  sealed trait notStarted_
     extends DataPolicyOperationStatus
        with TeamsAsyncOperationStatus
   
@@ -1905,7 +1905,7 @@ object microsoftDashGraphStrings {
   sealed trait one extends MiracastChannel
   
   @js.native
-  sealed trait oneDriveForBusiness extends ManagedAppDataStorageLocation
+  sealed trait oneDriveForBusiness_ extends ManagedAppDataStorageLocation
   
   @js.native
   sealed trait oneHundredFiftySeven extends MiracastChannel
@@ -2247,7 +2247,7 @@ object microsoftDashGraphStrings {
   sealed trait rootedDevice extends ManagedAppFlaggedReason
   
   @js.native
-  sealed trait running extends DataPolicyOperationStatus
+  sealed trait running_ extends DataPolicyOperationStatus
   
   @js.native
   sealed trait saturday
@@ -2535,45 +2535,6 @@ object microsoftDashGraphStrings {
   sealed trait universalChildren extends RatingUnitedKingdomMoviesType
   
   @js.native
-  sealed trait unknown
-    extends ActivityDomain
-       with AlertFeedback
-       with AlertSeverity
-       with AlertStatus
-       with AppliedConditionalAccessPolicyResult
-       with ComplianceState
-       with ComplianceStatus
-       with ConnectionDirection
-       with ConnectionStatus
-       with DeviceEnrollmentFailureReason
-       with DeviceEnrollmentType
-       with DeviceManagementExchangeAccessState
-       with DeviceManagementExchangeAccessStateReason
-       with DeviceManagementPartnerAppType
-       with DeviceManagementPartnerTenantState
-       with DeviceRegistrationState
-       with EmailRole
-       with FileHashType
-       with FreeBusyStatus
-       with InstallState
-       with IosUpdatesInstallStatus
-       with LocationUniqueIdType
-       with LogonType
-       with ManagedDeviceOwnerType
-       with ManagedDevicePartnerReportedHealthState
-       with ManagementAgentType
-       with MdmAuthority
-       with MobileAppContentFileUploadState
-       with PhysicalAddressType
-       with ProcessIntegrityLevel
-       with RegistryHive
-       with RegistryOperation
-       with RegistryValueType
-       with SecurityNetworkProtocol
-       with UserAccountSecurityType
-       with VppTokenState
-  
-  @js.native
   sealed trait unknownFutureValue
     extends AlertFeedback
        with AlertSeverity
@@ -2614,6 +2575,45 @@ object microsoftDashGraphStrings {
   
   @js.native
   sealed trait unknownLocation extends DeviceManagementExchangeAccessStateReason
+  
+  @js.native
+  sealed trait unknown_
+    extends ActivityDomain
+       with AlertFeedback
+       with AlertSeverity
+       with AlertStatus
+       with AppliedConditionalAccessPolicyResult
+       with ComplianceState
+       with ComplianceStatus
+       with ConnectionDirection
+       with ConnectionStatus
+       with DeviceEnrollmentFailureReason
+       with DeviceEnrollmentType
+       with DeviceManagementExchangeAccessState
+       with DeviceManagementExchangeAccessStateReason
+       with DeviceManagementPartnerAppType
+       with DeviceManagementPartnerTenantState
+       with DeviceRegistrationState
+       with EmailRole
+       with FileHashType
+       with FreeBusyStatus
+       with InstallState
+       with IosUpdatesInstallStatus
+       with LocationUniqueIdType
+       with LogonType
+       with ManagedDeviceOwnerType
+       with ManagedDevicePartnerReportedHealthState
+       with ManagementAgentType
+       with MdmAuthority
+       with MobileAppContentFileUploadState
+       with PhysicalAddressType
+       with ProcessIntegrityLevel
+       with RegistryHive
+       with RegistryOperation
+       with RegistryValueType
+       with SecurityNetworkProtocol
+       with UserAccountSecurityType
+       with VppTokenState
   
   @js.native
   sealed trait unlikelyTravel extends RiskEventType
@@ -3149,7 +3149,7 @@ object microsoftDashGraphStrings {
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   @scala.inline
-  def completed: completed = "completed".asInstanceOf[completed]
+  def completed_ : completed_ = "completed".asInstanceOf[completed_]
   @scala.inline
   def compliant: compliant = "compliant".asInstanceOf[compliant]
   @scala.inline
@@ -3209,7 +3209,7 @@ object microsoftDashGraphStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
   def deleted: deleted = "deleted".asInstanceOf[deleted]
   @scala.inline
@@ -3339,7 +3339,7 @@ object microsoftDashGraphStrings {
   @scala.inline
   def externalPartner: externalPartner = "externalPartner".asInstanceOf[externalPartner]
   @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  def failed_ : failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
   @scala.inline
@@ -3689,9 +3689,9 @@ object microsoftDashGraphStrings {
   @scala.inline
   def nonFullScreen: nonFullScreen = "nonFullScreen".asInstanceOf[nonFullScreen]
   @scala.inline
-  def noncompliant: noncompliant = "noncompliant".asInstanceOf[noncompliant]
+  def noncompliant_ : noncompliant_ = "noncompliant".asInstanceOf[noncompliant_]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def none_ : none_ = "none".asInstanceOf[none_]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
@@ -3731,7 +3731,7 @@ object microsoftDashGraphStrings {
   @scala.inline
   def notSpecified: notSpecified = "notSpecified".asInstanceOf[notSpecified]
   @scala.inline
-  def notStarted: notStarted = "notStarted".asInstanceOf[notStarted]
+  def notStarted_ : notStarted_ = "notStarted".asInstanceOf[notStarted_]
   @scala.inline
   def notSupported: notSupported = "notSupported".asInstanceOf[notSupported]
   @scala.inline
@@ -3765,7 +3765,7 @@ object microsoftDashGraphStrings {
   @scala.inline
   def one: one = "one".asInstanceOf[one]
   @scala.inline
-  def oneDriveForBusiness: oneDriveForBusiness = "oneDriveForBusiness".asInstanceOf[oneDriveForBusiness]
+  def oneDriveForBusiness_ : oneDriveForBusiness_ = "oneDriveForBusiness".asInstanceOf[oneDriveForBusiness_]
   @scala.inline
   def oneHundredFiftySeven: oneHundredFiftySeven = "oneHundredFiftySeven".asInstanceOf[oneHundredFiftySeven]
   @scala.inline
@@ -3969,7 +3969,7 @@ object microsoftDashGraphStrings {
   @scala.inline
   def rootedDevice: rootedDevice = "rootedDevice".asInstanceOf[rootedDevice]
   @scala.inline
-  def running: running = "running".asInstanceOf[running]
+  def running_ : running_ = "running".asInstanceOf[running_]
   @scala.inline
   def saturday: saturday = "saturday".asInstanceOf[saturday]
   @scala.inline
@@ -4145,11 +4145,11 @@ object microsoftDashGraphStrings {
   @scala.inline
   def universalChildren: universalChildren = "universalChildren".asInstanceOf[universalChildren]
   @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
   def unknownFutureValue: unknownFutureValue = "unknownFutureValue".asInstanceOf[unknownFutureValue]
   @scala.inline
   def unknownLocation: unknownLocation = "unknownLocation".asInstanceOf[unknownLocation]
+  @scala.inline
+  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
   def unlikelyTravel: unlikelyTravel = "unlikelyTravel".asInstanceOf[unlikelyTravel]
   @scala.inline

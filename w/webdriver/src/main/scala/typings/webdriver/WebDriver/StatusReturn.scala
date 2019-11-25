@@ -18,9 +18,9 @@ object StatusReturn {
     ready: js.UndefOr[Boolean] = js.undefined
   ): StatusReturn = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusReturn]
   }
 }

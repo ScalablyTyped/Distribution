@@ -17,7 +17,7 @@ trait ErrorInfo extends js.Object {
 object ErrorInfo {
   @scala.inline
   def apply(code: Double, description: String, error_id: String): ErrorInfo = {
-    val __obj = js.Dynamic.literal(code = code, description = description, error_id = error_id)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], error_id = error_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ErrorInfo]
   }

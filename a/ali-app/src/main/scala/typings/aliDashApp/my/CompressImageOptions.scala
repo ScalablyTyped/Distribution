@@ -41,7 +41,7 @@ object CompressImageOptions {
     fail: js.Any => Unit = null,
     success: /* res */ Anon_ApFilePaths => Unit = null
   ): CompressImageOptions = {
-    val __obj = js.Dynamic.literal(apFilePaths = apFilePaths)
+    val __obj = js.Dynamic.literal(apFilePaths = apFilePaths.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (compressLevel != null) __obj.updateDynamic("compressLevel")(compressLevel.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))

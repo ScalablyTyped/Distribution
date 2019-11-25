@@ -13,7 +13,7 @@ trait AppsCreateContentAttachmentResponse extends js.Object {
 object AppsCreateContentAttachmentResponse {
   @scala.inline
   def apply(body: String, id: Double, title: String): AppsCreateContentAttachmentResponse = {
-    val __obj = js.Dynamic.literal(body = body, id = id, title = title)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsCreateContentAttachmentResponse]
   }

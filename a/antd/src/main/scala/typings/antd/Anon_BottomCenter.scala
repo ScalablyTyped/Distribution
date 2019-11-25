@@ -23,7 +23,7 @@ object Anon_BottomCenter {
     placement: bottomRight | topLeft | topCenter | topRight | bottomLeft | bottomCenter = null
   ): Anon_BottomCenter = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BottomCenter]
   }

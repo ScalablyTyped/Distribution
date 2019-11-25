@@ -37,13 +37,13 @@ object DataPolicyOperation {
     userId: String = null
   ): DataPolicyOperation = {
     val __obj = js.Dynamic.literal()
-    if (completedDateTime != null) __obj.updateDynamic("completedDateTime")(completedDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (completedDateTime != null) __obj.updateDynamic("completedDateTime")(completedDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (storageLocation != null) __obj.updateDynamic("storageLocation")(storageLocation)
-    if (submittedDateTime != null) __obj.updateDynamic("submittedDateTime")(submittedDateTime)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (storageLocation != null) __obj.updateDynamic("storageLocation")(storageLocation.asInstanceOf[js.Any])
+    if (submittedDateTime != null) __obj.updateDynamic("submittedDateTime")(submittedDateTime.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPolicyOperation]
   }
 }

@@ -15,8 +15,8 @@ object S3Integration {
   @scala.inline
   def apply(aws_access_key: AwsAccessKey = null, aws_role: AwsRole = null): S3Integration = {
     val __obj = js.Dynamic.literal()
-    if (aws_access_key != null) __obj.updateDynamic("aws_access_key")(aws_access_key)
-    if (aws_role != null) __obj.updateDynamic("aws_role")(aws_role)
+    if (aws_access_key != null) __obj.updateDynamic("aws_access_key")(aws_access_key.asInstanceOf[js.Any])
+    if (aws_role != null) __obj.updateDynamic("aws_role")(aws_role.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Integration]
   }
 }

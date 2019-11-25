@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait strokeLineCapType extends js.Object
 
+object strokeLineCapType {
+  @scala.inline
+  def butt: typings.navermaps.navermapsStrings.butt = this.cast("butt")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def round: typings.navermaps.navermapsStrings.round = this.cast("round")
+  @scala.inline
+  def square: typings.navermaps.navermapsStrings.square = this.cast("square")
+}
+

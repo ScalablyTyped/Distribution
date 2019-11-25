@@ -4,17 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CompanyIdentifier extends js.Object {
-  var company_id: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.intercomDashClient.Anon_Id
+  - typings.intercomDashClient.Anon_Companyid
+*/
+trait CompanyIdentifier extends js.Object
 
 object CompanyIdentifier {
   @scala.inline
-  def apply(company_id: String = null, id: String = null): CompanyIdentifier = {
-    val __obj = js.Dynamic.literal()
-    if (company_id != null) __obj.updateDynamic("company_id")(company_id)
-    if (id != null) __obj.updateDynamic("id")(id)
+  def Anon_Id(id: String): CompanyIdentifier = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[CompanyIdentifier]
+  }
+  @scala.inline
+  def Anon_Companyid(company_id: String): CompanyIdentifier = {
+    val __obj = js.Dynamic.literal(company_id = company_id.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CompanyIdentifier]
   }
 }

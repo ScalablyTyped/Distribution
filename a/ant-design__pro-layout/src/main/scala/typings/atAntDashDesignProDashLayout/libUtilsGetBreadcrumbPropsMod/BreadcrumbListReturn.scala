@@ -28,7 +28,7 @@ object BreadcrumbListReturn {
   ): BreadcrumbListReturn = {
     val __obj = js.Dynamic.literal()
     if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction4(itemRender))
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreadcrumbListReturn]
   }
 }

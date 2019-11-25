@@ -27,8 +27,8 @@ object LogEntry {
     logIndex: Int | Double = null,
     transactionIndex: Int | Double = null
   ): LogEntry = {
-    val __obj = js.Dynamic.literal(address = address, data = data, topics = topics, transactionHash = transactionHash)
-    if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any])
+    if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash.asInstanceOf[js.Any])
     if (blockNumber != null) __obj.updateDynamic("blockNumber")(blockNumber.asInstanceOf[js.Any])
     if (logIndex != null) __obj.updateDynamic("logIndex")(logIndex.asInstanceOf[js.Any])
     if (transactionIndex != null) __obj.updateDynamic("transactionIndex")(transactionIndex.asInstanceOf[js.Any])

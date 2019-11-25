@@ -17,7 +17,7 @@ object LoggingConfig {
   @scala.inline
   def apply(driverLogLevels: Record[String, String] = null): LoggingConfig = {
     val __obj = js.Dynamic.literal()
-    if (driverLogLevels != null) __obj.updateDynamic("driverLogLevels")(driverLogLevels)
+    if (driverLogLevels != null) __obj.updateDynamic("driverLogLevels")(driverLogLevels.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingConfig]
   }
 }

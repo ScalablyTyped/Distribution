@@ -59,14 +59,14 @@ object _UnmarshalledLifecycleRule {
     Transitions: js.Array[_UnmarshalledTransition] = null
   ): _UnmarshalledLifecycleRule = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
-    if (AbortIncompleteMultipartUpload != null) __obj.updateDynamic("AbortIncompleteMultipartUpload")(AbortIncompleteMultipartUpload)
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration)
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (ID != null) __obj.updateDynamic("ID")(ID)
-    if (NoncurrentVersionExpiration != null) __obj.updateDynamic("NoncurrentVersionExpiration")(NoncurrentVersionExpiration)
-    if (NoncurrentVersionTransitions != null) __obj.updateDynamic("NoncurrentVersionTransitions")(NoncurrentVersionTransitions)
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
-    if (Transitions != null) __obj.updateDynamic("Transitions")(Transitions)
+    if (AbortIncompleteMultipartUpload != null) __obj.updateDynamic("AbortIncompleteMultipartUpload")(AbortIncompleteMultipartUpload.asInstanceOf[js.Any])
+    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
+    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
+    if (NoncurrentVersionExpiration != null) __obj.updateDynamic("NoncurrentVersionExpiration")(NoncurrentVersionExpiration.asInstanceOf[js.Any])
+    if (NoncurrentVersionTransitions != null) __obj.updateDynamic("NoncurrentVersionTransitions")(NoncurrentVersionTransitions.asInstanceOf[js.Any])
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
+    if (Transitions != null) __obj.updateDynamic("Transitions")(Transitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledLifecycleRule]
   }
 }

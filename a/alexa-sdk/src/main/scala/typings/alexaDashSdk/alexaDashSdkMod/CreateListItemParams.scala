@@ -12,7 +12,7 @@ trait CreateListItemParams extends js.Object {
 object CreateListItemParams {
   @scala.inline
   def apply(status: ListItemObjectStatus, value: String): CreateListItemParams = {
-    val __obj = js.Dynamic.literal(status = status, value = value)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateListItemParams]
   }

@@ -22,7 +22,7 @@ object subscribeFailureArgs {
     meta: js.Any,
     timestamp: Date
   ): subscribeFailureArgs = {
-    val __obj = js.Dynamic.literal(client = client, clientId = clientId, error = error, isResubscribe = isResubscribe, meta = meta, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], isResubscribe = isResubscribe.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[subscribeFailureArgs]
   }

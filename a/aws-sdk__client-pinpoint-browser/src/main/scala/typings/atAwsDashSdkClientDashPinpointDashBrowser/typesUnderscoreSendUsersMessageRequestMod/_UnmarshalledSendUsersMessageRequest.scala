@@ -34,10 +34,10 @@ object _UnmarshalledSendUsersMessageRequest {
     Users: StringDictionary[_UnmarshalledEndpointSendConfiguration] = null
   ): _UnmarshalledSendUsersMessageRequest = {
     val __obj = js.Dynamic.literal()
-    if (Context != null) __obj.updateDynamic("Context")(Context)
-    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration)
-    if (TraceId != null) __obj.updateDynamic("TraceId")(TraceId)
-    if (Users != null) __obj.updateDynamic("Users")(Users)
+    if (Context != null) __obj.updateDynamic("Context")(Context.asInstanceOf[js.Any])
+    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
+    if (TraceId != null) __obj.updateDynamic("TraceId")(TraceId.asInstanceOf[js.Any])
+    if (Users != null) __obj.updateDynamic("Users")(Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSendUsersMessageRequest]
   }
 }

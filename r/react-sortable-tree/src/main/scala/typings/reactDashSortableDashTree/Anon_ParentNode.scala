@@ -12,7 +12,7 @@ trait Anon_ParentNode extends js.Object {
 object Anon_ParentNode {
   @scala.inline
   def apply(parentNode: TreeItem): Anon_ParentNode = {
-    val __obj = js.Dynamic.literal(parentNode = parentNode)
+    val __obj = js.Dynamic.literal(parentNode = parentNode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ParentNode]
   }

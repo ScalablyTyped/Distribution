@@ -27,10 +27,10 @@ object DatafeedTarget {
     language: String = null
   ): DatafeedTarget = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (excludedDestinations != null) __obj.updateDynamic("excludedDestinations")(excludedDestinations)
-    if (includedDestinations != null) __obj.updateDynamic("includedDestinations")(includedDestinations)
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (excludedDestinations != null) __obj.updateDynamic("excludedDestinations")(excludedDestinations.asInstanceOf[js.Any])
+    if (includedDestinations != null) __obj.updateDynamic("includedDestinations")(includedDestinations.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedTarget]
   }
 }

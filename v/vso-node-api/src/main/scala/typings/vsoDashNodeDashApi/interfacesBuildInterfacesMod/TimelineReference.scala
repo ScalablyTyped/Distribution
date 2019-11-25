@@ -22,7 +22,7 @@ trait TimelineReference extends js.Object {
 object TimelineReference {
   @scala.inline
   def apply(changeId: Double, id: String, url: String): TimelineReference = {
-    val __obj = js.Dynamic.literal(changeId = changeId, id = id, url = url)
+    val __obj = js.Dynamic.literal(changeId = changeId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimelineReference]
   }

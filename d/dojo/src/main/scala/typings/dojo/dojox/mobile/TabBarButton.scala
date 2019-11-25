@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.badge
 import typings.dojo.dojoStrings.icon1
 import typings.dojo.dojoStrings.icon2
@@ -115,16 +114,64 @@ class TabBarButton () extends _ItemBase {
   @JSName("set")
   def set_tag(property: tag, value: String): Unit = js.native
   @JSName("watch")
-  def watch_badge(property: badge, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_badge(
+    property: badge,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_icon1(property: icon1, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_icon1(
+    property: icon1,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_icon2(property: icon2, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_icon2(
+    property: icon2,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_iconPos1(property: iconPos1, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_iconPos1(
+    property: iconPos1,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_iconPos2(property: iconPos2, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_iconPos2(
+    property: iconPos2,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_tag(property: tag, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_tag(
+    property: tag,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

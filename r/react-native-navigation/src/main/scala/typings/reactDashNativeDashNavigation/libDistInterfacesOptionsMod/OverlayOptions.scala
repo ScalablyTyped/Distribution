@@ -23,8 +23,8 @@ object OverlayOptions {
     interceptTouchOutside: js.UndefOr[Boolean] = js.undefined
   ): OverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(handleKeyboardEvents)) __obj.updateDynamic("handleKeyboardEvents")(handleKeyboardEvents)
-    if (!js.isUndefined(interceptTouchOutside)) __obj.updateDynamic("interceptTouchOutside")(interceptTouchOutside)
+    if (!js.isUndefined(handleKeyboardEvents)) __obj.updateDynamic("handleKeyboardEvents")(handleKeyboardEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(interceptTouchOutside)) __obj.updateDynamic("interceptTouchOutside")(interceptTouchOutside.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayOptions]
   }
 }

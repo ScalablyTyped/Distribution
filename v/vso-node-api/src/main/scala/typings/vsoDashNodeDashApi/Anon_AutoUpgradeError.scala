@@ -33,7 +33,7 @@ object Anon_AutoUpgradeError {
     versionCheckError: Double,
     warning: Double
   ): Anon_AutoUpgradeError = {
-    val __obj = js.Dynamic.literal(autoUpgradeError = autoUpgradeError, builtIn = builtIn, disabled = disabled, error = error, multiVersion = multiVersion, needsReauthorization = needsReauthorization, none = none, trusted = trusted, unInstalled = unInstalled, versionCheckError = versionCheckError, warning = warning)
+    val __obj = js.Dynamic.literal(autoUpgradeError = autoUpgradeError.asInstanceOf[js.Any], builtIn = builtIn.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], multiVersion = multiVersion.asInstanceOf[js.Any], needsReauthorization = needsReauthorization.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any], unInstalled = unInstalled.asInstanceOf[js.Any], versionCheckError = versionCheckError.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoUpgradeError]
   }

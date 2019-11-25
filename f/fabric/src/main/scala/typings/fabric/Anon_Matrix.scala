@@ -13,7 +13,7 @@ object Anon_Matrix {
   @scala.inline
   def apply(matrix: js.Array[Double] = null): Anon_Matrix = {
     val __obj = js.Dynamic.literal()
-    if (matrix != null) __obj.updateDynamic("matrix")(matrix)
+    if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Matrix]
   }
 }

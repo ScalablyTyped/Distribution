@@ -376,7 +376,6 @@
 | 0.8248444640874932 | [agentkeepalive](./a/agentkeepalive) | Missing keepalive http.Agent
 | 0.8247199274309294 | [emotion__cache](./e/emotion__cache) | emotion's cache
 | 0.8245705448775537 | [react-native](./r/react-native) | A framework for building native apps using React
-| 0.8243985729505692 | [typescript-eslint__parser](./t/typescript-eslint__parser) | An ESLint custom parser which leverages TypeScript
 | 0.8242910291848533 | [lodash_dot_last](./l/lodash_dot_last) | The modern build of lodash’s _.last as a module.
 | 0.8238842030414242 | [postcss-modules-scope](./p/postcss-modules-scope) | A CSS Modules transform to extract export statemen
 | 0.8238491884692672 | [hoek](./h/hoek) | General purpose node utilities
@@ -418,7 +417,6 @@
 | 0.8206383250280387 | [luxon](./l/luxon) | Immutable date wrapper
 | 0.8205879460497316 | [jest__test-result](./j/jest__test-result) | -
 | 0.8205005873192851 | [jest__core](./j/jest__core) | Delightful JavaScript Testing.
-| 0.8204302542791007 | [immutability-helper](./i/immutability-helper) | mutate a copy of data without changing the origina
 | 0.8202646966841485 | [define-properties](./d/define-properties) | Define multiple non-enumerable properties at once.
 | 0.8201877129107866 | [lodash_dot_upperfirst](./l/lodash_dot_upperfirst) | The lodash method _.upperFirst exported as a modul
 | 0.8201044963004469 | [ripemd160](./r/ripemd160) | Compute ripemd160 of bytes or strings.
@@ -726,6 +724,7 @@
 | 0.7936016663510077 | [is-absolute-url](./i/is-absolute-url) | Check if an URL is absolute
 | 0.7935657332213835 | [lodash_dot_zipobject](./l/lodash_dot_zipobject) | The lodash method _.zipObject exported as a module
 | 0.793554787787998 | [unfetch](./u/unfetch) | Bare minimum fetch polyfill in 500 bytes
+| 0.7935392589655966 | [storybook__addon-knobs](./s/storybook__addon-knobs) | Storybook Addon Prop Editor Component
 | 0.7934881449305684 | [quick-lru](./q/quick-lru) | Simple "Least Recently Used" (LRU) cache
 | 0.7934362103551647 | [has-ansi](./h/has-ansi) | Check if a string has ANSI escape codes
 | 0.7933836134151067 | [tiny-warning](./t/tiny-warning) | A tiny warning function
@@ -815,7 +814,6 @@
 | 0.7873463498506765 | [sqlstring](./s/sqlstring) | Simple SQL escape and format for MySQL
 | 0.7872594007009535 | [prom-client](./p/prom-client) | Client for prometheus
 | 0.7872522188631375 | [react-toastify](./r/react-toastify) | React notification made easy
-| 0.787103109257061 | [typescript-eslint__typesc](./t/typescript-eslint__typescript-estree) | A parser that converts TypeScript source code into
 | 0.7870862753733274 | [assertion-error](./a/assertion-error) | Error constructor for test and validation framewor
 | 0.7870729012017189 | [raf-schd](./r/raf-schd) | A scheduler based on requestAnimationFrame
 | 0.7868482191170743 | [figlet](./f/figlet) | Creates ASCII Art from text. A full implementation
@@ -1085,6 +1083,7 @@
 | 0.7711799563617939 | [apollo__react-ssr](./a/apollo__react-ssr) | React Apollo server-side rendering utilities
 | 0.7711048410621213 | [io-ts](./i/io-ts) | TypeScript compatible runtime type system for IO v
 | 0.7710260475188274 | [execa](./e/execa) | A better child_process
+| 0.7709652186523371 | [grpc__grpc-js](./g/grpc__grpc-js) | gRPC Library for Node - pure JS implementation
 | 0.7709416232287472 | [lodash_dot_assignwith](./l/lodash_dot_assignwith) | The lodash method _.assignWith exported as a modul
 | 0.7708655834860033 | [whatwg-mimetype](./w/whatwg-mimetype) | Parses, serializes, and manipulates MIME types, ac
 | 0.7708220601085851 | [sinon-chai](./s/sinon-chai) | Extends Chai with assertions for the Sinon.JS mock
@@ -1144,7 +1143,6 @@
 | 0.7680954233771986 | [gulp-less](./g/gulp-less) | Less for Gulp
 | 0.7680110571485951 | [utility](./u/utility) | A collection of useful utilities.
 | 0.7679811750848848 | [compare-func](./c/compare-func) | Get a compare function for array to sort
-| 0.7678268345736246 | [typescript-eslint__experi](./t/typescript-eslint__experimental-utils) | (Experimental) Utilities for working with TypeScri
 | 0.7678066443210108 | [relay-runtime](./r/relay-runtime) | A core runtime for building GraphQL-driven applica
 | 0.7677346875844124 | [material__chips](./m/material__chips) | The Material Components for the Web chips componen
 | 0.7677314069286584 | [yosay](./y/yosay) | Tell Yeoman what to say
@@ -1468,6 +1466,7 @@
 | 0.7491729739620266 | [universal-user-agent](./u/universal-user-agent) | Get a user agent string in both browser and node
 | 0.7491684367660272 | [react-bootstrap-typeahead](./r/react-bootstrap-typeahead) | React typeahead with Bootstrap styling
 | 0.7490897278934019 | [map-age-cleaner](./m/map-age-cleaner) | Automatically cleanup expired items in a Map
+| 0.7490431218576215 | [google-gax](./g/google-gax) | Google API Extensions
 | 0.7490039891479825 | [which-pm-runs](./w/which-pm-runs) | Detects what package manager executes the process
 | 0.7489668552711053 | [utility-types](./u/utility-types) | Utility Types Collection for TypeScript
 | 0.748913907023485 | [indefinite-observable](./i/indefinite-observable) |  
@@ -1506,6 +1505,7 @@
 | 0.7472757980507564 | [base64-url](./b/base64-url) | Base64 encode, decode, escape and unescape for URL
 | 0.7472419821074053 | [memory-pager](./m/memory-pager) | Access memory using small fixed sized buffers
 | 0.7472159104734082 | [swap-case](./s/swap-case) | Swap the case of a string
+| 0.7471883187771023 | [google-cloud__pubsub](./g/google-cloud__pubsub) | Cloud Pub/Sub Client Library for Node.js
 | 0.7470744258841815 | [lodash_dot_issymbol](./l/lodash_dot_issymbol) | The lodash method _.isSymbol exported as a module.
 | 0.7470549843180687 | [koa-webpack](./k/koa-webpack) | Development and Hot Reload Middleware for Koa2
 | 0.7470199600638469 | [react-avatar-editor](./r/react-avatar-editor) | Avatar / profile picture component. Resize and cro
@@ -1514,7 +1514,6 @@
 | 0.7469512954010091 | [workbox-core](./w/workbox-core) | This module is used by a number of the other Workb
 | 0.74693544700308 | [rtlcss](./r/rtlcss) | Framework for transforming cascading style sheets 
 | 0.746783999365059 | [cordova-plugin-device](./c/cordova-plugin-device) | Cordova Device Plugin
-| 0.7467192188593186 | [react-select](./r/react-select) | A Select control built with and for ReactJS
 | 0.7466691978453087 | [sparse-bitfield](./s/sparse-bitfield) | Bitfield that allocates a series of small buffers 
 | 0.7466579100555605 | [sqs-consumer](./s/sqs-consumer) | Build SQS-based Node applications without the boil
 | 0.7466117999896631 | [lodash_dot_sorteduniq](./l/lodash_dot_sorteduniq) | The lodash method _.sortedUniq exported as a modul
@@ -6846,7 +6845,6 @@
 | 0.28766739248656753 | [angular-http-auth](./a/angular-http-auth) | HTTP Auth Interceptor Module for AngularJS.
 | 0.287568730395978 | [nivo__chord](./n/nivo__chord) | -
 | 0.2875510636899511 | [mousetrap](./m/mousetrap) | Simple library for handling keyboard shortcuts
-| 0.2875087402321433 | [jquery_dot_ajaxfile](./j/jquery_dot_ajaxfile) | Allow to upload file with old browser
 | 0.2873881759784975 | [lodash_dot_tofinite](./l/lodash_dot_tofinite) | The lodash method _.toFinite exported as a module.
 | 0.2872678053972934 | [amplify-deferred](./a/amplify-deferred) | Adding jQuery Deferred support to the amplify.requ
 | 0.2872628191888794 | [texzilla](./t/texzilla) | A LALR Javascript LaTeX-to-MathML converter compat
@@ -7323,7 +7321,6 @@
 | 0.2054562663354951 | [wordpress__date](./w/wordpress__date) | Date module for WordPress.
 | 0.20543769796466452 | [apollographql__graphql-pl](./a/apollographql__graphql-playground-html) | GraphQL IDE for better development workflows (Grap
 | 0.20529005038382375 | [sylvester](./s/sylvester) | node.js implementation of James Coglan's "Sylveste
-| 0.20491910165218707 | [react-mosaic-component](./r/react-mosaic-component) | A React Tiling Window Manager
 | 0.20487923925043294 | [electron-notify](./e/electron-notify) | Nice and simple notifications for Electron apps
 | 0.20485498805298874 | [jupyterlab__ui-components](./j/jupyterlab__ui-components) | JupyterLab - UI components written in React
 | 0.20483749581150348 | [lodash_dot_values](./l/lodash_dot_values) | The lodash method _.values exported as a module.
@@ -7349,7 +7346,6 @@
 | 0.1994686873209554 | [jquery-cropbox](./j/jquery-cropbox) | jQuery plugin for in-place image cropping (zoom & 
 | 0.19905487420023216 | [jupyterlab__terminal](./j/jupyterlab__terminal) | JupyterLab - Terminal Emulator Widget
 | 0.19898260047815422 | [akumina-core](./a/akumina-core) | Adjusted Cache.Get return type Started SiteContex
-| 0.19880417719171345 | [webcl](./w/webcl) | OpenCL bindings for Node.js
 | 0.19843611538085618 | [aws-crypto__sha256-js](./a/aws-crypto__sha256-js) | A pure JS implementation SHA256.
 | 0.1984100919680944 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object.
 | 0.19775049523529142 | [lodash_dot_unescape](./l/lodash_dot_unescape) | The lodash method _.unescape exported as a module.
@@ -7453,7 +7449,6 @@
 | 0.15999592179246672 | [get-emoji](./g/get-emoji) | you give emoji name, we give you an emoji
 | 0.15973490352322087 | [rox-react-native](./r/rox-react-native) | Rollout.io ROX JS SDK Client
 | 0.15934205621531827 | [ionic__react](./i/ionic__react) | React specific wrapper for @ionic/core
-| 0.1587863390484147 | [office-js](./o/office-js) | Utility for office cloud services.
 | 0.15819674694109281 | [notifyjs-browser](./n/notifyjs-browser) | Notify.js =====
 | 0.15628382494132198 | [cli-interact](./c/cli-interact) | Simple helper tools for interacting synchronously 
 | 0.15617319740350757 | [hystrixjs](./h/hystrixjs) | resilience module for NodeJS applications

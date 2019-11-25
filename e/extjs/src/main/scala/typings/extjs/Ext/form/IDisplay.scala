@@ -38,34 +38,22 @@ object IDisplay {
   @scala.inline
   def apply(
     IBase: typings.extjs.Ext.form.field.IBase = null,
-    fieldBodyCls: java.lang.String = null,
-    fieldCls: java.lang.String = null,
     getRawValue: () => java.lang.String = null,
-    getSubTplData: () => _ = null,
     htmlEncode: js.UndefOr[Boolean] = js.undefined,
-    initEvents: () => Unit = null,
     isDirty: () => Boolean = null,
     isValid: () => Boolean = null,
     renderer: js.Any = null,
     scope: js.Any = null,
-    setRawValue: /* value */ js.UndefOr[js.Any] => _ = null,
-    submitValue: js.UndefOr[Boolean] = js.undefined,
     validate: () => Boolean = null
   ): IDisplay = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IBase)
-    if (fieldBodyCls != null) __obj.updateDynamic("fieldBodyCls")(fieldBodyCls)
-    if (fieldCls != null) __obj.updateDynamic("fieldCls")(fieldCls)
+    if (IBase != null) js.Dynamic.global.Object.assign(__obj, IBase)
     if (getRawValue != null) __obj.updateDynamic("getRawValue")(js.Any.fromFunction0(getRawValue))
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
-    if (!js.isUndefined(htmlEncode)) __obj.updateDynamic("htmlEncode")(htmlEncode)
-    if (initEvents != null) __obj.updateDynamic("initEvents")(js.Any.fromFunction0(initEvents))
+    if (!js.isUndefined(htmlEncode)) __obj.updateDynamic("htmlEncode")(htmlEncode.asInstanceOf[js.Any])
     if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
     if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (setRawValue != null) __obj.updateDynamic("setRawValue")(js.Any.fromFunction1(setRawValue))
-    if (!js.isUndefined(submitValue)) __obj.updateDynamic("submitValue")(submitValue)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[IDisplay]
   }

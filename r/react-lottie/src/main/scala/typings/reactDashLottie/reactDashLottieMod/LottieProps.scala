@@ -60,18 +60,18 @@ object LottieProps {
     title: String = null,
     width: Double | String = null
   ): LottieProps = {
-    val __obj = js.Dynamic.literal(options = options)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (eventListeners != null) __obj.updateDynamic("eventListeners")(eventListeners)
+    if (eventListeners != null) __obj.updateDynamic("eventListeners")(eventListeners.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClickToPauseDisabled)) __obj.updateDynamic("isClickToPauseDisabled")(isClickToPauseDisabled)
-    if (!js.isUndefined(isPaused)) __obj.updateDynamic("isPaused")(isPaused)
-    if (!js.isUndefined(isStopped)) __obj.updateDynamic("isStopped")(isStopped)
-    if (segments != null) __obj.updateDynamic("segments")(segments)
+    if (!js.isUndefined(isClickToPauseDisabled)) __obj.updateDynamic("isClickToPauseDisabled")(isClickToPauseDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPaused)) __obj.updateDynamic("isPaused")(isPaused.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStopped)) __obj.updateDynamic("isStopped")(isStopped.asInstanceOf[js.Any])
+    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LottieProps]
   }

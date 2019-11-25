@@ -132,12 +132,12 @@ trait JQuery extends js.Object {
   @JSName("transition")
   def transition_setting(behavior: setting, value: TransitionSettings): JQuery = js.native
   @JSName("transition")
-  def transition_setting[K /* <: String */](behavior: setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any = js.native
+  def transition_setting[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any = js.native
   @JSName("transition")
   def transition_setting[K /* <: String */](
     behavior: setting,
     name: K,
-    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any
   ): JQuery = js.native
   /**
     * Stop current animation and show element

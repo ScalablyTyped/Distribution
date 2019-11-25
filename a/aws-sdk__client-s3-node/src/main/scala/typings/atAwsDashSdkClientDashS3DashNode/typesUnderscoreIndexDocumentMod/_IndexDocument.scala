@@ -14,7 +14,7 @@ trait _IndexDocument extends js.Object {
 object _IndexDocument {
   @scala.inline
   def apply(Suffix: String): _IndexDocument = {
-    val __obj = js.Dynamic.literal(Suffix = Suffix)
+    val __obj = js.Dynamic.literal(Suffix = Suffix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_IndexDocument]
   }

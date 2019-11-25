@@ -16,8 +16,8 @@ object DocumentSnapshot {
   @scala.inline
   def apply(snapshot: js.Object = null, step: String = null): DocumentSnapshot = {
     val __obj = js.Dynamic.literal()
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot)
-    if (step != null) __obj.updateDynamic("step")(step)
+    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSnapshot]
   }
 }

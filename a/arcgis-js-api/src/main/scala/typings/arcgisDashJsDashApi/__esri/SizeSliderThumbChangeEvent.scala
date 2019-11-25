@@ -14,8 +14,8 @@ trait SizeSliderThumbChangeEvent extends js.Object {
 object SizeSliderThumbChangeEvent {
   @scala.inline
   def apply(index: Double, oldValue: Double, `type`: String, value: Double): SizeSliderThumbChangeEvent = {
-    val __obj = js.Dynamic.literal(index = index, oldValue = oldValue, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeSliderThumbChangeEvent]
   }
 }

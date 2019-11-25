@@ -80,15 +80,15 @@ object IgSplitButton {
     swapDefaultEnabled: js.UndefOr[Boolean] = js.undefined
   ): IgSplitButton = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction2(click))
     if (collapsed != null) __obj.updateDynamic("collapsed")(js.Any.fromFunction2(collapsed))
     if (collapsing != null) __obj.updateDynamic("collapsing")(js.Any.fromFunction2(collapsing))
-    if (defaultItemName != null) __obj.updateDynamic("defaultItemName")(defaultItemName)
+    if (defaultItemName != null) __obj.updateDynamic("defaultItemName")(defaultItemName.asInstanceOf[js.Any])
     if (expanded != null) __obj.updateDynamic("expanded")(js.Any.fromFunction2(expanded))
     if (expanding != null) __obj.updateDynamic("expanding")(js.Any.fromFunction2(expanding))
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (!js.isUndefined(swapDefaultEnabled)) __obj.updateDynamic("swapDefaultEnabled")(swapDefaultEnabled)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(swapDefaultEnabled)) __obj.updateDynamic("swapDefaultEnabled")(swapDefaultEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSplitButton]
   }
 }

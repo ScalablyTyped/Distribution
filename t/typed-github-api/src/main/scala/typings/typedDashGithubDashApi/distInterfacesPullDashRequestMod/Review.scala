@@ -28,7 +28,7 @@ object Review {
     id: Double,
     state: APPROVED | CHANGES_REQUESTED | COMMENTED | DISMISSED
   ): Review = {
-    val __obj = js.Dynamic.literal(body = body, commitSha = commitSha, createdBy = createdBy, htmlUri = htmlUri, id = id, state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], commitSha = commitSha.asInstanceOf[js.Any], createdBy = createdBy.asInstanceOf[js.Any], htmlUri = htmlUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Review]
   }

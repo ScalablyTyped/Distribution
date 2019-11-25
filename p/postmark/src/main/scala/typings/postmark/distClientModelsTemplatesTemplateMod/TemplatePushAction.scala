@@ -14,7 +14,7 @@ trait TemplatePushAction extends js.Object {
 object TemplatePushAction {
   @scala.inline
   def apply(Action: String, Alias: String, Name: String, TemplateId: Int | Double = null): TemplatePushAction = {
-    val __obj = js.Dynamic.literal(Action = Action, Alias = Alias, Name = Name)
+    val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Alias = Alias.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     if (TemplateId != null) __obj.updateDynamic("TemplateId")(TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplatePushAction]
   }

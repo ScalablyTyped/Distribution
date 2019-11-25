@@ -1,8 +1,6 @@
 package typings.dojo.dijit.layout
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit._Widget
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.isLayoutContainer
@@ -184,8 +182,14 @@ class _LayoutWidget () extends _Widget {
   @JSName("set")
   def set_style(property: style, value: String): Unit = js.native
   @JSName("watch")
-  def watch_isLayoutContainer(property: isLayoutContainer, callback: Fn_NewValue): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_isLayoutContainer(
+    property: isLayoutContainer,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -75,9 +75,6 @@ object IHeader {
     addTool: /* tool */ js.UndefOr[js.Any] => Unit = null,
     addUIClsToElement: /* cls */ js.UndefOr[js.Any] => Unit = null,
     afterLayout: () => Unit = null,
-    beforeLayout: () => Unit = null,
-    componentLayout: js.Any = null,
-    defaultType: java.lang.String = null,
     getTools: () => Array = null,
     glyph: js.Any = null,
     icon: java.lang.String = null,
@@ -85,39 +82,32 @@ object IHeader {
     isHeader: js.UndefOr[Boolean] = js.undefined,
     onAdd: (/* component */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any]) => Unit = null,
     removeUIClsFromElement: /* cls */ js.UndefOr[js.Any] => Unit = null,
-    renderTpl: js.Any = null,
     setGlyph: /* glyph */ js.UndefOr[js.Any] => Unit = null,
     setIcon: /* icon */ js.UndefOr[java.lang.String] => Unit = null,
     setIconCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
     setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
-    shrinkWrap: js.Any = null,
     title: java.lang.String = null,
     titleAlign: java.lang.String = null,
     titlePosition: Int | Double = null
   ): IHeader = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     if (addTool != null) __obj.updateDynamic("addTool")(js.Any.fromFunction1(addTool))
     if (addUIClsToElement != null) __obj.updateDynamic("addUIClsToElement")(js.Any.fromFunction1(addUIClsToElement))
     if (afterLayout != null) __obj.updateDynamic("afterLayout")(js.Any.fromFunction0(afterLayout))
-    if (beforeLayout != null) __obj.updateDynamic("beforeLayout")(js.Any.fromFunction0(beforeLayout))
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
     if (getTools != null) __obj.updateDynamic("getTools")(js.Any.fromFunction0(getTools))
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
-    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2(onAdd))
     if (removeUIClsFromElement != null) __obj.updateDynamic("removeUIClsFromElement")(js.Any.fromFunction1(removeUIClsFromElement))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (setGlyph != null) __obj.updateDynamic("setGlyph")(js.Any.fromFunction1(setGlyph))
     if (setIcon != null) __obj.updateDynamic("setIcon")(js.Any.fromFunction1(setIcon))
     if (setIconCls != null) __obj.updateDynamic("setIconCls")(js.Any.fromFunction1(setIconCls))
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
-    if (shrinkWrap != null) __obj.updateDynamic("shrinkWrap")(shrinkWrap)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign.asInstanceOf[js.Any])
     if (titlePosition != null) __obj.updateDynamic("titlePosition")(titlePosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHeader]
   }

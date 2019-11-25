@@ -27,10 +27,10 @@ object OpenStreetMapProviderOptionsResultLimitation {
   ): OpenStreetMapProviderOptionsResultLimitation = {
     val __obj = js.Dynamic.literal()
     if (bounded != null) __obj.updateDynamic("bounded")(bounded.asInstanceOf[js.Any])
-    if (countrycodes != null) __obj.updateDynamic("countrycodes")(countrycodes)
-    if (exclude_place_ids != null) __obj.updateDynamic("exclude_place_ids")(exclude_place_ids)
+    if (countrycodes != null) __obj.updateDynamic("countrycodes")(countrycodes.asInstanceOf[js.Any])
+    if (exclude_place_ids != null) __obj.updateDynamic("exclude_place_ids")(exclude_place_ids.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (viewbox != null) __obj.updateDynamic("viewbox")(viewbox)
+    if (viewbox != null) __obj.updateDynamic("viewbox")(viewbox.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapProviderOptionsResultLimitation]
   }

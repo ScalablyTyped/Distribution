@@ -27,12 +27,12 @@ object Anon_AnonymousIdContext {
     timestamp: Date = null,
     userId: String | Double = null
   ): Anon_AnonymousIdContext = {
-    val __obj = js.Dynamic.literal(event = event)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
     if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (integrations != null) __obj.updateDynamic("integrations")(integrations)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (integrations != null) __obj.updateDynamic("integrations")(integrations.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AnonymousIdContext]
   }

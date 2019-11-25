@@ -27,10 +27,10 @@ object SsdpHeaders {
     USN: String = null
   ): SsdpHeaders = {
     val __obj = js.Dynamic.literal()
-    if (LOCATION != null) __obj.updateDynamic("LOCATION")(LOCATION)
-    if (ST != null) __obj.updateDynamic("ST")(ST)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (USN != null) __obj.updateDynamic("USN")(USN)
+    if (LOCATION != null) __obj.updateDynamic("LOCATION")(LOCATION.asInstanceOf[js.Any])
+    if (ST != null) __obj.updateDynamic("ST")(ST.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (USN != null) __obj.updateDynamic("USN")(USN.asInstanceOf[js.Any])
     __obj.asInstanceOf[SsdpHeaders]
   }
 }

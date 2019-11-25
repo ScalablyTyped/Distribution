@@ -37,12 +37,12 @@ object Office {
     sources: js.Array[Source] = null
   ): Office = {
     val __obj = js.Dynamic.literal()
-    if (divisionId != null) __obj.updateDynamic("divisionId")(divisionId)
-    if (levels != null) __obj.updateDynamic("levels")(levels)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (officialIndices != null) __obj.updateDynamic("officialIndices")(officialIndices)
-    if (roles != null) __obj.updateDynamic("roles")(roles)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (divisionId != null) __obj.updateDynamic("divisionId")(divisionId.asInstanceOf[js.Any])
+    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (officialIndices != null) __obj.updateDynamic("officialIndices")(officialIndices.asInstanceOf[js.Any])
+    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[Office]
   }
 }

@@ -30,7 +30,7 @@ object State {
     menuTop: Int | Double = null,
     menuWidth: Int | Double = null
   ): State = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
     if (menuLeft != null) __obj.updateDynamic("menuLeft")(menuLeft.asInstanceOf[js.Any])
     if (menuTop != null) __obj.updateDynamic("menuTop")(menuTop.asInstanceOf[js.Any])

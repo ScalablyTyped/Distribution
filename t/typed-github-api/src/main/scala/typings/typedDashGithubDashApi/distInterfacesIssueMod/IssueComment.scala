@@ -25,7 +25,7 @@ object IssueComment {
     id: Double,
     updatedAt: Moment
   ): IssueComment = {
-    val __obj = js.Dynamic.literal(body = body, createdAt = createdAt, createdBy = createdBy, htmlUri = htmlUri, id = id, updatedAt = updatedAt)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], createdBy = createdBy.asInstanceOf[js.Any], htmlUri = htmlUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssueComment]
   }

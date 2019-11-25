@@ -29,7 +29,7 @@ object PickCardStyleheaderContentWrapheaderContentheaderE {
     headerTitle: ViewStyle,
     headerWrap: ViewStyle
   ): PickCardStyleheaderContentWrapheaderContentheaderE = {
-    val __obj = js.Dynamic.literal(headerContent = headerContent, headerContentWrap = headerContentWrap, headerExtra = headerExtra, headerExtraWrap = headerExtraWrap, headerImage = headerImage, headerTitle = headerTitle, headerWrap = headerWrap)
+    val __obj = js.Dynamic.literal(headerContent = headerContent.asInstanceOf[js.Any], headerContentWrap = headerContentWrap.asInstanceOf[js.Any], headerExtra = headerExtra.asInstanceOf[js.Any], headerExtraWrap = headerExtraWrap.asInstanceOf[js.Any], headerImage = headerImage.asInstanceOf[js.Any], headerTitle = headerTitle.asInstanceOf[js.Any], headerWrap = headerWrap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PickCardStyleheaderContentWrapheaderContentheaderE]
   }

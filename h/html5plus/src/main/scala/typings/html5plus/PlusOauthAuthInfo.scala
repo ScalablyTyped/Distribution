@@ -60,11 +60,11 @@ object PlusOauthAuthInfo {
     scope: String = null
   ): PlusOauthAuthInfo = {
     val __obj = js.Dynamic.literal()
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in)
-    if (openid != null) __obj.updateDynamic("openid")(openid)
-    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
+    if (openid != null) __obj.updateDynamic("openid")(openid.asInstanceOf[js.Any])
+    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusOauthAuthInfo]
   }
 }

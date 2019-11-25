@@ -13,7 +13,7 @@ trait FindPlaceFromTextResponse extends js.Object {
 object FindPlaceFromTextResponse {
   @scala.inline
   def apply(candidates: js.Array[Partial[PlaceSearchResult]], status: SearchResponseStatus): FindPlaceFromTextResponse = {
-    val __obj = js.Dynamic.literal(candidates = candidates, status = status)
+    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FindPlaceFromTextResponse]
   }

@@ -30,8 +30,8 @@ object RequestPaymentOptions {
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null
   ): RequestPaymentOptions = {
-    val __obj = js.Dynamic.literal(nonceStr = nonceStr, paySign = paySign, signType = signType, timeStamp = timeStamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(nonceStr = nonceStr.asInstanceOf[js.Any], paySign = paySign.asInstanceOf[js.Any], signType = signType.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

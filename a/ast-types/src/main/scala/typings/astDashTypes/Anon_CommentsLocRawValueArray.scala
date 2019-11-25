@@ -21,9 +21,9 @@ object Anon_CommentsLocRawValueArray {
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null
   ): Anon_CommentsLocRawValueArray = {
-    val __obj = js.Dynamic.literal(raw = raw, value = value)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocRawValueArray]
   }
 }

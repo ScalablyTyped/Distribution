@@ -14,8 +14,8 @@ trait ItemsAddedEvent extends AgGridEvent {
 object ItemsAddedEvent {
   @scala.inline
   def apply(api: GridApi, columnApi: ColumnApi, items: js.Array[RowNode], `type`: String): ItemsAddedEvent = {
-    val __obj = js.Dynamic.literal(api = api, columnApi = columnApi, items = items)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsAddedEvent]
   }
 }

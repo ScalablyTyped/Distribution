@@ -24,12 +24,12 @@ object FileProps {
     size: Int | Double = null,
     `type`: String = null
   ): FileProps = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileProps]
   }
 }

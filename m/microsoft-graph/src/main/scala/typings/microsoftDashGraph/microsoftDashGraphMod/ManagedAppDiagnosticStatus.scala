@@ -17,9 +17,9 @@ object ManagedAppDiagnosticStatus {
   @scala.inline
   def apply(mitigationInstruction: String = null, state: String = null, validationName: String = null): ManagedAppDiagnosticStatus = {
     val __obj = js.Dynamic.literal()
-    if (mitigationInstruction != null) __obj.updateDynamic("mitigationInstruction")(mitigationInstruction)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (validationName != null) __obj.updateDynamic("validationName")(validationName)
+    if (mitigationInstruction != null) __obj.updateDynamic("mitigationInstruction")(mitigationInstruction.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (validationName != null) __obj.updateDynamic("validationName")(validationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedAppDiagnosticStatus]
   }
 }

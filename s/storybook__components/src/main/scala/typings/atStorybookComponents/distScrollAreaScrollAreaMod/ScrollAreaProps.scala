@@ -18,9 +18,9 @@ object ScrollAreaProps {
     vertical: js.UndefOr[Boolean] = js.undefined
   ): ScrollAreaProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollAreaProps]
   }
 }

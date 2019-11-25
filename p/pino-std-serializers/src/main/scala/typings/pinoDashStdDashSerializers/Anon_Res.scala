@@ -12,7 +12,7 @@ trait Anon_Res extends js.Object {
 object Anon_Res {
   @scala.inline
   def apply(res: SerializedResponse): Anon_Res = {
-    val __obj = js.Dynamic.literal(res = res)
+    val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Res]
   }

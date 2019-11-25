@@ -30,14 +30,14 @@ object Anon_Culture {
     tileDiscardPolicy: TileDiscardPolicy = null,
     tileProtocol: String = null
   ): Anon_Culture = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (culture != null) __obj.updateDynamic("culture")(culture)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy)
-    if (tileProtocol != null) __obj.updateDynamic("tileProtocol")(tileProtocol)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy.asInstanceOf[js.Any])
+    if (tileProtocol != null) __obj.updateDynamic("tileProtocol")(tileProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Culture]
   }
 }

@@ -96,19 +96,15 @@ object ICarousel {
   @scala.inline
   def apply(
     IContainer: IContainer = null,
-    baseCls: java.lang.String = null,
-    destroy: () => Unit = null,
     direction: java.lang.String = null,
     getActiveIndex: () => Double = null,
     getAnimation: () => _ = null,
-    getBaseCls: () => java.lang.String = null,
     getBufferSize: () => Double = null,
     getDirection: () => java.lang.String = null,
     getDirectionLock: () => Boolean = null,
     getIndicator: () => _ = null,
     getItemConfig: () => _ = null,
     getItemLength: () => _ = null,
-    getUi: () => java.lang.String = null,
     indicator: js.UndefOr[Boolean] = js.undefined,
     isHorizontal: () => Boolean = null,
     isVertical: () => Boolean = null,
@@ -116,47 +112,37 @@ object ICarousel {
     prev: () => typings.senchaUnderscoreTouch.Ext.carousel.ICarousel = null,
     previous: () => typings.senchaUnderscoreTouch.Ext.carousel.ICarousel = null,
     setAnimation: /* animation */ js.UndefOr[js.Any] => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setBufferSize: /* bufferSize */ js.UndefOr[Double] => Unit = null,
     setDirection: /* direction */ js.UndefOr[java.lang.String] => Unit = null,
     setDirectionLock: /* directionLock */ js.UndefOr[Boolean] => Unit = null,
     setIndicator: /* indicator */ js.UndefOr[Boolean] => Unit = null,
     setItemConfig: /* itemConfig */ js.UndefOr[js.Any] => Unit = null,
-    setItemLength: /* itemLength */ js.UndefOr[js.Any] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
-    ui: java.lang.String = null
+    setItemLength: /* itemLength */ js.UndefOr[js.Any] => Unit = null
   ): ICarousel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (getActiveIndex != null) __obj.updateDynamic("getActiveIndex")(js.Any.fromFunction0(getActiveIndex))
     if (getAnimation != null) __obj.updateDynamic("getAnimation")(js.Any.fromFunction0(getAnimation))
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
     if (getBufferSize != null) __obj.updateDynamic("getBufferSize")(js.Any.fromFunction0(getBufferSize))
     if (getDirection != null) __obj.updateDynamic("getDirection")(js.Any.fromFunction0(getDirection))
     if (getDirectionLock != null) __obj.updateDynamic("getDirectionLock")(js.Any.fromFunction0(getDirectionLock))
     if (getIndicator != null) __obj.updateDynamic("getIndicator")(js.Any.fromFunction0(getIndicator))
     if (getItemConfig != null) __obj.updateDynamic("getItemConfig")(js.Any.fromFunction0(getItemConfig))
     if (getItemLength != null) __obj.updateDynamic("getItemLength")(js.Any.fromFunction0(getItemLength))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
-    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator)
+    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
     if (isHorizontal != null) __obj.updateDynamic("isHorizontal")(js.Any.fromFunction0(isHorizontal))
     if (isVertical != null) __obj.updateDynamic("isVertical")(js.Any.fromFunction0(isVertical))
     if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction0(next))
     if (prev != null) __obj.updateDynamic("prev")(js.Any.fromFunction0(prev))
     if (previous != null) __obj.updateDynamic("previous")(js.Any.fromFunction0(previous))
     if (setAnimation != null) __obj.updateDynamic("setAnimation")(js.Any.fromFunction1(setAnimation))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setBufferSize != null) __obj.updateDynamic("setBufferSize")(js.Any.fromFunction1(setBufferSize))
     if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1(setDirection))
     if (setDirectionLock != null) __obj.updateDynamic("setDirectionLock")(js.Any.fromFunction1(setDirectionLock))
     if (setIndicator != null) __obj.updateDynamic("setIndicator")(js.Any.fromFunction1(setIndicator))
     if (setItemConfig != null) __obj.updateDynamic("setItemConfig")(js.Any.fromFunction1(setItemConfig))
     if (setItemLength != null) __obj.updateDynamic("setItemLength")(js.Any.fromFunction1(setItemLength))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
-    if (ui != null) __obj.updateDynamic("ui")(ui)
     __obj.asInstanceOf[ICarousel]
   }
 }

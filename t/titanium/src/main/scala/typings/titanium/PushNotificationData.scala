@@ -23,8 +23,8 @@ object PushNotificationData {
   @scala.inline
   def apply(data: js.Any = null, inBackground: js.UndefOr[Boolean] = js.undefined): PushNotificationData = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(inBackground)) __obj.updateDynamic("inBackground")(inBackground)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(inBackground)) __obj.updateDynamic("inBackground")(inBackground.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNotificationData]
   }
 }

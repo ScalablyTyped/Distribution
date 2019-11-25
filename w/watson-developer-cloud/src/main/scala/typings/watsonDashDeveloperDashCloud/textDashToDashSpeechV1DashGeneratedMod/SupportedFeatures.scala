@@ -15,7 +15,7 @@ trait SupportedFeatures extends js.Object {
 object SupportedFeatures {
   @scala.inline
   def apply(custom_pronunciation: Boolean, voice_transformation: Boolean): SupportedFeatures = {
-    val __obj = js.Dynamic.literal(custom_pronunciation = custom_pronunciation, voice_transformation = voice_transformation)
+    val __obj = js.Dynamic.literal(custom_pronunciation = custom_pronunciation.asInstanceOf[js.Any], voice_transformation = voice_transformation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SupportedFeatures]
   }

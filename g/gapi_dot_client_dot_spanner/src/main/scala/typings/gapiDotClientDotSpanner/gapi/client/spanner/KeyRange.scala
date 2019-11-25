@@ -36,10 +36,10 @@ object KeyRange {
     startOpen: js.Array[_] = null
   ): KeyRange = {
     val __obj = js.Dynamic.literal()
-    if (endClosed != null) __obj.updateDynamic("endClosed")(endClosed)
-    if (endOpen != null) __obj.updateDynamic("endOpen")(endOpen)
-    if (startClosed != null) __obj.updateDynamic("startClosed")(startClosed)
-    if (startOpen != null) __obj.updateDynamic("startOpen")(startOpen)
+    if (endClosed != null) __obj.updateDynamic("endClosed")(endClosed.asInstanceOf[js.Any])
+    if (endOpen != null) __obj.updateDynamic("endOpen")(endOpen.asInstanceOf[js.Any])
+    if (startClosed != null) __obj.updateDynamic("startClosed")(startClosed.asInstanceOf[js.Any])
+    if (startOpen != null) __obj.updateDynamic("startOpen")(startOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyRange]
   }
 }

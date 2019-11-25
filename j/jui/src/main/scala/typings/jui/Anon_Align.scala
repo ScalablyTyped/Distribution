@@ -31,11 +31,11 @@ object Anon_Align {
   ): Anon_Align = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Align]
   }

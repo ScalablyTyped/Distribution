@@ -39,7 +39,7 @@ object ReposListDeploymentStatusesResponseItem {
     updated_at: String,
     url: String
   ): ReposListDeploymentStatusesResponseItem = {
-    val __obj = js.Dynamic.literal(created_at = created_at, creator = creator, deployment_url = deployment_url, description = description, environment = environment, environment_url = environment_url, id = id, log_url = log_url, node_id = node_id, repository_url = repository_url, state = state, target_url = target_url, updated_at = updated_at, url = url)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], deployment_url = deployment_url.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], environment_url = environment_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], log_url = log_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], target_url = target_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposListDeploymentStatusesResponseItem]
   }

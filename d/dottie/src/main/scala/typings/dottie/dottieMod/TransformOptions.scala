@@ -15,7 +15,7 @@ object TransformOptions {
   @scala.inline
   def apply(delimiter: String = null): TransformOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformOptions]
   }
 }

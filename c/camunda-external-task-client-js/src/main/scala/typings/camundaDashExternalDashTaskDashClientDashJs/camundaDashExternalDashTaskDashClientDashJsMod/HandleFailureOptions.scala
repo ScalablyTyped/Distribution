@@ -20,8 +20,8 @@ object HandleFailureOptions {
     retryTimeout: Int | Double = null
   ): HandleFailureOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (retryTimeout != null) __obj.updateDynamic("retryTimeout")(retryTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleFailureOptions]

@@ -14,8 +14,8 @@ trait LeafObject extends js.Object {
 object LeafObject {
   @scala.inline
   def apply(url: String, changeFreq: String = null, lastMod: String | Date = null): LeafObject = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (changeFreq != null) __obj.updateDynamic("changeFreq")(changeFreq)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (changeFreq != null) __obj.updateDynamic("changeFreq")(changeFreq.asInstanceOf[js.Any])
     if (lastMod != null) __obj.updateDynamic("lastMod")(lastMod.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafObject]
   }

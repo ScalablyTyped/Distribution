@@ -23,12 +23,12 @@ object DeviceOrientationEventInit {
     gamma: Int | Double = null
   ): DeviceOrientationEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute)
+    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceOrientationEventInit]
   }

@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonPickSourceAction extends js.Object {
 object Anon_EnumValuesAnonPickSourceAction {
   @scala.inline
   def apply(enumValues: Anon_PickSourceAction): Anon_EnumValuesAnonPickSourceAction = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonPickSourceAction]
   }

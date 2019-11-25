@@ -12,7 +12,7 @@ object EsriJSONOptions {
   @scala.inline
   def apply(geometryName: String = null): EsriJSONOptions = {
     val __obj = js.Dynamic.literal()
-    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName)
+    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EsriJSONOptions]
   }
 }

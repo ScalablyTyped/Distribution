@@ -25,10 +25,10 @@ object Anon_Cases {
     lexical: js.UndefOr[Boolean] = js.undefined,
     loc: SourceLocationKind = null
   ): Anon_Cases = {
-    val __obj = js.Dynamic.literal(cases = cases, discriminant = discriminant)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(lexical)) __obj.updateDynamic("lexical")(lexical)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], discriminant = discriminant.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(lexical)) __obj.updateDynamic("lexical")(lexical.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cases]
   }
 }

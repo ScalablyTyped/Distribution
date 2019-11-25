@@ -13,7 +13,7 @@ trait ScenarioEvent extends js.Object {
 object ScenarioEvent {
   @scala.inline
   def apply(data: ScenarioEventData, name: __ON_SCENARIO__): ScenarioEvent = {
-    val __obj = js.Dynamic.literal(data = data, name = name)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScenarioEvent]
   }

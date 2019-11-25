@@ -21,7 +21,7 @@ object Anon_MultiLines {
     spilitLine: String,
     toolbars: js.Array[scala.Nothing]
   ): Anon_MultiLines = {
-    val __obj = js.Dynamic.literal(multiLines = multiLines, plugins = plugins, prefixCls = prefixCls, spilitLine = spilitLine, toolbars = toolbars)
+    val __obj = js.Dynamic.literal(multiLines = multiLines.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], spilitLine = spilitLine.asInstanceOf[js.Any], toolbars = toolbars.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MultiLines]
   }

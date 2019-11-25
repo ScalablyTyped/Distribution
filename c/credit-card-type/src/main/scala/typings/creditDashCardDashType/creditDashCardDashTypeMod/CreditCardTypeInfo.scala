@@ -28,13 +28,13 @@ object CreditCardTypeInfo {
     `type`: CardBrand = null
   ): CreditCardTypeInfo = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (exactPattern != null) __obj.updateDynamic("exactPattern")(exactPattern)
-    if (gaps != null) __obj.updateDynamic("gaps")(gaps)
-    if (lengths != null) __obj.updateDynamic("lengths")(lengths)
-    if (niceType != null) __obj.updateDynamic("niceType")(niceType)
-    if (prefixPattern != null) __obj.updateDynamic("prefixPattern")(prefixPattern)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (exactPattern != null) __obj.updateDynamic("exactPattern")(exactPattern.asInstanceOf[js.Any])
+    if (gaps != null) __obj.updateDynamic("gaps")(gaps.asInstanceOf[js.Any])
+    if (lengths != null) __obj.updateDynamic("lengths")(lengths.asInstanceOf[js.Any])
+    if (niceType != null) __obj.updateDynamic("niceType")(niceType.asInstanceOf[js.Any])
+    if (prefixPattern != null) __obj.updateDynamic("prefixPattern")(prefixPattern.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreditCardTypeInfo]
   }
 }

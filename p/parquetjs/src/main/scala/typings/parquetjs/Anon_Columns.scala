@@ -19,8 +19,8 @@ object Anon_Columns {
     total_byte_size: Double,
     sorting_columns: js.Array[String] = null
   ): Anon_Columns = {
-    val __obj = js.Dynamic.literal(columns = columns, num_rows = num_rows, total_byte_size = total_byte_size)
-    if (sorting_columns != null) __obj.updateDynamic("sorting_columns")(sorting_columns)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], num_rows = num_rows.asInstanceOf[js.Any], total_byte_size = total_byte_size.asInstanceOf[js.Any])
+    if (sorting_columns != null) __obj.updateDynamic("sorting_columns")(sorting_columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Columns]
   }
 }

@@ -20,7 +20,7 @@ object ConnectionCosts {
     loadConnectionCosts: Int16Array => Unit,
     put: (Double, Double, Double) => Unit
   ): ConnectionCosts = {
-    val __obj = js.Dynamic.literal(buffer = buffer, get = js.Any.fromFunction2(get), loadConnectionCosts = js.Any.fromFunction1(loadConnectionCosts), put = js.Any.fromFunction3(put))
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], get = js.Any.fromFunction2(get), loadConnectionCosts = js.Any.fromFunction1(loadConnectionCosts), put = js.Any.fromFunction3(put))
   
     __obj.asInstanceOf[ConnectionCosts]
   }

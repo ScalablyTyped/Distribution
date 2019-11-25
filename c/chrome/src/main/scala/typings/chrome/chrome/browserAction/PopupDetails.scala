@@ -14,7 +14,7 @@ trait PopupDetails extends js.Object {
 object PopupDetails {
   @scala.inline
   def apply(popup: String, tabId: Int | Double = null): PopupDetails = {
-    val __obj = js.Dynamic.literal(popup = popup)
+    val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupDetails]
   }

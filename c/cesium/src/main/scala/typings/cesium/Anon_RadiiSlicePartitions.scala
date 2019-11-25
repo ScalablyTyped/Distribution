@@ -21,7 +21,7 @@ object Anon_RadiiSlicePartitions {
     subdivisions: Int | Double = null
   ): Anon_RadiiSlicePartitions = {
     val __obj = js.Dynamic.literal()
-    if (radii != null) __obj.updateDynamic("radii")(radii)
+    if (radii != null) __obj.updateDynamic("radii")(radii.asInstanceOf[js.Any])
     if (slicePartitions != null) __obj.updateDynamic("slicePartitions")(slicePartitions.asInstanceOf[js.Any])
     if (stackPartitions != null) __obj.updateDynamic("stackPartitions")(stackPartitions.asInstanceOf[js.Any])
     if (subdivisions != null) __obj.updateDynamic("subdivisions")(subdivisions.asInstanceOf[js.Any])

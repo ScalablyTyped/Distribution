@@ -33,6 +33,8 @@ trait spectacleProps {
   @scala.inline
   def FillProps: typings.spectacle.spectacleMod.FillProps.type = typings.spectacle.spectacleMod.FillProps
   type FillProps = typings.spectacle.spectacleMod.FillProps
+  @scala.inline
+  def FitProps: typings.spectacle.spectacleMod.FillProps.type = typings.spectacle.spectacleMod.FillProps
   type FitProps = typings.spectacle.spectacleMod.FitProps
   @scala.inline
   def GoToActionProps: typings.spectacle.spectacleMod.GoToActionProps.type = typings.spectacle.spectacleMod.GoToActionProps

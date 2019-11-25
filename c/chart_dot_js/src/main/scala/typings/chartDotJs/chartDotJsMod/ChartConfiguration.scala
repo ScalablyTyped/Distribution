@@ -20,9 +20,9 @@ object ChartConfiguration {
     `type`: ChartType | String = null
   ): ChartConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartConfiguration]
   }

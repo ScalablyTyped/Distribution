@@ -37,17 +37,17 @@ object Options {
     strict: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (mapHeaders != null) __obj.updateDynamic("mapHeaders")(js.Any.fromFunction1(mapHeaders))
     if (mapValues != null) __obj.updateDynamic("mapValues")(js.Any.fromFunction1(mapValues))
     if (maxRowBytes != null) __obj.updateDynamic("maxRowBytes")(maxRowBytes.asInstanceOf[js.Any])
-    if (newline != null) __obj.updateDynamic("newline")(newline)
-    if (quote != null) __obj.updateDynamic("quote")(quote)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (newline != null) __obj.updateDynamic("newline")(newline.asInstanceOf[js.Any])
+    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (skipLines != null) __obj.updateDynamic("skipLines")(skipLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

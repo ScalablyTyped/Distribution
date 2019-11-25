@@ -36,15 +36,15 @@ object IssueParams {
     val __obj = js.Dynamic.literal()
     if (assigned_to_id != null) __obj.updateDynamic("assigned_to_id")(assigned_to_id.asInstanceOf[js.Any])
     if (category_id != null) __obj.updateDynamic("category_id")(category_id.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     if (parent_issue_id != null) __obj.updateDynamic("parent_issue_id")(parent_issue_id.asInstanceOf[js.Any])
     if (priority_id != null) __obj.updateDynamic("priority_id")(priority_id.asInstanceOf[js.Any])
     if (project_id != null) __obj.updateDynamic("project_id")(project_id.asInstanceOf[js.Any])
     if (status_id != null) __obj.updateDynamic("status_id")(status_id.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (tracker_id != null) __obj.updateDynamic("tracker_id")(tracker_id.asInstanceOf[js.Any])
-    if (uploads != null) __obj.updateDynamic("uploads")(uploads)
+    if (uploads != null) __obj.updateDynamic("uploads")(uploads.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssueParams]
   }
 }

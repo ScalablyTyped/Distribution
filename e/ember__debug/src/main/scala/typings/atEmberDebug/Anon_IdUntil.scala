@@ -25,8 +25,8 @@ trait Anon_IdUntil extends js.Object {
 object Anon_IdUntil {
   @scala.inline
   def apply(id: String, until: String, url: String = null): Anon_IdUntil = {
-    val __obj = js.Dynamic.literal(id = id, until = until)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], until = until.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdUntil]
   }
 }

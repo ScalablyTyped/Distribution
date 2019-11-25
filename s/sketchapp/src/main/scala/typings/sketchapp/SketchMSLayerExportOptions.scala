@@ -22,7 +22,7 @@ object SketchMSLayerExportOptions {
     layerOptions: Double,
     shouldTrim: Boolean
   ): SketchMSLayerExportOptions = {
-    val __obj = js.Dynamic.literal(_class = _class, exportFormats = exportFormats, includedLayerIds = includedLayerIds, layerOptions = layerOptions, shouldTrim = shouldTrim)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], exportFormats = exportFormats.asInstanceOf[js.Any], includedLayerIds = includedLayerIds.asInstanceOf[js.Any], layerOptions = layerOptions.asInstanceOf[js.Any], shouldTrim = shouldTrim.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSLayerExportOptions]
   }

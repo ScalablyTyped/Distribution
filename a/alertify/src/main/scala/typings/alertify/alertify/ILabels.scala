@@ -14,8 +14,8 @@ object ILabels {
   @scala.inline
   def apply(cancel: String = null, ok: String = null): ILabels = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (ok != null) __obj.updateDynamic("ok")(ok)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (ok != null) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILabels]
   }
 }

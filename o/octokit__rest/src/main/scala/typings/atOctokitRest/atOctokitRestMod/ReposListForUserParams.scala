@@ -47,7 +47,7 @@ object ReposListForUserParams {
     sort: created | updated | pushed | full_name = null,
     `type`: all | owner | member = null
   ): ReposListForUserParams = {
-    val __obj = js.Dynamic.literal(username = username)
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

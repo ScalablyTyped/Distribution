@@ -27,7 +27,7 @@ trait ChatHistoryReceived extends VoxImplantIMEvent {
 object ChatHistoryReceived {
   @scala.inline
   def apply(id: String, message_id: String, messages: js.Array[IMHistoryMessage]): ChatHistoryReceived = {
-    val __obj = js.Dynamic.literal(id = id, message_id = message_id, messages = messages)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChatHistoryReceived]
   }

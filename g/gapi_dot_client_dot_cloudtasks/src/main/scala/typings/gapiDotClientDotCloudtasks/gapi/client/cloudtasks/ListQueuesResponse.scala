@@ -25,8 +25,8 @@ object ListQueuesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, queues: js.Array[Queue] = null): ListQueuesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (queues != null) __obj.updateDynamic("queues")(queues)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (queues != null) __obj.updateDynamic("queues")(queues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueuesResponse]
   }
 }

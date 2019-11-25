@@ -15,7 +15,7 @@ object RTCRtpHeaderExtensionParameters {
   @scala.inline
   def apply(encrypted: js.UndefOr[Boolean] = js.undefined): RTCRtpHeaderExtensionParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted)
+    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpHeaderExtensionParameters]
   }
 }

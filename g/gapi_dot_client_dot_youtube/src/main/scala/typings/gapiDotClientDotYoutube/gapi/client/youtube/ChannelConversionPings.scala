@@ -16,7 +16,7 @@ object ChannelConversionPings {
   @scala.inline
   def apply(pings: js.Array[ChannelConversionPing] = null): ChannelConversionPings = {
     val __obj = js.Dynamic.literal()
-    if (pings != null) __obj.updateDynamic("pings")(pings)
+    if (pings != null) __obj.updateDynamic("pings")(pings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelConversionPings]
   }
 }

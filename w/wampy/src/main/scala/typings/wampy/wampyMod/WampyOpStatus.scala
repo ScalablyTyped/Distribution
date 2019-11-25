@@ -13,7 +13,7 @@ trait WampyOpStatus extends js.Object {
 object WampyOpStatus {
   @scala.inline
   def apply(code: Double, description: String, reqId: Int | Double = null): WampyOpStatus = {
-    val __obj = js.Dynamic.literal(code = code, description = description)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
     if (reqId != null) __obj.updateDynamic("reqId")(reqId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WampyOpStatus]
   }

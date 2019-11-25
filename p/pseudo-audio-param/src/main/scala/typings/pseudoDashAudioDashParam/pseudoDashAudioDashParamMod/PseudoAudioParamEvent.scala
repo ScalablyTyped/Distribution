@@ -12,8 +12,8 @@ trait PseudoAudioParamEvent extends js.Object {
 object PseudoAudioParamEvent {
   @scala.inline
   def apply(time: Double, `type`: String): PseudoAudioParamEvent = {
-    val __obj = js.Dynamic.literal(time = time)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PseudoAudioParamEvent]
   }
 }

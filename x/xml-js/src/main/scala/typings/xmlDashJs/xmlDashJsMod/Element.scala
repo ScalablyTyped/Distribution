@@ -33,16 +33,16 @@ object Element {
     `type`: String = null
   ): Element = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (cdata != null) __obj.updateDynamic("cdata")(cdata)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration)
-    if (doctype != null) __obj.updateDynamic("doctype")(doctype)
-    if (elements != null) __obj.updateDynamic("elements")(elements)
-    if (instruction != null) __obj.updateDynamic("instruction")(instruction)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (cdata != null) __obj.updateDynamic("cdata")(cdata.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
+    if (doctype != null) __obj.updateDynamic("doctype")(doctype.asInstanceOf[js.Any])
+    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
+    if (instruction != null) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
 }

@@ -22,10 +22,10 @@ object Anon_ErrorMessage {
     networkError: Error = null
   ): Anon_ErrorMessage = {
     val __obj = js.Dynamic.literal()
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo)
-    if (graphQLErrors != null) __obj.updateDynamic("graphQLErrors")(graphQLErrors)
-    if (networkError != null) __obj.updateDynamic("networkError")(networkError)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo.asInstanceOf[js.Any])
+    if (graphQLErrors != null) __obj.updateDynamic("graphQLErrors")(graphQLErrors.asInstanceOf[js.Any])
+    if (networkError != null) __obj.updateDynamic("networkError")(networkError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrorMessage]
   }
 }

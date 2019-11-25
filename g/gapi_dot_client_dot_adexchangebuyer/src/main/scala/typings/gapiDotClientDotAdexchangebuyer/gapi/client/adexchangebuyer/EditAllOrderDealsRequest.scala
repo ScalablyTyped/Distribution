@@ -31,10 +31,10 @@ object EditAllOrderDealsRequest {
     updateAction: String = null
   ): EditAllOrderDealsRequest = {
     val __obj = js.Dynamic.literal()
-    if (deals != null) __obj.updateDynamic("deals")(deals)
-    if (proposal != null) __obj.updateDynamic("proposal")(proposal)
-    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber)
-    if (updateAction != null) __obj.updateDynamic("updateAction")(updateAction)
+    if (deals != null) __obj.updateDynamic("deals")(deals.asInstanceOf[js.Any])
+    if (proposal != null) __obj.updateDynamic("proposal")(proposal.asInstanceOf[js.Any])
+    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber.asInstanceOf[js.Any])
+    if (updateAction != null) __obj.updateDynamic("updateAction")(updateAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditAllOrderDealsRequest]
   }
 }

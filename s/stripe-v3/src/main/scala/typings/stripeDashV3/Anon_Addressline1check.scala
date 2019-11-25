@@ -18,9 +18,9 @@ object Anon_Addressline1check {
     cvc_check: js.UndefOr[Boolean] = js.undefined
   ): Anon_Addressline1check = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(address_line1_check)) __obj.updateDynamic("address_line1_check")(address_line1_check)
-    if (!js.isUndefined(address_postal_code_check)) __obj.updateDynamic("address_postal_code_check")(address_postal_code_check)
-    if (!js.isUndefined(cvc_check)) __obj.updateDynamic("cvc_check")(cvc_check)
+    if (!js.isUndefined(address_line1_check)) __obj.updateDynamic("address_line1_check")(address_line1_check.asInstanceOf[js.Any])
+    if (!js.isUndefined(address_postal_code_check)) __obj.updateDynamic("address_postal_code_check")(address_postal_code_check.asInstanceOf[js.Any])
+    if (!js.isUndefined(cvc_check)) __obj.updateDynamic("cvc_check")(cvc_check.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Addressline1check]
   }
 }

@@ -64,3 +64,42 @@ import scala.scalajs.js.annotation._
 */
 trait FunctionsErrorCode extends js.Object
 
+object FunctionsErrorCode {
+  @scala.inline
+  def aborted: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.aborted = this.cast("aborted")
+  @scala.inline
+  def `already-exists`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`already-exists` = this.cast("already-exists")
+  @scala.inline
+  def cancelled: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.cancelled = this.cast("cancelled")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `data-loss`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`data-loss` = this.cast("data-loss")
+  @scala.inline
+  def `deadline-exceeded`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`deadline-exceeded` = this.cast("deadline-exceeded")
+  @scala.inline
+  def `failed-precondition`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`failed-precondition` = this.cast("failed-precondition")
+  @scala.inline
+  def internal: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.internal = this.cast("internal")
+  @scala.inline
+  def `invalid-argument`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`invalid-argument` = this.cast("invalid-argument")
+  @scala.inline
+  def `not-found`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`not-found` = this.cast("not-found")
+  @scala.inline
+  def ok: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.ok = this.cast("ok")
+  @scala.inline
+  def `out-of-range`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`out-of-range` = this.cast("out-of-range")
+  @scala.inline
+  def `permission-denied`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`permission-denied` = this.cast("permission-denied")
+  @scala.inline
+  def `resource-exhausted`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`resource-exhausted` = this.cast("resource-exhausted")
+  @scala.inline
+  def unauthenticated: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.unauthenticated = this.cast("unauthenticated")
+  @scala.inline
+  def unavailable: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.unavailable = this.cast("unavailable")
+  @scala.inline
+  def unimplemented: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.unimplemented = this.cast("unimplemented")
+  @scala.inline
+  def unknown: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.unknown = this.cast("unknown")
+}
+

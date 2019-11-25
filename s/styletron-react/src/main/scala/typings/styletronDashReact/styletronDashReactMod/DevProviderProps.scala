@@ -22,10 +22,10 @@ object DevProviderProps {
     debug: DebugEngine = null,
     debugAfterHydration: js.UndefOr[Boolean] = js.undefined
   ): DevProviderProps = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (debug != null) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(debugAfterHydration)) __obj.updateDynamic("debugAfterHydration")(debugAfterHydration)
+    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugAfterHydration)) __obj.updateDynamic("debugAfterHydration")(debugAfterHydration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevProviderProps]
   }
 }

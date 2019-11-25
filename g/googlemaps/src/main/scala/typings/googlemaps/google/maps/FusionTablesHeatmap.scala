@@ -11,7 +11,7 @@ trait FusionTablesHeatmap extends js.Object {
 object FusionTablesHeatmap {
   @scala.inline
   def apply(enabled: Boolean): FusionTablesHeatmap = {
-    val __obj = js.Dynamic.literal(enabled = enabled)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FusionTablesHeatmap]
   }

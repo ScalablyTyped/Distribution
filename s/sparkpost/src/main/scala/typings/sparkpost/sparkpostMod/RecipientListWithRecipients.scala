@@ -19,7 +19,7 @@ object RecipientListWithRecipients {
     recipients: js.Array[Recipient],
     total_accepted_recipients: Double
   ): RecipientListWithRecipients = {
-    val __obj = js.Dynamic.literal(attributes = attributes, description = description, id = id, name = name, recipients = recipients, total_accepted_recipients = total_accepted_recipients)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any], total_accepted_recipients = total_accepted_recipients.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RecipientListWithRecipients]
   }

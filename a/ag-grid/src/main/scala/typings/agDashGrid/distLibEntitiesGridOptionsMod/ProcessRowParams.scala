@@ -33,7 +33,7 @@ object ProcessRowParams {
     node: RowNode,
     rowIndex: Double
   ): ProcessRowParams = {
-    val __obj = js.Dynamic.literal(addRenderedRowListener = js.Any.fromFunction2(addRenderedRowListener), api = api, columnApi = columnApi, context = context, ePinnedLeftRow = ePinnedLeftRow, ePinnedRightRow = ePinnedRightRow, eRow = eRow, node = node, rowIndex = rowIndex)
+    val __obj = js.Dynamic.literal(addRenderedRowListener = js.Any.fromFunction2(addRenderedRowListener), api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], ePinnedLeftRow = ePinnedLeftRow.asInstanceOf[js.Any], ePinnedRightRow = ePinnedRightRow.asInstanceOf[js.Any], eRow = eRow.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProcessRowParams]
   }

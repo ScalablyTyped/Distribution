@@ -18,9 +18,9 @@ object EntitlementsListResponse {
     tokenPagination: TokenPagination = null
   ): EntitlementsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntitlementsListResponse]
   }
 }

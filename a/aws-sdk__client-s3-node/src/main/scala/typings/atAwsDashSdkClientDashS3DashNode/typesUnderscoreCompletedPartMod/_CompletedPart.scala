@@ -19,7 +19,7 @@ object _CompletedPart {
   @scala.inline
   def apply(ETag: String = null, PartNumber: Int | Double = null): _CompletedPart = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag)
+    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
     if (PartNumber != null) __obj.updateDynamic("PartNumber")(PartNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CompletedPart]
   }

@@ -30,9 +30,9 @@ object GetSamplingRulesOutput {
     NextToken: String = null,
     SamplingRuleRecords: js.Array[_UnmarshalledSamplingRuleRecord] = null
   ): GetSamplingRulesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (SamplingRuleRecords != null) __obj.updateDynamic("SamplingRuleRecords")(SamplingRuleRecords)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (SamplingRuleRecords != null) __obj.updateDynamic("SamplingRuleRecords")(SamplingRuleRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSamplingRulesOutput]
   }
 }

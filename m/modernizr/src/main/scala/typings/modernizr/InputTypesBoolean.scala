@@ -37,8 +37,8 @@ object InputTypesBoolean {
     url: Boolean,
     week: Boolean
   ): InputTypesBoolean = {
-    val __obj = js.Dynamic.literal(color = color, date = date, datetime = datetime, email = email, month = month, number = number, range = range, search = search, tel = tel, time = time, url = url, week = week)
-    __obj.updateDynamic("datetime-local")(`datetime-local`)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], tel = tel.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], week = week.asInstanceOf[js.Any])
+    __obj.updateDynamic("datetime-local")(`datetime-local`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputTypesBoolean]
   }
 }

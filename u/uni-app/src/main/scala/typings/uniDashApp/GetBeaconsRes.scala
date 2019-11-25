@@ -19,8 +19,8 @@ object GetBeaconsRes {
   @scala.inline
   def apply(beacons: js.Array[Beacon] = null, errMsg: String = null): GetBeaconsRes = {
     val __obj = js.Dynamic.literal()
-    if (beacons != null) __obj.updateDynamic("beacons")(beacons)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
+    if (beacons != null) __obj.updateDynamic("beacons")(beacons.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBeaconsRes]
   }
 }

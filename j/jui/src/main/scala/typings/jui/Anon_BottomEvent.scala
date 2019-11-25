@@ -77,16 +77,16 @@ object Anon_BottomEvent {
   ): Anon_BottomEvent = {
     val __obj = js.Dynamic.literal()
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     if (modalIndex != null) __obj.updateDynamic("modalIndex")(modalIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move)
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BottomEvent]
   }

@@ -24,12 +24,12 @@ object EntityUserLink {
     userRef: UserRef = null
   ): EntityUserLink = {
     val __obj = js.Dynamic.literal()
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (userRef != null) __obj.updateDynamic("userRef")(userRef)
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (userRef != null) __obj.updateDynamic("userRef")(userRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityUserLink]
   }
 }

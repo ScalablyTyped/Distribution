@@ -33,10 +33,10 @@ object _ServiceId {
     Type: String = null
   ): _ServiceId = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type)
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ServiceId]
   }
 }

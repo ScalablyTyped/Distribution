@@ -30,11 +30,11 @@ object ListTimeseriesResponse {
     youngest: String = null
   ): ListTimeseriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (oldest != null) __obj.updateDynamic("oldest")(oldest)
-    if (timeseries != null) __obj.updateDynamic("timeseries")(timeseries)
-    if (youngest != null) __obj.updateDynamic("youngest")(youngest)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (oldest != null) __obj.updateDynamic("oldest")(oldest.asInstanceOf[js.Any])
+    if (timeseries != null) __obj.updateDynamic("timeseries")(timeseries.asInstanceOf[js.Any])
+    if (youngest != null) __obj.updateDynamic("youngest")(youngest.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTimeseriesResponse]
   }
 }

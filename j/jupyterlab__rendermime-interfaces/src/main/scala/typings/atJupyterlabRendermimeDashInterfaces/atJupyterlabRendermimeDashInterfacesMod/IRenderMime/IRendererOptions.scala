@@ -39,10 +39,10 @@ object IRendererOptions {
     linkHandler: ILinkHandler = null,
     resolver: IResolver = null
   ): IRendererOptions = {
-    val __obj = js.Dynamic.literal(mimeType = mimeType, sanitizer = sanitizer)
-    if (latexTypesetter != null) __obj.updateDynamic("latexTypesetter")(latexTypesetter)
-    if (linkHandler != null) __obj.updateDynamic("linkHandler")(linkHandler)
-    if (resolver != null) __obj.updateDynamic("resolver")(resolver)
+    val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any], sanitizer = sanitizer.asInstanceOf[js.Any])
+    if (latexTypesetter != null) __obj.updateDynamic("latexTypesetter")(latexTypesetter.asInstanceOf[js.Any])
+    if (linkHandler != null) __obj.updateDynamic("linkHandler")(linkHandler.asInstanceOf[js.Any])
+    if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRendererOptions]
   }
 }

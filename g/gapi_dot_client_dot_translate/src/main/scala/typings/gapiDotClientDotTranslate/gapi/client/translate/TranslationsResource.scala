@@ -39,9 +39,9 @@ object TranslationsResource {
     translatedText: String = null
   ): TranslationsResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), translate = js.Any.fromFunction1(translate))
-    if (detectedSourceLanguage != null) __obj.updateDynamic("detectedSourceLanguage")(detectedSourceLanguage)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (translatedText != null) __obj.updateDynamic("translatedText")(translatedText)
+    if (detectedSourceLanguage != null) __obj.updateDynamic("detectedSourceLanguage")(detectedSourceLanguage.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (translatedText != null) __obj.updateDynamic("translatedText")(translatedText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationsResource]
   }
 }

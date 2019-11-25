@@ -35,8 +35,8 @@ object S3EventRecord {
     userIdentity: Anon_PrincipalId,
     glacierEventData: S3EventRecordGlacierEventData = null
   ): S3EventRecord = {
-    val __obj = js.Dynamic.literal(awsRegion = awsRegion, eventName = eventName, eventSource = eventSource, eventTime = eventTime, eventVersion = eventVersion, requestParameters = requestParameters, responseElements = responseElements, s3 = s3, userIdentity = userIdentity)
-    if (glacierEventData != null) __obj.updateDynamic("glacierEventData")(glacierEventData)
+    val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any], eventTime = eventTime.asInstanceOf[js.Any], eventVersion = eventVersion.asInstanceOf[js.Any], requestParameters = requestParameters.asInstanceOf[js.Any], responseElements = responseElements.asInstanceOf[js.Any], s3 = s3.asInstanceOf[js.Any], userIdentity = userIdentity.asInstanceOf[js.Any])
+    if (glacierEventData != null) __obj.updateDynamic("glacierEventData")(glacierEventData.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3EventRecord]
   }
 }

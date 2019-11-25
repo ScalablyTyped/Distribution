@@ -13,7 +13,7 @@ trait GeneralOptions extends js.Object {
 object GeneralOptions {
   @scala.inline
   def apply(interval: Double, maxInInterval: Double, minDifference: Int | Double = null): GeneralOptions = {
-    val __obj = js.Dynamic.literal(interval = interval, maxInInterval = maxInInterval)
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], maxInInterval = maxInInterval.asInstanceOf[js.Any])
     if (minDifference != null) __obj.updateDynamic("minDifference")(minDifference.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralOptions]
   }

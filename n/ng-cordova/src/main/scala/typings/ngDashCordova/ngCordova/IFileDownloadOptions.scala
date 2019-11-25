@@ -18,8 +18,8 @@ object IFileDownloadOptions {
     timeout: Int | Double = null
   ): IFileDownloadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encodeURI)) __obj.updateDynamic("encodeURI")(encodeURI)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(encodeURI)) __obj.updateDynamic("encodeURI")(encodeURI.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileDownloadOptions]
   }

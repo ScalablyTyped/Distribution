@@ -2,7 +2,7 @@ package typings.chromeDashApps.chrome.vpnProvider
 
 import typings.chromeDashApps.Anon_CONNECTEDConnected
 import typings.chromeDashApps.chrome.ToStringLiteral
-import typings.chromeDashApps.chromeDashAppsStrings.connected
+import typings.chromeDashApps.chromeDashAppsStrings.connected_
 import typings.chromeDashApps.chromeDashAppsStrings.failure
 import typings.std.Exclude
 import scala.scalajs.js
@@ -20,9 +20,9 @@ object notifyConnectionStateChanged extends js.Object {
     * @see enum VpnConnectionState
     * @param callback Called when the notification is complete or if there is an error.
     */
-  def apply(state: ToStringLiteral[Anon_CONNECTEDConnected, String, Exclude[String, connected | failure]]): Unit = js.native
+  def apply(state: ToStringLiteral[Anon_CONNECTEDConnected, String, Exclude[String, connected_ | failure]]): Unit = js.native
   def apply(
-    state: ToStringLiteral[Anon_CONNECTEDConnected, String, Exclude[String, connected | failure]],
+    state: ToStringLiteral[Anon_CONNECTEDConnected, String, Exclude[String, connected_ | failure]],
     callback: js.Function0[Unit]
   ): Unit = js.native
 }

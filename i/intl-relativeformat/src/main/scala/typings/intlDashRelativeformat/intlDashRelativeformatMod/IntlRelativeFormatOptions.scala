@@ -15,8 +15,8 @@ object IntlRelativeFormatOptions {
   @scala.inline
   def apply(style: STYLE = null, units: SUPPORTED_FIELD = null): IntlRelativeFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntlRelativeFormatOptions]
   }
 }

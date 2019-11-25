@@ -32,10 +32,10 @@ object Transaction {
     recipient: Anon_Username = null,
     sender: Anon_Username = null
   ): Transaction = {
-    val __obj = js.Dynamic.literal(amount = amount, description = description, from = from, resourceType = resourceType.asInstanceOf[js.Any], time = time, to = to, transactionId = transactionId)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient)
-    if (sender != null) __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }
 }

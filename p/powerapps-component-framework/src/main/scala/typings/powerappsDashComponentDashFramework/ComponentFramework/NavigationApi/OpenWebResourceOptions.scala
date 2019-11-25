@@ -25,7 +25,7 @@ trait OpenWebResourceOptions extends js.Object {
 object OpenWebResourceOptions {
   @scala.inline
   def apply(openInNewWindow: Boolean, height: Int | Double = null, width: Int | Double = null): OpenWebResourceOptions = {
-    val __obj = js.Dynamic.literal(openInNewWindow = openInNewWindow)
+    val __obj = js.Dynamic.literal(openInNewWindow = openInNewWindow.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenWebResourceOptions]

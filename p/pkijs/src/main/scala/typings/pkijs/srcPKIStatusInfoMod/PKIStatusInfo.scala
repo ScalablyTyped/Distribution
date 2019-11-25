@@ -25,9 +25,9 @@ object PKIStatusInfo {
     failInfo: BitString = null,
     statusStrings: Utf8String = null
   ): PKIStatusInfo = {
-    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), status = status, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (failInfo != null) __obj.updateDynamic("failInfo")(failInfo)
-    if (statusStrings != null) __obj.updateDynamic("statusStrings")(statusStrings)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), status = status.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    if (failInfo != null) __obj.updateDynamic("failInfo")(failInfo.asInstanceOf[js.Any])
+    if (statusStrings != null) __obj.updateDynamic("statusStrings")(statusStrings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PKIStatusInfo]
   }
 }

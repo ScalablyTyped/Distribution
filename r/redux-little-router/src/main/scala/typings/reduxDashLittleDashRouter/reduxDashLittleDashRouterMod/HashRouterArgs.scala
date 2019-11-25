@@ -14,10 +14,10 @@ trait HashRouterArgs extends js.Object {
 object HashRouterArgs {
   @scala.inline
   def apply(routes: Routes, basename: String = null, hashType: String = null, history: History = null): HashRouterArgs = {
-    val __obj = js.Dynamic.literal(routes = routes)
-    if (basename != null) __obj.updateDynamic("basename")(basename)
-    if (hashType != null) __obj.updateDynamic("hashType")(hashType)
-    if (history != null) __obj.updateDynamic("history")(history)
+    val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
+    if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
+    if (hashType != null) __obj.updateDynamic("hashType")(hashType.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashRouterArgs]
   }
 }

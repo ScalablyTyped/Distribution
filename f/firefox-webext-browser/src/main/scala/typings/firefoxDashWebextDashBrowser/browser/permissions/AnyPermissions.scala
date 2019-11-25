@@ -15,8 +15,8 @@ object AnyPermissions {
   @scala.inline
   def apply(origins: js.Array[MatchPattern] = null, permissions: js.Array[Permission] = null): AnyPermissions = {
     val __obj = js.Dynamic.literal()
-    if (origins != null) __obj.updateDynamic("origins")(origins)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyPermissions]
   }
 }

@@ -18,7 +18,7 @@ trait PartialMessagePayload extends js.Object {
 object PartialMessagePayload {
   @scala.inline
   def apply(fatal$: Boolean, plugin$: js.Any, transport$: js.Object, tx$: String): PartialMessagePayload = {
-    val __obj = js.Dynamic.literal(fatal$ = fatal$, plugin$ = plugin$, transport$ = transport$, tx$ = tx$)
+    val __obj = js.Dynamic.literal(fatal$ = fatal$.asInstanceOf[js.Any], plugin$ = plugin$.asInstanceOf[js.Any], transport$ = transport$.asInstanceOf[js.Any], tx$ = tx$.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PartialMessagePayload]
   }

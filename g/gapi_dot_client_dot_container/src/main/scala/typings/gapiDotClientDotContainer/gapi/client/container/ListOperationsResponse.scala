@@ -18,8 +18,8 @@ object ListOperationsResponse {
   @scala.inline
   def apply(missingZones: js.Array[String] = null, operations: js.Array[Operation] = null): ListOperationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (missingZones != null) __obj.updateDynamic("missingZones")(missingZones)
-    if (operations != null) __obj.updateDynamic("operations")(operations)
+    if (missingZones != null) __obj.updateDynamic("missingZones")(missingZones.asInstanceOf[js.Any])
+    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOperationsResponse]
   }
 }

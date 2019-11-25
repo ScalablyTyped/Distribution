@@ -19,7 +19,7 @@ object RequireDirectoryResult {
   /* index */ StringDictionary[RequireDirectoryResult[T] | T] = null
   ): RequireDirectoryResult[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[RequireDirectoryResult[T]]
   }
 }

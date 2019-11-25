@@ -18,7 +18,7 @@ trait PointDragDropObject extends js.Object {
 object PointDragDropObject {
   @scala.inline
   def apply(newValues: Dictionary[Double], point: Point): PointDragDropObject = {
-    val __obj = js.Dynamic.literal(newValues = newValues, point = point)
+    val __obj = js.Dynamic.literal(newValues = newValues.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PointDragDropObject]
   }

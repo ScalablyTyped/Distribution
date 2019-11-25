@@ -12,7 +12,7 @@ object Anon_ExclusiveBoolean {
   @scala.inline
   def apply(exclusive: js.UndefOr[Boolean] = js.undefined): Anon_ExclusiveBoolean = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExclusiveBoolean]
   }
 }

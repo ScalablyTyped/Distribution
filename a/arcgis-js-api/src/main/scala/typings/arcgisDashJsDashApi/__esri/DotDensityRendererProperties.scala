@@ -87,16 +87,16 @@ object DotDensityRendererProperties {
     visualVariables: js.Array[VisualVariableProperties] = null
   ): DotDensityRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotBlendingEnabled)) __obj.updateDynamic("dotBlendingEnabled")(dotBlendingEnabled)
+    if (!js.isUndefined(dotBlendingEnabled)) __obj.updateDynamic("dotBlendingEnabled")(dotBlendingEnabled.asInstanceOf[js.Any])
     if (dotValue != null) __obj.updateDynamic("dotValue")(dotValue.asInstanceOf[js.Any])
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     if (referenceScale != null) __obj.updateDynamic("referenceScale")(referenceScale.asInstanceOf[js.Any])
     if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotDensityRendererProperties]
   }
 }

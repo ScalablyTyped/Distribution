@@ -15,8 +15,8 @@ trait Delete extends AST {
 object Delete {
   @scala.inline
   def apply(from: js.Array[From | Dual], tables: js.Any, `type`: delete, where: js.Any): Delete = {
-    val __obj = js.Dynamic.literal(from = from, tables = tables, where = where)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delete]
   }
 }

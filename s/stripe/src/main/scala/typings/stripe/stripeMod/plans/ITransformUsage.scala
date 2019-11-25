@@ -20,7 +20,7 @@ trait ITransformUsage extends js.Object {
 object ITransformUsage {
   @scala.inline
   def apply(divide_by: Double, round: up | down): ITransformUsage = {
-    val __obj = js.Dynamic.literal(divide_by = divide_by, round = round.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(divide_by = divide_by.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITransformUsage]
   }

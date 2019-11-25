@@ -14,9 +14,9 @@ trait Reference extends js.Object {
 object Reference {
   @scala.inline
   def apply(issue: String, raw: String, prefix: String = null, slug: String = null): Reference = {
-    val __obj = js.Dynamic.literal(issue = issue, raw = raw)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (slug != null) __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (slug != null) __obj.updateDynamic("slug")(slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
 }

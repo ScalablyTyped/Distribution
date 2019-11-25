@@ -12,7 +12,7 @@ trait MetaGraph extends js.Object {
 object MetaGraph {
   @scala.inline
   def apply(signatureDefs: SignatureDef, tags: js.Array[String]): MetaGraph = {
-    val __obj = js.Dynamic.literal(signatureDefs = signatureDefs, tags = tags)
+    val __obj = js.Dynamic.literal(signatureDefs = signatureDefs.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MetaGraph]
   }

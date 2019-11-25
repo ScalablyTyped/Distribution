@@ -50,22 +50,22 @@ object Anon_CreditCrs {
     tileWidth: Int | Double = null,
     tilingScheme: TilingScheme = null
   ): Anon_CreditCrs = {
-    val __obj = js.Dynamic.literal(layers = layers, url = url)
+    val __obj = js.Dynamic.literal(layers = layers.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (crs != null) __obj.updateDynamic("crs")(crs)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (!js.isUndefined(enablePickFeatures)) __obj.updateDynamic("enablePickFeatures")(enablePickFeatures)
-    if (getFeatureInfoFormats != null) __obj.updateDynamic("getFeatureInfoFormats")(getFeatureInfoFormats)
-    if (getFeatureInfoParameters != null) __obj.updateDynamic("getFeatureInfoParameters")(getFeatureInfoParameters)
+    if (crs != null) __obj.updateDynamic("crs")(crs.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePickFeatures)) __obj.updateDynamic("enablePickFeatures")(enablePickFeatures.asInstanceOf[js.Any])
+    if (getFeatureInfoFormats != null) __obj.updateDynamic("getFeatureInfoFormats")(getFeatureInfoFormats.asInstanceOf[js.Any])
+    if (getFeatureInfoParameters != null) __obj.updateDynamic("getFeatureInfoParameters")(getFeatureInfoParameters.asInstanceOf[js.Any])
     if (maximumLevel != null) __obj.updateDynamic("maximumLevel")(maximumLevel.asInstanceOf[js.Any])
     if (minimumLevel != null) __obj.updateDynamic("minimumLevel")(minimumLevel.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
-    if (srs != null) __obj.updateDynamic("srs")(srs)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
+    if (srs != null) __obj.updateDynamic("srs")(srs.asInstanceOf[js.Any])
     if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains.asInstanceOf[js.Any])
     if (tileHeight != null) __obj.updateDynamic("tileHeight")(tileHeight.asInstanceOf[js.Any])
     if (tileWidth != null) __obj.updateDynamic("tileWidth")(tileWidth.asInstanceOf[js.Any])
-    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme)
+    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreditCrs]
   }
 }

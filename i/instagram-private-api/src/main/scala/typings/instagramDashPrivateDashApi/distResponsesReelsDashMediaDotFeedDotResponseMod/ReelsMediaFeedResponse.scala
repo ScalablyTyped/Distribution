@@ -33,7 +33,7 @@ object ReelsMediaFeedResponse {
     seen: Double,
     user: ReelsMediaFeedResponseUser
   ): ReelsMediaFeedResponse = {
-    val __obj = js.Dynamic.literal(can_reply = can_reply, can_reshare = can_reshare, expiring_at = expiring_at, id = id, items = items, latest_reel_media = latest_reel_media, media_count = media_count, prefetch_count = prefetch_count, reel_type = reel_type, seen = seen, user = user)
+    val __obj = js.Dynamic.literal(can_reply = can_reply.asInstanceOf[js.Any], can_reshare = can_reshare.asInstanceOf[js.Any], expiring_at = expiring_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], latest_reel_media = latest_reel_media.asInstanceOf[js.Any], media_count = media_count.asInstanceOf[js.Any], prefetch_count = prefetch_count.asInstanceOf[js.Any], reel_type = reel_type.asInstanceOf[js.Any], seen = seen.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReelsMediaFeedResponse]
   }

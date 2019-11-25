@@ -15,8 +15,8 @@ object Anon_Count {
   @scala.inline
   def apply(count: String = null, value: String = null): Anon_Count = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Count]
   }
 }

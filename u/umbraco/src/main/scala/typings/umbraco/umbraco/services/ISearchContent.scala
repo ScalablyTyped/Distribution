@@ -19,7 +19,7 @@ trait ISearchContent extends js.Object {
 object ISearchContent {
   @scala.inline
   def apply(editorPath: String, id: Double, menuUrl: String, metaData: Anon_Url, subTitle: String): ISearchContent = {
-    val __obj = js.Dynamic.literal(editorPath = editorPath, id = id, menuUrl = menuUrl, metaData = metaData, subTitle = subTitle)
+    val __obj = js.Dynamic.literal(editorPath = editorPath.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], menuUrl = menuUrl.asInstanceOf[js.Any], metaData = metaData.asInstanceOf[js.Any], subTitle = subTitle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchContent]
   }

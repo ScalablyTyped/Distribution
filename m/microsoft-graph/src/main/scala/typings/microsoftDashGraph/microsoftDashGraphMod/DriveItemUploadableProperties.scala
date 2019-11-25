@@ -17,9 +17,9 @@ object DriveItemUploadableProperties {
   @scala.inline
   def apply(description: String = null, fileSystemInfo: FileSystemInfo = null, name: String = null): DriveItemUploadableProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (fileSystemInfo != null) __obj.updateDynamic("fileSystemInfo")(fileSystemInfo)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fileSystemInfo != null) __obj.updateDynamic("fileSystemInfo")(fileSystemInfo.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveItemUploadableProperties]
   }
 }

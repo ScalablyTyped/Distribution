@@ -38,17 +38,17 @@ object Anon_Codec {
     total_uncompressed_size: ^ = null,
     `type`: Int | Double = null
   ): Anon_Codec = {
-    val __obj = js.Dynamic.literal(encoding_stats = encoding_stats, statistics = statistics)
+    val __obj = js.Dynamic.literal(encoding_stats = encoding_stats.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any])
     if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
-    if (data_page_offset != null) __obj.updateDynamic("data_page_offset")(data_page_offset)
-    if (dictionary_page_offset != null) __obj.updateDynamic("dictionary_page_offset")(dictionary_page_offset)
-    if (encodings != null) __obj.updateDynamic("encodings")(encodings)
-    if (index_page_offset != null) __obj.updateDynamic("index_page_offset")(index_page_offset)
-    if (key_value_metadata != null) __obj.updateDynamic("key_value_metadata")(key_value_metadata)
-    if (num_values != null) __obj.updateDynamic("num_values")(num_values)
-    if (path_in_schema != null) __obj.updateDynamic("path_in_schema")(path_in_schema)
-    if (total_compressed_size != null) __obj.updateDynamic("total_compressed_size")(total_compressed_size)
-    if (total_uncompressed_size != null) __obj.updateDynamic("total_uncompressed_size")(total_uncompressed_size)
+    if (data_page_offset != null) __obj.updateDynamic("data_page_offset")(data_page_offset.asInstanceOf[js.Any])
+    if (dictionary_page_offset != null) __obj.updateDynamic("dictionary_page_offset")(dictionary_page_offset.asInstanceOf[js.Any])
+    if (encodings != null) __obj.updateDynamic("encodings")(encodings.asInstanceOf[js.Any])
+    if (index_page_offset != null) __obj.updateDynamic("index_page_offset")(index_page_offset.asInstanceOf[js.Any])
+    if (key_value_metadata != null) __obj.updateDynamic("key_value_metadata")(key_value_metadata.asInstanceOf[js.Any])
+    if (num_values != null) __obj.updateDynamic("num_values")(num_values.asInstanceOf[js.Any])
+    if (path_in_schema != null) __obj.updateDynamic("path_in_schema")(path_in_schema.asInstanceOf[js.Any])
+    if (total_compressed_size != null) __obj.updateDynamic("total_compressed_size")(total_compressed_size.asInstanceOf[js.Any])
+    if (total_uncompressed_size != null) __obj.updateDynamic("total_uncompressed_size")(total_uncompressed_size.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Codec]
   }

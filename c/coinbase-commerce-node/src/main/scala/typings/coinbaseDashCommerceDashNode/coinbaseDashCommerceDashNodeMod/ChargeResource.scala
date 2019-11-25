@@ -99,12 +99,12 @@ object ChargeResource {
     logo_url: String = null,
     redirect_url: String = null
   ): ChargeResource = {
-    val __obj = js.Dynamic.literal(addresses = addresses, code = code, created_at = created_at, description = description, expires_at = expires_at, hosted_url = hosted_url, id = id, metadata = metadata, name = name, payments = payments, pricing = pricing, pricing_type = pricing_type, resource = resource, timeline = timeline)
-    if (cancel_url != null) __obj.updateDynamic("cancel_url")(cancel_url)
-    if (checkout != null) __obj.updateDynamic("checkout")(checkout)
-    if (confirmed_at != null) __obj.updateDynamic("confirmed_at")(confirmed_at)
-    if (logo_url != null) __obj.updateDynamic("logo_url")(logo_url)
-    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url)
+    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], hosted_url = hosted_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], payments = payments.asInstanceOf[js.Any], pricing = pricing.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
+    if (cancel_url != null) __obj.updateDynamic("cancel_url")(cancel_url.asInstanceOf[js.Any])
+    if (checkout != null) __obj.updateDynamic("checkout")(checkout.asInstanceOf[js.Any])
+    if (confirmed_at != null) __obj.updateDynamic("confirmed_at")(confirmed_at.asInstanceOf[js.Any])
+    if (logo_url != null) __obj.updateDynamic("logo_url")(logo_url.asInstanceOf[js.Any])
+    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChargeResource]
   }
 }

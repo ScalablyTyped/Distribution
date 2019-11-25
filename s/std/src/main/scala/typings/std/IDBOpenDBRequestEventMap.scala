@@ -12,7 +12,7 @@ trait IDBOpenDBRequestEventMap extends IDBRequestEventMap {
 object IDBOpenDBRequestEventMap {
   @scala.inline
   def apply(blocked: Event, error: Event, success: Event, upgradeneeded: IDBVersionChangeEvent): IDBOpenDBRequestEventMap = {
-    val __obj = js.Dynamic.literal(blocked = blocked, error = error, success = success, upgradeneeded = upgradeneeded)
+    val __obj = js.Dynamic.literal(blocked = blocked.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], upgradeneeded = upgradeneeded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDBOpenDBRequestEventMap]
   }

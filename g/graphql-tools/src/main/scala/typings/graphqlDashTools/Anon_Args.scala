@@ -24,7 +24,7 @@ object Anon_Args {
     schema: GraphQLSchema,
     visitedType: VisitableSchemaType
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(args = args, context = context, name = name, schema = schema, visitedType = visitedType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], visitedType = visitedType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Args]
   }

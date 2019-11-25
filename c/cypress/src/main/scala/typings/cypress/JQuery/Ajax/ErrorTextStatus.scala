@@ -10,5 +10,18 @@ import scala.scalajs.js.annotation._
   - typings.cypress.cypressStrings.abort
   - typings.cypress.cypressStrings.parsererror
 */
-trait ErrorTextStatus extends TextStatus
+trait ErrorTextStatus extends js.Object
+
+object ErrorTextStatus {
+  @scala.inline
+  def abort: typings.cypress.cypressStrings.abort = this.cast("abort")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def error: typings.cypress.cypressStrings.error = this.cast("error")
+  @scala.inline
+  def parsererror: typings.cypress.cypressStrings.parsererror = this.cast("parsererror")
+  @scala.inline
+  def timeout: typings.cypress.cypressStrings.timeout = this.cast("timeout")
+}
 

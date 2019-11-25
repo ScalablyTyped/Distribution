@@ -27,9 +27,9 @@ object GoogleActionsOrdersV3VerticalsTicketEventCharacter {
     `type`: GoogleActionsOrdersV3VerticalsTicketEventCharacterType = null
   ): GoogleActionsOrdersV3VerticalsTicketEventCharacter = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsTicketEventCharacter]
   }
 }

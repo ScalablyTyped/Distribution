@@ -12,7 +12,7 @@ trait Anon_MainText extends js.Object {
 object Anon_MainText {
   @scala.inline
   def apply(mainText: String, secondaryText: String): Anon_MainText = {
-    val __obj = js.Dynamic.literal(mainText = mainText, secondaryText = secondaryText)
+    val __obj = js.Dynamic.literal(mainText = mainText.asInstanceOf[js.Any], secondaryText = secondaryText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MainText]
   }

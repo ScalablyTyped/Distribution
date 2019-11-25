@@ -15,9 +15,9 @@ trait completeVerification[T] extends js.Object {
 object completeVerification {
   @scala.inline
   def apply[T](key: Key, payload: T, header: js.Object = null, `protected`: js.Object = null): completeVerification[T] = {
-    val __obj = js.Dynamic.literal(key = key, payload = payload.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (`protected` != null) __obj.updateDynamic("protected")(`protected`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (`protected` != null) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[completeVerification[T]]
   }
 }

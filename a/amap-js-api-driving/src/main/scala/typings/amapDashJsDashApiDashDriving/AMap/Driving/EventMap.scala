@@ -22,7 +22,7 @@ trait EventMap extends js.Object {
 object EventMap {
   @scala.inline
   def apply(complete: Event[complete, SearchResult | Anon_Info], error: Event[error, Anon_Info]): EventMap = {
-    val __obj = js.Dynamic.literal(complete = complete, error = error)
+    val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap]
   }

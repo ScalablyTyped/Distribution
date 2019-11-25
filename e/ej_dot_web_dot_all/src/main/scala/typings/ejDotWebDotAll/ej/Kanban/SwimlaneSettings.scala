@@ -37,11 +37,11 @@ object SwimlaneSettings {
     unassignedGroup: SwimlaneSettingsUnassignedGroup = null
   ): SwimlaneSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(showCount)) __obj.updateDynamic("showCount")(showCount)
-    if (!js.isUndefined(showEmptySwimlane)) __obj.updateDynamic("showEmptySwimlane")(showEmptySwimlane)
-    if (unassignedGroup != null) __obj.updateDynamic("unassignedGroup")(unassignedGroup)
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCount)) __obj.updateDynamic("showCount")(showCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEmptySwimlane)) __obj.updateDynamic("showEmptySwimlane")(showEmptySwimlane.asInstanceOf[js.Any])
+    if (unassignedGroup != null) __obj.updateDynamic("unassignedGroup")(unassignedGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwimlaneSettings]
   }
 }

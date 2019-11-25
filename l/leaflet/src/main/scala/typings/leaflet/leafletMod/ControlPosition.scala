@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ControlPosition extends js.Object
 
+object ControlPosition {
+  @scala.inline
+  def bottomleft: typings.leaflet.leafletStrings.bottomleft = this.cast("bottomleft")
+  @scala.inline
+  def bottomright: typings.leaflet.leafletStrings.bottomright = this.cast("bottomright")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def topleft: typings.leaflet.leafletStrings.topleft = this.cast("topleft")
+  @scala.inline
+  def topright: typings.leaflet.leafletStrings.topright = this.cast("topright")
+}
+

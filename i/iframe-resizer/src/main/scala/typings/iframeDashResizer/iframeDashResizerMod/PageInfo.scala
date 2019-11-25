@@ -51,7 +51,7 @@ object PageInfo {
     scrollLeft: Double,
     scrollTop: Double
   ): PageInfo = {
-    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, iframeHeight = iframeHeight, iframeWidth = iframeWidth, offsetLeft = offsetLeft, offsetTop = offsetTop, scrollLeft = scrollLeft, scrollTop = scrollTop)
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], iframeHeight = iframeHeight.asInstanceOf[js.Any], iframeWidth = iframeWidth.asInstanceOf[js.Any], offsetLeft = offsetLeft.asInstanceOf[js.Any], offsetTop = offsetTop.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageInfo]
   }

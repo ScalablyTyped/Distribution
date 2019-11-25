@@ -31,7 +31,7 @@ object ISettings {
     success: IAnimation,
     warning: IAnimation
   ): ISettings = {
-    val __obj = js.Dynamic.literal(custom = custom, details = details, error = error, html5DefaultIcon = html5DefaultIcon, html5Mode = html5Mode, info = info, localStorage = localStorage, progress = progress, success = success, warning = warning)
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], html5DefaultIcon = html5DefaultIcon.asInstanceOf[js.Any], html5Mode = html5Mode.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], localStorage = localStorage.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISettings]
   }

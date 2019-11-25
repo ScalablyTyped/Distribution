@@ -16,9 +16,9 @@ trait Comment
 object Comment {
   @scala.inline
   def apply(content: String, `type`: comment, parent: NodeBase = null): Comment = {
-    val __obj = js.Dynamic.literal(content = content)
-    __obj.updateDynamic("type")(`type`)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

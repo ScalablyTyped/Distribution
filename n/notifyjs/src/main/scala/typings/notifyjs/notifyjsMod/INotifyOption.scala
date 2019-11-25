@@ -72,16 +72,16 @@ object INotifyOption {
     timeout: Int | Double = null
   ): INotifyOption = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (notifyClick != null) __obj.updateDynamic("notifyClick")(notifyClick)
-    if (notifyClose != null) __obj.updateDynamic("notifyClose")(notifyClose)
-    if (notifyError != null) __obj.updateDynamic("notifyError")(notifyError)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (notifyClick != null) __obj.updateDynamic("notifyClick")(notifyClick.asInstanceOf[js.Any])
+    if (notifyClose != null) __obj.updateDynamic("notifyClose")(notifyClose.asInstanceOf[js.Any])
+    if (notifyError != null) __obj.updateDynamic("notifyError")(notifyError.asInstanceOf[js.Any])
     if (notifyShow != null) __obj.updateDynamic("notifyShow")(js.Any.fromFunction1(notifyShow))
-    if (permissionDenied != null) __obj.updateDynamic("permissionDenied")(permissionDenied)
-    if (permissionGranted != null) __obj.updateDynamic("permissionGranted")(permissionGranted)
-    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (permissionDenied != null) __obj.updateDynamic("permissionDenied")(permissionDenied.asInstanceOf[js.Any])
+    if (permissionGranted != null) __obj.updateDynamic("permissionGranted")(permissionGranted.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotifyOption]
   }

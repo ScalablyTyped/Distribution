@@ -19,8 +19,8 @@ object _ApplicationResponse {
   @scala.inline
   def apply(Id: String = null, Name: String = null): _ApplicationResponse = {
     val __obj = js.Dynamic.literal()
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ApplicationResponse]
   }
 }

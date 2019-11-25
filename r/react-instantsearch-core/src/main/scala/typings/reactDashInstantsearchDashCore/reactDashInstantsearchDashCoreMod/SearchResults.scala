@@ -39,9 +39,9 @@ object SearchResults {
     aroundLatLng: String = null,
     automaticRadius: String = null
   ): SearchResults[TDoc] = {
-    val __obj = js.Dynamic.literal(disjunctiveFacets = disjunctiveFacets, exhaustiveNbHits = exhaustiveNbHits, facets = facets, hierarchicalFacets = hierarchicalFacets, hits = hits, hitsPerPage = hitsPerPage, index = index, nbHits = nbHits, nbPages = nbPages, page = page, processingTimeMS = processingTimeMS, query = query)
-    if (aroundLatLng != null) __obj.updateDynamic("aroundLatLng")(aroundLatLng)
-    if (automaticRadius != null) __obj.updateDynamic("automaticRadius")(automaticRadius)
+    val __obj = js.Dynamic.literal(disjunctiveFacets = disjunctiveFacets.asInstanceOf[js.Any], exhaustiveNbHits = exhaustiveNbHits.asInstanceOf[js.Any], facets = facets.asInstanceOf[js.Any], hierarchicalFacets = hierarchicalFacets.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsPerPage = hitsPerPage.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], nbHits = nbHits.asInstanceOf[js.Any], nbPages = nbPages.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], processingTimeMS = processingTimeMS.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (aroundLatLng != null) __obj.updateDynamic("aroundLatLng")(aroundLatLng.asInstanceOf[js.Any])
+    if (automaticRadius != null) __obj.updateDynamic("automaticRadius")(automaticRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResults[TDoc]]
   }
 }

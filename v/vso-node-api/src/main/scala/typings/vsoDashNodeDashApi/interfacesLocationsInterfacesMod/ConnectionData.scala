@@ -48,7 +48,7 @@ object ConnectionData {
     locationServiceData: LocationServiceData,
     webApplicationRelativeDirectory: String
   ): ConnectionData = {
-    val __obj = js.Dynamic.literal(authenticatedUser = authenticatedUser, authorizedUser = authorizedUser, deploymentId = deploymentId, instanceId = instanceId, lastUserAccess = lastUserAccess, locationServiceData = locationServiceData, webApplicationRelativeDirectory = webApplicationRelativeDirectory)
+    val __obj = js.Dynamic.literal(authenticatedUser = authenticatedUser.asInstanceOf[js.Any], authorizedUser = authorizedUser.asInstanceOf[js.Any], deploymentId = deploymentId.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], lastUserAccess = lastUserAccess.asInstanceOf[js.Any], locationServiceData = locationServiceData.asInstanceOf[js.Any], webApplicationRelativeDirectory = webApplicationRelativeDirectory.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectionData]
   }

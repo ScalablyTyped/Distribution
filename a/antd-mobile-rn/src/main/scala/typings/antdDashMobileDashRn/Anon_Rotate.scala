@@ -11,7 +11,7 @@ trait Anon_Rotate extends js.Object {
 object Anon_Rotate {
   @scala.inline
   def apply(rotate: String): Anon_Rotate = {
-    val __obj = js.Dynamic.literal(rotate = rotate)
+    val __obj = js.Dynamic.literal(rotate = rotate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rotate]
   }

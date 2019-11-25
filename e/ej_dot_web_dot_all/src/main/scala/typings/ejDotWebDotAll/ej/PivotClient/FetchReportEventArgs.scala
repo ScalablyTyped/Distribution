@@ -17,8 +17,8 @@ object FetchReportEventArgs {
   @scala.inline
   def apply(fetchReportSetting: js.Any = null, targetControl: js.Any = null): FetchReportEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (fetchReportSetting != null) __obj.updateDynamic("fetchReportSetting")(fetchReportSetting)
-    if (targetControl != null) __obj.updateDynamic("targetControl")(targetControl)
+    if (fetchReportSetting != null) __obj.updateDynamic("fetchReportSetting")(fetchReportSetting.asInstanceOf[js.Any])
+    if (targetControl != null) __obj.updateDynamic("targetControl")(targetControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchReportEventArgs]
   }
 }

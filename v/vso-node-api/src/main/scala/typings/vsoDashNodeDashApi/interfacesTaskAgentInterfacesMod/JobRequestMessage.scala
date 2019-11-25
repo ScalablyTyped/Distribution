@@ -23,7 +23,7 @@ object JobRequestMessage {
     plan: TaskOrchestrationPlanReference,
     timeline: TimelineReference
   ): JobRequestMessage = {
-    val __obj = js.Dynamic.literal(environment = environment, jobId = jobId, jobName = jobName, messageType = messageType, plan = plan, timeline = timeline)
+    val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobRequestMessage]
   }

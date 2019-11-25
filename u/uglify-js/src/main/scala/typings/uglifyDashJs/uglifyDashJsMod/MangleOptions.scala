@@ -26,11 +26,11 @@ object MangleOptions {
     toplevel: js.UndefOr[Boolean] = js.undefined
   ): MangleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval)
-    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames)
+    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (reserved != null) __obj.updateDynamic("reserved")(reserved)
-    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel)
+    if (reserved != null) __obj.updateDynamic("reserved")(reserved.asInstanceOf[js.Any])
+    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[MangleOptions]
   }
 }

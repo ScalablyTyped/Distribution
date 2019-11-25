@@ -22,10 +22,10 @@ object ToastProps {
     style: CSSProperties = null
   ): ToastProps = {
     val __obj = js.Dynamic.literal()
-    if (accent != null) __obj.updateDynamic("accent")(accent)
+    if (accent != null) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastProps]
   }
 }

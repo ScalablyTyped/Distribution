@@ -43,20 +43,20 @@ object VNode {
     tag: String = null,
     text: String = null
   ): VNode = {
-    val __obj = js.Dynamic.literal(isComment = isComment, isRootInsert = isRootInsert)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (componentInstance != null) __obj.updateDynamic("componentInstance")(componentInstance)
-    if (componentOptions != null) __obj.updateDynamic("componentOptions")(componentOptions)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (elm != null) __obj.updateDynamic("elm")(elm)
-    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic)
+    val __obj = js.Dynamic.literal(isComment = isComment.asInstanceOf[js.Any], isRootInsert = isRootInsert.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (componentInstance != null) __obj.updateDynamic("componentInstance")(componentInstance.asInstanceOf[js.Any])
+    if (componentOptions != null) __obj.updateDynamic("componentOptions")(componentOptions.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (elm != null) __obj.updateDynamic("elm")(elm.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ns != null) __obj.updateDynamic("ns")(ns)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode]
   }
 }

@@ -24,10 +24,10 @@ object CloudRepoSourceContext {
     revisionId: String = null
   ): CloudRepoSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (aliasContext != null) __obj.updateDynamic("aliasContext")(aliasContext)
-    if (aliasName != null) __obj.updateDynamic("aliasName")(aliasName)
-    if (repoId != null) __obj.updateDynamic("repoId")(repoId)
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
+    if (aliasContext != null) __obj.updateDynamic("aliasContext")(aliasContext.asInstanceOf[js.Any])
+    if (aliasName != null) __obj.updateDynamic("aliasName")(aliasName.asInstanceOf[js.Any])
+    if (repoId != null) __obj.updateDynamic("repoId")(repoId.asInstanceOf[js.Any])
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudRepoSourceContext]
   }
 }

@@ -40,15 +40,15 @@ object InlineContent {
     text: String = null
   ): InlineContent = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (inline_images != null) __obj.updateDynamic("inline_images")(inline_images)
-    if (push != null) __obj.updateDynamic("push")(push)
-    if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (inline_images != null) __obj.updateDynamic("inline_images")(inline_images.asInstanceOf[js.Any])
+    if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineContent]
   }
 }

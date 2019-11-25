@@ -16,8 +16,8 @@ trait ValidationError extends js.Object {
 object ValidationError {
   @scala.inline
   def apply(context: Context, value: js.Any, message: String = null): ValidationError = {
-    val __obj = js.Dynamic.literal(context = context, value = value)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationError]
   }
 }

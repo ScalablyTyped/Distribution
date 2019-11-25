@@ -18,9 +18,9 @@ object Anon_MapParams {
     reviver: js.Any = null
   ): Anon_MapParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams)
-    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams)
-    if (reviver != null) __obj.updateDynamic("reviver")(reviver)
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.asInstanceOf[js.Any])
+    if (reviver != null) __obj.updateDynamic("reviver")(reviver.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MapParams]
   }
 }

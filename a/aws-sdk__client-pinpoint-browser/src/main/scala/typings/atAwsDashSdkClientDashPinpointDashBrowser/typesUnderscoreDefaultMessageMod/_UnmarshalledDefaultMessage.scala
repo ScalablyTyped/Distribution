@@ -17,8 +17,8 @@ object _UnmarshalledDefaultMessage {
   @scala.inline
   def apply(Body: String = null, Substitutions: StringDictionary[js.Array[String]] = null): _UnmarshalledDefaultMessage = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body)
-    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions)
+    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
+    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledDefaultMessage]
   }
 }

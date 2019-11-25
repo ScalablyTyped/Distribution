@@ -26,7 +26,7 @@ trait Anon_Compact extends js.Object {
 object Anon_Compact {
   @scala.inline
   def apply(compact: String, full: String, minimal: String, none: String): Anon_Compact = {
-    val __obj = js.Dynamic.literal(compact = compact, full = full, minimal = minimal, none = none)
+    val __obj = js.Dynamic.literal(compact = compact.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any], minimal = minimal.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Compact]
   }

@@ -18,7 +18,7 @@ object ChartParallelAxesLabelsLevelsOptions {
   def apply(level: Int | Double = null, style: CSSObject = null): ChartParallelAxesLabelsLevelsOptions = {
     val __obj = js.Dynamic.literal()
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartParallelAxesLabelsLevelsOptions]
   }
 }

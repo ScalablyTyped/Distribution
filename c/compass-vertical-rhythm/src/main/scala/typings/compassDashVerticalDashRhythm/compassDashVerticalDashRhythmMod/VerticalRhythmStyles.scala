@@ -12,7 +12,7 @@ trait VerticalRhythmStyles extends js.Object {
 object VerticalRhythmStyles {
   @scala.inline
   def apply(fontSize: String, lineHeight: String): VerticalRhythmStyles = {
-    val __obj = js.Dynamic.literal(fontSize = fontSize, lineHeight = lineHeight)
+    val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VerticalRhythmStyles]
   }

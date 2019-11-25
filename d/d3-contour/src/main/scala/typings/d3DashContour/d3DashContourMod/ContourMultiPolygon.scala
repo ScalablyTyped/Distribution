@@ -1,7 +1,6 @@
 package typings.d3DashContour.d3DashContourMod
 
 import typings.geojson.geojsonMod.BBox
-import typings.geojson.geojsonMod.GeoJsonTypes
 import typings.geojson.geojsonMod.MultiPolygon
 import typings.geojson.geojsonMod.Position
 import scala.scalajs.js
@@ -19,14 +18,12 @@ object ContourMultiPolygon {
   @scala.inline
   def apply(
     coordinates: js.Array[js.Array[js.Array[Position]]],
-    `type`: GeoJsonTypes,
-    type_MultiPolygon: typings.geojson.geojsonStrings.MultiPolygon,
+    `type`: typings.geojson.geojsonStrings.MultiPolygon,
     value: Double,
     bbox: BBox = null
   ): ContourMultiPolygon = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates, value = value)
-    __obj.updateDynamic("type")(`type`)
-    __obj.updateDynamic("type")(type_MultiPolygon)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContourMultiPolygon]
   }

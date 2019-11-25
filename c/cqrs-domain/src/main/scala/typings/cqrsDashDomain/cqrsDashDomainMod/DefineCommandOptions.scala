@@ -22,9 +22,9 @@ object DefineCommandOptions {
     version: Int | Double = null
   ): DefineCommandOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(existing)) __obj.updateDynamic("existing")(existing)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (!js.isUndefined(existing)) __obj.updateDynamic("existing")(existing.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineCommandOptions]
   }

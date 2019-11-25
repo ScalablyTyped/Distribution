@@ -1,8 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabElement
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouteID
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouteWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IonTabs extends js.Object {
   var useRouter: Boolean = js.native
-  def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
+  def getRouteId(): js.Promise[
+    js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouteID */ _
+    ]
+  ] = js.native
   /**
     * Get the currently selected tab.
     */
@@ -27,6 +29,8 @@ trait IonTabs extends js.Object {
     */
   def select(tab: String): js.Promise[Boolean] = js.native
   def select(tab: HTMLIonTabElement): js.Promise[Boolean] = js.native
-  def setRouteId(id: String): js.Promise[RouteWrite] = js.native
+  def setRouteId(id: String): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouteWrite */ _
+  ] = js.native
 }
 

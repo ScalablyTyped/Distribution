@@ -27,11 +27,11 @@ object Tier {
     tier: String = null
   ): Tier = {
     val __obj = js.Dynamic.literal()
-    if (DiskQuota != null) __obj.updateDynamic("DiskQuota")(DiskQuota)
-    if (RAM != null) __obj.updateDynamic("RAM")(RAM)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (tier != null) __obj.updateDynamic("tier")(tier)
+    if (DiskQuota != null) __obj.updateDynamic("DiskQuota")(DiskQuota.asInstanceOf[js.Any])
+    if (RAM != null) __obj.updateDynamic("RAM")(RAM.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tier]
   }
 }

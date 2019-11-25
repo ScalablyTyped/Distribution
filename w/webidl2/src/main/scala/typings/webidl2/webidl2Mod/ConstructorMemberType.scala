@@ -16,8 +16,8 @@ trait ConstructorMemberType extends IDLInterfaceMemberType {
 object ConstructorMemberType {
   @scala.inline
   def apply(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], `type`: constructor): ConstructorMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments, extAttrs = extAttrs)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorMemberType]
   }
 }

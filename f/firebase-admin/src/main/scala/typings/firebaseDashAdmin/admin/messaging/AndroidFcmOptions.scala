@@ -18,7 +18,7 @@ object AndroidFcmOptions {
   @scala.inline
   def apply(analyticsLabel: String = null): AndroidFcmOptions = {
     val __obj = js.Dynamic.literal()
-    if (analyticsLabel != null) __obj.updateDynamic("analyticsLabel")(analyticsLabel)
+    if (analyticsLabel != null) __obj.updateDynamic("analyticsLabel")(analyticsLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidFcmOptions]
   }
 }

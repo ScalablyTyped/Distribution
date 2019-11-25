@@ -11,7 +11,7 @@ trait NavigationUriActionPayload extends js.Object {
 object NavigationUriActionPayload {
   @scala.inline
   def apply(uri: String): NavigationUriActionPayload = {
-    val __obj = js.Dynamic.literal(uri = uri)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigationUriActionPayload]
   }

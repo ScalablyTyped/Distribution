@@ -19,7 +19,7 @@ object TypeOptions {
     handleNotFoundStyleName: `throw` | log | ignore = null
   ): TypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.asInstanceOf[js.Any])
     if (handleNotFoundStyleName != null) __obj.updateDynamic("handleNotFoundStyleName")(handleNotFoundStyleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeOptions]
   }

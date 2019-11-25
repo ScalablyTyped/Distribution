@@ -38,9 +38,9 @@ object PlusIoURLType {
   @scala.inline
   def apply(LocalURL: PlusIoLocalURL = null, RelativeURL: PlusIoRelativeURL = null, RomoteURL: String = null): PlusIoURLType = {
     val __obj = js.Dynamic.literal()
-    if (LocalURL != null) __obj.updateDynamic("LocalURL")(LocalURL)
-    if (RelativeURL != null) __obj.updateDynamic("RelativeURL")(RelativeURL)
-    if (RomoteURL != null) __obj.updateDynamic("RomoteURL")(RomoteURL)
+    if (LocalURL != null) __obj.updateDynamic("LocalURL")(LocalURL.asInstanceOf[js.Any])
+    if (RelativeURL != null) __obj.updateDynamic("RelativeURL")(RelativeURL.asInstanceOf[js.Any])
+    if (RomoteURL != null) __obj.updateDynamic("RomoteURL")(RomoteURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusIoURLType]
   }
 }

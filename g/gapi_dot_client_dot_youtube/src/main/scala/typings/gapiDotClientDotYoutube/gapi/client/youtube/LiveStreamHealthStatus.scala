@@ -21,9 +21,9 @@ object LiveStreamHealthStatus {
     status: String = null
   ): LiveStreamHealthStatus = {
     val __obj = js.Dynamic.literal()
-    if (configurationIssues != null) __obj.updateDynamic("configurationIssues")(configurationIssues)
-    if (lastUpdateTimeSeconds != null) __obj.updateDynamic("lastUpdateTimeSeconds")(lastUpdateTimeSeconds)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (configurationIssues != null) __obj.updateDynamic("configurationIssues")(configurationIssues.asInstanceOf[js.Any])
+    if (lastUpdateTimeSeconds != null) __obj.updateDynamic("lastUpdateTimeSeconds")(lastUpdateTimeSeconds.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveStreamHealthStatus]
   }
 }

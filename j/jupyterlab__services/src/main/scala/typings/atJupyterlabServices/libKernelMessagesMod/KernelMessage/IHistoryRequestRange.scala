@@ -31,7 +31,7 @@ object IHistoryRequestRange {
     start: Double,
     stop: Double
   ): IHistoryRequestRange = {
-    val __obj = js.Dynamic.literal(hist_access_type = hist_access_type, output = output, raw = raw, session = session, start = start, stop = stop)
+    val __obj = js.Dynamic.literal(hist_access_type = hist_access_type.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IHistoryRequestRange]
   }

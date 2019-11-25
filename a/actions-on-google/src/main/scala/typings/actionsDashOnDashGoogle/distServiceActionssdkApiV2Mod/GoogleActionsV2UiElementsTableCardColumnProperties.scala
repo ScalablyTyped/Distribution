@@ -23,8 +23,8 @@ object GoogleActionsV2UiElementsTableCardColumnProperties {
     horizontalAlignment: GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment = null
   ): GoogleActionsV2UiElementsTableCardColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCardColumnProperties]
   }
 }

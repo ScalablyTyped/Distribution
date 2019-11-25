@@ -12,7 +12,7 @@ trait OrgsGetHookParams extends js.Object {
 object OrgsGetHookParams {
   @scala.inline
   def apply(hook_id: Double, org: String): OrgsGetHookParams = {
-    val __obj = js.Dynamic.literal(hook_id = hook_id, org = org)
+    val __obj = js.Dynamic.literal(hook_id = hook_id.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrgsGetHookParams]
   }

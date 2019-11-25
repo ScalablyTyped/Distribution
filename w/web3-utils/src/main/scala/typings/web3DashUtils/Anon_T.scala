@@ -14,7 +14,7 @@ trait Anon_T extends _Mixed {
 object Anon_T {
   @scala.inline
   def apply(t: String, v: String | ^  | Double): Anon_T = {
-    val __obj = js.Dynamic.literal(t = t, v = v.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_T]
   }

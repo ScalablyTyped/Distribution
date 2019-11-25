@@ -26,7 +26,7 @@ trait TypeofReadyState extends js.Object {
 object TypeofReadyState {
   @scala.inline
   def apply(CLOSED: js.Any, CLOSING: js.Any, CONNECTING: js.Any, OPEN: js.Any): TypeofReadyState = {
-    val __obj = js.Dynamic.literal(CLOSED = CLOSED, CLOSING = CLOSING, CONNECTING = CONNECTING, OPEN = OPEN)
+    val __obj = js.Dynamic.literal(CLOSED = CLOSED.asInstanceOf[js.Any], CLOSING = CLOSING.asInstanceOf[js.Any], CONNECTING = CONNECTING.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofReadyState]
   }

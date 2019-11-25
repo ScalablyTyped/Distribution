@@ -36,12 +36,12 @@ object ToolsCustomOrderedList {
     tooltip: String = null
   ): ToolsCustomOrderedList = {
     val __obj = js.Dynamic.literal()
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (listImage != null) __obj.updateDynamic("listImage")(listImage)
-    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (listImage != null) __obj.updateDynamic("listImage")(listImage.asInstanceOf[js.Any])
+    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolsCustomOrderedList]
   }
 }

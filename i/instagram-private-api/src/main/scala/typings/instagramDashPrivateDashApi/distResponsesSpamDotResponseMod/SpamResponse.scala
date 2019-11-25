@@ -34,8 +34,8 @@ object SpamResponse {
     status: fail,
     error_type: String = null
   ): SpamResponse = {
-    val __obj = js.Dynamic.literal(feedback_action = feedback_action, feedback_appeal_label = feedback_appeal_label, feedback_ignore_label = feedback_ignore_label, feedback_message = feedback_message, feedback_title = feedback_title, feedback_url = feedback_url, message = message, spam = spam, status = status)
-    if (error_type != null) __obj.updateDynamic("error_type")(error_type)
+    val __obj = js.Dynamic.literal(feedback_action = feedback_action.asInstanceOf[js.Any], feedback_appeal_label = feedback_appeal_label.asInstanceOf[js.Any], feedback_ignore_label = feedback_ignore_label.asInstanceOf[js.Any], feedback_message = feedback_message.asInstanceOf[js.Any], feedback_title = feedback_title.asInstanceOf[js.Any], feedback_url = feedback_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], spam = spam.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (error_type != null) __obj.updateDynamic("error_type")(error_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpamResponse]
   }
 }

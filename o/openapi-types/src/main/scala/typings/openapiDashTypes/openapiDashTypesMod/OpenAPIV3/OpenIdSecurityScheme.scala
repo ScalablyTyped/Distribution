@@ -14,9 +14,9 @@ trait OpenIdSecurityScheme extends SecuritySchemeObject {
 object OpenIdSecurityScheme {
   @scala.inline
   def apply(openIdConnectUrl: String, `type`: openIdConnect, description: String = null): OpenIdSecurityScheme = {
-    val __obj = js.Dynamic.literal(openIdConnectUrl = openIdConnectUrl)
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(openIdConnectUrl = openIdConnectUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenIdSecurityScheme]
   }
 }

@@ -40,13 +40,13 @@ object SignatureResizeEventArgs {
     `type`: String = null
   ): SignatureResizeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
-    if (signatureCurrentBound != null) __obj.updateDynamic("signatureCurrentBound")(signatureCurrentBound)
-    if (signaturePreviousBound != null) __obj.updateDynamic("signaturePreviousBound")(signaturePreviousBound)
-    if (signatureSettings != null) __obj.updateDynamic("signatureSettings")(signatureSettings)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (signatureCurrentBound != null) __obj.updateDynamic("signatureCurrentBound")(signatureCurrentBound.asInstanceOf[js.Any])
+    if (signaturePreviousBound != null) __obj.updateDynamic("signaturePreviousBound")(signaturePreviousBound.asInstanceOf[js.Any])
+    if (signatureSettings != null) __obj.updateDynamic("signatureSettings")(signatureSettings.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureResizeEventArgs]
   }
 }

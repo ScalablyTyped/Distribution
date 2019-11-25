@@ -26,7 +26,7 @@ object Anon_Brotli {
     threshold: Double,
     zlib: Partial[Anon_0]
   ): Anon_Brotli = {
-    val __obj = js.Dynamic.literal(brotli = brotli, cache = js.Any.fromFunction2(cache), cacheSize = cacheSize, filter = filter, threshold = threshold, zlib = zlib)
+    val __obj = js.Dynamic.literal(brotli = brotli.asInstanceOf[js.Any], cache = js.Any.fromFunction2(cache), cacheSize = cacheSize.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], zlib = zlib.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Brotli]
   }

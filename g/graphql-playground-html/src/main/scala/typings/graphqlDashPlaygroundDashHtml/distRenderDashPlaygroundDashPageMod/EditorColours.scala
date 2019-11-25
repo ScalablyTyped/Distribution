@@ -53,8 +53,8 @@ object EditorColours {
     variable: String,
     ws: String
   ): EditorColours = {
-    val __obj = js.Dynamic.literal(atom = atom, attribute = attribute, builtin = builtin, comment = comment, cursorColor = cursorColor, editorBackground = editorBackground, keyword = keyword, leftDrawerBackground = leftDrawerBackground, meta = meta, number = number, property = property, punctuation = punctuation, qualifier = qualifier, resultBackground = resultBackground, rightDrawerBackground = rightDrawerBackground, selection = selection, string = string, string2 = string2, variable = variable, ws = ws)
-    __obj.updateDynamic("def")(`def`)
+    val __obj = js.Dynamic.literal(atom = atom.asInstanceOf[js.Any], attribute = attribute.asInstanceOf[js.Any], builtin = builtin.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], cursorColor = cursorColor.asInstanceOf[js.Any], editorBackground = editorBackground.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], leftDrawerBackground = leftDrawerBackground.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], punctuation = punctuation.asInstanceOf[js.Any], qualifier = qualifier.asInstanceOf[js.Any], resultBackground = resultBackground.asInstanceOf[js.Any], rightDrawerBackground = rightDrawerBackground.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], string2 = string2.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any], ws = ws.asInstanceOf[js.Any])
+    __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorColours]
   }
 }

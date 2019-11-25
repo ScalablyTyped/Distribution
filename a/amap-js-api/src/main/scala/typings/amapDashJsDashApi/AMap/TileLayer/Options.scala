@@ -57,15 +57,15 @@ object Options {
     zooms: js.Tuple2[Double, Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
-    if (errorUrl != null) __obj.updateDynamic("errorUrl")(errorUrl)
+    if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina.asInstanceOf[js.Any])
+    if (errorUrl != null) __obj.updateDynamic("errorUrl")(errorUrl.asInstanceOf[js.Any])
     if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(getTileUrl.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (tileUrl != null) __obj.updateDynamic("tileUrl")(tileUrl)
+    if (tileUrl != null) __obj.updateDynamic("tileUrl")(tileUrl.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

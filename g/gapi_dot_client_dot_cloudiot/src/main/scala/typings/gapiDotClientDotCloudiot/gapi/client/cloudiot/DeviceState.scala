@@ -18,8 +18,8 @@ object DeviceState {
   @scala.inline
   def apply(binaryData: String = null, updateTime: String = null): DeviceState = {
     val __obj = js.Dynamic.literal()
-    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceState]
   }
 }

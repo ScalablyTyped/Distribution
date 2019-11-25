@@ -14,7 +14,7 @@ object KeyObject {
   @scala.inline
   def apply(pem: String | Buffer, passphrase: String = null): KeyObject = {
     val __obj = js.Dynamic.literal(pem = pem.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyObject]
   }
 }

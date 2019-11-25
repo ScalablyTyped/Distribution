@@ -27,7 +27,7 @@ object Anon_CascadeColsFormat {
     title: String,
     triggerType: String
   ): Anon_CascadeColsFormat = {
-    val __obj = js.Dynamic.literal(cascade = cascade, cols = cols, format = js.Any.fromFunction1(format), pickerPrefixCls = pickerPrefixCls, popupPrefixCls = popupPrefixCls, prefixCls = prefixCls, title = title, triggerType = triggerType)
+    val __obj = js.Dynamic.literal(cascade = cascade.asInstanceOf[js.Any], cols = cols.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), pickerPrefixCls = pickerPrefixCls.asInstanceOf[js.Any], popupPrefixCls = popupPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CascadeColsFormat]
   }

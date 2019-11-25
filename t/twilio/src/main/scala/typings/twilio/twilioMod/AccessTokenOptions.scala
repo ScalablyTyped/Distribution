@@ -13,7 +13,7 @@ trait AccessTokenOptions extends js.Object {
 object AccessTokenOptions {
   @scala.inline
   def apply(identity: String, nbf: Double, ttl: Double): AccessTokenOptions = {
-    val __obj = js.Dynamic.literal(identity = identity, nbf = nbf, ttl = ttl)
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], nbf = nbf.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccessTokenOptions]
   }

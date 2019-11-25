@@ -13,7 +13,7 @@ object TimelineRollingModeOption {
   @scala.inline
   def apply(follow: js.UndefOr[Boolean] = js.undefined, offset: Int | Double = null): TimelineRollingModeOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineRollingModeOption]
   }

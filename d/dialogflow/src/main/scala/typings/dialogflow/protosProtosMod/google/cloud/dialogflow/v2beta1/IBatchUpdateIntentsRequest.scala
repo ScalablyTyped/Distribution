@@ -32,12 +32,12 @@ object IBatchUpdateIntentsRequest {
     updateMask: IFieldMask = null
   ): IBatchUpdateIntentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (intentBatchInline != null) __obj.updateDynamic("intentBatchInline")(intentBatchInline)
-    if (intentBatchUri != null) __obj.updateDynamic("intentBatchUri")(intentBatchUri)
-    if (intentView != null) __obj.updateDynamic("intentView")(intentView)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (intentBatchInline != null) __obj.updateDynamic("intentBatchInline")(intentBatchInline.asInstanceOf[js.Any])
+    if (intentBatchUri != null) __obj.updateDynamic("intentBatchUri")(intentBatchUri.asInstanceOf[js.Any])
+    if (intentView != null) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchUpdateIntentsRequest]
   }
 }

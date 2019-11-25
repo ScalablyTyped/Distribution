@@ -28,7 +28,7 @@ object BaseContext {
     agent: typings.sharedb.libAgentMod.^,
     backend: typings.sharedb.sharedbMod.sharedb
   ): BaseContext = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseContext]
   }

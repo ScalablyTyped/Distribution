@@ -29,11 +29,11 @@ object Anon_0 {
     weekdays: js.Array[String] = null
   ): Anon_0 = {
     val __obj = js.Dynamic.literal()
-    if (blank != null) __obj.updateDynamic("blank")(blank)
-    if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat)
-    if (todayLabel != null) __obj.updateDynamic("todayLabel")(todayLabel)
+    if (blank != null) __obj.updateDynamic("blank")(blank.asInstanceOf[js.Any])
+    if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat.asInstanceOf[js.Any])
+    if (todayLabel != null) __obj.updateDynamic("todayLabel")(todayLabel.asInstanceOf[js.Any])
     if (weekStartsOn != null) __obj.updateDynamic("weekStartsOn")(weekStartsOn.asInstanceOf[js.Any])
-    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays)
+    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_0]
   }
 }

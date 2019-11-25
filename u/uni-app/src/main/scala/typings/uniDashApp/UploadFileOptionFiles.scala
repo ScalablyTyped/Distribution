@@ -19,8 +19,8 @@ object UploadFileOptionFiles {
   @scala.inline
   def apply(name: String = null, uri: String = null): UploadFileOptionFiles = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileOptionFiles]
   }
 }

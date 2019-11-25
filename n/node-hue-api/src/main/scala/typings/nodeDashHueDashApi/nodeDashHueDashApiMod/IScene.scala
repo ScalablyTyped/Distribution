@@ -13,7 +13,7 @@ trait IScene extends js.Object {
 object IScene {
   @scala.inline
   def apply(id: String, lights: js.Array[Double], name: String): IScene = {
-    val __obj = js.Dynamic.literal(id = id, lights = lights, name = name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IScene]
   }

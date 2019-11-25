@@ -15,7 +15,7 @@ trait DocumentLinkParams extends js.Object {
 object DocumentLinkParams {
   @scala.inline
   def apply(textDocument: TextDocumentIdentifier): DocumentLinkParams = {
-    val __obj = js.Dynamic.literal(textDocument = textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocumentLinkParams]
   }

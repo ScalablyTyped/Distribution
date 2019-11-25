@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("@phosphor/widgets/lib/splitpanel", "SplitPanel.Renderer")
 @js.native
-class Renderer () extends IRenderer {
+class Renderer ()
+  extends typings.atPhosphorWidgets.libSplitlayoutMod.SplitLayout.IRenderer {
   /**
     * Create a new handle for use with a split layout.
     *

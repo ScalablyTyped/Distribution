@@ -25,7 +25,7 @@ object meshUtilsCreateElevationSamplerOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     noDataValue: Int | Double = null
   ): meshUtilsCreateElevationSamplerOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (noDataValue != null) __obj.updateDynamic("noDataValue")(noDataValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[meshUtilsCreateElevationSamplerOptions]
   }

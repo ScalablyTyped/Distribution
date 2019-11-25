@@ -26,12 +26,12 @@ object Anon_Credit {
     tilingScheme: TilingScheme = null,
     token: String = null
   ): Anon_Credit = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Credit]
   }
 }

@@ -103,15 +103,15 @@ object PlusSpeechSpeechRecognizeOptions {
     userInterface: js.UndefOr[Boolean] = js.undefined
   ): PlusSpeechSpeechRecognizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(continue)) __obj.updateDynamic("continue")(continue)
-    if (engine != null) __obj.updateDynamic("engine")(engine)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (!js.isUndefined(continue)) __obj.updateDynamic("continue")(continue.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (nbest != null) __obj.updateDynamic("nbest")(nbest.asInstanceOf[js.Any])
     if (onend != null) __obj.updateDynamic("onend")(js.Any.fromFunction1(onend))
     if (onstart != null) __obj.updateDynamic("onstart")(js.Any.fromFunction1(onstart))
-    if (!js.isUndefined(punctuation)) __obj.updateDynamic("punctuation")(punctuation)
+    if (!js.isUndefined(punctuation)) __obj.updateDynamic("punctuation")(punctuation.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(userInterface)) __obj.updateDynamic("userInterface")(userInterface)
+    if (!js.isUndefined(userInterface)) __obj.updateDynamic("userInterface")(userInterface.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusSpeechSpeechRecognizeOptions]
   }
 }

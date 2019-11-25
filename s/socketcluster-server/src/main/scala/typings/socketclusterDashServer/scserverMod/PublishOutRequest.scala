@@ -19,10 +19,10 @@ object PublishOutRequest {
     data: js.Any = null,
     useCache: js.UndefOr[Boolean] = js.undefined
   ): PublishOutRequest = {
-    val __obj = js.Dynamic.literal(socket = socket)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache)
+    val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishOutRequest]
   }
 }

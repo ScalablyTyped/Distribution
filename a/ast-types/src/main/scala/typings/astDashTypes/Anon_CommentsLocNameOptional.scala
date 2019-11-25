@@ -25,9 +25,9 @@ object Anon_CommentsLocNameOptional {
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null
   ): Anon_CommentsLocNameOptional = {
-    val __obj = js.Dynamic.literal(name = name, optional = optional, typeAnnotation = typeAnnotation)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocNameOptional]
   }
 }

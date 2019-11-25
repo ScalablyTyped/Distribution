@@ -14,9 +14,9 @@ object StripeOptions {
   @scala.inline
   def apply(betas: js.Array[String] = null, locale: String = null, stripeAccount: String = null): StripeOptions = {
     val __obj = js.Dynamic.literal()
-    if (betas != null) __obj.updateDynamic("betas")(betas)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (stripeAccount != null) __obj.updateDynamic("stripeAccount")(stripeAccount)
+    if (betas != null) __obj.updateDynamic("betas")(betas.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (stripeAccount != null) __obj.updateDynamic("stripeAccount")(stripeAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeOptions]
   }
 }

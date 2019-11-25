@@ -109,13 +109,13 @@ object MessagingOptions {
     timeToLive: Int | Double = null
   ): MessagingOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey)
-    if (!js.isUndefined(contentAvailable)) __obj.updateDynamic("contentAvailable")(contentAvailable)
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
-    if (!js.isUndefined(mutableContent)) __obj.updateDynamic("mutableContent")(mutableContent)
-    if (priority != null) __obj.updateDynamic("priority")(priority)
-    if (restrictedPackageName != null) __obj.updateDynamic("restrictedPackageName")(restrictedPackageName)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentAvailable)) __obj.updateDynamic("contentAvailable")(contentAvailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(mutableContent)) __obj.updateDynamic("mutableContent")(mutableContent.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (restrictedPackageName != null) __obj.updateDynamic("restrictedPackageName")(restrictedPackageName.asInstanceOf[js.Any])
     if (timeToLive != null) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingOptions]
   }

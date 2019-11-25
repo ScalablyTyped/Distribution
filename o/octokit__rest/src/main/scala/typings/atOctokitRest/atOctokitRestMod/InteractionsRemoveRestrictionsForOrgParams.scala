@@ -11,7 +11,7 @@ trait InteractionsRemoveRestrictionsForOrgParams extends js.Object {
 object InteractionsRemoveRestrictionsForOrgParams {
   @scala.inline
   def apply(org: String): InteractionsRemoveRestrictionsForOrgParams = {
-    val __obj = js.Dynamic.literal(org = org)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InteractionsRemoveRestrictionsForOrgParams]
   }

@@ -81,13 +81,13 @@ object IInitProperties {
     status: js.UndefOr[Boolean] = js.undefined
   ): IInitProperties = {
     val __obj = js.Dynamic.literal()
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (secure_cookie != null) __obj.updateDynamic("secure_cookie")(secure_cookie)
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (secure_cookie != null) __obj.updateDynamic("secure_cookie")(secure_cookie.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInitProperties]
   }
 }

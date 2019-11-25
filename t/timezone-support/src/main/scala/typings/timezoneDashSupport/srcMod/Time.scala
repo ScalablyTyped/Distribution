@@ -31,12 +31,12 @@ object Time {
     seconds: Int | Double = null,
     zone: TimeZoneOffset = null
   ): Time = {
-    val __obj = js.Dynamic.literal(day = day, hours = hours, minutes = minutes, month = month, year = year)
+    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
     if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
     if (milliseconds != null) __obj.updateDynamic("milliseconds")(milliseconds.asInstanceOf[js.Any])
     if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone)
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Time]
   }
 }

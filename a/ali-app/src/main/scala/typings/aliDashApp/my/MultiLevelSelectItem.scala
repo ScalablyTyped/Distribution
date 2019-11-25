@@ -14,8 +14,8 @@ trait MultiLevelSelectItem extends js.Object {
 object MultiLevelSelectItem {
   @scala.inline
   def apply(name: String, subList: js.Array[MultiLevelSelectItem] = null): MultiLevelSelectItem = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (subList != null) __obj.updateDynamic("subList")(subList)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (subList != null) __obj.updateDynamic("subList")(subList.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiLevelSelectItem]
   }
 }

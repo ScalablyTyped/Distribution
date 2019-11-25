@@ -17,8 +17,8 @@ object TableConstructorOptions {
   @scala.inline
   def apply(chars: Partial[Record[CharName, String]] = null, style: Partial[Anon_Border] = null): TableConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (chars != null) __obj.updateDynamic("chars")(chars)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (chars != null) __obj.updateDynamic("chars")(chars.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableConstructorOptions]
   }
 }

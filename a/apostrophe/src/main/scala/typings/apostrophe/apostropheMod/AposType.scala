@@ -22,7 +22,7 @@ object AposType {
     bless: (/* req */ js.Any, /* field */ js.Any) => Unit = null,
     empty: (/* field */ js.Any, /* value */ js.Any) => Unit = null
   ): AposType = {
-    val __obj = js.Dynamic.literal(converters = converters, index = js.Any.fromFunction3(index), name = name)
+    val __obj = js.Dynamic.literal(converters = converters.asInstanceOf[js.Any], index = js.Any.fromFunction3(index), name = name.asInstanceOf[js.Any])
     if (bless != null) __obj.updateDynamic("bless")(js.Any.fromFunction2(bless))
     if (empty != null) __obj.updateDynamic("empty")(js.Any.fromFunction2(empty))
     __obj.asInstanceOf[AposType]

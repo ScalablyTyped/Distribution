@@ -128,22 +128,22 @@ object IChargeCreationOptions {
     transfer_data: Anon_AmountDestinationNumber = null,
     transfer_group: String = null
   ): IChargeCreationOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
     if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
-    if (customer != null) __obj.updateDynamic("customer")(customer)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
+    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    if (statement_descriptor_suffix != null) __obj.updateDynamic("statement_descriptor_suffix")(statement_descriptor_suffix)
-    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
-    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
+    if (statement_descriptor_suffix != null) __obj.updateDynamic("statement_descriptor_suffix")(statement_descriptor_suffix.asInstanceOf[js.Any])
+    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChargeCreationOptions]
   }
 }

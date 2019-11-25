@@ -50,9 +50,9 @@ object ColorAxisEventsOptions {
     setExtremes: AxisSetExtremesEventCallbackFunction = null
   ): ColorAxisEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(afterSetExtremes)
-    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick)
-    if (setExtremes != null) __obj.updateDynamic("setExtremes")(setExtremes)
+    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(afterSetExtremes.asInstanceOf[js.Any])
+    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick.asInstanceOf[js.Any])
+    if (setExtremes != null) __obj.updateDynamic("setExtremes")(setExtremes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorAxisEventsOptions]
   }
 }

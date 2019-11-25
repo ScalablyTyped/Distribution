@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait BrowserType extends js.Object
 
+object BrowserType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def rc: typings.testingbotDashApi.testingbotDashApiStrings.rc = this.cast("rc")
+  @scala.inline
+  def webdriver: typings.testingbotDashApi.testingbotDashApiStrings.webdriver = this.cast("webdriver")
+}
+

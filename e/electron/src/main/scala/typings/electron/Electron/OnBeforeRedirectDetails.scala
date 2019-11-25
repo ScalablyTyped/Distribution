@@ -38,8 +38,8 @@ object OnBeforeRedirectDetails {
     ip: String = null,
     webContentsId: Int | Double = null
   ): OnBeforeRedirectDetails = {
-    val __obj = js.Dynamic.literal(fromCache = fromCache, id = id, method = method, redirectURL = redirectURL, referrer = referrer, resourceType = resourceType, responseHeaders = responseHeaders, statusCode = statusCode, timestamp = timestamp, url = url)
-    if (ip != null) __obj.updateDynamic("ip")(ip)
+    val __obj = js.Dynamic.literal(fromCache = fromCache.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], redirectURL = redirectURL.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeforeRedirectDetails]
   }

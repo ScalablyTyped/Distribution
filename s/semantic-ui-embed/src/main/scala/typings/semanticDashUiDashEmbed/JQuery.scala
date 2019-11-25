@@ -77,12 +77,12 @@ trait JQuery extends js.Object {
   @JSName("embed")
   def embed_setting(behavior: setting, value: EmbedSettings): JQuery = js.native
   @JSName("embed")
-  def embed_setting[K /* <: String */](behavior: setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-embed.SemanticUI.EmbedSettings._Impl[K] */ js.Any = js.native
+  def embed_setting[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-embed.SemanticUI.EmbedSettings._Impl[K] */ js.Any = js.native
   @JSName("embed")
   def embed_setting[K /* <: String */](
     behavior: setting,
     name: K,
-    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-embed.SemanticUI.EmbedSettings._Impl[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-embed.SemanticUI.EmbedSettings._Impl[K] */ js.Any
   ): JQuery = js.native
   /**
     * Shows embed content

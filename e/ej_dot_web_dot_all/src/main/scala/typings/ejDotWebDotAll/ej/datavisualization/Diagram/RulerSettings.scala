@@ -25,9 +25,9 @@ object RulerSettings {
     verticalRuler: RulerSettingsVerticalRuler = null
   ): RulerSettings = {
     val __obj = js.Dynamic.literal()
-    if (horizontalRuler != null) __obj.updateDynamic("horizontalRuler")(horizontalRuler)
-    if (!js.isUndefined(showRulers)) __obj.updateDynamic("showRulers")(showRulers)
-    if (verticalRuler != null) __obj.updateDynamic("verticalRuler")(verticalRuler)
+    if (horizontalRuler != null) __obj.updateDynamic("horizontalRuler")(horizontalRuler.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRulers)) __obj.updateDynamic("showRulers")(showRulers.asInstanceOf[js.Any])
+    if (verticalRuler != null) __obj.updateDynamic("verticalRuler")(verticalRuler.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulerSettings]
   }
 }

@@ -12,8 +12,8 @@ trait PlaceAspectRating extends js.Object {
 object PlaceAspectRating {
   @scala.inline
   def apply(rating: Double, `type`: String): PlaceAspectRating = {
-    val __obj = js.Dynamic.literal(rating = rating)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAspectRating]
   }
 }

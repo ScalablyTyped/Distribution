@@ -25,11 +25,11 @@ object ByRoleOptions {
     trim: js.UndefOr[Boolean] = js.undefined
   ): ByRoleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapseWhitespace)) __obj.updateDynamic("collapseWhitespace")(collapseWhitespace)
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(collapseWhitespace)) __obj.updateDynamic("collapseWhitespace")(collapseWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (normalizer != null) __obj.updateDynamic("normalizer")(js.Any.fromFunction1(normalizer))
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByRoleOptions]
   }
 }

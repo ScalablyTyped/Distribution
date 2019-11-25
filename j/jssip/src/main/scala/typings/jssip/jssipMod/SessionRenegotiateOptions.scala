@@ -19,9 +19,9 @@ object SessionRenegotiateOptions {
     useUpdate: js.UndefOr[Boolean] = js.undefined
   ): SessionRenegotiateOptions = {
     val __obj = js.Dynamic.literal()
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (rtcOfferConstraints != null) __obj.updateDynamic("rtcOfferConstraints")(rtcOfferConstraints)
-    if (!js.isUndefined(useUpdate)) __obj.updateDynamic("useUpdate")(useUpdate)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (rtcOfferConstraints != null) __obj.updateDynamic("rtcOfferConstraints")(rtcOfferConstraints.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUpdate)) __obj.updateDynamic("useUpdate")(useUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionRenegotiateOptions]
   }
 }

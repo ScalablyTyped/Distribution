@@ -27,7 +27,7 @@ object EnvironmentOptions {
     skipArtifactsDownload: Boolean,
     timeoutInMinutes: Double
   ): EnvironmentOptions = {
-    val __obj = js.Dynamic.literal(autoLinkWorkItems = autoLinkWorkItems, badgeEnabled = badgeEnabled, emailNotificationType = emailNotificationType, emailRecipients = emailRecipients, enableAccessToken = enableAccessToken, publishDeploymentStatus = publishDeploymentStatus, skipArtifactsDownload = skipArtifactsDownload, timeoutInMinutes = timeoutInMinutes)
+    val __obj = js.Dynamic.literal(autoLinkWorkItems = autoLinkWorkItems.asInstanceOf[js.Any], badgeEnabled = badgeEnabled.asInstanceOf[js.Any], emailNotificationType = emailNotificationType.asInstanceOf[js.Any], emailRecipients = emailRecipients.asInstanceOf[js.Any], enableAccessToken = enableAccessToken.asInstanceOf[js.Any], publishDeploymentStatus = publishDeploymentStatus.asInstanceOf[js.Any], skipArtifactsDownload = skipArtifactsDownload.asInstanceOf[js.Any], timeoutInMinutes = timeoutInMinutes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EnvironmentOptions]
   }

@@ -18,9 +18,9 @@ object Pkcs12CreationOptions {
     clientKeyPassword: String = null
   ): Pkcs12CreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (certFiles != null) __obj.updateDynamic("certFiles")(certFiles)
+    if (certFiles != null) __obj.updateDynamic("certFiles")(certFiles.asInstanceOf[js.Any])
     if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
-    if (clientKeyPassword != null) __obj.updateDynamic("clientKeyPassword")(clientKeyPassword)
+    if (clientKeyPassword != null) __obj.updateDynamic("clientKeyPassword")(clientKeyPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pkcs12CreationOptions]
   }
 }

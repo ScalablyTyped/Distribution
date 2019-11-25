@@ -33,7 +33,7 @@ object ExtensionVersion {
     version: String,
     versionDescription: String
   ): ExtensionVersion = {
-    val __obj = js.Dynamic.literal(assetUri = assetUri, badges = badges, fallbackAssetUri = fallbackAssetUri, files = files, flags = flags, lastUpdated = lastUpdated, properties = properties, validationResultMessage = validationResultMessage, version = version, versionDescription = versionDescription)
+    val __obj = js.Dynamic.literal(assetUri = assetUri.asInstanceOf[js.Any], badges = badges.asInstanceOf[js.Any], fallbackAssetUri = fallbackAssetUri.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], lastUpdated = lastUpdated.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], validationResultMessage = validationResultMessage.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versionDescription = versionDescription.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionVersion]
   }

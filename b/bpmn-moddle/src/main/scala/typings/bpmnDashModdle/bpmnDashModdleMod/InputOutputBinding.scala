@@ -19,7 +19,7 @@ object InputOutputBinding {
     operationRef: Operation,
     outputDataRef: OutputSet
   ): InputOutputBinding = {
-    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, inputDataRef = inputDataRef, operationRef = operationRef, outputDataRef = outputDataRef)
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], inputDataRef = inputDataRef.asInstanceOf[js.Any], operationRef = operationRef.asInstanceOf[js.Any], outputDataRef = outputDataRef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InputOutputBinding]
   }

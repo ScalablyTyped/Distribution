@@ -24,12 +24,12 @@ object Anon_Appid {
     app_version: String = null,
     screen_name: String = null
   ): Anon_Appid = {
-    val __obj = js.Dynamic.literal(app_name = app_name)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
-    if (app_installer_id != null) __obj.updateDynamic("app_installer_id")(app_installer_id)
-    if (app_version != null) __obj.updateDynamic("app_version")(app_version)
-    if (screen_name != null) __obj.updateDynamic("screen_name")(screen_name)
+    val __obj = js.Dynamic.literal(app_name = app_name.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
+    if (app_installer_id != null) __obj.updateDynamic("app_installer_id")(app_installer_id.asInstanceOf[js.Any])
+    if (app_version != null) __obj.updateDynamic("app_version")(app_version.asInstanceOf[js.Any])
+    if (screen_name != null) __obj.updateDynamic("screen_name")(screen_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Appid]
   }
 }

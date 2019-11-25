@@ -20,8 +20,8 @@ object NativeRouterProps {
     keyLength: Int | Double = null
   ): NativeRouterProps = {
     val __obj = js.Dynamic.literal()
-    if (getUserConfirmation != null) __obj.updateDynamic("getUserConfirmation")(getUserConfirmation)
-    if (initialEntries != null) __obj.updateDynamic("initialEntries")(initialEntries)
+    if (getUserConfirmation != null) __obj.updateDynamic("getUserConfirmation")(getUserConfirmation.asInstanceOf[js.Any])
+    if (initialEntries != null) __obj.updateDynamic("initialEntries")(initialEntries.asInstanceOf[js.Any])
     if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
     if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeRouterProps]

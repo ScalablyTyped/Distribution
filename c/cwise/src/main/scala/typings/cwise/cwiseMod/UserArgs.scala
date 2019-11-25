@@ -26,12 +26,12 @@ object UserArgs {
     pre: (/* a */ Double, /* repeated */ js.Any) => Unit = null,
     printCode: js.UndefOr[Boolean] = js.undefined
   ): UserArgs = {
-    val __obj = js.Dynamic.literal(args = args, body = js.Any.fromFunction2(body))
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], body = js.Any.fromFunction2(body))
     if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
-    if (funcName != null) __obj.updateDynamic("funcName")(funcName)
+    if (funcName != null) __obj.updateDynamic("funcName")(funcName.asInstanceOf[js.Any])
     if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction2(post))
     if (pre != null) __obj.updateDynamic("pre")(js.Any.fromFunction2(pre))
-    if (!js.isUndefined(printCode)) __obj.updateDynamic("printCode")(printCode)
+    if (!js.isUndefined(printCode)) __obj.updateDynamic("printCode")(printCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserArgs]
   }
 }

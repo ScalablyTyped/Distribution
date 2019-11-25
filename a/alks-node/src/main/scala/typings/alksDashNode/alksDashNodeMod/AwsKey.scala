@@ -13,7 +13,7 @@ trait AwsKey extends js.Object {
 object AwsKey {
   @scala.inline
   def apply(accessKey: String, secretKey: String, sessionToken: String): AwsKey = {
-    val __obj = js.Dynamic.literal(accessKey = accessKey, secretKey = secretKey, sessionToken = sessionToken)
+    val __obj = js.Dynamic.literal(accessKey = accessKey.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AwsKey]
   }

@@ -13,7 +13,7 @@ trait Anon_App extends js.Object {
 object Anon_App {
   @scala.inline
   def apply(app: String, maxMessageSize: Double, sctpmapNumber: Double | String): Anon_App = {
-    val __obj = js.Dynamic.literal(app = app, maxMessageSize = maxMessageSize, sctpmapNumber = sctpmapNumber.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], maxMessageSize = maxMessageSize.asInstanceOf[js.Any], sctpmapNumber = sctpmapNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_App]
   }

@@ -24,12 +24,12 @@ object SimpleSchemaOptions {
     tracker: js.Any = null
   ): SimpleSchemaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check)
-    if (clean != null) __obj.updateDynamic("clean")(clean)
-    if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel)
-    if (!js.isUndefined(humanizeAutoLabels)) __obj.updateDynamic("humanizeAutoLabels")(humanizeAutoLabels)
-    if (!js.isUndefined(requiredByDefault)) __obj.updateDynamic("requiredByDefault")(requiredByDefault)
-    if (tracker != null) __obj.updateDynamic("tracker")(tracker)
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (clean != null) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
+    if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(humanizeAutoLabels)) __obj.updateDynamic("humanizeAutoLabels")(humanizeAutoLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiredByDefault)) __obj.updateDynamic("requiredByDefault")(requiredByDefault.asInstanceOf[js.Any])
+    if (tracker != null) __obj.updateDynamic("tracker")(tracker.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleSchemaOptions]
   }
 }

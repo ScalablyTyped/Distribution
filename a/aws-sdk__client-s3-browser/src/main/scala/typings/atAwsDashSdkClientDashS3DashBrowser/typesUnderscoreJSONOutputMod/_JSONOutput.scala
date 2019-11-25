@@ -15,7 +15,7 @@ object _JSONOutput {
   @scala.inline
   def apply(RecordDelimiter: String = null): _JSONOutput = {
     val __obj = js.Dynamic.literal()
-    if (RecordDelimiter != null) __obj.updateDynamic("RecordDelimiter")(RecordDelimiter)
+    if (RecordDelimiter != null) __obj.updateDynamic("RecordDelimiter")(RecordDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[_JSONOutput]
   }
 }

@@ -15,8 +15,8 @@ object ActivityDefinition {
     `type`: String,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null
   ): ActivityDefinition[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     __obj.asInstanceOf[ActivityDefinition[TContext, TEvent]]
   }

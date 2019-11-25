@@ -47,7 +47,7 @@ object AnimationEvent {
     totalTime: Double,
     triggerName: String
   ): AnimationEvent = {
-    val __obj = js.Dynamic.literal(disabled = disabled, element = element, fromState = fromState, phaseName = phaseName, toState = toState, totalTime = totalTime, triggerName = triggerName)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], fromState = fromState.asInstanceOf[js.Any], phaseName = phaseName.asInstanceOf[js.Any], toState = toState.asInstanceOf[js.Any], totalTime = totalTime.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnimationEvent]
   }

@@ -11,7 +11,7 @@ trait Symbol extends Region {
 object Symbol {
   @scala.inline
   def apply(box: Box, choices: js.Array[Choice], confidence: Double, text: String): Symbol = {
-    val __obj = js.Dynamic.literal(box = box, choices = choices, confidence = confidence, text = text)
+    val __obj = js.Dynamic.literal(box = box.asInstanceOf[js.Any], choices = choices.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Symbol]
   }

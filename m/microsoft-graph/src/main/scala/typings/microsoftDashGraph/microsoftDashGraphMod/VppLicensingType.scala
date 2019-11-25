@@ -18,8 +18,8 @@ object VppLicensingType {
     supportsUserLicensing: js.UndefOr[Boolean] = js.undefined
   ): VppLicensingType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(supportsDeviceLicensing)) __obj.updateDynamic("supportsDeviceLicensing")(supportsDeviceLicensing)
-    if (!js.isUndefined(supportsUserLicensing)) __obj.updateDynamic("supportsUserLicensing")(supportsUserLicensing)
+    if (!js.isUndefined(supportsDeviceLicensing)) __obj.updateDynamic("supportsDeviceLicensing")(supportsDeviceLicensing.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsUserLicensing)) __obj.updateDynamic("supportsUserLicensing")(supportsUserLicensing.asInstanceOf[js.Any])
     __obj.asInstanceOf[VppLicensingType]
   }
 }

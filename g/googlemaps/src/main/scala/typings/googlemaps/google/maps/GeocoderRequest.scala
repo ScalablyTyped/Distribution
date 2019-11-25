@@ -24,12 +24,12 @@ object GeocoderRequest {
     region: String = null
   ): GeocoderRequest = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (componentRestrictions != null) __obj.updateDynamic("componentRestrictions")(componentRestrictions)
+    if (componentRestrictions != null) __obj.updateDynamic("componentRestrictions")(componentRestrictions.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocoderRequest]
   }
 }

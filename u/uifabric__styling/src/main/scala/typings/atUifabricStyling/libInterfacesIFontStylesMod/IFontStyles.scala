@@ -46,7 +46,7 @@ object IFontStyles {
     xxLarge: IRawStyle,
     xxLargePlus: IRawStyle
   ): IFontStyles = {
-    val __obj = js.Dynamic.literal(large = large, medium = medium, mediumPlus = mediumPlus, mega = mega, small = small, smallPlus = smallPlus, superLarge = superLarge, tiny = tiny, xLarge = xLarge, xLargePlus = xLargePlus, xSmall = xSmall, xxLarge = xxLarge, xxLargePlus = xxLargePlus)
+    val __obj = js.Dynamic.literal(large = large.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], mediumPlus = mediumPlus.asInstanceOf[js.Any], mega = mega.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], smallPlus = smallPlus.asInstanceOf[js.Any], superLarge = superLarge.asInstanceOf[js.Any], tiny = tiny.asInstanceOf[js.Any], xLarge = xLarge.asInstanceOf[js.Any], xLargePlus = xLargePlus.asInstanceOf[js.Any], xSmall = xSmall.asInstanceOf[js.Any], xxLarge = xxLarge.asInstanceOf[js.Any], xxLargePlus = xxLargePlus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFontStyles]
   }

@@ -26,10 +26,10 @@ object ConversationResponse {
     noInputPrompts: js.Array[GoogleActionsV2SimpleResponse] = null,
     speechBiasingHints: js.Array[String] = null
   ): ConversationResponse = {
-    val __obj = js.Dynamic.literal(expectUserResponse = expectUserResponse, richResponse = richResponse, userStorage = userStorage)
-    if (expectedIntent != null) __obj.updateDynamic("expectedIntent")(expectedIntent)
-    if (noInputPrompts != null) __obj.updateDynamic("noInputPrompts")(noInputPrompts)
-    if (speechBiasingHints != null) __obj.updateDynamic("speechBiasingHints")(speechBiasingHints)
+    val __obj = js.Dynamic.literal(expectUserResponse = expectUserResponse.asInstanceOf[js.Any], richResponse = richResponse.asInstanceOf[js.Any], userStorage = userStorage.asInstanceOf[js.Any])
+    if (expectedIntent != null) __obj.updateDynamic("expectedIntent")(expectedIntent.asInstanceOf[js.Any])
+    if (noInputPrompts != null) __obj.updateDynamic("noInputPrompts")(noInputPrompts.asInstanceOf[js.Any])
+    if (speechBiasingHints != null) __obj.updateDynamic("speechBiasingHints")(speechBiasingHints.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversationResponse]
   }
 }

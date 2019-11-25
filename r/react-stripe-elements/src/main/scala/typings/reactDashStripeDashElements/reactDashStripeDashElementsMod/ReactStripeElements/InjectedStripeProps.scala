@@ -12,7 +12,7 @@ object InjectedStripeProps {
   @scala.inline
   def apply(stripe: StripeProps = null): InjectedStripeProps = {
     val __obj = js.Dynamic.literal()
-    if (stripe != null) __obj.updateDynamic("stripe")(stripe)
+    if (stripe != null) __obj.updateDynamic("stripe")(stripe.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectedStripeProps]
   }
 }

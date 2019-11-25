@@ -36,7 +36,7 @@ object IPerceptionFrameProvider {
     start: () => Unit,
     stop: () => Unit
   ): IPerceptionFrameProvider = {
-    val __obj = js.Dynamic.literal(available = available, close = js.Any.fromFunction0(close), frameProviderInfo = frameProviderInfo, properties = properties, setProperty = js.Any.fromFunction1(setProperty), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), frameProviderInfo = frameProviderInfo.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], setProperty = js.Any.fromFunction1(setProperty), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[IPerceptionFrameProvider]
   }

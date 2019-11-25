@@ -13,8 +13,8 @@ trait Fragment extends js.Object {
 object Fragment {
   @scala.inline
   def apply(raw: String, text: String, values: js.Array[_] = null): Fragment = {
-    val __obj = js.Dynamic.literal(raw = raw, text = text)
-    if (values != null) __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fragment]
   }
 }

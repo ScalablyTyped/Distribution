@@ -12,7 +12,7 @@ trait Anon_Subtype extends js.Object {
 object Anon_Subtype {
   @scala.inline
   def apply(subtype: DataTypeAbstract): Anon_Subtype = {
-    val __obj = js.Dynamic.literal(subtype = subtype)
+    val __obj = js.Dynamic.literal(subtype = subtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Subtype]
   }

@@ -14,7 +14,7 @@ trait ExecuteCommandOptions extends js.Object {
 object ExecuteCommandOptions {
   @scala.inline
   def apply(commands: js.Array[String]): ExecuteCommandOptions = {
-    val __obj = js.Dynamic.literal(commands = commands)
+    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecuteCommandOptions]
   }

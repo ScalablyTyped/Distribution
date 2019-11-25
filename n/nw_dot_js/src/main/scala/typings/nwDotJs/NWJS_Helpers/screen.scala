@@ -38,7 +38,7 @@ object screen {
     touchSupport: Double,
     work_area: Anon_Height
   ): screen = {
-    val __obj = js.Dynamic.literal(bounds = bounds, id = id, isBuiltIn = isBuiltIn, rotation = rotation, scaleFactor = scaleFactor, touchSupport = touchSupport, work_area = work_area)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isBuiltIn = isBuiltIn.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scaleFactor = scaleFactor.asInstanceOf[js.Any], touchSupport = touchSupport.asInstanceOf[js.Any], work_area = work_area.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[screen]
   }

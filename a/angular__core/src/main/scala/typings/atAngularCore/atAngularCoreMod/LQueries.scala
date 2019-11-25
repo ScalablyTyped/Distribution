@@ -40,7 +40,7 @@ object LQueries {
     insertView: TView => Unit,
     queries: js.Array[LQuery[_]]
   ): LQueries = {
-    val __obj = js.Dynamic.literal(createEmbeddedView = js.Any.fromFunction1(createEmbeddedView), detachView = js.Any.fromFunction1(detachView), insertView = js.Any.fromFunction1(insertView), queries = queries)
+    val __obj = js.Dynamic.literal(createEmbeddedView = js.Any.fromFunction1(createEmbeddedView), detachView = js.Any.fromFunction1(detachView), insertView = js.Any.fromFunction1(insertView), queries = queries.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LQueries]
   }

@@ -15,8 +15,8 @@ object Anon_Label {
   @scala.inline
   def apply(label: String = null, score: String = null): Anon_Label = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (score != null) __obj.updateDynamic("score")(score)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }
 }

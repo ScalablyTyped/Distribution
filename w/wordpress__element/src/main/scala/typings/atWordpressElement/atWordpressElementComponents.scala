@@ -11,10 +11,5 @@ object atWordpressElementComponents extends atWordpressElementProps {
     Anon_Children with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)
   ] = typings.atWordpressElement.atWordpressElementMod.RawHTML.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atWordpressElement.Anon_Children with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)]]
-  @scala.inline
-  def _Global_ReactRawHTML: ComponentType[
-    Anon_Children with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)
-  ] = typings.atWordpressElement.atWordpressElementMod._Global_.React.asInstanceOf[js.Dynamic].selectDynamic("RawHTML").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atWordpressElement.Anon_Children with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)]]
 }
 

@@ -11,7 +11,7 @@ trait Anon_Score extends js.Object {
 object Anon_Score {
   @scala.inline
   def apply(score: Double): Anon_Score = {
-    val __obj = js.Dynamic.literal(score = score)
+    val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Score]
   }

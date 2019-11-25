@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(precise: js.UndefOr[Boolean] = js.undefined, verbose: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(precise)) __obj.updateDynamic("precise")(precise)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(precise)) __obj.updateDynamic("precise")(precise.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -25,8 +25,8 @@ object Anon_ColumnFilenameInline {
     str: String,
     suppress: Boolean
   ): Anon_ColumnFilenameInline = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, str = str, suppress = suppress)
-    __obj.updateDynamic("inline")(`inline`)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], suppress = suppress.asInstanceOf[js.Any])
+    __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnFilenameInline]
   }
 }

@@ -14,9 +14,9 @@ object AdvertisersListResponse {
   @scala.inline
   def apply(advertisers: js.Array[Advertiser] = null, kind: String = null, nextPageToken: String = null): AdvertisersListResponse = {
     val __obj = js.Dynamic.literal()
-    if (advertisers != null) __obj.updateDynamic("advertisers")(advertisers)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (advertisers != null) __obj.updateDynamic("advertisers")(advertisers.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvertisersListResponse]
   }
 }

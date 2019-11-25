@@ -23,10 +23,10 @@ object Anon_ArgumentCommentsDelegate {
     loc: SourceLocationKind = null
   ): Anon_ArgumentCommentsDelegate = {
     val __obj = js.Dynamic.literal()
-    if (argument != null) __obj.updateDynamic("argument")(argument)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(delegate)) __obj.updateDynamic("delegate")(delegate)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(delegate)) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArgumentCommentsDelegate]
   }
 }

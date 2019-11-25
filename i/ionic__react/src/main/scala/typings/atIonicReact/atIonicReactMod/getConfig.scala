@@ -1,6 +1,6 @@
 package typings.atIonicReact.atIonicReactMod
 
-import typings.atIonicCore.distTypesInterfaceMod.Config
+import typings.atIonicCore.atIonicCoreMod.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

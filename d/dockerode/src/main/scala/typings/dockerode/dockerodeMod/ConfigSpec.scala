@@ -14,7 +14,7 @@ trait ConfigSpec extends js.Object {
 object ConfigSpec {
   @scala.inline
   def apply(Data: String, Labels: StringDictionary[String], Name: String): ConfigSpec = {
-    val __obj = js.Dynamic.literal(Data = Data, Labels = Labels, Name = Name)
+    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfigSpec]
   }

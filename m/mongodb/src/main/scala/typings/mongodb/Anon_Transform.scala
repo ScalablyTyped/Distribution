@@ -12,7 +12,7 @@ object Anon_Transform {
   @scala.inline
   def apply(transform: js.Function = null): Anon_Transform = {
     val __obj = js.Dynamic.literal()
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Transform]
   }
 }

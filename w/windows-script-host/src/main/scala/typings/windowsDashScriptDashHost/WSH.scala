@@ -71,8 +71,8 @@ object WSH extends js.Object {
     * @param strProgiID
     * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
     */
-  def CreateObject[K /* <: String */](strProgID: K): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
-  def CreateObject[K /* <: String */](strProgID: K, strPrefix: String): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+  def CreateObject[K /* <: String */](strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+  def CreateObject[K /* <: String */](strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
   /**
     * Disconnects a COM object from its event sources.
     */
@@ -93,8 +93,8 @@ object WSH extends js.Object {
     * @param strProgID
     * @param strPrefix Function names in the form prefix_event will be bound to this object's COM events.
     */
-  def GetObject[K /* <: String */](strPathname: String, strProgID: K): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
-  def GetObject[K /* <: String */](strPathname: String, strProgID: K, strPrefix: String): /* import warning: ImportType.apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+  def GetObject[K /* <: String */](strPathname: String, strProgID: K): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
+  def GetObject[K /* <: String */](strPathname: String, strProgID: K, strPrefix: String): /* import warning: importer.ImportType#apply Failed type conversion: activex-interop.ActiveXObjectNameMap[K] */ js.Any = js.native
   /**
     * Forces the script to stop immediately, with an optional exit code.
     */

@@ -14,8 +14,8 @@ object Anon_Level {
   @scala.inline
   def apply(level: LogLevel = null, short: js.UndefOr[Boolean] = js.undefined): Anon_Level = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (!js.isUndefined(short)) __obj.updateDynamic("short")(short)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(short)) __obj.updateDynamic("short")(short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Level]
   }
 }

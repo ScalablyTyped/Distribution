@@ -25,9 +25,9 @@ object PawsNotifySpectrumUseResponse {
   @scala.inline
   def apply(kind: String = null, `type`: String = null, version: String = null): PawsNotifySpectrumUseResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PawsNotifySpectrumUseResponse]
   }
 }

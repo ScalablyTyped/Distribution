@@ -47,12 +47,12 @@ object CustomElementsDefineOptions {
   ): CustomElementsDefineOptions = {
     val __obj = js.Dynamic.literal()
     if (ael != null) __obj.updateDynamic("ael")(js.Any.fromFunction4(ael))
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (jmp != null) __obj.updateDynamic("jmp")(js.Any.fromFunction1(jmp))
     if (raf != null) __obj.updateDynamic("raf")(js.Any.fromFunction1(raf))
     if (rel != null) __obj.updateDynamic("rel")(js.Any.fromFunction4(rel))
-    if (resourcesUrl != null) __obj.updateDynamic("resourcesUrl")(resourcesUrl)
-    if (!js.isUndefined(syncQueue)) __obj.updateDynamic("syncQueue")(syncQueue)
+    if (resourcesUrl != null) __obj.updateDynamic("resourcesUrl")(resourcesUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(syncQueue)) __obj.updateDynamic("syncQueue")(syncQueue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomElementsDefineOptions]
   }
 }

@@ -18,7 +18,7 @@ trait TerminalDimensions extends js.Object {
 object TerminalDimensions {
   @scala.inline
   def apply(columns: Double, rows: Double): TerminalDimensions = {
-    val __obj = js.Dynamic.literal(columns = columns, rows = rows)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TerminalDimensions]
   }

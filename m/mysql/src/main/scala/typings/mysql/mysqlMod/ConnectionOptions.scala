@@ -39,11 +39,11 @@ object ConnectionOptions {
     user: String = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (charset != null) __obj.updateDynamic("charset")(charset)
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

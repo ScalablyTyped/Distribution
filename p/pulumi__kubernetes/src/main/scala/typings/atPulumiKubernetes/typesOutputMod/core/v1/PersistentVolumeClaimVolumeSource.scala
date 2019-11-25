@@ -26,7 +26,7 @@ trait PersistentVolumeClaimVolumeSource extends js.Object {
 object PersistentVolumeClaimVolumeSource {
   @scala.inline
   def apply(claimName: String, readOnly: Boolean): PersistentVolumeClaimVolumeSource = {
-    val __obj = js.Dynamic.literal(claimName = claimName, readOnly = readOnly)
+    val __obj = js.Dynamic.literal(claimName = claimName.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PersistentVolumeClaimVolumeSource]
   }

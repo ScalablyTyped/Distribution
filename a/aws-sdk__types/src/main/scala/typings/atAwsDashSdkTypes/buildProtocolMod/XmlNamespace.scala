@@ -13,8 +13,8 @@ object XmlNamespace {
   @scala.inline
   def apply(prefix: java.lang.String = null, uri: java.lang.String = null): XmlNamespace = {
     val __obj = js.Dynamic.literal()
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlNamespace]
   }
 }

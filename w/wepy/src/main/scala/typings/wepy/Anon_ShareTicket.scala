@@ -12,7 +12,7 @@ trait Anon_ShareTicket extends js.Object {
 object Anon_ShareTicket {
   @scala.inline
   def apply(shareTicket: String, timeout: Double): Anon_ShareTicket = {
-    val __obj = js.Dynamic.literal(shareTicket = shareTicket, timeout = timeout)
+    val __obj = js.Dynamic.literal(shareTicket = shareTicket.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ShareTicket]
   }

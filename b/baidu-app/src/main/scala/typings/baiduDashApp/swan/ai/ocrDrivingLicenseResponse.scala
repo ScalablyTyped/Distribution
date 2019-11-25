@@ -17,7 +17,7 @@ trait ocrDrivingLicenseResponse extends js.Object {
 object ocrDrivingLicenseResponse {
   @scala.inline
   def apply(log_id: String, words_result: StringDictionary[Anon_Words], words_result_num: Double): ocrDrivingLicenseResponse = {
-    val __obj = js.Dynamic.literal(log_id = log_id, words_result = words_result, words_result_num = words_result_num)
+    val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], words_result = words_result.asInstanceOf[js.Any], words_result_num = words_result_num.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ocrDrivingLicenseResponse]
   }

@@ -70,20 +70,20 @@ object ValueSetExpansion {
     parameter: js.Array[ValueSetExpansionParameter] = null,
     total: Int | Double = null
   ): ValueSetExpansion = {
-    val __obj = js.Dynamic.literal(identifier = identifier, timestamp = timestamp)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_identifier != null) __obj.updateDynamic("_identifier")(_identifier)
-    if (_offset != null) __obj.updateDynamic("_offset")(_offset)
-    if (_timestamp != null) __obj.updateDynamic("_timestamp")(_timestamp)
-    if (_total != null) __obj.updateDynamic("_total")(_total)
-    if (contains != null) __obj.updateDynamic("contains")(contains)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_identifier != null) __obj.updateDynamic("_identifier")(_identifier.asInstanceOf[js.Any])
+    if (_offset != null) __obj.updateDynamic("_offset")(_offset.asInstanceOf[js.Any])
+    if (_timestamp != null) __obj.updateDynamic("_timestamp")(_timestamp.asInstanceOf[js.Any])
+    if (_total != null) __obj.updateDynamic("_total")(_total.asInstanceOf[js.Any])
+    if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSetExpansion]
   }

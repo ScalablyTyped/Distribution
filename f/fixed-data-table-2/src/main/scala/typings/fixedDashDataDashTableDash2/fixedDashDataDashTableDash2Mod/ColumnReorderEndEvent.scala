@@ -16,9 +16,9 @@ trait ColumnReorderEndEvent extends js.Object {
 object ColumnReorderEndEvent {
   @scala.inline
   def apply(reorderColumn: String, columnAfter: String = null, columnBefore: String = null): ColumnReorderEndEvent = {
-    val __obj = js.Dynamic.literal(reorderColumn = reorderColumn)
-    if (columnAfter != null) __obj.updateDynamic("columnAfter")(columnAfter)
-    if (columnBefore != null) __obj.updateDynamic("columnBefore")(columnBefore)
+    val __obj = js.Dynamic.literal(reorderColumn = reorderColumn.asInstanceOf[js.Any])
+    if (columnAfter != null) __obj.updateDynamic("columnAfter")(columnAfter.asInstanceOf[js.Any])
+    if (columnBefore != null) __obj.updateDynamic("columnBefore")(columnBefore.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnReorderEndEvent]
   }
 }

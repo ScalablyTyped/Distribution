@@ -27,11 +27,11 @@ object DocoptOption {
     version: js.Any = null
   ): DocoptOption = {
     val __obj = js.Dynamic.literal()
-    if (argv != null) __obj.updateDynamic("argv")(argv)
-    if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit)
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help)
-    if (!js.isUndefined(options_first)) __obj.updateDynamic("options_first")(options_first)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (argv != null) __obj.updateDynamic("argv")(argv.asInstanceOf[js.Any])
+    if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
+    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
+    if (!js.isUndefined(options_first)) __obj.updateDynamic("options_first")(options_first.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocoptOption]
   }
 }

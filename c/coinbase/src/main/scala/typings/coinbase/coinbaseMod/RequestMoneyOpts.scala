@@ -31,9 +31,9 @@ trait RequestMoneyOpts extends js.Object {
 object RequestMoneyOpts {
   @scala.inline
   def apply(amount: String, currency: String, to: String, `type`: request, description: String = null): RequestMoneyOpts = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, to = to)
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMoneyOpts]
   }
 }

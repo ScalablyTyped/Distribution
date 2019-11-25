@@ -11,7 +11,7 @@ trait BulkModifyDocsWrapper extends js.Object {
 object BulkModifyDocsWrapper {
   @scala.inline
   def apply(docs: js.Array[_]): BulkModifyDocsWrapper = {
-    val __obj = js.Dynamic.literal(docs = docs)
+    val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BulkModifyDocsWrapper]
   }

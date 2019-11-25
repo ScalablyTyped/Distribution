@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait PermissionState extends js.Object
 
+object PermissionState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def denied: typings.std.stdStrings.denied = this.cast("denied")
+  @scala.inline
+  def granted: typings.std.stdStrings.granted = this.cast("granted")
+  @scala.inline
+  def prompt: typings.std.stdStrings.prompt = this.cast("prompt")
+}
+

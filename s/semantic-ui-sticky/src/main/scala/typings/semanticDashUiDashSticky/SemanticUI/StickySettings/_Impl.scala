@@ -152,7 +152,7 @@ object _Impl {
     silent: Boolean,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(bottomOffset = bottomOffset, className = className, context = context.asInstanceOf[js.Any], debug = debug, error = error, jitter = jitter, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onBottom = js.Any.fromFunction1(onBottom), onReposition = js.Any.fromFunction1(onReposition), onScroll = js.Any.fromFunction1(onScroll), onStick = js.Any.fromFunction1(onStick), onTop = js.Any.fromFunction1(onTop), onUnstick = js.Any.fromFunction1(onUnstick), performance = performance, pushing = pushing, scrollContext = scrollContext.asInstanceOf[js.Any], setSize = setSize, silent = silent, verbose = verbose)
+    val __obj = js.Dynamic.literal(bottomOffset = bottomOffset.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], observeChanges = observeChanges.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onBottom = js.Any.fromFunction1(onBottom), onReposition = js.Any.fromFunction1(onReposition), onScroll = js.Any.fromFunction1(onScroll), onStick = js.Any.fromFunction1(onStick), onTop = js.Any.fromFunction1(onTop), onUnstick = js.Any.fromFunction1(onUnstick), performance = performance.asInstanceOf[js.Any], pushing = pushing.asInstanceOf[js.Any], scrollContext = scrollContext.asInstanceOf[js.Any], setSize = setSize.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

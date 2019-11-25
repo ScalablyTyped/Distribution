@@ -86,16 +86,16 @@ object SendOptions {
     start: Int | Double = null
   ): SendOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptRanges)) __obj.updateDynamic("acceptRanges")(acceptRanges)
-    if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl)
+    if (!js.isUndefined(acceptRanges)) __obj.updateDynamic("acceptRanges")(acceptRanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
     if (dotfiles != null) __obj.updateDynamic("dotfiles")(dotfiles.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag)
+    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified)
+    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendOptions]
   }

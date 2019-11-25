@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait AnonymityLevel extends js.Object
 
+object AnonymityLevel {
+  @scala.inline
+  def anonymous: typings.proxyDashVerifier.proxyDashVerifierStrings.anonymous = this.cast("anonymous")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def elite: typings.proxyDashVerifier.proxyDashVerifierStrings.elite = this.cast("elite")
+  @scala.inline
+  def transparent: typings.proxyDashVerifier.proxyDashVerifierStrings.transparent = this.cast("transparent")
+}
+

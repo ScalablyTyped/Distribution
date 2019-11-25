@@ -21,9 +21,9 @@ object NavigationPopAction {
     n: Int | Double = null
   ): NavigationPopAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
-    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationPopAction]
   }

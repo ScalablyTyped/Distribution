@@ -30,8 +30,8 @@ object WebViewPreferencesObject {
     minimumFontSize: Int | Double = null
   ): WebViewPreferencesObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(javaScriptCanOpenWindowsAutomatically)) __obj.updateDynamic("javaScriptCanOpenWindowsAutomatically")(javaScriptCanOpenWindowsAutomatically)
-    if (!js.isUndefined(javaScriptEnabled)) __obj.updateDynamic("javaScriptEnabled")(javaScriptEnabled)
+    if (!js.isUndefined(javaScriptCanOpenWindowsAutomatically)) __obj.updateDynamic("javaScriptCanOpenWindowsAutomatically")(javaScriptCanOpenWindowsAutomatically.asInstanceOf[js.Any])
+    if (!js.isUndefined(javaScriptEnabled)) __obj.updateDynamic("javaScriptEnabled")(javaScriptEnabled.asInstanceOf[js.Any])
     if (minimumFontSize != null) __obj.updateDynamic("minimumFontSize")(minimumFontSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebViewPreferencesObject]
   }

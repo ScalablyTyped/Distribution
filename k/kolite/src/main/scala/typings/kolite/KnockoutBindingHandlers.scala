@@ -13,7 +13,7 @@ trait KnockoutBindingHandlers extends js.Object {
 object KnockoutBindingHandlers {
   @scala.inline
   def apply(activity: KoLiteActivityBindingHandler, command: KnockoutBindingHandler[_, _, _]): KnockoutBindingHandlers = {
-    val __obj = js.Dynamic.literal(activity = activity, command = command)
+    val __obj = js.Dynamic.literal(activity = activity.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }

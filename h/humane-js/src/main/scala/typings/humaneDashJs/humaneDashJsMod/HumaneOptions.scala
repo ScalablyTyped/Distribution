@@ -21,12 +21,12 @@ object HumaneOptions {
     waitForMove: js.UndefOr[Boolean] = js.undefined
   ): HumaneOptions = {
     val __obj = js.Dynamic.literal()
-    if (addnCls != null) __obj.updateDynamic("addnCls")(addnCls)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose)
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (addnCls != null) __obj.updateDynamic("addnCls")(addnCls.asInstanceOf[js.Any])
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForMove)) __obj.updateDynamic("waitForMove")(waitForMove)
+    if (!js.isUndefined(waitForMove)) __obj.updateDynamic("waitForMove")(waitForMove.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumaneOptions]
   }
 }

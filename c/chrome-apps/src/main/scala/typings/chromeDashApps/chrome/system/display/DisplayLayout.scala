@@ -38,7 +38,7 @@ object DisplayLayout {
     parentId: String,
     position: ToStringLiteral[Anon_BOTTOM, String, Exclude[String, top | right | bottom | left]]
   ): DisplayLayout = {
-    val __obj = js.Dynamic.literal(id = id, offset = offset, parentId = parentId, position = position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DisplayLayout]
   }

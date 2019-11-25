@@ -20,10 +20,10 @@ object ITabOptions {
     template: String = null
   ): ITabOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (navClass != null) __obj.updateDynamic("navClass")(navClass)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (navClass != null) __obj.updateDynamic("navClass")(navClass.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITabOptions]
   }
 }

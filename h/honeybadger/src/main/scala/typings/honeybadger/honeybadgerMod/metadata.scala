@@ -34,17 +34,17 @@ object metadata {
     url: String = null
   ): metadata = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (cgiData != null) __obj.updateDynamic("cgiData")(cgiData)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (cgiData != null) __obj.updateDynamic("cgiData")(cgiData.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[metadata]
   }
 }

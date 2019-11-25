@@ -21,7 +21,7 @@ object MetaGetResponse {
     pages: js.Array[String],
     verifiable_password_authentication: Boolean
   ): MetaGetResponse = {
-    val __obj = js.Dynamic.literal(git = git, hooks = hooks, importer = importer, pages = pages, verifiable_password_authentication = verifiable_password_authentication)
+    val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], importer = importer.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], verifiable_password_authentication = verifiable_password_authentication.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MetaGetResponse]
   }

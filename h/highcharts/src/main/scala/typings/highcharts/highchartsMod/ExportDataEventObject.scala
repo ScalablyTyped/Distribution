@@ -14,7 +14,7 @@ trait ExportDataEventObject extends js.Object {
 object ExportDataEventObject {
   @scala.inline
   def apply(dataRows: js.Array[js.Array[String]]): ExportDataEventObject = {
-    val __obj = js.Dynamic.literal(dataRows = dataRows)
+    val __obj = js.Dynamic.literal(dataRows = dataRows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExportDataEventObject]
   }

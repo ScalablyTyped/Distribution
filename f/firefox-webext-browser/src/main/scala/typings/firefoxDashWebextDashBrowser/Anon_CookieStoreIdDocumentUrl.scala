@@ -62,14 +62,14 @@ object Anon_CookieStoreIdDocumentUrl {
     requestBody: Anon_ErrorFormData = null,
     urlClassification: UrlClassification = null
   ): Anon_CookieStoreIdDocumentUrl = {
-    val __obj = js.Dynamic.literal(frameId = frameId, method = method, parentFrameId = parentFrameId, requestId = requestId, tabId = tabId, timeStamp = timeStamp, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId)
-    if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
-    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
-    if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody)
-    if (urlClassification != null) __obj.updateDynamic("urlClassification")(urlClassification)
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId.asInstanceOf[js.Any])
+    if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])
+    if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl.asInstanceOf[js.Any])
+    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
+    if (urlClassification != null) __obj.updateDynamic("urlClassification")(urlClassification.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CookieStoreIdDocumentUrl]
   }
 }

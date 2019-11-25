@@ -22,10 +22,10 @@ object APIGatewayProxyResult {
     isBase64Encoded: js.UndefOr[Boolean] = js.undefined,
     multiValueHeaders: StringDictionary[js.Array[Boolean | Double | String]] = null
   ): APIGatewayProxyResult = {
-    val __obj = js.Dynamic.literal(body = body, statusCode = statusCode)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(isBase64Encoded)) __obj.updateDynamic("isBase64Encoded")(isBase64Encoded)
-    if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBase64Encoded)) __obj.updateDynamic("isBase64Encoded")(isBase64Encoded.asInstanceOf[js.Any])
+    if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIGatewayProxyResult]
   }
 }

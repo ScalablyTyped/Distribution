@@ -43,14 +43,14 @@ object CardExe {
     outer_str: String = null,
     success: js.Any => Unit = null
   ): CardExe = {
-    val __obj = js.Dynamic.literal(signature = signature, timestamp = timestamp)
-    if (code != null) __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (fixed_begintimestamp != null) __obj.updateDynamic("fixed_begintimestamp")(fixed_begintimestamp.asInstanceOf[js.Any])
-    if (nonce_str != null) __obj.updateDynamic("nonce_str")(nonce_str)
-    if (openid != null) __obj.updateDynamic("openid")(openid)
-    if (outer_str != null) __obj.updateDynamic("outer_str")(outer_str)
+    if (nonce_str != null) __obj.updateDynamic("nonce_str")(nonce_str.asInstanceOf[js.Any])
+    if (openid != null) __obj.updateDynamic("openid")(openid.asInstanceOf[js.Any])
+    if (outer_str != null) __obj.updateDynamic("outer_str")(outer_str.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[CardExe]
   }

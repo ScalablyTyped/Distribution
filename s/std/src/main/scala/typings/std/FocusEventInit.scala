@@ -19,12 +19,12 @@ object FocusEventInit {
     view: Window = null
   ): FocusEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusEventInit]
   }
 }

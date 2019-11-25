@@ -12,7 +12,7 @@ trait _EM extends js.Object {
 object _EM {
   @scala.inline
   def apply(_$endMarker$_ : Double): _EM = {
-    val __obj = js.Dynamic.literal(_$endMarker$_ = _$endMarker$_)
+    val __obj = js.Dynamic.literal(_$endMarker$_ = _$endMarker$_.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_EM]
   }

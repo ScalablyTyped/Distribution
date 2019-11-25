@@ -13,7 +13,7 @@ trait Anon_BufferBytesReadInt16Array extends js.Object {
 object Anon_BufferBytesReadInt16Array {
   @scala.inline
   def apply(buffer: Int16Array, bytesRead: Double): Anon_BufferBytesReadInt16Array = {
-    val __obj = js.Dynamic.literal(buffer = buffer, bytesRead = bytesRead)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BufferBytesReadInt16Array]
   }

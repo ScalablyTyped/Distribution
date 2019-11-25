@@ -13,7 +13,7 @@ trait BaseChatEventData extends js.Object {
 object BaseChatEventData {
   @scala.inline
   def apply(display_name: String, nick: String, time_stamp: Double): BaseChatEventData = {
-    val __obj = js.Dynamic.literal(display_name = display_name, nick = nick, time_stamp = time_stamp)
+    val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseChatEventData]
   }

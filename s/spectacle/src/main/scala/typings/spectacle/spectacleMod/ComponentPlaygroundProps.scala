@@ -22,10 +22,10 @@ object ComponentPlaygroundProps {
     transformCode: /* code */ String => String = null
   ): ComponentPlaygroundProps = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (previewBackgroundColor != null) __obj.updateDynamic("previewBackgroundColor")(previewBackgroundColor)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (previewBackgroundColor != null) __obj.updateDynamic("previewBackgroundColor")(previewBackgroundColor.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (transformCode != null) __obj.updateDynamic("transformCode")(js.Any.fromFunction1(transformCode))
     __obj.asInstanceOf[ComponentPlaygroundProps]
   }

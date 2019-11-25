@@ -20,7 +20,7 @@ object Options {
   def apply(opacity: Int | Double = null, projection: IProjection = null): Options = {
     val __obj = js.Dynamic.literal()
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

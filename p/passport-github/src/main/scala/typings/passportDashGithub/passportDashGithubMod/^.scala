@@ -2,6 +2,7 @@ package typings.passportDashGithub.passportDashGithubMod
 
 import typings.express.expressMod.Request
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.passportDashOauth2.passportDashOauth2Mod.OAuth2Strategy
 import typings.passportDashOauth2.passportDashOauth2Mod.VerifyCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,8 +10,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("passport-github", JSImport.Namespace)
 @js.native
-class ^ protected ()
-  extends typings.passportDashOauth2.passportDashOauth2Mod.Strategy {
+class ^ protected () extends OAuth2Strategy {
   def this(
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify github.StrategyOptions */ js.Any,
     verify: js.Function4[

@@ -12,7 +12,7 @@ object AppHostedMediaConfig {
   @scala.inline
   def apply(blob: String = null): AppHostedMediaConfig = {
     val __obj = js.Dynamic.literal()
-    if (blob != null) __obj.updateDynamic("blob")(blob)
+    if (blob != null) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppHostedMediaConfig]
   }
 }

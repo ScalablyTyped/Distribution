@@ -20,8 +20,8 @@ object numbers {
     LABEL_SCALE: `0DOT75`,
     StringDictionary: StringDictionary[Double] = null
   ): numbers = {
-    val __obj = js.Dynamic.literal(DENSE_LABEL_SCALE = DENSE_LABEL_SCALE, LABEL_SCALE = LABEL_SCALE)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(DENSE_LABEL_SCALE = DENSE_LABEL_SCALE.asInstanceOf[js.Any], LABEL_SCALE = LABEL_SCALE.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[numbers]
   }
 }

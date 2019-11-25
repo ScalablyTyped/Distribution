@@ -22,7 +22,7 @@ object Anon_AttributeClass {
     Store: Instantiable1[/* domNode */ HTMLElement, default],
     Style: TypeofClassStyleAttributor
   ): Anon_AttributeClass = {
-    val __obj = js.Dynamic.literal(Attribute = Attribute, Class = Class, Store = Store, Style = Style)
+    val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Store = Store.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AttributeClass]
   }

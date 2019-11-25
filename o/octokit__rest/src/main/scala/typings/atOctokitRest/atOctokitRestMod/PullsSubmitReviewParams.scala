@@ -32,8 +32,8 @@ object PullsSubmitReviewParams {
     review_id: Double,
     body: String = null
   ): PullsSubmitReviewParams = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], owner = owner, pull_number = pull_number, repo = repo, review_id = review_id)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], review_id = review_id.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsSubmitReviewParams]
   }
 }

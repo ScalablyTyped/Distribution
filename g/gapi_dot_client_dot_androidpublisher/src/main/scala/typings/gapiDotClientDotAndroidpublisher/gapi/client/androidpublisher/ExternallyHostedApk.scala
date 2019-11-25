@@ -57,21 +57,21 @@ object ExternallyHostedApk {
     versionName: String = null
   ): ExternallyHostedApk = {
     val __obj = js.Dynamic.literal()
-    if (applicationLabel != null) __obj.updateDynamic("applicationLabel")(applicationLabel)
-    if (certificateBase64s != null) __obj.updateDynamic("certificateBase64s")(certificateBase64s)
-    if (externallyHostedUrl != null) __obj.updateDynamic("externallyHostedUrl")(externallyHostedUrl)
-    if (fileSha1Base64 != null) __obj.updateDynamic("fileSha1Base64")(fileSha1Base64)
-    if (fileSha256Base64 != null) __obj.updateDynamic("fileSha256Base64")(fileSha256Base64)
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize)
-    if (iconBase64 != null) __obj.updateDynamic("iconBase64")(iconBase64)
+    if (applicationLabel != null) __obj.updateDynamic("applicationLabel")(applicationLabel.asInstanceOf[js.Any])
+    if (certificateBase64s != null) __obj.updateDynamic("certificateBase64s")(certificateBase64s.asInstanceOf[js.Any])
+    if (externallyHostedUrl != null) __obj.updateDynamic("externallyHostedUrl")(externallyHostedUrl.asInstanceOf[js.Any])
+    if (fileSha1Base64 != null) __obj.updateDynamic("fileSha1Base64")(fileSha1Base64.asInstanceOf[js.Any])
+    if (fileSha256Base64 != null) __obj.updateDynamic("fileSha256Base64")(fileSha256Base64.asInstanceOf[js.Any])
+    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
+    if (iconBase64 != null) __obj.updateDynamic("iconBase64")(iconBase64.asInstanceOf[js.Any])
     if (maximumSdk != null) __obj.updateDynamic("maximumSdk")(maximumSdk.asInstanceOf[js.Any])
     if (minimumSdk != null) __obj.updateDynamic("minimumSdk")(minimumSdk.asInstanceOf[js.Any])
-    if (nativeCodes != null) __obj.updateDynamic("nativeCodes")(nativeCodes)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (usesFeatures != null) __obj.updateDynamic("usesFeatures")(usesFeatures)
-    if (usesPermissions != null) __obj.updateDynamic("usesPermissions")(usesPermissions)
+    if (nativeCodes != null) __obj.updateDynamic("nativeCodes")(nativeCodes.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (usesFeatures != null) __obj.updateDynamic("usesFeatures")(usesFeatures.asInstanceOf[js.Any])
+    if (usesPermissions != null) __obj.updateDynamic("usesPermissions")(usesPermissions.asInstanceOf[js.Any])
     if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
-    if (versionName != null) __obj.updateDynamic("versionName")(versionName)
+    if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternallyHostedApk]
   }
 }

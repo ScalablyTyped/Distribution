@@ -66,15 +66,15 @@ object FilterResponseCookie {
     val __obj = js.Dynamic.literal()
     if (ageLowerBound != null) __obj.updateDynamic("ageLowerBound")(ageLowerBound.asInstanceOf[js.Any])
     if (ageUpperBound != null) __obj.updateDynamic("ageUpperBound")(ageUpperBound.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (expires != null) __obj.updateDynamic("expires")(expires)
-    if (httpOnly != null) __obj.updateDynamic("httpOnly")(httpOnly)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (httpOnly != null) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (secure != null) __obj.updateDynamic("secure")(secure)
-    if (!js.isUndefined(sessionCookie)) __obj.updateDynamic("sessionCookie")(sessionCookie)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(sessionCookie)) __obj.updateDynamic("sessionCookie")(sessionCookie.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterResponseCookie]
   }
 }

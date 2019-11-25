@@ -30,15 +30,15 @@ object Anon_CompanyCountryName {
     streetAddress: String = null
   ): Anon_CompanyCountryName = {
     val __obj = js.Dynamic.literal()
-    if (company != null) __obj.updateDynamic("company")(company)
-    if (countryName != null) __obj.updateDynamic("countryName")(countryName)
-    if (extendedAddress != null) __obj.updateDynamic("extendedAddress")(extendedAddress)
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress)
+    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
+    if (countryName != null) __obj.updateDynamic("countryName")(countryName.asInstanceOf[js.Any])
+    if (extendedAddress != null) __obj.updateDynamic("extendedAddress")(extendedAddress.asInstanceOf[js.Any])
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompanyCountryName]
   }
 }

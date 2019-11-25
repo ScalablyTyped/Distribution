@@ -21,7 +21,7 @@ object DocumentQuickPulse {
     Version: String,
     __type: String
   ): DocumentQuickPulse = {
-    val __obj = js.Dynamic.literal(DocumentType = DocumentType, OperationId = OperationId, Properties = Properties, Version = Version, __type = __type)
+    val __obj = js.Dynamic.literal(DocumentType = DocumentType.asInstanceOf[js.Any], OperationId = OperationId.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], __type = __type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocumentQuickPulse]
   }

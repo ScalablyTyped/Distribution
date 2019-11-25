@@ -24,8 +24,8 @@ object _UnmarshalledEventsBatch {
   @scala.inline
   def apply(Endpoint: _UnmarshalledPublicEndpoint = null, Events: StringDictionary[_UnmarshalledEvent] = null): _UnmarshalledEventsBatch = {
     val __obj = js.Dynamic.literal()
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint)
-    if (Events != null) __obj.updateDynamic("Events")(Events)
+    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
+    if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEventsBatch]
   }
 }

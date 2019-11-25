@@ -33,13 +33,13 @@ object Anon_AdGroupId {
     keywordId: String = null
   ): Anon_AdGroupId = {
     val __obj = js.Dynamic.literal()
-    if (adGroupId != null) __obj.updateDynamic("adGroupId")(adGroupId)
-    if (adId != null) __obj.updateDynamic("adId")(adId)
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
-    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId)
-    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId)
-    if (engineAccountId != null) __obj.updateDynamic("engineAccountId")(engineAccountId)
-    if (keywordId != null) __obj.updateDynamic("keywordId")(keywordId)
+    if (adGroupId != null) __obj.updateDynamic("adGroupId")(adGroupId.asInstanceOf[js.Any])
+    if (adId != null) __obj.updateDynamic("adId")(adId.asInstanceOf[js.Any])
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
+    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId.asInstanceOf[js.Any])
+    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId.asInstanceOf[js.Any])
+    if (engineAccountId != null) __obj.updateDynamic("engineAccountId")(engineAccountId.asInstanceOf[js.Any])
+    if (keywordId != null) __obj.updateDynamic("keywordId")(keywordId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AdGroupId]
   }
 }

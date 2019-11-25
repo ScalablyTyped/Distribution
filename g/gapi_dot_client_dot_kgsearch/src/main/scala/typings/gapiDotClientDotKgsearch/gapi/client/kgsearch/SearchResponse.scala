@@ -20,9 +20,9 @@ object SearchResponse {
   @scala.inline
   def apply(`@context`: js.Any = null, `@type`: js.Any = null, itemListElement: js.Array[_] = null): SearchResponse = {
     val __obj = js.Dynamic.literal()
-    if (`@context` != null) __obj.updateDynamic("@context")(`@context`)
-    if (`@type` != null) __obj.updateDynamic("@type")(`@type`)
-    if (itemListElement != null) __obj.updateDynamic("itemListElement")(itemListElement)
+    if (`@context` != null) __obj.updateDynamic("@context")(`@context`.asInstanceOf[js.Any])
+    if (`@type` != null) __obj.updateDynamic("@type")(`@type`.asInstanceOf[js.Any])
+    if (itemListElement != null) __obj.updateDynamic("itemListElement")(itemListElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResponse]
   }
 }

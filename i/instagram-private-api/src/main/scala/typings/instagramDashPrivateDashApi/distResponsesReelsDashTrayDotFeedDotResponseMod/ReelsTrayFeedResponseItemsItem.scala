@@ -93,22 +93,22 @@ object ReelsTrayFeedResponseItemsItem {
     video_duration: Int | Double = null,
     video_versions: js.Array[ReelsTrayFeedResponseVideoVersionsItem] = null
   ): ReelsTrayFeedResponseItemsItem = {
-    val __obj = js.Dynamic.literal(can_reply = can_reply, can_reshare = can_reshare, can_viewer_save = can_viewer_save, caption = caption, caption_is_edited = caption_is_edited, caption_position = caption_position, client_cache_key = client_cache_key, code = code, device_timestamp = device_timestamp.asInstanceOf[js.Any], expiring_at = expiring_at, filter_type = filter_type, has_shared_to_fb = has_shared_to_fb, id = id, image_versions2 = image_versions2, is_pride_media = is_pride_media, is_reel_media = is_reel_media, media_type = media_type, organic_tracking_token = organic_tracking_token, original_height = original_height, original_width = original_width, photo_of_you = photo_of_you, pk = pk, show_one_tap_fb_share_tooltip = show_one_tap_fb_share_tooltip, supports_reel_reactions = supports_reel_reactions, taken_at = taken_at, user = user)
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
-    if (creative_config != null) __obj.updateDynamic("creative_config")(creative_config)
-    if (!js.isUndefined(has_audio)) __obj.updateDynamic("has_audio")(has_audio)
+    val __obj = js.Dynamic.literal(can_reply = can_reply.asInstanceOf[js.Any], can_reshare = can_reshare.asInstanceOf[js.Any], can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], caption_position = caption_position.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], expiring_at = expiring_at.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], has_shared_to_fb = has_shared_to_fb.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], is_pride_media = is_pride_media.asInstanceOf[js.Any], is_reel_media = is_reel_media.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], show_one_tap_fb_share_tooltip = show_one_tap_fb_share_tooltip.asInstanceOf[js.Any], supports_reel_reactions = supports_reel_reactions.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (creative_config != null) __obj.updateDynamic("creative_config")(creative_config.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_audio)) __obj.updateDynamic("has_audio")(has_audio.asInstanceOf[js.Any])
     if (imported_taken_at != null) __obj.updateDynamic("imported_taken_at")(imported_taken_at.asInstanceOf[js.Any])
     if (is_dash_eligible != null) __obj.updateDynamic("is_dash_eligible")(is_dash_eligible.asInstanceOf[js.Any])
     if (number_of_qualities != null) __obj.updateDynamic("number_of_qualities")(number_of_qualities.asInstanceOf[js.Any])
-    if (reel_mentions != null) __obj.updateDynamic("reel_mentions")(reel_mentions)
-    if (story_locations != null) __obj.updateDynamic("story_locations")(story_locations)
-    if (story_polls != null) __obj.updateDynamic("story_polls")(story_polls)
-    if (story_questions != null) __obj.updateDynamic("story_questions")(story_questions)
-    if (story_quizs != null) __obj.updateDynamic("story_quizs")(story_quizs)
-    if (video_codec != null) __obj.updateDynamic("video_codec")(video_codec)
-    if (video_dash_manifest != null) __obj.updateDynamic("video_dash_manifest")(video_dash_manifest)
+    if (reel_mentions != null) __obj.updateDynamic("reel_mentions")(reel_mentions.asInstanceOf[js.Any])
+    if (story_locations != null) __obj.updateDynamic("story_locations")(story_locations.asInstanceOf[js.Any])
+    if (story_polls != null) __obj.updateDynamic("story_polls")(story_polls.asInstanceOf[js.Any])
+    if (story_questions != null) __obj.updateDynamic("story_questions")(story_questions.asInstanceOf[js.Any])
+    if (story_quizs != null) __obj.updateDynamic("story_quizs")(story_quizs.asInstanceOf[js.Any])
+    if (video_codec != null) __obj.updateDynamic("video_codec")(video_codec.asInstanceOf[js.Any])
+    if (video_dash_manifest != null) __obj.updateDynamic("video_dash_manifest")(video_dash_manifest.asInstanceOf[js.Any])
     if (video_duration != null) __obj.updateDynamic("video_duration")(video_duration.asInstanceOf[js.Any])
-    if (video_versions != null) __obj.updateDynamic("video_versions")(video_versions)
+    if (video_versions != null) __obj.updateDynamic("video_versions")(video_versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsTrayFeedResponseItemsItem]
   }
 }

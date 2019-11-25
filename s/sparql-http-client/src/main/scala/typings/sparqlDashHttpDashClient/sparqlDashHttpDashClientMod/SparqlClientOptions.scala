@@ -21,10 +21,10 @@ object SparqlClientOptions {
     updateUrl: String = null
   ): SparqlClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (URL != null) __obj.updateDynamic("URL")(URL)
-    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl)
-    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
-    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (URL != null) __obj.updateDynamic("URL")(URL.asInstanceOf[js.Any])
+    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
+    if (fetch != null) __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparqlClientOptions]
   }
 }

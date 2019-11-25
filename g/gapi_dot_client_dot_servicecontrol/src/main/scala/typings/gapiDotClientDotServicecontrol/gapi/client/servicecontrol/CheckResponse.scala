@@ -36,11 +36,11 @@ object CheckResponse {
     serviceConfigId: String = null
   ): CheckResponse = {
     val __obj = js.Dynamic.literal()
-    if (checkErrors != null) __obj.updateDynamic("checkErrors")(checkErrors)
-    if (checkInfo != null) __obj.updateDynamic("checkInfo")(checkInfo)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (quotaInfo != null) __obj.updateDynamic("quotaInfo")(quotaInfo)
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    if (checkErrors != null) __obj.updateDynamic("checkErrors")(checkErrors.asInstanceOf[js.Any])
+    if (checkInfo != null) __obj.updateDynamic("checkInfo")(checkInfo.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (quotaInfo != null) __obj.updateDynamic("quotaInfo")(quotaInfo.asInstanceOf[js.Any])
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckResponse]
   }
 }

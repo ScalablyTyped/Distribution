@@ -18,7 +18,7 @@ trait SourceControlInputBox extends js.Object {
 object SourceControlInputBox {
   @scala.inline
   def apply(placeholder: String, value: String): SourceControlInputBox = {
-    val __obj = js.Dynamic.literal(placeholder = placeholder, value = value)
+    val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceControlInputBox]
   }

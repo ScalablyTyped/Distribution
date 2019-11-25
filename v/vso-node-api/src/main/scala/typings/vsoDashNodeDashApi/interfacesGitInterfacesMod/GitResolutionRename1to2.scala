@@ -16,7 +16,7 @@ object GitResolutionRename1to2 {
     userMergedBlob: GitBlobRef,
     userMergedContent: js.Array[Double]
   ): GitResolutionRename1to2 = {
-    val __obj = js.Dynamic.literal(action = action, mergeType = mergeType, userMergedBlob = userMergedBlob, userMergedContent = userMergedContent)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], mergeType = mergeType.asInstanceOf[js.Any], userMergedBlob = userMergedBlob.asInstanceOf[js.Any], userMergedContent = userMergedContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitResolutionRename1to2]
   }

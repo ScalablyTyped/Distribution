@@ -44,11 +44,11 @@ object ClassnamesConfigurations {
     vertical: String = null
   ): ClassnamesConfigurations = {
     val __obj = js.Dynamic.literal()
-    if (divider != null) __obj.updateDynamic("divider")(divider)
-    if (inset != null) __obj.updateDynamic("inset")(inset)
-    if (panel != null) __obj.updateDynamic("panel")(panel)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical)
+    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassnamesConfigurations]
   }
 }

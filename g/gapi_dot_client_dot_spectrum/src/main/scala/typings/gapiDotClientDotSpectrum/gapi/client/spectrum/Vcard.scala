@@ -27,11 +27,11 @@ object Vcard {
     tel: VcardTelephone = null
   ): Vcard = {
     val __obj = js.Dynamic.literal()
-    if (adr != null) __obj.updateDynamic("adr")(adr)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (fn != null) __obj.updateDynamic("fn")(fn)
-    if (org != null) __obj.updateDynamic("org")(org)
-    if (tel != null) __obj.updateDynamic("tel")(tel)
+    if (adr != null) __obj.updateDynamic("adr")(adr.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (fn != null) __obj.updateDynamic("fn")(fn.asInstanceOf[js.Any])
+    if (org != null) __obj.updateDynamic("org")(org.asInstanceOf[js.Any])
+    if (tel != null) __obj.updateDynamic("tel")(tel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vcard]
   }
 }

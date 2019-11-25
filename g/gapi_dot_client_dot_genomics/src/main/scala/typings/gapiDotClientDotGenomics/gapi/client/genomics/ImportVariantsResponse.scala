@@ -13,7 +13,7 @@ object ImportVariantsResponse {
   @scala.inline
   def apply(callSetIds: js.Array[String] = null): ImportVariantsResponse = {
     val __obj = js.Dynamic.literal()
-    if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds)
+    if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportVariantsResponse]
   }
 }

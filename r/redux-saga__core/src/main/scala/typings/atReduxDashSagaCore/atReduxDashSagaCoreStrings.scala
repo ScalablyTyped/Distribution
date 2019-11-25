@@ -63,13 +63,13 @@ object atReduxDashSagaCoreStrings {
   sealed trait apply extends js.Object
   
   @js.native
-  sealed trait call extends js.Object
+  sealed trait call_ extends js.Object
   
   @js.native
-  sealed trait cps extends js.Object
+  sealed trait cps_ extends js.Object
   
   @js.native
-  sealed trait fork extends js.Object
+  sealed trait fork_ extends js.Object
   
   @js.native
   sealed trait spawn extends js.Object
@@ -114,11 +114,11 @@ object atReduxDashSagaCoreStrings {
   @scala.inline
   def apply: apply = "apply".asInstanceOf[apply]
   @scala.inline
-  def call: call = "call".asInstanceOf[call]
+  def call_ : call_ = "call".asInstanceOf[call_]
   @scala.inline
-  def cps: cps = "cps".asInstanceOf[cps]
+  def cps_ : cps_ = "cps".asInstanceOf[cps_]
   @scala.inline
-  def fork: fork = "fork".asInstanceOf[fork]
+  def fork_ : fork_ = "fork".asInstanceOf[fork_]
   @scala.inline
   def spawn: spawn = "spawn".asInstanceOf[spawn]
 }

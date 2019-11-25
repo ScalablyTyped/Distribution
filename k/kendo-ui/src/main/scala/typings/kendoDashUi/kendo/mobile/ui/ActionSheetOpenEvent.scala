@@ -19,9 +19,9 @@ object ActionSheetOpenEvent {
     context: JQuery = null,
     target: JQuery = null
   ): ActionSheetOpenEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionSheetOpenEvent]
   }
 }

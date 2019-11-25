@@ -22,8 +22,8 @@ trait InputPluginContainer extends js.Object {
 object InputPluginContainer {
   @scala.inline
   def apply(key: String, plugin: js.Function, mapping: String = null): InputPluginContainer = {
-    val __obj = js.Dynamic.literal(key = key, plugin = plugin)
-    if (mapping != null) __obj.updateDynamic("mapping")(mapping)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputPluginContainer]
   }
 }

@@ -20,9 +20,9 @@ object ModelConfig {
     tableName: String = null
   ): ModelConfig = {
     val __obj = js.Dynamic.literal()
-    if (docClient != null) __obj.updateDynamic("docClient")(docClient)
-    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    if (docClient != null) __obj.updateDynamic("docClient")(docClient.asInstanceOf[js.Any])
+    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelConfig]
   }
 }

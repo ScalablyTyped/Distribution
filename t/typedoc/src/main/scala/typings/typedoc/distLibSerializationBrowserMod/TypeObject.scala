@@ -49,15 +49,15 @@ object TypeObject {
   ): TypeObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration)
-    if (elementType != null) __obj.updateDynamic("elementType")(elementType)
-    if (elements != null) __obj.updateDynamic("elements")(elements)
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
+    if (elementType != null) __obj.updateDynamic("elementType")(elementType.asInstanceOf[js.Any])
+    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments)
-    if (types != null) __obj.updateDynamic("types")(types)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeObject]
   }
 }

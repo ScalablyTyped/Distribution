@@ -39,11 +39,11 @@ object AuthenticationRule {
     selector: String = null
   ): AuthenticationRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowWithoutCredential)) __obj.updateDynamic("allowWithoutCredential")(allowWithoutCredential)
-    if (customAuth != null) __obj.updateDynamic("customAuth")(customAuth)
-    if (oauth != null) __obj.updateDynamic("oauth")(oauth)
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (!js.isUndefined(allowWithoutCredential)) __obj.updateDynamic("allowWithoutCredential")(allowWithoutCredential.asInstanceOf[js.Any])
+    if (customAuth != null) __obj.updateDynamic("customAuth")(customAuth.asInstanceOf[js.Any])
+    if (oauth != null) __obj.updateDynamic("oauth")(oauth.asInstanceOf[js.Any])
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationRule]
   }
 }

@@ -7,10 +7,23 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "observer")
 @js.native
 object observer extends js.Object {
-  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ String, Unit] */](key1: String, func: Fn): Fn = js.native
-  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ String, Unit] */](key1: String, key2: String, func: Fn): Fn = js.native
-  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ String, Unit] */](key1: String, key2: String, key3: String, func: Fn): Fn = js.native
-  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ String, Unit] */](key1: String, key2: String, key3: String, key4: String, func: Fn): Fn = js.native
-  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ String, Unit] */](key1: String, key2: String, key3: String, key4: String, key5: String, func: Fn): Fn = js.native
+  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ java.lang.String, Unit] */](key1: java.lang.String, func: Fn): Fn = js.native
+  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ java.lang.String, Unit] */](key1: java.lang.String, key2: java.lang.String, func: Fn): Fn = js.native
+  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ java.lang.String, Unit] */](key1: java.lang.String, key2: java.lang.String, key3: java.lang.String, func: Fn): Fn = js.native
+  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ java.lang.String, Unit] */](
+    key1: java.lang.String,
+    key2: java.lang.String,
+    key3: java.lang.String,
+    key4: java.lang.String,
+    func: Fn
+  ): Fn = js.native
+  def apply[Fn /* <: js.Function2[/* target */ js.Any, /* key */ java.lang.String, Unit] */](
+    key1: java.lang.String,
+    key2: java.lang.String,
+    key3: java.lang.String,
+    key4: java.lang.String,
+    key5: java.lang.String,
+    func: Fn
+  ): Fn = js.native
 }
 

@@ -18,7 +18,7 @@ trait Anon_FirstPartyDomainName extends js.Object {
 object Anon_FirstPartyDomainName {
   @scala.inline
   def apply(firstPartyDomain: String, name: String, storeId: String, url: String): Anon_FirstPartyDomainName = {
-    val __obj = js.Dynamic.literal(firstPartyDomain = firstPartyDomain, name = name, storeId = storeId, url = url)
+    val __obj = js.Dynamic.literal(firstPartyDomain = firstPartyDomain.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], storeId = storeId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FirstPartyDomainName]
   }

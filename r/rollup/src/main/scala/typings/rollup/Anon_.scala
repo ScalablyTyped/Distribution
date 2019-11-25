@@ -13,7 +13,7 @@ trait Anon_ extends _SourceMapInput {
 object Anon_ {
   @scala.inline
   def apply(mappings: Empty): Anon_ = {
-    val __obj = js.Dynamic.literal(mappings = mappings)
+    val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_]
   }

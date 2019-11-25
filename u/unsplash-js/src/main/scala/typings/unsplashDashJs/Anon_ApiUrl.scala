@@ -26,12 +26,12 @@ object Anon_ApiUrl {
     callbackUrl: String = null,
     headers: StringDictionary[String] = null
   ): Anon_ApiUrl = {
-    val __obj = js.Dynamic.literal(applicationId = applicationId, secret = secret)
-    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl)
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
-    if (bearerToken != null) __obj.updateDynamic("bearerToken")(bearerToken)
-    if (callbackUrl != null) __obj.updateDynamic("callbackUrl")(callbackUrl)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
+    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl.asInstanceOf[js.Any])
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    if (bearerToken != null) __obj.updateDynamic("bearerToken")(bearerToken.asInstanceOf[js.Any])
+    if (callbackUrl != null) __obj.updateDynamic("callbackUrl")(callbackUrl.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApiUrl]
   }
 }

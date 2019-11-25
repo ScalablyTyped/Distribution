@@ -32,11 +32,11 @@ object CarouselControlProps {
     StringDictionary: /* s */ StringDictionary[js.Any] = null,
     cssModule: CSSModule = null
   ): CarouselControlProps = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], directionText = directionText, onClickHandler = js.Any.fromFunction0(onClickHandler))
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], directionText = directionText.asInstanceOf[js.Any], onClickHandler = js.Any.fromFunction0(onClickHandler))
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselControlProps]
   }
 }

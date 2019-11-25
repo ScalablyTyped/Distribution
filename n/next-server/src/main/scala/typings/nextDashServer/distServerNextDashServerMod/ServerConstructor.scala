@@ -29,10 +29,10 @@ object ServerConstructor {
     staticMarkup: js.UndefOr[Boolean] = js.undefined
   ): ServerConstructor = {
     val __obj = js.Dynamic.literal()
-    if (conf != null) __obj.updateDynamic("conf")(conf)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
-    if (!js.isUndefined(staticMarkup)) __obj.updateDynamic("staticMarkup")(staticMarkup)
+    if (conf != null) __obj.updateDynamic("conf")(conf.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (!js.isUndefined(staticMarkup)) __obj.updateDynamic("staticMarkup")(staticMarkup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerConstructor]
   }
 }

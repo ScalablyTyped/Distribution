@@ -30,11 +30,11 @@ object ListUpdateRequest {
     threatType: String = null
   ): ListUpdateRequest = {
     val __obj = js.Dynamic.literal()
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
-    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType)
-    if (threatType != null) __obj.updateDynamic("threatType")(threatType)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType.asInstanceOf[js.Any])
+    if (threatType != null) __obj.updateDynamic("threatType")(threatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUpdateRequest]
   }
 }

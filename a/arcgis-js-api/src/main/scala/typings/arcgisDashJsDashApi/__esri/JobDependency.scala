@@ -65,7 +65,7 @@ object JobDependency {
     jobID: String,
     propertyIsEnumerable: PropertyKey => Boolean
   ): JobDependency = {
-    val __obj = js.Dynamic.literal(constructor = constructor, depJobId = depJobId, depOnType = depOnType, depOnValue = depOnValue, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), heldOnValue = heldOnValue, holdOnType = holdOnType, id = id, jobID = jobID, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], depJobId = depJobId.asInstanceOf[js.Any], depOnType = depOnType.asInstanceOf[js.Any], depOnValue = depOnValue.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), heldOnValue = heldOnValue.asInstanceOf[js.Any], holdOnType = holdOnType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], jobID = jobID.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[JobDependency]
   }

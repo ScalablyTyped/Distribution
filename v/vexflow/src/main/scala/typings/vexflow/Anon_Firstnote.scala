@@ -13,7 +13,7 @@ trait Anon_Firstnote extends js.Object {
 object Anon_Firstnote {
   @scala.inline
   def apply(first_note: Note, last_note: Note): Anon_Firstnote = {
-    val __obj = js.Dynamic.literal(first_note = first_note, last_note = last_note)
+    val __obj = js.Dynamic.literal(first_note = first_note.asInstanceOf[js.Any], last_note = last_note.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Firstnote]
   }

@@ -48,15 +48,15 @@ object QueryCellInfoEventArgs {
     `type`: String = null
   ): QueryCellInfoEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryCellInfoEventArgs]
   }
 }

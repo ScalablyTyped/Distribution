@@ -18,7 +18,7 @@ trait Anon_CompactFull extends js.Object {
 object Anon_CompactFull {
   @scala.inline
   def apply(compact: String, full: String): Anon_CompactFull = {
-    val __obj = js.Dynamic.literal(compact = compact, full = full)
+    val __obj = js.Dynamic.literal(compact = compact.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CompactFull]
   }

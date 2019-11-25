@@ -24,10 +24,10 @@ object ConnectWiFiOptions {
     password: String = null,
     success: js.Any => Unit = null
   ): ConnectWiFiOptions = {
-    val __obj = js.Dynamic.literal(BSSID = BSSID, SSID = SSID)
+    val __obj = js.Dynamic.literal(BSSID = BSSID.asInstanceOf[js.Any], SSID = SSID.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ConnectWiFiOptions]
   }

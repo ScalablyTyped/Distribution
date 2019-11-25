@@ -18,7 +18,7 @@ object ICachePolicy {
   def apply(maxAgeNs: Int | Double = null, scope: Scope = null): ICachePolicy = {
     val __obj = js.Dynamic.literal()
     if (maxAgeNs != null) __obj.updateDynamic("maxAgeNs")(maxAgeNs.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICachePolicy]
   }
 }

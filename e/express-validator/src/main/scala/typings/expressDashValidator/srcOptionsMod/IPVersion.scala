@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait IPVersion extends js.Object
 
+object IPVersion {
+  @scala.inline
+  def `4`: typings.expressDashValidator.expressDashValidatorNumbers.`4` = this.cast(4)
+  @scala.inline
+  def `6`: typings.expressDashValidator.expressDashValidatorNumbers.`6` = this.cast(6)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

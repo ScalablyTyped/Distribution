@@ -38,19 +38,19 @@ object SnackbarComponentProps {
     visible: js.UndefOr[Boolean] = js.undefined
   ): SnackbarComponentProps = {
     val __obj = js.Dynamic.literal()
-    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor)
+    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
     if (actionHandler != null) __obj.updateDynamic("actionHandler")(js.Any.fromFunction0(actionHandler))
-    if (actionText != null) __obj.updateDynamic("actionText")(actionText)
+    if (actionText != null) __obj.updateDynamic("actionText")(actionText.asInstanceOf[js.Any])
     if (autoHidingTime != null) __obj.updateDynamic("autoHidingTime")(autoHidingTime.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (distanceCallback != null) __obj.updateDynamic("distanceCallback")(js.Any.fromFunction0(distanceCallback))
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (messageColor != null) __obj.updateDynamic("messageColor")(messageColor)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (messageColor != null) __obj.updateDynamic("messageColor")(messageColor.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (textMessage != null) __obj.updateDynamic("textMessage")(textMessage)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (textMessage != null) __obj.updateDynamic("textMessage")(textMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnackbarComponentProps]
   }
 }

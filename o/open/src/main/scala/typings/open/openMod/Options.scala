@@ -36,8 +36,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

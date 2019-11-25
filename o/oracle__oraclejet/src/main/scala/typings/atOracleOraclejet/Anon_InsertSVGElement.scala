@@ -12,7 +12,7 @@ trait Anon_InsertSVGElement extends js.Object {
 object Anon_InsertSVGElement {
   @scala.inline
   def apply(insert: SVGElement): Anon_InsertSVGElement = {
-    val __obj = js.Dynamic.literal(insert = insert)
+    val __obj = js.Dynamic.literal(insert = insert.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InsertSVGElement]
   }

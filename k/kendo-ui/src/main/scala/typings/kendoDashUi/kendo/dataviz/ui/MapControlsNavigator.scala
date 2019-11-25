@@ -12,7 +12,7 @@ object MapControlsNavigator {
   @scala.inline
   def apply(position: String = null): MapControlsNavigator = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapControlsNavigator]
   }
 }

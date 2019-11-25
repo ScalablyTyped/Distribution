@@ -98,8 +98,8 @@ object DecodedIdToken {
     uid: String,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): DecodedIdToken = {
-    val __obj = js.Dynamic.literal(aud = aud, auth_time = auth_time, exp = exp, firebase = firebase, iat = iat, iss = iss, sub = sub, uid = uid)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(aud = aud.asInstanceOf[js.Any], auth_time = auth_time.asInstanceOf[js.Any], exp = exp.asInstanceOf[js.Any], firebase = firebase.asInstanceOf[js.Any], iat = iat.asInstanceOf[js.Any], iss = iss.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DecodedIdToken]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(links: StringDictionary[Anon_Href]): Anon_Key = {
-    val __obj = js.Dynamic.literal(links = links)
+    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Key]
   }

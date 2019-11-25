@@ -14,8 +14,8 @@ trait RouteEntry extends js.Object {
 object RouteEntry {
   @scala.inline
   def apply(id: String, path: js.Array[String], params: StringDictionary[js.Any] = null): RouteEntry = {
-    val __obj = js.Dynamic.literal(id = id, path = path)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteEntry]
   }
 }

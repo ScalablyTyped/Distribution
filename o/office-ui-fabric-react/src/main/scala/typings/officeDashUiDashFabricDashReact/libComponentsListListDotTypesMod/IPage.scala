@@ -32,11 +32,11 @@ object IPage {
     isVisible: js.UndefOr[Boolean] = js.undefined,
     items: js.Array[T] = null
   ): IPage[T] = {
-    val __obj = js.Dynamic.literal(height = height, itemCount = itemCount, key = key, startIndex = startIndex, style = style, top = top)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(isSpacer)) __obj.updateDynamic("isSpacer")(isSpacer)
-    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible)
-    if (items != null) __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], itemCount = itemCount.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSpacer)) __obj.updateDynamic("isSpacer")(isSpacer.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPage[T]]
   }
 }

@@ -14,8 +14,8 @@ trait WhereBinary extends _WhereExpression {
 object WhereBinary {
   @scala.inline
   def apply(col: String | SelectStatement, op: String, quantifier: String, `val`: js.Any): WhereBinary = {
-    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], op = op, quantifier = quantifier)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], quantifier = quantifier.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhereBinary]
   }
 }

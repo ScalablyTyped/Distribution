@@ -32,10 +32,10 @@ object ArtifactContent {
     text: String = null
   ): ArtifactContent = {
     val __obj = js.Dynamic.literal()
-    if (binary != null) __obj.updateDynamic("binary")(binary)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactContent]
   }
 }

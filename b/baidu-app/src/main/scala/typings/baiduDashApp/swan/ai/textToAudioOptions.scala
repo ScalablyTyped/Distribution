@@ -42,16 +42,16 @@ object textToAudioOptions {
     success: /* res */ textToAudioResponse => Unit = null,
     vol: String = null
   ): textToAudioOptions = {
-    val __obj = js.Dynamic.literal(tex = tex)
+    val __obj = js.Dynamic.literal(tex = tex.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (ctp != null) __obj.updateDynamic("ctp")(ctp.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (lan != null) __obj.updateDynamic("lan")(lan)
-    if (per != null) __obj.updateDynamic("per")(per)
-    if (pit != null) __obj.updateDynamic("pit")(pit)
-    if (spd != null) __obj.updateDynamic("spd")(spd)
+    if (lan != null) __obj.updateDynamic("lan")(lan.asInstanceOf[js.Any])
+    if (per != null) __obj.updateDynamic("per")(per.asInstanceOf[js.Any])
+    if (pit != null) __obj.updateDynamic("pit")(pit.asInstanceOf[js.Any])
+    if (spd != null) __obj.updateDynamic("spd")(spd.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (vol != null) __obj.updateDynamic("vol")(vol)
+    if (vol != null) __obj.updateDynamic("vol")(vol.asInstanceOf[js.Any])
     __obj.asInstanceOf[textToAudioOptions]
   }
 }

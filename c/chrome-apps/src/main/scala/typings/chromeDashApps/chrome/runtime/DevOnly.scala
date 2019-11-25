@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait DevOnly extends js.Object
 
+object DevOnly {
+  @scala.inline
+  def appDOTwindowDOTalpha: typings.chromeDashApps.chromeDashAppsStrings.appDOTwindowDOTalpha = this.cast("app.window.alpha")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def diagnostics: typings.chromeDashApps.chromeDashAppsStrings.diagnostics = this.cast("diagnostics")
+  @scala.inline
+  def displaySource: typings.chromeDashApps.chromeDashAppsStrings.displaySource = this.cast("displaySource")
+  @scala.inline
+  def signedInDevices: typings.chromeDashApps.chromeDashAppsStrings.signedInDevices = this.cast("signedInDevices")
+}
+

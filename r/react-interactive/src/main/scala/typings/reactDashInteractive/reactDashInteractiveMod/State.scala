@@ -12,7 +12,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(focus: Focus, iState: IState): State = {
-    val __obj = js.Dynamic.literal(focus = focus, iState = iState)
+    val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any], iState = iState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

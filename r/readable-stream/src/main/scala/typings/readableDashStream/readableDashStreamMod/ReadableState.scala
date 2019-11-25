@@ -55,9 +55,9 @@ object ReadableState {
     decoder: StringDecoder = null,
     encoding: String = null
   ): ReadableState = {
-    val __obj = js.Dynamic.literal(awaitDrain = awaitDrain, buffer = buffer, defaultEncoding = defaultEncoding, destroyed = destroyed, emittedReadable = emittedReadable, endEmitted = endEmitted, ended = ended, flowing = flowing, highWaterMark = highWaterMark, length = length, needReadable = needReadable, objectMode = objectMode, pipes = pipes, pipesCount = pipesCount, readableListening = readableListening, reading = reading, readingMore = readingMore, resumeScheduled = resumeScheduled, sync = sync)
-    if (decoder != null) __obj.updateDynamic("decoder")(decoder)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(awaitDrain = awaitDrain.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any], defaultEncoding = defaultEncoding.asInstanceOf[js.Any], destroyed = destroyed.asInstanceOf[js.Any], emittedReadable = emittedReadable.asInstanceOf[js.Any], endEmitted = endEmitted.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], flowing = flowing.asInstanceOf[js.Any], highWaterMark = highWaterMark.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], needReadable = needReadable.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any], pipesCount = pipesCount.asInstanceOf[js.Any], readableListening = readableListening.asInstanceOf[js.Any], reading = reading.asInstanceOf[js.Any], readingMore = readingMore.asInstanceOf[js.Any], resumeScheduled = resumeScheduled.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
+    if (decoder != null) __obj.updateDynamic("decoder")(decoder.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableState]
   }
 }

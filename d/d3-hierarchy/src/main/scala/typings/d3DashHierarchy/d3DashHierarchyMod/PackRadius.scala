@@ -22,7 +22,7 @@ trait PackRadius extends js.Object {
 object PackRadius {
   @scala.inline
   def apply(r: Double, x: Int | Double = null, y: Int | Double = null): PackRadius = {
-    val __obj = js.Dynamic.literal(r = r)
+    val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackRadius]

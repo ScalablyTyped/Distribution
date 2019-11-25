@@ -12,7 +12,7 @@ trait ConfigureParams extends js.Object {
 object ConfigureParams {
   @scala.inline
   def apply(cellCount: Double, estimatedCellSize: Double): ConfigureParams = {
-    val __obj = js.Dynamic.literal(cellCount = cellCount, estimatedCellSize = estimatedCellSize)
+    val __obj = js.Dynamic.literal(cellCount = cellCount.asInstanceOf[js.Any], estimatedCellSize = estimatedCellSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfigureParams]
   }

@@ -12,7 +12,7 @@ object Anon_AcceptEncodingString {
   @scala.inline
   def apply(acceptEncoding: String = null): Anon_AcceptEncodingString = {
     val __obj = js.Dynamic.literal()
-    if (acceptEncoding != null) __obj.updateDynamic("acceptEncoding")(acceptEncoding)
+    if (acceptEncoding != null) __obj.updateDynamic("acceptEncoding")(acceptEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AcceptEncodingString]
   }
 }

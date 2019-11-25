@@ -26,12 +26,12 @@ object ReactComponentProps {
     _translateProps: js.Array[String] = null
   ): ReactComponentProps = {
     val __obj = js.Dynamic.literal()
-    if (_containerType != null) __obj.updateDynamic("_containerType")(_containerType)
-    if (_locale != null) __obj.updateDynamic("_locale")(_locale)
-    if (_namespace != null) __obj.updateDynamic("_namespace")(_namespace)
-    if (_props != null) __obj.updateDynamic("_props")(_props)
-    if (_tagType != null) __obj.updateDynamic("_tagType")(_tagType)
-    if (_translateProps != null) __obj.updateDynamic("_translateProps")(_translateProps)
+    if (_containerType != null) __obj.updateDynamic("_containerType")(_containerType.asInstanceOf[js.Any])
+    if (_locale != null) __obj.updateDynamic("_locale")(_locale.asInstanceOf[js.Any])
+    if (_namespace != null) __obj.updateDynamic("_namespace")(_namespace.asInstanceOf[js.Any])
+    if (_props != null) __obj.updateDynamic("_props")(_props.asInstanceOf[js.Any])
+    if (_tagType != null) __obj.updateDynamic("_tagType")(_tagType.asInstanceOf[js.Any])
+    if (_translateProps != null) __obj.updateDynamic("_translateProps")(_translateProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactComponentProps]
   }
 }

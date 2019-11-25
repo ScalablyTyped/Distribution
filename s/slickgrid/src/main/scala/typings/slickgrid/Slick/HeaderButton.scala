@@ -24,12 +24,12 @@ object HeaderButton {
     tooltip: String = null
   ): HeaderButton = {
     val __obj = js.Dynamic.literal()
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (handler != null) __obj.updateDynamic("handler")(handler)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (!js.isUndefined(showOnHover)) __obj.updateDynamic("showOnHover")(showOnHover)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnHover)) __obj.updateDynamic("showOnHover")(showOnHover.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderButton]
   }
 }

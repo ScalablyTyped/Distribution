@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait sizeType extends js.Object
 
+object sizeType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def normal: typings.escDashPosDashEncoder.escDashPosDashEncoderStrings.normal = this.cast("normal")
+  @scala.inline
+  def small: typings.escDashPosDashEncoder.escDashPosDashEncoderStrings.small = this.cast("small")
+}
+

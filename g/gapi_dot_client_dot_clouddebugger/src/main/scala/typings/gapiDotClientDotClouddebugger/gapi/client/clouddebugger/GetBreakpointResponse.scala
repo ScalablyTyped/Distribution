@@ -16,7 +16,7 @@ object GetBreakpointResponse {
   @scala.inline
   def apply(breakpoint: Breakpoint = null): GetBreakpointResponse = {
     val __obj = js.Dynamic.literal()
-    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint)
+    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBreakpointResponse]
   }
 }

@@ -23,12 +23,12 @@ object SyntaxHighlighterProps {
     format: js.UndefOr[Boolean] = js.undefined,
     padded: js.UndefOr[Boolean] = js.undefined
   ): SyntaxHighlighterProps = {
-    val __obj = js.Dynamic.literal(language = language)
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(copyable)) __obj.updateDynamic("copyable")(copyable)
-    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(padded)) __obj.updateDynamic("padded")(padded)
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyable)) __obj.updateDynamic("copyable")(copyable.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(padded)) __obj.updateDynamic("padded")(padded.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxHighlighterProps]
   }
 }

@@ -74,19 +74,19 @@ object Fulfillment {
     updated_at: String = null
   ): Fulfillment = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (line_items != null) __obj.updateDynamic("line_items")(line_items)
+    if (line_items != null) __obj.updateDynamic("line_items")(line_items.asInstanceOf[js.Any])
     if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
-    if (receipt != null) __obj.updateDynamic("receipt")(receipt)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (tracking_company != null) __obj.updateDynamic("tracking_company")(tracking_company)
-    if (tracking_number != null) __obj.updateDynamic("tracking_number")(tracking_number)
-    if (tracking_numbers != null) __obj.updateDynamic("tracking_numbers")(tracking_numbers)
-    if (tracking_url != null) __obj.updateDynamic("tracking_url")(tracking_url)
-    if (tracking_urls != null) __obj.updateDynamic("tracking_urls")(tracking_urls)
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (receipt != null) __obj.updateDynamic("receipt")(receipt.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tracking_company != null) __obj.updateDynamic("tracking_company")(tracking_company.asInstanceOf[js.Any])
+    if (tracking_number != null) __obj.updateDynamic("tracking_number")(tracking_number.asInstanceOf[js.Any])
+    if (tracking_numbers != null) __obj.updateDynamic("tracking_numbers")(tracking_numbers.asInstanceOf[js.Any])
+    if (tracking_url != null) __obj.updateDynamic("tracking_url")(tracking_url.asInstanceOf[js.Any])
+    if (tracking_urls != null) __obj.updateDynamic("tracking_urls")(tracking_urls.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fulfillment]
   }
 }

@@ -40,13 +40,13 @@ object Anon_Content {
     submodule_git_url: String = null,
     target: String = null
   ): Anon_Content = {
-    val __obj = js.Dynamic.literal(_links = _links, git_url = git_url, html_url = html_url, name = name, path = path, sha = sha, size = size, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (download_url != null) __obj.updateDynamic("download_url")(download_url)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (submodule_git_url != null) __obj.updateDynamic("submodule_git_url")(submodule_git_url)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (download_url != null) __obj.updateDynamic("download_url")(download_url.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (submodule_git_url != null) __obj.updateDynamic("submodule_git_url")(submodule_git_url.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Content]
   }
 }

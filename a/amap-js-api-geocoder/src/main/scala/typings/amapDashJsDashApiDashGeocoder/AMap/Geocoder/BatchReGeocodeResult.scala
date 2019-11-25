@@ -18,7 +18,7 @@ trait BatchReGeocodeResult extends js.Object {
 object BatchReGeocodeResult {
   @scala.inline
   def apply(info: String, regeocodes: js.Array[ReGeocode]): BatchReGeocodeResult = {
-    val __obj = js.Dynamic.literal(info = info, regeocodes = regeocodes)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], regeocodes = regeocodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BatchReGeocodeResult]
   }

@@ -21,9 +21,9 @@ object AttributeValue {
     stringValue: TruncatableString = null
   ): AttributeValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
-    if (intValue != null) __obj.updateDynamic("intValue")(intValue)
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeValue]
   }
 }

@@ -13,8 +13,8 @@ trait UuidHeaderValue extends MessageHeaderValue {
 object UuidHeaderValue {
   @scala.inline
   def apply(`type`: uuid, value: String): UuidHeaderValue = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UuidHeaderValue]
   }
 }

@@ -13,8 +13,8 @@ object Anon_Path {
   @scala.inline
   def apply(path: String = null, resetNamespace: js.UndefOr[Boolean] = js.undefined): Anon_Path = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(resetNamespace)) __obj.updateDynamic("resetNamespace")(resetNamespace)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetNamespace)) __obj.updateDynamic("resetNamespace")(resetNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Path]
   }
 }

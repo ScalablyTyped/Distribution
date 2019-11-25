@@ -13,10 +13,10 @@ trait Sugar extends js.Object {
   var Object: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Object.Constructor */ js.Any = js.native
   var RegExp: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RegExp.Constructor */ js.Any = js.native
   var String: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify String.Constructor */ js.Any = js.native
-  def apply(): Sugar = js.native
-  def apply(opts: ExtendOptions): Sugar = js.native
-  def createNamespace(name: String): SugarNamespace = js.native
-  def extend(): Sugar = js.native
-  def extend(opts: ExtendOptions): Sugar = js.native
+  def apply(): typings.sugarDashCore.sugarjs.Sugar = js.native
+  def apply(opts: ExtendOptions): typings.sugarDashCore.sugarjs.Sugar = js.native
+  def createNamespace(name: java.lang.String): SugarNamespace = js.native
+  def extend(): typings.sugarDashCore.sugarjs.Sugar = js.native
+  def extend(opts: ExtendOptions): typings.sugarDashCore.sugarjs.Sugar = js.native
 }
 

@@ -16,8 +16,8 @@ object CommitmentsScopedList {
   @scala.inline
   def apply(commitments: js.Array[Commitment] = null, warning: Anon_Code = null): CommitmentsScopedList = {
     val __obj = js.Dynamic.literal()
-    if (commitments != null) __obj.updateDynamic("commitments")(commitments)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (commitments != null) __obj.updateDynamic("commitments")(commitments.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitmentsScopedList]
   }
 }

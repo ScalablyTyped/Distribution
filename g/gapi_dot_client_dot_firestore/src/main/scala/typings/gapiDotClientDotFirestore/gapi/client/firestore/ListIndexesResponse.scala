@@ -15,8 +15,8 @@ object ListIndexesResponse {
   @scala.inline
   def apply(indexes: js.Array[Index] = null, nextPageToken: String = null): ListIndexesResponse = {
     val __obj = js.Dynamic.literal()
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIndexesResponse]
   }
 }

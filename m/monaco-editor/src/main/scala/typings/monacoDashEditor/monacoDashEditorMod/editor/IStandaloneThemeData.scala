@@ -21,8 +21,8 @@ object IStandaloneThemeData {
     rules: js.Array[ITokenThemeRule],
     encodedTokensColors: js.Array[String] = null
   ): IStandaloneThemeData = {
-    val __obj = js.Dynamic.literal(base = base, colors = colors, inherit = inherit, rules = rules)
-    if (encodedTokensColors != null) __obj.updateDynamic("encodedTokensColors")(encodedTokensColors)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
+    if (encodedTokensColors != null) __obj.updateDynamic("encodedTokensColors")(encodedTokensColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStandaloneThemeData]
   }
 }

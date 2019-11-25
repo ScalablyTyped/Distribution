@@ -27,10 +27,10 @@ object WebToken {
     value: String = null
   ): WebToken = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parentFrameUrl != null) __obj.updateDynamic("parentFrameUrl")(parentFrameUrl)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentFrameUrl != null) __obj.updateDynamic("parentFrameUrl")(parentFrameUrl.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebToken]
   }
 }

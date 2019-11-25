@@ -35,13 +35,13 @@ object ActionBarHeaderProps {
     headingLevel: `1` | `2` | `3` | `4` | `5` | `6` = null,
     titleProps: StringDictionary[js.Any] = null
   ): ActionBarHeaderProps = {
-    val __obj = js.Dynamic.literal(title = title)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (descriptionProps != null) __obj.updateDynamic("descriptionProps")(descriptionProps)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (descriptionProps != null) __obj.updateDynamic("descriptionProps")(descriptionProps.asInstanceOf[js.Any])
     if (headingLevel != null) __obj.updateDynamic("headingLevel")(headingLevel.asInstanceOf[js.Any])
-    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps)
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionBarHeaderProps]
   }
 }

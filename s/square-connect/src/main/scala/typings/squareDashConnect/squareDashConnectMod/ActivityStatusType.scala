@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ActivityStatusType extends js.Object
 
+object ActivityStatusType {
+  @scala.inline
+  def ACTIVE: typings.squareDashConnect.squareDashConnectStrings.ACTIVE = this.cast("ACTIVE")
+  @scala.inline
+  def INACTIVE: typings.squareDashConnect.squareDashConnectStrings.INACTIVE = this.cast("INACTIVE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -24,8 +24,8 @@ object Table {
     tables: js.Array[Table],
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Table = {
-    val __obj = js.Dynamic.literal(encode = js.Any.fromFunction0(encode), fields = fields, sizeOf = js.Any.fromFunction0(sizeOf), tableName = tableName, tables = tables)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(encode = js.Any.fromFunction0(encode), fields = fields.asInstanceOf[js.Any], sizeOf = js.Any.fromFunction0(sizeOf), tableName = tableName.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Table]
   }
 }

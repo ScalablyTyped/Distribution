@@ -27,8 +27,8 @@ trait defaultOrbit extends js.Object {
 object defaultOrbit {
   @scala.inline
   def apply(center: Object, radius: Double, `type`: String): defaultOrbit = {
-    val __obj = js.Dynamic.literal(center = center, radius = radius)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultOrbit]
   }
 }

@@ -14,7 +14,7 @@ trait TreeViewSelectionChangeEvent[T] extends js.Object {
 object TreeViewSelectionChangeEvent {
   @scala.inline
   def apply[T](selection: js.Array[T]): TreeViewSelectionChangeEvent[T] = {
-    val __obj = js.Dynamic.literal(selection = selection)
+    val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TreeViewSelectionChangeEvent[T]]
   }

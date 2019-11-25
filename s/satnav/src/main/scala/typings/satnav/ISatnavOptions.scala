@@ -20,9 +20,9 @@ object ISatnavOptions {
     poll: Int | Double = null
   ): ISatnavOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5)
-    if (!js.isUndefined(matchAll)) __obj.updateDynamic("matchAll")(matchAll)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchAll)) __obj.updateDynamic("matchAll")(matchAll.asInstanceOf[js.Any])
     if (poll != null) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISatnavOptions]
   }

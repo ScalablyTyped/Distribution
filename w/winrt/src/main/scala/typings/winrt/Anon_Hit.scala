@@ -13,7 +13,7 @@ trait Anon_Hit extends js.Object {
 object Anon_Hit {
   @scala.inline
   def apply(hit: Double, rect: Rect): Anon_Hit = {
-    val __obj = js.Dynamic.literal(hit = hit, rect = rect)
+    val __obj = js.Dynamic.literal(hit = hit.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hit]
   }

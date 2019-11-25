@@ -40,12 +40,12 @@ object _UnmarshalledMultipartUpload {
     UploadId: String = null
   ): _UnmarshalledMultipartUpload = {
     val __obj = js.Dynamic.literal()
-    if (Initiated != null) __obj.updateDynamic("Initiated")(Initiated)
-    if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator)
-    if (Key != null) __obj.updateDynamic("Key")(Key)
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    if (Initiated != null) __obj.updateDynamic("Initiated")(Initiated.asInstanceOf[js.Any])
+    if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator.asInstanceOf[js.Any])
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (UploadId != null) __obj.updateDynamic("UploadId")(UploadId)
+    if (UploadId != null) __obj.updateDynamic("UploadId")(UploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledMultipartUpload]
   }
 }

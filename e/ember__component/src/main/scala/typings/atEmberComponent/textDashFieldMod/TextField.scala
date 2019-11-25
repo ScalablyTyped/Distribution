@@ -36,8 +36,8 @@ import scala.scalajs.js.annotation._
 object TextField {
   @scala.inline
   def apply(max: String, min: String, pattern: String, size: String, `type`: String, value: String): TextField = {
-    val __obj = js.Dynamic.literal(max = max, min = min, pattern = pattern, size = size, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextField]
   }
 }

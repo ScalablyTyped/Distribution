@@ -24,11 +24,11 @@ object NativeOptions {
     maxFileSize: Int | Double = null
   ): NativeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoSendLogs)) __obj.updateDynamic("autoSendLogs")(autoSendLogs)
-    if (!js.isUndefined(autoUpdateConfig)) __obj.updateDynamic("autoUpdateConfig")(autoUpdateConfig)
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (level != null) __obj.updateDynamic("level")(level)
+    if (!js.isUndefined(autoSendLogs)) __obj.updateDynamic("autoSendLogs")(autoSendLogs.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpdateConfig)) __obj.updateDynamic("autoUpdateConfig")(autoUpdateConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeOptions]
   }

@@ -12,7 +12,7 @@ object Anon_TagName {
   @scala.inline
   def apply(tagName: String = null): Anon_TagName = {
     val __obj = js.Dynamic.literal()
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TagName]
   }
 }

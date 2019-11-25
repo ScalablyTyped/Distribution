@@ -631,7 +631,7 @@ trait _Chain[T, V] extends js.Object {
   def pick[K /* <: String */](keys: js.Array[K]): _Chain[TypeOfDictionary[Pick[V, K]], Pick[V, K]] = js.native
   def pick[K /* <: String */](
     predicate: ObjectIterator[
-      /* import warning: ImportType.apply Failed type conversion: V[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: V[K] */ js.Any, 
       Boolean
     ]
   ): _Chain[TypeOfDictionary[Pick[V, K]], Pick[V, K]] = js.native

@@ -27,7 +27,7 @@ object Anon_Debug {
     warn: /* o */ js.Object => Unit = null
   ): Anon_Debug = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (fatal != null) __obj.updateDynamic("fatal")(js.Any.fromFunction1(fatal))

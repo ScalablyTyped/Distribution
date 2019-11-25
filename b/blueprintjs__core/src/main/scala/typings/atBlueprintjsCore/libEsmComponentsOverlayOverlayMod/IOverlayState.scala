@@ -12,7 +12,7 @@ object IOverlayState {
   @scala.inline
   def apply(hasEverOpened: js.UndefOr[Boolean] = js.undefined): IOverlayState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasEverOpened)) __obj.updateDynamic("hasEverOpened")(hasEverOpened)
+    if (!js.isUndefined(hasEverOpened)) __obj.updateDynamic("hasEverOpened")(hasEverOpened.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOverlayState]
   }
 }

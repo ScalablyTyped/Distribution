@@ -35,7 +35,7 @@ object GraphQLInterfaceTypeConfig {
     extensions: Maybe[Record[String, _]] = null,
     resolveType: (TSource, TContext, /* info */ GraphQLResolveInfo, /* abstractType */ GraphQLAbstractType) => PromiseOrValue[Maybe[(GraphQLObjectType[TSource, TContext, TArgs]) | String]] = null
   ): GraphQLInterfaceTypeConfig[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])

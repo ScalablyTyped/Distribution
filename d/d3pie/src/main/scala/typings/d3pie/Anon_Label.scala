@@ -14,7 +14,7 @@ object Anon_Label {
   @scala.inline
   def apply(label: String = null, percentage: Int | Double = null, value: Int | Double = null): Anon_Label = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]

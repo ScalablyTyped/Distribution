@@ -62,14 +62,14 @@ object ScalesLabel {
   ): ScalesLabel = {
     val __obj = js.Dynamic.literal()
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (!js.isUndefined(includeFirstValue)) __obj.updateDynamic("includeFirstValue")(includeFirstValue)
+    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeFirstValue)) __obj.updateDynamic("includeFirstValue")(includeFirstValue.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unitText != null) __obj.updateDynamic("unitText")(unitText)
+    if (unitText != null) __obj.updateDynamic("unitText")(unitText.asInstanceOf[js.Any])
     if (unitTextPlacement != null) __obj.updateDynamic("unitTextPlacement")(unitTextPlacement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesLabel]
   }

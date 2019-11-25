@@ -13,7 +13,7 @@ object AuthorizationLoggingOptions {
   @scala.inline
   def apply(permissionType: String = null): AuthorizationLoggingOptions = {
     val __obj = js.Dynamic.literal()
-    if (permissionType != null) __obj.updateDynamic("permissionType")(permissionType)
+    if (permissionType != null) __obj.updateDynamic("permissionType")(permissionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationLoggingOptions]
   }
 }

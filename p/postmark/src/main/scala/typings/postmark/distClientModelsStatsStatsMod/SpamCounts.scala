@@ -13,7 +13,7 @@ trait SpamCounts extends js.Object {
 object SpamCounts {
   @scala.inline
   def apply(Days: js.Array[Anon_DateSpamComplaint], SpamComplaint: Double): SpamCounts = {
-    val __obj = js.Dynamic.literal(Days = Days, SpamComplaint = SpamComplaint)
+    val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], SpamComplaint = SpamComplaint.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SpamCounts]
   }

@@ -24,9 +24,9 @@ object GooglePrivacyDlpV2beta1NumericalStatsResult {
     quantileValues: js.Array[GooglePrivacyDlpV2beta1Value] = null
   ): GooglePrivacyDlpV2beta1NumericalStatsResult = {
     val __obj = js.Dynamic.literal()
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue)
-    if (quantileValues != null) __obj.updateDynamic("quantileValues")(quantileValues)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (quantileValues != null) __obj.updateDynamic("quantileValues")(quantileValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1NumericalStatsResult]
   }
 }

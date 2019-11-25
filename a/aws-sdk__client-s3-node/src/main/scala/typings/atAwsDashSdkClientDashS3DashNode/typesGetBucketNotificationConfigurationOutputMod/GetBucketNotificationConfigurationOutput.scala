@@ -35,10 +35,10 @@ object GetBucketNotificationConfigurationOutput {
     QueueConfigurations: js.Array[_UnmarshalledQueueConfiguration] = null,
     TopicConfigurations: js.Array[_UnmarshalledTopicConfiguration] = null
   ): GetBucketNotificationConfigurationOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (LambdaFunctionConfigurations != null) __obj.updateDynamic("LambdaFunctionConfigurations")(LambdaFunctionConfigurations)
-    if (QueueConfigurations != null) __obj.updateDynamic("QueueConfigurations")(QueueConfigurations)
-    if (TopicConfigurations != null) __obj.updateDynamic("TopicConfigurations")(TopicConfigurations)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (LambdaFunctionConfigurations != null) __obj.updateDynamic("LambdaFunctionConfigurations")(LambdaFunctionConfigurations.asInstanceOf[js.Any])
+    if (QueueConfigurations != null) __obj.updateDynamic("QueueConfigurations")(QueueConfigurations.asInstanceOf[js.Any])
+    if (TopicConfigurations != null) __obj.updateDynamic("TopicConfigurations")(TopicConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketNotificationConfigurationOutput]
   }
 }

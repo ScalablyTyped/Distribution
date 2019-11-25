@@ -13,9 +13,9 @@ trait feedResult extends js.Object {
 object feedResult {
   @scala.inline
   def apply(feed: feedJSON, error: feedError = null, xmlDocument: String = null): feedResult = {
-    val __obj = js.Dynamic.literal(feed = feed)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (xmlDocument != null) __obj.updateDynamic("xmlDocument")(xmlDocument)
+    val __obj = js.Dynamic.literal(feed = feed.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (xmlDocument != null) __obj.updateDynamic("xmlDocument")(xmlDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[feedResult]
   }
 }

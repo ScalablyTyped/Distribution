@@ -25,11 +25,11 @@ object Wait {
     waitFor: String = null
   ): Wait = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor)
+    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Wait]
   }
 }

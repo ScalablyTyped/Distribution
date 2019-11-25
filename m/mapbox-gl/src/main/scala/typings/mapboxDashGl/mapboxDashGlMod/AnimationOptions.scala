@@ -27,7 +27,7 @@ object AnimationOptions {
     offset: PointLike = null
   ): AnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

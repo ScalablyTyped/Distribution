@@ -30,11 +30,11 @@ object HeatmapPaint {
     val __obj = js.Dynamic.literal()
     if (`heatmap-color` != null) __obj.updateDynamic("heatmap-color")(`heatmap-color`.asInstanceOf[js.Any])
     if (`heatmap-intensity` != null) __obj.updateDynamic("heatmap-intensity")(`heatmap-intensity`.asInstanceOf[js.Any])
-    if (`heatmap-intensity-transition` != null) __obj.updateDynamic("heatmap-intensity-transition")(`heatmap-intensity-transition`)
+    if (`heatmap-intensity-transition` != null) __obj.updateDynamic("heatmap-intensity-transition")(`heatmap-intensity-transition`.asInstanceOf[js.Any])
     if (`heatmap-opacity` != null) __obj.updateDynamic("heatmap-opacity")(`heatmap-opacity`.asInstanceOf[js.Any])
-    if (`heatmap-opacity-transition` != null) __obj.updateDynamic("heatmap-opacity-transition")(`heatmap-opacity-transition`)
+    if (`heatmap-opacity-transition` != null) __obj.updateDynamic("heatmap-opacity-transition")(`heatmap-opacity-transition`.asInstanceOf[js.Any])
     if (`heatmap-radius` != null) __obj.updateDynamic("heatmap-radius")(`heatmap-radius`.asInstanceOf[js.Any])
-    if (`heatmap-radius-transition` != null) __obj.updateDynamic("heatmap-radius-transition")(`heatmap-radius-transition`)
+    if (`heatmap-radius-transition` != null) __obj.updateDynamic("heatmap-radius-transition")(`heatmap-radius-transition`.asInstanceOf[js.Any])
     if (`heatmap-weight` != null) __obj.updateDynamic("heatmap-weight")(`heatmap-weight`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapPaint]
   }

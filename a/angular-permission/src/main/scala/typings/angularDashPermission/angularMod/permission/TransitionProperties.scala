@@ -32,11 +32,11 @@ object TransitionProperties {
     toState: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify angular.ui.IState */ js.Any = null
   ): TransitionProperties = {
     val __obj = js.Dynamic.literal()
-    if (fromParams != null) __obj.updateDynamic("fromParams")(fromParams)
-    if (fromState != null) __obj.updateDynamic("fromState")(fromState)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (toParams != null) __obj.updateDynamic("toParams")(toParams)
-    if (toState != null) __obj.updateDynamic("toState")(toState)
+    if (fromParams != null) __obj.updateDynamic("fromParams")(fromParams.asInstanceOf[js.Any])
+    if (fromState != null) __obj.updateDynamic("fromState")(fromState.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (toParams != null) __obj.updateDynamic("toParams")(toParams.asInstanceOf[js.Any])
+    if (toState != null) __obj.updateDynamic("toState")(toState.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionProperties]
   }
 }

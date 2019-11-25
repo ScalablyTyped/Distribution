@@ -23,12 +23,12 @@ object ProductAction {
     productListSource: String = null,
     transaction: Transaction = null
   ): ProductAction = {
-    val __obj = js.Dynamic.literal(action = action)
-    if (checkoutOption != null) __obj.updateDynamic("checkoutOption")(checkoutOption)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+    if (checkoutOption != null) __obj.updateDynamic("checkoutOption")(checkoutOption.asInstanceOf[js.Any])
     if (checkoutStep != null) __obj.updateDynamic("checkoutStep")(checkoutStep.asInstanceOf[js.Any])
-    if (productActionList != null) __obj.updateDynamic("productActionList")(productActionList)
-    if (productListSource != null) __obj.updateDynamic("productListSource")(productListSource)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (productActionList != null) __obj.updateDynamic("productActionList")(productActionList.asInstanceOf[js.Any])
+    if (productListSource != null) __obj.updateDynamic("productListSource")(productListSource.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductAction]
   }
 }

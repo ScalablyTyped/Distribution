@@ -17,7 +17,7 @@ trait Anon_Deeptype extends js.Object {
 object Anon_Deeptype {
   @scala.inline
   def apply(deep_type: SCENIC, scenic: Scenic): Anon_Deeptype = {
-    val __obj = js.Dynamic.literal(deep_type = deep_type, scenic = scenic)
+    val __obj = js.Dynamic.literal(deep_type = deep_type.asInstanceOf[js.Any], scenic = scenic.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Deeptype]
   }

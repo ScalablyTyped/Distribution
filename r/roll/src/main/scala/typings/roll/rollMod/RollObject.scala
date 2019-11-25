@@ -12,13 +12,8 @@ trait RollObject extends js.Object {
 
 object RollObject {
   @scala.inline
-  def apply(
-    quantity: Double,
-    sides: Double,
-    toString: () => String,
-    transformations: js.Array[RollTransformation]
-  ): RollObject = {
-    val __obj = js.Dynamic.literal(quantity = quantity, sides = sides, toString = js.Any.fromFunction0(toString), transformations = transformations)
+  def apply(quantity: Double, sides: Double, transformations: js.Array[RollTransformation]): RollObject = {
+    val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], sides = sides.asInstanceOf[js.Any], transformations = transformations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RollObject]
   }

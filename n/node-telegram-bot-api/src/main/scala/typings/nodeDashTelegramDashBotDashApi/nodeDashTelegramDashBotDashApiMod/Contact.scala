@@ -21,10 +21,10 @@ object Contact {
     user_id: Int | Double = null,
     vcard: String = null
   ): Contact = {
-    val __obj = js.Dynamic.literal(first_name = first_name, phone_number = phone_number)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
+    val __obj = js.Dynamic.literal(first_name = first_name.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
     if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
-    if (vcard != null) __obj.updateDynamic("vcard")(vcard)
+    if (vcard != null) __obj.updateDynamic("vcard")(vcard.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contact]
   }
 }

@@ -69,8 +69,8 @@ object ExtensionContext {
     workspaceState: Memento,
     storagePath: String = null
   ): ExtensionContext = {
-    val __obj = js.Dynamic.literal(asAbsolutePath = js.Any.fromFunction1(asAbsolutePath), extensionPath = extensionPath, globalState = globalState, globalStoragePath = globalStoragePath, logPath = logPath, subscriptions = subscriptions, workspaceState = workspaceState)
-    if (storagePath != null) __obj.updateDynamic("storagePath")(storagePath)
+    val __obj = js.Dynamic.literal(asAbsolutePath = js.Any.fromFunction1(asAbsolutePath), extensionPath = extensionPath.asInstanceOf[js.Any], globalState = globalState.asInstanceOf[js.Any], globalStoragePath = globalStoragePath.asInstanceOf[js.Any], logPath = logPath.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], workspaceState = workspaceState.asInstanceOf[js.Any])
+    if (storagePath != null) __obj.updateDynamic("storagePath")(storagePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionContext]
   }
 }

@@ -82,8 +82,8 @@ object TweenPropConfig {
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX)
-    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)
+    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY.asInstanceOf[js.Any])
     if (getActive != null) __obj.updateDynamic("getActive")(js.Any.fromFunction6(getActive))
     if (getEnd != null) __obj.updateDynamic("getEnd")(js.Any.fromFunction6(getEnd))
     if (getStart != null) __obj.updateDynamic("getStart")(js.Any.fromFunction6(getStart))
@@ -91,7 +91,7 @@ object TweenPropConfig {
     if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo)
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TweenPropConfig]
   }
 }

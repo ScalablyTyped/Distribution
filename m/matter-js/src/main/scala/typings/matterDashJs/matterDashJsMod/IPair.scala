@@ -39,7 +39,7 @@ object IPair {
     timeCreated: Double,
     timeUpdated: Double
   ): IPair = {
-    val __obj = js.Dynamic.literal(activeContacts = activeContacts, bodyA = bodyA, bodyB = bodyB, contacts = contacts, friction = friction, frictionStatic = frictionStatic, id = id, inverseMass = inverseMass, isActive = isActive, restitution = restitution, separation = separation, slop = slop, timeCreated = timeCreated, timeUpdated = timeUpdated)
+    val __obj = js.Dynamic.literal(activeContacts = activeContacts.asInstanceOf[js.Any], bodyA = bodyA.asInstanceOf[js.Any], bodyB = bodyB.asInstanceOf[js.Any], contacts = contacts.asInstanceOf[js.Any], friction = friction.asInstanceOf[js.Any], frictionStatic = frictionStatic.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inverseMass = inverseMass.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], restitution = restitution.asInstanceOf[js.Any], separation = separation.asInstanceOf[js.Any], slop = slop.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeUpdated = timeUpdated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPair]
   }

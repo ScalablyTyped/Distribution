@@ -17,7 +17,7 @@ object FindResponse {
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ _
     ]
   ): FindResponse[Content] = {
-    val __obj = js.Dynamic.literal(docs = docs)
+    val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FindResponse[Content]]
   }

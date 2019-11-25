@@ -20,10 +20,10 @@ object ChartElementsOptions {
     rectangle: ChartRectangleOptions = null
   ): ChartElementsOptions = {
     val __obj = js.Dynamic.literal()
-    if (arc != null) __obj.updateDynamic("arc")(arc)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (point != null) __obj.updateDynamic("point")(point)
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    if (arc != null) __obj.updateDynamic("arc")(arc.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartElementsOptions]
   }
 }

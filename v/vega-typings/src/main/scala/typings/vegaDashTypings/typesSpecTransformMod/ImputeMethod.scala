@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait ImputeMethod extends js.Object
 
+object ImputeMethod {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def max: typings.vegaDashTypings.vegaDashTypingsStrings.max = this.cast("max")
+  @scala.inline
+  def mean: typings.vegaDashTypings.vegaDashTypingsStrings.mean = this.cast("mean")
+  @scala.inline
+  def median: typings.vegaDashTypings.vegaDashTypingsStrings.median = this.cast("median")
+  @scala.inline
+  def min: typings.vegaDashTypings.vegaDashTypingsStrings.min = this.cast("min")
+  @scala.inline
+  def value: typings.vegaDashTypings.vegaDashTypingsStrings.value = this.cast("value")
+}
+

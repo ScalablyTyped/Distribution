@@ -15,7 +15,7 @@ object PinOption {
   def apply(pin: Double | String, id: Double | String = null, `type`: String = null): PinOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinOption]
   }
 }

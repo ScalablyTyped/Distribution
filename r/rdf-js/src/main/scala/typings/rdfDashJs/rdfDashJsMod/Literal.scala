@@ -42,7 +42,7 @@ object Literal {
     termType: typings.rdfDashJs.rdfDashJsStrings.Literal,
     value: String
   ): Literal = {
-    val __obj = js.Dynamic.literal(datatype = datatype, equals = js.Any.fromFunction1(equals), language = language, termType = termType, value = value)
+    val __obj = js.Dynamic.literal(datatype = datatype.asInstanceOf[js.Any], equals = js.Any.fromFunction1(equals), language = language.asInstanceOf[js.Any], termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Literal]
   }

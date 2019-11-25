@@ -25,7 +25,7 @@ object Anon_AdminDistrict {
     locality: String,
     neighborhood: String
   ): Anon_AdminDistrict = {
-    val __obj = js.Dynamic.literal(adminDistrict = adminDistrict, adminDistrict2 = adminDistrict2, countryRegion = countryRegion, formattedAddress = formattedAddress, landmark = landmark, locality = locality, neighborhood = neighborhood)
+    val __obj = js.Dynamic.literal(adminDistrict = adminDistrict.asInstanceOf[js.Any], adminDistrict2 = adminDistrict2.asInstanceOf[js.Any], countryRegion = countryRegion.asInstanceOf[js.Any], formattedAddress = formattedAddress.asInstanceOf[js.Any], landmark = landmark.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], neighborhood = neighborhood.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdminDistrict]
   }

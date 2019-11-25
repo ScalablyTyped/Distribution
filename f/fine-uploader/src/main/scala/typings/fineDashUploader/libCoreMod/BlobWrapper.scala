@@ -20,8 +20,8 @@ object BlobWrapper {
   @scala.inline
   def apply(blob: Blob = null, name: String = null): BlobWrapper = {
     val __obj = js.Dynamic.literal()
-    if (blob != null) __obj.updateDynamic("blob")(blob)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (blob != null) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlobWrapper]
   }
 }

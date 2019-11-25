@@ -13,7 +13,7 @@ trait Anon_QuotaBytes extends js.Object {
 object Anon_QuotaBytes {
   @scala.inline
   def apply(quotaBytes: integer, usageBytes: integer): Anon_QuotaBytes = {
-    val __obj = js.Dynamic.literal(quotaBytes = quotaBytes, usageBytes = usageBytes)
+    val __obj = js.Dynamic.literal(quotaBytes = quotaBytes.asInstanceOf[js.Any], usageBytes = usageBytes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QuotaBytes]
   }

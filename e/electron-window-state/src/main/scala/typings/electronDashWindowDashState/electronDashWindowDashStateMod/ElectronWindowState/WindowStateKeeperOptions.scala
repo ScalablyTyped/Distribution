@@ -47,10 +47,10 @@ object WindowStateKeeperOptions {
     val __obj = js.Dynamic.literal()
     if (defaultHeight != null) __obj.updateDynamic("defaultHeight")(defaultHeight.asInstanceOf[js.Any])
     if (defaultWidth != null) __obj.updateDynamic("defaultWidth")(defaultWidth.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen)
-    if (!js.isUndefined(maximize)) __obj.updateDynamic("maximize")(maximize)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximize)) __obj.updateDynamic("maximize")(maximize.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowStateKeeperOptions]
   }
 }

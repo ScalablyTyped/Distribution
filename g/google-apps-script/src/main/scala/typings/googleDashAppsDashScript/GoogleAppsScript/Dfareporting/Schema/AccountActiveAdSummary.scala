@@ -22,11 +22,11 @@ object AccountActiveAdSummary {
     kind: String = null
   ): AccountActiveAdSummary = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (activeAds != null) __obj.updateDynamic("activeAds")(activeAds)
-    if (activeAdsLimitTier != null) __obj.updateDynamic("activeAdsLimitTier")(activeAdsLimitTier)
-    if (availableAds != null) __obj.updateDynamic("availableAds")(availableAds)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (activeAds != null) __obj.updateDynamic("activeAds")(activeAds.asInstanceOf[js.Any])
+    if (activeAdsLimitTier != null) __obj.updateDynamic("activeAdsLimitTier")(activeAdsLimitTier.asInstanceOf[js.Any])
+    if (availableAds != null) __obj.updateDynamic("availableAds")(availableAds.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountActiveAdSummary]
   }
 }

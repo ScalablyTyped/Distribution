@@ -21,8 +21,8 @@ object CompiledResult {
     tips: js.Array[ErrorType],
     ast: ASTElement = null
   ): CompiledResult[ErrorType] = {
-    val __obj = js.Dynamic.literal(errors = errors, render = render, staticRenderFns = staticRenderFns, tips = tips)
-    if (ast != null) __obj.updateDynamic("ast")(ast)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], staticRenderFns = staticRenderFns.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
+    if (ast != null) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompiledResult[ErrorType]]
   }
 }

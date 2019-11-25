@@ -15,8 +15,8 @@ object Anon_ByteCount {
   @scala.inline
   def apply(byteCount: String = null, url: String = null): Anon_ByteCount = {
     val __obj = js.Dynamic.literal()
-    if (byteCount != null) __obj.updateDynamic("byteCount")(byteCount)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (byteCount != null) __obj.updateDynamic("byteCount")(byteCount.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ByteCount]
   }
 }

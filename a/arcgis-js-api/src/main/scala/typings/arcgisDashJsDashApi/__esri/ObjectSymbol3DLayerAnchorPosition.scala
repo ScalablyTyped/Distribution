@@ -37,7 +37,7 @@ object ObjectSymbol3DLayerAnchorPosition {
     y: Double,
     z: Double
   ): ObjectSymbol3DLayerAnchorPosition = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), x = x, y = y, z = z)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectSymbol3DLayerAnchorPosition]
   }

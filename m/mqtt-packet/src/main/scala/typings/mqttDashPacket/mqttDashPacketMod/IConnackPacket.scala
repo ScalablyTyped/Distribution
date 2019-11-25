@@ -26,10 +26,10 @@ object IConnackPacket {
     messageId: Int | Double = null,
     properties: Anon_AssignedClientIdentifier = null
   ): IConnackPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd, returnCode = returnCode, sessionPresent = sessionPresent)
+    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], returnCode = returnCode.asInstanceOf[js.Any], sessionPresent = sessionPresent.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnackPacket]
   }
 }

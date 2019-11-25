@@ -66,8 +66,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
-    if (!js.isUndefined(ignoreSymbols)) __obj.updateDynamic("ignoreSymbols")(ignoreSymbols)
-    if (!js.isUndefined(isShallow)) __obj.updateDynamic("isShallow")(isShallow)
+    if (!js.isUndefined(ignoreSymbols)) __obj.updateDynamic("ignoreSymbols")(ignoreSymbols.asInstanceOf[js.Any])
+    if (!js.isUndefined(isShallow)) __obj.updateDynamic("isShallow")(isShallow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

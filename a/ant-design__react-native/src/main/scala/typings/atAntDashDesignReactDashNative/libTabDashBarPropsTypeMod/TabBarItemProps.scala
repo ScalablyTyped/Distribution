@@ -23,11 +23,11 @@ object TabBarItemProps {
     selected: js.UndefOr[Boolean] = js.undefined,
     selectedIcon: TabBarIcon = null
   ): TabBarItemProps = {
-    val __obj = js.Dynamic.literal(title = title)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarItemProps]
   }

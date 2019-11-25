@@ -19,9 +19,9 @@ object Anon_IsOpen {
     visible: js.UndefOr[Boolean] = js.undefined
   ): Anon_IsOpen = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
-    if (tileLayer != null) __obj.updateDynamic("tileLayer")(tileLayer)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
+    if (tileLayer != null) __obj.updateDynamic("tileLayer")(tileLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsOpen]
   }
 }

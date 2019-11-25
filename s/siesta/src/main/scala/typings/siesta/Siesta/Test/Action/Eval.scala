@@ -16,8 +16,8 @@ object Eval {
   @scala.inline
   def apply(desc: String = null, options: js.Any = null): Eval = {
     val __obj = js.Dynamic.literal()
-    if (desc != null) __obj.updateDynamic("desc")(desc)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Eval]
   }
 }

@@ -12,7 +12,7 @@ object Anon_Page {
   @scala.inline
   def apply(page: js.Any = null): Anon_Page = {
     val __obj = js.Dynamic.literal()
-    if (page != null) __obj.updateDynamic("page")(page)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Page]
   }
 }

@@ -56,19 +56,19 @@ object NutritionOrderOralDiet {
     `type`: js.Array[CodeableConcept] = null
   ): NutritionOrderOralDiet = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_instruction != null) __obj.updateDynamic("_instruction")(_instruction)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (fluidConsistencyType != null) __obj.updateDynamic("fluidConsistencyType")(fluidConsistencyType)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (instruction != null) __obj.updateDynamic("instruction")(instruction)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (nutrient != null) __obj.updateDynamic("nutrient")(nutrient)
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
-    if (texture != null) __obj.updateDynamic("texture")(texture)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_instruction != null) __obj.updateDynamic("_instruction")(_instruction.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (fluidConsistencyType != null) __obj.updateDynamic("fluidConsistencyType")(fluidConsistencyType.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (instruction != null) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (nutrient != null) __obj.updateDynamic("nutrient")(nutrient.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (texture != null) __obj.updateDynamic("texture")(texture.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NutritionOrderOralDiet]
   }
 }

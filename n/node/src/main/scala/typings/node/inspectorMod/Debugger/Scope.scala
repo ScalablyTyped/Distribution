@@ -38,11 +38,11 @@ object Scope {
     startLocation: Location = null
   ): Scope = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
-    if (endLocation != null) __obj.updateDynamic("endLocation")(endLocation)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (startLocation != null) __obj.updateDynamic("startLocation")(startLocation)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (endLocation != null) __obj.updateDynamic("endLocation")(endLocation.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (startLocation != null) __obj.updateDynamic("startLocation")(startLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
 }

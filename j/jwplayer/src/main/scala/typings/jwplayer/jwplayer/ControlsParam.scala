@@ -11,7 +11,7 @@ trait ControlsParam extends js.Object {
 object ControlsParam {
   @scala.inline
   def apply(controls: Boolean): ControlsParam = {
-    val __obj = js.Dynamic.literal(controls = controls)
+    val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ControlsParam]
   }

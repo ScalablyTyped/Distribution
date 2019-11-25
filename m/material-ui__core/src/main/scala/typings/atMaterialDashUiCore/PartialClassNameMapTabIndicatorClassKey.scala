@@ -15,9 +15,9 @@ object PartialClassNameMapTabIndicatorClassKey {
   @scala.inline
   def apply(colorPrimary: String = null, colorSecondary: String = null, root: String = null): PartialClassNameMapTabIndicatorClassKey = {
     val __obj = js.Dynamic.literal()
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary)
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
+    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTabIndicatorClassKey]
   }
 }

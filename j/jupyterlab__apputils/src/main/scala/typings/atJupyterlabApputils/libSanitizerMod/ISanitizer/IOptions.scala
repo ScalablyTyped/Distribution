@@ -32,9 +32,9 @@ object IOptions {
     allowedTags: js.Array[String] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowedAttributes != null) __obj.updateDynamic("allowedAttributes")(allowedAttributes)
-    if (allowedStyles != null) __obj.updateDynamic("allowedStyles")(allowedStyles)
-    if (allowedTags != null) __obj.updateDynamic("allowedTags")(allowedTags)
+    if (allowedAttributes != null) __obj.updateDynamic("allowedAttributes")(allowedAttributes.asInstanceOf[js.Any])
+    if (allowedStyles != null) __obj.updateDynamic("allowedStyles")(allowedStyles.asInstanceOf[js.Any])
+    if (allowedTags != null) __obj.updateDynamic("allowedTags")(allowedTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

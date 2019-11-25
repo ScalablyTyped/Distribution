@@ -24,7 +24,7 @@ object MatrixLike {
     shape: js.Object,
     strides: js.Object
   ): MatrixLike = {
-    val __obj = js.Dynamic.literal(data = data, dtype = dtype, length = length, offset = offset, shape = shape, strides = strides)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], strides = strides.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MatrixLike]
   }

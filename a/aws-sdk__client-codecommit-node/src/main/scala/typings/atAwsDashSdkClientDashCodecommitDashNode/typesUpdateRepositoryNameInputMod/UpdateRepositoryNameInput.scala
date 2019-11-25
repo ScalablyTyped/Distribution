@@ -44,9 +44,9 @@ object UpdateRepositoryNameInput {
     $httpOptions: NodeHttpOptions = null,
     $maxRetries: Int | Double = null
   ): UpdateRepositoryNameInput = {
-    val __obj = js.Dynamic.literal(newName = newName, oldName = oldName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(newName = newName.asInstanceOf[js.Any], oldName = oldName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRepositoryNameInput]
   }

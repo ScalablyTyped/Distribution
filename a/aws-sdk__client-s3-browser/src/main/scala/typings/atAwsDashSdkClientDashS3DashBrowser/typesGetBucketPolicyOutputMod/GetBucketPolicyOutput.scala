@@ -19,8 +19,8 @@ trait GetBucketPolicyOutput
 object GetBucketPolicyOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Policy: String = null): GetBucketPolicyOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketPolicyOutput]
   }
 }

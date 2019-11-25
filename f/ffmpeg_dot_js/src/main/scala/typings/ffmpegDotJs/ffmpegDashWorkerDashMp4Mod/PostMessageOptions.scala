@@ -12,8 +12,8 @@ trait PostMessageOptions extends js.Object {
 object PostMessageOptions {
   @scala.inline
   def apply(arguments: js.Array[String], `type`: String): PostMessageOptions = {
-    val __obj = js.Dynamic.literal(arguments = arguments)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostMessageOptions]
   }
 }

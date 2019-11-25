@@ -22,7 +22,7 @@ trait ResolvedReflectiveProvider extends js.Object {
 object ResolvedReflectiveProvider {
   @scala.inline
   def apply(key: ReflectiveKey, multiProvider: Boolean, resolvedFactories: js.Array[ResolvedReflectiveFactory]): ResolvedReflectiveProvider = {
-    val __obj = js.Dynamic.literal(key = key, multiProvider = multiProvider, resolvedFactories = resolvedFactories)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], multiProvider = multiProvider.asInstanceOf[js.Any], resolvedFactories = resolvedFactories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResolvedReflectiveProvider]
   }

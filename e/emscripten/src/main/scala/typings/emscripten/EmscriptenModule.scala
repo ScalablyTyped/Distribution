@@ -6,7 +6,6 @@ import typings.emscripten.Emscripten.TypeCompatibleWithC
 import typings.emscripten.Emscripten.ValueType
 import typings.emscripten.Emscripten.WebAssemblyExports
 import typings.emscripten.Emscripten.WebAssemblyImports
-import typings.emscripten.WebAssembly.Module
 import typings.std.ArrayBuffer
 import typings.std.Float32Array
 import typings.std.Float64Array
@@ -52,13 +51,9 @@ trait EmscriptenModule extends js.Object {
   var logReadFiles: Boolean = js.native
   var noExitRuntime: Boolean = js.native
   var noInitialRun: Boolean = js.native
-  @JSName("onAbort")
-  var onAbort_Original: Fn_What = js.native
-  @JSName("onRuntimeInitialized")
-  var onRuntimeInitialized_Original: Fn_Void = js.native
-  var postRun: js.Array[Fn_Void] = js.native
-  var preInit: js.Array[Fn_Void] = js.native
-  var preRun: js.Array[Fn_Void] = js.native
+  var postRun: js.Array[js.Function0[Unit]] = js.native
+  var preInit: js.Array[js.Function0[Unit]] = js.native
+  var preRun: js.Array[js.Function0[Unit]] = js.native
   var preinitializedWebGLContext: WebGLRenderingContext = js.native
   var preloadedAudios: js.Any = js.native
   var preloadedImages: js.Any = js.native
@@ -107,7 +102,10 @@ trait EmscriptenModule extends js.Object {
   def getPreloadedPackage(remotePackageName: String, remotePackageSize: Double): ArrayBuffer = js.native
   def getValue(ptr: Double, `type`: String): Double = js.native
   def getValue(ptr: Double, `type`: String, noSafe: Boolean): Double = js.native
-  def instantiateWasm(imports: WebAssemblyImports, successCallback: js.Function1[/* module */ Module, Unit]): WebAssemblyExports = js.native
+  def instantiateWasm(
+    imports: WebAssemblyImports,
+    successCallback: js.Function1[/* module */ typings.emscripten.WebAssembly.Module, Unit]
+  ): WebAssemblyExports = js.native
   // Tools
   def intArrayFromString(stringy: String): js.Array[Double] = js.native
   def intArrayFromString(stringy: String, dontAddNull: Boolean): js.Array[Double] = js.native

@@ -14,7 +14,7 @@ trait Box extends js.Object {
 object Box {
   @scala.inline
   def apply(height: Double, width: Double, x: Double, y: Double): Box = {
-    val __obj = js.Dynamic.literal(height = height, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Box]
   }

@@ -13,7 +13,7 @@ trait CommentConfig extends js.Object {
 object CommentConfig {
   @scala.inline
   def apply(col: Double, comment: CommentObject, row: Double): CommentConfig = {
-    val __obj = js.Dynamic.literal(col = col, comment = comment, row = row)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommentConfig]
   }

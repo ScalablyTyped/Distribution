@@ -16,8 +16,8 @@ object DirectRepositoryRankedRecipientsResponseRankedRecipientsItem {
     user: DirectRepositoryRankedRecipientsResponseUser = null
   ): DirectRepositoryRankedRecipientsResponseRankedRecipientsItem = {
     val __obj = js.Dynamic.literal()
-    if (thread != null) __obj.updateDynamic("thread")(thread)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (thread != null) __obj.updateDynamic("thread")(thread.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectRepositoryRankedRecipientsResponseRankedRecipientsItem]
   }
 }

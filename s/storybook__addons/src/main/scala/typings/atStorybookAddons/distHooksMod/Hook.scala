@@ -13,9 +13,9 @@ trait Hook extends js.Object {
 object Hook {
   @scala.inline
   def apply(name: String, deps: js.Array[_] = null, memoizedState: js.Any = null): Hook = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (deps != null) __obj.updateDynamic("deps")(deps)
-    if (memoizedState != null) __obj.updateDynamic("memoizedState")(memoizedState)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
+    if (memoizedState != null) __obj.updateDynamic("memoizedState")(memoizedState.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hook]
   }
 }

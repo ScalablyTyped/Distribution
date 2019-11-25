@@ -39,19 +39,19 @@ object ITetherOptions {
     targetModifier: String = null,
     targetOffset: String = null
   ): ITetherOptions = {
-    val __obj = js.Dynamic.literal(attachment = attachment)
-    if (bodyElement != null) __obj.updateDynamic("bodyElement")(bodyElement)
-    if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any])
+    if (bodyElement != null) __obj.updateDynamic("bodyElement")(bodyElement.asInstanceOf[js.Any])
+    if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (optimizations != null) __obj.updateDynamic("optimizations")(optimizations)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (optimizations != null) __obj.updateDynamic("optimizations")(optimizations.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (targetAttachment != null) __obj.updateDynamic("targetAttachment")(targetAttachment)
-    if (targetModifier != null) __obj.updateDynamic("targetModifier")(targetModifier)
-    if (targetOffset != null) __obj.updateDynamic("targetOffset")(targetOffset)
+    if (targetAttachment != null) __obj.updateDynamic("targetAttachment")(targetAttachment.asInstanceOf[js.Any])
+    if (targetModifier != null) __obj.updateDynamic("targetModifier")(targetModifier.asInstanceOf[js.Any])
+    if (targetOffset != null) __obj.updateDynamic("targetOffset")(targetOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITetherOptions]
   }
 }

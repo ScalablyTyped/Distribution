@@ -12,7 +12,7 @@ object HasStatus {
   @scala.inline
   def apply(status: String = null): HasStatus = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasStatus]
   }
 }

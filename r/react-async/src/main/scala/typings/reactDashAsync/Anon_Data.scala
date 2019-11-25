@@ -41,13 +41,13 @@ object Anon_Data {
     startedAt: js.UndefOr[scala.Nothing] = js.undefined,
     value: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled, isInitial = isInitial, isLoading = isLoading, isPending = isPending, isRejected = isRejected, isResolved = isResolved, isSettled = isSettled, status = status)
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(finishedAt)) __obj.updateDynamic("finishedAt")(finishedAt)
-    if (!js.isUndefined(initialValue)) __obj.updateDynamic("initialValue")(initialValue)
-    if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isInitial = isInitial.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], isPending = isPending.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], isResolved = isResolved.asInstanceOf[js.Any], isSettled = isSettled.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(finishedAt)) __obj.updateDynamic("finishedAt")(finishedAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialValue)) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]
   }
 }

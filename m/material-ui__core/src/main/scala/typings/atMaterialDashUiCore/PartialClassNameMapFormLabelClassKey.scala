@@ -27,13 +27,13 @@ object PartialClassNameMapFormLabelClassKey {
     root: String = null
   ): PartialClassNameMapFormLabelClassKey = {
     val __obj = js.Dynamic.literal()
-    if (asterisk != null) __obj.updateDynamic("asterisk")(asterisk)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (filled != null) __obj.updateDynamic("filled")(filled)
-    if (focused != null) __obj.updateDynamic("focused")(focused)
-    if (required != null) __obj.updateDynamic("required")(required)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (asterisk != null) __obj.updateDynamic("asterisk")(asterisk.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (filled != null) __obj.updateDynamic("filled")(filled.asInstanceOf[js.Any])
+    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapFormLabelClassKey]
   }
 }

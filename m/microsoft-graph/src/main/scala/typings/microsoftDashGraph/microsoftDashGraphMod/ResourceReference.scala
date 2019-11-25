@@ -14,9 +14,9 @@ object ResourceReference {
   @scala.inline
   def apply(id: String = null, `type`: String = null, webUrl: String = null): ResourceReference = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceReference]
   }
 }

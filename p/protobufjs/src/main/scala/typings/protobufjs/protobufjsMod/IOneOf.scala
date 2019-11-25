@@ -15,8 +15,8 @@ trait IOneOf extends js.Object {
 object IOneOf {
   @scala.inline
   def apply(oneof: js.Array[String], options: StringDictionary[js.Any] = null): IOneOf = {
-    val __obj = js.Dynamic.literal(oneof = oneof)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(oneof = oneof.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOneOf]
   }
 }

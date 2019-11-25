@@ -68,15 +68,15 @@ object GoogleActionsV2Location {
     zipCode: String = null
   ): GoogleActionsV2Location = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (formattedAddress != null) __obj.updateDynamic("formattedAddress")(formattedAddress)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
-    if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress)
-    if (zipCode != null) __obj.updateDynamic("zipCode")(zipCode)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (formattedAddress != null) __obj.updateDynamic("formattedAddress")(formattedAddress.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId.asInstanceOf[js.Any])
+    if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress.asInstanceOf[js.Any])
+    if (zipCode != null) __obj.updateDynamic("zipCode")(zipCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2Location]
   }
 }

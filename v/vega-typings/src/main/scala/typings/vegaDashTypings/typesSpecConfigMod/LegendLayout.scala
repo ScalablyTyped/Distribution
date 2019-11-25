@@ -157,19 +157,19 @@ object LegendLayout {
   ): LegendLayout = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
-    if (`bottom-left` != null) __obj.updateDynamic("bottom-left")(`bottom-left`)
-    if (`bottom-right` != null) __obj.updateDynamic("bottom-right")(`bottom-right`)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (`bottom-left` != null) __obj.updateDynamic("bottom-left")(`bottom-left`.asInstanceOf[js.Any])
+    if (`bottom-right` != null) __obj.updateDynamic("bottom-right")(`bottom-right`.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right)
-    if (top != null) __obj.updateDynamic("top")(top)
-    if (`top-left` != null) __obj.updateDynamic("top-left")(`top-left`)
-    if (`top-right` != null) __obj.updateDynamic("top-right")(`top-right`)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`top-left` != null) __obj.updateDynamic("top-left")(`top-left`.asInstanceOf[js.Any])
+    if (`top-right` != null) __obj.updateDynamic("top-right")(`top-right`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendLayout]
   }
 }

@@ -22,16 +22,16 @@ object BaseReporter {
   @scala.inline
   def apply(
     _setError: Error => Unit,
-    getLastError: () => js.UndefOr[Error],
+    getLastError: () => Error | Unit,
     log: String => Unit,
     onRunComplete: (Set[Context], AggregatedResult) => js.Promise[Unit] | Unit,
-    onRunStart: (AggregatedResult, ReporterOnStartOptions) => Unit,
-    onTestResult: (Test, TestResult, AggregatedResult) => Unit,
-    onTestStart: Test => Unit,
+    onRunStart: (AggregatedResult, ReporterOnStartOptions) => js.Promise[Unit] | Unit,
+    onTestResult: (Test, TestResult, AggregatedResult) => js.Promise[Unit] | Unit,
+    onTestStart: Test => js.Promise[Unit] | Unit,
     _error: js.Any = null
   ): BaseReporter = {
     val __obj = js.Dynamic.literal(_setError = js.Any.fromFunction1(_setError), getLastError = js.Any.fromFunction0(getLastError), log = js.Any.fromFunction1(log), onRunComplete = js.Any.fromFunction2(onRunComplete), onRunStart = js.Any.fromFunction2(onRunStart), onTestResult = js.Any.fromFunction3(onTestResult), onTestStart = js.Any.fromFunction1(onTestStart))
-    if (_error != null) __obj.updateDynamic("_error")(_error)
+    if (_error != null) __obj.updateDynamic("_error")(_error.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseReporter]
   }
 }

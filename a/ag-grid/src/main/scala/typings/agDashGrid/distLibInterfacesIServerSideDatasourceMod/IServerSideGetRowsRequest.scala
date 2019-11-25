@@ -30,7 +30,7 @@ object IServerSideGetRowsRequest {
     startRow: Double,
     valueCols: js.Array[ColumnVO]
   ): IServerSideGetRowsRequest = {
-    val __obj = js.Dynamic.literal(endRow = endRow, filterModel = filterModel, groupKeys = groupKeys, pivotCols = pivotCols, pivotMode = pivotMode, rowGroupCols = rowGroupCols, sortModel = sortModel, startRow = startRow, valueCols = valueCols)
+    val __obj = js.Dynamic.literal(endRow = endRow.asInstanceOf[js.Any], filterModel = filterModel.asInstanceOf[js.Any], groupKeys = groupKeys.asInstanceOf[js.Any], pivotCols = pivotCols.asInstanceOf[js.Any], pivotMode = pivotMode.asInstanceOf[js.Any], rowGroupCols = rowGroupCols.asInstanceOf[js.Any], sortModel = sortModel.asInstanceOf[js.Any], startRow = startRow.asInstanceOf[js.Any], valueCols = valueCols.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IServerSideGetRowsRequest]
   }

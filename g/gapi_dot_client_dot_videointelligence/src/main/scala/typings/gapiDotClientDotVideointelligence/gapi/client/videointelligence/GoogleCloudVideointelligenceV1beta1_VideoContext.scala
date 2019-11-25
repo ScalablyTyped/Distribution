@@ -50,12 +50,12 @@ object GoogleCloudVideointelligenceV1beta1_VideoContext {
     stationaryCamera: js.UndefOr[Boolean] = js.undefined
   ): GoogleCloudVideointelligenceV1beta1_VideoContext = {
     val __obj = js.Dynamic.literal()
-    if (labelDetectionMode != null) __obj.updateDynamic("labelDetectionMode")(labelDetectionMode)
-    if (labelDetectionModel != null) __obj.updateDynamic("labelDetectionModel")(labelDetectionModel)
-    if (safeSearchDetectionModel != null) __obj.updateDynamic("safeSearchDetectionModel")(safeSearchDetectionModel)
-    if (segments != null) __obj.updateDynamic("segments")(segments)
-    if (shotChangeDetectionModel != null) __obj.updateDynamic("shotChangeDetectionModel")(shotChangeDetectionModel)
-    if (!js.isUndefined(stationaryCamera)) __obj.updateDynamic("stationaryCamera")(stationaryCamera)
+    if (labelDetectionMode != null) __obj.updateDynamic("labelDetectionMode")(labelDetectionMode.asInstanceOf[js.Any])
+    if (labelDetectionModel != null) __obj.updateDynamic("labelDetectionModel")(labelDetectionModel.asInstanceOf[js.Any])
+    if (safeSearchDetectionModel != null) __obj.updateDynamic("safeSearchDetectionModel")(safeSearchDetectionModel.asInstanceOf[js.Any])
+    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
+    if (shotChangeDetectionModel != null) __obj.updateDynamic("shotChangeDetectionModel")(shotChangeDetectionModel.asInstanceOf[js.Any])
+    if (!js.isUndefined(stationaryCamera)) __obj.updateDynamic("stationaryCamera")(stationaryCamera.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_VideoContext]
   }
 }

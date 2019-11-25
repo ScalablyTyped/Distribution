@@ -42,12 +42,12 @@ object Anon_Ariaactivedescendant {
     `aria-activedescendant`: String = null,
     value: String = null
   ): Anon_Ariaactivedescendant = {
-    val __obj = js.Dynamic.literal(autoComplete = autoComplete, disabled = disabled, onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role)
-    __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`)
-    __obj.updateDynamic("aria-expanded")(`aria-expanded`)
-    __obj.updateDynamic("type")(`type`)
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ariaactivedescendant]
   }
 }

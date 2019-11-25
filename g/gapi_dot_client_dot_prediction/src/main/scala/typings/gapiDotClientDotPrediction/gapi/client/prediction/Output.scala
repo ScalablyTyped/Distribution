@@ -31,12 +31,12 @@ object Output {
     selfLink: String = null
   ): Output = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (outputLabel != null) __obj.updateDynamic("outputLabel")(outputLabel)
-    if (outputMulti != null) __obj.updateDynamic("outputMulti")(outputMulti)
-    if (outputValue != null) __obj.updateDynamic("outputValue")(outputValue)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (outputLabel != null) __obj.updateDynamic("outputLabel")(outputLabel.asInstanceOf[js.Any])
+    if (outputMulti != null) __obj.updateDynamic("outputMulti")(outputMulti.asInstanceOf[js.Any])
+    if (outputValue != null) __obj.updateDynamic("outputValue")(outputValue.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
 }

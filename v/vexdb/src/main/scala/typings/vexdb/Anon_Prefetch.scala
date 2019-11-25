@@ -12,7 +12,7 @@ object Anon_Prefetch {
   @scala.inline
   def apply(prefetch: js.UndefOr[Boolean] = js.undefined): Anon_Prefetch = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(prefetch)) __obj.updateDynamic("prefetch")(prefetch)
+    if (!js.isUndefined(prefetch)) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Prefetch]
   }
 }

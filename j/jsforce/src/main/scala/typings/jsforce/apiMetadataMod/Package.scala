@@ -33,15 +33,15 @@ object Package {
     setupWeblink: String = null,
     uninstallClass: String = null
   ): Package = {
-    val __obj = js.Dynamic.literal(types = types, version = version)
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (apiAccessLevel != null) __obj.updateDynamic("apiAccessLevel")(apiAccessLevel.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
-    if (namespacePrefix != null) __obj.updateDynamic("namespacePrefix")(namespacePrefix)
-    if (objectPermissions != null) __obj.updateDynamic("objectPermissions")(objectPermissions)
-    if (postInstallClass != null) __obj.updateDynamic("postInstallClass")(postInstallClass)
-    if (setupWeblink != null) __obj.updateDynamic("setupWeblink")(setupWeblink)
-    if (uninstallClass != null) __obj.updateDynamic("uninstallClass")(uninstallClass)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
+    if (namespacePrefix != null) __obj.updateDynamic("namespacePrefix")(namespacePrefix.asInstanceOf[js.Any])
+    if (objectPermissions != null) __obj.updateDynamic("objectPermissions")(objectPermissions.asInstanceOf[js.Any])
+    if (postInstallClass != null) __obj.updateDynamic("postInstallClass")(postInstallClass.asInstanceOf[js.Any])
+    if (setupWeblink != null) __obj.updateDynamic("setupWeblink")(setupWeblink.asInstanceOf[js.Any])
+    if (uninstallClass != null) __obj.updateDynamic("uninstallClass")(uninstallClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Package]
   }
 }

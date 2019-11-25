@@ -12,8 +12,8 @@ trait Anon_IncludeSelfParentFirstBoolean extends js.Object {
 object Anon_IncludeSelfParentFirstBoolean {
   @scala.inline
   def apply(includeSelf: Boolean, parentFirst: js.UndefOr[Boolean] = js.undefined): Anon_IncludeSelfParentFirstBoolean = {
-    val __obj = js.Dynamic.literal(includeSelf = includeSelf)
-    if (!js.isUndefined(parentFirst)) __obj.updateDynamic("parentFirst")(parentFirst)
+    val __obj = js.Dynamic.literal(includeSelf = includeSelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(parentFirst)) __obj.updateDynamic("parentFirst")(parentFirst.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeSelfParentFirstBoolean]
   }
 }

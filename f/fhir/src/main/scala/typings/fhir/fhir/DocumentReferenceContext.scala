@@ -56,19 +56,19 @@ object DocumentReferenceContext {
     sourcePatientInfo: Reference = null
   ): DocumentReferenceContext = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (encounter != null) __obj.updateDynamic("encounter")(encounter)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (facilityType != null) __obj.updateDynamic("facilityType")(facilityType)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (period != null) __obj.updateDynamic("period")(period)
-    if (practiceSetting != null) __obj.updateDynamic("practiceSetting")(practiceSetting)
-    if (related != null) __obj.updateDynamic("related")(related)
-    if (sourcePatientInfo != null) __obj.updateDynamic("sourcePatientInfo")(sourcePatientInfo)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (encounter != null) __obj.updateDynamic("encounter")(encounter.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (facilityType != null) __obj.updateDynamic("facilityType")(facilityType.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (practiceSetting != null) __obj.updateDynamic("practiceSetting")(practiceSetting.asInstanceOf[js.Any])
+    if (related != null) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
+    if (sourcePatientInfo != null) __obj.updateDynamic("sourcePatientInfo")(sourcePatientInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentReferenceContext]
   }
 }

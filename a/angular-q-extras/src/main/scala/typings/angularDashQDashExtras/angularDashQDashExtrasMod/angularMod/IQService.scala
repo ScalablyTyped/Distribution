@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IQService extends js.Object {
   def allSettled[T](
-    promises: /* import warning: ImportType.apply c Unsupported type mapping: 
+    promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K] | angular.angular.IPromise<T[K]>}
     */ typings.angularDashQDashExtras.angularDashQDashExtrasStrings.IQService with js.Any
   ): IPromise[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: angular-q-extras.angular-q-extras.angular.PromiseValue<T[K]>}
     */ typings.angularDashQDashExtras.angularDashQDashExtrasStrings.IQService with T
   ] = js.native

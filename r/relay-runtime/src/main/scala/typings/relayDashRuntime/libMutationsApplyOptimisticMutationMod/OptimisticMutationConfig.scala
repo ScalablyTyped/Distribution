@@ -26,9 +26,9 @@ object OptimisticMutationConfig {
     optimisticResponse: js.Object = null,
     optimisticUpdater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null
   ): OptimisticMutationConfig = {
-    val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any], variables = variables)
-    if (configs != null) __obj.updateDynamic("configs")(configs)
-    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse)
+    val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    if (configs != null) __obj.updateDynamic("configs")(configs.asInstanceOf[js.Any])
+    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (optimisticUpdater != null) __obj.updateDynamic("optimisticUpdater")(js.Any.fromFunction2(optimisticUpdater))
     __obj.asInstanceOf[OptimisticMutationConfig]
   }

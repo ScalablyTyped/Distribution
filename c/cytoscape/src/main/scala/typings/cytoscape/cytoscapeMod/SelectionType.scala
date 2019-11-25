@@ -18,3 +18,12 @@ import scala.scalajs.js.annotation._
 */
 trait SelectionType extends js.Object
 
+object SelectionType {
+  @scala.inline
+  def additive: typings.cytoscape.cytoscapeStrings.additive = this.cast("additive")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def single: typings.cytoscape.cytoscapeStrings.single = this.cast("single")
+}
+

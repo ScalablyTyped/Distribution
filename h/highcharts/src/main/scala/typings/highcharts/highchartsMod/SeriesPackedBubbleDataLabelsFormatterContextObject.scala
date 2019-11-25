@@ -27,7 +27,7 @@ object SeriesPackedBubbleDataLabelsFormatterContextObject {
     total: Int | Double = null,
     y: Int | Double = null
   ): SeriesPackedBubbleDataLabelsFormatterContextObject = {
-    val __obj = js.Dynamic.literal(color = color, key = key, point = point, series = series, x = x)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

@@ -55,19 +55,19 @@ object ProvenanceEntity {
     whatReference: Reference = null,
     whatUri: uri = null
   ): ProvenanceEntity = {
-    val __obj = js.Dynamic.literal(role = role)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_role != null) __obj.updateDynamic("_role")(_role)
-    if (_whatUri != null) __obj.updateDynamic("_whatUri")(_whatUri)
-    if (agent != null) __obj.updateDynamic("agent")(agent)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (whatIdentifier != null) __obj.updateDynamic("whatIdentifier")(whatIdentifier)
-    if (whatReference != null) __obj.updateDynamic("whatReference")(whatReference)
-    if (whatUri != null) __obj.updateDynamic("whatUri")(whatUri)
+    val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_role != null) __obj.updateDynamic("_role")(_role.asInstanceOf[js.Any])
+    if (_whatUri != null) __obj.updateDynamic("_whatUri")(_whatUri.asInstanceOf[js.Any])
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (whatIdentifier != null) __obj.updateDynamic("whatIdentifier")(whatIdentifier.asInstanceOf[js.Any])
+    if (whatReference != null) __obj.updateDynamic("whatReference")(whatReference.asInstanceOf[js.Any])
+    if (whatUri != null) __obj.updateDynamic("whatUri")(whatUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvenanceEntity]
   }
 }

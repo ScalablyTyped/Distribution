@@ -31,8 +31,8 @@ trait arrow extends js.Object {
 object arrow {
   @scala.inline
   def apply(borderWidth: Double, closePath: Boolean, points: js.Array[_], `type`: String): arrow = {
-    val __obj = js.Dynamic.literal(borderWidth = borderWidth, closePath = closePath, points = points)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(borderWidth = borderWidth.asInstanceOf[js.Any], closePath = closePath.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[arrow]
   }
 }

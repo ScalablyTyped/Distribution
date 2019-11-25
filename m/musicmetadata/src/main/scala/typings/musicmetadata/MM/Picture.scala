@@ -13,7 +13,7 @@ trait Picture extends js.Object {
 object Picture {
   @scala.inline
   def apply(data: Buffer, format: String): Picture = {
-    val __obj = js.Dynamic.literal(data = data, format = format)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Picture]
   }

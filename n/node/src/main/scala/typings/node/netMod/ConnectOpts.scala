@@ -17,7 +17,7 @@ object ConnectOpts {
   @scala.inline
   def apply(onread: OnReadOpts = null): ConnectOpts = {
     val __obj = js.Dynamic.literal()
-    if (onread != null) __obj.updateDynamic("onread")(onread)
+    if (onread != null) __obj.updateDynamic("onread")(onread.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOpts]
   }
 }

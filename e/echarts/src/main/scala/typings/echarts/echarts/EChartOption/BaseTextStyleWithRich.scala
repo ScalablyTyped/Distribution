@@ -12,7 +12,7 @@ object BaseTextStyleWithRich {
   @scala.inline
   def apply(rich: RichStyle = null): BaseTextStyleWithRich = {
     val __obj = js.Dynamic.literal()
-    if (rich != null) __obj.updateDynamic("rich")(rich)
+    if (rich != null) __obj.updateDynamic("rich")(rich.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseTextStyleWithRich]
   }
 }

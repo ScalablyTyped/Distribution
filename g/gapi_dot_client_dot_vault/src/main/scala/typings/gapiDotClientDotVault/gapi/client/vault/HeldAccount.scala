@@ -18,8 +18,8 @@ object HeldAccount {
   @scala.inline
   def apply(accountId: String = null, holdTime: String = null): HeldAccount = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (holdTime != null) __obj.updateDynamic("holdTime")(holdTime)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (holdTime != null) __obj.updateDynamic("holdTime")(holdTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeldAccount]
   }
 }

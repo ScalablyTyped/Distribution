@@ -14,7 +14,7 @@ trait ValidationResult extends js.Object {
 object ValidationResult {
   @scala.inline
   def apply(error: ValidationError, errors: ValidationError, value: js.Any, warning: ValidationError): ValidationResult = {
-    val __obj = js.Dynamic.literal(error = error, errors = errors, value = value, warning = warning)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ValidationResult]
   }

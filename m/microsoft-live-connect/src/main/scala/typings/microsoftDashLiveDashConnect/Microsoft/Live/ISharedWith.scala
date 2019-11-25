@@ -26,7 +26,7 @@ trait ISharedWith extends js.Object {
 object ISharedWith {
   @scala.inline
   def apply(access: String): ISharedWith = {
-    val __obj = js.Dynamic.literal(access = access)
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISharedWith]
   }

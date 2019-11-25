@@ -24,8 +24,8 @@ object CertificateInfo {
   @scala.inline
   def apply(certificate: ArrayBuffer = null, supportedHashes: js.Array[Hash] = null): CertificateInfo = {
     val __obj = js.Dynamic.literal()
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate)
-    if (supportedHashes != null) __obj.updateDynamic("supportedHashes")(supportedHashes)
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (supportedHashes != null) __obj.updateDynamic("supportedHashes")(supportedHashes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateInfo]
   }
 }

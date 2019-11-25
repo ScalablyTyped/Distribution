@@ -32,12 +32,12 @@ object GooglePrivacyDlpV2beta1TransformationSummary {
     transformation: GooglePrivacyDlpV2beta1PrimitiveTransformation = null
   ): GooglePrivacyDlpV2beta1TransformationSummary = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (fieldTransformations != null) __obj.updateDynamic("fieldTransformations")(fieldTransformations)
-    if (infoType != null) __obj.updateDynamic("infoType")(infoType)
-    if (recordSuppress != null) __obj.updateDynamic("recordSuppress")(recordSuppress)
-    if (results != null) __obj.updateDynamic("results")(results)
-    if (transformation != null) __obj.updateDynamic("transformation")(transformation)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (fieldTransformations != null) __obj.updateDynamic("fieldTransformations")(fieldTransformations.asInstanceOf[js.Any])
+    if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
+    if (recordSuppress != null) __obj.updateDynamic("recordSuppress")(recordSuppress.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (transformation != null) __obj.updateDynamic("transformation")(transformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1TransformationSummary]
   }
 }

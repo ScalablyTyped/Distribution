@@ -14,7 +14,7 @@ trait MediaStreamTrackEventMap extends js.Object {
 object MediaStreamTrackEventMap {
   @scala.inline
   def apply(ended: Event, isolationchange: Event, mute: Event, unmute: Event): MediaStreamTrackEventMap = {
-    val __obj = js.Dynamic.literal(ended = ended, isolationchange = isolationchange, mute = mute, unmute = unmute)
+    val __obj = js.Dynamic.literal(ended = ended.asInstanceOf[js.Any], isolationchange = isolationchange.asInstanceOf[js.Any], mute = mute.asInstanceOf[js.Any], unmute = unmute.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaStreamTrackEventMap]
   }

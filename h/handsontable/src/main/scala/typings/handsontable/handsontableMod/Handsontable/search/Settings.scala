@@ -23,7 +23,7 @@ object Settings {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction5(callback))
     if (queryMethod != null) __obj.updateDynamic("queryMethod")(js.Any.fromFunction3(queryMethod))
-    if (searchResultClass != null) __obj.updateDynamic("searchResultClass")(searchResultClass)
+    if (searchResultClass != null) __obj.updateDynamic("searchResultClass")(searchResultClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

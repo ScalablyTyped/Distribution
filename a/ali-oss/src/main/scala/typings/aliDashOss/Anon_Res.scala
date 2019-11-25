@@ -13,7 +13,7 @@ trait Anon_Res extends js.Object {
 object Anon_Res {
   @scala.inline
   def apply(res: NormalSuccessResponse, stream: js.Any): Anon_Res = {
-    val __obj = js.Dynamic.literal(res = res, stream = stream)
+    val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Res]
   }

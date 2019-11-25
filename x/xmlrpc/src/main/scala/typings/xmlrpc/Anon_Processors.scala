@@ -12,7 +12,7 @@ trait Anon_Processors extends js.Object {
 object Anon_Processors {
   @scala.inline
   def apply(processors: js.Array[HeadersProcessor]): Anon_Processors = {
-    val __obj = js.Dynamic.literal(processors = processors)
+    val __obj = js.Dynamic.literal(processors = processors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Processors]
   }

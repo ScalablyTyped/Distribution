@@ -43,7 +43,7 @@ trait FirebaseArrayIndexError extends js.Object {
 object FirebaseArrayIndexError {
   @scala.inline
   def apply(error: FirebaseError, index: Double): FirebaseArrayIndexError = {
-    val __obj = js.Dynamic.literal(error = error, index = index)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FirebaseArrayIndexError]
   }

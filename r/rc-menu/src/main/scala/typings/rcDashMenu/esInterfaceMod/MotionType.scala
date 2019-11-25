@@ -49,11 +49,11 @@ object MotionType {
     removeOnLeave: js.UndefOr[Boolean] = js.undefined
   ): MotionType = {
     val __obj = js.Dynamic.literal()
-    if (leavedClassName != null) __obj.updateDynamic("leavedClassName")(leavedClassName)
-    if (!js.isUndefined(motionAppear)) __obj.updateDynamic("motionAppear")(motionAppear)
-    if (!js.isUndefined(motionEnter)) __obj.updateDynamic("motionEnter")(motionEnter)
-    if (!js.isUndefined(motionLeave)) __obj.updateDynamic("motionLeave")(motionLeave)
-    if (!js.isUndefined(motionLeaveImmediately)) __obj.updateDynamic("motionLeaveImmediately")(motionLeaveImmediately)
+    if (leavedClassName != null) __obj.updateDynamic("leavedClassName")(leavedClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionAppear)) __obj.updateDynamic("motionAppear")(motionAppear.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionEnter)) __obj.updateDynamic("motionEnter")(motionEnter.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionLeave)) __obj.updateDynamic("motionLeave")(motionLeave.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionLeaveImmediately)) __obj.updateDynamic("motionLeaveImmediately")(motionLeaveImmediately.asInstanceOf[js.Any])
     if (motionName != null) __obj.updateDynamic("motionName")(motionName.asInstanceOf[js.Any])
     if (onAppearActive != null) __obj.updateDynamic("onAppearActive")(js.Any.fromFunction2(onAppearActive))
     if (onAppearEnd != null) __obj.updateDynamic("onAppearEnd")(js.Any.fromFunction2(onAppearEnd))
@@ -64,7 +64,7 @@ object MotionType {
     if (onLeaveActive != null) __obj.updateDynamic("onLeaveActive")(js.Any.fromFunction2(onLeaveActive))
     if (onLeaveEnd != null) __obj.updateDynamic("onLeaveEnd")(js.Any.fromFunction2(onLeaveEnd))
     if (onLeaveStart != null) __obj.updateDynamic("onLeaveStart")(js.Any.fromFunction2(onLeaveStart))
-    if (!js.isUndefined(removeOnLeave)) __obj.updateDynamic("removeOnLeave")(removeOnLeave)
+    if (!js.isUndefined(removeOnLeave)) __obj.updateDynamic("removeOnLeave")(removeOnLeave.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotionType]
   }
 }

@@ -50,13 +50,13 @@ object GoogleActionsV2AppRequest {
     user: GoogleActionsV2User = null
   ): GoogleActionsV2AppRequest = {
     val __obj = js.Dynamic.literal()
-    if (availableSurfaces != null) __obj.updateDynamic("availableSurfaces")(availableSurfaces)
-    if (conversation != null) __obj.updateDynamic("conversation")(conversation)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (!js.isUndefined(isInSandbox)) __obj.updateDynamic("isInSandbox")(isInSandbox)
-    if (surface != null) __obj.updateDynamic("surface")(surface)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (availableSurfaces != null) __obj.updateDynamic("availableSurfaces")(availableSurfaces.asInstanceOf[js.Any])
+    if (conversation != null) __obj.updateDynamic("conversation")(conversation.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInSandbox)) __obj.updateDynamic("isInSandbox")(isInSandbox.asInstanceOf[js.Any])
+    if (surface != null) __obj.updateDynamic("surface")(surface.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2AppRequest]
   }
 }

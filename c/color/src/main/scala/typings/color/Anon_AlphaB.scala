@@ -14,7 +14,7 @@ trait Anon_AlphaB extends js.Object {
 object Anon_AlphaB {
   @scala.inline
   def apply(b: Double, g: Double, r: Double, alpha: Int | Double = null): Anon_AlphaB = {
-    val __obj = js.Dynamic.literal(b = b, g = g, r = r)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlphaB]
   }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait InventoryAlertType extends js.Object
 
+object InventoryAlertType {
+  @scala.inline
+  def LOW_QUANTITY: typings.squareDashConnect.squareDashConnectStrings.LOW_QUANTITY = this.cast("LOW_QUANTITY")
+  @scala.inline
+  def NONE: typings.squareDashConnect.squareDashConnectStrings.NONE = this.cast("NONE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

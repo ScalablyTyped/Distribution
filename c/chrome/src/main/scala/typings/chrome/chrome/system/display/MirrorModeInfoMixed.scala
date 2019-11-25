@@ -16,9 +16,9 @@ trait MirrorModeInfoMixed extends MirrorModeInfo {
 object MirrorModeInfoMixed {
   @scala.inline
   def apply(mode: mixed, mirroringDestinationIds: js.Array[String] = null, mirroringSourceId: String = null): MirrorModeInfoMixed = {
-    val __obj = js.Dynamic.literal(mode = mode)
-    if (mirroringDestinationIds != null) __obj.updateDynamic("mirroringDestinationIds")(mirroringDestinationIds)
-    if (mirroringSourceId != null) __obj.updateDynamic("mirroringSourceId")(mirroringSourceId)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    if (mirroringDestinationIds != null) __obj.updateDynamic("mirroringDestinationIds")(mirroringDestinationIds.asInstanceOf[js.Any])
+    if (mirroringSourceId != null) __obj.updateDynamic("mirroringSourceId")(mirroringSourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MirrorModeInfoMixed]
   }
 }

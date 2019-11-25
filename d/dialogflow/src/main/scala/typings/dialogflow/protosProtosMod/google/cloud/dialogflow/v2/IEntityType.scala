@@ -34,12 +34,12 @@ object IEntityType {
     name: String = null
   ): IEntityType = {
     val __obj = js.Dynamic.literal()
-    if (autoExpansionMode != null) __obj.updateDynamic("autoExpansionMode")(autoExpansionMode)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(enableFuzzyExtraction)) __obj.updateDynamic("enableFuzzyExtraction")(enableFuzzyExtraction)
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (autoExpansionMode != null) __obj.updateDynamic("autoExpansionMode")(autoExpansionMode.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFuzzyExtraction)) __obj.updateDynamic("enableFuzzyExtraction")(enableFuzzyExtraction.asInstanceOf[js.Any])
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityType]
   }
 }

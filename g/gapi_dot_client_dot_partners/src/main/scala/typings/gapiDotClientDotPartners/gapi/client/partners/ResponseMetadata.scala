@@ -13,7 +13,7 @@ object ResponseMetadata {
   @scala.inline
   def apply(debugInfo: DebugInfo = null): ResponseMetadata = {
     val __obj = js.Dynamic.literal()
-    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo)
+    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseMetadata]
   }
 }

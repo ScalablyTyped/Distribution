@@ -31,13 +31,13 @@ object RefreshIndicatorProps {
     status: ready | loading | hide = null,
     style: CSSProperties = null
   ): RefreshIndicatorProps = {
-    val __obj = js.Dynamic.literal(left = left, top = top)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (loadingColor != null) __obj.updateDynamic("loadingColor")(loadingColor)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (loadingColor != null) __obj.updateDynamic("loadingColor")(loadingColor.asInstanceOf[js.Any])
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshIndicatorProps]
   }
 }

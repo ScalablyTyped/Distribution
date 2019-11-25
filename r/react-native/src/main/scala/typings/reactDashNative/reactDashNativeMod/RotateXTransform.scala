@@ -11,7 +11,7 @@ trait RotateXTransform extends js.Object {
 object RotateXTransform {
   @scala.inline
   def apply(rotateX: String): RotateXTransform = {
-    val __obj = js.Dynamic.literal(rotateX = rotateX)
+    val __obj = js.Dynamic.literal(rotateX = rotateX.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RotateXTransform]
   }

@@ -14,7 +14,7 @@ object ConfigItem {
   def apply(`type`: String | js.Array[String], default: js.Any = null): ConfigItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigItem]
   }
 }

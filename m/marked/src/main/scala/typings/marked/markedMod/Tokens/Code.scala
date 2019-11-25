@@ -17,10 +17,10 @@ trait Code extends Token {
 object Code {
   @scala.inline
   def apply(text: String, `type`: code, codeBlockStyle: indented = null, lang: String = null): Code = {
-    val __obj = js.Dynamic.literal(text = text)
-    __obj.updateDynamic("type")(`type`)
-    if (codeBlockStyle != null) __obj.updateDynamic("codeBlockStyle")(codeBlockStyle)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (codeBlockStyle != null) __obj.updateDynamic("codeBlockStyle")(codeBlockStyle.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     __obj.asInstanceOf[Code]
   }
 }

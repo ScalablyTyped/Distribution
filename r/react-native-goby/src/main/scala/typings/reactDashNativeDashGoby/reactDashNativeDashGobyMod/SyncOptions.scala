@@ -48,11 +48,11 @@ object SyncOptions {
     updateDialog: UpdateDialog = null
   ): SyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (deploymentKey != null) __obj.updateDynamic("deploymentKey")(deploymentKey)
-    if (installMode != null) __obj.updateDynamic("installMode")(installMode)
-    if (mandatoryInstallMode != null) __obj.updateDynamic("mandatoryInstallMode")(mandatoryInstallMode)
+    if (deploymentKey != null) __obj.updateDynamic("deploymentKey")(deploymentKey.asInstanceOf[js.Any])
+    if (installMode != null) __obj.updateDynamic("installMode")(installMode.asInstanceOf[js.Any])
+    if (mandatoryInstallMode != null) __obj.updateDynamic("mandatoryInstallMode")(mandatoryInstallMode.asInstanceOf[js.Any])
     if (minimumBackgroundDuration != null) __obj.updateDynamic("minimumBackgroundDuration")(minimumBackgroundDuration.asInstanceOf[js.Any])
-    if (updateDialog != null) __obj.updateDynamic("updateDialog")(updateDialog)
+    if (updateDialog != null) __obj.updateDynamic("updateDialog")(updateDialog.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncOptions]
   }
 }

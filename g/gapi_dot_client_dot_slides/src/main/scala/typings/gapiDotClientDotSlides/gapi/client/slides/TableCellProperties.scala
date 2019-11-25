@@ -16,7 +16,7 @@ object TableCellProperties {
   @scala.inline
   def apply(tableCellBackgroundFill: TableCellBackgroundFill = null): TableCellProperties = {
     val __obj = js.Dynamic.literal()
-    if (tableCellBackgroundFill != null) __obj.updateDynamic("tableCellBackgroundFill")(tableCellBackgroundFill)
+    if (tableCellBackgroundFill != null) __obj.updateDynamic("tableCellBackgroundFill")(tableCellBackgroundFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellProperties]
   }
 }

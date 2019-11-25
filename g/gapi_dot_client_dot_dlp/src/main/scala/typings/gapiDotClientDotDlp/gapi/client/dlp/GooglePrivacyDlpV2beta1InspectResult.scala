@@ -25,8 +25,8 @@ object GooglePrivacyDlpV2beta1InspectResult {
     findingsTruncated: js.UndefOr[Boolean] = js.undefined
   ): GooglePrivacyDlpV2beta1InspectResult = {
     val __obj = js.Dynamic.literal()
-    if (findings != null) __obj.updateDynamic("findings")(findings)
-    if (!js.isUndefined(findingsTruncated)) __obj.updateDynamic("findingsTruncated")(findingsTruncated)
+    if (findings != null) __obj.updateDynamic("findings")(findings.asInstanceOf[js.Any])
+    if (!js.isUndefined(findingsTruncated)) __obj.updateDynamic("findingsTruncated")(findingsTruncated.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectResult]
   }
 }

@@ -11,7 +11,7 @@ trait Translation extends js.Object {
 object Translation {
   @scala.inline
   def apply(transform: String): Translation = {
-    val __obj = js.Dynamic.literal(transform = transform)
+    val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Translation]
   }

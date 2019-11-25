@@ -13,7 +13,7 @@ trait Anon_Client extends js.Object {
 object Anon_Client {
   @scala.inline
   def apply(client: Validator[_], store: Validator[_]): Anon_Client = {
-    val __obj = js.Dynamic.literal(client = client, store = store)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Client]
   }

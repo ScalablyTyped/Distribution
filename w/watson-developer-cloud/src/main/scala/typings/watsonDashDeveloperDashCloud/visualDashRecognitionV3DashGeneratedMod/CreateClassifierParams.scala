@@ -32,11 +32,11 @@ object CreateClassifierParams {
     negative_examples_filename: String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): CreateClassifierParams = {
-    val __obj = js.Dynamic.literal(name = name, positive_examples = positive_examples)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], positive_examples = positive_examples.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (negative_examples != null) __obj.updateDynamic("negative_examples")(negative_examples.asInstanceOf[js.Any])
-    if (negative_examples_filename != null) __obj.updateDynamic("negative_examples_filename")(negative_examples_filename)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (negative_examples_filename != null) __obj.updateDynamic("negative_examples_filename")(negative_examples_filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClassifierParams]
   }
 }

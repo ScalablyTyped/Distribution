@@ -80,12 +80,12 @@ object ItemOptions {
     lat: Int | Double = null,
     long: Int | Double = null
   ): ItemOptions = {
-    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], description = description, title = title, url = url)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (custom_elements != null) __obj.updateDynamic("custom_elements")(custom_elements)
-    if (enclosure != null) __obj.updateDynamic("enclosure")(enclosure)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (custom_elements != null) __obj.updateDynamic("custom_elements")(custom_elements.asInstanceOf[js.Any])
+    if (enclosure != null) __obj.updateDynamic("enclosure")(enclosure.asInstanceOf[js.Any])
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
     if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
     if (long != null) __obj.updateDynamic("long")(long.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemOptions]

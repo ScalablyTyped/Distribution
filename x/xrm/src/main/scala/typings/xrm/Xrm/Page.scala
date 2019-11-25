@@ -2,6 +2,8 @@ package typings.xrm.Xrm
 
 import typings.xrm.Xrm.Controls.ProcessControl
 import typings.xrm.Xrm.Controls.QuickFormControl
+import typings.xrm.Xrm.Page.AutoLookupControl
+import typings.xrm.Xrm.Page.StandardControl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -249,7 +251,7 @@ object Page extends js.Object {
     * @see {@link StandardControl}
     * @deprecated Use {@link Xrm.Controls.DateControl} instead.
     */
-  type DateControl = typings.xrm.Xrm.Controls.StandardControl
+  type DateControl = StandardControl
   /**
     * Interface for the form's record context, Xrm.Page.data.entity
     * @deprecated Use {@link Xrm.Entity} instead.
@@ -347,7 +349,7 @@ object Page extends js.Object {
     * @see {@link StandardControl}
     * @deprecated Use {@link Xrm.Controls.NumberControl} instead.
     */
-  type NumberControl = typings.xrm.Xrm.Controls.AutoLookupControl
+  type NumberControl = AutoLookupControl
   /**
     * Interface an OptionSet attribute.
     * @see {@link EnumAttribute}

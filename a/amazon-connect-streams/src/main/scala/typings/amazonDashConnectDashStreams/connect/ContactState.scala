@@ -19,8 +19,8 @@ trait ContactState extends js.Object {
 object ContactState {
   @scala.inline
   def apply(duration: Double, `type`: String): ContactState = {
-    val __obj = js.Dynamic.literal(duration = duration)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactState]
   }
 }

@@ -58,7 +58,7 @@ object ChangeRule {
     propertyIsEnumerable: PropertyKey => Boolean,
     summarize: Boolean
   ): ChangeRule = {
-    val __obj = js.Dynamic.literal(constructor = constructor, description = description, evaluators = evaluators, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, notifier = notifier, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), summarize = summarize)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], evaluators = evaluators.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notifier = notifier.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), summarize = summarize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangeRule]
   }

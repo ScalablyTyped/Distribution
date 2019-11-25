@@ -17,14 +17,12 @@ object PaginationItemProps {
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[PaginationItem] = null,
     ClassAttributes: ClassAttributes[PaginationItem] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined
+    active: js.UndefOr[Boolean] = js.undefined
   ): PaginationItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationItemProps]
   }
 }

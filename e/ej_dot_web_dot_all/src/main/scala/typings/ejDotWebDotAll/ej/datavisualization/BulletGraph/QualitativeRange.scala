@@ -25,7 +25,7 @@ object QualitativeRange {
     val __obj = js.Dynamic.literal()
     if (rangeEnd != null) __obj.updateDynamic("rangeEnd")(rangeEnd.asInstanceOf[js.Any])
     if (rangeOpacity != null) __obj.updateDynamic("rangeOpacity")(rangeOpacity.asInstanceOf[js.Any])
-    if (rangeStroke != null) __obj.updateDynamic("rangeStroke")(rangeStroke)
+    if (rangeStroke != null) __obj.updateDynamic("rangeStroke")(rangeStroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[QualitativeRange]
   }
 }

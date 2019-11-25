@@ -13,7 +13,7 @@ trait Anon_Form extends js.Object {
 object Anon_Form {
   @scala.inline
   def apply(form: FormikProps[_], name: String): Anon_Form = {
-    val __obj = js.Dynamic.literal(form = form, name = name)
+    val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Form]
   }

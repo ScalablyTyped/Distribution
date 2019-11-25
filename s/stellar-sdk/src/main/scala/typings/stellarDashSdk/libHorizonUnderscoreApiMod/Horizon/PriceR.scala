@@ -12,7 +12,7 @@ trait PriceR extends js.Object {
 object PriceR {
   @scala.inline
   def apply(denominator: Double, numerator: Double): PriceR = {
-    val __obj = js.Dynamic.literal(denominator = denominator, numerator = numerator)
+    val __obj = js.Dynamic.literal(denominator = denominator.asInstanceOf[js.Any], numerator = numerator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PriceR]
   }

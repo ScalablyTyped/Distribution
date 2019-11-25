@@ -21,7 +21,7 @@ object InternalHasteMap {
     map: ModuleMapData,
     mocks: MockData
   ): InternalHasteMap = {
-    val __obj = js.Dynamic.literal(clocks = clocks, duplicates = duplicates, files = files, map = map, mocks = mocks)
+    val __obj = js.Dynamic.literal(clocks = clocks.asInstanceOf[js.Any], duplicates = duplicates.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mocks = mocks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InternalHasteMap]
   }

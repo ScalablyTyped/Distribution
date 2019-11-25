@@ -39,9 +39,9 @@ object Profile {
     samples: js.Array[Double] = null,
     timeDeltas: js.Array[Double] = null
   ): Profile = {
-    val __obj = js.Dynamic.literal(endTime = endTime, nodes = nodes, startTime = startTime)
-    if (samples != null) __obj.updateDynamic("samples")(samples)
-    if (timeDeltas != null) __obj.updateDynamic("timeDeltas")(timeDeltas)
+    val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+    if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
+    if (timeDeltas != null) __obj.updateDynamic("timeDeltas")(timeDeltas.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

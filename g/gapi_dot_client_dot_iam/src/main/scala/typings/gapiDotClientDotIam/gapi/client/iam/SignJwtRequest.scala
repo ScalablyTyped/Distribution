@@ -13,7 +13,7 @@ object SignJwtRequest {
   @scala.inline
   def apply(payload: String = null): SignJwtRequest = {
     val __obj = js.Dynamic.literal()
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignJwtRequest]
   }
 }

@@ -13,7 +13,7 @@ trait RemoveOperation extends Operation {
 object RemoveOperation {
   @scala.inline
   def apply(op: remove, path: String): RemoveOperation = {
-    val __obj = js.Dynamic.literal(op = op, path = path)
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RemoveOperation]
   }

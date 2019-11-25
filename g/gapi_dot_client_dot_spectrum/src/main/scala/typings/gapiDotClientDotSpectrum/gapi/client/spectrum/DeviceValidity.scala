@@ -24,9 +24,9 @@ object DeviceValidity {
     reason: String = null
   ): DeviceValidity = {
     val __obj = js.Dynamic.literal()
-    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc.asInstanceOf[js.Any])
+    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceValidity]
   }
 }

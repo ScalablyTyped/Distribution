@@ -36,11 +36,11 @@ object FeatureRestrictions {
     voiceInputEnabled: js.UndefOr[Boolean] = js.undefined
   ): FeatureRestrictions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCompleteEnabled)) __obj.updateDynamic("autoCompleteEnabled")(autoCompleteEnabled)
-    if (!js.isUndefined(autoCorrectEnabled)) __obj.updateDynamic("autoCorrectEnabled")(autoCorrectEnabled)
-    if (!js.isUndefined(handwritingEnabled)) __obj.updateDynamic("handwritingEnabled")(handwritingEnabled)
-    if (!js.isUndefined(spellCheckEnabled)) __obj.updateDynamic("spellCheckEnabled")(spellCheckEnabled)
-    if (!js.isUndefined(voiceInputEnabled)) __obj.updateDynamic("voiceInputEnabled")(voiceInputEnabled)
+    if (!js.isUndefined(autoCompleteEnabled)) __obj.updateDynamic("autoCompleteEnabled")(autoCompleteEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCorrectEnabled)) __obj.updateDynamic("autoCorrectEnabled")(autoCorrectEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(handwritingEnabled)) __obj.updateDynamic("handwritingEnabled")(handwritingEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheckEnabled)) __obj.updateDynamic("spellCheckEnabled")(spellCheckEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(voiceInputEnabled)) __obj.updateDynamic("voiceInputEnabled")(voiceInputEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureRestrictions]
   }
 }

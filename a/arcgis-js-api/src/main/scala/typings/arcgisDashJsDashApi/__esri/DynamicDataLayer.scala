@@ -37,8 +37,8 @@ object DynamicDataLayer {
     propertyIsEnumerable: PropertyKey => Boolean,
     `type`: String
   ): DynamicDataLayer = {
-    val __obj = js.Dynamic.literal(constructor = constructor, dataSource = dataSource.asInstanceOf[js.Any], fields = fields, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicDataLayer]
   }
 }

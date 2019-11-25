@@ -13,8 +13,8 @@ object PointStyle {
   @scala.inline
   def apply(iconName: String = null, iconStyler: StyleFunction = null): PointStyle = {
     val __obj = js.Dynamic.literal()
-    if (iconName != null) __obj.updateDynamic("iconName")(iconName)
-    if (iconStyler != null) __obj.updateDynamic("iconStyler")(iconStyler)
+    if (iconName != null) __obj.updateDynamic("iconName")(iconName.asInstanceOf[js.Any])
+    if (iconStyler != null) __obj.updateDynamic("iconStyler")(iconStyler.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointStyle]
   }
 }

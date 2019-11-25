@@ -30,10 +30,10 @@ object Options {
     loop: Boolean | Double = null,
     rendererSettings: Anon_ClassName = null
   ): Options = {
-    val __obj = js.Dynamic.literal(animationData = animationData)
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    val __obj = js.Dynamic.literal(animationData = animationData.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (rendererSettings != null) __obj.updateDynamic("rendererSettings")(rendererSettings)
+    if (rendererSettings != null) __obj.updateDynamic("rendererSettings")(rendererSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

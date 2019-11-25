@@ -51,15 +51,15 @@ object CreateTransmission {
     substitution_data: js.Any = null
   ): CreateTransmission = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
-    if (campaign_id != null) __obj.updateDynamic("campaign_id")(campaign_id)
-    if (cc != null) __obj.updateDynamic("cc")(cc)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (campaign_id != null) __obj.updateDynamic("campaign_id")(campaign_id.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
-    if (return_path != null) __obj.updateDynamic("return_path")(return_path)
-    if (substitution_data != null) __obj.updateDynamic("substitution_data")(substitution_data)
+    if (return_path != null) __obj.updateDynamic("return_path")(return_path.asInstanceOf[js.Any])
+    if (substitution_data != null) __obj.updateDynamic("substitution_data")(substitution_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTransmission]
   }
 }

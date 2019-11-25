@@ -24,11 +24,11 @@ object Result {
     keywords: js.Array[String] = null,
     maintainers: js.Array[Maintainer] = null
   ): Result = {
-    val __obj = js.Dynamic.literal(name = name, version = version)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

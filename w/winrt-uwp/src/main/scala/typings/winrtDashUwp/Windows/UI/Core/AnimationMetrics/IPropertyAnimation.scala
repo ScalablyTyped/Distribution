@@ -22,8 +22,8 @@ trait IPropertyAnimation extends js.Object {
 object IPropertyAnimation {
   @scala.inline
   def apply(control1: Point, control2: Point, delay: Double, duration: Double, `type`: PropertyAnimationType): IPropertyAnimation = {
-    val __obj = js.Dynamic.literal(control1 = control1, control2 = control2, delay = delay, duration = duration)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(control1 = control1.asInstanceOf[js.Any], control2 = control2.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPropertyAnimation]
   }
 }

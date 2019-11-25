@@ -11,7 +11,7 @@ trait HighlightsRepositoryCreateReelResponseImage_versions2 extends js.Object {
 object HighlightsRepositoryCreateReelResponseImage_versions2 {
   @scala.inline
   def apply(candidates: js.Array[HighlightsRepositoryCreateReelResponseCandidatesItem]): HighlightsRepositoryCreateReelResponseImage_versions2 = {
-    val __obj = js.Dynamic.literal(candidates = candidates)
+    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HighlightsRepositoryCreateReelResponseImage_versions2]
   }

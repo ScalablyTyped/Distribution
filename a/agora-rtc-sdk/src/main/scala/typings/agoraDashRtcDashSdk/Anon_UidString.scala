@@ -12,7 +12,7 @@ trait Anon_UidString extends js.Object {
 object Anon_UidString {
   @scala.inline
   def apply(uid: String): Anon_UidString = {
-    val __obj = js.Dynamic.literal(uid = uid)
+    val __obj = js.Dynamic.literal(uid = uid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_UidString]
   }

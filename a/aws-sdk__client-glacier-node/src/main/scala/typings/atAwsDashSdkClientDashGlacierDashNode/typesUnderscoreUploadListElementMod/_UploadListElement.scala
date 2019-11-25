@@ -37,11 +37,11 @@ object _UploadListElement {
     VaultARN: String = null
   ): _UploadListElement = {
     val __obj = js.Dynamic.literal()
-    if (ArchiveDescription != null) __obj.updateDynamic("ArchiveDescription")(ArchiveDescription)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (MultipartUploadId != null) __obj.updateDynamic("MultipartUploadId")(MultipartUploadId)
+    if (ArchiveDescription != null) __obj.updateDynamic("ArchiveDescription")(ArchiveDescription.asInstanceOf[js.Any])
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (MultipartUploadId != null) __obj.updateDynamic("MultipartUploadId")(MultipartUploadId.asInstanceOf[js.Any])
     if (PartSizeInBytes != null) __obj.updateDynamic("PartSizeInBytes")(PartSizeInBytes.asInstanceOf[js.Any])
-    if (VaultARN != null) __obj.updateDynamic("VaultARN")(VaultARN)
+    if (VaultARN != null) __obj.updateDynamic("VaultARN")(VaultARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UploadListElement]
   }
 }

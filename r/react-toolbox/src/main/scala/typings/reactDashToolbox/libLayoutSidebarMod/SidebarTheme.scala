@@ -19,8 +19,8 @@ object SidebarTheme {
   @scala.inline
   def apply(clipped: String = null, pinned: String = null): SidebarTheme = {
     val __obj = js.Dynamic.literal()
-    if (clipped != null) __obj.updateDynamic("clipped")(clipped)
-    if (pinned != null) __obj.updateDynamic("pinned")(pinned)
+    if (clipped != null) __obj.updateDynamic("clipped")(clipped.asInstanceOf[js.Any])
+    if (pinned != null) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidebarTheme]
   }
 }

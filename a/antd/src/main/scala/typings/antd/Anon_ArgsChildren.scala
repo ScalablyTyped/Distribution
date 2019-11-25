@@ -27,7 +27,7 @@ object Anon_ArgsChildren {
     onSubmit: Requireable[js.Function1[/* repeated */ _, _]],
     prefixCls: Requireable[String]
   ): Anon_ArgsChildren = {
-    val __obj = js.Dynamic.literal(children = children, colon = colon, hideRequiredMark = hideRequiredMark, layout = layout, onSubmit = onSubmit, prefixCls = prefixCls)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], colon = colon.asInstanceOf[js.Any], hideRequiredMark = hideRequiredMark.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], onSubmit = onSubmit.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArgsChildren]
   }

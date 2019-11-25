@@ -28,13 +28,13 @@ object TooltipPayload {
     payload: js.Any = null,
     unit: String = null
   ): TooltipPayload = {
-    val __obj = js.Dynamic.literal(name = name, value = value.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction4(formatter))
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipPayload]
   }
 }

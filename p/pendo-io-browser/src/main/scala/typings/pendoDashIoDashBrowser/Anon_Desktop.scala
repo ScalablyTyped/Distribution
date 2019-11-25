@@ -15,7 +15,7 @@ trait Anon_Desktop extends js.Object {
 object Anon_Desktop {
   @scala.inline
   def apply(desktop: Boolean, mobile: Boolean, `type`: desktop | mobile): Anon_Desktop = {
-    val __obj = js.Dynamic.literal(desktop = desktop, mobile = mobile)
+    val __obj = js.Dynamic.literal(desktop = desktop.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Desktop]
   }

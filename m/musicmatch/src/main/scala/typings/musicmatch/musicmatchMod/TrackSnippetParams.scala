@@ -11,7 +11,7 @@ trait TrackSnippetParams extends js.Object {
 object TrackSnippetParams {
   @scala.inline
   def apply(track_id: Double): TrackSnippetParams = {
-    val __obj = js.Dynamic.literal(track_id = track_id)
+    val __obj = js.Dynamic.literal(track_id = track_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TrackSnippetParams]
   }

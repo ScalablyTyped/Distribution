@@ -47,18 +47,18 @@ object QueryWithModifiers {
     $returnKey: js.Any = null,
     $showDiskLoc: js.Any = null
   ): QueryWithModifiers[T] = {
-    val __obj = js.Dynamic.literal($query = $query)
-    if ($comment != null) __obj.updateDynamic("$comment")($comment)
-    if ($explain != null) __obj.updateDynamic("$explain")($explain)
-    if ($hint != null) __obj.updateDynamic("$hint")($hint)
-    if ($max != null) __obj.updateDynamic("$max")($max)
-    if ($maxScan != null) __obj.updateDynamic("$maxScan")($maxScan)
-    if ($maxTimeMS != null) __obj.updateDynamic("$maxTimeMS")($maxTimeMS)
-    if ($min != null) __obj.updateDynamic("$min")($min)
-    if ($natural != null) __obj.updateDynamic("$natural")($natural)
-    if ($orderby != null) __obj.updateDynamic("$orderby")($orderby)
-    if ($returnKey != null) __obj.updateDynamic("$returnKey")($returnKey)
-    if ($showDiskLoc != null) __obj.updateDynamic("$showDiskLoc")($showDiskLoc)
+    val __obj = js.Dynamic.literal($query = $query.asInstanceOf[js.Any])
+    if ($comment != null) __obj.updateDynamic("$comment")($comment.asInstanceOf[js.Any])
+    if ($explain != null) __obj.updateDynamic("$explain")($explain.asInstanceOf[js.Any])
+    if ($hint != null) __obj.updateDynamic("$hint")($hint.asInstanceOf[js.Any])
+    if ($max != null) __obj.updateDynamic("$max")($max.asInstanceOf[js.Any])
+    if ($maxScan != null) __obj.updateDynamic("$maxScan")($maxScan.asInstanceOf[js.Any])
+    if ($maxTimeMS != null) __obj.updateDynamic("$maxTimeMS")($maxTimeMS.asInstanceOf[js.Any])
+    if ($min != null) __obj.updateDynamic("$min")($min.asInstanceOf[js.Any])
+    if ($natural != null) __obj.updateDynamic("$natural")($natural.asInstanceOf[js.Any])
+    if ($orderby != null) __obj.updateDynamic("$orderby")($orderby.asInstanceOf[js.Any])
+    if ($returnKey != null) __obj.updateDynamic("$returnKey")($returnKey.asInstanceOf[js.Any])
+    if ($showDiskLoc != null) __obj.updateDynamic("$showDiskLoc")($showDiskLoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryWithModifiers[T]]
   }
 }

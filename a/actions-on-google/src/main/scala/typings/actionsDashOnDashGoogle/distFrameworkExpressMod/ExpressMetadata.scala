@@ -17,7 +17,7 @@ trait ExpressMetadata extends js.Object {
 object ExpressMetadata {
   @scala.inline
   def apply(request: Request[ParamsDictionary], response: Response): ExpressMetadata = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExpressMetadata]
   }

@@ -14,7 +14,7 @@ trait IFileEncodedOption extends js.Object {
 object IFileEncodedOption {
   @scala.inline
   def apply(encoding: java.lang.String): IFileEncodedOption = {
-    val __obj = js.Dynamic.literal(encoding = encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFileEncodedOption]
   }

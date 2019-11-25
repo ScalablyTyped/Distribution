@@ -42,13 +42,13 @@ object SignaleOptions {
     types: Partial[Record[TTypes, CommandType]] = null
   ): SignaleOptions[TTypes] = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (timers != null) __obj.updateDynamic("timers")(timers)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (timers != null) __obj.updateDynamic("timers")(timers.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignaleOptions[TTypes]]
   }
 }

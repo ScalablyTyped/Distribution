@@ -27,12 +27,12 @@ object NormalizedMessageJson {
     line: Int | Double = null,
     stack: String = null
   ): NormalizedMessageJson = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], content = content, severity = severity)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (character != null) __obj.updateDynamic("character")(character.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizedMessageJson]
   }
 }

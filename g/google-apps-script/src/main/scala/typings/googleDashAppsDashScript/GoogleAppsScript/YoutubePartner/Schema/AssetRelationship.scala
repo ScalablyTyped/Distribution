@@ -15,10 +15,10 @@ object AssetRelationship {
   @scala.inline
   def apply(childAssetId: String = null, id: String = null, kind: String = null, parentAssetId: String = null): AssetRelationship = {
     val __obj = js.Dynamic.literal()
-    if (childAssetId != null) __obj.updateDynamic("childAssetId")(childAssetId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (parentAssetId != null) __obj.updateDynamic("parentAssetId")(parentAssetId)
+    if (childAssetId != null) __obj.updateDynamic("childAssetId")(childAssetId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (parentAssetId != null) __obj.updateDynamic("parentAssetId")(parentAssetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetRelationship]
   }
 }

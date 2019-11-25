@@ -15,7 +15,7 @@ trait Anon_State[S /* <: Schema[_, _] */] extends js.Object {
 object Anon_State {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](state: EditorState[S], transactions: js.Array[Transaction[S]]): Anon_State[S] = {
-    val __obj = js.Dynamic.literal(state = state, transactions = transactions)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_State[S]]
   }

@@ -16,7 +16,7 @@ object Dimension {
   def apply(magnitude: Int | Double = null, unit: String = null): Dimension = {
     val __obj = js.Dynamic.literal()
     if (magnitude != null) __obj.updateDynamic("magnitude")(magnitude.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimension]
   }
 }

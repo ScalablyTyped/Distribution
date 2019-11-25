@@ -39,18 +39,18 @@ object OptionalEventProperties {
     `type`: String = null
   ): OptionalEventProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
-    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget)
-    if (!js.isUndefined(defaultPrevented)) __obj.updateDynamic("defaultPrevented")(defaultPrevented)
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPrevented)) __obj.updateDynamic("defaultPrevented")(defaultPrevented.asInstanceOf[js.Any])
     if (eventPhase != null) __obj.updateDynamic("eventPhase")(eventPhase.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted)
-    if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent)
+    if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted.asInstanceOf[js.Any])
+    if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent.asInstanceOf[js.Any])
     if (preventDefault != null) __obj.updateDynamic("preventDefault")(js.Any.fromFunction0(preventDefault))
     if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(js.Any.fromFunction0(stopPropagation))
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionalEventProperties]
   }
 }

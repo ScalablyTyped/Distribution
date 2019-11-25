@@ -28,7 +28,7 @@ object ParentNode {
     children: HTMLCollection,
     prepend: /* repeated */ Node | String => Unit
   ): ParentNode = {
-    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), children = children, prepend = js.Any.fromFunction1(prepend))
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), children = children.asInstanceOf[js.Any], prepend = js.Any.fromFunction1(prepend))
   
     __obj.asInstanceOf[ParentNode]
   }

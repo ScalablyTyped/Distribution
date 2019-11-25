@@ -86,18 +86,18 @@ object Config {
     swaggerSecurityHandlers: SwaggerSecurityHandlers = null,
     validateResponse: js.UndefOr[Boolean] = js.undefined
   ): Config = {
-    val __obj = js.Dynamic.literal(appRoot = appRoot)
-    if (bagpipes != null) __obj.updateDynamic("bagpipes")(bagpipes)
-    if (configDir != null) __obj.updateDynamic("configDir")(configDir)
-    if (controllersDirs != null) __obj.updateDynamic("controllersDirs")(controllersDirs)
-    if (defaultPipe != null) __obj.updateDynamic("defaultPipe")(defaultPipe)
-    if (fittingsDirs != null) __obj.updateDynamic("fittingsDirs")(fittingsDirs)
-    if (mockControllersDirs != null) __obj.updateDynamic("mockControllersDirs")(mockControllersDirs)
-    if (!js.isUndefined(mockMode)) __obj.updateDynamic("mockMode")(mockMode)
-    if (swaggerControllerPipe != null) __obj.updateDynamic("swaggerControllerPipe")(swaggerControllerPipe)
-    if (swaggerFile != null) __obj.updateDynamic("swaggerFile")(swaggerFile)
-    if (swaggerSecurityHandlers != null) __obj.updateDynamic("swaggerSecurityHandlers")(swaggerSecurityHandlers)
-    if (!js.isUndefined(validateResponse)) __obj.updateDynamic("validateResponse")(validateResponse)
+    val __obj = js.Dynamic.literal(appRoot = appRoot.asInstanceOf[js.Any])
+    if (bagpipes != null) __obj.updateDynamic("bagpipes")(bagpipes.asInstanceOf[js.Any])
+    if (configDir != null) __obj.updateDynamic("configDir")(configDir.asInstanceOf[js.Any])
+    if (controllersDirs != null) __obj.updateDynamic("controllersDirs")(controllersDirs.asInstanceOf[js.Any])
+    if (defaultPipe != null) __obj.updateDynamic("defaultPipe")(defaultPipe.asInstanceOf[js.Any])
+    if (fittingsDirs != null) __obj.updateDynamic("fittingsDirs")(fittingsDirs.asInstanceOf[js.Any])
+    if (mockControllersDirs != null) __obj.updateDynamic("mockControllersDirs")(mockControllersDirs.asInstanceOf[js.Any])
+    if (!js.isUndefined(mockMode)) __obj.updateDynamic("mockMode")(mockMode.asInstanceOf[js.Any])
+    if (swaggerControllerPipe != null) __obj.updateDynamic("swaggerControllerPipe")(swaggerControllerPipe.asInstanceOf[js.Any])
+    if (swaggerFile != null) __obj.updateDynamic("swaggerFile")(swaggerFile.asInstanceOf[js.Any])
+    if (swaggerSecurityHandlers != null) __obj.updateDynamic("swaggerSecurityHandlers")(swaggerSecurityHandlers.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateResponse)) __obj.updateDynamic("validateResponse")(validateResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

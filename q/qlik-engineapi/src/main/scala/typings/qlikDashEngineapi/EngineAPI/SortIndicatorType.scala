@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait SortIndicatorType extends js.Object
 
+object SortIndicatorType {
+  @scala.inline
+  def A: typings.qlikDashEngineapi.qlikDashEngineapiStrings.A = this.cast("A")
+  @scala.inline
+  def D: typings.qlikDashEngineapi.qlikDashEngineapiStrings.D = this.cast("D")
+  @scala.inline
+  def N: typings.qlikDashEngineapi.qlikDashEngineapiStrings.N = this.cast("N")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

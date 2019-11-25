@@ -31,7 +31,7 @@ object IComboBoxClassNames {
     optionsContainerWrapper: String,
     root: String
   ): IComboBoxClassNames = {
-    val __obj = js.Dynamic.literal(callout = callout, container = container, divider = divider, errorMessage = errorMessage, header = header, input = input, label = label, optionsContainer = optionsContainer, optionsContainerWrapper = optionsContainerWrapper, root = root)
+    val __obj = js.Dynamic.literal(callout = callout.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], optionsContainer = optionsContainer.asInstanceOf[js.Any], optionsContainerWrapper = optionsContainerWrapper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IComboBoxClassNames]
   }

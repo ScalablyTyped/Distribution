@@ -12,7 +12,7 @@ trait TextInputSelectionChangeEventData extends TargetedEvent {
 object TextInputSelectionChangeEventData {
   @scala.inline
   def apply(selection: Anon_End, target: Double): TextInputSelectionChangeEventData = {
-    val __obj = js.Dynamic.literal(selection = selection, target = target)
+    val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextInputSelectionChangeEventData]
   }

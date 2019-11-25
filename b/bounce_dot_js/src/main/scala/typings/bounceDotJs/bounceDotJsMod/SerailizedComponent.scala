@@ -27,8 +27,8 @@ object SerailizedComponent {
     to: T,
     `type`: String
   ): SerailizedComponent[T] = {
-    val __obj = js.Dynamic.literal(bounces = bounces, delay = delay, duration = duration, easing = easing, from = from.asInstanceOf[js.Any], stiffness = stiffness, to = to.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bounces = bounces.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], stiffness = stiffness.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerailizedComponent[T]]
   }
 }

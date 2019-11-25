@@ -79,19 +79,19 @@ object DeploymentPropertiesExtended {
     timestamp: Date = null
   ): DeploymentPropertiesExtended = {
     val __obj = js.Dynamic.literal()
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
-    if (debugSetting != null) __obj.updateDynamic("debugSetting")(debugSetting)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (onErrorDeployment != null) __obj.updateDynamic("onErrorDeployment")(onErrorDeployment)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (parametersLink != null) __obj.updateDynamic("parametersLink")(parametersLink)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
-    if (provisioningState != null) __obj.updateDynamic("provisioningState")(provisioningState)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (templateLink != null) __obj.updateDynamic("templateLink")(templateLink)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
+    if (debugSetting != null) __obj.updateDynamic("debugSetting")(debugSetting.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (onErrorDeployment != null) __obj.updateDynamic("onErrorDeployment")(onErrorDeployment.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (parametersLink != null) __obj.updateDynamic("parametersLink")(parametersLink.asInstanceOf[js.Any])
+    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
+    if (provisioningState != null) __obj.updateDynamic("provisioningState")(provisioningState.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateLink != null) __obj.updateDynamic("templateLink")(templateLink.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentPropertiesExtended]
   }
 }

@@ -28,9 +28,9 @@ object OperationMetadata {
   ): OperationMetadata = {
     val __obj = js.Dynamic.literal()
     if (progressPercentage != null) __obj.updateDynamic("progressPercentage")(progressPercentage.asInstanceOf[js.Any])
-    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (steps != null) __obj.updateDynamic("steps")(steps)
+    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationMetadata]
   }
 }

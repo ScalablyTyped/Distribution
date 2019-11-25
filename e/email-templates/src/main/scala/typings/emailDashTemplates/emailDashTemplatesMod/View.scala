@@ -15,8 +15,8 @@ trait View extends js.Object {
 object View {
   @scala.inline
   def apply(root: String, options: ViewOptions = null): View = {
-    val __obj = js.Dynamic.literal(root = root)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[View]
   }
 }

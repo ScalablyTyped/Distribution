@@ -23,8 +23,8 @@ object Anon_Buffer {
     string: () => String,
     `type`: String
   ): Anon_Buffer = {
-    val __obj = js.Dynamic.literal(buffer = js.Any.fromFunction0(buffer), geometry = js.Any.fromFunction0(geometry), length = length, string = js.Any.fromFunction0(string))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(buffer = js.Any.fromFunction0(buffer), geometry = js.Any.fromFunction0(geometry), length = length.asInstanceOf[js.Any], string = js.Any.fromFunction0(string))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Buffer]
   }
 }

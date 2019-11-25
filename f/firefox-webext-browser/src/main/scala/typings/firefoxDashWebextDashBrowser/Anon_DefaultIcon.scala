@@ -19,7 +19,7 @@ object Anon_DefaultIcon {
   @scala.inline
   def apply(defaultIcon: String | IconPath, themeIcons: js.Array[ThemeIcons] = null): Anon_DefaultIcon = {
     val __obj = js.Dynamic.literal(defaultIcon = defaultIcon.asInstanceOf[js.Any])
-    if (themeIcons != null) __obj.updateDynamic("themeIcons")(themeIcons)
+    if (themeIcons != null) __obj.updateDynamic("themeIcons")(themeIcons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultIcon]
   }
 }

@@ -14,9 +14,9 @@ object FilterItem {
   @scala.inline
   def apply(caption: String = null, hierarchyName: String = null, uniqueName: String = null): FilterItem = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (hierarchyName != null) __obj.updateDynamic("hierarchyName")(hierarchyName)
-    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (hierarchyName != null) __obj.updateDynamic("hierarchyName")(hierarchyName.asInstanceOf[js.Any])
+    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterItem]
   }
 }

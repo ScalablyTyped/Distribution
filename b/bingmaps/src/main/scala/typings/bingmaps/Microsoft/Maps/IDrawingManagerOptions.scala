@@ -20,7 +20,7 @@ object IDrawingManagerOptions {
     strokeColor: String | Color = null
   ): IDrawingManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (drawingBarActions != null) __obj.updateDynamic("drawingBarActions")(drawingBarActions)
+    if (drawingBarActions != null) __obj.updateDynamic("drawingBarActions")(drawingBarActions.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDrawingManagerOptions]

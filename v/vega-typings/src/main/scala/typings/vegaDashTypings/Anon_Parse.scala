@@ -1,12 +1,12 @@
 package typings.vegaDashTypings
 
-import typings.vegaDashTypings.typesSpecDataMod.Format
 import typings.vegaDashTypings.typesSpecDataMod.Parse
+import typings.vegaDashTypings.typesSpecDataMod._Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Parse extends Format {
+trait Anon_Parse extends _Format {
   var parse: Parse
 }
 

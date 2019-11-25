@@ -26,7 +26,7 @@ object WorkspaceScanOptions {
     val __obj = js.Dynamic.literal()
     if (leadingContextLineCount != null) __obj.updateDynamic("leadingContextLineCount")(leadingContextLineCount.asInstanceOf[js.Any])
     if (onPathsSearched != null) __obj.updateDynamic("onPathsSearched")(js.Any.fromFunction1(onPathsSearched))
-    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     if (trailingContextLineCount != null) __obj.updateDynamic("trailingContextLineCount")(trailingContextLineCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceScanOptions]
   }

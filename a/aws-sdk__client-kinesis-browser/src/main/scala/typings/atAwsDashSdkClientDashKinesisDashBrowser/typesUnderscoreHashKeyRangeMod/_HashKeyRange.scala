@@ -18,7 +18,7 @@ trait _HashKeyRange extends js.Object {
 object _HashKeyRange {
   @scala.inline
   def apply(EndingHashKey: String, StartingHashKey: String): _HashKeyRange = {
-    val __obj = js.Dynamic.literal(EndingHashKey = EndingHashKey, StartingHashKey = StartingHashKey)
+    val __obj = js.Dynamic.literal(EndingHashKey = EndingHashKey.asInstanceOf[js.Any], StartingHashKey = StartingHashKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_HashKeyRange]
   }

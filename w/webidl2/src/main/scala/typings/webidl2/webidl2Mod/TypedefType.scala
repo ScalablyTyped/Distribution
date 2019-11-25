@@ -18,8 +18,8 @@ trait TypedefType extends IDLRootType {
 object TypedefType {
   @scala.inline
   def apply(extAttrs: js.Array[ExtendedAttribute], idlType: IDLTypeDescription, name: String, `type`: typedef): TypedefType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedefType]
   }
 }

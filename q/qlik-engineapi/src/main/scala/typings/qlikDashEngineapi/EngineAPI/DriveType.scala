@@ -23,3 +23,20 @@ import scala.scalajs.js.annotation._
 */
 trait DriveType extends js.Object
 
+object DriveType {
+  @scala.inline
+  def CD_ROM: typings.qlikDashEngineapi.qlikDashEngineapiStrings.CD_ROM = this.cast("CD_ROM")
+  @scala.inline
+  def FIXED: typings.qlikDashEngineapi.qlikDashEngineapiStrings.FIXED = this.cast("FIXED")
+  @scala.inline
+  def NETWORK: typings.qlikDashEngineapi.qlikDashEngineapiStrings.NETWORK = this.cast("NETWORK")
+  @scala.inline
+  def RAM: typings.qlikDashEngineapi.qlikDashEngineapiStrings.RAM = this.cast("RAM")
+  @scala.inline
+  def REMOVABLE: typings.qlikDashEngineapi.qlikDashEngineapiStrings.REMOVABLE = this.cast("REMOVABLE")
+  @scala.inline
+  def UNKNOWN_TYPE: typings.qlikDashEngineapi.qlikDashEngineapiStrings.UNKNOWN_TYPE = this.cast("UNKNOWN_TYPE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

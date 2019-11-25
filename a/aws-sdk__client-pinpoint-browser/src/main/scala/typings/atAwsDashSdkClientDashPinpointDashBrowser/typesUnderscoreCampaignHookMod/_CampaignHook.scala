@@ -25,9 +25,9 @@ object _CampaignHook {
   @scala.inline
   def apply(LambdaFunctionName: String = null, Mode: DELIVERY | FILTER | String = null, WebUrl: String = null): _CampaignHook = {
     val __obj = js.Dynamic.literal()
-    if (LambdaFunctionName != null) __obj.updateDynamic("LambdaFunctionName")(LambdaFunctionName)
+    if (LambdaFunctionName != null) __obj.updateDynamic("LambdaFunctionName")(LambdaFunctionName.asInstanceOf[js.Any])
     if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
-    if (WebUrl != null) __obj.updateDynamic("WebUrl")(WebUrl)
+    if (WebUrl != null) __obj.updateDynamic("WebUrl")(WebUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CampaignHook]
   }
 }

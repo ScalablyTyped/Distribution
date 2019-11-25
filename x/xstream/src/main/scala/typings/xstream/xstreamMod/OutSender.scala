@@ -11,7 +11,7 @@ trait OutSender[T] extends js.Object {
 object OutSender {
   @scala.inline
   def apply[T](out: Stream[T]): OutSender[T] = {
-    val __obj = js.Dynamic.literal(out = out)
+    val __obj = js.Dynamic.literal(out = out.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutSender[T]]
   }

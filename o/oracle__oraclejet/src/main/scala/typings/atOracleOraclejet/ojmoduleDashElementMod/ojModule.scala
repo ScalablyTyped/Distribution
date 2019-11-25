@@ -95,7 +95,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.toggle
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchcancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchmove
-import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart
+import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart_
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitioncancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionrun
@@ -135,7 +135,7 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
   var config: Anon_CleanupMode = js.native
   var onAnimationChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -149,7 +149,7 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
       ], 
       _
     ]
@@ -159,7 +159,7 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
       ], 
       _
     ],
@@ -931,10 +931,10 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchstart(`type`: touchstart_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(
-    `type`: touchstart,
+    `type`: touchstart_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -1008,7 +1008,7 @@ trait ojModule extends JetElement[ojModuleSettableProperties] {
   ): Unit = js.native
   def getProperty(property: String): js.Any = js.native
   @JSName("getProperty")
-  def getProperty_animation(property: animation): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any = js.native
+  def getProperty_animation(property: animation): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_config(property: config): Anon_CleanupMode = js.native
   def setProperties(properties: ojModuleSettablePropertiesLenient): Unit = js.native

@@ -24,12 +24,12 @@ object ErrioConfig {
     stack: js.UndefOr[Boolean] = js.undefined
   ): ErrioConfig = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (!js.isUndefined(inherited)) __obj.updateDynamic("inherited")(inherited)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
-    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherited)) __obj.updateDynamic("inherited")(inherited.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrioConfig]
   }
 }

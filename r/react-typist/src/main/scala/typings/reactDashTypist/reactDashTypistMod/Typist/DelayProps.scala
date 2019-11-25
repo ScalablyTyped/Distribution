@@ -11,7 +11,7 @@ trait DelayProps extends js.Object {
 object DelayProps {
   @scala.inline
   def apply(ms: Double): DelayProps = {
-    val __obj = js.Dynamic.literal(ms = ms)
+    val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DelayProps]
   }

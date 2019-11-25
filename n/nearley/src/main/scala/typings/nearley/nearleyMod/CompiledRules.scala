@@ -13,8 +13,8 @@ trait CompiledRules extends js.Object {
 object CompiledRules {
   @scala.inline
   def apply(ParserRules: js.Array[ParserRule], ParserStart: String, Lexer: Lexer = null): CompiledRules = {
-    val __obj = js.Dynamic.literal(ParserRules = ParserRules, ParserStart = ParserStart)
-    if (Lexer != null) __obj.updateDynamic("Lexer")(Lexer)
+    val __obj = js.Dynamic.literal(ParserRules = ParserRules.asInstanceOf[js.Any], ParserStart = ParserStart.asInstanceOf[js.Any])
+    if (Lexer != null) __obj.updateDynamic("Lexer")(Lexer.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompiledRules]
   }
 }

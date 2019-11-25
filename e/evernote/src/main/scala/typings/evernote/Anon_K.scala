@@ -19,8 +19,8 @@ object Anon_K {
     trashCount: Int | Double = null
   ): Anon_K = {
     val __obj = js.Dynamic.literal()
-    if (notebookCounts != null) __obj.updateDynamic("notebookCounts")(notebookCounts)
-    if (tagCounts != null) __obj.updateDynamic("tagCounts")(tagCounts)
+    if (notebookCounts != null) __obj.updateDynamic("notebookCounts")(notebookCounts.asInstanceOf[js.Any])
+    if (tagCounts != null) __obj.updateDynamic("tagCounts")(tagCounts.asInstanceOf[js.Any])
     if (trashCount != null) __obj.updateDynamic("trashCount")(trashCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_K]
   }

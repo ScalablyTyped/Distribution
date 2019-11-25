@@ -14,9 +14,9 @@ trait ObjectRefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] extends js
 object ObjectRefinedBatchRequest {
   @scala.inline
   def apply[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody = null, params: RefinedParams[RT] = null): ObjectRefinedBatchRequest[RT] = {
-    val __obj = js.Dynamic.literal(method = method, url = url)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectRefinedBatchRequest[RT]]
   }
 }

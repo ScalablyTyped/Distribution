@@ -17,10 +17,10 @@ object ChangePlaylistOptions {
     public: js.UndefOr[Boolean] = js.undefined
   ): ChangePlaylistOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collaborative)) __obj.updateDynamic("collaborative")(collaborative)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
+    if (!js.isUndefined(collaborative)) __obj.updateDynamic("collaborative")(collaborative.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangePlaylistOptions]
   }
 }

@@ -14,7 +14,7 @@ object Anon_IndexName {
   def apply(index: Int | Double = null, name: String = null): Anon_IndexName = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IndexName]
   }
 }

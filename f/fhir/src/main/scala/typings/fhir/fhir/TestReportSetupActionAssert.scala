@@ -50,18 +50,18 @@ object TestReportSetupActionAssert {
     message: markdown = null,
     modifierExtension: js.Array[Extension] = null
   ): TestReportSetupActionAssert = {
-    val __obj = js.Dynamic.literal(result = result)
-    if (_detail != null) __obj.updateDynamic("_detail")(_detail)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_message != null) __obj.updateDynamic("_message")(_message)
-    if (_result != null) __obj.updateDynamic("_result")(_result)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+    if (_detail != null) __obj.updateDynamic("_detail")(_detail.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_message != null) __obj.updateDynamic("_message")(_message.asInstanceOf[js.Any])
+    if (_result != null) __obj.updateDynamic("_result")(_result.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestReportSetupActionAssert]
   }
 }

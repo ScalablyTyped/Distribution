@@ -33,13 +33,13 @@ object ResolverOpts {
     `type`: ComposeOutputType[TReturn, TContext] = null
   ): ResolverOpts[TSource, TContext, TArgs, TReturn] = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverOpts[TSource, TContext, TArgs, TReturn]]

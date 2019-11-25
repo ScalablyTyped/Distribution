@@ -21,8 +21,8 @@ object buttonDefinition {
     icon: String = null,
     iconOffset: Int | Double = null
   ): buttonDefinition = {
-    val __obj = js.Dynamic.literal(command = command, label = label, toolbar = toolbar)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], toolbar = toolbar.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconOffset != null) __obj.updateDynamic("iconOffset")(iconOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[buttonDefinition]
   }

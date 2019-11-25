@@ -33,7 +33,7 @@ trait IKeystrokeParts extends js.Object {
 object IKeystrokeParts {
   @scala.inline
   def apply(alt: Boolean, cmd: Boolean, ctrl: Boolean, key: String, shift: Boolean): IKeystrokeParts = {
-    val __obj = js.Dynamic.literal(alt = alt, cmd = cmd, ctrl = ctrl, key = key, shift = shift)
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any], ctrl = ctrl.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IKeystrokeParts]
   }

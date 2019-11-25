@@ -31,16 +31,16 @@ object Anon_DatePicker {
     SearchBar: Anon_CancelText = null,
     locale: String = null
   ): Anon_DatePicker = {
-    val __obj = js.Dynamic.literal(exist = exist)
-    if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker)
-    if (DatePickerView != null) __obj.updateDynamic("DatePickerView")(DatePickerView)
-    if (InputItem != null) __obj.updateDynamic("InputItem")(InputItem)
-    if (ListView != null) __obj.updateDynamic("ListView")(ListView)
-    if (Modal != null) __obj.updateDynamic("Modal")(Modal)
-    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination)
-    if (Picker != null) __obj.updateDynamic("Picker")(Picker)
-    if (SearchBar != null) __obj.updateDynamic("SearchBar")(SearchBar)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    val __obj = js.Dynamic.literal(exist = exist.asInstanceOf[js.Any])
+    if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker.asInstanceOf[js.Any])
+    if (DatePickerView != null) __obj.updateDynamic("DatePickerView")(DatePickerView.asInstanceOf[js.Any])
+    if (InputItem != null) __obj.updateDynamic("InputItem")(InputItem.asInstanceOf[js.Any])
+    if (ListView != null) __obj.updateDynamic("ListView")(ListView.asInstanceOf[js.Any])
+    if (Modal != null) __obj.updateDynamic("Modal")(Modal.asInstanceOf[js.Any])
+    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination.asInstanceOf[js.Any])
+    if (Picker != null) __obj.updateDynamic("Picker")(Picker.asInstanceOf[js.Any])
+    if (SearchBar != null) __obj.updateDynamic("SearchBar")(SearchBar.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DatePicker]
   }
 }

@@ -24,7 +24,7 @@ object ConstraintWrapper {
     if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction1(equals))
     if (greaterThan != null) __obj.updateDynamic("greaterThan")(js.Any.fromFunction1(greaterThan))
     if (lessThan != null) __obj.updateDynamic("lessThan")(js.Any.fromFunction1(lessThan))
-    if (not != null) __obj.updateDynamic("not")(not)
+    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstraintWrapper]
   }
 }

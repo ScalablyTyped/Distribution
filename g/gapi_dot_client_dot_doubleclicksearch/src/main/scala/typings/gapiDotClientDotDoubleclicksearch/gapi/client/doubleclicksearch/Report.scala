@@ -43,15 +43,15 @@ object Report {
     statisticsTimeZone: String = null
   ): Report = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isReportReady)) __obj.updateDynamic("isReportReady")(isReportReady)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReportReady)) __obj.updateDynamic("isReportReady")(isReportReady.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (statisticsCurrencyCode != null) __obj.updateDynamic("statisticsCurrencyCode")(statisticsCurrencyCode)
-    if (statisticsTimeZone != null) __obj.updateDynamic("statisticsTimeZone")(statisticsTimeZone)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (statisticsCurrencyCode != null) __obj.updateDynamic("statisticsCurrencyCode")(statisticsCurrencyCode.asInstanceOf[js.Any])
+    if (statisticsTimeZone != null) __obj.updateDynamic("statisticsTimeZone")(statisticsTimeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Report]
   }
 }

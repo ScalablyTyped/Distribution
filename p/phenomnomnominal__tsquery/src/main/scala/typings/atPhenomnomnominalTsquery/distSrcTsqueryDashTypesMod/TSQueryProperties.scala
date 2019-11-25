@@ -14,9 +14,9 @@ trait TSQueryProperties extends js.Object {
 object TSQueryProperties {
   @scala.inline
   def apply(kindName: String, text: String, name: String = null, value: js.Any = null): TSQueryProperties = {
-    val __obj = js.Dynamic.literal(kindName = kindName, text = text)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(kindName = kindName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSQueryProperties]
   }
 }

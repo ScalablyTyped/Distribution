@@ -13,8 +13,8 @@ object Anon_Hapi {
   @scala.inline
   def apply(hapi: String = null, node: String = null): Anon_Hapi = {
     val __obj = js.Dynamic.literal()
-    if (hapi != null) __obj.updateDynamic("hapi")(hapi)
-    if (node != null) __obj.updateDynamic("node")(node)
+    if (hapi != null) __obj.updateDynamic("hapi")(hapi.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hapi]
   }
 }

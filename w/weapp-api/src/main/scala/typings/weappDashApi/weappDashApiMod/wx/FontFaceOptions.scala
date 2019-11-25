@@ -24,9 +24,9 @@ object FontFaceOptions {
     fail: /* res */ js.Any => Unit = null,
     success: /* res */ js.Any => Unit = null
   ): FontFaceOptions = {
-    val __obj = js.Dynamic.literal(family = family, source = source)
+    val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[FontFaceOptions]

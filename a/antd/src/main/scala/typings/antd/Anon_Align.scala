@@ -37,8 +37,8 @@ object Anon_Align {
     prefixCls: Requireable[String],
     `type`: Requireable[flex]
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal(align = align, children = children, className = className, gutter = gutter, justify = justify, prefixCls = prefixCls)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], gutter = gutter.asInstanceOf[js.Any], justify = justify.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Align]
   }
 }

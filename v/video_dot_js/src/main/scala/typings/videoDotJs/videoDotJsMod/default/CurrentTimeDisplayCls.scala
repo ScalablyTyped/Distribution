@@ -1,15 +1,14 @@
 package typings.videoDotJs.videoDotJsMod.default
 
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
-import typings.videoDotJs.videoDotJsMod.videojs.CurrentTimeDisplay
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("video.js", "CurrentTimeDisplay")
 @js.native
-class CurrentTimeDisplayCls protected () extends CurrentTimeDisplay {
+class CurrentTimeDisplayCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.CurrentTimeDisplay {
   /**
     * Creates an instance of this class.
     *
@@ -19,6 +18,6 @@ class CurrentTimeDisplayCls protected () extends CurrentTimeDisplay {
     * @param [options]
     *        The key/value store of player options.
     */
-  def this(player: Player, options: ComponentOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: ComponentOptions) = this()
 }
 

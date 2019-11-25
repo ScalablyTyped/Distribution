@@ -12,7 +12,7 @@ trait ExportParameters extends js.Object {
 object ExportParameters {
   @scala.inline
   def apply(fileId: String, mimeType: String): ExportParameters = {
-    val __obj = js.Dynamic.literal(fileId = fileId, mimeType = mimeType)
+    val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExportParameters]
   }

@@ -27,14 +27,14 @@ object Names {
     ru: String = null,
     `zh-CN`: String = null
   ): Names = {
-    val __obj = js.Dynamic.literal(en = en)
-    if (de != null) __obj.updateDynamic("de")(de)
-    if (es != null) __obj.updateDynamic("es")(es)
-    if (fr != null) __obj.updateDynamic("fr")(fr)
-    if (ja != null) __obj.updateDynamic("ja")(ja)
-    if (`pt-BR` != null) __obj.updateDynamic("pt-BR")(`pt-BR`)
-    if (ru != null) __obj.updateDynamic("ru")(ru)
-    if (`zh-CN` != null) __obj.updateDynamic("zh-CN")(`zh-CN`)
+    val __obj = js.Dynamic.literal(en = en.asInstanceOf[js.Any])
+    if (de != null) __obj.updateDynamic("de")(de.asInstanceOf[js.Any])
+    if (es != null) __obj.updateDynamic("es")(es.asInstanceOf[js.Any])
+    if (fr != null) __obj.updateDynamic("fr")(fr.asInstanceOf[js.Any])
+    if (ja != null) __obj.updateDynamic("ja")(ja.asInstanceOf[js.Any])
+    if (`pt-BR` != null) __obj.updateDynamic("pt-BR")(`pt-BR`.asInstanceOf[js.Any])
+    if (ru != null) __obj.updateDynamic("ru")(ru.asInstanceOf[js.Any])
+    if (`zh-CN` != null) __obj.updateDynamic("zh-CN")(`zh-CN`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Names]
   }
 }

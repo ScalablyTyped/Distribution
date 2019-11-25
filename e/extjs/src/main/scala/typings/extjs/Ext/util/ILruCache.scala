@@ -48,7 +48,7 @@ trait ILruCache extends IHashMap {
 object ILruCache {
   @scala.inline
   def apply(
-    add: (/* key */ js.UndefOr[js.Any], /* newValue */ js.UndefOr[js.Any]) => _ = null,
+    add: (/* key */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any]) => _ = null,
     addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
     addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     addManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
@@ -110,8 +110,8 @@ object ILruCache {
     if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
     if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
@@ -119,12 +119,12 @@ object ILruCache {
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
     if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
     if (clone != null) __obj.updateDynamic("clone")(js.Any.fromFunction0(clone))
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (contains != null) __obj.updateDynamic("contains")(js.Any.fromFunction1(contains))
     if (containsKey != null) __obj.updateDynamic("containsKey")(js.Any.fromFunction1(containsKey))
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction3(each))
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(js.Any.fromFunction2(fireEventArgs))
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
@@ -134,14 +134,14 @@ object ILruCache {
     if (getKeys != null) __obj.updateDynamic("getKeys")(js.Any.fromFunction0(getKeys))
     if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction0(getValues))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners)
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable)
-    if (keyFn != null) __obj.updateDynamic("keyFn")(keyFn)
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.asInstanceOf[js.Any])
+    if (keyFn != null) __obj.updateDynamic("keyFn")(keyFn.asInstanceOf[js.Any])
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
@@ -152,16 +152,16 @@ object ILruCache {
     if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
     if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
     if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction2(replace))
-    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
     if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
-    if (self != null) __obj.updateDynamic("self")(self)
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
-    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
-    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILruCache]
   }
 }

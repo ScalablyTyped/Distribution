@@ -21,8 +21,8 @@ object ValidatorOptions {
   ): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
     if (dayFormatter != null) __obj.updateDynamic("dayFormatter")(js.Any.fromFunction1(dayFormatter))
-    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)
-    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary)
+    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail.asInstanceOf[js.Any])
+    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
 }

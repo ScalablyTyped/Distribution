@@ -58,7 +58,5 @@ object Checkout extends js.Object {
     treeish: typings.nodegit.treeMod.Tree,
     options: typings.nodegit.checkoutDashOptionsMod.CheckoutOptions
   ): js.Promise[Unit] = js.native
-  type NOTIFY = typings.nodegit.checkoutMod.Checkout.NOTIFY
-  type STRATEGY = typings.nodegit.checkoutMod.Checkout.STRATEGY
 }
 

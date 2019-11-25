@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait GlobalTargetName extends js.Object
 
+object GlobalTargetName {
+  @scala.inline
+  def body: typings.atAngularCore.atAngularCoreStrings.body = this.cast("body")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def document: typings.atAngularCore.atAngularCoreStrings.document = this.cast("document")
+  @scala.inline
+  def window: typings.atAngularCore.atAngularCoreStrings.window = this.cast("window")
+}
+

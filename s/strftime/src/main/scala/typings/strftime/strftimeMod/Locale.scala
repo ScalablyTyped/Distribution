@@ -29,15 +29,15 @@ object Locale {
     shortDays: js.Array[String] = null,
     shortMonths: js.Array[String] = null
   ): Locale = {
-    val __obj = js.Dynamic.literal(formats = formats)
-    if (AM != null) __obj.updateDynamic("AM")(AM)
-    if (PM != null) __obj.updateDynamic("PM")(PM)
-    if (am != null) __obj.updateDynamic("am")(am)
-    if (days != null) __obj.updateDynamic("days")(days)
-    if (months != null) __obj.updateDynamic("months")(months)
-    if (pm != null) __obj.updateDynamic("pm")(pm)
-    if (shortDays != null) __obj.updateDynamic("shortDays")(shortDays)
-    if (shortMonths != null) __obj.updateDynamic("shortMonths")(shortMonths)
+    val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any])
+    if (AM != null) __obj.updateDynamic("AM")(AM.asInstanceOf[js.Any])
+    if (PM != null) __obj.updateDynamic("PM")(PM.asInstanceOf[js.Any])
+    if (am != null) __obj.updateDynamic("am")(am.asInstanceOf[js.Any])
+    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
+    if (pm != null) __obj.updateDynamic("pm")(pm.asInstanceOf[js.Any])
+    if (shortDays != null) __obj.updateDynamic("shortDays")(shortDays.asInstanceOf[js.Any])
+    if (shortMonths != null) __obj.updateDynamic("shortMonths")(shortMonths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale]
   }
 }

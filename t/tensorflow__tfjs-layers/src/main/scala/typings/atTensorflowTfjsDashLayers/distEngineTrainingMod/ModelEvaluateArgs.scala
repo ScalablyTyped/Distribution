@@ -39,9 +39,9 @@ object ModelEvaluateArgs {
   ): ModelEvaluateArgs = {
     val __obj = js.Dynamic.literal()
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (sampleWeight != null) __obj.updateDynamic("sampleWeight")(sampleWeight)
+    if (sampleWeight != null) __obj.updateDynamic("sampleWeight")(sampleWeight.asInstanceOf[js.Any])
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
-    if (verbose != null) __obj.updateDynamic("verbose")(verbose)
+    if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelEvaluateArgs]
   }
 }

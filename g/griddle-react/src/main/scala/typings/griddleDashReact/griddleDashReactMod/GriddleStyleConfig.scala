@@ -19,9 +19,9 @@ object GriddleStyleConfig {
     styles: GriddleStyleElements[CSSProperties] = null
   ): GriddleStyleConfig = {
     val __obj = js.Dynamic.literal()
-    if (classNames != null) __obj.updateDynamic("classNames")(classNames)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddleStyleConfig]
   }
 }

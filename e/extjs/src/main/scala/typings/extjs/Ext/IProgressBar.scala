@@ -63,15 +63,9 @@ object IProgressBar {
   def apply(
     IComponent: IComponent = null,
     animate: js.Any = null,
-    baseCls: java.lang.String = null,
-    componentLayout: js.Any = null,
-    id: java.lang.String = null,
-    initComponent: () => Unit = null,
     initRenderData: () => _ = null,
     isWaiting: () => Boolean = null,
-    onDestroy: () => Unit = null,
     onRender: () => Unit = null,
-    renderTpl: js.Any = null,
     reset: /* hide */ js.UndefOr[Boolean] => IProgressBar = null,
     text: java.lang.String = null,
     textEl: js.Any = null,
@@ -81,20 +75,14 @@ object IProgressBar {
     wait: /* config */ js.UndefOr[js.Any] => IProgressBar = null
   ): IProgressBar = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (animate != null) __obj.updateDynamic("animate")(animate)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (initRenderData != null) __obj.updateDynamic("initRenderData")(js.Any.fromFunction0(initRenderData))
     if (isWaiting != null) __obj.updateDynamic("isWaiting")(js.Any.fromFunction0(isWaiting))
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction1(reset))
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textEl != null) __obj.updateDynamic("textEl")(textEl)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textEl != null) __obj.updateDynamic("textEl")(textEl.asInstanceOf[js.Any])
     if (updateProgress != null) __obj.updateDynamic("updateProgress")(js.Any.fromFunction3(updateProgress))
     if (updateText != null) __obj.updateDynamic("updateText")(js.Any.fromFunction1(updateText))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

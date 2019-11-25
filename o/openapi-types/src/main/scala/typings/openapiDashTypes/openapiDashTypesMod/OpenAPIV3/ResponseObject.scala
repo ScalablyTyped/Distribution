@@ -20,10 +20,10 @@ object ResponseObject {
     headers: StringDictionary[ReferenceObject | HeaderObject] = null,
     links: StringDictionary[ReferenceObject | LinkObject] = null
   ): ResponseObject = {
-    val __obj = js.Dynamic.literal(description = description)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (links != null) __obj.updateDynamic("links")(links)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
 }

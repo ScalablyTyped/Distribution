@@ -12,7 +12,7 @@ trait NewsRepositoryInboxResponseAymf extends js.Object {
 object NewsRepositoryInboxResponseAymf {
   @scala.inline
   def apply(items: js.Array[NewsRepositoryInboxResponseItemsItem], more_available: Boolean): NewsRepositoryInboxResponseAymf = {
-    val __obj = js.Dynamic.literal(items = items, more_available = more_available)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NewsRepositoryInboxResponseAymf]
   }

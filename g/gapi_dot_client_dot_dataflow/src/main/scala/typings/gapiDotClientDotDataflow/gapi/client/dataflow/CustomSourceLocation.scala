@@ -13,7 +13,7 @@ object CustomSourceLocation {
   @scala.inline
   def apply(stateful: js.UndefOr[Boolean] = js.undefined): CustomSourceLocation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful)
+    if (!js.isUndefined(stateful)) __obj.updateDynamic("stateful")(stateful.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomSourceLocation]
   }
 }

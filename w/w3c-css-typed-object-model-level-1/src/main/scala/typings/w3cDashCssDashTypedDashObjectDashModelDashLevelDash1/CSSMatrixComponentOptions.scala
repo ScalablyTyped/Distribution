@@ -11,7 +11,7 @@ trait CSSMatrixComponentOptions extends js.Object {
 object CSSMatrixComponentOptions {
   @scala.inline
   def apply(is2D: Boolean): CSSMatrixComponentOptions = {
-    val __obj = js.Dynamic.literal(is2D = is2D)
+    val __obj = js.Dynamic.literal(is2D = is2D.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CSSMatrixComponentOptions]
   }

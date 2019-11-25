@@ -13,8 +13,8 @@ object DateRangeValues {
   @scala.inline
   def apply(pivotValueRegions: js.Array[PivotValueRegion] = null, values: js.Array[String] = null): DateRangeValues = {
     val __obj = js.Dynamic.literal()
-    if (pivotValueRegions != null) __obj.updateDynamic("pivotValueRegions")(pivotValueRegions)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (pivotValueRegions != null) __obj.updateDynamic("pivotValueRegions")(pivotValueRegions.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateRangeValues]
   }
 }

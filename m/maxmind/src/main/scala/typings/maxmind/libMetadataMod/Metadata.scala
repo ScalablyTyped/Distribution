@@ -36,7 +36,7 @@ object Metadata {
     searchTreeSize: Double,
     treeDepth: Double
   ): Metadata = {
-    val __obj = js.Dynamic.literal(binaryFormatMajorVersion = binaryFormatMajorVersion, binaryFormatMinorVersion = binaryFormatMinorVersion, buildEpoch = buildEpoch, databaseType = databaseType, description = description, ipVersion = ipVersion, languages = languages, nodeByteSize = nodeByteSize, nodeCount = nodeCount, recordSize = recordSize, searchTreeSize = searchTreeSize, treeDepth = treeDepth)
+    val __obj = js.Dynamic.literal(binaryFormatMajorVersion = binaryFormatMajorVersion.asInstanceOf[js.Any], binaryFormatMinorVersion = binaryFormatMinorVersion.asInstanceOf[js.Any], buildEpoch = buildEpoch.asInstanceOf[js.Any], databaseType = databaseType.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], ipVersion = ipVersion.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], nodeByteSize = nodeByteSize.asInstanceOf[js.Any], nodeCount = nodeCount.asInstanceOf[js.Any], recordSize = recordSize.asInstanceOf[js.Any], searchTreeSize = searchTreeSize.asInstanceOf[js.Any], treeDepth = treeDepth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Metadata]
   }

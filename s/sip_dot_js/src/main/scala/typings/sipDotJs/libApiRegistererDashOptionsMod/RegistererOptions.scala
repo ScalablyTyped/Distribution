@@ -51,13 +51,13 @@ object RegistererOptions {
   ): RegistererOptions = {
     val __obj = js.Dynamic.literal()
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (extraContactHeaderParams != null) __obj.updateDynamic("extraContactHeaderParams")(extraContactHeaderParams)
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
-    if (!js.isUndefined(logConfiguration)) __obj.updateDynamic("logConfiguration")(logConfiguration)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (extraContactHeaderParams != null) __obj.updateDynamic("extraContactHeaderParams")(extraContactHeaderParams.asInstanceOf[js.Any])
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(logConfiguration)) __obj.updateDynamic("logConfiguration")(logConfiguration.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (regId != null) __obj.updateDynamic("regId")(regId.asInstanceOf[js.Any])
-    if (registrar != null) __obj.updateDynamic("registrar")(registrar)
+    if (registrar != null) __obj.updateDynamic("registrar")(registrar.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistererOptions]
   }
 }

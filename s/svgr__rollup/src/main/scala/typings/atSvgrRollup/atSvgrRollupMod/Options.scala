@@ -13,8 +13,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(babel: Boolean, exclude: String, include: String = null): Options = {
-    val __obj = js.Dynamic.literal(babel = babel, exclude = exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
+    val __obj = js.Dynamic.literal(babel = babel.asInstanceOf[js.Any], exclude = exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

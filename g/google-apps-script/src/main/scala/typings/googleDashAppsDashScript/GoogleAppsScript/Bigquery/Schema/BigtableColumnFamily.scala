@@ -22,11 +22,11 @@ object BigtableColumnFamily {
     `type`: String = null
   ): BigtableColumnFamily = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (familyId != null) __obj.updateDynamic("familyId")(familyId)
-    if (!js.isUndefined(onlyReadLatest)) __obj.updateDynamic("onlyReadLatest")(onlyReadLatest)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (familyId != null) __obj.updateDynamic("familyId")(familyId.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyReadLatest)) __obj.updateDynamic("onlyReadLatest")(onlyReadLatest.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BigtableColumnFamily]
   }
 }

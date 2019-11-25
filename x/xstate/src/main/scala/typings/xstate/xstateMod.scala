@@ -96,7 +96,7 @@ object xstateMod extends js.Object {
   ): StateMachine[TContext, TStateSchema, TEvent] = js.native
   def assign[TContext, TEvent /* <: EventObject */](
     assignment: Partial[
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TContext ]: (context : TContext, event : TEvent): TContext[K] | TContext[K]}
     */ typings.xstate.xstateStrings.assign with js.Any
     ]
@@ -226,7 +226,7 @@ object xstateMod extends js.Object {
     def after(delayRef: Double, id: String): String = js.native
     def assign[TContext, TEvent /* <: EventObject */](
       assignment: Partial[
-          /* import warning: ImportType.apply c Unsupported type mapping: 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof TContext ]: (context : TContext, event : TEvent): TContext[K] | TContext[K]}
       */ typings.xstate.xstateStrings.actions with js.Any
         ]

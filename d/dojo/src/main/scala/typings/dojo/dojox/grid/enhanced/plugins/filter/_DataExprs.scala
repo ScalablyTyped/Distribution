@@ -1,7 +1,5 @@
 package typings.dojo.dojox.grid.enhanced.plugins.filter
 
-import typings.dojo.Fn_ColArg
-import typings.dojo.Fn_ColIdx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +62,7 @@ object _DataExprs extends js.Object {
       * @param datarow
       * @param getter
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColIdx): js.Object = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colIdx */ Double, js.Object]): js.Object = js.native
     /**
       * Get the name of this kind of expression.
       *
@@ -110,7 +108,7 @@ object _DataExprs extends js.Object {
       * @param datarow
       * @param getter
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColIdx): js.Object = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colIdx */ Double, js.Object]): js.Object = js.native
     /**
       * Get the name of this kind of expression.
       *
@@ -156,7 +154,7 @@ object _DataExprs extends js.Object {
       * @param datarow
       * @param getter
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColIdx): js.Object = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colIdx */ Double, js.Object]): js.Object = js.native
     /**
       * Get the name of this kind of expression.
       *
@@ -202,7 +200,7 @@ object _DataExprs extends js.Object {
       * @param datarow
       * @param getter
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColIdx): js.Object = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colIdx */ Double, js.Object]): js.Object = js.native
     /**
       * Get the name of this kind of expression.
       *
@@ -248,7 +246,7 @@ object _DataExprs extends js.Object {
       * @param datarow
       * @param getter
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColIdx): js.Object = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colIdx */ Double, js.Object]): js.Object = js.native
     /**
       * Get the name of this kind of expression.
       *
@@ -283,7 +281,7 @@ object _DataExprs extends js.Object {
       * @param datarow
       * @param getter
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColArg): js.Any = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colArg */ js.Object, js.Object]): js.Any = js.native
     /**
       * Get the name of this kind of expression.
       *
@@ -313,7 +311,7 @@ object _DataExprs extends js.Object {
       * @param datarow A data item of a store.
       * @param getter A user defined function that extract cell data from datarow.colArg is an argument that provides a kind of column information.It is defined by user in the constructor of a _DataExpr object.
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColArg): js.Any = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colArg */ js.Object, js.Object]): js.Any = js.native
     /**
       * Get the name of this kind of expression.
       *
@@ -358,7 +356,7 @@ object _DataExprs extends js.Object {
       * @param datarow
       * @param getter
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColIdx): js.Object = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colIdx */ Double, js.Object]): js.Object = js.native
     /**
       * Get the name of this kind of expression.
       *
@@ -393,7 +391,7 @@ object _DataExprs extends js.Object {
       * @param datarow A data item of a store.
       * @param getter A user defined function that extract cell data from datarow.colArg is an argument that provides a kind of column information.It is defined by user in the constructor of a _DataExpr object.
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColArg): js.Any = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colArg */ js.Object, js.Object]): js.Any = js.native
     /**
       * Get the name of this kind of expression.
       *
@@ -423,7 +421,7 @@ object _DataExprs extends js.Object {
       * @param datarow
       * @param getter
       */
-    def applyRow(datarow: js.Object, getter: Fn_ColArg): js.Any = js.native
+    def applyRow(datarow: js.Object, getter: js.Function2[/* row */ js.Object, /* colArg */ js.Object, js.Object]): js.Any = js.native
     /**
       * Get the name of this kind of expression.
       *

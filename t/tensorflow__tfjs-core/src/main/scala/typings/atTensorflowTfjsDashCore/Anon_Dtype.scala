@@ -15,7 +15,7 @@ trait Anon_Dtype extends js.Object {
 object Anon_Dtype {
   @scala.inline
   def apply(dtype: uint16 | uint8, min: Double, scale: Double): Anon_Dtype = {
-    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], min = min, scale = scale)
+    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dtype]
   }

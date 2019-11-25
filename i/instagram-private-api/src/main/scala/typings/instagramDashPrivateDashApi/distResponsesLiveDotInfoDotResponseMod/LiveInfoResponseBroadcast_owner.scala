@@ -27,7 +27,7 @@ object LiveInfoResponseBroadcast_owner {
     profile_pic_url: String,
     username: String
   ): LiveInfoResponseBroadcast_owner = {
-    val __obj = js.Dynamic.literal(friendship_status = friendship_status, full_name = full_name, is_private = is_private, is_verified = is_verified, pk = pk, profile_pic_id = profile_pic_id, profile_pic_url = profile_pic_url, username = username)
+    val __obj = js.Dynamic.literal(friendship_status = friendship_status.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_id = profile_pic_id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LiveInfoResponseBroadcast_owner]
   }

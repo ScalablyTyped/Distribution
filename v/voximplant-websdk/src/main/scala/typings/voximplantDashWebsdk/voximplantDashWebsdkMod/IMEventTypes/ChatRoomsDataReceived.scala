@@ -19,7 +19,7 @@ trait ChatRoomsDataReceived extends VoxImplantIMEvent {
 object ChatRoomsDataReceived {
   @scala.inline
   def apply(rooms: js.Array[ChatRoom]): ChatRoomsDataReceived = {
-    val __obj = js.Dynamic.literal(rooms = rooms)
+    val __obj = js.Dynamic.literal(rooms = rooms.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChatRoomsDataReceived]
   }

@@ -23,7 +23,7 @@ object IOptions {
   @scala.inline
   def apply(priority: js.Array[String] = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (priority != null) __obj.updateDynamic("priority")(priority)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

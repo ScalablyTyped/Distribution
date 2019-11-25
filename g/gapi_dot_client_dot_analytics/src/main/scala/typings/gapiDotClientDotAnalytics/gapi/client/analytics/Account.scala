@@ -41,15 +41,15 @@ object Account {
     updated: String = null
   ): Account = {
     val __obj = js.Dynamic.literal()
-    if (childLink != null) __obj.updateDynamic("childLink")(childLink)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (childLink != null) __obj.updateDynamic("childLink")(childLink.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
 }

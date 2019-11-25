@@ -12,7 +12,7 @@ trait StatisticComponent extends js.Object {
 object StatisticComponent {
   @scala.inline
   def apply(Countdown: TypeofClassCountdownDefaultProps): StatisticComponent = {
-    val __obj = js.Dynamic.literal(Countdown = Countdown)
+    val __obj = js.Dynamic.literal(Countdown = Countdown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StatisticComponent]
   }

@@ -15,7 +15,7 @@ trait FeedCardItem extends MessageType {
 object FeedCardItem {
   @scala.inline
   def apply(feedCard: Anon_MessageURL, msgtype: feedCard): FeedCardItem = {
-    val __obj = js.Dynamic.literal(feedCard = feedCard, msgtype = msgtype)
+    val __obj = js.Dynamic.literal(feedCard = feedCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeedCardItem]
   }

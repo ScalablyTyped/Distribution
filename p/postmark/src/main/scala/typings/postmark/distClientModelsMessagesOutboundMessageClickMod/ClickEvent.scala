@@ -40,7 +40,7 @@ object ClickEvent {
     Tag: String,
     UserAgent: String
   ): ClickEvent = {
-    val __obj = js.Dynamic.literal(ClickLocation = ClickLocation, Client = Client, Geo = Geo, MessageID = MessageID, MessageStream = MessageStream, OS = OS, OriginalLink = OriginalLink, Platform = Platform, ReceivedAt = ReceivedAt, Recipient = Recipient, RecordType = RecordType, Tag = Tag, UserAgent = UserAgent)
+    val __obj = js.Dynamic.literal(ClickLocation = ClickLocation.asInstanceOf[js.Any], Client = Client.asInstanceOf[js.Any], Geo = Geo.asInstanceOf[js.Any], MessageID = MessageID.asInstanceOf[js.Any], MessageStream = MessageStream.asInstanceOf[js.Any], OS = OS.asInstanceOf[js.Any], OriginalLink = OriginalLink.asInstanceOf[js.Any], Platform = Platform.asInstanceOf[js.Any], ReceivedAt = ReceivedAt.asInstanceOf[js.Any], Recipient = Recipient.asInstanceOf[js.Any], RecordType = RecordType.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], UserAgent = UserAgent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClickEvent]
   }

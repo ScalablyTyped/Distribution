@@ -20,7 +20,7 @@ object Anon_CountField {
   @scala.inline
   def apply(field: ScaleField, op: count | min | max, order: SortOrder = null): Anon_CountField = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CountField]
   }
 }

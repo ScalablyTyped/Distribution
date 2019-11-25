@@ -12,7 +12,7 @@ trait PolicyBinding extends js.Object {
 object PolicyBinding {
   @scala.inline
   def apply(members: js.Array[String], role: String): PolicyBinding = {
-    val __obj = js.Dynamic.literal(members = members, role = role)
+    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PolicyBinding]
   }

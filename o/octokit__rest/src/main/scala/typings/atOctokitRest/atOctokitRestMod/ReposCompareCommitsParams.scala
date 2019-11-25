@@ -14,7 +14,7 @@ trait ReposCompareCommitsParams extends js.Object {
 object ReposCompareCommitsParams {
   @scala.inline
   def apply(base: String, head: String, owner: String, repo: String): ReposCompareCommitsParams = {
-    val __obj = js.Dynamic.literal(base = base, head = head, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCompareCommitsParams]
   }

@@ -12,7 +12,7 @@ trait ArtifactSourceId extends js.Object {
 object ArtifactSourceId {
   @scala.inline
   def apply(artifactTypeId: String, sourceIdInputs: js.Array[SourceIdInput]): ArtifactSourceId = {
-    val __obj = js.Dynamic.literal(artifactTypeId = artifactTypeId, sourceIdInputs = sourceIdInputs)
+    val __obj = js.Dynamic.literal(artifactTypeId = artifactTypeId.asInstanceOf[js.Any], sourceIdInputs = sourceIdInputs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtifactSourceId]
   }

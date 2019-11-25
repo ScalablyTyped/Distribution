@@ -13,7 +13,7 @@ object Anon_Layers {
   @scala.inline
   def apply(layers: js.Array[Anon_LayerId] = null): Anon_Layers = {
     val __obj = js.Dynamic.literal()
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Layers]
   }
 }

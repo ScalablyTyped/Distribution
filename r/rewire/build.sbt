@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rewire"
-version := "2.5-dt-20180214Z-b2790e"
+version := "2.5-dt-20180214Z-c510c4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

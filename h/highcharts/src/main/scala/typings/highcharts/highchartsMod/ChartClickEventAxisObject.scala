@@ -18,7 +18,7 @@ trait ChartClickEventAxisObject extends js.Object {
 object ChartClickEventAxisObject {
   @scala.inline
   def apply(axis: Axis, value: Double): ChartClickEventAxisObject = {
-    val __obj = js.Dynamic.literal(axis = axis, value = value)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChartClickEventAxisObject]
   }

@@ -15,7 +15,7 @@ object Anon_InitialSubscription {
   @scala.inline
   def apply(value: Value, initialSubscription: Update = null): Anon_InitialSubscription = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (initialSubscription != null) __obj.updateDynamic("initialSubscription")(initialSubscription)
+    if (initialSubscription != null) __obj.updateDynamic("initialSubscription")(initialSubscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InitialSubscription]
   }
 }

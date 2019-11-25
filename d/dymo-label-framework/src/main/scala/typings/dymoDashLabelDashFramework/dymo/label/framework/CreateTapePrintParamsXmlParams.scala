@@ -27,11 +27,11 @@ object CreateTapePrintParamsXmlParams {
     jobTitle: String = null
   ): CreateTapePrintParamsXmlParams = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (copies != null) __obj.updateDynamic("copies")(copies.asInstanceOf[js.Any])
-    if (cutMode != null) __obj.updateDynamic("cutMode")(cutMode)
-    if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection)
-    if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle)
+    if (cutMode != null) __obj.updateDynamic("cutMode")(cutMode.asInstanceOf[js.Any])
+    if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection.asInstanceOf[js.Any])
+    if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTapePrintParamsXmlParams]
   }
 }

@@ -24,10 +24,10 @@ object TwitchExtFeatures {
   @scala.inline
   def apply(
     isChatEnabled: Boolean,
-    onChanged_isChatEnabled: js.Function1[/* changed */ js.Array[isChatEnabled], Unit] => Unit
+    onChanged: js.Function1[/* changed */ js.Array[isChatEnabled], Unit] => Unit
   ): TwitchExtFeatures = {
-    val __obj = js.Dynamic.literal(isChatEnabled = isChatEnabled)
-    __obj.updateDynamic("onChanged")(js.Any.fromFunction1(onChanged_isChatEnabled))
+    val __obj = js.Dynamic.literal(isChatEnabled = isChatEnabled.asInstanceOf[js.Any], onChanged = js.Any.fromFunction1(onChanged))
+  
     __obj.asInstanceOf[TwitchExtFeatures]
   }
 }

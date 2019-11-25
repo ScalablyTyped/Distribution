@@ -14,8 +14,8 @@ object GetAccessTokenResponse {
   @scala.inline
   def apply(res: GaxiosResponse[_] = null, token: String = null): GetAccessTokenResponse = {
     val __obj = js.Dynamic.literal()
-    if (res != null) __obj.updateDynamic("res")(res)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccessTokenResponse]
   }
 }

@@ -17,8 +17,8 @@ object NullableMappedPosition {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullableMappedPosition]
   }
 }

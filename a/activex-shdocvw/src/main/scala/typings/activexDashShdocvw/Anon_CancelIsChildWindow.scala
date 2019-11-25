@@ -12,7 +12,7 @@ trait Anon_CancelIsChildWindow extends js.Object {
 object Anon_CancelIsChildWindow {
   @scala.inline
   def apply(Cancel: Boolean, IsChildWindow: Boolean): Anon_CancelIsChildWindow = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, IsChildWindow = IsChildWindow)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], IsChildWindow = IsChildWindow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelIsChildWindow]
   }

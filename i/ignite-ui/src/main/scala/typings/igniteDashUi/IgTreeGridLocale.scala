@@ -33,9 +33,9 @@ object IgTreeGridLocale {
     expandTooltipText: String = null
   ): IgTreeGridLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collapseTooltipText != null) __obj.updateDynamic("collapseTooltipText")(collapseTooltipText)
-    if (expandTooltipText != null) __obj.updateDynamic("expandTooltipText")(expandTooltipText)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (collapseTooltipText != null) __obj.updateDynamic("collapseTooltipText")(collapseTooltipText.asInstanceOf[js.Any])
+    if (expandTooltipText != null) __obj.updateDynamic("expandTooltipText")(expandTooltipText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridLocale]
   }
 }

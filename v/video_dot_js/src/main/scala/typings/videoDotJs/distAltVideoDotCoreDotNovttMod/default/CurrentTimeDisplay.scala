@@ -2,7 +2,6 @@ package typings.videoDotJs.distAltVideoDotCoreDotNovttMod.default
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +19,7 @@ object CurrentTimeDisplay
   *        The key/value store of player options.
   */
 Instantiable2[
-      /* player */ Player, 
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
       /* options */ ComponentOptions, 
       typings.videoDotJs.videoDotJsMod.videojs.CurrentTimeDisplay
     ]

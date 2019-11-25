@@ -26,8 +26,8 @@ object ToastProviderProps {
     val __obj = js.Dynamic.literal()
     if (autoDismissTimeout != null) __obj.updateDynamic("autoDismissTimeout")(autoDismissTimeout.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastProviderProps]
   }

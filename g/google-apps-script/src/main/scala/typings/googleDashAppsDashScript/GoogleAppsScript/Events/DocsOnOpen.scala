@@ -18,7 +18,7 @@ object DocsOnOpen {
     triggerUid: String,
     user: User
   ): DocsOnOpen = {
-    val __obj = js.Dynamic.literal(authMode = authMode, source = source, triggerUid = triggerUid, user = user)
+    val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocsOnOpen]
   }

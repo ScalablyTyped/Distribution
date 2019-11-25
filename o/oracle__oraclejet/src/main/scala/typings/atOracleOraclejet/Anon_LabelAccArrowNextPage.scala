@@ -22,11 +22,11 @@ object Anon_LabelAccArrowNextPage {
     tipArrowPreviousPage: String = null
   ): Anon_LabelAccArrowNextPage = {
     val __obj = js.Dynamic.literal()
-    if (labelAccArrowNextPage != null) __obj.updateDynamic("labelAccArrowNextPage")(labelAccArrowNextPage)
-    if (labelAccArrowPreviousPage != null) __obj.updateDynamic("labelAccArrowPreviousPage")(labelAccArrowPreviousPage)
-    if (labelAccFilmStrip != null) __obj.updateDynamic("labelAccFilmStrip")(labelAccFilmStrip)
-    if (tipArrowNextPage != null) __obj.updateDynamic("tipArrowNextPage")(tipArrowNextPage)
-    if (tipArrowPreviousPage != null) __obj.updateDynamic("tipArrowPreviousPage")(tipArrowPreviousPage)
+    if (labelAccArrowNextPage != null) __obj.updateDynamic("labelAccArrowNextPage")(labelAccArrowNextPage.asInstanceOf[js.Any])
+    if (labelAccArrowPreviousPage != null) __obj.updateDynamic("labelAccArrowPreviousPage")(labelAccArrowPreviousPage.asInstanceOf[js.Any])
+    if (labelAccFilmStrip != null) __obj.updateDynamic("labelAccFilmStrip")(labelAccFilmStrip.asInstanceOf[js.Any])
+    if (tipArrowNextPage != null) __obj.updateDynamic("tipArrowNextPage")(tipArrowNextPage.asInstanceOf[js.Any])
+    if (tipArrowPreviousPage != null) __obj.updateDynamic("tipArrowPreviousPage")(tipArrowPreviousPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LabelAccArrowNextPage]
   }
 }

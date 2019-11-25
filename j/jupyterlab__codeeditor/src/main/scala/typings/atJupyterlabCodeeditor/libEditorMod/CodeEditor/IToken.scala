@@ -25,8 +25,8 @@ trait IToken extends js.Object {
 object IToken {
   @scala.inline
   def apply(offset: Double, value: String, `type`: String = null): IToken = {
-    val __obj = js.Dynamic.literal(offset = offset, value = value)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToken]
   }
 }

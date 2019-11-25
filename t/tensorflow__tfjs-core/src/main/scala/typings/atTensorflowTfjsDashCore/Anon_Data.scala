@@ -14,7 +14,7 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(data: ArrayBuffer, specs: js.Array[WeightsManifestEntry]): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data, specs = specs)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], specs = specs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Data]
   }

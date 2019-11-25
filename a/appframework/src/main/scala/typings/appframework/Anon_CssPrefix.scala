@@ -14,7 +14,7 @@ trait Anon_CssPrefix extends js.Object {
 object Anon_CssPrefix {
   @scala.inline
   def apply(cssPrefix: String, cssTransformEnd: String, cssTransformStart: String, nativeTouchScroll: Boolean): Anon_CssPrefix = {
-    val __obj = js.Dynamic.literal(cssPrefix = cssPrefix, cssTransformEnd = cssTransformEnd, cssTransformStart = cssTransformStart, nativeTouchScroll = nativeTouchScroll)
+    val __obj = js.Dynamic.literal(cssPrefix = cssPrefix.asInstanceOf[js.Any], cssTransformEnd = cssTransformEnd.asInstanceOf[js.Any], cssTransformStart = cssTransformStart.asInstanceOf[js.Any], nativeTouchScroll = nativeTouchScroll.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CssPrefix]
   }

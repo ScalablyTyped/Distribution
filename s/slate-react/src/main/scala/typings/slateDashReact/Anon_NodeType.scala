@@ -14,8 +14,8 @@ trait Anon_NodeType extends js.Object {
 object Anon_NodeType {
   @scala.inline
   def apply(node: Node, `type`: SlateType): Anon_NodeType = {
-    val __obj = js.Dynamic.literal(node = node)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NodeType]
   }
 }

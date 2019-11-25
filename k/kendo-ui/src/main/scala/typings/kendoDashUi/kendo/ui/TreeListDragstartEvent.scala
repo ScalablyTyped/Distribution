@@ -17,8 +17,8 @@ object TreeListDragstartEvent {
     sender: TreeList,
     source: TreeListModel = null
   ): TreeListDragstartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListDragstartEvent]
   }
 }

@@ -41,9 +41,9 @@ object GoogleActionsV2ExpectedIntent {
   @scala.inline
   def apply(inputValueData: ApiClientObjectMap[_] = null, intent: String = null, parameterName: String = null): GoogleActionsV2ExpectedIntent = {
     val __obj = js.Dynamic.literal()
-    if (inputValueData != null) __obj.updateDynamic("inputValueData")(inputValueData)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName)
+    if (inputValueData != null) __obj.updateDynamic("inputValueData")(inputValueData.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2ExpectedIntent]
   }
 }

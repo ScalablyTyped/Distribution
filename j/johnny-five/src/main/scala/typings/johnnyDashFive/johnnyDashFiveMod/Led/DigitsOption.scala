@@ -13,8 +13,8 @@ trait DigitsOption extends js.Object {
 object DigitsOption {
   @scala.inline
   def apply(pins: js.Any, controller: String = null, devices: Int | Double = null): DigitsOption = {
-    val __obj = js.Dynamic.literal(pins = pins)
-    if (controller != null) __obj.updateDynamic("controller")(controller)
+    val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
     __obj.asInstanceOf[DigitsOption]
   }

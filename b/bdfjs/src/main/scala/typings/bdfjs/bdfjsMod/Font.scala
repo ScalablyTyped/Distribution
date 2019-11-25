@@ -13,7 +13,7 @@ trait Font extends js.Object {
 object Font {
   @scala.inline
   def apply(glyphs: NumberDictionary[Glyph], meta: Meta): Font = {
-    val __obj = js.Dynamic.literal(glyphs = glyphs, meta = meta)
+    val __obj = js.Dynamic.literal(glyphs = glyphs.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Font]
   }

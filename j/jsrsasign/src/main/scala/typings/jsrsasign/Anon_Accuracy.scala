@@ -32,13 +32,13 @@ object Anon_Accuracy {
     serialNumber: IntegerParam | BigIntegerParam | HexParam | Double = null,
     tsa: StringParam = null
   ): Anon_Accuracy = {
-    val __obj = js.Dynamic.literal(messageImprint = messageImprint, policy = policy)
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy)
+    val __obj = js.Dynamic.literal(messageImprint = messageImprint.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
+    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
     if (genTime != null) __obj.updateDynamic("genTime")(genTime.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordering)) __obj.updateDynamic("ordering")(ordering)
+    if (!js.isUndefined(ordering)) __obj.updateDynamic("ordering")(ordering.asInstanceOf[js.Any])
     if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
-    if (tsa != null) __obj.updateDynamic("tsa")(tsa)
+    if (tsa != null) __obj.updateDynamic("tsa")(tsa.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Accuracy]
   }
 }

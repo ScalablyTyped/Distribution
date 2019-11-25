@@ -21,8 +21,8 @@ object OAuth {
     consumer_secret: String,
     signature_method: String = null
   ): OAuth = {
-    val __obj = js.Dynamic.literal(access_token = access_token, access_token_secret = access_token_secret, consumer_key = consumer_key, consumer_secret = consumer_secret)
-    if (signature_method != null) __obj.updateDynamic("signature_method")(signature_method)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], access_token_secret = access_token_secret.asInstanceOf[js.Any], consumer_key = consumer_key.asInstanceOf[js.Any], consumer_secret = consumer_secret.asInstanceOf[js.Any])
+    if (signature_method != null) __obj.updateDynamic("signature_method")(signature_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth]
   }
 }

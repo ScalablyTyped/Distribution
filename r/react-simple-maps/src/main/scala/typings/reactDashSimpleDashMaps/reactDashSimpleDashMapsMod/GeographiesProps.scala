@@ -23,7 +23,7 @@ object GeographiesProps {
   ): GeographiesProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction2(children))
-    if (!js.isUndefined(disableOptimization)) __obj.updateDynamic("disableOptimization")(disableOptimization)
+    if (!js.isUndefined(disableOptimization)) __obj.updateDynamic("disableOptimization")(disableOptimization.asInstanceOf[js.Any])
     if (geography != null) __obj.updateDynamic("geography")(geography.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeographiesProps]
   }

@@ -15,8 +15,8 @@ object Anon_Bias {
   def apply(bias: Int | Double = null, origin: String = null, scroll: js.UndefOr[Boolean] = js.undefined): Anon_Bias = {
     val __obj = js.Dynamic.literal()
     if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bias]
   }
 }

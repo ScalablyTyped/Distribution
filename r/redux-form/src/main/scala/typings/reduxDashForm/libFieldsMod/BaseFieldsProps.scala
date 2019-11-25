@@ -30,10 +30,10 @@ object BaseFieldsProps {
     validate: FieldsWarnerOrValidator = null,
     warn: FieldsWarnerOrValidator = null
   ): BaseFieldsProps[P] = {
-    val __obj = js.Dynamic.literal(names = names)
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
-    if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef)
+    if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction2(parse))
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])

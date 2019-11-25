@@ -1,6 +1,5 @@
 package typings.postcss.postcssMod
 
-import typings.postcss.postcssStrings.decl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +23,7 @@ trait Declaration
     * The declaration's property name.
     */
   var prop: String = js.native
-  var `type`: decl = js.native
+  var `type`: typings.postcss.postcssStrings.decl = js.native
   /**
     * The declaration's value. This value will be cleaned of comments. If the
     * source value contained comments, those comments will be available in the

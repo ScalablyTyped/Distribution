@@ -64,10 +64,10 @@ object OnChange {
     country: String = null,
     value: js.Any = null
   ): OnChange = {
-    val __obj = js.Dynamic.literal(bankName = bankName, complete = complete, elementType = elementType, empty = empty, error = error)
-    if (brand != null) __obj.updateDynamic("brand")(brand)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(bankName = bankName.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], elementType = elementType.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnChange]
   }
 }

@@ -25,12 +25,12 @@ object Anon_Accept {
     `X-CC-Version`: String,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): Anon_Accept = {
-    val __obj = js.Dynamic.literal(Accept = Accept)
-    __obj.updateDynamic("Content-Type")(`Content-Type`)
-    __obj.updateDynamic("User-Agent")(`User-Agent`)
-    __obj.updateDynamic("X-CC-Api-Key")(`X-CC-Api-Key`)
-    __obj.updateDynamic("X-CC-Version")(`X-CC-Version`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(Accept = Accept.asInstanceOf[js.Any])
+    __obj.updateDynamic("Content-Type")(`Content-Type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("User-Agent")(`User-Agent`.asInstanceOf[js.Any])
+    __obj.updateDynamic("X-CC-Api-Key")(`X-CC-Api-Key`.asInstanceOf[js.Any])
+    __obj.updateDynamic("X-CC-Version")(`X-CC-Version`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Accept]
   }
 }

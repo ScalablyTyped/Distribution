@@ -31,9 +31,9 @@ object SupportingWidgetDefaultsFeatureForm {
     fieldConfig: js.Array[FieldConfig] = null,
     groupDisplay: String = null
   ): SupportingWidgetDefaultsFeatureForm = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig)
-    if (groupDisplay != null) __obj.updateDynamic("groupDisplay")(groupDisplay)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
+    if (groupDisplay != null) __obj.updateDynamic("groupDisplay")(groupDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportingWidgetDefaultsFeatureForm]
   }
 }

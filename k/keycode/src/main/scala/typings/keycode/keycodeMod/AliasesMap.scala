@@ -43,8 +43,8 @@ object AliasesMap {
     spc: Double,
     windows: Double
   ): AliasesMap = {
-    val __obj = js.Dynamic.literal(break = break, caps = caps, cmd = cmd, control = control, ctl = ctl, del = del, escape = escape, ins = ins, option = option, pause = pause, pgdn = pgdn, pgup = pgup, spacebar = spacebar, spc = spc, windows = windows)
-    __obj.updateDynamic("return")(`return`)
+    val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], caps = caps.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], ctl = ctl.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], escape = escape.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], pgdn = pgdn.asInstanceOf[js.Any], pgup = pgup.asInstanceOf[js.Any], spacebar = spacebar.asInstanceOf[js.Any], spc = spc.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
+    __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasesMap]
   }
 }

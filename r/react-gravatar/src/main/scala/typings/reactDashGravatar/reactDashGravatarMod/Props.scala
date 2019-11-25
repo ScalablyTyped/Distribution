@@ -67,14 +67,14 @@ object Props {
     style: CSSProperties = null
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (md5 != null) __obj.updateDynamic("md5")(md5)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (rating != null) __obj.updateDynamic("rating")(rating)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (md5 != null) __obj.updateDynamic("md5")(md5.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -68,11 +68,11 @@ object SocketInfo {
     name: String = null,
     uuid: String = null
   ): SocketInfo = {
-    val __obj = js.Dynamic.literal(connected = connected, paused = paused, persistent = persistent, socketId = socketId)
-    if (address != null) __obj.updateDynamic("address")(address)
+    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketInfo]
   }
 }

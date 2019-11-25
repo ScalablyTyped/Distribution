@@ -13,7 +13,7 @@ trait Anon_Heading extends js.Object {
 object Anon_Heading {
   @scala.inline
   def apply(heading: Double, pitch: Double, roll: Double): Anon_Heading = {
-    val __obj = js.Dynamic.literal(heading = heading, pitch = pitch, roll = roll)
+    val __obj = js.Dynamic.literal(heading = heading.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any], roll = roll.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Heading]
   }

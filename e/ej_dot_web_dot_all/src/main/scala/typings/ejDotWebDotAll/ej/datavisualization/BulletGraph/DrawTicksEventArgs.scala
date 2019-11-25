@@ -48,15 +48,15 @@ object DrawTicksEventArgs {
     `type`: String = null
   ): DrawTicksEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (majorTickSettings != null) __obj.updateDynamic("majorTickSettings")(majorTickSettings)
+    if (majorTickSettings != null) __obj.updateDynamic("majorTickSettings")(majorTickSettings.asInstanceOf[js.Any])
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
     if (minorTickPerInterval != null) __obj.updateDynamic("minorTickPerInterval")(minorTickPerInterval.asInstanceOf[js.Any])
-    if (minorTickSettings != null) __obj.updateDynamic("minorTickSettings")(minorTickSettings)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (minorTickSettings != null) __obj.updateDynamic("minorTickSettings")(minorTickSettings.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawTicksEventArgs]
   }
 }

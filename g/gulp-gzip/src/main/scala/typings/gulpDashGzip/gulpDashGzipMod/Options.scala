@@ -41,10 +41,10 @@ object Options {
     threshold: Double | String | Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (gzipOptions != null) __obj.updateDynamic("gzipOptions")(gzipOptions)
-    if (preExtension != null) __obj.updateDynamic("preExtension")(preExtension)
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (gzipOptions != null) __obj.updateDynamic("gzipOptions")(gzipOptions.asInstanceOf[js.Any])
+    if (preExtension != null) __obj.updateDynamic("preExtension")(preExtension.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

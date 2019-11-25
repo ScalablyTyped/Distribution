@@ -39,13 +39,13 @@ object Service {
     rateGroups: js.Array[RateGroup] = null
   ): Service = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (deliveryCountry != null) __obj.updateDynamic("deliveryCountry")(deliveryCountry)
-    if (deliveryTime != null) __obj.updateDynamic("deliveryTime")(deliveryTime)
-    if (minimumOrderValue != null) __obj.updateDynamic("minimumOrderValue")(minimumOrderValue)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rateGroups != null) __obj.updateDynamic("rateGroups")(rateGroups)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (deliveryCountry != null) __obj.updateDynamic("deliveryCountry")(deliveryCountry.asInstanceOf[js.Any])
+    if (deliveryTime != null) __obj.updateDynamic("deliveryTime")(deliveryTime.asInstanceOf[js.Any])
+    if (minimumOrderValue != null) __obj.updateDynamic("minimumOrderValue")(minimumOrderValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rateGroups != null) __obj.updateDynamic("rateGroups")(rateGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
 }

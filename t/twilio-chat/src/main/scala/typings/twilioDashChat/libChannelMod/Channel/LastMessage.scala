@@ -15,7 +15,7 @@ object LastMessage {
   def apply(index: Int | Double = null, timestamp: Date = null): LastMessage = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastMessage]
   }
 }

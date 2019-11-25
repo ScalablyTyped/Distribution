@@ -20,8 +20,8 @@ object GoogleActionsOrdersV3Money {
   @scala.inline
   def apply(amountInMicros: String = null, currencyCode: String = null): GoogleActionsOrdersV3Money = {
     val __obj = js.Dynamic.literal()
-    if (amountInMicros != null) __obj.updateDynamic("amountInMicros")(amountInMicros)
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (amountInMicros != null) __obj.updateDynamic("amountInMicros")(amountInMicros.asInstanceOf[js.Any])
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3Money]
   }
 }

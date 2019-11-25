@@ -1,11 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_IsFocusedBoolean
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit.DropDownMenu
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.autoWidth
@@ -93,14 +88,6 @@ class DropDownSelect ()
     *
     */
   var forceWidth: Boolean = js.native
-  /**
-    * Whether or not this is a valid value.  The only way a Select
-    * can be invalid is when it's required but nothing is selected.
-    *
-    * @param isFocused
-    */
-  @JSName("isValid")
-  var isValid_Original: Fn_IsFocusedBoolean = js.native
   /**
     * The max height for our dropdown.
     * Any dropdown taller than this will have scrollbars.
@@ -334,29 +321,125 @@ class DropDownSelect ()
     */
   def validate(isFocused: Boolean): js.Any = js.native
   @JSName("watch")
-  def watch_autoWidth(property: autoWidth, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_autoWidth(
+    property: autoWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dropDown(property: dropDown, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_dropDown(
+    property: dropDown,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dropDownPosition(property: dropDownPosition, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_dropDownPosition(
+    property: dropDownPosition,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_emptyLabel(property: emptyLabel, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_emptyLabel(
+    property: emptyLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_focusedChild(property: focusedChild, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_focusedChild(
+    property: focusedChild,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_forceWidth(property: forceWidth, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_forceWidth(
+    property: forceWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_maxHeight(property: maxHeight, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_maxHeight(
+    property: maxHeight,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_message(property: message, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_message(
+    property: message,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_multiCharSearchDuration(property: multiCharSearchDuration, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_multiCharSearchDuration(
+    property: multiCharSearchDuration,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_required(property: required, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_required(
+    property: required,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_state(property: state, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_state(
+    property: state,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_tooltipPosition(property: tooltipPosition, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_tooltipPosition(
+    property: tooltipPosition,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 
 @JSGlobal("dojox.form.DropDownSelect")

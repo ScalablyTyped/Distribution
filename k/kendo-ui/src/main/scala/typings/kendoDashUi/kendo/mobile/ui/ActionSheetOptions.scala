@@ -24,12 +24,12 @@ object ActionSheetOptions {
     `type`: String = null
   ): ActionSheetOptions = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
-    if (popup != null) __obj.updateDynamic("popup")(popup)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionSheetOptions]
   }
 }

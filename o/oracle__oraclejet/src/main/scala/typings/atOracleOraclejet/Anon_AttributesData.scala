@@ -28,11 +28,11 @@ object Anon_AttributesData {
     validate: js.Object | String | (js.Function2[/* attributes */ js.Object, /* options */ js.UndefOr[Anon_AttributesData], Double]) = null
   ): Anon_AttributesData = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction2(initialize))
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
     if (parseSave != null) __obj.updateDynamic("parseSave")(js.Any.fromFunction1(parseSave))
-    if (urlRoot != null) __obj.updateDynamic("urlRoot")(urlRoot)
+    if (urlRoot != null) __obj.updateDynamic("urlRoot")(urlRoot.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AttributesData]
   }

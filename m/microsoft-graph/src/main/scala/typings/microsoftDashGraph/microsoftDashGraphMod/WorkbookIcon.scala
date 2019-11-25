@@ -21,7 +21,7 @@ object WorkbookIcon {
   def apply(index: Int | Double = null, set: String = null): WorkbookIcon = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set)
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookIcon]
   }
 }

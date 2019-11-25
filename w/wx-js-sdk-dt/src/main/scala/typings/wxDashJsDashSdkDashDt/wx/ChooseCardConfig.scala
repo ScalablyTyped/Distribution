@@ -56,13 +56,13 @@ object ChooseCardConfig {
     shopId: String = null,
     success: /* res */ Anon_CardList => Unit = null
   ): ChooseCardConfig = {
-    val __obj = js.Dynamic.literal(cardSign = cardSign, nonceStr = nonceStr, signType = signType, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(cardSign = cardSign.asInstanceOf[js.Any], nonceStr = nonceStr.asInstanceOf[js.Any], signType = signType.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
-    if (cardId != null) __obj.updateDynamic("cardId")(cardId)
-    if (cardType != null) __obj.updateDynamic("cardType")(cardType)
+    if (cardId != null) __obj.updateDynamic("cardId")(cardId.asInstanceOf[js.Any])
+    if (cardType != null) __obj.updateDynamic("cardType")(cardType.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (shopId != null) __obj.updateDynamic("shopId")(shopId)
+    if (shopId != null) __obj.updateDynamic("shopId")(shopId.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseCardConfig]
   }

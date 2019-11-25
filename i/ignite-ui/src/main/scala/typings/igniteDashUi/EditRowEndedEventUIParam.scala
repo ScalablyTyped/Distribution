@@ -42,12 +42,12 @@ object EditRowEndedEventUIParam {
     values: js.Any = null
   ): EditRowEndedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (oldValues != null) __obj.updateDynamic("oldValues")(oldValues)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding)
-    if (rowID != null) __obj.updateDynamic("rowID")(rowID)
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (oldValues != null) __obj.updateDynamic("oldValues")(oldValues.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding.asInstanceOf[js.Any])
+    if (rowID != null) __obj.updateDynamic("rowID")(rowID.asInstanceOf[js.Any])
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditRowEndedEventUIParam]
   }
 }

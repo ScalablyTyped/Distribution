@@ -23,8 +23,8 @@ object ISuggestionsHeaderFooterProps {
     onExecute: () => Unit = null
   ): ISuggestionsHeaderFooterProps = {
     val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction0(renderItem), shouldShow = js.Any.fromFunction0(shouldShow))
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onExecute != null) __obj.updateDynamic("onExecute")(js.Any.fromFunction0(onExecute))
     __obj.asInstanceOf[ISuggestionsHeaderFooterProps]
   }

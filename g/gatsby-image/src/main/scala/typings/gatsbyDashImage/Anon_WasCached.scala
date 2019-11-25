@@ -11,7 +11,7 @@ trait Anon_WasCached extends js.Object {
 object Anon_WasCached {
   @scala.inline
   def apply(wasCached: Boolean): Anon_WasCached = {
-    val __obj = js.Dynamic.literal(wasCached = wasCached)
+    val __obj = js.Dynamic.literal(wasCached = wasCached.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_WasCached]
   }

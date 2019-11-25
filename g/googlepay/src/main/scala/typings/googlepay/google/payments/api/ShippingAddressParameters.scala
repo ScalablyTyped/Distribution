@@ -16,8 +16,8 @@ object ShippingAddressParameters {
     phoneNumberRequired: js.UndefOr[Boolean] = js.undefined
   ): ShippingAddressParameters = {
     val __obj = js.Dynamic.literal()
-    if (allowedCountryCodes != null) __obj.updateDynamic("allowedCountryCodes")(allowedCountryCodes)
-    if (!js.isUndefined(phoneNumberRequired)) __obj.updateDynamic("phoneNumberRequired")(phoneNumberRequired)
+    if (allowedCountryCodes != null) __obj.updateDynamic("allowedCountryCodes")(allowedCountryCodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(phoneNumberRequired)) __obj.updateDynamic("phoneNumberRequired")(phoneNumberRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingAddressParameters]
   }
 }

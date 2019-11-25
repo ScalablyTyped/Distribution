@@ -21,7 +21,7 @@ object ReposUpdateBranchProtectionResponse {
     restrictions: ReposUpdateBranchProtectionResponseRestrictions,
     url: String
   ): ReposUpdateBranchProtectionResponse = {
-    val __obj = js.Dynamic.literal(enforce_admins = enforce_admins, required_pull_request_reviews = required_pull_request_reviews, required_status_checks = required_status_checks, restrictions = restrictions, url = url)
+    val __obj = js.Dynamic.literal(enforce_admins = enforce_admins.asInstanceOf[js.Any], required_pull_request_reviews = required_pull_request_reviews.asInstanceOf[js.Any], required_status_checks = required_status_checks.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposUpdateBranchProtectionResponse]
   }

@@ -23,7 +23,7 @@ object BasemapGalleryItemProperties {
   @scala.inline
   def apply(basemap: BasemapProperties = null, view: MapViewProperties | SceneViewProperties = null): BasemapGalleryItemProperties = {
     val __obj = js.Dynamic.literal()
-    if (basemap != null) __obj.updateDynamic("basemap")(basemap)
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasemapGalleryItemProperties]
   }

@@ -26,8 +26,8 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(cache: IntlCache, prevConfig: OptionalIntlConfig, intl: IntlShape = null): State = {
-    val __obj = js.Dynamic.literal(cache = cache, prevConfig = prevConfig)
-    if (intl != null) __obj.updateDynamic("intl")(intl)
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], prevConfig = prevConfig.asInstanceOf[js.Any])
+    if (intl != null) __obj.updateDynamic("intl")(intl.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

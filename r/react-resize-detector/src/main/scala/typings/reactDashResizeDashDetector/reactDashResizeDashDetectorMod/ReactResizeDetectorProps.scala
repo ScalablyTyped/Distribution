@@ -102,19 +102,19 @@ object ReactResizeDetectorProps {
   ): ReactResizeDetectorProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleHeight)) __obj.updateDynamic("handleHeight")(handleHeight)
-    if (!js.isUndefined(handleWidth)) __obj.updateDynamic("handleWidth")(handleWidth)
+    if (!js.isUndefined(handleHeight)) __obj.updateDynamic("handleHeight")(handleHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleWidth)) __obj.updateDynamic("handleWidth")(handleWidth.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType)
+    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction2(onResize))
-    if (querySelector != null) __obj.updateDynamic("querySelector")(querySelector)
+    if (querySelector != null) __obj.updateDynamic("querySelector")(querySelector.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (refreshMode != null) __obj.updateDynamic("refreshMode")(refreshMode.asInstanceOf[js.Any])
-    if (refreshOptions != null) __obj.updateDynamic("refreshOptions")(refreshOptions)
+    if (refreshOptions != null) __obj.updateDynamic("refreshOptions")(refreshOptions.asInstanceOf[js.Any])
     if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (!js.isUndefined(skipOnMount)) __obj.updateDynamic("skipOnMount")(skipOnMount)
-    if (targetDomEl != null) __obj.updateDynamic("targetDomEl")(targetDomEl)
+    if (!js.isUndefined(skipOnMount)) __obj.updateDynamic("skipOnMount")(skipOnMount.asInstanceOf[js.Any])
+    if (targetDomEl != null) __obj.updateDynamic("targetDomEl")(targetDomEl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactResizeDetectorProps]
   }
 }

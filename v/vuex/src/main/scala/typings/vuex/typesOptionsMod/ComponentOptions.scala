@@ -14,7 +14,7 @@ object ComponentOptions {
   @scala.inline
   def apply[V /* <: Vue */](store: Store[_] = null): ComponentOptions[V] = {
     val __obj = js.Dynamic.literal()
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions[V]]
   }
 }

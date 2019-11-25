@@ -29,8 +29,8 @@ object Anon_AddSuffixCeilDay {
     unit: second | minute | hour | day | month | year = null
   ): Anon_AddSuffixCeilDay = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addSuffix)) __obj.updateDynamic("addSuffix")(addSuffix)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (!js.isUndefined(addSuffix)) __obj.updateDynamic("addSuffix")(addSuffix.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (roundingMethod != null) __obj.updateDynamic("roundingMethod")(roundingMethod.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddSuffixCeilDay]

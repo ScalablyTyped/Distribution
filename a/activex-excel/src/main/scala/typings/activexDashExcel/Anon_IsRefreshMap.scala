@@ -15,7 +15,7 @@ trait Anon_IsRefreshMap extends js.Object {
 object Anon_IsRefreshMap {
   @scala.inline
   def apply(IsRefresh: Boolean, Map: XmlMap, Result: XlXmlImportResult): Anon_IsRefreshMap = {
-    val __obj = js.Dynamic.literal(IsRefresh = IsRefresh, Map = Map, Result = Result)
+    val __obj = js.Dynamic.literal(IsRefresh = IsRefresh.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsRefreshMap]
   }

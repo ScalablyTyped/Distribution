@@ -14,7 +14,7 @@ object LazyQueryHookOptions {
   @scala.inline
   def apply[TData, TVariables](query: DocumentNode = null): LazyQueryHookOptions[TData, TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[LazyQueryHookOptions[TData, TVariables]]
   }
 }

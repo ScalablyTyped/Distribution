@@ -14,7 +14,7 @@ trait AssesmentRisk extends js.Object {
 object AssesmentRisk {
   @scala.inline
   def apply(additionalData: String, lastCalculated: Double, name: String, value: Double): AssesmentRisk = {
-    val __obj = js.Dynamic.literal(additionalData = additionalData, lastCalculated = lastCalculated, name = name, value = value)
+    val __obj = js.Dynamic.literal(additionalData = additionalData.asInstanceOf[js.Any], lastCalculated = lastCalculated.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AssesmentRisk]
   }

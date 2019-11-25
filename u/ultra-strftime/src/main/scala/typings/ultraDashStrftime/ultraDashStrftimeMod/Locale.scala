@@ -29,7 +29,7 @@ object Locale {
     shortDays: js.Array[String],
     shortMonths: js.Array[String]
   ): Locale = {
-    val __obj = js.Dynamic.literal(AM = AM, PM = PM, am = am, days = days, formats = formats, months = months, pm = pm, shortDays = shortDays, shortMonths = shortMonths)
+    val __obj = js.Dynamic.literal(AM = AM.asInstanceOf[js.Any], PM = PM.asInstanceOf[js.Any], am = am.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], pm = pm.asInstanceOf[js.Any], shortDays = shortDays.asInstanceOf[js.Any], shortMonths = shortMonths.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Locale]
   }

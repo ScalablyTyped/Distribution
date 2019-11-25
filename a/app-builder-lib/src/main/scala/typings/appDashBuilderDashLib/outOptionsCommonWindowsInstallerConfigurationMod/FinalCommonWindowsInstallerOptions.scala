@@ -23,8 +23,8 @@ object FinalCommonWindowsInstallerOptions {
     shortcutName: String,
     menuCategory: String = null
   ): FinalCommonWindowsInstallerOptions = {
-    val __obj = js.Dynamic.literal(isAssisted = isAssisted, isCreateDesktopShortcut = isCreateDesktopShortcut, isCreateStartMenuShortcut = isCreateStartMenuShortcut, isPerMachine = isPerMachine, shortcutName = shortcutName)
-    if (menuCategory != null) __obj.updateDynamic("menuCategory")(menuCategory)
+    val __obj = js.Dynamic.literal(isAssisted = isAssisted.asInstanceOf[js.Any], isCreateDesktopShortcut = isCreateDesktopShortcut.asInstanceOf[js.Any], isCreateStartMenuShortcut = isCreateStartMenuShortcut.asInstanceOf[js.Any], isPerMachine = isPerMachine.asInstanceOf[js.Any], shortcutName = shortcutName.asInstanceOf[js.Any])
+    if (menuCategory != null) __obj.updateDynamic("menuCategory")(menuCategory.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinalCommonWindowsInstallerOptions]
   }
 }

@@ -38,10 +38,10 @@ object InitOptions {
     windows: js.Object = null
   ): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (browser != null) __obj.updateDynamic("browser")(browser)
-    if (ios != null) __obj.updateDynamic("ios")(ios)
-    if (windows != null) __obj.updateDynamic("windows")(windows)
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
+    if (windows != null) __obj.updateDynamic("windows")(windows.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

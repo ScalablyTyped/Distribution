@@ -23,7 +23,7 @@ object Anon_SourceIndex {
     targetIndex: Double,
     targetParentMapUniqueKey: String
   ): Anon_SourceIndex = {
-    val __obj = js.Dynamic.literal(sourceIndex = sourceIndex, sourceParentMapUniqueKey = sourceParentMapUniqueKey, targetIndex = targetIndex, targetParentMapUniqueKey = targetParentMapUniqueKey)
+    val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], sourceParentMapUniqueKey = sourceParentMapUniqueKey.asInstanceOf[js.Any], targetIndex = targetIndex.asInstanceOf[js.Any], targetParentMapUniqueKey = targetParentMapUniqueKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SourceIndex]
   }

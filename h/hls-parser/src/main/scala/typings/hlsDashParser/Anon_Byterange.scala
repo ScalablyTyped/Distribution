@@ -38,14 +38,14 @@ object Anon_Byterange {
     programDateTime: Date = null,
     title: String = null
   ): Anon_Byterange = {
-    val __obj = js.Dynamic.literal(discontinuitySequence = discontinuitySequence, duration = duration, mediaSequenceNumber = mediaSequenceNumber, uri = uri)
-    if (byterange != null) __obj.updateDynamic("byterange")(byterange)
-    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
-    if (!js.isUndefined(discontinuity)) __obj.updateDynamic("discontinuity")(discontinuity)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (programDateTime != null) __obj.updateDynamic("programDateTime")(programDateTime)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(discontinuitySequence = discontinuitySequence.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], mediaSequenceNumber = mediaSequenceNumber.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (byterange != null) __obj.updateDynamic("byterange")(byterange.asInstanceOf[js.Any])
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(discontinuity)) __obj.updateDynamic("discontinuity")(discontinuity.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (programDateTime != null) __obj.updateDynamic("programDateTime")(programDateTime.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Byterange]
   }
 }

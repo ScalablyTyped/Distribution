@@ -14,7 +14,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(cache: CacheOptions, debug: Boolean, networkTimeoutSeconds: Double): Options = {
-    val __obj = js.Dynamic.literal(cache = cache, debug = debug, networkTimeoutSeconds = networkTimeoutSeconds)
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], networkTimeoutSeconds = networkTimeoutSeconds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

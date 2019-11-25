@@ -22,8 +22,8 @@ trait CreateBackupOutput extends OutputTypesUnion {
 object CreateBackupOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, BackupDetails: _UnmarshalledBackupDetails = null): CreateBackupOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (BackupDetails != null) __obj.updateDynamic("BackupDetails")(BackupDetails)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (BackupDetails != null) __obj.updateDynamic("BackupDetails")(BackupDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBackupOutput]
   }
 }

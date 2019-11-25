@@ -16,8 +16,8 @@ trait JwkCertificate extends js.Object {
 object JwkCertificate {
   @scala.inline
   def apply(alg: String, e: String, kid: String, kty: String, n: String, use: String = null): JwkCertificate = {
-    val __obj = js.Dynamic.literal(alg = alg, e = e, kid = kid, kty = kty, n = n)
-    if (use != null) __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], kid = kid.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[JwkCertificate]
   }
 }

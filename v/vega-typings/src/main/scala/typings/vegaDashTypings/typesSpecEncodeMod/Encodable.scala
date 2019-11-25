@@ -12,7 +12,7 @@ object Encodable {
   @scala.inline
   def apply[T](encode: Encode[T] = null): Encodable[T] = {
     val __obj = js.Dynamic.literal()
-    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encodable[T]]
   }
 }

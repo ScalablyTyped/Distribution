@@ -21,8 +21,8 @@ object ShadowStyleIOS {
     shadowRadius: Int | Double = null
   ): ShadowStyleIOS = {
     val __obj = js.Dynamic.literal()
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
-    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset)
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
+    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
     if (shadowOpacity != null) __obj.updateDynamic("shadowOpacity")(shadowOpacity.asInstanceOf[js.Any])
     if (shadowRadius != null) __obj.updateDynamic("shadowRadius")(shadowRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowStyleIOS]

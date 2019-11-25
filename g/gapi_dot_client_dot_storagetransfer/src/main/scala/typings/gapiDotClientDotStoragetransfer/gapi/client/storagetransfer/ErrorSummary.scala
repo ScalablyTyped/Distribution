@@ -24,9 +24,9 @@ object ErrorSummary {
     errorLogEntries: js.Array[ErrorLogEntry] = null
   ): ErrorSummary = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
-    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount)
-    if (errorLogEntries != null) __obj.updateDynamic("errorLogEntries")(errorLogEntries)
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount.asInstanceOf[js.Any])
+    if (errorLogEntries != null) __obj.updateDynamic("errorLogEntries")(errorLogEntries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorSummary]
   }
 }

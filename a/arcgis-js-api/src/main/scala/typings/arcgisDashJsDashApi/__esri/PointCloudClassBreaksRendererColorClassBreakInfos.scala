@@ -44,8 +44,8 @@ object PointCloudClassBreaksRendererColorClassBreakInfos {
     propertyIsEnumerable: PropertyKey => Boolean,
     label: String = null
   ): PointCloudClassBreaksRendererColorClassBreakInfos = {
-    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxValue = maxValue, minValue = minValue, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudClassBreaksRendererColorClassBreakInfos]
   }
 }

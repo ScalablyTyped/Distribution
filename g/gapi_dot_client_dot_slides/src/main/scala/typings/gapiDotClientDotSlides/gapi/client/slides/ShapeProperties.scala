@@ -42,10 +42,10 @@ object ShapeProperties {
     shapeBackgroundFill: ShapeBackgroundFill = null
   ): ShapeProperties = {
     val __obj = js.Dynamic.literal()
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
-    if (shapeBackgroundFill != null) __obj.updateDynamic("shapeBackgroundFill")(shapeBackgroundFill)
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (shapeBackgroundFill != null) __obj.updateDynamic("shapeBackgroundFill")(shapeBackgroundFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeProperties]
   }
 }

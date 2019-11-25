@@ -15,7 +15,7 @@ trait ForceTouchGestureHandlerEventExtra extends js.Object {
 object ForceTouchGestureHandlerEventExtra {
   @scala.inline
   def apply(absoluteX: Double, absoluteY: Double, force: Double, x: Double, y: Double): ForceTouchGestureHandlerEventExtra = {
-    val __obj = js.Dynamic.literal(absoluteX = absoluteX, absoluteY = absoluteY, force = force, x = x, y = y)
+    val __obj = js.Dynamic.literal(absoluteX = absoluteX.asInstanceOf[js.Any], absoluteY = absoluteY.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ForceTouchGestureHandlerEventExtra]
   }

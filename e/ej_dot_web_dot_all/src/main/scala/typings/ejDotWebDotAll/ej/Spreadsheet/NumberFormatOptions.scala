@@ -17,8 +17,8 @@ object NumberFormatOptions {
   @scala.inline
   def apply(NumFormat: js.Any = null, style: js.Any = null): NumberFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (NumFormat != null) __obj.updateDynamic("NumFormat")(NumFormat)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (NumFormat != null) __obj.updateDynamic("NumFormat")(NumFormat.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFormatOptions]
   }
 }

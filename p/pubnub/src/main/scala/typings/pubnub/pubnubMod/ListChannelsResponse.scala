@@ -11,7 +11,7 @@ trait ListChannelsResponse extends js.Object {
 object ListChannelsResponse {
   @scala.inline
   def apply(channels: js.Array[String]): ListChannelsResponse = {
-    val __obj = js.Dynamic.literal(channels = channels)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListChannelsResponse]
   }

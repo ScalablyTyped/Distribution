@@ -26,9 +26,9 @@ trait ButtonOptions extends js.Object {
 object ButtonOptions {
   @scala.inline
   def apply(title: String, action: GoogleActionsV2UiElementsOpenUrlAction = null, url: String = null): ButtonOptions = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]
   }
 }

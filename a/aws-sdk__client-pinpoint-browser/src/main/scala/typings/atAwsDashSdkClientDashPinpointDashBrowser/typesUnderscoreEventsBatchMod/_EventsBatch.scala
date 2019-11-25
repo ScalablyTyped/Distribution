@@ -26,7 +26,7 @@ object _EventsBatch {
     Events: StringDictionary[_Event] | (Iterable[js.Tuple2[String, _Event]]) = null
   ): _EventsBatch = {
     val __obj = js.Dynamic.literal()
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint)
+    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
     if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EventsBatch]
   }

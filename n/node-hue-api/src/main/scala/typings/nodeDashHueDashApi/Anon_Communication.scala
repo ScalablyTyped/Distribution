@@ -14,7 +14,7 @@ trait Anon_Communication extends js.Object {
 object Anon_Communication {
   @scala.inline
   def apply(communication: String, incoming: Boolean, outgoing: Boolean, signedon: Boolean): Anon_Communication = {
-    val __obj = js.Dynamic.literal(communication = communication, incoming = incoming, outgoing = outgoing, signedon = signedon)
+    val __obj = js.Dynamic.literal(communication = communication.asInstanceOf[js.Any], incoming = incoming.asInstanceOf[js.Any], outgoing = outgoing.asInstanceOf[js.Any], signedon = signedon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Communication]
   }

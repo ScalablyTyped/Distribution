@@ -14,8 +14,8 @@ trait HotError extends js.Object {
 object HotError {
   @scala.inline
   def apply(error: Error, errorInfo: ErrorInfo = null): HotError = {
-    val __obj = js.Dynamic.literal(error = error)
-    if (errorInfo != null) __obj.updateDynamic("errorInfo")(errorInfo)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+    if (errorInfo != null) __obj.updateDynamic("errorInfo")(errorInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotError]
   }
 }

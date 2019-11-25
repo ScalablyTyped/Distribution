@@ -1,10 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_IsFocused
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit.form._FormValueWidget
 import typings.dojo.dojoStrings.oldName
 import typings.dojo.dojoStrings.required
@@ -29,13 +25,6 @@ import scala.scalajs.js.annotation._
 class PasswordValidator () extends _FormValueWidget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
-  /**
-    * we are valid if ALL our children are valid
-    *
-    * @param isFocused
-    */
-  @JSName("isValid")
-  var isValid_Original: Fn_IsFocused = js.native
   /**
     * The name to send our old password as (when form is posted)
     *
@@ -102,10 +91,24 @@ class PasswordValidator () extends _FormValueWidget {
     */
   def validate(isFocused: Boolean): js.Any = js.native
   @JSName("watch")
-  def watch_oldName(property: oldName, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_oldName(
+    property: oldName,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_required(property: required, callback: Fn_NewValue): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_required(
+    property: required,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

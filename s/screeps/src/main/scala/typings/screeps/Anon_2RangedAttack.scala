@@ -13,7 +13,7 @@ trait Anon_2RangedAttack extends js.Object {
 object Anon_2RangedAttack {
   @scala.inline
   def apply(rangedAttack: `2`, rangedMassAttack: `2`): Anon_2RangedAttack = {
-    val __obj = js.Dynamic.literal(rangedAttack = rangedAttack, rangedMassAttack = rangedMassAttack)
+    val __obj = js.Dynamic.literal(rangedAttack = rangedAttack.asInstanceOf[js.Any], rangedMassAttack = rangedMassAttack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_2RangedAttack]
   }

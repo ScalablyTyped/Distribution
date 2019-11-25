@@ -19,7 +19,7 @@ object GoogleCloudStorage {
   @scala.inline
   def apply(gcsPath: String = null): GoogleCloudStorage = {
     val __obj = js.Dynamic.literal()
-    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath)
+    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudStorage]
   }
 }

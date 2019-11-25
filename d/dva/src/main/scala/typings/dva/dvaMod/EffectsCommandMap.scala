@@ -25,8 +25,8 @@ object EffectsCommandMap {
     take: js.Function,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): EffectsCommandMap = {
-    val __obj = js.Dynamic.literal(call = call, cancel = cancel, put = js.Any.fromFunction1(put), select = select, take = take)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], put = js.Any.fromFunction1(put), select = select.asInstanceOf[js.Any], take = take.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[EffectsCommandMap]
   }
 }

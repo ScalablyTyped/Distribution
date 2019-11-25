@@ -16,8 +16,8 @@ object RowRenderProps {
   @scala.inline
   def apply(isExpanded: js.UndefOr[Boolean] = js.undefined, value: js.Any = null): RowRenderProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowRenderProps]
   }
 }

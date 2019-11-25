@@ -26,13 +26,13 @@ object PopperOptions {
     removeOnDestroy: js.UndefOr[Boolean] = js.undefined
   ): PopperOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
+    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     if (onCreate != null) __obj.updateDynamic("onCreate")(js.Any.fromFunction1(onCreate))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (placement != null) __obj.updateDynamic("placement")(placement)
-    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed)
-    if (!js.isUndefined(removeOnDestroy)) __obj.updateDynamic("removeOnDestroy")(removeOnDestroy)
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeOnDestroy)) __obj.updateDynamic("removeOnDestroy")(removeOnDestroy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopperOptions]
   }
 }

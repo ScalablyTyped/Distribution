@@ -13,8 +13,8 @@ object LayoutReference {
   @scala.inline
   def apply(layoutId: String = null, predefinedLayout: String = null): LayoutReference = {
     val __obj = js.Dynamic.literal()
-    if (layoutId != null) __obj.updateDynamic("layoutId")(layoutId)
-    if (predefinedLayout != null) __obj.updateDynamic("predefinedLayout")(predefinedLayout)
+    if (layoutId != null) __obj.updateDynamic("layoutId")(layoutId.asInstanceOf[js.Any])
+    if (predefinedLayout != null) __obj.updateDynamic("predefinedLayout")(predefinedLayout.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutReference]
   }
 }

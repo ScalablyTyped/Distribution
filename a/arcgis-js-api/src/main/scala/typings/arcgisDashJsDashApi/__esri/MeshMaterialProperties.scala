@@ -83,7 +83,7 @@ object MeshMaterialProperties {
     if (alphaMode != null) __obj.updateDynamic("alphaMode")(alphaMode.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorTexture != null) __obj.updateDynamic("colorTexture")(colorTexture.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided)
+    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided.asInstanceOf[js.Any])
     if (normalTexture != null) __obj.updateDynamic("normalTexture")(normalTexture.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshMaterialProperties]
   }

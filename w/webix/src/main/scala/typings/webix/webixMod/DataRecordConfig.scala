@@ -28,11 +28,11 @@ object DataRecordConfig {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataFeed != null) __obj.updateDynamic("dataFeed")(dataFeed.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype)
+    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRecordConfig]
   }
 }

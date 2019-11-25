@@ -33,14 +33,14 @@ object GatsbyLinkProps {
     replace: js.UndefOr[Boolean] = js.undefined,
     state: TState = null
   ): GatsbyLinkProps[TState] = {
-    val __obj = js.Dynamic.literal(to = to)
-    if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName)
-    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle)
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+    if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName.asInstanceOf[js.Any])
+    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
     if (getProps != null) __obj.updateDynamic("getProps")(js.Any.fromFunction1(getProps))
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(partiallyActive)) __obj.updateDynamic("partiallyActive")(partiallyActive)
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
+    if (!js.isUndefined(partiallyActive)) __obj.updateDynamic("partiallyActive")(partiallyActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatsbyLinkProps[TState]]
   }

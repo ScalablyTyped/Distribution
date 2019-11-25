@@ -19,7 +19,7 @@ object DeploymentGroup {
     pool: TaskAgentPoolReference,
     project: ProjectReference
   ): DeploymentGroup = {
-    val __obj = js.Dynamic.literal(id = id, machineCount = machineCount, machines = machines, name = name, pool = pool, project = project)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], machineCount = machineCount.asInstanceOf[js.Any], machines = machines.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeploymentGroup]
   }

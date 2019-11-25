@@ -26,7 +26,6 @@ object Unit {
   @scala.inline
   def apply(
     abs: Unit => Unit,
-    clone: () => Unit,
     divide: Unit => Unit,
     equalBase: Unit => Boolean,
     equals: Unit => Boolean,
@@ -40,11 +39,9 @@ object Unit {
     toJSON: () => MathJSON,
     toNumber: String => Double,
     toNumeric: String => Double | Fraction | BigNumber,
-    toSI: () => Unit,
-    toString: () => String,
-    valueOf: () => String
+    toSI: () => Unit
   ): Unit = {
-    val __obj = js.Dynamic.literal(abs = js.Any.fromFunction1(abs), clone = js.Any.fromFunction0(clone), divide = js.Any.fromFunction1(divide), equalBase = js.Any.fromFunction1(equalBase), equals = js.Any.fromFunction1(equals), format = js.Any.fromFunction1(format), formatUnits = js.Any.fromFunction0(formatUnits), hasBase = js.Any.fromFunction1(hasBase), multiply = js.Any.fromFunction1(multiply), pow = js.Any.fromFunction1(pow), splitUnit = js.Any.fromFunction1(splitUnit), to = js.Any.fromFunction1(to), toJSON = js.Any.fromFunction0(toJSON), toNumber = js.Any.fromFunction1(toNumber), toNumeric = js.Any.fromFunction1(toNumeric), toSI = js.Any.fromFunction0(toSI), toString = js.Any.fromFunction0(toString), valueOf = js.Any.fromFunction0(valueOf))
+    val __obj = js.Dynamic.literal(abs = js.Any.fromFunction1(abs), divide = js.Any.fromFunction1(divide), equalBase = js.Any.fromFunction1(equalBase), equals = js.Any.fromFunction1(equals), format = js.Any.fromFunction1(format), formatUnits = js.Any.fromFunction0(formatUnits), hasBase = js.Any.fromFunction1(hasBase), multiply = js.Any.fromFunction1(multiply), pow = js.Any.fromFunction1(pow), splitUnit = js.Any.fromFunction1(splitUnit), to = js.Any.fromFunction1(to), toJSON = js.Any.fromFunction0(toJSON), toNumber = js.Any.fromFunction1(toNumber), toNumeric = js.Any.fromFunction1(toNumeric), toSI = js.Any.fromFunction0(toSI))
   
     __obj.asInstanceOf[Unit]
   }

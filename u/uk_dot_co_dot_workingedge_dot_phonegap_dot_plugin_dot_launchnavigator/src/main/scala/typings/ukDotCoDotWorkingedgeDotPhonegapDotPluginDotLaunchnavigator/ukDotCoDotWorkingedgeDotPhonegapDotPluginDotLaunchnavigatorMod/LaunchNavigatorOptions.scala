@@ -90,19 +90,19 @@ object LaunchNavigatorOptions {
     transportMode: String = null
   ): LaunchNavigatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (app != null) __obj.updateDynamic("app")(app)
-    if (appSelection != null) __obj.updateDynamic("appSelection")(appSelection)
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
-    if (!js.isUndefined(enableGeocoding)) __obj.updateDynamic("enableGeocoding")(enableGeocoding)
-    if (!js.isUndefined(enableGeolocation)) __obj.updateDynamic("enableGeolocation")(enableGeolocation)
+    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
+    if (appSelection != null) __obj.updateDynamic("appSelection")(appSelection.asInstanceOf[js.Any])
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGeocoding)) __obj.updateDynamic("enableGeocoding")(enableGeocoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGeolocation)) __obj.updateDynamic("enableGeolocation")(enableGeolocation.asInstanceOf[js.Any])
     if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction1(errorCallback))
-    if (extras != null) __obj.updateDynamic("extras")(extras)
-    if (launchModeAppleMaps != null) __obj.updateDynamic("launchModeAppleMaps")(launchModeAppleMaps)
-    if (launchModeGoogleMaps != null) __obj.updateDynamic("launchModeGoogleMaps")(launchModeGoogleMaps)
+    if (extras != null) __obj.updateDynamic("extras")(extras.asInstanceOf[js.Any])
+    if (launchModeAppleMaps != null) __obj.updateDynamic("launchModeAppleMaps")(launchModeAppleMaps.asInstanceOf[js.Any])
+    if (launchModeGoogleMaps != null) __obj.updateDynamic("launchModeGoogleMaps")(launchModeGoogleMaps.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (startName != null) __obj.updateDynamic("startName")(startName)
-    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback)
-    if (transportMode != null) __obj.updateDynamic("transportMode")(transportMode)
+    if (startName != null) __obj.updateDynamic("startName")(startName.asInstanceOf[js.Any])
+    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback.asInstanceOf[js.Any])
+    if (transportMode != null) __obj.updateDynamic("transportMode")(transportMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchNavigatorOptions]
   }
 }

@@ -53,10 +53,10 @@ object TestCase {
     resource: js.Any = null
   ): TestCase = {
     val __obj = js.Dynamic.literal()
-    if (expectation != null) __obj.updateDynamic("expectation")(expectation)
-    if (functionMocks != null) __obj.updateDynamic("functionMocks")(functionMocks)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (expectation != null) __obj.updateDynamic("expectation")(expectation.asInstanceOf[js.Any])
+    if (functionMocks != null) __obj.updateDynamic("functionMocks")(functionMocks.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestCase]
   }
 }

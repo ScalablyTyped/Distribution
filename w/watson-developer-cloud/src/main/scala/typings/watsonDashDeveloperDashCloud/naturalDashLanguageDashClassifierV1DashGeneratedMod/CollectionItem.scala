@@ -18,9 +18,9 @@ object CollectionItem {
   @scala.inline
   def apply(classes: js.Array[ClassifiedClass] = null, text: String = null, top_class: String = null): CollectionItem = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (top_class != null) __obj.updateDynamic("top_class")(top_class)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (top_class != null) __obj.updateDynamic("top_class")(top_class.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionItem]
   }
 }

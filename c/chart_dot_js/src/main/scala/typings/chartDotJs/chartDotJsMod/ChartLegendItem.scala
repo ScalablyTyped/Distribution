@@ -39,17 +39,17 @@ object ChartLegendItem {
     text: String = null
   ): ChartLegendItem = {
     val __obj = js.Dynamic.literal()
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineDash != null) __obj.updateDynamic("lineDash")(lineDash)
+    if (lineDash != null) __obj.updateDynamic("lineDash")(lineDash.asInstanceOf[js.Any])
     if (lineDashOffset != null) __obj.updateDynamic("lineDashOffset")(lineDashOffset.asInstanceOf[js.Any])
     if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (pointStyle != null) __obj.updateDynamic("pointStyle")(pointStyle)
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (pointStyle != null) __obj.updateDynamic("pointStyle")(pointStyle.asInstanceOf[js.Any])
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendItem]
   }
 }

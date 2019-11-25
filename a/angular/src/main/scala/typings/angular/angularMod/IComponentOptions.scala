@@ -72,10 +72,10 @@ object IComponentOptions {
     transclude: Boolean | StringDictionary[String] = null
   ): IComponentOptions = {
     val __obj = js.Dynamic.literal()
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
-    if (require != null) __obj.updateDynamic("require")(require)
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
+    if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     if (transclude != null) __obj.updateDynamic("transclude")(transclude.asInstanceOf[js.Any])

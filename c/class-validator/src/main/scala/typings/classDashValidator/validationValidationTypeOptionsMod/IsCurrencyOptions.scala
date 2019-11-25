@@ -36,18 +36,18 @@ object IsCurrencyOptions {
     thousands_separator: String = null
   ): IsCurrencyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_negative_sign_placeholder)) __obj.updateDynamic("allow_negative_sign_placeholder")(allow_negative_sign_placeholder)
-    if (!js.isUndefined(allow_negatives)) __obj.updateDynamic("allow_negatives")(allow_negatives)
-    if (!js.isUndefined(allow_space_after_digits)) __obj.updateDynamic("allow_space_after_digits")(allow_space_after_digits)
-    if (!js.isUndefined(allow_space_after_symbol)) __obj.updateDynamic("allow_space_after_symbol")(allow_space_after_symbol)
-    if (decimal_separator != null) __obj.updateDynamic("decimal_separator")(decimal_separator)
-    if (!js.isUndefined(negative_sign_after_digits)) __obj.updateDynamic("negative_sign_after_digits")(negative_sign_after_digits)
-    if (!js.isUndefined(negative_sign_before_digits)) __obj.updateDynamic("negative_sign_before_digits")(negative_sign_before_digits)
-    if (!js.isUndefined(parens_for_negatives)) __obj.updateDynamic("parens_for_negatives")(parens_for_negatives)
-    if (!js.isUndefined(require_symbol)) __obj.updateDynamic("require_symbol")(require_symbol)
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (!js.isUndefined(symbol_after_digits)) __obj.updateDynamic("symbol_after_digits")(symbol_after_digits)
-    if (thousands_separator != null) __obj.updateDynamic("thousands_separator")(thousands_separator)
+    if (!js.isUndefined(allow_negative_sign_placeholder)) __obj.updateDynamic("allow_negative_sign_placeholder")(allow_negative_sign_placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_negatives)) __obj.updateDynamic("allow_negatives")(allow_negatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_space_after_digits)) __obj.updateDynamic("allow_space_after_digits")(allow_space_after_digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_space_after_symbol)) __obj.updateDynamic("allow_space_after_symbol")(allow_space_after_symbol.asInstanceOf[js.Any])
+    if (decimal_separator != null) __obj.updateDynamic("decimal_separator")(decimal_separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(negative_sign_after_digits)) __obj.updateDynamic("negative_sign_after_digits")(negative_sign_after_digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(negative_sign_before_digits)) __obj.updateDynamic("negative_sign_before_digits")(negative_sign_before_digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(parens_for_negatives)) __obj.updateDynamic("parens_for_negatives")(parens_for_negatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(require_symbol)) __obj.updateDynamic("require_symbol")(require_symbol.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbol_after_digits)) __obj.updateDynamic("symbol_after_digits")(symbol_after_digits.asInstanceOf[js.Any])
+    if (thousands_separator != null) __obj.updateDynamic("thousands_separator")(thousands_separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsCurrencyOptions]
   }
 }

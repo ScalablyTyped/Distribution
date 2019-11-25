@@ -25,7 +25,7 @@ object SearchAStarOptions {
     weight: /* edge */ EdgeCollection => Double = null
   ): SearchAStarOptions = {
     val __obj = js.Dynamic.literal(goal = goal.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
     if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction1(heuristic))
     if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchAStarOptions]

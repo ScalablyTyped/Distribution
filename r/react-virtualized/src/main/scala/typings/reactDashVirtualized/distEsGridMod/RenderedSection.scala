@@ -27,7 +27,7 @@ object RenderedSection {
     rowStartIndex: Double,
     rowStopIndex: Double
   ): RenderedSection = {
-    val __obj = js.Dynamic.literal(columnOverscanStartIndex = columnOverscanStartIndex, columnOverscanStopIndex = columnOverscanStopIndex, columnStartIndex = columnStartIndex, columnStopIndex = columnStopIndex, rowOverscanStartIndex = rowOverscanStartIndex, rowOverscanStopIndex = rowOverscanStopIndex, rowStartIndex = rowStartIndex, rowStopIndex = rowStopIndex)
+    val __obj = js.Dynamic.literal(columnOverscanStartIndex = columnOverscanStartIndex.asInstanceOf[js.Any], columnOverscanStopIndex = columnOverscanStopIndex.asInstanceOf[js.Any], columnStartIndex = columnStartIndex.asInstanceOf[js.Any], columnStopIndex = columnStopIndex.asInstanceOf[js.Any], rowOverscanStartIndex = rowOverscanStartIndex.asInstanceOf[js.Any], rowOverscanStopIndex = rowOverscanStopIndex.asInstanceOf[js.Any], rowStartIndex = rowStartIndex.asInstanceOf[js.Any], rowStopIndex = rowStopIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderedSection]
   }

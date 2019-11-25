@@ -16,8 +16,8 @@ trait R3InjectorDef extends js.Object {
 object R3InjectorDef {
   @scala.inline
   def apply(expression: Expression, statements: js.Array[Statement], `type`: Type): R3InjectorDef = {
-    val __obj = js.Dynamic.literal(expression = expression, statements = statements)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3InjectorDef]
   }
 }

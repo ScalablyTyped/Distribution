@@ -97,20 +97,20 @@ object DmgOptions {
     writeUpdateInfo: js.UndefOr[Boolean] = js.undefined
   ): DmgOptions = {
     val __obj = js.Dynamic.literal()
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
     if (iconTextSize != null) __obj.updateDynamic("iconTextSize")(iconTextSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(internetEnabled)) __obj.updateDynamic("internetEnabled")(internetEnabled)
+    if (!js.isUndefined(internetEnabled)) __obj.updateDynamic("internetEnabled")(internetEnabled.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (!js.isUndefined(sign)) __obj.updateDynamic("sign")(sign)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (window != null) __obj.updateDynamic("window")(window)
-    if (!js.isUndefined(writeUpdateInfo)) __obj.updateDynamic("writeUpdateInfo")(writeUpdateInfo)
+    if (!js.isUndefined(sign)) __obj.updateDynamic("sign")(sign.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeUpdateInfo)) __obj.updateDynamic("writeUpdateInfo")(writeUpdateInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DmgOptions]
   }
 }

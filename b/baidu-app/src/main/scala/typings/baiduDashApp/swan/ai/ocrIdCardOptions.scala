@@ -33,12 +33,12 @@ object ocrIdCardOptions {
     id_card_side: String = null,
     success: /* res */ ocrIdCardResponse => Unit = null
   ): ocrIdCardOptions = {
-    val __obj = js.Dynamic.literal(image = image)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
-    if (!js.isUndefined(detect_risk)) __obj.updateDynamic("detect_risk")(detect_risk)
+    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(detect_risk)) __obj.updateDynamic("detect_risk")(detect_risk.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (id_card_side != null) __obj.updateDynamic("id_card_side")(id_card_side)
+    if (id_card_side != null) __obj.updateDynamic("id_card_side")(id_card_side.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ocrIdCardOptions]
   }

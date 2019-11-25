@@ -19,8 +19,8 @@ object ResourceGroupFilter {
   @scala.inline
   def apply(tagName: String = null, tagValue: String = null): ResourceGroupFilter = {
     val __obj = js.Dynamic.literal()
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
-    if (tagValue != null) __obj.updateDynamic("tagValue")(tagValue)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (tagValue != null) __obj.updateDynamic("tagValue")(tagValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceGroupFilter]
   }
 }

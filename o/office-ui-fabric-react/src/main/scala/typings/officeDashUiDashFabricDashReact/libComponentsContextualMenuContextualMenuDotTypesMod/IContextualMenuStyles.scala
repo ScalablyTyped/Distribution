@@ -42,7 +42,7 @@ object IContextualMenuStyles {
     root: IStyle = null,
     title: IStyle = null
   ): IContextualMenuStyles = {
-    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])

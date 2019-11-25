@@ -42,21 +42,21 @@ object RequestPaymentOptions {
     test_result: String = null,
     to: String = null
   ): RequestPaymentOptions = {
-    val __obj = js.Dynamic.literal(pattern_id = pattern_id)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(pattern_id = pattern_id.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (amount_due != null) __obj.updateDynamic("amount_due")(amount_due.asInstanceOf[js.Any])
-    if (!js.isUndefined(codepro)) __obj.updateDynamic("codepro")(codepro)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (!js.isUndefined(codepro)) __obj.updateDynamic("codepro")(codepro.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (expire_period != null) __obj.updateDynamic("expire_period")(expire_period.asInstanceOf[js.Any])
-    if (!js.isUndefined(hold_for_pickup)) __obj.updateDynamic("hold_for_pickup")(hold_for_pickup)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (`phone-number` != null) __obj.updateDynamic("phone-number")(`phone-number`)
-    if (test_card != null) __obj.updateDynamic("test_card")(test_card)
-    if (!js.isUndefined(test_payment)) __obj.updateDynamic("test_payment")(test_payment)
-    if (test_result != null) __obj.updateDynamic("test_result")(test_result)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (!js.isUndefined(hold_for_pickup)) __obj.updateDynamic("hold_for_pickup")(hold_for_pickup.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (`phone-number` != null) __obj.updateDynamic("phone-number")(`phone-number`.asInstanceOf[js.Any])
+    if (test_card != null) __obj.updateDynamic("test_card")(test_card.asInstanceOf[js.Any])
+    if (!js.isUndefined(test_payment)) __obj.updateDynamic("test_payment")(test_payment.asInstanceOf[js.Any])
+    if (test_result != null) __obj.updateDynamic("test_result")(test_result.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestPaymentOptions]
   }
 }

@@ -12,7 +12,7 @@ object EditorDeserialization {
   @scala.inline
   def apply(custom: js.Function = null): EditorDeserialization = {
     val __obj = js.Dynamic.literal()
-    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorDeserialization]
   }
 }

@@ -19,9 +19,9 @@ object Anon_Key {
     uri: String = null
   ): Anon_Key = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

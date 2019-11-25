@@ -25,8 +25,8 @@ object InputFieldGroupProperties {
   @scala.inline
   def apply(description: String = null, visibilityExpression: String = null): InputFieldGroupProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (visibilityExpression != null) __obj.updateDynamic("visibilityExpression")(visibilityExpression)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (visibilityExpression != null) __obj.updateDynamic("visibilityExpression")(visibilityExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputFieldGroupProperties]
   }
 }

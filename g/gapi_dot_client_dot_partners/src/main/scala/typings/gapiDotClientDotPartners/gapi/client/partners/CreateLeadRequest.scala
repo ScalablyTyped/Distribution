@@ -24,9 +24,9 @@ object CreateLeadRequest {
     requestMetadata: RequestMetadata = null
   ): CreateLeadRequest = {
     val __obj = js.Dynamic.literal()
-    if (lead != null) __obj.updateDynamic("lead")(lead)
-    if (recaptchaChallenge != null) __obj.updateDynamic("recaptchaChallenge")(recaptchaChallenge)
-    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata)
+    if (lead != null) __obj.updateDynamic("lead")(lead.asInstanceOf[js.Any])
+    if (recaptchaChallenge != null) __obj.updateDynamic("recaptchaChallenge")(recaptchaChallenge.asInstanceOf[js.Any])
+    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLeadRequest]
   }
 }

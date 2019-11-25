@@ -87,18 +87,18 @@ object Options {
     word: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHashBang)) __obj.updateDynamic("allowHashBang")(allowHashBang)
-    if (!js.isUndefined(allowImportExportEverywhere)) __obj.updateDynamic("allowImportExportEverywhere")(allowImportExportEverywhere)
+    if (!js.isUndefined(allowHashBang)) __obj.updateDynamic("allowHashBang")(allowHashBang.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowImportExportEverywhere)) __obj.updateDynamic("allowImportExportEverywhere")(allowImportExportEverywhere.asInstanceOf[js.Any])
     if (allowReserved != null) __obj.updateDynamic("allowReserved")(allowReserved.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowReturnOutsideFunction)) __obj.updateDynamic("allowReturnOutsideFunction")(allowReturnOutsideFunction)
+    if (!js.isUndefined(allowReturnOutsideFunction)) __obj.updateDynamic("allowReturnOutsideFunction")(allowReturnOutsideFunction.asInstanceOf[js.Any])
     if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
     if (isRequire != null) __obj.updateDynamic("isRequire")(js.Any.fromFunction1(isRequire))
-    if (!js.isUndefined(locations)) __obj.updateDynamic("locations")(locations)
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (!js.isUndefined(locations)) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    if (word != null) __obj.updateDynamic("word")(word)
+    if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -15,8 +15,8 @@ object Weight {
   @scala.inline
   def apply(unit: String = null, value: String = null): Weight = {
     val __obj = js.Dynamic.literal()
-    if (unit != null) __obj.updateDynamic("unit")(unit)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Weight]
   }
 }

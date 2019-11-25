@@ -67,9 +67,9 @@ object Timings {
     send: Int | Double = null,
     ssl: Int | Double = null
   ): Timings = {
-    val __obj = js.Dynamic.literal(receive = receive, wait = wait)
+    val __obj = js.Dynamic.literal(receive = receive.asInstanceOf[js.Any], wait = wait.asInstanceOf[js.Any])
     if (blocked != null) __obj.updateDynamic("blocked")(blocked.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
     if (dns != null) __obj.updateDynamic("dns")(dns.asInstanceOf[js.Any])
     if (send != null) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ trait Anon_Joins extends js.Object {
 object Anon_Joins {
   @scala.inline
   def apply(structure: js.Any): Anon_Joins = {
-    val __obj = js.Dynamic.literal(structure = structure)
+    val __obj = js.Dynamic.literal(structure = structure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Joins]
   }

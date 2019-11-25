@@ -78,7 +78,7 @@ object IDropdownStyles {
     root: IStyle = null,
     title: IStyle = null
   ): IDropdownStyles = {
-    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
     if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
     if (caretDown != null) __obj.updateDynamic("caretDown")(caretDown.asInstanceOf[js.Any])
     if (caretDownWrapper != null) __obj.updateDynamic("caretDownWrapper")(caretDownWrapper.asInstanceOf[js.Any])

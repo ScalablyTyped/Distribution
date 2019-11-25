@@ -17,9 +17,9 @@ object EmittedAsset {
   @scala.inline
   def apply(`type`: asset, fileName: String = null, name: String = null, source: String | Buffer = null): EmittedAsset = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmittedAsset]
   }

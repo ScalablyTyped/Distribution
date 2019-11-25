@@ -15,7 +15,7 @@ trait DistributionUniform extends Distribution {
 object DistributionUniform {
   @scala.inline
   def apply(function: uniform, max: Double | SignalRef = null, min: Double | SignalRef = null): DistributionUniform = {
-    val __obj = js.Dynamic.literal(function = function)
+    val __obj = js.Dynamic.literal(function = function.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionUniform]

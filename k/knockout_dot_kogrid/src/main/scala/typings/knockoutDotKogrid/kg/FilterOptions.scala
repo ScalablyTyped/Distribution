@@ -22,9 +22,9 @@ object FilterOptions {
     useExternalFilter: js.UndefOr[Boolean] = js.undefined
   ): FilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (filterText != null) __obj.updateDynamic("filterText")(filterText)
+    if (filterText != null) __obj.updateDynamic("filterText")(filterText.asInstanceOf[js.Any])
     if (filterThrottle != null) __obj.updateDynamic("filterThrottle")(filterThrottle.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExternalFilter)) __obj.updateDynamic("useExternalFilter")(useExternalFilter)
+    if (!js.isUndefined(useExternalFilter)) __obj.updateDynamic("useExternalFilter")(useExternalFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions]
   }
 }

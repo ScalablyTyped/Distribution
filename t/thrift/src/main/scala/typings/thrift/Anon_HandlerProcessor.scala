@@ -13,7 +13,7 @@ trait Anon_HandlerProcessor[TProcessor, THandler] extends js.Object {
 object Anon_HandlerProcessor {
   @scala.inline
   def apply[TProcessor, THandler](handler: THandler, processor: TProcessorConstructor[TProcessor, THandler]): Anon_HandlerProcessor[TProcessor, THandler] = {
-    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], processor = processor)
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], processor = processor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HandlerProcessor[TProcessor, THandler]]
   }

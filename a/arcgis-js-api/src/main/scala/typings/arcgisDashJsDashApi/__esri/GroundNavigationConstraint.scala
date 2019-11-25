@@ -33,10 +33,10 @@ object GroundNavigationConstraint {
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, GroundNavigationConstraint]) with (js.Function1[/* props */ HashMap[_], GroundNavigationConstraint]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): GroundNavigationConstraint = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (set != null) __obj.updateDynamic("set")(set)
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[GroundNavigationConstraint]
   }

@@ -12,7 +12,7 @@ trait FileBase extends js.Object {
 object FileBase {
   @scala.inline
   def apply(file_id: String, file_size: Int | Double = null): FileBase = {
-    val __obj = js.Dynamic.literal(file_id = file_id)
+    val __obj = js.Dynamic.literal(file_id = file_id.asInstanceOf[js.Any])
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileBase]
   }

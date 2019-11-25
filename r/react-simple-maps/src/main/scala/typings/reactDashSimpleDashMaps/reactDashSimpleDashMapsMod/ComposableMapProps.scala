@@ -35,15 +35,15 @@ object ComposableMapProps {
     width: Int | Double = null
   ): ComposableMapProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (defs != null) __obj.updateDynamic("defs")(defs)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
+    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (projectionConfig != null) __obj.updateDynamic("projectionConfig")(projectionConfig)
-    if (!js.isUndefined(showCenter)) __obj.updateDynamic("showCenter")(showCenter)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (projectionConfig != null) __obj.updateDynamic("projectionConfig")(projectionConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCenter)) __obj.updateDynamic("showCenter")(showCenter.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposableMapProps]
   }

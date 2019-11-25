@@ -13,7 +13,7 @@ trait RouteNodeState extends js.Object {
 object RouteNodeState {
   @scala.inline
   def apply(meta: RouteNodeStateMeta, name: String, params: js.Object): RouteNodeState = {
-    val __obj = js.Dynamic.literal(meta = meta, name = name, params = params)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RouteNodeState]
   }

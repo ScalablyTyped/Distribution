@@ -78,13 +78,13 @@ object Connect {
     val __obj = js.Dynamic.literal()
     if (frameMax != null) __obj.updateDynamic("frameMax")(frameMax.asInstanceOf[js.Any])
     if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (username != null) __obj.updateDynamic("username")(username)
-    if (vhost != null) __obj.updateDynamic("vhost")(vhost)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connect]
   }
 }

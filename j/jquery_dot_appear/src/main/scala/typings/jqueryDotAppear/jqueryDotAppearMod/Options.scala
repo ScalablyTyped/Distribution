@@ -35,7 +35,7 @@ object Options {
     if (accX != null) __obj.updateDynamic("accX")(accX.asInstanceOf[js.Any])
     if (accY != null) __obj.updateDynamic("accY")(accY.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(one)) __obj.updateDynamic("one")(one)
+    if (!js.isUndefined(one)) __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[T]]
   }
 }

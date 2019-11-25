@@ -44,6 +44,5 @@ object Attr extends js.Object {
     * @returns - the value type for the attribute
     */
   def value(attr: String): Double = js.native
-  type STATES = typings.nodegit.attrMod.Attr.STATES
 }
 

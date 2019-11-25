@@ -34,10 +34,10 @@ object Options {
     vars: VarsOption = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(always)) __obj.updateDynamic("always")(always)
-    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (vars != null) __obj.updateDynamic("vars")(vars)
+    if (!js.isUndefined(always)) __obj.updateDynamic("always")(always.asInstanceOf[js.Any])
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (vars != null) __obj.updateDynamic("vars")(vars.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

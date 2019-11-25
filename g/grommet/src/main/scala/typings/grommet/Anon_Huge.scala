@@ -22,11 +22,11 @@ object Anon_Huge {
     xlarge: String = null
   ): Anon_Huge = {
     val __obj = js.Dynamic.literal()
-    if (huge != null) __obj.updateDynamic("huge")(huge)
-    if (large != null) __obj.updateDynamic("large")(large)
-    if (medium != null) __obj.updateDynamic("medium")(medium)
-    if (small != null) __obj.updateDynamic("small")(small)
-    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge)
+    if (huge != null) __obj.updateDynamic("huge")(huge.asInstanceOf[js.Any])
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Huge]
   }
 }

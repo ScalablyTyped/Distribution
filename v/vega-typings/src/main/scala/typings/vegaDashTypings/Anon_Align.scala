@@ -27,7 +27,7 @@ object Anon_Align {
     fontSize: Double,
     text: String
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal(align = align, angle = angle, baseline = baseline, fill = fill, font = font, fontSize = fontSize, text = text)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], angle = angle.asInstanceOf[js.Any], baseline = baseline.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Align]
   }

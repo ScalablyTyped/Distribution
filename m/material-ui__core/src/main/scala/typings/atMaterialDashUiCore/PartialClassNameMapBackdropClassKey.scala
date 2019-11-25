@@ -14,8 +14,8 @@ object PartialClassNameMapBackdropClassKey {
   @scala.inline
   def apply(invisible: String = null, root: String = null): PartialClassNameMapBackdropClassKey = {
     val __obj = js.Dynamic.literal()
-    if (invisible != null) __obj.updateDynamic("invisible")(invisible)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (invisible != null) __obj.updateDynamic("invisible")(invisible.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapBackdropClassKey]
   }
 }

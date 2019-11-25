@@ -74,12 +74,12 @@ object IOptions {
     rowDelimiter: String = null,
     startIndex: Int | Double = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(columnOffsets = columnOffsets, data = data)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    val __obj = js.Dynamic.literal(columnOffsets = columnOffsets.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
     if (ncols != null) __obj.updateDynamic("ncols")(ncols.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote)
-    if (rowDelimiter != null) __obj.updateDynamic("rowDelimiter")(rowDelimiter)
+    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
+    if (rowDelimiter != null) __obj.updateDynamic("rowDelimiter")(rowDelimiter.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

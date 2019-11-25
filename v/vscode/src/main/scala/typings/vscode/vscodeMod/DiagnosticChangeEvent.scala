@@ -14,7 +14,7 @@ trait DiagnosticChangeEvent extends js.Object {
 object DiagnosticChangeEvent {
   @scala.inline
   def apply(uris: js.Array[Uri]): DiagnosticChangeEvent = {
-    val __obj = js.Dynamic.literal(uris = uris)
+    val __obj = js.Dynamic.literal(uris = uris.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DiagnosticChangeEvent]
   }

@@ -14,7 +14,7 @@ trait module extends js.Object {
 object module {
   @scala.inline
   def apply(description: String, mod: String, options: StringDictionary[helpOption]): module = {
-    val __obj = js.Dynamic.literal(description = description, mod = mod, options = options)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], mod = mod.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[module]
   }

@@ -1,6 +1,5 @@
 package typings.dojo.dojox.grid.enhanced.plugins
 
-import typings.dojo.Fn_Index
 import typings.dojo.dojox.grid.enhanced._Plugin
 import typings.std.RegExp
 import scala.scalajs.js
@@ -24,18 +23,18 @@ class Search protected () extends _Plugin {
     * @param searchArgs
     * @param onSearched
     */
-  def searchRow(searchArgs: String, onSearched: Fn_Index): Unit = js.native
+  def searchRow(searchArgs: String, onSearched: js.Function2[/* index */ Double, /* item */ js.Object, _]): Unit = js.native
   /**
     *
     * @param searchArgs
     * @param onSearched
     */
-  def searchRow(searchArgs: js.Object, onSearched: Fn_Index): Unit = js.native
+  def searchRow(searchArgs: js.Object, onSearched: js.Function2[/* index */ Double, /* item */ js.Object, _]): Unit = js.native
   /**
     *
     * @param searchArgs
     * @param onSearched
     */
-  def searchRow(searchArgs: RegExp, onSearched: Fn_Index): Unit = js.native
+  def searchRow(searchArgs: RegExp, onSearched: js.Function2[/* index */ Double, /* item */ js.Object, _]): Unit = js.native
 }
 

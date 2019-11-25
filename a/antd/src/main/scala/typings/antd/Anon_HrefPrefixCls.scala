@@ -19,7 +19,7 @@ object Anon_HrefPrefixCls {
     prefixCls: Requireable[String],
     separator: Requireable[String | ReactElementLike]
   ): Anon_HrefPrefixCls = {
-    val __obj = js.Dynamic.literal(href = href, prefixCls = prefixCls, separator = separator)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HrefPrefixCls]
   }

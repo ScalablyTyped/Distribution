@@ -13,7 +13,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(integer: Boolean, max: Double, min: Double): Options = {
-    val __obj = js.Dynamic.literal(integer = integer, max = max, min = min)
+    val __obj = js.Dynamic.literal(integer = integer.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

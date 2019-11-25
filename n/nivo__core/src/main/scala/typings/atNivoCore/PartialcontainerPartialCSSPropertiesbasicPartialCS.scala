@@ -23,11 +23,11 @@ object PartialcontainerPartialCSSPropertiesbasicPartialCS {
     tableCell: PartialCSSProperties = null
   ): PartialcontainerPartialCSSPropertiesbasicPartialCS = {
     val __obj = js.Dynamic.literal()
-    if (basic != null) __obj.updateDynamic("basic")(basic)
-    if (chip != null) __obj.updateDynamic("chip")(chip)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (tableCell != null) __obj.updateDynamic("tableCell")(tableCell)
+    if (basic != null) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
+    if (chip != null) __obj.updateDynamic("chip")(chip.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (tableCell != null) __obj.updateDynamic("tableCell")(tableCell.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialcontainerPartialCSSPropertiesbasicPartialCS]
   }
 }

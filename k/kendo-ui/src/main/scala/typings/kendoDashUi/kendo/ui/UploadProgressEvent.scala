@@ -18,8 +18,8 @@ object UploadProgressEvent {
     files: js.Array[_] = null,
     percentComplete: Int | Double = null
   ): UploadProgressEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (files != null) __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadProgressEvent]
   }

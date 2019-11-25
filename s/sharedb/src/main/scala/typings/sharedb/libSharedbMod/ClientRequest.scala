@@ -14,8 +14,8 @@ trait ClientRequest
 object ClientRequest {
   @scala.inline
   def apply(a: RequestAction, StringDictionary: /* propertyName */ StringDictionary[js.Any] = null): ClientRequest = {
-    val __obj = js.Dynamic.literal(a = a)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ClientRequest]
   }
 }

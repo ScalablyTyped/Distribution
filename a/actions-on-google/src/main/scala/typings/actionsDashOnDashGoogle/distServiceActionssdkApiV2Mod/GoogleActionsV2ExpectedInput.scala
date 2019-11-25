@@ -30,9 +30,9 @@ object GoogleActionsV2ExpectedInput {
     speechBiasingHints: js.Array[String] = null
   ): GoogleActionsV2ExpectedInput = {
     val __obj = js.Dynamic.literal()
-    if (inputPrompt != null) __obj.updateDynamic("inputPrompt")(inputPrompt)
-    if (possibleIntents != null) __obj.updateDynamic("possibleIntents")(possibleIntents)
-    if (speechBiasingHints != null) __obj.updateDynamic("speechBiasingHints")(speechBiasingHints)
+    if (inputPrompt != null) __obj.updateDynamic("inputPrompt")(inputPrompt.asInstanceOf[js.Any])
+    if (possibleIntents != null) __obj.updateDynamic("possibleIntents")(possibleIntents.asInstanceOf[js.Any])
+    if (speechBiasingHints != null) __obj.updateDynamic("speechBiasingHints")(speechBiasingHints.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2ExpectedInput]
   }
 }

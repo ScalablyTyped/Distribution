@@ -30,13 +30,13 @@ object RoomOptions {
   ): RoomOptions = {
     val __obj = js.Dynamic.literal()
     if (audioBandwidth != null) __obj.updateDynamic("audioBandwidth")(audioBandwidth.asInstanceOf[js.Any])
-    if (audioCodec != null) __obj.updateDynamic("audioCodec")(audioCodec)
-    if (!js.isUndefined(audioReceiveEnabled)) __obj.updateDynamic("audioReceiveEnabled")(audioReceiveEnabled)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (audioCodec != null) __obj.updateDynamic("audioCodec")(audioCodec.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioReceiveEnabled)) __obj.updateDynamic("audioReceiveEnabled")(audioReceiveEnabled.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     if (videoBandwidth != null) __obj.updateDynamic("videoBandwidth")(videoBandwidth.asInstanceOf[js.Any])
-    if (videoCodec != null) __obj.updateDynamic("videoCodec")(videoCodec)
-    if (!js.isUndefined(videoReceiveEnabled)) __obj.updateDynamic("videoReceiveEnabled")(videoReceiveEnabled)
+    if (videoCodec != null) __obj.updateDynamic("videoCodec")(videoCodec.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoReceiveEnabled)) __obj.updateDynamic("videoReceiveEnabled")(videoReceiveEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomOptions]
   }
 }

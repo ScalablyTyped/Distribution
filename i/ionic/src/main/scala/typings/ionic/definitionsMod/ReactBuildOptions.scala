@@ -26,16 +26,16 @@ object ReactBuildOptions {
     sourceMap: js.UndefOr[Boolean] = js.undefined,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): ReactBuildOptions = {
-    val __obj = js.Dynamic.literal(engine = engine)
-    __obj.updateDynamic("--")(`--`)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci)
-    if (!js.isUndefined(inlineRuntimeChunk)) __obj.updateDynamic("inlineRuntimeChunk")(inlineRuntimeChunk)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (project != null) __obj.updateDynamic("project")(project)
-    if (publicUrl != null) __obj.updateDynamic("publicUrl")(publicUrl)
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
+    __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineRuntimeChunk)) __obj.updateDynamic("inlineRuntimeChunk")(inlineRuntimeChunk.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (publicUrl != null) __obj.updateDynamic("publicUrl")(publicUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactBuildOptions]
   }
 }

@@ -11,7 +11,7 @@ trait CollectionOptionsWithID extends js.Object {
 object CollectionOptionsWithID {
   @scala.inline
   def apply(collectionID: String): CollectionOptionsWithID = {
-    val __obj = js.Dynamic.literal(collectionID = collectionID)
+    val __obj = js.Dynamic.literal(collectionID = collectionID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollectionOptionsWithID]
   }

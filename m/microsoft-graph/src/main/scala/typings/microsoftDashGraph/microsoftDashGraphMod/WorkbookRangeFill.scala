@@ -16,8 +16,8 @@ object WorkbookRangeFill {
   @scala.inline
   def apply(color: String = null, id: String = null): WorkbookRangeFill = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookRangeFill]
   }
 }

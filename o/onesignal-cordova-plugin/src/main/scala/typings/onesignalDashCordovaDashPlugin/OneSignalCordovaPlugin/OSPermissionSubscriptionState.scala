@@ -17,7 +17,7 @@ object OSPermissionSubscriptionState {
     permissionStatus: OSPermissionState,
     subscriptionStatus: OSSubscriptionState
   ): OSPermissionSubscriptionState = {
-    val __obj = js.Dynamic.literal(emailSubscriptionStatus = emailSubscriptionStatus, permissionStatus = permissionStatus, subscriptionStatus = subscriptionStatus)
+    val __obj = js.Dynamic.literal(emailSubscriptionStatus = emailSubscriptionStatus.asInstanceOf[js.Any], permissionStatus = permissionStatus.asInstanceOf[js.Any], subscriptionStatus = subscriptionStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OSPermissionSubscriptionState]
   }

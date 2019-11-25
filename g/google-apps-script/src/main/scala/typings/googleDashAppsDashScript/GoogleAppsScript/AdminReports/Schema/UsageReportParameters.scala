@@ -24,12 +24,12 @@ object UsageReportParameters {
     stringValue: String = null
   ): UsageReportParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
-    if (datetimeValue != null) __obj.updateDynamic("datetimeValue")(datetimeValue)
-    if (intValue != null) __obj.updateDynamic("intValue")(intValue)
-    if (msgValue != null) __obj.updateDynamic("msgValue")(msgValue)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (datetimeValue != null) __obj.updateDynamic("datetimeValue")(datetimeValue.asInstanceOf[js.Any])
+    if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
+    if (msgValue != null) __obj.updateDynamic("msgValue")(msgValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageReportParameters]
   }
 }

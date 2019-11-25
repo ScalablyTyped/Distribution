@@ -15,8 +15,8 @@ trait CancelFrame extends Frame {
 object CancelFrame {
   @scala.inline
   def apply(flags: Double, streamId: Double, `type`: `0x09`, length: Int | Double = null): CancelFrame = {
-    val __obj = js.Dynamic.literal(flags = flags, streamId = streamId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelFrame]
   }

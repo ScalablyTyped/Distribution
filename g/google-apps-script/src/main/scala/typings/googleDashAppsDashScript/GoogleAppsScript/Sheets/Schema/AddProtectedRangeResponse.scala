@@ -12,7 +12,7 @@ object AddProtectedRangeResponse {
   @scala.inline
   def apply(protectedRange: ProtectedRange = null): AddProtectedRangeResponse = {
     val __obj = js.Dynamic.literal()
-    if (protectedRange != null) __obj.updateDynamic("protectedRange")(protectedRange)
+    if (protectedRange != null) __obj.updateDynamic("protectedRange")(protectedRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddProtectedRangeResponse]
   }
 }

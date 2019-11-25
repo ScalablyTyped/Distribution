@@ -18,8 +18,8 @@ trait IonRouteRedirect extends js.Object {
 object IonRouteRedirect {
   @scala.inline
   def apply(from: String, to: String = null): IonRouteRedirect = {
-    val __obj = js.Dynamic.literal(from = from)
-    if (to != null) __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouteRedirect]
   }
 }

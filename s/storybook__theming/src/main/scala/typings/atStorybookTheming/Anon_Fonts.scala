@@ -13,7 +13,7 @@ trait Anon_Fonts extends js.Object {
 object Anon_Fonts {
   @scala.inline
   def apply(fonts: Anon_Base, size: Anon_Code, weight: Anon_Black): Anon_Fonts = {
-    val __obj = js.Dynamic.literal(fonts = fonts, size = size, weight = weight)
+    val __obj = js.Dynamic.literal(fonts = fonts.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fonts]
   }

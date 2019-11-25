@@ -41,7 +41,7 @@ object Pet {
     size: String,
     status: String
   ): Pet = {
-    val __obj = js.Dynamic.literal(age = age, animal = animal, breeds = breeds, contact = contact, description = description, id = id, media = media, mix = mix, name = name, options = options, sex = sex, shelterId = shelterId, shelterPetId = shelterPetId, size = size, status = status)
+    val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], animal = animal.asInstanceOf[js.Any], breeds = breeds.asInstanceOf[js.Any], contact = contact.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], mix = mix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], sex = sex.asInstanceOf[js.Any], shelterId = shelterId.asInstanceOf[js.Any], shelterPetId = shelterPetId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Pet]
   }

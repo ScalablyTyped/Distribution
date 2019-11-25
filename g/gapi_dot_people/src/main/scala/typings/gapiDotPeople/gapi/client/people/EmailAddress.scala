@@ -15,8 +15,8 @@ trait EmailAddress extends js.Object {
 object EmailAddress {
   @scala.inline
   def apply(displayName: String, formattedType: String, metadata: FieldMetadata, `type`: String, value: String): EmailAddress = {
-    val __obj = js.Dynamic.literal(displayName = displayName, formattedType = formattedType, metadata = metadata, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], formattedType = formattedType.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailAddress]
   }
 }

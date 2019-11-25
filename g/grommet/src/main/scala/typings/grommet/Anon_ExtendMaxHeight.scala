@@ -15,7 +15,7 @@ object Anon_ExtendMaxHeight {
   def apply(extend: ExtendType = null, maxHeight: String = null): Anon_ExtendMaxHeight = {
     val __obj = js.Dynamic.literal()
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtendMaxHeight]
   }
 }

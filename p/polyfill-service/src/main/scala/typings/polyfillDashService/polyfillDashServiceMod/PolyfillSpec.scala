@@ -13,8 +13,8 @@ trait PolyfillSpec extends js.Object {
 object PolyfillSpec {
   @scala.inline
   def apply(flags: Set[PolyfillFlag], aliasOf: Set[String] = null): PolyfillSpec = {
-    val __obj = js.Dynamic.literal(flags = flags)
-    if (aliasOf != null) __obj.updateDynamic("aliasOf")(aliasOf)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
+    if (aliasOf != null) __obj.updateDynamic("aliasOf")(aliasOf.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolyfillSpec]
   }
 }

@@ -19,7 +19,7 @@ object Modifiers {
     today: Modifier | js.Array[Modifier] = null
   ): Modifiers = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (outside != null) __obj.updateDynamic("outside")(outside.asInstanceOf[js.Any])
     if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
     __obj.asInstanceOf[Modifiers]

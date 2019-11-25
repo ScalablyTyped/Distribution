@@ -50,10 +50,10 @@ object AppSelectionOptions {
     val __obj = js.Dynamic.literal()
     if (androidTheme != null) __obj.updateDynamic("androidTheme")(androidTheme.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)
-    if (dialogHeaderText != null) __obj.updateDynamic("dialogHeaderText")(dialogHeaderText)
-    if (list != null) __obj.updateDynamic("list")(list)
-    if (rememberChoice != null) __obj.updateDynamic("rememberChoice")(rememberChoice)
+    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText.asInstanceOf[js.Any])
+    if (dialogHeaderText != null) __obj.updateDynamic("dialogHeaderText")(dialogHeaderText.asInstanceOf[js.Any])
+    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (rememberChoice != null) __obj.updateDynamic("rememberChoice")(rememberChoice.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppSelectionOptions]
   }
 }

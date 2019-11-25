@@ -22,7 +22,7 @@ trait TempFileNaming extends js.Object {
 object TempFileNaming {
   @scala.inline
   def apply(prefix: String, suffix: String): TempFileNaming = {
-    val __obj = js.Dynamic.literal(prefix = prefix, suffix = suffix)
+    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TempFileNaming]
   }

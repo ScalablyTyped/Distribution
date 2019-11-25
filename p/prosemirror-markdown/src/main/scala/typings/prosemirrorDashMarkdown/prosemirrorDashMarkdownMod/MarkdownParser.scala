@@ -2,7 +2,6 @@ package typings.prosemirrorDashMarkdown.prosemirrorDashMarkdownMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.markdownDashIt.libMod.MarkdownIt
-import typings.markdownDashIt.libTokenMod.^
 import typings.prosemirrorDashModel.prosemirrorDashModelMod.Node
 import typings.prosemirrorDashModel.prosemirrorDashModelMod.Schema
 import scala.scalajs.js
@@ -56,7 +55,7 @@ class MarkdownParser[S /* <: Schema[_, _] */] protected () extends js.Object {
     * this parser. Can be useful to copy and modify to base other
     * parsers on.
     */
-  var tokens: StringDictionary[^] = js.native
+  var tokens: StringDictionary[typings.markdownDashIt.libTokenMod.^] = js.native
   /**
     * Parse a string as [CommonMark](http://commonmark.org/) markup,
     * and create a ProseMirror document as prescribed by this parser's

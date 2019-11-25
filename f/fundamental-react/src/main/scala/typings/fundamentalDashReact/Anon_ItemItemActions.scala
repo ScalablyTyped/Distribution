@@ -21,7 +21,7 @@ object Anon_ItemItemActions {
     ItemActions: FunctionComponent[ListGroupItemActionsProps],
     ItemCheckbox: FunctionComponent[ListGroupItemCheckboxProps]
   ): Anon_ItemItemActions = {
-    val __obj = js.Dynamic.literal(Item = Item, ItemActions = ItemActions, ItemCheckbox = ItemCheckbox)
+    val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], ItemActions = ItemActions.asInstanceOf[js.Any], ItemCheckbox = ItemCheckbox.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemItemActions]
   }

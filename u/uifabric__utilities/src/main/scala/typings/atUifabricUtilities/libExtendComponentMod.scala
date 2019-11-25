@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object libExtendComponentMod extends js.Object {
   def extendComponent[T /* <: Component[js.Object, js.Object, _] */](
     parent: T,
-    methods: /* import warning: ImportType.apply c Unsupported type mapping: 
+    methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? T[key]}
     */ typings.atUifabricUtilities.atUifabricUtilitiesStrings.extendComponent with T
   ): Unit = js.native

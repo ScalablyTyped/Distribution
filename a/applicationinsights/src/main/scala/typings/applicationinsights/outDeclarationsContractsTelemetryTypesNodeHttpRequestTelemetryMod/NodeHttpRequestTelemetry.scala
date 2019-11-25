@@ -40,13 +40,13 @@ object NodeHttpRequestTelemetry {
     tagOverrides: StringDictionary[String] = null,
     time: Date = null
   ): NodeHttpRequestTelemetry = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
-    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeHttpRequestTelemetry]
   }
 }

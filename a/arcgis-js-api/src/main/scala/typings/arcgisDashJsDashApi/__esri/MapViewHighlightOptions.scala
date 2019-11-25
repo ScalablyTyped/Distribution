@@ -53,13 +53,13 @@ object MapViewHighlightOptions {
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, MapViewHighlightOptions]) with (js.Function1[/* props */ HashMap[_], MapViewHighlightOptions]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): MapViewHighlightOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor)
+    if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor.asInstanceOf[js.Any])
     if (haloOpacity != null) __obj.updateDynamic("haloOpacity")(haloOpacity.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set)
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[MapViewHighlightOptions]
   }

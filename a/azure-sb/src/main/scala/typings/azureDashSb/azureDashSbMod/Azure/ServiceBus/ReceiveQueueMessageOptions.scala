@@ -13,7 +13,7 @@ object ReceiveQueueMessageOptions {
   @scala.inline
   def apply(isPeekLock: js.UndefOr[Boolean] = js.undefined, timeoutIntervalInS: Int | Double = null): ReceiveQueueMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPeekLock)) __obj.updateDynamic("isPeekLock")(isPeekLock)
+    if (!js.isUndefined(isPeekLock)) __obj.updateDynamic("isPeekLock")(isPeekLock.asInstanceOf[js.Any])
     if (timeoutIntervalInS != null) __obj.updateDynamic("timeoutIntervalInS")(timeoutIntervalInS.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiveQueueMessageOptions]
   }

@@ -23,12 +23,12 @@ object DelayedTransitionDefinition {
     meta: Record[String, _] = null,
     target: TransitionTargets[TContext] = null
   ): DelayedTransitionDefinition[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(actions = actions, delay = delay.asInstanceOf[js.Any], event = event, source = source)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (cond != null) __obj.updateDynamic("cond")(cond.asInstanceOf[js.Any])
     if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelayedTransitionDefinition[TContext, TEvent]]
   }
 }

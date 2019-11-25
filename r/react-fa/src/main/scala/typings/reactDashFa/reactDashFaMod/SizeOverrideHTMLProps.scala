@@ -23,9 +23,9 @@ object SizeOverrideHTMLProps {
     size: js.Any = null
   ): SizeOverrideHTMLProps[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeOverrideHTMLProps[T]]
   }
 }

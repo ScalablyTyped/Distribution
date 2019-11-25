@@ -25,8 +25,8 @@ trait FillGradientAngle extends Fill {
 object FillGradientAngle {
   @scala.inline
   def apply(degree: Double, gradient: angle, stops: js.Array[GradientStop], `type`: gradient): FillGradientAngle = {
-    val __obj = js.Dynamic.literal(degree = degree, gradient = gradient, stops = stops)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(degree = degree.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillGradientAngle]
   }
 }

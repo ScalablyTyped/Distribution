@@ -13,7 +13,7 @@ trait StaticRendererResult extends js.Object {
 object StaticRendererResult {
   @scala.inline
   def apply(css: Anon_Content, html: String): StaticRendererResult = {
-    val __obj = js.Dynamic.literal(css = css, html = html)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StaticRendererResult]
   }

@@ -51,14 +51,14 @@ object NodesPhase {
     `type`: String = null
   ): NodesPhase = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
-    if (lineDashArray != null) __obj.updateDynamic("lineDashArray")(lineDashArray)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
+    if (lineDashArray != null) __obj.updateDynamic("lineDashArray")(lineDashArray.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesPhase]
   }
 }

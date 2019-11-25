@@ -106,7 +106,7 @@ object Dining {
     tag: String,
     taste_rating: String
   ): Dining = {
-    val __obj = js.Dynamic.literal(addition = addition, atmosphere = atmosphere, cost = cost, cp_rating = cp_rating, cuisines = cuisines, deep_src = deep_src, environment_rating = environment_rating, intro = intro, opentime = opentime, opentime_GDF = opentime_GDF, ordering_app_url = ordering_app_url, ordering_wap_url = ordering_wap_url, ordering_web_url = ordering_web_url, photos = photos, rating = rating, recommend = recommend, service_rating = service_rating, tag = tag, taste_rating = taste_rating)
+    val __obj = js.Dynamic.literal(addition = addition.asInstanceOf[js.Any], atmosphere = atmosphere.asInstanceOf[js.Any], cost = cost.asInstanceOf[js.Any], cp_rating = cp_rating.asInstanceOf[js.Any], cuisines = cuisines.asInstanceOf[js.Any], deep_src = deep_src.asInstanceOf[js.Any], environment_rating = environment_rating.asInstanceOf[js.Any], intro = intro.asInstanceOf[js.Any], opentime = opentime.asInstanceOf[js.Any], opentime_GDF = opentime_GDF.asInstanceOf[js.Any], ordering_app_url = ordering_app_url.asInstanceOf[js.Any], ordering_wap_url = ordering_wap_url.asInstanceOf[js.Any], ordering_web_url = ordering_web_url.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any], recommend = recommend.asInstanceOf[js.Any], service_rating = service_rating.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], taste_rating = taste_rating.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Dining]
   }

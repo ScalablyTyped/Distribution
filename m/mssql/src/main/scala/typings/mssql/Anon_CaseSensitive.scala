@@ -34,11 +34,11 @@ object Anon_CaseSensitive {
     scale: Int | Double = null,
     udt: js.Any = null
   ): Anon_CaseSensitive = {
-    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive, identity = identity, index = index, length = length, name = name, nullable = nullable, readOnly = readOnly)
+    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (udt != null) __obj.updateDynamic("udt")(udt)
+    if (udt != null) __obj.updateDynamic("udt")(udt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CaseSensitive]
   }
 }

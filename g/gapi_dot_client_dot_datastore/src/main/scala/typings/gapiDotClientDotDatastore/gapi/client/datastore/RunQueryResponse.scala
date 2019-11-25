@@ -15,8 +15,8 @@ object RunQueryResponse {
   @scala.inline
   def apply(batch: QueryResultBatch = null, query: Query = null): RunQueryResponse = {
     val __obj = js.Dynamic.literal()
-    if (batch != null) __obj.updateDynamic("batch")(batch)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (batch != null) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunQueryResponse]
   }
 }

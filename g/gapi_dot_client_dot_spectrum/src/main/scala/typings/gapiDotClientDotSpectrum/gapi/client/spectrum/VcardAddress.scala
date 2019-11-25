@@ -30,12 +30,12 @@ object VcardAddress {
     street: String = null
   ): VcardAddress = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (pobox != null) __obj.updateDynamic("pobox")(pobox)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (street != null) __obj.updateDynamic("street")(street)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (pobox != null) __obj.updateDynamic("pobox")(pobox.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (street != null) __obj.updateDynamic("street")(street.asInstanceOf[js.Any])
     __obj.asInstanceOf[VcardAddress]
   }
 }

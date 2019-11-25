@@ -27,9 +27,9 @@ object GridFSBucketFindOptions {
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCursorTimeout)) __obj.updateDynamic("noCursorTimeout")(noCursorTimeout)
+    if (!js.isUndefined(noCursorTimeout)) __obj.updateDynamic("noCursorTimeout")(noCursorTimeout.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFSBucketFindOptions]
   }
 }

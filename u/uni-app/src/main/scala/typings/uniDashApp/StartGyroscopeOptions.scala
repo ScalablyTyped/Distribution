@@ -34,7 +34,7 @@ object StartGyroscopeOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (interval != null) __obj.updateDynamic("interval")(interval)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[StartGyroscopeOptions]
   }

@@ -32,8 +32,8 @@ object Anon_Circle {
   ): Anon_Circle = {
     val __obj = js.Dynamic.literal()
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Circle]
   }
 }

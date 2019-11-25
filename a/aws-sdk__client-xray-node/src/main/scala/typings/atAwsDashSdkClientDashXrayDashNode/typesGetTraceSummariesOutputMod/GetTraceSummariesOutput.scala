@@ -41,10 +41,10 @@ object GetTraceSummariesOutput {
     TraceSummaries: js.Array[_UnmarshalledTraceSummary] = null,
     TracesProcessedCount: Int | Double = null
   ): GetTraceSummariesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ApproximateTime != null) __obj.updateDynamic("ApproximateTime")(ApproximateTime)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (TraceSummaries != null) __obj.updateDynamic("TraceSummaries")(TraceSummaries)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ApproximateTime != null) __obj.updateDynamic("ApproximateTime")(ApproximateTime.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (TraceSummaries != null) __obj.updateDynamic("TraceSummaries")(TraceSummaries.asInstanceOf[js.Any])
     if (TracesProcessedCount != null) __obj.updateDynamic("TracesProcessedCount")(TracesProcessedCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceSummariesOutput]
   }

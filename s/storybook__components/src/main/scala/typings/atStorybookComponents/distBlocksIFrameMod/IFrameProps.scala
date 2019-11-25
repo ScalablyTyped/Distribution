@@ -25,9 +25,9 @@ object IFrameProps {
     key: String = null,
     style: js.Any = null
   ): IFrameProps = {
-    val __obj = js.Dynamic.literal(allowFullScreen = allowFullScreen, id = id, scale = scale, src = src, title = title)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(allowFullScreen = allowFullScreen.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFrameProps]
   }
 }

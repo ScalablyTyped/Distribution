@@ -25,8 +25,8 @@ trait IItemRenderData extends js.Object {
 object IItemRenderData {
   @scala.inline
   def apply(active: Boolean, item: IItem, indices: js.Array[Double] = null): IItemRenderData = {
-    val __obj = js.Dynamic.literal(active = active, item = item)
-    if (indices != null) __obj.updateDynamic("indices")(indices)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemRenderData]
   }
 }

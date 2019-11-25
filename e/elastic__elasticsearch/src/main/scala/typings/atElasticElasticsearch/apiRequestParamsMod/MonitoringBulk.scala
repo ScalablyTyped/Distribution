@@ -29,17 +29,17 @@ object MonitoringBulk {
     `type`: String = null
   ): MonitoringBulk[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (system_api_version != null) __obj.updateDynamic("system_api_version")(system_api_version)
-    if (system_id != null) __obj.updateDynamic("system_id")(system_id)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (system_api_version != null) __obj.updateDynamic("system_api_version")(system_api_version.asInstanceOf[js.Any])
+    if (system_id != null) __obj.updateDynamic("system_id")(system_id.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringBulk[T]]
   }
 }

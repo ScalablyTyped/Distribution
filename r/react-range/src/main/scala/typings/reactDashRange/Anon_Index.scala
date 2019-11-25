@@ -15,7 +15,7 @@ trait Anon_Index extends js.Object {
 object Anon_Index {
   @scala.inline
   def apply(index: Double, isDragged: Boolean, props: IThumbProps, value: Double): Anon_Index = {
-    val __obj = js.Dynamic.literal(index = index, isDragged = isDragged, props = props, value = value)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isDragged = isDragged.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Index]
   }

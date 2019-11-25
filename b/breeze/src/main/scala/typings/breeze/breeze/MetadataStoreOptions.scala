@@ -16,8 +16,8 @@ object MetadataStoreOptions {
     namingConvention: NamingConvention = null
   ): MetadataStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (localQueryComparisonOptions != null) __obj.updateDynamic("localQueryComparisonOptions")(localQueryComparisonOptions)
-    if (namingConvention != null) __obj.updateDynamic("namingConvention")(namingConvention)
+    if (localQueryComparisonOptions != null) __obj.updateDynamic("localQueryComparisonOptions")(localQueryComparisonOptions.asInstanceOf[js.Any])
+    if (namingConvention != null) __obj.updateDynamic("namingConvention")(namingConvention.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataStoreOptions]
   }
 }

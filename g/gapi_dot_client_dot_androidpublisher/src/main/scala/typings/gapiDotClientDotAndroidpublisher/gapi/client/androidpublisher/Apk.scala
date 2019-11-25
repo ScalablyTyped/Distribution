@@ -15,7 +15,7 @@ object Apk {
   @scala.inline
   def apply(binary: ApkBinary = null, versionCode: Int | Double = null): Apk = {
     val __obj = js.Dynamic.literal()
-    if (binary != null) __obj.updateDynamic("binary")(binary)
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
     if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Apk]
   }

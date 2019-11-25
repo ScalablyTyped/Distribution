@@ -16,7 +16,7 @@ object AsObject {
     accountStateWithProof: typings.libraDashCore.libAtGeneratedAccountUnderscoreStateUnderscoreBlobUnderscorePbMod.AccountStateWithProof.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (accountStateWithProof != null) __obj.updateDynamic("accountStateWithProof")(accountStateWithProof)
+    if (accountStateWithProof != null) __obj.updateDynamic("accountStateWithProof")(accountStateWithProof.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

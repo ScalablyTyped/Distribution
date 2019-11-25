@@ -28,10 +28,10 @@ object CreateLabelWriterPrintParamsXmlParams {
   ): CreateLabelWriterPrintParamsXmlParams = {
     val __obj = js.Dynamic.literal()
     if (copies != null) __obj.updateDynamic("copies")(copies.asInstanceOf[js.Any])
-    if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection)
-    if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle)
-    if (printQuality != null) __obj.updateDynamic("printQuality")(printQuality)
-    if (twinTurboRoll != null) __obj.updateDynamic("twinTurboRoll")(twinTurboRoll)
+    if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection.asInstanceOf[js.Any])
+    if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle.asInstanceOf[js.Any])
+    if (printQuality != null) __obj.updateDynamic("printQuality")(printQuality.asInstanceOf[js.Any])
+    if (twinTurboRoll != null) __obj.updateDynamic("twinTurboRoll")(twinTurboRoll.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLabelWriterPrintParamsXmlParams]
   }
 }

@@ -32,15 +32,15 @@ object Middleware {
     templateOptions: js.Object = null
   ): Middleware = {
     val __obj = js.Dynamic.literal(viewPath = viewPath.asInstanceOf[js.Any])
-    if (blockHelperName != null) __obj.updateDynamic("blockHelperName")(blockHelperName)
-    if (contentHelperName != null) __obj.updateDynamic("contentHelperName")(contentHelperName)
-    if (defaultLayout != null) __obj.updateDynamic("defaultLayout")(defaultLayout)
-    if (!js.isUndefined(disableCache)) __obj.updateDynamic("disableCache")(disableCache)
-    if (extname != null) __obj.updateDynamic("extname")(extname)
-    if (handlebars != null) __obj.updateDynamic("handlebars")(handlebars)
-    if (layoutsPath != null) __obj.updateDynamic("layoutsPath")(layoutsPath)
+    if (blockHelperName != null) __obj.updateDynamic("blockHelperName")(blockHelperName.asInstanceOf[js.Any])
+    if (contentHelperName != null) __obj.updateDynamic("contentHelperName")(contentHelperName.asInstanceOf[js.Any])
+    if (defaultLayout != null) __obj.updateDynamic("defaultLayout")(defaultLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCache)) __obj.updateDynamic("disableCache")(disableCache.asInstanceOf[js.Any])
+    if (extname != null) __obj.updateDynamic("extname")(extname.asInstanceOf[js.Any])
+    if (handlebars != null) __obj.updateDynamic("handlebars")(handlebars.asInstanceOf[js.Any])
+    if (layoutsPath != null) __obj.updateDynamic("layoutsPath")(layoutsPath.asInstanceOf[js.Any])
     if (partialsPath != null) __obj.updateDynamic("partialsPath")(partialsPath.asInstanceOf[js.Any])
-    if (templateOptions != null) __obj.updateDynamic("templateOptions")(templateOptions)
+    if (templateOptions != null) __obj.updateDynamic("templateOptions")(templateOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Middleware]
   }
 }

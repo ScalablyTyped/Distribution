@@ -34,9 +34,9 @@ object PlusShareShareServerIdentity {
   @scala.inline
   def apply(sinaweibo: String = null, tencentweibo: String = null, weixin: String = null): PlusShareShareServerIdentity = {
     val __obj = js.Dynamic.literal()
-    if (sinaweibo != null) __obj.updateDynamic("sinaweibo")(sinaweibo)
-    if (tencentweibo != null) __obj.updateDynamic("tencentweibo")(tencentweibo)
-    if (weixin != null) __obj.updateDynamic("weixin")(weixin)
+    if (sinaweibo != null) __obj.updateDynamic("sinaweibo")(sinaweibo.asInstanceOf[js.Any])
+    if (tencentweibo != null) __obj.updateDynamic("tencentweibo")(tencentweibo.asInstanceOf[js.Any])
+    if (weixin != null) __obj.updateDynamic("weixin")(weixin.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusShareShareServerIdentity]
   }
 }

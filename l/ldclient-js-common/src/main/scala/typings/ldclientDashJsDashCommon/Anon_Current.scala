@@ -13,7 +13,7 @@ trait Anon_Current extends js.Object {
 object Anon_Current {
   @scala.inline
   def apply(current: LDFlagValue, previous: LDFlagValue): Anon_Current = {
-    val __obj = js.Dynamic.literal(current = current, previous = previous)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Current]
   }

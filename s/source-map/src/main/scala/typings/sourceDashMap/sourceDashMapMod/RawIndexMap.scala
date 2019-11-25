@@ -18,10 +18,10 @@ object RawIndexMap {
     skipValidation: js.UndefOr[Boolean] = js.undefined,
     sourceRoot: String = null
   ): RawIndexMap = {
-    val __obj = js.Dynamic.literal(sections = sections, version = version)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation)
-    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
+    val __obj = js.Dynamic.literal(sections = sections.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.asInstanceOf[js.Any])
+    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawIndexMap]
   }
 }

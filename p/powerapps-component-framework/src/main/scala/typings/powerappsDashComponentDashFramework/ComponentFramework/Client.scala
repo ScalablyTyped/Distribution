@@ -41,7 +41,7 @@ object Client {
     getFormFactor: () => Double,
     isOffline: () => Boolean
   ): Client = {
-    val __obj = js.Dynamic.literal(disableScroll = disableScroll, getClient = js.Any.fromFunction0(getClient), getFormFactor = js.Any.fromFunction0(getFormFactor), isOffline = js.Any.fromFunction0(isOffline))
+    val __obj = js.Dynamic.literal(disableScroll = disableScroll.asInstanceOf[js.Any], getClient = js.Any.fromFunction0(getClient), getFormFactor = js.Any.fromFunction0(getFormFactor), isOffline = js.Any.fromFunction0(isOffline))
   
     __obj.asInstanceOf[Client]
   }

@@ -20,9 +20,9 @@ object IHoverCardState {
     openMode: OpenCardMode = null
   ): IHoverCardState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isHoverCardVisible)) __obj.updateDynamic("isHoverCardVisible")(isHoverCardVisible)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (openMode != null) __obj.updateDynamic("openMode")(openMode)
+    if (!js.isUndefined(isHoverCardVisible)) __obj.updateDynamic("isHoverCardVisible")(isHoverCardVisible.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (openMode != null) __obj.updateDynamic("openMode")(openMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHoverCardState]
   }
 }

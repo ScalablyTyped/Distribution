@@ -31,10 +31,10 @@ object Request {
     metadata: Metadata = null,
     text: String = null
   ): Request = {
-    val __obj = js.Dynamic.literal(fragment = fragment, kind = kind, loc = loc, name = name, root = root)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

@@ -15,7 +15,7 @@ object Anon_MaxTimeMSSession {
   def apply(maxTimeMS: Int | Double = null, session: ClientSession = null): Anon_MaxTimeMSSession = {
     val __obj = js.Dynamic.literal()
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaxTimeMSSession]
   }
 }

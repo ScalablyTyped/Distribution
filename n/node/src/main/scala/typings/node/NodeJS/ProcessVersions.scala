@@ -27,7 +27,7 @@ object ProcessVersions {
     v8: java.lang.String,
     zlib: java.lang.String
   ): ProcessVersions = {
-    val __obj = js.Dynamic.literal(ares = ares, http_parser = http_parser, modules = modules, node = node, openssl = openssl, uv = uv, v8 = v8, zlib = zlib)
+    val __obj = js.Dynamic.literal(ares = ares.asInstanceOf[js.Any], http_parser = http_parser.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], openssl = openssl.asInstanceOf[js.Any], uv = uv.asInstanceOf[js.Any], v8 = v8.asInstanceOf[js.Any], zlib = zlib.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProcessVersions]
   }

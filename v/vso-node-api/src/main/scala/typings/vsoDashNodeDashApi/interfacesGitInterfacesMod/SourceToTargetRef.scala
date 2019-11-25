@@ -18,7 +18,7 @@ trait SourceToTargetRef extends js.Object {
 object SourceToTargetRef {
   @scala.inline
   def apply(sourceRef: String, targetRef: String): SourceToTargetRef = {
-    val __obj = js.Dynamic.literal(sourceRef = sourceRef, targetRef = targetRef)
+    val __obj = js.Dynamic.literal(sourceRef = sourceRef.asInstanceOf[js.Any], targetRef = targetRef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceToTargetRef]
   }

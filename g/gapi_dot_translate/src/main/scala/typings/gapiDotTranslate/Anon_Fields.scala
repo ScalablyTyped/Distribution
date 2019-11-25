@@ -18,8 +18,8 @@ trait Anon_Fields extends js.Object {
 object Anon_Fields {
   @scala.inline
   def apply(q: js.Array[String], fields: String = null): Anon_Fields = {
-    val __obj = js.Dynamic.literal(q = q)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fields]
   }
 }

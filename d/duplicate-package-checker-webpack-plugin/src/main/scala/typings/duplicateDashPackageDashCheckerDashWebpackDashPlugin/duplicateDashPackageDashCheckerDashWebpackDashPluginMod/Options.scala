@@ -34,11 +34,11 @@ object Options {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emitError)) __obj.updateDynamic("emitError")(emitError)
+    if (!js.isUndefined(emitError)) __obj.updateDynamic("emitError")(emitError.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(js.Any.fromFunction1(exclude))
-    if (!js.isUndefined(showHelp)) __obj.updateDynamic("showHelp")(showHelp)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(showHelp)) __obj.updateDynamic("showHelp")(showHelp.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

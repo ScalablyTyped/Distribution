@@ -26,8 +26,8 @@ object Anon_Registry {
     registry: String = null
   ): Anon_Registry = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (registry != null) __obj.updateDynamic("registry")(registry)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Registry]
   }
 }

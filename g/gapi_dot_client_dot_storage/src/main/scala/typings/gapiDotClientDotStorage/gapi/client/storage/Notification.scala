@@ -40,15 +40,15 @@ object Notification {
     topic: String = null
   ): Notification = {
     val __obj = js.Dynamic.literal()
-    if (custom_attributes != null) __obj.updateDynamic("custom_attributes")(custom_attributes)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (event_types != null) __obj.updateDynamic("event_types")(event_types)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (object_name_prefix != null) __obj.updateDynamic("object_name_prefix")(object_name_prefix)
-    if (payload_format != null) __obj.updateDynamic("payload_format")(payload_format)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (topic != null) __obj.updateDynamic("topic")(topic)
+    if (custom_attributes != null) __obj.updateDynamic("custom_attributes")(custom_attributes.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (event_types != null) __obj.updateDynamic("event_types")(event_types.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (object_name_prefix != null) __obj.updateDynamic("object_name_prefix")(object_name_prefix.asInstanceOf[js.Any])
+    if (payload_format != null) __obj.updateDynamic("payload_format")(payload_format.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }
 }

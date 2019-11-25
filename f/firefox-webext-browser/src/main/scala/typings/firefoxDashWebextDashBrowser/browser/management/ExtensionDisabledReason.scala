@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait ExtensionDisabledReason extends js.Object
 
+object ExtensionDisabledReason {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def permissions_increase: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.permissions_increase = this.cast("permissions_increase")
+  @scala.inline
+  def unknown: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.unknown = this.cast("unknown")
+}
+

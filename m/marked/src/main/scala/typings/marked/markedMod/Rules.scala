@@ -12,7 +12,7 @@ object Rules {
   @scala.inline
   def apply(StringDictionary: /* ruleName */ StringDictionary[RegExp | Rules] = null): Rules = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Rules]
   }
 }

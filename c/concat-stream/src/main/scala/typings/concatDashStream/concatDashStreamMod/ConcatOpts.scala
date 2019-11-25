@@ -12,7 +12,7 @@ object ConcatOpts {
   @scala.inline
   def apply(encoding: String = null): ConcatOpts = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConcatOpts]
   }
 }

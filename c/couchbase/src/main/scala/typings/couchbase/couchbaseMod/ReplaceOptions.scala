@@ -21,7 +21,7 @@ object ReplaceOptions {
     replicate_to: Int | Double = null
   ): ReplaceOptions = {
     val __obj = js.Dynamic.literal()
-    if (cas != null) __obj.updateDynamic("cas")(cas)
+    if (cas != null) __obj.updateDynamic("cas")(cas.asInstanceOf[js.Any])
     if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
     if (persist_to != null) __obj.updateDynamic("persist_to")(persist_to.asInstanceOf[js.Any])
     if (replicate_to != null) __obj.updateDynamic("replicate_to")(replicate_to.asInstanceOf[js.Any])

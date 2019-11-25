@@ -12,7 +12,7 @@ object Anon_Inline {
   @scala.inline
   def apply(`inline`: Boolean): Anon_Inline = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inline")(`inline`)
+    __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Inline]
   }
 }

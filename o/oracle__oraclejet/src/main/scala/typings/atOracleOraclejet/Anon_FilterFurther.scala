@@ -14,9 +14,9 @@ object Anon_FilterFurther {
   @scala.inline
   def apply(filterFurther: String = null, noMatchesFound: String = null, required: Anon_Hint = null): Anon_FilterFurther = {
     val __obj = js.Dynamic.literal()
-    if (filterFurther != null) __obj.updateDynamic("filterFurther")(filterFurther)
-    if (noMatchesFound != null) __obj.updateDynamic("noMatchesFound")(noMatchesFound)
-    if (required != null) __obj.updateDynamic("required")(required)
+    if (filterFurther != null) __obj.updateDynamic("filterFurther")(filterFurther.asInstanceOf[js.Any])
+    if (noMatchesFound != null) __obj.updateDynamic("noMatchesFound")(noMatchesFound.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FilterFurther]
   }
 }

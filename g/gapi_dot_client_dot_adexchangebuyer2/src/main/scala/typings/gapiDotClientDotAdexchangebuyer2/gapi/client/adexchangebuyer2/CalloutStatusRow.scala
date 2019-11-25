@@ -28,8 +28,8 @@ object CalloutStatusRow {
   ): CalloutStatusRow = {
     val __obj = js.Dynamic.literal()
     if (calloutStatusId != null) __obj.updateDynamic("calloutStatusId")(calloutStatusId.asInstanceOf[js.Any])
-    if (impressionCount != null) __obj.updateDynamic("impressionCount")(impressionCount)
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    if (impressionCount != null) __obj.updateDynamic("impressionCount")(impressionCount.asInstanceOf[js.Any])
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalloutStatusRow]
   }
 }

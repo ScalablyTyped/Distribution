@@ -13,9 +13,9 @@ trait NavigationJumpToActionPayload extends js.Object {
 object NavigationJumpToActionPayload {
   @scala.inline
   def apply(routeName: String, key: String = null, params: NavigationParams = null): NavigationJumpToActionPayload = {
-    val __obj = js.Dynamic.literal(routeName = routeName)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationJumpToActionPayload]
   }
 }

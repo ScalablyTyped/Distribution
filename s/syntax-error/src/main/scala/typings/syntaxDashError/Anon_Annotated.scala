@@ -14,7 +14,7 @@ trait Anon_Annotated extends js.Object {
 object Anon_Annotated {
   @scala.inline
   def apply(annotated: String, column: Double, inspect: () => String, line: Double): Anon_Annotated = {
-    val __obj = js.Dynamic.literal(annotated = annotated, column = column, inspect = js.Any.fromFunction0(inspect), line = line)
+    val __obj = js.Dynamic.literal(annotated = annotated.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], inspect = js.Any.fromFunction0(inspect), line = line.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Annotated]
   }

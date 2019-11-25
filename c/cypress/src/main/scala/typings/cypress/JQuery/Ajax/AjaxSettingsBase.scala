@@ -5,8 +5,8 @@ import typings.cypress.JQuery.TypeOrArray
 import typings.cypress.JQuery.jqXHR
 import typings.cypress.cypressNumbers.`false`
 import typings.cypress.cypressNumbers.`true`
-import typings.cypress.cypressStrings.html
-import typings.cypress.cypressStrings.json
+import typings.cypress.cypressStrings.html_
+import typings.cypress.cypressStrings.json_
 import typings.cypress.cypressStrings.jsonp
 import typings.cypress.cypressStrings.script
 import typings.cypress.cypressStrings.text
@@ -88,7 +88,7 @@ trait AjaxSettingsBase[TContext] extends js.Object {
     *
     * multiple, space-separated values: As of jQuery 1.5, jQuery can convert a dataType from what it received in the Content-Type header to what you require. For example, if you want a text response to be treated as XML, use "text xml" for the dataType. You can also make a JSONP request, have it received as text, and interpreted by jQuery as XML: "jsonp text xml". Similarly, a shorthand string such as "jsonp xml" will first attempt to convert from jsonp to xml, and, failing that, convert from jsonp to text, and then from text to xml.
     */
-  var dataType: js.UndefOr[xml | html | script | json | jsonp | text | String] = js.undefined
+  var dataType: js.UndefOr[xml | html_ | script | json_ | jsonp | text | String] = js.undefined
   /**
     * A function to be called if the request fails. The function receives three arguments: The jqXHR (in jQuery 1.4.x, XMLHttpRequest) object, a string describing the type of error that occurred and an optional exception object, if one occurred. Possible values for the second argument (besides null) are "timeout", "error", "abort", and "parsererror". When an HTTP error occurs, errorThrown receives the textual portion of the HTTP status, such as "Not Found" or "Internal Server Error." As of jQuery 1.5, the error setting can accept an array of functions. Each function will be called in turn. Note: This handler is not called for cross-domain script and cross-domain JSONP requests. This is an Ajax Event.
     */
@@ -191,7 +191,7 @@ object AjaxSettingsBase {
     crossDomain: js.UndefOr[Boolean] = js.undefined,
     data: PlainObject[_] | String = null,
     dataFilter: (/* data */ String, /* type */ String) => _ = null,
-    dataType: xml | html | script | json | jsonp | text | String = null,
+    dataType: xml | html_ | script | json_ | jsonp | text | String = null,
     error: TypeOrArray[ErrorCallback[TContext]] = null,
     global: js.UndefOr[Boolean] = js.undefined,
     headers: PlainObject[js.UndefOr[String | Null]] = null,
@@ -214,39 +214,39 @@ object AjaxSettingsBase {
     xhrFields: XHRFields = null
   ): AjaxSettingsBase[TContext] = {
     val __obj = js.Dynamic.literal()
-    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (converters != null) __obj.updateDynamic("converters")(converters)
-    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
+    if (converters != null) __obj.updateDynamic("converters")(converters.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataFilter != null) __obj.updateDynamic("dataFilter")(js.Any.fromFunction2(dataFilter))
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(ifModified)) __obj.updateDynamic("ifModified")(ifModified)
-    if (!js.isUndefined(isLocal)) __obj.updateDynamic("isLocal")(isLocal)
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifModified)) __obj.updateDynamic("ifModified")(ifModified.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLocal)) __obj.updateDynamic("isLocal")(isLocal.asInstanceOf[js.Any])
     if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
     if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData)
-    if (scriptCharset != null) __obj.updateDynamic("scriptCharset")(scriptCharset)
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData.asInstanceOf[js.Any])
+    if (scriptCharset != null) __obj.updateDynamic("scriptCharset")(scriptCharset.asInstanceOf[js.Any])
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     if (xhr != null) __obj.updateDynamic("xhr")(js.Any.fromFunction0(xhr))
-    if (xhrFields != null) __obj.updateDynamic("xhrFields")(xhrFields)
+    if (xhrFields != null) __obj.updateDynamic("xhrFields")(xhrFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxSettingsBase[TContext]]
   }
 }

@@ -13,3 +13,12 @@ import scala.scalajs.js.annotation._
 */
 trait Mode extends js.Object
 
+object Mode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `multiple-document`: typings.atPhosphorWidgets.atPhosphorWidgetsStrings.`multiple-document` = this.cast("multiple-document")
+  @scala.inline
+  def `single-document`: typings.atPhosphorWidgets.atPhosphorWidgetsStrings.`single-document` = this.cast("single-document")
+}
+

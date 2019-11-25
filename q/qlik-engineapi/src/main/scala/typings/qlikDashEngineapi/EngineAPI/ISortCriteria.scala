@@ -57,14 +57,14 @@ object ISortCriteria {
     qSortByState: TypeSortDirection = null
   ): ISortCriteria = {
     val __obj = js.Dynamic.literal()
-    if (qExpression != null) __obj.updateDynamic("qExpression")(qExpression)
-    if (qSortByAscii != null) __obj.updateDynamic("qSortByAscii")(qSortByAscii)
-    if (qSortByExpression != null) __obj.updateDynamic("qSortByExpression")(qSortByExpression)
-    if (qSortByFrequency != null) __obj.updateDynamic("qSortByFrequency")(qSortByFrequency)
-    if (qSortByGreyness != null) __obj.updateDynamic("qSortByGreyness")(qSortByGreyness)
-    if (qSortByLoadOrder != null) __obj.updateDynamic("qSortByLoadOrder")(qSortByLoadOrder)
-    if (qSortByNumeric != null) __obj.updateDynamic("qSortByNumeric")(qSortByNumeric)
-    if (qSortByState != null) __obj.updateDynamic("qSortByState")(qSortByState)
+    if (qExpression != null) __obj.updateDynamic("qExpression")(qExpression.asInstanceOf[js.Any])
+    if (qSortByAscii != null) __obj.updateDynamic("qSortByAscii")(qSortByAscii.asInstanceOf[js.Any])
+    if (qSortByExpression != null) __obj.updateDynamic("qSortByExpression")(qSortByExpression.asInstanceOf[js.Any])
+    if (qSortByFrequency != null) __obj.updateDynamic("qSortByFrequency")(qSortByFrequency.asInstanceOf[js.Any])
+    if (qSortByGreyness != null) __obj.updateDynamic("qSortByGreyness")(qSortByGreyness.asInstanceOf[js.Any])
+    if (qSortByLoadOrder != null) __obj.updateDynamic("qSortByLoadOrder")(qSortByLoadOrder.asInstanceOf[js.Any])
+    if (qSortByNumeric != null) __obj.updateDynamic("qSortByNumeric")(qSortByNumeric.asInstanceOf[js.Any])
+    if (qSortByState != null) __obj.updateDynamic("qSortByState")(qSortByState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISortCriteria]
   }
 }

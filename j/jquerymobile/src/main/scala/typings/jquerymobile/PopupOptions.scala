@@ -30,15 +30,15 @@ object PopupOptions {
     transition: String = null
   ): PopupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners)
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
-    if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector)
-    if (overlayTheme != null) __obj.updateDynamic("overlayTheme")(overlayTheme)
-    if (positionTo != null) __obj.updateDynamic("positionTo")(positionTo)
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector.asInstanceOf[js.Any])
+    if (overlayTheme != null) __obj.updateDynamic("overlayTheme")(overlayTheme.asInstanceOf[js.Any])
+    if (positionTo != null) __obj.updateDynamic("positionTo")(positionTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupOptions]
   }
 }

@@ -26,13 +26,13 @@ object LandingPage {
     url: String = null
   ): LandingPage = {
     val __obj = js.Dynamic.literal()
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived)
-    if (deepLinks != null) __obj.updateDynamic("deepLinks")(deepLinks)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
+    if (deepLinks != null) __obj.updateDynamic("deepLinks")(deepLinks.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LandingPage]
   }
 }

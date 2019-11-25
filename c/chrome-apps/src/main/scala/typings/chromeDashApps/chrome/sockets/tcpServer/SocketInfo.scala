@@ -41,10 +41,10 @@ object SocketInfo {
     localPort: Int | Double = null,
     name: String = null
   ): SocketInfo = {
-    val __obj = js.Dynamic.literal(paused = paused, persistent = persistent, socketId = socketId)
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    val __obj = js.Dynamic.literal(paused = paused.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketInfo]
   }
 }

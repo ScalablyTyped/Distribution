@@ -37,10 +37,10 @@ object SearchCallSetsRequest {
     variantSetIds: js.Array[String] = null
   ): SearchCallSetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (variantSetIds != null) __obj.updateDynamic("variantSetIds")(variantSetIds)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (variantSetIds != null) __obj.updateDynamic("variantSetIds")(variantSetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchCallSetsRequest]
   }
 }

@@ -128,13 +128,19 @@ object aliDashAppStrings {
   sealed trait ancestor extends js.Object
   
   @js.native
-  sealed trait animationend extends TransitionEventType
+  sealed trait animationend
+    extends EventType
+       with TransitionEventType
   
   @js.native
-  sealed trait animationiteration extends TransitionEventType
+  sealed trait animationiteration
+    extends EventType
+       with TransitionEventType
   
   @js.native
-  sealed trait animationstart extends TransitionEventType
+  sealed trait animationstart
+    extends EventType
+       with TransitionEventType
   
   @js.native
   sealed trait audio extends js.Object
@@ -155,7 +161,7 @@ object aliDashAppStrings {
   sealed trait butt extends js.Object
   
   @js.native
-  sealed trait camera extends ImageSourceType
+  sealed trait camera_ extends ImageSourceType
   
   @js.native
   sealed trait center extends js.Object
@@ -298,9 +304,10 @@ object aliDashAppStrings {
   @js.native
   sealed trait success extends js.Object
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.aliDashApp.my.EventType because Already inherited */ @js.native
-  sealed trait tap extends TouchEventType
+  @js.native
+  sealed trait tap
+    extends EventType
+       with TouchEventType
   
   @js.native
   sealed trait text extends js.Object
@@ -309,22 +316,34 @@ object aliDashAppStrings {
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait touchcancel extends TouchEventType
+  sealed trait touchcancel
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchend extends TouchEventType
+  sealed trait touchend
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchforcechange extends TouchEventType
+  sealed trait touchforcechange
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchmove extends TouchEventType
+  sealed trait touchmove
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchstart extends TouchEventType
+  sealed trait touchstart
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait transitionend extends TransitionEventType
+  sealed trait transitionend
+    extends EventType
+       with TransitionEventType
   
   @js.native
   sealed trait trial extends js.Object
@@ -439,7 +458,7 @@ object aliDashAppStrings {
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
-  def camera: camera = "camera".asInstanceOf[camera]
+  def camera_ : camera_ = "camera".asInstanceOf[camera_]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline

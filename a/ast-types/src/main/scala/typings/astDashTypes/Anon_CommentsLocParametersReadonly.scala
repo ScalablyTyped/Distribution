@@ -25,11 +25,11 @@ object Anon_CommentsLocParametersReadonly {
     readonly: js.UndefOr[Boolean] = js.undefined,
     typeAnnotation: TSTypeAnnotationKind = null
   ): Anon_CommentsLocParametersReadonly = {
-    val __obj = js.Dynamic.literal(parameters = parameters)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocParametersReadonly]
   }
 }

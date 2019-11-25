@@ -49,9 +49,9 @@ object ConnectFailoverOptions {
     if (initialReconnectDelay != null) __obj.updateDynamic("initialReconnectDelay")(initialReconnectDelay.asInstanceOf[js.Any])
     if (maxReconnectDelay != null) __obj.updateDynamic("maxReconnectDelay")(maxReconnectDelay.asInstanceOf[js.Any])
     if (maxReconnects != null) __obj.updateDynamic("maxReconnects")(maxReconnects.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize)
+    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.asInstanceOf[js.Any])
     if (reconnectDelayExponent != null) __obj.updateDynamic("reconnectDelayExponent")(reconnectDelayExponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExponentialBackOff)) __obj.updateDynamic("useExponentialBackOff")(useExponentialBackOff)
+    if (!js.isUndefined(useExponentialBackOff)) __obj.updateDynamic("useExponentialBackOff")(useExponentialBackOff.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectFailoverOptions]
   }
 }

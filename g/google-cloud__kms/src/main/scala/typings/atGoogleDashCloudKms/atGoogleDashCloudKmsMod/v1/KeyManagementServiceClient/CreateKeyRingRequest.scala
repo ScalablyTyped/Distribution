@@ -15,8 +15,8 @@ trait CreateKeyRingRequest extends js.Object {
 object CreateKeyRingRequest {
   @scala.inline
   def apply(keyRingId: String, parent: String, keyRing: Partial[KeyRing] = null): CreateKeyRingRequest = {
-    val __obj = js.Dynamic.literal(keyRingId = keyRingId, parent = parent)
-    if (keyRing != null) __obj.updateDynamic("keyRing")(keyRing)
+    val __obj = js.Dynamic.literal(keyRingId = keyRingId.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    if (keyRing != null) __obj.updateDynamic("keyRing")(keyRing.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeyRingRequest]
   }
 }

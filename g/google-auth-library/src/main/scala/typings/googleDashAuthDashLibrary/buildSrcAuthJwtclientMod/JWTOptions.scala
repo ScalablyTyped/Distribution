@@ -28,14 +28,14 @@ object JWTOptions {
     subject: String = null
   ): JWTOptions = {
     val __obj = js.Dynamic.literal()
-    if (additionalClaims != null) __obj.updateDynamic("additionalClaims")(additionalClaims)
+    if (additionalClaims != null) __obj.updateDynamic("additionalClaims")(additionalClaims.asInstanceOf[js.Any])
     if (eagerRefreshThresholdMillis != null) __obj.updateDynamic("eagerRefreshThresholdMillis")(eagerRefreshThresholdMillis.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)
-    if (keyId != null) __obj.updateDynamic("keyId")(keyId)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile.asInstanceOf[js.Any])
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
     if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWTOptions]
   }
 }

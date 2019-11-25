@@ -63,16 +63,16 @@ object CatboxRedisOptions {
     socket: String = null,
     url: String = null
   ): CatboxRedisOptions = {
-    val __obj = js.Dynamic.literal(partition = partition)
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (password != null) __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(partition = partition.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (sentinelName != null) __obj.updateDynamic("sentinelName")(sentinelName)
-    if (sentinels != null) __obj.updateDynamic("sentinels")(sentinels)
-    if (socket != null) __obj.updateDynamic("socket")(socket)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (sentinelName != null) __obj.updateDynamic("sentinelName")(sentinelName.asInstanceOf[js.Any])
+    if (sentinels != null) __obj.updateDynamic("sentinels")(sentinels.asInstanceOf[js.Any])
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatboxRedisOptions]
   }
 }

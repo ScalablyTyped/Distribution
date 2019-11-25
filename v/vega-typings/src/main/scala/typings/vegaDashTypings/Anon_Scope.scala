@@ -16,7 +16,7 @@ object Anon_Scope {
   @scala.inline
   def apply(`type`: EventType, source: view | scope = null): Anon_Scope = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Scope]
   }

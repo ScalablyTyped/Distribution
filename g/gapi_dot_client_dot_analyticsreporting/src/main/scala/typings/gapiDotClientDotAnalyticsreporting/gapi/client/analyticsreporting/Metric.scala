@@ -35,9 +35,9 @@ object Metric {
   @scala.inline
   def apply(alias: String = null, expression: String = null, formattingType: String = null): Metric = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (formattingType != null) __obj.updateDynamic("formattingType")(formattingType)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (formattingType != null) __obj.updateDynamic("formattingType")(formattingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metric]
   }
 }

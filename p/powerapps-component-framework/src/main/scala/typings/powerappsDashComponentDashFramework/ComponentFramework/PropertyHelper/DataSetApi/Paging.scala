@@ -50,7 +50,7 @@ object Paging {
     setPageSize: Double => Unit,
     totalResultCount: Double
   ): Paging = {
-    val __obj = js.Dynamic.literal(hasNextPage = hasNextPage, hasPreviousPage = hasPreviousPage, loadNextPage = js.Any.fromFunction0(loadNextPage), loadPreviousPage = js.Any.fromFunction0(loadPreviousPage), reset = js.Any.fromFunction0(reset), setPageSize = js.Any.fromFunction1(setPageSize), totalResultCount = totalResultCount)
+    val __obj = js.Dynamic.literal(hasNextPage = hasNextPage.asInstanceOf[js.Any], hasPreviousPage = hasPreviousPage.asInstanceOf[js.Any], loadNextPage = js.Any.fromFunction0(loadNextPage), loadPreviousPage = js.Any.fromFunction0(loadPreviousPage), reset = js.Any.fromFunction0(reset), setPageSize = js.Any.fromFunction1(setPageSize), totalResultCount = totalResultCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Paging]
   }

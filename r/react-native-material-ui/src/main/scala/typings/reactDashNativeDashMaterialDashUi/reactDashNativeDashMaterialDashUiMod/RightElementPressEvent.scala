@@ -13,8 +13,8 @@ trait RightElementPressEvent extends js.Object {
 object RightElementPressEvent {
   @scala.inline
   def apply(action: String, index: Double, result: js.Any = null): RightElementPressEvent = {
-    val __obj = js.Dynamic.literal(action = action, index = index)
-    if (result != null) __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightElementPressEvent]
   }
 }

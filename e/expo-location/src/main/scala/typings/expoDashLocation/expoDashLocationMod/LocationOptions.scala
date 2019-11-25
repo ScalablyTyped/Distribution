@@ -24,10 +24,10 @@ object LocationOptions {
     timeout: Int | Double = null
   ): LocationOptions = {
     val __obj = js.Dynamic.literal()
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy)
+    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
     if (distanceInterval != null) __obj.updateDynamic("distanceInterval")(distanceInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy)
-    if (!js.isUndefined(mayShowUserSettingsDialog)) __obj.updateDynamic("mayShowUserSettingsDialog")(mayShowUserSettingsDialog)
+    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy.asInstanceOf[js.Any])
+    if (!js.isUndefined(mayShowUserSettingsDialog)) __obj.updateDynamic("mayShowUserSettingsDialog")(mayShowUserSettingsDialog.asInstanceOf[js.Any])
     if (timeInterval != null) __obj.updateDynamic("timeInterval")(timeInterval.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationOptions]

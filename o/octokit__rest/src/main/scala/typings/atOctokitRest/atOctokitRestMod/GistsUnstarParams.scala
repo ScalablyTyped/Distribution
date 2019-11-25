@@ -11,7 +11,7 @@ trait GistsUnstarParams extends js.Object {
 object GistsUnstarParams {
   @scala.inline
   def apply(gist_id: String): GistsUnstarParams = {
-    val __obj = js.Dynamic.literal(gist_id = gist_id)
+    val __obj = js.Dynamic.literal(gist_id = gist_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GistsUnstarParams]
   }

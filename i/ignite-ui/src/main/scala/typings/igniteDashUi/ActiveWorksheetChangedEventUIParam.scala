@@ -37,11 +37,11 @@ object ActiveWorksheetChangedEventUIParam {
     owner: js.Any = null
   ): ActiveWorksheetChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (newActiveWorksheet != null) __obj.updateDynamic("newActiveWorksheet")(newActiveWorksheet)
-    if (newActiveWorksheetName != null) __obj.updateDynamic("newActiveWorksheetName")(newActiveWorksheetName)
-    if (oldActiveWorksheet != null) __obj.updateDynamic("oldActiveWorksheet")(oldActiveWorksheet)
-    if (oldActiveWorksheetName != null) __obj.updateDynamic("oldActiveWorksheetName")(oldActiveWorksheetName)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (newActiveWorksheet != null) __obj.updateDynamic("newActiveWorksheet")(newActiveWorksheet.asInstanceOf[js.Any])
+    if (newActiveWorksheetName != null) __obj.updateDynamic("newActiveWorksheetName")(newActiveWorksheetName.asInstanceOf[js.Any])
+    if (oldActiveWorksheet != null) __obj.updateDynamic("oldActiveWorksheet")(oldActiveWorksheet.asInstanceOf[js.Any])
+    if (oldActiveWorksheetName != null) __obj.updateDynamic("oldActiveWorksheetName")(oldActiveWorksheetName.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveWorksheetChangedEventUIParam]
   }
 }

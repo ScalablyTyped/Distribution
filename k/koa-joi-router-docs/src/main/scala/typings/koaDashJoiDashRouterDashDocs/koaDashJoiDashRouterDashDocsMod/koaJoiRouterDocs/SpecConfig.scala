@@ -15,7 +15,7 @@ trait SpecConfig extends js.Object {
 object SpecConfig {
   @scala.inline
   def apply(basePath: String, info: Anon_Description, tags: js.Array[Anon_DescriptionName]): SpecConfig = {
-    val __obj = js.Dynamic.literal(basePath = basePath, info = info, tags = tags)
+    val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SpecConfig]
   }

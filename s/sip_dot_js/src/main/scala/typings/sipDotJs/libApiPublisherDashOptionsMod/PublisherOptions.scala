@@ -39,12 +39,12 @@ object PublisherOptions {
     unpublishOnClose: js.UndefOr[Boolean] = js.undefined
   ): PublisherOptions = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (!js.isUndefined(unpublishOnClose)) __obj.updateDynamic("unpublishOnClose")(unpublishOnClose)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(unpublishOnClose)) __obj.updateDynamic("unpublishOnClose")(unpublishOnClose.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherOptions]
   }
 }

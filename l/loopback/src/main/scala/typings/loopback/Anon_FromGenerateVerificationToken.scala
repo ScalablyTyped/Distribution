@@ -27,8 +27,8 @@ object Anon_FromGenerateVerificationToken {
     to: String,
     `type`: String
   ): Anon_FromGenerateVerificationToken = {
-    val __obj = js.Dynamic.literal(from = from, generateVerificationToken = js.Any.fromFunction0(generateVerificationToken), redirect = redirect, subject = subject, template = template, text = text, to = to)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], generateVerificationToken = js.Any.fromFunction0(generateVerificationToken), redirect = redirect.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FromGenerateVerificationToken]
   }
 }

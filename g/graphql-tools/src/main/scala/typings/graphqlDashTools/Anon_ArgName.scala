@@ -36,11 +36,11 @@ object Anon_ArgName {
     printSchemaOptions: Options = null
   ): Anon_ArgName = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
-    if (buildSchemaOptions != null) __obj.updateDynamic("buildSchemaOptions")(buildSchemaOptions)
+    if (buildSchemaOptions != null) __obj.updateDynamic("buildSchemaOptions")(buildSchemaOptions.asInstanceOf[js.Any])
     if (createResolver != null) __obj.updateDynamic("createResolver")(js.Any.fromFunction1(createResolver))
     if (fetcher != null) __obj.updateDynamic("fetcher")(js.Any.fromFunction1(fetcher))
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (printSchemaOptions != null) __obj.updateDynamic("printSchemaOptions")(printSchemaOptions)
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (printSchemaOptions != null) __obj.updateDynamic("printSchemaOptions")(printSchemaOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArgName]
   }
 }

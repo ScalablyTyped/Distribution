@@ -46,7 +46,7 @@ object SecurityRole {
     name: String,
     scope: String
   ): SecurityRole = {
-    val __obj = js.Dynamic.literal(allowPermissions = allowPermissions, denyPermissions = denyPermissions, description = description, displayName = displayName, identifier = identifier, name = name, scope = scope)
+    val __obj = js.Dynamic.literal(allowPermissions = allowPermissions.asInstanceOf[js.Any], denyPermissions = denyPermissions.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SecurityRole]
   }

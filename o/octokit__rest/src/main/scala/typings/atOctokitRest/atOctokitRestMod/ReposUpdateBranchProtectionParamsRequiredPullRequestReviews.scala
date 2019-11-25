@@ -20,9 +20,9 @@ object ReposUpdateBranchProtectionParamsRequiredPullRequestReviews {
     required_approving_review_count: Int | Double = null
   ): ReposUpdateBranchProtectionParamsRequiredPullRequestReviews = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dismiss_stale_reviews)) __obj.updateDynamic("dismiss_stale_reviews")(dismiss_stale_reviews)
-    if (dismissal_restrictions != null) __obj.updateDynamic("dismissal_restrictions")(dismissal_restrictions)
-    if (!js.isUndefined(require_code_owner_reviews)) __obj.updateDynamic("require_code_owner_reviews")(require_code_owner_reviews)
+    if (!js.isUndefined(dismiss_stale_reviews)) __obj.updateDynamic("dismiss_stale_reviews")(dismiss_stale_reviews.asInstanceOf[js.Any])
+    if (dismissal_restrictions != null) __obj.updateDynamic("dismissal_restrictions")(dismissal_restrictions.asInstanceOf[js.Any])
+    if (!js.isUndefined(require_code_owner_reviews)) __obj.updateDynamic("require_code_owner_reviews")(require_code_owner_reviews.asInstanceOf[js.Any])
     if (required_approving_review_count != null) __obj.updateDynamic("required_approving_review_count")(required_approving_review_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateBranchProtectionParamsRequiredPullRequestReviews]
   }

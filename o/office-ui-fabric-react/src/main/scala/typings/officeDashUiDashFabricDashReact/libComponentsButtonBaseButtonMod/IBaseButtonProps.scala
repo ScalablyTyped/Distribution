@@ -14,9 +14,9 @@ object IBaseButtonProps {
   @scala.inline
   def apply(IButtonProps: IButtonProps = null, baseClassName: String = null, variantClassName: String = null): IBaseButtonProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IButtonProps)
-    if (baseClassName != null) __obj.updateDynamic("baseClassName")(baseClassName)
-    if (variantClassName != null) __obj.updateDynamic("variantClassName")(variantClassName)
+    if (IButtonProps != null) js.Dynamic.global.Object.assign(__obj, IButtonProps)
+    if (baseClassName != null) __obj.updateDynamic("baseClassName")(baseClassName.asInstanceOf[js.Any])
+    if (variantClassName != null) __obj.updateDynamic("variantClassName")(variantClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseButtonProps]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait OptionsApproximationValue extends js.Object
 
+object OptionsApproximationValue {
+  @scala.inline
+  def `barnes-hut`: typings.highcharts.highchartsStrings.`barnes-hut` = this.cast("barnes-hut")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def none: typings.highcharts.highchartsStrings.none = this.cast("none")
+}
+

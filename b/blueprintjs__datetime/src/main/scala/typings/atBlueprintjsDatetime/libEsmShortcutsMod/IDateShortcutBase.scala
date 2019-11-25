@@ -20,8 +20,8 @@ trait IDateShortcutBase extends js.Object {
 object IDateShortcutBase {
   @scala.inline
   def apply(label: String, includeTime: js.UndefOr[Boolean] = js.undefined): IDateShortcutBase = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (!js.isUndefined(includeTime)) __obj.updateDynamic("includeTime")(includeTime)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTime)) __obj.updateDynamic("includeTime")(includeTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDateShortcutBase]
   }
 }

@@ -21,9 +21,9 @@ object LiveChatUserBannedMessageDetails {
     bannedUserDetails: ChannelProfileDetails = null
   ): LiveChatUserBannedMessageDetails = {
     val __obj = js.Dynamic.literal()
-    if (banDurationSeconds != null) __obj.updateDynamic("banDurationSeconds")(banDurationSeconds)
-    if (banType != null) __obj.updateDynamic("banType")(banType)
-    if (bannedUserDetails != null) __obj.updateDynamic("bannedUserDetails")(bannedUserDetails)
+    if (banDurationSeconds != null) __obj.updateDynamic("banDurationSeconds")(banDurationSeconds.asInstanceOf[js.Any])
+    if (banType != null) __obj.updateDynamic("banType")(banType.asInstanceOf[js.Any])
+    if (bannedUserDetails != null) __obj.updateDynamic("bannedUserDetails")(bannedUserDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatUserBannedMessageDetails]
   }
 }

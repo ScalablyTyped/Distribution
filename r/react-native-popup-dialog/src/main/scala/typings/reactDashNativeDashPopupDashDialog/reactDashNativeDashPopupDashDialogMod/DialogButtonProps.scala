@@ -31,11 +31,11 @@ object DialogButtonProps {
     style: StyleProp[ViewStyle] = null,
     textStyle: StyleProp[TextStyle] = null
   ): DialogButtonProps = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])

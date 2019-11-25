@@ -15,7 +15,7 @@ trait SpecificationOptions extends js.Object {
 object SpecificationOptions {
   @scala.inline
   def apply(app: String, background: String, icon: String, iconSize: Double, title: String): SpecificationOptions = {
-    val __obj = js.Dynamic.literal(app = app, background = background, icon = icon, iconSize = iconSize, title = title)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconSize = iconSize.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SpecificationOptions]
   }

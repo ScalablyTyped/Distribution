@@ -23,7 +23,7 @@ object DataSourceColumnsFilterItems {
   ): DataSourceColumnsFilterItems = {
     val __obj = js.Dynamic.literal()
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceColumnsFilterItems]
   }
 }

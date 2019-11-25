@@ -39,13 +39,13 @@ object BidMetricsRow {
     viewableImpressions: MetricValue = null
   ): BidMetricsRow = {
     val __obj = js.Dynamic.literal()
-    if (bids != null) __obj.updateDynamic("bids")(bids)
-    if (bidsInAuction != null) __obj.updateDynamic("bidsInAuction")(bidsInAuction)
-    if (billedImpressions != null) __obj.updateDynamic("billedImpressions")(billedImpressions)
-    if (impressionsWon != null) __obj.updateDynamic("impressionsWon")(impressionsWon)
-    if (measurableImpressions != null) __obj.updateDynamic("measurableImpressions")(measurableImpressions)
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
-    if (viewableImpressions != null) __obj.updateDynamic("viewableImpressions")(viewableImpressions)
+    if (bids != null) __obj.updateDynamic("bids")(bids.asInstanceOf[js.Any])
+    if (bidsInAuction != null) __obj.updateDynamic("bidsInAuction")(bidsInAuction.asInstanceOf[js.Any])
+    if (billedImpressions != null) __obj.updateDynamic("billedImpressions")(billedImpressions.asInstanceOf[js.Any])
+    if (impressionsWon != null) __obj.updateDynamic("impressionsWon")(impressionsWon.asInstanceOf[js.Any])
+    if (measurableImpressions != null) __obj.updateDynamic("measurableImpressions")(measurableImpressions.asInstanceOf[js.Any])
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
+    if (viewableImpressions != null) __obj.updateDynamic("viewableImpressions")(viewableImpressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BidMetricsRow]
   }
 }

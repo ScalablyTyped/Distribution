@@ -14,7 +14,7 @@ trait Expr extends js.Object {
 object Expr {
   @scala.inline
   def apply(description: String, expression: String, location: String, title: String): Expr = {
-    val __obj = js.Dynamic.literal(description = description, expression = expression, location = location, title = title)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Expr]
   }

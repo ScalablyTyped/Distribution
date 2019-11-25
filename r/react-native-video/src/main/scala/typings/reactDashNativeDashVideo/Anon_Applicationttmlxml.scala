@@ -22,10 +22,10 @@ object Anon_Applicationttmlxml {
     language: String = null,
     title: String = null
   ): Anon_Applicationttmlxml = {
-    val __obj = js.Dynamic.literal(uri = uri)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Applicationttmlxml]
   }
 }

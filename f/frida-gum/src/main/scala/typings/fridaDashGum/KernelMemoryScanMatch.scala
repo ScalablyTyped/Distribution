@@ -18,7 +18,7 @@ trait KernelMemoryScanMatch extends js.Object {
 object KernelMemoryScanMatch {
   @scala.inline
   def apply(address: UInt64, size: Double): KernelMemoryScanMatch = {
-    val __obj = js.Dynamic.literal(address = address, size = size)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KernelMemoryScanMatch]
   }

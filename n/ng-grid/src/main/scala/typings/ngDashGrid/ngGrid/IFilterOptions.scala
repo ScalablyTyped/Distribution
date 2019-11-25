@@ -13,8 +13,8 @@ object IFilterOptions {
   @scala.inline
   def apply(filterText: String = null, useExternalFilter: js.UndefOr[Boolean] = js.undefined): IFilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (filterText != null) __obj.updateDynamic("filterText")(filterText)
-    if (!js.isUndefined(useExternalFilter)) __obj.updateDynamic("useExternalFilter")(useExternalFilter)
+    if (filterText != null) __obj.updateDynamic("filterText")(filterText.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalFilter)) __obj.updateDynamic("useExternalFilter")(useExternalFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFilterOptions]
   }
 }

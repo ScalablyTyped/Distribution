@@ -11,7 +11,7 @@ trait Anon_Authenticated extends js.Object {
 object Anon_Authenticated {
   @scala.inline
   def apply(authenticated: Boolean): Anon_Authenticated = {
-    val __obj = js.Dynamic.literal(authenticated = authenticated)
+    val __obj = js.Dynamic.literal(authenticated = authenticated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Authenticated]
   }

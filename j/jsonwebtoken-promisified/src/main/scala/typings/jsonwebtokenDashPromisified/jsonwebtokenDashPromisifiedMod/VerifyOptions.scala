@@ -36,16 +36,16 @@ object VerifyOptions {
     subject: String = null
   ): VerifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
     if (clockTimestamp != null) __obj.updateDynamic("clockTimestamp")(clockTimestamp.asInstanceOf[js.Any])
     if (clockTolerance != null) __obj.updateDynamic("clockTolerance")(clockTolerance.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreExpiration)) __obj.updateDynamic("ignoreExpiration")(ignoreExpiration)
-    if (!js.isUndefined(ignoreNotBefore)) __obj.updateDynamic("ignoreNotBefore")(ignoreNotBefore)
+    if (!js.isUndefined(ignoreExpiration)) __obj.updateDynamic("ignoreExpiration")(ignoreExpiration.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreNotBefore)) __obj.updateDynamic("ignoreNotBefore")(ignoreNotBefore.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (jwtid != null) __obj.updateDynamic("jwtid")(jwtid)
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (jwtid != null) __obj.updateDynamic("jwtid")(jwtid.asInstanceOf[js.Any])
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyOptions]
   }
 }

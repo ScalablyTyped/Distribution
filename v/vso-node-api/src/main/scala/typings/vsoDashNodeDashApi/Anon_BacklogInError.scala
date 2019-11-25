@@ -25,7 +25,7 @@ object Anon_BacklogInError {
     noIterationsExist: Double,
     oK: Double
   ): Anon_BacklogInError = {
-    val __obj = js.Dynamic.literal(backlogInError = backlogInError, doesntExistOrAccessDenied = doesntExistOrAccessDenied, maxTeamFieldsExceeded = maxTeamFieldsExceeded, maxTeamsExceeded = maxTeamsExceeded, missingTeamFieldValue = missingTeamFieldValue, noIterationsExist = noIterationsExist, oK = oK)
+    val __obj = js.Dynamic.literal(backlogInError = backlogInError.asInstanceOf[js.Any], doesntExistOrAccessDenied = doesntExistOrAccessDenied.asInstanceOf[js.Any], maxTeamFieldsExceeded = maxTeamFieldsExceeded.asInstanceOf[js.Any], maxTeamsExceeded = maxTeamsExceeded.asInstanceOf[js.Any], missingTeamFieldValue = missingTeamFieldValue.asInstanceOf[js.Any], noIterationsExist = noIterationsExist.asInstanceOf[js.Any], oK = oK.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BacklogInError]
   }

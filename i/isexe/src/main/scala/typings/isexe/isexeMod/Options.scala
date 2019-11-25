@@ -21,8 +21,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
-    if (pathExt != null) __obj.updateDynamic("pathExt")(pathExt)
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
+    if (pathExt != null) __obj.updateDynamic("pathExt")(pathExt.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -44,7 +44,7 @@ object Lease {
     metadata: ObjectMeta,
     spec: LeaseSpec
   ): Lease = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Lease]
   }

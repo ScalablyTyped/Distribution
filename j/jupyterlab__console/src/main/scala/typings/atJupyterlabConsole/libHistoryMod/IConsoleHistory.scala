@@ -70,8 +70,8 @@ object IConsoleHistory {
     session: IClientSession,
     editor: IEditor = null
   ): IConsoleHistory = {
-    val __obj = js.Dynamic.literal(back = js.Any.fromFunction1(back), dispose = js.Any.fromFunction0(dispose), forward = js.Any.fromFunction1(forward), isDisposed = isDisposed, placeholder = placeholder, push = js.Any.fromFunction1(push), reset = js.Any.fromFunction0(reset), session = session)
-    if (editor != null) __obj.updateDynamic("editor")(editor)
+    val __obj = js.Dynamic.literal(back = js.Any.fromFunction1(back), dispose = js.Any.fromFunction0(dispose), forward = js.Any.fromFunction1(forward), isDisposed = isDisposed.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], push = js.Any.fromFunction1(push), reset = js.Any.fromFunction0(reset), session = session.asInstanceOf[js.Any])
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConsoleHistory]
   }
 }

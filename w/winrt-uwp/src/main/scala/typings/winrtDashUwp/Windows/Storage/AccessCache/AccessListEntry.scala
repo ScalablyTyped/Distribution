@@ -15,7 +15,7 @@ trait AccessListEntry extends js.Object {
 object AccessListEntry {
   @scala.inline
   def apply(metadata: String, token: String): AccessListEntry = {
-    val __obj = js.Dynamic.literal(metadata = metadata, token = token)
+    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccessListEntry]
   }

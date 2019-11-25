@@ -15,7 +15,7 @@ trait ClientContextEnv extends js.Object {
 object ClientContextEnv {
   @scala.inline
   def apply(locale: String, make: String, model: String, platform: String, platformVersion: String): ClientContextEnv = {
-    val __obj = js.Dynamic.literal(locale = locale, make = make, model = model, platform = platform, platformVersion = platformVersion)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], make = make.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], platformVersion = platformVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientContextEnv]
   }

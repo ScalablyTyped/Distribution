@@ -14,7 +14,7 @@ trait PullSymbolInfo extends js.Object {
 object PullSymbolInfo {
   @scala.inline
   def apply(aliasSymbol: PullTypeAliasSymbol, ast: AST, enclosingScopeSymbol: PullSymbol, symbol: PullSymbol): PullSymbolInfo = {
-    val __obj = js.Dynamic.literal(aliasSymbol = aliasSymbol, ast = ast, enclosingScopeSymbol = enclosingScopeSymbol, symbol = symbol)
+    val __obj = js.Dynamic.literal(aliasSymbol = aliasSymbol.asInstanceOf[js.Any], ast = ast.asInstanceOf[js.Any], enclosingScopeSymbol = enclosingScopeSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullSymbolInfo]
   }

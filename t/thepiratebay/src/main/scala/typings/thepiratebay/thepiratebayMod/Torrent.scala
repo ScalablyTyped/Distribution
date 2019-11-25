@@ -31,7 +31,7 @@ object Torrent {
     uploader: String,
     uploaderLink: String
   ): Torrent = {
-    val __obj = js.Dynamic.literal(id = id, leechers = leechers, link = link, magnetLink = magnetLink, name = name, seeders = seeders, size = size, uploadDate = uploadDate, uploader = uploader, uploaderLink = uploaderLink)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], leechers = leechers.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], magnetLink = magnetLink.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], seeders = seeders.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uploadDate = uploadDate.asInstanceOf[js.Any], uploader = uploader.asInstanceOf[js.Any], uploaderLink = uploaderLink.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Torrent]
   }

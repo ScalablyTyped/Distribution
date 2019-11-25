@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DuckBuilder[AppAction /* <: Action[_] */] extends js.Object {
-  def createAction[T /* <: String with (/* import warning: ImportType.apply Failed type conversion: AppAction['type'] */ js.Any) */](a: T): ActionCreator[Extract[AppAction, Anon_Type[T]]]
+  def createAction[T /* <: String with (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */](a: T): ActionCreator[Extract[AppAction, Anon_Type[T]]]
   def createReducer[S](a: ActionHandlers[S, AppAction], b: S): Reducer[S, AppAction]
   def defineType(a: ActionName): ActionType
 }

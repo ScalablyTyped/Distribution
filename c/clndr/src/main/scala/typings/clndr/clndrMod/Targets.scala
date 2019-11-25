@@ -26,13 +26,13 @@ object Targets {
     todayButton: String = null
   ): Targets = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (nextButton != null) __obj.updateDynamic("nextButton")(nextButton)
-    if (nextYearButton != null) __obj.updateDynamic("nextYearButton")(nextYearButton)
-    if (previousButton != null) __obj.updateDynamic("previousButton")(previousButton)
-    if (previousYearButton != null) __obj.updateDynamic("previousYearButton")(previousYearButton)
-    if (todayButton != null) __obj.updateDynamic("todayButton")(todayButton)
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (nextButton != null) __obj.updateDynamic("nextButton")(nextButton.asInstanceOf[js.Any])
+    if (nextYearButton != null) __obj.updateDynamic("nextYearButton")(nextYearButton.asInstanceOf[js.Any])
+    if (previousButton != null) __obj.updateDynamic("previousButton")(previousButton.asInstanceOf[js.Any])
+    if (previousYearButton != null) __obj.updateDynamic("previousYearButton")(previousYearButton.asInstanceOf[js.Any])
+    if (todayButton != null) __obj.updateDynamic("todayButton")(todayButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[Targets]
   }
 }

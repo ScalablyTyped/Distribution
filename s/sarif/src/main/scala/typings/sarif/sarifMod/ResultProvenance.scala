@@ -53,13 +53,13 @@ object ResultProvenance {
     properties: PropertyBag = null
   ): ResultProvenance = {
     val __obj = js.Dynamic.literal()
-    if (conversionSources != null) __obj.updateDynamic("conversionSources")(conversionSources)
-    if (firstDetectionRunGuid != null) __obj.updateDynamic("firstDetectionRunGuid")(firstDetectionRunGuid)
-    if (firstDetectionTimeUtc != null) __obj.updateDynamic("firstDetectionTimeUtc")(firstDetectionTimeUtc)
+    if (conversionSources != null) __obj.updateDynamic("conversionSources")(conversionSources.asInstanceOf[js.Any])
+    if (firstDetectionRunGuid != null) __obj.updateDynamic("firstDetectionRunGuid")(firstDetectionRunGuid.asInstanceOf[js.Any])
+    if (firstDetectionTimeUtc != null) __obj.updateDynamic("firstDetectionTimeUtc")(firstDetectionTimeUtc.asInstanceOf[js.Any])
     if (invocationIndex != null) __obj.updateDynamic("invocationIndex")(invocationIndex.asInstanceOf[js.Any])
-    if (lastDetectionRunGuid != null) __obj.updateDynamic("lastDetectionRunGuid")(lastDetectionRunGuid)
-    if (lastDetectionTimeUtc != null) __obj.updateDynamic("lastDetectionTimeUtc")(lastDetectionTimeUtc)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (lastDetectionRunGuid != null) __obj.updateDynamic("lastDetectionRunGuid")(lastDetectionRunGuid.asInstanceOf[js.Any])
+    if (lastDetectionTimeUtc != null) __obj.updateDynamic("lastDetectionTimeUtc")(lastDetectionTimeUtc.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultProvenance]
   }
 }

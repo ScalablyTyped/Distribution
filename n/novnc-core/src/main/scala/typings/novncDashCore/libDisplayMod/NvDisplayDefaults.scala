@@ -36,16 +36,16 @@ object NvDisplayDefaults {
     width: Int | Double = null
   ): NvDisplayDefaults = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (cursor_uri != null) __obj.updateDynamic("cursor_uri")(cursor_uri)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (cursor_uri != null) __obj.updateDynamic("cursor_uri")(cursor_uri.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo)
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (onFlush != null) __obj.updateDynamic("onFlush")(js.Any.fromFunction0(onFlush))
-    if (prefer_js != null) __obj.updateDynamic("prefer_js")(prefer_js)
-    if (render_mode != null) __obj.updateDynamic("render_mode")(render_mode)
+    if (prefer_js != null) __obj.updateDynamic("prefer_js")(prefer_js.asInstanceOf[js.Any])
+    if (render_mode != null) __obj.updateDynamic("render_mode")(render_mode.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (!js.isUndefined(viewport)) __obj.updateDynamic("viewport")(viewport)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewport)) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[NvDisplayDefaults]
   }

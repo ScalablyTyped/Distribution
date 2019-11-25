@@ -60,18 +60,18 @@ object Options {
     zoom: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoColor)) __obj.updateDynamic("autoColor")(autoColor)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (engineType != null) __obj.updateDynamic("engineType")(engineType)
-    if (!js.isUndefined(fixedCenter)) __obj.updateDynamic("fixedCenter")(fixedCenter)
-    if (imprint != null) __obj.updateDynamic("imprint")(imprint)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (!js.isUndefined(autoColor)) __obj.updateDynamic("autoColor")(autoColor.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (engineType != null) __obj.updateDynamic("engineType")(engineType.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedCenter)) __obj.updateDynamic("fixedCenter")(fixedCenter.asInstanceOf[js.Any])
+    if (imprint != null) __obj.updateDynamic("imprint")(imprint.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(noWrap)) __obj.updateDynamic("noWrap")(noWrap)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (!js.isUndefined(noWrap)) __obj.updateDynamic("noWrap")(noWrap.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (renderBaseBackground != null) __obj.updateDynamic("renderBaseBackground")(renderBaseBackground)
+    if (renderBaseBackground != null) __obj.updateDynamic("renderBaseBackground")(renderBaseBackground.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -20,7 +20,7 @@ trait _StorageClassAnalysisDataExport extends js.Object {
 object _StorageClassAnalysisDataExport {
   @scala.inline
   def apply(Destination: _AnalyticsExportDestination, OutputSchemaVersion: V_1 | String): _StorageClassAnalysisDataExport = {
-    val __obj = js.Dynamic.literal(Destination = Destination, OutputSchemaVersion = OutputSchemaVersion.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], OutputSchemaVersion = OutputSchemaVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_StorageClassAnalysisDataExport]
   }

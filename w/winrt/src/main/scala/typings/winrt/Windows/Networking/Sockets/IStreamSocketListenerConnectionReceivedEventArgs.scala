@@ -11,7 +11,7 @@ trait IStreamSocketListenerConnectionReceivedEventArgs extends js.Object {
 object IStreamSocketListenerConnectionReceivedEventArgs {
   @scala.inline
   def apply(socket: StreamSocket): IStreamSocketListenerConnectionReceivedEventArgs = {
-    val __obj = js.Dynamic.literal(socket = socket)
+    val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IStreamSocketListenerConnectionReceivedEventArgs]
   }

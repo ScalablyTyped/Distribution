@@ -41,7 +41,7 @@ object ParsedPath {
     user: String,
     port: Int | Double = null
   ): ParsedPath = {
-    val __obj = js.Dynamic.literal(hash = hash, href = href, pathname = pathname, protocol = protocol, protocols = protocols, query = query, resource = resource, search = search, user = user)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedPath]
   }

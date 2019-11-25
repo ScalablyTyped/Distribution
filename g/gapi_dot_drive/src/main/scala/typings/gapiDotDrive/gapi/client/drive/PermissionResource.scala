@@ -48,8 +48,8 @@ object PermissionResource {
     value: String,
     withLink: Boolean
   ): PermissionResource = {
-    val __obj = js.Dynamic.literal(additionalRoles = additionalRoles, authKey = authKey, deleted = deleted, domain = domain, emailAddress = emailAddress, etag = etag, expirationDate = expirationDate, id = id, kind = kind, name = name, photoLink = photoLink, role = role, selfLink = selfLink, teamDrivePermissionDetails = teamDrivePermissionDetails, value = value, withLink = withLink)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(additionalRoles = additionalRoles.asInstanceOf[js.Any], authKey = authKey.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], photoLink = photoLink.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any], teamDrivePermissionDetails = teamDrivePermissionDetails.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], withLink = withLink.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionResource]
   }
 }

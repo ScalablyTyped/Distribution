@@ -32,15 +32,15 @@ object ActivityOptional {
     version: Int | Double = null
   ): ActivityOptional = {
     val __obj = js.Dynamic.literal()
-    if (allowedChildProcesses != null) __obj.updateDynamic("allowedChildProcesses")(allowedChildProcesses)
-    if (appPackages != null) __obj.updateDynamic("appPackages")(appPackages)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (hostApplication != null) __obj.updateDynamic("hostApplication")(hostApplication)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (instruction != null) __obj.updateDynamic("instruction")(instruction)
-    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (requiredEngineVersion != null) __obj.updateDynamic("requiredEngineVersion")(requiredEngineVersion)
+    if (allowedChildProcesses != null) __obj.updateDynamic("allowedChildProcesses")(allowedChildProcesses.asInstanceOf[js.Any])
+    if (appPackages != null) __obj.updateDynamic("appPackages")(appPackages.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (hostApplication != null) __obj.updateDynamic("hostApplication")(hostApplication.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (instruction != null) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (requiredEngineVersion != null) __obj.updateDynamic("requiredEngineVersion")(requiredEngineVersion.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityOptional]
   }

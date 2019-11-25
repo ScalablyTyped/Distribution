@@ -33,12 +33,12 @@ object DrawOptions {
     y: Int | Double = null
   ): DrawOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blending)) __obj.updateDynamic("blending")(blending)
-    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta)
+    if (!js.isUndefined(blending)) __obj.updateDynamic("blending")(blending.asInstanceOf[js.Any])
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
     if (dst != null) __obj.updateDynamic("dst")(dst.asInstanceOf[js.Any])
-    if (dstClipRect != null) __obj.updateDynamic("dstClipRect")(dstClipRect)
-    if (srcClipRect != null) __obj.updateDynamic("srcClipRect")(srcClipRect)
-    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile)
+    if (dstClipRect != null) __obj.updateDynamic("dstClipRect")(dstClipRect.asInstanceOf[js.Any])
+    if (srcClipRect != null) __obj.updateDynamic("srcClipRect")(srcClipRect.asInstanceOf[js.Any])
+    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile.asInstanceOf[js.Any])
     if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

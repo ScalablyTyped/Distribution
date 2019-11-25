@@ -30,3 +30,52 @@ import scala.scalajs.js.annotation._
 */
 trait BinaryOperator extends js.Object
 
+object BinaryOperator {
+  @scala.inline
+  def `!=`: typings.estree.estreeStrings.`!=` = this.cast("!=")
+  @scala.inline
+  def `!==`: typings.estree.estreeStrings.`!==` = this.cast("!==")
+  @scala.inline
+  def `%`: typings.estree.estreeStrings.`%` = this.cast("%")
+  @scala.inline
+  def `&`: typings.estree.estreeStrings.`&` = this.cast("&")
+  @scala.inline
+  def `*`: typings.estree.estreeStrings.`*` = this.cast("*")
+  @scala.inline
+  def `**`: typings.estree.estreeStrings.`**` = this.cast("**")
+  @scala.inline
+  def `+`: typings.estree.estreeStrings.`+` = this.cast("+")
+  @scala.inline
+  def `-`: typings.estree.estreeStrings.`-` = this.cast("-")
+  @scala.inline
+  def `/`: typings.estree.estreeStrings.`/` = this.cast("/")
+  @scala.inline
+  def `<`: typings.estree.estreeStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<<`: typings.estree.estreeStrings.`<<` = this.cast("<<")
+  @scala.inline
+  def `<=`: typings.estree.estreeStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `==`: typings.estree.estreeStrings.`==` = this.cast("==")
+  @scala.inline
+  def `===`: typings.estree.estreeStrings.`===` = this.cast("===")
+  @scala.inline
+  def `>`: typings.estree.estreeStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.estree.estreeStrings.`>=` = this.cast(">=")
+  @scala.inline
+  def `>>`: typings.estree.estreeStrings.`>>` = this.cast(">>")
+  @scala.inline
+  def `>>>`: typings.estree.estreeStrings.`>>>` = this.cast(">>>")
+  @scala.inline
+  def `_backtick^_backtick`: typings.estree.estreeStrings.`_backtick^_backtick` = this.cast("^")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def in: typings.estree.estreeStrings.in = this.cast("in")
+  @scala.inline
+  def instanceof: typings.estree.estreeStrings.instanceof = this.cast("instanceof")
+  @scala.inline
+  def `|`: typings.estree.estreeStrings.`|` = this.cast("|")
+}
+

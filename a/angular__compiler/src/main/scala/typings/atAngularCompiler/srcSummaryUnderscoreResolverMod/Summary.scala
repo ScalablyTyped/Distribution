@@ -14,8 +14,8 @@ trait Summary[T] extends js.Object {
 object Summary {
   @scala.inline
   def apply[T](metadata: js.Any, symbol: T, `type`: CompileTypeSummary = null): Summary[T] = {
-    val __obj = js.Dynamic.literal(metadata = metadata, symbol = symbol.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Summary[T]]
   }
 }

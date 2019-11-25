@@ -11,17 +11,6 @@ trait Anon_FillStyle extends js.Object {
   var strokeStyle: js.UndefOr[String] = js.undefined
 }
 
-trait Anon_Fillstyle extends js.Object {
-  var fill_style: js.UndefOr[String] = js.undefined
-  var glyph_spacing_px: js.UndefOr[Double] = js.undefined
-  var num_lines: js.UndefOr[Double] = js.undefined
-  var space_above_staff_ln: js.UndefOr[Double] = js.undefined
-  var space_below_staff_ln: js.UndefOr[Double] = js.undefined
-  var spacing_between_lines_px: js.UndefOr[Double] = js.undefined
-  var top_text_position: js.UndefOr[Double] = js.undefined
-  var vertical_bar_width: js.UndefOr[Double] = js.undefined
-}
-
 object Anon_FillStyle {
   @scala.inline
   def apply(
@@ -31,12 +20,23 @@ object Anon_FillStyle {
     strokeStyle: String = null
   ): Anon_FillStyle = {
     val __obj = js.Dynamic.literal()
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
-    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur)
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FillStyle]
   }
+}
+
+trait Anon_Fillstyle extends js.Object {
+  var fill_style: js.UndefOr[String] = js.undefined
+  var glyph_spacing_px: js.UndefOr[Double] = js.undefined
+  var num_lines: js.UndefOr[Double] = js.undefined
+  var space_above_staff_ln: js.UndefOr[Double] = js.undefined
+  var space_below_staff_ln: js.UndefOr[Double] = js.undefined
+  var spacing_between_lines_px: js.UndefOr[Double] = js.undefined
+  var top_text_position: js.UndefOr[Double] = js.undefined
+  var vertical_bar_width: js.UndefOr[Double] = js.undefined
 }
 
 object Anon_Fillstyle {
@@ -52,7 +52,7 @@ object Anon_Fillstyle {
     vertical_bar_width: Int | Double = null
   ): Anon_Fillstyle = {
     val __obj = js.Dynamic.literal()
-    if (fill_style != null) __obj.updateDynamic("fill_style")(fill_style)
+    if (fill_style != null) __obj.updateDynamic("fill_style")(fill_style.asInstanceOf[js.Any])
     if (glyph_spacing_px != null) __obj.updateDynamic("glyph_spacing_px")(glyph_spacing_px.asInstanceOf[js.Any])
     if (num_lines != null) __obj.updateDynamic("num_lines")(num_lines.asInstanceOf[js.Any])
     if (space_above_staff_ln != null) __obj.updateDynamic("space_above_staff_ln")(space_above_staff_ln.asInstanceOf[js.Any])

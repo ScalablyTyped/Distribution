@@ -6,7 +6,7 @@ import typings.atAngularCore.atAngularCoreMod.Injector
 import typings.atAngularCore.atAngularCoreMod.NgZone
 import typings.atAngularCore.atAngularCoreMod.ViewContainerRef
 import typings.atIonicAngular.distProvidersAngularDashDelegateMod.AngularFrameworkDelegate
-import typings.atIonicCore.distTypesInterfaceMod.FrameworkDelegate
+import typings.atIonicCore.atIonicCoreMod.FrameworkDelegate
 import typings.std.HTMLElement
 import typings.std.WeakMap
 import scala.scalajs.js

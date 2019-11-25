@@ -26,7 +26,7 @@ object ProgressbarOptions {
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressbarOptions]

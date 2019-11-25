@@ -40,20 +40,20 @@ object ISliderOptions {
     vertical: js.UndefOr[Boolean] = js.undefined
   ): ISliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binding)) __obj.updateDynamic("binding")(binding)
-    if (!js.isUndefined(clickSelect)) __obj.updateDynamic("clickSelect")(clickSelect)
+    if (!js.isUndefined(binding)) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickSelect)) __obj.updateDynamic("clickSelect")(clickSelect.asInstanceOf[js.Any])
     if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass)
-    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (initialEnd != null) __obj.updateDynamic("initialEnd")(initialEnd.asInstanceOf[js.Any])
     if (initialStart != null) __obj.updateDynamic("initialStart")(initialStart.asInstanceOf[js.Any])
     if (moveTime != null) __obj.updateDynamic("moveTime")(moveTime.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISliderOptions]
   }
 }

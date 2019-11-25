@@ -10,7 +10,7 @@ object getControlledDerivedProps extends js.Object {
   def apply[TProps, TProp /* <: String */](
     props: TProps,
     propName: TProp,
-    derivedValue: /* import warning: ImportType.apply Failed type conversion: TProps[TProp] */ js.Any
-  ): /* import warning: ImportType.apply Failed type conversion: TProps[TProp] */ js.Any = js.native
+    derivedValue: /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any = js.native
 }
 

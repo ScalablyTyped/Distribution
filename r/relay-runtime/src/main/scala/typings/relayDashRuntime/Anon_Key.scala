@@ -26,11 +26,11 @@ object Anon_Key {
     updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null,
     uploadables: UploadableMap = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal(operation = operation)
-    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse)
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
+    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (optimisticUpdater != null) __obj.updateDynamic("optimisticUpdater")(js.Any.fromFunction2(optimisticUpdater))
     if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))
-    if (uploadables != null) __obj.updateDynamic("uploadables")(uploadables)
+    if (uploadables != null) __obj.updateDynamic("uploadables")(uploadables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

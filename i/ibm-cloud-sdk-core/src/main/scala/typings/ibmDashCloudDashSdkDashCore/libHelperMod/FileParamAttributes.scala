@@ -15,7 +15,7 @@ trait FileParamAttributes extends js.Object {
 object FileParamAttributes {
   @scala.inline
   def apply(contentType: String, data: ReadableStream | Buffer | FileObject, filename: String): FileParamAttributes = {
-    val __obj = js.Dynamic.literal(contentType = contentType, data = data.asInstanceOf[js.Any], filename = filename)
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileParamAttributes]
   }

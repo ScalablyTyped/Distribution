@@ -28,10 +28,10 @@ object DeveloperMetadataLocation {
     spreadsheet: js.UndefOr[Boolean] = js.undefined
   ): DeveloperMetadataLocation = {
     val __obj = js.Dynamic.literal()
-    if (dimensionRange != null) __obj.updateDynamic("dimensionRange")(dimensionRange)
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
+    if (dimensionRange != null) __obj.updateDynamic("dimensionRange")(dimensionRange.asInstanceOf[js.Any])
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
     if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(spreadsheet)) __obj.updateDynamic("spreadsheet")(spreadsheet)
+    if (!js.isUndefined(spreadsheet)) __obj.updateDynamic("spreadsheet")(spreadsheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeveloperMetadataLocation]
   }
 }

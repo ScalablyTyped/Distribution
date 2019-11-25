@@ -23,7 +23,7 @@ object Anon_BorderRadiusBorderStyle {
     paddingHorizontal: Double,
     paddingVertical: Double
   ): Anon_BorderRadiusBorderStyle = {
-    val __obj = js.Dynamic.literal(borderRadius = borderRadius, borderStyle = borderStyle, borderWidth = borderWidth, overflow = overflow, paddingHorizontal = paddingHorizontal, paddingVertical = paddingVertical)
+    val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], borderStyle = borderStyle.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderRadiusBorderStyle]
   }

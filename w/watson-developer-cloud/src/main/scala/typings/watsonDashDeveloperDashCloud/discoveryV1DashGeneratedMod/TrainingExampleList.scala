@@ -14,7 +14,7 @@ object TrainingExampleList {
   @scala.inline
   def apply(examples: js.Array[TrainingExample] = null): TrainingExampleList = {
     val __obj = js.Dynamic.literal()
-    if (examples != null) __obj.updateDynamic("examples")(examples)
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingExampleList]
   }
 }

@@ -31,7 +31,7 @@ object CurrentGameParticipant {
     summonerName: String,
     teamId: Double
   ): CurrentGameParticipant = {
-    val __obj = js.Dynamic.literal(bot = bot, championId = championId, masteries = masteries, profileIconId = profileIconId, runes = runes, spell1Id = spell1Id, spell2Id = spell2Id, summonerId = summonerId, summonerName = summonerName, teamId = teamId)
+    val __obj = js.Dynamic.literal(bot = bot.asInstanceOf[js.Any], championId = championId.asInstanceOf[js.Any], masteries = masteries.asInstanceOf[js.Any], profileIconId = profileIconId.asInstanceOf[js.Any], runes = runes.asInstanceOf[js.Any], spell1Id = spell1Id.asInstanceOf[js.Any], spell2Id = spell2Id.asInstanceOf[js.Any], summonerId = summonerId.asInstanceOf[js.Any], summonerName = summonerName.asInstanceOf[js.Any], teamId = teamId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CurrentGameParticipant]
   }

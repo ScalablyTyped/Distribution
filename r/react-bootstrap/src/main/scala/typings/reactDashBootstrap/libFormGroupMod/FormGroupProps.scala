@@ -30,11 +30,11 @@ object FormGroupProps {
     validationState: success | warning | error = null
   ): FormGroupProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
-    if (controlId != null) __obj.updateDynamic("controlId")(controlId)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
+    if (controlId != null) __obj.updateDynamic("controlId")(controlId.asInstanceOf[js.Any])
     if (validationState != null) __obj.updateDynamic("validationState")(validationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormGroupProps]
   }

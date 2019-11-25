@@ -29,7 +29,7 @@ object Result {
     user: String,
     zip_url: String
   ): Result = {
-    val __obj = js.Dynamic.literal(api_url = api_url, branch = branch, clone_url = clone_url, https_url = https_url, repo = repo, tarball_url = tarball_url, travis_url = travis_url, user = user, zip_url = zip_url)
+    val __obj = js.Dynamic.literal(api_url = api_url.asInstanceOf[js.Any], branch = branch.asInstanceOf[js.Any], clone_url = clone_url.asInstanceOf[js.Any], https_url = https_url.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tarball_url = tarball_url.asInstanceOf[js.Any], travis_url = travis_url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], zip_url = zip_url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Result]
   }

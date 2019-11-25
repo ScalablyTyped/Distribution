@@ -11,7 +11,7 @@ trait Anon_PauseStream extends js.Object {
 object Anon_PauseStream {
   @scala.inline
   def apply(pauseStream: Boolean): Anon_PauseStream = {
-    val __obj = js.Dynamic.literal(pauseStream = pauseStream)
+    val __obj = js.Dynamic.literal(pauseStream = pauseStream.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PauseStream]
   }

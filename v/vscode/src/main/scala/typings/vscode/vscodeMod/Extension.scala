@@ -54,7 +54,7 @@ object Extension {
     isActive: Boolean,
     packageJSON: js.Any
   ): Extension[T] = {
-    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), exports = exports.asInstanceOf[js.Any], extensionKind = extensionKind, extensionPath = extensionPath, id = id, isActive = isActive, packageJSON = packageJSON)
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), exports = exports.asInstanceOf[js.Any], extensionKind = extensionKind.asInstanceOf[js.Any], extensionPath = extensionPath.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], packageJSON = packageJSON.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Extension[T]]
   }

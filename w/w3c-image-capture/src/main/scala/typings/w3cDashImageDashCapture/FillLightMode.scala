@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait FillLightMode extends js.Object
 
+object FillLightMode {
+  @scala.inline
+  def auto: typings.w3cDashImageDashCapture.w3cDashImageDashCaptureStrings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def flash: typings.w3cDashImageDashCapture.w3cDashImageDashCaptureStrings.flash = this.cast("flash")
+  @scala.inline
+  def off: typings.w3cDashImageDashCapture.w3cDashImageDashCaptureStrings.off = this.cast("off")
+}
+

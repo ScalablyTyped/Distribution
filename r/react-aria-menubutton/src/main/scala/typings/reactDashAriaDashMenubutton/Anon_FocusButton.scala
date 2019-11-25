@@ -15,7 +15,7 @@ trait Anon_FocusButton extends js.Object {
 object Anon_FocusButton {
   @scala.inline
   def apply(focusButton: Boolean): Anon_FocusButton = {
-    val __obj = js.Dynamic.literal(focusButton = focusButton)
+    val __obj = js.Dynamic.literal(focusButton = focusButton.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FocusButton]
   }

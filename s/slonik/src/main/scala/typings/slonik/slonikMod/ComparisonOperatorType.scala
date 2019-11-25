@@ -15,3 +15,22 @@ import scala.scalajs.js.annotation._
 */
 trait ComparisonOperatorType extends js.Object
 
+object ComparisonOperatorType {
+  @scala.inline
+  def `!=`: typings.slonik.slonikStrings.`!=` = this.cast("!=")
+  @scala.inline
+  def `<`: typings.slonik.slonikStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.slonik.slonikStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `<>`: typings.slonik.slonikStrings.`<>` = this.cast("<>")
+  @scala.inline
+  def `=`: typings.slonik.slonikStrings.`=` = this.cast("=")
+  @scala.inline
+  def `>`: typings.slonik.slonikStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.slonik.slonikStrings.`>=` = this.cast(">=")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

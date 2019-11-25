@@ -23,8 +23,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.placeholder
 import typings.atOracleOraclejet.atOracleOraclejetStrings.placeholderChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.rawValueChanged
-import typings.atOracleOraclejet.atOracleOraclejetStrings.readonly
-import typings.atOracleOraclejet.atOracleOraclejetStrings.readonlyChanged
+import typings.atOracleOraclejet.atOracleOraclejetStrings.readonlyChanged_
+import typings.atOracleOraclejet.atOracleOraclejetStrings.readonly_
 import typings.atOracleOraclejet.atOracleOraclejetStrings.required
 import typings.atOracleOraclejet.atOracleOraclejetStrings.requiredChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.step
@@ -200,12 +200,12 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
-    `type`: readonlyChanged,
+    `type`: readonlyChanged_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean | Null], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
-    `type`: readonlyChanged,
+    `type`: readonlyChanged_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean | Null], _],
     useCapture: Boolean
   ): Unit = js.native
@@ -267,7 +267,7 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
   @JSName("getProperty")
   def getProperty_rawValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.rawValue): String = js.native
   @JSName("getProperty")
-  def getProperty_readonly(property: readonly): Boolean | Null = js.native
+  def getProperty_readonly(property: readonly_): Boolean | Null = js.native
   @JSName("getProperty")
   def getProperty_required(property: required): Boolean = js.native
   @JSName("getProperty")
@@ -307,9 +307,9 @@ trait ojInputNumber extends editableValue[Double | Null, ojInputNumberSettablePr
   @JSName("setProperty")
   def setProperty_rawValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.rawValue, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_readonly(property: readonly): Unit = js.native
+  def setProperty_readonly(property: readonly_): Unit = js.native
   @JSName("setProperty")
-  def setProperty_readonly(property: readonly, value: Boolean): Unit = js.native
+  def setProperty_readonly(property: readonly_, value: Boolean): Unit = js.native
   @JSName("setProperty")
   def setProperty_required(property: required, value: Boolean): Unit = js.native
   @JSName("setProperty")

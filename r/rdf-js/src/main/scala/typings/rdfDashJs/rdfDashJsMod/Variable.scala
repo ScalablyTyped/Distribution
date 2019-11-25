@@ -28,7 +28,7 @@ trait Variable
 object Variable {
   @scala.inline
   def apply(equals: Term => Boolean, termType: typings.rdfDashJs.rdfDashJsStrings.Variable, value: String): Variable = {
-    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), termType = termType, value = value)
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), termType = termType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Variable]
   }

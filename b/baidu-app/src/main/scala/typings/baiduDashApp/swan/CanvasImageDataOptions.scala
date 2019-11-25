@@ -30,7 +30,7 @@ object CanvasImageDataOptions {
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null
   ): CanvasImageDataOptions = {
-    val __obj = js.Dynamic.literal(canvasId = canvasId, height = height, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(canvasId = canvasId.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

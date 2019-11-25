@@ -73,15 +73,15 @@ object Options {
     v: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (libraries != null) __obj.updateDynamic("libraries")(libraries)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (libraries != null) __obj.updateDynamic("libraries")(libraries.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (v != null) __obj.updateDynamic("v")(v)
+    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

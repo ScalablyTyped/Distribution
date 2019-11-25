@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress__block-library"
-version := "2.6-dt-20190710Z-0fe2d2"
+version := "2.6-dt-20190710Z-7bd378"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

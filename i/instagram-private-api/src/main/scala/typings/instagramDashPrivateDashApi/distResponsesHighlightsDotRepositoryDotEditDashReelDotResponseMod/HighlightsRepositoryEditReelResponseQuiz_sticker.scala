@@ -31,7 +31,7 @@ object HighlightsRepositoryEditReelResponseQuiz_sticker {
     text_color: String,
     viewer_can_answer: Boolean
   ): HighlightsRepositoryEditReelResponseQuiz_sticker = {
-    val __obj = js.Dynamic.literal(correct_answer = correct_answer, end_background_color = end_background_color, finished = finished, id = id, question = question, quiz_id = quiz_id, start_background_color = start_background_color, tallies = tallies, text_color = text_color, viewer_can_answer = viewer_can_answer)
+    val __obj = js.Dynamic.literal(correct_answer = correct_answer.asInstanceOf[js.Any], end_background_color = end_background_color.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], quiz_id = quiz_id.asInstanceOf[js.Any], start_background_color = start_background_color.asInstanceOf[js.Any], tallies = tallies.asInstanceOf[js.Any], text_color = text_color.asInstanceOf[js.Any], viewer_can_answer = viewer_can_answer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseQuiz_sticker]
   }

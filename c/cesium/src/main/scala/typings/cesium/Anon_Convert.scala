@@ -23,9 +23,9 @@ object Anon_Convert {
     orientation: Anon_Direction | Anon_Heading = null
   ): Anon_Convert = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert)
+    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (endTransform != null) __obj.updateDynamic("endTransform")(endTransform)
+    if (endTransform != null) __obj.updateDynamic("endTransform")(endTransform.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Convert]
   }

@@ -34,7 +34,7 @@ object EditableAttrs {
     val __obj = js.Dynamic.literal()
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction0(onKeyDown))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
     __obj.asInstanceOf[EditableAttrs]
   }

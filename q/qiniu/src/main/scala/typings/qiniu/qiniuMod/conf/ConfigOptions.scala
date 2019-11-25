@@ -32,9 +32,9 @@ object ConfigOptions {
     zoneExpire: Int | Double = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useCdnDomain)) __obj.updateDynamic("useCdnDomain")(useCdnDomain)
-    if (!js.isUndefined(useHttpsDomain)) __obj.updateDynamic("useHttpsDomain")(useHttpsDomain)
-    if (zone != null) __obj.updateDynamic("zone")(zone)
+    if (!js.isUndefined(useCdnDomain)) __obj.updateDynamic("useCdnDomain")(useCdnDomain.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHttpsDomain)) __obj.updateDynamic("useHttpsDomain")(useHttpsDomain.asInstanceOf[js.Any])
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     if (zoneExpire != null) __obj.updateDynamic("zoneExpire")(zoneExpire.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }

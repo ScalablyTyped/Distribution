@@ -13,7 +13,7 @@ object GooglePrivacyDlpV2beta1CryptoHashConfig {
   @scala.inline
   def apply(cryptoKey: GooglePrivacyDlpV2beta1CryptoKey = null): GooglePrivacyDlpV2beta1CryptoHashConfig = {
     val __obj = js.Dynamic.literal()
-    if (cryptoKey != null) __obj.updateDynamic("cryptoKey")(cryptoKey)
+    if (cryptoKey != null) __obj.updateDynamic("cryptoKey")(cryptoKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CryptoHashConfig]
   }
 }

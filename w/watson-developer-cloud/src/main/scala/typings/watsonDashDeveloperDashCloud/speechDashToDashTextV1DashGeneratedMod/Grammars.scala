@@ -13,7 +13,7 @@ trait Grammars extends js.Object {
 object Grammars {
   @scala.inline
   def apply(grammars: js.Array[Grammar]): Grammars = {
-    val __obj = js.Dynamic.literal(grammars = grammars)
+    val __obj = js.Dynamic.literal(grammars = grammars.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Grammars]
   }

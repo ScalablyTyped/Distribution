@@ -12,7 +12,7 @@ trait SourceDefine extends js.Object {
 object SourceDefine {
   @scala.inline
   def apply(name: String, value: js.Any): SourceDefine = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceDefine]
   }

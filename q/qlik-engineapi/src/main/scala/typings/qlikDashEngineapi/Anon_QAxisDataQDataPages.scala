@@ -14,7 +14,7 @@ trait Anon_QAxisDataQDataPages extends js.Object {
 object Anon_QAxisDataQDataPages {
   @scala.inline
   def apply(qAxisData: js.Array[INxAxisData], qDataPages: INxDataPage): Anon_QAxisDataQDataPages = {
-    val __obj = js.Dynamic.literal(qAxisData = qAxisData, qDataPages = qDataPages)
+    val __obj = js.Dynamic.literal(qAxisData = qAxisData.asInstanceOf[js.Any], qDataPages = qDataPages.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QAxisDataQDataPages]
   }

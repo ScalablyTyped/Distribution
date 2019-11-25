@@ -40,9 +40,9 @@ object IShortcut {
     args: JSONObject = null,
     disabled: js.UndefOr[Boolean] = js.undefined
   ): IShortcut = {
-    val __obj = js.Dynamic.literal(command = command, keys = keys, selector = selector)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShortcut]
   }
 }

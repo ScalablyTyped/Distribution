@@ -15,7 +15,7 @@ object HttpResponse {
   def apply(body: js.Object | String = null, headers: js.Object = null, statusCode: Int | Double = null): HttpResponse = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpResponse]
   }

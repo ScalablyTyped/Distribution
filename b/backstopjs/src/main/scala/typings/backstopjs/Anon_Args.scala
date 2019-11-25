@@ -21,10 +21,10 @@ object Anon_Args {
     ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined,
     waitTimeout: Int | Double = null
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(args = args)
-    if (chromeFlags != null) __obj.updateDynamic("chromeFlags")(chromeFlags)
-    if (chromePath != null) __obj.updateDynamic("chromePath")(chromePath)
-    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
+    if (chromeFlags != null) __obj.updateDynamic("chromeFlags")(chromeFlags.asInstanceOf[js.Any])
+    if (chromePath != null) __obj.updateDynamic("chromePath")(chromePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors.asInstanceOf[js.Any])
     if (waitTimeout != null) __obj.updateDynamic("waitTimeout")(waitTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Args]
   }

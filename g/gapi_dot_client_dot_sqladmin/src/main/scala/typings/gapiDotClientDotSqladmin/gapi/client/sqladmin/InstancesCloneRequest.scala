@@ -13,7 +13,7 @@ object InstancesCloneRequest {
   @scala.inline
   def apply(cloneContext: CloneContext = null): InstancesCloneRequest = {
     val __obj = js.Dynamic.literal()
-    if (cloneContext != null) __obj.updateDynamic("cloneContext")(cloneContext)
+    if (cloneContext != null) __obj.updateDynamic("cloneContext")(cloneContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesCloneRequest]
   }
 }

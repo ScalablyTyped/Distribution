@@ -25,7 +25,7 @@ trait Anon_Script extends js.Object {
 object Anon_Script {
   @scala.inline
   def apply(script: ScriptInfo, scriptHandler: String, scriptMetaStr: String, version: String): Anon_Script = {
-    val __obj = js.Dynamic.literal(script = script, scriptHandler = scriptHandler, scriptMetaStr = scriptMetaStr, version = version)
+    val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], scriptHandler = scriptHandler.asInstanceOf[js.Any], scriptMetaStr = scriptMetaStr.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Script]
   }

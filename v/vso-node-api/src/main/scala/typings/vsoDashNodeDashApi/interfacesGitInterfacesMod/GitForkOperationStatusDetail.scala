@@ -22,7 +22,7 @@ trait GitForkOperationStatusDetail extends js.Object {
 object GitForkOperationStatusDetail {
   @scala.inline
   def apply(allSteps: js.Array[String], currentStep: Double, errorMessage: String): GitForkOperationStatusDetail = {
-    val __obj = js.Dynamic.literal(allSteps = allSteps, currentStep = currentStep, errorMessage = errorMessage)
+    val __obj = js.Dynamic.literal(allSteps = allSteps.asInstanceOf[js.Any], currentStep = currentStep.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitForkOperationStatusDetail]
   }

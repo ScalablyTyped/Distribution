@@ -13,8 +13,8 @@ object OrdersGetTestOrderTemplateResponse {
   @scala.inline
   def apply(kind: String = null, template: TestOrder = null): OrdersGetTestOrderTemplateResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersGetTestOrderTemplateResponse]
   }
 }

@@ -23,10 +23,10 @@ object User {
     last_name: String = null,
     username: String = null
   ): User = {
-    val __obj = js.Dynamic.literal(first_name = first_name, id = id, is_bot = is_bot)
-    if (language_code != null) __obj.updateDynamic("language_code")(language_code)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(first_name = first_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_bot = is_bot.asInstanceOf[js.Any])
+    if (language_code != null) __obj.updateDynamic("language_code")(language_code.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

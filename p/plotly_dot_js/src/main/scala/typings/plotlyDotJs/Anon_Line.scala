@@ -12,7 +12,7 @@ trait Anon_Line extends js.Object {
 object Anon_Line {
   @scala.inline
   def apply(line: Anon_ColorWidth, value: Double): Anon_Line = {
-    val __obj = js.Dynamic.literal(line = line, value = value)
+    val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Line]
   }

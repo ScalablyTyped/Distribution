@@ -42,19 +42,19 @@ object MailInput {
     returnTo: String = null,
     `type`: String = null
   ): MailInput = {
-    val __obj = js.Dynamic.literal(from = from, subject = subject, to = to)
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
-    if (cc != null) __obj.updateDynamic("cc")(cc)
-    if (charset != null) __obj.updateDynamic("charset")(charset)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo)
-    if (returnTo != null) __obj.updateDynamic("returnTo")(returnTo)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
+    if (returnTo != null) __obj.updateDynamic("returnTo")(returnTo.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailInput]
   }
 }

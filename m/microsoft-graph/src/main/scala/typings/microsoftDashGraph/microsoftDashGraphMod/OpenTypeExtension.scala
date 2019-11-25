@@ -13,8 +13,8 @@ object OpenTypeExtension {
   @scala.inline
   def apply(extensionName: String = null, id: String = null): OpenTypeExtension = {
     val __obj = js.Dynamic.literal()
-    if (extensionName != null) __obj.updateDynamic("extensionName")(extensionName)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (extensionName != null) __obj.updateDynamic("extensionName")(extensionName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenTypeExtension]
   }
 }

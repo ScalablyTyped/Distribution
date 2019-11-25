@@ -26,9 +26,9 @@ object WatchRequest {
   @scala.inline
   def apply(labelFilterAction: String = null, labelIds: js.Array[String] = null, topicName: String = null): WatchRequest = {
     val __obj = js.Dynamic.literal()
-    if (labelFilterAction != null) __obj.updateDynamic("labelFilterAction")(labelFilterAction)
-    if (labelIds != null) __obj.updateDynamic("labelIds")(labelIds)
-    if (topicName != null) __obj.updateDynamic("topicName")(topicName)
+    if (labelFilterAction != null) __obj.updateDynamic("labelFilterAction")(labelFilterAction.asInstanceOf[js.Any])
+    if (labelIds != null) __obj.updateDynamic("labelIds")(labelIds.asInstanceOf[js.Any])
+    if (topicName != null) __obj.updateDynamic("topicName")(topicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchRequest]
   }
 }

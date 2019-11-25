@@ -24,7 +24,7 @@ object SketchMSStyleColorControls {
     isEnabled: Double,
     saturation: Double
   ): SketchMSStyleColorControls = {
-    val __obj = js.Dynamic.literal(_class = _class, brightness = brightness, contrast = contrast, hue = hue, isEnabled = isEnabled, saturation = saturation)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], brightness = brightness.asInstanceOf[js.Any], contrast = contrast.asInstanceOf[js.Any], hue = hue.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], saturation = saturation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSStyleColorControls]
   }

@@ -23,7 +23,7 @@ object PlotConfig {
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2(format))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotConfig]
   }
 }

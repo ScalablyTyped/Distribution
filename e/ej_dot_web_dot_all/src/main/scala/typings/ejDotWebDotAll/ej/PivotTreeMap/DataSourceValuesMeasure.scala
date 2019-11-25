@@ -14,7 +14,7 @@ object DataSourceValuesMeasure {
   @scala.inline
   def apply(fieldName: String = null): DataSourceValuesMeasure = {
     val __obj = js.Dynamic.literal()
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceValuesMeasure]
   }
 }

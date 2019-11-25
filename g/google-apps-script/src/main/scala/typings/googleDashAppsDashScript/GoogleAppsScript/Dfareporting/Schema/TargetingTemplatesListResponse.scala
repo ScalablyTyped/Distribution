@@ -18,9 +18,9 @@ object TargetingTemplatesListResponse {
     targetingTemplates: js.Array[TargetingTemplate] = null
   ): TargetingTemplatesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (targetingTemplates != null) __obj.updateDynamic("targetingTemplates")(targetingTemplates)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (targetingTemplates != null) __obj.updateDynamic("targetingTemplates")(targetingTemplates.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetingTemplatesListResponse]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ApiResolverType extends js.Object
 
+object ApiResolverType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def module: typings.fridaDashGum.fridaDashGumStrings.module = this.cast("module")
+  @scala.inline
+  def objc: typings.fridaDashGum.fridaDashGumStrings.objc = this.cast("objc")
+}
+

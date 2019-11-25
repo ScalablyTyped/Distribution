@@ -25,11 +25,11 @@ object Anon_BorderStyle {
     padding: Int | Double = null
   ): Anon_BorderStyle = {
     val __obj = js.Dynamic.literal()
-    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle)
+    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderStyle]
   }

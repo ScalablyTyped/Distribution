@@ -50,10 +50,10 @@ object IConfigurationFile {
     defaultSeverity: RuleSeverity = null,
     linterOptions: Partial[Anon_Exclude] = null
   ): IConfigurationFile = {
-    val __obj = js.Dynamic.literal(jsRules = jsRules, rules = rules, rulesDirectory = rulesDirectory)
-    __obj.updateDynamic("extends")(`extends`)
-    if (defaultSeverity != null) __obj.updateDynamic("defaultSeverity")(defaultSeverity)
-    if (linterOptions != null) __obj.updateDynamic("linterOptions")(linterOptions)
+    val __obj = js.Dynamic.literal(jsRules = jsRules.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], rulesDirectory = rulesDirectory.asInstanceOf[js.Any])
+    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+    if (defaultSeverity != null) __obj.updateDynamic("defaultSeverity")(defaultSeverity.asInstanceOf[js.Any])
+    if (linterOptions != null) __obj.updateDynamic("linterOptions")(linterOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfigurationFile]
   }
 }

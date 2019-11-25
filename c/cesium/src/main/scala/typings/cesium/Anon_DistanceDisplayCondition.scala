@@ -28,9 +28,9 @@ object Anon_DistanceDisplayCondition {
     width: Property | Double = null
   ): Anon_DistanceDisplayCondition = {
     val __obj = js.Dynamic.literal()
-    if (distanceDisplayCondition != null) __obj.updateDynamic("distanceDisplayCondition")(distanceDisplayCondition)
+    if (distanceDisplayCondition != null) __obj.updateDynamic("distanceDisplayCondition")(distanceDisplayCondition.asInstanceOf[js.Any])
     if (leadTime != null) __obj.updateDynamic("leadTime")(leadTime.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material)
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (trailTime != null) __obj.updateDynamic("trailTime")(trailTime.asInstanceOf[js.Any])

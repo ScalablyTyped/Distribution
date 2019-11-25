@@ -15,10 +15,10 @@ trait Transaction extends js.Object {
 object Transaction {
   @scala.inline
   def apply(date: String, result: String, `type`: String, external_id: String = null, uuid: String = null): Transaction = {
-    val __obj = js.Dynamic.literal(date = date, result = result)
-    __obj.updateDynamic("type")(`type`)
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }
 }

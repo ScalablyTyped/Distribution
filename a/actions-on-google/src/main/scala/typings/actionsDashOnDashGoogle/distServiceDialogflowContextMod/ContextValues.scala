@@ -80,7 +80,7 @@ class ContextValues[TContexts /* <: Contexts */] () extends js.Object {
     * @return Context value matching name or undefined if no matching context.
     * @public
     */
-  def get(name: String): /* import warning: ImportType.apply Failed type conversion: TContexts[keyof TContexts] */ js.Any = js.native
+  def get(name: String): /* import warning: importer.ImportType#apply Failed type conversion: TContexts[keyof TContexts] */ js.Any = js.native
   /**
     * Set a new context for the current intent.
     *

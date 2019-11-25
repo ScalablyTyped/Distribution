@@ -27,11 +27,11 @@ object TextColumn {
     textType: String = null
   ): TextColumn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultipleLines)) __obj.updateDynamic("allowMultipleLines")(allowMultipleLines)
-    if (!js.isUndefined(appendChangesToExistingText)) __obj.updateDynamic("appendChangesToExistingText")(appendChangesToExistingText)
+    if (!js.isUndefined(allowMultipleLines)) __obj.updateDynamic("allowMultipleLines")(allowMultipleLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendChangesToExistingText)) __obj.updateDynamic("appendChangesToExistingText")(appendChangesToExistingText.asInstanceOf[js.Any])
     if (linesForEditing != null) __obj.updateDynamic("linesForEditing")(linesForEditing.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (textType != null) __obj.updateDynamic("textType")(textType)
+    if (textType != null) __obj.updateDynamic("textType")(textType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextColumn]
   }
 }

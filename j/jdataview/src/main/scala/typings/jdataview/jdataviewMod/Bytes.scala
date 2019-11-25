@@ -12,8 +12,8 @@ trait Bytes extends /* index */ NumberDictionary[Double] {
 object Bytes {
   @scala.inline
   def apply(length: Double, NumberDictionary: /* index */ NumberDictionary[Double] = null): Bytes = {
-    val __obj = js.Dynamic.literal(length = length)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Bytes]
   }
 }

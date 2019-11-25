@@ -14,8 +14,8 @@ trait ICallbackObj extends js.Object {
 object ICallbackObj {
   @scala.inline
   def apply(id: String, success: Boolean, ref: HTMLElement = null): ICallbackObj = {
-    val __obj = js.Dynamic.literal(id = id, success = success)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICallbackObj]
   }
 }

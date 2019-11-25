@@ -19,8 +19,8 @@ object CreateIndexOptions {
   @scala.inline
   def apply(deferred: js.UndefOr[Boolean] = js.undefined, ignoreIfExists: js.UndefOr[Boolean] = js.undefined): CreateIndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
-    if (!js.isUndefined(ignoreIfExists)) __obj.updateDynamic("ignoreIfExists")(ignoreIfExists)
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreIfExists)) __obj.updateDynamic("ignoreIfExists")(ignoreIfExists.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIndexOptions]
   }
 }

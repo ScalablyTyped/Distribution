@@ -66,7 +66,7 @@ object libServerconnectionMod extends js.Object {
       * A wrapped error for a network error.
       */
     @js.native
-    class NetworkError protected () extends TypeError {
+    class NetworkError protected () extends Error {
       /**
         * Create a new network error.
         */

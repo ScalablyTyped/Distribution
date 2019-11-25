@@ -13,8 +13,8 @@ object Footer {
   @scala.inline
   def apply(content: js.Array[StructuralElement] = null, footerId: String = null): Footer = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (footerId != null) __obj.updateDynamic("footerId")(footerId)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (footerId != null) __obj.updateDynamic("footerId")(footerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Footer]
   }
 }

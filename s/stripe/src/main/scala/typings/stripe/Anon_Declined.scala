@@ -26,7 +26,7 @@ object Anon_Declined {
     url: String,
     failure_reason: user_abort | declined | processing_error = null
   ): Anon_Declined = {
-    val __obj = js.Dynamic.literal(return_url = return_url, status = status.asInstanceOf[js.Any], url = url)
+    val __obj = js.Dynamic.literal(return_url = return_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Declined]
   }

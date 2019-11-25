@@ -34,11 +34,11 @@ object RecurrenceRange {
     `type`: RecurrenceRangeType = null
   ): RecurrenceRange = {
     val __obj = js.Dynamic.literal()
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (numberOfOccurrences != null) __obj.updateDynamic("numberOfOccurrences")(numberOfOccurrences.asInstanceOf[js.Any])
-    if (recurrenceTimeZone != null) __obj.updateDynamic("recurrenceTimeZone")(recurrenceTimeZone)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (recurrenceTimeZone != null) __obj.updateDynamic("recurrenceTimeZone")(recurrenceTimeZone.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurrenceRange]
   }
 }

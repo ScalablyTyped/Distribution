@@ -75,21 +75,17 @@ object IMap {
   @scala.inline
   def apply(
     IContainer: IContainer = null,
-    baseCls: java.lang.String = null,
     geo: IGeolocation = null,
-    getBaseCls: () => java.lang.String = null,
     getGeo: () => IGeolocation = null,
     getMap: () => _ = null,
     getMapListeners: () => _ = null,
     getState: () => _ = null,
     getUseCurrentLocation: () => _ = null,
-    initialize: () => Unit = null,
     map: js.Any = null,
     mapListeners: js.Any = null,
     mapOptions: js.Any = null,
     maskMap: js.UndefOr[Boolean] = js.undefined,
     maskMapCls: java.lang.String = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setGeo: /* geo */ js.UndefOr[IGeolocation] => Unit = null,
     setMap: /* map */ js.UndefOr[js.Any] => Unit = null,
     setMapCenter: /* coordinates */ js.UndefOr[js.Any] => Unit = null,
@@ -100,22 +96,18 @@ object IMap {
     useCurrentLocation: js.Any = null
   ): IMap = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (geo != null) __obj.updateDynamic("geo")(geo)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (geo != null) __obj.updateDynamic("geo")(geo.asInstanceOf[js.Any])
     if (getGeo != null) __obj.updateDynamic("getGeo")(js.Any.fromFunction0(getGeo))
     if (getMap != null) __obj.updateDynamic("getMap")(js.Any.fromFunction0(getMap))
     if (getMapListeners != null) __obj.updateDynamic("getMapListeners")(js.Any.fromFunction0(getMapListeners))
     if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
     if (getUseCurrentLocation != null) __obj.updateDynamic("getUseCurrentLocation")(js.Any.fromFunction0(getUseCurrentLocation))
-    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (mapListeners != null) __obj.updateDynamic("mapListeners")(mapListeners)
-    if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions)
-    if (!js.isUndefined(maskMap)) __obj.updateDynamic("maskMap")(maskMap)
-    if (maskMapCls != null) __obj.updateDynamic("maskMapCls")(maskMapCls)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (mapListeners != null) __obj.updateDynamic("mapListeners")(mapListeners.asInstanceOf[js.Any])
+    if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskMap)) __obj.updateDynamic("maskMap")(maskMap.asInstanceOf[js.Any])
+    if (maskMapCls != null) __obj.updateDynamic("maskMapCls")(maskMapCls.asInstanceOf[js.Any])
     if (setGeo != null) __obj.updateDynamic("setGeo")(js.Any.fromFunction1(setGeo))
     if (setMap != null) __obj.updateDynamic("setMap")(js.Any.fromFunction1(setMap))
     if (setMapCenter != null) __obj.updateDynamic("setMapCenter")(js.Any.fromFunction1(setMapCenter))
@@ -123,7 +115,7 @@ object IMap {
     if (setMapOptions != null) __obj.updateDynamic("setMapOptions")(js.Any.fromFunction1(setMapOptions))
     if (setUseCurrentLocation != null) __obj.updateDynamic("setUseCurrentLocation")(js.Any.fromFunction1(setUseCurrentLocation))
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
-    if (useCurrentLocation != null) __obj.updateDynamic("useCurrentLocation")(useCurrentLocation)
+    if (useCurrentLocation != null) __obj.updateDynamic("useCurrentLocation")(useCurrentLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMap]
   }
 }

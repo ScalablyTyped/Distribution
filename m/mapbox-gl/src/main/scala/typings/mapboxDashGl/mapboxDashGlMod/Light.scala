@@ -29,12 +29,12 @@ object Light {
   ): Light = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (`color-transition` != null) __obj.updateDynamic("color-transition")(`color-transition`)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (`color-transition` != null) __obj.updateDynamic("color-transition")(`color-transition`.asInstanceOf[js.Any])
     if (intensity != null) __obj.updateDynamic("intensity")(intensity.asInstanceOf[js.Any])
-    if (`intensity-transition` != null) __obj.updateDynamic("intensity-transition")(`intensity-transition`)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (`position-transition` != null) __obj.updateDynamic("position-transition")(`position-transition`)
+    if (`intensity-transition` != null) __obj.updateDynamic("intensity-transition")(`intensity-transition`.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (`position-transition` != null) __obj.updateDynamic("position-transition")(`position-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Light]
   }
 }

@@ -49,7 +49,7 @@ object ISymmetricAlgorithmNamesStatics {
     tripleDesEcb: String,
     tripleDesEcbPkcs7: String
   ): ISymmetricAlgorithmNamesStatics = {
-    val __obj = js.Dynamic.literal(aesCbc = aesCbc, aesCbcPkcs7 = aesCbcPkcs7, aesCcm = aesCcm, aesEcb = aesEcb, aesEcbPkcs7 = aesEcbPkcs7, aesGcm = aesGcm, desCbc = desCbc, desCbcPkcs7 = desCbcPkcs7, desEcb = desEcb, desEcbPkcs7 = desEcbPkcs7, rc2Cbc = rc2Cbc, rc2CbcPkcs7 = rc2CbcPkcs7, rc2Ecb = rc2Ecb, rc2EcbPkcs7 = rc2EcbPkcs7, rc4 = rc4, tripleDesCbc = tripleDesCbc, tripleDesCbcPkcs7 = tripleDesCbcPkcs7, tripleDesEcb = tripleDesEcb, tripleDesEcbPkcs7 = tripleDesEcbPkcs7)
+    val __obj = js.Dynamic.literal(aesCbc = aesCbc.asInstanceOf[js.Any], aesCbcPkcs7 = aesCbcPkcs7.asInstanceOf[js.Any], aesCcm = aesCcm.asInstanceOf[js.Any], aesEcb = aesEcb.asInstanceOf[js.Any], aesEcbPkcs7 = aesEcbPkcs7.asInstanceOf[js.Any], aesGcm = aesGcm.asInstanceOf[js.Any], desCbc = desCbc.asInstanceOf[js.Any], desCbcPkcs7 = desCbcPkcs7.asInstanceOf[js.Any], desEcb = desEcb.asInstanceOf[js.Any], desEcbPkcs7 = desEcbPkcs7.asInstanceOf[js.Any], rc2Cbc = rc2Cbc.asInstanceOf[js.Any], rc2CbcPkcs7 = rc2CbcPkcs7.asInstanceOf[js.Any], rc2Ecb = rc2Ecb.asInstanceOf[js.Any], rc2EcbPkcs7 = rc2EcbPkcs7.asInstanceOf[js.Any], rc4 = rc4.asInstanceOf[js.Any], tripleDesCbc = tripleDesCbc.asInstanceOf[js.Any], tripleDesCbcPkcs7 = tripleDesCbcPkcs7.asInstanceOf[js.Any], tripleDesEcb = tripleDesEcb.asInstanceOf[js.Any], tripleDesEcbPkcs7 = tripleDesEcbPkcs7.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISymmetricAlgorithmNamesStatics]
   }

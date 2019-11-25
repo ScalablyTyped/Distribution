@@ -31,13 +31,13 @@ object Permission {
     shareId: String = null
   ): Permission = {
     val __obj = js.Dynamic.literal()
-    if (grantedTo != null) __obj.updateDynamic("grantedTo")(grantedTo)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inheritedFrom != null) __obj.updateDynamic("inheritedFrom")(inheritedFrom)
-    if (invitation != null) __obj.updateDynamic("invitation")(invitation)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (roles != null) __obj.updateDynamic("roles")(roles)
-    if (shareId != null) __obj.updateDynamic("shareId")(shareId)
+    if (grantedTo != null) __obj.updateDynamic("grantedTo")(grantedTo.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inheritedFrom != null) __obj.updateDynamic("inheritedFrom")(inheritedFrom.asInstanceOf[js.Any])
+    if (invitation != null) __obj.updateDynamic("invitation")(invitation.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    if (shareId != null) __obj.updateDynamic("shareId")(shareId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permission]
   }
 }

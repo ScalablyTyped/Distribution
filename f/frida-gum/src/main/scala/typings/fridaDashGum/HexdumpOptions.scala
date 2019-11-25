@@ -32,8 +32,8 @@ object HexdumpOptions {
     offset: Int | Double = null
   ): HexdumpOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ansi)) __obj.updateDynamic("ansi")(ansi)
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
+    if (!js.isUndefined(ansi)) __obj.updateDynamic("ansi")(ansi.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[HexdumpOptions]

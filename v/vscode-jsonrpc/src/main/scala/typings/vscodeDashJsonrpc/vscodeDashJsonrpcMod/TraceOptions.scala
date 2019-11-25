@@ -13,8 +13,8 @@ object TraceOptions {
   @scala.inline
   def apply(sendNotification: js.UndefOr[Boolean] = js.undefined, traceFormat: TraceFormat = null): TraceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(sendNotification)) __obj.updateDynamic("sendNotification")(sendNotification)
-    if (traceFormat != null) __obj.updateDynamic("traceFormat")(traceFormat)
+    if (!js.isUndefined(sendNotification)) __obj.updateDynamic("sendNotification")(sendNotification.asInstanceOf[js.Any])
+    if (traceFormat != null) __obj.updateDynamic("traceFormat")(traceFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceOptions]
   }
 }

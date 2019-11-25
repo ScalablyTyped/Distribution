@@ -30,14 +30,14 @@ object Anon_DiscontinuitySequenceBase {
     segments: js.Array[Segment] = null,
     source: String = null
   ): Anon_DiscontinuitySequenceBase = {
-    val __obj = js.Dynamic.literal(targetDuration = targetDuration)
+    val __obj = js.Dynamic.literal(targetDuration = targetDuration.asInstanceOf[js.Any])
     if (discontinuitySequenceBase != null) __obj.updateDynamic("discontinuitySequenceBase")(discontinuitySequenceBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(endlist)) __obj.updateDynamic("endlist")(endlist)
-    if (!js.isUndefined(isIFrame)) __obj.updateDynamic("isIFrame")(isIFrame)
+    if (!js.isUndefined(endlist)) __obj.updateDynamic("endlist")(endlist.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIFrame)) __obj.updateDynamic("isIFrame")(isIFrame.asInstanceOf[js.Any])
     if (mediaSequenceBase != null) __obj.updateDynamic("mediaSequenceBase")(mediaSequenceBase.asInstanceOf[js.Any])
     if (playlistType != null) __obj.updateDynamic("playlistType")(playlistType.asInstanceOf[js.Any])
-    if (segments != null) __obj.updateDynamic("segments")(segments)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DiscontinuitySequenceBase]
   }
 }

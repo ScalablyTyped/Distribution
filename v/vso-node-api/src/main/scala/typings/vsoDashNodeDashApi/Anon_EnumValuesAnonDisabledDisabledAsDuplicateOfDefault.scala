@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonDisabledDisabledAsDuplicateOfDefault extends js.Object 
 object Anon_EnumValuesAnonDisabledDisabledAsDuplicateOfDefault {
   @scala.inline
   def apply(enumValues: Anon_DisabledDisabledAsDuplicateOfDefault): Anon_EnumValuesAnonDisabledDisabledAsDuplicateOfDefault = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonDisabledDisabledAsDuplicateOfDefault]
   }

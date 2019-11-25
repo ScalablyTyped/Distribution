@@ -18,8 +18,8 @@ trait AlertStrings extends js.Object {
 object AlertStrings {
   @scala.inline
   def apply(text: String, confirmButtonLabel: String = null): AlertStrings = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (confirmButtonLabel != null) __obj.updateDynamic("confirmButtonLabel")(confirmButtonLabel)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (confirmButtonLabel != null) __obj.updateDynamic("confirmButtonLabel")(confirmButtonLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertStrings]
   }
 }

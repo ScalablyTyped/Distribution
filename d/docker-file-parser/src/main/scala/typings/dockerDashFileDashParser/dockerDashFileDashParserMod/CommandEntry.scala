@@ -22,8 +22,8 @@ object CommandEntry {
     raw: String,
     error: String = null
   ): CommandEntry = {
-    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], lineno = lineno, name = name, raw = raw)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandEntry]
   }
 }

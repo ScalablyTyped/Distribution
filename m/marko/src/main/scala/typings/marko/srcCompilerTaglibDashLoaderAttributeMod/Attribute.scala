@@ -51,14 +51,14 @@ object Attribute {
     targetProperty: String = null,
     `type`: String = null
   ): Attribute = {
-    val __obj = js.Dynamic.literal(allowExpressions = allowExpressions, autocomplete = autocomplete, defaultValue = defaultValue, deprecated = deprecated, dynamicAttribute = dynamicAttribute, enum = enum, filePath = filePath, html = html, ignore = ignore, key = key, removeDashes = removeDashes, required = required, setContextFlag = setContextFlag)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (preserveName != null) __obj.updateDynamic("preserveName")(preserveName)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
-    if (setFlag != null) __obj.updateDynamic("setFlag")(setFlag)
-    if (targetProperty != null) __obj.updateDynamic("targetProperty")(targetProperty)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(allowExpressions = allowExpressions.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], deprecated = deprecated.asInstanceOf[js.Any], dynamicAttribute = dynamicAttribute.asInstanceOf[js.Any], enum = enum.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], removeDashes = removeDashes.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], setContextFlag = setContextFlag.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (preserveName != null) __obj.updateDynamic("preserveName")(preserveName.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (setFlag != null) __obj.updateDynamic("setFlag")(setFlag.asInstanceOf[js.Any])
+    if (targetProperty != null) __obj.updateDynamic("targetProperty")(targetProperty.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }
 }

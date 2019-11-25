@@ -22,11 +22,11 @@ object Action {
     timestamp: String = null
   ): Action = {
     val __obj = js.Dynamic.literal()
-    if (actor != null) __obj.updateDynamic("actor")(actor)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
 }

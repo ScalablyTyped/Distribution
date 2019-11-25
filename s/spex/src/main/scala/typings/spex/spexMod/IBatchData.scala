@@ -13,8 +13,8 @@ trait IBatchData extends js.Object {
 object IBatchData {
   @scala.inline
   def apply(result: js.Any, success: Boolean, origin: IOriginData = null): IBatchData = {
-    val __obj = js.Dynamic.literal(result = result, success = success)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchData]
   }
 }

@@ -34,10 +34,10 @@ object IThumbProps {
     style: CSSProperties,
     tabIndex: Int | Double = null
   ): IThumbProps = {
-    val __obj = js.Dynamic.literal(draggable = draggable, key = key, onKeyDown = js.Any.fromFunction1(onKeyDown), onKeyUp = js.Any.fromFunction1(onKeyUp), role = role, style = style)
-    __obj.updateDynamic("aria-valuemax")(`aria-valuemax`)
-    __obj.updateDynamic("aria-valuemin")(`aria-valuemin`)
-    __obj.updateDynamic("aria-valuenow")(`aria-valuenow`)
+    val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onKeyDown = js.Any.fromFunction1(onKeyDown), onKeyUp = js.Any.fromFunction1(onKeyUp), role = role.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThumbProps]
   }

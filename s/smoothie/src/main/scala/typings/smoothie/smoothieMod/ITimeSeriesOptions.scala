@@ -13,7 +13,7 @@ object ITimeSeriesOptions {
   @scala.inline
   def apply(resetBounds: js.UndefOr[Boolean] = js.undefined, resetBoundsInterval: Int | Double = null): ITimeSeriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resetBounds)) __obj.updateDynamic("resetBounds")(resetBounds)
+    if (!js.isUndefined(resetBounds)) __obj.updateDynamic("resetBounds")(resetBounds.asInstanceOf[js.Any])
     if (resetBoundsInterval != null) __obj.updateDynamic("resetBoundsInterval")(resetBoundsInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeSeriesOptions]
   }

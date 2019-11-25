@@ -34,16 +34,16 @@ object Options {
     resolvers: js.Array[js.Function1[/* arg */ _, _]] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
     if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction1(dispose))
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (normalizer != null) __obj.updateDynamic("normalizer")(js.Any.fromFunction1(normalizer))
     if (preFetch != null) __obj.updateDynamic("preFetch")(preFetch.asInstanceOf[js.Any])
-    if (!js.isUndefined(primitive)) __obj.updateDynamic("primitive")(primitive)
-    if (!js.isUndefined(promise)) __obj.updateDynamic("promise")(promise)
-    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers)
+    if (!js.isUndefined(primitive)) __obj.updateDynamic("primitive")(primitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(promise)) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
+    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

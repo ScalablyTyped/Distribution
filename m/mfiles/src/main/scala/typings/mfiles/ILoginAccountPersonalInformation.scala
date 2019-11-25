@@ -13,7 +13,7 @@ trait ILoginAccountPersonalInformation extends js.Object {
 object ILoginAccountPersonalInformation {
   @scala.inline
   def apply(AccountName: String, Email: String, FullName: String): ILoginAccountPersonalInformation = {
-    val __obj = js.Dynamic.literal(AccountName = AccountName, Email = Email, FullName = FullName)
+    val __obj = js.Dynamic.literal(AccountName = AccountName.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], FullName = FullName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILoginAccountPersonalInformation]
   }

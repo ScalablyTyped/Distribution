@@ -16,8 +16,8 @@ trait SceneItem extends js.Object {
 object SceneItem {
   @scala.inline
   def apply(bounds: Bounds, mark: Anon_Role, x: Double, y: Double, datum: js.Object = null): SceneItem = {
-    val __obj = js.Dynamic.literal(bounds = bounds, mark = mark, x = x, y = y)
-    if (datum != null) __obj.updateDynamic("datum")(datum)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (datum != null) __obj.updateDynamic("datum")(datum.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneItem]
   }
 }

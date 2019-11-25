@@ -22,7 +22,7 @@ trait PaymentPathRecord
 object PaymentPathRecord {
   @scala.inline
   def apply(
-    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     destination_amount: String,
@@ -35,7 +35,7 @@ object PaymentPathRecord {
     source_asset_issuer: String,
     source_asset_type: String
   ): PaymentPathRecord = {
-    val __obj = js.Dynamic.literal(_links = _links, destination_amount = destination_amount, destination_asset_code = destination_asset_code, destination_asset_issuer = destination_asset_issuer, destination_asset_type = destination_asset_type, path = path, source_amount = source_amount, source_asset_code = source_asset_code, source_asset_issuer = source_asset_issuer, source_asset_type = source_asset_type)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], destination_amount = destination_amount.asInstanceOf[js.Any], destination_asset_code = destination_asset_code.asInstanceOf[js.Any], destination_asset_issuer = destination_asset_issuer.asInstanceOf[js.Any], destination_asset_type = destination_asset_type.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], source_amount = source_amount.asInstanceOf[js.Any], source_asset_code = source_asset_code.asInstanceOf[js.Any], source_asset_issuer = source_asset_issuer.asInstanceOf[js.Any], source_asset_type = source_asset_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PaymentPathRecord]
   }

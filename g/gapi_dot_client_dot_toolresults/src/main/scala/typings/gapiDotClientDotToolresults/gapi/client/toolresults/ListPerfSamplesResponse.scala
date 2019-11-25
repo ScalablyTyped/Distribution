@@ -17,8 +17,8 @@ object ListPerfSamplesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, perfSamples: js.Array[PerfSample] = null): ListPerfSamplesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (perfSamples != null) __obj.updateDynamic("perfSamples")(perfSamples)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (perfSamples != null) __obj.updateDynamic("perfSamples")(perfSamples.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPerfSamplesResponse]
   }
 }

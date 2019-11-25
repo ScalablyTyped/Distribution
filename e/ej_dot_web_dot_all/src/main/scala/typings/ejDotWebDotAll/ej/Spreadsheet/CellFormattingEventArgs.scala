@@ -42,12 +42,12 @@ object CellFormattingEventArgs {
   ): CellFormattingEventArgs = {
     val __obj = js.Dynamic.literal()
     if (Cell != null) __obj.updateDynamic("Cell")(Cell.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format)
+    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
     if (SheetIdx != null) __obj.updateDynamic("SheetIdx")(SheetIdx.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellFormattingEventArgs]
   }
 }

@@ -16,7 +16,7 @@ object WebImage {
   def apply(score: Int | Double = null, url: String = null): WebImage = {
     val __obj = js.Dynamic.literal()
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebImage]
   }
 }

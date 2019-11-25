@@ -22,7 +22,7 @@ object TabfilterProps {
   ): TabfilterProps = {
     val __obj = js.Dynamic.literal(onFilterUpdate = js.Any.fromFunction2(onFilterUpdate), rows = rows.asInstanceOf[js.Any])
     if (initialFilters != null) __obj.updateDynamic("initialFilters")(initialFilters.asInstanceOf[js.Any])
-    if (rowClass != null) __obj.updateDynamic("rowClass")(rowClass)
+    if (rowClass != null) __obj.updateDynamic("rowClass")(rowClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabfilterProps]
   }
 }

@@ -34,13 +34,13 @@ object Options {
     spare: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cdata)) __obj.updateDynamic("cdata")(cdata)
-    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(conditionals)) __obj.updateDynamic("conditionals")(conditionals)
-    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
-    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose)
-    if (!js.isUndefined(quotes)) __obj.updateDynamic("quotes")(quotes)
-    if (!js.isUndefined(spare)) __obj.updateDynamic("spare")(spare)
+    if (!js.isUndefined(cdata)) __obj.updateDynamic("cdata")(cdata.asInstanceOf[js.Any])
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(conditionals)) __obj.updateDynamic("conditionals")(conditionals.asInstanceOf[js.Any])
+    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose.asInstanceOf[js.Any])
+    if (!js.isUndefined(quotes)) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(spare)) __obj.updateDynamic("spare")(spare.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

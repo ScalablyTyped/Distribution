@@ -77,13 +77,13 @@ object Options {
     useEquals: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (!js.isUndefined(allowCamelCase)) __obj.updateDynamic("allowCamelCase")(allowCamelCase)
-    if (excludes != null) __obj.updateDynamic("excludes")(excludes)
-    if (!js.isUndefined(ignoreFalse)) __obj.updateDynamic("ignoreFalse")(ignoreFalse)
-    if (includes != null) __obj.updateDynamic("includes")(includes)
-    if (!js.isUndefined(shortFlag)) __obj.updateDynamic("shortFlag")(shortFlag)
-    if (!js.isUndefined(useEquals)) __obj.updateDynamic("useEquals")(useEquals)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCamelCase)) __obj.updateDynamic("allowCamelCase")(allowCamelCase.asInstanceOf[js.Any])
+    if (excludes != null) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreFalse)) __obj.updateDynamic("ignoreFalse")(ignoreFalse.asInstanceOf[js.Any])
+    if (includes != null) __obj.updateDynamic("includes")(includes.asInstanceOf[js.Any])
+    if (!js.isUndefined(shortFlag)) __obj.updateDynamic("shortFlag")(shortFlag.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEquals)) __obj.updateDynamic("useEquals")(useEquals.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

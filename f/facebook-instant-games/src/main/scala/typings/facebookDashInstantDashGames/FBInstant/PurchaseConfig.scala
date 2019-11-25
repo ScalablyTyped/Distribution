@@ -21,8 +21,8 @@ trait PurchaseConfig extends js.Object {
 object PurchaseConfig {
   @scala.inline
   def apply(productID: String, developerPayload: String = null): PurchaseConfig = {
-    val __obj = js.Dynamic.literal(productID = productID)
-    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload)
+    val __obj = js.Dynamic.literal(productID = productID.asInstanceOf[js.Any])
+    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseConfig]
   }
 }

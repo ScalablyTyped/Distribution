@@ -33,10 +33,10 @@ object ShareContentCommonParameters {
     ref: String = null
   ): ShareContentCommonParameters = {
     val __obj = js.Dynamic.literal()
-    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag)
-    if (peopleIds != null) __obj.updateDynamic("peopleIds")(peopleIds)
-    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
+    if (peopleIds != null) __obj.updateDynamic("peopleIds")(peopleIds.asInstanceOf[js.Any])
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareContentCommonParameters]
   }
 }

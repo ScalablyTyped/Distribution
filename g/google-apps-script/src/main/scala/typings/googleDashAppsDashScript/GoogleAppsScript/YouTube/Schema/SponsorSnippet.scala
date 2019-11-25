@@ -20,10 +20,10 @@ object SponsorSnippet {
     sponsorSince: String = null
   ): SponsorSnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
     if (cumulativeDurationMonths != null) __obj.updateDynamic("cumulativeDurationMonths")(cumulativeDurationMonths.asInstanceOf[js.Any])
-    if (sponsorDetails != null) __obj.updateDynamic("sponsorDetails")(sponsorDetails)
-    if (sponsorSince != null) __obj.updateDynamic("sponsorSince")(sponsorSince)
+    if (sponsorDetails != null) __obj.updateDynamic("sponsorDetails")(sponsorDetails.asInstanceOf[js.Any])
+    if (sponsorSince != null) __obj.updateDynamic("sponsorSince")(sponsorSince.asInstanceOf[js.Any])
     __obj.asInstanceOf[SponsorSnippet]
   }
 }

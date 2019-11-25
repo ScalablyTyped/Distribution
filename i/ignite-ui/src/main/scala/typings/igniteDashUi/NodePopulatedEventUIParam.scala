@@ -27,10 +27,10 @@ object NodePopulatedEventUIParam {
   @scala.inline
   def apply(binding: js.Any = null, data: js.Any = null, element: String = null, path: String = null): NodePopulatedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (binding != null) __obj.updateDynamic("binding")(binding)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodePopulatedEventUIParam]
   }
 }

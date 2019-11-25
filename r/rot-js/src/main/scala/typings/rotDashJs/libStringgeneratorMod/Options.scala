@@ -16,7 +16,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(order: Double, prior: Double, words: Boolean): Options = {
-    val __obj = js.Dynamic.literal(order = order, prior = prior, words = words)
+    val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any], prior = prior.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

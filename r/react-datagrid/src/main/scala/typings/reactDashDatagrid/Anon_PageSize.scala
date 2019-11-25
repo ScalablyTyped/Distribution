@@ -12,7 +12,7 @@ trait Anon_PageSize extends js.Object {
 object Anon_PageSize {
   @scala.inline
   def apply(pageSize: Double, skip: Double): Anon_PageSize = {
-    val __obj = js.Dynamic.literal(pageSize = pageSize, skip = skip)
+    val __obj = js.Dynamic.literal(pageSize = pageSize.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PageSize]
   }

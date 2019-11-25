@@ -14,7 +14,7 @@ trait Anon_EntryPointReference[TEntryPointComponent /* <: EntryPointComponent[TP
 object Anon_EntryPointReference {
   @scala.inline
   def apply[TEntryPointComponent /* <: EntryPointComponent[TPreloadedQueries, TPreloadedNestedEntryPoints, TRuntimeProps, TExtraProps] */, TRuntimeProps /* <: js.Object */](entryPointReference: PreloadedEntryPoint[TEntryPointComponent], props: TRuntimeProps): Anon_EntryPointReference[TEntryPointComponent, TRuntimeProps] = {
-    val __obj = js.Dynamic.literal(entryPointReference = entryPointReference, props = props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(entryPointReference = entryPointReference.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EntryPointReference[TEntryPointComponent, TRuntimeProps]]
   }

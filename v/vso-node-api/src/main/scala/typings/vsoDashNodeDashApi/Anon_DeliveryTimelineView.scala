@@ -11,7 +11,7 @@ trait Anon_DeliveryTimelineView extends js.Object {
 object Anon_DeliveryTimelineView {
   @scala.inline
   def apply(deliveryTimelineView: Double): Anon_DeliveryTimelineView = {
-    val __obj = js.Dynamic.literal(deliveryTimelineView = deliveryTimelineView)
+    val __obj = js.Dynamic.literal(deliveryTimelineView = deliveryTimelineView.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DeliveryTimelineView]
   }

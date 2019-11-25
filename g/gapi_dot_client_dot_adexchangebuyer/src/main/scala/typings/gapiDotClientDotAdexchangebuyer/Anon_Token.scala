@@ -18,8 +18,8 @@ object Anon_Token {
   @scala.inline
   def apply(token: String = null, `type`: String = null): Anon_Token = {
     val __obj = js.Dynamic.literal()
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Token]
   }
 }

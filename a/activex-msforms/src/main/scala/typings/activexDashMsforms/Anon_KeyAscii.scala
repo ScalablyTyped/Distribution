@@ -12,7 +12,7 @@ trait Anon_KeyAscii extends js.Object {
 object Anon_KeyAscii {
   @scala.inline
   def apply(KeyAscii: ReturnInteger): Anon_KeyAscii = {
-    val __obj = js.Dynamic.literal(KeyAscii = KeyAscii)
+    val __obj = js.Dynamic.literal(KeyAscii = KeyAscii.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_KeyAscii]
   }

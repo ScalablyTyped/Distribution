@@ -29,10 +29,10 @@ object Mapping {
     nonce: js.Array[Double] = null,
     timeoutId: Int | Double = null
   ): Mapping = {
-    val __obj = js.Dynamic.literal(externalPort = externalPort, internalIp = internalIp, internalPort = internalPort, lifetime = lifetime, protocol = protocol)
-    if (errInfo != null) __obj.updateDynamic("errInfo")(errInfo)
-    if (externalIp != null) __obj.updateDynamic("externalIp")(externalIp)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(externalPort = externalPort.asInstanceOf[js.Any], internalIp = internalIp.asInstanceOf[js.Any], internalPort = internalPort.asInstanceOf[js.Any], lifetime = lifetime.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
+    if (errInfo != null) __obj.updateDynamic("errInfo")(errInfo.asInstanceOf[js.Any])
+    if (externalIp != null) __obj.updateDynamic("externalIp")(externalIp.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (timeoutId != null) __obj.updateDynamic("timeoutId")(timeoutId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mapping]
   }

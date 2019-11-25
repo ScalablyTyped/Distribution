@@ -15,9 +15,9 @@ object FetchTableMetadataOptions {
   @scala.inline
   def apply(force: js.UndefOr[Boolean] = js.undefined, knex: Knex[_, js.Array[_]] = null, table: String = null): FetchTableMetadataOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (knex != null) __obj.updateDynamic("knex")(knex)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (knex != null) __obj.updateDynamic("knex")(knex.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchTableMetadataOptions]
   }
 }

@@ -13,7 +13,7 @@ object Anon_KMS {
   @scala.inline
   def apply(`type`: KMS): Anon_KMS = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KMS]
   }
 }

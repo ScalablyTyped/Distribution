@@ -12,7 +12,7 @@ trait InsightsServiceAccountResponseOrganic extends js.Object {
 object InsightsServiceAccountResponseOrganic {
   @scala.inline
   def apply(status: String, value: Double): InsightsServiceAccountResponseOrganic = {
-    val __obj = js.Dynamic.literal(status = status, value = value)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseOrganic]
   }

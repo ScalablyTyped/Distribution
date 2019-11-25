@@ -33,16 +33,16 @@ object FilterOptions {
     operators: FilterOperators = null
   ): FilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyButton)) __obj.updateDynamic("applyButton")(applyButton)
+    if (!js.isUndefined(applyButton)) __obj.updateDynamic("applyButton")(applyButton.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (!js.isUndefined(expressionPreview)) __obj.updateDynamic("expressionPreview")(expressionPreview)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (mainLogic != null) __obj.updateDynamic("mainLogic")(mainLogic)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (operators != null) __obj.updateDynamic("operators")(operators)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (!js.isUndefined(expressionPreview)) __obj.updateDynamic("expressionPreview")(expressionPreview.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (mainLogic != null) __obj.updateDynamic("mainLogic")(mainLogic.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions]
   }
 }

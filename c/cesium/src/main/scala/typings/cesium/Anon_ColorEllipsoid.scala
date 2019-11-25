@@ -25,11 +25,11 @@ object Anon_ColorEllipsoid {
     tilingScheme: TilingScheme = null
   ): Anon_ColorEllipsoid = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (tileHeight != null) __obj.updateDynamic("tileHeight")(tileHeight.asInstanceOf[js.Any])
     if (tileWidth != null) __obj.updateDynamic("tileWidth")(tileWidth.asInstanceOf[js.Any])
-    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme)
+    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorEllipsoid]
   }
 }

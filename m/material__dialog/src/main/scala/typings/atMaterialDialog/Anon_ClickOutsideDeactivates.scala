@@ -13,7 +13,7 @@ trait Anon_ClickOutsideDeactivates extends js.Object {
 object Anon_ClickOutsideDeactivates {
   @scala.inline
   def apply(clickOutsideDeactivates: Boolean, initialFocus: Element): Anon_ClickOutsideDeactivates = {
-    val __obj = js.Dynamic.literal(clickOutsideDeactivates = clickOutsideDeactivates, initialFocus = initialFocus)
+    val __obj = js.Dynamic.literal(clickOutsideDeactivates = clickOutsideDeactivates.asInstanceOf[js.Any], initialFocus = initialFocus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClickOutsideDeactivates]
   }

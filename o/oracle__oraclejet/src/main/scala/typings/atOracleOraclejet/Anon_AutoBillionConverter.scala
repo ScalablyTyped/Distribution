@@ -19,7 +19,7 @@ trait Anon_AutoBillionConverter extends js.Object {
 object Anon_AutoBillionConverter {
   @scala.inline
   def apply(converter: js.Object, scaling: none | thousand | million | billion | trillion | quadrillion | auto): Anon_AutoBillionConverter = {
-    val __obj = js.Dynamic.literal(converter = converter, scaling = scaling.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoBillionConverter]
   }

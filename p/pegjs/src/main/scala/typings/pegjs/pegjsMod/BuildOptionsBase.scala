@@ -29,11 +29,11 @@ object BuildOptionsBase {
     trace: js.UndefOr[Boolean] = js.undefined
   ): BuildOptionsBase = {
     val __obj = js.Dynamic.literal()
-    if (allowedStartRules != null) __obj.updateDynamic("allowedStartRules")(allowedStartRules)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (allowedStartRules != null) __obj.updateDynamic("allowedStartRules")(allowedStartRules.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (optimize != null) __obj.updateDynamic("optimize")(optimize.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptionsBase]
   }
 }

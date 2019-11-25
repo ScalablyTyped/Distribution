@@ -11,7 +11,7 @@ trait HashPassOptions extends js.Object {
 object HashPassOptions {
   @scala.inline
   def apply(passwordField: String): HashPassOptions = {
-    val __obj = js.Dynamic.literal(passwordField = passwordField)
+    val __obj = js.Dynamic.literal(passwordField = passwordField.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HashPassOptions]
   }

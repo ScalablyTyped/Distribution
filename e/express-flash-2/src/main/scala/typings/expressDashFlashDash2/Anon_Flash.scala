@@ -12,7 +12,7 @@ trait Anon_Flash extends js.Object {
 object Anon_Flash {
   @scala.inline
   def apply(flash: Flash): Anon_Flash = {
-    val __obj = js.Dynamic.literal(flash = flash)
+    val __obj = js.Dynamic.literal(flash = flash.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Flash]
   }

@@ -12,7 +12,7 @@ object Crop {
   @scala.inline
   def apply(`class`: CropClass): Crop = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("class")(`class`)
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crop]
   }
 }

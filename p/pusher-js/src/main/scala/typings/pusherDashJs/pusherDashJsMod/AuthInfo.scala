@@ -12,8 +12,8 @@ trait AuthInfo extends js.Object {
 object AuthInfo {
   @scala.inline
   def apply(auth: String, channel_data: String = null): AuthInfo = {
-    val __obj = js.Dynamic.literal(auth = auth)
-    if (channel_data != null) __obj.updateDynamic("channel_data")(channel_data)
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
+    if (channel_data != null) __obj.updateDynamic("channel_data")(channel_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthInfo]
   }
 }

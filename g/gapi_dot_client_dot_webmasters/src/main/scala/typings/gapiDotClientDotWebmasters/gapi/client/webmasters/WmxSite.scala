@@ -15,8 +15,8 @@ object WmxSite {
   @scala.inline
   def apply(permissionLevel: String = null, siteUrl: String = null): WmxSite = {
     val __obj = js.Dynamic.literal()
-    if (permissionLevel != null) __obj.updateDynamic("permissionLevel")(permissionLevel)
-    if (siteUrl != null) __obj.updateDynamic("siteUrl")(siteUrl)
+    if (permissionLevel != null) __obj.updateDynamic("permissionLevel")(permissionLevel.asInstanceOf[js.Any])
+    if (siteUrl != null) __obj.updateDynamic("siteUrl")(siteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[WmxSite]
   }
 }

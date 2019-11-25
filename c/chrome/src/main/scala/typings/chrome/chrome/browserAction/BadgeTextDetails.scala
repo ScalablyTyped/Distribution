@@ -14,7 +14,7 @@ trait BadgeTextDetails extends js.Object {
 object BadgeTextDetails {
   @scala.inline
   def apply(text: String, tabId: Int | Double = null): BadgeTextDetails = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeTextDetails]
   }

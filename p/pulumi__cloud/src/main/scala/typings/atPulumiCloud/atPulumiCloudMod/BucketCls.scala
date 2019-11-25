@@ -1,6 +1,5 @@
 package typings.atPulumiCloud.atPulumiCloudMod
 
-import typings.atPulumiCloud.bucketMod.Bucket
 import typings.atPulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@pulumi/cloud", "Bucket")
 @js.native
-class BucketCls protected () extends Bucket {
+class BucketCls protected ()
+  extends typings.atPulumiCloud.bucketMod.Bucket {
   /**
     * Creates a new Bucket.
     *

@@ -30,10 +30,10 @@ object RouteView {
     savedExtras: NavigationExtras = null,
     stackId: String = null
   ): RouteView = {
-    val __obj = js.Dynamic.literal(element = element, id = id, ref = ref, unlistenEvents = js.Any.fromFunction0(unlistenEvents), url = url)
-    if (savedData != null) __obj.updateDynamic("savedData")(savedData)
-    if (savedExtras != null) __obj.updateDynamic("savedExtras")(savedExtras)
-    if (stackId != null) __obj.updateDynamic("stackId")(stackId)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], unlistenEvents = js.Any.fromFunction0(unlistenEvents), url = url.asInstanceOf[js.Any])
+    if (savedData != null) __obj.updateDynamic("savedData")(savedData.asInstanceOf[js.Any])
+    if (savedExtras != null) __obj.updateDynamic("savedExtras")(savedExtras.asInstanceOf[js.Any])
+    if (stackId != null) __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteView]
   }
 }

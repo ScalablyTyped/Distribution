@@ -26,12 +26,12 @@ object PartialStyleRulesCardHeaderClassKey {
     title: CSSProperties = null
   ): PartialStyleRulesCardHeaderClassKey = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (subheader != null) __obj.updateDynamic("subheader")(subheader)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (subheader != null) __obj.updateDynamic("subheader")(subheader.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesCardHeaderClassKey]
   }
 }

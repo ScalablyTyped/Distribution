@@ -24,7 +24,7 @@ object Anon_Radius {
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (slicePartitions != null) __obj.updateDynamic("slicePartitions")(slicePartitions.asInstanceOf[js.Any])
     if (stackPartitions != null) __obj.updateDynamic("stackPartitions")(stackPartitions.asInstanceOf[js.Any])
-    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat)
+    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Radius]
   }
 }

@@ -14,7 +14,7 @@ object ListConfigurationsResponse {
   @scala.inline
   def apply(configurations: js.Array[Configuration] = null): ListConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (configurations != null) __obj.updateDynamic("configurations")(configurations)
+    if (configurations != null) __obj.updateDynamic("configurations")(configurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConfigurationsResponse]
   }
 }

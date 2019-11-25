@@ -14,8 +14,8 @@ trait Anon_NodeState extends js.Object {
 object Anon_NodeState {
   @scala.inline
   def apply(node: Node, state: Scope = null): Anon_NodeState = {
-    val __obj = js.Dynamic.literal(node = node)
-    if (state != null) __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NodeState]
   }
 }

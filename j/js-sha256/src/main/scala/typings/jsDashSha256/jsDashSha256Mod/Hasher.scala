@@ -37,10 +37,9 @@ object Hasher {
     arrayBuffer: () => ArrayBuffer,
     digest: () => js.Array[Double],
     hex: () => String,
-    toString: () => String,
     update: Message => Hasher
   ): Hasher = {
-    val __obj = js.Dynamic.literal(array = js.Any.fromFunction0(array), arrayBuffer = js.Any.fromFunction0(arrayBuffer), digest = js.Any.fromFunction0(digest), hex = js.Any.fromFunction0(hex), toString = js.Any.fromFunction0(toString), update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(array = js.Any.fromFunction0(array), arrayBuffer = js.Any.fromFunction0(arrayBuffer), digest = js.Any.fromFunction0(digest), hex = js.Any.fromFunction0(hex), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Hasher]
   }

@@ -73,14 +73,14 @@ object LogMetric {
     version: String = null
   ): LogMetric = {
     val __obj = js.Dynamic.literal()
-    if (bucketOptions != null) __obj.updateDynamic("bucketOptions")(bucketOptions)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (labelExtractors != null) __obj.updateDynamic("labelExtractors")(labelExtractors)
-    if (metricDescriptor != null) __obj.updateDynamic("metricDescriptor")(metricDescriptor)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (valueExtractor != null) __obj.updateDynamic("valueExtractor")(valueExtractor)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (bucketOptions != null) __obj.updateDynamic("bucketOptions")(bucketOptions.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (labelExtractors != null) __obj.updateDynamic("labelExtractors")(labelExtractors.asInstanceOf[js.Any])
+    if (metricDescriptor != null) __obj.updateDynamic("metricDescriptor")(metricDescriptor.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (valueExtractor != null) __obj.updateDynamic("valueExtractor")(valueExtractor.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogMetric]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ScrollDirection extends js.Object
 
+object ScrollDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def horizontal: typings.reactDashVirtualized.reactDashVirtualizedStrings.horizontal = this.cast("horizontal")
+  @scala.inline
+  def vertical: typings.reactDashVirtualized.reactDashVirtualizedStrings.vertical = this.cast("vertical")
+}
+

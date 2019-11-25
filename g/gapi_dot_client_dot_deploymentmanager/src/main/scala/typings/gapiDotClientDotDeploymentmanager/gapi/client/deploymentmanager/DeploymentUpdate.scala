@@ -25,9 +25,9 @@ object DeploymentUpdate {
     manifest: String = null
   ): DeploymentUpdate = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentUpdate]
   }
 }

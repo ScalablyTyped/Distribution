@@ -18,9 +18,9 @@ object WorkbookTableRow {
   @scala.inline
   def apply(id: String = null, index: Int | Double = null, values: js.Any = null): WorkbookTableRow = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookTableRow]
   }
 }

@@ -36,16 +36,16 @@ object resizeareaConfig {
     width: Int | Double = null
   ): resizeareaConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border)
+    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (eventPos != null) __obj.updateDynamic("eventPos")(eventPos.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on)
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[resizeareaConfig]
   }

@@ -17,7 +17,7 @@ object RoleActions {
     actions: js.Array[Action],
     getAcl: /* req */ Request[ParamsDictionary] => js.Promise[Boolean | js.Object] = null
   ): RoleActions = {
-    val __obj = js.Dynamic.literal(actions = actions)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
     if (getAcl != null) __obj.updateDynamic("getAcl")(js.Any.fromFunction1(getAcl))
     __obj.asInstanceOf[RoleActions]
   }

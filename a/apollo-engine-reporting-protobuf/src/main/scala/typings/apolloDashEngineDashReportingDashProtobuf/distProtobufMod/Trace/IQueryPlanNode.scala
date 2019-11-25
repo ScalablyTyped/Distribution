@@ -29,10 +29,10 @@ object IQueryPlanNode {
     sequence: ISequenceNode = null
   ): IQueryPlanNode = {
     val __obj = js.Dynamic.literal()
-    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
-    if (flatten != null) __obj.updateDynamic("flatten")(flatten)
-    if (parallel != null) __obj.updateDynamic("parallel")(parallel)
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence)
+    if (fetch != null) __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
+    if (flatten != null) __obj.updateDynamic("flatten")(flatten.asInstanceOf[js.Any])
+    if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
+    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryPlanNode]
   }
 }

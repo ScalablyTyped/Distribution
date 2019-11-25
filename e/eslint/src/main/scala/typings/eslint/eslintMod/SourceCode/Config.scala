@@ -23,10 +23,10 @@ object Config {
     scopeManager: ScopeManager = null,
     visitorKeys: VisitorKeys = null
   ): Config = {
-    val __obj = js.Dynamic.literal(ast = ast, text = text)
-    if (parserServices != null) __obj.updateDynamic("parserServices")(parserServices)
-    if (scopeManager != null) __obj.updateDynamic("scopeManager")(scopeManager)
-    if (visitorKeys != null) __obj.updateDynamic("visitorKeys")(visitorKeys)
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (parserServices != null) __obj.updateDynamic("parserServices")(parserServices.asInstanceOf[js.Any])
+    if (scopeManager != null) __obj.updateDynamic("scopeManager")(scopeManager.asInstanceOf[js.Any])
+    if (visitorKeys != null) __obj.updateDynamic("visitorKeys")(visitorKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

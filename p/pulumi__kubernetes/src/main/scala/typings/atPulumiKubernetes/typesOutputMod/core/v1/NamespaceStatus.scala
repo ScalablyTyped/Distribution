@@ -22,7 +22,7 @@ trait NamespaceStatus extends js.Object {
 object NamespaceStatus {
   @scala.inline
   def apply(conditions: js.Array[NamespaceCondition], phase: String): NamespaceStatus = {
-    val __obj = js.Dynamic.literal(conditions = conditions, phase = phase)
+    val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NamespaceStatus]
   }

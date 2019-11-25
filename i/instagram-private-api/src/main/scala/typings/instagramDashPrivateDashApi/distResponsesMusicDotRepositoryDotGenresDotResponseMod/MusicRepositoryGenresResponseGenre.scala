@@ -13,7 +13,7 @@ trait MusicRepositoryGenresResponseGenre extends js.Object {
 object MusicRepositoryGenresResponseGenre {
   @scala.inline
   def apply(cover_artwork_uri: String, id: String, name: String): MusicRepositoryGenresResponseGenre = {
-    val __obj = js.Dynamic.literal(cover_artwork_uri = cover_artwork_uri, id = id, name = name)
+    val __obj = js.Dynamic.literal(cover_artwork_uri = cover_artwork_uri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MusicRepositoryGenresResponseGenre]
   }

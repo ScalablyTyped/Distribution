@@ -26,8 +26,8 @@ trait ISearch extends js.Object {
 object ISearch {
   @scala.inline
   def apply(data: js.Array[IObject], paging: Anon_Next = null): ISearch = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (paging != null) __obj.updateDynamic("paging")(paging)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearch]
   }
 }

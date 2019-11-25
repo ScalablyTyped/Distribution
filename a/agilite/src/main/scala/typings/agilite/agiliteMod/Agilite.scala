@@ -43,7 +43,7 @@ object Agilite {
     getConfig: () => AgiliteConfig,
     reqType: reqType
   ): Agilite = {
-    val __obj = js.Dynamic.literal(ApiKeys = ApiKeys, BPM = BPM, Connectors = Connectors, DataMappings = DataMappings, Files = Files, Keywords = Keywords, Numbering = Numbering, Roles = Roles, Templates = Templates, TierStructures = TierStructures, Utils = Utils, appName = appName, config = config, executeCRUDRequest = js.Any.fromFunction4(executeCRUDRequest), getConfig = js.Any.fromFunction0(getConfig), reqType = reqType)
+    val __obj = js.Dynamic.literal(ApiKeys = ApiKeys.asInstanceOf[js.Any], BPM = BPM.asInstanceOf[js.Any], Connectors = Connectors.asInstanceOf[js.Any], DataMappings = DataMappings.asInstanceOf[js.Any], Files = Files.asInstanceOf[js.Any], Keywords = Keywords.asInstanceOf[js.Any], Numbering = Numbering.asInstanceOf[js.Any], Roles = Roles.asInstanceOf[js.Any], Templates = Templates.asInstanceOf[js.Any], TierStructures = TierStructures.asInstanceOf[js.Any], Utils = Utils.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], executeCRUDRequest = js.Any.fromFunction4(executeCRUDRequest), getConfig = js.Any.fromFunction0(getConfig), reqType = reqType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Agilite]
   }

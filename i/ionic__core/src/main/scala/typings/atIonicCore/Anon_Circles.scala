@@ -13,7 +13,7 @@ trait Anon_Circles extends js.Object {
 object Anon_Circles {
   @scala.inline
   def apply(circles: Double, dur: Double, fn: (Double, Double, Double) => Anon_R): Anon_Circles = {
-    val __obj = js.Dynamic.literal(circles = circles, dur = dur, fn = js.Any.fromFunction3(fn))
+    val __obj = js.Dynamic.literal(circles = circles.asInstanceOf[js.Any], dur = dur.asInstanceOf[js.Any], fn = js.Any.fromFunction3(fn))
   
     __obj.asInstanceOf[Anon_Circles]
   }

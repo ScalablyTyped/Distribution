@@ -19,10 +19,10 @@ object AccountsCustomBatchResponseEntry {
   @scala.inline
   def apply(account: Account = null, batchId: Int | Double = null, errors: Errors = null, kind: String = null): AccountsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account)
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountsCustomBatchResponseEntry]
   }
 }

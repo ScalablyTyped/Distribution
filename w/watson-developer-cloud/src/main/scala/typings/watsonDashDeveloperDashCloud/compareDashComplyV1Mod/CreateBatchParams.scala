@@ -45,10 +45,10 @@ object CreateBatchParams {
     model: Model | String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): CreateBatchParams = {
-    val __obj = js.Dynamic.literal(_function = _function.asInstanceOf[js.Any], input_bucket_location = input_bucket_location, input_bucket_name = input_bucket_name, input_credentials_file = input_credentials_file.asInstanceOf[js.Any], output_bucket_location = output_bucket_location, output_bucket_name = output_bucket_name, output_credentials_file = output_credentials_file.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(_function = _function.asInstanceOf[js.Any], input_bucket_location = input_bucket_location.asInstanceOf[js.Any], input_bucket_name = input_bucket_name.asInstanceOf[js.Any], input_credentials_file = input_credentials_file.asInstanceOf[js.Any], output_bucket_location = output_bucket_location.asInstanceOf[js.Any], output_bucket_name = output_bucket_name.asInstanceOf[js.Any], output_credentials_file = output_credentials_file.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBatchParams]
   }
 }

@@ -25,13 +25,13 @@ object queryableMod extends js.Object {
   @js.native
   trait ResolvedArray[T] extends Array[Resolved[T]]
   
-  type OptionalKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: undefined extends T[P]? P : never}[keyof T] */ js.Any
+  type OptionalKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: undefined extends T[P]? P : never}[keyof T] */ js.Any
   type PulumiExclude[T, U] = T
   type PulumiOmit[T, K /* <: String */] = Pick[T, PulumiExclude[String, K]]
-  type RequiredKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: undefined extends T[P]? never : P}[keyof T] */ js.Any
+  type RequiredKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: undefined extends T[P]? never : P}[keyof T] */ js.Any
   type Resolved[T] = ResolvedSimple[js.Any | T]
   type ResolvedObject[T] = ModifyOptionalProperties[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: @pulumi/pulumi.@pulumi/pulumi/queryable.Resolved<T[P]>}
     */ typings.atPulumiPulumi.atPulumiPulumiStrings.ResolvedObject with T
   ]

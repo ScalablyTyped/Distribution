@@ -70,16 +70,16 @@ object ShapeDataSourceSettings {
     transformRecord: js.Function = null
   ): ShapeDataSourceSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (callee != null) __obj.updateDynamic("callee")(callee)
-    if (databaseSource != null) __obj.updateDynamic("databaseSource")(databaseSource)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (importCompleted != null) __obj.updateDynamic("importCompleted")(importCompleted)
-    if (shapefileSource != null) __obj.updateDynamic("shapefileSource")(shapefileSource)
-    if (transformBounds != null) __obj.updateDynamic("transformBounds")(transformBounds)
-    if (transformPoint != null) __obj.updateDynamic("transformPoint")(transformPoint)
-    if (transformRecord != null) __obj.updateDynamic("transformRecord")(transformRecord)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (callee != null) __obj.updateDynamic("callee")(callee.asInstanceOf[js.Any])
+    if (databaseSource != null) __obj.updateDynamic("databaseSource")(databaseSource.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (importCompleted != null) __obj.updateDynamic("importCompleted")(importCompleted.asInstanceOf[js.Any])
+    if (shapefileSource != null) __obj.updateDynamic("shapefileSource")(shapefileSource.asInstanceOf[js.Any])
+    if (transformBounds != null) __obj.updateDynamic("transformBounds")(transformBounds.asInstanceOf[js.Any])
+    if (transformPoint != null) __obj.updateDynamic("transformPoint")(transformPoint.asInstanceOf[js.Any])
+    if (transformRecord != null) __obj.updateDynamic("transformRecord")(transformRecord.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeDataSourceSettings]
   }
 }

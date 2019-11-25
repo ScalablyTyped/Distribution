@@ -14,7 +14,7 @@ trait IINVITATION_REPLY extends js.Object {
 object IINVITATION_REPLY {
   @scala.inline
   def apply(data: js.Object, invitee: SFSUser, reply: Double): IINVITATION_REPLY = {
-    val __obj = js.Dynamic.literal(data = data, invitee = invitee, reply = reply)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], invitee = invitee.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IINVITATION_REPLY]
   }

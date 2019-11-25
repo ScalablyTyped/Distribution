@@ -19,10 +19,10 @@ object Screen {
   @scala.inline
   def apply(fileReference: String = null, locale: String = null, model: String = null, version: String = null): Screen = {
     val __obj = js.Dynamic.literal()
-    if (fileReference != null) __obj.updateDynamic("fileReference")(fileReference)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (fileReference != null) __obj.updateDynamic("fileReference")(fileReference.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Screen]
   }
 }

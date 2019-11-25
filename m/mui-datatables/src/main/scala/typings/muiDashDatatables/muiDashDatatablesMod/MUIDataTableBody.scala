@@ -36,12 +36,12 @@ object MUIDataTableBody {
     selectedRows: js.Object = null,
     toggleExpandRow: /* args */ js.Any => _ = null
   ): MUIDataTableBody = {
-    val __obj = js.Dynamic.literal(classes = classes, columns = columns, count = count, data = data, options = options)
-    if (filterList != null) __obj.updateDynamic("filterList")(filterList)
+    val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    if (filterList != null) __obj.updateDynamic("filterList")(filterList.asInstanceOf[js.Any])
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2(onRowClick))
-    if (searchText != null) __obj.updateDynamic("searchText")(searchText)
+    if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
     if (selectRowUpdate != null) __obj.updateDynamic("selectRowUpdate")(js.Any.fromFunction1(selectRowUpdate))
-    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows)
+    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows.asInstanceOf[js.Any])
     if (toggleExpandRow != null) __obj.updateDynamic("toggleExpandRow")(js.Any.fromFunction1(toggleExpandRow))
     __obj.asInstanceOf[MUIDataTableBody]
   }

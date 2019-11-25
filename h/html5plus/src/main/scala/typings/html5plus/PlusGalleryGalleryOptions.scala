@@ -100,15 +100,15 @@ object PlusGalleryGalleryOptions {
     system: js.UndefOr[Boolean] = js.undefined
   ): PlusGalleryGalleryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (onmaxed != null) __obj.updateDynamic("onmaxed")(js.Any.fromFunction0(onmaxed))
-    if (popover != null) __obj.updateDynamic("popover")(popover)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (!js.isUndefined(system)) __obj.updateDynamic("system")(system)
+    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(system)) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGalleryGalleryOptions]
   }
 }

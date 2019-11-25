@@ -60,11 +60,11 @@ object PlusWebviewWebviewOverrideResourceOptions {
     redirect: String = null
   ): PlusWebviewWebviewOverrideResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
-    if (mime != null) __obj.updateDynamic("mime")(mime)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewOverrideResourceOptions]
   }
 }

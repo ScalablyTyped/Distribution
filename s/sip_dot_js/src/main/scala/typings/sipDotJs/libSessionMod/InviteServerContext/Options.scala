@@ -33,13 +33,13 @@ object Options {
     statusCode: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     if (onInfo != null) __obj.updateDynamic("onInfo")(js.Any.fromFunction1(onInfo))
-    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase)
-    if (!js.isUndefined(rel100)) __obj.updateDynamic("rel100")(rel100)
-    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions)
+    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
+    if (!js.isUndefined(rel100)) __obj.updateDynamic("rel100")(rel100.asInstanceOf[js.Any])
+    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

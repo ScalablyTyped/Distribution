@@ -42,7 +42,7 @@ object TimeZoneResponse {
     timeZoneId: String,
     timeZoneName: String
   ): TimeZoneResponse = {
-    val __obj = js.Dynamic.literal(dstOffset = dstOffset, errorMessage = errorMessage, rawOffset = rawOffset, status = status, timeZoneId = timeZoneId, timeZoneName = timeZoneName)
+    val __obj = js.Dynamic.literal(dstOffset = dstOffset.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], rawOffset = rawOffset.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timeZoneId = timeZoneId.asInstanceOf[js.Any], timeZoneName = timeZoneName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeZoneResponse]
   }

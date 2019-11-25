@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait MouseButtons extends js.Object
 
+object MouseButtons {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.puppeteer.puppeteerStrings.left = this.cast("left")
+  @scala.inline
+  def middle: typings.puppeteer.puppeteerStrings.middle = this.cast("middle")
+  @scala.inline
+  def right: typings.puppeteer.puppeteerStrings.right = this.cast("right")
+}
+

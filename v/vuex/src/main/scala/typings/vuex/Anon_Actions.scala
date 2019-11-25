@@ -24,10 +24,10 @@ object Anon_Actions {
     mutations: MutationTree[S] = null
   ): Anon_Actions[S] = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (getters != null) __obj.updateDynamic("getters")(getters)
-    if (modules != null) __obj.updateDynamic("modules")(modules)
-    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Actions[S]]
   }
 }

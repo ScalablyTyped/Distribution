@@ -38,9 +38,9 @@ object FileUploadedEventUIParam {
   ): FileUploadedEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
-    if (fileInfo != null) __obj.updateDynamic("fileInfo")(fileInfo)
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (fileInfo != null) __obj.updateDynamic("fileInfo")(fileInfo.asInstanceOf[js.Any])
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUploadedEventUIParam]
   }

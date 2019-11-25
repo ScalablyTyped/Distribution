@@ -48,11 +48,11 @@ object Documentation {
     summary: String = null
   ): Documentation = {
     val __obj = js.Dynamic.literal()
-    if (documentationRootUrl != null) __obj.updateDynamic("documentationRootUrl")(documentationRootUrl)
-    if (overview != null) __obj.updateDynamic("overview")(overview)
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (documentationRootUrl != null) __obj.updateDynamic("documentationRootUrl")(documentationRootUrl.asInstanceOf[js.Any])
+    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Documentation]
   }
 }

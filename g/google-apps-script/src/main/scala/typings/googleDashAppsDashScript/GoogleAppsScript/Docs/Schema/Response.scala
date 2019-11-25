@@ -20,10 +20,10 @@ object Response {
     replaceAllText: ReplaceAllTextResponse = null
   ): Response = {
     val __obj = js.Dynamic.literal()
-    if (createNamedRange != null) __obj.updateDynamic("createNamedRange")(createNamedRange)
-    if (insertInlineImage != null) __obj.updateDynamic("insertInlineImage")(insertInlineImage)
-    if (insertInlineSheetsChart != null) __obj.updateDynamic("insertInlineSheetsChart")(insertInlineSheetsChart)
-    if (replaceAllText != null) __obj.updateDynamic("replaceAllText")(replaceAllText)
+    if (createNamedRange != null) __obj.updateDynamic("createNamedRange")(createNamedRange.asInstanceOf[js.Any])
+    if (insertInlineImage != null) __obj.updateDynamic("insertInlineImage")(insertInlineImage.asInstanceOf[js.Any])
+    if (insertInlineSheetsChart != null) __obj.updateDynamic("insertInlineSheetsChart")(insertInlineSheetsChart.asInstanceOf[js.Any])
+    if (replaceAllText != null) __obj.updateDynamic("replaceAllText")(replaceAllText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

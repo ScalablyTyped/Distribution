@@ -124,7 +124,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.toggle
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchcancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchmove
-import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart
+import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart_
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitioncancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionrun
@@ -174,7 +174,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   ]) | Null = js.native
   var onLabelStyleChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -185,7 +185,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onSvgStyleChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -219,7 +219,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
       ], 
       _
     ]
@@ -229,7 +229,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any
       ], 
       _
     ],
@@ -240,7 +240,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
       ], 
       _
     ]
@@ -250,7 +250,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any
       ], 
       _
     ],
@@ -1102,10 +1102,10 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchstart(`type`: touchstart_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(
-    `type`: touchstart,
+    `type`: touchstart_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -1191,7 +1191,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   @JSName("getProperty")
   def getProperty_labelPosition(property: labelPosition): start | innerCenter | innerStart | innerEnd | end | none = js.native
   @JSName("getProperty")
-  def getProperty_labelStyle(property: labelStyle): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any = js.native
+  def getProperty_labelStyle(property: labelStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['labelStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_progress(property: progress): Anon_BorderRadiusHeightSvgClassName = js.native
   @JSName("getProperty")
@@ -1203,7 +1203,7 @@ trait ojGanttTask extends JetElement[ojGanttTaskSettableProperties] {
   @JSName("getProperty")
   def getProperty_svgClassName(property: svgClassName): String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: svgStyle): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any = js.native
+  def getProperty_svgStyle(property: svgStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTask['svgStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_type(property: `type`): normal | milestone | summary | auto = js.native
   def setProperties(properties: ojGanttTaskSettablePropertiesLenient): Unit = js.native

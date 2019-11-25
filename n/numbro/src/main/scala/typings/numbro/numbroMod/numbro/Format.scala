@@ -52,20 +52,20 @@ object Format {
     trimMantissa: js.UndefOr[Boolean] = js.undefined
   ): Format = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average)
+    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
     if (characteristic != null) __obj.updateDynamic("characteristic")(characteristic.asInstanceOf[js.Any])
     if (forceAverage != null) __obj.updateDynamic("forceAverage")(forceAverage.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSign)) __obj.updateDynamic("forceSign")(forceSign)
+    if (!js.isUndefined(forceSign)) __obj.updateDynamic("forceSign")(forceSign.asInstanceOf[js.Any])
     if (mantissa != null) __obj.updateDynamic("mantissa")(mantissa.asInstanceOf[js.Any])
     if (negative != null) __obj.updateDynamic("negative")(negative.asInstanceOf[js.Any])
-    if (!js.isUndefined(optionalMantissa)) __obj.updateDynamic("optionalMantissa")(optionalMantissa)
+    if (!js.isUndefined(optionalMantissa)) __obj.updateDynamic("optionalMantissa")(optionalMantissa.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(spaceSeparated)) __obj.updateDynamic("spaceSeparated")(spaceSeparated)
-    if (!js.isUndefined(thousandSeparated)) __obj.updateDynamic("thousandSeparated")(thousandSeparated)
+    if (!js.isUndefined(spaceSeparated)) __obj.updateDynamic("spaceSeparated")(spaceSeparated.asInstanceOf[js.Any])
+    if (!js.isUndefined(thousandSeparated)) __obj.updateDynamic("thousandSeparated")(thousandSeparated.asInstanceOf[js.Any])
     if (totalLength != null) __obj.updateDynamic("totalLength")(totalLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimMantissa)) __obj.updateDynamic("trimMantissa")(trimMantissa)
+    if (!js.isUndefined(trimMantissa)) __obj.updateDynamic("trimMantissa")(trimMantissa.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
 }

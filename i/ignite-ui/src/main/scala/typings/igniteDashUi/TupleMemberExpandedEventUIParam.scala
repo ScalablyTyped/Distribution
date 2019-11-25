@@ -37,10 +37,10 @@ object TupleMemberExpandedEventUIParam {
     tupleIndex: Int | Double = null
   ): TupleMemberExpandedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (axisName != null) __obj.updateDynamic("axisName")(axisName)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (axisName != null) __obj.updateDynamic("axisName")(axisName.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (memberIndex != null) __obj.updateDynamic("memberIndex")(memberIndex.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (tupleIndex != null) __obj.updateDynamic("tupleIndex")(tupleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TupleMemberExpandedEventUIParam]
   }

@@ -13,7 +13,7 @@ object OrganizationResponse {
   @scala.inline
   def apply(data: Organization = null): OrganizationResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationResponse]
   }
 }

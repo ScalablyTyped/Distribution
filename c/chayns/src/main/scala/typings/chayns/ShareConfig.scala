@@ -22,10 +22,10 @@ object ShareConfig {
     sharingAndroidApp: String = null,
     title: String = null
   ): ShareConfig = {
-    val __obj = js.Dynamic.literal(sharingApp = sharingApp, text = text)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (sharingAndroidApp != null) __obj.updateDynamic("sharingAndroidApp")(sharingAndroidApp)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(sharingApp = sharingApp.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (sharingAndroidApp != null) __obj.updateDynamic("sharingAndroidApp")(sharingAndroidApp.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareConfig]
   }
 }

@@ -26,7 +26,7 @@ trait RevalidationPolicy extends js.Object {
 object RevalidationPolicy {
   @scala.inline
   def apply(matches: Boolean, modified: Boolean, policy: CachePolicy): RevalidationPolicy = {
-    val __obj = js.Dynamic.literal(matches = matches, modified = modified, policy = policy)
+    val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RevalidationPolicy]
   }

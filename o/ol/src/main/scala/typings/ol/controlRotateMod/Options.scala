@@ -29,14 +29,14 @@ object Options {
     tipLabel: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (resetNorth != null) __obj.updateDynamic("resetNorth")(js.Any.fromFunction0(resetNorth))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (tipLabel != null) __obj.updateDynamic("tipLabel")(tipLabel)
+    if (tipLabel != null) __obj.updateDynamic("tipLabel")(tipLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

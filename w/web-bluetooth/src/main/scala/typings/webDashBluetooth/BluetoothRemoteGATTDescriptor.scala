@@ -23,8 +23,8 @@ object BluetoothRemoteGATTDescriptor {
     writeValue: BufferSource => js.Promise[Unit],
     value: DataView = null
   ): BluetoothRemoteGATTDescriptor = {
-    val __obj = js.Dynamic.literal(characteristic = characteristic, readValue = js.Any.fromFunction0(readValue), uuid = uuid, writeValue = js.Any.fromFunction1(writeValue))
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(characteristic = characteristic.asInstanceOf[js.Any], readValue = js.Any.fromFunction0(readValue), uuid = uuid.asInstanceOf[js.Any], writeValue = js.Any.fromFunction1(writeValue))
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothRemoteGATTDescriptor]
   }
 }

@@ -23,8 +23,8 @@ object IKernelChangedArgs {
   @scala.inline
   def apply(newValue: IKernelConnection = null, oldValue: IKernelConnection = null): IKernelChangedArgs = {
     val __obj = js.Dynamic.literal()
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKernelChangedArgs]
   }
 }

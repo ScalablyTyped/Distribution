@@ -42,15 +42,15 @@ object Event {
     user: User = null
   ): Event = {
     val __obj = js.Dynamic.literal()
-    if (additionalEventTypes != null) __obj.updateDynamic("additionalEventTypes")(additionalEventTypes)
-    if (eventTimeMillis != null) __obj.updateDynamic("eventTimeMillis")(eventTimeMillis)
-    if (!js.isUndefined(fromUserDeletion)) __obj.updateDynamic("fromUserDeletion")(fromUserDeletion)
-    if (move != null) __obj.updateDynamic("move")(move)
-    if (permissionChanges != null) __obj.updateDynamic("permissionChanges")(permissionChanges)
-    if (primaryEventType != null) __obj.updateDynamic("primaryEventType")(primaryEventType)
-    if (rename != null) __obj.updateDynamic("rename")(rename)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (additionalEventTypes != null) __obj.updateDynamic("additionalEventTypes")(additionalEventTypes.asInstanceOf[js.Any])
+    if (eventTimeMillis != null) __obj.updateDynamic("eventTimeMillis")(eventTimeMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromUserDeletion)) __obj.updateDynamic("fromUserDeletion")(fromUserDeletion.asInstanceOf[js.Any])
+    if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
+    if (permissionChanges != null) __obj.updateDynamic("permissionChanges")(permissionChanges.asInstanceOf[js.Any])
+    if (primaryEventType != null) __obj.updateDynamic("primaryEventType")(primaryEventType.asInstanceOf[js.Any])
+    if (rename != null) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

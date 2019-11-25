@@ -23,12 +23,12 @@ object Cors {
     supportsCredentials: js.UndefOr[Boolean] = js.undefined,
     validMethods: js.Array[String] = null
   ): Cors = {
-    val __obj = js.Dynamic.literal(validOrigins = validOrigins)
+    val __obj = js.Dynamic.literal(validOrigins = validOrigins.asInstanceOf[js.Any])
     if (cacheMaxAge != null) __obj.updateDynamic("cacheMaxAge")(cacheMaxAge.asInstanceOf[js.Any])
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
-    if (!js.isUndefined(supportsCredentials)) __obj.updateDynamic("supportsCredentials")(supportsCredentials)
-    if (validMethods != null) __obj.updateDynamic("validMethods")(validMethods)
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsCredentials)) __obj.updateDynamic("supportsCredentials")(supportsCredentials.asInstanceOf[js.Any])
+    if (validMethods != null) __obj.updateDynamic("validMethods")(validMethods.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cors]
   }
 }

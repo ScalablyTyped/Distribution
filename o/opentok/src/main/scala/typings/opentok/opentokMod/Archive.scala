@@ -37,7 +37,7 @@ object Archive {
     status: ArchiveStatus,
     url: String
   ): Archive = {
-    val __obj = js.Dynamic.literal(createdAt = createdAt, duration = duration, hasAudio = hasAudio, hasVideo = hasVideo, id = id, name = name, outputMode = outputMode, partnerId = partnerId, reason = reason, sessionId = sessionId, size = size, status = status, url = url)
+    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], hasAudio = hasAudio.asInstanceOf[js.Any], hasVideo = hasVideo.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputMode = outputMode.asInstanceOf[js.Any], partnerId = partnerId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Archive]
   }

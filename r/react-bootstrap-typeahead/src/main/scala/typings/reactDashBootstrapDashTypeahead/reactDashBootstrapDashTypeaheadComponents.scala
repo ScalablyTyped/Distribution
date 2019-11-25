@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 
 object reactDashBootstrapDashTypeaheadComponents extends reactDashBootstrapDashTypeaheadProps {
   @scala.inline
-  def AsyncTypeahead[T /* <: TypeaheadModel */]: ComponentType[AsyncTypeaheadProps[T]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.AsyncTypeahead[T]].asInstanceOf[typings.react.reactMod.ComponentType[AsyncTypeaheadProps[T]]]
+  def AsyncTypeahead: ComponentType[AsyncTypeaheadProps[TypeaheadModel]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.AsyncTypeahead[
+  typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel]].asInstanceOf[typings.react.reactMod.ComponentType[
+  AsyncTypeaheadProps[
+    typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel
+  ]]]
   @scala.inline
   def AutosizeInput: ComponentType[AutosizeInputProps] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.AutosizeInput].asInstanceOf[typings.react.reactMod.ComponentType[AutosizeInputProps]]
   @scala.inline
@@ -26,18 +30,38 @@ object reactDashBootstrapDashTypeaheadComponents extends reactDashBootstrapDashT
   @scala.inline
   def MenuHeader: ComponentType[MenuHeaderProps] = typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Menu.Header.asInstanceOf[typings.react.reactMod.ComponentType[MenuHeaderProps]]
   @scala.inline
-  def MenuItem[T /* <: TypeaheadModel */]: ComponentType[MenuItemProps[T]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuItem[T]].asInstanceOf[typings.react.reactMod.ComponentType[MenuItemProps[T]]]
+  def MenuItem: ComponentType[MenuItemProps[TypeaheadModel]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.MenuItem[
+  typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel]].asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuItemProps[
+    typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel
+  ]]]
   @scala.inline
   def Overlay: ComponentType[OverlayProps] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Overlay].asInstanceOf[typings.react.reactMod.ComponentType[OverlayProps]]
   @scala.inline
   def Token: ComponentType[TokenProps] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Token].asInstanceOf[typings.react.reactMod.ComponentType[TokenProps]]
   @scala.inline
-  def Typeahead[T /* <: TypeaheadModel */]: ComponentType[TypeaheadProps[T]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Typeahead[T]].asInstanceOf[typings.react.reactMod.ComponentType[TypeaheadProps[T]]]
+  def Typeahead: ComponentType[TypeaheadProps[TypeaheadModel]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.Typeahead[
+  typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel]].asInstanceOf[typings.react.reactMod.ComponentType[
+  TypeaheadProps[
+    typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel
+  ]]]
   @scala.inline
-  def TypeaheadInputMulti[T /* <: TypeaheadModel */]: ComponentType[TypeaheadInputMultiProps[T]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadInputMulti[T]].asInstanceOf[typings.react.reactMod.ComponentType[TypeaheadInputMultiProps[T]]]
+  def TypeaheadInputMulti: ComponentType[TypeaheadInputMultiProps[TypeaheadModel]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadInputMulti[
+  typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel]].asInstanceOf[typings.react.reactMod.ComponentType[
+  TypeaheadInputMultiProps[
+    typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel
+  ]]]
   @scala.inline
-  def TypeaheadInputSingle[T /* <: TypeaheadModel */]: ComponentType[TypeaheadInputSingleProps[T]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadInputSingle[T]].asInstanceOf[typings.react.reactMod.ComponentType[TypeaheadInputSingleProps[T]]]
+  def TypeaheadInputSingle: ComponentType[TypeaheadInputSingleProps[TypeaheadModel]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadInputSingle[
+  typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel]].asInstanceOf[typings.react.reactMod.ComponentType[
+  TypeaheadInputSingleProps[
+    typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel
+  ]]]
   @scala.inline
-  def TypeaheadMenu[T /* <: TypeaheadModel */]: ComponentType[TypeaheadMenuProps[T]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadMenu[T]].asInstanceOf[typings.react.reactMod.ComponentType[TypeaheadMenuProps[T]]]
+  def TypeaheadMenu: ComponentType[TypeaheadMenuProps[TypeaheadModel]] = js.constructorOf[typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadMenu[
+  typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel]].asInstanceOf[typings.react.reactMod.ComponentType[
+  TypeaheadMenuProps[
+    typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod.TypeaheadModel
+  ]]]
 }
 

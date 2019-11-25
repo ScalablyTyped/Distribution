@@ -30,13 +30,13 @@ object CustomIconComponentProps {
     style: CSSProperties = null,
     viewBox: String = null
   ): CustomIconComponentProps = {
-    val __obj = js.Dynamic.literal(fill = fill, height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomIconComponentProps]
   }
 }

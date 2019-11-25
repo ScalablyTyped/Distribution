@@ -12,7 +12,7 @@ trait KeyValue extends js.Object {
 object KeyValue {
   @scala.inline
   def apply(k: String, v: Double): KeyValue = {
-    val __obj = js.Dynamic.literal(k = k, v = v)
+    val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyValue]
   }

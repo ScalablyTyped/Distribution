@@ -14,9 +14,9 @@ trait SignInToken extends js.Object {
 object SignInToken {
   @scala.inline
   def apply(access_token: String, expiry: Double, id_token: String = null, token_type: String = null): SignInToken = {
-    val __obj = js.Dynamic.literal(access_token = access_token, expiry = expiry)
-    if (id_token != null) __obj.updateDynamic("id_token")(id_token)
-    if (token_type != null) __obj.updateDynamic("token_type")(token_type)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expiry = expiry.asInstanceOf[js.Any])
+    if (id_token != null) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
+    if (token_type != null) __obj.updateDynamic("token_type")(token_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignInToken]
   }
 }

@@ -18,8 +18,8 @@ trait MultiFileAppender extends Appender {
 object MultiFileAppender {
   @scala.inline
   def apply(base: String, extension: String, property: String, `type`: multiFile): MultiFileAppender = {
-    val __obj = js.Dynamic.literal(base = base, extension = extension, property = property)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiFileAppender]
   }
 }

@@ -15,7 +15,7 @@ object DotenvListFilesOptions {
   @scala.inline
   def apply(node_env: String = null): DotenvListFilesOptions = {
     val __obj = js.Dynamic.literal()
-    if (node_env != null) __obj.updateDynamic("node_env")(node_env)
+    if (node_env != null) __obj.updateDynamic("node_env")(node_env.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotenvListFilesOptions]
   }
 }

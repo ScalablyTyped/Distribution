@@ -22,10 +22,10 @@ object DiagramSaveEvent {
     container: JQuery = null,
     shape: Model = null
   ): DiagramSaveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramSaveEvent]
   }
 }

@@ -47,10 +47,10 @@ object RelationshipProperties {
     relatedTableId: Int | Double = null
   ): RelationshipProperties = {
     val __obj = js.Dynamic.literal()
-    if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality)
+    if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (keyField != null) __obj.updateDynamic("keyField")(keyField)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (keyField != null) __obj.updateDynamic("keyField")(keyField.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (relatedTableId != null) __obj.updateDynamic("relatedTableId")(relatedTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipProperties]
   }

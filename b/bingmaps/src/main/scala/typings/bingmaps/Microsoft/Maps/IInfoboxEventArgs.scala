@@ -30,8 +30,8 @@ object IInfoboxEventArgs {
     targetType: String,
     originalEvent: MouseEvent = null
   ): IInfoboxEventArgs = {
-    val __obj = js.Dynamic.literal(eventName = eventName, pageX = pageX, pageY = pageY, target = target, targetType = targetType)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInfoboxEventArgs]
   }
 }

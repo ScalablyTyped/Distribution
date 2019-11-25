@@ -32,7 +32,7 @@ object UrlShortener_ {
     Url: UrlCollection = null
   ): UrlShortener_ = {
     val __obj = js.Dynamic.literal(newAnalyticsSnapshot = js.Any.fromFunction0(newAnalyticsSnapshot), newAnalyticsSummary = js.Any.fromFunction0(newAnalyticsSummary), newStringCount = js.Any.fromFunction0(newStringCount), newUrl = js.Any.fromFunction0(newUrl))
-    if (Url != null) __obj.updateDynamic("Url")(Url)
+    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlShortener_]
   }
 }

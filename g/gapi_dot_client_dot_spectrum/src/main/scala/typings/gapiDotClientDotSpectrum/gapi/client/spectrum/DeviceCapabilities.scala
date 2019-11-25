@@ -16,7 +16,7 @@ object DeviceCapabilities {
   @scala.inline
   def apply(frequencyRanges: js.Array[FrequencyRange] = null): DeviceCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (frequencyRanges != null) __obj.updateDynamic("frequencyRanges")(frequencyRanges)
+    if (frequencyRanges != null) __obj.updateDynamic("frequencyRanges")(frequencyRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceCapabilities]
   }
 }

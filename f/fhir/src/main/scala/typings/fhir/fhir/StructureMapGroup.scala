@@ -70,19 +70,19 @@ object StructureMapGroup {
     id: String = null,
     modifierExtension: js.Array[Extension] = null
   ): StructureMapGroup = {
-    val __obj = js.Dynamic.literal(input = input, name = name, rule = rule, typeMode = typeMode)
-    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
-    if (_extends != null) __obj.updateDynamic("_extends")(_extends)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_name != null) __obj.updateDynamic("_name")(_name)
-    if (_typeMode != null) __obj.updateDynamic("_typeMode")(_typeMode)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], typeMode = typeMode.asInstanceOf[js.Any])
+    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation.asInstanceOf[js.Any])
+    if (_extends != null) __obj.updateDynamic("_extends")(_extends.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
+    if (_typeMode != null) __obj.updateDynamic("_typeMode")(_typeMode.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructureMapGroup]
   }
 }

@@ -13,7 +13,7 @@ trait ViewEvent extends js.Object {
 object ViewEvent {
   @scala.inline
   def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: View): ViewEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViewEvent]
   }

@@ -23,7 +23,7 @@ object GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure {
   ): GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure = {
     val __obj = js.Dynamic.literal()
     if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure]
   }
 }

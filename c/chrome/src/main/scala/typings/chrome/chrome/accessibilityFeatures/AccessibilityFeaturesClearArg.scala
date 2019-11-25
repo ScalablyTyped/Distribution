@@ -20,7 +20,7 @@ object AccessibilityFeaturesClearArg {
   @scala.inline
   def apply(scope: String = null): AccessibilityFeaturesClearArg = {
     val __obj = js.Dynamic.literal()
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityFeaturesClearArg]
   }
 }

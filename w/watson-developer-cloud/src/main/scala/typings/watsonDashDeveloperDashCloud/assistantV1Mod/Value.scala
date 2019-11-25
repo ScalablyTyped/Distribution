@@ -33,12 +33,12 @@ object Value {
     synonyms: js.Array[String] = null,
     updated: String = null
   ): Value = {
-    val __obj = js.Dynamic.literal(value = value, value_type = value_type)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (patterns != null) __obj.updateDynamic("patterns")(patterns)
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], value_type = value_type.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
+    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
 }

@@ -13,8 +13,8 @@ trait NavigationCompleteTransitionAction extends NavigationStackAction {
 object NavigationCompleteTransitionAction {
   @scala.inline
   def apply(key: String, `type`: `Navigation/COMPLETE_TRANSITION`): NavigationCompleteTransitionAction = {
-    val __obj = js.Dynamic.literal(key = key)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationCompleteTransitionAction]
   }
 }

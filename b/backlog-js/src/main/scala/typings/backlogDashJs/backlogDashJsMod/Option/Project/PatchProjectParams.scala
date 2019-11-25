@@ -26,13 +26,13 @@ object PatchProjectParams {
     textFormattingRule: TextFormattingRule = null
   ): PatchProjectParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived)
-    if (!js.isUndefined(chartEnabled)) __obj.updateDynamic("chartEnabled")(chartEnabled)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(projectLeaderCanEditProjectLeader)) __obj.updateDynamic("projectLeaderCanEditProjectLeader")(projectLeaderCanEditProjectLeader)
-    if (!js.isUndefined(subtaskingEnabled)) __obj.updateDynamic("subtaskingEnabled")(subtaskingEnabled)
-    if (textFormattingRule != null) __obj.updateDynamic("textFormattingRule")(textFormattingRule)
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartEnabled)) __obj.updateDynamic("chartEnabled")(chartEnabled.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(projectLeaderCanEditProjectLeader)) __obj.updateDynamic("projectLeaderCanEditProjectLeader")(projectLeaderCanEditProjectLeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtaskingEnabled)) __obj.updateDynamic("subtaskingEnabled")(subtaskingEnabled.asInstanceOf[js.Any])
+    if (textFormattingRule != null) __obj.updateDynamic("textFormattingRule")(textFormattingRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchProjectParams]
   }
 }

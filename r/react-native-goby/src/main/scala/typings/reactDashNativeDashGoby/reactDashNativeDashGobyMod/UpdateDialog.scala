@@ -55,14 +55,14 @@ object UpdateDialog {
     title: String = null
   ): UpdateDialog = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendReleaseDescription)) __obj.updateDynamic("appendReleaseDescription")(appendReleaseDescription)
-    if (descriptionPrefix != null) __obj.updateDynamic("descriptionPrefix")(descriptionPrefix)
-    if (mandatoryContinueButtonLabel != null) __obj.updateDynamic("mandatoryContinueButtonLabel")(mandatoryContinueButtonLabel)
-    if (mandatoryUpdateMessage != null) __obj.updateDynamic("mandatoryUpdateMessage")(mandatoryUpdateMessage)
-    if (optionalIgnoreButtonLabel != null) __obj.updateDynamic("optionalIgnoreButtonLabel")(optionalIgnoreButtonLabel)
-    if (optionalInstallButtonLabel != null) __obj.updateDynamic("optionalInstallButtonLabel")(optionalInstallButtonLabel)
-    if (optionalUpdateMessage != null) __obj.updateDynamic("optionalUpdateMessage")(optionalUpdateMessage)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(appendReleaseDescription)) __obj.updateDynamic("appendReleaseDescription")(appendReleaseDescription.asInstanceOf[js.Any])
+    if (descriptionPrefix != null) __obj.updateDynamic("descriptionPrefix")(descriptionPrefix.asInstanceOf[js.Any])
+    if (mandatoryContinueButtonLabel != null) __obj.updateDynamic("mandatoryContinueButtonLabel")(mandatoryContinueButtonLabel.asInstanceOf[js.Any])
+    if (mandatoryUpdateMessage != null) __obj.updateDynamic("mandatoryUpdateMessage")(mandatoryUpdateMessage.asInstanceOf[js.Any])
+    if (optionalIgnoreButtonLabel != null) __obj.updateDynamic("optionalIgnoreButtonLabel")(optionalIgnoreButtonLabel.asInstanceOf[js.Any])
+    if (optionalInstallButtonLabel != null) __obj.updateDynamic("optionalInstallButtonLabel")(optionalInstallButtonLabel.asInstanceOf[js.Any])
+    if (optionalUpdateMessage != null) __obj.updateDynamic("optionalUpdateMessage")(optionalUpdateMessage.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDialog]
   }
 }

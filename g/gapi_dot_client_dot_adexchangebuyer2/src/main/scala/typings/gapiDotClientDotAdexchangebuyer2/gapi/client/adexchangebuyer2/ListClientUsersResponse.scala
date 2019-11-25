@@ -23,8 +23,8 @@ object ListClientUsersResponse {
   @scala.inline
   def apply(nextPageToken: String = null, users: js.Array[ClientUser] = null): ListClientUsersResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (users != null) __obj.updateDynamic("users")(users)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClientUsersResponse]
   }
 }

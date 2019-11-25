@@ -13,7 +13,7 @@ trait ServiceEndpointRequestResult extends js.Object {
 object ServiceEndpointRequestResult {
   @scala.inline
   def apply(errorMessage: String, result: js.Any, statusCode: String): ServiceEndpointRequestResult = {
-    val __obj = js.Dynamic.literal(errorMessage = errorMessage, result = result, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServiceEndpointRequestResult]
   }

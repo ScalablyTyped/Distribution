@@ -38,8 +38,8 @@ object AuthRequirement {
   @scala.inline
   def apply(audiences: String = null, providerId: String = null): AuthRequirement = {
     val __obj = js.Dynamic.literal()
-    if (audiences != null) __obj.updateDynamic("audiences")(audiences)
-    if (providerId != null) __obj.updateDynamic("providerId")(providerId)
+    if (audiences != null) __obj.updateDynamic("audiences")(audiences.asInstanceOf[js.Any])
+    if (providerId != null) __obj.updateDynamic("providerId")(providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthRequirement]
   }
 }

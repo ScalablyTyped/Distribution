@@ -22,8 +22,8 @@ object IPortalProps {
   @scala.inline
   def apply(className: String = null, container: HTMLElement = null, onChildrenMount: () => Unit = null): IPortalProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (onChildrenMount != null) __obj.updateDynamic("onChildrenMount")(js.Any.fromFunction0(onChildrenMount))
     __obj.asInstanceOf[IPortalProps]
   }

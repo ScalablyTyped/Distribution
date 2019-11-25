@@ -24,7 +24,7 @@ object IPropertyType {
     BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ Anon_DataValue, Unit], js.Any) => Unit,
     ID: String
   ): IPropertyType = {
-    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = js.Any.fromFunction6(BeginValidateNormalizeConvert), ID = ID)
+    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = js.Any.fromFunction6(BeginValidateNormalizeConvert), ID = ID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPropertyType]
   }

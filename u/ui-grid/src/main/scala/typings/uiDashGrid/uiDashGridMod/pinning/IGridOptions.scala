@@ -17,7 +17,7 @@ object IGridOptions {
   @scala.inline
   def apply(enablePinning: js.UndefOr[Boolean] = js.undefined): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning)
+    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

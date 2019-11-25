@@ -14,7 +14,7 @@ trait Anon_READ extends js.Object {
 object Anon_READ {
   @scala.inline
   def apply(READ: READ, WRITE: WRITE): Anon_READ = {
-    val __obj = js.Dynamic.literal(READ = READ, WRITE = WRITE)
+    val __obj = js.Dynamic.literal(READ = READ.asInstanceOf[js.Any], WRITE = WRITE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_READ]
   }

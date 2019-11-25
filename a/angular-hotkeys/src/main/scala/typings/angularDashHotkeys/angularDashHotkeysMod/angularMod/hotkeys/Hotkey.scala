@@ -49,10 +49,10 @@ object Hotkey {
     persistent: js.UndefOr[Boolean] = js.undefined
   ): Hotkey = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), combo = combo.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (allowIn != null) __obj.updateDynamic("allowIn")(allowIn)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (allowIn != null) __obj.updateDynamic("allowIn")(allowIn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hotkey]
   }
 }

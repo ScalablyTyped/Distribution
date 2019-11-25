@@ -102,10 +102,9 @@ object HasherStatic {
     separator: String,
     setHash: /* repeated */ String => Unit,
     stop: () => Unit,
-    stopped: Signal[_],
-    toString: () => String
+    stopped: Signal[_]
   ): HasherStatic = {
-    val __obj = js.Dynamic.literal(VERSION = VERSION, appendHash = appendHash, changed = changed, dispose = js.Any.fromFunction0(dispose), getBaseURL = js.Any.fromFunction0(getBaseURL), getHash = js.Any.fromFunction0(getHash), getHashAsArray = js.Any.fromFunction0(getHashAsArray), getURL = js.Any.fromFunction0(getURL), init = js.Any.fromFunction0(init), initialized = initialized, isActive = js.Any.fromFunction0(isActive), prependHash = prependHash, replaceHash = js.Any.fromFunction1(replaceHash), separator = separator, setHash = js.Any.fromFunction1(setHash), stop = js.Any.fromFunction0(stop), stopped = stopped, toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(VERSION = VERSION.asInstanceOf[js.Any], appendHash = appendHash.asInstanceOf[js.Any], changed = changed.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), getBaseURL = js.Any.fromFunction0(getBaseURL), getHash = js.Any.fromFunction0(getHash), getHashAsArray = js.Any.fromFunction0(getHashAsArray), getURL = js.Any.fromFunction0(getURL), init = js.Any.fromFunction0(init), initialized = initialized.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), prependHash = prependHash.asInstanceOf[js.Any], replaceHash = js.Any.fromFunction1(replaceHash), separator = separator.asInstanceOf[js.Any], setHash = js.Any.fromFunction1(setHash), stop = js.Any.fromFunction0(stop), stopped = stopped.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HasherStatic]
   }

@@ -20,10 +20,10 @@ object IWallabyEnvironment {
     viewportSize: IWallabyEnvironmentViewportSize = null
   ): IWallabyEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (runner != null) __obj.updateDynamic("runner")(runner)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (viewportSize != null) __obj.updateDynamic("viewportSize")(viewportSize)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (runner != null) __obj.updateDynamic("runner")(runner.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (viewportSize != null) __obj.updateDynamic("viewportSize")(viewportSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallabyEnvironment]
   }
 }

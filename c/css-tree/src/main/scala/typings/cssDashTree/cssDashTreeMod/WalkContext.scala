@@ -29,15 +29,15 @@ object WalkContext {
     selector: SelectorList = null,
     stylesheet: StyleSheet = null
   ): WalkContext = {
-    val __obj = js.Dynamic.literal(root = root)
-    if (atrule != null) __obj.updateDynamic("atrule")(atrule)
-    if (atrulePrelude != null) __obj.updateDynamic("atrulePrelude")(atrulePrelude)
-    if (block != null) __obj.updateDynamic("block")(block)
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration)
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
+    if (atrule != null) __obj.updateDynamic("atrule")(atrule.asInstanceOf[js.Any])
+    if (atrulePrelude != null) __obj.updateDynamic("atrulePrelude")(atrulePrelude.asInstanceOf[js.Any])
+    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
     if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet)
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkContext]
   }
 }

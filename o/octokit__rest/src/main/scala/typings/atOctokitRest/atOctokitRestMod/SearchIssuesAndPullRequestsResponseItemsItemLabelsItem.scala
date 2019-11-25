@@ -15,7 +15,7 @@ trait SearchIssuesAndPullRequestsResponseItemsItemLabelsItem extends js.Object {
 object SearchIssuesAndPullRequestsResponseItemsItemLabelsItem {
   @scala.inline
   def apply(color: String, id: Double, name: String, node_id: String, url: String): SearchIssuesAndPullRequestsResponseItemsItemLabelsItem = {
-    val __obj = js.Dynamic.literal(color = color, id = id, name = name, node_id = node_id, url = url)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchIssuesAndPullRequestsResponseItemsItemLabelsItem]
   }

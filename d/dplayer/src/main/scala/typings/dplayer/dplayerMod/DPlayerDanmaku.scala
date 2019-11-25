@@ -27,13 +27,13 @@ object DPlayerDanmaku {
     unlimited: js.UndefOr[Boolean] = js.undefined,
     user: String = null
   ): DPlayerDanmaku = {
-    val __obj = js.Dynamic.literal(api = api, id = id)
-    if (addition != null) __obj.updateDynamic("addition")(addition)
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (!js.isUndefined(unlimited)) __obj.updateDynamic("unlimited")(unlimited)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (addition != null) __obj.updateDynamic("addition")(addition.asInstanceOf[js.Any])
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (!js.isUndefined(unlimited)) __obj.updateDynamic("unlimited")(unlimited.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[DPlayerDanmaku]
   }
 }

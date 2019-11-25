@@ -12,7 +12,7 @@ trait BorderRange extends js.Object {
 object BorderRange {
   @scala.inline
   def apply(range: Anon_From): BorderRange = {
-    val __obj = js.Dynamic.literal(range = range)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BorderRange]
   }

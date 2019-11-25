@@ -11,7 +11,7 @@ trait GoogleApiTranslateTranslationListResponse extends js.Object {
 object GoogleApiTranslateTranslationListResponse {
   @scala.inline
   def apply(data: Anon_Translations): GoogleApiTranslateTranslationListResponse = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiTranslateTranslationListResponse]
   }

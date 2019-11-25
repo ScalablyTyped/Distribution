@@ -2,11 +2,6 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
-import typings.atIonicCore.distTypesInterfaceMod.ComponentProps
-import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
-import typings.atIonicCore.distTypesInterfaceMod.FrameworkDelegate
-import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
-import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,20 +19,26 @@ trait IonPopover extends js.Object {
   /**
     * The component to display inside of the popover.
     */
-  var component: ComponentRef = js.native
+  var component: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any = js.native
   /**
     * The data to pass to the popover component.
     */
-  var componentProps: js.UndefOr[ComponentProps[Null]] = js.native
+  var componentProps: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
+  ] = js.native
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
   var cssClass: js.UndefOr[String | js.Array[String]] = js.native
-  var delegate: js.UndefOr[FrameworkDelegate] = js.native
+  var delegate: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any
+  ] = js.native
   /**
     * Animation to use when the popover is presented.
     */
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
+  ] = js.native
   /**
     * The event to pass to the popover animation.
     */
@@ -49,7 +50,9 @@ trait IonPopover extends js.Object {
   /**
     * Animation to use when the popover is dismissed.
     */
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
+  ] = js.native
   /**
     * The mode determines which platform styles to use.
     */
@@ -74,11 +77,15 @@ trait IonPopover extends js.Object {
   /**
     * Returns a promise that resolves when the popover did dismiss.
     */
-  def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+  def onDidDismiss(): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
+  ] = js.native
   /**
     * Returns a promise that resolves when the popover will dismiss.
     */
-  def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+  def onWillDismiss(): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
+  ] = js.native
   /**
     * Present the popover overlay after it has been created.
     */

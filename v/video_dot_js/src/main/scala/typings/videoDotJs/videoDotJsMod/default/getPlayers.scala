@@ -1,7 +1,6 @@
 package typings.videoDotJs.videoDotJsMod.default
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +13,6 @@ object getPlayers extends js.Object {
     *
     * @return	The created players
     */
-  def apply(): StringDictionary[Player] = js.native
+  def apply(): StringDictionary[typings.videoDotJs.videoDotJsMod.videojs.Player] = js.native
 }
 

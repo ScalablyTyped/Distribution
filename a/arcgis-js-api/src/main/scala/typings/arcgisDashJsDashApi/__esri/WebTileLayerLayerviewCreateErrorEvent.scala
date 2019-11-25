@@ -12,7 +12,7 @@ trait WebTileLayerLayerviewCreateErrorEvent extends js.Object {
 object WebTileLayerLayerviewCreateErrorEvent {
   @scala.inline
   def apply(error: Error, view: View): WebTileLayerLayerviewCreateErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error, view = view)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebTileLayerLayerviewCreateErrorEvent]
   }

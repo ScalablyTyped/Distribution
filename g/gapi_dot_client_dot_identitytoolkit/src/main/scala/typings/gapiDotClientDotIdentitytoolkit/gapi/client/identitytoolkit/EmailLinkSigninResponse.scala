@@ -33,13 +33,13 @@ object EmailLinkSigninResponse {
     refreshToken: String = null
   ): EmailLinkSigninResponse = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (!js.isUndefined(isNewUser)) __obj.updateDynamic("isNewUser")(isNewUser)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (localId != null) __obj.updateDynamic("localId")(localId)
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNewUser)) __obj.updateDynamic("isNewUser")(isNewUser.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailLinkSigninResponse]
   }
 }

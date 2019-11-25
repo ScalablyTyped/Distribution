@@ -26,13 +26,13 @@ object Anon_Database {
     user: String = null
   ): Anon_Database = {
     val __obj = js.Dynamic.literal()
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (idleTimeoutMillis != null) __obj.updateDynamic("idleTimeoutMillis")(idleTimeoutMillis.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Database]
   }
 }

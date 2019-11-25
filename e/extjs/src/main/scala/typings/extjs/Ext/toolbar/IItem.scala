@@ -31,11 +31,11 @@ object IItem {
     overflowText: java.lang.String = null
   ): IItem = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction0(focus))
-    if (overflowText != null) __obj.updateDynamic("overflowText")(overflowText)
+    if (overflowText != null) __obj.updateDynamic("overflowText")(overflowText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItem]
   }
 }

@@ -13,8 +13,8 @@ object GetCacheOptions {
   @scala.inline
   def apply(data: js.Any = null, url: String = null): GetCacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCacheOptions]
   }
 }

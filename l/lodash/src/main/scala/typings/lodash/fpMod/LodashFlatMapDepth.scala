@@ -29,20 +29,20 @@ trait LodashFlatMapDepth extends js.Object {
   def apply[T](iteratee: __, depth: __, collection: List[T]): LodashFlatMapDepth1x4[T] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       ListOfRecursiveArraysOrValues[TResult] | TResult
     ]
   ): LodashFlatMapDepth2x1[T, TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: Double
   ): LodashFlatMapDepth2x3[T, TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: Double,
@@ -55,14 +55,14 @@ trait LodashFlatMapDepth extends js.Object {
   ): js.Array[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: __
   ): LodashFlatMapDepth2x5[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: __,

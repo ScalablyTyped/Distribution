@@ -22,9 +22,9 @@ object MochaPhantomJSOptions {
     viewportSize: Int | Double = null
   ): MochaPhantomJSOptions = {
     val __obj = js.Dynamic.literal()
-    if (cookies != null) __obj.updateDynamic("cookies")(cookies)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (cookies != null) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (viewportSize != null) __obj.updateDynamic("viewportSize")(viewportSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[MochaPhantomJSOptions]

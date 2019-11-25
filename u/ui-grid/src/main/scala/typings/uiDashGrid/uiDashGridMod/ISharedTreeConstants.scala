@@ -15,7 +15,7 @@ trait ISharedTreeConstants extends js.Object {
 object ISharedTreeConstants {
   @scala.inline
   def apply(COLLAPSED: String, EXPANDED: String, aggregation: Anon_AVG, rowHeaderColName: String): ISharedTreeConstants = {
-    val __obj = js.Dynamic.literal(COLLAPSED = COLLAPSED, EXPANDED = EXPANDED, aggregation = aggregation, rowHeaderColName = rowHeaderColName)
+    val __obj = js.Dynamic.literal(COLLAPSED = COLLAPSED.asInstanceOf[js.Any], EXPANDED = EXPANDED.asInstanceOf[js.Any], aggregation = aggregation.asInstanceOf[js.Any], rowHeaderColName = rowHeaderColName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISharedTreeConstants]
   }

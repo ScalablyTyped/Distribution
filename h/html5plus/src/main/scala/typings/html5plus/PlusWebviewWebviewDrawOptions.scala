@@ -66,9 +66,9 @@ object PlusWebviewWebviewDrawOptions {
   ): PlusWebviewWebviewDrawOptions = {
     val __obj = js.Dynamic.literal()
     if (bit != null) __obj.updateDynamic("bit")(bit.asInstanceOf[js.Any])
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check)
-    if (!js.isUndefined(checkKeyboard)) __obj.updateDynamic("checkKeyboard")(checkKeyboard)
-    if (clip != null) __obj.updateDynamic("clip")(clip)
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkKeyboard)) __obj.updateDynamic("checkKeyboard")(checkKeyboard.asInstanceOf[js.Any])
+    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewDrawOptions]
   }
 }

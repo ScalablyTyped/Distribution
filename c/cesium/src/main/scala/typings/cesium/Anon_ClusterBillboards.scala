@@ -24,10 +24,10 @@ object Anon_ClusterBillboards {
     pixelRange: Int | Double = null
   ): Anon_ClusterBillboards = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clusterBillboards)) __obj.updateDynamic("clusterBillboards")(clusterBillboards)
-    if (!js.isUndefined(clusterLabels)) __obj.updateDynamic("clusterLabels")(clusterLabels)
-    if (!js.isUndefined(clusterPoints)) __obj.updateDynamic("clusterPoints")(clusterPoints)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(clusterBillboards)) __obj.updateDynamic("clusterBillboards")(clusterBillboards.asInstanceOf[js.Any])
+    if (!js.isUndefined(clusterLabels)) __obj.updateDynamic("clusterLabels")(clusterLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(clusterPoints)) __obj.updateDynamic("clusterPoints")(clusterPoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (minimumClusterSize != null) __obj.updateDynamic("minimumClusterSize")(minimumClusterSize.asInstanceOf[js.Any])
     if (pixelRange != null) __obj.updateDynamic("pixelRange")(pixelRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClusterBillboards]

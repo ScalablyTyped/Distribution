@@ -13,8 +13,8 @@ object Amount {
   @scala.inline
   def apply(pretax: Price = null, tax: Price = null): Amount = {
     val __obj = js.Dynamic.literal()
-    if (pretax != null) __obj.updateDynamic("pretax")(pretax)
-    if (tax != null) __obj.updateDynamic("tax")(tax)
+    if (pretax != null) __obj.updateDynamic("pretax")(pretax.asInstanceOf[js.Any])
+    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     __obj.asInstanceOf[Amount]
   }
 }

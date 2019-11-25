@@ -17,7 +17,7 @@ object HostProperties {
   @scala.inline
   def apply(os: HostOperatingSystem = null): HostProperties = {
     val __obj = js.Dynamic.literal()
-    if (os != null) __obj.updateDynamic("os")(os)
+    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostProperties]
   }
 }

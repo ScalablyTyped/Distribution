@@ -13,7 +13,7 @@ trait GitTreeElem extends js.Object {
 object GitTreeElem {
   @scala.inline
   def apply(hash: String, mode: Double, name: String): GitTreeElem = {
-    val __obj = js.Dynamic.literal(hash = hash, mode = mode, name = name)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitTreeElem]
   }

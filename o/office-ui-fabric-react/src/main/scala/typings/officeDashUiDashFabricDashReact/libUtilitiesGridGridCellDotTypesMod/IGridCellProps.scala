@@ -137,14 +137,14 @@ object IGridCellProps {
     role: String = null,
     selected: js.UndefOr[Boolean] = js.undefined
   ): IGridCellProps[T] = {
-    val __obj = js.Dynamic.literal(id = id, item = item.asInstanceOf[js.Any], onRenderItem = js.Any.fromFunction1(onRenderItem))
-    if (cellDisabledStyle != null) __obj.updateDynamic("cellDisabledStyle")(cellDisabledStyle)
-    if (cellIsSelectedStyle != null) __obj.updateDynamic("cellIsSelectedStyle")(cellIsSelectedStyle)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], onRenderItem = js.Any.fromFunction1(onRenderItem))
+    if (cellDisabledStyle != null) __obj.updateDynamic("cellDisabledStyle")(cellDisabledStyle.asInstanceOf[js.Any])
+    if (cellIsSelectedStyle != null) __obj.updateDynamic("cellIsSelectedStyle")(cellIsSelectedStyle.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (getClassNames != null) __obj.updateDynamic("getClassNames")(js.Any.fromFunction9(getClassNames))
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
@@ -153,8 +153,8 @@ object IGridCellProps {
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridCellProps[T]]
   }
 }

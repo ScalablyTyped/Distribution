@@ -21,9 +21,9 @@ object CreativeFieldValuesListResponse {
     nextPageToken: String = null
   ): CreativeFieldValuesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (creativeFieldValues != null) __obj.updateDynamic("creativeFieldValues")(creativeFieldValues)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (creativeFieldValues != null) __obj.updateDynamic("creativeFieldValues")(creativeFieldValues.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeFieldValuesListResponse]
   }
 }

@@ -21,8 +21,8 @@ object NewDocument {
   /* key */ StringDictionary[js.Any] = null,
     ttl: Int | Double = null
   ): NewDocument = {
-    val __obj = js.Dynamic.literal(id = id)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewDocument]
   }

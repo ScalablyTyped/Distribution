@@ -26,8 +26,8 @@ object CreateDatabaseRequest {
   @scala.inline
   def apply(createStatement: String = null, extraStatements: js.Array[String] = null): CreateDatabaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (createStatement != null) __obj.updateDynamic("createStatement")(createStatement)
-    if (extraStatements != null) __obj.updateDynamic("extraStatements")(extraStatements)
+    if (createStatement != null) __obj.updateDynamic("createStatement")(createStatement.asInstanceOf[js.Any])
+    if (extraStatements != null) __obj.updateDynamic("extraStatements")(extraStatements.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDatabaseRequest]
   }
 }

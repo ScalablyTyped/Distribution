@@ -18,8 +18,8 @@ object Anon_Message {
     statusCode: Int | Double = null
   ): Anon_Message = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Message]
   }

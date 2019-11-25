@@ -25,9 +25,9 @@ object IError {
     timeNs: Int | Double = null
   ): IError = {
     val __obj = js.Dynamic.literal()
-    if (json != null) __obj.updateDynamic("json")(json)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (timeNs != null) __obj.updateDynamic("timeNs")(timeNs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IError]
   }

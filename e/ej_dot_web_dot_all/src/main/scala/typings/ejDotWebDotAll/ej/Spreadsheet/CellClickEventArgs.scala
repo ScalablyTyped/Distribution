@@ -53,16 +53,16 @@ object CellClickEventArgs {
     value: String = null
   ): CellClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
-    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
+    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellClickEventArgs]
   }
 }

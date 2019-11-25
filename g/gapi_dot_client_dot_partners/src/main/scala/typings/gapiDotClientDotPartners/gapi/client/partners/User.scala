@@ -76,17 +76,17 @@ object User {
     publicProfile: PublicProfile = null
   ): User = {
     val __obj = js.Dynamic.literal()
-    if (availableAdwordsManagerAccounts != null) __obj.updateDynamic("availableAdwordsManagerAccounts")(availableAdwordsManagerAccounts)
-    if (certificationStatus != null) __obj.updateDynamic("certificationStatus")(certificationStatus)
-    if (company != null) __obj.updateDynamic("company")(company)
-    if (companyVerificationEmail != null) __obj.updateDynamic("companyVerificationEmail")(companyVerificationEmail)
-    if (examStatus != null) __obj.updateDynamic("examStatus")(examStatus)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (internalId != null) __obj.updateDynamic("internalId")(internalId)
-    if (lastAccessTime != null) __obj.updateDynamic("lastAccessTime")(lastAccessTime)
-    if (primaryEmails != null) __obj.updateDynamic("primaryEmails")(primaryEmails)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (publicProfile != null) __obj.updateDynamic("publicProfile")(publicProfile)
+    if (availableAdwordsManagerAccounts != null) __obj.updateDynamic("availableAdwordsManagerAccounts")(availableAdwordsManagerAccounts.asInstanceOf[js.Any])
+    if (certificationStatus != null) __obj.updateDynamic("certificationStatus")(certificationStatus.asInstanceOf[js.Any])
+    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
+    if (companyVerificationEmail != null) __obj.updateDynamic("companyVerificationEmail")(companyVerificationEmail.asInstanceOf[js.Any])
+    if (examStatus != null) __obj.updateDynamic("examStatus")(examStatus.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (internalId != null) __obj.updateDynamic("internalId")(internalId.asInstanceOf[js.Any])
+    if (lastAccessTime != null) __obj.updateDynamic("lastAccessTime")(lastAccessTime.asInstanceOf[js.Any])
+    if (primaryEmails != null) __obj.updateDynamic("primaryEmails")(primaryEmails.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (publicProfile != null) __obj.updateDynamic("publicProfile")(publicProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

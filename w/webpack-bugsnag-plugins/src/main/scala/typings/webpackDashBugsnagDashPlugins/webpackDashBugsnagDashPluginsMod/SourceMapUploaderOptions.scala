@@ -49,12 +49,12 @@ object SourceMapUploaderOptions {
     overwrite: js.UndefOr[Boolean] = js.undefined,
     publicPath: String = null
   ): SourceMapUploaderOptions = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey)
-    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (ignoredBundleExtensions != null) __obj.updateDynamic("ignoredBundleExtensions")(ignoredBundleExtensions)
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
+    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (ignoredBundleExtensions != null) __obj.updateDynamic("ignoredBundleExtensions")(ignoredBundleExtensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMapUploaderOptions]
   }
 }

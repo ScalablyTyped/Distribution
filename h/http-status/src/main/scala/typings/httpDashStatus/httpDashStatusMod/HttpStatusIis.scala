@@ -41,19 +41,19 @@ object HttpStatusIis {
     REDIRECT: Double,
     RETRY_WITH: Double
   ): HttpStatusIis = {
-    val __obj = js.Dynamic.literal(LOGIN_TIME_OUT = LOGIN_TIME_OUT, REDIRECT = REDIRECT, RETRY_WITH = RETRY_WITH)
-    __obj.updateDynamic("440")(`440`)
-    __obj.updateDynamic("440_CLASS")(`440_CLASS`)
-    __obj.updateDynamic("440_MESSAGE")(`440_MESSAGE`)
-    __obj.updateDynamic("440_NAME")(`440_NAME`)
-    __obj.updateDynamic("449")(`449`)
-    __obj.updateDynamic("449_CLASS")(`449_CLASS`)
-    __obj.updateDynamic("449_MESSAGE")(`449_MESSAGE`)
-    __obj.updateDynamic("449_NAME")(`449_NAME`)
-    __obj.updateDynamic("451")(`451`)
-    __obj.updateDynamic("451_CLASS")(`451_CLASS`)
-    __obj.updateDynamic("451_MESSAGE")(`451_MESSAGE`)
-    __obj.updateDynamic("451_NAME")(`451_NAME`)
+    val __obj = js.Dynamic.literal(LOGIN_TIME_OUT = LOGIN_TIME_OUT.asInstanceOf[js.Any], REDIRECT = REDIRECT.asInstanceOf[js.Any], RETRY_WITH = RETRY_WITH.asInstanceOf[js.Any])
+    __obj.updateDynamic("440")(`440`.asInstanceOf[js.Any])
+    __obj.updateDynamic("440_CLASS")(`440_CLASS`.asInstanceOf[js.Any])
+    __obj.updateDynamic("440_MESSAGE")(`440_MESSAGE`.asInstanceOf[js.Any])
+    __obj.updateDynamic("440_NAME")(`440_NAME`.asInstanceOf[js.Any])
+    __obj.updateDynamic("449")(`449`.asInstanceOf[js.Any])
+    __obj.updateDynamic("449_CLASS")(`449_CLASS`.asInstanceOf[js.Any])
+    __obj.updateDynamic("449_MESSAGE")(`449_MESSAGE`.asInstanceOf[js.Any])
+    __obj.updateDynamic("449_NAME")(`449_NAME`.asInstanceOf[js.Any])
+    __obj.updateDynamic("451")(`451`.asInstanceOf[js.Any])
+    __obj.updateDynamic("451_CLASS")(`451_CLASS`.asInstanceOf[js.Any])
+    __obj.updateDynamic("451_MESSAGE")(`451_MESSAGE`.asInstanceOf[js.Any])
+    __obj.updateDynamic("451_NAME")(`451_NAME`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpStatusIis]
   }
 }

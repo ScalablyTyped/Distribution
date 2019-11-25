@@ -48,7 +48,7 @@ object SymbolOptionsObject {
     if (anchorX != null) __obj.updateDynamic("anchorX")(anchorX.asInstanceOf[js.Any])
     if (anchorY != null) __obj.updateDynamic("anchorY")(anchorY.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolOptionsObject]

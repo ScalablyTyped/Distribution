@@ -13,7 +13,7 @@ trait GeohashWithElevation extends js.Object {
 object GeohashWithElevation {
   @scala.inline
   def apply(elevation: Double, elevationType: ElevationType, geohash: String): GeohashWithElevation = {
-    val __obj = js.Dynamic.literal(elevation = elevation, elevationType = elevationType, geohash = geohash)
+    val __obj = js.Dynamic.literal(elevation = elevation.asInstanceOf[js.Any], elevationType = elevationType.asInstanceOf[js.Any], geohash = geohash.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeohashWithElevation]
   }

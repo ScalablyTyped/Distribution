@@ -15,8 +15,8 @@ object Arg {
   @scala.inline
   def apply(anyValue: js.Any = null, exactValue: js.Any = null): Arg = {
     val __obj = js.Dynamic.literal()
-    if (anyValue != null) __obj.updateDynamic("anyValue")(anyValue)
-    if (exactValue != null) __obj.updateDynamic("exactValue")(exactValue)
+    if (anyValue != null) __obj.updateDynamic("anyValue")(anyValue.asInstanceOf[js.Any])
+    if (exactValue != null) __obj.updateDynamic("exactValue")(exactValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arg]
   }
 }

@@ -33,15 +33,15 @@ object CipherParamsData {
     salt: WordArray = null
   ): CipherParamsData = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
-    if (ciphertext != null) __obj.updateDynamic("ciphertext")(ciphertext)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
-    if (iv != null) __obj.updateDynamic("iv")(iv)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (salt != null) __obj.updateDynamic("salt")(salt)
+    if (ciphertext != null) __obj.updateDynamic("ciphertext")(ciphertext.asInstanceOf[js.Any])
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[CipherParamsData]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_GroupValue extends js.Object {
 object Anon_GroupValue {
   @scala.inline
   def apply(GroupValue: js.Any, Order: Array[OrderEntry]): Anon_GroupValue = {
-    val __obj = js.Dynamic.literal(GroupValue = GroupValue, Order = Order)
+    val __obj = js.Dynamic.literal(GroupValue = GroupValue.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GroupValue]
   }

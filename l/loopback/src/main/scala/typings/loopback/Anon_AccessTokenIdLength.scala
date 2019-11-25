@@ -14,7 +14,7 @@ trait Anon_AccessTokenIdLength extends js.Object {
 object Anon_AccessTokenIdLength {
   @scala.inline
   def apply(accessTokenIdLength: Double, acls: js.Array[ACL], http: Anon_Path): Anon_AccessTokenIdLength = {
-    val __obj = js.Dynamic.literal(accessTokenIdLength = accessTokenIdLength, acls = acls, http = http)
+    val __obj = js.Dynamic.literal(accessTokenIdLength = accessTokenIdLength.asInstanceOf[js.Any], acls = acls.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AccessTokenIdLength]
   }

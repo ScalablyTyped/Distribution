@@ -13,7 +13,7 @@ trait ISavePageWidgetRequest extends js.Object {
 object ISavePageWidgetRequest {
   @scala.inline
   def apply(pageId: String, pageWidgets: js.Array[IPageWidget]): ISavePageWidgetRequest = {
-    val __obj = js.Dynamic.literal(pageId = pageId, pageWidgets = pageWidgets)
+    val __obj = js.Dynamic.literal(pageId = pageId.asInstanceOf[js.Any], pageWidgets = pageWidgets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISavePageWidgetRequest]
   }

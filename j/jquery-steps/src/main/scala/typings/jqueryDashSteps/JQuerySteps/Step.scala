@@ -35,10 +35,10 @@ object Step {
     title: String = null
   ): Step = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (contentMode != null) __obj.updateDynamic("contentMode")(contentMode.asInstanceOf[js.Any])
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
 }

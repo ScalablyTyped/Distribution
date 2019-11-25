@@ -12,7 +12,7 @@ trait IColorSlider extends js.Object {
 object IColorSlider {
   @scala.inline
   def apply(value: Double): IColorSlider = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IColorSlider]
   }

@@ -12,7 +12,7 @@ trait Compartment extends js.Object {
 object Compartment {
   @scala.inline
   def apply(id: String, resourceType: String): Compartment = {
-    val __obj = js.Dynamic.literal(id = id, resourceType = resourceType)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Compartment]
   }

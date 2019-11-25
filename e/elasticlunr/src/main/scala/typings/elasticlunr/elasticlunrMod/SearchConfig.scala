@@ -12,7 +12,7 @@ object SearchConfig {
   @scala.inline
   def apply[T](fields: FieldSearchConfig[T] = null): SearchConfig[T] = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchConfig[T]]
   }
 }

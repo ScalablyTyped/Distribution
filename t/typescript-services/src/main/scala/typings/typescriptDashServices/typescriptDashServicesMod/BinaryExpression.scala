@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScript.SyntaxKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 class BinaryExpression protected ()
   extends typings.typescriptDashServices.TypeScript.BinaryExpression {
   def this(
-    _nodeType: SyntaxKind,
+    _nodeType: typings.typescriptDashServices.TypeScript.SyntaxKind,
     left: typings.typescriptDashServices.TypeScript.AST,
     right: typings.typescriptDashServices.TypeScript.AST
   ) = this()

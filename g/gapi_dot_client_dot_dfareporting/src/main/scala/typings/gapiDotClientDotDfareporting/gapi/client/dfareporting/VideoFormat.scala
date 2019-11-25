@@ -27,10 +27,10 @@ object VideoFormat {
     targetBitRate: Int | Double = null
   ): VideoFormat = {
     val __obj = js.Dynamic.literal()
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     if (targetBitRate != null) __obj.updateDynamic("targetBitRate")(targetBitRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoFormat]
   }

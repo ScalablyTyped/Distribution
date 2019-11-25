@@ -16,7 +16,7 @@ object Anon_GridHorizontalItemLayout {
   @scala.inline
   def apply(grid: ListGridType = null, itemLayout: horizontal | vertical = null): Anon_GridHorizontalItemLayout = {
     val __obj = js.Dynamic.literal()
-    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (itemLayout != null) __obj.updateDynamic("itemLayout")(itemLayout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GridHorizontalItemLayout]
   }

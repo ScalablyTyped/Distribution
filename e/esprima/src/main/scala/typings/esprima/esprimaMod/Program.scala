@@ -20,8 +20,7 @@ object Program {
   def apply(
     body: js.Array[Statement | ModuleDeclaration],
     sourceType: script | module,
-    `type`: String,
-    type_Program: typings.estree.estreeStrings.Program,
+    `type`: typings.estree.estreeStrings.Program,
     comments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
@@ -29,15 +28,14 @@ object Program {
     tokens: js.Array[Token] = null,
     trailingComments: js.Array[Comment] = null
   ): Program = {
-    val __obj = js.Dynamic.literal(body = body, sourceType = sourceType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    __obj.updateDynamic("type")(type_Program)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Program]
   }
 }

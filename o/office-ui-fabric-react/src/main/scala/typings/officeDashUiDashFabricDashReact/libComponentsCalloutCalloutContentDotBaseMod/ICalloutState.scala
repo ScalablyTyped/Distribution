@@ -22,10 +22,10 @@ object ICalloutState {
     slideDirectionalClassName: String = null
   ): ICalloutState = {
     val __obj = js.Dynamic.literal()
-    if (calloutElementRect != null) __obj.updateDynamic("calloutElementRect")(calloutElementRect)
+    if (calloutElementRect != null) __obj.updateDynamic("calloutElementRect")(calloutElementRect.asInstanceOf[js.Any])
     if (heightOffset != null) __obj.updateDynamic("heightOffset")(heightOffset.asInstanceOf[js.Any])
-    if (positions != null) __obj.updateDynamic("positions")(positions)
-    if (slideDirectionalClassName != null) __obj.updateDynamic("slideDirectionalClassName")(slideDirectionalClassName)
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
+    if (slideDirectionalClassName != null) __obj.updateDynamic("slideDirectionalClassName")(slideDirectionalClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalloutState]
   }
 }

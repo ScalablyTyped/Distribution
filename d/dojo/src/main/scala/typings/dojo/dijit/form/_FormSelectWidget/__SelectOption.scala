@@ -41,9 +41,9 @@ object __SelectOption {
     disabled: js.UndefOr[Boolean] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined
   ): __SelectOption = {
-    val __obj = js.Dynamic.literal(label = label, value = value)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[__SelectOption]
   }
 }

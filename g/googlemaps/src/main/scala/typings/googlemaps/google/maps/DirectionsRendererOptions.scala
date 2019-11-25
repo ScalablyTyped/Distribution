@@ -41,20 +41,20 @@ object DirectionsRendererOptions {
     suppressPolylines: js.UndefOr[Boolean] = js.undefined
   ): DirectionsRendererOptions = {
     val __obj = js.Dynamic.literal()
-    if (directions != null) __obj.updateDynamic("directions")(directions)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (!js.isUndefined(hideRouteList)) __obj.updateDynamic("hideRouteList")(hideRouteList)
-    if (infoWindow != null) __obj.updateDynamic("infoWindow")(infoWindow)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions)
-    if (panel != null) __obj.updateDynamic("panel")(panel)
-    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions)
-    if (!js.isUndefined(preserveViewport)) __obj.updateDynamic("preserveViewport")(preserveViewport)
+    if (directions != null) __obj.updateDynamic("directions")(directions.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideRouteList)) __obj.updateDynamic("hideRouteList")(hideRouteList.asInstanceOf[js.Any])
+    if (infoWindow != null) __obj.updateDynamic("infoWindow")(infoWindow.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions.asInstanceOf[js.Any])
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
+    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveViewport)) __obj.updateDynamic("preserveViewport")(preserveViewport.asInstanceOf[js.Any])
     if (routeIndex != null) __obj.updateDynamic("routeIndex")(routeIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressBicyclingLayer)) __obj.updateDynamic("suppressBicyclingLayer")(suppressBicyclingLayer)
-    if (!js.isUndefined(suppressInfoWindows)) __obj.updateDynamic("suppressInfoWindows")(suppressInfoWindows)
-    if (!js.isUndefined(suppressMarkers)) __obj.updateDynamic("suppressMarkers")(suppressMarkers)
-    if (!js.isUndefined(suppressPolylines)) __obj.updateDynamic("suppressPolylines")(suppressPolylines)
+    if (!js.isUndefined(suppressBicyclingLayer)) __obj.updateDynamic("suppressBicyclingLayer")(suppressBicyclingLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressInfoWindows)) __obj.updateDynamic("suppressInfoWindows")(suppressInfoWindows.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressMarkers)) __obj.updateDynamic("suppressMarkers")(suppressMarkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressPolylines)) __obj.updateDynamic("suppressPolylines")(suppressPolylines.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRendererOptions]
   }
 }

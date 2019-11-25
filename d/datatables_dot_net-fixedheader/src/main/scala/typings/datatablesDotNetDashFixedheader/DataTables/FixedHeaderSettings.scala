@@ -35,9 +35,9 @@ object FixedHeaderSettings {
     headerOffset: Int | Double = null
   ): FixedHeaderSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer)
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (footerOffset != null) __obj.updateDynamic("footerOffset")(footerOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (headerOffset != null) __obj.updateDynamic("headerOffset")(headerOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedHeaderSettings]
   }

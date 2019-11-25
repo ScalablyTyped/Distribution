@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "trim"
-version := "0.01-dt-20190322Z-38fbef"
+version := "0.01-dt-20190322Z-01215a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

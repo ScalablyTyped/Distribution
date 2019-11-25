@@ -38,17 +38,17 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (ambiguousEastAsianCharWidth != null) __obj.updateDynamic("ambiguousEastAsianCharWidth")(ambiguousEastAsianCharWidth.asInstanceOf[js.Any])
-    if (anonymous != null) __obj.updateDynamic("anonymous")(anonymous)
-    if (circular != null) __obj.updateDynamic("circular")(circular)
-    if (diff != null) __obj.updateDynamic("diff")(diff)
+    if (anonymous != null) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
+    if (circular != null) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
+    if (diff != null) __obj.updateDynamic("diff")(diff.asInstanceOf[js.Any])
     if (lineDiffThreshold != null) __obj.updateDynamic("lineDiffThreshold")(lineDiffThreshold.asInstanceOf[js.Any])
-    if (lineSeparator != null) __obj.updateDynamic("lineSeparator")(lineSeparator)
+    if (lineSeparator != null) __obj.updateDynamic("lineSeparator")(lineSeparator.asInstanceOf[js.Any])
     if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
     if (outputOffset != null) __obj.updateDynamic("outputOffset")(outputOffset.asInstanceOf[js.Any])
-    if (renderers != null) __obj.updateDynamic("renderers")(renderers)
-    if (stringify != null) __obj.updateDynamic("stringify")(stringify)
-    if (widthOf != null) __obj.updateDynamic("widthOf")(widthOf)
-    if (writerClass != null) __obj.updateDynamic("writerClass")(writerClass)
+    if (renderers != null) __obj.updateDynamic("renderers")(renderers.asInstanceOf[js.Any])
+    if (stringify != null) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
+    if (widthOf != null) __obj.updateDynamic("widthOf")(widthOf.asInstanceOf[js.Any])
+    if (writerClass != null) __obj.updateDynamic("writerClass")(writerClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

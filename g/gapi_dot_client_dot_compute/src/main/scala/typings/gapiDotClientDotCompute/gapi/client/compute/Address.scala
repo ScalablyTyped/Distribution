@@ -63,19 +63,19 @@ object Address {
     users: js.Array[String] = null
   ): Address = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (addressType != null) __obj.updateDynamic("addressType")(addressType)
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (ipVersion != null) __obj.updateDynamic("ipVersion")(ipVersion)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork)
-    if (users != null) __obj.updateDynamic("users")(users)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (addressType != null) __obj.updateDynamic("addressType")(addressType.asInstanceOf[js.Any])
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (ipVersion != null) __obj.updateDynamic("ipVersion")(ipVersion.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
 }

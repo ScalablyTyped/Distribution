@@ -18,9 +18,9 @@ object INavState {
     isLinkExpandStateChanged: js.UndefOr[Boolean] = js.undefined,
     selectedKey: String = null
   ): INavState = {
-    val __obj = js.Dynamic.literal(isGroupCollapsed = isGroupCollapsed)
-    if (!js.isUndefined(isLinkExpandStateChanged)) __obj.updateDynamic("isLinkExpandStateChanged")(isLinkExpandStateChanged)
-    if (selectedKey != null) __obj.updateDynamic("selectedKey")(selectedKey)
+    val __obj = js.Dynamic.literal(isGroupCollapsed = isGroupCollapsed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLinkExpandStateChanged)) __obj.updateDynamic("isLinkExpandStateChanged")(isLinkExpandStateChanged.asInstanceOf[js.Any])
+    if (selectedKey != null) __obj.updateDynamic("selectedKey")(selectedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[INavState]
   }
 }

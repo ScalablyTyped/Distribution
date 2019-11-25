@@ -29,14 +29,14 @@ object ModuleCallbacks {
     unit: js.UndefOr[Boolean] = js.undefined
   ): ModuleCallbacks = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (afterTeardown != null) __obj.updateDynamic("afterTeardown")(js.Any.fromFunction1(afterTeardown))
     if (beforeSetup != null) __obj.updateDynamic("beforeSetup")(js.Any.fromFunction1(beforeSetup))
-    if (!js.isUndefined(integration)) __obj.updateDynamic("integration")(integration)
-    if (needs != null) __obj.updateDynamic("needs")(needs)
+    if (!js.isUndefined(integration)) __obj.updateDynamic("integration")(integration.asInstanceOf[js.Any])
+    if (needs != null) __obj.updateDynamic("needs")(needs.asInstanceOf[js.Any])
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
     if (teardown != null) __obj.updateDynamic("teardown")(js.Any.fromFunction1(teardown))
-    if (!js.isUndefined(unit)) __obj.updateDynamic("unit")(unit)
+    if (!js.isUndefined(unit)) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleCallbacks]
   }
 }

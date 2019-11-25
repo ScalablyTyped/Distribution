@@ -17,8 +17,8 @@ object LSPLogMessage {
     timestamp: Double,
     `type`: LSPMessageType
   ): LSPLogMessage = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LSPLogMessage]
   }
 }

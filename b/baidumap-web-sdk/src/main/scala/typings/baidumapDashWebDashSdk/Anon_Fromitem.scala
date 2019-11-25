@@ -14,8 +14,8 @@ trait Anon_Fromitem extends js.Object {
 object Anon_Fromitem {
   @scala.inline
   def apply(fromitem: js.Any, target: js.Any, toitem: js.Any, `type`: String): Anon_Fromitem = {
-    val __obj = js.Dynamic.literal(fromitem = fromitem, target = target, toitem = toitem)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fromitem = fromitem.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], toitem = toitem.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fromitem]
   }
 }

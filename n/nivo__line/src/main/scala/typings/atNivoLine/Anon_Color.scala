@@ -23,7 +23,7 @@ object Anon_Color {
     yFormatted: String | Double,
     yStacked: Double
   ): Anon_Color = {
-    val __obj = js.Dynamic.literal(color = color, x = x.asInstanceOf[js.Any], xFormatted = xFormatted.asInstanceOf[js.Any], y = y, yFormatted = yFormatted.asInstanceOf[js.Any], yStacked = yStacked)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xFormatted = xFormatted.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yFormatted = yFormatted.asInstanceOf[js.Any], yStacked = yStacked.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Color]
   }

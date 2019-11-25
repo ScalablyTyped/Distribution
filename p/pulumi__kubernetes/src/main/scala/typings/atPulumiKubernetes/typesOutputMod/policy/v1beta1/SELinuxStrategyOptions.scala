@@ -23,7 +23,7 @@ trait SELinuxStrategyOptions extends js.Object {
 object SELinuxStrategyOptions {
   @scala.inline
   def apply(rule: String, seLinuxOptions: SELinuxOptions): SELinuxStrategyOptions = {
-    val __obj = js.Dynamic.literal(rule = rule, seLinuxOptions = seLinuxOptions)
+    val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], seLinuxOptions = seLinuxOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SELinuxStrategyOptions]
   }

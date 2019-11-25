@@ -17,7 +17,7 @@ object _UnmarshalledRecordsEvent {
   @scala.inline
   def apply(Payload: Uint8Array = null): _UnmarshalledRecordsEvent = {
     val __obj = js.Dynamic.literal()
-    if (Payload != null) __obj.updateDynamic("Payload")(Payload)
+    if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledRecordsEvent]
   }
 }

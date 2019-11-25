@@ -21,8 +21,8 @@ object ErrorResponse {
     statusText: String,
     responseXML: Document = null
   ): ErrorResponse = {
-    val __obj = js.Dynamic.literal(error = error, readyState = readyState, response = response, responseHeaders = responseHeaders, responseText = responseText, status = status, statusText = statusText)
-    if (responseXML != null) __obj.updateDynamic("responseXML")(responseXML)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
+    if (responseXML != null) __obj.updateDynamic("responseXML")(responseXML.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorResponse]
   }
 }

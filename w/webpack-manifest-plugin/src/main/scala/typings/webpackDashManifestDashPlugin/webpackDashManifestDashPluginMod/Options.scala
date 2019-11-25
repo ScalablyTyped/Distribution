@@ -76,16 +76,16 @@ object Options {
     writeToFileEmit: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (generate != null) __obj.updateDynamic("generate")(js.Any.fromFunction3(generate))
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
-    if (seed != null) __obj.updateDynamic("seed")(seed)
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
+    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (!js.isUndefined(writeToFileEmit)) __obj.updateDynamic("writeToFileEmit")(writeToFileEmit)
+    if (!js.isUndefined(writeToFileEmit)) __obj.updateDynamic("writeToFileEmit")(writeToFileEmit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

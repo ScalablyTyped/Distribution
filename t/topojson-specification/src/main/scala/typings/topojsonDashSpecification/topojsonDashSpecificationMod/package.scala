@@ -11,7 +11,7 @@ package object topojsonDashSpecificationMod {
   type Arc = js.Array[Positions]
   type ArcIndexes = js.Array[Double]
   type Objects[P /* <: Properties */] = StringDictionary[GeometryObject[P]]
-  type OrNull[T /* <: Objects[js.Object] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type OrNull[T /* <: Objects[js.Object] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: T[P] | topojson-specification.topojson-specification.NullObject}
     */ typings.topojsonDashSpecification.topojsonDashSpecificationStrings.OrNull with T
   type Positions = js.Array[Double]

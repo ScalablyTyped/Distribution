@@ -47,13 +47,13 @@ object MetadataDroppingEventUIParam {
     targetElement: String = null
   ): MetadataDroppingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (draggedElement != null) __obj.updateDynamic("draggedElement")(draggedElement)
-    if (helper != null) __obj.updateDynamic("helper")(helper)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (draggedElement != null) __obj.updateDynamic("draggedElement")(draggedElement.asInstanceOf[js.Any])
+    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (metadataIndex != null) __obj.updateDynamic("metadataIndex")(metadataIndex.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataDroppingEventUIParam]
   }
 }

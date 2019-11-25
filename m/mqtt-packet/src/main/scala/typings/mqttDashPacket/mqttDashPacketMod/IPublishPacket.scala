@@ -33,10 +33,10 @@ object IPublishPacket {
     messageId: Int | Double = null,
     properties: Anon_ContentTypeCorrelationData = null
   ): IPublishPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd, dup = dup, payload = payload.asInstanceOf[js.Any], qos = qos, retain = retain, topic = topic)
+    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], dup = dup.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], retain = retain.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPublishPacket]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Rounders extends js.Object
 
+object Rounders {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ceil: typings.jsDashMoney.jsDashMoneyStrings.ceil = this.cast("ceil")
+  @scala.inline
+  def floor: typings.jsDashMoney.jsDashMoneyStrings.floor = this.cast("floor")
+  @scala.inline
+  def round: typings.jsDashMoney.jsDashMoneyStrings.round = this.cast("round")
+}
+

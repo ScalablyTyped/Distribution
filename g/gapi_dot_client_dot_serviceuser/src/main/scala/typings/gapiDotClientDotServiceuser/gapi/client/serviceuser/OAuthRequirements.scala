@@ -21,7 +21,7 @@ object OAuthRequirements {
   @scala.inline
   def apply(canonicalScopes: String = null): OAuthRequirements = {
     val __obj = js.Dynamic.literal()
-    if (canonicalScopes != null) __obj.updateDynamic("canonicalScopes")(canonicalScopes)
+    if (canonicalScopes != null) __obj.updateDynamic("canonicalScopes")(canonicalScopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthRequirements]
   }
 }

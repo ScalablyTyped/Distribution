@@ -16,8 +16,8 @@ trait Anon_Branch extends js.Object {
 object Anon_Branch {
   @scala.inline
   def apply(branch: Branch, path: Path, value: js.Any, `type`: String = null): Anon_Branch = {
-    val __obj = js.Dynamic.literal(branch = branch, path = path, value = value)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Branch]
   }
 }

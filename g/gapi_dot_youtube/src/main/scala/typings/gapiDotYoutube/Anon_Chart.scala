@@ -56,7 +56,7 @@ object Anon_Chart {
     part: String,
     videoCategoryId: String
   ): Anon_Chart = {
-    val __obj = js.Dynamic.literal(chart = chart, id = id, locale = locale, maxResults = maxResults, myRating = myRating, onBehalfOfContentOwner = onBehalfOfContentOwner, pageToken = pageToken, part = part, videoCategoryId = videoCategoryId)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], maxResults = maxResults.asInstanceOf[js.Any], myRating = myRating.asInstanceOf[js.Any], onBehalfOfContentOwner = onBehalfOfContentOwner.asInstanceOf[js.Any], pageToken = pageToken.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any], videoCategoryId = videoCategoryId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Chart]
   }

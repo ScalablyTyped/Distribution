@@ -12,7 +12,7 @@ object ImageBitmapRenderingContextSettings {
   @scala.inline
   def apply(alpha: js.UndefOr[scala.Boolean] = js.undefined): ImageBitmapRenderingContextSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha)
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageBitmapRenderingContextSettings]
   }
 }

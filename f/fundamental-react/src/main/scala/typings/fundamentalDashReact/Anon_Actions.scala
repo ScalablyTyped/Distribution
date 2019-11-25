@@ -30,7 +30,7 @@ object Anon_Actions {
     Head: FunctionComponent[PanelHeadProps],
     Header: FunctionComponent[PanelHeaderProps]
   ): Anon_Actions = {
-    val __obj = js.Dynamic.literal(Actions = Actions, Body = Body, Filters = Filters, Footer = Footer, Head = Head, Header = Header)
+    val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], Footer = Footer.asInstanceOf[js.Any], Head = Head.asInstanceOf[js.Any], Header = Header.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Actions]
   }

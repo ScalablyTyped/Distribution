@@ -35,10 +35,10 @@ object ListIdentitiesOutput {
     IdentityPoolId: String = null,
     NextToken: String = null
   ): ListIdentitiesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Identities != null) __obj.updateDynamic("Identities")(Identities)
-    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Identities != null) __obj.updateDynamic("Identities")(Identities.asInstanceOf[js.Any])
+    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIdentitiesOutput]
   }
 }

@@ -44,11 +44,11 @@ object TranslateTextRequest {
     target: String = null
   ): TranslateTextRequest = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (q != null) __obj.updateDynamic("q")(q)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateTextRequest]
   }
 }

@@ -12,7 +12,7 @@ trait KeyLabelObject extends js.Object {
 object KeyLabelObject {
   @scala.inline
   def apply(key: String, label: String): KeyLabelObject = {
-    val __obj = js.Dynamic.literal(key = key, label = label)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyLabelObject]
   }

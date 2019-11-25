@@ -35,9 +35,9 @@ object PlusContactsContactField {
   @scala.inline
   def apply(preferred: js.UndefOr[Boolean] = js.undefined, `type`: String = null, value: String = null): PlusContactsContactField = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusContactsContactField]
   }
 }

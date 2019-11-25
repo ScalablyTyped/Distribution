@@ -59,10 +59,10 @@ object JsonParseOptionItem {
     verify: (/* req */ Request[ParamsDictionary], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit = null
   ): JsonParseOptionItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate)
+    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (receiver != null) __obj.updateDynamic("receiver")(js.Any.fromFunction2(receiver))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction4(verify))
     __obj.asInstanceOf[JsonParseOptionItem]

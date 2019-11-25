@@ -24,8 +24,8 @@ trait IBackgroundDownloadProperties extends js.Object {
 object IBackgroundDownloadProperties {
   @scala.inline
   def apply(path: String, file_output: StorageFile = null): IBackgroundDownloadProperties = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (file_output != null) __obj.updateDynamic("file_output")(file_output)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (file_output != null) __obj.updateDynamic("file_output")(file_output.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundDownloadProperties]
   }
 }

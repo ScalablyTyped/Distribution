@@ -26,8 +26,8 @@ object Anon_0150OnResize {
     serverWidth: `0`,
     scrollElement: Window = null
   ): Anon_0150OnResize = {
-    val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction0(onResize), onScroll = js.Any.fromFunction0(onScroll), scrollingResetTimeInterval = scrollingResetTimeInterval, serverHeight = serverHeight, serverWidth = serverWidth)
-    if (scrollElement != null) __obj.updateDynamic("scrollElement")(scrollElement)
+    val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction0(onResize), onScroll = js.Any.fromFunction0(onScroll), scrollingResetTimeInterval = scrollingResetTimeInterval.asInstanceOf[js.Any], serverHeight = serverHeight.asInstanceOf[js.Any], serverWidth = serverWidth.asInstanceOf[js.Any])
+    if (scrollElement != null) __obj.updateDynamic("scrollElement")(scrollElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_0150OnResize]
   }
 }

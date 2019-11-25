@@ -23,8 +23,8 @@ object Anon_DestinationMode {
     Source: String,
     Name: String = null
   ): Anon_DestinationMode = {
-    val __obj = js.Dynamic.literal(Destination = Destination, Mode = Mode, Propagation = Propagation, RW = RW, Source = Source)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], Mode = Mode.asInstanceOf[js.Any], Propagation = Propagation.asInstanceOf[js.Any], RW = RW.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DestinationMode]
   }
 }

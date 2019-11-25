@@ -13,7 +13,7 @@ trait Anon_DocHandledBoolean extends js.Object {
 object Anon_DocHandledBoolean {
   @scala.inline
   def apply(Doc: Document, Handled: Boolean): Anon_DocHandledBoolean = {
-    val __obj = js.Dynamic.literal(Doc = Doc, Handled = Handled)
+    val __obj = js.Dynamic.literal(Doc = Doc.asInstanceOf[js.Any], Handled = Handled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DocHandledBoolean]
   }

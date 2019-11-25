@@ -26,7 +26,7 @@ object ExpandAbstractTypes {
     transformResult: /* result */ Result => Result = null,
     transformSchema: /* schema */ GraphQLSchema => GraphQLSchema = null
   ): ExpandAbstractTypes = {
-    val __obj = js.Dynamic.literal(mapping = mapping, reverseMapping = reverseMapping, targetSchema = targetSchema, transformRequest = js.Any.fromFunction1(transformRequest))
+    val __obj = js.Dynamic.literal(mapping = mapping.asInstanceOf[js.Any], reverseMapping = reverseMapping.asInstanceOf[js.Any], targetSchema = targetSchema.asInstanceOf[js.Any], transformRequest = js.Any.fromFunction1(transformRequest))
     if (transformResult != null) __obj.updateDynamic("transformResult")(js.Any.fromFunction1(transformResult))
     if (transformSchema != null) __obj.updateDynamic("transformSchema")(js.Any.fromFunction1(transformSchema))
     __obj.asInstanceOf[ExpandAbstractTypes]

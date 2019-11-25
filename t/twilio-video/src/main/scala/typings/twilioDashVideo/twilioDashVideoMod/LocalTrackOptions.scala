@@ -13,7 +13,7 @@ object LocalTrackOptions {
   @scala.inline
   def apply(logLevel: LogLevel | LogLevels, name: String = null): LocalTrackOptions = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalTrackOptions]
   }
 }

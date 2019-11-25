@@ -113,10 +113,10 @@ object Anon_D {
     y: Int | Double = null
   ): Anon_D = {
     val __obj = js.Dynamic.literal()
-    if (d != null) __obj.updateDynamic("d")(d)
+    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (pathData != null) __obj.updateDynamic("pathData")(pathData)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (pathData != null) __obj.updateDynamic("pathData")(pathData.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

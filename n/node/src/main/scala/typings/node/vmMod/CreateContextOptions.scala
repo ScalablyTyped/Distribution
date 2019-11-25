@@ -30,9 +30,9 @@ object CreateContextOptions {
     origin: java.lang.String = null
   ): CreateContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (codeGeneration != null) __obj.updateDynamic("codeGeneration")(codeGeneration)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (codeGeneration != null) __obj.updateDynamic("codeGeneration")(codeGeneration.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateContextOptions]
   }
 }

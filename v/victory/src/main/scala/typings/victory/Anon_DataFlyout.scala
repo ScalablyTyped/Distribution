@@ -15,9 +15,9 @@ object Anon_DataFlyout {
   @scala.inline
   def apply(data: CSSProperties = null, flyout: CSSProperties = null, labels: CSSProperties = null): Anon_DataFlyout = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (flyout != null) __obj.updateDynamic("flyout")(flyout)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (flyout != null) __obj.updateDynamic("flyout")(flyout.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataFlyout]
   }
 }

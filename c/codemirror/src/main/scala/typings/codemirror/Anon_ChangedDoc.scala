@@ -14,8 +14,8 @@ trait Anon_ChangedDoc extends js.Object {
 object Anon_ChangedDoc {
   @scala.inline
   def apply(doc: Doc, name: String, changed: Anon_FromTo = null): Anon_ChangedDoc = {
-    val __obj = js.Dynamic.literal(doc = doc, name = name)
-    if (changed != null) __obj.updateDynamic("changed")(changed)
+    val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (changed != null) __obj.updateDynamic("changed")(changed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChangedDoc]
   }
 }

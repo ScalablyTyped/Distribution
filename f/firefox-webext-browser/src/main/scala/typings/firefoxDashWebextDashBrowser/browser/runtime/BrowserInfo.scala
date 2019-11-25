@@ -19,7 +19,7 @@ trait BrowserInfo extends js.Object {
 object BrowserInfo {
   @scala.inline
   def apply(buildID: String, name: String, vendor: String, version: String): BrowserInfo = {
-    val __obj = js.Dynamic.literal(buildID = buildID, name = name, vendor = vendor, version = version)
+    val __obj = js.Dynamic.literal(buildID = buildID.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BrowserInfo]
   }

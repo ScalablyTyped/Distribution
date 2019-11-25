@@ -14,8 +14,8 @@ trait HostedFieldsTokenizePayload extends js.Object {
 object HostedFieldsTokenizePayload {
   @scala.inline
   def apply(description: String, details: HostedFieldsAccountDetails, nonce: String, `type`: String): HostedFieldsTokenizePayload = {
-    val __obj = js.Dynamic.literal(description = description, details = details, nonce = nonce)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedFieldsTokenizePayload]
   }
 }

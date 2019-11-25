@@ -21,7 +21,7 @@ object MethodsEnum {
     BASE64URL: MethodsString,
     DEFAULT: MethodsString
   ): MethodsEnum = {
-    val __obj = js.Dynamic.literal(BASE64 = BASE64, BASE64ASCII = BASE64ASCII, BASE64NATURAL = BASE64NATURAL, BASE64URL = BASE64URL, DEFAULT = DEFAULT)
+    val __obj = js.Dynamic.literal(BASE64 = BASE64.asInstanceOf[js.Any], BASE64ASCII = BASE64ASCII.asInstanceOf[js.Any], BASE64NATURAL = BASE64NATURAL.asInstanceOf[js.Any], BASE64URL = BASE64URL.asInstanceOf[js.Any], DEFAULT = DEFAULT.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MethodsEnum]
   }

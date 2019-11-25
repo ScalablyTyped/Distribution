@@ -14,7 +14,7 @@ object Options {
   def apply(timeout: Int | Double = null, timeoutMessage: String = null): Options = {
     val __obj = js.Dynamic.literal()
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timeoutMessage != null) __obj.updateDynamic("timeoutMessage")(timeoutMessage)
+    if (timeoutMessage != null) __obj.updateDynamic("timeoutMessage")(timeoutMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

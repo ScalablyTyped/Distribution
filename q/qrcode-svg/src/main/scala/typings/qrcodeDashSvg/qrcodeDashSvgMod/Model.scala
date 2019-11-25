@@ -55,8 +55,8 @@ object Model {
     typeNumber: Double,
     dataCache: js.Array[Double] = null
   ): Model = {
-    val __obj = js.Dynamic.literal(addData = js.Any.fromFunction1(addData), dataList = dataList, errorCorrectLevel = errorCorrectLevel, getModuleCount = js.Any.fromFunction0(getModuleCount), isDark = js.Any.fromFunction2(isDark), make = js.Any.fromFunction0(make), moduleCount = moduleCount, modules = modules, typeNumber = typeNumber)
-    if (dataCache != null) __obj.updateDynamic("dataCache")(dataCache)
+    val __obj = js.Dynamic.literal(addData = js.Any.fromFunction1(addData), dataList = dataList.asInstanceOf[js.Any], errorCorrectLevel = errorCorrectLevel.asInstanceOf[js.Any], getModuleCount = js.Any.fromFunction0(getModuleCount), isDark = js.Any.fromFunction2(isDark), make = js.Any.fromFunction0(make), moduleCount = moduleCount.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], typeNumber = typeNumber.asInstanceOf[js.Any])
+    if (dataCache != null) __obj.updateDynamic("dataCache")(dataCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

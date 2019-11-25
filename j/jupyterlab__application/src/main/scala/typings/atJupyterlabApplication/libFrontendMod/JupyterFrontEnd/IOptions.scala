@@ -43,11 +43,11 @@ object IOptions {
     serviceManager: ServiceManager = null
   ): IOptions[T, U] = {
     val __obj = js.Dynamic.literal(shell = shell.asInstanceOf[js.Any])
-    if (commandLinker != null) __obj.updateDynamic("commandLinker")(commandLinker)
-    if (contextMenuRenderer != null) __obj.updateDynamic("contextMenuRenderer")(contextMenuRenderer)
-    if (docRegistry != null) __obj.updateDynamic("docRegistry")(docRegistry)
-    if (restored != null) __obj.updateDynamic("restored")(restored)
-    if (serviceManager != null) __obj.updateDynamic("serviceManager")(serviceManager)
+    if (commandLinker != null) __obj.updateDynamic("commandLinker")(commandLinker.asInstanceOf[js.Any])
+    if (contextMenuRenderer != null) __obj.updateDynamic("contextMenuRenderer")(contextMenuRenderer.asInstanceOf[js.Any])
+    if (docRegistry != null) __obj.updateDynamic("docRegistry")(docRegistry.asInstanceOf[js.Any])
+    if (restored != null) __obj.updateDynamic("restored")(restored.asInstanceOf[js.Any])
+    if (serviceManager != null) __obj.updateDynamic("serviceManager")(serviceManager.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T, U]]
   }
 }

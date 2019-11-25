@@ -35,12 +35,12 @@ object HttpRequestContext {
     userAgent: String = null
   ): HttpRequestContext = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
-    if (remoteIp != null) __obj.updateDynamic("remoteIp")(remoteIp)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
+    if (remoteIp != null) __obj.updateDynamic("remoteIp")(remoteIp.asInstanceOf[js.Any])
     if (responseStatusCode != null) __obj.updateDynamic("responseStatusCode")(responseStatusCode.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpRequestContext]
   }
 }

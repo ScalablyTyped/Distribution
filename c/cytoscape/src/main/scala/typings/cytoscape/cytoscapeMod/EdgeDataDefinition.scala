@@ -27,10 +27,10 @@ object EdgeDataDefinition {
     id: String = null,
     position: Position = null
   ): EdgeDataDefinition = {
-    val __obj = js.Dynamic.literal(source = source, target = target)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (position != null) __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeDataDefinition]
   }
 }

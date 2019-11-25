@@ -24,11 +24,11 @@ object Anon_DurationIcon {
     image: String = null,
     mask: js.UndefOr[Boolean] = js.undefined
   ): Anon_DurationIcon = {
-    val __obj = js.Dynamic.literal(title = title)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DurationIcon]
   }
 }

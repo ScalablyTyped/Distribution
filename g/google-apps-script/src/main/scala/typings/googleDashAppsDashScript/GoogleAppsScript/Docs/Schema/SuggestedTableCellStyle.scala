@@ -16,8 +16,8 @@ object SuggestedTableCellStyle {
     tableCellStyleSuggestionState: TableCellStyleSuggestionState = null
   ): SuggestedTableCellStyle = {
     val __obj = js.Dynamic.literal()
-    if (tableCellStyle != null) __obj.updateDynamic("tableCellStyle")(tableCellStyle)
-    if (tableCellStyleSuggestionState != null) __obj.updateDynamic("tableCellStyleSuggestionState")(tableCellStyleSuggestionState)
+    if (tableCellStyle != null) __obj.updateDynamic("tableCellStyle")(tableCellStyle.asInstanceOf[js.Any])
+    if (tableCellStyleSuggestionState != null) __obj.updateDynamic("tableCellStyleSuggestionState")(tableCellStyleSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedTableCellStyle]
   }
 }

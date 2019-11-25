@@ -17,9 +17,9 @@ object NetworkInfo {
   @scala.inline
   def apply(imei: String = null, meid: String = null, wifiMacAddress: String = null): NetworkInfo = {
     val __obj = js.Dynamic.literal()
-    if (imei != null) __obj.updateDynamic("imei")(imei)
-    if (meid != null) __obj.updateDynamic("meid")(meid)
-    if (wifiMacAddress != null) __obj.updateDynamic("wifiMacAddress")(wifiMacAddress)
+    if (imei != null) __obj.updateDynamic("imei")(imei.asInstanceOf[js.Any])
+    if (meid != null) __obj.updateDynamic("meid")(meid.asInstanceOf[js.Any])
+    if (wifiMacAddress != null) __obj.updateDynamic("wifiMacAddress")(wifiMacAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInfo]
   }
 }

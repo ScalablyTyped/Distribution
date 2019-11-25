@@ -30,12 +30,12 @@ object Query {
     last: String = null,
     reverse: js.UndefOr[Boolean] = js.undefined
   ): Query = {
-    val __obj = js.Dynamic.literal(query = query, sortBy = sortBy)
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
-    if (first != null) __obj.updateDynamic("first")(first)
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], sortBy = sortBy.asInstanceOf[js.Any])
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
 }

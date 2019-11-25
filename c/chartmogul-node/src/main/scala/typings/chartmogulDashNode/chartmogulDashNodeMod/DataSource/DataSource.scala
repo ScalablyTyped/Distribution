@@ -21,11 +21,11 @@ object DataSource {
     system: String = null,
     uuid: String = null
   ): DataSource = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (system != null) __obj.updateDynamic("system")(system)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSource]
   }
 }

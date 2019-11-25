@@ -21,11 +21,11 @@ object Request {
     headers: Header = null,
     method: HttpMethods = null
   ): Request = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (credential != null) __obj.updateDynamic("credential")(credential)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

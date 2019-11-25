@@ -36,9 +36,9 @@ object CommonHTMLOutputProcessor {
     scale: Int | Double = null
   ): CommonHTMLOutputProcessor = {
     val __obj = js.Dynamic.literal()
-    if (linebreaks != null) __obj.updateDynamic("linebreaks")(linebreaks)
+    if (linebreaks != null) __obj.updateDynamic("linebreaks")(linebreaks.asInstanceOf[js.Any])
     if (minScaleAdjust != null) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.asInstanceOf[js.Any])
-    if (!js.isUndefined(mtextFontInherit)) __obj.updateDynamic("mtextFontInherit")(mtextFontInherit)
+    if (!js.isUndefined(mtextFontInherit)) __obj.updateDynamic("mtextFontInherit")(mtextFontInherit.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonHTMLOutputProcessor]
   }

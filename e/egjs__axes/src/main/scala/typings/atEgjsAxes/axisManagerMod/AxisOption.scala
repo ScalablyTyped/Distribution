@@ -20,7 +20,7 @@ object AxisOption {
     val __obj = js.Dynamic.literal()
     if (bounce != null) __obj.updateDynamic("bounce")(bounce.asInstanceOf[js.Any])
     if (circular != null) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisOption]
   }
 }

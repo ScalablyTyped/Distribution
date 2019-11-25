@@ -25,8 +25,8 @@ object Anon_IdLinks {
     selected: Boolean,
     `type`: String
   ): Anon_IdLinks = {
-    val __obj = js.Dynamic.literal(id = id, links = links, maximumLinks = maximumLinks, name = name, parentNode = parentNode, selected = selected)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], maximumLinks = maximumLinks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdLinks]
   }
 }

@@ -13,7 +13,7 @@ object InstancesSetMinCpuPlatformRequest {
   @scala.inline
   def apply(minCpuPlatform: String = null): InstancesSetMinCpuPlatformRequest = {
     val __obj = js.Dynamic.literal()
-    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform)
+    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesSetMinCpuPlatformRequest]
   }
 }

@@ -13,8 +13,8 @@ trait Anon_Spring extends js.Object {
 object Anon_Spring {
   @scala.inline
   def apply(spring: Spring, `type`: String): Anon_Spring = {
-    val __obj = js.Dynamic.literal(spring = spring)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(spring = spring.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Spring]
   }
 }

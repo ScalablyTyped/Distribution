@@ -52,11 +52,11 @@ object PlusWebviewWebviewTransform {
     translate: String = null
   ): PlusWebviewWebviewTransform = {
     val __obj = js.Dynamic.literal()
-    if (matrix != null) __obj.updateDynamic("matrix")(matrix)
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate)
-    if (scale != null) __obj.updateDynamic("scale")(scale)
-    if (skew != null) __obj.updateDynamic("skew")(skew)
-    if (translate != null) __obj.updateDynamic("translate")(translate)
+    if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (skew != null) __obj.updateDynamic("skew")(skew.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewTransform]
   }
 }

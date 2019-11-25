@@ -30,11 +30,11 @@ object IBrowseCarouselCardItem {
     title: String = null
   ): IBrowseCarouselCardItem = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (openUriAction != null) __obj.updateDynamic("openUriAction")(openUriAction)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (openUriAction != null) __obj.updateDynamic("openUriAction")(openUriAction.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBrowseCarouselCardItem]
   }
 }

@@ -23,10 +23,10 @@ object Anon_Checksum {
     total: Int | Double = null
   ): Anon_Checksum = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checksum)) __obj.updateDynamic("checksum")(checksum)
+    if (!js.isUndefined(checksum)) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnAll)) __obj.updateDynamic("returnAll")(returnAll)
-    if (security != null) __obj.updateDynamic("security")(security)
+    if (!js.isUndefined(returnAll)) __obj.updateDynamic("returnAll")(returnAll.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Checksum]
   }

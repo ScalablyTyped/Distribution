@@ -26,9 +26,9 @@ object ToolResultsExecution {
   @scala.inline
   def apply(executionId: String = null, historyId: String = null, projectId: String = null): ToolResultsExecution = {
     val __obj = js.Dynamic.literal()
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolResultsExecution]
   }
 }

@@ -13,8 +13,8 @@ trait ReposListBranchesForHeadCommitResponseItem extends js.Object {
 object ReposListBranchesForHeadCommitResponseItem {
   @scala.inline
   def apply(commit: ReposListBranchesForHeadCommitResponseItemCommit, name: String, `protected`: String): ReposListBranchesForHeadCommitResponseItem = {
-    val __obj = js.Dynamic.literal(commit = commit, name = name)
-    __obj.updateDynamic("protected")(`protected`)
+    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposListBranchesForHeadCommitResponseItem]
   }
 }

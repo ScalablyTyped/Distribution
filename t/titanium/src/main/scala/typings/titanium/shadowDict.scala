@@ -28,8 +28,8 @@ object shadowDict {
   def apply(blurRadius: Int | Double = null, color: String = null, offset: js.Any = null): shadowDict = {
     val __obj = js.Dynamic.literal()
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[shadowDict]
   }
 }

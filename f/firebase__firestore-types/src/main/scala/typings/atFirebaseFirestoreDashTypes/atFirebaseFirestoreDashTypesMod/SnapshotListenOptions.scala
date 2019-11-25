@@ -12,7 +12,7 @@ object SnapshotListenOptions {
   @scala.inline
   def apply(includeMetadataChanges: js.UndefOr[Boolean] = js.undefined): SnapshotListenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeMetadataChanges)) __obj.updateDynamic("includeMetadataChanges")(includeMetadataChanges)
+    if (!js.isUndefined(includeMetadataChanges)) __obj.updateDynamic("includeMetadataChanges")(includeMetadataChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotListenOptions]
   }
 }

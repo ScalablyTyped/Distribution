@@ -59,13 +59,13 @@ object Anon_BinCardTypeCardholderName {
     imageUrl: String = null,
     maskedNumber: String = null
   ): Anon_BinCardTypeCardholderName = {
-    val __obj = js.Dynamic.literal(bin = bin, cardType = cardType, commercial = commercial, countryOfIssuance = countryOfIssuance, customerLocation = customerLocation, debit = debit, durbinRegulated = durbinRegulated, healthcare = healthcare, issuingBank = issuingBank, last4 = last4, payroll = payroll, prepaid = prepaid, productId = productId, token = token, uniqueNumberIdentifier = uniqueNumberIdentifier)
-    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName)
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
-    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth)
-    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (maskedNumber != null) __obj.updateDynamic("maskedNumber")(maskedNumber)
+    val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], cardType = cardType.asInstanceOf[js.Any], commercial = commercial.asInstanceOf[js.Any], countryOfIssuance = countryOfIssuance.asInstanceOf[js.Any], customerLocation = customerLocation.asInstanceOf[js.Any], debit = debit.asInstanceOf[js.Any], durbinRegulated = durbinRegulated.asInstanceOf[js.Any], healthcare = healthcare.asInstanceOf[js.Any], issuingBank = issuingBank.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], payroll = payroll.asInstanceOf[js.Any], prepaid = prepaid.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], uniqueNumberIdentifier = uniqueNumberIdentifier.asInstanceOf[js.Any])
+    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName.asInstanceOf[js.Any])
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
+    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (maskedNumber != null) __obj.updateDynamic("maskedNumber")(maskedNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BinCardTypeCardholderName]
   }
 }

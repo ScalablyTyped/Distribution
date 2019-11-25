@@ -68,7 +68,7 @@ object PlusMapsSearchPoiResult {
     if (currentNumber != null) __obj.updateDynamic("currentNumber")(currentNumber.asInstanceOf[js.Any])
     if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
     if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
-    if (poiList != null) __obj.updateDynamic("poiList")(poiList)
+    if (poiList != null) __obj.updateDynamic("poiList")(poiList.asInstanceOf[js.Any])
     if (totalNumber != null) __obj.updateDynamic("totalNumber")(totalNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsSearchPoiResult]
   }

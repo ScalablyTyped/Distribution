@@ -24,8 +24,8 @@ object Anon_DynamicRegistrationLinkSupport {
     linkSupport: js.UndefOr[Boolean] = js.undefined
   ): Anon_DynamicRegistrationLinkSupport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
-    if (!js.isUndefined(linkSupport)) __obj.updateDynamic("linkSupport")(linkSupport)
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkSupport)) __obj.updateDynamic("linkSupport")(linkSupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DynamicRegistrationLinkSupport]
   }
 }

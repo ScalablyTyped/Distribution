@@ -56,16 +56,16 @@ object HistoryManager {
     undoStack: js.Array[_] = null
   ): HistoryManager = {
     val __obj = js.Dynamic.literal()
-    if (canPop != null) __obj.updateDynamic("canPop")(canPop)
-    if (closeGroupAction != null) __obj.updateDynamic("closeGroupAction")(closeGroupAction)
-    if (pop != null) __obj.updateDynamic("pop")(pop)
-    if (push != null) __obj.updateDynamic("push")(push)
-    if (redo != null) __obj.updateDynamic("redo")(redo)
-    if (redoStack != null) __obj.updateDynamic("redoStack")(redoStack)
+    if (canPop != null) __obj.updateDynamic("canPop")(canPop.asInstanceOf[js.Any])
+    if (closeGroupAction != null) __obj.updateDynamic("closeGroupAction")(closeGroupAction.asInstanceOf[js.Any])
+    if (pop != null) __obj.updateDynamic("pop")(pop.asInstanceOf[js.Any])
+    if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (redo != null) __obj.updateDynamic("redo")(redo.asInstanceOf[js.Any])
+    if (redoStack != null) __obj.updateDynamic("redoStack")(redoStack.asInstanceOf[js.Any])
     if (stackLimit != null) __obj.updateDynamic("stackLimit")(stackLimit.asInstanceOf[js.Any])
-    if (startGroupAction != null) __obj.updateDynamic("startGroupAction")(startGroupAction)
-    if (undo != null) __obj.updateDynamic("undo")(undo)
-    if (undoStack != null) __obj.updateDynamic("undoStack")(undoStack)
+    if (startGroupAction != null) __obj.updateDynamic("startGroupAction")(startGroupAction.asInstanceOf[js.Any])
+    if (undo != null) __obj.updateDynamic("undo")(undo.asInstanceOf[js.Any])
+    if (undoStack != null) __obj.updateDynamic("undoStack")(undoStack.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryManager]
   }
 }

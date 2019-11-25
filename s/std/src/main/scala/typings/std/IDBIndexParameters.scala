@@ -16,8 +16,8 @@ object IDBIndexParameters {
     unique: js.UndefOr[scala.Boolean] = js.undefined
   ): IDBIndexParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(multiEntry)) __obj.updateDynamic("multiEntry")(multiEntry)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    if (!js.isUndefined(multiEntry)) __obj.updateDynamic("multiEntry")(multiEntry.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBIndexParameters]
   }
 }

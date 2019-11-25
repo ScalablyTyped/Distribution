@@ -14,7 +14,7 @@ object OverlayEventDetail {
   def apply[T](data: T = null, role: String = null): OverlayEventDetail[T] = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayEventDetail[T]]
   }
 }

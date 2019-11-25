@@ -53,20 +53,20 @@ object Anon_Advertiser {
     videoURL: String = null
   ): Anon_Advertiser = {
     val __obj = js.Dynamic.literal()
-    if (advertiser != null) __obj.updateDynamic("advertiser")(advertiser)
-    if (appIcon != null) __obj.updateDynamic("appIcon")(appIcon)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (callToAction != null) __obj.updateDynamic("callToAction")(callToAction)
-    if (clickLinkUrl != null) __obj.updateDynamic("clickLinkUrl")(clickLinkUrl)
-    if (clickTrackingUrl != null) __obj.updateDynamic("clickTrackingUrl")(clickTrackingUrl)
-    if (headline != null) __obj.updateDynamic("headline")(headline)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (impressionTrackingUrl != null) __obj.updateDynamic("impressionTrackingUrl")(impressionTrackingUrl)
-    if (logo != null) __obj.updateDynamic("logo")(logo)
-    if (price != null) __obj.updateDynamic("price")(price)
+    if (advertiser != null) __obj.updateDynamic("advertiser")(advertiser.asInstanceOf[js.Any])
+    if (appIcon != null) __obj.updateDynamic("appIcon")(appIcon.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (callToAction != null) __obj.updateDynamic("callToAction")(callToAction.asInstanceOf[js.Any])
+    if (clickLinkUrl != null) __obj.updateDynamic("clickLinkUrl")(clickLinkUrl.asInstanceOf[js.Any])
+    if (clickTrackingUrl != null) __obj.updateDynamic("clickTrackingUrl")(clickTrackingUrl.asInstanceOf[js.Any])
+    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (impressionTrackingUrl != null) __obj.updateDynamic("impressionTrackingUrl")(impressionTrackingUrl.asInstanceOf[js.Any])
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (starRating != null) __obj.updateDynamic("starRating")(starRating.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (videoURL != null) __obj.updateDynamic("videoURL")(videoURL)
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (videoURL != null) __obj.updateDynamic("videoURL")(videoURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Advertiser]
   }
 }

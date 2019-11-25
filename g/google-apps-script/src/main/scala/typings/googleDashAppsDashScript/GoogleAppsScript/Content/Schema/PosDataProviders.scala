@@ -13,8 +13,8 @@ object PosDataProviders {
   @scala.inline
   def apply(country: String = null, posDataProviders: js.Array[PosDataProvidersPosDataProvider] = null): PosDataProviders = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (posDataProviders != null) __obj.updateDynamic("posDataProviders")(posDataProviders)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (posDataProviders != null) __obj.updateDynamic("posDataProviders")(posDataProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[PosDataProviders]
   }
 }

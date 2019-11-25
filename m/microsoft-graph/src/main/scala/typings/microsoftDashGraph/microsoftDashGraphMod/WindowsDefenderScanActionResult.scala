@@ -19,11 +19,11 @@ object WindowsDefenderScanActionResult {
     startDateTime: String = null
   ): WindowsDefenderScanActionResult = {
     val __obj = js.Dynamic.literal()
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName)
-    if (actionState != null) __obj.updateDynamic("actionState")(actionState)
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime)
-    if (scanType != null) __obj.updateDynamic("scanType")(scanType)
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime)
+    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
+    if (actionState != null) __obj.updateDynamic("actionState")(actionState.asInstanceOf[js.Any])
+    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
+    if (scanType != null) __obj.updateDynamic("scanType")(scanType.asInstanceOf[js.Any])
+    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsDefenderScanActionResult]
   }
 }

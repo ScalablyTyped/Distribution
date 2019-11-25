@@ -21,10 +21,10 @@ object RatingChangeEvent {
     oldValue: Int | Double = null,
     target: Element = null
   ): RatingChangeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[RatingChangeEvent]
   }
 }

@@ -13,8 +13,8 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(onChangeTab: Double => Unit, tabOpen: Double, initialUiVisible: js.UndefOr[Boolean] = js.undefined): Props = {
-    val __obj = js.Dynamic.literal(onChangeTab = js.Any.fromFunction1(onChangeTab), tabOpen = tabOpen)
-    if (!js.isUndefined(initialUiVisible)) __obj.updateDynamic("initialUiVisible")(initialUiVisible)
+    val __obj = js.Dynamic.literal(onChangeTab = js.Any.fromFunction1(onChangeTab), tabOpen = tabOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialUiVisible)) __obj.updateDynamic("initialUiVisible")(initialUiVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

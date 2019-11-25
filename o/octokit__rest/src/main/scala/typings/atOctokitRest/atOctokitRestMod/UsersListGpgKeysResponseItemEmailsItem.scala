@@ -12,7 +12,7 @@ trait UsersListGpgKeysResponseItemEmailsItem extends js.Object {
 object UsersListGpgKeysResponseItemEmailsItem {
   @scala.inline
   def apply(email: String, verified: Boolean): UsersListGpgKeysResponseItemEmailsItem = {
-    val __obj = js.Dynamic.literal(email = email, verified = verified)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersListGpgKeysResponseItemEmailsItem]
   }

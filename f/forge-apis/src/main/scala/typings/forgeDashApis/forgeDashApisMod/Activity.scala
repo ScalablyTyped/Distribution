@@ -31,9 +31,9 @@ object Activity {
     description: String = null,
     hostApplication: String = null
   ): Activity = {
-    val __obj = js.Dynamic.literal(allowedChildProcesses = allowedChildProcesses, appPackages = appPackages, id = id, instruction = instruction, isPublic = isPublic, parameters = parameters, requiredEngineVersion = requiredEngineVersion, version = version)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (hostApplication != null) __obj.updateDynamic("hostApplication")(hostApplication)
+    val __obj = js.Dynamic.literal(allowedChildProcesses = allowedChildProcesses.asInstanceOf[js.Any], appPackages = appPackages.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], isPublic = isPublic.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], requiredEngineVersion = requiredEngineVersion.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (hostApplication != null) __obj.updateDynamic("hostApplication")(hostApplication.asInstanceOf[js.Any])
     __obj.asInstanceOf[Activity]
   }
 }

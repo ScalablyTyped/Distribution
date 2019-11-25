@@ -31,7 +31,7 @@ object Navigator {
     notification: PhonegapNotification,
     splashscreen: Splashscreen
   ): Navigator = {
-    val __obj = js.Dynamic.literal(accelerometer = accelerometer, camera = camera, capture = capture, compass = compass, connection = connection, contacts = contacts, device = device, globalization = globalization, notification = notification, splashscreen = splashscreen)
+    val __obj = js.Dynamic.literal(accelerometer = accelerometer.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], capture = capture.asInstanceOf[js.Any], compass = compass.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any], contacts = contacts.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], globalization = globalization.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any], splashscreen = splashscreen.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Navigator]
   }

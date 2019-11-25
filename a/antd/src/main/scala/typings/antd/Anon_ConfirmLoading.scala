@@ -29,7 +29,7 @@ object Anon_ConfirmLoading {
     visible: Boolean,
     width: Double
   ): Anon_ConfirmLoading = {
-    val __obj = js.Dynamic.literal(confirmLoading = confirmLoading, maskTransitionName = maskTransitionName, okType = okType.asInstanceOf[js.Any], transitionName = transitionName, visible = visible, width = width)
+    val __obj = js.Dynamic.literal(confirmLoading = confirmLoading.asInstanceOf[js.Any], maskTransitionName = maskTransitionName.asInstanceOf[js.Any], okType = okType.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ConfirmLoading]
   }

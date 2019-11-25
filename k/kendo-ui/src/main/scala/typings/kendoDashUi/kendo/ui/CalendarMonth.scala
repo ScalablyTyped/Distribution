@@ -14,9 +14,9 @@ object CalendarMonth {
   @scala.inline
   def apply(content: String = null, empty: String = null, weekNumber: String = null): CalendarMonth = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (weekNumber != null) __obj.updateDynamic("weekNumber")(weekNumber)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (weekNumber != null) __obj.updateDynamic("weekNumber")(weekNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarMonth]
   }
 }

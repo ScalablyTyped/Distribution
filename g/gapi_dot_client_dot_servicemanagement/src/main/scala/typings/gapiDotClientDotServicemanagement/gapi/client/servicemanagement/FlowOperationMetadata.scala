@@ -50,13 +50,13 @@ object FlowOperationMetadata {
     surface: String = null
   ): FlowOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (cancelState != null) __obj.updateDynamic("cancelState")(cancelState)
-    if (deadline != null) __obj.updateDynamic("deadline")(deadline)
-    if (flowName != null) __obj.updateDynamic("flowName")(flowName)
+    if (cancelState != null) __obj.updateDynamic("cancelState")(cancelState.asInstanceOf[js.Any])
+    if (deadline != null) __obj.updateDynamic("deadline")(deadline.asInstanceOf[js.Any])
+    if (flowName != null) __obj.updateDynamic("flowName")(flowName.asInstanceOf[js.Any])
     if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
-    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (surface != null) __obj.updateDynamic("surface")(surface)
+    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (surface != null) __obj.updateDynamic("surface")(surface.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowOperationMetadata]
   }
 }

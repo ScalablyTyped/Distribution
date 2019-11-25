@@ -19,9 +19,9 @@ object GetTranslationParams {
     _namespace: String = null
   ): GetTranslationParams = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_locale != null) __obj.updateDynamic("_locale")(_locale)
-    if (_namespace != null) __obj.updateDynamic("_namespace")(_namespace)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (_locale != null) __obj.updateDynamic("_locale")(_locale.asInstanceOf[js.Any])
+    if (_namespace != null) __obj.updateDynamic("_namespace")(_namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTranslationParams]
   }
 }

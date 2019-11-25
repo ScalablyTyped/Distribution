@@ -14,7 +14,7 @@ trait OptimizerVariable extends js.Object {
 object OptimizerVariable {
   @scala.inline
   def apply(originalName: String, variable: Variable[Rank]): OptimizerVariable = {
-    val __obj = js.Dynamic.literal(originalName = originalName, variable = variable)
+    val __obj = js.Dynamic.literal(originalName = originalName.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OptimizerVariable]
   }

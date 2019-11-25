@@ -29,12 +29,12 @@ object BanAdd {
     time: Int | Double = null,
     uid: String = null
   ): BanAdd = {
-    val __obj = js.Dynamic.literal(banreason = banreason)
-    if (ip != null) __obj.updateDynamic("ip")(ip)
-    if (mytsid != null) __obj.updateDynamic("mytsid")(mytsid)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(banreason = banreason.asInstanceOf[js.Any])
+    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
+    if (mytsid != null) __obj.updateDynamic("mytsid")(mytsid.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid)
+    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[BanAdd]
   }
 }

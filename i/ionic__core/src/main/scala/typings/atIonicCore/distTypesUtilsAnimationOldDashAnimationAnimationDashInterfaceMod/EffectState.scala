@@ -13,8 +13,8 @@ trait EffectState extends js.Object {
 object EffectState {
   @scala.inline
   def apply(effectUnit: String, num: Double, `val`: js.Any): EffectState = {
-    val __obj = js.Dynamic.literal(effectUnit = effectUnit, num = num)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(effectUnit = effectUnit.asInstanceOf[js.Any], num = num.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectState]
   }
 }

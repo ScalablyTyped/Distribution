@@ -14,7 +14,7 @@ trait Anon_SourceType extends js.Object {
 object Anon_SourceType {
   @scala.inline
   def apply(source: window, `type`: WindowEventType): Anon_SourceType = {
-    val __obj = js.Dynamic.literal(source = source)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SourceType]
   }

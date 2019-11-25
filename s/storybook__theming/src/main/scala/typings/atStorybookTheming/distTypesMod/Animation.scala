@@ -25,7 +25,7 @@ object Animation {
     jiggle: Keyframes,
     rotate360: Keyframes
   ): Animation = {
-    val __obj = js.Dynamic.literal(float = float, glow = glow, hoverable = hoverable, inlineGlow = inlineGlow, jiggle = jiggle, rotate360 = rotate360)
+    val __obj = js.Dynamic.literal(float = float.asInstanceOf[js.Any], glow = glow.asInstanceOf[js.Any], hoverable = hoverable.asInstanceOf[js.Any], inlineGlow = inlineGlow.asInstanceOf[js.Any], jiggle = jiggle.asInstanceOf[js.Any], rotate360 = rotate360.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Animation]
   }

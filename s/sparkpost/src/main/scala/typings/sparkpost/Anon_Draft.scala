@@ -12,7 +12,7 @@ object Anon_Draft {
   @scala.inline
   def apply(draft: js.UndefOr[Boolean] = js.undefined): Anon_Draft = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(draft)) __obj.updateDynamic("draft")(draft)
+    if (!js.isUndefined(draft)) __obj.updateDynamic("draft")(draft.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Draft]
   }
 }

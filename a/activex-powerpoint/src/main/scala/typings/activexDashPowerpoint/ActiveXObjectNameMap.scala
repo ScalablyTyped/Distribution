@@ -13,7 +13,7 @@ object ActiveXObjectNameMap {
   @scala.inline
   def apply(`PowerPoint.Application`: Application): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PowerPoint.Application")(`PowerPoint.Application`)
+    __obj.updateDynamic("PowerPoint.Application")(`PowerPoint.Application`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

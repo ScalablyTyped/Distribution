@@ -15,8 +15,8 @@ object EventsResetMultipleForAllRequest {
   @scala.inline
   def apply(event_ids: js.Array[String] = null, kind: String = null): EventsResetMultipleForAllRequest = {
     val __obj = js.Dynamic.literal()
-    if (event_ids != null) __obj.updateDynamic("event_ids")(event_ids)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (event_ids != null) __obj.updateDynamic("event_ids")(event_ids.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventsResetMultipleForAllRequest]
   }
 }

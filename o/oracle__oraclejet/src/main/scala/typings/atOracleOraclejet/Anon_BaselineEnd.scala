@@ -28,8 +28,8 @@ object Anon_BaselineEnd {
     value: String,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_BaselineEnd[K2, D2] = {
-    val __obj = js.Dynamic.literal(baselineEnd = baselineEnd, baselineStart = baselineStart, end = end, rowContext = rowContext, start = start, taskContexts = taskContexts, value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(baselineEnd = baselineEnd.asInstanceOf[js.Any], baselineStart = baselineStart.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], rowContext = rowContext.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], taskContexts = taskContexts.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_BaselineEnd[K2, D2]]
   }
 }

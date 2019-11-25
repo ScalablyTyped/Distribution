@@ -30,7 +30,7 @@ trait TypeofCountMode extends js.Object {
 object TypeofCountMode {
   @scala.inline
   def apply(Both: js.Any, Inline: js.Any, InlineRepeat: js.Any, None: js.Any, Request: js.Any): TypeofCountMode = {
-    val __obj = js.Dynamic.literal(Both = Both, Inline = Inline, InlineRepeat = InlineRepeat, None = None, Request = Request)
+    val __obj = js.Dynamic.literal(Both = Both.asInstanceOf[js.Any], Inline = Inline.asInstanceOf[js.Any], InlineRepeat = InlineRepeat.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any], Request = Request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofCountMode]
   }

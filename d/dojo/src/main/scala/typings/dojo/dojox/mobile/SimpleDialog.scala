@@ -1,8 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.closeButton
 import typings.dojo.dojoStrings.closeButtonClass
 import typings.dojo.dojoStrings.left
@@ -135,16 +133,64 @@ class SimpleDialog () extends Pane {
     */
   def show(): Unit = js.native
   @JSName("watch")
-  def watch_closeButton(property: closeButton, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_closeButton(
+    property: closeButton,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_closeButtonClass(property: closeButtonClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_closeButtonClass(
+    property: closeButtonClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_left(property: left, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_left(
+    property: left,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_modal(property: modal, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_modal(
+    property: modal,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_tabIndex(property: tabIndex, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_tabIndex(
+    property: tabIndex,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_top(property: top, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_top(
+    property: top,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

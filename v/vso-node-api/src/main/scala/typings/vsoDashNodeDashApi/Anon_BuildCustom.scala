@@ -33,7 +33,7 @@ object Anon_BuildCustom {
     tfvc: Double,
     xamlBuild: Double
   ): Anon_BuildCustom = {
-    val __obj = js.Dynamic.literal(build = build, custom = custom, externalTfsBuild = externalTfsBuild, fileShare = fileShare, gitHub = gitHub, jenkins = jenkins, nuget = nuget, tFGit = tFGit, tfsOnPrem = tfsOnPrem, tfvc = tfvc, xamlBuild = xamlBuild)
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], externalTfsBuild = externalTfsBuild.asInstanceOf[js.Any], fileShare = fileShare.asInstanceOf[js.Any], gitHub = gitHub.asInstanceOf[js.Any], jenkins = jenkins.asInstanceOf[js.Any], nuget = nuget.asInstanceOf[js.Any], tFGit = tFGit.asInstanceOf[js.Any], tfsOnPrem = tfsOnPrem.asInstanceOf[js.Any], tfvc = tfvc.asInstanceOf[js.Any], xamlBuild = xamlBuild.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BuildCustom]
   }

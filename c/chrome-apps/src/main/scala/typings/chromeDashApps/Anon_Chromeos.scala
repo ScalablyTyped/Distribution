@@ -22,11 +22,11 @@ object Anon_Chromeos {
     windows: String = null
   ): Anon_Chromeos = {
     val __obj = js.Dynamic.literal()
-    if (chromeos != null) __obj.updateDynamic("chromeos")(chromeos)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (linux != null) __obj.updateDynamic("linux")(linux)
-    if (mac != null) __obj.updateDynamic("mac")(mac)
-    if (windows != null) __obj.updateDynamic("windows")(windows)
+    if (chromeos != null) __obj.updateDynamic("chromeos")(chromeos.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (linux != null) __obj.updateDynamic("linux")(linux.asInstanceOf[js.Any])
+    if (mac != null) __obj.updateDynamic("mac")(mac.asInstanceOf[js.Any])
+    if (windows != null) __obj.updateDynamic("windows")(windows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Chromeos]
   }
 }

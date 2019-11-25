@@ -13,7 +13,7 @@ trait OutgoingAckRequest extends js.Object {
 object OutgoingAckRequest {
   @scala.inline
   def apply(message: OutgoingRequestMessage): OutgoingAckRequest = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutgoingAckRequest]
   }

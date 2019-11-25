@@ -22,8 +22,8 @@ object Anon_Id {
   @scala.inline
   def apply(id: String = null, idempotency_key: String = null): Anon_Id = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (idempotency_key != null) __obj.updateDynamic("idempotency_key")(idempotency_key)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (idempotency_key != null) __obj.updateDynamic("idempotency_key")(idempotency_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Id]
   }
 }

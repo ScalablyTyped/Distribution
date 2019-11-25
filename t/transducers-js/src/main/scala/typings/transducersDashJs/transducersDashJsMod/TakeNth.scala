@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("transducers-js", "TakeNth")
 @js.native
-class TakeNth[TResult, TInput] protected () extends Transformer[TResult, TInput] {
+class TakeNth[TResult, TInput] protected () extends CompletingTransformer[TResult, TResult, TInput] {
   def this(n: Double, xf: Transformer[TResult, TInput]) = this()
   /* CompleteClass */
   override def `@@transducer/init`(): TResult | Unit = js.native

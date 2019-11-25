@@ -23,7 +23,7 @@ object ProduceRequest {
     key: String | Buffer = null,
     partition: Int | Double = null
   ): ProduceRequest = {
-    val __obj = js.Dynamic.literal(messages = messages, topic = topic)
+    val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])

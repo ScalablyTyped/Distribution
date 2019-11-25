@@ -19,8 +19,8 @@ object MonthChangedEventUIParam {
   @scala.inline
   def apply(newSelectedDate: js.Any = null, owner: js.Any = null): MonthChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (newSelectedDate != null) __obj.updateDynamic("newSelectedDate")(newSelectedDate)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (newSelectedDate != null) __obj.updateDynamic("newSelectedDate")(newSelectedDate.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonthChangedEventUIParam]
   }
 }

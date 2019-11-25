@@ -13,7 +13,7 @@ object ICardPresentPaymentMethodDetails {
   @scala.inline
   def apply(`type`: card_present): ICardPresentPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICardPresentPaymentMethodDetails]
   }
 }

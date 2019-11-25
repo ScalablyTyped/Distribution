@@ -24,8 +24,8 @@ object Signature {
     toSchema: () => js.Any,
     certs: js.Array[typings.pkijs.srcCertificateMod.default] = null
   ): Signature = {
-    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), signature = signature, signatureAlgorithm = signatureAlgorithm, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (certs != null) __obj.updateDynamic("certs")(certs)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), signature = signature.asInstanceOf[js.Any], signatureAlgorithm = signatureAlgorithm.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    if (certs != null) __obj.updateDynamic("certs")(certs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Signature]
   }
 }

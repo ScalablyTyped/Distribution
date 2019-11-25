@@ -36,17 +36,17 @@ object IGlobalMessageOptions {
     verticalSpacing: Int | Double = null
   ): IGlobalMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (horizontalSpacing != null) __obj.updateDynamic("horizontalSpacing")(horizontalSpacing.asInstanceOf[js.Any])
     if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (positionX != null) __obj.updateDynamic("positionX")(positionX)
-    if (positionY != null) __obj.updateDynamic("positionY")(positionY)
-    if (!js.isUndefined(replaceMessage)) __obj.updateDynamic("replaceMessage")(replaceMessage)
+    if (positionX != null) __obj.updateDynamic("positionX")(positionX.asInstanceOf[js.Any])
+    if (positionY != null) __obj.updateDynamic("positionY")(positionY.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceMessage)) __obj.updateDynamic("replaceMessage")(replaceMessage.asInstanceOf[js.Any])
     if (startRight != null) __obj.updateDynamic("startRight")(startRight.asInstanceOf[js.Any])
     if (startTop != null) __obj.updateDynamic("startTop")(startTop.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     if (verticalSpacing != null) __obj.updateDynamic("verticalSpacing")(verticalSpacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGlobalMessageOptions]
   }

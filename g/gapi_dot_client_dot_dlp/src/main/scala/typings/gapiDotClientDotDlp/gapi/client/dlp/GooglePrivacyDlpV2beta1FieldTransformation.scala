@@ -37,10 +37,10 @@ object GooglePrivacyDlpV2beta1FieldTransformation {
     primitiveTransformation: GooglePrivacyDlpV2beta1PrimitiveTransformation = null
   ): GooglePrivacyDlpV2beta1FieldTransformation = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (infoTypeTransformations != null) __obj.updateDynamic("infoTypeTransformations")(infoTypeTransformations)
-    if (primitiveTransformation != null) __obj.updateDynamic("primitiveTransformation")(primitiveTransformation)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (infoTypeTransformations != null) __obj.updateDynamic("infoTypeTransformations")(infoTypeTransformations.asInstanceOf[js.Any])
+    if (primitiveTransformation != null) __obj.updateDynamic("primitiveTransformation")(primitiveTransformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1FieldTransformation]
   }
 }

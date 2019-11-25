@@ -13,7 +13,7 @@ trait RunResult extends js.Object {
 object RunResult {
   @scala.inline
   def apply(changes: Double, lastInsertRowid: IntLike): RunResult = {
-    val __obj = js.Dynamic.literal(changes = changes, lastInsertRowid = lastInsertRowid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], lastInsertRowid = lastInsertRowid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RunResult]
   }

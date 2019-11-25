@@ -89,13 +89,5 @@ object Diff extends js.Object {
     oldTree: typings.nodegit.treeMod.Tree,
     opts: DiffOptions
   ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
-  type DELTA = typings.nodegit.diffMod.Diff.DELTA
-  type FIND = typings.nodegit.diffMod.Diff.FIND
-  type FLAG = typings.nodegit.diffMod.Diff.FLAG
-  type FORMAT = typings.nodegit.diffMod.Diff.FORMAT
-  type FORMAT_EMAIL_FLAGS = typings.nodegit.diffMod.Diff.FORMAT_EMAIL_FLAGS
-  type LINE = typings.nodegit.diffMod.Diff.LINE
-  type OPTION = typings.nodegit.diffMod.Diff.OPTION
-  type STATS_FORMAT = typings.nodegit.diffMod.Diff.STATS_FORMAT
 }
 

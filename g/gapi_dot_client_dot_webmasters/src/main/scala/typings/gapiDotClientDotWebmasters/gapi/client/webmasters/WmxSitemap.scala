@@ -39,15 +39,15 @@ object WmxSitemap {
     warnings: String = null
   ): WmxSitemap = {
     val __obj = js.Dynamic.literal()
-    if (contents != null) __obj.updateDynamic("contents")(contents)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (!js.isUndefined(isPending)) __obj.updateDynamic("isPending")(isPending)
-    if (!js.isUndefined(isSitemapsIndex)) __obj.updateDynamic("isSitemapsIndex")(isSitemapsIndex)
-    if (lastDownloaded != null) __obj.updateDynamic("lastDownloaded")(lastDownloaded)
-    if (lastSubmitted != null) __obj.updateDynamic("lastSubmitted")(lastSubmitted)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPending)) __obj.updateDynamic("isPending")(isPending.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSitemapsIndex)) __obj.updateDynamic("isSitemapsIndex")(isSitemapsIndex.asInstanceOf[js.Any])
+    if (lastDownloaded != null) __obj.updateDynamic("lastDownloaded")(lastDownloaded.asInstanceOf[js.Any])
+    if (lastSubmitted != null) __obj.updateDynamic("lastSubmitted")(lastSubmitted.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[WmxSitemap]
   }
 }

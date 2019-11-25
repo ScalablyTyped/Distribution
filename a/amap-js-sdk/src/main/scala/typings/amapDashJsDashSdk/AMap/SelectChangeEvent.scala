@@ -16,8 +16,8 @@ trait SelectChangeEvent extends js.Object {
 object SelectChangeEvent {
   @scala.inline
   def apply(data: Poi, id: String, listElement: HTMLLIElement, marker: Marker, `type`: String): SelectChangeEvent = {
-    val __obj = js.Dynamic.literal(data = data, id = id, listElement = listElement, marker = marker)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], listElement = listElement.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectChangeEvent]
   }
 }

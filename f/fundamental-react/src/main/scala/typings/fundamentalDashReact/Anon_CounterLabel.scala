@@ -12,7 +12,7 @@ trait Anon_CounterLabel extends js.Object {
 object Anon_CounterLabel {
   @scala.inline
   def apply(counterLabel: String): Anon_CounterLabel = {
-    val __obj = js.Dynamic.literal(counterLabel = counterLabel)
+    val __obj = js.Dynamic.literal(counterLabel = counterLabel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CounterLabel]
   }

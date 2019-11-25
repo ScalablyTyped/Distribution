@@ -35,13 +35,13 @@ object SelectListProps {
     placeholder: String = null,
     value: String = null
   ): SelectListProps = {
-    val __obj = js.Dynamic.literal(id = id, onChange = js.Any.fromFunction1(onChange), options = options)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), options = options.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (idealErrorDirection != null) __obj.updateDynamic("idealErrorDirection")(idealErrorDirection.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectListProps]
   }
 }

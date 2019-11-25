@@ -4,7 +4,7 @@ import typings.scanf.scanfStrings.`%S`
 import typings.scanf.scanfStrings.`%d`
 import typings.scanf.scanfStrings.`%f`
 import typings.scanf.scanfStrings.`%o`
-import typings.scanf.scanfStrings.`%s`
+import typings.scanf.scanfStrings.`%s_`
 import typings.scanf.scanfStrings.`%x`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -80,7 +80,7 @@ object scanfMod extends js.Object {
   	 * @param format The format represents a word.
   	 * @return A word.
   	 */
-  def apply(format: `%s`): String = js.native
+  def apply(format: `%s_`): String = js.native
   /**
   	 * <p> Read formatted hex from stdin. </p>
   	 * 
@@ -172,7 +172,7 @@ object scanfMod extends js.Object {
   		 * @return A word.
   		 */
   @JSName("sscanf")
-  def sscanf_s(source: String, format: `%s`): String = js.native
+  def sscanf_s(source: String, format: `%s_`): String = js.native
   /**
   		 * <p> Read formatted hex from string. </p>
   		 * 

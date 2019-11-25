@@ -15,8 +15,8 @@ object Entry {
   @scala.inline
   def apply(annotation: Annotation = null, status: Status = null): Entry = {
     val __obj = js.Dynamic.literal()
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entry]
   }
 }

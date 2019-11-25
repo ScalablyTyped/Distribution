@@ -56,16 +56,16 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrintProject {
     sourceImage: String = null,
     userIp: String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrintProject = {
-    val __obj = js.Dynamic.literal(project = project, zone = zone)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
-    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
+    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltFieldsKeyOauthtokenPrettyPrintProject]
   }
 }

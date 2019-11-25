@@ -67,17 +67,17 @@ object Locale {
     weekLabel: String = null
   ): Locale = {
     val __obj = js.Dynamic.literal()
-    if (applyLabel != null) __obj.updateDynamic("applyLabel")(applyLabel)
-    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
-    if (customRangeLabel != null) __obj.updateDynamic("customRangeLabel")(customRangeLabel)
-    if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek)
+    if (applyLabel != null) __obj.updateDynamic("applyLabel")(applyLabel.asInstanceOf[js.Any])
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
+    if (customRangeLabel != null) __obj.updateDynamic("customRangeLabel")(customRangeLabel.asInstanceOf[js.Any])
+    if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek.asInstanceOf[js.Any])
     if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (fromLabel != null) __obj.updateDynamic("fromLabel")(fromLabel)
-    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (toLabel != null) __obj.updateDynamic("toLabel")(toLabel)
-    if (weekLabel != null) __obj.updateDynamic("weekLabel")(weekLabel)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (fromLabel != null) __obj.updateDynamic("fromLabel")(fromLabel.asInstanceOf[js.Any])
+    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (toLabel != null) __obj.updateDynamic("toLabel")(toLabel.asInstanceOf[js.Any])
+    if (weekLabel != null) __obj.updateDynamic("weekLabel")(weekLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale]
   }
 }

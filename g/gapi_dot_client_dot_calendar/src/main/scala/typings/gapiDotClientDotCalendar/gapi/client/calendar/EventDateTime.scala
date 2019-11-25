@@ -24,9 +24,9 @@ object EventDateTime {
   @scala.inline
   def apply(date: String = null, dateTime: String = null, timeZone: String = null): EventDateTime = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventDateTime]
   }
 }

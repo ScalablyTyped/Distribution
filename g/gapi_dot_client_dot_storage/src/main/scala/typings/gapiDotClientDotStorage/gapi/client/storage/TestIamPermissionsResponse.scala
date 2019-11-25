@@ -32,8 +32,8 @@ object TestIamPermissionsResponse {
   @scala.inline
   def apply(kind: String = null, permissions: js.Array[String] = null): TestIamPermissionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestIamPermissionsResponse]
   }
 }

@@ -13,9 +13,9 @@ trait AssertionResult extends js.Object {
 object AssertionResult {
   @scala.inline
   def apply(passed: Boolean, errorMsg: String = null, stackTrace: String = null): AssertionResult = {
-    val __obj = js.Dynamic.literal(passed = passed)
-    if (errorMsg != null) __obj.updateDynamic("errorMsg")(errorMsg)
-    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
+    val __obj = js.Dynamic.literal(passed = passed.asInstanceOf[js.Any])
+    if (errorMsg != null) __obj.updateDynamic("errorMsg")(errorMsg.asInstanceOf[js.Any])
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertionResult]
   }
 }

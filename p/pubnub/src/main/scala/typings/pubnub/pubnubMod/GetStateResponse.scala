@@ -12,7 +12,7 @@ trait GetStateResponse extends js.Object {
 object GetStateResponse {
   @scala.inline
   def apply(channels: StringDictionary[js.Any]): GetStateResponse = {
-    val __obj = js.Dynamic.literal(channels = channels)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetStateResponse]
   }

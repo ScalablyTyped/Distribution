@@ -40,20 +40,20 @@ trait Anon_Default extends js.Object {
   def apply[ValueType](
     fn: js.Function1[
       /* previousValue */ js.UndefOr[ValueType], 
-      ValueType | js.Thenable[ValueType] | (/* import warning: ImportType.apply Failed type conversion: typeof pForever.end */ js.Any)
+      ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ]
   ): js.Promise[Unit] = js.native
   def apply[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
-      ValueType | js.Thenable[ValueType] | (/* import warning: ImportType.apply Failed type conversion: typeof pForever.end */ js.Any)
+      ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ],
     initialValue: ValueType
   ): js.Promise[Unit] = js.native
   def apply[ValueType](
     fn: js.Function1[
       /* previousValue */ ValueType, 
-      ValueType | js.Thenable[ValueType] | (/* import warning: ImportType.apply Failed type conversion: typeof pForever.end */ js.Any)
+      ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
     ],
     initialValue: js.Thenable[ValueType]
   ): js.Promise[Unit] = js.native

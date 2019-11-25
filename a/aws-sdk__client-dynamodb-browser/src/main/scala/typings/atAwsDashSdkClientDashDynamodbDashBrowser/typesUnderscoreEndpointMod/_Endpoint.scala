@@ -18,7 +18,7 @@ trait _Endpoint extends js.Object {
 object _Endpoint {
   @scala.inline
   def apply(Address: String, CachePeriodInMinutes: Double): _Endpoint = {
-    val __obj = js.Dynamic.literal(Address = Address, CachePeriodInMinutes = CachePeriodInMinutes)
+    val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], CachePeriodInMinutes = CachePeriodInMinutes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Endpoint]
   }

@@ -40,21 +40,21 @@ object RTCIceCandidatePairStats {
     transportId: java.lang.String = null,
     writable: js.UndefOr[scala.Boolean] = js.undefined
   ): RTCIceCandidatePairStats = {
-    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (availableIncomingBitrate != null) __obj.updateDynamic("availableIncomingBitrate")(availableIncomingBitrate.asInstanceOf[js.Any])
     if (availableOutgoingBitrate != null) __obj.updateDynamic("availableOutgoingBitrate")(availableOutgoingBitrate.asInstanceOf[js.Any])
     if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
     if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
-    if (localCandidateId != null) __obj.updateDynamic("localCandidateId")(localCandidateId)
-    if (!js.isUndefined(nominated)) __obj.updateDynamic("nominated")(nominated)
+    if (localCandidateId != null) __obj.updateDynamic("localCandidateId")(localCandidateId.asInstanceOf[js.Any])
+    if (!js.isUndefined(nominated)) __obj.updateDynamic("nominated")(nominated.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
-    if (remoteCandidateId != null) __obj.updateDynamic("remoteCandidateId")(remoteCandidateId)
+    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
+    if (remoteCandidateId != null) __obj.updateDynamic("remoteCandidateId")(remoteCandidateId.asInstanceOf[js.Any])
     if (roundTripTime != null) __obj.updateDynamic("roundTripTime")(roundTripTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (transportId != null) __obj.updateDynamic("transportId")(transportId)
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (transportId != null) __obj.updateDynamic("transportId")(transportId.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceCandidatePairStats]
   }
 }

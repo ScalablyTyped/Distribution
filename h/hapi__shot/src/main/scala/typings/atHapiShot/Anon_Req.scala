@@ -16,7 +16,7 @@ trait Anon_Req extends js.Object {
 object Anon_Req {
   @scala.inline
   def apply(req: SimulatedRequestObject, res: SimulatedResponseObject): Anon_Req = {
-    val __obj = js.Dynamic.literal(req = req, res = res)
+    val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Req]
   }

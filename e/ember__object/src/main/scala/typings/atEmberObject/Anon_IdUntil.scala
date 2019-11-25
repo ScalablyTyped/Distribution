@@ -13,8 +13,8 @@ object Anon_IdUntil {
   @scala.inline
   def apply(id: String = null, until: String = null): Anon_IdUntil = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (until != null) __obj.updateDynamic("until")(until)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdUntil]
   }
 }

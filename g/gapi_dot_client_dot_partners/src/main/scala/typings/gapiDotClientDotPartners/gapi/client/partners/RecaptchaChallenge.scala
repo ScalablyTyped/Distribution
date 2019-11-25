@@ -15,8 +15,8 @@ object RecaptchaChallenge {
   @scala.inline
   def apply(id: String = null, response: String = null): RecaptchaChallenge = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecaptchaChallenge]
   }
 }

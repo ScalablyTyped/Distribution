@@ -15,7 +15,7 @@ object Anon_ItemStyleAnonBorderColorBorderType {
   @scala.inline
   def apply(itemStyle: Anon_BorderColorBorderType = null): Anon_ItemStyleAnonBorderColorBorderType = {
     val __obj = js.Dynamic.literal()
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ItemStyleAnonBorderColorBorderType]
   }
 }

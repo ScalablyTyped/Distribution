@@ -3,7 +3,7 @@ package typings.chromeDashApps.chrome.syncFileSystem
 import typings.chromeDashApps.Anon_AUTHENTICATIONREQUIRED
 import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chromeDashAppsStrings.authentication_required
-import typings.chromeDashApps.chromeDashAppsStrings.disabled
+import typings.chromeDashApps.chromeDashAppsStrings.disabled_
 import typings.chromeDashApps.chromeDashAppsStrings.initializing
 import typings.chromeDashApps.chromeDashAppsStrings.running
 import typings.chromeDashApps.chromeDashAppsStrings.temporary_unavailable
@@ -28,7 +28,7 @@ object getServiceStatus extends js.Object {
         String, 
         Exclude[
           String, 
-          initializing | running | temporary_unavailable | authentication_required | disabled
+          initializing | running | temporary_unavailable | authentication_required | disabled_
         ]
       ], 
       Unit

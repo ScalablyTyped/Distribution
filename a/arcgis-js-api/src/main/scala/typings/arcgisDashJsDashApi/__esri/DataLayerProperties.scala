@@ -67,11 +67,11 @@ object DataLayerProperties {
     where: String = null
   ): DataLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLayerProperties]
   }
 }

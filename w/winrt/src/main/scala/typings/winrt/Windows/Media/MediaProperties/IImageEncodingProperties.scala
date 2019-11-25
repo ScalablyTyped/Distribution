@@ -12,8 +12,8 @@ trait IImageEncodingProperties extends IMediaEncodingProperties {
 object IImageEncodingProperties {
   @scala.inline
   def apply(height: Double, properties: MediaPropertySet, subtype: String, `type`: String, width: Double): IImageEncodingProperties = {
-    val __obj = js.Dynamic.literal(height = height, properties = properties, subtype = subtype, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImageEncodingProperties]
   }
 }

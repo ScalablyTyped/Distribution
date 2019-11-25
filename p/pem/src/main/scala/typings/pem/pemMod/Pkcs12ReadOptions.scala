@@ -13,8 +13,8 @@ object Pkcs12ReadOptions {
   @scala.inline
   def apply(clientKeyPassword: String = null, p12Password: String = null): Pkcs12ReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientKeyPassword != null) __obj.updateDynamic("clientKeyPassword")(clientKeyPassword)
-    if (p12Password != null) __obj.updateDynamic("p12Password")(p12Password)
+    if (clientKeyPassword != null) __obj.updateDynamic("clientKeyPassword")(clientKeyPassword.asInstanceOf[js.Any])
+    if (p12Password != null) __obj.updateDynamic("p12Password")(p12Password.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pkcs12ReadOptions]
   }
 }

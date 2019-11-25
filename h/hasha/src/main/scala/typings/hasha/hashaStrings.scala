@@ -8,16 +8,22 @@ import scala.scalajs.js.annotation._
 
 object hashaStrings {
   @js.native
-  sealed trait base64 extends ToStringEncoding
+  sealed trait base64
+    extends HashaEncoding
+       with ToStringEncoding
   
   @js.native
   sealed trait buffer extends HashaEncoding
   
   @js.native
-  sealed trait hex extends ToStringEncoding
+  sealed trait hex
+    extends HashaEncoding
+       with ToStringEncoding
   
   @js.native
-  sealed trait latin1 extends ToStringEncoding
+  sealed trait latin1
+    extends HashaEncoding
+       with ToStringEncoding
   
   @js.native
   sealed trait md5 extends js.Object

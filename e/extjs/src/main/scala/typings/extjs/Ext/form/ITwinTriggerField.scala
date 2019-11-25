@@ -52,21 +52,14 @@ object ITwinTriggerField {
   @scala.inline
   def apply(
     IText: typings.extjs.Ext.form.field.IText = null,
-    componentLayout: js.Any = null,
     editable: js.UndefOr[Boolean] = js.undefined,
     getLabelableRenderData: () => _ = null,
-    getSubTplData: () => _ = null,
     getTriggerWidth: () => Double = null,
     hideTrigger: js.UndefOr[Boolean] = js.undefined,
-    initComponent: () => Unit = null,
     inputCell: IElement = null,
-    onRender: () => Unit = null,
     onTriggerClick: /* e */ js.UndefOr[IEventObject] => Unit = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
     repeatTriggerClick: js.UndefOr[Boolean] = js.undefined,
-    selectOnFocus: js.UndefOr[Boolean] = js.undefined,
     setEditable: /* editable */ js.UndefOr[Boolean] => Unit = null,
-    setReadOnly: /* readOnly */ js.UndefOr[Boolean] => Unit = null,
     triggerBaseCls: java.lang.String = null,
     triggerCls: java.lang.String = null,
     triggerEl: ICompositeElement = null,
@@ -75,28 +68,21 @@ object ITwinTriggerField {
     triggerWrapCls: java.lang.String = null
   ): ITwinTriggerField = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IText)
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (getLabelableRenderData != null) __obj.updateDynamic("getLabelableRenderData")(js.Any.fromFunction0(getLabelableRenderData))
-    if (getSubTplData != null) __obj.updateDynamic("getSubTplData")(js.Any.fromFunction0(getSubTplData))
     if (getTriggerWidth != null) __obj.updateDynamic("getTriggerWidth")(js.Any.fromFunction0(getTriggerWidth))
-    if (!js.isUndefined(hideTrigger)) __obj.updateDynamic("hideTrigger")(hideTrigger)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (inputCell != null) __obj.updateDynamic("inputCell")(inputCell)
-    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
+    if (!js.isUndefined(hideTrigger)) __obj.updateDynamic("hideTrigger")(hideTrigger.asInstanceOf[js.Any])
+    if (inputCell != null) __obj.updateDynamic("inputCell")(inputCell.asInstanceOf[js.Any])
     if (onTriggerClick != null) __obj.updateDynamic("onTriggerClick")(js.Any.fromFunction1(onTriggerClick))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (!js.isUndefined(repeatTriggerClick)) __obj.updateDynamic("repeatTriggerClick")(repeatTriggerClick)
-    if (!js.isUndefined(selectOnFocus)) __obj.updateDynamic("selectOnFocus")(selectOnFocus)
+    if (!js.isUndefined(repeatTriggerClick)) __obj.updateDynamic("repeatTriggerClick")(repeatTriggerClick.asInstanceOf[js.Any])
     if (setEditable != null) __obj.updateDynamic("setEditable")(js.Any.fromFunction1(setEditable))
-    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(js.Any.fromFunction1(setReadOnly))
-    if (triggerBaseCls != null) __obj.updateDynamic("triggerBaseCls")(triggerBaseCls)
-    if (triggerCls != null) __obj.updateDynamic("triggerCls")(triggerCls)
-    if (triggerEl != null) __obj.updateDynamic("triggerEl")(triggerEl)
-    if (triggerNoEditCls != null) __obj.updateDynamic("triggerNoEditCls")(triggerNoEditCls)
-    if (triggerWrap != null) __obj.updateDynamic("triggerWrap")(triggerWrap)
-    if (triggerWrapCls != null) __obj.updateDynamic("triggerWrapCls")(triggerWrapCls)
+    if (triggerBaseCls != null) __obj.updateDynamic("triggerBaseCls")(triggerBaseCls.asInstanceOf[js.Any])
+    if (triggerCls != null) __obj.updateDynamic("triggerCls")(triggerCls.asInstanceOf[js.Any])
+    if (triggerEl != null) __obj.updateDynamic("triggerEl")(triggerEl.asInstanceOf[js.Any])
+    if (triggerNoEditCls != null) __obj.updateDynamic("triggerNoEditCls")(triggerNoEditCls.asInstanceOf[js.Any])
+    if (triggerWrap != null) __obj.updateDynamic("triggerWrap")(triggerWrap.asInstanceOf[js.Any])
+    if (triggerWrapCls != null) __obj.updateDynamic("triggerWrapCls")(triggerWrapCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITwinTriggerField]
   }
 }

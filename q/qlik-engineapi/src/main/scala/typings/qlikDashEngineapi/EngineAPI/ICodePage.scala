@@ -25,7 +25,7 @@ trait ICodePage extends js.Object {
 object ICodePage {
   @scala.inline
   def apply(qDescription: String, qName: String, qNumber: Double): ICodePage = {
-    val __obj = js.Dynamic.literal(qDescription = qDescription, qName = qName, qNumber = qNumber)
+    val __obj = js.Dynamic.literal(qDescription = qDescription.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qNumber = qNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICodePage]
   }

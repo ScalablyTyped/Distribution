@@ -19,8 +19,8 @@ object InstanceConfig {
   @scala.inline
   def apply(displayName: String = null, name: String = null): InstanceConfig = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceConfig]
   }
 }

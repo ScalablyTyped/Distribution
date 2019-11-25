@@ -12,8 +12,8 @@ trait button extends js.Object {
 object button {
   @scala.inline
   def apply(label: String, disabled: js.UndefOr[Boolean] = js.undefined): button = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[button]
   }
 }

@@ -15,7 +15,7 @@ object XHRFields {
   @scala.inline
   def apply(msCaching: String = null): XHRFields = {
     val __obj = js.Dynamic.literal()
-    if (msCaching != null) __obj.updateDynamic("msCaching")(msCaching)
+    if (msCaching != null) __obj.updateDynamic("msCaching")(msCaching.asInstanceOf[js.Any])
     __obj.asInstanceOf[XHRFields]
   }
 }

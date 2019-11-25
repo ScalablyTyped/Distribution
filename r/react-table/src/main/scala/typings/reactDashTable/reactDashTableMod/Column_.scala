@@ -73,11 +73,11 @@ object Column_ {
     val __obj = js.Dynamic.literal()
     if (accessor != null) __obj.updateDynamic("accessor")(accessor.asInstanceOf[js.Any])
     if (aggregate != null) __obj.updateDynamic("aggregate")(js.Any.fromFunction2(aggregate))
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (!js.isUndefined(expander)) __obj.updateDynamic("expander")(expander)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(expander)) __obj.updateDynamic("expander")(expander.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(pivot)) __obj.updateDynamic("pivot")(pivot)
+    if (!js.isUndefined(pivot)) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column_[D]]
   }

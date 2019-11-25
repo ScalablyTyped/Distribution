@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "temp-dir"
-version := "2.0.0-db20d1"
+version := "2.0.0-b11929"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

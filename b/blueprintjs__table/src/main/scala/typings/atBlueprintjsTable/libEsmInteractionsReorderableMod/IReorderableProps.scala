@@ -51,7 +51,7 @@ object IReorderableProps {
     selectedRegions: js.Array[IRegion] = null
   ): IReorderableProps = {
     val __obj = js.Dynamic.literal(onFocusedCell = js.Any.fromFunction1(onFocusedCell), onReordered = js.Any.fromFunction3(onReordered), onReordering = js.Any.fromFunction3(onReordering), onSelection = js.Any.fromFunction1(onSelection))
-    if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions)
+    if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReorderableProps]
   }
 }

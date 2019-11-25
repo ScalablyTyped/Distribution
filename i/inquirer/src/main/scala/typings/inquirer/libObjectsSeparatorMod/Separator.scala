@@ -24,9 +24,10 @@ import scala.scalajs.js.annotation._
 
 object Separator {
   @scala.inline
-  def apply(line: String, `type`: separator): Separator = {
-    val __obj = js.Dynamic.literal(line = line)
-    __obj.updateDynamic("type")(`type`)
+  def apply(`type`: separator, line: String = null): Separator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[Separator]
   }
 }

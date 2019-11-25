@@ -12,7 +12,7 @@ object DiagramConnectionSelection {
   @scala.inline
   def apply(handles: DiagramConnectionSelectionHandles = null): DiagramConnectionSelection = {
     val __obj = js.Dynamic.literal()
-    if (handles != null) __obj.updateDynamic("handles")(handles)
+    if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramConnectionSelection]
   }
 }

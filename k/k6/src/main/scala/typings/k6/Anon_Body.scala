@@ -28,7 +28,7 @@ object Anon_Body {
     method: String,
     url: String
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body, cookies = cookies, headers = headers, method = method, url = url)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Body]
   }

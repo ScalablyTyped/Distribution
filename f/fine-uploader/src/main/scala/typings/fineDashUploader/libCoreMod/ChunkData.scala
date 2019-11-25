@@ -26,7 +26,7 @@ trait ChunkData extends js.Object {
 object ChunkData {
   @scala.inline
   def apply(endByte: Double, partIndex: Double, startByte: Double, totalParts: Double): ChunkData = {
-    val __obj = js.Dynamic.literal(endByte = endByte, partIndex = partIndex, startByte = startByte, totalParts = totalParts)
+    val __obj = js.Dynamic.literal(endByte = endByte.asInstanceOf[js.Any], partIndex = partIndex.asInstanceOf[js.Any], startByte = startByte.asInstanceOf[js.Any], totalParts = totalParts.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChunkData]
   }

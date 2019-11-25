@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Sources extends js.Object
 
+object Sources {
+  @scala.inline
+  def api: typings.quill.quillStrings.api = this.cast("api")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def silent: typings.quill.quillStrings.silent = this.cast("silent")
+  @scala.inline
+  def user: typings.quill.quillStrings.user = this.cast("user")
+}
+

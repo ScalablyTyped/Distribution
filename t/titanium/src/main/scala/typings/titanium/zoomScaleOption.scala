@@ -18,7 +18,7 @@ object zoomScaleOption {
   @scala.inline
   def apply(animated: js.UndefOr[Boolean] = js.undefined): zoomScaleOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     __obj.asInstanceOf[zoomScaleOption]
   }
 }

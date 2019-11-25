@@ -33,13 +33,13 @@ object ImageVectorOptions {
     resolutions: js.Array[Double] = null,
     style: Style | js.Array[Style] | StyleFunction = null
   ): ImageVectorOptions = {
-    val __obj = js.Dynamic.literal(source = source)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
     if (renderBuffer != null) __obj.updateDynamic("renderBuffer")(renderBuffer.asInstanceOf[js.Any])
-    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)
+    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageVectorOptions]
   }

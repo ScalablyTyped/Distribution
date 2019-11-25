@@ -12,7 +12,7 @@ object Anon_AriaIndeterminateProgressText {
   @scala.inline
   def apply(ariaIndeterminateProgressText: String = null): Anon_AriaIndeterminateProgressText = {
     val __obj = js.Dynamic.literal()
-    if (ariaIndeterminateProgressText != null) __obj.updateDynamic("ariaIndeterminateProgressText")(ariaIndeterminateProgressText)
+    if (ariaIndeterminateProgressText != null) __obj.updateDynamic("ariaIndeterminateProgressText")(ariaIndeterminateProgressText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AriaIndeterminateProgressText]
   }
 }

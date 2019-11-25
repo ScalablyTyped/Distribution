@@ -40,7 +40,7 @@ package object styledDashComponentsMod {
   // If declared props have indexed properties, ignore default props entirely as keyof gets widened
   // Wrap in an outer-level conditional type to allow distribution over props that are unions
   type Defaultize[P, D] = ((Pick[P, Exclude[String, String]]) with (Partial[Pick[P, Extract[String, String]]]) with (Partial[Pick[D, Exclude[String, String]]])) | P
-  type DeprecatedAttrs[P, A /* <: Partial[P] */, T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type DeprecatedAttrs[P, A /* <: Partial[P] */, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: (props : styled-components.styled-components.ThemedStyledProps<P, T>): A[K] | A[K]}
     */ typings.styledDashComponents.styledDashComponentsStrings.DeprecatedAttrs with js.Any
   type FalseyValue = js.UndefOr[Null | `false`]

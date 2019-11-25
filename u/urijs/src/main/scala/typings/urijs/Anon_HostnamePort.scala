@@ -13,8 +13,8 @@ object Anon_HostnamePort {
   @scala.inline
   def apply(hostname: String = null, port: String = null): Anon_HostnamePort = {
     val __obj = js.Dynamic.literal()
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (port != null) __obj.updateDynamic("port")(port)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HostnamePort]
   }
 }

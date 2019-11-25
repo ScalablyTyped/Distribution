@@ -22,9 +22,9 @@ object AsarOptions {
     smartUnpack: js.UndefOr[Boolean] = js.undefined
   ): AsarOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(externalAllowed)) __obj.updateDynamic("externalAllowed")(externalAllowed)
-    if (ordering != null) __obj.updateDynamic("ordering")(ordering)
-    if (!js.isUndefined(smartUnpack)) __obj.updateDynamic("smartUnpack")(smartUnpack)
+    if (!js.isUndefined(externalAllowed)) __obj.updateDynamic("externalAllowed")(externalAllowed.asInstanceOf[js.Any])
+    if (ordering != null) __obj.updateDynamic("ordering")(ordering.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartUnpack)) __obj.updateDynamic("smartUnpack")(smartUnpack.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsarOptions]
   }
 }

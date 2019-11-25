@@ -35,15 +35,15 @@ object Options {
     version: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`case`)) __obj.updateDynamic("case")(`case`)
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
-    if (preid != null) __obj.updateDynamic("preid")(preid)
-    if (regex != null) __obj.updateDynamic("regex")(regex)
-    if (str != null) __obj.updateDynamic("str")(str)
+    if (!js.isUndefined(`case`)) __obj.updateDynamic("case")(`case`.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    if (preid != null) __obj.updateDynamic("preid")(preid.asInstanceOf[js.Any])
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
+    if (str != null) __obj.updateDynamic("str")(str.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

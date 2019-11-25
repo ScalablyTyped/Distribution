@@ -62,7 +62,7 @@ object Typeofurlbar {
     onResultsRequested: _UrlbarOnResultsRequestedEvent[js.Function1[/* query */ Query, js.Array[Result]]],
     openViewOnFocus: Setting
   ): Typeofurlbar = {
-    val __obj = js.Dynamic.literal(contextualTip = contextualTip, engagementTelemetry = engagementTelemetry, onBehaviorRequested = onBehaviorRequested, onQueryCanceled = onQueryCanceled, onResultsRequested = onResultsRequested, openViewOnFocus = openViewOnFocus)
+    val __obj = js.Dynamic.literal(contextualTip = contextualTip.asInstanceOf[js.Any], engagementTelemetry = engagementTelemetry.asInstanceOf[js.Any], onBehaviorRequested = onBehaviorRequested.asInstanceOf[js.Any], onQueryCanceled = onQueryCanceled.asInstanceOf[js.Any], onResultsRequested = onResultsRequested.asInstanceOf[js.Any], openViewOnFocus = openViewOnFocus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofurlbar]
   }

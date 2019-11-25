@@ -18,8 +18,8 @@ object ManagedService {
   @scala.inline
   def apply(producerProjectId: String = null, serviceName: String = null): ManagedService = {
     val __obj = js.Dynamic.literal()
-    if (producerProjectId != null) __obj.updateDynamic("producerProjectId")(producerProjectId)
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    if (producerProjectId != null) __obj.updateDynamic("producerProjectId")(producerProjectId.asInstanceOf[js.Any])
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedService]
   }
 }

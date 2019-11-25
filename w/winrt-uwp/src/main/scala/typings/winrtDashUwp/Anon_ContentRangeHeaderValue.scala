@@ -13,7 +13,7 @@ trait Anon_ContentRangeHeaderValue extends js.Object {
 object Anon_ContentRangeHeaderValue {
   @scala.inline
   def apply(contentRangeHeaderValue: HttpContentRangeHeaderValue, returnValue: Boolean): Anon_ContentRangeHeaderValue = {
-    val __obj = js.Dynamic.literal(contentRangeHeaderValue = contentRangeHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(contentRangeHeaderValue = contentRangeHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentRangeHeaderValue]
   }

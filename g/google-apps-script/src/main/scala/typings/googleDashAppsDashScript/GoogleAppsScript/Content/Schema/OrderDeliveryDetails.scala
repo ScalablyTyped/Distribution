@@ -13,8 +13,8 @@ object OrderDeliveryDetails {
   @scala.inline
   def apply(address: OrderAddress = null, phoneNumber: String = null): OrderDeliveryDetails = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderDeliveryDetails]
   }
 }

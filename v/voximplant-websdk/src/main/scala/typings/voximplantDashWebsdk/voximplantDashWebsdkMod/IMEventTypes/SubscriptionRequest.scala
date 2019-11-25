@@ -31,10 +31,10 @@ trait SubscriptionRequest extends VoxImplantIMEvent {
 object SubscriptionRequest {
   @scala.inline
   def apply(id: String, `type`: SubscriptionRequestType, message: String = null, resource: String = null): SubscriptionRequest = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionRequest]
   }
 }

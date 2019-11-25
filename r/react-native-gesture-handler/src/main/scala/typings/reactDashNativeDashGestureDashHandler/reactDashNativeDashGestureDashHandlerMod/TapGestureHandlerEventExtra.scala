@@ -14,7 +14,7 @@ trait TapGestureHandlerEventExtra extends js.Object {
 object TapGestureHandlerEventExtra {
   @scala.inline
   def apply(absoluteX: Double, absoluteY: Double, x: Double, y: Double): TapGestureHandlerEventExtra = {
-    val __obj = js.Dynamic.literal(absoluteX = absoluteX, absoluteY = absoluteY, x = x, y = y)
+    val __obj = js.Dynamic.literal(absoluteX = absoluteX.asInstanceOf[js.Any], absoluteY = absoluteY.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TapGestureHandlerEventExtra]
   }

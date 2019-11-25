@@ -15,8 +15,8 @@ object AdWordsManagerAccountInfo {
   @scala.inline
   def apply(customerName: String = null, id: String = null): AdWordsManagerAccountInfo = {
     val __obj = js.Dynamic.literal()
-    if (customerName != null) __obj.updateDynamic("customerName")(customerName)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (customerName != null) __obj.updateDynamic("customerName")(customerName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdWordsManagerAccountInfo]
   }
 }

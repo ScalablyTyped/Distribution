@@ -40,7 +40,7 @@ object ConnectionField {
     `type`: GraphQLOutputType,
     metadata: Metadata = null
   ): ConnectionField = {
-    val __obj = js.Dynamic.literal(alias = alias, args = args, directives = directives, kind = kind, label = label, loc = loc, name = name, resolver = resolver, selections = selections)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resolver = resolver.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionField]

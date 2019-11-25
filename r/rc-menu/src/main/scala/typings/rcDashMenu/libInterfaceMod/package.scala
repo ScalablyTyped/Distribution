@@ -30,7 +30,7 @@ package object libInterfaceMod {
     /* event */ js.UndefOr[TransitionEvent[HTMLElement] | AnimationEvent[HTMLElement]], 
     js.UndefOr[CSSProperties | `false` | Null | Unit]
   ]
-  type MotionNameObject = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type MotionNameObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in rc-menu.rc-menu/lib/interface.MotionStatus | rc-menu.rc-menu/lib/interface.MotionActiveStatus ]:? string}
     */ typings.rcDashMenu.rcDashMenuStrings.MotionNameObject with js.Any
   type OpenAnimation = String | (Record[String, js.Any])

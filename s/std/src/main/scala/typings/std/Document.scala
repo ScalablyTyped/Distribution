@@ -157,7 +157,6 @@ import typings.std.stdStrings.slot
 import typings.std.stdStrings.small
 import typings.std.stdStrings.source
 import typings.std.stdStrings.span
-import typings.std.stdStrings.stop
 import typings.std.stdStrings.strong
 import typings.std.stdStrings.style
 import typings.std.stdStrings.sub
@@ -582,7 +581,7 @@ trait Document
   def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: radialGradient): SVGRadialGradientElement = js.native
   def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: rect): SVGRectElement = js.native
   def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: script): SVGScriptElement = js.native
-  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: stop): SVGStopElement = js.native
+  def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: typings.std.stdStrings.stop): SVGStopElement = js.native
   def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: style): SVGStyleElement = js.native
   def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: svg): SVGSVGElement = js.native
   def createElementNS(namespaceURI: `http://wwwDOTw3DOTorg/2000/svg`, qualifiedName: switch): SVGSwitchElement = js.native
@@ -1621,7 +1620,7 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_span(qualifiedName: span): HTMLCollectionOf[HTMLSpanElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_stop(qualifiedName: stop): HTMLCollectionOf[SVGStopElement] = js.native
+  def getElementsByTagName_stop(qualifiedName: typings.std.stdStrings.stop): HTMLCollectionOf[SVGStopElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_strong(qualifiedName: strong): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")

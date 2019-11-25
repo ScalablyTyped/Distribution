@@ -39,7 +39,7 @@ object GetShareInfoOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (shareTicket != null) __obj.updateDynamic("shareTicket")(shareTicket)
+    if (shareTicket != null) __obj.updateDynamic("shareTicket")(shareTicket.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetShareInfoOptions]

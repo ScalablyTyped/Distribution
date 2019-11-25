@@ -22,8 +22,8 @@ object NluEnrichmentSemanticRoles {
     limit: Int | Double = null
   ): NluEnrichmentSemanticRoles = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities)
-    if (!js.isUndefined(keywords)) __obj.updateDynamic("keywords")(keywords)
+    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (!js.isUndefined(keywords)) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[NluEnrichmentSemanticRoles]
   }

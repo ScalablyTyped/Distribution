@@ -27,7 +27,7 @@ object CursorBasedPagingObject {
     next: String,
     total: Int | Double = null
   ): CursorBasedPagingObject[T] = {
-    val __obj = js.Dynamic.literal(cursors = cursors, href = href, items = items, limit = limit, next = next)
+    val __obj = js.Dynamic.literal(cursors = cursors.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorBasedPagingObject[T]]
   }

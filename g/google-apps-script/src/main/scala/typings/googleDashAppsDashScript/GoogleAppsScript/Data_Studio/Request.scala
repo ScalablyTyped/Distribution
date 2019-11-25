@@ -39,7 +39,7 @@ object Request {
     fields: js.Array[Anon_Name],
     scriptParams: ScriptParams
   ): Request[T] = {
-    val __obj = js.Dynamic.literal(configParams = configParams.asInstanceOf[js.Any], dateRange = dateRange, dimensionsFilters = dimensionsFilters, fields = fields, scriptParams = scriptParams)
+    val __obj = js.Dynamic.literal(configParams = configParams.asInstanceOf[js.Any], dateRange = dateRange.asInstanceOf[js.Any], dimensionsFilters = dimensionsFilters.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], scriptParams = scriptParams.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Request[T]]
   }

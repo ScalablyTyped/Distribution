@@ -31,9 +31,9 @@ object CreateStopwordListParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): CreateStopwordListParams = {
-    val __obj = js.Dynamic.literal(collection_id = collection_id, environment_id = environment_id, stopword_file = stopword_file.asInstanceOf[js.Any], stopword_filename = stopword_filename)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any], stopword_file = stopword_file.asInstanceOf[js.Any], stopword_filename = stopword_filename.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStopwordListParams]
   }
 }

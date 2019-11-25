@@ -21,9 +21,9 @@ object RequestAccess {
     kind: String = null
   ): RequestAccess = {
     val __obj = js.Dynamic.literal()
-    if (concurrentAccess != null) __obj.updateDynamic("concurrentAccess")(concurrentAccess)
-    if (downloadAccess != null) __obj.updateDynamic("downloadAccess")(downloadAccess)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (concurrentAccess != null) __obj.updateDynamic("concurrentAccess")(concurrentAccess.asInstanceOf[js.Any])
+    if (downloadAccess != null) __obj.updateDynamic("downloadAccess")(downloadAccess.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestAccess]
   }
 }

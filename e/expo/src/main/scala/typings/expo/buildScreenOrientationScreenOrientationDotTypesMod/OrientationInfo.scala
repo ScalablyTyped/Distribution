@@ -17,9 +17,9 @@ object OrientationInfo {
     horizontalSizeClass: SizeClassIOS = null,
     verticalSizeClass: SizeClassIOS = null
   ): OrientationInfo = {
-    val __obj = js.Dynamic.literal(orientation = orientation)
-    if (horizontalSizeClass != null) __obj.updateDynamic("horizontalSizeClass")(horizontalSizeClass)
-    if (verticalSizeClass != null) __obj.updateDynamic("verticalSizeClass")(verticalSizeClass)
+    val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
+    if (horizontalSizeClass != null) __obj.updateDynamic("horizontalSizeClass")(horizontalSizeClass.asInstanceOf[js.Any])
+    if (verticalSizeClass != null) __obj.updateDynamic("verticalSizeClass")(verticalSizeClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrientationInfo]
   }
 }

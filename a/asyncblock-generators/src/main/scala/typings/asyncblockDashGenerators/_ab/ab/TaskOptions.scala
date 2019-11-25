@@ -26,13 +26,13 @@ object TaskOptions {
     timeoutIsError: js.UndefOr[Boolean] = js.undefined
   ): TaskOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dontWait)) __obj.updateDynamic("dontWait")(dontWait)
-    if (!js.isUndefined(firstArgIsError)) __obj.updateDynamic("firstArgIsError")(firstArgIsError)
-    if (!js.isUndefined(ignoreError)) __obj.updateDynamic("ignoreError")(ignoreError)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (responseFormat != null) __obj.updateDynamic("responseFormat")(responseFormat)
+    if (!js.isUndefined(dontWait)) __obj.updateDynamic("dontWait")(dontWait.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstArgIsError)) __obj.updateDynamic("firstArgIsError")(firstArgIsError.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreError)) __obj.updateDynamic("ignoreError")(ignoreError.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (responseFormat != null) __obj.updateDynamic("responseFormat")(responseFormat.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIsError)) __obj.updateDynamic("timeoutIsError")(timeoutIsError)
+    if (!js.isUndefined(timeoutIsError)) __obj.updateDynamic("timeoutIsError")(timeoutIsError.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOptions]
   }
 }

@@ -29,11 +29,11 @@ object InviterInviteOptions {
     withoutSdp: js.UndefOr[Boolean] = js.undefined
   ): InviterInviteOptions = {
     val __obj = js.Dynamic.literal()
-    if (requestDelegate != null) __obj.updateDynamic("requestDelegate")(requestDelegate)
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
-    if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers)
-    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions)
-    if (!js.isUndefined(withoutSdp)) __obj.updateDynamic("withoutSdp")(withoutSdp)
+    if (requestDelegate != null) __obj.updateDynamic("requestDelegate")(requestDelegate.asInstanceOf[js.Any])
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
+    if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers.asInstanceOf[js.Any])
+    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutSdp)) __obj.updateDynamic("withoutSdp")(withoutSdp.asInstanceOf[js.Any])
     __obj.asInstanceOf[InviterInviteOptions]
   }
 }

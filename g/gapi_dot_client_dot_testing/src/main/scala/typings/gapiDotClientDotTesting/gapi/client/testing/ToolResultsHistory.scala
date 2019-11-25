@@ -21,8 +21,8 @@ object ToolResultsHistory {
   @scala.inline
   def apply(historyId: String = null, projectId: String = null): ToolResultsHistory = {
     val __obj = js.Dynamic.literal()
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolResultsHistory]
   }
 }

@@ -21,8 +21,8 @@ object ModifyCloudToDeviceConfigRequest {
   @scala.inline
   def apply(binaryData: String = null, versionToUpdate: String = null): ModifyCloudToDeviceConfigRequest = {
     val __obj = js.Dynamic.literal()
-    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData)
-    if (versionToUpdate != null) __obj.updateDynamic("versionToUpdate")(versionToUpdate)
+    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData.asInstanceOf[js.Any])
+    if (versionToUpdate != null) __obj.updateDynamic("versionToUpdate")(versionToUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCloudToDeviceConfigRequest]
   }
 }

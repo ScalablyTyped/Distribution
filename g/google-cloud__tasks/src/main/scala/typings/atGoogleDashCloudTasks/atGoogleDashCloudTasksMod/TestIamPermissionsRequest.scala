@@ -12,7 +12,7 @@ object TestIamPermissionsRequest {
   @scala.inline
   def apply(permissions: js.Array[String] = null): TestIamPermissionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestIamPermissionsRequest]
   }
 }

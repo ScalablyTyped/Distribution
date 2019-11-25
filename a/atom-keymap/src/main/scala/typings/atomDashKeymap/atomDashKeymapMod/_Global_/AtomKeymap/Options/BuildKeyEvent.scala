@@ -25,11 +25,11 @@ object BuildKeyEvent {
     which: Int | Double = null
   ): BuildKeyEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alt)) __obj.updateDynamic("alt")(alt)
-    if (!js.isUndefined(cmd)) __obj.updateDynamic("cmd")(cmd)
-    if (!js.isUndefined(ctrl)) __obj.updateDynamic("ctrl")(ctrl)
-    if (!js.isUndefined(shift)) __obj.updateDynamic("shift")(shift)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(alt)) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(cmd)) __obj.updateDynamic("cmd")(cmd.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctrl)) __obj.updateDynamic("ctrl")(ctrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(shift)) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (which != null) __obj.updateDynamic("which")(which.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildKeyEvent]
   }

@@ -44,7 +44,7 @@ trait ParsedOptions extends js.Object {
   var enableSeconds: Boolean
   var enableTime: Boolean
   var formatDate: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: flatpickr.flatpickr/dist/types/options.Options['formatDate'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: flatpickr.flatpickr/dist/types/options.Options['formatDate'] */ js.Any
   ] = js.undefined
   var hourIncrement: Double
   var ignoredFocusElements: js.Array[HTMLElement]
@@ -149,7 +149,7 @@ object ParsedOptions {
     _minTime: Date = null,
     appendTo: HTMLElement = null,
     defaultDate: Date | js.Array[Date] = null,
-    formatDate: /* import warning: ImportType.apply Failed type conversion: flatpickr.flatpickr/dist/types/options.Options['formatDate'] */ js.Any = null,
+    formatDate: /* import warning: importer.ImportType#apply Failed type conversion: flatpickr.flatpickr/dist/types/options.Options['formatDate'] */ js.Any = null,
     maxDate: Date = null,
     maxTime: Date = null,
     minDate: Date = null,
@@ -157,21 +157,21 @@ object ParsedOptions {
     parseDate: (/* date */ String, /* format */ String) => Date = null,
     positionElement: HTMLElement = null
   ): ParsedOptions = {
-    val __obj = js.Dynamic.literal(_disable = _disable, _enable = _enable, allowInput = allowInput, altFormat = altFormat, altInput = altInput, altInputClass = altInputClass, animate = animate, ariaDateFormat = ariaDateFormat, clickOpens = clickOpens, closeOnSelect = closeOnSelect, conjunction = conjunction, dateFormat = dateFormat, defaultHour = defaultHour, defaultMinute = defaultMinute, defaultSeconds = defaultSeconds, disable = disable, disableMobile = disableMobile, enable = enable, enableSeconds = enableSeconds, enableTime = enableTime, errorHandler = js.Any.fromFunction1(errorHandler), getWeek = js.Any.fromFunction1(getWeek), hourIncrement = hourIncrement, ignoredFocusElements = ignoredFocusElements, locale = locale.asInstanceOf[js.Any], minuteIncrement = minuteIncrement, mode = mode.asInstanceOf[js.Any], monthSelectorType = monthSelectorType, nextArrow = nextArrow, noCalendar = noCalendar, now = now, onChange = onChange, onClose = onClose, onDayCreate = onDayCreate, onDestroy = onDestroy, onKeyDown = onKeyDown, onMonthChange = onMonthChange, onOpen = onOpen, onParseConfig = onParseConfig, onPreCalendarPosition = onPreCalendarPosition, onReady = onReady, onValueUpdate = onValueUpdate, onYearChange = onYearChange, plugins = plugins, position = position.asInstanceOf[js.Any], prevArrow = prevArrow, shorthandCurrentMonth = shorthandCurrentMonth, showMonths = showMonths, static = static, time_24hr = time_24hr, weekNumbers = weekNumbers, wrap = wrap)
-    __obj.updateDynamic("inline")(`inline`)
-    if (_maxDate != null) __obj.updateDynamic("_maxDate")(_maxDate)
-    if (_maxTime != null) __obj.updateDynamic("_maxTime")(_maxTime)
-    if (_minDate != null) __obj.updateDynamic("_minDate")(_minDate)
-    if (_minTime != null) __obj.updateDynamic("_minTime")(_minTime)
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    val __obj = js.Dynamic.literal(_disable = _disable.asInstanceOf[js.Any], _enable = _enable.asInstanceOf[js.Any], allowInput = allowInput.asInstanceOf[js.Any], altFormat = altFormat.asInstanceOf[js.Any], altInput = altInput.asInstanceOf[js.Any], altInputClass = altInputClass.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], ariaDateFormat = ariaDateFormat.asInstanceOf[js.Any], clickOpens = clickOpens.asInstanceOf[js.Any], closeOnSelect = closeOnSelect.asInstanceOf[js.Any], conjunction = conjunction.asInstanceOf[js.Any], dateFormat = dateFormat.asInstanceOf[js.Any], defaultHour = defaultHour.asInstanceOf[js.Any], defaultMinute = defaultMinute.asInstanceOf[js.Any], defaultSeconds = defaultSeconds.asInstanceOf[js.Any], disable = disable.asInstanceOf[js.Any], disableMobile = disableMobile.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], enableSeconds = enableSeconds.asInstanceOf[js.Any], enableTime = enableTime.asInstanceOf[js.Any], errorHandler = js.Any.fromFunction1(errorHandler), getWeek = js.Any.fromFunction1(getWeek), hourIncrement = hourIncrement.asInstanceOf[js.Any], ignoredFocusElements = ignoredFocusElements.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], minuteIncrement = minuteIncrement.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], monthSelectorType = monthSelectorType.asInstanceOf[js.Any], nextArrow = nextArrow.asInstanceOf[js.Any], noCalendar = noCalendar.asInstanceOf[js.Any], now = now.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], onClose = onClose.asInstanceOf[js.Any], onDayCreate = onDayCreate.asInstanceOf[js.Any], onDestroy = onDestroy.asInstanceOf[js.Any], onKeyDown = onKeyDown.asInstanceOf[js.Any], onMonthChange = onMonthChange.asInstanceOf[js.Any], onOpen = onOpen.asInstanceOf[js.Any], onParseConfig = onParseConfig.asInstanceOf[js.Any], onPreCalendarPosition = onPreCalendarPosition.asInstanceOf[js.Any], onReady = onReady.asInstanceOf[js.Any], onValueUpdate = onValueUpdate.asInstanceOf[js.Any], onYearChange = onYearChange.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], prevArrow = prevArrow.asInstanceOf[js.Any], shorthandCurrentMonth = shorthandCurrentMonth.asInstanceOf[js.Any], showMonths = showMonths.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], time_24hr = time_24hr.asInstanceOf[js.Any], weekNumbers = weekNumbers.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
+    __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (_maxDate != null) __obj.updateDynamic("_maxDate")(_maxDate.asInstanceOf[js.Any])
+    if (_maxTime != null) __obj.updateDynamic("_maxTime")(_maxTime.asInstanceOf[js.Any])
+    if (_minDate != null) __obj.updateDynamic("_minDate")(_minDate.asInstanceOf[js.Any])
+    if (_minTime != null) __obj.updateDynamic("_minTime")(_minTime.asInstanceOf[js.Any])
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
-    if (formatDate != null) __obj.updateDynamic("formatDate")(formatDate)
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
-    if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime)
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
-    if (minTime != null) __obj.updateDynamic("minTime")(minTime)
+    if (formatDate != null) __obj.updateDynamic("formatDate")(formatDate.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
     if (parseDate != null) __obj.updateDynamic("parseDate")(js.Any.fromFunction2(parseDate))
-    if (positionElement != null) __obj.updateDynamic("positionElement")(positionElement)
+    if (positionElement != null) __obj.updateDynamic("positionElement")(positionElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedOptions]
   }
 }

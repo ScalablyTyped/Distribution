@@ -35,7 +35,7 @@ object StaggerConfig {
     val __obj = js.Dynamic.literal()
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaggerConfig]
   }

@@ -12,7 +12,7 @@ trait ShareDismissedAction extends ShareAction {
 object ShareDismissedAction {
   @scala.inline
   def apply(action: dismissedAction): ShareDismissedAction = {
-    val __obj = js.Dynamic.literal(action = action)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShareDismissedAction]
   }

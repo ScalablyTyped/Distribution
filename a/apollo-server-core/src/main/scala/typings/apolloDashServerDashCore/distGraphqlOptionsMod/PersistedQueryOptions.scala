@@ -12,7 +12,7 @@ trait PersistedQueryOptions extends js.Object {
 object PersistedQueryOptions {
   @scala.inline
   def apply(cache: KeyValueCache[String]): PersistedQueryOptions = {
-    val __obj = js.Dynamic.literal(cache = cache)
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PersistedQueryOptions]
   }

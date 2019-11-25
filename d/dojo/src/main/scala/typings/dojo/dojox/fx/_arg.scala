@@ -2,8 +2,6 @@ package typings.dojo.dojox.fx
 
 import typings.dojo.Anon_CssClass
 import typings.dojo.Anon_X
-import typings.dojo.Fn_Args
-import typings.dojo.Fn_ArgsAnonCssClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,33 +11,27 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@js.native
 trait _arg extends js.Object {
   /**
     * The odd way to document object parameters.
     *
     * @param args
     */
-  @JSName("ShadowResizeArgs")
-  var ShadowResizeArgs_Original: Fn_Args = js.native
+  def ShadowResizeArgs(args: js.Object): Anon_X
   /**
     * The node and CSS class to use for style manipulations.
     *
     * @param args
     */
-  @JSName("StyleArgs")
-  var StyleArgs_Original: Fn_ArgsAnonCssClass = js.native
-  /**
-    * The odd way to document object parameters.
-    *
-    * @param args
-    */
-  def ShadowResizeArgs(args: js.Object): Anon_X = js.native
-  /**
-    * The node and CSS class to use for style manipulations.
-    *
-    * @param args
-    */
-  def StyleArgs(args: js.Object): Anon_CssClass = js.native
+  def StyleArgs(args: js.Object): Anon_CssClass
+}
+
+object _arg {
+  @scala.inline
+  def apply(ShadowResizeArgs: js.Object => Anon_X, StyleArgs: js.Object => Anon_CssClass): _arg = {
+    val __obj = js.Dynamic.literal(ShadowResizeArgs = js.Any.fromFunction1(ShadowResizeArgs), StyleArgs = js.Any.fromFunction1(StyleArgs))
+  
+    __obj.asInstanceOf[_arg]
+  }
 }
 

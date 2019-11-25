@@ -25,12 +25,12 @@ object PartialClassNameMapBadgeClassKey {
     root: String = null
   ): PartialClassNameMapBadgeClassKey = {
     val __obj = js.Dynamic.literal()
-    if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary)
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary)
-    if (dot != null) __obj.updateDynamic("dot")(dot)
-    if (invisible != null) __obj.updateDynamic("invisible")(invisible)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
+    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
+    if (dot != null) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
+    if (invisible != null) __obj.updateDynamic("invisible")(invisible.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapBadgeClassKey]
   }
 }

@@ -38,19 +38,19 @@ object PlaylistListItem {
     `type`: String = null
   ): PlaylistListItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accessControlled)) __obj.updateDynamic("accessControlled")(accessControlled)
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lastModifiedTimestamp != null) __obj.updateDynamic("lastModifiedTimestamp")(lastModifiedTimestamp)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (ownerName != null) __obj.updateDynamic("ownerName")(ownerName)
-    if (ownerProfilePhotoUrl != null) __obj.updateDynamic("ownerProfilePhotoUrl")(ownerProfilePhotoUrl)
-    if (recentTimestamp != null) __obj.updateDynamic("recentTimestamp")(recentTimestamp)
-    if (shareToken != null) __obj.updateDynamic("shareToken")(shareToken)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(accessControlled)) __obj.updateDynamic("accessControlled")(accessControlled.asInstanceOf[js.Any])
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lastModifiedTimestamp != null) __obj.updateDynamic("lastModifiedTimestamp")(lastModifiedTimestamp.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ownerName != null) __obj.updateDynamic("ownerName")(ownerName.asInstanceOf[js.Any])
+    if (ownerProfilePhotoUrl != null) __obj.updateDynamic("ownerProfilePhotoUrl")(ownerProfilePhotoUrl.asInstanceOf[js.Any])
+    if (recentTimestamp != null) __obj.updateDynamic("recentTimestamp")(recentTimestamp.asInstanceOf[js.Any])
+    if (shareToken != null) __obj.updateDynamic("shareToken")(shareToken.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistListItem]
   }
 }

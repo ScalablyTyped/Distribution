@@ -33,11 +33,11 @@ object PlayerScore {
     timeSpan: String = null
   ): PlayerScore = {
     val __obj = js.Dynamic.literal()
-    if (formattedScore != null) __obj.updateDynamic("formattedScore")(formattedScore)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (score != null) __obj.updateDynamic("score")(score)
-    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag)
-    if (timeSpan != null) __obj.updateDynamic("timeSpan")(timeSpan)
+    if (formattedScore != null) __obj.updateDynamic("formattedScore")(formattedScore.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag.asInstanceOf[js.Any])
+    if (timeSpan != null) __obj.updateDynamic("timeSpan")(timeSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerScore]
   }
 }

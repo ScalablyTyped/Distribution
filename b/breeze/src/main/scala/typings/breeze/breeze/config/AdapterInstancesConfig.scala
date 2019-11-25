@@ -24,10 +24,10 @@ object AdapterInstancesConfig {
     uriBuilder: String = null
   ): AdapterInstancesConfig = {
     val __obj = js.Dynamic.literal()
-    if (ajax != null) __obj.updateDynamic("ajax")(ajax)
-    if (dataService != null) __obj.updateDynamic("dataService")(dataService)
-    if (modelLibary != null) __obj.updateDynamic("modelLibary")(modelLibary)
-    if (uriBuilder != null) __obj.updateDynamic("uriBuilder")(uriBuilder)
+    if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
+    if (dataService != null) __obj.updateDynamic("dataService")(dataService.asInstanceOf[js.Any])
+    if (modelLibary != null) __obj.updateDynamic("modelLibary")(modelLibary.asInstanceOf[js.Any])
+    if (uriBuilder != null) __obj.updateDynamic("uriBuilder")(uriBuilder.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdapterInstancesConfig]
   }
 }

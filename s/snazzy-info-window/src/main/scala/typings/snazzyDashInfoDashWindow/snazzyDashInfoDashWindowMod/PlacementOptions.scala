@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait PlacementOptions extends js.Object
 
+object PlacementOptions {
+  @scala.inline
+  def bottom: typings.snazzyDashInfoDashWindow.snazzyDashInfoDashWindowStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.snazzyDashInfoDashWindow.snazzyDashInfoDashWindowStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.snazzyDashInfoDashWindow.snazzyDashInfoDashWindowStrings.right = this.cast("right")
+  @scala.inline
+  def top: typings.snazzyDashInfoDashWindow.snazzyDashInfoDashWindowStrings.top = this.cast("top")
+}
+

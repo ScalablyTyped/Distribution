@@ -15,8 +15,8 @@ object MultiSelectVirtual {
   def apply(itemHeight: Int | Double = null, mapValueTo: String = null, valueMapper: js.Function = null): MultiSelectVirtual = {
     val __obj = js.Dynamic.literal()
     if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
-    if (mapValueTo != null) __obj.updateDynamic("mapValueTo")(mapValueTo)
-    if (valueMapper != null) __obj.updateDynamic("valueMapper")(valueMapper)
+    if (mapValueTo != null) __obj.updateDynamic("mapValueTo")(mapValueTo.asInstanceOf[js.Any])
+    if (valueMapper != null) __obj.updateDynamic("valueMapper")(valueMapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelectVirtual]
   }
 }

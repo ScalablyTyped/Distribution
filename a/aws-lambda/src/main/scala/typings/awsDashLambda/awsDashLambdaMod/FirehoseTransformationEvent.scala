@@ -19,7 +19,7 @@ object FirehoseTransformationEvent {
     records: js.Array[FirehoseTransformationEventRecord],
     region: String
   ): FirehoseTransformationEvent = {
-    val __obj = js.Dynamic.literal(deliveryStreamArn = deliveryStreamArn, invocationId = invocationId, records = records, region = region)
+    val __obj = js.Dynamic.literal(deliveryStreamArn = deliveryStreamArn.asInstanceOf[js.Any], invocationId = invocationId.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FirehoseTransformationEvent]
   }

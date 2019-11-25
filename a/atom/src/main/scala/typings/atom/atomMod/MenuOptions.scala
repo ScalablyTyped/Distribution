@@ -16,9 +16,9 @@ trait MenuOptions extends js.Object {
 object MenuOptions {
   @scala.inline
   def apply(label: String, command: String = null, submenu: js.Array[MenuOptions] = null): MenuOptions = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (submenu != null) __obj.updateDynamic("submenu")(submenu)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuOptions]
   }
 }

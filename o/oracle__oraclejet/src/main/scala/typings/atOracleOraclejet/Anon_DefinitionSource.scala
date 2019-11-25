@@ -13,8 +13,8 @@ object Anon_DefinitionSource {
   @scala.inline
   def apply(definition: String = null, source: String = null): Anon_DefinitionSource = {
     val __obj = js.Dynamic.literal()
-    if (definition != null) __obj.updateDynamic("definition")(definition)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefinitionSource]
   }
 }

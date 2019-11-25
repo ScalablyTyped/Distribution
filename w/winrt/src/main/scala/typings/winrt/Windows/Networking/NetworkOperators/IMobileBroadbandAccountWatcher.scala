@@ -27,7 +27,7 @@ object IMobileBroadbandAccountWatcher {
     status: MobileBroadbandAccountWatcherStatus,
     stop: () => Unit
   ): IMobileBroadbandAccountWatcher = {
-    val __obj = js.Dynamic.literal(onaccountadded = onaccountadded, onaccountremoved = onaccountremoved, onaccountupdated = onaccountupdated, onenumerationcompleted = onenumerationcompleted, onstopped = onstopped, start = js.Any.fromFunction0(start), status = status, stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(onaccountadded = onaccountadded.asInstanceOf[js.Any], onaccountremoved = onaccountremoved.asInstanceOf[js.Any], onaccountupdated = onaccountupdated.asInstanceOf[js.Any], onenumerationcompleted = onenumerationcompleted.asInstanceOf[js.Any], onstopped = onstopped.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), status = status.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[IMobileBroadbandAccountWatcher]
   }

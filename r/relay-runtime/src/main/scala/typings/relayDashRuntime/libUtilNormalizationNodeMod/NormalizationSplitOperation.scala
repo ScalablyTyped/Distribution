@@ -24,8 +24,8 @@ object NormalizationSplitOperation {
     selections: js.Array[NormalizationSelection],
     metadata: StringDictionary[js.Any] = null
   ): NormalizationSplitOperation = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name, selections = selections)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationSplitOperation]
   }
 }

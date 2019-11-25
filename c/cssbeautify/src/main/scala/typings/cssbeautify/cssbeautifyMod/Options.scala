@@ -31,8 +31,8 @@ object Options {
     openbrace: `end-of-line` | `separate-line` = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autosemicolon)) __obj.updateDynamic("autosemicolon")(autosemicolon)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (!js.isUndefined(autosemicolon)) __obj.updateDynamic("autosemicolon")(autosemicolon.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (openbrace != null) __obj.updateDynamic("openbrace")(openbrace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

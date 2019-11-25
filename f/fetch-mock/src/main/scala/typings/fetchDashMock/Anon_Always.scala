@@ -110,16 +110,16 @@ object Anon_Always {
     warnOnFallback: js.UndefOr[Boolean] = js.undefined
   ): Anon_Always = {
     val __obj = js.Dynamic.literal()
-    if (Headers != null) __obj.updateDynamic("Headers")(Headers)
-    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
-    if (Request != null) __obj.updateDynamic("Request")(Request)
-    if (Response != null) __obj.updateDynamic("Response")(Response)
+    if (Headers != null) __obj.updateDynamic("Headers")(Headers.asInstanceOf[js.Any])
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
+    if (Request != null) __obj.updateDynamic("Request")(Request.asInstanceOf[js.Any])
+    if (Response != null) __obj.updateDynamic("Response")(Response.asInstanceOf[js.Any])
     if (fallbackToNetwork != null) __obj.updateDynamic("fallbackToNetwork")(fallbackToNetwork.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (!js.isUndefined(includeContentLength)) __obj.updateDynamic("includeContentLength")(includeContentLength)
-    if (!js.isUndefined(overwriteRoutes)) __obj.updateDynamic("overwriteRoutes")(overwriteRoutes)
-    if (!js.isUndefined(sendAsJson)) __obj.updateDynamic("sendAsJson")(sendAsJson)
-    if (!js.isUndefined(warnOnFallback)) __obj.updateDynamic("warnOnFallback")(warnOnFallback)
+    if (!js.isUndefined(includeContentLength)) __obj.updateDynamic("includeContentLength")(includeContentLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwriteRoutes)) __obj.updateDynamic("overwriteRoutes")(overwriteRoutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendAsJson)) __obj.updateDynamic("sendAsJson")(sendAsJson.asInstanceOf[js.Any])
+    if (!js.isUndefined(warnOnFallback)) __obj.updateDynamic("warnOnFallback")(warnOnFallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Always]
   }
 }

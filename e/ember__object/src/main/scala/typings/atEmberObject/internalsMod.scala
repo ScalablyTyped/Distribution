@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object internalsMod extends js.Object {
   def cacheFor[T, K /* <: String */](obj: T, key: K): js.UndefOr[
-    UnwrapComputedPropertyGetter[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+    UnwrapComputedPropertyGetter[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
   ] = js.native
   def copy(obj: js.Any): js.Any = js.native
   def copy(obj: js.Any, deep: Boolean): js.Any = js.native

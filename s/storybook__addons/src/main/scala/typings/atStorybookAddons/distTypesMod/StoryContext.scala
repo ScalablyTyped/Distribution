@@ -25,9 +25,9 @@ object StoryContext {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     hooks: HooksContext = null
   ): StoryContext = {
-    val __obj = js.Dynamic.literal(id = id, kind = kind, name = name, parameters = parameters)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoryContext]
   }
 }

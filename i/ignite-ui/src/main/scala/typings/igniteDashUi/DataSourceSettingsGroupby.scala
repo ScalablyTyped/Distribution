@@ -67,13 +67,13 @@ object DataSourceSettingsGroupby {
     summariesPosition: String = null
   ): DataSourceSettingsGroupby = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(defaultCollapseState)) __obj.updateDynamic("defaultCollapseState")(defaultCollapseState)
-    if (groupRecordKey != null) __obj.updateDynamic("groupRecordKey")(groupRecordKey)
-    if (groupSummaryRecordKey != null) __obj.updateDynamic("groupSummaryRecordKey")(groupSummaryRecordKey)
-    if (pagingMode != null) __obj.updateDynamic("pagingMode")(pagingMode)
-    if (summaries != null) __obj.updateDynamic("summaries")(summaries)
-    if (summariesPosition != null) __obj.updateDynamic("summariesPosition")(summariesPosition)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(defaultCollapseState)) __obj.updateDynamic("defaultCollapseState")(defaultCollapseState.asInstanceOf[js.Any])
+    if (groupRecordKey != null) __obj.updateDynamic("groupRecordKey")(groupRecordKey.asInstanceOf[js.Any])
+    if (groupSummaryRecordKey != null) __obj.updateDynamic("groupSummaryRecordKey")(groupSummaryRecordKey.asInstanceOf[js.Any])
+    if (pagingMode != null) __obj.updateDynamic("pagingMode")(pagingMode.asInstanceOf[js.Any])
+    if (summaries != null) __obj.updateDynamic("summaries")(summaries.asInstanceOf[js.Any])
+    if (summariesPosition != null) __obj.updateDynamic("summariesPosition")(summariesPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSettingsGroupby]
   }
 }

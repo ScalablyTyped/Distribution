@@ -26,7 +26,7 @@ object IColor {
     v: Double,
     a: Int | Double = null
   ): IColor = {
-    val __obj = js.Dynamic.literal(b = b, g = g, h = h, hex = hex, r = r, s = s, str = str, v = v)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColor]
   }

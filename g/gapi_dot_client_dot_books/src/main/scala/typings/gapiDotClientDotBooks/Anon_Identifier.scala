@@ -15,8 +15,8 @@ object Anon_Identifier {
   @scala.inline
   def apply(identifier: String = null, `type`: String = null): Anon_Identifier = {
     val __obj = js.Dynamic.literal()
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Identifier]
   }
 }

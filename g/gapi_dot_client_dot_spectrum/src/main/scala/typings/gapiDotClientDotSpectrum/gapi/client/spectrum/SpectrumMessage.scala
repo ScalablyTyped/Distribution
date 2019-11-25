@@ -20,7 +20,7 @@ object SpectrumMessage {
   def apply(bandwidth: Int | Double = null, frequencyRanges: js.Array[FrequencyRange] = null): SpectrumMessage = {
     val __obj = js.Dynamic.literal()
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
-    if (frequencyRanges != null) __obj.updateDynamic("frequencyRanges")(frequencyRanges)
+    if (frequencyRanges != null) __obj.updateDynamic("frequencyRanges")(frequencyRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpectrumMessage]
   }
 }

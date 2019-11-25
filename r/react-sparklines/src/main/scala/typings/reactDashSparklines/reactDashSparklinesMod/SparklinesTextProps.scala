@@ -15,10 +15,10 @@ object SparklinesTextProps {
   @scala.inline
   def apply(fontFamily: String = null, fontSize: Int | Double = null, point: Point = null, text: String = null): SparklinesTextProps = {
     val __obj = js.Dynamic.literal()
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklinesTextProps]
   }
 }

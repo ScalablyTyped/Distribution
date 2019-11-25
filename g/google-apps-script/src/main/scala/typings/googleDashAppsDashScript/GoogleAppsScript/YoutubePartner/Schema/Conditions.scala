@@ -24,12 +24,12 @@ object Conditions {
     requiredTerritories: TerritoryCondition = null
   ): Conditions = {
     val __obj = js.Dynamic.literal()
-    if (contentMatchType != null) __obj.updateDynamic("contentMatchType")(contentMatchType)
-    if (matchDuration != null) __obj.updateDynamic("matchDuration")(matchDuration)
-    if (matchPercent != null) __obj.updateDynamic("matchPercent")(matchPercent)
-    if (referenceDuration != null) __obj.updateDynamic("referenceDuration")(referenceDuration)
-    if (referencePercent != null) __obj.updateDynamic("referencePercent")(referencePercent)
-    if (requiredTerritories != null) __obj.updateDynamic("requiredTerritories")(requiredTerritories)
+    if (contentMatchType != null) __obj.updateDynamic("contentMatchType")(contentMatchType.asInstanceOf[js.Any])
+    if (matchDuration != null) __obj.updateDynamic("matchDuration")(matchDuration.asInstanceOf[js.Any])
+    if (matchPercent != null) __obj.updateDynamic("matchPercent")(matchPercent.asInstanceOf[js.Any])
+    if (referenceDuration != null) __obj.updateDynamic("referenceDuration")(referenceDuration.asInstanceOf[js.Any])
+    if (referencePercent != null) __obj.updateDynamic("referencePercent")(referencePercent.asInstanceOf[js.Any])
+    if (requiredTerritories != null) __obj.updateDynamic("requiredTerritories")(requiredTerritories.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conditions]
   }
 }

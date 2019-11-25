@@ -23,8 +23,8 @@ object _UnmarshalledOutputSerialization {
   @scala.inline
   def apply(CSV: _UnmarshalledCSVOutput = null, JSON: _UnmarshalledJSONOutput = null): _UnmarshalledOutputSerialization = {
     val __obj = js.Dynamic.literal()
-    if (CSV != null) __obj.updateDynamic("CSV")(CSV)
-    if (JSON != null) __obj.updateDynamic("JSON")(JSON)
+    if (CSV != null) __obj.updateDynamic("CSV")(CSV.asInstanceOf[js.Any])
+    if (JSON != null) __obj.updateDynamic("JSON")(JSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledOutputSerialization]
   }
 }

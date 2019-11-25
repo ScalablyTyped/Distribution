@@ -86,7 +86,6 @@ object Store {
     holdGC: () => Disposable,
     lookup: SingularReaderSelector => Snapshot,
     lookupConnection_UNSTABLE: (ConnectionReference[js.Any], ConnectionResolver[js.Any, js.Any]) => ConnectionSnapshot[js.Any, js.Any],
-    notify: () => js.Array[RequestDescriptor],
     publish: RecordSource => Unit,
     publishConnectionEvents_UNSTABLE: (js.Array[ConnectionInternalEvent], Boolean) => Unit,
     restore: () => Unit,
@@ -95,7 +94,7 @@ object Store {
     subscribe: (Snapshot, js.Function1[/* snapshot */ Snapshot, Unit]) => Disposable,
     subscribeConnection_UNSTABLE: (ConnectionSnapshot[js.Any, js.Any], ConnectionResolver[js.Any, js.Any], js.Function1[js.Any, Unit]) => Disposable
   ): Store = {
-    val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check), getConnectionEvents_UNSTABLE = js.Any.fromFunction1(getConnectionEvents_UNSTABLE), getSource = js.Any.fromFunction0(getSource), holdGC = js.Any.fromFunction0(holdGC), lookup = js.Any.fromFunction1(lookup), lookupConnection_UNSTABLE = js.Any.fromFunction2(lookupConnection_UNSTABLE), notify = js.Any.fromFunction0(notify), publish = js.Any.fromFunction1(publish), publishConnectionEvents_UNSTABLE = js.Any.fromFunction2(publishConnectionEvents_UNSTABLE), restore = js.Any.fromFunction0(restore), retain = js.Any.fromFunction1(retain), snapshot = js.Any.fromFunction0(snapshot), subscribe = js.Any.fromFunction2(subscribe), subscribeConnection_UNSTABLE = js.Any.fromFunction3(subscribeConnection_UNSTABLE))
+    val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check), getConnectionEvents_UNSTABLE = js.Any.fromFunction1(getConnectionEvents_UNSTABLE), getSource = js.Any.fromFunction0(getSource), holdGC = js.Any.fromFunction0(holdGC), lookup = js.Any.fromFunction1(lookup), lookupConnection_UNSTABLE = js.Any.fromFunction2(lookupConnection_UNSTABLE), publish = js.Any.fromFunction1(publish), publishConnectionEvents_UNSTABLE = js.Any.fromFunction2(publishConnectionEvents_UNSTABLE), restore = js.Any.fromFunction0(restore), retain = js.Any.fromFunction1(retain), snapshot = js.Any.fromFunction0(snapshot), subscribe = js.Any.fromFunction2(subscribe), subscribeConnection_UNSTABLE = js.Any.fromFunction3(subscribeConnection_UNSTABLE))
   
     __obj.asInstanceOf[Store]
   }

@@ -20,10 +20,10 @@ object Anon_OnClickSegment {
     onload: js.Function = null
   ): Anon_OnClickSegment = {
     val __obj = js.Dynamic.literal()
-    if (onClickSegment != null) __obj.updateDynamic("onClickSegment")(onClickSegment)
-    if (onMouseoutSegment != null) __obj.updateDynamic("onMouseoutSegment")(onMouseoutSegment)
-    if (onMouseoverSegment != null) __obj.updateDynamic("onMouseoverSegment")(onMouseoverSegment)
-    if (onload != null) __obj.updateDynamic("onload")(onload)
+    if (onClickSegment != null) __obj.updateDynamic("onClickSegment")(onClickSegment.asInstanceOf[js.Any])
+    if (onMouseoutSegment != null) __obj.updateDynamic("onMouseoutSegment")(onMouseoutSegment.asInstanceOf[js.Any])
+    if (onMouseoverSegment != null) __obj.updateDynamic("onMouseoverSegment")(onMouseoverSegment.asInstanceOf[js.Any])
+    if (onload != null) __obj.updateDynamic("onload")(onload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OnClickSegment]
   }
 }

@@ -1,7 +1,7 @@
 package typings.backboneDotMarionette.backboneDotMarionetteMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.backbone.Fn_EventObject
+import typings.jquery.JQuery.TriggeredEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +12,13 @@ import scala.scalajs.js.annotation._
 
 object EventsHash {
   @scala.inline
-  def apply(StringDictionary: StringDictionary[String | Fn_EventObject] = null): EventsHash = {
+  def apply(
+    StringDictionary: StringDictionary[
+      String | (js.Function1[/* eventObject */ TriggeredEvent[js.Any, js.Any, js.Any, js.Any], Unit])
+    ] = null
+  ): EventsHash = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[EventsHash]
   }
 }

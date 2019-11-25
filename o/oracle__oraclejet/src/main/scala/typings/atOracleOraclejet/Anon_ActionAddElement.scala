@@ -24,8 +24,8 @@ object Anon_ActionAddElement {
     endCallback: () => Unit,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_ActionAddElement = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element, endCallback = js.Any.fromFunction0(endCallback))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], endCallback = js.Any.fromFunction0(endCallback))
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ActionAddElement]
   }
 }

@@ -27,7 +27,7 @@ object IBackgroundTransferOperation {
     method: String,
     requestedUri: Uri
   ): IBackgroundTransferOperation = {
-    val __obj = js.Dynamic.literal(costPolicy = costPolicy, getResponseInformation = js.Any.fromFunction0(getResponseInformation), getResultStreamAt = js.Any.fromFunction1(getResultStreamAt), group = group, guid = guid, method = method, requestedUri = requestedUri)
+    val __obj = js.Dynamic.literal(costPolicy = costPolicy.asInstanceOf[js.Any], getResponseInformation = js.Any.fromFunction0(getResponseInformation), getResultStreamAt = js.Any.fromFunction1(getResultStreamAt), group = group.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], requestedUri = requestedUri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBackgroundTransferOperation]
   }

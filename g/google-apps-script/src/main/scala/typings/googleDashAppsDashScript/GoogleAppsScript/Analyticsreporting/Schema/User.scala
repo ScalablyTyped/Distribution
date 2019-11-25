@@ -13,8 +13,8 @@ object User {
   @scala.inline
   def apply(`type`: String = null, userId: String = null): User = {
     val __obj = js.Dynamic.literal()
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

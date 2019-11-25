@@ -20,7 +20,7 @@ trait ReplacementItem extends js.Object {
 object ReplacementItem {
   @scala.inline
   def apply(pattern: RegExp, replacement: (String, /* repeated */ js.Any) => String): ReplacementItem = {
-    val __obj = js.Dynamic.literal(pattern = pattern, replacement = js.Any.fromFunction2(replacement))
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any], replacement = js.Any.fromFunction2(replacement))
   
     __obj.asInstanceOf[ReplacementItem]
   }

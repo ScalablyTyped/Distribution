@@ -22,9 +22,9 @@ object DeleteSessionParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): DeleteSessionParams = {
-    val __obj = js.Dynamic.literal(assistant_id = assistant_id, session_id = session_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(assistant_id = assistant_id.asInstanceOf[js.Any], session_id = session_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSessionParams]
   }
 }

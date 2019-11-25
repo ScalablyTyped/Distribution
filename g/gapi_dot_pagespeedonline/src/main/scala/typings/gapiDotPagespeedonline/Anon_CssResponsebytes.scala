@@ -76,7 +76,7 @@ object Anon_CssResponsebytes {
     textResponseBytes: String,
     totalRequestBytes: String
   ): Anon_CssResponsebytes = {
-    val __obj = js.Dynamic.literal(cssResponsebytes = cssResponsebytes, flashResponseBytes = flashResponseBytes, htmlResponseBytes = htmlResponseBytes, imageResponseBytes = imageResponseBytes, javascriptResponsebytes = javascriptResponsebytes, numberCssResources = numberCssResources, numberHosts = numberHosts, numberJsResources = numberJsResources, numberResources = numberResources, numberStaticResources = numberStaticResources, otherResponsebytes = otherResponsebytes, textResponseBytes = textResponseBytes, totalRequestBytes = totalRequestBytes)
+    val __obj = js.Dynamic.literal(cssResponsebytes = cssResponsebytes.asInstanceOf[js.Any], flashResponseBytes = flashResponseBytes.asInstanceOf[js.Any], htmlResponseBytes = htmlResponseBytes.asInstanceOf[js.Any], imageResponseBytes = imageResponseBytes.asInstanceOf[js.Any], javascriptResponsebytes = javascriptResponsebytes.asInstanceOf[js.Any], numberCssResources = numberCssResources.asInstanceOf[js.Any], numberHosts = numberHosts.asInstanceOf[js.Any], numberJsResources = numberJsResources.asInstanceOf[js.Any], numberResources = numberResources.asInstanceOf[js.Any], numberStaticResources = numberStaticResources.asInstanceOf[js.Any], otherResponsebytes = otherResponsebytes.asInstanceOf[js.Any], textResponseBytes = textResponseBytes.asInstanceOf[js.Any], totalRequestBytes = totalRequestBytes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CssResponsebytes]
   }

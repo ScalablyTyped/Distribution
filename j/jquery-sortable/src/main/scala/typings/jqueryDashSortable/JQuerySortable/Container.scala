@@ -29,7 +29,7 @@ object Container {
     rootGroup: ContainerGroup,
     target: JQuery
   ): Container = {
-    val __obj = js.Dynamic.literal(el = el, group = group, handle = handle, itemDimensions = itemDimensions, items = items, options = options, rootGroup = rootGroup, target = target)
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], itemDimensions = itemDimensions.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], rootGroup = rootGroup.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Container]
   }

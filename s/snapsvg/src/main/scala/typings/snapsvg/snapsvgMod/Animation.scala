@@ -20,7 +20,7 @@ object Animation {
     callback: () => Unit = null,
     easing: /* num */ Double => Double = null
   ): Animation = {
-    val __obj = js.Dynamic.literal(attr = attr, duration = duration)
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
     __obj.asInstanceOf[Animation]

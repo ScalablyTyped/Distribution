@@ -15,8 +15,8 @@ object I18nLanguageSnippet {
   @scala.inline
   def apply(hl: String = null, name: String = null): I18nLanguageSnippet = {
     val __obj = js.Dynamic.literal()
-    if (hl != null) __obj.updateDynamic("hl")(hl)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (hl != null) __obj.updateDynamic("hl")(hl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[I18nLanguageSnippet]
   }
 }

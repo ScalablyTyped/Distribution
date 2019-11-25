@@ -13,7 +13,7 @@ trait ReposGetHookResponseConfig extends js.Object {
 object ReposGetHookResponseConfig {
   @scala.inline
   def apply(content_type: String, insecure_ssl: String, url: String): ReposGetHookResponseConfig = {
-    val __obj = js.Dynamic.literal(content_type = content_type, insecure_ssl = insecure_ssl, url = url)
+    val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], insecure_ssl = insecure_ssl.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetHookResponseConfig]
   }

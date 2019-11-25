@@ -14,7 +14,7 @@ trait Anon_BoundLen extends js.Object {
 object Anon_BoundLen {
   @scala.inline
   def apply(boundLen: Double, colorMesh: Mesh, wireframe: Mesh): Anon_BoundLen = {
-    val __obj = js.Dynamic.literal(boundLen = boundLen, colorMesh = colorMesh, wireframe = wireframe)
+    val __obj = js.Dynamic.literal(boundLen = boundLen.asInstanceOf[js.Any], colorMesh = colorMesh.asInstanceOf[js.Any], wireframe = wireframe.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BoundLen]
   }

@@ -14,7 +14,7 @@ trait IGenericDimensionProperties extends IGenericProperties {
 object IGenericDimensionProperties {
   @scala.inline
   def apply(qDim: INxLibraryDimensionDef, qInfo: INxInfo): IGenericDimensionProperties = {
-    val __obj = js.Dynamic.literal(qDim = qDim, qInfo = qInfo)
+    val __obj = js.Dynamic.literal(qDim = qDim.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGenericDimensionProperties]
   }

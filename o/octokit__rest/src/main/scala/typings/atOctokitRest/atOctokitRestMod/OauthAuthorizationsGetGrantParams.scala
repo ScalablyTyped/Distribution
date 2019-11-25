@@ -11,7 +11,7 @@ trait OauthAuthorizationsGetGrantParams extends js.Object {
 object OauthAuthorizationsGetGrantParams {
   @scala.inline
   def apply(grant_id: Double): OauthAuthorizationsGetGrantParams = {
-    val __obj = js.Dynamic.literal(grant_id = grant_id)
+    val __obj = js.Dynamic.literal(grant_id = grant_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OauthAuthorizationsGetGrantParams]
   }

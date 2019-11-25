@@ -62,13 +62,13 @@ object Options {
     tolerance: Int | Double = null,
     touch: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(menu = menu, panel = panel)
+    val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (fx != null) __obj.updateDynamic("fx")(fx)
+    if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
-    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch)
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

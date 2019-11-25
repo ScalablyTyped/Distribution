@@ -17,7 +17,7 @@ trait ICodeCellJupyterMetadata extends IBaseCellJupyterMetadata {
 object ICodeCellJupyterMetadata {
   @scala.inline
   def apply(outputs_hidden: Boolean, source_hidden: Boolean): ICodeCellJupyterMetadata = {
-    val __obj = js.Dynamic.literal(outputs_hidden = outputs_hidden, source_hidden = source_hidden)
+    val __obj = js.Dynamic.literal(outputs_hidden = outputs_hidden.asInstanceOf[js.Any], source_hidden = source_hidden.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICodeCellJupyterMetadata]
   }

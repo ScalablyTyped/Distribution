@@ -14,7 +14,7 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(attributes: ImapMessageAttributes, parts: js.Array[MessageBodyPart], seqno: Double): Message = {
-    val __obj = js.Dynamic.literal(attributes = attributes, parts = parts, seqno = seqno)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], seqno = seqno.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Message]
   }

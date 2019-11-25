@@ -32,7 +32,7 @@ trait GitRepoVolumeSource extends js.Object {
 object GitRepoVolumeSource {
   @scala.inline
   def apply(directory: String, repository: String, revision: String): GitRepoVolumeSource = {
-    val __obj = js.Dynamic.literal(directory = directory, repository = repository, revision = revision)
+    val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitRepoVolumeSource]
   }

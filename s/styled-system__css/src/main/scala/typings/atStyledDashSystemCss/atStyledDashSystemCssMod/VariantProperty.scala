@@ -32,7 +32,7 @@ trait VariantProperty extends _SystemStyleObject {
 object VariantProperty {
   @scala.inline
   def apply(variant: String): VariantProperty = {
-    val __obj = js.Dynamic.literal(variant = variant)
+    val __obj = js.Dynamic.literal(variant = variant.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VariantProperty]
   }

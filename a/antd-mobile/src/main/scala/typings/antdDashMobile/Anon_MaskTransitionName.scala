@@ -13,7 +13,7 @@ trait Anon_MaskTransitionName extends js.Object {
 object Anon_MaskTransitionName {
   @scala.inline
   def apply(WrapComponent: String, maskTransitionName: String, transitionName: String): Anon_MaskTransitionName = {
-    val __obj = js.Dynamic.literal(WrapComponent = WrapComponent, maskTransitionName = maskTransitionName, transitionName = transitionName)
+    val __obj = js.Dynamic.literal(WrapComponent = WrapComponent.asInstanceOf[js.Any], maskTransitionName = maskTransitionName.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MaskTransitionName]
   }

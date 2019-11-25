@@ -13,7 +13,7 @@ trait ContinuedFractionResult extends js.Object {
 object ContinuedFractionResult {
   @scala.inline
   def apply(denominator: Double, numerator: Double, quotients: js.Array[Double]): ContinuedFractionResult = {
-    val __obj = js.Dynamic.literal(denominator = denominator, numerator = numerator, quotients = quotients)
+    val __obj = js.Dynamic.literal(denominator = denominator.asInstanceOf[js.Any], numerator = numerator.asInstanceOf[js.Any], quotients = quotients.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContinuedFractionResult]
   }

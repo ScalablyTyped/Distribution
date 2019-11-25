@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DrawerKeyboardDismissMode extends js.Object
 
+object DrawerKeyboardDismissMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def none: typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerStrings.none = this.cast("none")
+  @scala.inline
+  def `on-drag`: typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerStrings.`on-drag` = this.cast("on-drag")
+}
+

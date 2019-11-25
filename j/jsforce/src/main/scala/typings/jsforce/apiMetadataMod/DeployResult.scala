@@ -51,12 +51,12 @@ object DeployResult {
     ignoreWarnings: js.UndefOr[Boolean] = js.undefined,
     rollbackOnError: js.UndefOr[Boolean] = js.undefined
   ): DeployResult = {
-    val __obj = js.Dynamic.literal(checkOnly = checkOnly, completedDate = completedDate, createdDate = createdDate, done = done, id = id, lastModifiedDate = lastModifiedDate, numberComponentErrors = numberComponentErrors, numberComponentsDeployed = numberComponentsDeployed, numberComponentsTotal = numberComponentsTotal, numberTestErrors = numberTestErrors, numberTestsCompleted = numberTestsCompleted, numberTestsTotal = numberTestsTotal, startDate = startDate, status = status, success = success)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (errorStatusCode != null) __obj.updateDynamic("errorStatusCode")(errorStatusCode)
-    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings)
-    if (!js.isUndefined(rollbackOnError)) __obj.updateDynamic("rollbackOnError")(rollbackOnError)
+    val __obj = js.Dynamic.literal(checkOnly = checkOnly.asInstanceOf[js.Any], completedDate = completedDate.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastModifiedDate = lastModifiedDate.asInstanceOf[js.Any], numberComponentErrors = numberComponentErrors.asInstanceOf[js.Any], numberComponentsDeployed = numberComponentsDeployed.asInstanceOf[js.Any], numberComponentsTotal = numberComponentsTotal.asInstanceOf[js.Any], numberTestErrors = numberTestErrors.asInstanceOf[js.Any], numberTestsCompleted = numberTestsCompleted.asInstanceOf[js.Any], numberTestsTotal = numberTestsTotal.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (errorStatusCode != null) __obj.updateDynamic("errorStatusCode")(errorStatusCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollbackOnError)) __obj.updateDynamic("rollbackOnError")(rollbackOnError.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeployResult]
   }
 }

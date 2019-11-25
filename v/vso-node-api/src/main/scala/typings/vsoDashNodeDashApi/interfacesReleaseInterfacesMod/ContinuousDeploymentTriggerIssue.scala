@@ -22,7 +22,7 @@ object ContinuousDeploymentTriggerIssue {
     releaseTriggerType: ReleaseTriggerType,
     sourceId: String
   ): ContinuousDeploymentTriggerIssue = {
-    val __obj = js.Dynamic.literal(artifactType = artifactType, artifactVersionId = artifactVersionId, issue = issue, issueSource = issueSource, project = project, releaseDefinitionReference = releaseDefinitionReference, releaseTriggerType = releaseTriggerType, sourceId = sourceId)
+    val __obj = js.Dynamic.literal(artifactType = artifactType.asInstanceOf[js.Any], artifactVersionId = artifactVersionId.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any], issueSource = issueSource.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], releaseDefinitionReference = releaseDefinitionReference.asInstanceOf[js.Any], releaseTriggerType = releaseTriggerType.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContinuousDeploymentTriggerIssue]
   }

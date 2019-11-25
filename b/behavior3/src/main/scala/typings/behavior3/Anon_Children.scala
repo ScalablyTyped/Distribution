@@ -21,10 +21,10 @@ object Anon_Children {
     title: String = null
   ): Anon_Children = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Direction extends js.Object
 
+object Direction {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def down: typings.reactstrap.reactstrapStrings.down = this.cast("down")
+  @scala.inline
+  def left: typings.reactstrap.reactstrapStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.reactstrap.reactstrapStrings.right = this.cast("right")
+  @scala.inline
+  def up: typings.reactstrap.reactstrapStrings.up = this.cast("up")
+}
+

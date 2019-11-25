@@ -48,13 +48,13 @@ object SceneViewConstraints {
     tilt: SceneViewConstraintsTilt = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): SceneViewConstraints = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude)
-    if (clipDistance != null) __obj.updateDynamic("clipDistance")(clipDistance)
-    if (collision != null) __obj.updateDynamic("collision")(collision)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (clipDistance != null) __obj.updateDynamic("clipDistance")(clipDistance.asInstanceOf[js.Any])
+    if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (set != null) __obj.updateDynamic("set")(set)
-    if (tilt != null) __obj.updateDynamic("tilt")(tilt)
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
+    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[SceneViewConstraints]
   }

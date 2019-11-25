@@ -12,7 +12,7 @@ trait RetrieveMessage extends js.Object {
 object RetrieveMessage {
   @scala.inline
   def apply(fileName: String, problem: String): RetrieveMessage = {
-    val __obj = js.Dynamic.literal(fileName = fileName, problem = problem)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], problem = problem.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RetrieveMessage]
   }

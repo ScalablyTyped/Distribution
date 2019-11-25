@@ -20,12 +20,12 @@ object PromptOptions {
     title: String = null
   ): PromptOptions = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (ok != null) __obj.updateDynamic("ok")(ok)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (ok != null) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptOptions]
   }
 }

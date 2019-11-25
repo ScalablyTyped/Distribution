@@ -11,7 +11,7 @@ trait MuteParam extends js.Object {
 object MuteParam {
   @scala.inline
   def apply(mute: Boolean): MuteParam = {
-    val __obj = js.Dynamic.literal(mute = mute)
+    val __obj = js.Dynamic.literal(mute = mute.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MuteParam]
   }

@@ -29,8 +29,8 @@ object cssClasses {
     SELECTED_LIST_ITEM: `mdc-list-item--selected`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(ANIMATING_CLOSED = ANIMATING_CLOSED, ANIMATING_OPEN = ANIMATING_OPEN, OPEN = OPEN, ROOT = ROOT, SELECTED_LIST_ITEM = SELECTED_LIST_ITEM)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ANIMATING_CLOSED = ANIMATING_CLOSED.asInstanceOf[js.Any], ANIMATING_OPEN = ANIMATING_OPEN.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any], SELECTED_LIST_ITEM = SELECTED_LIST_ITEM.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

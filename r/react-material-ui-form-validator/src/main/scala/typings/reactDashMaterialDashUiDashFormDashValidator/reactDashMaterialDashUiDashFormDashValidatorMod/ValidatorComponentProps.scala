@@ -26,12 +26,12 @@ object ValidatorComponentProps {
     validators: js.Array[_] = null,
     withRequiredValidator: js.UndefOr[Boolean] = js.undefined
   ): ValidatorComponentProps = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (errorMessages != null) __obj.updateDynamic("errorMessages")(errorMessages.asInstanceOf[js.Any])
     if (validatorListener != null) __obj.updateDynamic("validatorListener")(js.Any.fromFunction1(validatorListener))
-    if (validators != null) __obj.updateDynamic("validators")(validators)
-    if (!js.isUndefined(withRequiredValidator)) __obj.updateDynamic("withRequiredValidator")(withRequiredValidator)
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRequiredValidator)) __obj.updateDynamic("withRequiredValidator")(withRequiredValidator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorComponentProps]
   }
 }

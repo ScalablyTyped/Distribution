@@ -40,7 +40,7 @@ object Transaction {
     commit: () => typings.bluebird.bluebirdMod.^[Unit],
     rollback: () => typings.bluebird.bluebirdMod.^[Unit]
   ): Transaction = {
-    val __obj = js.Dynamic.literal(LOCK = LOCK, commit = js.Any.fromFunction0(commit), rollback = js.Any.fromFunction0(rollback))
+    val __obj = js.Dynamic.literal(LOCK = LOCK.asInstanceOf[js.Any], commit = js.Any.fromFunction0(commit), rollback = js.Any.fromFunction0(rollback))
   
     __obj.asInstanceOf[Transaction]
   }

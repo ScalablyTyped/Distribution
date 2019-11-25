@@ -15,8 +15,8 @@ object ReportError {
   @scala.inline
   def apply(operationId: String = null, status: Status = null): ReportError = {
     val __obj = js.Dynamic.literal()
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportError]
   }
 }

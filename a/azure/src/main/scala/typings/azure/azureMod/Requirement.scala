@@ -12,7 +12,7 @@ trait Requirement extends js.Object {
 object Requirement {
   @scala.inline
   def apply(SettingName: String, SettingPredicate: js.Function): Requirement = {
-    val __obj = js.Dynamic.literal(SettingName = SettingName, SettingPredicate = SettingPredicate)
+    val __obj = js.Dynamic.literal(SettingName = SettingName.asInstanceOf[js.Any], SettingPredicate = SettingPredicate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Requirement]
   }

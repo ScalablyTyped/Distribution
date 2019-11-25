@@ -13,7 +13,7 @@ object RemoveAction {
   @scala.inline
   def apply(`type`: REMOVE): RemoveAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAction]
   }
 }

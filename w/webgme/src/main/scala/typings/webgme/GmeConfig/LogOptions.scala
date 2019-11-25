@@ -12,7 +12,7 @@ trait LogOptions extends js.Object {
 object LogOptions {
   @scala.inline
   def apply(log: Anon_LevelString): LogOptions = {
-    val __obj = js.Dynamic.literal(log = log)
+    val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LogOptions]
   }

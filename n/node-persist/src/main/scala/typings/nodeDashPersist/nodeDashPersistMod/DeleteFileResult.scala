@@ -13,7 +13,7 @@ trait DeleteFileResult extends js.Object {
 object DeleteFileResult {
   @scala.inline
   def apply(existed: Boolean, file: String, removed: Boolean): DeleteFileResult = {
-    val __obj = js.Dynamic.literal(existed = existed, file = file, removed = removed)
+    val __obj = js.Dynamic.literal(existed = existed.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteFileResult]
   }

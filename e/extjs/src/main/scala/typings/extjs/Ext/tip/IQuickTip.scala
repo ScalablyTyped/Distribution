@@ -29,17 +29,13 @@ object IQuickTip {
     cancelShow: /* el */ js.UndefOr[js.Any] => Unit = null,
     interceptTitles: js.UndefOr[Boolean] = js.undefined,
     register: /* config */ js.UndefOr[js.Any] => Unit = null,
-    target: js.Any = null,
-    title: java.lang.String = null,
     unregister: /* el */ js.UndefOr[js.Any] => Unit = null
   ): IQuickTip = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IToolTip)
+    if (IToolTip != null) js.Dynamic.global.Object.assign(__obj, IToolTip)
     if (cancelShow != null) __obj.updateDynamic("cancelShow")(js.Any.fromFunction1(cancelShow))
-    if (!js.isUndefined(interceptTitles)) __obj.updateDynamic("interceptTitles")(interceptTitles)
+    if (!js.isUndefined(interceptTitles)) __obj.updateDynamic("interceptTitles")(interceptTitles.asInstanceOf[js.Any])
     if (register != null) __obj.updateDynamic("register")(js.Any.fromFunction1(register))
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (title != null) __obj.updateDynamic("title")(title)
     if (unregister != null) __obj.updateDynamic("unregister")(js.Any.fromFunction1(unregister))
     __obj.asInstanceOf[IQuickTip]
   }

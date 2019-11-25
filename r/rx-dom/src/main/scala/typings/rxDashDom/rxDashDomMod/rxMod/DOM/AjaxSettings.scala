@@ -1,6 +1,5 @@
 package typings.rxDashDom.rxDashDomMod.rxMod.DOM
 
-import typings.rxDashCore.Rx.Observer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ trait AjaxSettings extends js.Object {
   var headers: js.UndefOr[js.Any] = js.undefined
   var method: js.UndefOr[String] = js.undefined
   var password: js.UndefOr[String] = js.undefined
-  var progressObserver: js.UndefOr[Observer[_]] = js.undefined
+  var progressObserver: js.UndefOr[typings.rxDashCore.Rx.Observer[_]] = js.undefined
   var responseType: js.UndefOr[String] = js.undefined
   var url: js.UndefOr[String] = js.undefined
   var user: js.UndefOr[String] = js.undefined
@@ -29,22 +28,22 @@ object AjaxSettings {
     headers: js.Any = null,
     method: String = null,
     password: String = null,
-    progressObserver: Observer[_] = null,
+    progressObserver: typings.rxDashCore.Rx.Observer[_] = null,
     responseType: String = null,
     url: String = null,
     user: String = null
   ): AjaxSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (progressObserver != null) __obj.updateDynamic("progressObserver")(progressObserver)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (progressObserver != null) __obj.updateDynamic("progressObserver")(progressObserver.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxSettings]
   }
 }

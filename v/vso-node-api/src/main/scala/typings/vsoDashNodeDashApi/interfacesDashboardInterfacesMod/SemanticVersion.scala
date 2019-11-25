@@ -22,7 +22,7 @@ trait SemanticVersion extends js.Object {
 object SemanticVersion {
   @scala.inline
   def apply(major: Double, minor: Double, patch: Double): SemanticVersion = {
-    val __obj = js.Dynamic.literal(major = major, minor = minor, patch = patch)
+    val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SemanticVersion]
   }

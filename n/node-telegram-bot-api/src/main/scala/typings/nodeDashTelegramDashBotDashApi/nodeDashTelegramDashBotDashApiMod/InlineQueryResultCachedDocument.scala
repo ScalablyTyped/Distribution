@@ -28,12 +28,12 @@ object InlineQueryResultCachedDocument {
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null
   ): InlineQueryResultCachedDocument = {
-    val __obj = js.Dynamic.literal(document_file_id = document_file_id, id = id, title = title)
-    __obj.updateDynamic("type")(`type`)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    val __obj = js.Dynamic.literal(document_file_id = document_file_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultCachedDocument]
   }
 }

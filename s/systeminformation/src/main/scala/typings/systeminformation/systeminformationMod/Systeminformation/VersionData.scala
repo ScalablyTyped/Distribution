@@ -70,8 +70,8 @@ object VersionData {
     virtualbox: String,
     yarn: String
   ): VersionData = {
-    val __obj = js.Dynamic.literal(docker = docker, gcc = gcc, git = git, grunt = grunt, gulp = gulp, kernel = kernel, mongodb = mongodb, mysql = mysql, nginx = nginx, node = node, npm = npm, openssl = openssl, perl = perl, php = php, pip = pip, pip3 = pip3, pm2 = pm2, postfix = postfix, postgresql = postgresql, python = python, python3 = python3, redis = redis, systemOpenssl = systemOpenssl, systemOpensslLib = systemOpensslLib, tsc = tsc, v8 = v8, virtualbox = virtualbox, yarn = yarn)
-    __obj.updateDynamic("java")(java_)
+    val __obj = js.Dynamic.literal(docker = docker.asInstanceOf[js.Any], gcc = gcc.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], grunt = grunt.asInstanceOf[js.Any], gulp = gulp.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], mongodb = mongodb.asInstanceOf[js.Any], mysql = mysql.asInstanceOf[js.Any], nginx = nginx.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], npm = npm.asInstanceOf[js.Any], openssl = openssl.asInstanceOf[js.Any], perl = perl.asInstanceOf[js.Any], php = php.asInstanceOf[js.Any], pip = pip.asInstanceOf[js.Any], pip3 = pip3.asInstanceOf[js.Any], pm2 = pm2.asInstanceOf[js.Any], postfix = postfix.asInstanceOf[js.Any], postgresql = postgresql.asInstanceOf[js.Any], python = python.asInstanceOf[js.Any], python3 = python3.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any], systemOpenssl = systemOpenssl.asInstanceOf[js.Any], systemOpensslLib = systemOpensslLib.asInstanceOf[js.Any], tsc = tsc.asInstanceOf[js.Any], v8 = v8.asInstanceOf[js.Any], virtualbox = virtualbox.asInstanceOf[js.Any], yarn = yarn.asInstanceOf[js.Any])
+    __obj.updateDynamic("java")(java_.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionData]
   }
 }

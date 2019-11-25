@@ -13,8 +13,8 @@ trait LogConfig extends js.Object {
 object LogConfig {
   @scala.inline
   def apply(Type: LoggingDriverType, Config: StringDictionary[String] = null): LogConfig = {
-    val __obj = js.Dynamic.literal(Type = Type)
-    if (Config != null) __obj.updateDynamic("Config")(Config)
+    val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
+    if (Config != null) __obj.updateDynamic("Config")(Config.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfig]
   }
 }

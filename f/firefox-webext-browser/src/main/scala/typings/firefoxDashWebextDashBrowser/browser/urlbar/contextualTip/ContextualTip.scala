@@ -23,10 +23,10 @@ trait ContextualTip extends js.Object {
 object ContextualTip {
   @scala.inline
   def apply(title: String, buttonTitle: String = null, icon: Anon_DefaultIcon = null, linkTitle: String = null): ContextualTip = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (buttonTitle != null) __obj.updateDynamic("buttonTitle")(buttonTitle)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (linkTitle != null) __obj.updateDynamic("linkTitle")(linkTitle)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (buttonTitle != null) __obj.updateDynamic("buttonTitle")(buttonTitle.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (linkTitle != null) __obj.updateDynamic("linkTitle")(linkTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextualTip]
   }
 }

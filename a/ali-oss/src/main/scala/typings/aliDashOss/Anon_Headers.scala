@@ -14,7 +14,7 @@ trait Anon_Headers extends js.Object {
 object Anon_Headers {
   @scala.inline
   def apply(headers: js.Object, rt: Double, size: Double, status: Double): Anon_Headers = {
-    val __obj = js.Dynamic.literal(headers = headers, rt = rt, size = size, status = status)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Headers]
   }

@@ -25,7 +25,7 @@ object MediaFileSystemsOptions {
   @scala.inline
   def apply(interactive: Interactive = null): MediaFileSystemsOptions = {
     val __obj = js.Dynamic.literal()
-    if (interactive != null) __obj.updateDynamic("interactive")(interactive)
+    if (interactive != null) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaFileSystemsOptions]
   }
 }

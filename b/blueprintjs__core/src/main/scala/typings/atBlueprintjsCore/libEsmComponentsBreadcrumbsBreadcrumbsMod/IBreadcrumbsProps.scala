@@ -66,14 +66,14 @@ object IBreadcrumbsProps {
     overflowListProps: Partial[IOverflowListProps[IBreadcrumbProps]] = null,
     popoverProps: IPopoverProps = null
   ): IBreadcrumbsProps = {
-    val __obj = js.Dynamic.literal(items = items)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     if (breadcrumbRenderer != null) __obj.updateDynamic("breadcrumbRenderer")(js.Any.fromFunction1(breadcrumbRenderer))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom.asInstanceOf[js.Any])
     if (currentBreadcrumbRenderer != null) __obj.updateDynamic("currentBreadcrumbRenderer")(js.Any.fromFunction1(currentBreadcrumbRenderer))
     if (minVisibleItems != null) __obj.updateDynamic("minVisibleItems")(minVisibleItems.asInstanceOf[js.Any])
-    if (overflowListProps != null) __obj.updateDynamic("overflowListProps")(overflowListProps)
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps)
+    if (overflowListProps != null) __obj.updateDynamic("overflowListProps")(overflowListProps.asInstanceOf[js.Any])
+    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBreadcrumbsProps]
   }
 }

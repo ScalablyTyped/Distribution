@@ -31,13 +31,13 @@ object ExplainedFormat {
     result: StringDictionary[js.Any] = null,
     zone: Zone = null
   ): ExplainedFormat = {
-    val __obj = js.Dynamic.literal(input = input, tokens = tokens)
-    if (invalidReason != null) __obj.updateDynamic("invalidReason")(invalidReason)
-    if (matches != null) __obj.updateDynamic("matches")(matches)
-    if (rawMatches != null) __obj.updateDynamic("rawMatches")(rawMatches)
-    if (regex != null) __obj.updateDynamic("regex")(regex)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (zone != null) __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
+    if (invalidReason != null) __obj.updateDynamic("invalidReason")(invalidReason.asInstanceOf[js.Any])
+    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    if (rawMatches != null) __obj.updateDynamic("rawMatches")(rawMatches.asInstanceOf[js.Any])
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplainedFormat]
   }
 }

@@ -2,7 +2,7 @@ package typings.chromeDashApps.chrome.networking.config
 
 import typings.chromeDashApps.Anon_FAILED
 import typings.chromeDashApps.chrome.ToStringLiteral
-import typings.chromeDashApps.chromeDashAppsStrings.failed
+import typings.chromeDashApps.chromeDashAppsStrings.failed_
 import typings.chromeDashApps.chromeDashAppsStrings.rejected
 import typings.chromeDashApps.chromeDashAppsStrings.succeeded
 import typings.chromeDashApps.chromeDashAppsStrings.unhandled
@@ -24,11 +24,11 @@ object finishAuthentication extends js.Object {
     */
   def apply(
     GUID: String,
-    result: ToStringLiteral[Anon_FAILED, String, Exclude[String, unhandled | succeeded | rejected | failed]]
+    result: ToStringLiteral[Anon_FAILED, String, Exclude[String, unhandled | succeeded | rejected | failed_]]
   ): Unit = js.native
   def apply(
     GUID: String,
-    result: ToStringLiteral[Anon_FAILED, String, Exclude[String, unhandled | succeeded | rejected | failed]],
+    result: ToStringLiteral[Anon_FAILED, String, Exclude[String, unhandled | succeeded | rejected | failed_]],
     callback: js.Function0[Unit]
   ): Unit = js.native
 }

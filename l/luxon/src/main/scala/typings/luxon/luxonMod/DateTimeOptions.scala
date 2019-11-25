@@ -19,10 +19,10 @@ object DateTimeOptions {
     zone: String | Zone = null
   ): DateTimeOptions = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem)
-    if (outputCalendar != null) __obj.updateDynamic("outputCalendar")(outputCalendar)
-    if (!js.isUndefined(setZone)) __obj.updateDynamic("setZone")(setZone)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem.asInstanceOf[js.Any])
+    if (outputCalendar != null) __obj.updateDynamic("outputCalendar")(outputCalendar.asInstanceOf[js.Any])
+    if (!js.isUndefined(setZone)) __obj.updateDynamic("setZone")(setZone.asInstanceOf[js.Any])
     if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeOptions]
   }

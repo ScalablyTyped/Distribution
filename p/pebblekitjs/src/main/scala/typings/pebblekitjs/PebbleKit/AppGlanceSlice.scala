@@ -15,8 +15,8 @@ trait AppGlanceSlice extends js.Object {
 object AppGlanceSlice {
   @scala.inline
   def apply(layout: Layout, expirationTime: String = null): AppGlanceSlice = {
-    val __obj = js.Dynamic.literal(layout = layout)
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
+    val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any])
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppGlanceSlice]
   }
 }

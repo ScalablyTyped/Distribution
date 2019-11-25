@@ -63,15 +63,15 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (module != null) __obj.updateDynamic("module")(module)
-    if (moduleSystem != null) __obj.updateDynamic("moduleSystem")(moduleSystem)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
-    if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody)
-    if (templateFooter != null) __obj.updateDynamic("templateFooter")(templateFooter)
-    if (templateHeader != null) __obj.updateDynamic("templateHeader")(templateHeader)
-    if (transformUrl != null) __obj.updateDynamic("transformUrl")(transformUrl)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (moduleSystem != null) __obj.updateDynamic("moduleSystem")(moduleSystem.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody.asInstanceOf[js.Any])
+    if (templateFooter != null) __obj.updateDynamic("templateFooter")(templateFooter.asInstanceOf[js.Any])
+    if (templateHeader != null) __obj.updateDynamic("templateHeader")(templateHeader.asInstanceOf[js.Any])
+    if (transformUrl != null) __obj.updateDynamic("transformUrl")(transformUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

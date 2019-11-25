@@ -36,9 +36,9 @@ object BTreeIndex {
     indexNulls: js.UndefOr[Boolean] = js.undefined,
     unique: js.UndefOr[Boolean] = js.undefined
   ): BTreeIndex = {
-    val __obj = js.Dynamic.literal(fields = fields, name = name)
-    if (!js.isUndefined(indexNulls)) __obj.updateDynamic("indexNulls")(indexNulls)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexNulls)) __obj.updateDynamic("indexNulls")(indexNulls.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[BTreeIndex]
   }
 }

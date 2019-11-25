@@ -62,13 +62,13 @@ object IgToolbarButton {
     isSelected: js.UndefOr[Boolean] = js.undefined
   ): IgToolbarButton = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activated != null) __obj.updateDynamic("activated")(js.Any.fromFunction2(activated))
     if (activating != null) __obj.updateDynamic("activating")(js.Any.fromFunction2(activating))
-    if (!js.isUndefined(allowToggling)) __obj.updateDynamic("allowToggling")(allowToggling)
+    if (!js.isUndefined(allowToggling)) __obj.updateDynamic("allowToggling")(allowToggling.asInstanceOf[js.Any])
     if (deactivated != null) __obj.updateDynamic("deactivated")(js.Any.fromFunction2(deactivated))
     if (deactivating != null) __obj.updateDynamic("deactivating")(js.Any.fromFunction2(deactivating))
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgToolbarButton]
   }
 }

@@ -62,19 +62,19 @@ object AchievementDefinition {
     unlockedIconUrl: String = null
   ): AchievementDefinition = {
     val __obj = js.Dynamic.literal()
-    if (achievementType != null) __obj.updateDynamic("achievementType")(achievementType)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (experiencePoints != null) __obj.updateDynamic("experiencePoints")(experiencePoints)
-    if (formattedTotalSteps != null) __obj.updateDynamic("formattedTotalSteps")(formattedTotalSteps)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
-    if (!js.isUndefined(isRevealedIconUrlDefault)) __obj.updateDynamic("isRevealedIconUrlDefault")(isRevealedIconUrlDefault)
-    if (!js.isUndefined(isUnlockedIconUrlDefault)) __obj.updateDynamic("isUnlockedIconUrlDefault")(isUnlockedIconUrlDefault)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (revealedIconUrl != null) __obj.updateDynamic("revealedIconUrl")(revealedIconUrl)
+    if (achievementType != null) __obj.updateDynamic("achievementType")(achievementType.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (experiencePoints != null) __obj.updateDynamic("experiencePoints")(experiencePoints.asInstanceOf[js.Any])
+    if (formattedTotalSteps != null) __obj.updateDynamic("formattedTotalSteps")(formattedTotalSteps.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRevealedIconUrlDefault)) __obj.updateDynamic("isRevealedIconUrlDefault")(isRevealedIconUrlDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnlockedIconUrlDefault)) __obj.updateDynamic("isUnlockedIconUrlDefault")(isUnlockedIconUrlDefault.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (revealedIconUrl != null) __obj.updateDynamic("revealedIconUrl")(revealedIconUrl.asInstanceOf[js.Any])
     if (totalSteps != null) __obj.updateDynamic("totalSteps")(totalSteps.asInstanceOf[js.Any])
-    if (unlockedIconUrl != null) __obj.updateDynamic("unlockedIconUrl")(unlockedIconUrl)
+    if (unlockedIconUrl != null) __obj.updateDynamic("unlockedIconUrl")(unlockedIconUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementDefinition]
   }
 }

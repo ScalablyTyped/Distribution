@@ -13,7 +13,7 @@ trait Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest extends js.Object 
 object Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest {
   @scala.inline
   def apply(items: IPlayReadySecureStopServiceRequest, returnValue: Double): Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest = {
-    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest]
   }

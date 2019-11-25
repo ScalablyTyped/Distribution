@@ -12,7 +12,7 @@ trait CheckboxGroupContext extends js.Object {
 object CheckboxGroupContext {
   @scala.inline
   def apply(checkboxGroup: Anon_DisabledOption): CheckboxGroupContext = {
-    val __obj = js.Dynamic.literal(checkboxGroup = checkboxGroup)
+    val __obj = js.Dynamic.literal(checkboxGroup = checkboxGroup.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CheckboxGroupContext]
   }

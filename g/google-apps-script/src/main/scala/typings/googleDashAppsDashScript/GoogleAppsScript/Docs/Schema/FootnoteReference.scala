@@ -24,12 +24,12 @@ object FootnoteReference {
     textStyle: TextStyle = null
   ): FootnoteReference = {
     val __obj = js.Dynamic.literal()
-    if (footnoteId != null) __obj.updateDynamic("footnoteId")(footnoteId)
-    if (footnoteNumber != null) __obj.updateDynamic("footnoteNumber")(footnoteNumber)
-    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds)
-    if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds)
-    if (suggestedTextStyleChanges != null) __obj.updateDynamic("suggestedTextStyleChanges")(suggestedTextStyleChanges)
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (footnoteId != null) __obj.updateDynamic("footnoteId")(footnoteId.asInstanceOf[js.Any])
+    if (footnoteNumber != null) __obj.updateDynamic("footnoteNumber")(footnoteNumber.asInstanceOf[js.Any])
+    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
+    if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds.asInstanceOf[js.Any])
+    if (suggestedTextStyleChanges != null) __obj.updateDynamic("suggestedTextStyleChanges")(suggestedTextStyleChanges.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[FootnoteReference]
   }
 }

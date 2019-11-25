@@ -17,7 +17,7 @@ object IGridOptions {
   @scala.inline
   def apply(enableTreeView: js.UndefOr[Boolean] = js.undefined): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableTreeView)) __obj.updateDynamic("enableTreeView")(enableTreeView)
+    if (!js.isUndefined(enableTreeView)) __obj.updateDynamic("enableTreeView")(enableTreeView.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

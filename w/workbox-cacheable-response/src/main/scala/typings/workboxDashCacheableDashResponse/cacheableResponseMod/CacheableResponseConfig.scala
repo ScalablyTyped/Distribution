@@ -14,8 +14,8 @@ object CacheableResponseConfig {
   @scala.inline
   def apply(headers: Record[String, String] = null, statuses: js.Array[Double] = null): CacheableResponseConfig = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (statuses != null) __obj.updateDynamic("statuses")(statuses)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (statuses != null) __obj.updateDynamic("statuses")(statuses.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheableResponseConfig]
   }
 }

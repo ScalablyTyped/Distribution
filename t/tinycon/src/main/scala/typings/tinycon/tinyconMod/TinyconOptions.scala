@@ -27,11 +27,11 @@ object TinyconOptions {
     width: Int | Double = null
   ): TinyconOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abbreviate)) __obj.updateDynamic("abbreviate")(abbreviate)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(abbreviate)) __obj.updateDynamic("abbreviate")(abbreviate.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TinyconOptions]

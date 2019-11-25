@@ -18,8 +18,8 @@ object IntersectionObserverInit {
     threshold: Double | js.Array[Double] = null
   ): IntersectionObserverInit = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntersectionObserverInit]
   }

@@ -23,7 +23,7 @@ object Stack {
     push: js.Any => Unit,
     size: () => Double
   ): Stack = {
-    val __obj = js.Dynamic.literal(isEmpty = js.Any.fromFunction0(isEmpty), items = items, peek = js.Any.fromFunction0(peek), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), size = js.Any.fromFunction0(size))
+    val __obj = js.Dynamic.literal(isEmpty = js.Any.fromFunction0(isEmpty), items = items.asInstanceOf[js.Any], peek = js.Any.fromFunction0(peek), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), size = js.Any.fromFunction0(size))
   
     __obj.asInstanceOf[Stack]
   }

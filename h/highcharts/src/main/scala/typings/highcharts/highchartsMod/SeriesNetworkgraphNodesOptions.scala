@@ -55,12 +55,12 @@ object SeriesNetworkgraphNodesOptions {
     name: String = null
   ): SeriesNetworkgraphNodesOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesNetworkgraphNodesOptions]
   }
 }

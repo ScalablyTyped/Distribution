@@ -18,9 +18,9 @@ object VictoryStyleInterface {
     parent: VictoryStyleObject = null
   ): VictoryStyleInterface = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryStyleInterface]
   }
 }

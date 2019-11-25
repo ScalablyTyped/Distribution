@@ -31,13 +31,13 @@ object OrgChartOptions {
     size: String = null
   ): OrgChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCollapse)) __obj.updateDynamic("allowCollapse")(allowCollapse)
-    if (!js.isUndefined(allowHtml)) __obj.updateDynamic("allowHtml")(allowHtml)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (nodeClass != null) __obj.updateDynamic("nodeClass")(nodeClass)
-    if (selectedNodeClass != null) __obj.updateDynamic("selectedNodeClass")(selectedNodeClass)
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(allowCollapse)) __obj.updateDynamic("allowCollapse")(allowCollapse.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHtml)) __obj.updateDynamic("allowHtml")(allowHtml.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (nodeClass != null) __obj.updateDynamic("nodeClass")(nodeClass.asInstanceOf[js.Any])
+    if (selectedNodeClass != null) __obj.updateDynamic("selectedNodeClass")(selectedNodeClass.asInstanceOf[js.Any])
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgChartOptions]
   }
 }

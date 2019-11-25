@@ -59,9 +59,9 @@ object ojDataGridSettableProperties {
     currentCell: CurrentCell[K] = null,
     data: DataProvider[K, D] = null
   ): ojDataGridSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(bandingInterval = bandingInterval, cell = cell, dnd = dnd, editMode = editMode.asInstanceOf[js.Any], gridlines = gridlines, header = header, scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions, scrollPosition = scrollPosition, selection = selection, selectionMode = selectionMode, translations = translations)
-    if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(bandingInterval = bandingInterval.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], dnd = dnd.asInstanceOf[js.Any], editMode = editMode.asInstanceOf[js.Any], gridlines = gridlines.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions.asInstanceOf[js.Any], scrollPosition = scrollPosition.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
+    if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojDataGridSettableProperties[K, D]]
   }
 }

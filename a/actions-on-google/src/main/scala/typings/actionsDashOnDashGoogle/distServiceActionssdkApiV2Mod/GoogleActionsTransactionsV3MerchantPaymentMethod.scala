@@ -35,10 +35,10 @@ object GoogleActionsTransactionsV3MerchantPaymentMethod {
     paymentMethodStatus: GoogleActionsTransactionsV3PaymentMethodStatus = null
   ): GoogleActionsTransactionsV3MerchantPaymentMethod = {
     val __obj = js.Dynamic.literal()
-    if (paymentMethodDisplayInfo != null) __obj.updateDynamic("paymentMethodDisplayInfo")(paymentMethodDisplayInfo)
-    if (paymentMethodGroup != null) __obj.updateDynamic("paymentMethodGroup")(paymentMethodGroup)
-    if (paymentMethodId != null) __obj.updateDynamic("paymentMethodId")(paymentMethodId)
-    if (paymentMethodStatus != null) __obj.updateDynamic("paymentMethodStatus")(paymentMethodStatus)
+    if (paymentMethodDisplayInfo != null) __obj.updateDynamic("paymentMethodDisplayInfo")(paymentMethodDisplayInfo.asInstanceOf[js.Any])
+    if (paymentMethodGroup != null) __obj.updateDynamic("paymentMethodGroup")(paymentMethodGroup.asInstanceOf[js.Any])
+    if (paymentMethodId != null) __obj.updateDynamic("paymentMethodId")(paymentMethodId.asInstanceOf[js.Any])
+    if (paymentMethodStatus != null) __obj.updateDynamic("paymentMethodStatus")(paymentMethodStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3MerchantPaymentMethod]
   }
 }

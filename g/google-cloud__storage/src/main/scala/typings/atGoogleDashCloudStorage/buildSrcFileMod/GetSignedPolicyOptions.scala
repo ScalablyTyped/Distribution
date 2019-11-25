@@ -29,12 +29,12 @@ object GetSignedPolicyOptions {
     successStatus: String = null
   ): GetSignedPolicyOptions = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl)
-    if (contentLengthRange != null) __obj.updateDynamic("contentLengthRange")(contentLengthRange)
-    if (equals != null) __obj.updateDynamic("equals")(equals)
-    if (startsWith != null) __obj.updateDynamic("startsWith")(startsWith)
-    if (successRedirect != null) __obj.updateDynamic("successRedirect")(successRedirect)
-    if (successStatus != null) __obj.updateDynamic("successStatus")(successStatus)
+    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (contentLengthRange != null) __obj.updateDynamic("contentLengthRange")(contentLengthRange.asInstanceOf[js.Any])
+    if (equals != null) __obj.updateDynamic("equals")(equals.asInstanceOf[js.Any])
+    if (startsWith != null) __obj.updateDynamic("startsWith")(startsWith.asInstanceOf[js.Any])
+    if (successRedirect != null) __obj.updateDynamic("successRedirect")(successRedirect.asInstanceOf[js.Any])
+    if (successStatus != null) __obj.updateDynamic("successStatus")(successStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSignedPolicyOptions]
   }
 }

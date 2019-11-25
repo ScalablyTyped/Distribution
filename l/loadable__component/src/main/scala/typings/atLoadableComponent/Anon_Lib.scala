@@ -11,7 +11,7 @@ trait Anon_Lib extends js.Object {
 object Anon_Lib {
   @scala.inline
   def apply(lib: Fn_LoadFnOptions): Anon_Lib = {
-    val __obj = js.Dynamic.literal(lib = lib)
+    val __obj = js.Dynamic.literal(lib = lib.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Lib]
   }

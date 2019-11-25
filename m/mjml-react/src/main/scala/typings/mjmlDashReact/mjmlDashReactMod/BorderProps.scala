@@ -24,12 +24,12 @@ object BorderProps {
     borderTop: String = null
   ): BorderProps = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom)
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
+    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight)
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop)
+    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
+    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderProps]
   }
 }

@@ -14,7 +14,7 @@ object CollectionFetchOneOptions {
   def apply(columns: String | js.Array[String] = null, require: js.UndefOr[Boolean] = js.undefined): CollectionFetchOneOptions = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(require)) __obj.updateDynamic("require")(require)
+    if (!js.isUndefined(require)) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionFetchOneOptions]
   }
 }

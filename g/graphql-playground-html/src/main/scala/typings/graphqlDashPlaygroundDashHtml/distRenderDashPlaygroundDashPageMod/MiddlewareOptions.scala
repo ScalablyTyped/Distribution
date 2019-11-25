@@ -30,15 +30,15 @@ object MiddlewareOptions {
     workspaceName: String = null
   ): MiddlewareOptions = {
     val __obj = js.Dynamic.literal()
-    if (codeTheme != null) __obj.updateDynamic("codeTheme")(codeTheme)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
-    if (subscriptionEndpoint != null) __obj.updateDynamic("subscriptionEndpoint")(subscriptionEndpoint)
-    if (tabs != null) __obj.updateDynamic("tabs")(tabs)
-    if (workspaceName != null) __obj.updateDynamic("workspaceName")(workspaceName)
+    if (codeTheme != null) __obj.updateDynamic("codeTheme")(codeTheme.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (subscriptionEndpoint != null) __obj.updateDynamic("subscriptionEndpoint")(subscriptionEndpoint.asInstanceOf[js.Any])
+    if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
+    if (workspaceName != null) __obj.updateDynamic("workspaceName")(workspaceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiddlewareOptions]
   }
 }

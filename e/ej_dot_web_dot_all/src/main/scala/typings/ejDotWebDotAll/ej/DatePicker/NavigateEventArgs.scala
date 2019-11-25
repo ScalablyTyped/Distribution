@@ -36,12 +36,12 @@ object NavigateEventArgs {
     value: String = null
   ): NavigateEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (navigateFrom != null) __obj.updateDynamic("navigateFrom")(navigateFrom)
-    if (navigateTo != null) __obj.updateDynamic("navigateTo")(navigateTo)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (navigateFrom != null) __obj.updateDynamic("navigateFrom")(navigateFrom.asInstanceOf[js.Any])
+    if (navigateTo != null) __obj.updateDynamic("navigateTo")(navigateTo.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateEventArgs]
   }
 }

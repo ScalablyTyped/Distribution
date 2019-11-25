@@ -12,7 +12,7 @@ trait MakeSchemeOption extends js.Object {
 object MakeSchemeOption {
   @scala.inline
   def apply(format: String, scheme_type: String): MakeSchemeOption = {
-    val __obj = js.Dynamic.literal(format = format, scheme_type = scheme_type)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], scheme_type = scheme_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MakeSchemeOption]
   }

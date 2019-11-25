@@ -28,14 +28,14 @@ object NavigationAction {
     routeName: String = null
   ): NavigationAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (routeName != null) __obj.updateDynamic("routeName")(routeName)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (routeName != null) __obj.updateDynamic("routeName")(routeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationAction]
   }
 }

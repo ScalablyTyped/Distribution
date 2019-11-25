@@ -18,7 +18,7 @@ object AddChartRequest {
   @scala.inline
   def apply(chart: EmbeddedChart = null): AddChartRequest = {
     val __obj = js.Dynamic.literal()
-    if (chart != null) __obj.updateDynamic("chart")(chart)
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddChartRequest]
   }
 }

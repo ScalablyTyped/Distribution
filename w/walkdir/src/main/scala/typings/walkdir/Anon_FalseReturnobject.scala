@@ -13,7 +13,7 @@ object Anon_FalseReturnobject {
   @scala.inline
   def apply(return_object: `false` = null): Anon_FalseReturnobject = {
     val __obj = js.Dynamic.literal()
-    if (return_object != null) __obj.updateDynamic("return_object")(return_object)
+    if (return_object != null) __obj.updateDynamic("return_object")(return_object.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FalseReturnobject]
   }
 }

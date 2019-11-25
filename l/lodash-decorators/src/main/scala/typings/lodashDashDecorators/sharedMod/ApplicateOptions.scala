@@ -22,8 +22,8 @@ object ApplicateOptions {
     value: js.Any,
     instance: js.Object = null
   ): ApplicateOptions = {
-    val __obj = js.Dynamic.literal(args = args, config = config, target = target, value = value)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicateOptions]
   }
 }

@@ -22,7 +22,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(pacScript: String, proxyBypassRules: String, proxyRules: String): Config = {
-    val __obj = js.Dynamic.literal(pacScript = pacScript, proxyBypassRules = proxyBypassRules, proxyRules = proxyRules)
+    val __obj = js.Dynamic.literal(pacScript = pacScript.asInstanceOf[js.Any], proxyBypassRules = proxyBypassRules.asInstanceOf[js.Any], proxyRules = proxyRules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

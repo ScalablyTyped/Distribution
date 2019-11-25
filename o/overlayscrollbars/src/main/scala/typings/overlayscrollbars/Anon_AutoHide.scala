@@ -28,13 +28,13 @@ object Anon_AutoHide {
     visibility: VisibilityBehavior = null
   ): Anon_AutoHide = {
     val __obj = js.Dynamic.literal()
-    if (autoHide != null) __obj.updateDynamic("autoHide")(autoHide)
+    if (autoHide != null) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
     if (autoHideDelay != null) __obj.updateDynamic("autoHideDelay")(autoHideDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickScrolling)) __obj.updateDynamic("clickScrolling")(clickScrolling)
-    if (!js.isUndefined(dragScrolling)) __obj.updateDynamic("dragScrolling")(dragScrolling)
-    if (!js.isUndefined(snapHandle)) __obj.updateDynamic("snapHandle")(snapHandle)
-    if (!js.isUndefined(touchSupport)) __obj.updateDynamic("touchSupport")(touchSupport)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (!js.isUndefined(clickScrolling)) __obj.updateDynamic("clickScrolling")(clickScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragScrolling)) __obj.updateDynamic("dragScrolling")(dragScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapHandle)) __obj.updateDynamic("snapHandle")(snapHandle.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchSupport)) __obj.updateDynamic("touchSupport")(touchSupport.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoHide]
   }
 }

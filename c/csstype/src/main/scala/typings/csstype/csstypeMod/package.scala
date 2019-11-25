@@ -511,7 +511,7 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - typings.csstype.csstypeMod.NamedColor
     - typings.csstype.csstypeMod.DeprecatedSystemColor
-    - typings.csstype.csstypeStrings.currentcolor
+    - typings.csstype.csstypeStrings.currentcolor_
     - java.lang.String
   */
   type Color = _Color | String
@@ -840,7 +840,7 @@ package object csstypeMod {
     - typings.csstype.csstypeMod.Globals
     - typings.csstype.csstypeStrings.caption
     - typings.csstype.csstypeStrings.icon
-    - typings.csstype.csstypeStrings.menu
+    - typings.csstype.csstypeStrings.menu_
     - typings.csstype.csstypeStrings.`message-box`
     - typings.csstype.csstypeStrings.`small-caption`
     - typings.csstype.csstypeStrings.`status-bar`

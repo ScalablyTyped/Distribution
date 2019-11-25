@@ -19,10 +19,10 @@ object StoreExceptionsInformation {
     siteName: java.lang.String = null
   ): StoreExceptionsInformation = {
     val __obj = js.Dynamic.literal()
-    if (detailURI != null) __obj.updateDynamic("detailURI")(detailURI)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (explanationString != null) __obj.updateDynamic("explanationString")(explanationString)
-    if (siteName != null) __obj.updateDynamic("siteName")(siteName)
+    if (detailURI != null) __obj.updateDynamic("detailURI")(detailURI.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (explanationString != null) __obj.updateDynamic("explanationString")(explanationString.asInstanceOf[js.Any])
+    if (siteName != null) __obj.updateDynamic("siteName")(siteName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreExceptionsInformation]
   }
 }

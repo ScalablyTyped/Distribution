@@ -1,7 +1,6 @@
 package typings.speakeasy.speakeasyMod
 
 import typings.speakeasy.speakeasyStrings.htop
-import typings.speakeasy.speakeasyStrings.totp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +36,7 @@ trait OtpauthURLOptions extends SharedOptions {
   /**
     * Either 'hotp' or 'totp', defaults to 'totp'
     */
-  var `type`: js.UndefOr[htop | totp] = js.undefined
+  var `type`: js.UndefOr[htop | typings.speakeasy.speakeasyStrings.totp] = js.undefined
 }
 
 object OtpauthURLOptions {
@@ -51,14 +50,14 @@ object OtpauthURLOptions {
     encoding: Encoding = null,
     issuer: String = null,
     period: Int | Double = null,
-    `type`: htop | totp = null
+    `type`: htop | typings.speakeasy.speakeasyStrings.totp = null
   ): OtpauthURLOptions = {
-    val __obj = js.Dynamic.literal(label = label, secret = secret)
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OtpauthURLOptions]

@@ -29,13 +29,12 @@ object NSIException {
     message: String,
     name: String,
     result: js.Any,
-    toString: () => String,
     inner: NSIException = null,
     location: js.Any = null
   ): NSIException = {
-    val __obj = js.Dynamic.literal(columnNumber = columnNumber, data = data, filename = filename, lineNumber = lineNumber, message = message, name = name, result = result, toString = js.Any.fromFunction0(toString))
-    if (inner != null) __obj.updateDynamic("inner")(inner)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    if (inner != null) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[NSIException]
   }
 }

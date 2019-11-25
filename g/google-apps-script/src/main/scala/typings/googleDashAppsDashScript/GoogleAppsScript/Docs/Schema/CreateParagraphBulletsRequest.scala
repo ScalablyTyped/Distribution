@@ -13,8 +13,8 @@ object CreateParagraphBulletsRequest {
   @scala.inline
   def apply(bulletPreset: String = null, range: Range = null): CreateParagraphBulletsRequest = {
     val __obj = js.Dynamic.literal()
-    if (bulletPreset != null) __obj.updateDynamic("bulletPreset")(bulletPreset)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (bulletPreset != null) __obj.updateDynamic("bulletPreset")(bulletPreset.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateParagraphBulletsRequest]
   }
 }

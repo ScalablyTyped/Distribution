@@ -14,7 +14,7 @@ trait Anon_ArgNameField extends js.Object {
 object Anon_ArgNameField {
   @scala.inline
   def apply(field: GraphQLFieldConfig[_, _, StringDictionary[_]], name: String): Anon_ArgNameField = {
-    val __obj = js.Dynamic.literal(field = field, name = name)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArgNameField]
   }

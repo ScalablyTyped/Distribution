@@ -14,7 +14,7 @@ trait TypeObject extends js.Object {
 object TypeObject {
   @scala.inline
   def apply(action: TypeAction, background: TypeBackground, divider: TypeDivider, text: TypeText): TypeObject = {
-    val __obj = js.Dynamic.literal(action = action, background = background, divider = divider, text = text)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], divider = divider.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeObject]
   }

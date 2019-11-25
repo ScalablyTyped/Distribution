@@ -12,8 +12,8 @@ trait Resource extends js.Object {
 object Resource {
   @scala.inline
   def apply(url: String, title: String = null): Resource = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
 }

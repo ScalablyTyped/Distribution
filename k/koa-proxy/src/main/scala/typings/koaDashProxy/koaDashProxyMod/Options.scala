@@ -37,17 +37,17 @@ object Options {
     yieldNext: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(jar)) __obj.updateDynamic("jar")(jar)
+    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(jar)) __obj.updateDynamic("jar")(jar.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
-    if (overrideResponseHeaders != null) __obj.updateDynamic("overrideResponseHeaders")(overrideResponseHeaders)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (overrideResponseHeaders != null) __obj.updateDynamic("overrideResponseHeaders")(overrideResponseHeaders.asInstanceOf[js.Any])
     if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
-    if (suppressRequestHeaders != null) __obj.updateDynamic("suppressRequestHeaders")(suppressRequestHeaders)
-    if (suppressResponseHeaders != null) __obj.updateDynamic("suppressResponseHeaders")(suppressResponseHeaders)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (!js.isUndefined(yieldNext)) __obj.updateDynamic("yieldNext")(yieldNext)
+    if (suppressRequestHeaders != null) __obj.updateDynamic("suppressRequestHeaders")(suppressRequestHeaders.asInstanceOf[js.Any])
+    if (suppressResponseHeaders != null) __obj.updateDynamic("suppressResponseHeaders")(suppressResponseHeaders.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(yieldNext)) __obj.updateDynamic("yieldNext")(yieldNext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

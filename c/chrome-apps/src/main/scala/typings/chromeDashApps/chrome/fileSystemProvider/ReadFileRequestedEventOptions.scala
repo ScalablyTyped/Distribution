@@ -19,7 +19,7 @@ trait ReadFileRequestedEventOptions extends RequestedEventOptions {
 object ReadFileRequestedEventOptions {
   @scala.inline
   def apply(fileSystemId: String, length: double, offset: double, openRequestId: integer, requestId: integer): ReadFileRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, length = length, offset = offset, openRequestId = openRequestId, requestId = requestId)
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadFileRequestedEventOptions]
   }

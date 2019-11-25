@@ -12,7 +12,7 @@ object Anon_Bookmarksui {
   @scala.inline
   def apply(bookmarks_ui: Anon_Removebookmarkshortcut = null): Anon_Bookmarksui = {
     val __obj = js.Dynamic.literal()
-    if (bookmarks_ui != null) __obj.updateDynamic("bookmarks_ui")(bookmarks_ui)
+    if (bookmarks_ui != null) __obj.updateDynamic("bookmarks_ui")(bookmarks_ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bookmarksui]
   }
 }

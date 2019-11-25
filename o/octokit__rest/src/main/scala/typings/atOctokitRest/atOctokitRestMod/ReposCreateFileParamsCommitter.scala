@@ -12,7 +12,7 @@ trait ReposCreateFileParamsCommitter extends js.Object {
 object ReposCreateFileParamsCommitter {
   @scala.inline
   def apply(email: String, name: String): ReposCreateFileParamsCommitter = {
-    val __obj = js.Dynamic.literal(email = email, name = name)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCreateFileParamsCommitter]
   }

@@ -35,10 +35,10 @@ object TransitionAnimation {
     `transition-timing-function`: TransitionTimingFunction
   ): TransitionAnimation = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transition-delay")(`transition-delay`)
-    __obj.updateDynamic("transition-duration")(`transition-duration`)
-    __obj.updateDynamic("transition-property")(`transition-property`)
-    __obj.updateDynamic("transition-timing-function")(`transition-timing-function`)
+    __obj.updateDynamic("transition-delay")(`transition-delay`.asInstanceOf[js.Any])
+    __obj.updateDynamic("transition-duration")(`transition-duration`.asInstanceOf[js.Any])
+    __obj.updateDynamic("transition-property")(`transition-property`.asInstanceOf[js.Any])
+    __obj.updateDynamic("transition-timing-function")(`transition-timing-function`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionAnimation]
   }
 }

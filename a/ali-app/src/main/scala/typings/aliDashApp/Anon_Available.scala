@@ -18,7 +18,7 @@ trait Anon_Available extends js.Object {
 object Anon_Available {
   @scala.inline
   def apply(available: Boolean, discovering: Boolean): Anon_Available = {
-    val __obj = js.Dynamic.literal(available = available, discovering = discovering)
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], discovering = discovering.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Available]
   }

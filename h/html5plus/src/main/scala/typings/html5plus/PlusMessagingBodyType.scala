@@ -31,8 +31,8 @@ object PlusMessagingBodyType {
   @scala.inline
   def apply(`text/html`: String = null, `text/plain`: String = null): PlusMessagingBodyType = {
     val __obj = js.Dynamic.literal()
-    if (`text/html` != null) __obj.updateDynamic("text/html")(`text/html`)
-    if (`text/plain` != null) __obj.updateDynamic("text/plain")(`text/plain`)
+    if (`text/html` != null) __obj.updateDynamic("text/html")(`text/html`.asInstanceOf[js.Any])
+    if (`text/plain` != null) __obj.updateDynamic("text/plain")(`text/plain`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMessagingBodyType]
   }
 }

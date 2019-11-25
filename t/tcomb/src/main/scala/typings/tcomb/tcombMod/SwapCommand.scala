@@ -13,7 +13,7 @@ trait SwapCommand extends Command {
 object SwapCommand {
   @scala.inline
   def apply($swap: Anon_From): SwapCommand = {
-    val __obj = js.Dynamic.literal($swap = $swap)
+    val __obj = js.Dynamic.literal($swap = $swap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SwapCommand]
   }

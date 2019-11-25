@@ -13,7 +13,7 @@ object ConfigInternal {
   @scala.inline
   def apply(swagger: Config = null): ConfigInternal = {
     val __obj = js.Dynamic.literal()
-    if (swagger != null) __obj.updateDynamic("swagger")(swagger)
+    if (swagger != null) __obj.updateDynamic("swagger")(swagger.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigInternal]
   }
 }

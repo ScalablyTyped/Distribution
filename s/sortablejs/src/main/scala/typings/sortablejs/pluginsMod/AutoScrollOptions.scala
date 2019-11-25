@@ -60,9 +60,9 @@ object AutoScrollOptions {
     scrollSpeed: Int | Double = null
   ): AutoScrollOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbleScroll)) __obj.updateDynamic("bubbleScroll")(bubbleScroll)
+    if (!js.isUndefined(bubbleScroll)) __obj.updateDynamic("bubbleScroll")(bubbleScroll.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (scrollFn != null) __obj.updateDynamic("scrollFn")(scrollFn)
+    if (scrollFn != null) __obj.updateDynamic("scrollFn")(scrollFn.asInstanceOf[js.Any])
     if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
     if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScrollOptions]

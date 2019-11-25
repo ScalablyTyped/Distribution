@@ -65,12 +65,12 @@ object GeoTransformPrototype {
     sphere: js.ThisFunction0[/* this */ GeoTransformPrototype with Anon_Stream, Unit] = null
   ): GeoTransformPrototype = {
     val __obj = js.Dynamic.literal()
-    if (lineEnd != null) __obj.updateDynamic("lineEnd")(lineEnd)
-    if (lineStart != null) __obj.updateDynamic("lineStart")(lineStart)
-    if (point != null) __obj.updateDynamic("point")(point)
-    if (polygonEnd != null) __obj.updateDynamic("polygonEnd")(polygonEnd)
-    if (polygonStart != null) __obj.updateDynamic("polygonStart")(polygonStart)
-    if (sphere != null) __obj.updateDynamic("sphere")(sphere)
+    if (lineEnd != null) __obj.updateDynamic("lineEnd")(lineEnd.asInstanceOf[js.Any])
+    if (lineStart != null) __obj.updateDynamic("lineStart")(lineStart.asInstanceOf[js.Any])
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
+    if (polygonEnd != null) __obj.updateDynamic("polygonEnd")(polygonEnd.asInstanceOf[js.Any])
+    if (polygonStart != null) __obj.updateDynamic("polygonStart")(polygonStart.asInstanceOf[js.Any])
+    if (sphere != null) __obj.updateDynamic("sphere")(sphere.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoTransformPrototype]
   }
 }

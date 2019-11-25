@@ -6,8 +6,6 @@ import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.reset
 import typings.atIonicCore.atIonicCoreStrings.small
 import typings.atIonicCore.atIonicCoreStrings.submit
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +18,9 @@ trait IonFabButton extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * If `true`, the user cannot interact with the fab button.
     */
@@ -44,7 +44,7 @@ trait IonFabButton extends js.Object {
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: RouterDirection
+  var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
   /**
     * If `true`, the fab button will show when in a fab-list.
     */
@@ -72,11 +72,11 @@ object IonFabButton {
   def apply(
     activated: Boolean,
     disabled: Boolean,
-    routerDirection: RouterDirection,
+    routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any,
     show: Boolean,
     translucent: Boolean,
     `type`: submit | reset | button,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     download: String = null,
     href: String = null,
     mode: ios | md = null,
@@ -84,15 +84,15 @@ object IonFabButton {
     size: small = null,
     target: String = null
   ): IonFabButton = {
-    val __obj = js.Dynamic.literal(activated = activated, disabled = disabled, routerDirection = routerDirection, show = show, translucent = translucent)
+    val __obj = js.Dynamic.literal(activated = activated.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], routerDirection = routerDirection.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], translucent = translucent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download)
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonFabButton]
   }
 }

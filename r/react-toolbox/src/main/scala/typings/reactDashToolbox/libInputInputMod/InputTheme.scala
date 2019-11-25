@@ -77,19 +77,19 @@ object InputTheme {
     withIcon: String = null
   ): InputTheme = {
     val __obj = js.Dynamic.literal()
-    if (bar != null) __obj.updateDynamic("bar")(bar)
-    if (counter != null) __obj.updateDynamic("counter")(counter)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (errored != null) __obj.updateDynamic("errored")(errored)
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
-    if (hint != null) __obj.updateDynamic("hint")(hint)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (inputElement != null) __obj.updateDynamic("inputElement")(inputElement)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (required != null) __obj.updateDynamic("required")(required)
-    if (withIcon != null) __obj.updateDynamic("withIcon")(withIcon)
+    if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
+    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (errored != null) __obj.updateDynamic("errored")(errored.asInstanceOf[js.Any])
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (inputElement != null) __obj.updateDynamic("inputElement")(inputElement.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (withIcon != null) __obj.updateDynamic("withIcon")(withIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputTheme]
   }
 }

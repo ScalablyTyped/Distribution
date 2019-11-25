@@ -12,7 +12,7 @@ trait Service extends js.Object {
 object Service {
   @scala.inline
   def apply(broadcast: (String, js.Any) => Unit, broadcastSubject: js.Any): Service = {
-    val __obj = js.Dynamic.literal(broadcast = js.Any.fromFunction2(broadcast), broadcastSubject = broadcastSubject)
+    val __obj = js.Dynamic.literal(broadcast = js.Any.fromFunction2(broadcast), broadcastSubject = broadcastSubject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Service]
   }

@@ -50,7 +50,7 @@ object ClusterRole {
     metadata: ObjectMeta,
     rules: js.Array[PolicyRule]
   ): ClusterRole = {
-    val __obj = js.Dynamic.literal(aggregationRule = aggregationRule, apiVersion = apiVersion, kind = kind, metadata = metadata, rules = rules)
+    val __obj = js.Dynamic.literal(aggregationRule = aggregationRule.asInstanceOf[js.Any], apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClusterRole]
   }

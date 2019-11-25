@@ -39,8 +39,8 @@ object _ServiceStatistics {
     TotalResponseTime: Int | Double = null
   ): _ServiceStatistics = {
     val __obj = js.Dynamic.literal()
-    if (ErrorStatistics != null) __obj.updateDynamic("ErrorStatistics")(ErrorStatistics)
-    if (FaultStatistics != null) __obj.updateDynamic("FaultStatistics")(FaultStatistics)
+    if (ErrorStatistics != null) __obj.updateDynamic("ErrorStatistics")(ErrorStatistics.asInstanceOf[js.Any])
+    if (FaultStatistics != null) __obj.updateDynamic("FaultStatistics")(FaultStatistics.asInstanceOf[js.Any])
     if (OkCount != null) __obj.updateDynamic("OkCount")(OkCount.asInstanceOf[js.Any])
     if (TotalCount != null) __obj.updateDynamic("TotalCount")(TotalCount.asInstanceOf[js.Any])
     if (TotalResponseTime != null) __obj.updateDynamic("TotalResponseTime")(TotalResponseTime.asInstanceOf[js.Any])

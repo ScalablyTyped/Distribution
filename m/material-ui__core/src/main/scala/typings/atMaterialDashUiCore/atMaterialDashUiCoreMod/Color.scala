@@ -39,17 +39,17 @@ object Color {
     A400: String,
     A700: String
   ): Color = {
-    val __obj = js.Dynamic.literal(A100 = A100, A200 = A200, A400 = A400, A700 = A700)
-    __obj.updateDynamic("100")(`100`)
-    __obj.updateDynamic("200")(`200`)
-    __obj.updateDynamic("300")(`300`)
-    __obj.updateDynamic("400")(`400`)
-    __obj.updateDynamic("50")(`50`)
-    __obj.updateDynamic("500")(`500`)
-    __obj.updateDynamic("600")(`600`)
-    __obj.updateDynamic("700")(`700`)
-    __obj.updateDynamic("800")(`800`)
-    __obj.updateDynamic("900")(`900`)
+    val __obj = js.Dynamic.literal(A100 = A100.asInstanceOf[js.Any], A200 = A200.asInstanceOf[js.Any], A400 = A400.asInstanceOf[js.Any], A700 = A700.asInstanceOf[js.Any])
+    __obj.updateDynamic("100")(`100`.asInstanceOf[js.Any])
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("300")(`300`.asInstanceOf[js.Any])
+    __obj.updateDynamic("400")(`400`.asInstanceOf[js.Any])
+    __obj.updateDynamic("50")(`50`.asInstanceOf[js.Any])
+    __obj.updateDynamic("500")(`500`.asInstanceOf[js.Any])
+    __obj.updateDynamic("600")(`600`.asInstanceOf[js.Any])
+    __obj.updateDynamic("700")(`700`.asInstanceOf[js.Any])
+    __obj.updateDynamic("800")(`800`.asInstanceOf[js.Any])
+    __obj.updateDynamic("900")(`900`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
 }

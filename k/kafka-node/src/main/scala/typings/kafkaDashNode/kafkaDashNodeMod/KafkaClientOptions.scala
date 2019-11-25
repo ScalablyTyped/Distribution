@@ -34,17 +34,17 @@ object KafkaClientOptions {
     sslOptions: js.Any = null
   ): KafkaClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (connectRetryOptions != null) __obj.updateDynamic("connectRetryOptions")(connectRetryOptions)
+    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (connectRetryOptions != null) __obj.updateDynamic("connectRetryOptions")(connectRetryOptions.asInstanceOf[js.Any])
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (idleConnection != null) __obj.updateDynamic("idleConnection")(idleConnection.asInstanceOf[js.Any])
-    if (kafkaHost != null) __obj.updateDynamic("kafkaHost")(kafkaHost)
+    if (kafkaHost != null) __obj.updateDynamic("kafkaHost")(kafkaHost.asInstanceOf[js.Any])
     if (maxAsyncRequests != null) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectOnIdle)) __obj.updateDynamic("reconnectOnIdle")(reconnectOnIdle)
+    if (!js.isUndefined(reconnectOnIdle)) __obj.updateDynamic("reconnectOnIdle")(reconnectOnIdle.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (sasl != null) __obj.updateDynamic("sasl")(sasl)
-    if (sslOptions != null) __obj.updateDynamic("sslOptions")(sslOptions)
+    if (sasl != null) __obj.updateDynamic("sasl")(sasl.asInstanceOf[js.Any])
+    if (sslOptions != null) __obj.updateDynamic("sslOptions")(sslOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[KafkaClientOptions]
   }
 }

@@ -8,24 +8,24 @@ trait Anon_ImageUrl extends js.Object {
   var imageUrl: js.UndefOr[String] = js.undefined
 }
 
-trait Anon_Imageurl extends js.Object {
-  var image_url: js.UndefOr[String] = js.undefined
-}
-
 object Anon_ImageUrl {
   @scala.inline
   def apply(imageUrl: String = null): Anon_ImageUrl = {
     val __obj = js.Dynamic.literal()
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ImageUrl]
   }
+}
+
+trait Anon_Imageurl extends js.Object {
+  var image_url: js.UndefOr[String] = js.undefined
 }
 
 object Anon_Imageurl {
   @scala.inline
   def apply(image_url: String = null): Anon_Imageurl = {
     val __obj = js.Dynamic.literal()
-    if (image_url != null) __obj.updateDynamic("image_url")(image_url)
+    if (image_url != null) __obj.updateDynamic("image_url")(image_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Imageurl]
   }
 }

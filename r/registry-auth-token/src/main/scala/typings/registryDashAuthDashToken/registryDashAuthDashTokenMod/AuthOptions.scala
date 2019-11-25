@@ -25,8 +25,8 @@ object AuthOptions {
   @scala.inline
   def apply(npmrc: Anon_Registry = null, recursive: js.UndefOr[Boolean] = js.undefined): AuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (npmrc != null) __obj.updateDynamic("npmrc")(npmrc)
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (npmrc != null) __obj.updateDynamic("npmrc")(npmrc.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

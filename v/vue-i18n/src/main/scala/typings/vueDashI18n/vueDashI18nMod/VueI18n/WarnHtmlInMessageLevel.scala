@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait WarnHtmlInMessageLevel extends js.Object
 
+object WarnHtmlInMessageLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def error: typings.vueDashI18n.vueDashI18nStrings.error = this.cast("error")
+  @scala.inline
+  def off: typings.vueDashI18n.vueDashI18nStrings.off = this.cast("off")
+  @scala.inline
+  def warn: typings.vueDashI18n.vueDashI18nStrings.warn = this.cast("warn")
+}
+

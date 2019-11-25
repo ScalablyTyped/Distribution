@@ -24,8 +24,8 @@ object PropertyChangedContext {
     value: js.Any,
     subproperty: Anon_Path = null
   ): PropertyChangedContext = {
-    val __obj = js.Dynamic.literal(previousValue = previousValue, property = property, updatedFrom = updatedFrom.asInstanceOf[js.Any], value = value)
-    if (subproperty != null) __obj.updateDynamic("subproperty")(subproperty)
+    val __obj = js.Dynamic.literal(previousValue = previousValue.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], updatedFrom = updatedFrom.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (subproperty != null) __obj.updateDynamic("subproperty")(subproperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyChangedContext]
   }
 }

@@ -12,8 +12,8 @@ trait AttributeJson extends js.Object {
 object AttributeJson {
   @scala.inline
   def apply(`type`: String, vals: js.Array[String]): AttributeJson = {
-    val __obj = js.Dynamic.literal(vals = vals)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(vals = vals.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeJson]
   }
 }

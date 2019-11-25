@@ -40,13 +40,13 @@ object ActionBeforeSuccessEventArgs {
     xhr: js.Any = null
   ): ActionBeforeSuccessEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (actual != null) __obj.updateDynamic("actual")(actual)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (actual != null) __obj.updateDynamic("actual")(actual.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionBeforeSuccessEventArgs]
   }
 }

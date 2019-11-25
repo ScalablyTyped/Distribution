@@ -23,9 +23,9 @@ object HeldGroupsQuery {
   @scala.inline
   def apply(endTime: String = null, startTime: String = null, terms: String = null): HeldGroupsQuery = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (terms != null) __obj.updateDynamic("terms")(terms)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (terms != null) __obj.updateDynamic("terms")(terms.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeldGroupsQuery]
   }
 }

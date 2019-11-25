@@ -22,7 +22,7 @@ object TreeModel {
     operations: TreeModelOperationMap,
     shapes: TreeModelShapeMap
   ): TreeModel = {
-    val __obj = js.Dynamic.literal(documentation = documentation, metadata = metadata, name = name, operations = operations, shapes = shapes)
+    val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], shapes = shapes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TreeModel]
   }

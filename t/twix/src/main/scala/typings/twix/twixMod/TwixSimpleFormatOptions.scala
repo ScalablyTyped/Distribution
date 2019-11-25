@@ -13,7 +13,7 @@ object TwixSimpleFormatOptions {
   @scala.inline
   def apply(allDay: String = null, template: (/* left */ js.Any, /* right */ js.Any) => _ = null): TwixSimpleFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (allDay != null) __obj.updateDynamic("allDay")(allDay)
+    if (allDay != null) __obj.updateDynamic("allDay")(allDay.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(js.Any.fromFunction2(template))
     __obj.asInstanceOf[TwixSimpleFormatOptions]
   }

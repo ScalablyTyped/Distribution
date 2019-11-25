@@ -20,10 +20,10 @@ object ClickThroughUrl {
     landingPageId: String = null
   ): ClickThroughUrl = {
     val __obj = js.Dynamic.literal()
-    if (computedClickThroughUrl != null) __obj.updateDynamic("computedClickThroughUrl")(computedClickThroughUrl)
-    if (customClickThroughUrl != null) __obj.updateDynamic("customClickThroughUrl")(customClickThroughUrl)
-    if (!js.isUndefined(defaultLandingPage)) __obj.updateDynamic("defaultLandingPage")(defaultLandingPage)
-    if (landingPageId != null) __obj.updateDynamic("landingPageId")(landingPageId)
+    if (computedClickThroughUrl != null) __obj.updateDynamic("computedClickThroughUrl")(computedClickThroughUrl.asInstanceOf[js.Any])
+    if (customClickThroughUrl != null) __obj.updateDynamic("customClickThroughUrl")(customClickThroughUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultLandingPage)) __obj.updateDynamic("defaultLandingPage")(defaultLandingPage.asInstanceOf[js.Any])
+    if (landingPageId != null) __obj.updateDynamic("landingPageId")(landingPageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickThroughUrl]
   }
 }

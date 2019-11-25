@@ -14,7 +14,7 @@ trait PutBucketRequestPaymentOutput
 object PutBucketRequestPaymentOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): PutBucketRequestPaymentOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutBucketRequestPaymentOutput]
   }

@@ -48,7 +48,7 @@ object CertificateSigningRequestSpec {
     usages: js.Array[String],
     username: String
   ): CertificateSigningRequestSpec = {
-    val __obj = js.Dynamic.literal(extra = extra, groups = groups, request = request, uid = uid, usages = usages, username = username)
+    val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], usages = usages.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CertificateSigningRequestSpec]
   }

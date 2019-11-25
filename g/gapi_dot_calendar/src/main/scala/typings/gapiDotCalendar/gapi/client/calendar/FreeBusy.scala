@@ -3,24 +3,32 @@ package typings.gapiDotCalendar.gapi.client.calendar
 import typings.gapi.gapi.client.HttpRequest
 import typings.gapiDotCalendar.Anon_Busy
 import typings.gapiDotCalendar.Anon_Calendars
-import typings.gapiDotCalendar.Fn_Key
-import typings.gapiDotCalendar.Fn_KeyAnonBusy
 import typings.gapiDotCalendar.gapiDotCalendarStrings.`calendar#freeBusy`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait FreeBusy extends js.Object {
-  @JSName("calendars")
-  var calendars_Original: Fn_KeyAnonBusy = js.native
-  @JSName("groups")
-  var groups_Original: Fn_Key = js.native
-  var kind: `calendar#freeBusy` = js.native
-  var timeMax: datetime = js.native
-  var timeMin: datetime = js.native
-  def calendars(key: String): Anon_Busy = js.native
-  def groups(key: String): Anon_Calendars = js.native
+  var kind: `calendar#freeBusy`
+  var timeMax: datetime
+  var timeMin: datetime
+  def calendars(key: String): Anon_Busy
+  def groups(key: String): Anon_Calendars
+}
+
+object FreeBusy {
+  @scala.inline
+  def apply(
+    calendars: String => Anon_Busy,
+    groups: String => Anon_Calendars,
+    kind: `calendar#freeBusy`,
+    timeMax: datetime,
+    timeMin: datetime
+  ): FreeBusy = {
+    val __obj = js.Dynamic.literal(calendars = js.Any.fromFunction1(calendars), groups = js.Any.fromFunction1(groups), kind = kind.asInstanceOf[js.Any], timeMax = timeMax.asInstanceOf[js.Any], timeMin = timeMin.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[FreeBusy]
+  }
 }
 
 @JSGlobal("gapi.client.calendar.freebusy")

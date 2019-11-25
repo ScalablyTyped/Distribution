@@ -15,7 +15,7 @@ trait DecodeArgs extends js.Object {
 object DecodeArgs {
   @scala.inline
   def apply(packet: Buffer): DecodeArgs = {
-    val __obj = js.Dynamic.literal(packet = packet)
+    val __obj = js.Dynamic.literal(packet = packet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DecodeArgs]
   }

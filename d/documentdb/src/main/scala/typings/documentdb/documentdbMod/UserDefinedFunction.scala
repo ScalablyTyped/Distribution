@@ -17,10 +17,10 @@ object UserDefinedFunction {
     serverScript: UserFunction = null,
     userDefinedFunctionType: UserDefinedFunctionType = null
   ): UserDefinedFunction = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (serverScript != null) __obj.updateDynamic("serverScript")(serverScript.asInstanceOf[js.Any])
-    if (userDefinedFunctionType != null) __obj.updateDynamic("userDefinedFunctionType")(userDefinedFunctionType)
+    if (userDefinedFunctionType != null) __obj.updateDynamic("userDefinedFunctionType")(userDefinedFunctionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefinedFunction]
   }
 }

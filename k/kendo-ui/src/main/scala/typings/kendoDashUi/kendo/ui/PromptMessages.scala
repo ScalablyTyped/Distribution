@@ -13,8 +13,8 @@ object PromptMessages {
   @scala.inline
   def apply(cancel: String = null, okText: String = null): PromptMessages = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (okText != null) __obj.updateDynamic("okText")(okText)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptMessages]
   }
 }

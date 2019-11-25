@@ -31,11 +31,11 @@ object OptionList {
   ): OptionList = {
     val __obj = js.Dynamic.literal()
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (optionList != null) __obj.updateDynamic("optionList")(optionList)
-    if (!js.isUndefined(reverseNameOrder)) __obj.updateDynamic("reverseNameOrder")(reverseNameOrder)
-    if (tableOptions != null) __obj.updateDynamic("tableOptions")(tableOptions)
+    if (optionList != null) __obj.updateDynamic("optionList")(optionList.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseNameOrder)) __obj.updateDynamic("reverseNameOrder")(reverseNameOrder.asInstanceOf[js.Any])
+    if (tableOptions != null) __obj.updateDynamic("tableOptions")(tableOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionList]
   }
 }

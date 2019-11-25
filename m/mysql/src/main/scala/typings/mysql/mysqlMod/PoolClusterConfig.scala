@@ -37,8 +37,8 @@ object PoolClusterConfig {
     restoreNodeTimeout: Int | Double = null
   ): PoolClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canRetry)) __obj.updateDynamic("canRetry")(canRetry)
-    if (defaultSelector != null) __obj.updateDynamic("defaultSelector")(defaultSelector)
+    if (!js.isUndefined(canRetry)) __obj.updateDynamic("canRetry")(canRetry.asInstanceOf[js.Any])
+    if (defaultSelector != null) __obj.updateDynamic("defaultSelector")(defaultSelector.asInstanceOf[js.Any])
     if (removeNodeErrorCount != null) __obj.updateDynamic("removeNodeErrorCount")(removeNodeErrorCount.asInstanceOf[js.Any])
     if (restoreNodeTimeout != null) __obj.updateDynamic("restoreNodeTimeout")(restoreNodeTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolClusterConfig]

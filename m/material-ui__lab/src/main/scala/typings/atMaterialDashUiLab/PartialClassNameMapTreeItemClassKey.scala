@@ -25,12 +25,12 @@ object PartialClassNameMapTreeItemClassKey {
     root: String = null
   ): PartialClassNameMapTreeItemClassKey = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (iconContainer != null) __obj.updateDynamic("iconContainer")(iconContainer)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (iconContainer != null) __obj.updateDynamic("iconContainer")(iconContainer.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTreeItemClassKey]
   }
 }

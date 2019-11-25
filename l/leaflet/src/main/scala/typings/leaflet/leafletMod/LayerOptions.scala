@@ -13,8 +13,8 @@ object LayerOptions {
   @scala.inline
   def apply(attribution: String = null, pane: String = null): LayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
-    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerOptions]
   }
 }

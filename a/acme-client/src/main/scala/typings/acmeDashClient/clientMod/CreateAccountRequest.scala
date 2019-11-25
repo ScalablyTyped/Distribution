@@ -19,10 +19,10 @@ object CreateAccountRequest {
     termsOfServiceAgreed: js.UndefOr[Boolean] = js.undefined
   ): CreateAccountRequest = {
     val __obj = js.Dynamic.literal()
-    if (contact != null) __obj.updateDynamic("contact")(contact)
-    if (externalAccountBinding != null) __obj.updateDynamic("externalAccountBinding")(externalAccountBinding)
-    if (!js.isUndefined(onlyReturnExisting)) __obj.updateDynamic("onlyReturnExisting")(onlyReturnExisting)
-    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed)
+    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
+    if (externalAccountBinding != null) __obj.updateDynamic("externalAccountBinding")(externalAccountBinding.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyReturnExisting)) __obj.updateDynamic("onlyReturnExisting")(onlyReturnExisting.asInstanceOf[js.Any])
+    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccountRequest]
   }
 }

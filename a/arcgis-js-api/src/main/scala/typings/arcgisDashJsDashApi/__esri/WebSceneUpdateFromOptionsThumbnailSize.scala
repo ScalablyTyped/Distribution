@@ -30,7 +30,7 @@ object WebSceneUpdateFromOptionsThumbnailSize {
     propertyIsEnumerable: PropertyKey => Boolean,
     width: Double
   ): WebSceneUpdateFromOptionsThumbnailSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebSceneUpdateFromOptionsThumbnailSize]
   }

@@ -14,8 +14,8 @@ trait Anon_Filters extends js.Object {
 object Anon_Filters {
   @scala.inline
   def apply(key: String, rangeBehavior: String, filters: Variables = null): Anon_Filters = {
-    val __obj = js.Dynamic.literal(key = key, rangeBehavior = rangeBehavior)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], rangeBehavior = rangeBehavior.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Filters]
   }
 }

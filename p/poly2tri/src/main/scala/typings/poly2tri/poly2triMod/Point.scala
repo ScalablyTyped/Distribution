@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param x    coordinate (0 if undefined)
   * @param y    coordinate (0 if undefined)
   */
-class Point () extends XY {
+class Point () extends IPointLike {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   /** x coordinate */

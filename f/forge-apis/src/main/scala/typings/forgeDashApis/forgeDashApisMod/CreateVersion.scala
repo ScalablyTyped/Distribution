@@ -13,8 +13,8 @@ object CreateVersion {
   @scala.inline
   def apply(data: CreateVersionData = null, jsonapi: JsonApiVersionJsonapi = null): CreateVersion = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (jsonapi != null) __obj.updateDynamic("jsonapi")(jsonapi)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (jsonapi != null) __obj.updateDynamic("jsonapi")(jsonapi.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVersion]
   }
 }

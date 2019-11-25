@@ -20,9 +20,9 @@ object CreateEventArgs {
   @scala.inline
   def apply(diagramId: String = null, model: js.Any = null, `type`: String = null): CreateEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEventArgs]
   }
 }

@@ -20,8 +20,8 @@ object AsObject {
     signedTransactionWithProof: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.SignedTransactionWithProof.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (proofOfCurrentSequenceNumber != null) __obj.updateDynamic("proofOfCurrentSequenceNumber")(proofOfCurrentSequenceNumber)
-    if (signedTransactionWithProof != null) __obj.updateDynamic("signedTransactionWithProof")(signedTransactionWithProof)
+    if (proofOfCurrentSequenceNumber != null) __obj.updateDynamic("proofOfCurrentSequenceNumber")(proofOfCurrentSequenceNumber.asInstanceOf[js.Any])
+    if (signedTransactionWithProof != null) __obj.updateDynamic("signedTransactionWithProof")(signedTransactionWithProof.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

@@ -23,7 +23,7 @@ object AlertButton {
     val __obj = js.Dynamic.literal()
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertButton]
   }
 }

@@ -29,8 +29,8 @@ object CaptionElementProps {
     months: js.Array[String] = null,
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null
   ): CaptionElementProps = {
-    val __obj = js.Dynamic.literal(classNames = classNames, date = date, locale = locale, localeUtils = localeUtils)
-    if (months != null) __obj.updateDynamic("months")(months)
+    val __obj = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], localeUtils = localeUtils.asInstanceOf[js.Any])
+    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[CaptionElementProps]
   }

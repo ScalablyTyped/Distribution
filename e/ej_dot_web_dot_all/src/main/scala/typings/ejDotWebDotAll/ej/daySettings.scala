@@ -13,7 +13,7 @@ trait daySettings extends js.Object {
 object daySettings {
   @scala.inline
   def apply(names: js.Array[String], namesAbbr: js.Array[String], namesShort: js.Array[String]): daySettings = {
-    val __obj = js.Dynamic.literal(names = names, namesAbbr = namesAbbr, namesShort = namesShort)
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any], namesAbbr = namesAbbr.asInstanceOf[js.Any], namesShort = namesShort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[daySettings]
   }

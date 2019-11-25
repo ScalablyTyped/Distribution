@@ -17,7 +17,7 @@ trait OnfleetHub extends js.Object {
 object OnfleetHub {
   @scala.inline
   def apply(address: Anon_Apartment, id: String, location: Location, name: String, teams: js.Array[String]): OnfleetHub = {
-    val __obj = js.Dynamic.literal(address = address, id = id, location = location, name = name, teams = teams)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnfleetHub]
   }

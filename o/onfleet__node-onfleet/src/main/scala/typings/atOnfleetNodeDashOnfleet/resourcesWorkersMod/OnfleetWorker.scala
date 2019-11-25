@@ -54,11 +54,11 @@ object OnfleetWorker {
     imageUrl: String = null,
     vehicle: Vehicle = null
   ): OnfleetWorker = {
-    val __obj = js.Dynamic.literal(accountStatus = accountStatus, capacity = capacity, displayName = displayName, id = id, location = location, metadata = metadata, name = name, onDuty = onDuty, organization = organization, phone = phone, tasks = tasks, teams = teams, timeCreated = timeCreated, timeLastModified = timeLastModified, timeLastSeen = timeLastSeen, userData = userData)
-    if (activeTask != null) __obj.updateDynamic("activeTask")(activeTask)
+    val __obj = js.Dynamic.literal(accountStatus = accountStatus.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onDuty = onDuty.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], timeLastSeen = timeLastSeen.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
+    if (activeTask != null) __obj.updateDynamic("activeTask")(activeTask.asInstanceOf[js.Any])
     if (delayTime != null) __obj.updateDynamic("delayTime")(delayTime.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (vehicle != null) __obj.updateDynamic("vehicle")(vehicle)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (vehicle != null) __obj.updateDynamic("vehicle")(vehicle.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnfleetWorker]
   }
 }

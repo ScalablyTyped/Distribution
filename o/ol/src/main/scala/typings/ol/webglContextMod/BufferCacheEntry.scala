@@ -12,7 +12,7 @@ trait BufferCacheEntry extends js.Object {
 object BufferCacheEntry {
   @scala.inline
   def apply(buf: typings.ol.webglBufferMod.default, buffer: typings.ol.webglBufferMod.default): BufferCacheEntry = {
-    val __obj = js.Dynamic.literal(buf = buf, buffer = buffer)
+    val __obj = js.Dynamic.literal(buf = buf.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BufferCacheEntry]
   }

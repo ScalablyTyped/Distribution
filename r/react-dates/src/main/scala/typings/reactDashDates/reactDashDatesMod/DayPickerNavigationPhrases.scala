@@ -14,8 +14,8 @@ object DayPickerNavigationPhrases {
   @scala.inline
   def apply(jumpToNextMonth: String = null, jumpToPrevMonth: String = null): DayPickerNavigationPhrases = {
     val __obj = js.Dynamic.literal()
-    if (jumpToNextMonth != null) __obj.updateDynamic("jumpToNextMonth")(jumpToNextMonth)
-    if (jumpToPrevMonth != null) __obj.updateDynamic("jumpToPrevMonth")(jumpToPrevMonth)
+    if (jumpToNextMonth != null) __obj.updateDynamic("jumpToNextMonth")(jumpToNextMonth.asInstanceOf[js.Any])
+    if (jumpToPrevMonth != null) __obj.updateDynamic("jumpToPrevMonth")(jumpToPrevMonth.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayPickerNavigationPhrases]
   }
 }

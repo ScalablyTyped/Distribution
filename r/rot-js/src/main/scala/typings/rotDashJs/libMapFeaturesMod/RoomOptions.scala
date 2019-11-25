@@ -12,7 +12,7 @@ trait RoomOptions extends js.Object {
 object RoomOptions {
   @scala.inline
   def apply(roomHeight: js.Tuple2[Double, Double], roomWidth: js.Tuple2[Double, Double]): RoomOptions = {
-    val __obj = js.Dynamic.literal(roomHeight = roomHeight, roomWidth = roomWidth)
+    val __obj = js.Dynamic.literal(roomHeight = roomHeight.asInstanceOf[js.Any], roomWidth = roomWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RoomOptions]
   }

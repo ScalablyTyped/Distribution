@@ -23,12 +23,12 @@ object GraphQLDirectiveConfig {
     onFragment: js.UndefOr[Boolean] = js.undefined,
     onOperation: js.UndefOr[Boolean] = js.undefined
   ): GraphQLDirectiveConfig = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(onField)) __obj.updateDynamic("onField")(onField)
-    if (!js.isUndefined(onFragment)) __obj.updateDynamic("onFragment")(onFragment)
-    if (!js.isUndefined(onOperation)) __obj.updateDynamic("onOperation")(onOperation)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(onField)) __obj.updateDynamic("onField")(onField.asInstanceOf[js.Any])
+    if (!js.isUndefined(onFragment)) __obj.updateDynamic("onFragment")(onFragment.asInstanceOf[js.Any])
+    if (!js.isUndefined(onOperation)) __obj.updateDynamic("onOperation")(onOperation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLDirectiveConfig]
   }
 }

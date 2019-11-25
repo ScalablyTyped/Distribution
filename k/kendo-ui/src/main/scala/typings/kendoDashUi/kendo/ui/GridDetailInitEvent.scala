@@ -24,11 +24,11 @@ object GridDetailInitEvent {
     detailRow: JQuery = null,
     masterRow: JQuery = null
   ): GridDetailInitEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (detailCell != null) __obj.updateDynamic("detailCell")(detailCell)
-    if (detailRow != null) __obj.updateDynamic("detailRow")(detailRow)
-    if (masterRow != null) __obj.updateDynamic("masterRow")(masterRow)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (detailCell != null) __obj.updateDynamic("detailCell")(detailCell.asInstanceOf[js.Any])
+    if (detailRow != null) __obj.updateDynamic("detailRow")(detailRow.asInstanceOf[js.Any])
+    if (masterRow != null) __obj.updateDynamic("masterRow")(masterRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridDetailInitEvent]
   }
 }

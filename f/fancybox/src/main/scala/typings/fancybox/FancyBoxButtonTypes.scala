@@ -25,7 +25,7 @@ object FancyBoxButtonTypes {
     thumbs: String,
     zoom: String
   ): FancyBoxButtonTypes = {
-    val __obj = js.Dynamic.literal(close = close, download = download, fullScreen = fullScreen, share = share, slideShow = slideShow, thumbs = thumbs, zoom = zoom)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], download = download.asInstanceOf[js.Any], fullScreen = fullScreen.asInstanceOf[js.Any], share = share.asInstanceOf[js.Any], slideShow = slideShow.asInstanceOf[js.Any], thumbs = thumbs.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FancyBoxButtonTypes]
   }

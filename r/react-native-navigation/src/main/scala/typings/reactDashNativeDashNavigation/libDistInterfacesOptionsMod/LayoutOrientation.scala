@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait LayoutOrientation extends js.Object
 
+object LayoutOrientation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def landscape: typings.reactDashNativeDashNavigation.reactDashNativeDashNavigationStrings.landscape = this.cast("landscape")
+  @scala.inline
+  def portrait: typings.reactDashNativeDashNavigation.reactDashNativeDashNavigationStrings.portrait = this.cast("portrait")
+}
+

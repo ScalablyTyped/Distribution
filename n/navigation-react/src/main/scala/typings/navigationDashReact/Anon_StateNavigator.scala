@@ -12,7 +12,7 @@ trait Anon_StateNavigator extends js.Object {
 object Anon_StateNavigator {
   @scala.inline
   def apply(stateNavigator: StateNavigator): Anon_StateNavigator = {
-    val __obj = js.Dynamic.literal(stateNavigator = stateNavigator)
+    val __obj = js.Dynamic.literal(stateNavigator = stateNavigator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_StateNavigator]
   }

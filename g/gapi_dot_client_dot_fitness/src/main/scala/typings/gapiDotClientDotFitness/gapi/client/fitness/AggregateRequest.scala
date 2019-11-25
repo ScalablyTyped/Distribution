@@ -52,14 +52,14 @@ object AggregateRequest {
     startTimeMillis: String = null
   ): AggregateRequest = {
     val __obj = js.Dynamic.literal()
-    if (aggregateBy != null) __obj.updateDynamic("aggregateBy")(aggregateBy)
-    if (bucketByActivitySegment != null) __obj.updateDynamic("bucketByActivitySegment")(bucketByActivitySegment)
-    if (bucketByActivityType != null) __obj.updateDynamic("bucketByActivityType")(bucketByActivityType)
-    if (bucketBySession != null) __obj.updateDynamic("bucketBySession")(bucketBySession)
-    if (bucketByTime != null) __obj.updateDynamic("bucketByTime")(bucketByTime)
-    if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis)
-    if (filteredDataQualityStandard != null) __obj.updateDynamic("filteredDataQualityStandard")(filteredDataQualityStandard)
-    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis)
+    if (aggregateBy != null) __obj.updateDynamic("aggregateBy")(aggregateBy.asInstanceOf[js.Any])
+    if (bucketByActivitySegment != null) __obj.updateDynamic("bucketByActivitySegment")(bucketByActivitySegment.asInstanceOf[js.Any])
+    if (bucketByActivityType != null) __obj.updateDynamic("bucketByActivityType")(bucketByActivityType.asInstanceOf[js.Any])
+    if (bucketBySession != null) __obj.updateDynamic("bucketBySession")(bucketBySession.asInstanceOf[js.Any])
+    if (bucketByTime != null) __obj.updateDynamic("bucketByTime")(bucketByTime.asInstanceOf[js.Any])
+    if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis.asInstanceOf[js.Any])
+    if (filteredDataQualityStandard != null) __obj.updateDynamic("filteredDataQualityStandard")(filteredDataQualityStandard.asInstanceOf[js.Any])
+    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateRequest]
   }
 }

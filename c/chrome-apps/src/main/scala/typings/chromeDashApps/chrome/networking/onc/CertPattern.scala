@@ -34,10 +34,10 @@ object CertPattern {
     IssuerSubjectPattern: IssuerSubjectPattern = null
   ): CertPattern = {
     val __obj = js.Dynamic.literal()
-    if (EnrollmentURI != null) __obj.updateDynamic("EnrollmentURI")(EnrollmentURI)
-    if (Issuer != null) __obj.updateDynamic("Issuer")(Issuer)
-    if (IssuerCARef != null) __obj.updateDynamic("IssuerCARef")(IssuerCARef)
-    if (IssuerSubjectPattern != null) __obj.updateDynamic("IssuerSubjectPattern")(IssuerSubjectPattern)
+    if (EnrollmentURI != null) __obj.updateDynamic("EnrollmentURI")(EnrollmentURI.asInstanceOf[js.Any])
+    if (Issuer != null) __obj.updateDynamic("Issuer")(Issuer.asInstanceOf[js.Any])
+    if (IssuerCARef != null) __obj.updateDynamic("IssuerCARef")(IssuerCARef.asInstanceOf[js.Any])
+    if (IssuerSubjectPattern != null) __obj.updateDynamic("IssuerSubjectPattern")(IssuerSubjectPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertPattern]
   }
 }

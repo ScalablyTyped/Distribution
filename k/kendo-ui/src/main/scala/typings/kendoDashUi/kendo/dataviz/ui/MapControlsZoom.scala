@@ -12,7 +12,7 @@ object MapControlsZoom {
   @scala.inline
   def apply(position: String = null): MapControlsZoom = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapControlsZoom]
   }
 }

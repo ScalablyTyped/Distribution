@@ -30,15 +30,15 @@ object BinData {
     productId: String = null
   ): BinData = {
     val __obj = js.Dynamic.literal()
-    if (commercial != null) __obj.updateDynamic("commercial")(commercial)
-    if (countryOfIssuance != null) __obj.updateDynamic("countryOfIssuance")(countryOfIssuance)
-    if (debit != null) __obj.updateDynamic("debit")(debit)
-    if (durbinRegulated != null) __obj.updateDynamic("durbinRegulated")(durbinRegulated)
-    if (healthcare != null) __obj.updateDynamic("healthcare")(healthcare)
-    if (issuingBank != null) __obj.updateDynamic("issuingBank")(issuingBank)
-    if (payroll != null) __obj.updateDynamic("payroll")(payroll)
-    if (prepaid != null) __obj.updateDynamic("prepaid")(prepaid)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (commercial != null) __obj.updateDynamic("commercial")(commercial.asInstanceOf[js.Any])
+    if (countryOfIssuance != null) __obj.updateDynamic("countryOfIssuance")(countryOfIssuance.asInstanceOf[js.Any])
+    if (debit != null) __obj.updateDynamic("debit")(debit.asInstanceOf[js.Any])
+    if (durbinRegulated != null) __obj.updateDynamic("durbinRegulated")(durbinRegulated.asInstanceOf[js.Any])
+    if (healthcare != null) __obj.updateDynamic("healthcare")(healthcare.asInstanceOf[js.Any])
+    if (issuingBank != null) __obj.updateDynamic("issuingBank")(issuingBank.asInstanceOf[js.Any])
+    if (payroll != null) __obj.updateDynamic("payroll")(payroll.asInstanceOf[js.Any])
+    if (prepaid != null) __obj.updateDynamic("prepaid")(prepaid.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinData]
   }
 }

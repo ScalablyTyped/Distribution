@@ -13,8 +13,8 @@ trait JsonValue extends _StoreValue {
 object JsonValue {
   @scala.inline
   def apply(json: js.Any, `type`: json): JsonValue = {
-    val __obj = js.Dynamic.literal(json = json)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonValue]
   }
 }

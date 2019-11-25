@@ -19,7 +19,7 @@ object PageSizeChangedEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, pageSize: Int | Double = null): PageSizeChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSizeChangedEventUIParam]
   }

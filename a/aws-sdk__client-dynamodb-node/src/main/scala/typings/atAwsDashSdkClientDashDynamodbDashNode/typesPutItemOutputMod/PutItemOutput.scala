@@ -38,10 +38,10 @@ object PutItemOutput {
     ConsumedCapacity: _UnmarshalledConsumedCapacity = null,
     ItemCollectionMetrics: _UnmarshalledItemCollectionMetrics = null
   ): PutItemOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
-    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
-    if (ItemCollectionMetrics != null) __obj.updateDynamic("ItemCollectionMetrics")(ItemCollectionMetrics)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity.asInstanceOf[js.Any])
+    if (ItemCollectionMetrics != null) __obj.updateDynamic("ItemCollectionMetrics")(ItemCollectionMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutItemOutput]
   }
 }

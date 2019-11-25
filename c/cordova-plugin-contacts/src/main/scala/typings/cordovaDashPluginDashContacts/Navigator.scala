@@ -12,7 +12,7 @@ trait Navigator extends js.Object {
 object Navigator {
   @scala.inline
   def apply(contacts: Contacts): Navigator = {
-    val __obj = js.Dynamic.literal(contacts = contacts)
+    val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Navigator]
   }

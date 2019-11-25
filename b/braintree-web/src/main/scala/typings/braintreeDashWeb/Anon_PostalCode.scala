@@ -12,7 +12,7 @@ object Anon_PostalCode {
   @scala.inline
   def apply(postalCode: String = null): Anon_PostalCode = {
     val __obj = js.Dynamic.literal()
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PostalCode]
   }
 }

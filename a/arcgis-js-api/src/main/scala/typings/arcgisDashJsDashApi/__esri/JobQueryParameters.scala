@@ -58,7 +58,7 @@ object JobQueryParameters {
     user: String,
     where: String
   ): JobQueryParameters = {
-    val __obj = js.Dynamic.literal(aliases = aliases, constructor = constructor, fields = fields, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), orderBy = orderBy, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tables = tables, user = user, where = where)
+    val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), orderBy = orderBy.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tables = tables.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobQueryParameters]
   }

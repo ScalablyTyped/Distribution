@@ -33,8 +33,8 @@ trait IImageInfo extends js.Object {
 object IImageInfo {
   @scala.inline
   def apply(height: Double, source: String, `type`: String, width: Double): IImageInfo = {
-    val __obj = js.Dynamic.literal(height = height, source = source, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImageInfo]
   }
 }

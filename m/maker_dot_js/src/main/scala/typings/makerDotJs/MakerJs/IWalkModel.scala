@@ -22,7 +22,7 @@ object IWalkModel {
     route: js.Array[String],
     routeKey: String
   ): IWalkModel = {
-    val __obj = js.Dynamic.literal(childId = childId, childModel = childModel, layer = layer, offset = offset, parentModel = parentModel, route = route, routeKey = routeKey)
+    val __obj = js.Dynamic.literal(childId = childId.asInstanceOf[js.Any], childModel = childModel.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], parentModel = parentModel.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any], routeKey = routeKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWalkModel]
   }

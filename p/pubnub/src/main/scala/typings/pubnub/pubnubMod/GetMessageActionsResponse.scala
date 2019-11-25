@@ -13,9 +13,9 @@ trait GetMessageActionsResponse extends js.Object {
 object GetMessageActionsResponse {
   @scala.inline
   def apply(data: js.Array[MessageAction], end: String = null, start: String = null): GetMessageActionsResponse = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (start != null) __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMessageActionsResponse]
   }
 }

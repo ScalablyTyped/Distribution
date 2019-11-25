@@ -15,7 +15,7 @@ trait Anon_Authorizationid extends js.Object {
 object Anon_Authorizationid {
   @scala.inline
   def apply(authorization_id: String, create_time: String, id: String, intent: String, state: String): Anon_Authorizationid = {
-    val __obj = js.Dynamic.literal(authorization_id = authorization_id, create_time = create_time, id = id, intent = intent, state = state)
+    val __obj = js.Dynamic.literal(authorization_id = authorization_id.asInstanceOf[js.Any], create_time = create_time.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Authorizationid]
   }

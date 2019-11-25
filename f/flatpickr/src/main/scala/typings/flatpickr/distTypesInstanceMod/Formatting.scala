@@ -16,7 +16,7 @@ trait Formatting extends js.Object {
 object Formatting {
   @scala.inline
   def apply(formats: Formats, revFormat: RevFormat, tokenRegex: TokenRegex): Formatting = {
-    val __obj = js.Dynamic.literal(formats = formats, revFormat = revFormat, tokenRegex = tokenRegex)
+    val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], revFormat = revFormat.asInstanceOf[js.Any], tokenRegex = tokenRegex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Formatting]
   }

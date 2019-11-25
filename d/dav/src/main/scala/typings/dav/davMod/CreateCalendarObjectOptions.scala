@@ -27,9 +27,9 @@ trait CreateCalendarObjectOptions extends js.Object {
 object CreateCalendarObjectOptions {
   @scala.inline
   def apply(data: String, filename: String, sandbox: Sandbox = null, xhr: Transport = null): CreateCalendarObjectOptions = {
-    val __obj = js.Dynamic.literal(data = data, filename = filename)
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCalendarObjectOptions]
   }
 }

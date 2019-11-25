@@ -37,12 +37,12 @@ object IDeployJobStatus {
     buildstatus: String = null,
     consistencyErrors: js.Array[IProblem] = null
   ): IDeployJobStatus = {
-    val __obj = js.Dynamic.literal(jobid = jobid, startTime = startTime, status = status, trace = trace)
+    val __obj = js.Dynamic.literal(jobid = jobid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (appUrl != null) __obj.updateDynamic("appUrl")(appUrl)
-    if (buildErrors != null) __obj.updateDynamic("buildErrors")(buildErrors)
-    if (buildstatus != null) __obj.updateDynamic("buildstatus")(buildstatus)
-    if (consistencyErrors != null) __obj.updateDynamic("consistencyErrors")(consistencyErrors)
+    if (appUrl != null) __obj.updateDynamic("appUrl")(appUrl.asInstanceOf[js.Any])
+    if (buildErrors != null) __obj.updateDynamic("buildErrors")(buildErrors.asInstanceOf[js.Any])
+    if (buildstatus != null) __obj.updateDynamic("buildstatus")(buildstatus.asInstanceOf[js.Any])
+    if (consistencyErrors != null) __obj.updateDynamic("consistencyErrors")(consistencyErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeployJobStatus]
   }
 }

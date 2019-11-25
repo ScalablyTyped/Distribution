@@ -33,8 +33,8 @@ object PageOptions {
     onUnload: () => Unit = null
   ): PageOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction0(onReady))

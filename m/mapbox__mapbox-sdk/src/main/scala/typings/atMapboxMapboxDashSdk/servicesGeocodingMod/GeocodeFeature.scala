@@ -98,10 +98,10 @@ object GeocodeFeature {
     address: String = null,
     bbox: js.Array[Double] = null
   ): GeocodeFeature = {
-    val __obj = js.Dynamic.literal(center = center, context = context, geometry = geometry, id = id, language = language, matching_place_name = matching_place_name, matching_text = matching_text, place_name = place_name, place_type = place_type, properties = properties, relevance = relevance, text = text)
-    __obj.updateDynamic("type")(`type`)
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (bbox != null) __obj.updateDynamic("bbox")(bbox)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], matching_place_name = matching_place_name.asInstanceOf[js.Any], matching_text = matching_text.asInstanceOf[js.Any], place_name = place_name.asInstanceOf[js.Any], place_type = place_type.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], relevance = relevance.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodeFeature]
   }
 }

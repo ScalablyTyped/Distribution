@@ -38,19 +38,19 @@ object FilterAdvancedDetails {
     overrideOutputField: js.UndefOr[Boolean] = js.undefined
   ): FilterAdvancedDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (extractA != null) __obj.updateDynamic("extractA")(extractA)
-    if (extractB != null) __obj.updateDynamic("extractB")(extractB)
-    if (fieldA != null) __obj.updateDynamic("fieldA")(fieldA)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (extractA != null) __obj.updateDynamic("extractA")(extractA.asInstanceOf[js.Any])
+    if (extractB != null) __obj.updateDynamic("extractB")(extractB.asInstanceOf[js.Any])
+    if (fieldA != null) __obj.updateDynamic("fieldA")(fieldA.asInstanceOf[js.Any])
     if (fieldAIndex != null) __obj.updateDynamic("fieldAIndex")(fieldAIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(fieldARequired)) __obj.updateDynamic("fieldARequired")(fieldARequired)
-    if (fieldB != null) __obj.updateDynamic("fieldB")(fieldB)
+    if (!js.isUndefined(fieldARequired)) __obj.updateDynamic("fieldARequired")(fieldARequired.asInstanceOf[js.Any])
+    if (fieldB != null) __obj.updateDynamic("fieldB")(fieldB.asInstanceOf[js.Any])
     if (fieldBIndex != null) __obj.updateDynamic("fieldBIndex")(fieldBIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(fieldBRequired)) __obj.updateDynamic("fieldBRequired")(fieldBRequired)
-    if (outputConstructor != null) __obj.updateDynamic("outputConstructor")(outputConstructor)
-    if (outputToField != null) __obj.updateDynamic("outputToField")(outputToField)
+    if (!js.isUndefined(fieldBRequired)) __obj.updateDynamic("fieldBRequired")(fieldBRequired.asInstanceOf[js.Any])
+    if (outputConstructor != null) __obj.updateDynamic("outputConstructor")(outputConstructor.asInstanceOf[js.Any])
+    if (outputToField != null) __obj.updateDynamic("outputToField")(outputToField.asInstanceOf[js.Any])
     if (outputToFieldIndex != null) __obj.updateDynamic("outputToFieldIndex")(outputToFieldIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideOutputField)) __obj.updateDynamic("overrideOutputField")(overrideOutputField)
+    if (!js.isUndefined(overrideOutputField)) __obj.updateDynamic("overrideOutputField")(overrideOutputField.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterAdvancedDetails]
   }
 }

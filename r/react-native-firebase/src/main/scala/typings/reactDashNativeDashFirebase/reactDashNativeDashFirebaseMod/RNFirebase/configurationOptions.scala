@@ -90,18 +90,18 @@ object configurationOptions {
     trackingID: String = null
   ): configurationOptions = {
     val __obj = js.Dynamic.literal()
-    if (APIKey != null) __obj.updateDynamic("APIKey")(APIKey)
-    if (GCMSenderID != null) __obj.updateDynamic("GCMSenderID")(GCMSenderID)
-    if (androidClientID != null) __obj.updateDynamic("androidClientID")(androidClientID)
-    if (bundleID != null) __obj.updateDynamic("bundleID")(bundleID)
-    if (clientID != null) __obj.updateDynamic("clientID")(clientID)
-    if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (deepLinkURLScheme != null) __obj.updateDynamic("deepLinkURLScheme")(deepLinkURLScheme)
-    if (googleAppID != null) __obj.updateDynamic("googleAppID")(googleAppID)
-    if (!js.isUndefined(persistence)) __obj.updateDynamic("persistence")(persistence)
-    if (storageBucket != null) __obj.updateDynamic("storageBucket")(storageBucket)
-    if (trackingID != null) __obj.updateDynamic("trackingID")(trackingID)
+    if (APIKey != null) __obj.updateDynamic("APIKey")(APIKey.asInstanceOf[js.Any])
+    if (GCMSenderID != null) __obj.updateDynamic("GCMSenderID")(GCMSenderID.asInstanceOf[js.Any])
+    if (androidClientID != null) __obj.updateDynamic("androidClientID")(androidClientID.asInstanceOf[js.Any])
+    if (bundleID != null) __obj.updateDynamic("bundleID")(bundleID.asInstanceOf[js.Any])
+    if (clientID != null) __obj.updateDynamic("clientID")(clientID.asInstanceOf[js.Any])
+    if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (deepLinkURLScheme != null) __obj.updateDynamic("deepLinkURLScheme")(deepLinkURLScheme.asInstanceOf[js.Any])
+    if (googleAppID != null) __obj.updateDynamic("googleAppID")(googleAppID.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistence)) __obj.updateDynamic("persistence")(persistence.asInstanceOf[js.Any])
+    if (storageBucket != null) __obj.updateDynamic("storageBucket")(storageBucket.asInstanceOf[js.Any])
+    if (trackingID != null) __obj.updateDynamic("trackingID")(trackingID.asInstanceOf[js.Any])
     __obj.asInstanceOf[configurationOptions]
   }
 }

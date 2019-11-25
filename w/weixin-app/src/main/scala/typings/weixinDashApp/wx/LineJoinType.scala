@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait LineJoinType extends js.Object
 
+object LineJoinType {
+  @scala.inline
+  def bevel: typings.weixinDashApp.weixinDashAppStrings.bevel = this.cast("bevel")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def miter: typings.weixinDashApp.weixinDashAppStrings.miter = this.cast("miter")
+  @scala.inline
+  def round: typings.weixinDashApp.weixinDashAppStrings.round = this.cast("round")
+}
+

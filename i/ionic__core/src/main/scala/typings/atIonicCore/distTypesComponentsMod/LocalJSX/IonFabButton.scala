@@ -6,8 +6,6 @@ import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.reset
 import typings.atIonicCore.atIonicCoreStrings.small
 import typings.atIonicCore.atIonicCoreStrings.submit
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +19,9 @@ trait IonFabButton extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * If `true`, the user cannot interact with the fab button.
     */
@@ -53,7 +53,9 @@ trait IonFabButton extends js.Object {
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: js.UndefOr[RouterDirection] = js.undefined
+  var routerDirection: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
+  ] = js.undefined
   /**
     * If `true`, the fab button will show when in a fab-list.
     */
@@ -80,7 +82,7 @@ object IonFabButton {
   @scala.inline
   def apply(
     activated: js.UndefOr[Boolean] = js.undefined,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     download: String = null,
     href: String = null,
@@ -88,7 +90,7 @@ object IonFabButton {
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     rel: String = null,
-    routerDirection: RouterDirection = null,
+    routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = null,
     show: js.UndefOr[Boolean] = js.undefined,
     size: small = null,
     target: String = null,
@@ -96,20 +98,20 @@ object IonFabButton {
     `type`: submit | reset | button = null
   ): IonFabButton = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated)
+    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (download != null) __obj.updateDynamic("download")(download)
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
-    if (rel != null) __obj.updateDynamic("rel")(rel)
-    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
+    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonFabButton]
   }

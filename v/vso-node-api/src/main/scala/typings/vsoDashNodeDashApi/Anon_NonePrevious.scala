@@ -13,7 +13,7 @@ trait Anon_NonePrevious extends js.Object {
 object Anon_NonePrevious {
   @scala.inline
   def apply(none: Double, previous: Double, useRename: Double): Anon_NonePrevious = {
-    val __obj = js.Dynamic.literal(none = none, previous = previous, useRename = useRename)
+    val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any], useRename = useRename.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NonePrevious]
   }

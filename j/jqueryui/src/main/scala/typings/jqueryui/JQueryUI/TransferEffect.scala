@@ -13,8 +13,8 @@ object TransferEffect {
   @scala.inline
   def apply(className: String = null, to: String = null): TransferEffect = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferEffect]
   }
 }

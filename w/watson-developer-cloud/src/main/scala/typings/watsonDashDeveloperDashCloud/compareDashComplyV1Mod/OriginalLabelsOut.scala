@@ -22,9 +22,9 @@ object OriginalLabelsOut {
     types: js.Array[TypeLabel] = null
   ): OriginalLabelsOut = {
     val __obj = js.Dynamic.literal()
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (modification != null) __obj.updateDynamic("modification")(modification)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (modification != null) __obj.updateDynamic("modification")(modification.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginalLabelsOut]
   }
 }

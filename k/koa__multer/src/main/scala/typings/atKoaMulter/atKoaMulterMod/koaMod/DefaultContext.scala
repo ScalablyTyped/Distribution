@@ -12,7 +12,7 @@ trait DefaultContext extends js.Object {
 object DefaultContext {
   @scala.inline
   def apply(file: typings.std.File, files: js.Array[typings.std.File]): DefaultContext = {
-    val __obj = js.Dynamic.literal(file = file, files = files)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefaultContext]
   }

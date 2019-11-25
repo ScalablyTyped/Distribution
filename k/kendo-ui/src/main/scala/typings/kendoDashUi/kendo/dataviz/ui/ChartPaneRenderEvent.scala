@@ -20,10 +20,10 @@ object ChartPaneRenderEvent {
     name: String = null,
     pane: typings.kendoDashUi.kendo.dataviz.ChartPane = null
   ): ChartPaneRenderEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPaneRenderEvent]
   }
 }

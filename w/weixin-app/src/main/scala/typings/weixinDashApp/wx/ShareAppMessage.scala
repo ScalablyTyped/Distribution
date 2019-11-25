@@ -46,12 +46,12 @@ object ShareAppMessage {
   ): ShareAppMessage = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareAppMessage]
   }
 }

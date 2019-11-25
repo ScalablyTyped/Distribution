@@ -44,11 +44,11 @@ object Anon_CommitCharactersSupport {
     snippetSupport: js.UndefOr[Boolean] = js.undefined
   ): Anon_CommitCharactersSupport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(commitCharactersSupport)) __obj.updateDynamic("commitCharactersSupport")(commitCharactersSupport)
-    if (!js.isUndefined(deprecatedSupport)) __obj.updateDynamic("deprecatedSupport")(deprecatedSupport)
-    if (documentationFormat != null) __obj.updateDynamic("documentationFormat")(documentationFormat)
-    if (!js.isUndefined(preselectSupport)) __obj.updateDynamic("preselectSupport")(preselectSupport)
-    if (!js.isUndefined(snippetSupport)) __obj.updateDynamic("snippetSupport")(snippetSupport)
+    if (!js.isUndefined(commitCharactersSupport)) __obj.updateDynamic("commitCharactersSupport")(commitCharactersSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecatedSupport)) __obj.updateDynamic("deprecatedSupport")(deprecatedSupport.asInstanceOf[js.Any])
+    if (documentationFormat != null) __obj.updateDynamic("documentationFormat")(documentationFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(preselectSupport)) __obj.updateDynamic("preselectSupport")(preselectSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(snippetSupport)) __obj.updateDynamic("snippetSupport")(snippetSupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommitCharactersSupport]
   }
 }

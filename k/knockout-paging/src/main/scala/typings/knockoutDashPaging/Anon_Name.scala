@@ -15,8 +15,8 @@ object Anon_Name {
     sliding: KnockoutSlidingPageGenerator,
     StringDictionary: /* name */ StringDictionary[KnockoutPageGenerator] = null
   ): Anon_Name = {
-    val __obj = js.Dynamic.literal(sliding = sliding)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(sliding = sliding.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Name]
   }
 }

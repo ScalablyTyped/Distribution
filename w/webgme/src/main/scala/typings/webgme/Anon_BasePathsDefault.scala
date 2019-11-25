@@ -21,7 +21,7 @@ trait Anon_BasePathsDefault extends js.Object {
 object Anon_BasePathsDefault {
   @scala.inline
   def apply(basePaths: js.Array[String], default: String): Anon_BasePathsDefault = {
-    val __obj = js.Dynamic.literal(basePaths = basePaths, default = default)
+    val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BasePathsDefault]
   }

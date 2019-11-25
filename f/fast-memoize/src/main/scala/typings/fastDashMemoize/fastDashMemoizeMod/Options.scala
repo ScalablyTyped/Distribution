@@ -19,7 +19,7 @@ object Options {
     strategy: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func = null
   ): Options[F] = {
     val __obj = js.Dynamic.literal()
-    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (serializer != null) __obj.updateDynamic("serializer")(js.Any.fromFunction1(serializer))
     if (strategy != null) __obj.updateDynamic("strategy")(js.Any.fromFunction2(strategy))
     __obj.asInstanceOf[Options[F]]

@@ -31,13 +31,13 @@ object IOptions {
     restored: js.Promise[js.Any] = null,
     serviceManager: ServiceManager = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(shell = shell)
-    if (commandLinker != null) __obj.updateDynamic("commandLinker")(commandLinker)
-    if (contextMenuRenderer != null) __obj.updateDynamic("contextMenuRenderer")(contextMenuRenderer)
-    if (docRegistry != null) __obj.updateDynamic("docRegistry")(docRegistry)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (restored != null) __obj.updateDynamic("restored")(restored)
-    if (serviceManager != null) __obj.updateDynamic("serviceManager")(serviceManager)
+    val __obj = js.Dynamic.literal(shell = shell.asInstanceOf[js.Any])
+    if (commandLinker != null) __obj.updateDynamic("commandLinker")(commandLinker.asInstanceOf[js.Any])
+    if (contextMenuRenderer != null) __obj.updateDynamic("contextMenuRenderer")(contextMenuRenderer.asInstanceOf[js.Any])
+    if (docRegistry != null) __obj.updateDynamic("docRegistry")(docRegistry.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (restored != null) __obj.updateDynamic("restored")(restored.asInstanceOf[js.Any])
+    if (serviceManager != null) __obj.updateDynamic("serviceManager")(serviceManager.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

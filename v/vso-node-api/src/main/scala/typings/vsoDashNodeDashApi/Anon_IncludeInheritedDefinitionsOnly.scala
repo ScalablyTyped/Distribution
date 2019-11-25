@@ -21,7 +21,7 @@ object Anon_IncludeInheritedDefinitionsOnly {
     includeServices: Double,
     none: Double
   ): Anon_IncludeInheritedDefinitionsOnly = {
-    val __obj = js.Dynamic.literal(includeInheritedDefinitionsOnly = includeInheritedDefinitionsOnly, includeLastUserAccess = includeLastUserAccess, includeNonInheritedDefinitionsOnly = includeNonInheritedDefinitionsOnly, includeServices = includeServices, none = none)
+    val __obj = js.Dynamic.literal(includeInheritedDefinitionsOnly = includeInheritedDefinitionsOnly.asInstanceOf[js.Any], includeLastUserAccess = includeLastUserAccess.asInstanceOf[js.Any], includeNonInheritedDefinitionsOnly = includeNonInheritedDefinitionsOnly.asInstanceOf[js.Any], includeServices = includeServices.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IncludeInheritedDefinitionsOnly]
   }

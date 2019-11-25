@@ -24,10 +24,10 @@ object HttpRequest {
     port: Int | Double = null,
     query: QueryParameterBag = null
   ): HttpRequest[StreamType] = {
-    val __obj = js.Dynamic.literal(headers = headers, hostname = hostname, method = method, path = path, protocol = protocol)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpRequest[StreamType]]
   }
 }

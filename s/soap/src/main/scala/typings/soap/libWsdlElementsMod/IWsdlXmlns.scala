@@ -28,14 +28,14 @@ object IWsdlXmlns {
     xsd: String = null
   ): IWsdlXmlns = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (__tns__ != null) __obj.updateDynamic("__tns__")(__tns__)
-    if (soap != null) __obj.updateDynamic("soap")(soap)
-    if (tns != null) __obj.updateDynamic("tns")(tns)
-    if (wsam != null) __obj.updateDynamic("wsam")(wsam)
-    if (wsp != null) __obj.updateDynamic("wsp")(wsp)
-    if (wsu != null) __obj.updateDynamic("wsu")(wsu)
-    if (xsd != null) __obj.updateDynamic("xsd")(xsd)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (__tns__ != null) __obj.updateDynamic("__tns__")(__tns__.asInstanceOf[js.Any])
+    if (soap != null) __obj.updateDynamic("soap")(soap.asInstanceOf[js.Any])
+    if (tns != null) __obj.updateDynamic("tns")(tns.asInstanceOf[js.Any])
+    if (wsam != null) __obj.updateDynamic("wsam")(wsam.asInstanceOf[js.Any])
+    if (wsp != null) __obj.updateDynamic("wsp")(wsp.asInstanceOf[js.Any])
+    if (wsu != null) __obj.updateDynamic("wsu")(wsu.asInstanceOf[js.Any])
+    if (xsd != null) __obj.updateDynamic("xsd")(xsd.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWsdlXmlns]
   }
 }

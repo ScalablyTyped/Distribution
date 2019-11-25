@@ -36,16 +36,16 @@ object LinkProps {
     target: String = null
   ): LinkProps = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-    if (activeProps != null) __obj.updateDynamic("activeProps")(activeProps)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (activeProps != null) __obj.updateDynamic("activeProps")(activeProps.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(persistQuery)) __obj.updateDynamic("persistQuery")(persistQuery)
+    if (!js.isUndefined(persistQuery)) __obj.updateDynamic("persistQuery")(persistQuery.asInstanceOf[js.Any])
     if (push != null) __obj.updateDynamic("push")(js.Any.fromFunction2(push))
     if (replace != null) __obj.updateDynamic("replace")(js.Any.fromFunction2(replace))
-    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps]
   }
 }

@@ -12,7 +12,7 @@ object IProcessedSlotProps {
   @scala.inline
   def apply(className: String = null): IProcessedSlotProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProcessedSlotProps]
   }
 }

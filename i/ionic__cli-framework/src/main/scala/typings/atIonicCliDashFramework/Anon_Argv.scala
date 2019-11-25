@@ -15,7 +15,7 @@ trait Anon_Argv[N /* <: INamespace[C, N, M, I, O] */] extends js.Object {
 object Anon_Argv {
   @scala.inline
   def apply[N /* <: INamespace[C, N, M, I, O] */](argv: js.Array[String], env: ProcessEnv, namespace: N): Anon_Argv[N] = {
-    val __obj = js.Dynamic.literal(argv = argv, env = env, namespace = namespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Argv[N]]
   }

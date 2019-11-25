@@ -28,14 +28,14 @@ object Anon_Eot {
     `.woff`: String
   ): Anon_Eot = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic(".eot")(`.eot`)
-    __obj.updateDynamic(".gif")(`.gif`)
-    __obj.updateDynamic(".jpeg")(`.jpeg`)
-    __obj.updateDynamic(".jpg")(`.jpg`)
-    __obj.updateDynamic(".png")(`.png`)
-    __obj.updateDynamic(".svg")(`.svg`)
-    __obj.updateDynamic(".ttf")(`.ttf`)
-    __obj.updateDynamic(".woff")(`.woff`)
+    __obj.updateDynamic(".eot")(`.eot`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".gif")(`.gif`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".jpeg")(`.jpeg`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".jpg")(`.jpg`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".png")(`.png`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".svg")(`.svg`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".ttf")(`.ttf`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".woff")(`.woff`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Eot]
   }
 }

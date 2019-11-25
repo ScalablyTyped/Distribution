@@ -13,8 +13,8 @@ object OrderLineItemProductVariantAttribute {
   @scala.inline
   def apply(dimension: String = null, value: String = null): OrderLineItemProductVariantAttribute = {
     val __obj = js.Dynamic.literal()
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderLineItemProductVariantAttribute]
   }
 }

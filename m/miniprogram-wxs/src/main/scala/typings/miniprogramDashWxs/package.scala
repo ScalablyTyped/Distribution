@@ -56,13 +56,13 @@ package object miniprogramDashWxs {
   /**
     * Make all properties in T optional
     */
-  type Partial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
     */ typings.miniprogramDashWxs.miniprogramDashWxsStrings.Partial with T
   /**
     * From T, pick a set of properties whose keys are in the union K
     */
-  type Pick[T, K /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Pick[T, K /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: T[P]}
     */ typings.miniprogramDashWxs.miniprogramDashWxsStrings.Pick with T
   type PromiseConstructorLike = Instantiable1[
@@ -79,7 +79,7 @@ package object miniprogramDashWxs {
   /**
     * Make all properties in T readonly
     */
-  type Readonly[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ P in keyof T ]: T[P]}
     */ typings.miniprogramDashWxs.miniprogramDashWxsStrings.Readonly with T
   /**
@@ -89,7 +89,7 @@ package object miniprogramDashWxs {
   /**
     * Make all properties in T required
     */
-  type Required[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Required[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: -? T[P]}
     */ typings.miniprogramDashWxs.miniprogramDashWxsStrings.Required with T
   /**

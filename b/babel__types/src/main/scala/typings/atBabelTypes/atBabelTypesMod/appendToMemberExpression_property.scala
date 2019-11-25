@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 object appendToMemberExpression_property extends js.Object {
   def apply[T /* <: Pick[MemberExpression, `object` | property] */](
     member: T,
-    append: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any
+    append: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any
   ): T = js.native
   def apply[T /* <: Pick[MemberExpression, `object` | property] */](
     member: T,
-    append: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any,
+    append: /* import warning: importer.ImportType#apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any,
     computed: Boolean
   ): T = js.native
 }

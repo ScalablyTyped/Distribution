@@ -12,7 +12,7 @@ trait Delay extends js.Object {
 object Delay {
   @scala.inline
   def apply(hide: Double, show: Double): Delay = {
-    val __obj = js.Dynamic.literal(hide = hide, show = show)
+    val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Delay]
   }

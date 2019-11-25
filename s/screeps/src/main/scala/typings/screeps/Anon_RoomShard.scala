@@ -12,7 +12,7 @@ trait Anon_RoomShard extends js.Object {
 object Anon_RoomShard {
   @scala.inline
   def apply(room: String, shard: String): Anon_RoomShard = {
-    val __obj = js.Dynamic.literal(room = room, shard = shard)
+    val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any], shard = shard.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RoomShard]
   }

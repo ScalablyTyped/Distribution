@@ -22,11 +22,11 @@ object OrderinvoicesCreateRefundInvoiceRequest {
     shipmentInvoices: js.Array[ShipmentInvoice] = null
   ): OrderinvoicesCreateRefundInvoiceRequest = {
     val __obj = js.Dynamic.literal()
-    if (invoiceId != null) __obj.updateDynamic("invoiceId")(invoiceId)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (refundOnlyOption != null) __obj.updateDynamic("refundOnlyOption")(refundOnlyOption)
-    if (returnOption != null) __obj.updateDynamic("returnOption")(returnOption)
-    if (shipmentInvoices != null) __obj.updateDynamic("shipmentInvoices")(shipmentInvoices)
+    if (invoiceId != null) __obj.updateDynamic("invoiceId")(invoiceId.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (refundOnlyOption != null) __obj.updateDynamic("refundOnlyOption")(refundOnlyOption.asInstanceOf[js.Any])
+    if (returnOption != null) __obj.updateDynamic("returnOption")(returnOption.asInstanceOf[js.Any])
+    if (shipmentInvoices != null) __obj.updateDynamic("shipmentInvoices")(shipmentInvoices.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderinvoicesCreateRefundInvoiceRequest]
   }
 }

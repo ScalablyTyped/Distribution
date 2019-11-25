@@ -11,8 +11,8 @@ trait TrendingOptions extends BaseOptions {
 object TrendingOptions {
   @scala.inline
   def apply(rating: Rating, fmt: Format = null, limit: Int | Double = null): TrendingOptions = {
-    val __obj = js.Dynamic.literal(rating = rating)
-    if (fmt != null) __obj.updateDynamic("fmt")(fmt)
+    val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any])
+    if (fmt != null) __obj.updateDynamic("fmt")(fmt.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrendingOptions]
   }

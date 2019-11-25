@@ -15,8 +15,8 @@ object IntegerMean {
   @scala.inline
   def apply(count: SplitInt64 = null, sum: SplitInt64 = null): IntegerMean = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (sum != null) __obj.updateDynamic("sum")(sum)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerMean]
   }
 }

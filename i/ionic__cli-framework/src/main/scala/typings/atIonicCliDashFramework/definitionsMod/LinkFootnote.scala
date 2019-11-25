@@ -13,8 +13,8 @@ trait LinkFootnote extends Footnote {
 object LinkFootnote {
   @scala.inline
   def apply(id: String | Double, url: String, shortUrl: String = null): LinkFootnote = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url)
-    if (shortUrl != null) __obj.updateDynamic("shortUrl")(shortUrl)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (shortUrl != null) __obj.updateDynamic("shortUrl")(shortUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkFootnote]
   }
 }

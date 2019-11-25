@@ -21,8 +21,8 @@ object ICustomerBalanceTransactionUpdateOptions {
   @scala.inline
   def apply(description: String = null, metadata: IMetadata = null): ICustomerBalanceTransactionUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomerBalanceTransactionUpdateOptions]
   }
 }

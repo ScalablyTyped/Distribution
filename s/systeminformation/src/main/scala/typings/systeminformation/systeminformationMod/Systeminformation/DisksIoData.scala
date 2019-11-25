@@ -25,7 +25,7 @@ object DisksIoData {
     wIO: Double,
     wIO_sec: Double
   ): DisksIoData = {
-    val __obj = js.Dynamic.literal(ms = ms, rIO = rIO, rIO_sec = rIO_sec, tIO = tIO, tIO_sec = tIO_sec, wIO = wIO, wIO_sec = wIO_sec)
+    val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any], rIO = rIO.asInstanceOf[js.Any], rIO_sec = rIO_sec.asInstanceOf[js.Any], tIO = tIO.asInstanceOf[js.Any], tIO_sec = tIO_sec.asInstanceOf[js.Any], wIO = wIO.asInstanceOf[js.Any], wIO_sec = wIO_sec.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DisksIoData]
   }

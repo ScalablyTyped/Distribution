@@ -11,7 +11,7 @@ trait VueDateTimeData extends js.Object {
 object VueDateTimeData {
   @scala.inline
   def apply(value: String): VueDateTimeData = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VueDateTimeData]
   }

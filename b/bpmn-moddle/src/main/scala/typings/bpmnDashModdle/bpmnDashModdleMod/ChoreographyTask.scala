@@ -32,12 +32,12 @@ object ChoreographyTask {
     extensionElements: ExtensionElements = null,
     name: String = null
   ): ChoreographyTask = {
-    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, auditing = auditing, categoryValueRef = categoryValueRef, correlationKeys = correlationKeys, id = id, incoming = incoming, initiatingParticipantRef = initiatingParticipantRef, lanes = lanes, loopType = loopType, messageFlowRef = messageFlowRef, monitoring = monitoring, outgoing = outgoing, participantRef = participantRef)
-    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)
-    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], auditing = auditing.asInstanceOf[js.Any], categoryValueRef = categoryValueRef.asInstanceOf[js.Any], correlationKeys = correlationKeys.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], incoming = incoming.asInstanceOf[js.Any], initiatingParticipantRef = initiatingParticipantRef.asInstanceOf[js.Any], lanes = lanes.asInstanceOf[js.Any], loopType = loopType.asInstanceOf[js.Any], messageFlowRef = messageFlowRef.asInstanceOf[js.Any], monitoring = monitoring.asInstanceOf[js.Any], outgoing = outgoing.asInstanceOf[js.Any], participantRef = participantRef.asInstanceOf[js.Any])
+    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions.asInstanceOf[js.Any])
+    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChoreographyTask]
   }
 }

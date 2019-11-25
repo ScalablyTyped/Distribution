@@ -13,9 +13,9 @@ trait TypesetProps extends js.Object {
 object TypesetProps {
   @scala.inline
   def apply(fontSizes: js.Array[Double], fontWeight: Int | Double = null, sampleText: String = null): TypesetProps = {
-    val __obj = js.Dynamic.literal(fontSizes = fontSizes)
+    val __obj = js.Dynamic.literal(fontSizes = fontSizes.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (sampleText != null) __obj.updateDynamic("sampleText")(sampleText)
+    if (sampleText != null) __obj.updateDynamic("sampleText")(sampleText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypesetProps]
   }
 }

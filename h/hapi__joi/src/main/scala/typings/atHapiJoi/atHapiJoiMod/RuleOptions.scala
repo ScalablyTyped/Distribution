@@ -34,9 +34,9 @@ object RuleOptions {
     warn: js.UndefOr[Boolean] = js.undefined
   ): RuleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep)
+    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(warn)) __obj.updateDynamic("warn")(warn)
+    if (!js.isUndefined(warn)) __obj.updateDynamic("warn")(warn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleOptions]
   }
 }

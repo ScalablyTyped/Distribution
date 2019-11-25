@@ -13,8 +13,8 @@ object SelectionCheckboxAllState {
   @scala.inline
   def apply(checked: js.UndefOr[Boolean] = js.undefined, indeterminate: js.UndefOr[Boolean] = js.undefined): SelectionCheckboxAllState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionCheckboxAllState]
   }
 }

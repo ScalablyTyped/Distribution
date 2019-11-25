@@ -19,8 +19,8 @@ trait MissingEnvVarsError extends Error {
 object MissingEnvVarsError {
   @scala.inline
   def apply(message: String, missing: js.Array[String], name: String, sample: String, stack: String = null): MissingEnvVarsError = {
-    val __obj = js.Dynamic.literal(message = message, missing = missing, name = name, sample = sample)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sample = sample.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MissingEnvVarsError]
   }
 }

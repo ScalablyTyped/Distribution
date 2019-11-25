@@ -12,7 +12,7 @@ trait ChangeBatchBearer extends js.Object {
 object ChangeBatchBearer {
   @scala.inline
   def apply(ChangeBatch: Anon_Changes): ChangeBatchBearer = {
-    val __obj = js.Dynamic.literal(ChangeBatch = ChangeBatch)
+    val __obj = js.Dynamic.literal(ChangeBatch = ChangeBatch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangeBatchBearer]
   }

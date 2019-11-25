@@ -11,7 +11,7 @@ trait DefaultValueContainer extends js.Object {
 object DefaultValueContainer {
   @scala.inline
   def apply(defaultValue: String): DefaultValueContainer = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefaultValueContainer]
   }

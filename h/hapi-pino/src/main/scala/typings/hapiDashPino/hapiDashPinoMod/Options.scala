@@ -28,7 +28,7 @@ trait Options extends js.Object {
   var serializers: js.UndefOr[Serializers] = js.undefined
   var stream: js.UndefOr[WriteStream] = js.undefined
   var tags: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in pino.pino.Level ]:? string}
     */ typings.hapiDashPino.hapiDashPinoStrings.Options with js.Any
   ] = js.undefined
@@ -51,26 +51,26 @@ object Options {
     redact: js.Array[String] | redactOptions = null,
     serializers: Serializers = null,
     stream: WriteStream = null,
-    tags: /* import warning: ImportType.apply c Unsupported type mapping: 
+    tags: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in pino.pino.Level ]:? string}
     */ typings.hapiDashPino.hapiDashPinoStrings.Options with js.Any = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (allTags != null) __obj.updateDynamic("allTags")(allTags)
+    if (allTags != null) __obj.updateDynamic("allTags")(allTags.asInstanceOf[js.Any])
     if (getChildBindings != null) __obj.updateDynamic("getChildBindings")(js.Any.fromFunction1(getChildBindings))
-    if (ignorePaths != null) __obj.updateDynamic("ignorePaths")(ignorePaths)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (level != null) __obj.updateDynamic("level")(level)
+    if (ignorePaths != null) __obj.updateDynamic("ignorePaths")(ignorePaths.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (logEvents != null) __obj.updateDynamic("logEvents")(logEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(logPayload)) __obj.updateDynamic("logPayload")(logPayload)
-    if (!js.isUndefined(logRequestStart)) __obj.updateDynamic("logRequestStart")(logRequestStart)
-    if (!js.isUndefined(logRouteTags)) __obj.updateDynamic("logRouteTags")(logRouteTags)
-    if (!js.isUndefined(mergeHapiLogData)) __obj.updateDynamic("mergeHapiLogData")(mergeHapiLogData)
+    if (!js.isUndefined(logPayload)) __obj.updateDynamic("logPayload")(logPayload.asInstanceOf[js.Any])
+    if (!js.isUndefined(logRequestStart)) __obj.updateDynamic("logRequestStart")(logRequestStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(logRouteTags)) __obj.updateDynamic("logRouteTags")(logRouteTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeHapiLogData)) __obj.updateDynamic("mergeHapiLogData")(mergeHapiLogData.asInstanceOf[js.Any])
     if (prettyPrint != null) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (redact != null) __obj.updateDynamic("redact")(redact.asInstanceOf[js.Any])
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

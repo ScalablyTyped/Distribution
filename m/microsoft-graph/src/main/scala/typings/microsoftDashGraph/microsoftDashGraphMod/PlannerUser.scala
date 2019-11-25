@@ -15,9 +15,9 @@ object PlannerUser {
   @scala.inline
   def apply(id: String = null, plans: js.Array[PlannerPlan] = null, tasks: js.Array[PlannerTask] = null): PlannerUser = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (plans != null) __obj.updateDynamic("plans")(plans)
-    if (tasks != null) __obj.updateDynamic("tasks")(tasks)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (plans != null) __obj.updateDynamic("plans")(plans.asInstanceOf[js.Any])
+    if (tasks != null) __obj.updateDynamic("tasks")(tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerUser]
   }
 }

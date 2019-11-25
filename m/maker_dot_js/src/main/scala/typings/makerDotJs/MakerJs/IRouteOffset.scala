@@ -17,7 +17,7 @@ trait IRouteOffset extends js.Object {
 object IRouteOffset {
   @scala.inline
   def apply(layer: String, offset: IPoint, route: js.Array[String], routeKey: String): IRouteOffset = {
-    val __obj = js.Dynamic.literal(layer = layer, offset = offset, route = route, routeKey = routeKey)
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any], routeKey = routeKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRouteOffset]
   }

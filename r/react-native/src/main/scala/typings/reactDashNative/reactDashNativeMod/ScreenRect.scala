@@ -14,7 +14,7 @@ trait ScreenRect extends js.Object {
 object ScreenRect {
   @scala.inline
   def apply(height: Double, screenX: Double, screenY: Double, width: Double): ScreenRect = {
-    val __obj = js.Dynamic.literal(height = height, screenX = screenX, screenY = screenY, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScreenRect]
   }

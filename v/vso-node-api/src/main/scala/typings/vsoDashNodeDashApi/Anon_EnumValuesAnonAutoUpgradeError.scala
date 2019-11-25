@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonAutoUpgradeError extends js.Object {
 object Anon_EnumValuesAnonAutoUpgradeError {
   @scala.inline
   def apply(enumValues: Anon_AutoUpgradeError): Anon_EnumValuesAnonAutoUpgradeError = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonAutoUpgradeError]
   }

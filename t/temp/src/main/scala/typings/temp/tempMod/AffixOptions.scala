@@ -14,9 +14,9 @@ object AffixOptions {
   @scala.inline
   def apply(dir: String = null, prefix: String = null, suffix: String = null): AffixOptions = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[AffixOptions]
   }
 }

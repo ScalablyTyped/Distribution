@@ -13,7 +13,7 @@ trait ArcData extends js.Object {
 object ArcData {
   @scala.inline
   def apply(endingAngle: Double, innerRadius: Double, startingAngle: Double): ArcData = {
-    val __obj = js.Dynamic.literal(endingAngle = endingAngle, innerRadius = innerRadius, startingAngle = startingAngle)
+    val __obj = js.Dynamic.literal(endingAngle = endingAngle.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], startingAngle = startingAngle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArcData]
   }

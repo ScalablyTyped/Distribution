@@ -41,18 +41,18 @@ object Route {
     wrapperStyle: js.Any = null
   ): Route = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (backButtonTitle != null) __obj.updateDynamic("backButtonTitle")(backButtonTitle)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (backButtonTitle != null) __obj.updateDynamic("backButtonTitle")(backButtonTitle.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onRightButtonPress != null) __obj.updateDynamic("onRightButtonPress")(js.Any.fromFunction0(onRightButtonPress))
-    if (passProps != null) __obj.updateDynamic("passProps")(passProps)
-    if (rightButtonTitle != null) __obj.updateDynamic("rightButtonTitle")(rightButtonTitle)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle)
+    if (passProps != null) __obj.updateDynamic("passProps")(passProps.asInstanceOf[js.Any])
+    if (rightButtonTitle != null) __obj.updateDynamic("rightButtonTitle")(rightButtonTitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
 }

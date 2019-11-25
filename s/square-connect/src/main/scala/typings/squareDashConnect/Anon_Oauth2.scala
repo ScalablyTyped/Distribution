@@ -12,7 +12,7 @@ trait Anon_Oauth2 extends js.Object {
 object Anon_Oauth2 {
   @scala.inline
   def apply(oauth2: Anon_AccessToken, oauth2ClientSecret: Anon_In): Anon_Oauth2 = {
-    val __obj = js.Dynamic.literal(oauth2 = oauth2, oauth2ClientSecret = oauth2ClientSecret)
+    val __obj = js.Dynamic.literal(oauth2 = oauth2.asInstanceOf[js.Any], oauth2ClientSecret = oauth2ClientSecret.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Oauth2]
   }

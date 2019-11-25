@@ -24,9 +24,9 @@ object IIconStyle {
     kind: IconKindType = null
   ): IIconStyle = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NestedCSSProperties)
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (NestedCSSProperties != null) js.Dynamic.global.Object.assign(__obj, NestedCSSProperties)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIconStyle]
   }
 }

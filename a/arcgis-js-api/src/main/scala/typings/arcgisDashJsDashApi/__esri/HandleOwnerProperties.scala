@@ -17,7 +17,7 @@ object HandleOwnerProperties {
   @scala.inline
   def apply(handles: HandlesProperties = null): HandleOwnerProperties = {
     val __obj = js.Dynamic.literal()
-    if (handles != null) __obj.updateDynamic("handles")(handles)
+    if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleOwnerProperties]
   }
 }

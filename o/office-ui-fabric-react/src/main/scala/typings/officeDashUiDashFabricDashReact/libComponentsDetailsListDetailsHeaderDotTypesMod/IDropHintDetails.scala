@@ -15,7 +15,7 @@ trait IDropHintDetails extends js.Object {
 object IDropHintDetails {
   @scala.inline
   def apply(dropHintElementRef: HTMLElement, endX: Double, originX: Double, startX: Double): IDropHintDetails = {
-    val __obj = js.Dynamic.literal(dropHintElementRef = dropHintElementRef, endX = endX, originX = originX, startX = startX)
+    val __obj = js.Dynamic.literal(dropHintElementRef = dropHintElementRef.asInstanceOf[js.Any], endX = endX.asInstanceOf[js.Any], originX = originX.asInstanceOf[js.Any], startX = startX.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDropHintDetails]
   }

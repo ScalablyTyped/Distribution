@@ -15,7 +15,7 @@ trait BatchTask extends js.Object {
 object BatchTask {
   @scala.inline
   def apply(objectIDs: js.Array[String], taskID: Record[String, Double]): BatchTask = {
-    val __obj = js.Dynamic.literal(objectIDs = objectIDs, taskID = taskID)
+    val __obj = js.Dynamic.literal(objectIDs = objectIDs.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BatchTask]
   }

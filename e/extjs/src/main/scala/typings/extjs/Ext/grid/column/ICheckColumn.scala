@@ -26,15 +26,13 @@ object ICheckColumn {
     IColumn: typings.extjs.Ext.grid.column.IColumn = null,
     onDisable: /* silent */ js.UndefOr[Boolean] => Unit = null,
     onEnable: /* silent */ js.UndefOr[Boolean] => Unit = null,
-    stopSelection: js.UndefOr[Boolean] = js.undefined,
-    tdCls: java.lang.String = null
+    stopSelection: js.UndefOr[Boolean] = js.undefined
   ): ICheckColumn = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IColumn)
+    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
     if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction1(onDisable))
     if (onEnable != null) __obj.updateDynamic("onEnable")(js.Any.fromFunction1(onEnable))
-    if (!js.isUndefined(stopSelection)) __obj.updateDynamic("stopSelection")(stopSelection)
-    if (tdCls != null) __obj.updateDynamic("tdCls")(tdCls)
+    if (!js.isUndefined(stopSelection)) __obj.updateDynamic("stopSelection")(stopSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckColumn]
   }
 }

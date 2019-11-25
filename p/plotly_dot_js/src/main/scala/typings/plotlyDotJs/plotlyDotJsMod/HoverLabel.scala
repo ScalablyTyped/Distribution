@@ -28,7 +28,7 @@ object HoverLabel {
     font: Partial[Font],
     namelength: Double
   ): HoverLabel = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], bgcolor = bgcolor, bordercolor = bordercolor, font = font, namelength = namelength)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], namelength = namelength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HoverLabel]
   }

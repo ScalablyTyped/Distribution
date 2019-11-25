@@ -21,10 +21,10 @@ object IParameterizedQuery {
     values: js.Array[_] = null
   ): IParameterizedQuery = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
     if (rowMode != null) __obj.updateDynamic("rowMode")(rowMode.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParameterizedQuery]
   }
 }

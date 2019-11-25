@@ -14,9 +14,9 @@ object Data {
   @scala.inline
   def apply(engine: String = null, path: String = null, text: String = null): Data = {
     val __obj = js.Dynamic.literal()
-    if (engine != null) __obj.updateDynamic("engine")(engine)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
 }

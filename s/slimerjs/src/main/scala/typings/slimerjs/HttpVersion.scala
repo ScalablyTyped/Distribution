@@ -12,7 +12,7 @@ trait HttpVersion extends js.Object {
 object HttpVersion {
   @scala.inline
   def apply(major: Double, minor: Double): HttpVersion = {
-    val __obj = js.Dynamic.literal(major = major, minor = minor)
+    val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HttpVersion]
   }

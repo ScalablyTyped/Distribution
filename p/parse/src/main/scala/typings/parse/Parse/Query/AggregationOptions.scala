@@ -30,12 +30,12 @@ object AggregationOptions {
     sort: StringDictionary[`1` | `-1`] = null
   ): AggregationOptions = {
     val __obj = js.Dynamic.literal()
-    if (group != null) __obj.updateDynamic("group")(group)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
-    if (project != null) __obj.updateDynamic("project")(project)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregationOptions]
   }
 }

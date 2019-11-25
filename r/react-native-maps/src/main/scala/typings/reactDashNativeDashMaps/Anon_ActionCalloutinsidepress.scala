@@ -12,7 +12,7 @@ trait Anon_ActionCalloutinsidepress extends js.Object {
 object Anon_ActionCalloutinsidepress {
   @scala.inline
   def apply(action: `callout-inside-press`): Anon_ActionCalloutinsidepress = {
-    val __obj = js.Dynamic.literal(action = action)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActionCalloutinsidepress]
   }

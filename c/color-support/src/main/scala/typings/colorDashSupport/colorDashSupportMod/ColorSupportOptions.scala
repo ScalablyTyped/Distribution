@@ -30,14 +30,14 @@ object ColorSupportOptions {
     term: String = null
   ): ColorSupportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysReturn)) __obj.updateDynamic("alwaysReturn")(alwaysReturn)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (!js.isUndefined(ignoreCI)) __obj.updateDynamic("ignoreCI")(ignoreCI)
-    if (!js.isUndefined(ignoreDumb)) __obj.updateDynamic("ignoreDumb")(ignoreDumb)
-    if (!js.isUndefined(ignoreTTY)) __obj.updateDynamic("ignoreTTY")(ignoreTTY)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (term != null) __obj.updateDynamic("term")(term)
+    if (!js.isUndefined(alwaysReturn)) __obj.updateDynamic("alwaysReturn")(alwaysReturn.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCI)) __obj.updateDynamic("ignoreCI")(ignoreCI.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDumb)) __obj.updateDynamic("ignoreDumb")(ignoreDumb.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreTTY)) __obj.updateDynamic("ignoreTTY")(ignoreTTY.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorSupportOptions]
   }
 }

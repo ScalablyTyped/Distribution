@@ -2,7 +2,6 @@ package typings.yaml.yamlMod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.RegExp
-import typings.yaml.yamlMod.ast.Document
 import typings.yaml.yamlMod.ast.MapBase
 import typings.yaml.yamlMod.ast.Scalar
 import typings.yaml.yamlMod.ast.SeqBase
@@ -50,7 +49,7 @@ trait Tag extends js.Object {
     * If test is set, will be called with the resulting match as arguments.
     * Otherwise, will be called as `resolve(doc, cstNode)`.
     */
-  def resolve(doc: Document, cstNode: Node): typings.yaml.yamlMod.ast.Node = js.native
+  def resolve(doc: typings.yaml.yamlMod.ast.Document, cstNode: Node): typings.yaml.yamlMod.ast.Node = js.native
   def resolve(`match`: String*): typings.yaml.yamlMod.ast.Node = js.native
   /**
     * @param item the node being stringified.

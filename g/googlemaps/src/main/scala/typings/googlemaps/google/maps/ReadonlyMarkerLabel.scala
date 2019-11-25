@@ -27,11 +27,11 @@ object ReadonlyMarkerLabel {
     fontSize: String = null,
     fontWeight: String = null
   ): ReadonlyMarkerLabel = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyMarkerLabel]
   }
 }

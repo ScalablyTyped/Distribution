@@ -22,10 +22,10 @@ object UrlMapValidationResult {
     testPassed: js.UndefOr[Boolean] = js.undefined
   ): UrlMapValidationResult = {
     val __obj = js.Dynamic.literal()
-    if (loadErrors != null) __obj.updateDynamic("loadErrors")(loadErrors)
-    if (!js.isUndefined(loadSucceeded)) __obj.updateDynamic("loadSucceeded")(loadSucceeded)
-    if (testFailures != null) __obj.updateDynamic("testFailures")(testFailures)
-    if (!js.isUndefined(testPassed)) __obj.updateDynamic("testPassed")(testPassed)
+    if (loadErrors != null) __obj.updateDynamic("loadErrors")(loadErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadSucceeded)) __obj.updateDynamic("loadSucceeded")(loadSucceeded.asInstanceOf[js.Any])
+    if (testFailures != null) __obj.updateDynamic("testFailures")(testFailures.asInstanceOf[js.Any])
+    if (!js.isUndefined(testPassed)) __obj.updateDynamic("testPassed")(testPassed.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlMapValidationResult]
   }
 }

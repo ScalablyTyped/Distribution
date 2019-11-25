@@ -1,6 +1,5 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core", "keep")
 @js.native
 object keep extends js.Object {
-  def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](result: T): T = js.native
+  def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](result: T): T = js.native
 }
 

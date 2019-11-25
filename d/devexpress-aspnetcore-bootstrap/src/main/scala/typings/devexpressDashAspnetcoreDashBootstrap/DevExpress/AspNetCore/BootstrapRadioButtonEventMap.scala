@@ -18,7 +18,7 @@ object BootstrapRadioButtonEventMap {
     validation: EditValidationEventArgs,
     valueChanged: ProcessingModeEventArgs
   ): BootstrapRadioButtonEventMap = {
-    val __obj = js.Dynamic.literal(checkedChanged = checkedChanged, gotFocus = gotFocus, init = init, lostFocus = lostFocus, validation = validation, valueChanged = valueChanged)
+    val __obj = js.Dynamic.literal(checkedChanged = checkedChanged.asInstanceOf[js.Any], gotFocus = gotFocus.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BootstrapRadioButtonEventMap]
   }

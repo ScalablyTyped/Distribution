@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ReferenceType extends js.Object
 
+object ReferenceType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def collapsed: typings.reactDashMarkdown.reactDashMarkdownStrings.collapsed = this.cast("collapsed")
+  @scala.inline
+  def full: typings.reactDashMarkdown.reactDashMarkdownStrings.full = this.cast("full")
+  @scala.inline
+  def shortcut: typings.reactDashMarkdown.reactDashMarkdownStrings.shortcut = this.cast("shortcut")
+}
+

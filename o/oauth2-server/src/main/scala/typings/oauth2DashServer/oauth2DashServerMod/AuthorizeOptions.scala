@@ -27,8 +27,8 @@ object AuthorizeOptions {
     authorizationCodeLifetime: Int | Double = null
   ): AuthorizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmptyState)) __obj.updateDynamic("allowEmptyState")(allowEmptyState)
-    if (authenticateHandler != null) __obj.updateDynamic("authenticateHandler")(authenticateHandler)
+    if (!js.isUndefined(allowEmptyState)) __obj.updateDynamic("allowEmptyState")(allowEmptyState.asInstanceOf[js.Any])
+    if (authenticateHandler != null) __obj.updateDynamic("authenticateHandler")(authenticateHandler.asInstanceOf[js.Any])
     if (authorizationCodeLifetime != null) __obj.updateDynamic("authorizationCodeLifetime")(authorizationCodeLifetime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeOptions]
   }

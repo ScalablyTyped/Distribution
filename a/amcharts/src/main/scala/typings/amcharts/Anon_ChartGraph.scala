@@ -22,8 +22,8 @@ object Anon_ChartGraph {
     item: typings.amcharts.graphDataItemMod.default,
     `type`: String
   ): Anon_ChartGraph = {
-    val __obj = js.Dynamic.literal(chart = chart, graph = graph, index = index, item = item)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], graph = graph.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChartGraph]
   }
 }

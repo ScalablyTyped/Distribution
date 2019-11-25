@@ -39,7 +39,7 @@ object FPSConfig {
   ): FPSConfig = {
     val __obj = js.Dynamic.literal()
     if (deltaHistory != null) __obj.updateDynamic("deltaHistory")(deltaHistory.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSetTimeOut)) __obj.updateDynamic("forceSetTimeOut")(forceSetTimeOut)
+    if (!js.isUndefined(forceSetTimeOut)) __obj.updateDynamic("forceSetTimeOut")(forceSetTimeOut.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (panicMax != null) __obj.updateDynamic("panicMax")(panicMax.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

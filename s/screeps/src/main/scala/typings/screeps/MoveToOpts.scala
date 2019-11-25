@@ -50,23 +50,23 @@ object MoveToOpts {
     visualizePathStyle: PolyStyle = null
   ): MoveToOpts = {
     val __obj = js.Dynamic.literal()
-    if (avoid != null) __obj.updateDynamic("avoid")(avoid)
+    if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
     if (costCallback != null) __obj.updateDynamic("costCallback")(js.Any.fromFunction2(costCallback))
     if (heuristicWeight != null) __obj.updateDynamic("heuristicWeight")(heuristicWeight.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (!js.isUndefined(ignoreCreeps)) __obj.updateDynamic("ignoreCreeps")(ignoreCreeps)
-    if (!js.isUndefined(ignoreDestructibleStructures)) __obj.updateDynamic("ignoreDestructibleStructures")(ignoreDestructibleStructures)
-    if (!js.isUndefined(ignoreRoads)) __obj.updateDynamic("ignoreRoads")(ignoreRoads)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCreeps)) __obj.updateDynamic("ignoreCreeps")(ignoreCreeps.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDestructibleStructures)) __obj.updateDynamic("ignoreDestructibleStructures")(ignoreDestructibleStructures.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreRoads)) __obj.updateDynamic("ignoreRoads")(ignoreRoads.asInstanceOf[js.Any])
     if (maxOps != null) __obj.updateDynamic("maxOps")(maxOps.asInstanceOf[js.Any])
     if (maxRooms != null) __obj.updateDynamic("maxRooms")(maxRooms.asInstanceOf[js.Any])
-    if (!js.isUndefined(noPathFinding)) __obj.updateDynamic("noPathFinding")(noPathFinding)
+    if (!js.isUndefined(noPathFinding)) __obj.updateDynamic("noPathFinding")(noPathFinding.asInstanceOf[js.Any])
     if (plainCost != null) __obj.updateDynamic("plainCost")(plainCost.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (reusePath != null) __obj.updateDynamic("reusePath")(reusePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize)
-    if (!js.isUndefined(serializeMemory)) __obj.updateDynamic("serializeMemory")(serializeMemory)
+    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeMemory)) __obj.updateDynamic("serializeMemory")(serializeMemory.asInstanceOf[js.Any])
     if (swampCost != null) __obj.updateDynamic("swampCost")(swampCost.asInstanceOf[js.Any])
-    if (visualizePathStyle != null) __obj.updateDynamic("visualizePathStyle")(visualizePathStyle)
+    if (visualizePathStyle != null) __obj.updateDynamic("visualizePathStyle")(visualizePathStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveToOpts]
   }
 }

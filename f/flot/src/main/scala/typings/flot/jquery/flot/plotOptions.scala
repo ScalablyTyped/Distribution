@@ -32,16 +32,16 @@ object plotOptions {
     yaxis: axisOptions = null
   ): plotOptions = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
-    if (interaction != null) __obj.updateDynamic("interaction")(interaction)
-    if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (series != null) __obj.updateDynamic("series")(series)
-    if (xaxes != null) __obj.updateDynamic("xaxes")(xaxes)
-    if (xaxis != null) __obj.updateDynamic("xaxis")(xaxis)
-    if (yaxes != null) __obj.updateDynamic("yaxes")(yaxes)
-    if (yaxis != null) __obj.updateDynamic("yaxis")(yaxis)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (interaction != null) __obj.updateDynamic("interaction")(interaction.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (xaxes != null) __obj.updateDynamic("xaxes")(xaxes.asInstanceOf[js.Any])
+    if (xaxis != null) __obj.updateDynamic("xaxis")(xaxis.asInstanceOf[js.Any])
+    if (yaxes != null) __obj.updateDynamic("yaxes")(yaxes.asInstanceOf[js.Any])
+    if (yaxis != null) __obj.updateDynamic("yaxis")(yaxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[plotOptions]
   }
 }

@@ -13,8 +13,8 @@ object CampaignTargetLink {
   @scala.inline
   def apply(targetId: String = null, targetType: String = null): CampaignTargetLink = {
     val __obj = js.Dynamic.literal()
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId)
-    if (targetType != null) __obj.updateDynamic("targetType")(targetType)
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignTargetLink]
   }
 }

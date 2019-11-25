@@ -12,7 +12,7 @@ trait PaginationOptions extends js.Object {
 object PaginationOptions {
   @scala.inline
   def apply(skip: Double, top: Double): PaginationOptions = {
-    val __obj = js.Dynamic.literal(skip = skip, top = top)
+    val __obj = js.Dynamic.literal(skip = skip.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PaginationOptions]
   }

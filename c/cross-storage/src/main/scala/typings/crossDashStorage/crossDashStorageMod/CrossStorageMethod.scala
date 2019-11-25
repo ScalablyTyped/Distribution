@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait CrossStorageMethod extends js.Object
 
+object CrossStorageMethod {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def clear: typings.crossDashStorage.crossDashStorageStrings.clear = this.cast("clear")
+  @scala.inline
+  def del: typings.crossDashStorage.crossDashStorageStrings.del = this.cast("del")
+  @scala.inline
+  def get: typings.crossDashStorage.crossDashStorageStrings.get = this.cast("get")
+  @scala.inline
+  def getKeys: typings.crossDashStorage.crossDashStorageStrings.getKeys = this.cast("getKeys")
+  @scala.inline
+  def set: typings.crossDashStorage.crossDashStorageStrings.set = this.cast("set")
+}
+

@@ -49,17 +49,17 @@ object ContentType {
     `sealed`: js.UndefOr[Boolean] = js.undefined
   ): ContentType = {
     val __obj = js.Dynamic.literal()
-    if (columnLinks != null) __obj.updateDynamic("columnLinks")(columnLinks)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inheritedFrom != null) __obj.updateDynamic("inheritedFrom")(inheritedFrom)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (!js.isUndefined(`sealed`)) __obj.updateDynamic("sealed")(`sealed`)
+    if (columnLinks != null) __obj.updateDynamic("columnLinks")(columnLinks.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inheritedFrom != null) __obj.updateDynamic("inheritedFrom")(inheritedFrom.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(`sealed`)) __obj.updateDynamic("sealed")(`sealed`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentType]
   }
 }

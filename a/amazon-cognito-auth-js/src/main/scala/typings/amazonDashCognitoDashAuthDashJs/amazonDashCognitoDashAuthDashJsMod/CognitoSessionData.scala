@@ -37,11 +37,11 @@ object CognitoSessionData {
     TokenScopes: CognitoTokenScopes = null
   ): CognitoSessionData = {
     val __obj = js.Dynamic.literal()
-    if (AccessToken != null) __obj.updateDynamic("AccessToken")(AccessToken)
-    if (IdToken != null) __obj.updateDynamic("IdToken")(IdToken)
-    if (RefreshToken != null) __obj.updateDynamic("RefreshToken")(RefreshToken)
-    if (State != null) __obj.updateDynamic("State")(State)
-    if (TokenScopes != null) __obj.updateDynamic("TokenScopes")(TokenScopes)
+    if (AccessToken != null) __obj.updateDynamic("AccessToken")(AccessToken.asInstanceOf[js.Any])
+    if (IdToken != null) __obj.updateDynamic("IdToken")(IdToken.asInstanceOf[js.Any])
+    if (RefreshToken != null) __obj.updateDynamic("RefreshToken")(RefreshToken.asInstanceOf[js.Any])
+    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
+    if (TokenScopes != null) __obj.updateDynamic("TokenScopes")(TokenScopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoSessionData]
   }
 }

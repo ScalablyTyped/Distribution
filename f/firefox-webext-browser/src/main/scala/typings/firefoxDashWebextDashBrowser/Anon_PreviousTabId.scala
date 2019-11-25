@@ -16,7 +16,7 @@ trait Anon_PreviousTabId extends js.Object {
 object Anon_PreviousTabId {
   @scala.inline
   def apply(tabId: Double, windowId: Double, previousTabId: Int | Double = null): Anon_PreviousTabId = {
-    val __obj = js.Dynamic.literal(tabId = tabId, windowId = windowId)
+    val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
     if (previousTabId != null) __obj.updateDynamic("previousTabId")(previousTabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PreviousTabId]
   }

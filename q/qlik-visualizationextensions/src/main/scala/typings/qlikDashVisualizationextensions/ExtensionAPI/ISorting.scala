@@ -12,7 +12,7 @@ trait ISorting extends js.Object {
 object ISorting {
   @scala.inline
   def apply(uses: sorting): ISorting = {
-    val __obj = js.Dynamic.literal(uses = uses)
+    val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISorting]
   }

@@ -30,8 +30,8 @@ trait PickListMetadataModel extends js.Object {
 object PickListMetadataModel {
   @scala.inline
   def apply(id: String, isSuggested: Boolean, name: String, `type`: String, url: String): PickListMetadataModel = {
-    val __obj = js.Dynamic.literal(id = id, isSuggested = isSuggested, name = name, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isSuggested = isSuggested.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickListMetadataModel]
   }
 }

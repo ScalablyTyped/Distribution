@@ -12,8 +12,8 @@ trait Anon_Attribute extends js.Object {
 object Anon_Attribute {
   @scala.inline
   def apply(name: Boolean, attribute: js.Array[String] = null): Anon_Attribute = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attribute]
   }
 }

@@ -13,7 +13,7 @@ object Target {
   @scala.inline
   def apply(template: js.Array[Node] = null): Target = {
     val __obj = js.Dynamic.literal()
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target]
   }
 }

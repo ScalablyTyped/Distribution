@@ -12,8 +12,8 @@ trait BaseOptions extends js.Object {
 object BaseOptions {
   @scala.inline
   def apply(rating: Rating, fmt: Format = null): BaseOptions = {
-    val __obj = js.Dynamic.literal(rating = rating)
-    if (fmt != null) __obj.updateDynamic("fmt")(fmt)
+    val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any])
+    if (fmt != null) __obj.updateDynamic("fmt")(fmt.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]
   }
 }

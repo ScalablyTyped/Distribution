@@ -15,7 +15,7 @@ object Anon_FormatSpki {
   @scala.inline
   def apply[PubF /* <: KeyFormat */](format: PubF, `type`: spki): Anon_FormatSpki[PubF] = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FormatSpki[PubF]]
   }
 }

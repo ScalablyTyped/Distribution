@@ -11,7 +11,7 @@ trait RequestEmailOptions extends js.Object {
 object RequestEmailOptions {
   @scala.inline
   def apply(email: String): RequestEmailOptions = {
-    val __obj = js.Dynamic.literal(email = email)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestEmailOptions]
   }

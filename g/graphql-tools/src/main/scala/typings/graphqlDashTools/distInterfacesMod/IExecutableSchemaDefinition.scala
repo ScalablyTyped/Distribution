@@ -34,15 +34,15 @@ object IExecutableSchemaDefinition {
     schemaDirectives: StringDictionary[TypeofClassSchemaDirectiveVisitor] = null
   ): IExecutableSchemaDefinition[TContext] = {
     val __obj = js.Dynamic.literal(typeDefs = typeDefs.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowUndefinedInResolve)) __obj.updateDynamic("allowUndefinedInResolve")(allowUndefinedInResolve)
-    if (connectors != null) __obj.updateDynamic("connectors")(connectors)
-    if (directiveResolvers != null) __obj.updateDynamic("directiveResolvers")(directiveResolvers)
-    if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions)
-    if (resolverValidationOptions != null) __obj.updateDynamic("resolverValidationOptions")(resolverValidationOptions)
+    if (!js.isUndefined(allowUndefinedInResolve)) __obj.updateDynamic("allowUndefinedInResolve")(allowUndefinedInResolve.asInstanceOf[js.Any])
+    if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
+    if (directiveResolvers != null) __obj.updateDynamic("directiveResolvers")(directiveResolvers.asInstanceOf[js.Any])
+    if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (parseOptions != null) __obj.updateDynamic("parseOptions")(parseOptions.asInstanceOf[js.Any])
+    if (resolverValidationOptions != null) __obj.updateDynamic("resolverValidationOptions")(resolverValidationOptions.asInstanceOf[js.Any])
     if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
-    if (schemaDirectives != null) __obj.updateDynamic("schemaDirectives")(schemaDirectives)
+    if (schemaDirectives != null) __obj.updateDynamic("schemaDirectives")(schemaDirectives.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecutableSchemaDefinition[TContext]]
   }
 }

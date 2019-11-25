@@ -11,7 +11,7 @@ trait EnumParams extends ErrorParameters {
 object EnumParams {
   @scala.inline
   def apply(allowedValues: js.Array[_]): EnumParams = {
-    val __obj = js.Dynamic.literal(allowedValues = allowedValues)
+    val __obj = js.Dynamic.literal(allowedValues = allowedValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EnumParams]
   }

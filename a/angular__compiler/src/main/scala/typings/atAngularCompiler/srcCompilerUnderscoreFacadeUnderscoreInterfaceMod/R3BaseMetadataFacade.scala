@@ -26,12 +26,12 @@ object R3BaseMetadataFacade {
     queries: js.Array[R3QueryMetadataFacade] = null,
     viewQueries: js.Array[R3QueryMetadataFacade] = null
   ): R3BaseMetadataFacade = {
-    val __obj = js.Dynamic.literal(name = name, propMetadata = propMetadata)
-    __obj.updateDynamic("type")(`type`)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (viewQueries != null) __obj.updateDynamic("viewQueries")(viewQueries)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], propMetadata = propMetadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
+    if (viewQueries != null) __obj.updateDynamic("viewQueries")(viewQueries.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3BaseMetadataFacade]
   }
 }

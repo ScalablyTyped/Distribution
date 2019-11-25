@@ -22,8 +22,8 @@ object UpdateDimensionGroupRequest {
   @scala.inline
   def apply(dimensionGroup: DimensionGroup = null, fields: String = null): UpdateDimensionGroupRequest = {
     val __obj = js.Dynamic.literal()
-    if (dimensionGroup != null) __obj.updateDynamic("dimensionGroup")(dimensionGroup)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (dimensionGroup != null) __obj.updateDynamic("dimensionGroup")(dimensionGroup.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDimensionGroupRequest]
   }
 }

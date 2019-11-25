@@ -26,12 +26,12 @@ object TreeListDropEvent {
     source: TreeListModel = null,
     valid: js.UndefOr[Boolean] = js.undefined
   ): TreeListDropEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
-    if (!js.isUndefined(setValid)) __obj.updateDynamic("setValid")(setValid)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(setValid)) __obj.updateDynamic("setValid")(setValid.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListDropEvent]
   }
 }

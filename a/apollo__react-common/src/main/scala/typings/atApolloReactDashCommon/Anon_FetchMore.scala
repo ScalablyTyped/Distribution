@@ -28,7 +28,7 @@ object Anon_FetchMore {
       js.Promise[ApolloQueryResult[_]]
     ])
   ): Anon_FetchMore[TVariables, TData] = {
-    val __obj = js.Dynamic.literal(fetchMore = fetchMore)
+    val __obj = js.Dynamic.literal(fetchMore = fetchMore.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FetchMore[TVariables, TData]]
   }

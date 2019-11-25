@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mvc
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojoStrings.children
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -34,6 +33,14 @@ class Generate () extends _Container {
   @JSName("set")
   def set_children(property: children, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_children(property: children, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_children(
+    property: children,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

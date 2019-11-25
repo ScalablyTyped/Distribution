@@ -18,8 +18,8 @@ object PopupEvent {
     target: js.Any,
     `type`: String
   ): PopupEvent = {
-    val __obj = js.Dynamic.literal(layer = layer, popup = popup, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupEvent]
   }
 }

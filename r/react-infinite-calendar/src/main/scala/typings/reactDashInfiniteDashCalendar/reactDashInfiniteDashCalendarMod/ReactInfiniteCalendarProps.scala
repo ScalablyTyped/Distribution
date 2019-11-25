@@ -73,16 +73,16 @@ object ReactInfiniteCalendarProps {
     width: Double | auto | `100%` = null
   ): ReactInfiniteCalendarProps = {
     val __obj = js.Dynamic.literal()
-    if (Component != null) __obj.updateDynamic("Component")(Component)
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates)
-    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays)
+    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
+    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions)
+    if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (interpolateSelection != null) __obj.updateDynamic("interpolateSelection")(js.Any.fromFunction2(interpolateSelection))
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
@@ -93,7 +93,7 @@ object ReactInfiniteCalendarProps {
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactInfiniteCalendarProps]
   }

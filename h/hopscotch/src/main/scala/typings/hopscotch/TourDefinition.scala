@@ -34,12 +34,12 @@ object TourDefinition {
     skipIfNoElement: js.UndefOr[Boolean] = js.undefined,
     smoothScroll: js.UndefOr[Boolean] = js.undefined
   ): TourDefinition = {
-    val __obj = js.Dynamic.literal(id = id, steps = steps)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
     if (arrowWidth != null) __obj.updateDynamic("arrowWidth")(arrowWidth.asInstanceOf[js.Any])
     if (bubbleWidth != null) __obj.updateDynamic("bubbleWidth")(bubbleWidth.asInstanceOf[js.Any])
     if (buddleHeight != null) __obj.updateDynamic("buddleHeight")(buddleHeight.asInstanceOf[js.Any])
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
-    if (!js.isUndefined(nextOnTargetClick)) __obj.updateDynamic("nextOnTargetClick")(nextOnTargetClick)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
+    if (!js.isUndefined(nextOnTargetClick)) __obj.updateDynamic("nextOnTargetClick")(nextOnTargetClick.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
     if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
@@ -49,11 +49,11 @@ object TourDefinition {
     if (onStart != null) __obj.updateDynamic("onStart")(onStart.asInstanceOf[js.Any])
     if (scrollDuration != null) __obj.updateDynamic("scrollDuration")(scrollDuration.asInstanceOf[js.Any])
     if (scrollTopMargin != null) __obj.updateDynamic("scrollTopMargin")(scrollTopMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
-    if (!js.isUndefined(showNextButton)) __obj.updateDynamic("showNextButton")(showNextButton)
-    if (!js.isUndefined(showPrevButton)) __obj.updateDynamic("showPrevButton")(showPrevButton)
-    if (!js.isUndefined(skipIfNoElement)) __obj.updateDynamic("skipIfNoElement")(skipIfNoElement)
-    if (!js.isUndefined(smoothScroll)) __obj.updateDynamic("smoothScroll")(smoothScroll)
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNextButton)) __obj.updateDynamic("showNextButton")(showNextButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPrevButton)) __obj.updateDynamic("showPrevButton")(showPrevButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipIfNoElement)) __obj.updateDynamic("skipIfNoElement")(skipIfNoElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothScroll)) __obj.updateDynamic("smoothScroll")(smoothScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[TourDefinition]
   }
 }

@@ -21,10 +21,10 @@ object ClaimsParameterMember {
     values: js.Array[String] = null
   ): ClaimsParameterMember = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimsParameterMember]
   }
 }

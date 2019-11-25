@@ -20,10 +20,10 @@ object FileComment {
     parent: DriveItem = null
   ): FileComment = {
     val __obj = js.Dynamic.literal()
-    if (legacyCommentId != null) __obj.updateDynamic("legacyCommentId")(legacyCommentId)
-    if (legacyDiscussionId != null) __obj.updateDynamic("legacyDiscussionId")(legacyDiscussionId)
-    if (linkToDiscussion != null) __obj.updateDynamic("linkToDiscussion")(linkToDiscussion)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (legacyCommentId != null) __obj.updateDynamic("legacyCommentId")(legacyCommentId.asInstanceOf[js.Any])
+    if (legacyDiscussionId != null) __obj.updateDynamic("legacyDiscussionId")(legacyDiscussionId.asInstanceOf[js.Any])
+    if (linkToDiscussion != null) __obj.updateDynamic("linkToDiscussion")(linkToDiscussion.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileComment]
   }
 }

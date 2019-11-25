@@ -16,9 +16,9 @@ trait IdSelector
 object IdSelector {
   @scala.inline
   def apply(name: String, `type`: typings.cssDashTree.cssDashTreeStrings.IdSelector, loc: CssLocation = null): IdSelector = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdSelector]
   }
 }

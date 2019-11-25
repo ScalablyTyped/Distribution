@@ -13,8 +13,8 @@ trait Anon_Index extends /* index */ NumberDictionary[ExtensionInfo] {
 object Anon_Index {
   @scala.inline
   def apply(length: Double, NumberDictionary: /* index */ NumberDictionary[ExtensionInfo] = null): Anon_Index = {
-    val __obj = js.Dynamic.literal(length = length)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Anon_Index]
   }
 }

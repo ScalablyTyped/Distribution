@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait IUnitOfTime extends js.Object
 
+object IUnitOfTime {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def iMonth: typings.momentDashHijri.momentDashHijriStrings.iMonth = this.cast("iMonth")
+  @scala.inline
+  def iYear: typings.momentDashHijri.momentDashHijriStrings.iYear = this.cast("iYear")
+}
+

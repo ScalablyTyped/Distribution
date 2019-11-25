@@ -31,7 +31,7 @@ object Zone {
     serial: Double,
     uuid: String
   ): Zone = {
-    val __obj = js.Dynamic.literal(apex_alias = apex_alias, email = email, expire = expire, minimum = minimum, name = name, primary_ns = primary_ns, refresh = refresh, retry = retry, serial = serial, uuid = uuid)
+    val __obj = js.Dynamic.literal(apex_alias = apex_alias.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], expire = expire.asInstanceOf[js.Any], minimum = minimum.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], primary_ns = primary_ns.asInstanceOf[js.Any], refresh = refresh.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Zone]
   }

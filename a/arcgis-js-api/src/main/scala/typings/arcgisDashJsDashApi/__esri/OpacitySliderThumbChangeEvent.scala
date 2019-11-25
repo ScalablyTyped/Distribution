@@ -14,8 +14,8 @@ trait OpacitySliderThumbChangeEvent extends js.Object {
 object OpacitySliderThumbChangeEvent {
   @scala.inline
   def apply(index: Double, oldValue: Double, `type`: String, value: Double): OpacitySliderThumbChangeEvent = {
-    val __obj = js.Dynamic.literal(index = index, oldValue = oldValue, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpacitySliderThumbChangeEvent]
   }
 }

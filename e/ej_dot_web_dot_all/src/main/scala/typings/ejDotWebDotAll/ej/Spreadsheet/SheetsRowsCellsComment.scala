@@ -18,8 +18,8 @@ object SheetsRowsCellsComment {
   @scala.inline
   def apply(isVisible: js.UndefOr[Boolean] = js.undefined, value: String = null): SheetsRowsCellsComment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsRowsCellsComment]
   }
 }

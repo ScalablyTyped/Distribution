@@ -11,7 +11,7 @@ trait Anon_HasShouldComponentUpdateBug extends js.Object {
 object Anon_HasShouldComponentUpdateBug {
   @scala.inline
   def apply(hasShouldComponentUpdateBug: Boolean): Anon_HasShouldComponentUpdateBug = {
-    val __obj = js.Dynamic.literal(hasShouldComponentUpdateBug = hasShouldComponentUpdateBug)
+    val __obj = js.Dynamic.literal(hasShouldComponentUpdateBug = hasShouldComponentUpdateBug.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HasShouldComponentUpdateBug]
   }

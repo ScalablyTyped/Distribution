@@ -50,7 +50,7 @@ object PolicyRule {
     resources: js.Array[String],
     verbs: js.Array[String]
   ): PolicyRule = {
-    val __obj = js.Dynamic.literal(apiGroups = apiGroups, nonResourceURLs = nonResourceURLs, resourceNames = resourceNames, resources = resources, verbs = verbs)
+    val __obj = js.Dynamic.literal(apiGroups = apiGroups.asInstanceOf[js.Any], nonResourceURLs = nonResourceURLs.asInstanceOf[js.Any], resourceNames = resourceNames.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], verbs = verbs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PolicyRule]
   }

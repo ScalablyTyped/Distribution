@@ -18,7 +18,7 @@ object Anon_BodyHeadersOptionsResourceTypeCustomResourceType {
   @scala.inline
   def apply[T /* <: CustomResource */](body: T, resourceType: CustomResourceType, headers: Headers = null, options: Options = null): Anon_BodyHeadersOptionsResourceTypeCustomResourceType[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyHeadersOptionsResourceTypeCustomResourceType[T]]
   }

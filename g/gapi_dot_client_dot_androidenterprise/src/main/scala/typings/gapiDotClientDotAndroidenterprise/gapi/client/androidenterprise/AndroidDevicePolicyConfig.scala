@@ -18,8 +18,8 @@ object AndroidDevicePolicyConfig {
   @scala.inline
   def apply(kind: String = null, state: String = null): AndroidDevicePolicyConfig = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidDevicePolicyConfig]
   }
 }

@@ -20,10 +20,10 @@ object PathOption {
     trim: js.UndefOr[Boolean] = js.undefined
   ): PathOption = {
     val __obj = js.Dynamic.literal()
-    if (avoid != null) __obj.updateDynamic("avoid")(avoid)
-    if (!js.isUndefined(cost)) __obj.updateDynamic("cost")(cost)
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
+    if (!js.isUndefined(cost)) __obj.updateDynamic("cost")(cost.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathOption]
   }
 }

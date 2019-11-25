@@ -32,16 +32,16 @@ object NetworkInfo {
     wifiName: String = null
   ): NetworkInfo = {
     val __obj = js.Dynamic.literal()
-    if (Ipv4Addresses != null) __obj.updateDynamic("Ipv4Addresses")(Ipv4Addresses)
-    if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses)
-    if (carrierName != null) __obj.updateDynamic("carrierName")(carrierName)
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
-    if (!js.isUndefined(isAirplaneMode)) __obj.updateDynamic("isAirplaneMode")(isAirplaneMode)
-    if (!js.isUndefined(isNetworkConnected)) __obj.updateDynamic("isNetworkConnected")(isNetworkConnected)
-    if (!js.isUndefined(isRoaming)) __obj.updateDynamic("isRoaming")(isRoaming)
-    if (networkConnectionType != null) __obj.updateDynamic("networkConnectionType")(networkConnectionType)
-    if (telephonyNetworkType != null) __obj.updateDynamic("telephonyNetworkType")(telephonyNetworkType)
-    if (wifiName != null) __obj.updateDynamic("wifiName")(wifiName)
+    if (Ipv4Addresses != null) __obj.updateDynamic("Ipv4Addresses")(Ipv4Addresses.asInstanceOf[js.Any])
+    if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses.asInstanceOf[js.Any])
+    if (carrierName != null) __obj.updateDynamic("carrierName")(carrierName.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAirplaneMode)) __obj.updateDynamic("isAirplaneMode")(isAirplaneMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNetworkConnected)) __obj.updateDynamic("isNetworkConnected")(isNetworkConnected.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRoaming)) __obj.updateDynamic("isRoaming")(isRoaming.asInstanceOf[js.Any])
+    if (networkConnectionType != null) __obj.updateDynamic("networkConnectionType")(networkConnectionType.asInstanceOf[js.Any])
+    if (telephonyNetworkType != null) __obj.updateDynamic("telephonyNetworkType")(telephonyNetworkType.asInstanceOf[js.Any])
+    if (wifiName != null) __obj.updateDynamic("wifiName")(wifiName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInfo]
   }
 }

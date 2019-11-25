@@ -40,7 +40,7 @@ object Anon_ArgsCancelText {
     visible: Requireable[Boolean],
     width: Requireable[ReactText]
   ): Anon_ArgsCancelText = {
-    val __obj = js.Dynamic.literal(cancelText = cancelText, centered = centered, closable = closable, closeIcon = closeIcon, confirmLoading = confirmLoading, footer = footer, okText = okText, onCancel = onCancel, onOk = onOk, prefixCls = prefixCls, title = title, visible = visible, width = width)
+    val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], centered = centered.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], closeIcon = closeIcon.asInstanceOf[js.Any], confirmLoading = confirmLoading.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any], onCancel = onCancel.asInstanceOf[js.Any], onOk = onOk.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArgsCancelText]
   }

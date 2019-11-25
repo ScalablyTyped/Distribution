@@ -13,8 +13,8 @@ object TestOrderCustomerMarketingRightsInfo {
   @scala.inline
   def apply(explicitMarketingPreference: String = null, lastUpdatedTimestamp: String = null): TestOrderCustomerMarketingRightsInfo = {
     val __obj = js.Dynamic.literal()
-    if (explicitMarketingPreference != null) __obj.updateDynamic("explicitMarketingPreference")(explicitMarketingPreference)
-    if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp)
+    if (explicitMarketingPreference != null) __obj.updateDynamic("explicitMarketingPreference")(explicitMarketingPreference.asInstanceOf[js.Any])
+    if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestOrderCustomerMarketingRightsInfo]
   }
 }

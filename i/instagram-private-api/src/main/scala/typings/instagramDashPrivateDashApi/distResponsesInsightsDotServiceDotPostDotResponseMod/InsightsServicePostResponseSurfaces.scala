@@ -11,7 +11,7 @@ trait InsightsServicePostResponseSurfaces extends js.Object {
 object InsightsServicePostResponseSurfaces {
   @scala.inline
   def apply(nodes: js.Array[InsightsServicePostResponseNodesItem]): InsightsServicePostResponseSurfaces = {
-    val __obj = js.Dynamic.literal(nodes = nodes)
+    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServicePostResponseSurfaces]
   }

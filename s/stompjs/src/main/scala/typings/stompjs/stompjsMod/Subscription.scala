@@ -12,7 +12,7 @@ trait Subscription extends js.Object {
 object Subscription {
   @scala.inline
   def apply(id: String, unsubscribe: () => Unit): Subscription = {
-    val __obj = js.Dynamic.literal(id = id, unsubscribe = js.Any.fromFunction0(unsubscribe))
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
   
     __obj.asInstanceOf[Subscription]
   }

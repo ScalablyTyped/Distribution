@@ -38,7 +38,7 @@ object SceneViewHitTestResult {
     results: js.Array[SceneViewHitTestResultResults],
     screenPoint: SceneViewScreenPoint | MouseEvent
   ): SceneViewHitTestResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, ground = ground, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results, screenPoint = screenPoint.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], ground = ground.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results.asInstanceOf[js.Any], screenPoint = screenPoint.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SceneViewHitTestResult]
   }

@@ -35,8 +35,8 @@ object PullsSubmitReviewParamsDeprecatedNumber {
     review_id: Double,
     body: String = null
   ): PullsSubmitReviewParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], number = number, owner = owner, repo = repo, review_id = review_id)
-    if (body != null) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], review_id = review_id.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsSubmitReviewParamsDeprecatedNumber]
   }
 }

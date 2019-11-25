@@ -21,8 +21,8 @@ object Options {
   @scala.inline
   def apply(error: js.Any = null, keepBcc: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(keepBcc)) __obj.updateDynamic("keepBcc")(keepBcc)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepBcc)) __obj.updateDynamic("keepBcc")(keepBcc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

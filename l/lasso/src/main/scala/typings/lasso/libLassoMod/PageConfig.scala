@@ -35,17 +35,17 @@ object PageConfig {
     pageName: String = null
   ): PageConfig = {
     val __obj = js.Dynamic.literal()
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (lassoContext != null) __obj.updateDynamic("lassoContext")(lassoContext)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (packagePath != null) __obj.updateDynamic("packagePath")(packagePath)
-    if (packagePaths != null) __obj.updateDynamic("packagePaths")(packagePaths)
-    if (pageName != null) __obj.updateDynamic("pageName")(pageName)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (lassoContext != null) __obj.updateDynamic("lassoContext")(lassoContext.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (packagePath != null) __obj.updateDynamic("packagePath")(packagePath.asInstanceOf[js.Any])
+    if (packagePaths != null) __obj.updateDynamic("packagePaths")(packagePaths.asInstanceOf[js.Any])
+    if (pageName != null) __obj.updateDynamic("pageName")(pageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageConfig]
   }
 }

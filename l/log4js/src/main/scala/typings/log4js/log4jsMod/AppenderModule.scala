@@ -11,7 +11,7 @@ trait AppenderModule extends js.Object {
 object AppenderModule {
   @scala.inline
   def apply(configure: js.Function): AppenderModule = {
-    val __obj = js.Dynamic.literal(configure = configure)
+    val __obj = js.Dynamic.literal(configure = configure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppenderModule]
   }

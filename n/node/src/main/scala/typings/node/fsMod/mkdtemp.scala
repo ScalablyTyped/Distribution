@@ -6,7 +6,7 @@ import typings.node.Anon_EncodingNull
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ErrnoException
-import typings.node.nodeStrings.buffer
+import typings.node.nodeStrings.buffer_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -75,7 +75,7 @@ object mkdtemp extends js.Object {
     */
   def apply(
     prefix: java.lang.String,
-    options: buffer,
+    options: buffer_,
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
   ): Unit = js.native
   /**
@@ -95,6 +95,6 @@ object mkdtemp extends js.Object {
   def __promisify__(prefix: java.lang.String, options: Anon_EncodingNull): js.Promise[java.lang.String | Buffer] = js.native
   def __promisify__(prefix: java.lang.String, options: BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("__promisify__")
-  def __promisify___buffer(prefix: java.lang.String, options: buffer): js.Promise[Buffer] = js.native
+  def __promisify___buffer(prefix: java.lang.String, options: buffer_): js.Promise[Buffer] = js.native
 }
 

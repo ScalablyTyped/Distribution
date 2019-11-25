@@ -17,7 +17,7 @@ trait ojMenuSettableProperties extends baseComponentSettableProperties {
 object ojMenuSettableProperties {
   @scala.inline
   def apply(disabled: Boolean, openOptions: OpenOptions, translations: Anon_AriaFocusSkipLink): ojMenuSettableProperties = {
-    val __obj = js.Dynamic.literal(disabled = disabled, openOptions = openOptions, translations = translations)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], openOptions = openOptions.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojMenuSettableProperties]
   }

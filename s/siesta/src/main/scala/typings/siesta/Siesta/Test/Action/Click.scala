@@ -25,11 +25,11 @@ object Click {
     target: js.Any = null
   ): Click = {
     val __obj = js.Dynamic.literal()
-    if (desc != null) __obj.updateDynamic("desc")(desc)
-    if (el != null) __obj.updateDynamic("el")(el)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Click]
   }
 }

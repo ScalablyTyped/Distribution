@@ -29,7 +29,7 @@ object Typeofvisualization {
     MapsEventListener: Instantiable0[MapsEventListener],
     MouseEvent: Instantiable0[MouseEvent]
   ): Typeofvisualization = {
-    val __obj = js.Dynamic.literal(HeatmapLayer = HeatmapLayer, MapsEngineLayer = MapsEngineLayer, MapsEventListener = MapsEventListener, MouseEvent = MouseEvent)
+    val __obj = js.Dynamic.literal(HeatmapLayer = HeatmapLayer.asInstanceOf[js.Any], MapsEngineLayer = MapsEngineLayer.asInstanceOf[js.Any], MapsEventListener = MapsEventListener.asInstanceOf[js.Any], MouseEvent = MouseEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofvisualization]
   }

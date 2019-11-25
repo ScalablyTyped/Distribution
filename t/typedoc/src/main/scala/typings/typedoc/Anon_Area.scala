@@ -39,7 +39,7 @@ object Anon_Area {
     source: Boolean,
     wbr: Boolean
   ): Anon_Area = {
-    val __obj = js.Dynamic.literal(area = area, base = base, br = br, col = col, command = command, embed = embed, hr = hr, img = img, input = input, link = link, meta = meta, param = param, source = source, wbr = wbr)
+    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Area]
   }

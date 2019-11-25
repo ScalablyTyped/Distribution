@@ -18,7 +18,7 @@ object CopyOptions {
     process: (/* contents */ Buffer, /* path */ String) => Contents = null
   ): CopyOptions = {
     val __obj = js.Dynamic.literal()
-    if (globOptions != null) __obj.updateDynamic("globOptions")(globOptions)
+    if (globOptions != null) __obj.updateDynamic("globOptions")(globOptions.asInstanceOf[js.Any])
     if (process != null) __obj.updateDynamic("process")(js.Any.fromFunction2(process))
     __obj.asInstanceOf[CopyOptions]
   }

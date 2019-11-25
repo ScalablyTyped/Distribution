@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScript.ByteOrderMark
 import typings.typescriptDashServices.TypeScript.IScriptSnapshot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +15,7 @@ class Document protected ()
     fileName: String,
     referencedFiles: js.Array[String],
     _scriptSnapshot: IScriptSnapshot,
-    byteOrderMark: ByteOrderMark,
+    byteOrderMark: typings.typescriptDashServices.TypeScript.ByteOrderMark,
     version: Double,
     isOpen: Boolean,
     _syntaxTree: typings.typescriptDashServices.TypeScript.SyntaxTree,
@@ -33,7 +32,7 @@ object Document extends js.Object {
     semanticInfoChain: typings.typescriptDashServices.TypeScript.SemanticInfoChain,
     fileName: String,
     scriptSnapshot: IScriptSnapshot,
-    byteOrderMark: ByteOrderMark,
+    byteOrderMark: typings.typescriptDashServices.TypeScript.ByteOrderMark,
     version: Double,
     isOpen: Boolean,
     referencedFiles: js.Array[String]

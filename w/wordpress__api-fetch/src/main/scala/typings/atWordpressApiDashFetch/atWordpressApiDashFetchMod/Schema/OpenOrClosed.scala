@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait OpenOrClosed extends js.Object
 
+object OpenOrClosed {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def closed: typings.atWordpressApiDashFetch.atWordpressApiDashFetchStrings.closed = this.cast("closed")
+  @scala.inline
+  def open: typings.atWordpressApiDashFetch.atWordpressApiDashFetchStrings.open = this.cast("open")
+}
+

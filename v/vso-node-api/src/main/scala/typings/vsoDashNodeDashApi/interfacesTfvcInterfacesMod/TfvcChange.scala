@@ -26,7 +26,7 @@ object TfvcChange {
     sourceServerItem: String,
     url: String
   ): TfvcChange = {
-    val __obj = js.Dynamic.literal(changeType = changeType, item = item, mergeSources = mergeSources, newContent = newContent, pendingVersion = pendingVersion, sourceServerItem = sourceServerItem, url = url)
+    val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], mergeSources = mergeSources.asInstanceOf[js.Any], newContent = newContent.asInstanceOf[js.Any], pendingVersion = pendingVersion.asInstanceOf[js.Any], sourceServerItem = sourceServerItem.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcChange]
   }

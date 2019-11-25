@@ -1,6 +1,5 @@
 package typings.baconjs.typesRetryMod
 
-import typings.baconjs.typesObservableMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,13 +20,13 @@ trait RetryOptions[V] extends js.Object {
   /**
     * Required. A function that produces an Observable. The function gets attempt number (starting from zero) as its argument.
     */
-  def source(attemptNumber: Double): default[V]
+  def source(attemptNumber: Double): typings.baconjs.typesObservableMod.default[V]
 }
 
 object RetryOptions {
   @scala.inline
   def apply[V](
-    source: Double => default[V],
+    source: Double => typings.baconjs.typesObservableMod.default[V],
     delay: /* context */ RetryContext => Double = null,
     isRetryable: /* error */ js.Any => Boolean = null,
     retries: Int | Double = null

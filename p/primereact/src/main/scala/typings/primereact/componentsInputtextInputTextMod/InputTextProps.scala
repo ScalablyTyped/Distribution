@@ -39,15 +39,15 @@ object InputTextProps {
     validateOnly: js.UndefOr[Boolean] = js.undefined
   ): InputTextProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (keyfilter != null) __obj.updateDynamic("keyfilter")(keyfilter)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (keyfilter != null) __obj.updateDynamic("keyfilter")(keyfilter.asInstanceOf[js.Any])
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
-    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputTextProps]
   }
 }

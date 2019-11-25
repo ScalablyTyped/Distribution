@@ -25,8 +25,8 @@ object Result {
     tags: js.Array[TagValue],
     impact: ImpactValue = null
   ): Result = {
-    val __obj = js.Dynamic.literal(description = description, help = help, helpUrl = helpUrl, id = id, nodes = nodes, tags = tags)
-    if (impact != null) __obj.updateDynamic("impact")(impact)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpUrl = helpUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+    if (impact != null) __obj.updateDynamic("impact")(impact.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

@@ -37,8 +37,8 @@ object TriggerParams {
     ref: Ref[_] = null
   ): TriggerParams = {
     val __obj = js.Dynamic.literal(onBlur = js.Any.fromFunction1(onBlur), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), onMouseDown = js.Any.fromFunction1(onMouseDown), onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave), onMouseMove = js.Any.fromFunction1(onMouseMove))
-    __obj.updateDynamic("aria-describedby")(`aria-describedby`)
-    __obj.updateDynamic("data-reach-tooltip-trigger")(`data-reach-tooltip-trigger`)
+    __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
+    __obj.updateDynamic("data-reach-tooltip-trigger")(`data-reach-tooltip-trigger`.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerParams]
   }

@@ -25,7 +25,7 @@ object PreciseRangeValueObject {
     seconds: Double,
     years: Double
   ): PreciseRangeValueObject = {
-    val __obj = js.Dynamic.literal(days = days, firstDateWasLater = firstDateWasLater, hours = hours, minutes = minutes, months = months, seconds = seconds, years = years)
+    val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], firstDateWasLater = firstDateWasLater.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PreciseRangeValueObject]
   }

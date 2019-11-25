@@ -13,7 +13,7 @@ trait Anon_Header extends js.Object {
 object Anon_Header {
   @scala.inline
   def apply(header: CFB$Blob, sectors: js.Array[CFB$Blob]): Anon_Header = {
-    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], sectors = sectors)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], sectors = sectors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Header]
   }

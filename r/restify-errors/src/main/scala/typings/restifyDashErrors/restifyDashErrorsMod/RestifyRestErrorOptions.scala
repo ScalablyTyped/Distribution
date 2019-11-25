@@ -25,16 +25,16 @@ object RestifyRestErrorOptions {
     strict: js.UndefOr[Boolean] = js.undefined
   ): RestifyRestErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (cause != null) __obj.updateDynamic("cause")(cause)
-    if (code != null) __obj.updateDynamic("code")(code)
+    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (constructorOpt != null) __obj.updateDynamic("constructorOpt")(js.Any.fromFunction1(constructorOpt))
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (restCode != null) __obj.updateDynamic("restCode")(restCode)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (restCode != null) __obj.updateDynamic("restCode")(restCode.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestifyRestErrorOptions]
   }
 }

@@ -26,12 +26,12 @@ object SubscriptionOptions {
     ttl: Int | Double = null
   ): SubscriptionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowP2P)) __obj.updateDynamic("allowP2P")(allowP2P)
+    if (!js.isUndefined(allowP2P)) __obj.updateDynamic("allowP2P")(allowP2P.asInstanceOf[js.Any])
     if (minPow != null) __obj.updateDynamic("minPow")(minPow.asInstanceOf[js.Any])
-    if (privateKeyID != null) __obj.updateDynamic("privateKeyID")(privateKeyID)
-    if (sig != null) __obj.updateDynamic("sig")(sig)
-    if (symKeyID != null) __obj.updateDynamic("symKeyID")(symKeyID)
-    if (topics != null) __obj.updateDynamic("topics")(topics)
+    if (privateKeyID != null) __obj.updateDynamic("privateKeyID")(privateKeyID.asInstanceOf[js.Any])
+    if (sig != null) __obj.updateDynamic("sig")(sig.asInstanceOf[js.Any])
+    if (symKeyID != null) __obj.updateDynamic("symKeyID")(symKeyID.asInstanceOf[js.Any])
+    if (topics != null) __obj.updateDynamic("topics")(topics.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionOptions]
   }

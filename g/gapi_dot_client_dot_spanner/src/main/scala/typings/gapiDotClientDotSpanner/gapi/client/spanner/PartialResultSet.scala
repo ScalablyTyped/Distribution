@@ -119,11 +119,11 @@ object PartialResultSet {
     values: js.Array[_] = null
   ): PartialResultSet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chunkedValue)) __obj.updateDynamic("chunkedValue")(chunkedValue)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (!js.isUndefined(chunkedValue)) __obj.updateDynamic("chunkedValue")(chunkedValue.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialResultSet]
   }
 }

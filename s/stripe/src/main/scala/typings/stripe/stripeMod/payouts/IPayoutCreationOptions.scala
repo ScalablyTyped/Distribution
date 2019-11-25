@@ -62,15 +62,15 @@ object IPayoutCreationOptions {
     source_type: alipay_account | bank_account | card = null,
     statement_descriptor: String = null
   ): IPayoutCreationOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (method != null) __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPayoutCreationOptions]
   }
 }

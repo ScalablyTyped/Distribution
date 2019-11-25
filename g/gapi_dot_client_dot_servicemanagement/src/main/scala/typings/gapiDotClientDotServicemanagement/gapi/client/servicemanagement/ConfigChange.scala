@@ -46,11 +46,11 @@ object ConfigChange {
     oldValue: String = null
   ): ConfigChange = {
     val __obj = js.Dynamic.literal()
-    if (advices != null) __obj.updateDynamic("advices")(advices)
-    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    if (advices != null) __obj.updateDynamic("advices")(advices.asInstanceOf[js.Any])
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigChange]
   }
 }

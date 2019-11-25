@@ -55,12 +55,12 @@ object DependencyTelemetry {
     target: String = null,
     time: Date = null
   ): DependencyTelemetry = {
-    val __obj = js.Dynamic.literal(data = data, dependencyTypeName = dependencyTypeName, duration = duration, name = name, resultCode = resultCode.asInstanceOf[js.Any], success = success)
-    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (time != null) __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dependencyTypeName = dependencyTypeName.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependencyTelemetry]
   }
 }

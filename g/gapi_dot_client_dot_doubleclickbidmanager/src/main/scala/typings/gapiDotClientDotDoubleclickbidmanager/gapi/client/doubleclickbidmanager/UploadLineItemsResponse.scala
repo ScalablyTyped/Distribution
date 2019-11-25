@@ -13,7 +13,7 @@ object UploadLineItemsResponse {
   @scala.inline
   def apply(uploadStatus: UploadStatus = null): UploadLineItemsResponse = {
     val __obj = js.Dynamic.literal()
-    if (uploadStatus != null) __obj.updateDynamic("uploadStatus")(uploadStatus)
+    if (uploadStatus != null) __obj.updateDynamic("uploadStatus")(uploadStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadLineItemsResponse]
   }
 }

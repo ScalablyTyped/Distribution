@@ -25,11 +25,11 @@ object CreateObservableOptions {
     proxy: js.UndefOr[Boolean] = js.undefined
   ): CreateObservableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
-    if (defaultDecorator != null) __obj.updateDynamic("defaultDecorator")(defaultDecorator)
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    if (defaultDecorator != null) __obj.updateDynamic("defaultDecorator")(defaultDecorator.asInstanceOf[js.Any])
     if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateObservableOptions]
   }
 }

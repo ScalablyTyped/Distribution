@@ -22,18 +22,16 @@ trait ITagItemProps extends IPickerItemProps[ITag] {
 object ITagItemProps {
   @scala.inline
   def apply(
-    IPickerItemProps: IPickerItemProps[ITag] = null,
-    className: String = null,
+    IPickerItemProps: IPickerItemProps[ITag],
     enableTagFocusInDisabledPicker: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[ITagItemStyleProps, ITagItemStyles] = null,
     theme: ITheme = null
   ): ITagItemProps = {
     val __obj = js.Dynamic.literal()
-    if (__obj != null) js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(enableTagFocusInDisabledPicker)) __obj.updateDynamic("enableTagFocusInDisabledPicker")(enableTagFocusInDisabledPicker)
+    js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
+    if (!js.isUndefined(enableTagFocusInDisabledPicker)) __obj.updateDynamic("enableTagFocusInDisabledPicker")(enableTagFocusInDisabledPicker.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITagItemProps]
   }
 }

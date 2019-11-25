@@ -11,7 +11,7 @@ trait PostCustomFieldItemParams extends js.Object {
 object PostCustomFieldItemParams {
   @scala.inline
   def apply(name: String): PostCustomFieldItemParams = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostCustomFieldItemParams]
   }

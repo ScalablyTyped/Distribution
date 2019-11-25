@@ -12,7 +12,7 @@ object EncoderOptions {
   @scala.inline
   def apply(codec: Codec = null): EncoderOptions = {
     val __obj = js.Dynamic.literal()
-    if (codec != null) __obj.updateDynamic("codec")(codec)
+    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncoderOptions]
   }
 }

@@ -37,14 +37,14 @@ object IParameter {
     value: String = null
   ): IParameter = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (entityTypeDisplayName != null) __obj.updateDynamic("entityTypeDisplayName")(entityTypeDisplayName)
-    if (!js.isUndefined(isList)) __obj.updateDynamic("isList")(isList)
-    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (prompts != null) __obj.updateDynamic("prompts")(prompts)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (entityTypeDisplayName != null) __obj.updateDynamic("entityTypeDisplayName")(entityTypeDisplayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isList)) __obj.updateDynamic("isList")(isList.asInstanceOf[js.Any])
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (prompts != null) __obj.updateDynamic("prompts")(prompts.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParameter]
   }
 }

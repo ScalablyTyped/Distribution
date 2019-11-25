@@ -15,9 +15,9 @@ object FilterMessages {
   @scala.inline
   def apply(and: String = null, apply: String = null, or: String = null): FilterMessages = {
     val __obj = js.Dynamic.literal()
-    if (and != null) __obj.updateDynamic("and")(and)
-    if (apply != null) __obj.updateDynamic("apply")(apply)
-    if (or != null) __obj.updateDynamic("or")(or)
+    if (and != null) __obj.updateDynamic("and")(and.asInstanceOf[js.Any])
+    if (apply != null) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
+    if (or != null) __obj.updateDynamic("or")(or.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterMessages]
   }
 }

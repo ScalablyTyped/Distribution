@@ -13,8 +13,8 @@ object Anon_Binary {
   @scala.inline
   def apply(binary: js.UndefOr[Boolean] = js.undefined, mask: js.UndefOr[Boolean] = js.undefined): Anon_Binary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Binary]
   }
 }

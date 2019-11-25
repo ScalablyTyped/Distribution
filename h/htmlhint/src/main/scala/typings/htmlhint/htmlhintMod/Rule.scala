@@ -13,7 +13,7 @@ trait Rule extends js.Object {
 object Rule {
   @scala.inline
   def apply(description: String, id: String, link: String): Rule = {
-    val __obj = js.Dynamic.literal(description = description, id = id, link = link)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Rule]
   }

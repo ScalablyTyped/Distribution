@@ -11,7 +11,7 @@ trait HeaderViewState extends js.Object {
 object HeaderViewState {
   @scala.inline
   def apply(visible: Boolean): HeaderViewState = {
-    val __obj = js.Dynamic.literal(visible = visible)
+    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HeaderViewState]
   }

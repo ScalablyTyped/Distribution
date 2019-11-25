@@ -38,12 +38,12 @@ object DeflateFunctionOptions {
     windowBits: Int | Double = null
   ): DeflateFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary)
+    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (memLevel != null) __obj.updateDynamic("memLevel")(memLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeflateFunctionOptions]
   }

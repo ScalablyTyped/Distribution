@@ -35,10 +35,10 @@ object CommonNsisOptions {
     warningsAsErrors: js.UndefOr[Boolean] = js.undefined
   ): CommonNsisOptions = {
     val __obj = js.Dynamic.literal()
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode)
-    if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip)
-    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors)
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
+    if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip.asInstanceOf[js.Any])
+    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonNsisOptions]
   }
 }

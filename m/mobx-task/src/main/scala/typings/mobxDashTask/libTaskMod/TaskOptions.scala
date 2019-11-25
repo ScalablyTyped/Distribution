@@ -23,10 +23,10 @@ object TaskOptions {
   ): TaskOptions[A, R] = {
     val __obj = js.Dynamic.literal()
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (!js.isUndefined(swallow)) __obj.updateDynamic("swallow")(swallow)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(swallow)) __obj.updateDynamic("swallow")(swallow.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOptions[A, R]]
   }
 }

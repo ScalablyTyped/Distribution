@@ -24,8 +24,8 @@ trait PaymentItem extends js.Object {
 object PaymentItem {
   @scala.inline
   def apply(amount: Double, label: String, pending: js.UndefOr[Boolean] = js.undefined): PaymentItem = {
-    val __obj = js.Dynamic.literal(amount = amount, label = label)
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentItem]
   }
 }

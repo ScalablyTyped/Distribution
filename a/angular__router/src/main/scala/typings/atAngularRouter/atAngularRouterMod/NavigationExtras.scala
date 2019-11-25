@@ -135,15 +135,15 @@ object NavigationExtras {
     state: StringDictionary[js.Any] = null
   ): NavigationExtras = {
     val __obj = js.Dynamic.literal()
-    if (fragment != null) __obj.updateDynamic("fragment")(fragment)
-    if (!js.isUndefined(preserveFragment)) __obj.updateDynamic("preserveFragment")(preserveFragment)
-    if (!js.isUndefined(preserveQueryParams)) __obj.updateDynamic("preserveQueryParams")(preserveQueryParams)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
-    if (queryParamsHandling != null) __obj.updateDynamic("queryParamsHandling")(queryParamsHandling)
-    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
-    if (!js.isUndefined(replaceUrl)) __obj.updateDynamic("replaceUrl")(replaceUrl)
-    if (!js.isUndefined(skipLocationChange)) __obj.updateDynamic("skipLocationChange")(skipLocationChange)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveFragment)) __obj.updateDynamic("preserveFragment")(preserveFragment.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveQueryParams)) __obj.updateDynamic("preserveQueryParams")(preserveQueryParams.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (queryParamsHandling != null) __obj.updateDynamic("queryParamsHandling")(queryParamsHandling.asInstanceOf[js.Any])
+    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceUrl)) __obj.updateDynamic("replaceUrl")(replaceUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipLocationChange)) __obj.updateDynamic("skipLocationChange")(skipLocationChange.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationExtras]
   }
 }

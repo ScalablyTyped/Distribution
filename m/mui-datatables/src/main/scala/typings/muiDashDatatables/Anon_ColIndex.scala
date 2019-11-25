@@ -22,7 +22,7 @@ object Anon_ColIndex {
     event: MouseEvent[Element, NativeMouseEvent],
     rowIndex: Double
   ): Anon_ColIndex = {
-    val __obj = js.Dynamic.literal(colIndex = colIndex, dataIndex = dataIndex, event = event, rowIndex = rowIndex)
+    val __obj = js.Dynamic.literal(colIndex = colIndex.asInstanceOf[js.Any], dataIndex = dataIndex.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColIndex]
   }

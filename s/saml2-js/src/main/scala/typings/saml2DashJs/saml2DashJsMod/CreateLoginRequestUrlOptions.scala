@@ -22,11 +22,11 @@ object CreateLoginRequestUrlOptions {
     sign_get_request: js.UndefOr[Boolean] = js.undefined
   ): CreateLoginRequestUrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (auth_context != null) __obj.updateDynamic("auth_context")(auth_context)
-    if (!js.isUndefined(force_authn)) __obj.updateDynamic("force_authn")(force_authn)
-    if (nameid_format != null) __obj.updateDynamic("nameid_format")(nameid_format)
-    if (relay_state != null) __obj.updateDynamic("relay_state")(relay_state)
-    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request)
+    if (auth_context != null) __obj.updateDynamic("auth_context")(auth_context.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_authn)) __obj.updateDynamic("force_authn")(force_authn.asInstanceOf[js.Any])
+    if (nameid_format != null) __obj.updateDynamic("nameid_format")(nameid_format.asInstanceOf[js.Any])
+    if (relay_state != null) __obj.updateDynamic("relay_state")(relay_state.asInstanceOf[js.Any])
+    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLoginRequestUrlOptions]
   }
 }

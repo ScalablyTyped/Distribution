@@ -39,19 +39,19 @@ object NgBootboxDialog {
     title: String = null
   ): NgBootboxDialog = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (onEscape != null) __obj.updateDynamic("onEscape")(js.Any.fromFunction0(onEscape))
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NgBootboxDialog]
   }
 }

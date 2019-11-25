@@ -22,7 +22,7 @@ object Options {
     preConnections: (/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit]) => Unit = null,
     preRegister: (/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit]) => Unit = null
   ): Options = {
-    val __obj = js.Dynamic.literal(relativeTo = relativeTo)
+    val __obj = js.Dynamic.literal(relativeTo = relativeTo.asInstanceOf[js.Any])
     if (preConnections != null) __obj.updateDynamic("preConnections")(js.Any.fromFunction2(preConnections))
     if (preRegister != null) __obj.updateDynamic("preRegister")(js.Any.fromFunction2(preRegister))
     __obj.asInstanceOf[Options]

@@ -13,8 +13,8 @@ object Group {
   @scala.inline
   def apply(email: String = null, title: String = null): Group = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
 }

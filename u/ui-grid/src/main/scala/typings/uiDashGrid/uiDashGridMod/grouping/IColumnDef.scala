@@ -47,10 +47,10 @@ object IColumnDef {
     groupingShowGroupingMenu: js.UndefOr[Boolean] = js.undefined
   ): IColumnDef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping)
-    if (grouping != null) __obj.updateDynamic("grouping")(grouping)
-    if (!js.isUndefined(groupingShowAggregationMenu)) __obj.updateDynamic("groupingShowAggregationMenu")(groupingShowAggregationMenu)
-    if (!js.isUndefined(groupingShowGroupingMenu)) __obj.updateDynamic("groupingShowGroupingMenu")(groupingShowGroupingMenu)
+    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping.asInstanceOf[js.Any])
+    if (grouping != null) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingShowAggregationMenu)) __obj.updateDynamic("groupingShowAggregationMenu")(groupingShowAggregationMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupingShowGroupingMenu)) __obj.updateDynamic("groupingShowGroupingMenu")(groupingShowGroupingMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDef]
   }
 }

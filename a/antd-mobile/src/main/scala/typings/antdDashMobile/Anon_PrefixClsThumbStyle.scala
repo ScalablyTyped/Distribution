@@ -11,7 +11,7 @@ trait Anon_PrefixClsThumbStyle extends js.Object {
 object Anon_PrefixClsThumbStyle {
   @scala.inline
   def apply(prefixCls: String): Anon_PrefixClsThumbStyle = {
-    val __obj = js.Dynamic.literal(prefixCls = prefixCls)
+    val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrefixClsThumbStyle]
   }

@@ -17,7 +17,7 @@ object IGridRow {
   @scala.inline
   def apply(isExpanded: js.UndefOr[Boolean] = js.undefined): IGridRow = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridRow]
   }
 }

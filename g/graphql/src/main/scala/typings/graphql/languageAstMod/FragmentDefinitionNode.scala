@@ -32,10 +32,10 @@ object FragmentDefinitionNode {
     loc: Location = null,
     variableDefinitions: js.Array[VariableDefinitionNode] = null
   ): FragmentDefinitionNode = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name, selectionSet = selectionSet, typeCondition = typeCondition)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (variableDefinitions != null) __obj.updateDynamic("variableDefinitions")(variableDefinitions)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selectionSet = selectionSet.asInstanceOf[js.Any], typeCondition = typeCondition.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (variableDefinitions != null) __obj.updateDynamic("variableDefinitions")(variableDefinitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentDefinitionNode]
   }
 }

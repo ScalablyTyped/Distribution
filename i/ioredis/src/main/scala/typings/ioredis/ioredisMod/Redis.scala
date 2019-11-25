@@ -12,11 +12,11 @@ import typings.ioredis.ioredisStrings.MAXLEN
 import typings.ioredis.ioredisStrings.NOSAVE
 import typings.ioredis.ioredisStrings.SAVE
 import typings.ioredis.ioredisStrings.WITHSCORES
-import typings.ioredis.ioredisStrings.`match`
 import typings.ioredis.ioredisStrings.`~`
-import typings.ioredis.ioredisStrings.count
-import typings.ioredis.ioredisStrings.group
-import typings.ioredis.ioredisStrings.maxlen
+import typings.ioredis.ioredisStrings.count_
+import typings.ioredis.ioredisStrings.group_
+import typings.ioredis.ioredisStrings.match_
+import typings.ioredis.ioredisStrings.maxlen_
 import typings.node.Buffer
 import typings.node.NodeJS.EventEmitter
 import typings.node.streamMod.Readable
@@ -343,13 +343,13 @@ trait Redis
   def save(callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Unit = js.native
   def scan(cursor: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
   def scan(cursor: Double, countOption: COUNT, count: Double, matchOption: MATCH, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
-  def scan(cursor: Double, countOption: COUNT, count: Double, matchOption: `match`, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
-  def scan(cursor: Double, countOption: count, count: Double, matchOption: MATCH, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
-  def scan(cursor: Double, countOption: count, count: Double, matchOption: `match`, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
+  def scan(cursor: Double, countOption: COUNT, count: Double, matchOption: match_, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
+  def scan(cursor: Double, countOption: count_, count: Double, matchOption: MATCH, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
+  def scan(cursor: Double, countOption: count_, count: Double, matchOption: match_, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
   def scan(cursor: Double, matchOption: MATCH, pattern: String, countOption: COUNT, count: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
-  def scan(cursor: Double, matchOption: MATCH, pattern: String, countOption: count, count: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
-  def scan(cursor: Double, matchOption: `match`, pattern: String, countOption: COUNT, count: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
-  def scan(cursor: Double, matchOption: `match`, pattern: String, countOption: count, count: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
+  def scan(cursor: Double, matchOption: MATCH, pattern: String, countOption: count_, count: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
+  def scan(cursor: Double, matchOption: match_, pattern: String, countOption: COUNT, count: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
+  def scan(cursor: Double, matchOption: match_, pattern: String, countOption: count_, count: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
   def scanStream(): Readable = js.native
   def scanStream(options: ScanStreamOption): Readable = js.native
   @JSName("scan")
@@ -357,9 +357,9 @@ trait Redis
   @JSName("scan")
   def scan_MATCH(cursor: Double, matchOption: MATCH, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
   @JSName("scan")
-  def scan_count(cursor: Double, countOption: count, count: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
+  def scan_count(cursor: Double, countOption: count_, count: Double): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
   @JSName("scan")
-  def scan_match(cursor: Double, matchOption: `match`, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
+  def scan_match(cursor: Double, matchOption: match_, pattern: String): js.Promise[js.Tuple2[String, js.Array[String]]] = js.native
   def scard(key: KeyType): js.Promise[Double] = js.native
   def scard(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Unit = js.native
   def script(args: js.Any*): js.Any = js.native
@@ -594,9 +594,9 @@ trait Redis
   @JSName("xadd")
   def xadd_MAXLEN(key: KeyType, maxLenOption: MAXLEN, count: Double, args: String*): js.Any = js.native
   @JSName("xadd")
-  def xadd_maxlen(key: KeyType, maxLenOption: maxlen, approximate: `~`, count: Double, args: String*): js.Any = js.native
+  def xadd_maxlen(key: KeyType, maxLenOption: maxlen_, approximate: `~`, count: Double, args: String*): js.Any = js.native
   @JSName("xadd")
-  def xadd_maxlen(key: KeyType, maxLenOption: maxlen, count: Double, args: String*): js.Any = js.native
+  def xadd_maxlen(key: KeyType, maxLenOption: maxlen_, count: Double, args: String*): js.Any = js.native
   def xclaim(key: KeyType, group: String, consumer: String, minIdleTime: Double, args: js.Any*): js.Any = js.native
   def xdel(key: KeyType, ids: String*): js.Any = js.native
   def xgroup(args: js.Any*): js.Any = js.native
@@ -608,12 +608,12 @@ trait Redis
   @JSName("xreadgroup")
   def xreadgroup_GROUP(groupOption: GROUP, group: String, consumer: String, args: js.Any*): js.Any = js.native
   @JSName("xreadgroup")
-  def xreadgroup_group(groupOption: group, group: String, consumer: String, args: js.Any*): js.Any = js.native
+  def xreadgroup_group(groupOption: group_, group: String, consumer: String, args: js.Any*): js.Any = js.native
   def xrevrange(key: KeyType, end: String, start: String, args: js.Any*): js.Any = js.native
   @JSName("xtrim")
   def xtrim_MAXLEN(key: KeyType, maxLenOption: MAXLEN, args: js.Any*): js.Any = js.native
   @JSName("xtrim")
-  def xtrim_maxlen(key: KeyType, maxLenOption: maxlen, args: js.Any*): js.Any = js.native
+  def xtrim_maxlen(key: KeyType, maxLenOption: maxlen_, args: js.Any*): js.Any = js.native
   def zadd(key: KeyType, args: String*): js.Promise[Double | String] = js.native
   def zaddBuffer(key: KeyType, score1: Double, member1: Buffer): js.Promise[String | Double] = js.native
   def zcard(key: KeyType): js.Promise[Double] = js.native

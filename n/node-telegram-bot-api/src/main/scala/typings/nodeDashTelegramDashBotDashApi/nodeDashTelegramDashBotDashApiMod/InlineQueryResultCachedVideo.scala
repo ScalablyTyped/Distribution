@@ -28,12 +28,12 @@ object InlineQueryResultCachedVideo {
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null
   ): InlineQueryResultCachedVideo = {
-    val __obj = js.Dynamic.literal(id = id, title = title, video_file_id = video_file_id)
-    __obj.updateDynamic("type")(`type`)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], video_file_id = video_file_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultCachedVideo]
   }
 }

@@ -12,7 +12,7 @@ object Anon_StringRef {
   @scala.inline
   def apply(_stringRef: String = null): Anon_StringRef = {
     val __obj = js.Dynamic.literal()
-    if (_stringRef != null) __obj.updateDynamic("_stringRef")(_stringRef)
+    if (_stringRef != null) __obj.updateDynamic("_stringRef")(_stringRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_StringRef]
   }
 }

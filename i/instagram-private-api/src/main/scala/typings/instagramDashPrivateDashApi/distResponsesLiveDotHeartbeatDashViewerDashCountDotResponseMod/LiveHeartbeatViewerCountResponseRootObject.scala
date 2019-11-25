@@ -25,7 +25,7 @@ object LiveHeartbeatViewerCountResponseRootObject {
     total_unique_viewer_count: Double,
     viewer_count: Double
   ): LiveHeartbeatViewerCountResponseRootObject = {
-    val __obj = js.Dynamic.literal(broadcast_status = broadcast_status, cobroadcaster_ids = cobroadcaster_ids, is_top_live_eligible = is_top_live_eligible, offset_to_video_start = offset_to_video_start, status = status, total_unique_viewer_count = total_unique_viewer_count, viewer_count = viewer_count)
+    val __obj = js.Dynamic.literal(broadcast_status = broadcast_status.asInstanceOf[js.Any], cobroadcaster_ids = cobroadcaster_ids.asInstanceOf[js.Any], is_top_live_eligible = is_top_live_eligible.asInstanceOf[js.Any], offset_to_video_start = offset_to_video_start.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], total_unique_viewer_count = total_unique_viewer_count.asInstanceOf[js.Any], viewer_count = viewer_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LiveHeartbeatViewerCountResponseRootObject]
   }

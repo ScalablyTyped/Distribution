@@ -13,7 +13,7 @@ object Anon_False {
   @scala.inline
   def apply(objectMode: `false` = null): Anon_False = {
     val __obj = js.Dynamic.literal()
-    if (objectMode != null) __obj.updateDynamic("objectMode")(objectMode)
+    if (objectMode != null) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_False]
   }
 }

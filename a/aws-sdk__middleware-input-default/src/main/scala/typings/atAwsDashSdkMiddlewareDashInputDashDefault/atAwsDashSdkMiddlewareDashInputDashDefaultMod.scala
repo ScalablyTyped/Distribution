@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object atAwsDashSdkMiddlewareDashInputDashDefaultMod extends js.Object {
   def inputDefault[Input /* <: js.Object */](inputBag: InputDefaultArgs[Input]): Middleware[Input, _] = js.native
-  type InputDefaultArgs[Input /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type InputDefaultArgs[Input /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ field in keyof Input ]:? Input[field]}
     */ typings.atAwsDashSdkMiddlewareDashInputDashDefault.atAwsDashSdkMiddlewareDashInputDashDefaultStrings.InputDefaultArgs with Input
 }

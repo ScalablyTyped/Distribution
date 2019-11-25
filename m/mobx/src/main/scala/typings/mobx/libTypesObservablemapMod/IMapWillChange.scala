@@ -18,7 +18,7 @@ object IMapWillChange {
   @scala.inline
   def apply[K, V](name: K, `object`: ObservableMap[K, V], `type`: update | add | delete, newValue: V = null): IMapWillChange[K, V] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapWillChange[K, V]]

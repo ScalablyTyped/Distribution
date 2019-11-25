@@ -43,13 +43,13 @@ object QHeader {
     qMin: Int | Double = null,
     qStateCounts: StringDictionary[Double] = null
   ): QHeader = {
-    val __obj = js.Dynamic.literal(col = col, isOrderedBy = isOrderedBy, orderBy = js.Any.fromFunction0(orderBy), qFallbackTitle = qFallbackTitle, qReverseSort = qReverseSort, qSortIndicator = qSortIndicator.asInstanceOf[js.Any], reverseOrder = js.Any.fromFunction0(reverseOrder), selectRange = js.Any.fromFunction4(selectRange))
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], isOrderedBy = isOrderedBy.asInstanceOf[js.Any], orderBy = js.Any.fromFunction0(orderBy), qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qReverseSort = qReverseSort.asInstanceOf[js.Any], qSortIndicator = qSortIndicator.asInstanceOf[js.Any], reverseOrder = js.Any.fromFunction0(reverseOrder), selectRange = js.Any.fromFunction4(selectRange))
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (qCardinal != null) __obj.updateDynamic("qCardinal")(qCardinal.asInstanceOf[js.Any])
     if (qMax != null) __obj.updateDynamic("qMax")(qMax.asInstanceOf[js.Any])
     if (qMin != null) __obj.updateDynamic("qMin")(qMin.asInstanceOf[js.Any])
-    if (qStateCounts != null) __obj.updateDynamic("qStateCounts")(qStateCounts)
+    if (qStateCounts != null) __obj.updateDynamic("qStateCounts")(qStateCounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[QHeader]
   }
 }

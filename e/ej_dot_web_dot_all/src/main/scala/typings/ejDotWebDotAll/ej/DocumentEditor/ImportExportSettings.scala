@@ -14,7 +14,7 @@ object ImportExportSettings {
   @scala.inline
   def apply(importUrl: String = null): ImportExportSettings = {
     val __obj = js.Dynamic.literal()
-    if (importUrl != null) __obj.updateDynamic("importUrl")(importUrl)
+    if (importUrl != null) __obj.updateDynamic("importUrl")(importUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportExportSettings]
   }
 }

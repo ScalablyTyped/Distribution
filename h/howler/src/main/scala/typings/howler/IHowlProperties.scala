@@ -62,11 +62,11 @@ object IHowlProperties {
     xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
   ): IHowlProperties = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute)
+    if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
     if (onend != null) __obj.updateDynamic("onend")(js.Any.fromFunction1(onend))
     if (onfade != null) __obj.updateDynamic("onfade")(js.Any.fromFunction1(onfade))
     if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction0(onload))
@@ -81,11 +81,11 @@ object IHowlProperties {
     if (onunlock != null) __obj.updateDynamic("onunlock")(js.Any.fromFunction1(onunlock))
     if (onvolume != null) __obj.updateDynamic("onvolume")(js.Any.fromFunction1(onvolume))
     if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite)
+    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials)
+    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHowlProperties]
   }
 }

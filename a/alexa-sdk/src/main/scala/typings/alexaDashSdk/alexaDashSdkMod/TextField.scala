@@ -12,8 +12,8 @@ trait TextField extends js.Object {
 object TextField {
   @scala.inline
   def apply(text: String, `type`: String): TextField = {
-    val __obj = js.Dynamic.literal(text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextField]
   }
 }

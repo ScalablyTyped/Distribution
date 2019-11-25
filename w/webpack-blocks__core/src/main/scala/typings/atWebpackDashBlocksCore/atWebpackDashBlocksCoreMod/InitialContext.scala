@@ -12,7 +12,7 @@ trait InitialContext extends js.Object {
 object InitialContext {
   @scala.inline
   def apply(webpack: js.Any, webpackVersion: String): InitialContext = {
-    val __obj = js.Dynamic.literal(webpack = webpack, webpackVersion = webpackVersion)
+    val __obj = js.Dynamic.literal(webpack = webpack.asInstanceOf[js.Any], webpackVersion = webpackVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InitialContext]
   }

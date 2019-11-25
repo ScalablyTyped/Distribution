@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(async: js.UndefOr[Boolean] = js.undefined, ends: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (!js.isUndefined(ends)) __obj.updateDynamic("ends")(ends)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(ends)) __obj.updateDynamic("ends")(ends.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -23,7 +23,7 @@ object Network {
     scriptHash: Double,
     wif: Double
   ): Network = {
-    val __obj = js.Dynamic.literal(bech32 = bech32, bip32 = bip32, messagePrefix = messagePrefix, pubKeyHash = pubKeyHash, scriptHash = scriptHash, wif = wif)
+    val __obj = js.Dynamic.literal(bech32 = bech32.asInstanceOf[js.Any], bip32 = bip32.asInstanceOf[js.Any], messagePrefix = messagePrefix.asInstanceOf[js.Any], pubKeyHash = pubKeyHash.asInstanceOf[js.Any], scriptHash = scriptHash.asInstanceOf[js.Any], wif = wif.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Network]
   }

@@ -2,8 +2,8 @@ package typings.nock.nockMod
 
 import typings.nock.Anon_Body
 import typings.nock.Anon_Pass
-import typings.nock.Fn_ParsedObj
 import typings.node.NodeJS.ErrnoException
+import typings.node.querystringMod.ParsedUrlQuery
 import typings.node.urlMod.URLSearchParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,8 +20,8 @@ trait Interceptor extends js.Object {
   def once(): this.type = js.native
   def optionally(): this.type = js.native
   def query(matcher: String): this.type = js.native
+  def query(matcher: js.Function1[/* parsedObj */ ParsedUrlQuery, Boolean]): this.type = js.native
   def query(matcher: Boolean): this.type = js.native
-  def query(matcher: Fn_ParsedObj): this.type = js.native
   def query(matcher: DataMatcherMap): this.type = js.native
   def query(matcher: URLSearchParams): this.type = js.native
   def reply(): Scope = js.native

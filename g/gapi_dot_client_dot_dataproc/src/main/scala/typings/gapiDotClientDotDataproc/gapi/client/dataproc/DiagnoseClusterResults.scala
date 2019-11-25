@@ -13,7 +13,7 @@ object DiagnoseClusterResults {
   @scala.inline
   def apply(outputUri: String = null): DiagnoseClusterResults = {
     val __obj = js.Dynamic.literal()
-    if (outputUri != null) __obj.updateDynamic("outputUri")(outputUri)
+    if (outputUri != null) __obj.updateDynamic("outputUri")(outputUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnoseClusterResults]
   }
 }

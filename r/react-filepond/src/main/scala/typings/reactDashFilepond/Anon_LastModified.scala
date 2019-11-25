@@ -12,7 +12,7 @@ trait Anon_LastModified extends js.Object {
 object Anon_LastModified {
   @scala.inline
   def apply(lastModified: Double, name: String): Anon_LastModified = {
-    val __obj = js.Dynamic.literal(lastModified = lastModified, name = name)
+    val __obj = js.Dynamic.literal(lastModified = lastModified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LastModified]
   }

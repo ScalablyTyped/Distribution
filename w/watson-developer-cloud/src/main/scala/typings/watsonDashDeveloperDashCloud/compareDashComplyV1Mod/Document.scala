@@ -20,10 +20,10 @@ object Document {
   @scala.inline
   def apply(hash: String = null, html: String = null, label: String = null, title: String = null): Document = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
 }

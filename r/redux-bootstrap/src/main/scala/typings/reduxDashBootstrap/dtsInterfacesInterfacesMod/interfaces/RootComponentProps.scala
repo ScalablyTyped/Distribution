@@ -18,7 +18,7 @@ trait RootComponentProps extends js.Object {
 object RootComponentProps {
   @scala.inline
   def apply(history: History[LocationState], routes: Element, store: Store[_, AnyAction]): RootComponentProps = {
-    val __obj = js.Dynamic.literal(history = history, routes = routes, store = store)
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RootComponentProps]
   }

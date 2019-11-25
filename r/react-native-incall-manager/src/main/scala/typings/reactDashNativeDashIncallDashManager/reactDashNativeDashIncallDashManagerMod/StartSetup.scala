@@ -14,9 +14,9 @@ object StartSetup {
   @scala.inline
   def apply(auto: js.UndefOr[Boolean] = js.undefined, media: String = null, ringback: String = null): StartSetup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto)
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (ringback != null) __obj.updateDynamic("ringback")(ringback)
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (ringback != null) __obj.updateDynamic("ringback")(ringback.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSetup]
   }
 }

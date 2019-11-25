@@ -23,11 +23,11 @@ object Anon_EventItems {
     viewport: String = null
   ): Anon_EventItems = {
     val __obj = js.Dynamic.literal()
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EventItems]
   }
 }

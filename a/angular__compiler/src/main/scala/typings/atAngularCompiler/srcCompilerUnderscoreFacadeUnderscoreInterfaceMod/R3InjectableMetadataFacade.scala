@@ -31,14 +31,14 @@ object R3InjectableMetadataFacade {
     useValue: js.Any = null,
     userDeps: js.Array[R3DependencyMetadataFacade] = null
   ): R3InjectableMetadataFacade = {
-    val __obj = js.Dynamic.literal(name = name, providedIn = providedIn, typeArgumentCount = typeArgumentCount)
-    __obj.updateDynamic("type")(`type`)
-    if (ctorDeps != null) __obj.updateDynamic("ctorDeps")(ctorDeps)
-    if (useClass != null) __obj.updateDynamic("useClass")(useClass)
-    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)
-    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory)
-    if (useValue != null) __obj.updateDynamic("useValue")(useValue)
-    if (userDeps != null) __obj.updateDynamic("userDeps")(userDeps)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], providedIn = providedIn.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (ctorDeps != null) __obj.updateDynamic("ctorDeps")(ctorDeps.asInstanceOf[js.Any])
+    if (useClass != null) __obj.updateDynamic("useClass")(useClass.asInstanceOf[js.Any])
+    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting.asInstanceOf[js.Any])
+    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory.asInstanceOf[js.Any])
+    if (useValue != null) __obj.updateDynamic("useValue")(useValue.asInstanceOf[js.Any])
+    if (userDeps != null) __obj.updateDynamic("userDeps")(userDeps.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3InjectableMetadataFacade]
   }
 }

@@ -23,10 +23,10 @@ object ButtonText {
   @scala.inline
   def apply(done: String = null, timeNow: String = null, timeTitle: String = null, today: String = null): ButtonText = {
     val __obj = js.Dynamic.literal()
-    if (done != null) __obj.updateDynamic("done")(done)
-    if (timeNow != null) __obj.updateDynamic("timeNow")(timeNow)
-    if (timeTitle != null) __obj.updateDynamic("timeTitle")(timeTitle)
-    if (today != null) __obj.updateDynamic("today")(today)
+    if (done != null) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (timeNow != null) __obj.updateDynamic("timeNow")(timeNow.asInstanceOf[js.Any])
+    if (timeTitle != null) __obj.updateDynamic("timeTitle")(timeTitle.asInstanceOf[js.Any])
+    if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonText]
   }
 }

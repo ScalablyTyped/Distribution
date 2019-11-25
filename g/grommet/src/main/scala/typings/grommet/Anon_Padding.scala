@@ -13,7 +13,7 @@ object Anon_Padding {
   @scala.inline
   def apply(padding: String = null, weight: Int | Double = null): Anon_Padding = {
     val __obj = js.Dynamic.literal()
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Padding]
   }

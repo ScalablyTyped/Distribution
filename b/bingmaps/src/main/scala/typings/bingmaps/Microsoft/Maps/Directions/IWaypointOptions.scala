@@ -23,9 +23,9 @@ object IWaypointOptions {
   @scala.inline
   def apply(address: String = null, isViaPoint: js.UndefOr[Boolean] = js.undefined, location: Location = null): IWaypointOptions = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (!js.isUndefined(isViaPoint)) __obj.updateDynamic("isViaPoint")(isViaPoint)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(isViaPoint)) __obj.updateDynamic("isViaPoint")(isViaPoint.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWaypointOptions]
   }
 }

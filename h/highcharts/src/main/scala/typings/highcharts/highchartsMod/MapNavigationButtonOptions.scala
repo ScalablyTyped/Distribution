@@ -62,13 +62,13 @@ object MapNavigationButtonOptions {
     x: Int | Double = null
   ): MapNavigationButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (alignTo != null) __obj.updateDynamic("alignTo")(alignTo)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (alignTo != null) __obj.updateDynamic("alignTo")(alignTo.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapNavigationButtonOptions]

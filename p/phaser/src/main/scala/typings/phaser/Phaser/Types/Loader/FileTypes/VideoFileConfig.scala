@@ -43,11 +43,11 @@ object VideoFileConfig {
     xhrSettings: XHRSettingsObject = null
   ): VideoFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (!js.isUndefined(asBlob)) __obj.updateDynamic("asBlob")(asBlob)
-    if (loadEvent != null) __obj.updateDynamic("loadEvent")(loadEvent)
-    if (!js.isUndefined(noAudio)) __obj.updateDynamic("noAudio")(noAudio)
-    if (urlConfig != null) __obj.updateDynamic("urlConfig")(urlConfig)
-    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings)
+    if (!js.isUndefined(asBlob)) __obj.updateDynamic("asBlob")(asBlob.asInstanceOf[js.Any])
+    if (loadEvent != null) __obj.updateDynamic("loadEvent")(loadEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAudio)) __obj.updateDynamic("noAudio")(noAudio.asInstanceOf[js.Any])
+    if (urlConfig != null) __obj.updateDynamic("urlConfig")(urlConfig.asInstanceOf[js.Any])
+    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoFileConfig]
   }
 }

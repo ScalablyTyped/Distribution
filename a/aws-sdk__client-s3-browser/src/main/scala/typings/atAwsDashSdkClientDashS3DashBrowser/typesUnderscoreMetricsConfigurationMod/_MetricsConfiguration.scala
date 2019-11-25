@@ -19,8 +19,8 @@ trait _MetricsConfiguration extends js.Object {
 object _MetricsConfiguration {
   @scala.inline
   def apply(Id: String, Filter: _MetricsFilter = null): _MetricsConfiguration = {
-    val __obj = js.Dynamic.literal(Id = Id)
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MetricsConfiguration]
   }
 }

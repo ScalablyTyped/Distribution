@@ -17,7 +17,7 @@ trait Anon_Chart extends js.Object {
 object Anon_Chart {
   @scala.inline
   def apply(chart: Chart, dataPoint: ChartDataPoint, dataSeries: ChartDataSeriesOptions, legend: Anon_Chart): Anon_Chart = {
-    val __obj = js.Dynamic.literal(chart = chart, dataPoint = dataPoint, dataSeries = dataSeries, legend = legend)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataPoint = dataPoint.asInstanceOf[js.Any], dataSeries = dataSeries.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Chart]
   }

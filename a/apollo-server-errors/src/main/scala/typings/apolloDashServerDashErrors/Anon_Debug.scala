@@ -19,7 +19,7 @@ object Anon_Debug {
     formatter: /* error */ GraphQLError => GraphQLFormattedError[Record[String, _]] = null
   ): Anon_Debug = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     __obj.asInstanceOf[Anon_Debug]
   }

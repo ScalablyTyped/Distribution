@@ -60,7 +60,7 @@ object PersistentVolumeClaimSpec {
     volumeMode: String,
     volumeName: String
   ): PersistentVolumeClaimSpec = {
-    val __obj = js.Dynamic.literal(accessModes = accessModes, dataSource = dataSource, resources = resources, selector = selector, storageClassName = storageClassName, volumeMode = volumeMode, volumeName = volumeName)
+    val __obj = js.Dynamic.literal(accessModes = accessModes.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], storageClassName = storageClassName.asInstanceOf[js.Any], volumeMode = volumeMode.asInstanceOf[js.Any], volumeName = volumeName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PersistentVolumeClaimSpec]
   }

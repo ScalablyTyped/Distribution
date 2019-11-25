@@ -50,7 +50,7 @@ object ChatRoomMessageReceived {
     room: String,
     timestamp: String
   ): ChatRoomMessageReceived = {
-    val __obj = js.Dynamic.literal(content = content, from = from, message_id = message_id, private_message = private_message, resource = resource, room = room, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], private_message = private_message.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChatRoomMessageReceived]
   }

@@ -17,9 +17,9 @@ trait Counterexample extends js.Object {
 object Counterexample {
   @scala.inline
   def apply(text: String, created: String = null, updated: String = null): Counterexample = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Counterexample]
   }
 }

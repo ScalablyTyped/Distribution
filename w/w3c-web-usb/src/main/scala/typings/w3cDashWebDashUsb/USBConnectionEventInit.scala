@@ -17,10 +17,10 @@ object USBConnectionEventInit {
     cancelable: js.UndefOr[Boolean] = js.undefined,
     composed: js.UndefOr[Boolean] = js.undefined
   ): USBConnectionEventInit = {
-    val __obj = js.Dynamic.literal(device = device)
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[USBConnectionEventInit]
   }
 }

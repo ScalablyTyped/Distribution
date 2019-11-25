@@ -25,8 +25,8 @@ object GistsGetRevisionResponseFilesHelloWorldRb {
     truncated: Boolean,
     `type`: String
   ): GistsGetRevisionResponseFilesHelloWorldRb = {
-    val __obj = js.Dynamic.literal(content = content, filename = filename, language = language, raw_url = raw_url, size = size, truncated = truncated)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], raw_url = raw_url.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], truncated = truncated.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsGetRevisionResponseFilesHelloWorldRb]
   }
 }

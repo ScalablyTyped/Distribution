@@ -201,10 +201,16 @@ object atUifabricMergeDashStylesStrings {
   sealed trait hue extends IMixBlendModes
   
   @js.native
-  sealed trait inherit extends ICSSRule
+  sealed trait inherit
+    extends ICSSRule
+       with IFontWeight
+       with IMixBlendModes
   
   @js.native
-  sealed trait initial extends ICSSRule
+  sealed trait initial
+    extends ICSSRule
+       with IFontWeight
+       with IMixBlendModes
   
   @js.native
   sealed trait `inline` extends ICSSDisplayRule
@@ -491,7 +497,10 @@ object atUifabricMergeDashStylesStrings {
   sealed trait `unsafe start` extends ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait unset extends ICSSRule
+  sealed trait unset
+    extends ICSSRule
+       with IFontWeight
+       with IMixBlendModes
   
   @js.native
   sealed trait vertical extends js.Object

@@ -56,7 +56,7 @@ object WorkbookModel {
     views: js.Array[WorkbookView],
     worksheets: js.Array[Worksheet]
   ): WorkbookModel = {
-    val __obj = js.Dynamic.literal(category = category, company = company, contentStatus = contentStatus, created = created, creator = creator, definedNames = definedNames, description = description, keywords = keywords, language = language, lastModifiedBy = lastModifiedBy, lastPrinted = lastPrinted, manager = manager, media = media, modified = modified, properties = properties, revision = revision, sheets = sheets, subject = subject, themes = themes, title = title, views = views, worksheets = worksheets)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], contentStatus = contentStatus.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], definedNames = definedNames.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], lastModifiedBy = lastModifiedBy.asInstanceOf[js.Any], lastPrinted = lastPrinted.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], sheets = sheets.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], themes = themes.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any], worksheets = worksheets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkbookModel]
   }

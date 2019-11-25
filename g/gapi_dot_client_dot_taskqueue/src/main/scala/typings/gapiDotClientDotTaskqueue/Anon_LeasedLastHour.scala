@@ -24,9 +24,9 @@ object Anon_LeasedLastHour {
     totalTasks: Int | Double = null
   ): Anon_LeasedLastHour = {
     val __obj = js.Dynamic.literal()
-    if (leasedLastHour != null) __obj.updateDynamic("leasedLastHour")(leasedLastHour)
-    if (leasedLastMinute != null) __obj.updateDynamic("leasedLastMinute")(leasedLastMinute)
-    if (oldestTask != null) __obj.updateDynamic("oldestTask")(oldestTask)
+    if (leasedLastHour != null) __obj.updateDynamic("leasedLastHour")(leasedLastHour.asInstanceOf[js.Any])
+    if (leasedLastMinute != null) __obj.updateDynamic("leasedLastMinute")(leasedLastMinute.asInstanceOf[js.Any])
+    if (oldestTask != null) __obj.updateDynamic("oldestTask")(oldestTask.asInstanceOf[js.Any])
     if (totalTasks != null) __obj.updateDynamic("totalTasks")(totalTasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LeasedLastHour]
   }

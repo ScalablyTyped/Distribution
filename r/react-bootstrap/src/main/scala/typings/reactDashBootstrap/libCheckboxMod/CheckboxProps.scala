@@ -25,17 +25,15 @@ object CheckboxProps {
     AllHTMLAttributes: AllHTMLAttributes[Checkbox] = null,
     ClassAttributes: ClassAttributes[Checkbox] = null,
     bsClass: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     inputRef: /* instance */ HTMLInputElement => Unit = null,
     validationState: success | warning | error = null
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
     if (validationState != null) __obj.updateDynamic("validationState")(validationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxProps]

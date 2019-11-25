@@ -26,9 +26,9 @@ object IFindChainsOptions {
     shallow: js.UndefOr[Boolean] = js.undefined
   ): IFindChainsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(byLayers)) __obj.updateDynamic("byLayers")(byLayers)
+    if (!js.isUndefined(byLayers)) __obj.updateDynamic("byLayers")(byLayers.asInstanceOf[js.Any])
     if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow)
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFindChainsOptions]
   }
 }

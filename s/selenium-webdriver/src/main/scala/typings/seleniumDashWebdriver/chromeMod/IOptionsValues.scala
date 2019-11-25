@@ -25,11 +25,11 @@ object IOptionsValues {
     logFile: String = null,
     prefs: js.Any = null
   ): IOptionsValues = {
-    val __obj = js.Dynamic.literal(args = args, detach = detach, extensions = extensions)
-    if (binary != null) __obj.updateDynamic("binary")(binary)
-    if (localState != null) __obj.updateDynamic("localState")(localState)
-    if (logFile != null) __obj.updateDynamic("logFile")(logFile)
-    if (prefs != null) __obj.updateDynamic("prefs")(prefs)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], detach = detach.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any])
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (localState != null) __obj.updateDynamic("localState")(localState.asInstanceOf[js.Any])
+    if (logFile != null) __obj.updateDynamic("logFile")(logFile.asInstanceOf[js.Any])
+    if (prefs != null) __obj.updateDynamic("prefs")(prefs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptionsValues]
   }
 }

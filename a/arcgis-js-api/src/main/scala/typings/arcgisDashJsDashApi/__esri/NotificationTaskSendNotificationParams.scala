@@ -37,7 +37,7 @@ object NotificationTaskSendNotificationParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     user: String
   ): NotificationTaskSendNotificationParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, notificationType = notificationType, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationTaskSendNotificationParams]
   }

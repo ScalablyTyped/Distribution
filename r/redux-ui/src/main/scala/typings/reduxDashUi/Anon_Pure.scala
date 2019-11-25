@@ -13,8 +13,8 @@ object Anon_Pure {
   @scala.inline
   def apply(pure: js.UndefOr[Boolean] = js.undefined, withRef: js.UndefOr[Boolean] = js.undefined): Anon_Pure = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure)
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Pure]
   }
 }

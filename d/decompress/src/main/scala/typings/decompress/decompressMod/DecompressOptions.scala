@@ -36,7 +36,7 @@ object DecompressOptions {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (strip != null) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecompressOptions]
   }

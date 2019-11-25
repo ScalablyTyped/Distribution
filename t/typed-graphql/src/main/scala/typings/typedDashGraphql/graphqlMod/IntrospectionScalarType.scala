@@ -14,8 +14,8 @@ trait IntrospectionScalarType extends IntrospectionType {
 object IntrospectionScalarType {
   @scala.inline
   def apply(kind: SCALAR, name: String, description: String = null): IntrospectionScalarType = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionScalarType]
   }
 }

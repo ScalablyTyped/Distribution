@@ -40,13 +40,13 @@ object SmimeInfo {
     pkcs12: String = null
   ): SmimeInfo = {
     val __obj = js.Dynamic.literal()
-    if (encryptedKeyPassword != null) __obj.updateDynamic("encryptedKeyPassword")(encryptedKeyPassword)
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault)
-    if (issuerCn != null) __obj.updateDynamic("issuerCn")(issuerCn)
-    if (pem != null) __obj.updateDynamic("pem")(pem)
-    if (pkcs12 != null) __obj.updateDynamic("pkcs12")(pkcs12)
+    if (encryptedKeyPassword != null) __obj.updateDynamic("encryptedKeyPassword")(encryptedKeyPassword.asInstanceOf[js.Any])
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (issuerCn != null) __obj.updateDynamic("issuerCn")(issuerCn.asInstanceOf[js.Any])
+    if (pem != null) __obj.updateDynamic("pem")(pem.asInstanceOf[js.Any])
+    if (pkcs12 != null) __obj.updateDynamic("pkcs12")(pkcs12.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmimeInfo]
   }
 }

@@ -13,8 +13,8 @@ object StockChartSeriesItemStack {
   @scala.inline
   def apply(group: String = null, `type`: String = null): StockChartSeriesItemStack = {
     val __obj = js.Dynamic.literal()
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartSeriesItemStack]
   }
 }

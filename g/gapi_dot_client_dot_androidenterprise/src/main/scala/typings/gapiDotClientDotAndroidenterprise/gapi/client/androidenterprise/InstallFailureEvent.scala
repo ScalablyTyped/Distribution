@@ -27,11 +27,11 @@ object InstallFailureEvent {
     userId: String = null
   ): InstallFailureEvent = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (failureDetails != null) __obj.updateDynamic("failureDetails")(failureDetails)
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (failureDetails != null) __obj.updateDynamic("failureDetails")(failureDetails.asInstanceOf[js.Any])
+    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallFailureEvent]
   }
 }

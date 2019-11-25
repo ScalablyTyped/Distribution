@@ -15,7 +15,7 @@ trait OnChangeParam extends js.Object {
 object OnChangeParam {
   @scala.inline
   def apply(operations: List[Operation], value: Value): OnChangeParam = {
-    val __obj = js.Dynamic.literal(operations = operations, value = value)
+    val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnChangeParam]
   }

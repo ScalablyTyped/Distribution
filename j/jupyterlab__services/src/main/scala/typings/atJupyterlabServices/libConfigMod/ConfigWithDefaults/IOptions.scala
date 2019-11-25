@@ -27,9 +27,9 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(section: IConfigSection, className: String = null, defaults: JSONObject = null): IOptions = {
-    val __obj = js.Dynamic.literal(section = section)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

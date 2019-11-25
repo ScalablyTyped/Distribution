@@ -20,10 +20,10 @@ object AlertButton {
     handler: /* value */ js.Any => Boolean | Unit | StringDictionary[_] = null,
     role: String = null
   ): AlertButton = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertButton]
   }
 }

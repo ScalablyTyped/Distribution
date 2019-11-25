@@ -96,18 +96,18 @@ object WMTSSublayerProperties {
     title: String = null
   ): WMTSSublayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (imageFormat != null) __obj.updateDynamic("imageFormat")(imageFormat)
-    if (imageFormats != null) __obj.updateDynamic("imageFormats")(imageFormats)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (styleId != null) __obj.updateDynamic("styleId")(styleId)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (imageFormat != null) __obj.updateDynamic("imageFormat")(imageFormat.asInstanceOf[js.Any])
+    if (imageFormats != null) __obj.updateDynamic("imageFormats")(imageFormats.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (styleId != null) __obj.updateDynamic("styleId")(styleId.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tileMatrixSet != null) __obj.updateDynamic("tileMatrixSet")(tileMatrixSet)
-    if (tileMatrixSetId != null) __obj.updateDynamic("tileMatrixSetId")(tileMatrixSetId)
+    if (tileMatrixSet != null) __obj.updateDynamic("tileMatrixSet")(tileMatrixSet.asInstanceOf[js.Any])
+    if (tileMatrixSetId != null) __obj.updateDynamic("tileMatrixSetId")(tileMatrixSetId.asInstanceOf[js.Any])
     if (tileMatrixSets != null) __obj.updateDynamic("tileMatrixSets")(tileMatrixSets.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[WMTSSublayerProperties]
   }
 }

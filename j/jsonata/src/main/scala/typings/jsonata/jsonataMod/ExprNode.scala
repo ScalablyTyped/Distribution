@@ -13,8 +13,8 @@ trait ExprNode extends js.Object {
 object ExprNode {
   @scala.inline
   def apply(position: Double, `type`: String, value: js.Any): ExprNode = {
-    val __obj = js.Dynamic.literal(position = position, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExprNode]
   }
 }

@@ -18,9 +18,9 @@ object MapOptions {
     touchExtend: js.UndefOr[Boolean] = js.undefined
   ): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drawControl)) __obj.updateDynamic("drawControl")(drawControl)
-    if (!js.isUndefined(drawControlTooltips)) __obj.updateDynamic("drawControlTooltips")(drawControlTooltips)
-    if (!js.isUndefined(touchExtend)) __obj.updateDynamic("touchExtend")(touchExtend)
+    if (!js.isUndefined(drawControl)) __obj.updateDynamic("drawControl")(drawControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawControlTooltips)) __obj.updateDynamic("drawControlTooltips")(drawControlTooltips.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchExtend)) __obj.updateDynamic("touchExtend")(touchExtend.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
 }

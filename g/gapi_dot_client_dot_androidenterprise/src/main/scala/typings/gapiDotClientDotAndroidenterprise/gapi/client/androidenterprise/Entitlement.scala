@@ -20,9 +20,9 @@ object Entitlement {
   @scala.inline
   def apply(kind: String = null, productId: String = null, reason: String = null): Entitlement = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entitlement]
   }
 }

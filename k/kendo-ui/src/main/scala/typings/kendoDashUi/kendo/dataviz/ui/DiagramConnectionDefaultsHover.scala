@@ -12,7 +12,7 @@ object DiagramConnectionDefaultsHover {
   @scala.inline
   def apply(stroke: DiagramConnectionDefaultsHoverStroke = null): DiagramConnectionDefaultsHover = {
     val __obj = js.Dynamic.literal()
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramConnectionDefaultsHover]
   }
 }

@@ -14,8 +14,8 @@ trait Anon_Spots extends js.Object {
 object Anon_Spots {
   @scala.inline
   def apply(spots: HotspotOptions, target: js.Any, `type`: String): Anon_Spots = {
-    val __obj = js.Dynamic.literal(spots = spots, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(spots = spots.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Spots]
   }
 }

@@ -41,7 +41,7 @@ object HeaderProps {
     headerStyle: js.Object,
     Header: TableCellRenderer = null
   ): HeaderProps = {
-    val __obj = js.Dynamic.literal(getHeaderProps = js.Any.fromFunction1(getHeaderProps), headerClassName = headerClassName, headerStyle = headerStyle)
+    val __obj = js.Dynamic.literal(getHeaderProps = js.Any.fromFunction1(getHeaderProps), headerClassName = headerClassName.asInstanceOf[js.Any], headerStyle = headerStyle.asInstanceOf[js.Any])
     if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]
   }

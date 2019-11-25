@@ -14,9 +14,9 @@ object TreeViewMessages {
   @scala.inline
   def apply(loading: String = null, requestFailed: String = null, retry: String = null): TreeViewMessages = {
     val __obj = js.Dynamic.literal()
-    if (loading != null) __obj.updateDynamic("loading")(loading)
-    if (requestFailed != null) __obj.updateDynamic("requestFailed")(requestFailed)
-    if (retry != null) __obj.updateDynamic("retry")(retry)
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (requestFailed != null) __obj.updateDynamic("requestFailed")(requestFailed.asInstanceOf[js.Any])
+    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewMessages]
   }
 }

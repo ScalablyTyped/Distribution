@@ -77,12 +77,12 @@ object DownloadItem {
     error: String = null,
     estimatedEndTime: String = null
   ): DownloadItem = {
-    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, canResume = canResume, danger = danger, exists = exists, fileSize = fileSize, filename = filename, finalUrl = finalUrl, id = id, incognito = incognito, mime = mime, paused = paused, referrer = referrer, startTime = startTime, state = state, totalBytes = totalBytes, url = url)
-    if (byExtensionId != null) __obj.updateDynamic("byExtensionId")(byExtensionId)
-    if (byExtensionName != null) __obj.updateDynamic("byExtensionName")(byExtensionName)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (estimatedEndTime != null) __obj.updateDynamic("estimatedEndTime")(estimatedEndTime)
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived.asInstanceOf[js.Any], canResume = canResume.asInstanceOf[js.Any], danger = danger.asInstanceOf[js.Any], exists = exists.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], finalUrl = finalUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (byExtensionId != null) __obj.updateDynamic("byExtensionId")(byExtensionId.asInstanceOf[js.Any])
+    if (byExtensionName != null) __obj.updateDynamic("byExtensionName")(byExtensionName.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (estimatedEndTime != null) __obj.updateDynamic("estimatedEndTime")(estimatedEndTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadItem]
   }
 }

@@ -13,7 +13,7 @@ object Anon_Data {
   @scala.inline
   def apply(ext: String = null, transform: /* data */ String => String = null): Anon_Data = {
     val __obj = js.Dynamic.literal()
-    if (ext != null) __obj.updateDynamic("ext")(ext)
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[Anon_Data]
   }

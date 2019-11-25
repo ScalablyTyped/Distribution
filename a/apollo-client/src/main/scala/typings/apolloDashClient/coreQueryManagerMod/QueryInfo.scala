@@ -34,11 +34,11 @@ object QueryInfo {
     newData: DiffResult[_] = null,
     observableQuery: ObservableQuery[_, OperationVariables] = null
   ): QueryInfo = {
-    val __obj = js.Dynamic.literal(invalidated = invalidated, lastRequestId = lastRequestId, listeners = listeners, subscriptions = subscriptions)
+    val __obj = js.Dynamic.literal(invalidated = invalidated.asInstanceOf[js.Any], lastRequestId = lastRequestId.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (newData != null) __obj.updateDynamic("newData")(newData)
-    if (observableQuery != null) __obj.updateDynamic("observableQuery")(observableQuery)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (newData != null) __obj.updateDynamic("newData")(newData.asInstanceOf[js.Any])
+    if (observableQuery != null) __obj.updateDynamic("observableQuery")(observableQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryInfo]
   }
 }

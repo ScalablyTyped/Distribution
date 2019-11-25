@@ -16,8 +16,8 @@ object IOptions {
     dropDatabase: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dropCollections)) __obj.updateDynamic("dropCollections")(dropCollections)
-    if (!js.isUndefined(dropDatabase)) __obj.updateDynamic("dropDatabase")(dropDatabase)
+    if (!js.isUndefined(dropCollections)) __obj.updateDynamic("dropCollections")(dropCollections.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropDatabase)) __obj.updateDynamic("dropDatabase")(dropDatabase.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

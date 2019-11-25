@@ -12,7 +12,7 @@ trait Anon_CustomArray extends js.Object {
 object Anon_CustomArray {
   @scala.inline
   def apply(custom: js.Array[NewCustomAttributes]): Anon_CustomArray = {
-    val __obj = js.Dynamic.literal(custom = custom)
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CustomArray]
   }

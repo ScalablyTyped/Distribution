@@ -16,8 +16,8 @@ object IListContextsResponse {
   @scala.inline
   def apply(contexts: js.Array[IContext] = null, nextPageToken: String = null): IListContextsResponse = {
     val __obj = js.Dynamic.literal()
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListContextsResponse]
   }
 }

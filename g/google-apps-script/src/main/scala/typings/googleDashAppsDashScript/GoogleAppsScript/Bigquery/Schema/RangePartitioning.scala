@@ -13,8 +13,8 @@ object RangePartitioning {
   @scala.inline
   def apply(field: String = null, range: RangePartitioningRange = null): RangePartitioning = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangePartitioning]
   }
 }

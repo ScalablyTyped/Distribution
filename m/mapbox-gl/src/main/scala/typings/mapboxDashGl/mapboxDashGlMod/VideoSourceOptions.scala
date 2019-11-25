@@ -13,8 +13,8 @@ object VideoSourceOptions {
   @scala.inline
   def apply(coordinates: js.Array[js.Array[Double]] = null, urls: js.Array[String] = null): VideoSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSourceOptions]
   }
 }

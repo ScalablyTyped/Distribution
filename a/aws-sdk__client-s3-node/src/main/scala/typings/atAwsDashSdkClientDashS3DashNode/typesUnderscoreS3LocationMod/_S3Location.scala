@@ -69,12 +69,12 @@ object _S3Location {
     Tagging: _Tagging = null,
     UserMetadata: js.Array[_MetadataEntry] | Iterable[_MetadataEntry] = null
   ): _S3Location = {
-    val __obj = js.Dynamic.literal(BucketName = BucketName, Prefix = Prefix)
+    val __obj = js.Dynamic.literal(BucketName = BucketName.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any])
     if (AccessControlList != null) __obj.updateDynamic("AccessControlList")(AccessControlList.asInstanceOf[js.Any])
     if (CannedACL != null) __obj.updateDynamic("CannedACL")(CannedACL.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
+    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (Tagging != null) __obj.updateDynamic("Tagging")(Tagging)
+    if (Tagging != null) __obj.updateDynamic("Tagging")(Tagging.asInstanceOf[js.Any])
     if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[_S3Location]
   }

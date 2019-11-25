@@ -21,7 +21,7 @@ object Render3ParseResult {
     styleUrls: js.Array[String],
     styles: js.Array[String]
   ): Render3ParseResult = {
-    val __obj = js.Dynamic.literal(errors = errors, nodes = nodes, styleUrls = styleUrls, styles = styles)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Render3ParseResult]
   }

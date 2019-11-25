@@ -11,13 +11,13 @@ trait LodashFlatMapDepth2x4[T] extends js.Object {
   def apply(iteratee: __, depth: Double): LodashFlatMapDepth2x6[T] = js.native
   def apply[TResult](
     iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       ListOfRecursiveArraysOrValues[TResult] | TResult
     ]
   ): LodashFlatMapDepth2x5[TResult] = js.native
   def apply[TResult](
     iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: Double

@@ -13,7 +13,7 @@ object GoogleCloudVideointelligenceV1_AnnotateVideoResponse {
   @scala.inline
   def apply(annotationResults: js.Array[GoogleCloudVideointelligenceV1_VideoAnnotationResults] = null): GoogleCloudVideointelligenceV1_AnnotateVideoResponse = {
     val __obj = js.Dynamic.literal()
-    if (annotationResults != null) __obj.updateDynamic("annotationResults")(annotationResults)
+    if (annotationResults != null) __obj.updateDynamic("annotationResults")(annotationResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1_AnnotateVideoResponse]
   }
 }

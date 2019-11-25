@@ -22,10 +22,10 @@ object NProgressProps {
     spinner: js.UndefOr[Boolean] = js.undefined
   ): NProgressProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (showAfterMs != null) __obj.updateDynamic("showAfterMs")(showAfterMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(spinner)) __obj.updateDynamic("spinner")(spinner)
+    if (!js.isUndefined(spinner)) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
     __obj.asInstanceOf[NProgressProps]
   }
 }

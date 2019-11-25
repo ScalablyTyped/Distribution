@@ -26,10 +26,10 @@ object File {
     hash: String = null,
     lastModifiedDate: Date = null
   ): File = {
-    val __obj = js.Dynamic.literal(name = name, path = path, size = size, toJSON = js.Any.fromFunction0(toJSON))
-    __obj.updateDynamic("type")(`type`)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
 }

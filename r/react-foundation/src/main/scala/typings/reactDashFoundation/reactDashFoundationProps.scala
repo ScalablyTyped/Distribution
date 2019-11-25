@@ -1,5 +1,6 @@
 package typings.reactDashFoundation
 
+import typings.react.reactMod.HTMLAttributes
 import typings.reactDashFoundation.componentsAccordionMod.AccordianContentProps
 import typings.reactDashFoundation.componentsAccordionMod.AccordianItemProps
 import typings.reactDashFoundation.componentsAccordionMod.AccordianProps
@@ -134,6 +135,8 @@ trait reactDashFoundationProps {
   @scala.inline
   def SliderFillProps: typings.reactDashFoundation.componentsSliderMod.SliderFillProps.type = typings.reactDashFoundation.componentsSliderMod.SliderFillProps
   type SliderFillProps = typings.reactDashFoundation.componentsSliderMod.SliderFillProps
+  @scala.inline
+  def SliderHandleProps: HTMLAttributes.type = typings.react.reactMod.HTMLAttributes
   type SliderHandleProps = typings.reactDashFoundation.componentsSliderMod.SliderHandleProps
   @scala.inline
   def SwitchProps: typings.reactDashFoundation.componentsSwitchMod.SwitchProps.type = typings.reactDashFoundation.componentsSwitchMod.SwitchProps

@@ -18,7 +18,7 @@ trait HttpContext extends js.Object {
 object HttpContext {
   @scala.inline
   def apply(container: Container, request: Request[ParamsDictionary], response: Response, user: Principal): HttpContext = {
-    val __obj = js.Dynamic.literal(container = container, request = request, response = response, user = user)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HttpContext]
   }

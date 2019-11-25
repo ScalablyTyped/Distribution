@@ -103,16 +103,16 @@ object FieldConfigProperties {
     visibilityExpression: String = null
   ): FieldConfigProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
-    if (editorType != null) __obj.updateDynamic("editorType")(editorType)
-    if (hint != null) __obj.updateDynamic("hint")(hint)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (editorType != null) __obj.updateDynamic("editorType")(editorType.asInstanceOf[js.Any])
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (visibilityExpression != null) __obj.updateDynamic("visibilityExpression")(visibilityExpression)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (visibilityExpression != null) __obj.updateDynamic("visibilityExpression")(visibilityExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldConfigProperties]
   }
 }

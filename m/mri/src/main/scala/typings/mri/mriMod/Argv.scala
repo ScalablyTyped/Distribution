@@ -15,8 +15,8 @@ object Argv {
   @scala.inline
   def apply(`_`: js.Array[String], StringDictionary: StringDictionary[js.Any] = null): Argv = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_")(`_`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Argv]
   }
 }

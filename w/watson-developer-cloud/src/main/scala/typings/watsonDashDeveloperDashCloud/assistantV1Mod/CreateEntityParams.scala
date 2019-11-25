@@ -34,13 +34,13 @@ object CreateEntityParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     values: js.Array[CreateValue] = null
   ): CreateEntityParams = {
-    val __obj = js.Dynamic.literal(entity = entity, workspace_id = workspace_id)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(fuzzy_match)) __obj.updateDynamic("fuzzy_match")(fuzzy_match)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (values != null) __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(fuzzy_match)) __obj.updateDynamic("fuzzy_match")(fuzzy_match.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEntityParams]
   }
 }

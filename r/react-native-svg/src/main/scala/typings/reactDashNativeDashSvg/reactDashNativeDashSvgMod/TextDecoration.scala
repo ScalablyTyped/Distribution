@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait TextDecoration extends js.Object
 
+object TextDecoration {
+  @scala.inline
+  def blink: typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.blink = this.cast("blink")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `line-through`: typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`line-through` = this.cast("line-through")
+  @scala.inline
+  def none: typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.none = this.cast("none")
+  @scala.inline
+  def overline: typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.overline = this.cast("overline")
+  @scala.inline
+  def underline: typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.underline = this.cast("underline")
+}
+

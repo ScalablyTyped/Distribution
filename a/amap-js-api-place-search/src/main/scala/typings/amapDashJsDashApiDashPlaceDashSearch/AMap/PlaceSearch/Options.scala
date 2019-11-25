@@ -91,21 +91,21 @@ object Options {
     `type`: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFitView)) __obj.updateDynamic("autoFitView")(autoFitView)
+    if (!js.isUndefined(autoFitView)) __obj.updateDynamic("autoFitView")(autoFitView.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (!js.isUndefined(citylimit)) __obj.updateDynamic("citylimit")(citylimit)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (!js.isUndefined(citylimit)) __obj.updateDynamic("citylimit")(citylimit.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
-    if (rankBy != null) __obj.updateDynamic("rankBy")(rankBy)
-    if (renderEngine != null) __obj.updateDynamic("renderEngine")(renderEngine)
+    if (rankBy != null) __obj.updateDynamic("rankBy")(rankBy.asInstanceOf[js.Any])
+    if (renderEngine != null) __obj.updateDynamic("renderEngine")(renderEngine.asInstanceOf[js.Any])
     if (renderStyle != null) __obj.updateDynamic("renderStyle")(renderStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCover)) __obj.updateDynamic("showCover")(showCover)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(showCover)) __obj.updateDynamic("showCover")(showCover.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

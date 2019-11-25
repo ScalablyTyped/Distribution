@@ -26,7 +26,7 @@ object TypeMap {
     `type`: array | boolean | date | documentid | fieldvalue | geopoint | `null` | number | `object` | reference | string,
     value: js.Any
   ): TypeMap = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeMap]
   }

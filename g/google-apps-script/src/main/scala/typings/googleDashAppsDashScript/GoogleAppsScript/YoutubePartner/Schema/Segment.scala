@@ -14,9 +14,9 @@ object Segment {
   @scala.inline
   def apply(duration: String = null, kind: String = null, start: String = null): Segment = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Segment]
   }
 }

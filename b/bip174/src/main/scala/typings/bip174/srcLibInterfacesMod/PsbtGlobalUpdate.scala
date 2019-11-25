@@ -12,7 +12,7 @@ object PsbtGlobalUpdate {
   @scala.inline
   def apply(globalXpub: js.Array[GlobalXpub] = null): PsbtGlobalUpdate = {
     val __obj = js.Dynamic.literal()
-    if (globalXpub != null) __obj.updateDynamic("globalXpub")(globalXpub)
+    if (globalXpub != null) __obj.updateDynamic("globalXpub")(globalXpub.asInstanceOf[js.Any])
     __obj.asInstanceOf[PsbtGlobalUpdate]
   }
 }

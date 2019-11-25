@@ -13,8 +13,8 @@ object TerritoryCondition {
   @scala.inline
   def apply(territories: js.Array[String] = null, `type`: String = null): TerritoryCondition = {
     val __obj = js.Dynamic.literal()
-    if (territories != null) __obj.updateDynamic("territories")(territories)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (territories != null) __obj.updateDynamic("territories")(territories.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerritoryCondition]
   }
 }

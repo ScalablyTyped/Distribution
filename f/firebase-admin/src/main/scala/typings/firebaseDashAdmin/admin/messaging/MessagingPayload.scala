@@ -27,8 +27,8 @@ object MessagingPayload {
   @scala.inline
   def apply(data: DataMessagePayload = null, notification: NotificationMessagePayload = null): MessagingPayload = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingPayload]
   }
 }

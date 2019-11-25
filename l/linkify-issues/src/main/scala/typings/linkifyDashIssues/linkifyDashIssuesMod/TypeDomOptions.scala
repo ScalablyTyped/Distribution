@@ -20,10 +20,10 @@ object TypeDomOptions {
     attributes: StringDictionary[String | Double | Boolean | js.Array[String]] = null,
     baseUrl: String = null
   ): TypeDomOptions = {
-    val __obj = js.Dynamic.literal(repository = repository, user = user)
-    __obj.updateDynamic("type")(`type`)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    val __obj = js.Dynamic.literal(repository = repository.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDomOptions]
   }
 }

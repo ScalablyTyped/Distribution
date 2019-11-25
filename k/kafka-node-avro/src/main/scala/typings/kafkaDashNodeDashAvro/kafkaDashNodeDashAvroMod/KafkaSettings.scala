@@ -12,7 +12,7 @@ trait KafkaSettings extends js.Object {
 object KafkaSettings {
   @scala.inline
   def apply(kafkaHost: String): KafkaSettings = {
-    val __obj = js.Dynamic.literal(kafkaHost = kafkaHost)
+    val __obj = js.Dynamic.literal(kafkaHost = kafkaHost.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KafkaSettings]
   }

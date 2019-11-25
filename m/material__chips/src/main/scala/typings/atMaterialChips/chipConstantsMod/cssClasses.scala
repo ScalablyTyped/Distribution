@@ -38,8 +38,8 @@ object cssClasses {
     TRAILING_ICON: `mdc-chip__icon--trailing`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(CHECKMARK = CHECKMARK, CHIP = CHIP, CHIP_EXIT = CHIP_EXIT, HIDDEN_LEADING_ICON = HIDDEN_LEADING_ICON, LEADING_ICON = LEADING_ICON, SELECTED = SELECTED, TEXT = TEXT, TRAILING_ICON = TRAILING_ICON)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(CHECKMARK = CHECKMARK.asInstanceOf[js.Any], CHIP = CHIP.asInstanceOf[js.Any], CHIP_EXIT = CHIP_EXIT.asInstanceOf[js.Any], HIDDEN_LEADING_ICON = HIDDEN_LEADING_ICON.asInstanceOf[js.Any], LEADING_ICON = LEADING_ICON.asInstanceOf[js.Any], SELECTED = SELECTED.asInstanceOf[js.Any], TEXT = TEXT.asInstanceOf[js.Any], TRAILING_ICON = TRAILING_ICON.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

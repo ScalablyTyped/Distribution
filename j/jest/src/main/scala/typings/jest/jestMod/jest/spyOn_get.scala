@@ -31,7 +31,7 @@ object spyOn_get extends js.Object {
     * });
     */
   def apply[T /* <: js.Object */, M /* <: NonFunctionPropertyNames[Required[T]] */](`object`: T, method: M, accessType: get): SpyInstance[
-    /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[M] */ js.Any, 
     js.Array[js.Any]
   ] = js.native
 }

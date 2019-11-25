@@ -14,8 +14,8 @@ trait TransformResult extends js.Object {
 object TransformResult {
   @scala.inline
   def apply(mapCoverage: Boolean, script: Script, sourceMapPath: String = null): TransformResult = {
-    val __obj = js.Dynamic.literal(mapCoverage = mapCoverage, script = script)
-    if (sourceMapPath != null) __obj.updateDynamic("sourceMapPath")(sourceMapPath)
+    val __obj = js.Dynamic.literal(mapCoverage = mapCoverage.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
+    if (sourceMapPath != null) __obj.updateDynamic("sourceMapPath")(sourceMapPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformResult]
   }
 }

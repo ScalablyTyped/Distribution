@@ -14,10 +14,10 @@ trait AbiOutput extends js.Object {
 object AbiOutput {
   @scala.inline
   def apply(name: String, `type`: String, components: js.Array[AbiOutput] = null, internalType: String = null): AbiOutput = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (internalType != null) __obj.updateDynamic("internalType")(internalType)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (internalType != null) __obj.updateDynamic("internalType")(internalType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbiOutput]
   }
 }

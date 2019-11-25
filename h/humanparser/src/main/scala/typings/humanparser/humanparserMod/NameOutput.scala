@@ -23,10 +23,10 @@ object NameOutput {
     salutation: String = null,
     suffix: String = null
   ): NameOutput = {
-    val __obj = js.Dynamic.literal(firstName = firstName, fullName = fullName, lastName = lastName)
-    if (middleName != null) __obj.updateDynamic("middleName")(middleName)
-    if (salutation != null) __obj.updateDynamic("salutation")(salutation)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    val __obj = js.Dynamic.literal(firstName = firstName.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any])
+    if (middleName != null) __obj.updateDynamic("middleName")(middleName.asInstanceOf[js.Any])
+    if (salutation != null) __obj.updateDynamic("salutation")(salutation.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameOutput]
   }
 }

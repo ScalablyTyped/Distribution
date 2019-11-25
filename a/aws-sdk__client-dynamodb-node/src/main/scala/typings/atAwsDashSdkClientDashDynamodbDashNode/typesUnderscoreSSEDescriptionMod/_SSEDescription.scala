@@ -34,7 +34,7 @@ object _SSEDescription {
     Status: ENABLING | ENABLED | DISABLING | DISABLED | UPDATING | String = null
   ): _SSEDescription = {
     val __obj = js.Dynamic.literal()
-    if (KMSMasterKeyArn != null) __obj.updateDynamic("KMSMasterKeyArn")(KMSMasterKeyArn)
+    if (KMSMasterKeyArn != null) __obj.updateDynamic("KMSMasterKeyArn")(KMSMasterKeyArn.asInstanceOf[js.Any])
     if (SSEType != null) __obj.updateDynamic("SSEType")(SSEType.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SSEDescription]

@@ -13,7 +13,7 @@ trait CityRecord extends js.Object {
 object CityRecord {
   @scala.inline
   def apply(geoname_id: Double, names: Names, confidence: Int | Double = null): CityRecord = {
-    val __obj = js.Dynamic.literal(geoname_id = geoname_id, names = names)
+    val __obj = js.Dynamic.literal(geoname_id = geoname_id.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[CityRecord]
   }

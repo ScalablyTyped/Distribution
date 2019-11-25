@@ -12,7 +12,7 @@ object DatabaseOptions {
   @scala.inline
   def apply(env: String = null): DatabaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseOptions]
   }
 }

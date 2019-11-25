@@ -25,8 +25,8 @@ trait IIterator[T] extends IIterable[T] {
 
 object IIterator {
   @scala.inline
-  def apply[T](clone: () => IIterator[T], iter: () => IIterator[T], next: () => js.UndefOr[T]): IIterator[T] = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), iter = js.Any.fromFunction0(iter), next = js.Any.fromFunction0(next))
+  def apply[T](iter: () => IIterator[T], next: () => js.UndefOr[T]): IIterator[T] = {
+    val __obj = js.Dynamic.literal(iter = js.Any.fromFunction0(iter), next = js.Any.fromFunction0(next))
   
     __obj.asInstanceOf[IIterator[T]]
   }

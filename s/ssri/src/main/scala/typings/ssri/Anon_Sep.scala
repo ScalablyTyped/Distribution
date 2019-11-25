@@ -13,8 +13,8 @@ object Anon_Sep {
   @scala.inline
   def apply(sep: String = null, strict: js.UndefOr[Boolean] = js.undefined): Anon_Sep = {
     val __obj = js.Dynamic.literal()
-    if (sep != null) __obj.updateDynamic("sep")(sep)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (sep != null) __obj.updateDynamic("sep")(sep.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Sep]
   }
 }

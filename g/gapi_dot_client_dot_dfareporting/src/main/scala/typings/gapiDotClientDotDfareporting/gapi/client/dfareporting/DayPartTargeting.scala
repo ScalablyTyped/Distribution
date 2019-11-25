@@ -36,9 +36,9 @@ object DayPartTargeting {
     userLocalTime: js.UndefOr[Boolean] = js.undefined
   ): DayPartTargeting = {
     val __obj = js.Dynamic.literal()
-    if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek)
-    if (hoursOfDay != null) __obj.updateDynamic("hoursOfDay")(hoursOfDay)
-    if (!js.isUndefined(userLocalTime)) __obj.updateDynamic("userLocalTime")(userLocalTime)
+    if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek.asInstanceOf[js.Any])
+    if (hoursOfDay != null) __obj.updateDynamic("hoursOfDay")(hoursOfDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(userLocalTime)) __obj.updateDynamic("userLocalTime")(userLocalTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayPartTargeting]
   }
 }

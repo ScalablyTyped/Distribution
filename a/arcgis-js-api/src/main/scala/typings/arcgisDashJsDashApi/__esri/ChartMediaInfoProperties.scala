@@ -17,7 +17,7 @@ object ChartMediaInfoProperties {
   @scala.inline
   def apply(value: ChartMediaInfoValueProperties = null): ChartMediaInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartMediaInfoProperties]
   }
 }

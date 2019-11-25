@@ -35,8 +35,8 @@ object PermissionOptions {
     extra: GoogleActionsV2PermissionValueSpec = null
   ): PermissionOptions = {
     val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionOptions]
   }
 }

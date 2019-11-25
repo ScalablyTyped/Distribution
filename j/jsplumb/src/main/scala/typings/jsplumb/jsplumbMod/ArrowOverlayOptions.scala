@@ -33,7 +33,7 @@ object ArrowOverlayOptions {
     if (foldback != null) __obj.updateDynamic("foldback")(foldback.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (paintStyle != null) __obj.updateDynamic("paintStyle")(paintStyle)
+    if (paintStyle != null) __obj.updateDynamic("paintStyle")(paintStyle.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrowOverlayOptions]
   }

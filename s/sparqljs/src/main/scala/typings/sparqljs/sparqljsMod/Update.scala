@@ -15,8 +15,8 @@ trait Update extends SparqlQuery {
 object Update {
   @scala.inline
   def apply(prefixes: StringDictionary[String], `type`: update, updates: js.Array[UpdateOperation]): Update = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes, updates = updates)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], updates = updates.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Update]
   }
 }

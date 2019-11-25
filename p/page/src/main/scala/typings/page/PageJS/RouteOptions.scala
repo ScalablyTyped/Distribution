@@ -21,8 +21,8 @@ object RouteOptions {
   @scala.inline
   def apply(sensitive: js.UndefOr[Boolean] = js.undefined, strict: js.UndefOr[Boolean] = js.undefined): RouteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptions]
   }
 }

@@ -28,7 +28,7 @@ object MML2jaxPreprocessor {
   @scala.inline
   def apply(preview: js.Any = null): MML2jaxPreprocessor = {
     val __obj = js.Dynamic.literal()
-    if (preview != null) __obj.updateDynamic("preview")(preview)
+    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     __obj.asInstanceOf[MML2jaxPreprocessor]
   }
 }

@@ -19,9 +19,9 @@ object RegisterRouteOptions {
     params: js.Array[String] = null
   ): RegisterRouteOptions = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterRouteOptions]
   }
 }

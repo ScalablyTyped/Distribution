@@ -13,7 +13,7 @@ object GooglePrivacyDlpV2beta1UnwrappedCryptoKey {
   @scala.inline
   def apply(key: String = null): GooglePrivacyDlpV2beta1UnwrappedCryptoKey = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1UnwrappedCryptoKey]
   }
 }

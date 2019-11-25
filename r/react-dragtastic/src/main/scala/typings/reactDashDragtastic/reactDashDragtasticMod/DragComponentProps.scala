@@ -31,10 +31,10 @@ object DragComponentProps {
     subscribeTo: js.Array[String] = null
   ): DragComponentProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender)
+    if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender.asInstanceOf[js.Any])
     if (`for` != null) __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction0(onDrag))
-    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
+    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragComponentProps]
   }
 }

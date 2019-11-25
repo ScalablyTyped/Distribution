@@ -23,8 +23,8 @@ object UpdateTenantRequest {
   @scala.inline
   def apply(displayName: String = null, emailSignInConfig: Anon_Enabled = null): UpdateTenantRequest = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (emailSignInConfig != null) __obj.updateDynamic("emailSignInConfig")(emailSignInConfig)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (emailSignInConfig != null) __obj.updateDynamic("emailSignInConfig")(emailSignInConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTenantRequest]
   }
 }

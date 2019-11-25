@@ -23,10 +23,10 @@ object PluginOptions {
     disable: js.UndefOr[Boolean] = js.undefined,
     id: String = null
   ): PluginOptions = {
-    val __obj = js.Dynamic.literal(filename = filename)
-    if (!js.isUndefined(allChunks)) __obj.updateDynamic("allChunks")(allChunks)
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(allChunks)) __obj.updateDynamic("allChunks")(allChunks.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]
   }
 }

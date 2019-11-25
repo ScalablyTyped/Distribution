@@ -18,8 +18,8 @@ object ResourceAction {
     notAllowedResourceActions: js.Array[String] = null
   ): ResourceAction = {
     val __obj = js.Dynamic.literal()
-    if (allowedResourceActions != null) __obj.updateDynamic("allowedResourceActions")(allowedResourceActions)
-    if (notAllowedResourceActions != null) __obj.updateDynamic("notAllowedResourceActions")(notAllowedResourceActions)
+    if (allowedResourceActions != null) __obj.updateDynamic("allowedResourceActions")(allowedResourceActions.asInstanceOf[js.Any])
+    if (notAllowedResourceActions != null) __obj.updateDynamic("notAllowedResourceActions")(notAllowedResourceActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceAction]
   }
 }

@@ -25,9 +25,9 @@ object IResourceOptions {
     stripTrailingSlashes: js.UndefOr[Boolean] = js.undefined
   ): IResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isodatav4)) __obj.updateDynamic("isodatav4")(isodatav4)
-    if (odata != null) __obj.updateDynamic("odata")(odata)
-    if (!js.isUndefined(stripTrailingSlashes)) __obj.updateDynamic("stripTrailingSlashes")(stripTrailingSlashes)
+    if (!js.isUndefined(isodatav4)) __obj.updateDynamic("isodatav4")(isodatav4.asInstanceOf[js.Any])
+    if (odata != null) __obj.updateDynamic("odata")(odata.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripTrailingSlashes)) __obj.updateDynamic("stripTrailingSlashes")(stripTrailingSlashes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceOptions]
   }
 }

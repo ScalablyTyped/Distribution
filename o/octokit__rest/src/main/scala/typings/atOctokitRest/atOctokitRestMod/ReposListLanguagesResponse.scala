@@ -12,7 +12,7 @@ trait ReposListLanguagesResponse extends js.Object {
 object ReposListLanguagesResponse {
   @scala.inline
   def apply(C: Double, Python: Double): ReposListLanguagesResponse = {
-    val __obj = js.Dynamic.literal(C = C, Python = Python)
+    val __obj = js.Dynamic.literal(C = C.asInstanceOf[js.Any], Python = Python.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposListLanguagesResponse]
   }

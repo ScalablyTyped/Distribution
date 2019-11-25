@@ -13,9 +13,9 @@ trait ThreadRowDateDescriptor extends js.Object {
 object ThreadRowDateDescriptor {
   @scala.inline
   def apply(text: String, textColor: String = null, tooltip: String = null): ThreadRowDateDescriptor = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowDateDescriptor]
   }
 }

@@ -27,11 +27,11 @@ object ApiConfigHandler {
     url: String = null
   ): ApiConfigHandler = {
     val __obj = js.Dynamic.literal()
-    if (authFailAction != null) __obj.updateDynamic("authFailAction")(authFailAction)
-    if (login != null) __obj.updateDynamic("login")(login)
-    if (script != null) __obj.updateDynamic("script")(script)
-    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (authFailAction != null) __obj.updateDynamic("authFailAction")(authFailAction.asInstanceOf[js.Any])
+    if (login != null) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
+    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
+    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiConfigHandler]
   }
 }

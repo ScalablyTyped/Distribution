@@ -37,10 +37,10 @@ object GoogleActionsV2TransactionDecisionValue {
     userDecision: GoogleActionsV2TransactionDecisionValueUserDecision = null
   ): GoogleActionsV2TransactionDecisionValue = {
     val __obj = js.Dynamic.literal()
-    if (checkResult != null) __obj.updateDynamic("checkResult")(checkResult)
-    if (deliveryAddress != null) __obj.updateDynamic("deliveryAddress")(deliveryAddress)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (userDecision != null) __obj.updateDynamic("userDecision")(userDecision)
+    if (checkResult != null) __obj.updateDynamic("checkResult")(checkResult.asInstanceOf[js.Any])
+    if (deliveryAddress != null) __obj.updateDynamic("deliveryAddress")(deliveryAddress.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (userDecision != null) __obj.updateDynamic("userDecision")(userDecision.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2TransactionDecisionValue]
   }
 }

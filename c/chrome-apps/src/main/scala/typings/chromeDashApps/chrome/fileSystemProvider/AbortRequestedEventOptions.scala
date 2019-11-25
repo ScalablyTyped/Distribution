@@ -14,7 +14,7 @@ trait AbortRequestedEventOptions extends RequestedEventOptions {
 object AbortRequestedEventOptions {
   @scala.inline
   def apply(fileSystemId: String, operationRequestId: integer, requestId: integer): AbortRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, operationRequestId = operationRequestId, requestId = requestId)
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], operationRequestId = operationRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AbortRequestedEventOptions]
   }

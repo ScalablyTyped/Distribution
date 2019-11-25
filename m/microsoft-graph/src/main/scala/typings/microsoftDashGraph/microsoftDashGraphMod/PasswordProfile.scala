@@ -30,9 +30,9 @@ object PasswordProfile {
     password: String = null
   ): PasswordProfile = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceChangePasswordNextSignIn)) __obj.updateDynamic("forceChangePasswordNextSignIn")(forceChangePasswordNextSignIn)
-    if (!js.isUndefined(forceChangePasswordNextSignInWithMfa)) __obj.updateDynamic("forceChangePasswordNextSignInWithMfa")(forceChangePasswordNextSignInWithMfa)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (!js.isUndefined(forceChangePasswordNextSignIn)) __obj.updateDynamic("forceChangePasswordNextSignIn")(forceChangePasswordNextSignIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceChangePasswordNextSignInWithMfa)) __obj.updateDynamic("forceChangePasswordNextSignInWithMfa")(forceChangePasswordNextSignInWithMfa.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordProfile]
   }
 }

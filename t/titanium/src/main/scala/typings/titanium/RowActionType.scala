@@ -30,9 +30,9 @@ trait RowActionType extends js.Object {
 object RowActionType {
   @scala.inline
   def apply(style: Double, title: String, color: String = null, identifier: String = null): RowActionType = {
-    val __obj = js.Dynamic.literal(style = style, title = title)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowActionType]
   }
 }

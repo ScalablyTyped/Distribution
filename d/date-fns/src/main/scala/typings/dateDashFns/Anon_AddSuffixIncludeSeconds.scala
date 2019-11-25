@@ -18,9 +18,9 @@ object Anon_AddSuffixIncludeSeconds {
     locale: Locale = null
   ): Anon_AddSuffixIncludeSeconds = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addSuffix)) __obj.updateDynamic("addSuffix")(addSuffix)
-    if (!js.isUndefined(includeSeconds)) __obj.updateDynamic("includeSeconds")(includeSeconds)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (!js.isUndefined(addSuffix)) __obj.updateDynamic("addSuffix")(addSuffix.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSeconds)) __obj.updateDynamic("includeSeconds")(includeSeconds.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddSuffixIncludeSeconds]
   }
 }

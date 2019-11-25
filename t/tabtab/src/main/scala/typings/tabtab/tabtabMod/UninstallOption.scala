@@ -11,7 +11,7 @@ trait UninstallOption extends js.Object {
 object UninstallOption {
   @scala.inline
   def apply(name: String): UninstallOption = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UninstallOption]
   }

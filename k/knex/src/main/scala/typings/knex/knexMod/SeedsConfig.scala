@@ -13,8 +13,8 @@ object SeedsConfig {
   @scala.inline
   def apply(directory: String = null, stub: String = null): SeedsConfig = {
     val __obj = js.Dynamic.literal()
-    if (directory != null) __obj.updateDynamic("directory")(directory)
-    if (stub != null) __obj.updateDynamic("stub")(stub)
+    if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
+    if (stub != null) __obj.updateDynamic("stub")(stub.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeedsConfig]
   }
 }

@@ -25,7 +25,7 @@ object ITestGroup {
     tearDown: /* callback */ ICallbackFunction => Unit = null
   ): ITestGroup = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (setUp != null) __obj.updateDynamic("setUp")(js.Any.fromFunction1(setUp))
     if (tearDown != null) __obj.updateDynamic("tearDown")(js.Any.fromFunction1(tearDown))
     __obj.asInstanceOf[ITestGroup]

@@ -77,7 +77,7 @@ object reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings {
   sealed trait background extends Event
   
   @js.native
-  sealed trait error extends Event
+  sealed trait error_ extends Event
   
   @js.native
   sealed trait foreground extends Event
@@ -156,7 +156,7 @@ object reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings {
   @scala.inline
   def background: background = "background".asInstanceOf[background]
   @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  def error_ : error_ = "error".asInstanceOf[error_]
   @scala.inline
   def foreground: foreground = "foreground".asInstanceOf[foreground]
   @scala.inline

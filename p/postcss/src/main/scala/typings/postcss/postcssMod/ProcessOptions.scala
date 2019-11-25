@@ -47,12 +47,12 @@ object ProcessOptions {
     to: String = null
   ): ProcessOptions = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (parser != null) __obj.updateDynamic("parser")(js.Any.fromFunction2(parser))
     if (stringifier != null) __obj.updateDynamic("stringifier")(js.Any.fromFunction2(stringifier))
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessOptions]
   }
 }

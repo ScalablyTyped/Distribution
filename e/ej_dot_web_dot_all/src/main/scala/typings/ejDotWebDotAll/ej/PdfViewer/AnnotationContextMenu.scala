@@ -28,10 +28,10 @@ object AnnotationContextMenu {
     isPropertiesEnable: js.UndefOr[Boolean] = js.undefined
   ): AnnotationContextMenu = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDeleteEnable)) __obj.updateDynamic("isDeleteEnable")(isDeleteEnable)
-    if (!js.isUndefined(isEnable)) __obj.updateDynamic("isEnable")(isEnable)
-    if (!js.isUndefined(isPopupEnable)) __obj.updateDynamic("isPopupEnable")(isPopupEnable)
-    if (!js.isUndefined(isPropertiesEnable)) __obj.updateDynamic("isPropertiesEnable")(isPropertiesEnable)
+    if (!js.isUndefined(isDeleteEnable)) __obj.updateDynamic("isDeleteEnable")(isDeleteEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEnable)) __obj.updateDynamic("isEnable")(isEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPopupEnable)) __obj.updateDynamic("isPopupEnable")(isPopupEnable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPropertiesEnable)) __obj.updateDynamic("isPropertiesEnable")(isPropertiesEnable.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationContextMenu]
   }
 }

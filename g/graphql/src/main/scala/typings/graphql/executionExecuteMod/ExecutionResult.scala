@@ -15,7 +15,7 @@ object ExecutionResult {
   def apply[TData](data: TData = null, errors: js.Array[GraphQLError] = null): ExecutionResult[TData] = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionResult[TData]]
   }
 }

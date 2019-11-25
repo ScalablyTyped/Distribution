@@ -24,10 +24,10 @@ object DatafeedStatusError {
     message: String = null
   ): DatafeedStatusError = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (examples != null) __obj.updateDynamic("examples")(examples)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedStatusError]
   }
 }

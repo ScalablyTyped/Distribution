@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "electron-localshortcut"
-version := "3.1-dt-20191104Z-124255"
+version := "3.1-dt-20191104Z-a47f0b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "electron" % "6.1.5-00ee6b",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "electron" % "6.1.5-cb7cda",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -35,17 +35,17 @@ object INotificationOptions {
     title_loc_args: String = null,
     title_loc_key: String = null
   ): INotificationOptions = {
-    val __obj = js.Dynamic.literal(icon = icon, title = title)
-    if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (body_loc_args != null) __obj.updateDynamic("body_loc_args")(body_loc_args)
-    if (body_loc_key != null) __obj.updateDynamic("body_loc_key")(body_loc_key)
-    if (click_action != null) __obj.updateDynamic("click_action")(click_action)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (sound != null) __obj.updateDynamic("sound")(sound)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (title_loc_args != null) __obj.updateDynamic("title_loc_args")(title_loc_args)
-    if (title_loc_key != null) __obj.updateDynamic("title_loc_key")(title_loc_key)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (body_loc_args != null) __obj.updateDynamic("body_loc_args")(body_loc_args.asInstanceOf[js.Any])
+    if (body_loc_key != null) __obj.updateDynamic("body_loc_key")(body_loc_key.asInstanceOf[js.Any])
+    if (click_action != null) __obj.updateDynamic("click_action")(click_action.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (title_loc_args != null) __obj.updateDynamic("title_loc_args")(title_loc_args.asInstanceOf[js.Any])
+    if (title_loc_key != null) __obj.updateDynamic("title_loc_key")(title_loc_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotificationOptions]
   }
 }

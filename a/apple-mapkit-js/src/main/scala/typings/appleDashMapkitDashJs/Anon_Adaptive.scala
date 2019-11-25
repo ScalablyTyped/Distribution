@@ -23,7 +23,7 @@ trait Anon_Adaptive extends js.Object {
 object Anon_Adaptive {
   @scala.inline
   def apply(Adaptive: String, Imperial: String, Metric: String): Anon_Adaptive = {
-    val __obj = js.Dynamic.literal(Adaptive = Adaptive, Imperial = Imperial, Metric = Metric)
+    val __obj = js.Dynamic.literal(Adaptive = Adaptive.asInstanceOf[js.Any], Imperial = Imperial.asInstanceOf[js.Any], Metric = Metric.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Adaptive]
   }

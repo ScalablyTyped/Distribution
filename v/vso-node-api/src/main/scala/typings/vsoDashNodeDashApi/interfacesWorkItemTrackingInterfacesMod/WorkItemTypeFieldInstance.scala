@@ -34,7 +34,7 @@ object WorkItemTypeFieldInstance {
     referenceName: String,
     url: String
   ): WorkItemTypeFieldInstance = {
-    val __obj = js.Dynamic.literal(allowedValues = allowedValues, alwaysRequired = alwaysRequired, dependentFields = dependentFields, helpText = helpText, name = name, referenceName = referenceName, url = url)
+    val __obj = js.Dynamic.literal(allowedValues = allowedValues.asInstanceOf[js.Any], alwaysRequired = alwaysRequired.asInstanceOf[js.Any], dependentFields = dependentFields.asInstanceOf[js.Any], helpText = helpText.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemTypeFieldInstance]
   }

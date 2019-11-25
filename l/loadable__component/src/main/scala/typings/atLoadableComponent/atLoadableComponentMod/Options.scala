@@ -20,8 +20,8 @@ object Options {
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
     if (cacheKey != null) __obj.updateDynamic("cacheKey")(js.Any.fromFunction1(cacheKey))
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
-    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr)
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[T]]
   }
 }

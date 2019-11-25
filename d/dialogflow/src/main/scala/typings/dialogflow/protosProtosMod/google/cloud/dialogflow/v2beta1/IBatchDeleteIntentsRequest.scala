@@ -16,8 +16,8 @@ object IBatchDeleteIntentsRequest {
   @scala.inline
   def apply(intents: js.Array[IIntent] = null, parent: String = null): IBatchDeleteIntentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (intents != null) __obj.updateDynamic("intents")(intents)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBatchDeleteIntentsRequest]
   }
 }

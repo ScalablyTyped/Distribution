@@ -130,10 +130,8 @@ object ISlider {
     animation: js.Any = null,
     animationDuration: js.UndefOr[Boolean] = js.undefined,
     applyIncrement: /* increment */ js.UndefOr[Double] => Double = null,
-    baseCls: java.lang.String = null,
     getAllowThumbsOverlapping: () => Boolean = null,
     getAnimation: () => _ = null,
-    getBaseCls: () => java.lang.String = null,
     getIncrement: () => Double = null,
     getMaxValue: () => Double = null,
     getMinValue: () => Double = null,
@@ -149,7 +147,6 @@ object ISlider {
     readOnly: js.UndefOr[Boolean] = js.undefined,
     setAllowThumbsOverlapping: /* allowThumbsOverlapping */ js.UndefOr[Boolean] => Unit = null,
     setAnimation: /* animation */ js.UndefOr[js.Any] => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setIncrement: /* increment */ js.UndefOr[Double] => Unit = null,
     setMaxValue: /* maxValue */ js.UndefOr[Double] => Unit = null,
     setMinValue: /* minValue */ js.UndefOr[Double] => Unit = null,
@@ -163,15 +160,13 @@ object ISlider {
     values: js.Any = null
   ): ISlider = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(allowThumbsOverlapping)) __obj.updateDynamic("allowThumbsOverlapping")(allowThumbsOverlapping)
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(allowThumbsOverlapping)) __obj.updateDynamic("allowThumbsOverlapping")(allowThumbsOverlapping.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (applyIncrement != null) __obj.updateDynamic("applyIncrement")(js.Any.fromFunction1(applyIncrement))
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (getAllowThumbsOverlapping != null) __obj.updateDynamic("getAllowThumbsOverlapping")(js.Any.fromFunction0(getAllowThumbsOverlapping))
     if (getAnimation != null) __obj.updateDynamic("getAnimation")(js.Any.fromFunction0(getAnimation))
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
     if (getIncrement != null) __obj.updateDynamic("getIncrement")(js.Any.fromFunction0(getIncrement))
     if (getMaxValue != null) __obj.updateDynamic("getMaxValue")(js.Any.fromFunction0(getMaxValue))
     if (getMinValue != null) __obj.updateDynamic("getMinValue")(js.Any.fromFunction0(getMinValue))
@@ -184,10 +179,9 @@ object ISlider {
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (setAllowThumbsOverlapping != null) __obj.updateDynamic("setAllowThumbsOverlapping")(js.Any.fromFunction1(setAllowThumbsOverlapping))
     if (setAnimation != null) __obj.updateDynamic("setAnimation")(js.Any.fromFunction1(setAnimation))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setIncrement != null) __obj.updateDynamic("setIncrement")(js.Any.fromFunction1(setIncrement))
     if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1(setMaxValue))
     if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
@@ -195,10 +189,10 @@ object ISlider {
     if (setThumbConfig != null) __obj.updateDynamic("setThumbConfig")(js.Any.fromFunction1(setThumbConfig))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (setValues != null) __obj.updateDynamic("setValues")(js.Any.fromFunction1(setValues))
-    if (thumbConfig != null) __obj.updateDynamic("thumbConfig")(thumbConfig)
+    if (thumbConfig != null) __obj.updateDynamic("thumbConfig")(thumbConfig.asInstanceOf[js.Any])
     if (updateValue != null) __obj.updateDynamic("updateValue")(js.Any.fromFunction2(updateValue))
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISlider]
   }
 }

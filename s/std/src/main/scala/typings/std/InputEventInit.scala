@@ -23,14 +23,14 @@ object InputEventInit {
     view: Window = null
   ): InputEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
-    if (!js.isUndefined(isComposing)) __obj.updateDynamic("isComposing")(isComposing)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
+    if (!js.isUndefined(isComposing)) __obj.updateDynamic("isComposing")(isComposing.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputEventInit]
   }
 }

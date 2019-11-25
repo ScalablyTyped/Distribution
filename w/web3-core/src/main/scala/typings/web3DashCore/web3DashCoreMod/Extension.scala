@@ -13,8 +13,8 @@ trait Extension extends js.Object {
 object Extension {
   @scala.inline
   def apply(methods: js.Array[Method], property: String = null): Extension = {
-    val __obj = js.Dynamic.literal(methods = methods)
-    if (property != null) __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension]
   }
 }

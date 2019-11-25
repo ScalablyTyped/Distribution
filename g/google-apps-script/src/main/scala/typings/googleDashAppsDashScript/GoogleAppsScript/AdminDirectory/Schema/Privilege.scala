@@ -26,13 +26,13 @@ object Privilege {
     serviceName: String = null
   ): Privilege = {
     val __obj = js.Dynamic.literal()
-    if (childPrivileges != null) __obj.updateDynamic("childPrivileges")(childPrivileges)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (!js.isUndefined(isOuScopable)) __obj.updateDynamic("isOuScopable")(isOuScopable)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (privilegeName != null) __obj.updateDynamic("privilegeName")(privilegeName)
-    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId)
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    if (childPrivileges != null) __obj.updateDynamic("childPrivileges")(childPrivileges.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOuScopable)) __obj.updateDynamic("isOuScopable")(isOuScopable.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (privilegeName != null) __obj.updateDynamic("privilegeName")(privilegeName.asInstanceOf[js.Any])
+    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId.asInstanceOf[js.Any])
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Privilege]
   }
 }

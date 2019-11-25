@@ -16,7 +16,7 @@ package object typesSpecConfigMod {
 
   type AxisConfig = BaseAxis
   type DefaultsConfig = Record[prevent | allow, Boolean | js.Array[EventType]]
-  type MarkConfigKeys = mark | (/* import warning: ImportType.apply Failed type conversion: vega-typings.vega-typings/types/spec/mark.Mark['type'] */ js.Any)
+  type MarkConfigKeys = mark | (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/mark.Mark['type'] */ js.Any)
   type ProjectionConfig = BaseProjection
   type TitleConfig = BaseTitle
 }

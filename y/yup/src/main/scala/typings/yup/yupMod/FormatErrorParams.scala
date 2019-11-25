@@ -14,10 +14,10 @@ trait FormatErrorParams extends js.Object {
 object FormatErrorParams {
   @scala.inline
   def apply(path: String, `type`: String, originalValue: js.Any = null, value: js.Any = null): FormatErrorParams = {
-    val __obj = js.Dynamic.literal(path = path)
-    __obj.updateDynamic("type")(`type`)
-    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatErrorParams]
   }
 }

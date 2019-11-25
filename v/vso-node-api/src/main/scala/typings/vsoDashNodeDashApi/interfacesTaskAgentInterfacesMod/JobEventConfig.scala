@@ -11,7 +11,7 @@ trait JobEventConfig extends js.Object {
 object JobEventConfig {
   @scala.inline
   def apply(timeout: String): JobEventConfig = {
-    val __obj = js.Dynamic.literal(timeout = timeout)
+    val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobEventConfig]
   }

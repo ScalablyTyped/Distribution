@@ -12,7 +12,7 @@ object FileOptions {
   @scala.inline
   def apply(NSFileProtectionKey: String = null): FileOptions = {
     val __obj = js.Dynamic.literal()
-    if (NSFileProtectionKey != null) __obj.updateDynamic("NSFileProtectionKey")(NSFileProtectionKey)
+    if (NSFileProtectionKey != null) __obj.updateDynamic("NSFileProtectionKey")(NSFileProtectionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }
 }

@@ -54,14 +54,14 @@ object Server {
     OpenHookUrl: String = null,
     TrackOpens: js.UndefOr[Boolean] = js.undefined
   ): Server = {
-    val __obj = js.Dynamic.literal(ApiTokens = ApiTokens, Color = Color, EnableSmtpApiErrorHooks = EnableSmtpApiErrorHooks, ID = ID, InboundAddress = InboundAddress, InboundHash = InboundHash, InboundSpamThreshold = InboundSpamThreshold, IncludeBounceContentInHook = IncludeBounceContentInHook, Name = Name, PostFirstOpenOnly = PostFirstOpenOnly, RawEmailEnabled = RawEmailEnabled, ServerLink = ServerLink, SmtpApiActivated = SmtpApiActivated, TrackLinks = TrackLinks)
-    if (BounceHookUrl != null) __obj.updateDynamic("BounceHookUrl")(BounceHookUrl)
-    if (ClickHookUrl != null) __obj.updateDynamic("ClickHookUrl")(ClickHookUrl)
-    if (DeliveryHookUrl != null) __obj.updateDynamic("DeliveryHookUrl")(DeliveryHookUrl)
-    if (InboundDomain != null) __obj.updateDynamic("InboundDomain")(InboundDomain)
-    if (InboundHookUrl != null) __obj.updateDynamic("InboundHookUrl")(InboundHookUrl)
-    if (OpenHookUrl != null) __obj.updateDynamic("OpenHookUrl")(OpenHookUrl)
-    if (!js.isUndefined(TrackOpens)) __obj.updateDynamic("TrackOpens")(TrackOpens)
+    val __obj = js.Dynamic.literal(ApiTokens = ApiTokens.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], EnableSmtpApiErrorHooks = EnableSmtpApiErrorHooks.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], InboundAddress = InboundAddress.asInstanceOf[js.Any], InboundHash = InboundHash.asInstanceOf[js.Any], InboundSpamThreshold = InboundSpamThreshold.asInstanceOf[js.Any], IncludeBounceContentInHook = IncludeBounceContentInHook.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PostFirstOpenOnly = PostFirstOpenOnly.asInstanceOf[js.Any], RawEmailEnabled = RawEmailEnabled.asInstanceOf[js.Any], ServerLink = ServerLink.asInstanceOf[js.Any], SmtpApiActivated = SmtpApiActivated.asInstanceOf[js.Any], TrackLinks = TrackLinks.asInstanceOf[js.Any])
+    if (BounceHookUrl != null) __obj.updateDynamic("BounceHookUrl")(BounceHookUrl.asInstanceOf[js.Any])
+    if (ClickHookUrl != null) __obj.updateDynamic("ClickHookUrl")(ClickHookUrl.asInstanceOf[js.Any])
+    if (DeliveryHookUrl != null) __obj.updateDynamic("DeliveryHookUrl")(DeliveryHookUrl.asInstanceOf[js.Any])
+    if (InboundDomain != null) __obj.updateDynamic("InboundDomain")(InboundDomain.asInstanceOf[js.Any])
+    if (InboundHookUrl != null) __obj.updateDynamic("InboundHookUrl")(InboundHookUrl.asInstanceOf[js.Any])
+    if (OpenHookUrl != null) __obj.updateDynamic("OpenHookUrl")(OpenHookUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(TrackOpens)) __obj.updateDynamic("TrackOpens")(TrackOpens.asInstanceOf[js.Any])
     __obj.asInstanceOf[Server]
   }
 }

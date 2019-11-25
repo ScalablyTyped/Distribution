@@ -43,9 +43,9 @@ object R3PipeMetadata {
     typeArgumentCount: Double,
     deps: js.Array[R3DependencyMetadata] = null
   ): R3PipeMetadata = {
-    val __obj = js.Dynamic.literal(name = name, pipeName = pipeName, pure = pure, typeArgumentCount = typeArgumentCount)
-    __obj.updateDynamic("type")(`type`)
-    if (deps != null) __obj.updateDynamic("deps")(deps)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pipeName = pipeName.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3PipeMetadata]
   }
 }

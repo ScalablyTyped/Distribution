@@ -89,12 +89,12 @@ object Instance {
     state: String = null
   ): Instance = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nodeCount != null) __obj.updateDynamic("nodeCount")(nodeCount.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
 }

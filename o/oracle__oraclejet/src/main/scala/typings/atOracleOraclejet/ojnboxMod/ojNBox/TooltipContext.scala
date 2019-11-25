@@ -31,7 +31,7 @@ object TooltipContext {
     row: String,
     secondaryLabel: String
   ): TooltipContext[K] = {
-    val __obj = js.Dynamic.literal(color = color, column = column, componentElement = componentElement, id = id.asInstanceOf[js.Any], indicatorColor = indicatorColor, label = label, parentElement = parentElement, row = row, secondaryLabel = secondaryLabel)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], indicatorColor = indicatorColor.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], secondaryLabel = secondaryLabel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TooltipContext[K]]
   }

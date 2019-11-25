@@ -39,12 +39,12 @@ object AlexaObject {
     on: js.Any,
     registerHandlers: /* repeated */ Handlers[T] => js.Any,
     resources: js.Any,
-    response: js.Any,
+    response: ResponseBuilder,
     saveBeforeResponse: Boolean,
     state: js.Any,
     t: (String, /* repeated */ js.Any) => Unit
   ): AlexaObject[T] = {
-    val __obj = js.Dynamic.literal(_callback = _callback, _context = _context, _event = _event, appId = appId, attributes = attributes, callback = js.Any.fromFunction1(callback), context = context, dynamoDBTableName = dynamoDBTableName, emit = js.Any.fromFunction2(emit), emitWithState = emitWithState, event = event, execute = js.Any.fromFunction0(execute), handler = handler, i18n = i18n, isOverriden = isOverriden, locale = locale, name = name, on = on, registerHandlers = js.Any.fromFunction1(registerHandlers), resources = resources, response = response, saveBeforeResponse = saveBeforeResponse, state = state, t = js.Any.fromFunction2(t))
+    val __obj = js.Dynamic.literal(_callback = _callback.asInstanceOf[js.Any], _context = _context.asInstanceOf[js.Any], _event = _event.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], callback = js.Any.fromFunction1(callback), context = context.asInstanceOf[js.Any], dynamoDBTableName = dynamoDBTableName.asInstanceOf[js.Any], emit = js.Any.fromFunction2(emit), emitWithState = emitWithState.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], execute = js.Any.fromFunction0(execute), handler = handler.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], isOverriden = isOverriden.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], registerHandlers = js.Any.fromFunction1(registerHandlers), resources = resources.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], saveBeforeResponse = saveBeforeResponse.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], t = js.Any.fromFunction2(t))
   
     __obj.asInstanceOf[AlexaObject[T]]
   }

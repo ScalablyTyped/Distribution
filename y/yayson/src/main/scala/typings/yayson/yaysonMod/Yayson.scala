@@ -15,7 +15,7 @@ trait Yayson extends js.Object {
 object Yayson {
   @scala.inline
   def apply(Adapter: Adapter, Presenter: TypeofClassPresenter, Store: Instantiable0[Store]): Yayson = {
-    val __obj = js.Dynamic.literal(Adapter = Adapter, Presenter = Presenter, Store = Store)
+    val __obj = js.Dynamic.literal(Adapter = Adapter.asInstanceOf[js.Any], Presenter = Presenter.asInstanceOf[js.Any], Store = Store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Yayson]
   }

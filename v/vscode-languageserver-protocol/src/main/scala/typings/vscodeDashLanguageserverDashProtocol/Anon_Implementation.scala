@@ -15,7 +15,7 @@ object Anon_Implementation {
   @scala.inline
   def apply(implementation: Anon_DynamicRegistrationLinkSupport = null): Anon_Implementation = {
     val __obj = js.Dynamic.literal()
-    if (implementation != null) __obj.updateDynamic("implementation")(implementation)
+    if (implementation != null) __obj.updateDynamic("implementation")(implementation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Implementation]
   }
 }

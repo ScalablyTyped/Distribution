@@ -12,7 +12,7 @@ trait Bounces extends js.Object {
 object Bounces {
   @scala.inline
   def apply(Bounces: js.Array[Bounce], TotalCount: Double): Bounces = {
-    val __obj = js.Dynamic.literal(Bounces = Bounces, TotalCount = TotalCount)
+    val __obj = js.Dynamic.literal(Bounces = Bounces.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Bounces]
   }

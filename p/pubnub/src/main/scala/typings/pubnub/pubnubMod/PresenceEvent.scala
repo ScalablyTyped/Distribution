@@ -41,8 +41,8 @@ object PresenceEvent {
     uuid: String,
     state: js.Any = null
   ): PresenceEvent = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], actualChannel = actualChannel, channel = channel, occupancy = occupancy, subscribedChannel = subscribedChannel, subscription = subscription, timestamp = timestamp, timetoken = timetoken, uuid = uuid)
-    if (state != null) __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], actualChannel = actualChannel.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], occupancy = occupancy.asInstanceOf[js.Any], subscribedChannel = subscribedChannel.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresenceEvent]
   }
 }

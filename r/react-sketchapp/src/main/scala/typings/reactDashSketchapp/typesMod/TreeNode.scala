@@ -23,9 +23,9 @@ object TreeNode {
     `type`: String,
     children: js.Array[TreeNode] = null
   ): TreeNode = {
-    val __obj = js.Dynamic.literal(layout = layout, props = props, style = style, textStyle = textStyle)
-    __obj.updateDynamic("type")(`type`)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], textStyle = textStyle.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeNode]
   }
 }

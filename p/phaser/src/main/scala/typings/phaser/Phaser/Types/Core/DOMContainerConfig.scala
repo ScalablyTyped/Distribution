@@ -22,8 +22,8 @@ object DOMContainerConfig {
     createContainer: js.UndefOr[Boolean] = js.undefined
   ): DOMContainerConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(behindCanvas)) __obj.updateDynamic("behindCanvas")(behindCanvas)
-    if (!js.isUndefined(createContainer)) __obj.updateDynamic("createContainer")(createContainer)
+    if (!js.isUndefined(behindCanvas)) __obj.updateDynamic("behindCanvas")(behindCanvas.asInstanceOf[js.Any])
+    if (!js.isUndefined(createContainer)) __obj.updateDynamic("createContainer")(createContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMContainerConfig]
   }
 }

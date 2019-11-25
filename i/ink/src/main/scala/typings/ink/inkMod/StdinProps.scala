@@ -24,7 +24,7 @@ trait StdinProps extends js.Object {
 object StdinProps {
   @scala.inline
   def apply(isRawModeSupported: Boolean, setRawMode: /* mode */ Boolean => Unit, stdin: ReadStream): StdinProps = {
-    val __obj = js.Dynamic.literal(isRawModeSupported = isRawModeSupported, setRawMode = js.Any.fromFunction1(setRawMode), stdin = stdin)
+    val __obj = js.Dynamic.literal(isRawModeSupported = isRawModeSupported.asInstanceOf[js.Any], setRawMode = js.Any.fromFunction1(setRawMode), stdin = stdin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StdinProps]
   }

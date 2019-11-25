@@ -42,10 +42,10 @@ object IOptions {
     timeout: Int | Double = null,
     validator: ISchemaValidator = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(connector = connector)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (validator != null) __obj.updateDynamic("validator")(validator)
+    if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

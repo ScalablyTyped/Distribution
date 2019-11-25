@@ -26,13 +26,13 @@ object UserLocation {
     `type`: String = null
   ): UserLocation = {
     val __obj = js.Dynamic.literal()
-    if (area != null) __obj.updateDynamic("area")(area)
-    if (buildingId != null) __obj.updateDynamic("buildingId")(buildingId)
-    if (customType != null) __obj.updateDynamic("customType")(customType)
-    if (deskCode != null) __obj.updateDynamic("deskCode")(deskCode)
-    if (floorName != null) __obj.updateDynamic("floorName")(floorName)
-    if (floorSection != null) __obj.updateDynamic("floorSection")(floorSection)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
+    if (buildingId != null) __obj.updateDynamic("buildingId")(buildingId.asInstanceOf[js.Any])
+    if (customType != null) __obj.updateDynamic("customType")(customType.asInstanceOf[js.Any])
+    if (deskCode != null) __obj.updateDynamic("deskCode")(deskCode.asInstanceOf[js.Any])
+    if (floorName != null) __obj.updateDynamic("floorName")(floorName.asInstanceOf[js.Any])
+    if (floorSection != null) __obj.updateDynamic("floorSection")(floorSection.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserLocation]
   }
 }

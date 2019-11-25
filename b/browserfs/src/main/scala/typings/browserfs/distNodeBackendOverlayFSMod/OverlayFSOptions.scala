@@ -13,7 +13,7 @@ trait OverlayFSOptions extends js.Object {
 object OverlayFSOptions {
   @scala.inline
   def apply(readable: FileSystem, writable: FileSystem): OverlayFSOptions = {
-    val __obj = js.Dynamic.literal(readable = readable, writable = writable)
+    val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OverlayFSOptions]
   }

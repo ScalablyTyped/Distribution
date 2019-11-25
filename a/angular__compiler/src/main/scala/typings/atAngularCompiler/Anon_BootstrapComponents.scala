@@ -44,9 +44,9 @@ object Anon_BootstrapComponents {
     `type`: CompileTypeMetadata,
     id: String = null
   ): Anon_BootstrapComponents = {
-    val __obj = js.Dynamic.literal(bootstrapComponents = bootstrapComponents, declaredDirectives = declaredDirectives, declaredPipes = declaredPipes, entryComponents = entryComponents, exportedDirectives = exportedDirectives, exportedModules = exportedModules, exportedPipes = exportedPipes, importedModules = importedModules, providers = providers, schemas = schemas, transitiveModule = transitiveModule)
-    __obj.updateDynamic("type")(`type`)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(bootstrapComponents = bootstrapComponents.asInstanceOf[js.Any], declaredDirectives = declaredDirectives.asInstanceOf[js.Any], declaredPipes = declaredPipes.asInstanceOf[js.Any], entryComponents = entryComponents.asInstanceOf[js.Any], exportedDirectives = exportedDirectives.asInstanceOf[js.Any], exportedModules = exportedModules.asInstanceOf[js.Any], exportedPipes = exportedPipes.asInstanceOf[js.Any], importedModules = importedModules.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any], transitiveModule = transitiveModule.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BootstrapComponents]
   }
 }

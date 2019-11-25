@@ -14,7 +14,7 @@ trait Anon_Contentloc extends js.Object {
 object Anon_Contentloc {
   @scala.inline
   def apply(content_loc: String, description: String, thumbnail_loc: String, title: String): Anon_Contentloc = {
-    val __obj = js.Dynamic.literal(content_loc = content_loc, description = description, thumbnail_loc = thumbnail_loc, title = title)
+    val __obj = js.Dynamic.literal(content_loc = content_loc.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], thumbnail_loc = thumbnail_loc.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Contentloc]
   }

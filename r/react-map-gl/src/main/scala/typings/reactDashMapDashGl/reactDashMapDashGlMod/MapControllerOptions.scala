@@ -33,17 +33,17 @@ object MapControllerOptions {
     touchRotate: js.UndefOr[Boolean] = js.undefined,
     touchZoom: js.UndefOr[Boolean] = js.undefined
   ): MapControllerOptions = {
-    val __obj = js.Dynamic.literal(isInteractive = isInteractive)
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom)
-    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan)
-    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate)
-    if (eventManager != null) __obj.updateDynamic("eventManager")(eventManager)
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    val __obj = js.Dynamic.literal(isInteractive = isInteractive.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate.asInstanceOf[js.Any])
+    if (eventManager != null) __obj.updateDynamic("eventManager")(eventManager.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3(onViewportChange))
-    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom)
-    if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate)
-    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom)
+    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapControllerOptions]
   }
 }

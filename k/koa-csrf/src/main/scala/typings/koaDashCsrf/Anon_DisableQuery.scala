@@ -24,11 +24,11 @@ object Anon_DisableQuery {
     invalidTokenStatusCode: Int | Double = null
   ): Anon_DisableQuery = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableQuery)) __obj.updateDynamic("disableQuery")(disableQuery)
-    if (excludedMethods != null) __obj.updateDynamic("excludedMethods")(excludedMethods)
-    if (invalidSessionSecretMessage != null) __obj.updateDynamic("invalidSessionSecretMessage")(invalidSessionSecretMessage)
+    if (!js.isUndefined(disableQuery)) __obj.updateDynamic("disableQuery")(disableQuery.asInstanceOf[js.Any])
+    if (excludedMethods != null) __obj.updateDynamic("excludedMethods")(excludedMethods.asInstanceOf[js.Any])
+    if (invalidSessionSecretMessage != null) __obj.updateDynamic("invalidSessionSecretMessage")(invalidSessionSecretMessage.asInstanceOf[js.Any])
     if (invalidSessionSecretStatusCode != null) __obj.updateDynamic("invalidSessionSecretStatusCode")(invalidSessionSecretStatusCode.asInstanceOf[js.Any])
-    if (invalidTokenMessage != null) __obj.updateDynamic("invalidTokenMessage")(invalidTokenMessage)
+    if (invalidTokenMessage != null) __obj.updateDynamic("invalidTokenMessage")(invalidTokenMessage.asInstanceOf[js.Any])
     if (invalidTokenStatusCode != null) __obj.updateDynamic("invalidTokenStatusCode")(invalidTokenStatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisableQuery]
   }

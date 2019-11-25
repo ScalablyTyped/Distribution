@@ -12,7 +12,7 @@ trait Group extends AddressOrGroup {
 object Group {
   @scala.inline
   def apply(group: js.Array[AddressOrGroup], name: String): Group = {
-    val __obj = js.Dynamic.literal(group = group, name = name)
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Group]
   }

@@ -24,10 +24,10 @@ object ISpinnerStyleProps {
     labelPosition: SpinnerLabelPosition = null,
     size: SpinnerSize = null
   ): ISpinnerStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition)
-    if (size != null) __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpinnerStyleProps]
   }
 }

@@ -26,8 +26,8 @@ object cssClasses {
     ROOT: `mdc-list`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(LIST_ITEM_ACTIVATED_CLASS = LIST_ITEM_ACTIVATED_CLASS, LIST_ITEM_CLASS = LIST_ITEM_CLASS, LIST_ITEM_SELECTED_CLASS = LIST_ITEM_SELECTED_CLASS, ROOT = ROOT)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(LIST_ITEM_ACTIVATED_CLASS = LIST_ITEM_ACTIVATED_CLASS.asInstanceOf[js.Any], LIST_ITEM_CLASS = LIST_ITEM_CLASS.asInstanceOf[js.Any], LIST_ITEM_SELECTED_CLASS = LIST_ITEM_SELECTED_CLASS.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

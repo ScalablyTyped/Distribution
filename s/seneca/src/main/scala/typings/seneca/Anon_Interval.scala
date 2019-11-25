@@ -19,7 +19,7 @@ object Anon_Interval {
   ): Anon_Interval = {
     val __obj = js.Dynamic.literal()
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running)
+    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Interval]
   }

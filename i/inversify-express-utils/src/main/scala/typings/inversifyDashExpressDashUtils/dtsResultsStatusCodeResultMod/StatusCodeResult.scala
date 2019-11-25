@@ -14,7 +14,7 @@ trait StatusCodeResult extends IHttpActionResult {
 object StatusCodeResult {
   @scala.inline
   def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], statusCode: js.Any): StatusCodeResult = {
-    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = js.Any.fromFunction0(executeAsync), statusCode = statusCode)
+    val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync), statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StatusCodeResult]
   }

@@ -12,7 +12,7 @@ trait SpinnerProps extends js.Object {
 object SpinnerProps {
   @scala.inline
   def apply(accessibilityLabel: String, show: Boolean): SpinnerProps = {
-    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel, show = show)
+    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SpinnerProps]
   }

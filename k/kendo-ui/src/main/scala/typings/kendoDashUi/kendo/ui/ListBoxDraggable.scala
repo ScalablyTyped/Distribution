@@ -19,7 +19,7 @@ object ListBoxDraggable {
     placeholder: js.Function | String | JQuery = null
   ): ListBoxDraggable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxDraggable]

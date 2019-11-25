@@ -12,7 +12,7 @@ trait Anon_WindowIdNumber extends js.Object {
 object Anon_WindowIdNumber {
   @scala.inline
   def apply(windowId: Double): Anon_WindowIdNumber = {
-    val __obj = js.Dynamic.literal(windowId = windowId)
+    val __obj = js.Dynamic.literal(windowId = windowId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_WindowIdNumber]
   }

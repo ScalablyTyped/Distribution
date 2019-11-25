@@ -36,9 +36,9 @@ object HeadingResponse {
   ): HeadingResponse = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (heading != null) __obj.updateDynamic("heading")(heading)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadingResponse]
   }
 }

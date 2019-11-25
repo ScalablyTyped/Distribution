@@ -12,8 +12,8 @@ trait SmartHomeV1SyncOtherDeviceIds extends js.Object {
 object SmartHomeV1SyncOtherDeviceIds {
   @scala.inline
   def apply(deviceId: String, agentId: String = null): SmartHomeV1SyncOtherDeviceIds = {
-    val __obj = js.Dynamic.literal(deviceId = deviceId)
-    if (agentId != null) __obj.updateDynamic("agentId")(agentId)
+    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any])
+    if (agentId != null) __obj.updateDynamic("agentId")(agentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1SyncOtherDeviceIds]
   }
 }

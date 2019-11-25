@@ -12,16 +12,11 @@ trait Anon_Architecture extends js.Object {
 
 object Anon_Architecture {
   @scala.inline
-  def apply(
-    toString: () => String,
-    architecture: Int | Double = null,
-    family: String = null,
-    version: String = null
-  ): Anon_Architecture = {
-    val __obj = js.Dynamic.literal(toString = js.Any.fromFunction0(toString))
+  def apply(architecture: Int | Double = null, family: String = null, version: String = null): Anon_Architecture = {
+    val __obj = js.Dynamic.literal()
     if (architecture != null) __obj.updateDynamic("architecture")(architecture.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Architecture]
   }
 }

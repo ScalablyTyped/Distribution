@@ -14,9 +14,9 @@ object Anon_Format {
   @scala.inline
   def apply(format: String = null, locale: String = null, utc: js.UndefOr[Boolean] = js.undefined): Anon_Format = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]
   }
 }

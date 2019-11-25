@@ -36,7 +36,7 @@ object reactDashDataDashGridStrings {
   sealed trait multi extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none_ extends js.Object
   
   @js.native
   sealed trait single extends js.Object
@@ -62,7 +62,7 @@ object reactDashDataDashGridStrings {
   @scala.inline
   def multi: multi = "multi".asInstanceOf[multi]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def none_ : none_ = "none".asInstanceOf[none_]
   @scala.inline
   def single: single = "single".asInstanceOf[single]
 }

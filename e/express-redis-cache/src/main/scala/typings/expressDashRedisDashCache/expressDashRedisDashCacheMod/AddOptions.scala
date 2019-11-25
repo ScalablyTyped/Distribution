@@ -14,7 +14,7 @@ object AddOptions {
   def apply(expire: Int | Double = null, `type`: String = null): AddOptions = {
     val __obj = js.Dynamic.literal()
     if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOptions]
   }
 }

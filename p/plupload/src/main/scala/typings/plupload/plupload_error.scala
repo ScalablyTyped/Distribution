@@ -20,7 +20,7 @@ object plupload_error {
     responseHeaders: String,
     status: Double
   ): plupload_error = {
-    val __obj = js.Dynamic.literal(code = code, file = file, message = message, response = response, responseHeaders = responseHeaders, status = status)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[plupload_error]
   }

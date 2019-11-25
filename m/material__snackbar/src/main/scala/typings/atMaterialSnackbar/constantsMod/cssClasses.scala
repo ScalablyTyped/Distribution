@@ -35,8 +35,8 @@ object cssClasses {
     TEXT: `mdc-snackbar__text`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(ACTION_BUTTON = ACTION_BUTTON, ACTION_ON_BOTTOM = ACTION_ON_BOTTOM, ACTION_WRAPPER = ACTION_WRAPPER, ACTIVE = ACTIVE, MULTILINE = MULTILINE, ROOT = ROOT, TEXT = TEXT)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ACTION_BUTTON = ACTION_BUTTON.asInstanceOf[js.Any], ACTION_ON_BOTTOM = ACTION_ON_BOTTOM.asInstanceOf[js.Any], ACTION_WRAPPER = ACTION_WRAPPER.asInstanceOf[js.Any], ACTIVE = ACTIVE.asInstanceOf[js.Any], MULTILINE = MULTILINE.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any], TEXT = TEXT.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

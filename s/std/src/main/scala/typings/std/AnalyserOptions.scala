@@ -24,8 +24,8 @@ object AnalyserOptions {
   ): AnalyserOptions = {
     val __obj = js.Dynamic.literal()
     if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode)
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation)
+    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
+    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
     if (fftSize != null) __obj.updateDynamic("fftSize")(fftSize.asInstanceOf[js.Any])
     if (maxDecibels != null) __obj.updateDynamic("maxDecibels")(maxDecibels.asInstanceOf[js.Any])
     if (minDecibels != null) __obj.updateDynamic("minDecibels")(minDecibels.asInstanceOf[js.Any])

@@ -16,7 +16,7 @@ object BeginTransactionRequest {
   @scala.inline
   def apply(options: TransactionOptions = null): BeginTransactionRequest = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeginTransactionRequest]
   }
 }

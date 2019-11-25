@@ -46,13 +46,13 @@ object Message {
     solutions: js.Array[ReplacementSolution | CallbackSolution] = null,
     url: String = null
   ): Message = {
-    val __obj = js.Dynamic.literal(excerpt = excerpt, location = location, severity = severity.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(excerpt = excerpt.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (linterName != null) __obj.updateDynamic("linterName")(linterName)
-    if (reference != null) __obj.updateDynamic("reference")(reference)
-    if (solutions != null) __obj.updateDynamic("solutions")(solutions)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (linterName != null) __obj.updateDynamic("linterName")(linterName.asInstanceOf[js.Any])
+    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
+    if (solutions != null) __obj.updateDynamic("solutions")(solutions.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

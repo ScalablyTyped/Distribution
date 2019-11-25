@@ -24,7 +24,7 @@ trait IUrlResolverOptions extends js.Object {
 object IUrlResolverOptions {
   @scala.inline
   def apply(contents: IManager, session: ISession | IClientSession): IUrlResolverOptions = {
-    val __obj = js.Dynamic.literal(contents = contents, session = session.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IUrlResolverOptions]
   }

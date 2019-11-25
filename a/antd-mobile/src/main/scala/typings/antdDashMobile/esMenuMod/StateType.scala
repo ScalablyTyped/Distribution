@@ -14,9 +14,9 @@ trait StateType extends js.Object {
 object StateType {
   @scala.inline
   def apply(firstLevelSelectValue: String, height: Int | Double = null, value: ValueType = null): StateType = {
-    val __obj = js.Dynamic.literal(firstLevelSelectValue = firstLevelSelectValue)
+    val __obj = js.Dynamic.literal(firstLevelSelectValue = firstLevelSelectValue.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateType]
   }
 }

@@ -28,14 +28,14 @@ object ApsAlert {
     `title-loc-key`: String = null
   ): ApsAlert = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (`action-loc-key` != null) __obj.updateDynamic("action-loc-key")(`action-loc-key`)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (`loc-args` != null) __obj.updateDynamic("loc-args")(`loc-args`)
-    if (`loc-key` != null) __obj.updateDynamic("loc-key")(`loc-key`)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`title-loc-args` != null) __obj.updateDynamic("title-loc-args")(`title-loc-args`)
-    if (`title-loc-key` != null) __obj.updateDynamic("title-loc-key")(`title-loc-key`)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (`action-loc-key` != null) __obj.updateDynamic("action-loc-key")(`action-loc-key`.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (`loc-args` != null) __obj.updateDynamic("loc-args")(`loc-args`.asInstanceOf[js.Any])
+    if (`loc-key` != null) __obj.updateDynamic("loc-key")(`loc-key`.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`title-loc-args` != null) __obj.updateDynamic("title-loc-args")(`title-loc-args`.asInstanceOf[js.Any])
+    if (`title-loc-key` != null) __obj.updateDynamic("title-loc-key")(`title-loc-key`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApsAlert]
   }
 }

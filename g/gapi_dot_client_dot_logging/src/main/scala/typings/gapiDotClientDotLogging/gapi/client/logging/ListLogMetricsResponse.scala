@@ -18,8 +18,8 @@ object ListLogMetricsResponse {
   @scala.inline
   def apply(metrics: js.Array[LogMetric] = null, nextPageToken: String = null): ListLogMetricsResponse = {
     val __obj = js.Dynamic.literal()
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLogMetricsResponse]
   }
 }

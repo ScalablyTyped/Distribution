@@ -64,16 +64,16 @@ object WebMapProperties {
     widgets: js.Any = null
   ): WebMapProperties = {
     val __obj = js.Dynamic.literal()
-    if (applicationProperties != null) __obj.updateDynamic("applicationProperties")(applicationProperties)
+    if (applicationProperties != null) __obj.updateDynamic("applicationProperties")(applicationProperties.asInstanceOf[js.Any])
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks.asInstanceOf[js.Any])
     if (ground != null) __obj.updateDynamic("ground")(ground.asInstanceOf[js.Any])
-    if (initialViewProperties != null) __obj.updateDynamic("initialViewProperties")(initialViewProperties)
+    if (initialViewProperties != null) __obj.updateDynamic("initialViewProperties")(initialViewProperties.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
-    if (presentation != null) __obj.updateDynamic("presentation")(presentation)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
-    if (widgets != null) __obj.updateDynamic("widgets")(widgets)
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem.asInstanceOf[js.Any])
+    if (presentation != null) __obj.updateDynamic("presentation")(presentation.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
+    if (widgets != null) __obj.updateDynamic("widgets")(widgets.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebMapProperties]
   }
 }

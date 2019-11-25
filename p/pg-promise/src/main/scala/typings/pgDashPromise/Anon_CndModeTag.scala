@@ -15,9 +15,9 @@ object Anon_CndModeTag {
   @scala.inline
   def apply(cnd: js.Any = null, mode: TransactionMode = null, tag: js.Any = null): Anon_CndModeTag = {
     val __obj = js.Dynamic.literal()
-    if (cnd != null) __obj.updateDynamic("cnd")(cnd)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (cnd != null) __obj.updateDynamic("cnd")(cnd.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CndModeTag]
   }
 }

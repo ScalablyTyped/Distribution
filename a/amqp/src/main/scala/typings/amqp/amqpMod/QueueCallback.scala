@@ -24,7 +24,7 @@ object QueueCallback {
     options: QueueOptions,
     state: String
   ): QueueCallback = {
-    val __obj = js.Dynamic.literal(channel = channel, consumerTagListeners = consumerTagListeners, consumerTagOptions = consumerTagOptions, name = name, options = options, state = state)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], consumerTagListeners = consumerTagListeners.asInstanceOf[js.Any], consumerTagOptions = consumerTagOptions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueueCallback]
   }

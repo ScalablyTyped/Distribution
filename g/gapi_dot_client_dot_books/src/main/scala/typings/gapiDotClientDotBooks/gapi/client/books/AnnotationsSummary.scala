@@ -14,8 +14,8 @@ object AnnotationsSummary {
   @scala.inline
   def apply(kind: String = null, layers: js.Array[Anon_AllowedCharacterCountLayerId] = null): AnnotationsSummary = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsSummary]
   }
 }

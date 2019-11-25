@@ -24,16 +24,16 @@ object TreeModelOperation {
   @scala.inline
   def apply(
     documentation: String,
-    errors: js.Array[TreeModelOperationMember],
+    errors: js.Array[Member | TreeModelOperationMember],
     http: HttpTrait,
-    input: TreeModelOperationMember,
+    input: Member | TreeModelOperationMember,
     metadata: ServiceMetadata,
     name: String,
-    output: TreeModelOperationMember,
+    output: Member | TreeModelOperationMember,
     authtype: SupportedSignatureVersion = null
   ): TreeModelOperation = {
-    val __obj = js.Dynamic.literal(documentation = documentation, errors = errors, http = http, input = input, metadata = metadata, name = name, output = output)
-    if (authtype != null) __obj.updateDynamic("authtype")(authtype)
+    val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
+    if (authtype != null) __obj.updateDynamic("authtype")(authtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeModelOperation]
   }
 }

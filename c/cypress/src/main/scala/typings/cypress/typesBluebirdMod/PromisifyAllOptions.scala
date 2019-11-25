@@ -41,11 +41,11 @@ object PromisifyAllOptions {
     suffix: String = null
   ): PromisifyAllOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
-    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs)
-    if (promisifier != null) __obj.updateDynamic("promisifier")(promisifier)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.asInstanceOf[js.Any])
+    if (promisifier != null) __obj.updateDynamic("promisifier")(promisifier.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromisifyAllOptions[T]]
   }
 }

@@ -25,10 +25,10 @@ object Anon_Fragment {
     responseMode: query | fragment = null,
     responseType: String = null
   ): Anon_Fragment = {
-    val __obj = js.Dynamic.literal(scope = scope)
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fragment]
   }
 }

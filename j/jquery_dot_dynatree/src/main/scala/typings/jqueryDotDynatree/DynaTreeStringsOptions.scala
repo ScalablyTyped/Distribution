@@ -13,8 +13,8 @@ object DynaTreeStringsOptions {
   @scala.inline
   def apply(loadError: String = null, loading: String = null): DynaTreeStringsOptions = {
     val __obj = js.Dynamic.literal()
-    if (loadError != null) __obj.updateDynamic("loadError")(loadError)
-    if (loading != null) __obj.updateDynamic("loading")(loading)
+    if (loadError != null) __obj.updateDynamic("loadError")(loadError.asInstanceOf[js.Any])
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeStringsOptions]
   }
 }

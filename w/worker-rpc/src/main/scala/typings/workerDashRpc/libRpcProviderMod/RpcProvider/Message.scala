@@ -14,9 +14,9 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(id: String, `type`: MessageType, payload: js.Any = null, transactionId: Int | Double = null): Message = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }

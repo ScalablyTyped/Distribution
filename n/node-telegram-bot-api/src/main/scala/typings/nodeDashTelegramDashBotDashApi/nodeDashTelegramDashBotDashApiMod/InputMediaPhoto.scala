@@ -14,10 +14,10 @@ trait InputMediaPhoto
 object InputMediaPhoto {
   @scala.inline
   def apply(media: String, `type`: photo, caption: String = null, parse_mode: ParseMode = null): InputMediaPhoto = {
-    val __obj = js.Dynamic.literal(media = media)
-    __obj.updateDynamic("type")(`type`)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (parse_mode != null) __obj.updateDynamic("parse_mode")(parse_mode)
+    val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (parse_mode != null) __obj.updateDynamic("parse_mode")(parse_mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputMediaPhoto]
   }
 }

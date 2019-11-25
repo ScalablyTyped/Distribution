@@ -13,7 +13,7 @@ trait UserInfo extends js.Object {
 object UserInfo {
   @scala.inline
   def apply(id: String, organizationId: String, url: String): UserInfo = {
-    val __obj = js.Dynamic.literal(id = id, organizationId = organizationId, url = url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], organizationId = organizationId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserInfo]
   }

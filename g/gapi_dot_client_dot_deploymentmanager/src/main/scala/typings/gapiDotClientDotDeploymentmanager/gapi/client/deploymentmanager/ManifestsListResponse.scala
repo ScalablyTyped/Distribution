@@ -15,8 +15,8 @@ object ManifestsListResponse {
   @scala.inline
   def apply(manifests: js.Array[Manifest] = null, nextPageToken: String = null): ManifestsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (manifests != null) __obj.updateDynamic("manifests")(manifests)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (manifests != null) __obj.updateDynamic("manifests")(manifests.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestsListResponse]
   }
 }

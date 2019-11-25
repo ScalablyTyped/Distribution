@@ -69,22 +69,22 @@ object RequestOptions {
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): RequestOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(js.Any.fromFunction2(config))
     if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction1(deserialize))
     if (extract != null) __obj.updateDynamic("extract")(js.Any.fromFunction2(extract))
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(useBody)) __obj.updateDynamic("useBody")(useBody)
-    if (user != null) __obj.updateDynamic("user")(user)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBody)) __obj.updateDynamic("useBody")(useBody.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions[T]]
   }
 }

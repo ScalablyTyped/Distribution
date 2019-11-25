@@ -39,21 +39,21 @@ object NimbleEmojiProps {
     skin: EmojiSkin = null,
     tooltip: js.UndefOr[Boolean] = js.undefined
   ): NimbleEmojiProps = {
-    val __obj = js.Dynamic.literal(data = data, emoji = emoji.asInstanceOf[js.Any], size = size)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], emoji = emoji.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(js.Any.fromFunction2(backgroundImageFn))
     if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction2(fallback))
-    if (!js.isUndefined(forceSize)) __obj.updateDynamic("forceSize")(forceSize)
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native)
+    if (!js.isUndefined(forceSize)) __obj.updateDynamic("forceSize")(forceSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onLeave != null) __obj.updateDynamic("onLeave")(js.Any.fromFunction2(onLeave))
     if (onOver != null) __obj.updateDynamic("onOver")(js.Any.fromFunction2(onOver))
-    if (set != null) __obj.updateDynamic("set")(set)
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
     if (sheetColumns != null) __obj.updateDynamic("sheetColumns")(sheetColumns.asInstanceOf[js.Any])
     if (sheetRows != null) __obj.updateDynamic("sheetRows")(sheetRows.asInstanceOf[js.Any])
-    if (sheetSize != null) __obj.updateDynamic("sheetSize")(sheetSize)
-    if (skin != null) __obj.updateDynamic("skin")(skin)
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
+    if (sheetSize != null) __obj.updateDynamic("sheetSize")(sheetSize.asInstanceOf[js.Any])
+    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[NimbleEmojiProps]
   }
 }

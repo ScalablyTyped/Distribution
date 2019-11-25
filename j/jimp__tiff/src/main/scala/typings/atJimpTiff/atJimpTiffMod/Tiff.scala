@@ -23,7 +23,7 @@ object Tiff {
     encoders: Anon_ImagetiffEncoderFn,
     mime: Anon_Imagetiff
   ): Tiff = {
-    val __obj = js.Dynamic.literal(constants = constants, decoders = decoders, encoders = encoders, mime = mime)
+    val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], decoders = decoders.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tiff]
   }

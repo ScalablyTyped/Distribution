@@ -20,10 +20,10 @@ object TraversalOptions {
     stopOnError: js.UndefOr[Boolean] = js.undefined
   ): TraversalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeRoot)) __obj.updateDynamic("excludeRoot")(excludeRoot)
+    if (!js.isUndefined(excludeRoot)) __obj.updateDynamic("excludeRoot")(excludeRoot.asInstanceOf[js.Any])
     if (maxParallelLoad != null) __obj.updateDynamic("maxParallelLoad")(maxParallelLoad.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (!js.isUndefined(stopOnError)) __obj.updateDynamic("stopOnError")(stopOnError)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnError)) __obj.updateDynamic("stopOnError")(stopOnError.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraversalOptions]
   }
 }

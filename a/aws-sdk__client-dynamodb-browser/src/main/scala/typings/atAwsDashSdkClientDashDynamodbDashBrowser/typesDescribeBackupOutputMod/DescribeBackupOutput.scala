@@ -22,8 +22,8 @@ trait DescribeBackupOutput extends OutputTypesUnion {
 object DescribeBackupOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, BackupDescription: _UnmarshalledBackupDescription = null): DescribeBackupOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (BackupDescription != null) __obj.updateDynamic("BackupDescription")(BackupDescription)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (BackupDescription != null) __obj.updateDynamic("BackupDescription")(BackupDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBackupOutput]
   }
 }

@@ -123,16 +123,16 @@ object PlusNativeObjViewStyles {
     width: String = null
   ): PlusNativeObjViewStyles = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
-    if (dock != null) __obj.updateDynamic("dock")(dock)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (left != null) __obj.updateDynamic("left")(left)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (statusbar != null) __obj.updateDynamic("statusbar")(statusbar)
-    if (top != null) __obj.updateDynamic("top")(top)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (statusbar != null) __obj.updateDynamic("statusbar")(statusbar.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjViewStyles]
   }
 }

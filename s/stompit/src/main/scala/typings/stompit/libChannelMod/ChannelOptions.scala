@@ -16,8 +16,8 @@ object ChannelOptions {
     recoverAfterApplicationError: js.UndefOr[Boolean] = js.undefined
   ): ChannelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysConnected)) __obj.updateDynamic("alwaysConnected")(alwaysConnected)
-    if (!js.isUndefined(recoverAfterApplicationError)) __obj.updateDynamic("recoverAfterApplicationError")(recoverAfterApplicationError)
+    if (!js.isUndefined(alwaysConnected)) __obj.updateDynamic("alwaysConnected")(alwaysConnected.asInstanceOf[js.Any])
+    if (!js.isUndefined(recoverAfterApplicationError)) __obj.updateDynamic("recoverAfterApplicationError")(recoverAfterApplicationError.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelOptions]
   }
 }

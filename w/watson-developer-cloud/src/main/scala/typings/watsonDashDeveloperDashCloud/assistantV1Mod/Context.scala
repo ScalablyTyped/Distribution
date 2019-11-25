@@ -27,10 +27,10 @@ object Context {
     system: SystemResponse = null
   ): Context = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (conversation_id != null) __obj.updateDynamic("conversation_id")(conversation_id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (system != null) __obj.updateDynamic("system")(system)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (conversation_id != null) __obj.updateDynamic("conversation_id")(conversation_id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

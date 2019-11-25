@@ -36,7 +36,7 @@ object IOptions {
     args: T => ReadonlyJSONObject = null,
     when: js.Promise[_] | js.Array[js.Promise[_]] = null
   ): IOptions[T] = {
-    val __obj = js.Dynamic.literal(command = command, connector = connector, name = js.Any.fromFunction1(name), registry = registry)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], connector = connector.asInstanceOf[js.Any], name = js.Any.fromFunction1(name), registry = registry.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(js.Any.fromFunction1(args))
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T]]

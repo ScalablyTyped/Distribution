@@ -37,14 +37,14 @@ object SourceTileOptions {
     val __obj = js.Dynamic.literal()
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (!js.isUndefined(opaque)) __obj.updateDynamic("opaque")(opaque)
+    if (!js.isUndefined(opaque)) __obj.updateDynamic("opaque")(opaque.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid.asInstanceOf[js.Any])
     if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceTileOptions]
   }
 }

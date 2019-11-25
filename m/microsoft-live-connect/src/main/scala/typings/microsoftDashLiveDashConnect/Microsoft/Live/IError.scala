@@ -19,7 +19,7 @@ trait IError extends js.Object {
 object IError {
   @scala.inline
   def apply(error: Anon_Code): IError = {
-    val __obj = js.Dynamic.literal(error = error)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IError]
   }

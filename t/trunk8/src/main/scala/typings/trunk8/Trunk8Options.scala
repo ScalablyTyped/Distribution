@@ -42,11 +42,11 @@ object Trunk8Options {
     width: String = null
   ): Trunk8Options = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (side != null) __obj.updateDynamic("side")(side)
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trunk8Options]
   }
 }

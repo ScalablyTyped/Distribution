@@ -34,9 +34,9 @@ object Teacher {
   @scala.inline
   def apply(courseId: String = null, profile: UserProfile = null, userId: String = null): Teacher = {
     val __obj = js.Dynamic.literal()
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Teacher]
   }
 }

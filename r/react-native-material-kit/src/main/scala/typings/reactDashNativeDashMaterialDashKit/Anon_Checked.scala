@@ -11,7 +11,7 @@ trait Anon_Checked extends js.Object {
 object Anon_Checked {
   @scala.inline
   def apply(checked: Boolean): Anon_Checked = {
-    val __obj = js.Dynamic.literal(checked = checked)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Checked]
   }

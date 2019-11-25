@@ -21,10 +21,10 @@ object Anon_Derivatives {
     source: Anon_Attribution = null
   ): Anon_Derivatives = {
     val __obj = js.Dynamic.literal()
-    if (derivatives != null) __obj.updateDynamic("derivatives")(derivatives)
-    if (examples != null) __obj.updateDynamic("examples")(examples)
-    if (senses != null) __obj.updateDynamic("senses")(senses)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (derivatives != null) __obj.updateDynamic("derivatives")(derivatives.asInstanceOf[js.Any])
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
+    if (senses != null) __obj.updateDynamic("senses")(senses.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Derivatives]
   }
 }

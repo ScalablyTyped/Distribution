@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait ReadPreferenceMode extends ReadPreferenceOrMode
 
+object ReadPreferenceMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def nearest: typings.mongodb.mongodbStrings.nearest = this.cast("nearest")
+  @scala.inline
+  def primary: typings.mongodb.mongodbStrings.primary = this.cast("primary")
+  @scala.inline
+  def primaryPreferred: typings.mongodb.mongodbStrings.primaryPreferred = this.cast("primaryPreferred")
+  @scala.inline
+  def secondary: typings.mongodb.mongodbStrings.secondary = this.cast("secondary")
+  @scala.inline
+  def secondaryPreferred: typings.mongodb.mongodbStrings.secondaryPreferred = this.cast("secondaryPreferred")
+}
+

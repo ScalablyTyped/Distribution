@@ -21,9 +21,9 @@ object DocumentRemove {
   @scala.inline
   def apply(document: String = null, readTime: String = null, removedTargetIds: js.Array[Double] = null): DocumentRemove = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
-    if (removedTargetIds != null) __obj.updateDynamic("removedTargetIds")(removedTargetIds)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
+    if (removedTargetIds != null) __obj.updateDynamic("removedTargetIds")(removedTargetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentRemove]
   }
 }

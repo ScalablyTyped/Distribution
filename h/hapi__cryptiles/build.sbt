@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi__cryptiles"
-version := "4.2-dt-20190404Z-5bf087"
+version := "4.2-dt-20190404Z-b1d745"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

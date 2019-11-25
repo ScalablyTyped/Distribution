@@ -27,13 +27,13 @@ object AbideOptions {
     translation_directory: String = null
   ): AbideOptions = {
     val __obj = js.Dynamic.literal()
-    if (debug_lang != null) __obj.updateDynamic("debug_lang")(debug_lang)
-    if (default_lang != null) __obj.updateDynamic("default_lang")(default_lang)
-    if (!js.isUndefined(disable_locale_check)) __obj.updateDynamic("disable_locale_check")(disable_locale_check)
-    if (gettext_alias != null) __obj.updateDynamic("gettext_alias")(gettext_alias)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (supported_languages != null) __obj.updateDynamic("supported_languages")(supported_languages)
-    if (translation_directory != null) __obj.updateDynamic("translation_directory")(translation_directory)
+    if (debug_lang != null) __obj.updateDynamic("debug_lang")(debug_lang.asInstanceOf[js.Any])
+    if (default_lang != null) __obj.updateDynamic("default_lang")(default_lang.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_locale_check)) __obj.updateDynamic("disable_locale_check")(disable_locale_check.asInstanceOf[js.Any])
+    if (gettext_alias != null) __obj.updateDynamic("gettext_alias")(gettext_alias.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (supported_languages != null) __obj.updateDynamic("supported_languages")(supported_languages.asInstanceOf[js.Any])
+    if (translation_directory != null) __obj.updateDynamic("translation_directory")(translation_directory.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbideOptions]
   }
 }

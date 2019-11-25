@@ -16,7 +16,7 @@ trait Stats extends js.Object {
 object Stats {
   @scala.inline
   def apply(node: NodeStats, size: Double): Stats = {
-    val __obj = js.Dynamic.literal(node = node, size = size)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stats]
   }

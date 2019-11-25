@@ -27,3 +27,24 @@ import scala.scalajs.js.annotation._
 */
 trait NxTreeNodeType extends js.Object
 
+object NxTreeNodeType {
+  @scala.inline
+  def E: typings.qlikDashEngineapi.qlikDashEngineapiStrings.E = this.cast("E")
+  @scala.inline
+  def G: typings.qlikDashEngineapi.qlikDashEngineapiStrings.G = this.cast("G")
+  @scala.inline
+  def N: typings.qlikDashEngineapi.qlikDashEngineapiStrings.N = this.cast("N")
+  @scala.inline
+  def P: typings.qlikDashEngineapi.qlikDashEngineapiStrings.P = this.cast("P")
+  @scala.inline
+  def R: typings.qlikDashEngineapi.qlikDashEngineapiStrings.R = this.cast("R")
+  @scala.inline
+  def T: typings.qlikDashEngineapi.qlikDashEngineapiStrings.T = this.cast("T")
+  @scala.inline
+  def U: typings.qlikDashEngineapi.qlikDashEngineapiStrings.U = this.cast("U")
+  @scala.inline
+  def V: typings.qlikDashEngineapi.qlikDashEngineapiStrings.V = this.cast("V")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

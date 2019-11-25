@@ -85,22 +85,22 @@ object ojLegendItemSettableProperties {
     svgStyle: js.Object = null,
     symbolType: line | lineWithMarker | image | marker = null
   ): ojLegendItemSettableProperties = {
-    val __obj = js.Dynamic.literal(markerShape = markerShape.asInstanceOf[js.Any], text = text)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (categories != null) __obj.updateDynamic("categories")(categories)
+    val __obj = js.Dynamic.literal(markerShape = markerShape.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (categoryVisibility != null) __obj.updateDynamic("categoryVisibility")(categoryVisibility.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor)
-    if (markerSvgClassName != null) __obj.updateDynamic("markerSvgClassName")(markerSvgClassName)
-    if (markerSvgStyle != null) __obj.updateDynamic("markerSvgStyle")(markerSvgStyle)
+    if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor.asInstanceOf[js.Any])
+    if (markerSvgClassName != null) __obj.updateDynamic("markerSvgClassName")(markerSvgClassName.asInstanceOf[js.Any])
+    if (markerSvgStyle != null) __obj.updateDynamic("markerSvgStyle")(markerSvgStyle.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojLegendItemSettableProperties]
   }

@@ -16,7 +16,7 @@ trait DateMetaData extends js.Object {
 object DateMetaData {
   @scala.inline
   def apply(day: Double, month: Double, otherMonth: Boolean, selectable: Boolean, today: Boolean, year: Double): DateMetaData = {
-    val __obj = js.Dynamic.literal(day = day, month = month, otherMonth = otherMonth, selectable = selectable, today = today, year = year)
+    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], otherMonth = otherMonth.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DateMetaData]
   }

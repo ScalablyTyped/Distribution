@@ -16,8 +16,8 @@ object Metric {
   @scala.inline
   def apply(labels: Record[String, String] = null, `type`: String = null): Metric = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metric]
   }
 }

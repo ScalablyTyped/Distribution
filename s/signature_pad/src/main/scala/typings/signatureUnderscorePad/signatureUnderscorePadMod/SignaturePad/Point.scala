@@ -23,8 +23,8 @@ object Point {
     y: Double,
     color: String = null
   ): Point = {
-    val __obj = js.Dynamic.literal(distanceTo = js.Any.fromFunction1(distanceTo), time = time, velocityFrom = js.Any.fromFunction1(velocityFrom), x = x, y = y)
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(distanceTo = js.Any.fromFunction1(distanceTo), time = time.asInstanceOf[js.Any], velocityFrom = js.Any.fromFunction1(velocityFrom), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

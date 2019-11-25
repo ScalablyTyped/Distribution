@@ -45,10 +45,10 @@ object Anon_FrameIdProcessId {
     transitionQualifiers: js.Array[TransitionQualifier] = null,
     transitionType: TransitionType = null
   ): Anon_FrameIdProcessId = {
-    val __obj = js.Dynamic.literal(frameId = frameId, tabId = tabId, timeStamp = timeStamp, url = url)
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
-    if (transitionQualifiers != null) __obj.updateDynamic("transitionQualifiers")(transitionQualifiers)
-    if (transitionType != null) __obj.updateDynamic("transitionType")(transitionType)
+    if (transitionQualifiers != null) __obj.updateDynamic("transitionQualifiers")(transitionQualifiers.asInstanceOf[js.Any])
+    if (transitionType != null) __obj.updateDynamic("transitionType")(transitionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FrameIdProcessId]
   }
 }

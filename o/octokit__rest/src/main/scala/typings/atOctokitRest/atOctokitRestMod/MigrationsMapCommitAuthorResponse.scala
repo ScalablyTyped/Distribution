@@ -25,7 +25,7 @@ object MigrationsMapCommitAuthorResponse {
     remote_name: String,
     url: String
   ): MigrationsMapCommitAuthorResponse = {
-    val __obj = js.Dynamic.literal(email = email, id = id, import_url = import_url, name = name, remote_id = remote_id, remote_name = remote_name, url = url)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], import_url = import_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remote_id = remote_id.asInstanceOf[js.Any], remote_name = remote_name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MigrationsMapCommitAuthorResponse]
   }

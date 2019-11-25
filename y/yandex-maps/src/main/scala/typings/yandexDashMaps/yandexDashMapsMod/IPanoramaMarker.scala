@@ -20,7 +20,7 @@ object IPanoramaMarker {
     getPosition: () => js.Array[Double],
     properties: Manager
   ): IPanoramaMarker = {
-    val __obj = js.Dynamic.literal(getIconSet = js.Any.fromFunction0(getIconSet), getPanorama = js.Any.fromFunction0(getPanorama), getPosition = js.Any.fromFunction0(getPosition), properties = properties)
+    val __obj = js.Dynamic.literal(getIconSet = js.Any.fromFunction0(getIconSet), getPanorama = js.Any.fromFunction0(getPanorama), getPosition = js.Any.fromFunction0(getPosition), properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPanoramaMarker]
   }

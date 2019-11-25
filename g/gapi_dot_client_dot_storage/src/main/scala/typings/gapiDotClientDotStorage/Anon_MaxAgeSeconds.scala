@@ -28,9 +28,9 @@ object Anon_MaxAgeSeconds {
   ): Anon_MaxAgeSeconds = {
     val __obj = js.Dynamic.literal()
     if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (responseHeader != null) __obj.updateDynamic("responseHeader")(responseHeader)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (responseHeader != null) __obj.updateDynamic("responseHeader")(responseHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaxAgeSeconds]
   }
 }

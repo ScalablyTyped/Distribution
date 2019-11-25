@@ -15,7 +15,7 @@ trait ClickPlaformUsageCounts extends js.Object {
 object ClickPlaformUsageCounts {
   @scala.inline
   def apply(Days: js.Array[Anon_DateDesktopMobile], Desktop: Double, Mobile: Double, Unknown: Double): ClickPlaformUsageCounts = {
-    val __obj = js.Dynamic.literal(Days = Days, Desktop = Desktop, Mobile = Mobile, Unknown = Unknown)
+    val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Desktop = Desktop.asInstanceOf[js.Any], Mobile = Mobile.asInstanceOf[js.Any], Unknown = Unknown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClickPlaformUsageCounts]
   }

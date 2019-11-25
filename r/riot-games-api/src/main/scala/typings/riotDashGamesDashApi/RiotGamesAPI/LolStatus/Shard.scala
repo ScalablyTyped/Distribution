@@ -15,7 +15,7 @@ trait Shard extends js.Object {
 object Shard {
   @scala.inline
   def apply(hostname: String, locales: js.Array[String], name: String, region_tag: String, slug: String): Shard = {
-    val __obj = js.Dynamic.literal(hostname = hostname, locales = locales, name = name, region_tag = region_tag, slug = slug)
+    val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], locales = locales.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], region_tag = region_tag.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Shard]
   }

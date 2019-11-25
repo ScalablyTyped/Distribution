@@ -73,10 +73,10 @@ object FastifyRateLimitOptions {
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(js.Any.fromFunction1(keyGenerator))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (redis != null) __obj.updateDynamic("redis")(redis)
-    if (!js.isUndefined(skipOnError)) __obj.updateDynamic("skipOnError")(skipOnError)
+    if (redis != null) __obj.updateDynamic("redis")(redis.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipOnError)) __obj.updateDynamic("skipOnError")(skipOnError.asInstanceOf[js.Any])
     if (timeWindow != null) __obj.updateDynamic("timeWindow")(timeWindow.asInstanceOf[js.Any])
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastifyRateLimitOptions[T]]
   }
 }

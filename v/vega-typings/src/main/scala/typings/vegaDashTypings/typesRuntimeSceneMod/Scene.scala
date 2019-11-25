@@ -25,7 +25,7 @@ object Scene {
     name: String,
     role: String
   ): Scene = {
-    val __obj = js.Dynamic.literal(bounds = bounds, clip = clip, interactive = interactive, items = items, marktype = marktype, name = name, role = role)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], interactive = interactive.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], marktype = marktype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Scene]
   }

@@ -27,8 +27,8 @@ object Options {
     precision: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
-    if (!js.isUndefined(elapse)) __obj.updateDynamic("elapse")(elapse)
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (!js.isUndefined(elapse)) __obj.updateDynamic("elapse")(elapse.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

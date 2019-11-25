@@ -41,14 +41,14 @@ object AutoSizerProps {
     style: CSSProperties = null
   ): AutoSizerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultHeight != null) __obj.updateDynamic("defaultHeight")(defaultHeight.asInstanceOf[js.Any])
     if (defaultWidth != null) __obj.updateDynamic("defaultWidth")(defaultWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHeight)) __obj.updateDynamic("disableHeight")(disableHeight)
-    if (!js.isUndefined(disableWidth)) __obj.updateDynamic("disableWidth")(disableWidth)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (!js.isUndefined(disableHeight)) __obj.updateDynamic("disableHeight")(disableHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableWidth)) __obj.updateDynamic("disableWidth")(disableWidth.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoSizerProps]
   }
 }

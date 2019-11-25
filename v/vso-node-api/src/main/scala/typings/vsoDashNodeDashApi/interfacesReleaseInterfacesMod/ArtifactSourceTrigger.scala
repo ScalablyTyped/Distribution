@@ -19,7 +19,7 @@ object ArtifactSourceTrigger {
     triggerConditions: js.Array[ArtifactFilter],
     triggerType: ReleaseTriggerType
   ): ArtifactSourceTrigger = {
-    val __obj = js.Dynamic.literal(artifactAlias = artifactAlias, triggerConditions = triggerConditions, triggerType = triggerType)
+    val __obj = js.Dynamic.literal(artifactAlias = artifactAlias.asInstanceOf[js.Any], triggerConditions = triggerConditions.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtifactSourceTrigger]
   }

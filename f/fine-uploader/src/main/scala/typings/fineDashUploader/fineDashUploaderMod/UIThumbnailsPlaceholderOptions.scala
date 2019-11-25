@@ -36,9 +36,9 @@ object UIThumbnailsPlaceholderOptions {
     waitingPath: String = null
   ): UIThumbnailsPlaceholderOptions = {
     val __obj = js.Dynamic.literal()
-    if (notAvailablePath != null) __obj.updateDynamic("notAvailablePath")(notAvailablePath)
-    if (!js.isUndefined(waitUntilResponse)) __obj.updateDynamic("waitUntilResponse")(waitUntilResponse)
-    if (waitingPath != null) __obj.updateDynamic("waitingPath")(waitingPath)
+    if (notAvailablePath != null) __obj.updateDynamic("notAvailablePath")(notAvailablePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitUntilResponse)) __obj.updateDynamic("waitUntilResponse")(waitUntilResponse.asInstanceOf[js.Any])
+    if (waitingPath != null) __obj.updateDynamic("waitingPath")(waitingPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIThumbnailsPlaceholderOptions]
   }
 }

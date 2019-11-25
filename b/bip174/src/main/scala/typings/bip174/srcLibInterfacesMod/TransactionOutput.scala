@@ -13,7 +13,7 @@ trait TransactionOutput extends js.Object {
 object TransactionOutput {
   @scala.inline
   def apply(script: Buffer, value: Double): TransactionOutput = {
-    val __obj = js.Dynamic.literal(script = script, value = value)
+    val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransactionOutput]
   }

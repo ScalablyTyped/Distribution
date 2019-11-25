@@ -17,7 +17,7 @@ trait ErrorInfo extends js.Object {
 object ErrorInfo {
   @scala.inline
   def apply(componentStack: String): ErrorInfo = {
-    val __obj = js.Dynamic.literal(componentStack = componentStack)
+    val __obj = js.Dynamic.literal(componentStack = componentStack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ErrorInfo]
   }

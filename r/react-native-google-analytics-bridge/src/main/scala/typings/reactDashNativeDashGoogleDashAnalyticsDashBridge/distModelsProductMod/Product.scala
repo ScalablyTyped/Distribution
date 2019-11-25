@@ -27,13 +27,13 @@ object Product {
     quantity: Int | Double = null,
     variant: String = null
   ): Product = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
-    if (brand != null) __obj.updateDynamic("brand")(brand)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (couponCode != null) __obj.updateDynamic("couponCode")(couponCode)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (couponCode != null) __obj.updateDynamic("couponCode")(couponCode.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant)
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[Product]
   }
 }

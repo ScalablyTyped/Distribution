@@ -14,7 +14,7 @@ object UnparsedOptions {
   @scala.inline
   def apply(integer: js.UndefOr[Boolean] = js.undefined, max: Int | Double = null, min: Int | Double = null): UnparsedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(integer)) __obj.updateDynamic("integer")(integer)
+    if (!js.isUndefined(integer)) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnparsedOptions]

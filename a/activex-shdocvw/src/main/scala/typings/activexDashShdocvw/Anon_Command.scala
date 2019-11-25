@@ -12,7 +12,7 @@ trait Anon_Command extends js.Object {
 object Anon_Command {
   @scala.inline
   def apply(Command: Double, Enable: Boolean): Anon_Command = {
-    val __obj = js.Dynamic.literal(Command = Command, Enable = Enable)
+    val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], Enable = Enable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Command]
   }

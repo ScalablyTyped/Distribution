@@ -25,7 +25,7 @@ object ValueType {
   ): ValueType = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), test = js.Any.fromFunction1(test))
     if (createTransformer != null) __obj.updateDynamic("createTransformer")(js.Any.fromFunction1(createTransformer))
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (getAnimatableNone != null) __obj.updateDynamic("getAnimatableNone")(js.Any.fromFunction1(getAnimatableNone))
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[ValueType]

@@ -30,14 +30,14 @@ object CardMediaProps {
     style: CSSProperties = null
   ): CardMediaProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
-    if (mediaStyle != null) __obj.updateDynamic("mediaStyle")(mediaStyle)
+    if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
+    if (mediaStyle != null) __obj.updateDynamic("mediaStyle")(mediaStyle.asInstanceOf[js.Any])
     if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (overlayContainerStyle != null) __obj.updateDynamic("overlayContainerStyle")(overlayContainerStyle)
-    if (overlayContentStyle != null) __obj.updateDynamic("overlayContentStyle")(overlayContentStyle)
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (overlayContainerStyle != null) __obj.updateDynamic("overlayContainerStyle")(overlayContainerStyle.asInstanceOf[js.Any])
+    if (overlayContentStyle != null) __obj.updateDynamic("overlayContentStyle")(overlayContentStyle.asInstanceOf[js.Any])
+    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardMediaProps]
   }
 }

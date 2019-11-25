@@ -14,7 +14,7 @@ trait Anon_ContainerStyle extends js.Object {
 object Anon_ContainerStyle {
   @scala.inline
   def apply(containerStyle: CSSProperties, cropAreaStyle: CSSProperties, imageStyle: CSSProperties): Anon_ContainerStyle = {
-    val __obj = js.Dynamic.literal(containerStyle = containerStyle, cropAreaStyle = cropAreaStyle, imageStyle = imageStyle)
+    val __obj = js.Dynamic.literal(containerStyle = containerStyle.asInstanceOf[js.Any], cropAreaStyle = cropAreaStyle.asInstanceOf[js.Any], imageStyle = imageStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContainerStyle]
   }

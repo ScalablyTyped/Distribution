@@ -14,8 +14,8 @@ trait NormalizationLocalArgumentDefinition extends js.Object {
 object NormalizationLocalArgumentDefinition {
   @scala.inline
   def apply(defaultValue: js.Any, kind: String, name: String, `type`: String): NormalizationLocalArgumentDefinition = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, kind = kind, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationLocalArgumentDefinition]
   }
 }

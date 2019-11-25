@@ -14,8 +14,8 @@ object LargeObjectManagerSettings {
   @scala.inline
   def apply(pg: Client = null, pgPromise: js.Object = null): LargeObjectManagerSettings = {
     val __obj = js.Dynamic.literal()
-    if (pg != null) __obj.updateDynamic("pg")(pg)
-    if (pgPromise != null) __obj.updateDynamic("pgPromise")(pgPromise)
+    if (pg != null) __obj.updateDynamic("pg")(pg.asInstanceOf[js.Any])
+    if (pgPromise != null) __obj.updateDynamic("pgPromise")(pgPromise.asInstanceOf[js.Any])
     __obj.asInstanceOf[LargeObjectManagerSettings]
   }
 }

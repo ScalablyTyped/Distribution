@@ -13,8 +13,8 @@ object RTCIceGatherOptions {
   @scala.inline
   def apply(gatherPolicy: RTCIceGatherPolicy = null, iceservers: js.Array[RTCIceServer] = null): RTCIceGatherOptions = {
     val __obj = js.Dynamic.literal()
-    if (gatherPolicy != null) __obj.updateDynamic("gatherPolicy")(gatherPolicy)
-    if (iceservers != null) __obj.updateDynamic("iceservers")(iceservers)
+    if (gatherPolicy != null) __obj.updateDynamic("gatherPolicy")(gatherPolicy.asInstanceOf[js.Any])
+    if (iceservers != null) __obj.updateDynamic("iceservers")(iceservers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceGatherOptions]
   }
 }

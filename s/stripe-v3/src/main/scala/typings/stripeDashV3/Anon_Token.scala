@@ -15,7 +15,7 @@ trait Anon_Token extends js.Object {
 object Anon_Token {
   @scala.inline
   def apply(token: String): Anon_Token = {
-    val __obj = js.Dynamic.literal(token = token)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Token]
   }

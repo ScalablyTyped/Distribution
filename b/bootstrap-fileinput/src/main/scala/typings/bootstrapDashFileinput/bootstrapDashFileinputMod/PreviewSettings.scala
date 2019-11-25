@@ -29,14 +29,14 @@ object PreviewSettings {
     video: Anon_Height = null
   ): PreviewSettings = {
     val __obj = js.Dynamic.literal()
-    if (audio != null) __obj.updateDynamic("audio")(audio)
-    if (flash != null) __obj.updateDynamic("flash")(flash)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (other != null) __obj.updateDynamic("other")(other)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (video != null) __obj.updateDynamic("video")(video)
+    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
+    if (flash != null) __obj.updateDynamic("flash")(flash.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewSettings]
   }
 }

@@ -15,9 +15,9 @@ object SliderUIParams {
   @scala.inline
   def apply(handle: JQuery = null, value: Int | Double = null, values: js.Array[Double] = null): SliderUIParams = {
     val __obj = js.Dynamic.literal()
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderUIParams]
   }
 }

@@ -17,7 +17,7 @@ object Anon_Backward {
   def apply(clipDirection: backward | forward | closest = null, reversed: js.UndefOr[Boolean] = js.undefined): Anon_Backward = {
     val __obj = js.Dynamic.literal()
     if (clipDirection != null) __obj.updateDynamic("clipDirection")(clipDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Backward]
   }
 }

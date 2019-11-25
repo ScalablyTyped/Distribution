@@ -109,19 +109,19 @@ object WMSSublayerProperties {
     visible: js.UndefOr[Boolean] = js.undefined
   ): WMSSublayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
-    if (legendUrl != null) __obj.updateDynamic("legendUrl")(legendUrl)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
-    if (!js.isUndefined(queryable)) __obj.updateDynamic("queryable")(queryable)
-    if (spatialReferences != null) __obj.updateDynamic("spatialReferences")(spatialReferences)
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled.asInstanceOf[js.Any])
+    if (legendUrl != null) __obj.updateDynamic("legendUrl")(legendUrl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryable)) __obj.updateDynamic("queryable")(queryable.asInstanceOf[js.Any])
+    if (spatialReferences != null) __obj.updateDynamic("spatialReferences")(spatialReferences.asInstanceOf[js.Any])
     if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[WMSSublayerProperties]
   }
 }

@@ -19,8 +19,8 @@ object Anon_CancelEdit {
     cellContext: CellContext[K, D],
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_CancelEdit[K, D] = {
-    val __obj = js.Dynamic.literal(cancelEdit = cancelEdit, cellContext = cellContext)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(cancelEdit = cancelEdit.asInstanceOf[js.Any], cellContext = cellContext.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CancelEdit[K, D]]
   }
 }

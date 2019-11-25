@@ -22,10 +22,10 @@ object ConnectionOptions {
     timeout: Int | Double = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (connect != null) __obj.updateDynamic("connect")(connect)
-    if (!js.isUndefined(data_as_buffer)) __obj.updateDynamic("data_as_buffer")(data_as_buffer)
+    if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
+    if (!js.isUndefined(data_as_buffer)) __obj.updateDynamic("data_as_buffer")(data_as_buffer.asInstanceOf[js.Any])
     if (debug_level != null) __obj.updateDynamic("debug_level")(debug_level.asInstanceOf[js.Any])
-    if (!js.isUndefined(host_order_deterministic)) __obj.updateDynamic("host_order_deterministic")(host_order_deterministic)
+    if (!js.isUndefined(host_order_deterministic)) __obj.updateDynamic("host_order_deterministic")(host_order_deterministic.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }

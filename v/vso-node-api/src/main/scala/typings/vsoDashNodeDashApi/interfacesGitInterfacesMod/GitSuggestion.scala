@@ -19,8 +19,8 @@ trait GitSuggestion extends js.Object {
 object GitSuggestion {
   @scala.inline
   def apply(properties: StringDictionary[js.Any], `type`: String): GitSuggestion = {
-    val __obj = js.Dynamic.literal(properties = properties)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitSuggestion]
   }
 }

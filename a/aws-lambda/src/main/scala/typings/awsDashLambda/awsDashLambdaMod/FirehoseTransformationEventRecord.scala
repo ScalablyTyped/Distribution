@@ -20,8 +20,8 @@ object FirehoseTransformationEventRecord {
     recordId: String,
     kinesisRecordMetadata: FirehoseRecordMetadata = null
   ): FirehoseTransformationEventRecord = {
-    val __obj = js.Dynamic.literal(approximateArrivalTimestamp = approximateArrivalTimestamp, data = data, recordId = recordId)
-    if (kinesisRecordMetadata != null) __obj.updateDynamic("kinesisRecordMetadata")(kinesisRecordMetadata)
+    val __obj = js.Dynamic.literal(approximateArrivalTimestamp = approximateArrivalTimestamp.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], recordId = recordId.asInstanceOf[js.Any])
+    if (kinesisRecordMetadata != null) __obj.updateDynamic("kinesisRecordMetadata")(kinesisRecordMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseTransformationEventRecord]
   }
 }

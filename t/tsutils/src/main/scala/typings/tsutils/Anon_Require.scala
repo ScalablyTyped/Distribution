@@ -12,7 +12,7 @@ trait Anon_Require extends js.Object {
 object Anon_Require {
   @scala.inline
   def apply(text: require): Anon_Require = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Require]
   }

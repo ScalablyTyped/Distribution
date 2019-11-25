@@ -15,7 +15,7 @@ object SimpleValidatorConfig {
     message: String,
     validateIf: (js.Function1[/* context */ ValidatorContext, Boolean]) | Boolean = null
   ): SimpleValidatorConfig = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (validateIf != null) __obj.updateDynamic("validateIf")(validateIf.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleValidatorConfig]
   }

@@ -84,14 +84,14 @@ object IRenderDefinition {
     options: IRendererOptions = null,
     textures: js.Any = null
   ): IRenderDefinition = {
-    val __obj = js.Dynamic.literal(engine = engine)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (controller != null) __obj.updateDynamic("controller")(controller)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (textures != null) __obj.updateDynamic("textures")(textures)
+    val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (textures != null) __obj.updateDynamic("textures")(textures.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRenderDefinition]
   }
 }

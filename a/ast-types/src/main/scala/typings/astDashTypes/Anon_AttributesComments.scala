@@ -29,10 +29,10 @@ object Anon_AttributesComments {
     selfClosing: js.UndefOr[Boolean] = js.undefined
   ): Anon_AttributesComments = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(selfClosing)) __obj.updateDynamic("selfClosing")(selfClosing)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfClosing)) __obj.updateDynamic("selfClosing")(selfClosing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AttributesComments]
   }
 }

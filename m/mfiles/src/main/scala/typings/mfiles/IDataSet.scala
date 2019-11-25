@@ -13,7 +13,7 @@ trait IDataSet extends js.Object {
 object IDataSet {
   @scala.inline
   def apply(Clone: () => IDataSet, ID: Double, Name: String): IDataSet = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ID = ID, Name = Name)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDataSet]
   }

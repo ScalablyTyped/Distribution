@@ -19,8 +19,8 @@ object GetBLEDeviceCharacteristicsSuccess {
   @scala.inline
   def apply(characteristics: js.Array[GetBLEDeviceCharacteristicsSuccessData] = null, errMsg: String = null): GetBLEDeviceCharacteristicsSuccess = {
     val __obj = js.Dynamic.literal()
-    if (characteristics != null) __obj.updateDynamic("characteristics")(characteristics)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
+    if (characteristics != null) __obj.updateDynamic("characteristics")(characteristics.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsSuccess]
   }
 }

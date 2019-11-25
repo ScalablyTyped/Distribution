@@ -20,7 +20,7 @@ object OnNetworkStatusChangeSuccess {
   def apply(isConnected: Int | Double = null, networkType: String = null): OnNetworkStatusChangeSuccess = {
     val __obj = js.Dynamic.literal()
     if (isConnected != null) __obj.updateDynamic("isConnected")(isConnected.asInstanceOf[js.Any])
-    if (networkType != null) __obj.updateDynamic("networkType")(networkType)
+    if (networkType != null) __obj.updateDynamic("networkType")(networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnNetworkStatusChangeSuccess]
   }
 }

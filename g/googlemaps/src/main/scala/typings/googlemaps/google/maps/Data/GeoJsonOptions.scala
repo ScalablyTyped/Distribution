@@ -12,7 +12,7 @@ object GeoJsonOptions {
   @scala.inline
   def apply(idPropertyName: String = null): GeoJsonOptions = {
     val __obj = js.Dynamic.literal()
-    if (idPropertyName != null) __obj.updateDynamic("idPropertyName")(idPropertyName)
+    if (idPropertyName != null) __obj.updateDynamic("idPropertyName")(idPropertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJsonOptions]
   }
 }

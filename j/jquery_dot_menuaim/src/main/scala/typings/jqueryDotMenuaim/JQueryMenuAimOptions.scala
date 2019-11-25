@@ -65,9 +65,9 @@ object JQueryMenuAimOptions {
     if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction0(enter))
     if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction0(exit))
     if (exitMenu != null) __obj.updateDynamic("exitMenu")(js.Any.fromFunction0(exitMenu))
-    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector)
-    if (submenuDirection != null) __obj.updateDynamic("submenuDirection")(submenuDirection)
-    if (submenuSelector != null) __obj.updateDynamic("submenuSelector")(submenuSelector)
+    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector.asInstanceOf[js.Any])
+    if (submenuDirection != null) __obj.updateDynamic("submenuDirection")(submenuDirection.asInstanceOf[js.Any])
+    if (submenuSelector != null) __obj.updateDynamic("submenuSelector")(submenuSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryMenuAimOptions]
   }
 }

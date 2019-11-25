@@ -33,13 +33,13 @@ object LogUserEventRequest {
     url: String = null
   ): LogUserEventRequest = {
     val __obj = js.Dynamic.literal()
-    if (eventAction != null) __obj.updateDynamic("eventAction")(eventAction)
-    if (eventCategory != null) __obj.updateDynamic("eventCategory")(eventCategory)
-    if (eventDatas != null) __obj.updateDynamic("eventDatas")(eventDatas)
-    if (eventScope != null) __obj.updateDynamic("eventScope")(eventScope)
-    if (lead != null) __obj.updateDynamic("lead")(lead)
-    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (eventAction != null) __obj.updateDynamic("eventAction")(eventAction.asInstanceOf[js.Any])
+    if (eventCategory != null) __obj.updateDynamic("eventCategory")(eventCategory.asInstanceOf[js.Any])
+    if (eventDatas != null) __obj.updateDynamic("eventDatas")(eventDatas.asInstanceOf[js.Any])
+    if (eventScope != null) __obj.updateDynamic("eventScope")(eventScope.asInstanceOf[js.Any])
+    if (lead != null) __obj.updateDynamic("lead")(lead.asInstanceOf[js.Any])
+    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogUserEventRequest]
   }
 }

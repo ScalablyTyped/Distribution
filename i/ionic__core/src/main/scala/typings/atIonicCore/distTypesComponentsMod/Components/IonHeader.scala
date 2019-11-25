@@ -25,8 +25,8 @@ trait IonHeader extends js.Object {
 object IonHeader {
   @scala.inline
   def apply(translucent: Boolean, collapse: condense = null, mode: ios | md = null): IonHeader = {
-    val __obj = js.Dynamic.literal(translucent = translucent)
-    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    val __obj = js.Dynamic.literal(translucent = translucent.asInstanceOf[js.Any])
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonHeader]
   }

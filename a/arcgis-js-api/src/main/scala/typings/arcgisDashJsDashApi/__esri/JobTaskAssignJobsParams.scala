@@ -44,7 +44,7 @@ object JobTaskAssignJobsParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     user: String
   ): JobTaskAssignJobsParams = {
-    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobIds = jobIds, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo.asInstanceOf[js.Any], assignedType = assignedType.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobIds = jobIds.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobTaskAssignJobsParams]
   }

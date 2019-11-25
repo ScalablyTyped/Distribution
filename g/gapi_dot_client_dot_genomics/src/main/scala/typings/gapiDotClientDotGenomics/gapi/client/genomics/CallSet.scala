@@ -40,12 +40,12 @@ object CallSet {
     variantSetIds: js.Array[String] = null
   ): CallSet = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (sampleId != null) __obj.updateDynamic("sampleId")(sampleId)
-    if (variantSetIds != null) __obj.updateDynamic("variantSetIds")(variantSetIds)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sampleId != null) __obj.updateDynamic("sampleId")(sampleId.asInstanceOf[js.Any])
+    if (variantSetIds != null) __obj.updateDynamic("variantSetIds")(variantSetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallSet]
   }
 }

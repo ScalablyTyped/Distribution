@@ -18,7 +18,7 @@ trait Anon_BULK extends js.Object {
 object Anon_BULK {
   @scala.inline
   def apply(BULK: bulk, CONTROL: control, INTERRUPT: interrupt, ISOCHRONOUS: isochronous): Anon_BULK = {
-    val __obj = js.Dynamic.literal(BULK = BULK, CONTROL = CONTROL, INTERRUPT = INTERRUPT, ISOCHRONOUS = ISOCHRONOUS)
+    val __obj = js.Dynamic.literal(BULK = BULK.asInstanceOf[js.Any], CONTROL = CONTROL.asInstanceOf[js.Any], INTERRUPT = INTERRUPT.asInstanceOf[js.Any], ISOCHRONOUS = ISOCHRONOUS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BULK]
   }

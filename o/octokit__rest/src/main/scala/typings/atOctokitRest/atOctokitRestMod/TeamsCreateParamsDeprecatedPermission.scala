@@ -62,13 +62,13 @@ object TeamsCreateParamsDeprecatedPermission {
     privacy: secret | closed = null,
     repo_names: js.Array[String] = null
   ): TeamsCreateParamsDeprecatedPermission = {
-    val __obj = js.Dynamic.literal(name = name, org = org)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers.asInstanceOf[js.Any])
     if (parent_team_id != null) __obj.updateDynamic("parent_team_id")(parent_team_id.asInstanceOf[js.Any])
-    if (permission != null) __obj.updateDynamic("permission")(permission)
+    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     if (privacy != null) __obj.updateDynamic("privacy")(privacy.asInstanceOf[js.Any])
-    if (repo_names != null) __obj.updateDynamic("repo_names")(repo_names)
+    if (repo_names != null) __obj.updateDynamic("repo_names")(repo_names.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsCreateParamsDeprecatedPermission]
   }
 }

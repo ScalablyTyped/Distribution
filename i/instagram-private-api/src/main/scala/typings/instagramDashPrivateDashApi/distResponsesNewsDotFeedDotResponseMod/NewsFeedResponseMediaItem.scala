@@ -13,8 +13,8 @@ trait NewsFeedResponseMediaItem extends js.Object {
 object NewsFeedResponseMediaItem {
   @scala.inline
   def apply(id: String, image: String, comment_threading_enabled: js.UndefOr[Boolean] = js.undefined): NewsFeedResponseMediaItem = {
-    val __obj = js.Dynamic.literal(id = id, image = image)
-    if (!js.isUndefined(comment_threading_enabled)) __obj.updateDynamic("comment_threading_enabled")(comment_threading_enabled)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment_threading_enabled)) __obj.updateDynamic("comment_threading_enabled")(comment_threading_enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsFeedResponseMediaItem]
   }
 }

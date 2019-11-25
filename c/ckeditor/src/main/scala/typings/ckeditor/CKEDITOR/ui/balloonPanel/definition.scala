@@ -13,8 +13,8 @@ object definition {
   @scala.inline
   def apply(content: String = null, title: String = null): definition = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[definition]
   }
 }

@@ -24,10 +24,10 @@ object CardProps {
     prefixCls: String = null
   ): CardProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, CardPropsType)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (CardPropsType != null) js.Dynamic.global.Object.assign(__obj, CardPropsType)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardProps]
   }
 }

@@ -12,7 +12,7 @@ object EventActionEvent {
   @scala.inline
   def apply(emit: String = null): EventActionEvent = {
     val __obj = js.Dynamic.literal()
-    if (emit != null) __obj.updateDynamic("emit")(emit)
+    if (emit != null) __obj.updateDynamic("emit")(emit.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventActionEvent]
   }
 }

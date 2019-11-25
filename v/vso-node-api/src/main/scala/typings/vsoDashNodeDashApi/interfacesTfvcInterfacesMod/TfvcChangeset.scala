@@ -61,7 +61,7 @@ object TfvcChangeset {
     url: String,
     workItems: js.Array[AssociatedWorkItem]
   ): TfvcChangeset = {
-    val __obj = js.Dynamic.literal(_links = _links, accountId = accountId, author = author, changes = changes, changesetId = changesetId, checkedInBy = checkedInBy, checkinNotes = checkinNotes, collectionId = collectionId, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, hasMoreChanges = hasMoreChanges, policyOverride = policyOverride, teamProjectIds = teamProjectIds, url = url, workItems = workItems)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], accountId = accountId.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any], changesetId = changesetId.asInstanceOf[js.Any], checkedInBy = checkedInBy.asInstanceOf[js.Any], checkinNotes = checkinNotes.asInstanceOf[js.Any], collectionId = collectionId.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], commentTruncated = commentTruncated.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], hasMoreChanges = hasMoreChanges.asInstanceOf[js.Any], policyOverride = policyOverride.asInstanceOf[js.Any], teamProjectIds = teamProjectIds.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], workItems = workItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcChangeset]
   }

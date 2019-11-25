@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 class ComputedProperty[Get, Set] ()
   extends typings.atEmberObject.computedMod.ComputedProperty[Get, Set] {
   /* CompleteClass */
-  override def apply(T0: /* target */ js.Object, T1: /* propertyKey */ String | js.Symbol): Unit = js.native
+  override def apply(T0: /* target */ js.Object, T1: /* propertyKey */ java.lang.String | js.Symbol): Unit = js.native
 }
 

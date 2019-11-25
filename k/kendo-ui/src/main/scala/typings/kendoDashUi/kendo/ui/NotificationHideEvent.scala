@@ -17,8 +17,8 @@ object NotificationHideEvent {
     sender: Notification,
     element: JQuery = null
   ): NotificationHideEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (element != null) __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationHideEvent]
   }
 }

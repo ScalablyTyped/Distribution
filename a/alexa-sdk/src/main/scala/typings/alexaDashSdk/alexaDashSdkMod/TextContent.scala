@@ -14,9 +14,9 @@ object TextContent {
   @scala.inline
   def apply(primaryText: TextField = null, secondaryText: TextField = null, tertiaryText: TextField = null): TextContent = {
     val __obj = js.Dynamic.literal()
-    if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText)
-    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText)
-    if (tertiaryText != null) __obj.updateDynamic("tertiaryText")(tertiaryText)
+    if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
+    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
+    if (tertiaryText != null) __obj.updateDynamic("tertiaryText")(tertiaryText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextContent]
   }
 }

@@ -13,7 +13,7 @@ object ResourceAccessControl {
   @scala.inline
   def apply(gcpIamPolicy: String = null): ResourceAccessControl = {
     val __obj = js.Dynamic.literal()
-    if (gcpIamPolicy != null) __obj.updateDynamic("gcpIamPolicy")(gcpIamPolicy)
+    if (gcpIamPolicy != null) __obj.updateDynamic("gcpIamPolicy")(gcpIamPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceAccessControl]
   }
 }

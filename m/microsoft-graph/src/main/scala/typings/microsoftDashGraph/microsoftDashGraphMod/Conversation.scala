@@ -34,13 +34,13 @@ object Conversation {
     uniqueSenders: js.Array[String] = null
   ): Conversation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasAttachments)) __obj.updateDynamic("hasAttachments")(hasAttachments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastDeliveredDateTime != null) __obj.updateDynamic("lastDeliveredDateTime")(lastDeliveredDateTime)
-    if (preview != null) __obj.updateDynamic("preview")(preview)
-    if (threads != null) __obj.updateDynamic("threads")(threads)
-    if (topic != null) __obj.updateDynamic("topic")(topic)
-    if (uniqueSenders != null) __obj.updateDynamic("uniqueSenders")(uniqueSenders)
+    if (!js.isUndefined(hasAttachments)) __obj.updateDynamic("hasAttachments")(hasAttachments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastDeliveredDateTime != null) __obj.updateDynamic("lastDeliveredDateTime")(lastDeliveredDateTime.asInstanceOf[js.Any])
+    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
+    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    if (uniqueSenders != null) __obj.updateDynamic("uniqueSenders")(uniqueSenders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conversation]
   }
 }

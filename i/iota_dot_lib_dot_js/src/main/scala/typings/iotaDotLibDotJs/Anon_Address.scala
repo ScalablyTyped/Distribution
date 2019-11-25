@@ -15,9 +15,9 @@ object Anon_Address {
   @scala.inline
   def apply(address: String = null, inputs: js.Array[String] = null, security: Security = null): Anon_Address = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (security != null) __obj.updateDynamic("security")(security)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Address]
   }
 }

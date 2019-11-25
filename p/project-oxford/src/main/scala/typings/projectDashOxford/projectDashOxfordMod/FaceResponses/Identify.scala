@@ -13,7 +13,7 @@ trait Identify extends js.Object {
 object Identify {
   @scala.inline
   def apply(candidates: js.Array[Anon_Confidence], faceId: String): Identify = {
-    val __obj = js.Dynamic.literal(candidates = candidates, faceId = faceId)
+    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], faceId = faceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Identify]
   }

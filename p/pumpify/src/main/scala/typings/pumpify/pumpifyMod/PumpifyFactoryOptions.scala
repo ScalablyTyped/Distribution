@@ -14,7 +14,7 @@ trait PumpifyFactoryOptions extends js.Object {
 object PumpifyFactoryOptions {
   @scala.inline
   def apply(autoDestroy: Boolean, destroy: Boolean, highWaterMark: Double, objectMode: Boolean): PumpifyFactoryOptions = {
-    val __obj = js.Dynamic.literal(autoDestroy = autoDestroy, destroy = destroy, highWaterMark = highWaterMark, objectMode = objectMode)
+    val __obj = js.Dynamic.literal(autoDestroy = autoDestroy.asInstanceOf[js.Any], destroy = destroy.asInstanceOf[js.Any], highWaterMark = highWaterMark.asInstanceOf[js.Any], objectMode = objectMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PumpifyFactoryOptions]
   }

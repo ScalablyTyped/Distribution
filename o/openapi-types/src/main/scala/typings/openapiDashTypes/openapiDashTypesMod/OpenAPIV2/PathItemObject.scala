@@ -33,16 +33,16 @@ object PathItemObject {
     put: OperationObject = null
   ): PathItemObject = {
     val __obj = js.Dynamic.literal()
-    if ($ref != null) __obj.updateDynamic("$ref")($ref)
-    if (del != null) __obj.updateDynamic("del")(del)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (get != null) __obj.updateDynamic("get")(get)
-    if (head != null) __obj.updateDynamic("head")(head)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (patch != null) __obj.updateDynamic("patch")(patch)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (put != null) __obj.updateDynamic("put")(put)
+    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
+    if (del != null) __obj.updateDynamic("del")(del.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (get != null) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathItemObject]
   }
 }

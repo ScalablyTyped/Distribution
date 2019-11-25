@@ -28,14 +28,14 @@ object SpreadsheetDefaultCellStyle {
     wrap: js.UndefOr[Boolean] = js.undefined
   ): SpreadsheetDefaultCellStyle = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Italic)) __obj.updateDynamic("Italic")(Italic)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline)
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)
+    if (!js.isUndefined(Italic)) __obj.updateDynamic("Italic")(Italic.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetDefaultCellStyle]
   }
 }

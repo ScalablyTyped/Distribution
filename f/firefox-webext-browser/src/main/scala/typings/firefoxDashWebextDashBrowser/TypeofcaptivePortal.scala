@@ -33,7 +33,7 @@ object TypeofcaptivePortal {
     onConnectivityAvailable: WebExtEvent[js.Function1[/* status */ _Status, Unit]],
     onStateChanged: WebExtEvent[js.Function1[/* details */ Anon_State, Unit]]
   ): TypeofcaptivePortal = {
-    val __obj = js.Dynamic.literal(getLastChecked = js.Any.fromFunction0(getLastChecked), getState = js.Any.fromFunction0(getState), onConnectivityAvailable = onConnectivityAvailable, onStateChanged = onStateChanged)
+    val __obj = js.Dynamic.literal(getLastChecked = js.Any.fromFunction0(getLastChecked), getState = js.Any.fromFunction0(getState), onConnectivityAvailable = onConnectivityAvailable.asInstanceOf[js.Any], onStateChanged = onStateChanged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofcaptivePortal]
   }

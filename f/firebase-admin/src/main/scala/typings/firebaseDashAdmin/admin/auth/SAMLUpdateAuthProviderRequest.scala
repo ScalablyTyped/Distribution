@@ -59,13 +59,13 @@ object SAMLUpdateAuthProviderRequest {
     x509Certificates: js.Array[String] = null
   ): SAMLUpdateAuthProviderRequest = {
     val __obj = js.Dynamic.literal()
-    if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (idpEntityId != null) __obj.updateDynamic("idpEntityId")(idpEntityId)
-    if (rpEntityId != null) __obj.updateDynamic("rpEntityId")(rpEntityId)
-    if (ssoURL != null) __obj.updateDynamic("ssoURL")(ssoURL)
-    if (x509Certificates != null) __obj.updateDynamic("x509Certificates")(x509Certificates)
+    if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (idpEntityId != null) __obj.updateDynamic("idpEntityId")(idpEntityId.asInstanceOf[js.Any])
+    if (rpEntityId != null) __obj.updateDynamic("rpEntityId")(rpEntityId.asInstanceOf[js.Any])
+    if (ssoURL != null) __obj.updateDynamic("ssoURL")(ssoURL.asInstanceOf[js.Any])
+    if (x509Certificates != null) __obj.updateDynamic("x509Certificates")(x509Certificates.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAMLUpdateAuthProviderRequest]
   }
 }

@@ -12,8 +12,8 @@ trait IsReadyToPayResponse extends js.Object {
 object IsReadyToPayResponse {
   @scala.inline
   def apply(result: Boolean, paymentMethodPresent: js.UndefOr[Boolean] = js.undefined): IsReadyToPayResponse = {
-    val __obj = js.Dynamic.literal(result = result)
-    if (!js.isUndefined(paymentMethodPresent)) __obj.updateDynamic("paymentMethodPresent")(paymentMethodPresent)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+    if (!js.isUndefined(paymentMethodPresent)) __obj.updateDynamic("paymentMethodPresent")(paymentMethodPresent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsReadyToPayResponse]
   }
 }

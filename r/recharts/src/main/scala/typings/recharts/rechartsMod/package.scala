@@ -46,7 +46,7 @@ package object rechartsMod {
   type LabelFormatter = js.Function1[/* label */ String | Double, ReactNode]
   type LegendValueFormatter = js.Function3[
     /* value */ js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
     ], 
     /* entry */ js.UndefOr[LegendPayload], 
     /* i */ js.UndefOr[Double], 

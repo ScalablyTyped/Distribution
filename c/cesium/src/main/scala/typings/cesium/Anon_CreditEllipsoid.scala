@@ -26,12 +26,12 @@ object Anon_CreditEllipsoid {
     requestVertexNormals: js.UndefOr[Boolean] = js.undefined,
     requestWaterMask: js.UndefOr[Boolean] = js.undefined
   ): Anon_CreditEllipsoid = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (!js.isUndefined(requestVertexNormals)) __obj.updateDynamic("requestVertexNormals")(requestVertexNormals)
-    if (!js.isUndefined(requestWaterMask)) __obj.updateDynamic("requestWaterMask")(requestWaterMask)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestVertexNormals)) __obj.updateDynamic("requestVertexNormals")(requestVertexNormals.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestWaterMask)) __obj.updateDynamic("requestWaterMask")(requestWaterMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreditEllipsoid]
   }
 }

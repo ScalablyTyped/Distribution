@@ -35,8 +35,8 @@ object cssClasses {
     ROOT: `mdc-drawer`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(ANIMATE = ANIMATE, CLOSING = CLOSING, DISMISSIBLE = DISMISSIBLE, MODAL = MODAL, OPEN = OPEN, OPENING = OPENING, ROOT = ROOT)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ANIMATE = ANIMATE.asInstanceOf[js.Any], CLOSING = CLOSING.asInstanceOf[js.Any], DISMISSIBLE = DISMISSIBLE.asInstanceOf[js.Any], MODAL = MODAL.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any], OPENING = OPENING.asInstanceOf[js.Any], ROOT = ROOT.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

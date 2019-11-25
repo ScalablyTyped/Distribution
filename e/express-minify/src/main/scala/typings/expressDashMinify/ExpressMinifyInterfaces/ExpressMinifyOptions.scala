@@ -70,16 +70,16 @@ object ExpressMinifyOptions {
   ): ExpressMinifyOptions = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (coffee_match != null) __obj.updateDynamic("coffee_match")(coffee_match)
-    if (css_match != null) __obj.updateDynamic("css_match")(css_match)
-    if (cssmin != null) __obj.updateDynamic("cssmin")(cssmin)
-    if (js_match != null) __obj.updateDynamic("js_match")(js_match)
-    if (json_match != null) __obj.updateDynamic("json_match")(json_match)
-    if (less_match != null) __obj.updateDynamic("less_match")(less_match)
-    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
-    if (sass_match != null) __obj.updateDynamic("sass_match")(sass_match)
-    if (stylus_match != null) __obj.updateDynamic("stylus_match")(stylus_match)
-    if (uglifyJS != null) __obj.updateDynamic("uglifyJS")(uglifyJS)
+    if (coffee_match != null) __obj.updateDynamic("coffee_match")(coffee_match.asInstanceOf[js.Any])
+    if (css_match != null) __obj.updateDynamic("css_match")(css_match.asInstanceOf[js.Any])
+    if (cssmin != null) __obj.updateDynamic("cssmin")(cssmin.asInstanceOf[js.Any])
+    if (js_match != null) __obj.updateDynamic("js_match")(js_match.asInstanceOf[js.Any])
+    if (json_match != null) __obj.updateDynamic("json_match")(json_match.asInstanceOf[js.Any])
+    if (less_match != null) __obj.updateDynamic("less_match")(less_match.asInstanceOf[js.Any])
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror.asInstanceOf[js.Any])
+    if (sass_match != null) __obj.updateDynamic("sass_match")(sass_match.asInstanceOf[js.Any])
+    if (stylus_match != null) __obj.updateDynamic("stylus_match")(stylus_match.asInstanceOf[js.Any])
+    if (uglifyJS != null) __obj.updateDynamic("uglifyJS")(uglifyJS.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressMinifyOptions]
   }
 }

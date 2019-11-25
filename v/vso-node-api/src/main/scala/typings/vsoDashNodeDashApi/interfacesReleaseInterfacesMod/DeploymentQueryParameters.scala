@@ -44,7 +44,7 @@ object DeploymentQueryParameters {
     queryType: DeploymentsQueryType,
     sourceBranch: String
   ): DeploymentQueryParameters = {
-    val __obj = js.Dynamic.literal(artifactSourceId = artifactSourceId, artifactTypeId = artifactTypeId, artifactVersions = artifactVersions, deploymentStatus = deploymentStatus, deploymentsPerEnvironment = deploymentsPerEnvironment, environments = environments, expands = expands, isDeleted = isDeleted, latestDeploymentsOnly = latestDeploymentsOnly, maxDeploymentsPerEnvironment = maxDeploymentsPerEnvironment, maxModifiedTime = maxModifiedTime, minModifiedTime = minModifiedTime, operationStatus = operationStatus, queryOrder = queryOrder, queryType = queryType, sourceBranch = sourceBranch)
+    val __obj = js.Dynamic.literal(artifactSourceId = artifactSourceId.asInstanceOf[js.Any], artifactTypeId = artifactTypeId.asInstanceOf[js.Any], artifactVersions = artifactVersions.asInstanceOf[js.Any], deploymentStatus = deploymentStatus.asInstanceOf[js.Any], deploymentsPerEnvironment = deploymentsPerEnvironment.asInstanceOf[js.Any], environments = environments.asInstanceOf[js.Any], expands = expands.asInstanceOf[js.Any], isDeleted = isDeleted.asInstanceOf[js.Any], latestDeploymentsOnly = latestDeploymentsOnly.asInstanceOf[js.Any], maxDeploymentsPerEnvironment = maxDeploymentsPerEnvironment.asInstanceOf[js.Any], maxModifiedTime = maxModifiedTime.asInstanceOf[js.Any], minModifiedTime = minModifiedTime.asInstanceOf[js.Any], operationStatus = operationStatus.asInstanceOf[js.Any], queryOrder = queryOrder.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], sourceBranch = sourceBranch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeploymentQueryParameters]
   }

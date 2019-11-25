@@ -21,9 +21,9 @@ object PublisherProvidedForecast {
     weeklyUniques: String = null
   ): PublisherProvidedForecast = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (weeklyImpressions != null) __obj.updateDynamic("weeklyImpressions")(weeklyImpressions)
-    if (weeklyUniques != null) __obj.updateDynamic("weeklyUniques")(weeklyUniques)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (weeklyImpressions != null) __obj.updateDynamic("weeklyImpressions")(weeklyImpressions.asInstanceOf[js.Any])
+    if (weeklyUniques != null) __obj.updateDynamic("weeklyUniques")(weeklyUniques.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherProvidedForecast]
   }
 }

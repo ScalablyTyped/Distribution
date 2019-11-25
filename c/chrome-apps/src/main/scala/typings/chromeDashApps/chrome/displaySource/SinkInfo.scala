@@ -30,7 +30,7 @@ object SinkInfo {
     name: String,
     state: ToStringLiteral[Anon_CONNECTED, String, Exclude[String, Connected | Connecting | Disconnected]]
   ): SinkInfo = {
-    val __obj = js.Dynamic.literal(id = id, name = name, state = state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SinkInfo]
   }

@@ -19,9 +19,9 @@ object Anon_CreateClass {
     outputClassName: String = null
   ): Anon_CreateClass = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(createClass)) __obj.updateDynamic("createClass")(createClass)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (outputClassName != null) __obj.updateDynamic("outputClassName")(outputClassName)
+    if (!js.isUndefined(createClass)) __obj.updateDynamic("createClass")(createClass.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (outputClassName != null) __obj.updateDynamic("outputClassName")(outputClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreateClass]
   }
 }

@@ -19,10 +19,10 @@ object TrackViewModelProperties {
     view: MapViewProperties | SceneViewProperties = null
   ): TrackViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (geolocationOptions != null) __obj.updateDynamic("geolocationOptions")(geolocationOptions)
-    if (!js.isUndefined(goToLocationEnabled)) __obj.updateDynamic("goToLocationEnabled")(goToLocationEnabled)
+    if (geolocationOptions != null) __obj.updateDynamic("geolocationOptions")(geolocationOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(goToLocationEnabled)) __obj.updateDynamic("goToLocationEnabled")(goToLocationEnabled.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
-    if (graphic != null) __obj.updateDynamic("graphic")(graphic)
+    if (graphic != null) __obj.updateDynamic("graphic")(graphic.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackViewModelProperties]

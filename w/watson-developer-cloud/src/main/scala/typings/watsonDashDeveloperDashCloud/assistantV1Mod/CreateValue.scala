@@ -33,13 +33,13 @@ object CreateValue {
     updated: String = null,
     value_type: String = null
   ): CreateValue = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (patterns != null) __obj.updateDynamic("patterns")(patterns)
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (value_type != null) __obj.updateDynamic("value_type")(value_type)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
+    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (value_type != null) __obj.updateDynamic("value_type")(value_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateValue]
   }
 }

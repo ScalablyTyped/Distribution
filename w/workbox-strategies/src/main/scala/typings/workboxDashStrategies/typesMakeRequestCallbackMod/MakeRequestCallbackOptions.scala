@@ -19,7 +19,7 @@ object MakeRequestCallbackOptions {
     event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any = null
   ): MakeRequestCallbackOptions = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeRequestCallbackOptions]
   }
 }

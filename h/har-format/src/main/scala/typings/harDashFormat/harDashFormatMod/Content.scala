@@ -57,11 +57,11 @@ object Content {
     encoding: String = null,
     text: String = null
   ): Content = {
-    val __obj = js.Dynamic.literal(mimeType = mimeType, size = size)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
 }

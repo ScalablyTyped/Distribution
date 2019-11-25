@@ -13,8 +13,8 @@ object DOMDefinition {
   @scala.inline
   def apply(interactive: js.UndefOr[Boolean] = js.undefined, reserved: js.UndefOr[Boolean] = js.undefined): DOMDefinition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
-    if (!js.isUndefined(reserved)) __obj.updateDynamic("reserved")(reserved)
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
+    if (!js.isUndefined(reserved)) __obj.updateDynamic("reserved")(reserved.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMDefinition]
   }
 }

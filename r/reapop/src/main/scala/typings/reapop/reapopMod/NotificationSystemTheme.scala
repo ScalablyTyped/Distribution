@@ -26,10 +26,10 @@ object NotificationSystemTheme {
     smallScreenMin: Int | Double = null
   ): NotificationSystemTheme = {
     val __obj = js.Dynamic.literal()
-    if (notificationClassName != null) __obj.updateDynamic("notificationClassName")(notificationClassName)
-    if (notificationsContainerClassName != null) __obj.updateDynamic("notificationsContainerClassName")(notificationsContainerClassName)
-    if (notificationsContainerTransition != null) __obj.updateDynamic("notificationsContainerTransition")(notificationsContainerTransition)
-    if (notificationsSystem != null) __obj.updateDynamic("notificationsSystem")(notificationsSystem)
+    if (notificationClassName != null) __obj.updateDynamic("notificationClassName")(notificationClassName.asInstanceOf[js.Any])
+    if (notificationsContainerClassName != null) __obj.updateDynamic("notificationsContainerClassName")(notificationsContainerClassName.asInstanceOf[js.Any])
+    if (notificationsContainerTransition != null) __obj.updateDynamic("notificationsContainerTransition")(notificationsContainerTransition.asInstanceOf[js.Any])
+    if (notificationsSystem != null) __obj.updateDynamic("notificationsSystem")(notificationsSystem.asInstanceOf[js.Any])
     if (smallScreenMin != null) __obj.updateDynamic("smallScreenMin")(smallScreenMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationSystemTheme]
   }

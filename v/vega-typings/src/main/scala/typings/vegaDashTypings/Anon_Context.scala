@@ -23,8 +23,8 @@ object Anon_Context {
     width: Double,
     stroke: String = null
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal(context = context, height = height, items = items, width = width)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context]
   }
 }

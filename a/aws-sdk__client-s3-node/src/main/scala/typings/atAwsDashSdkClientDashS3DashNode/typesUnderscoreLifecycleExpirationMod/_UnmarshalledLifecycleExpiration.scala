@@ -21,9 +21,9 @@ object _UnmarshalledLifecycleExpiration {
     ExpiredObjectDeleteMarker: js.UndefOr[Boolean] = js.undefined
   ): _UnmarshalledLifecycleExpiration = {
     val __obj = js.Dynamic.literal()
-    if (Date != null) __obj.updateDynamic("Date")(Date)
+    if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
     if (Days != null) __obj.updateDynamic("Days")(Days.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExpiredObjectDeleteMarker)) __obj.updateDynamic("ExpiredObjectDeleteMarker")(ExpiredObjectDeleteMarker)
+    if (!js.isUndefined(ExpiredObjectDeleteMarker)) __obj.updateDynamic("ExpiredObjectDeleteMarker")(ExpiredObjectDeleteMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledLifecycleExpiration]
   }
 }

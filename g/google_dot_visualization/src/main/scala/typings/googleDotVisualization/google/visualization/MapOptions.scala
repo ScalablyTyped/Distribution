@@ -36,17 +36,17 @@ object MapOptions {
     useMapTypeControl: js.UndefOr[Boolean] = js.undefined,
     zoomLevel: Int | Double = null
   ): MapOptions = {
-    val __obj = js.Dynamic.literal(maps = maps)
-    if (!js.isUndefined(enableScrollWheel)) __obj.updateDynamic("enableScrollWheel")(enableScrollWheel)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    val __obj = js.Dynamic.literal(maps = maps.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableScrollWheel)) __obj.updateDynamic("enableScrollWheel")(enableScrollWheel.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (mapType != null) __obj.updateDynamic("mapType")(mapType)
-    if (mapTypeIds != null) __obj.updateDynamic("mapTypeIds")(mapTypeIds)
-    if (!js.isUndefined(showInfoWindow)) __obj.updateDynamic("showInfoWindow")(showInfoWindow)
-    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine)
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
-    if (!js.isUndefined(useMapTypeControl)) __obj.updateDynamic("useMapTypeControl")(useMapTypeControl)
+    if (mapType != null) __obj.updateDynamic("mapType")(mapType.asInstanceOf[js.Any])
+    if (mapTypeIds != null) __obj.updateDynamic("mapTypeIds")(mapTypeIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInfoWindow)) __obj.updateDynamic("showInfoWindow")(showInfoWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMapTypeControl)) __obj.updateDynamic("useMapTypeControl")(useMapTypeControl.asInstanceOf[js.Any])
     if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }

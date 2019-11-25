@@ -113,21 +113,21 @@ object SpeedDialProps {
     style: CSSProperties = null,
     transitionDuration: Double | Anon_Appear = null
   ): SpeedDialProps = {
-    val __obj = js.Dynamic.literal(ariaLabel = ariaLabel, open = open)
-    if (FabProps != null) __obj.updateDynamic("FabProps")(FabProps)
+    val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
+    if (FabProps != null) __obj.updateDynamic("FabProps")(FabProps.asInstanceOf[js.Any])
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])
-    if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)
+    if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))
     if (openIcon != null) __obj.updateDynamic("openIcon")(openIcon.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeedDialProps]
   }

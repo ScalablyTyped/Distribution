@@ -27,10 +27,10 @@ object Anon_AlignDisabledHours {
     disabledMinutes: js.UndefOr[scala.Nothing] = js.undefined,
     disabledSeconds: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_AlignDisabledHours = {
-    val __obj = js.Dynamic.literal(align = align, focusOnOpen = focusOnOpen, hideDisabledOptions = hideDisabledOptions, placement = placement, transitionName = transitionName)
-    if (!js.isUndefined(disabledHours)) __obj.updateDynamic("disabledHours")(disabledHours)
-    if (!js.isUndefined(disabledMinutes)) __obj.updateDynamic("disabledMinutes")(disabledMinutes)
-    if (!js.isUndefined(disabledSeconds)) __obj.updateDynamic("disabledSeconds")(disabledSeconds)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], focusOnOpen = focusOnOpen.asInstanceOf[js.Any], hideDisabledOptions = hideDisabledOptions.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabledHours)) __obj.updateDynamic("disabledHours")(disabledHours.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabledMinutes)) __obj.updateDynamic("disabledMinutes")(disabledMinutes.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabledSeconds)) __obj.updateDynamic("disabledSeconds")(disabledSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlignDisabledHours]
   }
 }

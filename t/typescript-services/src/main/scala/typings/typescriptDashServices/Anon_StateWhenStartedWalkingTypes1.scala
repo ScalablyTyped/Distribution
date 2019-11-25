@@ -16,7 +16,7 @@ object Anon_StateWhenStartedWalkingTypes1 {
     stateWhenStartedWalkingTypes1: EnclosingTypeWalkerState,
     stateWhenStartedWalkingTypes2: EnclosingTypeWalkerState
   ): Anon_StateWhenStartedWalkingTypes1 = {
-    val __obj = js.Dynamic.literal(stateWhenStartedWalkingTypes1 = stateWhenStartedWalkingTypes1, stateWhenStartedWalkingTypes2 = stateWhenStartedWalkingTypes2)
+    val __obj = js.Dynamic.literal(stateWhenStartedWalkingTypes1 = stateWhenStartedWalkingTypes1.asInstanceOf[js.Any], stateWhenStartedWalkingTypes2 = stateWhenStartedWalkingTypes2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_StateWhenStartedWalkingTypes1]
   }

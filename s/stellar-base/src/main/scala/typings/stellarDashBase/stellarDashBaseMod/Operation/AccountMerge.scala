@@ -16,9 +16,9 @@ object AccountMerge {
     `type`: typings.stellarDashBase.stellarDashBaseMod.OperationType.AccountMerge,
     source: String = null
   ): AccountMerge = {
-    val __obj = js.Dynamic.literal(destination = destination)
-    __obj.updateDynamic("type")(`type`)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountMerge]
   }
 }

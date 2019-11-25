@@ -11,7 +11,7 @@ trait TagParam extends js.Object {
 object TagParam {
   @scala.inline
   def apply(str: String): TagParam = {
-    val __obj = js.Dynamic.literal(str = str)
+    val __obj = js.Dynamic.literal(str = str.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagParam]
   }

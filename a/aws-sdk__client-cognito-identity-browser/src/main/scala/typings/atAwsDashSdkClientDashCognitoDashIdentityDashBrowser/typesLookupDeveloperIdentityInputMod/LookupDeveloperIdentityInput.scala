@@ -59,14 +59,14 @@ object LookupDeveloperIdentityInput {
     MaxResults: Int | Double = null,
     NextToken: String = null
   ): LookupDeveloperIdentityInput = {
-    val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (DeveloperUserIdentifier != null) __obj.updateDynamic("DeveloperUserIdentifier")(DeveloperUserIdentifier)
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
+    if (DeveloperUserIdentifier != null) __obj.updateDynamic("DeveloperUserIdentifier")(DeveloperUserIdentifier.asInstanceOf[js.Any])
+    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupDeveloperIdentityInput]
   }
 }

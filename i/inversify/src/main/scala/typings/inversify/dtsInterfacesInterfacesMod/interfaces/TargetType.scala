@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait TargetType extends js.Object
 
+object TargetType {
+  @scala.inline
+  def ClassProperty: typings.inversify.inversifyStrings.ClassProperty = this.cast("ClassProperty")
+  @scala.inline
+  def ConstructorArgument: typings.inversify.inversifyStrings.ConstructorArgument = this.cast("ConstructorArgument")
+  @scala.inline
+  def Variable: typings.inversify.inversifyStrings.Variable = this.cast("Variable")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -12,7 +12,7 @@ object EncryptionConfiguration {
   @scala.inline
   def apply(kmsKeyName: String = null): EncryptionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)
+    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionConfiguration]
   }
 }

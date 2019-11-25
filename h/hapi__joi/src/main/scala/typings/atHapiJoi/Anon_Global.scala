@@ -29,9 +29,9 @@ object Anon_Global {
   @scala.inline
   def apply(global: String = null, local: String = null, root: String = null): Anon_Global = {
     val __obj = js.Dynamic.literal()
-    if (global != null) __obj.updateDynamic("global")(global)
-    if (local != null) __obj.updateDynamic("local")(local)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Global]
   }
 }

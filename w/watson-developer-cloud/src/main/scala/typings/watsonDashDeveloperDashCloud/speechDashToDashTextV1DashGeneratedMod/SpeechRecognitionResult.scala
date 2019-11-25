@@ -24,9 +24,9 @@ object SpeechRecognitionResult {
     keywords_result: js.Object = null,
     word_alternatives: js.Array[WordAlternativeResults] = null
   ): SpeechRecognitionResult = {
-    val __obj = js.Dynamic.literal(alternatives = alternatives, final_results = final_results)
-    if (keywords_result != null) __obj.updateDynamic("keywords_result")(keywords_result)
-    if (word_alternatives != null) __obj.updateDynamic("word_alternatives")(word_alternatives)
+    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], final_results = final_results.asInstanceOf[js.Any])
+    if (keywords_result != null) __obj.updateDynamic("keywords_result")(keywords_result.asInstanceOf[js.Any])
+    if (word_alternatives != null) __obj.updateDynamic("word_alternatives")(word_alternatives.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionResult]
   }
 }

@@ -26,7 +26,7 @@ trait ScrollToOptions
 object ScrollToOptions {
   @scala.inline
   def apply(duration: Double, easing: swing | linear, log: Boolean, timeout: Double): ScrollToOptions = {
-    val __obj = js.Dynamic.literal(duration = duration, easing = easing.asInstanceOf[js.Any], log = log, timeout = timeout)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScrollToOptions]
   }

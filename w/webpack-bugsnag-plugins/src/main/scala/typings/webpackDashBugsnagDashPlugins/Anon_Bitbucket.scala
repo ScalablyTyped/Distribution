@@ -33,7 +33,7 @@ object Anon_Bitbucket {
     repository: String,
     revision: String
   ): Anon_Bitbucket = {
-    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], repository = repository, revision = revision)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bitbucket]
   }

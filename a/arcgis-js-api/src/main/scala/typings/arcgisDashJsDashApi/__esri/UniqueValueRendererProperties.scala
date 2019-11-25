@@ -137,19 +137,19 @@ object UniqueValueRendererProperties {
     visualVariables: js.Array[VisualVariableProperties] = null
   ): UniqueValueRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
     if (backgroundFillSymbol != null) __obj.updateDynamic("backgroundFillSymbol")(backgroundFillSymbol.asInstanceOf[js.Any])
-    if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel)
-    if (defaultSymbol != null) __obj.updateDynamic("defaultSymbol")(defaultSymbol)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (field2 != null) __obj.updateDynamic("field2")(field2)
-    if (field3 != null) __obj.updateDynamic("field3")(field3)
-    if (fieldDelimiter != null) __obj.updateDynamic("fieldDelimiter")(fieldDelimiter)
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (uniqueValueInfos != null) __obj.updateDynamic("uniqueValueInfos")(uniqueValueInfos)
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel.asInstanceOf[js.Any])
+    if (defaultSymbol != null) __obj.updateDynamic("defaultSymbol")(defaultSymbol.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (field2 != null) __obj.updateDynamic("field2")(field2.asInstanceOf[js.Any])
+    if (field3 != null) __obj.updateDynamic("field3")(field3.asInstanceOf[js.Any])
+    if (fieldDelimiter != null) __obj.updateDynamic("fieldDelimiter")(fieldDelimiter.asInstanceOf[js.Any])
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (uniqueValueInfos != null) __obj.updateDynamic("uniqueValueInfos")(uniqueValueInfos.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[UniqueValueRendererProperties]
   }
 }

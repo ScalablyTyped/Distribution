@@ -36,15 +36,15 @@ object RouteConfig {
     strict: js.UndefOr[Boolean] = js.undefined
   ): RouteConfig = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (routes != null) __obj.updateDynamic("routes")(routes)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteConfig]
   }
 }

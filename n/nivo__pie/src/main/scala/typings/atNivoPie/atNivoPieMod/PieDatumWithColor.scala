@@ -20,8 +20,8 @@ object PieDatumWithColor {
     value: Double,
     StringDictionary: /* key */ StringDictionary[String | Double] = null
   ): PieDatumWithColor = {
-    val __obj = js.Dynamic.literal(color = color, id = id.asInstanceOf[js.Any], value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[PieDatumWithColor]
   }
 }

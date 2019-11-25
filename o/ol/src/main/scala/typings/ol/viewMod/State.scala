@@ -22,7 +22,7 @@ object State {
     rotation: Double,
     zoom: Double
   ): State = {
-    val __obj = js.Dynamic.literal(center = center, projection = projection, resolution = resolution, rotation = rotation, zoom = zoom)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

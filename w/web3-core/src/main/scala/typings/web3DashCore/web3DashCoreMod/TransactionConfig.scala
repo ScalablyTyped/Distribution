@@ -35,16 +35,16 @@ object TransactionConfig {
     value: Double | String | ^  = null
   ): TransactionConfig = {
     val __obj = js.Dynamic.literal()
-    if (chain != null) __obj.updateDynamic("chain")(chain)
+    if (chain != null) __obj.updateDynamic("chain")(chain.asInstanceOf[js.Any])
     if (chainId != null) __obj.updateDynamic("chainId")(chainId.asInstanceOf[js.Any])
-    if (common != null) __obj.updateDynamic("common")(common)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
     if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
-    if (hardfork != null) __obj.updateDynamic("hardfork")(hardfork)
+    if (hardfork != null) __obj.updateDynamic("hardfork")(hardfork.asInstanceOf[js.Any])
     if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionConfig]
   }

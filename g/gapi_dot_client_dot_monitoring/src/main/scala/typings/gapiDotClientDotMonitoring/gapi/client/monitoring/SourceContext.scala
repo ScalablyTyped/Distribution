@@ -13,7 +13,7 @@ object SourceContext {
   @scala.inline
   def apply(fileName: String = null): SourceContext = {
     val __obj = js.Dynamic.literal()
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceContext]
   }
 }

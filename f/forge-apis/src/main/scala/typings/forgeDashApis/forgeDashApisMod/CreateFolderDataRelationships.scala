@@ -11,7 +11,7 @@ trait CreateFolderDataRelationships extends js.Object {
 object CreateFolderDataRelationships {
   @scala.inline
   def apply(parent: CreateFolderDataRelationshipsParent): CreateFolderDataRelationships = {
-    val __obj = js.Dynamic.literal(parent = parent)
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateFolderDataRelationships]
   }

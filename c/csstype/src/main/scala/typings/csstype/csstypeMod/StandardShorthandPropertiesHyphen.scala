@@ -543,7 +543,7 @@ object StandardShorthandPropertiesHyphen {
     transition: TransitionProperty = null
   ): StandardShorthandPropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all)
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])

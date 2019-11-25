@@ -16,8 +16,8 @@ object Anon_IgnoreIfNotExists {
     recursive: js.UndefOr[Boolean] = js.undefined
   ): Anon_IgnoreIfNotExists = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreIfNotExists)) __obj.updateDynamic("ignoreIfNotExists")(ignoreIfNotExists)
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (!js.isUndefined(ignoreIfNotExists)) __obj.updateDynamic("ignoreIfNotExists")(ignoreIfNotExists.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IgnoreIfNotExists]
   }
 }

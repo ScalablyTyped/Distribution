@@ -25,12 +25,12 @@ object IItems {
     sorting: ISorting = null
   ): IItems = {
     val __obj = js.Dynamic.literal()
-    if (AddOns != null) __obj.updateDynamic("AddOns")(AddOns)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (appearance != null) __obj.updateDynamic("appearance")(appearance)
-    if (dimentions != null) __obj.updateDynamic("dimentions")(dimentions)
-    if (measures != null) __obj.updateDynamic("measures")(measures)
-    if (sorting != null) __obj.updateDynamic("sorting")(sorting)
+    if (AddOns != null) __obj.updateDynamic("AddOns")(AddOns.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
+    if (dimentions != null) __obj.updateDynamic("dimentions")(dimentions.asInstanceOf[js.Any])
+    if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
+    if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItems]
   }
 }

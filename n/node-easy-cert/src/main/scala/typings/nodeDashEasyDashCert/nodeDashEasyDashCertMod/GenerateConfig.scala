@@ -17,8 +17,8 @@ trait GenerateConfig extends js.Object {
 object GenerateConfig {
   @scala.inline
   def apply(commonName: String, overwrite: js.UndefOr[Boolean] = js.undefined): GenerateConfig = {
-    val __obj = js.Dynamic.literal(commonName = commonName)
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    val __obj = js.Dynamic.literal(commonName = commonName.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateConfig]
   }
 }

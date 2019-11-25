@@ -20,10 +20,10 @@ object Options {
     zero: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(and)) __obj.updateDynamic("and")(and)
+    if (!js.isUndefined(and)) __obj.updateDynamic("and")(and.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix)
-    if (!js.isUndefined(zero)) __obj.updateDynamic("zero")(zero)
+    if (!js.isUndefined(suffix)) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (!js.isUndefined(zero)) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

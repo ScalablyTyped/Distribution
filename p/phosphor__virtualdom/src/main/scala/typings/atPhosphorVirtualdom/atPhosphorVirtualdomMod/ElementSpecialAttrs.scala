@@ -46,11 +46,11 @@ object ElementSpecialAttrs {
     style: ElementInlineStyle = null
   ): ElementSpecialAttrs = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
-    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
+    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementSpecialAttrs]
   }
 }

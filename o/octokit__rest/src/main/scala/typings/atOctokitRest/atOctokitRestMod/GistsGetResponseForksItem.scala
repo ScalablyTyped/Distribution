@@ -21,7 +21,7 @@ object GistsGetResponseForksItem {
     url: String,
     user: GistsGetResponseForksItemUser
   ): GistsGetResponseForksItem = {
-    val __obj = js.Dynamic.literal(created_at = created_at, id = id, updated_at = updated_at, url = url, user = user)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GistsGetResponseForksItem]
   }

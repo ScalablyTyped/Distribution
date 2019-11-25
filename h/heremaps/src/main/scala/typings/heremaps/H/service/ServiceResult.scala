@@ -30,11 +30,11 @@ object ServiceResult {
     search: Anon_Context = null
   ): ServiceResult = {
     val __obj = js.Dynamic.literal()
-    if (Response != null) __obj.updateDynamic("Response")(Response)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (results != null) __obj.updateDynamic("results")(results)
-    if (search != null) __obj.updateDynamic("search")(search)
+    if (Response != null) __obj.updateDynamic("Response")(Response.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceResult]
   }
 }

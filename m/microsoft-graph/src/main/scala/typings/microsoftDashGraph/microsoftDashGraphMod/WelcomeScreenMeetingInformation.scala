@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait WelcomeScreenMeetingInformation extends js.Object
 
+object WelcomeScreenMeetingInformation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def showOrganizerAndTimeAndSubject: typings.microsoftDashGraph.microsoftDashGraphStrings.showOrganizerAndTimeAndSubject = this.cast("showOrganizerAndTimeAndSubject")
+  @scala.inline
+  def showOrganizerAndTimeOnly: typings.microsoftDashGraph.microsoftDashGraphStrings.showOrganizerAndTimeOnly = this.cast("showOrganizerAndTimeOnly")
+  @scala.inline
+  def userDefined: typings.microsoftDashGraph.microsoftDashGraphStrings.userDefined = this.cast("userDefined")
+}
+

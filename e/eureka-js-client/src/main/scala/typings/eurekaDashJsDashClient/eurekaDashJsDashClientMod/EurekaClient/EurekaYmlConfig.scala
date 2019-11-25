@@ -12,8 +12,8 @@ trait EurekaYmlConfig extends js.Object {
 object EurekaYmlConfig {
   @scala.inline
   def apply(cwd: String, filename: String = null): EurekaYmlConfig = {
-    val __obj = js.Dynamic.literal(cwd = cwd)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     __obj.asInstanceOf[EurekaYmlConfig]
   }
 }

@@ -36,18 +36,18 @@ object Contact {
     `type`: String = null
   ): Contact = {
     val __obj = js.Dynamic.literal()
-    if (acceptCommands != null) __obj.updateDynamic("acceptCommands")(acceptCommands)
-    if (acceptTypes != null) __obj.updateDynamic("acceptTypes")(acceptTypes)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (imageUrls != null) __obj.updateDynamic("imageUrls")(imageUrls)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (acceptCommands != null) __obj.updateDynamic("acceptCommands")(acceptCommands.asInstanceOf[js.Any])
+    if (acceptTypes != null) __obj.updateDynamic("acceptTypes")(acceptTypes.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (imageUrls != null) __obj.updateDynamic("imageUrls")(imageUrls.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (sharingFeatures != null) __obj.updateDynamic("sharingFeatures")(sharingFeatures)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (speakableName != null) __obj.updateDynamic("speakableName")(speakableName)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (sharingFeatures != null) __obj.updateDynamic("sharingFeatures")(sharingFeatures.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (speakableName != null) __obj.updateDynamic("speakableName")(speakableName.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contact]
   }
 }

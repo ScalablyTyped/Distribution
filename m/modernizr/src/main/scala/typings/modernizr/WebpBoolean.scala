@@ -14,7 +14,7 @@ trait WebpBoolean extends Boolean {
 object WebpBoolean {
   @scala.inline
   def apply(alpha: scala.Boolean, animation: scala.Boolean, lossless: scala.Boolean): WebpBoolean = {
-    val __obj = js.Dynamic.literal(alpha = alpha, animation = animation, lossless = lossless)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], animation = animation.asInstanceOf[js.Any], lossless = lossless.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebpBoolean]
   }

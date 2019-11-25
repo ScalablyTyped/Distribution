@@ -16,9 +16,9 @@ object PartialStyleRulesMenuItemClassKey {
   @scala.inline
   def apply(gutters: CSSProperties = null, root: CSSProperties = null, selected: CSSProperties = null): PartialStyleRulesMenuItemClassKey = {
     val __obj = js.Dynamic.literal()
-    if (gutters != null) __obj.updateDynamic("gutters")(gutters)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesMenuItemClassKey]
   }
 }

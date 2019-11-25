@@ -13,8 +13,8 @@ object W2Tab {
   @scala.inline
   def apply(caption: String = null, id: String = null): W2Tab = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[W2Tab]
   }
 }

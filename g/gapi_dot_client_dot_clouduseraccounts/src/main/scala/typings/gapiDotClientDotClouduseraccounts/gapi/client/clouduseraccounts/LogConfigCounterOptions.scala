@@ -15,8 +15,8 @@ object LogConfigCounterOptions {
   @scala.inline
   def apply(field: String = null, metric: String = null): LogConfigCounterOptions = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfigCounterOptions]
   }
 }

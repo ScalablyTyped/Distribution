@@ -84,19 +84,19 @@ object UserNotificationDictionary {
     timezone: String = null,
     userInfo: js.Any = null
   ): UserNotificationDictionary = {
-    val __obj = js.Dynamic.literal(identifier = identifier)
-    if (alertAction != null) __obj.updateDynamic("alertAction")(alertAction)
-    if (alertBody != null) __obj.updateDynamic("alertBody")(alertBody)
-    if (alertLaunchImage != null) __obj.updateDynamic("alertLaunchImage")(alertLaunchImage)
-    if (alertSubtitle != null) __obj.updateDynamic("alertSubtitle")(alertSubtitle)
-    if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
+    if (alertAction != null) __obj.updateDynamic("alertAction")(alertAction.asInstanceOf[js.Any])
+    if (alertBody != null) __obj.updateDynamic("alertBody")(alertBody.asInstanceOf[js.Any])
+    if (alertLaunchImage != null) __obj.updateDynamic("alertLaunchImage")(alertLaunchImage.asInstanceOf[js.Any])
+    if (alertSubtitle != null) __obj.updateDynamic("alertSubtitle")(alertSubtitle.asInstanceOf[js.Any])
+    if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle.asInstanceOf[js.Any])
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (sound != null) __obj.updateDynamic("sound")(sound)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
-    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserNotificationDictionary]
   }
 }

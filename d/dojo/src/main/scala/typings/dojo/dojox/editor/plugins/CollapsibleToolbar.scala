@@ -1,9 +1,6 @@
 package typings.dojo.dojox.editor.plugins
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit._Widget
 import typings.dojo.dijit._editor._Plugin
 import typings.dojo.dojoStrings.attachScope
@@ -137,21 +134,75 @@ object CollapsibleToolbar extends js.Object {
     @JSName("set")
     def set_textClass(property: textClass, value: String): Unit = js.native
     @JSName("watch")
-    def watch_attachScope(property: attachScope, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+    def watch_attachScope(
+      property: attachScope,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[js.Object], 
+          /* newValue */ js.UndefOr[js.Object], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_buttonClass(property: buttonClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+    def watch_buttonClass(
+      property: buttonClass,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[String], 
+          /* newValue */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_searchContainerNode(property: searchContainerNode, callback: Fn_NewValue): Anon_Unwatch = js.native
+    def watch_searchContainerNode(
+      property: searchContainerNode,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[Boolean], 
+          /* newValue */ js.UndefOr[Boolean], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+    def watch_templatePath(
+      property: templatePath,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[String], 
+          /* newValue */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_templatePath(property: templatePath, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+    def watch_templateString(
+      property: templateString,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[String], 
+          /* newValue */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_templateString(property: templateString, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+    def watch_text(
+      property: text,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[String], 
+          /* newValue */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_text(property: text, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-    @JSName("watch")
-    def watch_textClass(property: textClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+    def watch_textClass(
+      property: textClass,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[String], 
+          /* newValue */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
   }
   
 }

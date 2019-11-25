@@ -27,9 +27,9 @@ object ListCompaniesResponse {
     responseMetadata: ResponseMetadata = null
   ): ListCompaniesResponse = {
     val __obj = js.Dynamic.literal()
-    if (companies != null) __obj.updateDynamic("companies")(companies)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    if (companies != null) __obj.updateDynamic("companies")(companies.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCompaniesResponse]
   }
 }

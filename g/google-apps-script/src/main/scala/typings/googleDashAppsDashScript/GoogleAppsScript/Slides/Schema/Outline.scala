@@ -20,10 +20,10 @@ object Outline {
     weight: Dimension = null
   ): Outline = {
     val __obj = js.Dynamic.literal()
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
-    if (outlineFill != null) __obj.updateDynamic("outlineFill")(outlineFill)
-    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
+    if (outlineFill != null) __obj.updateDynamic("outlineFill")(outlineFill.asInstanceOf[js.Any])
+    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Outline]
   }
 }

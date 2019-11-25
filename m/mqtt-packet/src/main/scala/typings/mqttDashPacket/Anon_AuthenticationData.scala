@@ -31,15 +31,15 @@ object Anon_AuthenticationData {
     userProperties: js.Object = null
   ): Anon_AuthenticationData = {
     val __obj = js.Dynamic.literal()
-    if (authenticationData != null) __obj.updateDynamic("authenticationData")(authenticationData)
-    if (authenticationMethod != null) __obj.updateDynamic("authenticationMethod")(authenticationMethod)
+    if (authenticationData != null) __obj.updateDynamic("authenticationData")(authenticationData.asInstanceOf[js.Any])
+    if (authenticationMethod != null) __obj.updateDynamic("authenticationMethod")(authenticationMethod.asInstanceOf[js.Any])
     if (maximumPacketSize != null) __obj.updateDynamic("maximumPacketSize")(maximumPacketSize.asInstanceOf[js.Any])
     if (receiveMaximum != null) __obj.updateDynamic("receiveMaximum")(receiveMaximum.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestProblemInformation)) __obj.updateDynamic("requestProblemInformation")(requestProblemInformation)
-    if (!js.isUndefined(requestResponseInformation)) __obj.updateDynamic("requestResponseInformation")(requestResponseInformation)
+    if (!js.isUndefined(requestProblemInformation)) __obj.updateDynamic("requestProblemInformation")(requestProblemInformation.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestResponseInformation)) __obj.updateDynamic("requestResponseInformation")(requestResponseInformation.asInstanceOf[js.Any])
     if (sessionExpiryInterval != null) __obj.updateDynamic("sessionExpiryInterval")(sessionExpiryInterval.asInstanceOf[js.Any])
     if (topicAliasMaximum != null) __obj.updateDynamic("topicAliasMaximum")(topicAliasMaximum.asInstanceOf[js.Any])
-    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties)
+    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthenticationData]
   }
 }

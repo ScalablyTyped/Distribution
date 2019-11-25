@@ -16,7 +16,7 @@ object SkipLinksProps {
   def apply(children: ReactNode = null, messages: Anon_SkipTo = null): SkipLinksProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkipLinksProps]
   }
 }

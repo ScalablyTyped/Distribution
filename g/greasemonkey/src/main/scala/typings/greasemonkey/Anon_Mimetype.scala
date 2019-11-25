@@ -13,7 +13,7 @@ trait Anon_Mimetype extends js.Object {
 object Anon_Mimetype {
   @scala.inline
   def apply(mimetype: String, name: String, url: String): Anon_Mimetype = {
-    val __obj = js.Dynamic.literal(mimetype = mimetype, name = name, url = url)
+    val __obj = js.Dynamic.literal(mimetype = mimetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Mimetype]
   }

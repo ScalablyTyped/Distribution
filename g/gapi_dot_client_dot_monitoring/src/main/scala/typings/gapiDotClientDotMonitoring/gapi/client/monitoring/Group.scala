@@ -33,11 +33,11 @@ object Group {
     parentName: String = null
   ): Group = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(isCluster)) __obj.updateDynamic("isCluster")(isCluster)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parentName != null) __obj.updateDynamic("parentName")(parentName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCluster)) __obj.updateDynamic("isCluster")(isCluster.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentName != null) __obj.updateDynamic("parentName")(parentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
 }

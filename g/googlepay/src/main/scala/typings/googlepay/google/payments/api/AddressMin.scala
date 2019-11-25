@@ -14,8 +14,8 @@ trait AddressMin extends Address {
 object AddressMin {
   @scala.inline
   def apply(countryCode: String, name: String, postalCode: String, phoneNumber: String = null): AddressMin = {
-    val __obj = js.Dynamic.literal(countryCode = countryCode, name = name, postalCode = postalCode)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    val __obj = js.Dynamic.literal(countryCode = countryCode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressMin]
   }
 }

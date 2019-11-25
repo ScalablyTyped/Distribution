@@ -28,11 +28,11 @@ trait Selection extends js.Object {
   def keepSelection(): Unit = js.native
   def off[E /* <: String */](
     ev: E,
-    cb: /* import warning: ImportType.apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
+    cb: /* import warning: importer.ImportType#apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
   ): this.type = js.native
   def on[E /* <: String */](
     ev: E,
-    cb: /* import warning: ImportType.apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
+    cb: /* import warning: importer.ImportType#apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
   ): this.type = js.native
   @JSName("option")
   def option_boundaries(name: boundaries): js.Array[String] = js.native
@@ -78,7 +78,7 @@ trait Selection extends js.Object {
   def resolveSelectables(): Unit = js.native
   @JSName("select")
   def select_0(
-    query: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(selector : string | std.HTMLElement | std.ReadonlyArray<string | std.HTMLElement>): std.Array<std.Element>>[0] */ js.Any
+    query: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(selector : string | std.HTMLElement | std.ReadonlyArray<string | std.HTMLElement>): std.Array<std.Element>>[0] */ js.Any
   ): this.type = js.native
 }
 

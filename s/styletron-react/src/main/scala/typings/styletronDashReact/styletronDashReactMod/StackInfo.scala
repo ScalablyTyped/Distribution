@@ -13,8 +13,8 @@ trait StackInfo extends js.Object {
 object StackInfo {
   @scala.inline
   def apply(message: String, stacktrace: js.Any, stack: String = null): StackInfo = {
-    val __obj = js.Dynamic.literal(message = message, stacktrace = stacktrace)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], stacktrace = stacktrace.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackInfo]
   }
 }

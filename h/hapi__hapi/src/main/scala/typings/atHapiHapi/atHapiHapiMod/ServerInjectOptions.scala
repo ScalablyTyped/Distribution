@@ -44,18 +44,18 @@ object ServerInjectOptions {
     simulate: typings.atHapiShot.Anon_Close = null,
     validate: js.UndefOr[Boolean] = js.undefined
   ): ServerInjectOptions = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (!js.isUndefined(allowInternals)) __obj.updateDynamic("allowInternals")(allowInternals)
-    if (app != null) __obj.updateDynamic("app")(app)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (authority != null) __obj.updateDynamic("authority")(authority)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInternals)) __obj.updateDynamic("allowInternals")(allowInternals.asInstanceOf[js.Any])
+    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress)
-    if (simulate != null) __obj.updateDynamic("simulate")(simulate)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress.asInstanceOf[js.Any])
+    if (simulate != null) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInjectOptions]
   }
 }

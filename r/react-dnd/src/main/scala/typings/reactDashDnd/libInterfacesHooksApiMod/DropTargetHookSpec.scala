@@ -62,7 +62,7 @@ object DropTargetHookSpec {
     if (collect != null) __obj.updateDynamic("collect")(js.Any.fromFunction1(collect))
     if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction2(drop))
     if (hover != null) __obj.updateDynamic("hover")(js.Any.fromFunction2(hover))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropTargetHookSpec[DragObject, DropResult, CollectedProps]]
   }
 }

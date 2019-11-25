@@ -29,10 +29,10 @@ object CommandManagerCommands {
     parameter: js.Any = null
   ): CommandManagerCommands = {
     val __obj = js.Dynamic.literal()
-    if (canExecute != null) __obj.updateDynamic("canExecute")(canExecute)
-    if (execute != null) __obj.updateDynamic("execute")(execute)
-    if (gesture != null) __obj.updateDynamic("gesture")(gesture)
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
+    if (canExecute != null) __obj.updateDynamic("canExecute")(canExecute.asInstanceOf[js.Any])
+    if (execute != null) __obj.updateDynamic("execute")(execute.asInstanceOf[js.Any])
+    if (gesture != null) __obj.updateDynamic("gesture")(gesture.asInstanceOf[js.Any])
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandManagerCommands]
   }
 }

@@ -15,8 +15,8 @@ object LatLongRect {
   @scala.inline
   def apply(maxLatLng: LatLng = null, minLatLng: LatLng = null): LatLongRect = {
     val __obj = js.Dynamic.literal()
-    if (maxLatLng != null) __obj.updateDynamic("maxLatLng")(maxLatLng)
-    if (minLatLng != null) __obj.updateDynamic("minLatLng")(minLatLng)
+    if (maxLatLng != null) __obj.updateDynamic("maxLatLng")(maxLatLng.asInstanceOf[js.Any])
+    if (minLatLng != null) __obj.updateDynamic("minLatLng")(minLatLng.asInstanceOf[js.Any])
     __obj.asInstanceOf[LatLongRect]
   }
 }

@@ -17,9 +17,9 @@ object Recipient {
   @scala.inline
   def apply(deliveryType: String = null, email: String = null, kind: String = null): Recipient = {
     val __obj = js.Dynamic.literal()
-    if (deliveryType != null) __obj.updateDynamic("deliveryType")(deliveryType)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (deliveryType != null) __obj.updateDynamic("deliveryType")(deliveryType.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recipient]
   }
 }

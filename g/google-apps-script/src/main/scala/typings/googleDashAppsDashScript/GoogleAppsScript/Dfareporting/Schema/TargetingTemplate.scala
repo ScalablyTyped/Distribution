@@ -38,19 +38,19 @@ object TargetingTemplate {
     technologyTargeting: TechnologyTargeting = null
   ): TargetingTemplate = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
-    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue)
-    if (dayPartTargeting != null) __obj.updateDynamic("dayPartTargeting")(dayPartTargeting)
-    if (geoTargeting != null) __obj.updateDynamic("geoTargeting")(geoTargeting)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (keyValueTargetingExpression != null) __obj.updateDynamic("keyValueTargetingExpression")(keyValueTargetingExpression)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (languageTargeting != null) __obj.updateDynamic("languageTargeting")(languageTargeting)
-    if (listTargetingExpression != null) __obj.updateDynamic("listTargetingExpression")(listTargetingExpression)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId)
-    if (technologyTargeting != null) __obj.updateDynamic("technologyTargeting")(technologyTargeting)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
+    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue.asInstanceOf[js.Any])
+    if (dayPartTargeting != null) __obj.updateDynamic("dayPartTargeting")(dayPartTargeting.asInstanceOf[js.Any])
+    if (geoTargeting != null) __obj.updateDynamic("geoTargeting")(geoTargeting.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (keyValueTargetingExpression != null) __obj.updateDynamic("keyValueTargetingExpression")(keyValueTargetingExpression.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (languageTargeting != null) __obj.updateDynamic("languageTargeting")(languageTargeting.asInstanceOf[js.Any])
+    if (listTargetingExpression != null) __obj.updateDynamic("listTargetingExpression")(listTargetingExpression.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
+    if (technologyTargeting != null) __obj.updateDynamic("technologyTargeting")(technologyTargeting.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetingTemplate]
   }
 }

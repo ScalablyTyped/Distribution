@@ -3,7 +3,7 @@ package typings.chromeDashApps.chrome.syncFileSystem
 import typings.chromeDashApps.Anon_LASTWRITEWIN
 import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chromeDashAppsStrings.last_write_win
-import typings.chromeDashApps.chromeDashAppsStrings.manual
+import typings.chromeDashApps.chromeDashAppsStrings.manual_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ object getConflictResolutionPolicy extends js.Object {
     */
   def apply(
     callback: js.Function1[
-      /* policy */ ToStringLiteral[Anon_LASTWRITEWIN, String, Exclude[String, last_write_win | manual]], 
+      /* policy */ ToStringLiteral[Anon_LASTWRITEWIN, String, Exclude[String, last_write_win | manual_]], 
       Unit
     ]
   ): Unit = js.native

@@ -25,12 +25,12 @@ package object yargsMod {
   /** Remove undefined as a possible value for keys K in T */
   type Defined[T, K /* <: String */] = (Omit[T, K]) with typings.yargs.yargsStrings.Defined with T
   type InferredOptionType[O /* <: Options | PositionalOptions */] = js.UndefOr[RequiredOptionType[O] | Double]
-  type InferredOptionTypes[O /* <: StringDictionary[Options] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type InferredOptionTypes[O /* <: StringDictionary[Options] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof O ]: yargs.yargs.InferredOptionType<O[key]>}
     */ typings.yargs.yargsStrings.InferredOptionTypes with O
   type MiddlewareFunction[T] = js.Function1[/* args */ Arguments[T], Unit]
   /** Remove keys K in T */
-  type Omit[T, K] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Omit[T, K] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in std.Exclude<keyof T, K> ]: T[key]}
     */ typings.yargs.yargsStrings.Omit with T
   type ParseCallback[T] = js.Function3[/* err */ js.UndefOr[Error], /* argv */ Arguments[T], /* output */ String, Unit]

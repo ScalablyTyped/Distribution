@@ -28,14 +28,14 @@ object Anon_Descending {
     startkey: js.Any = null
   ): Anon_Descending = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
-    if (endkey != null) __obj.updateDynamic("endkey")(endkey)
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
-    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
+    if (endkey != null) __obj.updateDynamic("endkey")(endkey.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(reduce)) __obj.updateDynamic("reduce")(reduce)
-    if (startkey != null) __obj.updateDynamic("startkey")(startkey)
+    if (!js.isUndefined(reduce)) __obj.updateDynamic("reduce")(reduce.asInstanceOf[js.Any])
+    if (startkey != null) __obj.updateDynamic("startkey")(startkey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Descending]
   }
 }

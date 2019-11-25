@@ -15,7 +15,7 @@ trait Markdown extends MessageType {
 object Markdown {
   @scala.inline
   def apply(markdown: Anon_AtMobilesIsAtAll, msgtype: markdown): Markdown = {
-    val __obj = js.Dynamic.literal(markdown = markdown, msgtype = msgtype)
+    val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Markdown]
   }

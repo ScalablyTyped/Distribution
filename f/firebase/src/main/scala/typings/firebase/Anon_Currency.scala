@@ -22,9 +22,9 @@ object Anon_Currency {
     value: Int | Double = null
   ): Anon_Currency = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Currency]
   }

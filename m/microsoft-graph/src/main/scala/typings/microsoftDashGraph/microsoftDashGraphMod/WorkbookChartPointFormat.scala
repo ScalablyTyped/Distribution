@@ -13,8 +13,8 @@ object WorkbookChartPointFormat {
   @scala.inline
   def apply(fill: WorkbookChartFill = null, id: String = null): WorkbookChartPointFormat = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartPointFormat]
   }
 }

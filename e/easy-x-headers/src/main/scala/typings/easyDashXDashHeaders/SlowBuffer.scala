@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SlowBuffer")
 @js.native
-class SlowBuffer protected () extends Buffer {
+class SlowBuffer protected () extends NodeBuffer {
   def this(array: js.Array[_]) = this()
   def this(size: Double) = this()
   def this(size: Uint8Array) = this()

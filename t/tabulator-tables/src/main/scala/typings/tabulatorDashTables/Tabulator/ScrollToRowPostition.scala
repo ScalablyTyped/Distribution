@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ScrollToRowPostition extends js.Object
 
+object ScrollToRowPostition {
+  @scala.inline
+  def bottom: typings.tabulatorDashTables.tabulatorDashTablesStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.tabulatorDashTables.tabulatorDashTablesStrings.center = this.cast("center")
+  @scala.inline
+  def nearest: typings.tabulatorDashTables.tabulatorDashTablesStrings.nearest = this.cast("nearest")
+  @scala.inline
+  def top: typings.tabulatorDashTables.tabulatorDashTablesStrings.top = this.cast("top")
+}
+

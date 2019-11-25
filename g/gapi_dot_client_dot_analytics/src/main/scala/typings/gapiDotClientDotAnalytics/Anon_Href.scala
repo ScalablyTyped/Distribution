@@ -15,8 +15,8 @@ object Anon_Href {
   @scala.inline
   def apply(href: String = null, `type`: String = null): Anon_Href = {
     val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Href]
   }
 }

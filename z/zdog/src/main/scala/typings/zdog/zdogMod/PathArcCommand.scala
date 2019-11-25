@@ -12,7 +12,7 @@ trait PathArcCommand extends PathCommand {
 object PathArcCommand {
   @scala.inline
   def apply(arc: js.Tuple2[VectorOptions, VectorOptions]): PathArcCommand = {
-    val __obj = js.Dynamic.literal(arc = arc)
+    val __obj = js.Dynamic.literal(arc = arc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PathArcCommand]
   }

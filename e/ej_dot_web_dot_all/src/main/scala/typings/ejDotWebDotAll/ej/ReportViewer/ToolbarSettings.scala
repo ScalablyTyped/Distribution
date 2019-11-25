@@ -47,13 +47,13 @@ object ToolbarSettings {
     templateId: String = null
   ): ToolbarSettings = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (customGroups != null) __obj.updateDynamic("customGroups")(customGroups)
-    if (customItems != null) __obj.updateDynamic("customItems")(customItems)
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (customGroups != null) __obj.updateDynamic("customGroups")(customGroups.asInstanceOf[js.Any])
+    if (customItems != null) __obj.updateDynamic("customItems")(customItems.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar)
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
-    if (templateId != null) __obj.updateDynamic("templateId")(templateId)
+    if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarSettings]
   }
 }

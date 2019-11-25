@@ -32,8 +32,8 @@ object MultiSelectSettings {
     matchOn: String | js.Array[_] = null
   ): MultiSelectSettings = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (!js.isUndefined(cancelOnBackspace)) __obj.updateDynamic("cancelOnBackspace")(cancelOnBackspace)
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelOnBackspace)) __obj.updateDynamic("cancelOnBackspace")(cancelOnBackspace.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])

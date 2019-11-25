@@ -12,7 +12,7 @@ trait Anon_Created extends js.Object {
 object Anon_Created {
   @scala.inline
   def apply(created: Double, pendingUpload: Double): Anon_Created = {
-    val __obj = js.Dynamic.literal(created = created, pendingUpload = pendingUpload)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], pendingUpload = pendingUpload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Created]
   }

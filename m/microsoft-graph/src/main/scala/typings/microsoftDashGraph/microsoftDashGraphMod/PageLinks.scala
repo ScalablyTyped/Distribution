@@ -15,8 +15,8 @@ object PageLinks {
   @scala.inline
   def apply(oneNoteClientUrl: ExternalLink = null, oneNoteWebUrl: ExternalLink = null): PageLinks = {
     val __obj = js.Dynamic.literal()
-    if (oneNoteClientUrl != null) __obj.updateDynamic("oneNoteClientUrl")(oneNoteClientUrl)
-    if (oneNoteWebUrl != null) __obj.updateDynamic("oneNoteWebUrl")(oneNoteWebUrl)
+    if (oneNoteClientUrl != null) __obj.updateDynamic("oneNoteClientUrl")(oneNoteClientUrl.asInstanceOf[js.Any])
+    if (oneNoteWebUrl != null) __obj.updateDynamic("oneNoteWebUrl")(oneNoteWebUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageLinks]
   }
 }

@@ -24,7 +24,7 @@ object INamedACL {
     Name: String,
     NamedACLType: MFNamedACLType
   ): INamedACL = {
-    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = js.Any.fromFunction0(Clone), GUID = GUID, ID = ID, Name = Name, NamedACLType = NamedACLType)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), GUID = GUID.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NamedACLType = NamedACLType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INamedACL]
   }

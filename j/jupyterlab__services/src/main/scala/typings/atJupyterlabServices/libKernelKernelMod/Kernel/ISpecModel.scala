@@ -54,9 +54,9 @@ object ISpecModel {
     env: JSONObject = null,
     metadata: JSONObject = null
   ): ISpecModel = {
-    val __obj = js.Dynamic.literal(argv = argv, display_name = display_name, language = language, name = name, resources = resources)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpecModel]
   }
 }

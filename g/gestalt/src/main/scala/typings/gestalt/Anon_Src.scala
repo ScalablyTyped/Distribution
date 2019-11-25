@@ -15,7 +15,7 @@ trait Anon_Src extends js.Object {
 object Anon_Src {
   @scala.inline
   def apply(src: String, `type`: `video/m3u8` | `video/mp4` | `video/ogg`): Anon_Src = {
-    val __obj = js.Dynamic.literal(src = src)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Src]
   }

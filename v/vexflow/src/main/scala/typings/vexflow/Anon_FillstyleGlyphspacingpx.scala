@@ -32,11 +32,11 @@ object Anon_FillstyleGlyphspacingpx {
     vertical_bar_width: Int | Double = null
   ): Anon_FillstyleGlyphspacingpx = {
     val __obj = js.Dynamic.literal()
-    if (fill_style != null) __obj.updateDynamic("fill_style")(fill_style)
+    if (fill_style != null) __obj.updateDynamic("fill_style")(fill_style.asInstanceOf[js.Any])
     if (glyph_spacing_px != null) __obj.updateDynamic("glyph_spacing_px")(glyph_spacing_px.asInstanceOf[js.Any])
-    if (!js.isUndefined(left_bar)) __obj.updateDynamic("left_bar")(left_bar)
+    if (!js.isUndefined(left_bar)) __obj.updateDynamic("left_bar")(left_bar.asInstanceOf[js.Any])
     if (num_lines != null) __obj.updateDynamic("num_lines")(num_lines.asInstanceOf[js.Any])
-    if (!js.isUndefined(right_bar)) __obj.updateDynamic("right_bar")(right_bar)
+    if (!js.isUndefined(right_bar)) __obj.updateDynamic("right_bar")(right_bar.asInstanceOf[js.Any])
     if (space_above_staff_ln != null) __obj.updateDynamic("space_above_staff_ln")(space_above_staff_ln.asInstanceOf[js.Any])
     if (space_below_staff_ln != null) __obj.updateDynamic("space_below_staff_ln")(space_below_staff_ln.asInstanceOf[js.Any])
     if (spacing_between_lines_px != null) __obj.updateDynamic("spacing_between_lines_px")(spacing_between_lines_px.asInstanceOf[js.Any])

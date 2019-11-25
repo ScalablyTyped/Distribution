@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait PasteModeType extends js.Object
 
+object PasteModeType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def overwrite: typings.handsontable.handsontableStrings.overwrite = this.cast("overwrite")
+  @scala.inline
+  def shift_down: typings.handsontable.handsontableStrings.shift_down = this.cast("shift_down")
+  @scala.inline
+  def shift_right: typings.handsontable.handsontableStrings.shift_right = this.cast("shift_right")
+}
+

@@ -13,7 +13,7 @@ trait Anon_HostPort extends js.Object {
 object Anon_HostPort {
   @scala.inline
   def apply(host: InetAddress, port: Double): Anon_HostPort = {
-    val __obj = js.Dynamic.literal(host = host, port = port)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HostPort]
   }

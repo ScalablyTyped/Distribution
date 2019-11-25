@@ -41,8 +41,8 @@ object Options {
     rowToStyle: (/* row */ Row, /* z */ Zoom, /* styleState */ StyleState) => ObjectStyleOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal(rowToMapObject = js.Any.fromFunction2(rowToMapObject))
-    if (clustering != null) __obj.updateDynamic("clustering")(clustering)
-    if (dataDomains != null) __obj.updateDynamic("dataDomains")(dataDomains)
+    if (clustering != null) __obj.updateDynamic("clustering")(clustering.asInstanceOf[js.Any])
+    if (dataDomains != null) __obj.updateDynamic("dataDomains")(dataDomains.asInstanceOf[js.Any])
     if (dataToRows != null) __obj.updateDynamic("dataToRows")(js.Any.fromFunction1(dataToRows))
     if (rowToStyle != null) __obj.updateDynamic("rowToStyle")(js.Any.fromFunction3(rowToStyle))
     __obj.asInstanceOf[Options]

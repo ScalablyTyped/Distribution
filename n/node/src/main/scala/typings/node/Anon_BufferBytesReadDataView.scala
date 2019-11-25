@@ -13,7 +13,7 @@ trait Anon_BufferBytesReadDataView extends js.Object {
 object Anon_BufferBytesReadDataView {
   @scala.inline
   def apply(buffer: DataView, bytesRead: Double): Anon_BufferBytesReadDataView = {
-    val __obj = js.Dynamic.literal(buffer = buffer, bytesRead = bytesRead)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BufferBytesReadDataView]
   }

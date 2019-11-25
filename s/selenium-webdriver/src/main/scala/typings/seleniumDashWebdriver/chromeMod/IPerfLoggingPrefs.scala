@@ -21,7 +21,7 @@ object IPerfLoggingPrefs {
     enableTimeline: Boolean,
     tracingCategories: String
   ): IPerfLoggingPrefs = {
-    val __obj = js.Dynamic.literal(bufferUsageReportingInterval = bufferUsageReportingInterval, enableNetwork = enableNetwork, enablePage = enablePage, enableTimeline = enableTimeline, tracingCategories = tracingCategories)
+    val __obj = js.Dynamic.literal(bufferUsageReportingInterval = bufferUsageReportingInterval.asInstanceOf[js.Any], enableNetwork = enableNetwork.asInstanceOf[js.Any], enablePage = enablePage.asInstanceOf[js.Any], enableTimeline = enableTimeline.asInstanceOf[js.Any], tracingCategories = tracingCategories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPerfLoggingPrefs]
   }

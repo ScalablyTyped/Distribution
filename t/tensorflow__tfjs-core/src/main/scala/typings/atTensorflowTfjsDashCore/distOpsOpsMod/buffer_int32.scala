@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object buffer_int32 extends js.Object {
   def apply[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: int32
   ): TensorBuffer[R, int32] = js.native
   def apply[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: int32,
     values: Int32Array
   ): TensorBuffer[R, int32] = js.native

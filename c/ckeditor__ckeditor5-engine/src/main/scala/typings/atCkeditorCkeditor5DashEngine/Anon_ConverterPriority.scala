@@ -15,7 +15,7 @@ object Anon_ConverterPriority {
   @scala.inline
   def apply(model: String | Anon_KeyValue, view: String | Anon_Key, converterPriority: PriorityString = null): Anon_ConverterPriority = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-    if (converterPriority != null) __obj.updateDynamic("converterPriority")(converterPriority)
+    if (converterPriority != null) __obj.updateDynamic("converterPriority")(converterPriority.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConverterPriority]
   }
 }

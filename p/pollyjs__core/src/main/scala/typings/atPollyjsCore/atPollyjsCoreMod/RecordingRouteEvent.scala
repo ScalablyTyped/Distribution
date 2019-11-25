@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait RecordingRouteEvent extends js.Object
 
+object RecordingRouteEvent {
+  @scala.inline
+  def beforePersist: typings.atPollyjsCore.atPollyjsCoreStrings.beforePersist = this.cast("beforePersist")
+  @scala.inline
+  def beforeReplay: typings.atPollyjsCore.atPollyjsCoreStrings.beforeReplay = this.cast("beforeReplay")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

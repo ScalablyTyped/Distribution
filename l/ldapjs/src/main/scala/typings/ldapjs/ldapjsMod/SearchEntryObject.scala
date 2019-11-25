@@ -18,8 +18,8 @@ object SearchEntryObject {
     dn: String,
     StringDictionary: /* p */ StringDictionary[String | js.Array[String]] = null
   ): SearchEntryObject = {
-    val __obj = js.Dynamic.literal(controls = controls, dn = dn)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], dn = dn.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SearchEntryObject]
   }
 }

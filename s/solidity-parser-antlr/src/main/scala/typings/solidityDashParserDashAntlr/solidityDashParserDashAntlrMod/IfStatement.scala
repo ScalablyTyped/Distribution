@@ -25,11 +25,11 @@ object IfStatement {
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null
   ): IfStatement = {
-    val __obj = js.Dynamic.literal(condition = condition, trueBody = trueBody)
-    __obj.updateDynamic("type")(`type`)
-    if (falseBody != null) __obj.updateDynamic("falseBody")(falseBody)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], trueBody = trueBody.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (falseBody != null) __obj.updateDynamic("falseBody")(falseBody.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[IfStatement]
   }
 }

@@ -26,8 +26,8 @@ object CornerBit {
     RIGHT: `4`,
     StringDictionary: StringDictionary[Double] = null
   ): CornerBit = {
-    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, CENTER = CENTER, FLIP_RTL = FLIP_RTL, RIGHT = RIGHT)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM.asInstanceOf[js.Any], CENTER = CENTER.asInstanceOf[js.Any], FLIP_RTL = FLIP_RTL.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CornerBit]
   }
 }

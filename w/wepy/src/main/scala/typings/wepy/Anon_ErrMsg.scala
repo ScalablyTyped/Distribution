@@ -12,7 +12,7 @@ trait Anon_ErrMsg extends js.Object {
 object Anon_ErrMsg {
   @scala.inline
   def apply(errMsg: String, isEnrolled: Boolean): Anon_ErrMsg = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg, isEnrolled = isEnrolled)
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], isEnrolled = isEnrolled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ErrMsg]
   }

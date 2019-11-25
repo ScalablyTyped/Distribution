@@ -12,7 +12,7 @@ object AccountRequest {
   @scala.inline
   def apply(contact: js.Array[String] = null): AccountRequest = {
     val __obj = js.Dynamic.literal()
-    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountRequest]
   }
 }

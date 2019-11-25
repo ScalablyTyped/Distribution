@@ -19,7 +19,7 @@ trait Binding extends js.Object {
 object Binding {
   @scala.inline
   def apply(collaborativeObject: CollaborativeObject, domElement: Element, unbind: () => Unit): Binding = {
-    val __obj = js.Dynamic.literal(collaborativeObject = collaborativeObject, domElement = domElement, unbind = js.Any.fromFunction0(unbind))
+    val __obj = js.Dynamic.literal(collaborativeObject = collaborativeObject.asInstanceOf[js.Any], domElement = domElement.asInstanceOf[js.Any], unbind = js.Any.fromFunction0(unbind))
   
     __obj.asInstanceOf[Binding]
   }

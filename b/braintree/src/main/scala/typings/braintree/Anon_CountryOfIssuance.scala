@@ -12,7 +12,7 @@ trait Anon_CountryOfIssuance extends js.Object {
 object Anon_CountryOfIssuance {
   @scala.inline
   def apply(CountryOfIssuance: String, IssuingBank: String): Anon_CountryOfIssuance = {
-    val __obj = js.Dynamic.literal(CountryOfIssuance = CountryOfIssuance, IssuingBank = IssuingBank)
+    val __obj = js.Dynamic.literal(CountryOfIssuance = CountryOfIssuance.asInstanceOf[js.Any], IssuingBank = IssuingBank.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CountryOfIssuance]
   }

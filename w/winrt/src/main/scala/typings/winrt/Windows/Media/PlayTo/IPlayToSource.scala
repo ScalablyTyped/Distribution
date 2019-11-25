@@ -13,7 +13,7 @@ trait IPlayToSource extends js.Object {
 object IPlayToSource {
   @scala.inline
   def apply(connection: PlayToConnection, next: PlayToSource, playNext: () => Unit): IPlayToSource = {
-    val __obj = js.Dynamic.literal(connection = connection, next = next, playNext = js.Any.fromFunction0(playNext))
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], playNext = js.Any.fromFunction0(playNext))
   
     __obj.asInstanceOf[IPlayToSource]
   }

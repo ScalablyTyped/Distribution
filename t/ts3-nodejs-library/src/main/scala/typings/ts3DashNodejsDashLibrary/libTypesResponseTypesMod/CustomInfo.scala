@@ -13,7 +13,7 @@ trait CustomInfo extends js.Object {
 object CustomInfo {
   @scala.inline
   def apply(cldbid: Double, ident: String, value: String): CustomInfo = {
-    val __obj = js.Dynamic.literal(cldbid = cldbid, ident = ident, value = value)
+    val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], ident = ident.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomInfo]
   }

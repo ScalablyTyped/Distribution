@@ -17,8 +17,8 @@ trait CFB$Container extends js.Object {
 object CFB$Container {
   @scala.inline
   def apply(FileIndex: js.Array[CFB$Entry], FullPaths: js.Array[String], raw: Anon_Header = null): CFB$Container = {
-    val __obj = js.Dynamic.literal(FileIndex = FileIndex, FullPaths = FullPaths)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(FileIndex = FileIndex.asInstanceOf[js.Any], FullPaths = FullPaths.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[CFB$Container]
   }
 }

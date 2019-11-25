@@ -13,7 +13,7 @@ trait PullsGetParams extends js.Object {
 object PullsGetParams {
   @scala.inline
   def apply(owner: String, pull_number: Double, repo: String): PullsGetParams = {
-    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsGetParams]
   }

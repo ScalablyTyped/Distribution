@@ -41,10 +41,10 @@ object IOptions {
     selectionStyle: Partial[ISelectionStyle] = null,
     uuid: String = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(host = host, model = model)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

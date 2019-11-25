@@ -63,7 +63,7 @@ object TypeofPath {
       Star
     ]
   ): TypeofPath = {
-    val __obj = js.Dynamic.literal(Arc = Arc, Circle = Circle, Ellipse = Ellipse, Line = Line, Rectangle = Rectangle, RegularPolygon = RegularPolygon, Star = Star)
+    val __obj = js.Dynamic.literal(Arc = Arc.asInstanceOf[js.Any], Circle = Circle.asInstanceOf[js.Any], Ellipse = Ellipse.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Rectangle = Rectangle.asInstanceOf[js.Any], RegularPolygon = RegularPolygon.asInstanceOf[js.Any], Star = Star.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofPath]
   }

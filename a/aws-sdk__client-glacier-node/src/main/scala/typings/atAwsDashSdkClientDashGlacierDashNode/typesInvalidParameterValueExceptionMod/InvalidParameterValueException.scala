@@ -34,6 +34,7 @@ import typings.atAwsDashSdkClientDashGlacierDashNode.typesSetVaultNotificationsE
 import typings.atAwsDashSdkClientDashGlacierDashNode.typesUploadArchiveExceptionsUnionMod.UploadArchiveExceptionsUnion
 import typings.atAwsDashSdkClientDashGlacierDashNode.typesUploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,13 +81,14 @@ trait InvalidParameterValueException
 object InvalidParameterValueException {
   @scala.inline
   def apply(
+    $metadata: ResponseMetadata,
     details: _InvalidParameterValueExceptionDetails,
     message: String,
     name: typings.atAwsDashSdkClientDashGlacierDashNode.atAwsDashSdkClientDashGlacierDashNodeStrings.InvalidParameterValueException,
     stack: String = null
   ): InvalidParameterValueException = {
-    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidParameterValueException]
   }
 }

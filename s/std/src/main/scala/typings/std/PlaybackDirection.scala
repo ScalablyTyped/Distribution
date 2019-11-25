@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait PlaybackDirection extends js.Object
 
+object PlaybackDirection {
+  @scala.inline
+  def alternate: typings.std.stdStrings.alternate = this.cast("alternate")
+  @scala.inline
+  def `alternate-reverse`: typings.std.stdStrings.`alternate-reverse` = this.cast("alternate-reverse")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def normal: typings.std.stdStrings.normal = this.cast("normal")
+  @scala.inline
+  def reverse: typings.std.stdStrings.reverse = this.cast("reverse")
+}
+

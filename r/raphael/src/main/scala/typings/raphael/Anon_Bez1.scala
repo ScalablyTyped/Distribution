@@ -27,7 +27,7 @@ object Anon_Bez1 {
     x: Double,
     y: Double
   ): Anon_Bez1 = {
-    val __obj = js.Dynamic.literal(bez1 = bez1, bez2 = bez2, segment1 = segment1, segment2 = segment2, t1 = t1, t2 = t2, x = x, y = y)
+    val __obj = js.Dynamic.literal(bez1 = bez1.asInstanceOf[js.Any], bez2 = bez2.asInstanceOf[js.Any], segment1 = segment1.asInstanceOf[js.Any], segment2 = segment2.asInstanceOf[js.Any], t1 = t1.asInstanceOf[js.Any], t2 = t2.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bez1]
   }

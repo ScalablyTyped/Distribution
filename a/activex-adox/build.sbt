@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "activex-adox"
-version := "6.0-dt-20190213Z-511e8b"
+version := "6.0-dt-20190213Z-50dfc7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "activex-adodb" % "6.1-dt-20190213Z-d56b70",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "activex-adodb" % "6.1-dt-20190213Z-a1dbb8",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

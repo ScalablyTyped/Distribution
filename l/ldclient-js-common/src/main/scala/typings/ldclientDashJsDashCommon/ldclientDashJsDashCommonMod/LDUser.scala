@@ -93,18 +93,18 @@ object LDUser {
     secondary: String = null
   ): LDUser = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous)
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (ip != null) __obj.updateDynamic("ip")(ip)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (privateAttributeNames != null) __obj.updateDynamic("privateAttributeNames")(privateAttributeNames)
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary)
+    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (privateAttributeNames != null) __obj.updateDynamic("privateAttributeNames")(privateAttributeNames.asInstanceOf[js.Any])
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDUser]
   }
 }

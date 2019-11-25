@@ -24,10 +24,10 @@ object styleObj {
     outlineThicknessPix: Int | Double = null
   ): styleObj = {
     val __obj = js.Dynamic.literal()
-    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (outlineOpacity != null) __obj.updateDynamic("outlineOpacity")(outlineOpacity.asInstanceOf[js.Any])
     if (outlineThicknessPix != null) __obj.updateDynamic("outlineThicknessPix")(outlineThicknessPix.asInstanceOf[js.Any])
     __obj.asInstanceOf[styleObj]

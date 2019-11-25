@@ -16,9 +16,9 @@ trait Detail extends js.Object {
 object Detail {
   @scala.inline
   def apply(amount: Currency, date: String, transaction_id: String, `type`: String, note: String = null): Detail = {
-    val __obj = js.Dynamic.literal(amount = amount, date = date, transaction_id = transaction_id)
-    __obj.updateDynamic("type")(`type`)
-    if (note != null) __obj.updateDynamic("note")(note)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], transaction_id = transaction_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     __obj.asInstanceOf[Detail]
   }
 }

@@ -19,8 +19,8 @@ object WriteTimeseriesRequest {
   @scala.inline
   def apply(commonLabels: Record[String, String] = null, timeseries: js.Array[TimeseriesPoint] = null): WriteTimeseriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (commonLabels != null) __obj.updateDynamic("commonLabels")(commonLabels)
-    if (timeseries != null) __obj.updateDynamic("timeseries")(timeseries)
+    if (commonLabels != null) __obj.updateDynamic("commonLabels")(commonLabels.asInstanceOf[js.Any])
+    if (timeseries != null) __obj.updateDynamic("timeseries")(timeseries.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteTimeseriesRequest]
   }
 }

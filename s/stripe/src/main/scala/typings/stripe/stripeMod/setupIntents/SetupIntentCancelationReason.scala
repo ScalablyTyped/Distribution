@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait SetupIntentCancelationReason extends js.Object
 
+object SetupIntentCancelationReason {
+  @scala.inline
+  def abandoned: typings.stripe.stripeStrings.abandoned = this.cast("abandoned")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def duplicate: typings.stripe.stripeStrings.duplicate = this.cast("duplicate")
+  @scala.inline
+  def requested_by_customer: typings.stripe.stripeStrings.requested_by_customer = this.cast("requested_by_customer")
+}
+

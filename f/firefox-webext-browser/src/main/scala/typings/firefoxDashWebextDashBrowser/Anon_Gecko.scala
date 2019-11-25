@@ -13,7 +13,7 @@ object Anon_Gecko {
   @scala.inline
   def apply(gecko: FirefoxSpecificProperties = null): Anon_Gecko = {
     val __obj = js.Dynamic.literal()
-    if (gecko != null) __obj.updateDynamic("gecko")(gecko)
+    if (gecko != null) __obj.updateDynamic("gecko")(gecko.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Gecko]
   }
 }

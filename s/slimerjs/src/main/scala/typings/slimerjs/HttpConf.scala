@@ -13,7 +13,7 @@ trait HttpConf extends js.Object {
 object HttpConf {
   @scala.inline
   def apply(data: js.Any, headers: js.Any, operation: String): HttpConf = {
-    val __obj = js.Dynamic.literal(data = data, headers = headers, operation = operation)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HttpConf]
   }

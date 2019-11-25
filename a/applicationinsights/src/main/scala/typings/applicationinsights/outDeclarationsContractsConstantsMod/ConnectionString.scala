@@ -24,12 +24,12 @@ object ConnectionString {
     location: String = null
   ): ConnectionString = {
     val __obj = js.Dynamic.literal()
-    if (authorization != null) __obj.updateDynamic("authorization")(authorization)
-    if (endpointsuffix != null) __obj.updateDynamic("endpointsuffix")(endpointsuffix)
-    if (ingestionendpoint != null) __obj.updateDynamic("ingestionendpoint")(ingestionendpoint)
-    if (instrumentationkey != null) __obj.updateDynamic("instrumentationkey")(instrumentationkey)
-    if (liveendpoint != null) __obj.updateDynamic("liveendpoint")(liveendpoint)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
+    if (endpointsuffix != null) __obj.updateDynamic("endpointsuffix")(endpointsuffix.asInstanceOf[js.Any])
+    if (ingestionendpoint != null) __obj.updateDynamic("ingestionendpoint")(ingestionendpoint.asInstanceOf[js.Any])
+    if (instrumentationkey != null) __obj.updateDynamic("instrumentationkey")(instrumentationkey.asInstanceOf[js.Any])
+    if (liveendpoint != null) __obj.updateDynamic("liveendpoint")(liveendpoint.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionString]
   }
 }

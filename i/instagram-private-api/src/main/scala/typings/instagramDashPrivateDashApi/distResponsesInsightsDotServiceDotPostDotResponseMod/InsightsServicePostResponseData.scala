@@ -11,7 +11,7 @@ trait InsightsServicePostResponseData extends js.Object {
 object InsightsServicePostResponseData {
   @scala.inline
   def apply(media: InsightsServicePostResponseMedia): InsightsServicePostResponseData = {
-    val __obj = js.Dynamic.literal(media = media)
+    val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServicePostResponseData]
   }

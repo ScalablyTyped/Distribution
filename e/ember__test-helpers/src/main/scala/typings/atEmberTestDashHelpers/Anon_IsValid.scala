@@ -12,7 +12,7 @@ trait Anon_IsValid extends js.Object {
 object Anon_IsValid {
   @scala.inline
   def apply(isValid: Boolean, message: String): Anon_IsValid = {
-    val __obj = js.Dynamic.literal(isValid = isValid, message = message)
+    val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsValid]
   }

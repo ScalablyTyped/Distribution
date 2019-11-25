@@ -49,11 +49,11 @@ object Anon_AssignmentMethod {
     sqlType: String = null
   ): Anon_AssignmentMethod = {
     val __obj = js.Dynamic.literal()
-    if (assignmentMethod != null) __obj.updateDynamic("assignmentMethod")(assignmentMethod)
+    if (assignmentMethod != null) __obj.updateDynamic("assignmentMethod")(assignmentMethod.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (sequenceName != null) __obj.updateDynamic("sequenceName")(sequenceName)
-    if (sqlType != null) __obj.updateDynamic("sqlType")(sqlType)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sequenceName != null) __obj.updateDynamic("sequenceName")(sequenceName.asInstanceOf[js.Any])
+    if (sqlType != null) __obj.updateDynamic("sqlType")(sqlType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AssignmentMethod]
   }
 }

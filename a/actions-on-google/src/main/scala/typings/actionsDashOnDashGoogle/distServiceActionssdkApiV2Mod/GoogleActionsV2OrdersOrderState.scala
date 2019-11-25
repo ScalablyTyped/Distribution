@@ -33,8 +33,8 @@ object GoogleActionsV2OrdersOrderState {
   @scala.inline
   def apply(label: String = null, state: String = null): GoogleActionsV2OrdersOrderState = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderState]
   }
 }

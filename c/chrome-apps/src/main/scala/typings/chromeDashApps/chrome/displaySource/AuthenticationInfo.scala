@@ -25,7 +25,7 @@ object AuthenticationInfo {
   @scala.inline
   def apply(data: String = null, method: ToStringLiteral[Anon_PBC, String, Exclude[String, PBC | PIN]] = null): AuthenticationInfo = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationInfo]
   }

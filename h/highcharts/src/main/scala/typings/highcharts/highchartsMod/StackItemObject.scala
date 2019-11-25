@@ -51,7 +51,7 @@ object StackItemObject {
     total: Double,
     x: Double
   ): StackItemObject = {
-    val __obj = js.Dynamic.literal(alignOptions = alignOptions, axis = axis, cumulative = cumulative, isNegative = isNegative, label = label, options = options, total = total, x = x)
+    val __obj = js.Dynamic.literal(alignOptions = alignOptions.asInstanceOf[js.Any], axis = axis.asInstanceOf[js.Any], cumulative = cumulative.asInstanceOf[js.Any], isNegative = isNegative.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StackItemObject]
   }

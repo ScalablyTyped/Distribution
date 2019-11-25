@@ -22,11 +22,11 @@ object ActionParameters {
     sync: js.UndefOr[Boolean] = js.undefined
   ): ActionParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asyncResult)) __obj.updateDynamic("asyncResult")(asyncResult)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(asyncResult)) __obj.updateDynamic("asyncResult")(asyncResult.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (preEmit != null) __obj.updateDynamic("preEmit")(js.Any.fromFunction1(preEmit))
     if (shouldEmit != null) __obj.updateDynamic("shouldEmit")(js.Any.fromFunction1(shouldEmit))
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionParameters]
   }
 }

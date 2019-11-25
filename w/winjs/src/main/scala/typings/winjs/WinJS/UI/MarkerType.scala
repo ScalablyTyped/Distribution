@@ -16,7 +16,7 @@ trait MarkerType extends js.Object {
 object MarkerType {
   @scala.inline
   def apply(advertisement: String, chapter: String, custom: String): MarkerType = {
-    val __obj = js.Dynamic.literal(advertisement = advertisement, chapter = chapter, custom = custom)
+    val __obj = js.Dynamic.literal(advertisement = advertisement.asInstanceOf[js.Any], chapter = chapter.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MarkerType]
   }

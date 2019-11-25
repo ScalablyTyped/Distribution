@@ -13,7 +13,7 @@ trait InteractionsGetRestrictionsForRepoResponse extends js.Object {
 object InteractionsGetRestrictionsForRepoResponse {
   @scala.inline
   def apply(expires_at: String, limit: String, origin: String): InteractionsGetRestrictionsForRepoResponse = {
-    val __obj = js.Dynamic.literal(expires_at = expires_at, limit = limit, origin = origin)
+    val __obj = js.Dynamic.literal(expires_at = expires_at.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InteractionsGetRestrictionsForRepoResponse]
   }

@@ -14,7 +14,7 @@ object LineSuffix {
   @scala.inline
   def apply(contents: typings.prettier.prettierMod.doc.builders.Doc, `type`: `line-suffix`): LineSuffix = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineSuffix]
   }
 }

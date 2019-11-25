@@ -18,8 +18,8 @@ object Anon_NotificationReplyMarkup {
     replyToMessage: Int | Double = null
   ): Anon_NotificationReplyMarkup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification)
-    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup)
+    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup.asInstanceOf[js.Any])
     if (replyToMessage != null) __obj.updateDynamic("replyToMessage")(replyToMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NotificationReplyMarkup]
   }

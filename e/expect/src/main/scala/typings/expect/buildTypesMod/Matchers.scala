@@ -214,10 +214,10 @@ trait Matchers[R] extends js.Object {
     * Instead of writing the snapshot value to a .snap file, it will be written into the source code automatically.
     * Check out [the Snapshot Testing guide](https://jestjs.io/docs/en/snapshot-testing) for more information.
     */
-  def toMatchInlineSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def toMatchInlineSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof R ]: unknown}
     */ typings.expect.expectStrings.Matchers with js.Any */](propertyMatchers: Partial[T]): R = js.native
-  def toMatchInlineSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def toMatchInlineSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof R ]: unknown}
     */ typings.expect.expectStrings.Matchers with js.Any */](propertyMatchers: Partial[T], snapshot: String): R = js.native
   def toMatchObject(expected: js.Array[_]): R = js.native
@@ -235,10 +235,10 @@ trait Matchers[R] extends js.Object {
     * This ensures that a value matches the most recent snapshot with property matchers.
     * Check out [the Snapshot Testing guide](https://jestjs.io/docs/en/snapshot-testing) for more information.
     */
-  def toMatchSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def toMatchSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof R ]: unknown}
     */ typings.expect.expectStrings.Matchers with js.Any */](propertyMatchers: Partial[T]): R = js.native
-  def toMatchSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def toMatchSnapshot[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof R ]: unknown}
     */ typings.expect.expectStrings.Matchers with js.Any */](propertyMatchers: Partial[T], snapshotName: String): R = js.native
   /**

@@ -37,12 +37,12 @@ object MetricsSubscription {
     `start-date`: String,
     status: String
   ): MetricsSubscription = {
-    val __obj = js.Dynamic.literal(arr = arr, currency = currency, external_id = external_id, id = id, mrr = mrr, plan = plan, quantity = quantity, status = status)
-    __obj.updateDynamic("billing-cycle")(`billing-cycle`)
-    __obj.updateDynamic("billing-cycle-count")(`billing-cycle-count`)
-    __obj.updateDynamic("currency-sign")(`currency-sign`)
-    __obj.updateDynamic("end-date")(`end-date`)
-    __obj.updateDynamic("start-date")(`start-date`)
+    val __obj = js.Dynamic.literal(arr = arr.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], external_id = external_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mrr = mrr.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("billing-cycle")(`billing-cycle`.asInstanceOf[js.Any])
+    __obj.updateDynamic("billing-cycle-count")(`billing-cycle-count`.asInstanceOf[js.Any])
+    __obj.updateDynamic("currency-sign")(`currency-sign`.asInstanceOf[js.Any])
+    __obj.updateDynamic("end-date")(`end-date`.asInstanceOf[js.Any])
+    __obj.updateDynamic("start-date")(`start-date`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsSubscription]
   }
 }

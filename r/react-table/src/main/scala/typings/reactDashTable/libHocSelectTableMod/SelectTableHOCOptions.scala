@@ -15,7 +15,7 @@ object SelectTableHOCOptions {
   @scala.inline
   def apply(floatingLeft: js.UndefOr[Boolean] = js.undefined): SelectTableHOCOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(floatingLeft)) __obj.updateDynamic("floatingLeft")(floatingLeft)
+    if (!js.isUndefined(floatingLeft)) __obj.updateDynamic("floatingLeft")(floatingLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectTableHOCOptions]
   }
 }

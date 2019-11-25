@@ -59,9 +59,9 @@ object Navigation {
     finalUrl: UrlTree = null,
     previousNavigation: Navigation = null
   ): Navigation = {
-    val __obj = js.Dynamic.literal(extractedUrl = extractedUrl, extras = extras, id = id, initialUrl = initialUrl.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
-    if (finalUrl != null) __obj.updateDynamic("finalUrl")(finalUrl)
-    if (previousNavigation != null) __obj.updateDynamic("previousNavigation")(previousNavigation)
+    val __obj = js.Dynamic.literal(extractedUrl = extractedUrl.asInstanceOf[js.Any], extras = extras.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], initialUrl = initialUrl.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
+    if (finalUrl != null) __obj.updateDynamic("finalUrl")(finalUrl.asInstanceOf[js.Any])
+    if (previousNavigation != null) __obj.updateDynamic("previousNavigation")(previousNavigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigation]
   }
 }

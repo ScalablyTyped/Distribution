@@ -67,16 +67,16 @@ object Options {
     templateUrl: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (inputBody != null) __obj.updateDynamic("inputBody")(inputBody.asInstanceOf[js.Any])
-    if (inputPath != null) __obj.updateDynamic("inputPath")(inputPath)
-    if (launchOptions != null) __obj.updateDynamic("launchOptions")(launchOptions)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath)
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf)
+    if (inputPath != null) __obj.updateDynamic("inputPath")(inputPath.asInstanceOf[js.Any])
+    if (launchOptions != null) __obj.updateDynamic("launchOptions")(launchOptions.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
+    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
     if (rendererDelay != null) __obj.updateDynamic("rendererDelay")(rendererDelay.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

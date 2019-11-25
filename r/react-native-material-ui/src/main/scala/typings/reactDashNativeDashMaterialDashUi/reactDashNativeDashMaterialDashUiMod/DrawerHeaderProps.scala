@@ -23,10 +23,10 @@ object DrawerHeaderProps {
     style: Anon_ContainerContentContainer = null
   ): DrawerHeaderProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerHeaderProps]
   }
 }

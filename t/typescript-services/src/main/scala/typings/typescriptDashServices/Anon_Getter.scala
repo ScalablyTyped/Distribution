@@ -14,7 +14,7 @@ trait Anon_Getter extends js.Object {
 object Anon_Getter {
   @scala.inline
   def apply(getter: GetAccessor, setter: SetAccessor): Anon_Getter = {
-    val __obj = js.Dynamic.literal(getter = getter, setter = setter)
+    val __obj = js.Dynamic.literal(getter = getter.asInstanceOf[js.Any], setter = setter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Getter]
   }

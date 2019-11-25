@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 // enums combinator
 //
 @js.native
-trait Enums extends Type[String] {
+trait Enums
+  extends Type[java.lang.String] {
   @JSName("meta")
   var meta_Enums: Anon_IdentityKindMap = js.native
 }

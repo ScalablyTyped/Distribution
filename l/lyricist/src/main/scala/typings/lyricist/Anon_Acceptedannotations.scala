@@ -27,7 +27,7 @@ object Anon_Acceptedannotations {
     unreviewed_annotations: Double,
     verified_annotations: Double
   ): Anon_Acceptedannotations = {
-    val __obj = js.Dynamic.literal(accepted_annotations = accepted_annotations, contributors = contributors, hot = hot, iq_earners = iq_earners, pageviews = pageviews, transcribers = transcribers, unreviewed_annotations = unreviewed_annotations, verified_annotations = verified_annotations)
+    val __obj = js.Dynamic.literal(accepted_annotations = accepted_annotations.asInstanceOf[js.Any], contributors = contributors.asInstanceOf[js.Any], hot = hot.asInstanceOf[js.Any], iq_earners = iq_earners.asInstanceOf[js.Any], pageviews = pageviews.asInstanceOf[js.Any], transcribers = transcribers.asInstanceOf[js.Any], unreviewed_annotations = unreviewed_annotations.asInstanceOf[js.Any], verified_annotations = verified_annotations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Acceptedannotations]
   }

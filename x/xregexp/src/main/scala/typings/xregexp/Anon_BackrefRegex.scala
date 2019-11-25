@@ -13,7 +13,7 @@ trait Anon_BackrefRegex extends js.Object {
 object Anon_BackrefRegex {
   @scala.inline
   def apply(backref: Double, regex: RegExp): Anon_BackrefRegex = {
-    val __obj = js.Dynamic.literal(backref = backref, regex = regex)
+    val __obj = js.Dynamic.literal(backref = backref.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackrefRegex]
   }

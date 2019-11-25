@@ -19,10 +19,10 @@ trait IndicesPutMappingParams extends GenericParams {
 object IndicesPutMappingParams {
   @scala.inline
   def apply(
-    body: js.Any,
     index: NameList,
     `type`: String,
     allowNoIndices: js.UndefOr[Boolean] = js.undefined,
+    body: js.Any = null,
     expandWildcards: ExpandWildcards = null,
     filterPath: String | js.Array[String] = null,
     ignore: Double | js.Array[Double] = null,
@@ -35,20 +35,21 @@ object IndicesPutMappingParams {
     timeout: TimeSpan = null,
     updateAllTypes: js.UndefOr[Boolean] = js.undefined
   ): IndicesPutMappingParams = {
-    val __obj = js.Dynamic.literal(body = body, index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices)
-    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable)
-    if (!js.isUndefined(includeTypeName)) __obj.updateDynamic("includeTypeName")(includeTypeName)
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout)
+    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTypeName)) __obj.updateDynamic("includeTypeName")(includeTypeName.asInstanceOf[js.Any])
+    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
-    if (!js.isUndefined(updateAllTypes)) __obj.updateDynamic("updateAllTypes")(updateAllTypes)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateAllTypes)) __obj.updateDynamic("updateAllTypes")(updateAllTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesPutMappingParams]
   }
 }

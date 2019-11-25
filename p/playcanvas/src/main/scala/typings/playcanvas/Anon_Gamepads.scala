@@ -17,9 +17,9 @@ object Anon_Gamepads {
   @scala.inline
   def apply(gamepads: GamePads = null, keyboard: Keyboard = null, mouse: Mouse = null): Anon_Gamepads = {
     val __obj = js.Dynamic.literal()
-    if (gamepads != null) __obj.updateDynamic("gamepads")(gamepads)
-    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard)
-    if (mouse != null) __obj.updateDynamic("mouse")(mouse)
+    if (gamepads != null) __obj.updateDynamic("gamepads")(gamepads.asInstanceOf[js.Any])
+    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (mouse != null) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Gamepads]
   }
 }

@@ -28,14 +28,14 @@ object SchedulerMessagesRecurrenceMessages {
     editWindowTitle: String = null
   ): SchedulerMessagesRecurrenceMessages = {
     val __obj = js.Dynamic.literal()
-    if (deleteRecurring != null) __obj.updateDynamic("deleteRecurring")(deleteRecurring)
-    if (deleteWindowOccurrence != null) __obj.updateDynamic("deleteWindowOccurrence")(deleteWindowOccurrence)
-    if (deleteWindowSeries != null) __obj.updateDynamic("deleteWindowSeries")(deleteWindowSeries)
-    if (deleteWindowTitle != null) __obj.updateDynamic("deleteWindowTitle")(deleteWindowTitle)
-    if (editRecurring != null) __obj.updateDynamic("editRecurring")(editRecurring)
-    if (editWindowOccurrence != null) __obj.updateDynamic("editWindowOccurrence")(editWindowOccurrence)
-    if (editWindowSeries != null) __obj.updateDynamic("editWindowSeries")(editWindowSeries)
-    if (editWindowTitle != null) __obj.updateDynamic("editWindowTitle")(editWindowTitle)
+    if (deleteRecurring != null) __obj.updateDynamic("deleteRecurring")(deleteRecurring.asInstanceOf[js.Any])
+    if (deleteWindowOccurrence != null) __obj.updateDynamic("deleteWindowOccurrence")(deleteWindowOccurrence.asInstanceOf[js.Any])
+    if (deleteWindowSeries != null) __obj.updateDynamic("deleteWindowSeries")(deleteWindowSeries.asInstanceOf[js.Any])
+    if (deleteWindowTitle != null) __obj.updateDynamic("deleteWindowTitle")(deleteWindowTitle.asInstanceOf[js.Any])
+    if (editRecurring != null) __obj.updateDynamic("editRecurring")(editRecurring.asInstanceOf[js.Any])
+    if (editWindowOccurrence != null) __obj.updateDynamic("editWindowOccurrence")(editWindowOccurrence.asInstanceOf[js.Any])
+    if (editWindowSeries != null) __obj.updateDynamic("editWindowSeries")(editWindowSeries.asInstanceOf[js.Any])
+    if (editWindowTitle != null) __obj.updateDynamic("editWindowTitle")(editWindowTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceMessages]
   }
 }

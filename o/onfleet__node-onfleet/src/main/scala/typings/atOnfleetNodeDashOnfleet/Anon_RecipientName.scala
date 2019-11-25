@@ -20,10 +20,10 @@ object Anon_RecipientName {
     useMerchantForProxy: String = null
   ): Anon_RecipientName = {
     val __obj = js.Dynamic.literal()
-    if (recipientName != null) __obj.updateDynamic("recipientName")(recipientName)
-    if (recipientNotes != null) __obj.updateDynamic("recipientNotes")(recipientNotes)
-    if (recipientSkipSMSNotifications != null) __obj.updateDynamic("recipientSkipSMSNotifications")(recipientSkipSMSNotifications)
-    if (useMerchantForProxy != null) __obj.updateDynamic("useMerchantForProxy")(useMerchantForProxy)
+    if (recipientName != null) __obj.updateDynamic("recipientName")(recipientName.asInstanceOf[js.Any])
+    if (recipientNotes != null) __obj.updateDynamic("recipientNotes")(recipientNotes.asInstanceOf[js.Any])
+    if (recipientSkipSMSNotifications != null) __obj.updateDynamic("recipientSkipSMSNotifications")(recipientSkipSMSNotifications.asInstanceOf[js.Any])
+    if (useMerchantForProxy != null) __obj.updateDynamic("useMerchantForProxy")(useMerchantForProxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RecipientName]
   }
 }

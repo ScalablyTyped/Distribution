@@ -22,11 +22,11 @@ object SanitizeHtmlOptions {
     selfClosing: js.Array[String] = null
   ): SanitizeHtmlOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowedAttributes != null) __obj.updateDynamic("allowedAttributes")(allowedAttributes)
-    if (allowedSchemes != null) __obj.updateDynamic("allowedSchemes")(allowedSchemes)
-    if (allowedTags != null) __obj.updateDynamic("allowedTags")(allowedTags)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
-    if (selfClosing != null) __obj.updateDynamic("selfClosing")(selfClosing)
+    if (allowedAttributes != null) __obj.updateDynamic("allowedAttributes")(allowedAttributes.asInstanceOf[js.Any])
+    if (allowedSchemes != null) __obj.updateDynamic("allowedSchemes")(allowedSchemes.asInstanceOf[js.Any])
+    if (allowedTags != null) __obj.updateDynamic("allowedTags")(allowedTags.asInstanceOf[js.Any])
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
+    if (selfClosing != null) __obj.updateDynamic("selfClosing")(selfClosing.asInstanceOf[js.Any])
     __obj.asInstanceOf[SanitizeHtmlOptions]
   }
 }

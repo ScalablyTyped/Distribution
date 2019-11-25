@@ -13,7 +13,7 @@ trait FileInfo extends js.Object {
 object FileInfo {
   @scala.inline
   def apply(accepted: js.Array[File], attachments: js.Array[File]): FileInfo = {
-    val __obj = js.Dynamic.literal(accepted = accepted, attachments = attachments)
+    val __obj = js.Dynamic.literal(accepted = accepted.asInstanceOf[js.Any], attachments = attachments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileInfo]
   }

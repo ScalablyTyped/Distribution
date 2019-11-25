@@ -13,8 +13,8 @@ object Anon_Enter {
   @scala.inline
   def apply(enter: String = null, exit: String = null): Anon_Enter = {
     val __obj = js.Dynamic.literal()
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (exit != null) __obj.updateDynamic("exit")(exit)
+    if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Enter]
   }
 }

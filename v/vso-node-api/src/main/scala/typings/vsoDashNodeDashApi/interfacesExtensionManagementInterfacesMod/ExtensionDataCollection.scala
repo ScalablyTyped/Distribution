@@ -26,7 +26,7 @@ trait ExtensionDataCollection extends js.Object {
 object ExtensionDataCollection {
   @scala.inline
   def apply(collectionName: String, documents: js.Array[_], scopeType: String, scopeValue: String): ExtensionDataCollection = {
-    val __obj = js.Dynamic.literal(collectionName = collectionName, documents = documents, scopeType = scopeType, scopeValue = scopeValue)
+    val __obj = js.Dynamic.literal(collectionName = collectionName.asInstanceOf[js.Any], documents = documents.asInstanceOf[js.Any], scopeType = scopeType.asInstanceOf[js.Any], scopeValue = scopeValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionDataCollection]
   }

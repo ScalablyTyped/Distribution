@@ -71,7 +71,7 @@ object CoordinateConversionViewModelProperties {
   ): CoordinateConversionViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (conversions != null) __obj.updateDynamic("conversions")(conversions.asInstanceOf[js.Any])
-    if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation)
+    if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation.asInstanceOf[js.Any])
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     if (locationSymbol != null) __obj.updateDynamic("locationSymbol")(locationSymbol.asInstanceOf[js.Any])

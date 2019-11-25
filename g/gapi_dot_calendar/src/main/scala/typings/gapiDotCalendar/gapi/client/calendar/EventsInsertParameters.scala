@@ -22,10 +22,10 @@ object EventsInsertParameters {
     sendNotifications: js.UndefOr[Boolean] = js.undefined,
     supportsAttachments: js.UndefOr[Boolean] = js.undefined
   ): EventsInsertParameters = {
-    val __obj = js.Dynamic.literal(calendarId = calendarId, resource = resource)
+    val __obj = js.Dynamic.literal(calendarId = calendarId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     if (maxAttendees != null) __obj.updateDynamic("maxAttendees")(maxAttendees.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendNotifications)) __obj.updateDynamic("sendNotifications")(sendNotifications)
-    if (!js.isUndefined(supportsAttachments)) __obj.updateDynamic("supportsAttachments")(supportsAttachments)
+    if (!js.isUndefined(sendNotifications)) __obj.updateDynamic("sendNotifications")(sendNotifications.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsAttachments)) __obj.updateDynamic("supportsAttachments")(supportsAttachments.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventsInsertParameters]
   }
 }

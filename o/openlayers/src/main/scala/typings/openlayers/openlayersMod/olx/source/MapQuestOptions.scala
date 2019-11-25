@@ -23,11 +23,11 @@ object MapQuestOptions {
     tileLoadFunction: (/* tile */ Tile, /* url */ String) => Unit = null,
     url: String = null
   ): MapQuestOptions = {
-    val __obj = js.Dynamic.literal(layer = layer)
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
     if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2(tileLoadFunction))
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapQuestOptions]
   }
 }

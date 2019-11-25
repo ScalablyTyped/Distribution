@@ -23,7 +23,7 @@ object Anon_FinishTimeAscending {
     startTimeAscending: Double,
     startTimeDescending: Double
   ): Anon_FinishTimeAscending = {
-    val __obj = js.Dynamic.literal(finishTimeAscending = finishTimeAscending, finishTimeDescending = finishTimeDescending, queueTimeAscending = queueTimeAscending, queueTimeDescending = queueTimeDescending, startTimeAscending = startTimeAscending, startTimeDescending = startTimeDescending)
+    val __obj = js.Dynamic.literal(finishTimeAscending = finishTimeAscending.asInstanceOf[js.Any], finishTimeDescending = finishTimeDescending.asInstanceOf[js.Any], queueTimeAscending = queueTimeAscending.asInstanceOf[js.Any], queueTimeDescending = queueTimeDescending.asInstanceOf[js.Any], startTimeAscending = startTimeAscending.asInstanceOf[js.Any], startTimeDescending = startTimeDescending.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FinishTimeAscending]
   }

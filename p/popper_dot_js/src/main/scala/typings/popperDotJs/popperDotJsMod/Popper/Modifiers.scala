@@ -48,17 +48,17 @@ object Modifiers {
     shift: typings.popperDotJs.popperDotJsMod.Popper.BaseModifier = null
   ): Modifiers = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (applyStyle != null) __obj.updateDynamic("applyStyle")(applyStyle)
-    if (arrow != null) __obj.updateDynamic("arrow")(arrow)
-    if (computeStyle != null) __obj.updateDynamic("computeStyle")(computeStyle)
-    if (flip != null) __obj.updateDynamic("flip")(flip)
-    if (hide != null) __obj.updateDynamic("hide")(hide)
-    if (inner != null) __obj.updateDynamic("inner")(inner)
-    if (keepTogether != null) __obj.updateDynamic("keepTogether")(keepTogether)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (preventOverflow != null) __obj.updateDynamic("preventOverflow")(preventOverflow)
-    if (shift != null) __obj.updateDynamic("shift")(shift)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (applyStyle != null) __obj.updateDynamic("applyStyle")(applyStyle.asInstanceOf[js.Any])
+    if (arrow != null) __obj.updateDynamic("arrow")(arrow.asInstanceOf[js.Any])
+    if (computeStyle != null) __obj.updateDynamic("computeStyle")(computeStyle.asInstanceOf[js.Any])
+    if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (inner != null) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
+    if (keepTogether != null) __obj.updateDynamic("keepTogether")(keepTogether.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (preventOverflow != null) __obj.updateDynamic("preventOverflow")(preventOverflow.asInstanceOf[js.Any])
+    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
     __obj.asInstanceOf[Modifiers]
   }
 }

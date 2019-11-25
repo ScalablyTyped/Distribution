@@ -21,7 +21,7 @@ object IamTokenData {
     refresh_token: String,
     token_type: String
   ): IamTokenData = {
-    val __obj = js.Dynamic.literal(access_token = access_token, expiration = expiration, expires_in = expires_in, refresh_token = refresh_token, token_type = token_type)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], refresh_token = refresh_token.asInstanceOf[js.Any], token_type = token_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IamTokenData]
   }

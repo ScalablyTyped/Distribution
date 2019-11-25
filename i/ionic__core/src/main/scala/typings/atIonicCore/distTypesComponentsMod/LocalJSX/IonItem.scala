@@ -8,8 +8,6 @@ import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.none
 import typings.atIonicCore.atIonicCoreStrings.reset
 import typings.atIonicCore.atIonicCoreStrings.submit
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +20,9 @@ trait IonItem extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * If `true`, a detail arrow will appear on the item. Defaults to `false` unless the `mode` is `ios` and an `href` or `button` property is present.
     */
@@ -58,7 +58,9 @@ trait IonItem extends js.Object {
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: js.UndefOr[RouterDirection] = js.undefined
+  var routerDirection: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
+  ] = js.undefined
   /**
     * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
     */
@@ -73,7 +75,7 @@ object IonItem {
   @scala.inline
   def apply(
     button: js.UndefOr[Boolean] = js.undefined,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     detail: js.UndefOr[Boolean] = js.undefined,
     detailIcon: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -82,23 +84,23 @@ object IonItem {
     lines: full | inset | none = null,
     mode: ios | md = null,
     rel: String = null,
-    routerDirection: RouterDirection = null,
+    routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = null,
     target: String = null,
     `type`: submit | reset | button = null
   ): IonItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button)
+    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(detail)) __obj.updateDynamic("detail")(detail)
-    if (detailIcon != null) __obj.updateDynamic("detailIcon")(detailIcon)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (download != null) __obj.updateDynamic("download")(download)
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (!js.isUndefined(detail)) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (detailIcon != null) __obj.updateDynamic("detailIcon")(detailIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel)
-    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonItem]
   }

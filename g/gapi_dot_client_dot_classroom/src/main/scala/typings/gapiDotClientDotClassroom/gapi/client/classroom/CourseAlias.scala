@@ -22,7 +22,7 @@ object CourseAlias {
   @scala.inline
   def apply(alias: String = null): CourseAlias = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     __obj.asInstanceOf[CourseAlias]
   }
 }

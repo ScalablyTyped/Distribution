@@ -22,11 +22,11 @@ object Anon_Face {
     size: String = null
   ): Anon_Face = {
     val __obj = js.Dynamic.literal()
-    if (face != null) __obj.updateDynamic("face")(face)
-    if (family != null) __obj.updateDynamic("family")(family)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (face != null) __obj.updateDynamic("face")(face.asInstanceOf[js.Any])
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Face]
   }
 }

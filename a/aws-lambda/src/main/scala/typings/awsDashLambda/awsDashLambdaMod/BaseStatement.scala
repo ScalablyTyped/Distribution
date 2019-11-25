@@ -13,9 +13,9 @@ trait BaseStatement extends js.Object {
 object BaseStatement {
   @scala.inline
   def apply(Effect: String, Condition: ConditionBlock = null, Sid: String = null): BaseStatement = {
-    val __obj = js.Dynamic.literal(Effect = Effect)
-    if (Condition != null) __obj.updateDynamic("Condition")(Condition)
-    if (Sid != null) __obj.updateDynamic("Sid")(Sid)
+    val __obj = js.Dynamic.literal(Effect = Effect.asInstanceOf[js.Any])
+    if (Condition != null) __obj.updateDynamic("Condition")(Condition.asInstanceOf[js.Any])
+    if (Sid != null) __obj.updateDynamic("Sid")(Sid.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseStatement]
   }
 }

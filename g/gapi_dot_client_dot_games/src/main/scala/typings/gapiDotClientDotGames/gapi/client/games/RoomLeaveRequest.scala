@@ -33,9 +33,9 @@ object RoomLeaveRequest {
   @scala.inline
   def apply(kind: String = null, leaveDiagnostics: RoomLeaveDiagnostics = null, reason: String = null): RoomLeaveRequest = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (leaveDiagnostics != null) __obj.updateDynamic("leaveDiagnostics")(leaveDiagnostics)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (leaveDiagnostics != null) __obj.updateDynamic("leaveDiagnostics")(leaveDiagnostics.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomLeaveRequest]
   }
 }

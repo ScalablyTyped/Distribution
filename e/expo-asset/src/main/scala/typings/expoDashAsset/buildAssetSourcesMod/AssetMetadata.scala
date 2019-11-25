@@ -31,12 +31,12 @@ object AssetMetadata {
     uri: String = null,
     width: Int | Double = null
   ): AssetMetadata = {
-    val __obj = js.Dynamic.literal(hash = hash, httpServerLocation = httpServerLocation, name = name, scales = scales)
-    __obj.updateDynamic("type")(`type`)
-    if (fileHashes != null) __obj.updateDynamic("fileHashes")(fileHashes)
-    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], httpServerLocation = httpServerLocation.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scales = scales.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (fileHashes != null) __obj.updateDynamic("fileHashes")(fileHashes.asInstanceOf[js.Any])
+    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetMetadata]
   }

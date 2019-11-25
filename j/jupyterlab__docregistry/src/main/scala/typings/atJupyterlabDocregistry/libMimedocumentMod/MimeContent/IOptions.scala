@@ -44,7 +44,7 @@ object IOptions {
     renderer: IRenderer,
     dataType: string | json = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(context = context, mimeType = mimeType, renderTimeout = renderTimeout, renderer = renderer)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], renderTimeout = renderTimeout.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

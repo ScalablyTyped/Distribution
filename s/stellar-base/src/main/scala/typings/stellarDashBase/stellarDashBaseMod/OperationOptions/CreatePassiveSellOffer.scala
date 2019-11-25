@@ -21,8 +21,8 @@ object CreatePassiveSellOffer {
     selling: Asset,
     source: String = null
   ): CreatePassiveSellOffer = {
-    val __obj = js.Dynamic.literal(amount = amount, buying = buying, price = price.asInstanceOf[js.Any], selling = selling)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], buying = buying.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], selling = selling.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePassiveSellOffer]
   }
 }

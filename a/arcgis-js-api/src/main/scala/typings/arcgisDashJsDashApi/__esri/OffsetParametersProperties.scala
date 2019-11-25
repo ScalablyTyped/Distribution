@@ -55,10 +55,10 @@ object OffsetParametersProperties {
   ): OffsetParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (bevelRatio != null) __obj.updateDynamic("bevelRatio")(bevelRatio.asInstanceOf[js.Any])
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
     if (offsetDistance != null) __obj.updateDynamic("offsetDistance")(offsetDistance.asInstanceOf[js.Any])
-    if (offsetHow != null) __obj.updateDynamic("offsetHow")(offsetHow)
-    if (offsetUnit != null) __obj.updateDynamic("offsetUnit")(offsetUnit)
+    if (offsetHow != null) __obj.updateDynamic("offsetHow")(offsetHow.asInstanceOf[js.Any])
+    if (offsetUnit != null) __obj.updateDynamic("offsetUnit")(offsetUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetParametersProperties]
   }
 }

@@ -12,7 +12,7 @@ trait ISuggestState[T] extends js.Object {
 object ISuggestState {
   @scala.inline
   def apply[T](isOpen: Boolean, selectedItem: T = null): ISuggestState[T] = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuggestState[T]]
   }

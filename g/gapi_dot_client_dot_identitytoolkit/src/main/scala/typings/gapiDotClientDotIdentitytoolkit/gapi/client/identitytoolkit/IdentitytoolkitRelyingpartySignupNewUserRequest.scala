@@ -48,18 +48,18 @@ object IdentitytoolkitRelyingpartySignupNewUserRequest {
     photoUrl: String = null
   ): IdentitytoolkitRelyingpartySignupNewUserRequest = {
     val __obj = js.Dynamic.literal()
-    if (captchaChallenge != null) __obj.updateDynamic("captchaChallenge")(captchaChallenge)
-    if (captchaResponse != null) __obj.updateDynamic("captchaResponse")(captchaResponse)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
-    if (localId != null) __obj.updateDynamic("localId")(localId)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
+    if (captchaChallenge != null) __obj.updateDynamic("captchaChallenge")(captchaChallenge.asInstanceOf[js.Any])
+    if (captchaResponse != null) __obj.updateDynamic("captchaResponse")(captchaResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySignupNewUserRequest]
   }
 }

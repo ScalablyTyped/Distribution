@@ -30,11 +30,11 @@ object IDetectIntentResponse {
     webhookStatus: IStatus = null
   ): IDetectIntentResponse = {
     val __obj = js.Dynamic.literal()
-    if (outputAudio != null) __obj.updateDynamic("outputAudio")(outputAudio)
-    if (outputAudioConfig != null) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig)
-    if (queryResult != null) __obj.updateDynamic("queryResult")(queryResult)
-    if (responseId != null) __obj.updateDynamic("responseId")(responseId)
-    if (webhookStatus != null) __obj.updateDynamic("webhookStatus")(webhookStatus)
+    if (outputAudio != null) __obj.updateDynamic("outputAudio")(outputAudio.asInstanceOf[js.Any])
+    if (outputAudioConfig != null) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
+    if (queryResult != null) __obj.updateDynamic("queryResult")(queryResult.asInstanceOf[js.Any])
+    if (responseId != null) __obj.updateDynamic("responseId")(responseId.asInstanceOf[js.Any])
+    if (webhookStatus != null) __obj.updateDynamic("webhookStatus")(webhookStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetectIntentResponse]
   }
 }

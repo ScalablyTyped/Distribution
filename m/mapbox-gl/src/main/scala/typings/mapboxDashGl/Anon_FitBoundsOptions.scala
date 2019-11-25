@@ -22,10 +22,10 @@ object Anon_FitBoundsOptions {
     trackUserLocation: js.UndefOr[Boolean] = js.undefined
   ): Anon_FitBoundsOptions = {
     val __obj = js.Dynamic.literal()
-    if (fitBoundsOptions != null) __obj.updateDynamic("fitBoundsOptions")(fitBoundsOptions)
-    if (positionOptions != null) __obj.updateDynamic("positionOptions")(positionOptions)
-    if (!js.isUndefined(showUserLocation)) __obj.updateDynamic("showUserLocation")(showUserLocation)
-    if (!js.isUndefined(trackUserLocation)) __obj.updateDynamic("trackUserLocation")(trackUserLocation)
+    if (fitBoundsOptions != null) __obj.updateDynamic("fitBoundsOptions")(fitBoundsOptions.asInstanceOf[js.Any])
+    if (positionOptions != null) __obj.updateDynamic("positionOptions")(positionOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(showUserLocation)) __obj.updateDynamic("showUserLocation")(showUserLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackUserLocation)) __obj.updateDynamic("trackUserLocation")(trackUserLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FitBoundsOptions]
   }
 }

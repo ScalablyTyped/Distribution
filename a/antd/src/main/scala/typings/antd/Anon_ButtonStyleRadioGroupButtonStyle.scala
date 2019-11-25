@@ -12,7 +12,7 @@ trait Anon_ButtonStyleRadioGroupButtonStyle extends js.Object {
 object Anon_ButtonStyleRadioGroupButtonStyle {
   @scala.inline
   def apply(buttonStyle: RadioGroupButtonStyle): Anon_ButtonStyleRadioGroupButtonStyle = {
-    val __obj = js.Dynamic.literal(buttonStyle = buttonStyle)
+    val __obj = js.Dynamic.literal(buttonStyle = buttonStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ButtonStyleRadioGroupButtonStyle]
   }

@@ -16,8 +16,8 @@ object WorkflowConfigurationOptions {
     task_routing: TaskRoutingConfigurationOptions = null
   ): WorkflowConfigurationOptions = {
     val __obj = js.Dynamic.literal()
-    if (taskRouting != null) __obj.updateDynamic("taskRouting")(taskRouting)
-    if (task_routing != null) __obj.updateDynamic("task_routing")(task_routing)
+    if (taskRouting != null) __obj.updateDynamic("taskRouting")(taskRouting.asInstanceOf[js.Any])
+    if (task_routing != null) __obj.updateDynamic("task_routing")(task_routing.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowConfigurationOptions]
   }
 }

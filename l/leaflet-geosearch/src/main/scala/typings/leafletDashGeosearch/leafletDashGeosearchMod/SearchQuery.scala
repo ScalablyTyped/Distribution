@@ -11,7 +11,7 @@ trait SearchQuery extends js.Object {
 object SearchQuery {
   @scala.inline
   def apply(query: String): SearchQuery = {
-    val __obj = js.Dynamic.literal(query = query)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchQuery]
   }

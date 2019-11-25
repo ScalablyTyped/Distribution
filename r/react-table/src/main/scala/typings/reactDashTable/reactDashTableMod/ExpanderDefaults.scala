@@ -18,7 +18,7 @@ trait ExpanderDefaults extends js.Object {
 object ExpanderDefaults {
   @scala.inline
   def apply(filterable: Boolean, resizable: Boolean, sortable: Boolean, width: Double): ExpanderDefaults = {
-    val __obj = js.Dynamic.literal(filterable = filterable, resizable = resizable, sortable = sortable, width = width)
+    val __obj = js.Dynamic.literal(filterable = filterable.asInstanceOf[js.Any], resizable = resizable.asInstanceOf[js.Any], sortable = sortable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExpanderDefaults]
   }

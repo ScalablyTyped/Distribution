@@ -100,21 +100,21 @@ object IVehicleSpec {
     weightUnit: String = null
   ): IVehicleSpec = {
     val __obj = js.Dynamic.literal()
-    if (dimensionUnit != null) __obj.updateDynamic("dimensionUnit")(dimensionUnit)
-    if (!js.isUndefined(vehicleAvoidCrossWind)) __obj.updateDynamic("vehicleAvoidCrossWind")(vehicleAvoidCrossWind)
-    if (!js.isUndefined(vehicleAvoidGroundingRisk)) __obj.updateDynamic("vehicleAvoidGroundingRisk")(vehicleAvoidGroundingRisk)
+    if (dimensionUnit != null) __obj.updateDynamic("dimensionUnit")(dimensionUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(vehicleAvoidCrossWind)) __obj.updateDynamic("vehicleAvoidCrossWind")(vehicleAvoidCrossWind.asInstanceOf[js.Any])
+    if (!js.isUndefined(vehicleAvoidGroundingRisk)) __obj.updateDynamic("vehicleAvoidGroundingRisk")(vehicleAvoidGroundingRisk.asInstanceOf[js.Any])
     if (vehicleAxles != null) __obj.updateDynamic("vehicleAxles")(vehicleAxles.asInstanceOf[js.Any])
-    if (vehicleHazardousMaterials != null) __obj.updateDynamic("vehicleHazardousMaterials")(vehicleHazardousMaterials)
-    if (vehicleHazardousPermits != null) __obj.updateDynamic("vehicleHazardousPermits")(vehicleHazardousPermits)
+    if (vehicleHazardousMaterials != null) __obj.updateDynamic("vehicleHazardousMaterials")(vehicleHazardousMaterials.asInstanceOf[js.Any])
+    if (vehicleHazardousPermits != null) __obj.updateDynamic("vehicleHazardousPermits")(vehicleHazardousPermits.asInstanceOf[js.Any])
     if (vehicleHeight != null) __obj.updateDynamic("vehicleHeight")(vehicleHeight.asInstanceOf[js.Any])
     if (vehicleLength != null) __obj.updateDynamic("vehicleLength")(vehicleLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(vehicleMaxGradient)) __obj.updateDynamic("vehicleMaxGradient")(vehicleMaxGradient)
+    if (!js.isUndefined(vehicleMaxGradient)) __obj.updateDynamic("vehicleMaxGradient")(vehicleMaxGradient.asInstanceOf[js.Any])
     if (vehicleMinTurnRadius != null) __obj.updateDynamic("vehicleMinTurnRadius")(vehicleMinTurnRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(vehicleSemi)) __obj.updateDynamic("vehicleSemi")(vehicleSemi)
+    if (!js.isUndefined(vehicleSemi)) __obj.updateDynamic("vehicleSemi")(vehicleSemi.asInstanceOf[js.Any])
     if (vehicleTrailers != null) __obj.updateDynamic("vehicleTrailers")(vehicleTrailers.asInstanceOf[js.Any])
     if (vehicleWeight != null) __obj.updateDynamic("vehicleWeight")(vehicleWeight.asInstanceOf[js.Any])
     if (vehicleWidth != null) __obj.updateDynamic("vehicleWidth")(vehicleWidth.asInstanceOf[js.Any])
-    if (weightUnit != null) __obj.updateDynamic("weightUnit")(weightUnit)
+    if (weightUnit != null) __obj.updateDynamic("weightUnit")(weightUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVehicleSpec]
   }
 }

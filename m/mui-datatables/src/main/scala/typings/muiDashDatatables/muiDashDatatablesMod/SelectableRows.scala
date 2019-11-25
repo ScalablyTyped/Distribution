@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait SelectableRows extends js.Object
 
+object SelectableRows {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def multiple: typings.muiDashDatatables.muiDashDatatablesStrings.multiple = this.cast("multiple")
+  @scala.inline
+  def none: typings.muiDashDatatables.muiDashDatatablesStrings.none = this.cast("none")
+  @scala.inline
+  def single: typings.muiDashDatatables.muiDashDatatablesStrings.single = this.cast("single")
+}
+

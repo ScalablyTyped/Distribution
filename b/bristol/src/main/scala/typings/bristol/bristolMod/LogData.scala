@@ -23,10 +23,10 @@ object LogData {
   ): LogData = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogData]
   }
 }

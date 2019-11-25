@@ -21,7 +21,7 @@ object Stats {
     testRegex: Double,
     testPathPattern: Int | Double = null
   ): Stats = {
-    val __obj = js.Dynamic.literal(roots = roots, testMatch = testMatch, testPathIgnorePatterns = testPathIgnorePatterns, testRegex = testRegex)
+    val __obj = js.Dynamic.literal(roots = roots.asInstanceOf[js.Any], testMatch = testMatch.asInstanceOf[js.Any], testPathIgnorePatterns = testPathIgnorePatterns.asInstanceOf[js.Any], testRegex = testRegex.asInstanceOf[js.Any])
     if (testPathPattern != null) __obj.updateDynamic("testPathPattern")(testPathPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]
   }

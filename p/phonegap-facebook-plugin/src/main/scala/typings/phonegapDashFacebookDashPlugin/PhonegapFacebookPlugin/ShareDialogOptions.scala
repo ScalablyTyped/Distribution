@@ -22,7 +22,7 @@ trait ShareDialogOptions extends BaseDialogOptions {
 object ShareDialogOptions {
   @scala.inline
   def apply(href: String, method: String): ShareDialogOptions = {
-    val __obj = js.Dynamic.literal(href = href, method = method)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShareDialogOptions]
   }

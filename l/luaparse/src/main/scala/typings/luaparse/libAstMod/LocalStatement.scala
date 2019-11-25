@@ -20,9 +20,9 @@ object LocalStatement {
     variables: js.Array[Identifier],
     loc: Anon_End = null
   ): LocalStatement = {
-    val __obj = js.Dynamic.literal(init = init, variables = variables)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalStatement]
   }
 }

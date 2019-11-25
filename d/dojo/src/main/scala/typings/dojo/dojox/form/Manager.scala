@@ -1,11 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_Boolean
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyFunction
 import typings.dojo.dijit._Widget
 import typings.dojo.dijit.form._FormWidget
 import typings.dojo.dojoStrings.`accept-charset`
@@ -41,7 +36,7 @@ import scala.scalajs.js.annotation._
 - typings.dojo.dojox.form.manager._DisplayMixin because Inheritance from two classes. Inlined gatherDisplayState, hide, show
 - typings.dojo.dojox.form.manager._EnableMixin because Inheritance from two classes. Inlined disable, enable, gatherEnableState
 - typings.dojo.dojox.form.manager._ValueMixin because Inheritance from two classes. Inlined elementValue, gatherFormValues, setFormValues
-- typings.dojo.dojox.form.manager._FormMixin because Inheritance from two classes. Inlined accept, `accept-charset`, action, encType, method, name, target, isValid_Original, reset, submit, validate, onReset, onSubmit
+- typings.dojo.dojox.form.manager._FormMixin because Inheritance from two classes. Inlined accept, `accept-charset`, action, encType, method, name, target, reset, submit, validate, onReset, onSubmit
 - typings.dojo.dojox.form.manager._NodeMixin because Inheritance from two classes. Inlined formNodeValue, formNodeValue, formNodeValue, inspectFormNodes, registerNode, registerNode, registerNodeDescendants, registerNodeDescendants, unregisterNode, unregisterNodeDescendants, unregisterNodeDescendants
 - typings.dojo.dojox.form.manager._Mixin because Inheritance from two classes. Inlined watching, destroy, formPointValue, formPointValue, formPointValue, formWidgetValue, formWidgetValue, formWidgetValue, inspect, inspectAttachedPoints, inspectFormWidgets, registerWidget, registerWidget, registerWidget, registerWidgetDescendants, registerWidgetDescendants, registerWidgetDescendants, unregisterWidget, unregisterWidgetDescendants, unregisterWidgetDescendants, unregisterWidgetDescendants
 - typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, buildRendering, destroyRendering
@@ -78,12 +73,6 @@ class Manager () extends _Widget {
     *
     */
   var encType: String = js.native
-  /**
-    * Make sure that every widget that has a validator function returns true.
-    *
-    */
-  @JSName("isValid")
-  var isValid_Original: Fn_Boolean = js.native
   /**
     *
     */
@@ -754,31 +743,125 @@ class Manager () extends _Widget {
     */
   def validate(): Boolean = js.native
   @JSName("watch")
-  def watch_accept(property: accept, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_accept(
+    property: accept,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_acceptcharset(property: `accept-charset`, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_acceptcharset(
+    property: `accept-charset`,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_action(property: action, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_action(
+    property: action,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_attachScope(property: attachScope, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_attachScope(
+    property: attachScope,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_contextRequire(property: contextRequire, callback: Fn_NewValueOldValuePropertyFunction): Anon_Unwatch = js.native
+  def watch_contextRequire(
+    property: contextRequire,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Function], 
+      /* newValue */ js.UndefOr[js.Function], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_encType(property: encType, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_encType(
+    property: encType,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_method(property: method, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_method(
+    property: method,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_name(property: name, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_name(
+    property: name,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_searchContainerNode(property: searchContainerNode, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_searchContainerNode(
+    property: searchContainerNode,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_target(
+    property: target,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_target(property: target, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_watching(
+    property: watching,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_watching(property: watching, callback: Fn_NewValue): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_widgetsInTemplate(property: widgetsInTemplate, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_widgetsInTemplate(
+    property: widgetsInTemplate,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 
 @JSGlobal("dojox.form.manager")
@@ -916,12 +999,6 @@ object manager extends js.Object {
       *
       */
     var encType: String = js.native
-    /**
-      * Make sure that every widget that has a validator function returns true.
-      *
-      */
-    @JSName("isValid")
-    var isValid_Original: Fn_Boolean = js.native
     /**
       *
       */

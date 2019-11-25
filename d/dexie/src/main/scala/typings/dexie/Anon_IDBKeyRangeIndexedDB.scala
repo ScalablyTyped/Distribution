@@ -14,7 +14,7 @@ trait Anon_IDBKeyRangeIndexedDB extends js.Object {
 object Anon_IDBKeyRangeIndexedDB {
   @scala.inline
   def apply(IDBKeyRange: IDBKeyRange, indexedDB: IDBFactory): Anon_IDBKeyRangeIndexedDB = {
-    val __obj = js.Dynamic.literal(IDBKeyRange = IDBKeyRange, indexedDB = indexedDB)
+    val __obj = js.Dynamic.literal(IDBKeyRange = IDBKeyRange.asInstanceOf[js.Any], indexedDB = indexedDB.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IDBKeyRangeIndexedDB]
   }

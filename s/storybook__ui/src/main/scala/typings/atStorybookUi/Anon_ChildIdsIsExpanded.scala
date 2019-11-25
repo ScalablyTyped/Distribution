@@ -12,7 +12,7 @@ trait Anon_ChildIdsIsExpanded extends js.Object {
 object Anon_ChildIdsIsExpanded {
   @scala.inline
   def apply(childIds: Null, isExpanded: Boolean): Anon_ChildIdsIsExpanded = {
-    val __obj = js.Dynamic.literal(childIds = childIds, isExpanded = isExpanded)
+    val __obj = js.Dynamic.literal(childIds = childIds.asInstanceOf[js.Any], isExpanded = isExpanded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChildIdsIsExpanded]
   }

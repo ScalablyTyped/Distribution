@@ -29,7 +29,7 @@ object Palette {
     social: SocialColor,
     white: WhiteColor
   ): Palette = {
-    val __obj = js.Dynamic.literal(blue = blue, cloud = cloud, green = green, ink = ink, orange = orange, product = product, red = red, social = social, white = white)
+    val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], cloud = cloud.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], ink = ink.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], social = social.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Palette]
   }

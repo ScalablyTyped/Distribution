@@ -11,7 +11,7 @@ trait SetIntervalAsyncTimer extends js.Object {
 object SetIntervalAsyncTimer {
   @scala.inline
   def apply(id: Double): SetIntervalAsyncTimer = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetIntervalAsyncTimer]
   }

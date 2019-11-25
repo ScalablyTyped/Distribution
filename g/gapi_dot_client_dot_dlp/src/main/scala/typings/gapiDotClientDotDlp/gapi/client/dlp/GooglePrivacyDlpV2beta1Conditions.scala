@@ -12,7 +12,7 @@ object GooglePrivacyDlpV2beta1Conditions {
   @scala.inline
   def apply(conditions: js.Array[GooglePrivacyDlpV2beta1Condition] = null): GooglePrivacyDlpV2beta1Conditions = {
     val __obj = js.Dynamic.literal()
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Conditions]
   }
 }

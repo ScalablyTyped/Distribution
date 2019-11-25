@@ -60,7 +60,7 @@ object IType {
   ): IType = {
     val __obj = js.Dynamic.literal(decode = js.Any.fromFunction2(decode), encode = js.Any.fromFunction2(encode), is = js.Any.fromFunction2(is))
     if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[IType]
   }
 }

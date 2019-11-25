@@ -21,10 +21,10 @@ object Anon_AscendingOrder {
     uri: String = null
   ): Anon_AscendingOrder = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (publicDescription != null) __obj.updateDynamic("publicDescription")(publicDescription)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (publicDescription != null) __obj.updateDynamic("publicDescription")(publicDescription.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AscendingOrder]
   }
 }

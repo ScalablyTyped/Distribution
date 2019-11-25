@@ -29,7 +29,7 @@ trait DocumentOnTypeFormattingParams extends js.Object {
 object DocumentOnTypeFormattingParams {
   @scala.inline
   def apply(ch: String, options: FormattingOptions, position: Position, textDocument: TextDocumentIdentifier): DocumentOnTypeFormattingParams = {
-    val __obj = js.Dynamic.literal(ch = ch, options = options, position = position, textDocument = textDocument)
+    val __obj = js.Dynamic.literal(ch = ch.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocumentOnTypeFormattingParams]
   }

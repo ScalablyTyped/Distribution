@@ -22,9 +22,9 @@ object ForGenericStatement {
     variables: js.Array[Identifier],
     loc: Anon_End = null
   ): ForGenericStatement = {
-    val __obj = js.Dynamic.literal(body = body, iterators = iterators, variables = variables)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], iterators = iterators.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForGenericStatement]
   }
 }

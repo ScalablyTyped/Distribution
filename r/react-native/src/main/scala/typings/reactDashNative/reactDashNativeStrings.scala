@@ -26,6 +26,7 @@ import typings.reactDashNative.reactDashNativeMod.PushNotificationEventName
 import typings.reactDashNative.reactDashNativeMod.ReturnKeyType
 import typings.reactDashNative.reactDashNativeMod.ReturnKeyTypeAndroid
 import typings.reactDashNative.reactDashNativeMod.ReturnKeyTypeIOS
+import typings.reactDashNative.reactDashNativeMod.ReturnKeyTypeOptions
 import typings.reactDashNative.reactDashNativeMod.StatusBarAnimation
 import typings.reactDashNative.reactDashNativeMod.StatusBarStyle
 import scala.scalajs.js
@@ -182,7 +183,7 @@ object reactDashNativeStrings {
   sealed trait alert extends AccessibilityRole
   
   @js.native
-  sealed trait all extends DataDetectorTypes
+  sealed trait all_ extends DataDetectorTypes
   
   @js.native
   sealed trait allowsDirectInteraction extends AccessibilityTrait
@@ -456,6 +457,7 @@ object reactDashNativeStrings {
        with AlertType
        with ResponseType_
        with ReturnKeyTypeIOS
+       with ReturnKeyTypeOptions
        with StatusBarStyle
   
   @js.native
@@ -485,7 +487,9 @@ object reactDashNativeStrings {
   sealed trait document extends XMLHttpRequestResponseType
   
   @js.native
-  sealed trait done extends ReturnKeyType
+  sealed trait done
+    extends ReturnKeyType
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait dotted extends js.Object
@@ -518,7 +522,9 @@ object reactDashNativeStrings {
   sealed trait emailAddress extends js.Object
   
   @js.native
-  sealed trait `emergency-call` extends ReturnKeyTypeIOS
+  sealed trait `emergency-call`
+    extends ReturnKeyTypeIOS
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait end extends js.Object
@@ -581,10 +587,14 @@ object reactDashNativeStrings {
   sealed trait givenName extends js.Object
   
   @js.native
-  sealed trait go extends ReturnKeyType
+  sealed trait go
+    extends ReturnKeyType
+       with ReturnKeyTypeOptions
   
   @js.native
-  sealed trait google extends ReturnKeyTypeIOS
+  sealed trait google
+    extends ReturnKeyTypeIOS
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait granted extends PermissionStatus
@@ -666,7 +676,9 @@ object reactDashNativeStrings {
   sealed trait jobTitle extends js.Object
   
   @js.native
-  sealed trait join extends ReturnKeyTypeIOS
+  sealed trait join
+    extends ReturnKeyTypeIOS
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait jpeg extends js.Object
@@ -714,7 +726,7 @@ object reactDashNativeStrings {
   sealed trait `landscape-right` extends js.Object
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait large_ extends js.Object
   
   @js.native
   sealed trait leading extends js.Object
@@ -849,7 +861,9 @@ object reactDashNativeStrings {
   sealed trait newPassword extends js.Object
   
   @js.native
-  sealed trait next extends ReturnKeyType
+  sealed trait next
+    extends ReturnKeyType
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait nickname extends js.Object
@@ -865,14 +879,15 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait none
-    extends ReturnKeyTypeAndroid
-       with AccessibilityRole
+    extends AccessibilityRole
        with AccessibilityTrait
        with DataDetectorTypes
+       with ReturnKeyTypeAndroid
+       with ReturnKeyTypeOptions
        with StatusBarAnimation
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal_ extends js.Object
   
   @js.native
   sealed trait notification extends PushNotificationEventName
@@ -968,7 +983,9 @@ object reactDashNativeStrings {
   sealed trait postalCode extends js.Object
   
   @js.native
-  sealed trait previous extends ReturnKeyTypeAndroid
+  sealed trait previous
+    extends ReturnKeyTypeAndroid
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait progress extends js.Object
@@ -1028,7 +1045,9 @@ object reactDashNativeStrings {
   sealed trait round extends js.Object
   
   @js.native
-  sealed trait route extends ReturnKeyTypeIOS
+  sealed trait route
+    extends ReturnKeyTypeIOS
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait row extends js.Object
@@ -1064,9 +1083,10 @@ object reactDashNativeStrings {
   
   @js.native
   sealed trait search
-    extends ReturnKeyType
-       with AccessibilityRole
+    extends AccessibilityRole
        with AccessibilityTrait
+       with ReturnKeyType
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait `secure-text` extends AlertType
@@ -1077,7 +1097,9 @@ object reactDashNativeStrings {
        with AccessibilityTrait
   
   @js.native
-  sealed trait send extends ReturnKeyType
+  sealed trait send
+    extends ReturnKeyType
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait sentences extends js.Object
@@ -1092,10 +1114,10 @@ object reactDashNativeStrings {
   sealed trait slide extends StatusBarAnimation
   
   @js.native
-  sealed trait small extends js.Object
+  sealed trait `small-caps` extends FontVariant
   
   @js.native
-  sealed trait `small-caps` extends FontVariant
+  sealed trait small_ extends js.Object
   
   @js.native
   sealed trait solid extends js.Object
@@ -1219,7 +1241,7 @@ object reactDashNativeStrings {
   sealed trait uppercase extends js.Object
   
   @js.native
-  sealed trait url extends KeyboardTypeIOS
+  sealed trait url_ extends KeyboardTypeIOS
   
   @js.native
   sealed trait username extends js.Object
@@ -1264,7 +1286,9 @@ object reactDashNativeStrings {
   sealed trait `wrap-reverse` extends js.Object
   
   @js.native
-  sealed trait yahoo extends ReturnKeyTypeIOS
+  sealed trait yahoo
+    extends ReturnKeyTypeIOS
+       with ReturnKeyTypeOptions
   
   @js.native
   sealed trait year extends js.Object
@@ -1369,7 +1393,7 @@ object reactDashNativeStrings {
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  def all_ : all_ = "all".asInstanceOf[all_]
   @scala.inline
   def allowsDirectInteraction: allowsDirectInteraction = "allowsDirectInteraction".asInstanceOf[allowsDirectInteraction]
   @scala.inline
@@ -1711,7 +1735,7 @@ object reactDashNativeStrings {
   @scala.inline
   def `landscape-right`: `landscape-right` = "landscape-right".asInstanceOf[`landscape-right`]
   @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  def large_ : large_ = "large".asInstanceOf[large_]
   @scala.inline
   def leading: leading = "leading".asInstanceOf[leading]
   @scala.inline
@@ -1811,7 +1835,7 @@ object reactDashNativeStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  def normal_ : normal_ = "normal".asInstanceOf[normal_]
   @scala.inline
   def notification: notification = "notification".asInstanceOf[notification]
   @scala.inline
@@ -1953,9 +1977,9 @@ object reactDashNativeStrings {
   @scala.inline
   def slide: slide = "slide".asInstanceOf[slide]
   @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
   def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
+  @scala.inline
+  def small_ : small_ = "small".asInstanceOf[small_]
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   @scala.inline
@@ -2033,7 +2057,7 @@ object reactDashNativeStrings {
   @scala.inline
   def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  def url_ : url_ = "url".asInstanceOf[url_]
   @scala.inline
   def username: username = "username".asInstanceOf[username]
   @scala.inline

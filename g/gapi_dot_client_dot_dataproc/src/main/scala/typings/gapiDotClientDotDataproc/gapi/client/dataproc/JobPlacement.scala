@@ -15,8 +15,8 @@ object JobPlacement {
   @scala.inline
   def apply(clusterName: String = null, clusterUuid: String = null): JobPlacement = {
     val __obj = js.Dynamic.literal()
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName)
-    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid)
+    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
+    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobPlacement]
   }
 }

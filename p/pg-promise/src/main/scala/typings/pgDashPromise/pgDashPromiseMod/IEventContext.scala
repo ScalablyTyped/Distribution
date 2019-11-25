@@ -19,7 +19,7 @@ trait IEventContext[C /* <: IClient */] extends js.Object {
 object IEventContext {
   @scala.inline
   def apply[C /* <: IClient */](client: C, cn: js.Any, ctx: ITaskContext, dc: js.Any, params: js.Any, query: js.Any): IEventContext[C] = {
-    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], cn = cn, ctx = ctx, dc = dc, params = params, query = query)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], cn = cn.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], dc = dc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEventContext[C]]
   }

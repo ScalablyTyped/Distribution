@@ -12,8 +12,8 @@ trait TransportSniffOptions extends js.Object {
 object TransportSniffOptions {
   @scala.inline
   def apply(reason: String, requestId: String = null): TransportSniffOptions = {
-    val __obj = js.Dynamic.literal(reason = reason)
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportSniffOptions]
   }
 }

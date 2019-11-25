@@ -22,11 +22,11 @@ object Anon_FailOnDuplicatePaymentMethodMakeDefaultVerificationAcmount {
     verifyCard: js.UndefOr[Boolean] = js.undefined
   ): Anon_FailOnDuplicatePaymentMethodMakeDefaultVerificationAcmount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(failOnDuplicatePaymentMethod)) __obj.updateDynamic("failOnDuplicatePaymentMethod")(failOnDuplicatePaymentMethod)
-    if (!js.isUndefined(makeDefault)) __obj.updateDynamic("makeDefault")(makeDefault)
-    if (verificationAcmount != null) __obj.updateDynamic("verificationAcmount")(verificationAcmount)
-    if (verificationMerchantAccountId != null) __obj.updateDynamic("verificationMerchantAccountId")(verificationMerchantAccountId)
-    if (!js.isUndefined(verifyCard)) __obj.updateDynamic("verifyCard")(verifyCard)
+    if (!js.isUndefined(failOnDuplicatePaymentMethod)) __obj.updateDynamic("failOnDuplicatePaymentMethod")(failOnDuplicatePaymentMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(makeDefault)) __obj.updateDynamic("makeDefault")(makeDefault.asInstanceOf[js.Any])
+    if (verificationAcmount != null) __obj.updateDynamic("verificationAcmount")(verificationAcmount.asInstanceOf[js.Any])
+    if (verificationMerchantAccountId != null) __obj.updateDynamic("verificationMerchantAccountId")(verificationMerchantAccountId.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifyCard)) __obj.updateDynamic("verifyCard")(verifyCard.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FailOnDuplicatePaymentMethodMakeDefaultVerificationAcmount]
   }
 }

@@ -18,7 +18,7 @@ object Options {
     transports: String | js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

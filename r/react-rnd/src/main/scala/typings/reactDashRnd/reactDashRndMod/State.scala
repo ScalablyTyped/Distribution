@@ -20,7 +20,7 @@ object State {
     maxHeight: Double | String = null,
     maxWidth: Double | String = null
   ): State = {
-    val __obj = js.Dynamic.literal(bounds = bounds, original = original)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]

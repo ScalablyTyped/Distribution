@@ -25,8 +25,8 @@ object PutTraceSegmentsOutput {
     $metadata: ResponseMetadata,
     UnprocessedTraceSegments: js.Array[_UnmarshalledUnprocessedTraceSegment] = null
   ): PutTraceSegmentsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (UnprocessedTraceSegments != null) __obj.updateDynamic("UnprocessedTraceSegments")(UnprocessedTraceSegments)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (UnprocessedTraceSegments != null) __obj.updateDynamic("UnprocessedTraceSegments")(UnprocessedTraceSegments.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutTraceSegmentsOutput]
   }
 }

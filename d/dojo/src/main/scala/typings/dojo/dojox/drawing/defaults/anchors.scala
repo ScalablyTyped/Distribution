@@ -57,7 +57,7 @@ object anchors {
     style: String,
     width: Double
   ): anchors = {
-    val __obj = js.Dynamic.literal(cap = cap, color = color, fill = fill, marginZero = marginZero, minSize = minSize, size = size, style = style, width = width)
+    val __obj = js.Dynamic.literal(cap = cap.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], marginZero = marginZero.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[anchors]
   }

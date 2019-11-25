@@ -30,14 +30,14 @@ object UserAndRepoOptions {
     template: String = null,
     title: String = null
   ): UserAndRepoOptions = {
-    val __obj = js.Dynamic.literal(repo = repo, user = user)
-    if (assignee != null) __obj.updateDynamic("assignee")(assignee)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (milestone != null) __obj.updateDynamic("milestone")(milestone)
-    if (projects != null) __obj.updateDynamic("projects")(projects)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(repo = repo.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (assignee != null) __obj.updateDynamic("assignee")(assignee.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (milestone != null) __obj.updateDynamic("milestone")(milestone.asInstanceOf[js.Any])
+    if (projects != null) __obj.updateDynamic("projects")(projects.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAndRepoOptions]
   }
 }

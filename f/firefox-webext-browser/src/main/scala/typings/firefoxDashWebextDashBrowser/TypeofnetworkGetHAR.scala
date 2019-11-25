@@ -30,7 +30,7 @@ object TypeofnetworkGetHAR {
     onNavigated: WebExtEvent[js.Function1[/* url */ String, Unit]],
     onRequestFinished: WebExtEvent[js.Function1[/* request */ Request, Unit]]
   ): TypeofnetworkGetHAR = {
-    val __obj = js.Dynamic.literal(getHAR = js.Any.fromFunction0(getHAR), onNavigated = onNavigated, onRequestFinished = onRequestFinished)
+    val __obj = js.Dynamic.literal(getHAR = js.Any.fromFunction0(getHAR), onNavigated = onNavigated.asInstanceOf[js.Any], onRequestFinished = onRequestFinished.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofnetworkGetHAR]
   }

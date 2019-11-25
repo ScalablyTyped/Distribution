@@ -22,11 +22,11 @@ object Anon_Plain {
     `x-forwarded-for`: String = null
   ): Anon_Plain = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
-    if (`x-forwarded-for` != null) __obj.updateDynamic("x-forwarded-for")(`x-forwarded-for`)
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (`x-forwarded-for` != null) __obj.updateDynamic("x-forwarded-for")(`x-forwarded-for`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Plain]
   }
 }

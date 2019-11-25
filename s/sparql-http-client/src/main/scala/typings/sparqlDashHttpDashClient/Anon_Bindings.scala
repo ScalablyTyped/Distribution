@@ -13,7 +13,7 @@ trait Anon_Bindings extends js.Object {
 object Anon_Bindings {
   @scala.inline
   def apply(bindings: js.Array[Record[String, Term]]): Anon_Bindings = {
-    val __obj = js.Dynamic.literal(bindings = bindings)
+    val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bindings]
   }

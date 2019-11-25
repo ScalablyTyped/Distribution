@@ -29,9 +29,9 @@ object CapturingGroup {
     `type`: typings.regexpp.regexppStrings.CapturingGroup,
     name: String = null
   ): CapturingGroup = {
-    val __obj = js.Dynamic.literal(alternatives = alternatives, end = end, parent = parent.asInstanceOf[js.Any], raw = raw, references = references, start = start)
-    __obj.updateDynamic("type")(`type`)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapturingGroup]
   }
 }

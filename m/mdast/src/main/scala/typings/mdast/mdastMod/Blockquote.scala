@@ -19,10 +19,10 @@ trait Blockquote
 object Blockquote {
   @scala.inline
   def apply(children: js.Array[BlockContent], `type`: blockquote, data: Data = null, position: Position = null): Blockquote = {
-    val __obj = js.Dynamic.literal(children = children)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (position != null) __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Blockquote]
   }
 }

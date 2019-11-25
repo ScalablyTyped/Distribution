@@ -35,8 +35,8 @@ object PluginInfo {
     `package`: String,
     path: String
   ): PluginInfo = {
-    val __obj = js.Dynamic.literal(dependencies = dependencies, enable = enable, env = env, from = from, name = name, optionalDependencies = optionalDependencies, path = path)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optionalDependencies = optionalDependencies.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginInfo]
   }
 }

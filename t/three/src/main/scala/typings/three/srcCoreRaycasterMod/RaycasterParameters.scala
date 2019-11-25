@@ -23,11 +23,11 @@ object RaycasterParameters {
     Sprite: js.Any = null
   ): RaycasterParameters = {
     val __obj = js.Dynamic.literal()
-    if (LOD != null) __obj.updateDynamic("LOD")(LOD)
-    if (Line != null) __obj.updateDynamic("Line")(Line)
-    if (Mesh != null) __obj.updateDynamic("Mesh")(Mesh)
-    if (Points != null) __obj.updateDynamic("Points")(Points)
-    if (Sprite != null) __obj.updateDynamic("Sprite")(Sprite)
+    if (LOD != null) __obj.updateDynamic("LOD")(LOD.asInstanceOf[js.Any])
+    if (Line != null) __obj.updateDynamic("Line")(Line.asInstanceOf[js.Any])
+    if (Mesh != null) __obj.updateDynamic("Mesh")(Mesh.asInstanceOf[js.Any])
+    if (Points != null) __obj.updateDynamic("Points")(Points.asInstanceOf[js.Any])
+    if (Sprite != null) __obj.updateDynamic("Sprite")(Sprite.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaycasterParameters]
   }
 }

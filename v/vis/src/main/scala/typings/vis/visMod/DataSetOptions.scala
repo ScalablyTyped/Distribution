@@ -27,9 +27,9 @@ object DataSetOptions {
   @scala.inline
   def apply(fieldId: String = null, queue: js.Any | Boolean = null, `type`: js.Any = null): DataSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId)
+    if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId.asInstanceOf[js.Any])
     if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSetOptions]
   }
 }

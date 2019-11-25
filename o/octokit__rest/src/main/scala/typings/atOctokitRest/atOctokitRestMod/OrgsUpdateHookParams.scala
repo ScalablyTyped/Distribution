@@ -30,10 +30,10 @@ object OrgsUpdateHookParams {
     config: OrgsUpdateHookParamsConfig = null,
     events: js.Array[String] = null
   ): OrgsUpdateHookParams = {
-    val __obj = js.Dynamic.literal(hook_id = hook_id, org = org)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (events != null) __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(hook_id = hook_id.asInstanceOf[js.Any], org = org.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsUpdateHookParams]
   }
 }

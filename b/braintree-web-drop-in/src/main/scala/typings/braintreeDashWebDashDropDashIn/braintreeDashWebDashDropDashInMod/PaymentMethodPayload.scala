@@ -27,10 +27,10 @@ object PaymentMethodPayload {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     deviceData: String = null
   ): PaymentMethodPayload = {
-    val __obj = js.Dynamic.literal(details = details, nonce = nonce)
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodPayload]
   }
 }

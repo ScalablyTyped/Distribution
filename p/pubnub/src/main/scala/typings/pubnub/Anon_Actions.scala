@@ -20,8 +20,8 @@ object Anon_Actions {
     timetoken: String | Double,
     meta: StringDictionary[js.Any] = null
   ): Anon_Actions = {
-    val __obj = js.Dynamic.literal(actions = actions, message = message, timetoken = timetoken.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Actions]
   }
 }

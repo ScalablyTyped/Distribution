@@ -21,7 +21,7 @@ object Geocode {
     level: String,
     location: LngLat
   ): Geocode = {
-    val __obj = js.Dynamic.literal(adcode = adcode, addressComponent = addressComponent, formattedAddress = formattedAddress, level = level, location = location)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], addressComponent = addressComponent.asInstanceOf[js.Any], formattedAddress = formattedAddress.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Geocode]
   }

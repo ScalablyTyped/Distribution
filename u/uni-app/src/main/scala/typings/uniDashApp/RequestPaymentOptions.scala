@@ -72,14 +72,14 @@ object RequestPaymentOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (nonceStr != null) __obj.updateDynamic("nonceStr")(nonceStr)
-    if (orderInfo != null) __obj.updateDynamic("orderInfo")(orderInfo)
-    if (`package` != null) __obj.updateDynamic("package")(`package`)
-    if (paySign != null) __obj.updateDynamic("paySign")(paySign)
+    if (nonceStr != null) __obj.updateDynamic("nonceStr")(nonceStr.asInstanceOf[js.Any])
+    if (orderInfo != null) __obj.updateDynamic("orderInfo")(orderInfo.asInstanceOf[js.Any])
+    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
+    if (paySign != null) __obj.updateDynamic("paySign")(paySign.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (signType != null) __obj.updateDynamic("signType")(signType)
+    if (signType != null) __obj.updateDynamic("signType")(signType.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
-    if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp)
+    if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestPaymentOptions]
   }
 }

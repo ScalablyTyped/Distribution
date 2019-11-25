@@ -13,7 +13,7 @@ trait Anon_Points extends js.Object {
 object Anon_Points {
   @scala.inline
   def apply(points: js.Array[Point], status: Double): Anon_Points = {
-    val __obj = js.Dynamic.literal(points = points, status = status)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Points]
   }

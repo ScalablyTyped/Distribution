@@ -23,7 +23,7 @@ object InstanceChainData {
     isSetter: Boolean,
     properties: js.Array[String]
   ): InstanceChainData = {
-    val __obj = js.Dynamic.literal(fns = fns, isGetter = isGetter, isMethod = isMethod, isProperty = isProperty, isSetter = isSetter, properties = properties)
+    val __obj = js.Dynamic.literal(fns = fns.asInstanceOf[js.Any], isGetter = isGetter.asInstanceOf[js.Any], isMethod = isMethod.asInstanceOf[js.Any], isProperty = isProperty.asInstanceOf[js.Any], isSetter = isSetter.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InstanceChainData]
   }

@@ -14,8 +14,8 @@ object Context {
   @scala.inline
   def apply(cwd: String = null, env: String = null): Context = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

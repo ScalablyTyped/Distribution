@@ -18,7 +18,7 @@ trait FilesystemChangeBasic[Action /* <: created | modified | deleted | renamed 
 object FilesystemChangeBasic {
   @scala.inline
   def apply[Action /* <: created | modified | deleted | renamed */](action: Action, path: String): FilesystemChangeBasic[Action] = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], path = path)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilesystemChangeBasic[Action]]
   }

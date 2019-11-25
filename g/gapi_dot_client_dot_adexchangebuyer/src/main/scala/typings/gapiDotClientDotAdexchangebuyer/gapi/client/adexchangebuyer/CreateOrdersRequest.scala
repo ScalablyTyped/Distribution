@@ -15,8 +15,8 @@ object CreateOrdersRequest {
   @scala.inline
   def apply(proposals: js.Array[Proposal] = null, webPropertyCode: String = null): CreateOrdersRequest = {
     val __obj = js.Dynamic.literal()
-    if (proposals != null) __obj.updateDynamic("proposals")(proposals)
-    if (webPropertyCode != null) __obj.updateDynamic("webPropertyCode")(webPropertyCode)
+    if (proposals != null) __obj.updateDynamic("proposals")(proposals.asInstanceOf[js.Any])
+    if (webPropertyCode != null) __obj.updateDynamic("webPropertyCode")(webPropertyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOrdersRequest]
   }
 }

@@ -33,14 +33,14 @@ object Anon_Attrs {
     wait: js.UndefOr[Boolean] = js.undefined
   ): Anon_Attrs = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
-    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch)
+    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
-    if (!js.isUndefined(valdiate)) __obj.updateDynamic("valdiate")(valdiate)
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (!js.isUndefined(valdiate)) __obj.updateDynamic("valdiate")(valdiate.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attrs]
   }
 }

@@ -83,7 +83,7 @@ object TypeofaccessibilityFeatures {
     switchAccess: AccessibilityFeaturesSetting,
     virtualKeyboard: AccessibilityFeaturesSetting
   ): TypeofaccessibilityFeatures = {
-    val __obj = js.Dynamic.literal(animationPolicy = animationPolicy, autoclick = autoclick, caretHighlight = caretHighlight, cursorHighlight = cursorHighlight, focusHighlight = focusHighlight, highContrast = highContrast, largeCursor = largeCursor, screenMagnifier = screenMagnifier, selectToSpeak = selectToSpeak, spokenFeedback = spokenFeedback, stickyKeys = stickyKeys, switchAccess = switchAccess, virtualKeyboard = virtualKeyboard)
+    val __obj = js.Dynamic.literal(animationPolicy = animationPolicy.asInstanceOf[js.Any], autoclick = autoclick.asInstanceOf[js.Any], caretHighlight = caretHighlight.asInstanceOf[js.Any], cursorHighlight = cursorHighlight.asInstanceOf[js.Any], focusHighlight = focusHighlight.asInstanceOf[js.Any], highContrast = highContrast.asInstanceOf[js.Any], largeCursor = largeCursor.asInstanceOf[js.Any], screenMagnifier = screenMagnifier.asInstanceOf[js.Any], selectToSpeak = selectToSpeak.asInstanceOf[js.Any], spokenFeedback = spokenFeedback.asInstanceOf[js.Any], stickyKeys = stickyKeys.asInstanceOf[js.Any], switchAccess = switchAccess.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofaccessibilityFeatures]
   }

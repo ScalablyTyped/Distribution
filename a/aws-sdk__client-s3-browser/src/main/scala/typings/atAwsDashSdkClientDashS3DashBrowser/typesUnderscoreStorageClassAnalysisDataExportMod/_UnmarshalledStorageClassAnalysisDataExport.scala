@@ -17,7 +17,7 @@ trait _UnmarshalledStorageClassAnalysisDataExport extends _StorageClassAnalysisD
 object _UnmarshalledStorageClassAnalysisDataExport {
   @scala.inline
   def apply(Destination: _UnmarshalledAnalyticsExportDestination, OutputSchemaVersion: V_1 | String): _UnmarshalledStorageClassAnalysisDataExport = {
-    val __obj = js.Dynamic.literal(Destination = Destination, OutputSchemaVersion = OutputSchemaVersion.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], OutputSchemaVersion = OutputSchemaVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledStorageClassAnalysisDataExport]
   }

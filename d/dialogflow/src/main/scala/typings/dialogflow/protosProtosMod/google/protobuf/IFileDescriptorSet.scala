@@ -14,7 +14,7 @@ object IFileDescriptorSet {
   @scala.inline
   def apply(file: js.Array[IFileDescriptorProto] = null): IFileDescriptorSet = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileDescriptorSet]
   }
 }

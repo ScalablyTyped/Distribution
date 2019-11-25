@@ -12,7 +12,7 @@ object StripeProviderOptions {
   @scala.inline
   def apply(stripeAccount: String = null): StripeProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (stripeAccount != null) __obj.updateDynamic("stripeAccount")(stripeAccount)
+    if (stripeAccount != null) __obj.updateDynamic("stripeAccount")(stripeAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeProviderOptions]
   }
 }

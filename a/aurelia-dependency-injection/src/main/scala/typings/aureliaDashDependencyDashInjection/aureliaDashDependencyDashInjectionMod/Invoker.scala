@@ -10,10 +10,10 @@ trait Invoker[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ext
     container: Container,
     fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs],
     staticDependencies: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: TArgs[number] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ],
     dynamicDependencies: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: TArgs[number] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ]
   ): ImplOrAny[TImpl]
 }
@@ -23,9 +23,9 @@ object Invoker {
   def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
     invoke: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl],
     invokeWithDynamicDependencies: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], js.Array[
-      /* import warning: ImportType.apply Failed type conversion: TArgs[number] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ], js.Array[
-      /* import warning: ImportType.apply Failed type conversion: TArgs[number] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ]) => ImplOrAny[TImpl]
   ): Invoker[TBase, TImpl, TArgs] = {
     val __obj = js.Dynamic.literal(invoke = js.Any.fromFunction3(invoke), invokeWithDynamicDependencies = js.Any.fromFunction4(invokeWithDynamicDependencies))

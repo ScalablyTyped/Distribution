@@ -398,11 +398,11 @@ trait VpaidCreative extends js.Object {
     * @param listenerScope [optional] is a reference to the object in which the function is defined
     */
   def subscribe[E /* <: String */](
-    fn: /* import warning: ImportType.apply Failed type conversion: iab-vpaid.iab.vpaid.EventsMap[E] */ js.Any,
+    fn: /* import warning: importer.ImportType#apply Failed type conversion: iab-vpaid.iab.vpaid.EventsMap[E] */ js.Any,
     event: E
   ): Unit = js.native
   def subscribe[E /* <: String */](
-    fn: /* import warning: ImportType.apply Failed type conversion: iab-vpaid.iab.vpaid.EventsMap[E] */ js.Any,
+    fn: /* import warning: importer.ImportType#apply Failed type conversion: iab-vpaid.iab.vpaid.EventsMap[E] */ js.Any,
     event: E,
     listenerScope: js.Object
   ): Unit = js.native
@@ -413,7 +413,7 @@ trait VpaidCreative extends js.Object {
     * @param fn is the event listener that is being removed
     */
   def unsubscribe[E /* <: String */](
-    fn: /* import warning: ImportType.apply Failed type conversion: iab-vpaid.iab.vpaid.EventsMap[E] */ js.Any,
+    fn: /* import warning: importer.ImportType#apply Failed type conversion: iab-vpaid.iab.vpaid.EventsMap[E] */ js.Any,
     event: E
   ): Unit = js.native
 }

@@ -19,10 +19,10 @@ object Anon_DnAttributes {
     matchType: String = null,
     rule: String = null
   ): Anon_DnAttributes = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (!js.isUndefined(dnAttributes)) __obj.updateDynamic("dnAttributes")(dnAttributes)
-    if (matchType != null) __obj.updateDynamic("matchType")(matchType)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(dnAttributes)) __obj.updateDynamic("dnAttributes")(dnAttributes.asInstanceOf[js.Any])
+    if (matchType != null) __obj.updateDynamic("matchType")(matchType.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DnAttributes]
   }
 }

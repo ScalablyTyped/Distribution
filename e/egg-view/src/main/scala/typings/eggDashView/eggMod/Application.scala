@@ -12,7 +12,7 @@ trait Application extends js.Object {
 object Application {
   @scala.inline
   def apply(view: ViewManager): Application = {
-    val __obj = js.Dynamic.literal(view = view)
+    val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Application]
   }

@@ -13,8 +13,8 @@ trait LatexProps extends js.Object {
 object LatexProps {
   @scala.inline
   def apply(children: String, delimiters: js.Array[Delimiter] = null): LatexProps = {
-    val __obj = js.Dynamic.literal(children = children)
-    if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters.asInstanceOf[js.Any])
     __obj.asInstanceOf[LatexProps]
   }
 }

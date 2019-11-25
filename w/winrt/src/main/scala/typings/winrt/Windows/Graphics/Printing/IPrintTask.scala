@@ -26,7 +26,7 @@ object IPrintTask {
     properties: DataPackagePropertySet,
     source: IPrintDocumentSource
   ): IPrintTask = {
-    val __obj = js.Dynamic.literal(oncompleted = oncompleted, onpreviewing = onpreviewing, onprogressing = onprogressing, onsubmitting = onsubmitting, options = options, properties = properties, source = source)
+    val __obj = js.Dynamic.literal(oncompleted = oncompleted.asInstanceOf[js.Any], onpreviewing = onpreviewing.asInstanceOf[js.Any], onprogressing = onprogressing.asInstanceOf[js.Any], onsubmitting = onsubmitting.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPrintTask]
   }

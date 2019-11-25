@@ -27,7 +27,7 @@ object Anon_BadSignature {
     NotImplemented: String,
     Unsupported: String
   ): Anon_BadSignature = {
-    val __obj = js.Dynamic.literal(BadSignature = BadSignature, FileCorrupt = FileCorrupt, InvalidArg = InvalidArg, InvalidKey = InvalidKey, InvalidVersion = InvalidVersion, MergeError = MergeError, NotImplemented = NotImplemented, Unsupported = Unsupported)
+    val __obj = js.Dynamic.literal(BadSignature = BadSignature.asInstanceOf[js.Any], FileCorrupt = FileCorrupt.asInstanceOf[js.Any], InvalidArg = InvalidArg.asInstanceOf[js.Any], InvalidKey = InvalidKey.asInstanceOf[js.Any], InvalidVersion = InvalidVersion.asInstanceOf[js.Any], MergeError = MergeError.asInstanceOf[js.Any], NotImplemented = NotImplemented.asInstanceOf[js.Any], Unsupported = Unsupported.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BadSignature]
   }

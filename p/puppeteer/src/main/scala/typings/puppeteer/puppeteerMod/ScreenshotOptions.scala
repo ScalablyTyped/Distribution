@@ -55,11 +55,11 @@ object ScreenshotOptions {
     `type`: jpeg | png = null
   ): ScreenshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (clip != null) __obj.updateDynamic("clip")(clip)
+    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullPage)) __obj.updateDynamic("fullPage")(fullPage)
-    if (!js.isUndefined(omitBackground)) __obj.updateDynamic("omitBackground")(omitBackground)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(fullPage)) __obj.updateDynamic("fullPage")(fullPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitBackground)) __obj.updateDynamic("omitBackground")(omitBackground.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenshotOptions]

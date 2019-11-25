@@ -12,7 +12,7 @@ object RoxFlagOptions {
   @scala.inline
   def apply(freeze: RoxFlagFreezeLevel = null): RoxFlagOptions = {
     val __obj = js.Dynamic.literal()
-    if (freeze != null) __obj.updateDynamic("freeze")(freeze)
+    if (freeze != null) __obj.updateDynamic("freeze")(freeze.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoxFlagOptions]
   }
 }

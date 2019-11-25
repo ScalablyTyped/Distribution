@@ -19,9 +19,9 @@ object TraceConfig {
     memory_dump_config: MemoryDumpConfig = null
   ): TraceConfig = {
     val __obj = js.Dynamic.literal()
-    if (excluded_categories != null) __obj.updateDynamic("excluded_categories")(excluded_categories)
-    if (included_categories != null) __obj.updateDynamic("included_categories")(included_categories)
-    if (memory_dump_config != null) __obj.updateDynamic("memory_dump_config")(memory_dump_config)
+    if (excluded_categories != null) __obj.updateDynamic("excluded_categories")(excluded_categories.asInstanceOf[js.Any])
+    if (included_categories != null) __obj.updateDynamic("included_categories")(included_categories.asInstanceOf[js.Any])
+    if (memory_dump_config != null) __obj.updateDynamic("memory_dump_config")(memory_dump_config.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceConfig]
   }
 }

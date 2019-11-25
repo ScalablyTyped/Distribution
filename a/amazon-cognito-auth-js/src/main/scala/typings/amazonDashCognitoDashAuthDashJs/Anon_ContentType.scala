@@ -12,7 +12,7 @@ object Anon_ContentType {
   @scala.inline
   def apply(`Content-Type`: String): Anon_ContentType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Content-Type")(`Content-Type`)
+    __obj.updateDynamic("Content-Type")(`Content-Type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentType]
   }
 }

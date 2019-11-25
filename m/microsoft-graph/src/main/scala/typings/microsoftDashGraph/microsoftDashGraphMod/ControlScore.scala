@@ -24,9 +24,9 @@ object ControlScore {
     score: Int | Double = null
   ): ControlScore = {
     val __obj = js.Dynamic.literal()
-    if (controlCategory != null) __obj.updateDynamic("controlCategory")(controlCategory)
-    if (controlName != null) __obj.updateDynamic("controlName")(controlName)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (controlCategory != null) __obj.updateDynamic("controlCategory")(controlCategory.asInstanceOf[js.Any])
+    if (controlName != null) __obj.updateDynamic("controlName")(controlName.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlScore]
   }

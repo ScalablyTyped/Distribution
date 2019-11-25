@@ -60,12 +60,12 @@ object AndroidConfig {
     ttl: Int | Double = null
   ): AndroidConfig = {
     val __obj = js.Dynamic.literal()
-    if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
+    if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (restrictedPackageName != null) __obj.updateDynamic("restrictedPackageName")(restrictedPackageName)
+    if (restrictedPackageName != null) __obj.updateDynamic("restrictedPackageName")(restrictedPackageName.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidConfig]
   }

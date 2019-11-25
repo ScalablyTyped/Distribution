@@ -13,7 +13,7 @@ trait ClientGetNameFromUid extends js.Object {
 object ClientGetNameFromUid {
   @scala.inline
   def apply(cldbid: Double, cluid: String, name: String): ClientGetNameFromUid = {
-    val __obj = js.Dynamic.literal(cldbid = cldbid, cluid = cluid, name = name)
+    val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], cluid = cluid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientGetNameFromUid]
   }

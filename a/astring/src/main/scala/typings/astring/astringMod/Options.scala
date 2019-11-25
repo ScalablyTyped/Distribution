@@ -30,11 +30,11 @@ object Options {
     startingIndentLevel: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments)
-    if (generator != null) __obj.updateDynamic("generator")(generator)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (lineEnd != null) __obj.updateDynamic("lineEnd")(lineEnd)
-    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (generator != null) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (lineEnd != null) __obj.updateDynamic("lineEnd")(lineEnd.asInstanceOf[js.Any])
+    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     if (startingIndentLevel != null) __obj.updateDynamic("startingIndentLevel")(startingIndentLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

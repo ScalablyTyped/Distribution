@@ -73,8 +73,8 @@ object INxFieldDescription {
     qTags: js.Array[String],
     qAndMode: js.UndefOr[Boolean] = js.undefined
   ): INxFieldDescription = {
-    val __obj = js.Dynamic.literal(qCardinal = qCardinal, qDerivedFieldData = qDerivedFieldData, qIsDefinitionOnly = qIsDefinitionOnly, qIsDetail = qIsDetail, qIsHidden = qIsHidden, qIsImplicit = qIsImplicit, qIsSemantic = qIsSemantic, qIsSystem = qIsSystem, qName = qName, qTags = qTags)
-    if (!js.isUndefined(qAndMode)) __obj.updateDynamic("qAndMode")(qAndMode)
+    val __obj = js.Dynamic.literal(qCardinal = qCardinal.asInstanceOf[js.Any], qDerivedFieldData = qDerivedFieldData.asInstanceOf[js.Any], qIsDefinitionOnly = qIsDefinitionOnly.asInstanceOf[js.Any], qIsDetail = qIsDetail.asInstanceOf[js.Any], qIsHidden = qIsHidden.asInstanceOf[js.Any], qIsImplicit = qIsImplicit.asInstanceOf[js.Any], qIsSemantic = qIsSemantic.asInstanceOf[js.Any], qIsSystem = qIsSystem.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(qAndMode)) __obj.updateDynamic("qAndMode")(qAndMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxFieldDescription]
   }
 }

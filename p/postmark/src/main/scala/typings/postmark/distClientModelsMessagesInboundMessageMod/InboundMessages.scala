@@ -12,7 +12,7 @@ trait InboundMessages extends js.Object {
 object InboundMessages {
   @scala.inline
   def apply(InboundMessages: js.Array[InboundMessage], TotalCount: String): InboundMessages = {
-    val __obj = js.Dynamic.literal(InboundMessages = InboundMessages, TotalCount = TotalCount)
+    val __obj = js.Dynamic.literal(InboundMessages = InboundMessages.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InboundMessages]
   }

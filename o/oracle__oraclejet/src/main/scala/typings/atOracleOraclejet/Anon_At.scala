@@ -27,13 +27,13 @@ object Anon_At {
     sort: js.UndefOr[Boolean] = js.undefined
   ): Anon_At = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_At]
   }
 }

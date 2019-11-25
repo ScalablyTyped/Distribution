@@ -23,8 +23,8 @@ object _UnmarshalledSegmentLocation {
   @scala.inline
   def apply(Country: _UnmarshalledSetDimension = null, GPSPoint: _UnmarshalledGPSPointDimension = null): _UnmarshalledSegmentLocation = {
     val __obj = js.Dynamic.literal()
-    if (Country != null) __obj.updateDynamic("Country")(Country)
-    if (GPSPoint != null) __obj.updateDynamic("GPSPoint")(GPSPoint)
+    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
+    if (GPSPoint != null) __obj.updateDynamic("GPSPoint")(GPSPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSegmentLocation]
   }
 }

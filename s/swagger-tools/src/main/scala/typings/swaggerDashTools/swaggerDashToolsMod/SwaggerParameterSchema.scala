@@ -31,16 +31,16 @@ object SwaggerParameterSchema {
     paramType: String = null,
     required: js.UndefOr[Boolean] = js.undefined
   ): SwaggerParameterSchema = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (in != null) __obj.updateDynamic("in")(in)
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum)
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum)
-    if (paramType != null) __obj.updateDynamic("paramType")(paramType)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (paramType != null) __obj.updateDynamic("paramType")(paramType.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerParameterSchema]
   }
 }

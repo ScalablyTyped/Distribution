@@ -13,7 +13,7 @@ trait Anon_ArgsExpand extends js.Object {
 object Anon_ArgsExpand {
   @scala.inline
   def apply(expand: js.Array[String], onExpand: /* repeated */ js.Any => js.Any, property: String): Anon_ArgsExpand = {
-    val __obj = js.Dynamic.literal(expand = expand, onExpand = js.Any.fromFunction1(onExpand), property = property)
+    val __obj = js.Dynamic.literal(expand = expand.asInstanceOf[js.Any], onExpand = js.Any.fromFunction1(onExpand), property = property.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArgsExpand]
   }

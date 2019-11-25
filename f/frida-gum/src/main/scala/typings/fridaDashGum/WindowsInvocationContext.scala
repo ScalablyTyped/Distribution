@@ -21,7 +21,7 @@ object WindowsInvocationContext {
     returnAddress: NativePointer,
     threadId: ThreadId
   ): WindowsInvocationContext = {
-    val __obj = js.Dynamic.literal(context = context, depth = depth, lastError = lastError, returnAddress = returnAddress, threadId = threadId)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], lastError = lastError.asInstanceOf[js.Any], returnAddress = returnAddress.asInstanceOf[js.Any], threadId = threadId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WindowsInvocationContext]
   }

@@ -13,7 +13,7 @@ trait Anon_AllowedCscrequired extends js.Object {
 object Anon_AllowedCscrequired {
   @scala.inline
   def apply(allowed: Boolean, csc_required: Boolean, items: js.Array[Anon_Id]): Anon_AllowedCscrequired = {
-    val __obj = js.Dynamic.literal(allowed = allowed, csc_required = csc_required, items = items)
+    val __obj = js.Dynamic.literal(allowed = allowed.asInstanceOf[js.Any], csc_required = csc_required.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllowedCscrequired]
   }

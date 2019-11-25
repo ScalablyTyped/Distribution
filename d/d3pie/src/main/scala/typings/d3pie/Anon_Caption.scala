@@ -24,10 +24,10 @@ object Anon_Caption {
     `type`: placeholder | caption = null
   ): Anon_Caption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (placeholderParser != null) __obj.updateDynamic("placeholderParser")(js.Any.fromFunction2(placeholderParser))
-    if (string != null) __obj.updateDynamic("string")(string)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Caption]
   }

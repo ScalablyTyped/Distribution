@@ -49,8 +49,8 @@ object IListObject {
     qStateName: String,
     qError: INxValidationError = null
   ): IListObject = {
-    val __obj = js.Dynamic.literal(qDataPages = qDataPages, qDimensionInfo = qDimensionInfo, qExpressions = qExpressions, qSize = qSize, qStateName = qStateName)
-    if (qError != null) __obj.updateDynamic("qError")(qError)
+    val __obj = js.Dynamic.literal(qDataPages = qDataPages.asInstanceOf[js.Any], qDimensionInfo = qDimensionInfo.asInstanceOf[js.Any], qExpressions = qExpressions.asInstanceOf[js.Any], qSize = qSize.asInstanceOf[js.Any], qStateName = qStateName.asInstanceOf[js.Any])
+    if (qError != null) __obj.updateDynamic("qError")(qError.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListObject]
   }
 }

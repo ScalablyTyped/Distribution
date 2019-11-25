@@ -27,8 +27,8 @@ object Config {
     maxHeaderPairs: Int | Double = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary)
-    if (!js.isUndefined(headerFirst)) __obj.updateDynamic("headerFirst")(headerFirst)
+    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerFirst)) __obj.updateDynamic("headerFirst")(headerFirst.asInstanceOf[js.Any])
     if (maxHeaderPairs != null) __obj.updateDynamic("maxHeaderPairs")(maxHeaderPairs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }

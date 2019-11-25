@@ -27,10 +27,10 @@ object Anon_Business {
   @scala.inline
   def apply(business: String = null, other: String = null, personal: String = null, preferred: String = null): Anon_Business = {
     val __obj = js.Dynamic.literal()
-    if (business != null) __obj.updateDynamic("business")(business)
-    if (other != null) __obj.updateDynamic("other")(other)
-    if (personal != null) __obj.updateDynamic("personal")(personal)
-    if (preferred != null) __obj.updateDynamic("preferred")(preferred)
+    if (business != null) __obj.updateDynamic("business")(business.asInstanceOf[js.Any])
+    if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
+    if (personal != null) __obj.updateDynamic("personal")(personal.asInstanceOf[js.Any])
+    if (preferred != null) __obj.updateDynamic("preferred")(preferred.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Business]
   }
 }

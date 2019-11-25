@@ -23,9 +23,9 @@ object Anon_ChatId {
   ): Anon_ChatId = {
     val __obj = js.Dynamic.literal()
     if (chatId != null) __obj.updateDynamic("chatId")(chatId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableEditMessage)) __obj.updateDynamic("disableEditMessage")(disableEditMessage)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (inlineMessageId != null) __obj.updateDynamic("inlineMessageId")(inlineMessageId)
+    if (!js.isUndefined(disableEditMessage)) __obj.updateDynamic("disableEditMessage")(disableEditMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (inlineMessageId != null) __obj.updateDynamic("inlineMessageId")(inlineMessageId.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChatId]
   }

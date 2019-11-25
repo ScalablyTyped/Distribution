@@ -13,7 +13,7 @@ object Options {
   @scala.inline
   def apply(pool: String = null, target: InputTargetElement = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (pool != null) __obj.updateDynamic("pool")(pool)
+    if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

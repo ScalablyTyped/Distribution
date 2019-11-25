@@ -26,7 +26,7 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(checked: String, disabled: String, radio: String, readOnly: String): _Impl = {
-    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, radio = radio, readOnly = readOnly)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

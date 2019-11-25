@@ -11,7 +11,7 @@ trait OutputWriterArgs extends js.Object {
 object OutputWriterArgs {
   @scala.inline
   def apply(dependencies: js.Array[Dependency]): OutputWriterArgs = {
-    val __obj = js.Dynamic.literal(dependencies = dependencies)
+    val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutputWriterArgs]
   }

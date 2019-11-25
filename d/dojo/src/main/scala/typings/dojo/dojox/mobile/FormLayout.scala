@@ -1,8 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.columns
 import typings.dojo.dojoStrings.rightAlign
 import typings.std.HTMLElement
@@ -62,8 +60,24 @@ class FormLayout () extends Container {
   @JSName("set")
   def set_rightAlign(property: rightAlign, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_columns(property: columns, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_columns(
+    property: columns,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_rightAlign(property: rightAlign, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_rightAlign(
+    property: rightAlign,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

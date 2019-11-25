@@ -21,10 +21,10 @@ object WorkboxWaitingEvent {
     isUpdate: js.UndefOr[Boolean] = js.undefined,
     wasWaitingBeforeRegister: js.UndefOr[Boolean] = js.undefined
   ): WorkboxWaitingEvent = {
-    val __obj = js.Dynamic.literal(originalEvent = originalEvent, sw = sw, target = target)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(isUpdate)) __obj.updateDynamic("isUpdate")(isUpdate)
-    if (!js.isUndefined(wasWaitingBeforeRegister)) __obj.updateDynamic("wasWaitingBeforeRegister")(wasWaitingBeforeRegister)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUpdate)) __obj.updateDynamic("isUpdate")(isUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(wasWaitingBeforeRegister)) __obj.updateDynamic("wasWaitingBeforeRegister")(wasWaitingBeforeRegister.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkboxWaitingEvent]
   }
 }

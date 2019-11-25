@@ -13,8 +13,8 @@ object Anon_ExcludeEndExcludeStart {
   @scala.inline
   def apply(excludeEnd: js.UndefOr[Boolean] = js.undefined, excludeStart: js.UndefOr[Boolean] = js.undefined): Anon_ExcludeEndExcludeStart = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeEnd)) __obj.updateDynamic("excludeEnd")(excludeEnd)
-    if (!js.isUndefined(excludeStart)) __obj.updateDynamic("excludeStart")(excludeStart)
+    if (!js.isUndefined(excludeEnd)) __obj.updateDynamic("excludeEnd")(excludeEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeStart)) __obj.updateDynamic("excludeStart")(excludeStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExcludeEndExcludeStart]
   }
 }

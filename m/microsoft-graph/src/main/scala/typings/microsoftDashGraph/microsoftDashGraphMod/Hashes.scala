@@ -20,9 +20,9 @@ object Hashes {
   @scala.inline
   def apply(crc32Hash: String = null, quickXorHash: String = null, sha1Hash: String = null): Hashes = {
     val __obj = js.Dynamic.literal()
-    if (crc32Hash != null) __obj.updateDynamic("crc32Hash")(crc32Hash)
-    if (quickXorHash != null) __obj.updateDynamic("quickXorHash")(quickXorHash)
-    if (sha1Hash != null) __obj.updateDynamic("sha1Hash")(sha1Hash)
+    if (crc32Hash != null) __obj.updateDynamic("crc32Hash")(crc32Hash.asInstanceOf[js.Any])
+    if (quickXorHash != null) __obj.updateDynamic("quickXorHash")(quickXorHash.asInstanceOf[js.Any])
+    if (sha1Hash != null) __obj.updateDynamic("sha1Hash")(sha1Hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hashes]
   }
 }

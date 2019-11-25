@@ -26,13 +26,13 @@ object RadialLinearScale {
     ticks: LinearTickOptions = null
   ): RadialLinearScale = {
     val __obj = js.Dynamic.literal()
-    if (angleLines != null) __obj.updateDynamic("angleLines")(angleLines)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
-    if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines)
-    if (pointLabels != null) __obj.updateDynamic("pointLabels")(pointLabels)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (angleLines != null) __obj.updateDynamic("angleLines")(angleLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines.asInstanceOf[js.Any])
+    if (pointLabels != null) __obj.updateDynamic("pointLabels")(pointLabels.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialLinearScale]
   }
 }

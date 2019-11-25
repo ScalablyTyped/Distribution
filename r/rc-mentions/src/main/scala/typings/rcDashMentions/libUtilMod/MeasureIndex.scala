@@ -12,7 +12,7 @@ trait MeasureIndex extends js.Object {
 object MeasureIndex {
   @scala.inline
   def apply(location: Double, prefix: String): MeasureIndex = {
-    val __obj = js.Dynamic.literal(location = location, prefix = prefix)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MeasureIndex]
   }

@@ -22,9 +22,9 @@ object DeleteAudioParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): DeleteAudioParams = {
-    val __obj = js.Dynamic.literal(audio_name = audio_name, customization_id = customization_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(audio_name = audio_name.asInstanceOf[js.Any], customization_id = customization_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAudioParams]
   }
 }

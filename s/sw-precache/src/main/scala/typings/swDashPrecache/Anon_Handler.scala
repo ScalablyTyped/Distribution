@@ -19,8 +19,8 @@ object Anon_Handler {
   @scala.inline
   def apply(handler: Handler, urlPattern: RegExp | String, method: Method = null, options: Options = null): Anon_Handler = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], urlPattern = urlPattern.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Handler]
   }
 }

@@ -16,7 +16,7 @@ trait Anon_Arguments extends js.Object {
 object Anon_Arguments {
   @scala.inline
   def apply(arguments: js.Array[Expression], expression: Token[ImportKeyword] | (Identifier with Anon_Require)): Anon_Arguments = {
-    val __obj = js.Dynamic.literal(arguments = arguments, expression = expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Arguments]
   }

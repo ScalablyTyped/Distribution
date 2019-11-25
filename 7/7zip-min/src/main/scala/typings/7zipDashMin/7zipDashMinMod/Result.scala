@@ -16,7 +16,7 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(attr: String, compressed: String, date: String, name: String, size: String, time: String): Result = {
-    val __obj = js.Dynamic.literal(attr = attr, compressed = compressed, date = date, name = name, size = size, time = time)
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], compressed = compressed.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Result]
   }

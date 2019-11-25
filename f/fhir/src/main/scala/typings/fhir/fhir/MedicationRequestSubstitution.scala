@@ -35,15 +35,15 @@ object MedicationRequestSubstitution {
     modifierExtension: js.Array[Extension] = null,
     reason: CodeableConcept = null
   ): MedicationRequestSubstitution = {
-    val __obj = js.Dynamic.literal(allowed = allowed)
-    if (_allowed != null) __obj.updateDynamic("_allowed")(_allowed)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(allowed = allowed.asInstanceOf[js.Any])
+    if (_allowed != null) __obj.updateDynamic("_allowed")(_allowed.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicationRequestSubstitution]
   }
 }

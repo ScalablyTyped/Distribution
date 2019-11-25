@@ -23,7 +23,7 @@ object LoaderOptions {
   ): LoaderOptions = {
     val __obj = js.Dynamic.literal(use = use.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderOptions]
   }
 }

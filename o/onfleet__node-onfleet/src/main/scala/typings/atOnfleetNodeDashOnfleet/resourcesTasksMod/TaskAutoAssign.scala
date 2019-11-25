@@ -21,11 +21,11 @@ object TaskAutoAssign {
     maxAssignedTaskCount: Int | Double = null,
     team: String = null
   ): TaskAutoAssign = {
-    val __obj = js.Dynamic.literal(mode = mode)
-    if (!js.isUndefined(considerDependencies)) __obj.updateDynamic("considerDependencies")(considerDependencies)
-    if (excludeWorkerIds != null) __obj.updateDynamic("excludeWorkerIds")(excludeWorkerIds)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(considerDependencies)) __obj.updateDynamic("considerDependencies")(considerDependencies.asInstanceOf[js.Any])
+    if (excludeWorkerIds != null) __obj.updateDynamic("excludeWorkerIds")(excludeWorkerIds.asInstanceOf[js.Any])
     if (maxAssignedTaskCount != null) __obj.updateDynamic("maxAssignedTaskCount")(maxAssignedTaskCount.asInstanceOf[js.Any])
-    if (team != null) __obj.updateDynamic("team")(team)
+    if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskAutoAssign]
   }
 }

@@ -34,10 +34,10 @@ object AnimationOptionsObject {
     step: js.Function = null
   ): AnimationOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptionsObject]
   }
 }

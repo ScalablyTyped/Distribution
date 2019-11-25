@@ -21,7 +21,7 @@ object AddonParameters {
   ): AddonParameters = {
     val __obj = js.Dynamic.literal()
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBeautify)) __obj.updateDynamic("enableBeautify")(enableBeautify)
+    if (!js.isUndefined(enableBeautify)) __obj.updateDynamic("enableBeautify")(enableBeautify.asInstanceOf[js.Any])
     if (onBeforeRender != null) __obj.updateDynamic("onBeforeRender")(js.Any.fromFunction1(onBeforeRender))
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddonParameters]

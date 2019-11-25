@@ -26,7 +26,7 @@ trait IdleInfo extends js.Object {
 object IdleInfo {
   @scala.inline
   def apply(idleFor: Double, isIdle: Boolean, timeLeft: Double, timeLeftPer: String): IdleInfo = {
-    val __obj = js.Dynamic.literal(idleFor = idleFor, isIdle = isIdle, timeLeft = timeLeft, timeLeftPer = timeLeftPer)
+    val __obj = js.Dynamic.literal(idleFor = idleFor.asInstanceOf[js.Any], isIdle = isIdle.asInstanceOf[js.Any], timeLeft = timeLeft.asInstanceOf[js.Any], timeLeftPer = timeLeftPer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IdleInfo]
   }

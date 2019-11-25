@@ -13,7 +13,7 @@ object Anon_GlobOptions {
   @scala.inline
   def apply(globOptions: IOptions = null): Anon_GlobOptions = {
     val __obj = js.Dynamic.literal()
-    if (globOptions != null) __obj.updateDynamic("globOptions")(globOptions)
+    if (globOptions != null) __obj.updateDynamic("globOptions")(globOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GlobOptions]
   }
 }

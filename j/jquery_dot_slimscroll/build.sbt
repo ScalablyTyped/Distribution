@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_slimscroll"
-version := "v1.3.8-dt-20190322Z-d09405"
+version := "v1.3.8-dt-20190322Z-c18363"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

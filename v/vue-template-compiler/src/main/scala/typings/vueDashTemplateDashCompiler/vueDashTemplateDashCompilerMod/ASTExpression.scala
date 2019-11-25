@@ -26,10 +26,10 @@ object ASTExpression {
     ssrOptimizability: SSROptimizability = null,
     static: js.UndefOr[Boolean] = js.undefined
   ): ASTExpression = {
-    val __obj = js.Dynamic.literal(expression = expression, text = text, tokens = tokens)
-    __obj.updateDynamic("type")(`type`)
-    if (ssrOptimizability != null) __obj.updateDynamic("ssrOptimizability")(ssrOptimizability)
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (ssrOptimizability != null) __obj.updateDynamic("ssrOptimizability")(ssrOptimizability.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTExpression]
   }
 }

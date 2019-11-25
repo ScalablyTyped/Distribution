@@ -93,18 +93,18 @@ object IgVideoPlayerBanner {
     width: Double | String = null
   ): IgVideoPlayerBanner = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
-    if (!js.isUndefined(closeBanner)) __obj.updateDynamic("closeBanner")(closeBanner)
-    if (css != null) __obj.updateDynamic("css")(css)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeBanner)) __obj.updateDynamic("closeBanner")(closeBanner.asInstanceOf[js.Any])
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hidedelay != null) __obj.updateDynamic("hidedelay")(hidedelay.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (times != null) __obj.updateDynamic("times")(times)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgVideoPlayerBanner]
   }

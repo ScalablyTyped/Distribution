@@ -19,7 +19,7 @@ object MenuItemClickEventArgs {
     processOnServer: Boolean,
     sender: Control
   ): MenuItemClickEventArgs = {
-    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, item = item, processOnServer = processOnServer, sender = sender)
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MenuItemClickEventArgs]
   }

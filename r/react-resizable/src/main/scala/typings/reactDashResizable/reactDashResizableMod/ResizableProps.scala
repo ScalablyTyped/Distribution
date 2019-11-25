@@ -46,18 +46,18 @@ object ResizableProps {
     onResizeStop: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => _ = null,
     resizeHandles: js.Array[String] = null
   ): ResizableProps = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (draggableOpts != null) __obj.updateDynamic("draggableOpts")(draggableOpts)
-    if (handleSize != null) __obj.updateDynamic("handleSize")(handleSize)
-    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio)
-    if (maxConstraints != null) __obj.updateDynamic("maxConstraints")(maxConstraints)
-    if (minConstraints != null) __obj.updateDynamic("minConstraints")(minConstraints)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (draggableOpts != null) __obj.updateDynamic("draggableOpts")(draggableOpts.asInstanceOf[js.Any])
+    if (handleSize != null) __obj.updateDynamic("handleSize")(handleSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.asInstanceOf[js.Any])
+    if (maxConstraints != null) __obj.updateDynamic("maxConstraints")(maxConstraints.asInstanceOf[js.Any])
+    if (minConstraints != null) __obj.updateDynamic("minConstraints")(minConstraints.asInstanceOf[js.Any])
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction2(onResize))
     if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction2(onResizeStart))
     if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(js.Any.fromFunction2(onResizeStop))
-    if (resizeHandles != null) __obj.updateDynamic("resizeHandles")(resizeHandles)
+    if (resizeHandles != null) __obj.updateDynamic("resizeHandles")(resizeHandles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizableProps]
   }
 }

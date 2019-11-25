@@ -28,8 +28,8 @@ object ARIAPropertyDefinition {
   ): ARIAPropertyDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowundefined)) __obj.updateDynamic("allowundefined")(allowundefined)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(allowundefined)) __obj.updateDynamic("allowundefined")(allowundefined.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIAPropertyDefinition]
   }
 }

@@ -24,12 +24,12 @@ object OnTrigger {
     toggle: Expr = null,
     values: Expr = null
   ): OnTrigger = {
-    val __obj = js.Dynamic.literal(trigger = trigger)
-    if (insert != null) __obj.updateDynamic("insert")(insert)
-    if (modify != null) __obj.updateDynamic("modify")(modify)
+    val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
+    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
+    if (modify != null) __obj.updateDynamic("modify")(modify.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnTrigger]
   }
 }

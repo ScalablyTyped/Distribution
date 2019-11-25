@@ -21,7 +21,7 @@ object StyledTextProps {
   @scala.inline
   def apply(style: Anon_Auxiliary = null, x: Double | String = null, y: Double | String = null): StyledTextProps = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyledTextProps]

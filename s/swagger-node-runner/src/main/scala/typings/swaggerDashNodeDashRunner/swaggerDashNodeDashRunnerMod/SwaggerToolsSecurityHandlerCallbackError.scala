@@ -21,9 +21,9 @@ object SwaggerToolsSecurityHandlerCallbackError {
     statusCode: Int | Double = null
   ): SwaggerToolsSecurityHandlerCallbackError = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerToolsSecurityHandlerCallbackError]
   }

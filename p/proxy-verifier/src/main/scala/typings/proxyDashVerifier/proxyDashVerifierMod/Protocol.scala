@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Protocol extends js.Object
 
+object Protocol {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def http: typings.proxyDashVerifier.proxyDashVerifierStrings.http = this.cast("http")
+  @scala.inline
+  def https: typings.proxyDashVerifier.proxyDashVerifierStrings.https = this.cast("https")
+  @scala.inline
+  def socks4: typings.proxyDashVerifier.proxyDashVerifierStrings.socks4 = this.cast("socks4")
+  @scala.inline
+  def socks5: typings.proxyDashVerifier.proxyDashVerifierStrings.socks5 = this.cast("socks5")
+}
+

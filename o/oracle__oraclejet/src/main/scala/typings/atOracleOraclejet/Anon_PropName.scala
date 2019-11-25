@@ -10,9 +10,9 @@ trait Anon_PropName
 
 object Anon_PropName {
   @scala.inline
-  def apply(toString: () => String, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_PropName = {
-    val __obj = js.Dynamic.literal(toString = js.Any.fromFunction0(toString))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+  def apply(StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_PropName = {
+    val __obj = js.Dynamic.literal()
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_PropName]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Runtime extends js.Object {
 object Anon_Runtime {
   @scala.inline
   def apply(Runtime: Runtime): Anon_Runtime = {
-    val __obj = js.Dynamic.literal(Runtime = Runtime)
+    val __obj = js.Dynamic.literal(Runtime = Runtime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Runtime]
   }

@@ -13,7 +13,7 @@ trait GitGetBlobParams extends js.Object {
 object GitGetBlobParams {
   @scala.inline
   def apply(file_sha: String, owner: String, repo: String): GitGetBlobParams = {
-    val __obj = js.Dynamic.literal(file_sha = file_sha, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(file_sha = file_sha.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitGetBlobParams]
   }

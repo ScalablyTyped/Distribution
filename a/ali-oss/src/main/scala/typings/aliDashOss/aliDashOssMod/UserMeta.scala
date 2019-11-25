@@ -12,7 +12,7 @@ trait UserMeta extends js.Object {
 object UserMeta {
   @scala.inline
   def apply(pid: Double, uid: Double): UserMeta = {
-    val __obj = js.Dynamic.literal(pid = pid, uid = uid)
+    val __obj = js.Dynamic.literal(pid = pid.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserMeta]
   }

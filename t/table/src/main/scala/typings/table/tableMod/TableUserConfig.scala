@@ -25,12 +25,12 @@ object TableUserConfig {
     singleLine: js.UndefOr[Boolean] = js.undefined
   ): TableUserConfig = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (columnDefault != null) __obj.updateDynamic("columnDefault")(columnDefault)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (columnDefault != null) __obj.updateDynamic("columnDefault")(columnDefault.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (drawHorizontalLine != null) __obj.updateDynamic("drawHorizontalLine")(js.Any.fromFunction2(drawHorizontalLine))
-    if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine)
+    if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableUserConfig]
   }
 }

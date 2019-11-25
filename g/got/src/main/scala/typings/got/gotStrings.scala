@@ -54,7 +54,7 @@ object gotStrings {
   sealed trait connect extends js.Object
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete_ extends js.Object
   
   @js.native
   sealed trait downloadProgress extends js.Object
@@ -63,10 +63,10 @@ object gotStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get_ extends js.Object
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait head_ extends js.Object
   
   @js.native
   sealed trait lookup extends js.Object
@@ -75,10 +75,10 @@ object gotStrings {
   sealed trait patch extends js.Object
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post_ extends js.Object
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait put_ extends js.Object
   
   @js.native
   sealed trait redirect extends js.Object
@@ -134,23 +134,23 @@ object gotStrings {
   @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]
   @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
   def downloadProgress: downloadProgress = "downloadProgress".asInstanceOf[downloadProgress]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def get: get = "get".asInstanceOf[get]
+  def get_ : get_ = "get".asInstanceOf[get_]
   @scala.inline
-  def head: head = "head".asInstanceOf[head]
+  def head_ : head_ = "head".asInstanceOf[head_]
   @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
   @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
   @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  def post_ : post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  def put_ : put_ = "put".asInstanceOf[put_]
   @scala.inline
   def redirect: redirect = "redirect".asInstanceOf[redirect]
   @scala.inline

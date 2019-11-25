@@ -28,14 +28,14 @@ object StatsDConfig {
     suffix: String = null
   ): StatsDConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheDns)) __obj.updateDynamic("cacheDns")(cacheDns)
-    if (global_tags != null) __obj.updateDynamic("global_tags")(global_tags)
-    if (!js.isUndefined(globalize)) __obj.updateDynamic("globalize")(globalize)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(mock)) __obj.updateDynamic("mock")(mock)
+    if (!js.isUndefined(cacheDns)) __obj.updateDynamic("cacheDns")(cacheDns.asInstanceOf[js.Any])
+    if (global_tags != null) __obj.updateDynamic("global_tags")(global_tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalize)) __obj.updateDynamic("globalize")(globalize.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(mock)) __obj.updateDynamic("mock")(mock.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatsDConfig]
   }
 }

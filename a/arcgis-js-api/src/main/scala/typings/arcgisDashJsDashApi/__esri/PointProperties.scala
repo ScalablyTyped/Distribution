@@ -67,12 +67,12 @@ object PointProperties {
     z: Int | Double = null
   ): PointProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])

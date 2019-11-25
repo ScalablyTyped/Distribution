@@ -23,9 +23,9 @@ object AvatarTheme {
   @scala.inline
   def apply(avatar: String = null, image: String = null, letter: String = null): AvatarTheme = {
     val __obj = js.Dynamic.literal()
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (letter != null) __obj.updateDynamic("letter")(letter)
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (letter != null) __obj.updateDynamic("letter")(letter.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarTheme]
   }
 }

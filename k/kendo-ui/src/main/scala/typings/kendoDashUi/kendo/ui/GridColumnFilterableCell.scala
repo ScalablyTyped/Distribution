@@ -34,15 +34,15 @@ object GridColumnFilterableCell {
   ): GridColumnFilterableCell = {
     val __obj = js.Dynamic.literal()
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField)
+    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (inputWidth != null) __obj.updateDynamic("inputWidth")(inputWidth.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (!js.isUndefined(showOperators)) __obj.updateDynamic("showOperators")(showOperators)
-    if (suggestionOperator != null) __obj.updateDynamic("suggestionOperator")(suggestionOperator)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOperators)) __obj.updateDynamic("showOperators")(showOperators.asInstanceOf[js.Any])
+    if (suggestionOperator != null) __obj.updateDynamic("suggestionOperator")(suggestionOperator.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnFilterableCell]
   }
 }

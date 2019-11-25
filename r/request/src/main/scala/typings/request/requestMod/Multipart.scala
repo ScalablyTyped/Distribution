@@ -14,8 +14,8 @@ object Multipart {
   @scala.inline
   def apply(chunked: js.UndefOr[Boolean] = js.undefined, data: js.Array[Anon_Body] = null): Multipart = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chunked)) __obj.updateDynamic("chunked")(chunked)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(chunked)) __obj.updateDynamic("chunked")(chunked.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Multipart]
   }
 }

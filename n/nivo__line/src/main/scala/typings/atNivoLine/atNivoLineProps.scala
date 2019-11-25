@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait atNivoLineProps {
   @scala.inline
-  def LineProps: typings.atNivoLine.LineSvgPropsDimensions.type = typings.atNivoLine.LineSvgPropsDimensions
+  def LineProps: LineSvgPropsDimensions.type = typings.atNivoLine.LineSvgPropsDimensions
   type LineProps = LineSvgPropsDimensions
   @scala.inline
-  def LineCanvasProps: typings.atNivoLine.LineCanvasPropsDimensions.type = typings.atNivoLine.LineCanvasPropsDimensions
+  def LineCanvasProps: LineCanvasPropsDimensions.type = typings.atNivoLine.LineCanvasPropsDimensions
   type LineCanvasProps = LineCanvasPropsDimensions
   @scala.inline
   def ResponsiveLineProps: LineSvgProps.type = typings.atNivoLine.atNivoLineMod.LineSvgProps

@@ -18,8 +18,8 @@ object PrivacyProfile {
   @scala.inline
   def apply(contactEmail: String = null, statementUrl: String = null): PrivacyProfile = {
     val __obj = js.Dynamic.literal()
-    if (contactEmail != null) __obj.updateDynamic("contactEmail")(contactEmail)
-    if (statementUrl != null) __obj.updateDynamic("statementUrl")(statementUrl)
+    if (contactEmail != null) __obj.updateDynamic("contactEmail")(contactEmail.asInstanceOf[js.Any])
+    if (statementUrl != null) __obj.updateDynamic("statementUrl")(statementUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivacyProfile]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_BufferBytesWritten extends js.Object {
 object Anon_BufferBytesWritten {
   @scala.inline
   def apply(buffer: Uint8Array, bytesWritten: Double): Anon_BufferBytesWritten = {
-    val __obj = js.Dynamic.literal(buffer = buffer, bytesWritten = bytesWritten)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BufferBytesWritten]
   }

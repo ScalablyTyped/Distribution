@@ -23,7 +23,7 @@ trait ChatRoomBanList extends VoxImplantIMEvent {
 object ChatRoomBanList {
   @scala.inline
   def apply(participants: js.Array[ChatRoomParticipant], room: String): ChatRoomBanList = {
-    val __obj = js.Dynamic.literal(participants = participants, room = room)
+    val __obj = js.Dynamic.literal(participants = participants.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChatRoomBanList]
   }

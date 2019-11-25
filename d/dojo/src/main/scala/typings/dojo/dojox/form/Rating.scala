@@ -1,8 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit.form._FormWidget
 import typings.dojo.dojoStrings.numStars
 import typings.dojo.dojoStrings.required
@@ -68,10 +66,24 @@ class Rating () extends _FormWidget {
   @JSName("set")
   def set_value(property: value, value: Double): Unit = js.native
   @JSName("watch")
-  def watch_numStars(property: numStars, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_numStars(
+    property: numStars,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_required(property: required, callback: Fn_NewValue): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_required(
+    property: required,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -13,8 +13,8 @@ object TargetingValueDayPartTargeting {
   @scala.inline
   def apply(dayParts: js.Array[TargetingValueDayPartTargetingDayPart] = null, timeZoneType: String = null): TargetingValueDayPartTargeting = {
     val __obj = js.Dynamic.literal()
-    if (dayParts != null) __obj.updateDynamic("dayParts")(dayParts)
-    if (timeZoneType != null) __obj.updateDynamic("timeZoneType")(timeZoneType)
+    if (dayParts != null) __obj.updateDynamic("dayParts")(dayParts.asInstanceOf[js.Any])
+    if (timeZoneType != null) __obj.updateDynamic("timeZoneType")(timeZoneType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetingValueDayPartTargeting]
   }
 }

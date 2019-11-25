@@ -12,7 +12,7 @@ trait ILoginAccounts extends js.Object {
 object ILoginAccounts {
   @scala.inline
   def apply(Count: Double, Item: Double => ILoginAccount): ILoginAccounts = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[ILoginAccounts]
   }

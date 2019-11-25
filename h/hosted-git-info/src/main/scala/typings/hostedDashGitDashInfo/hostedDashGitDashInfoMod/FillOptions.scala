@@ -24,13 +24,13 @@ object FillOptions {
     treepath: String = null
   ): FillOptions = {
     val __obj = js.Dynamic.literal()
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (committish != null) __obj.updateDynamic("committish")(committish)
-    if (fragment != null) __obj.updateDynamic("fragment")(fragment)
-    if (!js.isUndefined(noCommittish)) __obj.updateDynamic("noCommittish")(noCommittish)
-    if (!js.isUndefined(noGitPlus)) __obj.updateDynamic("noGitPlus")(noGitPlus)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (treepath != null) __obj.updateDynamic("treepath")(treepath)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (committish != null) __obj.updateDynamic("committish")(committish.asInstanceOf[js.Any])
+    if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCommittish)) __obj.updateDynamic("noCommittish")(noCommittish.asInstanceOf[js.Any])
+    if (!js.isUndefined(noGitPlus)) __obj.updateDynamic("noGitPlus")(noGitPlus.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (treepath != null) __obj.updateDynamic("treepath")(treepath.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillOptions]
   }
 }

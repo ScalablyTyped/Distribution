@@ -37,10 +37,10 @@ object SessionEndedRequest {
     locale: String = null,
     reason: String = null
   ): SessionEndedRequest = {
-    val __obj = js.Dynamic.literal(requestId = requestId, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionEndedRequest]
   }
 }

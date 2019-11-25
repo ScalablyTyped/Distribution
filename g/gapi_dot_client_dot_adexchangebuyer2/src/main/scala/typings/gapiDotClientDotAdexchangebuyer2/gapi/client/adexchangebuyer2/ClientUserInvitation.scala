@@ -28,9 +28,9 @@ object ClientUserInvitation {
   @scala.inline
   def apply(clientAccountId: String = null, email: String = null, invitationId: String = null): ClientUserInvitation = {
     val __obj = js.Dynamic.literal()
-    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId)
+    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientUserInvitation]
   }
 }

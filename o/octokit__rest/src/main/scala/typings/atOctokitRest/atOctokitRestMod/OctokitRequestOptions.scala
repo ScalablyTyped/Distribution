@@ -36,10 +36,10 @@ object OctokitRequestOptions {
     timeout: Int | Double = null
   ): OctokitRequestOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (agent != null) __obj.updateDynamic("agent")(agent)
-    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (fetch != null) __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[OctokitRequestOptions]
   }

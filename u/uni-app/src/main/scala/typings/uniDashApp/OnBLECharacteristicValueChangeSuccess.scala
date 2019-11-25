@@ -32,10 +32,10 @@ object OnBLECharacteristicValueChangeSuccess {
     value: js.Array[_] = null
   ): OnBLECharacteristicValueChangeSuccess = {
     val __obj = js.Dynamic.literal()
-    if (characteristicId != null) __obj.updateDynamic("characteristicId")(characteristicId)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (characteristicId != null) __obj.updateDynamic("characteristicId")(characteristicId.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBLECharacteristicValueChangeSuccess]
   }
 }

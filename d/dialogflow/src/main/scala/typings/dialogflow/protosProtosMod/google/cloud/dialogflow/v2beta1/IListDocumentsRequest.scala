@@ -19,8 +19,8 @@ object IListDocumentsRequest {
   def apply(pageSize: Int | Double = null, pageToken: String = null, parent: String = null): IListDocumentsRequest = {
     val __obj = js.Dynamic.literal()
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListDocumentsRequest]
   }
 }

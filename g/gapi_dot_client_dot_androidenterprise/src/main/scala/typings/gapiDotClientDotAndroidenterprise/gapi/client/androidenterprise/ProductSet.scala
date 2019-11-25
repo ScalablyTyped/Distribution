@@ -35,10 +35,10 @@ object ProductSet {
     productVisibility: js.Array[ProductVisibility] = null
   ): ProductSet = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (productSetBehavior != null) __obj.updateDynamic("productSetBehavior")(productSetBehavior)
-    if (productVisibility != null) __obj.updateDynamic("productVisibility")(productVisibility)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (productSetBehavior != null) __obj.updateDynamic("productSetBehavior")(productSetBehavior.asInstanceOf[js.Any])
+    if (productVisibility != null) __obj.updateDynamic("productVisibility")(productVisibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductSet]
   }
 }

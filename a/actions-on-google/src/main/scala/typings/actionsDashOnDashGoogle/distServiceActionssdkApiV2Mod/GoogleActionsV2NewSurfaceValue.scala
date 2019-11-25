@@ -12,7 +12,7 @@ object GoogleActionsV2NewSurfaceValue {
   @scala.inline
   def apply(status: GoogleActionsV2NewSurfaceValueStatus = null): GoogleActionsV2NewSurfaceValue = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2NewSurfaceValue]
   }
 }

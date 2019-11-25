@@ -18,8 +18,8 @@ object GoogleCloudMlV1__ListVersionsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, versions: js.Array[GoogleCloudMlV1__Version] = null): GoogleCloudMlV1__ListVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (versions != null) __obj.updateDynamic("versions")(versions)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__ListVersionsResponse]
   }
 }

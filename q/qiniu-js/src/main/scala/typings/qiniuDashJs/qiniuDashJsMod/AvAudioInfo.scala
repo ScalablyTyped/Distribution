@@ -13,7 +13,7 @@ trait AvAudioInfo extends js.Object {
 object AvAudioInfo {
   @scala.inline
   def apply(audio: AudioInfo, format: AvFormat, video: VideoInfo): AvAudioInfo = {
-    val __obj = js.Dynamic.literal(audio = audio, format = format, video = video)
+    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AvAudioInfo]
   }

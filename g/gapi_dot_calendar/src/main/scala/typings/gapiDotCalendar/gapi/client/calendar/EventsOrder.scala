@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 */
 trait EventsOrder extends js.Object
 
+object EventsOrder {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def startTime: typings.gapiDotCalendar.gapiDotCalendarStrings.startTime = this.cast("startTime")
+  @scala.inline
+  def updated: typings.gapiDotCalendar.gapiDotCalendarStrings.updated = this.cast("updated")
+}
+

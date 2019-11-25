@@ -28,8 +28,8 @@ object NativeKeyboardUpdateOptions {
   ): NativeKeyboardUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (caretIndex != null) __obj.updateDynamic("caretIndex")(caretIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(showKeyboard)) __obj.updateDynamic("showKeyboard")(showKeyboard)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(showKeyboard)) __obj.updateDynamic("showKeyboard")(showKeyboard.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeKeyboardUpdateOptions]
   }
 }

@@ -12,7 +12,7 @@ object IntrinsicElements {
   @scala.inline
   def apply(`ion-icon`: IonIcon): IntrinsicElements = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ion-icon")(`ion-icon`)
+    __obj.updateDynamic("ion-icon")(`ion-icon`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrinsicElements]
   }
 }

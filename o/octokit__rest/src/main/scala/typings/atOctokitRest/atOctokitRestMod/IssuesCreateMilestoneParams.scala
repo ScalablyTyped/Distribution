@@ -37,9 +37,9 @@ object IssuesCreateMilestoneParams {
     due_on: String = null,
     state: open | closed = null
   ): IssuesCreateMilestoneParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, title = title)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (due_on != null) __obj.updateDynamic("due_on")(due_on)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (due_on != null) __obj.updateDynamic("due_on")(due_on.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesCreateMilestoneParams]
   }

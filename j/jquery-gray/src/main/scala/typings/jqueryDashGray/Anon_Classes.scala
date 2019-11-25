@@ -13,7 +13,7 @@ trait Anon_Classes extends js.Object {
 object Anon_Classes {
   @scala.inline
   def apply(classes: Classes, fade: Boolean): Anon_Classes = {
-    val __obj = js.Dynamic.literal(classes = classes, fade = fade)
+    val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], fade = fade.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Classes]
   }

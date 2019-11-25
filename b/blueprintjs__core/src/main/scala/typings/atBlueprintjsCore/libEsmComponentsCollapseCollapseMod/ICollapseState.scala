@@ -14,7 +14,7 @@ trait ICollapseState extends js.Object {
 object ICollapseState {
   @scala.inline
   def apply(animationState: AnimationStates, height: String): ICollapseState = {
-    val __obj = js.Dynamic.literal(animationState = animationState, height = height)
+    val __obj = js.Dynamic.literal(animationState = animationState.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICollapseState]
   }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ColorMode extends js.Object
 
+object ColorMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ct: typings.nodeDashHueDashApi.nodeDashHueDashApiStrings.ct = this.cast("ct")
+  @scala.inline
+  def hs: typings.nodeDashHueDashApi.nodeDashHueDashApiStrings.hs = this.cast("hs")
+  @scala.inline
+  def xy: typings.nodeDashHueDashApi.nodeDashHueDashApiStrings.xy = this.cast("xy")
+}
+

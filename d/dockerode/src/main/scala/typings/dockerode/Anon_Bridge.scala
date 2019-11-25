@@ -50,10 +50,10 @@ object Anon_Bridge {
     SecondaryIPAddresses: js.Any = null,
     SecondaryIPv6Addresses: js.Any = null
   ): Anon_Bridge = {
-    val __obj = js.Dynamic.literal(Bridge = Bridge, EndpointID = EndpointID, Gateway = Gateway, GlobalIPv6Address = GlobalIPv6Address, GlobalIPv6PrefixLen = GlobalIPv6PrefixLen, HairpinMode = HairpinMode, IPAddress = IPAddress, IPPrefixLen = IPPrefixLen, IPv6Gateway = IPv6Gateway, LinkLocalIPv6Address = LinkLocalIPv6Address, LinkLocalIPv6PrefixLen = LinkLocalIPv6PrefixLen, MacAddress = MacAddress, Networks = Networks, Ports = Ports, SandboxID = SandboxID, SandboxKey = SandboxKey)
-    if (Node != null) __obj.updateDynamic("Node")(Node)
-    if (SecondaryIPAddresses != null) __obj.updateDynamic("SecondaryIPAddresses")(SecondaryIPAddresses)
-    if (SecondaryIPv6Addresses != null) __obj.updateDynamic("SecondaryIPv6Addresses")(SecondaryIPv6Addresses)
+    val __obj = js.Dynamic.literal(Bridge = Bridge.asInstanceOf[js.Any], EndpointID = EndpointID.asInstanceOf[js.Any], Gateway = Gateway.asInstanceOf[js.Any], GlobalIPv6Address = GlobalIPv6Address.asInstanceOf[js.Any], GlobalIPv6PrefixLen = GlobalIPv6PrefixLen.asInstanceOf[js.Any], HairpinMode = HairpinMode.asInstanceOf[js.Any], IPAddress = IPAddress.asInstanceOf[js.Any], IPPrefixLen = IPPrefixLen.asInstanceOf[js.Any], IPv6Gateway = IPv6Gateway.asInstanceOf[js.Any], LinkLocalIPv6Address = LinkLocalIPv6Address.asInstanceOf[js.Any], LinkLocalIPv6PrefixLen = LinkLocalIPv6PrefixLen.asInstanceOf[js.Any], MacAddress = MacAddress.asInstanceOf[js.Any], Networks = Networks.asInstanceOf[js.Any], Ports = Ports.asInstanceOf[js.Any], SandboxID = SandboxID.asInstanceOf[js.Any], SandboxKey = SandboxKey.asInstanceOf[js.Any])
+    if (Node != null) __obj.updateDynamic("Node")(Node.asInstanceOf[js.Any])
+    if (SecondaryIPAddresses != null) __obj.updateDynamic("SecondaryIPAddresses")(SecondaryIPAddresses.asInstanceOf[js.Any])
+    if (SecondaryIPv6Addresses != null) __obj.updateDynamic("SecondaryIPv6Addresses")(SecondaryIPv6Addresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bridge]
   }
 }

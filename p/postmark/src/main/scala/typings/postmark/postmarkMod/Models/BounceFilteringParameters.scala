@@ -1,6 +1,5 @@
 package typings.postmark.postmarkMod.Models
 
-import typings.postmark.distClientModelsBouncesBounceFilteringParametersMod.BounceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ class BounceFilteringParameters protected ()
   def this(
     count: js.UndefOr[Double],
     offset: js.UndefOr[Double],
-    `type`: js.UndefOr[BounceType],
+    `type`: js.UndefOr[typings.postmark.distClientModelsBouncesBounceFilteringParametersMod.BounceType],
     inactive: js.UndefOr[Boolean],
     emailFilter: js.UndefOr[String],
     tag: js.UndefOr[String],

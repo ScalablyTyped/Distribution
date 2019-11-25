@@ -29,7 +29,7 @@ object Anon_ContentType {
     SessionId: String,
     To: String
   ): Anon_ContentType = {
-    val __obj = js.Dynamic.literal(ContentType = ContentType, CorrelationId = CorrelationId, Label = Label, Properties = Properties, ReplyTo = ReplyTo, ReplyToSessionId = ReplyToSessionId, RequiresPreprocessing = RequiresPreprocessing, SessionId = SessionId, To = To)
+    val __obj = js.Dynamic.literal(ContentType = ContentType.asInstanceOf[js.Any], CorrelationId = CorrelationId.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], ReplyTo = ReplyTo.asInstanceOf[js.Any], ReplyToSessionId = ReplyToSessionId.asInstanceOf[js.Any], RequiresPreprocessing = RequiresPreprocessing.asInstanceOf[js.Any], SessionId = SessionId.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentType]
   }

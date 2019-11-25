@@ -13,8 +13,8 @@ object LegendPositionOptions {
   @scala.inline
   def apply(position: LegendPositionType = null, visible: js.UndefOr[Boolean] = js.undefined): LegendPositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendPositionOptions]
   }
 }

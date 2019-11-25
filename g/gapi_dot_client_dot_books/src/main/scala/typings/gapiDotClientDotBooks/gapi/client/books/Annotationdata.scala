@@ -38,15 +38,15 @@ object Annotationdata {
     volumeId: String = null
   ): Annotationdata = {
     val __obj = js.Dynamic.literal()
-    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (encoded_data != null) __obj.updateDynamic("encoded_data")(encoded_data)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (layerId != null) __obj.updateDynamic("layerId")(layerId)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (encoded_data != null) __obj.updateDynamic("encoded_data")(encoded_data.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotationdata]
   }
 }

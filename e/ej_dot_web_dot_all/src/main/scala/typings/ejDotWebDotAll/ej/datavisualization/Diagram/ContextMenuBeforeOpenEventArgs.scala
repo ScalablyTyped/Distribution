@@ -40,13 +40,13 @@ object ContextMenuBeforeOpenEventArgs {
     `type`: String = null
   ): ContextMenuBeforeOpenEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu)
-    if (diagram != null) __obj.updateDynamic("diagram")(diagram)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu.asInstanceOf[js.Any])
+    if (diagram != null) __obj.updateDynamic("diagram")(diagram.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuBeforeOpenEventArgs]
   }
 }

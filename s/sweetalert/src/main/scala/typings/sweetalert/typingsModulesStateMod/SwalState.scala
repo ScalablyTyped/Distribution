@@ -17,7 +17,7 @@ trait SwalState extends js.Object {
 object SwalState {
   @scala.inline
   def apply(actions: StringDictionary[Anon_CloseModal], isOpen: Boolean, promise: Anon_Reject, timer: Double): SwalState = {
-    val __obj = js.Dynamic.literal(actions = actions, isOpen = isOpen, promise = promise, timer = timer)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], timer = timer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SwalState]
   }

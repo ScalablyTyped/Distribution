@@ -60,20 +60,20 @@ object FamilyMemberHistoryCondition {
     onsetString: String = null,
     outcome: CodeableConcept = null
   ): FamilyMemberHistoryCondition = {
-    val __obj = js.Dynamic.literal(code = code)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_onsetString != null) __obj.updateDynamic("_onsetString")(_onsetString)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (onsetAge != null) __obj.updateDynamic("onsetAge")(onsetAge)
-    if (onsetPeriod != null) __obj.updateDynamic("onsetPeriod")(onsetPeriod)
-    if (onsetRange != null) __obj.updateDynamic("onsetRange")(onsetRange)
-    if (onsetString != null) __obj.updateDynamic("onsetString")(onsetString)
-    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_onsetString != null) __obj.updateDynamic("_onsetString")(_onsetString.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (onsetAge != null) __obj.updateDynamic("onsetAge")(onsetAge.asInstanceOf[js.Any])
+    if (onsetPeriod != null) __obj.updateDynamic("onsetPeriod")(onsetPeriod.asInstanceOf[js.Any])
+    if (onsetRange != null) __obj.updateDynamic("onsetRange")(onsetRange.asInstanceOf[js.Any])
+    if (onsetString != null) __obj.updateDynamic("onsetString")(onsetString.asInstanceOf[js.Any])
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
     __obj.asInstanceOf[FamilyMemberHistoryCondition]
   }
 }

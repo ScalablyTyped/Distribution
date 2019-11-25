@@ -29,11 +29,11 @@ object Anon_BodyCommentsExtendsId {
     loc: SourceLocationKind = null,
     typeParameters: TypeParameterDeclarationKind = null
   ): Anon_BodyCommentsExtendsId = {
-    val __obj = js.Dynamic.literal(body = body, id = id)
-    __obj.updateDynamic("extends")(`extends`)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyCommentsExtendsId]
   }
 }

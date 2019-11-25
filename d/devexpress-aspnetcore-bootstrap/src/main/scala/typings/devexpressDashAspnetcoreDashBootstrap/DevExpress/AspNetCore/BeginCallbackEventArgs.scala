@@ -11,7 +11,7 @@ trait BeginCallbackEventArgs extends EventArgs {
 object BeginCallbackEventArgs {
   @scala.inline
   def apply(command: String, sender: Control): BeginCallbackEventArgs = {
-    val __obj = js.Dynamic.literal(command = command, sender = sender)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BeginCallbackEventArgs]
   }

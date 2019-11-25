@@ -48,12 +48,12 @@ object RangeSelectorProps {
     size: xxsmall | xsmall | small | medium | large | xlarge | full | String = null,
     step: Int | Double = null
   ): RangeSelectorProps = {
-    val __obj = js.Dynamic.literal(values = values)
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

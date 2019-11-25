@@ -21,9 +21,9 @@ object Venue {
     foursquare_id: String = null,
     foursquare_type: String = null
   ): Venue = {
-    val __obj = js.Dynamic.literal(address = address, location = location, title = title)
-    if (foursquare_id != null) __obj.updateDynamic("foursquare_id")(foursquare_id)
-    if (foursquare_type != null) __obj.updateDynamic("foursquare_type")(foursquare_type)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (foursquare_id != null) __obj.updateDynamic("foursquare_id")(foursquare_id.asInstanceOf[js.Any])
+    if (foursquare_type != null) __obj.updateDynamic("foursquare_type")(foursquare_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Venue]
   }
 }

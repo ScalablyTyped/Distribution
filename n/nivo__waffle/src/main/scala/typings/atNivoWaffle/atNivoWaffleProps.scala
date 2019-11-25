@@ -16,13 +16,13 @@ trait atNivoWaffleProps {
   def ResponsiveWaffleHtmlProps: typings.atNivoWaffle.atNivoWaffleMod.WaffleHtmlProps.type = typings.atNivoWaffle.atNivoWaffleMod.WaffleHtmlProps
   type ResponsiveWaffleHtmlProps = typings.atNivoWaffle.atNivoWaffleMod.WaffleHtmlProps
   @scala.inline
-  def WaffleProps: typings.atNivoWaffle.WaffleSvgPropsDimensions.type = typings.atNivoWaffle.WaffleSvgPropsDimensions
+  def WaffleProps: WaffleSvgPropsDimensions.type = typings.atNivoWaffle.WaffleSvgPropsDimensions
   type WaffleProps = WaffleSvgPropsDimensions
   @scala.inline
-  def WaffleCanvasProps: typings.atNivoWaffle.WaffleCanvasPropsDimensions.type = typings.atNivoWaffle.WaffleCanvasPropsDimensions
+  def WaffleCanvasProps: WaffleCanvasPropsDimensions.type = typings.atNivoWaffle.WaffleCanvasPropsDimensions
   type WaffleCanvasProps = WaffleCanvasPropsDimensions
   @scala.inline
-  def WaffleHtmlProps: typings.atNivoWaffle.WaffleHtmlPropsDimensions.type = typings.atNivoWaffle.WaffleHtmlPropsDimensions
+  def WaffleHtmlProps: WaffleHtmlPropsDimensions.type = typings.atNivoWaffle.WaffleHtmlPropsDimensions
   type WaffleHtmlProps = WaffleHtmlPropsDimensions
 }
 

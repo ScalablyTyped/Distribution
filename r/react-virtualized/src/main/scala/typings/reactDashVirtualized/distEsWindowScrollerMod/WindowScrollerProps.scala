@@ -63,7 +63,7 @@ object WindowScrollerProps {
     serverWidth: Int | Double = null
   ): WindowScrollerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (scrollElement != null) __obj.updateDynamic("scrollElement")(scrollElement.asInstanceOf[js.Any])

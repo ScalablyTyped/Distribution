@@ -14,7 +14,7 @@ trait _ErrorDocument extends js.Object {
 object _ErrorDocument {
   @scala.inline
   def apply(Key: String): _ErrorDocument = {
-    val __obj = js.Dynamic.literal(Key = Key)
+    val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_ErrorDocument]
   }

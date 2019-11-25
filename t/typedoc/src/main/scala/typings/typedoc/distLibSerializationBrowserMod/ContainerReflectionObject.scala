@@ -25,8 +25,8 @@ object ContainerReflectionObject {
     name: String,
     originalName: String = null
   ): ContainerReflectionObject = {
-    val __obj = js.Dynamic.literal(children = children, flags = flags, id = id, kind = kind, kindString = kindString, name = name)
-    if (originalName != null) __obj.updateDynamic("originalName")(originalName)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindString = kindString.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (originalName != null) __obj.updateDynamic("originalName")(originalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerReflectionObject]
   }
 }

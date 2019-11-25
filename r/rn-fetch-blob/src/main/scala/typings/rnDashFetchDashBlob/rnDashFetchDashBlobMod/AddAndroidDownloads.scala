@@ -48,13 +48,13 @@ object AddAndroidDownloads {
     useDownloadManager: js.UndefOr[Boolean] = js.undefined
   ): AddAndroidDownloads = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(mediaScannable)) __obj.updateDynamic("mediaScannable")(mediaScannable)
-    if (mime != null) __obj.updateDynamic("mime")(mime)
-    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(useDownloadManager)) __obj.updateDynamic("useDownloadManager")(useDownloadManager)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(mediaScannable)) __obj.updateDynamic("mediaScannable")(mediaScannable.asInstanceOf[js.Any])
+    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
+    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDownloadManager)) __obj.updateDynamic("useDownloadManager")(useDownloadManager.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAndroidDownloads]
   }
 }

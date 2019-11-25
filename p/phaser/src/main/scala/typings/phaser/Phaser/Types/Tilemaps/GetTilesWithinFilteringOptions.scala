@@ -27,9 +27,9 @@ object GetTilesWithinFilteringOptions {
     isNotEmpty: js.UndefOr[Boolean] = js.undefined
   ): GetTilesWithinFilteringOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasInterestingFace)) __obj.updateDynamic("hasInterestingFace")(hasInterestingFace)
-    if (!js.isUndefined(isColliding)) __obj.updateDynamic("isColliding")(isColliding)
-    if (!js.isUndefined(isNotEmpty)) __obj.updateDynamic("isNotEmpty")(isNotEmpty)
+    if (!js.isUndefined(hasInterestingFace)) __obj.updateDynamic("hasInterestingFace")(hasInterestingFace.asInstanceOf[js.Any])
+    if (!js.isUndefined(isColliding)) __obj.updateDynamic("isColliding")(isColliding.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNotEmpty)) __obj.updateDynamic("isNotEmpty")(isNotEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTilesWithinFilteringOptions]
   }
 }

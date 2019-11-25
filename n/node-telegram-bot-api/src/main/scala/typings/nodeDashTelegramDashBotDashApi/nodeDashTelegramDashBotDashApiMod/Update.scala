@@ -32,16 +32,16 @@ object Update {
     pre_checkout_query: PreCheckoutQuery = null,
     shipping_query: ShippingQuery = null
   ): Update = {
-    val __obj = js.Dynamic.literal(update_id = update_id)
-    if (callback_query != null) __obj.updateDynamic("callback_query")(callback_query)
-    if (channel_post != null) __obj.updateDynamic("channel_post")(channel_post)
-    if (chosen_inline_result != null) __obj.updateDynamic("chosen_inline_result")(chosen_inline_result)
-    if (edited_channel_post != null) __obj.updateDynamic("edited_channel_post")(edited_channel_post)
-    if (edited_message != null) __obj.updateDynamic("edited_message")(edited_message)
-    if (inline_query != null) __obj.updateDynamic("inline_query")(inline_query)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (pre_checkout_query != null) __obj.updateDynamic("pre_checkout_query")(pre_checkout_query)
-    if (shipping_query != null) __obj.updateDynamic("shipping_query")(shipping_query)
+    val __obj = js.Dynamic.literal(update_id = update_id.asInstanceOf[js.Any])
+    if (callback_query != null) __obj.updateDynamic("callback_query")(callback_query.asInstanceOf[js.Any])
+    if (channel_post != null) __obj.updateDynamic("channel_post")(channel_post.asInstanceOf[js.Any])
+    if (chosen_inline_result != null) __obj.updateDynamic("chosen_inline_result")(chosen_inline_result.asInstanceOf[js.Any])
+    if (edited_channel_post != null) __obj.updateDynamic("edited_channel_post")(edited_channel_post.asInstanceOf[js.Any])
+    if (edited_message != null) __obj.updateDynamic("edited_message")(edited_message.asInstanceOf[js.Any])
+    if (inline_query != null) __obj.updateDynamic("inline_query")(inline_query.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (pre_checkout_query != null) __obj.updateDynamic("pre_checkout_query")(pre_checkout_query.asInstanceOf[js.Any])
+    if (shipping_query != null) __obj.updateDynamic("shipping_query")(shipping_query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Update]
   }
 }

@@ -30,8 +30,8 @@ object ReposUpdateInformationAboutPagesSiteParams {
     cname: String = null,
     source: `BACKSLASHgh-pagesBACKSLASH` | BACKSLASHmasterBACKSLASH | (`BACKSLASHmaster /docsBACKSLASH`) = null
   ): ReposUpdateInformationAboutPagesSiteParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (cname != null) __obj.updateDynamic("cname")(cname)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (cname != null) __obj.updateDynamic("cname")(cname.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateInformationAboutPagesSiteParams]
   }

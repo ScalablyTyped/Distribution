@@ -20,10 +20,10 @@ object WalkOptions {
     visit: String = null
   ): WalkOptions = {
     val __obj = js.Dynamic.literal()
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (leave != null) __obj.updateDynamic("leave")(leave)
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
-    if (visit != null) __obj.updateDynamic("visit")(visit)
+    if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
+    if (leave != null) __obj.updateDynamic("leave")(leave.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (visit != null) __obj.updateDynamic("visit")(visit.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkOptions]
   }
 }

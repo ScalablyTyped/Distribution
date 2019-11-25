@@ -11,7 +11,7 @@ trait GlobalEndCallbackEventArgs extends EventArgs {
 object GlobalEndCallbackEventArgs {
   @scala.inline
   def apply(control: Control, sender: Control): GlobalEndCallbackEventArgs = {
-    val __obj = js.Dynamic.literal(control = control, sender = sender)
+    val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GlobalEndCallbackEventArgs]
   }

@@ -13,7 +13,7 @@ trait WebNavigationFramedErrorCallbackDetails
 object WebNavigationFramedErrorCallbackDetails {
   @scala.inline
   def apply(error: String, frameId: Double, processId: Double, tabId: Double, timeStamp: Double, url: String): WebNavigationFramedErrorCallbackDetails = {
-    val __obj = js.Dynamic.literal(error = error, frameId = frameId, processId = processId, tabId = tabId, timeStamp = timeStamp, url = url)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebNavigationFramedErrorCallbackDetails]
   }

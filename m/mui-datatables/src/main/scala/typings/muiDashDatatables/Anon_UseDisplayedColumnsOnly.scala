@@ -12,7 +12,7 @@ trait Anon_UseDisplayedColumnsOnly extends js.Object {
 object Anon_UseDisplayedColumnsOnly {
   @scala.inline
   def apply(useDisplayedColumnsOnly: Boolean, useDisplayedRowsOnly: Boolean): Anon_UseDisplayedColumnsOnly = {
-    val __obj = js.Dynamic.literal(useDisplayedColumnsOnly = useDisplayedColumnsOnly, useDisplayedRowsOnly = useDisplayedRowsOnly)
+    val __obj = js.Dynamic.literal(useDisplayedColumnsOnly = useDisplayedColumnsOnly.asInstanceOf[js.Any], useDisplayedRowsOnly = useDisplayedRowsOnly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_UseDisplayedColumnsOnly]
   }

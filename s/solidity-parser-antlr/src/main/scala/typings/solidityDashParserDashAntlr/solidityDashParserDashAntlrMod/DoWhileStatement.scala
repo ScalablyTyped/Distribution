@@ -23,10 +23,10 @@ object DoWhileStatement {
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null
   ): DoWhileStatement = {
-    val __obj = js.Dynamic.literal(body = body, condition = condition)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoWhileStatement]
   }
 }

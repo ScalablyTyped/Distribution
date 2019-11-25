@@ -13,8 +13,8 @@ trait ParsedHttpResponseBody extends js.Object {
 object ParsedHttpResponseBody {
   @scala.inline
   def apply(body: ResponseBody, err: Error = null): ParsedHttpResponseBody = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (err != null) __obj.updateDynamic("err")(err)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedHttpResponseBody]
   }
 }

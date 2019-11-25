@@ -25,8 +25,8 @@ object BrowseCarouselOptions {
     items: js.Array[GoogleActionsV2UiElementsCarouselBrowseItem],
     display: GoogleActionsV2UiElementsCarouselBrowseImageDisplayOptions = null
   ): BrowseCarouselOptions = {
-    val __obj = js.Dynamic.literal(items = items)
-    if (display != null) __obj.updateDynamic("display")(display)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowseCarouselOptions]
   }
 }

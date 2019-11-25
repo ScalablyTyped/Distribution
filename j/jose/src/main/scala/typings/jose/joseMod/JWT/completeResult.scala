@@ -15,7 +15,7 @@ trait completeResult extends js.Object {
 object completeResult {
   @scala.inline
   def apply(header: js.Object, key: Key, payload: js.Object, signature: String): completeResult = {
-    val __obj = js.Dynamic.literal(header = header, key = key, payload = payload, signature = signature)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[completeResult]
   }

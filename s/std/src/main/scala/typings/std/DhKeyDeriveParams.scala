@@ -11,7 +11,7 @@ trait DhKeyDeriveParams extends Algorithm {
 object DhKeyDeriveParams {
   @scala.inline
   def apply(name: java.lang.String, public: CryptoKey): DhKeyDeriveParams = {
-    val __obj = js.Dynamic.literal(name = name, public = public)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DhKeyDeriveParams]
   }

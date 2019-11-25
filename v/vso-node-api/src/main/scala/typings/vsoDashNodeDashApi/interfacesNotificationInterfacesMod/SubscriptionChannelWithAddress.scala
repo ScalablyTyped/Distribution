@@ -13,8 +13,8 @@ trait SubscriptionChannelWithAddress extends js.Object {
 object SubscriptionChannelWithAddress {
   @scala.inline
   def apply(address: String, `type`: String, useCustomAddress: Boolean): SubscriptionChannelWithAddress = {
-    val __obj = js.Dynamic.literal(address = address, useCustomAddress = useCustomAddress)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], useCustomAddress = useCustomAddress.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionChannelWithAddress]
   }
 }

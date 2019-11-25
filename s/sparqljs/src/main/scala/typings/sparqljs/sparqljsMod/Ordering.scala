@@ -13,7 +13,7 @@ object Ordering {
   @scala.inline
   def apply(expression: Expression, descending: js.UndefOr[Boolean] = js.undefined): Ordering = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ordering]
   }
 }

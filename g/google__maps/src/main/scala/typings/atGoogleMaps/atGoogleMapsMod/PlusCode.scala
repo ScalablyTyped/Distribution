@@ -14,7 +14,7 @@ trait PlusCode extends js.Object {
 object PlusCode {
   @scala.inline
   def apply(compound_code: String, global_code: String): PlusCode = {
-    val __obj = js.Dynamic.literal(compound_code = compound_code, global_code = global_code)
+    val __obj = js.Dynamic.literal(compound_code = compound_code.asInstanceOf[js.Any], global_code = global_code.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlusCode]
   }

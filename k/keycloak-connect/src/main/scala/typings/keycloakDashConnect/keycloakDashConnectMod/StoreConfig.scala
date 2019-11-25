@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 object StoreConfig {
   @scala.inline
   def apply(store: js.Any, scope: js.Any = null): StoreConfig = {
-    val __obj = js.Dynamic.literal(store = store)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreConfig]
   }
 }

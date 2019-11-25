@@ -29,7 +29,7 @@ object Chain {
     run: (Request, Response, js.Function0[_]) => Unit,
     strictNext: Boolean
   ): Chain = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), count = js.Any.fromFunction0(count), getHandlers = js.Any.fromFunction0(getHandlers), onceNext = onceNext, run = js.Any.fromFunction3(run), strictNext = strictNext)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), count = js.Any.fromFunction0(count), getHandlers = js.Any.fromFunction0(getHandlers), onceNext = onceNext.asInstanceOf[js.Any], run = js.Any.fromFunction3(run), strictNext = strictNext.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Chain]
   }

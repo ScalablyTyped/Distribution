@@ -1041,7 +1041,7 @@ object CSSProperties {
     vectorEffect: VectorEffectProperty | js.Array[VectorEffectProperty] = null
   ): CSSProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($unique)) __obj.updateDynamic("$unique")($unique)
+    if (!js.isUndefined($unique)) __obj.updateDynamic("$unique")($unique.asInstanceOf[js.Any])
     if (KhtmlBoxAlign != null) __obj.updateDynamic("KhtmlBoxAlign")(KhtmlBoxAlign.asInstanceOf[js.Any])
     if (KhtmlBoxDirection != null) __obj.updateDynamic("KhtmlBoxDirection")(KhtmlBoxDirection.asInstanceOf[js.Any])
     if (KhtmlBoxFlex != null) __obj.updateDynamic("KhtmlBoxFlex")(KhtmlBoxFlex.asInstanceOf[js.Any])
@@ -1100,10 +1100,10 @@ object CSSProperties {
     if (OTransitionDuration != null) __obj.updateDynamic("OTransitionDuration")(OTransitionDuration.asInstanceOf[js.Any])
     if (OTransitionProperty != null) __obj.updateDynamic("OTransitionProperty")(OTransitionProperty.asInstanceOf[js.Any])
     if (OTransitionTimingFunction != null) __obj.updateDynamic("OTransitionTimingFunction")(OTransitionTimingFunction.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesHyphenFallback)
-    js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesHyphenFallback)
+    if (StandardLonghandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
+    if (StandardShorthandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)
+    if (VendorLonghandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesHyphenFallback)
+    if (VendorShorthandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesHyphenFallback)
     if (WebkitBoxAlign != null) __obj.updateDynamic("WebkitBoxAlign")(WebkitBoxAlign.asInstanceOf[js.Any])
     if (WebkitBoxDirection != null) __obj.updateDynamic("WebkitBoxDirection")(WebkitBoxDirection.asInstanceOf[js.Any])
     if (WebkitBoxFlex != null) __obj.updateDynamic("WebkitBoxFlex")(WebkitBoxFlex.asInstanceOf[js.Any])

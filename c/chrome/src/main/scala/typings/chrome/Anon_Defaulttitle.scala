@@ -14,9 +14,9 @@ object Anon_Defaulttitle {
   @scala.inline
   def apply(default_title: String = null, file_filters: js.Array[String] = null, id: String = null): Anon_Defaulttitle = {
     val __obj = js.Dynamic.literal()
-    if (default_title != null) __obj.updateDynamic("default_title")(default_title)
-    if (file_filters != null) __obj.updateDynamic("file_filters")(file_filters)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (default_title != null) __obj.updateDynamic("default_title")(default_title.asInstanceOf[js.Any])
+    if (file_filters != null) __obj.updateDynamic("file_filters")(file_filters.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Defaulttitle]
   }
 }

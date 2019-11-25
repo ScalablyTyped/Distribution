@@ -16,9 +16,9 @@ trait Evidence extends js.Object {
 object Evidence {
   @scala.inline
   def apply(createdAt: Date, id: String, sendToProcessorAt: Date, comment: String = null, url: String = null): Evidence = {
-    val __obj = js.Dynamic.literal(createdAt = createdAt, id = id, sendToProcessorAt = sendToProcessorAt)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sendToProcessorAt = sendToProcessorAt.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Evidence]
   }
 }

@@ -39,7 +39,7 @@ object Anon_Children {
     xs: Requireable[Double | js.Object],
     xxl: Requireable[Double | js.Object]
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children, className = className, lg = lg, md = md, offset = offset, order = order, pull = pull, push = push, sm = sm, span = span, xl = xl, xs = xs, xxl = xxl)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], xl = xl.asInstanceOf[js.Any], xs = xs.asInstanceOf[js.Any], xxl = xxl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Children]
   }

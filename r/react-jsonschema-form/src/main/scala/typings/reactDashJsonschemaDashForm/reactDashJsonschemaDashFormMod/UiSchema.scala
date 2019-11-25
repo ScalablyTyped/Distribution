@@ -23,10 +23,10 @@ object UiSchema {
     `ui:widget`: Widget | String = null
   ): UiSchema = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`ui:field` != null) __obj.updateDynamic("ui:field")(`ui:field`.asInstanceOf[js.Any])
-    if (`ui:options` != null) __obj.updateDynamic("ui:options")(`ui:options`)
-    if (`ui:order` != null) __obj.updateDynamic("ui:order")(`ui:order`)
+    if (`ui:options` != null) __obj.updateDynamic("ui:options")(`ui:options`.asInstanceOf[js.Any])
+    if (`ui:order` != null) __obj.updateDynamic("ui:order")(`ui:order`.asInstanceOf[js.Any])
     if (`ui:widget` != null) __obj.updateDynamic("ui:widget")(`ui:widget`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UiSchema]
   }

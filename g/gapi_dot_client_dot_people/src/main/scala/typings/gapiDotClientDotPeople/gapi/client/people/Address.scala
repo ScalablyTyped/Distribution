@@ -64,18 +64,18 @@ object Address {
     `type`: String = null
   ): Address = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (extendedAddress != null) __obj.updateDynamic("extendedAddress")(extendedAddress)
-    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType)
-    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (poBox != null) __obj.updateDynamic("poBox")(poBox)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (extendedAddress != null) __obj.updateDynamic("extendedAddress")(extendedAddress.asInstanceOf[js.Any])
+    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType.asInstanceOf[js.Any])
+    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (poBox != null) __obj.updateDynamic("poBox")(poBox.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
 }

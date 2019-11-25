@@ -55,10 +55,10 @@ object IgGridGroupByColumnSettingsSummaries {
     text: String = null
   ): IgGridGroupByColumnSettingsSummaries = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (customSummary != null) __obj.updateDynamic("customSummary")(customSummary.asInstanceOf[js.Any])
-    if (summaryFunction != null) __obj.updateDynamic("summaryFunction")(summaryFunction)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (summaryFunction != null) __obj.updateDynamic("summaryFunction")(summaryFunction.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridGroupByColumnSettingsSummaries]
   }
 }

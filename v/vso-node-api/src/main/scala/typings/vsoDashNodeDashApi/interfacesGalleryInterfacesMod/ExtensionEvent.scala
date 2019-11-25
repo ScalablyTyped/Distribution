@@ -24,7 +24,7 @@ trait ExtensionEvent extends js.Object {
 object ExtensionEvent {
   @scala.inline
   def apply(id: Double, properties: js.Any, statisticDate: Date, version: String): ExtensionEvent = {
-    val __obj = js.Dynamic.literal(id = id, properties = properties, statisticDate = statisticDate, version = version)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], statisticDate = statisticDate.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionEvent]
   }

@@ -26,7 +26,7 @@ trait CommentReaction extends js.Object {
 object CommentReaction {
   @scala.inline
   def apply(authorHasReacted: Boolean, count: Double, iconPath: String | Uri, label: String): CommentReaction = {
-    val __obj = js.Dynamic.literal(authorHasReacted = authorHasReacted, count = count, iconPath = iconPath.asInstanceOf[js.Any], label = label)
+    val __obj = js.Dynamic.literal(authorHasReacted = authorHasReacted.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], iconPath = iconPath.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommentReaction]
   }

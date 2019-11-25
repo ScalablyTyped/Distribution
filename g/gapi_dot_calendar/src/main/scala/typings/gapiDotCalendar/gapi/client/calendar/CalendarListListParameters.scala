@@ -26,11 +26,11 @@ object CalendarListListParameters {
   ): CalendarListListParameters = {
     val __obj = js.Dynamic.literal()
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (minAccessRole != null) __obj.updateDynamic("minAccessRole")(minAccessRole)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (!js.isUndefined(showDeleted)) __obj.updateDynamic("showDeleted")(showDeleted)
-    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden)
-    if (syncToken != null) __obj.updateDynamic("syncToken")(syncToken)
+    if (minAccessRole != null) __obj.updateDynamic("minAccessRole")(minAccessRole.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDeleted)) __obj.updateDynamic("showDeleted")(showDeleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.asInstanceOf[js.Any])
+    if (syncToken != null) __obj.updateDynamic("syncToken")(syncToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarListListParameters]
   }
 }

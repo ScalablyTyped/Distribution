@@ -11,7 +11,7 @@ trait RadioGroupChangeEventDetail extends js.Object {
 object RadioGroupChangeEventDetail {
   @scala.inline
   def apply(value: js.Any): RadioGroupChangeEventDetail = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RadioGroupChangeEventDetail]
   }

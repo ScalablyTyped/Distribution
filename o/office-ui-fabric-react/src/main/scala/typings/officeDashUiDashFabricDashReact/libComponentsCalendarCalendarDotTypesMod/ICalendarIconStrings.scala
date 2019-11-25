@@ -26,9 +26,9 @@ object ICalendarIconStrings {
   @scala.inline
   def apply(closeIcon: String = null, leftNavigation: String = null, rightNavigation: String = null): ICalendarIconStrings = {
     val __obj = js.Dynamic.literal()
-    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon)
-    if (leftNavigation != null) __obj.updateDynamic("leftNavigation")(leftNavigation)
-    if (rightNavigation != null) __obj.updateDynamic("rightNavigation")(rightNavigation)
+    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
+    if (leftNavigation != null) __obj.updateDynamic("leftNavigation")(leftNavigation.asInstanceOf[js.Any])
+    if (rightNavigation != null) __obj.updateDynamic("rightNavigation")(rightNavigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalendarIconStrings]
   }
 }

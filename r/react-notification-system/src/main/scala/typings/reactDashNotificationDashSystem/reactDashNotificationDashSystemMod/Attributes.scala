@@ -23,9 +23,9 @@ object Attributes {
     style: Style | Boolean = null
   ): Attributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML)
+    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAnimation)) __obj.updateDynamic("noAnimation")(noAnimation)
+    if (!js.isUndefined(noAnimation)) __obj.updateDynamic("noAnimation")(noAnimation.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]

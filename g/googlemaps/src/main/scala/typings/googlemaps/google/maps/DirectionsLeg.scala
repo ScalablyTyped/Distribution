@@ -33,7 +33,7 @@ object DirectionsLeg {
     steps: js.Array[DirectionsStep],
     via_waypoints: js.Array[LatLng]
   ): DirectionsLeg = {
-    val __obj = js.Dynamic.literal(arrival_time = arrival_time, departure_time = departure_time, distance = distance, duration = duration, duration_in_traffic = duration_in_traffic, end_address = end_address, end_location = end_location, start_address = start_address, start_location = start_location, steps = steps, via_waypoints = via_waypoints)
+    val __obj = js.Dynamic.literal(arrival_time = arrival_time.asInstanceOf[js.Any], departure_time = departure_time.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], duration_in_traffic = duration_in_traffic.asInstanceOf[js.Any], end_address = end_address.asInstanceOf[js.Any], end_location = end_location.asInstanceOf[js.Any], start_address = start_address.asInstanceOf[js.Any], start_location = start_location.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], via_waypoints = via_waypoints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectionsLeg]
   }

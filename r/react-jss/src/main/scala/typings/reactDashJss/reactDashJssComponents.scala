@@ -11,7 +11,5 @@ object reactDashJssComponents extends reactDashJssProps {
   def JssProvider: ComponentType[JssProviderProps] = js.constructorOf[typings.reactDashJss.reactDashJssMod.JssProvider].asInstanceOf[typings.react.reactMod.ComponentType[JssProviderProps]]
   @scala.inline
   def ThemeProvider: ComponentType[ThemeProviderProps[DefaultTheme]] = js.constructorOf[typings.reactDashJss.reactDashJssMod.ThemeProvider].asInstanceOf[typings.react.reactMod.ComponentType[ThemeProviderProps[typings.theming.themingMod.DefaultTheme]]]
-  @scala.inline
-  def ThemeProviderCls: ComponentType[ThemeProviderClsProps[DefaultTheme]] = js.constructorOf[typings.reactDashJss.reactDashJssMod.ThemeProviderCls].asInstanceOf[typings.react.reactMod.ComponentType[ThemeProviderClsProps[typings.theming.themingMod.DefaultTheme]]]
 }
 

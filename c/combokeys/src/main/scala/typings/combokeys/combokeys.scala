@@ -2,7 +2,6 @@ package typings.combokeys
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
-import typings.combokeys.Combokeys.Combokeys
 import typings.combokeys.Combokeys.CombokeysStatic
 import typings.std.Element
 import typings.std.Event
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("combokeys")
 @js.native
-class combokeys protected () extends Combokeys {
+class combokeys protected ()
+  extends typings.combokeys.Combokeys.Combokeys {
   def this(element: Element) = this()
 }
 

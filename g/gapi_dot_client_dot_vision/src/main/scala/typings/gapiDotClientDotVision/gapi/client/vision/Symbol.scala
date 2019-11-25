@@ -33,9 +33,9 @@ object Symbol {
   @scala.inline
   def apply(boundingBox: BoundingPoly = null, property: TextProperty = null, text: String = null): Symbol = {
     val __obj = js.Dynamic.literal()
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Symbol]
   }
 }

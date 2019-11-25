@@ -11,7 +11,7 @@ trait Option extends js.Object {
 object Option {
   @scala.inline
   def apply(proxy: String): Option = {
-    val __obj = js.Dynamic.literal(proxy = proxy)
+    val __obj = js.Dynamic.literal(proxy = proxy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Option]
   }

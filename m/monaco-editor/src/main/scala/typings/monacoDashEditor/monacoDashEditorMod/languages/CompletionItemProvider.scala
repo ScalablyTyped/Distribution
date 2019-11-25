@@ -39,7 +39,7 @@ object CompletionItemProvider {
   ): CompletionItemProvider = {
     val __obj = js.Dynamic.literal(provideCompletionItems = js.Any.fromFunction4(provideCompletionItems))
     if (resolveCompletionItem != null) __obj.updateDynamic("resolveCompletionItem")(js.Any.fromFunction4(resolveCompletionItem))
-    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters)
+    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionItemProvider]
   }
 }

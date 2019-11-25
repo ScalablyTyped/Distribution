@@ -10,6 +10,7 @@ import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.HorizontalAl
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginBehaviorAndroid
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ObjectIdActionType
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.OpenGraphValueType
+import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ShareDialogMode
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ShareDialogModeAndroid
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ShareDialogModeIOS
 import typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.TooltipBehaviorIOS
@@ -47,14 +48,17 @@ object reactDashNativeDashFbsdkStrings {
   
   @js.native
   sealed trait automatic
-    extends ShareDialogModeAndroid
+    extends ShareDialogMode
+       with ShareDialogModeAndroid
        with ShareDialogModeIOS
   
   @js.native
   sealed trait bottom extends AuxiliaryViewPosition
   
   @js.native
-  sealed trait browser extends ShareDialogModeIOS
+  sealed trait browser
+    extends ShareDialogMode
+       with ShareDialogModeIOS
   
   @js.native
   sealed trait business_management extends _Permissions
@@ -75,7 +79,9 @@ object reactDashNativeDashFbsdkStrings {
   sealed trait `explicitly-only` extends AppEventsFlushBehavior
   
   @js.native
-  sealed trait feed extends ShareDialogModeAndroid
+  sealed trait feed
+    extends ShareDialogMode
+       with ShareDialogModeAndroid
   
   @js.native
   sealed trait force_display extends TooltipBehaviorIOS
@@ -96,7 +102,9 @@ object reactDashNativeDashFbsdkStrings {
   sealed trait manage_pages extends _Permissions
   
   @js.native
-  sealed trait native extends ShareDialogModeAndroid
+  sealed trait native
+    extends ShareDialogMode
+       with ShareDialogModeAndroid
   
   @js.native
   sealed trait native_only extends LoginBehaviorAndroid
@@ -264,13 +272,17 @@ object reactDashNativeDashFbsdkStrings {
   sealed trait video extends js.Object
   
   @js.native
-  sealed trait web extends ShareDialogModeAndroid
+  sealed trait web
+    extends ShareDialogMode
+       with ShareDialogModeAndroid
   
   @js.native
   sealed trait web_only extends LoginBehaviorAndroid
   
   @js.native
-  sealed trait webview extends ShareDialogModeIOS
+  sealed trait webview
+    extends ShareDialogMode
+       with ShareDialogModeIOS
   
   @scala.inline
   def Closed: Closed = "Closed".asInstanceOf[Closed]

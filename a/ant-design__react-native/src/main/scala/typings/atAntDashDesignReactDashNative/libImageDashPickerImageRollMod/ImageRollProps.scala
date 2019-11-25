@@ -22,7 +22,7 @@ object ImageRollProps {
     title: ReactNode = null
   ): ImageRollProps = {
     val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction0(onCancel), onSelected = js.Any.fromFunction1(onSelected))
-    if (cameraPickerProps != null) __obj.updateDynamic("cameraPickerProps")(cameraPickerProps)
+    if (cameraPickerProps != null) __obj.updateDynamic("cameraPickerProps")(cameraPickerProps.asInstanceOf[js.Any])
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageRollProps]

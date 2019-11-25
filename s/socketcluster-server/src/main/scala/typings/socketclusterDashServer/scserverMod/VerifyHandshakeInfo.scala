@@ -13,8 +13,8 @@ trait VerifyHandshakeInfo extends js.Object {
 object VerifyHandshakeInfo {
   @scala.inline
   def apply(req: IncomingMessage, origin: String = null): VerifyHandshakeInfo = {
-    val __obj = js.Dynamic.literal(req = req)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyHandshakeInfo]
   }
 }

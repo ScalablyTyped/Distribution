@@ -23,11 +23,11 @@ object IncrementalProgramOptions {
     host: CompilerHost = null,
     projectReferences: js.Array[ProjectReference] = null
   ): IncrementalProgramOptions[T] = {
-    val __obj = js.Dynamic.literal(options = options, rootNames = rootNames)
-    if (configFileParsingDiagnostics != null) __obj.updateDynamic("configFileParsingDiagnostics")(configFileParsingDiagnostics)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], rootNames = rootNames.asInstanceOf[js.Any])
+    if (configFileParsingDiagnostics != null) __obj.updateDynamic("configFileParsingDiagnostics")(configFileParsingDiagnostics.asInstanceOf[js.Any])
     if (createProgram != null) __obj.updateDynamic("createProgram")(js.Any.fromFunction6(createProgram))
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncrementalProgramOptions[T]]
   }
 }

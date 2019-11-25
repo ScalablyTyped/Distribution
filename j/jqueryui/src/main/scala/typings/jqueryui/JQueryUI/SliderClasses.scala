@@ -26,13 +26,13 @@ object SliderClasses {
     `ui-slider-vertical`: String = null
   ): SliderClasses = {
     val __obj = js.Dynamic.literal()
-    if (`ui-slider` != null) __obj.updateDynamic("ui-slider")(`ui-slider`)
-    if (`ui-slider-handle` != null) __obj.updateDynamic("ui-slider-handle")(`ui-slider-handle`)
-    if (`ui-slider-horizontal` != null) __obj.updateDynamic("ui-slider-horizontal")(`ui-slider-horizontal`)
-    if (`ui-slider-range` != null) __obj.updateDynamic("ui-slider-range")(`ui-slider-range`)
-    if (`ui-slider-range-max` != null) __obj.updateDynamic("ui-slider-range-max")(`ui-slider-range-max`)
-    if (`ui-slider-range-min` != null) __obj.updateDynamic("ui-slider-range-min")(`ui-slider-range-min`)
-    if (`ui-slider-vertical` != null) __obj.updateDynamic("ui-slider-vertical")(`ui-slider-vertical`)
+    if (`ui-slider` != null) __obj.updateDynamic("ui-slider")(`ui-slider`.asInstanceOf[js.Any])
+    if (`ui-slider-handle` != null) __obj.updateDynamic("ui-slider-handle")(`ui-slider-handle`.asInstanceOf[js.Any])
+    if (`ui-slider-horizontal` != null) __obj.updateDynamic("ui-slider-horizontal")(`ui-slider-horizontal`.asInstanceOf[js.Any])
+    if (`ui-slider-range` != null) __obj.updateDynamic("ui-slider-range")(`ui-slider-range`.asInstanceOf[js.Any])
+    if (`ui-slider-range-max` != null) __obj.updateDynamic("ui-slider-range-max")(`ui-slider-range-max`.asInstanceOf[js.Any])
+    if (`ui-slider-range-min` != null) __obj.updateDynamic("ui-slider-range-min")(`ui-slider-range-min`.asInstanceOf[js.Any])
+    if (`ui-slider-vertical` != null) __obj.updateDynamic("ui-slider-vertical")(`ui-slider-vertical`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderClasses]
   }
 }

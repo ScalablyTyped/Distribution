@@ -53,12 +53,12 @@ object Endpoint {
     target: String = null
   ): Endpoint = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (!js.isUndefined(allowCors)) __obj.updateDynamic("allowCors")(allowCors)
-    if (apis != null) __obj.updateDynamic("apis")(apis)
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCors)) __obj.updateDynamic("allowCors")(allowCors.asInstanceOf[js.Any])
+    if (apis != null) __obj.updateDynamic("apis")(apis.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Endpoint]
   }
 }

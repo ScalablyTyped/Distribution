@@ -19,8 +19,8 @@ object ReplicationOptions {
   @scala.inline
   def apply(read: js.Array[Anon_Database] = null, write: Anon_Database = null): ReplicationOptions = {
     val __obj = js.Dynamic.literal()
-    if (read != null) __obj.updateDynamic("read")(read)
-    if (write != null) __obj.updateDynamic("write")(write)
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationOptions]
   }
 }

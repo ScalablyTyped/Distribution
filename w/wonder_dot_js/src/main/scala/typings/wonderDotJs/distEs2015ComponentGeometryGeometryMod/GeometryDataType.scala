@@ -13,8 +13,8 @@ trait GeometryDataType extends js.Object {
 object GeometryDataType {
   @scala.inline
   def apply(vertices: js.Array[Double], faces: js.Array[Face3] = null): GeometryDataType = {
-    val __obj = js.Dynamic.literal(vertices = vertices)
-    if (faces != null) __obj.updateDynamic("faces")(faces)
+    val __obj = js.Dynamic.literal(vertices = vertices.asInstanceOf[js.Any])
+    if (faces != null) __obj.updateDynamic("faces")(faces.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometryDataType]
   }
 }

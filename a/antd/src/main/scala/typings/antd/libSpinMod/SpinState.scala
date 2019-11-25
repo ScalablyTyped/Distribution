@@ -16,8 +16,8 @@ object SpinState {
     spinning: js.UndefOr[Boolean] = js.undefined
   ): SpinState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(notCssAnimationSupported)) __obj.updateDynamic("notCssAnimationSupported")(notCssAnimationSupported)
-    if (!js.isUndefined(spinning)) __obj.updateDynamic("spinning")(spinning)
+    if (!js.isUndefined(notCssAnimationSupported)) __obj.updateDynamic("notCssAnimationSupported")(notCssAnimationSupported.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinning)) __obj.updateDynamic("spinning")(spinning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinState]
   }
 }

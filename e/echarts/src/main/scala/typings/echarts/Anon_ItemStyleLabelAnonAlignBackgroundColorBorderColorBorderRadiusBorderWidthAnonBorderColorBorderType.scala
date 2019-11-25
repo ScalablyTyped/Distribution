@@ -22,8 +22,8 @@ object Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderW
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth = null
   ): Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType = {
     val __obj = js.Dynamic.literal()
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType]
   }
 }

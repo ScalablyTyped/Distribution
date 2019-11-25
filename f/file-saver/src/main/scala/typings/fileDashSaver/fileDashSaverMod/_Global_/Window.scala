@@ -13,7 +13,7 @@ object Window {
   def apply(
     saveAs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FileSaver.saveAs */ js.Any
   ): Window = {
-    val __obj = js.Dynamic.literal(saveAs = saveAs)
+    val __obj = js.Dynamic.literal(saveAs = saveAs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

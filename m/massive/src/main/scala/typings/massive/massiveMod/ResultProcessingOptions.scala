@@ -22,11 +22,11 @@ object ResultProcessingOptions {
     stream: js.UndefOr[Boolean] = js.undefined
   ): ResultProcessingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(build)) __obj.updateDynamic("build")(build)
-    if (decompose != null) __obj.updateDynamic("decompose")(decompose)
-    if (!js.isUndefined(document)) __obj.updateDynamic("document")(document)
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream)
+    if (!js.isUndefined(build)) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
+    if (decompose != null) __obj.updateDynamic("decompose")(decompose.asInstanceOf[js.Any])
+    if (!js.isUndefined(document)) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultProcessingOptions]
   }
 }

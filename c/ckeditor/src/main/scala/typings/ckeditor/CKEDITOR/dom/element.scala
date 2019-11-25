@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 class element protected () extends node {
   def this(element: String) = this()
   def this(element: HTMLElement) = this()
-  def this(element: String, ownerDocument: document) = this()
-  def this(element: HTMLElement, ownerDocument: document) = this()
+  def this(element: String, ownerDocument: typings.ckeditor.CKEDITOR.dom.document) = this()
+  def this(element: HTMLElement, ownerDocument: typings.ckeditor.CKEDITOR.dom.document) = this()
   @JSName("$")
   val $_element: HTMLElement = js.native
   def addClass(className: String): Unit = js.native
@@ -58,13 +58,13 @@ class element protected () extends node {
   def getClientRect(): ClientRect = js.native
   def getComputedStyle(propertyName: String): String = js.native
   def getDirection(useComputed: Boolean): String = js.native
-  def getDocumentPosition(refDocument: document): position = js.native
+  def getDocumentPosition(refDocument: typings.ckeditor.CKEDITOR.dom.document): position = js.native
   def getDtd(): dtdDefinition = js.native
   def getEditor(): editor = js.native
   def getElementsByTag(tagName: String): nodeList = js.native
   def getFirst(): node = js.native
   def getFirst(evaluator: js.Function1[/* node */ node, Boolean]): node = js.native
-  def getFrameDocument(): document = js.native
+  def getFrameDocument(): typings.ckeditor.CKEDITOR.dom.document = js.native
   def getHtml(): String = js.native
   def getId(): String = js.native
   def getLast(): node = js.native

@@ -52,8 +52,8 @@ object Task {
     title: String,
     workingDirectory: String = null
   ): Task = {
-    val __obj = js.Dynamic.literal(arguments = arguments, description = description, iconIndex = iconIndex, iconPath = iconPath, program = program, title = title)
-    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], iconIndex = iconIndex.asInstanceOf[js.Any], iconPath = iconPath.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
 }

@@ -13,7 +13,7 @@ trait Subscription[V] extends js.Object {
 object Subscription {
   @scala.inline
   def apply[V](input: typings.baconjs.typesObservableMod.default[V], unsub: () => Unit = null): Subscription[V] = {
-    val __obj = js.Dynamic.literal(input = input)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     if (unsub != null) __obj.updateDynamic("unsub")(js.Any.fromFunction0(unsub))
     __obj.asInstanceOf[Subscription[V]]
   }

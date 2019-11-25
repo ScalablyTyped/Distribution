@@ -24,7 +24,7 @@ object LoadOptions {
     success: () => Unit = null
   ): LoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (numRetries != null) __obj.updateDynamic("numRetries")(numRetries.asInstanceOf[js.Any])

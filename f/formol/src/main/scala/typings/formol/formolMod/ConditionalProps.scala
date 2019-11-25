@@ -20,7 +20,7 @@ object ConditionalProps {
     value: /* v */ V => _ = null
   ): ConditionalProps[V] = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(js.Any.fromFunction1(value))

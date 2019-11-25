@@ -21,9 +21,9 @@ object AnalyzeSentimentResponse {
   @scala.inline
   def apply(documentSentiment: Sentiment = null, language: String = null, sentences: js.Array[Sentence] = null): AnalyzeSentimentResponse = {
     val __obj = js.Dynamic.literal()
-    if (documentSentiment != null) __obj.updateDynamic("documentSentiment")(documentSentiment)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (sentences != null) __obj.updateDynamic("sentences")(sentences)
+    if (documentSentiment != null) __obj.updateDynamic("documentSentiment")(documentSentiment.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (sentences != null) __obj.updateDynamic("sentences")(sentences.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzeSentimentResponse]
   }
 }

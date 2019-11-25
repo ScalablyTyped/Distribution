@@ -166,9 +166,9 @@ object IManager {
     serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = null,
     specs: ISpecModels = null
   ): IManager = {
-    val __obj = js.Dynamic.literal(connectTo = js.Any.fromFunction1(connectTo), connectionFailure = connectionFailure, dispose = js.Any.fromFunction0(dispose), findById = js.Any.fromFunction1(findById), findByPath = js.Any.fromFunction1(findByPath), isDisposed = isDisposed, isReady = isReady, ready = ready, refreshRunning = js.Any.fromFunction0(refreshRunning), refreshSpecs = js.Any.fromFunction0(refreshSpecs), running = js.Any.fromFunction0(running), runningChanged = runningChanged, shutdown = js.Any.fromFunction1(shutdown), shutdownAll = js.Any.fromFunction0(shutdownAll), specsChanged = specsChanged, startNew = js.Any.fromFunction1(startNew), stopIfNeeded = js.Any.fromFunction1(stopIfNeeded))
-    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings)
-    if (specs != null) __obj.updateDynamic("specs")(specs)
+    val __obj = js.Dynamic.literal(connectTo = js.Any.fromFunction1(connectTo), connectionFailure = connectionFailure.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), findById = js.Any.fromFunction1(findById), findByPath = js.Any.fromFunction1(findByPath), isDisposed = isDisposed.asInstanceOf[js.Any], isReady = isReady.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], refreshRunning = js.Any.fromFunction0(refreshRunning), refreshSpecs = js.Any.fromFunction0(refreshSpecs), running = js.Any.fromFunction0(running), runningChanged = runningChanged.asInstanceOf[js.Any], shutdown = js.Any.fromFunction1(shutdown), shutdownAll = js.Any.fromFunction0(shutdownAll), specsChanged = specsChanged.asInstanceOf[js.Any], startNew = js.Any.fromFunction1(startNew), stopIfNeeded = js.Any.fromFunction1(stopIfNeeded))
+    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
+    if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IManager]
   }
 }

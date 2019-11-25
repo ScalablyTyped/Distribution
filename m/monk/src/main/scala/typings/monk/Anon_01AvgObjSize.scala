@@ -38,7 +38,7 @@ object Anon_01AvgObjSize {
     totalIndexSize: Double,
     wiredTiger: js.Any
   ): Anon_01AvgObjSize = {
-    val __obj = js.Dynamic.literal(avgObjSize = avgObjSize, capped = capped, count = count, indexDetails = indexDetails, indexSizes = indexSizes, nindexes = nindexes, ns = ns, ok = ok.asInstanceOf[js.Any], size = size, storageSize = storageSize, totalIndexSize = totalIndexSize, wiredTiger = wiredTiger)
+    val __obj = js.Dynamic.literal(avgObjSize = avgObjSize.asInstanceOf[js.Any], capped = capped.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], indexDetails = indexDetails.asInstanceOf[js.Any], indexSizes = indexSizes.asInstanceOf[js.Any], nindexes = nindexes.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageSize = storageSize.asInstanceOf[js.Any], totalIndexSize = totalIndexSize.asInstanceOf[js.Any], wiredTiger = wiredTiger.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_01AvgObjSize]
   }

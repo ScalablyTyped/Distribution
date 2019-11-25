@@ -11,7 +11,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(Twitch: Anon_Ext): Window = {
-    val __obj = js.Dynamic.literal(Twitch = Twitch)
+    val __obj = js.Dynamic.literal(Twitch = Twitch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

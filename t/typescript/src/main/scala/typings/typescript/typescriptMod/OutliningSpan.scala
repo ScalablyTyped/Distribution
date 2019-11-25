@@ -31,7 +31,7 @@ object OutliningSpan {
     kind: OutliningSpanKind,
     textSpan: TextSpan
   ): OutliningSpan = {
-    val __obj = js.Dynamic.literal(autoCollapse = autoCollapse, bannerText = bannerText, hintSpan = hintSpan, kind = kind, textSpan = textSpan)
+    val __obj = js.Dynamic.literal(autoCollapse = autoCollapse.asInstanceOf[js.Any], bannerText = bannerText.asInstanceOf[js.Any], hintSpan = hintSpan.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutliningSpan]
   }

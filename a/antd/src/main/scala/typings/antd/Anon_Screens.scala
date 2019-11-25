@@ -12,7 +12,7 @@ trait Anon_Screens extends js.Object {
 object Anon_Screens {
   @scala.inline
   def apply(screens: BreakpointMap): Anon_Screens = {
-    val __obj = js.Dynamic.literal(screens = screens)
+    val __obj = js.Dynamic.literal(screens = screens.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Screens]
   }

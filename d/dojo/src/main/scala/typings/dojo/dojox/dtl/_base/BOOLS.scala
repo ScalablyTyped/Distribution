@@ -27,7 +27,7 @@ trait BOOLS extends js.Object {
 object BOOLS {
   @scala.inline
   def apply(checked: Double, disabled: Double, readonly: Double): BOOLS = {
-    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, readonly = readonly)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BOOLS]
   }

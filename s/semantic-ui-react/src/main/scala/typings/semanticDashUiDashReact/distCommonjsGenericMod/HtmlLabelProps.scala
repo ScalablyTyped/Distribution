@@ -14,7 +14,7 @@ object HtmlLabelProps {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, children: ReactNode = null): HtmlLabelProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlLabelProps]
   }

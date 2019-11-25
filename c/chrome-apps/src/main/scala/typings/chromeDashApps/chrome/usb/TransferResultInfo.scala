@@ -17,7 +17,7 @@ object TransferResultInfo {
   @scala.inline
   def apply(data: ArrayBuffer = null, resultCode: Int | Double = null): TransferResultInfo = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (resultCode != null) __obj.updateDynamic("resultCode")(resultCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferResultInfo]
   }

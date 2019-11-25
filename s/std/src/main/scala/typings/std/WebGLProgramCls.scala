@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLProgram")
 @js.native
-class WebGLProgramCls () extends WebGLProgram
+class WebGLProgramCls () extends WebGLObject
 

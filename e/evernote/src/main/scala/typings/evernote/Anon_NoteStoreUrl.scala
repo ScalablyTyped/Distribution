@@ -24,11 +24,11 @@ object Anon_NoteStoreUrl {
     username: String = null,
     webApiUrlPrefix: String = null
   ): Anon_NoteStoreUrl = {
-    val __obj = js.Dynamic.literal(shardId = shardId, userId = userId)
-    if (noteStoreUrl != null) __obj.updateDynamic("noteStoreUrl")(noteStoreUrl)
-    if (privilege != null) __obj.updateDynamic("privilege")(privilege)
-    if (username != null) __obj.updateDynamic("username")(username)
-    if (webApiUrlPrefix != null) __obj.updateDynamic("webApiUrlPrefix")(webApiUrlPrefix)
+    val __obj = js.Dynamic.literal(shardId = shardId.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    if (noteStoreUrl != null) __obj.updateDynamic("noteStoreUrl")(noteStoreUrl.asInstanceOf[js.Any])
+    if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (webApiUrlPrefix != null) __obj.updateDynamic("webApiUrlPrefix")(webApiUrlPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NoteStoreUrl]
   }
 }

@@ -28,7 +28,7 @@ object LocalesOptions {
     name: String,
     thousandSeparator: String
   ): LocalesOptions = {
-    val __obj = js.Dynamic.literal(days = days, daysShort = daysShort, decimalSeparator = decimalSeparator, formats = formats, months = months, monthsShort = monthsShort, name = name, thousandSeparator = thousandSeparator)
+    val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], daysShort = daysShort.asInstanceOf[js.Any], decimalSeparator = decimalSeparator.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], monthsShort = monthsShort.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thousandSeparator = thousandSeparator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocalesOptions]
   }

@@ -17,7 +17,7 @@ object AsObject {
       typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfo.Location.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(locationList = locationList)
+    val __obj = js.Dynamic.literal(locationList = locationList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

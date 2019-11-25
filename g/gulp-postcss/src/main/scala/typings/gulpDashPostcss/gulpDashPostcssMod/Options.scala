@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(parser: js.Any = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (parser != null) __obj.updateDynamic("parser")(parser)
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

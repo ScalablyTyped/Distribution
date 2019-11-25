@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait TextFormattingRule extends js.Object
 
+object TextFormattingRule {
+  @scala.inline
+  def backlog: typings.backlogDashJs.backlogDashJsStrings.backlog = this.cast("backlog")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def markdown: typings.backlogDashJs.backlogDashJsStrings.markdown = this.cast("markdown")
+}
+

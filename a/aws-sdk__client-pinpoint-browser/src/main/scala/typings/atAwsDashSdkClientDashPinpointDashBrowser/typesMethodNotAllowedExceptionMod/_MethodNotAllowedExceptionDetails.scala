@@ -19,8 +19,8 @@ object _MethodNotAllowedExceptionDetails {
   @scala.inline
   def apply(Message: String = null, RequestID: String = null): _MethodNotAllowedExceptionDetails = {
     val __obj = js.Dynamic.literal()
-    if (Message != null) __obj.updateDynamic("Message")(Message)
-    if (RequestID != null) __obj.updateDynamic("RequestID")(RequestID)
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
+    if (RequestID != null) __obj.updateDynamic("RequestID")(RequestID.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MethodNotAllowedExceptionDetails]
   }
 }

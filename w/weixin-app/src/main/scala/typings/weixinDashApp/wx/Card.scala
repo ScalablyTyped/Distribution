@@ -14,8 +14,8 @@ trait Card extends js.Object {
 object Card {
   @scala.inline
   def apply(cardExt: String, cardId: String, code: String = null): Card = {
-    val __obj = js.Dynamic.literal(cardExt = cardExt, cardId = cardId)
-    if (code != null) __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(cardExt = cardExt.asInstanceOf[js.Any], cardId = cardId.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     __obj.asInstanceOf[Card]
   }
 }

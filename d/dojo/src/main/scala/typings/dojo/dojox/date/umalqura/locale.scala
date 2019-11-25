@@ -69,7 +69,7 @@ object locale {
     regexp: js.Object => Unit,
     weekDays: js.Object
   ): locale = {
-    val __obj = js.Dynamic.literal(addCustomFormats = js.Any.fromFunction2(addCustomFormats), format = js.Any.fromFunction2(format), getNames = js.Any.fromFunction5(getNames), months = months, parse = js.Any.fromFunction2(parse), regexp = js.Any.fromFunction1(regexp), weekDays = weekDays)
+    val __obj = js.Dynamic.literal(addCustomFormats = js.Any.fromFunction2(addCustomFormats), format = js.Any.fromFunction2(format), getNames = js.Any.fromFunction5(getNames), months = months.asInstanceOf[js.Any], parse = js.Any.fromFunction2(parse), regexp = js.Any.fromFunction1(regexp), weekDays = weekDays.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[locale]
   }

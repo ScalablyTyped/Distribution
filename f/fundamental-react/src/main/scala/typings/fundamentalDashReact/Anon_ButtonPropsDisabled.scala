@@ -31,14 +31,14 @@ object Anon_ButtonPropsDisabled {
     value: String = null
   ): Anon_ButtonPropsDisabled = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText)
-    if (timeProps != null) __obj.updateDynamic("timeProps")(timeProps)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
+    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
+    if (timeProps != null) __obj.updateDynamic("timeProps")(timeProps.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ButtonPropsDisabled]
   }
 }

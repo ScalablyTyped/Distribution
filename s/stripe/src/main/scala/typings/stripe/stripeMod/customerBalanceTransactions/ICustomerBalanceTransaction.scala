@@ -79,13 +79,13 @@ object ICustomerBalanceTransaction {
     invoice: String = null,
     metadata: IMetadata = null
   ): ICustomerBalanceTransaction = {
-    val __obj = js.Dynamic.literal(amount = amount, created = created, currency = currency, customer = customer, ending_balance = ending_balance, id = id, livemode = livemode)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
-    if (credit_note != null) __obj.updateDynamic("credit_note")(credit_note)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (invoice != null) __obj.updateDynamic("invoice")(invoice)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], ending_balance = ending_balance.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (credit_note != null) __obj.updateDynamic("credit_note")(credit_note.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomerBalanceTransaction]
   }
 }

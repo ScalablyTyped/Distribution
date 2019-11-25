@@ -17,7 +17,7 @@ object AsObject {
       typings.libraDashCore.libAtGeneratedValidatorUnderscorePublicUnderscoreKeysUnderscorePbMod.ValidatorPublicKeys.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(validatorPublicKeysList = validatorPublicKeysList)
+    val __obj = js.Dynamic.literal(validatorPublicKeysList = validatorPublicKeysList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait VisibilityState extends js.Object
 
+object VisibilityState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def hidden: typings.std.stdStrings.hidden = this.cast("hidden")
+  @scala.inline
+  def visible: typings.std.stdStrings.visible = this.cast("visible")
+}
+

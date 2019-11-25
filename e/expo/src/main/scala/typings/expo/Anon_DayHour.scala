@@ -32,7 +32,7 @@ object Anon_DayHour {
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
     if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
     if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat)
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
     if (weekDay != null) __obj.updateDynamic("weekDay")(weekDay.asInstanceOf[js.Any])
     if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])

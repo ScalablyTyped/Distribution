@@ -12,7 +12,7 @@ trait BaseResult extends js.Object {
 object BaseResult {
   @scala.inline
   def apply(missing: js.Array[String], valid: Boolean): BaseResult = {
-    val __obj = js.Dynamic.literal(missing = missing, valid = valid)
+    val __obj = js.Dynamic.literal(missing = missing.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseResult]
   }

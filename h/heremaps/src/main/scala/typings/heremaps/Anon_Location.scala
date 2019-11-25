@@ -21,7 +21,7 @@ object Anon_Location {
     MatchType: String,
     Relevance: Double
   ): Anon_Location = {
-    val __obj = js.Dynamic.literal(Location = Location, MatchLevel = MatchLevel, MatchQuality = MatchQuality, MatchType = MatchType, Relevance = Relevance)
+    val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], MatchLevel = MatchLevel.asInstanceOf[js.Any], MatchQuality = MatchQuality.asInstanceOf[js.Any], MatchType = MatchType.asInstanceOf[js.Any], Relevance = Relevance.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Location]
   }

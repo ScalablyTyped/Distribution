@@ -44,7 +44,7 @@ object MatrixExtract {
     x: Double,
     y: Double
   ): MatrixExtract = {
-    val __obj = js.Dynamic.literal(a = a, b = b, c = c, d = d, e = e, f = f, matrix = matrix, rotation = rotation, scaleX = scaleX, scaleY = scaleY, skewX = skewX, skewY = skewY, transformedX = transformedX, transformedY = transformedY, x = x, y = y)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scaleX = scaleX.asInstanceOf[js.Any], scaleY = scaleY.asInstanceOf[js.Any], skewX = skewX.asInstanceOf[js.Any], skewY = skewY.asInstanceOf[js.Any], transformedX = transformedX.asInstanceOf[js.Any], transformedY = transformedY.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MatrixExtract]
   }

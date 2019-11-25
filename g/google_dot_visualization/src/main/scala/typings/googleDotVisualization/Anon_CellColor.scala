@@ -33,7 +33,7 @@ object Anon_CellColor {
     underYearSpace: Double,
     unusedMonthOutlineColor: js.Object
   ): Anon_CellColor = {
-    val __obj = js.Dynamic.literal(cellColor = cellColor, cellSize = cellSize, dayOfWeekLabel = dayOfWeekLabel, dayOfWeekRightSpace = dayOfWeekRightSpace, daysOfWeek = daysOfWeek, focusedCellColor = focusedCellColor, monthLabel = monthLabel, monthOutlineColor = monthOutlineColor, underMonthSpace = underMonthSpace, underYearSpace = underYearSpace, unusedMonthOutlineColor = unusedMonthOutlineColor)
+    val __obj = js.Dynamic.literal(cellColor = cellColor.asInstanceOf[js.Any], cellSize = cellSize.asInstanceOf[js.Any], dayOfWeekLabel = dayOfWeekLabel.asInstanceOf[js.Any], dayOfWeekRightSpace = dayOfWeekRightSpace.asInstanceOf[js.Any], daysOfWeek = daysOfWeek.asInstanceOf[js.Any], focusedCellColor = focusedCellColor.asInstanceOf[js.Any], monthLabel = monthLabel.asInstanceOf[js.Any], monthOutlineColor = monthOutlineColor.asInstanceOf[js.Any], underMonthSpace = underMonthSpace.asInstanceOf[js.Any], underYearSpace = underYearSpace.asInstanceOf[js.Any], unusedMonthOutlineColor = unusedMonthOutlineColor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CellColor]
   }

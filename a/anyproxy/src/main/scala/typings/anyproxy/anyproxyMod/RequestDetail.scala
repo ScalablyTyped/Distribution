@@ -23,7 +23,7 @@ object RequestDetail {
     requestOptions: RequestOptions,
     url: String
   ): RequestDetail = {
-    val __obj = js.Dynamic.literal(_req = _req, protocol = protocol, requestData = requestData, requestOptions = requestOptions, url = url)
+    val __obj = js.Dynamic.literal(_req = _req.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], requestData = requestData.asInstanceOf[js.Any], requestOptions = requestOptions.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestDetail]
   }

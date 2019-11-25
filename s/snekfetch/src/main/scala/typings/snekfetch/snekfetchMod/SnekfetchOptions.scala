@@ -29,10 +29,10 @@ object SnekfetchOptions {
     val __obj = js.Dynamic.literal()
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (qs != null) __obj.updateDynamic("qs")(qs)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (qs != null) __obj.updateDynamic("qs")(qs.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)
+    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnekfetchOptions]
   }
 }

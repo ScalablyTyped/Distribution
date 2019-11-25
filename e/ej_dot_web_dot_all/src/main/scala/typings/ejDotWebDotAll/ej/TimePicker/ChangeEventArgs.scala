@@ -32,11 +32,11 @@ object ChangeEventArgs {
     value: String = null
   ): ChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (prevTime != null) __obj.updateDynamic("prevTime")(prevTime)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (prevTime != null) __obj.updateDynamic("prevTime")(prevTime.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEventArgs]
   }
 }

@@ -18,8 +18,8 @@ object CanvasSourceOptions {
     coordinates: js.Array[js.Array[Double]],
     animate: js.UndefOr[Boolean] = js.undefined
   ): CanvasSourceOptions = {
-    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], coordinates = coordinates)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasSourceOptions]
   }
 }

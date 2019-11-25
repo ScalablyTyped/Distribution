@@ -36,12 +36,12 @@ object ExpandCollapseEventArgs {
     `type`: String = null
   ): ExpandCollapseEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (splitbarIndex != null) __obj.updateDynamic("splitbarIndex")(splitbarIndex.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandCollapseEventArgs]
   }
 }

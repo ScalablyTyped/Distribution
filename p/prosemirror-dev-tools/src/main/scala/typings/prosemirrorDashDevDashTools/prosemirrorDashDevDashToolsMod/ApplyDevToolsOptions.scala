@@ -21,7 +21,7 @@ trait ApplyDevToolsOptions extends js.Object {
 object ApplyDevToolsOptions {
   @scala.inline
   def apply(EditorState: TypeofClassEditorState): ApplyDevToolsOptions = {
-    val __obj = js.Dynamic.literal(EditorState = EditorState)
+    val __obj = js.Dynamic.literal(EditorState = EditorState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ApplyDevToolsOptions]
   }

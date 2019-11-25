@@ -17,8 +17,8 @@ object CacheErrorCls {
     name: typings.cacheableDashRequest.cacheableDashRequestStrings.CacheError,
     stack: String = null
   ): CacheErrorCls = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheErrorCls]
   }
 }

@@ -34,17 +34,17 @@ object Anon_ChallengeAnswer {
     usernameParameter: String = null,
     validationData: StringDictionary[String] = null
   ): Anon_ChallengeAnswer = {
-    val __obj = js.Dynamic.literal(userAttributes = userAttributes)
-    if (challengeAnswer != null) __obj.updateDynamic("challengeAnswer")(challengeAnswer)
-    if (challengeName != null) __obj.updateDynamic("challengeName")(challengeName)
-    if (codeParameter != null) __obj.updateDynamic("codeParameter")(codeParameter)
-    if (linkParameter != null) __obj.updateDynamic("linkParameter")(linkParameter)
-    if (!js.isUndefined(newDeviceUsed)) __obj.updateDynamic("newDeviceUsed")(newDeviceUsed)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (privateChallengeParameters != null) __obj.updateDynamic("privateChallengeParameters")(privateChallengeParameters)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (usernameParameter != null) __obj.updateDynamic("usernameParameter")(usernameParameter)
-    if (validationData != null) __obj.updateDynamic("validationData")(validationData)
+    val __obj = js.Dynamic.literal(userAttributes = userAttributes.asInstanceOf[js.Any])
+    if (challengeAnswer != null) __obj.updateDynamic("challengeAnswer")(challengeAnswer.asInstanceOf[js.Any])
+    if (challengeName != null) __obj.updateDynamic("challengeName")(challengeName.asInstanceOf[js.Any])
+    if (codeParameter != null) __obj.updateDynamic("codeParameter")(codeParameter.asInstanceOf[js.Any])
+    if (linkParameter != null) __obj.updateDynamic("linkParameter")(linkParameter.asInstanceOf[js.Any])
+    if (!js.isUndefined(newDeviceUsed)) __obj.updateDynamic("newDeviceUsed")(newDeviceUsed.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (privateChallengeParameters != null) __obj.updateDynamic("privateChallengeParameters")(privateChallengeParameters.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (usernameParameter != null) __obj.updateDynamic("usernameParameter")(usernameParameter.asInstanceOf[js.Any])
+    if (validationData != null) __obj.updateDynamic("validationData")(validationData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChallengeAnswer]
   }
 }

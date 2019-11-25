@@ -23,9 +23,9 @@ object Policy {
     post_filter: js.Any = null,
     query_filter: js.Any = null
   ): Policy = {
-    val __obj = js.Dynamic.literal(allow = allow, method = method, url = url)
-    if (post_filter != null) __obj.updateDynamic("post_filter")(post_filter)
-    if (query_filter != null) __obj.updateDynamic("query_filter")(query_filter)
+    val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (post_filter != null) __obj.updateDynamic("post_filter")(post_filter.asInstanceOf[js.Any])
+    if (query_filter != null) __obj.updateDynamic("query_filter")(query_filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policy]
   }
 }

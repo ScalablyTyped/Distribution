@@ -13,14 +13,8 @@ trait Measurement extends js.Object {
 
 object Measurement {
   @scala.inline
-  def apply(
-    asBitString: () => String,
-    newState: QState,
-    numBits: Double,
-    result: Double,
-    toString: () => String
-  ): Measurement = {
-    val __obj = js.Dynamic.literal(asBitString = js.Any.fromFunction0(asBitString), newState = newState, numBits = numBits, result = result, toString = js.Any.fromFunction0(toString))
+  def apply(asBitString: () => String, newState: QState, numBits: Double, result: Double): Measurement = {
+    val __obj = js.Dynamic.literal(asBitString = js.Any.fromFunction0(asBitString), newState = newState.asInstanceOf[js.Any], numBits = numBits.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Measurement]
   }

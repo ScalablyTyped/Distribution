@@ -43,9 +43,9 @@ object Web3 {
     currentProvider: provider = null,
     defaultAccount: String = null
   ): Web3 = {
-    val __obj = js.Dynamic.literal(BatchRequest = BatchRequest, bzz = bzz, defaultBlock = defaultBlock.asInstanceOf[js.Any], eth = eth, extend = js.Any.fromFunction1(extend), givenProvider = givenProvider, setProvider = js.Any.fromFunction1(setProvider), shh = shh, utils = utils, version = version)
+    val __obj = js.Dynamic.literal(BatchRequest = BatchRequest.asInstanceOf[js.Any], bzz = bzz.asInstanceOf[js.Any], defaultBlock = defaultBlock.asInstanceOf[js.Any], eth = eth.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend), givenProvider = givenProvider.asInstanceOf[js.Any], setProvider = js.Any.fromFunction1(setProvider), shh = shh.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (currentProvider != null) __obj.updateDynamic("currentProvider")(currentProvider.asInstanceOf[js.Any])
-    if (defaultAccount != null) __obj.updateDynamic("defaultAccount")(defaultAccount)
+    if (defaultAccount != null) __obj.updateDynamic("defaultAccount")(defaultAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Web3]
   }
 }

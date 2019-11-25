@@ -39,11 +39,11 @@ object AsObject {
     proofOfFirstTransaction: typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.AccumulatorProof.AsObject = null,
     proofOfLastTransaction: typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.AccumulatorProof.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(infosList = infosList, transactionsList = transactionsList)
-    if (eventsForVersions != null) __obj.updateDynamic("eventsForVersions")(eventsForVersions)
-    if (firstTransactionVersion != null) __obj.updateDynamic("firstTransactionVersion")(firstTransactionVersion)
-    if (proofOfFirstTransaction != null) __obj.updateDynamic("proofOfFirstTransaction")(proofOfFirstTransaction)
-    if (proofOfLastTransaction != null) __obj.updateDynamic("proofOfLastTransaction")(proofOfLastTransaction)
+    val __obj = js.Dynamic.literal(infosList = infosList.asInstanceOf[js.Any], transactionsList = transactionsList.asInstanceOf[js.Any])
+    if (eventsForVersions != null) __obj.updateDynamic("eventsForVersions")(eventsForVersions.asInstanceOf[js.Any])
+    if (firstTransactionVersion != null) __obj.updateDynamic("firstTransactionVersion")(firstTransactionVersion.asInstanceOf[js.Any])
+    if (proofOfFirstTransaction != null) __obj.updateDynamic("proofOfFirstTransaction")(proofOfFirstTransaction.asInstanceOf[js.Any])
+    if (proofOfLastTransaction != null) __obj.updateDynamic("proofOfLastTransaction")(proofOfLastTransaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

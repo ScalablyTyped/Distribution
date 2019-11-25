@@ -23,9 +23,9 @@ object CheckOptions {
     stale: Int | Double = null
   ): CheckOptions = {
     val __obj = js.Dynamic.literal()
-    if (fs != null) __obj.updateDynamic("fs")(fs)
-    if (lockfilePath != null) __obj.updateDynamic("lockfilePath")(lockfilePath)
-    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath)
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
+    if (lockfilePath != null) __obj.updateDynamic("lockfilePath")(lockfilePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath.asInstanceOf[js.Any])
     if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckOptions]
   }

@@ -147,7 +147,6 @@ import typings.std.stdStrings.slot
 import typings.std.stdStrings.small
 import typings.std.stdStrings.source
 import typings.std.stdStrings.span
-import typings.std.stdStrings.stop
 import typings.std.stdStrings.strong
 import typings.std.stdStrings.style
 import typings.std.stdStrings.sub
@@ -553,7 +552,7 @@ trait Element
   @JSName("closest")
   def closest_span(selector: span): HTMLSpanElement | Null = js.native
   @JSName("closest")
-  def closest_stop(selector: stop): SVGStopElement | Null = js.native
+  def closest_stop(selector: typings.std.stdStrings.stop): SVGStopElement | Null = js.native
   @JSName("closest")
   def closest_strong(selector: strong): HTMLElement | Null = js.native
   @JSName("closest")
@@ -924,7 +923,7 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_span(qualifiedName: span): HTMLCollectionOf[HTMLSpanElement] = js.native
   @JSName("getElementsByTagName")
-  def getElementsByTagName_stop(qualifiedName: stop): HTMLCollectionOf[SVGStopElement] = js.native
+  def getElementsByTagName_stop(qualifiedName: typings.std.stdStrings.stop): HTMLCollectionOf[SVGStopElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_strong(qualifiedName: strong): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")

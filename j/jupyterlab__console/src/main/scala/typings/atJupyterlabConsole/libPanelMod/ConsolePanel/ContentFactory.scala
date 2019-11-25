@@ -83,6 +83,6 @@ object ContentFactory extends js.Object {
   /**
     * Options for the code console content factory.
     */
-  type IOptions = typings.atJupyterlabCells.libWidgetMod.Cell.IContentFactory
+  type IOptions = typings.atJupyterlabConsole.libWidgetMod.CodeConsole.ContentFactory.IOptions
 }
 

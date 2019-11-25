@@ -33,8 +33,8 @@ object BankTokenData {
     currency: String,
     routing_number: String = null
   ): BankTokenData = {
-    val __obj = js.Dynamic.literal(account_holder_name = account_holder_name, account_holder_type = account_holder_type.asInstanceOf[js.Any], account_number = account_number, country = country, currency = currency)
-    if (routing_number != null) __obj.updateDynamic("routing_number")(routing_number)
+    val __obj = js.Dynamic.literal(account_holder_name = account_holder_name.asInstanceOf[js.Any], account_holder_type = account_holder_type.asInstanceOf[js.Any], account_number = account_number.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
+    if (routing_number != null) __obj.updateDynamic("routing_number")(routing_number.asInstanceOf[js.Any])
     __obj.asInstanceOf[BankTokenData]
   }
 }

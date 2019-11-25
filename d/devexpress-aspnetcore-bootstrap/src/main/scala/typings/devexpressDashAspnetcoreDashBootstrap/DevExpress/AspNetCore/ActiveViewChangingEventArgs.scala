@@ -18,7 +18,7 @@ object ActiveViewChangingEventArgs {
     oldView: BootstrapSchedulerViewType,
     sender: Control
   ): ActiveViewChangingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, newView = newView, oldView = oldView, sender = sender)
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], newView = newView.asInstanceOf[js.Any], oldView = oldView.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActiveViewChangingEventArgs]
   }

@@ -35,8 +35,8 @@ object IRenderOptions {
     trusted: Boolean,
     unconfined: js.UndefOr[Boolean] = js.undefined
   ): IRenderOptions = {
-    val __obj = js.Dynamic.literal(host = host, source = source, trusted = trusted)
-    if (!js.isUndefined(unconfined)) __obj.updateDynamic("unconfined")(unconfined)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any])
+    if (!js.isUndefined(unconfined)) __obj.updateDynamic("unconfined")(unconfined.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRenderOptions]
   }
 }

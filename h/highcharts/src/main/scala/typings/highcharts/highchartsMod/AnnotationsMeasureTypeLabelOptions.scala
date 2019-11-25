@@ -34,8 +34,8 @@ object AnnotationsMeasureTypeLabelOptions {
     style: AnnotationsMeasureTypeLabelStyleOptions | CSSObject = null
   ): AnnotationsMeasureTypeLabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsMeasureTypeLabelOptions]
   }

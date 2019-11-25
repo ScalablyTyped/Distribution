@@ -29,7 +29,7 @@ object FormattedTestResult {
     status: failed | passed,
     summary: String
   ): FormattedTestResult = {
-    val __obj = js.Dynamic.literal(assertionResults = assertionResults, coverage = coverage, endTime = endTime, message = message, name = name, startTime = startTime, status = status.asInstanceOf[js.Any], summary = summary)
+    val __obj = js.Dynamic.literal(assertionResults = assertionResults.asInstanceOf[js.Any], coverage = coverage.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FormattedTestResult]
   }

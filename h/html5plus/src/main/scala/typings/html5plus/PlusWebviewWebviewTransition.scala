@@ -42,9 +42,9 @@ object PlusWebviewWebviewTransition {
   @scala.inline
   def apply(duration: String = null, property: String = null, timingfunction: String = null): PlusWebviewWebviewTransition = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (timingfunction != null) __obj.updateDynamic("timingfunction")(timingfunction)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (timingfunction != null) __obj.updateDynamic("timingfunction")(timingfunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewTransition]
   }
 }

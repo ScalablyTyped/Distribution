@@ -19,7 +19,7 @@ object VASTClientCustomStorage {
     StringDictionary: /* key */ StringDictionary[js.Any | js.Function0[_]] = null
   ): VASTClientCustomStorage = {
     val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), setItem = js.Any.fromFunction2(setItem))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[VASTClientCustomStorage]
   }
 }

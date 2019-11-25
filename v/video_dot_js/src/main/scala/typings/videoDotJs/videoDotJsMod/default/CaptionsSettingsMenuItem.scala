@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.videoDotJs.videoDotJsMod.videojs.CaptionSettingsMenuItem
 import typings.videoDotJs.videoDotJsMod.videojs.CaptionSettingsMenuItemOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +20,8 @@ class CaptionsSettingsMenuItem protected () extends CaptionSettingsMenuItem {
     * @param [options]
     *        The key/value store of player options.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: CaptionSettingsMenuItemOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: CaptionSettingsMenuItemOptions) = this()
 }
 
 @JSImport("video.js", "CaptionsSettingsMenuItem")
@@ -37,9 +36,12 @@ object CaptionsSettingsMenuItem
   * @param [options]
   *        The key/value store of player options.
   */
-Instantiable1[/* player */ Player, CaptionSettingsMenuItem]
+Instantiable1[
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
+      CaptionSettingsMenuItem
+    ]
      with Instantiable2[
-      /* player */ Player, 
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
       /* options */ CaptionSettingsMenuItemOptions, 
       CaptionSettingsMenuItem
     ]

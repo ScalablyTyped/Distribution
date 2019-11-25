@@ -23,9 +23,9 @@ object OutputDef {
     propName: String = null,
     target: window | document | body | component = null
   ): OutputDef = {
-    val __obj = js.Dynamic.literal(eventName = eventName)
-    __obj.updateDynamic("type")(`type`)
-    if (propName != null) __obj.updateDynamic("propName")(propName)
+    val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (propName != null) __obj.updateDynamic("propName")(propName.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputDef]
   }

@@ -22,10 +22,10 @@ object Anon_EllipsoidNumberOfLevelZeroTilesX {
     rectangle: Rectangle = null
   ): Anon_EllipsoidNumberOfLevelZeroTilesX = {
     val __obj = js.Dynamic.literal()
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (numberOfLevelZeroTilesX != null) __obj.updateDynamic("numberOfLevelZeroTilesX")(numberOfLevelZeroTilesX.asInstanceOf[js.Any])
     if (numberOfLevelZeroTilesY != null) __obj.updateDynamic("numberOfLevelZeroTilesY")(numberOfLevelZeroTilesY.asInstanceOf[js.Any])
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EllipsoidNumberOfLevelZeroTilesX]
   }
 }

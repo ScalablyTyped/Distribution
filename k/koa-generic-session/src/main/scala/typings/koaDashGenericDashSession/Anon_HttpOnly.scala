@@ -29,13 +29,13 @@ object Anon_HttpOnly {
     signed: js.UndefOr[Boolean] = js.undefined
   ): Anon_HttpOnly = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(rewrite)) __obj.updateDynamic("rewrite")(rewrite)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewrite)) __obj.updateDynamic("rewrite")(rewrite.asInstanceOf[js.Any])
     if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
-    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HttpOnly]
   }
 }

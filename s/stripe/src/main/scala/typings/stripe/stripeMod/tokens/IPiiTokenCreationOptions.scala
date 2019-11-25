@@ -13,9 +13,9 @@ trait IPiiTokenCreationOptions extends IDataOptions {
 object IPiiTokenCreationOptions {
   @scala.inline
   def apply(pii: Anon_Personalidnumber, expand: js.Array[String] = null, include: js.Array[String] = null): IPiiTokenCreationOptions = {
-    val __obj = js.Dynamic.literal(pii = pii)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
+    val __obj = js.Dynamic.literal(pii = pii.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPiiTokenCreationOptions]
   }
 }

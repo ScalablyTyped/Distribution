@@ -21,8 +21,8 @@ object ListGuardiansResponse {
   @scala.inline
   def apply(guardians: js.Array[Guardian] = null, nextPageToken: String = null): ListGuardiansResponse = {
     val __obj = js.Dynamic.literal()
-    if (guardians != null) __obj.updateDynamic("guardians")(guardians)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (guardians != null) __obj.updateDynamic("guardians")(guardians.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGuardiansResponse]
   }
 }

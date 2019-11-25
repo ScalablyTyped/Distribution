@@ -20,7 +20,7 @@ trait IType extends js.Object {
 object IType {
   @scala.inline
   def apply(BROWSER: String, CLIENT: String, DRIVER: String, PERFORMANCE: String, SERVER: String): IType = {
-    val __obj = js.Dynamic.literal(BROWSER = BROWSER, CLIENT = CLIENT, DRIVER = DRIVER, PERFORMANCE = PERFORMANCE, SERVER = SERVER)
+    val __obj = js.Dynamic.literal(BROWSER = BROWSER.asInstanceOf[js.Any], CLIENT = CLIENT.asInstanceOf[js.Any], DRIVER = DRIVER.asInstanceOf[js.Any], PERFORMANCE = PERFORMANCE.asInstanceOf[js.Any], SERVER = SERVER.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IType]
   }

@@ -21,7 +21,7 @@ object ICreateRuleOptions {
     sqlRuleAction: String,
     trueFilter: String
   ): ICreateRuleOptions = {
-    val __obj = js.Dynamic.literal(correlationIdFilter = correlationIdFilter, falseFilter = falseFilter, sqlExpressionFilter = sqlExpressionFilter, sqlRuleAction = sqlRuleAction, trueFilter = trueFilter)
+    val __obj = js.Dynamic.literal(correlationIdFilter = correlationIdFilter.asInstanceOf[js.Any], falseFilter = falseFilter.asInstanceOf[js.Any], sqlExpressionFilter = sqlExpressionFilter.asInstanceOf[js.Any], sqlRuleAction = sqlRuleAction.asInstanceOf[js.Any], trueFilter = trueFilter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICreateRuleOptions]
   }

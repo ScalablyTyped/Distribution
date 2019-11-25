@@ -51,7 +51,7 @@ object Anon_AspectRatio {
     vender: String,
     widthPixels: Double
   ): Anon_AspectRatio = {
-    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, bitrateBps = bitrateBps, codec = codec, frameRateFps = frameRateFps, heightPixels = heightPixels, rotation = rotation, vender = vender, widthPixels = widthPixels)
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], bitrateBps = bitrateBps.asInstanceOf[js.Any], codec = codec.asInstanceOf[js.Any], frameRateFps = frameRateFps.asInstanceOf[js.Any], heightPixels = heightPixels.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], vender = vender.asInstanceOf[js.Any], widthPixels = widthPixels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AspectRatio]
   }

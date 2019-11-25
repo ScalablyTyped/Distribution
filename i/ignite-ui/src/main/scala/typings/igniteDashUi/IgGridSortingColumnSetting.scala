@@ -77,13 +77,13 @@ object IgGridSortingColumnSetting {
     firstSortDirection: String = null
   ): IgGridSortingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     if (compareFunc != null) __obj.updateDynamic("compareFunc")(compareFunc.asInstanceOf[js.Any])
-    if (currentSortDirection != null) __obj.updateDynamic("currentSortDirection")(currentSortDirection)
-    if (firstSortDirection != null) __obj.updateDynamic("firstSortDirection")(firstSortDirection)
+    if (currentSortDirection != null) __obj.updateDynamic("currentSortDirection")(currentSortDirection.asInstanceOf[js.Any])
+    if (firstSortDirection != null) __obj.updateDynamic("firstSortDirection")(firstSortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridSortingColumnSetting]
   }
 }

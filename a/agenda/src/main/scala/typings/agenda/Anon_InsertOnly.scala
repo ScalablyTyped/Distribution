@@ -12,7 +12,7 @@ object Anon_InsertOnly {
   @scala.inline
   def apply(insertOnly: js.UndefOr[Boolean] = js.undefined): Anon_InsertOnly = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(insertOnly)) __obj.updateDynamic("insertOnly")(insertOnly)
+    if (!js.isUndefined(insertOnly)) __obj.updateDynamic("insertOnly")(insertOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InsertOnly]
   }
 }

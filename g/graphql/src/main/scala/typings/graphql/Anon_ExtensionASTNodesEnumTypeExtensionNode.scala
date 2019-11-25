@@ -12,7 +12,7 @@ trait Anon_ExtensionASTNodesEnumTypeExtensionNode extends js.Object {
 object Anon_ExtensionASTNodesEnumTypeExtensionNode {
   @scala.inline
   def apply(extensionASTNodes: js.Array[EnumTypeExtensionNode]): Anon_ExtensionASTNodesEnumTypeExtensionNode = {
-    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes)
+    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExtensionASTNodesEnumTypeExtensionNode]
   }

@@ -15,8 +15,8 @@ object Anon_Numeric {
   @scala.inline
   def apply(numeric: Anon_CountMean = null, text: js.Array[Anon_Count] = null): Anon_Numeric = {
     val __obj = js.Dynamic.literal()
-    if (numeric != null) __obj.updateDynamic("numeric")(numeric)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (numeric != null) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Numeric]
   }
 }

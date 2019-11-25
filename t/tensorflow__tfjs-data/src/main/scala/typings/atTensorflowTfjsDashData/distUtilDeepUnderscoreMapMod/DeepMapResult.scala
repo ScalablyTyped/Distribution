@@ -12,7 +12,7 @@ trait DeepMapResult extends js.Object {
 object DeepMapResult {
   @scala.inline
   def apply(recurse: Boolean, value: js.Any): DeepMapResult = {
-    val __obj = js.Dynamic.literal(recurse = recurse, value = value)
+    val __obj = js.Dynamic.literal(recurse = recurse.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeepMapResult]
   }

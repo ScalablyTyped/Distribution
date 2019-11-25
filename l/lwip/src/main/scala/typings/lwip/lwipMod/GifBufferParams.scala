@@ -19,9 +19,9 @@ object GifBufferParams {
     interlaced: js.UndefOr[Boolean] = js.undefined,
     transparency: Boolean | String = null
   ): GifBufferParams = {
-    val __obj = js.Dynamic.literal(threshold = threshold)
+    val __obj = js.Dynamic.literal(threshold = threshold.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(interlaced)) __obj.updateDynamic("interlaced")(interlaced)
+    if (!js.isUndefined(interlaced)) __obj.updateDynamic("interlaced")(interlaced.asInstanceOf[js.Any])
     if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
     __obj.asInstanceOf[GifBufferParams]
   }

@@ -21,8 +21,8 @@ object Tags {
   @scala.inline
   def apply(fingerprint: String = null, items: js.Array[String] = null): Tags = {
     val __obj = js.Dynamic.literal()
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tags]
   }
 }

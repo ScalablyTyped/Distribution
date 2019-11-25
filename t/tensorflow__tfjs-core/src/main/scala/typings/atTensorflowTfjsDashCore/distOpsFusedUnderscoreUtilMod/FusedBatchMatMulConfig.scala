@@ -28,10 +28,10 @@ object FusedBatchMatMulConfig {
     bias: Tensor[Rank] = null,
     preluActivationWeights: Tensor[Rank] = null
   ): FusedBatchMatMulConfig = {
-    val __obj = js.Dynamic.literal(a = a, b = b, transposeA = transposeA, transposeB = transposeB)
-    if (activation != null) __obj.updateDynamic("activation")(activation)
-    if (bias != null) __obj.updateDynamic("bias")(bias)
-    if (preluActivationWeights != null) __obj.updateDynamic("preluActivationWeights")(preluActivationWeights)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], transposeA = transposeA.asInstanceOf[js.Any], transposeB = transposeB.asInstanceOf[js.Any])
+    if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
+    if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
+    if (preluActivationWeights != null) __obj.updateDynamic("preluActivationWeights")(preluActivationWeights.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusedBatchMatMulConfig]
   }
 }

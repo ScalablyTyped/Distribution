@@ -13,7 +13,7 @@ object GetOffersResponse {
   @scala.inline
   def apply(products: js.Array[Product] = null): GetOffersResponse = {
     val __obj = js.Dynamic.literal()
-    if (products != null) __obj.updateDynamic("products")(products)
+    if (products != null) __obj.updateDynamic("products")(products.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOffersResponse]
   }
 }

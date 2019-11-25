@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait LayoutTitleAnchor extends js.Object
 
+object LayoutTitleAnchor {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def end: typings.vegaDashTypings.vegaDashTypingsStrings.end = this.cast("end")
+  @scala.inline
+  def start: typings.vegaDashTypings.vegaDashTypingsStrings.start = this.cast("start")
+}
+

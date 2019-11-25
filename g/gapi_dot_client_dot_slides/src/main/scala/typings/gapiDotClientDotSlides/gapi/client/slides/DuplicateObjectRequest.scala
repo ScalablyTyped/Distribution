@@ -35,8 +35,8 @@ object DuplicateObjectRequest {
   @scala.inline
   def apply(objectId: String = null, objectIds: Record[String, String] = null): DuplicateObjectRequest = {
     val __obj = js.Dynamic.literal()
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DuplicateObjectRequest]
   }
 }

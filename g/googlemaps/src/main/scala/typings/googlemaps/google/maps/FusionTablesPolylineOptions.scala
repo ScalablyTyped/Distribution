@@ -14,7 +14,7 @@ object FusionTablesPolylineOptions {
   @scala.inline
   def apply(strokeColor: String = null, strokeOpacity: Int | Double = null, strokeWeight: Int | Double = null): FusionTablesPolylineOptions = {
     val __obj = js.Dynamic.literal()
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
     if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusionTablesPolylineOptions]

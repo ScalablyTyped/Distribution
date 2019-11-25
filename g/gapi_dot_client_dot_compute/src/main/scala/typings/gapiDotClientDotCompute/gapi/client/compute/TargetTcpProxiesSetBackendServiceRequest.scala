@@ -13,7 +13,7 @@ object TargetTcpProxiesSetBackendServiceRequest {
   @scala.inline
   def apply(service: String = null): TargetTcpProxiesSetBackendServiceRequest = {
     val __obj = js.Dynamic.literal()
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetTcpProxiesSetBackendServiceRequest]
   }
 }

@@ -14,7 +14,7 @@ object BaseOptions {
   @scala.inline
   def apply(fill: js.UndefOr[Boolean] = js.undefined, height: Int | Double = null, width: Int | Double = null): BaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]

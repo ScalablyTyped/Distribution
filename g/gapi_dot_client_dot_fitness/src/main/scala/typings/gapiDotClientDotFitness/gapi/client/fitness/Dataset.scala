@@ -39,11 +39,11 @@ object Dataset {
     point: js.Array[DataPoint] = null
   ): Dataset = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId)
-    if (maxEndTimeNs != null) __obj.updateDynamic("maxEndTimeNs")(maxEndTimeNs)
-    if (minStartTimeNs != null) __obj.updateDynamic("minStartTimeNs")(minStartTimeNs)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (point != null) __obj.updateDynamic("point")(point)
+    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
+    if (maxEndTimeNs != null) __obj.updateDynamic("maxEndTimeNs")(maxEndTimeNs.asInstanceOf[js.Any])
+    if (minStartTimeNs != null) __obj.updateDynamic("minStartTimeNs")(minStartTimeNs.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dataset]
   }
 }

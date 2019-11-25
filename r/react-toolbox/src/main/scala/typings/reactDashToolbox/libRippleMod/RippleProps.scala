@@ -49,12 +49,12 @@ object RippleProps {
     theme: RippleTheme = null
   ): RippleProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (onRippleEnded != null) __obj.updateDynamic("onRippleEnded")(onRippleEnded)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (onRippleEnded != null) __obj.updateDynamic("onRippleEnded")(onRippleEnded.asInstanceOf[js.Any])
     if (spread != null) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[RippleProps]
   }
 }

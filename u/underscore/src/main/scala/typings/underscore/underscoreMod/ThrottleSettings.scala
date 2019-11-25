@@ -22,8 +22,8 @@ object ThrottleSettings {
   @scala.inline
   def apply(leading: js.UndefOr[Boolean] = js.undefined, trailing: js.UndefOr[Boolean] = js.undefined): ThrottleSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading)
-    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing)
+    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrottleSettings]
   }
 }

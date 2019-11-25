@@ -37,14 +37,14 @@ object Anon_DescriptionGqcExtensions {
     description: String = null
   ): Anon_DescriptionGqcExtensions[TContext, TSource] = {
     val __obj = js.Dynamic.literal()
-    if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions)
-    if (_gqcFields != null) __obj.updateDynamic("_gqcFields")(_gqcFields)
+    if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions.asInstanceOf[js.Any])
+    if (_gqcFields != null) __obj.updateDynamic("_gqcFields")(_gqcFields.asInstanceOf[js.Any])
     if (_gqcGetRecordIdFn != null) __obj.updateDynamic("_gqcGetRecordIdFn")(js.Any.fromFunction3(_gqcGetRecordIdFn))
-    if (_gqcInputTypeComposer != null) __obj.updateDynamic("_gqcInputTypeComposer")(_gqcInputTypeComposer)
-    if (_gqcInterfaces != null) __obj.updateDynamic("_gqcInterfaces")(_gqcInterfaces)
-    if (_gqcRelations != null) __obj.updateDynamic("_gqcRelations")(_gqcRelations)
-    if (_gqcResolvers != null) __obj.updateDynamic("_gqcResolvers")(_gqcResolvers)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (_gqcInputTypeComposer != null) __obj.updateDynamic("_gqcInputTypeComposer")(_gqcInputTypeComposer.asInstanceOf[js.Any])
+    if (_gqcInterfaces != null) __obj.updateDynamic("_gqcInterfaces")(_gqcInterfaces.asInstanceOf[js.Any])
+    if (_gqcRelations != null) __obj.updateDynamic("_gqcRelations")(_gqcRelations.asInstanceOf[js.Any])
+    if (_gqcResolvers != null) __obj.updateDynamic("_gqcResolvers")(_gqcResolvers.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DescriptionGqcExtensions[TContext, TSource]]
   }
 }

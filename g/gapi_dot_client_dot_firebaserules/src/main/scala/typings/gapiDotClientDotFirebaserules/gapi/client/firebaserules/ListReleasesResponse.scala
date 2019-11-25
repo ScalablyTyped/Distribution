@@ -18,8 +18,8 @@ object ListReleasesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, releases: js.Array[Release] = null): ListReleasesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (releases != null) __obj.updateDynamic("releases")(releases)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (releases != null) __obj.updateDynamic("releases")(releases.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReleasesResponse]
   }
 }

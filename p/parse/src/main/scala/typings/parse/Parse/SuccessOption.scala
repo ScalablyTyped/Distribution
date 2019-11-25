@@ -12,7 +12,7 @@ object SuccessOption {
   @scala.inline
   def apply(success: js.Function = null): SuccessOption = {
     val __obj = js.Dynamic.literal()
-    if (success != null) __obj.updateDynamic("success")(success)
+    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuccessOption]
   }
 }

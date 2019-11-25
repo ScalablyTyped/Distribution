@@ -23,7 +23,7 @@ object IResourceResponse {
     status: Double,
     statusText: String
   ): IResourceResponse = {
-    val __obj = js.Dynamic.literal(config = config, data = data, headers = headers, resource = resource, status = status, statusText = statusText)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResourceResponse]
   }

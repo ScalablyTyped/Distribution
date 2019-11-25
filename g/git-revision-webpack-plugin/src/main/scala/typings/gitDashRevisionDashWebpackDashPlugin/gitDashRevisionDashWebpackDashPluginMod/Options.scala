@@ -24,12 +24,12 @@ object Options {
     versionCommand: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(branch)) __obj.updateDynamic("branch")(branch)
-    if (branchCommand != null) __obj.updateDynamic("branchCommand")(branchCommand)
-    if (commithashCommand != null) __obj.updateDynamic("commithashCommand")(commithashCommand)
-    if (gitWorkTree != null) __obj.updateDynamic("gitWorkTree")(gitWorkTree)
-    if (!js.isUndefined(lightweightTags)) __obj.updateDynamic("lightweightTags")(lightweightTags)
-    if (versionCommand != null) __obj.updateDynamic("versionCommand")(versionCommand)
+    if (!js.isUndefined(branch)) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (branchCommand != null) __obj.updateDynamic("branchCommand")(branchCommand.asInstanceOf[js.Any])
+    if (commithashCommand != null) __obj.updateDynamic("commithashCommand")(commithashCommand.asInstanceOf[js.Any])
+    if (gitWorkTree != null) __obj.updateDynamic("gitWorkTree")(gitWorkTree.asInstanceOf[js.Any])
+    if (!js.isUndefined(lightweightTags)) __obj.updateDynamic("lightweightTags")(lightweightTags.asInstanceOf[js.Any])
+    if (versionCommand != null) __obj.updateDynamic("versionCommand")(versionCommand.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

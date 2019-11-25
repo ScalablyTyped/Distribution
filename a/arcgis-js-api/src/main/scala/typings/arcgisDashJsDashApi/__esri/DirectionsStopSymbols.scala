@@ -51,12 +51,12 @@ object DirectionsStopSymbols {
     unlocated: Symbol = null,
     waypoint: Symbol = null
   ): DirectionsStopSymbols = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (first != null) __obj.updateDynamic("first")(first)
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (middle != null) __obj.updateDynamic("middle")(middle)
-    if (unlocated != null) __obj.updateDynamic("unlocated")(unlocated)
-    if (waypoint != null) __obj.updateDynamic("waypoint")(waypoint)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (middle != null) __obj.updateDynamic("middle")(middle.asInstanceOf[js.Any])
+    if (unlocated != null) __obj.updateDynamic("unlocated")(unlocated.asInstanceOf[js.Any])
+    if (waypoint != null) __obj.updateDynamic("waypoint")(waypoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsStopSymbols]
   }
 }

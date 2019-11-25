@@ -27,11 +27,11 @@ object PeerSessionDiagnostics {
     unreliableChannel: PeerChannelDiagnostics = null
   ): PeerSessionDiagnostics = {
     val __obj = js.Dynamic.literal()
-    if (connectedTimestampMillis != null) __obj.updateDynamic("connectedTimestampMillis")(connectedTimestampMillis)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (participantId != null) __obj.updateDynamic("participantId")(participantId)
-    if (reliableChannel != null) __obj.updateDynamic("reliableChannel")(reliableChannel)
-    if (unreliableChannel != null) __obj.updateDynamic("unreliableChannel")(unreliableChannel)
+    if (connectedTimestampMillis != null) __obj.updateDynamic("connectedTimestampMillis")(connectedTimestampMillis.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (participantId != null) __obj.updateDynamic("participantId")(participantId.asInstanceOf[js.Any])
+    if (reliableChannel != null) __obj.updateDynamic("reliableChannel")(reliableChannel.asInstanceOf[js.Any])
+    if (unreliableChannel != null) __obj.updateDynamic("unreliableChannel")(unreliableChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerSessionDiagnostics]
   }
 }

@@ -19,9 +19,9 @@ object DeviceComplianceScheduledActionForRule {
     scheduledActionConfigurations: js.Array[DeviceComplianceActionItem] = null
   ): DeviceComplianceScheduledActionForRule = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName)
-    if (scheduledActionConfigurations != null) __obj.updateDynamic("scheduledActionConfigurations")(scheduledActionConfigurations)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName.asInstanceOf[js.Any])
+    if (scheduledActionConfigurations != null) __obj.updateDynamic("scheduledActionConfigurations")(scheduledActionConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceComplianceScheduledActionForRule]
   }
 }

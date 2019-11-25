@@ -48,10 +48,10 @@ object HistogramChartSpec {
   ): HistogramChartSpec = {
     val __obj = js.Dynamic.literal()
     if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
-    if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition)
+    if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition.asInstanceOf[js.Any])
     if (outlierPercentile != null) __obj.updateDynamic("outlierPercentile")(outlierPercentile.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series)
-    if (!js.isUndefined(showItemDividers)) __obj.updateDynamic("showItemDividers")(showItemDividers)
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (!js.isUndefined(showItemDividers)) __obj.updateDynamic("showItemDividers")(showItemDividers.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramChartSpec]
   }
 }

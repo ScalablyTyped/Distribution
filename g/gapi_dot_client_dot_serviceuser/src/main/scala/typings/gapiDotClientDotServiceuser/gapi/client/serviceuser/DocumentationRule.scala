@@ -27,9 +27,9 @@ object DocumentationRule {
   @scala.inline
   def apply(deprecationDescription: String = null, description: String = null, selector: String = null): DocumentationRule = {
     val __obj = js.Dynamic.literal()
-    if (deprecationDescription != null) __obj.updateDynamic("deprecationDescription")(deprecationDescription)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (deprecationDescription != null) __obj.updateDynamic("deprecationDescription")(deprecationDescription.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentationRule]
   }
 }

@@ -31,7 +31,7 @@ object BuildResourceUsage {
     totalUsage: Double,
     xamlControllers: Double
   ): BuildResourceUsage = {
-    val __obj = js.Dynamic.literal(distributedTaskAgents = distributedTaskAgents, paidPrivateAgentSlots = paidPrivateAgentSlots, totalUsage = totalUsage, xamlControllers = xamlControllers)
+    val __obj = js.Dynamic.literal(distributedTaskAgents = distributedTaskAgents.asInstanceOf[js.Any], paidPrivateAgentSlots = paidPrivateAgentSlots.asInstanceOf[js.Any], totalUsage = totalUsage.asInstanceOf[js.Any], xamlControllers = xamlControllers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildResourceUsage]
   }

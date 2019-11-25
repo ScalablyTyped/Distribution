@@ -14,7 +14,7 @@ object Anon_Agent {
   @scala.inline
   def apply(agent: Agent = null, timeout: Int | Double = null): Anon_Agent = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent)
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Agent]
   }

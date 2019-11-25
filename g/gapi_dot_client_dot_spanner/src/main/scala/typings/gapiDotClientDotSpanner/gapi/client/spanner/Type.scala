@@ -23,9 +23,9 @@ object Type {
   @scala.inline
   def apply(arrayElementType: Type = null, code: String = null, structType: StructType = null): Type = {
     val __obj = js.Dynamic.literal()
-    if (arrayElementType != null) __obj.updateDynamic("arrayElementType")(arrayElementType)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (structType != null) __obj.updateDynamic("structType")(structType)
+    if (arrayElementType != null) __obj.updateDynamic("arrayElementType")(arrayElementType.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (structType != null) __obj.updateDynamic("structType")(structType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
 }

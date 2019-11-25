@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Place extends js.Object
 
+object Place {
+  @scala.inline
+  def bottom: typings.reactDashTooltip.reactDashTooltipStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.reactDashTooltip.reactDashTooltipStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.reactDashTooltip.reactDashTooltipStrings.right = this.cast("right")
+  @scala.inline
+  def top: typings.reactDashTooltip.reactDashTooltipStrings.top = this.cast("top")
+}
+

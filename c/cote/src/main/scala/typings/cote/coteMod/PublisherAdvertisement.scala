@@ -14,10 +14,10 @@ trait PublisherAdvertisement extends Advertisement {
 object PublisherAdvertisement {
   @scala.inline
   def apply(name: String, broadcasts: js.Array[String] = null, key: String = null, namespace: String = null): PublisherAdvertisement = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (broadcasts != null) __obj.updateDynamic("broadcasts")(broadcasts)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (broadcasts != null) __obj.updateDynamic("broadcasts")(broadcasts.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherAdvertisement]
   }
 }

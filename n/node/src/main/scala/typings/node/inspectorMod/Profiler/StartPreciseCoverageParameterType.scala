@@ -19,8 +19,8 @@ object StartPreciseCoverageParameterType {
   @scala.inline
   def apply(callCount: js.UndefOr[Boolean] = js.undefined, detailed: js.UndefOr[Boolean] = js.undefined): StartPreciseCoverageParameterType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(callCount)) __obj.updateDynamic("callCount")(callCount)
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed)
+    if (!js.isUndefined(callCount)) __obj.updateDynamic("callCount")(callCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPreciseCoverageParameterType]
   }
 }

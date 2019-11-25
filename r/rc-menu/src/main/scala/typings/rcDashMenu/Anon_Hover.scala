@@ -13,7 +13,7 @@ trait Anon_Hover extends js.Object {
 object Anon_Hover {
   @scala.inline
   def apply(hover: Boolean, key: Key): Anon_Hover = {
-    val __obj = js.Dynamic.literal(hover = hover, key = key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hover]
   }

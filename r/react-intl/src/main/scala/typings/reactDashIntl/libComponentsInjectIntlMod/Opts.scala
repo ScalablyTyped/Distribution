@@ -18,7 +18,7 @@ object Opts {
     intlPropName: IntlPropName = null
   ): Opts[IntlPropName, ForwardRef] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enforceContext)) __obj.updateDynamic("enforceContext")(enforceContext)
+    if (!js.isUndefined(enforceContext)) __obj.updateDynamic("enforceContext")(enforceContext.asInstanceOf[js.Any])
     if (forwardRef != null) __obj.updateDynamic("forwardRef")(forwardRef.asInstanceOf[js.Any])
     if (intlPropName != null) __obj.updateDynamic("intlPropName")(intlPropName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts[IntlPropName, ForwardRef]]

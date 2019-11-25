@@ -25,7 +25,7 @@ object Anon_Locale {
     weekdays: js.Array[String],
     weekdaysShort: js.Array[String]
   ): Anon_Locale = {
-    val __obj = js.Dynamic.literal(locale = locale, meridiem = meridiem, months = months, monthsShort = monthsShort, relative = relative, weekdays = weekdays, weekdaysShort = weekdaysShort)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], meridiem = meridiem.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], monthsShort = monthsShort.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any], weekdaysShort = weekdaysShort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Locale]
   }

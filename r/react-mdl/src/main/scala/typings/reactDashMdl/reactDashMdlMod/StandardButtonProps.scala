@@ -12,8 +12,8 @@ object StandardButtonProps {
   @scala.inline
   def apply(ButtonProps: ButtonProps = null, raised: js.UndefOr[Boolean] = js.undefined): StandardButtonProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ButtonProps)
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
+    if (ButtonProps != null) js.Dynamic.global.Object.assign(__obj, ButtonProps)
+    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardButtonProps]
   }
 }

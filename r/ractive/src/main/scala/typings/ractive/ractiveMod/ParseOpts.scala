@@ -27,17 +27,17 @@ object ParseOpts {
     tripleDelimiters: ParseDelimiters = null
   ): ParseOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes)
+    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (contextLines != null) __obj.updateDynamic("contextLines")(contextLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(csp)) __obj.updateDynamic("csp")(csp)
-    if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters)
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
+    if (!js.isUndefined(csp)) __obj.updateDynamic("csp")(csp.asInstanceOf[js.Any])
+    if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
     if (sanitize != null) __obj.updateDynamic("sanitize")(sanitize.asInstanceOf[js.Any])
-    if (staticDelimiters != null) __obj.updateDynamic("staticDelimiters")(staticDelimiters)
-    if (staticTripleDelimiters != null) __obj.updateDynamic("staticTripleDelimiters")(staticTripleDelimiters)
-    if (!js.isUndefined(stripComments)) __obj.updateDynamic("stripComments")(stripComments)
-    if (!js.isUndefined(textOnlyMode)) __obj.updateDynamic("textOnlyMode")(textOnlyMode)
-    if (tripleDelimiters != null) __obj.updateDynamic("tripleDelimiters")(tripleDelimiters)
+    if (staticDelimiters != null) __obj.updateDynamic("staticDelimiters")(staticDelimiters.asInstanceOf[js.Any])
+    if (staticTripleDelimiters != null) __obj.updateDynamic("staticTripleDelimiters")(staticTripleDelimiters.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripComments)) __obj.updateDynamic("stripComments")(stripComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(textOnlyMode)) __obj.updateDynamic("textOnlyMode")(textOnlyMode.asInstanceOf[js.Any])
+    if (tripleDelimiters != null) __obj.updateDynamic("tripleDelimiters")(tripleDelimiters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOpts]
   }
 }

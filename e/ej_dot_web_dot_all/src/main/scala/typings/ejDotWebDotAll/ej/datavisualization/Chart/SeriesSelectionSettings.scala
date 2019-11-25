@@ -54,13 +54,13 @@ object SeriesSelectionSettings {
     `type`: SelectionType | String = null
   ): SeriesSelectionSettings = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (customPattern != null) __obj.updateDynamic("customPattern")(customPattern)
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (customPattern != null) __obj.updateDynamic("customPattern")(customPattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (rangeType != null) __obj.updateDynamic("rangeType")(rangeType.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSelectionSettings]

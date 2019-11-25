@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait KDE2DTransform extends Transforms {
+trait KDE2DTransform extends _Transforms {
   var as: js.UndefOr[String | SignalRef] = js.undefined
   var bandwidth: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
   var cellSize: js.UndefOr[Double | SignalRef] = js.undefined
@@ -36,7 +36,7 @@ object KDE2DTransform {
     weight: String | TransformField = null
   ): KDE2DTransform = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
     if (cellSize != null) __obj.updateDynamic("cellSize")(cellSize.asInstanceOf[js.Any])

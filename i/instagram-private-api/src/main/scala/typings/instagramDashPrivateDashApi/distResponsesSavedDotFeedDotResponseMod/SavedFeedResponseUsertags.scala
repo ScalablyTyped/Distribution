@@ -11,7 +11,7 @@ trait SavedFeedResponseUsertags extends js.Object {
 object SavedFeedResponseUsertags {
   @scala.inline
   def apply(in: js.Array[SavedFeedResponseInItem]): SavedFeedResponseUsertags = {
-    val __obj = js.Dynamic.literal(in = in)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SavedFeedResponseUsertags]
   }

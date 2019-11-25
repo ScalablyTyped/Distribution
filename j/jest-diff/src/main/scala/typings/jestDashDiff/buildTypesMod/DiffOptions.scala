@@ -20,10 +20,10 @@ object DiffOptions {
     expand: js.UndefOr[Boolean] = js.undefined
   ): DiffOptions = {
     val __obj = js.Dynamic.literal()
-    if (aAnnotation != null) __obj.updateDynamic("aAnnotation")(aAnnotation)
-    if (bAnnotation != null) __obj.updateDynamic("bAnnotation")(bAnnotation)
+    if (aAnnotation != null) __obj.updateDynamic("aAnnotation")(aAnnotation.asInstanceOf[js.Any])
+    if (bAnnotation != null) __obj.updateDynamic("bAnnotation")(bAnnotation.asInstanceOf[js.Any])
     if (contextLines != null) __obj.updateDynamic("contextLines")(contextLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffOptions]
   }
 }

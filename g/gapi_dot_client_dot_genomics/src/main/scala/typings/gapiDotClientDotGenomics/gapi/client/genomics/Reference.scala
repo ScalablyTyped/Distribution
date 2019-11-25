@@ -43,13 +43,13 @@ object Reference {
     sourceUri: String = null
   ): Reference = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (length != null) __obj.updateDynamic("length")(length)
-    if (md5checksum != null) __obj.updateDynamic("md5checksum")(md5checksum)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (md5checksum != null) __obj.updateDynamic("md5checksum")(md5checksum.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (ncbiTaxonId != null) __obj.updateDynamic("ncbiTaxonId")(ncbiTaxonId.asInstanceOf[js.Any])
-    if (sourceAccessions != null) __obj.updateDynamic("sourceAccessions")(sourceAccessions)
-    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri)
+    if (sourceAccessions != null) __obj.updateDynamic("sourceAccessions")(sourceAccessions.asInstanceOf[js.Any])
+    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
 }

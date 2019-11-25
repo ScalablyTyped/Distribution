@@ -13,8 +13,8 @@ object XmlAttributes {
   @scala.inline
   def apply(prefixedAttributes: js.Array[PrefixedXmlAttributes] = null, rawMap: js.Any = null): XmlAttributes = {
     val __obj = js.Dynamic.literal()
-    if (prefixedAttributes != null) __obj.updateDynamic("prefixedAttributes")(prefixedAttributes)
-    if (rawMap != null) __obj.updateDynamic("rawMap")(rawMap)
+    if (prefixedAttributes != null) __obj.updateDynamic("prefixedAttributes")(prefixedAttributes.asInstanceOf[js.Any])
+    if (rawMap != null) __obj.updateDynamic("rawMap")(rawMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlAttributes]
   }
 }

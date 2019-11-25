@@ -25,7 +25,7 @@ trait Range extends js.Object {
 object Range {
   @scala.inline
   def apply(end: Double, start: Int | Double = null, step: Int | Double = null): Range = {
-    val __obj = js.Dynamic.literal(end = end)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]

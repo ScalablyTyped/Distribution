@@ -18,7 +18,7 @@ object TargetPoolsAddInstanceRequest {
   @scala.inline
   def apply(instances: js.Array[InstanceReference] = null): TargetPoolsAddInstanceRequest = {
     val __obj = js.Dynamic.literal()
-    if (instances != null) __obj.updateDynamic("instances")(instances)
+    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetPoolsAddInstanceRequest]
   }
 }

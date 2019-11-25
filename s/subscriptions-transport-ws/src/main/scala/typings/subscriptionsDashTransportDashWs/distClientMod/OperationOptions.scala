@@ -22,10 +22,10 @@ object OperationOptions {
     variables: js.Object = null
   ): OperationOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOptions]
   }
 }

@@ -14,8 +14,8 @@ object TextProps {
   @scala.inline
   def apply(children: String = null, name: String = null, style: TextStyle | StyleReference = null): TextProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProps]
   }

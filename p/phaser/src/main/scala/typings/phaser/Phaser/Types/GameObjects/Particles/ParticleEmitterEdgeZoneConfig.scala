@@ -42,11 +42,11 @@ object ParticleEmitterEdgeZoneConfig {
     stepRate: Int | Double = null,
     yoyo: js.UndefOr[Boolean] = js.undefined
   ): ParticleEmitterEdgeZoneConfig = {
-    val __obj = js.Dynamic.literal(quantity = quantity, source = source)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless)
+    val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless.asInstanceOf[js.Any])
     if (stepRate != null) __obj.updateDynamic("stepRate")(stepRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo)
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterEdgeZoneConfig]
   }
 }

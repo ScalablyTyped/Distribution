@@ -15,10 +15,10 @@ object SchedulerMessagesViews {
   @scala.inline
   def apply(agenda: String = null, day: String = null, month: String = null, week: String = null): SchedulerMessagesViews = {
     val __obj = js.Dynamic.literal()
-    if (agenda != null) __obj.updateDynamic("agenda")(agenda)
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (month != null) __obj.updateDynamic("month")(month)
-    if (week != null) __obj.updateDynamic("week")(week)
+    if (agenda != null) __obj.updateDynamic("agenda")(agenda.asInstanceOf[js.Any])
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (week != null) __obj.updateDynamic("week")(week.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesViews]
   }
 }

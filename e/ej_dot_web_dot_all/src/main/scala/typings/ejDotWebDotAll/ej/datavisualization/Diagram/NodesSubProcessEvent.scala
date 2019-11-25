@@ -42,10 +42,10 @@ object NodesSubProcessEvent {
   ): NodesSubProcessEvent = {
     val __obj = js.Dynamic.literal()
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (ports != null) __obj.updateDynamic("ports")(ports)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesSubProcessEvent]
   }

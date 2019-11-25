@@ -13,10 +13,10 @@ object HierarchicalDataSourceSchemaModel {
   @scala.inline
   def apply(children: js.Any = null, fields: js.Any = null, hasChildren: js.Any = null, id: String = null): HierarchicalDataSourceSchemaModel = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (hasChildren != null) __obj.updateDynamic("hasChildren")(hasChildren)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (hasChildren != null) __obj.updateDynamic("hasChildren")(hasChildren.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[HierarchicalDataSourceSchemaModel]
   }
 }

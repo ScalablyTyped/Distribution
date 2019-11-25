@@ -22,9 +22,9 @@ object PluginDefinition {
     deferInit: js.UndefOr[Boolean] = js.undefined,
     staticProps: js.Object = null
   ): PluginDefinition = {
-    val __obj = js.Dynamic.literal(instance = instance, name = name, params = params)
-    if (!js.isUndefined(deferInit)) __obj.updateDynamic("deferInit")(deferInit)
-    if (staticProps != null) __obj.updateDynamic("staticProps")(staticProps)
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferInit)) __obj.updateDynamic("deferInit")(deferInit.asInstanceOf[js.Any])
+    if (staticProps != null) __obj.updateDynamic("staticProps")(staticProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginDefinition]
   }
 }

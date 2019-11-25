@@ -26,12 +26,12 @@ object LocaleSpecification {
     durationTimeTemplates: DurationTimeDef = null
   ): LocaleSpecification = {
     val __obj = js.Dynamic.literal()
-    if (durationLabelTypes != null) __obj.updateDynamic("durationLabelTypes")(durationLabelTypes)
-    if (durationLabelsLong != null) __obj.updateDynamic("durationLabelsLong")(durationLabelsLong)
-    if (durationLabelsShort != null) __obj.updateDynamic("durationLabelsShort")(durationLabelsShort)
-    if (durationLabelsStandard != null) __obj.updateDynamic("durationLabelsStandard")(durationLabelsStandard)
+    if (durationLabelTypes != null) __obj.updateDynamic("durationLabelTypes")(durationLabelTypes.asInstanceOf[js.Any])
+    if (durationLabelsLong != null) __obj.updateDynamic("durationLabelsLong")(durationLabelsLong.asInstanceOf[js.Any])
+    if (durationLabelsShort != null) __obj.updateDynamic("durationLabelsShort")(durationLabelsShort.asInstanceOf[js.Any])
+    if (durationLabelsStandard != null) __obj.updateDynamic("durationLabelsStandard")(durationLabelsStandard.asInstanceOf[js.Any])
     if (durationPluralKey != null) __obj.updateDynamic("durationPluralKey")(js.Any.fromFunction3(durationPluralKey))
-    if (durationTimeTemplates != null) __obj.updateDynamic("durationTimeTemplates")(durationTimeTemplates)
+    if (durationTimeTemplates != null) __obj.updateDynamic("durationTimeTemplates")(durationTimeTemplates.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocaleSpecification]
   }
 }

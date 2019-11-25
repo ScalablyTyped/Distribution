@@ -46,11 +46,11 @@ object TextShadow {
   ): TextShadow = {
     val __obj = js.Dynamic.literal()
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
     if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
-    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke)
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextShadow]
   }
 }

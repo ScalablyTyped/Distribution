@@ -19,6 +19,6 @@ trait Declare[T] extends Type[T] {
 @js.native
 object declare extends js.Object {
   def apply[T](): Declare[T] = js.native
-  def apply[T](name: String): Declare[T] = js.native
+  def apply[T](name: java.lang.String): Declare[T] = js.native
 }
 

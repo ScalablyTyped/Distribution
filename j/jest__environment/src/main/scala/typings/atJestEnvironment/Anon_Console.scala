@@ -16,7 +16,7 @@ trait Anon_Console extends js.Object {
 object Anon_Console {
   @scala.inline
   def apply(console: Console, docblockPragmas: Record[String, String | js.Array[String]], testPath: Path): Anon_Console = {
-    val __obj = js.Dynamic.literal(console = console, docblockPragmas = docblockPragmas, testPath = testPath)
+    val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any], docblockPragmas = docblockPragmas.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Console]
   }

@@ -12,7 +12,7 @@ trait Entry extends js.Object {
 object Entry {
   @scala.inline
   def apply(label: String, source: VName): Entry = {
-    val __obj = js.Dynamic.literal(label = label, source = source)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Entry]
   }

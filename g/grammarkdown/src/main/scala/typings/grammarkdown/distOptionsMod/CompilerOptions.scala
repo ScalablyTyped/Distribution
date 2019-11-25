@@ -30,15 +30,15 @@ object CompilerOptions {
     out: String = null
   ): CompilerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(diagnostics)) __obj.updateDynamic("diagnostics")(diagnostics)
-    if (!js.isUndefined(emitLinks)) __obj.updateDynamic("emitLinks")(emitLinks)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (newLine != null) __obj.updateDynamic("newLine")(newLine)
-    if (!js.isUndefined(noChecks)) __obj.updateDynamic("noChecks")(noChecks)
-    if (!js.isUndefined(noEmit)) __obj.updateDynamic("noEmit")(noEmit)
-    if (!js.isUndefined(noEmitOnError)) __obj.updateDynamic("noEmitOnError")(noEmitOnError)
-    if (!js.isUndefined(noStrictParametricProductions)) __obj.updateDynamic("noStrictParametricProductions")(noStrictParametricProductions)
-    if (out != null) __obj.updateDynamic("out")(out)
+    if (!js.isUndefined(diagnostics)) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitLinks)) __obj.updateDynamic("emitLinks")(emitLinks.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (newLine != null) __obj.updateDynamic("newLine")(newLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(noChecks)) __obj.updateDynamic("noChecks")(noChecks.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEmit)) __obj.updateDynamic("noEmit")(noEmit.asInstanceOf[js.Any])
+    if (!js.isUndefined(noEmitOnError)) __obj.updateDynamic("noEmitOnError")(noEmitOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(noStrictParametricProductions)) __obj.updateDynamic("noStrictParametricProductions")(noStrictParametricProductions.asInstanceOf[js.Any])
+    if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilerOptions]
   }
 }

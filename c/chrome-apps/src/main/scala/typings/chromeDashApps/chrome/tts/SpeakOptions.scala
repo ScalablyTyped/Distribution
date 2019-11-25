@@ -63,16 +63,16 @@ object SpeakOptions {
     volume: Int | Double = null
   ): SpeakOptions = {
     val __obj = js.Dynamic.literal()
-    if (desiredEventTypes != null) __obj.updateDynamic("desiredEventTypes")(desiredEventTypes)
-    if (!js.isUndefined(enqueue)) __obj.updateDynamic("enqueue")(enqueue)
-    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    if (desiredEventTypes != null) __obj.updateDynamic("desiredEventTypes")(desiredEventTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(enqueue)) __obj.updateDynamic("enqueue")(enqueue.asInstanceOf[js.Any])
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId.asInstanceOf[js.Any])
     if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (onEvent != null) __obj.updateDynamic("onEvent")(js.Any.fromFunction1(onEvent))
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (requiredEventTypes != null) __obj.updateDynamic("requiredEventTypes")(requiredEventTypes)
-    if (voiceName != null) __obj.updateDynamic("voiceName")(voiceName)
+    if (requiredEventTypes != null) __obj.updateDynamic("requiredEventTypes")(requiredEventTypes.asInstanceOf[js.Any])
+    if (voiceName != null) __obj.updateDynamic("voiceName")(voiceName.asInstanceOf[js.Any])
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeakOptions]
   }

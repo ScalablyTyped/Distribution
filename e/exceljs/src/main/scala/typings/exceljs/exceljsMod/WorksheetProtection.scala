@@ -41,7 +41,7 @@ object WorksheetProtection {
     selectUnlockedCells: Boolean,
     sort: Boolean
   ): WorksheetProtection = {
-    val __obj = js.Dynamic.literal(autoFilter = autoFilter, deleteColumns = deleteColumns, deleteRows = deleteRows, formatCells = formatCells, formatColumns = formatColumns, formatRows = formatRows, insertColumns = insertColumns, insertHyperlinks = insertHyperlinks, insertRows = insertRows, objects = objects, pivotTables = pivotTables, scenarios = scenarios, selectLockedCells = selectLockedCells, selectUnlockedCells = selectUnlockedCells, sort = sort)
+    val __obj = js.Dynamic.literal(autoFilter = autoFilter.asInstanceOf[js.Any], deleteColumns = deleteColumns.asInstanceOf[js.Any], deleteRows = deleteRows.asInstanceOf[js.Any], formatCells = formatCells.asInstanceOf[js.Any], formatColumns = formatColumns.asInstanceOf[js.Any], formatRows = formatRows.asInstanceOf[js.Any], insertColumns = insertColumns.asInstanceOf[js.Any], insertHyperlinks = insertHyperlinks.asInstanceOf[js.Any], insertRows = insertRows.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any], pivotTables = pivotTables.asInstanceOf[js.Any], scenarios = scenarios.asInstanceOf[js.Any], selectLockedCells = selectLockedCells.asInstanceOf[js.Any], selectUnlockedCells = selectUnlockedCells.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorksheetProtection]
   }

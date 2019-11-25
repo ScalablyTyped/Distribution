@@ -25,7 +25,7 @@ trait manager extends js.Object {
 object manager {
   @scala.inline
   def apply(defaultDuration: Double): manager = {
-    val __obj = js.Dynamic.literal(defaultDuration = defaultDuration)
+    val __obj = js.Dynamic.literal(defaultDuration = defaultDuration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[manager]
   }

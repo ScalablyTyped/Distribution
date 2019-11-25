@@ -13,7 +13,7 @@ object BatchWriteSpansRequest {
   @scala.inline
   def apply(spans: js.Array[Span] = null): BatchWriteSpansRequest = {
     val __obj = js.Dynamic.literal()
-    if (spans != null) __obj.updateDynamic("spans")(spans)
+    if (spans != null) __obj.updateDynamic("spans")(spans.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchWriteSpansRequest]
   }
 }

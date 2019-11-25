@@ -26,13 +26,13 @@ object ChannelSectionSnippet {
     `type`: String = null
   ): ChannelSectionSnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage)
-    if (localized != null) __obj.updateDynamic("localized")(localized)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
+    if (localized != null) __obj.updateDynamic("localized")(localized.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSectionSnippet]
   }
 }

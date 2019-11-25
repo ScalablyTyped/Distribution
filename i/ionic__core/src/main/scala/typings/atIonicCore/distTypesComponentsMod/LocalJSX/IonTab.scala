@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
-import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,9 @@ trait IonTab extends js.Object {
   /**
     * The component to display inside of the tab.
     */
-  var component: js.UndefOr[ComponentRef] = js.undefined
+  var component: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any
+  ] = js.undefined
   /**
     * A tab id must be provided for each `ion-tab`. It's used internally to reference the selected tab or by the router to switch between them.
     */
@@ -18,8 +19,11 @@ trait IonTab extends js.Object {
 
 object IonTab {
   @scala.inline
-  def apply(tab: String, component: ComponentRef = null): IonTab = {
-    val __obj = js.Dynamic.literal(tab = tab)
+  def apply(
+    tab: String,
+    component: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any = null
+  ): IonTab = {
+    val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonTab]
   }

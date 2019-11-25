@@ -17,7 +17,7 @@ object FindOneAndUpdateOptions {
   @scala.inline
   def apply(upsert: js.UndefOr[Boolean] = js.undefined): FindOneAndUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert)
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOneAndUpdateOptions]
   }
 }

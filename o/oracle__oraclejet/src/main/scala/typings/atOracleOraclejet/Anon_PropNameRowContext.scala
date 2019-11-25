@@ -13,8 +13,8 @@ trait Anon_PropNameRowContext
 object Anon_PropNameRowContext {
   @scala.inline
   def apply(rowContext: js.Object, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_PropNameRowContext = {
-    val __obj = js.Dynamic.literal(rowContext = rowContext)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(rowContext = rowContext.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_PropNameRowContext]
   }
 }

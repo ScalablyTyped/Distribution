@@ -21,8 +21,8 @@ object BillingDestination {
   @scala.inline
   def apply(metrics: js.Array[String] = null, monitoredResource: String = null): BillingDestination = {
     val __obj = js.Dynamic.literal()
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (monitoredResource != null) __obj.updateDynamic("monitoredResource")(monitoredResource)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (monitoredResource != null) __obj.updateDynamic("monitoredResource")(monitoredResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingDestination]
   }
 }

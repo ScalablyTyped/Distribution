@@ -20,10 +20,10 @@ object DirectTreadBroadcastBaseOptions {
     qs: StringDictionary[js.Any] = null,
     signed: js.UndefOr[Boolean] = js.undefined
   ): DirectTreadBroadcastBaseOptions = {
-    val __obj = js.Dynamic.literal(item = item)
-    if (form != null) __obj.updateDynamic("form")(form)
-    if (qs != null) __obj.updateDynamic("qs")(qs)
-    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
+    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
+    if (qs != null) __obj.updateDynamic("qs")(qs.asInstanceOf[js.Any])
+    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectTreadBroadcastBaseOptions]
   }
 }

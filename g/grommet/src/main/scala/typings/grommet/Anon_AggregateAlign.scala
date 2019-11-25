@@ -37,15 +37,15 @@ object Anon_AggregateAlign {
     search: js.UndefOr[Boolean] = js.undefined,
     sortable: js.UndefOr[Boolean] = js.undefined
   ): Anon_AggregateAlign = {
-    val __obj = js.Dynamic.literal(property = property)
+    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
     if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AggregateAlign]
   }
 }

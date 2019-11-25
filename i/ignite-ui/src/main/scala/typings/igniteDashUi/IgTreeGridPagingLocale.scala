@@ -33,9 +33,9 @@ object IgTreeGridPagingLocale {
     contextRowRootText: String = null
   ): IgTreeGridPagingLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (contextRowLoadingText != null) __obj.updateDynamic("contextRowLoadingText")(contextRowLoadingText)
-    if (contextRowRootText != null) __obj.updateDynamic("contextRowRootText")(contextRowRootText)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (contextRowLoadingText != null) __obj.updateDynamic("contextRowLoadingText")(contextRowLoadingText.asInstanceOf[js.Any])
+    if (contextRowRootText != null) __obj.updateDynamic("contextRowRootText")(contextRowRootText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridPagingLocale]
   }
 }

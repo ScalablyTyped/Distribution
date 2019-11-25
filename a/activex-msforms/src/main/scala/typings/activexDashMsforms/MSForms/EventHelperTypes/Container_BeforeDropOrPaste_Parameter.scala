@@ -32,7 +32,7 @@ object Container_BeforeDropOrPaste_Parameter {
     X: Double,
     Y: Double
   ): Container_BeforeDropOrPaste_Parameter = {
-    val __obj = js.Dynamic.literal(Action = Action, Cancel = Cancel, Control = Control, Data = Data, Effect = Effect, Shift = Shift, X = X, Y = Y)
+    val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Cancel = Cancel.asInstanceOf[js.Any], Control = Control.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], Effect = Effect.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Container_BeforeDropOrPaste_Parameter]
   }

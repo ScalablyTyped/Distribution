@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait FitMode extends js.Object
 
+object FitMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def contain: typings.atUifabricUtilities.atUifabricUtilitiesStrings.contain = this.cast("contain")
+  @scala.inline
+  def cover: typings.atUifabricUtilities.atUifabricUtilitiesStrings.cover = this.cast("cover")
+}
+

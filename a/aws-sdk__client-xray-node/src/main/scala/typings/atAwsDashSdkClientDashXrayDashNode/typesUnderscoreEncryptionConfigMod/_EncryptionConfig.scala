@@ -27,7 +27,7 @@ object _EncryptionConfig {
   @scala.inline
   def apply(KeyId: String = null, Status: UPDATING | ACTIVE | String = null, Type: NONE | KMS | String = null): _EncryptionConfig = {
     val __obj = js.Dynamic.literal()
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EncryptionConfig]

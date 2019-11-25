@@ -14,7 +14,7 @@ trait bookmark extends js.Object {
 object bookmark {
   @scala.inline
   def apply(collapsed: Boolean, endNode: node | String, serializable: Boolean, startNode: node | String): bookmark = {
-    val __obj = js.Dynamic.literal(collapsed = collapsed, endNode = endNode.asInstanceOf[js.Any], serializable = serializable, startNode = startNode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], endNode = endNode.asInstanceOf[js.Any], serializable = serializable.asInstanceOf[js.Any], startNode = startNode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[bookmark]
   }

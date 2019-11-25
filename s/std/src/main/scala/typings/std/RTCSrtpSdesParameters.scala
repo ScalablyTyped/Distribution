@@ -20,9 +20,9 @@ object RTCSrtpSdesParameters {
     tag: Int | Double = null
   ): RTCSrtpSdesParameters = {
     val __obj = js.Dynamic.literal()
-    if (cryptoSuite != null) __obj.updateDynamic("cryptoSuite")(cryptoSuite)
-    if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams)
-    if (sessionParams != null) __obj.updateDynamic("sessionParams")(sessionParams)
+    if (cryptoSuite != null) __obj.updateDynamic("cryptoSuite")(cryptoSuite.asInstanceOf[js.Any])
+    if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
+    if (sessionParams != null) __obj.updateDynamic("sessionParams")(sessionParams.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSrtpSdesParameters]
   }

@@ -17,7 +17,7 @@ trait Anon_DisabledName extends js.Object {
 object Anon_DisabledName {
   @scala.inline
   def apply(disabled: Boolean, name: String, onChange: ChangeEvent[HTMLInputElement] => Unit, value: js.Any): Anon_DisabledName = {
-    val __obj = js.Dynamic.literal(disabled = disabled, name = name, onChange = js.Any.fromFunction1(onChange), value = value)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DisabledName]
   }

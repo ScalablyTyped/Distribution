@@ -28,10 +28,10 @@ object SparklineOptions {
     startPointColor: String = null
   ): SparklineOptions = {
     val __obj = js.Dynamic.literal()
-    if (highPointColor != null) __obj.updateDynamic("highPointColor")(highPointColor)
-    if (markerSettings != null) __obj.updateDynamic("markerSettings")(markerSettings)
-    if (negativePointColor != null) __obj.updateDynamic("negativePointColor")(negativePointColor)
-    if (startPointColor != null) __obj.updateDynamic("startPointColor")(startPointColor)
+    if (highPointColor != null) __obj.updateDynamic("highPointColor")(highPointColor.asInstanceOf[js.Any])
+    if (markerSettings != null) __obj.updateDynamic("markerSettings")(markerSettings.asInstanceOf[js.Any])
+    if (negativePointColor != null) __obj.updateDynamic("negativePointColor")(negativePointColor.asInstanceOf[js.Any])
+    if (startPointColor != null) __obj.updateDynamic("startPointColor")(startPointColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineOptions]
   }
 }

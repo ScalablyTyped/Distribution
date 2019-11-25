@@ -54,16 +54,16 @@ object Anon_ASCII7 {
     userPassword: String = null
   ): Anon_ASCII7 = {
     val __obj = js.Dynamic.literal()
-    if (crop != null) __obj.updateDynamic("crop")(crop)
+    if (crop != null) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (firstPage != null) __obj.updateDynamic("firstPage")(firstPage.asInstanceOf[js.Any])
     if (lastPage != null) __obj.updateDynamic("lastPage")(lastPage.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (ownerPassword != null) __obj.updateDynamic("ownerPassword")(ownerPassword)
+    if (ownerPassword != null) __obj.updateDynamic("ownerPassword")(ownerPassword.asInstanceOf[js.Any])
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitPages)) __obj.updateDynamic("splitPages")(splitPages)
-    if (userPassword != null) __obj.updateDynamic("userPassword")(userPassword)
+    if (!js.isUndefined(splitPages)) __obj.updateDynamic("splitPages")(splitPages.asInstanceOf[js.Any])
+    if (userPassword != null) __obj.updateDynamic("userPassword")(userPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ASCII7]
   }
 }

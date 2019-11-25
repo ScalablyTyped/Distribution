@@ -11,7 +11,7 @@ trait AudioTrackChangedParam extends js.Object {
 object AudioTrackChangedParam {
   @scala.inline
   def apply(currentTrack: Double): AudioTrackChangedParam = {
-    val __obj = js.Dynamic.literal(currentTrack = currentTrack)
+    val __obj = js.Dynamic.literal(currentTrack = currentTrack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AudioTrackChangedParam]
   }

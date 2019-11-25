@@ -93,95 +93,51 @@ object IChart {
   def apply(
     IComponent: typings.extjs.Ext.draw.IComponent = null,
     ITheme: ITheme = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    addManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     animate: js.Any = null,
     axes: Array = null,
     background: js.Any = null,
-    bindStore: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any]) => Unit = null,
-    bindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null,
-    clearListeners: () => Unit = null,
-    clearManagedListeners: () => Unit = null,
-    enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean = null,
+    bindStore: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], Unit]) = null,
+    bindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     getStore: () => IAbstractStore = null,
-    getStoreListeners: () => _ = null,
-    gradients: Array = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
-    initComponent: () => Unit = null,
+    getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
     insetPadding: Int | Double = null,
     legend: js.Any = null,
     mask: js.Any = null,
-    mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    onBindStore: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit = null,
+    onBindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     onShow: () => Unit = null,
-    onUnbindStore: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit = null,
+    onUnbindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     redraw: /* resize */ js.UndefOr[Boolean] => Unit = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => _ = null,
-    removeListener: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     restoreZoom: () => Unit = null,
-    resumeEvent: /* repeated */ js.Any => Unit = null,
-    resumeEvents: () => Unit = null,
     save: /* config */ js.UndefOr[js.Any] => _ = null,
     series: Array = null,
-    setZoom: /* zoomConfig */ js.UndefOr[js.Any] => Unit = null,
+    setZoom: js.UndefOr[js.Any] => Unit = null,
     store: IStore = null,
-    suspendEvent: /* repeated */ js.Any => Unit = null,
-    suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
     theme: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    unbindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null
+    unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null
   ): IChart = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    js.Dynamic.global.Object.assign(__obj, ITheme)
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (animate != null) __obj.updateDynamic("animate")(animate)
-    if (axes != null) __obj.updateDynamic("axes")(axes)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction2(bindStore))
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (ITheme != null) js.Dynamic.global.Object.assign(__obj, ITheme)
+    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (bindStore != null) __obj.updateDynamic("bindStore")(bindStore.asInstanceOf[js.Any])
     if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(js.Any.fromFunction1(bindStoreListeners))
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(js.Any.fromFunction2(fireEventArgs))
     if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
-    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(js.Any.fromFunction0(getStoreListeners))
-    if (gradients != null) __obj.updateDynamic("gradients")(gradients)
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
+    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(getStoreListeners.asInstanceOf[js.Any])
     if (insetPadding != null) __obj.updateDynamic("insetPadding")(insetPadding.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (mask != null) __obj.updateDynamic("mask")(mask)
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (onBindStore != null) __obj.updateDynamic("onBindStore")(js.Any.fromFunction2(onBindStore))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(js.Any.fromFunction2(onUnbindStore))
     if (redraw != null) __obj.updateDynamic("redraw")(js.Any.fromFunction1(redraw))
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
     if (restoreZoom != null) __obj.updateDynamic("restoreZoom")(js.Any.fromFunction0(restoreZoom))
-    if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
     if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (setZoom != null) __obj.updateDynamic("setZoom")(js.Any.fromFunction1(setZoom))
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(js.Any.fromFunction1(unbindStoreListeners))
     __obj.asInstanceOf[IChart]
   }

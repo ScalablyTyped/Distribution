@@ -46,12 +46,12 @@ object DictionaryRendererProperties {
     visualVariables: js.Array[VisualVariableProperties] = null
   ): DictionaryRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (fieldMap != null) __obj.updateDynamic("fieldMap")(fieldMap)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (fieldMap != null) __obj.updateDynamic("fieldMap")(fieldMap.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictionaryRendererProperties]
   }
 }

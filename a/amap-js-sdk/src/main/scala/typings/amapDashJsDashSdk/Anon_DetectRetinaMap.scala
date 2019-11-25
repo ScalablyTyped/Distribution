@@ -22,11 +22,11 @@ object Anon_DetectRetinaMap {
     zIndex: Int | Double = null,
     zooms: js.Array[Double] = null
   ): Anon_DetectRetinaMap = {
-    val __obj = js.Dynamic.literal(map = map)
-    if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DetectRetinaMap]
   }
 }

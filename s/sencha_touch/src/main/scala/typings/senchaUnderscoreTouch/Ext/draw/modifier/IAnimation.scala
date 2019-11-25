@@ -182,10 +182,10 @@ object IAnimation {
     onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     platformConfig: js.Any = null,
-    popUp: (/* attributes */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any]) => Unit = null,
-    prepareAttributes: /* attr */ js.UndefOr[js.Any] => Unit = null,
+    popUp: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Unit = null,
+    prepareAttributes: js.UndefOr[js.Any] => Unit = null,
     previous: IModifier = null,
-    pushDown: (/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any]) => _ = null,
+    pushDown: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => _ = null,
     relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
     removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
     removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
@@ -220,23 +220,23 @@ object IAnimation {
     if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
     if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
     if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
+    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
     if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
     if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (clearDurationOn != null) __obj.updateDynamic("clearDurationOn")(js.Any.fromFunction1(clearDurationOn))
     if (clearEasingOn != null) __obj.updateDynamic("clearEasingOn")(js.Any.fromFunction1(clearEasingOn))
     if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (customDuration != null) __obj.updateDynamic("customDuration")(customDuration)
-    if (customEasings != null) __obj.updateDynamic("customEasings")(customEasings)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (customDuration != null) __obj.updateDynamic("customDuration")(customDuration.asInstanceOf[js.Any])
+    if (customEasings != null) __obj.updateDynamic("customEasings")(customEasings.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
     if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
     if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
@@ -251,20 +251,20 @@ object IAnimation {
     if (getPrevious != null) __obj.updateDynamic("getPrevious")(js.Any.fromFunction0(getPrevious))
     if (getSprite != null) __obj.updateDynamic("getSprite")(js.Any.fromFunction0(getSprite))
     if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
     if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (next != null) __obj.updateDynamic("next")(next)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
     if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
     if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
     if (popUp != null) __obj.updateDynamic("popUp")(js.Any.fromFunction2(popUp))
     if (prepareAttributes != null) __obj.updateDynamic("prepareAttributes")(js.Any.fromFunction1(prepareAttributes))
-    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     if (pushDown != null) __obj.updateDynamic("pushDown")(js.Any.fromFunction2(pushDown))
     if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
     if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
@@ -272,7 +272,7 @@ object IAnimation {
     if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
     if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
     if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (self != null) __obj.updateDynamic("self")(self)
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
     if (setCustomDuration != null) __obj.updateDynamic("setCustomDuration")(js.Any.fromFunction1(setCustomDuration))
     if (setCustomEasings != null) __obj.updateDynamic("setCustomEasings")(js.Any.fromFunction1(setCustomEasings))
@@ -284,15 +284,15 @@ object IAnimation {
     if (setNext != null) __obj.updateDynamic("setNext")(js.Any.fromFunction1(setNext))
     if (setPrevious != null) __obj.updateDynamic("setPrevious")(js.Any.fromFunction1(setPrevious))
     if (setSprite != null) __obj.updateDynamic("setSprite")(js.Any.fromFunction1(setSprite))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite)
-    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
+    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction0(stop))
     if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
     if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
     if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
     if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimation]
   }
 }

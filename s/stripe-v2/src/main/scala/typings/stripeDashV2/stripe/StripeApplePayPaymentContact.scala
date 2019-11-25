@@ -29,7 +29,7 @@ object StripeApplePayPaymentContact {
     phoneNumber: String,
     postalCode: String
   ): StripeApplePayPaymentContact = {
-    val __obj = js.Dynamic.literal(addressLines = addressLines, administrativeArea = administrativeArea, countryCode = countryCode, emailAddress = emailAddress, familyName = familyName, givenName = givenName, locality = locality, phoneNumber = phoneNumber, postalCode = postalCode)
+    val __obj = js.Dynamic.literal(addressLines = addressLines.asInstanceOf[js.Any], administrativeArea = administrativeArea.asInstanceOf[js.Any], countryCode = countryCode.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], familyName = familyName.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StripeApplePayPaymentContact]
   }

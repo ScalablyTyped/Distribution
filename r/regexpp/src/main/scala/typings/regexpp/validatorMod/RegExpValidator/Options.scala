@@ -135,7 +135,7 @@ object Options {
     strict: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion)
+    if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
     if (onAlternativeEnter != null) __obj.updateDynamic("onAlternativeEnter")(js.Any.fromFunction2(onAlternativeEnter))
     if (onAlternativeLeave != null) __obj.updateDynamic("onAlternativeLeave")(js.Any.fromFunction3(onAlternativeLeave))
     if (onAnyCharacterSet != null) __obj.updateDynamic("onAnyCharacterSet")(js.Any.fromFunction3(onAnyCharacterSet))
@@ -162,7 +162,7 @@ object Options {
     if (onQuantifier != null) __obj.updateDynamic("onQuantifier")(js.Any.fromFunction5(onQuantifier))
     if (onUnicodePropertyCharacterSet != null) __obj.updateDynamic("onUnicodePropertyCharacterSet")(js.Any.fromFunction6(onUnicodePropertyCharacterSet))
     if (onWordBoundaryAssertion != null) __obj.updateDynamic("onWordBoundaryAssertion")(js.Any.fromFunction4(onWordBoundaryAssertion))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

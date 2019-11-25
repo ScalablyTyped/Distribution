@@ -33,12 +33,12 @@ object ThreatMatch {
     threatType: String = null
   ): ThreatMatch = {
     val __obj = js.Dynamic.literal()
-    if (cacheDuration != null) __obj.updateDynamic("cacheDuration")(cacheDuration)
-    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
-    if (threat != null) __obj.updateDynamic("threat")(threat)
-    if (threatEntryMetadata != null) __obj.updateDynamic("threatEntryMetadata")(threatEntryMetadata)
-    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType)
-    if (threatType != null) __obj.updateDynamic("threatType")(threatType)
+    if (cacheDuration != null) __obj.updateDynamic("cacheDuration")(cacheDuration.asInstanceOf[js.Any])
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
+    if (threat != null) __obj.updateDynamic("threat")(threat.asInstanceOf[js.Any])
+    if (threatEntryMetadata != null) __obj.updateDynamic("threatEntryMetadata")(threatEntryMetadata.asInstanceOf[js.Any])
+    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType.asInstanceOf[js.Any])
+    if (threatType != null) __obj.updateDynamic("threatType")(threatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreatMatch]
   }
 }

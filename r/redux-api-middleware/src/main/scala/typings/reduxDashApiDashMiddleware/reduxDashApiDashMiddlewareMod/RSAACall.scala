@@ -53,11 +53,11 @@ object RSAACall {
     ok: /* res */ Response => Boolean = null,
     options: TypeOrResolver[State, RequestInit] = null
   ): RSAACall[State, Payload, Meta] = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], types = types)
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     if (bailout != null) __obj.updateDynamic("bailout")(bailout.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (fetch != null) __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (ok != null) __obj.updateDynamic("ok")(js.Any.fromFunction1(ok))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

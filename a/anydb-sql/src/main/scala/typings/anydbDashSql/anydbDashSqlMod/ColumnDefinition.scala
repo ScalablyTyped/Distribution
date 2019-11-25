@@ -23,11 +23,11 @@ object ColumnDefinition {
     unique: js.UndefOr[Boolean] = js.undefined
   ): ColumnDefinition = {
     val __obj = js.Dynamic.literal()
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull)
-    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey)
-    if (references != null) __obj.updateDynamic("references")(references)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefinition]
   }
 }

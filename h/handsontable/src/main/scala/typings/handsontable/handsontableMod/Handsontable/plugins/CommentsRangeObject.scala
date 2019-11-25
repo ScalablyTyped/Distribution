@@ -13,8 +13,8 @@ trait CommentsRangeObject extends js.Object {
 object CommentsRangeObject {
   @scala.inline
   def apply(from: CellCoords, to: CellCoords = null): CommentsRangeObject = {
-    val __obj = js.Dynamic.literal(from = from)
-    if (to != null) __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentsRangeObject]
   }
 }

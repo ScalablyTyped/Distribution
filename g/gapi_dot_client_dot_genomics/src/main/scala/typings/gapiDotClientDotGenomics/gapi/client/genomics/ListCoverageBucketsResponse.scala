@@ -35,9 +35,9 @@ object ListCoverageBucketsResponse {
     nextPageToken: String = null
   ): ListCoverageBucketsResponse = {
     val __obj = js.Dynamic.literal()
-    if (bucketWidth != null) __obj.updateDynamic("bucketWidth")(bucketWidth)
-    if (coverageBuckets != null) __obj.updateDynamic("coverageBuckets")(coverageBuckets)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (bucketWidth != null) __obj.updateDynamic("bucketWidth")(bucketWidth.asInstanceOf[js.Any])
+    if (coverageBuckets != null) __obj.updateDynamic("coverageBuckets")(coverageBuckets.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCoverageBucketsResponse]
   }
 }

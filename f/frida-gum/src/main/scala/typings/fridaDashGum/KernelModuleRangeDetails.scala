@@ -26,7 +26,7 @@ trait KernelModuleRangeDetails extends js.Object {
 object KernelModuleRangeDetails {
   @scala.inline
   def apply(base: UInt64, name: String, protection: PageProtection, size: Double): KernelModuleRangeDetails = {
-    val __obj = js.Dynamic.literal(base = base, name = name, protection = protection, size = size)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KernelModuleRangeDetails]
   }

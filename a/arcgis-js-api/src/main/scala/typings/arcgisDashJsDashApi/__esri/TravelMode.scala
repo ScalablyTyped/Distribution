@@ -51,12 +51,12 @@ object TravelMode {
     name: String = null,
     timeAttributeName: String = null
   ): TravelMode = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (impedanceAttributeName != null) __obj.updateDynamic("impedanceAttributeName")(impedanceAttributeName)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (timeAttributeName != null) __obj.updateDynamic("timeAttributeName")(timeAttributeName)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (impedanceAttributeName != null) __obj.updateDynamic("impedanceAttributeName")(impedanceAttributeName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (timeAttributeName != null) __obj.updateDynamic("timeAttributeName")(timeAttributeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TravelMode]
   }
 }

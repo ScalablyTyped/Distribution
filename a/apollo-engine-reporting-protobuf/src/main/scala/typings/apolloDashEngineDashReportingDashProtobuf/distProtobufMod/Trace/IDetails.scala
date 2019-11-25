@@ -27,10 +27,10 @@ object IDetails {
     variablesJson: StringDictionary[String] = null
   ): IDetails = {
     val __obj = js.Dynamic.literal()
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
-    if (rawQuery != null) __obj.updateDynamic("rawQuery")(rawQuery)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
-    if (variablesJson != null) __obj.updateDynamic("variablesJson")(variablesJson)
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
+    if (rawQuery != null) __obj.updateDynamic("rawQuery")(rawQuery.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    if (variablesJson != null) __obj.updateDynamic("variablesJson")(variablesJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetails]
   }
 }

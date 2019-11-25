@@ -13,7 +13,7 @@ trait Anon_Cv extends js.Object {
 object Anon_Cv {
   @scala.inline
   def apply(cv: Double, mean: Double, std: Double): Anon_Cv = {
-    val __obj = js.Dynamic.literal(cv = cv, mean = mean, std = std)
+    val __obj = js.Dynamic.literal(cv = cv.asInstanceOf[js.Any], mean = mean.asInstanceOf[js.Any], std = std.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cv]
   }

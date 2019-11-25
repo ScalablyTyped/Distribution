@@ -11,7 +11,7 @@ trait UploadResult extends js.Object {
 object UploadResult {
   @scala.inline
   def apply(upload: UploadRecord): UploadResult = {
-    val __obj = js.Dynamic.literal(upload = upload)
+    val __obj = js.Dynamic.literal(upload = upload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UploadResult]
   }

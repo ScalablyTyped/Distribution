@@ -13,7 +13,7 @@ object LocationConstraintAwareInput {
   @scala.inline
   def apply(CreateBucketConfiguration: Anon_LocationConstraint = null): LocationConstraintAwareInput = {
     val __obj = js.Dynamic.literal()
-    if (CreateBucketConfiguration != null) __obj.updateDynamic("CreateBucketConfiguration")(CreateBucketConfiguration)
+    if (CreateBucketConfiguration != null) __obj.updateDynamic("CreateBucketConfiguration")(CreateBucketConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationConstraintAwareInput]
   }
 }

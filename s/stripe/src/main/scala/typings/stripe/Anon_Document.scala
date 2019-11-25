@@ -15,7 +15,7 @@ object Anon_Document {
   @scala.inline
   def apply(document: Anon_Back = null): Anon_Document = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Document]
   }
 }

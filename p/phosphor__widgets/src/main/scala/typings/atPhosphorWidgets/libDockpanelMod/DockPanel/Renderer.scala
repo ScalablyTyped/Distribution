@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("@phosphor/widgets/lib/dockpanel", "DockPanel.Renderer")
 @js.native
-class Renderer () extends IRenderer {
+class Renderer ()
+  extends typings.atPhosphorWidgets.libDocklayoutMod.DockLayout.IRenderer {
   /**
     * Create a new handle node for use with a dock layout.
     *

@@ -22,11 +22,11 @@ object VariableFormatValue {
     convertUndefinedToValue: Parameter = null
   ): VariableFormatValue = {
     val __obj = js.Dynamic.literal()
-    if (caseConversionType != null) __obj.updateDynamic("caseConversionType")(caseConversionType)
-    if (convertFalseToValue != null) __obj.updateDynamic("convertFalseToValue")(convertFalseToValue)
-    if (convertNullToValue != null) __obj.updateDynamic("convertNullToValue")(convertNullToValue)
-    if (convertTrueToValue != null) __obj.updateDynamic("convertTrueToValue")(convertTrueToValue)
-    if (convertUndefinedToValue != null) __obj.updateDynamic("convertUndefinedToValue")(convertUndefinedToValue)
+    if (caseConversionType != null) __obj.updateDynamic("caseConversionType")(caseConversionType.asInstanceOf[js.Any])
+    if (convertFalseToValue != null) __obj.updateDynamic("convertFalseToValue")(convertFalseToValue.asInstanceOf[js.Any])
+    if (convertNullToValue != null) __obj.updateDynamic("convertNullToValue")(convertNullToValue.asInstanceOf[js.Any])
+    if (convertTrueToValue != null) __obj.updateDynamic("convertTrueToValue")(convertTrueToValue.asInstanceOf[js.Any])
+    if (convertUndefinedToValue != null) __obj.updateDynamic("convertUndefinedToValue")(convertUndefinedToValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableFormatValue]
   }
 }

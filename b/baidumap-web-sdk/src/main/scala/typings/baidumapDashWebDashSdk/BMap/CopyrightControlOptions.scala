@@ -14,7 +14,7 @@ object CopyrightControlOptions {
   def apply(anchor: Int | Double = null, offset: Size = null): CopyrightControlOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyrightControlOptions]
   }
 }

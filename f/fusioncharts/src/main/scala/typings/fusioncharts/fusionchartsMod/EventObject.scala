@@ -29,8 +29,8 @@ object EventObject {
     stopPropagation: () => Unit,
     `type`: String
   ): EventObject = {
-    val __obj = js.Dynamic.literal(cancelled = cancelled, detachHandler = js.Any.fromFunction0(detachHandler), detached = detached, eventId = eventId, preventDefault = js.Any.fromFunction0(preventDefault), prevented = prevented, sender = sender, stopPropagation = js.Any.fromFunction0(stopPropagation))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cancelled = cancelled.asInstanceOf[js.Any], detachHandler = js.Any.fromFunction0(detachHandler), detached = detached.asInstanceOf[js.Any], eventId = eventId.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), prevented = prevented.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventObject]
   }
 }

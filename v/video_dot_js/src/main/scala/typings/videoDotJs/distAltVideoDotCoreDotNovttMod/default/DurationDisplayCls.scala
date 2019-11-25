@@ -1,15 +1,14 @@
 package typings.videoDotJs.distAltVideoDotCoreDotNovttMod.default
 
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
-import typings.videoDotJs.videoDotJsMod.videojs.DurationDisplay
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("video.js/dist/alt/video.core.novtt", "DurationDisplay")
 @js.native
-class DurationDisplayCls protected () extends DurationDisplay {
+class DurationDisplayCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.DurationDisplay {
   /**
     * Creates an instance of this class.
     *
@@ -19,6 +18,6 @@ class DurationDisplayCls protected () extends DurationDisplay {
     * @param [options]
     *        The key/value store of player options.
     */
-  def this(player: Player, options: ComponentOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: ComponentOptions) = this()
 }
 

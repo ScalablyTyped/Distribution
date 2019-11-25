@@ -15,8 +15,8 @@ trait Anon_IndexPropName
 object Anon_IndexPropName {
   @scala.inline
   def apply(index: Double, tile: Element, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_IndexPropName = {
-    val __obj = js.Dynamic.literal(index = index, tile = tile)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], tile = tile.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_IndexPropName]
   }
 }

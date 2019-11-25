@@ -36,7 +36,7 @@ object OnEveryReturn {
     resume: () => Boolean,
     stop: () => Boolean
   ): OnEveryReturn = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), code = code, pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), code = code.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[OnEveryReturn]
   }

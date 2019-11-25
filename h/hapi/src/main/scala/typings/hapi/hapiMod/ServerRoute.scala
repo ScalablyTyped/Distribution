@@ -49,10 +49,10 @@ object ServerRoute {
     rules: js.Object = null,
     vhost: String | js.Array[String] = null
   ): ServerRoute = {
-    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerRoute]
   }

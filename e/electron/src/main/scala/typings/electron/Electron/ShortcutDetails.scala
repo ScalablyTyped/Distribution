@@ -49,12 +49,12 @@ object ShortcutDetails {
     icon: String = null,
     iconIndex: Int | Double = null
   ): ShortcutDetails = {
-    val __obj = js.Dynamic.literal(target = target)
-    if (appUserModelId != null) __obj.updateDynamic("appUserModelId")(appUserModelId)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    if (appUserModelId != null) __obj.updateDynamic("appUserModelId")(appUserModelId.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconIndex != null) __obj.updateDynamic("iconIndex")(iconIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortcutDetails]
   }

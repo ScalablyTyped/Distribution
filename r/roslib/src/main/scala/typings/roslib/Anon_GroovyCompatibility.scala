@@ -24,10 +24,10 @@ object Anon_GroovyCompatibility {
     url: String = null
   ): Anon_GroovyCompatibility = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(groovyCompatibility)) __obj.updateDynamic("groovyCompatibility")(groovyCompatibility)
+    if (!js.isUndefined(groovyCompatibility)) __obj.updateDynamic("groovyCompatibility")(groovyCompatibility.asInstanceOf[js.Any])
     if (transportLibrary != null) __obj.updateDynamic("transportLibrary")(transportLibrary.asInstanceOf[js.Any])
-    if (transportOptions != null) __obj.updateDynamic("transportOptions")(transportOptions)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (transportOptions != null) __obj.updateDynamic("transportOptions")(transportOptions.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GroovyCompatibility]
   }
 }

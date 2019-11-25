@@ -33,10 +33,10 @@ object ServicePlanInfo {
     servicePlanName: String = null
   ): ServicePlanInfo = {
     val __obj = js.Dynamic.literal()
-    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo)
-    if (provisioningStatus != null) __obj.updateDynamic("provisioningStatus")(provisioningStatus)
-    if (servicePlanId != null) __obj.updateDynamic("servicePlanId")(servicePlanId)
-    if (servicePlanName != null) __obj.updateDynamic("servicePlanName")(servicePlanName)
+    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo.asInstanceOf[js.Any])
+    if (provisioningStatus != null) __obj.updateDynamic("provisioningStatus")(provisioningStatus.asInstanceOf[js.Any])
+    if (servicePlanId != null) __obj.updateDynamic("servicePlanId")(servicePlanId.asInstanceOf[js.Any])
+    if (servicePlanName != null) __obj.updateDynamic("servicePlanName")(servicePlanName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServicePlanInfo]
   }
 }

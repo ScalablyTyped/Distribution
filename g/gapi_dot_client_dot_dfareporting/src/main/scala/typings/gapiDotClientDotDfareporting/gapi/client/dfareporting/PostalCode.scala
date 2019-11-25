@@ -27,11 +27,11 @@ object PostalCode {
     kind: String = null
   ): PostalCode = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (countryDartId != null) __obj.updateDynamic("countryDartId")(countryDartId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (countryDartId != null) __obj.updateDynamic("countryDartId")(countryDartId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostalCode]
   }
 }

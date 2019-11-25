@@ -23,9 +23,9 @@ object ListItemLayoutTheme {
   @scala.inline
   def apply(disabled: String = null, item: String = null, selectable: String = null): ListItemLayoutTheme = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemLayoutTheme]
   }
 }

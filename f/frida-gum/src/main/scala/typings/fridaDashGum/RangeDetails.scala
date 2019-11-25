@@ -26,8 +26,8 @@ trait RangeDetails extends js.Object {
 object RangeDetails {
   @scala.inline
   def apply(base: NativePointer, protection: PageProtection, size: Double, file: FileMapping = null): RangeDetails = {
-    val __obj = js.Dynamic.literal(base = base, protection = protection, size = size)
-    if (file != null) __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeDetails]
   }
 }

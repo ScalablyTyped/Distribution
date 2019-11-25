@@ -20,7 +20,7 @@ object atFirebaseUtilMod extends js.Object {
     extends typings.atFirebaseUtil.distSrcDeferredMod.Deferred[R]
   
   @js.native
-  class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
     */ typings.atFirebaseUtil.atFirebaseUtilStrings.ErrorFactory with js.Any */] protected ()
     extends typings.atFirebaseUtil.distSrcErrorsMod.ErrorFactory[ErrorCode, ErrorParams] {
@@ -64,39 +64,41 @@ object atFirebaseUtilMod extends js.Object {
   def issuedAtTime(token: String): Double | Null = js.native
   def jsonEval(str: String): js.Any = js.native
   def map[K /* <: String */, V, U](
-    obj: /* import warning: ImportType.apply c Unsupported type mapping: 
+    obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
     */ typings.atFirebaseUtil.atFirebaseUtilStrings.map with js.Any,
     fn: js.Function3[
       /* value */ V, 
       /* key */ K, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
     */ /* obj */ typings.atFirebaseUtil.atFirebaseUtilStrings.map with js.Any, 
       U
     ]
-  ): /* import warning: ImportType.apply c Unsupported type mapping: 
+  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: U}
     */ typings.atFirebaseUtil.atFirebaseUtilStrings.map with js.Any = js.native
   def map[K /* <: String */, V, U](
-    obj: /* import warning: ImportType.apply c Unsupported type mapping: 
+    obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
     */ typings.atFirebaseUtil.atFirebaseUtilStrings.map with js.Any,
     fn: js.Function3[
       /* value */ V, 
       /* key */ K, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
     */ /* obj */ typings.atFirebaseUtil.atFirebaseUtilStrings.map with js.Any, 
       U
     ],
     contextObj: js.Any
-  ): /* import warning: ImportType.apply c Unsupported type mapping: 
+  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: U}
     */ typings.atFirebaseUtil.atFirebaseUtilStrings.map with js.Any = js.native
   def querystring(querystringParams: StringDictionary[String]): String = js.native
   def querystringDecode(querystring: String): js.Object = js.native
-  def safeGet[T /* <: js.Object */, K /* <: String */](obj: T, key: K): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def safeGet[T /* <: js.Object */, K /* <: String */](obj: T, key: K): js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ] = js.native
   def stringLength(str: String): Double = js.native
   def stringToByteArray(str: String): js.Array[Double] = js.native
   def stringify(data: js.Any): String = js.native

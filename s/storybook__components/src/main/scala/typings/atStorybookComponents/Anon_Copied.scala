@@ -11,7 +11,7 @@ trait Anon_Copied extends js.Object {
 object Anon_Copied {
   @scala.inline
   def apply(copied: Boolean): Anon_Copied = {
-    val __obj = js.Dynamic.literal(copied = copied)
+    val __obj = js.Dynamic.literal(copied = copied.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Copied]
   }

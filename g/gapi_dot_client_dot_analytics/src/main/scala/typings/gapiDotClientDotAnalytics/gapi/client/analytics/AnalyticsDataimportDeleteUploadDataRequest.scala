@@ -13,7 +13,7 @@ object AnalyticsDataimportDeleteUploadDataRequest {
   @scala.inline
   def apply(customDataImportUids: js.Array[String] = null): AnalyticsDataimportDeleteUploadDataRequest = {
     val __obj = js.Dynamic.literal()
-    if (customDataImportUids != null) __obj.updateDynamic("customDataImportUids")(customDataImportUids)
+    if (customDataImportUids != null) __obj.updateDynamic("customDataImportUids")(customDataImportUids.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsDataimportDeleteUploadDataRequest]
   }
 }

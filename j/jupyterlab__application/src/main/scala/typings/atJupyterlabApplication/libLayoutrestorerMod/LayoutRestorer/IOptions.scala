@@ -35,7 +35,7 @@ object IOptions {
     first: js.Promise[_],
     registry: CommandRegistry
   ): IOptions = {
-    val __obj = js.Dynamic.literal(connector = connector, first = first, registry = registry)
+    val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

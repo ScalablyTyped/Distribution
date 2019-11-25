@@ -26,7 +26,7 @@ object IgnoreRulesParams {
   @scala.inline
   def apply(hasTag: String = null, lowerPriorityThan: Int | Double = null): IgnoreRulesParams = {
     val __obj = js.Dynamic.literal()
-    if (hasTag != null) __obj.updateDynamic("hasTag")(hasTag)
+    if (hasTag != null) __obj.updateDynamic("hasTag")(hasTag.asInstanceOf[js.Any])
     if (lowerPriorityThan != null) __obj.updateDynamic("lowerPriorityThan")(lowerPriorityThan.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgnoreRulesParams]
   }

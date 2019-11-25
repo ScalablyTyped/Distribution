@@ -28,10 +28,10 @@ object LicenseDetails {
     skuPartNumber: String = null
   ): LicenseDetails = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (servicePlans != null) __obj.updateDynamic("servicePlans")(servicePlans)
-    if (skuId != null) __obj.updateDynamic("skuId")(skuId)
-    if (skuPartNumber != null) __obj.updateDynamic("skuPartNumber")(skuPartNumber)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (servicePlans != null) __obj.updateDynamic("servicePlans")(servicePlans.asInstanceOf[js.Any])
+    if (skuId != null) __obj.updateDynamic("skuId")(skuId.asInstanceOf[js.Any])
+    if (skuPartNumber != null) __obj.updateDynamic("skuPartNumber")(skuPartNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicenseDetails]
   }
 }

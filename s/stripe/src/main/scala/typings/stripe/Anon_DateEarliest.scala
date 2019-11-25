@@ -28,7 +28,7 @@ trait Anon_DateEarliest extends js.Object {
 object Anon_DateEarliest {
   @scala.inline
   def apply(date: String, earliest: String, latest: String, `type`: range | exact): Anon_DateEarliest = {
-    val __obj = js.Dynamic.literal(date = date, earliest = earliest, latest = latest)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], earliest = earliest.asInstanceOf[js.Any], latest = latest.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DateEarliest]
   }

@@ -8,10 +8,14 @@ import scala.scalajs.js.annotation._
 
 object dStrings {
   @js.native
-  sealed trait c extends GetSetFlags
+  sealed trait c
+    extends Flags
+       with GetSetFlags
   
   @js.native
-  sealed trait ce extends GetSetFlags
+  sealed trait ce
+    extends Flags
+       with GetSetFlags
   
   @js.native
   sealed trait cew extends Flags
@@ -20,7 +24,9 @@ object dStrings {
   sealed trait cw extends Flags
   
   @js.native
-  sealed trait e extends GetSetFlags
+  sealed trait e
+    extends Flags
+       with GetSetFlags
   
   @js.native
   sealed trait ew extends Flags

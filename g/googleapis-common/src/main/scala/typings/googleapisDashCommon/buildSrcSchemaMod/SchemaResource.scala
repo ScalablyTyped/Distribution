@@ -13,8 +13,8 @@ object SchemaResource {
   @scala.inline
   def apply(methods: SchemaMethods = null, resources: SchemaResources = null): SchemaResource = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResource]
   }
 }

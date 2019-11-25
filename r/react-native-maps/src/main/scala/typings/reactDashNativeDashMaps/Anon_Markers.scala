@@ -12,7 +12,7 @@ trait Anon_Markers extends js.Object {
 object Anon_Markers {
   @scala.inline
   def apply(markers: js.Array[KmlMarker]): Anon_Markers = {
-    val __obj = js.Dynamic.literal(markers = markers)
+    val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Markers]
   }

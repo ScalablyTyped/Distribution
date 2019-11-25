@@ -22,8 +22,8 @@ object DebugSessionOptions {
   @scala.inline
   def apply(consoleMode: DebugConsoleMode = null, parentSession: DebugSession = null): DebugSessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (consoleMode != null) __obj.updateDynamic("consoleMode")(consoleMode)
-    if (parentSession != null) __obj.updateDynamic("parentSession")(parentSession)
+    if (consoleMode != null) __obj.updateDynamic("consoleMode")(consoleMode.asInstanceOf[js.Any])
+    if (parentSession != null) __obj.updateDynamic("parentSession")(parentSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugSessionOptions]
   }
 }

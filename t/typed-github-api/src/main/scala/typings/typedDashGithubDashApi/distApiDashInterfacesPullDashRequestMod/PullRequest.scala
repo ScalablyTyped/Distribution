@@ -65,11 +65,11 @@ object PullRequest {
     merged_at: Date = null,
     milestone: Milestone = null
   ): PullRequest = {
-    val __obj = js.Dynamic.literal(assignees = assignees, base = base, body = body, comments_url = comments_url, commits_url = commits_url, created_at = created_at, head = head, html_url = html_url, id = id, issue_url = issue_url, locked = locked, number = number, review_comment_url = review_comment_url, review_comments_url = review_comments_url, state = state.asInstanceOf[js.Any], statuses_url = statuses_url, title = title, updated_at = updated_at, url = url, user = user)
-    if (assignee != null) __obj.updateDynamic("assignee")(assignee)
-    if (closed_at != null) __obj.updateDynamic("closed_at")(closed_at)
-    if (merged_at != null) __obj.updateDynamic("merged_at")(merged_at)
-    if (milestone != null) __obj.updateDynamic("milestone")(milestone)
+    val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_url = issue_url.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], review_comment_url = review_comment_url.asInstanceOf[js.Any], review_comments_url = review_comments_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (assignee != null) __obj.updateDynamic("assignee")(assignee.asInstanceOf[js.Any])
+    if (closed_at != null) __obj.updateDynamic("closed_at")(closed_at.asInstanceOf[js.Any])
+    if (merged_at != null) __obj.updateDynamic("merged_at")(merged_at.asInstanceOf[js.Any])
+    if (milestone != null) __obj.updateDynamic("milestone")(milestone.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequest]
   }
 }

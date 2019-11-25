@@ -42,8 +42,8 @@ object ScriptInfo {
     version: String,
     namespace: String = null
   ): ScriptInfo = {
-    val __obj = js.Dynamic.literal(description = description, excludes = excludes, includes = includes, matches = matches, name = name, resources = resources, runAt = runAt.asInstanceOf[js.Any], uuid = uuid, version = version)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], excludes = excludes.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], runAt = runAt.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptInfo]
   }
 }

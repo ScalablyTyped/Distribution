@@ -15,7 +15,7 @@ trait DynamicViewOptions extends js.Object {
 object DynamicViewOptions {
   @scala.inline
   def apply(minRebuildInterval: Double, persistent: Boolean, sortPriority: active | passive): DynamicViewOptions = {
-    val __obj = js.Dynamic.literal(minRebuildInterval = minRebuildInterval, persistent = persistent, sortPriority = sortPriority.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(minRebuildInterval = minRebuildInterval.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any], sortPriority = sortPriority.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DynamicViewOptions]
   }

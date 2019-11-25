@@ -27,7 +27,7 @@ object GraphQLEnumTypeConfig {
     extensionASTNodes: Maybe[js.Array[EnumTypeExtensionNode]] = null,
     extensions: Maybe[Record[String, _]] = null
   ): GraphQLEnumTypeConfig = {
-    val __obj = js.Dynamic.literal(name = name, values = values)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])

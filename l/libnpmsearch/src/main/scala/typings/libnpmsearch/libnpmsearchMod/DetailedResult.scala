@@ -13,8 +13,8 @@ trait DetailedResult extends js.Object {
 object DetailedResult {
   @scala.inline
   def apply(`package`: Result, score: Score, searchScore: Double): DetailedResult = {
-    val __obj = js.Dynamic.literal(score = score, searchScore = searchScore)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any], searchScore = searchScore.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedResult]
   }
 }

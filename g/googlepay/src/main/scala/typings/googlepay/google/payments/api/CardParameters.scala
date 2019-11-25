@@ -21,10 +21,10 @@ object CardParameters {
     billingAddressParameters: BillingAddressParameters = null,
     billingAddressRequired: js.UndefOr[Boolean] = js.undefined
   ): CardParameters = {
-    val __obj = js.Dynamic.literal(allowedAuthMethods = allowedAuthMethods, allowedCardNetworks = allowedCardNetworks)
-    if (!js.isUndefined(allowPrepaidCards)) __obj.updateDynamic("allowPrepaidCards")(allowPrepaidCards)
-    if (billingAddressParameters != null) __obj.updateDynamic("billingAddressParameters")(billingAddressParameters)
-    if (!js.isUndefined(billingAddressRequired)) __obj.updateDynamic("billingAddressRequired")(billingAddressRequired)
+    val __obj = js.Dynamic.literal(allowedAuthMethods = allowedAuthMethods.asInstanceOf[js.Any], allowedCardNetworks = allowedCardNetworks.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPrepaidCards)) __obj.updateDynamic("allowPrepaidCards")(allowPrepaidCards.asInstanceOf[js.Any])
+    if (billingAddressParameters != null) __obj.updateDynamic("billingAddressParameters")(billingAddressParameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(billingAddressRequired)) __obj.updateDynamic("billingAddressRequired")(billingAddressRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardParameters]
   }
 }

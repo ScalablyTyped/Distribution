@@ -21,8 +21,8 @@ trait CancelKeyDeletionOutput extends OutputTypesUnion {
 object CancelKeyDeletionOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, KeyId: String = null): CancelKeyDeletionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelKeyDeletionOutput]
   }
 }

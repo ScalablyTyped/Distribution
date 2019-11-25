@@ -39,7 +39,7 @@ object Place {
     name: String,
     region: CoordinateRegion
   ): Place = {
-    val __obj = js.Dynamic.literal(coordinate = coordinate, countryCode = countryCode, formattedAddress = formattedAddress, name = name, region = region)
+    val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any], countryCode = countryCode.asInstanceOf[js.Any], formattedAddress = formattedAddress.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Place]
   }

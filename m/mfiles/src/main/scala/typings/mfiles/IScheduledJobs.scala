@@ -12,7 +12,7 @@ trait IScheduledJobs extends js.Object {
 object IScheduledJobs {
   @scala.inline
   def apply(Count: Double, Item: Double => IScheduledJob): IScheduledJobs = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IScheduledJobs]
   }

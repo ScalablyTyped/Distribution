@@ -14,7 +14,7 @@ trait SubscriptionDiagnostics extends js.Object {
 object SubscriptionDiagnostics {
   @scala.inline
   def apply(notificationTracing: NotificationTracing): SubscriptionDiagnostics = {
-    val __obj = js.Dynamic.literal(notificationTracing = notificationTracing)
+    val __obj = js.Dynamic.literal(notificationTracing = notificationTracing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubscriptionDiagnostics]
   }

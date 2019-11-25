@@ -18,9 +18,9 @@ object Options {
     setup: js.ThisFunction1[/* this */ js.Any, /* script */ js.Any, Unit] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

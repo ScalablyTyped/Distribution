@@ -28,7 +28,7 @@ object SlotRenderEndedEvent {
     sourceAgnosticCreativeId: Int | Double = null,
     sourceAgnosticLineItemId: Int | Double = null
   ): SlotRenderEndedEvent = {
-    val __obj = js.Dynamic.literal(isEmpty = isEmpty, serviceName = serviceName, size = size.asInstanceOf[js.Any], slot = slot)
+    val __obj = js.Dynamic.literal(isEmpty = isEmpty.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
     if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
     if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
     if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])

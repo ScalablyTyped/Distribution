@@ -26,7 +26,7 @@ trait CheckCollisionObject extends js.Object {
 object CheckCollisionObject {
   @scala.inline
   def apply(down: Boolean, left: Boolean, right: Boolean, up: Boolean): CheckCollisionObject = {
-    val __obj = js.Dynamic.literal(down = down, left = left, right = right, up = up)
+    val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CheckCollisionObject]
   }

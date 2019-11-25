@@ -12,7 +12,7 @@ object UserPicture {
   @scala.inline
   def apply(url: String = null): UserPicture = {
     val __obj = js.Dynamic.literal()
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPicture]
   }
 }

@@ -25,8 +25,8 @@ object Options {
     normalizeHashtagInPlural: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureLocation)) __obj.updateDynamic("captureLocation")(captureLocation)
-    if (!js.isUndefined(normalizeHashtagInPlural)) __obj.updateDynamic("normalizeHashtagInPlural")(normalizeHashtagInPlural)
+    if (!js.isUndefined(captureLocation)) __obj.updateDynamic("captureLocation")(captureLocation.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeHashtagInPlural)) __obj.updateDynamic("normalizeHashtagInPlural")(normalizeHashtagInPlural.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

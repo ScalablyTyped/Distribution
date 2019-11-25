@@ -28,8 +28,8 @@ object LinkProps {
   ): LinkProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps]

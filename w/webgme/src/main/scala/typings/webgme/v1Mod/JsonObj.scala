@@ -27,7 +27,7 @@ object JsonObj {
     relids: js.Array[RelId],
     root: Anon_Guid
   ): JsonObj = {
-    val __obj = js.Dynamic.literal(bases = bases, containment = containment, metaSheets = metaSheets, nodes = nodes, relids = relids, root = root)
+    val __obj = js.Dynamic.literal(bases = bases.asInstanceOf[js.Any], containment = containment.asInstanceOf[js.Any], metaSheets = metaSheets.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], relids = relids.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JsonObj]
   }

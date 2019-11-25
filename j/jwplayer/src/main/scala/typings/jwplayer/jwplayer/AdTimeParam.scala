@@ -25,7 +25,7 @@ object AdTimeParam {
     sequence: Double,
     tag: String
   ): AdTimeParam = {
-    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], creativetype = creativetype, duration = duration, position = position, sequence = sequence, tag = tag)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], creativetype = creativetype.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AdTimeParam]
   }

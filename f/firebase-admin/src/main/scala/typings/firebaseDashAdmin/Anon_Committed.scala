@@ -13,8 +13,8 @@ trait Anon_Committed extends js.Object {
 object Anon_Committed {
   @scala.inline
   def apply(committed: Boolean, snapshot: DataSnapshot = null): Anon_Committed = {
-    val __obj = js.Dynamic.literal(committed = committed)
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot)
+    val __obj = js.Dynamic.literal(committed = committed.asInstanceOf[js.Any])
+    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Committed]
   }
 }

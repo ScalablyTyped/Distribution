@@ -15,7 +15,7 @@ object PlotStochasticSmoothedLineOptions {
   @scala.inline
   def apply(styles: PlotStochasticSmoothedLineStylesOptions = null): PlotStochasticSmoothedLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotStochasticSmoothedLineOptions]
   }
 }

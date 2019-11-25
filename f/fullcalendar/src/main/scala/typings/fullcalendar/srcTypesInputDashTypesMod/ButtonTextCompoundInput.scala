@@ -31,15 +31,15 @@ object ButtonTextCompoundInput {
     week: String = null
   ): ButtonTextCompoundInput = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (month != null) __obj.updateDynamic("month")(month)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (nextYear != null) __obj.updateDynamic("nextYear")(nextYear)
-    if (prev != null) __obj.updateDynamic("prev")(prev)
-    if (prevYear != null) __obj.updateDynamic("prevYear")(prevYear)
-    if (today != null) __obj.updateDynamic("today")(today)
-    if (week != null) __obj.updateDynamic("week")(week)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (nextYear != null) __obj.updateDynamic("nextYear")(nextYear.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
+    if (prevYear != null) __obj.updateDynamic("prevYear")(prevYear.asInstanceOf[js.Any])
+    if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
+    if (week != null) __obj.updateDynamic("week")(week.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonTextCompoundInput]
   }
 }

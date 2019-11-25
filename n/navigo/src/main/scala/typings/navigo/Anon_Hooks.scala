@@ -17,9 +17,9 @@ trait Anon_Hooks extends js.Object {
 object Anon_Hooks {
   @scala.inline
   def apply(hooks: NavigoHooks, query: String, url: String, name: String = null, params: Params = null): Anon_Hooks = {
-    val __obj = js.Dynamic.literal(hooks = hooks, query = query, url = url)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(hooks = hooks.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hooks]
   }
 }

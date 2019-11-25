@@ -31,10 +31,10 @@ object FileList {
     nextPageToken: String = null
   ): FileList = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (!js.isUndefined(incompleteSearch)) __obj.updateDynamic("incompleteSearch")(incompleteSearch)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (!js.isUndefined(incompleteSearch)) __obj.updateDynamic("incompleteSearch")(incompleteSearch.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileList]
   }
 }

@@ -25,11 +25,11 @@ object Anon_Body {
   ): Anon_Body = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (dark != null) __obj.updateDynamic("dark")(dark)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dark != null) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (light != null) __obj.updateDynamic("light")(light)
+    if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

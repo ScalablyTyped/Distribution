@@ -20,10 +20,10 @@ object Option {
     value: String = null
   ): Option = {
     val __obj = js.Dynamic.literal()
-    if (ask != null) __obj.updateDynamic("ask")(ask)
+    if (ask != null) __obj.updateDynamic("ask")(ask.asInstanceOf[js.Any])
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(js.Any.fromFunction1(autocomplete))
-    if (echo != null) __obj.updateDynamic("echo")(echo)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (echo != null) __obj.updateDynamic("echo")(echo.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

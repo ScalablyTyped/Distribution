@@ -31,7 +31,7 @@ object ScreenshotInformation {
     testId: testId,
     width: pixels
   ): ScreenshotInformation = {
-    val __obj = js.Dynamic.literal(height = height, name = name, path = path, screenshotId = screenshotId, takenAt = takenAt, testId = testId, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], screenshotId = screenshotId.asInstanceOf[js.Any], takenAt = takenAt.asInstanceOf[js.Any], testId = testId.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScreenshotInformation]
   }

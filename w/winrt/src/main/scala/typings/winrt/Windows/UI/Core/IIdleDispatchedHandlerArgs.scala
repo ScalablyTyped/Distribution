@@ -11,7 +11,7 @@ trait IIdleDispatchedHandlerArgs extends js.Object {
 object IIdleDispatchedHandlerArgs {
   @scala.inline
   def apply(isDispatcherIdle: Boolean): IIdleDispatchedHandlerArgs = {
-    val __obj = js.Dynamic.literal(isDispatcherIdle = isDispatcherIdle)
+    val __obj = js.Dynamic.literal(isDispatcherIdle = isDispatcherIdle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IIdleDispatchedHandlerArgs]
   }

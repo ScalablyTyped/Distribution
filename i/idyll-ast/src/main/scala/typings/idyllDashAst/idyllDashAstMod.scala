@@ -21,7 +21,7 @@ object idyllDashAstMod extends js.Object {
     name: String,
     props: Record[
       String, 
-      PropValue | (/* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
+      PropValue | (/* import warning: importer.ImportType#apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
     ],
     children: js.Array[Node]
   ): TreeNode = js.native
@@ -44,7 +44,7 @@ object idyllDashAstMod extends js.Object {
     node: Node,
     properties: Record[
       String, 
-      PropValue | (/* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
+      PropValue | (/* import warning: importer.ImportType#apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
     ]
   ): Node = js.native
   def setProperty(node: Node, key: String, value: PropValue): Node = js.native
@@ -52,7 +52,7 @@ object idyllDashAstMod extends js.Object {
   def setProperty_1(
     node: Node,
     key: String,
-    value: /* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any
   ): Node = js.native
   def walkNodes(ast: Null, func: js.Function1[/* n */ Node, Unit]): Unit = js.native
   def walkNodes(ast: AST, func: js.Function1[/* n */ Node, Unit]): Unit = js.native

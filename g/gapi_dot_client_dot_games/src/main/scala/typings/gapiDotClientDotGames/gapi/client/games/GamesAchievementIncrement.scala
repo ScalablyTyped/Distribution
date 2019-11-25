@@ -17,8 +17,8 @@ object GamesAchievementIncrement {
   @scala.inline
   def apply(kind: String = null, requestId: String = null, steps: Int | Double = null): GamesAchievementIncrement = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamesAchievementIncrement]
   }

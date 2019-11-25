@@ -65,19 +65,19 @@ object ObjectAccessControl {
     selfLink: String = null
   ): ObjectAccessControl = {
     val __obj = js.Dynamic.literal()
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (generation != null) __obj.updateDynamic("generation")(generation)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (projectTeam != null) __obj.updateDynamic("projectTeam")(projectTeam)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (projectTeam != null) __obj.updateDynamic("projectTeam")(projectTeam.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectAccessControl]
   }
 }

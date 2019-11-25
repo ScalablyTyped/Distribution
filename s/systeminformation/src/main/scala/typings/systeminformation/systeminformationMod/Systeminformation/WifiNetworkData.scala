@@ -31,7 +31,7 @@ object WifiNetworkData {
     ssid: String,
     wpaFlags: js.Array[String]
   ): WifiNetworkData = {
-    val __obj = js.Dynamic.literal(bssid = bssid, channel = channel, frequency = frequency, mode = mode, quality = quality, rsnFlags = rsnFlags, security = security, signalLevel = signalLevel, ssid = ssid, wpaFlags = wpaFlags)
+    val __obj = js.Dynamic.literal(bssid = bssid.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], frequency = frequency.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], rsnFlags = rsnFlags.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any], signalLevel = signalLevel.asInstanceOf[js.Any], ssid = ssid.asInstanceOf[js.Any], wpaFlags = wpaFlags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WifiNetworkData]
   }

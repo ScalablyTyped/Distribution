@@ -13,7 +13,7 @@ trait Anon_ContainerClassName extends js.Object {
 object Anon_ContainerClassName {
   @scala.inline
   def apply(containerClassName: String, cropAreaClassName: String, imageClassName: String): Anon_ContainerClassName = {
-    val __obj = js.Dynamic.literal(containerClassName = containerClassName, cropAreaClassName = cropAreaClassName, imageClassName = imageClassName)
+    val __obj = js.Dynamic.literal(containerClassName = containerClassName.asInstanceOf[js.Any], cropAreaClassName = cropAreaClassName.asInstanceOf[js.Any], imageClassName = imageClassName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContainerClassName]
   }

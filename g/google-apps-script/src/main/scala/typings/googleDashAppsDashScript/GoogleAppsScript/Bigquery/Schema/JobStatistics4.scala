@@ -13,8 +13,8 @@ object JobStatistics4 {
   @scala.inline
   def apply(destinationUriFileCounts: js.Array[String] = null, inputBytes: String = null): JobStatistics4 = {
     val __obj = js.Dynamic.literal()
-    if (destinationUriFileCounts != null) __obj.updateDynamic("destinationUriFileCounts")(destinationUriFileCounts)
-    if (inputBytes != null) __obj.updateDynamic("inputBytes")(inputBytes)
+    if (destinationUriFileCounts != null) __obj.updateDynamic("destinationUriFileCounts")(destinationUriFileCounts.asInstanceOf[js.Any])
+    if (inputBytes != null) __obj.updateDynamic("inputBytes")(inputBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobStatistics4]
   }
 }

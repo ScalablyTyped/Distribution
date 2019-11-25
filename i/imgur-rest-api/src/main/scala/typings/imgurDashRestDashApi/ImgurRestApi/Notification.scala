@@ -14,7 +14,7 @@ trait Notification[T] extends js.Object {
 object Notification {
   @scala.inline
   def apply[T](account_id: Double, content: T, id: Double, viewed: Boolean): Notification[T] = {
-    val __obj = js.Dynamic.literal(account_id = account_id, content = content.asInstanceOf[js.Any], id = id, viewed = viewed)
+    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], viewed = viewed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Notification[T]]
   }

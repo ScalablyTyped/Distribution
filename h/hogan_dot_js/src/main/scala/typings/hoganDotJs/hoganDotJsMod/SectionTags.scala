@@ -12,7 +12,7 @@ trait SectionTags extends js.Object {
 object SectionTags {
   @scala.inline
   def apply(c: String, o: String): SectionTags = {
-    val __obj = js.Dynamic.literal(c = c, o = o)
+    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SectionTags]
   }

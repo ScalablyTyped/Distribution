@@ -14,7 +14,7 @@ trait FrameAnimationEvent extends js.Object {
 object FrameAnimationEvent {
   @scala.inline
   def apply(animation: Anon_Frame, frame: Frame, name: String): FrameAnimationEvent = {
-    val __obj = js.Dynamic.literal(animation = animation, frame = frame, name = name)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FrameAnimationEvent]
   }

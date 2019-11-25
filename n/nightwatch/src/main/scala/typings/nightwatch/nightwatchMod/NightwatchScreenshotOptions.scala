@@ -20,10 +20,10 @@ object NightwatchScreenshotOptions {
     path: String = null
   ): NightwatchScreenshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(on_error)) __obj.updateDynamic("on_error")(on_error)
-    if (!js.isUndefined(on_failure)) __obj.updateDynamic("on_failure")(on_failure)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(on_error)) __obj.updateDynamic("on_error")(on_error.asInstanceOf[js.Any])
+    if (!js.isUndefined(on_failure)) __obj.updateDynamic("on_failure")(on_failure.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchScreenshotOptions]
   }
 }

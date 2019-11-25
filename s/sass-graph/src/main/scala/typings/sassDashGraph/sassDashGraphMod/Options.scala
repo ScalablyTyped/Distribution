@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(extensions: js.Array[String] = null, loadPath: js.Array[String] = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (loadPath != null) __obj.updateDynamic("loadPath")(loadPath)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (loadPath != null) __obj.updateDynamic("loadPath")(loadPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

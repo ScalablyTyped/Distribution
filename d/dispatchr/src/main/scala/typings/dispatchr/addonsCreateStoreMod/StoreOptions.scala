@@ -26,12 +26,12 @@ object StoreOptions {
     rehydrate: /* state */ js.Any => Unit = null,
     statics: StringDictionary[js.Any] = null
   ): StoreOptions = {
-    val __obj = js.Dynamic.literal(handlers = handlers, storeName = storeName)
+    val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any], storeName = storeName.asInstanceOf[js.Any])
     if (dehydrate != null) __obj.updateDynamic("dehydrate")(js.Any.fromFunction0(dehydrate))
     if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (rehydrate != null) __obj.updateDynamic("rehydrate")(js.Any.fromFunction1(rehydrate))
-    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreOptions]
   }
 }

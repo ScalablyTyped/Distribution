@@ -28,14 +28,14 @@ object Anon_BackgroundColorBorderColorDisabledTextColor {
     textColor: String = null
   ): Anon_BackgroundColorBorderColorDisabledTextColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (disabledTextColor != null) __obj.updateDynamic("disabledTextColor")(disabledTextColor)
-    if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor)
-    if (floatingLabelColor != null) __obj.updateDynamic("floatingLabelColor")(floatingLabelColor)
-    if (focusColor != null) __obj.updateDynamic("focusColor")(focusColor)
-    if (hintColor != null) __obj.updateDynamic("hintColor")(hintColor)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (disabledTextColor != null) __obj.updateDynamic("disabledTextColor")(disabledTextColor.asInstanceOf[js.Any])
+    if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor.asInstanceOf[js.Any])
+    if (floatingLabelColor != null) __obj.updateDynamic("floatingLabelColor")(floatingLabelColor.asInstanceOf[js.Any])
+    if (focusColor != null) __obj.updateDynamic("focusColor")(focusColor.asInstanceOf[js.Any])
+    if (hintColor != null) __obj.updateDynamic("hintColor")(hintColor.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorBorderColorDisabledTextColor]
   }
 }

@@ -20,7 +20,7 @@ trait ActivityListEventsForOrgParams extends js.Object {
 object ActivityListEventsForOrgParams {
   @scala.inline
   def apply(org: String, username: String, page: Int | Double = null, per_page: Int | Double = null): ActivityListEventsForOrgParams = {
-    val __obj = js.Dynamic.literal(org = org, username = username)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityListEventsForOrgParams]

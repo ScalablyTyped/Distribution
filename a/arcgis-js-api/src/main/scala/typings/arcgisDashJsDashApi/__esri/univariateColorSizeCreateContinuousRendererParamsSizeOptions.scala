@@ -30,9 +30,9 @@ object univariateColorSizeCreateContinuousRendererParamsSizeOptions {
     legendOptions: univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions = null,
     sizeScheme: SizeScheme = null
   ): univariateColorSizeCreateContinuousRendererParamsSizeOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (sizeScheme != null) __obj.updateDynamic("sizeScheme")(sizeScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSizeOptions]
   }
 }

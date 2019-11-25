@@ -14,7 +14,7 @@ object NavigationPopActionPayload {
   @scala.inline
   def apply(immediate: js.UndefOr[Boolean] = js.undefined, n: Int | Double = null): NavigationPopActionPayload = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
     if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationPopActionPayload]
   }

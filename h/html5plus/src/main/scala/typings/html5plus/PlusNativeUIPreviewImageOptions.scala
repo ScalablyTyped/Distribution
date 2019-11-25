@@ -57,10 +57,10 @@ object PlusNativeUIPreviewImageOptions {
     loop: js.UndefOr[Boolean] = js.undefined
   ): PlusNativeUIPreviewImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (indicator != null) __obj.updateDynamic("indicator")(indicator)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIPreviewImageOptions]
   }
 }

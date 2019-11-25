@@ -29,13 +29,13 @@ object PartialPickerStyle {
     title: TextStyle = null
   ): PartialPickerStyle = {
     val __obj = js.Dynamic.literal()
-    if (actionText != null) __obj.updateDynamic("actionText")(actionText)
-    if (dismissText != null) __obj.updateDynamic("dismissText")(dismissText)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (headerItem != null) __obj.updateDynamic("headerItem")(headerItem)
-    if (modal != null) __obj.updateDynamic("modal")(modal)
-    if (okText != null) __obj.updateDynamic("okText")(okText)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (actionText != null) __obj.updateDynamic("actionText")(actionText.asInstanceOf[js.Any])
+    if (dismissText != null) __obj.updateDynamic("dismissText")(dismissText.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (headerItem != null) __obj.updateDynamic("headerItem")(headerItem.asInstanceOf[js.Any])
+    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialPickerStyle]
   }
 }

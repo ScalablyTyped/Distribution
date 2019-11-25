@@ -23,8 +23,8 @@ trait IUsageRecordCreationOptions extends js.Object {
 object IUsageRecordCreationOptions {
   @scala.inline
   def apply(quantity: Double, timestamp: Double, action: IUsageRecordAction = null): IUsageRecordCreationOptions = {
-    val __obj = js.Dynamic.literal(quantity = quantity, timestamp = timestamp)
-    if (action != null) __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUsageRecordCreationOptions]
   }
 }

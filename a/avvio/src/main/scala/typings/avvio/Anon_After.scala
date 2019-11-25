@@ -14,9 +14,9 @@ object Anon_After {
   @scala.inline
   def apply(after: String = null, ready: String = null, use: String = null): Anon_After = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
-    if (use != null) __obj.updateDynamic("use")(use)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_After]
   }
 }

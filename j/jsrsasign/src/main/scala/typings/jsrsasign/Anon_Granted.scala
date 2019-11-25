@@ -23,7 +23,7 @@ object Anon_Granted {
     revocationWarning: Double,
     waiting: Double
   ): Anon_Granted = {
-    val __obj = js.Dynamic.literal(granted = granted, grantedWithMods = grantedWithMods, rejection = rejection, revocationNotification = revocationNotification, revocationWarning = revocationWarning, waiting = waiting)
+    val __obj = js.Dynamic.literal(granted = granted.asInstanceOf[js.Any], grantedWithMods = grantedWithMods.asInstanceOf[js.Any], rejection = rejection.asInstanceOf[js.Any], revocationNotification = revocationNotification.asInstanceOf[js.Any], revocationWarning = revocationWarning.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Granted]
   }

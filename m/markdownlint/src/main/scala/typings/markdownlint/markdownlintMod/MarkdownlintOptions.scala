@@ -26,12 +26,12 @@ object MarkdownlintOptions {
     strings: StringDictionary[String] = null
   ): MarkdownlintOptions = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (frontMatter != null) __obj.updateDynamic("frontMatter")(frontMatter)
-    if (!js.isUndefined(noInlineConfig)) __obj.updateDynamic("noInlineConfig")(noInlineConfig)
+    if (frontMatter != null) __obj.updateDynamic("frontMatter")(frontMatter.asInstanceOf[js.Any])
+    if (!js.isUndefined(noInlineConfig)) __obj.updateDynamic("noInlineConfig")(noInlineConfig.asInstanceOf[js.Any])
     if (resultVersion != null) __obj.updateDynamic("resultVersion")(resultVersion.asInstanceOf[js.Any])
-    if (strings != null) __obj.updateDynamic("strings")(strings)
+    if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkdownlintOptions]
   }
 }

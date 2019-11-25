@@ -13,7 +13,7 @@ object RegistryCredential {
   @scala.inline
   def apply(publicKeyCertificate: PublicKeyCertificate = null): RegistryCredential = {
     val __obj = js.Dynamic.literal()
-    if (publicKeyCertificate != null) __obj.updateDynamic("publicKeyCertificate")(publicKeyCertificate)
+    if (publicKeyCertificate != null) __obj.updateDynamic("publicKeyCertificate")(publicKeyCertificate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistryCredential]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_EndIx extends js.Object {
 object Anon_EndIx {
   @scala.inline
   def apply(endIx: Double, startIx: Double, insertIx: Int | Double = null): Anon_EndIx = {
-    val __obj = js.Dynamic.literal(endIx = endIx, startIx = startIx)
+    val __obj = js.Dynamic.literal(endIx = endIx.asInstanceOf[js.Any], startIx = startIx.asInstanceOf[js.Any])
     if (insertIx != null) __obj.updateDynamic("insertIx")(insertIx.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EndIx]
   }

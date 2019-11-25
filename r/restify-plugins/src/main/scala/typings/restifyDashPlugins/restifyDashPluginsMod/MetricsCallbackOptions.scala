@@ -39,7 +39,7 @@ object MetricsCallbackOptions {
     statusCode: Double,
     connectionState: TMetricsCallback = null
   ): MetricsCallbackOptions = {
-    val __obj = js.Dynamic.literal(latency = latency, method = method, path = path, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(latency = latency.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     if (connectionState != null) __obj.updateDynamic("connectionState")(connectionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsCallbackOptions]
   }

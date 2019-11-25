@@ -23,11 +23,11 @@ object CardActionsProps {
     style: CSSProperties = null
   ): CardActionsProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
-    if (!js.isUndefined(showExpandableButton)) __obj.updateDynamic("showExpandableButton")(showExpandableButton)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
+    if (!js.isUndefined(showExpandableButton)) __obj.updateDynamic("showExpandableButton")(showExpandableButton.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardActionsProps]
   }
 }

@@ -13,8 +13,8 @@ trait Anon_OwnerIdStyle extends js.Object {
 object Anon_OwnerIdStyle {
   @scala.inline
   def apply(style: Style, ownerId: String = null): Anon_OwnerIdStyle = {
-    val __obj = js.Dynamic.literal(style = style)
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OwnerIdStyle]
   }
 }

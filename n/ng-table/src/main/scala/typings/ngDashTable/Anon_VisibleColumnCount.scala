@@ -11,7 +11,7 @@ trait Anon_VisibleColumnCount extends js.Object {
 object Anon_VisibleColumnCount {
   @scala.inline
   def apply(visibleColumnCount: Double): Anon_VisibleColumnCount = {
-    val __obj = js.Dynamic.literal(visibleColumnCount = visibleColumnCount)
+    val __obj = js.Dynamic.literal(visibleColumnCount = visibleColumnCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_VisibleColumnCount]
   }

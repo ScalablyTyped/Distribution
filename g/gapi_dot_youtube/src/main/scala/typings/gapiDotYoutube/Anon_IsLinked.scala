@@ -18,7 +18,7 @@ trait Anon_IsLinked extends js.Object {
 object Anon_IsLinked {
   @scala.inline
   def apply(isLinked: Boolean, privacyStatus: String): Anon_IsLinked = {
-    val __obj = js.Dynamic.literal(isLinked = isLinked, privacyStatus = privacyStatus)
+    val __obj = js.Dynamic.literal(isLinked = isLinked.asInstanceOf[js.Any], privacyStatus = privacyStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsLinked]
   }

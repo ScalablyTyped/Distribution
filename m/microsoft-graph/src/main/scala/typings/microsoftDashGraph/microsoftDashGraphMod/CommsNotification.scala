@@ -13,8 +13,8 @@ object CommsNotification {
   @scala.inline
   def apply(changeType: ChangeType = null, resourceUrl: String = null): CommsNotification = {
     val __obj = js.Dynamic.literal()
-    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
-    if (resourceUrl != null) __obj.updateDynamic("resourceUrl")(resourceUrl)
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
+    if (resourceUrl != null) __obj.updateDynamic("resourceUrl")(resourceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommsNotification]
   }
 }

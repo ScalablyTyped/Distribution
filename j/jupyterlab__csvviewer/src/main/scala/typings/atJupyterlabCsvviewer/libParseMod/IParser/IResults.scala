@@ -34,7 +34,7 @@ trait IResults extends js.Object {
 object IResults {
   @scala.inline
   def apply(ncols: Double, nrows: Double, offsets: js.Array[Double]): IResults = {
-    val __obj = js.Dynamic.literal(ncols = ncols, nrows = nrows, offsets = offsets)
+    val __obj = js.Dynamic.literal(ncols = ncols.asInstanceOf[js.Any], nrows = nrows.asInstanceOf[js.Any], offsets = offsets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResults]
   }

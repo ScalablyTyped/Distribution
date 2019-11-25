@@ -22,8 +22,8 @@ object ChampionListDto {
     `type`: String,
     version: String
   ): ChampionListDto = {
-    val __obj = js.Dynamic.literal(data = data, format = format, keys = keys, version = version)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChampionListDto]
   }
 }

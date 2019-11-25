@@ -45,15 +45,15 @@ object PlayerLeaderboardScore {
     writeTimestamp: String = null
   ): PlayerLeaderboardScore = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (leaderboard_id != null) __obj.updateDynamic("leaderboard_id")(leaderboard_id)
-    if (publicRank != null) __obj.updateDynamic("publicRank")(publicRank)
-    if (scoreString != null) __obj.updateDynamic("scoreString")(scoreString)
-    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag)
-    if (scoreValue != null) __obj.updateDynamic("scoreValue")(scoreValue)
-    if (socialRank != null) __obj.updateDynamic("socialRank")(socialRank)
-    if (timeSpan != null) __obj.updateDynamic("timeSpan")(timeSpan)
-    if (writeTimestamp != null) __obj.updateDynamic("writeTimestamp")(writeTimestamp)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (leaderboard_id != null) __obj.updateDynamic("leaderboard_id")(leaderboard_id.asInstanceOf[js.Any])
+    if (publicRank != null) __obj.updateDynamic("publicRank")(publicRank.asInstanceOf[js.Any])
+    if (scoreString != null) __obj.updateDynamic("scoreString")(scoreString.asInstanceOf[js.Any])
+    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag.asInstanceOf[js.Any])
+    if (scoreValue != null) __obj.updateDynamic("scoreValue")(scoreValue.asInstanceOf[js.Any])
+    if (socialRank != null) __obj.updateDynamic("socialRank")(socialRank.asInstanceOf[js.Any])
+    if (timeSpan != null) __obj.updateDynamic("timeSpan")(timeSpan.asInstanceOf[js.Any])
+    if (writeTimestamp != null) __obj.updateDynamic("writeTimestamp")(writeTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerLeaderboardScore]
   }
 }

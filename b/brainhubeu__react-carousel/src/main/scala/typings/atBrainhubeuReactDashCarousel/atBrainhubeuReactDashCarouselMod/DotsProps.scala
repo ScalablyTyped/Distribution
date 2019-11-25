@@ -22,7 +22,7 @@ object DotsProps {
     val __obj = js.Dynamic.literal()
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotsProps]
   }

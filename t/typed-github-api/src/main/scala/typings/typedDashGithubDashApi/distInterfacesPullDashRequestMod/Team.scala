@@ -18,7 +18,7 @@ trait Team extends js.Object {
 object Team {
   @scala.inline
   def apply(description: String, id: Double, name: String, permission: admin, privacy: closed, slug: String): Team = {
-    val __obj = js.Dynamic.literal(description = description, id = id, name = name, permission = permission, privacy = privacy, slug = slug)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permission = permission.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Team]
   }

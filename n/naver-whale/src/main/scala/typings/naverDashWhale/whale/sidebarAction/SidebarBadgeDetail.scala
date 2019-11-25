@@ -12,7 +12,7 @@ trait SidebarBadgeDetail extends js.Object {
 object SidebarBadgeDetail {
   @scala.inline
   def apply(text: String): SidebarBadgeDetail = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SidebarBadgeDetail]
   }

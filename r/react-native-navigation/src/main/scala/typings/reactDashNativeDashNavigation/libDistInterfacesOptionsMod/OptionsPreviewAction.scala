@@ -34,8 +34,8 @@ object OptionsPreviewAction {
     actions: js.Array[OptionsPreviewAction] = null,
     style: default | selected | destructive = null
   ): OptionsPreviewAction = {
-    val __obj = js.Dynamic.literal(id = id, title = title)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsPreviewAction]
   }

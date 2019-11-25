@@ -19,8 +19,8 @@ object SearchReadGroupSetsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, readGroupSets: js.Array[ReadGroupSet] = null): SearchReadGroupSetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (readGroupSets != null) __obj.updateDynamic("readGroupSets")(readGroupSets)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (readGroupSets != null) __obj.updateDynamic("readGroupSets")(readGroupSets.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchReadGroupSetsResponse]
   }
 }

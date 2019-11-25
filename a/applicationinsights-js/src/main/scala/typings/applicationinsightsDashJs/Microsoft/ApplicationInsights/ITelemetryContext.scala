@@ -70,7 +70,7 @@ object ITelemetryContext {
     track: IEnvelope => js.Any,
     user: IUser
   ): ITelemetryContext = {
-    val __obj = js.Dynamic.literal(addTelemetryInitializer = js.Any.fromFunction1(addTelemetryInitializer), application = application, device = device, internal = internal, location = location, operation = operation, sample = sample, session = session, track = js.Any.fromFunction1(track), user = user)
+    val __obj = js.Dynamic.literal(addTelemetryInitializer = js.Any.fromFunction1(addTelemetryInitializer), application = application.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], sample = sample.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], track = js.Any.fromFunction1(track), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITelemetryContext]
   }

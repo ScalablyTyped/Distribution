@@ -23,7 +23,7 @@ object ReaderConnection {
     name: String,
     pageInfo: ReaderLinkedField
   ): ReaderConnection = {
-    val __obj = js.Dynamic.literal(args = args, edges = edges, kind = kind, label = label, name = name, pageInfo = pageInfo)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pageInfo = pageInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReaderConnection]
   }

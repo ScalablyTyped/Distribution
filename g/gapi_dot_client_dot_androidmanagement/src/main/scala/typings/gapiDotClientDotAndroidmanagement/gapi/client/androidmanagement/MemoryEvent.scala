@@ -17,9 +17,9 @@ object MemoryEvent {
   @scala.inline
   def apply(byteCount: String = null, createTime: String = null, eventType: String = null): MemoryEvent = {
     val __obj = js.Dynamic.literal()
-    if (byteCount != null) __obj.updateDynamic("byteCount")(byteCount)
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType)
+    if (byteCount != null) __obj.updateDynamic("byteCount")(byteCount.asInstanceOf[js.Any])
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoryEvent]
   }
 }

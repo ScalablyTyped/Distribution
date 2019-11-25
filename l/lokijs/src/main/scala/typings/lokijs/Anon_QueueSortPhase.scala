@@ -12,7 +12,7 @@ object Anon_QueueSortPhase {
   @scala.inline
   def apply(queueSortPhase: js.UndefOr[Boolean] = js.undefined): Anon_QueueSortPhase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(queueSortPhase)) __obj.updateDynamic("queueSortPhase")(queueSortPhase)
+    if (!js.isUndefined(queueSortPhase)) __obj.updateDynamic("queueSortPhase")(queueSortPhase.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_QueueSortPhase]
   }
 }

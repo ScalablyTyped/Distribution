@@ -17,7 +17,7 @@ trait IMysqlData extends js.Object {
 object IMysqlData {
   @scala.inline
   def apply(callbackArgs: IArguments, duration: Double, err: Error, query: Anon_Connection): IMysqlData = {
-    val __obj = js.Dynamic.literal(callbackArgs = callbackArgs, duration = duration, err = err, query = query)
+    val __obj = js.Dynamic.literal(callbackArgs = callbackArgs.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMysqlData]
   }

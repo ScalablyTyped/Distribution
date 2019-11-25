@@ -24,11 +24,11 @@ object GridProps {
     noSpacing: js.UndefOr[Boolean] = js.undefined
   ): GridProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    js.Dynamic.global.Object.assign(__obj, ShadowedComponent)
-    if (!js.isUndefined(noSpacing)) __obj.updateDynamic("noSpacing")(noSpacing)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (CustomRenderedComponent != null) js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
+    if (ShadowedComponent != null) js.Dynamic.global.Object.assign(__obj, ShadowedComponent)
+    if (!js.isUndefined(noSpacing)) __obj.updateDynamic("noSpacing")(noSpacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]
   }
 }

@@ -26,12 +26,12 @@ object GenerateKeyPairOptions {
     workers: Int | Double = null
   ): GenerateKeyPairOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (bits != null) __obj.updateDynamic("bits")(bits.asInstanceOf[js.Any])
     if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    if (prng != null) __obj.updateDynamic("prng")(prng)
+    if (prng != null) __obj.updateDynamic("prng")(prng.asInstanceOf[js.Any])
     if (workLoad != null) __obj.updateDynamic("workLoad")(workLoad.asInstanceOf[js.Any])
-    if (workerScript != null) __obj.updateDynamic("workerScript")(workerScript)
+    if (workerScript != null) __obj.updateDynamic("workerScript")(workerScript.asInstanceOf[js.Any])
     if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateKeyPairOptions]
   }

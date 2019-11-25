@@ -38,11 +38,11 @@ object AutoCloseTags {
     whenClosing: js.UndefOr[Boolean] = js.undefined,
     whenOpening: js.UndefOr[Boolean] = js.undefined
   ): AutoCloseTags = {
-    val __obj = js.Dynamic.literal(emptyTags = emptyTags)
-    if (dontCloseTags != null) __obj.updateDynamic("dontCloseTags")(dontCloseTags)
-    if (indentTags != null) __obj.updateDynamic("indentTags")(indentTags)
-    if (!js.isUndefined(whenClosing)) __obj.updateDynamic("whenClosing")(whenClosing)
-    if (!js.isUndefined(whenOpening)) __obj.updateDynamic("whenOpening")(whenOpening)
+    val __obj = js.Dynamic.literal(emptyTags = emptyTags.asInstanceOf[js.Any])
+    if (dontCloseTags != null) __obj.updateDynamic("dontCloseTags")(dontCloseTags.asInstanceOf[js.Any])
+    if (indentTags != null) __obj.updateDynamic("indentTags")(indentTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(whenClosing)) __obj.updateDynamic("whenClosing")(whenClosing.asInstanceOf[js.Any])
+    if (!js.isUndefined(whenOpening)) __obj.updateDynamic("whenOpening")(whenOpening.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCloseTags]
   }
 }

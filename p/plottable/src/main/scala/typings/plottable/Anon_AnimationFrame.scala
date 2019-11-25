@@ -16,7 +16,7 @@ trait Anon_AnimationFrame extends js.Object {
 object Anon_AnimationFrame {
   @scala.inline
   def apply(animationFrame: animationFrame, immediate: immediate, timeout: timeout): Anon_AnimationFrame = {
-    val __obj = js.Dynamic.literal(animationFrame = animationFrame, immediate = immediate, timeout = timeout)
+    val __obj = js.Dynamic.literal(animationFrame = animationFrame.asInstanceOf[js.Any], immediate = immediate.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AnimationFrame]
   }

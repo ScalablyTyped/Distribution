@@ -44,7 +44,7 @@ package object reactDashReduxMod {
   type MapStateToPropsParam[TStateProps, TOwnProps, State] = js.UndefOr[
     (MapStateToPropsFactory[TStateProps, TOwnProps, State]) | (MapStateToProps[TStateProps, TOwnProps, State]) | Null
   ]
-  type Matching[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Matching[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
     */ typings.reactDashRedux.reactDashReduxStrings.Matching with js.Any
   type MergeProps[TStateProps, TDispatchProps, TOwnProps, TMergedProps] = js.Function3[
@@ -104,7 +104,7 @@ package object reactDashReduxMod {
     HandleThunkActionCreator[js.Any], 
     HandleThunkActionCreator[js.Any]
   ])
-  type ResolveThunks[TDispatchProps] = TDispatchProps | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  type ResolveThunks[TDispatchProps] = TDispatchProps | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ C in keyof TDispatchProps ]: react-redux.react-redux.HandleThunkActionCreator<TDispatchProps[C]>}
     */ typings.reactDashRedux.reactDashReduxStrings.ResolveThunks with TDispatchProps)
   type Selector[S, TProps, TOwnProps] = (js.Function2[/* state */ S, /* ownProps */ TOwnProps, TProps]) | (js.Function1[/* state */ S, TProps])
@@ -113,7 +113,7 @@ package object reactDashReduxMod {
     /* factoryOptions */ TFactoryOptions, 
     Selector[S, TProps, TOwnProps]
   ]
-  type Shared[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Shared[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
     */ typings.reactDashRedux.reactDashReduxStrings.Shared with js.Any
   type TypedUseSelectorHook[TState] = js.Function2[

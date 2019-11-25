@@ -22,10 +22,10 @@ object ReturnStatement {
     range: js.Tuple2[Double, Double] = null
   ): ReturnStatement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnStatement]
   }
 }

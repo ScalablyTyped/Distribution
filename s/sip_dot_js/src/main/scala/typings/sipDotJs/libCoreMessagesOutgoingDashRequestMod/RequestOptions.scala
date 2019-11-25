@@ -16,8 +16,8 @@ object RequestOptions {
   @scala.inline
   def apply(body: Body = null, extraHeaders: js.Array[String] = null): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

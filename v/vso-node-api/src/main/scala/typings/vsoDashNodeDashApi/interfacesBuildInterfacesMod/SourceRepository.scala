@@ -44,7 +44,7 @@ object SourceRepository {
     sourceProviderName: String,
     url: String
   ): SourceRepository = {
-    val __obj = js.Dynamic.literal(defaultBranch = defaultBranch, fullName = fullName, id = id, name = name, properties = properties, sourceProviderName = sourceProviderName, url = url)
+    val __obj = js.Dynamic.literal(defaultBranch = defaultBranch.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], sourceProviderName = sourceProviderName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceRepository]
   }

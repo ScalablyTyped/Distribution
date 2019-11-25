@@ -37,11 +37,11 @@ object MatchBrackets {
     strict: js.UndefOr[Boolean] = js.undefined
   ): MatchBrackets = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(afterCursor)) __obj.updateDynamic("afterCursor")(afterCursor)
+    if (!js.isUndefined(afterCursor)) __obj.updateDynamic("afterCursor")(afterCursor.asInstanceOf[js.Any])
     if (maxHighlightLineLength != null) __obj.updateDynamic("maxHighlightLineLength")(maxHighlightLineLength.asInstanceOf[js.Any])
     if (maxScanLineLength != null) __obj.updateDynamic("maxScanLineLength")(maxScanLineLength.asInstanceOf[js.Any])
     if (maxScanLines != null) __obj.updateDynamic("maxScanLines")(maxScanLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchBrackets]
   }
 }

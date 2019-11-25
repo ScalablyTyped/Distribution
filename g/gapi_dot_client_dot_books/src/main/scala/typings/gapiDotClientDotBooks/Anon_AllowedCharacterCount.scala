@@ -22,7 +22,7 @@ object Anon_AllowedCharacterCount {
   ): Anon_AllowedCharacterCount = {
     val __obj = js.Dynamic.literal()
     if (allowedCharacterCount != null) __obj.updateDynamic("allowedCharacterCount")(allowedCharacterCount.asInstanceOf[js.Any])
-    if (limitType != null) __obj.updateDynamic("limitType")(limitType)
+    if (limitType != null) __obj.updateDynamic("limitType")(limitType.asInstanceOf[js.Any])
     if (remainingCharacterCount != null) __obj.updateDynamic("remainingCharacterCount")(remainingCharacterCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowedCharacterCount]
   }

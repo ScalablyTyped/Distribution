@@ -20,10 +20,10 @@ object GoogleCloudDialogflowV2IntentTrainingPhrasePart {
     userDefined: js.UndefOr[Boolean] = js.undefined
   ): GoogleCloudDialogflowV2IntentTrainingPhrasePart = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (entityType != null) __obj.updateDynamic("entityType")(entityType)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (!js.isUndefined(userDefined)) __obj.updateDynamic("userDefined")(userDefined)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(userDefined)) __obj.updateDynamic("userDefined")(userDefined.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentTrainingPhrasePart]
   }
 }

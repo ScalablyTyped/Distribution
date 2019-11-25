@@ -11,7 +11,7 @@ trait ReposListTopicsResponse extends js.Object {
 object ReposListTopicsResponse {
   @scala.inline
   def apply(names: js.Array[String]): ReposListTopicsResponse = {
-    val __obj = js.Dynamic.literal(names = names)
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposListTopicsResponse]
   }

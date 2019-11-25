@@ -13,7 +13,7 @@ trait ICustomControlOption extends js.Object {
 object ICustomControlOption {
   @scala.inline
   def apply(label: String, value: String): ICustomControlOption = {
-    val __obj = js.Dynamic.literal(label = label, value = value)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICustomControlOption]
   }

@@ -24,9 +24,9 @@ object HotspotOptions {
     val __obj = js.Dynamic.literal()
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (offsets != null) __obj.updateDynamic("offsets")(offsets)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (userData != null) __obj.updateDynamic("userData")(userData)
+    if (offsets != null) __obj.updateDynamic("offsets")(offsets.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotspotOptions]
   }
 }

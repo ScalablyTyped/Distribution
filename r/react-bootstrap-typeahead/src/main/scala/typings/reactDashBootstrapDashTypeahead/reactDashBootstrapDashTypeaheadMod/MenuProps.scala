@@ -28,13 +28,13 @@ object MenuProps {
     style: CSSProperties = null,
     text: String = null
   ): MenuProps = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (emptyLabel != null) __obj.updateDynamic("emptyLabel")(emptyLabel)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (emptyLabel != null) __obj.updateDynamic("emptyLabel")(emptyLabel.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
 }

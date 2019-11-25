@@ -13,7 +13,7 @@ trait Anon_Curr extends js.Object {
 object Anon_Curr {
   @scala.inline
   def apply(curr: Stats, prev: Stats): Anon_Curr = {
-    val __obj = js.Dynamic.literal(curr = curr, prev = prev)
+    val __obj = js.Dynamic.literal(curr = curr.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Curr]
   }

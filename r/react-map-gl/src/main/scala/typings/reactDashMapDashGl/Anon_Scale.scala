@@ -12,8 +12,8 @@ trait Anon_Scale extends js.Object {
 object Anon_Scale {
   @scala.inline
   def apply(scale: Double, startPos: js.Tuple2[Double, Double] = null): Anon_Scale = {
-    val __obj = js.Dynamic.literal(scale = scale)
-    if (startPos != null) __obj.updateDynamic("startPos")(startPos)
+    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
+    if (startPos != null) __obj.updateDynamic("startPos")(startPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Scale]
   }
 }

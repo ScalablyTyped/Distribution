@@ -6,7 +6,6 @@ import typings.leaflet.leafletMod.Circle
 import typings.leaflet.leafletMod.CircleMarker
 import typings.leaflet.leafletMod.LeafletEvent
 import typings.leaflet.leafletMod.Marker
-import typings.leaflet.leafletMod.Polygon
 import typings.leaflet.leafletMod.Polyline
 import typings.leaflet.leafletMod.Rectangle
 import scala.scalajs.js
@@ -22,21 +21,21 @@ trait Created extends LeafletEvent {
     * Layer that was just created.
     */
   @JSName("layer")
-  var layer_Created: Circle[_] | CircleMarker[_] | Marker[_] | Polygon[_] | (Polyline[LineString | MultiLineString, _]) | Rectangle[_]
+  var layer_Created: Circle[_] | CircleMarker[_] | Marker[_] | typings.leaflet.leafletMod.Polygon[_] | (Polyline[LineString | MultiLineString, _]) | Rectangle[_]
 }
 
 object Created {
   @scala.inline
   def apply(
-    layer: Circle[_] | CircleMarker[_] | Marker[_] | Polygon[_] | (Polyline[LineString | MultiLineString, _]) | Rectangle[_],
+    layer: Circle[_] | CircleMarker[_] | Marker[_] | typings.leaflet.leafletMod.Polygon[_] | (Polyline[LineString | MultiLineString, _]) | Rectangle[_],
     layerType: String,
     propagatedFrom: js.Any,
     sourceTarget: js.Any,
     target: js.Any,
     `type`: String
   ): Created = {
-    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layerType = layerType, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layerType = layerType.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Created]
   }
 }

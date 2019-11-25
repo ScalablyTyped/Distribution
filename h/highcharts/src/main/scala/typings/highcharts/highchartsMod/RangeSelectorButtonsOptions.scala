@@ -58,13 +58,13 @@ object RangeSelectorButtonsOptions {
   ): RangeSelectorButtonsOptions = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (offsetMax != null) __obj.updateDynamic("offsetMax")(offsetMax.asInstanceOf[js.Any])
     if (offsetMin != null) __obj.updateDynamic("offsetMin")(offsetMin.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDataGrouping)) __obj.updateDynamic("preserveDataGrouping")(preserveDataGrouping)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(preserveDataGrouping)) __obj.updateDynamic("preserveDataGrouping")(preserveDataGrouping.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectorButtonsOptions]
   }
 }

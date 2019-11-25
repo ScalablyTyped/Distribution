@@ -14,7 +14,7 @@ trait IAdditionalFolder extends js.Object {
 object IAdditionalFolder {
   @scala.inline
   def apply(Clone: () => IAdditionalFolder, Folder: String, Impersonation: IImpersonation, LimitInMB: Double): IAdditionalFolder = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Folder = Folder, Impersonation = Impersonation, LimitInMB = LimitInMB)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Folder = Folder.asInstanceOf[js.Any], Impersonation = Impersonation.asInstanceOf[js.Any], LimitInMB = LimitInMB.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAdditionalFolder]
   }

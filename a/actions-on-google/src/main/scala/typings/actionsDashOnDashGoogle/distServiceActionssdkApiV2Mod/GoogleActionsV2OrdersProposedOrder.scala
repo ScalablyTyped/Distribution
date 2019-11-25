@@ -52,13 +52,13 @@ object GoogleActionsV2OrdersProposedOrder {
     totalPrice: GoogleActionsV2OrdersPrice = null
   ): GoogleActionsV2OrdersProposedOrder = {
     val __obj = js.Dynamic.literal()
-    if (cart != null) __obj.updateDynamic("cart")(cart)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (otherItems != null) __obj.updateDynamic("otherItems")(otherItems)
-    if (termsOfServiceUrl != null) __obj.updateDynamic("termsOfServiceUrl")(termsOfServiceUrl)
-    if (totalPrice != null) __obj.updateDynamic("totalPrice")(totalPrice)
+    if (cart != null) __obj.updateDynamic("cart")(cart.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (otherItems != null) __obj.updateDynamic("otherItems")(otherItems.asInstanceOf[js.Any])
+    if (termsOfServiceUrl != null) __obj.updateDynamic("termsOfServiceUrl")(termsOfServiceUrl.asInstanceOf[js.Any])
+    if (totalPrice != null) __obj.updateDynamic("totalPrice")(totalPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersProposedOrder]
   }
 }

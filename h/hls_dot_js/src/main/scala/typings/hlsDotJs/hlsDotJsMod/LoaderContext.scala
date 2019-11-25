@@ -52,9 +52,9 @@ object LoaderContext {
     rangeEnd: Int | Double = null,
     rangeStart: Int | Double = null
   ): LoaderContext = {
-    val __obj = js.Dynamic.literal(frag = frag, level = level, responseType = responseType, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(progressData)) __obj.updateDynamic("progressData")(progressData)
+    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressData)) __obj.updateDynamic("progressData")(progressData.asInstanceOf[js.Any])
     if (rangeEnd != null) __obj.updateDynamic("rangeEnd")(rangeEnd.asInstanceOf[js.Any])
     if (rangeStart != null) __obj.updateDynamic("rangeStart")(rangeStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderContext]

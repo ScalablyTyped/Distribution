@@ -36,7 +36,7 @@ object GitBranchStats {
     isBaseVersion: Boolean,
     name: String
   ): GitBranchStats = {
-    val __obj = js.Dynamic.literal(aheadCount = aheadCount, behindCount = behindCount, commit = commit, isBaseVersion = isBaseVersion, name = name)
+    val __obj = js.Dynamic.literal(aheadCount = aheadCount.asInstanceOf[js.Any], behindCount = behindCount.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isBaseVersion = isBaseVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitBranchStats]
   }

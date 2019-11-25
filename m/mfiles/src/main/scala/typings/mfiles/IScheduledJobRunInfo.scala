@@ -29,7 +29,7 @@ object IScheduledJobRunInfo {
     ScheduledJobOutputInfo: IScheduledJobOutputInfo,
     StepCompletionPercent: Double
   ): IScheduledJobRunInfo = {
-    val __obj = js.Dynamic.literal(Cancelled = Cancelled, CurrentStep = CurrentStep, LastRun = LastRun, LastRunErrors = LastRunErrors, LastRunSucceeded = LastRunSucceeded, NextRun = NextRun, Running = Running, ScheduledJobOutputInfo = ScheduledJobOutputInfo, StepCompletionPercent = StepCompletionPercent)
+    val __obj = js.Dynamic.literal(Cancelled = Cancelled.asInstanceOf[js.Any], CurrentStep = CurrentStep.asInstanceOf[js.Any], LastRun = LastRun.asInstanceOf[js.Any], LastRunErrors = LastRunErrors.asInstanceOf[js.Any], LastRunSucceeded = LastRunSucceeded.asInstanceOf[js.Any], NextRun = NextRun.asInstanceOf[js.Any], Running = Running.asInstanceOf[js.Any], ScheduledJobOutputInfo = ScheduledJobOutputInfo.asInstanceOf[js.Any], StepCompletionPercent = StepCompletionPercent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IScheduledJobRunInfo]
   }

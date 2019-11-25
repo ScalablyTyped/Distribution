@@ -52,12 +52,12 @@ object LiftoffEnv {
     modulePackage: StringDictionary[js.Any] = null,
     modulePath: String = null
   ): LiftoffEnv = {
-    val __obj = js.Dynamic.literal(configNameSearch = configNameSearch, cwd = cwd, require = require)
-    if (configBase != null) __obj.updateDynamic("configBase")(configBase)
-    if (configFiles != null) __obj.updateDynamic("configFiles")(configFiles)
-    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
-    if (modulePackage != null) __obj.updateDynamic("modulePackage")(modulePackage)
-    if (modulePath != null) __obj.updateDynamic("modulePath")(modulePath)
+    val __obj = js.Dynamic.literal(configNameSearch = configNameSearch.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], require = require.asInstanceOf[js.Any])
+    if (configBase != null) __obj.updateDynamic("configBase")(configBase.asInstanceOf[js.Any])
+    if (configFiles != null) __obj.updateDynamic("configFiles")(configFiles.asInstanceOf[js.Any])
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
+    if (modulePackage != null) __obj.updateDynamic("modulePackage")(modulePackage.asInstanceOf[js.Any])
+    if (modulePath != null) __obj.updateDynamic("modulePath")(modulePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiftoffEnv]
   }
 }

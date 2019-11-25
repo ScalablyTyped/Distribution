@@ -25,7 +25,7 @@ object Anon_Md5 {
     sha384: Double,
     sha512: Double
   ): Anon_Md5 = {
-    val __obj = js.Dynamic.literal(md5 = md5, ripemd160 = ripemd160, sha1 = sha1, sha224 = sha224, sha256 = sha256, sha384 = sha384, sha512 = sha512)
+    val __obj = js.Dynamic.literal(md5 = md5.asInstanceOf[js.Any], ripemd160 = ripemd160.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], sha224 = sha224.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], sha384 = sha384.asInstanceOf[js.Any], sha512 = sha512.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Md5]
   }

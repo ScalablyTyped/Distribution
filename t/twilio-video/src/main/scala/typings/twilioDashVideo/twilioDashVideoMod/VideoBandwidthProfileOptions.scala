@@ -23,11 +23,11 @@ object VideoBandwidthProfileOptions {
     renderDimensions: VideoRenderDimensions = null
   ): VideoBandwidthProfileOptions = {
     val __obj = js.Dynamic.literal()
-    if (dominantSpeakerPriority != null) __obj.updateDynamic("dominantSpeakerPriority")(dominantSpeakerPriority)
+    if (dominantSpeakerPriority != null) __obj.updateDynamic("dominantSpeakerPriority")(dominantSpeakerPriority.asInstanceOf[js.Any])
     if (maxSubscriptionBitrate != null) __obj.updateDynamic("maxSubscriptionBitrate")(maxSubscriptionBitrate.asInstanceOf[js.Any])
     if (maxTracks != null) __obj.updateDynamic("maxTracks")(maxTracks.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (renderDimensions != null) __obj.updateDynamic("renderDimensions")(renderDimensions)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (renderDimensions != null) __obj.updateDynamic("renderDimensions")(renderDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoBandwidthProfileOptions]
   }
 }

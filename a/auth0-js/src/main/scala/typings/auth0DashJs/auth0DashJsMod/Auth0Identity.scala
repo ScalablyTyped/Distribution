@@ -14,7 +14,7 @@ trait Auth0Identity extends js.Object {
 object Auth0Identity {
   @scala.inline
   def apply(connection: String, isSocial: Boolean, provider: String, user_id: String): Auth0Identity = {
-    val __obj = js.Dynamic.literal(connection = connection, isSocial = isSocial, provider = provider, user_id = user_id)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSocial = isSocial.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Auth0Identity]
   }

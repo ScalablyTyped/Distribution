@@ -50,11 +50,11 @@ object BlockingResponse {
     responseHeaders: js.Array[HttpHeader] = null
   ): BlockingResponse = {
     val __obj = js.Dynamic.literal()
-    if (authCredentials != null) __obj.updateDynamic("authCredentials")(authCredentials)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    if (authCredentials != null) __obj.updateDynamic("authCredentials")(authCredentials.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockingResponse]
   }
 }

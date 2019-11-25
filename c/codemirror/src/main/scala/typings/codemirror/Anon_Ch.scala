@@ -13,8 +13,8 @@ trait Anon_Ch extends js.Object {
 object Anon_Ch {
   @scala.inline
   def apply(ch: Double, line: Double, hitSide: js.UndefOr[Boolean] = js.undefined): Anon_Ch = {
-    val __obj = js.Dynamic.literal(ch = ch, line = line)
-    if (!js.isUndefined(hitSide)) __obj.updateDynamic("hitSide")(hitSide)
+    val __obj = js.Dynamic.literal(ch = ch.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
+    if (!js.isUndefined(hitSide)) __obj.updateDynamic("hitSide")(hitSide.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ch]
   }
 }

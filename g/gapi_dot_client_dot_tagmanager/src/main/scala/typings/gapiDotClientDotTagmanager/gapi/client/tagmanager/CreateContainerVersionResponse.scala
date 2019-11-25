@@ -27,10 +27,10 @@ object CreateContainerVersionResponse {
     syncStatus: SyncStatus = null
   ): CreateContainerVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compilerError)) __obj.updateDynamic("compilerError")(compilerError)
-    if (containerVersion != null) __obj.updateDynamic("containerVersion")(containerVersion)
-    if (newWorkspacePath != null) __obj.updateDynamic("newWorkspacePath")(newWorkspacePath)
-    if (syncStatus != null) __obj.updateDynamic("syncStatus")(syncStatus)
+    if (!js.isUndefined(compilerError)) __obj.updateDynamic("compilerError")(compilerError.asInstanceOf[js.Any])
+    if (containerVersion != null) __obj.updateDynamic("containerVersion")(containerVersion.asInstanceOf[js.Any])
+    if (newWorkspacePath != null) __obj.updateDynamic("newWorkspacePath")(newWorkspacePath.asInstanceOf[js.Any])
+    if (syncStatus != null) __obj.updateDynamic("syncStatus")(syncStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateContainerVersionResponse]
   }
 }

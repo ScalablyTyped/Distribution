@@ -34,11 +34,11 @@ package object typeDashFestMod {
   type MergeExclusive[FirstType, SecondType] = FirstType | SecondType | ((Without[FirstType, SecondType]) with SecondType) | ((Without[SecondType, FirstType]) with FirstType)
   type Omit[ObjectType, KeysType /* <: String */] = Pick[ObjectType, Exclude[String, KeysType]]
   type Primitive = js.UndefOr[Null | String | Double | Boolean | js.Symbol]
-  type RequireAtLeastOne[ObjectType, KeysType /* <: String */] = (/* import warning: ImportType.apply Failed type conversion: {[ Key in KeysType ]: // …by picking that Key's type and making it required
+  type RequireAtLeastOne[ObjectType, KeysType /* <: String */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in KeysType ]: // …by picking that Key's type and making it required
   std.Required<std.Pick<ObjectType, Key>>}[KeysType] */ js.Any) with (Omit[ObjectType, KeysType])
   type TypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
   // Helper type. Not useful on its own.
-  type Without[FirstType, SecondType] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Without[FirstType, SecondType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ KeyType in std.Exclude<keyof FirstType, keyof SecondType> ]:? never}
     */ typings.typeDashFest.typeDashFestStrings.Without with js.Any
 }

@@ -13,8 +13,8 @@ object Anon_DefinitionScope {
   @scala.inline
   def apply(definition: js.Object = null, scope: js.Any = null): Anon_DefinitionScope = {
     val __obj = js.Dynamic.literal()
-    if (definition != null) __obj.updateDynamic("definition")(definition)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefinitionScope]
   }
 }

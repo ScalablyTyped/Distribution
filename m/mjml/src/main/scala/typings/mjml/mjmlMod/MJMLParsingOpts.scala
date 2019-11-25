@@ -28,11 +28,11 @@ object MJMLParsingOpts {
     validationLevel: strict | soft | skip = null
   ): MJMLParsingOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(beautify)) __obj.updateDynamic("beautify")(beautify)
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts)
-    if (!js.isUndefined(keepComments)) __obj.updateDynamic("keepComments")(keepComments)
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify)
+    if (!js.isUndefined(beautify)) __obj.updateDynamic("beautify")(beautify.asInstanceOf[js.Any])
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
+    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepComments)) __obj.updateDynamic("keepComments")(keepComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
     if (validationLevel != null) __obj.updateDynamic("validationLevel")(validationLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[MJMLParsingOpts]
   }

@@ -15,7 +15,7 @@ trait IParameterizedParsed extends js.Object {
 object IParameterizedParsed {
   @scala.inline
   def apply(binary: Boolean, rowMode: Unit | array, text: String, values: js.Array[_]): IParameterizedParsed = {
-    val __obj = js.Dynamic.literal(binary = binary, rowMode = rowMode.asInstanceOf[js.Any], text = text, values = values)
+    val __obj = js.Dynamic.literal(binary = binary.asInstanceOf[js.Any], rowMode = rowMode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IParameterizedParsed]
   }

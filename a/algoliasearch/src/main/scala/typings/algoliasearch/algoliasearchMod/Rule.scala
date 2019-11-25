@@ -38,9 +38,9 @@ object Rule {
     condition: Anon_Anchoring = null,
     description: String = null
   ): Rule = {
-    val __obj = js.Dynamic.literal(consequence = consequence, objectID = objectID)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(consequence = consequence.asInstanceOf[js.Any], objectID = objectID.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
 }

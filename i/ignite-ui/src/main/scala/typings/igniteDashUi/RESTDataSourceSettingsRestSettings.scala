@@ -51,13 +51,13 @@ object RESTDataSourceSettingsRestSettings {
     update: RESTDataSourceSettingsRestSettingsUpdate = null
   ): RESTDataSourceSettingsRestSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (contentSerializer != null) __obj.updateDynamic("contentSerializer")(contentSerializer)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (!js.isUndefined(encodeRemoveInRequestUri)) __obj.updateDynamic("encodeRemoveInRequestUri")(encodeRemoveInRequestUri)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (contentSerializer != null) __obj.updateDynamic("contentSerializer")(contentSerializer.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeRemoveInRequestUri)) __obj.updateDynamic("encodeRemoveInRequestUri")(encodeRemoveInRequestUri.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[RESTDataSourceSettingsRestSettings]
   }
 }

@@ -11,7 +11,7 @@ trait DistanceOptions extends js.Object {
 object DistanceOptions {
   @scala.inline
   def apply(bufferZoneWidth: Double): DistanceOptions = {
-    val __obj = js.Dynamic.literal(bufferZoneWidth = bufferZoneWidth)
+    val __obj = js.Dynamic.literal(bufferZoneWidth = bufferZoneWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DistanceOptions]
   }

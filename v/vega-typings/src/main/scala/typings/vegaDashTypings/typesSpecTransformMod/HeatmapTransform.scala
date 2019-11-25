@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HeatmapTransform extends Transforms {
+trait HeatmapTransform extends _Transforms {
   var as: js.UndefOr[String | SignalRef] = js.undefined
   var color: js.UndefOr[String | TransformField] = js.undefined
   var field: js.UndefOr[String | TransformField] = js.undefined
@@ -28,7 +28,7 @@ object HeatmapTransform {
     resolve: independent | shared | SignalRef = null
   ): HeatmapTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])

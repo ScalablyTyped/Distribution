@@ -14,8 +14,8 @@ trait Manifest extends js.Object {
 object Manifest {
   @scala.inline
   def apply(server: ServerOptions, register: Anon_Plugins = null): Manifest = {
-    val __obj = js.Dynamic.literal(server = server)
-    if (register != null) __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
+    if (register != null) __obj.updateDynamic("register")(register.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manifest]
   }
 }

@@ -33,11 +33,11 @@ object TestEntry {
     status: TestStatus = null,
     timeout: Int | Double = null
   ): TestEntry = {
-    val __obj = js.Dynamic.literal(asyncError = asyncError, errors = errors.asInstanceOf[js.Any], invocations = invocations, mode = mode.asInstanceOf[js.Any], name = name, parent = parent)
+    val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], invocations = invocations.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction1(fn))
     if (startedAt != null) __obj.updateDynamic("startedAt")(startedAt.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestEntry]
   }

@@ -13,7 +13,7 @@ trait MigrationsStartForOrgResponseRepositoriesItemPermissions extends js.Object
 object MigrationsStartForOrgResponseRepositoriesItemPermissions {
   @scala.inline
   def apply(admin: Boolean, pull: Boolean, push: Boolean): MigrationsStartForOrgResponseRepositoriesItemPermissions = {
-    val __obj = js.Dynamic.literal(admin = admin, pull = pull, push = push)
+    val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MigrationsStartForOrgResponseRepositoriesItemPermissions]
   }

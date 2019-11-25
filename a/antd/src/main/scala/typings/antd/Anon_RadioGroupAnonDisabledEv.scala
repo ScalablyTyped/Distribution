@@ -11,7 +11,7 @@ trait Anon_RadioGroupAnonDisabledEv extends js.Object {
 object Anon_RadioGroupAnonDisabledEv {
   @scala.inline
   def apply(radioGroup: Anon_DisabledEv): Anon_RadioGroupAnonDisabledEv = {
-    val __obj = js.Dynamic.literal(radioGroup = radioGroup)
+    val __obj = js.Dynamic.literal(radioGroup = radioGroup.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RadioGroupAnonDisabledEv]
   }

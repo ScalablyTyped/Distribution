@@ -37,11 +37,11 @@ object EditModeValidationErrorEventUIParam {
     validationRule: String = null
   ): EditModeValidationErrorEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (!js.isUndefined(canStayInEditMode)) __obj.updateDynamic("canStayInEditMode")(canStayInEditMode)
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (validationRule != null) __obj.updateDynamic("validationRule")(validationRule)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(canStayInEditMode)) __obj.updateDynamic("canStayInEditMode")(canStayInEditMode.asInstanceOf[js.Any])
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (validationRule != null) __obj.updateDynamic("validationRule")(validationRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditModeValidationErrorEventUIParam]
   }
 }

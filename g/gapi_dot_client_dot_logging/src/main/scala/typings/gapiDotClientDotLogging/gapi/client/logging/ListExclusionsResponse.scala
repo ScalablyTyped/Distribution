@@ -18,8 +18,8 @@ object ListExclusionsResponse {
   @scala.inline
   def apply(exclusions: js.Array[LogExclusion] = null, nextPageToken: String = null): ListExclusionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListExclusionsResponse]
   }
 }

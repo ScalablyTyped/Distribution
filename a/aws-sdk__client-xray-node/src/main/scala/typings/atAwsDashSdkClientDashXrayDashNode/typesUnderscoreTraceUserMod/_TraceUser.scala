@@ -22,7 +22,7 @@ object _TraceUser {
   def apply(ServiceIds: js.Array[_ServiceId] | Iterable[_ServiceId] = null, UserName: String = null): _TraceUser = {
     val __obj = js.Dynamic.literal()
     if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName)
+    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_TraceUser]
   }
 }

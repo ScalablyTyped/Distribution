@@ -7,9 +7,6 @@ import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R3
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NCW
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.NWC
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.same
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.valid
 import scala.scalajs.js
@@ -77,7 +74,7 @@ object conv1d extends js.Object {
     pad: valid | same | Double,
     dataFormat: NWC | NCW,
     dilation: Double,
-    dimRoundingMode: floor | round | ceil
+    dimRoundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
   ): T = js.native
   def apply[T /* <: Tensor2D | Tensor3D */](x: TensorLike, filter: Tensor3D, stride: Double, pad: Double): T = js.native
   def apply[T /* <: Tensor2D | Tensor3D */](x: TensorLike, filter: Tensor3D, stride: Double, pad: same): T = js.native

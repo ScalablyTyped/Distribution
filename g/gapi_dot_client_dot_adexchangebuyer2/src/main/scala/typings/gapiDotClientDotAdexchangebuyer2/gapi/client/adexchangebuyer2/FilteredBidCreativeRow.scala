@@ -17,9 +17,9 @@ object FilteredBidCreativeRow {
   @scala.inline
   def apply(bidCount: MetricValue = null, creativeId: String = null, rowDimensions: RowDimensions = null): FilteredBidCreativeRow = {
     val __obj = js.Dynamic.literal()
-    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount)
-    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId)
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount.asInstanceOf[js.Any])
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilteredBidCreativeRow]
   }
 }

@@ -16,7 +16,7 @@ object RevertVariableResponse {
   @scala.inline
   def apply(variable: Variable = null): RevertVariableResponse = {
     val __obj = js.Dynamic.literal()
-    if (variable != null) __obj.updateDynamic("variable")(variable)
+    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevertVariableResponse]
   }
 }

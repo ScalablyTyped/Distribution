@@ -22,16 +22,16 @@ object Parts {
     urn: js.UndefOr[Boolean] = js.undefined,
     username: String = null
   ): Parts = {
-    val __obj = js.Dynamic.literal(preventInvalidHostname = preventInvalidHostname)
-    if (fragment != null) __obj.updateDynamic("fragment")(fragment)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (port != null) __obj.updateDynamic("port")(port)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (!js.isUndefined(urn)) __obj.updateDynamic("urn")(urn)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(preventInvalidHostname = preventInvalidHostname.asInstanceOf[js.Any])
+    if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (!js.isUndefined(urn)) __obj.updateDynamic("urn")(urn.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parts]
   }
 }

@@ -18,7 +18,7 @@ object IBaseExtendedPicker {
   def apply[T](focus: () => Unit, forceResolve: () => Unit = null, items: js.Array[T] = null): IBaseExtendedPicker[T] = {
     val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
     if (forceResolve != null) __obj.updateDynamic("forceResolve")(js.Any.fromFunction0(forceResolve))
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseExtendedPicker[T]]
   }
 }

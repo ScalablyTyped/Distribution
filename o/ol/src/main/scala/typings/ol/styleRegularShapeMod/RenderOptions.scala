@@ -28,7 +28,7 @@ object RenderOptions {
     strokeWidth: Double,
     strokeStyle: ColorLike = null
   ): RenderOptions = {
-    val __obj = js.Dynamic.literal(lineCap = lineCap, lineDash = lineDash, lineDashOffset = lineDashOffset, lineJoin = lineJoin, miterLimit = miterLimit, size = size, strokeWidth = strokeWidth)
+    val __obj = js.Dynamic.literal(lineCap = lineCap.asInstanceOf[js.Any], lineDash = lineDash.asInstanceOf[js.Any], lineDashOffset = lineDashOffset.asInstanceOf[js.Any], lineJoin = lineJoin.asInstanceOf[js.Any], miterLimit = miterLimit.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any])
     if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }

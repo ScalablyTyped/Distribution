@@ -14,9 +14,9 @@ object ConferenceSolution {
   @scala.inline
   def apply(iconUri: String = null, key: ConferenceSolutionKey = null, name: String = null): ConferenceSolution = {
     val __obj = js.Dynamic.literal()
-    if (iconUri != null) __obj.updateDynamic("iconUri")(iconUri)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (iconUri != null) __obj.updateDynamic("iconUri")(iconUri.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConferenceSolution]
   }
 }

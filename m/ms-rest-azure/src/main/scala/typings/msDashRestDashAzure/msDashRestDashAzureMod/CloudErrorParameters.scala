@@ -14,9 +14,9 @@ trait CloudErrorParameters extends js.Object {
 object CloudErrorParameters {
   @scala.inline
   def apply(code: String, message: String, details: js.Array[CloudError] = null, target: String = null): CloudErrorParameters = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudErrorParameters]
   }
 }

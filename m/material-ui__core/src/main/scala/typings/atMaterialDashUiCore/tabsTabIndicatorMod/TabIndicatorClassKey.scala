@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait TabIndicatorClassKey extends js.Object
 
+object TabIndicatorClassKey {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def colorPrimary: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.colorPrimary = this.cast("colorPrimary")
+  @scala.inline
+  def colorSecondary: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.colorSecondary = this.cast("colorSecondary")
+  @scala.inline
+  def root: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.root = this.cast("root")
+}
+

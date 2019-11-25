@@ -27,9 +27,9 @@ object Anon_ColorStopsGlobalLinear {
     y2: Double,
     global: js.UndefOr[Boolean] = js.undefined
   ): Anon_ColorStopsGlobalLinear = {
-    val __obj = js.Dynamic.literal(colorStops = colorStops, x = x, x2 = x2, y = y, y2 = y2)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
+    val __obj = js.Dynamic.literal(colorStops = colorStops.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorStopsGlobalLinear]
   }
 }

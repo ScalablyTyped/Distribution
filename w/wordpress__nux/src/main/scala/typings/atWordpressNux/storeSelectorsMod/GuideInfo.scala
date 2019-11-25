@@ -22,9 +22,9 @@ trait GuideInfo extends js.Object {
 object GuideInfo {
   @scala.inline
   def apply(tipIds: js.Array[String], currentTipId: String = null, nextTipId: String = null): GuideInfo = {
-    val __obj = js.Dynamic.literal(tipIds = tipIds)
-    if (currentTipId != null) __obj.updateDynamic("currentTipId")(currentTipId)
-    if (nextTipId != null) __obj.updateDynamic("nextTipId")(nextTipId)
+    val __obj = js.Dynamic.literal(tipIds = tipIds.asInstanceOf[js.Any])
+    if (currentTipId != null) __obj.updateDynamic("currentTipId")(currentTipId.asInstanceOf[js.Any])
+    if (nextTipId != null) __obj.updateDynamic("nextTipId")(nextTipId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GuideInfo]
   }
 }

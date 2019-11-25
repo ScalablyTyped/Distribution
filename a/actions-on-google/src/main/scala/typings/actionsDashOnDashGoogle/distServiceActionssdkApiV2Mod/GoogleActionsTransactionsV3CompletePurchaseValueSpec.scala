@@ -20,8 +20,8 @@ object GoogleActionsTransactionsV3CompletePurchaseValueSpec {
   @scala.inline
   def apply(developerPayload: String = null, skuId: GoogleActionsTransactionsV3SkuId = null): GoogleActionsTransactionsV3CompletePurchaseValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload)
-    if (skuId != null) __obj.updateDynamic("skuId")(skuId)
+    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload.asInstanceOf[js.Any])
+    if (skuId != null) __obj.updateDynamic("skuId")(skuId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3CompletePurchaseValueSpec]
   }
 }

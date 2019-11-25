@@ -71,15 +71,15 @@ object Options {
     if (areOwnPropsEqual != null) __obj.updateDynamic("areOwnPropsEqual")(js.Any.fromFunction2(areOwnPropsEqual))
     if (areStatePropsEqual != null) __obj.updateDynamic("areStatePropsEqual")(js.Any.fromFunction2(areStatePropsEqual))
     if (areStatesEqual != null) __obj.updateDynamic("areStatesEqual")(js.Any.fromFunction2(areStatesEqual))
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef.asInstanceOf[js.Any])
     if (getDisplayName != null) __obj.updateDynamic("getDisplayName")(js.Any.fromFunction1(getDisplayName))
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
-    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure)
-    if (renderCountProp != null) __obj.updateDynamic("renderCountProp")(renderCountProp)
-    if (!js.isUndefined(shouldHandleStateChanges)) __obj.updateDynamic("shouldHandleStateChanges")(shouldHandleStateChanges)
-    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey)
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
+    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure.asInstanceOf[js.Any])
+    if (renderCountProp != null) __obj.updateDynamic("renderCountProp")(renderCountProp.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldHandleStateChanges)) __obj.updateDynamic("shouldHandleStateChanges")(shouldHandleStateChanges.asInstanceOf[js.Any])
+    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[State, TStateProps, TOwnProps, TMergedProps]]
   }
 }

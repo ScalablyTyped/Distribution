@@ -47,9 +47,9 @@ object SeriesSunburstDataOptions {
   ): SeriesSunburstDataOptions = {
     val __obj = js.Dynamic.literal()
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (!js.isUndefined(sliced)) __obj.updateDynamic("sliced")(sliced)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(sliced)) __obj.updateDynamic("sliced")(sliced.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSunburstDataOptions]

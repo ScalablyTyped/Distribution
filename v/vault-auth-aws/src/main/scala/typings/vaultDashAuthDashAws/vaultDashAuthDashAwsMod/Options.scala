@@ -15,8 +15,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(body: String, followAllRedirects: Boolean, url: String, cert: Buffer = null): Options = {
-    val __obj = js.Dynamic.literal(body = body, followAllRedirects = followAllRedirects, url = url)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], followAllRedirects = followAllRedirects.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

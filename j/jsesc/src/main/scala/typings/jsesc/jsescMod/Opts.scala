@@ -26,13 +26,13 @@ object Opts {
     wrap: js.UndefOr[Boolean] = js.undefined
   ): Opts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (!js.isUndefined(es6)) __obj.updateDynamic("es6")(es6)
-    if (!js.isUndefined(escapeEverything)) __obj.updateDynamic("escapeEverything")(escapeEverything)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
-    if (quotes != null) __obj.updateDynamic("quotes")(quotes)
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(es6)) __obj.updateDynamic("es6")(es6.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeEverything)) __obj.updateDynamic("escapeEverything")(escapeEverything.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts]
   }
 }

@@ -11,7 +11,7 @@ trait MDCTabBarActivatedEventDetail extends js.Object {
 object MDCTabBarActivatedEventDetail {
   @scala.inline
   def apply(index: Double): MDCTabBarActivatedEventDetail = {
-    val __obj = js.Dynamic.literal(index = index)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MDCTabBarActivatedEventDetail]
   }

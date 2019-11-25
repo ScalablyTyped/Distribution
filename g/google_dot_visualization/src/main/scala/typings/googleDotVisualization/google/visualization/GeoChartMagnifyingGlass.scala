@@ -13,7 +13,7 @@ object GeoChartMagnifyingGlass {
   @scala.inline
   def apply(enable: js.UndefOr[Boolean] = js.undefined, zoomFactor: Int | Double = null): GeoChartMagnifyingGlass = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoChartMagnifyingGlass]
   }

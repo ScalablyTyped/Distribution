@@ -24,8 +24,8 @@ object IContactInstantMessageField {
     userName: String,
     value: String
   ): IContactInstantMessageField = {
-    val __obj = js.Dynamic.literal(category = category, displayText = displayText, launchUri = launchUri, name = name, service = service, userName = userName, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], displayText = displayText.asInstanceOf[js.Any], launchUri = launchUri.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContactInstantMessageField]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(TIMESTAMP: StringDictionary[String]): Anon_Key = {
-    val __obj = js.Dynamic.literal(TIMESTAMP = TIMESTAMP)
+    val __obj = js.Dynamic.literal(TIMESTAMP = TIMESTAMP.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Key]
   }

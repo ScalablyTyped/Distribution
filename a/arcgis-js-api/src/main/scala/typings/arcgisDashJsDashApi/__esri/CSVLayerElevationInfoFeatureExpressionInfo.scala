@@ -23,8 +23,8 @@ object CSVLayerElevationInfoFeatureExpressionInfo {
     propertyIsEnumerable: PropertyKey => Boolean,
     expression: String = null
   ): CSVLayerElevationInfoFeatureExpressionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (expression != null) __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSVLayerElevationInfoFeatureExpressionInfo]
   }
 }

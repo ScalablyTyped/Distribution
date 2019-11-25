@@ -34,13 +34,13 @@ object ConfigProviderProps {
     renderEmpty: /* componentName */ js.UndefOr[String] => ReactNode = null
   ): ConfigProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoInsertSpaceInButton)) __obj.updateDynamic("autoInsertSpaceInButton")(autoInsertSpaceInButton)
+    if (!js.isUndefined(autoInsertSpaceInButton)) __obj.updateDynamic("autoInsertSpaceInButton")(autoInsertSpaceInButton.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (csp != null) __obj.updateDynamic("csp")(csp)
+    if (csp != null) __obj.updateDynamic("csp")(csp.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (pageHeader != null) __obj.updateDynamic("pageHeader")(pageHeader)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (pageHeader != null) __obj.updateDynamic("pageHeader")(pageHeader.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (renderEmpty != null) __obj.updateDynamic("renderEmpty")(js.Any.fromFunction1(renderEmpty))
     __obj.asInstanceOf[ConfigProviderProps]
   }

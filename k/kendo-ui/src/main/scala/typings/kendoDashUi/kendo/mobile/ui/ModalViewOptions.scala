@@ -32,8 +32,8 @@ object ModalViewOptions {
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalViewOptions]

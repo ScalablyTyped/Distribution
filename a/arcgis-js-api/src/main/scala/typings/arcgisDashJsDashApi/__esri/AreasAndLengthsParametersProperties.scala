@@ -68,7 +68,7 @@ object AreasAndLengthsParametersProperties {
     if (areaUnit != null) __obj.updateDynamic("areaUnit")(areaUnit.asInstanceOf[js.Any])
     if (calculationType != null) __obj.updateDynamic("calculationType")(calculationType.asInstanceOf[js.Any])
     if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
-    if (polygons != null) __obj.updateDynamic("polygons")(polygons)
+    if (polygons != null) __obj.updateDynamic("polygons")(polygons.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreasAndLengthsParametersProperties]
   }
 }

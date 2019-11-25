@@ -19,7 +19,7 @@ object OtherPermission {
   @scala.inline
   def apply(operation: execute | http | sendto, `type`: other): OtherPermission = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OtherPermission]
   }
 }

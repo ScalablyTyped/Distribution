@@ -41,7 +41,7 @@ trait Stroke extends js.Object {
 object Stroke {
   @scala.inline
   def apply(cap: String, color: String, join: Double, style: String, width: Double): Stroke = {
-    val __obj = js.Dynamic.literal(cap = cap, color = color, join = join, style = style, width = width)
+    val __obj = js.Dynamic.literal(cap = cap.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], join = join.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stroke]
   }

@@ -22,11 +22,11 @@ object TestOrderLineItem {
     unitTax: Price = null
   ): TestOrderLineItem = {
     val __obj = js.Dynamic.literal()
-    if (product != null) __obj.updateDynamic("product")(product)
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     if (quantityOrdered != null) __obj.updateDynamic("quantityOrdered")(quantityOrdered.asInstanceOf[js.Any])
-    if (returnInfo != null) __obj.updateDynamic("returnInfo")(returnInfo)
-    if (shippingDetails != null) __obj.updateDynamic("shippingDetails")(shippingDetails)
-    if (unitTax != null) __obj.updateDynamic("unitTax")(unitTax)
+    if (returnInfo != null) __obj.updateDynamic("returnInfo")(returnInfo.asInstanceOf[js.Any])
+    if (shippingDetails != null) __obj.updateDynamic("shippingDetails")(shippingDetails.asInstanceOf[js.Any])
+    if (unitTax != null) __obj.updateDynamic("unitTax")(unitTax.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestOrderLineItem]
   }
 }

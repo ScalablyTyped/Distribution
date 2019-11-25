@@ -33,10 +33,10 @@ object OnenotePatchContentCommand {
     target: String = null
   ): OnenotePatchContentCommand = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenotePatchContentCommand]
   }
 }

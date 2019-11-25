@@ -22,10 +22,10 @@ object Anon_Actrouter {
     subrouter: UnknownType = null
   ): Anon_Actrouter = {
     val __obj = js.Dynamic.literal()
-    if (actrouter != null) __obj.updateDynamic("actrouter")(actrouter)
-    if (clientrouter != null) __obj.updateDynamic("clientrouter")(clientrouter)
-    if (close_signals != null) __obj.updateDynamic("close_signals")(close_signals)
-    if (subrouter != null) __obj.updateDynamic("subrouter")(subrouter)
+    if (actrouter != null) __obj.updateDynamic("actrouter")(actrouter.asInstanceOf[js.Any])
+    if (clientrouter != null) __obj.updateDynamic("clientrouter")(clientrouter.asInstanceOf[js.Any])
+    if (close_signals != null) __obj.updateDynamic("close_signals")(close_signals.asInstanceOf[js.Any])
+    if (subrouter != null) __obj.updateDynamic("subrouter")(subrouter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Actrouter]
   }
 }

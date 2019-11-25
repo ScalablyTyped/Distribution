@@ -21,7 +21,7 @@ object GetStorageOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetStorageOptions = {
-    val __obj = js.Dynamic.literal(key = key, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[GetStorageOptions]

@@ -13,7 +13,7 @@ trait ClassifierList extends js.Object {
 object ClassifierList {
   @scala.inline
   def apply(classifiers: js.Array[Classifier]): ClassifierList = {
-    val __obj = js.Dynamic.literal(classifiers = classifiers)
+    val __obj = js.Dynamic.literal(classifiers = classifiers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClassifierList]
   }

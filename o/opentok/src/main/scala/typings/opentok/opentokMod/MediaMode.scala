@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait MediaMode extends js.Object
 
+object MediaMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def relayed: typings.opentok.opentokStrings.relayed = this.cast("relayed")
+  @scala.inline
+  def routed: typings.opentok.opentokStrings.routed = this.cast("routed")
+}
+

@@ -13,7 +13,7 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(context: Context, matches: Anon_AllTests): Anon_Context = {
-    val __obj = js.Dynamic.literal(context = context, matches = matches)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Context]
   }

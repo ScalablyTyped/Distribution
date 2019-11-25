@@ -24,9 +24,9 @@ object GoogleActionsV2RawInput {
   @scala.inline
   def apply(inputType: GoogleActionsV2RawInputInputType = null, query: String = null, url: String = null): GoogleActionsV2RawInput = {
     val __obj = js.Dynamic.literal()
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2RawInput]
   }
 }

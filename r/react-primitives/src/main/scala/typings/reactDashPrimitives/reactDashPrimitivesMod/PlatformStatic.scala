@@ -9,7 +9,7 @@ trait PlatformStatic extends js.Object {
   var Version: Double | String
   @JSName("select")
   def select_default[T](
-    specifics: /* import warning: ImportType.apply c Unsupported type mapping: 
+    specifics: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
     */ typings.reactDashPrimitives.reactDashPrimitivesStrings.PlatformStatic with js.Any
   ): T
@@ -20,12 +20,12 @@ object PlatformStatic {
   def apply(
     OS: PlatformOSType,
     Version: Double | String,
-    select_default: /* import warning: ImportType.apply c Unsupported type mapping: 
+    select: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
     */ typings.reactDashPrimitives.reactDashPrimitivesStrings.PlatformStatic with js.Any => js.Any
   ): PlatformStatic = {
-    val __obj = js.Dynamic.literal(OS = OS.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-    __obj.updateDynamic("select")(js.Any.fromFunction1(select_default))
+    val __obj = js.Dynamic.literal(OS = OS.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], select = js.Any.fromFunction1(select))
+  
     __obj.asInstanceOf[PlatformStatic]
   }
 }

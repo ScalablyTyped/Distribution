@@ -24,7 +24,7 @@ object IResourceManager {
     mainResourceMap: ResourceMap,
     unloadPriFiles: IIterable[IStorageFile] => Unit
   ): IResourceManager = {
-    val __obj = js.Dynamic.literal(allResourceMaps = allResourceMaps, defaultContext = defaultContext, loadPriFiles = js.Any.fromFunction1(loadPriFiles), mainResourceMap = mainResourceMap, unloadPriFiles = js.Any.fromFunction1(unloadPriFiles))
+    val __obj = js.Dynamic.literal(allResourceMaps = allResourceMaps.asInstanceOf[js.Any], defaultContext = defaultContext.asInstanceOf[js.Any], loadPriFiles = js.Any.fromFunction1(loadPriFiles), mainResourceMap = mainResourceMap.asInstanceOf[js.Any], unloadPriFiles = js.Any.fromFunction1(unloadPriFiles))
   
     __obj.asInstanceOf[IResourceManager]
   }

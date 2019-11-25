@@ -50,9 +50,9 @@ object GIFObject {
     username: String,
     user: Anon_Avatarurl = null
   ): GIFObject = {
-    val __obj = js.Dynamic.literal(bitly_url = bitly_url, content_url = content_url, create_datetime = create_datetime, embed_url = embed_url, id = id, images = images, import_datetime = import_datetime, rating = rating, slug = slug, source = source, source_post_url = source_post_url, source_tld = source_tld, title = title, trending_datetime = trending_datetime, update_datetime = update_datetime, url = url, username = username)
-    __obj.updateDynamic("type")(`type`)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(bitly_url = bitly_url.asInstanceOf[js.Any], content_url = content_url.asInstanceOf[js.Any], create_datetime = create_datetime.asInstanceOf[js.Any], embed_url = embed_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], import_datetime = import_datetime.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], source_post_url = source_post_url.asInstanceOf[js.Any], source_tld = source_tld.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trending_datetime = trending_datetime.asInstanceOf[js.Any], update_datetime = update_datetime.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[GIFObject]
   }
 }

@@ -13,7 +13,7 @@ trait TeamsRemoveRepoParams extends js.Object {
 object TeamsRemoveRepoParams {
   @scala.inline
   def apply(owner: String, repo: String, team_id: Double): TeamsRemoveRepoParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, team_id = team_id)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamsRemoveRepoParams]
   }

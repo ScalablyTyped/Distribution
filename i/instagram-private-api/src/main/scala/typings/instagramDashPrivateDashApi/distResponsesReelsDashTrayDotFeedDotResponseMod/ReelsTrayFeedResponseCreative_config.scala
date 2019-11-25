@@ -13,7 +13,7 @@ trait ReelsTrayFeedResponseCreative_config extends js.Object {
 object ReelsTrayFeedResponseCreative_config {
   @scala.inline
   def apply(camera_facing: String, capture_type: String, should_render_try_it_on: Boolean): ReelsTrayFeedResponseCreative_config = {
-    val __obj = js.Dynamic.literal(camera_facing = camera_facing, capture_type = capture_type, should_render_try_it_on = should_render_try_it_on)
+    val __obj = js.Dynamic.literal(camera_facing = camera_facing.asInstanceOf[js.Any], capture_type = capture_type.asInstanceOf[js.Any], should_render_try_it_on = should_render_try_it_on.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReelsTrayFeedResponseCreative_config]
   }

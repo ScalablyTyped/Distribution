@@ -23,11 +23,11 @@ object MockResolverContext {
     path: js.Array[String] = null
   ): MockResolverContext = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parentType != null) __obj.updateDynamic("parentType")(parentType)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentType != null) __obj.updateDynamic("parentType")(parentType.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockResolverContext]
   }
 }

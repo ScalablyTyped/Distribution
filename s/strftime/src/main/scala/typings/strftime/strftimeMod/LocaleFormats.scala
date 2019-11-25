@@ -30,15 +30,15 @@ object LocaleFormats {
     x: String = null
   ): LocaleFormats = {
     val __obj = js.Dynamic.literal()
-    if (D != null) __obj.updateDynamic("D")(D)
-    if (F != null) __obj.updateDynamic("F")(F)
-    if (R != null) __obj.updateDynamic("R")(R)
-    if (T != null) __obj.updateDynamic("T")(T)
-    if (X != null) __obj.updateDynamic("X")(X)
-    if (c != null) __obj.updateDynamic("c")(c)
-    if (r != null) __obj.updateDynamic("r")(r)
-    if (v != null) __obj.updateDynamic("v")(v)
-    if (x != null) __obj.updateDynamic("x")(x)
+    if (D != null) __obj.updateDynamic("D")(D.asInstanceOf[js.Any])
+    if (F != null) __obj.updateDynamic("F")(F.asInstanceOf[js.Any])
+    if (R != null) __obj.updateDynamic("R")(R.asInstanceOf[js.Any])
+    if (T != null) __obj.updateDynamic("T")(T.asInstanceOf[js.Any])
+    if (X != null) __obj.updateDynamic("X")(X.asInstanceOf[js.Any])
+    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocaleFormats]
   }
 }

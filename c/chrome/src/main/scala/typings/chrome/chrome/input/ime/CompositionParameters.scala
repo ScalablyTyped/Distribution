@@ -29,7 +29,7 @@ object CompositionParameters {
     selectionEnd: Int | Double = null,
     selectionStart: Int | Double = null
   ): CompositionParameters = {
-    val __obj = js.Dynamic.literal(contextID = contextID, cursor = cursor, segments = segments, text = text)
+    val __obj = js.Dynamic.literal(contextID = contextID.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
     if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionParameters]

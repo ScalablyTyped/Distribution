@@ -13,9 +13,9 @@ object CloudCommunications {
   @scala.inline
   def apply(calls: js.Array[Call] = null, id: String = null, onlineMeetings: js.Array[OnlineMeeting] = null): CloudCommunications = {
     val __obj = js.Dynamic.literal()
-    if (calls != null) __obj.updateDynamic("calls")(calls)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (onlineMeetings != null) __obj.updateDynamic("onlineMeetings")(onlineMeetings)
+    if (calls != null) __obj.updateDynamic("calls")(calls.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (onlineMeetings != null) __obj.updateDynamic("onlineMeetings")(onlineMeetings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudCommunications]
   }
 }

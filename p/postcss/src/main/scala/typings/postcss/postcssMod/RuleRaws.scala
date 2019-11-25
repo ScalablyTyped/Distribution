@@ -27,16 +27,16 @@ object RuleRaws {
     semicolon: js.UndefOr[Boolean] = js.undefined
   ): RuleRaws = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (afterName != null) __obj.updateDynamic("afterName")(afterName)
-    if (before != null) __obj.updateDynamic("before")(before)
-    if (between != null) __obj.updateDynamic("between")(between)
-    if (important != null) __obj.updateDynamic("important")(important)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (right != null) __obj.updateDynamic("right")(right)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (!js.isUndefined(semicolon)) __obj.updateDynamic("semicolon")(semicolon)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (afterName != null) __obj.updateDynamic("afterName")(afterName.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    if (between != null) __obj.updateDynamic("between")(between.asInstanceOf[js.Any])
+    if (important != null) __obj.updateDynamic("important")(important.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (!js.isUndefined(semicolon)) __obj.updateDynamic("semicolon")(semicolon.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleRaws]
   }
 }

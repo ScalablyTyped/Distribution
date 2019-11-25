@@ -18,7 +18,7 @@ object ResultBuilder {
     rowCount: Double,
     rows: js.Array[R]
   ): ResultBuilder[R] = {
-    val __obj = js.Dynamic.literal(addRow = js.Any.fromFunction1(addRow), command = command, fields = fields, oid = oid, rowCount = rowCount, rows = rows)
+    val __obj = js.Dynamic.literal(addRow = js.Any.fromFunction1(addRow), command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResultBuilder[R]]
   }

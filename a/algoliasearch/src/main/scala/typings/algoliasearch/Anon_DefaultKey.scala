@@ -13,8 +13,8 @@ trait Anon_DefaultKey
 object Anon_DefaultKey {
   @scala.inline
   def apply(default: js.Array[String], StringDictionary: /* key */ StringDictionary[js.Array[String]] = null): Anon_DefaultKey = {
-    val __obj = js.Dynamic.literal(default = default)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_DefaultKey]
   }
 }

@@ -23,12 +23,12 @@ object ServerConfig {
     useToken: js.UndefOr[Boolean] = js.undefined,
     username: String = null
   ): ServerConfig = {
-    val __obj = js.Dynamic.literal(host = host)
-    if (password != null) __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (servers != null) __obj.updateDynamic("servers")(servers)
-    if (!js.isUndefined(useToken)) __obj.updateDynamic("useToken")(useToken)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (servers != null) __obj.updateDynamic("servers")(servers.asInstanceOf[js.Any])
+    if (!js.isUndefined(useToken)) __obj.updateDynamic("useToken")(useToken.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerConfig]
   }
 }

@@ -11,7 +11,7 @@ trait ObjectIdentifierParam extends js.Object {
 object ObjectIdentifierParam {
   @scala.inline
   def apply(oid: String): ObjectIdentifierParam = {
-    val __obj = js.Dynamic.literal(oid = oid)
+    val __obj = js.Dynamic.literal(oid = oid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectIdentifierParam]
   }

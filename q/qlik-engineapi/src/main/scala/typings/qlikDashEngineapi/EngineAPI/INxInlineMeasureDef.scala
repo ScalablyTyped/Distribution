@@ -112,20 +112,20 @@ object INxInlineMeasureDef {
     qReverseSort: js.UndefOr[Boolean] = js.undefined,
     qTags: js.Array[String] = null
   ): INxInlineMeasureDef = {
-    val __obj = js.Dynamic.literal(qDef = qDef)
+    val __obj = js.Dynamic.literal(qDef = qDef.asInstanceOf[js.Any])
     if (qAccumulate != null) __obj.updateDynamic("qAccumulate")(qAccumulate.asInstanceOf[js.Any])
     if (qActiveExpression != null) __obj.updateDynamic("qActiveExpression")(qActiveExpression.asInstanceOf[js.Any])
-    if (qAggrFunc != null) __obj.updateDynamic("qAggrFunc")(qAggrFunc)
-    if (!js.isUndefined(qBrutalSum)) __obj.updateDynamic("qBrutalSum")(qBrutalSum)
-    if (qDescription != null) __obj.updateDynamic("qDescription")(qDescription)
-    if (qExpressions != null) __obj.updateDynamic("qExpressions")(qExpressions)
+    if (qAggrFunc != null) __obj.updateDynamic("qAggrFunc")(qAggrFunc.asInstanceOf[js.Any])
+    if (!js.isUndefined(qBrutalSum)) __obj.updateDynamic("qBrutalSum")(qBrutalSum.asInstanceOf[js.Any])
+    if (qDescription != null) __obj.updateDynamic("qDescription")(qDescription.asInstanceOf[js.Any])
+    if (qExpressions != null) __obj.updateDynamic("qExpressions")(qExpressions.asInstanceOf[js.Any])
     if (qGrouping != null) __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
-    if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel)
-    if (qLabelExpression != null) __obj.updateDynamic("qLabelExpression")(qLabelExpression)
-    if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat)
-    if (!js.isUndefined(qRelative)) __obj.updateDynamic("qRelative")(qRelative)
-    if (!js.isUndefined(qReverseSort)) __obj.updateDynamic("qReverseSort")(qReverseSort)
-    if (qTags != null) __obj.updateDynamic("qTags")(qTags)
+    if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel.asInstanceOf[js.Any])
+    if (qLabelExpression != null) __obj.updateDynamic("qLabelExpression")(qLabelExpression.asInstanceOf[js.Any])
+    if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(qRelative)) __obj.updateDynamic("qRelative")(qRelative.asInstanceOf[js.Any])
+    if (!js.isUndefined(qReverseSort)) __obj.updateDynamic("qReverseSort")(qReverseSort.asInstanceOf[js.Any])
+    if (qTags != null) __obj.updateDynamic("qTags")(qTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxInlineMeasureDef]
   }
 }

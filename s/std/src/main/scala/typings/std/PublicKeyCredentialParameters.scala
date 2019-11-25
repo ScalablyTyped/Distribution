@@ -12,8 +12,8 @@ trait PublicKeyCredentialParameters extends js.Object {
 object PublicKeyCredentialParameters {
   @scala.inline
   def apply(alg: COSEAlgorithmIdentifier, `type`: PublicKeyCredentialType): PublicKeyCredentialParameters = {
-    val __obj = js.Dynamic.literal(alg = alg)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialParameters]
   }
 }

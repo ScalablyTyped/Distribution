@@ -22,8 +22,8 @@ object DataWrite {
     variables: js.Object,
     operationName: String = null
   ): DataWrite = {
-    val __obj = js.Dynamic.literal(document = document, result = result, rootId = rootId, variables = variables)
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], rootId = rootId.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataWrite]
   }
 }

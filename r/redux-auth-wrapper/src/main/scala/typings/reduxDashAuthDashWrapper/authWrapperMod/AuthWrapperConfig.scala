@@ -20,7 +20,7 @@ object AuthWrapperConfig {
     val __obj = js.Dynamic.literal()
     if (AuthenticatingComponent != null) __obj.updateDynamic("AuthenticatingComponent")(AuthenticatingComponent.asInstanceOf[js.Any])
     if (FailureComponent != null) __obj.updateDynamic("FailureComponent")(FailureComponent.asInstanceOf[js.Any])
-    if (wrapperDisplayName != null) __obj.updateDynamic("wrapperDisplayName")(wrapperDisplayName)
+    if (wrapperDisplayName != null) __obj.updateDynamic("wrapperDisplayName")(wrapperDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthWrapperConfig]
   }
 }

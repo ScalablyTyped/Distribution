@@ -28,11 +28,11 @@ object RepresentativeInfoResponse {
     officials: js.Array[Official] = null
   ): RepresentativeInfoResponse = {
     val __obj = js.Dynamic.literal()
-    if (divisions != null) __obj.updateDynamic("divisions")(divisions)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (normalizedInput != null) __obj.updateDynamic("normalizedInput")(normalizedInput)
-    if (offices != null) __obj.updateDynamic("offices")(offices)
-    if (officials != null) __obj.updateDynamic("officials")(officials)
+    if (divisions != null) __obj.updateDynamic("divisions")(divisions.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (normalizedInput != null) __obj.updateDynamic("normalizedInput")(normalizedInput.asInstanceOf[js.Any])
+    if (offices != null) __obj.updateDynamic("offices")(offices.asInstanceOf[js.Any])
+    if (officials != null) __obj.updateDynamic("officials")(officials.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepresentativeInfoResponse]
   }
 }

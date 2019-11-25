@@ -23,7 +23,7 @@ object ExecOptions {
     x11: Boolean | Double | X11Options = null
   ): ExecOptions = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (pty != null) __obj.updateDynamic("pty")(pty.asInstanceOf[js.Any])
     if (x11 != null) __obj.updateDynamic("x11")(x11.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecOptions]

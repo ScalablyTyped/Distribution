@@ -23,10 +23,10 @@ object Insert_Replace {
     columns: js.Array[String] = null,
     db: String = null
   ): Insert_Replace = {
-    val __obj = js.Dynamic.literal(table = table, values = values)
+    val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (db != null) __obj.updateDynamic("db")(db)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
     __obj.asInstanceOf[Insert_Replace]
   }
 }

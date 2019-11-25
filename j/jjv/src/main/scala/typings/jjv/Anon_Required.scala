@@ -13,8 +13,8 @@ object Anon_Required {
   @scala.inline
   def apply(required: js.UndefOr[Boolean] = js.undefined, `type`: String = null): Anon_Required = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Required]
   }
 }

@@ -12,7 +12,7 @@ object Anon_DbName {
   @scala.inline
   def apply(dbName: String = null): Anon_DbName = {
     val __obj = js.Dynamic.literal()
-    if (dbName != null) __obj.updateDynamic("dbName")(dbName)
+    if (dbName != null) __obj.updateDynamic("dbName")(dbName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DbName]
   }
 }

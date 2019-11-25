@@ -30,15 +30,15 @@ object Anon_Button {
     wrapper: String = null
   ): Anon_Button = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (expose != null) __obj.updateDynamic("expose")(expose)
-    if (expose_cover != null) __obj.updateDynamic("expose_cover")(expose_cover)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (modal != null) __obj.updateDynamic("modal")(modal)
-    if (prev_button != null) __obj.updateDynamic("prev_button")(prev_button)
-    if (timer != null) __obj.updateDynamic("timer")(timer)
-    if (tip != null) __obj.updateDynamic("tip")(tip)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (expose != null) __obj.updateDynamic("expose")(expose.asInstanceOf[js.Any])
+    if (expose_cover != null) __obj.updateDynamic("expose_cover")(expose_cover.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (prev_button != null) __obj.updateDynamic("prev_button")(prev_button.asInstanceOf[js.Any])
+    if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
+    if (tip != null) __obj.updateDynamic("tip")(tip.asInstanceOf[js.Any])
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Button]
   }
 }

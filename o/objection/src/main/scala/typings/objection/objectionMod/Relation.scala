@@ -29,7 +29,7 @@ object Relation {
     relatedModelClass: ModelClass[_],
     relatedProp: RelationProperty
   ): Relation = {
-    val __obj = js.Dynamic.literal(joinModelClass = joinModelClass, joinTable = joinTable, joinTableOwnerProp = joinTableOwnerProp, joinTableRelatedProp = joinTableRelatedProp, name = name, ownerModelClass = ownerModelClass, ownerProp = ownerProp, relatedModelClass = relatedModelClass, relatedProp = relatedProp)
+    val __obj = js.Dynamic.literal(joinModelClass = joinModelClass.asInstanceOf[js.Any], joinTable = joinTable.asInstanceOf[js.Any], joinTableOwnerProp = joinTableOwnerProp.asInstanceOf[js.Any], joinTableRelatedProp = joinTableRelatedProp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ownerModelClass = ownerModelClass.asInstanceOf[js.Any], ownerProp = ownerProp.asInstanceOf[js.Any], relatedModelClass = relatedModelClass.asInstanceOf[js.Any], relatedProp = relatedProp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Relation]
   }

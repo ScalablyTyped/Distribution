@@ -30,15 +30,15 @@ object Options {
     walkDebug: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (codeGenerationOptions != null) __obj.updateDynamic("codeGenerationOptions")(codeGenerationOptions)
-    if (coverageVariable != null) __obj.updateDynamic("coverageVariable")(coverageVariable)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(embedSource)) __obj.updateDynamic("embedSource")(embedSource)
-    if (!js.isUndefined(includeUntested)) __obj.updateDynamic("includeUntested")(includeUntested)
-    if (!js.isUndefined(noAutoWrap)) __obj.updateDynamic("noAutoWrap")(noAutoWrap)
-    if (!js.isUndefined(noCompact)) __obj.updateDynamic("noCompact")(noCompact)
-    if (!js.isUndefined(preserveComments)) __obj.updateDynamic("preserveComments")(preserveComments)
-    if (!js.isUndefined(walkDebug)) __obj.updateDynamic("walkDebug")(walkDebug)
+    if (codeGenerationOptions != null) __obj.updateDynamic("codeGenerationOptions")(codeGenerationOptions.asInstanceOf[js.Any])
+    if (coverageVariable != null) __obj.updateDynamic("coverageVariable")(coverageVariable.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(embedSource)) __obj.updateDynamic("embedSource")(embedSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeUntested)) __obj.updateDynamic("includeUntested")(includeUntested.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAutoWrap)) __obj.updateDynamic("noAutoWrap")(noAutoWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCompact)) __obj.updateDynamic("noCompact")(noCompact.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveComments)) __obj.updateDynamic("preserveComments")(preserveComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(walkDebug)) __obj.updateDynamic("walkDebug")(walkDebug.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

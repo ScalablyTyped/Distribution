@@ -13,8 +13,8 @@ object TraversalHandlers {
   @scala.inline
   def apply[T](enter: TraversalHandler[T] = null, exit: TraversalHandler[T] = null): TraversalHandlers[T] = {
     val __obj = js.Dynamic.literal()
-    if (enter != null) __obj.updateDynamic("enter")(enter)
-    if (exit != null) __obj.updateDynamic("exit")(exit)
+    if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraversalHandlers[T]]
   }
 }

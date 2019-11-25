@@ -14,8 +14,8 @@ trait Panel extends js.Object {
 object Panel {
   @scala.inline
   def apply(action: Action, heading: String, image_url: String, paragraph: String = null): Panel = {
-    val __obj = js.Dynamic.literal(action = action, heading = heading, image_url = image_url)
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], image_url = image_url.asInstanceOf[js.Any])
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
     __obj.asInstanceOf[Panel]
   }
 }

@@ -20,7 +20,7 @@ object Anon_InUndoRedo {
     OldNode: CustomXMLNode,
     OldParentNode: CustomXMLNode
   ): Anon_InUndoRedo = {
-    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo, OldNextSibling = OldNextSibling, OldNode = OldNode, OldParentNode = OldParentNode)
+    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo.asInstanceOf[js.Any], OldNextSibling = OldNextSibling.asInstanceOf[js.Any], OldNode = OldNode.asInstanceOf[js.Any], OldParentNode = OldParentNode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InUndoRedo]
   }

@@ -36,7 +36,7 @@ trait reactDashVirtualizedProps {
   def ScrollSyncProps: typings.reactDashVirtualized.distEsScrollSyncMod.ScrollSyncProps.type = typings.reactDashVirtualized.distEsScrollSyncMod.ScrollSyncProps
   type ScrollSyncProps = typings.reactDashVirtualized.distEsScrollSyncMod.ScrollSyncProps
   @scala.inline
-  def SortIndicatorProps: typings.reactDashVirtualized.Anon_SortDirection.type = typings.reactDashVirtualized.Anon_SortDirection
+  def SortIndicatorProps: Anon_SortDirection.type = typings.reactDashVirtualized.Anon_SortDirection
   type SortIndicatorProps = Anon_SortDirection
   type TableProps = typings.reactDashVirtualized.distEsTableMod.TableProps
   @scala.inline

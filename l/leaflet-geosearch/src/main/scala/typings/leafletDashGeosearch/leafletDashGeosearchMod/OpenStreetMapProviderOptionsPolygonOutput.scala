@@ -26,7 +26,7 @@ object OpenStreetMapProviderOptionsPolygonOutput {
     if (polygon_kml != null) __obj.updateDynamic("polygon_kml")(polygon_kml.asInstanceOf[js.Any])
     if (polygon_svg != null) __obj.updateDynamic("polygon_svg")(polygon_svg.asInstanceOf[js.Any])
     if (polygon_text != null) __obj.updateDynamic("polygon_text")(polygon_text.asInstanceOf[js.Any])
-    if (polygon_threshold != null) __obj.updateDynamic("polygon_threshold")(polygon_threshold)
+    if (polygon_threshold != null) __obj.updateDynamic("polygon_threshold")(polygon_threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapProviderOptionsPolygonOutput]
   }
 }

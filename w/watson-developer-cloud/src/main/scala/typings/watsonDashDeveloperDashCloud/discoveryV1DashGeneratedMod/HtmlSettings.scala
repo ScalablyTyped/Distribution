@@ -29,12 +29,12 @@ object HtmlSettings {
     keep_tag_attributes: js.Array[String] = null
   ): HtmlSettings = {
     val __obj = js.Dynamic.literal()
-    if (exclude_content != null) __obj.updateDynamic("exclude_content")(exclude_content)
-    if (exclude_tag_attributes != null) __obj.updateDynamic("exclude_tag_attributes")(exclude_tag_attributes)
-    if (exclude_tags_completely != null) __obj.updateDynamic("exclude_tags_completely")(exclude_tags_completely)
-    if (exclude_tags_keep_content != null) __obj.updateDynamic("exclude_tags_keep_content")(exclude_tags_keep_content)
-    if (keep_content != null) __obj.updateDynamic("keep_content")(keep_content)
-    if (keep_tag_attributes != null) __obj.updateDynamic("keep_tag_attributes")(keep_tag_attributes)
+    if (exclude_content != null) __obj.updateDynamic("exclude_content")(exclude_content.asInstanceOf[js.Any])
+    if (exclude_tag_attributes != null) __obj.updateDynamic("exclude_tag_attributes")(exclude_tag_attributes.asInstanceOf[js.Any])
+    if (exclude_tags_completely != null) __obj.updateDynamic("exclude_tags_completely")(exclude_tags_completely.asInstanceOf[js.Any])
+    if (exclude_tags_keep_content != null) __obj.updateDynamic("exclude_tags_keep_content")(exclude_tags_keep_content.asInstanceOf[js.Any])
+    if (keep_content != null) __obj.updateDynamic("keep_content")(keep_content.asInstanceOf[js.Any])
+    if (keep_tag_attributes != null) __obj.updateDynamic("keep_tag_attributes")(keep_tag_attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlSettings]
   }
 }

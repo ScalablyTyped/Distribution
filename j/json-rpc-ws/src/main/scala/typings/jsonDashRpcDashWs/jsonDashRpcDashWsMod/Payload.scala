@@ -24,11 +24,11 @@ object Payload {
     params: ParamType = null,
     result: js.Any = null
   ): Payload[ParamType] = {
-    val __obj = js.Dynamic.literal(id = id, method = method)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (jsonrpc != null) __obj.updateDynamic("jsonrpc")(jsonrpc)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (jsonrpc != null) __obj.updateDynamic("jsonrpc")(jsonrpc.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payload[ParamType]]
   }
 }

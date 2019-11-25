@@ -14,9 +14,9 @@ object AccountTax {
   @scala.inline
   def apply(accountId: String = null, kind: String = null, rules: js.Array[AccountTaxTaxRule] = null): AccountTax = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountTax]
   }
 }

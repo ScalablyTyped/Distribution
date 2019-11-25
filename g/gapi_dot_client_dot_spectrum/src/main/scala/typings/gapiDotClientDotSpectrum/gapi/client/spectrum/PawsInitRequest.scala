@@ -35,10 +35,10 @@ object PawsInitRequest {
     version: String = null
   ): PawsInitRequest = {
     val __obj = js.Dynamic.literal()
-    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PawsInitRequest]
   }
 }

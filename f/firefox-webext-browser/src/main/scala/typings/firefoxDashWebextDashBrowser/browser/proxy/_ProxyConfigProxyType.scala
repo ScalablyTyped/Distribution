@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait _ProxyConfigProxyType extends js.Object
 
+object _ProxyConfigProxyType {
+  @scala.inline
+  def autoConfig: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.autoConfig = this.cast("autoConfig")
+  @scala.inline
+  def autoDetect: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.autoDetect = this.cast("autoDetect")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def manual: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.manual = this.cast("manual")
+  @scala.inline
+  def none: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.none = this.cast("none")
+  @scala.inline
+  def system: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.system = this.cast("system")
+}
+

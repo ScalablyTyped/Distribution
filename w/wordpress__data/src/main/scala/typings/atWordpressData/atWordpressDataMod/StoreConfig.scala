@@ -51,12 +51,12 @@ object StoreConfig {
     selectors: StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, _]] = null
   ): StoreConfig[S] = {
     val __obj = js.Dynamic.literal(reducer = js.Any.fromFunction2(reducer))
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (controls != null) __obj.updateDynamic("controls")(controls)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     if (persist != null) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
-    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers)
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreConfig[S]]
   }
 }

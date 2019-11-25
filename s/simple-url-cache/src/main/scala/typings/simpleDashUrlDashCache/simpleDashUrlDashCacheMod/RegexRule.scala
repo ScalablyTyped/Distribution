@@ -12,7 +12,7 @@ trait RegexRule extends js.Object {
 object RegexRule {
   @scala.inline
   def apply(regex: RegExp): RegexRule = {
-    val __obj = js.Dynamic.literal(regex = regex)
+    val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RegexRule]
   }

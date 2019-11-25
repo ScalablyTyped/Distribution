@@ -11,7 +11,7 @@ trait Anon_ToolBar extends js.Object {
 object Anon_ToolBar {
   @scala.inline
   def apply(ToolBar: Boolean): Anon_ToolBar = {
-    val __obj = js.Dynamic.literal(ToolBar = ToolBar)
+    val __obj = js.Dynamic.literal(ToolBar = ToolBar.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ToolBar]
   }

@@ -72,12 +72,12 @@ object CSVConfig {
     hasHeader: js.UndefOr[Boolean] = js.undefined
   ): CSVConfig = {
     val __obj = js.Dynamic.literal()
-    if (columnConfigs != null) __obj.updateDynamic("columnConfigs")(columnConfigs)
-    if (columnNames != null) __obj.updateDynamic("columnNames")(columnNames)
-    if (!js.isUndefined(configuredColumnsOnly)) __obj.updateDynamic("configuredColumnsOnly")(configuredColumnsOnly)
-    if (!js.isUndefined(delimWhitespace)) __obj.updateDynamic("delimWhitespace")(delimWhitespace)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (!js.isUndefined(hasHeader)) __obj.updateDynamic("hasHeader")(hasHeader)
+    if (columnConfigs != null) __obj.updateDynamic("columnConfigs")(columnConfigs.asInstanceOf[js.Any])
+    if (columnNames != null) __obj.updateDynamic("columnNames")(columnNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(configuredColumnsOnly)) __obj.updateDynamic("configuredColumnsOnly")(configuredColumnsOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(delimWhitespace)) __obj.updateDynamic("delimWhitespace")(delimWhitespace.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasHeader)) __obj.updateDynamic("hasHeader")(hasHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSVConfig]
   }
 }

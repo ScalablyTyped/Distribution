@@ -34,16 +34,16 @@ object PartialStyleRulesStepConnectorClasskey {
     vertical: CSSProperties = null
   ): PartialStyleRulesStepConnectorClasskey = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (alternativeLabel != null) __obj.updateDynamic("alternativeLabel")(alternativeLabel)
-    if (completed != null) __obj.updateDynamic("completed")(completed)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (lineHorizontal != null) __obj.updateDynamic("lineHorizontal")(lineHorizontal)
-    if (lineVertical != null) __obj.updateDynamic("lineVertical")(lineVertical)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (alternativeLabel != null) __obj.updateDynamic("alternativeLabel")(alternativeLabel.asInstanceOf[js.Any])
+    if (completed != null) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (lineHorizontal != null) __obj.updateDynamic("lineHorizontal")(lineHorizontal.asInstanceOf[js.Any])
+    if (lineVertical != null) __obj.updateDynamic("lineVertical")(lineVertical.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesStepConnectorClasskey]
   }
 }

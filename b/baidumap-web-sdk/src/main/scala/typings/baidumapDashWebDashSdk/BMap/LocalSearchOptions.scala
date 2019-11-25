@@ -30,7 +30,7 @@ object LocalSearchOptions {
     if (onResultsHtmlSet != null) __obj.updateDynamic("onResultsHtmlSet")(js.Any.fromFunction1(onResultsHtmlSet))
     if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(js.Any.fromFunction1(onSearchComplete))
     if (pageCapacity != null) __obj.updateDynamic("pageCapacity")(pageCapacity.asInstanceOf[js.Any])
-    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions)
+    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalSearchOptions]
   }
 }

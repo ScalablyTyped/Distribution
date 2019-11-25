@@ -10,8 +10,8 @@ trait IObjectID extends js.Object {
 
 object IObjectID {
   @scala.inline
-  def apply(toHexString: () => String, toString: () => String): IObjectID = {
-    val __obj = js.Dynamic.literal(toHexString = js.Any.fromFunction0(toHexString), toString = js.Any.fromFunction0(toString))
+  def apply(toHexString: () => String): IObjectID = {
+    val __obj = js.Dynamic.literal(toHexString = js.Any.fromFunction0(toHexString))
   
     __obj.asInstanceOf[IObjectID]
   }

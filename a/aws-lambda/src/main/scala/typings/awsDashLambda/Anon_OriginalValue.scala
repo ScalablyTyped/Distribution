@@ -15,7 +15,7 @@ trait Anon_OriginalValue extends js.Object {
 object Anon_OriginalValue {
   @scala.inline
   def apply(originalValue: String, resolutions: js.Array[LexSlotResolution]): Anon_OriginalValue = {
-    val __obj = js.Dynamic.literal(originalValue = originalValue, resolutions = resolutions)
+    val __obj = js.Dynamic.literal(originalValue = originalValue.asInstanceOf[js.Any], resolutions = resolutions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OriginalValue]
   }

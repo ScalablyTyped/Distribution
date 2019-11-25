@@ -68,13 +68,13 @@ object PlusBluetoothBluetoothDeviceInfo {
     serviceData: js.Any = null
   ): PlusBluetoothBluetoothDeviceInfo = {
     val __obj = js.Dynamic.literal()
-    if (RSSI != null) __obj.updateDynamic("RSSI")(RSSI)
-    if (advertisData != null) __obj.updateDynamic("advertisData")(advertisData)
-    if (advertisServiceUUIDs != null) __obj.updateDynamic("advertisServiceUUIDs")(advertisServiceUUIDs)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (localName != null) __obj.updateDynamic("localName")(localName)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (serviceData != null) __obj.updateDynamic("serviceData")(serviceData)
+    if (RSSI != null) __obj.updateDynamic("RSSI")(RSSI.asInstanceOf[js.Any])
+    if (advertisData != null) __obj.updateDynamic("advertisData")(advertisData.asInstanceOf[js.Any])
+    if (advertisServiceUUIDs != null) __obj.updateDynamic("advertisServiceUUIDs")(advertisServiceUUIDs.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (localName != null) __obj.updateDynamic("localName")(localName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (serviceData != null) __obj.updateDynamic("serviceData")(serviceData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusBluetoothBluetoothDeviceInfo]
   }
 }

@@ -35,13 +35,13 @@ object ToRelativeOptions {
     unit: ToRelativeUnit = null
   ): ToRelativeOptions = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToRelativeOptions]
   }
 }

@@ -30,8 +30,8 @@ object GoogleActionsV2OrdersReceipt {
   @scala.inline
   def apply(confirmedActionOrderId: String = null, userVisibleOrderId: String = null): GoogleActionsV2OrdersReceipt = {
     val __obj = js.Dynamic.literal()
-    if (confirmedActionOrderId != null) __obj.updateDynamic("confirmedActionOrderId")(confirmedActionOrderId)
-    if (userVisibleOrderId != null) __obj.updateDynamic("userVisibleOrderId")(userVisibleOrderId)
+    if (confirmedActionOrderId != null) __obj.updateDynamic("confirmedActionOrderId")(confirmedActionOrderId.asInstanceOf[js.Any])
+    if (userVisibleOrderId != null) __obj.updateDynamic("userVisibleOrderId")(userVisibleOrderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersReceipt]
   }
 }

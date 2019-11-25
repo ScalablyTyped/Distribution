@@ -14,7 +14,7 @@ trait FTGetFileInfo extends js.Object {
 object FTGetFileInfo {
   @scala.inline
   def apply(cid: Double, datetime: Double, name: String, size: Double): FTGetFileInfo = {
-    val __obj = js.Dynamic.literal(cid = cid, datetime = datetime, name = name, size = size)
+    val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FTGetFileInfo]
   }

@@ -25,11 +25,11 @@ object completeDecrypt {
     `protected`: js.Object = null,
     unprotected: js.Object = null
   ): completeDecrypt = {
-    val __obj = js.Dynamic.literal(cleartext = cleartext, key = key)
-    if (aad != null) __obj.updateDynamic("aad")(aad)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (`protected` != null) __obj.updateDynamic("protected")(`protected`)
-    if (unprotected != null) __obj.updateDynamic("unprotected")(unprotected)
+    val __obj = js.Dynamic.literal(cleartext = cleartext.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    if (aad != null) __obj.updateDynamic("aad")(aad.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (`protected` != null) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
+    if (unprotected != null) __obj.updateDynamic("unprotected")(unprotected.asInstanceOf[js.Any])
     __obj.asInstanceOf[completeDecrypt]
   }
 }

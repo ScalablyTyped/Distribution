@@ -17,8 +17,8 @@ trait Anon_PixelPoint extends js.Object {
 object Anon_PixelPoint {
   @scala.inline
   def apply(pixel: Pixel, point: Point, target: js.Any, `type`: String, zoom: Double): Anon_PixelPoint = {
-    val __obj = js.Dynamic.literal(pixel = pixel, point = point, target = target, zoom = zoom)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(pixel = pixel.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PixelPoint]
   }
 }

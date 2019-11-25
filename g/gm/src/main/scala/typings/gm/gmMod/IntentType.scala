@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait IntentType extends js.Object
 
+object IntentType {
+  @scala.inline
+  def Absolute: typings.gm.gmStrings.Absolute = this.cast("Absolute")
+  @scala.inline
+  def Perceptual: typings.gm.gmStrings.Perceptual = this.cast("Perceptual")
+  @scala.inline
+  def Relative: typings.gm.gmStrings.Relative = this.cast("Relative")
+  @scala.inline
+  def Saturation: typings.gm.gmStrings.Saturation = this.cast("Saturation")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

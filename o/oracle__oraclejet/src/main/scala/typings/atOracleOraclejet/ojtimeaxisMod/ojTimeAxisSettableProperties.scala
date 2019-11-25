@@ -37,7 +37,7 @@ object ojTimeAxisSettableProperties {
     trackResize: on | off,
     translations: Anon_ComponentNameLabelAndValue
   ): ojTimeAxisSettableProperties = {
-    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], end = end, scale = scale.asInstanceOf[js.Any], start = start, trackResize = trackResize.asInstanceOf[js.Any], translations = translations)
+    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojTimeAxisSettableProperties]
   }

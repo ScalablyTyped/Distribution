@@ -20,9 +20,9 @@ object GridLayoutGrid {
     color: RGBA = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): GridLayoutGrid = {
-    val __obj = js.Dynamic.literal(pattern = pattern, sectionSize = sectionSize)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any], sectionSize = sectionSize.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridLayoutGrid]
   }
 }

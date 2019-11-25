@@ -24,10 +24,10 @@ object BooksAnnotationsRange {
     startPosition: String = null
   ): BooksAnnotationsRange = {
     val __obj = js.Dynamic.literal()
-    if (endOffset != null) __obj.updateDynamic("endOffset")(endOffset)
-    if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition)
-    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset)
-    if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition)
+    if (endOffset != null) __obj.updateDynamic("endOffset")(endOffset.asInstanceOf[js.Any])
+    if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition.asInstanceOf[js.Any])
+    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
+    if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[BooksAnnotationsRange]
   }
 }

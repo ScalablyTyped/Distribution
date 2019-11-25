@@ -17,9 +17,9 @@ object UpdatePageElementTransformRequest {
   @scala.inline
   def apply(applyMode: String = null, objectId: String = null, transform: AffineTransform = null): UpdatePageElementTransformRequest = {
     val __obj = js.Dynamic.literal()
-    if (applyMode != null) __obj.updateDynamic("applyMode")(applyMode)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (applyMode != null) __obj.updateDynamic("applyMode")(applyMode.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePageElementTransformRequest]
   }
 }

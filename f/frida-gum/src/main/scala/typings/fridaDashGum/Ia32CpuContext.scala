@@ -32,7 +32,7 @@ object Ia32CpuContext {
     pc: NativePointer,
     sp: NativePointer
   ): Ia32CpuContext = {
-    val __obj = js.Dynamic.literal(eax = eax, ebp = ebp, ebx = ebx, ecx = ecx, edi = edi, edx = edx, eip = eip, esi = esi, esp = esp, pc = pc, sp = sp)
+    val __obj = js.Dynamic.literal(eax = eax.asInstanceOf[js.Any], ebp = ebp.asInstanceOf[js.Any], ebx = ebx.asInstanceOf[js.Any], ecx = ecx.asInstanceOf[js.Any], edi = edi.asInstanceOf[js.Any], edx = edx.asInstanceOf[js.Any], eip = eip.asInstanceOf[js.Any], esi = esi.asInstanceOf[js.Any], esp = esp.asInstanceOf[js.Any], pc = pc.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Ia32CpuContext]
   }

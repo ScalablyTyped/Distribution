@@ -27,8 +27,8 @@ trait defaultCube extends js.Object {
 object defaultCube {
   @scala.inline
   def apply(bottom: Object, top: Object, `type`: String): defaultCube = {
-    val __obj = js.Dynamic.literal(bottom = bottom, top = top)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultCube]
   }
 }

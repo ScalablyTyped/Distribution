@@ -12,7 +12,7 @@ trait Anon_AngleAndHeight extends js.Object {
 object Anon_AngleAndHeight {
   @scala.inline
   def apply(angleAndHeight: Anon_EndPosition, distance: Anon_EndPosition): Anon_AngleAndHeight = {
-    val __obj = js.Dynamic.literal(angleAndHeight = angleAndHeight, distance = distance)
+    val __obj = js.Dynamic.literal(angleAndHeight = angleAndHeight.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AngleAndHeight]
   }

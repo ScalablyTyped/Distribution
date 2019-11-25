@@ -13,9 +13,9 @@ trait PlaceDetailsRequest extends js.Object {
 object PlaceDetailsRequest {
   @scala.inline
   def apply(placeId: String, fields: js.Array[String] = null, sessionToken: AutocompleteSessionToken = null): PlaceDetailsRequest = {
-    val __obj = js.Dynamic.literal(placeId = placeId)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
+    val __obj = js.Dynamic.literal(placeId = placeId.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceDetailsRequest]
   }
 }

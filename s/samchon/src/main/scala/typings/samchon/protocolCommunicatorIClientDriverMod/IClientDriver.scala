@@ -31,7 +31,7 @@ object IClientDriver {
     replyData: Invoke => Unit,
     sendData: Invoke => Unit
   ): IClientDriver = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isConnected = js.Any.fromFunction0(isConnected), listen = js.Any.fromFunction1(listen), onClose = onClose, replyData = js.Any.fromFunction1(replyData), sendData = js.Any.fromFunction1(sendData))
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isConnected = js.Any.fromFunction0(isConnected), listen = js.Any.fromFunction1(listen), onClose = onClose.asInstanceOf[js.Any], replyData = js.Any.fromFunction1(replyData), sendData = js.Any.fromFunction1(sendData))
   
     __obj.asInstanceOf[IClientDriver]
   }

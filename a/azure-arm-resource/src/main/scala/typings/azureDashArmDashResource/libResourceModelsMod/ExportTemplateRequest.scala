@@ -21,8 +21,8 @@ object ExportTemplateRequest {
   @scala.inline
   def apply(options: String = null, resources: js.Array[String] = null): ExportTemplateRequest = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTemplateRequest]
   }
 }

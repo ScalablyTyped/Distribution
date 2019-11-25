@@ -41,32 +41,26 @@ object IMonth {
   def apply(
     IComponent: IComponent = null,
     adjustYear: /* offset */ js.UndefOr[Double] => Unit = null,
-    baseCls: java.lang.String = null,
     cancelText: java.lang.String = null,
     getValue: () => Array = null,
     hasSelection: () => Boolean = null,
     okText: java.lang.String = null,
-    onDestroy: () => Unit = null,
-    renderTpl: js.Any = null,
     selectedCls: java.lang.String = null,
     setValue: /* value */ js.UndefOr[js.Any] => IMonth = null,
     showButtons: js.UndefOr[Boolean] = js.undefined,
     value: js.Any = null
   ): IMonth = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     if (adjustYear != null) __obj.updateDynamic("adjustYear")(js.Any.fromFunction1(adjustYear))
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (hasSelection != null) __obj.updateDynamic("hasSelection")(js.Any.fromFunction0(hasSelection))
-    if (okText != null) __obj.updateDynamic("okText")(okText)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
-    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls)
+    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
+    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls.asInstanceOf[js.Any])
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMonth]
   }
 }

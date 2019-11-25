@@ -38,9 +38,9 @@ object IOptions {
     tabsMovable: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (tabPlacement != null) __obj.updateDynamic("tabPlacement")(tabPlacement)
-    if (!js.isUndefined(tabsMovable)) __obj.updateDynamic("tabsMovable")(tabsMovable)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (tabPlacement != null) __obj.updateDynamic("tabPlacement")(tabPlacement.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabsMovable)) __obj.updateDynamic("tabsMovable")(tabsMovable.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

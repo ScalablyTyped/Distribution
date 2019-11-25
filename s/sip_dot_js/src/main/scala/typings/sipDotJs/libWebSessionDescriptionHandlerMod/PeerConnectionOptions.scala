@@ -15,7 +15,7 @@ object PeerConnectionOptions {
   def apply(iceCheckingTimeout: Int | Double = null, rtcConfiguration: RTCConfiguration = null): PeerConnectionOptions = {
     val __obj = js.Dynamic.literal()
     if (iceCheckingTimeout != null) __obj.updateDynamic("iceCheckingTimeout")(iceCheckingTimeout.asInstanceOf[js.Any])
-    if (rtcConfiguration != null) __obj.updateDynamic("rtcConfiguration")(rtcConfiguration)
+    if (rtcConfiguration != null) __obj.updateDynamic("rtcConfiguration")(rtcConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerConnectionOptions]
   }
 }

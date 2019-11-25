@@ -15,7 +15,7 @@ object Settings {
   @scala.inline
   def apply(rowReorder: RowReorderSettings = null): Settings = {
     val __obj = js.Dynamic.literal()
-    if (rowReorder != null) __obj.updateDynamic("rowReorder")(rowReorder)
+    if (rowReorder != null) __obj.updateDynamic("rowReorder")(rowReorder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

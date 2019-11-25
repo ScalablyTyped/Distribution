@@ -18,9 +18,9 @@ object Anon_CustomMessage {
     transferReason: String = null
   ): Anon_CustomMessage = {
     val __obj = js.Dynamic.literal()
-    if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage)
-    if (!js.isUndefined(toAccount)) __obj.updateDynamic("toAccount")(toAccount)
-    if (transferReason != null) __obj.updateDynamic("transferReason")(transferReason)
+    if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(toAccount)) __obj.updateDynamic("toAccount")(toAccount.asInstanceOf[js.Any])
+    if (transferReason != null) __obj.updateDynamic("transferReason")(transferReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomMessage]
   }
 }

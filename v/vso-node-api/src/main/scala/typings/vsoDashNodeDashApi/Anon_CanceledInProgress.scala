@@ -29,7 +29,7 @@ object Anon_CanceledInProgress {
     succeeded: Double,
     undefined: Double
   ): Anon_CanceledInProgress = {
-    val __obj = js.Dynamic.literal(canceled = canceled, inProgress = inProgress, notStarted = notStarted, partiallySucceeded = partiallySucceeded, queued = queued, rejected = rejected, scheduled = scheduled, succeeded = succeeded, undefined = undefined)
+    val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], notStarted = notStarted.asInstanceOf[js.Any], partiallySucceeded = partiallySucceeded.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], scheduled = scheduled.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CanceledInProgress]
   }

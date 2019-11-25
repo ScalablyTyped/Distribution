@@ -13,7 +13,7 @@ trait Progress extends js.Object {
 object Progress {
   @scala.inline
   def apply(percent: Double, transferred: Double, total: Int | Double = null): Progress = {
-    val __obj = js.Dynamic.literal(percent = percent, transferred = transferred)
+    val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any], transferred = transferred.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }

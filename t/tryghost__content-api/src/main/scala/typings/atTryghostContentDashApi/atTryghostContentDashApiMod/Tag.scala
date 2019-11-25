@@ -31,15 +31,15 @@ object Tag {
     url: String = null,
     visibility: TagVisibility = null
   ): Tag = {
-    val __obj = js.Dynamic.literal(id = id, slug = slug)
-    if (count != null) __obj.updateDynamic("count")(count)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (feature_image != null) __obj.updateDynamic("feature_image")(feature_image.asInstanceOf[js.Any])
     if (meta_description != null) __obj.updateDynamic("meta_description")(meta_description.asInstanceOf[js.Any])
     if (meta_title != null) __obj.updateDynamic("meta_title")(meta_title.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
 }

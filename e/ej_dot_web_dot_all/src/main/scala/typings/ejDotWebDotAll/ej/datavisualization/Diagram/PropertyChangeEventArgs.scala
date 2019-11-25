@@ -40,13 +40,13 @@ object PropertyChangeEventArgs {
     propertyName: String = null
   ): PropertyChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (cause != null) __obj.updateDynamic("cause")(cause)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
-    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyChangeEventArgs]
   }
 }

@@ -19,7 +19,7 @@ trait ProgressToneStart extends VoxImplantCallEvent {
 object ProgressToneStart {
   @scala.inline
   def apply(call: Call): ProgressToneStart = {
-    val __obj = js.Dynamic.literal(call = call)
+    val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProgressToneStart]
   }

@@ -62,15 +62,15 @@ object ReposCreateDeploymentParams {
     task: String = null,
     transient_environment: js.UndefOr[Boolean] = js.undefined
   ): ReposCreateDeploymentParams = {
-    val __obj = js.Dynamic.literal(owner = owner, ref = ref, repo = repo)
-    if (!js.isUndefined(auto_merge)) __obj.updateDynamic("auto_merge")(auto_merge)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (!js.isUndefined(production_environment)) __obj.updateDynamic("production_environment")(production_environment)
-    if (required_contexts != null) __obj.updateDynamic("required_contexts")(required_contexts)
-    if (task != null) __obj.updateDynamic("task")(task)
-    if (!js.isUndefined(transient_environment)) __obj.updateDynamic("transient_environment")(transient_environment)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto_merge)) __obj.updateDynamic("auto_merge")(auto_merge.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(production_environment)) __obj.updateDynamic("production_environment")(production_environment.asInstanceOf[js.Any])
+    if (required_contexts != null) __obj.updateDynamic("required_contexts")(required_contexts.asInstanceOf[js.Any])
+    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
+    if (!js.isUndefined(transient_environment)) __obj.updateDynamic("transient_environment")(transient_environment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateDeploymentParams]
   }
 }

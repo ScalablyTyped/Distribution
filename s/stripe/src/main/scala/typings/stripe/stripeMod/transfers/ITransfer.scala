@@ -139,10 +139,10 @@ object ITransfer {
     `type`: card | bank_account | stripe_account,
     transfer_group: String = null
   ): ITransfer = {
-    val __obj = js.Dynamic.literal(amount = amount, amount_reversed = amount_reversed, application_fee = application_fee, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, date = date, description = description, destination = destination.asInstanceOf[js.Any], destination_payment = destination_payment, failure_code = failure_code, failure_message = failure_message, id = id, livemode = livemode, metadata = metadata, reversals = reversals, reversed = reversed, source_transaction = source_transaction.asInstanceOf[js.Any], source_type = source_type, statement_descriptor = statement_descriptor, status = status)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_reversed = amount_reversed.asInstanceOf[js.Any], application_fee = application_fee.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], destination_payment = destination_payment.asInstanceOf[js.Any], failure_code = failure_code.asInstanceOf[js.Any], failure_message = failure_message.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reversals = reversals.asInstanceOf[js.Any], reversed = reversed.asInstanceOf[js.Any], source_transaction = source_transaction.asInstanceOf[js.Any], source_type = source_type.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransfer]
   }
 }

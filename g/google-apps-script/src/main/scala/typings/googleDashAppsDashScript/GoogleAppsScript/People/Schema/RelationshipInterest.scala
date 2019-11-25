@@ -14,9 +14,9 @@ object RelationshipInterest {
   @scala.inline
   def apply(formattedValue: String = null, metadata: FieldMetadata = null, value: String = null): RelationshipInterest = {
     val __obj = js.Dynamic.literal()
-    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipInterest]
   }
 }

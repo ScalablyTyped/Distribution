@@ -41,11 +41,11 @@ object Options {
     trackUpdates: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
     if (pageOffset != null) __obj.updateDynamic("pageOffset")(pageOffset.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (!js.isUndefined(trackUpdates)) __obj.updateDynamic("trackUpdates")(trackUpdates)
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackUpdates)) __obj.updateDynamic("trackUpdates")(trackUpdates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

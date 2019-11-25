@@ -15,8 +15,8 @@ trait ImmerState[T] extends js.Object {
 object ImmerState {
   @scala.inline
   def apply[T](assigned: StringDictionary[Boolean], base: T, copy: T, parent: ImmerState[_] = null): ImmerState[T] = {
-    val __obj = js.Dynamic.literal(assigned = assigned, base = base.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(assigned = assigned.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmerState[T]]
   }
 }

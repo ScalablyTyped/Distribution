@@ -52,15 +52,15 @@ object StarRatingComponentProps {
     starColor: String = null,
     starCount: Int | Double = null
   ): StarRatingComponentProps = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing)
-    if (emptyStarColor != null) __obj.updateDynamic("emptyStarColor")(emptyStarColor)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing.asInstanceOf[js.Any])
+    if (emptyStarColor != null) __obj.updateDynamic("emptyStarColor")(emptyStarColor.asInstanceOf[js.Any])
     if (onStarClick != null) __obj.updateDynamic("onStarClick")(js.Any.fromFunction3(onStarClick))
     if (onStarHover != null) __obj.updateDynamic("onStarHover")(js.Any.fromFunction3(onStarHover))
     if (onStarHoverOut != null) __obj.updateDynamic("onStarHoverOut")(js.Any.fromFunction3(onStarHoverOut))
     if (renderStarIcon != null) __obj.updateDynamic("renderStarIcon")(js.Any.fromFunction3(renderStarIcon))
     if (renderStarIconHalf != null) __obj.updateDynamic("renderStarIconHalf")(js.Any.fromFunction3(renderStarIconHalf))
-    if (starColor != null) __obj.updateDynamic("starColor")(starColor)
+    if (starColor != null) __obj.updateDynamic("starColor")(starColor.asInstanceOf[js.Any])
     if (starCount != null) __obj.updateDynamic("starCount")(starCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[StarRatingComponentProps]
   }

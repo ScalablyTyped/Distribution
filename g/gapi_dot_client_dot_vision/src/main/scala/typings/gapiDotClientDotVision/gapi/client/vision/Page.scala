@@ -24,9 +24,9 @@ object Page {
     width: Int | Double = null
   ): Page = {
     val __obj = js.Dynamic.literal()
-    if (blocks != null) __obj.updateDynamic("blocks")(blocks)
+    if (blocks != null) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }

@@ -19,8 +19,8 @@ object ClientSendOptions {
   @scala.inline
   def apply(sandbox: Sandbox = null, url: String = null): ClientSendOptions = {
     val __obj = js.Dynamic.literal()
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientSendOptions]
   }
 }

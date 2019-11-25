@@ -27,11 +27,11 @@ object Context {
     tag: Tag = null,
     tagCtx: js.Any = null
   ): Context = {
-    val __obj = js.Dynamic.literal(root = root)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (parentTags != null) __obj.updateDynamic("parentTags")(parentTags)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (tagCtx != null) __obj.updateDynamic("tagCtx")(tagCtx)
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (parentTags != null) __obj.updateDynamic("parentTags")(parentTags.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (tagCtx != null) __obj.updateDynamic("tagCtx")(tagCtx.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

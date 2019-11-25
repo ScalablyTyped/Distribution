@@ -29,19 +29,17 @@ object ButtonProps {
     bsClass: String = null,
     bsSize: Sizes = null,
     bsStyle: String = null,
-    componentClass: ReactType[_] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined
+    componentClass: ReactType[_] = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
+    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     __obj.asInstanceOf[ButtonProps]
   }
 }

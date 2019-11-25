@@ -26,9 +26,9 @@ object IArraySplice {
     removedCount: Double,
     `type`: splice
   ): IArraySplice[T] = {
-    val __obj = js.Dynamic.literal(added = added, addedCount = addedCount, index = index, removed = removed, removedCount = removedCount)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], removedCount = removedCount.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IArraySplice[T]]
   }
 }

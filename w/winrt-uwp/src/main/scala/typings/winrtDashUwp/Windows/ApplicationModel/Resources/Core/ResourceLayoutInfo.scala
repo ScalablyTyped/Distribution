@@ -27,7 +27,7 @@ object ResourceLayoutInfo {
     namedResourceCount: Double,
     resourceSubtreeCount: Double
   ): ResourceLayoutInfo = {
-    val __obj = js.Dynamic.literal(checksum = checksum, majorVersion = majorVersion, minorVersion = minorVersion, namedResourceCount = namedResourceCount, resourceSubtreeCount = resourceSubtreeCount)
+    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], majorVersion = majorVersion.asInstanceOf[js.Any], minorVersion = minorVersion.asInstanceOf[js.Any], namedResourceCount = namedResourceCount.asInstanceOf[js.Any], resourceSubtreeCount = resourceSubtreeCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceLayoutInfo]
   }

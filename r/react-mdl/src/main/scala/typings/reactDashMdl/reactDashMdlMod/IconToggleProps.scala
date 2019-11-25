@@ -20,16 +20,12 @@ object IconToggleProps {
     name: String,
     AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
     ClassAttributes: ClassAttributes[js.Any] = null,
-    RippleComponent: RippleComponent = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined
+    RippleComponent: RippleComponent = null
   ): IconToggleProps = {
-    val __obj = js.Dynamic.literal(name = name)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, RippleComponent)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
     __obj.asInstanceOf[IconToggleProps]
   }
 }

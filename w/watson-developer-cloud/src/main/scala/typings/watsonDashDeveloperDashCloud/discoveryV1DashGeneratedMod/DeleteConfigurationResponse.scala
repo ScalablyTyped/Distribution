@@ -17,8 +17,8 @@ trait DeleteConfigurationResponse extends js.Object {
 object DeleteConfigurationResponse {
   @scala.inline
   def apply(configuration_id: String, status: String, notices: js.Array[Notice] = null): DeleteConfigurationResponse = {
-    val __obj = js.Dynamic.literal(configuration_id = configuration_id, status = status)
-    if (notices != null) __obj.updateDynamic("notices")(notices)
+    val __obj = js.Dynamic.literal(configuration_id = configuration_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (notices != null) __obj.updateDynamic("notices")(notices.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConfigurationResponse]
   }
 }

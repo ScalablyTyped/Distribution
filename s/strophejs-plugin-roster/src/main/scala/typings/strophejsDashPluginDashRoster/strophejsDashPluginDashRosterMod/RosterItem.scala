@@ -24,7 +24,7 @@ object RosterItem {
     resources: StringDictionary[RosterResource],
     subscription: RosterSubscriptionState
   ): RosterItem = {
-    val __obj = js.Dynamic.literal(ask = ask, groups = groups, jid = jid, name = name, resources = resources, subscription = subscription)
+    val __obj = js.Dynamic.literal(ask = ask.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], jid = jid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RosterItem]
   }

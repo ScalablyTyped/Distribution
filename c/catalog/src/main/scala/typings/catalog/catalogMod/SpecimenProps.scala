@@ -20,8 +20,8 @@ object SpecimenProps {
   @scala.inline
   def apply(rawBody: String = null, rawOptions: String = null, span: `1` | `2` | `3` | `4` | `5` | `6` = null): SpecimenProps = {
     val __obj = js.Dynamic.literal()
-    if (rawBody != null) __obj.updateDynamic("rawBody")(rawBody)
-    if (rawOptions != null) __obj.updateDynamic("rawOptions")(rawOptions)
+    if (rawBody != null) __obj.updateDynamic("rawBody")(rawBody.asInstanceOf[js.Any])
+    if (rawOptions != null) __obj.updateDynamic("rawOptions")(rawOptions.asInstanceOf[js.Any])
     if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecimenProps]
   }

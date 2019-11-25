@@ -22,7 +22,7 @@ object ServiceObjectParent {
     Promise: PromiseConstructor = null
   ): ServiceObjectParent = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction2(request), requestStream = js.Any.fromFunction1(requestStream))
-    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceObjectParent]
   }
 }

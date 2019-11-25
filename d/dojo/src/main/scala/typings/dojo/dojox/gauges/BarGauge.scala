@@ -1,7 +1,6 @@
 package typings.dojo.dojox.gauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.dataHeight
 import typings.dojo.dojoStrings.dataWidth
 import typings.dojo.dojoStrings.dataX
@@ -78,12 +77,44 @@ class BarGauge () extends _Gauge {
   @JSName("set")
   def set_dataY(property: dataY, value: Double): Unit = js.native
   @JSName("watch")
-  def watch_dataHeight(property: dataHeight, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_dataHeight(
+    property: dataHeight,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dataWidth(property: dataWidth, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_dataWidth(
+    property: dataWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dataX(property: dataX, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_dataX(
+    property: dataX,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dataY(property: dataY, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_dataY(
+    property: dataY,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

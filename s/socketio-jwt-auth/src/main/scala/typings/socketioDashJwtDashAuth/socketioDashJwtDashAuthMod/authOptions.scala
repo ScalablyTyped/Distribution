@@ -13,9 +13,9 @@ trait authOptions extends js.Object {
 object authOptions {
   @scala.inline
   def apply(secret: String, algorithm: String = null, succeedWithoutToken: js.UndefOr[Boolean] = js.undefined): authOptions = {
-    val __obj = js.Dynamic.literal(secret = secret)
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
-    if (!js.isUndefined(succeedWithoutToken)) __obj.updateDynamic("succeedWithoutToken")(succeedWithoutToken)
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
+    if (!js.isUndefined(succeedWithoutToken)) __obj.updateDynamic("succeedWithoutToken")(succeedWithoutToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[authOptions]
   }
 }

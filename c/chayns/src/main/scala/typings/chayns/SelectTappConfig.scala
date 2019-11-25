@@ -22,9 +22,9 @@ object SelectTappConfig {
   ): SelectTappConfig = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (internalName != null) __obj.updateDynamic("internalName")(internalName)
+    if (internalName != null) __obj.updateDynamic("internalName")(internalName.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (showName != null) __obj.updateDynamic("showName")(showName)
+    if (showName != null) __obj.updateDynamic("showName")(showName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectTappConfig]
   }
 }

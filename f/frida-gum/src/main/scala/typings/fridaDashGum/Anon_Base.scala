@@ -21,10 +21,10 @@ object Anon_Base {
     index: X86Register = null,
     segment: X86Register = null
   ): Anon_Base = {
-    val __obj = js.Dynamic.literal(disp = disp, scale = scale)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (segment != null) __obj.updateDynamic("segment")(segment)
+    val __obj = js.Dynamic.literal(disp = disp.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Base]
   }
 }

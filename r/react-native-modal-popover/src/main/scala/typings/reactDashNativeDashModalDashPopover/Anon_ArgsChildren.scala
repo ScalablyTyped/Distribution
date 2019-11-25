@@ -12,7 +12,7 @@ trait Anon_ArgsChildren extends js.Object {
 object Anon_ArgsChildren {
   @scala.inline
   def apply(children: Validator[js.Function1[/* repeated */ _, _]]): Anon_ArgsChildren = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArgsChildren]
   }

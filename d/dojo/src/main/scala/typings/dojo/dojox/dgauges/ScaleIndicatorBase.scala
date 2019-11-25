@@ -1,9 +1,6 @@
 package typings.dojo.dojox.dgauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.animationDuration
 import typings.dojo.dojoStrings.animationEaser
 import typings.dojo.dojoStrings.interactionArea
@@ -86,14 +83,54 @@ class ScaleIndicatorBase () extends IndicatorBase {
     */
   def valueChanged(indicator: js.Any): Unit = js.native
   @JSName("watch")
-  def watch_animationDuration(property: animationDuration, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_animationDuration(
+    property: animationDuration,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_animationEaser(property: animationEaser, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_animationEaser(
+    property: animationEaser,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_interactionArea(property: interactionArea, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_interactionArea(
+    property: interactionArea,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_interactionMode(property: interactionMode, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_interactionMode(
+    property: interactionMode,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_scale(property: scale, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_scale(
+    property: scale,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

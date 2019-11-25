@@ -21,7 +21,7 @@ object SetLocationsRequest {
   @scala.inline
   def apply(locations: js.Array[String] = null): SetLocationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetLocationsRequest]
   }
 }

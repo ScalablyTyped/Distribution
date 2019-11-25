@@ -13,9 +13,9 @@ trait ActiveXObject extends js.Object {
 
 object ActiveXObject {
   @scala.inline
-  def apply(set_Item: (WshEnvironment, Item, js.Array[String], String) => Unit): ActiveXObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("set")(js.Any.fromFunction4(set_Item))
+  def apply(set: (WshEnvironment, Item, js.Array[String], String) => Unit): ActiveXObject = {
+    val __obj = js.Dynamic.literal(set = js.Any.fromFunction4(set))
+  
     __obj.asInstanceOf[ActiveXObject]
   }
 }

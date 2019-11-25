@@ -48,7 +48,7 @@ object Anon_Bottom {
     placement: bottom | left | right | top | bottomRight | topLeft | topRight | bottomLeft | leftTop | leftBottom | rightTop | rightBottom = null,
     trigger: click | focus | contextMenu | hover = null
   ): Anon_Bottom = {
-    val __obj = js.Dynamic.literal(disabled = disabled, icon = icon, transitionName = transitionName)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
     if (okType != null) __obj.updateDynamic("okType")(okType.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])

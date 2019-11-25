@@ -13,9 +13,9 @@ trait CreateRefData extends js.Object {
 object CreateRefData {
   @scala.inline
   def apply(id: String, `type`: String, meta: CreateRefDataMeta = null): CreateRefData = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRefData]
   }
 }

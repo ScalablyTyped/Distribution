@@ -117,7 +117,7 @@ object BeaconsResource {
     register: Anon_AccesstokenAltBearertokenCallback => Request[Beacon],
     update: Anon_AccesstokenAltBeaconName => Request[Beacon]
   ): BeaconsResource = {
-    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), attachments = attachments, deactivate = js.Any.fromFunction1(deactivate), decommission = js.Any.fromFunction1(decommission), delete = js.Any.fromFunction1(delete), diagnostics = diagnostics, get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), register = js.Any.fromFunction1(register), update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), attachments = attachments.asInstanceOf[js.Any], deactivate = js.Any.fromFunction1(deactivate), decommission = js.Any.fromFunction1(decommission), delete = js.Any.fromFunction1(delete), diagnostics = diagnostics.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), register = js.Any.fromFunction1(register), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[BeaconsResource]
   }

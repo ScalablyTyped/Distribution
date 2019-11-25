@@ -12,7 +12,7 @@ trait ClientPointEvent extends js.Object {
 object ClientPointEvent {
   @scala.inline
   def apply(clientX: Double, clientY: Double): ClientPointEvent = {
-    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY)
+    val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientPointEvent]
   }

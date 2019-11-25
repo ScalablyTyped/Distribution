@@ -64,20 +64,20 @@ object DataRequirementCodeFilter {
     valueSetReference: Reference = null,
     valueSetString: String = null
   ): DataRequirementCodeFilter = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_path != null) __obj.updateDynamic("_path")(_path)
-    if (_valueCode != null) __obj.updateDynamic("_valueCode")(_valueCode)
-    if (_valueSetString != null) __obj.updateDynamic("_valueSetString")(_valueSetString)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (valueCode != null) __obj.updateDynamic("valueCode")(valueCode)
-    if (valueCodeableConcept != null) __obj.updateDynamic("valueCodeableConcept")(valueCodeableConcept)
-    if (valueCoding != null) __obj.updateDynamic("valueCoding")(valueCoding)
-    if (valueSetReference != null) __obj.updateDynamic("valueSetReference")(valueSetReference)
-    if (valueSetString != null) __obj.updateDynamic("valueSetString")(valueSetString)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_path != null) __obj.updateDynamic("_path")(_path.asInstanceOf[js.Any])
+    if (_valueCode != null) __obj.updateDynamic("_valueCode")(_valueCode.asInstanceOf[js.Any])
+    if (_valueSetString != null) __obj.updateDynamic("_valueSetString")(_valueSetString.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (valueCode != null) __obj.updateDynamic("valueCode")(valueCode.asInstanceOf[js.Any])
+    if (valueCodeableConcept != null) __obj.updateDynamic("valueCodeableConcept")(valueCodeableConcept.asInstanceOf[js.Any])
+    if (valueCoding != null) __obj.updateDynamic("valueCoding")(valueCoding.asInstanceOf[js.Any])
+    if (valueSetReference != null) __obj.updateDynamic("valueSetReference")(valueSetReference.asInstanceOf[js.Any])
+    if (valueSetString != null) __obj.updateDynamic("valueSetString")(valueSetString.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRequirementCodeFilter]
   }
 }

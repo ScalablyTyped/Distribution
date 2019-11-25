@@ -50,8 +50,8 @@ object INxPivotValuePoint {
     qType: NxCellType,
     qLabel: String = null
   ): INxPivotValuePoint = {
-    val __obj = js.Dynamic.literal(qAttrExps = qAttrExps, qNum = qNum, qText = qText, qType = qType)
-    if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel)
+    val __obj = js.Dynamic.literal(qAttrExps = qAttrExps.asInstanceOf[js.Any], qNum = qNum.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
+    if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxPivotValuePoint]
   }
 }

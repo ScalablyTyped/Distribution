@@ -14,7 +14,7 @@ trait ReadLinkResult extends js.Object {
 object ReadLinkResult {
   @scala.inline
   def apply(keypath: String, ractive: Ractive[Ractive[_]]): ReadLinkResult = {
-    val __obj = js.Dynamic.literal(keypath = keypath, ractive = ractive)
+    val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any], ractive = ractive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadLinkResult]
   }

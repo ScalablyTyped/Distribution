@@ -18,7 +18,7 @@ trait Anon_Dark extends js.Object {
 object Anon_Dark {
   @scala.inline
   def apply(Dark: String, Light: String): Anon_Dark = {
-    val __obj = js.Dynamic.literal(Dark = Dark, Light = Light)
+    val __obj = js.Dynamic.literal(Dark = Dark.asInstanceOf[js.Any], Light = Light.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dark]
   }

@@ -30,7 +30,7 @@ object RunDetails {
     totalSpecsDefined: Int | Double = null
   ): RunDetails = {
     val __obj = js.Dynamic.literal()
-    if (failedExpectations != null) __obj.updateDynamic("failedExpectations")(failedExpectations)
+    if (failedExpectations != null) __obj.updateDynamic("failedExpectations")(failedExpectations.asInstanceOf[js.Any])
     if (totalSpecsDefined != null) __obj.updateDynamic("totalSpecsDefined")(totalSpecsDefined.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunDetails]
   }

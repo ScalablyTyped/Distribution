@@ -15,7 +15,7 @@ trait Anon_DefaultScopeDescriptor extends js.Object {
 object Anon_DefaultScopeDescriptor {
   @scala.inline
   def apply(scopeDescriptor: ScopeDescriptor, value: default | srgb): Anon_DefaultScopeDescriptor = {
-    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefaultScopeDescriptor]
   }

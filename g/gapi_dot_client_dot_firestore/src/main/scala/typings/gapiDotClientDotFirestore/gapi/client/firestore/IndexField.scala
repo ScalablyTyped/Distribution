@@ -20,8 +20,8 @@ object IndexField {
   @scala.inline
   def apply(fieldPath: String = null, mode: String = null): IndexField = {
     val __obj = js.Dynamic.literal()
-    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexField]
   }
 }

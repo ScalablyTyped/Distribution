@@ -13,7 +13,7 @@ trait Router extends js.Object {
 object Router {
   @scala.inline
   def apply(fn: () => Unit, method: String, path: String): Router = {
-    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction0(fn), method = method, path = path)
+    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction0(fn), method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Router]
   }

@@ -15,7 +15,7 @@ object SeriesFunnel3dDataDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: SeriesFunnel3dDataDragDropGuideBoxDefaultOptions = null): SeriesFunnel3dDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesFunnel3dDataDragDropGuideBoxOptions]
   }
 }

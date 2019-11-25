@@ -23,8 +23,8 @@ object Anon_Content {
     smallSegmentGrouping: Anon_Color = null,
     sortOrder: none | random | `value-asc` | `value-desc` | `label-asc` | `label-desc` = null
   ): Anon_Content = {
-    val __obj = js.Dynamic.literal(content = content)
-    if (smallSegmentGrouping != null) __obj.updateDynamic("smallSegmentGrouping")(smallSegmentGrouping)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    if (smallSegmentGrouping != null) __obj.updateDynamic("smallSegmentGrouping")(smallSegmentGrouping.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Content]
   }

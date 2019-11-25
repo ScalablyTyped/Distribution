@@ -11,7 +11,7 @@ trait SubscriptionLike extends Unsubscribable {
 object SubscriptionLike {
   @scala.inline
   def apply(closed: Boolean, unsubscribe: () => Unit): SubscriptionLike = {
-    val __obj = js.Dynamic.literal(closed = closed, unsubscribe = js.Any.fromFunction0(unsubscribe))
+    val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
   
     __obj.asInstanceOf[SubscriptionLike]
   }

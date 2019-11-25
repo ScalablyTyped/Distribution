@@ -28,7 +28,7 @@ object ElementLocation {
     startOffset: Double,
     startTag: StartTagLocation
   ): ElementLocation = {
-    val __obj = js.Dynamic.literal(attrs = attrs, endCol = endCol, endLine = endLine, endOffset = endOffset, endTag = endTag, startCol = startCol, startLine = startLine, startOffset = startOffset, startTag = startTag)
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], endCol = endCol.asInstanceOf[js.Any], endLine = endLine.asInstanceOf[js.Any], endOffset = endOffset.asInstanceOf[js.Any], endTag = endTag.asInstanceOf[js.Any], startCol = startCol.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any], startTag = startTag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ElementLocation]
   }

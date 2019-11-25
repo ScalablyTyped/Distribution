@@ -39,7 +39,7 @@ object ITooltipPosition {
     size: Anon_Height,
     target: Double
   ): ITooltipPosition = {
-    val __obj = js.Dynamic.literal(coord = coord, distance = distance, side = side, size = size, target = target)
+    val __obj = js.Dynamic.literal(coord = coord.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITooltipPosition]
   }

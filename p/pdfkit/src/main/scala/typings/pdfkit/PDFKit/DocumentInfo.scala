@@ -27,13 +27,13 @@ object DocumentInfo {
     Title: String = null
   ): DocumentInfo = {
     val __obj = js.Dynamic.literal()
-    if (Author != null) __obj.updateDynamic("Author")(Author)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (Creator != null) __obj.updateDynamic("Creator")(Creator)
-    if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords)
-    if (ModDate != null) __obj.updateDynamic("ModDate")(ModDate)
-    if (Producer != null) __obj.updateDynamic("Producer")(Producer)
-    if (Title != null) __obj.updateDynamic("Title")(Title)
+    if (Author != null) __obj.updateDynamic("Author")(Author.asInstanceOf[js.Any])
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (Creator != null) __obj.updateDynamic("Creator")(Creator.asInstanceOf[js.Any])
+    if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords.asInstanceOf[js.Any])
+    if (ModDate != null) __obj.updateDynamic("ModDate")(ModDate.asInstanceOf[js.Any])
+    if (Producer != null) __obj.updateDynamic("Producer")(Producer.asInstanceOf[js.Any])
+    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentInfo]
   }
 }

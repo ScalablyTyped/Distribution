@@ -11,6 +11,5 @@ object atUifabricIconsMod extends js.Object {
   def initializeIcons(): Unit = js.native
   def initializeIcons(baseUrl: String): Unit = js.native
   def initializeIcons(baseUrl: String, options: IIconOptions): Unit = js.native
-  type IconNames = typings.atUifabricIcons.libIconNamesMod.IconNames
 }
 

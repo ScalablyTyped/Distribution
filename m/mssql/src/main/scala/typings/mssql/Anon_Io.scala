@@ -28,7 +28,7 @@ object Anon_Io {
     `type`: js.Function0[ISqlType] | ISqlType,
     value: js.Any
   ): Anon_Io = {
-    val __obj = js.Dynamic.literal(io = io, length = length, name = name, precision = precision, scale = scale, tvpType = tvpType, value = value)
+    val __obj = js.Dynamic.literal(io = io.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], tvpType = tvpType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Io]
   }

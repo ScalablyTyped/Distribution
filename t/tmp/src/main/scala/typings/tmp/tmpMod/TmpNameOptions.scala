@@ -22,10 +22,10 @@ object TmpNameOptions {
     tries: Int | Double = null
   ): TmpNameOptions = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (postfix != null) __obj.updateDynamic("postfix")(postfix)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (tries != null) __obj.updateDynamic("tries")(tries.asInstanceOf[js.Any])
     __obj.asInstanceOf[TmpNameOptions]
   }

@@ -32,7 +32,7 @@ trait TraceCategoriesAndOptions extends js.Object {
 object TraceCategoriesAndOptions {
   @scala.inline
   def apply(categoryFilter: String, traceOptions: String): TraceCategoriesAndOptions = {
-    val __obj = js.Dynamic.literal(categoryFilter = categoryFilter, traceOptions = traceOptions)
+    val __obj = js.Dynamic.literal(categoryFilter = categoryFilter.asInstanceOf[js.Any], traceOptions = traceOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TraceCategoriesAndOptions]
   }

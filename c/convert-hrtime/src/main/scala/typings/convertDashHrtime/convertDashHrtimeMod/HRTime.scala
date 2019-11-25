@@ -13,7 +13,7 @@ trait HRTime extends js.Object {
 object HRTime {
   @scala.inline
   def apply(milliseconds: Double, nanoseconds: Double, seconds: Double): HRTime = {
-    val __obj = js.Dynamic.literal(milliseconds = milliseconds, nanoseconds = nanoseconds, seconds = seconds)
+    val __obj = js.Dynamic.literal(milliseconds = milliseconds.asInstanceOf[js.Any], nanoseconds = nanoseconds.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HRTime]
   }

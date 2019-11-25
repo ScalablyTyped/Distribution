@@ -14,7 +14,7 @@ trait Anon_SyncEventType extends js.Object {
 object Anon_SyncEventType {
   @scala.inline
   def apply(SyncEventType: MsoSyncEventType, Wb: Workbook): Anon_SyncEventType = {
-    val __obj = js.Dynamic.literal(SyncEventType = SyncEventType, Wb = Wb)
+    val __obj = js.Dynamic.literal(SyncEventType = SyncEventType.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SyncEventType]
   }

@@ -37,7 +37,7 @@ object Anon_1 {
     scrollToAlignment: auto,
     scrollToIndex: `-1`
   ): Anon_1 = {
-    val __obj = js.Dynamic.literal(autoHeight = autoHeight, estimatedRowSize = estimatedRowSize, noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = overscanRowCount, scrollToAlignment = scrollToAlignment, scrollToIndex = scrollToIndex)
+    val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], estimatedRowSize = estimatedRowSize.asInstanceOf[js.Any], noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = overscanRowCount.asInstanceOf[js.Any], scrollToAlignment = scrollToAlignment.asInstanceOf[js.Any], scrollToIndex = scrollToIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_1]
   }

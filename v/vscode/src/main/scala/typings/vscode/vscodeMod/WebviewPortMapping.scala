@@ -18,7 +18,7 @@ trait WebviewPortMapping extends js.Object {
 object WebviewPortMapping {
   @scala.inline
   def apply(extensionHostPort: Double, webviewPort: Double): WebviewPortMapping = {
-    val __obj = js.Dynamic.literal(extensionHostPort = extensionHostPort, webviewPort = webviewPort)
+    val __obj = js.Dynamic.literal(extensionHostPort = extensionHostPort.asInstanceOf[js.Any], webviewPort = webviewPort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebviewPortMapping]
   }

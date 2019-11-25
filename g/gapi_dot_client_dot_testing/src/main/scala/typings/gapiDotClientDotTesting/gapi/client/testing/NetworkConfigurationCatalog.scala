@@ -12,7 +12,7 @@ object NetworkConfigurationCatalog {
   @scala.inline
   def apply(configurations: js.Array[NetworkConfiguration] = null): NetworkConfigurationCatalog = {
     val __obj = js.Dynamic.literal()
-    if (configurations != null) __obj.updateDynamic("configurations")(configurations)
+    if (configurations != null) __obj.updateDynamic("configurations")(configurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkConfigurationCatalog]
   }
 }

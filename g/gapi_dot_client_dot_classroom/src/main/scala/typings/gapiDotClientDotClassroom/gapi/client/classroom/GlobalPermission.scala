@@ -13,7 +13,7 @@ object GlobalPermission {
   @scala.inline
   def apply(permission: String = null): GlobalPermission = {
     val __obj = js.Dynamic.literal()
-    if (permission != null) __obj.updateDynamic("permission")(permission)
+    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalPermission]
   }
 }

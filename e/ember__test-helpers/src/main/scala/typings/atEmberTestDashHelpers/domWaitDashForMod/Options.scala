@@ -16,7 +16,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timeoutMessage != null) __obj.updateDynamic("timeoutMessage")(timeoutMessage)
+    if (timeoutMessage != null) __obj.updateDynamic("timeoutMessage")(timeoutMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

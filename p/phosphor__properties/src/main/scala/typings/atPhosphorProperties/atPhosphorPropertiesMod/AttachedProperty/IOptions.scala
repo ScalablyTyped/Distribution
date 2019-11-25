@@ -71,7 +71,7 @@ object IOptions {
     coerce: (/* owner */ T, /* value */ U) => U = null,
     compare: (/* oldValue */ U, /* newValue */ U) => Boolean = null
   ): IOptions[T, U] = {
-    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), name = name)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), name = name.asInstanceOf[js.Any])
     if (changed != null) __obj.updateDynamic("changed")(js.Any.fromFunction3(changed))
     if (coerce != null) __obj.updateDynamic("coerce")(js.Any.fromFunction2(coerce))
     if (compare != null) __obj.updateDynamic("compare")(js.Any.fromFunction2(compare))

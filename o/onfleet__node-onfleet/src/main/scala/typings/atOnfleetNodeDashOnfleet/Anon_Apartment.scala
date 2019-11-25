@@ -25,7 +25,7 @@ object Anon_Apartment {
     state: String,
     street: String
   ): Anon_Apartment = {
-    val __obj = js.Dynamic.literal(apartment = apartment, city = city, country = country, number = number, postalCode = postalCode, state = state, street = street)
+    val __obj = js.Dynamic.literal(apartment = apartment.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Apartment]
   }

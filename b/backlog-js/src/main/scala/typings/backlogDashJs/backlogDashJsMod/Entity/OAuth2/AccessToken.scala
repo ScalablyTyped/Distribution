@@ -14,7 +14,7 @@ trait AccessToken extends js.Object {
 object AccessToken {
   @scala.inline
   def apply(access_token: String, expires_in: Double, refresh_token: String, token_type: String): AccessToken = {
-    val __obj = js.Dynamic.literal(access_token = access_token, expires_in = expires_in, refresh_token = refresh_token, token_type = token_type)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], refresh_token = refresh_token.asInstanceOf[js.Any], token_type = token_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccessToken]
   }

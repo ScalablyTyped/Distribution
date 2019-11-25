@@ -12,7 +12,7 @@ object Utf8StringParams {
   @scala.inline
   def apply(value: String = null): Utf8StringParams = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Utf8StringParams]
   }
 }

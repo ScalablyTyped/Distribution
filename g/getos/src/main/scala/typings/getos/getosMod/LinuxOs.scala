@@ -15,8 +15,8 @@ trait LinuxOs extends Os {
 object LinuxOs {
   @scala.inline
   def apply(dist: String, os: linux, release: String, codename: String = null): LinuxOs = {
-    val __obj = js.Dynamic.literal(dist = dist, os = os, release = release)
-    if (codename != null) __obj.updateDynamic("codename")(codename)
+    val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
+    if (codename != null) __obj.updateDynamic("codename")(codename.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinuxOs]
   }
 }

@@ -16,7 +16,7 @@ trait Anon_Event extends js.Object {
 object Anon_Event {
   @scala.inline
   def apply(event: MouseEvent, infoWindow: InfoWindow[_], infoWindowContentDom: HTMLDivElement): Anon_Event = {
-    val __obj = js.Dynamic.literal(event = event, infoWindow = infoWindow, infoWindowContentDom = infoWindowContentDom)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], infoWindow = infoWindow.asInstanceOf[js.Any], infoWindowContentDom = infoWindowContentDom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Event]
   }

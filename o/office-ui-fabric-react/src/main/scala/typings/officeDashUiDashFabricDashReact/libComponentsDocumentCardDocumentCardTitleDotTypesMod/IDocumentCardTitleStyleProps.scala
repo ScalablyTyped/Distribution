@@ -23,9 +23,9 @@ trait IDocumentCardTitleStyleProps extends js.Object {
 object IDocumentCardTitleStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null, showAsSecondaryTitle: js.UndefOr[Boolean] = js.undefined): IDocumentCardTitleStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(showAsSecondaryTitle)) __obj.updateDynamic("showAsSecondaryTitle")(showAsSecondaryTitle)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAsSecondaryTitle)) __obj.updateDynamic("showAsSecondaryTitle")(showAsSecondaryTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardTitleStyleProps]
   }
 }

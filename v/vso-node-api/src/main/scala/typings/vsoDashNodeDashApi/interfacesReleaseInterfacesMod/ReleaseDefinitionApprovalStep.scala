@@ -15,7 +15,7 @@ trait ReleaseDefinitionApprovalStep extends ReleaseDefinitionEnvironmentStep {
 object ReleaseDefinitionApprovalStep {
   @scala.inline
   def apply(approver: IdentityRef, id: Double, isAutomated: Boolean, isNotificationOn: Boolean, rank: Double): ReleaseDefinitionApprovalStep = {
-    val __obj = js.Dynamic.literal(approver = approver, id = id, isAutomated = isAutomated, isNotificationOn = isNotificationOn, rank = rank)
+    val __obj = js.Dynamic.literal(approver = approver.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isAutomated = isAutomated.asInstanceOf[js.Any], isNotificationOn = isNotificationOn.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseDefinitionApprovalStep]
   }

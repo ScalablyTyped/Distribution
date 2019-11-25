@@ -30,7 +30,7 @@ object ActivityResult {
   @scala.inline
   def apply(intent: Intent = null, requestCode: Int | Double = null, resultCode: Int | Double = null): ActivityResult = {
     val __obj = js.Dynamic.literal()
-    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
     if (requestCode != null) __obj.updateDynamic("requestCode")(requestCode.asInstanceOf[js.Any])
     if (resultCode != null) __obj.updateDynamic("resultCode")(resultCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityResult]

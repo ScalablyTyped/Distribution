@@ -13,7 +13,7 @@ trait PendingDescriptor
 object PendingDescriptor {
   @scala.inline
   def apply(state: pending): PendingDescriptor = {
-    val __obj = js.Dynamic.literal(state = state)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PendingDescriptor]
   }

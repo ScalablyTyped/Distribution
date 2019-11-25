@@ -31,12 +31,12 @@ object SourceOptions {
     urls: js.Array[SourceOptionsWebCrawl] = null
   ): SourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
-    if (!js.isUndefined(crawl_all_buckets)) __obj.updateDynamic("crawl_all_buckets")(crawl_all_buckets)
-    if (folders != null) __obj.updateDynamic("folders")(folders)
-    if (objects != null) __obj.updateDynamic("objects")(objects)
-    if (site_collections != null) __obj.updateDynamic("site_collections")(site_collections)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
+    if (!js.isUndefined(crawl_all_buckets)) __obj.updateDynamic("crawl_all_buckets")(crawl_all_buckets.asInstanceOf[js.Any])
+    if (folders != null) __obj.updateDynamic("folders")(folders.asInstanceOf[js.Any])
+    if (objects != null) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
+    if (site_collections != null) __obj.updateDynamic("site_collections")(site_collections.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptions]
   }
 }

@@ -30,15 +30,15 @@ object ToolBarItemMenuButton {
     url: String = null
   ): ToolBarItemMenuButton = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarItemMenuButton]
   }
 }

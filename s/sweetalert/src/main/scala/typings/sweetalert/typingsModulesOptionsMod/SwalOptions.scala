@@ -33,7 +33,7 @@ object SwalOptions {
     timer: Double,
     title: String
   ): SwalOptions = {
-    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], className = className, closeOnClickOutside = closeOnClickOutside, closeOnEsc = closeOnEsc, content = content, dangerMode = dangerMode, icon = icon, text = text, timer = timer, title = title)
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], closeOnClickOutside = closeOnClickOutside.asInstanceOf[js.Any], closeOnEsc = closeOnEsc.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], dangerMode = dangerMode.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], timer = timer.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SwalOptions]
   }

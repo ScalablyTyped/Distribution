@@ -21,7 +21,7 @@ object RenderProps {
     style: StyleObj,
     tokens: js.Array[js.Array[Token]]
   ): RenderProps = {
-    val __obj = js.Dynamic.literal(className = className, getLineProps = js.Any.fromFunction1(getLineProps), getTokenProps = js.Any.fromFunction1(getTokenProps), style = style, tokens = tokens)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], getLineProps = js.Any.fromFunction1(getLineProps), getTokenProps = js.Any.fromFunction1(getTokenProps), style = style.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderProps]
   }

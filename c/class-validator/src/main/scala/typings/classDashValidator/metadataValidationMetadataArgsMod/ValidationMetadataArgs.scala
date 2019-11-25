@@ -47,12 +47,12 @@ object ValidationMetadataArgs {
     validationOptions: ValidationOptions = null,
     validationTypeOptions: js.Any = null
   ): ValidationMetadataArgs = {
-    val __obj = js.Dynamic.literal(propertyName = propertyName, target = target.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (constraintCls != null) __obj.updateDynamic("constraintCls")(constraintCls)
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
-    if (validationOptions != null) __obj.updateDynamic("validationOptions")(validationOptions)
-    if (validationTypeOptions != null) __obj.updateDynamic("validationTypeOptions")(validationTypeOptions)
+    val __obj = js.Dynamic.literal(propertyName = propertyName.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (constraintCls != null) __obj.updateDynamic("constraintCls")(constraintCls.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (validationOptions != null) __obj.updateDynamic("validationOptions")(validationOptions.asInstanceOf[js.Any])
+    if (validationTypeOptions != null) __obj.updateDynamic("validationTypeOptions")(validationTypeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationMetadataArgs]
   }
 }

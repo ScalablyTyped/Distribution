@@ -79,15 +79,15 @@ object AddPermissionInput {
     SourceAccount: String = null,
     SourceArn: String = null
   ): AddPermissionInput = {
-    val __obj = js.Dynamic.literal(Action = Action, FunctionName = FunctionName, Principal = Principal, StatementId = StatementId)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any], Principal = Principal.asInstanceOf[js.Any], StatementId = StatementId.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (EventSourceToken != null) __obj.updateDynamic("EventSourceToken")(EventSourceToken)
-    if (Qualifier != null) __obj.updateDynamic("Qualifier")(Qualifier)
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId)
-    if (SourceAccount != null) __obj.updateDynamic("SourceAccount")(SourceAccount)
-    if (SourceArn != null) __obj.updateDynamic("SourceArn")(SourceArn)
+    if (EventSourceToken != null) __obj.updateDynamic("EventSourceToken")(EventSourceToken.asInstanceOf[js.Any])
+    if (Qualifier != null) __obj.updateDynamic("Qualifier")(Qualifier.asInstanceOf[js.Any])
+    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
+    if (SourceAccount != null) __obj.updateDynamic("SourceAccount")(SourceAccount.asInstanceOf[js.Any])
+    if (SourceArn != null) __obj.updateDynamic("SourceArn")(SourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPermissionInput]
   }
 }

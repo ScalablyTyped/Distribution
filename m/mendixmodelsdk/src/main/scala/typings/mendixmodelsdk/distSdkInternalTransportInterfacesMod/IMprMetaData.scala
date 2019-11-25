@@ -13,7 +13,7 @@ trait IMprMetaData extends js.Object {
 object IMprMetaData {
   @scala.inline
   def apply(_BuildVersion: String, _ProductVersion: String, _SchemaHash: String): IMprMetaData = {
-    val __obj = js.Dynamic.literal(_BuildVersion = _BuildVersion, _ProductVersion = _ProductVersion, _SchemaHash = _SchemaHash)
+    val __obj = js.Dynamic.literal(_BuildVersion = _BuildVersion.asInstanceOf[js.Any], _ProductVersion = _ProductVersion.asInstanceOf[js.Any], _SchemaHash = _SchemaHash.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMprMetaData]
   }

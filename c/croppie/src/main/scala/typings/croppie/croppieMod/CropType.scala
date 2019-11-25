@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait CropType extends js.Object
 
+object CropType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def circle: typings.croppie.croppieStrings.circle = this.cast("circle")
+  @scala.inline
+  def square: typings.croppie.croppieStrings.square = this.cast("square")
+}
+

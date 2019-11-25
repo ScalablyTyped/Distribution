@@ -22,8 +22,8 @@ object AuthenticatorAssertionResponse {
     signature: ArrayBuffer,
     userHandle: ArrayBuffer = null
   ): AuthenticatorAssertionResponse = {
-    val __obj = js.Dynamic.literal(authenticatorData = authenticatorData, clientDataJSON = clientDataJSON, signature = signature)
-    if (userHandle != null) __obj.updateDynamic("userHandle")(userHandle)
+    val __obj = js.Dynamic.literal(authenticatorData = authenticatorData.asInstanceOf[js.Any], clientDataJSON = clientDataJSON.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
+    if (userHandle != null) __obj.updateDynamic("userHandle")(userHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticatorAssertionResponse]
   }
 }

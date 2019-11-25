@@ -11,7 +11,7 @@ trait ResponsePayload extends js.Object {
 object ResponsePayload {
   @scala.inline
   def apply(job_status: ResponseModel): ResponsePayload = {
-    val __obj = js.Dynamic.literal(job_status = job_status)
+    val __obj = js.Dynamic.literal(job_status = job_status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponsePayload]
   }

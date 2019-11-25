@@ -27,9 +27,9 @@ object EmotionCache {
     compat: `true` = null,
     nonce: String = null
   ): EmotionCache = {
-    val __obj = js.Dynamic.literal(inserted = inserted, key = key, registered = registered, sheet = sheet, stylis = js.Any.fromFunction2(stylis))
-    if (compat != null) __obj.updateDynamic("compat")(compat)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(inserted = inserted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], registered = registered.asInstanceOf[js.Any], sheet = sheet.asInstanceOf[js.Any], stylis = js.Any.fromFunction2(stylis))
+    if (compat != null) __obj.updateDynamic("compat")(compat.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmotionCache]
   }
 }

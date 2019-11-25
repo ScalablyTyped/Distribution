@@ -41,9 +41,9 @@ object RetryOptions {
   ): RetryOptions = {
     val __obj = js.Dynamic.literal()
     if (autoAttemptDelay != null) __obj.updateDynamic("autoAttemptDelay")(autoAttemptDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAuto)) __obj.updateDynamic("enableAuto")(enableAuto)
+    if (!js.isUndefined(enableAuto)) __obj.updateDynamic("enableAuto")(enableAuto.asInstanceOf[js.Any])
     if (maxAutoAttempts != null) __obj.updateDynamic("maxAutoAttempts")(maxAutoAttempts.asInstanceOf[js.Any])
-    if (preventRetryResponseProperty != null) __obj.updateDynamic("preventRetryResponseProperty")(preventRetryResponseProperty)
+    if (preventRetryResponseProperty != null) __obj.updateDynamic("preventRetryResponseProperty")(preventRetryResponseProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
 }

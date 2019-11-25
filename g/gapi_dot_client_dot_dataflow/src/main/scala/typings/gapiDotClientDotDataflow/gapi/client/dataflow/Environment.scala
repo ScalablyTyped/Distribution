@@ -81,16 +81,16 @@ object Environment {
     workerPools: js.Array[WorkerPool] = null
   ): Environment = {
     val __obj = js.Dynamic.literal()
-    if (clusterManagerApiService != null) __obj.updateDynamic("clusterManagerApiService")(clusterManagerApiService)
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
-    if (experiments != null) __obj.updateDynamic("experiments")(experiments)
-    if (internalExperiments != null) __obj.updateDynamic("internalExperiments")(internalExperiments)
-    if (sdkPipelineOptions != null) __obj.updateDynamic("sdkPipelineOptions")(sdkPipelineOptions)
-    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail)
-    if (tempStoragePrefix != null) __obj.updateDynamic("tempStoragePrefix")(tempStoragePrefix)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
-    if (version != null) __obj.updateDynamic("version")(version)
-    if (workerPools != null) __obj.updateDynamic("workerPools")(workerPools)
+    if (clusterManagerApiService != null) __obj.updateDynamic("clusterManagerApiService")(clusterManagerApiService.asInstanceOf[js.Any])
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
+    if (experiments != null) __obj.updateDynamic("experiments")(experiments.asInstanceOf[js.Any])
+    if (internalExperiments != null) __obj.updateDynamic("internalExperiments")(internalExperiments.asInstanceOf[js.Any])
+    if (sdkPipelineOptions != null) __obj.updateDynamic("sdkPipelineOptions")(sdkPipelineOptions.asInstanceOf[js.Any])
+    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
+    if (tempStoragePrefix != null) __obj.updateDynamic("tempStoragePrefix")(tempStoragePrefix.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (workerPools != null) __obj.updateDynamic("workerPools")(workerPools.asInstanceOf[js.Any])
     __obj.asInstanceOf[Environment]
   }
 }

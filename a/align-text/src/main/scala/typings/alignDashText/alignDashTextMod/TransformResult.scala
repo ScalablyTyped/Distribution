@@ -22,7 +22,7 @@ trait TransformResult extends js.Object {
 object TransformResult {
   @scala.inline
   def apply(character: String, indent: Double, prefix: String): TransformResult = {
-    val __obj = js.Dynamic.literal(character = character, indent = indent, prefix = prefix)
+    val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransformResult]
   }

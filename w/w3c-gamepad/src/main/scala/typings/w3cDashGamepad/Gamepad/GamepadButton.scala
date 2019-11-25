@@ -12,7 +12,7 @@ trait GamepadButton extends js.Object {
 object GamepadButton {
   @scala.inline
   def apply(pressed: Boolean, value: Double): GamepadButton = {
-    val __obj = js.Dynamic.literal(pressed = pressed, value = value)
+    val __obj = js.Dynamic.literal(pressed = pressed.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GamepadButton]
   }

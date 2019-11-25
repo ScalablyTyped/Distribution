@@ -22,7 +22,7 @@ object MediaRecorderOptions {
     val __obj = js.Dynamic.literal()
     if (audioBitsPerSecond != null) __obj.updateDynamic("audioBitsPerSecond")(audioBitsPerSecond.asInstanceOf[js.Any])
     if (bitsPerSecond != null) __obj.updateDynamic("bitsPerSecond")(bitsPerSecond.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     if (videoBitsPerSecond != null) __obj.updateDynamic("videoBitsPerSecond")(videoBitsPerSecond.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRecorderOptions]
   }

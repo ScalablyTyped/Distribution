@@ -17,7 +17,7 @@ object ValidationMessageBasicNonDocumentErrorObject {
   @scala.inline
   def apply(`type`: `non-document-error`, subType: internal | io | schema = null): ValidationMessageBasicNonDocumentErrorObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (subType != null) __obj.updateDynamic("subType")(subType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationMessageBasicNonDocumentErrorObject]
   }

@@ -12,7 +12,7 @@ trait PostingUsertags extends js.Object {
 object PostingUsertags {
   @scala.inline
   def apply(in: js.Array[Anon_Position]): PostingUsertags = {
-    val __obj = js.Dynamic.literal(in = in)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostingUsertags]
   }

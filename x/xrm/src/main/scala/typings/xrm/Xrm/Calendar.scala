@@ -29,7 +29,7 @@ object Calendar {
     MinSupportedDateTime: Date,
     TwoDigitYearMax: Double
   ): Calendar = {
-    val __obj = js.Dynamic.literal(AlgorithmType = AlgorithmType, CalendarType = CalendarType, Eras = Eras, IsReadOnly = IsReadOnly, MaxSupportedDateTime = MaxSupportedDateTime, MinSupportedDateTime = MinSupportedDateTime, TwoDigitYearMax = TwoDigitYearMax)
+    val __obj = js.Dynamic.literal(AlgorithmType = AlgorithmType.asInstanceOf[js.Any], CalendarType = CalendarType.asInstanceOf[js.Any], Eras = Eras.asInstanceOf[js.Any], IsReadOnly = IsReadOnly.asInstanceOf[js.Any], MaxSupportedDateTime = MaxSupportedDateTime.asInstanceOf[js.Any], MinSupportedDateTime = MinSupportedDateTime.asInstanceOf[js.Any], TwoDigitYearMax = TwoDigitYearMax.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Calendar]
   }

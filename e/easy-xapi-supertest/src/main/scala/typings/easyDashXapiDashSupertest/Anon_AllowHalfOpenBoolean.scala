@@ -12,7 +12,7 @@ object Anon_AllowHalfOpenBoolean {
   @scala.inline
   def apply(allowHalfOpen: js.UndefOr[Boolean] = js.undefined): Anon_AllowHalfOpenBoolean = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
+    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowHalfOpenBoolean]
   }
 }

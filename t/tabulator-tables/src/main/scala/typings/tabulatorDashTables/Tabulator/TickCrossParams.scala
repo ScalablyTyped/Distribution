@@ -21,8 +21,8 @@ object TickCrossParams {
     tickElement: Boolean | String = null
   ): TickCrossParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
-    if (!js.isUndefined(allowTruthy)) __obj.updateDynamic("allowTruthy")(allowTruthy)
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTruthy)) __obj.updateDynamic("allowTruthy")(allowTruthy.asInstanceOf[js.Any])
     if (crossElement != null) __obj.updateDynamic("crossElement")(crossElement.asInstanceOf[js.Any])
     if (tickElement != null) __obj.updateDynamic("tickElement")(tickElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[TickCrossParams]

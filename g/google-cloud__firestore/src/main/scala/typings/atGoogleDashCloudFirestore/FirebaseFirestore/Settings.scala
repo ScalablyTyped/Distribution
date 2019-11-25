@@ -74,14 +74,14 @@ object Settings {
     timestampsInSnapshots: js.UndefOr[Boolean] = js.undefined
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
-    if (!js.isUndefined(timestampsInSnapshots)) __obj.updateDynamic("timestampsInSnapshots")(timestampsInSnapshots)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestampsInSnapshots)) __obj.updateDynamic("timestampsInSnapshots")(timestampsInSnapshots.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

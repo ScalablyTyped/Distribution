@@ -18,7 +18,7 @@ trait CSINodeSpec extends js.Object {
 object CSINodeSpec {
   @scala.inline
   def apply(drivers: js.Array[CSINodeDriver]): CSINodeSpec = {
-    val __obj = js.Dynamic.literal(drivers = drivers)
+    val __obj = js.Dynamic.literal(drivers = drivers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CSINodeSpec]
   }

@@ -55,7 +55,7 @@ object Events {
     numberKey: Observable[KeyDescriptor],
     spaceKey: Observable[KeyDescriptor]
   ): Events = {
-    val __obj = js.Dynamic.literal(aKey = aKey, iKey = iKey, keypress = keypress, line = line, normalizedDownKey = normalizedDownKey, normalizedUpKey = normalizedUpKey, numberKey = numberKey, spaceKey = spaceKey)
+    val __obj = js.Dynamic.literal(aKey = aKey.asInstanceOf[js.Any], iKey = iKey.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], normalizedDownKey = normalizedDownKey.asInstanceOf[js.Any], normalizedUpKey = normalizedUpKey.asInstanceOf[js.Any], numberKey = numberKey.asInstanceOf[js.Any], spaceKey = spaceKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Events]
   }

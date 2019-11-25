@@ -16,7 +16,7 @@ object SetMaintenancePolicyRequest {
   @scala.inline
   def apply(maintenancePolicy: MaintenancePolicy = null): SetMaintenancePolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (maintenancePolicy != null) __obj.updateDynamic("maintenancePolicy")(maintenancePolicy)
+    if (maintenancePolicy != null) __obj.updateDynamic("maintenancePolicy")(maintenancePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetMaintenancePolicyRequest]
   }
 }

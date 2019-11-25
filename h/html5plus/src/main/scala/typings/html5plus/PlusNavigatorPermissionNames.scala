@@ -73,13 +73,13 @@ object PlusNavigatorPermissionNames {
     SHORTCUT: String = null
   ): PlusNavigatorPermissionNames = {
     val __obj = js.Dynamic.literal()
-    if (CAMERA != null) __obj.updateDynamic("CAMERA")(CAMERA)
-    if (CONTACTS != null) __obj.updateDynamic("CONTACTS")(CONTACTS)
-    if (GALLERY != null) __obj.updateDynamic("GALLERY")(GALLERY)
-    if (LOCATION != null) __obj.updateDynamic("LOCATION")(LOCATION)
-    if (NOTIFITION != null) __obj.updateDynamic("NOTIFITION")(NOTIFITION)
-    if (RECORD != null) __obj.updateDynamic("RECORD")(RECORD)
-    if (SHORTCUT != null) __obj.updateDynamic("SHORTCUT")(SHORTCUT)
+    if (CAMERA != null) __obj.updateDynamic("CAMERA")(CAMERA.asInstanceOf[js.Any])
+    if (CONTACTS != null) __obj.updateDynamic("CONTACTS")(CONTACTS.asInstanceOf[js.Any])
+    if (GALLERY != null) __obj.updateDynamic("GALLERY")(GALLERY.asInstanceOf[js.Any])
+    if (LOCATION != null) __obj.updateDynamic("LOCATION")(LOCATION.asInstanceOf[js.Any])
+    if (NOTIFITION != null) __obj.updateDynamic("NOTIFITION")(NOTIFITION.asInstanceOf[js.Any])
+    if (RECORD != null) __obj.updateDynamic("RECORD")(RECORD.asInstanceOf[js.Any])
+    if (SHORTCUT != null) __obj.updateDynamic("SHORTCUT")(SHORTCUT.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNavigatorPermissionNames]
   }
 }

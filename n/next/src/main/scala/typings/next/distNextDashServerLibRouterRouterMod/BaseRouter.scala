@@ -15,7 +15,7 @@ trait BaseRouter extends js.Object {
 object BaseRouter {
   @scala.inline
   def apply(asPath: String, pathname: String, query: ParsedUrlQuery, route: String): BaseRouter = {
-    val __obj = js.Dynamic.literal(asPath = asPath, pathname = pathname, query = query, route = route)
+    val __obj = js.Dynamic.literal(asPath = asPath.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseRouter]
   }

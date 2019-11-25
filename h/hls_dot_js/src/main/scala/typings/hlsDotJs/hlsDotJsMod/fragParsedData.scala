@@ -12,7 +12,7 @@ trait fragParsedData extends js.Object {
 object fragParsedData {
   @scala.inline
   def apply(frag: Fragment, id: String): fragParsedData = {
-    val __obj = js.Dynamic.literal(frag = frag, id = id)
+    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[fragParsedData]
   }

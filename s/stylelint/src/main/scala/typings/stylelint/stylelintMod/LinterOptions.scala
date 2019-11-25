@@ -48,7 +48,7 @@ object LinterOptions {
     reportNeedlessDisables: Boolean,
     syntax: SyntaxType
   ): LinterOptions = {
-    val __obj = js.Dynamic.literal(cache = cache, cacheLocation = cacheLocation, code = code, codeFilename = codeFilename, config = config, configBasedir = configBasedir, configFile = configFile, configOverrides = configOverrides, customSyntax = customSyntax, disableDefaultIgnores = disableDefaultIgnores, files = files.asInstanceOf[js.Any], fix = fix, formatter = formatter.asInstanceOf[js.Any], ignoreDisables = ignoreDisables, ignorePath = ignorePath, maxWarnings = maxWarnings, reportNeedlessDisables = reportNeedlessDisables, syntax = syntax)
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], cacheLocation = cacheLocation.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], codeFilename = codeFilename.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configBasedir = configBasedir.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], configOverrides = configOverrides.asInstanceOf[js.Any], customSyntax = customSyntax.asInstanceOf[js.Any], disableDefaultIgnores = disableDefaultIgnores.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], fix = fix.asInstanceOf[js.Any], formatter = formatter.asInstanceOf[js.Any], ignoreDisables = ignoreDisables.asInstanceOf[js.Any], ignorePath = ignorePath.asInstanceOf[js.Any], maxWarnings = maxWarnings.asInstanceOf[js.Any], reportNeedlessDisables = reportNeedlessDisables.asInstanceOf[js.Any], syntax = syntax.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LinterOptions]
   }

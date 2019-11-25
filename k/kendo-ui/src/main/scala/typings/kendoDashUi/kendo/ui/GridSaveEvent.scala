@@ -22,10 +22,10 @@ object GridSaveEvent {
     model: Model = null,
     values: js.Any = null
   ): GridSaveEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (values != null) __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridSaveEvent]
   }
 }

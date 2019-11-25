@@ -22,7 +22,7 @@ object CachedStorage {
     removeItem: String => Unit,
     setItem: (String, String) => Unit
   ): CachedStorage = {
-    val __obj = js.Dynamic.literal(clead = js.Any.fromFunction0(clead), getItem = js.Any.fromFunction1(getItem), length = length, removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
+    val __obj = js.Dynamic.literal(clead = js.Any.fromFunction0(clead), getItem = js.Any.fromFunction1(getItem), length = length.asInstanceOf[js.Any], removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
   
     __obj.asInstanceOf[CachedStorage]
   }

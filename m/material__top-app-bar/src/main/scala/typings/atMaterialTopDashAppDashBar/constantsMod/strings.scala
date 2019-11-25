@@ -29,8 +29,8 @@ object strings {
     TITLE_SELECTOR: `DOTmdc-top-app-bar__title`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(ACTION_ITEM_SELECTOR = ACTION_ITEM_SELECTOR, NAVIGATION_EVENT = NAVIGATION_EVENT, NAVIGATION_ICON_SELECTOR = NAVIGATION_ICON_SELECTOR, ROOT_SELECTOR = ROOT_SELECTOR, TITLE_SELECTOR = TITLE_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ACTION_ITEM_SELECTOR = ACTION_ITEM_SELECTOR.asInstanceOf[js.Any], NAVIGATION_EVENT = NAVIGATION_EVENT.asInstanceOf[js.Any], NAVIGATION_ICON_SELECTOR = NAVIGATION_ICON_SELECTOR.asInstanceOf[js.Any], ROOT_SELECTOR = ROOT_SELECTOR.asInstanceOf[js.Any], TITLE_SELECTOR = TITLE_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

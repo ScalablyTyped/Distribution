@@ -26,7 +26,7 @@ object ExpressionFilterModel {
     groups: js.Array[ExpressionFilterGroup],
     maxGroupLevel: Double
   ): ExpressionFilterModel = {
-    val __obj = js.Dynamic.literal(clauses = clauses, groups = groups, maxGroupLevel = maxGroupLevel)
+    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], maxGroupLevel = maxGroupLevel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExpressionFilterModel]
   }

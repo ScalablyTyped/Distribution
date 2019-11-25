@@ -30,9 +30,9 @@ trait CacheDetails extends js.Object {
 object CacheDetails {
   @scala.inline
   def apply(eTag: String, hitCount: Double, lastAccess: String, comment: String = null, expires: String = null): CacheDetails = {
-    val __obj = js.Dynamic.literal(eTag = eTag, hitCount = hitCount, lastAccess = lastAccess)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (expires != null) __obj.updateDynamic("expires")(expires)
+    val __obj = js.Dynamic.literal(eTag = eTag.asInstanceOf[js.Any], hitCount = hitCount.asInstanceOf[js.Any], lastAccess = lastAccess.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheDetails]
   }
 }

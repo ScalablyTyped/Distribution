@@ -24,12 +24,12 @@ object WSConnectOptions {
     wsOptions: WSOptions = null
   ): WSConnectOptions = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
-    if (wsOptions != null) __obj.updateDynamic("wsOptions")(wsOptions)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
+    if (wsOptions != null) __obj.updateDynamic("wsOptions")(wsOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[WSConnectOptions]
   }
 }

@@ -50,16 +50,16 @@ object Account {
     youtubeChannelLinks: js.Array[AccountYouTubeChannelLink] = null
   ): Account = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adultContent)) __obj.updateDynamic("adultContent")(adultContent)
-    if (adwordsLinks != null) __obj.updateDynamic("adwordsLinks")(adwordsLinks)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (reviewsUrl != null) __obj.updateDynamic("reviewsUrl")(reviewsUrl)
-    if (sellerId != null) __obj.updateDynamic("sellerId")(sellerId)
-    if (users != null) __obj.updateDynamic("users")(users)
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
-    if (youtubeChannelLinks != null) __obj.updateDynamic("youtubeChannelLinks")(youtubeChannelLinks)
+    if (!js.isUndefined(adultContent)) __obj.updateDynamic("adultContent")(adultContent.asInstanceOf[js.Any])
+    if (adwordsLinks != null) __obj.updateDynamic("adwordsLinks")(adwordsLinks.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (reviewsUrl != null) __obj.updateDynamic("reviewsUrl")(reviewsUrl.asInstanceOf[js.Any])
+    if (sellerId != null) __obj.updateDynamic("sellerId")(sellerId.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
+    if (youtubeChannelLinks != null) __obj.updateDynamic("youtubeChannelLinks")(youtubeChannelLinks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
 }

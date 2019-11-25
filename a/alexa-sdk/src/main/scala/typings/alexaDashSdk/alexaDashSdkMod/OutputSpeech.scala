@@ -17,8 +17,8 @@ object OutputSpeech {
   def apply(`type`: PlainText | SSML, ssml: String = null, text: String = null): OutputSpeech = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ssml != null) __obj.updateDynamic("ssml")(ssml)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (ssml != null) __obj.updateDynamic("ssml")(ssml.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputSpeech]
   }
 }

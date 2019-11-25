@@ -113,20 +113,20 @@ object ITimeLineConfiguration {
     start_zoom_adjust: String = null,
     `type`: String = null
   ): ITimeLineConfiguration = {
-    val __obj = js.Dynamic.literal(height = height, source = source, width = width)
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (embed_id != null) __obj.updateDynamic("embed_id")(embed_id)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (gmap_key != null) __obj.updateDynamic("gmap_key")(gmap_key)
-    if (!js.isUndefined(hash_bookmark)) __obj.updateDynamic("hash_bookmark")(hash_bookmark)
-    if (js_ != null) __obj.updateDynamic("js")(js_)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (maptype != null) __obj.updateDynamic("maptype")(maptype)
-    if (!js.isUndefined(start_at_end)) __obj.updateDynamic("start_at_end")(start_at_end)
-    if (start_at_slide != null) __obj.updateDynamic("start_at_slide")(start_at_slide)
-    if (start_zoom_adjust != null) __obj.updateDynamic("start_zoom_adjust")(start_zoom_adjust)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (embed_id != null) __obj.updateDynamic("embed_id")(embed_id.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (gmap_key != null) __obj.updateDynamic("gmap_key")(gmap_key.asInstanceOf[js.Any])
+    if (!js.isUndefined(hash_bookmark)) __obj.updateDynamic("hash_bookmark")(hash_bookmark.asInstanceOf[js.Any])
+    if (js_ != null) __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (maptype != null) __obj.updateDynamic("maptype")(maptype.asInstanceOf[js.Any])
+    if (!js.isUndefined(start_at_end)) __obj.updateDynamic("start_at_end")(start_at_end.asInstanceOf[js.Any])
+    if (start_at_slide != null) __obj.updateDynamic("start_at_slide")(start_at_slide.asInstanceOf[js.Any])
+    if (start_zoom_adjust != null) __obj.updateDynamic("start_zoom_adjust")(start_zoom_adjust.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeLineConfiguration]
   }
 }

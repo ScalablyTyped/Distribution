@@ -15,10 +15,10 @@ trait AesCCM extends IParams {
 object AesCCM {
   @scala.inline
   def apply(dataLen: Double, macLen: Double, `type`: Double, aad: Buffer = null, nonce: Buffer = null): AesCCM = {
-    val __obj = js.Dynamic.literal(dataLen = dataLen, macLen = macLen)
-    __obj.updateDynamic("type")(`type`)
-    if (aad != null) __obj.updateDynamic("aad")(aad)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(dataLen = dataLen.asInstanceOf[js.Any], macLen = macLen.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (aad != null) __obj.updateDynamic("aad")(aad.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesCCM]
   }
 }

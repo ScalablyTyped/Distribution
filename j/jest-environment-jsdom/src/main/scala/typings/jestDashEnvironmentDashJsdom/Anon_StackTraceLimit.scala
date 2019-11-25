@@ -11,7 +11,7 @@ trait Anon_StackTraceLimit extends js.Object {
 object Anon_StackTraceLimit {
   @scala.inline
   def apply(stackTraceLimit: Double): Anon_StackTraceLimit = {
-    val __obj = js.Dynamic.literal(stackTraceLimit = stackTraceLimit)
+    val __obj = js.Dynamic.literal(stackTraceLimit = stackTraceLimit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_StackTraceLimit]
   }

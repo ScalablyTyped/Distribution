@@ -52,7 +52,7 @@ object PublishedExtension {
     tags: js.Array[String],
     versions: js.Array[ExtensionVersion]
   ): PublishedExtension = {
-    val __obj = js.Dynamic.literal(categories = categories, deploymentType = deploymentType, displayName = displayName, extensionId = extensionId, extensionName = extensionName, flags = flags, installationTargets = installationTargets, lastUpdated = lastUpdated, longDescription = longDescription, publishedDate = publishedDate, publisher = publisher, releaseDate = releaseDate, sharedWith = sharedWith, shortDescription = shortDescription, statistics = statistics, tags = tags, versions = versions)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], deploymentType = deploymentType.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], extensionId = extensionId.asInstanceOf[js.Any], extensionName = extensionName.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], installationTargets = installationTargets.asInstanceOf[js.Any], lastUpdated = lastUpdated.asInstanceOf[js.Any], longDescription = longDescription.asInstanceOf[js.Any], publishedDate = publishedDate.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], releaseDate = releaseDate.asInstanceOf[js.Any], sharedWith = sharedWith.asInstanceOf[js.Any], shortDescription = shortDescription.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PublishedExtension]
   }

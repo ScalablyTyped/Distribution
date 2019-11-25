@@ -13,8 +13,8 @@ object Anon_Radius {
   @scala.inline
   def apply(radius: String = null, width: String = null): Anon_Radius = {
     val __obj = js.Dynamic.literal()
-    if (radius != null) __obj.updateDynamic("radius")(radius)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Radius]
   }
 }

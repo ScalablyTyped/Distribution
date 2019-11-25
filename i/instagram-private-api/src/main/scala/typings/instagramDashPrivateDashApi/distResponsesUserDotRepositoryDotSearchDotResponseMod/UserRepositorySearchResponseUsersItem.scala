@@ -43,11 +43,11 @@ object UserRepositorySearchResponseUsersItem {
     social_context: String = null,
     unseen_count: Int | Double = null
   ): UserRepositorySearchResponseUsersItem = {
-    val __obj = js.Dynamic.literal(byline = byline, follower_count = follower_count, friendship_status = friendship_status, full_name = full_name, has_anonymous_profile_picture = has_anonymous_profile_picture, is_private = is_private, is_verified = is_verified, mutual_followers_count = mutual_followers_count, pk = pk, profile_pic_url = profile_pic_url, username = username)
+    val __obj = js.Dynamic.literal(byline = byline.asInstanceOf[js.Any], follower_count = follower_count.asInstanceOf[js.Any], friendship_status = friendship_status.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], has_anonymous_profile_picture = has_anonymous_profile_picture.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], mutual_followers_count = mutual_followers_count.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (latest_reel_media != null) __obj.updateDynamic("latest_reel_media")(latest_reel_media.asInstanceOf[js.Any])
-    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id)
-    if (search_social_context != null) __obj.updateDynamic("search_social_context")(search_social_context)
-    if (social_context != null) __obj.updateDynamic("social_context")(social_context)
+    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id.asInstanceOf[js.Any])
+    if (search_social_context != null) __obj.updateDynamic("search_social_context")(search_social_context.asInstanceOf[js.Any])
+    if (social_context != null) __obj.updateDynamic("social_context")(social_context.asInstanceOf[js.Any])
     if (unseen_count != null) __obj.updateDynamic("unseen_count")(unseen_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserRepositorySearchResponseUsersItem]
   }

@@ -29,14 +29,14 @@ object FilterMenuOperatorsNumber {
     neq: String = null
   ): FilterMenuOperatorsNumber = {
     val __obj = js.Dynamic.literal()
-    if (eq != null) __obj.updateDynamic("eq")(eq)
-    if (gt != null) __obj.updateDynamic("gt")(gt)
-    if (gte != null) __obj.updateDynamic("gte")(gte)
-    if (isnotnull != null) __obj.updateDynamic("isnotnull")(isnotnull)
-    if (isnull != null) __obj.updateDynamic("isnull")(isnull)
-    if (lt != null) __obj.updateDynamic("lt")(lt)
-    if (lte != null) __obj.updateDynamic("lte")(lte)
-    if (neq != null) __obj.updateDynamic("neq")(neq)
+    if (eq != null) __obj.updateDynamic("eq")(eq.asInstanceOf[js.Any])
+    if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
+    if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
+    if (isnotnull != null) __obj.updateDynamic("isnotnull")(isnotnull.asInstanceOf[js.Any])
+    if (isnull != null) __obj.updateDynamic("isnull")(isnull.asInstanceOf[js.Any])
+    if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
+    if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
+    if (neq != null) __obj.updateDynamic("neq")(neq.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterMenuOperatorsNumber]
   }
 }

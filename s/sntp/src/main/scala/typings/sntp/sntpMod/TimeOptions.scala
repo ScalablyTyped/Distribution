@@ -45,7 +45,7 @@ object TimeOptions {
     transmitTimestamp: Double,
     version: Double
   ): TimeOptions = {
-    val __obj = js.Dynamic.literal(d = d, isValid = isValid, leapIndicator = leapIndicator, mode = mode, originateTimestamp = originateTimestamp, pollInterval = pollInterval, precision = precision, receiveTimestamp = receiveTimestamp, receivedLocally = receivedLocally, referenceId = referenceId, referenceTimestamp = referenceTimestamp, rootDelay = rootDelay, rootDispersion = rootDispersion, stratum = stratum, t = t, transmitTimestamp = transmitTimestamp, version = version)
+    val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], leapIndicator = leapIndicator.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], originateTimestamp = originateTimestamp.asInstanceOf[js.Any], pollInterval = pollInterval.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], receiveTimestamp = receiveTimestamp.asInstanceOf[js.Any], receivedLocally = receivedLocally.asInstanceOf[js.Any], referenceId = referenceId.asInstanceOf[js.Any], referenceTimestamp = referenceTimestamp.asInstanceOf[js.Any], rootDelay = rootDelay.asInstanceOf[js.Any], rootDispersion = rootDispersion.asInstanceOf[js.Any], stratum = stratum.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], transmitTimestamp = transmitTimestamp.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeOptions]
   }

@@ -56,15 +56,15 @@ object Theme {
     updated_at: String = null
   ): Theme = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(previewable)) __obj.updateDynamic("previewable")(previewable)
-    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(previewable)) __obj.updateDynamic("previewable")(previewable.asInstanceOf[js.Any])
+    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (theme_store_id != null) __obj.updateDynamic("theme_store_id")(theme_store_id.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }
 }

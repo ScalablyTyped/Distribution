@@ -24,12 +24,12 @@ object BaseBlockParams {
   ): BaseBlockParams = {
     val __obj = js.Dynamic.literal()
     if (blockLength != null) __obj.updateDynamic("blockLength")(blockLength.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (primitiveSchema != null) __obj.updateDynamic("primitiveSchema")(primitiveSchema)
-    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (primitiveSchema != null) __obj.updateDynamic("primitiveSchema")(primitiveSchema.asInstanceOf[js.Any])
+    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseBlockParams]
   }
 }

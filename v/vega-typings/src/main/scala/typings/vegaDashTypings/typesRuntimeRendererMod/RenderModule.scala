@@ -19,8 +19,8 @@ object RenderModule {
     renderer: Instantiable1[/* loader */ Loader, Renderer],
     headless: Renderer = null
   ): RenderModule = {
-    val __obj = js.Dynamic.literal(handler = handler, renderer = renderer)
-    if (headless != null) __obj.updateDynamic("headless")(headless)
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
+    if (headless != null) __obj.updateDynamic("headless")(headless.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderModule]
   }
 }

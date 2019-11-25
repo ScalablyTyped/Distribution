@@ -15,8 +15,8 @@ object PatternedRecurrence {
   @scala.inline
   def apply(pattern: RecurrencePattern = null, range: RecurrenceRange = null): PatternedRecurrence = {
     val __obj = js.Dynamic.literal()
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternedRecurrence]
   }
 }

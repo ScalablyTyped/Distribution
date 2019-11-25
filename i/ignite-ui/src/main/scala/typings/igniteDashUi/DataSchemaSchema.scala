@@ -42,11 +42,11 @@ object DataSchemaSchema {
     searchField: String = null
   ): DataSchemaSchema = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (childDataProperty != null) __obj.updateDynamic("childDataProperty")(childDataProperty)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (outputResultsName != null) __obj.updateDynamic("outputResultsName")(outputResultsName)
-    if (searchField != null) __obj.updateDynamic("searchField")(searchField)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (childDataProperty != null) __obj.updateDynamic("childDataProperty")(childDataProperty.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (outputResultsName != null) __obj.updateDynamic("outputResultsName")(outputResultsName.asInstanceOf[js.Any])
+    if (searchField != null) __obj.updateDynamic("searchField")(searchField.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSchemaSchema]
   }
 }

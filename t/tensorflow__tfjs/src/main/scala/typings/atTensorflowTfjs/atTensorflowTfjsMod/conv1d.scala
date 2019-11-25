@@ -2,9 +2,6 @@ package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NCW
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.NWC
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.round
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.same
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.valid
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor2D
@@ -45,7 +42,7 @@ object conv1d extends js.Object {
     pad: valid | same | Double,
     dataFormat: NWC | NCW,
     dilation: Double,
-    dimRoundingMode: floor | round | ceil
+    dimRoundingMode: typings.atTensorflowTfjs.atTensorflowTfjsStrings.floor | typings.atTensorflowTfjs.atTensorflowTfjsStrings.round | typings.atTensorflowTfjs.atTensorflowTfjsStrings.ceil
   ): T = js.native
   def apply[T /* <: Tensor2D | Tensor3D */](x: TensorLike, filter: Tensor3D, stride: Double, pad: Double): T = js.native
   def apply[T /* <: Tensor2D | Tensor3D */](x: TensorLike, filter: Tensor3D, stride: Double, pad: same): T = js.native

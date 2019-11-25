@@ -24,9 +24,9 @@ object RangeOptions {
     startCell: String = null
   ): RangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
-    if (startCell != null) __obj.updateDynamic("startCell")(startCell)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
+    if (startCell != null) __obj.updateDynamic("startCell")(startCell.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeOptions]
   }
 }

@@ -1,7 +1,5 @@
 package typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod
 
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Color
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +10,10 @@ object ColorInformation extends js.Object {
   /**
     * Creates a new ColorInformation literal.
     */
-  def create(range: Range, color: Color): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.ColorInformation = js.native
+  def create(
+    range: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
+    color: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Color
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.ColorInformation = js.native
   /**
     * Checks whether the given literal conforms to the [ColorInformation](#ColorInformation) interface.
     */

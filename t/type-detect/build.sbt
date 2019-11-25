@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "type-detect"
-version := "v4.0.x-dt-20190322Z-ecac14"
+version := "v4.0.x-dt-20190322Z-fa8dd9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,7 +12,7 @@ trait ISize extends js.Object {
 object ISize {
   @scala.inline
   def apply(height: Double, width: Double): ISize = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISize]
   }

@@ -23,9 +23,9 @@ object IEditorFindOptions {
     addExtraSpaceOnTop: js.UndefOr[Boolean] = js.undefined,
     seedSearchStringFromSelection: js.UndefOr[Boolean] = js.undefined
   ): IEditorFindOptions = {
-    val __obj = js.Dynamic.literal(autoFindInSelection = autoFindInSelection)
-    if (!js.isUndefined(addExtraSpaceOnTop)) __obj.updateDynamic("addExtraSpaceOnTop")(addExtraSpaceOnTop)
-    if (!js.isUndefined(seedSearchStringFromSelection)) __obj.updateDynamic("seedSearchStringFromSelection")(seedSearchStringFromSelection)
+    val __obj = js.Dynamic.literal(autoFindInSelection = autoFindInSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(addExtraSpaceOnTop)) __obj.updateDynamic("addExtraSpaceOnTop")(addExtraSpaceOnTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(seedSearchStringFromSelection)) __obj.updateDynamic("seedSearchStringFromSelection")(seedSearchStringFromSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorFindOptions]
   }
 }

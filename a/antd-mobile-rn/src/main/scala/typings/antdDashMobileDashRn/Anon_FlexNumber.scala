@@ -11,7 +11,7 @@ trait Anon_FlexNumber extends js.Object {
 object Anon_FlexNumber {
   @scala.inline
   def apply(flex: Double): Anon_FlexNumber = {
-    val __obj = js.Dynamic.literal(flex = flex)
+    val __obj = js.Dynamic.literal(flex = flex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FlexNumber]
   }

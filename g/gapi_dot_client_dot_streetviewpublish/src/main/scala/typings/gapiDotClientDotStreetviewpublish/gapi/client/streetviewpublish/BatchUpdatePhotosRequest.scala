@@ -16,7 +16,7 @@ object BatchUpdatePhotosRequest {
   @scala.inline
   def apply(updatePhotoRequests: js.Array[UpdatePhotoRequest] = null): BatchUpdatePhotosRequest = {
     val __obj = js.Dynamic.literal()
-    if (updatePhotoRequests != null) __obj.updateDynamic("updatePhotoRequests")(updatePhotoRequests)
+    if (updatePhotoRequests != null) __obj.updateDynamic("updatePhotoRequests")(updatePhotoRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdatePhotosRequest]
   }
 }

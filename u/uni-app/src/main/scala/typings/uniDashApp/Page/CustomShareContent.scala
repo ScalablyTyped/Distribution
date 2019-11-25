@@ -23,9 +23,9 @@ object CustomShareContent {
   @scala.inline
   def apply(imageUrl: String = null, path: String = null, title: String = null): CustomShareContent = {
     val __obj = js.Dynamic.literal()
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomShareContent]
   }
 }

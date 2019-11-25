@@ -18,8 +18,8 @@ object KeyRing {
   @scala.inline
   def apply(createTime: String = null, name: String = null): KeyRing = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyRing]
   }
 }

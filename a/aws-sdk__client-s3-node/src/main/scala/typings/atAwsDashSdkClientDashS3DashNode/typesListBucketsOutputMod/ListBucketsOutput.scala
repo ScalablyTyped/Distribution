@@ -29,9 +29,9 @@ object ListBucketsOutput {
     Buckets: js.Array[_UnmarshalledBucket] = null,
     Owner: _UnmarshalledOwner = null
   ): ListBucketsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Buckets != null) __obj.updateDynamic("Buckets")(Buckets)
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Buckets != null) __obj.updateDynamic("Buckets")(Buckets.asInstanceOf[js.Any])
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketsOutput]
   }
 }

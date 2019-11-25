@@ -547,14 +547,14 @@ object amapDashJsDashApiStrings {
   sealed trait picture extends js.Object
   
   @js.native
-  sealed trait point
+  sealed trait point_
     extends typings.amapDashJsDashApi.AMap.Map.Feature
   
   @js.native
   sealed trait poly extends js.Object
   
   @js.native
-  sealed trait polygon extends js.Object
+  sealed trait polygon_ extends js.Object
   
   @js.native
   sealed trait polyline extends js.Object
@@ -1114,11 +1114,11 @@ object amapDashJsDashApiStrings {
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
   @scala.inline
-  def point: point = "point".asInstanceOf[point]
+  def point_ : point_ = "point".asInstanceOf[point_]
   @scala.inline
   def poly: poly = "poly".asInstanceOf[poly]
   @scala.inline
-  def polygon: polygon = "polygon".asInstanceOf[polygon]
+  def polygon_ : polygon_ = "polygon".asInstanceOf[polygon_]
   @scala.inline
   def polyline: polyline = "polyline".asInstanceOf[polyline]
   @scala.inline

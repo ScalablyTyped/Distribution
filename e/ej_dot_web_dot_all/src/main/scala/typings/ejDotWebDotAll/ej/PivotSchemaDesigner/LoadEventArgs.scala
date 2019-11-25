@@ -14,7 +14,7 @@ object LoadEventArgs {
   @scala.inline
   def apply(element: js.Any = null): LoadEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadEventArgs]
   }
 }

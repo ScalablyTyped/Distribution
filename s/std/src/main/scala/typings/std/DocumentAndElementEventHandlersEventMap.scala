@@ -13,7 +13,7 @@ trait DocumentAndElementEventHandlersEventMap extends js.Object {
 object DocumentAndElementEventHandlersEventMap {
   @scala.inline
   def apply(copy: ClipboardEvent, cut: ClipboardEvent, paste: ClipboardEvent): DocumentAndElementEventHandlersEventMap = {
-    val __obj = js.Dynamic.literal(copy = copy, cut = cut, paste = paste)
+    val __obj = js.Dynamic.literal(copy = copy.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocumentAndElementEventHandlersEventMap]
   }

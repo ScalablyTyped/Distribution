@@ -27,7 +27,7 @@ object Frame {
     halfCircleFrameStartAngle: Int | Double = null
   ): Frame = {
     val __obj = js.Dynamic.literal()
-    if (frameType != null) __obj.updateDynamic("frameType")(frameType)
+    if (frameType != null) __obj.updateDynamic("frameType")(frameType.asInstanceOf[js.Any])
     if (halfCircleFrameEndAngle != null) __obj.updateDynamic("halfCircleFrameEndAngle")(halfCircleFrameEndAngle.asInstanceOf[js.Any])
     if (halfCircleFrameStartAngle != null) __obj.updateDynamic("halfCircleFrameStartAngle")(halfCircleFrameStartAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frame]

@@ -25,9 +25,9 @@ object Vehicle {
   ): Vehicle = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (licensePlate != null) __obj.updateDynamic("licensePlate")(licensePlate)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (licensePlate != null) __obj.updateDynamic("licensePlate")(licensePlate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vehicle]
   }
 }

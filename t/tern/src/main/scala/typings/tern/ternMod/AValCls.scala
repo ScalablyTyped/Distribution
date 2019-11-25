@@ -1,14 +1,13 @@
 package typings.tern.ternMod
 
-import typings.tern.libInferMod.ANull
-import typings.tern.libInferMod.AVal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("tern", "AVal")
 @js.native
-class AValCls () extends AVal {
+class AValCls ()
+  extends typings.tern.libInferMod.AVal {
   /* CompleteClass */
   override def addType(args: js.Any*): Unit = js.native
   /* CompleteClass */
@@ -16,15 +15,15 @@ class AValCls () extends AVal {
   /* CompleteClass */
   override def gatherProperties(args: js.Any*): Unit = js.native
   /* CompleteClass */
-  override def getFunctionType(args: js.Any*): js.UndefOr[ANull] = js.native
+  override def getFunctionType(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull] = js.native
   /* CompleteClass */
-  override def getObjType(args: js.Any*): js.UndefOr[ANull | Null] = js.native
+  override def getObjType(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull | Null] = js.native
   /* CompleteClass */
-  override def getProp(args: js.Any*): ANull = js.native
+  override def getProp(args: js.Any*): typings.tern.libInferMod.ANull = js.native
   /* CompleteClass */
-  override def getSymbolType(args: js.Any*): js.UndefOr[ANull] = js.native
+  override def getSymbolType(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull] = js.native
   /* CompleteClass */
-  override def getType(args: js.Any*): js.UndefOr[ANull | Null] = js.native
+  override def getType(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull | Null] = js.native
   /* CompleteClass */
   override def hasType(args: js.Any*): Boolean = js.native
   /* CompleteClass */
@@ -38,6 +37,6 @@ class AValCls () extends AVal {
   /* CompleteClass */
   override def toString(args: js.Any*): String = js.native
   /* CompleteClass */
-  override def typeHint(args: js.Any*): js.UndefOr[ANull | Null] = js.native
+  override def typeHint(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull | Null] = js.native
 }
 

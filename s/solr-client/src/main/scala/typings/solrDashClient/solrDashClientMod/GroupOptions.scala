@@ -34,14 +34,14 @@ object GroupOptions {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main)
-    if (!js.isUndefined(ngroups)) __obj.updateDynamic("ngroups")(ngroups)
+    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (!js.isUndefined(ngroups)) __obj.updateDynamic("ngroups")(ngroups.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(on)) __obj.updateDynamic("on")(on)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate)
+    if (!js.isUndefined(on)) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupOptions]
   }
 }

@@ -13,7 +13,7 @@ object BatchDeleteMessagesRequest {
   @scala.inline
   def apply(ids: js.Array[String] = null): BatchDeleteMessagesRequest = {
     val __obj = js.Dynamic.literal()
-    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteMessagesRequest]
   }
 }

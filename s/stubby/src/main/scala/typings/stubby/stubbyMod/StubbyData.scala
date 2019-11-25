@@ -32,7 +32,7 @@ object StubbyData {
     request: StubbyRequest,
     response: String | StubbyResponse | (js.Array[String | StubbyResponse]) = null
   ): StubbyData = {
-    val __obj = js.Dynamic.literal(request = request)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[StubbyData]
   }

@@ -11,7 +11,9 @@ import scala.scalajs.js.annotation._
 
 object reduxDashFormComponents extends reduxDashFormProps {
   @scala.inline
-  def Field[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */]: ComponentType[P] = js.constructorOf[typings.reduxDashForm.libFieldMod.default[P]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  def Field: ComponentType[GenericFieldHTMLAttributes | BaseFieldProps[js.Object]] = js.constructorOf[typings.reduxDashForm.libFieldMod.default[
+  typings.reduxDashForm.libFieldMod.GenericFieldHTMLAttributes | typings.reduxDashForm.libFieldMod.BaseFieldProps[js.Object]]].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reduxDashForm.libFieldMod.GenericFieldHTMLAttributes | typings.reduxDashForm.libFieldMod.BaseFieldProps[js.Object]]]
   @scala.inline
   def FieldArray[P, FieldValue]: ComponentType[FieldArrayProps[P, FieldValue]] = js.constructorOf[typings.reduxDashForm.immutableMod.FieldArray[P, FieldValue]].asInstanceOf[typings.react.reactMod.ComponentType[FieldArrayProps[P, FieldValue]]]
   @scala.inline

@@ -20,9 +20,9 @@ object ExchangeRatesApiOptions {
     headers: StringDictionary[String] = null,
     roundingMode: RoundingMode = null
   ): ExchangeRatesApiOptions = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], propertyPath = propertyPath)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (roundingMode != null) __obj.updateDynamic("roundingMode")(roundingMode)
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], propertyPath = propertyPath.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (roundingMode != null) __obj.updateDynamic("roundingMode")(roundingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeRatesApiOptions]
   }
 }

@@ -38,11 +38,11 @@ object IMarker {
     source: String = null,
     tags: js.Array[MarkerTag] = null
   ): IMarker = {
-    val __obj = js.Dynamic.literal(endColumn = endColumn, endLineNumber = endLineNumber, message = message, owner = owner, resource = resource, severity = severity, startColumn = startColumn, startLineNumber = startLineNumber)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], endLineNumber = endLineNumber.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startLineNumber = startLineNumber.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarker]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_GeometriesTextures extends js.Object {
 object Anon_GeometriesTextures {
   @scala.inline
   def apply(geometries: Double, textures: Double): Anon_GeometriesTextures = {
-    val __obj = js.Dynamic.literal(geometries = geometries, textures = textures)
+    val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any], textures = textures.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GeometriesTextures]
   }

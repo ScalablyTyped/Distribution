@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "node-mysql-wrapper"
-version := "0.0-unknown-dt-20191014Z-20f900"
+version := "0.0-unknown-dt-20191014Z-0752a9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191111Z-35b9bf",
-  "org.scalablytyped" %%% "mysql" % "2.15-dt-20191107Z-81eec5",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191111Z-104ef4",
+  "org.scalablytyped" %%% "mysql" % "2.15-dt-20191107Z-4a4270",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

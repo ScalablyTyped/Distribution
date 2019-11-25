@@ -31,7 +31,7 @@ object Anon_Csp {
     xframe: Anon_ALLOWFROM,
     xssProtection: js.Any
   ): Anon_Csp = {
-    val __obj = js.Dynamic.literal(csp = csp, csrf = csrf, defaultMiddleware = defaultMiddleware, domainWhiteList = domainWhiteList, hsts = hsts, methodnoallow = methodnoallow, noopen = noopen, protocolWhiteList = protocolWhiteList, xframe = xframe, xssProtection = xssProtection)
+    val __obj = js.Dynamic.literal(csp = csp.asInstanceOf[js.Any], csrf = csrf.asInstanceOf[js.Any], defaultMiddleware = defaultMiddleware.asInstanceOf[js.Any], domainWhiteList = domainWhiteList.asInstanceOf[js.Any], hsts = hsts.asInstanceOf[js.Any], methodnoallow = methodnoallow.asInstanceOf[js.Any], noopen = noopen.asInstanceOf[js.Any], protocolWhiteList = protocolWhiteList.asInstanceOf[js.Any], xframe = xframe.asInstanceOf[js.Any], xssProtection = xssProtection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Csp]
   }

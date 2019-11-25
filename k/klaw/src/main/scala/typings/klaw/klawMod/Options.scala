@@ -39,18 +39,18 @@ object Options {
     read: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.asInstanceOf[js.Any])
     if (depthLimit != null) __obj.updateDynamic("depthLimit")(depthLimit.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
     if (pathSorter != null) __obj.updateDynamic("pathSorter")(js.Any.fromFunction2(pathSorter))
-    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks)
-    if (queueMethod != null) __obj.updateDynamic("queueMethod")(queueMethod)
-    if (read != null) __obj.updateDynamic("read")(read)
+    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.asInstanceOf[js.Any])
+    if (queueMethod != null) __obj.updateDynamic("queueMethod")(queueMethod.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

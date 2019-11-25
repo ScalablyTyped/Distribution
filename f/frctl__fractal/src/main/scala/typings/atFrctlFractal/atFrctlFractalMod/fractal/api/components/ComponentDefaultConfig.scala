@@ -27,13 +27,13 @@ object ComponentDefaultConfig {
     status: String = null
   ): ComponentDefaultConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collated)) __obj.updateDynamic("collated")(collated)
+    if (!js.isUndefined(collated)) __obj.updateDynamic("collated")(collated.asInstanceOf[js.Any])
     if (collator != null) __obj.updateDynamic("collator")(js.Any.fromFunction2(collator))
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (display != null) __obj.updateDynamic("display")(display)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (preview != null) __obj.updateDynamic("preview")(preview)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentDefaultConfig]
   }
 }

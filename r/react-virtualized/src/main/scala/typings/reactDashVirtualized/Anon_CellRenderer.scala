@@ -32,7 +32,7 @@ object Anon_CellRenderer {
     columnCount: Double,
     columnWidth: Double | (js.Function1[/* params */ Index, Double])
   ): Anon_CellRenderer = {
-    val __obj = js.Dynamic.literal(cellRenderer = js.Any.fromFunction1(cellRenderer), columnCount = columnCount, columnWidth = columnWidth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cellRenderer = js.Any.fromFunction1(cellRenderer), columnCount = columnCount.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CellRenderer]
   }

@@ -14,7 +14,7 @@ trait StaticQueryProps[T] extends js.Object {
 object StaticQueryProps {
   @scala.inline
   def apply[T](query: js.Any, children: T => ReactNode = null, render: T => ReactNode = null): StaticQueryProps[T] = {
-    val __obj = js.Dynamic.literal(query = query)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     __obj.asInstanceOf[StaticQueryProps[T]]

@@ -28,7 +28,7 @@ object ResultsFilter {
     testResultsContext: TestResultsContext,
     trendDays: Double
   ): ResultsFilter = {
-    val __obj = js.Dynamic.literal(automatedTestName = automatedTestName, branch = branch, groupBy = groupBy, maxCompleteDate = maxCompleteDate, resultsCount = resultsCount, testCaseReferenceIds = testCaseReferenceIds, testResultsContext = testResultsContext, trendDays = trendDays)
+    val __obj = js.Dynamic.literal(automatedTestName = automatedTestName.asInstanceOf[js.Any], branch = branch.asInstanceOf[js.Any], groupBy = groupBy.asInstanceOf[js.Any], maxCompleteDate = maxCompleteDate.asInstanceOf[js.Any], resultsCount = resultsCount.asInstanceOf[js.Any], testCaseReferenceIds = testCaseReferenceIds.asInstanceOf[js.Any], testResultsContext = testResultsContext.asInstanceOf[js.Any], trendDays = trendDays.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResultsFilter]
   }

@@ -26,8 +26,8 @@ object RESTDataSourceSettings {
     restSettings: RESTDataSourceSettingsRestSettings = null
   ): RESTDataSourceSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (restSettings != null) __obj.updateDynamic("restSettings")(restSettings)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (restSettings != null) __obj.updateDynamic("restSettings")(restSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[RESTDataSourceSettings]
   }
 }

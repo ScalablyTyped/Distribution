@@ -25,8 +25,8 @@ object Anon_EllipsoidExtrudedHeightGranularityHeightRectangleRotation {
     height: Int | Double = null,
     rotation: Int | Double = null
   ): Anon_EllipsoidExtrudedHeightGranularityHeightRectangleRotation = {
-    val __obj = js.Dynamic.literal(rectangle = rectangle)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    val __obj = js.Dynamic.literal(rectangle = rectangle.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

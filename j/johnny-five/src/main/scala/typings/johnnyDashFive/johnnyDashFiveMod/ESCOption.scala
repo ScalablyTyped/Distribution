@@ -29,11 +29,11 @@ object ESCOption {
     pwmRange: js.Array[Double] = null
   ): ESCOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     if (neutral != null) __obj.updateDynamic("neutral")(neutral.asInstanceOf[js.Any])
-    if (pwmRange != null) __obj.updateDynamic("pwmRange")(pwmRange)
+    if (pwmRange != null) __obj.updateDynamic("pwmRange")(pwmRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ESCOption]
   }
 }

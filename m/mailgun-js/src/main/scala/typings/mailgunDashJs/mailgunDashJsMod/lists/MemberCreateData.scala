@@ -14,8 +14,8 @@ trait MemberCreateData extends js.Object {
 object MemberCreateData {
   @scala.inline
   def apply(address: String, name: String, subscribed: Boolean, vars: js.Object = null): MemberCreateData = {
-    val __obj = js.Dynamic.literal(address = address, name = name, subscribed = subscribed)
-    if (vars != null) __obj.updateDynamic("vars")(vars)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subscribed = subscribed.asInstanceOf[js.Any])
+    if (vars != null) __obj.updateDynamic("vars")(vars.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberCreateData]
   }
 }

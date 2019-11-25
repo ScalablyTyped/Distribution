@@ -17,7 +17,7 @@ trait dvtBaseComponentSettableProperties extends baseComponentSettableProperties
 object dvtBaseComponentSettableProperties {
   @scala.inline
   def apply(trackResize: on | off, translations: Anon_LabelAndValue): dvtBaseComponentSettableProperties = {
-    val __obj = js.Dynamic.literal(trackResize = trackResize.asInstanceOf[js.Any], translations = translations)
+    val __obj = js.Dynamic.literal(trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[dvtBaseComponentSettableProperties]
   }

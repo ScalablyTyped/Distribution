@@ -12,7 +12,7 @@ trait PhononEventObject extends js.Object {
 object PhononEventObject {
   @scala.inline
   def apply(animationEnd: String, transitionEnd: String): PhononEventObject = {
-    val __obj = js.Dynamic.literal(animationEnd = animationEnd, transitionEnd = transitionEnd)
+    val __obj = js.Dynamic.literal(animationEnd = animationEnd.asInstanceOf[js.Any], transitionEnd = transitionEnd.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PhononEventObject]
   }

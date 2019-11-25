@@ -56,14 +56,14 @@ object SceneViewEnvironment {
     starsEnabled: js.UndefOr[Boolean] = js.undefined,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): SceneViewEnvironment = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (atmosphere != null) __obj.updateDynamic("atmosphere")(atmosphere)
-    if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled)
-    if (background != null) __obj.updateDynamic("background")(background)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (atmosphere != null) __obj.updateDynamic("atmosphere")(atmosphere.asInstanceOf[js.Any])
+    if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (lighting != null) __obj.updateDynamic("lighting")(lighting)
-    if (set != null) __obj.updateDynamic("set")(set)
-    if (!js.isUndefined(starsEnabled)) __obj.updateDynamic("starsEnabled")(starsEnabled)
+    if (lighting != null) __obj.updateDynamic("lighting")(lighting.asInstanceOf[js.Any])
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
+    if (!js.isUndefined(starsEnabled)) __obj.updateDynamic("starsEnabled")(starsEnabled.asInstanceOf[js.Any])
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[SceneViewEnvironment]
   }

@@ -28,14 +28,14 @@ object Options {
     solrVersion: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent)
-    if (bigint != null) __obj.updateDynamic("bigint")(bigint)
-    if (core != null) __obj.updateDynamic("core")(core)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (bigint != null) __obj.updateDynamic("bigint")(bigint.asInstanceOf[js.Any])
+    if (core != null) __obj.updateDynamic("core")(core.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
-    if (solrVersion != null) __obj.updateDynamic("solrVersion")(solrVersion)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (solrVersion != null) __obj.updateDynamic("solrVersion")(solrVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

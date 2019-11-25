@@ -13,7 +13,7 @@ trait TeamsAddMemberResponseErrorsItem extends js.Object {
 object TeamsAddMemberResponseErrorsItem {
   @scala.inline
   def apply(code: String, field: String, resource: String): TeamsAddMemberResponseErrorsItem = {
-    val __obj = js.Dynamic.literal(code = code, field = field, resource = resource)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamsAddMemberResponseErrorsItem]
   }

@@ -13,7 +13,7 @@ trait Anon_CAMERA extends js.Object {
 object Anon_CAMERA {
   @scala.inline
   def apply(CAMERA: Double, PHOTOLIBRARY: Double, SAVEDPHOTOALBUM: Double): Anon_CAMERA = {
-    val __obj = js.Dynamic.literal(CAMERA = CAMERA, PHOTOLIBRARY = PHOTOLIBRARY, SAVEDPHOTOALBUM = SAVEDPHOTOALBUM)
+    val __obj = js.Dynamic.literal(CAMERA = CAMERA.asInstanceOf[js.Any], PHOTOLIBRARY = PHOTOLIBRARY.asInstanceOf[js.Any], SAVEDPHOTOALBUM = SAVEDPHOTOALBUM.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CAMERA]
   }

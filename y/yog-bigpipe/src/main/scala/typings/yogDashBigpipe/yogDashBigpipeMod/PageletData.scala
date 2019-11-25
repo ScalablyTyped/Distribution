@@ -28,8 +28,8 @@ object PageletData {
     scripts: js.Array[String],
     styles: js.Array[String]
   ): PageletData = {
-    val __obj = js.Dynamic.literal(container = container, css = css, html = html, id = id, reqID = reqID, scripts = scripts, styles = styles)
-    __obj.updateDynamic("js")(js_)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], reqID = reqID.asInstanceOf[js.Any], scripts = scripts.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+    __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageletData]
   }
 }

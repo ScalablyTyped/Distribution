@@ -24,12 +24,12 @@ object HTTPArgument {
     items: Anon_Type = null,
     `type`: HTTPArgumentType = null
   ): HTTPArgument = {
-    val __obj = js.Dynamic.literal(required = required)
+    val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (enum != null) __obj.updateDynamic("enum")(enum)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTTPArgument]
   }
 }

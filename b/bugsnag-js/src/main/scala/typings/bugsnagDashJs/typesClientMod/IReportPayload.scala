@@ -18,7 +18,7 @@ object IReportPayload {
     events: js.Array[typings.bugsnagDashJs.typesReportMod.default],
     notifier: Anon_Name
   ): IReportPayload = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey, events = events, notifier = notifier)
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], notifier = notifier.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IReportPayload]
   }

@@ -11,7 +11,7 @@ trait NewsRepositoryInboxResponseAds_manager extends js.Object {
 object NewsRepositoryInboxResponseAds_manager {
   @scala.inline
   def apply(pending_count: Double): NewsRepositoryInboxResponseAds_manager = {
-    val __obj = js.Dynamic.literal(pending_count = pending_count)
+    val __obj = js.Dynamic.literal(pending_count = pending_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NewsRepositoryInboxResponseAds_manager]
   }

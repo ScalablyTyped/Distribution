@@ -245,7 +245,7 @@ object mapboxDashGlStrings {
   sealed trait `geometry-type` extends ExpressionName
   
   @js.native
-  sealed trait get extends ExpressionName
+  sealed trait get_ extends ExpressionName
   
   @js.native
   sealed trait has extends ExpressionName
@@ -272,7 +272,7 @@ object mapboxDashGlStrings {
   sealed trait identity extends js.Object
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image_ extends js.Object
   
   @js.native
   sealed trait imperial extends js.Object
@@ -479,7 +479,7 @@ object mapboxDashGlStrings {
   sealed trait sin extends ExpressionName
   
   @js.native
-  sealed trait source extends js.Object
+  sealed trait source_ extends js.Object
   
   @js.native
   sealed trait sourcedata extends js.Object
@@ -500,7 +500,7 @@ object mapboxDashGlStrings {
   sealed trait string extends ExpressionName
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait style_ extends js.Object
   
   @js.native
   sealed trait styledata extends js.Object
@@ -767,7 +767,7 @@ object mapboxDashGlStrings {
   @scala.inline
   def `geometry-type`: `geometry-type` = "geometry-type".asInstanceOf[`geometry-type`]
   @scala.inline
-  def get: get = "get".asInstanceOf[get]
+  def get_ : get_ = "get".asInstanceOf[get_]
   @scala.inline
   def has: has = "has".asInstanceOf[has]
   @scala.inline
@@ -785,7 +785,7 @@ object mapboxDashGlStrings {
   @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   @scala.inline
-  def image: image = "image".asInstanceOf[image]
+  def image_ : image_ = "image".asInstanceOf[image_]
   @scala.inline
   def imperial: imperial = "imperial".asInstanceOf[imperial]
   @scala.inline
@@ -923,7 +923,7 @@ object mapboxDashGlStrings {
   @scala.inline
   def sin: sin = "sin".asInstanceOf[sin]
   @scala.inline
-  def source: source = "source".asInstanceOf[source]
+  def source_ : source_ = "source".asInstanceOf[source_]
   @scala.inline
   def sourcedata: sourcedata = "sourcedata".asInstanceOf[sourcedata]
   @scala.inline
@@ -937,7 +937,7 @@ object mapboxDashGlStrings {
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
-  def style: style = "style".asInstanceOf[style]
+  def style_ : style_ = "style".asInstanceOf[style_]
   @scala.inline
   def styledata: styledata = "styledata".asInstanceOf[styledata]
   @scala.inline

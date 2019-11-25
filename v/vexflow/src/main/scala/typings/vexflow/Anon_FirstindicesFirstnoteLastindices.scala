@@ -21,10 +21,10 @@ object Anon_FirstindicesFirstnoteLastindices {
     last_note: Note = null
   ): Anon_FirstindicesFirstnoteLastindices = {
     val __obj = js.Dynamic.literal()
-    if (first_indices != null) __obj.updateDynamic("first_indices")(first_indices)
-    if (first_note != null) __obj.updateDynamic("first_note")(first_note)
-    if (last_indices != null) __obj.updateDynamic("last_indices")(last_indices)
-    if (last_note != null) __obj.updateDynamic("last_note")(last_note)
+    if (first_indices != null) __obj.updateDynamic("first_indices")(first_indices.asInstanceOf[js.Any])
+    if (first_note != null) __obj.updateDynamic("first_note")(first_note.asInstanceOf[js.Any])
+    if (last_indices != null) __obj.updateDynamic("last_indices")(last_indices.asInstanceOf[js.Any])
+    if (last_note != null) __obj.updateDynamic("last_note")(last_note.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FirstindicesFirstnoteLastindices]
   }
 }

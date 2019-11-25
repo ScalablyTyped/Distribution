@@ -16,8 +16,8 @@ object XHROptions {
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): XHROptions = {
     val __obj = js.Dynamic.literal()
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[XHROptions]
   }
 }

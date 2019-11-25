@@ -20,10 +20,10 @@ object TaskFunctionParams {
     name: String = null
   ): TaskFunctionParams = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskFunctionParams]
   }
 }

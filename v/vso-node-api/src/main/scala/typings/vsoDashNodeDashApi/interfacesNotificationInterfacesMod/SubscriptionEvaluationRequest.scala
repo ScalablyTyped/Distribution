@@ -19,7 +19,7 @@ trait SubscriptionEvaluationRequest extends js.Object {
 object SubscriptionEvaluationRequest {
   @scala.inline
   def apply(minEventsCreatedDate: Date, subscriptionCreateParameters: NotificationSubscriptionCreateParameters): SubscriptionEvaluationRequest = {
-    val __obj = js.Dynamic.literal(minEventsCreatedDate = minEventsCreatedDate, subscriptionCreateParameters = subscriptionCreateParameters)
+    val __obj = js.Dynamic.literal(minEventsCreatedDate = minEventsCreatedDate.asInstanceOf[js.Any], subscriptionCreateParameters = subscriptionCreateParameters.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubscriptionEvaluationRequest]
   }

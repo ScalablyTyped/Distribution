@@ -23,12 +23,12 @@ object Header {
     payload_size: Int | Double = null,
     payload_type: String = null
   ): Header = {
-    val __obj = js.Dynamic.literal(method = method)
-    if (http_request != null) __obj.updateDynamic("http_request")(http_request)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (notification_ctx_id != null) __obj.updateDynamic("notification_ctx_id")(notification_ctx_id)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+    if (http_request != null) __obj.updateDynamic("http_request")(http_request.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (notification_ctx_id != null) __obj.updateDynamic("notification_ctx_id")(notification_ctx_id.asInstanceOf[js.Any])
     if (payload_size != null) __obj.updateDynamic("payload_size")(payload_size.asInstanceOf[js.Any])
-    if (payload_type != null) __obj.updateDynamic("payload_type")(payload_type)
+    if (payload_type != null) __obj.updateDynamic("payload_type")(payload_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
 }

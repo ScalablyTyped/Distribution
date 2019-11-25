@@ -18,7 +18,7 @@ trait Anon_AdUnitIdStyle extends js.Object {
 object Anon_AdUnitIdStyle {
   @scala.inline
   def apply(adUnitId: String, style: Anon_Left): Anon_AdUnitIdStyle = {
-    val __obj = js.Dynamic.literal(adUnitId = adUnitId, style = style)
+    val __obj = js.Dynamic.literal(adUnitId = adUnitId.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdUnitIdStyle]
   }

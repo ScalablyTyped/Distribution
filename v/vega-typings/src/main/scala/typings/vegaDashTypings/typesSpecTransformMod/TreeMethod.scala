@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait TreeMethod extends js.Object
 
+object TreeMethod {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cluster: typings.vegaDashTypings.vegaDashTypingsStrings.cluster = this.cast("cluster")
+  @scala.inline
+  def tidy: typings.vegaDashTypings.vegaDashTypingsStrings.tidy = this.cast("tidy")
+}
+

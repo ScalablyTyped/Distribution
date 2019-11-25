@@ -23,7 +23,7 @@ object IKeyboardEventData {
     returnValue: Boolean,
     shiftKey: Double
   ): IKeyboardEventData = {
-    val __obj = js.Dynamic.literal(altKey = altKey, ctrlKey = ctrlKey, keyCode = keyCode, metaKey = metaKey, preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue, shiftKey = shiftKey)
+    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IKeyboardEventData]
   }

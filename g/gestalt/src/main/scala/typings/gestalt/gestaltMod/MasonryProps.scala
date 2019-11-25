@@ -37,16 +37,16 @@ object MasonryProps {
     scrollContainer: () => HTMLElement = null,
     virtualize: js.UndefOr[Boolean] = js.undefined
   ): MasonryProps = {
-    val __obj = js.Dynamic.literal(comp = comp.asInstanceOf[js.Any], items = items)
+    val __obj = js.Dynamic.literal(comp = comp.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexible)) __obj.updateDynamic("flexible")(flexible)
+    if (!js.isUndefined(flexible)) __obj.updateDynamic("flexible")(flexible.asInstanceOf[js.Any])
     if (gutterWidth != null) __obj.updateDynamic("gutterWidth")(gutterWidth.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (loadItems != null) __obj.updateDynamic("loadItems")(js.Any.fromFunction0(loadItems))
-    if (measurementStore != null) __obj.updateDynamic("measurementStore")(measurementStore)
+    if (measurementStore != null) __obj.updateDynamic("measurementStore")(measurementStore.asInstanceOf[js.Any])
     if (minCols != null) __obj.updateDynamic("minCols")(minCols.asInstanceOf[js.Any])
     if (scrollContainer != null) __obj.updateDynamic("scrollContainer")(js.Any.fromFunction0(scrollContainer))
-    if (!js.isUndefined(virtualize)) __obj.updateDynamic("virtualize")(virtualize)
+    if (!js.isUndefined(virtualize)) __obj.updateDynamic("virtualize")(virtualize.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasonryProps]
   }
 }

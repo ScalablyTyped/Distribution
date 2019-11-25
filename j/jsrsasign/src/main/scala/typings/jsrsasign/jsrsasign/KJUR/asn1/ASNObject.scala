@@ -45,8 +45,8 @@ object ASNObject {
     utctime: DERUTCTime,
     utf8str: DERUTF8String
   ): ASNObject = {
-    val __obj = js.Dynamic.literal(bitstr = bitstr, bool = bool, enum = enum, gentime = gentime, ia5str = ia5str, int = int, numstr = numstr, octstr = octstr, oid = oid, prnstr = prnstr, seq = seq, set = set, tag = tag, telstr = telstr, utctime = utctime, utf8str = utf8str)
-    __obj.updateDynamic("null")(`null`)
+    val __obj = js.Dynamic.literal(bitstr = bitstr.asInstanceOf[js.Any], bool = bool.asInstanceOf[js.Any], enum = enum.asInstanceOf[js.Any], gentime = gentime.asInstanceOf[js.Any], ia5str = ia5str.asInstanceOf[js.Any], int = int.asInstanceOf[js.Any], numstr = numstr.asInstanceOf[js.Any], octstr = octstr.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any], prnstr = prnstr.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], telstr = telstr.asInstanceOf[js.Any], utctime = utctime.asInstanceOf[js.Any], utf8str = utf8str.asInstanceOf[js.Any])
+    __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASNObject]
   }
 }

@@ -20,8 +20,8 @@ trait NamespaceHelpFormatterDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INa
 object NamespaceHelpFormatterDeps {
   @scala.inline
   def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](location: NamespaceLocateResult[C, N, M, I, O], namespace: N, colors: Colors = null): NamespaceHelpFormatterDeps[C, N, M, I, O] = {
-    val __obj = js.Dynamic.literal(location = location, namespace = namespace.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamespaceHelpFormatterDeps[C, N, M, I, O]]
   }
 }

@@ -38,10 +38,10 @@ object StartReconciliationResponse {
     serviceConfigId: String = null
   ): StartReconciliationResponse = {
     val __obj = js.Dynamic.literal()
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics)
-    if (reconciliationErrors != null) __obj.updateDynamic("reconciliationErrors")(reconciliationErrors)
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics.asInstanceOf[js.Any])
+    if (reconciliationErrors != null) __obj.updateDynamic("reconciliationErrors")(reconciliationErrors.asInstanceOf[js.Any])
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartReconciliationResponse]
   }
 }

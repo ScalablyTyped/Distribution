@@ -12,7 +12,7 @@ trait Anon_CodeChallenge extends js.Object {
 object Anon_CodeChallenge {
   @scala.inline
   def apply(codeChallenge: String, codeVerifier: String): Anon_CodeChallenge = {
-    val __obj = js.Dynamic.literal(codeChallenge = codeChallenge, codeVerifier = codeVerifier)
+    val __obj = js.Dynamic.literal(codeChallenge = codeChallenge.asInstanceOf[js.Any], codeVerifier = codeVerifier.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CodeChallenge]
   }

@@ -17,7 +17,7 @@ trait Overhead extends js.Object {
 object Overhead {
   @scala.inline
   def apply(podFixed: js.Object): Overhead = {
-    val __obj = js.Dynamic.literal(podFixed = podFixed)
+    val __obj = js.Dynamic.literal(podFixed = podFixed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Overhead]
   }

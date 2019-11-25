@@ -26,7 +26,7 @@ object SliceViewModelProperties {
     excludedLayers: CollectionProperties[LayerProperties | BuildingComponentSublayerProperties] = null
   ): SliceViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeGroundSurface)) __obj.updateDynamic("excludeGroundSurface")(excludeGroundSurface)
+    if (!js.isUndefined(excludeGroundSurface)) __obj.updateDynamic("excludeGroundSurface")(excludeGroundSurface.asInstanceOf[js.Any])
     if (excludedLayers != null) __obj.updateDynamic("excludedLayers")(excludedLayers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliceViewModelProperties]
   }

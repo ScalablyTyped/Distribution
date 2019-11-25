@@ -47,10 +47,10 @@ object workersOpenOptions {
     signal: AbortSignal = null,
     strategy: String = null
   ): workersOpenOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[workersOpenOptions]
   }
 }

@@ -21,9 +21,9 @@ object ZoneViewsSetServiceRequest {
     resourceName: String = null
   ): ZoneViewsSetServiceRequest = {
     val __obj = js.Dynamic.literal()
-    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneViewsSetServiceRequest]
   }
 }

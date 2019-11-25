@@ -38,20 +38,20 @@ object Options {
     zooms: js.Tuple2[Double, Double] = null
   ): Options[ExtraData] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubble)) __obj.updateDynamic("bubble")(bubble)
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(bubble)) __obj.updateDynamic("bubble")(bubble.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[ExtraData]]
   }
 }

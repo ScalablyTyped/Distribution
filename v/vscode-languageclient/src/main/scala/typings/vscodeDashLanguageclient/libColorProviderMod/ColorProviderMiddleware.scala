@@ -53,8 +53,8 @@ object ColorProviderMiddleware {
     ] = null
   ): ColorProviderMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (provideColorPresentations != null) __obj.updateDynamic("provideColorPresentations")(provideColorPresentations)
-    if (provideDocumentColors != null) __obj.updateDynamic("provideDocumentColors")(provideDocumentColors)
+    if (provideColorPresentations != null) __obj.updateDynamic("provideColorPresentations")(provideColorPresentations.asInstanceOf[js.Any])
+    if (provideDocumentColors != null) __obj.updateDynamic("provideDocumentColors")(provideDocumentColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorProviderMiddleware]
   }
 }

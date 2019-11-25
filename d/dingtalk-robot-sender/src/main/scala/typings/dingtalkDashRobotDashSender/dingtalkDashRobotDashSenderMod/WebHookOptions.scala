@@ -12,8 +12,8 @@ trait WebHookOptions extends js.Object {
 object WebHookOptions {
   @scala.inline
   def apply(webhook: String, httpclient: js.Any = null): WebHookOptions = {
-    val __obj = js.Dynamic.literal(webhook = webhook)
-    if (httpclient != null) __obj.updateDynamic("httpclient")(httpclient)
+    val __obj = js.Dynamic.literal(webhook = webhook.asInstanceOf[js.Any])
+    if (httpclient != null) __obj.updateDynamic("httpclient")(httpclient.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebHookOptions]
   }
 }

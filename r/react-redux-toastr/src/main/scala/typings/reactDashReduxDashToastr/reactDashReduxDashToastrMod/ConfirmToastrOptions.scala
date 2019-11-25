@@ -18,7 +18,7 @@ object ConfirmToastrOptions {
     onOk: () => Unit = null
   ): ConfirmToastrOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableCancel)) __obj.updateDynamic("disableCancel")(disableCancel)
+    if (!js.isUndefined(disableCancel)) __obj.updateDynamic("disableCancel")(disableCancel.asInstanceOf[js.Any])
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
     if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction0(onOk))
     __obj.asInstanceOf[ConfirmToastrOptions]

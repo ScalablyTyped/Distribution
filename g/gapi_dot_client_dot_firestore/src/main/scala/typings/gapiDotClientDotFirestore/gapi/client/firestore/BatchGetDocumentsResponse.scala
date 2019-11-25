@@ -36,10 +36,10 @@ object BatchGetDocumentsResponse {
     transaction: String = null
   ): BatchGetDocumentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (found != null) __obj.updateDynamic("found")(found)
-    if (missing != null) __obj.updateDynamic("missing")(missing)
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (found != null) __obj.updateDynamic("found")(found.asInstanceOf[js.Any])
+    if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetDocumentsResponse]
   }
 }

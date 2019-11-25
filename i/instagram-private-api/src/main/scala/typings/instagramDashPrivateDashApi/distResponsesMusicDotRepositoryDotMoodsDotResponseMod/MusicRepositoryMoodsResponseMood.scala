@@ -13,7 +13,7 @@ trait MusicRepositoryMoodsResponseMood extends js.Object {
 object MusicRepositoryMoodsResponseMood {
   @scala.inline
   def apply(cover_artwork_uri: String, id: String, name: String): MusicRepositoryMoodsResponseMood = {
-    val __obj = js.Dynamic.literal(cover_artwork_uri = cover_artwork_uri, id = id, name = name)
+    val __obj = js.Dynamic.literal(cover_artwork_uri = cover_artwork_uri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MusicRepositoryMoodsResponseMood]
   }

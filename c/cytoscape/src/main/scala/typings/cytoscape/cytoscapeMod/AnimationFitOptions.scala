@@ -17,7 +17,7 @@ trait AnimationFitOptions extends js.Object {
 object AnimationFitOptions {
   @scala.inline
   def apply(eles: CollectionArgument | Selector, padding: Double): AnimationFitOptions = {
-    val __obj = js.Dynamic.literal(eles = eles.asInstanceOf[js.Any], padding = padding)
+    val __obj = js.Dynamic.literal(eles = eles.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnimationFitOptions]
   }

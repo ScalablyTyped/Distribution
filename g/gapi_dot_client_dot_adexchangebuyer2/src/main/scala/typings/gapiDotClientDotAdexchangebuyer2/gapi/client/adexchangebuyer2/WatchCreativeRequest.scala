@@ -19,7 +19,7 @@ object WatchCreativeRequest {
   @scala.inline
   def apply(topic: String = null): WatchCreativeRequest = {
     val __obj = js.Dynamic.literal()
-    if (topic != null) __obj.updateDynamic("topic")(topic)
+    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchCreativeRequest]
   }
 }

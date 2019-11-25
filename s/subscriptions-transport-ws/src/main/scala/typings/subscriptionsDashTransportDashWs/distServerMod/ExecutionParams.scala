@@ -30,11 +30,11 @@ object ExecutionParams {
     formatResponse: js.Function = null,
     schema: GraphQLSchema = null
   ): ExecutionParams[TContext] = {
-    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], operationName = operationName, query = query.asInstanceOf[js.Any], variables = variables)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (formatError != null) __obj.updateDynamic("formatError")(formatError)
-    if (formatResponse != null) __obj.updateDynamic("formatResponse")(formatResponse)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], operationName = operationName.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (formatError != null) __obj.updateDynamic("formatError")(formatError.asInstanceOf[js.Any])
+    if (formatResponse != null) __obj.updateDynamic("formatResponse")(formatResponse.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionParams[TContext]]
   }
 }

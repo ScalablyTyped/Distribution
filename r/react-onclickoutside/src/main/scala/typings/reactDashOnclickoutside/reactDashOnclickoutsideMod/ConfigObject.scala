@@ -19,7 +19,7 @@ object ConfigObject {
     handleClickOutside: MouseEvent[_, NativeMouseEvent] => Unit = null
   ): ConfigObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeScrollbar)) __obj.updateDynamic("excludeScrollbar")(excludeScrollbar)
+    if (!js.isUndefined(excludeScrollbar)) __obj.updateDynamic("excludeScrollbar")(excludeScrollbar.asInstanceOf[js.Any])
     if (handleClickOutside != null) __obj.updateDynamic("handleClickOutside")(js.Any.fromFunction1(handleClickOutside))
     __obj.asInstanceOf[ConfigObject]
   }

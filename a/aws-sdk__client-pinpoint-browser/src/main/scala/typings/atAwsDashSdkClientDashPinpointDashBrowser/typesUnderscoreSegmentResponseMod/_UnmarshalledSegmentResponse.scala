@@ -42,14 +42,14 @@ object _UnmarshalledSegmentResponse {
     Version: Int | Double = null
   ): _UnmarshalledSegmentResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (ImportDefinition != null) __obj.updateDynamic("ImportDefinition")(ImportDefinition)
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (SegmentGroups != null) __obj.updateDynamic("SegmentGroups")(SegmentGroups)
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (ImportDefinition != null) __obj.updateDynamic("ImportDefinition")(ImportDefinition.asInstanceOf[js.Any])
+    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (SegmentGroups != null) __obj.updateDynamic("SegmentGroups")(SegmentGroups.asInstanceOf[js.Any])
     if (SegmentType != null) __obj.updateDynamic("SegmentType")(SegmentType.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSegmentResponse]

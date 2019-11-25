@@ -16,7 +16,7 @@ trait Anon_Choices extends js.Object {
 object Anon_Choices {
   @scala.inline
   def apply(choices: ^[Answers]): Anon_Choices = {
-    val __obj = js.Dynamic.literal(choices = choices)
+    val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Choices]
   }

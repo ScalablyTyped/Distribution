@@ -29,10 +29,10 @@ object AsObject {
     validation: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMValidationStatus.AsObject = null,
     verification: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMVerificationStatusList.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(deserialization = deserialization, invariantViolation = invariantViolation)
-    if (execution != null) __obj.updateDynamic("execution")(execution)
-    if (validation != null) __obj.updateDynamic("validation")(validation)
-    if (verification != null) __obj.updateDynamic("verification")(verification)
+    val __obj = js.Dynamic.literal(deserialization = deserialization.asInstanceOf[js.Any], invariantViolation = invariantViolation.asInstanceOf[js.Any])
+    if (execution != null) __obj.updateDynamic("execution")(execution.asInstanceOf[js.Any])
+    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
+    if (verification != null) __obj.updateDynamic("verification")(verification.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

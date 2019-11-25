@@ -6,7 +6,6 @@ import typings.apolloDashLink.libTypesMod.GraphQLRequest
 import typings.apolloDashLink.libTypesMod.Operation
 import typings.apolloDashLink.libTypesMod.RequestHandler
 import typings.std.Record
-import typings.zenDashObservableDashTs.libZenObservableMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +27,7 @@ object ApolloLink extends js.Object {
   var execute_Original: js.Function2[
     /* link */ this.type, 
     /* operation */ GraphQLRequest, 
-    Observable[FetchResult[StringDictionary[_], Record[String, _], Record[String, _]]]
+    typings.zenDashObservableDashTs.libZenObservableMod.Observable[FetchResult[StringDictionary[_], Record[String, _], Record[String, _]]]
   ] = js.native
   @JSName("from")
   var from_Original: js.Function1[/* links */ js.Array[this.type], this.type] = js.native
@@ -40,7 +39,7 @@ object ApolloLink extends js.Object {
     this.type
   ] = js.native
   def empty(): this.type = js.native
-  def execute(link: this.type, operation: GraphQLRequest): Observable[FetchResult[StringDictionary[_], Record[String, _], Record[String, _]]] = js.native
+  def execute(link: this.type, operation: GraphQLRequest): typings.zenDashObservableDashTs.libZenObservableMod.Observable[FetchResult[StringDictionary[_], Record[String, _], Record[String, _]]] = js.native
   def from(links: js.Array[this.type]): this.type = js.native
   def split(test: js.Function1[/* op */ Operation, Boolean], left: this.type): this.type = js.native
   def split(test: js.Function1[/* op */ Operation, Boolean], left: this.type, right: this.type): this.type = js.native

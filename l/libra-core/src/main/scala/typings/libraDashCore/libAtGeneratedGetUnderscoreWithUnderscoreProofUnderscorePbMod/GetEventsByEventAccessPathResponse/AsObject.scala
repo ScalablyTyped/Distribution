@@ -21,8 +21,8 @@ object AsObject {
     ],
     proofOfLatestEvent: typings.libraDashCore.libAtGeneratedAccountUnderscoreStateUnderscoreBlobUnderscorePbMod.AccountStateWithProof.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(eventsWithProofList = eventsWithProofList)
-    if (proofOfLatestEvent != null) __obj.updateDynamic("proofOfLatestEvent")(proofOfLatestEvent)
+    val __obj = js.Dynamic.literal(eventsWithProofList = eventsWithProofList.asInstanceOf[js.Any])
+    if (proofOfLatestEvent != null) __obj.updateDynamic("proofOfLatestEvent")(proofOfLatestEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

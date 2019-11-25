@@ -22,7 +22,7 @@ trait Anon_IdMinsize extends js.Object {
 object Anon_IdMinsize {
   @scala.inline
   def apply(id: String, min_size: String, name: String): Anon_IdMinsize = {
-    val __obj = js.Dynamic.literal(id = id, min_size = min_size, name = name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], min_size = min_size.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdMinsize]
   }

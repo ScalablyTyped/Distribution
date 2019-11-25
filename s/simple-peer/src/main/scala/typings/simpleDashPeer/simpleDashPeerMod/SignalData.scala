@@ -18,8 +18,8 @@ object SignalData {
   @scala.inline
   def apply(candidate: js.Any = null, sdp: js.Any = null, `type`: offer | pranswer | answer | rollback = null): SignalData = {
     val __obj = js.Dynamic.literal()
-    if (candidate != null) __obj.updateDynamic("candidate")(candidate)
-    if (sdp != null) __obj.updateDynamic("sdp")(sdp)
+    if (candidate != null) __obj.updateDynamic("candidate")(candidate.asInstanceOf[js.Any])
+    if (sdp != null) __obj.updateDynamic("sdp")(sdp.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalData]
   }

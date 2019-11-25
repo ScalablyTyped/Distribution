@@ -12,7 +12,7 @@ trait EncryptResult extends js.Object {
 object EncryptResult {
   @scala.inline
   def apply(sessionKey: Anon_AeadAlgorithm): EncryptResult = {
-    val __obj = js.Dynamic.literal(sessionKey = sessionKey)
+    val __obj = js.Dynamic.literal(sessionKey = sessionKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EncryptResult]
   }

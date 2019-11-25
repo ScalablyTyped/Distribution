@@ -15,7 +15,7 @@ object WithPaginationOptions {
   def apply[MethodName /* <: String */](methodName: MethodName = null, primaryKeyField: String = null): WithPaginationOptions[MethodName] = {
     val __obj = js.Dynamic.literal()
     if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
-    if (primaryKeyField != null) __obj.updateDynamic("primaryKeyField")(primaryKeyField)
+    if (primaryKeyField != null) __obj.updateDynamic("primaryKeyField")(primaryKeyField.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithPaginationOptions[MethodName]]
   }
 }

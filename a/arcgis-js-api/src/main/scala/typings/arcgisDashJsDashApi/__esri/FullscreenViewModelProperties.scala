@@ -24,7 +24,7 @@ object FullscreenViewModelProperties {
   @scala.inline
   def apply(element: HTMLElement = null, view: MapViewProperties | SceneViewProperties = null): FullscreenViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullscreenViewModelProperties]
   }

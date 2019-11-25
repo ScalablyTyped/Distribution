@@ -33,7 +33,7 @@ object Anon_0 {
     PNG_FILTER_SUB: `1`,
     PNG_FILTER_UP: `2`
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal(MIME_PNG = MIME_PNG, PNG_FILTER_AUTO = PNG_FILTER_AUTO, PNG_FILTER_AVERAGE = PNG_FILTER_AVERAGE, PNG_FILTER_NONE = PNG_FILTER_NONE, PNG_FILTER_PATH = PNG_FILTER_PATH, PNG_FILTER_SUB = PNG_FILTER_SUB, PNG_FILTER_UP = PNG_FILTER_UP)
+    val __obj = js.Dynamic.literal(MIME_PNG = MIME_PNG.asInstanceOf[js.Any], PNG_FILTER_AUTO = PNG_FILTER_AUTO.asInstanceOf[js.Any], PNG_FILTER_AVERAGE = PNG_FILTER_AVERAGE.asInstanceOf[js.Any], PNG_FILTER_NONE = PNG_FILTER_NONE.asInstanceOf[js.Any], PNG_FILTER_PATH = PNG_FILTER_PATH.asInstanceOf[js.Any], PNG_FILTER_SUB = PNG_FILTER_SUB.asInstanceOf[js.Any], PNG_FILTER_UP = PNG_FILTER_UP.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_0]
   }

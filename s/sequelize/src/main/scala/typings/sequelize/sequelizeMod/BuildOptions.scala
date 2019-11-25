@@ -33,10 +33,10 @@ object BuildOptions {
     returning: js.UndefOr[Boolean] = js.undefined
   ): BuildOptions = {
     val __obj = js.Dynamic.literal()
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (!js.isUndefined(isNewRecord)) __obj.updateDynamic("isNewRecord")(isNewRecord)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNewRecord)) __obj.updateDynamic("isNewRecord")(isNewRecord.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptions]
   }
 }

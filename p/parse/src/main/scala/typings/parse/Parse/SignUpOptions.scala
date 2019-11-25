@@ -13,8 +13,8 @@ object SignUpOptions {
   @scala.inline
   def apply(installationId: String = null, useMasterKey: js.UndefOr[Boolean] = js.undefined): SignUpOptions = {
     val __obj = js.Dynamic.literal()
-    if (installationId != null) __obj.updateDynamic("installationId")(installationId)
-    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey)
+    if (installationId != null) __obj.updateDynamic("installationId")(installationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignUpOptions]
   }
 }

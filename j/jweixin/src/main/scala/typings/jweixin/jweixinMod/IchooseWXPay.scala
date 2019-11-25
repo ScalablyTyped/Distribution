@@ -34,8 +34,8 @@ object IchooseWXPay {
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IchooseWXPay = {
-    val __obj = js.Dynamic.literal(nonceStr = nonceStr, paySign = paySign, signType = signType, success = js.Any.fromFunction1(success), timestamp = timestamp)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(nonceStr = nonceStr.asInstanceOf[js.Any], paySign = paySign.asInstanceOf[js.Any], signType = signType.asInstanceOf[js.Any], success = js.Any.fromFunction1(success), timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IchooseWXPay]

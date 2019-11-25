@@ -64,15 +64,15 @@ object URLFetchRequestOptions {
     validateHttpsCertificates: js.UndefOr[Boolean] = js.undefined
   ): URLFetchRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (!js.isUndefined(escaping)) __obj.updateDynamic("escaping")(escaping)
-    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(muteHttpExceptions)) __obj.updateDynamic("muteHttpExceptions")(muteHttpExceptions)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(escaping)) __obj.updateDynamic("escaping")(escaping.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(muteHttpExceptions)) __obj.updateDynamic("muteHttpExceptions")(muteHttpExceptions.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIntranet)) __obj.updateDynamic("useIntranet")(useIntranet)
-    if (!js.isUndefined(validateHttpsCertificates)) __obj.updateDynamic("validateHttpsCertificates")(validateHttpsCertificates)
+    if (!js.isUndefined(useIntranet)) __obj.updateDynamic("useIntranet")(useIntranet.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateHttpsCertificates)) __obj.updateDynamic("validateHttpsCertificates")(validateHttpsCertificates.asInstanceOf[js.Any])
     __obj.asInstanceOf[URLFetchRequestOptions]
   }
 }

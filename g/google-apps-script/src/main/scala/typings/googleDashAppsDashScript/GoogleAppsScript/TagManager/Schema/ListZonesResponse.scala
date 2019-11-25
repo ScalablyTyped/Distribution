@@ -13,8 +13,8 @@ object ListZonesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, zone: js.Array[Zone] = null): ListZonesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (zone != null) __obj.updateDynamic("zone")(zone)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListZonesResponse]
   }
 }

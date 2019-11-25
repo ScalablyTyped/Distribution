@@ -16,8 +16,8 @@ object GriddleRenderProperties {
     rowProperties: RowRenderProperties = null
   ): GriddleRenderProperties = {
     val __obj = js.Dynamic.literal()
-    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties)
-    if (rowProperties != null) __obj.updateDynamic("rowProperties")(rowProperties)
+    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties.asInstanceOf[js.Any])
+    if (rowProperties != null) __obj.updateDynamic("rowProperties")(rowProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddleRenderProperties]
   }
 }

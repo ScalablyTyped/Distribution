@@ -23,10 +23,10 @@ object Anon_Fields {
     submitSelector: String = null
   ): Anon_Fields[RT] = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (formSelector != null) __obj.updateDynamic("formSelector")(formSelector)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (submitSelector != null) __obj.updateDynamic("submitSelector")(submitSelector)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (formSelector != null) __obj.updateDynamic("formSelector")(formSelector.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (submitSelector != null) __obj.updateDynamic("submitSelector")(submitSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fields[RT]]
   }
 }

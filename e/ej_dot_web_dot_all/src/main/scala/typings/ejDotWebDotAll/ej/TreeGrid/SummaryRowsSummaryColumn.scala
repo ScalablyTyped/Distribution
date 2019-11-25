@@ -40,12 +40,12 @@ object SummaryRowsSummaryColumn {
     summaryType: SummaryType | String = null
   ): SummaryRowsSummaryColumn = {
     val __obj = js.Dynamic.literal()
-    if (customSummaryValue != null) __obj.updateDynamic("customSummaryValue")(customSummaryValue)
-    if (dataMember != null) __obj.updateDynamic("dataMember")(dataMember)
-    if (displayColumn != null) __obj.updateDynamic("displayColumn")(displayColumn)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (customSummaryValue != null) __obj.updateDynamic("customSummaryValue")(customSummaryValue.asInstanceOf[js.Any])
+    if (dataMember != null) __obj.updateDynamic("dataMember")(dataMember.asInstanceOf[js.Any])
+    if (displayColumn != null) __obj.updateDynamic("displayColumn")(displayColumn.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (summaryType != null) __obj.updateDynamic("summaryType")(summaryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummaryRowsSummaryColumn]
   }

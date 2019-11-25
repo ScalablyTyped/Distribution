@@ -43,12 +43,12 @@ object Element {
     position: Position = null,
     properties: Properties = null
   ): Element = {
-    val __obj = js.Dynamic.literal(children = children, tagName = tagName)
-    __obj.updateDynamic("type")(`type`)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
 }

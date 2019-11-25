@@ -24,12 +24,12 @@ object AnalyticsSnapshot {
     shortUrlClicks: String = null
   ): AnalyticsSnapshot = {
     val __obj = js.Dynamic.literal()
-    if (browsers != null) __obj.updateDynamic("browsers")(browsers)
-    if (countries != null) __obj.updateDynamic("countries")(countries)
-    if (longUrlClicks != null) __obj.updateDynamic("longUrlClicks")(longUrlClicks)
-    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
-    if (referrers != null) __obj.updateDynamic("referrers")(referrers)
-    if (shortUrlClicks != null) __obj.updateDynamic("shortUrlClicks")(shortUrlClicks)
+    if (browsers != null) __obj.updateDynamic("browsers")(browsers.asInstanceOf[js.Any])
+    if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
+    if (longUrlClicks != null) __obj.updateDynamic("longUrlClicks")(longUrlClicks.asInstanceOf[js.Any])
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms.asInstanceOf[js.Any])
+    if (referrers != null) __obj.updateDynamic("referrers")(referrers.asInstanceOf[js.Any])
+    if (shortUrlClicks != null) __obj.updateDynamic("shortUrlClicks")(shortUrlClicks.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsSnapshot]
   }
 }

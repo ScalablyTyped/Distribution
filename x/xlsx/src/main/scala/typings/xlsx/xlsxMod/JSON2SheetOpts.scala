@@ -25,13 +25,13 @@ object JSON2SheetOpts {
     skipHeader: js.UndefOr[Boolean] = js.undefined
   ): JSON2SheetOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF)
-    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA)
-    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates)
-    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles)
+    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF.asInstanceOf[js.Any])
+    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles.asInstanceOf[js.Any])
     if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (!js.isUndefined(skipHeader)) __obj.updateDynamic("skipHeader")(skipHeader)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipHeader)) __obj.updateDynamic("skipHeader")(skipHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSON2SheetOpts]
   }
 }

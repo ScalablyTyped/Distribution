@@ -55,14 +55,14 @@ object MapMatchingRequest {
     steps: js.UndefOr[Boolean] = js.undefined,
     tidy: js.UndefOr[Boolean] = js.undefined
   ): MapMatchingRequest = {
-    val __obj = js.Dynamic.literal(points = points)
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (overview != null) __obj.updateDynamic("overview")(overview)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps)
-    if (!js.isUndefined(tidy)) __obj.updateDynamic("tidy")(tidy)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (!js.isUndefined(tidy)) __obj.updateDynamic("tidy")(tidy.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMatchingRequest]
   }
 }

@@ -17,7 +17,7 @@ trait Anon_Detail[D] extends js.Object {
 object Anon_Detail {
   @scala.inline
   def apply[D](detail: D, target: EventTarget with (Entity[ObjectMap[Component[_, System[_]]]])): Anon_Detail[D] = {
-    val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], target = target)
+    val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Detail[D]]
   }

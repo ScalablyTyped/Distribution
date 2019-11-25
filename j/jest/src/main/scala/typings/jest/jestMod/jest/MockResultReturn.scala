@@ -17,7 +17,7 @@ object MockResultReturn {
   @scala.inline
   def apply[T](`type`: `return`, value: T): MockResultReturn[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockResultReturn[T]]
   }
 }

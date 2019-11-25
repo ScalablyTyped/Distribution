@@ -36,12 +36,12 @@ object ClickEventArgs {
     `type`: String = null
   ): ClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickEventArgs]
   }
 }

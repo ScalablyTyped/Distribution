@@ -13,8 +13,8 @@ object ThemeColorPair {
   @scala.inline
   def apply(color: RgbColor = null, `type`: String = null): ThemeColorPair = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeColorPair]
   }
 }

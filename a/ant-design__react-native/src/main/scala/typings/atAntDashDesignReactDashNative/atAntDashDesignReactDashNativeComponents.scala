@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 object atAntDashDesignReactDashNativeComponents extends atAntDashDesignReactDashNativeProps {
   @scala.inline
-  def Accordion[T /* <: AccordionHeader */]: ComponentType[AccordionProps[T]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esAccordionMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[AccordionProps[T]]]
+  def Accordion: ComponentType[AccordionProps[AccordionHeader]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esAccordionMod.default[typings.atAntDashDesignReactDashNative.esAccordionMod.AccordionHeader]].asInstanceOf[typings.react.reactMod.ComponentType[
+  AccordionProps[typings.atAntDashDesignReactDashNative.esAccordionMod.AccordionHeader]]]
   @scala.inline
   def ActivityDashIndicator: ComponentType[ActivityDashIndicatorProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esActivityDashIndicatorMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ActivityDashIndicatorProps]]
   @scala.inline
@@ -130,7 +131,7 @@ object atAntDashDesignReactDashNativeComponents extends atAntDashDesignReactDash
   @scala.inline
   def SwipeDashAction: ComponentType[SwipeDashActionProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SwipeDashActionProps]]
   @scala.inline
-  def Switch: ComponentType[SwitchProps] = typings.atAntDashDesignReactDashNative.esMod.Switch.asInstanceOf[typings.react.reactMod.ComponentType[SwitchProps]]
+  def Switch: ComponentType[SwitchProps] = typings.atAntDashDesignReactDashNative.esSwitchMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SwitchProps]]
   @scala.inline
   def TabBar: ComponentType[TabBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.TabBar].asInstanceOf[typings.react.reactMod.ComponentType[TabBarProps]]
   @scala.inline

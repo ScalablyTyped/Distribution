@@ -31,15 +31,15 @@ object PoserConfig {
     values: StringDictionary[V] = null
   ): PoserConfig[V] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (ancestorValues != null) __obj.updateDynamic("ancestorValues")(ancestorValues)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (ancestorValues != null) __obj.updateDynamic("ancestorValues")(ancestorValues.asInstanceOf[js.Any])
     if (initialPose != null) __obj.updateDynamic("initialPose")(initialPose.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (parentValues != null) __obj.updateDynamic("parentValues")(parentValues)
-    if (passive != null) __obj.updateDynamic("passive")(passive)
-    if (props != null) __obj.updateDynamic("props")(props)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
+    if (parentValues != null) __obj.updateDynamic("parentValues")(parentValues.asInstanceOf[js.Any])
+    if (passive != null) __obj.updateDynamic("passive")(passive.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoserConfig[V]]
   }
 }

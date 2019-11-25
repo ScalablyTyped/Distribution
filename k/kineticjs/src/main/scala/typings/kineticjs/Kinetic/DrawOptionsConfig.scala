@@ -22,10 +22,10 @@ object DrawOptionsConfig {
     strokeWidth: Int | Double = null
   ): DrawOptionsConfig = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin)
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawOptionsConfig]
   }

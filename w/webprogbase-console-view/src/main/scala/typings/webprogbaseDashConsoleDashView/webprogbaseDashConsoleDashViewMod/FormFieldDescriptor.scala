@@ -13,9 +13,9 @@ trait FormFieldDescriptor extends js.Object {
 object FormFieldDescriptor {
   @scala.inline
   def apply(description: String, auto: String = null, default: String = null): FormFieldDescriptor = {
-    val __obj = js.Dynamic.literal(description = description)
-    if (auto != null) __obj.updateDynamic("auto")(auto)
-    if (default != null) __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
+    if (auto != null) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormFieldDescriptor]
   }
 }

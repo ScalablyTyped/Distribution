@@ -12,7 +12,7 @@ package object Cypress {
 
   type Agent[T /* <: SinonSpy */] = SinonSpyAgent[T] with T
   // Diff taken from https://github.com/Microsoft/TypeScript/issues/12215#issuecomment-311923766
-  type Diff[T /* <: String */, U /* <: String */] = /* import warning: ImportType.apply Failed type conversion: {[ P in T ]: P} & {[ P in U ]: never} & {[x: string] : never}[T] */ js.Any
+  type Diff[T /* <: String */, U /* <: String */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in T ]: P} & {[ P in U ]: never} & {[x: string] : never}[T] */ js.Any
   type FileContents = String | js.Array[js.Any] | js.Object
   type HttpMethod = String
   type ObjectLike = StringDictionary[js.Any]

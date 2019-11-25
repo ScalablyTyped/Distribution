@@ -13,7 +13,7 @@ trait DragDelta extends js.Object {
 object DragDelta {
   @scala.inline
   def apply(x: Double, y: Double, zoom: Double): DragDelta = {
-    val __obj = js.Dynamic.literal(x = x, y = y, zoom = zoom)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DragDelta]
   }

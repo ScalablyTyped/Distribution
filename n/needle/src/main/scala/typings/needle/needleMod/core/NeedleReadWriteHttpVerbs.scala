@@ -10,6 +10,18 @@ import scala.scalajs.js.annotation._
   - typings.needle.needleStrings.post
   - typings.needle.needleStrings.put
 */
-trait NeedleReadWriteHttpVerbs
-  extends typings.needle.needleMod.core.NeedleHttpVerbs
+trait NeedleReadWriteHttpVerbs extends js.Object
+
+object NeedleReadWriteHttpVerbs {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def delete: typings.needle.needleStrings.delete = this.cast("delete")
+  @scala.inline
+  def patch: typings.needle.needleStrings.patch = this.cast("patch")
+  @scala.inline
+  def post: typings.needle.needleStrings.post = this.cast("post")
+  @scala.inline
+  def put: typings.needle.needleStrings.put = this.cast("put")
+}
 

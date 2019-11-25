@@ -21,7 +21,7 @@ object Anon_Cflags {
     include_dirs: js.Array[java.lang.String],
     libraries: js.Array[java.lang.String]
   ): Anon_Cflags = {
-    val __obj = js.Dynamic.literal(cflags = cflags, default_configuration = default_configuration, defines = defines, include_dirs = include_dirs, libraries = libraries)
+    val __obj = js.Dynamic.literal(cflags = cflags.asInstanceOf[js.Any], default_configuration = default_configuration.asInstanceOf[js.Any], defines = defines.asInstanceOf[js.Any], include_dirs = include_dirs.asInstanceOf[js.Any], libraries = libraries.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cflags]
   }

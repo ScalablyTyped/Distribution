@@ -1413,7 +1413,7 @@ object electronStrings {
   sealed trait unhide extends js.Object
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown_ extends js.Object
   
   @js.native
   sealed trait `unlock-screen` extends js.Object
@@ -2477,7 +2477,7 @@ object electronStrings {
   @scala.inline
   def unhide: unhide = "unhide".asInstanceOf[unhide]
   @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
   def `unlock-screen`: `unlock-screen` = "unlock-screen".asInstanceOf[`unlock-screen`]
   @scala.inline

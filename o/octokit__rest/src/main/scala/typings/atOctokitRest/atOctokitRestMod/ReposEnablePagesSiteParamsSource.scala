@@ -16,7 +16,7 @@ object ReposEnablePagesSiteParamsSource {
   def apply(branch: master | `gh-pages` = null, path: String = null): ReposEnablePagesSiteParamsSource = {
     val __obj = js.Dynamic.literal()
     if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposEnablePagesSiteParamsSource]
   }
 }

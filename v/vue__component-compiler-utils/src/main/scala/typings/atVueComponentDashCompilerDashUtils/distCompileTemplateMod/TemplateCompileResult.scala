@@ -20,7 +20,7 @@ object TemplateCompileResult {
     source: String,
     tips: js.Array[String | ErrorWithRange]
   ): TemplateCompileResult = {
-    val __obj = js.Dynamic.literal(code = code, errors = errors, source = source, tips = tips)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TemplateCompileResult]
   }

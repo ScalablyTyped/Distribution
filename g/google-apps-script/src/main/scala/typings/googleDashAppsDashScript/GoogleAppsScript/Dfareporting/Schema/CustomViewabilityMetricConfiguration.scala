@@ -20,7 +20,7 @@ object CustomViewabilityMetricConfiguration {
     viewabilityPercent: Int | Double = null
   ): CustomViewabilityMetricConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible)
+    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible.asInstanceOf[js.Any])
     if (timeMillis != null) __obj.updateDynamic("timeMillis")(timeMillis.asInstanceOf[js.Any])
     if (timePercent != null) __obj.updateDynamic("timePercent")(timePercent.asInstanceOf[js.Any])
     if (viewabilityPercent != null) __obj.updateDynamic("viewabilityPercent")(viewabilityPercent.asInstanceOf[js.Any])

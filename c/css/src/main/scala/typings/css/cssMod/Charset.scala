@@ -16,10 +16,10 @@ object Charset {
   @scala.inline
   def apply(charset: String = null, parent: Node = null, position: Anon_Content = null, `type`: String = null): Charset = {
     val __obj = js.Dynamic.literal()
-    if (charset != null) __obj.updateDynamic("charset")(charset)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Charset]
   }
 }

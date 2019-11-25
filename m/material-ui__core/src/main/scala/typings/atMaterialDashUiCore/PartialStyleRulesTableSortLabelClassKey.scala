@@ -24,11 +24,11 @@ object PartialStyleRulesTableSortLabelClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesTableSortLabelClassKey = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconDirectionAsc != null) __obj.updateDynamic("iconDirectionAsc")(iconDirectionAsc)
-    if (iconDirectionDesc != null) __obj.updateDynamic("iconDirectionDesc")(iconDirectionDesc)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconDirectionAsc != null) __obj.updateDynamic("iconDirectionAsc")(iconDirectionAsc.asInstanceOf[js.Any])
+    if (iconDirectionDesc != null) __obj.updateDynamic("iconDirectionDesc")(iconDirectionDesc.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesTableSortLabelClassKey]
   }
 }

@@ -22,7 +22,7 @@ trait UpdateEndpointsBatchOutput extends OutputTypesUnion {
 object UpdateEndpointsBatchOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, MessageBody: _UnmarshalledMessageBody): UpdateEndpointsBatchOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, MessageBody = MessageBody)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], MessageBody = MessageBody.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateEndpointsBatchOutput]
   }

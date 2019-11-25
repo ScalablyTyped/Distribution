@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait FontVariantLigatures extends js.Object
 
+object FontVariantLigatures {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def none: typings.reactDashSketchapp.reactDashSketchappStrings.none = this.cast("none")
+  @scala.inline
+  def normal: typings.reactDashSketchapp.reactDashSketchappStrings.normal = this.cast("normal")
+}
+

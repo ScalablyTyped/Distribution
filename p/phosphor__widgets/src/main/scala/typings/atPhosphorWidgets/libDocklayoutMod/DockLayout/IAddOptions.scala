@@ -27,8 +27,8 @@ object IAddOptions {
   @scala.inline
   def apply(mode: InsertMode = null, ref: Widget = null): IAddOptions = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddOptions]
   }
 }

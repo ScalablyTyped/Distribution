@@ -27,12 +27,12 @@ object WebSessionDescriptionHandlerOptions {
     peerConnectionOptions: PeerConnectionOptions = null
   ): WebSessionDescriptionHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (RTCOfferOptions != null) __obj.updateDynamic("RTCOfferOptions")(RTCOfferOptions)
-    if (!js.isUndefined(alwaysAcquireMediaFirst)) __obj.updateDynamic("alwaysAcquireMediaFirst")(alwaysAcquireMediaFirst)
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
-    if (!js.isUndefined(disableAudioFallback)) __obj.updateDynamic("disableAudioFallback")(disableAudioFallback)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (peerConnectionOptions != null) __obj.updateDynamic("peerConnectionOptions")(peerConnectionOptions)
+    if (RTCOfferOptions != null) __obj.updateDynamic("RTCOfferOptions")(RTCOfferOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysAcquireMediaFirst)) __obj.updateDynamic("alwaysAcquireMediaFirst")(alwaysAcquireMediaFirst.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAudioFallback)) __obj.updateDynamic("disableAudioFallback")(disableAudioFallback.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
+    if (peerConnectionOptions != null) __obj.updateDynamic("peerConnectionOptions")(peerConnectionOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSessionDescriptionHandlerOptions]
   }
 }

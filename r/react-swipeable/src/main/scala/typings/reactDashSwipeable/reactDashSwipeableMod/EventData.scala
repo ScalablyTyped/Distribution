@@ -33,7 +33,7 @@ object EventData {
     initial: Vector2,
     velocity: Double
   ): EventData = {
-    val __obj = js.Dynamic.literal(absX = absX, absY = absY, deltaX = deltaX, deltaY = deltaY, dir = dir.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], initial = initial, velocity = velocity)
+    val __obj = js.Dynamic.literal(absX = absX.asInstanceOf[js.Any], absY = absY.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventData]
   }

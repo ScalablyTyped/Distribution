@@ -20,9 +20,9 @@ object Anon_Actions {
     event: DeclarativeWebRequestEventList = null
   ): Anon_Actions = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Actions]
   }
 }

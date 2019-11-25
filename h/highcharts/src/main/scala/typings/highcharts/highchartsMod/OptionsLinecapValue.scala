@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait OptionsLinecapValue extends js.Object
 
+object OptionsLinecapValue {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def round: typings.highcharts.highchartsStrings.round = this.cast("round")
+  @scala.inline
+  def square: typings.highcharts.highchartsStrings.square = this.cast("square")
+}
+

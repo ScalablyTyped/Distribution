@@ -14,9 +14,9 @@ trait NavigationSetParamsAction
 object NavigationSetParamsAction {
   @scala.inline
   def apply(key: String, `type`: `Navigation/SET_PARAMS`, params: NavigationParams = null): NavigationSetParamsAction = {
-    val __obj = js.Dynamic.literal(key = key)
-    __obj.updateDynamic("type")(`type`)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationSetParamsAction]
   }
 }

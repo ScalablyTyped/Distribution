@@ -15,9 +15,9 @@ object NavigationPopToTopAction {
   @scala.inline
   def apply(`type`: `Navigation/POP_TO_TOP`, immediate: js.UndefOr[Boolean] = js.undefined, key: String = null): NavigationPopToTopAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
-    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationPopToTopAction]
   }
 }

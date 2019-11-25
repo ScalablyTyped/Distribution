@@ -45,9 +45,9 @@ object IGulpCacheOptions {
     value: /* result */ js.Any => js.Object | js.Promise[js.Object] | String = null
   ): IGulpCacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (fileCache != null) __obj.updateDynamic("fileCache")(fileCache)
+    if (fileCache != null) __obj.updateDynamic("fileCache")(fileCache.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(js.Any.fromFunction2(key))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(js.Any.fromFunction1(value))
     __obj.asInstanceOf[IGulpCacheOptions]

@@ -13,7 +13,7 @@ object Anon_CloseModal {
   @scala.inline
   def apply(closeModal: js.UndefOr[Boolean] = js.undefined, value: String | js.Any = null): Anon_CloseModal = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closeModal)) __obj.updateDynamic("closeModal")(closeModal)
+    if (!js.isUndefined(closeModal)) __obj.updateDynamic("closeModal")(closeModal.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CloseModal]
   }

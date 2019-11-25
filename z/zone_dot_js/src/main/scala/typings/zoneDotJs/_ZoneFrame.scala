@@ -15,8 +15,8 @@ trait _ZoneFrame extends js.Object {
 object _ZoneFrame {
   @scala.inline
   def apply(zone: Zone, parent: _ZoneFrame = null): _ZoneFrame = {
-    val __obj = js.Dynamic.literal(zone = zone)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(zone = zone.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ZoneFrame]
   }
 }

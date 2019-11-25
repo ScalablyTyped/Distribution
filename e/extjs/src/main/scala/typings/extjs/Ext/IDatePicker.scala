@@ -144,8 +144,6 @@ object IDatePicker {
     IComponent: IComponent = null,
     ariaTitle: java.lang.String = null,
     ariaTitleDateFormat: java.lang.String = null,
-    baseCls: java.lang.String = null,
-    border: js.Any = null,
     dayNames: Array = null,
     disableAnim: js.UndefOr[Boolean] = js.undefined,
     disabledCellCls: java.lang.String = null,
@@ -160,7 +158,6 @@ object IDatePicker {
     getValue: () => _ = null,
     handler: js.Any = null,
     hideMonthPicker: /* animate */ js.UndefOr[Boolean] => typings.extjs.Ext.picker.IDate = null,
-    initComponent: () => Unit = null,
     keyNavConfig: js.Any = null,
     longDayFormat: java.lang.String = null,
     maxDate: js.Any = null,
@@ -172,7 +169,6 @@ object IDatePicker {
     monthYearText: java.lang.String = null,
     nextText: java.lang.String = null,
     prevText: java.lang.String = null,
-    renderTpl: js.Any = null,
     scope: js.Any = null,
     selectToday: () => typings.extjs.Ext.picker.IDate = null,
     selectedCls: java.lang.String = null,
@@ -192,41 +188,37 @@ object IDatePicker {
     todayTip: java.lang.String = null
   ): IDatePicker = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (ariaTitle != null) __obj.updateDynamic("ariaTitle")(ariaTitle)
-    if (ariaTitleDateFormat != null) __obj.updateDynamic("ariaTitleDateFormat")(ariaTitleDateFormat)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames)
-    if (!js.isUndefined(disableAnim)) __obj.updateDynamic("disableAnim")(disableAnim)
-    if (disabledCellCls != null) __obj.updateDynamic("disabledCellCls")(disabledCellCls)
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates)
-    if (disabledDatesRE != null) __obj.updateDynamic("disabledDatesRE")(disabledDatesRE)
-    if (disabledDatesText != null) __obj.updateDynamic("disabledDatesText")(disabledDatesText)
-    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays)
-    if (disabledDaysText != null) __obj.updateDynamic("disabledDaysText")(disabledDaysText)
-    if (!js.isUndefined(focusOnShow)) __obj.updateDynamic("focusOnShow")(focusOnShow)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (ariaTitle != null) __obj.updateDynamic("ariaTitle")(ariaTitle.asInstanceOf[js.Any])
+    if (ariaTitleDateFormat != null) __obj.updateDynamic("ariaTitleDateFormat")(ariaTitleDateFormat.asInstanceOf[js.Any])
+    if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAnim)) __obj.updateDynamic("disableAnim")(disableAnim.asInstanceOf[js.Any])
+    if (disabledCellCls != null) __obj.updateDynamic("disabledCellCls")(disabledCellCls.asInstanceOf[js.Any])
+    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
+    if (disabledDatesRE != null) __obj.updateDynamic("disabledDatesRE")(disabledDatesRE.asInstanceOf[js.Any])
+    if (disabledDatesText != null) __obj.updateDynamic("disabledDatesText")(disabledDatesText.asInstanceOf[js.Any])
+    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays.asInstanceOf[js.Any])
+    if (disabledDaysText != null) __obj.updateDynamic("disabledDaysText")(disabledDaysText.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusOnShow)) __obj.updateDynamic("focusOnShow")(focusOnShow.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (getDayInitial != null) __obj.updateDynamic("getDayInitial")(js.Any.fromFunction1(getDayInitial))
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
-    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (hideMonthPicker != null) __obj.updateDynamic("hideMonthPicker")(js.Any.fromFunction1(hideMonthPicker))
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (keyNavConfig != null) __obj.updateDynamic("keyNavConfig")(keyNavConfig)
-    if (longDayFormat != null) __obj.updateDynamic("longDayFormat")(longDayFormat)
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
-    if (maxText != null) __obj.updateDynamic("maxText")(maxText)
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
-    if (minText != null) __obj.updateDynamic("minText")(minText)
-    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames)
-    if (monthYearFormat != null) __obj.updateDynamic("monthYearFormat")(monthYearFormat)
-    if (monthYearText != null) __obj.updateDynamic("monthYearText")(monthYearText)
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
-    if (prevText != null) __obj.updateDynamic("prevText")(prevText)
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (keyNavConfig != null) __obj.updateDynamic("keyNavConfig")(keyNavConfig.asInstanceOf[js.Any])
+    if (longDayFormat != null) __obj.updateDynamic("longDayFormat")(longDayFormat.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (maxText != null) __obj.updateDynamic("maxText")(maxText.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (minText != null) __obj.updateDynamic("minText")(minText.asInstanceOf[js.Any])
+    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
+    if (monthYearFormat != null) __obj.updateDynamic("monthYearFormat")(monthYearFormat.asInstanceOf[js.Any])
+    if (monthYearText != null) __obj.updateDynamic("monthYearText")(monthYearText.asInstanceOf[js.Any])
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
+    if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (selectToday != null) __obj.updateDynamic("selectToday")(js.Any.fromFunction0(selectToday))
-    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls)
+    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls.asInstanceOf[js.Any])
     if (setDisabledDates != null) __obj.updateDynamic("setDisabledDates")(js.Any.fromFunction1(setDisabledDates))
     if (setDisabledDays != null) __obj.updateDynamic("setDisabledDays")(js.Any.fromFunction1(setDisabledDays))
     if (setMaxDate != null) __obj.updateDynamic("setMaxDate")(js.Any.fromFunction1(setMaxDate))
@@ -237,10 +229,10 @@ object IDatePicker {
     if (showNextYear != null) __obj.updateDynamic("showNextYear")(js.Any.fromFunction0(showNextYear))
     if (showPrevMonth != null) __obj.updateDynamic("showPrevMonth")(js.Any.fromFunction1(showPrevMonth))
     if (showPrevYear != null) __obj.updateDynamic("showPrevYear")(js.Any.fromFunction0(showPrevYear))
-    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday)
+    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.asInstanceOf[js.Any])
     if (startDay != null) __obj.updateDynamic("startDay")(startDay.asInstanceOf[js.Any])
-    if (todayText != null) __obj.updateDynamic("todayText")(todayText)
-    if (todayTip != null) __obj.updateDynamic("todayTip")(todayTip)
+    if (todayText != null) __obj.updateDynamic("todayText")(todayText.asInstanceOf[js.Any])
+    if (todayTip != null) __obj.updateDynamic("todayTip")(todayTip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePicker]
   }
 }

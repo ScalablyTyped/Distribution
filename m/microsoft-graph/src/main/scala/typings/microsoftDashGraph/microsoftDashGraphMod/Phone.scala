@@ -20,10 +20,10 @@ object Phone {
   @scala.inline
   def apply(language: String = null, number: String = null, region: String = null, `type`: PhoneType = null): Phone = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Phone]
   }
 }

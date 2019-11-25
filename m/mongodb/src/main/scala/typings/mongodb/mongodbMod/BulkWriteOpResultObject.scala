@@ -30,12 +30,12 @@ object BulkWriteOpResultObject {
     val __obj = js.Dynamic.literal()
     if (deletedCount != null) __obj.updateDynamic("deletedCount")(deletedCount.asInstanceOf[js.Any])
     if (insertedCount != null) __obj.updateDynamic("insertedCount")(insertedCount.asInstanceOf[js.Any])
-    if (insertedIds != null) __obj.updateDynamic("insertedIds")(insertedIds)
+    if (insertedIds != null) __obj.updateDynamic("insertedIds")(insertedIds.asInstanceOf[js.Any])
     if (matchedCount != null) __obj.updateDynamic("matchedCount")(matchedCount.asInstanceOf[js.Any])
     if (modifiedCount != null) __obj.updateDynamic("modifiedCount")(modifiedCount.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     if (upsertedCount != null) __obj.updateDynamic("upsertedCount")(upsertedCount.asInstanceOf[js.Any])
-    if (upsertedIds != null) __obj.updateDynamic("upsertedIds")(upsertedIds)
+    if (upsertedIds != null) __obj.updateDynamic("upsertedIds")(upsertedIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkWriteOpResultObject]
   }
 }

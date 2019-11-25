@@ -13,8 +13,8 @@ object Anon_Extensions {
   @scala.inline
   def apply(extensions: String = null, title: String = null): Anon_Extensions = {
     val __obj = js.Dynamic.literal()
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Extensions]
   }
 }

@@ -30,12 +30,12 @@ object TargetResource {
     userPrincipalName: String = null
   ): TargetResource = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (groupType != null) __obj.updateDynamic("groupType")(groupType)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifiedProperties != null) __obj.updateDynamic("modifiedProperties")(modifiedProperties)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (groupType != null) __obj.updateDynamic("groupType")(groupType.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifiedProperties != null) __obj.updateDynamic("modifiedProperties")(modifiedProperties.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetResource]
   }
 }

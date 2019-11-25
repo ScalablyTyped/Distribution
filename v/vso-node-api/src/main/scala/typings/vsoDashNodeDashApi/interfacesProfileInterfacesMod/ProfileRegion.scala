@@ -18,7 +18,7 @@ trait ProfileRegion extends js.Object {
 object ProfileRegion {
   @scala.inline
   def apply(code: String, name: String): ProfileRegion = {
-    val __obj = js.Dynamic.literal(code = code, name = name)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProfileRegion]
   }

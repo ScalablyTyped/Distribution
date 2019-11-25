@@ -13,7 +13,7 @@ trait CertificateRequest extends js.Object {
 object CertificateRequest {
   @scala.inline
   def apply(certificate_authorities: ByteBuffer, certificate_types: ByteBuffer): CertificateRequest = {
-    val __obj = js.Dynamic.literal(certificate_authorities = certificate_authorities, certificate_types = certificate_types)
+    val __obj = js.Dynamic.literal(certificate_authorities = certificate_authorities.asInstanceOf[js.Any], certificate_types = certificate_types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CertificateRequest]
   }

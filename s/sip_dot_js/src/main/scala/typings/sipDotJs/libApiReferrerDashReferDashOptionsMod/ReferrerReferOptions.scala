@@ -17,8 +17,8 @@ object ReferrerReferOptions {
   @scala.inline
   def apply(requestDelegate: ReferrerDelegate = null, requestOptions: RequestOptions = null): ReferrerReferOptions = {
     val __obj = js.Dynamic.literal()
-    if (requestDelegate != null) __obj.updateDynamic("requestDelegate")(requestDelegate)
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (requestDelegate != null) __obj.updateDynamic("requestDelegate")(requestDelegate.asInstanceOf[js.Any])
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferrerReferOptions]
   }
 }

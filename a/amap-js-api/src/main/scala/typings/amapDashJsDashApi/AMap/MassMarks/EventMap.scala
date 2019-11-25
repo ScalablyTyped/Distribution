@@ -35,7 +35,7 @@ object EventMap {
     touchend: UIEvent[touchend, I],
     touchstart: UIEvent[touchstart, I]
   ): EventMap[I] = {
-    val __obj = js.Dynamic.literal(click = click, dblclick = dblclick, mousedown = mousedown, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, touchend = touchend, touchstart = touchstart)
+    val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap[I]]
   }

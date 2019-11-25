@@ -18,8 +18,8 @@ object DateTimeTimeZone {
   @scala.inline
   def apply(dateTime: String = null, timeZone: String = null): DateTimeTimeZone = {
     val __obj = js.Dynamic.literal()
-    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeTimeZone]
   }
 }

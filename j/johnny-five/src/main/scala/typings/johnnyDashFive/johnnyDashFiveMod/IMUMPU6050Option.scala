@@ -11,8 +11,8 @@ trait IMUMPU6050Option extends IMUGeneralOption {
 object IMUMPU6050Option {
   @scala.inline
   def apply(address: Double, controller: String = null, freq: Int | Double = null): IMUMPU6050Option = {
-    val __obj = js.Dynamic.literal(address = address)
-    if (controller != null) __obj.updateDynamic("controller")(controller)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMUMPU6050Option]
   }

@@ -45,7 +45,7 @@ object Anon_Album {
     track: String,
     year: String
   ): Anon_Album = {
-    val __obj = js.Dynamic.literal(album = album, album_artist = album_artist, author = author, comment = comment, composer = composer, copyright = copyright, description = description, episode_id = episode_id, genre = genre, grouping = grouping, lyrics = lyrics, network = network, show = show, synopsis = synopsis, title = title, track = track, year = year)
+    val __obj = js.Dynamic.literal(album = album.asInstanceOf[js.Any], album_artist = album_artist.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], composer = composer.asInstanceOf[js.Any], copyright = copyright.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], episode_id = episode_id.asInstanceOf[js.Any], genre = genre.asInstanceOf[js.Any], grouping = grouping.asInstanceOf[js.Any], lyrics = lyrics.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], synopsis = synopsis.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Album]
   }

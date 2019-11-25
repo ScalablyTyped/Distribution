@@ -12,7 +12,7 @@ trait Anon_Router extends js.Object {
 object Anon_Router {
   @scala.inline
   def apply(router: RouterState): Anon_Router = {
-    val __obj = js.Dynamic.literal(router = router)
+    val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Router]
   }

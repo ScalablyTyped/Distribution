@@ -2,7 +2,6 @@ package typings.std
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.stdStrings.abort
-import typings.std.stdStrings.close
 import typings.std.stdStrings.error
 import typings.std.stdStrings.versionchange
 import scala.scalajs.js
@@ -43,16 +42,19 @@ trait IDBDatabase extends EventTarget {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_close(
+    `type`: typings.std.stdStrings.close,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
-    `type`: close,
+    `type`: typings.std.stdStrings.close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
-    `type`: close,
+    `type`: typings.std.stdStrings.close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -119,16 +121,19 @@ trait IDBDatabase extends EventTarget {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_close(
+    `type`: typings.std.stdStrings.close,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
-    `type`: close,
+    `type`: typings.std.stdStrings.close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
-    `type`: close,
+    `type`: typings.std.stdStrings.close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native

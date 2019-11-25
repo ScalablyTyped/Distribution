@@ -27,14 +27,14 @@ object PMDMessage {
     timestamp: Int | Double = null,
     version: String = null
   ): PMDMessage = {
-    val __obj = js.Dynamic.literal(messageType = messageType)
-    if (instrument != null) __obj.updateDynamic("instrument")(instrument)
+    val __obj = js.Dynamic.literal(messageType = messageType.asInstanceOf[js.Any])
+    if (instrument != null) __obj.updateDynamic("instrument")(instrument.asInstanceOf[js.Any])
     if (orderNumber != null) __obj.updateDynamic("orderNumber")(orderNumber.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (side != null) __obj.updateDynamic("side")(side)
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PMDMessage]
   }
 }

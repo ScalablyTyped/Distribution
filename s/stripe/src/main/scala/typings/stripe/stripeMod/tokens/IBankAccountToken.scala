@@ -27,10 +27,10 @@ object IBankAccountToken {
     used: Boolean,
     bank_account: IBankAccountHash = null
   ): IBankAccountToken = {
-    val __obj = js.Dynamic.literal(client_ip = client_ip, created = created, id = id, livemode = livemode, used = used)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(client_ip = client_ip.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (bank_account != null) __obj.updateDynamic("bank_account")(bank_account)
+    if (bank_account != null) __obj.updateDynamic("bank_account")(bank_account.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBankAccountToken]
   }
 }

@@ -12,7 +12,7 @@ trait NumberSize extends js.Object {
 object NumberSize {
   @scala.inline
   def apply(height: Double, width: Double): NumberSize = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NumberSize]
   }

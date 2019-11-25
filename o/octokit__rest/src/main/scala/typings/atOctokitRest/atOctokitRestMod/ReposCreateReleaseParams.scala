@@ -45,12 +45,12 @@ object ReposCreateReleaseParams {
     prerelease: js.UndefOr[Boolean] = js.undefined,
     target_commitish: String = null
   ): ReposCreateReleaseParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, tag_name = tag_name)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (!js.isUndefined(draft)) __obj.updateDynamic("draft")(draft)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(prerelease)) __obj.updateDynamic("prerelease")(prerelease)
-    if (target_commitish != null) __obj.updateDynamic("target_commitish")(target_commitish)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tag_name = tag_name.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(draft)) __obj.updateDynamic("draft")(draft.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(prerelease)) __obj.updateDynamic("prerelease")(prerelease.asInstanceOf[js.Any])
+    if (target_commitish != null) __obj.updateDynamic("target_commitish")(target_commitish.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateReleaseParams]
   }
 }

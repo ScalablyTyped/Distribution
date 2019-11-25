@@ -13,7 +13,7 @@ package object handlebars {
   // NOTE: for backward compatibility of this typing
   type HandlebarsTemplateDelegate[T] = TemplateDelegate[T]
   type HandlebarsTemplates = StringDictionary[HandlebarsTemplateDelegate[js.Any]]
-  type KnownHelpers = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type KnownHelpers = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in handlebars.BuiltinHelperName | handlebars.CustomHelperName ]: boolean}
     */ typings.handlebars.handlebarsStrings.KnownHelpers with js.Any
   // for backward compatibility of this typing

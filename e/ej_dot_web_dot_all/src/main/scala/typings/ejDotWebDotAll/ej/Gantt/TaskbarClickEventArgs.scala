@@ -36,12 +36,12 @@ object TaskbarClickEventArgs {
     `type`: String = null
   ): TaskbarClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (taskbarElement != null) __obj.updateDynamic("taskbarElement")(taskbarElement)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (taskbarElement != null) __obj.updateDynamic("taskbarElement")(taskbarElement.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskbarClickEventArgs]
   }
 }

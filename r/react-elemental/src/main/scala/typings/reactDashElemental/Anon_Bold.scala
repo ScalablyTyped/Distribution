@@ -13,8 +13,8 @@ object Anon_Bold {
   @scala.inline
   def apply(bold: String = null, regular: String = null): Anon_Bold = {
     val __obj = js.Dynamic.literal()
-    if (bold != null) __obj.updateDynamic("bold")(bold)
-    if (regular != null) __obj.updateDynamic("regular")(regular)
+    if (bold != null) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (regular != null) __obj.updateDynamic("regular")(regular.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bold]
   }
 }

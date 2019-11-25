@@ -129,10 +129,10 @@ object sharepointStrings {
   sealed trait _visualBestBet extends js.Object
   
   @js.native
-  sealed trait and extends js.Object
+  sealed trait and_ extends js.Object
   
   @js.native
-  sealed trait or extends js.Object
+  sealed trait or_ extends js.Object
   
   @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
@@ -217,8 +217,8 @@ object sharepointStrings {
   @scala.inline
   def _visualBestBet: _visualBestBet = "_visualBestBet".asInstanceOf[_visualBestBet]
   @scala.inline
-  def and: and = "and".asInstanceOf[and]
+  def and_ : and_ = "and".asInstanceOf[and_]
   @scala.inline
-  def or: or = "or".asInstanceOf[or]
+  def or_ : or_ = "or".asInstanceOf[or_]
 }
 

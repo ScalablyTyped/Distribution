@@ -13,9 +13,9 @@ trait JWSRecipient extends js.Object {
 object JWSRecipient {
   @scala.inline
   def apply(signature: String, header: js.Object = null, `protected`: String = null): JWSRecipient = {
-    val __obj = js.Dynamic.literal(signature = signature)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (`protected` != null) __obj.updateDynamic("protected")(`protected`)
+    val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (`protected` != null) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWSRecipient]
   }
 }

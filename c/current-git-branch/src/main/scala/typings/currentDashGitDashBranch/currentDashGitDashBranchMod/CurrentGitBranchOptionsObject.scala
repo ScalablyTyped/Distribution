@@ -13,8 +13,8 @@ object CurrentGitBranchOptionsObject {
   @scala.inline
   def apply(altPath: String = null, branchOptions: String = null): CurrentGitBranchOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (altPath != null) __obj.updateDynamic("altPath")(altPath)
-    if (branchOptions != null) __obj.updateDynamic("branchOptions")(branchOptions)
+    if (altPath != null) __obj.updateDynamic("altPath")(altPath.asInstanceOf[js.Any])
+    if (branchOptions != null) __obj.updateDynamic("branchOptions")(branchOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentGitBranchOptionsObject]
   }
 }

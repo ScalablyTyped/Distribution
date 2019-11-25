@@ -85,8 +85,8 @@ object ICoupon {
     times_redeemed: Double,
     valid: Boolean
   ): ICoupon = {
-    val __obj = js.Dynamic.literal(amount_off = amount_off, created = created, currency = currency, duration = duration.asInstanceOf[js.Any], duration_in_months = duration_in_months, id = id, livemode = livemode, max_redemptions = max_redemptions, metadata = metadata, name = name, percent_off = percent_off, redeem_by = redeem_by, times_redeemed = times_redeemed, valid = valid)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(amount_off = amount_off.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], duration_in_months = duration_in_months.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], max_redemptions = max_redemptions.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], percent_off = percent_off.asInstanceOf[js.Any], redeem_by = redeem_by.asInstanceOf[js.Any], times_redeemed = times_redeemed.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICoupon]
   }
 }

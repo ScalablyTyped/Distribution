@@ -36,7 +36,7 @@ object ICustomApplication {
     RequireSystemAccess: Boolean,
     Version: String
   ): ICustomApplication = {
-    val __obj = js.Dynamic.literal(ApplicationType = ApplicationType, ChecksumHash = ChecksumHash, Clone = js.Any.fromFunction0(Clone), Description = Description, Enabled = Enabled, ID = ID, MasterApplication = MasterApplication, Name = Name, Optional = Optional, Publisher = Publisher, RequireSystemAccess = RequireSystemAccess, Version = Version)
+    val __obj = js.Dynamic.literal(ApplicationType = ApplicationType.asInstanceOf[js.Any], ChecksumHash = ChecksumHash.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), Description = Description.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], MasterApplication = MasterApplication.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Optional = Optional.asInstanceOf[js.Any], Publisher = Publisher.asInstanceOf[js.Any], RequireSystemAccess = RequireSystemAccess.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICustomApplication]
   }

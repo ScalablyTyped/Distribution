@@ -23,14 +23,14 @@ object CallSiteLike {
   ): CallSiteLike = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (!js.isUndefined(constructor)) __obj.updateDynamic("constructor")(constructor)
-    if (evalOrigin != null) __obj.updateDynamic("evalOrigin")(evalOrigin)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (function != null) __obj.updateDynamic("function")(function)
+    if (!js.isUndefined(constructor)) __obj.updateDynamic("constructor")(constructor.asInstanceOf[js.Any])
+    if (evalOrigin != null) __obj.updateDynamic("evalOrigin")(evalOrigin.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallSiteLike]
   }
 }

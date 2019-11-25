@@ -13,8 +13,8 @@ object GmbAccounts {
   @scala.inline
   def apply(accountId: String = null, gmbAccounts: js.Array[GmbAccountsGmbAccount] = null): GmbAccounts = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (gmbAccounts != null) __obj.updateDynamic("gmbAccounts")(gmbAccounts)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (gmbAccounts != null) __obj.updateDynamic("gmbAccounts")(gmbAccounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[GmbAccounts]
   }
 }

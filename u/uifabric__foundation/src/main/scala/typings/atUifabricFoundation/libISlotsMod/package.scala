@@ -15,7 +15,7 @@ package object libISlotsMod {
 
   type ExtractProps[TUnion] = js.Any
   type ExtractShorthand[TUnion] = String | Double | Boolean
-  type ISlotDefinition[TSlots] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ISlotDefinition[TSlots] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ slot in keyof TSlots ]: react.react.ElementType<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[slot]>>}
     */ typings.atUifabricFoundation.atUifabricFoundationStrings.ISlotDefinition with TSlots
   type ISlotFactory[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */] = js.Function4[
@@ -31,9 +31,10 @@ package object libISlotsMod {
     /* defaultComponent */ ComponentType[TProps], 
     ReturnType[FunctionComponent[TProps]]
   ]
-  type ISlots[TSlots] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ISlots[TSlots] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ slot in keyof TSlots ]: @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlot<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[slot]>>}
     */ typings.atUifabricFoundation.atUifabricFoundationStrings.ISlots with TSlots
+  type ISlottableComponentType[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */] = ComponentType[TProps] with (ISlotCreator[TProps, TShorthandProp])
   type ISlottableProps[TSlots] = TSlots with Anon_Slots[TSlots]
   type ISlottableReactType[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */] = ElementType[TProps] with (ISlotCreator[TProps, TShorthandProp])
   type ValidProps = js.Object

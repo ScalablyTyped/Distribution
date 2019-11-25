@@ -20,7 +20,7 @@ object DeliveryControlFrequencyCap {
     val __obj = js.Dynamic.literal()
     if (maxImpressions != null) __obj.updateDynamic("maxImpressions")(maxImpressions.asInstanceOf[js.Any])
     if (numTimeUnits != null) __obj.updateDynamic("numTimeUnits")(numTimeUnits.asInstanceOf[js.Any])
-    if (timeUnitType != null) __obj.updateDynamic("timeUnitType")(timeUnitType)
+    if (timeUnitType != null) __obj.updateDynamic("timeUnitType")(timeUnitType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryControlFrequencyCap]
   }
 }

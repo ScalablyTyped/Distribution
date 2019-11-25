@@ -13,8 +13,8 @@ trait Alias extends js.Object {
 object Alias {
   @scala.inline
   def apply(`match`: RegExp, value: String): Alias = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alias]
   }
 }

@@ -16,8 +16,8 @@ trait NamedTypeNode
 object NamedTypeNode {
   @scala.inline
   def apply(kind: NamedType, name: NameNode, loc: Location = null): NamedTypeNode = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedTypeNode]
   }
 }

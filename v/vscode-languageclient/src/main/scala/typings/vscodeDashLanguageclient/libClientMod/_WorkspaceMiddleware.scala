@@ -26,7 +26,7 @@ object _WorkspaceMiddleware {
     ] = null
   ): _WorkspaceMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (didChangeConfiguration != null) __obj.updateDynamic("didChangeConfiguration")(didChangeConfiguration)
+    if (didChangeConfiguration != null) __obj.updateDynamic("didChangeConfiguration")(didChangeConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[_WorkspaceMiddleware]
   }
 }

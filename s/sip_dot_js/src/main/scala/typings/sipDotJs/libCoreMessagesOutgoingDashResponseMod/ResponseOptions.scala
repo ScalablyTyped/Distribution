@@ -33,13 +33,13 @@ object ResponseOptions {
     toTag: String = null,
     userAgent: String = null
   ): ResponseOptions = {
-    val __obj = js.Dynamic.literal(statusCode = statusCode)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase)
-    if (supported != null) __obj.updateDynamic("supported")(supported)
-    if (toTag != null) __obj.updateDynamic("toTag")(toTag)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
+    if (supported != null) __obj.updateDynamic("supported")(supported.asInstanceOf[js.Any])
+    if (toTag != null) __obj.updateDynamic("toTag")(toTag.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseOptions]
   }
 }

@@ -22,10 +22,10 @@ object ILookupTableInfo {
     showImage: js.UndefOr[Boolean] = js.undefined,
     showText: js.UndefOr[Boolean] = js.undefined
   ): ILookupTableInfo = {
-    val __obj = js.Dynamic.literal(id = id, lookup = lookup)
-    if (!js.isUndefined(limitToList)) __obj.updateDynamic("limitToList")(limitToList)
-    if (!js.isUndefined(showImage)) __obj.updateDynamic("showImage")(showImage)
-    if (!js.isUndefined(showText)) __obj.updateDynamic("showText")(showText)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any])
+    if (!js.isUndefined(limitToList)) __obj.updateDynamic("limitToList")(limitToList.asInstanceOf[js.Any])
+    if (!js.isUndefined(showImage)) __obj.updateDynamic("showImage")(showImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(showText)) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILookupTableInfo]
   }
 }

@@ -23,7 +23,7 @@ object $JestEnvironment {
     runScript: Script => js.Any,
     testFilePath: String
   ): $JestEnvironment = {
-    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), fakeTimers = fakeTimers, global = global, moduleMocker = moduleMocker, runScript = js.Any.fromFunction1(runScript), testFilePath = testFilePath)
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), fakeTimers = fakeTimers.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], moduleMocker = moduleMocker.asInstanceOf[js.Any], runScript = js.Any.fromFunction1(runScript), testFilePath = testFilePath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[$JestEnvironment]
   }

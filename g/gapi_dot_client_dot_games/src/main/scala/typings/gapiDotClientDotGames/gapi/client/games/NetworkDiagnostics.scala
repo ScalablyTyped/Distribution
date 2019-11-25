@@ -44,9 +44,9 @@ object NetworkDiagnostics {
     if (androidNetworkSubtype != null) __obj.updateDynamic("androidNetworkSubtype")(androidNetworkSubtype.asInstanceOf[js.Any])
     if (androidNetworkType != null) __obj.updateDynamic("androidNetworkType")(androidNetworkType.asInstanceOf[js.Any])
     if (iosNetworkType != null) __obj.updateDynamic("iosNetworkType")(iosNetworkType.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (networkOperatorCode != null) __obj.updateDynamic("networkOperatorCode")(networkOperatorCode)
-    if (networkOperatorName != null) __obj.updateDynamic("networkOperatorName")(networkOperatorName)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (networkOperatorCode != null) __obj.updateDynamic("networkOperatorCode")(networkOperatorCode.asInstanceOf[js.Any])
+    if (networkOperatorName != null) __obj.updateDynamic("networkOperatorName")(networkOperatorName.asInstanceOf[js.Any])
     if (registrationLatencyMillis != null) __obj.updateDynamic("registrationLatencyMillis")(registrationLatencyMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkDiagnostics]
   }

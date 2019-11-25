@@ -1,9 +1,5 @@
 package typings.timezonecomplete.timezonecompleteMod
 
-import typings.timezonecomplete.distLibBasicsMod.WeekDay
-import typings.timezonecomplete.distLibTzDashDatabaseMod.AtType
-import typings.timezonecomplete.distLibTzDashDatabaseMod.OnType
-import typings.timezonecomplete.distLibTzDashDatabaseMod.ToType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +35,7 @@ class RuleInfo protected ()
     /**
     * TO column type: Year for year numbers and "only" values, Max for "max" value.
     */
-  toType: ToType,
+  toType: typings.timezonecomplete.distLibTzDashDatabaseMod.ToType,
     /**
     * If TO column is a year, the year number. If TO column is "only", the FROM year.
     */
@@ -55,7 +51,7 @@ class RuleInfo protected ()
     /**
     * ON column type
     */
-  onType: OnType,
+  onType: typings.timezonecomplete.distLibTzDashDatabaseMod.OnType,
     /**
     * If onType is DayNum, the day number
     */
@@ -63,7 +59,7 @@ class RuleInfo protected ()
     /**
     * If onType is not DayNum, the weekday
     */
-  onWeekDay: WeekDay,
+  onWeekDay: typings.timezonecomplete.distLibBasicsMod.WeekDay,
     /**
     * AT column hour
     */
@@ -79,7 +75,7 @@ class RuleInfo protected ()
     /**
     * AT column type
     */
-  atType: AtType,
+  atType: typings.timezonecomplete.distLibTzDashDatabaseMod.AtType,
     /**
     * DST offset from local standard time (NOT from UTC!)
     */

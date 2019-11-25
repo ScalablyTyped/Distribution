@@ -17,8 +17,8 @@ trait ReposGetContentsParams extends js.Object {
 object ReposGetContentsParams {
   @scala.inline
   def apply(owner: String, path: String, repo: String, ref: String = null): ReposGetContentsParams = {
-    val __obj = js.Dynamic.literal(owner = owner, path = path, repo = repo)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetContentsParams]
   }
 }

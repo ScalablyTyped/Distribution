@@ -25,12 +25,12 @@ object TableOptions {
     temporary: js.UndefOr[Boolean] = js.undefined
   ): TableOptions = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
-    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.asInstanceOf[js.Any])
     if (inherits != null) __obj.updateDynamic("inherits")(inherits.asInstanceOf[js.Any])
     if (like != null) __obj.updateDynamic("like")(like.asInstanceOf[js.Any])
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary)
+    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOptions]
   }
 }

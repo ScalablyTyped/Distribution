@@ -13,8 +13,8 @@ object Anon_Getters {
   @scala.inline
   def apply(getters: js.UndefOr[Boolean] = js.undefined, virtuals: js.UndefOr[Boolean] = js.undefined): Anon_Getters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(getters)) __obj.updateDynamic("getters")(getters)
-    if (!js.isUndefined(virtuals)) __obj.updateDynamic("virtuals")(virtuals)
+    if (!js.isUndefined(getters)) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtuals)) __obj.updateDynamic("virtuals")(virtuals.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Getters]
   }
 }

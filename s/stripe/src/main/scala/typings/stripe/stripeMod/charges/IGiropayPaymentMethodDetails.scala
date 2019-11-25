@@ -13,7 +13,7 @@ object IGiropayPaymentMethodDetails {
   @scala.inline
   def apply(`type`: giropay): IGiropayPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGiropayPaymentMethodDetails]
   }
 }

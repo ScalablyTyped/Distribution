@@ -42,16 +42,16 @@ object ClassDeclaration {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration = null
   ): ClassDeclaration = {
-    val __obj = js.Dynamic.literal(body = body, end = end, id = id, loc = loc, start = start, superClass = superClass)
-    __obj.updateDynamic("type")(`type`)
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
-    if (implements != null) __obj.updateDynamic("implements")(implements)
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
+    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
+    if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassDeclaration]
   }
 }

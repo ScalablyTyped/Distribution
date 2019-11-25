@@ -16,8 +16,8 @@ object HighlightAutoResult {
     value: js.Array[HastNode],
     secondBest: HighlightAutoResult = null
   ): HighlightAutoResult = {
-    val __obj = js.Dynamic.literal(language = language, relevance = relevance, value = value)
-    if (secondBest != null) __obj.updateDynamic("secondBest")(secondBest)
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], relevance = relevance.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (secondBest != null) __obj.updateDynamic("secondBest")(secondBest.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightAutoResult]
   }
 }

@@ -30,12 +30,12 @@ object LoginWithUsernamePasswordOptions {
     tokenCache: js.Any = null
   ): LoginWithUsernamePasswordOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (tokenAudience != null) __obj.updateDynamic("tokenAudience")(tokenAudience.asInstanceOf[js.Any])
-    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache)
+    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginWithUsernamePasswordOptions]
   }
 }

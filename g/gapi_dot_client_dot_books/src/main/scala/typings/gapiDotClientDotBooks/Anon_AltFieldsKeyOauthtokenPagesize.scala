@@ -44,16 +44,16 @@ object Anon_AltFieldsKeyOauthtokenPagesize {
     quotaUser: String = null,
     userIp: String = null
   ): Anon_AltFieldsKeyOauthtokenPagesize = {
-    val __obj = js.Dynamic.literal(series_id = series_id)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    val __obj = js.Dynamic.literal(series_id = series_id.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
-    if (page_token != null) __obj.updateDynamic("page_token")(page_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (page_token != null) __obj.updateDynamic("page_token")(page_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltFieldsKeyOauthtokenPagesize]
   }
 }

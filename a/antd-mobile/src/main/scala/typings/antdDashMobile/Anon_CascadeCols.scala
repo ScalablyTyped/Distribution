@@ -23,7 +23,7 @@ object Anon_CascadeCols {
     prefixCls: String,
     value: js.Array[scala.Nothing]
   ): Anon_CascadeCols = {
-    val __obj = js.Dynamic.literal(cascade = cascade, cols = cols, onChange = js.Any.fromFunction0(onChange), pickerPrefixCls = pickerPrefixCls, prefixCls = prefixCls, value = value)
+    val __obj = js.Dynamic.literal(cascade = cascade.asInstanceOf[js.Any], cols = cols.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), pickerPrefixCls = pickerPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CascadeCols]
   }

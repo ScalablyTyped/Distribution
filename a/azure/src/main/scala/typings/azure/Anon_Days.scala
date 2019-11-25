@@ -12,7 +12,7 @@ trait Anon_Days extends js.Object {
 object Anon_Days {
   @scala.inline
   def apply(Days: Double, Enabled: Boolean): Anon_Days = {
-    val __obj = js.Dynamic.literal(Days = Days, Enabled = Enabled)
+    val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Days]
   }

@@ -38,14 +38,14 @@ object RequestOptions {
     simulate: Anon_Close = null,
     validate: js.UndefOr[Boolean] = js.undefined
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (authority != null) __obj.updateDynamic("authority")(authority)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress)
-    if (simulate != null) __obj.updateDynamic("simulate")(simulate)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress.asInstanceOf[js.Any])
+    if (simulate != null) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

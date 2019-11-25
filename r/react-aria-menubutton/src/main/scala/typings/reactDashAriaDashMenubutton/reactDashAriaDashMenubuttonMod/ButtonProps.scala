@@ -14,7 +14,7 @@ trait ButtonProps[T /* <: HTMLElement */]
   	 * The HTML tag for this element. Default: 'span'.
   	 */
   var tag: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
   ] = js.undefined
 }
 
@@ -23,14 +23,12 @@ object ButtonProps {
   def apply[T /* <: HTMLElement */](
     AllHTMLAttributes: AllHTMLAttributes[T] = null,
     ClassAttributes: ClassAttributes[T] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null
+    tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null
   ): ButtonProps[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps[T]]
   }
 }

@@ -15,8 +15,8 @@ trait Anon_CancelPDisp extends js.Object {
 object Anon_CancelPDisp {
   @scala.inline
   def apply(Cancel: Boolean, StatusCode: js.Any, URL: String, pDisp: js.Any, TargetFrameName: String = null): Anon_CancelPDisp = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, StatusCode = StatusCode, URL = URL, pDisp = pDisp)
-    if (TargetFrameName != null) __obj.updateDynamic("TargetFrameName")(TargetFrameName)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], StatusCode = StatusCode.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
+    if (TargetFrameName != null) __obj.updateDynamic("TargetFrameName")(TargetFrameName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CancelPDisp]
   }
 }

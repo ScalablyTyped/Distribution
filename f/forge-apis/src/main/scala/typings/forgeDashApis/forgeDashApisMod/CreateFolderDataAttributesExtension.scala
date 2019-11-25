@@ -13,9 +13,9 @@ trait CreateFolderDataAttributesExtension extends js.Object {
 object CreateFolderDataAttributesExtension {
   @scala.inline
   def apply(`type`: String, version: String, data: js.Object = null): CreateFolderDataAttributesExtension = {
-    val __obj = js.Dynamic.literal(version = version)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFolderDataAttributesExtension]
   }
 }

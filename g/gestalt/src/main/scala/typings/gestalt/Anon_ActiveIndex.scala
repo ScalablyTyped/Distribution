@@ -17,7 +17,7 @@ trait Anon_ActiveIndex extends js.Object {
 object Anon_ActiveIndex {
   @scala.inline
   def apply(activeIndex: Double, event: SyntheticEvent[MouseEvent[Element, NativeMouseEvent], Event]): Anon_ActiveIndex = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex, event = event)
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActiveIndex]
   }

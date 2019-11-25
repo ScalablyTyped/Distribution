@@ -15,8 +15,8 @@ object GooglePrivacyDlpV2beta1ValueFrequency {
   @scala.inline
   def apply(count: String = null, value: GooglePrivacyDlpV2beta1Value = null): GooglePrivacyDlpV2beta1ValueFrequency = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1ValueFrequency]
   }
 }

@@ -28,7 +28,7 @@ package object grpcMod {
   type MetadataRequester = js.Function3[/* metadata */ Metadata, /* listener */ Listener, /* next */ js.Function, Unit]
   type MetadataValue = String | Buffer
   type PackageDefinition = StringDictionary[ServiceDefinition[js.Any] | ProtobufTypeDefinition]
-  type ServiceDefinition[ImplementationType] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ServiceDefinition[ImplementationType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ I in keyof ImplementationType ]: grpc.grpc.MethodDefinition<any, any>}
     */ typings.grpc.grpcStrings.ServiceDefinition with js.Any
   type StatusListener = js.Function2[/* status */ StatusObject, /* next */ js.Function, Unit]

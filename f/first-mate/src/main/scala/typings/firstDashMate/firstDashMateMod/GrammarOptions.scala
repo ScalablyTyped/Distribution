@@ -34,17 +34,17 @@ object GrammarOptions {
     scopeName: String = null
   ): GrammarOptions = {
     val __obj = js.Dynamic.literal()
-    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes)
-    if (!js.isUndefined(firstLineMatch)) __obj.updateDynamic("firstLineMatch")(firstLineMatch)
-    if (foldingStopMarker != null) __obj.updateDynamic("foldingStopMarker")(foldingStopMarker)
-    if (injectionSelector != null) __obj.updateDynamic("injectionSelector")(injectionSelector)
-    if (injections != null) __obj.updateDynamic("injections")(injections)
+    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstLineMatch)) __obj.updateDynamic("firstLineMatch")(firstLineMatch.asInstanceOf[js.Any])
+    if (foldingStopMarker != null) __obj.updateDynamic("foldingStopMarker")(foldingStopMarker.asInstanceOf[js.Any])
+    if (injectionSelector != null) __obj.updateDynamic("injectionSelector")(injectionSelector.asInstanceOf[js.Any])
+    if (injections != null) __obj.updateDynamic("injections")(injections.asInstanceOf[js.Any])
     if (maxLineLength != null) __obj.updateDynamic("maxLineLength")(maxLineLength.asInstanceOf[js.Any])
     if (maxTokensPerLine != null) __obj.updateDynamic("maxTokensPerLine")(maxTokensPerLine.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (patterns != null) __obj.updateDynamic("patterns")(patterns)
-    if (repository != null) __obj.updateDynamic("repository")(repository)
-    if (scopeName != null) __obj.updateDynamic("scopeName")(scopeName)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
+    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    if (scopeName != null) __obj.updateDynamic("scopeName")(scopeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrammarOptions]
   }
 }

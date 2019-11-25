@@ -23,9 +23,9 @@ object PlannerPlanDetails {
     sharedWith: PlannerUserIds = null
   ): PlannerPlanDetails = {
     val __obj = js.Dynamic.literal()
-    if (categoryDescriptions != null) __obj.updateDynamic("categoryDescriptions")(categoryDescriptions)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (sharedWith != null) __obj.updateDynamic("sharedWith")(sharedWith)
+    if (categoryDescriptions != null) __obj.updateDynamic("categoryDescriptions")(categoryDescriptions.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (sharedWith != null) __obj.updateDynamic("sharedWith")(sharedWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerPlanDetails]
   }
 }

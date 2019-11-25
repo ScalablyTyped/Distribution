@@ -47,8 +47,8 @@ object CpuInfo {
     processors: js.Array[ProcessorInfo],
     temperatures: js.Array[double] = null
   ): CpuInfo = {
-    val __obj = js.Dynamic.literal(archName = archName, features = features.asInstanceOf[js.Any], modelName = modelName, numOfProcessors = numOfProcessors, processors = processors)
-    if (temperatures != null) __obj.updateDynamic("temperatures")(temperatures)
+    val __obj = js.Dynamic.literal(archName = archName.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], numOfProcessors = numOfProcessors.asInstanceOf[js.Any], processors = processors.asInstanceOf[js.Any])
+    if (temperatures != null) __obj.updateDynamic("temperatures")(temperatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[CpuInfo]
   }
 }

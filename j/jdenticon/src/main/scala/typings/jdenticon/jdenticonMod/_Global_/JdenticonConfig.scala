@@ -70,9 +70,9 @@ object JdenticonConfig {
     saturation: Anon_ColorGrayscale | Double = null
   ): JdenticonConfig = {
     val __obj = js.Dynamic.literal()
-    if (backColor != null) __obj.updateDynamic("backColor")(backColor)
-    if (hues != null) __obj.updateDynamic("hues")(hues)
-    if (lightness != null) __obj.updateDynamic("lightness")(lightness)
+    if (backColor != null) __obj.updateDynamic("backColor")(backColor.asInstanceOf[js.Any])
+    if (hues != null) __obj.updateDynamic("hues")(hues.asInstanceOf[js.Any])
+    if (lightness != null) __obj.updateDynamic("lightness")(lightness.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (replaceMode != null) __obj.updateDynamic("replaceMode")(replaceMode.asInstanceOf[js.Any])
     if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])

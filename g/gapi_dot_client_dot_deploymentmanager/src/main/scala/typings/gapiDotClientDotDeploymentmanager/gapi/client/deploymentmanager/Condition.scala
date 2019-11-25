@@ -30,12 +30,12 @@ object Condition {
     values: js.Array[String] = null
   ): Condition = {
     val __obj = js.Dynamic.literal()
-    if (iam != null) __obj.updateDynamic("iam")(iam)
-    if (op != null) __obj.updateDynamic("op")(op)
-    if (svc != null) __obj.updateDynamic("svc")(svc)
-    if (sys != null) __obj.updateDynamic("sys")(sys)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (iam != null) __obj.updateDynamic("iam")(iam.asInstanceOf[js.Any])
+    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
+    if (svc != null) __obj.updateDynamic("svc")(svc.asInstanceOf[js.Any])
+    if (sys != null) __obj.updateDynamic("sys")(sys.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
   }
 }

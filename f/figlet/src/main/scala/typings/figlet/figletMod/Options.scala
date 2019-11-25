@@ -22,11 +22,11 @@ object Options {
     verticalLayout: KerningMethods = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (horizontalLayout != null) __obj.updateDynamic("horizontalLayout")(horizontalLayout)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (horizontalLayout != null) __obj.updateDynamic("horizontalLayout")(horizontalLayout.asInstanceOf[js.Any])
     if (printDirection != null) __obj.updateDynamic("printDirection")(printDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHardBlanks)) __obj.updateDynamic("showHardBlanks")(showHardBlanks)
-    if (verticalLayout != null) __obj.updateDynamic("verticalLayout")(verticalLayout)
+    if (!js.isUndefined(showHardBlanks)) __obj.updateDynamic("showHardBlanks")(showHardBlanks.asInstanceOf[js.Any])
+    if (verticalLayout != null) __obj.updateDynamic("verticalLayout")(verticalLayout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

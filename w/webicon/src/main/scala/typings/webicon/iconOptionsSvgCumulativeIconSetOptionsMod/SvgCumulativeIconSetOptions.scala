@@ -22,21 +22,21 @@ object SvgCumulativeIconSetOptions {
     cumulative: `true`,
     iconIdParser: (/* id */ String, /* params */ js.Array[String]) => String = null,
     iconSize: Int | Double = null,
-    size: /* import warning: ImportType.apply Failed type conversion: this['iconSize'] */ js.Any = null,
-    svgIconSize: /* import warning: ImportType.apply Failed type conversion: this['iconSize'] */ js.Any = null,
-    uri: /* import warning: ImportType.apply Failed type conversion: this['url'] */ js.Any = null,
+    size: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
+    svgIconSize: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
+    uri: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any = null,
     url: UrlConfig[scala.Nothing] = null,
     viewBox: String = null,
     waitDuration: Int | Double = null
   ): SvgCumulativeIconSetOptions = {
-    val __obj = js.Dynamic.literal(cumulative = cumulative)
+    val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any])
     if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (svgIconSize != null) __obj.updateDynamic("svgIconSize")(svgIconSize)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (svgIconSize != null) __obj.updateDynamic("svgIconSize")(svgIconSize.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     if (waitDuration != null) __obj.updateDynamic("waitDuration")(waitDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgCumulativeIconSetOptions]
   }

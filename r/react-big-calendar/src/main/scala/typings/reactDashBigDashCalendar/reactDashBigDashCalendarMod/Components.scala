@@ -43,11 +43,6 @@ trait Components[TEvent /* <: js.Object */] extends js.Object {
   var week: js.UndefOr[Anon_Event] = js.undefined
 }
 
-trait components extends js.Object {
-  var dateCellWrapper: ComponentType[js.Object]
-  var eventWrapper: ComponentType[Event]
-}
-
 object Components {
   @scala.inline
   def apply[TEvent /* <: js.Object */](
@@ -67,22 +62,27 @@ object Components {
     week: Anon_Event = null
   ): Components[TEvent] = {
     val __obj = js.Dynamic.literal()
-    if (agenda != null) __obj.updateDynamic("agenda")(agenda)
+    if (agenda != null) __obj.updateDynamic("agenda")(agenda.asInstanceOf[js.Any])
     if (dateCellWrapper != null) __obj.updateDynamic("dateCellWrapper")(dateCellWrapper.asInstanceOf[js.Any])
-    if (day != null) __obj.updateDynamic("day")(day)
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (eventContainerWrapper != null) __obj.updateDynamic("eventContainerWrapper")(eventContainerWrapper.asInstanceOf[js.Any])
     if (eventWrapper != null) __obj.updateDynamic("eventWrapper")(eventWrapper.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month)
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
     if (resourceHeader != null) __obj.updateDynamic("resourceHeader")(resourceHeader.asInstanceOf[js.Any])
     if (timeGutterHeader != null) __obj.updateDynamic("timeGutterHeader")(timeGutterHeader.asInstanceOf[js.Any])
     if (timeGutterWrapper != null) __obj.updateDynamic("timeGutterWrapper")(timeGutterWrapper.asInstanceOf[js.Any])
     if (timeSlotWrapper != null) __obj.updateDynamic("timeSlotWrapper")(timeSlotWrapper.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (week != null) __obj.updateDynamic("week")(week)
+    if (week != null) __obj.updateDynamic("week")(week.asInstanceOf[js.Any])
     __obj.asInstanceOf[Components[TEvent]]
   }
+}
+
+trait components extends js.Object {
+  var dateCellWrapper: ComponentType[js.Object]
+  var eventWrapper: ComponentType[Event]
 }
 
 object components {

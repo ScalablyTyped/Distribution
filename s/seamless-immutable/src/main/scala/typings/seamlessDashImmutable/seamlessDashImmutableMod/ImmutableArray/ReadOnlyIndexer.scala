@@ -14,7 +14,7 @@ object ReadOnlyIndexer {
   @scala.inline
   def apply[T](NumberDictionary: /* key */ NumberDictionary[Immutable[T, js.Object]] = null): ReadOnlyIndexer[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ReadOnlyIndexer[T]]
   }
 }

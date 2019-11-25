@@ -14,7 +14,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(isSwiping: Boolean, start: Double, x: Double, y: Double): State = {
-    val __obj = js.Dynamic.literal(isSwiping = isSwiping, start = start, x = x, y = y)
+    val __obj = js.Dynamic.literal(isSwiping = isSwiping.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

@@ -14,7 +14,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(chrome: Typeofchrome): Window = {
-    val __obj = js.Dynamic.literal(chrome = chrome)
+    val __obj = js.Dynamic.literal(chrome = chrome.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

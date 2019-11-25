@@ -39,11 +39,11 @@ object PrintToPDFOptions {
     printSelectionOnly: js.UndefOr[Boolean] = js.undefined
   ): PrintToPDFOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape)
+    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.asInstanceOf[js.Any])
     if (marginsType != null) __obj.updateDynamic("marginsType")(marginsType.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground)
-    if (!js.isUndefined(printSelectionOnly)) __obj.updateDynamic("printSelectionOnly")(printSelectionOnly)
+    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(printSelectionOnly)) __obj.updateDynamic("printSelectionOnly")(printSelectionOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintToPDFOptions]
   }
 }

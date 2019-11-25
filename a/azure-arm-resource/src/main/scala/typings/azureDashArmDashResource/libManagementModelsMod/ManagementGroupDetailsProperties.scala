@@ -23,10 +23,10 @@ object ManagementGroupDetailsProperties {
     version: Int | Double = null
   ): ManagementGroupDetailsProperties = {
     val __obj = js.Dynamic.literal()
-    if (managementGroupType != null) __obj.updateDynamic("managementGroupType")(managementGroupType)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (updatedBy != null) __obj.updateDynamic("updatedBy")(updatedBy)
-    if (updatedTime != null) __obj.updateDynamic("updatedTime")(updatedTime)
+    if (managementGroupType != null) __obj.updateDynamic("managementGroupType")(managementGroupType.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (updatedBy != null) __obj.updateDynamic("updatedBy")(updatedBy.asInstanceOf[js.Any])
+    if (updatedTime != null) __obj.updateDynamic("updatedTime")(updatedTime.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagementGroupDetailsProperties]
   }

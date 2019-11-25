@@ -27,9 +27,9 @@ object PluginOptions {
     ignoreOrder: js.UndefOr[Boolean] = js.undefined
   ): PluginOptions = {
     val __obj = js.Dynamic.literal()
-    if (chunkFilename != null) __obj.updateDynamic("chunkFilename")(chunkFilename)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(ignoreOrder)) __obj.updateDynamic("ignoreOrder")(ignoreOrder)
+    if (chunkFilename != null) __obj.updateDynamic("chunkFilename")(chunkFilename.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreOrder)) __obj.updateDynamic("ignoreOrder")(ignoreOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]
   }
 }

@@ -22,11 +22,11 @@ object ButtonGroupOptions {
     selectOn: String = null
   ): ButtonGroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (selectOn != null) __obj.updateDynamic("selectOn")(selectOn)
+    if (selectOn != null) __obj.updateDynamic("selectOn")(selectOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonGroupOptions]
   }
 }

@@ -15,8 +15,8 @@ object Place {
   def apply(location: LatLng | LatLngLiteral = null, placeId: String = null, query: String = null): Place = {
     val __obj = js.Dynamic.literal()
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Place]
   }
 }

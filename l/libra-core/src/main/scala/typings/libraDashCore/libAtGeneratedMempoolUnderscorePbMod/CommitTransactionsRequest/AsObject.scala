@@ -19,7 +19,7 @@ object AsObject {
       typings.libraDashCore.libAtGeneratedMempoolUnderscorePbMod.CommittedTransaction.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(blockTimestampUsecs = blockTimestampUsecs, transactionsList = transactionsList)
+    val __obj = js.Dynamic.literal(blockTimestampUsecs = blockTimestampUsecs.asInstanceOf[js.Any], transactionsList = transactionsList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

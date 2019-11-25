@@ -17,8 +17,8 @@ object BeforeExportEventArgs {
   @scala.inline
   def apply(fileName: String = null, url: String = null): BeforeExportEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeExportEventArgs]
   }
 }

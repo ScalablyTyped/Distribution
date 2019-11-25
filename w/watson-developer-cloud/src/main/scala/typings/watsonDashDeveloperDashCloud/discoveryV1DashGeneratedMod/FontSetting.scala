@@ -31,12 +31,12 @@ object FontSetting {
     name: String = null
   ): FontSetting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (max_size != null) __obj.updateDynamic("max_size")(max_size.asInstanceOf[js.Any])
     if (min_size != null) __obj.updateDynamic("min_size")(min_size.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSetting]
   }
 }

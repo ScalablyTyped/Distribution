@@ -11,7 +11,7 @@ trait Anon_Selected extends js.Object {
 object Anon_Selected {
   @scala.inline
   def apply(selected: Double): Anon_Selected = {
-    val __obj = js.Dynamic.literal(selected = selected)
+    val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Selected]
   }

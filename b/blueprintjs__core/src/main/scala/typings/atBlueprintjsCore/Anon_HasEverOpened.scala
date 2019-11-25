@@ -12,7 +12,7 @@ trait Anon_HasEverOpened extends js.Object {
 object Anon_HasEverOpened {
   @scala.inline
   def apply(hasEverOpened: `true`): Anon_HasEverOpened = {
-    val __obj = js.Dynamic.literal(hasEverOpened = hasEverOpened)
+    val __obj = js.Dynamic.literal(hasEverOpened = hasEverOpened.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HasEverOpened]
   }

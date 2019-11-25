@@ -60,18 +60,18 @@ object CellSelectedEventArgs {
     targetRow: js.Any = null
   ): CellSelectedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (previousCellIndex != null) __obj.updateDynamic("previousCellIndex")(previousCellIndex)
-    if (previousData != null) __obj.updateDynamic("previousData")(previousData)
-    if (previousRowIndex != null) __obj.updateDynamic("previousRowIndex")(previousRowIndex)
-    if (previousTargetCell != null) __obj.updateDynamic("previousTargetCell")(previousTargetCell)
-    if (previousTargetRow != null) __obj.updateDynamic("previousTargetRow")(previousTargetRow)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (previousCellIndex != null) __obj.updateDynamic("previousCellIndex")(previousCellIndex.asInstanceOf[js.Any])
+    if (previousData != null) __obj.updateDynamic("previousData")(previousData.asInstanceOf[js.Any])
+    if (previousRowIndex != null) __obj.updateDynamic("previousRowIndex")(previousRowIndex.asInstanceOf[js.Any])
+    if (previousTargetCell != null) __obj.updateDynamic("previousTargetCell")(previousTargetCell.asInstanceOf[js.Any])
+    if (previousTargetRow != null) __obj.updateDynamic("previousTargetRow")(previousTargetRow.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (targetCell != null) __obj.updateDynamic("targetCell")(targetCell)
-    if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow)
+    if (targetCell != null) __obj.updateDynamic("targetCell")(targetCell.asInstanceOf[js.Any])
+    if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellSelectedEventArgs]
   }
 }

@@ -11,7 +11,7 @@ trait SocketForwardingConfig extends js.Object {
 object SocketForwardingConfig {
   @scala.inline
   def apply(socketPath: String): SocketForwardingConfig = {
-    val __obj = js.Dynamic.literal(socketPath = socketPath)
+    val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SocketForwardingConfig]
   }

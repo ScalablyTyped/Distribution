@@ -15,7 +15,7 @@ trait Anon_AbandonedCompleted extends js.Object {
 object Anon_AbandonedCompleted {
   @scala.inline
   def apply(abandoned: Double, completed: Double, failed: Double, inProgress: Double, queued: Double): Anon_AbandonedCompleted = {
-    val __obj = js.Dynamic.literal(abandoned = abandoned, completed = completed, failed = failed, inProgress = inProgress, queued = queued)
+    val __obj = js.Dynamic.literal(abandoned = abandoned.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AbandonedCompleted]
   }

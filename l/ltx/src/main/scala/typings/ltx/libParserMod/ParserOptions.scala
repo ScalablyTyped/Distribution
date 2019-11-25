@@ -28,8 +28,8 @@ object ParserOptions {
     Parser: Instantiable1[js.UndefOr[/* options */ ParserOptions], Parser] = null
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (Element != null) __obj.updateDynamic("Element")(Element)
-    if (Parser != null) __obj.updateDynamic("Parser")(Parser)
+    if (Element != null) __obj.updateDynamic("Element")(Element.asInstanceOf[js.Any])
+    if (Parser != null) __obj.updateDynamic("Parser")(Parser.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
 }

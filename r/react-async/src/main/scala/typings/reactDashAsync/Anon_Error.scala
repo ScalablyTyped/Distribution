@@ -16,8 +16,8 @@ trait Anon_Error extends js.Object {
 object Anon_Error {
   @scala.inline
   def apply(error: `true`, payload: Error, `type`: reject): Anon_Error = {
-    val __obj = js.Dynamic.literal(error = error, payload = payload)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Error]
   }
 }

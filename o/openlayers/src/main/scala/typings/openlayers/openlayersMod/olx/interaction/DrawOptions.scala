@@ -55,22 +55,22 @@ object DrawOptions {
     wrapX: js.UndefOr[Boolean] = js.undefined
   ): DrawOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (clickTolerance != null) __obj.updateDynamic("clickTolerance")(clickTolerance.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
-    if (features != null) __obj.updateDynamic("features")(features)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (finishCondition != null) __obj.updateDynamic("finishCondition")(js.Any.fromFunction1(finishCondition))
-    if (!js.isUndefined(freehand)) __obj.updateDynamic("freehand")(freehand)
+    if (!js.isUndefined(freehand)) __obj.updateDynamic("freehand")(freehand.asInstanceOf[js.Any])
     if (freehandCondition != null) __obj.updateDynamic("freehandCondition")(js.Any.fromFunction1(freehandCondition))
     if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(js.Any.fromFunction2(geometryFunction))
-    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName)
+    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
     if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints.asInstanceOf[js.Any])
     if (minPoints != null) __obj.updateDynamic("minPoints")(minPoints.asInstanceOf[js.Any])
     if (snapTolerance != null) __obj.updateDynamic("snapTolerance")(snapTolerance.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(stopClick)) __obj.updateDynamic("stopClick")(stopClick)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopClick)) __obj.updateDynamic("stopClick")(stopClick.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawOptions]
   }
 }

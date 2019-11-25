@@ -36,10 +36,10 @@ object ToolResultsStep {
     stepId: String = null
   ): ToolResultsStep = {
     val __obj = js.Dynamic.literal()
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (stepId != null) __obj.updateDynamic("stepId")(stepId)
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (stepId != null) __obj.updateDynamic("stepId")(stepId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolResultsStep]
   }
 }

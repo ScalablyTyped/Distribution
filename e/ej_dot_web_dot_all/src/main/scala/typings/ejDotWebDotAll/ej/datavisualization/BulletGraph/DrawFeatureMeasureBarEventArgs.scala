@@ -29,10 +29,10 @@ object DrawFeatureMeasureBarEventArgs {
     scaleElement: HTMLElement = null
   ): DrawFeatureMeasureBarEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Object != null) __obj.updateDynamic("Object")(Object)
+    if (Object != null) __obj.updateDynamic("Object")(Object.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
-    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement)
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawFeatureMeasureBarEventArgs]
   }
 }

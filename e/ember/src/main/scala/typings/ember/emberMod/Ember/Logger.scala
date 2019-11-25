@@ -15,7 +15,7 @@ object Logger extends js.Object {
     * If the value passed into `Ember.Logger.assert` is not truthy it will throw an error with a stack trace.
     */
   def assert(test: Boolean): Unit = js.native
-  def assert(test: Boolean, message: String): Unit = js.native
+  def assert(test: Boolean, message: java.lang.String): Unit = js.native
   /**
     * Logs the arguments to the console in blue text.
     */

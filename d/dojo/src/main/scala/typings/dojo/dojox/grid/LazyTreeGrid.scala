@@ -1,7 +1,6 @@
 package typings.dojo.dojox.grid
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojoStrings.colSpans
 import typings.dojo.dojoStrings.defaultState
 import typings.std.HTMLElement
@@ -107,8 +106,24 @@ class LazyTreeGrid () extends TreeGrid {
   @JSName("set")
   def set_defaultState(property: defaultState, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_colSpans(property: colSpans, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_colSpans(
+    property: colSpans,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_defaultState(property: defaultState, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_defaultState(
+    property: defaultState,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

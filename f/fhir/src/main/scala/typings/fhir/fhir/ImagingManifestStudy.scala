@@ -45,16 +45,16 @@ object ImagingManifestStudy {
     imagingStudy: Reference = null,
     modifierExtension: js.Array[Extension] = null
   ): ImagingManifestStudy = {
-    val __obj = js.Dynamic.literal(series = series, uid = uid)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_uid != null) __obj.updateDynamic("_uid")(_uid)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (imagingStudy != null) __obj.updateDynamic("imagingStudy")(imagingStudy)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    val __obj = js.Dynamic.literal(series = series.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_uid != null) __obj.updateDynamic("_uid")(_uid.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (imagingStudy != null) __obj.updateDynamic("imagingStudy")(imagingStudy.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagingManifestStudy]
   }
 }

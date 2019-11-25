@@ -12,8 +12,8 @@ trait ConstructorMetadata extends js.Object {
 object ConstructorMetadata {
   @scala.inline
   def apply(userGeneratedMetadata: MetadataMap, compilerGeneratedMetadata: js.Array[js.Function] = null): ConstructorMetadata = {
-    val __obj = js.Dynamic.literal(userGeneratedMetadata = userGeneratedMetadata)
-    if (compilerGeneratedMetadata != null) __obj.updateDynamic("compilerGeneratedMetadata")(compilerGeneratedMetadata)
+    val __obj = js.Dynamic.literal(userGeneratedMetadata = userGeneratedMetadata.asInstanceOf[js.Any])
+    if (compilerGeneratedMetadata != null) __obj.updateDynamic("compilerGeneratedMetadata")(compilerGeneratedMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorMetadata]
   }
 }

@@ -32,16 +32,16 @@ object Options {
     size: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (d != null) __obj.updateDynamic("d")(d)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (f != null) __obj.updateDynamic("f")(f)
-    if (forcedefault != null) __obj.updateDynamic("forcedefault")(forcedefault)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (r != null) __obj.updateDynamic("r")(r)
-    if (rating != null) __obj.updateDynamic("rating")(rating)
-    if (s != null) __obj.updateDynamic("s")(s)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
+    if (forcedefault != null) __obj.updateDynamic("forcedefault")(forcedefault.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
+    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

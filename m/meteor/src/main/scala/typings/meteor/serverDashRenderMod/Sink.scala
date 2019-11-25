@@ -40,13 +40,13 @@ object Sink {
     if (appendToBody != null) __obj.updateDynamic("appendToBody")(js.Any.fromFunction1(appendToBody))
     if (appendToElementById != null) __obj.updateDynamic("appendToElementById")(js.Any.fromFunction2(appendToElementById))
     if (appendToHead != null) __obj.updateDynamic("appendToHead")(js.Any.fromFunction1(appendToHead))
-    if (arch != null) __obj.updateDynamic("arch")(arch)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (head != null) __obj.updateDynamic("head")(head)
-    if (htmlById != null) __obj.updateDynamic("htmlById")(htmlById)
-    if (!js.isUndefined(maybeMadeChanges)) __obj.updateDynamic("maybeMadeChanges")(maybeMadeChanges)
-    if (renderIntoElementById != null) __obj.updateDynamic("renderIntoElementById")(renderIntoElementById)
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
+    if (htmlById != null) __obj.updateDynamic("htmlById")(htmlById.asInstanceOf[js.Any])
+    if (!js.isUndefined(maybeMadeChanges)) __obj.updateDynamic("maybeMadeChanges")(maybeMadeChanges.asInstanceOf[js.Any])
+    if (renderIntoElementById != null) __obj.updateDynamic("renderIntoElementById")(renderIntoElementById.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sink]
   }
 }

@@ -41,19 +41,19 @@ object Options {
     subdirectories: js.Array[SubDirectory] = null,
     urlFilter: /* url */ String => Boolean = null
   ): Options = {
-    val __obj = js.Dynamic.literal(directory = directory, urls = urls)
-    if (defaultFilename != null) __obj.updateDynamic("defaultFilename")(defaultFilename)
-    if (filenameGenerator != null) __obj.updateDynamic("filenameGenerator")(filenameGenerator)
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
+    val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
+    if (defaultFilename != null) __obj.updateDynamic("defaultFilename")(defaultFilename.asInstanceOf[js.Any])
+    if (filenameGenerator != null) __obj.updateDynamic("filenameGenerator")(filenameGenerator.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
     if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
     if (maxRecursiveDepth != null) __obj.updateDynamic("maxRecursiveDepth")(maxRecursiveDepth.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (!js.isUndefined(prettifyUrls)) __obj.updateDynamic("prettifyUrls")(prettifyUrls)
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettifyUrls)) __obj.updateDynamic("prettifyUrls")(prettifyUrls.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (requestConcurrency != null) __obj.updateDynamic("requestConcurrency")(requestConcurrency.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources)
-    if (subdirectories != null) __obj.updateDynamic("subdirectories")(subdirectories)
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
+    if (subdirectories != null) __obj.updateDynamic("subdirectories")(subdirectories.asInstanceOf[js.Any])
     if (urlFilter != null) __obj.updateDynamic("urlFilter")(js.Any.fromFunction1(urlFilter))
     __obj.asInstanceOf[Options]
   }

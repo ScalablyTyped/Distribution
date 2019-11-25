@@ -37,7 +37,7 @@ object ServerExtOptions {
     val __obj = js.Dynamic.literal()
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (bind != null) __obj.updateDynamic("bind")(bind)
+    if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
     if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerExtOptions]
   }

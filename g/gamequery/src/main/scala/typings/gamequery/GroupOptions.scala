@@ -23,7 +23,7 @@ object GroupOptions {
   ): GroupOptions = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow)
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (posx != null) __obj.updateDynamic("posx")(posx.asInstanceOf[js.Any])
     if (posy != null) __obj.updateDynamic("posy")(posy.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

@@ -26,7 +26,7 @@ trait Anon_EndAt extends js.Object {
 object Anon_EndAt {
   @scala.inline
   def apply(endAt: String, note: String, startAt: String, videoId: String): Anon_EndAt = {
-    val __obj = js.Dynamic.literal(endAt = endAt, note = note, startAt = startAt, videoId = videoId)
+    val __obj = js.Dynamic.literal(endAt = endAt.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], startAt = startAt.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EndAt]
   }

@@ -19,8 +19,8 @@ object PublishCompositeConfig1 {
     collectionName: String = null
   ): PublishCompositeConfig1[InLevel1, OutLevel] = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishCompositeConfig1[InLevel1, OutLevel]]
   }
 }

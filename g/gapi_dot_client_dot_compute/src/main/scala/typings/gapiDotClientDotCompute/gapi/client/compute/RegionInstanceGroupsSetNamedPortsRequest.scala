@@ -19,8 +19,8 @@ object RegionInstanceGroupsSetNamedPortsRequest {
   @scala.inline
   def apply(fingerprint: String = null, namedPorts: js.Array[NamedPort] = null): RegionInstanceGroupsSetNamedPortsRequest = {
     val __obj = js.Dynamic.literal()
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (namedPorts != null) __obj.updateDynamic("namedPorts")(namedPorts)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (namedPorts != null) __obj.updateDynamic("namedPorts")(namedPorts.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionInstanceGroupsSetNamedPortsRequest]
   }
 }

@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait ScalarType extends js.Object
 
+object ScalarType {
+  @scala.inline
+  def boolean: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.boolean = this.cast("boolean")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def count: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.count = this.cast("count")
+  @scala.inline
+  def string: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.string = this.cast("string")
+}
+

@@ -31,11 +31,11 @@ object Anon_CommentsImportKind {
     loc: SourceLocationKind = null,
     specifiers: js.Array[ImportSpecifierKind | ImportNamespaceSpecifierKind | ImportDefaultSpecifierKind] = null
   ): Anon_CommentsImportKind = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (importKind != null) __obj.updateDynamic("importKind")(importKind.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (specifiers != null) __obj.updateDynamic("specifiers")(specifiers)
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (specifiers != null) __obj.updateDynamic("specifiers")(specifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsImportKind]
   }
 }

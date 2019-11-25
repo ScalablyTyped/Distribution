@@ -23,11 +23,11 @@ object PartialClassNameMapLinkClassKey {
     underlineNone: String = null
   ): PartialClassNameMapLinkClassKey = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (underlineAlways != null) __obj.updateDynamic("underlineAlways")(underlineAlways)
-    if (underlineHover != null) __obj.updateDynamic("underlineHover")(underlineHover)
-    if (underlineNone != null) __obj.updateDynamic("underlineNone")(underlineNone)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (underlineAlways != null) __obj.updateDynamic("underlineAlways")(underlineAlways.asInstanceOf[js.Any])
+    if (underlineHover != null) __obj.updateDynamic("underlineHover")(underlineHover.asInstanceOf[js.Any])
+    if (underlineNone != null) __obj.updateDynamic("underlineNone")(underlineNone.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapLinkClassKey]
   }
 }

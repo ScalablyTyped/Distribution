@@ -15,7 +15,7 @@ trait SendInfo extends js.Object {
 object SendInfo {
   @scala.inline
   def apply(resultCode: integer, bytesSent: Int | Double = null): SendInfo = {
-    val __obj = js.Dynamic.literal(resultCode = resultCode)
+    val __obj = js.Dynamic.literal(resultCode = resultCode.asInstanceOf[js.Any])
     if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendInfo]
   }

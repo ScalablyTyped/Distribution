@@ -49,20 +49,20 @@ object OSNotificationPayload {
     smallIcon: String = null,
     smallIconAccentColor: String = null
   ): OSNotificationPayload = {
-    val __obj = js.Dynamic.literal(actionButtons = actionButtons, body = body, notificationID = notificationID, rawPayload = rawPayload, sound = sound, title = title)
-    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData)
-    if (backgroundImageLayout != null) __obj.updateDynamic("backgroundImageLayout")(backgroundImageLayout)
-    if (bigPicture != null) __obj.updateDynamic("bigPicture")(bigPicture)
-    if (fromProjectNumber != null) __obj.updateDynamic("fromProjectNumber")(fromProjectNumber)
-    if (groupKey != null) __obj.updateDynamic("groupKey")(groupKey)
-    if (groupMessage != null) __obj.updateDynamic("groupMessage")(groupMessage)
-    if (largeIcon != null) __obj.updateDynamic("largeIcon")(largeIcon)
-    if (launchURL != null) __obj.updateDynamic("launchURL")(launchURL)
-    if (ledColor != null) __obj.updateDynamic("ledColor")(ledColor)
-    if (lockScreenVisibility != null) __obj.updateDynamic("lockScreenVisibility")(lockScreenVisibility)
+    val __obj = js.Dynamic.literal(actionButtons = actionButtons.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], notificationID = notificationID.asInstanceOf[js.Any], rawPayload = rawPayload.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
+    if (backgroundImageLayout != null) __obj.updateDynamic("backgroundImageLayout")(backgroundImageLayout.asInstanceOf[js.Any])
+    if (bigPicture != null) __obj.updateDynamic("bigPicture")(bigPicture.asInstanceOf[js.Any])
+    if (fromProjectNumber != null) __obj.updateDynamic("fromProjectNumber")(fromProjectNumber.asInstanceOf[js.Any])
+    if (groupKey != null) __obj.updateDynamic("groupKey")(groupKey.asInstanceOf[js.Any])
+    if (groupMessage != null) __obj.updateDynamic("groupMessage")(groupMessage.asInstanceOf[js.Any])
+    if (largeIcon != null) __obj.updateDynamic("largeIcon")(largeIcon.asInstanceOf[js.Any])
+    if (launchURL != null) __obj.updateDynamic("launchURL")(launchURL.asInstanceOf[js.Any])
+    if (ledColor != null) __obj.updateDynamic("ledColor")(ledColor.asInstanceOf[js.Any])
+    if (lockScreenVisibility != null) __obj.updateDynamic("lockScreenVisibility")(lockScreenVisibility.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (smallIcon != null) __obj.updateDynamic("smallIcon")(smallIcon)
-    if (smallIconAccentColor != null) __obj.updateDynamic("smallIconAccentColor")(smallIconAccentColor)
+    if (smallIcon != null) __obj.updateDynamic("smallIcon")(smallIcon.asInstanceOf[js.Any])
+    if (smallIconAccentColor != null) __obj.updateDynamic("smallIconAccentColor")(smallIconAccentColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[OSNotificationPayload]
   }
 }

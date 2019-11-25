@@ -12,7 +12,7 @@ object GoalSetData {
   @scala.inline
   def apply(goals: js.Array[GoalData] = null): GoalSetData = {
     val __obj = js.Dynamic.literal()
-    if (goals != null) __obj.updateDynamic("goals")(goals)
+    if (goals != null) __obj.updateDynamic("goals")(goals.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoalSetData]
   }
 }

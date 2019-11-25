@@ -40,7 +40,7 @@ object Root {
     `type`: GraphQLCompositeType,
     metadata: Metadata = null
   ): Root = {
-    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions, directives = directives, kind = kind, loc = loc, name = name, operation = operation.asInstanceOf[js.Any], selections = selections)
+    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Root]

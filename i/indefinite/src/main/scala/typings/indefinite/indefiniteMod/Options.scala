@@ -21,10 +21,10 @@ object Options {
     numbers: colloquial = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(articleOnly)) __obj.updateDynamic("articleOnly")(articleOnly)
-    if (!js.isUndefined(capitalize)) __obj.updateDynamic("capitalize")(capitalize)
-    if (!js.isUndefined(caseInsensitive)) __obj.updateDynamic("caseInsensitive")(caseInsensitive)
-    if (numbers != null) __obj.updateDynamic("numbers")(numbers)
+    if (!js.isUndefined(articleOnly)) __obj.updateDynamic("articleOnly")(articleOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(capitalize)) __obj.updateDynamic("capitalize")(capitalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseInsensitive)) __obj.updateDynamic("caseInsensitive")(caseInsensitive.asInstanceOf[js.Any])
+    if (numbers != null) __obj.updateDynamic("numbers")(numbers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

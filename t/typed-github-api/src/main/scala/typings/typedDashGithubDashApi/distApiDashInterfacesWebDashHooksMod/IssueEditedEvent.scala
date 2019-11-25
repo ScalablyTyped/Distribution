@@ -16,7 +16,7 @@ trait IssueEditedEvent extends IssueEvent {
 object IssueEditedEvent {
   @scala.inline
   def apply(action: edited, changes: Anon_Body, issue: Issue): IssueEditedEvent = {
-    val __obj = js.Dynamic.literal(action = action, changes = changes, issue = issue)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssueEditedEvent]
   }

@@ -23,8 +23,7 @@ object Contrib extends js.Object {
     def removeOne(model: Model): View[TModel] = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.backbone.backboneMod.Events because Already inherited */ @js.native
+  @js.native
   class Controller ()
     extends EventsMixin
        with GiraffeObject {

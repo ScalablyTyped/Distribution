@@ -14,7 +14,7 @@ trait Anon_HeightLayout extends js.Object {
 object Anon_HeightLayout {
   @scala.inline
   def apply(height: Double, layout: Anon_Height, width: Double, zoom: Double): Anon_HeightLayout = {
-    val __obj = js.Dynamic.literal(height = height, layout = layout, width = width, zoom = zoom)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HeightLayout]
   }

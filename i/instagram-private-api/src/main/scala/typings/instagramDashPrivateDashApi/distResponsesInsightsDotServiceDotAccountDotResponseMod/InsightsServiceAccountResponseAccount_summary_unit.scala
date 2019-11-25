@@ -11,7 +11,7 @@ trait InsightsServiceAccountResponseAccount_summary_unit extends js.Object {
 object InsightsServiceAccountResponseAccount_summary_unit {
   @scala.inline
   def apply(posts_count: Double): InsightsServiceAccountResponseAccount_summary_unit = {
-    val __obj = js.Dynamic.literal(posts_count = posts_count)
+    val __obj = js.Dynamic.literal(posts_count = posts_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseAccount_summary_unit]
   }

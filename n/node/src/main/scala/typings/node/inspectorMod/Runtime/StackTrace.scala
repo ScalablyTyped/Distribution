@@ -35,10 +35,10 @@ object StackTrace {
     parent: StackTrace = null,
     parentId: StackTraceId = null
   ): StackTrace = {
-    val __obj = js.Dynamic.literal(callFrames = callFrames)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    val __obj = js.Dynamic.literal(callFrames = callFrames.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackTrace]
   }
 }

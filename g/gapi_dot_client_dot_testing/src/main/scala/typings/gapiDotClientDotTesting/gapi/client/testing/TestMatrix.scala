@@ -73,16 +73,16 @@ object TestMatrix {
     timestamp: String = null
   ): TestMatrix = {
     val __obj = js.Dynamic.literal()
-    if (clientInfo != null) __obj.updateDynamic("clientInfo")(clientInfo)
-    if (environmentMatrix != null) __obj.updateDynamic("environmentMatrix")(environmentMatrix)
-    if (invalidMatrixDetails != null) __obj.updateDynamic("invalidMatrixDetails")(invalidMatrixDetails)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (resultStorage != null) __obj.updateDynamic("resultStorage")(resultStorage)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (testExecutions != null) __obj.updateDynamic("testExecutions")(testExecutions)
-    if (testMatrixId != null) __obj.updateDynamic("testMatrixId")(testMatrixId)
-    if (testSpecification != null) __obj.updateDynamic("testSpecification")(testSpecification)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (clientInfo != null) __obj.updateDynamic("clientInfo")(clientInfo.asInstanceOf[js.Any])
+    if (environmentMatrix != null) __obj.updateDynamic("environmentMatrix")(environmentMatrix.asInstanceOf[js.Any])
+    if (invalidMatrixDetails != null) __obj.updateDynamic("invalidMatrixDetails")(invalidMatrixDetails.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (resultStorage != null) __obj.updateDynamic("resultStorage")(resultStorage.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (testExecutions != null) __obj.updateDynamic("testExecutions")(testExecutions.asInstanceOf[js.Any])
+    if (testMatrixId != null) __obj.updateDynamic("testMatrixId")(testMatrixId.asInstanceOf[js.Any])
+    if (testSpecification != null) __obj.updateDynamic("testSpecification")(testSpecification.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestMatrix]
   }
 }

@@ -14,8 +14,8 @@ trait PluginStore extends js.Object {
 object PluginStore {
   @scala.inline
   def apply(dispatch: js.Any => js.Any, getState: () => State, modelClass: ModelClass, model: Model = null): PluginStore = {
-    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), getState = js.Any.fromFunction0(getState), modelClass = modelClass)
-    if (model != null) __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), getState = js.Any.fromFunction0(getState), modelClass = modelClass.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginStore]
   }
 }

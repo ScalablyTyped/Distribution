@@ -33,9 +33,9 @@ object FTInitDownload {
     serverftfid: Int | Double = null,
     status: Int | Double = null
   ): FTInitDownload = {
-    val __obj = js.Dynamic.literal(clientftfid = clientftfid, size = size)
-    if (ftkey != null) __obj.updateDynamic("ftkey")(ftkey)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
+    val __obj = js.Dynamic.literal(clientftfid = clientftfid.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (ftkey != null) __obj.updateDynamic("ftkey")(ftkey.asInstanceOf[js.Any])
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (proto != null) __obj.updateDynamic("proto")(proto.asInstanceOf[js.Any])
     if (serverftfid != null) __obj.updateDynamic("serverftfid")(serverftfid.asInstanceOf[js.Any])

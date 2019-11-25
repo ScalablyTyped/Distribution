@@ -29,9 +29,9 @@ object InitCloudEnvOptions {
   @scala.inline
   def apply(database: String = null, functions: String = null, storage: String = null): InitCloudEnvOptions = {
     val __obj = js.Dynamic.literal()
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (functions != null) __obj.updateDynamic("functions")(functions)
-    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (functions != null) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitCloudEnvOptions]
   }
 }

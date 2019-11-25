@@ -22,11 +22,11 @@ object VideoAdvertisingOptionGetEnabledAdsResponse {
     kind: String = null
   ): VideoAdvertisingOptionGetEnabledAdsResponse = {
     val __obj = js.Dynamic.literal()
-    if (adBreaks != null) __obj.updateDynamic("adBreaks")(adBreaks)
-    if (!js.isUndefined(adsOnEmbeds)) __obj.updateDynamic("adsOnEmbeds")(adsOnEmbeds)
-    if (countriesRestriction != null) __obj.updateDynamic("countriesRestriction")(countriesRestriction)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (adBreaks != null) __obj.updateDynamic("adBreaks")(adBreaks.asInstanceOf[js.Any])
+    if (!js.isUndefined(adsOnEmbeds)) __obj.updateDynamic("adsOnEmbeds")(adsOnEmbeds.asInstanceOf[js.Any])
+    if (countriesRestriction != null) __obj.updateDynamic("countriesRestriction")(countriesRestriction.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoAdvertisingOptionGetEnabledAdsResponse]
   }
 }

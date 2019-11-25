@@ -46,7 +46,7 @@ object ISearchPage {
     qMaxNbrFieldMatches: Double,
     qOffset: Double
   ): ISearchPage = {
-    val __obj = js.Dynamic.literal(qCount = qCount, qGroupItemOptions = qGroupItemOptions, qGroupOptions = qGroupOptions, qMaxNbrFieldMatches = qMaxNbrFieldMatches, qOffset = qOffset)
+    val __obj = js.Dynamic.literal(qCount = qCount.asInstanceOf[js.Any], qGroupItemOptions = qGroupItemOptions.asInstanceOf[js.Any], qGroupOptions = qGroupOptions.asInstanceOf[js.Any], qMaxNbrFieldMatches = qMaxNbrFieldMatches.asInstanceOf[js.Any], qOffset = qOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISearchPage]
   }

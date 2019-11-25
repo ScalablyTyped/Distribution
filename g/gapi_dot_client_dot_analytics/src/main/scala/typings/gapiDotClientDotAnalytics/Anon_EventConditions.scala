@@ -18,8 +18,8 @@ object Anon_EventConditions {
     useEventValue: js.UndefOr[Boolean] = js.undefined
   ): Anon_EventConditions = {
     val __obj = js.Dynamic.literal()
-    if (eventConditions != null) __obj.updateDynamic("eventConditions")(eventConditions)
-    if (!js.isUndefined(useEventValue)) __obj.updateDynamic("useEventValue")(useEventValue)
+    if (eventConditions != null) __obj.updateDynamic("eventConditions")(eventConditions.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEventValue)) __obj.updateDynamic("useEventValue")(useEventValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EventConditions]
   }
 }

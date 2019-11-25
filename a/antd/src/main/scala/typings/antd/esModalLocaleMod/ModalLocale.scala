@@ -13,7 +13,7 @@ trait ModalLocale extends js.Object {
 object ModalLocale {
   @scala.inline
   def apply(cancelText: String, justOkText: String, okText: String): ModalLocale = {
-    val __obj = js.Dynamic.literal(cancelText = cancelText, justOkText = justOkText, okText = okText)
+    val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], justOkText = justOkText.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModalLocale]
   }

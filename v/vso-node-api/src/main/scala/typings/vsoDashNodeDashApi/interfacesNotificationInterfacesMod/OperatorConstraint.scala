@@ -15,7 +15,7 @@ trait OperatorConstraint extends js.Object {
 object OperatorConstraint {
   @scala.inline
   def apply(operator: String, supportedScopes: js.Array[String]): OperatorConstraint = {
-    val __obj = js.Dynamic.literal(operator = operator, supportedScopes = supportedScopes)
+    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], supportedScopes = supportedScopes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OperatorConstraint]
   }

@@ -56,7 +56,7 @@ object mochaStrings {
   sealed trait afterEach extends js.Object
   
   @js.native
-  sealed trait base extends Reporter
+  sealed trait base_ extends Reporter
   
   @js.native
   sealed trait bdd extends Interface
@@ -68,7 +68,7 @@ object mochaStrings {
   sealed trait beforeEach extends js.Object
   
   @js.native
-  sealed trait dot extends Reporter
+  sealed trait dot_ extends Reporter
   
   @js.native
   sealed trait end extends js.Object
@@ -95,31 +95,31 @@ object mochaStrings {
   sealed trait `hook end` extends js.Object
   
   @js.native
-  sealed trait html extends Reporter
-  
-  @js.native
-  sealed trait json extends Reporter
+  sealed trait html_ extends Reporter
   
   @js.native
   sealed trait `json-stream` extends Reporter
   
   @js.native
-  sealed trait landing extends Reporter
+  sealed trait json_ extends Reporter
   
   @js.native
-  sealed trait list extends Reporter
+  sealed trait landing_ extends Reporter
   
   @js.native
-  sealed trait markdown extends Reporter
+  sealed trait list_ extends Reporter
+  
+  @js.native
+  sealed trait markdown_ extends Reporter
   
   @js.native
   sealed trait medium extends js.Object
   
   @js.native
-  sealed trait min extends Reporter
+  sealed trait min_ extends Reporter
   
   @js.native
-  sealed trait nyan extends Reporter
+  sealed trait nyan_ extends Reporter
   
   @js.native
   sealed trait pass extends js.Object
@@ -137,7 +137,7 @@ object mochaStrings {
   sealed trait `pre-require` extends js.Object
   
   @js.native
-  sealed trait progress extends Reporter
+  sealed trait progress_ extends Reporter
   
   @js.native
   sealed trait qunit extends Interface
@@ -152,7 +152,7 @@ object mochaStrings {
   sealed trait slow extends js.Object
   
   @js.native
-  sealed trait spec extends Reporter
+  sealed trait spec_ extends Reporter
   
   @js.native
   sealed trait start extends js.Object
@@ -164,7 +164,7 @@ object mochaStrings {
   sealed trait `suite end` extends js.Object
   
   @js.native
-  sealed trait tap extends Reporter
+  sealed trait tap_ extends Reporter
   
   @js.native
   sealed trait tdd extends Interface
@@ -179,7 +179,7 @@ object mochaStrings {
   sealed trait waiting extends js.Object
   
   @js.native
-  sealed trait xunit extends Reporter
+  sealed trait xunit_ extends Reporter
   
   @scala.inline
   def Base: Base = "Base".asInstanceOf[Base]
@@ -214,7 +214,7 @@ object mochaStrings {
   @scala.inline
   def afterEach: afterEach = "afterEach".asInstanceOf[afterEach]
   @scala.inline
-  def base: base = "base".asInstanceOf[base]
+  def base_ : base_ = "base".asInstanceOf[base_]
   @scala.inline
   def bdd: bdd = "bdd".asInstanceOf[bdd]
   @scala.inline
@@ -222,7 +222,7 @@ object mochaStrings {
   @scala.inline
   def beforeEach: beforeEach = "beforeEach".asInstanceOf[beforeEach]
   @scala.inline
-  def dot: dot = "dot".asInstanceOf[dot]
+  def dot_ : dot_ = "dot".asInstanceOf[dot_]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
@@ -240,23 +240,23 @@ object mochaStrings {
   @scala.inline
   def `hook end`: `hook end` = "hook end".asInstanceOf[`hook end`]
   @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  def html_ : html_ = "html".asInstanceOf[html_]
   @scala.inline
   def `json-stream`: `json-stream` = "json-stream".asInstanceOf[`json-stream`]
   @scala.inline
-  def landing: landing = "landing".asInstanceOf[landing]
+  def json_ : json_ = "json".asInstanceOf[json_]
   @scala.inline
-  def list: list = "list".asInstanceOf[list]
+  def landing_ : landing_ = "landing".asInstanceOf[landing_]
   @scala.inline
-  def markdown: markdown = "markdown".asInstanceOf[markdown]
+  def list_ : list_ = "list".asInstanceOf[list_]
+  @scala.inline
+  def markdown_ : markdown_ = "markdown".asInstanceOf[markdown_]
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
-  def min: min = "min".asInstanceOf[min]
+  def min_ : min_ = "min".asInstanceOf[min_]
   @scala.inline
-  def nyan: nyan = "nyan".asInstanceOf[nyan]
+  def nyan_ : nyan_ = "nyan".asInstanceOf[nyan_]
   @scala.inline
   def pass: pass = "pass".asInstanceOf[pass]
   @scala.inline
@@ -268,7 +268,7 @@ object mochaStrings {
   @scala.inline
   def `pre-require`: `pre-require` = "pre-require".asInstanceOf[`pre-require`]
   @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
+  def progress_ : progress_ = "progress".asInstanceOf[progress_]
   @scala.inline
   def qunit: qunit = "qunit".asInstanceOf[qunit]
   @scala.inline
@@ -278,7 +278,7 @@ object mochaStrings {
   @scala.inline
   def slow: slow = "slow".asInstanceOf[slow]
   @scala.inline
-  def spec: spec = "spec".asInstanceOf[spec]
+  def spec_ : spec_ = "spec".asInstanceOf[spec_]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline
@@ -286,7 +286,7 @@ object mochaStrings {
   @scala.inline
   def `suite end`: `suite end` = "suite end".asInstanceOf[`suite end`]
   @scala.inline
-  def tap: tap = "tap".asInstanceOf[tap]
+  def tap_ : tap_ = "tap".asInstanceOf[tap_]
   @scala.inline
   def tdd: tdd = "tdd".asInstanceOf[tdd]
   @scala.inline
@@ -296,6 +296,6 @@ object mochaStrings {
   @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
   @scala.inline
-  def xunit: xunit = "xunit".asInstanceOf[xunit]
+  def xunit_ : xunit_ = "xunit".asInstanceOf[xunit_]
 }
 

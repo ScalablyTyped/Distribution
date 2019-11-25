@@ -27,11 +27,11 @@ object DraggableEvent {
   ): DraggableEvent = {
     val __obj = js.Dynamic.literal()
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (pos != null) __obj.updateDynamic("pos")(pos)
-    if (smallOffset != null) __obj.updateDynamic("smallOffset")(smallOffset)
-    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
+    if (smallOffset != null) __obj.updateDynamic("smallOffset")(smallOffset.asInstanceOf[js.Any])
+    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableEvent]
   }

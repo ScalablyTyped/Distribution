@@ -21,11 +21,11 @@ object AuthError {
     phoneNumber: String = null,
     tenantId: String = null
   ): AuthError = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
-    if (credential != null) __obj.updateDynamic("credential")(credential)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthError]
   }
 }

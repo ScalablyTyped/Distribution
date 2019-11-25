@@ -257,7 +257,7 @@ object Gun extends js.Object {
       * **Here the type of callback respect to the actual behavior**
       */
     def get[K /* <: String */](key: K): ChainReference[
-        /* import warning: ImportType.apply Failed type conversion: DataType[K] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: DataType[K] */ js.Any, 
         K, 
         `false` | root
       ] = js.native
@@ -272,7 +272,7 @@ object Gun extends js.Object {
           Unit
         ]
     ): ChainReference[
-        /* import warning: ImportType.apply Failed type conversion: DataType[K] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: DataType[K] */ js.Any, 
         K, 
         `false` | root
       ] = js.native
@@ -394,7 +394,7 @@ object Gun extends js.Object {
     def recall(opt: Anon_SessionStorage): ChainReference[_, _, `false`] = js.native
     def recall(
       opt: Anon_SessionStorage,
-      cb: /* import warning: ImportType.apply Failed type conversion: gun.gun.Gun.Parameters<(alias : string, pass : string, cb ? : (ack : gun.Anon_2 | gun.Anon_ErrString): void, opt ? : {}): gun.gun.Gun.ChainReference<any, any, false>>[2] */ js.Any
+      cb: /* import warning: importer.ImportType#apply Failed type conversion: gun.gun.Gun.Parameters<(alias : string, pass : string, cb ? : (ack : gun.Anon_2 | gun.Anon_ErrString): void, opt ? : {}): gun.gun.Gun.ChainReference<any, any, false>>[2] */ js.Any
     ): ChainReference[_, _, `false`] = js.native
     /**
       * **.set does not means 'set data', it means a Mathematical Set**
@@ -438,7 +438,7 @@ object Gun extends js.Object {
     def apply[DataType](options: ConstructorOptions): ChainReference[DataType, _, pre_root] = js.native
   }
   
-  type AccessObject[T] = T | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  type AccessObject[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias gun.gun.Gun.AccessObject<T[key]> * / object}
     */ typings.gun.gunStrings.AccessObject with T)
   type AckCallback = js.Function1[/* ack */ Anon_Err | Anon_ErrOk, Unit]

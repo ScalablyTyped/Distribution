@@ -13,7 +13,7 @@ trait resurrectOptions extends js.Object {
 object resurrectOptions {
   @scala.inline
   def apply(name: String, requestId: String, now: Int | Double = null): resurrectOptions = {
-    val __obj = js.Dynamic.literal(name = name, requestId = requestId)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
     __obj.asInstanceOf[resurrectOptions]
   }

@@ -38,8 +38,8 @@ object Corner {
     TOP_START: `8`,
     StringDictionary: StringDictionary[Double] = null
   ): Corner = {
-    val __obj = js.Dynamic.literal(BOTTOM_END = BOTTOM_END, BOTTOM_LEFT = BOTTOM_LEFT, BOTTOM_RIGHT = BOTTOM_RIGHT, BOTTOM_START = BOTTOM_START, TOP_END = TOP_END, TOP_LEFT = TOP_LEFT, TOP_RIGHT = TOP_RIGHT, TOP_START = TOP_START)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(BOTTOM_END = BOTTOM_END.asInstanceOf[js.Any], BOTTOM_LEFT = BOTTOM_LEFT.asInstanceOf[js.Any], BOTTOM_RIGHT = BOTTOM_RIGHT.asInstanceOf[js.Any], BOTTOM_START = BOTTOM_START.asInstanceOf[js.Any], TOP_END = TOP_END.asInstanceOf[js.Any], TOP_LEFT = TOP_LEFT.asInstanceOf[js.Any], TOP_RIGHT = TOP_RIGHT.asInstanceOf[js.Any], TOP_START = TOP_START.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Corner]
   }
 }

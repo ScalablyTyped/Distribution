@@ -11,7 +11,7 @@ trait NavigationFocusInjectedProps[P] extends NavigationInjectedProps[P] {
 object NavigationFocusInjectedProps {
   @scala.inline
   def apply[P](isFocused: Boolean, navigation: NavigationScreenProp[NavigationRoute[P], P]): NavigationFocusInjectedProps[P] = {
-    val __obj = js.Dynamic.literal(isFocused = isFocused, navigation = navigation)
+    val __obj = js.Dynamic.literal(isFocused = isFocused.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigationFocusInjectedProps[P]]
   }

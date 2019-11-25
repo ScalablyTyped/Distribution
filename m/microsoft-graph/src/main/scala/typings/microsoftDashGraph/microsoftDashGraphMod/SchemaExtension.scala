@@ -39,12 +39,12 @@ object SchemaExtension {
     targetTypes: js.Array[String] = null
   ): SchemaExtension = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (targetTypes != null) __obj.updateDynamic("targetTypes")(targetTypes)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (targetTypes != null) __obj.updateDynamic("targetTypes")(targetTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtension]
   }
 }

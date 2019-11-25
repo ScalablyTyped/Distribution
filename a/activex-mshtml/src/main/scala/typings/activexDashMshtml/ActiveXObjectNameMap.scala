@@ -20,9 +20,9 @@ object ActiveXObjectNameMap {
     `TemplatePrinter.TemplatePrinter`: CTemplatePrinter,
     htmlfile: HTMLDocument
   ): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(htmlfile = htmlfile)
-    __obj.updateDynamic("ScriptBridge.ScriptBridge")(`ScriptBridge.ScriptBridge`)
-    __obj.updateDynamic("TemplatePrinter.TemplatePrinter")(`TemplatePrinter.TemplatePrinter`)
+    val __obj = js.Dynamic.literal(htmlfile = htmlfile.asInstanceOf[js.Any])
+    __obj.updateDynamic("ScriptBridge.ScriptBridge")(`ScriptBridge.ScriptBridge`.asInstanceOf[js.Any])
+    __obj.updateDynamic("TemplatePrinter.TemplatePrinter")(`TemplatePrinter.TemplatePrinter`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

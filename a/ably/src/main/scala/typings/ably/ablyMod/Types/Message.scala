@@ -27,7 +27,7 @@ object Message {
     name: String,
     timestamp: Double
   ): Message = {
-    val __obj = js.Dynamic.literal(clientId = clientId, connectionId = connectionId, data = data, encoding = encoding, extras = extras, id = id, name = name, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], connectionId = connectionId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], extras = extras.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Message]
   }

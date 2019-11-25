@@ -29,10 +29,10 @@ object DrawCaptionEventArgs {
     scaleElement: HTMLElement = null
   ): DrawCaptionEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Object != null) __obj.updateDynamic("Object")(Object)
-    if (captionElement != null) __obj.updateDynamic("captionElement")(captionElement)
-    if (captionType != null) __obj.updateDynamic("captionType")(captionType)
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (Object != null) __obj.updateDynamic("Object")(Object.asInstanceOf[js.Any])
+    if (captionElement != null) __obj.updateDynamic("captionElement")(captionElement.asInstanceOf[js.Any])
+    if (captionType != null) __obj.updateDynamic("captionType")(captionType.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawCaptionEventArgs]
   }
 }

@@ -27,12 +27,12 @@ object Image {
     position: Position = null,
     title: String = null
   ): Image = {
-    val __obj = js.Dynamic.literal(url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
 }

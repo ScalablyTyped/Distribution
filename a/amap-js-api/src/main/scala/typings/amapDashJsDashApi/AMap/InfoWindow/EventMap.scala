@@ -22,7 +22,7 @@ object EventMap {
     close: Event[close, Anon_Target[I]],
     open: Event[open, Anon_Target[I]]
   ): EventMap[I] = {
-    val __obj = js.Dynamic.literal(change = change, close = close, open = open)
+    val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap[I]]
   }

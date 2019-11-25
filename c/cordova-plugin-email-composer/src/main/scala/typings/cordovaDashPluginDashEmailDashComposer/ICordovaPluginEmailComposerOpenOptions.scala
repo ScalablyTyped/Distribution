@@ -29,13 +29,13 @@ object ICordovaPluginEmailComposerOpenOptions {
     to: js.Array[String] = null
   ): ICordovaPluginEmailComposerOpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (cc != null) __obj.updateDynamic("cc")(cc)
-    if (!js.isUndefined(isHtml)) __obj.updateDynamic("isHtml")(isHtml)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHtml)) __obj.updateDynamic("isHtml")(isHtml.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICordovaPluginEmailComposerOpenOptions]
   }
 }

@@ -13,7 +13,7 @@ object RuntimeMetadata {
   @scala.inline
   def apply(computeEngine: ComputeEngine = null): RuntimeMetadata = {
     val __obj = js.Dynamic.literal()
-    if (computeEngine != null) __obj.updateDynamic("computeEngine")(computeEngine)
+    if (computeEngine != null) __obj.updateDynamic("computeEngine")(computeEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeMetadata]
   }
 }

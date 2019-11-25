@@ -1,7 +1,6 @@
 package typings.utility.utilityMod
 
 import typings.node.Buffer
-import typings.utility.utilityStrings.md5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +23,7 @@ object hash_md5 extends js.Object {
     * @return {String} md5 hash string
     * @public
     */
-  def apply(method: md5, s: String): String = js.native
-  def apply(method: md5, s: Buffer): String = js.native
+  def apply(method: typings.utility.utilityStrings.md5, s: String): String = js.native
+  def apply(method: typings.utility.utilityStrings.md5, s: Buffer): String = js.native
 }
 

@@ -11,7 +11,7 @@ trait ReadOptions extends js.Object {
 object ReadOptions {
   @scala.inline
   def apply(path: String): ReadOptions = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadOptions]
   }

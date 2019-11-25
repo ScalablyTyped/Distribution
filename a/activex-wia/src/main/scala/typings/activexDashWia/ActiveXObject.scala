@@ -26,10 +26,10 @@ object ActiveXObject {
   @scala.inline
   def apply(
     on: (DeviceManager, OnEvent, js.Tuple3[EventID, DeviceID, ItemID], js.ThisFunction1[/* this */ DeviceManager, /* parameter */ Anon_DeviceID, Unit]) => Unit,
-    set_Item: (Vector[js.Any], Item, js.Array[Double], js.Any) => Unit
+    set: (Vector[js.Any], Item, js.Array[Double], js.Any) => Unit
   ): ActiveXObject = {
-    val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on))
-    __obj.updateDynamic("set")(js.Any.fromFunction4(set_Item))
+    val __obj = js.Dynamic.literal(on = js.Any.fromFunction4(on), set = js.Any.fromFunction4(set))
+  
     __obj.asInstanceOf[ActiveXObject]
   }
 }

@@ -91,15 +91,15 @@ object OAuthInfoProperties {
     portalUrl: String = null
   ): OAuthInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId)
-    if (authNamespace != null) __obj.updateDynamic("authNamespace")(authNamespace)
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (authNamespace != null) __obj.updateDynamic("authNamespace")(authNamespace.asInstanceOf[js.Any])
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (minTimeUntilExpiration != null) __obj.updateDynamic("minTimeUntilExpiration")(minTimeUntilExpiration.asInstanceOf[js.Any])
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)
-    if (popupCallbackUrl != null) __obj.updateDynamic("popupCallbackUrl")(popupCallbackUrl)
-    if (popupWindowFeatures != null) __obj.updateDynamic("popupWindowFeatures")(popupWindowFeatures)
-    if (portalUrl != null) __obj.updateDynamic("portalUrl")(portalUrl)
+    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    if (popupCallbackUrl != null) __obj.updateDynamic("popupCallbackUrl")(popupCallbackUrl.asInstanceOf[js.Any])
+    if (popupWindowFeatures != null) __obj.updateDynamic("popupWindowFeatures")(popupWindowFeatures.asInstanceOf[js.Any])
+    if (portalUrl != null) __obj.updateDynamic("portalUrl")(portalUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthInfoProperties]
   }
 }

@@ -24,12 +24,12 @@ object ClaimEvent {
     typeDetails: ClaimEventTypeDetails = null
   ): ClaimEvent = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (typeDetails != null) __obj.updateDynamic("typeDetails")(typeDetails)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (typeDetails != null) __obj.updateDynamic("typeDetails")(typeDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimEvent]
   }
 }

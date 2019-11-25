@@ -22,7 +22,7 @@ object ConverterDefinition {
     upcastAlso: MatcherPattern | js.Array[MatcherPattern],
     view: ElementDefinition | js.Object
   ): ConverterDefinition = {
-    val __obj = js.Dynamic.literal(converterPriority = converterPriority, model = model, upcastAlso = upcastAlso.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(converterPriority = converterPriority.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], upcastAlso = upcastAlso.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConverterDefinition]
   }

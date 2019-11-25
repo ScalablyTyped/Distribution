@@ -14,7 +14,7 @@ trait TestModeAPI extends js.Object {
 object TestModeAPI {
   @scala.inline
   def apply(calls: js.Array[js.Array[_]], ga: /* repeated */ js.Any => js.Any, resetCalls: js.Function): TestModeAPI = {
-    val __obj = js.Dynamic.literal(calls = calls, ga = js.Any.fromFunction1(ga), resetCalls = resetCalls)
+    val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], ga = js.Any.fromFunction1(ga), resetCalls = resetCalls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestModeAPI]
   }

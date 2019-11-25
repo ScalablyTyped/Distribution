@@ -16,8 +16,8 @@ object Anon_AllowVaultCardOverride {
     vaultCard: js.UndefOr[Boolean] = js.undefined
   ): Anon_AllowVaultCardOverride = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowVaultCardOverride)) __obj.updateDynamic("allowVaultCardOverride")(allowVaultCardOverride)
-    if (!js.isUndefined(vaultCard)) __obj.updateDynamic("vaultCard")(vaultCard)
+    if (!js.isUndefined(allowVaultCardOverride)) __obj.updateDynamic("allowVaultCardOverride")(allowVaultCardOverride.asInstanceOf[js.Any])
+    if (!js.isUndefined(vaultCard)) __obj.updateDynamic("vaultCard")(vaultCard.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowVaultCardOverride]
   }
 }

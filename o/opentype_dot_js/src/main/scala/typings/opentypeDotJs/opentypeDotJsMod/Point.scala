@@ -12,7 +12,7 @@ object Point {
   @scala.inline
   def apply(lastPointOfContour: js.UndefOr[Boolean] = js.undefined): Point = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lastPointOfContour)) __obj.updateDynamic("lastPointOfContour")(lastPointOfContour)
+    if (!js.isUndefined(lastPointOfContour)) __obj.updateDynamic("lastPointOfContour")(lastPointOfContour.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

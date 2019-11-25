@@ -189,19 +189,19 @@ object Anon_BarLayout {
     visual: js.Function = null
   ): Anon_BarLayout = {
     val __obj = js.Dynamic.literal()
-    if (barLayout != null) __obj.updateDynamic("barLayout")(barLayout)
-    if (coord != null) __obj.updateDynamic("coord")(coord)
-    if (currentSeriesIndices != null) __obj.updateDynamic("currentSeriesIndices")(currentSeriesIndices)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (getDevicePixelRatio != null) __obj.updateDynamic("getDevicePixelRatio")(getDevicePixelRatio)
-    if (getHeight != null) __obj.updateDynamic("getHeight")(getHeight)
-    if (getWidth != null) __obj.updateDynamic("getWidth")(getWidth)
-    if (getZr != null) __obj.updateDynamic("getZr")(getZr)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (styleEmphasis != null) __obj.updateDynamic("styleEmphasis")(styleEmphasis)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (visual != null) __obj.updateDynamic("visual")(visual)
+    if (barLayout != null) __obj.updateDynamic("barLayout")(barLayout.asInstanceOf[js.Any])
+    if (coord != null) __obj.updateDynamic("coord")(coord.asInstanceOf[js.Any])
+    if (currentSeriesIndices != null) __obj.updateDynamic("currentSeriesIndices")(currentSeriesIndices.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (getDevicePixelRatio != null) __obj.updateDynamic("getDevicePixelRatio")(getDevicePixelRatio.asInstanceOf[js.Any])
+    if (getHeight != null) __obj.updateDynamic("getHeight")(getHeight.asInstanceOf[js.Any])
+    if (getWidth != null) __obj.updateDynamic("getWidth")(getWidth.asInstanceOf[js.Any])
+    if (getZr != null) __obj.updateDynamic("getZr")(getZr.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (styleEmphasis != null) __obj.updateDynamic("styleEmphasis")(styleEmphasis.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BarLayout]
   }
 }

@@ -19,7 +19,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(filePath: String, removeMarkdown: Boolean): Options = {
-    val __obj = js.Dynamic.literal(filePath = filePath, removeMarkdown = removeMarkdown)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], removeMarkdown = removeMarkdown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

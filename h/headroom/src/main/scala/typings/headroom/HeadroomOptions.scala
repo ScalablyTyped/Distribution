@@ -33,7 +33,7 @@ object HeadroomOptions {
     tolerance: js.Any = null
   ): HeadroomOptions = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onBottom != null) __obj.updateDynamic("onBottom")(js.Any.fromFunction0(onBottom))
     if (onNotBottom != null) __obj.updateDynamic("onNotBottom")(js.Any.fromFunction0(onNotBottom))
@@ -41,8 +41,8 @@ object HeadroomOptions {
     if (onPin != null) __obj.updateDynamic("onPin")(js.Any.fromFunction0(onPin))
     if (onTop != null) __obj.updateDynamic("onTop")(js.Any.fromFunction0(onTop))
     if (onUnpin != null) __obj.updateDynamic("onUnpin")(js.Any.fromFunction0(onUnpin))
-    if (scroller != null) __obj.updateDynamic("scroller")(scroller)
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance)
+    if (scroller != null) __obj.updateDynamic("scroller")(scroller.asInstanceOf[js.Any])
+    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadroomOptions]
   }
 }

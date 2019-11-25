@@ -34,17 +34,17 @@ object PlaylistItem {
     trackId: String = null
   ): PlaylistItem = {
     val __obj = js.Dynamic.literal()
-    if (absolutePosition != null) __obj.updateDynamic("absolutePosition")(absolutePosition)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lastModifiedTimestamp != null) __obj.updateDynamic("lastModifiedTimestamp")(lastModifiedTimestamp)
-    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (track != null) __obj.updateDynamic("track")(track)
-    if (trackId != null) __obj.updateDynamic("trackId")(trackId)
+    if (absolutePosition != null) __obj.updateDynamic("absolutePosition")(absolutePosition.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lastModifiedTimestamp != null) __obj.updateDynamic("lastModifiedTimestamp")(lastModifiedTimestamp.asInstanceOf[js.Any])
+    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
+    if (trackId != null) __obj.updateDynamic("trackId")(trackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistItem]
   }
 }

@@ -12,7 +12,7 @@ trait SortEntry extends js.Object {
 object SortEntry {
   @scala.inline
   def apply(ascendingOrder: Boolean, propertyName: String): SortEntry = {
-    val __obj = js.Dynamic.literal(ascendingOrder = ascendingOrder, propertyName = propertyName)
+    val __obj = js.Dynamic.literal(ascendingOrder = ascendingOrder.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortEntry]
   }

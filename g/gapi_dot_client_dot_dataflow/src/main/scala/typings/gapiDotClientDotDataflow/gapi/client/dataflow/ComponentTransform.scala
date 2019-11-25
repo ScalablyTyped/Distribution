@@ -20,9 +20,9 @@ object ComponentTransform {
   @scala.inline
   def apply(name: String = null, originalTransform: String = null, userName: String = null): ComponentTransform = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (originalTransform != null) __obj.updateDynamic("originalTransform")(originalTransform)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (originalTransform != null) __obj.updateDynamic("originalTransform")(originalTransform.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentTransform]
   }
 }

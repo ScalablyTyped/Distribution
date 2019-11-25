@@ -20,7 +20,7 @@ trait Anon_Amountgte extends js.Object {
 object Anon_Amountgte {
   @scala.inline
   def apply(amount_gte: Double, reset_billing_cycle_anchor: Boolean): Anon_Amountgte = {
-    val __obj = js.Dynamic.literal(amount_gte = amount_gte, reset_billing_cycle_anchor = reset_billing_cycle_anchor)
+    val __obj = js.Dynamic.literal(amount_gte = amount_gte.asInstanceOf[js.Any], reset_billing_cycle_anchor = reset_billing_cycle_anchor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Amountgte]
   }

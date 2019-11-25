@@ -29,7 +29,7 @@ object TimeZoneRequest {
   @scala.inline
   def apply(location: LatLng, language: Language = null, timestamp: Date | Double = null): TimeZoneRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeZoneRequest]
   }

@@ -25,11 +25,11 @@ object Anon_Beammiddleonly {
     stem_direction: Int | Double = null
   ): Anon_Beammiddleonly = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(beam_middle_only)) __obj.updateDynamic("beam_middle_only")(beam_middle_only)
-    if (!js.isUndefined(beam_rests)) __obj.updateDynamic("beam_rests")(beam_rests)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (!js.isUndefined(maintain_stem_directions)) __obj.updateDynamic("maintain_stem_directions")(maintain_stem_directions)
-    if (!js.isUndefined(show_stemlets)) __obj.updateDynamic("show_stemlets")(show_stemlets)
+    if (!js.isUndefined(beam_middle_only)) __obj.updateDynamic("beam_middle_only")(beam_middle_only.asInstanceOf[js.Any])
+    if (!js.isUndefined(beam_rests)) __obj.updateDynamic("beam_rests")(beam_rests.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintain_stem_directions)) __obj.updateDynamic("maintain_stem_directions")(maintain_stem_directions.asInstanceOf[js.Any])
+    if (!js.isUndefined(show_stemlets)) __obj.updateDynamic("show_stemlets")(show_stemlets.asInstanceOf[js.Any])
     if (stem_direction != null) __obj.updateDynamic("stem_direction")(stem_direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Beammiddleonly]
   }

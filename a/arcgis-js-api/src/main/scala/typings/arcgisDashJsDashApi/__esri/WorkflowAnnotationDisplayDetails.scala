@@ -72,7 +72,7 @@ object WorkflowAnnotationDisplayDetails {
     propertyIsEnumerable: PropertyKey => Boolean,
     width: Double
   ): WorkflowAnnotationDisplayDetails = {
-    val __obj = js.Dynamic.literal(OutlineColor = OutlineColor, centerX = centerX, centerY = centerY, constructor = constructor, fillColor = fillColor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height, label = label, labelColor = labelColor, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width)
+    val __obj = js.Dynamic.literal(OutlineColor = OutlineColor.asInstanceOf[js.Any], centerX = centerX.asInstanceOf[js.Any], centerY = centerY.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], fillColor = fillColor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), height = height.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelColor = labelColor.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkflowAnnotationDisplayDetails]
   }

@@ -13,7 +13,7 @@ object RuleModule {
   @scala.inline
   def apply(create: RuleContext => RuleListener, meta: RuleMetaData = null): RuleModule = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleModule]
   }
 }

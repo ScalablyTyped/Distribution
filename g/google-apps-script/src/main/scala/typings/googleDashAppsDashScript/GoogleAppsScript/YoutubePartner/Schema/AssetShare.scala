@@ -14,9 +14,9 @@ object AssetShare {
   @scala.inline
   def apply(kind: String = null, shareId: String = null, viewId: String = null): AssetShare = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (shareId != null) __obj.updateDynamic("shareId")(shareId)
-    if (viewId != null) __obj.updateDynamic("viewId")(viewId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (shareId != null) __obj.updateDynamic("shareId")(shareId.asInstanceOf[js.Any])
+    if (viewId != null) __obj.updateDynamic("viewId")(viewId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetShare]
   }
 }

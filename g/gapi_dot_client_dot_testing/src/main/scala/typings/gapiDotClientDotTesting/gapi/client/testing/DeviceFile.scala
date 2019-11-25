@@ -13,7 +13,7 @@ object DeviceFile {
   @scala.inline
   def apply(obbFile: ObbFile = null): DeviceFile = {
     val __obj = js.Dynamic.literal()
-    if (obbFile != null) __obj.updateDynamic("obbFile")(obbFile)
+    if (obbFile != null) __obj.updateDynamic("obbFile")(obbFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceFile]
   }
 }

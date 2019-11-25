@@ -52,38 +52,26 @@ object IFileUploadField {
     buttonOnly: js.UndefOr[Boolean] = js.undefined,
     buttonText: java.lang.String = null,
     clearOnSubmit: js.UndefOr[Boolean] = js.undefined,
-    componentLayout: js.Any = null,
     extractFileInput: () => HTMLElement = null,
     fileInputEl: IElement = null,
     getTriggerMarkup: () => Unit = null,
     isFileUpload: () => Boolean = null,
-    onDisable: () => Unit = null,
-    onEnable: () => Unit = null,
-    onRender: () => Unit = null,
     onShow: () => Unit = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    reset: () => Unit = null,
     setValue: () => Unit = null
   ): IFileUploadField = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ITrigger)
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (buttonConfig != null) __obj.updateDynamic("buttonConfig")(buttonConfig)
+    if (ITrigger != null) js.Dynamic.global.Object.assign(__obj, ITrigger)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (buttonConfig != null) __obj.updateDynamic("buttonConfig")(buttonConfig.asInstanceOf[js.Any])
     if (buttonMargin != null) __obj.updateDynamic("buttonMargin")(buttonMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonOnly)) __obj.updateDynamic("buttonOnly")(buttonOnly)
-    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
-    if (!js.isUndefined(clearOnSubmit)) __obj.updateDynamic("clearOnSubmit")(clearOnSubmit)
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (!js.isUndefined(buttonOnly)) __obj.updateDynamic("buttonOnly")(buttonOnly.asInstanceOf[js.Any])
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnSubmit)) __obj.updateDynamic("clearOnSubmit")(clearOnSubmit.asInstanceOf[js.Any])
     if (extractFileInput != null) __obj.updateDynamic("extractFileInput")(js.Any.fromFunction0(extractFileInput))
-    if (fileInputEl != null) __obj.updateDynamic("fileInputEl")(fileInputEl)
+    if (fileInputEl != null) __obj.updateDynamic("fileInputEl")(fileInputEl.asInstanceOf[js.Any])
     if (getTriggerMarkup != null) __obj.updateDynamic("getTriggerMarkup")(js.Any.fromFunction0(getTriggerMarkup))
     if (isFileUpload != null) __obj.updateDynamic("isFileUpload")(js.Any.fromFunction0(isFileUpload))
-    if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction0(onDisable))
-    if (onEnable != null) __obj.updateDynamic("onEnable")(js.Any.fromFunction0(onEnable))
-    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction0(setValue))
     __obj.asInstanceOf[IFileUploadField]
   }

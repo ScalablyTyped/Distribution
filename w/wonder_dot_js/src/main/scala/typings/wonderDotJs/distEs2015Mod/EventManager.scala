@@ -2,8 +2,6 @@ package typings.wonderDotJs.distEs2015Mod
 
 import typings.std.HTMLElement
 import typings.wonderDashFrp.distEs2015StreamFromEventPatternStreamMod.FromEventPatternStream
-import typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent
-import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +35,30 @@ object EventManager extends js.Object {
   ): js.Any = js.native
   def fromEvent(dom: HTMLElement, eventName: String): FromEventPatternStream = js.native
   def fromEvent(dom: HTMLElement, eventName: String, priority: Double): FromEventPatternStream = js.native
-  def fromEvent(dom: HTMLElement, eventName: EEngineEvent): FromEventPatternStream = js.native
-  def fromEvent(dom: HTMLElement, eventName: EEngineEvent, priority: Double): FromEventPatternStream = js.native
-  def fromEvent(dom: HTMLElement, eventName: EEventName): FromEventPatternStream = js.native
-  def fromEvent(dom: HTMLElement, eventName: EEventName, priority: Double): FromEventPatternStream = js.native
+  def fromEvent(dom: HTMLElement, eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent): FromEventPatternStream = js.native
+  def fromEvent(
+    dom: HTMLElement,
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent,
+    priority: Double
+  ): FromEventPatternStream = js.native
+  def fromEvent(
+    dom: HTMLElement,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
+  ): FromEventPatternStream = js.native
+  def fromEvent(
+    dom: HTMLElement,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
+    priority: Double
+  ): FromEventPatternStream = js.native
   def fromEvent(eventName: String): FromEventPatternStream = js.native
   def fromEvent(eventName: String, priority: Double): FromEventPatternStream = js.native
-  def fromEvent(eventName: EEngineEvent): FromEventPatternStream = js.native
-  def fromEvent(eventName: EEngineEvent, priority: Double): FromEventPatternStream = js.native
-  def fromEvent(eventName: EEventName): FromEventPatternStream = js.native
-  def fromEvent(eventName: EEventName, priority: Double): FromEventPatternStream = js.native
+  def fromEvent(eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent): FromEventPatternStream = js.native
+  def fromEvent(eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent, priority: Double): FromEventPatternStream = js.native
+  def fromEvent(eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName): FromEventPatternStream = js.native
+  def fromEvent(
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
+    priority: Double
+  ): FromEventPatternStream = js.native
   def fromEvent(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
     eventName: String
@@ -58,32 +70,42 @@ object EventManager extends js.Object {
   ): FromEventPatternStream = js.native
   def fromEvent(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEngineEvent
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent
   ): FromEventPatternStream = js.native
   def fromEvent(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEngineEvent,
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent,
     priority: Double
   ): FromEventPatternStream = js.native
   def fromEvent(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEventName
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
   ): FromEventPatternStream = js.native
   def fromEvent(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEventName,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
     priority: Double
   ): FromEventPatternStream = js.native
   def off(): Unit = js.native
   def off(dom: HTMLElement): Unit = js.native
-  def off(dom: HTMLElement, eventName: EEventName): Unit = js.native
-  def off(dom: HTMLElement, eventName: EEventName, handler: js.Function): Unit = js.native
+  def off(
+    dom: HTMLElement,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
+  ): Unit = js.native
+  def off(
+    dom: HTMLElement,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
+    handler: js.Function
+  ): Unit = js.native
   def off(eventName: String): Unit = js.native
   def off(eventName: String, handler: js.Function): Unit = js.native
-  def off(eventName: EEngineEvent): Unit = js.native
-  def off(eventName: EEngineEvent, handler: js.Function): Unit = js.native
-  def off(eventName: EEventName): Unit = js.native
-  def off(eventName: EEventName, handler: js.Function): Unit = js.native
+  def off(eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent): Unit = js.native
+  def off(eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent, handler: js.Function): Unit = js.native
+  def off(eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName): Unit = js.native
+  def off(
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
+    handler: js.Function
+  ): Unit = js.native
   def off(target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject): Unit = js.native
   def off(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
@@ -96,34 +118,63 @@ object EventManager extends js.Object {
   ): Unit = js.native
   def off(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEngineEvent
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent
   ): Unit = js.native
   def off(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEngineEvent,
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent,
     handler: js.Function
   ): Unit = js.native
   def off(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEventName
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
   ): Unit = js.native
   def off(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEventName,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
     handler: js.Function
   ): Unit = js.native
   def on(dom: HTMLElement, eventName: String, handler: js.Function): Unit = js.native
   def on(dom: HTMLElement, eventName: String, handler: js.Function, priority: Double): Unit = js.native
-  def on(dom: HTMLElement, eventName: EEngineEvent, handler: js.Function): Unit = js.native
-  def on(dom: HTMLElement, eventName: EEngineEvent, handler: js.Function, priority: Double): Unit = js.native
-  def on(dom: HTMLElement, eventName: EEventName, handler: js.Function): Unit = js.native
-  def on(dom: HTMLElement, eventName: EEventName, handler: js.Function, priority: Double): Unit = js.native
+  def on(
+    dom: HTMLElement,
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent,
+    handler: js.Function
+  ): Unit = js.native
+  def on(
+    dom: HTMLElement,
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent,
+    handler: js.Function,
+    priority: Double
+  ): Unit = js.native
+  def on(
+    dom: HTMLElement,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
+    handler: js.Function
+  ): Unit = js.native
+  def on(
+    dom: HTMLElement,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
+    handler: js.Function,
+    priority: Double
+  ): Unit = js.native
   def on(eventName: String, handler: js.Function): Unit = js.native
   def on(eventName: String, handler: js.Function, priority: Double): Unit = js.native
-  def on(eventName: EEngineEvent, handler: js.Function): Unit = js.native
-  def on(eventName: EEngineEvent, handler: js.Function, priority: Double): Unit = js.native
-  def on(eventName: EEventName, handler: js.Function): Unit = js.native
-  def on(eventName: EEventName, handler: js.Function, priority: Double): Unit = js.native
+  def on(eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent, handler: js.Function): Unit = js.native
+  def on(
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent,
+    handler: js.Function,
+    priority: Double
+  ): Unit = js.native
+  def on(
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
+    handler: js.Function
+  ): Unit = js.native
+  def on(
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
+    handler: js.Function,
+    priority: Double
+  ): Unit = js.native
   def on(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
     eventName: String,
@@ -137,23 +188,23 @@ object EventManager extends js.Object {
   ): Unit = js.native
   def on(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEngineEvent,
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent,
     handler: js.Function
   ): Unit = js.native
   def on(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEngineEvent,
+    eventName: typings.wonderDotJs.distEs2015EventEEngineEventMod.EEngineEvent,
     handler: js.Function,
     priority: Double
   ): Unit = js.native
   def on(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEventName,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
     handler: js.Function
   ): Unit = js.native
   def on(
     target: typings.wonderDotJs.distEs2015CoreEntityObjectEntityObjectMod.EntityObject,
-    eventName: EEventName,
+    eventName: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName,
     handler: js.Function,
     priority: Double
   ): Unit = js.native

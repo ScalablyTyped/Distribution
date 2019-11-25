@@ -19,8 +19,8 @@ object GetBLEDeviceCharacteristicsSuccessData {
   @scala.inline
   def apply(properties: js.Any = null, uuid: String = null): GetBLEDeviceCharacteristicsSuccessData = {
     val __obj = js.Dynamic.literal()
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsSuccessData]
   }
 }

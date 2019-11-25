@@ -12,7 +12,7 @@ trait CsvReadOptions extends js.Object {
 object CsvReadOptions {
   @scala.inline
   def apply(dateFormats: js.Array[String], map: (js.Any, Double) => js.Any): CsvReadOptions = {
-    val __obj = js.Dynamic.literal(dateFormats = dateFormats, map = js.Any.fromFunction2(map))
+    val __obj = js.Dynamic.literal(dateFormats = dateFormats.asInstanceOf[js.Any], map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[CsvReadOptions]
   }

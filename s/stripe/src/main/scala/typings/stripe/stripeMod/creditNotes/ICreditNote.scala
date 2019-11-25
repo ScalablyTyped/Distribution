@@ -113,11 +113,11 @@ object ICreditNote {
     reason: CreditNoteReason = null,
     refund: String | IRefund = null
   ): ICreditNote = {
-    val __obj = js.Dynamic.literal(amount = amount, created = created, currency = currency, customer = customer.asInstanceOf[js.Any], customer_balance_transaction = customer_balance_transaction.asInstanceOf[js.Any], id = id, invoice = invoice.asInstanceOf[js.Any], livemode = livemode, metadata = metadata, number = number, pdf = pdf, status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], customer_balance_transaction = customer_balance_transaction.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invoice = invoice.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pdf = pdf.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (memo != null) __obj.updateDynamic("memo")(memo)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (memo != null) __obj.updateDynamic("memo")(memo.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (refund != null) __obj.updateDynamic("refund")(refund.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreditNote]
   }

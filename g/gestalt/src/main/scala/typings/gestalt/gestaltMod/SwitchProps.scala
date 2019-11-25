@@ -22,10 +22,10 @@ object SwitchProps {
     name: String = null,
     switched: js.UndefOr[Boolean] = js.undefined
   ): SwitchProps = {
-    val __obj = js.Dynamic.literal(id = id, onChange = js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(switched)) __obj.updateDynamic("switched")(switched)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(switched)) __obj.updateDynamic("switched")(switched.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchProps]
   }
 }

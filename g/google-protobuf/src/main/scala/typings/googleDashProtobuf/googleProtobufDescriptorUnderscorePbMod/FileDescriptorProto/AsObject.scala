@@ -55,12 +55,12 @@ object AsObject {
     sourceCodeInfo: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfo.AsObject = null,
     syntax: String = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(dependencyList = dependencyList, enumTypeList = enumTypeList, extensionList = extensionList, messageTypeList = messageTypeList, publicDependencyList = publicDependencyList, serviceList = serviceList, weakDependencyList = weakDependencyList)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (pb_package != null) __obj.updateDynamic("pb_package")(pb_package)
-    if (sourceCodeInfo != null) __obj.updateDynamic("sourceCodeInfo")(sourceCodeInfo)
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
+    val __obj = js.Dynamic.literal(dependencyList = dependencyList.asInstanceOf[js.Any], enumTypeList = enumTypeList.asInstanceOf[js.Any], extensionList = extensionList.asInstanceOf[js.Any], messageTypeList = messageTypeList.asInstanceOf[js.Any], publicDependencyList = publicDependencyList.asInstanceOf[js.Any], serviceList = serviceList.asInstanceOf[js.Any], weakDependencyList = weakDependencyList.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (pb_package != null) __obj.updateDynamic("pb_package")(pb_package.asInstanceOf[js.Any])
+    if (sourceCodeInfo != null) __obj.updateDynamic("sourceCodeInfo")(sourceCodeInfo.asInstanceOf[js.Any])
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

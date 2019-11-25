@@ -17,8 +17,8 @@ trait Anon_BodyABodyBShapeA extends js.Object {
 object Anon_BodyABodyBShapeA {
   @scala.inline
   def apply(bodyA: Body, bodyB: Body, shapeA: Shape, shapeB: Shape, `type`: String): Anon_BodyABodyBShapeA = {
-    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, shapeA = shapeA, shapeB = shapeB)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bodyA = bodyA.asInstanceOf[js.Any], bodyB = bodyB.asInstanceOf[js.Any], shapeA = shapeA.asInstanceOf[js.Any], shapeB = shapeB.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyABodyBShapeA]
   }
 }

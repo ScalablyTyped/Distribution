@@ -36,13 +36,13 @@ object ReadinessCheck {
     timeout: String = null
   ): ReadinessCheck = {
     val __obj = js.Dynamic.literal()
-    if (appStartTimeout != null) __obj.updateDynamic("appStartTimeout")(appStartTimeout)
-    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval)
+    if (appStartTimeout != null) __obj.updateDynamic("appStartTimeout")(appStartTimeout.asInstanceOf[js.Any])
+    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
     if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (successThreshold != null) __obj.updateDynamic("successThreshold")(successThreshold.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadinessCheck]
   }
 }

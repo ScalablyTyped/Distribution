@@ -17,9 +17,9 @@ object GetRecaptchaParamResponse {
   @scala.inline
   def apply(kind: String = null, recaptchaSiteKey: String = null, recaptchaStoken: String = null): GetRecaptchaParamResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (recaptchaSiteKey != null) __obj.updateDynamic("recaptchaSiteKey")(recaptchaSiteKey)
-    if (recaptchaStoken != null) __obj.updateDynamic("recaptchaStoken")(recaptchaStoken)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (recaptchaSiteKey != null) __obj.updateDynamic("recaptchaSiteKey")(recaptchaSiteKey.asInstanceOf[js.Any])
+    if (recaptchaStoken != null) __obj.updateDynamic("recaptchaStoken")(recaptchaStoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecaptchaParamResponse]
   }
 }

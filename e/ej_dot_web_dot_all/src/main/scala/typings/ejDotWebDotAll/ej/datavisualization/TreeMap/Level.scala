@@ -86,20 +86,20 @@ object Level {
     textOverflow: TextOverflow | String = null
   ): Level = {
     val __obj = js.Dynamic.literal()
-    if (groupBackground != null) __obj.updateDynamic("groupBackground")(groupBackground)
-    if (groupBorderColor != null) __obj.updateDynamic("groupBorderColor")(groupBorderColor)
+    if (groupBackground != null) __obj.updateDynamic("groupBackground")(groupBackground.asInstanceOf[js.Any])
+    if (groupBorderColor != null) __obj.updateDynamic("groupBorderColor")(groupBorderColor.asInstanceOf[js.Any])
     if (groupBorderThickness != null) __obj.updateDynamic("groupBorderThickness")(groupBorderThickness.asInstanceOf[js.Any])
     if (groupGap != null) __obj.updateDynamic("groupGap")(groupGap.asInstanceOf[js.Any])
     if (groupPadding != null) __obj.updateDynamic("groupPadding")(groupPadding.asInstanceOf[js.Any])
-    if (groupPath != null) __obj.updateDynamic("groupPath")(groupPath)
+    if (groupPath != null) __obj.updateDynamic("groupPath")(groupPath.asInstanceOf[js.Any])
     if (headerHeight != null) __obj.updateDynamic("headerHeight")(headerHeight.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
     if (headerVisibilityMode != null) __obj.updateDynamic("headerVisibilityMode")(headerVisibilityMode.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    if (labelTemplate != null) __obj.updateDynamic("labelTemplate")(labelTemplate)
+    if (labelTemplate != null) __obj.updateDynamic("labelTemplate")(labelTemplate.asInstanceOf[js.Any])
     if (labelVisibilityMode != null) __obj.updateDynamic("labelVisibilityMode")(labelVisibilityMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels)
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
     if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Level]
   }

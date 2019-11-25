@@ -26,7 +26,7 @@ object Anon_ColumnIndexComponentElement {
     mode: String,
     row: js.Object
   ): Anon_ColumnIndexComponentElement = {
-    val __obj = js.Dynamic.literal(columnIndex = columnIndex, componentElement = componentElement, data = data, index = index, key = key, mode = mode, row = row)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnIndexComponentElement]
   }

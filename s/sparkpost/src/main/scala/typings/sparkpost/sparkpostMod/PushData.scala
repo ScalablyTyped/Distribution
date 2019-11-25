@@ -15,8 +15,8 @@ object PushData {
   @scala.inline
   def apply(apns: js.Any = null, gcm: js.Any = null): PushData = {
     val __obj = js.Dynamic.literal()
-    if (apns != null) __obj.updateDynamic("apns")(apns)
-    if (gcm != null) __obj.updateDynamic("gcm")(gcm)
+    if (apns != null) __obj.updateDynamic("apns")(apns.asInstanceOf[js.Any])
+    if (gcm != null) __obj.updateDynamic("gcm")(gcm.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushData]
   }
 }

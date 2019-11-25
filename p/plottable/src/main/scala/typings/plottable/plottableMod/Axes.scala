@@ -1,6 +1,5 @@
 package typings.plottable.plottableMod
 
-import typings.plottable.buildSrcAxesAxisMod.AxisOrientation
 import typings.plottable.buildSrcAxesTimeAxisMod.TimeAxisOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +21,10 @@ object Axes extends js.Object {
       * @param {AxisOrientation} [orientation="bottom"] Orientation of this Category Axis.
       */
     def this(scale: typings.plottable.buildSrcScalesMod.Category) = this()
-    def this(scale: typings.plottable.buildSrcScalesMod.Category, orientation: AxisOrientation) = this()
+    def this(
+      scale: typings.plottable.buildSrcScalesMod.Category,
+      orientation: typings.plottable.buildSrcAxesAxisMod.AxisOrientation
+    ) = this()
   }
   
   @js.native
@@ -39,7 +41,7 @@ object Axes extends js.Object {
       */
     def this(
       scale: typings.plottable.buildSrcScalesQuantitativeScaleMod.QuantitativeScale[Double],
-      orientation: AxisOrientation
+      orientation: typings.plottable.buildSrcAxesAxisMod.AxisOrientation
     ) = this()
   }
   

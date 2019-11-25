@@ -15,8 +15,8 @@ trait GitGetTreeParams extends js.Object {
 object GitGetTreeParams {
   @scala.inline
   def apply(owner: String, repo: String, tree_sha: String, recursive: `1` = null): GitGetTreeParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, tree_sha = tree_sha)
-    if (recursive != null) __obj.updateDynamic("recursive")(recursive)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tree_sha = tree_sha.asInstanceOf[js.Any])
+    if (recursive != null) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitGetTreeParams]
   }
 }

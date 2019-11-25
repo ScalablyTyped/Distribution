@@ -12,7 +12,7 @@ trait Anon_Op extends _ParseEntry {
 object Anon_Op {
   @scala.inline
   def apply(op: String): Anon_Op = {
-    val __obj = js.Dynamic.literal(op = op)
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Op]
   }

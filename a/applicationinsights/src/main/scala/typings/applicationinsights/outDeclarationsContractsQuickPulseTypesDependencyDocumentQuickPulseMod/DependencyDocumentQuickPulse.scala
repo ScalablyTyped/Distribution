@@ -34,8 +34,8 @@ object DependencyDocumentQuickPulse {
     __type: String,
     Success: js.UndefOr[Boolean] = js.undefined
   ): DependencyDocumentQuickPulse = {
-    val __obj = js.Dynamic.literal(CommandName = CommandName, DependencyTypeName = DependencyTypeName, DocumentType = DocumentType, Duration = Duration, Name = Name, OperationId = OperationId, OperationName = OperationName, Properties = Properties, ResultCode = ResultCode, Target = Target, Version = Version, __type = __type)
-    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success)
+    val __obj = js.Dynamic.literal(CommandName = CommandName.asInstanceOf[js.Any], DependencyTypeName = DependencyTypeName.asInstanceOf[js.Any], DocumentType = DocumentType.asInstanceOf[js.Any], Duration = Duration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OperationId = OperationId.asInstanceOf[js.Any], OperationName = OperationName.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], __type = __type.asInstanceOf[js.Any])
+    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependencyDocumentQuickPulse]
   }
 }

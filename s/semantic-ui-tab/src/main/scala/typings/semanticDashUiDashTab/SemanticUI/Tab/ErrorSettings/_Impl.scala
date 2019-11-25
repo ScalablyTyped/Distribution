@@ -46,7 +46,7 @@ object _Impl {
     recursion: String,
     state: String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(api = api, method = method, missingTab = missingTab, noContent = noContent, path = path, recursion = recursion, state = state)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], missingTab = missingTab.asInstanceOf[js.Any], noContent = noContent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], recursion = recursion.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

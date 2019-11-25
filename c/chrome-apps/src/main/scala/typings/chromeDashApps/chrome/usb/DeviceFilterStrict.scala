@@ -27,7 +27,7 @@ object DeviceFilterStrict {
     interfaceSubclass: Int | Double = null,
     productId: Int | Double = null
   ): DeviceFilterStrict = {
-    val __obj = js.Dynamic.literal(vendorId = vendorId)
+    val __obj = js.Dynamic.literal(vendorId = vendorId.asInstanceOf[js.Any])
     if (interfaceClass != null) __obj.updateDynamic("interfaceClass")(interfaceClass.asInstanceOf[js.Any])
     if (interfaceProtocol != null) __obj.updateDynamic("interfaceProtocol")(interfaceProtocol.asInstanceOf[js.Any])
     if (interfaceSubclass != null) __obj.updateDynamic("interfaceSubclass")(interfaceSubclass.asInstanceOf[js.Any])

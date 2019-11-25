@@ -94,11 +94,11 @@ object IEditorProps {
   ): IEditorProps = {
     val __obj = js.Dynamic.literal()
     if ($blockScrolling != null) __obj.updateDynamic("$blockScrolling")($blockScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined($blockSelectEnabled)) __obj.updateDynamic("$blockSelectEnabled")($blockSelectEnabled)
-    if (!js.isUndefined($enableBlockSelect)) __obj.updateDynamic("$enableBlockSelect")($enableBlockSelect)
-    if (!js.isUndefined($enableMultiselect)) __obj.updateDynamic("$enableMultiselect")($enableMultiselect)
-    if (!js.isUndefined($highlightPending)) __obj.updateDynamic("$highlightPending")($highlightPending)
-    if (!js.isUndefined($highlightTagPending)) __obj.updateDynamic("$highlightTagPending")($highlightTagPending)
+    if (!js.isUndefined($blockSelectEnabled)) __obj.updateDynamic("$blockSelectEnabled")($blockSelectEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined($enableBlockSelect)) __obj.updateDynamic("$enableBlockSelect")($enableBlockSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined($enableMultiselect)) __obj.updateDynamic("$enableMultiselect")($enableMultiselect.asInstanceOf[js.Any])
+    if (!js.isUndefined($highlightPending)) __obj.updateDynamic("$highlightPending")($highlightPending.asInstanceOf[js.Any])
+    if (!js.isUndefined($highlightTagPending)) __obj.updateDynamic("$highlightTagPending")($highlightTagPending.asInstanceOf[js.Any])
     if ($multiselectOnSessionChange != null) __obj.updateDynamic("$multiselectOnSessionChange")(js.Any.fromFunction1($multiselectOnSessionChange))
     if ($onAddRange != null) __obj.updateDynamic("$onAddRange")(js.Any.fromFunction1($onAddRange))
     if ($onChangeAnnotation != null) __obj.updateDynamic("$onChangeAnnotation")(js.Any.fromFunction1($onChangeAnnotation))
@@ -119,7 +119,7 @@ object IEditorProps {
     if ($onSelectionChange != null) __obj.updateDynamic("$onSelectionChange")(js.Any.fromFunction1($onSelectionChange))
     if ($onSingleSelect != null) __obj.updateDynamic("$onSingleSelect")(js.Any.fromFunction1($onSingleSelect))
     if ($onTokenizerUpdate != null) __obj.updateDynamic("$onTokenizerUpdate")(js.Any.fromFunction1($onTokenizerUpdate))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IEditorProps]
   }
 }

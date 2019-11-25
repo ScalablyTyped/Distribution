@@ -11,7 +11,7 @@ trait Anon_Rate extends js.Object {
 object Anon_Rate {
   @scala.inline
   def apply(rate: Double): Anon_Rate = {
-    val __obj = js.Dynamic.literal(rate = rate)
+    val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rate]
   }

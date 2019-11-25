@@ -22,13 +22,12 @@ object Traceparent {
     legacyRootId: String,
     parentId: String,
     spanId: String,
-    toString: () => String,
     traceFlag: String,
     traceId: String,
     updateSpanId: () => Unit,
     version: String
   ): Traceparent = {
-    val __obj = js.Dynamic.literal(getBackCompatRequestId = js.Any.fromFunction0(getBackCompatRequestId), legacyRootId = legacyRootId, parentId = parentId, spanId = spanId, toString = js.Any.fromFunction0(toString), traceFlag = traceFlag, traceId = traceId, updateSpanId = js.Any.fromFunction0(updateSpanId), version = version)
+    val __obj = js.Dynamic.literal(getBackCompatRequestId = js.Any.fromFunction0(getBackCompatRequestId), legacyRootId = legacyRootId.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], spanId = spanId.asInstanceOf[js.Any], traceFlag = traceFlag.asInstanceOf[js.Any], traceId = traceId.asInstanceOf[js.Any], updateSpanId = js.Any.fromFunction0(updateSpanId), version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Traceparent]
   }

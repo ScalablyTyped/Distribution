@@ -65,7 +65,7 @@ object VisualVariablesMixinProperties {
   @scala.inline
   def apply(visualVariables: js.Array[VisualVariableProperties] = null): VisualVariablesMixinProperties = {
     val __obj = js.Dynamic.literal()
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualVariablesMixinProperties]
   }
 }

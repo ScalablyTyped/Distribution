@@ -22,7 +22,7 @@ trait Behavior extends js.Object {
 object Behavior {
   @scala.inline
   def apply(category: String, name: String, percentage: Double, trait_id: String): Behavior = {
-    val __obj = js.Dynamic.literal(category = category, name = name, percentage = percentage, trait_id = trait_id)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any], trait_id = trait_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Behavior]
   }

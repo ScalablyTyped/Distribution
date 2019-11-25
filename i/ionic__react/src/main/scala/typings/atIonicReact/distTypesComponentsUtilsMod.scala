@@ -1,6 +1,6 @@
 package typings.atIonicReact
 
-import typings.atIonicCore.distTypesInterfaceMod.Config
+import typings.atIonicCore.atIonicCoreMod.Config
 import typings.atIonicReact.atIonicReactStrings.android
 import typings.atIonicReact.atIonicReactStrings.capacitor
 import typings.atIonicReact.atIonicReactStrings.cordova

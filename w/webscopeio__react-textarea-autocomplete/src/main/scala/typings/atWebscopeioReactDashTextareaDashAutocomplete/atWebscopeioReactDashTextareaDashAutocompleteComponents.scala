@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object atWebscopeioReactDashTextareaDashAutocompleteComponents extends atWebscopeioReactDashTextareaDashAutocompleteProps {
   @scala.inline
-  def ReactDashTextareaDashAutocomplete[TItem /* <: String | js.Object */]: ComponentType[ReactDashTextareaDashAutocompleteProps[TItem]] = js.constructorOf[typings.atWebscopeioReactDashTextareaDashAutocomplete.atWebscopeioReactDashTextareaDashAutocompleteMod.default[TItem]].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashTextareaDashAutocompleteProps[TItem]]]
+  def ReactDashTextareaDashAutocomplete: ComponentType[ReactDashTextareaDashAutocompleteProps[String | js.Object]] = js.constructorOf[typings.atWebscopeioReactDashTextareaDashAutocomplete.atWebscopeioReactDashTextareaDashAutocompleteMod.default[java.lang.String | js.Object]].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashTextareaDashAutocompleteProps[java.lang.String | js.Object]]]
 }
 

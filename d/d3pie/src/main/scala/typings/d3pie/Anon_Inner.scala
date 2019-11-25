@@ -15,7 +15,7 @@ trait Anon_Inner extends js.Object {
 object Anon_Inner {
   @scala.inline
   def apply(label: String, section: outer | inner, value: Double): Anon_Inner = {
-    val __obj = js.Dynamic.literal(label = label, section = section.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Inner]
   }

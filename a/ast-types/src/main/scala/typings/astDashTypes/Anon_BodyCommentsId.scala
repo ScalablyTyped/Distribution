@@ -38,12 +38,12 @@ object Anon_BodyCommentsId {
     superTypeParameters: TypeParameterInstantiationKind | TSTypeParameterInstantiationKind = null,
     typeParameters: TypeParameterDeclarationKind | TSTypeParameterDeclarationKind = null
   ): Anon_BodyCommentsId = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (implements != null) __obj.updateDynamic("implements")(implements)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (superClass != null) __obj.updateDynamic("superClass")(superClass)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (superClass != null) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
     if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters.asInstanceOf[js.Any])
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyCommentsId]

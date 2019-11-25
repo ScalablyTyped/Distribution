@@ -24,7 +24,7 @@ object Anon_ContainerTab {
     textStyle: RegisteredStyle[TextStyle],
     underline: RegisteredStyle[ViewStyle]
   ): Anon_ContainerTab = {
-    val __obj = js.Dynamic.literal(container = container, tab = tab, tabs = tabs, textStyle = textStyle, underline = underline)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], textStyle = textStyle.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContainerTab]
   }

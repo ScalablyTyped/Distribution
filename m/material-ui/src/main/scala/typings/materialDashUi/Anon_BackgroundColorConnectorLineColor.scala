@@ -28,14 +28,14 @@ object Anon_BackgroundColorConnectorLineColor {
     textColor: String = null
   ): Anon_BackgroundColorConnectorLineColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (connectorLineColor != null) __obj.updateDynamic("connectorLineColor")(connectorLineColor)
-    if (disabledTextColor != null) __obj.updateDynamic("disabledTextColor")(disabledTextColor)
-    if (hoverBackgroundColor != null) __obj.updateDynamic("hoverBackgroundColor")(hoverBackgroundColor)
-    if (hoveredIconColor != null) __obj.updateDynamic("hoveredIconColor")(hoveredIconColor)
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
-    if (inactiveIconColor != null) __obj.updateDynamic("inactiveIconColor")(inactiveIconColor)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (connectorLineColor != null) __obj.updateDynamic("connectorLineColor")(connectorLineColor.asInstanceOf[js.Any])
+    if (disabledTextColor != null) __obj.updateDynamic("disabledTextColor")(disabledTextColor.asInstanceOf[js.Any])
+    if (hoverBackgroundColor != null) __obj.updateDynamic("hoverBackgroundColor")(hoverBackgroundColor.asInstanceOf[js.Any])
+    if (hoveredIconColor != null) __obj.updateDynamic("hoveredIconColor")(hoveredIconColor.asInstanceOf[js.Any])
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
+    if (inactiveIconColor != null) __obj.updateDynamic("inactiveIconColor")(inactiveIconColor.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorConnectorLineColor]
   }
 }

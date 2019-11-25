@@ -14,8 +14,8 @@ object Anon_DropTargetSession {
   @scala.inline
   def apply(dropTarget: js.UndefOr[Boolean] = js.undefined, session: ClientSession = null): Anon_DropTargetSession = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dropTarget)) __obj.updateDynamic("dropTarget")(dropTarget)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (!js.isUndefined(dropTarget)) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DropTargetSession]
   }
 }

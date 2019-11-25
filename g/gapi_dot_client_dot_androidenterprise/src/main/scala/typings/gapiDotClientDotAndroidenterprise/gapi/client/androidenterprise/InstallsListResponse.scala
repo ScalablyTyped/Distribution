@@ -15,8 +15,8 @@ object InstallsListResponse {
   @scala.inline
   def apply(install: js.Array[Install] = null, kind: String = null): InstallsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (install != null) __obj.updateDynamic("install")(install)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (install != null) __obj.updateDynamic("install")(install.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallsListResponse]
   }
 }

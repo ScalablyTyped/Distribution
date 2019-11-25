@@ -18,8 +18,8 @@ object LineSerieData {
     id: String | Double,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): LineSerieData = {
-    val __obj = js.Dynamic.literal(data = data, id = id.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[LineSerieData]
   }
 }

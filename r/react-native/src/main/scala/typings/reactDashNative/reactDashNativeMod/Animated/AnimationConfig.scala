@@ -16,8 +16,8 @@ object AnimationConfig {
     useNativeDriver: js.UndefOr[Boolean] = js.undefined
   ): AnimationConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction)
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver)
+    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationConfig]
   }
 }

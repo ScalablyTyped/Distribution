@@ -23,11 +23,11 @@ object Check {
     matches: String = null,
     options: js.Any = null
   ): Check = {
-    val __obj = js.Dynamic.literal(evaluate = evaluate.asInstanceOf[js.Any], id = id)
+    val __obj = js.Dynamic.literal(evaluate = evaluate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (matches != null) __obj.updateDynamic("matches")(matches)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Check]
   }
 }

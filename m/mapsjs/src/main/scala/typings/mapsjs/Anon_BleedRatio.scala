@@ -23,10 +23,10 @@ object Anon_BleedRatio {
   ): Anon_BleedRatio = {
     val __obj = js.Dynamic.literal()
     if (bleedRatio != null) __obj.updateDynamic("bleedRatio")(bleedRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipToRenderBounds)) __obj.updateDynamic("clipToRenderBounds")(clipToRenderBounds)
-    if (fieldNames != null) __obj.updateDynamic("fieldNames")(fieldNames)
-    if (!js.isUndefined(simplifyEnabled)) __obj.updateDynamic("simplifyEnabled")(simplifyEnabled)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(clipToRenderBounds)) __obj.updateDynamic("clipToRenderBounds")(clipToRenderBounds.asInstanceOf[js.Any])
+    if (fieldNames != null) __obj.updateDynamic("fieldNames")(fieldNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(simplifyEnabled)) __obj.updateDynamic("simplifyEnabled")(simplifyEnabled.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BleedRatio]
   }
 }

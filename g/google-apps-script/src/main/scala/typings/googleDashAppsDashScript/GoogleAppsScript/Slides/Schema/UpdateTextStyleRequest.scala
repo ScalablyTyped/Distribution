@@ -22,11 +22,11 @@ object UpdateTextStyleRequest {
     textRange: Range = null
   ): UpdateTextStyleRequest = {
     val __obj = js.Dynamic.literal()
-    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (textRange != null) __obj.updateDynamic("textRange")(textRange)
+    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (textRange != null) __obj.updateDynamic("textRange")(textRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTextStyleRequest]
   }
 }

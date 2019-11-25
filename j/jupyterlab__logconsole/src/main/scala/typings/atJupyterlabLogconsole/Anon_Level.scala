@@ -19,7 +19,7 @@ trait Anon_Level extends js.Object {
 object Anon_Level {
   @scala.inline
   def apply(level: FullLogLevel, timestamp: Double): Anon_Level = {
-    val __obj = js.Dynamic.literal(level = level, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Level]
   }

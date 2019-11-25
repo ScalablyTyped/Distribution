@@ -30,15 +30,15 @@ object CommentReply {
     verb: String = null
   ): CommentReply = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (modifiedDate != null) __obj.updateDynamic("modifiedDate")(modifiedDate)
-    if (replyId != null) __obj.updateDynamic("replyId")(replyId)
-    if (verb != null) __obj.updateDynamic("verb")(verb)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (modifiedDate != null) __obj.updateDynamic("modifiedDate")(modifiedDate.asInstanceOf[js.Any])
+    if (replyId != null) __obj.updateDynamic("replyId")(replyId.asInstanceOf[js.Any])
+    if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentReply]
   }
 }

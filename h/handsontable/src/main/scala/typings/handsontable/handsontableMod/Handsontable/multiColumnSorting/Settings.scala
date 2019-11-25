@@ -35,10 +35,10 @@ object Settings {
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (compareFunctionFactory != null) __obj.updateDynamic("compareFunctionFactory")(js.Any.fromFunction2(compareFunctionFactory))
-    if (!js.isUndefined(headerAction)) __obj.updateDynamic("headerAction")(headerAction)
-    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator)
+    if (!js.isUndefined(headerAction)) __obj.updateDynamic("headerAction")(headerAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
     if (initialConfig != null) __obj.updateDynamic("initialConfig")(initialConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortEmptyCells)) __obj.updateDynamic("sortEmptyCells")(sortEmptyCells)
+    if (!js.isUndefined(sortEmptyCells)) __obj.updateDynamic("sortEmptyCells")(sortEmptyCells.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

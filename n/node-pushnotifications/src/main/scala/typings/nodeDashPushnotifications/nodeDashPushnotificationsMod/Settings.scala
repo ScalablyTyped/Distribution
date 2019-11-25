@@ -39,13 +39,13 @@ object Settings {
     wns: Anon_AccessToken = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (adm != null) __obj.updateDynamic("adm")(adm)
-    if (apn != null) __obj.updateDynamic("apn")(apn)
-    if (gcm != null) __obj.updateDynamic("gcm")(gcm)
-    if (!js.isUndefined(isAlwaysUseFCM)) __obj.updateDynamic("isAlwaysUseFCM")(isAlwaysUseFCM)
-    if (mpns != null) __obj.updateDynamic("mpns")(mpns)
-    if (web != null) __obj.updateDynamic("web")(web)
-    if (wns != null) __obj.updateDynamic("wns")(wns)
+    if (adm != null) __obj.updateDynamic("adm")(adm.asInstanceOf[js.Any])
+    if (apn != null) __obj.updateDynamic("apn")(apn.asInstanceOf[js.Any])
+    if (gcm != null) __obj.updateDynamic("gcm")(gcm.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAlwaysUseFCM)) __obj.updateDynamic("isAlwaysUseFCM")(isAlwaysUseFCM.asInstanceOf[js.Any])
+    if (mpns != null) __obj.updateDynamic("mpns")(mpns.asInstanceOf[js.Any])
+    if (web != null) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
+    if (wns != null) __obj.updateDynamic("wns")(wns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

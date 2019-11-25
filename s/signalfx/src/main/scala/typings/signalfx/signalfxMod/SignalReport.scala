@@ -18,9 +18,9 @@ object SignalReport {
     gauges: js.Array[SignalMetric] = null
   ): SignalReport = {
     val __obj = js.Dynamic.literal()
-    if (counters != null) __obj.updateDynamic("counters")(counters)
-    if (cumulative_counters != null) __obj.updateDynamic("cumulative_counters")(cumulative_counters)
-    if (gauges != null) __obj.updateDynamic("gauges")(gauges)
+    if (counters != null) __obj.updateDynamic("counters")(counters.asInstanceOf[js.Any])
+    if (cumulative_counters != null) __obj.updateDynamic("cumulative_counters")(cumulative_counters.asInstanceOf[js.Any])
+    if (gauges != null) __obj.updateDynamic("gauges")(gauges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalReport]
   }
 }

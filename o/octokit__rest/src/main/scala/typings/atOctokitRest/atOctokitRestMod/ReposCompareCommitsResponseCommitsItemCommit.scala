@@ -25,7 +25,7 @@ object ReposCompareCommitsResponseCommitsItemCommit {
     url: String,
     verification: ReposCompareCommitsResponseCommitsItemCommitVerification
   ): ReposCompareCommitsResponseCommitsItemCommit = {
-    val __obj = js.Dynamic.literal(author = author, comment_count = comment_count, committer = committer, message = message, tree = tree, url = url, verification = verification)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCompareCommitsResponseCommitsItemCommit]
   }

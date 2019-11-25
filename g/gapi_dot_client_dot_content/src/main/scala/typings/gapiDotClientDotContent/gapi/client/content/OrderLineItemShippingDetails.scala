@@ -21,9 +21,9 @@ object OrderLineItemShippingDetails {
     shipByDate: String = null
   ): OrderLineItemShippingDetails = {
     val __obj = js.Dynamic.literal()
-    if (deliverByDate != null) __obj.updateDynamic("deliverByDate")(deliverByDate)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (shipByDate != null) __obj.updateDynamic("shipByDate")(shipByDate)
+    if (deliverByDate != null) __obj.updateDynamic("deliverByDate")(deliverByDate.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (shipByDate != null) __obj.updateDynamic("shipByDate")(shipByDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderLineItemShippingDetails]
   }
 }

@@ -15,7 +15,7 @@ object WhitelistValidatorConfig {
     whitelist: js.Array[String],
     validateIf: (js.Function1[/* context */ ValidatorContext, Boolean]) | Boolean = null
   ): WhitelistValidatorConfig = {
-    val __obj = js.Dynamic.literal(message = message, whitelist = whitelist)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], whitelist = whitelist.asInstanceOf[js.Any])
     if (validateIf != null) __obj.updateDynamic("validateIf")(validateIf.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhitelistValidatorConfig]
   }

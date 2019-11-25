@@ -17,9 +17,9 @@ object IBlockCipherCfg {
   @scala.inline
   def apply(iv: WordArray = null, mode: IBlockCipherModeImpl = null, padding: IPaddingImpl = null): IBlockCipherCfg = {
     val __obj = js.Dynamic.literal()
-    if (iv != null) __obj.updateDynamic("iv")(iv)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBlockCipherCfg]
   }
 }

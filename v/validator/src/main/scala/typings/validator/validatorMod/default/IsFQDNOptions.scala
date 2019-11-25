@@ -27,9 +27,9 @@ object IsFQDNOptions {
     require_tld: js.UndefOr[Boolean] = js.undefined
   ): IsFQDNOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_trailing_dot)) __obj.updateDynamic("allow_trailing_dot")(allow_trailing_dot)
-    if (!js.isUndefined(allow_underscores)) __obj.updateDynamic("allow_underscores")(allow_underscores)
-    if (!js.isUndefined(require_tld)) __obj.updateDynamic("require_tld")(require_tld)
+    if (!js.isUndefined(allow_trailing_dot)) __obj.updateDynamic("allow_trailing_dot")(allow_trailing_dot.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_underscores)) __obj.updateDynamic("allow_underscores")(allow_underscores.asInstanceOf[js.Any])
+    if (!js.isUndefined(require_tld)) __obj.updateDynamic("require_tld")(require_tld.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsFQDNOptions]
   }
 }

@@ -24,10 +24,10 @@ object Anon_HasErrorIsLoadingPastDelay {
     ssr: js.UndefOr[Boolean] = js.undefined
   ): Anon_HasErrorIsLoadingPastDelay[P] = {
     val __obj = js.Dynamic.literal()
-    if (loadableGenerated != null) __obj.updateDynamic("loadableGenerated")(loadableGenerated)
+    if (loadableGenerated != null) __obj.updateDynamic("loadableGenerated")(loadableGenerated.asInstanceOf[js.Any])
     if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(js.Any.fromFunction1(loading))
-    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr)
+    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HasErrorIsLoadingPastDelay[P]]
   }
 }

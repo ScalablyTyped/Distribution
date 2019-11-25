@@ -26,8 +26,8 @@ object IUsageRecord {
     subscription_item: String,
     timestamp: Double
   ): IUsageRecord = {
-    val __obj = js.Dynamic.literal(id = id, livemode = livemode, quantity = quantity, subscription_item = subscription_item, timestamp = timestamp)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], subscription_item = subscription_item.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUsageRecord]
   }
 }

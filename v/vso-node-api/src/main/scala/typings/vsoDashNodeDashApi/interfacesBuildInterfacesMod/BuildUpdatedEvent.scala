@@ -11,7 +11,7 @@ trait BuildUpdatedEvent extends RealtimeBuildEvent {
 object BuildUpdatedEvent {
   @scala.inline
   def apply(build: Build, buildId: Double): BuildUpdatedEvent = {
-    val __obj = js.Dynamic.literal(build = build, buildId = buildId)
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildUpdatedEvent]
   }

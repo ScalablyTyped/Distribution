@@ -21,7 +21,7 @@ object INDRegistrationCompletedEventArgs {
     transmitterCertificateAccepted: Boolean,
     transmitterProperties: INDTransmitterProperties
   ): INDRegistrationCompletedEventArgs = {
-    val __obj = js.Dynamic.literal(responseCustomData = responseCustomData, transmitterCertificateAccepted = transmitterCertificateAccepted, transmitterProperties = transmitterProperties)
+    val __obj = js.Dynamic.literal(responseCustomData = responseCustomData.asInstanceOf[js.Any], transmitterCertificateAccepted = transmitterCertificateAccepted.asInstanceOf[js.Any], transmitterProperties = transmitterProperties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INDRegistrationCompletedEventArgs]
   }

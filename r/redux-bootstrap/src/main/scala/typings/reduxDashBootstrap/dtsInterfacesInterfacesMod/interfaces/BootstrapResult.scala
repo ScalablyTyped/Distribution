@@ -19,7 +19,7 @@ trait BootstrapResult extends js.Object {
 object BootstrapResult {
   @scala.inline
   def apply(history: History[LocationState], output: js.Any, root: Element, store: Store[_, AnyAction]): BootstrapResult = {
-    val __obj = js.Dynamic.literal(history = history, output = output, root = root, store = store)
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BootstrapResult]
   }

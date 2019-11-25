@@ -81,9 +81,9 @@ object ProductVariant {
     attrs: js.Any = null,
     onlineStoreUrl: String = null
   ): ProductVariant = {
-    val __obj = js.Dynamic.literal(available = available, checkoutUrl = js.Any.fromFunction1(checkoutUrl), compareAtPrice = compareAtPrice, formattedPrice = formattedPrice, grams = grams, id = id.asInstanceOf[js.Any], image = image, imageVariant = imageVariant, optionValues = optionValues, price = price, productId = productId.asInstanceOf[js.Any], productTitle = productTitle, title = title)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], checkoutUrl = js.Any.fromFunction1(checkoutUrl), compareAtPrice = compareAtPrice.asInstanceOf[js.Any], formattedPrice = formattedPrice.asInstanceOf[js.Any], grams = grams.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], imageVariant = imageVariant.asInstanceOf[js.Any], optionValues = optionValues.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], productTitle = productTitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductVariant]
   }
 }

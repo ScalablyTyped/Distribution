@@ -41,9 +41,9 @@ object RosterItemChange {
     `type`: RosterItemEvent,
     resource: String = null
   ): RosterItemChange = {
-    val __obj = js.Dynamic.literal(displayName = displayName, groups = groups, id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[RosterItemChange]
   }
 }

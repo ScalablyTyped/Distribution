@@ -22,10 +22,6 @@ trait CalendarList extends js.Object {
   var nextSyncToken: js.UndefOr[String] = js.undefined
 }
 
-@JSGlobal("gapi.client.calendar.calendarList")
-@js.native
-class calendarList () extends js.Object
-
 object CalendarList {
   @scala.inline
   def apply(
@@ -35,12 +31,16 @@ object CalendarList {
     nextPageToken: String = null,
     nextSyncToken: String = null
   ): CalendarList = {
-    val __obj = js.Dynamic.literal(etag = etag, items = items, kind = kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken)
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarList]
   }
 }
+
+@JSGlobal("gapi.client.calendar.calendarList")
+@js.native
+class calendarList () extends js.Object
 
 /* static members */
 @JSGlobal("gapi.client.calendar.calendarList")

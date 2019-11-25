@@ -43,7 +43,7 @@ object ExtensionPanel {
     onShown: WebExtEvent[js.Function1[/* window */ js.Object, Unit]],
     createStatusBarButton: (/* iconPath */ String, /* tooltipText */ String, /* disabled */ Boolean) => Button = null
   ): ExtensionPanel = {
-    val __obj = js.Dynamic.literal(onHidden = onHidden, onSearch = onSearch, onShown = onShown)
+    val __obj = js.Dynamic.literal(onHidden = onHidden.asInstanceOf[js.Any], onSearch = onSearch.asInstanceOf[js.Any], onShown = onShown.asInstanceOf[js.Any])
     if (createStatusBarButton != null) __obj.updateDynamic("createStatusBarButton")(js.Any.fromFunction3(createStatusBarButton))
     __obj.asInstanceOf[ExtensionPanel]
   }

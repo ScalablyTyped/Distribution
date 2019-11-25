@@ -12,7 +12,7 @@ trait ReposGetParticipationStatsResponse extends js.Object {
 object ReposGetParticipationStatsResponse {
   @scala.inline
   def apply(all: js.Array[Double], owner: js.Array[Double]): ReposGetParticipationStatsResponse = {
-    val __obj = js.Dynamic.literal(all = all, owner = owner)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetParticipationStatsResponse]
   }

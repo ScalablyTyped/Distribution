@@ -23,9 +23,9 @@ object ReadfileParams {
     fail: /* res */ Anon_ErrMsg => Unit = null,
     success: /* res */ Anon_DataArrayBuffer => Unit = null
   ): ReadfileParams = {
-    val __obj = js.Dynamic.literal(filePath = filePath)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ReadfileParams]

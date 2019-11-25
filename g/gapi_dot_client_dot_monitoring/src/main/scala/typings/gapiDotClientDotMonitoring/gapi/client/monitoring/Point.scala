@@ -20,8 +20,8 @@ object Point {
   @scala.inline
   def apply(interval: TimeInterval = null, value: TypedValue = null): Point = {
     val __obj = js.Dynamic.literal()
-    if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

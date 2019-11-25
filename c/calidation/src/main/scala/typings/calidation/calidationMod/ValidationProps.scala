@@ -20,9 +20,9 @@ object ValidationProps {
     initialValues: Dictionary[_] = null,
     transforms: Transforms = null
   ): ValidationProps = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), config = config)
-    if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues)
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), config = config.asInstanceOf[js.Any])
+    if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues.asInstanceOf[js.Any])
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationProps]
   }
 }

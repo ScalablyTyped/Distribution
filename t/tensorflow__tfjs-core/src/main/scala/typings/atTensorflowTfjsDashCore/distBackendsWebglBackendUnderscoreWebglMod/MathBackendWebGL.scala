@@ -110,7 +110,7 @@ class MathBackendWebGL () extends KernelBackend {
   def getTextureManager(): TextureManager = js.native
   def reshape[R /* <: Rank */](
     x: Tensor[Rank],
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
   def runWebGLProgram(program: GPGPUProgram, inputs: js.Array[TensorInfo], outputDtype: DataType): TensorInfo = js.native
   def runWebGLProgram(

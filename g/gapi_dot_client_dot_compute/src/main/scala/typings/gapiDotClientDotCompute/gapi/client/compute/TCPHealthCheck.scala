@@ -34,10 +34,10 @@ object TCPHealthCheck {
   ): TCPHealthCheck = {
     val __obj = js.Dynamic.literal()
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (portName != null) __obj.updateDynamic("portName")(portName)
-    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
+    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[TCPHealthCheck]
   }
 }

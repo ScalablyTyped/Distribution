@@ -53,7 +53,7 @@ object TableOptions {
     style: Partial[Anon_Border],
     truncate: String
   ): TableOptions = {
-    val __obj = js.Dynamic.literal(chars = chars, colAligns = colAligns, colWidths = colWidths, colors = colors, head = head, style = style, truncate = truncate)
+    val __obj = js.Dynamic.literal(chars = chars.asInstanceOf[js.Any], colAligns = colAligns.asInstanceOf[js.Any], colWidths = colWidths.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TableOptions]
   }

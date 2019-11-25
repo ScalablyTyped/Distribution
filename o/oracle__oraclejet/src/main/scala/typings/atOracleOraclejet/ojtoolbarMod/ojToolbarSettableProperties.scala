@@ -16,7 +16,7 @@ object ojToolbarSettableProperties {
   @scala.inline
   def apply(chroming: full | half | outlined, translations: js.Object = null): ojToolbarSettableProperties = {
     val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations)
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojToolbarSettableProperties]
   }
 }

@@ -69,15 +69,15 @@ object GetDifferencesInput {
     beforeCommitSpecifier: String = null,
     beforePath: String = null
   ): GetDifferencesInput = {
-    val __obj = js.Dynamic.literal(afterCommitSpecifier = afterCommitSpecifier, repositoryName = repositoryName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(afterCommitSpecifier = afterCommitSpecifier.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (afterPath != null) __obj.updateDynamic("afterPath")(afterPath)
-    if (beforeCommitSpecifier != null) __obj.updateDynamic("beforeCommitSpecifier")(beforeCommitSpecifier)
-    if (beforePath != null) __obj.updateDynamic("beforePath")(beforePath)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (afterPath != null) __obj.updateDynamic("afterPath")(afterPath.asInstanceOf[js.Any])
+    if (beforeCommitSpecifier != null) __obj.updateDynamic("beforeCommitSpecifier")(beforeCommitSpecifier.asInstanceOf[js.Any])
+    if (beforePath != null) __obj.updateDynamic("beforePath")(beforePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDifferencesInput]
   }
 }

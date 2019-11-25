@@ -23,8 +23,8 @@ object Anon_Declineon {
   @scala.inline
   def apply(decline_on: Anon_Avsfailure = null, statement_descriptor_prefix: String = null): Anon_Declineon = {
     val __obj = js.Dynamic.literal()
-    if (decline_on != null) __obj.updateDynamic("decline_on")(decline_on)
-    if (statement_descriptor_prefix != null) __obj.updateDynamic("statement_descriptor_prefix")(statement_descriptor_prefix)
+    if (decline_on != null) __obj.updateDynamic("decline_on")(decline_on.asInstanceOf[js.Any])
+    if (statement_descriptor_prefix != null) __obj.updateDynamic("statement_descriptor_prefix")(statement_descriptor_prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Declineon]
   }
 }

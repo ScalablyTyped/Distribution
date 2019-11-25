@@ -18,9 +18,9 @@ object GooglePrivacyDlpV2beta1SummaryResult {
   @scala.inline
   def apply(code: String = null, count: String = null, details: String = null): GooglePrivacyDlpV2beta1SummaryResult = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (details != null) __obj.updateDynamic("details")(details)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1SummaryResult]
   }
 }

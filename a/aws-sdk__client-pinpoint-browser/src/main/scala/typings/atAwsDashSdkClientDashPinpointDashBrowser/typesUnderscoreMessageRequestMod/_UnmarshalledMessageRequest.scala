@@ -41,11 +41,11 @@ object _UnmarshalledMessageRequest {
     TraceId: String = null
   ): _UnmarshalledMessageRequest = {
     val __obj = js.Dynamic.literal()
-    if (Addresses != null) __obj.updateDynamic("Addresses")(Addresses)
-    if (Context != null) __obj.updateDynamic("Context")(Context)
-    if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints)
-    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration)
-    if (TraceId != null) __obj.updateDynamic("TraceId")(TraceId)
+    if (Addresses != null) __obj.updateDynamic("Addresses")(Addresses.asInstanceOf[js.Any])
+    if (Context != null) __obj.updateDynamic("Context")(Context.asInstanceOf[js.Any])
+    if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints.asInstanceOf[js.Any])
+    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
+    if (TraceId != null) __obj.updateDynamic("TraceId")(TraceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledMessageRequest]
   }
 }

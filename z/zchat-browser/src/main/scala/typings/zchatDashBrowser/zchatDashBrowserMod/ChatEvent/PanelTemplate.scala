@@ -14,8 +14,8 @@ trait PanelTemplate extends js.Object {
 object PanelTemplate {
   @scala.inline
   def apply(buttons: js.Array[Button], panel: Panel, `type`: PANEL_TEMPLATE): PanelTemplate = {
-    val __obj = js.Dynamic.literal(buttons = buttons, panel = panel)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelTemplate]
   }
 }

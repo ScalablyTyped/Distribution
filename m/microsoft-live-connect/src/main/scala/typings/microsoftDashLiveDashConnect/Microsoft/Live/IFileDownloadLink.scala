@@ -17,7 +17,7 @@ trait IFileDownloadLink extends js.Object {
 object IFileDownloadLink {
   @scala.inline
   def apply(location: String): IFileDownloadLink = {
-    val __obj = js.Dynamic.literal(location = location)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFileDownloadLink]
   }

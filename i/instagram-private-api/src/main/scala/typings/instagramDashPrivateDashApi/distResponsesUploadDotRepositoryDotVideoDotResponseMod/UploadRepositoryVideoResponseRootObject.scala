@@ -12,7 +12,7 @@ trait UploadRepositoryVideoResponseRootObject extends js.Object {
 object UploadRepositoryVideoResponseRootObject {
   @scala.inline
   def apply(status: String, xsharing_nonces: UploadRepositoryVideoResponseXsharing_nonces): UploadRepositoryVideoResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status, xsharing_nonces = xsharing_nonces)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], xsharing_nonces = xsharing_nonces.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UploadRepositoryVideoResponseRootObject]
   }

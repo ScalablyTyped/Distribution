@@ -12,8 +12,8 @@ trait SessionConfirmedEvent extends js.Object {
 object SessionConfirmedEvent {
   @scala.inline
   def apply(originator: String, response: IncomingResponse = null): SessionConfirmedEvent = {
-    val __obj = js.Dynamic.literal(originator = originator)
-    if (response != null) __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionConfirmedEvent]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_RelayRelayPaginationProp extends js.Object {
 object Anon_RelayRelayPaginationProp {
   @scala.inline
   def apply(relay: RelayPaginationProp): Anon_RelayRelayPaginationProp = {
-    val __obj = js.Dynamic.literal(relay = relay)
+    val __obj = js.Dynamic.literal(relay = relay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RelayRelayPaginationProp]
   }

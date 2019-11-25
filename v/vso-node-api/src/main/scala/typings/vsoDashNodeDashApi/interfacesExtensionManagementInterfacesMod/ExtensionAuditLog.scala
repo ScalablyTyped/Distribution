@@ -22,7 +22,7 @@ trait ExtensionAuditLog extends js.Object {
 object ExtensionAuditLog {
   @scala.inline
   def apply(entries: js.Array[ExtensionAuditLogEntry], extensionName: String, publisherName: String): ExtensionAuditLog = {
-    val __obj = js.Dynamic.literal(entries = entries, extensionName = extensionName, publisherName = publisherName)
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], extensionName = extensionName.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionAuditLog]
   }

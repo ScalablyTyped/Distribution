@@ -20,10 +20,10 @@ object Anon_Binary {
     mask: js.UndefOr[Boolean] = js.undefined
   ): Anon_Binary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
-    if (!js.isUndefined(fin)) __obj.updateDynamic("fin")(fin)
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (!js.isUndefined(fin)) __obj.updateDynamic("fin")(fin.asInstanceOf[js.Any])
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Binary]
   }
 }

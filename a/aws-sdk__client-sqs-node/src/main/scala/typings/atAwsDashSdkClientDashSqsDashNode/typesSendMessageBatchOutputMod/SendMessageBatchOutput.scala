@@ -31,7 +31,7 @@ object SendMessageBatchOutput {
     Failed: js.Array[_UnmarshalledBatchResultErrorEntry],
     Successful: js.Array[_UnmarshalledSendMessageBatchResultEntry]
   ): SendMessageBatchOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, Failed = Failed, Successful = Successful)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Failed = Failed.asInstanceOf[js.Any], Successful = Successful.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SendMessageBatchOutput]
   }

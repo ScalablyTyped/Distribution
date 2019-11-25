@@ -17,7 +17,7 @@ object UpdateMasterRequest {
   @scala.inline
   def apply(masterVersion: String = null): UpdateMasterRequest = {
     val __obj = js.Dynamic.literal()
-    if (masterVersion != null) __obj.updateDynamic("masterVersion")(masterVersion)
+    if (masterVersion != null) __obj.updateDynamic("masterVersion")(masterVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMasterRequest]
   }
 }

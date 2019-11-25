@@ -29,12 +29,12 @@ object BootstrapToggleOptions {
   ): BootstrapToggleOptions = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (off != null) __obj.updateDynamic("off")(off)
-    if (offstyle != null) __obj.updateDynamic("offstyle")(offstyle)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (onstyle != null) __obj.updateDynamic("onstyle")(onstyle)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (off != null) __obj.updateDynamic("off")(off.asInstanceOf[js.Any])
+    if (offstyle != null) __obj.updateDynamic("offstyle")(offstyle.asInstanceOf[js.Any])
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    if (onstyle != null) __obj.updateDynamic("onstyle")(onstyle.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapToggleOptions]
   }

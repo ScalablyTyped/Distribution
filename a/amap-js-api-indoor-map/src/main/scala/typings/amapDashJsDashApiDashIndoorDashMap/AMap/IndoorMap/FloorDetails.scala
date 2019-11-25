@@ -22,7 +22,7 @@ trait FloorDetails extends js.Object {
 object FloorDetails {
   @scala.inline
   def apply(floor_indexs: js.Array[Double], floor_names: js.Array[String], floor_nonas: js.Array[String]): FloorDetails = {
-    val __obj = js.Dynamic.literal(floor_indexs = floor_indexs, floor_names = floor_names, floor_nonas = floor_nonas)
+    val __obj = js.Dynamic.literal(floor_indexs = floor_indexs.asInstanceOf[js.Any], floor_names = floor_names.asInstanceOf[js.Any], floor_nonas = floor_nonas.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FloorDetails]
   }

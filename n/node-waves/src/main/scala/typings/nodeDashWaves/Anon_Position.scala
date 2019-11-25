@@ -14,7 +14,7 @@ object Anon_Position {
   @scala.inline
   def apply(position: Anon_X = null, wait: Int | Double = null): Anon_Position = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Position]
   }

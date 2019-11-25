@@ -13,7 +13,7 @@ trait CacheEntry[T] extends js.Object {
 object CacheEntry {
   @scala.inline
   def apply[T](expiry: Double, value: Anon_0[T]): CacheEntry[T] = {
-    val __obj = js.Dynamic.literal(expiry = expiry, value = value)
+    val __obj = js.Dynamic.literal(expiry = expiry.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CacheEntry[T]]
   }

@@ -19,7 +19,7 @@ object BlogListOptions {
   @scala.inline
   def apply(handle: String = null, since_id: Int | Double = null): BlogListOptions = {
     val __obj = js.Dynamic.literal()
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     if (since_id != null) __obj.updateDynamic("since_id")(since_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlogListOptions]
   }

@@ -12,7 +12,7 @@ object Anon_TapHighlightColor {
   @scala.inline
   def apply(tapHighlightColor: String = null): Anon_TapHighlightColor = {
     val __obj = js.Dynamic.literal()
-    if (tapHighlightColor != null) __obj.updateDynamic("tapHighlightColor")(tapHighlightColor)
+    if (tapHighlightColor != null) __obj.updateDynamic("tapHighlightColor")(tapHighlightColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TapHighlightColor]
   }
 }

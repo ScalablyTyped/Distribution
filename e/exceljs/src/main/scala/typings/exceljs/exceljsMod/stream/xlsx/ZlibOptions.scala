@@ -43,7 +43,7 @@ object ZlibOptions {
     strategy: Double,
     windowBits: Double
   ): ZlibOptions = {
-    val __obj = js.Dynamic.literal(chunkSize = chunkSize, dictionary = dictionary.asInstanceOf[js.Any], finishFlush = finishFlush, flush = flush, level = level, memLevel = memLevel, strategy = strategy, windowBits = windowBits)
+    val __obj = js.Dynamic.literal(chunkSize = chunkSize.asInstanceOf[js.Any], dictionary = dictionary.asInstanceOf[js.Any], finishFlush = finishFlush.asInstanceOf[js.Any], flush = flush.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], memLevel = memLevel.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any], windowBits = windowBits.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ZlibOptions]
   }

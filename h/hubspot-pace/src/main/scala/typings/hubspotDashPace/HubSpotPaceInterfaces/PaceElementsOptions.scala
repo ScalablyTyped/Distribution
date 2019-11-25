@@ -20,7 +20,7 @@ object PaceElementsOptions {
   def apply(checkInterval: Int | Double = null, selectors: js.Array[String] = null): PaceElementsOptions = {
     val __obj = js.Dynamic.literal()
     if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaceElementsOptions]
   }
 }

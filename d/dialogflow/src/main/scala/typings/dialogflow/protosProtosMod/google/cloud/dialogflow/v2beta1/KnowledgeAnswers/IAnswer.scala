@@ -29,11 +29,11 @@ object IAnswer {
     source: String = null
   ): IAnswer = {
     val __obj = js.Dynamic.literal()
-    if (answer != null) __obj.updateDynamic("answer")(answer)
-    if (faqQuestion != null) __obj.updateDynamic("faqQuestion")(faqQuestion)
+    if (answer != null) __obj.updateDynamic("answer")(answer.asInstanceOf[js.Any])
+    if (faqQuestion != null) __obj.updateDynamic("faqQuestion")(faqQuestion.asInstanceOf[js.Any])
     if (matchConfidence != null) __obj.updateDynamic("matchConfidence")(matchConfidence.asInstanceOf[js.Any])
-    if (matchConfidenceLevel != null) __obj.updateDynamic("matchConfidenceLevel")(matchConfidenceLevel)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (matchConfidenceLevel != null) __obj.updateDynamic("matchConfidenceLevel")(matchConfidenceLevel.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnswer]
   }
 }

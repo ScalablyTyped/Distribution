@@ -34,17 +34,17 @@ object Options {
     syntax: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (configFile != null) __obj.updateDynamic("configFile")(configFile)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(emitErrors)) __obj.updateDynamic("emitErrors")(emitErrors)
-    if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (configFile != null) __obj.updateDynamic("configFile")(configFile.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitErrors)) __obj.updateDynamic("emitErrors")(emitErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction2(formatter))
-    if (!js.isUndefined(lintDirtyModulesOnly)) __obj.updateDynamic("lintDirtyModulesOnly")(lintDirtyModulesOnly)
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
+    if (!js.isUndefined(lintDirtyModulesOnly)) __obj.updateDynamic("lintDirtyModulesOnly")(lintDirtyModulesOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

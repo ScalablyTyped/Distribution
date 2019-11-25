@@ -25,10 +25,10 @@ object XmlElementType {
     parser: IXmlSerializableConstructor = null,
     prefix: String = null
   ): XmlElementType = {
-    val __obj = js.Dynamic.literal(localName = localName)
-    if (namespaceURI != null) __obj.updateDynamic("namespaceURI")(namespaceURI)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(localName = localName.asInstanceOf[js.Any])
+    if (namespaceURI != null) __obj.updateDynamic("namespaceURI")(namespaceURI.asInstanceOf[js.Any])
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlElementType]
   }
 }

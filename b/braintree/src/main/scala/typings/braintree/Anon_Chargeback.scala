@@ -11,7 +11,7 @@ trait Anon_Chargeback extends js.Object {
 object Anon_Chargeback {
   @scala.inline
   def apply(Chargeback: String): Anon_Chargeback = {
-    val __obj = js.Dynamic.literal(Chargeback = Chargeback)
+    val __obj = js.Dynamic.literal(Chargeback = Chargeback.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Chargeback]
   }

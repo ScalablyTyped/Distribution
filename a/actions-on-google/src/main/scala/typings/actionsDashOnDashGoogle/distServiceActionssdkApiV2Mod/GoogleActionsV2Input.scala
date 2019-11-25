@@ -37,9 +37,9 @@ object GoogleActionsV2Input {
     rawInputs: js.Array[GoogleActionsV2RawInput] = null
   ): GoogleActionsV2Input = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (rawInputs != null) __obj.updateDynamic("rawInputs")(rawInputs)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (rawInputs != null) __obj.updateDynamic("rawInputs")(rawInputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2Input]
   }
 }

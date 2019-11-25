@@ -20,8 +20,8 @@ object PublishedService {
   @scala.inline
   def apply(name: String = null, service: Service = null): PublishedService = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishedService]
   }
 }

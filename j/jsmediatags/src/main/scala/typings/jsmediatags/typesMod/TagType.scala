@@ -12,8 +12,8 @@ trait TagType extends js.Object {
 object TagType {
   @scala.inline
   def apply(tags: Tags, `type`: String): TagType = {
-    val __obj = js.Dynamic.literal(tags = tags)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagType]
   }
 }

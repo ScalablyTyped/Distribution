@@ -34,15 +34,15 @@ object WithFormikConfig {
     validationSchema: js.Any | (js.Function1[/* props */ Props, _]) = null
   ): WithFormikConfig[Props, Values, DeprecatedPayload] = {
     val __obj = js.Dynamic.literal(handleSubmit = js.Any.fromFunction2(handleSubmit))
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(enableReinitialize)) __obj.updateDynamic("enableReinitialize")(enableReinitialize)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableReinitialize)) __obj.updateDynamic("enableReinitialize")(enableReinitialize.asInstanceOf[js.Any])
     if (isInitialValid != null) __obj.updateDynamic("isInitialValid")(isInitialValid.asInstanceOf[js.Any])
     if (mapPropsToStatus != null) __obj.updateDynamic("mapPropsToStatus")(js.Any.fromFunction1(mapPropsToStatus))
     if (mapPropsToValues != null) __obj.updateDynamic("mapPropsToValues")(js.Any.fromFunction1(mapPropsToValues))
     if (mapValuesToPayload != null) __obj.updateDynamic("mapValuesToPayload")(js.Any.fromFunction1(mapValuesToPayload))
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
-    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur)
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange)
+    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
     if (validationSchema != null) __obj.updateDynamic("validationSchema")(validationSchema.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithFormikConfig[Props, Values, DeprecatedPayload]]
   }

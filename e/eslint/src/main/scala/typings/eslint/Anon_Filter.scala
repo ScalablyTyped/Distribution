@@ -22,7 +22,7 @@ object Anon_Filter {
   ): Anon_Filter = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(includeComments)) __obj.updateDynamic("includeComments")(includeComments)
+    if (!js.isUndefined(includeComments)) __obj.updateDynamic("includeComments")(includeComments.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Filter]
   }

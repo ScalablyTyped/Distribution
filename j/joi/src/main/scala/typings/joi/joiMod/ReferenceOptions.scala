@@ -22,11 +22,11 @@ object ReferenceOptions {
     strict: js.UndefOr[Boolean] = js.undefined
   ): ReferenceOptions = {
     val __obj = js.Dynamic.literal()
-    if (contextPrefix != null) __obj.updateDynamic("contextPrefix")(contextPrefix)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (!js.isUndefined(functions)) __obj.updateDynamic("functions")(functions)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (contextPrefix != null) __obj.updateDynamic("contextPrefix")(contextPrefix.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(functions)) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceOptions]
   }
 }

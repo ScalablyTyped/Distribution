@@ -14,9 +14,9 @@ object Anon_ContentDispositionIfMatch {
   @scala.inline
   def apply(contentDisposition: String = null, ifMatch: String = null, xAdsRegion: String = null): Anon_ContentDispositionIfMatch = {
     val __obj = js.Dynamic.literal()
-    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition)
-    if (ifMatch != null) __obj.updateDynamic("ifMatch")(ifMatch)
-    if (xAdsRegion != null) __obj.updateDynamic("xAdsRegion")(xAdsRegion)
+    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
+    if (ifMatch != null) __obj.updateDynamic("ifMatch")(ifMatch.asInstanceOf[js.Any])
+    if (xAdsRegion != null) __obj.updateDynamic("xAdsRegion")(xAdsRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentDispositionIfMatch]
   }
 }

@@ -12,7 +12,7 @@ trait Api extends js.Object {
 object Api {
   @scala.inline
   def apply(colReorder: Anon_Direction): Api = {
-    val __obj = js.Dynamic.literal(colReorder = colReorder)
+    val __obj = js.Dynamic.literal(colReorder = colReorder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Api]
   }

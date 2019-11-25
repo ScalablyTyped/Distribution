@@ -18,9 +18,9 @@ object PageElementProperties {
     transform: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.AffineTransform = null
   ): PageElementProperties = {
     val __obj = js.Dynamic.literal()
-    if (pageObjectId != null) __obj.updateDynamic("pageObjectId")(pageObjectId)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (pageObjectId != null) __obj.updateDynamic("pageObjectId")(pageObjectId.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageElementProperties]
   }
 }

@@ -34,8 +34,8 @@ object cssClasses {
     IS_DISCRETE: `mdc-slider--discrete`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE, DISABLED = DISABLED, DISCRETE = DISCRETE, FOCUS = FOCUS, HAS_TRACK_MARKER = HAS_TRACK_MARKER, IN_TRANSIT = IN_TRANSIT, IS_DISCRETE = IS_DISCRETE)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE.asInstanceOf[js.Any], DISABLED = DISABLED.asInstanceOf[js.Any], DISCRETE = DISCRETE.asInstanceOf[js.Any], FOCUS = FOCUS.asInstanceOf[js.Any], HAS_TRACK_MARKER = HAS_TRACK_MARKER.asInstanceOf[js.Any], IN_TRANSIT = IN_TRANSIT.asInstanceOf[js.Any], IS_DISCRETE = IS_DISCRETE.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

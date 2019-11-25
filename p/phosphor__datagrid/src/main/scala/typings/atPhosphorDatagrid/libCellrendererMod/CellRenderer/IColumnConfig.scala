@@ -35,7 +35,7 @@ trait IColumnConfig extends js.Object {
 object IColumnConfig {
   @scala.inline
   def apply(column: Double, metadata: Metadata, region: CellRegion, width: Double, x: Double): IColumnConfig = {
-    val __obj = js.Dynamic.literal(column = column, metadata = metadata, region = region, width = width, x = x)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IColumnConfig]
   }

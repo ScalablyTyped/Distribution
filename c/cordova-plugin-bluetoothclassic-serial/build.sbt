@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-bluetoothclassic-serial"
-version := "0.9-dt-20190213Z-78cbf4"
+version := "0.9-dt-20190213Z-d00348"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

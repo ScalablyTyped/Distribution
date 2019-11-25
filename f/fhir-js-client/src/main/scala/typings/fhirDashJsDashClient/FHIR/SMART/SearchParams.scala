@@ -56,12 +56,12 @@ object SearchParams {
     since: String = null
   ): SearchParams = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (patient != null) __obj.updateDynamic("patient")(patient)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (since != null) __obj.updateDynamic("since")(since)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (patient != null) __obj.updateDynamic("patient")(patient.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchParams]
   }
 }

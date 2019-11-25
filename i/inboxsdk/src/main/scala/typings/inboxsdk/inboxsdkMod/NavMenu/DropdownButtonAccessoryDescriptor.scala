@@ -20,8 +20,8 @@ object DropdownButtonAccessoryDescriptor {
     onClick: DropdownButtonClickEvent => Unit,
     `type`: DROPDOWN_BUTTON
   ): DropdownButtonAccessoryDescriptor = {
-    val __obj = js.Dynamic.literal(buttonBackgroundColor = buttonBackgroundColor, buttonForegroundColor = buttonForegroundColor, onClick = js.Any.fromFunction1(onClick))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(buttonBackgroundColor = buttonBackgroundColor.asInstanceOf[js.Any], buttonForegroundColor = buttonForegroundColor.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownButtonAccessoryDescriptor]
   }
 }

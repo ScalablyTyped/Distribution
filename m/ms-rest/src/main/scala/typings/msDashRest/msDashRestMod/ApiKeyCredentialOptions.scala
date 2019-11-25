@@ -20,8 +20,8 @@ object ApiKeyCredentialOptions {
   @scala.inline
   def apply(inHeader: StringDictionary[js.Any] = null, inQuery: StringDictionary[js.Any] = null): ApiKeyCredentialOptions = {
     val __obj = js.Dynamic.literal()
-    if (inHeader != null) __obj.updateDynamic("inHeader")(inHeader)
-    if (inQuery != null) __obj.updateDynamic("inQuery")(inQuery)
+    if (inHeader != null) __obj.updateDynamic("inHeader")(inHeader.asInstanceOf[js.Any])
+    if (inQuery != null) __obj.updateDynamic("inQuery")(inQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKeyCredentialOptions]
   }
 }

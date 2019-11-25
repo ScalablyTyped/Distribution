@@ -21,8 +21,8 @@ object Database {
   @scala.inline
   def apply(name: String = null, state: String = null): Database = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Database]
   }
 }

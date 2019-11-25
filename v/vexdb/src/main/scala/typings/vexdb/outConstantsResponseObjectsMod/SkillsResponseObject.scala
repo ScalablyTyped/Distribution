@@ -25,8 +25,8 @@ object SkillsResponseObject {
     team: String,
     `type`: Double
   ): SkillsResponseObject = {
-    val __obj = js.Dynamic.literal(attempts = attempts, program = program, rank = rank, score = score, sku = sku, team = team)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(attempts = attempts.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkillsResponseObject]
   }
 }

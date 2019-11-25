@@ -13,8 +13,8 @@ object FreeBusyCalendar {
   @scala.inline
   def apply(busy: js.Array[TimePeriod] = null, errors: js.Array[Error] = null): FreeBusyCalendar = {
     val __obj = js.Dynamic.literal()
-    if (busy != null) __obj.updateDynamic("busy")(busy)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (busy != null) __obj.updateDynamic("busy")(busy.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBusyCalendar]
   }
 }

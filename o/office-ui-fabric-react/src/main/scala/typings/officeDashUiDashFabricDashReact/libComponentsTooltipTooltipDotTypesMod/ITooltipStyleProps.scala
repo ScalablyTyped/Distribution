@@ -45,12 +45,12 @@ object ITooltipStyleProps {
     gapSpace: Int | Double = null,
     maxWidth: String = null
   ): ITooltipStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (beakWidth != null) __obj.updateDynamic("beakWidth")(beakWidth.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (delay != null) __obj.updateDynamic("delay")(delay)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (gapSpace != null) __obj.updateDynamic("gapSpace")(gapSpace.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth)
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITooltipStyleProps]
   }
 }

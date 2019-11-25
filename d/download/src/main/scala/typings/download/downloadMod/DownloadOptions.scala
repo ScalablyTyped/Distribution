@@ -50,9 +50,7 @@ object DownloadOptions {
   @scala.inline
   def apply(
     _defaultAgent: Agent = null,
-    agent: Agent | Boolean = null,
-    agent_GotOptions: Agent | Boolean | AgentOptions = null,
-    agent_InternalRequestOptions: js.Any = null,
+    agent: Agent | Boolean | AgentOptions = null,
     auth: String = null,
     baseUrl: String = null,
     body: String | Buffer | Readable = null,
@@ -104,71 +102,65 @@ object DownloadOptions {
     socketPath: String = null,
     strip: Int | Double = null,
     throwHttpErrors: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    timeout_GotOptions: Double | TimeoutOptions = null,
-    timeout_InternalRequestOptions: js.Any = null,
+    timeout: Double | TimeoutOptions = null,
     useElectronNet: js.UndefOr[Boolean] = js.undefined
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal()
-    if (_defaultAgent != null) __obj.updateDynamic("_defaultAgent")(_defaultAgent)
+    if (_defaultAgent != null) __obj.updateDynamic("_defaultAgent")(_defaultAgent.asInstanceOf[js.Any])
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (agent_GotOptions != null) __obj.updateDynamic("agent")(agent_GotOptions.asInstanceOf[js.Any])
-    if (agent_InternalRequestOptions != null) __obj.updateDynamic("agent")(agent_InternalRequestOptions)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
-    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
-    if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar)
+    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
+    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine.asInstanceOf[js.Any])
+    if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar.asInstanceOf[js.Any])
     if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
-    if (!js.isUndefined(decompress)) __obj.updateDynamic("decompress")(decompress)
+    if (!js.isUndefined(decompress)) __obj.updateDynamic("decompress")(decompress.asInstanceOf[js.Any])
     if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])
     if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
-    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (!js.isUndefined(extract)) __obj.updateDynamic("extract")(extract)
+    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(extract)) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.asInstanceOf[js.Any])
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
-    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion)
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
-    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol)
-    if (servername != null) __obj.updateDynamic("servername")(servername)
-    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext)
-    if (!js.isUndefined(setHost)) __obj.updateDynamic("setHost")(setHost)
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
+    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol.asInstanceOf[js.Any])
+    if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
+    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(setHost)) __obj.updateDynamic("setHost")(setHost.asInstanceOf[js.Any])
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
     if (strip != null) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwHttpErrors)) __obj.updateDynamic("throwHttpErrors")(throwHttpErrors)
+    if (!js.isUndefined(throwHttpErrors)) __obj.updateDynamic("throwHttpErrors")(throwHttpErrors.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timeout_GotOptions != null) __obj.updateDynamic("timeout")(timeout_GotOptions.asInstanceOf[js.Any])
-    if (timeout_InternalRequestOptions != null) __obj.updateDynamic("timeout")(timeout_InternalRequestOptions)
-    if (!js.isUndefined(useElectronNet)) __obj.updateDynamic("useElectronNet")(useElectronNet)
+    if (!js.isUndefined(useElectronNet)) __obj.updateDynamic("useElectronNet")(useElectronNet.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadOptions]
   }
 }

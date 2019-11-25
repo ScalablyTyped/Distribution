@@ -13,7 +13,7 @@ package object mongodbMod {
   import typings.std.Exclude
   import typings.std.RegExp
 
-  type AcceptedFields[TSchema, FieldType, AssignableType] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type AcceptedFields[TSchema, FieldType, AssignableType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, FieldType> ]:? AssignableType}
     */ typings.mongodb.mongodbStrings.AcceptedFields with js.Any
   type AggregationCursorResult = js.Object | Null
@@ -32,16 +32,16 @@ package object mongodbMod {
   type GridFSBucketWriteStreamId = String | scala.Double | js.Object | typings.bson.bsonMod.ObjectId
   type IteratorCallback[T] = js.Function1[/* doc */ T, Unit]
   /** Update Query */
-  type KeysOfAType[TSchema, Type] = /* import warning: ImportType.apply Failed type conversion: {[ key in keyof TSchema ]: TSchema[key] extends Type? key : never}[keyof TSchema] */ js.Any
-  type KeysOfOtherType[TSchema, Type] = /* import warning: ImportType.apply Failed type conversion: {[ key in keyof TSchema ]: TSchema[key] extends Type? never : key}[keyof TSchema] */ js.Any
+  type KeysOfAType[TSchema, Type] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TSchema ]: TSchema[key] extends Type? key : never}[keyof TSchema] */ js.Any
+  type KeysOfOtherType[TSchema, Type] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TSchema ]: TSchema[key] extends Type? never : key}[keyof TSchema] */ js.Any
   type MatchKeysAndValues[TSchema] = ReadonlyPartial[TSchema] with DotAndArrayNotation[_]
   type MongoAltQuery[T] = (RegExpForString[js.Any | T]) | T
   type MongoCallback[T] = js.Function2[/* error */ MongoError, /* result */ T, Unit]
   /** It avoid uses fields of non Type */
-  type NotAcceptedFields[TSchema, FieldType] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type NotAcceptedFields[TSchema, FieldType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in mongodb.mongodb.KeysOfOtherType<TSchema, FieldType> ]:? never}
     */ typings.mongodb.mongodbStrings.NotAcceptedFields with js.Any
-  type ObjectQuerySelector[T] = QuerySelector[T] | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  type ObjectQuerySelector[T] = QuerySelector[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? mongodb.mongodb.QuerySelector<T[key]>}
     */ typings.mongodb.mongodbStrings.ObjectQuerySelector with T)
   type OnlyFieldsOfType[TSchema, FieldType, AssignableType] = (AcceptedFields[TSchema, FieldType, AssignableType]) with (NotAcceptedFields[TSchema, FieldType]) with DotAndArrayNotation[AssignableType]
@@ -49,7 +49,7 @@ package object mongodbMod {
   type PullAllOperator[TSchema] = typings.mongodb.mongodbStrings.PullAllOperator with TSchema with (NotAcceptedFields[TSchema, js.Array[_]]) with StringDictionary[js.Array[_]]
   type PullOperator[TSchema] = typings.mongodb.mongodbStrings.PullOperator with js.Any with (NotAcceptedFields[TSchema, js.Array[_]]) with (StringDictionary[QuerySelector[_] | js.Any])
   type PushOperator[TSchema] = typings.mongodb.mongodbStrings.PushOperator with js.Any with (NotAcceptedFields[TSchema, js.Array[_]]) with (StringDictionary[ArrayOperator[_] | js.Any])
-  type ReadonlyPartial[TSchema] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ReadonlyPartial[TSchema] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in keyof TSchema ]:? TSchema[key]}
     */ typings.mongodb.mongodbStrings.ReadonlyPartial with TSchema
   // we can search using alternative types in mongodb e.g.

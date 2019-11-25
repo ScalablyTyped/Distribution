@@ -13,8 +13,8 @@ trait CircleOptions extends Options {
 object CircleOptions {
   @scala.inline
   def apply(coords: js.Tuple3[Double, Double, Double], `type`: circle): CircleOptions = {
-    val __obj = js.Dynamic.literal(coords = coords)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleOptions]
   }
 }

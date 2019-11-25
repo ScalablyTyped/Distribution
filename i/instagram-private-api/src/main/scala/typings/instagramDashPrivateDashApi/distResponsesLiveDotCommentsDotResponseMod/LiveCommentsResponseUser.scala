@@ -27,8 +27,8 @@ object LiveCommentsResponseUser {
     username: String,
     live_with_eligibility: String = null
   ): LiveCommentsResponseUser = {
-    val __obj = js.Dynamic.literal(full_name = full_name, is_private = is_private, is_verified = is_verified, pk = pk, profile_pic_id = profile_pic_id, profile_pic_url = profile_pic_url, username = username)
-    if (live_with_eligibility != null) __obj.updateDynamic("live_with_eligibility")(live_with_eligibility)
+    val __obj = js.Dynamic.literal(full_name = full_name.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_id = profile_pic_id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (live_with_eligibility != null) __obj.updateDynamic("live_with_eligibility")(live_with_eligibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveCommentsResponseUser]
   }
 }

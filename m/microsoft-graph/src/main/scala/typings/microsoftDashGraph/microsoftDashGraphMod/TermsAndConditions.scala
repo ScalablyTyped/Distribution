@@ -55,16 +55,16 @@ object TermsAndConditions {
     version: Int | Double = null
   ): TermsAndConditions = {
     val __obj = js.Dynamic.literal()
-    if (acceptanceStatement != null) __obj.updateDynamic("acceptanceStatement")(acceptanceStatement)
-    if (acceptanceStatuses != null) __obj.updateDynamic("acceptanceStatuses")(acceptanceStatuses)
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments)
-    if (bodyText != null) __obj.updateDynamic("bodyText")(bodyText)
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (acceptanceStatement != null) __obj.updateDynamic("acceptanceStatement")(acceptanceStatement.asInstanceOf[js.Any])
+    if (acceptanceStatuses != null) __obj.updateDynamic("acceptanceStatuses")(acceptanceStatuses.asInstanceOf[js.Any])
+    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
+    if (bodyText != null) __obj.updateDynamic("bodyText")(bodyText.asInstanceOf[js.Any])
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[TermsAndConditions]
   }

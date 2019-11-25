@@ -18,8 +18,8 @@ object Web3ProviderEngineOptions {
     pollingInterval: Int | Double = null
   ): Web3ProviderEngineOptions = {
     val __obj = js.Dynamic.literal()
-    if (blockTracker != null) __obj.updateDynamic("blockTracker")(blockTracker)
-    if (blockTrackerProvider != null) __obj.updateDynamic("blockTrackerProvider")(blockTrackerProvider)
+    if (blockTracker != null) __obj.updateDynamic("blockTracker")(blockTracker.asInstanceOf[js.Any])
+    if (blockTrackerProvider != null) __obj.updateDynamic("blockTrackerProvider")(blockTrackerProvider.asInstanceOf[js.Any])
     if (pollingInterval != null) __obj.updateDynamic("pollingInterval")(pollingInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[Web3ProviderEngineOptions]
   }

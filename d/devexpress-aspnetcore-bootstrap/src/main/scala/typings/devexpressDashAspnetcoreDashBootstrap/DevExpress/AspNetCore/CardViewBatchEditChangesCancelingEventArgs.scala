@@ -19,7 +19,7 @@ object CardViewBatchEditChangesCancelingEventArgs {
     sender: Control,
     updatedValues: js.Any
   ): CardViewBatchEditChangesCancelingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, deletedValues = deletedValues, insertedValues = insertedValues, sender = sender, updatedValues = updatedValues)
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], deletedValues = deletedValues.asInstanceOf[js.Any], insertedValues = insertedValues.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], updatedValues = updatedValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CardViewBatchEditChangesCancelingEventArgs]
   }

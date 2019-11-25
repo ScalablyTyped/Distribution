@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait QRCODE_LEVEL extends js.Object
 
+object QRCODE_LEVEL {
+  @scala.inline
+  def H: typings.escpos.escposStrings.H = this.cast("H")
+  @scala.inline
+  def L: typings.escpos.escposStrings.L = this.cast("L")
+  @scala.inline
+  def M: typings.escpos.escposStrings.M = this.cast("M")
+  @scala.inline
+  def Q: typings.escpos.escposStrings.Q = this.cast("Q")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

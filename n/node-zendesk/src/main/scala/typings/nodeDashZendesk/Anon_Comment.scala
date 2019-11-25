@@ -13,7 +13,7 @@ trait Anon_Comment extends js.Object {
 object Anon_Comment {
   @scala.inline
   def apply(comment: Anon_Body, ticket: CreateModel): Anon_Comment = {
-    val __obj = js.Dynamic.literal(comment = comment, ticket = ticket)
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], ticket = ticket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Comment]
   }

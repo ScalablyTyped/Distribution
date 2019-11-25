@@ -34,16 +34,16 @@ object Anon_CloseBottom {
     stRotation: Int | Double = null,
     vertexFormat: VertexFormat = null
   ): Anon_CloseBottom = {
-    val __obj = js.Dynamic.literal(positions = positions)
-    if (!js.isUndefined(closeBottom)) __obj.updateDynamic("closeBottom")(closeBottom)
-    if (!js.isUndefined(closeTop)) __obj.updateDynamic("closeTop")(closeTop)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeBottom)) __obj.updateDynamic("closeBottom")(closeBottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeTop)) __obj.updateDynamic("closeTop")(closeTop.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(perPositionHeight)) __obj.updateDynamic("perPositionHeight")(perPositionHeight)
+    if (!js.isUndefined(perPositionHeight)) __obj.updateDynamic("perPositionHeight")(perPositionHeight.asInstanceOf[js.Any])
     if (stRotation != null) __obj.updateDynamic("stRotation")(stRotation.asInstanceOf[js.Any])
-    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat)
+    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CloseBottom]
   }
 }

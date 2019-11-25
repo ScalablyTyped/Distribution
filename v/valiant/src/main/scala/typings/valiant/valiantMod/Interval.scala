@@ -39,7 +39,7 @@ object Interval {
     toComparator: (Endpoint[T], Endpoint[T]) => Double,
     unify: Interval[T] => Interval[T]
   ): Interval[T] = {
-    val __obj = js.Dynamic.literal(constructor = constructor, contains = js.Any.fromFunction1(contains), contiguousWith = js.Any.fromFunction1(contiguousWith), empty = empty, equalTo = js.Any.fromFunction1(equalTo), from = from, fromComparator = js.Any.fromFunction2(fromComparator), hull = js.Any.fromFunction1(hull), intersection = js.Any.fromFunction1(intersection), isEmpty = js.Any.fromFunction0(isEmpty), isSubsetOf = js.Any.fromFunction1(isSubsetOf), to = to, toComparator = js.Any.fromFunction2(toComparator), unify = js.Any.fromFunction1(unify))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], contains = js.Any.fromFunction1(contains), contiguousWith = js.Any.fromFunction1(contiguousWith), empty = empty.asInstanceOf[js.Any], equalTo = js.Any.fromFunction1(equalTo), from = from.asInstanceOf[js.Any], fromComparator = js.Any.fromFunction2(fromComparator), hull = js.Any.fromFunction1(hull), intersection = js.Any.fromFunction1(intersection), isEmpty = js.Any.fromFunction0(isEmpty), isSubsetOf = js.Any.fromFunction1(isSubsetOf), to = to.asInstanceOf[js.Any], toComparator = js.Any.fromFunction2(toComparator), unify = js.Any.fromFunction1(unify))
   
     __obj.asInstanceOf[Interval[T]]
   }

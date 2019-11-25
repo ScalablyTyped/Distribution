@@ -25,10 +25,10 @@ object Anon_DisableStylesGeneration {
     managers: Managers = null,
     registry: SheetsRegistry = null
   ): Anon_DisableStylesGeneration = {
-    val __obj = js.Dynamic.literal(disableStylesGeneration = disableStylesGeneration, sheetOptions = sheetOptions)
-    if (jss != null) __obj.updateDynamic("jss")(jss)
-    if (managers != null) __obj.updateDynamic("managers")(managers)
-    if (registry != null) __obj.updateDynamic("registry")(registry)
+    val __obj = js.Dynamic.literal(disableStylesGeneration = disableStylesGeneration.asInstanceOf[js.Any], sheetOptions = sheetOptions.asInstanceOf[js.Any])
+    if (jss != null) __obj.updateDynamic("jss")(jss.asInstanceOf[js.Any])
+    if (managers != null) __obj.updateDynamic("managers")(managers.asInstanceOf[js.Any])
+    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisableStylesGeneration]
   }
 }

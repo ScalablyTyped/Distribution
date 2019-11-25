@@ -19,8 +19,8 @@ trait ConnectionState extends js.Object {
 object ConnectionState {
   @scala.inline
   def apply(duration: Double, `type`: String): ConnectionState = {
-    val __obj = js.Dynamic.literal(duration = duration)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionState]
   }
 }

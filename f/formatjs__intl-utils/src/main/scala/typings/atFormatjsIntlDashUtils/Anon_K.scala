@@ -12,8 +12,8 @@ trait Anon_K extends /* k */ StringDictionary[String] {
 object Anon_K {
   @scala.inline
   def apply(localeMatcher: String, StringDictionary: /* k */ StringDictionary[String] = null): Anon_K = {
-    val __obj = js.Dynamic.literal(localeMatcher = localeMatcher)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(localeMatcher = localeMatcher.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_K]
   }
 }

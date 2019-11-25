@@ -27,10 +27,10 @@ object GooglePrivacyDlpV2beta1RedactContentRequest {
     replaceConfigs: js.Array[GooglePrivacyDlpV2beta1ReplaceConfig] = null
   ): GooglePrivacyDlpV2beta1RedactContentRequest = {
     val __obj = js.Dynamic.literal()
-    if (imageRedactionConfigs != null) __obj.updateDynamic("imageRedactionConfigs")(imageRedactionConfigs)
-    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (replaceConfigs != null) __obj.updateDynamic("replaceConfigs")(replaceConfigs)
+    if (imageRedactionConfigs != null) __obj.updateDynamic("imageRedactionConfigs")(imageRedactionConfigs.asInstanceOf[js.Any])
+    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (replaceConfigs != null) __obj.updateDynamic("replaceConfigs")(replaceConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1RedactContentRequest]
   }
 }

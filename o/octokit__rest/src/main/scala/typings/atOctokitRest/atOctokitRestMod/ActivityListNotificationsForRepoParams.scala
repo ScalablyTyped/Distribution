@@ -45,13 +45,13 @@ object ActivityListNotificationsForRepoParams {
     per_page: Int | Double = null,
     since: String = null
   ): ActivityListNotificationsForRepoParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
-    if (before != null) __obj.updateDynamic("before")(before)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (!js.isUndefined(participating)) __obj.updateDynamic("participating")(participating)
+    if (!js.isUndefined(participating)) __obj.updateDynamic("participating")(participating.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since)
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityListNotificationsForRepoParams]
   }
 }

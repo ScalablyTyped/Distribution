@@ -25,7 +25,7 @@ object MultiCompilerHooks {
     watchClose: SyncHook[_, _, _],
     watchRun: AsyncSeriesHook[Compiler, _, _]
   ): MultiCompilerHooks = {
-    val __obj = js.Dynamic.literal(done = done, invalid = invalid, run = run, watchClose = watchClose, watchRun = watchRun)
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any], watchClose = watchClose.asInstanceOf[js.Any], watchRun = watchRun.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MultiCompilerHooks]
   }

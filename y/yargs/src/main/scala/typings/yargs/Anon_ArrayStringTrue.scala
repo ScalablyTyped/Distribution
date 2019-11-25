@@ -13,7 +13,7 @@ trait Anon_ArrayStringTrue extends js.Object {
 object Anon_ArrayStringTrue {
   @scala.inline
   def apply(array: `true`, string: `true`): Anon_ArrayStringTrue = {
-    val __obj = js.Dynamic.literal(array = array, string = string)
+    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArrayStringTrue]
   }

@@ -13,8 +13,8 @@ object GetAccessTokenResult {
   @scala.inline
   def apply(access_token: String = null, error: String = null): GetAccessTokenResult = {
     val __obj = js.Dynamic.literal()
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccessTokenResult]
   }
 }

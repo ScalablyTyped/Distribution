@@ -44,11 +44,11 @@ object SearchRuleOptions {
     query: String = null
   ): SearchRuleOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchoring != null) __obj.updateDynamic("anchoring")(anchoring)
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (anchoring != null) __obj.updateDynamic("anchoring")(anchoring.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchRuleOptions]
   }
 }

@@ -161,11 +161,11 @@ class Model () extends js.Object {
     * signatue, but the following signature.
     */
   @JSName("$relatedQuery")
-  def $relatedQuery[K /* <: String */, V /* <: (/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any) with Model */](relationName: K): QueryBuilder[V, V, V] = js.native
+  def $relatedQuery[K /* <: String */, V /* <: (/* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any) with Model */](relationName: K): QueryBuilder[V, V, V] = js.native
   @JSName("$relatedQuery")
-  def $relatedQuery[K /* <: String */, V /* <: (/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any) with Model */](relationName: K, trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[V, V, V] = js.native
+  def $relatedQuery[K /* <: String */, V /* <: (/* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any) with Model */](relationName: K, trxOrKnex: Knex[_, js.Array[_]]): QueryBuilder[V, V, V] = js.native
   @JSName("$relatedQuery")
-  def $relatedQuery[K /* <: String */, V /* <: (/* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any) with Model */](relationName: K, trxOrKnex: Transaction): QueryBuilder[V, V, V] = js.native
+  def $relatedQuery[K /* <: String */, V /* <: (/* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any) with Model */](relationName: K, trxOrKnex: Transaction): QueryBuilder[V, V, V] = js.native
   /**
     * Builds a query that only affects the models related to this instance
     * through a relation. Note that this signature requires a

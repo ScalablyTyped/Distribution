@@ -12,7 +12,7 @@ trait IROOM_FIND_RESULT extends js.Object {
 object IROOM_FIND_RESULT {
   @scala.inline
   def apply(rooms: js.Array[SFSRoom]): IROOM_FIND_RESULT = {
-    val __obj = js.Dynamic.literal(rooms = rooms)
+    val __obj = js.Dynamic.literal(rooms = rooms.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IROOM_FIND_RESULT]
   }

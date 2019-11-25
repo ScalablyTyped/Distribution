@@ -35,7 +35,7 @@ object Grammar {
     in: AssertionChain[T],
     to: AssertionChain[T]
   ): Grammar[T] = {
-    val __obj = js.Dynamic.literal(a = a, an = an, and = and, at = at, be = be, have = have, in = in, to = to)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], an = an.asInstanceOf[js.Any], and = and.asInstanceOf[js.Any], at = at.asInstanceOf[js.Any], be = be.asInstanceOf[js.Any], have = have.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Grammar[T]]
   }

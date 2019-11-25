@@ -12,7 +12,7 @@ trait RevisionInfo extends js.Object {
 object RevisionInfo {
   @scala.inline
   def apply(rev: RevisionId, status: Availability): RevisionInfo = {
-    val __obj = js.Dynamic.literal(rev = rev, status = status)
+    val __obj = js.Dynamic.literal(rev = rev.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RevisionInfo]
   }

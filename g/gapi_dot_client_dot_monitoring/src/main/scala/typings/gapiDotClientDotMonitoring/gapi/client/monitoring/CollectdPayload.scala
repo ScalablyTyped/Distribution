@@ -37,14 +37,14 @@ object CollectdPayload {
     values: js.Array[CollectdValue] = null
   ): CollectdPayload = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (plugin != null) __obj.updateDynamic("plugin")(plugin)
-    if (pluginInstance != null) __obj.updateDynamic("pluginInstance")(pluginInstance)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (typeInstance != null) __obj.updateDynamic("typeInstance")(typeInstance)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
+    if (pluginInstance != null) __obj.updateDynamic("pluginInstance")(pluginInstance.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (typeInstance != null) __obj.updateDynamic("typeInstance")(typeInstance.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectdPayload]
   }
 }

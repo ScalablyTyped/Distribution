@@ -36,10 +36,10 @@ object PaginateOptions {
     sort: js.Object | String = null
   ): PaginateOptions = {
     val __obj = js.Dynamic.literal()
-    if (collation != null) __obj.updateDynamic("collation")(collation)
-    if (customLabels != null) __obj.updateDynamic("customLabels")(customLabels)
-    if (!js.isUndefined(lean)) __obj.updateDynamic("lean")(lean)
-    if (!js.isUndefined(leanWithId)) __obj.updateDynamic("leanWithId")(leanWithId)
+    if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
+    if (customLabels != null) __obj.updateDynamic("customLabels")(customLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(lean)) __obj.updateDynamic("lean")(lean.asInstanceOf[js.Any])
+    if (!js.isUndefined(leanWithId)) __obj.updateDynamic("leanWithId")(leanWithId.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])

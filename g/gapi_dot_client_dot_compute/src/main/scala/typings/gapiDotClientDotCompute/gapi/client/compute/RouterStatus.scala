@@ -23,10 +23,10 @@ object RouterStatus {
     network: String = null
   ): RouterStatus = {
     val __obj = js.Dynamic.literal()
-    if (bestRoutes != null) __obj.updateDynamic("bestRoutes")(bestRoutes)
-    if (bestRoutesForRouter != null) __obj.updateDynamic("bestRoutesForRouter")(bestRoutesForRouter)
-    if (bgpPeerStatus != null) __obj.updateDynamic("bgpPeerStatus")(bgpPeerStatus)
-    if (network != null) __obj.updateDynamic("network")(network)
+    if (bestRoutes != null) __obj.updateDynamic("bestRoutes")(bestRoutes.asInstanceOf[js.Any])
+    if (bestRoutesForRouter != null) __obj.updateDynamic("bestRoutesForRouter")(bestRoutesForRouter.asInstanceOf[js.Any])
+    if (bgpPeerStatus != null) __obj.updateDynamic("bgpPeerStatus")(bgpPeerStatus.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterStatus]
   }
 }

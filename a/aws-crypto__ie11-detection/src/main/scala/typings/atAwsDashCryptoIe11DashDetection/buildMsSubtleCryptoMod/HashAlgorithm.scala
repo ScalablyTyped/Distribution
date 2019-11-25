@@ -11,7 +11,7 @@ trait HashAlgorithm extends js.Object {
 object HashAlgorithm {
   @scala.inline
   def apply(name: Ie11DigestAlgorithm): HashAlgorithm = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HashAlgorithm]
   }

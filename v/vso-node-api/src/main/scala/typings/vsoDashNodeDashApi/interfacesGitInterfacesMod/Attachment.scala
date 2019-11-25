@@ -58,7 +58,7 @@ object Attachment {
     properties: js.Any,
     url: String
   ): Attachment = {
-    val __obj = js.Dynamic.literal(_links = _links, author = author, contentHash = contentHash, createdDate = createdDate, description = description, displayName = displayName, id = id, properties = properties, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], contentHash = contentHash.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Attachment]
   }

@@ -20,10 +20,10 @@ object VoterInfoSegmentResult {
     response: VoterInfoResponse = null
   ): VoterInfoSegmentResult = {
     val __obj = js.Dynamic.literal()
-    if (generatedMillis != null) __obj.updateDynamic("generatedMillis")(generatedMillis)
-    if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (generatedMillis != null) __obj.updateDynamic("generatedMillis")(generatedMillis.asInstanceOf[js.Any])
+    if (postalAddress != null) __obj.updateDynamic("postalAddress")(postalAddress.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoterInfoSegmentResult]
   }
 }

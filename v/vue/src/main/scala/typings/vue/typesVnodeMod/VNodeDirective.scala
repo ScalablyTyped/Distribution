@@ -26,13 +26,13 @@ object VNodeDirective {
     oldValue: js.Any = null,
     value: js.Any = null
   ): VNodeDirective = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (arg != null) __obj.updateDynamic("arg")(arg)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (oldArg != null) __obj.updateDynamic("oldArg")(oldArg)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (arg != null) __obj.updateDynamic("arg")(arg.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
+    if (oldArg != null) __obj.updateDynamic("oldArg")(oldArg.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNodeDirective]
   }
 }

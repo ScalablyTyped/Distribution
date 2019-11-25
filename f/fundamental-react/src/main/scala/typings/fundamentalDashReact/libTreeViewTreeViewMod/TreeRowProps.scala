@@ -27,11 +27,11 @@ object TreeRowProps {
     rowId: String = null
   ): TreeRowProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
-    if (!js.isUndefined(isParent)) __obj.updateDynamic("isParent")(isParent)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(isParent)) __obj.updateDynamic("isParent")(isParent.asInstanceOf[js.Any])
     if (onExpandClick != null) __obj.updateDynamic("onExpandClick")(js.Any.fromFunction1(onExpandClick))
-    if (rowId != null) __obj.updateDynamic("rowId")(rowId)
+    if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeRowProps]
   }
 }

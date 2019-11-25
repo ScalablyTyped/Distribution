@@ -15,9 +15,9 @@ object LeafJSON {
   @scala.inline
   def apply(marks: js.Array[MarkJSON] = null, `object`: leaf = null, text: String = null): LeafJSON = {
     val __obj = js.Dynamic.literal()
-    if (marks != null) __obj.updateDynamic("marks")(marks)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafJSON]
   }
 }

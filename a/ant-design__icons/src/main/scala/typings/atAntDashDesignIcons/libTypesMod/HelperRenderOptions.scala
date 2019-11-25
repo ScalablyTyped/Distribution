@@ -15,8 +15,8 @@ object HelperRenderOptions {
   @scala.inline
   def apply(extraSVGAttrs: StringDictionary[String] = null, placeholders: Anon_PrimaryColor = null): HelperRenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (extraSVGAttrs != null) __obj.updateDynamic("extraSVGAttrs")(extraSVGAttrs)
-    if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders)
+    if (extraSVGAttrs != null) __obj.updateDynamic("extraSVGAttrs")(extraSVGAttrs.asInstanceOf[js.Any])
+    if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders.asInstanceOf[js.Any])
     __obj.asInstanceOf[HelperRenderOptions]
   }
 }

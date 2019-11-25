@@ -15,7 +15,7 @@ object Anon_ColorWidth {
   def apply(color: ColorType = null, width: String = null): Anon_ColorWidth = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorWidth]
   }
 }

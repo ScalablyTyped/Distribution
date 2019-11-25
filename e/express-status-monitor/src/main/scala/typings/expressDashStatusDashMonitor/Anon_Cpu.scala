@@ -24,12 +24,12 @@ object Anon_Cpu {
     statusCodes: js.UndefOr[Boolean] = js.undefined
   ): Anon_Cpu = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu)
-    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load)
-    if (!js.isUndefined(mem)) __obj.updateDynamic("mem")(mem)
-    if (!js.isUndefined(responseTime)) __obj.updateDynamic("responseTime")(responseTime)
-    if (!js.isUndefined(rps)) __obj.updateDynamic("rps")(rps)
-    if (!js.isUndefined(statusCodes)) __obj.updateDynamic("statusCodes")(statusCodes)
+    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
+    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (!js.isUndefined(mem)) __obj.updateDynamic("mem")(mem.asInstanceOf[js.Any])
+    if (!js.isUndefined(responseTime)) __obj.updateDynamic("responseTime")(responseTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(rps)) __obj.updateDynamic("rps")(rps.asInstanceOf[js.Any])
+    if (!js.isUndefined(statusCodes)) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cpu]
   }
 }

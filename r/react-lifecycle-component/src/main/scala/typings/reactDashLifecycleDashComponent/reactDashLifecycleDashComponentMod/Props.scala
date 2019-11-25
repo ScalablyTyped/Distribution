@@ -29,7 +29,7 @@ object Props {
     getSnapshotBeforeUpdate: (P, S) => js.Any | Null = null,
     shouldComponentUpdate: (P, S, /* nextContext */ js.Any) => Boolean = null
   ): Props[P, S] = {
-    val __obj = js.Dynamic.literal(component = component)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     if (UNSAFE_componentWillMount != null) __obj.updateDynamic("UNSAFE_componentWillMount")(js.Any.fromFunction0(UNSAFE_componentWillMount))
     if (UNSAFE_componentWillReceiveProps != null) __obj.updateDynamic("UNSAFE_componentWillReceiveProps")(js.Any.fromFunction2(UNSAFE_componentWillReceiveProps))
     if (UNSAFE_componentWillUpdate != null) __obj.updateDynamic("UNSAFE_componentWillUpdate")(js.Any.fromFunction3(UNSAFE_componentWillUpdate))

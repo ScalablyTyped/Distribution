@@ -45,16 +45,16 @@ object Anon_Dimensions {
     `start-index`: Int | Double = null
   ): Anon_Dimensions = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (`end-date` != null) __obj.updateDynamic("end-date")(`end-date`)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (`end-date` != null) __obj.updateDynamic("end-date")(`end-date`.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel)
-    if (segment != null) __obj.updateDynamic("segment")(segment)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (`start-date` != null) __obj.updateDynamic("start-date")(`start-date`)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (`start-date` != null) __obj.updateDynamic("start-date")(`start-date`.asInstanceOf[js.Any])
     if (`start-index` != null) __obj.updateDynamic("start-index")(`start-index`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dimensions]
   }

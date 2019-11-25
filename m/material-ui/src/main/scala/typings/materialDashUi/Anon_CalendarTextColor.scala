@@ -26,13 +26,13 @@ object Anon_CalendarTextColor {
     textColor: String = null
   ): Anon_CalendarTextColor = {
     val __obj = js.Dynamic.literal()
-    if (calendarTextColor != null) __obj.updateDynamic("calendarTextColor")(calendarTextColor)
-    if (calendarYearBackgroundColor != null) __obj.updateDynamic("calendarYearBackgroundColor")(calendarYearBackgroundColor)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor)
-    if (selectColor != null) __obj.updateDynamic("selectColor")(selectColor)
-    if (selectTextColor != null) __obj.updateDynamic("selectTextColor")(selectTextColor)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (calendarTextColor != null) __obj.updateDynamic("calendarTextColor")(calendarTextColor.asInstanceOf[js.Any])
+    if (calendarYearBackgroundColor != null) __obj.updateDynamic("calendarYearBackgroundColor")(calendarYearBackgroundColor.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor.asInstanceOf[js.Any])
+    if (selectColor != null) __obj.updateDynamic("selectColor")(selectColor.asInstanceOf[js.Any])
+    if (selectTextColor != null) __obj.updateDynamic("selectTextColor")(selectTextColor.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CalendarTextColor]
   }
 }

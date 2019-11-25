@@ -34,7 +34,7 @@ object DownloadErrorResponse {
     details: String = null
   ): DownloadErrorResponse = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details)
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadErrorResponse]
   }
 }

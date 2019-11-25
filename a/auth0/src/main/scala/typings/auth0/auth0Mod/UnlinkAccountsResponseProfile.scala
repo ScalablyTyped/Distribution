@@ -28,14 +28,14 @@ object UnlinkAccountsResponseProfile {
     username: String = null
   ): UnlinkAccountsResponseProfile = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified)
-    if (family_name != null) __obj.updateDynamic("family_name")(family_name)
-    if (given_name != null) __obj.updateDynamic("given_name")(given_name)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number)
-    if (!js.isUndefined(phone_verified)) __obj.updateDynamic("phone_verified")(phone_verified)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.asInstanceOf[js.Any])
+    if (family_name != null) __obj.updateDynamic("family_name")(family_name.asInstanceOf[js.Any])
+    if (given_name != null) __obj.updateDynamic("given_name")(given_name.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
+    if (!js.isUndefined(phone_verified)) __obj.updateDynamic("phone_verified")(phone_verified.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlinkAccountsResponseProfile]
   }
 }

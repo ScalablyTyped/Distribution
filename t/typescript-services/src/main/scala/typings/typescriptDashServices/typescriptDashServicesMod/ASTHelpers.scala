@@ -2,7 +2,6 @@ package typings.typescriptDashServices.typescriptDashServicesMod
 
 import typings.typescriptDashServices.TypeScript.IASTSpan
 import typings.typescriptDashServices.TypeScript.IParameters
-import typings.typescriptDashServices.TypeScript.PullElementFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +37,7 @@ object ASTHelpers extends js.Object {
   def getNameOfIdenfierOrQualifiedName(name: typings.typescriptDashServices.TypeScript.AST): String = js.native
   def getParameterList(ast: typings.typescriptDashServices.TypeScript.AST): typings.typescriptDashServices.TypeScript.ParameterList = js.native
   def getType(ast: typings.typescriptDashServices.TypeScript.AST): typings.typescriptDashServices.TypeScript.AST = js.native
-  def getVariableDeclaratorModifiers(variableDeclarator: typings.typescriptDashServices.TypeScript.VariableDeclarator): js.Array[PullElementFlags] = js.native
+  def getVariableDeclaratorModifiers(variableDeclarator: typings.typescriptDashServices.TypeScript.VariableDeclarator): js.Array[typings.typescriptDashServices.TypeScript.PullElementFlags] = js.native
   def isCallExpression(ast: typings.typescriptDashServices.TypeScript.AST): Boolean = js.native
   def isCallExpressionTarget(ast: typings.typescriptDashServices.TypeScript.AST): Boolean = js.native
   def isDeclarationAST(ast: typings.typescriptDashServices.TypeScript.AST): Boolean = js.native

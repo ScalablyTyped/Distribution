@@ -14,7 +14,7 @@ trait DraggableBounds extends js.Object {
 object DraggableBounds {
   @scala.inline
   def apply(bottom: Double, left: Double, right: Double, top: Double): DraggableBounds = {
-    val __obj = js.Dynamic.literal(bottom = bottom, left = left, right = right, top = top)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DraggableBounds]
   }

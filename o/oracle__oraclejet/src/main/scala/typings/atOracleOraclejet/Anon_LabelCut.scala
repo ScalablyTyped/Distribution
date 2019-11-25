@@ -14,9 +14,9 @@ object Anon_LabelCut {
   @scala.inline
   def apply(labelCut: String = null, labelPasteAfter: String = null, labelPasteBefore: String = null): Anon_LabelCut = {
     val __obj = js.Dynamic.literal()
-    if (labelCut != null) __obj.updateDynamic("labelCut")(labelCut)
-    if (labelPasteAfter != null) __obj.updateDynamic("labelPasteAfter")(labelPasteAfter)
-    if (labelPasteBefore != null) __obj.updateDynamic("labelPasteBefore")(labelPasteBefore)
+    if (labelCut != null) __obj.updateDynamic("labelCut")(labelCut.asInstanceOf[js.Any])
+    if (labelPasteAfter != null) __obj.updateDynamic("labelPasteAfter")(labelPasteAfter.asInstanceOf[js.Any])
+    if (labelPasteBefore != null) __obj.updateDynamic("labelPasteBefore")(labelPasteBefore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LabelCut]
   }
 }

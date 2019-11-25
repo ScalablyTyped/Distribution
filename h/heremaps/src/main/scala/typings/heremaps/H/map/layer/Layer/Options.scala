@@ -31,11 +31,11 @@ object Options {
     projection: IProjection = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark)
+    if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minWorldSize != null) __obj.updateDynamic("minWorldSize")(minWorldSize.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

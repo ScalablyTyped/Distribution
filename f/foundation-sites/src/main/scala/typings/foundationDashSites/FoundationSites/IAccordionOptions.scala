@@ -18,8 +18,8 @@ object IAccordionOptions {
     slideSpeed: Int | Double = null
   ): IAccordionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAllClosed)) __obj.updateDynamic("allowAllClosed")(allowAllClosed)
-    if (!js.isUndefined(multiExpand)) __obj.updateDynamic("multiExpand")(multiExpand)
+    if (!js.isUndefined(allowAllClosed)) __obj.updateDynamic("allowAllClosed")(allowAllClosed.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiExpand)) __obj.updateDynamic("multiExpand")(multiExpand.asInstanceOf[js.Any])
     if (slideSpeed != null) __obj.updateDynamic("slideSpeed")(slideSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccordionOptions]
   }

@@ -14,8 +14,8 @@ trait FreeBusy extends js.Object {
 object FreeBusy {
   @scala.inline
   def apply(end: Date, start: Date, `type`: FreeBusyType): FreeBusy = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBusy]
   }
 }

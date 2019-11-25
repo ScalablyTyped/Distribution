@@ -13,7 +13,7 @@ object Anon_FiltersArray {
   @scala.inline
   def apply(filters: js.Array[DeviceFilter] = null): Anon_FiltersArray = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FiltersArray]
   }
 }

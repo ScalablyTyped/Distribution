@@ -21,7 +21,7 @@ object WatchOptions {
   ): WatchOptions = {
     val __obj = js.Dynamic.literal()
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchOptions]
   }

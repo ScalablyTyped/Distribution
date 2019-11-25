@@ -23,9 +23,9 @@ object FilterSetting {
   @scala.inline
   def apply(description: String = null, query: js.Any = null, text: String = null): FilterSetting = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterSetting]
   }
 }

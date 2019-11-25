@@ -15,10 +15,10 @@ trait EmittedChunk extends EmittedFile {
 object EmittedChunk {
   @scala.inline
   def apply(id: String, `type`: chunk, fileName: String = null, name: String = null): EmittedChunk = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmittedChunk]
   }
 }

@@ -61,16 +61,16 @@ object SeriesTooltip {
     visible: js.UndefOr[Boolean] = js.undefined
   ): SeriesTooltip = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
     if (ry != null) __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesTooltip]
   }
 }

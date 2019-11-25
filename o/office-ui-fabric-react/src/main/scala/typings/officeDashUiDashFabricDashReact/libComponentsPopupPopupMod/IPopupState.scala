@@ -12,7 +12,7 @@ object IPopupState {
   @scala.inline
   def apply(needsVerticalScrollBar: js.UndefOr[Boolean] = js.undefined): IPopupState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(needsVerticalScrollBar)) __obj.updateDynamic("needsVerticalScrollBar")(needsVerticalScrollBar)
+    if (!js.isUndefined(needsVerticalScrollBar)) __obj.updateDynamic("needsVerticalScrollBar")(needsVerticalScrollBar.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPopupState]
   }
 }

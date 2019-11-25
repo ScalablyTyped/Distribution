@@ -33,9 +33,9 @@ object IgTreeGridUpdatingLocale {
     addChildTooltip: String = null
   ): IgTreeGridUpdatingLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (addChildButtonLabel != null) __obj.updateDynamic("addChildButtonLabel")(addChildButtonLabel)
-    if (addChildTooltip != null) __obj.updateDynamic("addChildTooltip")(addChildTooltip)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (addChildButtonLabel != null) __obj.updateDynamic("addChildButtonLabel")(addChildButtonLabel.asInstanceOf[js.Any])
+    if (addChildTooltip != null) __obj.updateDynamic("addChildTooltip")(addChildTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridUpdatingLocale]
   }
 }

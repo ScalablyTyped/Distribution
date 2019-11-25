@@ -14,8 +14,8 @@ object CsrOptions {
   @scala.inline
   def apply(altNames: js.Array[String] = null, commonName: String = null, keySize: Int | Double = null): CsrOptions = {
     val __obj = js.Dynamic.literal()
-    if (altNames != null) __obj.updateDynamic("altNames")(altNames)
-    if (commonName != null) __obj.updateDynamic("commonName")(commonName)
+    if (altNames != null) __obj.updateDynamic("altNames")(altNames.asInstanceOf[js.Any])
+    if (commonName != null) __obj.updateDynamic("commonName")(commonName.asInstanceOf[js.Any])
     if (keySize != null) __obj.updateDynamic("keySize")(keySize.asInstanceOf[js.Any])
     __obj.asInstanceOf[CsrOptions]
   }

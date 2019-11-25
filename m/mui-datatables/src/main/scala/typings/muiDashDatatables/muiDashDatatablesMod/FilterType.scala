@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait FilterType extends js.Object
 
+object FilterType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def checkbox: typings.muiDashDatatables.muiDashDatatablesStrings.checkbox = this.cast("checkbox")
+  @scala.inline
+  def custom: typings.muiDashDatatables.muiDashDatatablesStrings.custom = this.cast("custom")
+  @scala.inline
+  def dropdown: typings.muiDashDatatables.muiDashDatatablesStrings.dropdown = this.cast("dropdown")
+  @scala.inline
+  def multiselect: typings.muiDashDatatables.muiDashDatatablesStrings.multiselect = this.cast("multiselect")
+  @scala.inline
+  def textField: typings.muiDashDatatables.muiDashDatatablesStrings.textField = this.cast("textField")
+}
+

@@ -28,7 +28,7 @@ object ojFormLayoutSettableProperties {
     labelWrapping: truncate | wrap,
     maxColumns: Double
   ): ojFormLayoutSettableProperties = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], labelEdge = labelEdge.asInstanceOf[js.Any], labelWidth = labelWidth, labelWrapping = labelWrapping.asInstanceOf[js.Any], maxColumns = maxColumns)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], labelEdge = labelEdge.asInstanceOf[js.Any], labelWidth = labelWidth.asInstanceOf[js.Any], labelWrapping = labelWrapping.asInstanceOf[js.Any], maxColumns = maxColumns.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojFormLayoutSettableProperties]
   }

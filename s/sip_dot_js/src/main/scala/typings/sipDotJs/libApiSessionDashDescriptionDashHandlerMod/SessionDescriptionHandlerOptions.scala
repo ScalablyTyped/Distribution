@@ -12,7 +12,7 @@ object SessionDescriptionHandlerOptions {
   @scala.inline
   def apply(constraints: js.Object = null): SessionDescriptionHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionDescriptionHandlerOptions]
   }
 }

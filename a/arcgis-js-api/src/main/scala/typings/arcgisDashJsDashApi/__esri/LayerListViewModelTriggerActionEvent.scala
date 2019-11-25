@@ -12,7 +12,7 @@ trait LayerListViewModelTriggerActionEvent extends js.Object {
 object LayerListViewModelTriggerActionEvent {
   @scala.inline
   def apply(action: ActionButton | ActionToggle, item: ListItem): LayerListViewModelTriggerActionEvent = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], item = item)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LayerListViewModelTriggerActionEvent]
   }

@@ -16,10 +16,10 @@ object UpdateDeleteTokenRequest {
     resources: js.Array[String] = null,
     scopes: js.Array[String] = null
   ): UpdateDeleteTokenRequest = {
-    val __obj = js.Dynamic.literal(tokenId = tokenId)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(tokenId = tokenId.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeleteTokenRequest]
   }
 }

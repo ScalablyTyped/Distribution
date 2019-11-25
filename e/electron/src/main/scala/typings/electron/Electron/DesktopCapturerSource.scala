@@ -42,7 +42,7 @@ trait DesktopCapturerSource extends js.Object {
 object DesktopCapturerSource {
   @scala.inline
   def apply(appIcon: NativeImage, display_id: String, id: String, name: String, thumbnail: NativeImage): DesktopCapturerSource = {
-    val __obj = js.Dynamic.literal(appIcon = appIcon, display_id = display_id, id = id, name = name, thumbnail = thumbnail)
+    val __obj = js.Dynamic.literal(appIcon = appIcon.asInstanceOf[js.Any], display_id = display_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DesktopCapturerSource]
   }

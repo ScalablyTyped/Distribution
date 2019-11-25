@@ -19,8 +19,8 @@ trait ResolveCallbackResolveInfo extends js.Object {
 object ResolveCallbackResolveInfo {
   @scala.inline
   def apply(resultCode: integer, address: String = null): ResolveCallbackResolveInfo = {
-    val __obj = js.Dynamic.literal(resultCode = resultCode)
-    if (address != null) __obj.updateDynamic("address")(address)
+    val __obj = js.Dynamic.literal(resultCode = resultCode.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveCallbackResolveInfo]
   }
 }

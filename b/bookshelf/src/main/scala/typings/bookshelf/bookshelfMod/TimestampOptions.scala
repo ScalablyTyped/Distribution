@@ -12,7 +12,7 @@ object TimestampOptions {
   @scala.inline
   def apply(method: String = null): TimestampOptions = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimestampOptions]
   }
 }

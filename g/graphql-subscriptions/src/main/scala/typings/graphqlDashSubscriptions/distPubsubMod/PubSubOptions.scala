@@ -13,7 +13,7 @@ object PubSubOptions {
   @scala.inline
   def apply(eventEmitter: EventEmitter = null): PubSubOptions = {
     val __obj = js.Dynamic.literal()
-    if (eventEmitter != null) __obj.updateDynamic("eventEmitter")(eventEmitter)
+    if (eventEmitter != null) __obj.updateDynamic("eventEmitter")(eventEmitter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PubSubOptions]
   }
 }

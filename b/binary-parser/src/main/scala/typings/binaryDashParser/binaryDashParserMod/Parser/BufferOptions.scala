@@ -25,7 +25,7 @@ object BufferOptions {
   ): BufferOptions = {
     val __obj = js.Dynamic.literal()
     if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (readUntil != null) __obj.updateDynamic("readUntil")(readUntil.asInstanceOf[js.Any])

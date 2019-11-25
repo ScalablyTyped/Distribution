@@ -19,3 +19,12 @@ import scala.scalajs.js.annotation._
 */
 trait FitPolicy extends js.Object
 
+object FitPolicy {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `set-min-size`: typings.atPhosphorWidgets.atPhosphorWidgetsStrings.`set-min-size` = this.cast("set-min-size")
+  @scala.inline
+  def `set-no-constraint`: typings.atPhosphorWidgets.atPhosphorWidgetsStrings.`set-no-constraint` = this.cast("set-no-constraint")
+}
+

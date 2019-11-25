@@ -16,7 +16,7 @@ trait FakeClientRect extends js.Object {
 object FakeClientRect {
   @scala.inline
   def apply(bottom: Double, height: Double, left: Double, right: Double, top: Double, width: Double): FakeClientRect = {
-    val __obj = js.Dynamic.literal(bottom = bottom, height = height, left = left, right = right, top = top, width = width)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FakeClientRect]
   }

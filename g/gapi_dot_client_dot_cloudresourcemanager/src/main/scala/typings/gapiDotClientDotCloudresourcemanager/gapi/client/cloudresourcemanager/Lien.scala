@@ -58,12 +58,12 @@ object Lien {
     restrictions: js.Array[String] = null
   ): Lien = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lien]
   }
 }

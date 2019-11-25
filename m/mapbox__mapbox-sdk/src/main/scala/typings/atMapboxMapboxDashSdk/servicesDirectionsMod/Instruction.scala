@@ -44,10 +44,10 @@ object Instruction {
     modifier: ManeuverModifier = null,
     `type`: String = null
   ): Instruction = {
-    val __obj = js.Dynamic.literal(components = components, driving_side = driving_side, text = text)
+    val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], driving_side = driving_side.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (degrees != null) __obj.updateDynamic("degrees")(degrees.asInstanceOf[js.Any])
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instruction]
   }
 }

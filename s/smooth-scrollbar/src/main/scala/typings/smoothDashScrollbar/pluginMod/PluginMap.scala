@@ -15,7 +15,7 @@ trait PluginMap extends js.Object {
 object PluginMap {
   @scala.inline
   def apply(constructors: StringDictionary[TypeofClassScrollbarPlugin], order: Set[String]): PluginMap = {
-    val __obj = js.Dynamic.literal(constructors = constructors, order = order)
+    val __obj = js.Dynamic.literal(constructors = constructors.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluginMap]
   }

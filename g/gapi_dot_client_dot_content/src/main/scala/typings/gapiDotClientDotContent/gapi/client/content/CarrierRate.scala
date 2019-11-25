@@ -39,12 +39,12 @@ object CarrierRate {
     percentageAdjustment: String = null
   ): CarrierRate = {
     val __obj = js.Dynamic.literal()
-    if (carrierName != null) __obj.updateDynamic("carrierName")(carrierName)
-    if (carrierService != null) __obj.updateDynamic("carrierService")(carrierService)
-    if (flatAdjustment != null) __obj.updateDynamic("flatAdjustment")(flatAdjustment)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (originPostalCode != null) __obj.updateDynamic("originPostalCode")(originPostalCode)
-    if (percentageAdjustment != null) __obj.updateDynamic("percentageAdjustment")(percentageAdjustment)
+    if (carrierName != null) __obj.updateDynamic("carrierName")(carrierName.asInstanceOf[js.Any])
+    if (carrierService != null) __obj.updateDynamic("carrierService")(carrierService.asInstanceOf[js.Any])
+    if (flatAdjustment != null) __obj.updateDynamic("flatAdjustment")(flatAdjustment.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (originPostalCode != null) __obj.updateDynamic("originPostalCode")(originPostalCode.asInstanceOf[js.Any])
+    if (percentageAdjustment != null) __obj.updateDynamic("percentageAdjustment")(percentageAdjustment.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarrierRate]
   }
 }

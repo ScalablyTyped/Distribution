@@ -35,8 +35,8 @@ object BatteryData {
     timeremaining: Double,
     `type`: String
   ): BatteryData = {
-    val __obj = js.Dynamic.literal(acconnected = acconnected, currentcapacity = currentcapacity, cyclecount = cyclecount, hasbattery = hasbattery, ischarging = ischarging, manufacturer = manufacturer, maxcapacity = maxcapacity, model = model, percent = percent, serial = serial, timeremaining = timeremaining)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(acconnected = acconnected.asInstanceOf[js.Any], currentcapacity = currentcapacity.asInstanceOf[js.Any], cyclecount = cyclecount.asInstanceOf[js.Any], hasbattery = hasbattery.asInstanceOf[js.Any], ischarging = ischarging.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], maxcapacity = maxcapacity.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], timeremaining = timeremaining.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatteryData]
   }
 }

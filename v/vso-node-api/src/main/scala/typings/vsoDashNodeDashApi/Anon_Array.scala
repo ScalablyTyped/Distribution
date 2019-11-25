@@ -33,8 +33,8 @@ object Anon_Array {
     unknown: Double,
     uri: Double
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal(array = array, boolean = boolean, dateTime = dateTime, dictionary = dictionary, double = double, guid = guid, integer = integer, string = string, unknown = unknown, uri = uri)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], boolean = boolean.asInstanceOf[js.Any], dateTime = dateTime.asInstanceOf[js.Any], dictionary = dictionary.asInstanceOf[js.Any], double = double.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], integer = integer.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Array]
   }
 }

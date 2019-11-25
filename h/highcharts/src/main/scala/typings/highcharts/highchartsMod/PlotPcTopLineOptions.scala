@@ -12,7 +12,7 @@ object PlotPcTopLineOptions {
   @scala.inline
   def apply(styles: PlotPcTopLineStylesOptions = null): PlotPcTopLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPcTopLineOptions]
   }
 }

@@ -13,8 +13,8 @@ trait BlockDto extends js.Object {
 object BlockDto {
   @scala.inline
   def apply(items: js.Array[BlockItemDto], recMath: Boolean, `type`: String): BlockDto = {
-    val __obj = js.Dynamic.literal(items = items, recMath = recMath)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], recMath = recMath.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockDto]
   }
 }

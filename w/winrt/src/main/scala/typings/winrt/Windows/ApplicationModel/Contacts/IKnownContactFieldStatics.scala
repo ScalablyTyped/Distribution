@@ -23,7 +23,7 @@ object IKnownContactFieldStatics {
     location: String,
     phoneNumber: String
   ): IKnownContactFieldStatics = {
-    val __obj = js.Dynamic.literal(convertNameToType = js.Any.fromFunction1(convertNameToType), convertTypeToName = js.Any.fromFunction1(convertTypeToName), email = email, instantMessage = instantMessage, location = location, phoneNumber = phoneNumber)
+    val __obj = js.Dynamic.literal(convertNameToType = js.Any.fromFunction1(convertNameToType), convertTypeToName = js.Any.fromFunction1(convertTypeToName), email = email.asInstanceOf[js.Any], instantMessage = instantMessage.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IKnownContactFieldStatics]
   }

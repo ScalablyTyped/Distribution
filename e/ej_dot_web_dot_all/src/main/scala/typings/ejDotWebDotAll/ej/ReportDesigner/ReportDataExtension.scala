@@ -32,10 +32,10 @@ object ReportDataExtension {
     name: String = null
   ): ReportDataExtension = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportDataExtension]
   }
 }

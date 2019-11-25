@@ -65,21 +65,21 @@ object QuestionnaireResponseItem {
     subject: Reference = null,
     text: String = null
   ): QuestionnaireResponseItem = {
-    val __obj = js.Dynamic.literal(linkId = linkId)
-    if (_definition != null) __obj.updateDynamic("_definition")(_definition)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_linkId != null) __obj.updateDynamic("_linkId")(_linkId)
-    if (_text != null) __obj.updateDynamic("_text")(_text)
-    if (answer != null) __obj.updateDynamic("answer")(answer)
-    if (definition != null) __obj.updateDynamic("definition")(definition)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(linkId = linkId.asInstanceOf[js.Any])
+    if (_definition != null) __obj.updateDynamic("_definition")(_definition.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_linkId != null) __obj.updateDynamic("_linkId")(_linkId.asInstanceOf[js.Any])
+    if (_text != null) __obj.updateDynamic("_text")(_text.asInstanceOf[js.Any])
+    if (answer != null) __obj.updateDynamic("answer")(answer.asInstanceOf[js.Any])
+    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestionnaireResponseItem]
   }
 }

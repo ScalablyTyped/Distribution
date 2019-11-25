@@ -21,7 +21,7 @@ object ObjectValue {
     loc: Location,
     metadata: Metadata = null
   ): ObjectValue = {
-    val __obj = js.Dynamic.literal(fields = fields, kind = kind, loc = loc)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectValue]
   }

@@ -22,9 +22,9 @@ object IArrayWillSplice {
     removedCount: Double,
     `type`: splice
   ): IArrayWillSplice[T] = {
-    val __obj = js.Dynamic.literal(added = added, index = index, removedCount = removedCount)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removedCount = removedCount.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IArrayWillSplice[T]]
   }
 }

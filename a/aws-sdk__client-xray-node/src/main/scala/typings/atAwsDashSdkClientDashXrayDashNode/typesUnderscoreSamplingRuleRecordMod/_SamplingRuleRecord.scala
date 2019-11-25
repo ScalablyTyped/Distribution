@@ -31,7 +31,7 @@ object _SamplingRuleRecord {
     val __obj = js.Dynamic.literal()
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
     if (ModifiedAt != null) __obj.updateDynamic("ModifiedAt")(ModifiedAt.asInstanceOf[js.Any])
-    if (SamplingRule != null) __obj.updateDynamic("SamplingRule")(SamplingRule)
+    if (SamplingRule != null) __obj.updateDynamic("SamplingRule")(SamplingRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SamplingRuleRecord]
   }
 }

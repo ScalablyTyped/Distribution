@@ -28,14 +28,14 @@ object VideoProcessingDetails {
     thumbnailsAvailability: String = null
   ): VideoProcessingDetails = {
     val __obj = js.Dynamic.literal()
-    if (editorSuggestionsAvailability != null) __obj.updateDynamic("editorSuggestionsAvailability")(editorSuggestionsAvailability)
-    if (fileDetailsAvailability != null) __obj.updateDynamic("fileDetailsAvailability")(fileDetailsAvailability)
-    if (processingFailureReason != null) __obj.updateDynamic("processingFailureReason")(processingFailureReason)
-    if (processingIssuesAvailability != null) __obj.updateDynamic("processingIssuesAvailability")(processingIssuesAvailability)
-    if (processingProgress != null) __obj.updateDynamic("processingProgress")(processingProgress)
-    if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus)
-    if (tagSuggestionsAvailability != null) __obj.updateDynamic("tagSuggestionsAvailability")(tagSuggestionsAvailability)
-    if (thumbnailsAvailability != null) __obj.updateDynamic("thumbnailsAvailability")(thumbnailsAvailability)
+    if (editorSuggestionsAvailability != null) __obj.updateDynamic("editorSuggestionsAvailability")(editorSuggestionsAvailability.asInstanceOf[js.Any])
+    if (fileDetailsAvailability != null) __obj.updateDynamic("fileDetailsAvailability")(fileDetailsAvailability.asInstanceOf[js.Any])
+    if (processingFailureReason != null) __obj.updateDynamic("processingFailureReason")(processingFailureReason.asInstanceOf[js.Any])
+    if (processingIssuesAvailability != null) __obj.updateDynamic("processingIssuesAvailability")(processingIssuesAvailability.asInstanceOf[js.Any])
+    if (processingProgress != null) __obj.updateDynamic("processingProgress")(processingProgress.asInstanceOf[js.Any])
+    if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus.asInstanceOf[js.Any])
+    if (tagSuggestionsAvailability != null) __obj.updateDynamic("tagSuggestionsAvailability")(tagSuggestionsAvailability.asInstanceOf[js.Any])
+    if (thumbnailsAvailability != null) __obj.updateDynamic("thumbnailsAvailability")(thumbnailsAvailability.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProcessingDetails]
   }
 }

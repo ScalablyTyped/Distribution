@@ -16,8 +16,8 @@ object EditorPasteEvent {
     sender: Editor,
     html: js.Any = null
   ): EditorPasteEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (html != null) __obj.updateDynamic("html")(html)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorPasteEvent]
   }
 }

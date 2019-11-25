@@ -24,8 +24,8 @@ object Anon_BodyHeadersIdOptionsResourceTypeCustomResourceType {
     headers: Headers = null,
     options: Options = null
   ): Anon_BodyHeadersIdOptionsResourceTypeCustomResourceType[T] = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id, resourceType = resourceType.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyHeadersIdOptionsResourceTypeCustomResourceType[T]]
   }

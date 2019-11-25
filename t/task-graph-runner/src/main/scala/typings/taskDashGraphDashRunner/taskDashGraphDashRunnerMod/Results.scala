@@ -13,7 +13,7 @@ trait Results[Item, Result] extends js.Object {
 object Results {
   @scala.inline
   def apply[Item, Result](safe: Boolean, values: Map[Item, Result]): Results[Item, Result] = {
-    val __obj = js.Dynamic.literal(safe = safe, values = values)
+    val __obj = js.Dynamic.literal(safe = safe.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Results[Item, Result]]
   }

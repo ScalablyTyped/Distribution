@@ -11,7 +11,7 @@ trait Anon_ShowDiff extends js.Object {
 object Anon_ShowDiff {
   @scala.inline
   def apply(showDiff: Boolean): Anon_ShowDiff = {
-    val __obj = js.Dynamic.literal(showDiff = showDiff)
+    val __obj = js.Dynamic.literal(showDiff = showDiff.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ShowDiff]
   }

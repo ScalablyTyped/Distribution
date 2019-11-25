@@ -13,7 +13,7 @@ trait Anon_ExcludedpermissionsInteractionsPermissionsAnonPyong extends js.Object
 object Anon_ExcludedpermissionsInteractionsPermissionsAnonPyong {
   @scala.inline
   def apply(excluded_permissions: js.Array[String], interactions: Anon_Pyong, permissions: js.Array[String]): Anon_ExcludedpermissionsInteractionsPermissionsAnonPyong = {
-    val __obj = js.Dynamic.literal(excluded_permissions = excluded_permissions, interactions = interactions, permissions = permissions)
+    val __obj = js.Dynamic.literal(excluded_permissions = excluded_permissions.asInstanceOf[js.Any], interactions = interactions.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExcludedpermissionsInteractionsPermissionsAnonPyong]
   }

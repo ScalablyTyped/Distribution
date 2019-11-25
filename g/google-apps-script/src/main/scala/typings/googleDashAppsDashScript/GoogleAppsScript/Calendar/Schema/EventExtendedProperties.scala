@@ -13,8 +13,8 @@ object EventExtendedProperties {
   @scala.inline
   def apply(`private`: js.Object = null, shared: js.Object = null): EventExtendedProperties = {
     val __obj = js.Dynamic.literal()
-    if (`private` != null) __obj.updateDynamic("private")(`private`)
-    if (shared != null) __obj.updateDynamic("shared")(shared)
+    if (`private` != null) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (shared != null) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventExtendedProperties]
   }
 }

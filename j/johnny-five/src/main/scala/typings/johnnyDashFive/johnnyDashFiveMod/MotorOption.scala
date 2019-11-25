@@ -25,13 +25,13 @@ object MotorOption {
     invertPWM: js.UndefOr[Boolean] = js.undefined,
     register: js.Any = null
   ): MotorOption = {
-    val __obj = js.Dynamic.literal(pins = pins)
+    val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (bits != null) __obj.updateDynamic("bits")(bits)
-    if (controller != null) __obj.updateDynamic("controller")(controller)
-    if (current != null) __obj.updateDynamic("current")(current)
-    if (!js.isUndefined(invertPWM)) __obj.updateDynamic("invertPWM")(invertPWM)
-    if (register != null) __obj.updateDynamic("register")(register)
+    if (bits != null) __obj.updateDynamic("bits")(bits.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (!js.isUndefined(invertPWM)) __obj.updateDynamic("invertPWM")(invertPWM.asInstanceOf[js.Any])
+    if (register != null) __obj.updateDynamic("register")(register.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotorOption]
   }
 }

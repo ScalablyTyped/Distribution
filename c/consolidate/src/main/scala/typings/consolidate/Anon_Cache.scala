@@ -17,8 +17,8 @@ object Anon_Cache {
     cache: js.UndefOr[Boolean] = js.undefined
   ): Anon_Cache = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cache]
   }
 }

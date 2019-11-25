@@ -63,12 +63,12 @@ object RollupCommonJSOptions {
   ): RollupCommonJSOptions = {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (!js.isUndefined(ignoreGlobal)) __obj.updateDynamic("ignoreGlobal")(ignoreGlobal)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreGlobal)) __obj.updateDynamic("ignoreGlobal")(ignoreGlobal.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (namedExports != null) __obj.updateDynamic("namedExports")(namedExports)
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (namedExports != null) __obj.updateDynamic("namedExports")(namedExports.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupCommonJSOptions]
   }
 }

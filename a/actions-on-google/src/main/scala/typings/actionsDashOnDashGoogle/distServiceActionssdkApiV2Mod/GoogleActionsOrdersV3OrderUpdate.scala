@@ -48,11 +48,11 @@ object GoogleActionsOrdersV3OrderUpdate {
     userNotification: GoogleActionsOrdersV3OrderUpdateUserNotification = null
   ): GoogleActionsOrdersV3OrderUpdate = {
     val __obj = js.Dynamic.literal()
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
-    if (userNotification != null) __obj.updateDynamic("userNotification")(userNotification)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
+    if (userNotification != null) __obj.updateDynamic("userNotification")(userNotification.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3OrderUpdate]
   }
 }

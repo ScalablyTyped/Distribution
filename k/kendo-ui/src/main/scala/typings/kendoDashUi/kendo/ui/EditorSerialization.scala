@@ -20,10 +20,10 @@ object EditorSerialization {
     semantic: js.UndefOr[Boolean] = js.undefined
   ): EditorSerialization = {
     val __obj = js.Dynamic.literal()
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities)
-    if (!js.isUndefined(scripts)) __obj.updateDynamic("scripts")(scripts)
-    if (!js.isUndefined(semantic)) __obj.updateDynamic("semantic")(semantic)
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (!js.isUndefined(scripts)) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
+    if (!js.isUndefined(semantic)) __obj.updateDynamic("semantic")(semantic.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorSerialization]
   }
 }

@@ -107,17 +107,17 @@ object Beacon {
     status: String = null
   ): Beacon = {
     val __obj = js.Dynamic.literal()
-    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId)
-    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (ephemeralIdRegistration != null) __obj.updateDynamic("ephemeralIdRegistration")(ephemeralIdRegistration)
-    if (expectedStability != null) __obj.updateDynamic("expectedStability")(expectedStability)
-    if (indoorLevel != null) __obj.updateDynamic("indoorLevel")(indoorLevel)
-    if (latLng != null) __obj.updateDynamic("latLng")(latLng)
-    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (provisioningKey != null) __obj.updateDynamic("provisioningKey")(provisioningKey)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId.asInstanceOf[js.Any])
+    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (ephemeralIdRegistration != null) __obj.updateDynamic("ephemeralIdRegistration")(ephemeralIdRegistration.asInstanceOf[js.Any])
+    if (expectedStability != null) __obj.updateDynamic("expectedStability")(expectedStability.asInstanceOf[js.Any])
+    if (indoorLevel != null) __obj.updateDynamic("indoorLevel")(indoorLevel.asInstanceOf[js.Any])
+    if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (provisioningKey != null) __obj.updateDynamic("provisioningKey")(provisioningKey.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Beacon]
   }
 }

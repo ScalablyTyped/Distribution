@@ -25,9 +25,9 @@ object _UnmarshalledVpcConfigResponse {
     VpcId: String = null
   ): _UnmarshalledVpcConfigResponse = {
     val __obj = js.Dynamic.literal()
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds)
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId)
+    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
+    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
+    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledVpcConfigResponse]
   }
 }

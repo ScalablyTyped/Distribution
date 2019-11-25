@@ -24,12 +24,12 @@ object PushPageOptions {
     pageHTML: String = null
   ): PushPageOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (page != null) __obj.updateDynamic("page")(page)
-    if (pageHTML != null) __obj.updateDynamic("pageHTML")(pageHTML)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (pageHTML != null) __obj.updateDynamic("pageHTML")(pageHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushPageOptions]
   }
 }

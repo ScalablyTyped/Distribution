@@ -25,8 +25,8 @@ object ITextFieldState {
     uncontrolledValue: String = null
   ): ITextFieldState = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused)
-    if (uncontrolledValue != null) __obj.updateDynamic("uncontrolledValue")(uncontrolledValue)
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
+    if (uncontrolledValue != null) __obj.updateDynamic("uncontrolledValue")(uncontrolledValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextFieldState]
   }
 }

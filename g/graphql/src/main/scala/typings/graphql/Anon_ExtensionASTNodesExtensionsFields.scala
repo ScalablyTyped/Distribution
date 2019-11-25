@@ -21,7 +21,7 @@ object Anon_ExtensionASTNodesExtensionsFields {
     fields: GraphQLInputFieldConfigMap,
     extensions: Maybe[Record[String, _]] = null
   ): Anon_ExtensionASTNodesExtensionsFields = {
-    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes, fields = fields)
+    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtensionASTNodesExtensionsFields]
   }

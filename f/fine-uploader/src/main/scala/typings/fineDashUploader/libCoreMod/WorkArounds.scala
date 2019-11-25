@@ -38,9 +38,9 @@ object WorkArounds {
     iosEmptyVideos: js.UndefOr[Boolean] = js.undefined
   ): WorkArounds = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ios8BrowserCrash)) __obj.updateDynamic("ios8BrowserCrash")(ios8BrowserCrash)
-    if (!js.isUndefined(ios8SafariUploads)) __obj.updateDynamic("ios8SafariUploads")(ios8SafariUploads)
-    if (!js.isUndefined(iosEmptyVideos)) __obj.updateDynamic("iosEmptyVideos")(iosEmptyVideos)
+    if (!js.isUndefined(ios8BrowserCrash)) __obj.updateDynamic("ios8BrowserCrash")(ios8BrowserCrash.asInstanceOf[js.Any])
+    if (!js.isUndefined(ios8SafariUploads)) __obj.updateDynamic("ios8SafariUploads")(ios8SafariUploads.asInstanceOf[js.Any])
+    if (!js.isUndefined(iosEmptyVideos)) __obj.updateDynamic("iosEmptyVideos")(iosEmptyVideos.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkArounds]
   }
 }

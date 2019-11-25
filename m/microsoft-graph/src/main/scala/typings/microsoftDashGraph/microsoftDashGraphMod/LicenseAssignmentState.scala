@@ -22,11 +22,11 @@ object LicenseAssignmentState {
     state: String = null
   ): LicenseAssignmentState = {
     val __obj = js.Dynamic.literal()
-    if (assignedByGroup != null) __obj.updateDynamic("assignedByGroup")(assignedByGroup)
-    if (disabledPlans != null) __obj.updateDynamic("disabledPlans")(disabledPlans)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (skuId != null) __obj.updateDynamic("skuId")(skuId)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (assignedByGroup != null) __obj.updateDynamic("assignedByGroup")(assignedByGroup.asInstanceOf[js.Any])
+    if (disabledPlans != null) __obj.updateDynamic("disabledPlans")(disabledPlans.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (skuId != null) __obj.updateDynamic("skuId")(skuId.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicenseAssignmentState]
   }
 }

@@ -18,8 +18,8 @@ trait DefinedName extends js.Object {
 object DefinedName {
   @scala.inline
   def apply(Name: String, Ref: String, Comment: String = null, Sheet: Int | Double = null): DefinedName = {
-    val __obj = js.Dynamic.literal(Name = Name, Ref = Ref)
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment)
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Ref = Ref.asInstanceOf[js.Any])
+    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
     if (Sheet != null) __obj.updateDynamic("Sheet")(Sheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinedName]
   }

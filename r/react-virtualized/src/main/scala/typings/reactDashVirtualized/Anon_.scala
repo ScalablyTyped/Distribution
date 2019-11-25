@@ -35,7 +35,7 @@ object Anon_ {
     scrollToColumn: `-1`,
     scrollToRow: `-1`
   ): Anon_ = {
-    val __obj = js.Dynamic.literal(classNameBottomLeftGrid = classNameBottomLeftGrid, classNameBottomRightGrid = classNameBottomRightGrid, classNameTopLeftGrid = classNameTopLeftGrid, classNameTopRightGrid = classNameTopRightGrid, enableFixedColumnScroll = enableFixedColumnScroll, enableFixedRowScroll = enableFixedRowScroll, fixedColumnCount = fixedColumnCount, fixedRowCount = fixedRowCount, scrollToColumn = scrollToColumn, scrollToRow = scrollToRow)
+    val __obj = js.Dynamic.literal(classNameBottomLeftGrid = classNameBottomLeftGrid.asInstanceOf[js.Any], classNameBottomRightGrid = classNameBottomRightGrid.asInstanceOf[js.Any], classNameTopLeftGrid = classNameTopLeftGrid.asInstanceOf[js.Any], classNameTopRightGrid = classNameTopRightGrid.asInstanceOf[js.Any], enableFixedColumnScroll = enableFixedColumnScroll.asInstanceOf[js.Any], enableFixedRowScroll = enableFixedRowScroll.asInstanceOf[js.Any], fixedColumnCount = fixedColumnCount.asInstanceOf[js.Any], fixedRowCount = fixedRowCount.asInstanceOf[js.Any], scrollToColumn = scrollToColumn.asInstanceOf[js.Any], scrollToRow = scrollToRow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_]
   }

@@ -16,7 +16,7 @@ trait ContextSizeResponse extends js.Object {
 object ContextSizeResponse {
   @scala.inline
   def apply(answer: Boolean, maxSize: Int | Double = null, minSize: Int | Double = null): ContextSizeResponse = {
-    val __obj = js.Dynamic.literal(answer = answer)
+    val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextSizeResponse]

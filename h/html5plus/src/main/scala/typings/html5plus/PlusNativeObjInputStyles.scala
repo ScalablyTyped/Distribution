@@ -112,14 +112,14 @@ object PlusNativeObjInputStyles {
     `type`: email | number | search | tel | text | url = null
   ): PlusNativeObjInputStyles = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth)
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjInputStyles]
   }

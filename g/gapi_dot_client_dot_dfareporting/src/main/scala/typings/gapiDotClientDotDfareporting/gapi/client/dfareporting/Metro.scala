@@ -33,13 +33,13 @@ object Metro {
     name: String = null
   ): Metro = {
     val __obj = js.Dynamic.literal()
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (countryDartId != null) __obj.updateDynamic("countryDartId")(countryDartId)
-    if (dartId != null) __obj.updateDynamic("dartId")(dartId)
-    if (dmaId != null) __obj.updateDynamic("dmaId")(dmaId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metroCode != null) __obj.updateDynamic("metroCode")(metroCode)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (countryDartId != null) __obj.updateDynamic("countryDartId")(countryDartId.asInstanceOf[js.Any])
+    if (dartId != null) __obj.updateDynamic("dartId")(dartId.asInstanceOf[js.Any])
+    if (dmaId != null) __obj.updateDynamic("dmaId")(dmaId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metroCode != null) __obj.updateDynamic("metroCode")(metroCode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metro]
   }
 }

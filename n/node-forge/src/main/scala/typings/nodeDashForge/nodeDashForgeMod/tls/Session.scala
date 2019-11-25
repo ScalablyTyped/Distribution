@@ -30,12 +30,12 @@ object Session {
     serverCertificate: Certificate = null,
     version: ProtocolVersion = null
   ): Session = {
-    val __obj = js.Dynamic.literal(extensions = extensions, md5 = md5, sha1 = sha1)
-    if (cipherSuite != null) __obj.updateDynamic("cipherSuite")(cipherSuite)
-    if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate)
-    if (compressionMethod != null) __obj.updateDynamic("compressionMethod")(compressionMethod)
-    if (serverCertificate != null) __obj.updateDynamic("serverCertificate")(serverCertificate)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any])
+    if (cipherSuite != null) __obj.updateDynamic("cipherSuite")(cipherSuite.asInstanceOf[js.Any])
+    if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate.asInstanceOf[js.Any])
+    if (compressionMethod != null) __obj.updateDynamic("compressionMethod")(compressionMethod.asInstanceOf[js.Any])
+    if (serverCertificate != null) __obj.updateDynamic("serverCertificate")(serverCertificate.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
 }

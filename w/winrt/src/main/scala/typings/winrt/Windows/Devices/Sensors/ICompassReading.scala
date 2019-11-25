@@ -14,7 +14,7 @@ trait ICompassReading extends js.Object {
 object ICompassReading {
   @scala.inline
   def apply(headingMagneticNorth: Double, headingTrueNorth: Double, timestamp: Date): ICompassReading = {
-    val __obj = js.Dynamic.literal(headingMagneticNorth = headingMagneticNorth, headingTrueNorth = headingTrueNorth, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(headingMagneticNorth = headingMagneticNorth.asInstanceOf[js.Any], headingTrueNorth = headingTrueNorth.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICompassReading]
   }

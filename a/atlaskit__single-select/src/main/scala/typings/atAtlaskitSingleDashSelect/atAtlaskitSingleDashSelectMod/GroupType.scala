@@ -12,8 +12,8 @@ trait GroupType extends js.Object {
 object GroupType {
   @scala.inline
   def apply(items: js.Array[ItemType], heading: String = null): GroupType = {
-    val __obj = js.Dynamic.literal(items = items)
-    if (heading != null) __obj.updateDynamic("heading")(heading)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupType]
   }
 }

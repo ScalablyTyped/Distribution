@@ -29,7 +29,7 @@ object PutOptions {
     y: Double,
     direction: right | left | up | down = null
   ): PutOptions = {
-    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], dx = dx, dy = dy, wrap = wrap, x = x, y = y)
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutOptions]
   }

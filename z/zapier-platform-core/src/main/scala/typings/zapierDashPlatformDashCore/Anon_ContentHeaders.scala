@@ -21,7 +21,7 @@ object Anon_ContentHeaders {
     method: HttpMethod,
     querystring: StringDictionary[String]
   ): Anon_ContentHeaders = {
-    val __obj = js.Dynamic.literal(content = content, headers = headers, method = method, querystring = querystring)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], querystring = querystring.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentHeaders]
   }

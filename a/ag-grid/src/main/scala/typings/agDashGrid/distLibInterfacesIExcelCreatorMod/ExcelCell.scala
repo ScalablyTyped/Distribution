@@ -13,7 +13,7 @@ trait ExcelCell extends js.Object {
 object ExcelCell {
   @scala.inline
   def apply(data: ExcelData, styleId: String, mergeAcross: Int | Double = null): ExcelCell = {
-    val __obj = js.Dynamic.literal(data = data, styleId = styleId)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
     if (mergeAcross != null) __obj.updateDynamic("mergeAcross")(mergeAcross.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelCell]
   }

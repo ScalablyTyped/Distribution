@@ -66,11 +66,11 @@ object TokenInfo {
     sub: String = null,
     user_id: String = null
   ): TokenInfo = {
-    val __obj = js.Dynamic.literal(aud = aud, expiry_date = expiry_date, scopes = scopes)
-    if (access_type != null) __obj.updateDynamic("access_type")(access_type)
-    if (azp != null) __obj.updateDynamic("azp")(azp)
-    if (sub != null) __obj.updateDynamic("sub")(sub)
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(aud = aud.asInstanceOf[js.Any], expiry_date = expiry_date.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
+    if (access_type != null) __obj.updateDynamic("access_type")(access_type.asInstanceOf[js.Any])
+    if (azp != null) __obj.updateDynamic("azp")(azp.asInstanceOf[js.Any])
+    if (sub != null) __obj.updateDynamic("sub")(sub.asInstanceOf[js.Any])
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenInfo]
   }
 }

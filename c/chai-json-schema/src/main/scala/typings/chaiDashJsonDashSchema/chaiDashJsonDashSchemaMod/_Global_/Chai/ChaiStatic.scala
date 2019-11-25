@@ -12,7 +12,7 @@ trait ChaiStatic extends js.Object {
 object ChaiStatic {
   @scala.inline
   def apply(tv4: TV4): ChaiStatic = {
-    val __obj = js.Dynamic.literal(tv4 = tv4)
+    val __obj = js.Dynamic.literal(tv4 = tv4.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChaiStatic]
   }

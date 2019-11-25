@@ -17,3 +17,26 @@ import scala.scalajs.js.annotation._
 */
 trait ChartType extends js.Object
 
+object ChartType {
+  @scala.inline
+  def bar: typings.chartDotJs.chartDotJsStrings.bar = this.cast("bar")
+  @scala.inline
+  def bubble: typings.chartDotJs.chartDotJsStrings.bubble = this.cast("bubble")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def doughnut: typings.chartDotJs.chartDotJsStrings.doughnut = this.cast("doughnut")
+  @scala.inline
+  def horizontalBar: typings.chartDotJs.chartDotJsStrings.horizontalBar = this.cast("horizontalBar")
+  @scala.inline
+  def line: typings.chartDotJs.chartDotJsStrings.line = this.cast("line")
+  @scala.inline
+  def pie: typings.chartDotJs.chartDotJsStrings.pie = this.cast("pie")
+  @scala.inline
+  def polarArea: typings.chartDotJs.chartDotJsStrings.polarArea = this.cast("polarArea")
+  @scala.inline
+  def radar: typings.chartDotJs.chartDotJsStrings.radar = this.cast("radar")
+  @scala.inline
+  def scatter: typings.chartDotJs.chartDotJsStrings.scatter = this.cast("scatter")
+}
+

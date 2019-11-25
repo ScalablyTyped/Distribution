@@ -95,18 +95,18 @@ object IColorSliderProps {
     value: Int | Double = null
   ): IColorSliderProps = {
     val __obj = js.Dynamic.literal()
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAlpha)) __obj.updateDynamic("isAlpha")(isAlpha)
+    if (!js.isUndefined(isAlpha)) __obj.updateDynamic("isAlpha")(isAlpha.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor)
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
+    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor.asInstanceOf[js.Any])
+    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (thumbColor != null) __obj.updateDynamic("thumbColor")(thumbColor)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (thumbColor != null) __obj.updateDynamic("thumbColor")(thumbColor.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorSliderProps]
   }

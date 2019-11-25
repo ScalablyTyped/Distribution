@@ -45,17 +45,17 @@ object PaginationProps {
     prevProps: StringDictionary[js.Any] = null,
     totalText: String = null
   ): PaginationProps = {
-    val __obj = js.Dynamic.literal(itemsTotal = itemsTotal, onClick = js.Any.fromFunction1(onClick))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(displayTotal)) __obj.updateDynamic("displayTotal")(displayTotal)
+    val __obj = js.Dynamic.literal(itemsTotal = itemsTotal.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayTotal)) __obj.updateDynamic("displayTotal")(displayTotal.asInstanceOf[js.Any])
     if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
     if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
-    if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps)
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText)
-    if (nextProps != null) __obj.updateDynamic("nextProps")(nextProps)
-    if (prevProps != null) __obj.updateDynamic("prevProps")(prevProps)
-    if (totalText != null) __obj.updateDynamic("totalText")(totalText)
+    if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps.asInstanceOf[js.Any])
+    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
+    if (nextProps != null) __obj.updateDynamic("nextProps")(nextProps.asInstanceOf[js.Any])
+    if (prevProps != null) __obj.updateDynamic("prevProps")(prevProps.asInstanceOf[js.Any])
+    if (totalText != null) __obj.updateDynamic("totalText")(totalText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
 }

@@ -18,8 +18,8 @@ trait Deployment extends js.Object {
 object Deployment {
   @scala.inline
   def apply(properties: DeploymentProperties, location: String = null): Deployment = {
-    val __obj = js.Dynamic.literal(properties = properties)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
   }
 }

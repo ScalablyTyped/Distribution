@@ -21,11 +21,11 @@ object RadialGradientConfiguration {
     position: String = null,
     shape: String = null
   ): RadialGradientConfiguration = {
-    val __obj = js.Dynamic.literal(colorStops = colorStops)
-    if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    val __obj = js.Dynamic.literal(colorStops = colorStops.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialGradientConfiguration]
   }
 }

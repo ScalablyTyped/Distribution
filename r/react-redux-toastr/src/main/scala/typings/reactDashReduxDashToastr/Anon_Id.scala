@@ -21,7 +21,7 @@ object Anon_Id {
     options: ConfirmToastrOptions | ConfirmToastrCustomOptions,
     show: Boolean
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal(id = id, message = message, options = options.asInstanceOf[js.Any], show = show)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Id]
   }

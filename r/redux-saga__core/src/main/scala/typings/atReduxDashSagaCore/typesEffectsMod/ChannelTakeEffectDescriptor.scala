@@ -20,9 +20,9 @@ object ChannelTakeEffectDescriptor {
     maybe: js.UndefOr[Boolean] = js.undefined,
     pattern: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Pattern<T> */ js.Any = null
   ): ChannelTakeEffectDescriptor[T] = {
-    val __obj = js.Dynamic.literal(channel = channel)
-    if (!js.isUndefined(maybe)) __obj.updateDynamic("maybe")(maybe)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
+    if (!js.isUndefined(maybe)) __obj.updateDynamic("maybe")(maybe.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelTakeEffectDescriptor[T]]
   }
 }

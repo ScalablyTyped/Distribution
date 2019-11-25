@@ -24,10 +24,10 @@ object ArtistAlbumsParams {
     val __obj = js.Dynamic.literal()
     if (artist_id != null) __obj.updateDynamic("artist_id")(artist_id.asInstanceOf[js.Any])
     if (artist_mbid != null) __obj.updateDynamic("artist_mbid")(artist_mbid.asInstanceOf[js.Any])
-    if (g_album_name != null) __obj.updateDynamic("g_album_name")(g_album_name)
+    if (g_album_name != null) __obj.updateDynamic("g_album_name")(g_album_name.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
-    if (s_release_date != null) __obj.updateDynamic("s_release_date")(s_release_date)
+    if (s_release_date != null) __obj.updateDynamic("s_release_date")(s_release_date.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtistAlbumsParams]
   }
 }

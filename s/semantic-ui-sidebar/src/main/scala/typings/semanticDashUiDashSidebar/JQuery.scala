@@ -87,12 +87,12 @@ trait JQuery extends js.Object {
   @JSName("sidebar")
   def sidebar_setting(behavior: setting, value: SidebarSettings): JQuery = js.native
   @JSName("sidebar")
-  def sidebar_setting[K /* <: String */](behavior: setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl[K] */ js.Any = js.native
+  def sidebar_setting[K /* <: String */](behavior: setting, name: K): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl[K] */ js.Any = js.native
   @JSName("sidebar")
   def sidebar_setting[K /* <: String */](
     behavior: setting,
     name: K,
-    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl[K] */ js.Any
   ): JQuery = js.native
   /**
     * Shows sidebar

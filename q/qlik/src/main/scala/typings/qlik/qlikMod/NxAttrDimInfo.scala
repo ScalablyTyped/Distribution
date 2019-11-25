@@ -21,7 +21,7 @@ object NxAttrDimInfo {
     qLocked: Boolean,
     qSize: Size
   ): NxAttrDimInfo = {
-    val __obj = js.Dynamic.literal(qCardinal = qCardinal, qError = qError, qFallbackTitle = qFallbackTitle, qLocked = qLocked, qSize = qSize)
+    val __obj = js.Dynamic.literal(qCardinal = qCardinal.asInstanceOf[js.Any], qError = qError.asInstanceOf[js.Any], qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qLocked = qLocked.asInstanceOf[js.Any], qSize = qSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NxAttrDimInfo]
   }

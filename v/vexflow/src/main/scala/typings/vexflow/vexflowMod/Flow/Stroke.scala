@@ -21,6 +21,5 @@ class Stroke protected ()
 object Stroke extends js.Object {
   val CATEGORY: String = js.native
   def format(strokes: js.Array[typings.vexflow.Vex.Flow.Stroke], state: Anon_Leftshift): Boolean = js.native
-  type Type = typings.vexflow.Vex.Flow.Stroke.Type
 }
 

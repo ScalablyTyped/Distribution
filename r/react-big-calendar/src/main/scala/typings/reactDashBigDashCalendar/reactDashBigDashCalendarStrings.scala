@@ -48,13 +48,13 @@ object reactDashBigDashCalendarStrings {
   sealed trait WORK_WEEK extends ViewKey
   
   @js.native
-  sealed trait agenda extends View
+  sealed trait agenda_ extends View
   
   @js.native
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait day extends View
+  sealed trait day_ extends View
   
   @js.native
   sealed trait doubleClick extends js.Object
@@ -63,7 +63,7 @@ object reactDashBigDashCalendarStrings {
   sealed trait ignoreEvents extends js.Object
   
   @js.native
-  sealed trait month extends View
+  sealed trait month_ extends View
   
   @js.native
   sealed trait move extends js.Object
@@ -75,10 +75,10 @@ object reactDashBigDashCalendarStrings {
   sealed trait select extends js.Object
   
   @js.native
-  sealed trait week extends View
+  sealed trait week_ extends View
   
   @js.native
-  sealed trait work_week extends View
+  sealed trait work_week_ extends View
   
   @scala.inline
   def AGENDA: AGENDA = "AGENDA".asInstanceOf[AGENDA]
@@ -107,17 +107,17 @@ object reactDashBigDashCalendarStrings {
   @scala.inline
   def WORK_WEEK: WORK_WEEK = "WORK_WEEK".asInstanceOf[WORK_WEEK]
   @scala.inline
-  def agenda: agenda = "agenda".asInstanceOf[agenda]
+  def agenda_ : agenda_ = "agenda".asInstanceOf[agenda_]
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
-  def day: day = "day".asInstanceOf[day]
+  def day_ : day_ = "day".asInstanceOf[day_]
   @scala.inline
   def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
   @scala.inline
   def ignoreEvents: ignoreEvents = "ignoreEvents".asInstanceOf[ignoreEvents]
   @scala.inline
-  def month: month = "month".asInstanceOf[month]
+  def month_ : month_ = "month".asInstanceOf[month_]
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   @scala.inline
@@ -125,8 +125,8 @@ object reactDashBigDashCalendarStrings {
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline
-  def week: week = "week".asInstanceOf[week]
+  def week_ : week_ = "week".asInstanceOf[week_]
   @scala.inline
-  def work_week: work_week = "work_week".asInstanceOf[work_week]
+  def work_week_ : work_week_ = "work_week".asInstanceOf[work_week_]
 }
 

@@ -86,7 +86,7 @@ object EndpointDescriptor {
       Exclude[String, periodic | notification | explicitFeedback | data | feedback]
     ] = null
   ): EndpointDescriptor = {
-    val __obj = js.Dynamic.literal(address = address, direction = direction.asInstanceOf[js.Any], extra_data = extra_data, maximumPacketSize = maximumPacketSize)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], extra_data = extra_data.asInstanceOf[js.Any], maximumPacketSize = maximumPacketSize.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (pollingInterval != null) __obj.updateDynamic("pollingInterval")(pollingInterval.asInstanceOf[js.Any])
     if (synchronization != null) __obj.updateDynamic("synchronization")(synchronization.asInstanceOf[js.Any])

@@ -95,19 +95,19 @@ object Configuration {
     stickyReconnect: js.UndefOr[Boolean] = js.undefined,
     useWorkerScheduler: js.UndefOr[Boolean] = js.undefined
   ): Configuration = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (!js.isUndefined(appendMessageTypeToURL)) __obj.updateDynamic("appendMessageTypeToURL")(appendMessageTypeToURL)
-    if (!js.isUndefined(autoBatch)) __obj.updateDynamic("autoBatch")(autoBatch)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendMessageTypeToURL)) __obj.updateDynamic("appendMessageTypeToURL")(appendMessageTypeToURL.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBatch)) __obj.updateDynamic("autoBatch")(autoBatch.asInstanceOf[js.Any])
     if (backoffIncrement != null) __obj.updateDynamic("backoffIncrement")(backoffIncrement.asInstanceOf[js.Any])
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (maxBackoff != null) __obj.updateDynamic("maxBackoff")(maxBackoff.asInstanceOf[js.Any])
     if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
     if (maxNetworkDelay != null) __obj.updateDynamic("maxNetworkDelay")(maxNetworkDelay.asInstanceOf[js.Any])
     if (maxURILength != null) __obj.updateDynamic("maxURILength")(maxURILength.asInstanceOf[js.Any])
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
-    if (!js.isUndefined(stickyReconnect)) __obj.updateDynamic("stickyReconnect")(stickyReconnect)
-    if (!js.isUndefined(useWorkerScheduler)) __obj.updateDynamic("useWorkerScheduler")(useWorkerScheduler)
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickyReconnect)) __obj.updateDynamic("stickyReconnect")(stickyReconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWorkerScheduler)) __obj.updateDynamic("useWorkerScheduler")(useWorkerScheduler.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

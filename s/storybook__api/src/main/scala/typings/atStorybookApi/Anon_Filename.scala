@@ -18,8 +18,8 @@ object Anon_Filename {
     options: Anon_HierarchyRootSeparator,
     StringDictionary: /* parameterName */ StringDictionary[js.Any] = null
   ): Anon_Filename = {
-    val __obj = js.Dynamic.literal(filename = filename, options = options)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Filename]
   }
 }

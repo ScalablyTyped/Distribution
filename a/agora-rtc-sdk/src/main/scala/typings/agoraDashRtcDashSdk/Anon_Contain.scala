@@ -37,7 +37,7 @@ object Anon_Contain {
   def apply(fit: cover | contain = null, muted: js.UndefOr[Boolean] = js.undefined): Anon_Contain = {
     val __obj = js.Dynamic.literal()
     if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Contain]
   }
 }

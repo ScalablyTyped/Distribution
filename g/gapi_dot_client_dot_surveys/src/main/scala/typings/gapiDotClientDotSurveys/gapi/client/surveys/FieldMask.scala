@@ -13,7 +13,7 @@ object FieldMask {
   @scala.inline
   def apply(fields: js.Array[FieldMask] = null, id: Int | Double = null): FieldMask = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldMask]
   }

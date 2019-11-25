@@ -54,15 +54,15 @@ object Options {
     rootPath: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last)
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (maxage != null) __obj.updateDynamic("maxage")(maxage.asInstanceOf[js.Any])
-    if (notFoundFile != null) __obj.updateDynamic("notFoundFile")(notFoundFile)
-    if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir)
-    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath)
+    if (notFoundFile != null) __obj.updateDynamic("notFoundFile")(notFoundFile.asInstanceOf[js.Any])
+    if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir.asInstanceOf[js.Any])
+    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

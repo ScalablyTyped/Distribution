@@ -14,7 +14,7 @@ trait RowBufferInterface extends js.Object {
 object RowBufferInterface {
   @scala.inline
   def apply(columnData: StringDictionary[Anon_Count], rowCount: Double): RowBufferInterface = {
-    val __obj = js.Dynamic.literal(columnData = columnData, rowCount = rowCount)
+    val __obj = js.Dynamic.literal(columnData = columnData.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RowBufferInterface]
   }

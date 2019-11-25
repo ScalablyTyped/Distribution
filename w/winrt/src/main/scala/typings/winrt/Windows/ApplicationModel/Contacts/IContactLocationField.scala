@@ -27,8 +27,8 @@ object IContactLocationField {
     unstructuredAddress: String,
     value: String
   ): IContactLocationField = {
-    val __obj = js.Dynamic.literal(category = category, city = city, country = country, name = name, postalCode = postalCode, region = region, street = street, unstructuredAddress = unstructuredAddress, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], unstructuredAddress = unstructuredAddress.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContactLocationField]
   }
 }

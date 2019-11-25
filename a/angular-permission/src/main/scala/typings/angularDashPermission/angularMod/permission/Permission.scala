@@ -18,7 +18,7 @@ object Permission {
     validatePermission: () => IPromise[_],
     validationFunction: (/* permissionName */ js.UndefOr[String], /* transitionProperties */ js.UndefOr[TransitionProperties]) => Boolean | IPromise[js.Any] = null
   ): Permission = {
-    val __obj = js.Dynamic.literal(permissionName = permissionName, validatePermission = js.Any.fromFunction0(validatePermission))
+    val __obj = js.Dynamic.literal(permissionName = permissionName.asInstanceOf[js.Any], validatePermission = js.Any.fromFunction0(validatePermission))
     if (validationFunction != null) __obj.updateDynamic("validationFunction")(js.Any.fromFunction2(validationFunction))
     __obj.asInstanceOf[Permission]
   }

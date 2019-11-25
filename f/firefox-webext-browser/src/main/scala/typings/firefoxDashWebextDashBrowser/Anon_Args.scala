@@ -19,10 +19,10 @@ object Anon_Args {
   @scala.inline
   def apply(args: js.Array[_] = null, result: js.Object = null, tabId: Int | Double = null, url: String = null): Anon_Args = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Args]
   }
 }

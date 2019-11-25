@@ -13,7 +13,7 @@ trait ClusterType extends js.Object {
 object ClusterType {
   @scala.inline
   def apply(accessKeyId: String, accessKeySecret: String, host: String): ClusterType = {
-    val __obj = js.Dynamic.literal(accessKeyId = accessKeyId, accessKeySecret = accessKeySecret, host = host)
+    val __obj = js.Dynamic.literal(accessKeyId = accessKeyId.asInstanceOf[js.Any], accessKeySecret = accessKeySecret.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClusterType]
   }

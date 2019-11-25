@@ -13,7 +13,7 @@ object Configuration {
   @scala.inline
   def apply(serve: Options = null): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (serve != null) __obj.updateDynamic("serve")(serve)
+    if (serve != null) __obj.updateDynamic("serve")(serve.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

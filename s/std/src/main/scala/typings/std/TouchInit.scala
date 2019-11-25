@@ -41,7 +41,7 @@ object TouchInit {
     screenY: Int | Double = null,
     touchType: TouchType = null
   ): TouchInit = {
-    val __obj = js.Dynamic.literal(identifier = identifier, target = target)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     if (altitudeAngle != null) __obj.updateDynamic("altitudeAngle")(altitudeAngle.asInstanceOf[js.Any])
     if (azimuthAngle != null) __obj.updateDynamic("azimuthAngle")(azimuthAngle.asInstanceOf[js.Any])
     if (clientX != null) __obj.updateDynamic("clientX")(clientX.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object TouchInit {
     if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
     if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
     if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])
-    if (touchType != null) __obj.updateDynamic("touchType")(touchType)
+    if (touchType != null) __obj.updateDynamic("touchType")(touchType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchInit]
   }
 }

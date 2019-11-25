@@ -15,8 +15,8 @@ trait UtteranceAnalyses extends js.Object {
 object UtteranceAnalyses {
   @scala.inline
   def apply(utterances_tone: js.Array[UtteranceAnalysis], warning: String = null): UtteranceAnalyses = {
-    val __obj = js.Dynamic.literal(utterances_tone = utterances_tone)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(utterances_tone = utterances_tone.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[UtteranceAnalyses]
   }
 }

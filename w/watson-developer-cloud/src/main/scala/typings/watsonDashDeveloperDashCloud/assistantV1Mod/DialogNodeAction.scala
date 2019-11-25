@@ -27,10 +27,10 @@ object DialogNodeAction {
     credentials: String = null,
     parameters: js.Object = null
   ): DialogNodeAction = {
-    val __obj = js.Dynamic.literal(name = name, result_variable = result_variable)
-    if (action_type != null) __obj.updateDynamic("action_type")(action_type)
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], result_variable = result_variable.asInstanceOf[js.Any])
+    if (action_type != null) __obj.updateDynamic("action_type")(action_type.asInstanceOf[js.Any])
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeAction]
   }
 }

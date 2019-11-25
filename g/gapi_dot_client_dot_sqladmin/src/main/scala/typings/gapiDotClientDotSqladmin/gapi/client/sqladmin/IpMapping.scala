@@ -23,9 +23,9 @@ object IpMapping {
   @scala.inline
   def apply(ipAddress: String = null, timeToRetire: String = null, `type`: String = null): IpMapping = {
     val __obj = js.Dynamic.literal()
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
-    if (timeToRetire != null) __obj.updateDynamic("timeToRetire")(timeToRetire)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (timeToRetire != null) __obj.updateDynamic("timeToRetire")(timeToRetire.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpMapping]
   }
 }

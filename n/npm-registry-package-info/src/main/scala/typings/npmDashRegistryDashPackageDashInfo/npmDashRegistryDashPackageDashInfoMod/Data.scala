@@ -13,7 +13,7 @@ trait Data extends js.Object {
 object Data {
   @scala.inline
   def apply(data: js.Any, meta: Anon_Failure): Data = {
-    val __obj = js.Dynamic.literal(data = data, meta = meta)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Data]
   }

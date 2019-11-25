@@ -26,8 +26,8 @@ object TimeScale {
     precision: millisecond | second | minute | hour | month | year | day = null
   ): TimeScale = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (format != null) __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeScale]
   }

@@ -13,7 +13,7 @@ object SessionOptions {
   @scala.inline
   def apply(delegate: SessionDelegate = null): SessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (delegate != null) __obj.updateDynamic("delegate")(delegate)
+    if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
 }

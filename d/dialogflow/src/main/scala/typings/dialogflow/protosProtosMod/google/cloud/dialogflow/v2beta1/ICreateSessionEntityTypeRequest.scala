@@ -16,8 +16,8 @@ object ICreateSessionEntityTypeRequest {
   @scala.inline
   def apply(parent: String = null, sessionEntityType: ISessionEntityType = null): ICreateSessionEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (sessionEntityType != null) __obj.updateDynamic("sessionEntityType")(sessionEntityType)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (sessionEntityType != null) __obj.updateDynamic("sessionEntityType")(sessionEntityType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateSessionEntityTypeRequest]
   }
 }

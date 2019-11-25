@@ -15,9 +15,9 @@ object Anon_DataLabelsTitle {
   @scala.inline
   def apply(data: CSSProperties = null, labels: CSSProperties = null, title: CSSProperties = null): Anon_DataLabelsTitle = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataLabelsTitle]
   }
 }

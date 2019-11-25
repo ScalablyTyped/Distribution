@@ -13,7 +13,7 @@ trait Anon_FlatOffset extends js.Object {
 object Anon_FlatOffset {
   @scala.inline
   def apply(flatOffset: Double, origDataId: DataId): Anon_FlatOffset = {
-    val __obj = js.Dynamic.literal(flatOffset = flatOffset, origDataId = origDataId)
+    val __obj = js.Dynamic.literal(flatOffset = flatOffset.asInstanceOf[js.Any], origDataId = origDataId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FlatOffset]
   }

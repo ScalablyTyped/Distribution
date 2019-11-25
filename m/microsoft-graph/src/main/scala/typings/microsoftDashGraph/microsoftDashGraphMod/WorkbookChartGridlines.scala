@@ -19,9 +19,9 @@ object WorkbookChartGridlines {
     visible: js.UndefOr[Boolean] = js.undefined
   ): WorkbookChartGridlines = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartGridlines]
   }
 }

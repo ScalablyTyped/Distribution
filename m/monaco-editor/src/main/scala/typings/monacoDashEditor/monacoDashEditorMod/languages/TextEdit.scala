@@ -15,8 +15,8 @@ trait TextEdit extends js.Object {
 object TextEdit {
   @scala.inline
   def apply(range: IRange, text: String, eol: EndOfLineSequence = null): TextEdit = {
-    val __obj = js.Dynamic.literal(range = range, text = text)
-    if (eol != null) __obj.updateDynamic("eol")(eol)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEdit]
   }
 }

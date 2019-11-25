@@ -15,7 +15,7 @@ trait Anon_BinaryEncoding extends js.Object {
 object Anon_BinaryEncoding {
   @scala.inline
   def apply(encoding: binary, name: String, namespace: UuidTypes): Anon_BinaryEncoding = {
-    val __obj = js.Dynamic.literal(encoding = encoding, name = name, namespace = namespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BinaryEncoding]
   }

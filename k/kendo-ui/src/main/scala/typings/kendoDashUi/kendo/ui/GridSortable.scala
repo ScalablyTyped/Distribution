@@ -20,10 +20,10 @@ object GridSortable {
     showIndexes: js.UndefOr[Boolean] = js.undefined
   ): GridSortable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnsort)) __obj.updateDynamic("allowUnsort")(allowUnsort)
-    if (initialDirection != null) __obj.updateDynamic("initialDirection")(initialDirection)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (!js.isUndefined(showIndexes)) __obj.updateDynamic("showIndexes")(showIndexes)
+    if (!js.isUndefined(allowUnsort)) __obj.updateDynamic("allowUnsort")(allowUnsort.asInstanceOf[js.Any])
+    if (initialDirection != null) __obj.updateDynamic("initialDirection")(initialDirection.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIndexes)) __obj.updateDynamic("showIndexes")(showIndexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridSortable]
   }
 }

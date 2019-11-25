@@ -13,8 +13,8 @@ object Config {
   @scala.inline
   def apply(field: js.Any = null, message: String = null): Config = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

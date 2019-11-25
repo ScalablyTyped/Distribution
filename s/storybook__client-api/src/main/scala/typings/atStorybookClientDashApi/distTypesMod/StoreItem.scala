@@ -30,7 +30,7 @@ object StoreItem {
     story: String,
     storyFn: /* p */ js.UndefOr[StoryContext] => _
   ): StoreItem = {
-    val __obj = js.Dynamic.literal(getDecorated = js.Any.fromFunction0(getDecorated), getOriginal = js.Any.fromFunction0(getOriginal), hooks = hooks, id = id, kind = kind, name = name, parameters = parameters, story = story, storyFn = js.Any.fromFunction1(storyFn))
+    val __obj = js.Dynamic.literal(getDecorated = js.Any.fromFunction0(getDecorated), getOriginal = js.Any.fromFunction0(getOriginal), hooks = hooks.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any], storyFn = js.Any.fromFunction1(storyFn))
   
     __obj.asInstanceOf[StoreItem]
   }

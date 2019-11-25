@@ -11,7 +11,7 @@ trait Anon_PreAuthTx extends js.Object {
 object Anon_PreAuthTx {
   @scala.inline
   def apply(preAuthTx: js.Any): Anon_PreAuthTx = {
-    val __obj = js.Dynamic.literal(preAuthTx = preAuthTx)
+    val __obj = js.Dynamic.literal(preAuthTx = preAuthTx.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PreAuthTx]
   }

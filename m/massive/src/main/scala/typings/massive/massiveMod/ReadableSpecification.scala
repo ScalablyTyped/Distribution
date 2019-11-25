@@ -18,8 +18,8 @@ trait ReadableSpecification extends js.Object {
 object ReadableSpecification {
   @scala.inline
   def apply(db: Database, name: String, schema: String, is_matview: js.UndefOr[Boolean] = js.undefined): ReadableSpecification = {
-    val __obj = js.Dynamic.literal(db = db, name = name, schema = schema)
-    if (!js.isUndefined(is_matview)) __obj.updateDynamic("is_matview")(is_matview)
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_matview)) __obj.updateDynamic("is_matview")(is_matview.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableSpecification]
   }
 }

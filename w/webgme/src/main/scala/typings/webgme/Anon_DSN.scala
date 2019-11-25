@@ -13,8 +13,8 @@ trait Anon_DSN extends js.Object {
 object Anon_DSN {
   @scala.inline
   def apply(DSN: String, enable: Boolean, ravenOptions: String = null): Anon_DSN = {
-    val __obj = js.Dynamic.literal(DSN = DSN, enable = enable)
-    if (ravenOptions != null) __obj.updateDynamic("ravenOptions")(ravenOptions)
+    val __obj = js.Dynamic.literal(DSN = DSN.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any])
+    if (ravenOptions != null) __obj.updateDynamic("ravenOptions")(ravenOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DSN]
   }
 }

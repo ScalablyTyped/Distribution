@@ -12,7 +12,7 @@ trait Anon_ArgsMsgNumberString extends js.Object {
 object Anon_ArgsMsgNumberString {
   @scala.inline
   def apply(args: Double, msg: String): Anon_ArgsMsgNumberString = {
-    val __obj = js.Dynamic.literal(args = args, msg = msg)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArgsMsgNumberString]
   }

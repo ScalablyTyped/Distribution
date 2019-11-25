@@ -44,10 +44,10 @@ object MessageSender {
   ): MessageSender = {
     val __obj = js.Dynamic.literal()
     if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (tab != null) __obj.updateDynamic("tab")(tab)
-    if (tlsChannelId != null) __obj.updateDynamic("tlsChannelId")(tlsChannelId)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
+    if (tlsChannelId != null) __obj.updateDynamic("tlsChannelId")(tlsChannelId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageSender]
   }
 }

@@ -45,17 +45,17 @@ object IConnectPacket {
     username: String = null,
     will: Anon_Payload = null
   ): IConnectPacket = {
-    val __obj = js.Dynamic.literal(clientId = clientId, cmd = cmd)
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean)
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any])
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
     if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (protocolId != null) __obj.updateDynamic("protocolId")(protocolId.asInstanceOf[js.Any])
     if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
-    if (will != null) __obj.updateDynamic("will")(will)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (will != null) __obj.updateDynamic("will")(will.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnectPacket]
   }
 }

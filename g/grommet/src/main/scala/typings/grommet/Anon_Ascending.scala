@@ -20,10 +20,10 @@ object Anon_Ascending {
     expand: js.Any = null
   ): Anon_Ascending = {
     val __obj = js.Dynamic.literal()
-    if (ascending != null) __obj.updateDynamic("ascending")(ascending)
-    if (contract != null) __obj.updateDynamic("contract")(contract)
-    if (descending != null) __obj.updateDynamic("descending")(descending)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (ascending != null) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
+    if (contract != null) __obj.updateDynamic("contract")(contract.asInstanceOf[js.Any])
+    if (descending != null) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ascending]
   }
 }

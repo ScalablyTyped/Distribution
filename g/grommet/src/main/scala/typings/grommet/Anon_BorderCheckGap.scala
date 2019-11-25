@@ -26,13 +26,13 @@ object Anon_BorderCheckGap {
     size: String = null
   ): Anon_BorderCheckGap = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (check != null) __obj.updateDynamic("check")(check)
-    if (gap != null) __obj.updateDynamic("gap")(gap)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderCheckGap]
   }
 }

@@ -42,12 +42,12 @@ object DrawerTheme {
     wrapper: String = null
   ): DrawerTheme = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (drawer != null) __obj.updateDynamic("drawer")(drawer)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (right != null) __obj.updateDynamic("right")(right)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (drawer != null) __obj.updateDynamic("drawer")(drawer.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerTheme]
   }
 }

@@ -13,8 +13,8 @@ trait ElementPart extends Part {
 object ElementPart {
   @scala.inline
   def apply(`type`: element, value: String): ElementPart = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementPart]
   }
 }

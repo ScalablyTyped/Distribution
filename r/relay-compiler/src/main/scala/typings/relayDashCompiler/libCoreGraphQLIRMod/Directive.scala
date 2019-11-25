@@ -24,7 +24,7 @@ object Directive {
     name: String,
     metadata: Metadata = null
   ): Directive = {
-    val __obj = js.Dynamic.literal(args = args, kind = kind, loc = loc, name = name)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Directive]
   }

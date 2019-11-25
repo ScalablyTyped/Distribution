@@ -33,15 +33,15 @@ object Anon_Children {
     withParent: js.UndefOr[Boolean] = js.undefined
   ): Anon_Children = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_pose != null) __obj.updateDynamic("_pose")(_pose.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (initialPose != null) __obj.updateDynamic("initialPose")(initialPose.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (onPoseComplete != null) __obj.updateDynamic("onPoseComplete")(js.Any.fromFunction1(onPoseComplete))
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange)
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange.asInstanceOf[js.Any])
     if (pose != null) __obj.updateDynamic("pose")(pose.asInstanceOf[js.Any])
-    if (!js.isUndefined(withParent)) __obj.updateDynamic("withParent")(withParent)
+    if (!js.isUndefined(withParent)) __obj.updateDynamic("withParent")(withParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

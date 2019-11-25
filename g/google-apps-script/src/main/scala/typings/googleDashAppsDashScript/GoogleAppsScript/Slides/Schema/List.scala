@@ -13,8 +13,8 @@ object List {
   @scala.inline
   def apply(listId: String = null, nestingLevel: js.Object = null): List = {
     val __obj = js.Dynamic.literal()
-    if (listId != null) __obj.updateDynamic("listId")(listId)
-    if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel)
+    if (listId != null) __obj.updateDynamic("listId")(listId.asInstanceOf[js.Any])
+    if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[List]
   }
 }

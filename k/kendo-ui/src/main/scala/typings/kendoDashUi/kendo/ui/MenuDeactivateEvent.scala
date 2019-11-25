@@ -17,8 +17,8 @@ object MenuDeactivateEvent {
     sender: Menu,
     item: HTMLElement = null
   ): MenuDeactivateEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (item != null) __obj.updateDynamic("item")(item)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuDeactivateEvent]
   }
 }

@@ -32,16 +32,16 @@ object OrderReportTransaction {
     transactionDate: String = null
   ): OrderReportTransaction = {
     val __obj = js.Dynamic.literal()
-    if (disbursementAmount != null) __obj.updateDynamic("disbursementAmount")(disbursementAmount)
-    if (disbursementCreationDate != null) __obj.updateDynamic("disbursementCreationDate")(disbursementCreationDate)
-    if (disbursementDate != null) __obj.updateDynamic("disbursementDate")(disbursementDate)
-    if (disbursementId != null) __obj.updateDynamic("disbursementId")(disbursementId)
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
-    if (merchantOrderId != null) __obj.updateDynamic("merchantOrderId")(merchantOrderId)
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId)
-    if (productAmount != null) __obj.updateDynamic("productAmount")(productAmount)
-    if (productAmountWithRemittedTax != null) __obj.updateDynamic("productAmountWithRemittedTax")(productAmountWithRemittedTax)
-    if (transactionDate != null) __obj.updateDynamic("transactionDate")(transactionDate)
+    if (disbursementAmount != null) __obj.updateDynamic("disbursementAmount")(disbursementAmount.asInstanceOf[js.Any])
+    if (disbursementCreationDate != null) __obj.updateDynamic("disbursementCreationDate")(disbursementCreationDate.asInstanceOf[js.Any])
+    if (disbursementDate != null) __obj.updateDynamic("disbursementDate")(disbursementDate.asInstanceOf[js.Any])
+    if (disbursementId != null) __obj.updateDynamic("disbursementId")(disbursementId.asInstanceOf[js.Any])
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
+    if (merchantOrderId != null) __obj.updateDynamic("merchantOrderId")(merchantOrderId.asInstanceOf[js.Any])
+    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
+    if (productAmount != null) __obj.updateDynamic("productAmount")(productAmount.asInstanceOf[js.Any])
+    if (productAmountWithRemittedTax != null) __obj.updateDynamic("productAmountWithRemittedTax")(productAmountWithRemittedTax.asInstanceOf[js.Any])
+    if (transactionDate != null) __obj.updateDynamic("transactionDate")(transactionDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderReportTransaction]
   }
 }

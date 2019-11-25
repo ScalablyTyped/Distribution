@@ -22,8 +22,8 @@ object IncludeThroughOptions {
   @scala.inline
   def apply(attributes: js.Array[String] = null, where: AnyWhereOptions = null): IncludeThroughOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeThroughOptions]
   }
 }

@@ -15,7 +15,7 @@ trait Box extends js.Object {
 object Box {
   @scala.inline
   def apply(options: Anon_Fullscreen, settings: Anon_Height, stringify: () => String): Box = {
-    val __obj = js.Dynamic.literal(options = options, settings = settings, stringify = js.Any.fromFunction0(stringify))
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], stringify = js.Any.fromFunction0(stringify))
   
     __obj.asInstanceOf[Box]
   }

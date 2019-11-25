@@ -18,7 +18,7 @@ trait SDKReady extends VoxImplantEvent {
 object SDKReady {
   @scala.inline
   def apply(version: String): SDKReady = {
-    val __obj = js.Dynamic.literal(version = version)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SDKReady]
   }

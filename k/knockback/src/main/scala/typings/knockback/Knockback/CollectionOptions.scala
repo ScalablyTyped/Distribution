@@ -36,17 +36,17 @@ object CollectionOptions {
     view_model: js.Any = null
   ): CollectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (factories != null) __obj.updateDynamic("factories")(factories)
-    if (factory != null) __obj.updateDynamic("factory")(factory)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(models_only)) __obj.updateDynamic("models_only")(models_only)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (sort_attribute != null) __obj.updateDynamic("sort_attribute")(sort_attribute)
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (view_model != null) __obj.updateDynamic("view_model")(view_model)
+    if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (factories != null) __obj.updateDynamic("factories")(factories.asInstanceOf[js.Any])
+    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(models_only)) __obj.updateDynamic("models_only")(models_only.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (sort_attribute != null) __obj.updateDynamic("sort_attribute")(sort_attribute.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (view_model != null) __obj.updateDynamic("view_model")(view_model.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionOptions]
   }
 }

@@ -34,7 +34,7 @@ object IMetadata {
     val __obj = js.Dynamic.literal()
     if (loadElement != null) __obj.updateDynamic("loadElement")(loadElement.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipSource)) __obj.updateDynamic("skipSource")(skipSource)
+    if (!js.isUndefined(skipSource)) __obj.updateDynamic("skipSource")(skipSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetadata]
   }
 }

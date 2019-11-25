@@ -16,8 +16,8 @@ object ILinkOutSuggestion {
   @scala.inline
   def apply(destinationName: String = null, uri: String = null): ILinkOutSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinkOutSuggestion]
   }
 }

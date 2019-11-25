@@ -37,8 +37,8 @@ object PrivateKeyInfo {
     attributes: js.Array[typings.pkijs.srcAttributeMod.default] = null,
     parsedKey: typings.pkijs.srcECPrivateKeyMod.default | typings.pkijs.srcRSAPrivateKeyMod.default = null
   ): PrivateKeyInfo = {
-    val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON), fromSchema = js.Any.fromFunction1(fromSchema), privateKey = privateKey, privateKeyAlgorithm = privateKeyAlgorithm, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON), fromSchema = js.Any.fromFunction1(fromSchema), privateKey = privateKey.asInstanceOf[js.Any], privateKeyAlgorithm = privateKeyAlgorithm.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (parsedKey != null) __obj.updateDynamic("parsedKey")(parsedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateKeyInfo]
   }

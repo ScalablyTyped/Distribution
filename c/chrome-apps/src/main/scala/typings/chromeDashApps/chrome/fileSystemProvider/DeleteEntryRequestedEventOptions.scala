@@ -14,7 +14,7 @@ trait DeleteEntryRequestedEventOptions extends EntryPathRequestedEventOptions {
 object DeleteEntryRequestedEventOptions {
   @scala.inline
   def apply(entryPath: String, fileSystemId: String, recursive: Boolean, requestId: integer): DeleteEntryRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(entryPath = entryPath, fileSystemId = fileSystemId, recursive = recursive, requestId = requestId)
+    val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteEntryRequestedEventOptions]
   }

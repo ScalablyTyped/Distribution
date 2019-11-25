@@ -12,7 +12,7 @@ trait Anon_Number extends js.Object {
 object Anon_Number {
   @scala.inline
   def apply(number: Double, prefix: String): Anon_Number = {
-    val __obj = js.Dynamic.literal(number = number, prefix = prefix)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Number]
   }

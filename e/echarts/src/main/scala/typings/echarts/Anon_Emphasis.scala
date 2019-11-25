@@ -88,10 +88,10 @@ object Anon_Emphasis {
     show: js.UndefOr[Boolean] = js.undefined
   ): Anon_Emphasis = {
     val __obj = js.Dynamic.literal()
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Emphasis]
   }
 }

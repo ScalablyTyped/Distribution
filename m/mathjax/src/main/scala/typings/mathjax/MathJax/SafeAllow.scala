@@ -48,12 +48,12 @@ object SafeAllow {
     styles: String = null
   ): SafeAllow = {
     val __obj = js.Dynamic.literal()
-    if (URLs != null) __obj.updateDynamic("URLs")(URLs)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (cssIDs != null) __obj.updateDynamic("cssIDs")(cssIDs)
-    if (fontsize != null) __obj.updateDynamic("fontsize")(fontsize)
-    if (require != null) __obj.updateDynamic("require")(require)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (URLs != null) __obj.updateDynamic("URLs")(URLs.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (cssIDs != null) __obj.updateDynamic("cssIDs")(cssIDs.asInstanceOf[js.Any])
+    if (fontsize != null) __obj.updateDynamic("fontsize")(fontsize.asInstanceOf[js.Any])
+    if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeAllow]
   }
 }

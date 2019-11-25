@@ -14,9 +14,9 @@ object Anon_NextPrevious {
   @scala.inline
   def apply(next: js.Any = null, previous: js.Any = null, small: Anon_Next = null): Anon_NextPrevious = {
     val __obj = js.Dynamic.literal()
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
-    if (small != null) __obj.updateDynamic("small")(small)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NextPrevious]
   }
 }

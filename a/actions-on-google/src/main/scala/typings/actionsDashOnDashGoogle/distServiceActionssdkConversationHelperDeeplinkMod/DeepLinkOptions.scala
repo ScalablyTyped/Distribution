@@ -30,9 +30,9 @@ trait DeepLinkOptions extends js.Object {
 object DeepLinkOptions {
   @scala.inline
   def apply(destination: String, `package`: String, url: String, reason: String = null): DeepLinkOptions = {
-    val __obj = js.Dynamic.literal(destination = destination, url = url)
-    __obj.updateDynamic("package")(`package`)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeepLinkOptions]
   }
 }

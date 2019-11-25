@@ -12,7 +12,7 @@ object Anon_CustomStoreKey {
   @scala.inline
   def apply(customStoreKey: String = null): Anon_CustomStoreKey = {
     val __obj = js.Dynamic.literal()
-    if (customStoreKey != null) __obj.updateDynamic("customStoreKey")(customStoreKey)
+    if (customStoreKey != null) __obj.updateDynamic("customStoreKey")(customStoreKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomStoreKey]
   }
 }

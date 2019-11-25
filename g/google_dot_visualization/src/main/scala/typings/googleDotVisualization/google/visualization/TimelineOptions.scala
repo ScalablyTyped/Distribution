@@ -29,13 +29,13 @@ object TimelineOptions {
     width: Int | Double = null
   ): TimelineOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(avoidOverlappingGridLines)) __obj.updateDynamic("avoidOverlappingGridLines")(avoidOverlappingGridLines)
+    if (!js.isUndefined(avoidOverlappingGridLines)) __obj.updateDynamic("avoidOverlappingGridLines")(avoidOverlappingGridLines.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity)
-    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (timeline != null) __obj.updateDynamic("timeline")(timeline)
+    if (timeline != null) __obj.updateDynamic("timeline")(timeline.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineOptions]
   }

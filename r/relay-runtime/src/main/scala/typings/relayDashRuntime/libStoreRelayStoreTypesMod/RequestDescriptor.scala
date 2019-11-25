@@ -16,7 +16,7 @@ trait RequestDescriptor extends js.Object {
 object RequestDescriptor {
   @scala.inline
   def apply(identifier: RequestIdentifier, node: ConcreteRequest, variables: Variables): RequestDescriptor = {
-    val __obj = js.Dynamic.literal(identifier = identifier, node = node, variables = variables)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestDescriptor]
   }

@@ -23,12 +23,12 @@ object AutoIncrementOptions {
     isUnique: js.UndefOr[Boolean] = js.undefined
   ): AutoIncrementOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (gqlType != null) __obj.updateDynamic("gqlType")(gqlType.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired)
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique)
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoIncrementOptions]
   }
 }

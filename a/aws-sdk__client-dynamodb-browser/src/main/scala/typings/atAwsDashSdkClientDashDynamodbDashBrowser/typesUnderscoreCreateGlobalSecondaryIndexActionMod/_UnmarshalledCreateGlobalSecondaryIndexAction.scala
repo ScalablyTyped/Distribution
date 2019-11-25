@@ -33,7 +33,7 @@ object _UnmarshalledCreateGlobalSecondaryIndexAction {
     Projection: _UnmarshalledProjection,
     ProvisionedThroughput: _UnmarshalledProvisionedThroughput
   ): _UnmarshalledCreateGlobalSecondaryIndexAction = {
-    val __obj = js.Dynamic.literal(IndexName = IndexName, KeySchema = KeySchema, Projection = Projection, ProvisionedThroughput = ProvisionedThroughput)
+    val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], Projection = Projection.asInstanceOf[js.Any], ProvisionedThroughput = ProvisionedThroughput.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledCreateGlobalSecondaryIndexAction]
   }

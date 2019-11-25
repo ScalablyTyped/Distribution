@@ -37,10 +37,10 @@ object WhenOptions {
     `then`: SchemaLike = null
   ): WhenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(break)) __obj.updateDynamic("break")(break)
+    if (!js.isUndefined(break)) __obj.updateDynamic("break")(break.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
     if (otherwise != null) __obj.updateDynamic("otherwise")(otherwise.asInstanceOf[js.Any])
-    if (switch != null) __obj.updateDynamic("switch")(switch)
+    if (switch != null) __obj.updateDynamic("switch")(switch.asInstanceOf[js.Any])
     if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhenOptions]
   }

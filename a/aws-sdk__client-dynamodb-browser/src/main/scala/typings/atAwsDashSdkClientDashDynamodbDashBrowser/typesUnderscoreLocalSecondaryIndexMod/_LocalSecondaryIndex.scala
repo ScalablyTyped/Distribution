@@ -29,7 +29,7 @@ object _LocalSecondaryIndex {
     KeySchema: js.Array[_KeySchemaElement] | Iterable[_KeySchemaElement],
     Projection: _Projection
   ): _LocalSecondaryIndex = {
-    val __obj = js.Dynamic.literal(IndexName = IndexName, KeySchema = KeySchema.asInstanceOf[js.Any], Projection = Projection)
+    val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], Projection = Projection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_LocalSecondaryIndex]
   }

@@ -12,7 +12,7 @@ trait Anon_Radius extends js.Object {
 object Anon_Radius {
   @scala.inline
   def apply(radius: String, tooltip: Anon_Start): Anon_Radius = {
-    val __obj = js.Dynamic.literal(radius = radius, tooltip = tooltip)
+    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Radius]
   }

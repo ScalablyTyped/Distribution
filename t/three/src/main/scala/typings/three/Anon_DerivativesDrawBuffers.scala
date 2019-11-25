@@ -14,7 +14,7 @@ trait Anon_DerivativesDrawBuffers extends js.Object {
 object Anon_DerivativesDrawBuffers {
   @scala.inline
   def apply(derivatives: Boolean, drawBuffers: Boolean, fragDepth: Boolean, shaderTextureLOD: Boolean): Anon_DerivativesDrawBuffers = {
-    val __obj = js.Dynamic.literal(derivatives = derivatives, drawBuffers = drawBuffers, fragDepth = fragDepth, shaderTextureLOD = shaderTextureLOD)
+    val __obj = js.Dynamic.literal(derivatives = derivatives.asInstanceOf[js.Any], drawBuffers = drawBuffers.asInstanceOf[js.Any], fragDepth = fragDepth.asInstanceOf[js.Any], shaderTextureLOD = shaderTextureLOD.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DerivativesDrawBuffers]
   }

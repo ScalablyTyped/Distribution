@@ -39,18 +39,18 @@ object EditorProps {
     value: String = null
   ): EditorProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (formats != null) __obj.updateDynamic("formats")(formats)
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
     if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))
     if (onTextChange != null) __obj.updateDynamic("onTextChange")(js.Any.fromFunction1(onTextChange))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorProps]
   }
 }

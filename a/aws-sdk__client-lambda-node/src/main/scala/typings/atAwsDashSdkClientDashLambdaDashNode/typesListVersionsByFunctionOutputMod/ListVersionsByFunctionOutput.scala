@@ -30,9 +30,9 @@ object ListVersionsByFunctionOutput {
     NextMarker: String = null,
     Versions: js.Array[_UnmarshalledFunctionConfiguration] = null
   ): ListVersionsByFunctionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
-    if (Versions != null) __obj.updateDynamic("Versions")(Versions)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
+    if (Versions != null) __obj.updateDynamic("Versions")(Versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVersionsByFunctionOutput]
   }
 }

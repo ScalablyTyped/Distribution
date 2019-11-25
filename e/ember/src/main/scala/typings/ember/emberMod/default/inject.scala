@@ -15,9 +15,9 @@ object inject extends js.Object {
     * Can only be used when defining another controller.
     */
   def controller(): typings.ember.emberMod.Ember.ComputedProperty[typings.ember.emberMod.Ember.Controller, typings.ember.emberMod.Ember.Controller] = js.native
-  def controller[K /* <: String */](name: K): typings.ember.emberMod.Ember.ComputedProperty[
-    /* import warning: ImportType.apply Failed type conversion: @ember/controller.@ember/controller.Registry[K] */ js.Any, 
-    /* import warning: ImportType.apply Failed type conversion: @ember/controller.@ember/controller.Registry[K] */ js.Any
+  def controller[K /* <: java.lang.String */](name: K): typings.ember.emberMod.Ember.ComputedProperty[
+    /* import warning: importer.ImportType#apply Failed type conversion: @ember/controller.@ember/controller.Registry[K] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @ember/controller.@ember/controller.Registry[K] */ js.Any
   ] = js.native
   @js.native
   object service extends js.Object {
@@ -25,11 +25,11 @@ object inject extends js.Object {
         typings.atEmberService.atEmberServiceMod.Service, 
         typings.atEmberService.atEmberServiceMod.Service
       ] = js.native
-    def apply(target: js.Object, propertyKey: String): Unit = js.native
+    def apply(target: js.Object, propertyKey: java.lang.String): Unit = js.native
     def apply(target: js.Object, propertyKey: js.Symbol): Unit = js.native
-    def apply[K /* <: String */](name: K): typings.atEmberObject.computedMod.ComputedProperty[
-        /* import warning: ImportType.apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any, 
-        /* import warning: ImportType.apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any
+    def apply[K /* <: java.lang.String */](name: K): typings.atEmberObject.computedMod.ComputedProperty[
+        /* import warning: importer.ImportType#apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any
       ] = js.native
   }
   

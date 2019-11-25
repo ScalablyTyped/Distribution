@@ -28,10 +28,10 @@ object PushToken {
     language: String = null
   ): PushToken = {
     val __obj = js.Dynamic.literal()
-    if (clientRevision != null) __obj.updateDynamic("clientRevision")(clientRevision)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (clientRevision != null) __obj.updateDynamic("clientRevision")(clientRevision.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushToken]
   }
 }

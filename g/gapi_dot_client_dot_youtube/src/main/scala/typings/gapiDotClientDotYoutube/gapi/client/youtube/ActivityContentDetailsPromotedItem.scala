@@ -45,16 +45,16 @@ object ActivityContentDetailsPromotedItem {
     videoId: String = null
   ): ActivityContentDetailsPromotedItem = {
     val __obj = js.Dynamic.literal()
-    if (adTag != null) __obj.updateDynamic("adTag")(adTag)
-    if (clickTrackingUrl != null) __obj.updateDynamic("clickTrackingUrl")(clickTrackingUrl)
-    if (creativeViewUrl != null) __obj.updateDynamic("creativeViewUrl")(creativeViewUrl)
-    if (ctaType != null) __obj.updateDynamic("ctaType")(ctaType)
-    if (customCtaButtonText != null) __obj.updateDynamic("customCtaButtonText")(customCtaButtonText)
-    if (descriptionText != null) __obj.updateDynamic("descriptionText")(descriptionText)
-    if (destinationUrl != null) __obj.updateDynamic("destinationUrl")(destinationUrl)
-    if (forecastingUrl != null) __obj.updateDynamic("forecastingUrl")(forecastingUrl)
-    if (impressionUrl != null) __obj.updateDynamic("impressionUrl")(impressionUrl)
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (adTag != null) __obj.updateDynamic("adTag")(adTag.asInstanceOf[js.Any])
+    if (clickTrackingUrl != null) __obj.updateDynamic("clickTrackingUrl")(clickTrackingUrl.asInstanceOf[js.Any])
+    if (creativeViewUrl != null) __obj.updateDynamic("creativeViewUrl")(creativeViewUrl.asInstanceOf[js.Any])
+    if (ctaType != null) __obj.updateDynamic("ctaType")(ctaType.asInstanceOf[js.Any])
+    if (customCtaButtonText != null) __obj.updateDynamic("customCtaButtonText")(customCtaButtonText.asInstanceOf[js.Any])
+    if (descriptionText != null) __obj.updateDynamic("descriptionText")(descriptionText.asInstanceOf[js.Any])
+    if (destinationUrl != null) __obj.updateDynamic("destinationUrl")(destinationUrl.asInstanceOf[js.Any])
+    if (forecastingUrl != null) __obj.updateDynamic("forecastingUrl")(forecastingUrl.asInstanceOf[js.Any])
+    if (impressionUrl != null) __obj.updateDynamic("impressionUrl")(impressionUrl.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityContentDetailsPromotedItem]
   }
 }

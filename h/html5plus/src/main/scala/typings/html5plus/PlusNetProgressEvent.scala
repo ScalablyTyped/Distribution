@@ -52,7 +52,7 @@ object PlusNetProgressEvent {
     val __obj = js.Dynamic.literal()
     if (lengthComputable != null) __obj.updateDynamic("lengthComputable")(lengthComputable.asInstanceOf[js.Any])
     if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNetProgressEvent]
   }

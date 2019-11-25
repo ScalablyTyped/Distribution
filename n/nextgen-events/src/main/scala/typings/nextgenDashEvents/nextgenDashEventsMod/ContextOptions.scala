@@ -22,10 +22,10 @@ object ContextOptions {
     serial: js.Any = null,
     status: js.Any = null
   ): ContextOptions = {
-    val __obj = js.Dynamic.literal(ready = ready, scopes = scopes)
+    val __obj = js.Dynamic.literal(ready = ready.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
-    if (serial != null) __obj.updateDynamic("serial")(serial)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (serial != null) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextOptions]
   }
 }

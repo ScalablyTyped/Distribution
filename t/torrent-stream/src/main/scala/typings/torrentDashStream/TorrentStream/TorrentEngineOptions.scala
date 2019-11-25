@@ -39,14 +39,14 @@ object TorrentEngineOptions {
   ): TorrentEngineOptions = {
     val __obj = js.Dynamic.literal()
     if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (!js.isUndefined(dht)) __obj.updateDynamic("dht")(dht)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (storage != null) __obj.updateDynamic("storage")(storage)
-    if (tmp != null) __obj.updateDynamic("tmp")(tmp)
-    if (!js.isUndefined(tracker)) __obj.updateDynamic("tracker")(tracker)
-    if (trackers != null) __obj.updateDynamic("trackers")(trackers)
+    if (!js.isUndefined(dht)) __obj.updateDynamic("dht")(dht.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    if (tmp != null) __obj.updateDynamic("tmp")(tmp.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracker)) __obj.updateDynamic("tracker")(tracker.asInstanceOf[js.Any])
+    if (trackers != null) __obj.updateDynamic("trackers")(trackers.asInstanceOf[js.Any])
     if (uploads != null) __obj.updateDynamic("uploads")(uploads.asInstanceOf[js.Any])
-    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify)
+    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify.asInstanceOf[js.Any])
     __obj.asInstanceOf[TorrentEngineOptions]
   }
 }

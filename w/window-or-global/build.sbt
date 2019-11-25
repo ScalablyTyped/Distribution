@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "window-or-global"
-version := "1.0-dt-20180214Z-e74c8f"
+version := "1.0-dt-20180214Z-e3e76f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

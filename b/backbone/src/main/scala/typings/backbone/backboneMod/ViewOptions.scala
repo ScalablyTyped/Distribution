@@ -31,14 +31,14 @@ object ViewOptions {
     tagName: String = null
   ): ViewOptions[TModel] = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (el != null) __obj.updateDynamic("el")(el)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewOptions[TModel]]
   }
 }

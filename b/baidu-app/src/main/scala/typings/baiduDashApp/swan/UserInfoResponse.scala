@@ -27,7 +27,7 @@ object UserInfoResponse {
     signature: String,
     userInfo: UserInfo
   ): UserInfoResponse = {
-    val __obj = js.Dynamic.literal(data = data, encryptData = encryptData, iv = iv, rawData = rawData, signature = signature, userInfo = userInfo)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], encryptData = encryptData.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserInfoResponse]
   }

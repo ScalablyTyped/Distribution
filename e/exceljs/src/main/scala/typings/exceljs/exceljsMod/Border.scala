@@ -13,7 +13,7 @@ trait Border extends js.Object {
 object Border {
   @scala.inline
   def apply(color: Partial[Color], style: BorderStyle): Border = {
-    val __obj = js.Dynamic.literal(color = color, style = style)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Border]
   }

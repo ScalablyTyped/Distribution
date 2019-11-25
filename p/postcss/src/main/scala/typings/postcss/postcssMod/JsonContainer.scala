@@ -31,13 +31,13 @@ object JsonContainer {
     `type`: String = null
   ): JsonContainer = {
     val __obj = js.Dynamic.literal()
-    if (first != null) __obj.updateDynamic("first")(first)
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (raws != null) __obj.updateDynamic("raws")(raws)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (raws != null) __obj.updateDynamic("raws")(raws.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonContainer]
   }
 }

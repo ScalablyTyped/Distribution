@@ -29,8 +29,8 @@ object MediaFileSystemMetadata {
     name: String,
     deviceId: String = null
   ): MediaFileSystemMetadata = {
-    val __obj = js.Dynamic.literal(galleryId = galleryId, isAvailable = isAvailable, isMediaDevice = isMediaDevice, isRemovable = isRemovable, name = name)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    val __obj = js.Dynamic.literal(galleryId = galleryId.asInstanceOf[js.Any], isAvailable = isAvailable.asInstanceOf[js.Any], isMediaDevice = isMediaDevice.asInstanceOf[js.Any], isRemovable = isRemovable.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaFileSystemMetadata]
   }
 }

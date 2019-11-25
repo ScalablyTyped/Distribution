@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait GeometryType extends js.Object
 
+object GeometryType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def linestring: typings.atMapboxMapboxDashSdk.atMapboxMapboxDashSdkStrings.linestring = this.cast("linestring")
+  @scala.inline
+  def point: typings.atMapboxMapboxDashSdk.atMapboxMapboxDashSdkStrings.point = this.cast("point")
+  @scala.inline
+  def polygon: typings.atMapboxMapboxDashSdk.atMapboxMapboxDashSdkStrings.polygon = this.cast("polygon")
+}
+

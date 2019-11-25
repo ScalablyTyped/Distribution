@@ -11,7 +11,7 @@ trait ListReelMediaViewerFeedResponseFb_user_tags extends js.Object {
 object ListReelMediaViewerFeedResponseFb_user_tags {
   @scala.inline
   def apply(in: js.Array[_]): ListReelMediaViewerFeedResponseFb_user_tags = {
-    val __obj = js.Dynamic.literal(in = in)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseFb_user_tags]
   }

@@ -13,7 +13,7 @@ object ResourceIssue {
   @scala.inline
   def apply(blockedResource: BlockedResource = null): ResourceIssue = {
     val __obj = js.Dynamic.literal()
-    if (blockedResource != null) __obj.updateDynamic("blockedResource")(blockedResource)
+    if (blockedResource != null) __obj.updateDynamic("blockedResource")(blockedResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceIssue]
   }
 }

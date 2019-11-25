@@ -15,9 +15,9 @@ object Anon_InputProps {
   @scala.inline
   def apply(inputProps: StringDictionary[js.Any] = null, language: String = null, placeholder: String = null): Anon_InputProps = {
     val __obj = js.Dynamic.literal()
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InputProps]
   }
 }

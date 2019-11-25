@@ -14,7 +14,7 @@ trait SeriesPlotBoxObject extends js.Object {
 object SeriesPlotBoxObject {
   @scala.inline
   def apply(scaleX: Double, scaleY: Double, translateX: Double, translateY: Double): SeriesPlotBoxObject = {
-    val __obj = js.Dynamic.literal(scaleX = scaleX, scaleY = scaleY, translateX = translateX, translateY = translateY)
+    val __obj = js.Dynamic.literal(scaleX = scaleX.asInstanceOf[js.Any], scaleY = scaleY.asInstanceOf[js.Any], translateX = translateX.asInstanceOf[js.Any], translateY = translateY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SeriesPlotBoxObject]
   }

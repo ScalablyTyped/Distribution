@@ -17,8 +17,8 @@ object IUpdateDocumentRequest {
   @scala.inline
   def apply(document: IDocument = null, updateMask: IFieldMask = null): IUpdateDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateDocumentRequest]
   }
 }

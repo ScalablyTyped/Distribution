@@ -41,18 +41,18 @@ object SearchBoxProps {
     translations: StringDictionary[String | (js.Function1[/* repeated */ js.Any, _])] = null
   ): SearchBoxProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement)
-    if (focusShortcuts != null) __obj.updateDynamic("focusShortcuts")(focusShortcuts)
-    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
+    if (focusShortcuts != null) __obj.updateDynamic("focusShortcuts")(focusShortcuts.asInstanceOf[js.Any])
+    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (!js.isUndefined(searchAsYouType)) __obj.updateDynamic("searchAsYouType")(searchAsYouType)
-    if (!js.isUndefined(showLoadingIndicator)) __obj.updateDynamic("showLoadingIndicator")(showLoadingIndicator)
-    if (submit != null) __obj.updateDynamic("submit")(submit)
-    if (translations != null) __obj.updateDynamic("translations")(translations)
+    if (reset != null) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchAsYouType)) __obj.updateDynamic("searchAsYouType")(searchAsYouType.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLoadingIndicator)) __obj.updateDynamic("showLoadingIndicator")(showLoadingIndicator.asInstanceOf[js.Any])
+    if (submit != null) __obj.updateDynamic("submit")(submit.asInstanceOf[js.Any])
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBoxProps]
   }
 }

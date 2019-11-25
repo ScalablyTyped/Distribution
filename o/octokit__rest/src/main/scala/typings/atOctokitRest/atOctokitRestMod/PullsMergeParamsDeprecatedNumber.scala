@@ -43,11 +43,11 @@ object PullsMergeParamsDeprecatedNumber {
     merge_method: merge | squash | rebase = null,
     sha: String = null
   ): PullsMergeParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
-    if (commit_message != null) __obj.updateDynamic("commit_message")(commit_message)
-    if (commit_title != null) __obj.updateDynamic("commit_title")(commit_title)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (commit_message != null) __obj.updateDynamic("commit_message")(commit_message.asInstanceOf[js.Any])
+    if (commit_title != null) __obj.updateDynamic("commit_title")(commit_title.asInstanceOf[js.Any])
     if (merge_method != null) __obj.updateDynamic("merge_method")(merge_method.asInstanceOf[js.Any])
-    if (sha != null) __obj.updateDynamic("sha")(sha)
+    if (sha != null) __obj.updateDynamic("sha")(sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsMergeParamsDeprecatedNumber]
   }
 }

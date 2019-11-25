@@ -13,7 +13,7 @@ trait TestResult extends js.Object {
 object TestResult {
   @scala.inline
   def apply(directory: String, results: StringDictionary[TestOutput | SkippedTest]): TestResult = {
-    val __obj = js.Dynamic.literal(directory = directory, results = results)
+    val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestResult]
   }

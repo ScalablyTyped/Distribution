@@ -37,7 +37,7 @@ trait flashVars extends js.Object {
 object flashVars {
   @scala.inline
   def apply(See: js.Object, serialize: (String, js.Object) => js.Any): flashVars = {
-    val __obj = js.Dynamic.literal(See = See, serialize = js.Any.fromFunction2(serialize))
+    val __obj = js.Dynamic.literal(See = See.asInstanceOf[js.Any], serialize = js.Any.fromFunction2(serialize))
   
     __obj.asInstanceOf[flashVars]
   }

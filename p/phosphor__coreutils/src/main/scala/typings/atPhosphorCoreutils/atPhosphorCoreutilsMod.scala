@@ -46,6 +46,7 @@ object atPhosphorCoreutilsMod extends js.Object {
     val emptyObject: ReadonlyJSONObject = js.native
     def deepCopy(): Null = js.native
     def deepCopy(value: String): String = js.native
+    def deepCopy(value: js.Array[ReadonlyJSONValue]): js.Array[ReadonlyJSONValue] = js.native
     /**
       * Create a deep copy of a JSON value.
       *
@@ -55,7 +56,6 @@ object atPhosphorCoreutilsMod extends js.Object {
       */
     def deepCopy(value: Boolean): Boolean = js.native
     def deepCopy(value: Double): Double = js.native
-    def deepCopy(value: ReadonlyJSONArray): ReadonlyJSONArray = js.native
     def deepCopy(value: ReadonlyJSONObject): ReadonlyJSONObject = js.native
     /**
       * Compare two JSON values for deep equality.

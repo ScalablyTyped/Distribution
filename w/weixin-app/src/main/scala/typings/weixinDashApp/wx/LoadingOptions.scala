@@ -25,10 +25,10 @@ object LoadingOptions {
     mask: js.UndefOr[Boolean] = js.undefined,
     success: js.Any => Unit = null
   ): LoadingOptions = {
-    val __obj = js.Dynamic.literal(title = title)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[LoadingOptions]
   }

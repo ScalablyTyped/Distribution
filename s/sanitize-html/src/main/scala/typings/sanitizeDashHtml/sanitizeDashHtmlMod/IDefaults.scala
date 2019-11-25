@@ -22,7 +22,7 @@ object IDefaults {
     allowedTags: js.Array[String],
     selfClosing: js.Array[String]
   ): IDefaults = {
-    val __obj = js.Dynamic.literal(allowedAttributes = allowedAttributes, allowedSchemes = allowedSchemes, allowedSchemesByTag = allowedSchemesByTag, allowedTags = allowedTags, selfClosing = selfClosing)
+    val __obj = js.Dynamic.literal(allowedAttributes = allowedAttributes.asInstanceOf[js.Any], allowedSchemes = allowedSchemes.asInstanceOf[js.Any], allowedSchemesByTag = allowedSchemesByTag.asInstanceOf[js.Any], allowedTags = allowedTags.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDefaults]
   }

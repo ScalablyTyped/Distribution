@@ -11,7 +11,7 @@ trait IsNumericOptions extends js.Object {
 object IsNumericOptions {
   @scala.inline
   def apply(no_symbols: Boolean): IsNumericOptions = {
-    val __obj = js.Dynamic.literal(no_symbols = no_symbols)
+    val __obj = js.Dynamic.literal(no_symbols = no_symbols.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IsNumericOptions]
   }

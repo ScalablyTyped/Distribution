@@ -14,8 +14,8 @@ trait strings extends MDCStrings {
 object strings {
   @scala.inline
   def apply(LABEL_SELECTOR: `DOTmdc-form-field > label`, StringDictionary: StringDictionary[String] = null): strings = {
-    val __obj = js.Dynamic.literal(LABEL_SELECTOR = LABEL_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(LABEL_SELECTOR = LABEL_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

@@ -30,8 +30,8 @@ object NumberFormat {
     digitSeparator: js.UndefOr[Boolean] = js.undefined,
     places: Int | Double = null
   ): NumberFormat = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(digitSeparator)) __obj.updateDynamic("digitSeparator")(digitSeparator)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (!js.isUndefined(digitSeparator)) __obj.updateDynamic("digitSeparator")(digitSeparator.asInstanceOf[js.Any])
     if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFormat]
   }

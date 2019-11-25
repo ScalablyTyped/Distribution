@@ -75,15 +75,15 @@ object Options {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colonNotation)) __obj.updateDynamic("colonNotation")(colonNotation)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (!js.isUndefined(formatSubMilliseconds)) __obj.updateDynamic("formatSubMilliseconds")(formatSubMilliseconds)
-    if (!js.isUndefined(keepDecimalsOnWholeSeconds)) __obj.updateDynamic("keepDecimalsOnWholeSeconds")(keepDecimalsOnWholeSeconds)
+    if (!js.isUndefined(colonNotation)) __obj.updateDynamic("colonNotation")(colonNotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(formatSubMilliseconds)) __obj.updateDynamic("formatSubMilliseconds")(formatSubMilliseconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepDecimalsOnWholeSeconds)) __obj.updateDynamic("keepDecimalsOnWholeSeconds")(keepDecimalsOnWholeSeconds.asInstanceOf[js.Any])
     if (millisecondsDecimalDigits != null) __obj.updateDynamic("millisecondsDecimalDigits")(millisecondsDecimalDigits.asInstanceOf[js.Any])
     if (secondsDecimalDigits != null) __obj.updateDynamic("secondsDecimalDigits")(secondsDecimalDigits.asInstanceOf[js.Any])
-    if (!js.isUndefined(separateMilliseconds)) __obj.updateDynamic("separateMilliseconds")(separateMilliseconds)
+    if (!js.isUndefined(separateMilliseconds)) __obj.updateDynamic("separateMilliseconds")(separateMilliseconds.asInstanceOf[js.Any])
     if (unitCount != null) __obj.updateDynamic("unitCount")(unitCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -15,8 +15,8 @@ object OptionsSorting {
   @scala.inline
   def apply(initialSort: js.Array[Sorter] = null, sortOrderReverse: js.UndefOr[Boolean] = js.undefined): OptionsSorting = {
     val __obj = js.Dynamic.literal()
-    if (initialSort != null) __obj.updateDynamic("initialSort")(initialSort)
-    if (!js.isUndefined(sortOrderReverse)) __obj.updateDynamic("sortOrderReverse")(sortOrderReverse)
+    if (initialSort != null) __obj.updateDynamic("initialSort")(initialSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortOrderReverse)) __obj.updateDynamic("sortOrderReverse")(sortOrderReverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsSorting]
   }
 }

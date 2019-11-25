@@ -15,8 +15,8 @@ trait Entry extends js.Object {
 object Entry {
   @scala.inline
   def apply(maxX: Double, maxY: Double, minX: Double, minY: Double, value: js.Any = null): Entry = {
-    val __obj = js.Dynamic.literal(maxX = maxX, maxY = maxY, minX = minX, minY = minY)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entry]
   }
 }

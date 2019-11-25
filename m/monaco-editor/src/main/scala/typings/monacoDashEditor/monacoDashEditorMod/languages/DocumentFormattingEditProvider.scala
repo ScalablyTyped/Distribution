@@ -21,7 +21,7 @@ object DocumentFormattingEditProvider {
     displayName: String = null
   ): DocumentFormattingEditProvider = {
     val __obj = js.Dynamic.literal(provideDocumentFormattingEdits = js.Any.fromFunction3(provideDocumentFormattingEdits))
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentFormattingEditProvider]
   }
 }

@@ -17,13 +17,13 @@ package object libRelayDashExperimentalUseFragmentMod {
   type $Call[Fn /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   type ArrayKeyReturnType[T /* <: ArrayKeyType */] = js.Function1[
     /* arg */ T, 
-    /* import warning: ImportType.apply Failed type conversion: std.NonNullable<std.NonNullable<T[0]>[' $data']>[0] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<std.NonNullable<T[0]>[' $data']>[0] */ js.Any
   ]
   type ArrayKeyType = js.Array[Anon_DataReadonlyArray | Null]
   type KeyReturnType[T /* <: KeyType */] = js.Function1[
     /* arg */ T, 
     NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: T[' $data'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: T[' $data'] */ js.Any
     ]
   ]
 }

@@ -25,7 +25,7 @@ object Anon_Consumer {
     createSelector: T => AnyDeepMemberOfState[T],
     mutate: /* mutator */ MutateFn[T] => Unit
   ): Anon_Consumer[T] = {
-    val __obj = js.Dynamic.literal(Consumer = Consumer, Provider = Provider, createSelector = js.Any.fromFunction1(createSelector), mutate = js.Any.fromFunction1(mutate))
+    val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any], createSelector = js.Any.fromFunction1(createSelector), mutate = js.Any.fromFunction1(mutate))
   
     __obj.asInstanceOf[Anon_Consumer[T]]
   }

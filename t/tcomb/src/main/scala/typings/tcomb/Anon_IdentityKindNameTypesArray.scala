@@ -15,7 +15,7 @@ trait Anon_IdentityKindNameTypesArray[T] extends js.Object {
 object Anon_IdentityKindNameTypesArray {
   @scala.inline
   def apply[T](identity: Boolean, kind: String, name: String, types: js.Array[Constructor[T]]): Anon_IdentityKindNameTypesArray[T] = {
-    val __obj = js.Dynamic.literal(identity = identity, kind = kind, name = name, types = types)
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdentityKindNameTypesArray[T]]
   }

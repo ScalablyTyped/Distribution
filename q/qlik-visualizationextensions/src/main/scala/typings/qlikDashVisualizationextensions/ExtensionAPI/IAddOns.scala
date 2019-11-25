@@ -12,7 +12,7 @@ trait IAddOns extends js.Object {
 object IAddOns {
   @scala.inline
   def apply(uses: addons): IAddOns = {
-    val __obj = js.Dynamic.literal(uses = uses)
+    val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAddOns]
   }

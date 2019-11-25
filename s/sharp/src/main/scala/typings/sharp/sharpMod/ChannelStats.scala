@@ -41,7 +41,7 @@ object ChannelStats {
     stdev: Double,
     sum: Double
   ): ChannelStats = {
-    val __obj = js.Dynamic.literal(max = max, maxX = maxX, maxY = maxY, mean = mean, min = min, minX = minX, minY = minY, squaresSum = squaresSum, stdev = stdev, sum = sum)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], mean = mean.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any], squaresSum = squaresSum.asInstanceOf[js.Any], stdev = stdev.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChannelStats]
   }

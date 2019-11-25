@@ -1,11 +1,6 @@
 package typings.tern.ternMod
 
 import typings.tern.Anon_NameString_245567777
-import typings.tern.libInferMod.ANull
-import typings.tern.libInferMod.AVal
-import typings.tern.libInferMod.Obj
-import typings.tern.libInferMod.Prim
-import typings.tern.libInferMod.Type
 import typings.tern.ternStrings.bool
 import typings.tern.ternStrings.number
 import typings.tern.ternStrings.string
@@ -15,7 +10,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tern", "Prim")
 @js.native
-class PrimCls () extends Prim {
+class PrimCls ()
+  extends typings.tern.libInferMod.Prim {
   def this(proto: js.Object) = this()
   def this(proto: js.Object, name: String) = this()
   def this(proto: Null, name: String) = this()
@@ -27,7 +23,7 @@ class PrimCls () extends Prim {
   override var origin: String = js.native
   /** The prototype of the object, or null. */
   /* CompleteClass */
-  override var proto: Obj with Anon_NameString_245567777 = js.native
+  override var proto: typings.tern.libInferMod.Obj with Anon_NameString_245567777 = js.native
   /* CompleteClass */
   override def addType(args: js.Any*): Unit = js.native
   /* CompleteClass */
@@ -37,25 +33,25 @@ class PrimCls () extends Prim {
   /* CompleteClass */
   override def gatherProperties(f: js.Function1[/* repeated */ js.Any, Unit], depth: Double): Unit = js.native
   /* CompleteClass */
-  override def getFunctionType(args: js.Any*): js.UndefOr[ANull] = js.native
+  override def getFunctionType(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull] = js.native
   /* CompleteClass */
-  override def getObjType(args: js.Any*): js.UndefOr[ANull | Null] = js.native
+  override def getObjType(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull | Null] = js.native
   /* CompleteClass */
-  override def getProp(args: js.Any*): ANull = js.native
+  override def getProp(args: js.Any*): typings.tern.libInferMod.ANull = js.native
   /** Get an `AVal` that represents the named property of this type. */
   /* CompleteClass */
-  override def getProp(prop: String): AVal = js.native
+  override def getProp(prop: String): typings.tern.libInferMod.AVal = js.native
   /* CompleteClass */
-  override def getSymbolType(args: js.Any*): js.UndefOr[ANull] = js.native
+  override def getSymbolType(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull] = js.native
   /* CompleteClass */
-  override def getType(): Type = js.native
+  override def getType(): typings.tern.libInferMod.Type = js.native
   /* CompleteClass */
-  override def getType(args: js.Any*): js.UndefOr[ANull | Null] = js.native
+  override def getType(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull | Null] = js.native
   /* CompleteClass */
   override def hasType(args: js.Any*): Boolean = js.native
   /** Queries whether the AVal _currently_ holds the given type. */
   /* CompleteClass */
-  override def hasType(`type`: Type): Boolean = js.native
+  override def hasType(`type`: typings.tern.libInferMod.Type): Boolean = js.native
   /* CompleteClass */
   override def isEmpty(args: js.Any*): Boolean = js.native
   /* CompleteClass */
@@ -70,6 +66,6 @@ class PrimCls () extends Prim {
   /* CompleteClass */
   override def toString(maxDepth: Double): String = js.native
   /* CompleteClass */
-  override def typeHint(args: js.Any*): js.UndefOr[ANull | Null] = js.native
+  override def typeHint(args: js.Any*): js.UndefOr[typings.tern.libInferMod.ANull | Null] = js.native
 }
 

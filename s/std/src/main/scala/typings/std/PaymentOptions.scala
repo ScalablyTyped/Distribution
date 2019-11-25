@@ -22,11 +22,11 @@ object PaymentOptions {
     shippingType: java.lang.String = null
   ): PaymentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(requestPayerEmail)) __obj.updateDynamic("requestPayerEmail")(requestPayerEmail)
-    if (!js.isUndefined(requestPayerName)) __obj.updateDynamic("requestPayerName")(requestPayerName)
-    if (!js.isUndefined(requestPayerPhone)) __obj.updateDynamic("requestPayerPhone")(requestPayerPhone)
-    if (!js.isUndefined(requestShipping)) __obj.updateDynamic("requestShipping")(requestShipping)
-    if (shippingType != null) __obj.updateDynamic("shippingType")(shippingType)
+    if (!js.isUndefined(requestPayerEmail)) __obj.updateDynamic("requestPayerEmail")(requestPayerEmail.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestPayerName)) __obj.updateDynamic("requestPayerName")(requestPayerName.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestPayerPhone)) __obj.updateDynamic("requestPayerPhone")(requestPayerPhone.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestShipping)) __obj.updateDynamic("requestShipping")(requestShipping.asInstanceOf[js.Any])
+    if (shippingType != null) __obj.updateDynamic("shippingType")(shippingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentOptions]
   }
 }

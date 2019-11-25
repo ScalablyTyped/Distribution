@@ -13,7 +13,7 @@ trait Anon_Success extends js.Object {
 object Anon_Success {
   @scala.inline
   def apply(Success: Boolean, Wb: Workbook): Anon_Success = {
-    val __obj = js.Dynamic.literal(Success = Success, Wb = Wb)
+    val __obj = js.Dynamic.literal(Success = Success.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Success]
   }

@@ -12,7 +12,7 @@ trait GeneratorMeta extends js.Object {
 object GeneratorMeta {
   @scala.inline
   def apply(namespace: String, resolved: String): GeneratorMeta = {
-    val __obj = js.Dynamic.literal(namespace = namespace, resolved = resolved)
+    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeneratorMeta]
   }

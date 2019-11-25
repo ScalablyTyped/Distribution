@@ -38,18 +38,18 @@ object QuoteValue {
     value: String = null,
     valueRange: Range = null
   ): QuoteValue = {
-    val __obj = js.Dynamic.literal(hasComment = hasComment, hasProps = hasProps, jsonLike = jsonLike, props = props, valueRangeContainsNewline = valueRangeContainsNewline)
+    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
     if (strValue != null) __obj.updateDynamic("strValue")(strValue.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuoteValue]
   }
 }

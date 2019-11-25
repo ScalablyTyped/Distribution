@@ -18,9 +18,9 @@ object AppendOptions {
   @scala.inline
   def apply(date: Date = null, flags: js.Any = null, mailbox: String = null): AppendOptions = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (mailbox != null) __obj.updateDynamic("mailbox")(mailbox)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (mailbox != null) __obj.updateDynamic("mailbox")(mailbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendOptions]
   }
 }

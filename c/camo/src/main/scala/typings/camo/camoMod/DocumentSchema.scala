@@ -25,8 +25,8 @@ object DocumentSchema {
     _id: String = null
   ): DocumentSchema = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSchema]
   }
 }

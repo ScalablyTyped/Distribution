@@ -29,7 +29,7 @@ object Anon_Interval {
     stop: () => Unit,
     tick: () => Unit
   ): Anon_Interval = {
-    val __obj = js.Dynamic.literal(interval = interval, off = off, speeds = speeds, step = step, stop = js.Any.fromFunction0(stop), tick = js.Any.fromFunction0(tick))
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], off = off.asInstanceOf[js.Any], speeds = speeds.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop), tick = js.Any.fromFunction0(tick))
   
     __obj.asInstanceOf[Anon_Interval]
   }

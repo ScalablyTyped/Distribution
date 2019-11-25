@@ -47,12 +47,12 @@ object QueryContext {
     projection: Projection = null,
     snapshotProjection: Projection = null
   ): QueryContext = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend, channel = channel, collection = collection, index = index, query = query)
-    if (db != null) __obj.updateDynamic("db")(db)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (snapshotProjection != null) __obj.updateDynamic("snapshotProjection")(snapshotProjection)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (snapshotProjection != null) __obj.updateDynamic("snapshotProjection")(snapshotProjection.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryContext]
   }
 }

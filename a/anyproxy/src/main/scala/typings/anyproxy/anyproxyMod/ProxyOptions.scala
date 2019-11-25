@@ -47,16 +47,16 @@ object ProxyOptions {
     wsIntercept: js.UndefOr[Boolean] = js.undefined
   ): ProxyOptions = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
-    if (!js.isUndefined(dangerouslyIgnoreUnauthorized)) __obj.updateDynamic("dangerouslyIgnoreUnauthorized")(dangerouslyIgnoreUnauthorized)
-    if (!js.isUndefined(forceProxyHttps)) __obj.updateDynamic("forceProxyHttps")(forceProxyHttps)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (recorder != null) __obj.updateDynamic("recorder")(recorder)
+    if (!js.isUndefined(dangerouslyIgnoreUnauthorized)) __obj.updateDynamic("dangerouslyIgnoreUnauthorized")(dangerouslyIgnoreUnauthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceProxyHttps)) __obj.updateDynamic("forceProxyHttps")(forceProxyHttps.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (recorder != null) __obj.updateDynamic("recorder")(recorder.asInstanceOf[js.Any])
     if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (webInterface != null) __obj.updateDynamic("webInterface")(webInterface)
-    if (!js.isUndefined(wsIntercept)) __obj.updateDynamic("wsIntercept")(wsIntercept)
+    if (webInterface != null) __obj.updateDynamic("webInterface")(webInterface.asInstanceOf[js.Any])
+    if (!js.isUndefined(wsIntercept)) __obj.updateDynamic("wsIntercept")(wsIntercept.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyOptions]
   }
 }

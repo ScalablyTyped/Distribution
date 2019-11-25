@@ -11,7 +11,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(mungError: Boolean): Options = {
-    val __obj = js.Dynamic.literal(mungError = mungError)
+    val __obj = js.Dynamic.literal(mungError = mungError.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

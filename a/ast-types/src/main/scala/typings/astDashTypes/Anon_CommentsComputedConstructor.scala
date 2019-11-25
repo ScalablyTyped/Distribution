@@ -36,12 +36,12 @@ object Anon_CommentsComputedConstructor {
     loc: SourceLocationKind = null,
     static: js.UndefOr[Boolean] = js.undefined
   ): Anon_CommentsComputedConstructor = {
-    val __obj = js.Dynamic.literal(key = key, kind = kind.asInstanceOf[js.Any], value = value)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsComputedConstructor]
   }
 }

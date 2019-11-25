@@ -23,7 +23,7 @@ object Anon_Children {
       JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment | JSXEmptyExpression
     ]
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Children]
   }

@@ -14,9 +14,9 @@ object SchedulerMessagesRecurrenceEditorWeekdays {
   @scala.inline
   def apply(day: String = null, weekday: String = null, weekend: String = null): SchedulerMessagesRecurrenceEditorWeekdays = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (weekday != null) __obj.updateDynamic("weekday")(weekday)
-    if (weekend != null) __obj.updateDynamic("weekend")(weekend)
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (weekday != null) __obj.updateDynamic("weekday")(weekday.asInstanceOf[js.Any])
+    if (weekend != null) __obj.updateDynamic("weekend")(weekend.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorWeekdays]
   }
 }

@@ -22,11 +22,11 @@ object Row {
     id: String = null
   ): Row = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Row]
   }
 }

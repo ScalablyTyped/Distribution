@@ -16,7 +16,7 @@ trait Anon_AlphaMap extends js.Object {
 object Anon_AlphaMap {
   @scala.inline
   def apply(alphaMap: IUniform, diffuse: IUniform, map: IUniform, opacity: IUniform, uvTransform: IUniform): Anon_AlphaMap = {
-    val __obj = js.Dynamic.literal(alphaMap = alphaMap, diffuse = diffuse, map = map, opacity = opacity, uvTransform = uvTransform)
+    val __obj = js.Dynamic.literal(alphaMap = alphaMap.asInstanceOf[js.Any], diffuse = diffuse.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], uvTransform = uvTransform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlphaMap]
   }

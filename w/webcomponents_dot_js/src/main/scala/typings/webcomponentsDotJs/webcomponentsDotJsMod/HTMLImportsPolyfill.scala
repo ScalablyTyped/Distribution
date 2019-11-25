@@ -26,7 +26,7 @@ object HTMLImportsPolyfill {
     useNative: Boolean,
     whenReady: js.Function0[Unit] => Unit
   ): HTMLImportsPolyfill = {
-    val __obj = js.Dynamic.literal(IMPORT_LINK_TYPE = IMPORT_LINK_TYPE, flags = flags, isIE = isIE, ready = ready, rootDocument = rootDocument, useNative = useNative, whenReady = js.Any.fromFunction1(whenReady))
+    val __obj = js.Dynamic.literal(IMPORT_LINK_TYPE = IMPORT_LINK_TYPE.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], isIE = isIE.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], rootDocument = rootDocument.asInstanceOf[js.Any], useNative = useNative.asInstanceOf[js.Any], whenReady = js.Any.fromFunction1(whenReady))
   
     __obj.asInstanceOf[HTMLImportsPolyfill]
   }

@@ -17,7 +17,7 @@ object ToolbarSettings {
   @scala.inline
   def apply(showToolTip: js.UndefOr[Boolean] = js.undefined, toolbarItem: ToolbarItems | String = null): ToolbarSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showToolTip)) __obj.updateDynamic("showToolTip")(showToolTip)
+    if (!js.isUndefined(showToolTip)) __obj.updateDynamic("showToolTip")(showToolTip.asInstanceOf[js.Any])
     if (toolbarItem != null) __obj.updateDynamic("toolbarItem")(toolbarItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarSettings]
   }

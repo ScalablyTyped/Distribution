@@ -12,7 +12,7 @@ trait Vector2d extends js.Object {
 object Vector2d {
   @scala.inline
   def apply(x: Double, y: Double): Vector2d = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Vector2d]
   }

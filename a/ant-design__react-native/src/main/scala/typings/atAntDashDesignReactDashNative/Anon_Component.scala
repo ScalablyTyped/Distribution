@@ -12,7 +12,7 @@ trait Anon_Component extends js.Object {
 object Anon_Component {
   @scala.inline
   def apply(_component: ScrollView): Anon_Component = {
-    val __obj = js.Dynamic.literal(_component = _component)
+    val __obj = js.Dynamic.literal(_component = _component.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Component]
   }

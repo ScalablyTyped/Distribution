@@ -20,10 +20,10 @@ object Anon_ForceApprovalPrompt {
     requestPermissions: js.Object = null
   ): Anon_ForceApprovalPrompt = {
     val __obj = js.Dynamic.literal()
-    if (forceApprovalPrompt != null) __obj.updateDynamic("forceApprovalPrompt")(forceApprovalPrompt)
-    if (passwordSignupFields != null) __obj.updateDynamic("passwordSignupFields")(passwordSignupFields)
-    if (requestOfflineToken != null) __obj.updateDynamic("requestOfflineToken")(requestOfflineToken)
-    if (requestPermissions != null) __obj.updateDynamic("requestPermissions")(requestPermissions)
+    if (forceApprovalPrompt != null) __obj.updateDynamic("forceApprovalPrompt")(forceApprovalPrompt.asInstanceOf[js.Any])
+    if (passwordSignupFields != null) __obj.updateDynamic("passwordSignupFields")(passwordSignupFields.asInstanceOf[js.Any])
+    if (requestOfflineToken != null) __obj.updateDynamic("requestOfflineToken")(requestOfflineToken.asInstanceOf[js.Any])
+    if (requestPermissions != null) __obj.updateDynamic("requestPermissions")(requestPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ForceApprovalPrompt]
   }
 }

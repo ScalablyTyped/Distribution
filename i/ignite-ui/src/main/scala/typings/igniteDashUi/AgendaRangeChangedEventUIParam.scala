@@ -28,8 +28,8 @@ object AgendaRangeChangedEventUIParam {
   ): AgendaRangeChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (dateRangeInterval != null) __obj.updateDynamic("dateRangeInterval")(dateRangeInterval.asInstanceOf[js.Any])
-    if (newAgendaRangeStartDate != null) __obj.updateDynamic("newAgendaRangeStartDate")(newAgendaRangeStartDate)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (newAgendaRangeStartDate != null) __obj.updateDynamic("newAgendaRangeStartDate")(newAgendaRangeStartDate.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgendaRangeChangedEventUIParam]
   }
 }

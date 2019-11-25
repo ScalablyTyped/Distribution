@@ -33,17 +33,17 @@ object InstanceUpdateOptions {
     where: AnyWhereOptions | (js.Array[col | and | or | String]) = null
   ): InstanceUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset)
-    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning)
-    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
+    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning.asInstanceOf[js.Any])
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceUpdateOptions]
   }

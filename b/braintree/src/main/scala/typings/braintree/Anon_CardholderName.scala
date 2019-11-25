@@ -26,13 +26,13 @@ object Anon_CardholderName {
     token: String = null
   ): Anon_CardholderName = {
     val __obj = js.Dynamic.literal()
-    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName)
-    if (cvv != null) __obj.updateDynamic("cvv")(cvv)
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
-    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth)
-    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName.asInstanceOf[js.Any])
+    if (cvv != null) __obj.updateDynamic("cvv")(cvv.asInstanceOf[js.Any])
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
+    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CardholderName]
   }
 }

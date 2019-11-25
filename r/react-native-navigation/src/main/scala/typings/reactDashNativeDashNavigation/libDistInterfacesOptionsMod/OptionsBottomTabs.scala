@@ -93,19 +93,19 @@ object OptionsBottomTabs {
     visible: js.UndefOr[Boolean] = js.undefined
   ): OptionsBottomTabs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
-    if (currentTabId != null) __obj.updateDynamic("currentTabId")(currentTabId)
+    if (currentTabId != null) __obj.updateDynamic("currentTabId")(currentTabId.asInstanceOf[js.Any])
     if (currentTabIndex != null) __obj.updateDynamic("currentTabIndex")(currentTabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind)
+    if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind.asInstanceOf[js.Any])
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideShadow)) __obj.updateDynamic("hideShadow")(hideShadow)
+    if (!js.isUndefined(hideShadow)) __obj.updateDynamic("hideShadow")(hideShadow.asInstanceOf[js.Any])
     if (tabsAttachMode != null) __obj.updateDynamic("tabsAttachMode")(tabsAttachMode.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     if (titleDisplayMode != null) __obj.updateDynamic("titleDisplayMode")(titleDisplayMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsBottomTabs]
   }
 }

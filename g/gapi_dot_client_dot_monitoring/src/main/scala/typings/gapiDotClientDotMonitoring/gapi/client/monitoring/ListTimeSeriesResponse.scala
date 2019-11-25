@@ -18,8 +18,8 @@ object ListTimeSeriesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, timeSeries: js.Array[TimeSeries] = null): ListTimeSeriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (timeSeries != null) __obj.updateDynamic("timeSeries")(timeSeries)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (timeSeries != null) __obj.updateDynamic("timeSeries")(timeSeries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTimeSeriesResponse]
   }
 }

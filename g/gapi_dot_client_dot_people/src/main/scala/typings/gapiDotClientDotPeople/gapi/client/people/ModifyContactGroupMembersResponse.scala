@@ -13,7 +13,7 @@ object ModifyContactGroupMembersResponse {
   @scala.inline
   def apply(notFoundResourceNames: js.Array[String] = null): ModifyContactGroupMembersResponse = {
     val __obj = js.Dynamic.literal()
-    if (notFoundResourceNames != null) __obj.updateDynamic("notFoundResourceNames")(notFoundResourceNames)
+    if (notFoundResourceNames != null) __obj.updateDynamic("notFoundResourceNames")(notFoundResourceNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyContactGroupMembersResponse]
   }
 }

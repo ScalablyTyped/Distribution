@@ -11,7 +11,7 @@ trait LayoutProps extends js.Object {
 object LayoutProps {
   @scala.inline
   def apply(className: String): LayoutProps = {
-    val __obj = js.Dynamic.literal(className = className)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LayoutProps]
   }

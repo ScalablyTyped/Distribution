@@ -11,7 +11,7 @@ trait Anon_EnableAutofillOnKeyPress extends js.Object {
 object Anon_EnableAutofillOnKeyPress {
   @scala.inline
   def apply(enableAutofillOnKeyPress: js.Array[Double]): Anon_EnableAutofillOnKeyPress = {
-    val __obj = js.Dynamic.literal(enableAutofillOnKeyPress = enableAutofillOnKeyPress)
+    val __obj = js.Dynamic.literal(enableAutofillOnKeyPress = enableAutofillOnKeyPress.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnableAutofillOnKeyPress]
   }

@@ -13,7 +13,7 @@ trait CursorInfo extends js.Object {
 object CursorInfo {
   @scala.inline
   def apply(newRange: Anon_Index, oldRange: Anon_Index): CursorInfo = {
-    val __obj = js.Dynamic.literal(newRange = newRange, oldRange = oldRange)
+    val __obj = js.Dynamic.literal(newRange = newRange.asInstanceOf[js.Any], oldRange = oldRange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CursorInfo]
   }

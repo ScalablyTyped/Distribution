@@ -101,13 +101,13 @@ object PlotPackedbubbleLayoutAlgorithmParentNodeOptions {
     if (gravitationalConstant != null) __obj.updateDynamic("gravitationalConstant")(gravitationalConstant.asInstanceOf[js.Any])
     if (initialPositionRadius != null) __obj.updateDynamic("initialPositionRadius")(initialPositionRadius.asInstanceOf[js.Any])
     if (initialPositions != null) __obj.updateDynamic("initialPositions")(initialPositions.asInstanceOf[js.Any])
-    if (integration != null) __obj.updateDynamic("integration")(integration)
+    if (integration != null) __obj.updateDynamic("integration")(integration.asInstanceOf[js.Any])
     if (linkLength != null) __obj.updateDynamic("linkLength")(linkLength.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (maxIterations != null) __obj.updateDynamic("maxIterations")(maxIterations.asInstanceOf[js.Any])
     if (maxSpeed != null) __obj.updateDynamic("maxSpeed")(maxSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(seriesInteraction)) __obj.updateDynamic("seriesInteraction")(seriesInteraction)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(seriesInteraction)) __obj.updateDynamic("seriesInteraction")(seriesInteraction.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPackedbubbleLayoutAlgorithmParentNodeOptions]
   }
 }

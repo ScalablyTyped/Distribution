@@ -11,7 +11,7 @@ import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNode
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.STANDARD
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.STANDARD_IA
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.`aws:kms`
-import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester
+import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester_
 import typings.atAwsDashSdkTypes.buildResponseMod.MetadataBearer
 import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import typings.std.Date
@@ -95,7 +95,7 @@ trait GetObjectOutput[StreamType] extends MetadataBearer {
   /**
     * <p>If present, indicates that the requester was successfully charged for the request.</p>
     */
-  var RequestCharged: js.UndefOr[requester | String] = js.undefined
+  var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
   /**
     * <p>Provides information about object restoration operation and expiration time of the restored object copy.</p>
     */
@@ -156,7 +156,7 @@ object GetObjectOutput {
     MissingMeta: Int | Double = null,
     PartsCount: Int | Double = null,
     ReplicationStatus: COMPLETE | PENDING | FAILED | REPLICA | String = null,
-    RequestCharged: requester | String = null,
+    RequestCharged: requester_ | String = null,
     Restore: String = null,
     SSECustomerAlgorithm: String = null,
     SSECustomerKeyMD5: String = null,
@@ -167,35 +167,35 @@ object GetObjectOutput {
     VersionId: String = null,
     WebsiteRedirectLocation: String = null
   ): GetObjectOutput[StreamType] = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (AcceptRanges != null) __obj.updateDynamic("AcceptRanges")(AcceptRanges)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (AcceptRanges != null) __obj.updateDynamic("AcceptRanges")(AcceptRanges.asInstanceOf[js.Any])
     if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl)
-    if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition)
-    if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding)
-    if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage)
+    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl.asInstanceOf[js.Any])
+    if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition.asInstanceOf[js.Any])
+    if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding.asInstanceOf[js.Any])
+    if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage.asInstanceOf[js.Any])
     if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
-    if (ContentRange != null) __obj.updateDynamic("ContentRange")(ContentRange)
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType)
-    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker)
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag)
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration)
-    if (Expires != null) __obj.updateDynamic("Expires")(Expires)
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata)
+    if (ContentRange != null) __obj.updateDynamic("ContentRange")(ContentRange.asInstanceOf[js.Any])
+    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.asInstanceOf[js.Any])
+    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
+    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
+    if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
+    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
+    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
     if (MissingMeta != null) __obj.updateDynamic("MissingMeta")(MissingMeta.asInstanceOf[js.Any])
     if (PartsCount != null) __obj.updateDynamic("PartsCount")(PartsCount.asInstanceOf[js.Any])
     if (ReplicationStatus != null) __obj.updateDynamic("ReplicationStatus")(ReplicationStatus.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
-    if (Restore != null) __obj.updateDynamic("Restore")(Restore)
-    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm)
-    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5)
-    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId)
+    if (Restore != null) __obj.updateDynamic("Restore")(Restore.asInstanceOf[js.Any])
+    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])
+    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5.asInstanceOf[js.Any])
+    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId.asInstanceOf[js.Any])
     if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     if (TagCount != null) __obj.updateDynamic("TagCount")(TagCount.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
-    if (WebsiteRedirectLocation != null) __obj.updateDynamic("WebsiteRedirectLocation")(WebsiteRedirectLocation)
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
+    if (WebsiteRedirectLocation != null) __obj.updateDynamic("WebsiteRedirectLocation")(WebsiteRedirectLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectOutput[StreamType]]
   }
 }

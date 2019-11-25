@@ -20,8 +20,8 @@ object ApiModel {
     shapes: ShapeMap,
     documentation: java.lang.String = null
   ): ApiModel = {
-    val __obj = js.Dynamic.literal(metadata = metadata, operations = operations, shapes = shapes)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], shapes = shapes.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiModel]
   }
 }

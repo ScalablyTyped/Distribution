@@ -15,7 +15,7 @@ trait Envelope extends js.Object {
 object Envelope {
   @scala.inline
   def apply(from: String | `false`, to: js.Array[String]): Envelope = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Envelope]
   }

@@ -14,8 +14,8 @@ object Anon_Key {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, `x5t#S256`: String = null): Anon_Key = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

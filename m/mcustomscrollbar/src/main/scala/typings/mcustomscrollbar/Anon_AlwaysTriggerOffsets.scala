@@ -106,7 +106,7 @@ object Anon_AlwaysTriggerOffsets {
     whileScrolling: () => Unit = null
   ): Anon_AlwaysTriggerOffsets = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysTriggerOffsets)) __obj.updateDynamic("alwaysTriggerOffsets")(alwaysTriggerOffsets)
+    if (!js.isUndefined(alwaysTriggerOffsets)) __obj.updateDynamic("alwaysTriggerOffsets")(alwaysTriggerOffsets.asInstanceOf[js.Any])
     if (onBeforeUpdate != null) __obj.updateDynamic("onBeforeUpdate")(js.Any.fromFunction0(onBeforeUpdate))
     if (onCreate != null) __obj.updateDynamic("onCreate")(js.Any.fromFunction0(onCreate))
     if (onImageLoad != null) __obj.updateDynamic("onImageLoad")(js.Any.fromFunction0(onImageLoad))

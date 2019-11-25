@@ -25,11 +25,11 @@ object Anon_Attributes {
     sortCriteria: js.Array[SortCriterion[D]] = null
   ): Anon_Attributes[Kin, D, K, Din] = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (dataMapping != null) __obj.updateDynamic("dataMapping")(dataMapping)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (dataMapping != null) __obj.updateDynamic("dataMapping")(dataMapping.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (sortCriteria != null) __obj.updateDynamic("sortCriteria")(sortCriteria)
+    if (sortCriteria != null) __obj.updateDynamic("sortCriteria")(sortCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attributes[Kin, D, K, Din]]
   }
 }

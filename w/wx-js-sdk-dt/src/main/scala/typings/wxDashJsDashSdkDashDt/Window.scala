@@ -15,7 +15,7 @@ object Window {
   @scala.inline
   def apply(__wxjs_is_wkwebview: js.UndefOr[Boolean] = js.undefined): Window = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(__wxjs_is_wkwebview)) __obj.updateDynamic("__wxjs_is_wkwebview")(__wxjs_is_wkwebview)
+    if (!js.isUndefined(__wxjs_is_wkwebview)) __obj.updateDynamic("__wxjs_is_wkwebview")(__wxjs_is_wkwebview.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
 }

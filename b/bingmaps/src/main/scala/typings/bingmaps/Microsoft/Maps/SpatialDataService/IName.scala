@@ -16,7 +16,7 @@ trait IName extends js.Object {
 object IName {
   @scala.inline
   def apply(Culture: String, EntityName: String, SourceID: String): IName = {
-    val __obj = js.Dynamic.literal(Culture = Culture, EntityName = EntityName, SourceID = SourceID)
+    val __obj = js.Dynamic.literal(Culture = Culture.asInstanceOf[js.Any], EntityName = EntityName.asInstanceOf[js.Any], SourceID = SourceID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IName]
   }

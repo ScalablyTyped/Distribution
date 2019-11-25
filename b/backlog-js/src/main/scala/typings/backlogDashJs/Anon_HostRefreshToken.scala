@@ -12,7 +12,7 @@ trait Anon_HostRefreshToken extends js.Object {
 object Anon_HostRefreshToken {
   @scala.inline
   def apply(host: String, refreshToken: String): Anon_HostRefreshToken = {
-    val __obj = js.Dynamic.literal(host = host, refreshToken = refreshToken)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HostRefreshToken]
   }

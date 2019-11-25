@@ -17,8 +17,8 @@ object EqualizerOptions {
     use_tallest: js.UndefOr[Boolean] = js.undefined
   ): EqualizerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(equalize_on_stack)) __obj.updateDynamic("equalize_on_stack")(equalize_on_stack)
-    if (!js.isUndefined(use_tallest)) __obj.updateDynamic("use_tallest")(use_tallest)
+    if (!js.isUndefined(equalize_on_stack)) __obj.updateDynamic("equalize_on_stack")(equalize_on_stack.asInstanceOf[js.Any])
+    if (!js.isUndefined(use_tallest)) __obj.updateDynamic("use_tallest")(use_tallest.asInstanceOf[js.Any])
     __obj.asInstanceOf[EqualizerOptions]
   }
 }

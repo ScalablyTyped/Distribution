@@ -14,8 +14,8 @@ trait GitGetRefResponse extends js.Object {
 object GitGetRefResponse {
   @scala.inline
   def apply(node_id: String, `object`: GitGetRefResponseObject, ref: String, url: String): GitGetRefResponse = {
-    val __obj = js.Dynamic.literal(node_id = node_id, ref = ref, url = url)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(node_id = node_id.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitGetRefResponse]
   }
 }

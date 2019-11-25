@@ -18,8 +18,8 @@ object CloudWorkspaceId {
   @scala.inline
   def apply(name: String = null, repoId: RepoId = null): CloudWorkspaceId = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (repoId != null) __obj.updateDynamic("repoId")(repoId)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (repoId != null) __obj.updateDynamic("repoId")(repoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWorkspaceId]
   }
 }

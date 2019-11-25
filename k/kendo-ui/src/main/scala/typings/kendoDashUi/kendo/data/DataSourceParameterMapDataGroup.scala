@@ -18,9 +18,9 @@ object DataSourceParameterMapDataGroup {
     field: String = null
   ): DataSourceParameterMapDataGroup = {
     val __obj = js.Dynamic.literal()
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceParameterMapDataGroup]
   }
 }

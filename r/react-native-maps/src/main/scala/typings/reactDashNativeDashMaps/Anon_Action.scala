@@ -13,7 +13,7 @@ trait Anon_Action extends js.Object {
 object Anon_Action {
   @scala.inline
   def apply(action: `marker-press`, id: String): Anon_Action = {
-    val __obj = js.Dynamic.literal(action = action, id = id)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Action]
   }

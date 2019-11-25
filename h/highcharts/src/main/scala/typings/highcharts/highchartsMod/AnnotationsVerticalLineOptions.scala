@@ -31,9 +31,9 @@ object AnnotationsVerticalLineOptions {
     typeOptions: AnnotationsVerticalLineTypeOptions = null
   ): AnnotationsVerticalLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions)
-    if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions)
-    if (typeOptions != null) __obj.updateDynamic("typeOptions")(typeOptions)
+    if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions.asInstanceOf[js.Any])
+    if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions.asInstanceOf[js.Any])
+    if (typeOptions != null) __obj.updateDynamic("typeOptions")(typeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsVerticalLineOptions]
   }
 }

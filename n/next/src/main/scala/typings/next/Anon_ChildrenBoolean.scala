@@ -14,7 +14,7 @@ trait Anon_ChildrenBoolean extends js.Object {
 object Anon_ChildrenBoolean {
   @scala.inline
   def apply(children: Validator[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray]): Anon_ChildrenBoolean = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChildrenBoolean]
   }

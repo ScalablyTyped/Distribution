@@ -14,7 +14,7 @@ object SafeAreaViewProps {
   @scala.inline
   def apply(forceInset: Anon_Bottom = null): SafeAreaViewProps = {
     val __obj = js.Dynamic.literal()
-    if (forceInset != null) __obj.updateDynamic("forceInset")(forceInset)
+    if (forceInset != null) __obj.updateDynamic("forceInset")(forceInset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeAreaViewProps]
   }
 }

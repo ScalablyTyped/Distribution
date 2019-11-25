@@ -15,8 +15,8 @@ trait GetObjectByHeapObjectIdParameterType extends js.Object {
 object GetObjectByHeapObjectIdParameterType {
   @scala.inline
   def apply(objectId: HeapSnapshotObjectId, objectGroup: java.lang.String = null): GetObjectByHeapObjectIdParameterType = {
-    val __obj = js.Dynamic.literal(objectId = objectId)
-    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)
+    val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
+    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectByHeapObjectIdParameterType]
   }
 }

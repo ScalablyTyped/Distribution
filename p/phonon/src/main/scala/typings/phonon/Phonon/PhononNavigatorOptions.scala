@@ -26,13 +26,13 @@ object PhononNavigatorOptions {
     useHash: js.UndefOr[Boolean] = js.undefined
   ): PhononNavigatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animatePages)) __obj.updateDynamic("animatePages")(animatePages)
-    if (defaultPage != null) __obj.updateDynamic("defaultPage")(defaultPage)
-    if (defaultTemplateExtension != null) __obj.updateDynamic("defaultTemplateExtension")(defaultTemplateExtension)
-    if (!js.isUndefined(enableBrowserBackButton)) __obj.updateDynamic("enableBrowserBackButton")(enableBrowserBackButton)
-    if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix)
-    if (templateRootDirectory != null) __obj.updateDynamic("templateRootDirectory")(templateRootDirectory)
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash)
+    if (!js.isUndefined(animatePages)) __obj.updateDynamic("animatePages")(animatePages.asInstanceOf[js.Any])
+    if (defaultPage != null) __obj.updateDynamic("defaultPage")(defaultPage.asInstanceOf[js.Any])
+    if (defaultTemplateExtension != null) __obj.updateDynamic("defaultTemplateExtension")(defaultTemplateExtension.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBrowserBackButton)) __obj.updateDynamic("enableBrowserBackButton")(enableBrowserBackButton.asInstanceOf[js.Any])
+    if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix.asInstanceOf[js.Any])
+    if (templateRootDirectory != null) __obj.updateDynamic("templateRootDirectory")(templateRootDirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhononNavigatorOptions]
   }
 }

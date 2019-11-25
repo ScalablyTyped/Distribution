@@ -14,7 +14,7 @@ trait Anon_OptionsShippingOption extends js.Object {
 object Anon_OptionsShippingOption {
   @scala.inline
   def apply(shippingOption: ShippingOption, updateWith: UpdateDetails => Unit): Anon_OptionsShippingOption = {
-    val __obj = js.Dynamic.literal(shippingOption = shippingOption, updateWith = js.Any.fromFunction1(updateWith))
+    val __obj = js.Dynamic.literal(shippingOption = shippingOption.asInstanceOf[js.Any], updateWith = js.Any.fromFunction1(updateWith))
   
     __obj.asInstanceOf[Anon_OptionsShippingOption]
   }

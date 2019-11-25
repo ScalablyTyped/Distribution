@@ -38,11 +38,11 @@ object CryptoKeyVersion {
     state: String = null
   ): CryptoKeyVersion = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (destroyEventTime != null) __obj.updateDynamic("destroyEventTime")(destroyEventTime)
-    if (destroyTime != null) __obj.updateDynamic("destroyTime")(destroyTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (destroyEventTime != null) __obj.updateDynamic("destroyEventTime")(destroyEventTime.asInstanceOf[js.Any])
+    if (destroyTime != null) __obj.updateDynamic("destroyTime")(destroyTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoKeyVersion]
   }
 }

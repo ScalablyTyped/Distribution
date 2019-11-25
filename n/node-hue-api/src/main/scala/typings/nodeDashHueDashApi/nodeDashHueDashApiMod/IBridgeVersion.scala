@@ -13,7 +13,7 @@ trait IBridgeVersion extends js.Object {
 object IBridgeVersion {
   @scala.inline
   def apply(name: String, version: Anon_Api): IBridgeVersion = {
-    val __obj = js.Dynamic.literal(name = name, version = version)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBridgeVersion]
   }

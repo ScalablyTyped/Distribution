@@ -11,7 +11,7 @@ trait Anon_Closable extends js.Object {
 object Anon_Closable {
   @scala.inline
   def apply(closable: Boolean): Anon_Closable = {
-    val __obj = js.Dynamic.literal(closable = closable)
+    val __obj = js.Dynamic.literal(closable = closable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Closable]
   }

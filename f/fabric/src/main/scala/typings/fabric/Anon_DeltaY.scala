@@ -21,7 +21,7 @@ object Anon_DeltaY {
     height: Int | Double = null,
     kernedWidth: Int | Double = null
   ): Anon_DeltaY = {
-    val __obj = js.Dynamic.literal(left = left, width = width)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (deltaY != null) __obj.updateDynamic("deltaY")(deltaY.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (kernedWidth != null) __obj.updateDynamic("kernedWidth")(kernedWidth.asInstanceOf[js.Any])

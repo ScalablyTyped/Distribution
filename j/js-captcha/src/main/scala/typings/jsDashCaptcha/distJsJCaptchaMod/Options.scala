@@ -44,16 +44,16 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (canvasFillStyle != null) __obj.updateDynamic("canvasFillStyle")(canvasFillStyle)
-    if (canvasFontFamily != null) __obj.updateDynamic("canvasFontFamily")(canvasFontFamily)
-    if (canvasFontSize != null) __obj.updateDynamic("canvasFontSize")(canvasFontSize)
+    if (canvasFillStyle != null) __obj.updateDynamic("canvasFillStyle")(canvasFillStyle.asInstanceOf[js.Any])
+    if (canvasFontFamily != null) __obj.updateDynamic("canvasFontFamily")(canvasFontFamily.asInstanceOf[js.Any])
+    if (canvasFontSize != null) __obj.updateDynamic("canvasFontSize")(canvasFontSize.asInstanceOf[js.Any])
     if (canvasHeight != null) __obj.updateDynamic("canvasHeight")(canvasHeight.asInstanceOf[js.Any])
     if (canvasWidth != null) __obj.updateDynamic("canvasWidth")(canvasWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnSubmit)) __obj.updateDynamic("clearOnSubmit")(clearOnSubmit)
-    if (el != null) __obj.updateDynamic("el")(el)
-    if (!js.isUndefined(focusOnError)) __obj.updateDynamic("focusOnError")(focusOnError)
-    if (requiredValue != null) __obj.updateDynamic("requiredValue")(requiredValue)
-    if (!js.isUndefined(resetOnError)) __obj.updateDynamic("resetOnError")(resetOnError)
+    if (!js.isUndefined(clearOnSubmit)) __obj.updateDynamic("clearOnSubmit")(clearOnSubmit.asInstanceOf[js.Any])
+    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusOnError)) __obj.updateDynamic("focusOnError")(focusOnError.asInstanceOf[js.Any])
+    if (requiredValue != null) __obj.updateDynamic("requiredValue")(requiredValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnError)) __obj.updateDynamic("resetOnError")(resetOnError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

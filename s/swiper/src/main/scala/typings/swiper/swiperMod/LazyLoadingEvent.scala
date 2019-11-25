@@ -8,5 +8,14 @@ import scala.scalajs.js.annotation._
   - typings.swiper.swiperStrings.lazyImageLoad
   - typings.swiper.swiperStrings.lazyImageReady
 */
-trait LazyLoadingEvent extends SwiperEvent
+trait LazyLoadingEvent extends js.Object
+
+object LazyLoadingEvent {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def lazyImageLoad: typings.swiper.swiperStrings.lazyImageLoad = this.cast("lazyImageLoad")
+  @scala.inline
+  def lazyImageReady: typings.swiper.swiperStrings.lazyImageReady = this.cast("lazyImageReady")
+}
 

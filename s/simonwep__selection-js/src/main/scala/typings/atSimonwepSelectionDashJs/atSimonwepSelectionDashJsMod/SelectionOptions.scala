@@ -33,16 +33,16 @@ object SelectionOptions {
     startareas: js.Array[String] = null
   ): SelectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (boundaries != null) __obj.updateDynamic("boundaries")(boundaries)
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (boundaries != null) __obj.updateDynamic("boundaries")(boundaries.asInstanceOf[js.Any])
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (scrollSpeedDivider != null) __obj.updateDynamic("scrollSpeedDivider")(scrollSpeedDivider.asInstanceOf[js.Any])
-    if (selectables != null) __obj.updateDynamic("selectables")(selectables)
+    if (selectables != null) __obj.updateDynamic("selectables")(selectables.asInstanceOf[js.Any])
     if (selectionAreaContainer != null) __obj.updateDynamic("selectionAreaContainer")(selectionAreaContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleClick)) __obj.updateDynamic("singleClick")(singleClick)
+    if (!js.isUndefined(singleClick)) __obj.updateDynamic("singleClick")(singleClick.asInstanceOf[js.Any])
     if (startThreshold != null) __obj.updateDynamic("startThreshold")(startThreshold.asInstanceOf[js.Any])
-    if (startareas != null) __obj.updateDynamic("startareas")(startareas)
+    if (startareas != null) __obj.updateDynamic("startareas")(startareas.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionOptions]
   }
 }

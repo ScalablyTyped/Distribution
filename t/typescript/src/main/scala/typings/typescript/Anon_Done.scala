@@ -14,7 +14,7 @@ object Anon_Done {
   @scala.inline
   def apply[T](value: T, done: `false` = null): Anon_Done[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (done != null) __obj.updateDynamic("done")(done)
+    if (done != null) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Done[T]]
   }
 }

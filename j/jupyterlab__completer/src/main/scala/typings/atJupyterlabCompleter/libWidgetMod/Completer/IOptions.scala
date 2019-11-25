@@ -27,9 +27,9 @@ object IOptions {
   @scala.inline
   def apply(editor: IEditor = null, model: IModel = null, renderer: IRenderer = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (editor != null) __obj.updateDynamic("editor")(editor)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

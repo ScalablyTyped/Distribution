@@ -37,19 +37,19 @@ object AddToCalendarProps {
     rootClass: String = null,
     useFontAwesomeIcons: js.UndefOr[Boolean] = js.undefined
   ): AddToCalendarProps = {
-    val __obj = js.Dynamic.literal(event = event)
-    if (buttonClassClosed != null) __obj.updateDynamic("buttonClassClosed")(buttonClassClosed)
-    if (buttonClassOpen != null) __obj.updateDynamic("buttonClassOpen")(buttonClassOpen)
-    if (buttonIconClass != null) __obj.updateDynamic("buttonIconClass")(buttonIconClass)
-    if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel)
-    if (buttonTemplate != null) __obj.updateDynamic("buttonTemplate")(buttonTemplate)
-    if (buttonWrapperClass != null) __obj.updateDynamic("buttonWrapperClass")(buttonWrapperClass)
-    if (!js.isUndefined(displayItemIcons)) __obj.updateDynamic("displayItemIcons")(displayItemIcons)
-    if (dropdownClass != null) __obj.updateDynamic("dropdownClass")(dropdownClass)
-    if (listItems != null) __obj.updateDynamic("listItems")(listItems)
-    if (!js.isUndefined(optionsOpen)) __obj.updateDynamic("optionsOpen")(optionsOpen)
-    if (rootClass != null) __obj.updateDynamic("rootClass")(rootClass)
-    if (!js.isUndefined(useFontAwesomeIcons)) __obj.updateDynamic("useFontAwesomeIcons")(useFontAwesomeIcons)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+    if (buttonClassClosed != null) __obj.updateDynamic("buttonClassClosed")(buttonClassClosed.asInstanceOf[js.Any])
+    if (buttonClassOpen != null) __obj.updateDynamic("buttonClassOpen")(buttonClassOpen.asInstanceOf[js.Any])
+    if (buttonIconClass != null) __obj.updateDynamic("buttonIconClass")(buttonIconClass.asInstanceOf[js.Any])
+    if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel.asInstanceOf[js.Any])
+    if (buttonTemplate != null) __obj.updateDynamic("buttonTemplate")(buttonTemplate.asInstanceOf[js.Any])
+    if (buttonWrapperClass != null) __obj.updateDynamic("buttonWrapperClass")(buttonWrapperClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayItemIcons)) __obj.updateDynamic("displayItemIcons")(displayItemIcons.asInstanceOf[js.Any])
+    if (dropdownClass != null) __obj.updateDynamic("dropdownClass")(dropdownClass.asInstanceOf[js.Any])
+    if (listItems != null) __obj.updateDynamic("listItems")(listItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionsOpen)) __obj.updateDynamic("optionsOpen")(optionsOpen.asInstanceOf[js.Any])
+    if (rootClass != null) __obj.updateDynamic("rootClass")(rootClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFontAwesomeIcons)) __obj.updateDynamic("useFontAwesomeIcons")(useFontAwesomeIcons.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddToCalendarProps]
   }
 }

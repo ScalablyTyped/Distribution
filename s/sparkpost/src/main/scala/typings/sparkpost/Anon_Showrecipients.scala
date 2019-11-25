@@ -12,7 +12,7 @@ object Anon_Showrecipients {
   @scala.inline
   def apply(show_recipients: js.UndefOr[Boolean] = js.undefined): Anon_Showrecipients = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(show_recipients)) __obj.updateDynamic("show_recipients")(show_recipients)
+    if (!js.isUndefined(show_recipients)) __obj.updateDynamic("show_recipients")(show_recipients.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Showrecipients]
   }
 }

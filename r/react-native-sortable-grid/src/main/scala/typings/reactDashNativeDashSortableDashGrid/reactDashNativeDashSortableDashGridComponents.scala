@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSortableDashGridComponents extends reactDashNativeDashSortableDashGridProps {
   @scala.inline
-  def DefaultCls: ComponentType[DefaultClsProps] = js.constructorOf[typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.defaultCls].asInstanceOf[typings.react.reactMod.ComponentType[DefaultClsProps]]
+  def Default: ComponentType[DefaultProps] = js.constructorOf[typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.defaultCls].asInstanceOf[typings.react.reactMod.ComponentType[DefaultProps]]
   @scala.inline
   def ReactDashNativeDashSortableDashGrid: ComponentType[ReactDashNativeDashSortableDashGridProps] = typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.default.asInstanceOf[typings.react.reactMod.ComponentType[ReactDashNativeDashSortableDashGridProps]]
 }

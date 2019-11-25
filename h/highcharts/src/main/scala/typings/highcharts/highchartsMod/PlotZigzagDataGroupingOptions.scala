@@ -116,13 +116,13 @@ object PlotZigzagDataGroupingOptions {
   ): PlotZigzagDataGroupingOptions = {
     val __obj = js.Dynamic.literal()
     if (approximation != null) __obj.updateDynamic("approximation")(approximation.asInstanceOf[js.Any])
-    if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(forced)) __obj.updateDynamic("forced")(forced)
-    if (!js.isUndefined(groupAll)) __obj.updateDynamic("groupAll")(groupAll)
+    if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(forced)) __obj.updateDynamic("forced")(forced.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupAll)) __obj.updateDynamic("groupAll")(groupAll.asInstanceOf[js.Any])
     if (groupPixelWidth != null) __obj.updateDynamic("groupPixelWidth")(groupPixelWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothed)) __obj.updateDynamic("smoothed")(smoothed)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (!js.isUndefined(smoothed)) __obj.updateDynamic("smoothed")(smoothed.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotZigzagDataGroupingOptions]
   }
 }

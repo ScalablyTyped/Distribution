@@ -50,7 +50,7 @@ object SendAsCollection {
     SmimeInfo: SmimeInfoCollection = null
   ): SendAsCollection = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), get = js.Any.fromFunction2(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction3(patch), remove = js.Any.fromFunction2(remove), update = js.Any.fromFunction3(update), verify = js.Any.fromFunction2(verify))
-    if (SmimeInfo != null) __obj.updateDynamic("SmimeInfo")(SmimeInfo)
+    if (SmimeInfo != null) __obj.updateDynamic("SmimeInfo")(SmimeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAsCollection]
   }
 }

@@ -17,7 +17,7 @@ trait StopStreamEncryptionOutput extends OutputTypesUnion {
 object StopStreamEncryptionOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): StopStreamEncryptionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StopStreamEncryptionOutput]
   }

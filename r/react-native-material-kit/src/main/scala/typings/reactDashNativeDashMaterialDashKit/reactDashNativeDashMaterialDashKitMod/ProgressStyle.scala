@@ -14,9 +14,9 @@ object ProgressStyle {
   @scala.inline
   def apply(backgroundColor: String = null, bufferColor: String = null, progressColor: String = null): ProgressStyle = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (bufferColor != null) __obj.updateDynamic("bufferColor")(bufferColor)
-    if (progressColor != null) __obj.updateDynamic("progressColor")(progressColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (bufferColor != null) __obj.updateDynamic("bufferColor")(bufferColor.asInstanceOf[js.Any])
+    if (progressColor != null) __obj.updateDynamic("progressColor")(progressColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressStyle]
   }
 }

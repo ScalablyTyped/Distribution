@@ -24,10 +24,10 @@ object StockToolsGuiDefinitionsMeasureOptions {
     measureY: StockToolsGuiDefinitionsMeasureMeasureYOptions = null
   ): StockToolsGuiDefinitionsMeasureOptions = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (measureX != null) __obj.updateDynamic("measureX")(measureX)
-    if (measureXY != null) __obj.updateDynamic("measureXY")(measureXY)
-    if (measureY != null) __obj.updateDynamic("measureY")(measureY)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (measureX != null) __obj.updateDynamic("measureX")(measureX.asInstanceOf[js.Any])
+    if (measureXY != null) __obj.updateDynamic("measureXY")(measureXY.asInstanceOf[js.Any])
+    if (measureY != null) __obj.updateDynamic("measureY")(measureY.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsMeasureOptions]
   }
 }

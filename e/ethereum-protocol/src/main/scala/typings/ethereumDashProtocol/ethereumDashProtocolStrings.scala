@@ -45,10 +45,14 @@ object ethereumDashProtocolStrings {
   sealed trait mwei extends Unit
   
   @js.native
-  sealed trait nonpayable extends ConstructorStateMutability
+  sealed trait nonpayable
+    extends ConstructorStateMutability
+       with StateMutability
   
   @js.native
-  sealed trait payable extends ConstructorStateMutability
+  sealed trait payable
+    extends ConstructorStateMutability
+       with StateMutability
   
   @js.native
   sealed trait pure extends StateMutability

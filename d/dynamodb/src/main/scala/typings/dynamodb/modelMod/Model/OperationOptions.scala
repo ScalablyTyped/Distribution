@@ -26,13 +26,13 @@ object OperationOptions {
     overwrite: js.UndefOr[Boolean] = js.undefined
   ): OperationOptions = {
     val __obj = js.Dynamic.literal()
-    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
-    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
+    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression.asInstanceOf[js.Any])
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
+    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues.asInstanceOf[js.Any])
     if (ReturnValues != null) __obj.updateDynamic("ReturnValues")(ReturnValues.asInstanceOf[js.Any])
-    if (UpdateExpression != null) __obj.updateDynamic("UpdateExpression")(UpdateExpression)
-    if (expected != null) __obj.updateDynamic("expected")(expected)
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (UpdateExpression != null) __obj.updateDynamic("UpdateExpression")(UpdateExpression.asInstanceOf[js.Any])
+    if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOptions]
   }
 }

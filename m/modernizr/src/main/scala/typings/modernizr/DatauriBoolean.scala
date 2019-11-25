@@ -12,7 +12,7 @@ trait DatauriBoolean extends Boolean {
 object DatauriBoolean {
   @scala.inline
   def apply(over32kb: scala.Boolean): DatauriBoolean = {
-    val __obj = js.Dynamic.literal(over32kb = over32kb)
+    val __obj = js.Dynamic.literal(over32kb = over32kb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatauriBoolean]
   }

@@ -12,7 +12,7 @@ trait Partial extends js.Object {
 object Partial {
   @scala.inline
   def apply(name: String, sub: typings.isoDash3166Dash2.isoDash3166Dash2Mod.SubdivisionInfo.Map): Partial = {
-    val __obj = js.Dynamic.literal(name = name, sub = sub)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Partial]
   }

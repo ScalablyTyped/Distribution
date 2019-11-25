@@ -34,10 +34,10 @@ object RenderItem {
     geometry: BufferGeometry = null,
     group: Group = null
   ): RenderItem = {
-    val __obj = js.Dynamic.literal(groupOrder = groupOrder, id = id, material = material, program = program, renderOrder = renderOrder, z = z)
-    __obj.updateDynamic("object")(`object`)
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
-    if (group != null) __obj.updateDynamic("group")(group)
+    val __obj = js.Dynamic.literal(groupOrder = groupOrder.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], material = material.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], renderOrder = renderOrder.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderItem]
   }
 }

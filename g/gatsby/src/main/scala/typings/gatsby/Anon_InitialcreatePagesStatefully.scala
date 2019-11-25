@@ -12,7 +12,7 @@ trait Anon_InitialcreatePagesStatefully extends js.Object {
 object Anon_InitialcreatePagesStatefully {
   @scala.inline
   def apply(traceId: `initial-createPagesStatefully`): Anon_InitialcreatePagesStatefully = {
-    val __obj = js.Dynamic.literal(traceId = traceId)
+    val __obj = js.Dynamic.literal(traceId = traceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InitialcreatePagesStatefully]
   }

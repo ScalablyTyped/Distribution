@@ -61,7 +61,7 @@ trait Anon_ContentQueries[T] extends js.Object {
     *    API will be simplified to be consistent with `outputs`.
     */
   var inputs: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string]}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ContentQueries with js.Any
   ] = js.undefined
@@ -76,7 +76,7 @@ trait Anon_ContentQueries[T] extends js.Object {
     * of properties.
     */
   var outputs: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ContentQueries with js.Any
   ] = js.undefined
@@ -92,10 +92,10 @@ object Anon_ContentQueries {
   def apply[T](
     contentQueries: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit = null,
     hostBindings: (/* rf */ ɵRenderFlags, T, /* elementIndex */ Double) => Unit = null,
-    inputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+    inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string]}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ContentQueries with js.Any = null,
-    outputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+    outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ContentQueries with js.Any = null,
     viewQuery: (/* rf */ ɵRenderFlags, T) => Unit = null
@@ -103,8 +103,8 @@ object Anon_ContentQueries {
     val __obj = js.Dynamic.literal()
     if (contentQueries != null) __obj.updateDynamic("contentQueries")(js.Any.fromFunction3(contentQueries))
     if (hostBindings != null) __obj.updateDynamic("hostBindings")(js.Any.fromFunction3(hostBindings))
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
     if (viewQuery != null) __obj.updateDynamic("viewQuery")(js.Any.fromFunction2(viewQuery))
     __obj.asInstanceOf[Anon_ContentQueries[T]]
   }

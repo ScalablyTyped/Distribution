@@ -45,9 +45,9 @@ object CreateSegmentInput {
     $httpOptions: BrowserHttpOptions = null,
     $maxRetries: Int | Double = null
   ): CreateSegmentInput = {
-    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, WriteSegmentRequest = WriteSegmentRequest)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteSegmentRequest = WriteSegmentRequest.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSegmentInput]
   }

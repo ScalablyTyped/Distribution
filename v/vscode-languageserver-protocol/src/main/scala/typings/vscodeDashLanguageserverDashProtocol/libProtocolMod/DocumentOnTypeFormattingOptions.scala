@@ -18,8 +18,8 @@ trait DocumentOnTypeFormattingOptions extends js.Object {
 object DocumentOnTypeFormattingOptions {
   @scala.inline
   def apply(firstTriggerCharacter: String, moreTriggerCharacter: js.Array[String] = null): DocumentOnTypeFormattingOptions = {
-    val __obj = js.Dynamic.literal(firstTriggerCharacter = firstTriggerCharacter)
-    if (moreTriggerCharacter != null) __obj.updateDynamic("moreTriggerCharacter")(moreTriggerCharacter)
+    val __obj = js.Dynamic.literal(firstTriggerCharacter = firstTriggerCharacter.asInstanceOf[js.Any])
+    if (moreTriggerCharacter != null) __obj.updateDynamic("moreTriggerCharacter")(moreTriggerCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentOnTypeFormattingOptions]
   }
 }

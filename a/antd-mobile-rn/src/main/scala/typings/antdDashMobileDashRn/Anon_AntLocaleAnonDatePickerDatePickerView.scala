@@ -11,7 +11,7 @@ trait Anon_AntLocaleAnonDatePickerDatePickerView extends js.Object {
 object Anon_AntLocaleAnonDatePickerDatePickerView {
   @scala.inline
   def apply(antLocale: Anon_DatePickerDatePickerView): Anon_AntLocaleAnonDatePickerDatePickerView = {
-    val __obj = js.Dynamic.literal(antLocale = antLocale)
+    val __obj = js.Dynamic.literal(antLocale = antLocale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AntLocaleAnonDatePickerDatePickerView]
   }

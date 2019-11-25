@@ -14,7 +14,7 @@ trait Anon_ALWAYS extends js.Object {
 object Anon_ALWAYS {
   @scala.inline
   def apply(ALWAYS: always, WHEN_IN_USE: when_in_use): Anon_ALWAYS = {
-    val __obj = js.Dynamic.literal(ALWAYS = ALWAYS, WHEN_IN_USE = WHEN_IN_USE)
+    val __obj = js.Dynamic.literal(ALWAYS = ALWAYS.asInstanceOf[js.Any], WHEN_IN_USE = WHEN_IN_USE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ALWAYS]
   }

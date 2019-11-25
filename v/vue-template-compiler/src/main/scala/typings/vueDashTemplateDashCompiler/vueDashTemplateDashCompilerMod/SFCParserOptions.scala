@@ -19,7 +19,7 @@ object SFCParserOptions {
   @scala.inline
   def apply(deindent: js.UndefOr[Boolean] = js.undefined, pad: `true` | line | space = null): SFCParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deindent)) __obj.updateDynamic("deindent")(deindent)
+    if (!js.isUndefined(deindent)) __obj.updateDynamic("deindent")(deindent.asInstanceOf[js.Any])
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCParserOptions]
   }

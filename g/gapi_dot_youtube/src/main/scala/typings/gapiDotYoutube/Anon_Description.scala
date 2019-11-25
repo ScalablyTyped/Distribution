@@ -31,7 +31,7 @@ object Anon_Description {
     thumbnails: GoogleApiYouTubeThumbnailResource,
     title: String
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal(description = description, publishedAt = publishedAt, thumbnails = thumbnails, title = title)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], publishedAt = publishedAt.asInstanceOf[js.Any], thumbnails = thumbnails.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Description]
   }

@@ -14,8 +14,8 @@ trait EditorCommand extends js.Object {
 object EditorCommand {
   @scala.inline
   def apply(bindKey: js.Any, exec: js.Function, name: String, readOnly: js.UndefOr[Boolean] = js.undefined): EditorCommand = {
-    val __obj = js.Dynamic.literal(bindKey = bindKey, exec = exec, name = name)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    val __obj = js.Dynamic.literal(bindKey = bindKey.asInstanceOf[js.Any], exec = exec.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorCommand]
   }
 }

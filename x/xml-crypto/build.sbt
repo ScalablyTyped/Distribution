@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "xml-crypto"
-version := "1.4-dt-20190904Z-bf8fa9"
+version := "1.4-dt-20190904Z-d99cf4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "xpath" % "0.0.27-9fba2c")
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d",
+  "org.scalablytyped" %%% "xpath" % "0.0.27-735c2c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

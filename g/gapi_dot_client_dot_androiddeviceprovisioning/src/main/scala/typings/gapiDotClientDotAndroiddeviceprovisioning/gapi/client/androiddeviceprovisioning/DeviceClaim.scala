@@ -15,8 +15,8 @@ object DeviceClaim {
   @scala.inline
   def apply(ownerCompanyId: String = null, sectionType: String = null): DeviceClaim = {
     val __obj = js.Dynamic.literal()
-    if (ownerCompanyId != null) __obj.updateDynamic("ownerCompanyId")(ownerCompanyId)
-    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType)
+    if (ownerCompanyId != null) __obj.updateDynamic("ownerCompanyId")(ownerCompanyId.asInstanceOf[js.Any])
+    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceClaim]
   }
 }

@@ -22,10 +22,10 @@ object PostingPhotoOptions {
     location: PostingLocation = null,
     usertags: PostingUsertags = null
   ): PostingPhotoOptions = {
-    val __obj = js.Dynamic.literal(file = file)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (usertags != null) __obj.updateDynamic("usertags")(usertags)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostingPhotoOptions]
   }
 }

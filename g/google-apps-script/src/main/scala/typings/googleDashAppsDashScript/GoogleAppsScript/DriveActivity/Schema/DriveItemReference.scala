@@ -15,10 +15,10 @@ object DriveItemReference {
   @scala.inline
   def apply(file: js.Any = null, folder: Folder = null, name: String = null, title: String = null): DriveItemReference = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (folder != null) __obj.updateDynamic("folder")(folder)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveItemReference]
   }
 }

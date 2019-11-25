@@ -12,7 +12,7 @@ trait Vote extends js.Object {
 object Vote {
   @scala.inline
   def apply(i: Double, v: Double): Vote = {
-    val __obj = js.Dynamic.literal(i = i, v = v)
+    val __obj = js.Dynamic.literal(i = i.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Vote]
   }

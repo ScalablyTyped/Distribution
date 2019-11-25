@@ -50,13 +50,13 @@ object RedirectOptions {
     secure: js.UndefOr[Boolean] = js.undefined
   ): RedirectOptions = {
     val __obj = js.Dynamic.literal()
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (!js.isUndefined(overrideQuery)) __obj.updateDynamic("overrideQuery")(overrideQuery)
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
-    if (!js.isUndefined(permanent)) __obj.updateDynamic("permanent")(permanent)
-    if (port != null) __obj.updateDynamic("port")(port)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideQuery)) __obj.updateDynamic("overrideQuery")(overrideQuery.asInstanceOf[js.Any])
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
+    if (!js.isUndefined(permanent)) __obj.updateDynamic("permanent")(permanent.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectOptions]
   }
 }

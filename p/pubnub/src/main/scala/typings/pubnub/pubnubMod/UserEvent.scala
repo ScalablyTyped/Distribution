@@ -16,7 +16,7 @@ trait UserEvent extends js.Object {
 object UserEvent {
   @scala.inline
   def apply(channel: String, message: Anon_Data, publisher: String, subscription: String, timetoken: String): UserEvent = {
-    val __obj = js.Dynamic.literal(channel = channel, message = message, publisher = publisher, subscription = subscription, timetoken = timetoken)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserEvent]
   }

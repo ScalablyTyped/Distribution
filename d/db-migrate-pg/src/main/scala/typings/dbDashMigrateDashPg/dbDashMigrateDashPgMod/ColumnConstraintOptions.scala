@@ -12,7 +12,7 @@ object ColumnConstraintOptions {
   @scala.inline
   def apply(emitPrimaryKey: js.UndefOr[Boolean] = js.undefined): ColumnConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emitPrimaryKey)) __obj.updateDynamic("emitPrimaryKey")(emitPrimaryKey)
+    if (!js.isUndefined(emitPrimaryKey)) __obj.updateDynamic("emitPrimaryKey")(emitPrimaryKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnConstraintOptions]
   }
 }

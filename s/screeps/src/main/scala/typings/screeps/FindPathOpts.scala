@@ -93,18 +93,18 @@ object FindPathOpts {
     swampCost: Int | Double = null
   ): FindPathOpts = {
     val __obj = js.Dynamic.literal()
-    if (avoid != null) __obj.updateDynamic("avoid")(avoid)
+    if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
     if (costCallback != null) __obj.updateDynamic("costCallback")(js.Any.fromFunction2(costCallback))
     if (heuristicWeight != null) __obj.updateDynamic("heuristicWeight")(heuristicWeight.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (!js.isUndefined(ignoreCreeps)) __obj.updateDynamic("ignoreCreeps")(ignoreCreeps)
-    if (!js.isUndefined(ignoreDestructibleStructures)) __obj.updateDynamic("ignoreDestructibleStructures")(ignoreDestructibleStructures)
-    if (!js.isUndefined(ignoreRoads)) __obj.updateDynamic("ignoreRoads")(ignoreRoads)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCreeps)) __obj.updateDynamic("ignoreCreeps")(ignoreCreeps.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDestructibleStructures)) __obj.updateDynamic("ignoreDestructibleStructures")(ignoreDestructibleStructures.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreRoads)) __obj.updateDynamic("ignoreRoads")(ignoreRoads.asInstanceOf[js.Any])
     if (maxOps != null) __obj.updateDynamic("maxOps")(maxOps.asInstanceOf[js.Any])
     if (maxRooms != null) __obj.updateDynamic("maxRooms")(maxRooms.asInstanceOf[js.Any])
     if (plainCost != null) __obj.updateDynamic("plainCost")(plainCost.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize)
+    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
     if (swampCost != null) __obj.updateDynamic("swampCost")(swampCost.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindPathOpts]
   }

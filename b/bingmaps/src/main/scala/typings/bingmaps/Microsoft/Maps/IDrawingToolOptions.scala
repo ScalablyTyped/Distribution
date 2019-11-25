@@ -14,7 +14,7 @@ object IDrawingToolOptions {
   @scala.inline
   def apply(drawingBarActions: DrawingBarAction = null): IDrawingToolOptions = {
     val __obj = js.Dynamic.literal()
-    if (drawingBarActions != null) __obj.updateDynamic("drawingBarActions")(drawingBarActions)
+    if (drawingBarActions != null) __obj.updateDynamic("drawingBarActions")(drawingBarActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDrawingToolOptions]
   }
 }

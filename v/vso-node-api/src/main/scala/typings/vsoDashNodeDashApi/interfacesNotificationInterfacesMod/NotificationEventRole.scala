@@ -22,7 +22,7 @@ trait NotificationEventRole extends js.Object {
 object NotificationEventRole {
   @scala.inline
   def apply(id: String, name: String, supportsGroups: Boolean): NotificationEventRole = {
-    val __obj = js.Dynamic.literal(id = id, name = name, supportsGroups = supportsGroups)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], supportsGroups = supportsGroups.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationEventRole]
   }

@@ -12,7 +12,7 @@ trait ProcessReference extends js.Object {
 object ProcessReference {
   @scala.inline
   def apply(name: String, url: String): ProcessReference = {
-    val __obj = js.Dynamic.literal(name = name, url = url)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProcessReference]
   }

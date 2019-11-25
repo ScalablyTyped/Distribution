@@ -16,8 +16,8 @@ trait Anon_Component extends ExtendControlType {
 object Anon_Component {
   @scala.inline
   def apply(key: String, `type`: component, component: ReactNode = null): Anon_Component = {
-    val __obj = js.Dynamic.literal(key = key)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Component]
   }

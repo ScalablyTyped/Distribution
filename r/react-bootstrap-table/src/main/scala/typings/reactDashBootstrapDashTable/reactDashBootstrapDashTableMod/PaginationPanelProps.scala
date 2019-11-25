@@ -54,7 +54,7 @@ object PaginationPanelProps {
     sizePerPageList: SizePerPageList,
     toggleDropDown: () => Unit
   ): PaginationPanelProps = {
-    val __obj = js.Dynamic.literal(changePage = js.Any.fromFunction1(changePage), changeSizePerPage = js.Any.fromFunction1(changeSizePerPage), components = components, currPage = currPage, pageStartIndex = pageStartIndex, sizePerPage = sizePerPage, sizePerPageList = sizePerPageList, toggleDropDown = js.Any.fromFunction0(toggleDropDown))
+    val __obj = js.Dynamic.literal(changePage = js.Any.fromFunction1(changePage), changeSizePerPage = js.Any.fromFunction1(changeSizePerPage), components = components.asInstanceOf[js.Any], currPage = currPage.asInstanceOf[js.Any], pageStartIndex = pageStartIndex.asInstanceOf[js.Any], sizePerPage = sizePerPage.asInstanceOf[js.Any], sizePerPageList = sizePerPageList.asInstanceOf[js.Any], toggleDropDown = js.Any.fromFunction0(toggleDropDown))
   
     __obj.asInstanceOf[PaginationPanelProps]
   }

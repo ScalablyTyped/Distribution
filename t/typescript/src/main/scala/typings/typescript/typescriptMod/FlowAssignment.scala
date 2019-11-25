@@ -19,7 +19,7 @@ object FlowAssignment {
     node: Expression | VariableDeclaration | BindingElement,
     id: Int | Double = null
   ): FlowAssignment = {
-    val __obj = js.Dynamic.literal(antecedent = antecedent, flags = flags, node = node.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowAssignment]
   }

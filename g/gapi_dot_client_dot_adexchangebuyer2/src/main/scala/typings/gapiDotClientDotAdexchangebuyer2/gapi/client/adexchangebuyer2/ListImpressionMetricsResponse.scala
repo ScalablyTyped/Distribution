@@ -22,8 +22,8 @@ object ListImpressionMetricsResponse {
   @scala.inline
   def apply(impressionMetricsRows: js.Array[ImpressionMetricsRow] = null, nextPageToken: String = null): ListImpressionMetricsResponse = {
     val __obj = js.Dynamic.literal()
-    if (impressionMetricsRows != null) __obj.updateDynamic("impressionMetricsRows")(impressionMetricsRows)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (impressionMetricsRows != null) __obj.updateDynamic("impressionMetricsRows")(impressionMetricsRows.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListImpressionMetricsResponse]
   }
 }

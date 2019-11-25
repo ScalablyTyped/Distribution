@@ -21,8 +21,8 @@ trait ApplePayShippingMethodUpdate extends js.Object {
 object ApplePayShippingMethodUpdate {
   @scala.inline
   def apply(newTotal: ApplePayLineItem, newLineItems: js.Array[ApplePayLineItem] = null): ApplePayShippingMethodUpdate = {
-    val __obj = js.Dynamic.literal(newTotal = newTotal)
-    if (newLineItems != null) __obj.updateDynamic("newLineItems")(newLineItems)
+    val __obj = js.Dynamic.literal(newTotal = newTotal.asInstanceOf[js.Any])
+    if (newLineItems != null) __obj.updateDynamic("newLineItems")(newLineItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayShippingMethodUpdate]
   }
 }

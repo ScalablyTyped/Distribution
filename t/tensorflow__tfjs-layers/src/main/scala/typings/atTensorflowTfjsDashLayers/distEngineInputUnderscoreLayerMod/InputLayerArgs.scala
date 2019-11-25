@@ -34,12 +34,12 @@ object InputLayerArgs {
     sparse: js.UndefOr[Boolean] = js.undefined
   ): InputLayerArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape)
+    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype)
-    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse)
+    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
+    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputLayerArgs]
   }
 }

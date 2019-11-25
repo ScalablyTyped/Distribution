@@ -21,10 +21,10 @@ object Options {
     padding: Anon_Bottom = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
-    if (containerSelector != null) __obj.updateDynamic("containerSelector")(containerSelector)
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
+    if (containerSelector != null) __obj.updateDynamic("containerSelector")(containerSelector.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

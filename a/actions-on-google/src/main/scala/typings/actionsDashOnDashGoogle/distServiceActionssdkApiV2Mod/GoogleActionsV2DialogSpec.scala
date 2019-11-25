@@ -17,7 +17,7 @@ object GoogleActionsV2DialogSpec {
   @scala.inline
   def apply(extension: ApiClientObjectMap[_] = null): GoogleActionsV2DialogSpec = {
     val __obj = js.Dynamic.literal()
-    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2DialogSpec]
   }
 }

@@ -21,7 +21,7 @@ object PinState {
     supportedModes: js.Array[Double],
     value: Double
   ): PinState = {
-    val __obj = js.Dynamic.literal(analogChannel = analogChannel, mode = mode, report = report, supportedModes = supportedModes, value = value)
+    val __obj = js.Dynamic.literal(analogChannel = analogChannel.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any], supportedModes = supportedModes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PinState]
   }

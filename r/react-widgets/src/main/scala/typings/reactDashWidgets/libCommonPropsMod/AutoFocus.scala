@@ -15,7 +15,7 @@ object AutoFocus {
   @scala.inline
   def apply(autoFocus: js.UndefOr[Boolean] = js.undefined): AutoFocus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoFocus]
   }
 }

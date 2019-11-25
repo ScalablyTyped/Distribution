@@ -21,8 +21,8 @@ object GetTemplateResponse {
   @scala.inline
   def apply(metadata: TemplateMetadata = null, status: Status = null): GetTemplateResponse = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTemplateResponse]
   }
 }

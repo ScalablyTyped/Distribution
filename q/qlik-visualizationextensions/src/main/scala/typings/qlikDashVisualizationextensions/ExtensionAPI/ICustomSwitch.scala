@@ -14,7 +14,7 @@ trait ICustomSwitch extends js.Object {
 object ICustomSwitch {
   @scala.inline
   def apply(component: switch, defaultValue: Boolean, options: valueOrfunc[ICustomControlOption]): ICustomSwitch = {
-    val __obj = js.Dynamic.literal(component = component, defaultValue = defaultValue, options = options.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICustomSwitch]
   }

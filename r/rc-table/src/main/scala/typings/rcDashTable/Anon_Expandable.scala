@@ -27,7 +27,7 @@ object Anon_Expandable {
     prefixCls: String,
     record: ValueType
   ): Anon_Expandable[ValueType] = {
-    val __obj = js.Dynamic.literal(expandable = expandable, expanded = expanded, needIndentSpaced = needIndentSpaced, onExpand = js.Any.fromFunction2(onExpand), prefixCls = prefixCls, record = record.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expandable = expandable.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], needIndentSpaced = needIndentSpaced.asInstanceOf[js.Any], onExpand = js.Any.fromFunction2(onExpand), prefixCls = prefixCls.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Expandable[ValueType]]
   }

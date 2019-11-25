@@ -30,9 +30,9 @@ object GradientColorObject {
     linearGradient: LinearGradientColorObject = null,
     radialGradient: RadialGradientColorObject = null
   ): GradientColorObject = {
-    val __obj = js.Dynamic.literal(stops = stops)
-    if (linearGradient != null) __obj.updateDynamic("linearGradient")(linearGradient)
-    if (radialGradient != null) __obj.updateDynamic("radialGradient")(radialGradient)
+    val __obj = js.Dynamic.literal(stops = stops.asInstanceOf[js.Any])
+    if (linearGradient != null) __obj.updateDynamic("linearGradient")(linearGradient.asInstanceOf[js.Any])
+    if (radialGradient != null) __obj.updateDynamic("radialGradient")(radialGradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientColorObject]
   }
 }

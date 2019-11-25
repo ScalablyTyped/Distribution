@@ -22,7 +22,7 @@ object FeatureOptions {
     val __obj = js.Dynamic.literal()
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureOptions]
   }
 }

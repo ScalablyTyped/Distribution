@@ -12,7 +12,7 @@ trait Anon_SoundId extends js.Object {
 object Anon_SoundId {
   @scala.inline
   def apply(soundId: Double, volume: Double): Anon_SoundId = {
-    val __obj = js.Dynamic.literal(soundId = soundId, volume = volume)
+    val __obj = js.Dynamic.literal(soundId = soundId.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SoundId]
   }

@@ -1,7 +1,6 @@
 package typings.atUirouterAngularjs.atUirouterAngularjsMod
 
 import typings.atUirouterCore.libTransitionInterfaceMod.PathType
-import typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase
 import typings.atUirouterCore.libTransitionTransitionHookMod.GetErrorHandler
 import typings.atUirouterCore.libTransitionTransitionHookMod.GetResultHandler
 import scala.scalajs.js
@@ -12,17 +11,22 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransitionEventType protected ()
   extends typings.atUirouterCore.atUirouterCoreMod.TransitionEventType {
-  def this(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType) = this()
   def this(
     name: String,
-    hookPhase: TransitionHookPhase,
+    hookPhase: typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean
   ) = this()
   def this(
     name: String,
-    hookPhase: TransitionHookPhase,
+    hookPhase: typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -30,7 +34,7 @@ class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: TransitionHookPhase,
+    hookPhase: typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -39,7 +43,7 @@ class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: TransitionHookPhase,
+    hookPhase: typings.atUirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,

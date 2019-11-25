@@ -13,8 +13,8 @@ object ChatRenderAttachmentsOptions {
   @scala.inline
   def apply(attachmentLayout: String = null, attachments: ChatRenderAttachmentsOptionsAttachments = null): ChatRenderAttachmentsOptions = {
     val __obj = js.Dynamic.literal()
-    if (attachmentLayout != null) __obj.updateDynamic("attachmentLayout")(attachmentLayout)
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (attachmentLayout != null) __obj.updateDynamic("attachmentLayout")(attachmentLayout.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRenderAttachmentsOptions]
   }
 }

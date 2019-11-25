@@ -41,13 +41,13 @@ object ScriptTag {
     id: Int | Double = null,
     updated_at: String = null
   ): ScriptTag = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (display_scope != null) __obj.updateDynamic("display_scope")(display_scope.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptTag]
   }
 }

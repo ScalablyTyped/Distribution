@@ -29,7 +29,7 @@ object Anon_Duplex {
     Transform: Transform,
     Writable: Writable
   ): Anon_Duplex = {
-    val __obj = js.Dynamic.literal(Duplex = Duplex, PassThrough = PassThrough, Readable = Readable, Stream = Stream, Transform = Transform, Writable = Writable)
+    val __obj = js.Dynamic.literal(Duplex = Duplex.asInstanceOf[js.Any], PassThrough = PassThrough.asInstanceOf[js.Any], Readable = Readable.asInstanceOf[js.Any], Stream = Stream.asInstanceOf[js.Any], Transform = Transform.asInstanceOf[js.Any], Writable = Writable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Duplex]
   }

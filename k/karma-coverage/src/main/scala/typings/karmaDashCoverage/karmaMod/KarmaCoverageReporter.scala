@@ -32,15 +32,15 @@ object KarmaCoverageReporter {
     watermarks: js.Any = null
   ): KarmaCoverageReporter = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (check != null) __obj.updateDynamic("check")(check)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (!js.isUndefined(includeAllSources)) __obj.updateDynamic("includeAllSources")(includeAllSources)
-    if (instrumenter != null) __obj.updateDynamic("instrumenter")(instrumenter)
-    if (sourceStore != null) __obj.updateDynamic("sourceStore")(sourceStore)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAllSources)) __obj.updateDynamic("includeAllSources")(includeAllSources.asInstanceOf[js.Any])
+    if (instrumenter != null) __obj.updateDynamic("instrumenter")(instrumenter.asInstanceOf[js.Any])
+    if (sourceStore != null) __obj.updateDynamic("sourceStore")(sourceStore.asInstanceOf[js.Any])
     if (subdir != null) __obj.updateDynamic("subdir")(subdir.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (watermarks != null) __obj.updateDynamic("watermarks")(watermarks)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (watermarks != null) __obj.updateDynamic("watermarks")(watermarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[KarmaCoverageReporter]
   }
 }

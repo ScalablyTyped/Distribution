@@ -13,7 +13,7 @@ object MobileFriendlyIssue {
   @scala.inline
   def apply(rule: String = null): MobileFriendlyIssue = {
     val __obj = js.Dynamic.literal()
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileFriendlyIssue]
   }
 }

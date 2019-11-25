@@ -13,8 +13,8 @@ object Anon_Description {
   @scala.inline
   def apply(description: String = null, options: js.Array[js.Array[String]] = null): Anon_Description = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Description]
   }
 }

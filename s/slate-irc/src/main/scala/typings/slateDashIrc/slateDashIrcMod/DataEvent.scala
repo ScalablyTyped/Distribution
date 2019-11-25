@@ -15,7 +15,7 @@ trait DataEvent extends js.Object {
 object DataEvent {
   @scala.inline
   def apply(command: String, params: String, prefix: String, string: String, trailing: String): DataEvent = {
-    val __obj = js.Dynamic.literal(command = command, params = params, prefix = prefix, string = string, trailing = trailing)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], trailing = trailing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataEvent]
   }

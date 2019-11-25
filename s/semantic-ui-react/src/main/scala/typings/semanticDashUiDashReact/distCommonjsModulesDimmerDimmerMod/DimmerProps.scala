@@ -17,9 +17,9 @@ object DimmerProps {
     page: js.UndefOr[Boolean] = js.undefined
   ): DimmerProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimmerProps]
   }
 }

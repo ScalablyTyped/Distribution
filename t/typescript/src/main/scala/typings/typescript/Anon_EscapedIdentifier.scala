@@ -11,7 +11,7 @@ trait Anon_EscapedIdentifier extends js.Object {
 object Anon_EscapedIdentifier {
   @scala.inline
   def apply(__escapedIdentifier: Unit): Anon_EscapedIdentifier = {
-    val __obj = js.Dynamic.literal(__escapedIdentifier = __escapedIdentifier)
+    val __obj = js.Dynamic.literal(__escapedIdentifier = __escapedIdentifier.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EscapedIdentifier]
   }

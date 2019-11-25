@@ -18,7 +18,7 @@ object Frame {
     participanFrames: js.Array[StringDictionary[ParticipantFrame]],
     timestamp: Double
   ): Frame = {
-    val __obj = js.Dynamic.literal(events = events, participanFrames = participanFrames, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], participanFrames = participanFrames.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Frame]
   }

@@ -35,12 +35,12 @@ object Source {
     status: String = null,
     three_d_secure: Anon_Authenticated = null
   ): Source = {
-    val __obj = js.Dynamic.literal(client_secret = client_secret, created = created, currency = currency, id = id, owner = owner)
-    if (card != null) __obj.updateDynamic("card")(card)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
-    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (three_d_secure != null) __obj.updateDynamic("three_d_secure")(three_d_secure)
+    val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (three_d_secure != null) __obj.updateDynamic("three_d_secure")(three_d_secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

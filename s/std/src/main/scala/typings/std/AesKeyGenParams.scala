@@ -11,7 +11,7 @@ trait AesKeyGenParams extends Algorithm {
 object AesKeyGenParams {
   @scala.inline
   def apply(length: Double, name: java.lang.String): AesKeyGenParams = {
-    val __obj = js.Dynamic.literal(length = length, name = name)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AesKeyGenParams]
   }

@@ -33,16 +33,16 @@ object POEMessage {
     side: String = null,
     timestamp: Int | Double = null
   ): POEMessage = {
-    val __obj = js.Dynamic.literal(messageType = messageType)
+    val __obj = js.Dynamic.literal(messageType = messageType.asInstanceOf[js.Any])
     if (canceledQuantity != null) __obj.updateDynamic("canceledQuantity")(canceledQuantity.asInstanceOf[js.Any])
-    if (instrument != null) __obj.updateDynamic("instrument")(instrument)
-    if (liquidityFlag != null) __obj.updateDynamic("liquidityFlag")(liquidityFlag)
+    if (instrument != null) __obj.updateDynamic("instrument")(instrument.asInstanceOf[js.Any])
+    if (liquidityFlag != null) __obj.updateDynamic("liquidityFlag")(liquidityFlag.asInstanceOf[js.Any])
     if (matchNumber != null) __obj.updateDynamic("matchNumber")(matchNumber.asInstanceOf[js.Any])
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId)
+    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (side != null) __obj.updateDynamic("side")(side)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[POEMessage]
   }

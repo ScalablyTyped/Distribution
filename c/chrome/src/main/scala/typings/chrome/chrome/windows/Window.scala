@@ -61,12 +61,12 @@ object Window {
     top: Int | Double = null,
     width: Int | Double = null
   ): Window = {
-    val __obj = js.Dynamic.literal(alwaysOnTop = alwaysOnTop, focused = focused, id = id, incognito = incognito, state = state)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(alwaysOnTop = alwaysOnTop.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
-    if (tabs != null) __obj.updateDynamic("tabs")(tabs)
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
+    if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]

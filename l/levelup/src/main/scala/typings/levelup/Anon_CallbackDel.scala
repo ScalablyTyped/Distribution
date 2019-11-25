@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_CallbackDel extends js.Object {
   def del(
-    key: /* import warning: ImportType.apply Failed type conversion: infer K */ js.Any,
-    options: /* import warning: ImportType.apply Failed type conversion: infer O */ js.Any,
+    key: /* import warning: importer.ImportType#apply Failed type conversion: infer K */ js.Any,
+    options: /* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any,
     callback: ErrorCallback
   ): Unit
 }
@@ -16,7 +16,7 @@ trait Anon_CallbackDel extends js.Object {
 object Anon_CallbackDel {
   @scala.inline
   def apply(
-    del: (/* import warning: ImportType.apply Failed type conversion: infer K */ js.Any, /* import warning: ImportType.apply Failed type conversion: infer O */ js.Any, ErrorCallback) => Unit
+    del: (/* import warning: importer.ImportType#apply Failed type conversion: infer K */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any, ErrorCallback) => Unit
   ): Anon_CallbackDel = {
     val __obj = js.Dynamic.literal(del = js.Any.fromFunction3(del))
   

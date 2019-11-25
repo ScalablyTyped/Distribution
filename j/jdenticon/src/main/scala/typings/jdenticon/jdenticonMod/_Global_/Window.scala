@@ -17,7 +17,7 @@ object Window {
   @scala.inline
   def apply(jdenticon_config: JdenticonConfig = null): Window = {
     val __obj = js.Dynamic.literal()
-    if (jdenticon_config != null) __obj.updateDynamic("jdenticon_config")(jdenticon_config)
+    if (jdenticon_config != null) __obj.updateDynamic("jdenticon_config")(jdenticon_config.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
 }

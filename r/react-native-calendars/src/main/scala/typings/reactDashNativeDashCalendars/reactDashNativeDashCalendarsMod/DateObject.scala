@@ -15,7 +15,7 @@ trait DateObject extends js.Object {
 object DateObject {
   @scala.inline
   def apply(dateString: String, day: Double, month: Double, timestamp: Double, year: Double): DateObject = {
-    val __obj = js.Dynamic.literal(dateString = dateString, day = day, month = month, timestamp = timestamp, year = year)
+    val __obj = js.Dynamic.literal(dateString = dateString.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DateObject]
   }

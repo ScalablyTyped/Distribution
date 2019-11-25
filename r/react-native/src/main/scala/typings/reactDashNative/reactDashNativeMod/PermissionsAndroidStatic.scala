@@ -43,7 +43,7 @@ trait PermissionsAndroidStatic extends Instantiable0[PermissionsAndroidStatic] {
     * indicating whether the user allowed or denied the request
     */
   def requestMultiple(permissions: js.Array[Permission]): js.Promise[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in react-native.react-native.Permission ]: react-native.react-native.PermissionStatus}
     */ typings.reactDashNative.reactDashNativeStrings.PermissionsAndroidStatic with js.Any
   ] = js.native

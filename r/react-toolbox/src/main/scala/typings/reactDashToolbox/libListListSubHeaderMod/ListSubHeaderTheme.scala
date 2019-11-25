@@ -15,7 +15,7 @@ object ListSubHeaderTheme {
   @scala.inline
   def apply(subheader: String = null): ListSubHeaderTheme = {
     val __obj = js.Dynamic.literal()
-    if (subheader != null) __obj.updateDynamic("subheader")(subheader)
+    if (subheader != null) __obj.updateDynamic("subheader")(subheader.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSubHeaderTheme]
   }
 }

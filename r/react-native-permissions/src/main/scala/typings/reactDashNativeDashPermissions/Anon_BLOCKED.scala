@@ -18,7 +18,7 @@ trait Anon_BLOCKED extends js.Object {
 object Anon_BLOCKED {
   @scala.inline
   def apply(BLOCKED: blocked, DENIED: denied, GRANTED: granted, UNAVAILABLE: unavailable): Anon_BLOCKED = {
-    val __obj = js.Dynamic.literal(BLOCKED = BLOCKED, DENIED = DENIED, GRANTED = GRANTED, UNAVAILABLE = UNAVAILABLE)
+    val __obj = js.Dynamic.literal(BLOCKED = BLOCKED.asInstanceOf[js.Any], DENIED = DENIED.asInstanceOf[js.Any], GRANTED = GRANTED.asInstanceOf[js.Any], UNAVAILABLE = UNAVAILABLE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BLOCKED]
   }

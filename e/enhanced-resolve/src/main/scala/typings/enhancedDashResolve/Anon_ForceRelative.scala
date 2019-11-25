@@ -12,7 +12,7 @@ trait Anon_ForceRelative extends js.Object {
 object Anon_ForceRelative {
   @scala.inline
   def apply(forceRelative: Boolean, name: String): Anon_ForceRelative = {
-    val __obj = js.Dynamic.literal(forceRelative = forceRelative, name = name)
+    val __obj = js.Dynamic.literal(forceRelative = forceRelative.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ForceRelative]
   }

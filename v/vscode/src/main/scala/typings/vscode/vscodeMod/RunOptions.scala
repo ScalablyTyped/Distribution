@@ -15,7 +15,7 @@ object RunOptions {
   @scala.inline
   def apply(reevaluateOnRerun: js.UndefOr[Boolean] = js.undefined): RunOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reevaluateOnRerun)) __obj.updateDynamic("reevaluateOnRerun")(reevaluateOnRerun)
+    if (!js.isUndefined(reevaluateOnRerun)) __obj.updateDynamic("reevaluateOnRerun")(reevaluateOnRerun.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOptions]
   }
 }

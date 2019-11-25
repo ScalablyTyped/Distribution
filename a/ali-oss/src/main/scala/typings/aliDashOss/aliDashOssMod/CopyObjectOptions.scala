@@ -14,8 +14,8 @@ object CopyObjectOptions {
   @scala.inline
   def apply(headers: js.Object = null, meta: UserMeta = null, timeout: Int | Double = null): CopyObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyObjectOptions]
   }

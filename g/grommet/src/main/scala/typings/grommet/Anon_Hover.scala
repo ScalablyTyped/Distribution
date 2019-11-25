@@ -12,7 +12,7 @@ object Anon_Hover {
   @scala.inline
   def apply(hover: Anon_BackgroundExtendBackgroundType = null): Anon_Hover = {
     val __obj = js.Dynamic.literal()
-    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hover]
   }
 }

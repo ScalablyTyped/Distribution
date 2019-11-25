@@ -22,7 +22,7 @@ trait UpdateApnsChannelOutput extends OutputTypesUnion {
 object UpdateApnsChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, APNSChannelResponse: _UnmarshalledAPNSChannelResponse): UpdateApnsChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, APNSChannelResponse = APNSChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSChannelResponse = APNSChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateApnsChannelOutput]
   }

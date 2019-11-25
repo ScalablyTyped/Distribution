@@ -82,15 +82,15 @@ object Presentation {
     title: String = null
   ): Presentation = {
     val __obj = js.Dynamic.literal()
-    if (layouts != null) __obj.updateDynamic("layouts")(layouts)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (masters != null) __obj.updateDynamic("masters")(masters)
-    if (notesMaster != null) __obj.updateDynamic("notesMaster")(notesMaster)
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize)
-    if (presentationId != null) __obj.updateDynamic("presentationId")(presentationId)
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
-    if (slides != null) __obj.updateDynamic("slides")(slides)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (layouts != null) __obj.updateDynamic("layouts")(layouts.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (masters != null) __obj.updateDynamic("masters")(masters.asInstanceOf[js.Any])
+    if (notesMaster != null) __obj.updateDynamic("notesMaster")(notesMaster.asInstanceOf[js.Any])
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (presentationId != null) __obj.updateDynamic("presentationId")(presentationId.asInstanceOf[js.Any])
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
+    if (slides != null) __obj.updateDynamic("slides")(slides.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Presentation]
   }
 }

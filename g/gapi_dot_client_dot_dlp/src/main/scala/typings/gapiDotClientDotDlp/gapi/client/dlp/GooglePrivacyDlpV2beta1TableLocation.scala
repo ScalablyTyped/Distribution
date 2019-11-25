@@ -13,7 +13,7 @@ object GooglePrivacyDlpV2beta1TableLocation {
   @scala.inline
   def apply(rowIndex: String = null): GooglePrivacyDlpV2beta1TableLocation = {
     val __obj = js.Dynamic.literal()
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1TableLocation]
   }
 }

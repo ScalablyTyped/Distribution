@@ -13,7 +13,7 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(cols: js.Array[DataObjectColumn], p: js.Any, rows: js.Array[DataObjectRow]): DataObject = {
-    val __obj = js.Dynamic.literal(cols = cols, p = p, rows = rows)
+    val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataObject]
   }

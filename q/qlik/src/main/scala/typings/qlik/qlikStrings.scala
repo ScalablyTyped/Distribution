@@ -392,10 +392,10 @@ object qlikStrings {
   sealed trait textarea extends js.Object
   
   @js.native
-  sealed trait ts extends Turkish
+  sealed trait `ts-TR` extends Turkish
   
   @js.native
-  sealed trait `ts-TR` extends Turkish
+  sealed trait ts_ extends Turkish
   
   @js.native
   sealed trait `zh-CN` extends js.Object
@@ -652,9 +652,9 @@ object qlikStrings {
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
-  def ts: ts = "ts".asInstanceOf[ts]
-  @scala.inline
   def `ts-TR`: `ts-TR` = "ts-TR".asInstanceOf[`ts-TR`]
+  @scala.inline
+  def ts_ : ts_ = "ts".asInstanceOf[ts_]
   @scala.inline
   def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
   @scala.inline

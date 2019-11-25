@@ -31,10 +31,10 @@ object SnapSettingsHorizontalGridLines {
     snapInterval: js.Array[_] = null
   ): SnapSettingsHorizontalGridLines = {
     val __obj = js.Dynamic.literal()
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
-    if (lineDashArray != null) __obj.updateDynamic("lineDashArray")(lineDashArray)
-    if (linesInterval != null) __obj.updateDynamic("linesInterval")(linesInterval)
-    if (snapInterval != null) __obj.updateDynamic("snapInterval")(snapInterval)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
+    if (lineDashArray != null) __obj.updateDynamic("lineDashArray")(lineDashArray.asInstanceOf[js.Any])
+    if (linesInterval != null) __obj.updateDynamic("linesInterval")(linesInterval.asInstanceOf[js.Any])
+    if (snapInterval != null) __obj.updateDynamic("snapInterval")(snapInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapSettingsHorizontalGridLines]
   }
 }

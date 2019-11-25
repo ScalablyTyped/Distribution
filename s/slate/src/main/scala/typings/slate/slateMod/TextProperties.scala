@@ -22,10 +22,10 @@ object TextProperties {
     text: String = null
   ): TextProperties = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProperties]
   }
 }

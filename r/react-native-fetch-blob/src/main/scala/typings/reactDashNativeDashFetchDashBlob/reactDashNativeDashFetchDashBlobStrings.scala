@@ -32,7 +32,7 @@ object reactDashNativeDashFetchDashBlobStrings {
   sealed trait blob extends js.Object
   
   @js.native
-  sealed trait delete extends Methods
+  sealed trait delete_ extends Methods
   
   @js.native
   sealed trait directory extends js.Object
@@ -41,7 +41,7 @@ object reactDashNativeDashFetchDashBlobStrings {
   sealed trait file extends js.Object
   
   @js.native
-  sealed trait get extends Methods
+  sealed trait get_ extends Methods
   
   @js.native
   sealed trait json extends js.Object
@@ -50,10 +50,10 @@ object reactDashNativeDashFetchDashBlobStrings {
   sealed trait path extends js.Object
   
   @js.native
-  sealed trait post extends Methods
+  sealed trait post_ extends Methods
   
   @js.native
-  sealed trait put extends Methods
+  sealed trait put_ extends Methods
   
   @js.native
   sealed trait text extends js.Object
@@ -78,21 +78,21 @@ object reactDashNativeDashFetchDashBlobStrings {
   @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
   @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
   @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   @scala.inline
-  def get: get = "get".asInstanceOf[get]
+  def get_ : get_ = "get".asInstanceOf[get_]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  def post_ : post_ = "post".asInstanceOf[post_]
   @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  def put_ : put_ = "put".asInstanceOf[put_]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline

@@ -18,7 +18,7 @@ trait Service extends js.Object {
 object Service {
   @scala.inline
   def apply(ipAddress: String, serviceData: js.Array[String], serviceHostPort: String, serviceName: String): Service = {
-    val __obj = js.Dynamic.literal(ipAddress = ipAddress, serviceData = serviceData, serviceHostPort = serviceHostPort, serviceName = serviceName)
+    val __obj = js.Dynamic.literal(ipAddress = ipAddress.asInstanceOf[js.Any], serviceData = serviceData.asInstanceOf[js.Any], serviceHostPort = serviceHostPort.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Service]
   }

@@ -26,11 +26,11 @@ object Anon_CommentsIdLocSuperClass {
     superClass: ExpressionKind = null,
     typeParameters: TypeParameterInstantiationKind = null
   ): Anon_CommentsIdLocSuperClass = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (superClass != null) __obj.updateDynamic("superClass")(superClass)
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (superClass != null) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsIdLocSuperClass]
   }
 }

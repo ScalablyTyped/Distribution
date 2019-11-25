@@ -16,8 +16,8 @@ object INamespace {
   @scala.inline
   def apply(nested: StringDictionary[AnyNestedObject] = null, options: StringDictionary[js.Any] = null): INamespace = {
     val __obj = js.Dynamic.literal()
-    if (nested != null) __obj.updateDynamic("nested")(nested)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[INamespace]
   }
 }

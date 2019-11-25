@@ -32,16 +32,16 @@ object TimeFormatSpecifier {
     year: String = null
   ): TimeFormatSpecifier = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (hours != null) __obj.updateDynamic("hours")(hours)
-    if (milliseconds != null) __obj.updateDynamic("milliseconds")(milliseconds)
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes)
-    if (month != null) __obj.updateDynamic("month")(month)
-    if (quarter != null) __obj.updateDynamic("quarter")(quarter)
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds)
-    if (week != null) __obj.updateDynamic("week")(week)
-    if (year != null) __obj.updateDynamic("year")(year)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
+    if (milliseconds != null) __obj.updateDynamic("milliseconds")(milliseconds.asInstanceOf[js.Any])
+    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (quarter != null) __obj.updateDynamic("quarter")(quarter.asInstanceOf[js.Any])
+    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
+    if (week != null) __obj.updateDynamic("week")(week.asInstanceOf[js.Any])
+    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeFormatSpecifier]
   }
 }

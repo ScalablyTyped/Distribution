@@ -19,7 +19,7 @@ trait Section extends js.Object {
 object Section {
   @scala.inline
   def apply(groups: js.Array[Group], id: String, overridden: Boolean): Section = {
-    val __obj = js.Dynamic.literal(groups = groups, id = id, overridden = overridden)
+    val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], overridden = overridden.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Section]
   }

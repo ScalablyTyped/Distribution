@@ -11,7 +11,7 @@ trait Anon_TocLastLevelComputed extends js.Object {
 object Anon_TocLastLevelComputed {
   @scala.inline
   def apply(tocLastLevelComputed: js.Any): Anon_TocLastLevelComputed = {
-    val __obj = js.Dynamic.literal(tocLastLevelComputed = tocLastLevelComputed)
+    val __obj = js.Dynamic.literal(tocLastLevelComputed = tocLastLevelComputed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TocLastLevelComputed]
   }

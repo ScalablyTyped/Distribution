@@ -13,8 +13,8 @@ object Request {
   @scala.inline
   def apply(session: Session = null, sessionID: String = null): Request = {
     val __obj = js.Dynamic.literal()
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (sessionID != null) __obj.updateDynamic("sessionID")(sessionID)
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (sessionID != null) __obj.updateDynamic("sessionID")(sessionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

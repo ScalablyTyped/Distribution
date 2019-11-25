@@ -13,7 +13,7 @@ trait Anon_NOWAIT extends js.Object {
 object Anon_NOWAIT {
   @scala.inline
   def apply(NOWAIT: String, RXWAIT: String, WAIT: String): Anon_NOWAIT = {
-    val __obj = js.Dynamic.literal(NOWAIT = NOWAIT, RXWAIT = RXWAIT, WAIT = WAIT)
+    val __obj = js.Dynamic.literal(NOWAIT = NOWAIT.asInstanceOf[js.Any], RXWAIT = RXWAIT.asInstanceOf[js.Any], WAIT = WAIT.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NOWAIT]
   }

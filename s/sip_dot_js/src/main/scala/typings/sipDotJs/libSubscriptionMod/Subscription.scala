@@ -10,7 +10,7 @@ import typings.sipDotJs.libCoreMod.URI
 import typings.sipDotJs.libUAMod.UA
 import typings.sipDotJs.sipDotJsStrings.accepted
 import typings.sipDotJs.sipDotJsStrings.failed
-import typings.sipDotJs.sipDotJsStrings.notify
+import typings.sipDotJs.sipDotJsStrings.notify_
 import typings.sipDotJs.sipDotJsStrings.rejected
 import typings.sipDotJs.sipDotJsStrings.terminated
 import scala.scalajs.js
@@ -54,7 +54,7 @@ class Subscription protected () extends ClientContext {
   @JSName("emit")
   def emit_failed(event: failed, message: IncomingResponseMessage, cause: String): Boolean = js.native
   @JSName("emit")
-  def emit_notify(event: notify, notification: Anon_Request): Boolean = js.native
+  def emit_notify(event: notify_, notification: Anon_Request): Boolean = js.native
   @JSName("emit")
   def emit_rejected(event: rejected, message: IncomingResponseMessage, cause: String): Boolean = js.native
   @JSName("emit")
@@ -113,7 +113,7 @@ class Subscription protected () extends ClientContext {
     callback: js.Function2[/* message */ IncomingResponseMessage, /* cause */ String, Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_notify(name: notify, callback: js.Function1[/* notification */ Anon_Request, Unit]): this.type = js.native
+  def on_notify(name: notify_, callback: js.Function1[/* notification */ Anon_Request, Unit]): this.type = js.native
   @JSName("on")
   def on_rejected(
     name: rejected,

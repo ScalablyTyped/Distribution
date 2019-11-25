@@ -1,7 +1,7 @@
 package typings.mockDashFs.libDirectoryMod
 
-import typings.mockDashFs.libItemMod.ExtendedStats
 import typings.mockDashFs.libItemMod.Item
+import typings.mockDashFs.libItemMod.Stats
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,7 +42,7 @@ object Directory {
     getItem: String => typings.mockDashFs.libItemMod.^  | Null,
     getMTime: () => Date,
     getMode: () => Double,
-    getStats: () => ExtendedStats,
+    getStats: () => Stats,
     getUid: () => Double,
     list: () => js.Array[String],
     removeItem: String => typings.mockDashFs.libItemMod.^,

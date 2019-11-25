@@ -15,8 +15,8 @@ object RemoteConfigParameterValue {
   @scala.inline
   def apply(useInAppDefault: js.UndefOr[Boolean] = js.undefined, value: String = null): RemoteConfigParameterValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useInAppDefault)) __obj.updateDynamic("useInAppDefault")(useInAppDefault)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(useInAppDefault)) __obj.updateDynamic("useInAppDefault")(useInAppDefault.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteConfigParameterValue]
   }
 }

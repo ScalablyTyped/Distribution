@@ -11,7 +11,7 @@ trait EventError extends js.Object {
 object EventError {
   @scala.inline
   def apply(message: String): EventError = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventError]
   }

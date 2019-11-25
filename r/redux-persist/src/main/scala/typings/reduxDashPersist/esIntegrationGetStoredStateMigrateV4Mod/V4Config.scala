@@ -23,11 +23,11 @@ object V4Config {
     whitelist: js.Array[String] = null
   ): V4Config = {
     val __obj = js.Dynamic.literal()
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
-    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix)
-    if (storage != null) __obj.updateDynamic("storage")(storage)
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
+    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[V4Config]
   }
 }

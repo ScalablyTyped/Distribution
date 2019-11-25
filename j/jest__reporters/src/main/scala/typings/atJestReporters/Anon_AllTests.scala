@@ -14,7 +14,7 @@ trait Anon_AllTests extends js.Object {
 object Anon_AllTests {
   @scala.inline
   def apply(allTests: Double, tests: js.Array[Test], total: Double): Anon_AllTests = {
-    val __obj = js.Dynamic.literal(allTests = allTests, tests = tests, total = total)
+    val __obj = js.Dynamic.literal(allTests = allTests.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllTests]
   }

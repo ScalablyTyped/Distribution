@@ -48,13 +48,13 @@ object HighlightSelectionMatches {
     trim: js.UndefOr[Boolean] = js.undefined,
     wordsOnly: js.UndefOr[Boolean] = js.undefined
   ): HighlightSelectionMatches = {
-    val __obj = js.Dynamic.literal(delay = delay)
-    if (!js.isUndefined(annotateScrollbar)) __obj.updateDynamic("annotateScrollbar")(annotateScrollbar)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(annotateScrollbar)) __obj.updateDynamic("annotateScrollbar")(annotateScrollbar.asInstanceOf[js.Any])
     if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
     if (showToken != null) __obj.updateDynamic("showToken")(showToken.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
-    if (!js.isUndefined(wordsOnly)) __obj.updateDynamic("wordsOnly")(wordsOnly)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordsOnly)) __obj.updateDynamic("wordsOnly")(wordsOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightSelectionMatches]
   }
 }

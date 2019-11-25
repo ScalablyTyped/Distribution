@@ -46,7 +46,7 @@ object version {
     TIME_BASED: Double,
     UNKNOWN: Double
   ): version = {
-    val __obj = js.Dynamic.literal(DCE_SECURITY = DCE_SECURITY, NAME_BASED_MD5 = NAME_BASED_MD5, NAME_BASED_SHA1 = NAME_BASED_SHA1, RANDOM = RANDOM, TIME_BASED = TIME_BASED, UNKNOWN = UNKNOWN)
+    val __obj = js.Dynamic.literal(DCE_SECURITY = DCE_SECURITY.asInstanceOf[js.Any], NAME_BASED_MD5 = NAME_BASED_MD5.asInstanceOf[js.Any], NAME_BASED_SHA1 = NAME_BASED_SHA1.asInstanceOf[js.Any], RANDOM = RANDOM.asInstanceOf[js.Any], TIME_BASED = TIME_BASED.asInstanceOf[js.Any], UNKNOWN = UNKNOWN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[version]
   }

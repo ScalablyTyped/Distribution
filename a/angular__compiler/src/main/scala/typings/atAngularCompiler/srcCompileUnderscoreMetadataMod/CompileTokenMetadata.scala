@@ -14,7 +14,7 @@ object CompileTokenMetadata {
   def apply(identifier: CompileIdentifierMetadata | CompileTypeMetadata = null, value: js.Any = null): CompileTokenMetadata = {
     val __obj = js.Dynamic.literal()
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileTokenMetadata]
   }
 }

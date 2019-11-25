@@ -29,7 +29,7 @@ object FastOptions {
     concurrency: Int | Double = null,
     step: (/* totalTransferred */ Double, /* chunk */ Double, /* total */ Double) => Unit = null
   ): FastOptions = {
-    val __obj = js.Dynamic.literal(chunkSize = chunkSize)
+    val __obj = js.Dynamic.literal(chunkSize = chunkSize.asInstanceOf[js.Any])
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction3(step))
     __obj.asInstanceOf[FastOptions]

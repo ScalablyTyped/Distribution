@@ -12,7 +12,7 @@ trait BootstrapChartEventArgsBase extends EventArgs {
 object BootstrapChartEventArgsBase {
   @scala.inline
   def apply(component: js.Any, element: js.Any, sender: Control): BootstrapChartEventArgsBase = {
-    val __obj = js.Dynamic.literal(component = component, element = element, sender = sender)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BootstrapChartEventArgsBase]
   }

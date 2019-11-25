@@ -32,7 +32,7 @@ object WitContribution {
     inputs: StringDictionary[js.Any],
     showOnDeletedWorkItem: Boolean
   ): WitContribution = {
-    val __obj = js.Dynamic.literal(contributionId = contributionId, height = height, inputs = inputs, showOnDeletedWorkItem = showOnDeletedWorkItem)
+    val __obj = js.Dynamic.literal(contributionId = contributionId.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], showOnDeletedWorkItem = showOnDeletedWorkItem.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WitContribution]
   }

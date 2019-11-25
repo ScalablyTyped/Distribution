@@ -11,7 +11,7 @@ trait TestRunner extends js.Object {
 object TestRunner {
   @scala.inline
   def apply(name: String): TestRunner = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestRunner]
   }

@@ -30,15 +30,15 @@ object JsonAtRule {
     `type`: String = null
   ): JsonAtRule = {
     val __obj = js.Dynamic.literal()
-    if (first != null) __obj.updateDynamic("first")(first)
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (raws != null) __obj.updateDynamic("raws")(raws)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (raws != null) __obj.updateDynamic("raws")(raws.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonAtRule]
   }
 }

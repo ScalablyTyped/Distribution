@@ -12,7 +12,7 @@ object Anon_Style {
   @scala.inline
   def apply(style: Anon_Data = null): Anon_Style = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Style]
   }
 }

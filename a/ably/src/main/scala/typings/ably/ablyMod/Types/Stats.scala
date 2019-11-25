@@ -29,7 +29,7 @@ object Stats {
     persisted: StatsMessageTypes,
     tokenRequests: StatsRequestCount
   ): Stats = {
-    val __obj = js.Dynamic.literal(all = all, apiRequests = apiRequests, channels = channels, connections = connections, inbound = inbound, intervalId = intervalId, outbound = outbound, persisted = persisted, tokenRequests = tokenRequests)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], apiRequests = apiRequests.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], connections = connections.asInstanceOf[js.Any], inbound = inbound.asInstanceOf[js.Any], intervalId = intervalId.asInstanceOf[js.Any], outbound = outbound.asInstanceOf[js.Any], persisted = persisted.asInstanceOf[js.Any], tokenRequests = tokenRequests.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stats]
   }

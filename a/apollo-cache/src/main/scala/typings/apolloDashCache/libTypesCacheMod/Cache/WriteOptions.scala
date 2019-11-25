@@ -14,7 +14,7 @@ trait WriteOptions[TResult, TVariables] extends Query[TVariables] {
 object WriteOptions {
   @scala.inline
   def apply[TResult, TVariables](dataId: String, query: DocumentNode, result: TResult, variables: TVariables = null): WriteOptions[TResult, TVariables] = {
-    val __obj = js.Dynamic.literal(dataId = dataId, query = query, result = result.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataId = dataId.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteOptions[TResult, TVariables]]
   }

@@ -15,7 +15,7 @@ trait ScopeState extends js.Object {
 object ScopeState {
   @scala.inline
   def apply(id: Double, name: String, track: js.Array[Tensor[Rank]]): ScopeState = {
-    val __obj = js.Dynamic.literal(id = id, name = name, track = track)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScopeState]
   }

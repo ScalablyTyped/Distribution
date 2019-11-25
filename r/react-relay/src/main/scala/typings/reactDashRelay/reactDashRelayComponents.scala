@@ -36,10 +36,11 @@ object reactDashRelayComponents extends reactDashRelayProps {
   TExtraProps
   ]]]
   @scala.inline
-  def LocalQueryRenderer[TOperation /* <: OperationType */]: ComponentType[LocalQueryRendererProps[TOperation]] = js.constructorOf[typings.reactDashRelay.reactDashRelayMod.LocalQueryRenderer[TOperation]].asInstanceOf[typings.react.reactMod.ComponentType[LocalQueryRendererProps[TOperation]]]
+  def LocalQueryRenderer: ComponentType[LocalQueryRendererProps[OperationType]] = js.constructorOf[typings.reactDashRelay.reactDashRelayMod.LocalQueryRenderer[typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.OperationType]].asInstanceOf[typings.react.reactMod.ComponentType[
+  LocalQueryRendererProps[typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.OperationType]]]
   @scala.inline
-  def QueryRenderer[TOperation /* <: OperationType */]: ComponentType[Anon_CacheConfig with QueryRendererProps[TOperation]] = js.constructorOf[typings.reactDashRelay.reactDashRelayMod.QueryRenderer[TOperation]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashRelay.Anon_CacheConfig with typings.reactDashRelay.reactDashRelayMod.QueryRendererProps[TOperation]]]
+  def QueryRenderer: ComponentType[Anon_CacheConfig with QueryRendererProps[OperationType]] = js.constructorOf[typings.reactDashRelay.reactDashRelayMod.QueryRenderer[typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.OperationType]].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashRelay.Anon_CacheConfig with typings.reactDashRelay.reactDashRelayMod.QueryRendererProps[typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.OperationType]]]
   @scala.inline
   def RelayEnvironmentProvider: ComponentType[RelayEnvironmentProviderProps] = typings.reactDashRelay.hooksMod.asInstanceOf[js.Dynamic].selectDynamic("RelayEnvironmentProvider").asInstanceOf[typings.react.reactMod.ComponentType[RelayEnvironmentProviderProps]]
 }

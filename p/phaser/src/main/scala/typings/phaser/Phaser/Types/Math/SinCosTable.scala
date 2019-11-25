@@ -22,7 +22,7 @@ trait SinCosTable extends js.Object {
 object SinCosTable {
   @scala.inline
   def apply(cos: Double, length: Double, sin: Double): SinCosTable = {
-    val __obj = js.Dynamic.literal(cos = cos, length = length, sin = sin)
+    val __obj = js.Dynamic.literal(cos = cos.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], sin = sin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SinCosTable]
   }

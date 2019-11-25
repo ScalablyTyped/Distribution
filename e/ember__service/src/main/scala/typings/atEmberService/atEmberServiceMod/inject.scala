@@ -12,8 +12,8 @@ object inject extends js.Object {
   def apply(target: js.Object, propertyKey: String): Unit = js.native
   def apply(target: js.Object, propertyKey: js.Symbol): Unit = js.native
   def apply[K /* <: String */](name: K): ComputedProperty[
-    /* import warning: ImportType.apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any, 
-    /* import warning: ImportType.apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any
   ] = js.native
 }
 

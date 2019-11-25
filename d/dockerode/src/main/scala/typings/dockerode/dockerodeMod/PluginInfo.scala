@@ -23,9 +23,9 @@ object PluginInfo {
     Id: String = null,
     PluginReference: String = null
   ): PluginInfo = {
-    val __obj = js.Dynamic.literal(Config = Config, Enabled = Enabled, Name = Name, Settings = Settings)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (PluginReference != null) __obj.updateDynamic("PluginReference")(PluginReference)
+    val __obj = js.Dynamic.literal(Config = Config.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (PluginReference != null) __obj.updateDynamic("PluginReference")(PluginReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginInfo]
   }
 }

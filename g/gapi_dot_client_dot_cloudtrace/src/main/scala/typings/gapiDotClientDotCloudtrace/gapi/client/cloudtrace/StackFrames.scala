@@ -20,7 +20,7 @@ object StackFrames {
   def apply(droppedFramesCount: Int | Double = null, frame: js.Array[StackFrame] = null): StackFrames = {
     val __obj = js.Dynamic.literal()
     if (droppedFramesCount != null) __obj.updateDynamic("droppedFramesCount")(droppedFramesCount.asInstanceOf[js.Any])
-    if (frame != null) __obj.updateDynamic("frame")(frame)
+    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrames]
   }
 }

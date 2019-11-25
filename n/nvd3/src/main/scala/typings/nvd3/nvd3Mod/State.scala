@@ -13,7 +13,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(dispatch: Dispatch[EventTarget]): State = {
-    val __obj = js.Dynamic.literal(dispatch = dispatch)
+    val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

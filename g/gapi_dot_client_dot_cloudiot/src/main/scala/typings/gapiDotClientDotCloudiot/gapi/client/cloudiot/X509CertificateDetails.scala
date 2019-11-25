@@ -30,12 +30,12 @@ object X509CertificateDetails {
     subject: String = null
   ): X509CertificateDetails = {
     val __obj = js.Dynamic.literal()
-    if (expiryTime != null) __obj.updateDynamic("expiryTime")(expiryTime)
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
-    if (publicKeyType != null) __obj.updateDynamic("publicKeyType")(publicKeyType)
-    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (expiryTime != null) __obj.updateDynamic("expiryTime")(expiryTime.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    if (publicKeyType != null) __obj.updateDynamic("publicKeyType")(publicKeyType.asInstanceOf[js.Any])
+    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[X509CertificateDetails]
   }
 }

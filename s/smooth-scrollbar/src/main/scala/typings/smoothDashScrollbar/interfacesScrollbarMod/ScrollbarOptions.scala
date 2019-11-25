@@ -28,9 +28,9 @@ object ScrollbarOptions {
     delegateTo: EventTarget = null,
     wheelEventTarget: EventTarget = null
   ): ScrollbarOptions = {
-    val __obj = js.Dynamic.literal(alwaysShowTracks = alwaysShowTracks, continuousScrolling = continuousScrolling, damping = damping, plugins = plugins, renderByPixels = renderByPixels, thumbMinSize = thumbMinSize)
-    if (delegateTo != null) __obj.updateDynamic("delegateTo")(delegateTo)
-    if (wheelEventTarget != null) __obj.updateDynamic("wheelEventTarget")(wheelEventTarget)
+    val __obj = js.Dynamic.literal(alwaysShowTracks = alwaysShowTracks.asInstanceOf[js.Any], continuousScrolling = continuousScrolling.asInstanceOf[js.Any], damping = damping.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], renderByPixels = renderByPixels.asInstanceOf[js.Any], thumbMinSize = thumbMinSize.asInstanceOf[js.Any])
+    if (delegateTo != null) __obj.updateDynamic("delegateTo")(delegateTo.asInstanceOf[js.Any])
+    if (wheelEventTarget != null) __obj.updateDynamic("wheelEventTarget")(wheelEventTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollbarOptions]
   }
 }

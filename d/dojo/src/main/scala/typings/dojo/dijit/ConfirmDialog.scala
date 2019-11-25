@@ -1,9 +1,6 @@
 package typings.dojo.dijit
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyFunction
 import typings.dojo.dijit.form.Button
 import typings.dojo.dojoStrings.actionBarTemplate
 import typings.dojo.dojoStrings.buttonCancel
@@ -88,14 +85,54 @@ class ConfirmDialog protected () extends Dialog {
   @JSName("set")
   def set_widgetsInTemplate(property: widgetsInTemplate, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_actionBarTemplate(property: actionBarTemplate, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_actionBarTemplate(
+    property: actionBarTemplate,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_buttonCancel(property: buttonCancel, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_buttonCancel(
+    property: buttonCancel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_buttonOk(property: buttonOk, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_buttonOk(
+    property: buttonOk,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_contextRequire(property: contextRequire, callback: Fn_NewValueOldValuePropertyFunction): Anon_Unwatch = js.native
+  def watch_contextRequire(
+    property: contextRequire,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Function], 
+      /* newValue */ js.UndefOr[js.Function], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_widgetsInTemplate(property: widgetsInTemplate, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_widgetsInTemplate(
+    property: widgetsInTemplate,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

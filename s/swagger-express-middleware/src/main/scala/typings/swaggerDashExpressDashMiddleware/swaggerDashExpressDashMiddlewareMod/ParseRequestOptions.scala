@@ -42,12 +42,12 @@ object ParseRequestOptions {
     urlencoded: UrlEncodedOptionItem = null
   ): ParseRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (json != null) __obj.updateDynamic("json")(json)
-    if (multipart != null) __obj.updateDynamic("multipart")(multipart)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (urlencoded != null) __obj.updateDynamic("urlencoded")(urlencoded)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (multipart != null) __obj.updateDynamic("multipart")(multipart.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (urlencoded != null) __obj.updateDynamic("urlencoded")(urlencoded.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseRequestOptions]
   }
 }

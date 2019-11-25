@@ -32,13 +32,13 @@ object InlineQueryResultContact {
     thumb_url: String = null,
     thumb_width: Int | Double = null
   ): InlineQueryResultContact = {
-    val __obj = js.Dynamic.literal(first_name = first_name, id = id, phone_number = phone_number)
-    __obj.updateDynamic("type")(`type`)
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    val __obj = js.Dynamic.literal(first_name = first_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     if (thumb_height != null) __obj.updateDynamic("thumb_height")(thumb_height.asInstanceOf[js.Any])
-    if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url)
+    if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
     if (thumb_width != null) __obj.updateDynamic("thumb_width")(thumb_width.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultContact]
   }

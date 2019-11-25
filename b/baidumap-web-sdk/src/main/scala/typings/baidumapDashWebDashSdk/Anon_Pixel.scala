@@ -16,8 +16,8 @@ trait Anon_Pixel extends js.Object {
 object Anon_Pixel {
   @scala.inline
   def apply(pixel: Pixel, point: Point, target: js.Any, `type`: String): Anon_Pixel = {
-    val __obj = js.Dynamic.literal(pixel = pixel, point = point, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(pixel = pixel.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Pixel]
   }
 }

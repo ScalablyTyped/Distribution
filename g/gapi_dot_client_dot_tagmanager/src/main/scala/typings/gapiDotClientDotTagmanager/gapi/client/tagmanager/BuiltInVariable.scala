@@ -30,12 +30,12 @@ object BuiltInVariable {
     workspaceId: String = null
   ): BuiltInVariable = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (workspaceId != null) __obj.updateDynamic("workspaceId")(workspaceId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (workspaceId != null) __obj.updateDynamic("workspaceId")(workspaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuiltInVariable]
   }
 }

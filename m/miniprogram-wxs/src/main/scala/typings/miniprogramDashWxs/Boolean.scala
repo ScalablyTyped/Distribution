@@ -10,12 +10,3 @@ import scala.scalajs.js.annotation._
 // declare var String: StringConstructor;
 trait Boolean extends js.Object
 
-object Boolean {
-  @scala.inline
-  def apply(valueOf: () => scala.Boolean): Boolean = {
-    val __obj = js.Dynamic.literal(valueOf = js.Any.fromFunction0(valueOf))
-  
-    __obj.asInstanceOf[Boolean]
-  }
-}
-

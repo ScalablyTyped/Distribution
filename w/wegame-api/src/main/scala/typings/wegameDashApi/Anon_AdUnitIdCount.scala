@@ -22,7 +22,7 @@ trait Anon_AdUnitIdCount extends js.Object {
 object Anon_AdUnitIdCount {
   @scala.inline
   def apply(adUnitId: String, count: Double, style: js.Array[Anon_AppNameHidden]): Anon_AdUnitIdCount = {
-    val __obj = js.Dynamic.literal(adUnitId = adUnitId, count = count, style = style)
+    val __obj = js.Dynamic.literal(adUnitId = adUnitId.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdUnitIdCount]
   }

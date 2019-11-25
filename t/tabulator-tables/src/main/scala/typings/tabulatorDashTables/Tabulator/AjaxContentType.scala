@@ -12,7 +12,7 @@ trait AjaxContentType extends js.Object {
 object AjaxContentType {
   @scala.inline
   def apply(body: (String, js.Any, js.Any) => js.Any, headers: JSONRecord): AjaxContentType = {
-    val __obj = js.Dynamic.literal(body = js.Any.fromFunction3(body), headers = headers)
+    val __obj = js.Dynamic.literal(body = js.Any.fromFunction3(body), headers = headers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AjaxContentType]
   }

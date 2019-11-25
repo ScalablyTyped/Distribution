@@ -23,10 +23,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (MAX_BUFFER_LENGTH != null) __obj.updateDynamic("MAX_BUFFER_LENGTH")(MAX_BUFFER_LENGTH.asInstanceOf[js.Any])
-    if (!js.isUndefined(addmeta)) __obj.updateDynamic("addmeta")(addmeta)
-    if (feedurl != null) __obj.updateDynamic("feedurl")(feedurl)
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
-    if (!js.isUndefined(resume_saxerror)) __obj.updateDynamic("resume_saxerror")(resume_saxerror)
+    if (!js.isUndefined(addmeta)) __obj.updateDynamic("addmeta")(addmeta.asInstanceOf[js.Any])
+    if (feedurl != null) __obj.updateDynamic("feedurl")(feedurl.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(resume_saxerror)) __obj.updateDynamic("resume_saxerror")(resume_saxerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

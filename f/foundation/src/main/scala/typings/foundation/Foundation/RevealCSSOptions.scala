@@ -15,9 +15,9 @@ object RevealCSSOptions {
   @scala.inline
   def apply(display: String = null, opacity: Int | Double = null, visibility: String = null): RevealCSSOptions = {
     val __obj = js.Dynamic.literal()
-    if (display != null) __obj.updateDynamic("display")(display)
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevealCSSOptions]
   }
 }

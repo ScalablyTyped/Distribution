@@ -19,10 +19,10 @@ object GetMembershipsParameters {
     limit: Int | Double = null,
     page: Anon_Next = null
   ): GetMembershipsParameters = {
-    val __obj = js.Dynamic.literal(userId = userId)
-    if (include != null) __obj.updateDynamic("include")(include)
+    val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMembershipsParameters]
   }
 }

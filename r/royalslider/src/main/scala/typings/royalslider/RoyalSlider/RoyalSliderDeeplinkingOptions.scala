@@ -27,9 +27,9 @@ object RoyalSliderDeeplinkingOptions {
     prefix: String = null
   ): RoyalSliderDeeplinkingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(change)) __obj.updateDynamic("change")(change)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(change)) __obj.updateDynamic("change")(change.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderDeeplinkingOptions]
   }
 }

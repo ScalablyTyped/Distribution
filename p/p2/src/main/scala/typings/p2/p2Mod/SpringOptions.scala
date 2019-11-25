@@ -25,11 +25,11 @@ object SpringOptions {
   ): SpringOptions = {
     val __obj = js.Dynamic.literal()
     if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
-    if (localAnchorA != null) __obj.updateDynamic("localAnchorA")(localAnchorA)
-    if (localAnchorB != null) __obj.updateDynamic("localAnchorB")(localAnchorB)
+    if (localAnchorA != null) __obj.updateDynamic("localAnchorA")(localAnchorA.asInstanceOf[js.Any])
+    if (localAnchorB != null) __obj.updateDynamic("localAnchorB")(localAnchorB.asInstanceOf[js.Any])
     if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
-    if (worldAnchorA != null) __obj.updateDynamic("worldAnchorA")(worldAnchorA)
-    if (worldAnchorB != null) __obj.updateDynamic("worldAnchorB")(worldAnchorB)
+    if (worldAnchorA != null) __obj.updateDynamic("worldAnchorA")(worldAnchorA.asInstanceOf[js.Any])
+    if (worldAnchorB != null) __obj.updateDynamic("worldAnchorB")(worldAnchorB.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpringOptions]
   }
 }

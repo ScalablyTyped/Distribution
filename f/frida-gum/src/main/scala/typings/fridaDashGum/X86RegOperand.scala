@@ -15,8 +15,8 @@ trait X86RegOperand
 object X86RegOperand {
   @scala.inline
   def apply(size: Double, `type`: reg, value: X86Register): X86RegOperand = {
-    val __obj = js.Dynamic.literal(size = size, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[X86RegOperand]
   }
 }

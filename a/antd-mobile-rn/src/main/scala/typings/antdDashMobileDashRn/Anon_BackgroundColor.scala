@@ -25,7 +25,7 @@ object Anon_BackgroundColor {
     top: Double,
     zIndex: Double
   ): Anon_BackgroundColor = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, bottom = bottom, left = left, position = position, right = right, top = top, zIndex = zIndex)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColor]
   }

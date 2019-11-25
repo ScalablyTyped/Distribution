@@ -13,8 +13,8 @@ object Price {
   @scala.inline
   def apply(currency: String = null, value: String = null): Price = {
     val __obj = js.Dynamic.literal()
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Price]
   }
 }

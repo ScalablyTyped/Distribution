@@ -32,10 +32,10 @@ object GraphRequestConfig {
     version: String = null
   ): GraphRequestConfig = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphRequestConfig]
   }
 }

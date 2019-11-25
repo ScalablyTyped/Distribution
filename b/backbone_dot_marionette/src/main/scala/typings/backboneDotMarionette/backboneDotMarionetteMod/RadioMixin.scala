@@ -21,7 +21,7 @@ object RadioMixin {
     unbindEvents: js.Any,
     unbindRequests: js.Any
   ): RadioMixin = {
-    val __obj = js.Dynamic.literal(bindEvents = bindEvents, bindRequests = bindRequests, getChannel = getChannel, unbindEvents = unbindEvents, unbindRequests = unbindRequests)
+    val __obj = js.Dynamic.literal(bindEvents = bindEvents.asInstanceOf[js.Any], bindRequests = bindRequests.asInstanceOf[js.Any], getChannel = getChannel.asInstanceOf[js.Any], unbindEvents = unbindEvents.asInstanceOf[js.Any], unbindRequests = unbindRequests.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RadioMixin]
   }

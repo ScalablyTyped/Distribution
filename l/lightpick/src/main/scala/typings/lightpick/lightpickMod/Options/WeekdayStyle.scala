@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait WeekdayStyle extends js.Object
 
+object WeekdayStyle {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def long: typings.lightpick.lightpickStrings.long = this.cast("long")
+  @scala.inline
+  def narrow: typings.lightpick.lightpickStrings.narrow = this.cast("narrow")
+  @scala.inline
+  def short: typings.lightpick.lightpickStrings.short = this.cast("short")
+}
+

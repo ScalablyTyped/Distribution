@@ -47,7 +47,7 @@ object DataProviderResult {
     scopeValue: String,
     sharedData: StringDictionary[js.Any]
   ): DataProviderResult = {
-    val __obj = js.Dynamic.literal(clientProviders = clientProviders, data = data, exceptions = exceptions, resolvedProviders = resolvedProviders, scopeName = scopeName, scopeValue = scopeValue, sharedData = sharedData)
+    val __obj = js.Dynamic.literal(clientProviders = clientProviders.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], exceptions = exceptions.asInstanceOf[js.Any], resolvedProviders = resolvedProviders.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any], scopeValue = scopeValue.asInstanceOf[js.Any], sharedData = sharedData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataProviderResult]
   }

@@ -26,7 +26,7 @@ object Anon_C192 {
     k224: SjclEllipticalCurve,
     k256: SjclEllipticalCurve
   ): Anon_C192 = {
-    val __obj = js.Dynamic.literal(c192 = c192, c224 = c224, c256 = c256, c384 = c384, k192 = k192, k224 = k224, k256 = k256)
+    val __obj = js.Dynamic.literal(c192 = c192.asInstanceOf[js.Any], c224 = c224.asInstanceOf[js.Any], c256 = c256.asInstanceOf[js.Any], c384 = c384.asInstanceOf[js.Any], k192 = k192.asInstanceOf[js.Any], k224 = k224.asInstanceOf[js.Any], k256 = k256.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_C192]
   }

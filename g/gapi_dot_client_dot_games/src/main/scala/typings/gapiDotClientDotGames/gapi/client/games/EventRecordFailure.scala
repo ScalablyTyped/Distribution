@@ -22,9 +22,9 @@ object EventRecordFailure {
   @scala.inline
   def apply(eventId: String = null, failureCause: String = null, kind: String = null): EventRecordFailure = {
     val __obj = js.Dynamic.literal()
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
-    if (failureCause != null) __obj.updateDynamic("failureCause")(failureCause)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
+    if (failureCause != null) __obj.updateDynamic("failureCause")(failureCause.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventRecordFailure]
   }
 }

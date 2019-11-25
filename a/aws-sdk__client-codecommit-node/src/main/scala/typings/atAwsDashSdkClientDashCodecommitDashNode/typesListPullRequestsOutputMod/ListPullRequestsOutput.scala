@@ -25,8 +25,8 @@ trait ListPullRequestsOutput extends OutputTypesUnion {
 object ListPullRequestsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, pullRequestIds: js.Array[String], nextToken: String = null): ListPullRequestsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, pullRequestIds = pullRequestIds)
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], pullRequestIds = pullRequestIds.asInstanceOf[js.Any])
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPullRequestsOutput]
   }
 }

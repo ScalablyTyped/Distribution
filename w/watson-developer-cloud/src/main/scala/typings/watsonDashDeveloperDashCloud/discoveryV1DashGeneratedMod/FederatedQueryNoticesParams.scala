@@ -61,22 +61,22 @@ object FederatedQueryNoticesParams {
     similar_fields: js.Array[String] = null,
     sort: js.Array[String] = null
   ): FederatedQueryNoticesParams = {
-    val __obj = js.Dynamic.literal(collection_ids = collection_ids, environment_id = environment_id)
-    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation)
+    val __obj = js.Dynamic.literal(collection_ids = collection_ids.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
+    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (deduplicate_field != null) __obj.updateDynamic("deduplicate_field")(deduplicate_field)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
-    if (natural_language_query != null) __obj.updateDynamic("natural_language_query")(natural_language_query)
+    if (deduplicate_field != null) __obj.updateDynamic("deduplicate_field")(deduplicate_field.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (natural_language_query != null) __obj.updateDynamic("natural_language_query")(natural_language_query.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (return_fields != null) __obj.updateDynamic("return_fields")(return_fields)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (!js.isUndefined(similar)) __obj.updateDynamic("similar")(similar)
-    if (similar_document_ids != null) __obj.updateDynamic("similar_document_ids")(similar_document_ids)
-    if (similar_fields != null) __obj.updateDynamic("similar_fields")(similar_fields)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (return_fields != null) __obj.updateDynamic("return_fields")(return_fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (!js.isUndefined(similar)) __obj.updateDynamic("similar")(similar.asInstanceOf[js.Any])
+    if (similar_document_ids != null) __obj.updateDynamic("similar_document_ids")(similar_document_ids.asInstanceOf[js.Any])
+    if (similar_fields != null) __obj.updateDynamic("similar_fields")(similar_fields.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[FederatedQueryNoticesParams]
   }
 }

@@ -12,7 +12,7 @@ trait Tag extends BaseTag {
 object Tag {
   @scala.inline
   def apply(attributes: StringDictionary[String], isSelfClosing: Boolean, name: String): Tag = {
-    val __obj = js.Dynamic.literal(attributes = attributes, isSelfClosing = isSelfClosing, name = name)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tag]
   }

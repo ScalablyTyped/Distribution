@@ -51,14 +51,14 @@ object RunScriptParameterType {
     returnByValue: js.UndefOr[Boolean] = js.undefined,
     silent: js.UndefOr[Boolean] = js.undefined
   ): RunScriptParameterType = {
-    val __obj = js.Dynamic.literal(scriptId = scriptId)
-    if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
+    val __obj = js.Dynamic.literal(scriptId = scriptId.asInstanceOf[js.Any])
+    if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise.asInstanceOf[js.Any])
     if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
-    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
-    if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI)
-    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)
-    if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI.asInstanceOf[js.Any])
+    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunScriptParameterType]
   }
 }

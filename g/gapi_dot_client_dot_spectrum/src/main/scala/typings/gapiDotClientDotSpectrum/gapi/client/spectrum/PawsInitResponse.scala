@@ -42,11 +42,11 @@ object PawsInitResponse {
     version: String = null
   ): PawsInitResponse = {
     val __obj = js.Dynamic.literal()
-    if (databaseChange != null) __obj.updateDynamic("databaseChange")(databaseChange)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (rulesetInfo != null) __obj.updateDynamic("rulesetInfo")(rulesetInfo)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (databaseChange != null) __obj.updateDynamic("databaseChange")(databaseChange.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (rulesetInfo != null) __obj.updateDynamic("rulesetInfo")(rulesetInfo.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PawsInitResponse]
   }
 }

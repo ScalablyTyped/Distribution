@@ -52,7 +52,7 @@ object DOMMatrixInit {
     if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
     if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
     if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
-    if (!js.isUndefined(is2D)) __obj.updateDynamic("is2D")(is2D)
+    if (!js.isUndefined(is2D)) __obj.updateDynamic("is2D")(is2D.asInstanceOf[js.Any])
     if (m11 != null) __obj.updateDynamic("m11")(m11.asInstanceOf[js.Any])
     if (m12 != null) __obj.updateDynamic("m12")(m12.asInstanceOf[js.Any])
     if (m13 != null) __obj.updateDynamic("m13")(m13.asInstanceOf[js.Any])

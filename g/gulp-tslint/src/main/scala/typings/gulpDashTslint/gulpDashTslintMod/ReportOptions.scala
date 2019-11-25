@@ -20,10 +20,10 @@ object ReportOptions {
     summarizeFailureOutput: js.UndefOr[Boolean] = js.undefined
   ): ReportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowWarnings)) __obj.updateDynamic("allowWarnings")(allowWarnings)
-    if (!js.isUndefined(emitError)) __obj.updateDynamic("emitError")(emitError)
+    if (!js.isUndefined(allowWarnings)) __obj.updateDynamic("allowWarnings")(allowWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitError)) __obj.updateDynamic("emitError")(emitError.asInstanceOf[js.Any])
     if (reportLimit != null) __obj.updateDynamic("reportLimit")(reportLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(summarizeFailureOutput)) __obj.updateDynamic("summarizeFailureOutput")(summarizeFailureOutput)
+    if (!js.isUndefined(summarizeFailureOutput)) __obj.updateDynamic("summarizeFailureOutput")(summarizeFailureOutput.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportOptions]
   }
 }

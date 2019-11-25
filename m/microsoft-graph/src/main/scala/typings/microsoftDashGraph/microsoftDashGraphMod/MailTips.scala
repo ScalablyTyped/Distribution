@@ -60,17 +60,17 @@ object MailTips {
     totalMemberCount: Int | Double = null
   ): MailTips = {
     val __obj = js.Dynamic.literal()
-    if (automaticReplies != null) __obj.updateDynamic("automaticReplies")(automaticReplies)
-    if (customMailTip != null) __obj.updateDynamic("customMailTip")(customMailTip)
-    if (!js.isUndefined(deliveryRestricted)) __obj.updateDynamic("deliveryRestricted")(deliveryRestricted)
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (automaticReplies != null) __obj.updateDynamic("automaticReplies")(automaticReplies.asInstanceOf[js.Any])
+    if (customMailTip != null) __obj.updateDynamic("customMailTip")(customMailTip.asInstanceOf[js.Any])
+    if (!js.isUndefined(deliveryRestricted)) __obj.updateDynamic("deliveryRestricted")(deliveryRestricted.asInstanceOf[js.Any])
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (externalMemberCount != null) __obj.updateDynamic("externalMemberCount")(externalMemberCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(isModerated)) __obj.updateDynamic("isModerated")(isModerated)
-    if (!js.isUndefined(mailboxFull)) __obj.updateDynamic("mailboxFull")(mailboxFull)
+    if (!js.isUndefined(isModerated)) __obj.updateDynamic("isModerated")(isModerated.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailboxFull)) __obj.updateDynamic("mailboxFull")(mailboxFull.asInstanceOf[js.Any])
     if (maxMessageSize != null) __obj.updateDynamic("maxMessageSize")(maxMessageSize.asInstanceOf[js.Any])
-    if (recipientScope != null) __obj.updateDynamic("recipientScope")(recipientScope)
-    if (recipientSuggestions != null) __obj.updateDynamic("recipientSuggestions")(recipientSuggestions)
+    if (recipientScope != null) __obj.updateDynamic("recipientScope")(recipientScope.asInstanceOf[js.Any])
+    if (recipientSuggestions != null) __obj.updateDynamic("recipientSuggestions")(recipientSuggestions.asInstanceOf[js.Any])
     if (totalMemberCount != null) __obj.updateDynamic("totalMemberCount")(totalMemberCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailTips]
   }

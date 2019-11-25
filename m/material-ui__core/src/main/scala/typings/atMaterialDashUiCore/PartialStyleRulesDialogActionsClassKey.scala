@@ -15,8 +15,8 @@ object PartialStyleRulesDialogActionsClassKey {
   @scala.inline
   def apply(action: CSSProperties = null, root: CSSProperties = null): PartialStyleRulesDialogActionsClassKey = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesDialogActionsClassKey]
   }
 }

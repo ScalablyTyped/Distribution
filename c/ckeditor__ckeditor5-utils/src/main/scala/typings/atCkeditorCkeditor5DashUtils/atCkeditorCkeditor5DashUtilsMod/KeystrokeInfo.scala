@@ -19,10 +19,10 @@ object KeystrokeInfo {
     ctrlKey: js.UndefOr[Boolean] = js.undefined,
     shiftKey: js.UndefOr[Boolean] = js.undefined
   ): KeystrokeInfo = {
-    val __obj = js.Dynamic.literal(keyCode = keyCode)
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey)
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey)
+    val __obj = js.Dynamic.literal(keyCode = keyCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeystrokeInfo]
   }
 }

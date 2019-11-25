@@ -23,9 +23,9 @@ object LoadFileOptions {
   @scala.inline
   def apply(hash: String = null, query: Query = null, search: String = null): LoadFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (search != null) __obj.updateDynamic("search")(search)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadFileOptions]
   }
 }

@@ -13,8 +13,8 @@ object WorkbookFilterDatetime {
   @scala.inline
   def apply(date: String = null, specificity: String = null): WorkbookFilterDatetime = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (specificity != null) __obj.updateDynamic("specificity")(specificity)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (specificity != null) __obj.updateDynamic("specificity")(specificity.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookFilterDatetime]
   }
 }

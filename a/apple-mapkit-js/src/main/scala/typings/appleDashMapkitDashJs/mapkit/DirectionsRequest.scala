@@ -36,8 +36,8 @@ object DirectionsRequest {
     transportType: String = null
   ): DirectionsRequest = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestsAlternateRoutes)) __obj.updateDynamic("requestsAlternateRoutes")(requestsAlternateRoutes)
-    if (transportType != null) __obj.updateDynamic("transportType")(transportType)
+    if (!js.isUndefined(requestsAlternateRoutes)) __obj.updateDynamic("requestsAlternateRoutes")(requestsAlternateRoutes.asInstanceOf[js.Any])
+    if (transportType != null) __obj.updateDynamic("transportType")(transportType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRequest]
   }
 }

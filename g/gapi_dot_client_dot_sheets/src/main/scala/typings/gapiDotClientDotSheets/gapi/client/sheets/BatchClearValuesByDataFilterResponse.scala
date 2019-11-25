@@ -20,8 +20,8 @@ object BatchClearValuesByDataFilterResponse {
   @scala.inline
   def apply(clearedRanges: js.Array[String] = null, spreadsheetId: String = null): BatchClearValuesByDataFilterResponse = {
     val __obj = js.Dynamic.literal()
-    if (clearedRanges != null) __obj.updateDynamic("clearedRanges")(clearedRanges)
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    if (clearedRanges != null) __obj.updateDynamic("clearedRanges")(clearedRanges.asInstanceOf[js.Any])
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchClearValuesByDataFilterResponse]
   }
 }

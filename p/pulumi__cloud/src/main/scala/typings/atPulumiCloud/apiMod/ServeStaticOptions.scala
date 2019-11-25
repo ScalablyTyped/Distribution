@@ -21,7 +21,7 @@ object ServeStaticOptions {
   @scala.inline
   def apply(contentType: String = null, index: Boolean | String = null): ServeStaticOptions = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServeStaticOptions]
   }

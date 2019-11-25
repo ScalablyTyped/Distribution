@@ -23,7 +23,7 @@ object NodesRefRect {
     top: Double,
     width: Double
   ): NodesRefRect = {
-    val __obj = js.Dynamic.literal(bottom = bottom, dataset = dataset, height = height, id = id, left = left, right = right, top = top, width = width)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodesRefRect]
   }

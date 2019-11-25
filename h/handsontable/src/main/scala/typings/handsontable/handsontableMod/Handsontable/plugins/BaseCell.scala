@@ -21,10 +21,9 @@ object BaseCell {
     isEqual: BaseCell => Boolean,
     rowAbsolute: Boolean,
     rowOffset: Double,
-    toString: () => String,
     translateTo: (Double, Double) => Unit
   ): BaseCell = {
-    val __obj = js.Dynamic.literal(columnAbsolute = columnAbsolute, columnOffset = columnOffset, isEqual = js.Any.fromFunction1(isEqual), rowAbsolute = rowAbsolute, rowOffset = rowOffset, toString = js.Any.fromFunction0(toString), translateTo = js.Any.fromFunction2(translateTo))
+    val __obj = js.Dynamic.literal(columnAbsolute = columnAbsolute.asInstanceOf[js.Any], columnOffset = columnOffset.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual), rowAbsolute = rowAbsolute.asInstanceOf[js.Any], rowOffset = rowOffset.asInstanceOf[js.Any], translateTo = js.Any.fromFunction2(translateTo))
   
     __obj.asInstanceOf[BaseCell]
   }

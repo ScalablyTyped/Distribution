@@ -15,8 +15,8 @@ object EventTagsListResponse {
   @scala.inline
   def apply(eventTags: js.Array[EventTag] = null, kind: String = null): EventTagsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (eventTags != null) __obj.updateDynamic("eventTags")(eventTags)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (eventTags != null) __obj.updateDynamic("eventTags")(eventTags.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTagsListResponse]
   }
 }

@@ -24,10 +24,10 @@ object ProgressBarProps {
     progress: Int | Double = null
   ): ProgressBarProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)
+    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarProps]
   }

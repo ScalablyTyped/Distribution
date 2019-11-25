@@ -29,10 +29,10 @@ object IDelegateToSchemaOptions {
     skipValidation: js.UndefOr[Boolean] = js.undefined,
     transforms: js.Array[Transform] = null
   ): IDelegateToSchemaOptions[TContext] = {
-    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fieldName = fieldName, info = info, operation = operation, schema = schema)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation)
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.asInstanceOf[js.Any])
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDelegateToSchemaOptions[TContext]]
   }
 }

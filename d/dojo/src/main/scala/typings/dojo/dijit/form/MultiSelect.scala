@@ -1,9 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.multiple
 import typings.dojo.dojoStrings.size
 import typings.dojo.dojoStrings.value
@@ -73,10 +70,24 @@ class MultiSelect () extends _FormValueWidget {
   @JSName("set")
   def set_value(property: value, value: String): Unit = js.native
   @JSName("watch")
-  def watch_multiple(property: multiple, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_multiple(
+    property: multiple,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_size(property: size, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_size(
+    property: size,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

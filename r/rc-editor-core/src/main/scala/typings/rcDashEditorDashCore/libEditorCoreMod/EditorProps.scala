@@ -42,16 +42,16 @@ object EditorProps {
     style: js.Object = null,
     value: EditorState | js.Any = null
   ): EditorProps = {
-    val __obj = js.Dynamic.literal(multiLines = multiLines, plugins = plugins, prefixCls = prefixCls, splitLine = splitLine, toolbars = toolbars)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    val __obj = js.Dynamic.literal(multiLines = multiLines.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], splitLine = splitLine.asInstanceOf[js.Any], toolbars = toolbars.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (pluginConfig != null) __obj.updateDynamic("pluginConfig")(pluginConfig)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (pluginConfig != null) __obj.updateDynamic("pluginConfig")(pluginConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorProps]
   }

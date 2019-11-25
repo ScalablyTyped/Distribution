@@ -92,7 +92,7 @@ object libCoreGlobalstateMod extends js.Object {
     /**
       * Spy callbacks
       */
-    var spyListeners: js.Array[Fn_Change] = js.native
+    var spyListeners: js.Array[js.Function1[/* change */ _, Unit]] = js.native
     var suppressReactionErrors: Boolean = js.native
     /**
       * Currently running derivation

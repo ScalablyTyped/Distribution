@@ -20,10 +20,10 @@ object LiveBroadcastStatus {
     recordingStatus: String = null
   ): LiveBroadcastStatus = {
     val __obj = js.Dynamic.literal()
-    if (lifeCycleStatus != null) __obj.updateDynamic("lifeCycleStatus")(lifeCycleStatus)
-    if (liveBroadcastPriority != null) __obj.updateDynamic("liveBroadcastPriority")(liveBroadcastPriority)
-    if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus)
-    if (recordingStatus != null) __obj.updateDynamic("recordingStatus")(recordingStatus)
+    if (lifeCycleStatus != null) __obj.updateDynamic("lifeCycleStatus")(lifeCycleStatus.asInstanceOf[js.Any])
+    if (liveBroadcastPriority != null) __obj.updateDynamic("liveBroadcastPriority")(liveBroadcastPriority.asInstanceOf[js.Any])
+    if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus.asInstanceOf[js.Any])
+    if (recordingStatus != null) __obj.updateDynamic("recordingStatus")(recordingStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveBroadcastStatus]
   }
 }

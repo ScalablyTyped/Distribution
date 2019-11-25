@@ -54,18 +54,18 @@ object LocalVideoStats {
     TotalFreezeTime: String = null
   ): LocalVideoStats = {
     val __obj = js.Dynamic.literal()
-    if (CaptureFrameRate != null) __obj.updateDynamic("CaptureFrameRate")(CaptureFrameRate)
-    if (CaptureResolutionHeight != null) __obj.updateDynamic("CaptureResolutionHeight")(CaptureResolutionHeight)
-    if (CaptureResolutionWidth != null) __obj.updateDynamic("CaptureResolutionWidth")(CaptureResolutionWidth)
-    if (EncodeDelay != null) __obj.updateDynamic("EncodeDelay")(EncodeDelay)
-    if (MuteState != null) __obj.updateDynamic("MuteState")(MuteState)
-    if (SendBitrate != null) __obj.updateDynamic("SendBitrate")(SendBitrate)
-    if (SendFrameRate != null) __obj.updateDynamic("SendFrameRate")(SendFrameRate)
-    if (SendResolutionHeight != null) __obj.updateDynamic("SendResolutionHeight")(SendResolutionHeight)
-    if (SendResolutionWidth != null) __obj.updateDynamic("SendResolutionWidth")(SendResolutionWidth)
-    if (TargetSendBitrate != null) __obj.updateDynamic("TargetSendBitrate")(TargetSendBitrate)
-    if (TotalDuration != null) __obj.updateDynamic("TotalDuration")(TotalDuration)
-    if (TotalFreezeTime != null) __obj.updateDynamic("TotalFreezeTime")(TotalFreezeTime)
+    if (CaptureFrameRate != null) __obj.updateDynamic("CaptureFrameRate")(CaptureFrameRate.asInstanceOf[js.Any])
+    if (CaptureResolutionHeight != null) __obj.updateDynamic("CaptureResolutionHeight")(CaptureResolutionHeight.asInstanceOf[js.Any])
+    if (CaptureResolutionWidth != null) __obj.updateDynamic("CaptureResolutionWidth")(CaptureResolutionWidth.asInstanceOf[js.Any])
+    if (EncodeDelay != null) __obj.updateDynamic("EncodeDelay")(EncodeDelay.asInstanceOf[js.Any])
+    if (MuteState != null) __obj.updateDynamic("MuteState")(MuteState.asInstanceOf[js.Any])
+    if (SendBitrate != null) __obj.updateDynamic("SendBitrate")(SendBitrate.asInstanceOf[js.Any])
+    if (SendFrameRate != null) __obj.updateDynamic("SendFrameRate")(SendFrameRate.asInstanceOf[js.Any])
+    if (SendResolutionHeight != null) __obj.updateDynamic("SendResolutionHeight")(SendResolutionHeight.asInstanceOf[js.Any])
+    if (SendResolutionWidth != null) __obj.updateDynamic("SendResolutionWidth")(SendResolutionWidth.asInstanceOf[js.Any])
+    if (TargetSendBitrate != null) __obj.updateDynamic("TargetSendBitrate")(TargetSendBitrate.asInstanceOf[js.Any])
+    if (TotalDuration != null) __obj.updateDynamic("TotalDuration")(TotalDuration.asInstanceOf[js.Any])
+    if (TotalFreezeTime != null) __obj.updateDynamic("TotalFreezeTime")(TotalFreezeTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalVideoStats]
   }
 }

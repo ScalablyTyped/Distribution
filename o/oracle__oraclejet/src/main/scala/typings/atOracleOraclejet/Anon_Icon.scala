@@ -15,7 +15,7 @@ trait Anon_Icon extends js.Object {
 object Anon_Icon {
   @scala.inline
   def apply(icon: Anon_BorderColorBorderRadius, labelStyle: js.Object, showDisclosure: off | on): Anon_Icon = {
-    val __obj = js.Dynamic.literal(icon = icon, labelStyle = labelStyle, showDisclosure = showDisclosure.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], showDisclosure = showDisclosure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Icon]
   }

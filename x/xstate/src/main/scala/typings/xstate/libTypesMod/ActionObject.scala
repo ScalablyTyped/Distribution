@@ -25,8 +25,8 @@ object ActionObject {
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null
   ): ActionObject[TContext, TEvent] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     __obj.asInstanceOf[ActionObject[TContext, TEvent]]
   }

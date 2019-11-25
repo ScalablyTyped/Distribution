@@ -32,12 +32,12 @@ object IMessageOptions {
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (`.google.api.resource` != null) __obj.updateDynamic(".google.api.resource")(`.google.api.resource`)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (!js.isUndefined(mapEntry)) __obj.updateDynamic("mapEntry")(mapEntry)
-    if (!js.isUndefined(messageSetWireFormat)) __obj.updateDynamic("messageSetWireFormat")(messageSetWireFormat)
-    if (!js.isUndefined(noStandardDescriptorAccessor)) __obj.updateDynamic("noStandardDescriptorAccessor")(noStandardDescriptorAccessor)
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption)
+    if (`.google.api.resource` != null) __obj.updateDynamic(".google.api.resource")(`.google.api.resource`.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapEntry)) __obj.updateDynamic("mapEntry")(mapEntry.asInstanceOf[js.Any])
+    if (!js.isUndefined(messageSetWireFormat)) __obj.updateDynamic("messageSetWireFormat")(messageSetWireFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(noStandardDescriptorAccessor)) __obj.updateDynamic("noStandardDescriptorAccessor")(noStandardDescriptorAccessor.asInstanceOf[js.Any])
+    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageOptions]
   }
 }

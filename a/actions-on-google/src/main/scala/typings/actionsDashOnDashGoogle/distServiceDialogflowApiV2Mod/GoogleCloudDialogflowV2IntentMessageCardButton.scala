@@ -13,8 +13,8 @@ object GoogleCloudDialogflowV2IntentMessageCardButton {
   @scala.inline
   def apply(postback: String = null, text: String = null): GoogleCloudDialogflowV2IntentMessageCardButton = {
     val __obj = js.Dynamic.literal()
-    if (postback != null) __obj.updateDynamic("postback")(postback)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (postback != null) __obj.updateDynamic("postback")(postback.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageCardButton]
   }
 }

@@ -24,8 +24,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(name: String, path: String, context: String = null): Options = {
-    val __obj = js.Dynamic.literal(name = name, path = path)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

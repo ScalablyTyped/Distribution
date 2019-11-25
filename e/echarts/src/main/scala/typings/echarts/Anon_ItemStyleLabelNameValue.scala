@@ -66,9 +66,9 @@ object Anon_ItemStyleLabelNameValue {
     y: Int | Double = null
   ): Anon_ItemStyleLabelNameValue = {
     val __obj = js.Dynamic.literal()
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

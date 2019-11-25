@@ -21,10 +21,10 @@ object NativeError {
     nativeErrorMessage: String = null,
     stack: String = null
   ): NativeError = {
-    val __obj = js.Dynamic.literal(code = code, message = message, name = name)
-    if (nativeErrorCode != null) __obj.updateDynamic("nativeErrorCode")(nativeErrorCode)
-    if (nativeErrorMessage != null) __obj.updateDynamic("nativeErrorMessage")(nativeErrorMessage)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (nativeErrorCode != null) __obj.updateDynamic("nativeErrorCode")(nativeErrorCode.asInstanceOf[js.Any])
+    if (nativeErrorMessage != null) __obj.updateDynamic("nativeErrorMessage")(nativeErrorMessage.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeError]
   }
 }

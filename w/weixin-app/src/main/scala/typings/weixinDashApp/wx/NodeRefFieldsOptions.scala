@@ -33,12 +33,12 @@ object NodeRefFieldsOptions {
     size: js.UndefOr[Boolean] = js.undefined
   ): NodeRefFieldsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dataset)) __obj.updateDynamic("dataset")(dataset)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (!js.isUndefined(rect)) __obj.updateDynamic("rect")(rect)
-    if (!js.isUndefined(scrollOffset)) __obj.updateDynamic("scrollOffset")(scrollOffset)
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(dataset)) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(rect)) __obj.updateDynamic("rect")(rect.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollOffset)) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeRefFieldsOptions]
   }
 }

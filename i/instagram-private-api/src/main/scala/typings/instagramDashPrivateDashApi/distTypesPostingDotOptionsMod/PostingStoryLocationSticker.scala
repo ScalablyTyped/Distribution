@@ -14,7 +14,7 @@ trait PostingStoryLocationSticker extends js.Object {
 object PostingStoryLocationSticker {
   @scala.inline
   def apply(latitude: String, longitude: String, sticker: StoryLocation): PostingStoryLocationSticker = {
-    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude, sticker = sticker)
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], sticker = sticker.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostingStoryLocationSticker]
   }

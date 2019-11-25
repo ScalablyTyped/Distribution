@@ -14,9 +14,9 @@ object GanttToolbarItem {
   @scala.inline
   def apply(name: String = null, template: String | js.Function = null, text: String = null): GanttToolbarItem = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttToolbarItem]
   }
 }

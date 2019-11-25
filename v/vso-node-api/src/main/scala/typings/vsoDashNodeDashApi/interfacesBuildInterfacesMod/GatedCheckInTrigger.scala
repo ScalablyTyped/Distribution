@@ -24,7 +24,7 @@ object GatedCheckInTrigger {
     triggerType: DefinitionTriggerType,
     useWorkspaceMappings: Boolean
   ): GatedCheckInTrigger = {
-    val __obj = js.Dynamic.literal(pathFilters = pathFilters, runContinuousIntegration = runContinuousIntegration, triggerType = triggerType, useWorkspaceMappings = useWorkspaceMappings)
+    val __obj = js.Dynamic.literal(pathFilters = pathFilters.asInstanceOf[js.Any], runContinuousIntegration = runContinuousIntegration.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any], useWorkspaceMappings = useWorkspaceMappings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GatedCheckInTrigger]
   }

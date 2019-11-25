@@ -32,7 +32,7 @@ object TockOptions {
     interval: Int | Double = null
   ): TockOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), complete = js.Any.fromFunction0(complete))
-    if (!js.isUndefined(countdown)) __obj.updateDynamic("countdown")(countdown)
+    if (!js.isUndefined(countdown)) __obj.updateDynamic("countdown")(countdown.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[TockOptions]
   }

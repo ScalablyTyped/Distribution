@@ -22,8 +22,8 @@ object PickerButton {
     val __obj = js.Dynamic.literal()
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerButton]
   }
 }

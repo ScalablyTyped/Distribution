@@ -36,7 +36,7 @@ object FileSystemConstructor {
     Options: FileSystemOptions,
     isAvailable: () => Boolean
   ): FileSystemConstructor = {
-    val __obj = js.Dynamic.literal(Create = js.Any.fromFunction2(Create), Name = Name, Options = Options, isAvailable = js.Any.fromFunction0(isAvailable))
+    val __obj = js.Dynamic.literal(Create = js.Any.fromFunction2(Create), Name = Name.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any], isAvailable = js.Any.fromFunction0(isAvailable))
   
     __obj.asInstanceOf[FileSystemConstructor]
   }

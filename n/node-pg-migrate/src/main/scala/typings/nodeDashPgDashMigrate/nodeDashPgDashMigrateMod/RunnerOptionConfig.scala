@@ -49,20 +49,20 @@ object RunnerOptionConfig {
     singleTransaction: js.UndefOr[Boolean] = js.undefined,
     timestamp: js.UndefOr[Boolean] = js.undefined
   ): RunnerOptionConfig = {
-    val __obj = js.Dynamic.literal(count = count, dir = dir, direction = direction.asInstanceOf[js.Any], ignorePattern = ignorePattern, migrationsTable = migrationsTable)
-    if (!js.isUndefined(checkOrder)) __obj.updateDynamic("checkOrder")(checkOrder)
-    if (!js.isUndefined(createMigrationsSchema)) __obj.updateDynamic("createMigrationsSchema")(createMigrationsSchema)
-    if (!js.isUndefined(createSchema)) __obj.updateDynamic("createSchema")(createSchema)
-    if (!js.isUndefined(decamelize)) __obj.updateDynamic("decamelize")(decamelize)
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
-    if (!js.isUndefined(fake)) __obj.updateDynamic("fake")(fake)
-    if (file != null) __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], ignorePattern = ignorePattern.asInstanceOf[js.Any], migrationsTable = migrationsTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkOrder)) __obj.updateDynamic("checkOrder")(checkOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(createMigrationsSchema)) __obj.updateDynamic("createMigrationsSchema")(createMigrationsSchema.asInstanceOf[js.Any])
+    if (!js.isUndefined(createSchema)) __obj.updateDynamic("createSchema")(createSchema.asInstanceOf[js.Any])
+    if (!js.isUndefined(decamelize)) __obj.updateDynamic("decamelize")(decamelize.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(fake)) __obj.updateDynamic("fake")(fake.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
-    if (migrationsSchema != null) __obj.updateDynamic("migrationsSchema")(migrationsSchema)
-    if (!js.isUndefined(noLock)) __obj.updateDynamic("noLock")(noLock)
+    if (migrationsSchema != null) __obj.updateDynamic("migrationsSchema")(migrationsSchema.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLock)) __obj.updateDynamic("noLock")(noLock.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleTransaction)) __obj.updateDynamic("singleTransaction")(singleTransaction)
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp)
+    if (!js.isUndefined(singleTransaction)) __obj.updateDynamic("singleTransaction")(singleTransaction.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunnerOptionConfig]
   }
 }

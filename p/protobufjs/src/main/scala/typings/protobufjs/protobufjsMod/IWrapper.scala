@@ -15,8 +15,8 @@ object IWrapper {
   @scala.inline
   def apply(fromObject: WrapperFromObjectConverter = null, toObject: WrapperToObjectConverter = null): IWrapper = {
     val __obj = js.Dynamic.literal()
-    if (fromObject != null) __obj.updateDynamic("fromObject")(fromObject)
-    if (toObject != null) __obj.updateDynamic("toObject")(toObject)
+    if (fromObject != null) __obj.updateDynamic("fromObject")(fromObject.asInstanceOf[js.Any])
+    if (toObject != null) __obj.updateDynamic("toObject")(toObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWrapper]
   }
 }

@@ -27,7 +27,7 @@ object Anon_Customvalidators {
     options: JSONEditorOptions[_],
     resolvers: js.Array[js.Function1[/* schema */ _, String]]
   ): Anon_Customvalidators = {
-    val __obj = js.Dynamic.literal(custom_validators = custom_validators, editors = editors, language = language, languages = languages, options = options, resolvers = resolvers)
+    val __obj = js.Dynamic.literal(custom_validators = custom_validators.asInstanceOf[js.Any], editors = editors.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], resolvers = resolvers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Customvalidators]
   }

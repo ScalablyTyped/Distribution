@@ -17,6 +17,10 @@ package object atAngularCoreMod {
 
   type CollectionChangeRecord[V] = IterableChangeRecord[V]
   type ComponentInstance = js.Object
+  /**
+    * Definition of what a template rendering function should look like for a component.
+    */
+  type ComponentTemplate[T] = js.Function2[/* rf */ ɵRenderFlags, /* ctx */ T, Unit]
   type ContentChild = Query
   type ContentChildren = Query
   /**

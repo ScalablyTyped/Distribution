@@ -35,11 +35,11 @@ object Anon_CodeblocksHeaders {
     headings: js.UndefOr[Boolean] = js.undefined,
     tables: js.UndefOr[Boolean] = js.undefined
   ): Anon_CodeblocksHeaders = {
-    val __obj = js.Dynamic.literal(heading_line_length = heading_line_length, line_length = line_length)
-    if (!js.isUndefined(code_blocks)) __obj.updateDynamic("code_blocks")(code_blocks)
-    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(headings)) __obj.updateDynamic("headings")(headings)
-    if (!js.isUndefined(tables)) __obj.updateDynamic("tables")(tables)
+    val __obj = js.Dynamic.literal(heading_line_length = heading_line_length.asInstanceOf[js.Any], line_length = line_length.asInstanceOf[js.Any])
+    if (!js.isUndefined(code_blocks)) __obj.updateDynamic("code_blocks")(code_blocks.asInstanceOf[js.Any])
+    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(headings)) __obj.updateDynamic("headings")(headings.asInstanceOf[js.Any])
+    if (!js.isUndefined(tables)) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CodeblocksHeaders]
   }
 }

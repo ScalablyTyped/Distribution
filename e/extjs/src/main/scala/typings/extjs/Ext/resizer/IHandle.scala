@@ -9,10 +9,9 @@ trait IHandle extends IComponent
 
 object IHandle {
   @scala.inline
-  def apply(IComponent: IComponent = null, region: js.Any = null): IHandle = {
+  def apply(IComponent: IComponent = null): IHandle = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     __obj.asInstanceOf[IHandle]
   }
 }

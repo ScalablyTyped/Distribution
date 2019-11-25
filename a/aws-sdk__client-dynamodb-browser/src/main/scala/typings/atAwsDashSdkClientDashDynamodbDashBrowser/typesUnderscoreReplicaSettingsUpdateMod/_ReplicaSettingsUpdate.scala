@@ -36,9 +36,9 @@ object _ReplicaSettingsUpdate {
     ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: _AutoScalingSettingsUpdate = null,
     ReplicaProvisionedReadCapacityUnits: Int | Double = null
   ): _ReplicaSettingsUpdate = {
-    val __obj = js.Dynamic.literal(RegionName = RegionName)
+    val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
     if (ReplicaGlobalSecondaryIndexSettingsUpdate != null) __obj.updateDynamic("ReplicaGlobalSecondaryIndexSettingsUpdate")(ReplicaGlobalSecondaryIndexSettingsUpdate.asInstanceOf[js.Any])
-    if (ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate")(ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate)
+    if (ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate")(ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate.asInstanceOf[js.Any])
     if (ReplicaProvisionedReadCapacityUnits != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityUnits")(ReplicaProvisionedReadCapacityUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ReplicaSettingsUpdate]
   }

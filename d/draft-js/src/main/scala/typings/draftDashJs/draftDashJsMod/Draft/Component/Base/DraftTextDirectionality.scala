@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait DraftTextDirectionality extends js.Object
 
+object DraftTextDirectionality {
+  @scala.inline
+  def LTR: typings.draftDashJs.draftDashJsStrings.LTR = this.cast("LTR")
+  @scala.inline
+  def NEUTRAL: typings.draftDashJs.draftDashJsStrings.NEUTRAL = this.cast("NEUTRAL")
+  @scala.inline
+  def RTL: typings.draftDashJs.draftDashJsStrings.RTL = this.cast("RTL")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

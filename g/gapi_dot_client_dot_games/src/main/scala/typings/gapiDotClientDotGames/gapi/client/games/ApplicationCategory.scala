@@ -17,9 +17,9 @@ object ApplicationCategory {
   @scala.inline
   def apply(kind: String = null, primary: String = null, secondary: String = null): ApplicationCategory = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationCategory]
   }
 }

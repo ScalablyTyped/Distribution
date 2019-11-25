@@ -12,7 +12,7 @@ object Anon_EditAs {
   @scala.inline
   def apply(editAs: String = null): Anon_EditAs = {
     val __obj = js.Dynamic.literal()
-    if (editAs != null) __obj.updateDynamic("editAs")(editAs)
+    if (editAs != null) __obj.updateDynamic("editAs")(editAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EditAs]
   }
 }

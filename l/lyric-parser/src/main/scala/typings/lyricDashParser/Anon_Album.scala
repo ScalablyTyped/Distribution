@@ -15,7 +15,7 @@ trait Anon_Album extends js.Object {
 object Anon_Album {
   @scala.inline
   def apply(album: String, artist: String, by: String, offset: String, title: String): Anon_Album = {
-    val __obj = js.Dynamic.literal(album = album, artist = artist, by = by, offset = offset, title = title)
+    val __obj = js.Dynamic.literal(album = album.asInstanceOf[js.Any], artist = artist.asInstanceOf[js.Any], by = by.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Album]
   }

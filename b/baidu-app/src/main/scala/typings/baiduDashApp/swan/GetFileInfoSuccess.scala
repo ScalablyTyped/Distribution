@@ -14,7 +14,7 @@ trait GetFileInfoSuccess extends js.Object {
 object GetFileInfoSuccess {
   @scala.inline
   def apply(digest: String, size: Double): GetFileInfoSuccess = {
-    val __obj = js.Dynamic.literal(digest = digest, size = size)
+    val __obj = js.Dynamic.literal(digest = digest.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetFileInfoSuccess]
   }

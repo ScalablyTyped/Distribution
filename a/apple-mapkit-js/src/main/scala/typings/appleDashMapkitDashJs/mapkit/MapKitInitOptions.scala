@@ -26,7 +26,7 @@ object MapKitInitOptions {
   @scala.inline
   def apply(authorizationCallback: js.Function1[/* token */ String, Unit] => Unit, language: String = null): MapKitInitOptions = {
     val __obj = js.Dynamic.literal(authorizationCallback = js.Any.fromFunction1(authorizationCallback))
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapKitInitOptions]
   }
 }

@@ -23,9 +23,9 @@ object HTMLMessages {
   @scala.inline
   def apply(imageFonts: js.Array[_] = null, noFonts: js.Array[_] = null, webFont: js.Array[_] = null): HTMLMessages = {
     val __obj = js.Dynamic.literal()
-    if (imageFonts != null) __obj.updateDynamic("imageFonts")(imageFonts)
-    if (noFonts != null) __obj.updateDynamic("noFonts")(noFonts)
-    if (webFont != null) __obj.updateDynamic("webFont")(webFont)
+    if (imageFonts != null) __obj.updateDynamic("imageFonts")(imageFonts.asInstanceOf[js.Any])
+    if (noFonts != null) __obj.updateDynamic("noFonts")(noFonts.asInstanceOf[js.Any])
+    if (webFont != null) __obj.updateDynamic("webFont")(webFont.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLMessages]
   }
 }

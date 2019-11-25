@@ -50,9 +50,9 @@ object StatsOpts {
     val __obj = js.Dynamic.literal()
     if (bucket_extension_interval != null) __obj.updateDynamic("bucket_extension_interval")(bucket_extension_interval.asInstanceOf[js.Any])
     if (bucket_precision != null) __obj.updateDynamic("bucket_precision")(bucket_precision.asInstanceOf[js.Any])
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
-    if (!js.isUndefined(sampling)) __obj.updateDynamic("sampling")(sampling)
-    if (!js.isUndefined(store_data)) __obj.updateDynamic("store_data")(store_data)
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampling)) __obj.updateDynamic("sampling")(sampling.asInstanceOf[js.Any])
+    if (!js.isUndefined(store_data)) __obj.updateDynamic("store_data")(store_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatsOpts]
   }
 }

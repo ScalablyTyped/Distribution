@@ -66,7 +66,7 @@ object Slice {
     value: Double,
     visibleInLegend: Boolean
   ): Slice = {
-    val __obj = js.Dynamic.literal(alpha = alpha, color = color, dataContext = dataContext, description = description, hidden = hidden, percents = percents, pulled = pulled, title = title, url = url, value = value, visibleInLegend = visibleInLegend)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], dataContext = dataContext.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], percents = percents.asInstanceOf[js.Any], pulled = pulled.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visibleInLegend = visibleInLegend.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Slice]
   }

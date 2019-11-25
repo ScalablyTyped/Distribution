@@ -28,11 +28,11 @@ object LinkReference {
     label: String = null,
     position: Position = null
   ): LinkReference = {
-    val __obj = js.Dynamic.literal(children = children, identifier = identifier, referenceType = referenceType)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (position != null) __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], referenceType = referenceType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkReference]
   }
 }

@@ -128,7 +128,7 @@ object qlikDashVisualizationextensionsStrings {
   sealed trait always extends ExpressionType
   
   @js.native
-  sealed trait analysis extends js.Object
+  sealed trait analysis_ extends js.Object
   
   @js.native
   sealed trait barchart extends VisualizationType
@@ -161,7 +161,7 @@ object qlikDashVisualizationextensionsStrings {
   sealed trait dropdown extends js.Object
   
   @js.native
-  sealed trait edit extends js.Object
+  sealed trait edit_ extends js.Object
   
   @js.native
   sealed trait extension extends VisualizationType
@@ -293,7 +293,7 @@ object qlikDashVisualizationextensionsStrings {
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   @scala.inline
-  def analysis: analysis = "analysis".asInstanceOf[analysis]
+  def analysis_ : analysis_ = "analysis".asInstanceOf[analysis_]
   @scala.inline
   def barchart: barchart = "barchart".asInstanceOf[barchart]
   @scala.inline
@@ -315,7 +315,7 @@ object qlikDashVisualizationextensionsStrings {
   @scala.inline
   def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   @scala.inline
-  def edit: edit = "edit".asInstanceOf[edit]
+  def edit_ : edit_ = "edit".asInstanceOf[edit_]
   @scala.inline
   def extension: extension = "extension".asInstanceOf[extension]
   @scala.inline

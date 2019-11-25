@@ -18,8 +18,8 @@ object DataSourceRow {
   @scala.inline
   def apply(fieldName: String = null, filterItems: DataSourceRowsFilterItems = null): DataSourceRow = {
     val __obj = js.Dynamic.literal()
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceRow]
   }
 }

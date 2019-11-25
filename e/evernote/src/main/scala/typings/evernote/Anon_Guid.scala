@@ -20,9 +20,9 @@ object Anon_Guid {
     updateSequenceNum: Int | Double = null
   ): Anon_Guid = {
     val __obj = js.Dynamic.literal()
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parentGuid != null) __obj.updateDynamic("parentGuid")(parentGuid)
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentGuid != null) __obj.updateDynamic("parentGuid")(parentGuid.asInstanceOf[js.Any])
     if (updateSequenceNum != null) __obj.updateDynamic("updateSequenceNum")(updateSequenceNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Guid]
   }

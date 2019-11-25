@@ -12,7 +12,7 @@ trait Anon_NextScrollLeft extends js.Object {
 object Anon_NextScrollLeft {
   @scala.inline
   def apply(nextScrollLeft: Double, nextScrollTop: Double): Anon_NextScrollLeft = {
-    val __obj = js.Dynamic.literal(nextScrollLeft = nextScrollLeft, nextScrollTop = nextScrollTop)
+    val __obj = js.Dynamic.literal(nextScrollLeft = nextScrollLeft.asInstanceOf[js.Any], nextScrollTop = nextScrollTop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NextScrollLeft]
   }

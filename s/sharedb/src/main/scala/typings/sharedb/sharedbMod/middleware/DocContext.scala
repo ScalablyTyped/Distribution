@@ -32,7 +32,7 @@ object DocContext {
     id: String,
     snapshot: Snapshot
   ): DocContext = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend, collection = collection, id = id, snapshot = snapshot)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocContext]
   }

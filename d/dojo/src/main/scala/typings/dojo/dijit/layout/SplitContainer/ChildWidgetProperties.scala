@@ -30,7 +30,7 @@ trait ChildWidgetProperties extends js.Object {
 object ChildWidgetProperties {
   @scala.inline
   def apply(sizeMin: Double, sizeShare: Double): ChildWidgetProperties = {
-    val __obj = js.Dynamic.literal(sizeMin = sizeMin, sizeShare = sizeShare)
+    val __obj = js.Dynamic.literal(sizeMin = sizeMin.asInstanceOf[js.Any], sizeShare = sizeShare.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChildWidgetProperties]
   }

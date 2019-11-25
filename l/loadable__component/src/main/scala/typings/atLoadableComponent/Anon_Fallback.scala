@@ -13,7 +13,7 @@ object Anon_Fallback {
   @scala.inline
   def apply(fallback: Element = null): Anon_Fallback = {
     val __obj = js.Dynamic.literal()
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fallback]
   }
 }

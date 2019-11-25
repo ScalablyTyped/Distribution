@@ -12,7 +12,7 @@ object CascadeOption {
   @scala.inline
   def apply(cascade: js.UndefOr[Boolean] = js.undefined): CascadeOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
     __obj.asInstanceOf[CascadeOption]
   }
 }

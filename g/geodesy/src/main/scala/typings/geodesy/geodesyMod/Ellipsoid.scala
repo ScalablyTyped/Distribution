@@ -13,7 +13,7 @@ trait Ellipsoid extends js.Object {
 object Ellipsoid {
   @scala.inline
   def apply(a: Double, b: Double, f: Double): Ellipsoid = {
-    val __obj = js.Dynamic.literal(a = a, b = b, f = f)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Ellipsoid]
   }

@@ -23,9 +23,9 @@ object AuditConfig {
     service: String = null
   ): AuditConfig = {
     val __obj = js.Dynamic.literal()
-    if (auditLogConfigs != null) __obj.updateDynamic("auditLogConfigs")(auditLogConfigs)
-    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (auditLogConfigs != null) __obj.updateDynamic("auditLogConfigs")(auditLogConfigs.asInstanceOf[js.Any])
+    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditConfig]
   }
 }

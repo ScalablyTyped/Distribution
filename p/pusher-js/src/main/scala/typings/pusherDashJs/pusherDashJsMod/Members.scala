@@ -32,7 +32,7 @@ object Members {
     members: StringDictionary[Member[T]],
     myID: String
   ): Members[T] = {
-    val __obj = js.Dynamic.literal(count = count, each = js.Any.fromFunction1(each), get = js.Any.fromFunction1(get), me = me, members = members, myID = myID)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], each = js.Any.fromFunction1(each), get = js.Any.fromFunction1(get), me = me.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], myID = myID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Members[T]]
   }

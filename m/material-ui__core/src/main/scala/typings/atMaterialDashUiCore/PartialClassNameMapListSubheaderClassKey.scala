@@ -25,12 +25,12 @@ object PartialClassNameMapListSubheaderClassKey {
     sticky: String = null
   ): PartialClassNameMapListSubheaderClassKey = {
     val __obj = js.Dynamic.literal()
-    if (colorInherit != null) __obj.updateDynamic("colorInherit")(colorInherit)
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary)
-    if (gutters != null) __obj.updateDynamic("gutters")(gutters)
-    if (inset != null) __obj.updateDynamic("inset")(inset)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (sticky != null) __obj.updateDynamic("sticky")(sticky)
+    if (colorInherit != null) __obj.updateDynamic("colorInherit")(colorInherit.asInstanceOf[js.Any])
+    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
+    if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
+    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (sticky != null) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapListSubheaderClassKey]
   }
 }

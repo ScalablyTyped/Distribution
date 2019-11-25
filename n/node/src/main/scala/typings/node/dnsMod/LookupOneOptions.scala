@@ -19,10 +19,10 @@ object LookupOneOptions {
     verbatim: js.UndefOr[Boolean] = js.undefined
   ): LookupOneOptions = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all)
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbatim)) __obj.updateDynamic("verbatim")(verbatim)
+    if (!js.isUndefined(verbatim)) __obj.updateDynamic("verbatim")(verbatim.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupOneOptions]
   }
 }

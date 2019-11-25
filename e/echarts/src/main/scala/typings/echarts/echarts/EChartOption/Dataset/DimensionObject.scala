@@ -26,8 +26,8 @@ object DimensionObject {
     `type`: number | float | int | ordinal | time = null
   ): DimensionObject = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionObject]
   }

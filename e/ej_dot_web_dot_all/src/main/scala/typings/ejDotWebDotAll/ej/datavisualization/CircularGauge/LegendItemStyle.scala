@@ -22,7 +22,7 @@ object LegendItemStyle {
   @scala.inline
   def apply(border: LegendItemStyleBorder = null, height: Int | Double = null, width: Int | Double = null): LegendItemStyle = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendItemStyle]

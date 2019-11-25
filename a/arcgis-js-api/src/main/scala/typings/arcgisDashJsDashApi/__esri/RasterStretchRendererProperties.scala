@@ -120,10 +120,10 @@ object RasterStretchRendererProperties {
     useGamma: js.UndefOr[Boolean] = js.undefined
   ): RasterStretchRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (colorRamp != null) __obj.updateDynamic("colorRamp")(colorRamp)
-    if (!js.isUndefined(computeGamma)) __obj.updateDynamic("computeGamma")(computeGamma)
-    if (!js.isUndefined(dynamicRangeAdjustment)) __obj.updateDynamic("dynamicRangeAdjustment")(dynamicRangeAdjustment)
-    if (gamma != null) __obj.updateDynamic("gamma")(gamma)
+    if (colorRamp != null) __obj.updateDynamic("colorRamp")(colorRamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(computeGamma)) __obj.updateDynamic("computeGamma")(computeGamma.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRangeAdjustment)) __obj.updateDynamic("dynamicRangeAdjustment")(dynamicRangeAdjustment.asInstanceOf[js.Any])
+    if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
     if (maxPercent != null) __obj.updateDynamic("maxPercent")(maxPercent.asInstanceOf[js.Any])
     if (minPercent != null) __obj.updateDynamic("minPercent")(minPercent.asInstanceOf[js.Any])
     if (numberOfStandardDeviations != null) __obj.updateDynamic("numberOfStandardDeviations")(numberOfStandardDeviations.asInstanceOf[js.Any])
@@ -131,7 +131,7 @@ object RasterStretchRendererProperties {
     if (outputMin != null) __obj.updateDynamic("outputMin")(outputMin.asInstanceOf[js.Any])
     if (sigmoidStrengthLevel != null) __obj.updateDynamic("sigmoidStrengthLevel")(sigmoidStrengthLevel.asInstanceOf[js.Any])
     if (stretchType != null) __obj.updateDynamic("stretchType")(stretchType.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGamma)) __obj.updateDynamic("useGamma")(useGamma)
+    if (!js.isUndefined(useGamma)) __obj.updateDynamic("useGamma")(useGamma.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterStretchRendererProperties]
   }
 }

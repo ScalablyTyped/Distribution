@@ -14,7 +14,7 @@ trait IAddMutator extends Mutator {
 object IAddMutator {
   @scala.inline
   def apply(mutatorType: ADD, value: PrimitiveValue, insertionIndex: Int | Double = null): IAddMutator = {
-    val __obj = js.Dynamic.literal(mutatorType = mutatorType, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (insertionIndex != null) __obj.updateDynamic("insertionIndex")(insertionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddMutator]
   }

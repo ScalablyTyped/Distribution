@@ -22,7 +22,7 @@ trait ITabActivateRequestedArgs[T] extends js.Object {
 object ITabActivateRequestedArgs {
   @scala.inline
   def apply[T](index: Double, title: Title[T]): ITabActivateRequestedArgs[T] = {
-    val __obj = js.Dynamic.literal(index = index, title = title)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITabActivateRequestedArgs[T]]
   }

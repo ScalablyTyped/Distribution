@@ -20,9 +20,9 @@ object ListMetricDescriptorsResponse {
   @scala.inline
   def apply(kind: String = null, metrics: js.Array[MetricDescriptor] = null, nextPageToken: String = null): ListMetricDescriptorsResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMetricDescriptorsResponse]
   }
 }

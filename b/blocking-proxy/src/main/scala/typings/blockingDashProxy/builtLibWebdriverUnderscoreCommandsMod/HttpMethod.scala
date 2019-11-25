@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait HttpMethod extends js.Object
 
+object HttpMethod {
+  @scala.inline
+  def DELETE: typings.blockingDashProxy.blockingDashProxyStrings.DELETE = this.cast("DELETE")
+  @scala.inline
+  def GET: typings.blockingDashProxy.blockingDashProxyStrings.GET = this.cast("GET")
+  @scala.inline
+  def POST: typings.blockingDashProxy.blockingDashProxyStrings.POST = this.cast("POST")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

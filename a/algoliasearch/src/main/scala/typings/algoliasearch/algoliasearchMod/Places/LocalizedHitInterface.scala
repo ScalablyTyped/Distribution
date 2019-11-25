@@ -97,13 +97,13 @@ object LocalizedHitInterface {
     population: Int | Double = null,
     postcode: js.Array[String] = null
   ): LocalizedHitInterface = {
-    val __obj = js.Dynamic.literal(_geoloc = _geoloc, _highlightResult = _highlightResult, _tags = _tags, admin_level = admin_level, country = country, country_code = country_code, importance = importance, is_city = is_city, is_country = is_country, is_highway = is_highway, is_popular = is_popular, is_suburb = is_suburb, locale_names = locale_names, objectID = objectID)
-    if (administrative != null) __obj.updateDynamic("administrative")(administrative)
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (county != null) __obj.updateDynamic("county")(county)
-    if (district != null) __obj.updateDynamic("district")(district)
+    val __obj = js.Dynamic.literal(_geoloc = _geoloc.asInstanceOf[js.Any], _highlightResult = _highlightResult.asInstanceOf[js.Any], _tags = _tags.asInstanceOf[js.Any], admin_level = admin_level.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], country_code = country_code.asInstanceOf[js.Any], importance = importance.asInstanceOf[js.Any], is_city = is_city.asInstanceOf[js.Any], is_country = is_country.asInstanceOf[js.Any], is_highway = is_highway.asInstanceOf[js.Any], is_popular = is_popular.asInstanceOf[js.Any], is_suburb = is_suburb.asInstanceOf[js.Any], locale_names = locale_names.asInstanceOf[js.Any], objectID = objectID.asInstanceOf[js.Any])
+    if (administrative != null) __obj.updateDynamic("administrative")(administrative.asInstanceOf[js.Any])
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (county != null) __obj.updateDynamic("county")(county.asInstanceOf[js.Any])
+    if (district != null) __obj.updateDynamic("district")(district.asInstanceOf[js.Any])
     if (population != null) __obj.updateDynamic("population")(population.asInstanceOf[js.Any])
-    if (postcode != null) __obj.updateDynamic("postcode")(postcode)
+    if (postcode != null) __obj.updateDynamic("postcode")(postcode.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizedHitInterface]
   }
 }

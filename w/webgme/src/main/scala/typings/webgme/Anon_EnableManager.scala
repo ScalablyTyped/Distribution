@@ -26,7 +26,7 @@ trait Anon_EnableManager extends js.Object {
 object Anon_EnableManager {
   @scala.inline
   def apply(enable: Boolean, manager: memory | redis): Anon_EnableManager = {
-    val __obj = js.Dynamic.literal(enable = enable, manager = manager.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnableManager]
   }

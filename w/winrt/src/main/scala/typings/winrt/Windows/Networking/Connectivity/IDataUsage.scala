@@ -12,7 +12,7 @@ trait IDataUsage extends js.Object {
 object IDataUsage {
   @scala.inline
   def apply(bytesReceived: Double, bytesSent: Double): IDataUsage = {
-    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, bytesSent = bytesSent)
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived.asInstanceOf[js.Any], bytesSent = bytesSent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDataUsage]
   }

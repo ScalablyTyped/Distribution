@@ -21,8 +21,8 @@ object SubExpression {
     path: PathExpression,
     `type`: typings.handlebars.handlebarsStrings.SubExpression
   ): SubExpression = {
-    val __obj = js.Dynamic.literal(hash = hash, loc = loc, params = params, path = path)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubExpression]
   }
 }

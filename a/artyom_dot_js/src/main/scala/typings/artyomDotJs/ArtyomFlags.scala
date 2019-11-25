@@ -12,7 +12,7 @@ object ArtyomFlags {
   @scala.inline
   def apply(restartRecognition: js.UndefOr[Boolean] = js.undefined): ArtyomFlags = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(restartRecognition)) __obj.updateDynamic("restartRecognition")(restartRecognition)
+    if (!js.isUndefined(restartRecognition)) __obj.updateDynamic("restartRecognition")(restartRecognition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtyomFlags]
   }
 }

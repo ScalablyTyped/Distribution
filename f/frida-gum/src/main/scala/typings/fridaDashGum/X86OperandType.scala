@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait X86OperandType extends js.Object
 
+object X86OperandType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def imm: typings.fridaDashGum.fridaDashGumStrings.imm = this.cast("imm")
+  @scala.inline
+  def mem: typings.fridaDashGum.fridaDashGumStrings.mem = this.cast("mem")
+  @scala.inline
+  def reg: typings.fridaDashGum.fridaDashGumStrings.reg = this.cast("reg")
+}
+

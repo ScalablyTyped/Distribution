@@ -12,7 +12,7 @@ trait ToolsStatic extends js.Object {
 object ToolsStatic {
   @scala.inline
   def apply(overlay: OverlayStatic): ToolsStatic = {
-    val __obj = js.Dynamic.literal(overlay = overlay)
+    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ToolsStatic]
   }

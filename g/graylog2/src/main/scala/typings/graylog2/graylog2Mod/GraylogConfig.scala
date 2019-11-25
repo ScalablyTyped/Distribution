@@ -45,11 +45,11 @@ object GraylogConfig {
     facility: String = null,
     hostname: String = null
   ): GraylogConfig = {
-    val __obj = js.Dynamic.literal(servers = servers)
+    val __obj = js.Dynamic.literal(servers = servers.asInstanceOf[js.Any])
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
-    if (deflate != null) __obj.updateDynamic("deflate")(deflate)
-    if (facility != null) __obj.updateDynamic("facility")(facility)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (deflate != null) __obj.updateDynamic("deflate")(deflate.asInstanceOf[js.Any])
+    if (facility != null) __obj.updateDynamic("facility")(facility.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraylogConfig]
   }
 }

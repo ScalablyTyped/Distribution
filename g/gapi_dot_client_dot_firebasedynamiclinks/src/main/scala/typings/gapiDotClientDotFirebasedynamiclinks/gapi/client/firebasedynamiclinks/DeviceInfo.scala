@@ -27,11 +27,11 @@ object DeviceInfo {
     timezone: String = null
   ): DeviceInfo = {
     val __obj = js.Dynamic.literal()
-    if (deviceModelName != null) __obj.updateDynamic("deviceModelName")(deviceModelName)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (screenResolutionHeight != null) __obj.updateDynamic("screenResolutionHeight")(screenResolutionHeight)
-    if (screenResolutionWidth != null) __obj.updateDynamic("screenResolutionWidth")(screenResolutionWidth)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (deviceModelName != null) __obj.updateDynamic("deviceModelName")(deviceModelName.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (screenResolutionHeight != null) __obj.updateDynamic("screenResolutionHeight")(screenResolutionHeight.asInstanceOf[js.Any])
+    if (screenResolutionWidth != null) __obj.updateDynamic("screenResolutionWidth")(screenResolutionWidth.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceInfo]
   }
 }

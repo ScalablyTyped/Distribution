@@ -76,8 +76,8 @@ object IModel {
     writable: Boolean,
     chunk: Int | Double = null
   ): IModel = {
-    val __obj = js.Dynamic.literal(content = content, created = created, format = format, last_modified = last_modified, mimetype = mimetype, name = name, path = path, writable = writable)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], last_modified = last_modified.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (chunk != null) __obj.updateDynamic("chunk")(chunk.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModel]
   }

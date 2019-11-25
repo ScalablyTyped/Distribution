@@ -25,8 +25,8 @@ object UploadTaskSnapshot {
     totalBytes: Double,
     downloadURL: String = null
   ): UploadTaskSnapshot = {
-    val __obj = js.Dynamic.literal(bytesTransferred = bytesTransferred, metadata = metadata, ref = ref, state = state, task = task, totalBytes = totalBytes)
-    if (downloadURL != null) __obj.updateDynamic("downloadURL")(downloadURL)
+    val __obj = js.Dynamic.literal(bytesTransferred = bytesTransferred.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
+    if (downloadURL != null) __obj.updateDynamic("downloadURL")(downloadURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadTaskSnapshot]
   }
 }

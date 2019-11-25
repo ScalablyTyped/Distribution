@@ -30,13 +30,13 @@ object LanguageDetectorOptions {
   ): LanguageDetectorOptions = {
     val __obj = js.Dynamic.literal()
     if (caches != null) __obj.updateDynamic("caches")(caches.asInstanceOf[js.Any])
-    if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain)
-    if (cookieExpirationDate != null) __obj.updateDynamic("cookieExpirationDate")(cookieExpirationDate)
-    if (lookupCookie != null) __obj.updateDynamic("lookupCookie")(lookupCookie)
+    if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain.asInstanceOf[js.Any])
+    if (cookieExpirationDate != null) __obj.updateDynamic("cookieExpirationDate")(cookieExpirationDate.asInstanceOf[js.Any])
+    if (lookupCookie != null) __obj.updateDynamic("lookupCookie")(lookupCookie.asInstanceOf[js.Any])
     if (lookupFromPathIndex != null) __obj.updateDynamic("lookupFromPathIndex")(lookupFromPathIndex.asInstanceOf[js.Any])
-    if (lookupQuerystring != null) __obj.updateDynamic("lookupQuerystring")(lookupQuerystring)
-    if (lookupSession != null) __obj.updateDynamic("lookupSession")(lookupSession)
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (lookupQuerystring != null) __obj.updateDynamic("lookupQuerystring")(lookupQuerystring.asInstanceOf[js.Any])
+    if (lookupSession != null) __obj.updateDynamic("lookupSession")(lookupSession.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageDetectorOptions]
   }
 }

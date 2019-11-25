@@ -51,7 +51,7 @@ object WorkflowTaskResolveConflictParams {
     stepId: Double,
     user: String
   ): WorkflowTaskResolveConflictParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, optionReturnCode = optionReturnCode, optionStepIds = optionStepIds, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stepId = stepId, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId.asInstanceOf[js.Any], optionReturnCode = optionReturnCode.asInstanceOf[js.Any], optionStepIds = optionStepIds.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stepId = stepId.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkflowTaskResolveConflictParams]
   }

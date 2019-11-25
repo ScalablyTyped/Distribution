@@ -13,8 +13,8 @@ object SparqlHttpOptions {
   @scala.inline
   def apply(endpointUrl: String = null, updateUrl: String = null): SparqlHttpOptions = {
     val __obj = js.Dynamic.literal()
-    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl)
-    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparqlHttpOptions]
   }
 }

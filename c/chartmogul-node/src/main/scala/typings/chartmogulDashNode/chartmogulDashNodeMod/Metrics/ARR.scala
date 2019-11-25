@@ -14,7 +14,7 @@ trait ARR extends js.Object {
 object ARR {
   @scala.inline
   def apply(arr: Double, date: String): ARR = {
-    val __obj = js.Dynamic.literal(arr = arr, date = date)
+    val __obj = js.Dynamic.literal(arr = arr.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ARR]
   }

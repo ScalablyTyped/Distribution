@@ -2,7 +2,7 @@ package typings.envDashCi.envDashCiMod
 
 import typings.envDashCi.envDashCiNumbers.`true`
 import typings.envDashCi.envDashCiStrings.Shippable
-import typings.envDashCi.envDashCiStrings.shippable
+import typings.envDashCi.envDashCiStrings.shippable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait ShippableEnv
   var pr: js.UndefOr[String] = js.undefined
   var prBranch: js.UndefOr[String] = js.undefined
   var root: String
-  var service: shippable
+  var service: shippable_
   var slug: String
   var tag: js.UndefOr[String] = js.undefined
 }
@@ -37,16 +37,16 @@ object ShippableEnv {
     job: String,
     name: Shippable,
     root: String,
-    service: shippable,
+    service: shippable_,
     slug: String,
     pr: String = null,
     prBranch: String = null,
     tag: String = null
   ): ShippableEnv = {
-    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, isPr = isPr, job = job, name = name, root = root, service = service, slug = slug)
-    if (pr != null) __obj.updateDynamic("pr")(pr)
-    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippableEnv]
   }
 }

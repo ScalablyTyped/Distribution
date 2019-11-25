@@ -15,8 +15,8 @@ object ListDomainMappingsResponse {
   @scala.inline
   def apply(domainMappings: js.Array[DomainMapping] = null, nextPageToken: String = null): ListDomainMappingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (domainMappings != null) __obj.updateDynamic("domainMappings")(domainMappings)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (domainMappings != null) __obj.updateDynamic("domainMappings")(domainMappings.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDomainMappingsResponse]
   }
 }

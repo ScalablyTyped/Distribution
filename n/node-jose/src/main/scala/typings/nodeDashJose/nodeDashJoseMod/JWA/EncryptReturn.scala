@@ -14,8 +14,8 @@ trait EncryptReturn extends js.Object {
 object EncryptReturn {
   @scala.inline
   def apply(data: Buffer, tag: Buffer = null): EncryptReturn = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptReturn]
   }
 }

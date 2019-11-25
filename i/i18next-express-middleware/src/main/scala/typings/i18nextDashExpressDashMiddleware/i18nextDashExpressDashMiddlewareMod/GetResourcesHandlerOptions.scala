@@ -20,10 +20,10 @@ object GetResourcesHandlerOptions {
     nsParam: String = null
   ): GetResourcesHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (lngParam != null) __obj.updateDynamic("lngParam")(lngParam)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (lngParam != null) __obj.updateDynamic("lngParam")(lngParam.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (nsParam != null) __obj.updateDynamic("nsParam")(nsParam)
+    if (nsParam != null) __obj.updateDynamic("nsParam")(nsParam.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcesHandlerOptions]
   }
 }

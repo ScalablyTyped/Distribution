@@ -61,7 +61,7 @@ object FeathersAuthenticationLocalOptions {
     session: Boolean,
     usernameField: String
   ): FeathersAuthenticationLocalOptions = {
-    val __obj = js.Dynamic.literal(Verifier = Verifier, entity = entity, entityPasswordField = entityPasswordField, entityUsernameField = entityUsernameField, name = name, passReqToCallback = passReqToCallback, passwordField = passwordField, service = service, session = session, usernameField = usernameField)
+    val __obj = js.Dynamic.literal(Verifier = Verifier.asInstanceOf[js.Any], entity = entity.asInstanceOf[js.Any], entityPasswordField = entityPasswordField.asInstanceOf[js.Any], entityUsernameField = entityUsernameField.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any], passwordField = passwordField.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], usernameField = usernameField.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeathersAuthenticationLocalOptions]
   }

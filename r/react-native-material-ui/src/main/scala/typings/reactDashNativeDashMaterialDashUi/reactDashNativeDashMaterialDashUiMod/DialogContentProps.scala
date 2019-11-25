@@ -14,8 +14,8 @@ trait DialogContentProps extends js.Object {
 object DialogContentProps {
   @scala.inline
   def apply(children: Element, style: Anon_ContentContainer = null): DialogContentProps = {
-    val __obj = js.Dynamic.literal(children = children)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogContentProps]
   }
 }

@@ -31,9 +31,9 @@ object IFilterConfigValues {
     defaultExt: String = null
   ): IFilterConfigValues = {
     val __obj = js.Dynamic.literal()
-    if (aliasUrls != null) __obj.updateDynamic("aliasUrls")(aliasUrls)
-    if (defaultBaseUrl != null) __obj.updateDynamic("defaultBaseUrl")(defaultBaseUrl)
-    if (defaultExt != null) __obj.updateDynamic("defaultExt")(defaultExt)
+    if (aliasUrls != null) __obj.updateDynamic("aliasUrls")(aliasUrls.asInstanceOf[js.Any])
+    if (defaultBaseUrl != null) __obj.updateDynamic("defaultBaseUrl")(defaultBaseUrl.asInstanceOf[js.Any])
+    if (defaultExt != null) __obj.updateDynamic("defaultExt")(defaultExt.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFilterConfigValues]
   }
 }

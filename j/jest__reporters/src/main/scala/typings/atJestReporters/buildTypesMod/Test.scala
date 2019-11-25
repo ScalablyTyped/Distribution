@@ -14,7 +14,7 @@ trait Test extends js.Object {
 object Test {
   @scala.inline
   def apply(context: Context, path: Path, duration: Int | Double = null): Test = {
-    val __obj = js.Dynamic.literal(context = context, path = path)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Test]
   }

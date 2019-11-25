@@ -1,7 +1,5 @@
 package typings.videoDotJs.videoDotJsMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.Track
-import typings.videoDotJs.videoDotJsMod.videojs.TrackList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +12,8 @@ import scala.scalajs.js.annotation._
   * @param tracks
   *        A list of tracks to initialize the list with.
   */
-class TrackListCls () extends TrackList {
-  def this(tracks: js.Array[Track]) = this()
+class TrackListCls ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.TrackList {
+  def this(tracks: js.Array[typings.videoDotJs.videoDotJsMod.videojs.Track]) = this()
 }
 

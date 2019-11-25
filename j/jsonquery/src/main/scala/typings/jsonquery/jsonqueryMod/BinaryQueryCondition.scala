@@ -10,3 +10,18 @@ import scala.scalajs.js.annotation._
 */
 trait BinaryQueryCondition[T] extends js.Object
 
+object BinaryQueryCondition {
+  @scala.inline
+  def OrQueryCondition[T]($or: js.Array[Query[T]]): BinaryQueryCondition[T] = {
+    val __obj = js.Dynamic.literal($or = $or.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[BinaryQueryCondition[T]]
+  }
+  @scala.inline
+  def AndQueryCondition[T]($and: js.Array[Query[T]]): BinaryQueryCondition[T] = {
+    val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[BinaryQueryCondition[T]]
+  }
+}
+

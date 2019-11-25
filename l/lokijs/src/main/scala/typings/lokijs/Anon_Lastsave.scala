@@ -14,7 +14,7 @@ trait Anon_Lastsave extends js.Object {
 object Anon_Lastsave {
   @scala.inline
   def apply(lastsave: Date, savecount: Double, value: String): Anon_Lastsave = {
-    val __obj = js.Dynamic.literal(lastsave = lastsave, savecount = savecount, value = value)
+    val __obj = js.Dynamic.literal(lastsave = lastsave.asInstanceOf[js.Any], savecount = savecount.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Lastsave]
   }

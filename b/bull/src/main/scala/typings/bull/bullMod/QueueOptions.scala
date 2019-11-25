@@ -47,11 +47,11 @@ object QueueOptions {
   ): QueueOptions = {
     val __obj = js.Dynamic.literal()
     if (createClient != null) __obj.updateDynamic("createClient")(js.Any.fromFunction2(createClient))
-    if (defaultJobOptions != null) __obj.updateDynamic("defaultJobOptions")(defaultJobOptions)
-    if (limiter != null) __obj.updateDynamic("limiter")(limiter)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (defaultJobOptions != null) __obj.updateDynamic("defaultJobOptions")(defaultJobOptions.asInstanceOf[js.Any])
+    if (limiter != null) __obj.updateDynamic("limiter")(limiter.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (redis != null) __obj.updateDynamic("redis")(redis.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueOptions]
   }
 }

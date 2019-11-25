@@ -25,7 +25,7 @@ object TransferStats {
     speed: Double,
     totalUploaded: Double
   ): TransferStats = {
-    val __obj = js.Dynamic.literal(fileSize = fileSize, loaded = loaded, readableSpeed = readableSpeed, remainingSize = remainingSize, secondsLeft = secondsLeft, speed = speed, totalUploaded = totalUploaded)
+    val __obj = js.Dynamic.literal(fileSize = fileSize.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], readableSpeed = readableSpeed.asInstanceOf[js.Any], remainingSize = remainingSize.asInstanceOf[js.Any], secondsLeft = secondsLeft.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], totalUploaded = totalUploaded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransferStats]
   }

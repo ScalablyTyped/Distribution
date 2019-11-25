@@ -14,7 +14,7 @@ object Appsactivity_ {
   @scala.inline
   def apply(Activities: ActivitiesCollection = null): Appsactivity_ = {
     val __obj = js.Dynamic.literal()
-    if (Activities != null) __obj.updateDynamic("Activities")(Activities)
+    if (Activities != null) __obj.updateDynamic("Activities")(Activities.asInstanceOf[js.Any])
     __obj.asInstanceOf[Appsactivity_]
   }
 }

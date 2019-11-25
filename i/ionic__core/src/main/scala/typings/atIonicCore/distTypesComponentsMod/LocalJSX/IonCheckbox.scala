@@ -2,8 +2,6 @@ package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
-import typings.atIonicCore.distTypesComponentsCheckboxCheckboxDashInterfaceMod.CheckboxChangeEventDetail
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +15,9 @@ trait IonCheckbox extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * If `true`, the user cannot interact with the checkbox.
     */
@@ -41,7 +41,14 @@ trait IonCheckbox extends js.Object {
   /**
     * Emitted when the checked property has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[CheckboxChangeEventDetail], Unit]] = js.undefined
+  var onIonChange: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CheckboxChangeEventDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Emitted when the toggle has focus.
     */
@@ -56,27 +63,29 @@ object IonCheckbox {
   @scala.inline
   def apply(
     checked: js.UndefOr[Boolean] = js.undefined,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     indeterminate: js.UndefOr[Boolean] = js.undefined,
     mode: ios | md = null,
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[CheckboxChangeEventDetail] => Unit = null,
+    onIonChange: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CheckboxChangeEventDetail */ _
+    ] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     value: String = null
   ): IonCheckbox = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
     if (onIonChange != null) __obj.updateDynamic("onIonChange")(js.Any.fromFunction1(onIonChange))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonCheckbox]
   }
 }

@@ -14,7 +14,7 @@ trait ECKeyPairKeyObjectOptions extends js.Object {
 object ECKeyPairKeyObjectOptions {
   @scala.inline
   def apply(namedCurve: java.lang.String): ECKeyPairKeyObjectOptions = {
-    val __obj = js.Dynamic.literal(namedCurve = namedCurve)
+    val __obj = js.Dynamic.literal(namedCurve = namedCurve.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ECKeyPairKeyObjectOptions]
   }

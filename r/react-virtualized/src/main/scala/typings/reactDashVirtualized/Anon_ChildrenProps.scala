@@ -14,7 +14,7 @@ trait Anon_ChildrenProps extends js.Object {
 object Anon_ChildrenProps {
   @scala.inline
   def apply(children: Validator[js.Function1[/* props */ ScrollSyncChildProps, ReactNode]]): Anon_ChildrenProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChildrenProps]
   }

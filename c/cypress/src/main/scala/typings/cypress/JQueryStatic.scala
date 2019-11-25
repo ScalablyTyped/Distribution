@@ -35,7 +35,7 @@ import typings.cypress.cypressStrings.`null`
 import typings.cypress.cypressStrings.`object`
 import typings.cypress.cypressStrings.array
 import typings.cypress.cypressStrings.boolean
-import typings.cypress.cypressStrings.date
+import typings.cypress.cypressStrings.date_
 import typings.cypress.cypressStrings.error
 import typings.cypress.cypressStrings.function
 import typings.cypress.cypressStrings.number
@@ -787,9 +787,9 @@ trait JQueryStatic extends js.Object {
   def each[T, K /* <: String */](
     obj: T,
     callback: js.ThisFunction2[
-      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* this */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* this */ js.Any, 
       /* propertyName */ K, 
-      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* valueOfProperty */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* valueOfProperty */ js.Any, 
       _
     ]
   ): T = js.native
@@ -2505,7 +2505,7 @@ trait JQueryStatic extends js.Object {
     obj: T,
     callback: js.ThisFunction2[
       /* this */ Window, 
-      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* propertyOfObject */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* propertyOfObject */ js.Any, 
       /* key */ K, 
       js.UndefOr[TypeOrArray[TReturn] | Null]
     ]
@@ -15151,9 +15151,8 @@ trait JQueryStatic extends js.Object {
     * @since 1.1
     */
   def speed[TElement /* <: Element */](): EffectsOptions[TElement] = js.native
+  def speed[TElement /* <: Element */](duration_complete_settings: Duration | SpeedSettings[TElement]): EffectsOptions[TElement] = js.native
   def speed[TElement /* <: Element */](duration_complete_settings: js.ThisFunction0[/* this */ TElement, Unit]): EffectsOptions[TElement] = js.native
-  def speed[TElement /* <: Element */](duration_complete_settings: Duration): EffectsOptions[TElement] = js.native
-  def speed[TElement /* <: Element */](duration_complete_settings: SpeedSettings[TElement]): EffectsOptions[TElement] = js.native
   /**
     * Creates an object containing a set of properties ready to be used in the definition of custom animations.
     * @param duration A string or number determining how long the animation will run.
@@ -15241,7 +15240,7 @@ trait JQueryStatic extends js.Object {
   </html>
   ```
     */
-  def `type`(obj: js.Any): array | boolean | date | error | function | `null` | number | `object` | regexp | string | symbol | undefined = js.native
+  def `type`(obj: js.Any): array | boolean | date_ | error | function | `null` | number | `object` | regexp | string | symbol | undefined = js.native
   /**
     * Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.
     * @param array The Array of DOM elements.

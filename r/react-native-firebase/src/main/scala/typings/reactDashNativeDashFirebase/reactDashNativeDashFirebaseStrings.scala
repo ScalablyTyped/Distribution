@@ -102,7 +102,7 @@ object reactDashNativeDashFirebaseStrings {
   sealed trait `array-contains` extends QueryOperator
   
   @js.native
-  sealed trait asc extends QueryDirection
+  sealed trait asc_ extends QueryDirection
   
   @js.native
   sealed trait boolean extends js.Object
@@ -147,7 +147,7 @@ object reactDashNativeDashFirebaseStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait desc extends QueryDirection
+  sealed trait desc_ extends QueryDirection
   
   @js.native
   sealed trait documentid extends js.Object
@@ -159,7 +159,7 @@ object reactDashNativeDashFirebaseStrings {
   sealed trait err extends Category
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error_ extends js.Object
   
   @js.native
   sealed trait event extends Category
@@ -348,7 +348,7 @@ object reactDashNativeDashFirebaseStrings {
   @scala.inline
   def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
   @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  def asc_ : asc_ = "asc".asInstanceOf[asc_]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
@@ -378,7 +378,7 @@ object reactDashNativeDashFirebaseStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  def desc_ : desc_ = "desc".asInstanceOf[desc_]
   @scala.inline
   def documentid: documentid = "documentid".asInstanceOf[documentid]
   @scala.inline
@@ -386,7 +386,7 @@ object reactDashNativeDashFirebaseStrings {
   @scala.inline
   def err: err = "err".asInstanceOf[err]
   @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  def error_ : error_ = "error".asInstanceOf[error_]
   @scala.inline
   def event: event = "event".asInstanceOf[event]
   @scala.inline

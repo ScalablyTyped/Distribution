@@ -30,12 +30,12 @@ object EducationStudent {
     studentNumber: String = null
   ): EducationStudent = {
     val __obj = js.Dynamic.literal()
-    if (birthDate != null) __obj.updateDynamic("birthDate")(birthDate)
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId)
-    if (gender != null) __obj.updateDynamic("gender")(gender)
-    if (grade != null) __obj.updateDynamic("grade")(grade)
-    if (graduationYear != null) __obj.updateDynamic("graduationYear")(graduationYear)
-    if (studentNumber != null) __obj.updateDynamic("studentNumber")(studentNumber)
+    if (birthDate != null) __obj.updateDynamic("birthDate")(birthDate.asInstanceOf[js.Any])
+    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
+    if (grade != null) __obj.updateDynamic("grade")(grade.asInstanceOf[js.Any])
+    if (graduationYear != null) __obj.updateDynamic("graduationYear")(graduationYear.asInstanceOf[js.Any])
+    if (studentNumber != null) __obj.updateDynamic("studentNumber")(studentNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[EducationStudent]
   }
 }

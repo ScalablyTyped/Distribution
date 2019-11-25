@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 */
 trait ClientState extends js.Object
 
+object ClientState {
+  @scala.inline
+  def Offline: typings.xrm.xrmStrings.Offline = this.cast("Offline")
+  @scala.inline
+  def Online: typings.xrm.xrmStrings.Online = this.cast("Online")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -209,13 +209,11 @@ object IPanel {
   def apply(
     IPanel: typings.senchaUnderscoreTouch.Ext.IPanel = null,
     api: js.Any = null,
-    baseCls: java.lang.String = null,
     baseParams: js.Any = null,
     doSetDisabled: /* newDisabled */ js.UndefOr[js.Any] => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
     enableSubmissionForm: js.UndefOr[Boolean] = js.undefined,
     enctype: js.Any = null,
     getApi: () => _ = null,
-    getBaseCls: () => java.lang.String = null,
     getBaseParams: () => _ = null,
     getEnableSubmissionForm: () => Boolean = null,
     getEnctype: () => _ = null,
@@ -223,7 +221,6 @@ object IPanel {
     getMultipartDetection: () => Boolean = null,
     getParamOrder: () => _ = null,
     getParamsAsHash: () => Boolean = null,
-    getRecord: () => IModel = null,
     getStandardSubmit: () => Boolean = null,
     getSubmitOnAction: () => _ = null,
     getTimeout: () => Double = null,
@@ -238,11 +235,8 @@ object IPanel {
     multipartDetection: js.UndefOr[Boolean] = js.undefined,
     paramOrder: js.Any = null,
     paramsAsHash: js.UndefOr[Boolean] = js.undefined,
-    record: IModel = null,
     reset: () => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
-    scrollable: js.Any = null,
     setApi: /* api */ js.UndefOr[js.Any] => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setBaseParams: /* baseParams */ js.UndefOr[js.Any] => Unit = null,
     setEnableSubmissionForm: /* enableSubmissionForm */ js.UndefOr[Boolean] => Unit = null,
     setEnctype: /* enctype */ js.UndefOr[js.Any] => Unit = null,
@@ -268,15 +262,13 @@ object IPanel {
     waitTpl: js.Any = null
   ): IPanel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IPanel)
-    if (api != null) __obj.updateDynamic("api")(api)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (baseParams != null) __obj.updateDynamic("baseParams")(baseParams)
+    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
+    if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
+    if (baseParams != null) __obj.updateDynamic("baseParams")(baseParams.asInstanceOf[js.Any])
     if (doSetDisabled != null) __obj.updateDynamic("doSetDisabled")(js.Any.fromFunction1(doSetDisabled))
-    if (!js.isUndefined(enableSubmissionForm)) __obj.updateDynamic("enableSubmissionForm")(enableSubmissionForm)
-    if (enctype != null) __obj.updateDynamic("enctype")(enctype)
+    if (!js.isUndefined(enableSubmissionForm)) __obj.updateDynamic("enableSubmissionForm")(enableSubmissionForm.asInstanceOf[js.Any])
+    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
     if (getApi != null) __obj.updateDynamic("getApi")(js.Any.fromFunction0(getApi))
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
     if (getBaseParams != null) __obj.updateDynamic("getBaseParams")(js.Any.fromFunction0(getBaseParams))
     if (getEnableSubmissionForm != null) __obj.updateDynamic("getEnableSubmissionForm")(js.Any.fromFunction0(getEnableSubmissionForm))
     if (getEnctype != null) __obj.updateDynamic("getEnctype")(js.Any.fromFunction0(getEnctype))
@@ -284,7 +276,6 @@ object IPanel {
     if (getMultipartDetection != null) __obj.updateDynamic("getMultipartDetection")(js.Any.fromFunction0(getMultipartDetection))
     if (getParamOrder != null) __obj.updateDynamic("getParamOrder")(js.Any.fromFunction0(getParamOrder))
     if (getParamsAsHash != null) __obj.updateDynamic("getParamsAsHash")(js.Any.fromFunction0(getParamsAsHash))
-    if (getRecord != null) __obj.updateDynamic("getRecord")(js.Any.fromFunction0(getRecord))
     if (getStandardSubmit != null) __obj.updateDynamic("getStandardSubmit")(js.Any.fromFunction0(getStandardSubmit))
     if (getSubmitOnAction != null) __obj.updateDynamic("getSubmitOnAction")(js.Any.fromFunction0(getSubmitOnAction))
     if (getTimeout != null) __obj.updateDynamic("getTimeout")(js.Any.fromFunction0(getTimeout))
@@ -295,15 +286,12 @@ object IPanel {
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loadModel != null) __obj.updateDynamic("loadModel")(js.Any.fromFunction1(loadModel))
     if (loadRecord != null) __obj.updateDynamic("loadRecord")(js.Any.fromFunction1(loadRecord))
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (!js.isUndefined(multipartDetection)) __obj.updateDynamic("multipartDetection")(multipartDetection)
-    if (paramOrder != null) __obj.updateDynamic("paramOrder")(paramOrder)
-    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash)
-    if (record != null) __obj.updateDynamic("record")(record)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipartDetection)) __obj.updateDynamic("multipartDetection")(multipartDetection.asInstanceOf[js.Any])
+    if (paramOrder != null) __obj.updateDynamic("paramOrder")(paramOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable)
     if (setApi != null) __obj.updateDynamic("setApi")(js.Any.fromFunction1(setApi))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setBaseParams != null) __obj.updateDynamic("setBaseParams")(js.Any.fromFunction1(setBaseParams))
     if (setEnableSubmissionForm != null) __obj.updateDynamic("setEnableSubmissionForm")(js.Any.fromFunction1(setEnableSubmissionForm))
     if (setEnctype != null) __obj.updateDynamic("setEnctype")(js.Any.fromFunction1(setEnctype))
@@ -319,14 +307,14 @@ object IPanel {
     if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1(setUrl))
     if (setValues != null) __obj.updateDynamic("setValues")(js.Any.fromFunction1(setValues))
     if (showMask != null) __obj.updateDynamic("showMask")(js.Any.fromFunction2(showMask))
-    if (!js.isUndefined(standardSubmit)) __obj.updateDynamic("standardSubmit")(standardSubmit)
+    if (!js.isUndefined(standardSubmit)) __obj.updateDynamic("standardSubmit")(standardSubmit.asInstanceOf[js.Any])
     if (submit != null) __obj.updateDynamic("submit")(js.Any.fromFunction1(submit))
-    if (submitOnAction != null) __obj.updateDynamic("submitOnAction")(submitOnAction)
+    if (submitOnAction != null) __obj.updateDynamic("submitOnAction")(submitOnAction.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackResetOnLoad)) __obj.updateDynamic("trackResetOnLoad")(trackResetOnLoad)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (waitMsgTarget != null) __obj.updateDynamic("waitMsgTarget")(waitMsgTarget)
-    if (waitTpl != null) __obj.updateDynamic("waitTpl")(waitTpl)
+    if (!js.isUndefined(trackResetOnLoad)) __obj.updateDynamic("trackResetOnLoad")(trackResetOnLoad.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (waitMsgTarget != null) __obj.updateDynamic("waitMsgTarget")(waitMsgTarget.asInstanceOf[js.Any])
+    if (waitTpl != null) __obj.updateDynamic("waitTpl")(waitTpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanel]
   }
 }

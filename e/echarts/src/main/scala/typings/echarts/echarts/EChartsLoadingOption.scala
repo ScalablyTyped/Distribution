@@ -43,11 +43,11 @@ object EChartsLoadingOption {
     zlevel: `0` = null
   ): EChartsLoadingOption = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
-    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[EChartsLoadingOption]
   }
 }

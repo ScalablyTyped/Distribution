@@ -22,9 +22,9 @@ object Options {
     session: js.Object | String = null,
     value: String | Buffer = null
   ): Options = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (lockretrytime != null) __obj.updateDynamic("lockretrytime")(lockretrytime)
-    if (lockwaittime != null) __obj.updateDynamic("lockwaittime")(lockwaittime)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (lockretrytime != null) __obj.updateDynamic("lockretrytime")(lockretrytime.asInstanceOf[js.Any])
+    if (lockwaittime != null) __obj.updateDynamic("lockwaittime")(lockwaittime.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

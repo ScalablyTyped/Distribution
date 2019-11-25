@@ -113,8 +113,8 @@ object IBitcoinReceiver {
     uncaptured_funds: Boolean,
     used_for_payment: Boolean
   ): IBitcoinReceiver = {
-    val __obj = js.Dynamic.literal(active = active, amount = amount, amount_received = amount_received, bitcoin_amount = bitcoin_amount, bitcoin_amount_received = bitcoin_amount_received, bitcoin_uri = bitcoin_uri, created = created, currency = currency, customer = customer, description = description, email = email, filled = filled, id = id, inbound_address = inbound_address, livemode = livemode, metadata = metadata, payment = payment, refund_address = refund_address, transactions = transactions, uncaptured_funds = uncaptured_funds, used_for_payment = used_for_payment)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], bitcoin_amount = bitcoin_amount.asInstanceOf[js.Any], bitcoin_amount_received = bitcoin_amount_received.asInstanceOf[js.Any], bitcoin_uri = bitcoin_uri.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], filled = filled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inbound_address = inbound_address.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], payment = payment.asInstanceOf[js.Any], refund_address = refund_address.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], uncaptured_funds = uncaptured_funds.asInstanceOf[js.Any], used_for_payment = used_for_payment.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitcoinReceiver]
   }
 }

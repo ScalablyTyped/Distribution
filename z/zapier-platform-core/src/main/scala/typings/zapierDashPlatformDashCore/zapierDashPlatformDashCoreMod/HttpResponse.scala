@@ -21,8 +21,8 @@ object HttpResponse {
     throwForStatus: () => Unit,
     json: js.Object = null
   ): HttpResponse = {
-    val __obj = js.Dynamic.literal(content = content, getHeader = js.Any.fromFunction1(getHeader), headers = headers, request = request, status = status, throwForStatus = js.Any.fromFunction0(throwForStatus))
-    if (json != null) __obj.updateDynamic("json")(json)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), headers = headers.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], throwForStatus = js.Any.fromFunction0(throwForStatus))
+    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpResponse]
   }
 }

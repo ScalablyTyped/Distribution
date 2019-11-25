@@ -12,7 +12,7 @@ trait Either[A, B] extends js.Object {
 object Either {
   @scala.inline
   def apply[A, B](constructor: Anon_SanctuaryEither): Either[A, B] = {
-    val __obj = js.Dynamic.literal(constructor = constructor)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Either[A, B]]
   }

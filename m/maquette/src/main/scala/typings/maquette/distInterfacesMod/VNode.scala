@@ -37,11 +37,11 @@ object VNode {
     properties: VNodeProperties = null,
     text: String = null
   ): VNode = {
-    val __obj = js.Dynamic.literal(vnodeSelector = vnodeSelector)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (domNode != null) __obj.updateDynamic("domNode")(domNode)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(vnodeSelector = vnodeSelector.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (domNode != null) __obj.updateDynamic("domNode")(domNode.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode]
   }
 }

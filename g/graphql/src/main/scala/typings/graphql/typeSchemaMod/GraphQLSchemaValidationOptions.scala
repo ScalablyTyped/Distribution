@@ -32,7 +32,7 @@ object GraphQLSchemaValidationOptions {
   ): GraphQLSchemaValidationOptions = {
     val __obj = js.Dynamic.literal()
     if (allowedLegacyNames != null) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid)
+    if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLSchemaValidationOptions]
   }
 }

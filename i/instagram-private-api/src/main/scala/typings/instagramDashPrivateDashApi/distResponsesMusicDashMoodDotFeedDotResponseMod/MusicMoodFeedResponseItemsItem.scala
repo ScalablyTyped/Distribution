@@ -11,7 +11,7 @@ trait MusicMoodFeedResponseItemsItem extends js.Object {
 object MusicMoodFeedResponseItemsItem {
   @scala.inline
   def apply(track: MusicMoodFeedResponseTrack): MusicMoodFeedResponseItemsItem = {
-    val __obj = js.Dynamic.literal(track = track)
+    val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MusicMoodFeedResponseItemsItem]
   }

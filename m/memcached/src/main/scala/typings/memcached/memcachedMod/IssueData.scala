@@ -29,7 +29,7 @@ object IssueData {
     totalReconnectsFailed: Int | Double = null,
     totalReconnectsSuccess: Int | Double = null
   ): IssueData = {
-    val __obj = js.Dynamic.literal(messages = messages, server = server, tokens = tokens)
+    val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
     if (failures != null) __obj.updateDynamic("failures")(failures.asInstanceOf[js.Any])
     if (totalDownTime != null) __obj.updateDynamic("totalDownTime")(totalDownTime.asInstanceOf[js.Any])
     if (totalFailures != null) __obj.updateDynamic("totalFailures")(totalFailures.asInstanceOf[js.Any])

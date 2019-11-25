@@ -25,16 +25,16 @@ object LoaderHeightWidthRadiusProps {
     widthUnit: String = null
   ): LoaderHeightWidthRadiusProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (heightUnit != null) __obj.updateDynamic("heightUnit")(heightUnit)
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (heightUnit != null) __obj.updateDynamic("heightUnit")(heightUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit)
+    if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (widthUnit != null) __obj.updateDynamic("widthUnit")(widthUnit)
+    if (widthUnit != null) __obj.updateDynamic("widthUnit")(widthUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderHeightWidthRadiusProps]
   }
 }

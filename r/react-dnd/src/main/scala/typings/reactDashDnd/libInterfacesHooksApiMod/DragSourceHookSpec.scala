@@ -85,8 +85,8 @@ object DragSourceHookSpec {
     if (collect != null) __obj.updateDynamic("collect")(js.Any.fromFunction1(collect))
     if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction2(end))
     if (isDragging != null) __obj.updateDynamic("isDragging")(js.Any.fromFunction1(isDragging))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (previewOptions != null) __obj.updateDynamic("previewOptions")(previewOptions)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (previewOptions != null) __obj.updateDynamic("previewOptions")(previewOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragSourceHookSpec[DragObject, DropResult, CollectedProps]]
   }
 }

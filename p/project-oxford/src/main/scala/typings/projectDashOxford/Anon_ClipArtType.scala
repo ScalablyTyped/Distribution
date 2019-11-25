@@ -12,7 +12,7 @@ trait Anon_ClipArtType extends js.Object {
 object Anon_ClipArtType {
   @scala.inline
   def apply(clipArtType: Double, lineDrawingType: Double): Anon_ClipArtType = {
-    val __obj = js.Dynamic.literal(clipArtType = clipArtType, lineDrawingType = lineDrawingType)
+    val __obj = js.Dynamic.literal(clipArtType = clipArtType.asInstanceOf[js.Any], lineDrawingType = lineDrawingType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClipArtType]
   }

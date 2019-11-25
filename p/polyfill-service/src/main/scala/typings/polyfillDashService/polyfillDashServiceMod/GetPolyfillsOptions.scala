@@ -13,9 +13,9 @@ trait GetPolyfillsOptions extends js.Object {
 object GetPolyfillsOptions {
   @scala.inline
   def apply(uaString: String, excludes: js.Array[String] = null, features: Features = null): GetPolyfillsOptions = {
-    val __obj = js.Dynamic.literal(uaString = uaString)
-    if (excludes != null) __obj.updateDynamic("excludes")(excludes)
-    if (features != null) __obj.updateDynamic("features")(features)
+    val __obj = js.Dynamic.literal(uaString = uaString.asInstanceOf[js.Any])
+    if (excludes != null) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPolyfillsOptions]
   }
 }

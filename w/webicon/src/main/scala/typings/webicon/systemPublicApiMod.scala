@@ -21,23 +21,23 @@ object systemPublicApiMod extends js.Object {
     /**
       * An alias of the `defaultSource`-method.
       */
-    var default: /* import warning: ImportType.apply Failed type conversion: this['defaultSource'] */ js.Any = js.native
+    var default: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultSource'] */ js.Any = js.native
     /**
       * An alias of the `defaultSvgSetUrl`-method.
       */
-    var defaultSvgIconSetUrl: /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = js.native
+    var defaultSvgIconSetUrl: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = js.native
     /**
       * An alias of the `defaultSvgSetUrl`-method.
       */
-    var defaultSvgSetUrl: /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = js.native
+    var defaultSvgSetUrl: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = js.native
     /**
       * An alias of the `svgSet`-method.
       */
-    var iconSet: /* import warning: ImportType.apply Failed type conversion: this['svgSet'] */ js.Any = js.native
+    var iconSet: /* import warning: importer.ImportType#apply Failed type conversion: this['svgSet'] */ js.Any = js.native
     /**
       * An alias of the `alias`-method.
       */
-    var sourceAlias: /* import warning: ImportType.apply Failed type conversion: this['alias'] */ js.Any = js.native
+    var sourceAlias: /* import warning: importer.ImportType#apply Failed type conversion: this['alias'] */ js.Any = js.native
     /**
       * Adds a link to the `alias` icon-set.
       *

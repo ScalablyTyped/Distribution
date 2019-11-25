@@ -23,7 +23,7 @@ object ForceNBody {
     strength: Double | SignalRef = null,
     theta: Double | SignalRef = null
   ): ForceNBody = {
-    val __obj = js.Dynamic.literal(force = force)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
     if (distanceMax != null) __obj.updateDynamic("distanceMax")(distanceMax.asInstanceOf[js.Any])
     if (distanceMin != null) __obj.updateDynamic("distanceMin")(distanceMin.asInstanceOf[js.Any])
     if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])

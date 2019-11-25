@@ -21,10 +21,10 @@ object Anon_Connection {
     `x-forwarded-for`: js.UndefOr[Boolean] = js.undefined
   ): Anon_Connection = {
     val __obj = js.Dynamic.literal()
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
-    if (!js.isUndefined(`x-forwarded-for`)) __obj.updateDynamic("x-forwarded-for")(`x-forwarded-for`)
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (!js.isUndefined(`x-forwarded-for`)) __obj.updateDynamic("x-forwarded-for")(`x-forwarded-for`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Connection]
   }
 }

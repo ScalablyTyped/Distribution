@@ -28,10 +28,10 @@ object CellSelectionEventArgs {
     rowheader: js.Any = null
   ): CellSelectionEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (JSONRecords != null) __obj.updateDynamic("JSONRecords")(JSONRecords)
-    if (columnheader != null) __obj.updateDynamic("columnheader")(columnheader)
-    if (measureCount != null) __obj.updateDynamic("measureCount")(measureCount)
-    if (rowheader != null) __obj.updateDynamic("rowheader")(rowheader)
+    if (JSONRecords != null) __obj.updateDynamic("JSONRecords")(JSONRecords.asInstanceOf[js.Any])
+    if (columnheader != null) __obj.updateDynamic("columnheader")(columnheader.asInstanceOf[js.Any])
+    if (measureCount != null) __obj.updateDynamic("measureCount")(measureCount.asInstanceOf[js.Any])
+    if (rowheader != null) __obj.updateDynamic("rowheader")(rowheader.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellSelectionEventArgs]
   }
 }

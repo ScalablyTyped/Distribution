@@ -13,8 +13,8 @@ object Anon_Default {
   @scala.inline
   def apply(_default: String = null, quickling: String = null): Anon_Default = {
     val __obj = js.Dynamic.literal()
-    if (_default != null) __obj.updateDynamic("_default")(_default)
-    if (quickling != null) __obj.updateDynamic("quickling")(quickling)
+    if (_default != null) __obj.updateDynamic("_default")(_default.asInstanceOf[js.Any])
+    if (quickling != null) __obj.updateDynamic("quickling")(quickling.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Default]
   }
 }

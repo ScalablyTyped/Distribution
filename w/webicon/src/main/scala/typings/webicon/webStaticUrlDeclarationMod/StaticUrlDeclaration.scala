@@ -14,8 +14,8 @@ object StaticUrlDeclaration {
   @scala.inline
   def apply(params: js.Any = null, url: String = null): StaticUrlDeclaration = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticUrlDeclaration]
   }
 }

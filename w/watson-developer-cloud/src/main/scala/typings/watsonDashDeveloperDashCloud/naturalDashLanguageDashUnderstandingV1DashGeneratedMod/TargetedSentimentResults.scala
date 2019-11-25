@@ -17,7 +17,7 @@ object TargetedSentimentResults {
   def apply(score: Int | Double = null, text: String = null): TargetedSentimentResults = {
     val __obj = js.Dynamic.literal()
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetedSentimentResults]
   }
 }

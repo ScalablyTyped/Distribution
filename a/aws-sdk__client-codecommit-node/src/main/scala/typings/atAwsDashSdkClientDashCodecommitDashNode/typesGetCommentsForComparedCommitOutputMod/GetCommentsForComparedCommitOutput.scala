@@ -30,9 +30,9 @@ object GetCommentsForComparedCommitOutput {
     commentsForComparedCommitData: js.Array[_UnmarshalledCommentsForComparedCommit] = null,
     nextToken: String = null
   ): GetCommentsForComparedCommitOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (commentsForComparedCommitData != null) __obj.updateDynamic("commentsForComparedCommitData")(commentsForComparedCommitData)
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (commentsForComparedCommitData != null) __obj.updateDynamic("commentsForComparedCommitData")(commentsForComparedCommitData.asInstanceOf[js.Any])
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommentsForComparedCommitOutput]
   }
 }

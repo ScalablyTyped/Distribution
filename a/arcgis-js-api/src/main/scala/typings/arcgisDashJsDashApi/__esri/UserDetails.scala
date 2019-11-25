@@ -107,7 +107,7 @@ object UserDetails {
     userQueries: js.Array[JobQueryContainer],
     zipCode: String
   ): UserDetails = {
-    val __obj = js.Dynamic.literal(address = address, constructor = constructor, email = email, faxNumber = faxNumber, firstName = firstName, fullName = fullName, groups = groups, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), lastName = lastName, phoneNumber = phoneNumber, privileges = privileges, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), roomNumber = roomNumber, userName = userName, userQueries = userQueries, zipCode = zipCode)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], faxNumber = faxNumber.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), lastName = lastName.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any], privileges = privileges.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), roomNumber = roomNumber.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any], userQueries = userQueries.asInstanceOf[js.Any], zipCode = zipCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserDetails]
   }

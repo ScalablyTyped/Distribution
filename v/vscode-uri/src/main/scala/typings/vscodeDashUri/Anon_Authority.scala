@@ -21,11 +21,11 @@ object Anon_Authority {
     path: String = null,
     query: String = null
   ): Anon_Authority = {
-    val __obj = js.Dynamic.literal(scheme = scheme)
-    if (authority != null) __obj.updateDynamic("authority")(authority)
-    if (fragment != null) __obj.updateDynamic("fragment")(fragment)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (query != null) __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
+    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
+    if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Authority]
   }
 }

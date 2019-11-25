@@ -13,7 +13,7 @@ trait ReposRemoveProtectedBranchRestrictionsParams extends js.Object {
 object ReposRemoveProtectedBranchRestrictionsParams {
   @scala.inline
   def apply(branch: String, owner: String, repo: String): ReposRemoveProtectedBranchRestrictionsParams = {
-    val __obj = js.Dynamic.literal(branch = branch, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposRemoveProtectedBranchRestrictionsParams]
   }

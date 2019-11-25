@@ -27,7 +27,7 @@ object ContextOptions {
     minSize: Int | Double = null
   ): ContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextOptions]

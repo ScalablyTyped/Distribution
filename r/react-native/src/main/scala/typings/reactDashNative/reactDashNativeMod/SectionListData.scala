@@ -21,10 +21,10 @@ object SectionListData {
     keyExtractor: (ItemT, /* index */ Double) => String = null,
     renderItem: /* info */ SectionListRenderItemInfo[ItemT] => ReactElement | Null = null
   ): SectionListData[ItemT] = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (ItemSeparatorComponent != null) __obj.updateDynamic("ItemSeparatorComponent")(ItemSeparatorComponent.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2(keyExtractor))
     if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
     __obj.asInstanceOf[SectionListData[ItemT]]

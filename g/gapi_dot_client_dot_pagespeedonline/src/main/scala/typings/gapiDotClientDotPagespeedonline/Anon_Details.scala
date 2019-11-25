@@ -16,8 +16,8 @@ object Anon_Details {
   @scala.inline
   def apply(details: js.Array[PagespeedApiFormatStringV2] = null, result: PagespeedApiFormatStringV2 = null): Anon_Details = {
     val __obj = js.Dynamic.literal()
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Details]
   }
 }

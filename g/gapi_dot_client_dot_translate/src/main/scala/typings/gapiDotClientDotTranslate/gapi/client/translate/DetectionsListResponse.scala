@@ -13,7 +13,7 @@ object DetectionsListResponse {
   @scala.inline
   def apply(detections: js.Array[_] = null): DetectionsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (detections != null) __obj.updateDynamic("detections")(detections)
+    if (detections != null) __obj.updateDynamic("detections")(detections.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectionsListResponse]
   }
 }

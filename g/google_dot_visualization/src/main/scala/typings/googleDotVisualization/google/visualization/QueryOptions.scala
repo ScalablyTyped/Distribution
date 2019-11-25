@@ -13,8 +13,8 @@ object QueryOptions {
   @scala.inline
   def apply(makeRequestParams: js.Object = null, sendMethod: String = null): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (makeRequestParams != null) __obj.updateDynamic("makeRequestParams")(makeRequestParams)
-    if (sendMethod != null) __obj.updateDynamic("sendMethod")(sendMethod)
+    if (makeRequestParams != null) __obj.updateDynamic("makeRequestParams")(makeRequestParams.asInstanceOf[js.Any])
+    if (sendMethod != null) __obj.updateDynamic("sendMethod")(sendMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

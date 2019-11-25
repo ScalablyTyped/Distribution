@@ -30,9 +30,9 @@ object ListGlobalTablesOutput {
     GlobalTables: js.Array[_UnmarshalledGlobalTable] = null,
     LastEvaluatedGlobalTableName: String = null
   ): ListGlobalTablesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (GlobalTables != null) __obj.updateDynamic("GlobalTables")(GlobalTables)
-    if (LastEvaluatedGlobalTableName != null) __obj.updateDynamic("LastEvaluatedGlobalTableName")(LastEvaluatedGlobalTableName)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (GlobalTables != null) __obj.updateDynamic("GlobalTables")(GlobalTables.asInstanceOf[js.Any])
+    if (LastEvaluatedGlobalTableName != null) __obj.updateDynamic("LastEvaluatedGlobalTableName")(LastEvaluatedGlobalTableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGlobalTablesOutput]
   }
 }

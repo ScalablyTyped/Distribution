@@ -13,8 +13,8 @@ object ListBoxToolbar {
   @scala.inline
   def apply(position: String = null, tools: js.Any = null): ListBoxToolbar = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (tools != null) __obj.updateDynamic("tools")(tools)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxToolbar]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "proxy-from-env"
-version := "1.0-dt-20190605Z-514124"
+version := "1.0-dt-20190605Z-0d2389"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

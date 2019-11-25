@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait CardinalDirection extends js.Object
 
+object CardinalDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def e: typings.jqueryDashJcrop.jqueryDashJcropStrings.e = this.cast("e")
+  @scala.inline
+  def n: typings.jqueryDashJcrop.jqueryDashJcropStrings.n = this.cast("n")
+  @scala.inline
+  def s: typings.jqueryDashJcrop.jqueryDashJcropStrings.s = this.cast("s")
+  @scala.inline
+  def w: typings.jqueryDashJcrop.jqueryDashJcropStrings.w = this.cast("w")
+}
+

@@ -28,10 +28,10 @@ object GoogleCloudMlV1__HyperparameterOutput {
     trialId: String = null
   ): GoogleCloudMlV1__HyperparameterOutput = {
     val __obj = js.Dynamic.literal()
-    if (allMetrics != null) __obj.updateDynamic("allMetrics")(allMetrics)
-    if (finalMetric != null) __obj.updateDynamic("finalMetric")(finalMetric)
-    if (hyperparameters != null) __obj.updateDynamic("hyperparameters")(hyperparameters)
-    if (trialId != null) __obj.updateDynamic("trialId")(trialId)
+    if (allMetrics != null) __obj.updateDynamic("allMetrics")(allMetrics.asInstanceOf[js.Any])
+    if (finalMetric != null) __obj.updateDynamic("finalMetric")(finalMetric.asInstanceOf[js.Any])
+    if (hyperparameters != null) __obj.updateDynamic("hyperparameters")(hyperparameters.asInstanceOf[js.Any])
+    if (trialId != null) __obj.updateDynamic("trialId")(trialId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__HyperparameterOutput]
   }
 }

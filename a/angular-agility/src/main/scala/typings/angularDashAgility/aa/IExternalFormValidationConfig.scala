@@ -21,10 +21,10 @@ object IExternalFormValidationConfig {
     resolve: js.Any = null,
     resolveFn: /* modelValue */ String => String = null
   ): IExternalFormValidationConfig = {
-    val __obj = js.Dynamic.literal(validations = validations)
-    if (globals != null) __obj.updateDynamic("globals")(globals)
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(validations = validations.asInstanceOf[js.Any])
+    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
     if (resolveFn != null) __obj.updateDynamic("resolveFn")(js.Any.fromFunction1(resolveFn))
     __obj.asInstanceOf[IExternalFormValidationConfig]
   }

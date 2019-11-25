@@ -90,20 +90,20 @@ object VictoryCursorContainerProps {
     width: Int | Double = null
   ): VictoryCursorContainerProps = {
     val __obj = js.Dynamic.literal()
-    if (cursorComponent != null) __obj.updateDynamic("cursorComponent")(cursorComponent)
+    if (cursorComponent != null) __obj.updateDynamic("cursorComponent")(cursorComponent.asInstanceOf[js.Any])
     if (cursorDimension != null) __obj.updateDynamic("cursorDimension")(cursorDimension.asInstanceOf[js.Any])
     if (cursorLabel != null) __obj.updateDynamic("cursorLabel")(js.Any.fromFunction1(cursorLabel))
-    if (cursorLabelComponent != null) __obj.updateDynamic("cursorLabelComponent")(cursorLabelComponent)
+    if (cursorLabelComponent != null) __obj.updateDynamic("cursorLabelComponent")(cursorLabelComponent.asInstanceOf[js.Any])
     if (cursorLabelOffset != null) __obj.updateDynamic("cursorLabelOffset")(cursorLabelOffset.asInstanceOf[js.Any])
     if (defaultCursorValue != null) __obj.updateDynamic("defaultCursorValue")(defaultCursorValue.asInstanceOf[js.Any])
-    if (desc != null) __obj.updateDynamic("desc")(desc)
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (onCursorChange != null) __obj.updateDynamic("onCursorChange")(js.Any.fromFunction2(onCursorChange))
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryCursorContainerProps]
   }

@@ -33,12 +33,12 @@ object GooglePrivacyDlpV2beta1Location {
     tableLocation: GooglePrivacyDlpV2beta1TableLocation = null
   ): GooglePrivacyDlpV2beta1Location = {
     val __obj = js.Dynamic.literal()
-    if (byteRange != null) __obj.updateDynamic("byteRange")(byteRange)
-    if (codepointRange != null) __obj.updateDynamic("codepointRange")(codepointRange)
-    if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId)
-    if (imageBoxes != null) __obj.updateDynamic("imageBoxes")(imageBoxes)
-    if (recordKey != null) __obj.updateDynamic("recordKey")(recordKey)
-    if (tableLocation != null) __obj.updateDynamic("tableLocation")(tableLocation)
+    if (byteRange != null) __obj.updateDynamic("byteRange")(byteRange.asInstanceOf[js.Any])
+    if (codepointRange != null) __obj.updateDynamic("codepointRange")(codepointRange.asInstanceOf[js.Any])
+    if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId.asInstanceOf[js.Any])
+    if (imageBoxes != null) __obj.updateDynamic("imageBoxes")(imageBoxes.asInstanceOf[js.Any])
+    if (recordKey != null) __obj.updateDynamic("recordKey")(recordKey.asInstanceOf[js.Any])
+    if (tableLocation != null) __obj.updateDynamic("tableLocation")(tableLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Location]
   }
 }

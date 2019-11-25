@@ -16,8 +16,8 @@ object Anon_RejectUnauthorizedRequestCert {
     requestCert: js.UndefOr[Boolean] = js.undefined
   ): Anon_RejectUnauthorizedRequestCert = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
-    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RejectUnauthorizedRequestCert]
   }
 }

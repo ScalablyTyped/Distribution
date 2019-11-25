@@ -22,11 +22,11 @@ object Options {
     raiseOnFirstError: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collectResults)) __obj.updateDynamic("collectResults")(collectResults)
+    if (!js.isUndefined(collectResults)) __obj.updateDynamic("collectResults")(collectResults.asInstanceOf[js.Any])
     if (concurrencyLevel != null) __obj.updateDynamic("concurrencyLevel")(concurrencyLevel.asInstanceOf[js.Any])
-    if (executionProfile != null) __obj.updateDynamic("executionProfile")(executionProfile)
+    if (executionProfile != null) __obj.updateDynamic("executionProfile")(executionProfile.asInstanceOf[js.Any])
     if (maxErrors != null) __obj.updateDynamic("maxErrors")(maxErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(raiseOnFirstError)) __obj.updateDynamic("raiseOnFirstError")(raiseOnFirstError)
+    if (!js.isUndefined(raiseOnFirstError)) __obj.updateDynamic("raiseOnFirstError")(raiseOnFirstError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -14,8 +14,8 @@ trait TypeofBusyIndicator extends js.Object {
     * @param oListener Object on which to call the given function.
     * @returns <code>this</code> to allow method chaining
     */
-  def attachClose(fnFunction: js.Any): /* import warning: ImportType.apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
-  def attachClose(fnFunction: js.Any, oListener: js.Any): /* import warning: ImportType.apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
+  def attachClose(fnFunction: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
+  def attachClose(fnFunction: js.Any, oListener: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
   /**
     * Registers a handler for the "open" event.
     * @param fnFunction The function to call, when the event occurs. This           function will be
@@ -23,22 +23,22 @@ trait TypeofBusyIndicator extends js.Object {
     * @param oListener Object on which to call the given function.
     * @returns <code>this</code> to allow method chaining
     */
-  def attachOpen(fnFunction: js.Any): /* import warning: ImportType.apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
-  def attachOpen(fnFunction: js.Any, oListener: js.Any): /* import warning: ImportType.apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
+  def attachOpen(fnFunction: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
+  def attachOpen(fnFunction: js.Any, oListener: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
   /**
     * Unregisters a handler for the "close" event
     * @param fnFunction The callback function to unregister
     * @param oListener Object on which the given function had to be called.
     * @returns <code>this</code> to allow method chaining
     */
-  def detachClose(fnFunction: js.Any, oListener: js.Any): /* import warning: ImportType.apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
+  def detachClose(fnFunction: js.Any, oListener: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
   /**
     * Unregisters a handler for the "open" event
     * @param fnFunction The callback function to unregister
     * @param oListener Object on which the given function had to be called.
     * @returns <code>this</code> to allow method chaining
     */
-  def detachOpen(fnFunction: js.Any, oListener: js.Any): /* import warning: ImportType.apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
+  def detachOpen(fnFunction: js.Any, oListener: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof sap.ui.core.BusyIndicator */ js.Any = js.native
   /**
     * Removes the BusyIndicator from the screen
     */

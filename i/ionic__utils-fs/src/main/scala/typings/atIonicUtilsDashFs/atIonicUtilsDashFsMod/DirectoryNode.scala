@@ -15,9 +15,9 @@ trait DirectoryNode extends FileNode {
 object DirectoryNode {
   @scala.inline
   def apply(children: js.Array[FileNode], path: String, `type`: directory, parent: FileNode = null): DirectoryNode = {
-    val __obj = js.Dynamic.literal(children = children, path = path)
-    __obj.updateDynamic("type")(`type`)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryNode]
   }
 }

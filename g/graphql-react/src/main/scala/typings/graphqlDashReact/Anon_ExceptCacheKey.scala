@@ -12,7 +12,7 @@ trait Anon_ExceptCacheKey extends js.Object {
 object Anon_ExceptCacheKey {
   @scala.inline
   def apply(exceptCacheKey: GraphQLCacheKey): Anon_ExceptCacheKey = {
-    val __obj = js.Dynamic.literal(exceptCacheKey = exceptCacheKey)
+    val __obj = js.Dynamic.literal(exceptCacheKey = exceptCacheKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExceptCacheKey]
   }

@@ -13,8 +13,8 @@ object PluginPeerDepsExternalOptions {
   @scala.inline
   def apply(includeDependencies: js.UndefOr[Boolean] = js.undefined, packageJsonPath: String = null): PluginPeerDepsExternalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeDependencies)) __obj.updateDynamic("includeDependencies")(includeDependencies)
-    if (packageJsonPath != null) __obj.updateDynamic("packageJsonPath")(packageJsonPath)
+    if (!js.isUndefined(includeDependencies)) __obj.updateDynamic("includeDependencies")(includeDependencies.asInstanceOf[js.Any])
+    if (packageJsonPath != null) __obj.updateDynamic("packageJsonPath")(packageJsonPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginPeerDepsExternalOptions]
   }
 }

@@ -19,9 +19,9 @@ object IUpdateEntityTypeRequest {
   @scala.inline
   def apply(entityType: IEntityType = null, languageCode: String = null, updateMask: IFieldMask = null): IUpdateEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (entityType != null) __obj.updateDynamic("entityType")(entityType)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateEntityTypeRequest]
   }
 }

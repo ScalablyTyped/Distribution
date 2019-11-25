@@ -24,19 +24,13 @@ object SafeAnchorProps {
     AllHTMLAttributes: AllHTMLAttributes[SafeAnchor] = null,
     ClassAttributes: ClassAttributes[SafeAnchor] = null,
     componentClass: ReactType[_] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
-    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    role: String = null
+    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null
   ): SafeAnchorProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (href != null) __obj.updateDynamic("href")(href)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (role != null) __obj.updateDynamic("role")(role)
     __obj.asInstanceOf[SafeAnchorProps]
   }
 }

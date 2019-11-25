@@ -32,14 +32,14 @@ object Anon_Comparator {
     url: String = null
   ): Anon_Comparator = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
     if (fetchSize != null) __obj.updateDynamic("fetchSize")(fetchSize.asInstanceOf[js.Any])
     if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction2(initialize))
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (modelLimit != null) __obj.updateDynamic("modelLimit")(modelLimit.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Comparator]
   }
 }

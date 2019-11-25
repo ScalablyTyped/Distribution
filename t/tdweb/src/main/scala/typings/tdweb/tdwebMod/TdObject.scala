@@ -27,9 +27,9 @@ object TdObject {
     ] = null
   ): TdObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("@type")(`@type`)
-    if (`@extra` != null) __obj.updateDynamic("@extra")(`@extra`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("@type")(`@type`.asInstanceOf[js.Any])
+    if (`@extra` != null) __obj.updateDynamic("@extra")(`@extra`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[TdObject]
   }
 }

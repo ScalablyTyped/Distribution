@@ -32,10 +32,10 @@ object ToolComponentReference {
     properties: PropertyBag = null
   ): ToolComponentReference = {
     val __obj = js.Dynamic.literal()
-    if (guid != null) __obj.updateDynamic("guid")(guid)
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolComponentReference]
   }
 }

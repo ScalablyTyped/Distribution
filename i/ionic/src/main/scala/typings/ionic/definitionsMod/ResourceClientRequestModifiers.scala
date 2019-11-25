@@ -12,7 +12,7 @@ object ResourceClientRequestModifiers {
   @scala.inline
   def apply(fields: js.Array[String] = null): ResourceClientRequestModifiers = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceClientRequestModifiers]
   }
 }

@@ -51,7 +51,7 @@ object RampTitle {
     ratioPercent: Boolean,
     ratioPercentTotal: Boolean
   ): RampTitle = {
-    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), normField = normField, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), ratio = ratio, ratioPercent = ratioPercent, ratioPercentTotal = ratioPercentTotal)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), normField = normField.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), ratio = ratio.asInstanceOf[js.Any], ratioPercent = ratioPercent.asInstanceOf[js.Any], ratioPercentTotal = ratioPercentTotal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RampTitle]
   }

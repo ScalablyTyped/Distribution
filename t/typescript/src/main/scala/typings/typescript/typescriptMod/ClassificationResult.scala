@@ -12,7 +12,7 @@ trait ClassificationResult extends js.Object {
 object ClassificationResult {
   @scala.inline
   def apply(entries: js.Array[ClassificationInfo], finalLexState: EndOfLineState): ClassificationResult = {
-    val __obj = js.Dynamic.literal(entries = entries, finalLexState = finalLexState)
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], finalLexState = finalLexState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClassificationResult]
   }

@@ -20,10 +20,10 @@ object Buildings {
     nextPageToken: String = null
   ): Buildings = {
     val __obj = js.Dynamic.literal()
-    if (buildings != null) __obj.updateDynamic("buildings")(buildings)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (buildings != null) __obj.updateDynamic("buildings")(buildings.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buildings]
   }
 }

@@ -22,10 +22,10 @@ object LiveChatSuperStickerDetails {
     tier: Int | Double = null
   ): LiveChatSuperStickerDetails = {
     val __obj = js.Dynamic.literal()
-    if (amountDisplayString != null) __obj.updateDynamic("amountDisplayString")(amountDisplayString)
-    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (superStickerMetadata != null) __obj.updateDynamic("superStickerMetadata")(superStickerMetadata)
+    if (amountDisplayString != null) __obj.updateDynamic("amountDisplayString")(amountDisplayString.asInstanceOf[js.Any])
+    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (superStickerMetadata != null) __obj.updateDynamic("superStickerMetadata")(superStickerMetadata.asInstanceOf[js.Any])
     if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatSuperStickerDetails]
   }

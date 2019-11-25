@@ -38,9 +38,9 @@ object Policy {
     version: Int | Double = null
   ): Policy = {
     val __obj = js.Dynamic.literal()
-    if (auditConfigs != null) __obj.updateDynamic("auditConfigs")(auditConfigs)
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (auditConfigs != null) __obj.updateDynamic("auditConfigs")(auditConfigs.asInstanceOf[js.Any])
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policy]
   }

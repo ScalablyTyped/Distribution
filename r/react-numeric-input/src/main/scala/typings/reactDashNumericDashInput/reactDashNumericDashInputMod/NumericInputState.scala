@@ -30,13 +30,13 @@ object NumericInputState {
     value: Int | Double = null
   ): NumericInputState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(btnDownActive)) __obj.updateDynamic("btnDownActive")(btnDownActive)
-    if (!js.isUndefined(btnDownHover)) __obj.updateDynamic("btnDownHover")(btnDownHover)
-    if (!js.isUndefined(btnUpActive)) __obj.updateDynamic("btnUpActive")(btnUpActive)
-    if (!js.isUndefined(btnUpHover)) __obj.updateDynamic("btnUpHover")(btnUpHover)
+    if (!js.isUndefined(btnDownActive)) __obj.updateDynamic("btnDownActive")(btnDownActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(btnDownHover)) __obj.updateDynamic("btnDownHover")(btnDownHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(btnUpActive)) __obj.updateDynamic("btnUpActive")(btnUpActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(btnUpHover)) __obj.updateDynamic("btnUpHover")(btnUpHover.asInstanceOf[js.Any])
     if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
     if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumericInputState]
   }

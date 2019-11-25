@@ -13,7 +13,7 @@ trait Anon_FilesOriginalEvent extends js.Object {
 object Anon_FilesOriginalEvent {
   @scala.inline
   def apply(files: js.Any, originalEvent: Event): Anon_FilesOriginalEvent = {
-    val __obj = js.Dynamic.literal(files = files, originalEvent = originalEvent)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FilesOriginalEvent]
   }

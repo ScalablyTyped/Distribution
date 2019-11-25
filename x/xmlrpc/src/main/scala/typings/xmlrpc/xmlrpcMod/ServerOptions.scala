@@ -14,8 +14,8 @@ object ServerOptions {
   @scala.inline
   def apply(host: String = null, path: String = null, port: Int | Double = null): ServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }

@@ -30,9 +30,9 @@ object FeatureViewModelFormattedAttributes {
     content: js.Any = null,
     global: js.Any = null
   ): FeatureViewModelFormattedAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (global != null) __obj.updateDynamic("global")(global)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureViewModelFormattedAttributes]
   }
 }

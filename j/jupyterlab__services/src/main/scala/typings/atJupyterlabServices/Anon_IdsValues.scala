@@ -13,7 +13,7 @@ trait Anon_IdsValues extends js.Object {
 object Anon_IdsValues {
   @scala.inline
   def apply(ids: js.Array[String], values: js.Array[IWorkspace]): Anon_IdsValues = {
-    val __obj = js.Dynamic.literal(ids = ids, values = values)
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdsValues]
   }

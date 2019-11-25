@@ -29,8 +29,8 @@ object Anon_EntryPointEntryPointParams {
     props: TRuntimeProps,
     environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions] = null
   ): Anon_EntryPointEntryPointParams[TPreloadedQueries, TRuntimeProps, TExtraProps, TPreloadedEntryPoints, TEntryPointParams] = {
-    val __obj = js.Dynamic.literal(entryPoint = entryPoint, entryPointParams = entryPointParams.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-    if (environmentProvider != null) __obj.updateDynamic("environmentProvider")(environmentProvider)
+    val __obj = js.Dynamic.literal(entryPoint = entryPoint.asInstanceOf[js.Any], entryPointParams = entryPointParams.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    if (environmentProvider != null) __obj.updateDynamic("environmentProvider")(environmentProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EntryPointEntryPointParams[TPreloadedQueries, TRuntimeProps, TExtraProps, TPreloadedEntryPoints, TEntryPointParams]]
   }
 }

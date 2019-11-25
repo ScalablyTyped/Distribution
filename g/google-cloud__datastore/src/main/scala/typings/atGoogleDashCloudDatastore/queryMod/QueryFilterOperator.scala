@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait QueryFilterOperator extends js.Object
 
+object QueryFilterOperator {
+  @scala.inline
+  def `<`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `=`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`=` = this.cast("=")
+  @scala.inline
+  def `>`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.atGoogleDashCloudDatastore.atGoogleDashCloudDatastoreStrings.`>=` = this.cast(">=")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

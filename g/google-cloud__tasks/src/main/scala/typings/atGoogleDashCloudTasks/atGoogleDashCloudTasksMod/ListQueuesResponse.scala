@@ -12,8 +12,8 @@ trait ListQueuesResponse extends js.Object {
 object ListQueuesResponse {
   @scala.inline
   def apply(queues: js.Array[Queue], nextPageToken: String = null): ListQueuesResponse = {
-    val __obj = js.Dynamic.literal(queues = queues)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    val __obj = js.Dynamic.literal(queues = queues.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueuesResponse]
   }
 }

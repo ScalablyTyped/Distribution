@@ -17,9 +17,9 @@ trait ShareCountComponentProps extends js.Object {
 object ShareCountComponentProps {
   @scala.inline
   def apply(url: String, children: /* shareCount */ Double => ReactNode = null, className: String = null): ShareCountComponentProps = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareCountComponentProps]
   }
 }

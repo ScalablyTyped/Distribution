@@ -14,7 +14,7 @@ trait TimelineGroupBase extends js.Object {
 object TimelineGroupBase {
   @scala.inline
   def apply(id: Double, rightTitle: ReactNode = null, title: ReactNode = null): TimelineGroupBase = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (rightTitle != null) __obj.updateDynamic("rightTitle")(rightTitle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineGroupBase]

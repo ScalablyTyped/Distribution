@@ -12,7 +12,7 @@ trait S3EventRecordGlacierRestoreEventData extends js.Object {
 object S3EventRecordGlacierRestoreEventData {
   @scala.inline
   def apply(lifecycleRestorationExpiryTime: String, lifecycleRestoreStorageClass: String): S3EventRecordGlacierRestoreEventData = {
-    val __obj = js.Dynamic.literal(lifecycleRestorationExpiryTime = lifecycleRestorationExpiryTime, lifecycleRestoreStorageClass = lifecycleRestoreStorageClass)
+    val __obj = js.Dynamic.literal(lifecycleRestorationExpiryTime = lifecycleRestorationExpiryTime.asInstanceOf[js.Any], lifecycleRestoreStorageClass = lifecycleRestoreStorageClass.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[S3EventRecordGlacierRestoreEventData]
   }

@@ -6,8 +6,8 @@ import typings.gapiDotCalendar.Anon_DateDateTimeTimeZone
 import typings.gapiDotCalendar.Anon_DisplayHeight
 import typings.gapiDotCalendar.Anon_DisplayName
 import typings.gapiDotCalendar.Anon_FileId
+import typings.gapiDotCalendar.Anon_Key
 import typings.gapiDotCalendar.Anon_OverridesUseDefault
-import typings.gapiDotCalendar.Anon_Private
 import typings.gapiDotCalendar.Anon_Title
 import typings.gapiDotCalendar.gapiDotCalendarStrings.`calendar#event`
 import scala.scalajs.js
@@ -35,7 +35,7 @@ class Event () extends js.Object {
   var endTimeUnspecified: js.UndefOr[Boolean] = js.native
   var etag: typings.gapiDotCalendar.gapi.client.calendar.etag = js.native
   // Extended properties of the event.
-  var extendedProperties: js.UndefOr[Anon_Private] = js.native
+  var extendedProperties: js.UndefOr[Anon_Key] = js.native
   // A gadget that extends this event.
   var gadget: js.UndefOr[Anon_DisplayHeight] = js.native
   var guestsCanInviteOthers: js.UndefOr[Boolean] = js.native

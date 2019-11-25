@@ -40,8 +40,8 @@ object AlgorithmicColorRampProperties {
   def apply(algorithm: `cie-lab` | `lab-lch` | hsv = null, fromColor: Color = null, toColor: Color = null): AlgorithmicColorRampProperties = {
     val __obj = js.Dynamic.literal()
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (fromColor != null) __obj.updateDynamic("fromColor")(fromColor)
-    if (toColor != null) __obj.updateDynamic("toColor")(toColor)
+    if (fromColor != null) __obj.updateDynamic("fromColor")(fromColor.asInstanceOf[js.Any])
+    if (toColor != null) __obj.updateDynamic("toColor")(toColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgorithmicColorRampProperties]
   }
 }

@@ -31,16 +31,16 @@ object Options {
     rotation: Int | Double = null,
     stroke: typings.ol.styleStrokeMod.default = null
   ): Options = {
-    val __obj = js.Dynamic.literal(points = points)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (atlasManager != null) __obj.updateDynamic("atlasManager")(atlasManager)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (atlasManager != null) __obj.updateDynamic("atlasManager")(atlasManager.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (radius1 != null) __obj.updateDynamic("radius1")(radius1.asInstanceOf[js.Any])
     if (radius2 != null) __obj.updateDynamic("radius2")(radius2.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateWithView)) __obj.updateDynamic("rotateWithView")(rotateWithView)
+    if (!js.isUndefined(rotateWithView)) __obj.updateDynamic("rotateWithView")(rotateWithView.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

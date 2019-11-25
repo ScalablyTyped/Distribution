@@ -14,7 +14,7 @@ trait Anon_Grads[T /* <: Tensor[Rank] */] extends js.Object {
 object Anon_Grads {
   @scala.inline
   def apply[T /* <: Tensor[Rank] */](grads: js.Array[Tensor[Rank]], value: T): Anon_Grads[T] = {
-    val __obj = js.Dynamic.literal(grads = grads, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(grads = grads.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Grads[T]]
   }

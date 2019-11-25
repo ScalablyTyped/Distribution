@@ -53,7 +53,7 @@ object GetFileOutput {
     filePath: String,
     fileSize: Double
   ): GetFileOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, blobId = blobId, commitId = commitId, fileContent = fileContent, fileMode = fileMode.asInstanceOf[js.Any], filePath = filePath, fileSize = fileSize)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], blobId = blobId.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], fileContent = fileContent.asInstanceOf[js.Any], fileMode = fileMode.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetFileOutput]
   }

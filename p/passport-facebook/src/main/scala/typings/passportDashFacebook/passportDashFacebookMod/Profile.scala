@@ -35,14 +35,14 @@ object Profile {
     profileUrl: String = null,
     username: String = null
   ): Profile = {
-    val __obj = js.Dynamic.literal(_json = _json, _raw = _raw, birthday = birthday, displayName = displayName, id = id, provider = provider)
-    if (ageRange != null) __obj.updateDynamic("ageRange")(ageRange)
-    if (emails != null) __obj.updateDynamic("emails")(emails)
-    if (gender != null) __obj.updateDynamic("gender")(gender)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (photos != null) __obj.updateDynamic("photos")(photos)
-    if (profileUrl != null) __obj.updateDynamic("profileUrl")(profileUrl)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], birthday = birthday.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    if (ageRange != null) __obj.updateDynamic("ageRange")(ageRange.asInstanceOf[js.Any])
+    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
+    if (profileUrl != null) __obj.updateDynamic("profileUrl")(profileUrl.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

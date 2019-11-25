@@ -23,10 +23,10 @@ object Settings {
   ): Settings = {
     val __obj = js.Dynamic.literal()
     if (cacheSizeBytes != null) __obj.updateDynamic("cacheSizeBytes")(cacheSizeBytes.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(persistence)) __obj.updateDynamic("persistence")(persistence)
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
-    if (!js.isUndefined(timestampsInSnapshots)) __obj.updateDynamic("timestampsInSnapshots")(timestampsInSnapshots)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistence)) __obj.updateDynamic("persistence")(persistence.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestampsInSnapshots)) __obj.updateDynamic("timestampsInSnapshots")(timestampsInSnapshots.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

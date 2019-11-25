@@ -29,8 +29,8 @@ object Option {
   ): Option = {
     val __obj = js.Dynamic.literal()
     if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream)
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

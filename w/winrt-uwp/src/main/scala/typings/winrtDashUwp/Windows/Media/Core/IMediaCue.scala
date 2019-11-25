@@ -17,7 +17,7 @@ trait IMediaCue extends js.Object {
 object IMediaCue {
   @scala.inline
   def apply(duration: Double, id: String, startTime: Double): IMediaCue = {
-    val __obj = js.Dynamic.literal(duration = duration, id = id, startTime = startTime)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMediaCue]
   }

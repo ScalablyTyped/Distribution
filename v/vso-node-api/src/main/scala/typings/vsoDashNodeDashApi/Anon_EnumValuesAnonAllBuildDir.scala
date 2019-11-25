@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonAllBuildDir extends js.Object {
 object Anon_EnumValuesAnonAllBuildDir {
   @scala.inline
   def apply(enumValues: Anon_AllBuildDir): Anon_EnumValuesAnonAllBuildDir = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonAllBuildDir]
   }

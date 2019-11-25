@@ -13,9 +13,9 @@ trait JobPayloadInput extends js.Object {
 object JobPayloadInput {
   @scala.inline
   def apply(urn: String, compressedUrn: js.UndefOr[Boolean] = js.undefined, rootFilename: String = null): JobPayloadInput = {
-    val __obj = js.Dynamic.literal(urn = urn)
-    if (!js.isUndefined(compressedUrn)) __obj.updateDynamic("compressedUrn")(compressedUrn)
-    if (rootFilename != null) __obj.updateDynamic("rootFilename")(rootFilename)
+    val __obj = js.Dynamic.literal(urn = urn.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressedUrn)) __obj.updateDynamic("compressedUrn")(compressedUrn.asInstanceOf[js.Any])
+    if (rootFilename != null) __obj.updateDynamic("rootFilename")(rootFilename.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobPayloadInput]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_BlBrTl extends js.Object {
 object Anon_BlBrTl {
   @scala.inline
   def apply(bl: Anon_X, br: Anon_X, tl: Anon_X, tr: Anon_X): Anon_BlBrTl = {
-    val __obj = js.Dynamic.literal(bl = bl, br = br, tl = tl, tr = tr)
+    val __obj = js.Dynamic.literal(bl = bl.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BlBrTl]
   }

@@ -14,8 +14,8 @@ object Anon_Attributes {
   @scala.inline
   def apply(attributes: StringDictionary[String] = null, styles: StringDictionary[String] = null): Anon_Attributes = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attributes]
   }
 }

@@ -21,12 +21,12 @@ object DomainDnsTxtRecord {
     ttl: Int | Double = null
   ): DomainDnsTxtRecord = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (recordType != null) __obj.updateDynamic("recordType")(recordType)
-    if (supportedService != null) __obj.updateDynamic("supportedService")(supportedService)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (recordType != null) __obj.updateDynamic("recordType")(recordType.asInstanceOf[js.Any])
+    if (supportedService != null) __obj.updateDynamic("supportedService")(supportedService.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDnsTxtRecord]
   }

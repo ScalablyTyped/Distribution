@@ -3,7 +3,6 @@ package typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod
 import typings.vscodeDashLanguageserver.Thenable
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.ApplyWorkspaceEditParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.ApplyWorkspaceEditResponse
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +15,8 @@ trait _RemoteWorkspace extends Remote {
     * @return a thenable that resolves to the `ApplyWorkspaceEditResponse`.
     */
   def applyEdit(paramOrEdit: ApplyWorkspaceEditParams): Thenable[ApplyWorkspaceEditResponse] = js.native
-  def applyEdit(paramOrEdit: WorkspaceEdit): Thenable[ApplyWorkspaceEditResponse] = js.native
+  def applyEdit(
+    paramOrEdit: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit
+  ): Thenable[ApplyWorkspaceEditResponse] = js.native
 }
 

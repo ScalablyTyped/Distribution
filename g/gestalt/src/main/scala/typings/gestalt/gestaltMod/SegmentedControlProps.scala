@@ -23,7 +23,7 @@ object SegmentedControlProps {
     selectedItemIndex: Double,
     size: md | lg = null
   ): SegmentedControlProps = {
-    val __obj = js.Dynamic.literal(items = items, onChange = js.Any.fromFunction1(onChange), selectedItemIndex = selectedItemIndex)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), selectedItemIndex = selectedItemIndex.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentedControlProps]
   }

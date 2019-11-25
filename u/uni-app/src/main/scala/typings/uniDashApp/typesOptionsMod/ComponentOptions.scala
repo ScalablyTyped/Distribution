@@ -85,8 +85,8 @@ object ComponentOptions {
     route: String = null
   ): ComponentOptions[V] = {
     val __obj = js.Dynamic.literal()
-    if (globalData != null) __obj.updateDynamic("globalData")(globalData)
-    if (mpType != null) __obj.updateDynamic("mpType")(mpType)
+    if (globalData != null) __obj.updateDynamic("globalData")(globalData.asInstanceOf[js.Any])
+    if (mpType != null) __obj.updateDynamic("mpType")(mpType.asInstanceOf[js.Any])
     if (onBackPress != null) __obj.updateDynamic("onBackPress")(js.Any.fromFunction1(onBackPress))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
@@ -107,7 +107,7 @@ object ComponentOptions {
     if (onTabItemTap != null) __obj.updateDynamic("onTabItemTap")(js.Any.fromFunction1(onTabItemTap))
     if (onUniNViewMessage != null) __obj.updateDynamic("onUniNViewMessage")(js.Any.fromFunction1(onUniNViewMessage))
     if (onUnload != null) __obj.updateDynamic("onUnload")(js.Any.fromFunction0(onUnload))
-    if (route != null) __obj.updateDynamic("route")(route)
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions[V]]
   }
 }

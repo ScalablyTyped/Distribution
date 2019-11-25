@@ -23,7 +23,7 @@ object Domain {
     SpfVerified: Boolean,
     WeakDKIM: Boolean
   ): Domain = {
-    val __obj = js.Dynamic.literal(DKIMVerified = DKIMVerified, ID = ID, Name = Name, ReturnPathDomainVerified = ReturnPathDomainVerified, SpfVerified = SpfVerified, WeakDKIM = WeakDKIM)
+    val __obj = js.Dynamic.literal(DKIMVerified = DKIMVerified.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ReturnPathDomainVerified = ReturnPathDomainVerified.asInstanceOf[js.Any], SpfVerified = SpfVerified.asInstanceOf[js.Any], WeakDKIM = WeakDKIM.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Domain]
   }

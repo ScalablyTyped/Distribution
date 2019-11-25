@@ -15,7 +15,7 @@ trait Anon_Align extends js.Object {
 object Anon_Align {
   @scala.inline
   def apply(align: TabAlignment, leader: TabLeader, position: Double): Anon_Align = {
-    val __obj = js.Dynamic.literal(align = align, leader = leader, position = position)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], leader = leader.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Align]
   }

@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(excludedFields: js.Array[String] = null, processArguments: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (excludedFields != null) __obj.updateDynamic("excludedFields")(excludedFields)
-    if (!js.isUndefined(processArguments)) __obj.updateDynamic("processArguments")(processArguments)
+    if (excludedFields != null) __obj.updateDynamic("excludedFields")(excludedFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(processArguments)) __obj.updateDynamic("processArguments")(processArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

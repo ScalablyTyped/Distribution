@@ -26,7 +26,7 @@ trait OverviewRulerPosition extends js.Object {
 object OverviewRulerPosition {
   @scala.inline
   def apply(height: Double, right: Double, top: Double, width: Double): OverviewRulerPosition = {
-    val __obj = js.Dynamic.literal(height = height, right = right, top = top, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OverviewRulerPosition]
   }

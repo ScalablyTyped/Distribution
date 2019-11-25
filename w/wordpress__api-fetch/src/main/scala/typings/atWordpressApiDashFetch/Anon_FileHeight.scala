@@ -22,10 +22,10 @@ object Anon_FileHeight {
     image_meta: Anon_Aperture = null,
     width: Int | Double = null
   ): Anon_FileHeight = {
-    val __obj = js.Dynamic.literal(sizes = sizes)
-    if (file != null) __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(sizes = sizes.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (image_meta != null) __obj.updateDynamic("image_meta")(image_meta)
+    if (image_meta != null) __obj.updateDynamic("image_meta")(image_meta.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FileHeight]
   }

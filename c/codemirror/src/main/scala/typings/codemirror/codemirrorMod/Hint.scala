@@ -31,13 +31,13 @@ object Hint {
     render: (/* element */ HTMLLIElement, /* data */ Hints, /* cur */ Hint) => Unit = null,
     to: Position = null
   ): Hint = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (displayText != null) __obj.updateDynamic("displayText")(displayText)
-    if (from != null) __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (displayText != null) __obj.updateDynamic("displayText")(displayText.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(js.Any.fromFunction3(hint))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hint]
   }
 }

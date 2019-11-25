@@ -26,8 +26,8 @@ object _UnmarshalledValueWithServiceIds {
     ServiceIds: js.Array[_UnmarshalledServiceId] = null
   ): _UnmarshalledValueWithServiceIds = {
     val __obj = js.Dynamic.literal()
-    if (AnnotationValue != null) __obj.updateDynamic("AnnotationValue")(AnnotationValue)
-    if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds)
+    if (AnnotationValue != null) __obj.updateDynamic("AnnotationValue")(AnnotationValue.asInstanceOf[js.Any])
+    if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledValueWithServiceIds]
   }
 }

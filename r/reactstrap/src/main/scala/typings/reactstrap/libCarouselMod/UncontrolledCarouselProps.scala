@@ -39,8 +39,6 @@ object UncontrolledCarouselProps {
     ClassAttributes: ClassAttributes[HTMLElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     activeIndex: Int | Double = null,
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    controls: js.UndefOr[Boolean] = js.undefined,
     cssModule: CSSModule = null,
     indicators: js.UndefOr[Boolean] = js.undefined,
     interval: Double | String | Boolean = null,
@@ -53,24 +51,22 @@ object UncontrolledCarouselProps {
     ride: carousel = null,
     slide: js.UndefOr[Boolean] = js.undefined
   ): UncontrolledCarouselProps = {
-    val __obj = js.Dynamic.literal(items = items)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
-    if (!js.isUndefined(indicators)) __obj.updateDynamic("indicators")(indicators)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
+    if (!js.isUndefined(indicators)) __obj.updateDynamic("indicators")(indicators.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     if (mouseEnter != null) __obj.updateDynamic("mouseEnter")(js.Any.fromFunction0(mouseEnter))
     if (mouseExit != null) __obj.updateDynamic("mouseExit")(js.Any.fromFunction0(mouseExit))
     if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction0(next))
     if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
     if (previous != null) __obj.updateDynamic("previous")(js.Any.fromFunction0(previous))
-    if (ride != null) __obj.updateDynamic("ride")(ride)
-    if (!js.isUndefined(slide)) __obj.updateDynamic("slide")(slide)
+    if (ride != null) __obj.updateDynamic("ride")(ride.asInstanceOf[js.Any])
+    if (!js.isUndefined(slide)) __obj.updateDynamic("slide")(slide.asInstanceOf[js.Any])
     __obj.asInstanceOf[UncontrolledCarouselProps]
   }
 }

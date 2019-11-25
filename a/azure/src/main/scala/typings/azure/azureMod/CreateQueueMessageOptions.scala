@@ -19,7 +19,7 @@ object CreateQueueMessageOptions {
     visibilitytimeout: Int | Double = null
   ): CreateQueueMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)
+    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
     if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
     if (messagettl != null) __obj.updateDynamic("messagettl")(messagettl.asInstanceOf[js.Any])
     if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])

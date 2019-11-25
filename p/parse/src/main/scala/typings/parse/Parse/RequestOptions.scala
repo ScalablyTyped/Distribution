@@ -26,10 +26,10 @@ object RequestOptions {
     val __obj = js.Dynamic.literal()
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (installationId != null) __obj.updateDynamic("installationId")(installationId)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
-    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
-    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey)
+    if (installationId != null) __obj.updateDynamic("installationId")(installationId.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

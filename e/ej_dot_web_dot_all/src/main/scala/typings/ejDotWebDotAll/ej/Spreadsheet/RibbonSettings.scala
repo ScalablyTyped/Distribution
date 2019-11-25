@@ -14,7 +14,7 @@ object RibbonSettings {
   @scala.inline
   def apply(applicationTab: RibbonSettingsApplicationTab = null): RibbonSettings = {
     val __obj = js.Dynamic.literal()
-    if (applicationTab != null) __obj.updateDynamic("applicationTab")(applicationTab)
+    if (applicationTab != null) __obj.updateDynamic("applicationTab")(applicationTab.asInstanceOf[js.Any])
     __obj.asInstanceOf[RibbonSettings]
   }
 }

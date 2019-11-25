@@ -13,7 +13,7 @@ object WordArt {
   @scala.inline
   def apply(renderedText: String = null): WordArt = {
     val __obj = js.Dynamic.literal()
-    if (renderedText != null) __obj.updateDynamic("renderedText")(renderedText)
+    if (renderedText != null) __obj.updateDynamic("renderedText")(renderedText.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordArt]
   }
 }

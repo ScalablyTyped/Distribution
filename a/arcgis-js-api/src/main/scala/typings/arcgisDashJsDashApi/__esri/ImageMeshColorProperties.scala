@@ -39,8 +39,8 @@ object ImageMeshColorProperties {
   ): ImageMeshColorProperties = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageMeshColorProperties]
   }
 }

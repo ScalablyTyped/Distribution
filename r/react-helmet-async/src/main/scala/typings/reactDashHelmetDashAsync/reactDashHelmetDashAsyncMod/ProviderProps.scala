@@ -12,7 +12,7 @@ object ProviderProps {
   @scala.inline
   def apply(context: js.Object = null): ProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderProps]
   }
 }

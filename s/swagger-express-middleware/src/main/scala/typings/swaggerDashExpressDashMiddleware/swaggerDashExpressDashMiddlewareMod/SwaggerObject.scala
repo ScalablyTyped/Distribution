@@ -41,19 +41,19 @@ object SwaggerObject {
     securityDefinitions: SecurityDefinitionsObject = null,
     tags: js.Array[TagObject] = null
   ): SwaggerObject = {
-    val __obj = js.Dynamic.literal(info = info, paths = paths, swagger = swagger)
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
-    if (consumes != null) __obj.updateDynamic("consumes")(consumes)
-    if (definitions != null) __obj.updateDynamic("definitions")(definitions)
-    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (produces != null) __obj.updateDynamic("produces")(produces)
-    if (responses != null) __obj.updateDynamic("responses")(responses)
-    if (schemes != null) __obj.updateDynamic("schemes")(schemes)
-    if (security != null) __obj.updateDynamic("security")(security)
-    if (securityDefinitions != null) __obj.updateDynamic("securityDefinitions")(securityDefinitions)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], swagger = swagger.asInstanceOf[js.Any])
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (consumes != null) __obj.updateDynamic("consumes")(consumes.asInstanceOf[js.Any])
+    if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
+    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (produces != null) __obj.updateDynamic("produces")(produces.asInstanceOf[js.Any])
+    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
+    if (schemes != null) __obj.updateDynamic("schemes")(schemes.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (securityDefinitions != null) __obj.updateDynamic("securityDefinitions")(securityDefinitions.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerObject]
   }
 }

@@ -14,7 +14,7 @@ trait SuiteCreateModel extends js.Object {
 object SuiteCreateModel {
   @scala.inline
   def apply(name: String, queryString: String, requirementIds: js.Array[Double], suiteType: String): SuiteCreateModel = {
-    val __obj = js.Dynamic.literal(name = name, queryString = queryString, requirementIds = requirementIds, suiteType = suiteType)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any], requirementIds = requirementIds.asInstanceOf[js.Any], suiteType = suiteType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SuiteCreateModel]
   }

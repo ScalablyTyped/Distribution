@@ -24,9 +24,9 @@ trait IIdentifiedSingleEditOperation extends js.Object {
 object IIdentifiedSingleEditOperation {
   @scala.inline
   def apply(range: Range, forceMoveMarkers: js.UndefOr[Boolean] = js.undefined, text: String = null): IIdentifiedSingleEditOperation = {
-    val __obj = js.Dynamic.literal(range = range)
-    if (!js.isUndefined(forceMoveMarkers)) __obj.updateDynamic("forceMoveMarkers")(forceMoveMarkers)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceMoveMarkers)) __obj.updateDynamic("forceMoveMarkers")(forceMoveMarkers.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIdentifiedSingleEditOperation]
   }
 }

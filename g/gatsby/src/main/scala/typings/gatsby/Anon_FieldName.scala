@@ -22,10 +22,10 @@ object Anon_FieldName {
     fieldValue: String = null,
     name: String = null
   ): Anon_FieldName = {
-    val __obj = js.Dynamic.literal(node = node, value = value)
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (fieldValue != null) __obj.updateDynamic("fieldValue")(fieldValue)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (fieldValue != null) __obj.updateDynamic("fieldValue")(fieldValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FieldName]
   }
 }

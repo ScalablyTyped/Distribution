@@ -14,7 +14,7 @@ trait QueueItem extends js.Object {
 object QueueItem {
   @scala.inline
   def apply(cmd: Command, fulfill: js.Function, reject: js.Function): QueueItem = {
-    val __obj = js.Dynamic.literal(cmd = cmd, fulfill = fulfill, reject = reject)
+    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], fulfill = fulfill.asInstanceOf[js.Any], reject = reject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueueItem]
   }

@@ -13,7 +13,7 @@ object FloatingPointList {
   @scala.inline
   def apply(elements: js.Array[Double] = null): FloatingPointList = {
     val __obj = js.Dynamic.literal()
-    if (elements != null) __obj.updateDynamic("elements")(elements)
+    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingPointList]
   }
 }

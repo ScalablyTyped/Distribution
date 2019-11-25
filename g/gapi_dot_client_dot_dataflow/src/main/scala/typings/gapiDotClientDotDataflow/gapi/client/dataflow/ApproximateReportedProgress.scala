@@ -60,10 +60,10 @@ object ApproximateReportedProgress {
     remainingParallelism: ReportedParallelism = null
   ): ApproximateReportedProgress = {
     val __obj = js.Dynamic.literal()
-    if (consumedParallelism != null) __obj.updateDynamic("consumedParallelism")(consumedParallelism)
+    if (consumedParallelism != null) __obj.updateDynamic("consumedParallelism")(consumedParallelism.asInstanceOf[js.Any])
     if (fractionConsumed != null) __obj.updateDynamic("fractionConsumed")(fractionConsumed.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (remainingParallelism != null) __obj.updateDynamic("remainingParallelism")(remainingParallelism)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (remainingParallelism != null) __obj.updateDynamic("remainingParallelism")(remainingParallelism.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApproximateReportedProgress]
   }
 }

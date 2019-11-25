@@ -30,8 +30,8 @@ object predominanceCreateRendererParamsFields {
     propertyIsEnumerable: PropertyKey => Boolean,
     label: String = null
   ): predominanceCreateRendererParamsFields = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[predominanceCreateRendererParamsFields]
   }
 }

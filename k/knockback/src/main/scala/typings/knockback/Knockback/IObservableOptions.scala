@@ -45,15 +45,15 @@ object IObservableOptions {
     store: js.Any = null,
     write: /* value */ js.Any => Unit = null
   ): IObservableOptions = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (factory != null) __obj.updateDynamic("factory")(factory)
-    if (localizer != null) __obj.updateDynamic("localizer")(localizer)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
+    if (localizer != null) __obj.updateDynamic("localizer")(localizer.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction0(read))
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1(write))
     __obj.asInstanceOf[IObservableOptions]
   }

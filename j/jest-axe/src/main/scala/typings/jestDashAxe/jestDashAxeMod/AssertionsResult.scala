@@ -23,7 +23,7 @@ trait AssertionsResult extends js.Object {
 object AssertionsResult {
   @scala.inline
   def apply(actual: js.Array[Result], message: () => String, pass: Boolean): AssertionsResult = {
-    val __obj = js.Dynamic.literal(actual = actual, message = js.Any.fromFunction0(message), pass = pass)
+    val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], message = js.Any.fromFunction0(message), pass = pass.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AssertionsResult]
   }

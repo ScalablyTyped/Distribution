@@ -13,8 +13,8 @@ object JobCancelResponse {
   @scala.inline
   def apply(job: Job = null, kind: String = null): JobCancelResponse = {
     val __obj = js.Dynamic.literal()
-    if (job != null) __obj.updateDynamic("job")(job)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (job != null) __obj.updateDynamic("job")(job.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobCancelResponse]
   }
 }

@@ -42,15 +42,15 @@ object ValidationOptions {
   ): ValidationOptions = {
     val __obj = js.Dynamic.literal()
     if (applicable != null) __obj.updateDynamic("applicable")(js.Any.fromFunction0(applicable))
-    if (converter != null) __obj.updateDynamic("converter")(converter)
-    if (entryFormat != null) __obj.updateDynamic("entryFormat")(entryFormat)
-    if (!js.isUndefined(excludeFromSummary)) __obj.updateDynamic("excludeFromSummary")(excludeFromSummary)
-    if (invalidFailureMessage != null) __obj.updateDynamic("invalidFailureMessage")(invalidFailureMessage)
-    if (missingFailureMessage != null) __obj.updateDynamic("missingFailureMessage")(missingFailureMessage)
+    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
+    if (entryFormat != null) __obj.updateDynamic("entryFormat")(entryFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeFromSummary)) __obj.updateDynamic("excludeFromSummary")(excludeFromSummary.asInstanceOf[js.Any])
+    if (invalidFailureMessage != null) __obj.updateDynamic("invalidFailureMessage")(invalidFailureMessage.asInstanceOf[js.Any])
+    if (missingFailureMessage != null) __obj.updateDynamic("missingFailureMessage")(missingFailureMessage.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(js.Any.fromFunction0(name))
     if (required != null) __obj.updateDynamic("required")(js.Any.fromFunction0(required))
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (valueFormat != null) __obj.updateDynamic("valueFormat")(valueFormat)
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (valueFormat != null) __obj.updateDynamic("valueFormat")(valueFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptions]
   }
 }

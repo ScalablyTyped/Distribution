@@ -39,12 +39,12 @@ object MobileAppPanel {
     owners: js.Array[String] = null
   ): MobileAppPanel = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (!js.isUndefined(isPublicPanel)) __obj.updateDynamic("isPublicPanel")(isPublicPanel)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (mobileAppPanelId != null) __obj.updateDynamic("mobileAppPanelId")(mobileAppPanelId)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (owners != null) __obj.updateDynamic("owners")(owners)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPublicPanel)) __obj.updateDynamic("isPublicPanel")(isPublicPanel.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (mobileAppPanelId != null) __obj.updateDynamic("mobileAppPanelId")(mobileAppPanelId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppPanel]
   }
 }

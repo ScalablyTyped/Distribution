@@ -19,7 +19,7 @@ object WebGLTimingInfo {
     wallMs: Double,
     getExtraProfileInfo: () => String = null
   ): WebGLTimingInfo = {
-    val __obj = js.Dynamic.literal(downloadWaitMs = downloadWaitMs, kernelMs = kernelMs, uploadWaitMs = uploadWaitMs, wallMs = wallMs)
+    val __obj = js.Dynamic.literal(downloadWaitMs = downloadWaitMs.asInstanceOf[js.Any], kernelMs = kernelMs.asInstanceOf[js.Any], uploadWaitMs = uploadWaitMs.asInstanceOf[js.Any], wallMs = wallMs.asInstanceOf[js.Any])
     if (getExtraProfileInfo != null) __obj.updateDynamic("getExtraProfileInfo")(js.Any.fromFunction0(getExtraProfileInfo))
     __obj.asInstanceOf[WebGLTimingInfo]
   }

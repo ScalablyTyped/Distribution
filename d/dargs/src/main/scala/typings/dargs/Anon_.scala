@@ -19,9 +19,9 @@ object Anon_ {
     `_`: js.Array[String] = null
   ): Anon_ = {
     val __obj = js.Dynamic.literal()
-    if (`--` != null) __obj.updateDynamic("--")(`--`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`_` != null) __obj.updateDynamic("_")(`_`)
+    if (`--` != null) __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`_` != null) __obj.updateDynamic("_")(`_`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }
 }

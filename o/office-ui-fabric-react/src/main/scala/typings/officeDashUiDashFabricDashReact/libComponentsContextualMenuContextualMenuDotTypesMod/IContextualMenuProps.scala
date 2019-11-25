@@ -6,7 +6,6 @@ import typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.atUifabricUtilities.libIRectangleMod.IRectangle
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
-import typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.Target
 import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotClassNamesMod.IContextualMenuClassNames
@@ -85,7 +84,9 @@ trait IContextualMenuProps
     * How the menu should be positioned
     * @defaultvalue DirectionalHint.bottomAutoEdge
     */
-  var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
+  var directionalHint: js.UndefOr[
+    typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint
+  ] = js.undefined
   /**
     * If true the position will not change sides in an attempt to fit the ContextualMenu within bounds.
     * It will still attempt to align it to whatever bounds are given.
@@ -96,7 +97,9 @@ trait IContextualMenuProps
     * How the menu should be positioned in RTL layouts.
     * If not specified, a mirror of `directionalHint` will be used.
     */
-  var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.undefined
+  var directionalHintForRTL: js.UndefOr[
+    typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint
+  ] = js.undefined
   /**
     * If true do not render on a new layer. If false render on a new layer.
     * @defaultvalue false
@@ -258,9 +261,9 @@ object IContextualMenuProps {
     contextualMenuItemAs: (ComponentClass[IContextualMenuItemProps, ComponentState]) | StatelessComponent[IContextualMenuItemProps] = null,
     coverTarget: js.UndefOr[Boolean] = js.undefined,
     delayUpdateFocusOnHover: js.UndefOr[Boolean] = js.undefined,
-    directionalHint: DirectionalHint = null,
+    directionalHint: typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint = null,
     directionalHintFixed: js.UndefOr[Boolean] = js.undefined,
-    directionalHintForRTL: DirectionalHint = null,
+    directionalHintForRTL: typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint = null,
     doNotLayer: js.UndefOr[Boolean] = js.undefined,
     focusZoneProps: IFocusZoneProps = null,
     gapSpace: Int | Double = null,
@@ -298,46 +301,46 @@ object IContextualMenuProps {
     useTargetAsMinWidth: js.UndefOr[Boolean] = js.undefined,
     useTargetWidth: js.UndefOr[Boolean] = js.undefined
   ): IContextualMenuProps = {
-    val __obj = js.Dynamic.literal(items = items)
-    if (!js.isUndefined(alignTargetEdge)) __obj.updateDynamic("alignTargetEdge")(alignTargetEdge)
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (!js.isUndefined(alignTargetEdge)) __obj.updateDynamic("alignTargetEdge")(alignTargetEdge.asInstanceOf[js.Any])
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (beakWidth != null) __obj.updateDynamic("beakWidth")(beakWidth.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (calloutProps != null) __obj.updateDynamic("calloutProps")(calloutProps)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (calloutProps != null) __obj.updateDynamic("calloutProps")(calloutProps.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (contextualMenuItemAs != null) __obj.updateDynamic("contextualMenuItemAs")(contextualMenuItemAs.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverTarget)) __obj.updateDynamic("coverTarget")(coverTarget)
-    if (!js.isUndefined(delayUpdateFocusOnHover)) __obj.updateDynamic("delayUpdateFocusOnHover")(delayUpdateFocusOnHover)
-    if (directionalHint != null) __obj.updateDynamic("directionalHint")(directionalHint)
-    if (!js.isUndefined(directionalHintFixed)) __obj.updateDynamic("directionalHintFixed")(directionalHintFixed)
-    if (directionalHintForRTL != null) __obj.updateDynamic("directionalHintForRTL")(directionalHintForRTL)
-    if (!js.isUndefined(doNotLayer)) __obj.updateDynamic("doNotLayer")(doNotLayer)
-    if (focusZoneProps != null) __obj.updateDynamic("focusZoneProps")(focusZoneProps)
+    if (!js.isUndefined(coverTarget)) __obj.updateDynamic("coverTarget")(coverTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayUpdateFocusOnHover)) __obj.updateDynamic("delayUpdateFocusOnHover")(delayUpdateFocusOnHover.asInstanceOf[js.Any])
+    if (directionalHint != null) __obj.updateDynamic("directionalHint")(directionalHint.asInstanceOf[js.Any])
+    if (!js.isUndefined(directionalHintFixed)) __obj.updateDynamic("directionalHintFixed")(directionalHintFixed.asInstanceOf[js.Any])
+    if (directionalHintForRTL != null) __obj.updateDynamic("directionalHintForRTL")(directionalHintForRTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotLayer)) __obj.updateDynamic("doNotLayer")(doNotLayer.asInstanceOf[js.Any])
+    if (focusZoneProps != null) __obj.updateDynamic("focusZoneProps")(focusZoneProps.asInstanceOf[js.Any])
     if (gapSpace != null) __obj.updateDynamic("gapSpace")(gapSpace.asInstanceOf[js.Any])
     if (getMenuClassNames != null) __obj.updateDynamic("getMenuClassNames")(js.Any.fromFunction2(getMenuClassNames))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isBeakVisible)) __obj.updateDynamic("isBeakVisible")(isBeakVisible)
-    if (!js.isUndefined(isSubMenu)) __obj.updateDynamic("isSubMenu")(isSubMenu)
-    if (labelElementId != null) __obj.updateDynamic("labelElementId")(labelElementId)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBeakVisible)) __obj.updateDynamic("isBeakVisible")(isBeakVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSubMenu)) __obj.updateDynamic("isSubMenu")(isSubMenu.asInstanceOf[js.Any])
+    if (labelElementId != null) __obj.updateDynamic("labelElementId")(labelElementId.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction2(onDismiss))
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
     if (onMenuDismissed != null) __obj.updateDynamic("onMenuDismissed")(js.Any.fromFunction1(onMenuDismissed))
     if (onMenuOpened != null) __obj.updateDynamic("onMenuOpened")(js.Any.fromFunction1(onMenuOpened))
     if (onRenderMenuList != null) __obj.updateDynamic("onRenderMenuList")(js.Any.fromFunction2(onRenderMenuList))
     if (onRenderSubMenu != null) __obj.updateDynamic("onRenderSubMenu")(js.Any.fromFunction2(onRenderSubMenu))
-    if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode)
-    if (!js.isUndefined(shouldFocusOnContainer)) __obj.updateDynamic("shouldFocusOnContainer")(shouldFocusOnContainer)
-    if (!js.isUndefined(shouldFocusOnMount)) __obj.updateDynamic("shouldFocusOnMount")(shouldFocusOnMount)
-    if (!js.isUndefined(shouldUpdateWhenHidden)) __obj.updateDynamic("shouldUpdateWhenHidden")(shouldUpdateWhenHidden)
+    if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldFocusOnContainer)) __obj.updateDynamic("shouldFocusOnContainer")(shouldFocusOnContainer.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldFocusOnMount)) __obj.updateDynamic("shouldFocusOnMount")(shouldFocusOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldUpdateWhenHidden)) __obj.updateDynamic("shouldUpdateWhenHidden")(shouldUpdateWhenHidden.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (subMenuHoverDelay != null) __obj.updateDynamic("subMenuHoverDelay")(subMenuHoverDelay.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(useTargetAsMinWidth)) __obj.updateDynamic("useTargetAsMinWidth")(useTargetAsMinWidth)
-    if (!js.isUndefined(useTargetWidth)) __obj.updateDynamic("useTargetWidth")(useTargetWidth)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTargetAsMinWidth)) __obj.updateDynamic("useTargetAsMinWidth")(useTargetAsMinWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTargetWidth)) __obj.updateDynamic("useTargetWidth")(useTargetWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuProps]
   }
 }

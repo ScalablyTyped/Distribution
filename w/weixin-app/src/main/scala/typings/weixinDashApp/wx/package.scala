@@ -28,7 +28,7 @@ package object wx {
   type BuiltInEvent[T /* <: EventType */, Detail] = BaseEvent[T, Detail]
   type CheckSessionOption = BaseOptions[js.Any, js.Any]
   // CombinedInstance models the `this`, i.e. instance type for (user defined) component
-  type CombinedInstance[Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = Methods with Instance with UnboxBehaviorsMethods[Behaviors]
+  type CombinedInstance[Instance /* <: typings.weixinDashApp.wx.Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */] = Methods with Instance with UnboxBehaviorsMethods[Behaviors]
   type CompassChangeCallback = js.Function1[/* res */ CompassData, Unit]
   type CompassOptions = BaseOptions[js.Any, js.Any]
   type CustomEvent[T /* <: String */, Detail] = BaseEvent[T, Detail]
@@ -37,12 +37,12 @@ package object wx {
   type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
   type DefaultMethods[V] = StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
   type DefaultProps = js.Object | (Record[String, js.Any])
-  type FormEvent = BaseEvent[form, Anon_Name]
+  type FormEvent = BuiltInEvent[form, Anon_Name]
   /**
   	 * 指定focus时的光标位置
   	 * @version 1.5.0
   	 */
-  type InputEvent = BaseEvent[input, Anon_Cursor]
+  type InputEvent = BuiltInEvent[input, Anon_Cursor]
   /**
   	 * https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/observer.html
   	 */
@@ -62,7 +62,7 @@ package object wx {
   	 */
   type PropValueType[Def] = js.Any
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
-  type RecordPropsDefinition[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: weixin-app.wx.PropValidator<T[K]>}
     */ typings.weixinDashApp.weixinDashAppStrings.RecordPropsDefinition with T
   type RemoveSavedFileOptions = GetSavedFileInfoOptions
@@ -146,20 +146,20 @@ package object wx {
     - scala.Double
   */
   type SceneValues = _SceneValues | Double
-  type ScrollEvent = BaseEvent[scroll, js.Object]
+  type ScrollEvent = BuiltInEvent[scroll, js.Object]
   type TapEvent = TouchEvent[tap]
-  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = js.Object with (ComponentOptions[V, Data, Methods, Props, Behaviors]) with (ThisType[CombinedInstance[V, Data, Methods, Props, Behaviors]])
+  type ThisTypedComponentOptionsWithRecordProps[V /* <: typings.weixinDashApp.wx.Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */] = js.Object with (ComponentOptions[V, Data, Methods, Props, Behaviors]) with (ThisType[CombinedInstance[V, Data, Methods, Props, Behaviors]])
   type TouchCancelEvent = TouchEvent[touchcancel]
   type TouchEndEvent = TouchEvent[touchend]
   type TouchForceChangeEvent = TouchEvent[touchforcechange]
   type TouchMoveEvent = TouchEvent[touchmove]
   type TouchStartEvent = TouchEvent[touchstart]
-  type UnboxBehaviorData[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_DATA'] */ js.Any)
-  type UnboxBehaviorMethods[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_METHODS'] */ js.Any)
-  type UnboxBehaviorProps[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_PROPS'] */ js.Any)
-  type UnboxBehaviorsData[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorData[UnionToIntersection[ArrayType[Behaviors]]]
-  type UnboxBehaviorsMethods[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorMethods[UnionToIntersection[ArrayType[Behaviors]]]
-  type UnboxBehaviorsProps[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorProps[UnionToIntersection[ArrayType[Behaviors]]]
+  type UnboxBehaviorData[T] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_DATA'] */ js.Any)
+  type UnboxBehaviorMethods[T] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_METHODS'] */ js.Any)
+  type UnboxBehaviorProps[T] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_PROPS'] */ js.Any)
+  type UnboxBehaviorsData[Behaviors /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorData[UnionToIntersection[ArrayType[Behaviors]]]
+  type UnboxBehaviorsMethods[Behaviors /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorMethods[UnionToIntersection[ArrayType[Behaviors]]]
+  type UnboxBehaviorsProps[Behaviors /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorProps[UnionToIntersection[ArrayType[Behaviors]]]
   type UnionToIntersection[U] = js.Any
   type WriteFileOptions = AppendFileOptions
 }

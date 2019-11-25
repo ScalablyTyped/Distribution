@@ -32,7 +32,7 @@ object TypeofColorPalette {
   def apply(
     _Color: Instantiable4[/* alias */ String, /* row */ Double, /* col */ js.Any, /* title */ String, _Color]
   ): TypeofColorPalette = {
-    val __obj = js.Dynamic.literal(_Color = _Color)
+    val __obj = js.Dynamic.literal(_Color = _Color.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofColorPalette]
   }

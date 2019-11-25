@@ -15,7 +15,7 @@ object VisibleOnAllWorkspacesOptions {
   @scala.inline
   def apply(visibleOnFullScreen: js.UndefOr[Boolean] = js.undefined): VisibleOnAllWorkspacesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(visibleOnFullScreen)) __obj.updateDynamic("visibleOnFullScreen")(visibleOnFullScreen)
+    if (!js.isUndefined(visibleOnFullScreen)) __obj.updateDynamic("visibleOnFullScreen")(visibleOnFullScreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibleOnAllWorkspacesOptions]
   }
 }

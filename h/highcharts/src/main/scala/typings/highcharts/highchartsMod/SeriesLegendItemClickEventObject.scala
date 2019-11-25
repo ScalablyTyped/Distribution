@@ -28,8 +28,8 @@ trait SeriesLegendItemClickEventObject extends js.Object {
 object SeriesLegendItemClickEventObject {
   @scala.inline
   def apply(browserEvent: PointerEvent, preventDefault: js.Function, target: Series, `type`: legendItemClick): SeriesLegendItemClickEventObject = {
-    val __obj = js.Dynamic.literal(browserEvent = browserEvent, preventDefault = preventDefault, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(browserEvent = browserEvent.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesLegendItemClickEventObject]
   }
 }

@@ -28,14 +28,14 @@ object Style {
     Wrapper: js.Any = null
   ): Style = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action)
-    if (ActionWrapper != null) __obj.updateDynamic("ActionWrapper")(ActionWrapper)
-    if (Containers != null) __obj.updateDynamic("Containers")(Containers)
-    if (Dismiss != null) __obj.updateDynamic("Dismiss")(Dismiss)
-    if (MessageWrapper != null) __obj.updateDynamic("MessageWrapper")(MessageWrapper)
-    if (NotificationItem != null) __obj.updateDynamic("NotificationItem")(NotificationItem)
-    if (Title != null) __obj.updateDynamic("Title")(Title)
-    if (Wrapper != null) __obj.updateDynamic("Wrapper")(Wrapper)
+    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
+    if (ActionWrapper != null) __obj.updateDynamic("ActionWrapper")(ActionWrapper.asInstanceOf[js.Any])
+    if (Containers != null) __obj.updateDynamic("Containers")(Containers.asInstanceOf[js.Any])
+    if (Dismiss != null) __obj.updateDynamic("Dismiss")(Dismiss.asInstanceOf[js.Any])
+    if (MessageWrapper != null) __obj.updateDynamic("MessageWrapper")(MessageWrapper.asInstanceOf[js.Any])
+    if (NotificationItem != null) __obj.updateDynamic("NotificationItem")(NotificationItem.asInstanceOf[js.Any])
+    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
+    if (Wrapper != null) __obj.updateDynamic("Wrapper")(Wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[Style]
   }
 }

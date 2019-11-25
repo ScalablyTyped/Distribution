@@ -19,7 +19,7 @@ trait PaymentRequestButtonStyleOptions extends js.Object {
 object PaymentRequestButtonStyleOptions {
   @scala.inline
   def apply(height: String, theme: dark | light | `light-outline`, `type`: default | donate | buy = null): PaymentRequestButtonStyleOptions = {
-    val __obj = js.Dynamic.literal(height = height, theme = theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentRequestButtonStyleOptions]
   }

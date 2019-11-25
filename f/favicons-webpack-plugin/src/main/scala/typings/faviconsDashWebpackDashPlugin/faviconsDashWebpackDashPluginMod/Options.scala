@@ -40,15 +40,15 @@ object Options {
     prefix: String = null,
     publicPath: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(logo = logo)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (devMode != null) __obj.updateDynamic("devMode")(devMode)
-    if (favicons != null) __obj.updateDynamic("favicons")(favicons)
+    val __obj = js.Dynamic.literal(logo = logo.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (devMode != null) __obj.updateDynamic("devMode")(devMode.asInstanceOf[js.Any])
+    if (favicons != null) __obj.updateDynamic("favicons")(favicons.asInstanceOf[js.Any])
     if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

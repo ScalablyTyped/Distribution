@@ -18,8 +18,8 @@ object CallAdvancedOptions {
     timeout: Int | Double = null
   ): CallAdvancedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disclose_me)) __obj.updateDynamic("disclose_me")(disclose_me)
-    if (!js.isUndefined(receive_progress)) __obj.updateDynamic("receive_progress")(receive_progress)
+    if (!js.isUndefined(disclose_me)) __obj.updateDynamic("disclose_me")(disclose_me.asInstanceOf[js.Any])
+    if (!js.isUndefined(receive_progress)) __obj.updateDynamic("receive_progress")(receive_progress.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallAdvancedOptions]
   }

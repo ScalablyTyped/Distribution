@@ -47,13 +47,13 @@ object EnrollmentToken {
     value: String = null
   ): EnrollmentToken = {
     val __obj = js.Dynamic.literal()
-    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (expirationTimestamp != null) __obj.updateDynamic("expirationTimestamp")(expirationTimestamp)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (policyName != null) __obj.updateDynamic("policyName")(policyName)
-    if (qrCode != null) __obj.updateDynamic("qrCode")(qrCode)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (expirationTimestamp != null) __obj.updateDynamic("expirationTimestamp")(expirationTimestamp.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (policyName != null) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
+    if (qrCode != null) __obj.updateDynamic("qrCode")(qrCode.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnrollmentToken]
   }
 }

@@ -13,8 +13,8 @@ object Anon_Begin {
   @scala.inline
   def apply(begin: js.Any = null, end: js.Any = null): Anon_Begin = {
     val __obj = js.Dynamic.literal()
-    if (begin != null) __obj.updateDynamic("begin")(begin)
-    if (end != null) __obj.updateDynamic("end")(end)
+    if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Begin]
   }
 }

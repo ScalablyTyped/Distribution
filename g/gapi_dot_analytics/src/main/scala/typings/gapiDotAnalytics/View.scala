@@ -14,9 +14,9 @@ object View {
   @scala.inline
   def apply(accountId: String = null, webPropertyId: String = null, webViewId: String = null): View = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId)
-    if (webViewId != null) __obj.updateDynamic("webViewId")(webViewId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
+    if (webViewId != null) __obj.updateDynamic("webViewId")(webViewId.asInstanceOf[js.Any])
     __obj.asInstanceOf[View]
   }
 }

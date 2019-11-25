@@ -66,16 +66,16 @@ object ReportApiColumnSpec {
     startDate: String = null
   ): ReportApiColumnSpec = {
     val __obj = js.Dynamic.literal()
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
-    if (customDimensionName != null) __obj.updateDynamic("customDimensionName")(customDimensionName)
-    if (customMetricName != null) __obj.updateDynamic("customMetricName")(customMetricName)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (!js.isUndefined(groupByColumn)) __obj.updateDynamic("groupByColumn")(groupByColumn)
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
-    if (platformSource != null) __obj.updateDynamic("platformSource")(platformSource)
-    if (productReportPerspective != null) __obj.updateDynamic("productReportPerspective")(productReportPerspective)
-    if (savedColumnName != null) __obj.updateDynamic("savedColumnName")(savedColumnName)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
+    if (customDimensionName != null) __obj.updateDynamic("customDimensionName")(customDimensionName.asInstanceOf[js.Any])
+    if (customMetricName != null) __obj.updateDynamic("customMetricName")(customMetricName.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupByColumn)) __obj.updateDynamic("groupByColumn")(groupByColumn.asInstanceOf[js.Any])
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
+    if (platformSource != null) __obj.updateDynamic("platformSource")(platformSource.asInstanceOf[js.Any])
+    if (productReportPerspective != null) __obj.updateDynamic("productReportPerspective")(productReportPerspective.asInstanceOf[js.Any])
+    if (savedColumnName != null) __obj.updateDynamic("savedColumnName")(savedColumnName.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportApiColumnSpec]
   }
 }

@@ -25,8 +25,8 @@ object PadInfo3D {
     top: Double,
     `type`: PadType
   ): PadInfo3D = {
-    val __obj = js.Dynamic.literal(back = back, bottom = bottom, front = front, left = left, right = right, top = top)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(back = back.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], front = front.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PadInfo3D]
   }
 }

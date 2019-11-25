@@ -62,7 +62,7 @@ object SearchOptions {
     sortBy: optimal | quality | maintenance | popularity = null
   ): SearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed)
+    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (maintenance != null) __obj.updateDynamic("maintenance")(maintenance.asInstanceOf[js.Any])

@@ -121,7 +121,7 @@ object AuxRecordValue {
     tableListStoreField: String,
     userVisible: Boolean
   ): AuxRecordValue = {
-    val __obj = js.Dynamic.literal(alias = alias, canUpdate = canUpdate, constructor = constructor, data = data, dataType = dataType, displayOrder = displayOrder, displayType = displayType, domain = domain, filter = filter, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), length = length, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), required = required, tableListClass = tableListClass, tableListDisplayField = tableListDisplayField, tableListStoreField = tableListStoreField, userVisible = userVisible)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], canUpdate = canUpdate.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], displayOrder = displayOrder.asInstanceOf[js.Any], displayType = displayType.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), required = required.asInstanceOf[js.Any], tableListClass = tableListClass.asInstanceOf[js.Any], tableListDisplayField = tableListDisplayField.asInstanceOf[js.Any], tableListStoreField = tableListStoreField.asInstanceOf[js.Any], userVisible = userVisible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuxRecordValue]
   }

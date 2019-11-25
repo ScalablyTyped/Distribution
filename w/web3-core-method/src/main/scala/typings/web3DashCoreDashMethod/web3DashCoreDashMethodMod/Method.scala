@@ -29,11 +29,11 @@ object Method {
     params: Int | Double = null,
     transformPayload: () => Unit = null
   ): Method = {
-    val __obj = js.Dynamic.literal(call = call, name = name)
-    if (defaultAccount != null) __obj.updateDynamic("defaultAccount")(defaultAccount)
-    if (defaultBlock != null) __obj.updateDynamic("defaultBlock")(defaultBlock)
-    if (extraFormatters != null) __obj.updateDynamic("extraFormatters")(extraFormatters)
-    if (inputFormatter != null) __obj.updateDynamic("inputFormatter")(inputFormatter)
+    val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (defaultAccount != null) __obj.updateDynamic("defaultAccount")(defaultAccount.asInstanceOf[js.Any])
+    if (defaultBlock != null) __obj.updateDynamic("defaultBlock")(defaultBlock.asInstanceOf[js.Any])
+    if (extraFormatters != null) __obj.updateDynamic("extraFormatters")(extraFormatters.asInstanceOf[js.Any])
+    if (inputFormatter != null) __obj.updateDynamic("inputFormatter")(inputFormatter.asInstanceOf[js.Any])
     if (outputFormatter != null) __obj.updateDynamic("outputFormatter")(js.Any.fromFunction0(outputFormatter))
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (transformPayload != null) __obj.updateDynamic("transformPayload")(js.Any.fromFunction0(transformPayload))

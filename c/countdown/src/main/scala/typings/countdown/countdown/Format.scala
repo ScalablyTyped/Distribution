@@ -26,11 +26,11 @@ object Format {
     singular: String | js.Array[String] = null
   ): Format = {
     val __obj = js.Dynamic.literal()
-    if (delim != null) __obj.updateDynamic("delim")(delim)
-    if (empty != null) __obj.updateDynamic("empty")(empty)
+    if (delim != null) __obj.updateDynamic("delim")(delim.asInstanceOf[js.Any])
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
     if (formatNumber != null) __obj.updateDynamic("formatNumber")(js.Any.fromFunction1(formatNumber))
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction2(formatter))
-    if (last != null) __obj.updateDynamic("last")(last)
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
     if (plural != null) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
     if (singular != null) __obj.updateDynamic("singular")(singular.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]

@@ -33,8 +33,8 @@ object ProxyEventCallbacks {
     forward: js.ThisFunction1[/* this */ UserMethodInvocation[D, T, S], /* name */ String, Unit] = null
   ): ProxyEventCallbacks[D, T, S] = {
     val __obj = js.Dynamic.literal()
-    if (dealloc != null) __obj.updateDynamic("dealloc")(dealloc)
-    if (forward != null) __obj.updateDynamic("forward")(forward)
+    if (dealloc != null) __obj.updateDynamic("dealloc")(dealloc.asInstanceOf[js.Any])
+    if (forward != null) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyEventCallbacks[D, T, S]]
   }
 }

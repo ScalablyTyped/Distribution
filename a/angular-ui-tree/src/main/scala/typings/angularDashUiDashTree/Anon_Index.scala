@@ -13,7 +13,7 @@ trait Anon_Index extends js.Object {
 object Anon_Index {
   @scala.inline
   def apply(index: Double, nodesScope: IParentTreeNodeScope): Anon_Index = {
-    val __obj = js.Dynamic.literal(index = index, nodesScope = nodesScope)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], nodesScope = nodesScope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Index]
   }

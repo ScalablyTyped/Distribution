@@ -47,7 +47,7 @@ object CollectionOptions {
     ttlInterval: Double,
     unique: js.Array[String]
   ): CollectionOptions[E] = {
-    val __obj = js.Dynamic.literal(adaptiveBinaryIndices = adaptiveBinaryIndices, asyncListeners = asyncListeners, autoupdate = autoupdate, clone = clone, cloneMethod = cloneMethod.asInstanceOf[js.Any], disableChangesApi = disableChangesApi, disableDeltaChangesApi = disableDeltaChangesApi, disableMeta = disableMeta, exact = exact, indices = indices.asInstanceOf[js.Any], serializableIndices = serializableIndices, transactional = transactional, ttl = ttl, ttlInterval = ttlInterval, unique = unique)
+    val __obj = js.Dynamic.literal(adaptiveBinaryIndices = adaptiveBinaryIndices.asInstanceOf[js.Any], asyncListeners = asyncListeners.asInstanceOf[js.Any], autoupdate = autoupdate.asInstanceOf[js.Any], clone = clone.asInstanceOf[js.Any], cloneMethod = cloneMethod.asInstanceOf[js.Any], disableChangesApi = disableChangesApi.asInstanceOf[js.Any], disableDeltaChangesApi = disableDeltaChangesApi.asInstanceOf[js.Any], disableMeta = disableMeta.asInstanceOf[js.Any], exact = exact.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], serializableIndices = serializableIndices.asInstanceOf[js.Any], transactional = transactional.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any], ttlInterval = ttlInterval.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollectionOptions[E]]
   }

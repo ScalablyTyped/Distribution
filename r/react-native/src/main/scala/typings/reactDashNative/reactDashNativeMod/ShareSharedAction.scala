@@ -13,8 +13,8 @@ trait ShareSharedAction extends ShareAction {
 object ShareSharedAction {
   @scala.inline
   def apply(action: sharedAction, activityType: String = null): ShareSharedAction = {
-    val __obj = js.Dynamic.literal(action = action)
-    if (activityType != null) __obj.updateDynamic("activityType")(activityType)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+    if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareSharedAction]
   }
 }

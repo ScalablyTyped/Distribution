@@ -15,9 +15,9 @@ object OptionsFirst {
   @scala.inline
   def apply(all: `false` = null, path: String = null, pathExt: String = null): OptionsFirst = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (pathExt != null) __obj.updateDynamic("pathExt")(pathExt)
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pathExt != null) __obj.updateDynamic("pathExt")(pathExt.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsFirst]
   }
 }

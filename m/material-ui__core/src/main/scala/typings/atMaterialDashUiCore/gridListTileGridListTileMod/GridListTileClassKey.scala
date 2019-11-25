@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait GridListTileClassKey extends js.Object
 
+object GridListTileClassKey {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def imgFullHeight: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.imgFullHeight = this.cast("imgFullHeight")
+  @scala.inline
+  def imgFullWidth: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.imgFullWidth = this.cast("imgFullWidth")
+  @scala.inline
+  def root: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.root = this.cast("root")
+  @scala.inline
+  def tile: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tile = this.cast("tile")
+}
+

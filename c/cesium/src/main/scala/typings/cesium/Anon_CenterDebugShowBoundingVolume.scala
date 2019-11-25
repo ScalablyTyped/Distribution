@@ -29,13 +29,13 @@ object Anon_CenterDebugShowBoundingVolume {
     show: js.UndefOr[Boolean] = js.undefined
   ): Anon_CenterDebugShowBoundingVolume = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix)
-    if (radii != null) __obj.updateDynamic("radii")(radii)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix.asInstanceOf[js.Any])
+    if (radii != null) __obj.updateDynamic("radii")(radii.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CenterDebugShowBoundingVolume]
   }
 }

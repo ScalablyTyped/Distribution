@@ -24,8 +24,8 @@ object Extension {
   @scala.inline
   def apply(`type`: String, listeners: StringDictionary[EventListener] = null): Extension = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension]
   }
 }

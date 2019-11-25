@@ -85,18 +85,18 @@ object ITableState {
     verticalGuides: js.Array[Double] = null,
     viewportRect: Rect = null
   ): ITableState = {
-    val __obj = js.Dynamic.literal(childrenArray = childrenArray, columnIdToIndex = columnIdToIndex)
-    if (columnWidths != null) __obj.updateDynamic("columnWidths")(columnWidths)
-    if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell)
-    if (horizontalGuides != null) __obj.updateDynamic("horizontalGuides")(horizontalGuides)
-    if (!js.isUndefined(isLayoutLocked)) __obj.updateDynamic("isLayoutLocked")(isLayoutLocked)
-    if (!js.isUndefined(isReordering)) __obj.updateDynamic("isReordering")(isReordering)
+    val __obj = js.Dynamic.literal(childrenArray = childrenArray.asInstanceOf[js.Any], columnIdToIndex = columnIdToIndex.asInstanceOf[js.Any])
+    if (columnWidths != null) __obj.updateDynamic("columnWidths")(columnWidths.asInstanceOf[js.Any])
+    if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell.asInstanceOf[js.Any])
+    if (horizontalGuides != null) __obj.updateDynamic("horizontalGuides")(horizontalGuides.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLayoutLocked)) __obj.updateDynamic("isLayoutLocked")(isLayoutLocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(isReordering)) __obj.updateDynamic("isReordering")(isReordering.asInstanceOf[js.Any])
     if (numFrozenColumnsClamped != null) __obj.updateDynamic("numFrozenColumnsClamped")(numFrozenColumnsClamped.asInstanceOf[js.Any])
     if (numFrozenRowsClamped != null) __obj.updateDynamic("numFrozenRowsClamped")(numFrozenRowsClamped.asInstanceOf[js.Any])
-    if (rowHeights != null) __obj.updateDynamic("rowHeights")(rowHeights)
-    if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions)
-    if (verticalGuides != null) __obj.updateDynamic("verticalGuides")(verticalGuides)
-    if (viewportRect != null) __obj.updateDynamic("viewportRect")(viewportRect)
+    if (rowHeights != null) __obj.updateDynamic("rowHeights")(rowHeights.asInstanceOf[js.Any])
+    if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions.asInstanceOf[js.Any])
+    if (verticalGuides != null) __obj.updateDynamic("verticalGuides")(verticalGuides.asInstanceOf[js.Any])
+    if (viewportRect != null) __obj.updateDynamic("viewportRect")(viewportRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableState]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_CompetitiveQuickplayAnonEliminationsperlife extends js.Object {
 object Anon_CompetitiveQuickplayAnonEliminationsperlife {
   @scala.inline
   def apply(competitive: Anon_EliminationsperlifeGameswon, quickplay: Anon_Eliminationsperlife): Anon_CompetitiveQuickplayAnonEliminationsperlife = {
-    val __obj = js.Dynamic.literal(competitive = competitive, quickplay = quickplay)
+    val __obj = js.Dynamic.literal(competitive = competitive.asInstanceOf[js.Any], quickplay = quickplay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CompetitiveQuickplayAnonEliminationsperlife]
   }

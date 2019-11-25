@@ -14,9 +14,9 @@ object Anon_CurrentVersion {
   @scala.inline
   def apply(currentVersion: String = null, replacement: String = null, versionToRemove: String = null): Anon_CurrentVersion = {
     val __obj = js.Dynamic.literal()
-    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion)
-    if (replacement != null) __obj.updateDynamic("replacement")(replacement)
-    if (versionToRemove != null) __obj.updateDynamic("versionToRemove")(versionToRemove)
+    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
+    if (replacement != null) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
+    if (versionToRemove != null) __obj.updateDynamic("versionToRemove")(versionToRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurrentVersion]
   }
 }

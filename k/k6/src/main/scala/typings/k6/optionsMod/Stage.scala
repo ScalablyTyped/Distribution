@@ -14,7 +14,7 @@ trait Stage extends js.Object {
 object Stage {
   @scala.inline
   def apply(duration: String, target: Double): Stage = {
-    val __obj = js.Dynamic.literal(duration = duration, target = target)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stage]
   }

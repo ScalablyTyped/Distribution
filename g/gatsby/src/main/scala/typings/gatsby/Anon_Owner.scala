@@ -11,7 +11,7 @@ trait Anon_Owner extends js.Object {
 object Anon_Owner {
   @scala.inline
   def apply(owner: String): Anon_Owner = {
-    val __obj = js.Dynamic.literal(owner = owner)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Owner]
   }

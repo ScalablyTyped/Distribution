@@ -1,8 +1,6 @@
 package typings.dojo.dijit
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.defaults
 import typings.dojo.dojoStrings.mixins
 import typings.dojo.dojoStrings.style
@@ -62,12 +60,34 @@ class Declaration () extends _Widget {
   @JSName("set")
   def set_widgetClass(property: widgetClass, value: String): Unit = js.native
   @JSName("watch")
-  def watch_defaults(property: defaults, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_defaults(
+    property: defaults,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_mixins(property: mixins, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_mixins(
+    property: mixins,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_widgetClass(property: widgetClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_widgetClass(
+    property: widgetClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -16,7 +16,7 @@ trait DefaultProps extends js.Object {
 object DefaultProps {
   @scala.inline
   def apply(disabled: Boolean, display: block | flex | `inline-block`, useCapture: Boolean): DefaultProps = {
-    val __obj = js.Dynamic.literal(disabled = disabled, display = display.asInstanceOf[js.Any], useCapture = useCapture)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], useCapture = useCapture.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefaultProps]
   }

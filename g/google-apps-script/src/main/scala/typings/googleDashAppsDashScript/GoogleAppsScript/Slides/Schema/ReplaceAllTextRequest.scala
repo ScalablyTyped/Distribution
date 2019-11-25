@@ -18,9 +18,9 @@ object ReplaceAllTextRequest {
     replaceText: String = null
   ): ReplaceAllTextRequest = {
     val __obj = js.Dynamic.literal()
-    if (containsText != null) __obj.updateDynamic("containsText")(containsText)
-    if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds)
-    if (replaceText != null) __obj.updateDynamic("replaceText")(replaceText)
+    if (containsText != null) __obj.updateDynamic("containsText")(containsText.asInstanceOf[js.Any])
+    if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds.asInstanceOf[js.Any])
+    if (replaceText != null) __obj.updateDynamic("replaceText")(replaceText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAllTextRequest]
   }
 }

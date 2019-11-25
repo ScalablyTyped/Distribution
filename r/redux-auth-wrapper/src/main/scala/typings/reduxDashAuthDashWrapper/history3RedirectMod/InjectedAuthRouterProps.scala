@@ -11,7 +11,7 @@ trait InjectedAuthRouterProps[Redirect] extends InjectedAuthReduxProps {
 object InjectedAuthRouterProps {
   @scala.inline
   def apply[Redirect](isAuthenticated: Boolean, isAuthenticating: Boolean, redirect: Redirect, redirectPath: String): InjectedAuthRouterProps[Redirect] = {
-    val __obj = js.Dynamic.literal(isAuthenticated = isAuthenticated, isAuthenticating = isAuthenticating, redirect = redirect.asInstanceOf[js.Any], redirectPath = redirectPath)
+    val __obj = js.Dynamic.literal(isAuthenticated = isAuthenticated.asInstanceOf[js.Any], isAuthenticating = isAuthenticating.asInstanceOf[js.Any], redirect = redirect.asInstanceOf[js.Any], redirectPath = redirectPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InjectedAuthRouterProps[Redirect]]
   }

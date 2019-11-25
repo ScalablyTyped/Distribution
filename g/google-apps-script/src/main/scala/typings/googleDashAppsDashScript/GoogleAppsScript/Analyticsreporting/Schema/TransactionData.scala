@@ -20,7 +20,7 @@ object TransactionData {
     transactionTax: Int | Double = null
   ): TransactionData = {
     val __obj = js.Dynamic.literal()
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId)
+    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     if (transactionRevenue != null) __obj.updateDynamic("transactionRevenue")(transactionRevenue.asInstanceOf[js.Any])
     if (transactionShipping != null) __obj.updateDynamic("transactionShipping")(transactionShipping.asInstanceOf[js.Any])
     if (transactionTax != null) __obj.updateDynamic("transactionTax")(transactionTax.asInstanceOf[js.Any])

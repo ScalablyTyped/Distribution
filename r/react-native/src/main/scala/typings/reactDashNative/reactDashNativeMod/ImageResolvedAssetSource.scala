@@ -14,7 +14,7 @@ trait ImageResolvedAssetSource extends js.Object {
 object ImageResolvedAssetSource {
   @scala.inline
   def apply(height: Double, scale: Double, uri: String, width: Double): ImageResolvedAssetSource = {
-    val __obj = js.Dynamic.literal(height = height, scale = scale, uri = uri, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImageResolvedAssetSource]
   }

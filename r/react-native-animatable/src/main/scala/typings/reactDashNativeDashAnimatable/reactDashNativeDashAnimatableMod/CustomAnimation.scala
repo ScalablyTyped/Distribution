@@ -22,8 +22,8 @@ object CustomAnimation {
     to: T = null
   ): CustomAnimation[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])

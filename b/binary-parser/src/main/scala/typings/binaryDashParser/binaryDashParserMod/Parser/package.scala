@@ -11,7 +11,7 @@ package object Parser {
   type Next[O /* <: js.UndefOr[js.Object] */, N /* <: String */, T /* <: js.Any */] = typings.binaryDashParser.binaryDashParserMod.Parser[
     Valid[
       O, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in N ]: T}
     */ typings.binaryDashParser.binaryDashParserStrings.Next with js.Any
     ]

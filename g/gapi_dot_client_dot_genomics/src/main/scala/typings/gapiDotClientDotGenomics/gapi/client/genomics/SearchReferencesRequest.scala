@@ -42,11 +42,11 @@ object SearchReferencesRequest {
     referenceSetId: String = null
   ): SearchReferencesRequest = {
     val __obj = js.Dynamic.literal()
-    if (accessions != null) __obj.updateDynamic("accessions")(accessions)
-    if (md5checksums != null) __obj.updateDynamic("md5checksums")(md5checksums)
+    if (accessions != null) __obj.updateDynamic("accessions")(accessions.asInstanceOf[js.Any])
+    if (md5checksums != null) __obj.updateDynamic("md5checksums")(md5checksums.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchReferencesRequest]
   }
 }

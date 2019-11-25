@@ -43,21 +43,21 @@ object IConnectionOptions {
     use_deferred: () => Promise[js.Any] = null,
     use_es6_promises: js.UndefOr[Boolean] = js.undefined
   ): IConnectionOptions = {
-    val __obj = js.Dynamic.literal(realm = realm)
-    if (authid != null) __obj.updateDynamic("authid")(authid)
-    if (authmethods != null) __obj.updateDynamic("authmethods")(authmethods)
+    val __obj = js.Dynamic.literal(realm = realm.asInstanceOf[js.Any])
+    if (authid != null) __obj.updateDynamic("authid")(authid.asInstanceOf[js.Any])
+    if (authmethods != null) __obj.updateDynamic("authmethods")(authmethods.asInstanceOf[js.Any])
     if (initial_retry_delay != null) __obj.updateDynamic("initial_retry_delay")(initial_retry_delay.asInstanceOf[js.Any])
     if (max_retries != null) __obj.updateDynamic("max_retries")(max_retries.asInstanceOf[js.Any])
     if (max_retry_delay != null) __obj.updateDynamic("max_retry_delay")(max_retry_delay.asInstanceOf[js.Any])
     if (onchallenge != null) __obj.updateDynamic("onchallenge")(js.Any.fromFunction3(onchallenge))
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
     if (retry_delay_growth != null) __obj.updateDynamic("retry_delay_growth")(retry_delay_growth.asInstanceOf[js.Any])
     if (retry_delay_jitter != null) __obj.updateDynamic("retry_delay_jitter")(retry_delay_jitter.asInstanceOf[js.Any])
-    if (!js.isUndefined(retry_if_unreachable)) __obj.updateDynamic("retry_if_unreachable")(retry_if_unreachable)
-    if (transports != null) __obj.updateDynamic("transports")(transports)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(retry_if_unreachable)) __obj.updateDynamic("retry_if_unreachable")(retry_if_unreachable.asInstanceOf[js.Any])
+    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (use_deferred != null) __obj.updateDynamic("use_deferred")(js.Any.fromFunction0(use_deferred))
-    if (!js.isUndefined(use_es6_promises)) __obj.updateDynamic("use_es6_promises")(use_es6_promises)
+    if (!js.isUndefined(use_es6_promises)) __obj.updateDynamic("use_es6_promises")(use_es6_promises.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnectionOptions]
   }
 }

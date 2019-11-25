@@ -91,12 +91,12 @@ trait Anon_A extends js.Object {
   def parseDate(date: Date, givenFormat: String, timeless: Boolean): js.UndefOr[Date] = js.native
   def redraw(): Unit = js.native
   def set(
-    option: /* import warning: ImportType.apply c Unsupported type mapping: 
+    option: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof flatpickr.flatpickr/dist/types/options.Options ]:? flatpickr.flatpickr/dist/types/options.Options[k]}
     */ typings.flatpickr.flatpickrStrings.Anon_A with Options
   ): Unit = js.native
   def set(
-    option: /* import warning: ImportType.apply c Unsupported type mapping: 
+    option: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof flatpickr.flatpickr/dist/types/options.Options ]:? flatpickr.flatpickr/dist/types/options.Options[k]}
     */ typings.flatpickr.flatpickrStrings.Anon_A with Options,
     value: js.Any

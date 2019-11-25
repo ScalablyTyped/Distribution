@@ -18,9 +18,9 @@ object LiaSettings {
     kind: String = null
   ): LiaSettings = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (countrySettings != null) __obj.updateDynamic("countrySettings")(countrySettings)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (countrySettings != null) __obj.updateDynamic("countrySettings")(countrySettings.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiaSettings]
   }
 }

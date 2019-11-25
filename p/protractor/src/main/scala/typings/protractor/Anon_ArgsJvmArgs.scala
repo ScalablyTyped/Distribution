@@ -28,9 +28,9 @@ object Anon_ArgsJvmArgs {
   @scala.inline
   def apply(args: js.Any = null, jvmArgs: js.Array[String] = null, port: js.Any = null): Anon_ArgsJvmArgs = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (jvmArgs != null) __obj.updateDynamic("jvmArgs")(jvmArgs)
-    if (port != null) __obj.updateDynamic("port")(port)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (jvmArgs != null) __obj.updateDynamic("jvmArgs")(jvmArgs.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArgsJvmArgs]
   }
 }

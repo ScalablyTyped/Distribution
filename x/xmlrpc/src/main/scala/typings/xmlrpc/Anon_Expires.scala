@@ -13,7 +13,7 @@ trait Anon_Expires extends js.Object {
 object Anon_Expires {
   @scala.inline
   def apply(expires: Date, secure: Boolean): Anon_Expires = {
-    val __obj = js.Dynamic.literal(expires = expires, secure = secure)
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Expires]
   }

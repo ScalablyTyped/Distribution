@@ -20,7 +20,7 @@ object AcknowledgeTaskRequest {
   @scala.inline
   def apply(scheduleTime: String = null): AcknowledgeTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcknowledgeTaskRequest]
   }
 }

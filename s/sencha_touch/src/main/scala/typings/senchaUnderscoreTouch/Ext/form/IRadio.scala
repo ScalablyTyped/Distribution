@@ -27,31 +27,15 @@ object IRadio {
   @scala.inline
   def apply(
     ICheckbox: typings.senchaUnderscoreTouch.Ext.field.ICheckbox = null,
-    component: js.Any = null,
-    getComponent: () => _ = null,
     getGroupValue: () => java.lang.String = null,
-    getSubmitValue: () => _ = null,
-    getUi: () => java.lang.String = null,
-    getValue: () => java.lang.String = null,
-    setComponent: /* component */ js.UndefOr[js.Any] => Unit = null,
     setGroupValue: /* value */ js.UndefOr[java.lang.String] => IRadio = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
-    setValue: /* value */ js.UndefOr[js.Any] => IRadio = null,
-    ui: java.lang.String = null
+    setValue: /* value */ js.UndefOr[js.Any] => IRadio = null
   ): IRadio = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ICheckbox)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction0(getComponent))
+    if (ICheckbox != null) js.Dynamic.global.Object.assign(__obj, ICheckbox)
     if (getGroupValue != null) __obj.updateDynamic("getGroupValue")(js.Any.fromFunction0(getGroupValue))
-    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(js.Any.fromFunction0(getSubmitValue))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
-    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
-    if (setComponent != null) __obj.updateDynamic("setComponent")(js.Any.fromFunction1(setComponent))
     if (setGroupValue != null) __obj.updateDynamic("setGroupValue")(js.Any.fromFunction1(setGroupValue))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
     if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (ui != null) __obj.updateDynamic("ui")(ui)
     __obj.asInstanceOf[IRadio]
   }
 }

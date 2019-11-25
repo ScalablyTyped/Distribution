@@ -13,7 +13,7 @@ object SubscriptionOptions {
   @scala.inline
   def apply(delegate: SubscriptionDelegate = null): SubscriptionOptions = {
     val __obj = js.Dynamic.literal()
-    if (delegate != null) __obj.updateDynamic("delegate")(delegate)
+    if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionOptions]
   }
 }

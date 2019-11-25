@@ -44,7 +44,7 @@ object SetTabBarBadgeOptions {
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTabBarBadgeOptions]
   }
 }

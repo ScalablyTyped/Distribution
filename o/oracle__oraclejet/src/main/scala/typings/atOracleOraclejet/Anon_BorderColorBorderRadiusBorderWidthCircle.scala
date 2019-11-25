@@ -54,7 +54,7 @@ object Anon_BorderColorBorderRadiusBorderWidthCircle {
     source: String,
     width: Double
   ): Anon_BorderColorBorderRadiusBorderWidthCircle = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, borderRadius = borderRadius, borderWidth = borderWidth, color = color, height = height, opacity = opacity, pattern = pattern.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], source = source, width = width)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderColorBorderRadiusBorderWidthCircle]
   }

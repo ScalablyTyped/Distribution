@@ -15,7 +15,7 @@ object UsersCreateGpgKeyParams {
   @scala.inline
   def apply(armored_public_key: String = null): UsersCreateGpgKeyParams = {
     val __obj = js.Dynamic.literal()
-    if (armored_public_key != null) __obj.updateDynamic("armored_public_key")(armored_public_key)
+    if (armored_public_key != null) __obj.updateDynamic("armored_public_key")(armored_public_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersCreateGpgKeyParams]
   }
 }

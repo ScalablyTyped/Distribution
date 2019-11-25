@@ -71,8 +71,8 @@ object JSONCamera {
     zoom: Double,
     bounds: JSONCameraBounds = null
   ): JSONCamera = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, height = height, name = name, rotation = rotation, roundPixels = roundPixels, scrollX = scrollX, scrollY = scrollY, width = width, x = x, y = y, zoom = zoom)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], roundPixels = roundPixels.asInstanceOf[js.Any], scrollX = scrollX.asInstanceOf[js.Any], scrollY = scrollY.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONCamera]
   }
 }

@@ -12,7 +12,7 @@ trait OrgsCreateHookResponseConfig extends js.Object {
 object OrgsCreateHookResponseConfig {
   @scala.inline
   def apply(content_type: String, url: String): OrgsCreateHookResponseConfig = {
-    val __obj = js.Dynamic.literal(content_type = content_type, url = url)
+    val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrgsCreateHookResponseConfig]
   }

@@ -22,10 +22,10 @@ object SDKInfo {
     versionString: String = null
   ): SDKInfo = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
-    if (versionString != null) __obj.updateDynamic("versionString")(versionString)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (versionString != null) __obj.updateDynamic("versionString")(versionString.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDKInfo]
   }
 }

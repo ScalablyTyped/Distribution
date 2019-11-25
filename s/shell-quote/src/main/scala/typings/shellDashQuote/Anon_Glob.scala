@@ -14,7 +14,7 @@ trait Anon_Glob extends _ParseEntry {
 object Anon_Glob {
   @scala.inline
   def apply(op: glob, pattern: String): Anon_Glob = {
-    val __obj = js.Dynamic.literal(op = op, pattern = pattern)
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Glob]
   }

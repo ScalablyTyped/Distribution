@@ -21,9 +21,9 @@ object DataValueConfig {
   ): DataValueConfig = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on)
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValueConfig]
   }
 }

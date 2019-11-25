@@ -31,7 +31,7 @@ object Loader {
     normal: /* request */ String => String = null,
     pitch: /* request */ String => String = null
   ): Loader = {
-    val __obj = js.Dynamic.literal(data = data, normalExecuted = normalExecuted, options = options, path = path, pitchExecuted = pitchExecuted, query = query, raw = raw, request = request)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], normalExecuted = normalExecuted.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pitchExecuted = pitchExecuted.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     if (normal != null) __obj.updateDynamic("normal")(js.Any.fromFunction1(normal))
     if (pitch != null) __obj.updateDynamic("pitch")(js.Any.fromFunction1(pitch))
     __obj.asInstanceOf[Loader]

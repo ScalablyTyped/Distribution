@@ -38,19 +38,19 @@ object AnnotationOption {
     color: String = null
   ): AnnotationOption = {
     val __obj = js.Dynamic.literal()
-    if (A != null) __obj.updateDynamic("A")(A)
-    if (B != null) __obj.updateDynamic("B")(B)
-    if (Border != null) __obj.updateDynamic("Border")(Border)
-    if (C != null) __obj.updateDynamic("C")(C)
-    if (Contents != null) __obj.updateDynamic("Contents")(Contents)
-    if (DA != null) __obj.updateDynamic("DA")(DA)
-    if (L != null) __obj.updateDynamic("L")(L)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (QuadPoints != null) __obj.updateDynamic("QuadPoints")(QuadPoints)
-    if (Rect != null) __obj.updateDynamic("Rect")(Rect)
-    if (SubType != null) __obj.updateDynamic("SubType")(SubType)
-    if (Type != null) __obj.updateDynamic("Type")(Type)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (A != null) __obj.updateDynamic("A")(A.asInstanceOf[js.Any])
+    if (B != null) __obj.updateDynamic("B")(B.asInstanceOf[js.Any])
+    if (Border != null) __obj.updateDynamic("Border")(Border.asInstanceOf[js.Any])
+    if (C != null) __obj.updateDynamic("C")(C.asInstanceOf[js.Any])
+    if (Contents != null) __obj.updateDynamic("Contents")(Contents.asInstanceOf[js.Any])
+    if (DA != null) __obj.updateDynamic("DA")(DA.asInstanceOf[js.Any])
+    if (L != null) __obj.updateDynamic("L")(L.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (QuadPoints != null) __obj.updateDynamic("QuadPoints")(QuadPoints.asInstanceOf[js.Any])
+    if (Rect != null) __obj.updateDynamic("Rect")(Rect.asInstanceOf[js.Any])
+    if (SubType != null) __obj.updateDynamic("SubType")(SubType.asInstanceOf[js.Any])
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationOption]
   }
 }

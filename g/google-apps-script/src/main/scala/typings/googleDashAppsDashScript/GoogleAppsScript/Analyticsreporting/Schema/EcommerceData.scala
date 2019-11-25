@@ -20,10 +20,10 @@ object EcommerceData {
     transaction: TransactionData = null
   ): EcommerceData = {
     val __obj = js.Dynamic.literal()
-    if (actionType != null) __obj.updateDynamic("actionType")(actionType)
-    if (ecommerceType != null) __obj.updateDynamic("ecommerceType")(ecommerceType)
-    if (products != null) __obj.updateDynamic("products")(products)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
+    if (ecommerceType != null) __obj.updateDynamic("ecommerceType")(ecommerceType.asInstanceOf[js.Any])
+    if (products != null) __obj.updateDynamic("products")(products.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[EcommerceData]
   }
 }

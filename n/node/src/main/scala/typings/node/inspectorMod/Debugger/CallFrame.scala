@@ -55,10 +55,10 @@ object CallFrame {
     functionLocation: Location = null,
     returnValue: RemoteObject = null
   ): CallFrame = {
-    val __obj = js.Dynamic.literal(callFrameId = callFrameId, functionName = functionName, location = location, scopeChain = scopeChain, url = url)
-    __obj.updateDynamic("this")(`this`)
-    if (functionLocation != null) __obj.updateDynamic("functionLocation")(functionLocation)
-    if (returnValue != null) __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(callFrameId = callFrameId.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], scopeChain = scopeChain.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
+    if (functionLocation != null) __obj.updateDynamic("functionLocation")(functionLocation.asInstanceOf[js.Any])
+    if (returnValue != null) __obj.updateDynamic("returnValue")(returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallFrame]
   }
 }

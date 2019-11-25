@@ -26,9 +26,9 @@ object GetUserConfig {
     userId: Int | Double = null
   ): GetUserConfig = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (fbId != null) __obj.updateDynamic("fbId")(fbId)
-    if (personId != null) __obj.updateDynamic("personId")(personId)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (fbId != null) __obj.updateDynamic("fbId")(fbId.asInstanceOf[js.Any])
+    if (personId != null) __obj.updateDynamic("personId")(personId.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserConfig]
   }

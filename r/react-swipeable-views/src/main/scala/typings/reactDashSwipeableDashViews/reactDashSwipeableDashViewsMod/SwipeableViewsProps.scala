@@ -44,7 +44,6 @@ object SwipeableViewsProps {
     axis: AxisType = null,
     containerStyle: CSSProperties = null,
     disableLazyLoading: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     enableMouseEvents: js.UndefOr[Boolean] = js.undefined,
     hysteresis: Int | Double = null,
     ignoreNativeScroll: js.UndefOr[Boolean] = js.undefined,
@@ -56,30 +55,27 @@ object SwipeableViewsProps {
     slideClassName: String = null,
     slideStyle: CSSProperties = null,
     springConfig: SpringConfig = null,
-    style: CSSProperties = null,
     threshold: Int | Double = null
   ): SwipeableViewsProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(animateHeight)) __obj.updateDynamic("animateHeight")(animateHeight)
-    if (!js.isUndefined(animateTransitions)) __obj.updateDynamic("animateTransitions")(animateTransitions)
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
-    if (!js.isUndefined(disableLazyLoading)) __obj.updateDynamic("disableLazyLoading")(disableLazyLoading)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(animateHeight)) __obj.updateDynamic("animateHeight")(animateHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(animateTransitions)) __obj.updateDynamic("animateTransitions")(animateTransitions.asInstanceOf[js.Any])
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableLazyLoading)) __obj.updateDynamic("disableLazyLoading")(disableLazyLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents.asInstanceOf[js.Any])
     if (hysteresis != null) __obj.updateDynamic("hysteresis")(hysteresis.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreNativeScroll)) __obj.updateDynamic("ignoreNativeScroll")(ignoreNativeScroll)
+    if (!js.isUndefined(ignoreNativeScroll)) __obj.updateDynamic("ignoreNativeScroll")(ignoreNativeScroll.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (onChangeIndex != null) __obj.updateDynamic("onChangeIndex")(js.Any.fromFunction2(onChangeIndex))
     if (onSwitching != null) __obj.updateDynamic("onSwitching")(js.Any.fromFunction2(onSwitching))
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction0(onTransitionEnd))
-    if (!js.isUndefined(resistance)) __obj.updateDynamic("resistance")(resistance)
-    if (slideClassName != null) __obj.updateDynamic("slideClassName")(slideClassName)
-    if (slideStyle != null) __obj.updateDynamic("slideStyle")(slideStyle)
-    if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(resistance)) __obj.updateDynamic("resistance")(resistance.asInstanceOf[js.Any])
+    if (slideClassName != null) __obj.updateDynamic("slideClassName")(slideClassName.asInstanceOf[js.Any])
+    if (slideStyle != null) __obj.updateDynamic("slideStyle")(slideStyle.asInstanceOf[js.Any])
+    if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeableViewsProps]
   }

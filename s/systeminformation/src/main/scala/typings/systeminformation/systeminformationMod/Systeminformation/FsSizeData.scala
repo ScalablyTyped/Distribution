@@ -17,8 +17,8 @@ trait FsSizeData extends js.Object {
 object FsSizeData {
   @scala.inline
   def apply(fs: String, mount: String, size: Double, `type`: String, use: Double, used: Double): FsSizeData = {
-    val __obj = js.Dynamic.literal(fs = fs, mount = mount, size = size, use = use, used = used)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fs = fs.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FsSizeData]
   }
 }

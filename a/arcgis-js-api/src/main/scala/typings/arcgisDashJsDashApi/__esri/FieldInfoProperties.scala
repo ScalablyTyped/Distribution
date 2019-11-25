@@ -84,14 +84,14 @@ object FieldInfoProperties {
     visible: js.UndefOr[Boolean] = js.undefined
   ): FieldInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(isEditable)) __obj.updateDynamic("isEditable")(isEditable)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEditable)) __obj.updateDynamic("isEditable")(isEditable.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (statisticType != null) __obj.updateDynamic("statisticType")(statisticType.asInstanceOf[js.Any])
     if (stringFieldOption != null) __obj.updateDynamic("stringFieldOption")(stringFieldOption.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInfoProperties]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Delta extends js.Object {
 object Anon_Delta {
   @scala.inline
   def apply(delta: Double, top: Double): Anon_Delta = {
-    val __obj = js.Dynamic.literal(delta = delta, top = top)
+    val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Delta]
   }

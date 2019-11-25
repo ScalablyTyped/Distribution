@@ -36,13 +36,13 @@ object Anon_CommentsComputedKeyLoc {
     typeAnnotation: TSTypeAnnotationKind = null,
     typeParameters: TSTypeParameterDeclarationKind = null
   ): Anon_CommentsComputedKeyLoc = {
-    val __obj = js.Dynamic.literal(key = key, parameters = parameters)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsComputedKeyLoc]
   }
 }

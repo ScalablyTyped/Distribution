@@ -13,8 +13,8 @@ trait PendingArgs extends js.Object {
 object PendingArgs {
   @scala.inline
   def apply(message: Null, status: sending = null): PendingArgs = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingArgs]
   }
 }

@@ -23,7 +23,7 @@ trait PageNotFoundOption extends js.Object {
 object PageNotFoundOption {
   @scala.inline
   def apply(isEntryPage: Boolean, path: String, query: AnyObject): PageNotFoundOption = {
-    val __obj = js.Dynamic.literal(isEntryPage = isEntryPage, path = path, query = query)
+    val __obj = js.Dynamic.literal(isEntryPage = isEntryPage.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageNotFoundOption]
   }

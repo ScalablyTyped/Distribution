@@ -88,11 +88,11 @@ object GeoJSONOptions {
     style: PathOptions | StyleFunction[P] = null
   ): GeoJSONOptions[P] = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
     if (coordsToLatLng != null) __obj.updateDynamic("coordsToLatLng")(js.Any.fromFunction1(coordsToLatLng))
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (onEachFeature != null) __obj.updateDynamic("onEachFeature")(js.Any.fromFunction2(onEachFeature))
-    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (pointToLayer != null) __obj.updateDynamic("pointToLayer")(js.Any.fromFunction2(pointToLayer))
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONOptions[P]]

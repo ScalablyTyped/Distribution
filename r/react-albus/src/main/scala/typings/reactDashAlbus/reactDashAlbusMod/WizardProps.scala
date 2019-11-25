@@ -23,8 +23,8 @@ object WizardProps {
     render: /* wizard */ WizardContext => ReactNode = null
   ): WizardProps = {
     val __obj = js.Dynamic.literal()
-    if (basename != null) __obj.updateDynamic("basename")(basename)
-    if (history != null) __obj.updateDynamic("history")(history)
+    if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction1(onNext))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     __obj.asInstanceOf[WizardProps]

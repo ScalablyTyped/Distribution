@@ -33,12 +33,12 @@ object IFetchNode {
     traceParsingFailed: js.UndefOr[Boolean] = js.undefined
   ): IFetchNode = {
     val __obj = js.Dynamic.literal()
-    if (receivedTime != null) __obj.updateDynamic("receivedTime")(receivedTime)
-    if (sentTime != null) __obj.updateDynamic("sentTime")(sentTime)
+    if (receivedTime != null) __obj.updateDynamic("receivedTime")(receivedTime.asInstanceOf[js.Any])
+    if (sentTime != null) __obj.updateDynamic("sentTime")(sentTime.asInstanceOf[js.Any])
     if (sentTimeOffset != null) __obj.updateDynamic("sentTimeOffset")(sentTimeOffset.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
-    if (trace != null) __obj.updateDynamic("trace")(trace)
-    if (!js.isUndefined(traceParsingFailed)) __obj.updateDynamic("traceParsingFailed")(traceParsingFailed)
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
+    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceParsingFailed)) __obj.updateDynamic("traceParsingFailed")(traceParsingFailed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFetchNode]
   }
 }

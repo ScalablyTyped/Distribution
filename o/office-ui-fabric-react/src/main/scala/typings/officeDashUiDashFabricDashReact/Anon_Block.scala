@@ -14,8 +14,8 @@ trait Anon_Block extends js.Object {
 object Anon_Block {
   @scala.inline
   def apply(display: block, position: IPosition = null): Anon_Block = {
-    val __obj = js.Dynamic.literal(display = display)
-    if (position != null) __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Block]
   }
 }

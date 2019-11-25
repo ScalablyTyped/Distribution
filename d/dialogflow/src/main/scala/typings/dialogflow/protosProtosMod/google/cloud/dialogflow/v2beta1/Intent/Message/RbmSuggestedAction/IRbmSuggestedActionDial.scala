@@ -14,7 +14,7 @@ object IRbmSuggestedActionDial {
   @scala.inline
   def apply(phoneNumber: String = null): IRbmSuggestedActionDial = {
     val __obj = js.Dynamic.literal()
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmSuggestedActionDial]
   }
 }

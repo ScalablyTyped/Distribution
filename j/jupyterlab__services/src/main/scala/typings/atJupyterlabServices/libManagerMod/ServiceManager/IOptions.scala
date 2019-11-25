@@ -29,9 +29,9 @@ object IOptions {
   @scala.inline
   def apply(defaultDrive: IDrive = null, serverSettings: ISettings = null, standby: Standby = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultDrive != null) __obj.updateDynamic("defaultDrive")(defaultDrive)
-    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings)
-    if (standby != null) __obj.updateDynamic("standby")(standby)
+    if (defaultDrive != null) __obj.updateDynamic("defaultDrive")(defaultDrive.asInstanceOf[js.Any])
+    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
+    if (standby != null) __obj.updateDynamic("standby")(standby.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

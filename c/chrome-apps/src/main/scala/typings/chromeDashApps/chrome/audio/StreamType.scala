@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait StreamType extends js.Object
 
+object StreamType {
+  @scala.inline
+  def INPUT: typings.chromeDashApps.chromeDashAppsStrings.INPUT = this.cast("INPUT")
+  @scala.inline
+  def OUTPUT: typings.chromeDashApps.chromeDashAppsStrings.OUTPUT = this.cast("OUTPUT")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

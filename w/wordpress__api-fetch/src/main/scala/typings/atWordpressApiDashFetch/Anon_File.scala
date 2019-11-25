@@ -15,7 +15,7 @@ trait Anon_File extends js.Object {
 object Anon_File {
   @scala.inline
   def apply(file: String, height: Double, mime_type: String, source_url: String, width: Double): Anon_File = {
-    val __obj = js.Dynamic.literal(file = file, height = height, mime_type = mime_type, source_url = source_url, width = width)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], source_url = source_url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_File]
   }

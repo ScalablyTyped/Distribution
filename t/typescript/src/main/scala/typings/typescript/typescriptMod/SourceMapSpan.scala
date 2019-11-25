@@ -29,7 +29,7 @@ object SourceMapSpan {
     sourceLine: Double,
     nameIndex: Int | Double = null
   ): SourceMapSpan = {
-    val __obj = js.Dynamic.literal(emittedColumn = emittedColumn, emittedLine = emittedLine, sourceColumn = sourceColumn, sourceIndex = sourceIndex, sourceLine = sourceLine)
+    val __obj = js.Dynamic.literal(emittedColumn = emittedColumn.asInstanceOf[js.Any], emittedLine = emittedLine.asInstanceOf[js.Any], sourceColumn = sourceColumn.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], sourceLine = sourceLine.asInstanceOf[js.Any])
     if (nameIndex != null) __obj.updateDynamic("nameIndex")(nameIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMapSpan]
   }

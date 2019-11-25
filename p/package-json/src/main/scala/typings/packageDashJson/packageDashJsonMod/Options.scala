@@ -48,10 +48,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (!js.isUndefined(allVersions)) __obj.updateDynamic("allVersions")(allVersions)
-    if (!js.isUndefined(fullMetadata)) __obj.updateDynamic("fullMetadata")(fullMetadata)
-    if (registryUrl != null) __obj.updateDynamic("registryUrl")(registryUrl)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(allVersions)) __obj.updateDynamic("allVersions")(allVersions.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullMetadata)) __obj.updateDynamic("fullMetadata")(fullMetadata.asInstanceOf[js.Any])
+    if (registryUrl != null) __obj.updateDynamic("registryUrl")(registryUrl.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

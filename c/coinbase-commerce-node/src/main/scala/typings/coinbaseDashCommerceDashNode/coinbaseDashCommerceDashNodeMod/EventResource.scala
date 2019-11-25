@@ -55,7 +55,7 @@ object EventResource {
     resource: event,
     `type`: `charge:created` | `charge:confirmed` | `charge:failed` | `charge:delayed` | `charge:pending` | `charge:resolved`
   ): EventResource[T] = {
-    val __obj = js.Dynamic.literal(api_version = api_version, created_at = created_at, data = data.asInstanceOf[js.Any], id = id, resource = resource)
+    val __obj = js.Dynamic.literal(api_version = api_version.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventResource[T]]
   }

@@ -13,7 +13,7 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(body: Uint8Array, headers: MessageHeaders): Message = {
-    val __obj = js.Dynamic.literal(body = body, headers = headers)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Message]
   }

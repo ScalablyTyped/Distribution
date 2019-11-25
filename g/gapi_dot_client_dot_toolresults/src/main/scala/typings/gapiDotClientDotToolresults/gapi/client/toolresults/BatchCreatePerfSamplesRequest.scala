@@ -13,7 +13,7 @@ object BatchCreatePerfSamplesRequest {
   @scala.inline
   def apply(perfSamples: js.Array[PerfSample] = null): BatchCreatePerfSamplesRequest = {
     val __obj = js.Dynamic.literal()
-    if (perfSamples != null) __obj.updateDynamic("perfSamples")(perfSamples)
+    if (perfSamples != null) __obj.updateDynamic("perfSamples")(perfSamples.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchCreatePerfSamplesRequest]
   }
 }

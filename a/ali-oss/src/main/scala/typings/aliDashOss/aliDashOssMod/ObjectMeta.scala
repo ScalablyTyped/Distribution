@@ -30,8 +30,8 @@ object ObjectMeta {
     storageClass: StorageType,
     `type`: String
   ): ObjectMeta = {
-    val __obj = js.Dynamic.literal(etag = etag, lastModified = lastModified, name = name, owner = owner, size = size, storageClass = storageClass)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageClass = storageClass.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectMeta]
   }
 }

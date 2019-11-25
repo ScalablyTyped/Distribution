@@ -25,9 +25,9 @@ object RawSourceMap {
     sourceRoot: String = null,
     sourcesContent: js.Array[String] = null
   ): RawSourceMap = {
-    val __obj = js.Dynamic.literal(file = file, mappings = mappings, names = names, sources = sources, version = version)
-    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
-    if (sourcesContent != null) __obj.updateDynamic("sourcesContent")(sourcesContent)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], mappings = mappings.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
+    if (sourcesContent != null) __obj.updateDynamic("sourcesContent")(sourcesContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawSourceMap]
   }
 }

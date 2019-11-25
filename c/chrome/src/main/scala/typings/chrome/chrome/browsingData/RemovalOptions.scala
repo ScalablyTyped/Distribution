@@ -19,7 +19,7 @@ object RemovalOptions {
   @scala.inline
   def apply(originTypes: OriginTypes = null, since: Int | Double = null): RemovalOptions = {
     val __obj = js.Dynamic.literal()
-    if (originTypes != null) __obj.updateDynamic("originTypes")(originTypes)
+    if (originTypes != null) __obj.updateDynamic("originTypes")(originTypes.asInstanceOf[js.Any])
     if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovalOptions]
   }

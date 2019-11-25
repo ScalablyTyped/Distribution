@@ -23,11 +23,11 @@ object PartialClassNameMapTableRowClassKey {
     selected: String = null
   ): PartialClassNameMapTableRowClassKey = {
     val __obj = js.Dynamic.literal()
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (head != null) __obj.updateDynamic("head")(head)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTableRowClassKey]
   }
 }

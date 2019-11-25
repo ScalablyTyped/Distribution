@@ -11,7 +11,7 @@ trait IWindowActivatedEventArgs extends ICoreWindowEventArgs {
 object IWindowActivatedEventArgs {
   @scala.inline
   def apply(handled: Boolean, windowActivationState: CoreWindowActivationState): IWindowActivatedEventArgs = {
-    val __obj = js.Dynamic.literal(handled = handled, windowActivationState = windowActivationState)
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], windowActivationState = windowActivationState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWindowActivatedEventArgs]
   }

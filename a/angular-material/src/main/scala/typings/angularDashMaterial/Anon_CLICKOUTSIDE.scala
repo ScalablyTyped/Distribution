@@ -12,7 +12,7 @@ trait Anon_CLICKOUTSIDE extends js.Object {
 object Anon_CLICKOUTSIDE {
   @scala.inline
   def apply(CLICK_OUTSIDE: String, ESCAPE: String): Anon_CLICKOUTSIDE = {
-    val __obj = js.Dynamic.literal(CLICK_OUTSIDE = CLICK_OUTSIDE, ESCAPE = ESCAPE)
+    val __obj = js.Dynamic.literal(CLICK_OUTSIDE = CLICK_OUTSIDE.asInstanceOf[js.Any], ESCAPE = ESCAPE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CLICKOUTSIDE]
   }

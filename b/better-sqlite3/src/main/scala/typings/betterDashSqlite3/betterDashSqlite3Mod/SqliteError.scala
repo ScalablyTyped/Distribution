@@ -12,8 +12,8 @@ trait SqliteError extends Error {
 object SqliteError {
   @scala.inline
   def apply(code: String, message: String, name: String, stack: String = null): SqliteError = {
-    val __obj = js.Dynamic.literal(code = code, message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqliteError]
   }
 }

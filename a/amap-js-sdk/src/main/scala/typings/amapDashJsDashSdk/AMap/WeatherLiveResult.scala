@@ -32,7 +32,7 @@ object WeatherLiveResult {
     windDirection: String,
     windPower: Double
   ): WeatherLiveResult = {
-    val __obj = js.Dynamic.literal(adcode = adcode, city = city, humidity = humidity, info = info, province = province, reportTime = reportTime, temperature = temperature, weather = weather, windDirection = windDirection, windPower = windPower)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], humidity = humidity.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any], reportTime = reportTime.asInstanceOf[js.Any], temperature = temperature.asInstanceOf[js.Any], weather = weather.asInstanceOf[js.Any], windDirection = windDirection.asInstanceOf[js.Any], windPower = windPower.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WeatherLiveResult]
   }

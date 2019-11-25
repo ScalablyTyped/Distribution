@@ -14,7 +14,7 @@ trait Anon_CHANGED extends js.Object {
 object Anon_CHANGED {
   @scala.inline
   def apply(CHANGED: CHANGED, DELETED: DELETED): Anon_CHANGED = {
-    val __obj = js.Dynamic.literal(CHANGED = CHANGED, DELETED = DELETED)
+    val __obj = js.Dynamic.literal(CHANGED = CHANGED.asInstanceOf[js.Any], DELETED = DELETED.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CHANGED]
   }

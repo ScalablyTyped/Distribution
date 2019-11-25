@@ -15,7 +15,7 @@ object GoogleActionsV2TriggerContext {
   @scala.inline
   def apply(timeContext: GoogleActionsV2TriggerContextTimeContext = null): GoogleActionsV2TriggerContext = {
     val __obj = js.Dynamic.literal()
-    if (timeContext != null) __obj.updateDynamic("timeContext")(timeContext)
+    if (timeContext != null) __obj.updateDynamic("timeContext")(timeContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2TriggerContext]
   }
 }

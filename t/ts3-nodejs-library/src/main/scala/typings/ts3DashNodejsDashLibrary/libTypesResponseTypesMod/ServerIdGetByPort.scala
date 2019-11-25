@@ -11,7 +11,7 @@ trait ServerIdGetByPort extends js.Object {
 object ServerIdGetByPort {
   @scala.inline
   def apply(server_id: Double): ServerIdGetByPort = {
-    val __obj = js.Dynamic.literal(server_id = server_id)
+    val __obj = js.Dynamic.literal(server_id = server_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerIdGetByPort]
   }

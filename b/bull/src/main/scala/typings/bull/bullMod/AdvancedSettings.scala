@@ -57,7 +57,7 @@ object AdvancedSettings {
     stalledInterval: Int | Double = null
   ): AdvancedSettings = {
     val __obj = js.Dynamic.literal()
-    if (backoffStrategies != null) __obj.updateDynamic("backoffStrategies")(backoffStrategies)
+    if (backoffStrategies != null) __obj.updateDynamic("backoffStrategies")(backoffStrategies.asInstanceOf[js.Any])
     if (drainDelay != null) __obj.updateDynamic("drainDelay")(drainDelay.asInstanceOf[js.Any])
     if (guardInterval != null) __obj.updateDynamic("guardInterval")(guardInterval.asInstanceOf[js.Any])
     if (lockDuration != null) __obj.updateDynamic("lockDuration")(lockDuration.asInstanceOf[js.Any])

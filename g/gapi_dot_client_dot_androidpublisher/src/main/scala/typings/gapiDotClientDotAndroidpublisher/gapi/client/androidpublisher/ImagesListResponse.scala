@@ -12,7 +12,7 @@ object ImagesListResponse {
   @scala.inline
   def apply(images: js.Array[Image] = null): ImagesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (images != null) __obj.updateDynamic("images")(images)
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagesListResponse]
   }
 }

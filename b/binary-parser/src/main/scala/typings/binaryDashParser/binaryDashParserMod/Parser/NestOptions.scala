@@ -16,7 +16,7 @@ object NestOptions {
     formatter: /* value */ Data => _ = null
   ): NestOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
     __obj.asInstanceOf[NestOptions]

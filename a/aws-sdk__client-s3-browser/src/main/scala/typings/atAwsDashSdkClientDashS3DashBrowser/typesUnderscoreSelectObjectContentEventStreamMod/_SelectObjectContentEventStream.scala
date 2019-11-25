@@ -42,11 +42,11 @@ object _SelectObjectContentEventStream {
     Stats: _StatsEvent = null
   ): _SelectObjectContentEventStream = {
     val __obj = js.Dynamic.literal()
-    if (Cont != null) __obj.updateDynamic("Cont")(Cont)
-    if (End != null) __obj.updateDynamic("End")(End)
-    if (Progress != null) __obj.updateDynamic("Progress")(Progress)
-    if (Records != null) __obj.updateDynamic("Records")(Records)
-    if (Stats != null) __obj.updateDynamic("Stats")(Stats)
+    if (Cont != null) __obj.updateDynamic("Cont")(Cont.asInstanceOf[js.Any])
+    if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
+    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
+    if (Records != null) __obj.updateDynamic("Records")(Records.asInstanceOf[js.Any])
+    if (Stats != null) __obj.updateDynamic("Stats")(Stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SelectObjectContentEventStream]
   }
 }

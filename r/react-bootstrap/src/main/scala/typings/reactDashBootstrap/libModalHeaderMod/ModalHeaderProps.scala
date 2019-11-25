@@ -26,12 +26,12 @@ object ModalHeaderProps {
     onHide: js.Function = null
   ): ModalHeaderProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
-    if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel.asInstanceOf[js.Any])
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalHeaderProps]
   }
 }

@@ -12,7 +12,7 @@ trait Domain extends js.Object {
 object Domain {
   @scala.inline
   def apply(x: js.Array[Double], y: js.Array[Double]): Domain = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Domain]
   }

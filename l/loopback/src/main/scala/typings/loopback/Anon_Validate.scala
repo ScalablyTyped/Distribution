@@ -11,7 +11,7 @@ trait Anon_Validate extends js.Object {
 object Anon_Validate {
   @scala.inline
   def apply(validate: Boolean): Anon_Validate = {
-    val __obj = js.Dynamic.literal(validate = validate)
+    val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Validate]
   }

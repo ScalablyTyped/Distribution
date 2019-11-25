@@ -22,11 +22,11 @@ object DialogflowV1Metadata {
     webhookUsed: String = null
   ): DialogflowV1Metadata = {
     val __obj = js.Dynamic.literal()
-    if (intentId != null) __obj.updateDynamic("intentId")(intentId)
-    if (intentName != null) __obj.updateDynamic("intentName")(intentName)
+    if (intentId != null) __obj.updateDynamic("intentId")(intentId.asInstanceOf[js.Any])
+    if (intentName != null) __obj.updateDynamic("intentName")(intentName.asInstanceOf[js.Any])
     if (nluResponseTime != null) __obj.updateDynamic("nluResponseTime")(nluResponseTime.asInstanceOf[js.Any])
-    if (webhookForSlotFillingUsed != null) __obj.updateDynamic("webhookForSlotFillingUsed")(webhookForSlotFillingUsed)
-    if (webhookUsed != null) __obj.updateDynamic("webhookUsed")(webhookUsed)
+    if (webhookForSlotFillingUsed != null) __obj.updateDynamic("webhookForSlotFillingUsed")(webhookForSlotFillingUsed.asInstanceOf[js.Any])
+    if (webhookUsed != null) __obj.updateDynamic("webhookUsed")(webhookUsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1Metadata]
   }
 }

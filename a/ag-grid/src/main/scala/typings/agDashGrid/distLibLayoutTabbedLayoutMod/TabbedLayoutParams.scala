@@ -19,10 +19,10 @@ object TabbedLayoutParams {
     onActiveItemClicked: js.Function = null,
     onItemClicked: js.Function = null
   ): TabbedLayoutParams = {
-    val __obj = js.Dynamic.literal(items = items)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (onActiveItemClicked != null) __obj.updateDynamic("onActiveItemClicked")(onActiveItemClicked)
-    if (onItemClicked != null) __obj.updateDynamic("onItemClicked")(onItemClicked)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (onActiveItemClicked != null) __obj.updateDynamic("onActiveItemClicked")(onActiveItemClicked.asInstanceOf[js.Any])
+    if (onItemClicked != null) __obj.updateDynamic("onItemClicked")(onItemClicked.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabbedLayoutParams]
   }
 }

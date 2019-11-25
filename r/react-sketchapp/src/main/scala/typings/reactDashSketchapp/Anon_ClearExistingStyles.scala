@@ -13,8 +13,8 @@ trait Anon_ClearExistingStyles extends js.Object {
 object Anon_ClearExistingStyles {
   @scala.inline
   def apply(context: SketchContext, clearExistingStyles: js.UndefOr[Boolean] = js.undefined): Anon_ClearExistingStyles = {
-    val __obj = js.Dynamic.literal(context = context)
-    if (!js.isUndefined(clearExistingStyles)) __obj.updateDynamic("clearExistingStyles")(clearExistingStyles)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearExistingStyles)) __obj.updateDynamic("clearExistingStyles")(clearExistingStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClearExistingStyles]
   }
 }

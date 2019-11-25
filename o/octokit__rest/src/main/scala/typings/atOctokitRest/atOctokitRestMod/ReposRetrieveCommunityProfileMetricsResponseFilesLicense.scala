@@ -15,7 +15,7 @@ trait ReposRetrieveCommunityProfileMetricsResponseFilesLicense extends js.Object
 object ReposRetrieveCommunityProfileMetricsResponseFilesLicense {
   @scala.inline
   def apply(html_url: String, key: String, name: String, spdx_id: String, url: String): ReposRetrieveCommunityProfileMetricsResponseFilesLicense = {
-    val __obj = js.Dynamic.literal(html_url = html_url, key = key, name = name, spdx_id = spdx_id, url = url)
+    val __obj = js.Dynamic.literal(html_url = html_url.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], spdx_id = spdx_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposRetrieveCommunityProfileMetricsResponseFilesLicense]
   }

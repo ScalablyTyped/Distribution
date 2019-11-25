@@ -23,7 +23,7 @@ trait ChangeTrustOperationResponse
 object ChangeTrustOperationResponse {
   @scala.inline
   def apply(
-    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     asset_code: String,
@@ -40,8 +40,8 @@ object ChangeTrustOperationResponse {
     `type`: changeTrust,
     type_i: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseTypeI.changeTrust
   ): ChangeTrustOperationResponse = {
-    val __obj = js.Dynamic.literal(_links = _links, asset_code = asset_code, asset_issuer = asset_issuer, asset_type = asset_type.asInstanceOf[js.Any], created_at = created_at, id = id, limit = limit, paging_token = paging_token, source_account = source_account, transaction_hash = transaction_hash, trustee = trustee, trustor = trustor, type_i = type_i)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], asset_code = asset_code.asInstanceOf[js.Any], asset_issuer = asset_issuer.asInstanceOf[js.Any], asset_type = asset_type.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], source_account = source_account.asInstanceOf[js.Any], transaction_hash = transaction_hash.asInstanceOf[js.Any], trustee = trustee.asInstanceOf[js.Any], trustor = trustor.asInstanceOf[js.Any], type_i = type_i.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeTrustOperationResponse]
   }
 }

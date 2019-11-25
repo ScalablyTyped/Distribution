@@ -22,7 +22,7 @@ object EditPolyVerticesEditOptions {
     touchIcon: Icon[IconOptions] | DivIcon = null
   ): EditPolyVerticesEditOptions = {
     val __obj = js.Dynamic.literal()
-    if (drawError != null) __obj.updateDynamic("drawError")(drawError)
+    if (drawError != null) __obj.updateDynamic("drawError")(drawError.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (touchIcon != null) __obj.updateDynamic("touchIcon")(touchIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditPolyVerticesEditOptions]

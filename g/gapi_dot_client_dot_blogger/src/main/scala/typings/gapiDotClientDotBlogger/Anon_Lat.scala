@@ -21,8 +21,8 @@ object Anon_Lat {
     val __obj = js.Dynamic.literal()
     if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
     if (lng != null) __obj.updateDynamic("lng")(lng.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (span != null) __obj.updateDynamic("span")(span)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lat]
   }
 }

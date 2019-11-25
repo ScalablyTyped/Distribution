@@ -234,7 +234,7 @@ object alexaDashSdkStrings {
   sealed trait archived extends ListObjectState
   
   @js.native
-  sealed trait completed extends ListItemObjectStatus
+  sealed trait completed_ extends ListItemObjectStatus
   
   @scala.inline
   def AlexaHouseholdListEventDOTItemsCreated: AlexaHouseholdListEventDOTItemsCreated = "AlexaHouseholdListEvent.ItemsCreated".asInstanceOf[AlexaHouseholdListEventDOTItemsCreated]
@@ -379,6 +379,6 @@ object alexaDashSdkStrings {
   @scala.inline
   def archived: archived = "archived".asInstanceOf[archived]
   @scala.inline
-  def completed: completed = "completed".asInstanceOf[completed]
+  def completed_ : completed_ = "completed".asInstanceOf[completed_]
 }
 

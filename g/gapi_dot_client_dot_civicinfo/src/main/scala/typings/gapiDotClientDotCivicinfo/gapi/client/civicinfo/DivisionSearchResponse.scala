@@ -14,8 +14,8 @@ object DivisionSearchResponse {
   @scala.inline
   def apply(kind: String = null, results: js.Array[DivisionSearchResult] = null): DivisionSearchResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (results != null) __obj.updateDynamic("results")(results)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[DivisionSearchResponse]
   }
 }

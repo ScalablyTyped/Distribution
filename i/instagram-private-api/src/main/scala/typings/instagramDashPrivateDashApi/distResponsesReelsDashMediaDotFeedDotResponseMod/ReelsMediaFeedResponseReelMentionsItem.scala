@@ -29,7 +29,7 @@ object ReelsMediaFeedResponseReelMentionsItem {
     y: String,
     z: Double
   ): ReelsMediaFeedResponseReelMentionsItem = {
-    val __obj = js.Dynamic.literal(height = height, is_hidden = is_hidden, is_pinned = is_pinned, rotation = rotation, user = user, width = width, x = x, y = y, z = z)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], is_hidden = is_hidden.asInstanceOf[js.Any], is_pinned = is_pinned.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReelsMediaFeedResponseReelMentionsItem]
   }

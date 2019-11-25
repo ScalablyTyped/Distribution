@@ -19,8 +19,8 @@ object ComponentConfig {
     createViewModel: js.Any = null,
     viewModel: ViewModelFunction | ViewModelSharedInstance | ViewModelFactoryFunction | AMDModule = null
   ): ComponentConfig = {
-    val __obj = js.Dynamic.literal(template = template)
-    if (createViewModel != null) __obj.updateDynamic("createViewModel")(createViewModel)
+    val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
+    if (createViewModel != null) __obj.updateDynamic("createViewModel")(createViewModel.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentConfig]
   }

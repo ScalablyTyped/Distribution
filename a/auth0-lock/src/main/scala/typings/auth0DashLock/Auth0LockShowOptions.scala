@@ -33,15 +33,15 @@ object Auth0LockShowOptions {
     rememberLastLogin: js.UndefOr[Boolean] = js.undefined
   ): Auth0LockShowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowForgotPassword)) __obj.updateDynamic("allowForgotPassword")(allowForgotPassword)
-    if (!js.isUndefined(allowLogin)) __obj.updateDynamic("allowLogin")(allowLogin)
-    if (!js.isUndefined(allowSignUp)) __obj.updateDynamic("allowSignUp")(allowSignUp)
-    if (allowedConnections != null) __obj.updateDynamic("allowedConnections")(allowedConnections)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (flashMessage != null) __obj.updateDynamic("flashMessage")(flashMessage)
+    if (!js.isUndefined(allowForgotPassword)) __obj.updateDynamic("allowForgotPassword")(allowForgotPassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLogin)) __obj.updateDynamic("allowLogin")(allowLogin.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSignUp)) __obj.updateDynamic("allowSignUp")(allowSignUp.asInstanceOf[js.Any])
+    if (allowedConnections != null) __obj.updateDynamic("allowedConnections")(allowedConnections.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (flashMessage != null) __obj.updateDynamic("flashMessage")(flashMessage.asInstanceOf[js.Any])
     if (initialScreen != null) __obj.updateDynamic("initialScreen")(initialScreen.asInstanceOf[js.Any])
-    if (languageDictionary != null) __obj.updateDynamic("languageDictionary")(languageDictionary)
-    if (!js.isUndefined(rememberLastLogin)) __obj.updateDynamic("rememberLastLogin")(rememberLastLogin)
+    if (languageDictionary != null) __obj.updateDynamic("languageDictionary")(languageDictionary.asInstanceOf[js.Any])
+    if (!js.isUndefined(rememberLastLogin)) __obj.updateDynamic("rememberLastLogin")(rememberLastLogin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockShowOptions]
   }
 }

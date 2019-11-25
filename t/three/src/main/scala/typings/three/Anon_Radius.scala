@@ -14,7 +14,7 @@ trait Anon_Radius extends js.Object {
 object Anon_Radius {
   @scala.inline
   def apply(radius: Double, segments: Double, thetaLength: Double, thetaStart: Double): Anon_Radius = {
-    val __obj = js.Dynamic.literal(radius = radius, segments = segments, thetaLength = thetaLength, thetaStart = thetaStart)
+    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Radius]
   }

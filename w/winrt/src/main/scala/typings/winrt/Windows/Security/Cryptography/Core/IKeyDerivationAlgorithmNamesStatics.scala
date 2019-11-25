@@ -41,7 +41,7 @@ object IKeyDerivationAlgorithmNamesStatics {
     sp80056aConcatSha384: String,
     sp80056aConcatSha512: String
   ): IKeyDerivationAlgorithmNamesStatics = {
-    val __obj = js.Dynamic.literal(pbkdf2Md5 = pbkdf2Md5, pbkdf2Sha1 = pbkdf2Sha1, pbkdf2Sha256 = pbkdf2Sha256, pbkdf2Sha384 = pbkdf2Sha384, pbkdf2Sha512 = pbkdf2Sha512, sp800108CtrHmacMd5 = sp800108CtrHmacMd5, sp800108CtrHmacSha1 = sp800108CtrHmacSha1, sp800108CtrHmacSha256 = sp800108CtrHmacSha256, sp800108CtrHmacSha384 = sp800108CtrHmacSha384, sp800108CtrHmacSha512 = sp800108CtrHmacSha512, sp80056aConcatMd5 = sp80056aConcatMd5, sp80056aConcatSha1 = sp80056aConcatSha1, sp80056aConcatSha256 = sp80056aConcatSha256, sp80056aConcatSha384 = sp80056aConcatSha384, sp80056aConcatSha512 = sp80056aConcatSha512)
+    val __obj = js.Dynamic.literal(pbkdf2Md5 = pbkdf2Md5.asInstanceOf[js.Any], pbkdf2Sha1 = pbkdf2Sha1.asInstanceOf[js.Any], pbkdf2Sha256 = pbkdf2Sha256.asInstanceOf[js.Any], pbkdf2Sha384 = pbkdf2Sha384.asInstanceOf[js.Any], pbkdf2Sha512 = pbkdf2Sha512.asInstanceOf[js.Any], sp800108CtrHmacMd5 = sp800108CtrHmacMd5.asInstanceOf[js.Any], sp800108CtrHmacSha1 = sp800108CtrHmacSha1.asInstanceOf[js.Any], sp800108CtrHmacSha256 = sp800108CtrHmacSha256.asInstanceOf[js.Any], sp800108CtrHmacSha384 = sp800108CtrHmacSha384.asInstanceOf[js.Any], sp800108CtrHmacSha512 = sp800108CtrHmacSha512.asInstanceOf[js.Any], sp80056aConcatMd5 = sp80056aConcatMd5.asInstanceOf[js.Any], sp80056aConcatSha1 = sp80056aConcatSha1.asInstanceOf[js.Any], sp80056aConcatSha256 = sp80056aConcatSha256.asInstanceOf[js.Any], sp80056aConcatSha384 = sp80056aConcatSha384.asInstanceOf[js.Any], sp80056aConcatSha512 = sp80056aConcatSha512.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IKeyDerivationAlgorithmNamesStatics]
   }

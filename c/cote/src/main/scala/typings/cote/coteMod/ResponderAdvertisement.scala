@@ -24,11 +24,11 @@ object ResponderAdvertisement {
     respondsTo: js.Array[String] = null,
     subset: String = null
   ): ResponderAdvertisement = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (respondsTo != null) __obj.updateDynamic("respondsTo")(respondsTo)
-    if (subset != null) __obj.updateDynamic("subset")(subset)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (respondsTo != null) __obj.updateDynamic("respondsTo")(respondsTo.asInstanceOf[js.Any])
+    if (subset != null) __obj.updateDynamic("subset")(subset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponderAdvertisement]
   }
 }

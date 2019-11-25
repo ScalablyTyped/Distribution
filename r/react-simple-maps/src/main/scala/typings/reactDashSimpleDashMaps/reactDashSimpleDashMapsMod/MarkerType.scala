@@ -11,7 +11,7 @@ trait MarkerType extends js.Object {
 object MarkerType {
   @scala.inline
   def apply(coordinates: Point): MarkerType = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MarkerType]
   }

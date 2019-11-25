@@ -29,7 +29,7 @@ object EditorWrappingInfo {
     wrappingColumn: Double,
     wrappingIndent: WrappingIndent
   ): EditorWrappingInfo = {
-    val __obj = js.Dynamic.literal(inDiffEditor = inDiffEditor, isDominatedByLongLines = isDominatedByLongLines, isViewportWrapping = isViewportWrapping, isWordWrapMinified = isWordWrapMinified, wordWrapBreakAfterCharacters = wordWrapBreakAfterCharacters, wordWrapBreakBeforeCharacters = wordWrapBreakBeforeCharacters, wordWrapBreakObtrusiveCharacters = wordWrapBreakObtrusiveCharacters, wrappingColumn = wrappingColumn, wrappingIndent = wrappingIndent)
+    val __obj = js.Dynamic.literal(inDiffEditor = inDiffEditor.asInstanceOf[js.Any], isDominatedByLongLines = isDominatedByLongLines.asInstanceOf[js.Any], isViewportWrapping = isViewportWrapping.asInstanceOf[js.Any], isWordWrapMinified = isWordWrapMinified.asInstanceOf[js.Any], wordWrapBreakAfterCharacters = wordWrapBreakAfterCharacters.asInstanceOf[js.Any], wordWrapBreakBeforeCharacters = wordWrapBreakBeforeCharacters.asInstanceOf[js.Any], wordWrapBreakObtrusiveCharacters = wordWrapBreakObtrusiveCharacters.asInstanceOf[js.Any], wrappingColumn = wrappingColumn.asInstanceOf[js.Any], wrappingIndent = wrappingIndent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EditorWrappingInfo]
   }

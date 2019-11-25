@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait BinTransform
   extends BaseBin
-     with Transforms {
+     with _Transforms {
   var anchor: js.UndefOr[Double | SignalRef] = js.undefined
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var extent: (Vector2[Double | SignalRef]) | SignalRef
@@ -42,7 +42,7 @@ object BinTransform {
     steps: (js.Array[Double | SignalRef]) | SignalRef = null
   ): BinTransform = {
     val __obj = js.Dynamic.literal(extent = extent.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
@@ -52,7 +52,7 @@ object BinTransform {
     if (minstep != null) __obj.updateDynamic("minstep")(minstep.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])

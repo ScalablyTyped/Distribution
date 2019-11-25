@@ -12,9 +12,9 @@ trait OnceBlockable extends js.Object {
 
 object OnceBlockable {
   @scala.inline
-  def apply(once_block: (block, js.Function0[Unit]) => Unit): OnceBlockable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("once")(js.Any.fromFunction2(once_block))
+  def apply(once: (block, js.Function0[Unit]) => Unit): OnceBlockable = {
+    val __obj = js.Dynamic.literal(once = js.Any.fromFunction2(once))
+  
     __obj.asInstanceOf[OnceBlockable]
   }
 }

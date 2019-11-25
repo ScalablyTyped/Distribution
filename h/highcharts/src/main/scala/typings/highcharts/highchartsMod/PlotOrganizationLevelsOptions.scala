@@ -59,14 +59,14 @@ object PlotOrganizationLevelsOptions {
     states: PointStatesOptionsObject = null
   ): PlotOrganizationLevelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (linkOpacity != null) __obj.updateDynamic("linkOpacity")(linkOpacity.asInstanceOf[js.Any])
-    if (states != null) __obj.updateDynamic("states")(states)
+    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotOrganizationLevelsOptions]
   }
 }

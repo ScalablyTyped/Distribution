@@ -11,7 +11,7 @@ trait Anon_Greaterthanorequalto extends js.Object {
 object Anon_Greaterthanorequalto {
   @scala.inline
   def apply(greater_than_or_equal_to: Double): Anon_Greaterthanorequalto = {
-    val __obj = js.Dynamic.literal(greater_than_or_equal_to = greater_than_or_equal_to)
+    val __obj = js.Dynamic.literal(greater_than_or_equal_to = greater_than_or_equal_to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Greaterthanorequalto]
   }

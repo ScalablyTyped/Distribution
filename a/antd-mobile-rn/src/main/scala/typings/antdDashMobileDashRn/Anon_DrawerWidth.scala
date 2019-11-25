@@ -13,7 +13,7 @@ trait Anon_DrawerWidth extends js.Object {
 object Anon_DrawerWidth {
   @scala.inline
   def apply(drawerWidth: Double, open: Boolean, position: String): Anon_DrawerWidth = {
-    val __obj = js.Dynamic.literal(drawerWidth = drawerWidth, open = open, position = position)
+    val __obj = js.Dynamic.literal(drawerWidth = drawerWidth.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DrawerWidth]
   }

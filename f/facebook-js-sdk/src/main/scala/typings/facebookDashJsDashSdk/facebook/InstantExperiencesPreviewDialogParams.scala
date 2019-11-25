@@ -22,9 +22,9 @@ object InstantExperiencesPreviewDialogParams {
     app_id: String = null,
     redirect_uri: String = null
   ): InstantExperiencesPreviewDialogParams = {
-    val __obj = js.Dynamic.literal(canvas_id = canvas_id, display = display, method = method)
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    val __obj = js.Dynamic.literal(canvas_id = canvas_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantExperiencesPreviewDialogParams]
   }
 }

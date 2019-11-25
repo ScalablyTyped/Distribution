@@ -42,13 +42,13 @@ object ValueAxisSettings {
     visible: js.UndefOr[Boolean] = js.undefined
   ): ValueAxisSettings = {
     val __obj = js.Dynamic.literal()
-    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (majorGridLines != null) __obj.updateDynamic("majorGridLines")(majorGridLines)
-    if (majorTickLines != null) __obj.updateDynamic("majorTickLines")(majorTickLines)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (rangePadding != null) __obj.updateDynamic("rangePadding")(rangePadding)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (majorGridLines != null) __obj.updateDynamic("majorGridLines")(majorGridLines.asInstanceOf[js.Any])
+    if (majorTickLines != null) __obj.updateDynamic("majorTickLines")(majorTickLines.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rangePadding != null) __obj.updateDynamic("rangePadding")(rangePadding.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueAxisSettings]
   }
 }

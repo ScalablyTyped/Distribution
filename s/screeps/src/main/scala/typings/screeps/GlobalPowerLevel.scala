@@ -22,7 +22,7 @@ trait GlobalPowerLevel extends js.Object {
 object GlobalPowerLevel {
   @scala.inline
   def apply(level: Double, progress: Double, progressTotal: Double): GlobalPowerLevel = {
-    val __obj = js.Dynamic.literal(level = level, progress = progress, progressTotal = progressTotal)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], progressTotal = progressTotal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GlobalPowerLevel]
   }

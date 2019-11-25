@@ -12,7 +12,7 @@ trait Anon_LU extends js.Object {
 object Anon_LU {
   @scala.inline
   def apply(LU: Matrix, P: Vector): Anon_LU = {
-    val __obj = js.Dynamic.literal(LU = LU, P = P)
+    val __obj = js.Dynamic.literal(LU = LU.asInstanceOf[js.Any], P = P.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LU]
   }

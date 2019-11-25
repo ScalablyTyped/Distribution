@@ -16,7 +16,7 @@ object BaseProps {
   def apply(render: () => ReactNode = null, targetWindow: Window = null): BaseProps = {
     val __obj = js.Dynamic.literal()
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction0(render))
-    if (targetWindow != null) __obj.updateDynamic("targetWindow")(targetWindow)
+    if (targetWindow != null) __obj.updateDynamic("targetWindow")(targetWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseProps]
   }
 }

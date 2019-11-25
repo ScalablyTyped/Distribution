@@ -19,6 +19,5 @@ object Cred extends js.Object {
   def sshKeyNew(username: String, publicKey: String, privateKey: String, passphrase: String): typings.nodegit.credMod.Cred = js.native
   def usernameNew(username: String): js.Promise[typings.nodegit.credMod.Cred] = js.native
   def userpassPlaintextNew(username: String, password: String): typings.nodegit.credMod.Cred = js.native
-  type TYPE = typings.nodegit.credMod.Cred.TYPE
 }
 

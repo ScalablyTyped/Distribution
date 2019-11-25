@@ -20,9 +20,9 @@ object AddPaymentInfoParameters {
     value: Int | Double = null
   ): AddPaymentInfoParameters = {
     val __obj = js.Dynamic.literal()
-    if (content_category != null) __obj.updateDynamic("content_category")(content_category)
-    if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (content_category != null) __obj.updateDynamic("content_category")(content_category.asInstanceOf[js.Any])
+    if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPaymentInfoParameters]
   }

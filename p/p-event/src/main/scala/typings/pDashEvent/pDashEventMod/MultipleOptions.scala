@@ -49,11 +49,11 @@ object MultipleOptions {
     resolveImmediately: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null
   ): MultipleOptions[EmittedType] = {
-    val __obj = js.Dynamic.literal(count = count)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs)
-    if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
-    if (!js.isUndefined(resolveImmediately)) __obj.updateDynamic("resolveImmediately")(resolveImmediately)
+    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.asInstanceOf[js.Any])
+    if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveImmediately)) __obj.updateDynamic("resolveImmediately")(resolveImmediately.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleOptions[EmittedType]]
   }

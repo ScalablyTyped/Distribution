@@ -23,10 +23,10 @@ object NodeInput {
     children: js.Array[String] = null,
     parent: String = null
   ): NodeInput = {
-    val __obj = js.Dynamic.literal(id = id, internal = internal)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeInput]
   }
 }

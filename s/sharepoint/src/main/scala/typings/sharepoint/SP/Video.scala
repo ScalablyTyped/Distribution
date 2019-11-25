@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.sharepoint.SP.DocumentSet.DocumentSet
 import typings.sharepoint.SP.Video.EmbedCodeConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +31,8 @@ object Video extends js.Object {
   }
   
   @js.native
-  class VideoSet () extends DocumentSet
+  class VideoSet ()
+    extends typings.sharepoint.SP.DocumentSet.DocumentSet
   
   /* static members */
   @js.native

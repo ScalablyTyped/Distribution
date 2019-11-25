@@ -11,7 +11,7 @@ trait EngineOptions extends js.Object {
 object EngineOptions {
   @scala.inline
   def apply(allowUndefinedFacts: Boolean): EngineOptions = {
-    val __obj = js.Dynamic.literal(allowUndefinedFacts = allowUndefinedFacts)
+    val __obj = js.Dynamic.literal(allowUndefinedFacts = allowUndefinedFacts.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EngineOptions]
   }

@@ -18,7 +18,7 @@ object MimosOptions {
   @scala.inline
   def apply(`override`: StringDictionary[MimosOptionsValue]): MimosOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("override")(`override`)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MimosOptions]
   }
 }

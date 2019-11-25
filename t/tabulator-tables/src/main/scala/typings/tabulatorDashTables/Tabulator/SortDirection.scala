@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SortDirection extends js.Object
 
+object SortDirection {
+  @scala.inline
+  def asc: typings.tabulatorDashTables.tabulatorDashTablesStrings.asc = this.cast("asc")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def desc: typings.tabulatorDashTables.tabulatorDashTablesStrings.desc = this.cast("desc")
+}
+

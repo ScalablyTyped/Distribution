@@ -23,8 +23,8 @@ object HandsontableBindingInformation {
     startDateColumn: Double,
     asyncUpdates: js.UndefOr[Boolean] = js.undefined
   ): HandsontableBindingInformation = {
-    val __obj = js.Dynamic.literal(additionalData = additionalData, endDateColumn = endDateColumn, instance = instance, startDateColumn = startDateColumn)
-    if (!js.isUndefined(asyncUpdates)) __obj.updateDynamic("asyncUpdates")(asyncUpdates)
+    val __obj = js.Dynamic.literal(additionalData = additionalData.asInstanceOf[js.Any], endDateColumn = endDateColumn.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], startDateColumn = startDateColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncUpdates)) __obj.updateDynamic("asyncUpdates")(asyncUpdates.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandsontableBindingInformation]
   }
 }

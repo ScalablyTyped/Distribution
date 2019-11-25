@@ -25,18 +25,18 @@ object IHyperCubeDimensionDef {
     qShowTotal: js.UndefOr[Boolean] = js.undefined,
     qTotalLabel: IStringExpressionContainer = null
   ): IHyperCubeDimensionDef = {
-    val __obj = js.Dynamic.literal(qDef = qDef)
-    if (qAttributeDimensions != null) __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions)
-    if (qAttributeExpressions != null) __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions)
-    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond)
-    if (!js.isUndefined(qIncludeElemValue)) __obj.updateDynamic("qIncludeElemValue")(qIncludeElemValue)
-    if (qLibraryId != null) __obj.updateDynamic("qLibraryId")(qLibraryId)
-    if (!js.isUndefined(qNullSuppression)) __obj.updateDynamic("qNullSuppression")(qNullSuppression)
-    if (qOtherLabel != null) __obj.updateDynamic("qOtherLabel")(qOtherLabel)
-    if (qOtherTotalSpec != null) __obj.updateDynamic("qOtherTotalSpec")(qOtherTotalSpec)
-    if (!js.isUndefined(qShowAll)) __obj.updateDynamic("qShowAll")(qShowAll)
-    if (!js.isUndefined(qShowTotal)) __obj.updateDynamic("qShowTotal")(qShowTotal)
-    if (qTotalLabel != null) __obj.updateDynamic("qTotalLabel")(qTotalLabel)
+    val __obj = js.Dynamic.literal(qDef = qDef.asInstanceOf[js.Any])
+    if (qAttributeDimensions != null) __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions.asInstanceOf[js.Any])
+    if (qAttributeExpressions != null) __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions.asInstanceOf[js.Any])
+    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIncludeElemValue)) __obj.updateDynamic("qIncludeElemValue")(qIncludeElemValue.asInstanceOf[js.Any])
+    if (qLibraryId != null) __obj.updateDynamic("qLibraryId")(qLibraryId.asInstanceOf[js.Any])
+    if (!js.isUndefined(qNullSuppression)) __obj.updateDynamic("qNullSuppression")(qNullSuppression.asInstanceOf[js.Any])
+    if (qOtherLabel != null) __obj.updateDynamic("qOtherLabel")(qOtherLabel.asInstanceOf[js.Any])
+    if (qOtherTotalSpec != null) __obj.updateDynamic("qOtherTotalSpec")(qOtherTotalSpec.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowAll)) __obj.updateDynamic("qShowAll")(qShowAll.asInstanceOf[js.Any])
+    if (!js.isUndefined(qShowTotal)) __obj.updateDynamic("qShowTotal")(qShowTotal.asInstanceOf[js.Any])
+    if (qTotalLabel != null) __obj.updateDynamic("qTotalLabel")(qTotalLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHyperCubeDimensionDef]
   }
 }

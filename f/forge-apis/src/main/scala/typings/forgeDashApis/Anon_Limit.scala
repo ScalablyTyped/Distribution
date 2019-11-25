@@ -15,8 +15,8 @@ object Anon_Limit {
   def apply(limit: Int | Double = null, region: String = null, startAt: String = null): Anon_Limit = {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Limit]
   }
 }

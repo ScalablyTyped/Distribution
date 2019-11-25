@@ -12,7 +12,7 @@ trait ApiVersion extends js.Object {
 object ApiVersion {
   @scala.inline
   def apply(apiVersion: Double, apiVersionMinor: Double): ApiVersion = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, apiVersionMinor = apiVersionMinor)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], apiVersionMinor = apiVersionMinor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ApiVersion]
   }

@@ -38,12 +38,12 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (badrequest != null) __obj.updateDynamic("badrequest")(js.Any.fromFunction3(badrequest))
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction2(debug))
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (domaincontroller != null) __obj.updateDynamic("domaincontroller")(domaincontroller)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (domaincontroller != null) __obj.updateDynamic("domaincontroller")(domaincontroller.asInstanceOf[js.Any])
     if (forbidden != null) __obj.updateDynamic("forbidden")(js.Any.fromFunction3(forbidden))
     if (internalservererror != null) __obj.updateDynamic("internalservererror")(js.Any.fromFunction3(internalservererror))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions.asInstanceOf[js.Any])
     if (unauthorized != null) __obj.updateDynamic("unauthorized")(js.Any.fromFunction3(unauthorized))
     __obj.asInstanceOf[Options]
   }

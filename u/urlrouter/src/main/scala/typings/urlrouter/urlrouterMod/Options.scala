@@ -23,7 +23,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction3(errorHandler))
     if (pageNotFound != null) __obj.updateDynamic("pageNotFound")(js.Any.fromFunction2(pageNotFound))
-    if (paramsName != null) __obj.updateDynamic("paramsName")(paramsName)
+    if (paramsName != null) __obj.updateDynamic("paramsName")(paramsName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -38,18 +38,18 @@ object ToggleButtonProps {
     tooltipOptions: TooltipOptions = null
   ): ToggleButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (offIcon != null) __obj.updateDynamic("offIcon")(offIcon)
-    if (offLabel != null) __obj.updateDynamic("offLabel")(offLabel)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (offIcon != null) __obj.updateDynamic("offIcon")(offIcon.asInstanceOf[js.Any])
+    if (offLabel != null) __obj.updateDynamic("offLabel")(offLabel.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onIcon != null) __obj.updateDynamic("onIcon")(onIcon)
-    if (onLabel != null) __obj.updateDynamic("onLabel")(onLabel)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (onIcon != null) __obj.updateDynamic("onIcon")(onIcon.asInstanceOf[js.Any])
+    if (onLabel != null) __obj.updateDynamic("onLabel")(onLabel.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToggleButtonProps]
   }
 }

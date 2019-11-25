@@ -26,9 +26,9 @@ object subscribersChangeArgs {
     change: subscribersChange = null,
     channel: String = null
   ): subscribersChangeArgs = {
-    val __obj = js.Dynamic.literal(client = client, clientId = clientId, meta = meta, timestamp = timestamp)
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    if (change != null) __obj.updateDynamic("change")(change.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[subscribersChangeArgs]
   }
 }

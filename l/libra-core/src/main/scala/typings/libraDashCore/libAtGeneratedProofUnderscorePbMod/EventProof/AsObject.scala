@@ -24,9 +24,9 @@ object AsObject {
     transactionInfoToEventProof: typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.AccumulatorProof.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (ledgerInfoToTransactionInfoProof != null) __obj.updateDynamic("ledgerInfoToTransactionInfoProof")(ledgerInfoToTransactionInfoProof)
-    if (transactionInfo != null) __obj.updateDynamic("transactionInfo")(transactionInfo)
-    if (transactionInfoToEventProof != null) __obj.updateDynamic("transactionInfoToEventProof")(transactionInfoToEventProof)
+    if (ledgerInfoToTransactionInfoProof != null) __obj.updateDynamic("ledgerInfoToTransactionInfoProof")(ledgerInfoToTransactionInfoProof.asInstanceOf[js.Any])
+    if (transactionInfo != null) __obj.updateDynamic("transactionInfo")(transactionInfo.asInstanceOf[js.Any])
+    if (transactionInfoToEventProof != null) __obj.updateDynamic("transactionInfoToEventProof")(transactionInfoToEventProof.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

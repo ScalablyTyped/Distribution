@@ -4,6 +4,7 @@ import typings.swiper.swiperMod.AutoplayEvent
 import typings.swiper.swiperMod.CommonEvent
 import typings.swiper.swiperMod.LazyLoadingEvent
 import typings.swiper.swiperMod.PaginationEvent
+import typings.swiper.swiperMod.SwiperEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,22 +17,32 @@ object swiperStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait autoplay extends AutoplayEvent
+  sealed trait autoplay
+    extends AutoplayEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait autoplayStart extends AutoplayEvent
+  sealed trait autoplayStart
+    extends AutoplayEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait autoplayStop extends AutoplayEvent
+  sealed trait autoplayStop
+    extends AutoplayEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait beforeDestroy extends CommonEvent
+  sealed trait beforeDestroy
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
   sealed trait bullets extends js.Object
   
   @js.native
-  sealed trait click extends CommonEvent
+  sealed trait click
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
   sealed trait column extends js.Object
@@ -49,7 +60,9 @@ object swiperStrings {
   sealed trait custom extends js.Object
   
   @js.native
-  sealed trait doubleTap extends CommonEvent
+  sealed trait doubleTap
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
   sealed trait fade extends js.Object
@@ -61,100 +74,156 @@ object swiperStrings {
   sealed trait fraction extends js.Object
   
   @js.native
-  sealed trait fromEdge extends CommonEvent
+  sealed trait fromEdge
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait imagesReady extends CommonEvent
+  sealed trait imagesReady
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait init extends CommonEvent
+  sealed trait init
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait lazyImageLoad extends LazyLoadingEvent
+  sealed trait lazyImageLoad
+    extends LazyLoadingEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait lazyImageReady extends LazyLoadingEvent
+  sealed trait lazyImageReady
+    extends LazyLoadingEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait paginationRender extends PaginationEvent
+  sealed trait paginationRender
+    extends PaginationEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait paginationUpdate extends PaginationEvent
+  sealed trait paginationUpdate
+    extends PaginationEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait progress extends CommonEvent
+  sealed trait progress
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
   sealed trait progressbar extends js.Object
   
   @js.native
-  sealed trait reachBeginning extends CommonEvent
+  sealed trait reachBeginning
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait reachEnd extends CommonEvent
+  sealed trait reachEnd
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait resize extends CommonEvent
+  sealed trait resize
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
   sealed trait row extends js.Object
   
   @js.native
-  sealed trait setTransition extends CommonEvent
+  sealed trait setTransition
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait setTranslate extends CommonEvent
+  sealed trait setTranslate
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
   sealed trait slide extends js.Object
   
   @js.native
-  sealed trait slideChange extends CommonEvent
+  sealed trait slideChange
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait slideChangeTransitionEnd extends CommonEvent
+  sealed trait slideChangeTransitionEnd
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait slideChangeTransitionStart extends CommonEvent
+  sealed trait slideChangeTransitionStart
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait slideNextTransitionEnd extends CommonEvent
+  sealed trait slideNextTransitionEnd
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait slideNextTransitionStart extends CommonEvent
+  sealed trait slideNextTransitionStart
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait slidePrevTransitionEnd extends CommonEvent
+  sealed trait slidePrevTransitionEnd
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait slidePrevTransitionStart extends CommonEvent
+  sealed trait slidePrevTransitionStart
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait sliderMove extends CommonEvent
+  sealed trait sliderMove
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait tap extends CommonEvent
+  sealed trait tap
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait touchEnd extends CommonEvent
+  sealed trait touchEnd
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait touchMove extends CommonEvent
+  sealed trait touchMove
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait touchMoveOpposite extends CommonEvent
+  sealed trait touchMoveOpposite
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait touchStart extends CommonEvent
+  sealed trait touchStart
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait transitionEnd extends CommonEvent
+  sealed trait transitionEnd
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
-  sealed trait transitionStart extends CommonEvent
+  sealed trait transitionStart
+    extends CommonEvent
+       with SwiperEvent
   
   @js.native
   sealed trait vertical extends js.Object

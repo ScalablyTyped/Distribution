@@ -15,7 +15,7 @@ trait SourceOptionsObject extends js.Object {
 object SourceOptionsObject {
   @scala.inline
   def apply(name: String, limit: Int | Double = null): SourceOptionsObject = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptionsObject]
   }

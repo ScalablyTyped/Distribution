@@ -14,7 +14,7 @@ trait Anon_PresWn extends js.Object {
 object Anon_PresWn {
   @scala.inline
   def apply(Pres: Presentation, Wn: DocumentWindow): Anon_PresWn = {
-    val __obj = js.Dynamic.literal(Pres = Pres, Wn = Wn)
+    val __obj = js.Dynamic.literal(Pres = Pres.asInstanceOf[js.Any], Wn = Wn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PresWn]
   }

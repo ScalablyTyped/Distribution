@@ -21,7 +21,7 @@ object Anon_ChildrenPersistState {
   ): Anon_ChildrenPersistState[T] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenPersistState[T]]
   }
 }

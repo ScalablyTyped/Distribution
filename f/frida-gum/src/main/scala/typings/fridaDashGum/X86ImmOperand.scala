@@ -15,8 +15,8 @@ trait X86ImmOperand
 object X86ImmOperand {
   @scala.inline
   def apply(size: Double, `type`: imm, value: Double | Int64): X86ImmOperand = {
-    val __obj = js.Dynamic.literal(size = size, value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[X86ImmOperand]
   }
 }

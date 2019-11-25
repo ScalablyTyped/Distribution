@@ -12,7 +12,7 @@ object Anon_Icons {
   @scala.inline
   def apply(icons: Anon_ColorColorType = null): Anon_Icons = {
     val __obj = js.Dynamic.literal()
-    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Icons]
   }
 }

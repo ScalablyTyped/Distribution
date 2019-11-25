@@ -23,10 +23,10 @@ object Game {
     text: String = null,
     text_entities: js.Array[MessageEntity] = null
   ): Game = {
-    val __obj = js.Dynamic.literal(description = description, photo = photo, title = title)
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (text_entities != null) __obj.updateDynamic("text_entities")(text_entities)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (text_entities != null) __obj.updateDynamic("text_entities")(text_entities.asInstanceOf[js.Any])
     __obj.asInstanceOf[Game]
   }
 }

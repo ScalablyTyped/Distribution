@@ -15,8 +15,8 @@ trait GraphQLRequestOptions extends js.Object {
 object GraphQLRequestOptions {
   @scala.inline
   def apply(documentId: String, surface: Anon_FriendlyName, variables: js.Any, accessToken: String = null): GraphQLRequestOptions = {
-    val __obj = js.Dynamic.literal(documentId = documentId, surface = surface, variables = variables)
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    val __obj = js.Dynamic.literal(documentId = documentId.asInstanceOf[js.Any], surface = surface.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLRequestOptions]
   }
 }

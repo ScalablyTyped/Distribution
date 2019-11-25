@@ -18,9 +18,9 @@ import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.fro
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.int32
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.max
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same_
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.string
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid_
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R2
@@ -64,13 +64,13 @@ trait OpHandler extends js.Object {
     x: Tensor[R3 | R4],
     filterSize: Double | (js.Tuple2[Double, Double]),
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid
+    pad: Double | same_ | valid_
   ): Tensor[R3] = js.native
   def avgPool(
     x: Tensor[R3 | R4],
     filterSize: Double | (js.Tuple2[Double, Double]),
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid,
+    pad: Double | same_ | valid_,
     dimRoundingMode: ceil | floor | round
   ): Tensor[R3] = js.native
   def batchNorm[R /* <: Rank */](x: Tensor[R], mean: Tensor[R] | Tensor1D | TensorLike, variance: Tensor[R] | Tensor1D | TensorLike): Tensor[R] = js.native
@@ -98,56 +98,56 @@ trait OpHandler extends js.Object {
   def batchToSpaceND[T /* <: Tensor[Rank] */](x: T, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = js.native
   @JSName("buffer")
   def buffer_bool[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: bool
   ): TensorBuffer[R, bool] = js.native
   @JSName("buffer")
   def buffer_bool[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: bool,
     values: Uint8Array
   ): TensorBuffer[R, bool] = js.native
   @JSName("buffer")
   def buffer_complex64[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: complex64
   ): TensorBuffer[R, complex64] = js.native
   @JSName("buffer")
   def buffer_complex64[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: complex64,
     values: Float32Array
   ): TensorBuffer[R, complex64] = js.native
   @JSName("buffer")
   def buffer_float32[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: float32
   ): TensorBuffer[R, float32] = js.native
   @JSName("buffer")
   def buffer_float32[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: float32,
     values: Float32Array
   ): TensorBuffer[R, float32] = js.native
   @JSName("buffer")
   def buffer_int32[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: int32
   ): TensorBuffer[R, int32] = js.native
   @JSName("buffer")
   def buffer_int32[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: int32,
     values: Int32Array
   ): TensorBuffer[R, int32] = js.native
   @JSName("buffer")
   def buffer_string[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: string
   ): TensorBuffer[R, string] = js.native
   @JSName("buffer")
   def buffer_string[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: string,
     values: js.Array[String]
   ): TensorBuffer[R, string] = js.native
@@ -160,7 +160,7 @@ trait OpHandler extends js.Object {
     x: Tensor[R2 | R3],
     filter: Tensor3D | TensorLike3D,
     stride: Double,
-    pad: Double | same | valid,
+    pad: Double | same_ | valid_,
     dataFormat: NCW | NWC,
     dilation: Double
   ): Tensor[R2] = js.native
@@ -168,7 +168,7 @@ trait OpHandler extends js.Object {
     x: Tensor[R2 | R3],
     filter: Tensor3D | TensorLike3D,
     stride: Double,
-    pad: Double | same | valid,
+    pad: Double | same_ | valid_,
     dataFormat: NCW | NWC,
     dilation: Double,
     dimRoundingMode: ceil | floor | round
@@ -177,7 +177,7 @@ trait OpHandler extends js.Object {
     x: Tensor[R3 | R4],
     filter: Tensor4D | TensorLike4D,
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid,
+    pad: Double | same_ | valid_,
     dataFormat: NCHW | NHWC,
     dilations: Double | (js.Tuple2[Double, Double])
   ): Tensor[R3] = js.native
@@ -185,7 +185,7 @@ trait OpHandler extends js.Object {
     x: Tensor[R3 | R4],
     filter: Tensor4D | TensorLike4D,
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid,
+    pad: Double | same_ | valid_,
     dataFormat: NCHW | NHWC,
     dilations: Double | (js.Tuple2[Double, Double]),
     dimRoundingMode: ceil | floor | round
@@ -195,14 +195,14 @@ trait OpHandler extends js.Object {
     filter: Tensor4D | TensorLike4D,
     outputShape: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid
+    pad: Double | same_ | valid_
   ): Tensor[R3] = js.native
   def conv2dTranspose(
     x: Tensor[R3 | R4],
     filter: Tensor4D | TensorLike4D,
     outputShape: (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid,
+    pad: Double | same_ | valid_,
     dimRoundingMode: ceil | floor | round
   ): Tensor[R3] = js.native
   def cos[T /* <: Tensor[Rank] */](x: T): T = js.native
@@ -213,7 +213,7 @@ trait OpHandler extends js.Object {
     x: Tensor[R3 | R4],
     filter: Tensor4D | TensorLike4D,
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid,
+    pad: Double | same_ | valid_,
     dataFormat: NCHW | NHWC,
     dilations: Double | (js.Tuple2[Double, Double])
   ): Tensor[R3] = js.native
@@ -221,7 +221,7 @@ trait OpHandler extends js.Object {
     x: Tensor[R3 | R4],
     filter: Tensor4D | TensorLike4D,
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid,
+    pad: Double | same_ | valid_,
     dataFormat: NCHW | NHWC,
     dilations: Double | (js.Tuple2[Double, Double]),
     dimRoundingMode: ceil | floor | round
@@ -290,13 +290,13 @@ trait OpHandler extends js.Object {
     x: Tensor[R3 | R4],
     filterSize: Double | (js.Tuple2[Double, Double]),
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid
+    pad: Double | same_ | valid_
   ): Tensor[R3] = js.native
   def maxPool(
     x: Tensor[R3 | R4],
     filterSize: Double | (js.Tuple2[Double, Double]),
     strides: Double | (js.Tuple2[Double, Double]),
-    pad: Double | same | valid,
+    pad: Double | same_ | valid_,
     dimRoundingMode: ceil | floor | round
   ): Tensor[R3] = js.native
   def maximum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
@@ -346,20 +346,20 @@ trait OpHandler extends js.Object {
     input: Tensor[R3 | R4],
     windowShape: Double | (js.Tuple2[Double, Double]),
     poolingType: avg | max,
-    padding: Double | same | valid
+    padding: Double | same_ | valid_
   ): Tensor[R3] = js.native
   def pool(
     input: Tensor[R3 | R4],
     windowShape: Double | (js.Tuple2[Double, Double]),
     poolingType: avg | max,
-    padding: Double | same | valid,
+    padding: Double | same_ | valid_,
     diationRate: Double | (js.Tuple2[Double, Double])
   ): Tensor[R3] = js.native
   def pool(
     input: Tensor[R3 | R4],
     windowShape: Double | (js.Tuple2[Double, Double]),
     poolingType: avg | max,
-    padding: Double | same | valid,
+    padding: Double | same_ | valid_,
     diationRate: Double | (js.Tuple2[Double, Double]),
     strides: Double | (js.Tuple2[Double, Double])
   ): Tensor[R3] = js.native
@@ -377,7 +377,7 @@ trait OpHandler extends js.Object {
   def relu6[T /* <: Tensor[Rank] */](x: T): T = js.native
   def reshape[R2 /* <: Rank */](
     x: Tensor[Rank],
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R2] */ js.Any
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R2] */ js.Any
   ): Tensor[R2] = js.native
   def reverse[T /* <: Tensor[Rank] */](x: T): T = js.native
   def reverse[T /* <: Tensor[Rank] */](x: T, axis: js.Array[Double]): T = js.native
@@ -390,7 +390,7 @@ trait OpHandler extends js.Object {
     depthwiseFilter: Tensor4D | TensorLike4D,
     pointwiseFilter: Tensor4D | TensorLike,
     strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same,
+    pad: valid_ | same_,
     dilation: (js.Tuple2[Double, Double]) | Double,
     dataFormat: NHWC | NCHW
   ): T = js.native

@@ -27,7 +27,7 @@ trait IModelDecoration extends js.Object {
 object IModelDecoration {
   @scala.inline
   def apply(id: String, options: IModelDecorationOptions, ownerId: Double, range: Range): IModelDecoration = {
-    val __obj = js.Dynamic.literal(id = id, options = options, ownerId = ownerId, range = range)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], ownerId = ownerId.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IModelDecoration]
   }

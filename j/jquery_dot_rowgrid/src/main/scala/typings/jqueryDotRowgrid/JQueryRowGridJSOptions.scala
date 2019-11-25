@@ -13,7 +13,7 @@ trait JQueryRowGridJSOptions extends js.Object {
 object JQueryRowGridJSOptions {
   @scala.inline
   def apply(itemSelector: String, maxMargin: Int | Double = null, minMargin: Int | Double = null): JQueryRowGridJSOptions = {
-    val __obj = js.Dynamic.literal(itemSelector = itemSelector)
+    val __obj = js.Dynamic.literal(itemSelector = itemSelector.asInstanceOf[js.Any])
     if (maxMargin != null) __obj.updateDynamic("maxMargin")(maxMargin.asInstanceOf[js.Any])
     if (minMargin != null) __obj.updateDynamic("minMargin")(minMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryRowGridJSOptions]

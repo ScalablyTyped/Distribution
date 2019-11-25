@@ -22,8 +22,8 @@ trait UpdateSamplingRuleOutput extends OutputTypesUnion {
 object UpdateSamplingRuleOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, SamplingRuleRecord: _UnmarshalledSamplingRuleRecord = null): UpdateSamplingRuleOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (SamplingRuleRecord != null) __obj.updateDynamic("SamplingRuleRecord")(SamplingRuleRecord)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (SamplingRuleRecord != null) __obj.updateDynamic("SamplingRuleRecord")(SamplingRuleRecord.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSamplingRuleOutput]
   }
 }

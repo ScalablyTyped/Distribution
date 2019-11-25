@@ -21,8 +21,8 @@ object SubnetworkSecondaryRange {
   @scala.inline
   def apply(ipCidrRange: String = null, rangeName: String = null): SubnetworkSecondaryRange = {
     val __obj = js.Dynamic.literal()
-    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange)
-    if (rangeName != null) __obj.updateDynamic("rangeName")(rangeName)
+    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
+    if (rangeName != null) __obj.updateDynamic("rangeName")(rangeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubnetworkSecondaryRange]
   }
 }

@@ -45,13 +45,13 @@ object IGeoJsonObject {
     properties: js.Any = null
   ): IGeoJsonObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoJsonObject]
   }
 }

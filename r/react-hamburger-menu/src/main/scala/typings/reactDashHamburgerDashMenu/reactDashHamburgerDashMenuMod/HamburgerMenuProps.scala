@@ -63,7 +63,7 @@ object HamburgerMenuProps {
     strokeWidth: Int | Double = null,
     width: Int | Double = null
   ): HamburgerMenuProps = {
-    val __obj = js.Dynamic.literal(color = color, isOpen = isOpen, menuClicked = js.Any.fromFunction0(menuClicked))
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], menuClicked = js.Any.fromFunction0(menuClicked))
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

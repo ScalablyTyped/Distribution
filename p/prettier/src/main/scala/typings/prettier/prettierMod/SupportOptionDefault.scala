@@ -12,7 +12,7 @@ trait SupportOptionDefault extends js.Object {
 object SupportOptionDefault {
   @scala.inline
   def apply(since: String, value: SupportOptionValue): SupportOptionDefault = {
-    val __obj = js.Dynamic.literal(since = since, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(since = since.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SupportOptionDefault]
   }

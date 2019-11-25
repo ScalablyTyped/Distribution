@@ -15,7 +15,7 @@ trait ExecuteEventData extends js.Object {
 object ExecuteEventData {
   @scala.inline
   def apply(args: js.Array[String], ctx: Properties, pattern: String, step: String): ExecuteEventData = {
-    val __obj = js.Dynamic.literal(args = args, ctx = ctx, pattern = pattern, step = step)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecuteEventData]
   }

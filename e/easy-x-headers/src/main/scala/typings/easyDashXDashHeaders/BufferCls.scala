@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Buffer")
 @js.native
-class BufferCls protected () extends Buffer {
+class BufferCls protected () extends NodeBuffer {
   /**
     * Allocates a new buffer containing the given {array} of octets.
     *

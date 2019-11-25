@@ -17,7 +17,7 @@ object GetRtmpUrlOptions {
   def apply(expires: Int | Double = null, params: js.Object = null, timeout: Int | Double = null): GetRtmpUrlOptions = {
     val __obj = js.Dynamic.literal()
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRtmpUrlOptions]
   }

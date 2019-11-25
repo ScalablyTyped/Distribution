@@ -13,8 +13,8 @@ object Anon_PrimaryColor {
   @scala.inline
   def apply(primaryColor: String = null, secondaryColor: String = null): Anon_PrimaryColor = {
     val __obj = js.Dynamic.literal()
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
-    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor)
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
+    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PrimaryColor]
   }
 }

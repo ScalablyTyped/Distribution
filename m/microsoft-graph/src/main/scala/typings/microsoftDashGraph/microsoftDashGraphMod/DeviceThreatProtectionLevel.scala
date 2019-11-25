@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait DeviceThreatProtectionLevel extends js.Object
 
+object DeviceThreatProtectionLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def high: typings.microsoftDashGraph.microsoftDashGraphStrings.high = this.cast("high")
+  @scala.inline
+  def low: typings.microsoftDashGraph.microsoftDashGraphStrings.low = this.cast("low")
+  @scala.inline
+  def medium: typings.microsoftDashGraph.microsoftDashGraphStrings.medium = this.cast("medium")
+  @scala.inline
+  def notSet: typings.microsoftDashGraph.microsoftDashGraphStrings.notSet = this.cast("notSet")
+  @scala.inline
+  def secured: typings.microsoftDashGraph.microsoftDashGraphStrings.secured = this.cast("secured")
+  @scala.inline
+  def unavailable: typings.microsoftDashGraph.microsoftDashGraphStrings.unavailable = this.cast("unavailable")
+}
+

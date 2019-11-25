@@ -35,11 +35,11 @@ object QuestCriterion {
     kind: String = null
   ): QuestCriterion = {
     val __obj = js.Dynamic.literal()
-    if (completionContribution != null) __obj.updateDynamic("completionContribution")(completionContribution)
-    if (currentContribution != null) __obj.updateDynamic("currentContribution")(currentContribution)
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
-    if (initialPlayerProgress != null) __obj.updateDynamic("initialPlayerProgress")(initialPlayerProgress)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (completionContribution != null) __obj.updateDynamic("completionContribution")(completionContribution.asInstanceOf[js.Any])
+    if (currentContribution != null) __obj.updateDynamic("currentContribution")(currentContribution.asInstanceOf[js.Any])
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
+    if (initialPlayerProgress != null) __obj.updateDynamic("initialPlayerProgress")(initialPlayerProgress.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestCriterion]
   }
 }

@@ -36,16 +36,16 @@ object Options {
     throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
     if (deepFilter != null) __obj.updateDynamic("deepFilter")(js.Any.fromFunction1(deepFilter))
     if (entryFilter != null) __obj.updateDynamic("entryFilter")(js.Any.fromFunction1(entryFilter))
     if (errorFilter != null) __obj.updateDynamic("errorFilter")(js.Any.fromFunction1(errorFilter))
-    if (!js.isUndefined(followSymbolicLinks)) __obj.updateDynamic("followSymbolicLinks")(followSymbolicLinks)
-    if (fs != null) __obj.updateDynamic("fs")(fs)
-    if (pathSegmentSeparator != null) __obj.updateDynamic("pathSegmentSeparator")(pathSegmentSeparator)
-    if (!js.isUndefined(stats)) __obj.updateDynamic("stats")(stats)
-    if (!js.isUndefined(throwErrorOnBrokenSymbolicLink)) __obj.updateDynamic("throwErrorOnBrokenSymbolicLink")(throwErrorOnBrokenSymbolicLink)
+    if (!js.isUndefined(followSymbolicLinks)) __obj.updateDynamic("followSymbolicLinks")(followSymbolicLinks.asInstanceOf[js.Any])
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
+    if (pathSegmentSeparator != null) __obj.updateDynamic("pathSegmentSeparator")(pathSegmentSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(stats)) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwErrorOnBrokenSymbolicLink)) __obj.updateDynamic("throwErrorOnBrokenSymbolicLink")(throwErrorOnBrokenSymbolicLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

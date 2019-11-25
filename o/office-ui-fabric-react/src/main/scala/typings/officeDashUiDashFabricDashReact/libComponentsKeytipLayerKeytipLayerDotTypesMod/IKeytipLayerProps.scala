@@ -71,12 +71,12 @@ object IKeytipLayerProps {
     ref: LegacyRef[IKeytipLayer] = null,
     styles: IStyleFunctionOrObject[IKeytipLayerStyleProps, IKeytipLayerStyles] = null
   ): IKeytipLayerProps = {
-    val __obj = js.Dynamic.literal(content = content)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (keytipExitSequences != null) __obj.updateDynamic("keytipExitSequences")(keytipExitSequences)
-    if (keytipReturnSequences != null) __obj.updateDynamic("keytipReturnSequences")(keytipReturnSequences)
-    if (keytipStartSequences != null) __obj.updateDynamic("keytipStartSequences")(keytipStartSequences)
+    if (keytipExitSequences != null) __obj.updateDynamic("keytipExitSequences")(keytipExitSequences.asInstanceOf[js.Any])
+    if (keytipReturnSequences != null) __obj.updateDynamic("keytipReturnSequences")(keytipReturnSequences.asInstanceOf[js.Any])
+    if (keytipStartSequences != null) __obj.updateDynamic("keytipStartSequences")(keytipStartSequences.asInstanceOf[js.Any])
     if (onEnterKeytipMode != null) __obj.updateDynamic("onEnterKeytipMode")(js.Any.fromFunction0(onEnterKeytipMode))
     if (onExitKeytipMode != null) __obj.updateDynamic("onExitKeytipMode")(js.Any.fromFunction1(onExitKeytipMode))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

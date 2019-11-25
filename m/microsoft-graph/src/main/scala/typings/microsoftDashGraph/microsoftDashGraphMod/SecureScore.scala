@@ -50,16 +50,16 @@ object SecureScore {
   ): SecureScore = {
     val __obj = js.Dynamic.literal()
     if (activeUserCount != null) __obj.updateDynamic("activeUserCount")(activeUserCount.asInstanceOf[js.Any])
-    if (averageComparativeScores != null) __obj.updateDynamic("averageComparativeScores")(averageComparativeScores)
-    if (azureTenantId != null) __obj.updateDynamic("azureTenantId")(azureTenantId)
-    if (controlScores != null) __obj.updateDynamic("controlScores")(controlScores)
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
+    if (averageComparativeScores != null) __obj.updateDynamic("averageComparativeScores")(averageComparativeScores.asInstanceOf[js.Any])
+    if (azureTenantId != null) __obj.updateDynamic("azureTenantId")(azureTenantId.asInstanceOf[js.Any])
+    if (controlScores != null) __obj.updateDynamic("controlScores")(controlScores.asInstanceOf[js.Any])
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
     if (currentScore != null) __obj.updateDynamic("currentScore")(currentScore.asInstanceOf[js.Any])
-    if (enabledServices != null) __obj.updateDynamic("enabledServices")(enabledServices)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (enabledServices != null) __obj.updateDynamic("enabledServices")(enabledServices.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (licensedUserCount != null) __obj.updateDynamic("licensedUserCount")(licensedUserCount.asInstanceOf[js.Any])
     if (maxScore != null) __obj.updateDynamic("maxScore")(maxScore.asInstanceOf[js.Any])
-    if (vendorInformation != null) __obj.updateDynamic("vendorInformation")(vendorInformation)
+    if (vendorInformation != null) __obj.updateDynamic("vendorInformation")(vendorInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureScore]
   }
 }

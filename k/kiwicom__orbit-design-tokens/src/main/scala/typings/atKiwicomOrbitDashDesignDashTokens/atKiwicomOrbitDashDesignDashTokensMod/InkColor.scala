@@ -29,7 +29,7 @@ object InkColor {
     normalActive: String,
     normalHover: String
   ): InkColor = {
-    val __obj = js.Dynamic.literal(light = light, lightActive = lightActive, lightHover = lightHover, lighter = lighter, lighterActive = lighterActive, lighterHover = lighterHover, normal = normal, normalActive = normalActive, normalHover = normalHover)
+    val __obj = js.Dynamic.literal(light = light.asInstanceOf[js.Any], lightActive = lightActive.asInstanceOf[js.Any], lightHover = lightHover.asInstanceOf[js.Any], lighter = lighter.asInstanceOf[js.Any], lighterActive = lighterActive.asInstanceOf[js.Any], lighterHover = lighterHover.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], normalActive = normalActive.asInstanceOf[js.Any], normalHover = normalHover.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InkColor]
   }

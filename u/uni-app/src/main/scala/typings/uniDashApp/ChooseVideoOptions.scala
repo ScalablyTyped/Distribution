@@ -53,7 +53,7 @@ object ChooseVideoOptions {
     val __obj = js.Dynamic.literal()
     if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed)
+    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])

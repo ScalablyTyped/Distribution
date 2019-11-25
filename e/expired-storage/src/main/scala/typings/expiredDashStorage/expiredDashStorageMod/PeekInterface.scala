@@ -22,9 +22,9 @@ trait PeekInterface extends js.Object {
 object PeekInterface {
   @scala.inline
   def apply(isExpired: Boolean, timeLeft: Int | Double = null, value: String = null): PeekInterface = {
-    val __obj = js.Dynamic.literal(isExpired = isExpired)
+    val __obj = js.Dynamic.literal(isExpired = isExpired.asInstanceOf[js.Any])
     if (timeLeft != null) __obj.updateDynamic("timeLeft")(timeLeft.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeekInterface]
   }
 }

@@ -23,7 +23,7 @@ object ReposEnablePagesSiteResponse {
     status: String,
     url: String
   ): ReposEnablePagesSiteResponse = {
-    val __obj = js.Dynamic.literal(cname = cname, custom_404 = custom_404, html_url = html_url, source = source, status = status, url = url)
+    val __obj = js.Dynamic.literal(cname = cname.asInstanceOf[js.Any], custom_404 = custom_404.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposEnablePagesSiteResponse]
   }

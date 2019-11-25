@@ -19,8 +19,8 @@ object JobReference {
   @scala.inline
   def apply(jobId: String = null, projectId: String = null): JobReference = {
     val __obj = js.Dynamic.literal()
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobReference]
   }
 }

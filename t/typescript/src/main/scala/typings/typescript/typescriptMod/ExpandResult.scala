@@ -12,7 +12,7 @@ trait ExpandResult extends js.Object {
 object ExpandResult {
   @scala.inline
   def apply(fileNames: js.Array[String], wildcardDirectories: MapLike[WatchDirectoryFlags]): ExpandResult = {
-    val __obj = js.Dynamic.literal(fileNames = fileNames, wildcardDirectories = wildcardDirectories)
+    val __obj = js.Dynamic.literal(fileNames = fileNames.asInstanceOf[js.Any], wildcardDirectories = wildcardDirectories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExpandResult]
   }

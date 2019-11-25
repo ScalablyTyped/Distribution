@@ -13,9 +13,9 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(url: String, timeout: Int | Double = null, tlsOptions: js.Object = null): ClientOptions = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions)
+    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

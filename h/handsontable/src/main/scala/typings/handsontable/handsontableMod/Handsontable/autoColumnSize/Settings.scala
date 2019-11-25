@@ -14,7 +14,7 @@ object Settings {
   def apply(syncLimit: String | Double = null, useHeaders: js.UndefOr[Boolean] = js.undefined): Settings = {
     val __obj = js.Dynamic.literal()
     if (syncLimit != null) __obj.updateDynamic("syncLimit")(syncLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHeaders)) __obj.updateDynamic("useHeaders")(useHeaders)
+    if (!js.isUndefined(useHeaders)) __obj.updateDynamic("useHeaders")(useHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

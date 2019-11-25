@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object CallOptionsWithPagination {
   @scala.inline
   def apply(autoPaginate: `false`): CallOptionsWithPagination = {
-    val __obj = js.Dynamic.literal(autoPaginate = autoPaginate)
+    val __obj = js.Dynamic.literal(autoPaginate = autoPaginate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CallOptionsWithPagination]
   }

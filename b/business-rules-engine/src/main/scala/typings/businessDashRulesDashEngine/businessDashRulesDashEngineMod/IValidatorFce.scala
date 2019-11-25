@@ -18,7 +18,7 @@ object IValidatorFce {
     AsyncValidationFce: /* args */ IError => Promise[js.Any] = null,
     ValidationFce: /* args */ IError => Unit = null
   ): IValidatorFce = {
-    val __obj = js.Dynamic.literal(Name = Name)
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     if (AsyncValidationFce != null) __obj.updateDynamic("AsyncValidationFce")(js.Any.fromFunction1(AsyncValidationFce))
     if (ValidationFce != null) __obj.updateDynamic("ValidationFce")(js.Any.fromFunction1(ValidationFce))
     __obj.asInstanceOf[IValidatorFce]

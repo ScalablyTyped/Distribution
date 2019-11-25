@@ -14,8 +14,8 @@ trait Hyperlink extends js.Object {
 object Hyperlink {
   @scala.inline
   def apply(Target: String, Tooltip: String = null): Hyperlink = {
-    val __obj = js.Dynamic.literal(Target = Target)
-    if (Tooltip != null) __obj.updateDynamic("Tooltip")(Tooltip)
+    val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
+    if (Tooltip != null) __obj.updateDynamic("Tooltip")(Tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hyperlink]
   }
 }

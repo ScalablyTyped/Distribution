@@ -27,10 +27,10 @@ object Anon_CompleteFailItemColor {
     itemColor: String = null,
     success: () => Unit = null
   ): Anon_CompleteFailItemColor = {
-    val __obj = js.Dynamic.literal(itemList = itemList)
+    val __obj = js.Dynamic.literal(itemList = itemList.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor)
+    if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[Anon_CompleteFailItemColor]
   }

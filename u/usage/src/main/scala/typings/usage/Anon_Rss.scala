@@ -12,7 +12,7 @@ trait Anon_Rss extends js.Object {
 object Anon_Rss {
   @scala.inline
   def apply(rss: Double, vsize: Double): Anon_Rss = {
-    val __obj = js.Dynamic.literal(rss = rss, vsize = vsize)
+    val __obj = js.Dynamic.literal(rss = rss.asInstanceOf[js.Any], vsize = vsize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rss]
   }

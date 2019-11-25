@@ -67,16 +67,16 @@ object DeviceDescriptor {
     serialNumber: String = null
   ): DeviceDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (etsiEnDeviceCategory != null) __obj.updateDynamic("etsiEnDeviceCategory")(etsiEnDeviceCategory)
-    if (etsiEnDeviceEmissionsClass != null) __obj.updateDynamic("etsiEnDeviceEmissionsClass")(etsiEnDeviceEmissionsClass)
-    if (etsiEnDeviceType != null) __obj.updateDynamic("etsiEnDeviceType")(etsiEnDeviceType)
-    if (etsiEnTechnologyId != null) __obj.updateDynamic("etsiEnTechnologyId")(etsiEnTechnologyId)
-    if (fccId != null) __obj.updateDynamic("fccId")(fccId)
-    if (fccTvbdDeviceType != null) __obj.updateDynamic("fccTvbdDeviceType")(fccTvbdDeviceType)
-    if (manufacturerId != null) __obj.updateDynamic("manufacturerId")(manufacturerId)
-    if (modelId != null) __obj.updateDynamic("modelId")(modelId)
-    if (rulesetIds != null) __obj.updateDynamic("rulesetIds")(rulesetIds)
-    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber)
+    if (etsiEnDeviceCategory != null) __obj.updateDynamic("etsiEnDeviceCategory")(etsiEnDeviceCategory.asInstanceOf[js.Any])
+    if (etsiEnDeviceEmissionsClass != null) __obj.updateDynamic("etsiEnDeviceEmissionsClass")(etsiEnDeviceEmissionsClass.asInstanceOf[js.Any])
+    if (etsiEnDeviceType != null) __obj.updateDynamic("etsiEnDeviceType")(etsiEnDeviceType.asInstanceOf[js.Any])
+    if (etsiEnTechnologyId != null) __obj.updateDynamic("etsiEnTechnologyId")(etsiEnTechnologyId.asInstanceOf[js.Any])
+    if (fccId != null) __obj.updateDynamic("fccId")(fccId.asInstanceOf[js.Any])
+    if (fccTvbdDeviceType != null) __obj.updateDynamic("fccTvbdDeviceType")(fccTvbdDeviceType.asInstanceOf[js.Any])
+    if (manufacturerId != null) __obj.updateDynamic("manufacturerId")(manufacturerId.asInstanceOf[js.Any])
+    if (modelId != null) __obj.updateDynamic("modelId")(modelId.asInstanceOf[js.Any])
+    if (rulesetIds != null) __obj.updateDynamic("rulesetIds")(rulesetIds.asInstanceOf[js.Any])
+    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceDescriptor]
   }
 }

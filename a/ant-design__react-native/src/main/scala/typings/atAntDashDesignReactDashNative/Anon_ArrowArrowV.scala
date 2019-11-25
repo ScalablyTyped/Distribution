@@ -49,7 +49,7 @@ object Anon_ArrowArrowV {
     multipleThumb: RegisteredStyle[ImageStyle],
     underlayColor: RegisteredStyle[ViewStyle]
   ): Anon_ArrowArrowV = {
-    val __obj = js.Dynamic.literal(Arrow = Arrow, ArrowV = ArrowV, Body = Body, BodyBottomLine = BodyBottomLine, Brief = Brief, BriefText = BriefText, Content = Content, Extra = Extra, Footer = Footer, Header = Header, Item = Item, Line = Line, Thumb = Thumb, column = column, multipleLine = multipleLine, multipleThumb = multipleThumb, underlayColor = underlayColor)
+    val __obj = js.Dynamic.literal(Arrow = Arrow.asInstanceOf[js.Any], ArrowV = ArrowV.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any], BodyBottomLine = BodyBottomLine.asInstanceOf[js.Any], Brief = Brief.asInstanceOf[js.Any], BriefText = BriefText.asInstanceOf[js.Any], Content = Content.asInstanceOf[js.Any], Extra = Extra.asInstanceOf[js.Any], Footer = Footer.asInstanceOf[js.Any], Header = Header.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Thumb = Thumb.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], multipleLine = multipleLine.asInstanceOf[js.Any], multipleThumb = multipleThumb.asInstanceOf[js.Any], underlayColor = underlayColor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArrowArrowV]
   }

@@ -24,8 +24,8 @@ object HighlightResultPrimitive {
     value: String,
     fullyHighlighted: js.UndefOr[Boolean] = js.undefined
   ): HighlightResultPrimitive = {
-    val __obj = js.Dynamic.literal(matchLevel = matchLevel.asInstanceOf[js.Any], matchedWords = matchedWords, value = value)
-    if (!js.isUndefined(fullyHighlighted)) __obj.updateDynamic("fullyHighlighted")(fullyHighlighted)
+    val __obj = js.Dynamic.literal(matchLevel = matchLevel.asInstanceOf[js.Any], matchedWords = matchedWords.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullyHighlighted)) __obj.updateDynamic("fullyHighlighted")(fullyHighlighted.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightResultPrimitive]
   }
 }

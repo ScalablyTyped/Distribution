@@ -20,11 +20,11 @@ object LeaseOptions {
     timeoutIntervalInMs: Int | Double = null
   ): LeaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions)
-    if (leaseDuration != null) __obj.updateDynamic("leaseDuration")(leaseDuration)
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)
+    if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions.asInstanceOf[js.Any])
+    if (leaseDuration != null) __obj.updateDynamic("leaseDuration")(leaseDuration.asInstanceOf[js.Any])
+    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
     if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
-    if (proposedLeaseId != null) __obj.updateDynamic("proposedLeaseId")(proposedLeaseId)
+    if (proposedLeaseId != null) __obj.updateDynamic("proposedLeaseId")(proposedLeaseId.asInstanceOf[js.Any])
     if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaseOptions]
   }

@@ -48,7 +48,7 @@ trait WebhookClientConfig extends js.Object {
 object WebhookClientConfig {
   @scala.inline
   def apply(caBundle: String, service: ServiceReference, url: String): WebhookClientConfig = {
-    val __obj = js.Dynamic.literal(caBundle = caBundle, service = service, url = url)
+    val __obj = js.Dynamic.literal(caBundle = caBundle.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebhookClientConfig]
   }

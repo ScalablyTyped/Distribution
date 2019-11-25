@@ -24,7 +24,7 @@ object IOptions {
   @scala.inline
   def apply(node: HTMLElement = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (node != null) __obj.updateDynamic("node")(node)
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

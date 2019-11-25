@@ -29,10 +29,10 @@ object ElementChangeResponse {
     error: Error = null,
     value: Anon_PostalCode | String = null
   ): ElementChangeResponse = {
-    val __obj = js.Dynamic.literal(brand = brand, complete = complete, elementType = elementType, empty = empty)
-    if (bankName != null) __obj.updateDynamic("bankName")(bankName)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], elementType = elementType.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any])
+    if (bankName != null) __obj.updateDynamic("bankName")(bankName.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementChangeResponse]
   }

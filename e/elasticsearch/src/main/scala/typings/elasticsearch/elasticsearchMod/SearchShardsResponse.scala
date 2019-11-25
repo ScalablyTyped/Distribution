@@ -12,7 +12,7 @@ trait SearchShardsResponse extends js.Object {
 object SearchShardsResponse {
   @scala.inline
   def apply(nodes: js.Any, shards: js.Array[js.Array[SearchShardsResponseShard]]): SearchShardsResponse = {
-    val __obj = js.Dynamic.literal(nodes = nodes, shards = shards)
+    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], shards = shards.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchShardsResponse]
   }

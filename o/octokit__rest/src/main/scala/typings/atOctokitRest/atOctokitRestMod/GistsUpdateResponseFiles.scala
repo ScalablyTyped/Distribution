@@ -20,10 +20,10 @@ object GistsUpdateResponseFiles {
     `new_file.txt`: GistsUpdateResponseFilesNewFileTxt
   ): GistsUpdateResponseFiles = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hello_world.md")(`hello_world.md`)
-    __obj.updateDynamic("hello_world.py")(`hello_world.py`)
-    __obj.updateDynamic("hello_world.rb")(`hello_world.rb`)
-    __obj.updateDynamic("new_file.txt")(`new_file.txt`)
+    __obj.updateDynamic("hello_world.md")(`hello_world.md`.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world.py")(`hello_world.py`.asInstanceOf[js.Any])
+    __obj.updateDynamic("hello_world.rb")(`hello_world.rb`.asInstanceOf[js.Any])
+    __obj.updateDynamic("new_file.txt")(`new_file.txt`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsUpdateResponseFiles]
   }
 }

@@ -14,7 +14,7 @@ object Anon_DownMargin {
   @scala.inline
   def apply(down: js.Any = null, margin: MarginType = null): Anon_DownMargin = {
     val __obj = js.Dynamic.literal()
-    if (down != null) __obj.updateDynamic("down")(down)
+    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DownMargin]
   }

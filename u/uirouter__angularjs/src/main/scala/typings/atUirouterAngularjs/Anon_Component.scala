@@ -13,8 +13,8 @@ object Anon_Component {
   @scala.inline
   def apply(component: String = null, template: String = null): Anon_Component = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Component]
   }
 }

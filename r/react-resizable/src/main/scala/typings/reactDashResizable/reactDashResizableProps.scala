@@ -8,6 +8,8 @@ trait reactDashResizableProps {
   @scala.inline
   def ResizableProps: typings.reactDashResizable.reactDashResizableMod.ResizableProps.type = typings.reactDashResizable.reactDashResizableMod.ResizableProps
   type ResizableProps = typings.reactDashResizable.reactDashResizableMod.ResizableProps
+  @scala.inline
+  def ResizableBoxProps: typings.reactDashResizable.reactDashResizableMod.ResizableProps.type = typings.reactDashResizable.reactDashResizableMod.ResizableProps
   type ResizableBoxProps = typings.reactDashResizable.reactDashResizableMod.ResizableBoxProps
 }
 

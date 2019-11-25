@@ -13,8 +13,8 @@ object Anon_Codeblock {
   @scala.inline
   def apply(codeblock: String = null, text: String = null): Anon_Codeblock = {
     val __obj = js.Dynamic.literal()
-    if (codeblock != null) __obj.updateDynamic("codeblock")(codeblock)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (codeblock != null) __obj.updateDynamic("codeblock")(codeblock.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Codeblock]
   }
 }

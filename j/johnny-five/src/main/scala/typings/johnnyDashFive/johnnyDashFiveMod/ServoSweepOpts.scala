@@ -13,7 +13,7 @@ trait ServoSweepOpts extends js.Object {
 object ServoSweepOpts {
   @scala.inline
   def apply(range: js.Array[Double], interval: Int | Double = null, step: Int | Double = null): ServoSweepOpts = {
-    val __obj = js.Dynamic.literal(range = range)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServoSweepOpts]

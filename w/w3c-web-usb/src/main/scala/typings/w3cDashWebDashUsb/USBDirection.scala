@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait USBDirection extends js.Object
 
+object USBDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def in: typings.w3cDashWebDashUsb.w3cDashWebDashUsbStrings.in = this.cast("in")
+  @scala.inline
+  def out: typings.w3cDashWebDashUsb.w3cDashWebDashUsbStrings.out = this.cast("out")
+}
+

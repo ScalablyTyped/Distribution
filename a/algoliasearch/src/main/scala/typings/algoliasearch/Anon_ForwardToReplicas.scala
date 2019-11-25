@@ -11,7 +11,7 @@ trait Anon_ForwardToReplicas extends js.Object {
 object Anon_ForwardToReplicas {
   @scala.inline
   def apply(forwardToReplicas: Boolean): Anon_ForwardToReplicas = {
-    val __obj = js.Dynamic.literal(forwardToReplicas = forwardToReplicas)
+    val __obj = js.Dynamic.literal(forwardToReplicas = forwardToReplicas.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ForwardToReplicas]
   }

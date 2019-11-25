@@ -14,8 +14,8 @@ trait CreateWorkspaceRequest extends js.Object {
 object CreateWorkspaceRequest {
   @scala.inline
   def apply(name: String, description: String = null): CreateWorkspaceRequest = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkspaceRequest]
   }
 }

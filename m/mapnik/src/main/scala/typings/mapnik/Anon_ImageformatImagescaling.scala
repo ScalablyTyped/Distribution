@@ -18,7 +18,7 @@ object Anon_ImageformatImagescaling {
   def apply(image_format: webp | jpeg | png | tiff = null, image_scaling: String = null): Anon_ImageformatImagescaling = {
     val __obj = js.Dynamic.literal()
     if (image_format != null) __obj.updateDynamic("image_format")(image_format.asInstanceOf[js.Any])
-    if (image_scaling != null) __obj.updateDynamic("image_scaling")(image_scaling)
+    if (image_scaling != null) __obj.updateDynamic("image_scaling")(image_scaling.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ImageformatImagescaling]
   }
 }

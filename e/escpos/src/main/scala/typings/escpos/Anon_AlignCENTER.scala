@@ -16,7 +16,7 @@ trait Anon_AlignCENTER extends js.Object {
 object Anon_AlignCENTER {
   @scala.inline
   def apply(align: LEFT | CENTER | RIGHT, cols: Double, text: String): Anon_AlignCENTER = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], cols = cols, text = text)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], cols = cols.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignCENTER]
   }

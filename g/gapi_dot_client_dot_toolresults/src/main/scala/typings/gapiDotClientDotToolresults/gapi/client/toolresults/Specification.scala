@@ -13,7 +13,7 @@ object Specification {
   @scala.inline
   def apply(androidTest: AndroidTest = null): Specification = {
     val __obj = js.Dynamic.literal()
-    if (androidTest != null) __obj.updateDynamic("androidTest")(androidTest)
+    if (androidTest != null) __obj.updateDynamic("androidTest")(androidTest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Specification]
   }
 }

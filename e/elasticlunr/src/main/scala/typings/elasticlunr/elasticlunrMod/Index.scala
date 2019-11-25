@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class Index[T] () extends js.Object {
   var documentStore: DocumentStore[T] = js.native
   var eventEmitter: EventEmitter = js.native
-  var index: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
     */ typings.elasticlunr.elasticlunrStrings.Index with js.Any = js.native
   var pipeline: Pipeline = js.native

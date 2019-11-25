@@ -12,7 +12,7 @@ object Anon_BorderColorString {
   @scala.inline
   def apply(borderColor: String = null): Anon_BorderColorString = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderColorString]
   }
 }

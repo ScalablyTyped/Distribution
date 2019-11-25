@@ -20,10 +20,10 @@ object TreemapChartColorScale {
     noDataColor: Color = null
   ): TreemapChartColorScale = {
     val __obj = js.Dynamic.literal()
-    if (maxValueColor != null) __obj.updateDynamic("maxValueColor")(maxValueColor)
-    if (midValueColor != null) __obj.updateDynamic("midValueColor")(midValueColor)
-    if (minValueColor != null) __obj.updateDynamic("minValueColor")(minValueColor)
-    if (noDataColor != null) __obj.updateDynamic("noDataColor")(noDataColor)
+    if (maxValueColor != null) __obj.updateDynamic("maxValueColor")(maxValueColor.asInstanceOf[js.Any])
+    if (midValueColor != null) __obj.updateDynamic("midValueColor")(midValueColor.asInstanceOf[js.Any])
+    if (minValueColor != null) __obj.updateDynamic("minValueColor")(minValueColor.asInstanceOf[js.Any])
+    if (noDataColor != null) __obj.updateDynamic("noDataColor")(noDataColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreemapChartColorScale]
   }
 }

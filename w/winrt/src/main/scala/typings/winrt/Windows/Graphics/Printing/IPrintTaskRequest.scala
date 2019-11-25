@@ -18,7 +18,7 @@ object IPrintTaskRequest {
     deadline: Date,
     getDeferral: () => PrintTaskRequestedDeferral
   ): IPrintTaskRequest = {
-    val __obj = js.Dynamic.literal(createPrintTask = js.Any.fromFunction2(createPrintTask), deadline = deadline, getDeferral = js.Any.fromFunction0(getDeferral))
+    val __obj = js.Dynamic.literal(createPrintTask = js.Any.fromFunction2(createPrintTask), deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
   
     __obj.asInstanceOf[IPrintTaskRequest]
   }

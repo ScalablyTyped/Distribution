@@ -16,8 +16,8 @@ object Options {
     inclusiveNamespaces: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeComments)) __obj.updateDynamic("includeComments")(includeComments)
-    if (!js.isUndefined(inclusiveNamespaces)) __obj.updateDynamic("inclusiveNamespaces")(inclusiveNamespaces)
+    if (!js.isUndefined(includeComments)) __obj.updateDynamic("includeComments")(includeComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(inclusiveNamespaces)) __obj.updateDynamic("inclusiveNamespaces")(inclusiveNamespaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

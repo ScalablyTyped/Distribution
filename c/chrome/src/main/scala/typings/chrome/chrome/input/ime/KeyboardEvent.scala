@@ -66,14 +66,14 @@ object KeyboardEvent {
     keyCode: Int | Double = null,
     shiftKey: js.UndefOr[Boolean] = js.undefined
   ): KeyboardEvent = {
-    val __obj = js.Dynamic.literal(code = code, key = key, requestId = requestId)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
-    if (!js.isUndefined(capsLock)) __obj.updateDynamic("capsLock")(capsLock)
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey)
-    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(capsLock)) __obj.updateDynamic("capsLock")(capsLock.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.asInstanceOf[js.Any])
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId.asInstanceOf[js.Any])
     if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey)
+    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardEvent]
   }
 }

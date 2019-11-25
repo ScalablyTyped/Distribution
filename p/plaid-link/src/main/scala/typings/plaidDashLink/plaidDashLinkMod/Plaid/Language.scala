@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Language extends js.Object
 
+object Language {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def en: typings.plaidDashLink.plaidDashLinkStrings.en = this.cast("en")
+  @scala.inline
+  def es: typings.plaidDashLink.plaidDashLinkStrings.es = this.cast("es")
+  @scala.inline
+  def fr: typings.plaidDashLink.plaidDashLinkStrings.fr = this.cast("fr")
+}
+

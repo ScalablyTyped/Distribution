@@ -35,9 +35,9 @@ object SaveDialogOptions {
     saveLabel: String = null
   ): SaveDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultUri != null) __obj.updateDynamic("defaultUri")(defaultUri)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (saveLabel != null) __obj.updateDynamic("saveLabel")(saveLabel)
+    if (defaultUri != null) __obj.updateDynamic("defaultUri")(defaultUri.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (saveLabel != null) __obj.updateDynamic("saveLabel")(saveLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveDialogOptions]
   }
 }

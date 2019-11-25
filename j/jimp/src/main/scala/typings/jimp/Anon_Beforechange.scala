@@ -24,7 +24,7 @@ object Anon_Beforechange {
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): Anon_Beforechange[T] = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Beforechange[T]]
   }
 }

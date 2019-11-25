@@ -36,7 +36,7 @@ object OsData {
     serial: String,
     servicepack: String
   ): OsData = {
-    val __obj = js.Dynamic.literal(arch = arch, build = build, codename = codename, codepage = codepage, distro = distro, hostname = hostname, kernel = kernel, logofile = logofile, platform = platform, release = release, serial = serial, servicepack = servicepack)
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], codename = codename.asInstanceOf[js.Any], codepage = codepage.asInstanceOf[js.Any], distro = distro.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], logofile = logofile.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], servicepack = servicepack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OsData]
   }

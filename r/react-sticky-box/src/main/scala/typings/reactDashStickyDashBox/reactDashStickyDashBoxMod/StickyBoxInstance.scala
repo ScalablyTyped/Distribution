@@ -31,7 +31,7 @@ object StickyBoxInstance {
     scrollPane: HTMLElement | Window,
     viewportHeight: Double
   ): StickyBoxInstance = {
-    val __obj = js.Dynamic.literal(latestScrollY = latestScrollY, mode = mode, naturalTop = naturalTop, node = node, nodeHeight = nodeHeight, offset = offset, parentHeight = parentHeight, scrollPane = scrollPane.asInstanceOf[js.Any], viewportHeight = viewportHeight)
+    val __obj = js.Dynamic.literal(latestScrollY = latestScrollY.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], naturalTop = naturalTop.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], nodeHeight = nodeHeight.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], parentHeight = parentHeight.asInstanceOf[js.Any], scrollPane = scrollPane.asInstanceOf[js.Any], viewportHeight = viewportHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StickyBoxInstance]
   }

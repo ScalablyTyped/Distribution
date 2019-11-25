@@ -17,8 +17,8 @@ object PaymentItem {
     label: java.lang.String,
     pending: js.UndefOr[scala.Boolean] = js.undefined
   ): PaymentItem = {
-    val __obj = js.Dynamic.literal(amount = amount, label = label)
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentItem]
   }
 }

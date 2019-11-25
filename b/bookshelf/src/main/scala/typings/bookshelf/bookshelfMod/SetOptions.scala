@@ -12,7 +12,7 @@ object SetOptions {
   @scala.inline
   def apply(unset: js.UndefOr[Boolean] = js.undefined): SetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(unset)) __obj.updateDynamic("unset")(unset)
+    if (!js.isUndefined(unset)) __obj.updateDynamic("unset")(unset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
 }

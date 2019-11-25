@@ -20,9 +20,9 @@ object Options {
     timeout: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolveReference)) __obj.updateDynamic("resolveReference")(resolveReference)
+    if (!js.isUndefined(resolveReference)) __obj.updateDynamic("resolveReference")(resolveReference.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

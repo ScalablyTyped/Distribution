@@ -22,7 +22,7 @@ trait Anon_AbsoluteName extends js.Object {
 object Anon_AbsoluteName {
   @scala.inline
   def apply(absolute: String, name: String, relative: String): Anon_AbsoluteName = {
-    val __obj = js.Dynamic.literal(absolute = absolute, name = name, relative = relative)
+    val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AbsoluteName]
   }

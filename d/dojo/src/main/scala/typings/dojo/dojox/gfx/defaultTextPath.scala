@@ -53,8 +53,8 @@ object defaultTextPath {
     text: String,
     `type`: String
   ): defaultTextPath = {
-    val __obj = js.Dynamic.literal(align = align, decoration = decoration, kerning = kerning, rotated = rotated, text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], decoration = decoration.asInstanceOf[js.Any], kerning = kerning.asInstanceOf[js.Any], rotated = rotated.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultTextPath]
   }
 }

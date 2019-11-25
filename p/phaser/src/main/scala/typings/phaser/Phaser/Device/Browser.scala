@@ -87,7 +87,7 @@ object Browser {
     trident: Boolean,
     tridentVersion: Double
   ): Browser = {
-    val __obj = js.Dynamic.literal(chrome = chrome, chromeVersion = chromeVersion, edge = edge, firefox = firefox, firefoxVersion = firefoxVersion, ie = ie, ieVersion = ieVersion, mobileSafari = mobileSafari, opera = opera, safari = safari, safariVersion = safariVersion, silk = silk, trident = trident, tridentVersion = tridentVersion)
+    val __obj = js.Dynamic.literal(chrome = chrome.asInstanceOf[js.Any], chromeVersion = chromeVersion.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], firefox = firefox.asInstanceOf[js.Any], firefoxVersion = firefoxVersion.asInstanceOf[js.Any], ie = ie.asInstanceOf[js.Any], ieVersion = ieVersion.asInstanceOf[js.Any], mobileSafari = mobileSafari.asInstanceOf[js.Any], opera = opera.asInstanceOf[js.Any], safari = safari.asInstanceOf[js.Any], safariVersion = safariVersion.asInstanceOf[js.Any], silk = silk.asInstanceOf[js.Any], trident = trident.asInstanceOf[js.Any], tridentVersion = tridentVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Browser]
   }

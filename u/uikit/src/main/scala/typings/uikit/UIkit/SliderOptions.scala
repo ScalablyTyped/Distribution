@@ -54,13 +54,13 @@ object SliderOptions {
     threshold: js.UndefOr[Boolean] = js.undefined
   ): SliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (activecls != null) __obj.updateDynamic("activecls")(activecls)
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (activecls != null) __obj.updateDynamic("activecls")(activecls.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (autoplayInterval != null) __obj.updateDynamic("autoplayInterval")(autoplayInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
-    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
-    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
-    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOptions]
   }
 }

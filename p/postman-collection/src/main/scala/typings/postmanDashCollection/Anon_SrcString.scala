@@ -11,7 +11,7 @@ trait Anon_SrcString extends js.Object {
 object Anon_SrcString {
   @scala.inline
   def apply(src: String): Anon_SrcString = {
-    val __obj = js.Dynamic.literal(src = src)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SrcString]
   }

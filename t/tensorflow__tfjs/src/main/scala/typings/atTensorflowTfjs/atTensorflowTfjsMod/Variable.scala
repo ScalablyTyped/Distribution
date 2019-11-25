@@ -1,14 +1,13 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs", "Variable")
 @js.native
-class Variable[R /* <: Rank */] protected ()
+class Variable[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */] protected ()
   extends typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Variable[R] {
   def this(
     initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R],
@@ -36,14 +35,14 @@ object variable extends js.Object {
     * @param dtype If set, initialValue will be converted to the given type.
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
-  def apply[R /* <: Rank */](initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R]): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
-  def apply[R /* <: Rank */](initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R], trainable: Boolean): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
-  def apply[R /* <: Rank */](
+  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R]): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
+  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R], trainable: Boolean): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
+  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
     initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R],
     trainable: Boolean,
     name: String
   ): typings.atTensorflowTfjsDashCore.distTensorMod.Variable[R] = js.native
-  def apply[R /* <: Rank */](
+  def apply[R /* <: typings.atTensorflowTfjsDashCore.distTypesMod.Rank */](
     initialValue: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[R],
     trainable: Boolean,
     name: String,

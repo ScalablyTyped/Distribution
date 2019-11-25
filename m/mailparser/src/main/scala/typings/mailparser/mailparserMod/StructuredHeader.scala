@@ -32,7 +32,7 @@ trait StructuredHeader extends _HeaderValue {
 object StructuredHeader {
   @scala.inline
   def apply(params: StringDictionary[String], value: String): StructuredHeader = {
-    val __obj = js.Dynamic.literal(params = params, value = value)
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StructuredHeader]
   }

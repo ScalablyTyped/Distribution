@@ -13,8 +13,8 @@ object ToInputObjectTypeOpts {
   @scala.inline
   def apply(postfix: String = null, prefix: String = null): ToInputObjectTypeOpts = {
     val __obj = js.Dynamic.literal()
-    if (postfix != null) __obj.updateDynamic("postfix")(postfix)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToInputObjectTypeOpts]
   }
 }

@@ -15,9 +15,9 @@ trait Anon_Arguments extends js.Object {
 object Anon_Arguments {
   @scala.inline
   def apply(command: String, seq: Double, `type`: request, arguments: js.Any = null): Anon_Arguments = {
-    val __obj = js.Dynamic.literal(command = command, seq = seq)
-    __obj.updateDynamic("type")(`type`)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Arguments]
   }
 }

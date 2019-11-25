@@ -24,7 +24,7 @@ object ScrollbarTrack {
     thumb: ScrollbarThumb,
     update: (Double, Double, Double) => Unit
   ): ScrollbarTrack = {
-    val __obj = js.Dynamic.literal(attachTo = js.Any.fromFunction1(attachTo), element = element, hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), thumb = thumb, update = js.Any.fromFunction3(update))
+    val __obj = js.Dynamic.literal(attachTo = js.Any.fromFunction1(attachTo), element = element.asInstanceOf[js.Any], hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), thumb = thumb.asInstanceOf[js.Any], update = js.Any.fromFunction3(update))
   
     __obj.asInstanceOf[ScrollbarTrack]
   }

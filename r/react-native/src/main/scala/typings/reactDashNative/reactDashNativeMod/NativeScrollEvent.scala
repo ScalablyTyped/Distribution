@@ -23,8 +23,8 @@ object NativeScrollEvent {
     zoomScale: Double,
     velocity: NativeScrollVelocity = null
   ): NativeScrollEvent = {
-    val __obj = js.Dynamic.literal(contentInset = contentInset, contentOffset = contentOffset, contentSize = contentSize, layoutMeasurement = layoutMeasurement, zoomScale = zoomScale)
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity)
+    val __obj = js.Dynamic.literal(contentInset = contentInset.asInstanceOf[js.Any], contentOffset = contentOffset.asInstanceOf[js.Any], contentSize = contentSize.asInstanceOf[js.Any], layoutMeasurement = layoutMeasurement.asInstanceOf[js.Any], zoomScale = zoomScale.asInstanceOf[js.Any])
+    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeScrollEvent]
   }
 }

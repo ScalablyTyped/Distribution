@@ -493,7 +493,7 @@ object chromeDashAppsStrings {
   sealed trait abnormal extends ExitEventReason
   
   @js.native
-  sealed trait abort extends js.Object
+  sealed trait abort_ extends js.Object
   
   @js.native
   sealed trait about_page extends js.Object
@@ -514,7 +514,9 @@ object chromeDashAppsStrings {
   sealed trait admin extends js.Object
   
   @js.native
-  sealed trait af extends kLanguageInfoTable
+  sealed trait af
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait alarms extends Permission
@@ -523,22 +525,26 @@ object chromeDashAppsStrings {
   sealed trait alert extends DialogMessageType
   
   @js.native
-  sealed trait all
+  sealed trait allAutoDetected extends js.Object
+  
+  @js.native
+  sealed trait all_
     extends ContextType
        with DeviceFilterType
        with MetadataOptionsType
   
   @js.native
-  sealed trait allAutoDetected extends js.Object
-  
-  @js.native
   sealed trait alwaysOnTopWindows extends Permission
   
   @js.native
-  sealed trait am extends kLanguageInfoTable
+  sealed trait am
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait an extends kLanguageInfoTable
+  sealed trait an
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait android extends OS
@@ -583,10 +589,14 @@ object chromeDashAppsStrings {
   sealed trait appview extends Permission
   
   @js.native
-  sealed trait ar extends kLanguageInfoTable
+  sealed trait ar
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ar_001 extends kLanguageInfoTable
+  sealed trait ar_001
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait arm extends js.Object
@@ -595,7 +605,9 @@ object chromeDashAppsStrings {
   sealed trait array extends js.Object
   
   @js.native
-  sealed trait ast extends kLanguageInfoTable
+  sealed trait ast
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait asynchronous extends js.Object
@@ -630,7 +642,9 @@ object chromeDashAppsStrings {
   sealed trait avx extends js.Object
   
   @js.native
-  sealed trait az extends kLanguageInfoTable
+  sealed trait az
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait background extends Permission
@@ -639,28 +653,38 @@ object chromeDashAppsStrings {
   sealed trait basic extends js.Object
   
   @js.native
-  sealed trait be extends kLanguageInfoTable
+  sealed trait be
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait bg extends kLanguageInfoTable
+  sealed trait bg
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait bh extends kLanguageInfoTable
+  sealed trait bh
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait bluetooth extends DeviceVendorIdSource
+  sealed trait bluetooth_ extends DeviceVendorIdSource
   
   @js.native
   sealed trait blur extends js.Object
   
   @js.native
-  sealed trait bn extends kLanguageInfoTable
+  sealed trait bn
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait br extends kLanguageInfoTable
+  sealed trait br
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait broadcast
@@ -674,13 +698,17 @@ object chromeDashAppsStrings {
   sealed trait browser_action extends js.Object
   
   @js.native
-  sealed trait bs extends kLanguageInfoTable
+  sealed trait bs
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait bulk extends js.Object
   
   @js.native
-  sealed trait ca extends kLanguageInfoTable
+  sealed trait ca
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait cancel extends ScanProgressType
@@ -699,7 +727,9 @@ object chromeDashAppsStrings {
     extends typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
-  sealed trait ceb extends kLanguageInfoTable
+  sealed trait ceb
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait certificateProvider extends ChromeOSOnlyPermissions
@@ -708,7 +738,7 @@ object chromeDashAppsStrings {
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait changed extends js.Object
+  sealed trait changed_ extends js.Object
   
   @js.native
   sealed trait checkbox extends js.Object
@@ -729,7 +759,9 @@ object chromeDashAppsStrings {
   sealed trait chrome_update extends js.Object
   
   @js.native
-  sealed trait ckb extends kLanguageInfoTable
+  sealed trait ckb
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait `class` extends js.Object
@@ -753,7 +785,9 @@ object chromeDashAppsStrings {
   sealed trait close extends js.Object
   
   @js.native
-  sealed trait co extends kLanguageInfoTable
+  sealed trait co
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait collapse_key extends DisallowedKeys
@@ -772,7 +806,7 @@ object chromeDashAppsStrings {
   sealed trait conflicting extends js.Object
   
   @js.native
-  sealed trait connected extends js.Object
+  sealed trait connected_ extends js.Object
   
   @js.native
   sealed trait connection_error extends js.Object
@@ -826,7 +860,9 @@ object chromeDashAppsStrings {
   sealed trait cros extends js.Object
   
   @js.native
-  sealed trait cs extends kLanguageInfoTable
+  sealed trait cs
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait csp_report extends ResourceType
@@ -841,10 +877,14 @@ object chromeDashAppsStrings {
   sealed trait cut extends js.Object
   
   @js.native
-  sealed trait cy extends kLanguageInfoTable
+  sealed trait cy
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait da extends kLanguageInfoTable
+  sealed trait da
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait data extends js.Object
@@ -853,19 +893,29 @@ object chromeDashAppsStrings {
   sealed trait dblclick extends js.Object
   
   @js.native
-  sealed trait de extends kLanguageInfoTable
+  sealed trait de
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `de-AT` extends kLanguageInfoTable
+  sealed trait `de-AT`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `de-CH` extends kLanguageInfoTable
+  sealed trait `de-CH`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `de-DE` extends kLanguageInfoTable
+  sealed trait `de-DE`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `de-LI` extends kLanguageInfoTable
+  sealed trait `de-LI`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait debugger extends NotAllowedAsOptionalPermissions
@@ -958,7 +1008,7 @@ object chromeDashAppsStrings {
   sealed trait declarativeWebRequestDOTSetRequestHeader extends DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait deleted extends js.Object
+  sealed trait deleted_ extends js.Object
   
   @js.native
   sealed trait denied extends js.Object
@@ -974,7 +1024,7 @@ object chromeDashAppsStrings {
   sealed trait development extends js.Object
   
   @js.native
-  sealed trait device extends js.Object
+  sealed trait device_ extends js.Object
   
   @js.native
   sealed trait diagnostics extends DevOnly
@@ -986,10 +1036,10 @@ object chromeDashAppsStrings {
   sealed trait directory extends js.Object
   
   @js.native
-  sealed trait disabled extends ZoomMode
+  sealed trait disabled_ extends ZoomMode
   
   @js.native
-  sealed trait disconnected extends OnReceiveErrorCode
+  sealed trait disconnected_ extends OnReceiveErrorCode
   
   @js.native
   sealed trait display extends js.Object
@@ -1049,43 +1099,65 @@ object chromeDashAppsStrings {
   sealed trait editable extends ContextType
   
   @js.native
-  sealed trait el extends kLanguageInfoTable
+  sealed trait el
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait emptied extends js.Object
   
   @js.native
-  sealed trait en extends kLanguageInfoTable
+  sealed trait en
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `en-AU` extends kLanguageInfoTable
+  sealed trait `en-AU`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `en-CA` extends kLanguageInfoTable
+  sealed trait `en-CA`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `en-GB` extends kLanguageInfoTable
+  sealed trait `en-GB`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `en-IN` extends kLanguageInfoTable
+  sealed trait `en-IN`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `en-NZ` extends kLanguageInfoTable
+  sealed trait `en-NZ`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `en-US` extends kLanguageInfoTable
+  sealed trait `en-US`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `en-ZA` extends kLanguageInfoTable
+  sealed trait `en-ZA`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait en_001 extends kLanguageInfoTable
+  sealed trait en_001
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait en_150 extends kLanguageInfoTable
+  sealed trait en_150
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait enabled extends js.Object
+  sealed trait enabled_ extends js.Object
   
   @js.native
   sealed trait encryptAuthenticatedRead extends CharacteristicProperties
@@ -1124,7 +1196,9 @@ object chromeDashAppsStrings {
   sealed trait enterpriseDOTplatformKeys extends ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait eo extends kLanguageInfoTable
+  sealed trait eo
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait ephemeral_app extends js.Object
@@ -1133,49 +1207,79 @@ object chromeDashAppsStrings {
   sealed trait error extends ScanProgressType
   
   @js.native
-  sealed trait es extends kLanguageInfoTable
+  sealed trait es
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-419` extends kLanguageInfoTable
+  sealed trait `es-419`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-AR` extends kLanguageInfoTable
+  sealed trait `es-AR`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-CL` extends kLanguageInfoTable
+  sealed trait `es-CL`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-CO` extends kLanguageInfoTable
+  sealed trait `es-CO`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-CR` extends kLanguageInfoTable
+  sealed trait `es-CR`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-ES` extends kLanguageInfoTable
+  sealed trait `es-ES`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-HN` extends kLanguageInfoTable
+  sealed trait `es-HN`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-MX` extends kLanguageInfoTable
+  sealed trait `es-MX`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-PE` extends kLanguageInfoTable
+  sealed trait `es-PE`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-US` extends kLanguageInfoTable
+  sealed trait `es-US`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-UY` extends kLanguageInfoTable
+  sealed trait `es-UY`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `es-VE` extends kLanguageInfoTable
+  sealed trait `es-VE`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait et extends kLanguageInfoTable
+  sealed trait et
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait eu extends kLanguageInfoTable
+  sealed trait eu
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait exit extends js.Object
@@ -1198,10 +1302,12 @@ object chromeDashAppsStrings {
   sealed trait extensions_page extends js.Object
   
   @js.native
-  sealed trait fa extends kLanguageInfoTable
+  sealed trait fa
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed_ extends js.Object
   
   @js.native
   sealed trait failure extends js.Object
@@ -1213,10 +1319,14 @@ object chromeDashAppsStrings {
   sealed trait female extends js.Object
   
   @js.native
-  sealed trait fi extends kLanguageInfoTable
+  sealed trait fi
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait fil extends kLanguageInfoTable
+  sealed trait fil
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait `file:///*/*` extends UrlMatches
@@ -1234,7 +1344,7 @@ object chromeDashAppsStrings {
   sealed trait file_handler extends js.Object
   
   @js.native
-  sealed trait filesystem extends RequestedPermission
+  sealed trait filesystem_ extends RequestedPermission
   
   @js.native
   sealed trait findupdate extends js.Object
@@ -1246,7 +1356,9 @@ object chromeDashAppsStrings {
   sealed trait fixed extends js.Object
   
   @js.native
-  sealed trait fo extends kLanguageInfoTable
+  sealed trait fo
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait focus extends js.Object
@@ -1261,16 +1373,24 @@ object chromeDashAppsStrings {
   sealed trait font extends ResourceType
   
   @js.native
-  sealed trait fr extends kLanguageInfoTable
+  sealed trait fr
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `fr-CA` extends kLanguageInfoTable
+  sealed trait `fr-CA`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `fr-CH` extends kLanguageInfoTable
+  sealed trait `fr-CH`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `fr-FR` extends kLanguageInfoTable
+  sealed trait `fr-FR`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait frame extends ContextType
@@ -1290,10 +1410,14 @@ object chromeDashAppsStrings {
   sealed trait fullscreenerror extends js.Object
   
   @js.native
-  sealed trait fy extends kLanguageInfoTable
+  sealed trait fy
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ga extends kLanguageInfoTable
+  sealed trait ga
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait gamepad
@@ -1303,7 +1427,9 @@ object chromeDashAppsStrings {
   sealed trait gcm extends Permission
   
   @js.native
-  sealed trait gd extends kLanguageInfoTable
+  sealed trait gd
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait geolocation
@@ -1315,19 +1441,23 @@ object chromeDashAppsStrings {
   sealed trait getter extends ObjectFunction
   
   @js.native
-  sealed trait gl extends kLanguageInfoTable
+  sealed trait gl
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait gn extends kLanguageInfoTable
+  sealed trait gn
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait goog extends DisallowedKeys
+  sealed trait googDOT_ extends DisallowedKeys
   
   @js.native
-  sealed trait googDOT extends DisallowedKeys
+  sealed trait goog_ extends DisallowedKeys
   
   @js.native
-  sealed trait google extends DisallowedKeys
+  sealed trait google_ extends DisallowedKeys
   
   @js.native
   sealed trait gotpointercapture extends js.Object
@@ -1336,34 +1466,50 @@ object chromeDashAppsStrings {
   sealed trait granted extends js.Object
   
   @js.native
-  sealed trait gu extends kLanguageInfoTable
+  sealed trait gu
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ha extends kLanguageInfoTable
+  sealed trait ha
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait haw extends kLanguageInfoTable
+  sealed trait haw
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait he extends kLanguageInfoTable
+  sealed trait he
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait hi extends kLanguageInfoTable
+  sealed trait hi
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait hid extends Permission
   
   @js.native
-  sealed trait hmn extends kLanguageInfoTable
+  sealed trait hmn
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait hosted_app extends js.Object
   
   @js.native
-  sealed trait hr extends kLanguageInfoTable
+  sealed trait hr
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ht extends kLanguageInfoTable
+  sealed trait ht
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait `http://*/*` extends UrlMatches
@@ -1378,16 +1524,24 @@ object chromeDashAppsStrings {
   sealed trait `https://wwwDOTgoogleapisDOTcom/*` extends UrlMatches
   
   @js.native
-  sealed trait hu extends kLanguageInfoTable
+  sealed trait hu
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait hy extends kLanguageInfoTable
+  sealed trait hy
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ia extends kLanguageInfoTable
+  sealed trait ia
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait id extends kLanguageInfoTable
+  sealed trait id
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait identity extends Permission
@@ -1401,7 +1555,9 @@ object chromeDashAppsStrings {
   sealed trait if_needed extends Interactive
   
   @js.native
-  sealed trait ig extends kLanguageInfoTable
+  sealed trait ig
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait ignore extends WindowOpenDisposition
@@ -1416,7 +1572,7 @@ object chromeDashAppsStrings {
   sealed trait in extends js.Object
   
   @js.native
-  sealed trait in_use extends js.Object
+  sealed trait in_use_ extends js.Object
   
   @js.native
   sealed trait incognito_persistent
@@ -1435,7 +1591,7 @@ object chromeDashAppsStrings {
   sealed trait initializing extends js.Object
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait input_ extends js.Object
   
   @js.native
   sealed trait install extends js.Object
@@ -1459,22 +1615,32 @@ object chromeDashAppsStrings {
   sealed trait ios extends OS
   
   @js.native
-  sealed trait is extends kLanguageInfoTable
+  sealed trait is
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait isochronous extends js.Object
   
   @js.native
-  sealed trait it extends kLanguageInfoTable
+  sealed trait it
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `it-CH` extends kLanguageInfoTable
+  sealed trait `it-CH`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `it-IT` extends kLanguageInfoTable
+  sealed trait `it-IT`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ja extends kLanguageInfoTable
+  sealed trait ja
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait joystick
@@ -1484,10 +1650,14 @@ object chromeDashAppsStrings {
   sealed trait jpeg extends ImageType
   
   @js.native
-  sealed trait jv extends kLanguageInfoTable
+  sealed trait jv
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ka extends kLanguageInfoTable
+  sealed trait ka
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait keep extends js.Object
@@ -1516,28 +1686,42 @@ object chromeDashAppsStrings {
   sealed trait kiosk extends js.Object
   
   @js.native
-  sealed trait kk extends kLanguageInfoTable
+  sealed trait kk
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait km extends kLanguageInfoTable
+  sealed trait km
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait kn extends kLanguageInfoTable
+  sealed trait kn
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait known extends DeviceFilterType
   
   @js.native
-  sealed trait ko extends kLanguageInfoTable
+  sealed trait ko
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ku extends kLanguageInfoTable
+  sealed trait ku
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ky extends kLanguageInfoTable
+  sealed trait ky
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait la extends kLanguageInfoTable
+  sealed trait la
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait last_write_win extends js.Object
@@ -1546,7 +1730,9 @@ object chromeDashAppsStrings {
   sealed trait launcher extends js.Object
   
   @js.native
-  sealed trait lb extends kLanguageInfoTable
+  sealed trait lb
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait left extends js.Object
@@ -1573,10 +1759,14 @@ object chromeDashAppsStrings {
   sealed trait list extends js.Object
   
   @js.native
-  sealed trait ln extends kLanguageInfoTable
+  sealed trait ln
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait lo extends kLanguageInfoTable
+  sealed trait lo
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait load extends js.Object
@@ -1624,10 +1814,14 @@ object chromeDashAppsStrings {
   sealed trait lostpointercapture extends js.Object
   
   @js.native
-  sealed trait lt extends kLanguageInfoTable
+  sealed trait lt
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait lv extends kLanguageInfoTable
+  sealed trait lv
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait mac extends OS
@@ -1647,7 +1841,7 @@ object chromeDashAppsStrings {
   sealed trait management_api extends js.Object
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual_ extends js.Object
   
   @js.native
   sealed trait maximized extends js.Object
@@ -1669,10 +1863,14 @@ object chromeDashAppsStrings {
   sealed trait media_pipeline_error extends js.Object
   
   @js.native
-  sealed trait mg extends kLanguageInfoTable
+  sealed trait mg
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait mi extends kLanguageInfoTable
+  sealed trait mi
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait mimeTypeAndTags extends MetadataOptionsType
@@ -1693,19 +1891,27 @@ object chromeDashAppsStrings {
   sealed trait mixed extends js.Object
   
   @js.native
-  sealed trait mk extends kLanguageInfoTable
+  sealed trait mk
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ml extends kLanguageInfoTable
+  sealed trait ml
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait mmx extends js.Object
   
   @js.native
-  sealed trait mn extends kLanguageInfoTable
+  sealed trait mn
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait mo extends kLanguageInfoTable
+  sealed trait mo
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait modem
@@ -1737,25 +1943,37 @@ object chromeDashAppsStrings {
   sealed trait mouseup extends js.Object
   
   @js.native
-  sealed trait mr extends kLanguageInfoTable
+  sealed trait mr
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ms extends kLanguageInfoTable
+  sealed trait ms
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait mt extends kLanguageInfoTable
+  sealed trait mt
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait my extends kLanguageInfoTable
+  sealed trait my
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait nativeMessaging extends Permission
   
   @js.native
-  sealed trait nb extends kLanguageInfoTable
+  sealed trait nb
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ne extends kLanguageInfoTable
+  sealed trait ne
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait network extends js.Object
@@ -1788,15 +2006,20 @@ object chromeDashAppsStrings {
   sealed trait newwindow extends js.Object
   
   @js.native
-  sealed trait nl extends kLanguageInfoTable
+  sealed trait nl
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait nn extends kLanguageInfoTable
+  sealed trait nn
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait no
-    extends kLanguageInfoTable
-       with Interactive
+    extends Interactive
+       with LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait no_such_device extends js.Object
@@ -1805,7 +2028,7 @@ object chromeDashAppsStrings {
   sealed trait no_update extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none_ extends js.Object
   
   @js.native
   sealed trait normal extends ExitEventReason
@@ -1834,19 +2057,25 @@ object chromeDashAppsStrings {
   sealed trait number extends JSONBasicTypes
   
   @js.native
-  sealed trait ny extends kLanguageInfoTable
+  sealed trait ny
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait `object` extends ResourceType
   
   @js.native
-  sealed trait oc extends kLanguageInfoTable
+  sealed trait oc
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait off extends js.Object
   
   @js.native
-  sealed trait om extends kLanguageInfoTable
+  sealed trait om
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait on extends js.Object
@@ -1876,13 +2105,15 @@ object chromeDashAppsStrings {
   sealed trait openbsd extends js.Object
   
   @js.native
-  sealed trait or extends kLanguageInfoTable
+  sealed trait or
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait os_update extends js.Object
   
   @js.native
-  sealed trait other extends ResourceType
+  sealed trait other_ extends ResourceType
   
   @js.native
   sealed trait out extends js.Object
@@ -1891,7 +2122,9 @@ object chromeDashAppsStrings {
   sealed trait overrideEscFullscreen extends UndocumentedPermissions
   
   @js.native
-  sealed trait pa extends kLanguageInfoTable
+  sealed trait pa
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait packaged_app extends js.Object
@@ -1946,7 +2179,9 @@ object chromeDashAppsStrings {
   sealed trait ping extends ResourceType
   
   @js.native
-  sealed trait pl extends kLanguageInfoTable
+  sealed trait pl
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait platformKeys extends ChromeOSOnlyPermissions
@@ -2005,19 +2240,29 @@ object chromeDashAppsStrings {
   sealed trait proxy extends NotAllowedAsOptionalPermissions
   
   @js.native
-  sealed trait ps extends kLanguageInfoTable
+  sealed trait ps
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait pt extends kLanguageInfoTable
+  sealed trait pt
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `pt-BR` extends kLanguageInfoTable
+  sealed trait `pt-BR`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `pt-PT` extends kLanguageInfoTable
+  sealed trait `pt-PT`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait qu extends kLanguageInfoTable
+  sealed trait qu
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait radio extends js.Object
@@ -2026,7 +2271,7 @@ object chromeDashAppsStrings {
   sealed trait ratechange extends js.Object
   
   @js.native
-  sealed trait read
+  sealed trait read_
     extends CharacteristicProperties
        with DescriptorPermissions
   
@@ -2086,16 +2331,22 @@ object chromeDashAppsStrings {
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait rm extends kLanguageInfoTable
+  sealed trait rm
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ro extends kLanguageInfoTable
+  sealed trait ro
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait rsaSign extends js.Object
   
   @js.native
-  sealed trait ru extends kLanguageInfoTable
+  sealed trait ru
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait running extends js.Object
@@ -2119,7 +2370,9 @@ object chromeDashAppsStrings {
   sealed trait scroll extends js.Object
   
   @js.native
-  sealed trait sd extends kLanguageInfoTable
+  sealed trait sd
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait securitypolicyviolation extends js.Object
@@ -2155,7 +2408,9 @@ object chromeDashAppsStrings {
   sealed trait setter extends ObjectFunction
   
   @js.native
-  sealed trait sh extends kLanguageInfoTable
+  sealed trait sh
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait shared_module_update extends js.Object
@@ -2170,7 +2425,9 @@ object chromeDashAppsStrings {
   sealed trait showConfigureDialog extends js.Object
   
   @js.native
-  sealed trait si extends kLanguageInfoTable
+  sealed trait si
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait sideload extends js.Object
@@ -2188,25 +2445,39 @@ object chromeDashAppsStrings {
   sealed trait sizechanged extends js.Object
   
   @js.native
-  sealed trait sk extends kLanguageInfoTable
+  sealed trait sk
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait sl extends kLanguageInfoTable
+  sealed trait sl
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait sm extends kLanguageInfoTable
+  sealed trait sm
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait sn extends kLanguageInfoTable
+  sealed trait sn
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait so extends kLanguageInfoTable
+  sealed trait so
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait sq extends kLanguageInfoTable
+  sealed trait sq
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait sr extends kLanguageInfoTable
+  sealed trait sr
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait sse extends js.Object
@@ -2227,7 +2498,9 @@ object chromeDashAppsStrings {
   sealed trait ssse3 extends js.Object
   
   @js.native
-  sealed trait st extends kLanguageInfoTable
+  sealed trait st
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait stalled extends js.Object
@@ -2248,7 +2521,9 @@ object chromeDashAppsStrings {
   sealed trait stylesheet extends ResourceType
   
   @js.native
-  sealed trait su extends kLanguageInfoTable
+  sealed trait su
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait sub_frame extends ResourceType
@@ -2266,10 +2541,14 @@ object chromeDashAppsStrings {
   sealed trait suspend extends js.Object
   
   @js.native
-  sealed trait sv extends kLanguageInfoTable
+  sealed trait sv
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait sw extends kLanguageInfoTable
+  sealed trait sw
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait sync extends StorageAreas
@@ -2313,7 +2592,9 @@ object chromeDashAppsStrings {
   sealed trait system_tray extends js.Object
   
   @js.native
-  sealed trait ta extends kLanguageInfoTable
+  sealed trait ta
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait tab extends js.Object
@@ -2324,7 +2605,9 @@ object chromeDashAppsStrings {
        with typings.chromeDashApps.chrome.bluetooth.DeviceType
   
   @js.native
-  sealed trait te extends kLanguageInfoTable
+  sealed trait te
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait temporary_unavailable extends js.Object
@@ -2339,10 +2622,14 @@ object chromeDashAppsStrings {
   sealed trait textPlain extends js.Object
   
   @js.native
-  sealed trait tg extends kLanguageInfoTable
+  sealed trait tg
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait th extends kLanguageInfoTable
+  sealed trait th
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait theme extends js.Object
@@ -2351,7 +2638,9 @@ object chromeDashAppsStrings {
   sealed trait throttled extends js.Object
   
   @js.native
-  sealed trait ti extends kLanguageInfoTable
+  sealed trait ti
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait timeout_error extends js.Object
@@ -2360,7 +2649,9 @@ object chromeDashAppsStrings {
   sealed trait timeupdate extends js.Object
   
   @js.native
-  sealed trait tk extends kLanguageInfoTable
+  sealed trait tk
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait tls1 extends js.Object
@@ -2375,7 +2666,9 @@ object chromeDashAppsStrings {
   sealed trait tls1DOT3 extends js.Object
   
   @js.native
-  sealed trait to extends kLanguageInfoTable
+  sealed trait to
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait toggle extends js.Object
@@ -2396,7 +2689,9 @@ object chromeDashAppsStrings {
   sealed trait touchstart extends js.Object
   
   @js.native
-  sealed trait tr extends kLanguageInfoTable
+  sealed trait tr
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait transitioncancel extends js.Object
@@ -2411,7 +2706,9 @@ object chromeDashAppsStrings {
   sealed trait transitionstart extends js.Object
   
   @js.native
-  sealed trait tt extends kLanguageInfoTable
+  sealed trait tt
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait tts
@@ -2419,13 +2716,19 @@ object chromeDashAppsStrings {
        with Permission
   
   @js.native
-  sealed trait tw extends kLanguageInfoTable
+  sealed trait tw
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait ug extends kLanguageInfoTable
+  sealed trait ug
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait uk extends kLanguageInfoTable
+  sealed trait uk
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait und extends LanguageCode
@@ -2434,13 +2737,13 @@ object chromeDashAppsStrings {
   sealed trait unhandled extends js.Object
   
   @js.native
-  sealed trait unknown
+  sealed trait unknown_
     extends typings.chromeDashApps.chrome.signedInDevices.DeviceType
        with OS
        with ObjectFunction
   
   @js.native
-  sealed trait unknown_error extends js.Object
+  sealed trait unknown_error_ extends js.Object
   
   @js.native
   sealed trait unlimitedStorage extends Permission
@@ -2464,30 +2767,36 @@ object chromeDashAppsStrings {
   sealed trait updated extends js.Object
   
   @js.native
-  sealed trait ur extends kLanguageInfoTable
+  sealed trait ur
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait url_handler extends js.Object
   
   @js.native
-  sealed trait usb
+  sealed trait usbDevices extends Permission
+  
+  @js.native
+  sealed trait usb_
     extends DeviceVendorIdSource
        with Permission
   
   @js.native
-  sealed trait usbDevices extends Permission
+  sealed trait user_ extends CSSOrigin
   
   @js.native
-  sealed trait user extends CSSOrigin
-  
-  @js.native
-  sealed trait uz extends kLanguageInfoTable
+  sealed trait uz
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait vendor extends js.Object
   
   @js.native
-  sealed trait vi extends kLanguageInfoTable
+  sealed trait vi
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait video
@@ -2508,7 +2817,9 @@ object chromeDashAppsStrings {
   sealed trait vpnProvider extends ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait wa extends kLanguageInfoTable
+  sealed trait wa
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait waiting extends js.Object
@@ -2543,12 +2854,12 @@ object chromeDashAppsStrings {
   sealed trait writableAuxiliaries extends CharacteristicProperties
   
   @js.native
-  sealed trait write
-    extends CharacteristicProperties
-       with DescriptorPermissions
+  sealed trait writeWithoutResponse extends CharacteristicProperties
   
   @js.native
-  sealed trait writeWithoutResponse extends CharacteristicProperties
+  sealed trait write_
+    extends CharacteristicProperties
+       with DescriptorPermissions
   
   @js.native
   sealed trait `x86-32` extends js.Object
@@ -2557,7 +2868,9 @@ object chromeDashAppsStrings {
   sealed trait `x86-64` extends js.Object
   
   @js.native
-  sealed trait xh extends kLanguageInfoTable
+  sealed trait xh
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait xmlhttprequest extends ResourceType
@@ -2566,43 +2879,67 @@ object chromeDashAppsStrings {
   sealed trait yes extends Interactive
   
   @js.native
-  sealed trait yi extends kLanguageInfoTable
+  sealed trait yi
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait yo extends kLanguageInfoTable
+  sealed trait yo
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait zh extends kLanguageInfoTable
+  sealed trait zh
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `zh-CN` extends kLanguageInfoTable
+  sealed trait `zh-CN`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `zh-HK` extends kLanguageInfoTable
+  sealed trait `zh-HK`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait `zh-TW` extends kLanguageInfoTable
+  sealed trait `zh-TW`
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait zh_hans_cn extends kLanguageInfoTable
+  sealed trait zh_hans_cn
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait zh_hans_sg extends kLanguageInfoTable
+  sealed trait zh_hans_sg
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait zh_hant_hk extends kLanguageInfoTable
+  sealed trait zh_hant_hk
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait zh_hant_mo extends kLanguageInfoTable
+  sealed trait zh_hant_mo
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
-  sealed trait zh_hant_tw extends kLanguageInfoTable
+  sealed trait zh_hant_tw
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @js.native
   sealed trait zoomchange extends js.Object
   
   @js.native
-  sealed trait zu extends kLanguageInfoTable
+  sealed trait zu
+    extends LanguageCode
+       with kLanguageInfoTable
   
   @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
@@ -2889,7 +3226,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def abnormal: abnormal = "abnormal".asInstanceOf[abnormal]
   @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
+  def abort_ : abort_ = "abort".asInstanceOf[abort_]
   @scala.inline
   def about_page: about_page = "about_page".asInstanceOf[about_page]
   @scala.inline
@@ -2909,9 +3246,9 @@ object chromeDashAppsStrings {
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
   def allAutoDetected: allAutoDetected = "allAutoDetected".asInstanceOf[allAutoDetected]
+  @scala.inline
+  def all_ : all_ = "all".asInstanceOf[all_]
   @scala.inline
   def alwaysOnTopWindows: alwaysOnTopWindows = "alwaysOnTopWindows".asInstanceOf[alwaysOnTopWindows]
   @scala.inline
@@ -2987,7 +3324,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def bh: bh = "bh".asInstanceOf[bh]
   @scala.inline
-  def bluetooth: bluetooth = "bluetooth".asInstanceOf[bluetooth]
+  def bluetooth_ : bluetooth_ = "bluetooth".asInstanceOf[bluetooth_]
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline
@@ -3025,7 +3362,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
-  def changed: changed = "changed".asInstanceOf[changed]
+  def changed_ : changed_ = "changed".asInstanceOf[changed_]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
@@ -3067,7 +3404,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def conflicting: conflicting = "conflicting".asInstanceOf[conflicting]
   @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
+  def connected_ : connected_ = "connected".asInstanceOf[connected_]
   @scala.inline
   def connection_error: connection_error = "connection_error".asInstanceOf[connection_error]
   @scala.inline
@@ -3187,7 +3524,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def declarativeWebRequestDOTSetRequestHeader: declarativeWebRequestDOTSetRequestHeader = "declarativeWebRequest.SetRequestHeader".asInstanceOf[declarativeWebRequestDOTSetRequestHeader]
   @scala.inline
-  def deleted: deleted = "deleted".asInstanceOf[deleted]
+  def deleted_ : deleted_ = "deleted".asInstanceOf[deleted_]
   @scala.inline
   def denied: denied = "denied".asInstanceOf[denied]
   @scala.inline
@@ -3197,7 +3534,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def development: development = "development".asInstanceOf[development]
   @scala.inline
-  def device: device = "device".asInstanceOf[device]
+  def device_ : device_ = "device".asInstanceOf[device_]
   @scala.inline
   def diagnostics: diagnostics = "diagnostics".asInstanceOf[diagnostics]
   @scala.inline
@@ -3205,9 +3542,9 @@ object chromeDashAppsStrings {
   @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
   @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  def disabled_ : disabled_ = "disabled".asInstanceOf[disabled_]
   @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  def disconnected_ : disconnected_ = "disconnected".asInstanceOf[disconnected_]
   @scala.inline
   def display: display = "display".asInstanceOf[display]
   @scala.inline
@@ -3271,7 +3608,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def en_150: en_150 = "en_150".asInstanceOf[en_150]
   @scala.inline
-  def enabled: enabled = "enabled".asInstanceOf[enabled]
+  def enabled_ : enabled_ = "enabled".asInstanceOf[enabled_]
   @scala.inline
   def encryptAuthenticatedRead: encryptAuthenticatedRead = "encryptAuthenticatedRead".asInstanceOf[encryptAuthenticatedRead]
   @scala.inline
@@ -3347,7 +3684,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def fa: fa = "fa".asInstanceOf[fa]
   @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  def failed_ : failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
   @scala.inline
@@ -3369,7 +3706,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def file_handler: file_handler = "file_handler".asInstanceOf[file_handler]
   @scala.inline
-  def filesystem: filesystem = "filesystem".asInstanceOf[filesystem]
+  def filesystem_ : filesystem_ = "filesystem".asInstanceOf[filesystem_]
   @scala.inline
   def findupdate: findupdate = "findupdate".asInstanceOf[findupdate]
   @scala.inline
@@ -3423,11 +3760,11 @@ object chromeDashAppsStrings {
   @scala.inline
   def gn: gn = "gn".asInstanceOf[gn]
   @scala.inline
-  def goog: goog = "goog".asInstanceOf[goog]
+  def googDOT_ : googDOT_ = "goog.".asInstanceOf[googDOT_]
   @scala.inline
-  def googDOT: googDOT = "goog.".asInstanceOf[googDOT]
+  def goog_ : goog_ = "goog".asInstanceOf[goog_]
   @scala.inline
-  def google: google = "google".asInstanceOf[google]
+  def google_ : google_ = "google".asInstanceOf[google_]
   @scala.inline
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   @scala.inline
@@ -3483,7 +3820,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def in: in = "in".asInstanceOf[in]
   @scala.inline
-  def in_use: in_use = "in_use".asInstanceOf[in_use]
+  def in_use_ : in_use_ = "in_use".asInstanceOf[in_use_]
   @scala.inline
   def incognito_persistent: incognito_persistent = "incognito_persistent".asInstanceOf[incognito_persistent]
   @scala.inline
@@ -3493,7 +3830,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def initializing: initializing = "initializing".asInstanceOf[initializing]
   @scala.inline
-  def input: input = "input".asInstanceOf[input]
+  def input_ : input_ = "input".asInstanceOf[input_]
   @scala.inline
   def install: install = "install".asInstanceOf[install]
   @scala.inline
@@ -3631,7 +3968,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def management_api: management_api = "management_api".asInstanceOf[management_api]
   @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
+  def manual_ : manual_ = "manual".asInstanceOf[manual_]
   @scala.inline
   def maximized: maximized = "maximized".asInstanceOf[maximized]
   @scala.inline
@@ -3731,7 +4068,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def no_update: no_update = "no_update".asInstanceOf[no_update]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def none_ : none_ = "none".asInstanceOf[none_]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
@@ -3779,7 +4116,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def os_update: os_update = "os_update".asInstanceOf[os_update]
   @scala.inline
-  def other: other = "other".asInstanceOf[other]
+  def other_ : other_ = "other".asInstanceOf[other_]
   @scala.inline
   def out: out = "out".asInstanceOf[out]
   @scala.inline
@@ -3871,7 +4208,7 @@ object chromeDashAppsStrings {
   @scala.inline
   def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
   @scala.inline
-  def read: read = "read".asInstanceOf[read]
+  def read_ : read_ = "read".asInstanceOf[read_]
   @scala.inline
   def regular: regular = "regular".asInstanceOf[regular]
   @scala.inline
@@ -4135,9 +4472,9 @@ object chromeDashAppsStrings {
   @scala.inline
   def unhandled: unhandled = "unhandled".asInstanceOf[unhandled]
   @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
-  def unknown_error: unknown_error = "unknown_error".asInstanceOf[unknown_error]
+  def unknown_error_ : unknown_error_ = "unknown_error".asInstanceOf[unknown_error_]
   @scala.inline
   def unlimitedStorage: unlimitedStorage = "unlimitedStorage".asInstanceOf[unlimitedStorage]
   @scala.inline
@@ -4157,11 +4494,11 @@ object chromeDashAppsStrings {
   @scala.inline
   def url_handler: url_handler = "url_handler".asInstanceOf[url_handler]
   @scala.inline
-  def usb: usb = "usb".asInstanceOf[usb]
-  @scala.inline
   def usbDevices: usbDevices = "usbDevices".asInstanceOf[usbDevices]
   @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  def usb_ : usb_ = "usb".asInstanceOf[usb_]
+  @scala.inline
+  def user_ : user_ = "user".asInstanceOf[user_]
   @scala.inline
   def uz: uz = "uz".asInstanceOf[uz]
   @scala.inline
@@ -4201,9 +4538,9 @@ object chromeDashAppsStrings {
   @scala.inline
   def writableAuxiliaries: writableAuxiliaries = "writableAuxiliaries".asInstanceOf[writableAuxiliaries]
   @scala.inline
-  def write: write = "write".asInstanceOf[write]
-  @scala.inline
   def writeWithoutResponse: writeWithoutResponse = "writeWithoutResponse".asInstanceOf[writeWithoutResponse]
+  @scala.inline
+  def write_ : write_ = "write".asInstanceOf[write_]
   @scala.inline
   def `x86-32`: `x86-32` = "x86-32".asInstanceOf[`x86-32`]
   @scala.inline

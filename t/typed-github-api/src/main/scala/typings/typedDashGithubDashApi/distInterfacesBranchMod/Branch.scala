@@ -18,7 +18,7 @@ object Branch {
     name: String,
     repository: RepositoryRef
   ): Branch = {
-    val __obj = js.Dynamic.literal(commit = commit, loadAsync = js.Any.fromFunction0(loadAsync), name = name, repository = repository)
+    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], loadAsync = js.Any.fromFunction0(loadAsync), name = name.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Branch]
   }

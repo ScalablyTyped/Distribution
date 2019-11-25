@@ -12,7 +12,7 @@ trait Anon_BorderRadiusOverflow extends js.Object {
 object Anon_BorderRadiusOverflow {
   @scala.inline
   def apply(borderRadius: Double, overflow: String): Anon_BorderRadiusOverflow = {
-    val __obj = js.Dynamic.literal(borderRadius = borderRadius, overflow = overflow)
+    val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderRadiusOverflow]
   }

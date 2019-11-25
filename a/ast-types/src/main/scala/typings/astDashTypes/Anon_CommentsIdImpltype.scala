@@ -28,10 +28,10 @@ object Anon_CommentsIdImpltype {
     loc: SourceLocationKind = null,
     typeParameters: TypeParameterDeclarationKind = null
   ): Anon_CommentsIdImpltype = {
-    val __obj = js.Dynamic.literal(id = id, impltype = impltype, supertype = supertype)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], impltype = impltype.asInstanceOf[js.Any], supertype = supertype.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsIdImpltype]
   }
 }

@@ -14,7 +14,7 @@ trait IMeasures extends js.Object {
 object IMeasures {
   @scala.inline
   def apply(uses: measures, max: Int | Double = null, min: Int | Double = null): IMeasures = {
-    val __obj = js.Dynamic.literal(uses = uses)
+    val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMeasures]

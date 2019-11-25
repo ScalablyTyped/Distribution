@@ -32,11 +32,11 @@ object MonthData {
     updateLayout: js.Function = null,
     y: Int | Double = null
   ): MonthData = {
-    val __obj = js.Dynamic.literal(firstDate = firstDate, lastDate = lastDate, title = title, weeks = weeks)
+    val __obj = js.Dynamic.literal(firstDate = firstDate.asInstanceOf[js.Any], lastDate = lastDate.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], weeks = weeks.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef)
+    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (updateLayout != null) __obj.updateDynamic("updateLayout")(updateLayout)
+    if (updateLayout != null) __obj.updateDynamic("updateLayout")(updateLayout.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonthData]
   }

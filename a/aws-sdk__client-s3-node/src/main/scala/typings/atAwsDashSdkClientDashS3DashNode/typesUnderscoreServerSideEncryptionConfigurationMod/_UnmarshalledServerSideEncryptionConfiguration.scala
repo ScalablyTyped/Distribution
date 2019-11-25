@@ -16,7 +16,7 @@ trait _UnmarshalledServerSideEncryptionConfiguration extends _ServerSideEncrypti
 object _UnmarshalledServerSideEncryptionConfiguration {
   @scala.inline
   def apply(Rules: js.Array[_UnmarshalledServerSideEncryptionRule]): _UnmarshalledServerSideEncryptionConfiguration = {
-    val __obj = js.Dynamic.literal(Rules = Rules)
+    val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledServerSideEncryptionConfiguration]
   }

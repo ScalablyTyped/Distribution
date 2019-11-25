@@ -19,8 +19,8 @@ object FilterDialogOpeningEventUIParam {
   @scala.inline
   def apply(dialog: String = null, owner: js.Any = null): FilterDialogOpeningEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dialog != null) __obj.updateDynamic("dialog")(dialog)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (dialog != null) __obj.updateDynamic("dialog")(dialog.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterDialogOpeningEventUIParam]
   }
 }

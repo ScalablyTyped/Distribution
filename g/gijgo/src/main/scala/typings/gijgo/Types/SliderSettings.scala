@@ -32,8 +32,8 @@ object SliderSettings {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction2(slide))
-    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderSettings]
   }

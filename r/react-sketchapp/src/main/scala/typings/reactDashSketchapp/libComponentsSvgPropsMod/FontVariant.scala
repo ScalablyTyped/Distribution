@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait FontVariant extends js.Object
 
+object FontVariant {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def normal: typings.reactDashSketchapp.reactDashSketchappStrings.normal = this.cast("normal")
+  @scala.inline
+  def `small-caps`: typings.reactDashSketchapp.reactDashSketchappStrings.`small-caps` = this.cast("small-caps")
+}
+

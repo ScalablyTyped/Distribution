@@ -43,12 +43,12 @@ object UIRetryOptions {
   ): UIRetryOptions = {
     val __obj = js.Dynamic.literal()
     if (autoAttemptDelay != null) __obj.updateDynamic("autoAttemptDelay")(autoAttemptDelay.asInstanceOf[js.Any])
-    if (autoRetryNote != null) __obj.updateDynamic("autoRetryNote")(autoRetryNote)
-    if (!js.isUndefined(enableAuto)) __obj.updateDynamic("enableAuto")(enableAuto)
+    if (autoRetryNote != null) __obj.updateDynamic("autoRetryNote")(autoRetryNote.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAuto)) __obj.updateDynamic("enableAuto")(enableAuto.asInstanceOf[js.Any])
     if (maxAutoAttempts != null) __obj.updateDynamic("maxAutoAttempts")(maxAutoAttempts.asInstanceOf[js.Any])
-    if (preventRetryResponseProperty != null) __obj.updateDynamic("preventRetryResponseProperty")(preventRetryResponseProperty)
-    if (!js.isUndefined(showAutoRetryNote)) __obj.updateDynamic("showAutoRetryNote")(showAutoRetryNote)
-    if (!js.isUndefined(showButton)) __obj.updateDynamic("showButton")(showButton)
+    if (preventRetryResponseProperty != null) __obj.updateDynamic("preventRetryResponseProperty")(preventRetryResponseProperty.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAutoRetryNote)) __obj.updateDynamic("showAutoRetryNote")(showAutoRetryNote.asInstanceOf[js.Any])
+    if (!js.isUndefined(showButton)) __obj.updateDynamic("showButton")(showButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIRetryOptions]
   }
 }

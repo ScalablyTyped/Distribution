@@ -26,7 +26,7 @@ trait SubscriptionEvaluationSettings extends js.Object {
 object SubscriptionEvaluationSettings {
   @scala.inline
   def apply(enabled: Boolean, interval: Double, threshold: Double, timeOut: Double): SubscriptionEvaluationSettings = {
-    val __obj = js.Dynamic.literal(enabled = enabled, interval = interval, threshold = threshold, timeOut = timeOut)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], timeOut = timeOut.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubscriptionEvaluationSettings]
   }

@@ -13,7 +13,7 @@ trait PlayParameters extends js.Object {
 object PlayParameters {
   @scala.inline
   def apply(id: String, kind: String): PlayParameters = {
-    val __obj = js.Dynamic.literal(id = id, kind = kind)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlayParameters]
   }

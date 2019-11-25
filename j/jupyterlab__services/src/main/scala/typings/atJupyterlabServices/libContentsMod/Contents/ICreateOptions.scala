@@ -29,9 +29,9 @@ object ICreateOptions {
   @scala.inline
   def apply(ext: String = null, path: String = null, `type`: ContentType = null): ICreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateOptions]
   }
 }

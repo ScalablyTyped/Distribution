@@ -55,8 +55,8 @@ object UrlEncodedOptionItem {
     verify: (/* req */ Request[ParamsDictionary], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit = null
   ): UrlEncodedOptionItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended)
-    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate)
+    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])
+    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction4(verify))

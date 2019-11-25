@@ -22,13 +22,13 @@ object ArcgisOnlineProviderOptions {
     token: String = null
   ): ArcgisOnlineProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
-    if (!js.isUndefined(forStorage)) __obj.updateDynamic("forStorage")(forStorage)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(forStorage)) __obj.updateDynamic("forStorage")(forStorage.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcgisOnlineProviderOptions]
   }
 }

@@ -22,7 +22,7 @@ object IModuleOptions {
   def apply(callback: () => Unit = null, credentials: String = null, errorCallback: () => Unit = null): IModuleOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (errorCallback != null) __obj.updateDynamic("errorCallback")(js.Any.fromFunction0(errorCallback))
     __obj.asInstanceOf[IModuleOptions]
   }

@@ -30,11 +30,11 @@ object GetMeta {
     _revisions: Anon_Ids = null,
     _revs_info: js.Array[RevisionInfo] = null
   ): GetMeta = {
-    val __obj = js.Dynamic.literal(_rev = _rev)
-    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
-    if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts)
-    if (_revisions != null) __obj.updateDynamic("_revisions")(_revisions)
-    if (_revs_info != null) __obj.updateDynamic("_revs_info")(_revs_info)
+    val __obj = js.Dynamic.literal(_rev = _rev.asInstanceOf[js.Any])
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
+    if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts.asInstanceOf[js.Any])
+    if (_revisions != null) __obj.updateDynamic("_revisions")(_revisions.asInstanceOf[js.Any])
+    if (_revs_info != null) __obj.updateDynamic("_revs_info")(_revs_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMeta]
   }
 }

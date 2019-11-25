@@ -12,7 +12,7 @@ object TreeParamNames {
   @scala.inline
   def apply(parentId: String = null): TreeParamNames = {
     val __obj = js.Dynamic.literal()
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeParamNames]
   }
 }

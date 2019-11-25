@@ -13,7 +13,7 @@ object BeginTransactionResponse {
   @scala.inline
   def apply(transaction: String = null): BeginTransactionResponse = {
     val __obj = js.Dynamic.literal()
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeginTransactionResponse]
   }
 }

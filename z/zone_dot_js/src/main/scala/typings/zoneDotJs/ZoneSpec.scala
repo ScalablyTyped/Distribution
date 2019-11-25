@@ -175,7 +175,7 @@ object ZoneSpec {
     onScheduleTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => Task = null,
     properties: StringDictionary[js.Any] = null
   ): ZoneSpec = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (onCancelTask != null) __obj.updateDynamic("onCancelTask")(js.Any.fromFunction4(onCancelTask))
     if (onFork != null) __obj.updateDynamic("onFork")(js.Any.fromFunction4(onFork))
     if (onHandleError != null) __obj.updateDynamic("onHandleError")(js.Any.fromFunction4(onHandleError))
@@ -184,7 +184,7 @@ object ZoneSpec {
     if (onInvoke != null) __obj.updateDynamic("onInvoke")(js.Any.fromFunction7(onInvoke))
     if (onInvokeTask != null) __obj.updateDynamic("onInvokeTask")(js.Any.fromFunction6(onInvokeTask))
     if (onScheduleTask != null) __obj.updateDynamic("onScheduleTask")(js.Any.fromFunction4(onScheduleTask))
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneSpec]
   }
 }

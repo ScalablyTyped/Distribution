@@ -28,12 +28,12 @@ object ValidationError {
     line: Int | Double = null,
     stack: String = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal(column = column, message = message, name = name)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationError]
   }
 }

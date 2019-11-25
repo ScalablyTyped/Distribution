@@ -14,7 +14,7 @@ trait Anon_AlignItems extends js.Object {
 object Anon_AlignItems {
   @scala.inline
   def apply(alignItems: String, backgroundColor: String, flex: Double, justifyContent: String): Anon_AlignItems = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, backgroundColor = backgroundColor, flex = flex, justifyContent = justifyContent)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItems]
   }

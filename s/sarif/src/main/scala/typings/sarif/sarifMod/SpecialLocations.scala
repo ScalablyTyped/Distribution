@@ -19,8 +19,8 @@ object SpecialLocations {
   @scala.inline
   def apply(displayBase: ArtifactLocation = null, properties: PropertyBag = null): SpecialLocations = {
     val __obj = js.Dynamic.literal()
-    if (displayBase != null) __obj.updateDynamic("displayBase")(displayBase)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (displayBase != null) __obj.updateDynamic("displayBase")(displayBase.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecialLocations]
   }
 }

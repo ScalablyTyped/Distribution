@@ -20,7 +20,7 @@ object Anon_PostLoadHook {
   ): Anon_PostLoadHook = {
     val __obj = js.Dynamic.literal()
     if (postLoadHook != null) __obj.updateDynamic("postLoadHook")(js.Any.fromFunction3(postLoadHook))
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PostLoadHook]
   }
 }

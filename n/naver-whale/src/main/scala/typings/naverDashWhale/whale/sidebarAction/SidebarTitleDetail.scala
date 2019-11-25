@@ -11,7 +11,7 @@ trait SidebarTitleDetail extends js.Object {
 object SidebarTitleDetail {
   @scala.inline
   def apply(title: String): SidebarTitleDetail = {
-    val __obj = js.Dynamic.literal(title = title)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SidebarTitleDetail]
   }

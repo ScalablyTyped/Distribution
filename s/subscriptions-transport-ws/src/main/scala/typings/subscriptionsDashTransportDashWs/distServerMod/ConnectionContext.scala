@@ -24,8 +24,8 @@ object ConnectionContext {
     socket: ^,
     initPromise: js.Promise[_] = null
   ): ConnectionContext = {
-    val __obj = js.Dynamic.literal(isLegacy = isLegacy, operations = operations, request = request, socket = socket)
-    if (initPromise != null) __obj.updateDynamic("initPromise")(initPromise)
+    val __obj = js.Dynamic.literal(isLegacy = isLegacy.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
+    if (initPromise != null) __obj.updateDynamic("initPromise")(initPromise.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionContext]
   }
 }

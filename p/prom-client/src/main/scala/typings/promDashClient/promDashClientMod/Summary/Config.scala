@@ -15,7 +15,7 @@ object Config {
   @scala.inline
   def apply(percentiles: js.Array[Double] = null): Config = {
     val __obj = js.Dynamic.literal()
-    if (percentiles != null) __obj.updateDynamic("percentiles")(percentiles)
+    if (percentiles != null) __obj.updateDynamic("percentiles")(percentiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

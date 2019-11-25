@@ -13,7 +13,7 @@ object SourceGetMetadataRequest {
   @scala.inline
   def apply(source: Source = null): SourceGetMetadataRequest = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceGetMetadataRequest]
   }
 }

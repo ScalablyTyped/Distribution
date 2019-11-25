@@ -20,10 +20,10 @@ object GridFSBucketOpenUploadStreamOptions {
     metadata: js.Object = null
   ): GridFSBucketOpenUploadStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (chunkSizeBytes != null) __obj.updateDynamic("chunkSizeBytes")(chunkSizeBytes.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFSBucketOpenUploadStreamOptions]
   }
 }

@@ -1,9 +1,6 @@
 package typings.dojo.dijit.main
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit.CalendarLite
 import typings.dojo.dojoStrings.active
 import typings.dojo.dojoStrings.cssStateNodes
@@ -376,16 +373,49 @@ class _Calendar () extends CalendarLite {
   @JSName("set")
   def set_slideFrom(property: slideFrom, value: String): Unit = js.native
   @JSName("watch")
-  def watch_active(property: active, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_active(
+    property: active,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_cssStateNodes(property: cssStateNodes, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_cssStateNodes(
+    property: cssStateNodes,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dndType(property: dndType, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_dndType(
+    property: dndType,
+    callback: js.Function3[js.UndefOr[String], js.UndefOr[String], js.UndefOr[String], Unit]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_hovering(property: hovering, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_hovering(
+    property: hovering,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_observer(property: observer, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_observer(
+    property: observer,
+    callback: js.Function3[js.UndefOr[String], js.UndefOr[String], js.UndefOr[String], Unit]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_slideFrom(property: slideFrom, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_slideFrom(
+    property: slideFrom,
+    callback: js.Function3[js.UndefOr[String], js.UndefOr[String], js.UndefOr[String], Unit]
+  ): Anon_Unwatch = js.native
 }
 

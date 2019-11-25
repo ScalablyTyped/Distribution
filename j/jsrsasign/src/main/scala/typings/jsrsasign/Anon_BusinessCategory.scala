@@ -47,7 +47,7 @@ object Anon_BusinessCategory {
     postalCode: String,
     serialNumber: String
   ): Anon_BusinessCategory = {
-    val __obj = js.Dynamic.literal(C = C, CN = CN, DC = DC, DN = DN, E = E, L = L, O = O, OU = OU, SN = SN, ST = ST, STREET = STREET, UID = UID, businessCategory = businessCategory, jurisdictionOfIncorporationC = jurisdictionOfIncorporationC, jurisdictionOfIncorporationL = jurisdictionOfIncorporationL, jurisdictionOfIncorporationSP = jurisdictionOfIncorporationSP, postalCode = postalCode, serialNumber = serialNumber)
+    val __obj = js.Dynamic.literal(C = C.asInstanceOf[js.Any], CN = CN.asInstanceOf[js.Any], DC = DC.asInstanceOf[js.Any], DN = DN.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any], OU = OU.asInstanceOf[js.Any], SN = SN.asInstanceOf[js.Any], ST = ST.asInstanceOf[js.Any], STREET = STREET.asInstanceOf[js.Any], UID = UID.asInstanceOf[js.Any], businessCategory = businessCategory.asInstanceOf[js.Any], jurisdictionOfIncorporationC = jurisdictionOfIncorporationC.asInstanceOf[js.Any], jurisdictionOfIncorporationL = jurisdictionOfIncorporationL.asInstanceOf[js.Any], jurisdictionOfIncorporationSP = jurisdictionOfIncorporationSP.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BusinessCategory]
   }

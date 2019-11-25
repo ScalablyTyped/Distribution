@@ -129,18 +129,18 @@ object AuthoringInfoProperties {
   ): AuthoringInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod.asInstanceOf[js.Any])
-    if (colorRamp != null) __obj.updateDynamic("colorRamp")(colorRamp)
-    if (field1 != null) __obj.updateDynamic("field1")(field1)
-    if (field2 != null) __obj.updateDynamic("field2")(field2)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (colorRamp != null) __obj.updateDynamic("colorRamp")(colorRamp.asInstanceOf[js.Any])
+    if (field1 != null) __obj.updateDynamic("field1")(field1.asInstanceOf[js.Any])
+    if (field2 != null) __obj.updateDynamic("field2")(field2.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
     if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
     if (maxSliderValue != null) __obj.updateDynamic("maxSliderValue")(maxSliderValue.asInstanceOf[js.Any])
     if (minSliderValue != null) __obj.updateDynamic("minSliderValue")(minSliderValue.asInstanceOf[js.Any])
     if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
     if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
+    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthoringInfoProperties]
   }
 }

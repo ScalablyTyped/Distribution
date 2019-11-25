@@ -21,8 +21,8 @@ object _WriteEventStream {
   @scala.inline
   def apply(DestinationStreamArn: String = null, RoleArn: String = null): _WriteEventStream = {
     val __obj = js.Dynamic.literal()
-    if (DestinationStreamArn != null) __obj.updateDynamic("DestinationStreamArn")(DestinationStreamArn)
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
+    if (DestinationStreamArn != null) __obj.updateDynamic("DestinationStreamArn")(DestinationStreamArn.asInstanceOf[js.Any])
+    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[_WriteEventStream]
   }
 }

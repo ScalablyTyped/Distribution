@@ -74,12 +74,12 @@ object LooksSameOptions {
     val __obj = js.Dynamic.literal()
     if (antialiasingTolerance != null) __obj.updateDynamic("antialiasingTolerance")(antialiasingTolerance.asInstanceOf[js.Any])
     if (clustersSize != null) __obj.updateDynamic("clustersSize")(clustersSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreAntialiasing)) __obj.updateDynamic("ignoreAntialiasing")(ignoreAntialiasing)
-    if (!js.isUndefined(ignoreCaret)) __obj.updateDynamic("ignoreCaret")(ignoreCaret)
+    if (!js.isUndefined(ignoreAntialiasing)) __obj.updateDynamic("ignoreAntialiasing")(ignoreAntialiasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCaret)) __obj.updateDynamic("ignoreCaret")(ignoreCaret.asInstanceOf[js.Any])
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCluster)) __obj.updateDynamic("shouldCluster")(shouldCluster)
-    if (!js.isUndefined(stopOnFirstFail)) __obj.updateDynamic("stopOnFirstFail")(stopOnFirstFail)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(shouldCluster)) __obj.updateDynamic("shouldCluster")(shouldCluster.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnFirstFail)) __obj.updateDynamic("stopOnFirstFail")(stopOnFirstFail.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[LooksSameOptions]
   }

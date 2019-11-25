@@ -23,8 +23,8 @@ object PathTypes {
     to: PathType,
     StringDictionary: /* key */ StringDictionary[PathType] = null
   ): PathTypes = {
-    val __obj = js.Dynamic.literal(entering = entering, exiting = exiting, from = from, retained = retained, to = to)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(entering = entering.asInstanceOf[js.Any], exiting = exiting.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], retained = retained.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[PathTypes]
   }
 }

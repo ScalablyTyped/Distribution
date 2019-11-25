@@ -43,19 +43,19 @@ object CustomLocale {
     weekAbbreviation: String = null,
     yearAriaLabel: String = null
   ): CustomLocale = {
-    val __obj = js.Dynamic.literal(months = months, weekdays = weekdays)
-    if (amPM != null) __obj.updateDynamic("amPM")(amPM)
-    if (daysInMonth != null) __obj.updateDynamic("daysInMonth")(daysInMonth)
+    val __obj = js.Dynamic.literal(months = months.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any])
+    if (amPM != null) __obj.updateDynamic("amPM")(amPM.asInstanceOf[js.Any])
+    if (daysInMonth != null) __obj.updateDynamic("daysInMonth")(daysInMonth.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
-    if (hourAriaLabel != null) __obj.updateDynamic("hourAriaLabel")(hourAriaLabel)
-    if (minuteAriaLabel != null) __obj.updateDynamic("minuteAriaLabel")(minuteAriaLabel)
+    if (hourAriaLabel != null) __obj.updateDynamic("hourAriaLabel")(hourAriaLabel.asInstanceOf[js.Any])
+    if (minuteAriaLabel != null) __obj.updateDynamic("minuteAriaLabel")(minuteAriaLabel.asInstanceOf[js.Any])
     if (ordinal != null) __obj.updateDynamic("ordinal")(js.Any.fromFunction1(ordinal))
-    if (rangeSeparator != null) __obj.updateDynamic("rangeSeparator")(rangeSeparator)
-    if (scrollTitle != null) __obj.updateDynamic("scrollTitle")(scrollTitle)
-    if (!js.isUndefined(time_24hr)) __obj.updateDynamic("time_24hr")(time_24hr)
-    if (toggleTitle != null) __obj.updateDynamic("toggleTitle")(toggleTitle)
-    if (weekAbbreviation != null) __obj.updateDynamic("weekAbbreviation")(weekAbbreviation)
-    if (yearAriaLabel != null) __obj.updateDynamic("yearAriaLabel")(yearAriaLabel)
+    if (rangeSeparator != null) __obj.updateDynamic("rangeSeparator")(rangeSeparator.asInstanceOf[js.Any])
+    if (scrollTitle != null) __obj.updateDynamic("scrollTitle")(scrollTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(time_24hr)) __obj.updateDynamic("time_24hr")(time_24hr.asInstanceOf[js.Any])
+    if (toggleTitle != null) __obj.updateDynamic("toggleTitle")(toggleTitle.asInstanceOf[js.Any])
+    if (weekAbbreviation != null) __obj.updateDynamic("weekAbbreviation")(weekAbbreviation.asInstanceOf[js.Any])
+    if (yearAriaLabel != null) __obj.updateDynamic("yearAriaLabel")(yearAriaLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLocale]
   }
 }

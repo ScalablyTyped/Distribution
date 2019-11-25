@@ -11,8 +11,8 @@ trait IAutoHighlightResult extends IHighlightResultBase {
 object IAutoHighlightResult {
   @scala.inline
   def apply(language: String, relevance: Double, value: String, second_best: IAutoHighlightResult = null): IAutoHighlightResult = {
-    val __obj = js.Dynamic.literal(language = language, relevance = relevance, value = value)
-    if (second_best != null) __obj.updateDynamic("second_best")(second_best)
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], relevance = relevance.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (second_best != null) __obj.updateDynamic("second_best")(second_best.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAutoHighlightResult]
   }
 }

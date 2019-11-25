@@ -32,16 +32,16 @@ object Anon_Cancelledby {
     payer_view_url: String = null
   ): Anon_Cancelledby = {
     val __obj = js.Dynamic.literal()
-    if (cancelled_by != null) __obj.updateDynamic("cancelled_by")(cancelled_by)
-    if (cancelled_date != null) __obj.updateDynamic("cancelled_date")(cancelled_date)
-    if (created_by != null) __obj.updateDynamic("created_by")(created_by)
-    if (created_date != null) __obj.updateDynamic("created_date")(created_date)
-    if (first_sent_date != null) __obj.updateDynamic("first_sent_date")(first_sent_date)
-    if (last_sent_by != null) __obj.updateDynamic("last_sent_by")(last_sent_by)
-    if (last_sent_date != null) __obj.updateDynamic("last_sent_date")(last_sent_date)
-    if (last_updated_by != null) __obj.updateDynamic("last_updated_by")(last_updated_by)
-    if (last_updated_date != null) __obj.updateDynamic("last_updated_date")(last_updated_date)
-    if (payer_view_url != null) __obj.updateDynamic("payer_view_url")(payer_view_url)
+    if (cancelled_by != null) __obj.updateDynamic("cancelled_by")(cancelled_by.asInstanceOf[js.Any])
+    if (cancelled_date != null) __obj.updateDynamic("cancelled_date")(cancelled_date.asInstanceOf[js.Any])
+    if (created_by != null) __obj.updateDynamic("created_by")(created_by.asInstanceOf[js.Any])
+    if (created_date != null) __obj.updateDynamic("created_date")(created_date.asInstanceOf[js.Any])
+    if (first_sent_date != null) __obj.updateDynamic("first_sent_date")(first_sent_date.asInstanceOf[js.Any])
+    if (last_sent_by != null) __obj.updateDynamic("last_sent_by")(last_sent_by.asInstanceOf[js.Any])
+    if (last_sent_date != null) __obj.updateDynamic("last_sent_date")(last_sent_date.asInstanceOf[js.Any])
+    if (last_updated_by != null) __obj.updateDynamic("last_updated_by")(last_updated_by.asInstanceOf[js.Any])
+    if (last_updated_date != null) __obj.updateDynamic("last_updated_date")(last_updated_date.asInstanceOf[js.Any])
+    if (payer_view_url != null) __obj.updateDynamic("payer_view_url")(payer_view_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cancelledby]
   }
 }

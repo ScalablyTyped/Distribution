@@ -58,17 +58,17 @@ object LaunchOptions {
     width: Int | Double = null
   ): LaunchOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (executablePath != null) __obj.updateDynamic("executablePath")(executablePath)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (executablePath != null) __obj.updateDynamic("executablePath")(executablePath.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (paramsForReuse != null) __obj.updateDynamic("paramsForReuse")(paramsForReuse)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (paramsForReuse != null) __obj.updateDynamic("paramsForReuse")(paramsForReuse.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (userDataDir != null) __obj.updateDynamic("userDataDir")(userDataDir)
+    if (userDataDir != null) __obj.updateDynamic("userDataDir")(userDataDir.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptions]
   }

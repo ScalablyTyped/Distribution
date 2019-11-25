@@ -13,7 +13,7 @@ trait NewsRepositoryInboxResponseHashtag_follow extends js.Object {
 object NewsRepositoryInboxResponseHashtag_follow {
   @scala.inline
   def apply(follow_status: Double, id: String, name: String): NewsRepositoryInboxResponseHashtag_follow = {
-    val __obj = js.Dynamic.literal(follow_status = follow_status, id = id, name = name)
+    val __obj = js.Dynamic.literal(follow_status = follow_status.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NewsRepositoryInboxResponseHashtag_follow]
   }

@@ -25,7 +25,7 @@ object UserCard {
     username: String,
     website: String
   ): UserCard = {
-    val __obj = js.Dynamic.literal(address = address, company = company, email = email, name = name, phone = phone, username = username, website = website)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], website = website.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserCard]
   }

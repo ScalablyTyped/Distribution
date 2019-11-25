@@ -15,7 +15,7 @@ object MouseOptions {
   @scala.inline
   def apply(cancel: String = null, delay: Int | Double = null, distance: Int | Double = null): MouseOptions = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseOptions]

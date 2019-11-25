@@ -21,10 +21,10 @@ object ProjectPersonalizationDetails {
     packageId: String = null,
     version: String = null
   ): ProjectPersonalizationDetails = {
-    val __obj = js.Dynamic.literal(name = name, projectId = projectId)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (packageId != null) __obj.updateDynamic("packageId")(packageId)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (packageId != null) __obj.updateDynamic("packageId")(packageId.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectPersonalizationDetails]
   }
 }

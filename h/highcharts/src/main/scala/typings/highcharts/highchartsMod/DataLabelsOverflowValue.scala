@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DataLabelsOverflowValue extends js.Object
 
+object DataLabelsOverflowValue {
+  @scala.inline
+  def allow: typings.highcharts.highchartsStrings.allow = this.cast("allow")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def justify: typings.highcharts.highchartsStrings.justify = this.cast("justify")
+}
+

@@ -20,7 +20,7 @@ object DescriptionFilePlugin {
     source: String,
     target: String
   ): DescriptionFilePlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), filenames = filenames, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), filenames = filenames.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DescriptionFilePlugin]
   }

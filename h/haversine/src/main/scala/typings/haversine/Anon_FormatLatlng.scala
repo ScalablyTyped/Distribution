@@ -12,7 +12,7 @@ trait Anon_FormatLatlng extends js.Object {
 object Anon_FormatLatlng {
   @scala.inline
   def apply(format: `{lat,lng}`): Anon_FormatLatlng = {
-    val __obj = js.Dynamic.literal(format = format)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FormatLatlng]
   }

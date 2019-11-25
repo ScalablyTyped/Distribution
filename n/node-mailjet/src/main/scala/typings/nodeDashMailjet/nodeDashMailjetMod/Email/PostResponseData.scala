@@ -11,7 +11,7 @@ trait PostResponseData extends js.Object {
 object PostResponseData {
   @scala.inline
   def apply(Messages: js.Array[PostResponseDataMessage]): PostResponseData = {
-    val __obj = js.Dynamic.literal(Messages = Messages)
+    val __obj = js.Dynamic.literal(Messages = Messages.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostResponseData]
   }

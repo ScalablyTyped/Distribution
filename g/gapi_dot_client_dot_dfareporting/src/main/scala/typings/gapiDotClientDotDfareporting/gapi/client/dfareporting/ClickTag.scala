@@ -23,9 +23,9 @@ object ClickTag {
   @scala.inline
   def apply(eventName: String = null, name: String = null, value: String = null): ClickTag = {
     val __obj = js.Dynamic.literal()
-    if (eventName != null) __obj.updateDynamic("eventName")(eventName)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickTag]
   }
 }

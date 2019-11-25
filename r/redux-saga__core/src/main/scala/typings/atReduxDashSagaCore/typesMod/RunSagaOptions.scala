@@ -50,13 +50,13 @@ object RunSagaOptions {
     sagaMonitor: SagaMonitor = null
   ): RunSagaOptions[A, S] = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (dispatch != null) __obj.updateDynamic("dispatch")(js.Any.fromFunction1(dispatch))
-    if (effectMiddlewares != null) __obj.updateDynamic("effectMiddlewares")(effectMiddlewares)
+    if (effectMiddlewares != null) __obj.updateDynamic("effectMiddlewares")(effectMiddlewares.asInstanceOf[js.Any])
     if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction2(onError))
-    if (sagaMonitor != null) __obj.updateDynamic("sagaMonitor")(sagaMonitor)
+    if (sagaMonitor != null) __obj.updateDynamic("sagaMonitor")(sagaMonitor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunSagaOptions[A, S]]
   }
 }

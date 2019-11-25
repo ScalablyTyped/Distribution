@@ -65,16 +65,16 @@ object _JobParameters {
     Type: String = null
   ): _JobParameters = {
     val __obj = js.Dynamic.literal()
-    if (ArchiveId != null) __obj.updateDynamic("ArchiveId")(ArchiveId)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (Format != null) __obj.updateDynamic("Format")(Format)
-    if (InventoryRetrievalParameters != null) __obj.updateDynamic("InventoryRetrievalParameters")(InventoryRetrievalParameters)
-    if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation)
-    if (RetrievalByteRange != null) __obj.updateDynamic("RetrievalByteRange")(RetrievalByteRange)
-    if (SNSTopic != null) __obj.updateDynamic("SNSTopic")(SNSTopic)
-    if (SelectParameters != null) __obj.updateDynamic("SelectParameters")(SelectParameters)
-    if (Tier != null) __obj.updateDynamic("Tier")(Tier)
-    if (Type != null) __obj.updateDynamic("Type")(Type)
+    if (ArchiveId != null) __obj.updateDynamic("ArchiveId")(ArchiveId.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
+    if (InventoryRetrievalParameters != null) __obj.updateDynamic("InventoryRetrievalParameters")(InventoryRetrievalParameters.asInstanceOf[js.Any])
+    if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])
+    if (RetrievalByteRange != null) __obj.updateDynamic("RetrievalByteRange")(RetrievalByteRange.asInstanceOf[js.Any])
+    if (SNSTopic != null) __obj.updateDynamic("SNSTopic")(SNSTopic.asInstanceOf[js.Any])
+    if (SelectParameters != null) __obj.updateDynamic("SelectParameters")(SelectParameters.asInstanceOf[js.Any])
+    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[_JobParameters]
   }
 }

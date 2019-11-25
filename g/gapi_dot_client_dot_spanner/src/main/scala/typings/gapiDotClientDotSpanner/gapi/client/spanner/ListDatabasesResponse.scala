@@ -19,8 +19,8 @@ object ListDatabasesResponse {
   @scala.inline
   def apply(databases: js.Array[Database] = null, nextPageToken: String = null): ListDatabasesResponse = {
     val __obj = js.Dynamic.literal()
-    if (databases != null) __obj.updateDynamic("databases")(databases)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (databases != null) __obj.updateDynamic("databases")(databases.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDatabasesResponse]
   }
 }

@@ -21,7 +21,7 @@ object Anon_SignaturePolicyIdentifier {
     SigningCertificateV2: ArrayParam[String] | Anon_Array | SigningCertificateV2,
     SigningTime: TypeParam | StringParam
   ): Anon_SignaturePolicyIdentifier = {
-    val __obj = js.Dynamic.literal(SignaturePolicyIdentifier = SignaturePolicyIdentifier, SigningCertificateV2 = SigningCertificateV2.asInstanceOf[js.Any], SigningTime = SigningTime.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(SignaturePolicyIdentifier = SignaturePolicyIdentifier.asInstanceOf[js.Any], SigningCertificateV2 = SigningCertificateV2.asInstanceOf[js.Any], SigningTime = SigningTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SignaturePolicyIdentifier]
   }

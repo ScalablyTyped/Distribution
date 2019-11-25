@@ -16,7 +16,7 @@ object TypeDefinitionClientCapabilities {
   @scala.inline
   def apply(textDocument: Anon_TypeDefinition = null): TypeDefinitionClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument)
+    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDefinitionClientCapabilities]
   }
 }

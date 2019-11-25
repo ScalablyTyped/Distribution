@@ -50,18 +50,18 @@ object ClaimProcedure {
     procedureCodeableConcept: CodeableConcept = null,
     procedureReference: Reference = null
   ): ClaimProcedure = {
-    val __obj = js.Dynamic.literal(sequence = sequence)
-    if (_date != null) __obj.updateDynamic("_date")(_date)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (procedureCodeableConcept != null) __obj.updateDynamic("procedureCodeableConcept")(procedureCodeableConcept)
-    if (procedureReference != null) __obj.updateDynamic("procedureReference")(procedureReference)
+    val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any])
+    if (_date != null) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (procedureCodeableConcept != null) __obj.updateDynamic("procedureCodeableConcept")(procedureCodeableConcept.asInstanceOf[js.Any])
+    if (procedureReference != null) __obj.updateDynamic("procedureReference")(procedureReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimProcedure]
   }
 }

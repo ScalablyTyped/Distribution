@@ -22,11 +22,11 @@ object FindOneAndDeleteOption {
     sort: js.Object = null
   ): FindOneAndDeleteOption = {
     val __obj = js.Dynamic.literal()
-    if (collation != null) __obj.updateDynamic("collation")(collation)
+    if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOneAndDeleteOption]
   }
 }

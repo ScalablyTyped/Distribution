@@ -30,15 +30,15 @@ object GooglePrivacyDlpV2beta1PrimitiveTransformation {
     timePartConfig: GooglePrivacyDlpV2beta1TimePartConfig = null
   ): GooglePrivacyDlpV2beta1PrimitiveTransformation = {
     val __obj = js.Dynamic.literal()
-    if (bucketingConfig != null) __obj.updateDynamic("bucketingConfig")(bucketingConfig)
-    if (characterMaskConfig != null) __obj.updateDynamic("characterMaskConfig")(characterMaskConfig)
-    if (cryptoHashConfig != null) __obj.updateDynamic("cryptoHashConfig")(cryptoHashConfig)
-    if (cryptoReplaceFfxFpeConfig != null) __obj.updateDynamic("cryptoReplaceFfxFpeConfig")(cryptoReplaceFfxFpeConfig)
-    if (fixedSizeBucketingConfig != null) __obj.updateDynamic("fixedSizeBucketingConfig")(fixedSizeBucketingConfig)
-    if (redactConfig != null) __obj.updateDynamic("redactConfig")(redactConfig)
-    if (replaceConfig != null) __obj.updateDynamic("replaceConfig")(replaceConfig)
-    if (replaceWithInfoTypeConfig != null) __obj.updateDynamic("replaceWithInfoTypeConfig")(replaceWithInfoTypeConfig)
-    if (timePartConfig != null) __obj.updateDynamic("timePartConfig")(timePartConfig)
+    if (bucketingConfig != null) __obj.updateDynamic("bucketingConfig")(bucketingConfig.asInstanceOf[js.Any])
+    if (characterMaskConfig != null) __obj.updateDynamic("characterMaskConfig")(characterMaskConfig.asInstanceOf[js.Any])
+    if (cryptoHashConfig != null) __obj.updateDynamic("cryptoHashConfig")(cryptoHashConfig.asInstanceOf[js.Any])
+    if (cryptoReplaceFfxFpeConfig != null) __obj.updateDynamic("cryptoReplaceFfxFpeConfig")(cryptoReplaceFfxFpeConfig.asInstanceOf[js.Any])
+    if (fixedSizeBucketingConfig != null) __obj.updateDynamic("fixedSizeBucketingConfig")(fixedSizeBucketingConfig.asInstanceOf[js.Any])
+    if (redactConfig != null) __obj.updateDynamic("redactConfig")(redactConfig.asInstanceOf[js.Any])
+    if (replaceConfig != null) __obj.updateDynamic("replaceConfig")(replaceConfig.asInstanceOf[js.Any])
+    if (replaceWithInfoTypeConfig != null) __obj.updateDynamic("replaceWithInfoTypeConfig")(replaceWithInfoTypeConfig.asInstanceOf[js.Any])
+    if (timePartConfig != null) __obj.updateDynamic("timePartConfig")(timePartConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1PrimitiveTransformation]
   }
 }

@@ -13,7 +13,7 @@ object Anon_Plugins {
   @scala.inline
   def apply(plugins: js.Array[StringDictionary[Boolean]] = null): Anon_Plugins = {
     val __obj = js.Dynamic.literal()
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Plugins]
   }
 }

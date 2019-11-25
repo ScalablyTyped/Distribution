@@ -14,9 +14,9 @@ trait Anon_Boundaries extends js.Object {
 object Anon_Boundaries {
   @scala.inline
   def apply(boundaries: js.Array[_], groupBy: js.Any, default: js.Any = null, output: js.Object = null): Anon_Boundaries = {
-    val __obj = js.Dynamic.literal(boundaries = boundaries, groupBy = groupBy)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (output != null) __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(boundaries = boundaries.asInstanceOf[js.Any], groupBy = groupBy.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Boundaries]
   }
 }

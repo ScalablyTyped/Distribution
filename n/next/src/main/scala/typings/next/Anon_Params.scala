@@ -12,7 +12,7 @@ object Anon_Params {
   @scala.inline
   def apply(params: js.Any = null): Anon_Params = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Params]
   }
 }

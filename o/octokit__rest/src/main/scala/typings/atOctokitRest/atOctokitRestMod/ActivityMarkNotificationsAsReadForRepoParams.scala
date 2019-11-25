@@ -16,8 +16,8 @@ trait ActivityMarkNotificationsAsReadForRepoParams extends js.Object {
 object ActivityMarkNotificationsAsReadForRepoParams {
   @scala.inline
   def apply(owner: String, repo: String, last_read_at: String = null): ActivityMarkNotificationsAsReadForRepoParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (last_read_at != null) __obj.updateDynamic("last_read_at")(last_read_at)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (last_read_at != null) __obj.updateDynamic("last_read_at")(last_read_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityMarkNotificationsAsReadForRepoParams]
   }
 }

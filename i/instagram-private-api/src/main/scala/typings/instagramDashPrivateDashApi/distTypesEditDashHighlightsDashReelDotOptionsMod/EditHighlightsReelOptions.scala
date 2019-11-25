@@ -24,9 +24,9 @@ object EditHighlightsReelOptions {
     removed: js.Array[String] = null,
     source: IgAppModule = null
   ): EditHighlightsReelOptions = {
-    val __obj = js.Dynamic.literal(coverId = coverId, highlightId = highlightId, title = title)
-    if (added != null) __obj.updateDynamic("added")(added)
-    if (removed != null) __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(coverId = coverId.asInstanceOf[js.Any], highlightId = highlightId.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (added != null) __obj.updateDynamic("added")(added.asInstanceOf[js.Any])
+    if (removed != null) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditHighlightsReelOptions]
   }

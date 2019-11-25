@@ -20,7 +20,7 @@ object ConnectOptions {
   ): ConnectOptions = {
     val __obj = js.Dynamic.literal()
     if (onUpgrade != null) __obj.updateDynamic("onUpgrade")(js.Any.fromFunction1(onUpgrade))
-    if (storeType != null) __obj.updateDynamic("storeType")(storeType)
+    if (storeType != null) __obj.updateDynamic("storeType")(storeType.asInstanceOf[js.Any])
     if (webSqlDbSize != null) __obj.updateDynamic("webSqlDbSize")(webSqlDbSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }

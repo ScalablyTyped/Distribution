@@ -149,17 +149,17 @@ object IgGridFilteringColumnSetting {
     editorType: String = null
   ): IgGridFilteringColumnSetting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (conditionList != null) __obj.updateDynamic("conditionList")(conditionList)
-    if (customConditions != null) __obj.updateDynamic("customConditions")(customConditions)
-    if (defaultExpressions != null) __obj.updateDynamic("defaultExpressions")(defaultExpressions)
-    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions)
-    if (editorProvider != null) __obj.updateDynamic("editorProvider")(editorProvider)
-    if (editorType != null) __obj.updateDynamic("editorType")(editorType)
+    if (conditionList != null) __obj.updateDynamic("conditionList")(conditionList.asInstanceOf[js.Any])
+    if (customConditions != null) __obj.updateDynamic("customConditions")(customConditions.asInstanceOf[js.Any])
+    if (defaultExpressions != null) __obj.updateDynamic("defaultExpressions")(defaultExpressions.asInstanceOf[js.Any])
+    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions.asInstanceOf[js.Any])
+    if (editorProvider != null) __obj.updateDynamic("editorProvider")(editorProvider.asInstanceOf[js.Any])
+    if (editorType != null) __obj.updateDynamic("editorType")(editorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridFilteringColumnSetting]
   }
 }

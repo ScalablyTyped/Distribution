@@ -33,12 +33,12 @@ object InputSpecArgs {
     shape: Shape = null
   ): InputSpecArgs = {
     val __obj = js.Dynamic.literal()
-    if (axes != null) __obj.updateDynamic("axes")(axes)
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype)
+    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
+    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
     if (maxNDim != null) __obj.updateDynamic("maxNDim")(maxNDim.asInstanceOf[js.Any])
     if (minNDim != null) __obj.updateDynamic("minNDim")(minNDim.asInstanceOf[js.Any])
     if (ndim != null) __obj.updateDynamic("ndim")(ndim.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSpecArgs]
   }
 }

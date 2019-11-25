@@ -53,10 +53,10 @@ object Album {
     release_date: js.Any = null,
     release_date_components: js.Any = null
   ): Album = {
-    val __obj = js.Dynamic.literal(api_path = api_path, artist = artist, comment_count = comment_count, cover_art_url = cover_art_url, cover_arts = cover_arts, current_user_metadata = current_user_metadata, description_annotation = description_annotation, full_title = full_title, header_image_url = header_image_url, id = id, lock_state = lock_state, name = name, performance_groups = performance_groups, pyongs_count = pyongs_count, song_pageviews = song_pageviews, song_performances = song_performances, url = url)
-    if (custom_header_image_url != null) __obj.updateDynamic("custom_header_image_url")(custom_header_image_url)
-    if (release_date != null) __obj.updateDynamic("release_date")(release_date)
-    if (release_date_components != null) __obj.updateDynamic("release_date_components")(release_date_components)
+    val __obj = js.Dynamic.literal(api_path = api_path.asInstanceOf[js.Any], artist = artist.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], cover_art_url = cover_art_url.asInstanceOf[js.Any], cover_arts = cover_arts.asInstanceOf[js.Any], current_user_metadata = current_user_metadata.asInstanceOf[js.Any], description_annotation = description_annotation.asInstanceOf[js.Any], full_title = full_title.asInstanceOf[js.Any], header_image_url = header_image_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lock_state = lock_state.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], performance_groups = performance_groups.asInstanceOf[js.Any], pyongs_count = pyongs_count.asInstanceOf[js.Any], song_pageviews = song_pageviews.asInstanceOf[js.Any], song_performances = song_performances.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (custom_header_image_url != null) __obj.updateDynamic("custom_header_image_url")(custom_header_image_url.asInstanceOf[js.Any])
+    if (release_date != null) __obj.updateDynamic("release_date")(release_date.asInstanceOf[js.Any])
+    if (release_date_components != null) __obj.updateDynamic("release_date_components")(release_date_components.asInstanceOf[js.Any])
     __obj.asInstanceOf[Album]
   }
 }

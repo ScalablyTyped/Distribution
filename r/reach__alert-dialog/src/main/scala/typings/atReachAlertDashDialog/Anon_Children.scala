@@ -22,9 +22,9 @@ object Anon_Children {
     isOpen: js.UndefOr[Boolean] = js.undefined,
     onDismiss: () => Unit = null
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(leastDestructiveRef = leastDestructiveRef)
+    val __obj = js.Dynamic.literal(leastDestructiveRef = leastDestructiveRef.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
     __obj.asInstanceOf[Anon_Children]
   }

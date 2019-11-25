@@ -11,7 +11,7 @@ trait NewLevelBefore extends NewLevel {
 object NewLevelBefore {
   @scala.inline
   def apply(before: String, afterLog: () => Unit = null): NewLevelBefore = {
-    val __obj = js.Dynamic.literal(before = before)
+    val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any])
     if (afterLog != null) __obj.updateDynamic("afterLog")(js.Any.fromFunction0(afterLog))
     __obj.asInstanceOf[NewLevelBefore]
   }

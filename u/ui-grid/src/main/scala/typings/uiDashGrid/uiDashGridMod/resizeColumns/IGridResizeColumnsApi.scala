@@ -13,7 +13,7 @@ trait IGridResizeColumnsApi extends js.Object {
 object IGridResizeColumnsApi {
   @scala.inline
   def apply(on: Anon_ColumnSizeChanged): IGridResizeColumnsApi = {
-    val __obj = js.Dynamic.literal(on = on)
+    val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGridResizeColumnsApi]
   }

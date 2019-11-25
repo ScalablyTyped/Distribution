@@ -28,14 +28,14 @@ object Anon_Date {
     undefined: js.UndefOr[Boolean] = js.undefined
   ): Anon_Date = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map)
-    if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex)
-    if (!js.isUndefined(set)) __obj.updateDynamic("set")(set)
-    if (!js.isUndefined(symbol)) __obj.updateDynamic("symbol")(symbol)
-    if (!js.isUndefined(undefined)) __obj.updateDynamic("undefined")(undefined)
+    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
+    if (!js.isUndefined(set)) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbol)) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (!js.isUndefined(undefined)) __obj.updateDynamic("undefined")(undefined.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Date]
   }
 }

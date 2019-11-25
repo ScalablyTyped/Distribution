@@ -13,8 +13,8 @@ object SiteTranscodeSetting {
   @scala.inline
   def apply(enabledVideoFormats: js.Array[Double] = null, kind: String = null): SiteTranscodeSetting = {
     val __obj = js.Dynamic.literal()
-    if (enabledVideoFormats != null) __obj.updateDynamic("enabledVideoFormats")(enabledVideoFormats)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (enabledVideoFormats != null) __obj.updateDynamic("enabledVideoFormats")(enabledVideoFormats.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteTranscodeSetting]
   }
 }

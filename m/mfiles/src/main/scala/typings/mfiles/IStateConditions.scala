@@ -21,7 +21,7 @@ object IStateConditions {
     VBScript: Boolean,
     VBScriptDefinition: String
   ): IStateConditions = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PropertyConditions = PropertyConditions, PropertyConditionsDefinition = PropertyConditionsDefinition, VBScript = VBScript, VBScriptDefinition = VBScriptDefinition)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PropertyConditions = PropertyConditions.asInstanceOf[js.Any], PropertyConditionsDefinition = PropertyConditionsDefinition.asInstanceOf[js.Any], VBScript = VBScript.asInstanceOf[js.Any], VBScriptDefinition = VBScriptDefinition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IStateConditions]
   }

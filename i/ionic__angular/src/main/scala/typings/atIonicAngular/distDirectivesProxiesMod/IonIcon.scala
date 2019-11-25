@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular/dist/directives/proxies", "IonIcon")
 @js.native
 class IonIcon protected ()
-  extends typings.atIonicCore.distTypesComponentsMod.Components.IonIcon {
+  extends typings.ionicons.distTypesComponentsMod.Components.IonIcon {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   /**

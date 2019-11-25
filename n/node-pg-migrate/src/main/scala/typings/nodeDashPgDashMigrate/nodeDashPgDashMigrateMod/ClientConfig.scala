@@ -21,13 +21,13 @@ object ClientConfig {
     user: String = null
   ): ClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString)
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait OptionsGridLineInterpolationValue extends js.Object
 
+object OptionsGridLineInterpolationValue {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def circle: typings.highcharts.highchartsStrings.circle = this.cast("circle")
+  @scala.inline
+  def polygon: typings.highcharts.highchartsStrings.polygon = this.cast("polygon")
+}
+

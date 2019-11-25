@@ -19,8 +19,8 @@ object IconMenuTheme {
   @scala.inline
   def apply(icon: String = null, iconMenu: String = null): IconMenuTheme = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconMenu != null) __obj.updateDynamic("iconMenu")(iconMenu)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconMenu != null) __obj.updateDynamic("iconMenu")(iconMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconMenuTheme]
   }
 }

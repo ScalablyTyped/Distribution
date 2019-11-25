@@ -12,9 +12,9 @@ trait DefaultLoginOptions extends LoginOptions {
 object DefaultLoginOptions {
   @scala.inline
   def apply(password: String, realm: String, username: String, audience: String = null, scope: String = null): DefaultLoginOptions = {
-    val __obj = js.Dynamic.literal(password = password, realm = realm, username = username)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultLoginOptions]
   }
 }

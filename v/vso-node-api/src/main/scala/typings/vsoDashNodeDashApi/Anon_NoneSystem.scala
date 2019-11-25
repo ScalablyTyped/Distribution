@@ -13,7 +13,7 @@ trait Anon_NoneSystem extends js.Object {
 object Anon_NoneSystem {
   @scala.inline
   def apply(none: Double, system: Double, user: Double): Anon_NoneSystem = {
-    val __obj = js.Dynamic.literal(none = none, system = system, user = user)
+    val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NoneSystem]
   }

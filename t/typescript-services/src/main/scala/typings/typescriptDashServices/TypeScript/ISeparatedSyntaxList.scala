@@ -17,7 +17,7 @@ trait ISeparatedSyntaxList extends ISyntaxElement {
 object ISeparatedSyntaxList {
   @scala.inline
   def apply(
-    childAt: Double => ISyntaxNodeOrToken,
+    childAt: Double => ISyntaxElement,
     childCount: () => Double,
     collectTextElements: js.Array[String] => Unit,
     firstToken: () => ISyntaxToken,

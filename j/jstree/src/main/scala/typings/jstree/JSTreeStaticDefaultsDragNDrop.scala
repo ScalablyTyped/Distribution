@@ -101,7 +101,7 @@ object JSTreeStaticDefaultsDragNDrop {
     touch: Boolean,
     use_html5: Boolean
   ): JSTreeStaticDefaultsDragNDrop = {
-    val __obj = js.Dynamic.literal(always_copy = always_copy, check_while_dragging = check_while_dragging, copy = copy, drag_selection = drag_selection, inside_pos = inside_pos, is_draggable = is_draggable, large_drag_target = large_drag_target, large_drop_target = large_drop_target, open_timeout = open_timeout, touch = touch, use_html5 = use_html5)
+    val __obj = js.Dynamic.literal(always_copy = always_copy.asInstanceOf[js.Any], check_while_dragging = check_while_dragging.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], drag_selection = drag_selection.asInstanceOf[js.Any], inside_pos = inside_pos.asInstanceOf[js.Any], is_draggable = is_draggable.asInstanceOf[js.Any], large_drag_target = large_drag_target.asInstanceOf[js.Any], large_drop_target = large_drop_target.asInstanceOf[js.Any], open_timeout = open_timeout.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], use_html5 = use_html5.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JSTreeStaticDefaultsDragNDrop]
   }

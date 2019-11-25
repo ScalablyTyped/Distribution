@@ -31,13 +31,8 @@ trait Local[T] extends js.Object {
 
 object Local {
   @scala.inline
-  def apply[T](
-    get: Element => js.UndefOr[T],
-    remove: Element => Boolean,
-    set: (Element, T) => Element,
-    toString: () => String
-  ): Local[T] = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), toString = js.Any.fromFunction0(toString))
+  def apply[T](get: Element => js.UndefOr[T], remove: Element => Boolean, set: (Element, T) => Element): Local[T] = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[Local[T]]
   }

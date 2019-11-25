@@ -14,7 +14,7 @@ trait Anon_Geometries extends js.Object {
 object Anon_Geometries {
   @scala.inline
   def apply(geometries: js.Any, images: js.Any, materials: js.Any, textures: js.Any): Anon_Geometries = {
-    val __obj = js.Dynamic.literal(geometries = geometries, images = images, materials = materials, textures = textures)
+    val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], materials = materials.asInstanceOf[js.Any], textures = textures.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Geometries]
   }

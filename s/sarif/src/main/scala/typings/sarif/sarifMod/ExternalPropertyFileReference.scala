@@ -32,10 +32,10 @@ object ExternalPropertyFileReference {
     properties: PropertyBag = null
   ): ExternalPropertyFileReference = {
     val __obj = js.Dynamic.literal()
-    if (guid != null) __obj.updateDynamic("guid")(guid)
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
     if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalPropertyFileReference]
   }
 }

@@ -15,8 +15,8 @@ trait HTML extends Token {
 object HTML {
   @scala.inline
   def apply(pre: Boolean, text: String, `type`: html): HTML = {
-    val __obj = js.Dynamic.literal(pre = pre, text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(pre = pre.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTML]
   }
 }

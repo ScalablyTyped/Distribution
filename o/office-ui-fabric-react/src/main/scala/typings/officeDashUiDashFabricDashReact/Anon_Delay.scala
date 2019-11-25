@@ -12,7 +12,7 @@ trait Anon_Delay extends js.Object {
 object Anon_Delay {
   @scala.inline
   def apply(delay: TooltipDelay): Anon_Delay = {
-    val __obj = js.Dynamic.literal(delay = delay)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Delay]
   }

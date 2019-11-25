@@ -19,8 +19,8 @@ trait FittingContext
 object FittingContext {
   @scala.inline
   def apply(input: js.Any, output: js.Any, StringDictionary: /* prop */ StringDictionary[js.Any] = null): FittingContext = {
-    val __obj = js.Dynamic.literal(input = input, output = output)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[FittingContext]
   }
 }

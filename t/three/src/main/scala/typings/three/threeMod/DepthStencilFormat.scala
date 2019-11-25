@@ -1,12 +1,12 @@
 package typings.three.threeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.three.srcConstantsMod.PixelFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("three", "DepthStencilFormat")
 @js.native
-object DepthStencilFormat extends TopLevel[PixelFormat]
+object DepthStencilFormat
+  extends TopLevel[typings.three.srcConstantsMod.PixelFormat]
 

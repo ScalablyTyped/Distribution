@@ -15,7 +15,7 @@ object Anon_TypeInit_765438870 {
   @scala.inline
   def apply(`type`: Init): Anon_TypeInit_765438870 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TypeInit_765438870]
   }
 }

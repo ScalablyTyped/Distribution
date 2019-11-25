@@ -52,16 +52,16 @@ object CardSelectingEventArgs {
     `type`: String = null
   ): CardSelectingEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (cardIndex != null) __obj.updateDynamic("cardIndex")(cardIndex.asInstanceOf[js.Any])
     if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
-    if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell)
-    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (previousCard != null) __obj.updateDynamic("previousCard")(previousCard)
-    if (previousRowcellindex != null) __obj.updateDynamic("previousRowcellindex")(previousRowcellindex)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell.asInstanceOf[js.Any])
+    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (previousCard != null) __obj.updateDynamic("previousCard")(previousCard.asInstanceOf[js.Any])
+    if (previousRowcellindex != null) __obj.updateDynamic("previousRowcellindex")(previousRowcellindex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardSelectingEventArgs]
   }
 }

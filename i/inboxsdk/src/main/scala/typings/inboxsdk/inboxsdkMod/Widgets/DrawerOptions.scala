@@ -23,11 +23,11 @@ object DrawerOptions {
     composeView: ComposeView = null,
     title: String = null
   ): DrawerOptions = {
-    val __obj = js.Dynamic.literal(el = el)
-    if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome)
-    if (!js.isUndefined(closeWithCompose)) __obj.updateDynamic("closeWithCompose")(closeWithCompose)
-    if (composeView != null) __obj.updateDynamic("composeView")(composeView)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
+    if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeWithCompose)) __obj.updateDynamic("closeWithCompose")(closeWithCompose.asInstanceOf[js.Any])
+    if (composeView != null) __obj.updateDynamic("composeView")(composeView.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerOptions]
   }
 }

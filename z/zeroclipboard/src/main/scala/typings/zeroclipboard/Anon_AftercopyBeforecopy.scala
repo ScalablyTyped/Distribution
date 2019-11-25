@@ -31,12 +31,12 @@ object Anon_AftercopyBeforecopy {
     ready: js.Array[EventListenerOrEventListenerObject[ZeroClipboardReadyEvent]] = null
   ): Anon_AftercopyBeforecopy = {
     val __obj = js.Dynamic.literal()
-    if (aftercopy != null) __obj.updateDynamic("aftercopy")(aftercopy)
-    if (beforecopy != null) __obj.updateDynamic("beforecopy")(beforecopy)
-    if (copy != null) __obj.updateDynamic("copy")(copy)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (aftercopy != null) __obj.updateDynamic("aftercopy")(aftercopy.asInstanceOf[js.Any])
+    if (beforecopy != null) __obj.updateDynamic("beforecopy")(beforecopy.asInstanceOf[js.Any])
+    if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AftercopyBeforecopy]
   }
 }

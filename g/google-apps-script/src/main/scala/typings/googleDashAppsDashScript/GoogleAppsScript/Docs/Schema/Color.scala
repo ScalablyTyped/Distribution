@@ -12,7 +12,7 @@ object Color {
   @scala.inline
   def apply(rgbColor: RgbColor = null): Color = {
     val __obj = js.Dynamic.literal()
-    if (rgbColor != null) __obj.updateDynamic("rgbColor")(rgbColor)
+    if (rgbColor != null) __obj.updateDynamic("rgbColor")(rgbColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
 }

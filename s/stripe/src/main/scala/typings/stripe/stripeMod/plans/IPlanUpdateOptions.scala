@@ -28,11 +28,11 @@ object IPlanUpdateOptions {
     product: String = null
   ): IPlanUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
-    if (product != null) __obj.updateDynamic("product")(product)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlanUpdateOptions]
   }
 }

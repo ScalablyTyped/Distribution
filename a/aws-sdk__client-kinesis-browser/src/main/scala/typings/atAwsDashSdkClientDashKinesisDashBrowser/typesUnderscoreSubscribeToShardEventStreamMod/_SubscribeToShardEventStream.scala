@@ -15,7 +15,7 @@ trait _SubscribeToShardEventStream extends js.Object {
 object _SubscribeToShardEventStream {
   @scala.inline
   def apply(SubscribeToShardEvent: _SubscribeToShardEvent): _SubscribeToShardEventStream = {
-    val __obj = js.Dynamic.literal(SubscribeToShardEvent = SubscribeToShardEvent)
+    val __obj = js.Dynamic.literal(SubscribeToShardEvent = SubscribeToShardEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_SubscribeToShardEventStream]
   }

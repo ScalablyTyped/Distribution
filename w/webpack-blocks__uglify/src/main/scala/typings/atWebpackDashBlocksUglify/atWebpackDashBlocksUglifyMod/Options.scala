@@ -47,9 +47,9 @@ object Options {
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (minify != null) __obj.updateDynamic("minify")(js.Any.fromFunction2(minify))
     if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (uglifyOptions != null) __obj.updateDynamic("uglifyOptions")(uglifyOptions)
+    if (uglifyOptions != null) __obj.updateDynamic("uglifyOptions")(uglifyOptions.asInstanceOf[js.Any])
     if (warningsFilter != null) __obj.updateDynamic("warningsFilter")(js.Any.fromFunction2(warningsFilter))
     __obj.asInstanceOf[Options]
   }

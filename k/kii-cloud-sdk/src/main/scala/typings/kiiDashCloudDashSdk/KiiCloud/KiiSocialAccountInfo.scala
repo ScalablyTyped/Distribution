@@ -13,7 +13,7 @@ trait KiiSocialAccountInfo extends js.Object {
 object KiiSocialAccountInfo {
   @scala.inline
   def apply(createdAt: Double, provider: KiiSocialNetworkName, socialAccountId: String): KiiSocialAccountInfo = {
-    val __obj = js.Dynamic.literal(createdAt = createdAt, provider = provider, socialAccountId = socialAccountId)
+    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], socialAccountId = socialAccountId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KiiSocialAccountInfo]
   }

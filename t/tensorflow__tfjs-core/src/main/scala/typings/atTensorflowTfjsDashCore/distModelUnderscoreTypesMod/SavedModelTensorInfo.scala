@@ -13,7 +13,7 @@ trait SavedModelTensorInfo extends js.Object {
 object SavedModelTensorInfo {
   @scala.inline
   def apply(dtype: String, name: String, shape: js.Array[Double]): SavedModelTensorInfo = {
-    val __obj = js.Dynamic.literal(dtype = dtype, name = name, shape = shape)
+    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SavedModelTensorInfo]
   }

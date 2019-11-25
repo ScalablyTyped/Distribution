@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait JSONEditorMode extends js.Object
 
+object JSONEditorMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def code: typings.jsoneditor.jsoneditorStrings.code = this.cast("code")
+  @scala.inline
+  def form: typings.jsoneditor.jsoneditorStrings.form = this.cast("form")
+  @scala.inline
+  def text: typings.jsoneditor.jsoneditorStrings.text = this.cast("text")
+  @scala.inline
+  def tree: typings.jsoneditor.jsoneditorStrings.tree = this.cast("tree")
+  @scala.inline
+  def view: typings.jsoneditor.jsoneditorStrings.view = this.cast("view")
+}
+

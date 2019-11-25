@@ -12,8 +12,8 @@ trait Params extends js.Object {
 object Params {
   @scala.inline
   def apply(key: String, libraries: String = null): Params = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (libraries != null) __obj.updateDynamic("libraries")(libraries)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (libraries != null) __obj.updateDynamic("libraries")(libraries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

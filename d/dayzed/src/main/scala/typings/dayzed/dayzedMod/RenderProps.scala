@@ -22,7 +22,7 @@ object RenderProps {
     getDateProps: Anon_DateObj => Record[String, _],
     getForwardProps: Anon_Calendars => Record[String, _]
   ): RenderProps = {
-    val __obj = js.Dynamic.literal(calendars = calendars, getBackProps = js.Any.fromFunction1(getBackProps), getDateProps = js.Any.fromFunction1(getDateProps), getForwardProps = js.Any.fromFunction1(getForwardProps))
+    val __obj = js.Dynamic.literal(calendars = calendars.asInstanceOf[js.Any], getBackProps = js.Any.fromFunction1(getBackProps), getDateProps = js.Any.fromFunction1(getDateProps), getForwardProps = js.Any.fromFunction1(getForwardProps))
   
     __obj.asInstanceOf[RenderProps]
   }

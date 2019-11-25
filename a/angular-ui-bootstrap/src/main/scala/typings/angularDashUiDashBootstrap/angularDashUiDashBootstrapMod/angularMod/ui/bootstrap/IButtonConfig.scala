@@ -19,8 +19,8 @@ object IButtonConfig {
   @scala.inline
   def apply(activeClass: String = null, toggleEvent: String = null): IButtonConfig = {
     val __obj = js.Dynamic.literal()
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
-    if (toggleEvent != null) __obj.updateDynamic("toggleEvent")(toggleEvent)
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
+    if (toggleEvent != null) __obj.updateDynamic("toggleEvent")(toggleEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButtonConfig]
   }
 }

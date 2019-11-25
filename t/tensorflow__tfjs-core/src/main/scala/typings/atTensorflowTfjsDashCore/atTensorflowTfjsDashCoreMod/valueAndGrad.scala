@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
 import typings.atTensorflowTfjsDashCore.Anon_Grad
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +32,6 @@ object valueAndGrad extends js.Object {
     * ```
     */
   /** @doc {heading: 'Training', subheading: 'Gradients'} */
-  def apply[I /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Anon_Grad[O, I]] = js.native
+  def apply[I /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */, O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Anon_Grad[O, I]] = js.native
 }
 

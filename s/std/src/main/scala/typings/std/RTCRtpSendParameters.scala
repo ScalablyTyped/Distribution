@@ -20,8 +20,8 @@ object RTCRtpSendParameters {
     transactionId: java.lang.String,
     degradationPreference: RTCDegradationPreference = null
   ): RTCRtpSendParameters = {
-    val __obj = js.Dynamic.literal(codecs = codecs, encodings = encodings, headerExtensions = headerExtensions, rtcp = rtcp, transactionId = transactionId)
-    if (degradationPreference != null) __obj.updateDynamic("degradationPreference")(degradationPreference)
+    val __obj = js.Dynamic.literal(codecs = codecs.asInstanceOf[js.Any], encodings = encodings.asInstanceOf[js.Any], headerExtensions = headerExtensions.asInstanceOf[js.Any], rtcp = rtcp.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
+    if (degradationPreference != null) __obj.updateDynamic("degradationPreference")(degradationPreference.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpSendParameters]
   }
 }

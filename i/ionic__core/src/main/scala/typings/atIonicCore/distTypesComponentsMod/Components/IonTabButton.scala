@@ -2,7 +2,6 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
-import typings.atIonicCore.distTypesComponentsTabDashBarTabDashBarDashInterfaceMod.TabButtonLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,9 @@ trait IonTabButton extends js.Object {
   /**
     * Set the layout of the text and icon in the tab bar. It defaults to `'icon-top'`.
     */
-  var layout: js.UndefOr[TabButtonLayout] = js.undefined
+  var layout: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TabButtonLayout */ js.Any
+  ] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -53,20 +54,20 @@ object IonTabButton {
     selected: Boolean,
     download: String = null,
     href: String = null,
-    layout: TabButtonLayout = null,
+    layout: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TabButtonLayout */ js.Any = null,
     mode: ios | md = null,
     rel: String = null,
     tab: String = null,
     target: String = null
   ): IonTabButton = {
-    val __obj = js.Dynamic.literal(disabled = disabled, selected = selected)
-    if (download != null) __obj.updateDynamic("download")(download)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel)
-    if (tab != null) __obj.updateDynamic("tab")(tab)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonTabButton]
   }
 }

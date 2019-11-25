@@ -18,9 +18,9 @@ object RegistrationOptions {
     updateViaCache: ServiceWorkerUpdateViaCache = null
   ): RegistrationOptions = {
     val __obj = js.Dynamic.literal()
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (updateViaCache != null) __obj.updateDynamic("updateViaCache")(updateViaCache)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (updateViaCache != null) __obj.updateDynamic("updateViaCache")(updateViaCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistrationOptions]
   }
 }

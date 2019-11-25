@@ -16,8 +16,8 @@ object SemanticRolesResultObject {
   @scala.inline
   def apply(keywords: js.Array[SemanticRolesKeyword] = null, text: String = null): SemanticRolesResultObject = {
     val __obj = js.Dynamic.literal()
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticRolesResultObject]
   }
 }

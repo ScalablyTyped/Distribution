@@ -12,8 +12,8 @@ trait WindowHandle extends js.Object {
 object WindowHandle {
   @scala.inline
   def apply(handle: String, `type`: String): WindowHandle = {
-    val __obj = js.Dynamic.literal(handle = handle)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowHandle]
   }
 }

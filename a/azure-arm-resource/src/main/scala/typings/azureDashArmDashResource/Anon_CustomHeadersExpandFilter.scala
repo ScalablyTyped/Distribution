@@ -21,9 +21,9 @@ object Anon_CustomHeadersExpandFilter {
     top: Int | Double = null
   ): Anon_CustomHeadersExpandFilter = {
     val __obj = js.Dynamic.literal()
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomHeadersExpandFilter]
   }

@@ -32,7 +32,7 @@ trait textDisabled extends js.Object {
 object textDisabled {
   @scala.inline
   def apply(color: String, family: String, size: String, weight: String): textDisabled = {
-    val __obj = js.Dynamic.literal(color = color, family = family, size = size, weight = weight)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[textDisabled]
   }

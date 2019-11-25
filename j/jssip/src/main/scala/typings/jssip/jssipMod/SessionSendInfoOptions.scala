@@ -12,7 +12,7 @@ object SessionSendInfoOptions {
   @scala.inline
   def apply(extraHeaders: js.Array[String] = null): SessionSendInfoOptions = {
     val __obj = js.Dynamic.literal()
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionSendInfoOptions]
   }
 }

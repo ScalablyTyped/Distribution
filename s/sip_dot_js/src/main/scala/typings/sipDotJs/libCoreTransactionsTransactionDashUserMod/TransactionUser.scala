@@ -45,7 +45,7 @@ object TransactionUser {
     onStateChange: /* newState */ TransactionState => Unit = null,
     onTransportError: /* error */ TransportError => Unit = null
   ): TransactionUser = {
-    val __obj = js.Dynamic.literal(loggerFactory = loggerFactory)
+    val __obj = js.Dynamic.literal(loggerFactory = loggerFactory.asInstanceOf[js.Any])
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     if (onTransportError != null) __obj.updateDynamic("onTransportError")(js.Any.fromFunction1(onTransportError))
     __obj.asInstanceOf[TransactionUser]

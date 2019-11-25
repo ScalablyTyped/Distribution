@@ -27,8 +27,8 @@ object Anon_Key {
   @scala.inline
   def apply(key: String = null, restful: js.UndefOr[Boolean] = js.undefined, source: payload | query = null): Anon_Key = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(restful)) __obj.updateDynamic("restful")(restful)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(restful)) __obj.updateDynamic("restful")(restful.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }

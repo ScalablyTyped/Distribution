@@ -13,8 +13,8 @@ object ProfileMetadata {
   @scala.inline
   def apply(objectType: String = null, userTypes: js.Array[String] = null): ProfileMetadata = {
     val __obj = js.Dynamic.literal()
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
-    if (userTypes != null) __obj.updateDynamic("userTypes")(userTypes)
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
+    if (userTypes != null) __obj.updateDynamic("userTypes")(userTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileMetadata]
   }
 }

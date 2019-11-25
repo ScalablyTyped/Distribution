@@ -14,7 +14,7 @@ trait CP$Conv extends js.Object {
 object CP$Conv {
   @scala.inline
   def apply(dec: NumberDictionary[String], enc: StringDictionary[Double]): CP$Conv = {
-    val __obj = js.Dynamic.literal(dec = dec, enc = enc)
+    val __obj = js.Dynamic.literal(dec = dec.asInstanceOf[js.Any], enc = enc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CP$Conv]
   }

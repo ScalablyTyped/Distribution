@@ -11,7 +11,7 @@ trait ReposListDeploymentsResponseItemPayload extends js.Object {
 object ReposListDeploymentsResponseItemPayload {
   @scala.inline
   def apply(deploy: String): ReposListDeploymentsResponseItemPayload = {
-    val __obj = js.Dynamic.literal(deploy = deploy)
+    val __obj = js.Dynamic.literal(deploy = deploy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposListDeploymentsResponseItemPayload]
   }

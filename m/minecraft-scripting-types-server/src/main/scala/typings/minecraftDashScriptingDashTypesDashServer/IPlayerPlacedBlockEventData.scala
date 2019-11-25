@@ -23,7 +23,7 @@ trait IPlayerPlacedBlockEventData extends js.Object {
 object IPlayerPlacedBlockEventData {
   @scala.inline
   def apply(block_position: VectorXYZ, player: IEntity): IPlayerPlacedBlockEventData = {
-    val __obj = js.Dynamic.literal(block_position = block_position, player = player)
+    val __obj = js.Dynamic.literal(block_position = block_position.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPlayerPlacedBlockEventData]
   }

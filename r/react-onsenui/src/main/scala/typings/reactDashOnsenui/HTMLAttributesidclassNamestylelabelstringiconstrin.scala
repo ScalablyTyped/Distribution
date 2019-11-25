@@ -24,11 +24,11 @@ object HTMLAttributesidclassNamestylelabelstringiconstrin {
     style: CSSProperties = null
   ): HTMLAttributesidclassNamestylelabelstringiconstrin = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNamestylelabelstringiconstrin]
   }
 }

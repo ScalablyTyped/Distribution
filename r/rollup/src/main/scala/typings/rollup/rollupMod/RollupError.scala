@@ -30,20 +30,20 @@ object RollupError {
     url: String = null,
     watchFiles: js.Array[String] = null
   ): RollupError = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (frame != null) __obj.updateDynamic("frame")(frame)
-    if (hook != null) __obj.updateDynamic("hook")(hook)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parserError != null) __obj.updateDynamic("parserError")(parserError)
-    if (plugin != null) __obj.updateDynamic("plugin")(plugin)
-    if (pluginCode != null) __obj.updateDynamic("pluginCode")(pluginCode)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
+    if (hook != null) __obj.updateDynamic("hook")(hook.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parserError != null) __obj.updateDynamic("parserError")(parserError.asInstanceOf[js.Any])
+    if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
+    if (pluginCode != null) __obj.updateDynamic("pluginCode")(pluginCode.asInstanceOf[js.Any])
     if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (watchFiles != null) __obj.updateDynamic("watchFiles")(watchFiles)
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (watchFiles != null) __obj.updateDynamic("watchFiles")(watchFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupError]
   }
 }

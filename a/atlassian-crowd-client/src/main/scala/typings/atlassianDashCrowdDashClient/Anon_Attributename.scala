@@ -22,7 +22,7 @@ object Anon_Attributename {
     set: (String, ^) => js.Promise[^],
     username: Anon_Email
   ): Anon_Attributename = {
-    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), password = password, remove = js.Any.fromFunction2(remove), set = js.Any.fromFunction2(set), username = username)
+    val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), password = password.asInstanceOf[js.Any], remove = js.Any.fromFunction2(remove), set = js.Any.fromFunction2(set), username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Attributename]
   }

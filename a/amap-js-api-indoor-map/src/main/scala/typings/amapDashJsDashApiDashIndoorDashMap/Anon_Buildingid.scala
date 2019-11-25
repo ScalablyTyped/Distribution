@@ -28,7 +28,7 @@ trait Anon_Buildingid extends js.Object {
 object Anon_Buildingid {
   @scala.inline
   def apply(building_id: String, floor: Double, lnglat: LngLat, shop: Shop): Anon_Buildingid = {
-    val __obj = js.Dynamic.literal(building_id = building_id, floor = floor, lnglat = lnglat, shop = shop)
+    val __obj = js.Dynamic.literal(building_id = building_id.asInstanceOf[js.Any], floor = floor.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], shop = shop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Buildingid]
   }

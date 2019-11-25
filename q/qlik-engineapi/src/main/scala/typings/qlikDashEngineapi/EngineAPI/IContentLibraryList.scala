@@ -17,7 +17,7 @@ trait IContentLibraryList extends js.Object {
 object IContentLibraryList {
   @scala.inline
   def apply(qItems: IContentLibraryListItem): IContentLibraryList = {
-    val __obj = js.Dynamic.literal(qItems = qItems)
+    val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IContentLibraryList]
   }

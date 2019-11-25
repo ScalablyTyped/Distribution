@@ -21,7 +21,7 @@ object _MetricsAndOperator {
   @scala.inline
   def apply(Prefix: String = null, Tags: js.Array[_Tag] | Iterable[_Tag] = null): _MetricsAndOperator = {
     val __obj = js.Dynamic.literal()
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MetricsAndOperator]
   }

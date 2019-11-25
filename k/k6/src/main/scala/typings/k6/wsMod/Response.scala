@@ -21,7 +21,7 @@ trait Response extends js.Object {
 object Response {
   @scala.inline
   def apply(body: String, error: String, headers: StringDictionary[String], status: Double, url: String): Response = {
-    val __obj = js.Dynamic.literal(body = body, error = error, headers = headers, status = status, url = url)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Response]
   }

@@ -12,7 +12,7 @@ trait Anon_Supported extends js.Object {
 object Anon_Supported {
   @scala.inline
   def apply(supported: Boolean): Anon_Supported = {
-    val __obj = js.Dynamic.literal(supported = supported)
+    val __obj = js.Dynamic.literal(supported = supported.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Supported]
   }

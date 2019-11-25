@@ -34,12 +34,12 @@ object PhononAjaxObject {
     headers: js.Any = null,
     timeout: Int | Double = null
   ): PhononAjaxObject = {
-    val __obj = js.Dynamic.literal(dataType = dataType, method = method, success = js.Any.fromFunction2(success), url = url)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], success = js.Any.fromFunction2(success), url = url.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhononAjaxObject]
   }

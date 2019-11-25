@@ -19,8 +19,8 @@ object Anon_Data {
     maxAvailableZoomLevel: Int | Double = null,
     timeoutMs: Int | Double = null
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat.asInstanceOf[js.Any])
     if (maxAvailableZoomLevel != null) __obj.updateDynamic("maxAvailableZoomLevel")(maxAvailableZoomLevel.asInstanceOf[js.Any])
     if (timeoutMs != null) __obj.updateDynamic("timeoutMs")(timeoutMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]

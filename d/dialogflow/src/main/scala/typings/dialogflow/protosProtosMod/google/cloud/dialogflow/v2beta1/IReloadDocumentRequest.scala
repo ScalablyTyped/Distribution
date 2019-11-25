@@ -16,8 +16,8 @@ object IReloadDocumentRequest {
   @scala.inline
   def apply(gcsSource: IGcsSource = null, name: String = null): IReloadDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (gcsSource != null) __obj.updateDynamic("gcsSource")(gcsSource)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (gcsSource != null) __obj.updateDynamic("gcsSource")(gcsSource.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReloadDocumentRequest]
   }
 }

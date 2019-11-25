@@ -31,12 +31,12 @@ object RadarSearchRequest {
   ): RadarSearchRequest = {
     val __obj = js.Dynamic.literal()
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (keyword != null) __obj.updateDynamic("keyword")(keyword)
+    if (keyword != null) __obj.updateDynamic("keyword")(keyword.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadarSearchRequest]
   }
 }

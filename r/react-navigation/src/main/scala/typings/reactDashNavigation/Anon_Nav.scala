@@ -13,7 +13,7 @@ object Anon_Nav {
   @scala.inline
   def apply(nav: NavigationState = null): Anon_Nav = {
     val __obj = js.Dynamic.literal()
-    if (nav != null) __obj.updateDynamic("nav")(nav)
+    if (nav != null) __obj.updateDynamic("nav")(nav.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Nav]
   }
 }

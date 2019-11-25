@@ -33,7 +33,7 @@ object pouchdbDashLiveDashFindStrings {
   sealed trait sort extends js.Object
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update_ extends js.Object
   
   @scala.inline
   def ADD: ADD = "ADD".asInstanceOf[ADD]
@@ -54,6 +54,6 @@ object pouchdbDashLiveDashFindStrings {
   @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
   @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  def update_ : update_ = "update".asInstanceOf[update_]
 }
 

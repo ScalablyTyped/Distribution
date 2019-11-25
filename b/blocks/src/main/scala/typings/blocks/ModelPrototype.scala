@@ -46,11 +46,11 @@ object ModelPrototype {
     validate: () => Boolean = null
   ): ModelPrototype = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (dataItem != null) __obj.updateDynamic("dataItem")(js.Any.fromFunction0(dataItem))
-    if (init != null) __obj.updateDynamic("init")(init)
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (isNew != null) __obj.updateDynamic("isNew")(js.Any.fromFunction0(isNew))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction1(reset))
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[ModelPrototype]

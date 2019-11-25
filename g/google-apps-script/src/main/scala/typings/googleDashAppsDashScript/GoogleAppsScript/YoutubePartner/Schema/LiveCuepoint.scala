@@ -20,10 +20,10 @@ object LiveCuepoint {
     settings: CuepointSettings = null
   ): LiveCuepoint = {
     val __obj = js.Dynamic.literal()
-    if (broadcastId != null) __obj.updateDynamic("broadcastId")(broadcastId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (broadcastId != null) __obj.updateDynamic("broadcastId")(broadcastId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveCuepoint]
   }
 }

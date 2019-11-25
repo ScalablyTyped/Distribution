@@ -1,7 +1,7 @@
 package typings.qlikDashVisualizationextensions.NavigationAPI
 
-import typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.analysis
-import typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.edit
+import typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.analysis_
+import typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.edit_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,11 +15,11 @@ trait INavigation extends js.Object {
   /**
     * Used for edit mode.
     */
-  var analysis: typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.analysis
+  var analysis: analysis_
   /**
     * Used for analysis mode.
     */
-  var edit: typings.qlikDashVisualizationextensions.qlikDashVisualizationextensionsStrings.edit
+  var edit: edit_
   /**
     * Gets the current sheet ID.
     * @return - A navigation result object.
@@ -84,8 +84,8 @@ trait INavigation extends js.Object {
 object INavigation {
   @scala.inline
   def apply(
-    analysis: analysis,
-    edit: edit,
+    analysis: analysis_,
+    edit: edit_,
     getCurrentSheetId: () => NavigationResult,
     getMode: () => String,
     gotoSheet: String => NavigationResult,
@@ -96,7 +96,7 @@ object INavigation {
     setMode: String => NavigationResult,
     switchMode: NavigationModeType => NavigationResult
   ): INavigation = {
-    val __obj = js.Dynamic.literal(analysis = analysis, edit = edit, getCurrentSheetId = js.Any.fromFunction0(getCurrentSheetId), getMode = js.Any.fromFunction0(getMode), gotoSheet = js.Any.fromFunction1(gotoSheet), gotoStory = js.Any.fromFunction1(gotoStory), isModeAllowed = js.Any.fromFunction1(isModeAllowed), nextSheet = js.Any.fromFunction0(nextSheet), prevSheet = js.Any.fromFunction0(prevSheet), setMode = js.Any.fromFunction1(setMode), switchMode = js.Any.fromFunction1(switchMode))
+    val __obj = js.Dynamic.literal(analysis = analysis.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], getCurrentSheetId = js.Any.fromFunction0(getCurrentSheetId), getMode = js.Any.fromFunction0(getMode), gotoSheet = js.Any.fromFunction1(gotoSheet), gotoStory = js.Any.fromFunction1(gotoStory), isModeAllowed = js.Any.fromFunction1(isModeAllowed), nextSheet = js.Any.fromFunction0(nextSheet), prevSheet = js.Any.fromFunction0(prevSheet), setMode = js.Any.fromFunction1(setMode), switchMode = js.Any.fromFunction1(switchMode))
   
     __obj.asInstanceOf[INavigation]
   }

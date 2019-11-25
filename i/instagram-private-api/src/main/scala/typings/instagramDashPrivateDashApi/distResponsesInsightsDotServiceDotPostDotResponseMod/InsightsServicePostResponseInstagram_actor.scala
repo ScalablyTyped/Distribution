@@ -12,7 +12,7 @@ trait InsightsServicePostResponseInstagram_actor extends js.Object {
 object InsightsServicePostResponseInstagram_actor {
   @scala.inline
   def apply(id: String, instagram_actor_id: String): InsightsServicePostResponseInstagram_actor = {
-    val __obj = js.Dynamic.literal(id = id, instagram_actor_id = instagram_actor_id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], instagram_actor_id = instagram_actor_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServicePostResponseInstagram_actor]
   }

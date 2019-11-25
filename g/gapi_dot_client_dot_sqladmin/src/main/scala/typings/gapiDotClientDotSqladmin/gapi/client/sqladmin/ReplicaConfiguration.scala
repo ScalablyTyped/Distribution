@@ -29,9 +29,9 @@ object ReplicaConfiguration {
     mysqlReplicaConfiguration: MySqlReplicaConfiguration = null
   ): ReplicaConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(failoverTarget)) __obj.updateDynamic("failoverTarget")(failoverTarget)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (mysqlReplicaConfiguration != null) __obj.updateDynamic("mysqlReplicaConfiguration")(mysqlReplicaConfiguration)
+    if (!js.isUndefined(failoverTarget)) __obj.updateDynamic("failoverTarget")(failoverTarget.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (mysqlReplicaConfiguration != null) __obj.updateDynamic("mysqlReplicaConfiguration")(mysqlReplicaConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaConfiguration]
   }
 }

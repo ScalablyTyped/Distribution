@@ -51,9 +51,9 @@ object Input {
     file: String = null,
     id: String = null
   ): Input = {
-    val __obj = js.Dynamic.literal(from = from, hasBOM = hasBOM, map = map, origin = js.Any.fromFunction2(origin))
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], hasBOM = hasBOM.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], origin = js.Any.fromFunction2(origin))
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
   }
 }

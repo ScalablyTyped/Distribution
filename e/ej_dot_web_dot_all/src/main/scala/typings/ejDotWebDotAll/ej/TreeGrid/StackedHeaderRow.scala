@@ -15,7 +15,7 @@ object StackedHeaderRow {
   @scala.inline
   def apply(stackedHeaderColumns: js.Array[StackedHeaderRowsStackedHeaderColumn] = null): StackedHeaderRow = {
     val __obj = js.Dynamic.literal()
-    if (stackedHeaderColumns != null) __obj.updateDynamic("stackedHeaderColumns")(stackedHeaderColumns)
+    if (stackedHeaderColumns != null) __obj.updateDynamic("stackedHeaderColumns")(stackedHeaderColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackedHeaderRow]
   }
 }

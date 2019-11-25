@@ -11,7 +11,7 @@ trait Anon_QueryParams extends js.Object {
 object Anon_QueryParams {
   @scala.inline
   def apply(queryParams: js.Object): Anon_QueryParams = {
-    val __obj = js.Dynamic.literal(queryParams = queryParams)
+    val __obj = js.Dynamic.literal(queryParams = queryParams.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QueryParams]
   }

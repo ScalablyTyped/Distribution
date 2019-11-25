@@ -53,15 +53,15 @@ object _UnmarshalledGrantListEntry {
     RetiringPrincipal: String = null
   ): _UnmarshalledGrantListEntry = {
     val __obj = js.Dynamic.literal()
-    if (Constraints != null) __obj.updateDynamic("Constraints")(Constraints)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (GrantId != null) __obj.updateDynamic("GrantId")(GrantId)
-    if (GranteePrincipal != null) __obj.updateDynamic("GranteePrincipal")(GranteePrincipal)
-    if (IssuingAccount != null) __obj.updateDynamic("IssuingAccount")(IssuingAccount)
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (Operations != null) __obj.updateDynamic("Operations")(Operations)
-    if (RetiringPrincipal != null) __obj.updateDynamic("RetiringPrincipal")(RetiringPrincipal)
+    if (Constraints != null) __obj.updateDynamic("Constraints")(Constraints.asInstanceOf[js.Any])
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (GrantId != null) __obj.updateDynamic("GrantId")(GrantId.asInstanceOf[js.Any])
+    if (GranteePrincipal != null) __obj.updateDynamic("GranteePrincipal")(GranteePrincipal.asInstanceOf[js.Any])
+    if (IssuingAccount != null) __obj.updateDynamic("IssuingAccount")(IssuingAccount.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (Operations != null) __obj.updateDynamic("Operations")(Operations.asInstanceOf[js.Any])
+    if (RetiringPrincipal != null) __obj.updateDynamic("RetiringPrincipal")(RetiringPrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledGrantListEntry]
   }
 }

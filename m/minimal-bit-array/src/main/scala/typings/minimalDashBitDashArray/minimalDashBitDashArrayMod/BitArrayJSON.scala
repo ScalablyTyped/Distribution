@@ -12,7 +12,7 @@ trait BitArrayJSON extends js.Object {
 object BitArrayJSON {
   @scala.inline
   def apply(bits: js.Array[Double], length: Double): BitArrayJSON = {
-    val __obj = js.Dynamic.literal(bits = bits, length = length)
+    val __obj = js.Dynamic.literal(bits = bits.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BitArrayJSON]
   }

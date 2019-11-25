@@ -51,8 +51,8 @@ object TransportStats {
   ): TransportStats = {
     val __obj = js.Dynamic.literal()
     if (NetworkType != null) __obj.updateDynamic("NetworkType")(NetworkType.asInstanceOf[js.Any])
-    if (OutgoingAvailableBandwidth != null) __obj.updateDynamic("OutgoingAvailableBandwidth")(OutgoingAvailableBandwidth)
-    if (RTT != null) __obj.updateDynamic("RTT")(RTT)
+    if (OutgoingAvailableBandwidth != null) __obj.updateDynamic("OutgoingAvailableBandwidth")(OutgoingAvailableBandwidth.asInstanceOf[js.Any])
+    if (RTT != null) __obj.updateDynamic("RTT")(RTT.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportStats]
   }
 }

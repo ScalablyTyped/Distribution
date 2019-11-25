@@ -29,9 +29,9 @@ object DataTypeToTypeMap {
     u: Double,
     m: js.UndefOr[scala.Nothing] = js.undefined
   ): DataTypeToTypeMap = {
-    val __obj = js.Dynamic.literal(b = b, d = d, f = f, i = i, s = s, u = u)
-    __obj.updateDynamic("8")(`8`)
-    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
+    __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
+    if (!js.isUndefined(m)) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTypeToTypeMap]
   }
 }

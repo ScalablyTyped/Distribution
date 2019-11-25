@@ -12,7 +12,7 @@ object Anon_Store {
   @scala.inline
   def apply(store: js.UndefOr[Boolean] = js.undefined): Anon_Store = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(store)) __obj.updateDynamic("store")(store)
+    if (!js.isUndefined(store)) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Store]
   }
 }

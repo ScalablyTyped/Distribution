@@ -14,8 +14,8 @@ object DiagnosticsOptions {
   @scala.inline
   def apply(lint: Anon_ArgumentsInColorFunction = null, validate: js.UndefOr[Boolean] = js.undefined): DiagnosticsOptions = {
     val __obj = js.Dynamic.literal()
-    if (lint != null) __obj.updateDynamic("lint")(lint)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (lint != null) __obj.updateDynamic("lint")(lint.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticsOptions]
   }
 }

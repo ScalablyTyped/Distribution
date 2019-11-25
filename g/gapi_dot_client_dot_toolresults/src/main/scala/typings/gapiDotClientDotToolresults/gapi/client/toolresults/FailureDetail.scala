@@ -27,11 +27,11 @@ object FailureDetail {
     unableToCrawl: js.UndefOr[Boolean] = js.undefined
   ): FailureDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(crashed)) __obj.updateDynamic("crashed")(crashed)
-    if (!js.isUndefined(notInstalled)) __obj.updateDynamic("notInstalled")(notInstalled)
-    if (!js.isUndefined(otherNativeCrash)) __obj.updateDynamic("otherNativeCrash")(otherNativeCrash)
-    if (!js.isUndefined(timedOut)) __obj.updateDynamic("timedOut")(timedOut)
-    if (!js.isUndefined(unableToCrawl)) __obj.updateDynamic("unableToCrawl")(unableToCrawl)
+    if (!js.isUndefined(crashed)) __obj.updateDynamic("crashed")(crashed.asInstanceOf[js.Any])
+    if (!js.isUndefined(notInstalled)) __obj.updateDynamic("notInstalled")(notInstalled.asInstanceOf[js.Any])
+    if (!js.isUndefined(otherNativeCrash)) __obj.updateDynamic("otherNativeCrash")(otherNativeCrash.asInstanceOf[js.Any])
+    if (!js.isUndefined(timedOut)) __obj.updateDynamic("timedOut")(timedOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(unableToCrawl)) __obj.updateDynamic("unableToCrawl")(unableToCrawl.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailureDetail]
   }
 }

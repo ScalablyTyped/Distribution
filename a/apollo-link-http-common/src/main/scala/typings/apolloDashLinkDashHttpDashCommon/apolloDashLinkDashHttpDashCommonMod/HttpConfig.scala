@@ -20,10 +20,10 @@ object HttpConfig {
     options: js.Any = null
   ): HttpConfig = {
     val __obj = js.Dynamic.literal()
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (http != null) __obj.updateDynamic("http")(http)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpConfig]
   }
 }

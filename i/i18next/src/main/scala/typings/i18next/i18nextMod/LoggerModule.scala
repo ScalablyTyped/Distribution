@@ -26,7 +26,7 @@ object LoggerModule {
     warn: /* repeated */ js.Any => Unit
   ): LoggerModule = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerModule]
   }
 }

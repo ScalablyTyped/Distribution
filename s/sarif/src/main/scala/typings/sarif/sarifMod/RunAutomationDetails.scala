@@ -39,11 +39,11 @@ object RunAutomationDetails {
     properties: PropertyBag = null
   ): RunAutomationDetails = {
     val __obj = js.Dynamic.literal()
-    if (correlationGuid != null) __obj.updateDynamic("correlationGuid")(correlationGuid)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (correlationGuid != null) __obj.updateDynamic("correlationGuid")(correlationGuid.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunAutomationDetails]
   }
 }

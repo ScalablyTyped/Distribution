@@ -13,8 +13,8 @@ object Anon_DescriptionSuggestedkey {
   @scala.inline
   def apply(description: String = null, suggested_key: Anon_AdditionalProperties = null): Anon_DescriptionSuggestedkey = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (suggested_key != null) __obj.updateDynamic("suggested_key")(suggested_key)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (suggested_key != null) __obj.updateDynamic("suggested_key")(suggested_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DescriptionSuggestedkey]
   }
 }

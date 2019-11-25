@@ -14,7 +14,7 @@ trait Anon_ReturnValueTargetCoordinates extends js.Object {
 object Anon_ReturnValueTargetCoordinates {
   @scala.inline
   def apply(returnValue: IPromiseWithIAsyncAction, targetCoordinates: Point): Anon_ReturnValueTargetCoordinates = {
-    val __obj = js.Dynamic.literal(returnValue = returnValue, targetCoordinates = targetCoordinates)
+    val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], targetCoordinates = targetCoordinates.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ReturnValueTargetCoordinates]
   }

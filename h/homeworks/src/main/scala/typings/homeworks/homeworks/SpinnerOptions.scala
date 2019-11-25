@@ -16,8 +16,8 @@ object SpinnerOptions {
   @scala.inline
   def apply(empty: js.Any = null, `type`: js.Any = null): SpinnerOptions = {
     val __obj = js.Dynamic.literal()
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerOptions]
   }
 }

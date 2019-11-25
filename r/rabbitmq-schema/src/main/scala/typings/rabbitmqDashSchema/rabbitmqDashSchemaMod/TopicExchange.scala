@@ -15,9 +15,9 @@ trait TopicExchange extends Exchange {
 object TopicExchange {
   @scala.inline
   def apply(bindings: js.Array[TopicBinding], exchange: String, `type`: topic, options: js.Object = null): TopicExchange = {
-    val __obj = js.Dynamic.literal(bindings = bindings, exchange = exchange)
-    __obj.updateDynamic("type")(`type`)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicExchange]
   }
 }

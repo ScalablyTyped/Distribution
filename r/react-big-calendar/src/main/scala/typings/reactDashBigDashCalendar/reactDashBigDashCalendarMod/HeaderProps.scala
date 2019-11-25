@@ -14,7 +14,7 @@ trait HeaderProps extends js.Object {
 object HeaderProps {
   @scala.inline
   def apply(date: Date, label: String, localizer: DateLocalizer): HeaderProps = {
-    val __obj = js.Dynamic.literal(date = date, label = label, localizer = localizer)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], localizer = localizer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HeaderProps]
   }

@@ -14,7 +14,7 @@ object Config {
   def apply(timeout: Int | Double = null, transient: js.UndefOr[Boolean] = js.undefined): Config = {
     val __obj = js.Dynamic.literal()
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(transient)) __obj.updateDynamic("transient")(transient)
+    if (!js.isUndefined(transient)) __obj.updateDynamic("transient")(transient.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

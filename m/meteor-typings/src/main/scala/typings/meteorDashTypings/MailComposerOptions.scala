@@ -21,7 +21,7 @@ object MailComposerOptions {
     forceEmbeddedImages: Boolean,
     keepBcc: Boolean
   ): MailComposerOptions = {
-    val __obj = js.Dynamic.literal(charset = charset, encoding = encoding, escapeSMTP = escapeSMTP, forceEmbeddedImages = forceEmbeddedImages, keepBcc = keepBcc)
+    val __obj = js.Dynamic.literal(charset = charset.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], escapeSMTP = escapeSMTP.asInstanceOf[js.Any], forceEmbeddedImages = forceEmbeddedImages.asInstanceOf[js.Any], keepBcc = keepBcc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MailComposerOptions]
   }

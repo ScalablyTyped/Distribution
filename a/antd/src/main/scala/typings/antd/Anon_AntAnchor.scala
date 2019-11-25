@@ -12,7 +12,7 @@ trait Anon_AntAnchor extends js.Object {
 object Anon_AntAnchor {
   @scala.inline
   def apply(antAnchor: Requireable[js.Object]): Anon_AntAnchor = {
-    val __obj = js.Dynamic.literal(antAnchor = antAnchor)
+    val __obj = js.Dynamic.literal(antAnchor = antAnchor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AntAnchor]
   }

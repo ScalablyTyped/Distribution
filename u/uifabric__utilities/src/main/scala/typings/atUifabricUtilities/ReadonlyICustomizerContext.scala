@@ -13,7 +13,7 @@ trait ReadonlyICustomizerContext extends js.Object {
 object ReadonlyICustomizerContext {
   @scala.inline
   def apply(customizations: ICustomizations): ReadonlyICustomizerContext = {
-    val __obj = js.Dynamic.literal(customizations = customizations)
+    val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadonlyICustomizerContext]
   }

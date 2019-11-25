@@ -23,10 +23,10 @@ object RadioButtonProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     theme: String = null
   ): RadioButtonProps = {
-    val __obj = js.Dynamic.literal(label = label, onSelect = js.Any.fromFunction1(onSelect), value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onSelect = js.Any.fromFunction1(onSelect), value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioButtonProps]
   }
 }

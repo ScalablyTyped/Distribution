@@ -44,8 +44,8 @@ object Purchase {
     signedRequest: SignedPurchaseRequest,
     developerPayload: String = null
   ): Purchase = {
-    val __obj = js.Dynamic.literal(paymentID = paymentID, productID = productID, purchaseTime = purchaseTime, purchaseToken = purchaseToken, signedRequest = signedRequest)
-    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload)
+    val __obj = js.Dynamic.literal(paymentID = paymentID.asInstanceOf[js.Any], productID = productID.asInstanceOf[js.Any], purchaseTime = purchaseTime.asInstanceOf[js.Any], purchaseToken = purchaseToken.asInstanceOf[js.Any], signedRequest = signedRequest.asInstanceOf[js.Any])
+    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Purchase]
   }
 }

@@ -29,8 +29,8 @@ object StateCore {
     StringDictionary: /** Return any for a yet untyped property */
   /* undocumented */ StringDictionary[js.Any] = null
   ): StateCore = {
-    val __obj = js.Dynamic.literal(env = env, level = level, md = md, src = src, tokens = tokens)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[StateCore]
   }
 }

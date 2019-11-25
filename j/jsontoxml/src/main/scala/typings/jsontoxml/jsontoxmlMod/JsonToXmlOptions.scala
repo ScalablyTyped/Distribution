@@ -27,12 +27,12 @@ object JsonToXmlOptions {
     xmlHeader: Boolean | Anon_Standalone = null
   ): JsonToXmlOptions = {
     val __obj = js.Dynamic.literal()
-    if (docType != null) __obj.updateDynamic("docType")(docType)
-    if (!js.isUndefined(escape)) __obj.updateDynamic("escape")(escape)
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (!js.isUndefined(removeIllegalNameCharacters)) __obj.updateDynamic("removeIllegalNameCharacters")(removeIllegalNameCharacters)
+    if (docType != null) __obj.updateDynamic("docType")(docType.asInstanceOf[js.Any])
+    if (!js.isUndefined(escape)) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeIllegalNameCharacters)) __obj.updateDynamic("removeIllegalNameCharacters")(removeIllegalNameCharacters.asInstanceOf[js.Any])
     if (xmlHeader != null) __obj.updateDynamic("xmlHeader")(xmlHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonToXmlOptions]
   }

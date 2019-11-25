@@ -42,12 +42,12 @@ object UpdateTooltipEventUIParam {
     y: js.Any = null
   ): UpdateTooltipEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (x != null) __obj.updateDynamic("x")(x)
-    if (y != null) __obj.updateDynamic("y")(y)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTooltipEventUIParam]
   }
 }

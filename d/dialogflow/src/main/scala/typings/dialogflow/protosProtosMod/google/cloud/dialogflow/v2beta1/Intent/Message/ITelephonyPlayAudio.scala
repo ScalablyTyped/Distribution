@@ -14,7 +14,7 @@ object ITelephonyPlayAudio {
   @scala.inline
   def apply(audioUri: String = null): ITelephonyPlayAudio = {
     val __obj = js.Dynamic.literal()
-    if (audioUri != null) __obj.updateDynamic("audioUri")(audioUri)
+    if (audioUri != null) __obj.updateDynamic("audioUri")(audioUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITelephonyPlayAudio]
   }
 }

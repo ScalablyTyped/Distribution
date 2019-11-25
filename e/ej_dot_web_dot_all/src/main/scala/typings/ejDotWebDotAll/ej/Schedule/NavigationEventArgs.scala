@@ -48,15 +48,15 @@ object NavigationEventArgs {
     `type`: String = null
   ): NavigationEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate)
-    if (currentView != null) __obj.updateDynamic("currentView")(currentView)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (previousDate != null) __obj.updateDynamic("previousDate")(previousDate)
-    if (previousView != null) __obj.updateDynamic("previousView")(previousView)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate.asInstanceOf[js.Any])
+    if (currentView != null) __obj.updateDynamic("currentView")(currentView.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (previousDate != null) __obj.updateDynamic("previousDate")(previousDate.asInstanceOf[js.Any])
+    if (previousView != null) __obj.updateDynamic("previousView")(previousView.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationEventArgs]
   }
 }

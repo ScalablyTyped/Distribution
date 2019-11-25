@@ -15,8 +15,8 @@ object ActiveXObjectNameMap {
   @scala.inline
   def apply(`Shell.Application`: Shell, `Shell.FolderView`: ShellFolderViewOC): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Shell.Application")(`Shell.Application`)
-    __obj.updateDynamic("Shell.FolderView")(`Shell.FolderView`)
+    __obj.updateDynamic("Shell.Application")(`Shell.Application`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Shell.FolderView")(`Shell.FolderView`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

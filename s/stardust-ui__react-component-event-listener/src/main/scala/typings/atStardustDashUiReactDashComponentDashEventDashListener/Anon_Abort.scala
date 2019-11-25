@@ -28,8 +28,8 @@ object Anon_Abort {
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91 */ js.Any
     ]
   ): Anon_Abort = {
-    val __obj = js.Dynamic.literal(capture = capture, listener = listener, targetRef = targetRef)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(capture = capture.asInstanceOf[js.Any], listener = listener.asInstanceOf[js.Any], targetRef = targetRef.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Abort]
   }
 }

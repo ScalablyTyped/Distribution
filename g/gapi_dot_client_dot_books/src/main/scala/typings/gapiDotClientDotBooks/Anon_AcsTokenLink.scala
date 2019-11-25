@@ -21,9 +21,9 @@ object Anon_AcsTokenLink {
     isAvailable: js.UndefOr[Boolean] = js.undefined
   ): Anon_AcsTokenLink = {
     val __obj = js.Dynamic.literal()
-    if (acsTokenLink != null) __obj.updateDynamic("acsTokenLink")(acsTokenLink)
-    if (downloadLink != null) __obj.updateDynamic("downloadLink")(downloadLink)
-    if (!js.isUndefined(isAvailable)) __obj.updateDynamic("isAvailable")(isAvailable)
+    if (acsTokenLink != null) __obj.updateDynamic("acsTokenLink")(acsTokenLink.asInstanceOf[js.Any])
+    if (downloadLink != null) __obj.updateDynamic("downloadLink")(downloadLink.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAvailable)) __obj.updateDynamic("isAvailable")(isAvailable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AcsTokenLink]
   }
 }

@@ -15,7 +15,7 @@ object CommitDiscardOptions {
   @scala.inline
   def apply(retainLogs: js.UndefOr[Boolean] = js.undefined): CommitDiscardOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(retainLogs)) __obj.updateDynamic("retainLogs")(retainLogs)
+    if (!js.isUndefined(retainLogs)) __obj.updateDynamic("retainLogs")(retainLogs.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitDiscardOptions]
   }
 }

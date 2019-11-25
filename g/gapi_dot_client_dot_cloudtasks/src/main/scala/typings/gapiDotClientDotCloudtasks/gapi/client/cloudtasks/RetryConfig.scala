@@ -95,11 +95,11 @@ object RetryConfig {
   ): RetryConfig = {
     val __obj = js.Dynamic.literal()
     if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
-    if (maxBackoff != null) __obj.updateDynamic("maxBackoff")(maxBackoff)
+    if (maxBackoff != null) __obj.updateDynamic("maxBackoff")(maxBackoff.asInstanceOf[js.Any])
     if (maxDoublings != null) __obj.updateDynamic("maxDoublings")(maxDoublings.asInstanceOf[js.Any])
-    if (maxRetryDuration != null) __obj.updateDynamic("maxRetryDuration")(maxRetryDuration)
-    if (minBackoff != null) __obj.updateDynamic("minBackoff")(minBackoff)
-    if (!js.isUndefined(unlimitedAttempts)) __obj.updateDynamic("unlimitedAttempts")(unlimitedAttempts)
+    if (maxRetryDuration != null) __obj.updateDynamic("maxRetryDuration")(maxRetryDuration.asInstanceOf[js.Any])
+    if (minBackoff != null) __obj.updateDynamic("minBackoff")(minBackoff.asInstanceOf[js.Any])
+    if (!js.isUndefined(unlimitedAttempts)) __obj.updateDynamic("unlimitedAttempts")(unlimitedAttempts.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryConfig]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_Auto extends js.Object {
 object Anon_Auto {
   @scala.inline
   def apply(tagName: div, touchAction: auto): Anon_Auto = {
-    val __obj = js.Dynamic.literal(tagName = tagName, touchAction = touchAction)
+    val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any], touchAction = touchAction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Auto]
   }

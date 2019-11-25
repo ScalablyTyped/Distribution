@@ -18,7 +18,7 @@ trait Module extends js.Object {
 object Module {
   @scala.inline
   def apply(utils: FirebaseModuleWithStatics[typings.atReactDashNativeDashFirebaseApp.Utils.Module, Statics]): Module = {
-    val __obj = js.Dynamic.literal(utils = utils)
+    val __obj = js.Dynamic.literal(utils = utils.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Module]
   }

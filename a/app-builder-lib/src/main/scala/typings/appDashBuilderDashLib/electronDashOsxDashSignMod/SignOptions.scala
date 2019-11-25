@@ -39,22 +39,22 @@ object SignOptions {
     `type`: String = null,
     version: String = null
   ): SignOptions = {
-    val __obj = js.Dynamic.literal(app = app)
-    if (binaries != null) __obj.updateDynamic("binaries")(binaries)
-    if (entitlements != null) __obj.updateDynamic("entitlements")(entitlements)
-    if (`entitlements-inherit` != null) __obj.updateDynamic("entitlements-inherit")(`entitlements-inherit`)
-    if (!js.isUndefined(`gatekeeper-assess`)) __obj.updateDynamic("gatekeeper-assess")(`gatekeeper-assess`)
-    if (identity != null) __obj.updateDynamic("identity")(identity)
-    if (!js.isUndefined(`identity-validation`)) __obj.updateDynamic("identity-validation")(`identity-validation`)
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (keychain != null) __obj.updateDynamic("keychain")(keychain)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (!js.isUndefined(`pre-auto-entitlements`)) __obj.updateDynamic("pre-auto-entitlements")(`pre-auto-entitlements`)
-    if (!js.isUndefined(`pre-embed-provisioning-profile`)) __obj.updateDynamic("pre-embed-provisioning-profile")(`pre-embed-provisioning-profile`)
-    if (`provisioning-profile` != null) __obj.updateDynamic("provisioning-profile")(`provisioning-profile`)
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
+    if (binaries != null) __obj.updateDynamic("binaries")(binaries.asInstanceOf[js.Any])
+    if (entitlements != null) __obj.updateDynamic("entitlements")(entitlements.asInstanceOf[js.Any])
+    if (`entitlements-inherit` != null) __obj.updateDynamic("entitlements-inherit")(`entitlements-inherit`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`gatekeeper-assess`)) __obj.updateDynamic("gatekeeper-assess")(`gatekeeper-assess`.asInstanceOf[js.Any])
+    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
+    if (!js.isUndefined(`identity-validation`)) __obj.updateDynamic("identity-validation")(`identity-validation`.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (keychain != null) __obj.updateDynamic("keychain")(keychain.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (!js.isUndefined(`pre-auto-entitlements`)) __obj.updateDynamic("pre-auto-entitlements")(`pre-auto-entitlements`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`pre-embed-provisioning-profile`)) __obj.updateDynamic("pre-embed-provisioning-profile")(`pre-embed-provisioning-profile`.asInstanceOf[js.Any])
+    if (`provisioning-profile` != null) __obj.updateDynamic("provisioning-profile")(`provisioning-profile`.asInstanceOf[js.Any])
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptions]
   }
 }

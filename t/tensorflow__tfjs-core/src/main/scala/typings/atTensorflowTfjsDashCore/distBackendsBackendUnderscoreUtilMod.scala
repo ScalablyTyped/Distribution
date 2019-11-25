@@ -9,8 +9,8 @@ import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.channels
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.channelsLast
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same_
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid_
 import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.KernelBackend
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv2DInfo
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv3DInfo
@@ -36,14 +36,14 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same | valid | Double
+    pad: same_ | valid_ | Double
   ): Conv2DInfo = js.native
   def computeConv2DInfo(
     inShape: js.Tuple4[Double, Double, Double, Double],
     filterShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     roundingMode: floor | round | ceil
   ): Conv2DInfo = js.native
   def computeConv2DInfo(
@@ -51,7 +51,7 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     roundingMode: floor | round | ceil,
     depthwise: Boolean
   ): Conv2DInfo = js.native
@@ -60,7 +60,7 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     roundingMode: floor | round | ceil,
     depthwise: Boolean,
     dataFormat: channelsFirst | channelsLast
@@ -70,14 +70,14 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
-    pad: same | valid | Double
+    pad: same_ | valid_ | Double
   ): Conv3DInfo = js.native
   def computeConv3DInfo(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     depthwise: Boolean
   ): Conv3DInfo = js.native
   def computeConv3DInfo(
@@ -85,7 +85,7 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     depthwise: Boolean,
     dataFormat: channelsFirst | channelsLast
   ): Conv3DInfo = js.native
@@ -94,7 +94,7 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     depthwise: Boolean,
     dataFormat: channelsFirst | channelsLast,
     roundingMode: floor | round | ceil
@@ -115,14 +115,14 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same | valid | Double
+    pad: same_ | valid_ | Double
   ): Conv2DInfo = js.native
   def computePool2DInfo(
     inShape: js.Tuple4[Double, Double, Double, Double],
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     roundingMode: floor | round | ceil
   ): Conv2DInfo = js.native
   def computePool2DInfo(
@@ -130,7 +130,7 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     roundingMode: floor | round | ceil,
     dataFormat: channelsFirst | channelsLast
   ): Conv2DInfo = js.native
@@ -139,14 +139,14 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterSize: Double | (js.Tuple3[Double, Double, Double]),
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
-    pad: same | valid | Double
+    pad: same_ | valid_ | Double
   ): Conv3DInfo = js.native
   def computePool3DInfo(
     inShape: js.Tuple5[Double, Double, Double, Double, Double],
     filterSize: Double | (js.Tuple3[Double, Double, Double]),
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     roundingMode: floor | round | ceil
   ): Conv3DInfo = js.native
   def computePool3DInfo(
@@ -154,7 +154,7 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
     filterSize: Double | (js.Tuple3[Double, Double, Double]),
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
-    pad: same | valid | Double,
+    pad: same_ | valid_ | Double,
     roundingMode: floor | round | ceil,
     dataFormat: NDHWC | NCDHW
   ): Conv3DInfo = js.native
@@ -175,7 +175,7 @@ object distBackendsBackendUnderscoreUtilMod extends js.Object {
   def linspaceImpl(start: Double, stop: Double, num: Double): Tensor[R1] = js.native
   def reshapeTensor[T /* <: Tensor[Rank] */, R /* <: Rank */](
     x: T,
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
   def tupleValuesAreOne(param: js.Array[Double]): Boolean = js.native
   def tupleValuesAreOne(param: Double): Boolean = js.native

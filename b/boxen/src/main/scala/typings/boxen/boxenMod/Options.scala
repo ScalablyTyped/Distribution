@@ -100,7 +100,7 @@ object Options {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(dimBorder)) __obj.updateDynamic("dimBorder")(dimBorder)
+    if (!js.isUndefined(dimBorder)) __obj.updateDynamic("dimBorder")(dimBorder.asInstanceOf[js.Any])
     if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

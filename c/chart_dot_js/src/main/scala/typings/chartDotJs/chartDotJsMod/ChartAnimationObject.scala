@@ -25,7 +25,7 @@ object ChartAnimationObject {
   ): ChartAnimationObject = {
     val __obj = js.Dynamic.literal()
     if (currentStep != null) __obj.updateDynamic("currentStep")(currentStep.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (numSteps != null) __obj.updateDynamic("numSteps")(numSteps.asInstanceOf[js.Any])
     if (onAnimationComplete != null) __obj.updateDynamic("onAnimationComplete")(js.Any.fromFunction1(onAnimationComplete))
     if (onAnimationProgress != null) __obj.updateDynamic("onAnimationProgress")(js.Any.fromFunction1(onAnimationProgress))

@@ -19,7 +19,7 @@ object AddSheetRequest {
   @scala.inline
   def apply(properties: SheetProperties = null): AddSheetRequest = {
     val __obj = js.Dynamic.literal()
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddSheetRequest]
   }
 }

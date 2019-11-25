@@ -19,8 +19,8 @@ trait TokenDictRule extends js.Object {
 object TokenDictRule {
   @scala.inline
   def apply(part_of_speech: String, text: String, tokens: js.Array[String], readings: js.Array[String] = null): TokenDictRule = {
-    val __obj = js.Dynamic.literal(part_of_speech = part_of_speech, text = text, tokens = tokens)
-    if (readings != null) __obj.updateDynamic("readings")(readings)
+    val __obj = js.Dynamic.literal(part_of_speech = part_of_speech.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
+    if (readings != null) __obj.updateDynamic("readings")(readings.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenDictRule]
   }
 }

@@ -56,16 +56,16 @@ object Anon_AltFieldsGroupByTag {
     tag: String = null,
     userIp: String = null
   ): Anon_AltFieldsGroupByTag = {
-    val __obj = js.Dynamic.literal(leaseSecs = leaseSecs, numTasks = numTasks, project = project, taskqueue = taskqueue)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(groupByTag)) __obj.updateDynamic("groupByTag")(groupByTag)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    val __obj = js.Dynamic.literal(leaseSecs = leaseSecs.asInstanceOf[js.Any], numTasks = numTasks.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], taskqueue = taskqueue.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupByTag)) __obj.updateDynamic("groupByTag")(groupByTag.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltFieldsGroupByTag]
   }
 }

@@ -13,7 +13,7 @@ object DynamicLinkStats {
   @scala.inline
   def apply(linkEventStats: js.Array[DynamicLinkEventStat] = null): DynamicLinkStats = {
     val __obj = js.Dynamic.literal()
-    if (linkEventStats != null) __obj.updateDynamic("linkEventStats")(linkEventStats)
+    if (linkEventStats != null) __obj.updateDynamic("linkEventStats")(linkEventStats.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicLinkStats]
   }
 }

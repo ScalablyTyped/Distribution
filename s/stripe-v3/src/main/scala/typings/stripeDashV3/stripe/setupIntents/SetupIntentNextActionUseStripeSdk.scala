@@ -22,8 +22,8 @@ trait SetupIntentNextActionUseStripeSdk extends js.Object {
 object SetupIntentNextActionUseStripeSdk {
   @scala.inline
   def apply(`type`: use_stripe_sdk, use_stripe_sdk: js.Any): SetupIntentNextActionUseStripeSdk = {
-    val __obj = js.Dynamic.literal(use_stripe_sdk = use_stripe_sdk)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(use_stripe_sdk = use_stripe_sdk.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetupIntentNextActionUseStripeSdk]
   }
 }

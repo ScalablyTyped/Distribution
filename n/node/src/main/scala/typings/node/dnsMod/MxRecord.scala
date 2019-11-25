@@ -12,7 +12,7 @@ trait MxRecord extends js.Object {
 object MxRecord {
   @scala.inline
   def apply(exchange: java.lang.String, priority: Double): MxRecord = {
-    val __obj = js.Dynamic.literal(exchange = exchange, priority = priority)
+    val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MxRecord]
   }

@@ -98,7 +98,7 @@ object ChartCursorSettings {
     valueBalloonsEnabled: Boolean,
     zoomable: Boolean
   ): ChartCursorSettings = {
-    val __obj = js.Dynamic.literal(bulletSize = bulletSize, bulletsEnabled = bulletsEnabled, categoryBalloonAlpha = categoryBalloonAlpha, categoryBalloonColor = categoryBalloonColor, categoryBalloonDateFormats = categoryBalloonDateFormats, categoryBalloonEnabled = categoryBalloonEnabled, cursorAlpha = cursorAlpha, cursorColor = cursorColor, cursorPosition = cursorPosition, enabled = enabled, pan = pan, valueBalloonsEnabled = valueBalloonsEnabled, zoomable = zoomable)
+    val __obj = js.Dynamic.literal(bulletSize = bulletSize.asInstanceOf[js.Any], bulletsEnabled = bulletsEnabled.asInstanceOf[js.Any], categoryBalloonAlpha = categoryBalloonAlpha.asInstanceOf[js.Any], categoryBalloonColor = categoryBalloonColor.asInstanceOf[js.Any], categoryBalloonDateFormats = categoryBalloonDateFormats.asInstanceOf[js.Any], categoryBalloonEnabled = categoryBalloonEnabled.asInstanceOf[js.Any], cursorAlpha = cursorAlpha.asInstanceOf[js.Any], cursorColor = cursorColor.asInstanceOf[js.Any], cursorPosition = cursorPosition.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], pan = pan.asInstanceOf[js.Any], valueBalloonsEnabled = valueBalloonsEnabled.asInstanceOf[js.Any], zoomable = zoomable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChartCursorSettings]
   }

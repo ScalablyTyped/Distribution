@@ -51,19 +51,19 @@ object CalendarListEntry {
     summaryOverride: String = null,
     timeZone: String = null
   ): CalendarListEntry = {
-    val __obj = js.Dynamic.literal(accessRole = accessRole, defaultReminders = defaultReminders, etag = etag, id = id, kind = kind, summary = summary)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (colorId != null) __obj.updateDynamic("colorId")(colorId)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (notificationSettings != null) __obj.updateDynamic("notificationSettings")(notificationSettings)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (summaryOverride != null) __obj.updateDynamic("summaryOverride")(summaryOverride)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    val __obj = js.Dynamic.literal(accessRole = accessRole.asInstanceOf[js.Any], defaultReminders = defaultReminders.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (colorId != null) __obj.updateDynamic("colorId")(colorId.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (notificationSettings != null) __obj.updateDynamic("notificationSettings")(notificationSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (summaryOverride != null) __obj.updateDynamic("summaryOverride")(summaryOverride.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarListEntry]
   }
 }

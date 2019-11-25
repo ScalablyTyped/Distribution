@@ -3,9 +3,6 @@ package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor
-import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.same
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.valid
 import scala.scalajs.js
@@ -28,7 +25,7 @@ object conv2dTranspose extends js.Object {
     outputShape: (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple3[Double, Double, Double]),
     strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: floor | round | ceil
+    dimRoundingMode: typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.floor | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.round | typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.ceil
   ): T = js.native
 }
 

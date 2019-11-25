@@ -185,7 +185,7 @@ package object std {
   /**
     * Make all properties in T optional
     */
-  type Partial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
     */ typings.std.stdStrings.Partial with T
   type PaymentRequestUpdateEventInit = EventInit
@@ -198,7 +198,7 @@ package object std {
   /**
     * From T, pick a set of properties whose keys are in the union K
     */
-  type Pick[T, K /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Pick[T, K /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K ]: T[P]}
     */ typings.std.stdStrings.Pick with T
   type PositionCallback = js.Function1[/* position */ Position, Unit]
@@ -228,7 +228,7 @@ package object std {
   /**
     * Make all properties in T readonly
     */
-  type Readonly[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ P in keyof T ]: T[P]}
     */ typings.std.stdStrings.Readonly with T
   /**
@@ -240,7 +240,7 @@ package object std {
   /**
     * Make all properties in T required
     */
-  type Required[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Required[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: -? T[P]}
     */ typings.std.stdStrings.Required with T
   /**

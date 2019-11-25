@@ -12,7 +12,7 @@ trait BulkGetResponse[Content /* <: js.Object */] extends js.Object {
 object BulkGetResponse {
   @scala.inline
   def apply[Content /* <: js.Object */](results: js.Array[Anon_Docs[Content]]): BulkGetResponse[Content] = {
-    val __obj = js.Dynamic.literal(results = results)
+    val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BulkGetResponse[Content]]
   }

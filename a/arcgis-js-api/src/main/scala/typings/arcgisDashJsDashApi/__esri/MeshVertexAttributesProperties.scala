@@ -55,7 +55,7 @@ object MeshVertexAttributesProperties {
     tangent: Float32Array | js.Array[Double] | Float64Array = null,
     uv: Float32Array | js.Array[Double] | Float64Array = null
   ): MeshVertexAttributesProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

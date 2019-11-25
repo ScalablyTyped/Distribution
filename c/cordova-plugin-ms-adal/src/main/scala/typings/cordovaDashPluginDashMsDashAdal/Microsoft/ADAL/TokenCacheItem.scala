@@ -30,7 +30,7 @@ object TokenCacheItem {
     tenantId: String,
     userInfo: UserInfo
   ): TokenCacheItem = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, authority = authority, clientId = clientId, displayableId = displayableId, expiresOn = expiresOn, isMultipleResourceRefreshToken = isMultipleResourceRefreshToken, resource = resource, tenantId = tenantId, userInfo = userInfo)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], authority = authority.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], displayableId = displayableId.asInstanceOf[js.Any], expiresOn = expiresOn.asInstanceOf[js.Any], isMultipleResourceRefreshToken = isMultipleResourceRefreshToken.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], tenantId = tenantId.asInstanceOf[js.Any], userInfo = userInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TokenCacheItem]
   }

@@ -15,8 +15,8 @@ object UrlSampleDetails {
   @scala.inline
   def apply(containingSitemaps: js.Array[String] = null, linkedFromUrls: js.Array[String] = null): UrlSampleDetails = {
     val __obj = js.Dynamic.literal()
-    if (containingSitemaps != null) __obj.updateDynamic("containingSitemaps")(containingSitemaps)
-    if (linkedFromUrls != null) __obj.updateDynamic("linkedFromUrls")(linkedFromUrls)
+    if (containingSitemaps != null) __obj.updateDynamic("containingSitemaps")(containingSitemaps.asInstanceOf[js.Any])
+    if (linkedFromUrls != null) __obj.updateDynamic("linkedFromUrls")(linkedFromUrls.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlSampleDetails]
   }
 }

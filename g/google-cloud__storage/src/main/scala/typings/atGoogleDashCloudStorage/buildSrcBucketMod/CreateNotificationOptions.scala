@@ -23,11 +23,11 @@ object CreateNotificationOptions {
     userProject: String = null
   ): CreateNotificationOptions = {
     val __obj = js.Dynamic.literal()
-    if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes)
-    if (eventTypes != null) __obj.updateDynamic("eventTypes")(eventTypes)
-    if (objectNamePrefix != null) __obj.updateDynamic("objectNamePrefix")(objectNamePrefix)
-    if (payloadFormat != null) __obj.updateDynamic("payloadFormat")(payloadFormat)
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes.asInstanceOf[js.Any])
+    if (eventTypes != null) __obj.updateDynamic("eventTypes")(eventTypes.asInstanceOf[js.Any])
+    if (objectNamePrefix != null) __obj.updateDynamic("objectNamePrefix")(objectNamePrefix.asInstanceOf[js.Any])
+    if (payloadFormat != null) __obj.updateDynamic("payloadFormat")(payloadFormat.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNotificationOptions]
   }
 }

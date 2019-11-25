@@ -23,11 +23,11 @@ object SelectOptions {
     isUnique: js.UndefOr[Boolean] = js.undefined
   ): SelectOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired)
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique)
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectOptions]
   }
 }

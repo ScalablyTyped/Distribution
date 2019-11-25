@@ -14,8 +14,8 @@ trait LexDialogActionDelegate extends LexDialogAction {
 object LexDialogActionDelegate {
   @scala.inline
   def apply(slots: StringDictionary[String | Null], `type`: Delegate): LexDialogActionDelegate = {
-    val __obj = js.Dynamic.literal(slots = slots)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(slots = slots.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexDialogActionDelegate]
   }
 }

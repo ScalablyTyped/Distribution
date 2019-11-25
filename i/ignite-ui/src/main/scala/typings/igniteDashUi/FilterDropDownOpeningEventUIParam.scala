@@ -15,7 +15,7 @@ object FilterDropDownOpeningEventUIParam {
   @scala.inline
   def apply(hierarchy: js.Any = null): FilterDropDownOpeningEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy)
+    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterDropDownOpeningEventUIParam]
   }
 }

@@ -613,7 +613,7 @@ trait Underscore[T, V] extends js.Object {
   def pick[K /* <: String */](keys: js.Array[K]): Pick[V, K] = js.native
   def pick[K /* <: String */](
     predicate: ObjectIterator[
-      /* import warning: ImportType.apply Failed type conversion: V[K] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: V[K] */ js.Any, 
       Boolean
     ]
   ): Pick[V, K] = js.native

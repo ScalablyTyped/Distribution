@@ -28,8 +28,8 @@ object PNG {
     hasAlpha: Anon_ImagepngTrue,
     mime: Anon_Imagepng
   ): PNG = {
-    val __obj = js.Dynamic.literal(constants = constants, decoders = decoders, encoders = encoders, hasAlpha = hasAlpha, mime = mime)
-    __obj.updateDynamic("class")(`class`)
+    val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], decoders = decoders.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], hasAlpha = hasAlpha.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNG]
   }
 }

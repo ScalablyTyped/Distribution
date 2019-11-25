@@ -28,14 +28,14 @@ object DeclarationReflectionContainer {
     signatures: js.Array[T] = null
   ): DeclarationReflectionContainer[T] = {
     val __obj = js.Dynamic.literal()
-    if (extendedBy != null) __obj.updateDynamic("extendedBy")(extendedBy)
-    if (extendedTypes != null) __obj.updateDynamic("extendedTypes")(extendedTypes)
-    if (getSignature != null) __obj.updateDynamic("getSignature")(getSignature)
-    if (implementedBy != null) __obj.updateDynamic("implementedBy")(implementedBy)
-    if (implementedTypes != null) __obj.updateDynamic("implementedTypes")(implementedTypes)
-    if (indexSignature != null) __obj.updateDynamic("indexSignature")(indexSignature)
-    if (setSignature != null) __obj.updateDynamic("setSignature")(setSignature)
-    if (signatures != null) __obj.updateDynamic("signatures")(signatures)
+    if (extendedBy != null) __obj.updateDynamic("extendedBy")(extendedBy.asInstanceOf[js.Any])
+    if (extendedTypes != null) __obj.updateDynamic("extendedTypes")(extendedTypes.asInstanceOf[js.Any])
+    if (getSignature != null) __obj.updateDynamic("getSignature")(getSignature.asInstanceOf[js.Any])
+    if (implementedBy != null) __obj.updateDynamic("implementedBy")(implementedBy.asInstanceOf[js.Any])
+    if (implementedTypes != null) __obj.updateDynamic("implementedTypes")(implementedTypes.asInstanceOf[js.Any])
+    if (indexSignature != null) __obj.updateDynamic("indexSignature")(indexSignature.asInstanceOf[js.Any])
+    if (setSignature != null) __obj.updateDynamic("setSignature")(setSignature.asInstanceOf[js.Any])
+    if (signatures != null) __obj.updateDynamic("signatures")(signatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarationReflectionContainer[T]]
   }
 }

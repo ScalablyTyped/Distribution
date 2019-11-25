@@ -25,11 +25,11 @@ object SpinnerProps {
     thickness: Int | Double = null
   ): SpinnerProps = {
     val __obj = js.Dynamic.literal()
-    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor)
+    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (ringColor != null) __obj.updateDynamic("ringColor")(ringColor)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (ringColor != null) __obj.updateDynamic("ringColor")(ringColor.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerProps]
   }

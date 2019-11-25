@@ -44,10 +44,10 @@ object Log {
     comment: String = null,
     pages: js.Array[Page] = null
   ): Log = {
-    val __obj = js.Dynamic.literal(creator = creator, entries = entries, version = version)
-    if (browser != null) __obj.updateDynamic("browser")(browser)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (pages != null) __obj.updateDynamic("pages")(pages)
+    val __obj = js.Dynamic.literal(creator = creator.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Log]
   }
 }

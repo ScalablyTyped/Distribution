@@ -32,7 +32,7 @@ object ActionsSdkVerification {
     error: String | (js.Function1[/* error */ String, String]) = null,
     status: Int | Double = null
   ): ActionsSdkVerification = {
-    val __obj = js.Dynamic.literal(project = project)
+    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsSdkVerification]

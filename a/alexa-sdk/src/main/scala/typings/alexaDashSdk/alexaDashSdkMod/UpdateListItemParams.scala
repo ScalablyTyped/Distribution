@@ -13,7 +13,7 @@ trait UpdateListItemParams extends js.Object {
 object UpdateListItemParams {
   @scala.inline
   def apply(status: ListItemObjectStatus, value: String, version: Double): UpdateListItemParams = {
-    val __obj = js.Dynamic.literal(status = status, value = value, version = version)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateListItemParams]
   }

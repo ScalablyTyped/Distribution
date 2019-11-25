@@ -20,10 +20,10 @@ object JsonpSettings {
     url: String = null
   ): JsonpSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp)
-    if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
+    if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonpSettings]
   }
 }

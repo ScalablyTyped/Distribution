@@ -18,9 +18,9 @@ object UnitInvoiceAdditionalCharge {
     `type`: String = null
   ): UnitInvoiceAdditionalCharge = {
     val __obj = js.Dynamic.literal()
-    if (additionalChargeAmount != null) __obj.updateDynamic("additionalChargeAmount")(additionalChargeAmount)
-    if (additionalChargePromotions != null) __obj.updateDynamic("additionalChargePromotions")(additionalChargePromotions)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (additionalChargeAmount != null) __obj.updateDynamic("additionalChargeAmount")(additionalChargeAmount.asInstanceOf[js.Any])
+    if (additionalChargePromotions != null) __obj.updateDynamic("additionalChargePromotions")(additionalChargePromotions.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitInvoiceAdditionalCharge]
   }
 }

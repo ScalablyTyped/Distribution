@@ -13,8 +13,8 @@ object MapComponentProps {
   @scala.inline
   def apply(leaflet: LeafletContext = null, pane: String = null): MapComponentProps = {
     val __obj = js.Dynamic.literal()
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
-    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapComponentProps]
   }
 }

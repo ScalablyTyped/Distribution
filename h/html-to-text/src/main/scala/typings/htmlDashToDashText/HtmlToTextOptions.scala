@@ -77,15 +77,15 @@ object HtmlToTextOptions {
     wordwrap: Double | `false` = null
   ): HtmlToTextOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hideLinkHrefIfSameAsText)) __obj.updateDynamic("hideLinkHrefIfSameAsText")(hideLinkHrefIfSameAsText)
-    if (!js.isUndefined(ignoreHref)) __obj.updateDynamic("ignoreHref")(ignoreHref)
-    if (!js.isUndefined(ignoreImage)) __obj.updateDynamic("ignoreImage")(ignoreImage)
-    if (linkHrefBaseUrl != null) __obj.updateDynamic("linkHrefBaseUrl")(linkHrefBaseUrl)
-    if (!js.isUndefined(noLinkBrackets)) __obj.updateDynamic("noLinkBrackets")(noLinkBrackets)
-    if (!js.isUndefined(preserveNewlines)) __obj.updateDynamic("preserveNewlines")(preserveNewlines)
-    if (!js.isUndefined(singleNewLineParagraphs)) __obj.updateDynamic("singleNewLineParagraphs")(singleNewLineParagraphs)
+    if (!js.isUndefined(hideLinkHrefIfSameAsText)) __obj.updateDynamic("hideLinkHrefIfSameAsText")(hideLinkHrefIfSameAsText.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHref)) __obj.updateDynamic("ignoreHref")(ignoreHref.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreImage)) __obj.updateDynamic("ignoreImage")(ignoreImage.asInstanceOf[js.Any])
+    if (linkHrefBaseUrl != null) __obj.updateDynamic("linkHrefBaseUrl")(linkHrefBaseUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLinkBrackets)) __obj.updateDynamic("noLinkBrackets")(noLinkBrackets.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveNewlines)) __obj.updateDynamic("preserveNewlines")(preserveNewlines.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleNewLineParagraphs)) __obj.updateDynamic("singleNewLineParagraphs")(singleNewLineParagraphs.asInstanceOf[js.Any])
     if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
-    if (!js.isUndefined(uppercaseHeadings)) __obj.updateDynamic("uppercaseHeadings")(uppercaseHeadings)
+    if (!js.isUndefined(uppercaseHeadings)) __obj.updateDynamic("uppercaseHeadings")(uppercaseHeadings.asInstanceOf[js.Any])
     if (wordwrap != null) __obj.updateDynamic("wordwrap")(wordwrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlToTextOptions]
   }

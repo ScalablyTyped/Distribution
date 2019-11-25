@@ -18,7 +18,7 @@ trait PullsUpdateReviewParams extends js.Object {
 object PullsUpdateReviewParams {
   @scala.inline
   def apply(body: String, owner: String, pull_number: Double, repo: String, review_id: Double): PullsUpdateReviewParams = {
-    val __obj = js.Dynamic.literal(body = body, owner = owner, pull_number = pull_number, repo = repo, review_id = review_id)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], review_id = review_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsUpdateReviewParams]
   }

@@ -38,16 +38,16 @@ object Options {
     screen: Anon_DetectScreenOrientation = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (ERROR != null) __obj.updateDynamic("ERROR")(ERROR)
-    if (EXCLUDED != null) __obj.updateDynamic("EXCLUDED")(EXCLUDED)
-    if (NOT_AVAILABLE != null) __obj.updateDynamic("NOT_AVAILABLE")(NOT_AVAILABLE)
-    if (audio != null) __obj.updateDynamic("audio")(audio)
-    if (excludes != null) __obj.updateDynamic("excludes")(excludes)
-    if (extraComponents != null) __obj.updateDynamic("extraComponents")(extraComponents)
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (ERROR != null) __obj.updateDynamic("ERROR")(ERROR.asInstanceOf[js.Any])
+    if (EXCLUDED != null) __obj.updateDynamic("EXCLUDED")(EXCLUDED.asInstanceOf[js.Any])
+    if (NOT_AVAILABLE != null) __obj.updateDynamic("NOT_AVAILABLE")(NOT_AVAILABLE.asInstanceOf[js.Any])
+    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
+    if (excludes != null) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
+    if (extraComponents != null) __obj.updateDynamic("extraComponents")(extraComponents.asInstanceOf[js.Any])
+    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (preprocessor != null) __obj.updateDynamic("preprocessor")(js.Any.fromFunction2(preprocessor))
-    if (screen != null) __obj.updateDynamic("screen")(screen)
+    if (screen != null) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

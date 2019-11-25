@@ -15,8 +15,8 @@ object ImportFile {
   @scala.inline
   def apply(content: String = null, name: String = null): ImportFile = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportFile]
   }
 }

@@ -22,11 +22,11 @@ object CompilerOptions {
     useJit: js.UndefOr[Boolean] = js.undefined
   ): CompilerOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultEncapsulation != null) __obj.updateDynamic("defaultEncapsulation")(defaultEncapsulation)
-    if (missingTranslation != null) __obj.updateDynamic("missingTranslation")(missingTranslation)
-    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
-    if (!js.isUndefined(useJit)) __obj.updateDynamic("useJit")(useJit)
+    if (defaultEncapsulation != null) __obj.updateDynamic("defaultEncapsulation")(defaultEncapsulation.asInstanceOf[js.Any])
+    if (missingTranslation != null) __obj.updateDynamic("missingTranslation")(missingTranslation.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces.asInstanceOf[js.Any])
+    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
+    if (!js.isUndefined(useJit)) __obj.updateDynamic("useJit")(useJit.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilerOptions]
   }
 }

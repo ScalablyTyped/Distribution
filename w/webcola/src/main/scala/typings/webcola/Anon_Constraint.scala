@@ -15,7 +15,7 @@ trait Anon_Constraint extends js.Object {
 object Anon_Constraint {
   @scala.inline
   def apply(constraint: Constraint, lb: Block, rb: Block): Anon_Constraint = {
-    val __obj = js.Dynamic.literal(constraint = constraint, lb = lb, rb = rb)
+    val __obj = js.Dynamic.literal(constraint = constraint.asInstanceOf[js.Any], lb = lb.asInstanceOf[js.Any], rb = rb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Constraint]
   }

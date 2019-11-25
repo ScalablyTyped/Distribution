@@ -18,8 +18,8 @@ object DocumentTransform {
   @scala.inline
   def apply(document: String = null, fieldTransforms: js.Array[FieldTransform] = null): DocumentTransform = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (fieldTransforms != null) __obj.updateDynamic("fieldTransforms")(fieldTransforms)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (fieldTransforms != null) __obj.updateDynamic("fieldTransforms")(fieldTransforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentTransform]
   }
 }

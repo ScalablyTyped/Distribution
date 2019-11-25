@@ -25,9 +25,9 @@ object DataSourceFilter {
     filterItems: DataSourceFiltersFilterItems = null
   ): DataSourceFilter = {
     val __obj = js.Dynamic.literal()
-    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption)
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems)
+    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption.asInstanceOf[js.Any])
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceFilter]
   }
 }

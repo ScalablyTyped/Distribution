@@ -35,7 +35,7 @@ object SetWifiListOptions {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
-    if (wifiList != null) __obj.updateDynamic("wifiList")(wifiList)
+    if (wifiList != null) __obj.updateDynamic("wifiList")(wifiList.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetWifiListOptions]
   }
 }

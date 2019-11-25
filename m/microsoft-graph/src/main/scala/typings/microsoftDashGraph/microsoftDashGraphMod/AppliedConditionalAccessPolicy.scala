@@ -33,11 +33,11 @@ object AppliedConditionalAccessPolicy {
     result: AppliedConditionalAccessPolicyResult = null
   ): AppliedConditionalAccessPolicy = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (enforcedGrantControls != null) __obj.updateDynamic("enforcedGrantControls")(enforcedGrantControls)
-    if (enforcedSessionControls != null) __obj.updateDynamic("enforcedSessionControls")(enforcedSessionControls)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (enforcedGrantControls != null) __obj.updateDynamic("enforcedGrantControls")(enforcedGrantControls.asInstanceOf[js.Any])
+    if (enforcedSessionControls != null) __obj.updateDynamic("enforcedSessionControls")(enforcedSessionControls.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppliedConditionalAccessPolicy]
   }
 }

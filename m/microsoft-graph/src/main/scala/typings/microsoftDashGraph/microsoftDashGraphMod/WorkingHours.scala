@@ -24,10 +24,10 @@ object WorkingHours {
     timeZone: TimeZoneBase = null
   ): WorkingHours = {
     val __obj = js.Dynamic.literal()
-    if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkingHours]
   }
 }

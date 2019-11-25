@@ -12,7 +12,7 @@ trait Anon_MaterialIndex extends js.Object {
 object Anon_MaterialIndex {
   @scala.inline
   def apply(materialIndex: Double, start: Double): Anon_MaterialIndex = {
-    val __obj = js.Dynamic.literal(materialIndex = materialIndex, start = start)
+    val __obj = js.Dynamic.literal(materialIndex = materialIndex.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MaterialIndex]
   }

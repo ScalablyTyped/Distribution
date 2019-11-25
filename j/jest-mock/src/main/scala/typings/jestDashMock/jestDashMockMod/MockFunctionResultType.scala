@@ -19,3 +19,14 @@ import scala.scalajs.js.annotation._
 */
 trait MockFunctionResultType extends js.Object
 
+object MockFunctionResultType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def incomplete: typings.jestDashMock.jestDashMockStrings.incomplete = this.cast("incomplete")
+  @scala.inline
+  def `return`: typings.jestDashMock.jestDashMockStrings.`return` = this.cast("return")
+  @scala.inline
+  def `throw`: typings.jestDashMock.jestDashMockStrings.`throw` = this.cast("throw")
+}
+

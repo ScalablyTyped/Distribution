@@ -12,7 +12,7 @@ object Anon_State {
   @scala.inline
   def apply(state: js.Any = null): Anon_State = {
     val __obj = js.Dynamic.literal()
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_State]
   }
 }

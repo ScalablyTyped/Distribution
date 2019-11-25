@@ -16,7 +16,7 @@ trait FormSerializerPatterns extends js.Object {
 object FormSerializerPatterns {
   @scala.inline
   def apply(fixed: RegExp, key: RegExp, named: RegExp, push: RegExp, validate: RegExp): FormSerializerPatterns = {
-    val __obj = js.Dynamic.literal(fixed = fixed, key = key, named = named, push = push, validate = validate)
+    val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], named = named.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FormSerializerPatterns]
   }

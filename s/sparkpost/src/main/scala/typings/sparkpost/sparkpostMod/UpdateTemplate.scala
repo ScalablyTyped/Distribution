@@ -29,10 +29,10 @@ object UpdateTemplate {
   ): UpdateTemplate = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTemplate]
   }
 }

@@ -20,10 +20,10 @@ object LoadConfig {
     shouldCrash: js.UndefOr[Boolean] = js.undefined
   ): LoadConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkPolicy)) __obj.updateDynamic("checkPolicy")(checkPolicy)
-    if (policy != null) __obj.updateDynamic("policy")(policy)
-    if (process != null) __obj.updateDynamic("process")(process)
-    if (!js.isUndefined(shouldCrash)) __obj.updateDynamic("shouldCrash")(shouldCrash)
+    if (!js.isUndefined(checkPolicy)) __obj.updateDynamic("checkPolicy")(checkPolicy.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCrash)) __obj.updateDynamic("shouldCrash")(shouldCrash.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadConfig]
   }
 }

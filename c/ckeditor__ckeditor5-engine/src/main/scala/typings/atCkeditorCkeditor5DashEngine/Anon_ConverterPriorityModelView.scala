@@ -21,7 +21,7 @@ object Anon_ConverterPriorityModelView {
     converterPriority: PriorityString = null
   ): Anon_ConverterPriorityModelView = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-    if (converterPriority != null) __obj.updateDynamic("converterPriority")(converterPriority)
+    if (converterPriority != null) __obj.updateDynamic("converterPriority")(converterPriority.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConverterPriorityModelView]
   }
 }

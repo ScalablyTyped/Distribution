@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonCustomInherited extends js.Object {
 object Anon_EnumValuesAnonCustomInherited {
   @scala.inline
   def apply(enumValues: Anon_CustomInherited): Anon_EnumValuesAnonCustomInherited = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonCustomInherited]
   }

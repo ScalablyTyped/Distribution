@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 class Storage protected () extends js.Object {
   def this(options: StorageOptions) = this()
   def this(options: StorageOptions, callback: js.Any) = this()
-  var files: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var files: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ id in string ]: megajs.megajs.MutableFile}
     */ typings.megajs.megajsStrings.Storage with js.Any = js.native
   var inbox: MutableFile = js.native

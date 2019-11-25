@@ -33,9 +33,9 @@ object TemplateContent {
     headers: js.Any = null,
     reply_to: String = null
   ): TemplateContent = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], html = html, subject = subject, text = text)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateContent]
   }
 }

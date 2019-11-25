@@ -37,8 +37,8 @@ object RiotComponentExport {
     state: S = null
   ): RiotComponentExport[P, S] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (components != null) __obj.updateDynamic("components")(components)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (onBeforeMount != null) __obj.updateDynamic("onBeforeMount")(js.Any.fromFunction2(onBeforeMount))
     if (onBeforeUnmount != null) __obj.updateDynamic("onBeforeUnmount")(js.Any.fromFunction2(onBeforeUnmount))
     if (onBeforeUpdate != null) __obj.updateDynamic("onBeforeUpdate")(js.Any.fromFunction2(onBeforeUpdate))

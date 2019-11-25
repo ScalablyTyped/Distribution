@@ -14,8 +14,8 @@ trait GraphEdge
 object GraphEdge {
   @scala.inline
   def apply(points: js.Array[Anon_X], StringDictionary: /* key */ StringDictionary[js.Any] = null): GraphEdge = {
-    val __obj = js.Dynamic.literal(points = points)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[GraphEdge]
   }
 }

@@ -30,12 +30,12 @@ object ConnectOptions {
     transport: ConnectionTransport = null
   ): ConnectOptions = {
     val __obj = js.Dynamic.literal()
-    if (browserURL != null) __obj.updateDynamic("browserURL")(browserURL)
-    if (browserWSEndpoint != null) __obj.updateDynamic("browserWSEndpoint")(browserWSEndpoint)
-    if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport)
-    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors)
+    if (browserURL != null) __obj.updateDynamic("browserURL")(browserURL.asInstanceOf[js.Any])
+    if (browserWSEndpoint != null) __obj.updateDynamic("browserWSEndpoint")(browserWSEndpoint.asInstanceOf[js.Any])
+    if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors.asInstanceOf[js.Any])
     if (slowMo != null) __obj.updateDynamic("slowMo")(slowMo.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }
 }

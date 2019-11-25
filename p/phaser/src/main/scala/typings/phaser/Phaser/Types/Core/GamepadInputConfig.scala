@@ -15,7 +15,7 @@ object GamepadInputConfig {
   @scala.inline
   def apply(target: js.Any = null): GamepadInputConfig = {
     val __obj = js.Dynamic.literal()
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamepadInputConfig]
   }
 }

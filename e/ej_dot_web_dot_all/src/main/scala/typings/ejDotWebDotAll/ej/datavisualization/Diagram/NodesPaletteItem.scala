@@ -47,10 +47,10 @@ object NodesPaletteItem {
     width: Int | Double = null
   ): NodesPaletteItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableScale)) __obj.updateDynamic("enableScale")(enableScale)
+    if (!js.isUndefined(enableScale)) __obj.updateDynamic("enableScale")(enableScale.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (previewHeight != null) __obj.updateDynamic("previewHeight")(previewHeight.asInstanceOf[js.Any])
     if (previewWidth != null) __obj.updateDynamic("previewWidth")(previewWidth.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

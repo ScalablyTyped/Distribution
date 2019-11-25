@@ -57,8 +57,8 @@ object WidgetDecorationSpec {
     stopEvent: /* event */ Event => Boolean = null
   ): WidgetDecorationSpec = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (marks != null) __obj.updateDynamic("marks")(marks)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     if (stopEvent != null) __obj.updateDynamic("stopEvent")(js.Any.fromFunction1(stopEvent))
     __obj.asInstanceOf[WidgetDecorationSpec]

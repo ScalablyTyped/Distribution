@@ -38,3 +38,68 @@ import scala.scalajs.js.annotation._
 */
 trait BinOp extends js.Object
 
+object BinOp {
+  @scala.inline
+  def `!=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`!=` = this.cast("!=")
+  @scala.inline
+  def `%`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`%` = this.cast("%")
+  @scala.inline
+  def `%=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`%=` = this.cast("%=")
+  @scala.inline
+  def `&`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`&` = this.cast("&")
+  @scala.inline
+  def `&&`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`&&` = this.cast("&&")
+  @scala.inline
+  def `&=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`&=` = this.cast("&=")
+  @scala.inline
+  def `*`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`*` = this.cast("*")
+  @scala.inline
+  def `**`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`**` = this.cast("**")
+  @scala.inline
+  def `*=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`*=` = this.cast("*=")
+  @scala.inline
+  def `+`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`+` = this.cast("+")
+  @scala.inline
+  def `+=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`+=` = this.cast("+=")
+  @scala.inline
+  def `-`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`-` = this.cast("-")
+  @scala.inline
+  def `-=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`-=` = this.cast("-=")
+  @scala.inline
+  def `/`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`/` = this.cast("/")
+  @scala.inline
+  def `/=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`/=` = this.cast("/=")
+  @scala.inline
+  def `<`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<<`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`<<` = this.cast("<<")
+  @scala.inline
+  def `<<=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`<<=` = this.cast("<<=")
+  @scala.inline
+  def `<=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`=` = this.cast("=")
+  @scala.inline
+  def `==`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`==` = this.cast("==")
+  @scala.inline
+  def `>`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`>=` = this.cast(">=")
+  @scala.inline
+  def `>>`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`>>` = this.cast(">>")
+  @scala.inline
+  def `>>=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`>>=` = this.cast(">>=")
+  @scala.inline
+  def `^=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`^=` = this.cast("^=")
+  @scala.inline
+  def `_backtick^_backtick`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`_backtick^_backtick` = this.cast("^")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `|`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`|` = this.cast("|")
+  @scala.inline
+  def `|=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`|=` = this.cast("|=")
+  @scala.inline
+  def `||`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`||` = this.cast("||")
+}
+

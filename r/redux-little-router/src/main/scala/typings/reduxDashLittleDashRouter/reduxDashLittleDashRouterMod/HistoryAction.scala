@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait HistoryAction extends js.Object
 
+object HistoryAction {
+  @scala.inline
+  def POP: typings.reduxDashLittleDashRouter.reduxDashLittleDashRouterStrings.POP = this.cast("POP")
+  @scala.inline
+  def PUSH: typings.reduxDashLittleDashRouter.reduxDashLittleDashRouterStrings.PUSH = this.cast("PUSH")
+  @scala.inline
+  def REPLACE: typings.reduxDashLittleDashRouter.reduxDashLittleDashRouterStrings.REPLACE = this.cast("REPLACE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

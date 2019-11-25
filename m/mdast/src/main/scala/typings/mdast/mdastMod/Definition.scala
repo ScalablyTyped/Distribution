@@ -28,12 +28,12 @@ object Definition {
     position: Position = null,
     title: String = null
   ): Definition = {
-    val __obj = js.Dynamic.literal(identifier = identifier, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
 }

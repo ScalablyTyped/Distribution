@@ -11,7 +11,7 @@ trait Anon_BImpacted extends js.Object {
 object Anon_BImpacted {
   @scala.inline
   def apply(bImpacted: Boolean): Anon_BImpacted = {
-    val __obj = js.Dynamic.literal(bImpacted = bImpacted)
+    val __obj = js.Dynamic.literal(bImpacted = bImpacted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BImpacted]
   }

@@ -35,10 +35,10 @@ object WorkerHealthReport {
     vmStartupTime: String = null
   ): WorkerHealthReport = {
     val __obj = js.Dynamic.literal()
-    if (pods != null) __obj.updateDynamic("pods")(pods)
-    if (reportInterval != null) __obj.updateDynamic("reportInterval")(reportInterval)
-    if (!js.isUndefined(vmIsHealthy)) __obj.updateDynamic("vmIsHealthy")(vmIsHealthy)
-    if (vmStartupTime != null) __obj.updateDynamic("vmStartupTime")(vmStartupTime)
+    if (pods != null) __obj.updateDynamic("pods")(pods.asInstanceOf[js.Any])
+    if (reportInterval != null) __obj.updateDynamic("reportInterval")(reportInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(vmIsHealthy)) __obj.updateDynamic("vmIsHealthy")(vmIsHealthy.asInstanceOf[js.Any])
+    if (vmStartupTime != null) __obj.updateDynamic("vmStartupTime")(vmStartupTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerHealthReport]
   }
 }

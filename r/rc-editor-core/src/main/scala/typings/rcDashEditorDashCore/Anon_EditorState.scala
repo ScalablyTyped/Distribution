@@ -25,10 +25,10 @@ object Anon_EditorState {
     onUpArrow: js.Function = null
   ): Anon_EditorState = {
     val __obj = js.Dynamic.literal(getEditorState = js.Any.fromFunction0(getEditorState), setEditorState = js.Any.fromFunction1(setEditorState))
-    if (handleKeyBinding != null) __obj.updateDynamic("handleKeyBinding")(handleKeyBinding)
-    if (handleReturn != null) __obj.updateDynamic("handleReturn")(handleReturn)
-    if (onDownArrow != null) __obj.updateDynamic("onDownArrow")(onDownArrow)
-    if (onUpArrow != null) __obj.updateDynamic("onUpArrow")(onUpArrow)
+    if (handleKeyBinding != null) __obj.updateDynamic("handleKeyBinding")(handleKeyBinding.asInstanceOf[js.Any])
+    if (handleReturn != null) __obj.updateDynamic("handleReturn")(handleReturn.asInstanceOf[js.Any])
+    if (onDownArrow != null) __obj.updateDynamic("onDownArrow")(onDownArrow.asInstanceOf[js.Any])
+    if (onUpArrow != null) __obj.updateDynamic("onUpArrow")(onUpArrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EditorState]
   }
 }

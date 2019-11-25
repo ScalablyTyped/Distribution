@@ -159,8 +159,8 @@ object SchemaTypeOpts_ {
     ]) = null
   ): SchemaTypeOpts_[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (auto != null) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
@@ -173,7 +173,7 @@ object SchemaTypeOpts_ {
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
-    if (of != null) __obj.updateDynamic("of")(of)
+    if (of != null) __obj.updateDynamic("of")(of.asInstanceOf[js.Any])
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction2(set))

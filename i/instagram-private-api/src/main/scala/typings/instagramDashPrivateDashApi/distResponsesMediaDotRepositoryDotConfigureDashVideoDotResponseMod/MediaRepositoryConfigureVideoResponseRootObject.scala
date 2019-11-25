@@ -13,7 +13,7 @@ trait MediaRepositoryConfigureVideoResponseRootObject extends js.Object {
 object MediaRepositoryConfigureVideoResponseRootObject {
   @scala.inline
   def apply(media: MediaRepositoryConfigureVideoResponseMedia, status: String, upload_id: String): MediaRepositoryConfigureVideoResponseRootObject = {
-    val __obj = js.Dynamic.literal(media = media, status = status, upload_id = upload_id)
+    val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaRepositoryConfigureVideoResponseRootObject]
   }

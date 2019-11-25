@@ -16,7 +16,7 @@ object GoogleCloudVideointelligenceV1beta2_LabelSegment {
   def apply(confidence: Int | Double = null, segment: GoogleCloudVideointelligenceV1beta2_VideoSegment = null): GoogleCloudVideointelligenceV1beta2_LabelSegment = {
     val __obj = js.Dynamic.literal()
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (segment != null) __obj.updateDynamic("segment")(segment)
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_LabelSegment]
   }
 }

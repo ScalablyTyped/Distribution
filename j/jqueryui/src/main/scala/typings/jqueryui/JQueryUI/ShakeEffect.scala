@@ -14,7 +14,7 @@ object ShakeEffect {
   @scala.inline
   def apply(direction: String = null, distance: Int | Double = null, times: Int | Double = null): ShakeEffect = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShakeEffect]

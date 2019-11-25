@@ -36,17 +36,17 @@ object TableCellStyle {
     rowSpan: Int | Double = null
   ): TableCellStyle = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom)
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft)
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight)
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
+    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
+    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
+    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
     if (columnSpan != null) __obj.updateDynamic("columnSpan")(columnSpan.asInstanceOf[js.Any])
-    if (contentAlignment != null) __obj.updateDynamic("contentAlignment")(contentAlignment)
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom)
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft)
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight)
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop)
+    if (contentAlignment != null) __obj.updateDynamic("contentAlignment")(contentAlignment.asInstanceOf[js.Any])
+    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
+    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
+    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
+    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellStyle]
   }

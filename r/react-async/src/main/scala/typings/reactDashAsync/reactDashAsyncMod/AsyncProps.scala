@@ -28,16 +28,16 @@ object AsyncProps {
   ): AsyncProps[T] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (debugLabel != null) __obj.updateDynamic("debugLabel")(debugLabel)
+    if (debugLabel != null) __obj.updateDynamic("debugLabel")(debugLabel.asInstanceOf[js.Any])
     if (deferFn != null) __obj.updateDynamic("deferFn")(js.Any.fromFunction3(deferFn))
     if (dispatcher != null) __obj.updateDynamic("dispatcher")(js.Any.fromFunction3(dispatcher))
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
     if (onReject != null) __obj.updateDynamic("onReject")(js.Any.fromFunction1(onReject))
     if (onResolve != null) __obj.updateDynamic("onResolve")(js.Any.fromFunction1(onResolve))
-    if (promise != null) __obj.updateDynamic("promise")(promise)
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     if (promiseFn != null) __obj.updateDynamic("promiseFn")(js.Any.fromFunction2(promiseFn))
     if (reducer != null) __obj.updateDynamic("reducer")(js.Any.fromFunction3(reducer))
-    if (watch != null) __obj.updateDynamic("watch")(watch)
+    if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     if (watchFn != null) __obj.updateDynamic("watchFn")(js.Any.fromFunction2(watchFn))
     __obj.asInstanceOf[AsyncProps[T]]
   }

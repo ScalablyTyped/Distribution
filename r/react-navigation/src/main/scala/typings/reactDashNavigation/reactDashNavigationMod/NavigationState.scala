@@ -24,8 +24,8 @@ object NavigationState {
     routes: js.Array[NavigationRoute[NavigationParams]],
     params: NavigationParams = null
   ): NavigationState = {
-    val __obj = js.Dynamic.literal(index = index, isTransitioning = isTransitioning, key = key, routes = routes)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isTransitioning = isTransitioning.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationState]
   }
 }

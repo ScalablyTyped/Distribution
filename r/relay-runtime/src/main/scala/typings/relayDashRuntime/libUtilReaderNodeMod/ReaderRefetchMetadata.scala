@@ -18,8 +18,8 @@ object ReaderRefetchMetadata {
     operation: String | ConcreteRequest,
     connection: ReaderPaginationMetadata = null
   ): ReaderRefetchMetadata = {
-    val __obj = js.Dynamic.literal(fragmentPathInResult = fragmentPathInResult, operation = operation.asInstanceOf[js.Any])
-    if (connection != null) __obj.updateDynamic("connection")(connection)
+    val __obj = js.Dynamic.literal(fragmentPathInResult = fragmentPathInResult.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderRefetchMetadata]
   }
 }

@@ -24,7 +24,7 @@ object Model {
   def apply(height: Int | Double = null, sourceID: String = null, width: Int | Double = null): Model = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (sourceID != null) __obj.updateDynamic("sourceID")(sourceID)
+    if (sourceID != null) __obj.updateDynamic("sourceID")(sourceID.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

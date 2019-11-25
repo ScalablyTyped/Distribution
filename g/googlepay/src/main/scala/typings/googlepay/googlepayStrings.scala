@@ -104,7 +104,7 @@ object googlepayStrings {
   sealed trait black extends ButtonColor
   
   @js.native
-  sealed trait default extends ButtonColor
+  sealed trait default_ extends ButtonColor
   
   @js.native
   sealed trait long extends ButtonType
@@ -172,7 +172,7 @@ object googlepayStrings {
   @scala.inline
   def black: black = "black".asInstanceOf[black]
   @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  def default_ : default_ = "default".asInstanceOf[default_]
   @scala.inline
   def long: long = "long".asInstanceOf[long]
   @scala.inline

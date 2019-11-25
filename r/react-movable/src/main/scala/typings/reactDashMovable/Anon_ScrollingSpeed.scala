@@ -11,7 +11,7 @@ trait Anon_ScrollingSpeed extends js.Object {
 object Anon_ScrollingSpeed {
   @scala.inline
   def apply(scrollingSpeed: Double): Anon_ScrollingSpeed = {
-    val __obj = js.Dynamic.literal(scrollingSpeed = scrollingSpeed)
+    val __obj = js.Dynamic.literal(scrollingSpeed = scrollingSpeed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ScrollingSpeed]
   }

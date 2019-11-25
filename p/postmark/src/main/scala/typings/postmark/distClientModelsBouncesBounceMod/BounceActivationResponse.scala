@@ -12,7 +12,7 @@ trait BounceActivationResponse extends js.Object {
 object BounceActivationResponse {
   @scala.inline
   def apply(Bounce: Bounce, Message: String): BounceActivationResponse = {
-    val __obj = js.Dynamic.literal(Bounce = Bounce, Message = Message)
+    val __obj = js.Dynamic.literal(Bounce = Bounce.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BounceActivationResponse]
   }

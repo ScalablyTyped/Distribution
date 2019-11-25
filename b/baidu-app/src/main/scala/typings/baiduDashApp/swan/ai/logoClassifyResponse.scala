@@ -16,7 +16,7 @@ trait logoClassifyResponse extends js.Object {
 object logoClassifyResponse {
   @scala.inline
   def apply(log_id: Double, result: js.Array[Anon_LocationName], result_num: Double): logoClassifyResponse = {
-    val __obj = js.Dynamic.literal(log_id = log_id, result = result, result_num = result_num)
+    val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], result_num = result_num.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[logoClassifyResponse]
   }

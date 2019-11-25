@@ -32,13 +32,13 @@ object PNotifyStack {
     spacing2: Int | Double = null
   ): PNotifyStack = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (dir1 != null) __obj.updateDynamic("dir1")(dir1)
-    if (dir2 != null) __obj.updateDynamic("dir2")(dir2)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (dir1 != null) __obj.updateDynamic("dir1")(dir1.asInstanceOf[js.Any])
+    if (dir2 != null) __obj.updateDynamic("dir2")(dir2.asInstanceOf[js.Any])
     if (firstpos1 != null) __obj.updateDynamic("firstpos1")(firstpos1.asInstanceOf[js.Any])
     if (firstpos2 != null) __obj.updateDynamic("firstpos2")(firstpos2.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (push != null) __obj.updateDynamic("push")(push)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
     if (spacing1 != null) __obj.updateDynamic("spacing1")(spacing1.asInstanceOf[js.Any])
     if (spacing2 != null) __obj.updateDynamic("spacing2")(spacing2.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNotifyStack]

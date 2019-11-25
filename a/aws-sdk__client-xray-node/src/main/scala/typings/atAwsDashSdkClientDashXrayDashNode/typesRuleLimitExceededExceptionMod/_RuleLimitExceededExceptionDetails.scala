@@ -15,7 +15,7 @@ object _RuleLimitExceededExceptionDetails {
   @scala.inline
   def apply(Message: String = null): _RuleLimitExceededExceptionDetails = {
     val __obj = js.Dynamic.literal()
-    if (Message != null) __obj.updateDynamic("Message")(Message)
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[_RuleLimitExceededExceptionDetails]
   }
 }

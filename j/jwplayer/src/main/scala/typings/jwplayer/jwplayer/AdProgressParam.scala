@@ -15,7 +15,7 @@ trait AdProgressParam extends js.Object {
 object AdProgressParam {
   @scala.inline
   def apply(client: vast | googima, creativetype: String, tag: String): AdProgressParam = {
-    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], creativetype = creativetype, tag = tag)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], creativetype = creativetype.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AdProgressParam]
   }

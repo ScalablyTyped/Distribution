@@ -12,7 +12,7 @@ object DeleteExchange {
   @scala.inline
   def apply(ifUnused: js.UndefOr[Boolean] = js.undefined): DeleteExchange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ifUnused)) __obj.updateDynamic("ifUnused")(ifUnused)
+    if (!js.isUndefined(ifUnused)) __obj.updateDynamic("ifUnused")(ifUnused.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteExchange]
   }
 }

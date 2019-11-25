@@ -40,7 +40,7 @@ object PlayVoiceOptions {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[PlayVoiceOptions]
   }

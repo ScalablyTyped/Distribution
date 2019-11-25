@@ -12,7 +12,7 @@ trait HttpTrait extends js.Object {
 object HttpTrait {
   @scala.inline
   def apply(method: java.lang.String, requestUri: java.lang.String): HttpTrait = {
-    val __obj = js.Dynamic.literal(method = method, requestUri = requestUri)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], requestUri = requestUri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HttpTrait]
   }

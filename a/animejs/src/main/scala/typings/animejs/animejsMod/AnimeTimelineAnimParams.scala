@@ -41,7 +41,7 @@ object AnimeTimelineAnimParams {
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (elasticity != null) __obj.updateDynamic("elasticity")(elasticity.asInstanceOf[js.Any])
     if (endDelay != null) __obj.updateDynamic("endDelay")(endDelay.asInstanceOf[js.Any])
-    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes)
+    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
     if (loopBegin != null) __obj.updateDynamic("loopBegin")(js.Any.fromFunction1(loopBegin))
     if (loopComplete != null) __obj.updateDynamic("loopComplete")(js.Any.fromFunction1(loopComplete))
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])

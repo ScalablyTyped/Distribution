@@ -1,10 +1,6 @@
 package typings.dojo.dojox.dgauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.font
 import typings.dojo.dojoStrings.invalidRendering
@@ -179,14 +175,34 @@ class GaugeBase protected () extends _WidgetBase {
     */
   def validateRendering(): Unit = js.native
   @JSName("watch")
-  def watch_font(property: font, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_font(
+    property: font,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_invalidRendering(property: invalidRendering, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_invalidRendering(
+    property: invalidRendering,
+    callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_invalidatingProperties(property: invalidatingProperties, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_invalidatingProperties(
+    property: invalidatingProperties,
+    callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_value(
+    property: value,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

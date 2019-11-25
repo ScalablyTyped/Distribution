@@ -30,10 +30,10 @@ object AccountInfoResult {
     balance_details: Anon_Available = null,
     cards_linked: js.Array[Anon_Panfragment] = null
   ): AccountInfoResult = {
-    val __obj = js.Dynamic.literal(account = account, account_status = account_status, account_type = account_type, balance = balance, currency = currency)
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
-    if (balance_details != null) __obj.updateDynamic("balance_details")(balance_details)
-    if (cards_linked != null) __obj.updateDynamic("cards_linked")(cards_linked)
+    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], account_status = account_status.asInstanceOf[js.Any], account_type = account_type.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (balance_details != null) __obj.updateDynamic("balance_details")(balance_details.asInstanceOf[js.Any])
+    if (cards_linked != null) __obj.updateDynamic("cards_linked")(cards_linked.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountInfoResult]
   }
 }

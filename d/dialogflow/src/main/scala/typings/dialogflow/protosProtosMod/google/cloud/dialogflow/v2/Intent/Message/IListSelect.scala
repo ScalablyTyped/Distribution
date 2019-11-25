@@ -17,8 +17,8 @@ object IListSelect {
   @scala.inline
   def apply(items: js.Array[IItem] = null, title: String = null): IListSelect = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListSelect]
   }
 }

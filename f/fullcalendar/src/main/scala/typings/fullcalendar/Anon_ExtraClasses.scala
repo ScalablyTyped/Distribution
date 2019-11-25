@@ -12,7 +12,7 @@ trait Anon_ExtraClasses extends js.Object {
 object Anon_ExtraClasses {
   @scala.inline
   def apply(extraClasses: String, layout: js.Any): Anon_ExtraClasses = {
-    val __obj = js.Dynamic.literal(extraClasses = extraClasses, layout = layout)
+    val __obj = js.Dynamic.literal(extraClasses = extraClasses.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExtraClasses]
   }

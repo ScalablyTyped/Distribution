@@ -21,10 +21,10 @@ object PartialClassNameMapCollapseClassKey {
     wrapperInner: String = null
   ): PartialClassNameMapCollapseClassKey = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (entered != null) __obj.updateDynamic("entered")(entered)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
-    if (wrapperInner != null) __obj.updateDynamic("wrapperInner")(wrapperInner)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (entered != null) __obj.updateDynamic("entered")(entered.asInstanceOf[js.Any])
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
+    if (wrapperInner != null) __obj.updateDynamic("wrapperInner")(wrapperInner.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapCollapseClassKey]
   }
 }

@@ -21,7 +21,7 @@ object IGeometryEditor {
     state: IDataManager,
     stopEditing: () => Unit
   ): IGeometryEditor = {
-    val __obj = js.Dynamic.literal(events = events, geometry = geometry, options = options, startEditing = js.Any.fromFunction0(startEditing), state = state, stopEditing = js.Any.fromFunction0(stopEditing))
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], startEditing = js.Any.fromFunction0(startEditing), state = state.asInstanceOf[js.Any], stopEditing = js.Any.fromFunction0(stopEditing))
   
     __obj.asInstanceOf[IGeometryEditor]
   }

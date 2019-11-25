@@ -12,7 +12,7 @@ trait Verify extends js.Object {
 object Verify {
   @scala.inline
   def apply(confidence: Double, isIdentical: Boolean): Verify = {
-    val __obj = js.Dynamic.literal(confidence = confidence, isIdentical = isIdentical)
+    val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], isIdentical = isIdentical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Verify]
   }

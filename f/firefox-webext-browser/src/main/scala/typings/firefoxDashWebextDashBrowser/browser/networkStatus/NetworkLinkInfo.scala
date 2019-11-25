@@ -17,9 +17,9 @@ trait NetworkLinkInfo extends js.Object {
 object NetworkLinkInfo {
   @scala.inline
   def apply(status: _NetworkLinkInfoStatus, `type`: _NetworkLinkInfoType, id: String = null): NetworkLinkInfo = {
-    val __obj = js.Dynamic.literal(status = status)
-    __obj.updateDynamic("type")(`type`)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkLinkInfo]
   }
 }

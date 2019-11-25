@@ -50,9 +50,9 @@ object LocalStreamStats {
     videoSendResolutionHeight: String = null,
     videoSendResolutionWidth: String = null
   ): LocalStreamStats = {
-    val __obj = js.Dynamic.literal(accessDelay = accessDelay, audioSendBytes = audioSendBytes, audioSendPackets = audioSendPackets, audioSendPacketsLost = audioSendPacketsLost, videoSendBytes = videoSendBytes, videoSendFrameRate = videoSendFrameRate, videoSendPackets = videoSendPackets, videoSendPacketsLost = videoSendPacketsLost)
-    if (videoSendResolutionHeight != null) __obj.updateDynamic("videoSendResolutionHeight")(videoSendResolutionHeight)
-    if (videoSendResolutionWidth != null) __obj.updateDynamic("videoSendResolutionWidth")(videoSendResolutionWidth)
+    val __obj = js.Dynamic.literal(accessDelay = accessDelay.asInstanceOf[js.Any], audioSendBytes = audioSendBytes.asInstanceOf[js.Any], audioSendPackets = audioSendPackets.asInstanceOf[js.Any], audioSendPacketsLost = audioSendPacketsLost.asInstanceOf[js.Any], videoSendBytes = videoSendBytes.asInstanceOf[js.Any], videoSendFrameRate = videoSendFrameRate.asInstanceOf[js.Any], videoSendPackets = videoSendPackets.asInstanceOf[js.Any], videoSendPacketsLost = videoSendPacketsLost.asInstanceOf[js.Any])
+    if (videoSendResolutionHeight != null) __obj.updateDynamic("videoSendResolutionHeight")(videoSendResolutionHeight.asInstanceOf[js.Any])
+    if (videoSendResolutionWidth != null) __obj.updateDynamic("videoSendResolutionWidth")(videoSendResolutionWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalStreamStats]
   }
 }

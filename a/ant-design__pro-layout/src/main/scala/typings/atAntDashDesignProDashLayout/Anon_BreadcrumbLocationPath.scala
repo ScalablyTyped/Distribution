@@ -19,7 +19,7 @@ object Anon_BreadcrumbLocationPath {
     location: Location[_] | Anon_PathnameString = null
   ): Anon_BreadcrumbLocationPath = {
     val __obj = js.Dynamic.literal()
-    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb)
+    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BreadcrumbLocationPath]
   }

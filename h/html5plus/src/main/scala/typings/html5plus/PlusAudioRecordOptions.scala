@@ -67,8 +67,8 @@ object PlusAudioRecordOptions {
     val __obj = js.Dynamic.literal()
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (samplerate != null) __obj.updateDynamic("samplerate")(samplerate)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (samplerate != null) __obj.updateDynamic("samplerate")(samplerate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusAudioRecordOptions]
   }
 }

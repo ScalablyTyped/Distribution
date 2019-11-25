@@ -14,7 +14,7 @@ object Anon_Fulfill {
   @scala.inline
   def apply[T](payload: T, `type`: fulfill): Anon_Fulfill[T] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fulfill[T]]
   }
 }

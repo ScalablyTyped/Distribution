@@ -12,7 +12,7 @@ trait Anon_Noise extends js.Object {
 object Anon_Noise {
   @scala.inline
   def apply(noise: Double): Anon_Noise = {
-    val __obj = js.Dynamic.literal(noise = noise)
+    val __obj = js.Dynamic.literal(noise = noise.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Noise]
   }

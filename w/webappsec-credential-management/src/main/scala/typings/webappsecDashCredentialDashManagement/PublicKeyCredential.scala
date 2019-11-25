@@ -21,8 +21,8 @@ trait PublicKeyCredential
 object PublicKeyCredential {
   @scala.inline
   def apply(id: String, rawId: ArrayBuffer, response: AuthenticatorResponse, `type`: `public-key`): PublicKeyCredential = {
-    val __obj = js.Dynamic.literal(id = id, rawId = rawId, response = response)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], rawId = rawId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredential]
   }
 }

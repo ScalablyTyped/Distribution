@@ -12,7 +12,7 @@ trait Next extends js.Object {
 object Next {
   @scala.inline
   def apply(total: Anon_Loaded): Next = {
-    val __obj = js.Dynamic.literal(total = total)
+    val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Next]
   }

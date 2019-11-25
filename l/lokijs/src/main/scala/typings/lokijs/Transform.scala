@@ -47,16 +47,16 @@ object Transform {
   ): Transform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (dataOptions != null) __obj.updateDynamic("dataOptions")(dataOptions)
-    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc)
-    if (joinData != null) __obj.updateDynamic("joinData")(joinData)
-    if (leftJoinKey != null) __obj.updateDynamic("leftJoinKey")(leftJoinKey)
-    if (mapFun != null) __obj.updateDynamic("mapFun")(mapFun)
-    if (mapFunction != null) __obj.updateDynamic("mapFunction")(mapFunction)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (reduceFunction != null) __obj.updateDynamic("reduceFunction")(reduceFunction)
-    if (rightJoinKey != null) __obj.updateDynamic("rightJoinKey")(rightJoinKey)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (dataOptions != null) __obj.updateDynamic("dataOptions")(dataOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
+    if (joinData != null) __obj.updateDynamic("joinData")(joinData.asInstanceOf[js.Any])
+    if (leftJoinKey != null) __obj.updateDynamic("leftJoinKey")(leftJoinKey.asInstanceOf[js.Any])
+    if (mapFun != null) __obj.updateDynamic("mapFun")(mapFun.asInstanceOf[js.Any])
+    if (mapFunction != null) __obj.updateDynamic("mapFunction")(mapFunction.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (reduceFunction != null) __obj.updateDynamic("reduceFunction")(reduceFunction.asInstanceOf[js.Any])
+    if (rightJoinKey != null) __obj.updateDynamic("rightJoinKey")(rightJoinKey.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transform]
   }
 }

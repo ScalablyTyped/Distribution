@@ -23,7 +23,7 @@ object R3DependencyMetadataFacade {
     skipSelf: Boolean,
     token: js.Any
   ): R3DependencyMetadataFacade = {
-    val __obj = js.Dynamic.literal(host = host, optional = optional, resolved = resolved, self = self, skipSelf = skipSelf, token = token)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any], skipSelf = skipSelf.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[R3DependencyMetadataFacade]
   }

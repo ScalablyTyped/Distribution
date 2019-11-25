@@ -19,9 +19,9 @@ object PermissionInfo {
     android: PermissionDetailsLocationAndroid = null,
     ios: PermissionDetailsLocationIOS = null
   ): PermissionInfo = {
-    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], status = status)
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (ios != null) __obj.updateDynamic("ios")(ios)
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionInfo]
   }
 }

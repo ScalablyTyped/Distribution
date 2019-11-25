@@ -57,20 +57,20 @@ object WebTileLayerProperties {
     visible: js.UndefOr[Boolean] = js.undefined
   ): WebTileLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem.asInstanceOf[js.Any])
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
-    if (subDomains != null) __obj.updateDynamic("subDomains")(subDomains)
-    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (subDomains != null) __obj.updateDynamic("subDomains")(subDomains.asInstanceOf[js.Any])
+    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebTileLayerProperties]
   }
 }

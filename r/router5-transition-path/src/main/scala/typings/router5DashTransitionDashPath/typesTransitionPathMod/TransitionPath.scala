@@ -13,7 +13,7 @@ trait TransitionPath extends js.Object {
 object TransitionPath {
   @scala.inline
   def apply(intersection: String, toActivate: js.Array[String], toDeactivate: js.Array[String]): TransitionPath = {
-    val __obj = js.Dynamic.literal(intersection = intersection, toActivate = toActivate, toDeactivate = toDeactivate)
+    val __obj = js.Dynamic.literal(intersection = intersection.asInstanceOf[js.Any], toActivate = toActivate.asInstanceOf[js.Any], toDeactivate = toDeactivate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransitionPath]
   }

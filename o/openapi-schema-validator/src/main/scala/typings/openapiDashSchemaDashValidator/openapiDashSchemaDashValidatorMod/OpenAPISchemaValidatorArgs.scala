@@ -14,7 +14,7 @@ object OpenAPISchemaValidatorArgs {
   @scala.inline
   def apply(version: Double | String, extensions: IJsonSchema = null): OpenAPISchemaValidatorArgs = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPISchemaValidatorArgs]
   }
 }

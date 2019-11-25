@@ -41,11 +41,11 @@ object MultiInstanceLoopCharacteristics {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): MultiInstanceLoopCharacteristics = {
-    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, behavior = behavior, completionCondition = completionCondition, complexBehaviorDefinition = complexBehaviorDefinition, id = id, inputDataItem = inputDataItem, isSequential = isSequential, loopCardinality = loopCardinality, loopDataInputRef = loopDataInputRef, loopDataOutputRef = loopDataOutputRef, noneBehaviorEventRef = noneBehaviorEventRef, oneBehaviorEventRef = oneBehaviorEventRef, outputDataItem = outputDataItem)
-    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)
-    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements)
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], behavior = behavior.asInstanceOf[js.Any], completionCondition = completionCondition.asInstanceOf[js.Any], complexBehaviorDefinition = complexBehaviorDefinition.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputDataItem = inputDataItem.asInstanceOf[js.Any], isSequential = isSequential.asInstanceOf[js.Any], loopCardinality = loopCardinality.asInstanceOf[js.Any], loopDataInputRef = loopDataInputRef.asInstanceOf[js.Any], loopDataOutputRef = loopDataOutputRef.asInstanceOf[js.Any], noneBehaviorEventRef = noneBehaviorEventRef.asInstanceOf[js.Any], oneBehaviorEventRef = oneBehaviorEventRef.asInstanceOf[js.Any], outputDataItem = outputDataItem.asInstanceOf[js.Any])
+    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions.asInstanceOf[js.Any])
+    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiInstanceLoopCharacteristics]
   }
 }

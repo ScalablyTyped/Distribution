@@ -13,7 +13,7 @@ trait PolicyDocument extends js.Object {
 object PolicyDocument {
   @scala.inline
   def apply(conditions: js.Array[js.Array[String | Double]], expiration: String, string: String): PolicyDocument = {
-    val __obj = js.Dynamic.literal(conditions = conditions, expiration = expiration, string = string)
+    val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PolicyDocument]
   }

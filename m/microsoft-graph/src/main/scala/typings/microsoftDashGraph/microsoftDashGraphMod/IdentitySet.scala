@@ -17,9 +17,9 @@ object IdentitySet {
   @scala.inline
   def apply(application: Identity = null, device: Identity = null, user: Identity = null): IdentitySet = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitySet]
   }
 }

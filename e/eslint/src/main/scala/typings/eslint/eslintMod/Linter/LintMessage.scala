@@ -35,13 +35,13 @@ object LintMessage {
     ruleId: String = null,
     source: String = null
   ): LintMessage = {
-    val __obj = js.Dynamic.literal(column = column, line = line, message = message, nodeType = nodeType, severity = severity)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
     if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
     if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
-    if (fatal != null) __obj.updateDynamic("fatal")(fatal)
-    if (fix != null) __obj.updateDynamic("fix")(fix)
-    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (fatal != null) __obj.updateDynamic("fatal")(fatal.asInstanceOf[js.Any])
+    if (fix != null) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
+    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[LintMessage]
   }
 }

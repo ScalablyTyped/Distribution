@@ -13,8 +13,8 @@ object Anon_Inherit {
   @scala.inline
   def apply(inherit: js.UndefOr[Boolean] = js.undefined, matchingKeys: js.Any = null): Anon_Inherit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
-    if (matchingKeys != null) __obj.updateDynamic("matchingKeys")(matchingKeys)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
+    if (matchingKeys != null) __obj.updateDynamic("matchingKeys")(matchingKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Inherit]
   }
 }

@@ -152,19 +152,19 @@ object DraftOrder {
     total_tax: Int | Double = null,
     updated_at: String = null
   ): DraftOrder = {
-    val __obj = js.Dynamic.literal(applied_discount = applied_discount, billing_address = billing_address, currency = currency, customer = customer, email = email, invoice_url = invoice_url, line_items = line_items, metafields = metafields, name = name, note = note, note_attributes = note_attributes, shipping_address = shipping_address, shipping_line = shipping_line, status = status, tags = tags, tax_lines = tax_lines)
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (completed_at != null) __obj.updateDynamic("completed_at")(completed_at)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    val __obj = js.Dynamic.literal(applied_discount = applied_discount.asInstanceOf[js.Any], billing_address = billing_address.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], invoice_url = invoice_url.asInstanceOf[js.Any], line_items = line_items.asInstanceOf[js.Any], metafields = metafields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], note_attributes = note_attributes.asInstanceOf[js.Any], shipping_address = shipping_address.asInstanceOf[js.Any], shipping_line = shipping_line.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], tax_lines = tax_lines.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (completed_at != null) __obj.updateDynamic("completed_at")(completed_at.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (invoice_sent_at != null) __obj.updateDynamic("invoice_sent_at")(invoice_sent_at)
+    if (invoice_sent_at != null) __obj.updateDynamic("invoice_sent_at")(invoice_sent_at.asInstanceOf[js.Any])
     if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
     if (subtotal_price != null) __obj.updateDynamic("subtotal_price")(subtotal_price.asInstanceOf[js.Any])
-    if (!js.isUndefined(tax_exempt)) __obj.updateDynamic("tax_exempt")(tax_exempt)
-    if (!js.isUndefined(taxes_included)) __obj.updateDynamic("taxes_included")(taxes_included)
+    if (!js.isUndefined(tax_exempt)) __obj.updateDynamic("tax_exempt")(tax_exempt.asInstanceOf[js.Any])
+    if (!js.isUndefined(taxes_included)) __obj.updateDynamic("taxes_included")(taxes_included.asInstanceOf[js.Any])
     if (total_price != null) __obj.updateDynamic("total_price")(total_price.asInstanceOf[js.Any])
     if (total_tax != null) __obj.updateDynamic("total_tax")(total_tax.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraftOrder]
   }
 }

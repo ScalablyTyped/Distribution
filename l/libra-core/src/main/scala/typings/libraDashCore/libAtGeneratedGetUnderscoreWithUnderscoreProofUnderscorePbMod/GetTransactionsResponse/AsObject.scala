@@ -16,7 +16,7 @@ object AsObject {
     txnListWithProof: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionListWithProof.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (txnListWithProof != null) __obj.updateDynamic("txnListWithProof")(txnListWithProof)
+    if (txnListWithProof != null) __obj.updateDynamic("txnListWithProof")(txnListWithProof.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

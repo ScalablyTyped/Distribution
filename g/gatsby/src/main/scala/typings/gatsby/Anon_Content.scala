@@ -21,11 +21,11 @@ object Anon_Content {
     description: String = null,
     mediaType: String = null
   ): Anon_Content = {
-    val __obj = js.Dynamic.literal(contentDigest = contentDigest)
-    __obj.updateDynamic("type")(`type`)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    val __obj = js.Dynamic.literal(contentDigest = contentDigest.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Content]
   }
 }

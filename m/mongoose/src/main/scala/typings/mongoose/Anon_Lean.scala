@@ -23,8 +23,8 @@ object Anon_Lean {
     lean: js.UndefOr[Boolean] = js.undefined,
     limit: Int | Double = null
   ): Anon_Lean = {
-    val __obj = js.Dynamic.literal(maxDistance = maxDistance, near = near)
-    if (!js.isUndefined(lean)) __obj.updateDynamic("lean")(lean)
+    val __obj = js.Dynamic.literal(maxDistance = maxDistance.asInstanceOf[js.Any], near = near.asInstanceOf[js.Any])
+    if (!js.isUndefined(lean)) __obj.updateDynamic("lean")(lean.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lean]
   }

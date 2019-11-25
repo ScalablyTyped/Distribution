@@ -20,6 +20,5 @@ object TextNote extends js.Object {
   @js.native
   object GLYPHS extends /* name */ StringDictionary[Anon_CodePoint]
   
-  type Justification = typings.vexflow.Vex.Flow.TextNote.Justification
 }
 

@@ -51,7 +51,7 @@ object TouchBarScrubberConstructorOptions {
     selectedStyle: String,
     showArrowButtons: Boolean
   ): TouchBarScrubberConstructorOptions = {
-    val __obj = js.Dynamic.literal(continuous = continuous, highlight = js.Any.fromFunction1(highlight), items = items, mode = mode, overlayStyle = overlayStyle, select = js.Any.fromFunction1(select), selectedStyle = selectedStyle, showArrowButtons = showArrowButtons)
+    val __obj = js.Dynamic.literal(continuous = continuous.asInstanceOf[js.Any], highlight = js.Any.fromFunction1(highlight), items = items.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], overlayStyle = overlayStyle.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), selectedStyle = selectedStyle.asInstanceOf[js.Any], showArrowButtons = showArrowButtons.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TouchBarScrubberConstructorOptions]
   }

@@ -36,7 +36,7 @@ object DOMQuad {
     p3: typings.geometryDashDom.GeometryDom.DOMPoint,
     p4: typings.geometryDashDom.GeometryDom.DOMPoint
   ): DOMQuad = {
-    val __obj = js.Dynamic.literal(bounds = bounds, p1 = p1, p2 = p2, p3 = p3, p4 = p4)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any], p4 = p4.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DOMQuad]
   }

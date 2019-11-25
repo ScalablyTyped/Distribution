@@ -13,7 +13,7 @@ trait Anon_InitialI18nStoreInitialLanguage extends js.Object {
 object Anon_InitialI18nStoreInitialLanguage {
   @scala.inline
   def apply(initialI18nStore: Resource, initialLanguage: String): Anon_InitialI18nStoreInitialLanguage = {
-    val __obj = js.Dynamic.literal(initialI18nStore = initialI18nStore, initialLanguage = initialLanguage)
+    val __obj = js.Dynamic.literal(initialI18nStore = initialI18nStore.asInstanceOf[js.Any], initialLanguage = initialLanguage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InitialI18nStoreInitialLanguage]
   }

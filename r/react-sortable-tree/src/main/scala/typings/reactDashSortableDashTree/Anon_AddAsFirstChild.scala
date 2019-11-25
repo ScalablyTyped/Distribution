@@ -27,10 +27,10 @@ object Anon_AddAsFirstChild {
     ignoreCollapsed: js.UndefOr[Boolean] = js.undefined,
     parentKey: Double | String = null
   ): Anon_AddAsFirstChild = {
-    val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), newNode = newNode)
-    if (!js.isUndefined(addAsFirstChild)) __obj.updateDynamic("addAsFirstChild")(addAsFirstChild)
-    if (!js.isUndefined(expandParent)) __obj.updateDynamic("expandParent")(expandParent)
-    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed)
+    val __obj = js.Dynamic.literal(getNodeKey = js.Any.fromFunction1(getNodeKey), newNode = newNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(addAsFirstChild)) __obj.updateDynamic("addAsFirstChild")(addAsFirstChild.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandParent)) __obj.updateDynamic("expandParent")(expandParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed.asInstanceOf[js.Any])
     if (parentKey != null) __obj.updateDynamic("parentKey")(parentKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddAsFirstChild]
   }

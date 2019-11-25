@@ -13,7 +13,7 @@ trait MediaRepositoryLikersResponseRootObject extends js.Object {
 object MediaRepositoryLikersResponseRootObject {
   @scala.inline
   def apply(status: String, user_count: Double, users: js.Array[MediaRepositoryLikersResponseUsersItem]): MediaRepositoryLikersResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status, user_count = user_count, users = users)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user_count = user_count.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaRepositoryLikersResponseRootObject]
   }

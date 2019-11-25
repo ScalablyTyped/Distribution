@@ -15,8 +15,8 @@ object LoginOptions {
   @scala.inline
   def apply(callbackUri: String = null, popupUri: String = null, storage: Storage | AsyncStorage = null): LoginOptions = {
     val __obj = js.Dynamic.literal()
-    if (callbackUri != null) __obj.updateDynamic("callbackUri")(callbackUri)
-    if (popupUri != null) __obj.updateDynamic("popupUri")(popupUri)
+    if (callbackUri != null) __obj.updateDynamic("callbackUri")(callbackUri.asInstanceOf[js.Any])
+    if (popupUri != null) __obj.updateDynamic("popupUri")(popupUri.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginOptions]
   }

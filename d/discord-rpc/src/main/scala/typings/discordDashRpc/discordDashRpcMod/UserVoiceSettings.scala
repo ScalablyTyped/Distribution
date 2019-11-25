@@ -20,9 +20,9 @@ object UserVoiceSettings {
     pan: Anon_Left = null,
     volume: Int | Double = null
   ): UserVoiceSettings = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute)
-    if (pan != null) __obj.updateDynamic("pan")(pan)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
+    if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserVoiceSettings]
   }

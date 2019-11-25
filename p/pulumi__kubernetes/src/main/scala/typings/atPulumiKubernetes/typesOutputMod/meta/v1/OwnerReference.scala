@@ -50,7 +50,7 @@ object OwnerReference {
     name: String,
     uid: String
   ): OwnerReference = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, blockOwnerDeletion = blockOwnerDeletion, controller = controller, kind = kind, name = name, uid = uid)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], blockOwnerDeletion = blockOwnerDeletion.asInstanceOf[js.Any], controller = controller.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OwnerReference]
   }

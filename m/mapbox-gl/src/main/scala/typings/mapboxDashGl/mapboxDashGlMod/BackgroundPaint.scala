@@ -25,11 +25,11 @@ object BackgroundPaint {
   ): BackgroundPaint = {
     val __obj = js.Dynamic.literal()
     if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
-    if (`background-color-transition` != null) __obj.updateDynamic("background-color-transition")(`background-color-transition`)
+    if (`background-color-transition` != null) __obj.updateDynamic("background-color-transition")(`background-color-transition`.asInstanceOf[js.Any])
     if (`background-opacity` != null) __obj.updateDynamic("background-opacity")(`background-opacity`.asInstanceOf[js.Any])
-    if (`background-opacity-transition` != null) __obj.updateDynamic("background-opacity-transition")(`background-opacity-transition`)
-    if (`background-pattern` != null) __obj.updateDynamic("background-pattern")(`background-pattern`)
-    if (`background-pattern-transition` != null) __obj.updateDynamic("background-pattern-transition")(`background-pattern-transition`)
+    if (`background-opacity-transition` != null) __obj.updateDynamic("background-opacity-transition")(`background-opacity-transition`.asInstanceOf[js.Any])
+    if (`background-pattern` != null) __obj.updateDynamic("background-pattern")(`background-pattern`.asInstanceOf[js.Any])
+    if (`background-pattern-transition` != null) __obj.updateDynamic("background-pattern-transition")(`background-pattern-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundPaint]
   }
 }

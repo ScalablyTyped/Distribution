@@ -12,7 +12,7 @@ object Window {
   @scala.inline
   def apply(MediaSession: MediaSession = null): Window = {
     val __obj = js.Dynamic.literal()
-    if (MediaSession != null) __obj.updateDynamic("MediaSession")(MediaSession)
+    if (MediaSession != null) __obj.updateDynamic("MediaSession")(MediaSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
 }

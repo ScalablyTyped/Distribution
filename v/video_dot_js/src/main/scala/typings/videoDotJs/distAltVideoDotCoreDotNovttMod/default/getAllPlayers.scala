@@ -1,6 +1,5 @@
 package typings.videoDotJs.distAltVideoDotCoreDotNovttMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +15,6 @@ object getAllPlayers extends js.Object {
     *         JavaScript engines.
     *
     */
-  def apply(): js.Array[Player] = js.native
+  def apply(): js.Array[typings.videoDotJs.videoDotJsMod.videojs.Player] = js.native
 }
 

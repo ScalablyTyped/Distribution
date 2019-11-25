@@ -21,8 +21,8 @@ object ITaskOptions {
   @scala.inline
   def apply(files: js.Any = null, options: js.Any = null): ITaskOptions = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITaskOptions]
   }
 }

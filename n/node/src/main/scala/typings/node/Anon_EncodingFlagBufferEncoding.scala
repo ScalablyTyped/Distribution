@@ -12,7 +12,7 @@ trait Anon_EncodingFlagBufferEncoding extends js.Object {
 object Anon_EncodingFlagBufferEncoding {
   @scala.inline
   def apply(encoding: BufferEncoding, flag: java.lang.String | Double = null): Anon_EncodingFlagBufferEncoding = {
-    val __obj = js.Dynamic.literal(encoding = encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
     if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EncodingFlagBufferEncoding]
   }

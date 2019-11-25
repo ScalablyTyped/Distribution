@@ -24,12 +24,12 @@ object IItemSearchOptions {
     sort: String = null
   ): IItemSearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     if (itemPage != null) __obj.updateDynamic("itemPage")(itemPage.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (responseGroup != null) __obj.updateDynamic("responseGroup")(responseGroup)
-    if (searchIndex != null) __obj.updateDynamic("searchIndex")(searchIndex)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (responseGroup != null) __obj.updateDynamic("responseGroup")(responseGroup.asInstanceOf[js.Any])
+    if (searchIndex != null) __obj.updateDynamic("searchIndex")(searchIndex.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemSearchOptions]
   }
 }

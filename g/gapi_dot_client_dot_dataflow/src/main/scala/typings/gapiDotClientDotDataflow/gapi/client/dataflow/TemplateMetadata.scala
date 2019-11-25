@@ -17,9 +17,9 @@ object TemplateMetadata {
   @scala.inline
   def apply(description: String = null, name: String = null, parameters: js.Array[ParameterMetadata] = null): TemplateMetadata = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateMetadata]
   }
 }

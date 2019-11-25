@@ -14,9 +14,9 @@ object Anon_ApiKeyBaseUrl {
   @scala.inline
   def apply(apiKey: String = null, baseUrl: String = null, userAgent: String = null): Anon_ApiKeyBaseUrl = {
     val __obj = js.Dynamic.literal()
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApiKeyBaseUrl]
   }
 }

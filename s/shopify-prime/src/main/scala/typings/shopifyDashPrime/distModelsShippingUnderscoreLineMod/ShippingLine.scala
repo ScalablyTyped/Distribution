@@ -41,13 +41,13 @@ object ShippingLine {
     title: String = null
   ): ShippingLine = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (code != null) __obj.updateDynamic("code")(code)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (tax_lines != null) __obj.updateDynamic("tax_lines")(tax_lines)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (tax_lines != null) __obj.updateDynamic("tax_lines")(tax_lines.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingLine]
   }
 }

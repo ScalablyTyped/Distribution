@@ -118,21 +118,21 @@ object ChartToolTipOptions {
     shared: js.UndefOr[Boolean] = js.undefined
   ): ChartToolTipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderThickness != null) __obj.updateDynamic("borderThickness")(borderThickness.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (contentFormatter != null) __obj.updateDynamic("contentFormatter")(js.Any.fromFunction1(contentFormatter))
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartToolTipOptions]
   }
 }

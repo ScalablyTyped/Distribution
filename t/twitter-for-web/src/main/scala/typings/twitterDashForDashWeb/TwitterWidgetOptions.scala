@@ -40,11 +40,11 @@ object TwitterWidgetOptions {
     via: String = null
   ): TwitterWidgetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt)
-    if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (related != null) __obj.updateDynamic("related")(related)
-    if (via != null) __obj.updateDynamic("via")(via)
+    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.asInstanceOf[js.Any])
+    if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (related != null) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
+    if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterWidgetOptions]
   }
 }

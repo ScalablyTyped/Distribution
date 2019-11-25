@@ -13,7 +13,7 @@ trait CompileEntryComponentMetadata extends js.Object {
 object CompileEntryComponentMetadata {
   @scala.inline
   def apply(componentFactory: StaticSymbol | js.Object, componentType: js.Any): CompileEntryComponentMetadata = {
-    val __obj = js.Dynamic.literal(componentFactory = componentFactory.asInstanceOf[js.Any], componentType = componentType)
+    val __obj = js.Dynamic.literal(componentFactory = componentFactory.asInstanceOf[js.Any], componentType = componentType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CompileEntryComponentMetadata]
   }

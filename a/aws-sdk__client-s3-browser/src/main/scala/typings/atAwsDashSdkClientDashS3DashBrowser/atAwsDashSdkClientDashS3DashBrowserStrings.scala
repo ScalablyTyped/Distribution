@@ -168,7 +168,7 @@ object atAwsDashSdkClientDashS3DashBrowserStrings {
   sealed trait Size extends js.Object
   
   @js.native
-  sealed trait Standard extends js.Object
+  sealed trait Standard_ extends js.Object
   
   @js.native
   sealed trait StorageClass extends js.Object
@@ -246,7 +246,7 @@ object atAwsDashSdkClientDashS3DashBrowserStrings {
   sealed trait `public-read-write` extends js.Object
   
   @js.native
-  sealed trait requester extends js.Object
+  sealed trait requester_ extends js.Object
   
   @js.native
   sealed trait `s3:ObjectCreated:*` extends js.Object
@@ -399,7 +399,7 @@ object atAwsDashSdkClientDashS3DashBrowserStrings {
   @scala.inline
   def Size: Size = "Size".asInstanceOf[Size]
   @scala.inline
-  def Standard: Standard = "Standard".asInstanceOf[Standard]
+  def Standard_ : Standard_ = "Standard".asInstanceOf[Standard_]
   @scala.inline
   def StorageClass: StorageClass = "StorageClass".asInstanceOf[StorageClass]
   @scala.inline
@@ -451,7 +451,7 @@ object atAwsDashSdkClientDashS3DashBrowserStrings {
   @scala.inline
   def `public-read-write`: `public-read-write` = "public-read-write".asInstanceOf[`public-read-write`]
   @scala.inline
-  def requester: requester = "requester".asInstanceOf[requester]
+  def requester_ : requester_ = "requester".asInstanceOf[requester_]
   @scala.inline
   def `s3:ObjectCreated:*`: `s3:ObjectCreated:*` = "s3:ObjectCreated:*".asInstanceOf[`s3:ObjectCreated:*`]
   @scala.inline

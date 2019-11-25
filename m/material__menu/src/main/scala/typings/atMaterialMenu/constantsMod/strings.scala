@@ -26,8 +26,8 @@ object strings {
     SELECTED_EVENT: `MDCMenu:selected`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(ARIA_DISABLED_ATTR = ARIA_DISABLED_ATTR, CANCEL_EVENT = CANCEL_EVENT, ITEMS_SELECTOR = ITEMS_SELECTOR, SELECTED_EVENT = SELECTED_EVENT)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ARIA_DISABLED_ATTR = ARIA_DISABLED_ATTR.asInstanceOf[js.Any], CANCEL_EVENT = CANCEL_EVENT.asInstanceOf[js.Any], ITEMS_SELECTOR = ITEMS_SELECTOR.asInstanceOf[js.Any], SELECTED_EVENT = SELECTED_EVENT.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

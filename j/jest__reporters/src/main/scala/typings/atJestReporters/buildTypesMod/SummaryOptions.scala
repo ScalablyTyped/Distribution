@@ -19,7 +19,7 @@ object SummaryOptions {
   ): SummaryOptions = {
     val __obj = js.Dynamic.literal()
     if (estimatedTime != null) __obj.updateDynamic("estimatedTime")(estimatedTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundTime)) __obj.updateDynamic("roundTime")(roundTime)
+    if (!js.isUndefined(roundTime)) __obj.updateDynamic("roundTime")(roundTime.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummaryOptions]
   }

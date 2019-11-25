@@ -37,7 +37,7 @@ object IRouteLeg {
     subLegs: js.Array[IRouteSubLeg],
     summary: IRouteSummary
   ): IRouteLeg = {
-    val __obj = js.Dynamic.literal(endTime = endTime, endWaypointLocation = endWaypointLocation, itineraryItems = itineraryItems, originalRouteIndex = originalRouteIndex, startTime = startTime, startWaypointLocation = startWaypointLocation, subLegs = subLegs, summary = summary)
+    val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], endWaypointLocation = endWaypointLocation.asInstanceOf[js.Any], itineraryItems = itineraryItems.asInstanceOf[js.Any], originalRouteIndex = originalRouteIndex.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], startWaypointLocation = startWaypointLocation.asInstanceOf[js.Any], subLegs = subLegs.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRouteLeg]
   }

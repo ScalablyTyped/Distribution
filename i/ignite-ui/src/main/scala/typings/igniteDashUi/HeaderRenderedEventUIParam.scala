@@ -20,8 +20,8 @@ object HeaderRenderedEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, table: Element = null): HeaderRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderRenderedEventUIParam]
   }
 }

@@ -24,8 +24,8 @@ object HeatMapOptions {
     opacity: Int | Double = null,
     radius: Int | Double = null
   ): HeatMapOptions = {
-    val __obj = js.Dynamic.literal(data = data, map = map)
-    if (colorMap != null) __obj.updateDynamic("colorMap")(colorMap)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
+    if (colorMap != null) __obj.updateDynamic("colorMap")(colorMap.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatMapOptions]

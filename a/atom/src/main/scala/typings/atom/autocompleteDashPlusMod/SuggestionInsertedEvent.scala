@@ -15,7 +15,7 @@ trait SuggestionInsertedEvent extends js.Object {
 object SuggestionInsertedEvent {
   @scala.inline
   def apply(editor: TextEditor, suggestion: TextSuggestion | SnippetSuggestion, triggerPosition: Point): SuggestionInsertedEvent = {
-    val __obj = js.Dynamic.literal(editor = editor, suggestion = suggestion.asInstanceOf[js.Any], triggerPosition = triggerPosition)
+    val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any], suggestion = suggestion.asInstanceOf[js.Any], triggerPosition = triggerPosition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SuggestionInsertedEvent]
   }

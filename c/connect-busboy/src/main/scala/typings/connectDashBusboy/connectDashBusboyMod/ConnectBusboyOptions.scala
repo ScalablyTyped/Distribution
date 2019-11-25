@@ -22,13 +22,13 @@ object ConnectBusboyOptions {
     preservePath: js.UndefOr[Boolean] = js.undefined
   ): ConnectBusboyOptions = {
     val __obj = js.Dynamic.literal()
-    if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset)
+    if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset.asInstanceOf[js.Any])
     if (fileHwm != null) __obj.updateDynamic("fileHwm")(fileHwm.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
-    if (limits != null) __obj.updateDynamic("limits")(limits)
-    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
+    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectBusboyOptions]
   }
 }

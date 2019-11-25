@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ManagedAppPinCharacterSet extends js.Object
 
+object ManagedAppPinCharacterSet {
+  @scala.inline
+  def alphanumericAndSymbol: typings.microsoftDashGraph.microsoftDashGraphStrings.alphanumericAndSymbol = this.cast("alphanumericAndSymbol")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def numeric: typings.microsoftDashGraph.microsoftDashGraphStrings.numeric = this.cast("numeric")
+}
+

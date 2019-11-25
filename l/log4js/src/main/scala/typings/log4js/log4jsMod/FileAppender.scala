@@ -40,14 +40,14 @@ object FileAppender {
     mode: Int | Double = null,
     numBackups: Int | Double = null
   ): FileAppender = {
-    val __obj = js.Dynamic.literal(filename = filename)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (numBackups != null) __obj.updateDynamic("numBackups")(numBackups.asInstanceOf[js.Any])

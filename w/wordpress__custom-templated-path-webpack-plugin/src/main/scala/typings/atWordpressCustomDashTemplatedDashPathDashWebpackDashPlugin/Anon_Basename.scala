@@ -23,11 +23,11 @@ object Anon_Basename {
     query: js.Any = null
   ): Anon_Basename = {
     val __obj = js.Dynamic.literal()
-    if (basename != null) __obj.updateDynamic("basename")(basename)
-    if (chunk != null) __obj.updateDynamic("chunk")(chunk)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
+    if (chunk != null) __obj.updateDynamic("chunk")(chunk.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Basename]
   }
 }

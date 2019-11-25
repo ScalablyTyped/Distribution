@@ -41,11 +41,11 @@ object SyncCarddavAccountOptions {
     xhr: Transport = null
   ): SyncCarddavAccountOptions = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
     if (syncMethod != null) __obj.updateDynamic("syncMethod")(syncMethod.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncCarddavAccountOptions]
   }
 }

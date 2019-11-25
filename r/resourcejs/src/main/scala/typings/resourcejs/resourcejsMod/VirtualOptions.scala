@@ -19,7 +19,7 @@ object VirtualOptions {
     val __obj = js.Dynamic.literal()
     if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction3(after))
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction3(before))
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualOptions]
   }
 }

@@ -38,11 +38,11 @@ object StackAnimationOptions {
     waitForRender: js.UndefOr[Boolean] = js.undefined
   ): StackAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (topBar != null) __obj.updateDynamic("topBar")(topBar)
-    if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender)
+    if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (topBar != null) __obj.updateDynamic("topBar")(topBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackAnimationOptions]
   }
 }

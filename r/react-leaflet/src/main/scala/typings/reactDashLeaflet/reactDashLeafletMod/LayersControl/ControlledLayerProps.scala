@@ -32,12 +32,12 @@ object ControlledLayerProps {
     removeLayer: /* layer */ Layer => Unit = null,
     removeLayerControl: /* layer */ Layer => Unit = null
   ): ControlledLayerProps = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (addBaseLayer != null) __obj.updateDynamic("addBaseLayer")(js.Any.fromFunction3(addBaseLayer))
     if (addOverlay != null) __obj.updateDynamic("addOverlay")(js.Any.fromFunction3(addOverlay))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
+    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
     if (removeLayer != null) __obj.updateDynamic("removeLayer")(js.Any.fromFunction1(removeLayer))
     if (removeLayerControl != null) __obj.updateDynamic("removeLayerControl")(js.Any.fromFunction1(removeLayerControl))
     __obj.asInstanceOf[ControlledLayerProps]

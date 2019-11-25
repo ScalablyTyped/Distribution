@@ -12,13 +12,17 @@ object typescriptStrings {
   sealed trait _quote extends CompletionsTriggerCharacter
   
   @js.native
-  sealed trait `(` extends SignatureHelpTriggerCharacter
+  sealed trait `(`
+    extends SignatureHelpRetriggerCharacter
+       with SignatureHelpTriggerCharacter
   
   @js.native
   sealed trait `)` extends SignatureHelpRetriggerCharacter
   
   @js.native
-  sealed trait `,` extends SignatureHelpTriggerCharacter
+  sealed trait `,`
+    extends SignatureHelpRetriggerCharacter
+       with SignatureHelpTriggerCharacter
   
   @js.native
   sealed trait `/` extends CompletionsTriggerCharacter
@@ -31,8 +35,9 @@ object typescriptStrings {
   
   @js.native
   sealed trait `<`
-    extends SignatureHelpTriggerCharacter
-       with CompletionsTriggerCharacter
+    extends CompletionsTriggerCharacter
+       with SignatureHelpRetriggerCharacter
+       with SignatureHelpTriggerCharacter
   
   @js.native
   sealed trait `@` extends CompletionsTriggerCharacter

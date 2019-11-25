@@ -34,8 +34,8 @@ object ChooserFile {
     name: String,
     thumbnailLink: String = null
   ): ChooserFile = {
-    val __obj = js.Dynamic.literal(bytes = bytes, icon = icon, id = id, isDir = isDir, link = link, name = name)
-    if (thumbnailLink != null) __obj.updateDynamic("thumbnailLink")(thumbnailLink)
+    val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (thumbnailLink != null) __obj.updateDynamic("thumbnailLink")(thumbnailLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooserFile]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait PlaybackRepeatState extends js.Object
 
+object PlaybackRepeatState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def context: typings.spotifyDashApi.spotifyDashApiStrings.context = this.cast("context")
+  @scala.inline
+  def off: typings.spotifyDashApi.spotifyDashApiStrings.off = this.cast("off")
+  @scala.inline
+  def track: typings.spotifyDashApi.spotifyDashApiStrings.track = this.cast("track")
+}
+

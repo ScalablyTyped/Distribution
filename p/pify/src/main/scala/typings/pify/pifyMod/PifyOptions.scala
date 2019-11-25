@@ -25,12 +25,12 @@ object PifyOptions {
     promiseModule: PromiseModule = null
   ): PifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(errorFirst)) __obj.updateDynamic("errorFirst")(errorFirst)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (!js.isUndefined(excludeMain)) __obj.updateDynamic("excludeMain")(excludeMain)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs)
-    if (promiseModule != null) __obj.updateDynamic("promiseModule")(promiseModule)
+    if (!js.isUndefined(errorFirst)) __obj.updateDynamic("errorFirst")(errorFirst.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeMain)) __obj.updateDynamic("excludeMain")(excludeMain.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.asInstanceOf[js.Any])
+    if (promiseModule != null) __obj.updateDynamic("promiseModule")(promiseModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[PifyOptions]
   }
 }

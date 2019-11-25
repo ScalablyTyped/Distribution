@@ -21,8 +21,8 @@ object MediaContentRatingUnitedKingdom {
     tvRating: RatingUnitedKingdomTelevisionType = null
   ): MediaContentRatingUnitedKingdom = {
     val __obj = js.Dynamic.literal()
-    if (movieRating != null) __obj.updateDynamic("movieRating")(movieRating)
-    if (tvRating != null) __obj.updateDynamic("tvRating")(tvRating)
+    if (movieRating != null) __obj.updateDynamic("movieRating")(movieRating.asInstanceOf[js.Any])
+    if (tvRating != null) __obj.updateDynamic("tvRating")(tvRating.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaContentRatingUnitedKingdom]
   }
 }

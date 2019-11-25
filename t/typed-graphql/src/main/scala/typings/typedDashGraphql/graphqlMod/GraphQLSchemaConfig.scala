@@ -21,11 +21,11 @@ object GraphQLSchemaConfig {
     subscription: GraphQLObjectType = null,
     types: js.Array[GraphQLNamedType] = null
   ): GraphQLSchemaConfig = {
-    val __obj = js.Dynamic.literal(query = query)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (mutation != null) __obj.updateDynamic("mutation")(mutation)
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
-    if (types != null) __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (mutation != null) __obj.updateDynamic("mutation")(mutation.asInstanceOf[js.Any])
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLSchemaConfig]
   }
 }

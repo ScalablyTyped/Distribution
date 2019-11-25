@@ -22,8 +22,8 @@ object GooglePrivacyDlpV2beta1LDiversityConfig {
     sensitiveAttribute: GooglePrivacyDlpV2beta1FieldId = null
   ): GooglePrivacyDlpV2beta1LDiversityConfig = {
     val __obj = js.Dynamic.literal()
-    if (quasiIds != null) __obj.updateDynamic("quasiIds")(quasiIds)
-    if (sensitiveAttribute != null) __obj.updateDynamic("sensitiveAttribute")(sensitiveAttribute)
+    if (quasiIds != null) __obj.updateDynamic("quasiIds")(quasiIds.asInstanceOf[js.Any])
+    if (sensitiveAttribute != null) __obj.updateDynamic("sensitiveAttribute")(sensitiveAttribute.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1LDiversityConfig]
   }
 }

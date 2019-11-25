@@ -71,17 +71,17 @@ object Options {
     useNative: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPosition)) __obj.updateDynamic("autoPosition")(autoPosition)
-    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction)
-    if (!js.isUndefined(liteStyle)) __obj.updateDynamic("liteStyle")(liteStyle)
-    if (!js.isUndefined(locate)) __obj.updateDynamic("locate")(locate)
-    if (locationMarker != null) __obj.updateDynamic("locationMarker")(locationMarker)
-    if (!js.isUndefined(noIpLocate)) __obj.updateDynamic("noIpLocate")(noIpLocate)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(ruler)) __obj.updateDynamic("ruler")(ruler)
+    if (!js.isUndefined(autoPosition)) __obj.updateDynamic("autoPosition")(autoPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(liteStyle)) __obj.updateDynamic("liteStyle")(liteStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(locate)) __obj.updateDynamic("locate")(locate.asInstanceOf[js.Any])
+    if (locationMarker != null) __obj.updateDynamic("locationMarker")(locationMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(noIpLocate)) __obj.updateDynamic("noIpLocate")(noIpLocate.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(ruler)) __obj.updateDynamic("ruler")(ruler.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative)
+    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

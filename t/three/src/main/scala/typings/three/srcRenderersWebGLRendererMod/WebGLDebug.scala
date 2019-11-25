@@ -14,7 +14,7 @@ trait WebGLDebug extends js.Object {
 object WebGLDebug {
   @scala.inline
   def apply(checkShaderErrors: Boolean): WebGLDebug = {
-    val __obj = js.Dynamic.literal(checkShaderErrors = checkShaderErrors)
+    val __obj = js.Dynamic.literal(checkShaderErrors = checkShaderErrors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebGLDebug]
   }

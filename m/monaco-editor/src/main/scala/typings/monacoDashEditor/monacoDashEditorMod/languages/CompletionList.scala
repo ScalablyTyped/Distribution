@@ -17,9 +17,9 @@ object CompletionList {
     dispose: () => Unit = null,
     incomplete: js.UndefOr[Boolean] = js.undefined
   ): CompletionList = {
-    val __obj = js.Dynamic.literal(suggestions = suggestions)
+    val __obj = js.Dynamic.literal(suggestions = suggestions.asInstanceOf[js.Any])
     if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction0(dispose))
-    if (!js.isUndefined(incomplete)) __obj.updateDynamic("incomplete")(incomplete)
+    if (!js.isUndefined(incomplete)) __obj.updateDynamic("incomplete")(incomplete.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionList]
   }
 }

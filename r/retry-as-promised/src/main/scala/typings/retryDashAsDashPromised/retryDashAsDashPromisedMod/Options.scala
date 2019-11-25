@@ -36,7 +36,7 @@ object Options {
     if (backoffExponent != null) __obj.updateDynamic("backoffExponent")(backoffExponent.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (report != null) __obj.updateDynamic("report")(js.Any.fromFunction3(report))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

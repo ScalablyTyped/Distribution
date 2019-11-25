@@ -33,15 +33,15 @@ object CalendarListInput {
     selected: js.UndefOr[Boolean] = js.undefined,
     summaryOverride: String = null
   ): CalendarListInput = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (colorId != null) __obj.updateDynamic("colorId")(colorId)
-    if (defaultReminders != null) __obj.updateDynamic("defaultReminders")(defaultReminders)
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (notificationSettings != null) __obj.updateDynamic("notificationSettings")(notificationSettings)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (summaryOverride != null) __obj.updateDynamic("summaryOverride")(summaryOverride)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (colorId != null) __obj.updateDynamic("colorId")(colorId.asInstanceOf[js.Any])
+    if (defaultReminders != null) __obj.updateDynamic("defaultReminders")(defaultReminders.asInstanceOf[js.Any])
+    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (notificationSettings != null) __obj.updateDynamic("notificationSettings")(notificationSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (summaryOverride != null) __obj.updateDynamic("summaryOverride")(summaryOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarListInput]
   }
 }

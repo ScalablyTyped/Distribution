@@ -80,16 +80,16 @@ object Parameters {
     `type`: Type = null
   ): Parameters = {
     val __obj = js.Dynamic.literal()
-    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (`error-callback` != null) __obj.updateDynamic("error-callback")(js.Any.fromFunction0(`error-callback`))
     if (`expired-callback` != null) __obj.updateDynamic("expired-callback")(js.Any.fromFunction0(`expired-callback`))
-    if (!js.isUndefined(isolated)) __obj.updateDynamic("isolated")(isolated)
-    if (sitekey != null) __obj.updateDynamic("sitekey")(sitekey)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(isolated)) __obj.updateDynamic("isolated")(isolated.asInstanceOf[js.Any])
+    if (sitekey != null) __obj.updateDynamic("sitekey")(sitekey.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters]
   }
 }

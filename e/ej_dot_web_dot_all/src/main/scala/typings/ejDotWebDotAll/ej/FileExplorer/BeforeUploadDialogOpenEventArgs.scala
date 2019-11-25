@@ -20,9 +20,9 @@ object BeforeUploadDialogOpenEventArgs {
   @scala.inline
   def apply(files: js.Any = null, model: js.Any = null, `type`: String = null): BeforeUploadDialogOpenEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeUploadDialogOpenEventArgs]
   }
 }

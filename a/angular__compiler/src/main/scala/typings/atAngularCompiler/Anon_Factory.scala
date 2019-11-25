@@ -14,7 +14,7 @@ trait Anon_Factory extends js.Object {
 object Anon_Factory {
   @scala.inline
   def apply(factory: Expression, statements: js.Array[Statement]): Anon_Factory = {
-    val __obj = js.Dynamic.literal(factory = factory, statements = statements)
+    val __obj = js.Dynamic.literal(factory = factory.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Factory]
   }

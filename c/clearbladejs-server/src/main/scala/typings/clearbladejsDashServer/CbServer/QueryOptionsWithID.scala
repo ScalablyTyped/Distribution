@@ -11,7 +11,7 @@ trait QueryOptionsWithID
 object QueryOptionsWithID {
   @scala.inline
   def apply(collectionID: String, limit: Int | Double = null, offset: Int | Double = null): QueryOptionsWithID = {
-    val __obj = js.Dynamic.literal(collectionID = collectionID)
+    val __obj = js.Dynamic.literal(collectionID = collectionID.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptionsWithID]

@@ -31,9 +31,9 @@ object ConfigStyle {
   ): ConfigStyle = {
     val __obj = js.Dynamic.literal()
     if (defaultScale != null) __obj.updateDynamic("defaultScale")(defaultScale.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     __obj.asInstanceOf[ConfigStyle]
   }

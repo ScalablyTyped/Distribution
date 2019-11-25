@@ -24,7 +24,7 @@ object Anon_Amount {
     paymentInstrumentSubtype: String,
     purchaseOrderNumber: String
   ): Anon_Amount = {
-    val __obj = js.Dynamic.literal(amount = amount, createdAt = createdAt, id = id, orderId = orderId, paymentInstrumentSubtype = paymentInstrumentSubtype, purchaseOrderNumber = purchaseOrderNumber)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], paymentInstrumentSubtype = paymentInstrumentSubtype.asInstanceOf[js.Any], purchaseOrderNumber = purchaseOrderNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Amount]
   }

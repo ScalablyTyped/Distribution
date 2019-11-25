@@ -42,8 +42,8 @@ object SassException {
     status: Double,
     stack: String = null
   ): SassException = {
-    val __obj = js.Dynamic.literal(column = column, file = file, formatted = formatted, line = line, message = message, name = name, status = status)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SassException]
   }
 }

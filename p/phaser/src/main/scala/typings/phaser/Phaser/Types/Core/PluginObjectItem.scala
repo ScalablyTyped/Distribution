@@ -47,13 +47,13 @@ object PluginObjectItem {
     systemKey: String = null
   ): PluginObjectItem = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (mapping != null) __obj.updateDynamic("mapping")(mapping)
-    if (plugin != null) __obj.updateDynamic("plugin")(plugin)
-    if (sceneKey != null) __obj.updateDynamic("sceneKey")(sceneKey)
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
-    if (systemKey != null) __obj.updateDynamic("systemKey")(systemKey)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
+    if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
+    if (sceneKey != null) __obj.updateDynamic("sceneKey")(sceneKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (systemKey != null) __obj.updateDynamic("systemKey")(systemKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginObjectItem]
   }
 }

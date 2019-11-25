@@ -31,7 +31,7 @@ object FontOptions {
     codeTagCount: Int | Double = null,
     fullLayout: Int | Double = null
   ): FontOptions = {
-    val __obj = js.Dynamic.literal(baseline = baseline, fittingRules = fittingRules, hardBlank = hardBlank, height = height, maxLength = maxLength, numCommentLines = numCommentLines, oldLayout = oldLayout, printDirection = printDirection)
+    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], fittingRules = fittingRules.asInstanceOf[js.Any], hardBlank = hardBlank.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], numCommentLines = numCommentLines.asInstanceOf[js.Any], oldLayout = oldLayout.asInstanceOf[js.Any], printDirection = printDirection.asInstanceOf[js.Any])
     if (codeTagCount != null) __obj.updateDynamic("codeTagCount")(codeTagCount.asInstanceOf[js.Any])
     if (fullLayout != null) __obj.updateDynamic("fullLayout")(fullLayout.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontOptions]

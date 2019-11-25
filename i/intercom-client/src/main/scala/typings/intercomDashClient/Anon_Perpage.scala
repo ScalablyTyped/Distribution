@@ -14,7 +14,7 @@ object Anon_Perpage {
   @scala.inline
   def apply(`type`: user, per_page: Int | Double = null): Anon_Perpage = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Perpage]
   }

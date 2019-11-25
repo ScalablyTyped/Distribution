@@ -63,20 +63,20 @@ object SecurityInfo {
     signatureSchemeName: String = null,
     weaknessReasons: js.Array[TransportWeaknessReasons] = null
   ): SecurityInfo = {
-    val __obj = js.Dynamic.literal(certificates = certificates, state = state)
-    if (certificateTransparencyStatus != null) __obj.updateDynamic("certificateTransparencyStatus")(certificateTransparencyStatus)
-    if (cipherSuite != null) __obj.updateDynamic("cipherSuite")(cipherSuite)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (hpkp != null) __obj.updateDynamic("hpkp")(hpkp)
-    if (!js.isUndefined(hsts)) __obj.updateDynamic("hsts")(hsts)
-    if (!js.isUndefined(isDomainMismatch)) __obj.updateDynamic("isDomainMismatch")(isDomainMismatch)
-    if (!js.isUndefined(isExtendedValidation)) __obj.updateDynamic("isExtendedValidation")(isExtendedValidation)
-    if (!js.isUndefined(isNotValidAtThisTime)) __obj.updateDynamic("isNotValidAtThisTime")(isNotValidAtThisTime)
-    if (!js.isUndefined(isUntrusted)) __obj.updateDynamic("isUntrusted")(isUntrusted)
-    if (keaGroupName != null) __obj.updateDynamic("keaGroupName")(keaGroupName)
-    if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion)
-    if (signatureSchemeName != null) __obj.updateDynamic("signatureSchemeName")(signatureSchemeName)
-    if (weaknessReasons != null) __obj.updateDynamic("weaknessReasons")(weaknessReasons)
+    val __obj = js.Dynamic.literal(certificates = certificates.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (certificateTransparencyStatus != null) __obj.updateDynamic("certificateTransparencyStatus")(certificateTransparencyStatus.asInstanceOf[js.Any])
+    if (cipherSuite != null) __obj.updateDynamic("cipherSuite")(cipherSuite.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (hpkp != null) __obj.updateDynamic("hpkp")(hpkp.asInstanceOf[js.Any])
+    if (!js.isUndefined(hsts)) __obj.updateDynamic("hsts")(hsts.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDomainMismatch)) __obj.updateDynamic("isDomainMismatch")(isDomainMismatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExtendedValidation)) __obj.updateDynamic("isExtendedValidation")(isExtendedValidation.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNotValidAtThisTime)) __obj.updateDynamic("isNotValidAtThisTime")(isNotValidAtThisTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUntrusted)) __obj.updateDynamic("isUntrusted")(isUntrusted.asInstanceOf[js.Any])
+    if (keaGroupName != null) __obj.updateDynamic("keaGroupName")(keaGroupName.asInstanceOf[js.Any])
+    if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])
+    if (signatureSchemeName != null) __obj.updateDynamic("signatureSchemeName")(signatureSchemeName.asInstanceOf[js.Any])
+    if (weaknessReasons != null) __obj.updateDynamic("weaknessReasons")(weaknessReasons.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityInfo]
   }
 }

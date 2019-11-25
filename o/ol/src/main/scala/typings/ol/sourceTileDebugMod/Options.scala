@@ -20,8 +20,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -59,13 +59,13 @@ object Api {
     version: String = null
   ): Api = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext)
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext.asInstanceOf[js.Any])
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Api]
   }
 }

@@ -20,7 +20,7 @@ object Anon_AuthenticatedAttributes {
     digestAlgorithm: String,
     key: String
   ): Anon_AuthenticatedAttributes = {
-    val __obj = js.Dynamic.literal(authenticatedAttributes = authenticatedAttributes, certificate = certificate.asInstanceOf[js.Any], digestAlgorithm = digestAlgorithm, key = key)
+    val __obj = js.Dynamic.literal(authenticatedAttributes = authenticatedAttributes.asInstanceOf[js.Any], certificate = certificate.asInstanceOf[js.Any], digestAlgorithm = digestAlgorithm.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AuthenticatedAttributes]
   }

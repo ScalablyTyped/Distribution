@@ -35,12 +35,12 @@ object DiagnosticInfo {
     range: Range = null,
     sourceFile: SourceFile = null
   ): DiagnosticInfo = {
-    val __obj = js.Dynamic.literal(code = code, diagnosticIndex = diagnosticIndex, message = message, pos = pos, warning = warning)
-    if (formattedMessage != null) __obj.updateDynamic("formattedMessage")(formattedMessage)
-    if (messageArguments != null) __obj.updateDynamic("messageArguments")(messageArguments)
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], diagnosticIndex = diagnosticIndex.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
+    if (formattedMessage != null) __obj.updateDynamic("formattedMessage")(formattedMessage.asInstanceOf[js.Any])
+    if (messageArguments != null) __obj.updateDynamic("messageArguments")(messageArguments.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticInfo]
   }
 }

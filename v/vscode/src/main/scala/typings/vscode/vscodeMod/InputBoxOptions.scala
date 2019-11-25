@@ -61,13 +61,13 @@ object InputBoxOptions {
     valueSelection: js.Tuple2[Double, Double] = null
   ): InputBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreFocusOut)) __obj.updateDynamic("ignoreFocusOut")(ignoreFocusOut)
-    if (!js.isUndefined(password)) __obj.updateDynamic("password")(password)
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (!js.isUndefined(ignoreFocusOut)) __obj.updateDynamic("ignoreFocusOut")(ignoreFocusOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(password)) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (validateInput != null) __obj.updateDynamic("validateInput")(js.Any.fromFunction1(validateInput))
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (valueSelection != null) __obj.updateDynamic("valueSelection")(valueSelection)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueSelection != null) __obj.updateDynamic("valueSelection")(valueSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputBoxOptions]
   }
 }

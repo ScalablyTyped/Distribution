@@ -15,8 +15,8 @@ object ManagedProxyLocation {
   @scala.inline
   def apply(Host: ManagedDOMString = null, Port: ManagedLong = null): ManagedProxyLocation = {
     val __obj = js.Dynamic.literal()
-    if (Host != null) __obj.updateDynamic("Host")(Host)
-    if (Port != null) __obj.updateDynamic("Port")(Port)
+    if (Host != null) __obj.updateDynamic("Host")(Host.asInstanceOf[js.Any])
+    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedProxyLocation]
   }
 }

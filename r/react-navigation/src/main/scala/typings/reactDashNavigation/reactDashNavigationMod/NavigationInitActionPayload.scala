@@ -12,7 +12,7 @@ object NavigationInitActionPayload {
   @scala.inline
   def apply(params: NavigationParams = null): NavigationInitActionPayload = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationInitActionPayload]
   }
 }

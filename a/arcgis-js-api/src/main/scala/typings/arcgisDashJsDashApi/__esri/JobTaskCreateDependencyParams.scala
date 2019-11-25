@@ -65,7 +65,7 @@ object JobTaskCreateDependencyParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     user: String
   ): JobTaskCreateDependencyParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, depJobId = depJobId, depOnType = depOnType, depOnValue = depOnValue, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), heldOnType = heldOnType, heldOnValue = heldOnValue, jobId = jobId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], depJobId = depJobId.asInstanceOf[js.Any], depOnType = depOnType.asInstanceOf[js.Any], depOnValue = depOnValue.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), heldOnType = heldOnType.asInstanceOf[js.Any], heldOnValue = heldOnValue.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobTaskCreateDependencyParams]
   }

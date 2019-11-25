@@ -12,7 +12,7 @@ object IObject {
   @scala.inline
   def apply(`object`: String): IObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObject]
   }
 }

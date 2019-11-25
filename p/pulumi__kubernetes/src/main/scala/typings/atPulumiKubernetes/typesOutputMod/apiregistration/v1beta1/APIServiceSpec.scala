@@ -71,7 +71,7 @@ object APIServiceSpec {
     version: String,
     versionPriority: Double
   ): APIServiceSpec = {
-    val __obj = js.Dynamic.literal(caBundle = caBundle, group = group, groupPriorityMinimum = groupPriorityMinimum, insecureSkipTLSVerify = insecureSkipTLSVerify, service = service, version = version, versionPriority = versionPriority)
+    val __obj = js.Dynamic.literal(caBundle = caBundle.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], groupPriorityMinimum = groupPriorityMinimum.asInstanceOf[js.Any], insecureSkipTLSVerify = insecureSkipTLSVerify.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versionPriority = versionPriority.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[APIServiceSpec]
   }

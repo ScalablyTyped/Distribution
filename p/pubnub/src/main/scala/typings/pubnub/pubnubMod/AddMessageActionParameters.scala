@@ -14,7 +14,7 @@ trait AddMessageActionParameters extends js.Object {
 object AddMessageActionParameters {
   @scala.inline
   def apply(action: Anon_Type, channel: String, messageTimetoken: String): AddMessageActionParameters = {
-    val __obj = js.Dynamic.literal(action = action, channel = channel, messageTimetoken = messageTimetoken)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], messageTimetoken = messageTimetoken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddMessageActionParameters]
   }

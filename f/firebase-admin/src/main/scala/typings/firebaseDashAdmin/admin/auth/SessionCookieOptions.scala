@@ -19,7 +19,7 @@ trait SessionCookieOptions extends js.Object {
 object SessionCookieOptions {
   @scala.inline
   def apply(expiresIn: Double): SessionCookieOptions = {
-    val __obj = js.Dynamic.literal(expiresIn = expiresIn)
+    val __obj = js.Dynamic.literal(expiresIn = expiresIn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SessionCookieOptions]
   }

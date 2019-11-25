@@ -12,7 +12,7 @@ trait AwayEvent extends js.Object {
 object AwayEvent {
   @scala.inline
   def apply(message: String, nick: String): AwayEvent = {
-    val __obj = js.Dynamic.literal(message = message, nick = nick)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AwayEvent]
   }

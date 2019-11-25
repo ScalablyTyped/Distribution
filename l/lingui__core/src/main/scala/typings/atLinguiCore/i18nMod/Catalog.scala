@@ -12,8 +12,8 @@ trait Catalog extends js.Object {
 object Catalog {
   @scala.inline
   def apply(messages: Messages, languageData: LanguageData = null): Catalog = {
-    val __obj = js.Dynamic.literal(messages = messages)
-    if (languageData != null) __obj.updateDynamic("languageData")(languageData)
+    val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
+    if (languageData != null) __obj.updateDynamic("languageData")(languageData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Catalog]
   }
 }

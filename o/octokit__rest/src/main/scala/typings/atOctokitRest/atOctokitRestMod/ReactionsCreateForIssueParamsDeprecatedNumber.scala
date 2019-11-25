@@ -33,7 +33,7 @@ object ReactionsCreateForIssueParamsDeprecatedNumber {
     owner: String,
     repo: String
   ): ReactionsCreateForIssueParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReactionsCreateForIssueParamsDeprecatedNumber]
   }

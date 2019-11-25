@@ -24,12 +24,12 @@ object McfDataProfileInfo {
     webPropertyId: String = null
   ): McfDataProfileInfo = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId)
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId)
-    if (profileName != null) __obj.updateDynamic("profileName")(profileName)
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId)
-    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId.asInstanceOf[js.Any])
+    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
+    if (profileName != null) __obj.updateDynamic("profileName")(profileName.asInstanceOf[js.Any])
+    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
+    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[McfDataProfileInfo]
   }
 }

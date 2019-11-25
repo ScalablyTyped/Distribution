@@ -29,9 +29,9 @@ object MutationResult {
   @scala.inline
   def apply(conflictDetected: js.UndefOr[Boolean] = js.undefined, key: Key = null, version: String = null): MutationResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(conflictDetected)) __obj.updateDynamic("conflictDetected")(conflictDetected)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(conflictDetected)) __obj.updateDynamic("conflictDetected")(conflictDetected.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult]
   }
 }

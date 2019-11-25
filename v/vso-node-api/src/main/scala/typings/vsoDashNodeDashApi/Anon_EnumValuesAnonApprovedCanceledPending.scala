@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonApprovedCanceledPending extends js.Object {
 object Anon_EnumValuesAnonApprovedCanceledPending {
   @scala.inline
   def apply(enumValues: Anon_ApprovedCanceledPending): Anon_EnumValuesAnonApprovedCanceledPending = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonApprovedCanceledPending]
   }

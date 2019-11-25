@@ -24,7 +24,7 @@ object Anon_Data {
     extractResults: /* data */ js.Object => js.Object = null,
     extractSaveResults: /* data */ js.Object => js.Array[_] = null
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(name = name, visitNode = js.Any.fromFunction3(visitNode))
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], visitNode = js.Any.fromFunction3(visitNode))
     if (extractKeyMappings != null) __obj.updateDynamic("extractKeyMappings")(js.Any.fromFunction1(extractKeyMappings))
     if (extractResults != null) __obj.updateDynamic("extractResults")(js.Any.fromFunction1(extractResults))
     if (extractSaveResults != null) __obj.updateDynamic("extractSaveResults")(js.Any.fromFunction1(extractSaveResults))

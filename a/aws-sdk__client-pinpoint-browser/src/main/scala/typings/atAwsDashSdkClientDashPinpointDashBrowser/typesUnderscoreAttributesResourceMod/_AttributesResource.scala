@@ -28,8 +28,8 @@ object _AttributesResource {
     Attributes: js.Array[String] | Iterable[String] = null
   ): _AttributesResource = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (AttributeType != null) __obj.updateDynamic("AttributeType")(AttributeType)
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (AttributeType != null) __obj.updateDynamic("AttributeType")(AttributeType.asInstanceOf[js.Any])
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AttributesResource]
   }

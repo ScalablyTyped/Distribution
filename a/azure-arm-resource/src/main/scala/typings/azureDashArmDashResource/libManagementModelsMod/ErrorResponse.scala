@@ -12,7 +12,7 @@ object ErrorResponse {
   @scala.inline
   def apply(error: ErrorDetails = null): ErrorResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorResponse]
   }
 }

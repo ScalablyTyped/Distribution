@@ -25,12 +25,12 @@ object Mode {
     symbols: js.UndefOr[Boolean] = js.undefined
   ): Mode = {
     val __obj = js.Dynamic.literal()
-    if (charmap != null) __obj.updateDynamic("charmap")(charmap)
-    if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower)
-    if (multicharmap != null) __obj.updateDynamic("multicharmap")(multicharmap)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (replacement != null) __obj.updateDynamic("replacement")(replacement)
-    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols)
+    if (charmap != null) __obj.updateDynamic("charmap")(charmap.asInstanceOf[js.Any])
+    if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower.asInstanceOf[js.Any])
+    if (multicharmap != null) __obj.updateDynamic("multicharmap")(multicharmap.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (replacement != null) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mode]
   }
 }

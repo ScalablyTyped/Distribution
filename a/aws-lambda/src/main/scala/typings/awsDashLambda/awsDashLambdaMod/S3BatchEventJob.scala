@@ -11,7 +11,7 @@ trait S3BatchEventJob extends js.Object {
 object S3BatchEventJob {
   @scala.inline
   def apply(id: String): S3BatchEventJob = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[S3BatchEventJob]
   }

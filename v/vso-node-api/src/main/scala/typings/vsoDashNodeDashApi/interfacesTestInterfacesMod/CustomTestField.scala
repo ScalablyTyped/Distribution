@@ -12,7 +12,7 @@ trait CustomTestField extends js.Object {
 object CustomTestField {
   @scala.inline
   def apply(fieldName: String, value: js.Any): CustomTestField = {
-    val __obj = js.Dynamic.literal(fieldName = fieldName, value = value)
+    val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomTestField]
   }

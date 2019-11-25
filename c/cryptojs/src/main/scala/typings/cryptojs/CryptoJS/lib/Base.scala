@@ -15,13 +15,12 @@ trait Base extends js.Object {
 object Base {
   @scala.inline
   def apply(
-    clone: () => Base,
     create: /* repeated */ js.Any => Base,
     extend: js.Object => js.Object,
     init: /* repeated */ js.Any => Unit,
     mixIn: js.Object => Unit
   ): Base = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), create = js.Any.fromFunction1(create), extend = js.Any.fromFunction1(extend), init = js.Any.fromFunction1(init), mixIn = js.Any.fromFunction1(mixIn))
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), extend = js.Any.fromFunction1(extend), init = js.Any.fromFunction1(init), mixIn = js.Any.fromFunction1(mixIn))
   
     __obj.asInstanceOf[Base]
   }

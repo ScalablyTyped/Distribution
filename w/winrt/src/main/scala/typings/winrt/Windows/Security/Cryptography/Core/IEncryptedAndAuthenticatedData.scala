@@ -13,7 +13,7 @@ trait IEncryptedAndAuthenticatedData extends js.Object {
 object IEncryptedAndAuthenticatedData {
   @scala.inline
   def apply(authenticationTag: IBuffer, encryptedData: IBuffer): IEncryptedAndAuthenticatedData = {
-    val __obj = js.Dynamic.literal(authenticationTag = authenticationTag, encryptedData = encryptedData)
+    val __obj = js.Dynamic.literal(authenticationTag = authenticationTag.asInstanceOf[js.Any], encryptedData = encryptedData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEncryptedAndAuthenticatedData]
   }

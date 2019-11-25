@@ -41,11 +41,11 @@ object OpenAPIFramework {
     enableObjectCoercion: js.Any,
     errorTransformer: js.Any,
     externalSchemas: js.Any,
-    featureType: js.Any,
+    featureType: String,
     initialize: OpenAPIFrameworkVisitor => Unit,
     logger: js.Any,
-    loggingPrefix: js.Any,
-    name: js.Any,
+    loggingPrefix: String,
+    name: String,
     operations: js.Any,
     originalApiDoc: js.Any,
     pathSecurity: js.Any,
@@ -57,7 +57,7 @@ object OpenAPIFramework {
     validateApiDoc: js.Any,
     validator: js.Any
   ): OpenAPIFramework = {
-    val __obj = js.Dynamic.literal(apiDoc = apiDoc, args = args, basePaths = basePaths, customFormats = customFormats, dependencies = dependencies, enableObjectCoercion = enableObjectCoercion, errorTransformer = errorTransformer, externalSchemas = externalSchemas, featureType = featureType, initialize = js.Any.fromFunction1(initialize), logger = logger, loggingPrefix = loggingPrefix, name = name, operations = operations, originalApiDoc = originalApiDoc, pathSecurity = pathSecurity, paths = paths, pathsIgnore = pathsIgnore, routesGlob = routesGlob, routesIndexFileRegExp = routesIndexFileRegExp, securityHandlers = securityHandlers, validateApiDoc = validateApiDoc, validator = validator)
+    val __obj = js.Dynamic.literal(apiDoc = apiDoc.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], basePaths = basePaths.asInstanceOf[js.Any], customFormats = customFormats.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], enableObjectCoercion = enableObjectCoercion.asInstanceOf[js.Any], errorTransformer = errorTransformer.asInstanceOf[js.Any], externalSchemas = externalSchemas.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any], initialize = js.Any.fromFunction1(initialize), logger = logger.asInstanceOf[js.Any], loggingPrefix = loggingPrefix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], originalApiDoc = originalApiDoc.asInstanceOf[js.Any], pathSecurity = pathSecurity.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], pathsIgnore = pathsIgnore.asInstanceOf[js.Any], routesGlob = routesGlob.asInstanceOf[js.Any], routesIndexFileRegExp = routesIndexFileRegExp.asInstanceOf[js.Any], securityHandlers = securityHandlers.asInstanceOf[js.Any], validateApiDoc = validateApiDoc.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenAPIFramework]
   }

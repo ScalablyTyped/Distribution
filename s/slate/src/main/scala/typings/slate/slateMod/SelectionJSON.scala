@@ -23,11 +23,11 @@ object SelectionJSON {
     `object`: selection = null
   ): SelectionJSON = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused)
-    if (marks != null) __obj.updateDynamic("marks")(marks)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
+    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionJSON]
   }
 }

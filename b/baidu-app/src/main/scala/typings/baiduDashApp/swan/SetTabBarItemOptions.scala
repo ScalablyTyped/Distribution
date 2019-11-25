@@ -35,13 +35,13 @@ object SetTabBarItemOptions {
     success: js.Any => Unit = null,
     text: String = null
   ): SetTabBarItemOptions = {
-    val __obj = js.Dynamic.literal(index = index)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath)
-    if (selectedIconPath != null) __obj.updateDynamic("selectedIconPath")(selectedIconPath)
+    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
+    if (selectedIconPath != null) __obj.updateDynamic("selectedIconPath")(selectedIconPath.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTabBarItemOptions]
   }
 }

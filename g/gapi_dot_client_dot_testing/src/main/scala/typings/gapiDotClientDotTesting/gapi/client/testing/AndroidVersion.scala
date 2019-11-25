@@ -59,12 +59,12 @@ object AndroidVersion {
   ): AndroidVersion = {
     val __obj = js.Dynamic.literal()
     if (apiLevel != null) __obj.updateDynamic("apiLevel")(apiLevel.asInstanceOf[js.Any])
-    if (codeName != null) __obj.updateDynamic("codeName")(codeName)
-    if (distribution != null) __obj.updateDynamic("distribution")(distribution)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (versionString != null) __obj.updateDynamic("versionString")(versionString)
+    if (codeName != null) __obj.updateDynamic("codeName")(codeName.asInstanceOf[js.Any])
+    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (versionString != null) __obj.updateDynamic("versionString")(versionString.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidVersion]
   }
 }

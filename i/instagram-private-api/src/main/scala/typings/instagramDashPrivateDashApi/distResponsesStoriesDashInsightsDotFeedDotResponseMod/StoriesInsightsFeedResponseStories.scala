@@ -15,7 +15,7 @@ object StoriesInsightsFeedResponseStories {
     edges: js.Array[StoriesInsightsFeedResponseEdgesItem],
     page_info: StoriesInsightsFeedResponsePage_info
   ): StoriesInsightsFeedResponseStories = {
-    val __obj = js.Dynamic.literal(edges = edges, page_info = page_info)
+    val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], page_info = page_info.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoriesInsightsFeedResponseStories]
   }

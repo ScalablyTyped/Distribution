@@ -21,10 +21,10 @@ object ExecuteOptions {
     schema: GraphQLSchema = null
   ): ExecuteOptions = {
     val __obj = js.Dynamic.literal()
-    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
-    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver)
-    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue.asInstanceOf[js.Any])
+    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver.asInstanceOf[js.Any])
+    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteOptions]
   }
 }

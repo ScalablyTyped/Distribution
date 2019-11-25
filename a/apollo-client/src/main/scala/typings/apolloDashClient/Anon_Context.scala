@@ -24,11 +24,11 @@ object Anon_Context {
     onlyRunForcedResolvers: js.UndefOr[Boolean] = js.undefined,
     variables: Record[String, _] = null
   ): Anon_Context[TData] = {
-    val __obj = js.Dynamic.literal(remoteResult = remoteResult)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (!js.isUndefined(onlyRunForcedResolvers)) __obj.updateDynamic("onlyRunForcedResolvers")(onlyRunForcedResolvers)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(remoteResult = remoteResult.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyRunForcedResolvers)) __obj.updateDynamic("onlyRunForcedResolvers")(onlyRunForcedResolvers.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context[TData]]
   }
 }

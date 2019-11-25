@@ -44,8 +44,8 @@ object Typeofpermissions {
     onRemoved: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]] = null
   ): Typeofpermissions = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), getAll = js.Any.fromFunction0(getAll), remove = js.Any.fromFunction1(remove), request = js.Any.fromFunction1(request))
-    if (onAdded != null) __obj.updateDynamic("onAdded")(onAdded)
-    if (onRemoved != null) __obj.updateDynamic("onRemoved")(onRemoved)
+    if (onAdded != null) __obj.updateDynamic("onAdded")(onAdded.asInstanceOf[js.Any])
+    if (onRemoved != null) __obj.updateDynamic("onRemoved")(onRemoved.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofpermissions]
   }
 }

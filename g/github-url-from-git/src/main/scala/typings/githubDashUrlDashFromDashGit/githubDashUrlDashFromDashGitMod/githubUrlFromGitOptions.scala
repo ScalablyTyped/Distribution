@@ -15,7 +15,7 @@ object githubUrlFromGitOptions {
   @scala.inline
   def apply(extraBaseUrls: js.Array[String] = null): githubUrlFromGitOptions = {
     val __obj = js.Dynamic.literal()
-    if (extraBaseUrls != null) __obj.updateDynamic("extraBaseUrls")(extraBaseUrls)
+    if (extraBaseUrls != null) __obj.updateDynamic("extraBaseUrls")(extraBaseUrls.asInstanceOf[js.Any])
     __obj.asInstanceOf[githubUrlFromGitOptions]
   }
 }

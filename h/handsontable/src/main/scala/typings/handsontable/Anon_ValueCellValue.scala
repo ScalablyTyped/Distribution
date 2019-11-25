@@ -12,7 +12,7 @@ trait Anon_ValueCellValue extends js.Object {
 object Anon_ValueCellValue {
   @scala.inline
   def apply(value: CellValue): Anon_ValueCellValue = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ValueCellValue]
   }

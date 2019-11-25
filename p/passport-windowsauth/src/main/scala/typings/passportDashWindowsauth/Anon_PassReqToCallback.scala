@@ -12,7 +12,7 @@ trait Anon_PassReqToCallback extends js.Object {
 object Anon_PassReqToCallback {
   @scala.inline
   def apply(passReqToCallback: `true`): Anon_PassReqToCallback = {
-    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback)
+    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PassReqToCallback]
   }

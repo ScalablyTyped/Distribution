@@ -34,8 +34,8 @@ object SoundMarker {
     duration: Int | Double = null,
     start: Int | Double = null
   ): SoundMarker = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (config != null) __obj.updateDynamic("config")(config)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoundMarker]

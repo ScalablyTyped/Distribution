@@ -1,6 +1,5 @@
 package typings.atPulumiCloud.atPulumiCloudMod
 
-import typings.atPulumiCloud.serviceMod.SharedVolume
 import typings.atPulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@pulumi/cloud", "SharedVolume")
 @js.native
-class SharedVolumeCls protected () extends SharedVolume {
+class SharedVolumeCls protected ()
+  extends typings.atPulumiCloud.serviceMod.SharedVolume {
   /**
     * Construct a new Volume with the given unique name.
     *

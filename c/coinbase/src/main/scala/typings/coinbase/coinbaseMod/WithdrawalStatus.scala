@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait WithdrawalStatus extends js.Object
 
+object WithdrawalStatus {
+  @scala.inline
+  def canceled: typings.coinbase.coinbaseStrings.canceled = this.cast("canceled")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def completed: typings.coinbase.coinbaseStrings.completed = this.cast("completed")
+  @scala.inline
+  def created: typings.coinbase.coinbaseStrings.created = this.cast("created")
+}
+

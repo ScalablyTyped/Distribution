@@ -19,9 +19,9 @@ object SortableStartEvent {
     draggableEvent: js.Any = null,
     item: JQuery = null
   ): SortableStartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent)
-    if (item != null) __obj.updateDynamic("item")(item)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableStartEvent]
   }
 }

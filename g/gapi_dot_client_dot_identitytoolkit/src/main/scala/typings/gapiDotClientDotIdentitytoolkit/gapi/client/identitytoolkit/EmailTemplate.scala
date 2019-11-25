@@ -30,12 +30,12 @@ object EmailTemplate {
     subject: String = null
   ): EmailTemplate = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (fromDisplayName != null) __obj.updateDynamic("fromDisplayName")(fromDisplayName)
-    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (fromDisplayName != null) __obj.updateDynamic("fromDisplayName")(fromDisplayName.asInstanceOf[js.Any])
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailTemplate]
   }
 }

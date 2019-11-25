@@ -27,15 +27,15 @@ object LocationConstraintItem {
     uniqueIdType: LocationUniqueIdType = null
   ): LocationConstraintItem = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (locationEmailAddress != null) __obj.updateDynamic("locationEmailAddress")(locationEmailAddress)
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
-    if (locationUri != null) __obj.updateDynamic("locationUri")(locationUri)
-    if (!js.isUndefined(resolveAvailability)) __obj.updateDynamic("resolveAvailability")(resolveAvailability)
-    if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId)
-    if (uniqueIdType != null) __obj.updateDynamic("uniqueIdType")(uniqueIdType)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (locationEmailAddress != null) __obj.updateDynamic("locationEmailAddress")(locationEmailAddress.asInstanceOf[js.Any])
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
+    if (locationUri != null) __obj.updateDynamic("locationUri")(locationUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveAvailability)) __obj.updateDynamic("resolveAvailability")(resolveAvailability.asInstanceOf[js.Any])
+    if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId.asInstanceOf[js.Any])
+    if (uniqueIdType != null) __obj.updateDynamic("uniqueIdType")(uniqueIdType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationConstraintItem]
   }
 }

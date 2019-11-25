@@ -35,10 +35,10 @@ object _SymbolicLink {
     relativePath: String = null
   ): _SymbolicLink = {
     val __obj = js.Dynamic.literal()
-    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath)
-    if (blobId != null) __obj.updateDynamic("blobId")(blobId)
+    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
+    if (blobId != null) __obj.updateDynamic("blobId")(blobId.asInstanceOf[js.Any])
     if (fileMode != null) __obj.updateDynamic("fileMode")(fileMode.asInstanceOf[js.Any])
-    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath)
+    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SymbolicLink]
   }
 }

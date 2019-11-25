@@ -40,7 +40,7 @@ object ReactionsListForPullRequestReviewCommentParams {
     page: Int | Double = null,
     per_page: Int | Double = null
   ): ReactionsListForPullRequestReviewCommentParams = {
-    val __obj = js.Dynamic.literal(comment_id = comment_id, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(comment_id = comment_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

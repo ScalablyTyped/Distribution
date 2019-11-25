@@ -27,12 +27,12 @@ object ProcessResult {
     money_source: Anon_Moneysourcetoken = null,
     next_retry: Int | Double = null
   ): ProcessResult = {
-    val __obj = js.Dynamic.literal(status = status)
-    if (acs_params != null) __obj.updateDynamic("acs_params")(acs_params)
-    if (acs_uri != null) __obj.updateDynamic("acs_uri")(acs_uri)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (invoice_id != null) __obj.updateDynamic("invoice_id")(invoice_id)
-    if (money_source != null) __obj.updateDynamic("money_source")(money_source)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (acs_params != null) __obj.updateDynamic("acs_params")(acs_params.asInstanceOf[js.Any])
+    if (acs_uri != null) __obj.updateDynamic("acs_uri")(acs_uri.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (invoice_id != null) __obj.updateDynamic("invoice_id")(invoice_id.asInstanceOf[js.Any])
+    if (money_source != null) __obj.updateDynamic("money_source")(money_source.asInstanceOf[js.Any])
     if (next_retry != null) __obj.updateDynamic("next_retry")(next_retry.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessResult]
   }

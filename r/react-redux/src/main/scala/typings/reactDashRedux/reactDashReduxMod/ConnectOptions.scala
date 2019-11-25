@@ -69,13 +69,13 @@ object ConnectOptions {
     withRef: js.UndefOr[Boolean] = js.undefined
   ): ConnectOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (getDisplayName != null) __obj.updateDynamic("getDisplayName")(js.Any.fromFunction1(getDisplayName))
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
-    if (renderCountProp != null) __obj.updateDynamic("renderCountProp")(renderCountProp)
-    if (!js.isUndefined(shouldHandleStateChanges)) __obj.updateDynamic("shouldHandleStateChanges")(shouldHandleStateChanges)
-    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey)
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
+    if (renderCountProp != null) __obj.updateDynamic("renderCountProp")(renderCountProp.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldHandleStateChanges)) __obj.updateDynamic("shouldHandleStateChanges")(shouldHandleStateChanges.asInstanceOf[js.Any])
+    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }
 }

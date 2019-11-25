@@ -19,8 +19,8 @@ object DocStructure {
     section_titles: js.Array[SectionTitles] = null
   ): DocStructure = {
     val __obj = js.Dynamic.literal()
-    if (leading_sentences != null) __obj.updateDynamic("leading_sentences")(leading_sentences)
-    if (section_titles != null) __obj.updateDynamic("section_titles")(section_titles)
+    if (leading_sentences != null) __obj.updateDynamic("leading_sentences")(leading_sentences.asInstanceOf[js.Any])
+    if (section_titles != null) __obj.updateDynamic("section_titles")(section_titles.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocStructure]
   }
 }

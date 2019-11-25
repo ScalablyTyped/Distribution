@@ -13,7 +13,7 @@ trait CacheKeyWillBeUsedCallbackParam extends js.Object {
 object CacheKeyWillBeUsedCallbackParam {
   @scala.inline
   def apply(mode: String, request: Request): CacheKeyWillBeUsedCallbackParam = {
-    val __obj = js.Dynamic.literal(mode = mode, request = request)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CacheKeyWillBeUsedCallbackParam]
   }

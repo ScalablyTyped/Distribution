@@ -14,8 +14,8 @@ trait Anon_DELETE extends js.Object {
 object Anon_DELETE {
   @scala.inline
   def apply(method: DELETE, path: String, regex: js.UndefOr[Boolean] = js.undefined): Anon_DELETE = {
-    val __obj = js.Dynamic.literal(method = method, path = path)
-    if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DELETE]
   }
 }

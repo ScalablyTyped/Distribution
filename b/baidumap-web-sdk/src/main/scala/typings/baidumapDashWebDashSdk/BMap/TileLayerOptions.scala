@@ -20,9 +20,9 @@ object TileLayerOptions {
     zIndex: Int | Double = null
   ): TileLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (tileUrlTemplate != null) __obj.updateDynamic("tileUrlTemplate")(tileUrlTemplate)
-    if (!js.isUndefined(transparentPng)) __obj.updateDynamic("transparentPng")(transparentPng)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (tileUrlTemplate != null) __obj.updateDynamic("tileUrlTemplate")(tileUrlTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparentPng)) __obj.updateDynamic("transparentPng")(transparentPng.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileLayerOptions]
   }

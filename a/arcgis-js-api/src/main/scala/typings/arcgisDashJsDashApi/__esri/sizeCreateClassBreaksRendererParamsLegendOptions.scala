@@ -23,8 +23,8 @@ object sizeCreateClassBreaksRendererParamsLegendOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     title: String = null
   ): sizeCreateClassBreaksRendererParamsLegendOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[sizeCreateClassBreaksRendererParamsLegendOptions]
   }
 }

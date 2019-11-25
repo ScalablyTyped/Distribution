@@ -19,10 +19,10 @@ object Envelope {
   @scala.inline
   def apply(bcc: String = null, cc: String = null, from: String = null, to: String = null): Envelope = {
     val __obj = js.Dynamic.literal()
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
-    if (cc != null) __obj.updateDynamic("cc")(cc)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Envelope]
   }
 }

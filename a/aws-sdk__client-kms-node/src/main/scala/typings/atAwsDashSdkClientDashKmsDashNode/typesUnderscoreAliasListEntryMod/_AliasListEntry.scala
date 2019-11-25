@@ -23,9 +23,9 @@ object _AliasListEntry {
   @scala.inline
   def apply(AliasArn: String = null, AliasName: String = null, TargetKeyId: String = null): _AliasListEntry = {
     val __obj = js.Dynamic.literal()
-    if (AliasArn != null) __obj.updateDynamic("AliasArn")(AliasArn)
-    if (AliasName != null) __obj.updateDynamic("AliasName")(AliasName)
-    if (TargetKeyId != null) __obj.updateDynamic("TargetKeyId")(TargetKeyId)
+    if (AliasArn != null) __obj.updateDynamic("AliasArn")(AliasArn.asInstanceOf[js.Any])
+    if (AliasName != null) __obj.updateDynamic("AliasName")(AliasName.asInstanceOf[js.Any])
+    if (TargetKeyId != null) __obj.updateDynamic("TargetKeyId")(TargetKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AliasListEntry]
   }
 }

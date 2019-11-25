@@ -15,8 +15,8 @@ trait UrlData extends js.Object {
 
 object UrlData {
   @scala.inline
-  def apply(host: Anon_Hostname, path: Anon_Base, query: Anon_Params, toString: () => String): UrlData = {
-    val __obj = js.Dynamic.literal(host = host, path = path, query = query, toString = js.Any.fromFunction0(toString))
+  def apply(host: Anon_Hostname, path: Anon_Base, query: Anon_Params): UrlData = {
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UrlData]
   }

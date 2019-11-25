@@ -54,8 +54,8 @@ object TrainingOptions {
     if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
-    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle)
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingOptions]
   }
 }

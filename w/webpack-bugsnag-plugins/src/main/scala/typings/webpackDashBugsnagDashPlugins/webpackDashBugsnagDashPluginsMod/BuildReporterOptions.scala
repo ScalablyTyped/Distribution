@@ -43,10 +43,10 @@ object BuildReporterOptions {
     path: String = null
   ): BuildReporterOptions = {
     val __obj = js.Dynamic.literal()
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildReporterOptions]
   }
 }

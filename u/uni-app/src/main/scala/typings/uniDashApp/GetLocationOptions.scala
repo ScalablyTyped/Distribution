@@ -42,12 +42,12 @@ object GetLocationOptions {
     `type`: String = null
   ): GetLocationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude)
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (!js.isUndefined(geocode)) __obj.updateDynamic("geocode")(geocode)
+    if (!js.isUndefined(geocode)) __obj.updateDynamic("geocode")(geocode.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLocationOptions]
   }
 }

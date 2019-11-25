@@ -11,7 +11,7 @@ trait Anon_TargetGroupArn extends js.Object {
 object Anon_TargetGroupArn {
   @scala.inline
   def apply(targetGroupArn: String): Anon_TargetGroupArn = {
-    val __obj = js.Dynamic.literal(targetGroupArn = targetGroupArn)
+    val __obj = js.Dynamic.literal(targetGroupArn = targetGroupArn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TargetGroupArn]
   }

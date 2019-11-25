@@ -13,9 +13,9 @@ trait Anon_BaseDispIndex extends js.Object {
 object Anon_BaseDispIndex {
   @scala.inline
   def apply(disp: Double, base: Arm64Register = null, index: Arm64Register = null): Anon_BaseDispIndex = {
-    val __obj = js.Dynamic.literal(disp = disp)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (index != null) __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(disp = disp.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseDispIndex]
   }
 }

@@ -13,7 +13,7 @@ trait BeaconHistory extends js.Object {
 object BeaconHistory {
   @scala.inline
   def apply(id: Double, timestamp: Double): BeaconHistory = {
-    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BeaconHistory]
   }

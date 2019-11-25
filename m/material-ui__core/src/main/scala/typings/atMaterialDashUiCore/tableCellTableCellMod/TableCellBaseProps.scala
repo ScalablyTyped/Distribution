@@ -54,38 +54,22 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
-import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
-import typings.react.reactMod.CompositionEvent
 import typings.react.reactMod.CompositionEventHandler
-import typings.react.reactMod.DragEvent
 import typings.react.reactMod.DragEventHandler
-import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
-import typings.react.reactMod.FormEvent
 import typings.react.reactMod.FormEventHandler
-import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
-import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
-import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.PointerEventHandler
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.ReactNode
-import typings.react.reactMod.SyntheticEvent
-import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
-import typings.react.reactMod.TransitionEvent
 import typings.react.reactMod.TransitionEventHandler
-import typings.react.reactMod.UIEvent
 import typings.react.reactMod.UIEventHandler
-import typings.react.reactMod.WheelEvent
 import typings.react.reactMod.WheelEventHandler
-import typings.std.Event
 import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableHeaderCellElement
 import scala.scalajs.js
@@ -94,6 +78,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined react.react.ThHTMLAttributes<std.HTMLTableHeaderCellElement> & react.react.TdHTMLAttributes<std.HTMLTableDataCellElement> */
 trait TableCellBaseProps extends js.Object {
+  var abbr: js.UndefOr[String] = js.undefined
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
   // Standard HTML Attributes
@@ -322,182 +307,258 @@ trait TableCellBaseProps extends js.Object {
   var itemType: js.UndefOr[String] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
   // Media Events
-  var onAbort: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onAbortCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onAnimationEndCapture: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onAnimationIterationCapture: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onAbort: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onAnimationEnd: js.UndefOr[
+    AnimationEventHandler[HTMLTableHeaderCellElement] with AnimationEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onAnimationIteration: js.UndefOr[
+    AnimationEventHandler[HTMLTableHeaderCellElement] with AnimationEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Animation Events
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onAnimationStartCapture: js.UndefOr[AnimationEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onAnimationStart: js.UndefOr[
+    AnimationEventHandler[HTMLTableHeaderCellElement] with AnimationEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // MouseEvents
-  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onAuxClickCapture: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onBeforeInputCapture: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onBlurCapture: js.UndefOr[FocusEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCanPlayCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCanPlayThroughCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onAuxClick: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onBeforeInput: js.UndefOr[
+    FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onBlur: js.UndefOr[
+    FocusEventHandler[HTMLTableHeaderCellElement] with FocusEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onCanPlay: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onCanPlayThrough: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Form Events
-  var onChange: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onChangeCapture: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onClickCapture: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onChange: js.UndefOr[
+    FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onClick: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Composition Events
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCompositionEndCapture: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCompositionStartCapture: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCompositionUpdateCapture: js.UndefOr[CompositionEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onContextMenuCapture: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onCompositionEnd: js.UndefOr[
+    CompositionEventHandler[HTMLTableHeaderCellElement] with CompositionEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onCompositionStart: js.UndefOr[
+    CompositionEventHandler[HTMLTableHeaderCellElement] with CompositionEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onCompositionUpdate: js.UndefOr[
+    CompositionEventHandler[HTMLTableHeaderCellElement] with CompositionEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onContextMenu: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Clipboard Events
-  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCopyCapture: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCut: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onCutCapture: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDoubleClickCapture: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDrag: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragCapture: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragEnd: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragEndCapture: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragEnterCapture: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragExit: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragExitCapture: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragLeaveCapture: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragOverCapture: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragStart: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDragStartCapture: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDrop: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDropCapture: js.UndefOr[DragEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onDurationChangeCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onEmptied: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onEmptiedCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onEncryptedCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onEnded: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onEndedCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onError: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-   // also a Media Event
-  var onErrorCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onCopy: js.UndefOr[
+    ClipboardEventHandler[HTMLTableHeaderCellElement] with ClipboardEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onCut: js.UndefOr[
+    ClipboardEventHandler[HTMLTableHeaderCellElement] with ClipboardEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDoubleClick: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDrag: js.UndefOr[
+    DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDragEnd: js.UndefOr[
+    DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDragEnter: js.UndefOr[
+    DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDragExit: js.UndefOr[
+    DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDragLeave: js.UndefOr[
+    DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDragOver: js.UndefOr[
+    DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDragStart: js.UndefOr[
+    DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDrop: js.UndefOr[
+    DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onDurationChange: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onEmptied: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onEncrypted: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onEnded: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onError: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Focus Events
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onFocusCapture: js.UndefOr[FocusEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onGotPointerCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onGotPointerCaptureCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onInput: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onInputCapture: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onInvalid: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onInvalidCapture: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onFocus: js.UndefOr[
+    FocusEventHandler[HTMLTableHeaderCellElement] with FocusEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onInput: js.UndefOr[
+    FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onInvalid: js.UndefOr[
+    FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
    // also a Media Event
   // Keyboard Events
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onKeyDownCapture: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onKeyPressCapture: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onKeyUpCapture: js.UndefOr[KeyboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onKeyDown: js.UndefOr[
+    KeyboardEventHandler[HTMLTableHeaderCellElement] with KeyboardEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onKeyPress: js.UndefOr[
+    KeyboardEventHandler[HTMLTableHeaderCellElement] with KeyboardEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onKeyUp: js.UndefOr[
+    KeyboardEventHandler[HTMLTableHeaderCellElement] with KeyboardEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Image Events
-  var onLoad: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onLoadCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onLoadStartCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onLoadedDataCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onLoadedMetadataCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onLostPointerCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onLostPointerCaptureCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseDownCapture: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseMoveCapture: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseOutCapture: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseOverCapture: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onMouseUpCapture: js.UndefOr[MouseEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPasteCapture: js.UndefOr[ClipboardEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPause: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPauseCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPlay: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPlayCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPlaying: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPlayingCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerCancelCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onLoad: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onLoadStart: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onLoadedData: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onLoadedMetadata: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onMouseDown: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onMouseEnter: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onMouseLeave: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onMouseMove: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onMouseOut: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onMouseOver: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onMouseUp: js.UndefOr[
+    MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPaste: js.UndefOr[
+    ClipboardEventHandler[HTMLTableHeaderCellElement] with ClipboardEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPause: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPlay: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPlaying: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPointerCancel: js.UndefOr[
+    PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Pointer Events
-  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerDownCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerEnterCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerLeaveCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerMoveCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerOutCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerOverCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onPointerUpCapture: js.UndefOr[PointerEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onProgress: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onProgressCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onRateChange: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onRateChangeCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onReset: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onResetCapture: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onPointerDown: js.UndefOr[
+    PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPointerEnter: js.UndefOr[
+    PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPointerLeave: js.UndefOr[
+    PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPointerMove: js.UndefOr[
+    PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPointerOut: js.UndefOr[
+    PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPointerOver: js.UndefOr[
+    PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onPointerUp: js.UndefOr[
+    PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onProgress: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onRateChange: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onReset: js.UndefOr[
+    FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // UI Events
-  var onScroll: js.UndefOr[UIEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onScrollCapture: js.UndefOr[UIEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onSeeked: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onSeekedCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onSeeking: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onSeekingCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onScroll: js.UndefOr[
+    UIEventHandler[HTMLTableHeaderCellElement] with UIEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onSeeked: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onSeeking: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Selection Events
-  var onSelect: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onSelectCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onStalled: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onStalledCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onSubmit: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onSubmitCapture: js.UndefOr[FormEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onSuspend: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onSuspendCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTimeUpdateCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onSelect: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onStalled: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onSubmit: js.UndefOr[
+    FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onSuspend: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onTimeUpdate: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Touch Events
-  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTouchCancelCapture: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTouchEndCapture: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTouchMoveCapture: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTouchStartCapture: js.UndefOr[TouchEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onTouchCancel: js.UndefOr[
+    TouchEventHandler[HTMLTableHeaderCellElement] with TouchEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onTouchEnd: js.UndefOr[
+    TouchEventHandler[HTMLTableHeaderCellElement] with TouchEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onTouchMove: js.UndefOr[
+    TouchEventHandler[HTMLTableHeaderCellElement] with TouchEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onTouchStart: js.UndefOr[
+    TouchEventHandler[HTMLTableHeaderCellElement] with TouchEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Transition Events
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onTransitionEndCapture: js.UndefOr[TransitionEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onVolumeChangeCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onWaiting: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onWaitingCapture: js.UndefOr[ReactEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onTransitionEnd: js.UndefOr[
+    TransitionEventHandler[HTMLTableHeaderCellElement] with TransitionEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onVolumeChange: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
+  var onWaiting: js.UndefOr[
+    ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   // Wheel Events
-  var onWheel: js.UndefOr[WheelEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
-  var onWheelCapture: js.UndefOr[WheelEventHandler[HTMLTableDataCellElement | HTMLTableHeaderCellElement]] = js.undefined
+  var onWheel: js.UndefOr[
+    WheelEventHandler[HTMLTableHeaderCellElement] with WheelEventHandler[HTMLTableDataCellElement]
+  ] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
@@ -528,6 +589,7 @@ trait TableCellBaseProps extends js.Object {
 object TableCellBaseProps {
   @scala.inline
   def apply(
+    abbr: String = null,
     about: String = null,
     accessKey: String = null,
     align: left | center | right | justify | char = null,
@@ -606,85 +668,85 @@ object TableCellBaseProps {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
-    onAbort: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onAnimationEnd: AnimationEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onAnimationIteration: AnimationEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onAnimationStart: AnimationEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onAuxClick: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onBeforeInput: FormEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onBlur: FocusEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onChange: FormEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onClick: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onCompositionEnd: CompositionEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onCompositionStart: CompositionEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onCompositionUpdate: CompositionEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onContextMenu: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onCopy: ClipboardEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onCut: ClipboardEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onDoubleClick: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onDrag: DragEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onDragEnd: DragEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onDragEnter: DragEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onDragExit: DragEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onDragLeave: DragEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onDragOver: DragEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onDragStart: DragEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onDrop: DragEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onEnded: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onError: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onFocus: FocusEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onInput: FormEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onInvalid: FormEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onKeyDown: KeyboardEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onKeyPress: KeyboardEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onKeyUp: KeyboardEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onMouseDown: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onMouseMove: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onMouseOut: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onMouseOver: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onMouseUp: MouseEvent[HTMLTableHeaderCellElement, NativeMouseEvent] => Unit = null,
-    onPaste: ClipboardEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onPlay: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onPointerCancel: PointerEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onPointerDown: PointerEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onPointerEnter: PointerEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onPointerLeave: PointerEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onPointerMove: PointerEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onPointerOut: PointerEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onPointerOver: PointerEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onPointerUp: PointerEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onReset: FormEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onScroll: UIEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onSelect: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onStalled: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onSubmit: FormEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onTouchCancel: TouchEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onTouchEnd: TouchEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onTouchMove: TouchEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onTouchStart: TouchEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onTransitionEnd: TransitionEvent[HTMLTableHeaderCellElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit = null,
-    onWheel: WheelEvent[HTMLTableHeaderCellElement] => Unit = null,
+    onAbort: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onAnimationEnd: AnimationEventHandler[HTMLTableHeaderCellElement] with AnimationEventHandler[HTMLTableDataCellElement] = null,
+    onAnimationIteration: AnimationEventHandler[HTMLTableHeaderCellElement] with AnimationEventHandler[HTMLTableDataCellElement] = null,
+    onAnimationStart: AnimationEventHandler[HTMLTableHeaderCellElement] with AnimationEventHandler[HTMLTableDataCellElement] = null,
+    onAuxClick: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onBeforeInput: FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement] = null,
+    onBlur: FocusEventHandler[HTMLTableHeaderCellElement] with FocusEventHandler[HTMLTableDataCellElement] = null,
+    onCanPlay: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onCanPlayThrough: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onChange: FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement] = null,
+    onClick: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onCompositionEnd: CompositionEventHandler[HTMLTableHeaderCellElement] with CompositionEventHandler[HTMLTableDataCellElement] = null,
+    onCompositionStart: CompositionEventHandler[HTMLTableHeaderCellElement] with CompositionEventHandler[HTMLTableDataCellElement] = null,
+    onCompositionUpdate: CompositionEventHandler[HTMLTableHeaderCellElement] with CompositionEventHandler[HTMLTableDataCellElement] = null,
+    onContextMenu: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onCopy: ClipboardEventHandler[HTMLTableHeaderCellElement] with ClipboardEventHandler[HTMLTableDataCellElement] = null,
+    onCut: ClipboardEventHandler[HTMLTableHeaderCellElement] with ClipboardEventHandler[HTMLTableDataCellElement] = null,
+    onDoubleClick: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onDrag: DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement] = null,
+    onDragEnd: DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement] = null,
+    onDragEnter: DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement] = null,
+    onDragExit: DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement] = null,
+    onDragLeave: DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement] = null,
+    onDragOver: DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement] = null,
+    onDragStart: DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement] = null,
+    onDrop: DragEventHandler[HTMLTableHeaderCellElement] with DragEventHandler[HTMLTableDataCellElement] = null,
+    onDurationChange: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onEmptied: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onEncrypted: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onEnded: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onError: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onFocus: FocusEventHandler[HTMLTableHeaderCellElement] with FocusEventHandler[HTMLTableDataCellElement] = null,
+    onInput: FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement] = null,
+    onInvalid: FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement] = null,
+    onKeyDown: KeyboardEventHandler[HTMLTableHeaderCellElement] with KeyboardEventHandler[HTMLTableDataCellElement] = null,
+    onKeyPress: KeyboardEventHandler[HTMLTableHeaderCellElement] with KeyboardEventHandler[HTMLTableDataCellElement] = null,
+    onKeyUp: KeyboardEventHandler[HTMLTableHeaderCellElement] with KeyboardEventHandler[HTMLTableDataCellElement] = null,
+    onLoad: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onLoadStart: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onLoadedData: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onLoadedMetadata: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onMouseDown: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onMouseEnter: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onMouseLeave: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onMouseMove: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onMouseOut: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onMouseOver: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onMouseUp: MouseEventHandler[HTMLTableHeaderCellElement] with MouseEventHandler[HTMLTableDataCellElement] = null,
+    onPaste: ClipboardEventHandler[HTMLTableHeaderCellElement] with ClipboardEventHandler[HTMLTableDataCellElement] = null,
+    onPause: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onPlay: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onPlaying: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onPointerCancel: PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement] = null,
+    onPointerDown: PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement] = null,
+    onPointerEnter: PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement] = null,
+    onPointerLeave: PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement] = null,
+    onPointerMove: PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement] = null,
+    onPointerOut: PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement] = null,
+    onPointerOver: PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement] = null,
+    onPointerUp: PointerEventHandler[HTMLTableHeaderCellElement] with PointerEventHandler[HTMLTableDataCellElement] = null,
+    onProgress: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onRateChange: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onReset: FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement] = null,
+    onScroll: UIEventHandler[HTMLTableHeaderCellElement] with UIEventHandler[HTMLTableDataCellElement] = null,
+    onSeeked: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onSeeking: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onSelect: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onStalled: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onSubmit: FormEventHandler[HTMLTableHeaderCellElement] with FormEventHandler[HTMLTableDataCellElement] = null,
+    onSuspend: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onTimeUpdate: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onTouchCancel: TouchEventHandler[HTMLTableHeaderCellElement] with TouchEventHandler[HTMLTableDataCellElement] = null,
+    onTouchEnd: TouchEventHandler[HTMLTableHeaderCellElement] with TouchEventHandler[HTMLTableDataCellElement] = null,
+    onTouchMove: TouchEventHandler[HTMLTableHeaderCellElement] with TouchEventHandler[HTMLTableDataCellElement] = null,
+    onTouchStart: TouchEventHandler[HTMLTableHeaderCellElement] with TouchEventHandler[HTMLTableDataCellElement] = null,
+    onTransitionEnd: TransitionEventHandler[HTMLTableHeaderCellElement] with TransitionEventHandler[HTMLTableDataCellElement] = null,
+    onVolumeChange: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onWaiting: ReactEventHandler[HTMLTableHeaderCellElement] with ReactEventHandler[HTMLTableDataCellElement] = null,
+    onWheel: WheelEventHandler[HTMLTableHeaderCellElement] with WheelEventHandler[HTMLTableDataCellElement] = null,
     placeholder: String = null,
     prefix: String = null,
     property: String = null,
@@ -709,185 +771,186 @@ object TableCellBaseProps {
     vocab: String = null
   ): TableCellBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (about != null) __obj.updateDynamic("about")(about)
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
+    if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
+    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
+    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`)
+    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`)
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
     if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
     if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
     if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`)
+    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`)
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`)
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`)
+    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
+    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`)
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`)
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`)
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`)
+    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`)
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`)
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`)
+    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
+    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
+    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
     if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`)
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`)
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`)
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`)
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`)
+    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
+    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
     if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`)
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`)
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`)
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
     if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
     if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
     if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`)
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
     if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
     if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
     if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
     if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`)
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect)
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave)
+    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
+    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
+    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
+    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable)
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu)
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML)
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype)
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
+    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
+    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is)
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID)
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef)
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope)
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1(onCanPlayThrough))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1(onDragExit))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1(onLoadStart))
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1(onLoadedData))
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1(onLoadedMetadata))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1(onPlaying))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1(onPointerCancel))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1(onPointerDown))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1(onPointerEnter))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1(onPointerLeave))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1(onPointerMove))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1(onPointerOut))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1(onPointerOver))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1(onPointerUp))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
+    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
+    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort.asInstanceOf[js.Any])
+    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd.asInstanceOf[js.Any])
+    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(onAnimationIteration.asInstanceOf[js.Any])
+    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart.asInstanceOf[js.Any])
+    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(onAuxClick.asInstanceOf[js.Any])
+    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput.asInstanceOf[js.Any])
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur.asInstanceOf[js.Any])
+    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(onCanPlay.asInstanceOf[js.Any])
+    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(onCanPlayThrough.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
+    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(onCompositionEnd.asInstanceOf[js.Any])
+    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(onCompositionStart.asInstanceOf[js.Any])
+    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(onCompositionUpdate.asInstanceOf[js.Any])
+    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
+    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy.asInstanceOf[js.Any])
+    if (onCut != null) __obj.updateDynamic("onCut")(onCut.asInstanceOf[js.Any])
+    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick.asInstanceOf[js.Any])
+    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag.asInstanceOf[js.Any])
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter.asInstanceOf[js.Any])
+    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit.asInstanceOf[js.Any])
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave.asInstanceOf[js.Any])
+    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver.asInstanceOf[js.Any])
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
+    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop.asInstanceOf[js.Any])
+    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(onDurationChange.asInstanceOf[js.Any])
+    if (onEmptied != null) __obj.updateDynamic("onEmptied")(onEmptied.asInstanceOf[js.Any])
+    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(onEncrypted.asInstanceOf[js.Any])
+    if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded.asInstanceOf[js.Any])
+    if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus.asInstanceOf[js.Any])
+    if (onInput != null) __obj.updateDynamic("onInput")(onInput.asInstanceOf[js.Any])
+    if (onInvalid != null) __obj.updateDynamic("onInvalid")(onInvalid.asInstanceOf[js.Any])
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown.asInstanceOf[js.Any])
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress.asInstanceOf[js.Any])
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp.asInstanceOf[js.Any])
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart.asInstanceOf[js.Any])
+    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(onLoadedData.asInstanceOf[js.Any])
+    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(onLoadedMetadata.asInstanceOf[js.Any])
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown.asInstanceOf[js.Any])
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter.asInstanceOf[js.Any])
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove.asInstanceOf[js.Any])
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut.asInstanceOf[js.Any])
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver.asInstanceOf[js.Any])
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp.asInstanceOf[js.Any])
+    if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste.asInstanceOf[js.Any])
+    if (onPause != null) __obj.updateDynamic("onPause")(onPause.asInstanceOf[js.Any])
+    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay.asInstanceOf[js.Any])
+    if (onPlaying != null) __obj.updateDynamic("onPlaying")(onPlaying.asInstanceOf[js.Any])
+    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(onPointerCancel.asInstanceOf[js.Any])
+    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(onPointerDown.asInstanceOf[js.Any])
+    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(onPointerEnter.asInstanceOf[js.Any])
+    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(onPointerLeave.asInstanceOf[js.Any])
+    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(onPointerMove.asInstanceOf[js.Any])
+    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(onPointerOut.asInstanceOf[js.Any])
+    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(onPointerOver.asInstanceOf[js.Any])
+    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(onPointerUp.asInstanceOf[js.Any])
+    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress.asInstanceOf[js.Any])
+    if (onRateChange != null) __obj.updateDynamic("onRateChange")(onRateChange.asInstanceOf[js.Any])
+    if (onReset != null) __obj.updateDynamic("onReset")(onReset.asInstanceOf[js.Any])
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll.asInstanceOf[js.Any])
+    if (onSeeked != null) __obj.updateDynamic("onSeeked")(onSeeked.asInstanceOf[js.Any])
+    if (onSeeking != null) __obj.updateDynamic("onSeeking")(onSeeking.asInstanceOf[js.Any])
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
+    if (onStalled != null) __obj.updateDynamic("onStalled")(onStalled.asInstanceOf[js.Any])
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit.asInstanceOf[js.Any])
+    if (onSuspend != null) __obj.updateDynamic("onSuspend")(onSuspend.asInstanceOf[js.Any])
+    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(onTimeUpdate.asInstanceOf[js.Any])
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel.asInstanceOf[js.Any])
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd.asInstanceOf[js.Any])
+    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange.asInstanceOf[js.Any])
+    if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting.asInstanceOf[js.Any])
+    if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (security != null) __obj.updateDynamic("security")(security)
-    if (slot != null) __obj.updateDynamic("slot")(slot)
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning)
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (typeof != null) __obj.updateDynamic("typeof")(typeof)
+    if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
-    if (vocab != null) __obj.updateDynamic("vocab")(vocab)
+    if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellBaseProps]
   }
 }

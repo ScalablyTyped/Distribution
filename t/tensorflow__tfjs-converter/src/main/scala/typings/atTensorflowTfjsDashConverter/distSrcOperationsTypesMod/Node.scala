@@ -36,8 +36,8 @@ object Node {
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify tensorflow.IAttrValue */ js.Any
     ] = null
   ): Node = {
-    val __obj = js.Dynamic.literal(attrParams = attrParams, category = category, children = children, inputNames = inputNames, inputParams = inputParams, inputs = inputs, name = name, op = op)
-    if (rawAttrs != null) __obj.updateDynamic("rawAttrs")(rawAttrs)
+    val __obj = js.Dynamic.literal(attrParams = attrParams.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], inputNames = inputNames.asInstanceOf[js.Any], inputParams = inputParams.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
+    if (rawAttrs != null) __obj.updateDynamic("rawAttrs")(rawAttrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

@@ -1,10 +1,6 @@
 package typings.dojo.dojox.layout
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit.layout._LayoutWidget
 import typings.dojo.dojoStrings.ChildWidgetProperties
 import typings.dojo.dojoStrings.cols
@@ -113,18 +109,74 @@ class TableContainer_ () extends _LayoutWidget {
   @JSName("set")
   def set_spacing(property: spacing, value: Double): Unit = js.native
   @JSName("watch")
-  def watch_ChildWidgetProperties(property: ChildWidgetProperties, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_ChildWidgetProperties(
+    property: ChildWidgetProperties,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_cols(property: cols, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_cols(
+    property: cols,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_customClass(property: customClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_customClass(
+    property: customClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_labelWidth(property: labelWidth, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_labelWidth(
+    property: labelWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_orientation(property: orientation, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_orientation(
+    property: orientation,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_showLabels(property: showLabels, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_showLabels(
+    property: showLabels,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_spacing(property: spacing, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_spacing(
+    property: spacing,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

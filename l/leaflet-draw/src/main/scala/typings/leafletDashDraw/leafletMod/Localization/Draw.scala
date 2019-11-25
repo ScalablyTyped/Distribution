@@ -12,7 +12,7 @@ trait Draw extends js.Object {
 object Draw {
   @scala.inline
   def apply(handlers: DrawHandlers, toolbar: typings.leafletDashDraw.leafletMod.Localization.DrawToolbar): Draw = {
-    val __obj = js.Dynamic.literal(handlers = handlers, toolbar = toolbar)
+    val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any], toolbar = toolbar.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Draw]
   }

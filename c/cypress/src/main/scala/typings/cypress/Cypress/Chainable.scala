@@ -46,7 +46,7 @@ import typings.cypress.cypressStrings.aside
 import typings.cypress.cypressStrings.audio
 import typings.cypress.cypressStrings.auxclick
 import typings.cypress.cypressStrings.b
-import typings.cypress.cypressStrings.base
+import typings.cypress.cypressStrings.base_
 import typings.cypress.cypressStrings.basefont
 import typings.cypress.cypressStrings.bdi
 import typings.cypress.cypressStrings.bdo
@@ -203,7 +203,7 @@ import typings.cypress.cypressStrings.head
 import typings.cypress.cypressStrings.header
 import typings.cypress.cypressStrings.hgroup
 import typings.cypress.cypressStrings.hr
-import typings.cypress.cypressStrings.html
+import typings.cypress.cypressStrings.html_
 import typings.cypress.cypressStrings.i
 import typings.cypress.cypressStrings.iframe
 import typings.cypress.cypressStrings.img
@@ -358,7 +358,7 @@ import typings.cypress.cypressStrings.pointerout
 import typings.cypress.cypressStrings.pointerover
 import typings.cypress.cypressStrings.pointerup
 import typings.cypress.cypressStrings.pre
-import typings.cypress.cypressStrings.progress
+import typings.cypress.cypressStrings.progress_
 import typings.cypress.cypressStrings.q
 import typings.cypress.cypressStrings.ratechange
 import typings.cypress.cypressStrings.readystatechange
@@ -3990,9 +3990,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("children")
   def children_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("children")
-  def children_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def children_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("children")
-  def children_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def children_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("children")
   def children_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("children")
@@ -4170,9 +4170,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("children")
   def children_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("children")
-  def children_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def children_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("children")
-  def children_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def children_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("children")
   def children_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("children")
@@ -4286,9 +4286,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("children")
   def children_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("children")
-  def children_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def children_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("children")
-  def children_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def children_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("children")
   def children_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("children")
@@ -4622,9 +4622,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("closest")
   def closest_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("closest")
-  def closest_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def closest_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("closest")
-  def closest_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def closest_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("closest")
   def closest_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("closest")
@@ -4802,9 +4802,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("closest")
   def closest_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("closest")
-  def closest_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def closest_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("closest")
-  def closest_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def closest_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("closest")
   def closest_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("closest")
@@ -4918,9 +4918,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("closest")
   def closest_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("closest")
-  def closest_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def closest_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("closest")
-  def closest_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def closest_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("closest")
   def closest_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("closest")
@@ -5230,17 +5230,17 @@ trait Chainable[Subject] extends js.Object {
   @JSName("contains")
   def contains_b(selector: b, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("contains")
-  def contains_base(selector: base, text: String): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def contains_base(selector: base_, text: String): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("contains")
-  def contains_base(selector: base, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def contains_base(selector: base_, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("contains")
-  def contains_base(selector: base, text: Double): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def contains_base(selector: base_, text: Double): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("contains")
-  def contains_base(selector: base, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def contains_base(selector: base_, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("contains")
-  def contains_base(selector: base, text: RegExp): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def contains_base(selector: base_, text: RegExp): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("contains")
-  def contains_base(selector: base, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def contains_base(selector: base_, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("contains")
   def contains_basefont(selector: basefont, text: String): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("contains")
@@ -5770,17 +5770,17 @@ trait Chainable[Subject] extends js.Object {
   @JSName("contains")
   def contains_hr(selector: hr, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("contains")
-  def contains_html(selector: html, text: String): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def contains_html(selector: html_, text: String): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("contains")
-  def contains_html(selector: html, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def contains_html(selector: html_, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("contains")
-  def contains_html(selector: html, text: Double): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def contains_html(selector: html_, text: Double): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("contains")
-  def contains_html(selector: html, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def contains_html(selector: html_, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("contains")
-  def contains_html(selector: html, text: RegExp): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def contains_html(selector: html_, text: RegExp): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("contains")
-  def contains_html(selector: html, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def contains_html(selector: html_, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("contains")
   def contains_i(selector: i, text: String): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("contains")
@@ -6118,17 +6118,17 @@ trait Chainable[Subject] extends js.Object {
   @JSName("contains")
   def contains_pre(selector: pre, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("contains")
-  def contains_progress(selector: progress, text: String): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def contains_progress(selector: progress_, text: String): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("contains")
-  def contains_progress(selector: progress, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def contains_progress(selector: progress_, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("contains")
-  def contains_progress(selector: progress, text: Double): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def contains_progress(selector: progress_, text: Double): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("contains")
-  def contains_progress(selector: progress, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def contains_progress(selector: progress_, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("contains")
-  def contains_progress(selector: progress, text: RegExp): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def contains_progress(selector: progress_, text: RegExp): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("contains")
-  def contains_progress(selector: progress, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def contains_progress(selector: progress_, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("contains")
   def contains_q(selector: q, text: String): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("contains")
@@ -6693,9 +6693,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("filter")
   def filter_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("filter")
-  def filter_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def filter_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("filter")
-  def filter_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def filter_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("filter")
   def filter_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("filter")
@@ -6873,9 +6873,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("filter")
   def filter_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("filter")
-  def filter_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def filter_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("filter")
-  def filter_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def filter_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("filter")
   def filter_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("filter")
@@ -6989,9 +6989,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("filter")
   def filter_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("filter")
-  def filter_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def filter_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("filter")
-  def filter_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def filter_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("filter")
   def filter_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("filter")
@@ -7186,9 +7186,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("find")
   def find_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
-  def find_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def find_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("find")
-  def find_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def find_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("find")
   def find_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("find")
@@ -7366,9 +7366,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("find")
   def find_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("find")
-  def find_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def find_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("find")
-  def find_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def find_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("find")
   def find_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("find")
@@ -7482,9 +7482,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("find")
   def find_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("find")
-  def find_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def find_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("find")
-  def find_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def find_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("find")
   def find_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("find")
@@ -7756,9 +7756,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("get")
   def get_b(selector: b, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("get")
-  def get_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def get_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("get")
-  def get_base(selector: base, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def get_base(selector: base_, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("get")
   def get_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("get")
@@ -7936,9 +7936,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("get")
   def get_hr(selector: hr, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("get")
-  def get_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def get_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("get")
-  def get_html(selector: html, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def get_html(selector: html_, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("get")
   def get_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("get")
@@ -8052,9 +8052,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("get")
   def get_pre(selector: pre, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("get")
-  def get_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def get_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("get")
-  def get_progress(selector: progress, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def get_progress(selector: progress_, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("get")
   def get_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("get")
@@ -8232,7 +8232,9 @@ trait Chainable[Subject] extends js.Object {
     *    // Drill into nested properties by using dot notation
     *    cy.wrap({foo: {bar: {baz: 1}}}).its('foo.bar.baz')
     */
-  def its[K /* <: String */](propertyName: K): Chainable[/* import warning: ImportType.apply Failed type conversion: Subject[K] */ js.Any] = js.native
+  def its[K /* <: String */](propertyName: K): Chainable[
+    /* import warning: importer.ImportType#apply Failed type conversion: Subject[K] */ js.Any
+  ] = js.native
   /**
     * Get the last DOM element within a set of DOM elements.
     *
@@ -8341,9 +8343,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextAll")
   def nextAll_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextAll")
-  def nextAll_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def nextAll_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("nextAll")
-  def nextAll_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def nextAll_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("nextAll")
   def nextAll_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("nextAll")
@@ -8521,9 +8523,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextAll")
   def nextAll_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("nextAll")
-  def nextAll_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def nextAll_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("nextAll")
-  def nextAll_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def nextAll_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("nextAll")
   def nextAll_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextAll")
@@ -8637,9 +8639,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextAll")
   def nextAll_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("nextAll")
-  def nextAll_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def nextAll_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("nextAll")
-  def nextAll_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def nextAll_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("nextAll")
   def nextAll_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("nextAll")
@@ -8836,9 +8838,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextUntil")
   def nextUntil_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def nextUntil_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def nextUntil_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("nextUntil")
@@ -9016,9 +9018,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextUntil")
   def nextUntil_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def nextUntil_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def nextUntil_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
@@ -9132,9 +9134,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextUntil")
   def nextUntil_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def nextUntil_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def nextUntil_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("nextUntil")
@@ -9317,9 +9319,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("next")
   def next_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("next")
-  def next_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def next_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("next")
-  def next_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def next_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("next")
   def next_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("next")
@@ -9497,9 +9499,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("next")
   def next_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("next")
-  def next_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def next_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("next")
-  def next_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def next_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("next")
   def next_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("next")
@@ -9613,9 +9615,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("next")
   def next_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("next")
-  def next_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def next_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("next")
-  def next_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def next_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("next")
   def next_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("next")
@@ -10530,9 +10532,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parent")
   def parent_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("parent")
-  def parent_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def parent_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("parent")
-  def parent_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def parent_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("parent")
   def parent_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("parent")
@@ -10710,9 +10712,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parent")
   def parent_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("parent")
-  def parent_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def parent_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("parent")
-  def parent_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def parent_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("parent")
   def parent_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("parent")
@@ -10826,9 +10828,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parent")
   def parent_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("parent")
-  def parent_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def parent_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("parent")
-  def parent_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def parent_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("parent")
   def parent_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("parent")
@@ -11062,11 +11064,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parentsUntil")
   def parentsUntil_b(selector: b, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def parentsUntil_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_base(selector: base, filter: String): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def parentsUntil_base(selector: base_, filter: String): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_base(selector: base, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def parentsUntil_base(selector: base_, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("parentsUntil")
   def parentsUntil_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("parentsUntil")
@@ -11332,11 +11334,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parentsUntil")
   def parentsUntil_hr(selector: hr, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def parentsUntil_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_html(selector: html, filter: String): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def parentsUntil_html(selector: html_, filter: String): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_html(selector: html, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def parentsUntil_html(selector: html_, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("parentsUntil")
   def parentsUntil_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("parentsUntil")
@@ -11506,11 +11508,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parentsUntil")
   def parentsUntil_pre(selector: pre, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def parentsUntil_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_progress(selector: progress, filter: String): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def parentsUntil_progress(selector: progress_, filter: String): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_progress(selector: progress, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def parentsUntil_progress(selector: progress_, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("parentsUntil")
   def parentsUntil_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("parentsUntil")
@@ -11763,9 +11765,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parents")
   def parents_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("parents")
-  def parents_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def parents_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("parents")
-  def parents_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def parents_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("parents")
   def parents_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("parents")
@@ -11943,9 +11945,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parents")
   def parents_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("parents")
-  def parents_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def parents_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("parents")
-  def parents_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def parents_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("parents")
   def parents_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("parents")
@@ -12059,9 +12061,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parents")
   def parents_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("parents")
-  def parents_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def parents_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("parents")
-  def parents_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def parents_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("parents")
   def parents_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("parents")
@@ -12287,9 +12289,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevAll")
   def prevAll_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("prevAll")
-  def prevAll_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def prevAll_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("prevAll")
-  def prevAll_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def prevAll_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("prevAll")
   def prevAll_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("prevAll")
@@ -12467,9 +12469,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevAll")
   def prevAll_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("prevAll")
-  def prevAll_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def prevAll_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("prevAll")
-  def prevAll_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def prevAll_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("prevAll")
   def prevAll_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("prevAll")
@@ -12583,9 +12585,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevAll")
   def prevAll_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("prevAll")
-  def prevAll_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def prevAll_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("prevAll")
-  def prevAll_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def prevAll_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("prevAll")
   def prevAll_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("prevAll")
@@ -12808,11 +12810,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevUntil")
   def prevUntil_b(selector: b, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def prevUntil_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_base(selector: base, filter: String): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def prevUntil_base(selector: base_, filter: String): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_base(selector: base, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def prevUntil_base(selector: base_, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("prevUntil")
   def prevUntil_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("prevUntil")
@@ -13078,11 +13080,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevUntil")
   def prevUntil_hr(selector: hr, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def prevUntil_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_html(selector: html, filter: String): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def prevUntil_html(selector: html_, filter: String): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_html(selector: html, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def prevUntil_html(selector: html_, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("prevUntil")
   def prevUntil_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("prevUntil")
@@ -13252,11 +13254,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevUntil")
   def prevUntil_pre(selector: pre, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def prevUntil_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_progress(selector: progress, filter: String): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def prevUntil_progress(selector: progress_, filter: String): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_progress(selector: progress, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def prevUntil_progress(selector: progress_, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("prevUntil")
   def prevUntil_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("prevUntil")
@@ -13511,9 +13513,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prev")
   def prev_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("prev")
-  def prev_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def prev_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("prev")
-  def prev_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def prev_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("prev")
   def prev_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("prev")
@@ -13691,9 +13693,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prev")
   def prev_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("prev")
-  def prev_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def prev_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("prev")
-  def prev_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def prev_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("prev")
   def prev_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("prev")
@@ -13807,9 +13809,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prev")
   def prev_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("prev")
-  def prev_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def prev_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("prev")
-  def prev_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def prev_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("prev")
   def prev_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("prev")
@@ -17734,9 +17736,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("siblings")
   def siblings_b(selector: b, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("siblings")
-  def siblings_base(selector: base): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def siblings_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("siblings")
-  def siblings_base(selector: base, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def siblings_base(selector: base_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("siblings")
   def siblings_basefont(selector: basefont): Chainable[JQuery[HTMLBaseFontElement]] = js.native
   @JSName("siblings")
@@ -17914,9 +17916,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("siblings")
   def siblings_hr(selector: hr, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("siblings")
-  def siblings_html(selector: html): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def siblings_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("siblings")
-  def siblings_html(selector: html, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def siblings_html(selector: html_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("siblings")
   def siblings_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("siblings")
@@ -18030,9 +18032,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("siblings")
   def siblings_pre(selector: pre, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("siblings")
-  def siblings_progress(selector: progress): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def siblings_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("siblings")
-  def siblings_progress(selector: progress, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def siblings_progress(selector: progress_, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("siblings")
   def siblings_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("siblings")
@@ -19827,25 +19829,25 @@ trait Chainable[Subject] extends js.Object {
     options: Partial[TriggerOptions with ObjectLike with PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
-  def trigger_progress(eventName: progress): Chainable[Subject] = js.native
+  def trigger_progress(eventName: progress_): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(
-    eventName: progress,
+    eventName: progress_,
     options: Partial[TriggerOptions with ObjectLike with ProgressEvent[EventTarget]]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
-  def trigger_progress(eventName: progress, position: PositionType): Chainable[Subject] = js.native
+  def trigger_progress(eventName: progress_, position: PositionType): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(
-    eventName: progress,
+    eventName: progress_,
     position: PositionType,
     options: Partial[TriggerOptions with ObjectLike with ProgressEvent[EventTarget]]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
-  def trigger_progress(eventName: progress, x: Double, y: Double): Chainable[Subject] = js.native
+  def trigger_progress(eventName: progress_, x: Double, y: Double): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(
-    eventName: progress,
+    eventName: progress_,
     x: Double,
     y: Double,
     options: Partial[TriggerOptions with ObjectLike with ProgressEvent[EventTarget]]

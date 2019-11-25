@@ -24,8 +24,8 @@ object PointerEvent {
     target: js.Any,
     `type`: String
   ): PointerEvent = {
-    val __obj = js.Dynamic.literal(features = features, lngLat = lngLat, point = point, srcEvent = srcEvent, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], lngLat = lngLat.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], srcEvent = srcEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerEvent]
   }
 }

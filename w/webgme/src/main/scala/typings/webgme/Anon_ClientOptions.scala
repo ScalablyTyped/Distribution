@@ -20,7 +20,7 @@ trait Anon_ClientOptions extends js.Object {
 object Anon_ClientOptions {
   @scala.inline
   def apply(clientOptions: js.Any, serverOptions: js.Any): Anon_ClientOptions = {
-    val __obj = js.Dynamic.literal(clientOptions = clientOptions, serverOptions = serverOptions)
+    val __obj = js.Dynamic.literal(clientOptions = clientOptions.asInstanceOf[js.Any], serverOptions = serverOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClientOptions]
   }

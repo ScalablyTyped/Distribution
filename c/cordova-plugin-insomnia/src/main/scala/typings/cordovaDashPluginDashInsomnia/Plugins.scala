@@ -12,7 +12,7 @@ trait Plugins extends js.Object {
 object Plugins {
   @scala.inline
   def apply(insomnia: Insomnia): Plugins = {
-    val __obj = js.Dynamic.literal(insomnia = insomnia)
+    val __obj = js.Dynamic.literal(insomnia = insomnia.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Plugins]
   }

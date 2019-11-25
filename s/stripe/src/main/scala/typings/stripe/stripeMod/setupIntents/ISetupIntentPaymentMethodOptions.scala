@@ -16,7 +16,7 @@ object ISetupIntentPaymentMethodOptions {
   @scala.inline
   def apply(card: Anon_Any = null): ISetupIntentPaymentMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (card != null) __obj.updateDynamic("card")(card)
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetupIntentPaymentMethodOptions]
   }
 }

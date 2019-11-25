@@ -12,7 +12,7 @@ trait TreePath extends js.Object {
 object TreePath {
   @scala.inline
   def apply(path: NumberOrStringArray): TreePath = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TreePath]
   }

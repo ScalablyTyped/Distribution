@@ -13,7 +13,7 @@ object TestSuite {
   @scala.inline
   def apply(testCases: js.Array[TestCase] = null): TestSuite = {
     val __obj = js.Dynamic.literal()
-    if (testCases != null) __obj.updateDynamic("testCases")(testCases)
+    if (testCases != null) __obj.updateDynamic("testCases")(testCases.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSuite]
   }
 }

@@ -12,7 +12,7 @@ trait AwsRole extends js.Object {
 object AwsRole {
   @scala.inline
   def apply(aws_role_arn: String): AwsRole = {
-    val __obj = js.Dynamic.literal(aws_role_arn = aws_role_arn)
+    val __obj = js.Dynamic.literal(aws_role_arn = aws_role_arn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AwsRole]
   }

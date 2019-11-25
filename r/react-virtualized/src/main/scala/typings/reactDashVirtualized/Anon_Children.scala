@@ -25,7 +25,7 @@ object Anon_Children {
     columnMinWidth: Requireable[Double],
     width: Validator[Double]
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children, columnCount = columnCount, columnMaxWidth = columnMaxWidth, columnMinWidth = columnMinWidth, width = width)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], columnMaxWidth = columnMaxWidth.asInstanceOf[js.Any], columnMinWidth = columnMinWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Children]
   }

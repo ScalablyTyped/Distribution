@@ -41,12 +41,12 @@ object Contract {
     id: String = null
   ): Contract = {
     val __obj = js.Dynamic.literal()
-    if (contractType != null) __obj.updateDynamic("contractType")(contractType)
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
-    if (defaultDomainName != null) __obj.updateDynamic("defaultDomainName")(defaultDomainName)
-    if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (contractType != null) __obj.updateDynamic("contractType")(contractType.asInstanceOf[js.Any])
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
+    if (defaultDomainName != null) __obj.updateDynamic("defaultDomainName")(defaultDomainName.asInstanceOf[js.Any])
+    if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contract]
   }
 }

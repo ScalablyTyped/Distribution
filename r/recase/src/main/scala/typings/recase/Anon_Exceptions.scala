@@ -13,7 +13,7 @@ object Anon_Exceptions {
   @scala.inline
   def apply(exceptions: StringDictionary[String] = null): Anon_Exceptions = {
     val __obj = js.Dynamic.literal()
-    if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions)
+    if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Exceptions]
   }
 }

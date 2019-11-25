@@ -14,9 +14,9 @@ object ThumbsOptions {
   @scala.inline
   def apply(slideThumbActiveClass: String = null, swiper: Swiper = null, thumbsContainerClass: String = null): ThumbsOptions = {
     val __obj = js.Dynamic.literal()
-    if (slideThumbActiveClass != null) __obj.updateDynamic("slideThumbActiveClass")(slideThumbActiveClass)
-    if (swiper != null) __obj.updateDynamic("swiper")(swiper)
-    if (thumbsContainerClass != null) __obj.updateDynamic("thumbsContainerClass")(thumbsContainerClass)
+    if (slideThumbActiveClass != null) __obj.updateDynamic("slideThumbActiveClass")(slideThumbActiveClass.asInstanceOf[js.Any])
+    if (swiper != null) __obj.updateDynamic("swiper")(swiper.asInstanceOf[js.Any])
+    if (thumbsContainerClass != null) __obj.updateDynamic("thumbsContainerClass")(thumbsContainerClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbsOptions]
   }
 }

@@ -13,7 +13,7 @@ trait ICloseEventDetails extends js.Object {
 object ICloseEventDetails {
   @scala.inline
   def apply(code: Double, reason: String, wasClean: Boolean): ICloseEventDetails = {
-    val __obj = js.Dynamic.literal(code = code, reason = reason, wasClean = wasClean)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], wasClean = wasClean.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICloseEventDetails]
   }

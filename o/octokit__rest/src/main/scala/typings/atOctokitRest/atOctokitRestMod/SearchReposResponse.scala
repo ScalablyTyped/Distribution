@@ -13,7 +13,7 @@ trait SearchReposResponse extends js.Object {
 object SearchReposResponse {
   @scala.inline
   def apply(incomplete_results: Boolean, items: js.Array[SearchReposResponseItemsItem], total_count: Double): SearchReposResponse = {
-    val __obj = js.Dynamic.literal(incomplete_results = incomplete_results, items = items, total_count = total_count)
+    val __obj = js.Dynamic.literal(incomplete_results = incomplete_results.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchReposResponse]
   }

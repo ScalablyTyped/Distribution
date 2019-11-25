@@ -12,7 +12,7 @@ trait Anon_PrefixClsWrapLabel extends js.Object {
 object Anon_PrefixClsWrapLabel {
   @scala.inline
   def apply(prefixCls: String, wrapLabel: Boolean): Anon_PrefixClsWrapLabel = {
-    val __obj = js.Dynamic.literal(prefixCls = prefixCls, wrapLabel = wrapLabel)
+    val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], wrapLabel = wrapLabel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrefixClsWrapLabel]
   }

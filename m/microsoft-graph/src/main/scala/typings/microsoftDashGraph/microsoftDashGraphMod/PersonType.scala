@@ -15,8 +15,8 @@ object PersonType {
   @scala.inline
   def apply(`class`: String = null, subclass: String = null): PersonType = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (subclass != null) __obj.updateDynamic("subclass")(subclass)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (subclass != null) __obj.updateDynamic("subclass")(subclass.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonType]
   }
 }

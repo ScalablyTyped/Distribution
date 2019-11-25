@@ -69,12 +69,12 @@ object LoadOptions {
     weightPathPrefix: String = null
   ): LoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (fetchFunc != null) __obj.updateDynamic("fetchFunc")(fetchFunc)
-    if (!js.isUndefined(fromTFHub)) __obj.updateDynamic("fromTFHub")(fromTFHub)
+    if (fetchFunc != null) __obj.updateDynamic("fetchFunc")(fetchFunc.asInstanceOf[js.Any])
+    if (!js.isUndefined(fromTFHub)) __obj.updateDynamic("fromTFHub")(fromTFHub.asInstanceOf[js.Any])
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (requestInit != null) __obj.updateDynamic("requestInit")(requestInit)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (weightPathPrefix != null) __obj.updateDynamic("weightPathPrefix")(weightPathPrefix)
+    if (requestInit != null) __obj.updateDynamic("requestInit")(requestInit.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (weightPathPrefix != null) __obj.updateDynamic("weightPathPrefix")(weightPathPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOptions]
   }
 }

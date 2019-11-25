@@ -13,7 +13,7 @@ object FolderOperationError {
   @scala.inline
   def apply(errorMessageId: String = null): FolderOperationError = {
     val __obj = js.Dynamic.literal()
-    if (errorMessageId != null) __obj.updateDynamic("errorMessageId")(errorMessageId)
+    if (errorMessageId != null) __obj.updateDynamic("errorMessageId")(errorMessageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderOperationError]
   }
 }

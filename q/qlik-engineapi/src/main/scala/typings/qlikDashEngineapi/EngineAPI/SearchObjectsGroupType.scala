@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SearchObjectsGroupType extends js.Object
 
+object SearchObjectsGroupType {
+  @scala.inline
+  def DatasetType: typings.qlikDashEngineapi.qlikDashEngineapiStrings.DatasetType = this.cast("DatasetType")
+  @scala.inline
+  def GenericObjectsType: typings.qlikDashEngineapi.qlikDashEngineapiStrings.GenericObjectsType = this.cast("GenericObjectsType")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

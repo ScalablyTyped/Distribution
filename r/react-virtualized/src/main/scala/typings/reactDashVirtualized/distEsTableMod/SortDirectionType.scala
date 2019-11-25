@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SortDirectionType extends js.Object
 
+object SortDirectionType {
+  @scala.inline
+  def ASC: typings.reactDashVirtualized.reactDashVirtualizedStrings.ASC = this.cast("ASC")
+  @scala.inline
+  def DESC: typings.reactDashVirtualized.reactDashVirtualizedStrings.DESC = this.cast("DESC")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

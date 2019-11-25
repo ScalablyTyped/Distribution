@@ -17,9 +17,9 @@ object Correction {
   @scala.inline
   def apply(contexts: js.Array[ServingContext] = null, details: js.Array[String] = null, `type`: String = null): Correction = {
     val __obj = js.Dynamic.literal()
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Correction]
   }
 }

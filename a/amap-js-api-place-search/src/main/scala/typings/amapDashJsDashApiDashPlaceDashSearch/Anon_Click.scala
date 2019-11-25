@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 trait Anon_Click extends js.Object {
   var lastSelected: SelectChangeEventData | (SelectChangeEvent[
     markerClick | listElementClick, 
-    (/* import warning: ImportType.apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
+    (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
   ]) | Null
   var selected: SelectChangeEventData | (SelectChangeEvent[
     markerClick | listElementClick, 
-    (/* import warning: ImportType.apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
+    (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
   ])
 }
 
@@ -25,11 +25,11 @@ object Anon_Click {
   def apply(
     selected: SelectChangeEventData | (SelectChangeEvent[
       markerClick | listElementClick, 
-      (/* import warning: ImportType.apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
+      (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
     ]),
     lastSelected: SelectChangeEventData | (SelectChangeEvent[
       markerClick | listElementClick, 
-      (/* import warning: ImportType.apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
+      (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
     ]) = null
   ): Anon_Click = {
     val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])

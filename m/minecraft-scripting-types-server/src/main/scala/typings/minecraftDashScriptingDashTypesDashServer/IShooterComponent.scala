@@ -22,8 +22,8 @@ trait IShooterComponent extends js.Object {
 object IShooterComponent {
   @scala.inline
   def apply(auxVal: Double, `def`: String): IShooterComponent = {
-    val __obj = js.Dynamic.literal(auxVal = auxVal)
-    __obj.updateDynamic("def")(`def`)
+    val __obj = js.Dynamic.literal(auxVal = auxVal.asInstanceOf[js.Any])
+    __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShooterComponent]
   }
 }

@@ -35,10 +35,10 @@ object DataSourceColumn {
     sortOrder: typings.ejDotWebDotAll.ej.PivotAnalysis.SortOrder | String = null
   ): DataSourceColumn = {
     val __obj = js.Dynamic.literal()
-    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption)
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems)
-    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets)
+    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption.asInstanceOf[js.Any])
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceColumn]
   }

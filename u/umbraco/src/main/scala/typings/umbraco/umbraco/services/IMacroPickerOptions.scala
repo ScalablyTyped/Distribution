@@ -15,7 +15,7 @@ trait IMacroPickerOptions extends js.Object {
 object IMacroPickerOptions {
   @scala.inline
   def apply(callback: js.Function): IMacroPickerOptions = {
-    val __obj = js.Dynamic.literal(callback = callback)
+    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMacroPickerOptions]
   }

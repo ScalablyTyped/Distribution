@@ -38,19 +38,19 @@ object Anon_Dragging {
     `type`: String = null
   ): Anon_Dragging = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging)
+    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.asInstanceOf[js.Any])
     if (drillThroughMaxRows != null) __obj.updateDynamic("drillThroughMaxRows")(drillThroughMaxRows.asInstanceOf[js.Any])
-    if (grandTotalsPosition != null) __obj.updateDynamic("grandTotalsPosition")(grandTotalsPosition)
-    if (!js.isUndefined(showAutoCalculationBar)) __obj.updateDynamic("showAutoCalculationBar")(showAutoCalculationBar)
-    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter)
-    if (showGrandTotals != null) __obj.updateDynamic("showGrandTotals")(showGrandTotals)
-    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders)
-    if (!js.isUndefined(showHierarchies)) __obj.updateDynamic("showHierarchies")(showHierarchies)
-    if (!js.isUndefined(showHierarchyCaptions)) __obj.updateDynamic("showHierarchyCaptions")(showHierarchyCaptions)
-    if (!js.isUndefined(showReportFiltersArea)) __obj.updateDynamic("showReportFiltersArea")(showReportFiltersArea)
-    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (grandTotalsPosition != null) __obj.updateDynamic("grandTotalsPosition")(grandTotalsPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAutoCalculationBar)) __obj.updateDynamic("showAutoCalculationBar")(showAutoCalculationBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter.asInstanceOf[js.Any])
+    if (showGrandTotals != null) __obj.updateDynamic("showGrandTotals")(showGrandTotals.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHierarchies)) __obj.updateDynamic("showHierarchies")(showHierarchies.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHierarchyCaptions)) __obj.updateDynamic("showHierarchyCaptions")(showHierarchyCaptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(showReportFiltersArea)) __obj.updateDynamic("showReportFiltersArea")(showReportFiltersArea.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Dragging]
   }
 }

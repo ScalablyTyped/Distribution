@@ -12,7 +12,7 @@ object InappproductsInsertRequest {
   @scala.inline
   def apply(inappproduct: InAppProduct = null): InappproductsInsertRequest = {
     val __obj = js.Dynamic.literal()
-    if (inappproduct != null) __obj.updateDynamic("inappproduct")(inappproduct)
+    if (inappproduct != null) __obj.updateDynamic("inappproduct")(inappproduct.asInstanceOf[js.Any])
     __obj.asInstanceOf[InappproductsInsertRequest]
   }
 }

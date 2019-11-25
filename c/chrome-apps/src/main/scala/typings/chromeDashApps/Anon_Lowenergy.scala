@@ -20,10 +20,10 @@ object Anon_Lowenergy {
     uuids: js.Array[String] = null
   ): Anon_Lowenergy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(low_energy)) __obj.updateDynamic("low_energy")(low_energy)
-    if (!js.isUndefined(peripheral)) __obj.updateDynamic("peripheral")(peripheral)
-    if (!js.isUndefined(socket)) __obj.updateDynamic("socket")(socket)
-    if (uuids != null) __obj.updateDynamic("uuids")(uuids)
+    if (!js.isUndefined(low_energy)) __obj.updateDynamic("low_energy")(low_energy.asInstanceOf[js.Any])
+    if (!js.isUndefined(peripheral)) __obj.updateDynamic("peripheral")(peripheral.asInstanceOf[js.Any])
+    if (!js.isUndefined(socket)) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
+    if (uuids != null) __obj.updateDynamic("uuids")(uuids.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lowenergy]
   }
 }

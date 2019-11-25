@@ -26,8 +26,8 @@ object RecognitionAudio {
   @scala.inline
   def apply(content: String = null, uri: String = null): RecognitionAudio = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognitionAudio]
   }
 }

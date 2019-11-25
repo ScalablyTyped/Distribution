@@ -13,7 +13,7 @@ trait ButtonState extends js.Object {
 object ButtonState {
   @scala.inline
   def apply(hasTwoCNChar: Boolean, loading: Boolean | Anon_Delay = null): ButtonState = {
-    val __obj = js.Dynamic.literal(hasTwoCNChar = hasTwoCNChar)
+    val __obj = js.Dynamic.literal(hasTwoCNChar = hasTwoCNChar.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonState]
   }

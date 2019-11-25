@@ -83,19 +83,19 @@ object Anon_AltAutoLevels {
     stabilize: js.UndefOr[Boolean] = js.undefined,
     userIp: String = null
   ): Anon_AltAutoLevels = {
-    val __obj = js.Dynamic.literal(part = part)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (!js.isUndefined(autoLevels)) __obj.updateDynamic("autoLevels")(autoLevels)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(notifySubscribers)) __obj.updateDynamic("notifySubscribers")(notifySubscribers)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
-    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (!js.isUndefined(stabilize)) __obj.updateDynamic("stabilize")(stabilize)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLevels)) __obj.updateDynamic("autoLevels")(autoLevels.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(notifySubscribers)) __obj.updateDynamic("notifySubscribers")(notifySubscribers.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
+    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(stabilize)) __obj.updateDynamic("stabilize")(stabilize.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltAutoLevels]
   }
 }

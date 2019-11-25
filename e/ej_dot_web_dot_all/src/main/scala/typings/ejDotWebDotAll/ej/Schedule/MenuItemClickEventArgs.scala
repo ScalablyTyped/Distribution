@@ -32,11 +32,11 @@ object MenuItemClickEventArgs {
     `type`: String = null
   ): MenuItemClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (targetInfo != null) __obj.updateDynamic("targetInfo")(targetInfo)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (targetInfo != null) __obj.updateDynamic("targetInfo")(targetInfo.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemClickEventArgs]
   }
 }

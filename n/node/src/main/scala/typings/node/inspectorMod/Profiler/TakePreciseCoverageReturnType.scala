@@ -14,7 +14,7 @@ trait TakePreciseCoverageReturnType extends js.Object {
 object TakePreciseCoverageReturnType {
   @scala.inline
   def apply(result: js.Array[ScriptCoverage]): TakePreciseCoverageReturnType = {
-    val __obj = js.Dynamic.literal(result = result)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TakePreciseCoverageReturnType]
   }

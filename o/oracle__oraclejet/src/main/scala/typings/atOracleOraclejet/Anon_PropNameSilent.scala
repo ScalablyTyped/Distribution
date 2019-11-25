@@ -19,8 +19,8 @@ object Anon_PropNameSilent {
     startIndex: Int | Double = null
   ): Anon_PropNameSilent = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PropNameSilent]
   }

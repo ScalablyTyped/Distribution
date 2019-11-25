@@ -23,10 +23,10 @@ object BytesOptions {
   ): BytesOptions = {
     val __obj = js.Dynamic.literal()
     if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedDecimals)) __obj.updateDynamic("fixedDecimals")(fixedDecimals)
-    if (thousandsSeparator != null) __obj.updateDynamic("thousandsSeparator")(thousandsSeparator)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
-    if (unitSeparator != null) __obj.updateDynamic("unitSeparator")(unitSeparator)
+    if (!js.isUndefined(fixedDecimals)) __obj.updateDynamic("fixedDecimals")(fixedDecimals.asInstanceOf[js.Any])
+    if (thousandsSeparator != null) __obj.updateDynamic("thousandsSeparator")(thousandsSeparator.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (unitSeparator != null) __obj.updateDynamic("unitSeparator")(unitSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[BytesOptions]
   }
 }

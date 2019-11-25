@@ -26,7 +26,7 @@ object ExtendedNodeData {
     path: NumberOrStringArray,
     treeIndex: Double
   ): ExtendedNodeData = {
-    val __obj = js.Dynamic.literal(isSearchFocus = isSearchFocus, isSearchMatch = isSearchMatch, lowerSiblingCounts = lowerSiblingCounts, node = node, parentNode = parentNode, path = path, treeIndex = treeIndex)
+    val __obj = js.Dynamic.literal(isSearchFocus = isSearchFocus.asInstanceOf[js.Any], isSearchMatch = isSearchMatch.asInstanceOf[js.Any], lowerSiblingCounts = lowerSiblingCounts.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtendedNodeData]
   }

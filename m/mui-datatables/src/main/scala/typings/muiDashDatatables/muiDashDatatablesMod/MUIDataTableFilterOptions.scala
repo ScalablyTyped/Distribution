@@ -28,7 +28,7 @@ object MUIDataTableFilterOptions {
     val __obj = js.Dynamic.literal()
     if (display != null) __obj.updateDynamic("display")(js.Any.fromFunction4(display))
     if (logic != null) __obj.updateDynamic("logic")(js.Any.fromFunction2(logic))
-    if (names != null) __obj.updateDynamic("names")(names)
+    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableFilterOptions]
   }
 }

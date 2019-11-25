@@ -11,7 +11,7 @@ trait Anon_Total extends js.Object {
 object Anon_Total {
   @scala.inline
   def apply(total: Double): Anon_Total = {
-    val __obj = js.Dynamic.literal(total = total)
+    val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Total]
   }

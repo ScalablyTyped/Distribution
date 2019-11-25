@@ -22,8 +22,8 @@ object CreateInstanceRequest {
   @scala.inline
   def apply(instance: Instance = null, instanceId: String = null): CreateInstanceRequest = {
     val __obj = js.Dynamic.literal()
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstanceRequest]
   }
 }

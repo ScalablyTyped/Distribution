@@ -22,11 +22,11 @@ object LoaderOptions {
     stylus: js.Any = null
   ): LoaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (less != null) __obj.updateDynamic("less")(less)
-    if (postcss != null) __obj.updateDynamic("postcss")(postcss)
-    if (sass != null) __obj.updateDynamic("sass")(sass)
-    if (stylus != null) __obj.updateDynamic("stylus")(stylus)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (less != null) __obj.updateDynamic("less")(less.asInstanceOf[js.Any])
+    if (postcss != null) __obj.updateDynamic("postcss")(postcss.asInstanceOf[js.Any])
+    if (sass != null) __obj.updateDynamic("sass")(sass.asInstanceOf[js.Any])
+    if (stylus != null) __obj.updateDynamic("stylus")(stylus.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderOptions]
   }
 }

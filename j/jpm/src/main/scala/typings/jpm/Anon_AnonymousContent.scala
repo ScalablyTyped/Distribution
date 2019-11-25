@@ -28,12 +28,12 @@ object Anon_AnonymousContent {
     url: String | SDKURL = null
   ): Anon_AnonymousContent[ResponseType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous)
+    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)
+    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AnonymousContent[ResponseType]]
   }

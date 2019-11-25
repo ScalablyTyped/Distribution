@@ -22,7 +22,7 @@ object Anon_ColumnManager {
     props: TableProps[ValueType] with Anon_ChildrenReactNode,
     saveRef: String => js.Function1[/* node */ HTMLElement, Unit]
   ): Anon_ColumnManager[ValueType] = {
-    val __obj = js.Dynamic.literal(columnManager = columnManager, components = components, props = props, saveRef = js.Any.fromFunction1(saveRef))
+    val __obj = js.Dynamic.literal(columnManager = columnManager.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], saveRef = js.Any.fromFunction1(saveRef))
   
     __obj.asInstanceOf[Anon_ColumnManager[ValueType]]
   }

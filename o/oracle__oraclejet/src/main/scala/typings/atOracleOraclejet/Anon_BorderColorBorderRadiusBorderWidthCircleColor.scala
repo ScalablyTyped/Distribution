@@ -62,15 +62,15 @@ object Anon_BorderColorBorderRadiusBorderWidthCircleColor {
     svgStyle: js.Object = null,
     width: Int | Double = null
   ): Anon_BorderColorBorderRadiusBorderWidthCircleColor = {
-    val __obj = js.Dynamic.literal(borderWidth = borderWidth, opacity = opacity, svgClassName = svgClassName)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(borderWidth = borderWidth.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderColorBorderRadiusBorderWidthCircleColor]
   }

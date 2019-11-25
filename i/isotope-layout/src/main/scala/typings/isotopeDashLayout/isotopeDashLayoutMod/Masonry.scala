@@ -19,7 +19,7 @@ object Masonry {
   ): Masonry = {
     val __obj = js.Dynamic.literal()
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitWidth)) __obj.updateDynamic("fitWidth")(fitWidth)
+    if (!js.isUndefined(fitWidth)) __obj.updateDynamic("fitWidth")(fitWidth.asInstanceOf[js.Any])
     if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Masonry]
   }

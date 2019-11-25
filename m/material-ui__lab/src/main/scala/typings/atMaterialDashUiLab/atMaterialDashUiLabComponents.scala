@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDashUiLabComponents extends atMaterialDashUiLabProps {
   @scala.inline
-  def Autocomplete: ComponentType[AutocompleteProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("Autocomplete").asInstanceOf[typings.react.reactMod.ComponentType[AutocompleteProps]]
+  def Autocomplete: ComponentType[AutocompleteProps] = typings.atMaterialDashUiLab.autocompleteAutocompleteMod.default.asInstanceOf[typings.react.reactMod.ComponentType[AutocompleteProps]]
   @scala.inline
   def Rating: ComponentType[RatingProps] = js.constructorOf[typings.atMaterialDashUiLab.ratingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RatingProps]]
   @scala.inline
-  def SpeedDial: ComponentType[SpeedDialProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDial").asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialProps]]
+  def SpeedDial: ComponentType[SpeedDialProps] = typings.atMaterialDashUiLab.speedDialSpeedDialMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialProps]]
   @scala.inline
-  def SpeedDialAction: ComponentType[SpeedDialActionProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDialAction").asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialActionProps]]
+  def SpeedDialAction: ComponentType[SpeedDialActionProps] = typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialActionProps]]
   @scala.inline
-  def SpeedDialIcon: ComponentType[SpeedDialIconProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDialIcon").asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialIconProps]]
+  def SpeedDialIcon: ComponentType[SpeedDialIconProps] = typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialIconProps]]
   @scala.inline
-  def ToggleButtonGroup: ComponentType[ToggleButtonGroupProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("ToggleButtonGroup").asInstanceOf[typings.react.reactMod.ComponentType[ToggleButtonGroupProps]]
+  def ToggleButtonGroup: ComponentType[ToggleButtonGroupProps] = typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.default.asInstanceOf[typings.react.reactMod.ComponentType[ToggleButtonGroupProps]]
   @scala.inline
-  def TreeItem: ComponentType[TreeItemProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("TreeItem").asInstanceOf[typings.react.reactMod.ComponentType[TreeItemProps]]
+  def TreeItem: ComponentType[TreeItemProps] = typings.atMaterialDashUiLab.treeItemTreeItemMod.default.asInstanceOf[typings.react.reactMod.ComponentType[TreeItemProps]]
   @scala.inline
-  def TreeView: ComponentType[TreeViewProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("TreeView").asInstanceOf[typings.react.reactMod.ComponentType[TreeViewProps]]
+  def TreeView: ComponentType[TreeViewProps] = typings.atMaterialDashUiLab.treeViewTreeViewMod.default.asInstanceOf[typings.react.reactMod.ComponentType[TreeViewProps]]
 }
 

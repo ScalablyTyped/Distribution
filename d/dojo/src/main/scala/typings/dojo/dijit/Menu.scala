@@ -1,9 +1,6 @@
 package typings.dojo.dijit
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValuePropertyHTMLElement
 import typings.dojo.dojoStrings.contextMenuForWindow
 import typings.dojo.dojoStrings.currentTarget
 import typings.dojo.dojoStrings.leftClickToOpen
@@ -121,16 +118,64 @@ class Menu () extends DropDownMenu {
     */
   def unBindDomNode(nodeName: HTMLElement): Unit = js.native
   @JSName("watch")
-  def watch_contextMenuForWindow(property: contextMenuForWindow, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_contextMenuForWindow(
+    property: contextMenuForWindow,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_currentTarget(property: currentTarget, callback: Fn_NewValueOldValuePropertyHTMLElement): Anon_Unwatch = js.native
+  def watch_currentTarget(
+    property: currentTarget,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[HTMLElement], 
+      /* newValue */ js.UndefOr[HTMLElement], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_leftClickToOpen(property: leftClickToOpen, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_leftClickToOpen(
+    property: leftClickToOpen,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_refocus(property: refocus, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_refocus(
+    property: refocus,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_selector(property: selector, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_selector(
+    property: selector,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_targetNodeIds(property: targetNodeIds, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_targetNodeIds(
+    property: targetNodeIds,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

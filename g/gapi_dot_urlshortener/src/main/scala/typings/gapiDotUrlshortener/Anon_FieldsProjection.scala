@@ -23,9 +23,9 @@ object Anon_FieldsProjection {
   @scala.inline
   def apply(fields: String = null, projection: String = null, `start-token`: String = null): Anon_FieldsProjection = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (`start-token` != null) __obj.updateDynamic("start-token")(`start-token`)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (`start-token` != null) __obj.updateDynamic("start-token")(`start-token`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FieldsProjection]
   }
 }

@@ -26,11 +26,11 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (`cache-control` != null) __obj.updateDynamic("cache-control")(`cache-control`)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (indexFile != null) __obj.updateDynamic("indexFile")(indexFile)
-    if (server != null) __obj.updateDynamic("server")(server)
-    if (serverInfo != null) __obj.updateDynamic("serverInfo")(serverInfo)
+    if (`cache-control` != null) __obj.updateDynamic("cache-control")(`cache-control`.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (indexFile != null) __obj.updateDynamic("indexFile")(indexFile.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
+    if (serverInfo != null) __obj.updateDynamic("serverInfo")(serverInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

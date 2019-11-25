@@ -19,8 +19,8 @@ object ListChannelsResult {
     res: NormalSuccessResponse,
     nextMarker: String = null
   ): ListChannelsResult = {
-    val __obj = js.Dynamic.literal(channels = channels, isTruncated = isTruncated, res = res)
-    if (nextMarker != null) __obj.updateDynamic("nextMarker")(nextMarker)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], isTruncated = isTruncated.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
+    if (nextMarker != null) __obj.updateDynamic("nextMarker")(nextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListChannelsResult]
   }
 }

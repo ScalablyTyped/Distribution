@@ -55,10 +55,10 @@ object BasemapLayerListViewModelProperties {
   ): BasemapLayerListViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (baseItems != null) __obj.updateDynamic("baseItems")(baseItems.asInstanceOf[js.Any])
-    if (baseListItemCreatedFunction != null) __obj.updateDynamic("baseListItemCreatedFunction")(baseListItemCreatedFunction)
-    if (basemapTitle != null) __obj.updateDynamic("basemapTitle")(basemapTitle)
+    if (baseListItemCreatedFunction != null) __obj.updateDynamic("baseListItemCreatedFunction")(baseListItemCreatedFunction.asInstanceOf[js.Any])
+    if (basemapTitle != null) __obj.updateDynamic("basemapTitle")(basemapTitle.asInstanceOf[js.Any])
     if (referenceItems != null) __obj.updateDynamic("referenceItems")(referenceItems.asInstanceOf[js.Any])
-    if (referenceListItemCreatedFunction != null) __obj.updateDynamic("referenceListItemCreatedFunction")(referenceListItemCreatedFunction)
+    if (referenceListItemCreatedFunction != null) __obj.updateDynamic("referenceListItemCreatedFunction")(referenceListItemCreatedFunction.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasemapLayerListViewModelProperties]
   }

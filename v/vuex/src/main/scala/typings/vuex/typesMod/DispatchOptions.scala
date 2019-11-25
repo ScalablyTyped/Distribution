@@ -12,7 +12,7 @@ object DispatchOptions {
   @scala.inline
   def apply(root: js.UndefOr[Boolean] = js.undefined): DispatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root)
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatchOptions]
   }
 }

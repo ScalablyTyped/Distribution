@@ -34,11 +34,11 @@ object Options {
     statusCode: Int | Double = null
   ): Options[Data] = {
     val __obj = js.Dynamic.literal()
-    if (ctor != null) __obj.updateDynamic("ctor")(ctor)
+    if (ctor != null) __obj.updateDynamic("ctor")(ctor.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (decorate != null) __obj.updateDynamic("decorate")(decorate)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`)
+    if (decorate != null) __obj.updateDynamic("decorate")(decorate.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[Data]]
   }

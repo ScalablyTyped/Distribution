@@ -37,11 +37,11 @@ object NetworkPeering {
     stateDetails: String = null
   ): NetworkPeering = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (network != null) __obj.updateDynamic("network")(network)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (stateDetails != null) __obj.updateDynamic("stateDetails")(stateDetails)
+    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (stateDetails != null) __obj.updateDynamic("stateDetails")(stateDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkPeering]
   }
 }

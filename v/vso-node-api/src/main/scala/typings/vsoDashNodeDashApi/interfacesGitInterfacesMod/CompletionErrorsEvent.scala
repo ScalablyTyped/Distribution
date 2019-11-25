@@ -14,7 +14,7 @@ trait CompletionErrorsEvent extends RealTimePullRequestEvent {
 object CompletionErrorsEvent {
   @scala.inline
   def apply(errorMessage: String, eventId: String, pullRequestId: Double): CompletionErrorsEvent = {
-    val __obj = js.Dynamic.literal(errorMessage = errorMessage, eventId = eventId, pullRequestId = pullRequestId)
+    val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], eventId = eventId.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CompletionErrorsEvent]
   }

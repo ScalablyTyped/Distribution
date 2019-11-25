@@ -20,10 +20,10 @@ object NavigationStackRouterConfig {
     paths: NavigationPathsConfig = null
   ): NavigationStackRouterConfig = {
     val __obj = js.Dynamic.literal()
-    if (initialRouteKey != null) __obj.updateDynamic("initialRouteKey")(initialRouteKey)
-    if (initialRouteName != null) __obj.updateDynamic("initialRouteName")(initialRouteName)
-    if (initialRouteParams != null) __obj.updateDynamic("initialRouteParams")(initialRouteParams)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (initialRouteKey != null) __obj.updateDynamic("initialRouteKey")(initialRouteKey.asInstanceOf[js.Any])
+    if (initialRouteName != null) __obj.updateDynamic("initialRouteName")(initialRouteName.asInstanceOf[js.Any])
+    if (initialRouteParams != null) __obj.updateDynamic("initialRouteParams")(initialRouteParams.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationStackRouterConfig]
   }
 }

@@ -17,7 +17,7 @@ trait DeregisterStreamConsumerOutput extends OutputTypesUnion {
 object DeregisterStreamConsumerOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): DeregisterStreamConsumerOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeregisterStreamConsumerOutput]
   }

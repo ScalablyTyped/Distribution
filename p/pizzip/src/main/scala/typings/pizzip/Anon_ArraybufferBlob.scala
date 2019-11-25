@@ -26,7 +26,7 @@ trait Anon_ArraybufferBlob extends js.Object {
 object Anon_ArraybufferBlob {
   @scala.inline
   def apply(arraybuffer: Boolean, blob: Boolean, nodebuffer: Boolean, uint8array: Boolean): Anon_ArraybufferBlob = {
-    val __obj = js.Dynamic.literal(arraybuffer = arraybuffer, blob = blob, nodebuffer = nodebuffer, uint8array = uint8array)
+    val __obj = js.Dynamic.literal(arraybuffer = arraybuffer.asInstanceOf[js.Any], blob = blob.asInstanceOf[js.Any], nodebuffer = nodebuffer.asInstanceOf[js.Any], uint8array = uint8array.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArraybufferBlob]
   }

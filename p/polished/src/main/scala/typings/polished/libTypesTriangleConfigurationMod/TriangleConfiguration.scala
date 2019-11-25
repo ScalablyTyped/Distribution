@@ -22,8 +22,8 @@ object TriangleConfiguration {
     width: Double | String,
     backgroundColor: String = null
   ): TriangleConfiguration = {
-    val __obj = js.Dynamic.literal(foregroundColor = foregroundColor, height = height.asInstanceOf[js.Any], pointingDirection = pointingDirection, width = width.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    val __obj = js.Dynamic.literal(foregroundColor = foregroundColor.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], pointingDirection = pointingDirection.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriangleConfiguration]
   }
 }

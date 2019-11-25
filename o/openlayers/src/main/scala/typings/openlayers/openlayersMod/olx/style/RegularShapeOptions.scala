@@ -34,15 +34,15 @@ object RegularShapeOptions {
     snapToPixel: js.UndefOr[Boolean] = js.undefined,
     stroke: Stroke = null
   ): RegularShapeOptions = {
-    val __obj = js.Dynamic.literal(points = points)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (radius1 != null) __obj.updateDynamic("radius1")(radius1.asInstanceOf[js.Any])
     if (radius2 != null) __obj.updateDynamic("radius2")(radius2.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapToPixel)) __obj.updateDynamic("snapToPixel")(snapToPixel)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (!js.isUndefined(snapToPixel)) __obj.updateDynamic("snapToPixel")(snapToPixel.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegularShapeOptions]
   }
 }

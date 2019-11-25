@@ -14,7 +14,7 @@ trait InvalidAction[Payload] extends js.Object {
 object InvalidAction {
   @scala.inline
   def apply[Payload](error: `true`, payload: Payload, `type`: String | js.Symbol): InvalidAction[Payload] = {
-    val __obj = js.Dynamic.literal(error = error, payload = payload.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidAction[Payload]]
   }

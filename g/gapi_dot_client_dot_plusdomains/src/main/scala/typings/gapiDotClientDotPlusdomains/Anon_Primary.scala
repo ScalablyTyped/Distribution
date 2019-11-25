@@ -15,8 +15,8 @@ object Anon_Primary {
   @scala.inline
   def apply(primary: js.UndefOr[Boolean] = js.undefined, value: String = null): Anon_Primary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Primary]
   }
 }

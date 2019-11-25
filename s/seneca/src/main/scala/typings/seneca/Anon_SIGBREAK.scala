@@ -20,10 +20,10 @@ object Anon_SIGBREAK {
     SIGTERM: js.UndefOr[Boolean] = js.undefined
   ): Anon_SIGBREAK = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(SIGBREAK)) __obj.updateDynamic("SIGBREAK")(SIGBREAK)
-    if (!js.isUndefined(SIGHUP)) __obj.updateDynamic("SIGHUP")(SIGHUP)
-    if (!js.isUndefined(SIGINT)) __obj.updateDynamic("SIGINT")(SIGINT)
-    if (!js.isUndefined(SIGTERM)) __obj.updateDynamic("SIGTERM")(SIGTERM)
+    if (!js.isUndefined(SIGBREAK)) __obj.updateDynamic("SIGBREAK")(SIGBREAK.asInstanceOf[js.Any])
+    if (!js.isUndefined(SIGHUP)) __obj.updateDynamic("SIGHUP")(SIGHUP.asInstanceOf[js.Any])
+    if (!js.isUndefined(SIGINT)) __obj.updateDynamic("SIGINT")(SIGINT.asInstanceOf[js.Any])
+    if (!js.isUndefined(SIGTERM)) __obj.updateDynamic("SIGTERM")(SIGTERM.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SIGBREAK]
   }
 }

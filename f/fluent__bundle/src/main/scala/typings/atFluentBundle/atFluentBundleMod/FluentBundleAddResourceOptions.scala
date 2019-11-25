@@ -12,7 +12,7 @@ object FluentBundleAddResourceOptions {
   @scala.inline
   def apply(allowOverrides: js.UndefOr[Boolean] = js.undefined): FluentBundleAddResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowOverrides)) __obj.updateDynamic("allowOverrides")(allowOverrides)
+    if (!js.isUndefined(allowOverrides)) __obj.updateDynamic("allowOverrides")(allowOverrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[FluentBundleAddResourceOptions]
   }
 }

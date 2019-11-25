@@ -15,7 +15,7 @@ object Anon_TypeNullEvent_2082489049 {
   @scala.inline
   def apply(`type`: NullEvent): Anon_TypeNullEvent_2082489049 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TypeNullEvent_2082489049]
   }
 }

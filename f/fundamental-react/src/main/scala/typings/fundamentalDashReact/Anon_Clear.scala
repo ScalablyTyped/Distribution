@@ -16,7 +16,7 @@ trait Anon_Clear extends js.Object {
 object Anon_Clear {
   @scala.inline
   def apply(clear: String, down: String, up: String): Anon_Clear = {
-    val __obj = js.Dynamic.literal(clear = clear, down = down, up = up)
+    val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Clear]
   }

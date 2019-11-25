@@ -27,12 +27,12 @@ object SitemapConfig {
   ): SitemapConfig = {
     val __obj = js.Dynamic.literal()
     if (cacheTime != null) __obj.updateDynamic("cacheTime")(cacheTime.asInstanceOf[js.Any])
-    if (childrens != null) __obj.updateDynamic("childrens")(childrens)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (hostName != null) __obj.updateDynamic("hostName")(hostName)
+    if (childrens != null) __obj.updateDynamic("childrens")(childrens.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (hostName != null) __obj.updateDynamic("hostName")(hostName.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (urls != null) __obj.updateDynamic("urls")(urls)
-    if (xslUrl != null) __obj.updateDynamic("xslUrl")(xslUrl)
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
+    if (xslUrl != null) __obj.updateDynamic("xslUrl")(xslUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SitemapConfig]
   }
 }

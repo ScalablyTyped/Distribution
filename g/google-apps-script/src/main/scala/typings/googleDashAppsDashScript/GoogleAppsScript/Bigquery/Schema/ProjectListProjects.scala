@@ -22,11 +22,11 @@ object ProjectListProjects {
     projectReference: ProjectReference = null
   ): ProjectListProjects = {
     val __obj = js.Dynamic.literal()
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (numericId != null) __obj.updateDynamic("numericId")(numericId)
-    if (projectReference != null) __obj.updateDynamic("projectReference")(projectReference)
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (numericId != null) __obj.updateDynamic("numericId")(numericId.asInstanceOf[js.Any])
+    if (projectReference != null) __obj.updateDynamic("projectReference")(projectReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectListProjects]
   }
 }

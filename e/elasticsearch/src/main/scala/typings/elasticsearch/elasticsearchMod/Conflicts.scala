@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Conflicts extends js.Object
 
+object Conflicts {
+  @scala.inline
+  def abort: typings.elasticsearch.elasticsearchStrings.abort = this.cast("abort")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def proceed: typings.elasticsearch.elasticsearchStrings.proceed = this.cast("proceed")
+}
+

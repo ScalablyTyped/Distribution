@@ -24,7 +24,7 @@ object MapWMSTileProps {
     minimumZ: Int | Double = null,
     zIndex: Int | Double = null
   ): MapWMSTileProps = {
-    val __obj = js.Dynamic.literal(opacity = opacity, tileSize = tileSize, urlTemplate = urlTemplate)
+    val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any], tileSize = tileSize.asInstanceOf[js.Any], urlTemplate = urlTemplate.asInstanceOf[js.Any])
     if (maximumZ != null) __obj.updateDynamic("maximumZ")(maximumZ.asInstanceOf[js.Any])
     if (minimumZ != null) __obj.updateDynamic("minimumZ")(minimumZ.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

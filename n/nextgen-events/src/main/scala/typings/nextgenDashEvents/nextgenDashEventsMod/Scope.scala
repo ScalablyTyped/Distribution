@@ -12,7 +12,7 @@ trait Scope extends js.Object {
 object Scope {
   @scala.inline
   def apply(queue: js.Array[_], ready: Boolean): Scope = {
-    val __obj = js.Dynamic.literal(queue = queue, ready = ready)
+    val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Scope]
   }

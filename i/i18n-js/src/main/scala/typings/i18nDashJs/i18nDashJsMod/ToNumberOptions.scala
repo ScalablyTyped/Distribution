@@ -20,10 +20,10 @@ object ToNumberOptions {
     strip_insignificant_zeros: js.UndefOr[Boolean] = js.undefined
   ): ToNumberOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (!js.isUndefined(strip_insignificant_zeros)) __obj.updateDynamic("strip_insignificant_zeros")(strip_insignificant_zeros)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(strip_insignificant_zeros)) __obj.updateDynamic("strip_insignificant_zeros")(strip_insignificant_zeros.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToNumberOptions]
   }
 }

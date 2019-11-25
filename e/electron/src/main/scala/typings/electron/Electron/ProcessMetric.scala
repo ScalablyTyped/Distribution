@@ -29,7 +29,7 @@ trait ProcessMetric extends js.Object {
 object ProcessMetric {
   @scala.inline
   def apply(cpu: CPUUsage, pid: Double, `type`: Browser | Tab | Utility | Zygote | GPU | Unknown): ProcessMetric = {
-    val __obj = js.Dynamic.literal(cpu = cpu, pid = pid)
+    val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessMetric]
   }

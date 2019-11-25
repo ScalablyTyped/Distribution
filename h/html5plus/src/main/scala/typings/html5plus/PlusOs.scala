@@ -65,10 +65,10 @@ object PlusOs {
     version: String = null
   ): PlusOs = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusOs]
   }
 }

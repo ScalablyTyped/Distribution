@@ -15,8 +15,8 @@ object ValidationMessageBasicErrorObject {
   @scala.inline
   def apply(`type`: error, subType: fatal = null): ValidationMessageBasicErrorObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (subType != null) __obj.updateDynamic("subType")(subType)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (subType != null) __obj.updateDynamic("subType")(subType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationMessageBasicErrorObject]
   }
 }

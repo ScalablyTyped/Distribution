@@ -30,10 +30,9 @@ object Pattern {
     toBase64: () => String,
     toDataUri: () => String,
     toDataUrl: () => String,
-    toString: () => String,
     toSvg: () => String
   ): Pattern = {
-    val __obj = js.Dynamic.literal(color = color, toBase64 = js.Any.fromFunction0(toBase64), toDataUri = js.Any.fromFunction0(toDataUri), toDataUrl = js.Any.fromFunction0(toDataUrl), toString = js.Any.fromFunction0(toString), toSvg = js.Any.fromFunction0(toSvg))
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], toBase64 = js.Any.fromFunction0(toBase64), toDataUri = js.Any.fromFunction0(toDataUri), toDataUrl = js.Any.fromFunction0(toDataUrl), toSvg = js.Any.fromFunction0(toSvg))
   
     __obj.asInstanceOf[Pattern]
   }

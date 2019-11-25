@@ -53,9 +53,9 @@ object StoreLike {
     serialize: js.ThisFunction1[/* this */ Store[T], /* state */ T, _] = null
   ): StoreLike[T] = {
     val __obj = js.Dynamic.literal(getInitialState = js.Any.fromFunction1(getInitialState), initialize = js.Any.fromFunction1(initialize))
-    if (deserialize != null) __obj.updateDynamic("deserialize")(deserialize)
-    if (handleReset != null) __obj.updateDynamic("handleReset")(handleReset)
-    if (serialize != null) __obj.updateDynamic("serialize")(serialize)
+    if (deserialize != null) __obj.updateDynamic("deserialize")(deserialize.asInstanceOf[js.Any])
+    if (handleReset != null) __obj.updateDynamic("handleReset")(handleReset.asInstanceOf[js.Any])
+    if (serialize != null) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreLike[T]]
   }
 }

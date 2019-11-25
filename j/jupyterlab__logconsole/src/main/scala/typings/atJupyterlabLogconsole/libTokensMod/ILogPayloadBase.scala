@@ -22,8 +22,8 @@ trait ILogPayloadBase extends js.Object {
 object ILogPayloadBase {
   @scala.inline
   def apply(data: js.Any, level: LogLevel, `type`: String): ILogPayloadBase = {
-    val __obj = js.Dynamic.literal(data = data, level = level)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILogPayloadBase]
   }
 }

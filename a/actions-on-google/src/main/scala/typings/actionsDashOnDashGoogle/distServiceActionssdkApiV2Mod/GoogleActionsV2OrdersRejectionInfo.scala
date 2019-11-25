@@ -19,8 +19,8 @@ object GoogleActionsV2OrdersRejectionInfo {
   @scala.inline
   def apply(reason: String = null, `type`: GoogleActionsV2OrdersRejectionInfoType = null): GoogleActionsV2OrdersRejectionInfo = {
     val __obj = js.Dynamic.literal()
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersRejectionInfo]
   }
 }

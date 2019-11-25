@@ -35,14 +35,14 @@ object ItemReference {
     siteId: String = null
   ): ItemReference = {
     val __obj = js.Dynamic.literal()
-    if (driveId != null) __obj.updateDynamic("driveId")(driveId)
-    if (driveType != null) __obj.updateDynamic("driveType")(driveType)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (shareId != null) __obj.updateDynamic("shareId")(shareId)
-    if (sharepointIds != null) __obj.updateDynamic("sharepointIds")(sharepointIds)
-    if (siteId != null) __obj.updateDynamic("siteId")(siteId)
+    if (driveId != null) __obj.updateDynamic("driveId")(driveId.asInstanceOf[js.Any])
+    if (driveType != null) __obj.updateDynamic("driveType")(driveType.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (shareId != null) __obj.updateDynamic("shareId")(shareId.asInstanceOf[js.Any])
+    if (sharepointIds != null) __obj.updateDynamic("sharepointIds")(sharepointIds.asInstanceOf[js.Any])
+    if (siteId != null) __obj.updateDynamic("siteId")(siteId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemReference]
   }
 }

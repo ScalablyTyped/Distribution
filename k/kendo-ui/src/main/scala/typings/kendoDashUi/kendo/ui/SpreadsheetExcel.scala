@@ -14,9 +14,9 @@ object SpreadsheetExcel {
   @scala.inline
   def apply(fileName: String = null, forceProxy: js.UndefOr[Boolean] = js.undefined, proxyURL: String = null): SpreadsheetExcel = {
     val __obj = js.Dynamic.literal()
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy)
-    if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy.asInstanceOf[js.Any])
+    if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetExcel]
   }
 }

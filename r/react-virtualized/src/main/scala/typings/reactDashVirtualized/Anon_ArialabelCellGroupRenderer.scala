@@ -20,7 +20,7 @@ object Anon_ArialabelCellGroupRenderer {
     cellGroupRenderer: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]
   ): Anon_ArialabelCellGroupRenderer = {
     val __obj = js.Dynamic.literal(cellGroupRenderer = js.Any.fromFunction1(cellGroupRenderer))
-    __obj.updateDynamic("aria-label")(`aria-label`)
+    __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArialabelCellGroupRenderer]
   }
 }

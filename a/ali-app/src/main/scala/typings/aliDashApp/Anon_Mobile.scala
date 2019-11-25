@@ -13,7 +13,7 @@ trait Anon_Mobile extends js.Object {
 object Anon_Mobile {
   @scala.inline
   def apply(mobile: String, name: String): Anon_Mobile = {
-    val __obj = js.Dynamic.literal(mobile = mobile, name = name)
+    val __obj = js.Dynamic.literal(mobile = mobile.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Mobile]
   }

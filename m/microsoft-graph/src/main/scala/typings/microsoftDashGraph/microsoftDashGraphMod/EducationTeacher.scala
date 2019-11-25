@@ -15,8 +15,8 @@ object EducationTeacher {
   @scala.inline
   def apply(externalId: String = null, teacherNumber: String = null): EducationTeacher = {
     val __obj = js.Dynamic.literal()
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId)
-    if (teacherNumber != null) __obj.updateDynamic("teacherNumber")(teacherNumber)
+    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
+    if (teacherNumber != null) __obj.updateDynamic("teacherNumber")(teacherNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[EducationTeacher]
   }
 }

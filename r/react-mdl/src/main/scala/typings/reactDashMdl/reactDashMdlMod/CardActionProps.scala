@@ -20,9 +20,9 @@ object CardActionProps {
     border: js.UndefOr[Boolean] = js.undefined
   ): CardActionProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardActionProps]
   }
 }

@@ -29,7 +29,7 @@ object CpuInfo {
     numOfProcessors: Double,
     processors: js.Array[typings.chrome.chrome.system.cpu.ProcessorInfo]
   ): CpuInfo = {
-    val __obj = js.Dynamic.literal(archName = archName, features = features, modelName = modelName, numOfProcessors = numOfProcessors, processors = processors)
+    val __obj = js.Dynamic.literal(archName = archName.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], numOfProcessors = numOfProcessors.asInstanceOf[js.Any], processors = processors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CpuInfo]
   }

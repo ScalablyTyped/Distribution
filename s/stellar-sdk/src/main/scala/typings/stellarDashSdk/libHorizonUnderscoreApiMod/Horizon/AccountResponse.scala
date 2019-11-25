@@ -29,7 +29,7 @@ trait AccountResponse extends BaseResponse[transactions | operations | payments 
 object AccountResponse {
   @scala.inline
   def apply(
-    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     account_id: String,
@@ -43,7 +43,7 @@ object AccountResponse {
     subentry_count: Double,
     thresholds: AccountThresholds
   ): AccountResponse = {
-    val __obj = js.Dynamic.literal(_links = _links, account_id = account_id, balances = balances, data = data, flags = flags, id = id, paging_token = paging_token, sequence = sequence, signers = signers, subentry_count = subentry_count, thresholds = thresholds)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], account_id = account_id.asInstanceOf[js.Any], balances = balances.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any], subentry_count = subentry_count.asInstanceOf[js.Any], thresholds = thresholds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountResponse]
   }

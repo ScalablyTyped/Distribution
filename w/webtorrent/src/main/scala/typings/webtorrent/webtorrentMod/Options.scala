@@ -30,7 +30,7 @@ object Options {
     if (nodeId != null) __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
     if (peerId != null) __obj.updateDynamic("peerId")(peerId.asInstanceOf[js.Any])
     if (tracker != null) __obj.updateDynamic("tracker")(tracker.asInstanceOf[js.Any])
-    if (!js.isUndefined(webSeeds)) __obj.updateDynamic("webSeeds")(webSeeds)
+    if (!js.isUndefined(webSeeds)) __obj.updateDynamic("webSeeds")(webSeeds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

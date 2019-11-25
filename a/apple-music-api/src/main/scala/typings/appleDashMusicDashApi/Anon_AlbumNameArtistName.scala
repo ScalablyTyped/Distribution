@@ -48,12 +48,12 @@ object Anon_AlbumNameArtistName {
     editorialNotes: EditorialNotes = null,
     playParams: PlayParameters = null
   ): Anon_AlbumNameArtistName = {
-    val __obj = js.Dynamic.literal(albumName = albumName, artistName = artistName, genreNames = genreNames, isComplete = isComplete, isMasteredForItunes = isMasteredForItunes, isSingle = isSingle, name = name, recordLabel = recordLabel, releaseDate = releaseDate, trackCount = trackCount, url = url)
-    if (artwork != null) __obj.updateDynamic("artwork")(artwork)
+    val __obj = js.Dynamic.literal(albumName = albumName.asInstanceOf[js.Any], artistName = artistName.asInstanceOf[js.Any], genreNames = genreNames.asInstanceOf[js.Any], isComplete = isComplete.asInstanceOf[js.Any], isMasteredForItunes = isMasteredForItunes.asInstanceOf[js.Any], isSingle = isSingle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], recordLabel = recordLabel.asInstanceOf[js.Any], releaseDate = releaseDate.asInstanceOf[js.Any], trackCount = trackCount.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (artwork != null) __obj.updateDynamic("artwork")(artwork.asInstanceOf[js.Any])
     if (contentRating != null) __obj.updateDynamic("contentRating")(contentRating.asInstanceOf[js.Any])
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (editorialNotes != null) __obj.updateDynamic("editorialNotes")(editorialNotes)
-    if (playParams != null) __obj.updateDynamic("playParams")(playParams)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (editorialNotes != null) __obj.updateDynamic("editorialNotes")(editorialNotes.asInstanceOf[js.Any])
+    if (playParams != null) __obj.updateDynamic("playParams")(playParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlbumNameArtistName]
   }
 }

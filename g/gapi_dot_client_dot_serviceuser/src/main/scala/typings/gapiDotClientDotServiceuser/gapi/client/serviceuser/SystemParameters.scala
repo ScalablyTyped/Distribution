@@ -43,7 +43,7 @@ object SystemParameters {
   @scala.inline
   def apply(rules: js.Array[SystemParameterRule] = null): SystemParameters = {
     val __obj = js.Dynamic.literal()
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemParameters]
   }
 }

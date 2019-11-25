@@ -13,15 +13,16 @@ object NotificationPayloadObject {
   @scala.inline
   def apply(
     method: String,
-    params: js.Any,
     error: SerializerError = null,
     id: String | Double = null,
+    params: js.Any = null,
     result: js.Any = null
   ): NotificationPayloadObject = {
-    val __obj = js.Dynamic.literal(method = method, params = params)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationPayloadObject]
   }
 }

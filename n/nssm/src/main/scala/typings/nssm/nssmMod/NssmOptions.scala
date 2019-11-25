@@ -12,7 +12,7 @@ object NssmOptions {
   @scala.inline
   def apply(nssmExe: String = null): NssmOptions = {
     val __obj = js.Dynamic.literal()
-    if (nssmExe != null) __obj.updateDynamic("nssmExe")(nssmExe)
+    if (nssmExe != null) __obj.updateDynamic("nssmExe")(nssmExe.asInstanceOf[js.Any])
     __obj.asInstanceOf[NssmOptions]
   }
 }

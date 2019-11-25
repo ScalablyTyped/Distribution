@@ -12,8 +12,8 @@ trait ListEventBody extends js.Object {
 object ListEventBody {
   @scala.inline
   def apply(listId: String, listItemIds: js.Array[String] = null): ListEventBody = {
-    val __obj = js.Dynamic.literal(listId = listId)
-    if (listItemIds != null) __obj.updateDynamic("listItemIds")(listItemIds)
+    val __obj = js.Dynamic.literal(listId = listId.asInstanceOf[js.Any])
+    if (listItemIds != null) __obj.updateDynamic("listItemIds")(listItemIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEventBody]
   }
 }

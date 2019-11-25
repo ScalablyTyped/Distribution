@@ -28,7 +28,7 @@ object AzureSignatureOptions {
   def apply(customHeaders: js.Any | AzureCustomHeaderFunction = null, endpoint: String = null): AzureSignatureOptions = {
     val __obj = js.Dynamic.literal()
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureSignatureOptions]
   }
 }

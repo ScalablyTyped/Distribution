@@ -16,8 +16,8 @@ trait IncomingRequestWithSubscription extends js.Object {
 object IncomingRequestWithSubscription {
   @scala.inline
   def apply(request: IncomingNotifyRequest, subscription: Subscription = null): IncomingRequestWithSubscription = {
-    val __obj = js.Dynamic.literal(request = request)
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingRequestWithSubscription]
   }
 }

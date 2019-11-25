@@ -21,7 +21,7 @@ object ProjectionConfig {
     xOffset: Double,
     yOffset: Double
   ): ProjectionConfig = {
-    val __obj = js.Dynamic.literal(precision = precision, rotation = rotation, scale = scale, xOffset = xOffset, yOffset = yOffset)
+    val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], xOffset = xOffset.asInstanceOf[js.Any], yOffset = yOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectionConfig]
   }

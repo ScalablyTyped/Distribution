@@ -58,19 +58,19 @@ object PersistConfig {
     whitelist: js.Array[String] = null,
     writeFailHandler: /* err */ Error => Unit = null
   ): PersistConfig[S, RS, HSS, ESS] = {
-    val __obj = js.Dynamic.literal(key = key, storage = storage)
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (getStoredState != null) __obj.updateDynamic("getStoredState")(js.Any.fromFunction1(getStoredState))
-    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix)
+    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix.asInstanceOf[js.Any])
     if (migrate != null) __obj.updateDynamic("migrate")(js.Any.fromFunction2(migrate))
-    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize)
+    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
     if (stateReconciler != null) __obj.updateDynamic("stateReconciler")(stateReconciler.asInstanceOf[js.Any])
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     if (writeFailHandler != null) __obj.updateDynamic("writeFailHandler")(js.Any.fromFunction1(writeFailHandler))
     __obj.asInstanceOf[PersistConfig[S, RS, HSS, ESS]]
   }

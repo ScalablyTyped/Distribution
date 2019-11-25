@@ -12,7 +12,7 @@ trait ItemPocket extends js.Object {
 object ItemPocket {
   @scala.inline
   def apply(generations: js.Array[Double], pocket: String): ItemPocket = {
-    val __obj = js.Dynamic.literal(generations = generations, pocket = pocket)
+    val __obj = js.Dynamic.literal(generations = generations.asInstanceOf[js.Any], pocket = pocket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ItemPocket]
   }

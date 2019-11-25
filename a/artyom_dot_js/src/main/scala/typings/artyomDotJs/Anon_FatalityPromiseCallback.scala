@@ -20,10 +20,10 @@ object Anon_FatalityPromiseCallback {
     remoteProcessorHandler: js.Any = null
   ): Anon_FatalityPromiseCallback = {
     val __obj = js.Dynamic.literal()
-    if (fatalityPromiseCallback != null) __obj.updateDynamic("fatalityPromiseCallback")(fatalityPromiseCallback)
-    if (lastSay != null) __obj.updateDynamic("lastSay")(lastSay)
-    if (redirectRecognizedTextOutput != null) __obj.updateDynamic("redirectRecognizedTextOutput")(redirectRecognizedTextOutput)
-    if (remoteProcessorHandler != null) __obj.updateDynamic("remoteProcessorHandler")(remoteProcessorHandler)
+    if (fatalityPromiseCallback != null) __obj.updateDynamic("fatalityPromiseCallback")(fatalityPromiseCallback.asInstanceOf[js.Any])
+    if (lastSay != null) __obj.updateDynamic("lastSay")(lastSay.asInstanceOf[js.Any])
+    if (redirectRecognizedTextOutput != null) __obj.updateDynamic("redirectRecognizedTextOutput")(redirectRecognizedTextOutput.asInstanceOf[js.Any])
+    if (remoteProcessorHandler != null) __obj.updateDynamic("remoteProcessorHandler")(remoteProcessorHandler.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FatalityPromiseCallback]
   }
 }

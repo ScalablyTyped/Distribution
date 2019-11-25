@@ -565,6 +565,7 @@ object expressDashValidatorStrings {
   sealed trait `pt-BR`
     extends AlphaLocale
        with AlphanumericLocale
+       with MobilePhoneLocale
   
   @js.native
   sealed trait `pt-PT`

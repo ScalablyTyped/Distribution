@@ -101,10 +101,10 @@ object firebaseDashAdminStrings {
   sealed trait secret extends js.Object
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait sha1_ extends js.Object
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait sha256_ extends js.Object
   
   @js.native
   sealed trait value extends EventType
@@ -172,9 +172,9 @@ object firebaseDashAdminStrings {
   @scala.inline
   def secret: secret = "secret".asInstanceOf[secret]
   @scala.inline
-  def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  def sha1_ : sha1_ = "sha1".asInstanceOf[sha1_]
   @scala.inline
-  def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  def sha256_ : sha256_ = "sha256".asInstanceOf[sha256_]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
 }

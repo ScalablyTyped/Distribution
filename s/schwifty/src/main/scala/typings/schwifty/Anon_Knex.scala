@@ -16,7 +16,7 @@ trait Anon_Knex extends js.Object {
 object Anon_Knex {
   @scala.inline
   def apply(knex: (Knex[_, js.Array[_]]) | Config, migrationsDir: String, models: js.Array[ModelClass]): Anon_Knex = {
-    val __obj = js.Dynamic.literal(knex = knex.asInstanceOf[js.Any], migrationsDir = migrationsDir, models = models)
+    val __obj = js.Dynamic.literal(knex = knex.asInstanceOf[js.Any], migrationsDir = migrationsDir.asInstanceOf[js.Any], models = models.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Knex]
   }

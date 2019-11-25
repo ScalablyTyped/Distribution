@@ -18,7 +18,7 @@ trait VoronoiCell[T] extends js.Object {
 object VoronoiCell {
   @scala.inline
   def apply[T](halfedges: js.Array[Double], site: VoronoiSite[T]): VoronoiCell[T] = {
-    val __obj = js.Dynamic.literal(halfedges = halfedges, site = site)
+    val __obj = js.Dynamic.literal(halfedges = halfedges.asInstanceOf[js.Any], site = site.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VoronoiCell[T]]
   }

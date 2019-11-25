@@ -17,7 +17,7 @@ trait PullsGetReviewParamsDeprecatedNumber extends js.Object {
 object PullsGetReviewParamsDeprecatedNumber {
   @scala.inline
   def apply(number: Double, owner: String, repo: String, review_id: Double): PullsGetReviewParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo, review_id = review_id)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], review_id = review_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsGetReviewParamsDeprecatedNumber]
   }

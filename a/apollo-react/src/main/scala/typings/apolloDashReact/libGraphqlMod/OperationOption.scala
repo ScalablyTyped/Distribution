@@ -22,11 +22,11 @@ object OperationOption {
     withRef: js.UndefOr[Boolean] = js.undefined
   ): OperationOption = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(js.Any.fromFunction1(props))
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOption]
   }
 }

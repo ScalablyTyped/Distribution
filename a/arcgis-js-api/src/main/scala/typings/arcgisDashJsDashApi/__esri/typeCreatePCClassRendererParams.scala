@@ -62,11 +62,11 @@ object typeCreatePCClassRendererParams {
     statistics: UniqueValuesResult = null,
     typeScheme: TypeSchemeForPoint = null
   ): typeCreatePCClassRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
-    if (typeScheme != null) __obj.updateDynamic("typeScheme")(typeScheme)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
+    if (typeScheme != null) __obj.updateDynamic("typeScheme")(typeScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[typeCreatePCClassRendererParams]
   }
 }

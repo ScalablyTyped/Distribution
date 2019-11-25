@@ -20,10 +20,10 @@ object GoogleCloudDialogflowV2IntentMessageCard {
     title: String = null
   ): GoogleCloudDialogflowV2IntentMessageCard = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageCard]
   }
 }

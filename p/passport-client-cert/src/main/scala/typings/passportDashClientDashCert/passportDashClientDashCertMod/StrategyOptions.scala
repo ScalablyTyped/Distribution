@@ -13,7 +13,7 @@ object StrategyOptions {
   @scala.inline
   def apply(passReqToCallback: `false` = null): StrategyOptions = {
     val __obj = js.Dynamic.literal()
-    if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptions]
   }
 }

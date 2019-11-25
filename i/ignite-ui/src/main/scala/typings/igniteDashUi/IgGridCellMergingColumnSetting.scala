@@ -54,10 +54,10 @@ object IgGridCellMergingColumnSetting {
     mergeStrategy: String | js.Function = null
   ): IgGridCellMergingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (mergeOn != null) __obj.updateDynamic("mergeOn")(mergeOn)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (mergeOn != null) __obj.updateDynamic("mergeOn")(mergeOn.asInstanceOf[js.Any])
     if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridCellMergingColumnSetting]
   }

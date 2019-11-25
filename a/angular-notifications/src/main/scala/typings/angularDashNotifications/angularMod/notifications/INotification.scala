@@ -25,8 +25,8 @@ object INotification {
     `type`: String,
     userData: String
   ): INotification = {
-    val __obj = js.Dynamic.literal(content = content, icon = icon, image = image, timestamp = timestamp, title = title, userData = userData)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotification]
   }
 }

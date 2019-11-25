@@ -13,8 +13,8 @@ trait Position extends js.Object {
 object Position {
   @scala.inline
   def apply(end: Point, start: Point, indent: js.Array[Double] = null): Position = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
-    if (indent != null) __obj.updateDynamic("indent")(indent)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
 }

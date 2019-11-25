@@ -23,7 +23,7 @@ object DriveRoute {
     tolls: Double,
     tolls_distance: Double
   ): DriveRoute = {
-    val __obj = js.Dynamic.literal(distance = distance, policy = policy, steps = steps, time = time, tolls = tolls, tolls_distance = tolls_distance)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], tolls = tolls.asInstanceOf[js.Any], tolls_distance = tolls_distance.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DriveRoute]
   }

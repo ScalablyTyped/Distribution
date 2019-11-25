@@ -13,8 +13,8 @@ object RTCDtlsFingerprint {
   @scala.inline
   def apply(algorithm: java.lang.String = null, value: java.lang.String = null): RTCDtlsFingerprint = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDtlsFingerprint]
   }
 }

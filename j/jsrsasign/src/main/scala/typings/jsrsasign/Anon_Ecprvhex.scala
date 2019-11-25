@@ -12,7 +12,7 @@ trait Anon_Ecprvhex extends js.Object {
 object Anon_Ecprvhex {
   @scala.inline
   def apply(ecprvhex: String, ecpubhex: String): Anon_Ecprvhex = {
-    val __obj = js.Dynamic.literal(ecprvhex = ecprvhex, ecpubhex = ecpubhex)
+    val __obj = js.Dynamic.literal(ecprvhex = ecprvhex.asInstanceOf[js.Any], ecpubhex = ecpubhex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ecprvhex]
   }

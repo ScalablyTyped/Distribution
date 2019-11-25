@@ -17,10 +17,10 @@ object PinISchemeNamesIScheme {
   @scala.inline
   def apply(default: IScheme = null, neutral: IScheme = null, soft: IScheme = null, strong: IScheme = null): PinISchemeNamesIScheme = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (neutral != null) __obj.updateDynamic("neutral")(neutral)
-    if (soft != null) __obj.updateDynamic("soft")(soft)
-    if (strong != null) __obj.updateDynamic("strong")(strong)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (neutral != null) __obj.updateDynamic("neutral")(neutral.asInstanceOf[js.Any])
+    if (soft != null) __obj.updateDynamic("soft")(soft.asInstanceOf[js.Any])
+    if (strong != null) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinISchemeNamesIScheme]
   }
 }

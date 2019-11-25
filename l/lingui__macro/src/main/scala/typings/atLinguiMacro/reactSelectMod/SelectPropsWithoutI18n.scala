@@ -26,11 +26,11 @@ object SelectPropsWithoutI18n {
     other: ReactNode = null,
     render: ReactNode = null
   ): SelectPropsWithoutI18n = {
-    val __obj = js.Dynamic.literal(value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectPropsWithoutI18n]

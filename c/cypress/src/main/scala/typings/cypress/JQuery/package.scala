@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object JQuery {
   import org.scalablytyped.runtime.StringDictionary
   import typings.cypress.Anon_0
-  import typings.cypress.cypressStrings.get
+  import typings.cypress.cypressStrings.get_
   import typings.cypress.cypressStrings.left
   import typings.cypress.cypressStrings.set
   import typings.cypress.cypressStrings.top
@@ -31,7 +31,7 @@ package object JQuery {
   // region CSS hooks
   // #region CSS hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type CSSHook[TElement] = Partial[_CSSHook[TElement]] with (Pick[_CSSHook[TElement], get | set])
+  type CSSHook[TElement] = Partial[_CSSHook[TElement]] with (Pick[_CSSHook[TElement], get_ | set])
   type CSSHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   StringDictionary[CSSHook[HTMLElement]]
   // #endregion
@@ -96,6 +96,17 @@ package object JQuery {
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tween-hooks }\`
     * @since 1.8
     */
+  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - typings.cypress.Anon_Get[TElement]
+    - typings.cypress.Anon_Set[TElement]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
+  type PropHook[TElement] = _PropHook[TElement] | StringDictionary[scala.Nothing]
+  /**
+    * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tween-hooks }\`
+    * @since 1.8
+    */
   type PropHooks = StringDictionary[PropHook[Node]]
   // #endregion
   // region Queue
@@ -107,7 +118,43 @@ package object JQuery {
     * A selector is used in jQuery to select DOM elements from a DOM document. That document is, in most cases, the DOM document present in all browsers, but can also be an XML document received via Ajax.
     */
   type Selector = String
+  // region Special event hooks
+  // #region Special event hooks
+  /**
+    * The jQuery special event hooks are a set of per-event-name functions and properties that allow code to control the behavior of event processing within jQuery. The mechanism is similar to `fixHooks` in that the special event information is stored in `jQuery.event.special.NAME`, where `NAME` is the name of the special event. Event names are case sensitive.
+    *
+    * As with `fixHooks`, the special event hooks design assumes it will be very rare that two unrelated pieces of code want to process the same event name. Special event authors who need to modify events with existing hooks will need to take precautions to avoid introducing unwanted side-effects by clobbering those hooks.
+    * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
+    */
+  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - typings.cypress.Anon_NoBubble
+    - typings.cypress.Anon_BindType
+    - typings.cypress.Anon_DelegateType
+    - typings.cypress.Anon_Data[TTarget, TData]
+    - typings.cypress.Anon_False[TTarget]
+    - typings.cypress.Anon_AddHandleObj[TTarget, TData]
+    - typings.cypress.Anon_HandleObj[TTarget, TData]
+    - typings.cypress.Anon_DataEvent[TTarget, TData]
+    - typings.cypress.Anon_DataDefault[TTarget, TData]
+    - typings.cypress.Anon_DataEventHandle[TTarget, TData]
+    - typings.cypress.Anon_Event[TTarget]
+    - typings.cypress.Anon_EventPostDispatch[TTarget]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
+  type SpecialEventHook[TTarget, TData] = (_SpecialEventHook[TTarget, TData]) | StringDictionary[scala.Nothing]
   type SpecialEventHooks = StringDictionary[SpecialEventHook[EventTarget, js.Any]]
+  // #endregion
+  // region Speed
+  // #region Speed
+  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - typings.cypress.Anon_Duration
+    - typings.cypress.Anon_Easing
+    - typings.cypress.Anon_Complete[TElement]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
+  type SpeedSettings[TElement] = _SpeedSettings[TElement] | StringDictionary[scala.Nothing]
   // #endregion
   // region Deferred
   // #region Deferred
@@ -128,9 +175,19 @@ package object JQuery {
   ]
   type TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, TType /* <: String */] = EventHandlerBase[
     TCurrentTarget, 
-    /* import warning: ImportType.apply Failed type conversion: cypress.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget>[TType] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: cypress.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget>[TType] */ js.Any
   ]
   type TypeOrArray[T] = T | js.Array[T]
+  // #endregion
+  // region Val hooks
+  // #region Val hooks
+  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - typings.cypress.Anon_Elem[TElement]
+    - typings.cypress.Anon_ElemSet[TElement]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
+  type ValHook[TElement] = _ValHook[TElement] | StringDictionary[scala.Nothing]
   type ValHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   StringDictionary[ValHook[HTMLElement]]
   // #endregion
@@ -144,7 +201,7 @@ package object JQuery {
     - typings.std.HTMLAllCollection
   */
   type _Falsy = js.UndefOr[__Falsy | Null | HTMLAllCollection]
-  type _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ TType in keyof cypress.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget> ]:? cypress.JQuery.TypeEventHandler<TDelegateTarget, TData, TCurrentTarget, TTarget, TType> | false | object}
     */ typings.cypress.cypressStrings._TypeEventHandlers with js.Any
   /**

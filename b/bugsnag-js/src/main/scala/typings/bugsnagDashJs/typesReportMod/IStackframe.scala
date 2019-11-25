@@ -23,12 +23,12 @@ object IStackframe {
     lineNumber: Int | Double = null,
     method: String = null
   ): IStackframe = {
-    val __obj = js.Dynamic.literal(file = file)
-    if (code != null) __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(inProject)) __obj.updateDynamic("inProject")(inProject)
+    if (!js.isUndefined(inProject)) __obj.updateDynamic("inProject")(inProject.asInstanceOf[js.Any])
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStackframe]
   }
 }

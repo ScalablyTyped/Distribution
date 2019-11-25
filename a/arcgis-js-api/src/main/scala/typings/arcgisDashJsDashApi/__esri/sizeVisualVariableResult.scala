@@ -65,7 +65,7 @@ object sizeVisualVariableResult {
     statistics: SummaryStatisticsResult,
     visualVariables: js.Array[SizeVariable]
   ): sizeVisualVariableResult = {
-    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, basemapTheme = basemapTheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme, statistics = statistics, visualVariables = visualVariables)
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo.asInstanceOf[js.Any], basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], defaultValuesUsed = defaultValuesUsed.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], visualVariables = visualVariables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[sizeVisualVariableResult]
   }

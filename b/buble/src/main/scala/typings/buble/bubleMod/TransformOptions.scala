@@ -39,14 +39,14 @@ object TransformOptions {
     transforms: Anon_Arrow = null
   ): TransformOptions = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (!js.isUndefined(includeContent)) __obj.updateDynamic("includeContent")(includeContent)
-    if (jsx != null) __obj.updateDynamic("jsx")(jsx)
-    if (!js.isUndefined(namedFunctionExpressions)) __obj.updateDynamic("namedFunctionExpressions")(namedFunctionExpressions)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeContent)) __obj.updateDynamic("includeContent")(includeContent.asInstanceOf[js.Any])
+    if (jsx != null) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
+    if (!js.isUndefined(namedFunctionExpressions)) __obj.updateDynamic("namedFunctionExpressions")(namedFunctionExpressions.asInstanceOf[js.Any])
     if (objectAssign != null) __obj.updateDynamic("objectAssign")(objectAssign.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformOptions]
   }
 }

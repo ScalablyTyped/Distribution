@@ -13,7 +13,7 @@ object PartialtextPartialCSSProperties {
   @scala.inline
   def apply(text: PartialCSSProperties = null): PartialtextPartialCSSProperties = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialtextPartialCSSProperties]
   }
 }

@@ -22,7 +22,7 @@ trait ITaxAmount extends js.Object {
 object ITaxAmount {
   @scala.inline
   def apply(amount: Double, inclusive: Boolean, tax_rate: String | ITaxRate): ITaxAmount = {
-    val __obj = js.Dynamic.literal(amount = amount, inclusive = inclusive, tax_rate = tax_rate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], tax_rate = tax_rate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITaxAmount]
   }

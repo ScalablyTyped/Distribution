@@ -14,7 +14,7 @@ object Anon_Count {
   def apply(count: Int | Double = null, unit: String = null): Anon_Count = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Count]
   }
 }

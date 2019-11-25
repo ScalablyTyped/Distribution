@@ -31,14 +31,14 @@ object Codec {
     isLossy: js.UndefOr[Boolean] = js.undefined,
     weirdFrameTruncation: js.UndefOr[Boolean] = js.undefined
   ): Codec = {
-    val __obj = js.Dynamic.literal(canDecode = canDecode, canEncode = canEncode, description = description)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(directRendering)) __obj.updateDynamic("directRendering")(directRendering)
-    if (!js.isUndefined(drawHorizBand)) __obj.updateDynamic("drawHorizBand")(drawHorizBand)
-    if (!js.isUndefined(intraFrameOnly)) __obj.updateDynamic("intraFrameOnly")(intraFrameOnly)
-    if (!js.isUndefined(isLossless)) __obj.updateDynamic("isLossless")(isLossless)
-    if (!js.isUndefined(isLossy)) __obj.updateDynamic("isLossy")(isLossy)
-    if (!js.isUndefined(weirdFrameTruncation)) __obj.updateDynamic("weirdFrameTruncation")(weirdFrameTruncation)
+    val __obj = js.Dynamic.literal(canDecode = canDecode.asInstanceOf[js.Any], canEncode = canEncode.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(directRendering)) __obj.updateDynamic("directRendering")(directRendering.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawHorizBand)) __obj.updateDynamic("drawHorizBand")(drawHorizBand.asInstanceOf[js.Any])
+    if (!js.isUndefined(intraFrameOnly)) __obj.updateDynamic("intraFrameOnly")(intraFrameOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLossless)) __obj.updateDynamic("isLossless")(isLossless.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLossy)) __obj.updateDynamic("isLossy")(isLossy.asInstanceOf[js.Any])
+    if (!js.isUndefined(weirdFrameTruncation)) __obj.updateDynamic("weirdFrameTruncation")(weirdFrameTruncation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Codec]
   }
 }

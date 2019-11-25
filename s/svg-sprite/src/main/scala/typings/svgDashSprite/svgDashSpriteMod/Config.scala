@@ -44,12 +44,12 @@ object Config {
     variables: js.Any = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (svg != null) __obj.updateDynamic("svg")(svg)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

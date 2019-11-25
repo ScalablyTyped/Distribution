@@ -37,9 +37,9 @@ object Options {
     maxAge: Int | Double = null
   ): Options[ArgumentsType, CacheKeyType, ReturnType] = {
     val __obj = js.Dynamic.literal()
-    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (cacheKey != null) __obj.updateDynamic("cacheKey")(js.Any.fromFunction1(cacheKey))
-    if (!js.isUndefined(cachePromiseRejection)) __obj.updateDynamic("cachePromiseRejection")(cachePromiseRejection)
+    if (!js.isUndefined(cachePromiseRejection)) __obj.updateDynamic("cachePromiseRejection")(cachePromiseRejection.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[ArgumentsType, CacheKeyType, ReturnType]]
   }

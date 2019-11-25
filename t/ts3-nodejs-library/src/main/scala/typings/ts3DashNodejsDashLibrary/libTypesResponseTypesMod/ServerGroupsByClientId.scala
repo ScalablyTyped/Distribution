@@ -13,7 +13,7 @@ trait ServerGroupsByClientId extends js.Object {
 object ServerGroupsByClientId {
   @scala.inline
   def apply(cldbid: Double, name: String, sgid: Double): ServerGroupsByClientId = {
-    val __obj = js.Dynamic.literal(cldbid = cldbid, name = name, sgid = sgid)
+    val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sgid = sgid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerGroupsByClientId]
   }

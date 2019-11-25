@@ -58,13 +58,13 @@ object _Rule {
     NoncurrentVersionTransition: _NoncurrentVersionTransition = null,
     Transition: _Transition = null
   ): _Rule = {
-    val __obj = js.Dynamic.literal(Prefix = Prefix, Status = Status.asInstanceOf[js.Any])
-    if (AbortIncompleteMultipartUpload != null) __obj.updateDynamic("AbortIncompleteMultipartUpload")(AbortIncompleteMultipartUpload)
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration)
-    if (ID != null) __obj.updateDynamic("ID")(ID)
-    if (NoncurrentVersionExpiration != null) __obj.updateDynamic("NoncurrentVersionExpiration")(NoncurrentVersionExpiration)
-    if (NoncurrentVersionTransition != null) __obj.updateDynamic("NoncurrentVersionTransition")(NoncurrentVersionTransition)
-    if (Transition != null) __obj.updateDynamic("Transition")(Transition)
+    val __obj = js.Dynamic.literal(Prefix = Prefix.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
+    if (AbortIncompleteMultipartUpload != null) __obj.updateDynamic("AbortIncompleteMultipartUpload")(AbortIncompleteMultipartUpload.asInstanceOf[js.Any])
+    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
+    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
+    if (NoncurrentVersionExpiration != null) __obj.updateDynamic("NoncurrentVersionExpiration")(NoncurrentVersionExpiration.asInstanceOf[js.Any])
+    if (NoncurrentVersionTransition != null) __obj.updateDynamic("NoncurrentVersionTransition")(NoncurrentVersionTransition.asInstanceOf[js.Any])
+    if (Transition != null) __obj.updateDynamic("Transition")(Transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Rule]
   }
 }

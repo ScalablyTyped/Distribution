@@ -13,7 +13,7 @@ trait Anon_EndPosition extends js.Object {
 object Anon_EndPosition {
   @scala.inline
   def apply(endPosition: Cartesian2, startPosition: Cartesian2): Anon_EndPosition = {
-    val __obj = js.Dynamic.literal(endPosition = endPosition, startPosition = startPosition)
+    val __obj = js.Dynamic.literal(endPosition = endPosition.asInstanceOf[js.Any], startPosition = startPosition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EndPosition]
   }

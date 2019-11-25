@@ -13,8 +13,8 @@ object RTCDtlsParameters {
   @scala.inline
   def apply(fingerprints: js.Array[RTCDtlsFingerprint] = null, role: RTCDtlsRole = null): RTCDtlsParameters = {
     val __obj = js.Dynamic.literal()
-    if (fingerprints != null) __obj.updateDynamic("fingerprints")(fingerprints)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (fingerprints != null) __obj.updateDynamic("fingerprints")(fingerprints.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDtlsParameters]
   }
 }

@@ -30,15 +30,15 @@ object SchedulerMessagesRecurrenceEditor {
     yearly: SchedulerMessagesRecurrenceEditorYearly = null
   ): SchedulerMessagesRecurrenceEditor = {
     val __obj = js.Dynamic.literal()
-    if (daily != null) __obj.updateDynamic("daily")(daily)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (frequencies != null) __obj.updateDynamic("frequencies")(frequencies)
-    if (monthly != null) __obj.updateDynamic("monthly")(monthly)
-    if (offsetPositions != null) __obj.updateDynamic("offsetPositions")(offsetPositions)
-    if (recurrenceEditorTitle != null) __obj.updateDynamic("recurrenceEditorTitle")(recurrenceEditorTitle)
-    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays)
-    if (weekly != null) __obj.updateDynamic("weekly")(weekly)
-    if (yearly != null) __obj.updateDynamic("yearly")(yearly)
+    if (daily != null) __obj.updateDynamic("daily")(daily.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (frequencies != null) __obj.updateDynamic("frequencies")(frequencies.asInstanceOf[js.Any])
+    if (monthly != null) __obj.updateDynamic("monthly")(monthly.asInstanceOf[js.Any])
+    if (offsetPositions != null) __obj.updateDynamic("offsetPositions")(offsetPositions.asInstanceOf[js.Any])
+    if (recurrenceEditorTitle != null) __obj.updateDynamic("recurrenceEditorTitle")(recurrenceEditorTitle.asInstanceOf[js.Any])
+    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays.asInstanceOf[js.Any])
+    if (weekly != null) __obj.updateDynamic("weekly")(weekly.asInstanceOf[js.Any])
+    if (yearly != null) __obj.updateDynamic("yearly")(yearly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditor]
   }
 }

@@ -65,3 +65,62 @@ import scala.scalajs.js.annotation._
 */
 trait FunctionGroupType extends js.Object
 
+object FunctionGroupType {
+  @scala.inline
+  def AGGR: typings.qlikDashEngineapi.qlikDashEngineapiStrings.AGGR = this.cast("AGGR")
+  @scala.inline
+  def ALL: typings.qlikDashEngineapi.qlikDashEngineapiStrings.ALL = this.cast("ALL")
+  @scala.inline
+  def CLR: typings.qlikDashEngineapi.qlikDashEngineapiStrings.CLR = this.cast("CLR")
+  @scala.inline
+  def CND: typings.qlikDashEngineapi.qlikDashEngineapiStrings.CND = this.cast("CND")
+  @scala.inline
+  def COUNT: typings.qlikDashEngineapi.qlikDashEngineapiStrings.COUNT = this.cast("COUNT")
+  @scala.inline
+  def DATE: typings.qlikDashEngineapi.qlikDashEngineapiStrings.DATE = this.cast("DATE")
+  @scala.inline
+  def EXP: typings.qlikDashEngineapi.qlikDashEngineapiStrings.EXP = this.cast("EXP")
+  @scala.inline
+  def EXT: typings.qlikDashEngineapi.qlikDashEngineapiStrings.EXT = this.cast("EXT")
+  @scala.inline
+  def FILE: typings.qlikDashEngineapi.qlikDashEngineapiStrings.FILE = this.cast("FILE")
+  @scala.inline
+  def FIN: typings.qlikDashEngineapi.qlikDashEngineapiStrings.FIN = this.cast("FIN")
+  @scala.inline
+  def FRMT: typings.qlikDashEngineapi.qlikDashEngineapiStrings.FRMT = this.cast("FRMT")
+  @scala.inline
+  def GEO: typings.qlikDashEngineapi.qlikDashEngineapiStrings.GEO = this.cast("GEO")
+  @scala.inline
+  def LOG: typings.qlikDashEngineapi.qlikDashEngineapiStrings.LOG = this.cast("LOG")
+  @scala.inline
+  def MAPP: typings.qlikDashEngineapi.qlikDashEngineapiStrings.MAPP = this.cast("MAPP")
+  @scala.inline
+  def MATH: typings.qlikDashEngineapi.qlikDashEngineapiStrings.MATH = this.cast("MATH")
+  @scala.inline
+  def NONE: typings.qlikDashEngineapi.qlikDashEngineapiStrings.NONE = this.cast("NONE")
+  @scala.inline
+  def NULL: typings.qlikDashEngineapi.qlikDashEngineapiStrings.NULL = this.cast("NULL")
+  @scala.inline
+  def NUM: typings.qlikDashEngineapi.qlikDashEngineapiStrings.NUM = this.cast("NUM")
+  @scala.inline
+  def NUMI: typings.qlikDashEngineapi.qlikDashEngineapiStrings.NUMI = this.cast("NUMI")
+  @scala.inline
+  def RCRD: typings.qlikDashEngineapi.qlikDashEngineapiStrings.RCRD = this.cast("RCRD")
+  @scala.inline
+  def RNG: typings.qlikDashEngineapi.qlikDashEngineapiStrings.RNG = this.cast("RNG")
+  @scala.inline
+  def RNK: typings.qlikDashEngineapi.qlikDashEngineapiStrings.RNK = this.cast("RNK")
+  @scala.inline
+  def STR: typings.qlikDashEngineapi.qlikDashEngineapiStrings.STR = this.cast("STR")
+  @scala.inline
+  def SYS: typings.qlikDashEngineapi.qlikDashEngineapiStrings.SYS = this.cast("SYS")
+  @scala.inline
+  def TBL: typings.qlikDashEngineapi.qlikDashEngineapiStrings.TBL = this.cast("TBL")
+  @scala.inline
+  def TRIG: typings.qlikDashEngineapi.qlikDashEngineapiStrings.TRIG = this.cast("TRIG")
+  @scala.inline
+  def U: typings.qlikDashEngineapi.qlikDashEngineapiStrings.U = this.cast("U")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -40,18 +40,18 @@ object MsSqlConnectionConfig {
     stream: js.UndefOr[Boolean] = js.undefined,
     user: String = null
   ): MsSqlConnectionConfig = {
-    val __obj = js.Dynamic.literal(database = database, server = server)
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (driver != null) __obj.updateDynamic("driver")(driver)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(parseJSON)) __obj.updateDynamic("parseJSON")(parseJSON)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (pool != null) __obj.updateDynamic("pool")(pool)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (driver != null) __obj.updateDynamic("driver")(driver.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseJSON)) __obj.updateDynamic("parseJSON")(parseJSON.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[MsSqlConnectionConfig]
   }
 }

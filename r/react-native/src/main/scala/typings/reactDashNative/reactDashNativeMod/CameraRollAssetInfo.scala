@@ -13,7 +13,7 @@ trait CameraRollAssetInfo extends js.Object {
 object CameraRollAssetInfo {
   @scala.inline
   def apply(edges: js.Array[CameraRollEdgeInfo], page_info: Anon_Endcursor): CameraRollAssetInfo = {
-    val __obj = js.Dynamic.literal(edges = edges, page_info = page_info)
+    val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], page_info = page_info.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CameraRollAssetInfo]
   }

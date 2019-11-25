@@ -27,17 +27,17 @@ object SecurityGetApiKey {
     username: String = null
   ): SecurityGetApiKey = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace)
+    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
-    if (realm_name != null) __obj.updateDynamic("realm_name")(realm_name)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (realm_name != null) __obj.updateDynamic("realm_name")(realm_name.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityGetApiKey]
   }
 }

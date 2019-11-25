@@ -17,7 +17,7 @@ object _UnmarshalledS3KeyFilter {
   @scala.inline
   def apply(FilterRules: js.Array[_UnmarshalledFilterRule] = null): _UnmarshalledS3KeyFilter = {
     val __obj = js.Dynamic.literal()
-    if (FilterRules != null) __obj.updateDynamic("FilterRules")(FilterRules)
+    if (FilterRules != null) __obj.updateDynamic("FilterRules")(FilterRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledS3KeyFilter]
   }
 }

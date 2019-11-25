@@ -56,14 +56,14 @@ object StateInfo {
     trackCrumbTrail: Boolean | String = null,
     trackTypes: js.UndefOr[Boolean] = js.undefined
   ): StateInfo = {
-    val __obj = js.Dynamic.literal(key = key)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (defaultTypes != null) __obj.updateDynamic("defaultTypes")(defaultTypes)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (defaultTypes != null) __obj.updateDynamic("defaultTypes")(defaultTypes.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
     if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (trackCrumbTrail != null) __obj.updateDynamic("trackCrumbTrail")(trackCrumbTrail.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackTypes)) __obj.updateDynamic("trackTypes")(trackTypes)
+    if (!js.isUndefined(trackTypes)) __obj.updateDynamic("trackTypes")(trackTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateInfo]
   }
 }

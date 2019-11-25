@@ -11,7 +11,7 @@ trait JobAssignedEvent extends JobEvent {
 object JobAssignedEvent {
   @scala.inline
   def apply(jobId: String, name: String, request: TaskAgentJobRequest): JobAssignedEvent = {
-    val __obj = js.Dynamic.literal(jobId = jobId, name = name, request = request)
+    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobAssignedEvent]
   }

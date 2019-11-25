@@ -63,7 +63,7 @@ object PathFinderOpts {
     swampCost: Int | Double = null
   ): PathFinderOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flee)) __obj.updateDynamic("flee")(flee)
+    if (!js.isUndefined(flee)) __obj.updateDynamic("flee")(flee.asInstanceOf[js.Any])
     if (heuristicWeight != null) __obj.updateDynamic("heuristicWeight")(heuristicWeight.asInstanceOf[js.Any])
     if (maxCost != null) __obj.updateDynamic("maxCost")(maxCost.asInstanceOf[js.Any])
     if (maxOps != null) __obj.updateDynamic("maxOps")(maxOps.asInstanceOf[js.Any])

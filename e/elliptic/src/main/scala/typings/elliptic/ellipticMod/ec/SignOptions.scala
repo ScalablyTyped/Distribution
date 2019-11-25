@@ -22,10 +22,10 @@ object SignOptions {
     persEnc: String = null
   ): SignOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canonical)) __obj.updateDynamic("canonical")(canonical)
-    if (k != null) __obj.updateDynamic("k")(k)
-    if (pers != null) __obj.updateDynamic("pers")(pers)
-    if (persEnc != null) __obj.updateDynamic("persEnc")(persEnc)
+    if (!js.isUndefined(canonical)) __obj.updateDynamic("canonical")(canonical.asInstanceOf[js.Any])
+    if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
+    if (pers != null) __obj.updateDynamic("pers")(pers.asInstanceOf[js.Any])
+    if (persEnc != null) __obj.updateDynamic("persEnc")(persEnc.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptions]
   }
 }

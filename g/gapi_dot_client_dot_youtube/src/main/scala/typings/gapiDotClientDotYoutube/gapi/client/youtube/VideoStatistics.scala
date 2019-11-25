@@ -27,11 +27,11 @@ object VideoStatistics {
     viewCount: String = null
   ): VideoStatistics = {
     val __obj = js.Dynamic.literal()
-    if (commentCount != null) __obj.updateDynamic("commentCount")(commentCount)
-    if (dislikeCount != null) __obj.updateDynamic("dislikeCount")(dislikeCount)
-    if (favoriteCount != null) __obj.updateDynamic("favoriteCount")(favoriteCount)
-    if (likeCount != null) __obj.updateDynamic("likeCount")(likeCount)
-    if (viewCount != null) __obj.updateDynamic("viewCount")(viewCount)
+    if (commentCount != null) __obj.updateDynamic("commentCount")(commentCount.asInstanceOf[js.Any])
+    if (dislikeCount != null) __obj.updateDynamic("dislikeCount")(dislikeCount.asInstanceOf[js.Any])
+    if (favoriteCount != null) __obj.updateDynamic("favoriteCount")(favoriteCount.asInstanceOf[js.Any])
+    if (likeCount != null) __obj.updateDynamic("likeCount")(likeCount.asInstanceOf[js.Any])
+    if (viewCount != null) __obj.updateDynamic("viewCount")(viewCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoStatistics]
   }
 }

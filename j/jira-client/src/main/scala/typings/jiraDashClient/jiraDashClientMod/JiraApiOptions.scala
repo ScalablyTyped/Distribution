@@ -41,21 +41,21 @@ object JiraApiOptions {
     username: String = null,
     webhookVersion: String = null
   ): JiraApiOptions = {
-    val __obj = js.Dynamic.literal(host = host)
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (bearer != null) __obj.updateDynamic("bearer")(bearer)
-    if (greenhopperVersion != null) __obj.updateDynamic("greenhopperVersion")(greenhopperVersion)
-    if (intermediatePath != null) __obj.updateDynamic("intermediatePath")(intermediatePath)
-    if (oauth != null) __obj.updateDynamic("oauth")(oauth)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (port != null) __obj.updateDynamic("port")(port)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (bearer != null) __obj.updateDynamic("bearer")(bearer.asInstanceOf[js.Any])
+    if (greenhopperVersion != null) __obj.updateDynamic("greenhopperVersion")(greenhopperVersion.asInstanceOf[js.Any])
+    if (intermediatePath != null) __obj.updateDynamic("intermediatePath")(intermediatePath.asInstanceOf[js.Any])
+    if (oauth != null) __obj.updateDynamic("oauth")(oauth.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
-    if (webhookVersion != null) __obj.updateDynamic("webhookVersion")(webhookVersion)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (webhookVersion != null) __obj.updateDynamic("webhookVersion")(webhookVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[JiraApiOptions]
   }
 }

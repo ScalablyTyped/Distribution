@@ -16,7 +16,7 @@ object HandlerDecorations {
   @scala.inline
   def apply(proxy: ProxyHandlerOptions = null): HandlerDecorations = {
     val __obj = js.Dynamic.literal()
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandlerDecorations]
   }
 }

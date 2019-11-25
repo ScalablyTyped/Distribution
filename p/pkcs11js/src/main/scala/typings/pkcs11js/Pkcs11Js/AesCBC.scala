@@ -13,9 +13,9 @@ trait AesCBC extends IParams {
 object AesCBC {
   @scala.inline
   def apply(iv: Buffer, `type`: Double, data: Buffer = null): AesCBC = {
-    val __obj = js.Dynamic.literal(iv = iv)
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesCBC]
   }
 }

@@ -21,9 +21,9 @@ object WatcherOptions {
   ): WatcherOptions = {
     val __obj = js.Dynamic.literal()
     if (chokidar != null) __obj.updateDynamic("chokidar")(chokidar.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearScreen)) __obj.updateDynamic("clearScreen")(clearScreen)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (!js.isUndefined(clearScreen)) __obj.updateDynamic("clearScreen")(clearScreen.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatcherOptions]
   }
 }

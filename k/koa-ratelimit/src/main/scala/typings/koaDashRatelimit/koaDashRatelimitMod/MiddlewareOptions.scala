@@ -60,14 +60,14 @@ object MiddlewareOptions {
     max: Int | Double = null,
     `throw`: js.UndefOr[Boolean] = js.undefined
   ): MiddlewareOptions = {
-    val __obj = js.Dynamic.literal(db = db)
-    if (!js.isUndefined(disableHeader)) __obj.updateDynamic("disableHeader")(disableHeader)
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHeader)) __obj.updateDynamic("disableHeader")(disableHeader.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(js.Any.fromFunction1(id))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(`throw`)) __obj.updateDynamic("throw")(`throw`)
+    if (!js.isUndefined(`throw`)) __obj.updateDynamic("throw")(`throw`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiddlewareOptions]
   }
 }

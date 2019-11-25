@@ -44,8 +44,8 @@ object NodeCondition {
     status: String,
     `type`: String
   ): NodeCondition = {
-    val __obj = js.Dynamic.literal(lastHeartbeatTime = lastHeartbeatTime, lastTransitionTime = lastTransitionTime, message = message, reason = reason, status = status)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(lastHeartbeatTime = lastHeartbeatTime.asInstanceOf[js.Any], lastTransitionTime = lastTransitionTime.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeCondition]
   }
 }

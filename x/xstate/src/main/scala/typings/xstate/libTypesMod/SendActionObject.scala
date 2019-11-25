@@ -25,7 +25,7 @@ object SendActionObject {
     to: String | Double | (Actor[_, EventObject]) = null
   ): SendActionObject[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])

@@ -15,7 +15,7 @@ trait Anon_IgnoreElementEnd extends js.Object {
 object Anon_IgnoreElementEnd {
   @scala.inline
   def apply(ignoreElementEnd: Boolean, shallow: Boolean, singleCharacters: Boolean, startPosition: Position): Anon_IgnoreElementEnd = {
-    val __obj = js.Dynamic.literal(ignoreElementEnd = ignoreElementEnd, shallow = shallow, singleCharacters = singleCharacters, startPosition = startPosition)
+    val __obj = js.Dynamic.literal(ignoreElementEnd = ignoreElementEnd.asInstanceOf[js.Any], shallow = shallow.asInstanceOf[js.Any], singleCharacters = singleCharacters.asInstanceOf[js.Any], startPosition = startPosition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IgnoreElementEnd]
   }

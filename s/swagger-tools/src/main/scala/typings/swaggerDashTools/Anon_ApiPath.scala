@@ -34,11 +34,11 @@ object Anon_ApiPath {
     operationPath: js.Array[String] = null,
     useStubs: js.UndefOr[Boolean] = js.undefined
   ): Anon_ApiPath[P] = {
-    val __obj = js.Dynamic.literal(apiPath = apiPath, params = params.asInstanceOf[js.Any], path = path, security = security, swaggerObject = swaggerObject, swaggerVersion = swaggerVersion)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (operationParameters != null) __obj.updateDynamic("operationParameters")(operationParameters)
-    if (operationPath != null) __obj.updateDynamic("operationPath")(operationPath)
-    if (!js.isUndefined(useStubs)) __obj.updateDynamic("useStubs")(useStubs)
+    val __obj = js.Dynamic.literal(apiPath = apiPath.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any], swaggerObject = swaggerObject.asInstanceOf[js.Any], swaggerVersion = swaggerVersion.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (operationParameters != null) __obj.updateDynamic("operationParameters")(operationParameters.asInstanceOf[js.Any])
+    if (operationPath != null) __obj.updateDynamic("operationPath")(operationPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStubs)) __obj.updateDynamic("useStubs")(useStubs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApiPath[P]]
   }
 }

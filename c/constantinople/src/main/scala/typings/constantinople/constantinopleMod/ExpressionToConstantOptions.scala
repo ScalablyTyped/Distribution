@@ -12,7 +12,7 @@ object ExpressionToConstantOptions {
   @scala.inline
   def apply(constants: js.Any = null): ExpressionToConstantOptions = {
     val __obj = js.Dynamic.literal()
-    if (constants != null) __obj.updateDynamic("constants")(constants)
+    if (constants != null) __obj.updateDynamic("constants")(constants.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressionToConstantOptions]
   }
 }

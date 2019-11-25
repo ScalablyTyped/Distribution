@@ -27,8 +27,8 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(model: IOutputAreaModel, rendermime: IRenderMimeRegistry, contentFactory: IContentFactory = null): IOptions = {
-    val __obj = js.Dynamic.literal(model = model, rendermime = rendermime)
-    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], rendermime = rendermime.asInstanceOf[js.Any])
+    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

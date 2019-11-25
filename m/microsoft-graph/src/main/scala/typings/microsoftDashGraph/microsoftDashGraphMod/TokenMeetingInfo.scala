@@ -12,7 +12,7 @@ object TokenMeetingInfo {
   @scala.inline
   def apply(token: String = null): TokenMeetingInfo = {
     val __obj = js.Dynamic.literal()
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenMeetingInfo]
   }
 }

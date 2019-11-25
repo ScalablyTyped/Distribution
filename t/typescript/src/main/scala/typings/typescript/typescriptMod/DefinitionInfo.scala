@@ -25,11 +25,11 @@ object DefinitionInfo {
     originalFileName: String = null,
     originalTextSpan: TextSpan = null
   ): DefinitionInfo = {
-    val __obj = js.Dynamic.literal(containerKind = containerKind, containerName = containerName, fileName = fileName, kind = kind, name = name, textSpan = textSpan)
-    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan)
-    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan)
-    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
-    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
+    val __obj = js.Dynamic.literal(containerKind = containerKind.asInstanceOf[js.Any], containerName = containerName.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
+    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan.asInstanceOf[js.Any])
+    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan.asInstanceOf[js.Any])
+    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName.asInstanceOf[js.Any])
+    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinitionInfo]
   }
 }

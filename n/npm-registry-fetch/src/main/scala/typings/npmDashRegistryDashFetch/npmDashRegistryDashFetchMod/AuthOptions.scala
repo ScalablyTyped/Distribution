@@ -90,16 +90,16 @@ object AuthOptions {
     username: String = null
   ): AuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (_auth != null) __obj.updateDynamic("_auth")(_auth)
-    if (_authToken != null) __obj.updateDynamic("_authToken")(_authToken)
-    if (_password != null) __obj.updateDynamic("_password")(_password)
-    if (!js.isUndefined(`always-auth`)) __obj.updateDynamic("always-auth")(`always-auth`)
-    if (!js.isUndefined(alwaysAuth)) __obj.updateDynamic("alwaysAuth")(alwaysAuth)
-    if (email != null) __obj.updateDynamic("email")(email)
+    if (_auth != null) __obj.updateDynamic("_auth")(_auth.asInstanceOf[js.Any])
+    if (_authToken != null) __obj.updateDynamic("_authToken")(_authToken.asInstanceOf[js.Any])
+    if (_password != null) __obj.updateDynamic("_password")(_password.asInstanceOf[js.Any])
+    if (!js.isUndefined(`always-auth`)) __obj.updateDynamic("always-auth")(`always-auth`.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysAuth)) __obj.updateDynamic("alwaysAuth")(alwaysAuth.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (otp != null) __obj.updateDynamic("otp")(otp.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

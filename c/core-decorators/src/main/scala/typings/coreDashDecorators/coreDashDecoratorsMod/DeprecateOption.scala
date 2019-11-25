@@ -11,7 +11,7 @@ trait DeprecateOption extends js.Object {
 object DeprecateOption {
   @scala.inline
   def apply(url: String): DeprecateOption = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeprecateOption]
   }

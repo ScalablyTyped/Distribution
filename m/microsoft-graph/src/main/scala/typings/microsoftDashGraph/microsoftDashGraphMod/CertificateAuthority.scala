@@ -37,11 +37,11 @@ object CertificateAuthority {
   ): CertificateAuthority = {
     val __obj = js.Dynamic.literal()
     if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (certificateRevocationListUrl != null) __obj.updateDynamic("certificateRevocationListUrl")(certificateRevocationListUrl)
-    if (deltaCertificateRevocationListUrl != null) __obj.updateDynamic("deltaCertificateRevocationListUrl")(deltaCertificateRevocationListUrl)
-    if (!js.isUndefined(isRootAuthority)) __obj.updateDynamic("isRootAuthority")(isRootAuthority)
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
-    if (issuerSki != null) __obj.updateDynamic("issuerSki")(issuerSki)
+    if (certificateRevocationListUrl != null) __obj.updateDynamic("certificateRevocationListUrl")(certificateRevocationListUrl.asInstanceOf[js.Any])
+    if (deltaCertificateRevocationListUrl != null) __obj.updateDynamic("deltaCertificateRevocationListUrl")(deltaCertificateRevocationListUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRootAuthority)) __obj.updateDynamic("isRootAuthority")(isRootAuthority.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    if (issuerSki != null) __obj.updateDynamic("issuerSki")(issuerSki.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthority]
   }
 }

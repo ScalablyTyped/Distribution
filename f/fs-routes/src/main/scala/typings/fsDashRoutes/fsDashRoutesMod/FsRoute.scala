@@ -12,7 +12,7 @@ trait FsRoute extends js.Object {
 object FsRoute {
   @scala.inline
   def apply(path: String, route: String): FsRoute = {
-    val __obj = js.Dynamic.literal(path = path, route = route)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FsRoute]
   }

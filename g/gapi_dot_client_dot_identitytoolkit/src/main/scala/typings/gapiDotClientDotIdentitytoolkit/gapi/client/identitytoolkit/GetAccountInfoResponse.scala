@@ -15,8 +15,8 @@ object GetAccountInfoResponse {
   @scala.inline
   def apply(kind: String = null, users: js.Array[UserInfo] = null): GetAccountInfoResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (users != null) __obj.updateDynamic("users")(users)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountInfoResponse]
   }
 }

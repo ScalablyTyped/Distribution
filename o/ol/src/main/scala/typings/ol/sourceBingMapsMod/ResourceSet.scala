@@ -11,7 +11,7 @@ trait ResourceSet extends js.Object {
 object ResourceSet {
   @scala.inline
   def apply(resources: js.Array[Resource]): ResourceSet = {
-    val __obj = js.Dynamic.literal(resources = resources)
+    val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceSet]
   }

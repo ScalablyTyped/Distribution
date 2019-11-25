@@ -14,7 +14,7 @@ trait FlowControlChannelRequest extends ChannelRequest {
 object FlowControlChannelRequest {
   @scala.inline
   def apply(clientControl: Boolean, recipient: Double, request: `xon-xoff`): FlowControlChannelRequest = {
-    val __obj = js.Dynamic.literal(clientControl = clientControl, recipient = recipient, request = request)
+    val __obj = js.Dynamic.literal(clientControl = clientControl.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlowControlChannelRequest]
   }

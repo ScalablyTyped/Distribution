@@ -38,10 +38,10 @@ object efnOptions {
     val __obj = js.Dynamic.literal()
     if (afterAllRender != null) __obj.updateDynamic("afterAllRender")(js.Any.fromFunction2(afterAllRender))
     if (beforeSingleRender != null) __obj.updateDynamic("beforeSingleRender")(js.Any.fromFunction2(beforeSingleRender))
-    if (localsName != null) __obj.updateDynamic("localsName")(localsName)
-    if (sessionName != null) __obj.updateDynamic("sessionName")(sessionName)
-    if (utilityName != null) __obj.updateDynamic("utilityName")(utilityName)
-    if (viewName != null) __obj.updateDynamic("viewName")(viewName)
+    if (localsName != null) __obj.updateDynamic("localsName")(localsName.asInstanceOf[js.Any])
+    if (sessionName != null) __obj.updateDynamic("sessionName")(sessionName.asInstanceOf[js.Any])
+    if (utilityName != null) __obj.updateDynamic("utilityName")(utilityName.asInstanceOf[js.Any])
+    if (viewName != null) __obj.updateDynamic("viewName")(viewName.asInstanceOf[js.Any])
     __obj.asInstanceOf[efnOptions]
   }
 }

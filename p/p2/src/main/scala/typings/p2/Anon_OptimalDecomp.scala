@@ -18,9 +18,9 @@ object Anon_OptimalDecomp {
     skipSimpleCheck: js.UndefOr[Boolean] = js.undefined
   ): Anon_OptimalDecomp = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(optimalDecomp)) __obj.updateDynamic("optimalDecomp")(optimalDecomp)
+    if (!js.isUndefined(optimalDecomp)) __obj.updateDynamic("optimalDecomp")(optimalDecomp.asInstanceOf[js.Any])
     if (removeCollinearPoints != null) __obj.updateDynamic("removeCollinearPoints")(removeCollinearPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipSimpleCheck)) __obj.updateDynamic("skipSimpleCheck")(skipSimpleCheck)
+    if (!js.isUndefined(skipSimpleCheck)) __obj.updateDynamic("skipSimpleCheck")(skipSimpleCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OptimalDecomp]
   }
 }

@@ -12,8 +12,8 @@ trait RsaKeys extends js.Object {
 object RsaKeys {
   @scala.inline
   def apply(`private`: String, public: String): RsaKeys = {
-    val __obj = js.Dynamic.literal(public = public)
-    __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any])
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaKeys]
   }
 }

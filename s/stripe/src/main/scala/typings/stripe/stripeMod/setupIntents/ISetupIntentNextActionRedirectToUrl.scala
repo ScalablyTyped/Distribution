@@ -17,8 +17,8 @@ trait ISetupIntentNextActionRedirectToUrl extends js.Object {
 object ISetupIntentNextActionRedirectToUrl {
   @scala.inline
   def apply(redirect_to_url: Anon_Returnurl, `type`: redirect_to_url): ISetupIntentNextActionRedirectToUrl = {
-    val __obj = js.Dynamic.literal(redirect_to_url = redirect_to_url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(redirect_to_url = redirect_to_url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetupIntentNextActionRedirectToUrl]
   }
 }

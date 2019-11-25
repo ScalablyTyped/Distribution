@@ -11,7 +11,7 @@ trait Anon_ActivePageName extends js.Object {
 object Anon_ActivePageName {
   @scala.inline
   def apply(ActivePageName: String): Anon_ActivePageName = {
-    val __obj = js.Dynamic.literal(ActivePageName = ActivePageName)
+    val __obj = js.Dynamic.literal(ActivePageName = ActivePageName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActivePageName]
   }

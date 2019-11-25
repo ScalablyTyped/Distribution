@@ -14,7 +14,7 @@ trait Anon_ArrowStart extends js.Object {
 object Anon_ArrowStart {
   @scala.inline
   def apply(arrowStart: Point, sourceIntersection: Point, targetIntersection: Point): Anon_ArrowStart = {
-    val __obj = js.Dynamic.literal(arrowStart = arrowStart, sourceIntersection = sourceIntersection, targetIntersection = targetIntersection)
+    val __obj = js.Dynamic.literal(arrowStart = arrowStart.asInstanceOf[js.Any], sourceIntersection = sourceIntersection.asInstanceOf[js.Any], targetIntersection = targetIntersection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArrowStart]
   }

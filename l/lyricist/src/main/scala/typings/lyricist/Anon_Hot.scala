@@ -13,7 +13,7 @@ trait Anon_Hot extends js.Object {
 object Anon_Hot {
   @scala.inline
   def apply(hot: Boolean, pageviews: Double, unreviewed_annotations: Double): Anon_Hot = {
-    val __obj = js.Dynamic.literal(hot = hot, pageviews = pageviews, unreviewed_annotations = unreviewed_annotations)
+    val __obj = js.Dynamic.literal(hot = hot.asInstanceOf[js.Any], pageviews = pageviews.asInstanceOf[js.Any], unreviewed_annotations = unreviewed_annotations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hot]
   }

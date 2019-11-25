@@ -13,8 +13,8 @@ object Config {
   @scala.inline
   def apply(password: String = null, username: String = null): Config = {
     val __obj = js.Dynamic.literal()
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

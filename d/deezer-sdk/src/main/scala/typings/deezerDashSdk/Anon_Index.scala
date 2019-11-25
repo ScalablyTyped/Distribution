@@ -13,7 +13,7 @@ trait Anon_Index extends js.Object {
 object Anon_Index {
   @scala.inline
   def apply(index: Double, track: Track): Anon_Index = {
-    val __obj = js.Dynamic.literal(index = index, track = track)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Index]
   }

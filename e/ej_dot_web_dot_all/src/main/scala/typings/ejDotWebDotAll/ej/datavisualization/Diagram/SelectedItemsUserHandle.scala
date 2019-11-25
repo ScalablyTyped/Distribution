@@ -79,20 +79,20 @@ object SelectedItemsUserHandle {
     visible: js.UndefOr[Boolean] = js.undefined
   ): SelectedItemsUserHandle = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (!js.isUndefined(enableMultiSelection)) __obj.updateDynamic("enableMultiSelection")(enableMultiSelection)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMultiSelection)) __obj.updateDynamic("enableMultiSelection")(enableMultiSelection.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (pathColor != null) __obj.updateDynamic("pathColor")(pathColor)
-    if (pathData != null) __obj.updateDynamic("pathData")(pathData)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (pathColor != null) __obj.updateDynamic("pathColor")(pathColor.asInstanceOf[js.Any])
+    if (pathData != null) __obj.updateDynamic("pathData")(pathData.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tool != null) __obj.updateDynamic("tool")(tool)
+    if (tool != null) __obj.updateDynamic("tool")(tool.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedItemsUserHandle]
   }
 }

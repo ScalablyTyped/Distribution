@@ -1,10 +1,6 @@
 package typings.dojo.dojox.calendar
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyFunction
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojo.store.api.Store
 import typings.dojo.dojoStrings.allDayAttr
@@ -199,28 +195,124 @@ class StoreMixin () extends Stateful {
   @JSName("set")
   def set_summaryAttr(property: summaryAttr, value: String): Unit = js.native
   @JSName("watch")
-  def watch_allDayAttr(property: allDayAttr, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_allDayAttr(
+    property: allDayAttr,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_cssClassFunc(property: cssClassFunc, callback: Fn_NewValueOldValuePropertyFunction): Anon_Unwatch = js.native
+  def watch_cssClassFunc(
+    property: cssClassFunc,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Function], 
+      /* newValue */ js.UndefOr[js.Function], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_decodeDate(property: decodeDate, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_decodeDate(
+    property: decodeDate,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_displayedItemsInvalidated(property: displayedItemsInvalidated, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_displayedItemsInvalidated(
+    property: displayedItemsInvalidated,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_encodeDate(property: encodeDate, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_encodeDate(
+    property: encodeDate,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_endTimeAttr(property: endTimeAttr, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_endTimeAttr(
+    property: endTimeAttr,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_query(property: query, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_query(
+    property: query,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_queryOptions(property: queryOptions, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_queryOptions(
+    property: queryOptions,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_startTimeAttr(property: startTimeAttr, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_startTimeAttr(
+    property: startTimeAttr,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_store(property: store, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_store(
+    property: store,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_subColumnAttr(property: subColumnAttr, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_subColumnAttr(
+    property: subColumnAttr,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_summaryAttr(property: summaryAttr, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_summaryAttr(
+    property: summaryAttr,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

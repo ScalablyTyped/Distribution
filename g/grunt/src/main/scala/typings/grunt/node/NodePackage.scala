@@ -24,10 +24,10 @@ object NodePackage {
     homepage: java.lang.String = null,
     keywords: js.Array[java.lang.String] = null
   ): NodePackage = {
-    val __obj = js.Dynamic.literal(name = name, version = version)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodePackage]
   }
 }

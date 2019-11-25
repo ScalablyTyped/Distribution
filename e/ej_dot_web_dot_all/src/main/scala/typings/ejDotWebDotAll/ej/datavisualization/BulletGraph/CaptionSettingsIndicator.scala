@@ -64,17 +64,17 @@ object CaptionSettingsIndicator {
     visible: js.UndefOr[Boolean] = js.undefined
   ): CaptionSettingsIndicator = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
     if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
     if (textAngle != null) __obj.updateDynamic("textAngle")(textAngle.asInstanceOf[js.Any])
     if (textPosition != null) __obj.updateDynamic("textPosition")(textPosition.asInstanceOf[js.Any])
     if (textSpacing != null) __obj.updateDynamic("textSpacing")(textSpacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSettingsIndicator]
   }
 }

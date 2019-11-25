@@ -26,13 +26,13 @@ object Upload {
     uploadTime: String = null
   ): Upload = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (customDataSourceId != null) __obj.updateDynamic("customDataSourceId")(customDataSourceId)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (uploadTime != null) __obj.updateDynamic("uploadTime")(uploadTime)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (customDataSourceId != null) __obj.updateDynamic("customDataSourceId")(customDataSourceId.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (uploadTime != null) __obj.updateDynamic("uploadTime")(uploadTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Upload]
   }
 }

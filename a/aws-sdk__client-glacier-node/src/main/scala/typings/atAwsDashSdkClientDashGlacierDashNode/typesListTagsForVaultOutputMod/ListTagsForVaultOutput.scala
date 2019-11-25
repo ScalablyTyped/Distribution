@@ -22,8 +22,8 @@ trait ListTagsForVaultOutput extends _OutputTypesUnion {
 object ListTagsForVaultOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Tags: StringDictionary[String] = null): ListTagsForVaultOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForVaultOutput]
   }
 }

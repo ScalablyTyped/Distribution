@@ -30,11 +30,11 @@ object Command {
     `type`: String = null
   ): Command = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword)
-    if (resetPasswordFlags != null) __obj.updateDynamic("resetPasswordFlags")(resetPasswordFlags)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword.asInstanceOf[js.Any])
+    if (resetPasswordFlags != null) __obj.updateDynamic("resetPasswordFlags")(resetPasswordFlags.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
 }

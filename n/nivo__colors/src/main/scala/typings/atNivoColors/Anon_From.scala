@@ -15,8 +15,8 @@ trait Anon_From
 object Anon_From {
   @scala.inline
   def apply(from: String, modifiers: js.Array[ColorModifier] = null): Anon_From = {
-    val __obj = js.Dynamic.literal(from = from)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_From]
   }
 }

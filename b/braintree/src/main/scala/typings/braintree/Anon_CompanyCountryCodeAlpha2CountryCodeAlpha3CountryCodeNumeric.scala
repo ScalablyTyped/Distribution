@@ -36,18 +36,18 @@ object Anon_CompanyCountryCodeAlpha2CountryCodeAlpha3CountryCodeNumeric {
     streetAddress: String = null
   ): Anon_CompanyCountryCodeAlpha2CountryCodeAlpha3CountryCodeNumeric = {
     val __obj = js.Dynamic.literal()
-    if (company != null) __obj.updateDynamic("company")(company)
-    if (countryCodeAlpha2 != null) __obj.updateDynamic("countryCodeAlpha2")(countryCodeAlpha2)
-    if (countryCodeAlpha3 != null) __obj.updateDynamic("countryCodeAlpha3")(countryCodeAlpha3)
-    if (countryCodeNumeric != null) __obj.updateDynamic("countryCodeNumeric")(countryCodeNumeric)
-    if (countryName != null) __obj.updateDynamic("countryName")(countryName)
-    if (extendedAddress != null) __obj.updateDynamic("extendedAddress")(extendedAddress)
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress)
+    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
+    if (countryCodeAlpha2 != null) __obj.updateDynamic("countryCodeAlpha2")(countryCodeAlpha2.asInstanceOf[js.Any])
+    if (countryCodeAlpha3 != null) __obj.updateDynamic("countryCodeAlpha3")(countryCodeAlpha3.asInstanceOf[js.Any])
+    if (countryCodeNumeric != null) __obj.updateDynamic("countryCodeNumeric")(countryCodeNumeric.asInstanceOf[js.Any])
+    if (countryName != null) __obj.updateDynamic("countryName")(countryName.asInstanceOf[js.Any])
+    if (extendedAddress != null) __obj.updateDynamic("extendedAddress")(extendedAddress.asInstanceOf[js.Any])
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompanyCountryCodeAlpha2CountryCodeAlpha3CountryCodeNumeric]
   }
 }

@@ -25,7 +25,7 @@ object Result {
     port: Double,
     results: js.Array[Results]
   ): Result = {
-    val __obj = js.Dynamic.literal(address = address, attempts = attempts, avg = avg, max = max, min = min, port = port, results = results)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], attempts = attempts.asInstanceOf[js.Any], avg = avg.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Result]
   }

@@ -33,7 +33,7 @@ package object libObjectTypeComposerMod {
   type ComposeFieldConfig[TSource, TContext, TArgs] = (ComposeFieldConfigAsObject[TSource, TContext, TArgs]) | (ComposeOutputType[js.Any, TContext]) | (Thunk[
     (ComposeFieldConfigAsObject[TSource, TContext, TArgs]) | (ComposeOutputType[js.Any, TContext])
   ])
-  type ComposeFieldConfigArgumentMap[TArgs] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ComposeFieldConfigArgumentMap[TArgs] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ argName in keyof TArgs ]: graphql-compose.graphql-compose/lib/ObjectTypeComposer.ComposeArgumentConfig}
     */ typings.graphqlDashCompose.graphqlDashComposeStrings.ComposeFieldConfigArgumentMap with js.Any
   type ComposeFieldConfigMap[TSource, TContext] = ObjMap[ComposeFieldConfig[TSource, TContext, ArgsMap]]

@@ -42,12 +42,12 @@ object AxisRangeChangedEventUIParam {
     oldMinimumValue: js.Any = null
   ): AxisRangeChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (newMaximumValue != null) __obj.updateDynamic("newMaximumValue")(newMaximumValue)
-    if (newMinimumValue != null) __obj.updateDynamic("newMinimumValue")(newMinimumValue)
-    if (oldMaximumValue != null) __obj.updateDynamic("oldMaximumValue")(oldMaximumValue)
-    if (oldMinimumValue != null) __obj.updateDynamic("oldMinimumValue")(oldMinimumValue)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
+    if (newMaximumValue != null) __obj.updateDynamic("newMaximumValue")(newMaximumValue.asInstanceOf[js.Any])
+    if (newMinimumValue != null) __obj.updateDynamic("newMinimumValue")(newMinimumValue.asInstanceOf[js.Any])
+    if (oldMaximumValue != null) __obj.updateDynamic("oldMaximumValue")(oldMaximumValue.asInstanceOf[js.Any])
+    if (oldMinimumValue != null) __obj.updateDynamic("oldMinimumValue")(oldMinimumValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisRangeChangedEventUIParam]
   }
 }

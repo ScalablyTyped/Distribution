@@ -28,8 +28,8 @@ object PlusBluetoothBluetoothcharacteristic {
   @scala.inline
   def apply(properties: PlusBluetoothBluetoothcharacteristicProperties = null, uuid: String = null): PlusBluetoothBluetoothcharacteristic = {
     val __obj = js.Dynamic.literal()
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusBluetoothBluetoothcharacteristic]
   }
 }

@@ -1,0 +1,20 @@
+package typings.googleDashGax.buildSrcFallbackMod.protobuf.util
+
+import typings.protobufjs.protobufjsMod.Constructor
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("google-gax/build/src/fallback", "protobuf.util.decorateType")
+@js.native
+object decorateType extends js.Object {
+  /**
+    * Decorator helper for types (TypeScript).
+    * @param ctor Constructor function
+    * @param [typeName] Type name, defaults to the constructor's name
+    * @returns Reflected type
+    */
+  def apply[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](ctor: Constructor[T]): typings.protobufjs.protobufjsMod.Type = js.native
+  def apply[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](ctor: Constructor[T], typeName: String): typings.protobufjs.protobufjsMod.Type = js.native
+}
+

@@ -21,9 +21,9 @@ object EventToPromiseOptions {
     ignoreErrors: js.UndefOr[Boolean] = js.undefined
   ): EventToPromiseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventToPromiseOptions]
   }
 }

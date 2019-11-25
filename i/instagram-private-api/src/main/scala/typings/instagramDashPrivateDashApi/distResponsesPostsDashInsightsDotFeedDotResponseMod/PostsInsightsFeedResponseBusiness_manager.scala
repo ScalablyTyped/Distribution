@@ -11,7 +11,7 @@ trait PostsInsightsFeedResponseBusiness_manager extends js.Object {
 object PostsInsightsFeedResponseBusiness_manager {
   @scala.inline
   def apply(top_posts_unit: PostsInsightsFeedResponseTop_posts_unit): PostsInsightsFeedResponseBusiness_manager = {
-    val __obj = js.Dynamic.literal(top_posts_unit = top_posts_unit)
+    val __obj = js.Dynamic.literal(top_posts_unit = top_posts_unit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostsInsightsFeedResponseBusiness_manager]
   }

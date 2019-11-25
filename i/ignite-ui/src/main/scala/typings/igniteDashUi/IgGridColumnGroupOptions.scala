@@ -45,10 +45,10 @@ object IgGridColumnGroupOptions {
     hidden: String = null
   ): IgGridColumnGroupOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowGroupCollapsing)) __obj.updateDynamic("allowGroupCollapsing")(allowGroupCollapsing)
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowGroupCollapsing)) __obj.updateDynamic("allowGroupCollapsing")(allowGroupCollapsing.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridColumnGroupOptions]
   }
 }

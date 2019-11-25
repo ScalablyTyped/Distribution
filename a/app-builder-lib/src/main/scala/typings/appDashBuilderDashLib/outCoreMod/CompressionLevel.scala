@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait CompressionLevel extends js.Object
 
+object CompressionLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def maximum: typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.maximum = this.cast("maximum")
+  @scala.inline
+  def normal: typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.normal = this.cast("normal")
+  @scala.inline
+  def store: typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.store = this.cast("store")
+}
+

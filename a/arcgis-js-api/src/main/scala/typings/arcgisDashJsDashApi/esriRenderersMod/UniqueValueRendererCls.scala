@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.esriRenderersMod
 
-import typings.arcgisDashJsDashApi.__esri.UniqueValueRenderer
 import typings.arcgisDashJsDashApi.__esri.UniqueValueRendererProperties
 import typings.arcgisDashJsDashApi.__esri.VisualVariable
 import scala.scalajs.js
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation._
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html)
   */
-class UniqueValueRendererCls () extends UniqueValueRenderer {
+class UniqueValueRendererCls ()
+  extends typings.arcgisDashJsDashApi.__esri.UniqueValueRenderer {
   def this(properties: UniqueValueRendererProperties) = this()
   /**
     * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects. Each object must indicate the type of visual variable to apply (e.g. [ColorVisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html), [SizeVisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html), [OpacityVisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html), [RotationVisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-RotationVariable.html)), the numeric field or expression from which to drive the visualization, and the visual values to map to the data. The following list identifies each visual variable type and provides a link to the specification table of each.

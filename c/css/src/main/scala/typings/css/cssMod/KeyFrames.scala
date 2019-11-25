@@ -27,12 +27,12 @@ object KeyFrames {
     vendor: String = null
   ): KeyFrames = {
     val __obj = js.Dynamic.literal()
-    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyFrames]
   }
 }

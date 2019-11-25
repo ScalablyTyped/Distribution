@@ -14,9 +14,9 @@ object Anon_Computer {
   @scala.inline
   def apply(computer: String = null, phone: String = null, tablet: String = null): Anon_Computer = {
     val __obj = js.Dynamic.literal()
-    if (computer != null) __obj.updateDynamic("computer")(computer)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (tablet != null) __obj.updateDynamic("tablet")(tablet)
+    if (computer != null) __obj.updateDynamic("computer")(computer.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Computer]
   }
 }

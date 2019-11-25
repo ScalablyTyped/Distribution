@@ -44,8 +44,8 @@ object ToastrResponse {
     toastId: Double,
     endTime: Date = null
   ): ToastrResponse = {
-    val __obj = js.Dynamic.literal(map = map, options = options, startTime = startTime, state = state.asInstanceOf[js.Any], toastId = toastId)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], toastId = toastId.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastrResponse]
   }
 }

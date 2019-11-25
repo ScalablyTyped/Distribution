@@ -34,16 +34,16 @@ object CreateOptions {
     stdin: Process = null,
     stdout: Process = null
   ): CreateOptions = {
-    val __obj = js.Dynamic.literal(appId = appId, appName = appName)
-    if (generic != null) __obj.updateDynamic("generic")(generic)
-    if (!js.isUndefined(isSSH)) __obj.updateDynamic("isSSH")(isSSH)
-    if (!js.isUndefined(isTTY)) __obj.updateDynamic("isTTY")(isTTY)
-    if (pid != null) __obj.updateDynamic("pid")(pid)
-    if (!js.isUndefined(preferProcessSigwinch)) __obj.updateDynamic("preferProcessSigwinch")(preferProcessSigwinch)
-    if (!js.isUndefined(processSigwinch)) __obj.updateDynamic("processSigwinch")(processSigwinch)
-    if (stderr != null) __obj.updateDynamic("stderr")(stderr)
-    if (stdin != null) __obj.updateDynamic("stdin")(stdin)
-    if (stdout != null) __obj.updateDynamic("stdout")(stdout)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any])
+    if (generic != null) __obj.updateDynamic("generic")(generic.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSSH)) __obj.updateDynamic("isSSH")(isSSH.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTTY)) __obj.updateDynamic("isTTY")(isTTY.asInstanceOf[js.Any])
+    if (pid != null) __obj.updateDynamic("pid")(pid.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferProcessSigwinch)) __obj.updateDynamic("preferProcessSigwinch")(preferProcessSigwinch.asInstanceOf[js.Any])
+    if (!js.isUndefined(processSigwinch)) __obj.updateDynamic("processSigwinch")(processSigwinch.asInstanceOf[js.Any])
+    if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
+    if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
+    if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOptions]
   }
 }

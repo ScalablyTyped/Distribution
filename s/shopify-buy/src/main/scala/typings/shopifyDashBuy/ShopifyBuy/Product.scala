@@ -68,9 +68,9 @@ object Product {
     attrs: js.Any = null,
     onlineStoreUrl: String = null
   ): Product = {
-    val __obj = js.Dynamic.literal(description = description, id = id.asInstanceOf[js.Any], images = images, options = options, selectedVariant = selectedVariant, selectedVariantImage = selectedVariantImage, selections = selections, title = title, variants = variants, vendor = vendor)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], selectedVariant = selectedVariant.asInstanceOf[js.Any], selectedVariantImage = selectedVariantImage.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], variants = variants.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Product]
   }
 }

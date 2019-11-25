@@ -16,7 +16,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(born: js.Array[Double], survive: js.Array[Double], topology: `4` | `6` | `8`): Options = {
-    val __obj = js.Dynamic.literal(born = born, survive = survive, topology = topology.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(born = born.asInstanceOf[js.Any], survive = survive.asInstanceOf[js.Any], topology = topology.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

@@ -13,7 +13,7 @@ trait Anon_ClientCount extends js.Object {
 object Anon_ClientCount {
   @scala.inline
   def apply(clientCount: js.Any, httpRPM: Double, wsRPM: Double): Anon_ClientCount = {
-    val __obj = js.Dynamic.literal(clientCount = clientCount, httpRPM = httpRPM, wsRPM = wsRPM)
+    val __obj = js.Dynamic.literal(clientCount = clientCount.asInstanceOf[js.Any], httpRPM = httpRPM.asInstanceOf[js.Any], wsRPM = wsRPM.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClientCount]
   }

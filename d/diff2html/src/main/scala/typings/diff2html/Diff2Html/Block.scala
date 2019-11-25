@@ -21,7 +21,7 @@ object Block {
     oldStartLine: Double,
     oldStartLine2: Int | Double = null
   ): Block = {
-    val __obj = js.Dynamic.literal(header = header, lines = lines, newStartLine = newStartLine, oldStartLine = oldStartLine)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], newStartLine = newStartLine.asInstanceOf[js.Any], oldStartLine = oldStartLine.asInstanceOf[js.Any])
     if (oldStartLine2 != null) __obj.updateDynamic("oldStartLine2")(oldStartLine2.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }

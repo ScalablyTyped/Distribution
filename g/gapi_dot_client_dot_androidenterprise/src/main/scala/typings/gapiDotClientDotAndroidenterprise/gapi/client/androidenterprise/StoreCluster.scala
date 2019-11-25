@@ -35,11 +35,11 @@ object StoreCluster {
     productId: js.Array[String] = null
   ): StoreCluster = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (orderInPage != null) __obj.updateDynamic("orderInPage")(orderInPage)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (orderInPage != null) __obj.updateDynamic("orderInPage")(orderInPage.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreCluster]
   }
 }

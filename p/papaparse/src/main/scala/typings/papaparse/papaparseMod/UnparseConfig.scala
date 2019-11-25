@@ -36,12 +36,12 @@ object UnparseConfig {
     skipEmptyLines: Boolean | greedy = null
   ): UnparseConfig = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar)
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
-    if (newline != null) __obj.updateDynamic("newline")(newline)
-    if (quoteChar != null) __obj.updateDynamic("quoteChar")(quoteChar)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (newline != null) __obj.updateDynamic("newline")(newline.asInstanceOf[js.Any])
+    if (quoteChar != null) __obj.updateDynamic("quoteChar")(quoteChar.asInstanceOf[js.Any])
     if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
     if (skipEmptyLines != null) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnparseConfig]

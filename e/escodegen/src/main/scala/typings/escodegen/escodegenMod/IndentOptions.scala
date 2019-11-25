@@ -27,9 +27,9 @@ object IndentOptions {
     style: String = null
   ): IndentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adjustMultilineComment)) __obj.updateDynamic("adjustMultilineComment")(adjustMultilineComment)
+    if (!js.isUndefined(adjustMultilineComment)) __obj.updateDynamic("adjustMultilineComment")(adjustMultilineComment.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndentOptions]
   }
 }

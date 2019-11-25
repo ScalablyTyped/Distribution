@@ -31,10 +31,10 @@ object Node {
     position: Position = null
   ): Node = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

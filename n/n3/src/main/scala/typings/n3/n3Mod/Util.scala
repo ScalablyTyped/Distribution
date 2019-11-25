@@ -1,6 +1,5 @@
 package typings.n3.n3Mod
 
-import typings.rdfDashJs.rdfDashJsMod.DataFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +19,13 @@ object Util extends js.Object {
   def isVariable(): Boolean = js.native
   def isVariable(value: typings.rdfDashJs.rdfDashJsMod.Term): Boolean = js.native
   def prefix(iri: String): PrefixedToIri = js.native
-  def prefix(iri: String, factory: DataFactory): PrefixedToIri = js.native
+  def prefix(iri: String, factory: typings.rdfDashJs.rdfDashJsMod.DataFactory): PrefixedToIri = js.native
   def prefix(iri: typings.rdfDashJs.rdfDashJsMod.NamedNode): PrefixedToIri = js.native
-  def prefix(iri: typings.rdfDashJs.rdfDashJsMod.NamedNode, factory: DataFactory): PrefixedToIri = js.native
+  def prefix(iri: typings.rdfDashJs.rdfDashJsMod.NamedNode, factory: typings.rdfDashJs.rdfDashJsMod.DataFactory): PrefixedToIri = js.native
   def prefixes(defaultPrefixes: Prefixes[typings.rdfDashJs.rdfDashJsMod.NamedNode | String]): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
-  def prefixes(defaultPrefixes: Prefixes[typings.rdfDashJs.rdfDashJsMod.NamedNode | String], factory: DataFactory): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
+  def prefixes(
+    defaultPrefixes: Prefixes[typings.rdfDashJs.rdfDashJsMod.NamedNode | String],
+    factory: typings.rdfDashJs.rdfDashJsMod.DataFactory
+  ): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
 }
 

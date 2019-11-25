@@ -21,7 +21,7 @@ object IPeoplePickerItemSuggestionStyles {
     personaWrapper: IStyle = null,
     root: IStyle = null
   ): IPeoplePickerItemSuggestionStyles = {
-    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
     if (personaWrapper != null) __obj.updateDynamic("personaWrapper")(personaWrapper.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPeoplePickerItemSuggestionStyles]

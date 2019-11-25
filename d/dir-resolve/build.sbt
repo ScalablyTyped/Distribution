@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dir-resolve"
-version := "1.0-dt-20180214Z-9186b8"
+version := "1.0-dt-20180214Z-b82dfb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -53,11 +53,11 @@ object TargetChange {
     targetIds: js.Array[Double] = null
   ): TargetChange = {
     val __obj = js.Dynamic.literal()
-    if (cause != null) __obj.updateDynamic("cause")(cause)
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken)
-    if (targetChangeType != null) __obj.updateDynamic("targetChangeType")(targetChangeType)
-    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds)
+    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
+    if (targetChangeType != null) __obj.updateDynamic("targetChangeType")(targetChangeType.asInstanceOf[js.Any])
+    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetChange]
   }
 }

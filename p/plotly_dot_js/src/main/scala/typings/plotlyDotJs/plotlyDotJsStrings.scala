@@ -95,7 +95,7 @@ object plotlyDotJsStrings {
   sealed trait avg extends js.Object
   
   @js.native
-  sealed trait b extends js.Object
+  sealed trait b_ extends js.Object
   
   @js.native
   sealed trait back extends js.Object
@@ -338,7 +338,7 @@ object plotlyDotJsStrings {
   sealed trait dt extends js.Object
   
   @js.native
-  sealed trait e extends js.Object
+  sealed trait e_ extends js.Object
   
   @js.native
   sealed trait elastic extends js.Object
@@ -1504,7 +1504,7 @@ object plotlyDotJsStrings {
   @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
   @scala.inline
-  def b: b = "b".asInstanceOf[b]
+  def b_ : b_ = "b".asInstanceOf[b_]
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   @scala.inline
@@ -1666,7 +1666,7 @@ object plotlyDotJsStrings {
   @scala.inline
   def dt: dt = "dt".asInstanceOf[dt]
   @scala.inline
-  def e: e = "e".asInstanceOf[e]
+  def e_ : e_ = "e".asInstanceOf[e_]
   @scala.inline
   def elastic: elastic = "elastic".asInstanceOf[elastic]
   @scala.inline

@@ -14,7 +14,7 @@ trait ElementJson extends js.Object {
 object ElementJson {
   @scala.inline
   def apply(attrs: StringDictionary[js.Any], children: js.Array[ElementJson | TextNode], name: String): ElementJson = {
-    val __obj = js.Dynamic.literal(attrs = attrs, children = children, name = name)
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ElementJson]
   }

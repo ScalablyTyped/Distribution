@@ -13,7 +13,7 @@ trait NodeData
 object NodeData {
   @scala.inline
   def apply(node: TreeItem, path: NumberOrStringArray, treeIndex: Double): NodeData = {
-    val __obj = js.Dynamic.literal(node = node, path = path, treeIndex = treeIndex)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeData]
   }

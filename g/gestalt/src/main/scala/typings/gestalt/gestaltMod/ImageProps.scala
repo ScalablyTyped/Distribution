@@ -37,13 +37,13 @@ object ImageProps {
     size: String = null,
     srcSet: String = null
   ): ImageProps = {
-    val __obj = js.Dynamic.literal(alt = alt, color = color, naturalHeight = naturalHeight, naturalWidth = naturalWidth, src = src)
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], naturalHeight = naturalHeight.asInstanceOf[js.Any], naturalWidth = naturalWidth.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProps]
   }
 }

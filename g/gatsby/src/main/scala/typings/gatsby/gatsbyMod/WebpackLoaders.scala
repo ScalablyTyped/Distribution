@@ -43,10 +43,10 @@ object WebpackLoaders {
     yaml: js.Function,
     StringDictionary: /* key */ StringDictionary[js.Function] = null
   ): WebpackLoaders = {
-    val __obj = js.Dynamic.literal(css = css, eslint = eslint, exports = exports, file = file, imports = imports, json = json, miniCssExtract = miniCssExtract, postcss = postcss, raw = raw, style = style, url = url, yaml = yaml)
-    __obj.updateDynamic("js")(js_)
-    __obj.updateDynamic("null")(`null`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], eslint = eslint.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], miniCssExtract = miniCssExtract.asInstanceOf[js.Any], postcss = postcss.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], yaml = yaml.asInstanceOf[js.Any])
+    __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
+    __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[WebpackLoaders]
   }
 }

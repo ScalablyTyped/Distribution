@@ -32,7 +32,7 @@ object FieldsToEvaluate {
     fields: js.Array[String],
     rulesFrom: js.Array[String]
   ): FieldsToEvaluate = {
-    val __obj = js.Dynamic.literal(fieldUpdates = fieldUpdates, fieldValues = fieldValues, fields = fields, rulesFrom = rulesFrom)
+    val __obj = js.Dynamic.literal(fieldUpdates = fieldUpdates.asInstanceOf[js.Any], fieldValues = fieldValues.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], rulesFrom = rulesFrom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FieldsToEvaluate]
   }

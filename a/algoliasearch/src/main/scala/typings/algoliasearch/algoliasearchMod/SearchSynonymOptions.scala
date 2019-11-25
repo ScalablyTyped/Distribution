@@ -40,8 +40,8 @@ object SearchSynonymOptions {
     val __obj = js.Dynamic.literal()
     if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchSynonymOptions]
   }
 }

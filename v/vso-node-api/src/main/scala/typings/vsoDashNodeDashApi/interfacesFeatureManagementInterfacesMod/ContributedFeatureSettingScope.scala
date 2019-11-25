@@ -18,7 +18,7 @@ trait ContributedFeatureSettingScope extends js.Object {
 object ContributedFeatureSettingScope {
   @scala.inline
   def apply(settingScope: String, userScoped: Boolean): ContributedFeatureSettingScope = {
-    val __obj = js.Dynamic.literal(settingScope = settingScope, userScoped = userScoped)
+    val __obj = js.Dynamic.literal(settingScope = settingScope.asInstanceOf[js.Any], userScoped = userScoped.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContributedFeatureSettingScope]
   }

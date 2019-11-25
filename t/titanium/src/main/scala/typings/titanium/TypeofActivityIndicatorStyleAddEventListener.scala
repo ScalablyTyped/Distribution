@@ -71,7 +71,7 @@ object TypeofActivityIndicatorStyleAddEventListener {
     removeEventListener: (String, js.Function1[/* param0 */ js.Any, _]) => Unit,
     setBubbleParent: Boolean => Unit
   ): TypeofActivityIndicatorStyleAddEventListener = {
-    val __obj = js.Dynamic.literal(BIG = BIG, DARK = DARK, PLAIN = PLAIN, addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName, applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent, fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
+    val __obj = js.Dynamic.literal(BIG = BIG.asInstanceOf[js.Any], DARK = DARK.asInstanceOf[js.Any], PLAIN = PLAIN.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), apiName = apiName.asInstanceOf[js.Any], applyProperties = js.Any.fromFunction1(applyProperties), bubbleParent = bubbleParent.asInstanceOf[js.Any], fireEvent = js.Any.fromFunction2(fireEvent), getApiName = js.Any.fromFunction0(getApiName), getBubbleParent = js.Any.fromFunction0(getBubbleParent), removeEventListener = js.Any.fromFunction2(removeEventListener), setBubbleParent = js.Any.fromFunction1(setBubbleParent))
   
     __obj.asInstanceOf[TypeofActivityIndicatorStyleAddEventListener]
   }

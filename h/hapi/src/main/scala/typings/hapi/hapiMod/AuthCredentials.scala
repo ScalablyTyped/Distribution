@@ -24,9 +24,9 @@ object AuthCredentials {
   @scala.inline
   def apply(app: AppCredentials = null, scope: js.Array[String] = null, user: UserCredentials = null): AuthCredentials = {
     val __obj = js.Dynamic.literal()
-    if (app != null) __obj.updateDynamic("app")(app)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthCredentials]
   }
 }

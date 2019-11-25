@@ -34,15 +34,15 @@ object Options {
     sourceMap: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
-    if (!js.isUndefined(dirname)) __obj.updateDynamic("dirname")(dirname)
+    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(dirname)) __obj.updateDynamic("dirname")(dirname.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(filename)) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
+    if (!js.isUndefined(filename)) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(process)) __obj.updateDynamic("process")(process)
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (!js.isUndefined(process)) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

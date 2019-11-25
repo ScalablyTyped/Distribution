@@ -35,7 +35,7 @@ object ChecksListForSuiteResponseCheckRunsItemApp {
     slug: String,
     updated_at: String
   ): ChecksListForSuiteResponseCheckRunsItemApp = {
-    val __obj = js.Dynamic.literal(created_at = created_at, description = description, events = events, external_url = external_url, html_url = html_url, id = id, name = name, node_id = node_id, owner = owner, permissions = permissions, slug = slug, updated_at = updated_at)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], external_url = external_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksListForSuiteResponseCheckRunsItemApp]
   }

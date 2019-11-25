@@ -27,7 +27,7 @@ object OnBeforeRequestDetails {
     url: String,
     webContentsId: Int | Double = null
   ): OnBeforeRequestDetails = {
-    val __obj = js.Dynamic.literal(id = id, method = method, referrer = referrer, resourceType = resourceType, timestamp = timestamp, uploadData = uploadData, url = url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], uploadData = uploadData.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeforeRequestDetails]
   }

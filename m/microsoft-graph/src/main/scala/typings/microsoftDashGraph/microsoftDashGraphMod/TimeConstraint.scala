@@ -14,8 +14,8 @@ object TimeConstraint {
   @scala.inline
   def apply(activityDomain: ActivityDomain = null, timeSlots: js.Array[TimeSlot] = null): TimeConstraint = {
     val __obj = js.Dynamic.literal()
-    if (activityDomain != null) __obj.updateDynamic("activityDomain")(activityDomain)
-    if (timeSlots != null) __obj.updateDynamic("timeSlots")(timeSlots)
+    if (activityDomain != null) __obj.updateDynamic("activityDomain")(activityDomain.asInstanceOf[js.Any])
+    if (timeSlots != null) __obj.updateDynamic("timeSlots")(timeSlots.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeConstraint]
   }
 }

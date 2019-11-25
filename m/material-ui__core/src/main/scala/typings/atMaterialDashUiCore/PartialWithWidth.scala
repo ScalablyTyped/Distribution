@@ -14,7 +14,7 @@ object PartialWithWidth {
   @scala.inline
   def apply(width: Breakpoint = null): PartialWithWidth = {
     val __obj = js.Dynamic.literal()
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialWithWidth]
   }
 }

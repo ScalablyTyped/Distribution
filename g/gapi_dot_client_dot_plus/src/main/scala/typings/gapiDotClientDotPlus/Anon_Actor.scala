@@ -52,16 +52,16 @@ object Anon_Actor {
     url: String = null
   ): Anon_Actor = {
     val __obj = js.Dynamic.literal()
-    if (actor != null) __obj.updateDynamic("actor")(actor)
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
-    if (originalContent != null) __obj.updateDynamic("originalContent")(originalContent)
-    if (plusoners != null) __obj.updateDynamic("plusoners")(plusoners)
-    if (replies != null) __obj.updateDynamic("replies")(replies)
-    if (resharers != null) __obj.updateDynamic("resharers")(resharers)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
+    if (originalContent != null) __obj.updateDynamic("originalContent")(originalContent.asInstanceOf[js.Any])
+    if (plusoners != null) __obj.updateDynamic("plusoners")(plusoners.asInstanceOf[js.Any])
+    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
+    if (resharers != null) __obj.updateDynamic("resharers")(resharers.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Actor]
   }
 }

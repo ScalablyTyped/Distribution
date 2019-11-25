@@ -32,12 +32,12 @@ object CreateCollectionParams {
     language: Language | String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): CreateCollectionParams = {
-    val __obj = js.Dynamic.literal(environment_id = environment_id, name = name)
-    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(environment_id = environment_id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectionParams]
   }
 }

@@ -15,7 +15,7 @@ trait OnReceiveInfo extends js.Object {
 object OnReceiveInfo {
   @scala.inline
   def apply(connectionId: Double, data: ArrayBuffer): OnReceiveInfo = {
-    val __obj = js.Dynamic.literal(connectionId = connectionId, data = data)
+    val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnReceiveInfo]
   }

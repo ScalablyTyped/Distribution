@@ -23,11 +23,11 @@ object Anon_ActiveColor {
     size: String = null
   ): Anon_ActiveColor = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (side != null) __obj.updateDynamic("side")(side)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActiveColor]
   }
 }

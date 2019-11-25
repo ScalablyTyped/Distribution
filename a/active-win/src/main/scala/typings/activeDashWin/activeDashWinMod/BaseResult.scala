@@ -32,7 +32,7 @@ trait BaseResult extends js.Object {
 object BaseResult {
   @scala.inline
   def apply(bounds: Anon_Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): BaseResult = {
-    val __obj = js.Dynamic.literal(bounds = bounds, id = id, memoryUsage = memoryUsage, owner = owner, title = title)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseResult]
   }

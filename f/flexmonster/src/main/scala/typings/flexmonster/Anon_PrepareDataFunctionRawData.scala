@@ -16,8 +16,8 @@ object Anon_PrepareDataFunctionRawData {
   def apply(prepareDataFunction: /* rawData */ js.Any => _ = null, slice: Slice = null, `type`: String = null): Anon_PrepareDataFunctionRawData = {
     val __obj = js.Dynamic.literal()
     if (prepareDataFunction != null) __obj.updateDynamic("prepareDataFunction")(js.Any.fromFunction1(prepareDataFunction))
-    if (slice != null) __obj.updateDynamic("slice")(slice)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (slice != null) __obj.updateDynamic("slice")(slice.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PrepareDataFunctionRawData]
   }
 }

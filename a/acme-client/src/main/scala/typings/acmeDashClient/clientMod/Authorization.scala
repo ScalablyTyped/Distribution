@@ -30,9 +30,9 @@ object Authorization {
     expires: String = null,
     wildcard: js.UndefOr[Boolean] = js.undefined
   ): Authorization = {
-    val __obj = js.Dynamic.literal(challenges = challenges, identifier = identifier, status = status.asInstanceOf[js.Any], url = url)
-    if (expires != null) __obj.updateDynamic("expires")(expires)
-    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard)
+    val __obj = js.Dynamic.literal(challenges = challenges.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.asInstanceOf[js.Any])
     __obj.asInstanceOf[Authorization]
   }
 }

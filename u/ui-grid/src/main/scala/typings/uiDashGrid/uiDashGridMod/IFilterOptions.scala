@@ -77,14 +77,14 @@ object IFilterOptions {
     `type`: Double | String = null
   ): IFilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCancelFilterButton)) __obj.updateDynamic("disableCancelFilterButton")(disableCancelFilterButton)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (!js.isUndefined(noTerm)) __obj.updateDynamic("noTerm")(noTerm)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (selectOptions != null) __obj.updateDynamic("selectOptions")(selectOptions)
-    if (term != null) __obj.updateDynamic("term")(term)
+    if (!js.isUndefined(disableCancelFilterButton)) __obj.updateDynamic("disableCancelFilterButton")(disableCancelFilterButton.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (!js.isUndefined(noTerm)) __obj.updateDynamic("noTerm")(noTerm.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (selectOptions != null) __obj.updateDynamic("selectOptions")(selectOptions.asInstanceOf[js.Any])
+    if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFilterOptions]
   }

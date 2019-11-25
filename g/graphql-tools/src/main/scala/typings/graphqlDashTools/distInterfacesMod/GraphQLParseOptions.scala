@@ -20,10 +20,10 @@ object GraphQLParseOptions {
     noLocation: js.UndefOr[Boolean] = js.undefined
   ): GraphQLParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowLegacySDLEmptyFields)) __obj.updateDynamic("allowLegacySDLEmptyFields")(allowLegacySDLEmptyFields)
-    if (!js.isUndefined(allowLegacySDLImplementsInterfaces)) __obj.updateDynamic("allowLegacySDLImplementsInterfaces")(allowLegacySDLImplementsInterfaces)
-    if (!js.isUndefined(experimentalFragmentVariables)) __obj.updateDynamic("experimentalFragmentVariables")(experimentalFragmentVariables)
-    if (!js.isUndefined(noLocation)) __obj.updateDynamic("noLocation")(noLocation)
+    if (!js.isUndefined(allowLegacySDLEmptyFields)) __obj.updateDynamic("allowLegacySDLEmptyFields")(allowLegacySDLEmptyFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLegacySDLImplementsInterfaces)) __obj.updateDynamic("allowLegacySDLImplementsInterfaces")(allowLegacySDLImplementsInterfaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentalFragmentVariables)) __obj.updateDynamic("experimentalFragmentVariables")(experimentalFragmentVariables.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLocation)) __obj.updateDynamic("noLocation")(noLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLParseOptions]
   }
 }

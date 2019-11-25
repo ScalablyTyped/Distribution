@@ -21,9 +21,9 @@ object PackageDist {
     integrity: String = null,
     unpackedSize: Int | Double = null
   ): PackageDist = {
-    val __obj = js.Dynamic.literal(shasum = shasum, tarball = tarball)
+    val __obj = js.Dynamic.literal(shasum = shasum.asInstanceOf[js.Any], tarball = tarball.asInstanceOf[js.Any])
     if (fileCount != null) __obj.updateDynamic("fileCount")(fileCount.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity)
+    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
     if (unpackedSize != null) __obj.updateDynamic("unpackedSize")(unpackedSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageDist]
   }

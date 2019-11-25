@@ -14,7 +14,7 @@ trait Anon_FirstSecondIMapView extends js.Object {
 object Anon_FirstSecondIMapView {
   @scala.inline
   def apply(first: IMapView[String, NamedResource], second: IMapView[String, NamedResource]): Anon_FirstSecondIMapView = {
-    val __obj = js.Dynamic.literal(first = first, second = second)
+    val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FirstSecondIMapView]
   }

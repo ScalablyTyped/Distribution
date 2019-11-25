@@ -26,13 +26,13 @@ object QueryOptions {
     startAt: js.Array[_] = null
   ): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (endAt != null) __obj.updateDynamic("endAt")(endAt)
-    if (endBefore != null) __obj.updateDynamic("endBefore")(endBefore)
+    if (endAt != null) __obj.updateDynamic("endAt")(endAt.asInstanceOf[js.Any])
+    if (endBefore != null) __obj.updateDynamic("endBefore")(endBefore.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (selectFields != null) __obj.updateDynamic("selectFields")(selectFields)
-    if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter)
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt)
+    if (selectFields != null) __obj.updateDynamic("selectFields")(selectFields.asInstanceOf[js.Any])
+    if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter.asInstanceOf[js.Any])
+    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

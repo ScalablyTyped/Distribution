@@ -13,8 +13,8 @@ object NodeBase {
   @scala.inline
   def apply(`type`: String, parent: NodeBase = null): NodeBase = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeBase]
   }
 }

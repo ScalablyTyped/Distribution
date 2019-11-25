@@ -33,13 +33,13 @@ object ActiveXObjectNameMap {
     `ADOX.User`: User
   ): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ADOX.Catalog")(`ADOX.Catalog`)
-    __obj.updateDynamic("ADOX.Column")(`ADOX.Column`)
-    __obj.updateDynamic("ADOX.Group")(`ADOX.Group`)
-    __obj.updateDynamic("ADOX.Index")(`ADOX.Index`)
-    __obj.updateDynamic("ADOX.Key")(`ADOX.Key`)
-    __obj.updateDynamic("ADOX.Table")(`ADOX.Table`)
-    __obj.updateDynamic("ADOX.User")(`ADOX.User`)
+    __obj.updateDynamic("ADOX.Catalog")(`ADOX.Catalog`.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Column")(`ADOX.Column`.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Group")(`ADOX.Group`.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Index")(`ADOX.Index`.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Key")(`ADOX.Key`.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Table")(`ADOX.Table`.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.User")(`ADOX.User`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

@@ -14,7 +14,7 @@ trait StoryServiceSeenInputItems extends js.Object {
 object StoryServiceSeenInputItems {
   @scala.inline
   def apply(id: String, taken_at: Double, user: Anon_Pk): StoryServiceSeenInputItems = {
-    val __obj = js.Dynamic.literal(id = id, taken_at = taken_at, user = user)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoryServiceSeenInputItems]
   }

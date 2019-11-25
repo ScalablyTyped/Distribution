@@ -29,7 +29,7 @@ object Anon_AllFriday {
     tuesday: Double,
     wednesday: Double
   ): Anon_AllFriday = {
-    val __obj = js.Dynamic.literal(all = all, friday = friday, monday = monday, none = none, saturday = saturday, sunday = sunday, thursday = thursday, tuesday = tuesday, wednesday = wednesday)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], friday = friday.asInstanceOf[js.Any], monday = monday.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], saturday = saturday.asInstanceOf[js.Any], sunday = sunday.asInstanceOf[js.Any], thursday = thursday.asInstanceOf[js.Any], tuesday = tuesday.asInstanceOf[js.Any], wednesday = wednesday.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllFriday]
   }

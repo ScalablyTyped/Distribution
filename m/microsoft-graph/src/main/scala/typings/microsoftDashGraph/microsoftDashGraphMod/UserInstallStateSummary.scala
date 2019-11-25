@@ -28,12 +28,12 @@ object UserInstallStateSummary {
     userName: String = null
   ): UserInstallStateSummary = {
     val __obj = js.Dynamic.literal()
-    if (deviceStates != null) __obj.updateDynamic("deviceStates")(deviceStates)
+    if (deviceStates != null) __obj.updateDynamic("deviceStates")(deviceStates.asInstanceOf[js.Any])
     if (failedDeviceCount != null) __obj.updateDynamic("failedDeviceCount")(failedDeviceCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (installedDeviceCount != null) __obj.updateDynamic("installedDeviceCount")(installedDeviceCount.asInstanceOf[js.Any])
     if (notInstalledDeviceCount != null) __obj.updateDynamic("notInstalledDeviceCount")(notInstalledDeviceCount.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInstallStateSummary]
   }
 }

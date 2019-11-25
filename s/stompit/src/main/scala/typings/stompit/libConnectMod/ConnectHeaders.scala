@@ -22,11 +22,11 @@ object ConnectHeaders {
     passcode: String = null
   ): ConnectHeaders = {
     val __obj = js.Dynamic.literal()
-    if (`accept-version` != null) __obj.updateDynamic("accept-version")(`accept-version`)
-    if (`heart-beat` != null) __obj.updateDynamic("heart-beat")(`heart-beat`)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (login != null) __obj.updateDynamic("login")(login)
-    if (passcode != null) __obj.updateDynamic("passcode")(passcode)
+    if (`accept-version` != null) __obj.updateDynamic("accept-version")(`accept-version`.asInstanceOf[js.Any])
+    if (`heart-beat` != null) __obj.updateDynamic("heart-beat")(`heart-beat`.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (login != null) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
+    if (passcode != null) __obj.updateDynamic("passcode")(passcode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectHeaders]
   }
 }

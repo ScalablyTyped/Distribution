@@ -27,7 +27,7 @@ object Anon_FilterOption {
     split: String,
     validateSearch: (/* text */ String, /* props */ MentionsProps) => Boolean
   ): Anon_FilterOption = {
-    val __obj = js.Dynamic.literal(filterOption = js.Any.fromFunction2(filterOption), notFoundContent = notFoundContent, prefix = prefix, prefixCls = prefixCls, rows = rows, split = split, validateSearch = js.Any.fromFunction2(validateSearch))
+    val __obj = js.Dynamic.literal(filterOption = js.Any.fromFunction2(filterOption), notFoundContent = notFoundContent.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], split = split.asInstanceOf[js.Any], validateSearch = js.Any.fromFunction2(validateSearch))
   
     __obj.asInstanceOf[Anon_FilterOption]
   }

@@ -61,9 +61,9 @@ object HeightModelInfoProperties {
     vertCRS: String = null
   ): HeightModelInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (heightModel != null) __obj.updateDynamic("heightModel")(heightModel)
+    if (heightModel != null) __obj.updateDynamic("heightModel")(heightModel.asInstanceOf[js.Any])
     if (heightUnit != null) __obj.updateDynamic("heightUnit")(heightUnit.asInstanceOf[js.Any])
-    if (vertCRS != null) __obj.updateDynamic("vertCRS")(vertCRS)
+    if (vertCRS != null) __obj.updateDynamic("vertCRS")(vertCRS.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightModelInfoProperties]
   }
 }

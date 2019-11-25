@@ -18,9 +18,9 @@ object ChromeOsDeviceCpuStatusReports {
     reportTime: String = null
   ): ChromeOsDeviceCpuStatusReports = {
     val __obj = js.Dynamic.literal()
-    if (cpuTemperatureInfo != null) __obj.updateDynamic("cpuTemperatureInfo")(cpuTemperatureInfo)
-    if (cpuUtilizationPercentageInfo != null) __obj.updateDynamic("cpuUtilizationPercentageInfo")(cpuUtilizationPercentageInfo)
-    if (reportTime != null) __obj.updateDynamic("reportTime")(reportTime)
+    if (cpuTemperatureInfo != null) __obj.updateDynamic("cpuTemperatureInfo")(cpuTemperatureInfo.asInstanceOf[js.Any])
+    if (cpuUtilizationPercentageInfo != null) __obj.updateDynamic("cpuUtilizationPercentageInfo")(cpuUtilizationPercentageInfo.asInstanceOf[js.Any])
+    if (reportTime != null) __obj.updateDynamic("reportTime")(reportTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOsDeviceCpuStatusReports]
   }
 }

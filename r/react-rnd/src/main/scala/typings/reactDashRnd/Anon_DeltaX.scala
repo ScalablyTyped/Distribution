@@ -16,7 +16,7 @@ trait Anon_DeltaX extends js.Object {
 object Anon_DeltaX {
   @scala.inline
   def apply(deltaX: Double, deltaY: Double, lastX: Double, lastY: Double, node: HTMLElement): Anon_DeltaX = {
-    val __obj = js.Dynamic.literal(deltaX = deltaX, deltaY = deltaY, lastX = lastX, lastY = lastY, node = node)
+    val __obj = js.Dynamic.literal(deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], lastX = lastX.asInstanceOf[js.Any], lastY = lastY.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DeltaX]
   }

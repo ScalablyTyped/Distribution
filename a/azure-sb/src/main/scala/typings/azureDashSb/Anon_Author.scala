@@ -26,8 +26,8 @@ object Anon_Author {
     updated: DateString,
     author: Anon_Name = null
   ): Anon_Author = {
-    val __obj = js.Dynamic.literal(ContentRootElement = ContentRootElement, id = id, link = link, published = published, title = title, updated = updated)
-    if (author != null) __obj.updateDynamic("author")(author)
+    val __obj = js.Dynamic.literal(ContentRootElement = ContentRootElement.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], published = published.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Author]
   }
 }

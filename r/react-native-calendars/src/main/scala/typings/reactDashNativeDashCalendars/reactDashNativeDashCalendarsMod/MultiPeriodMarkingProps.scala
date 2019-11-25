@@ -14,7 +14,7 @@ trait MultiPeriodMarkingProps extends _CalendarMarkingProps {
 object MultiPeriodMarkingProps {
   @scala.inline
   def apply(markedDates: StringDictionary[MultiPeriodMarking], markingType: `multi-period`): MultiPeriodMarkingProps = {
-    val __obj = js.Dynamic.literal(markedDates = markedDates, markingType = markingType)
+    val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any], markingType = markingType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MultiPeriodMarkingProps]
   }

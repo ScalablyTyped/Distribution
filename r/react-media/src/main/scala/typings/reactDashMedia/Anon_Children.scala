@@ -24,7 +24,7 @@ object Anon_Children {
   ): Anon_Children[Queries] = {
     val __obj = js.Dynamic.literal(queries = queries.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (defaultMatches != null) __obj.updateDynamic("defaultMatches")(defaultMatches)
+    if (defaultMatches != null) __obj.updateDynamic("defaultMatches")(defaultMatches.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[Anon_Children[Queries]]
   }

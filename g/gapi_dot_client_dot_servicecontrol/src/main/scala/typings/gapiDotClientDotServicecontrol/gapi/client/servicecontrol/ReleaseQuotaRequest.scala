@@ -19,8 +19,8 @@ object ReleaseQuotaRequest {
   @scala.inline
   def apply(releaseOperation: QuotaOperation = null, serviceConfigId: String = null): ReleaseQuotaRequest = {
     val __obj = js.Dynamic.literal()
-    if (releaseOperation != null) __obj.updateDynamic("releaseOperation")(releaseOperation)
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    if (releaseOperation != null) __obj.updateDynamic("releaseOperation")(releaseOperation.asInstanceOf[js.Any])
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseQuotaRequest]
   }
 }

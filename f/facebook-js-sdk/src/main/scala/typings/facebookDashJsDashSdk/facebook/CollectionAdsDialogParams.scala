@@ -30,12 +30,12 @@ object CollectionAdsDialogParams {
     product_set_id: String = null,
     redirect_uri: String = null
   ): CollectionAdsDialogParams = {
-    val __obj = js.Dynamic.literal(account_id = account_id, business_id = business_id, display = display, method = method, page_id = page_id, template_id = template_id)
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
-    if (!js.isUndefined(canvas_id)) __obj.updateDynamic("canvas_id")(canvas_id)
-    if (product_catalog_id != null) __obj.updateDynamic("product_catalog_id")(product_catalog_id)
-    if (product_set_id != null) __obj.updateDynamic("product_set_id")(product_set_id)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], business_id = business_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any])
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(canvas_id)) __obj.updateDynamic("canvas_id")(canvas_id.asInstanceOf[js.Any])
+    if (product_catalog_id != null) __obj.updateDynamic("product_catalog_id")(product_catalog_id.asInstanceOf[js.Any])
+    if (product_set_id != null) __obj.updateDynamic("product_set_id")(product_set_id.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionAdsDialogParams]
   }
 }

@@ -12,7 +12,7 @@ trait INgMapOptions extends js.Object {
 object INgMapOptions {
   @scala.inline
   def apply(marker: Anon_AnchorPoint): INgMapOptions = {
-    val __obj = js.Dynamic.literal(marker = marker)
+    val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INgMapOptions]
   }

@@ -29,13 +29,13 @@ object CallOptions {
   ): CallOptions = {
     val __obj = js.Dynamic.literal()
     if (audioBandwidth != null) __obj.updateDynamic("audioBandwidth")(audioBandwidth.asInstanceOf[js.Any])
-    if (audioCodec != null) __obj.updateDynamic("audioCodec")(audioCodec)
-    if (!js.isUndefined(audioReceiveEnabled)) __obj.updateDynamic("audioReceiveEnabled")(audioReceiveEnabled)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (audioCodec != null) __obj.updateDynamic("audioCodec")(audioCodec.asInstanceOf[js.Any])
+    if (!js.isUndefined(audioReceiveEnabled)) __obj.updateDynamic("audioReceiveEnabled")(audioReceiveEnabled.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (videoBandWidth != null) __obj.updateDynamic("videoBandWidth")(videoBandWidth.asInstanceOf[js.Any])
-    if (videoCodec != null) __obj.updateDynamic("videoCodec")(videoCodec)
-    if (!js.isUndefined(videoReceiveEnabled)) __obj.updateDynamic("videoReceiveEnabled")(videoReceiveEnabled)
+    if (videoCodec != null) __obj.updateDynamic("videoCodec")(videoCodec.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoReceiveEnabled)) __obj.updateDynamic("videoReceiveEnabled")(videoReceiveEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }
 }

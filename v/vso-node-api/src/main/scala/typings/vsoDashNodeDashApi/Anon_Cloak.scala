@@ -12,7 +12,7 @@ trait Anon_Cloak extends js.Object {
 object Anon_Cloak {
   @scala.inline
   def apply(cloak: Double, map: Double): Anon_Cloak = {
-    val __obj = js.Dynamic.literal(cloak = cloak, map = map)
+    val __obj = js.Dynamic.literal(cloak = cloak.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cloak]
   }

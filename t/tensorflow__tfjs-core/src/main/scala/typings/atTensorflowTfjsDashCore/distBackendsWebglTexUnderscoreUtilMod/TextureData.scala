@@ -35,13 +35,13 @@ object TextureData {
     usage: TextureUsage = null,
     values: BackendValues = null
   ): TextureData = {
-    val __obj = js.Dynamic.literal(dtype = dtype, shape = shape)
-    if (complexTensors != null) __obj.updateDynamic("complexTensors")(complexTensors)
-    if (!js.isUndefined(isPacked)) __obj.updateDynamic("isPacked")(isPacked)
-    if (slice != null) __obj.updateDynamic("slice")(slice)
-    if (texShape != null) __obj.updateDynamic("texShape")(texShape)
-    if (texture != null) __obj.updateDynamic("texture")(texture)
-    if (usage != null) __obj.updateDynamic("usage")(usage)
+    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
+    if (complexTensors != null) __obj.updateDynamic("complexTensors")(complexTensors.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPacked)) __obj.updateDynamic("isPacked")(isPacked.asInstanceOf[js.Any])
+    if (slice != null) __obj.updateDynamic("slice")(slice.asInstanceOf[js.Any])
+    if (texShape != null) __obj.updateDynamic("texShape")(texShape.asInstanceOf[js.Any])
+    if (texture != null) __obj.updateDynamic("texture")(texture.asInstanceOf[js.Any])
+    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextureData]
   }

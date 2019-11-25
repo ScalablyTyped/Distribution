@@ -10,12 +10,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofCompiler extends js.Object {
-  var Watching: js.Any | (Instantiable3[
+  var Watching: Instantiable3[
     /* compiler */ Compiler, 
     /* watchOptions */ WatchOptions, 
     /* handler */ Handler, 
     typings.webpack.webpackMod.Compiler.Watching
-  ])
+  ]
 }
 
 object TypeofCompiler {
@@ -28,7 +28,7 @@ object TypeofCompiler {
       Watching
     ]
   ): TypeofCompiler = {
-    val __obj = js.Dynamic.literal(Watching = Watching)
+    val __obj = js.Dynamic.literal(Watching = Watching.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofCompiler]
   }

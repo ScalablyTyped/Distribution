@@ -93,16 +93,16 @@ object PlotSplinePointEventsOptions {
     update: PointUpdateCallbackFunction = null
   ): PlotSplinePointEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (drag != null) __obj.updateDynamic("drag")(drag)
-    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
-    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut)
-    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (unselect != null) __obj.updateDynamic("unselect")(unselect)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (drag != null) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
+    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart.asInstanceOf[js.Any])
+    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
+    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut.asInstanceOf[js.Any])
+    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (unselect != null) __obj.updateDynamic("unselect")(unselect.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSplinePointEventsOptions]
   }
 }

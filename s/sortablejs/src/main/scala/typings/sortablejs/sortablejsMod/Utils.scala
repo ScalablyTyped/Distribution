@@ -28,7 +28,7 @@ trait Utils extends js.Object {
     * @param element an HTMLElement.
     * @param prop a property key.
     */
-  def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ js.Any */](element: HTMLElement, prop: K): /* import warning: ImportType.apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any = js.native
+  def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ js.Any */](element: HTMLElement, prop: K): /* import warning: importer.ImportType#apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any = js.native
   /**
     * Set one CSS property.
     * @param element an HTMLElement.
@@ -38,7 +38,7 @@ trait Utils extends js.Object {
   def css[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ js.Any */](
     element: HTMLElement,
     prop: K,
-    value: /* import warning: ImportType.apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.CSSStyleDeclaration[K] */ js.Any
   ): Unit = js.native
   /**
     * Get elements by tag name.

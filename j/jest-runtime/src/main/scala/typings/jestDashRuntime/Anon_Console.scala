@@ -20,9 +20,9 @@ object Anon_Console {
     console: Console = null,
     watch: js.UndefOr[Boolean] = js.undefined
   ): Anon_Console = {
-    val __obj = js.Dynamic.literal(maxWorkers = maxWorkers, watchman = watchman)
-    if (console != null) __obj.updateDynamic("console")(console)
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(maxWorkers = maxWorkers.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
+    if (console != null) __obj.updateDynamic("console")(console.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Console]
   }
 }

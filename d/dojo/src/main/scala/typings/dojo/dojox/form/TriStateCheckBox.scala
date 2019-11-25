@@ -1,9 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValuePropertyAnyArray
 import typings.dojo.dijit.form.Button
 import typings.dojo.dojoStrings.checked
 import typings.dojo.dojoStrings.readOnly
@@ -94,12 +91,44 @@ class TriStateCheckBox () extends Button {
   @JSName("set")
   def set_states(property: states, value: js.Array[_]): Unit = js.native
   @JSName("watch")
-  def watch_checked(property: checked, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_checked(
+    property: checked,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_readOnly(property: readOnly, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_readOnly(
+    property: readOnly,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_stateValue(property: stateValue, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_stateValue(
+    property: stateValue,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_states(property: states, callback: Fn_NewValueOldValuePropertyAnyArray): Anon_Unwatch = js.native
+  def watch_states(
+    property: states,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Array[_]], 
+      /* newValue */ js.UndefOr[js.Array[_]], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -42,11 +42,11 @@ object EditorContextInsertImageOptions {
     success: () => Unit = null
   ): EditorContextInsertImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[EditorContextInsertImageOptions]
   }

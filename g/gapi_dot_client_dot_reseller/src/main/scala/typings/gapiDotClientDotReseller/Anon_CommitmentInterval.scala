@@ -36,9 +36,9 @@ object Anon_CommitmentInterval {
     planName: String = null
   ): Anon_CommitmentInterval = {
     val __obj = js.Dynamic.literal()
-    if (commitmentInterval != null) __obj.updateDynamic("commitmentInterval")(commitmentInterval)
-    if (!js.isUndefined(isCommitmentPlan)) __obj.updateDynamic("isCommitmentPlan")(isCommitmentPlan)
-    if (planName != null) __obj.updateDynamic("planName")(planName)
+    if (commitmentInterval != null) __obj.updateDynamic("commitmentInterval")(commitmentInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCommitmentPlan)) __obj.updateDynamic("isCommitmentPlan")(isCommitmentPlan.asInstanceOf[js.Any])
+    if (planName != null) __obj.updateDynamic("planName")(planName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommitmentInterval]
   }
 }

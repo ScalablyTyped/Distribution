@@ -15,7 +15,7 @@ trait TokenUsed extends js.Object {
 object TokenUsed {
   @scala.inline
   def apply(client: ClientList, token: String, token1: String, token2: String): TokenUsed = {
-    val __obj = js.Dynamic.literal(client = client, token = token, token1 = token1, token2 = token2)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], token1 = token1.asInstanceOf[js.Any], token2 = token2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TokenUsed]
   }

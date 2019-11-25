@@ -23,7 +23,7 @@ object StoreInfosResource {
     country: CountryResource,
     list: Anon_AccesstokenAccountIdAltBearertokenCallbackCountries => Request[ListStoreInfosResponse]
   ): StoreInfosResource = {
-    val __obj = js.Dynamic.literal(country = country, list = js.Any.fromFunction1(list))
+    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[StoreInfosResource]
   }

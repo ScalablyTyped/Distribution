@@ -15,8 +15,8 @@ object Anon_Date {
   @scala.inline
   def apply(date: String = null, reasons: js.Array[Anon_FilteringCount] = null): Anon_Date = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (reasons != null) __obj.updateDynamic("reasons")(reasons)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (reasons != null) __obj.updateDynamic("reasons")(reasons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Date]
   }
 }

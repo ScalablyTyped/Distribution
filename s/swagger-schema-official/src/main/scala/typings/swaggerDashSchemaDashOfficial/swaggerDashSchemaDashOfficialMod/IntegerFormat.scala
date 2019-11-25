@@ -16,7 +16,7 @@ object IntegerFormat {
   @scala.inline
   def apply(`type`: integer, format: int32 | int64 = null): IntegerFormat = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerFormat]
   }

@@ -13,7 +13,7 @@ object ActiveXObjectNameMap {
   @scala.inline
   def apply(`Forms.Image`: Image): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Forms.Image")(`Forms.Image`)
+    __obj.updateDynamic("Forms.Image")(`Forms.Image`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

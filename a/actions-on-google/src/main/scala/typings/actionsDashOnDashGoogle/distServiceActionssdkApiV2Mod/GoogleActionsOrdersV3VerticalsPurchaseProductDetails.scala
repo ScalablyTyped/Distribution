@@ -44,11 +44,11 @@ object GoogleActionsOrdersV3VerticalsPurchaseProductDetails {
     productType: String = null
   ): GoogleActionsOrdersV3VerticalsPurchaseProductDetails = {
     val __obj = js.Dynamic.literal()
-    if (gtin != null) __obj.updateDynamic("gtin")(gtin)
-    if (plu != null) __obj.updateDynamic("plu")(plu)
-    if (productAttributes != null) __obj.updateDynamic("productAttributes")(productAttributes)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (productType != null) __obj.updateDynamic("productType")(productType)
+    if (gtin != null) __obj.updateDynamic("gtin")(gtin.asInstanceOf[js.Any])
+    if (plu != null) __obj.updateDynamic("plu")(plu.asInstanceOf[js.Any])
+    if (productAttributes != null) __obj.updateDynamic("productAttributes")(productAttributes.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (productType != null) __obj.updateDynamic("productType")(productType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchaseProductDetails]
   }
 }

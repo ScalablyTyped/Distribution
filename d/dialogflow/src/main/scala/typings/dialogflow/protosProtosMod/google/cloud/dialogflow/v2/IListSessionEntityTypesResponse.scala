@@ -16,8 +16,8 @@ object IListSessionEntityTypesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, sessionEntityTypes: js.Array[ISessionEntityType] = null): IListSessionEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (sessionEntityTypes != null) __obj.updateDynamic("sessionEntityTypes")(sessionEntityTypes)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (sessionEntityTypes != null) __obj.updateDynamic("sessionEntityTypes")(sessionEntityTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListSessionEntityTypesResponse]
   }
 }

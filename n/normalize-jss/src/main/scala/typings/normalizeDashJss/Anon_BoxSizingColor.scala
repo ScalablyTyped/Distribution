@@ -23,7 +23,7 @@ object Anon_BoxSizingColor {
     padding: Double,
     whiteSpace: String
   ): Anon_BoxSizingColor = {
-    val __obj = js.Dynamic.literal(boxSizing = boxSizing, color = color, display = display, maxWidth = maxWidth, padding = padding, whiteSpace = whiteSpace)
+    val __obj = js.Dynamic.literal(boxSizing = boxSizing.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], whiteSpace = whiteSpace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BoxSizingColor]
   }

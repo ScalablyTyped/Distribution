@@ -63,14 +63,14 @@ object Options {
     refreshTimeoutOnRequest: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attachResetToRequest)) __obj.updateDynamic("attachResetToRequest")(attachResetToRequest)
+    if (!js.isUndefined(attachResetToRequest)) __obj.updateDynamic("attachResetToRequest")(attachResetToRequest.asInstanceOf[js.Any])
     if (failCallback != null) __obj.updateDynamic("failCallback")(js.Any.fromFunction4(failCallback))
     if (freeRetries != null) __obj.updateDynamic("freeRetries")(freeRetries.asInstanceOf[js.Any])
-    if (handleStoreError != null) __obj.updateDynamic("handleStoreError")(handleStoreError)
+    if (handleStoreError != null) __obj.updateDynamic("handleStoreError")(handleStoreError.asInstanceOf[js.Any])
     if (lifetime != null) __obj.updateDynamic("lifetime")(lifetime.asInstanceOf[js.Any])
     if (maxWait != null) __obj.updateDynamic("maxWait")(maxWait.asInstanceOf[js.Any])
     if (minWait != null) __obj.updateDynamic("minWait")(minWait.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshTimeoutOnRequest)) __obj.updateDynamic("refreshTimeoutOnRequest")(refreshTimeoutOnRequest)
+    if (!js.isUndefined(refreshTimeoutOnRequest)) __obj.updateDynamic("refreshTimeoutOnRequest")(refreshTimeoutOnRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

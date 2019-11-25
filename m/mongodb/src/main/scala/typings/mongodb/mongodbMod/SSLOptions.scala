@@ -83,18 +83,18 @@ object SSLOptions {
   ): SSLOptions = {
     val __obj = js.Dynamic.literal()
     if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
-    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
+    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
+    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
-    if (servername != null) __obj.updateDynamic("servername")(servername)
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
-    if (sslCA != null) __obj.updateDynamic("sslCA")(sslCA)
-    if (sslCRL != null) __obj.updateDynamic("sslCRL")(sslCRL)
+    if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (sslCA != null) __obj.updateDynamic("sslCA")(sslCA.asInstanceOf[js.Any])
+    if (sslCRL != null) __obj.updateDynamic("sslCRL")(sslCRL.asInstanceOf[js.Any])
     if (sslCert != null) __obj.updateDynamic("sslCert")(sslCert.asInstanceOf[js.Any])
     if (sslKey != null) __obj.updateDynamic("sslKey")(sslKey.asInstanceOf[js.Any])
     if (sslPass != null) __obj.updateDynamic("sslPass")(sslPass.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate)
+    if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SSLOptions]
   }
 }

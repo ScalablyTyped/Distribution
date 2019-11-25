@@ -24,8 +24,8 @@ object StatementInfo {
     statementType: Int | Double = null
   ): StatementInfo = {
     val __obj = js.Dynamic.literal()
-    if (bindNames != null) __obj.updateDynamic("bindNames")(bindNames)
-    if (metaData != null) __obj.updateDynamic("metaData")(metaData)
+    if (bindNames != null) __obj.updateDynamic("bindNames")(bindNames.asInstanceOf[js.Any])
+    if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
     if (statementType != null) __obj.updateDynamic("statementType")(statementType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatementInfo]
   }

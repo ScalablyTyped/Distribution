@@ -19,7 +19,7 @@ trait EditValidatorObject extends js.Object {
 object EditValidatorObject {
   @scala.inline
   def apply(isValid: Boolean, notification: Anon_Msg): EditValidatorObject = {
-    val __obj = js.Dynamic.literal(isValid = isValid, notification = notification)
+    val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EditValidatorObject]
   }

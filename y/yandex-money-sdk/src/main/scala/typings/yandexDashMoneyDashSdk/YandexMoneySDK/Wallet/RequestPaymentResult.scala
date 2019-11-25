@@ -34,17 +34,17 @@ object RequestPaymentResult {
     recipient_account_type: String = null,
     request_id: String = null
   ): RequestPaymentResult = {
-    val __obj = js.Dynamic.literal(status = status)
-    if (account_unblock_uri != null) __obj.updateDynamic("account_unblock_uri")(account_unblock_uri)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (account_unblock_uri != null) __obj.updateDynamic("account_unblock_uri")(account_unblock_uri.asInstanceOf[js.Any])
     if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
     if (contract_amount != null) __obj.updateDynamic("contract_amount")(contract_amount.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (ext_action_uri != null) __obj.updateDynamic("ext_action_uri")(ext_action_uri)
-    if (money_source != null) __obj.updateDynamic("money_source")(money_source)
-    if (protection_code != null) __obj.updateDynamic("protection_code")(protection_code)
-    if (recipient_account_status != null) __obj.updateDynamic("recipient_account_status")(recipient_account_status)
-    if (recipient_account_type != null) __obj.updateDynamic("recipient_account_type")(recipient_account_type)
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (ext_action_uri != null) __obj.updateDynamic("ext_action_uri")(ext_action_uri.asInstanceOf[js.Any])
+    if (money_source != null) __obj.updateDynamic("money_source")(money_source.asInstanceOf[js.Any])
+    if (protection_code != null) __obj.updateDynamic("protection_code")(protection_code.asInstanceOf[js.Any])
+    if (recipient_account_status != null) __obj.updateDynamic("recipient_account_status")(recipient_account_status.asInstanceOf[js.Any])
+    if (recipient_account_type != null) __obj.updateDynamic("recipient_account_type")(recipient_account_type.asInstanceOf[js.Any])
+    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestPaymentResult]
   }
 }

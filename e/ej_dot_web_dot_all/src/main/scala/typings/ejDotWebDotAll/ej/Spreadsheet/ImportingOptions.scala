@@ -32,11 +32,11 @@ object ImportingOptions {
     password: String = null
   ): ImportingOptions = {
     val __obj = js.Dynamic.literal()
-    if (Url != null) __obj.updateDynamic("Url")(Url)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (fileStream != null) __obj.updateDynamic("fileStream")(fileStream)
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (fileStream != null) __obj.updateDynamic("fileStream")(fileStream.asInstanceOf[js.Any])
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportingOptions]
   }
 }

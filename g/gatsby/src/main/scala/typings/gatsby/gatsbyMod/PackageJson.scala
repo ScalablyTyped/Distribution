@@ -39,17 +39,17 @@ object PackageJson {
   ): PackageJson = {
     val __obj = js.Dynamic.literal()
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (bundledDependecies != null) __obj.updateDynamic("bundledDependecies")(bundledDependecies)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (license != null) __obj.updateDynamic("license")(license)
-    if (main != null) __obj.updateDynamic("main")(main)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (optionalDependecies != null) __obj.updateDynamic("optionalDependecies")(optionalDependecies)
-    if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (bundledDependecies != null) __obj.updateDynamic("bundledDependecies")(bundledDependecies.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (optionalDependecies != null) __obj.updateDynamic("optionalDependecies")(optionalDependecies.asInstanceOf[js.Any])
+    if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageJson]
   }
 }

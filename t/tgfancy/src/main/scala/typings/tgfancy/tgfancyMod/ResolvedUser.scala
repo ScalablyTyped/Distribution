@@ -19,9 +19,9 @@ object ResolvedUser {
     when: String,
     last_name: String = null
   ): ResolvedUser = {
-    val __obj = js.Dynamic.literal(first_name = first_name, id = id.asInstanceOf[js.Any], username = username, when = when)
-    __obj.updateDynamic("type")(`type`)
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
+    val __obj = js.Dynamic.literal(first_name = first_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedUser]
   }
 }

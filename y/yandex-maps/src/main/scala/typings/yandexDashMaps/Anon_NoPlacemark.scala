@@ -12,7 +12,7 @@ object Anon_NoPlacemark {
   @scala.inline
   def apply(noPlacemark: js.UndefOr[Boolean] = js.undefined): Anon_NoPlacemark = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noPlacemark)) __obj.updateDynamic("noPlacemark")(noPlacemark)
+    if (!js.isUndefined(noPlacemark)) __obj.updateDynamic("noPlacemark")(noPlacemark.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NoPlacemark]
   }
 }

@@ -22,8 +22,8 @@ trait IonSplitPane extends js.Object {
 object IonSplitPane {
   @scala.inline
   def apply(disabled: Boolean, when: String | Boolean, contentId: String = null): IonSplitPane = {
-    val __obj = js.Dynamic.literal(disabled = disabled, when = when.asInstanceOf[js.Any])
-    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSplitPane]
   }
 }

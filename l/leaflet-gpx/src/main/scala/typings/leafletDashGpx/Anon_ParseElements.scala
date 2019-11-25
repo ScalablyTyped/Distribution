@@ -14,7 +14,7 @@ trait Anon_ParseElements extends js.Object {
 object Anon_ParseElements {
   @scala.inline
   def apply(parseElements: js.Tuple3[track, route, waypoint]): Anon_ParseElements = {
-    val __obj = js.Dynamic.literal(parseElements = parseElements)
+    val __obj = js.Dynamic.literal(parseElements = parseElements.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ParseElements]
   }

@@ -121,16 +121,16 @@ object BlockUIConfig {
     templateUrl: String = null
   ): BlockUIConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBlock)) __obj.updateDynamic("autoBlock")(autoBlock)
-    if (!js.isUndefined(autoInjectBodyBlock)) __obj.updateDynamic("autoInjectBodyBlock")(autoInjectBodyBlock)
-    if (!js.isUndefined(blockBrowserNavigation)) __obj.updateDynamic("blockBrowserNavigation")(blockBrowserNavigation)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (!js.isUndefined(autoBlock)) __obj.updateDynamic("autoBlock")(autoBlock.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoInjectBodyBlock)) __obj.updateDynamic("autoInjectBodyBlock")(autoInjectBodyBlock.asInstanceOf[js.Any])
+    if (!js.isUndefined(blockBrowserNavigation)) __obj.updateDynamic("blockBrowserNavigation")(blockBrowserNavigation.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (requestFilter != null) __obj.updateDynamic("requestFilter")(js.Any.fromFunction1(requestFilter))
-    if (!js.isUndefined(resetOnException)) __obj.updateDynamic("resetOnException")(resetOnException)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (!js.isUndefined(resetOnException)) __obj.updateDynamic("resetOnException")(resetOnException.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockUIConfig]
   }
 }

@@ -36,14 +36,14 @@ object Official {
     urls: js.Array[String] = null
   ): Official = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (channels != null) __obj.updateDynamic("channels")(channels)
-    if (emails != null) __obj.updateDynamic("emails")(emails)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (party != null) __obj.updateDynamic("party")(party)
-    if (phones != null) __obj.updateDynamic("phones")(phones)
-    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (party != null) __obj.updateDynamic("party")(party.asInstanceOf[js.Any])
+    if (phones != null) __obj.updateDynamic("phones")(phones.asInstanceOf[js.Any])
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Official]
   }
 }

@@ -11,7 +11,7 @@ trait JSZipObjectOptions extends js.Object {
 object JSZipObjectOptions {
   @scala.inline
   def apply(compression: Compression): JSZipObjectOptions = {
-    val __obj = js.Dynamic.literal(compression = compression)
+    val __obj = js.Dynamic.literal(compression = compression.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JSZipObjectOptions]
   }

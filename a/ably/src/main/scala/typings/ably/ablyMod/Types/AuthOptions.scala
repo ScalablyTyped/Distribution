@@ -62,16 +62,16 @@ object AuthOptions {
   ): AuthOptions = {
     val __obj = js.Dynamic.literal()
     if (authCallback != null) __obj.updateDynamic("authCallback")(js.Any.fromFunction2(authCallback))
-    if (authHeaders != null) __obj.updateDynamic("authHeaders")(authHeaders)
+    if (authHeaders != null) __obj.updateDynamic("authHeaders")(authHeaders.asInstanceOf[js.Any])
     if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod.asInstanceOf[js.Any])
-    if (authParams != null) __obj.updateDynamic("authParams")(authParams)
-    if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(queryTime)) __obj.updateDynamic("queryTime")(queryTime)
+    if (authParams != null) __obj.updateDynamic("authParams")(authParams.asInstanceOf[js.Any])
+    if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(queryTime)) __obj.updateDynamic("queryTime")(queryTime.asInstanceOf[js.Any])
     if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (tokenDetails != null) __obj.updateDynamic("tokenDetails")(tokenDetails)
-    if (!js.isUndefined(useTokenAuth)) __obj.updateDynamic("useTokenAuth")(useTokenAuth)
+    if (tokenDetails != null) __obj.updateDynamic("tokenDetails")(tokenDetails.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTokenAuth)) __obj.updateDynamic("useTokenAuth")(useTokenAuth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

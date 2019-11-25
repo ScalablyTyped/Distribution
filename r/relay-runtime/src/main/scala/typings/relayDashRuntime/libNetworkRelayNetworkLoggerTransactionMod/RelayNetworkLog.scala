@@ -12,7 +12,7 @@ trait RelayNetworkLog extends js.Object {
 object RelayNetworkLog {
   @scala.inline
   def apply(label: String, values: js.Array[_]): RelayNetworkLog = {
-    val __obj = js.Dynamic.literal(label = label, values = values)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RelayNetworkLog]
   }

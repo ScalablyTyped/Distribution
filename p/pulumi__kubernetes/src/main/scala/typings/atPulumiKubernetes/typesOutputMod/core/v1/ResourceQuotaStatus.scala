@@ -22,7 +22,7 @@ trait ResourceQuotaStatus extends js.Object {
 object ResourceQuotaStatus {
   @scala.inline
   def apply(hard: js.Object, used: js.Object): ResourceQuotaStatus = {
-    val __obj = js.Dynamic.literal(hard = hard, used = used)
+    val __obj = js.Dynamic.literal(hard = hard.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceQuotaStatus]
   }

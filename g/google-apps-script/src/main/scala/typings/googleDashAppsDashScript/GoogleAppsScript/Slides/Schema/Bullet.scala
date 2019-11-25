@@ -20,9 +20,9 @@ object Bullet {
     nestingLevel: Int | Double = null
   ): Bullet = {
     val __obj = js.Dynamic.literal()
-    if (bulletStyle != null) __obj.updateDynamic("bulletStyle")(bulletStyle)
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
-    if (listId != null) __obj.updateDynamic("listId")(listId)
+    if (bulletStyle != null) __obj.updateDynamic("bulletStyle")(bulletStyle.asInstanceOf[js.Any])
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
+    if (listId != null) __obj.updateDynamic("listId")(listId.asInstanceOf[js.Any])
     if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bullet]
   }

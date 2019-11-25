@@ -37,8 +37,8 @@ object LocatorSuggestLocationsParams {
     text: String,
     categories: js.Array[String] = null
   ): LocatorSuggestLocationsParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), text = text)
-    if (categories != null) __obj.updateDynamic("categories")(categories)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), text = text.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocatorSuggestLocationsParams]
   }
 }

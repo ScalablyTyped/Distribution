@@ -23,11 +23,11 @@ object MessageContextType {
     `package`: String = null
   ): MessageContextType = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (application != null) __obj.updateDynamic("application")(application)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (`package` != null) __obj.updateDynamic("package")(`package`)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageContextType]
   }
 }

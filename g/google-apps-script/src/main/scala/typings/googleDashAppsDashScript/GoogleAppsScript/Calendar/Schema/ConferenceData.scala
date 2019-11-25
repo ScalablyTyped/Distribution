@@ -26,13 +26,13 @@ object ConferenceData {
     signature: String = null
   ): ConferenceData = {
     val __obj = js.Dynamic.literal()
-    if (conferenceId != null) __obj.updateDynamic("conferenceId")(conferenceId)
-    if (conferenceSolution != null) __obj.updateDynamic("conferenceSolution")(conferenceSolution)
-    if (createRequest != null) __obj.updateDynamic("createRequest")(createRequest)
-    if (entryPoints != null) __obj.updateDynamic("entryPoints")(entryPoints)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
+    if (conferenceId != null) __obj.updateDynamic("conferenceId")(conferenceId.asInstanceOf[js.Any])
+    if (conferenceSolution != null) __obj.updateDynamic("conferenceSolution")(conferenceSolution.asInstanceOf[js.Any])
+    if (createRequest != null) __obj.updateDynamic("createRequest")(createRequest.asInstanceOf[js.Any])
+    if (entryPoints != null) __obj.updateDynamic("entryPoints")(entryPoints.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConferenceData]
   }
 }

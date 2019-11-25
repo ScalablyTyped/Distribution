@@ -22,7 +22,7 @@ object LocationsResource {
     keyRings: KeyRingsResource,
     list: Anon_AccesstokenAltBearertokenCallbackFieldsFilter => Request[ListLocationsResponse]
   ): LocationsResource = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), keyRings = keyRings, list = js.Any.fromFunction1(list))
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), keyRings = keyRings.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[LocationsResource]
   }

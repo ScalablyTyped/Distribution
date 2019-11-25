@@ -36,12 +36,12 @@ object IGradientOptions {
     `type`: String = null
   ): IGradientOptions = {
     val __obj = js.Dynamic.literal()
-    if (colorStops != null) __obj.updateDynamic("colorStops")(colorStops)
-    if (coords != null) __obj.updateDynamic("coords")(coords)
-    if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform)
+    if (colorStops != null) __obj.updateDynamic("colorStops")(colorStops.asInstanceOf[js.Any])
+    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
+    if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform.asInstanceOf[js.Any])
     if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
     if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGradientOptions]
   }
 }

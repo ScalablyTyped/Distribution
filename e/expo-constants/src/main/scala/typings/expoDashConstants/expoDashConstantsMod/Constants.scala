@@ -1,7 +1,6 @@
 package typings.expoDashConstants.expoDashConstantsMod
 
 import typings.expoDashConstants.buildConstantsDotTypesMod.AppManifest
-import typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership
 import typings.expoDashConstants.buildConstantsDotTypesMod.NativeConstants
 import typings.expoDashConstants.buildConstantsDotTypesMod.PlatformManifest
 import typings.expoDashConstants.expoDashConstantsStrings.ExponentConstants
@@ -17,7 +16,7 @@ trait Constants extends NativeConstants {
 object Constants {
   @scala.inline
   def apply(
-    appOwnership: AppOwnership,
+    appOwnership: typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership,
     debugMode: Boolean,
     experienceUrl: String,
     getWebViewUserAgentAsync: () => js.Promise[String | Null],
@@ -43,18 +42,18 @@ object Constants {
     platform: PlatformManifest = null,
     systemVersion: Int | Double = null
   ): Constants = {
-    val __obj = js.Dynamic.literal(appOwnership = appOwnership, debugMode = debugMode, experienceUrl = experienceUrl, getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId, isDevice = isDevice, isHeadless = isHeadless, linkingUri = linkingUri, manifest = manifest, name = name, sessionId = sessionId, statusBarHeight = statusBarHeight, systemFonts = systemFonts)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
+    val __obj = js.Dynamic.literal(appOwnership = appOwnership.asInstanceOf[js.Any], debugMode = debugMode.asInstanceOf[js.Any], experienceUrl = experienceUrl.asInstanceOf[js.Any], getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId.asInstanceOf[js.Any], isDevice = isDevice.asInstanceOf[js.Any], isHeadless = isHeadless.asInstanceOf[js.Any], linkingUri = linkingUri.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], statusBarHeight = statusBarHeight.asInstanceOf[js.Any], systemFonts = systemFonts.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
     if (deviceYearClass != null) __obj.updateDynamic("deviceYearClass")(deviceYearClass.asInstanceOf[js.Any])
-    if (expoRuntimeVersion != null) __obj.updateDynamic("expoRuntimeVersion")(expoRuntimeVersion)
-    if (expoVersion != null) __obj.updateDynamic("expoVersion")(expoVersion)
-    if (intentUri != null) __obj.updateDynamic("intentUri")(intentUri)
-    if (!js.isUndefined(isDetached)) __obj.updateDynamic("isDetached")(isDetached)
-    if (linkingUrl != null) __obj.updateDynamic("linkingUrl")(linkingUrl)
-    if (nativeAppVersion != null) __obj.updateDynamic("nativeAppVersion")(nativeAppVersion)
-    if (nativeBuildVersion != null) __obj.updateDynamic("nativeBuildVersion")(nativeBuildVersion)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (expoRuntimeVersion != null) __obj.updateDynamic("expoRuntimeVersion")(expoRuntimeVersion.asInstanceOf[js.Any])
+    if (expoVersion != null) __obj.updateDynamic("expoVersion")(expoVersion.asInstanceOf[js.Any])
+    if (intentUri != null) __obj.updateDynamic("intentUri")(intentUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDetached)) __obj.updateDynamic("isDetached")(isDetached.asInstanceOf[js.Any])
+    if (linkingUrl != null) __obj.updateDynamic("linkingUrl")(linkingUrl.asInstanceOf[js.Any])
+    if (nativeAppVersion != null) __obj.updateDynamic("nativeAppVersion")(nativeAppVersion.asInstanceOf[js.Any])
+    if (nativeBuildVersion != null) __obj.updateDynamic("nativeBuildVersion")(nativeBuildVersion.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (systemVersion != null) __obj.updateDynamic("systemVersion")(systemVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constants]
   }

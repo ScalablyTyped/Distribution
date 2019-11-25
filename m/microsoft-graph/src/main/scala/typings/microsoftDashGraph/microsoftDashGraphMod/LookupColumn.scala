@@ -30,11 +30,11 @@ object LookupColumn {
     primaryLookupColumnId: String = null
   ): LookupColumn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultipleValues)) __obj.updateDynamic("allowMultipleValues")(allowMultipleValues)
-    if (!js.isUndefined(allowUnlimitedLength)) __obj.updateDynamic("allowUnlimitedLength")(allowUnlimitedLength)
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
-    if (listId != null) __obj.updateDynamic("listId")(listId)
-    if (primaryLookupColumnId != null) __obj.updateDynamic("primaryLookupColumnId")(primaryLookupColumnId)
+    if (!js.isUndefined(allowMultipleValues)) __obj.updateDynamic("allowMultipleValues")(allowMultipleValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnlimitedLength)) __obj.updateDynamic("allowUnlimitedLength")(allowUnlimitedLength.asInstanceOf[js.Any])
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
+    if (listId != null) __obj.updateDynamic("listId")(listId.asInstanceOf[js.Any])
+    if (primaryLookupColumnId != null) __obj.updateDynamic("primaryLookupColumnId")(primaryLookupColumnId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupColumn]
   }
 }

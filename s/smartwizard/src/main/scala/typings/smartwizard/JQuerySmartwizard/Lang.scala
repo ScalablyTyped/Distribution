@@ -13,8 +13,8 @@ object Lang {
   @scala.inline
   def apply(next: String = null, previous: String = null): Lang = {
     val __obj = js.Dynamic.literal()
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lang]
   }
 }

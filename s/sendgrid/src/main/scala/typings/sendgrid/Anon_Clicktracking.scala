@@ -14,7 +14,7 @@ trait Anon_Clicktracking extends js.Object {
 object Anon_Clicktracking {
   @scala.inline
   def apply(click_tracking: js.Any, ganalytics: js.Any, open_tracking: js.Any, subscription_tracking: js.Any): Anon_Clicktracking = {
-    val __obj = js.Dynamic.literal(click_tracking = click_tracking, ganalytics = ganalytics, open_tracking = open_tracking, subscription_tracking = subscription_tracking)
+    val __obj = js.Dynamic.literal(click_tracking = click_tracking.asInstanceOf[js.Any], ganalytics = ganalytics.asInstanceOf[js.Any], open_tracking = open_tracking.asInstanceOf[js.Any], subscription_tracking = subscription_tracking.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Clicktracking]
   }

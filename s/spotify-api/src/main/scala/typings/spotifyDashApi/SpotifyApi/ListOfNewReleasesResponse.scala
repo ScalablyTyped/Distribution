@@ -18,8 +18,8 @@ trait ListOfNewReleasesResponse extends js.Object {
 object ListOfNewReleasesResponse {
   @scala.inline
   def apply(albums: PagingObject[AlbumObjectSimplified], message: String = null): ListOfNewReleasesResponse = {
-    val __obj = js.Dynamic.literal(albums = albums)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(albums = albums.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOfNewReleasesResponse]
   }
 }

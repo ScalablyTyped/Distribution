@@ -38,8 +38,8 @@ object IOptions {
   ): IOptions = {
     val __obj = js.Dynamic.literal()
     if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
-    if (missing != null) __obj.updateDynamic("missing")(missing)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

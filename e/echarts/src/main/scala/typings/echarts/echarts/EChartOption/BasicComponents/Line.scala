@@ -30,13 +30,13 @@ object Line {
     symbolSize: js.Array[Double] = null
   ): Line = {
     val __obj = js.Dynamic.literal()
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (!js.isUndefined(onZero)) __obj.updateDynamic("onZero")(onZero)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(onZero)) __obj.updateDynamic("onZero")(onZero.asInstanceOf[js.Any])
     if (onZeroAxisIndex != null) __obj.updateDynamic("onZeroAxisIndex")(onZeroAxisIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
-    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize)
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Line]
   }
 }

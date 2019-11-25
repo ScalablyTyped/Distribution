@@ -36,8 +36,8 @@ object Anon_Anchoring {
   ): Anon_Anchoring = {
     val __obj = js.Dynamic.literal()
     if (anchoring != null) __obj.updateDynamic("anchoring")(anchoring.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Anchoring]
   }
 }

@@ -38,14 +38,14 @@ object Integration {
     redshift: RedshiftIntegration = null,
     s3: S3Integration = null
   ): Integration = {
-    val __obj = js.Dynamic.literal(created_by = created_by, name = name)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb)
-    if (gcs != null) __obj.updateDynamic("gcs")(gcs)
-    if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis)
-    if (redshift != null) __obj.updateDynamic("redshift")(redshift)
-    if (s3 != null) __obj.updateDynamic("s3")(s3)
+    val __obj = js.Dynamic.literal(created_by = created_by.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb.asInstanceOf[js.Any])
+    if (gcs != null) __obj.updateDynamic("gcs")(gcs.asInstanceOf[js.Any])
+    if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis.asInstanceOf[js.Any])
+    if (redshift != null) __obj.updateDynamic("redshift")(redshift.asInstanceOf[js.Any])
+    if (s3 != null) __obj.updateDynamic("s3")(s3.asInstanceOf[js.Any])
     __obj.asInstanceOf[Integration]
   }
 }

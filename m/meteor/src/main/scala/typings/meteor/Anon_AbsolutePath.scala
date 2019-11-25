@@ -23,10 +23,10 @@ object Anon_AbsolutePath {
     content: String = null,
     sourceMapUrl: String = null
   ): Anon_AbsolutePath = {
-    val __obj = js.Dynamic.literal(absolutePath = absolutePath, cacheable = cacheable, hash = hash)
-    __obj.updateDynamic("type")(`type`)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (sourceMapUrl != null) __obj.updateDynamic("sourceMapUrl")(sourceMapUrl)
+    val __obj = js.Dynamic.literal(absolutePath = absolutePath.asInstanceOf[js.Any], cacheable = cacheable.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (sourceMapUrl != null) __obj.updateDynamic("sourceMapUrl")(sourceMapUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AbsolutePath]
   }
 }

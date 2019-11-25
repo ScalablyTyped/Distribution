@@ -13,8 +13,8 @@ trait MapLoadEvent extends js.Object {
 object MapLoadEvent {
   @scala.inline
   def apply(target: Map, `type`: String): MapLoadEvent = {
-    val __obj = js.Dynamic.literal(target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLoadEvent]
   }
 }

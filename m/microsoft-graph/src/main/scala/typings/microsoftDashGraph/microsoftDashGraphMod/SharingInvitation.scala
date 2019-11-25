@@ -26,10 +26,10 @@ object SharingInvitation {
     signInRequired: js.UndefOr[Boolean] = js.undefined
   ): SharingInvitation = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (invitedBy != null) __obj.updateDynamic("invitedBy")(invitedBy)
-    if (redeemedBy != null) __obj.updateDynamic("redeemedBy")(redeemedBy)
-    if (!js.isUndefined(signInRequired)) __obj.updateDynamic("signInRequired")(signInRequired)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (invitedBy != null) __obj.updateDynamic("invitedBy")(invitedBy.asInstanceOf[js.Any])
+    if (redeemedBy != null) __obj.updateDynamic("redeemedBy")(redeemedBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(signInRequired)) __obj.updateDynamic("signInRequired")(signInRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharingInvitation]
   }
 }

@@ -13,8 +13,8 @@ trait SessionUser extends js.Object {
 object SessionUser {
   @scala.inline
   def apply(permissions: Permissions, userId: String, accessToken: String = null): SessionUser = {
-    val __obj = js.Dynamic.literal(permissions = permissions, userId = userId)
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionUser]
   }
 }

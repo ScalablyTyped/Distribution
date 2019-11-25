@@ -24,9 +24,9 @@ object CloneContext {
     kind: String = null
   ): CloneContext = {
     val __obj = js.Dynamic.literal()
-    if (binLogCoordinates != null) __obj.updateDynamic("binLogCoordinates")(binLogCoordinates)
-    if (destinationInstanceName != null) __obj.updateDynamic("destinationInstanceName")(destinationInstanceName)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (binLogCoordinates != null) __obj.updateDynamic("binLogCoordinates")(binLogCoordinates.asInstanceOf[js.Any])
+    if (destinationInstanceName != null) __obj.updateDynamic("destinationInstanceName")(destinationInstanceName.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloneContext]
   }
 }

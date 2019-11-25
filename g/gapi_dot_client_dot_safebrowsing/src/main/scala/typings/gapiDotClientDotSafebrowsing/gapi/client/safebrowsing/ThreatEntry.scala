@@ -24,9 +24,9 @@ object ThreatEntry {
   @scala.inline
   def apply(digest: String = null, hash: String = null, url: String = null): ThreatEntry = {
     val __obj = js.Dynamic.literal()
-    if (digest != null) __obj.updateDynamic("digest")(digest)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreatEntry]
   }
 }

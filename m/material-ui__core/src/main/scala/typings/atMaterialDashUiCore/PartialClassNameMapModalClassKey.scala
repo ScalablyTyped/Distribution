@@ -14,8 +14,8 @@ object PartialClassNameMapModalClassKey {
   @scala.inline
   def apply(hidden: String = null, root: String = null): PartialClassNameMapModalClassKey = {
     val __obj = js.Dynamic.literal()
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapModalClassKey]
   }
 }

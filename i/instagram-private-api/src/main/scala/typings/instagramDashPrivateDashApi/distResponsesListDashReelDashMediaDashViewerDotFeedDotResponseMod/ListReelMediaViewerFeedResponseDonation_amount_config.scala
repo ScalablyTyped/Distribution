@@ -21,7 +21,7 @@ object ListReelMediaViewerFeedResponseDonation_amount_config {
     minimum_donation_amount: Double,
     user_currency: String
   ): ListReelMediaViewerFeedResponseDonation_amount_config = {
-    val __obj = js.Dynamic.literal(default_selected_donation_value = default_selected_donation_value, donation_amount_selector_values = donation_amount_selector_values, maximum_donation_amount = maximum_donation_amount, minimum_donation_amount = minimum_donation_amount, user_currency = user_currency)
+    val __obj = js.Dynamic.literal(default_selected_donation_value = default_selected_donation_value.asInstanceOf[js.Any], donation_amount_selector_values = donation_amount_selector_values.asInstanceOf[js.Any], maximum_donation_amount = maximum_donation_amount.asInstanceOf[js.Any], minimum_donation_amount = minimum_donation_amount.asInstanceOf[js.Any], user_currency = user_currency.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseDonation_amount_config]
   }

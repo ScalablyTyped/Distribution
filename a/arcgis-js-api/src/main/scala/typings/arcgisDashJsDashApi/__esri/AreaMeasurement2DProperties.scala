@@ -73,14 +73,14 @@ object AreaMeasurement2DProperties {
   ): AreaMeasurement2DProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions)
-    if (view != null) __obj.updateDynamic("view")(view)
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaMeasurement2DProperties]
   }
 }

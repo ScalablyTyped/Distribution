@@ -31,15 +31,15 @@ object CustomPalette {
     white: Partial[WhiteColor] = null
   ): CustomPalette = {
     val __obj = js.Dynamic.literal()
-    if (blue != null) __obj.updateDynamic("blue")(blue)
-    if (cloud != null) __obj.updateDynamic("cloud")(cloud)
-    if (green != null) __obj.updateDynamic("green")(green)
-    if (ink != null) __obj.updateDynamic("ink")(ink)
-    if (orange != null) __obj.updateDynamic("orange")(orange)
-    if (product != null) __obj.updateDynamic("product")(product)
-    if (red != null) __obj.updateDynamic("red")(red)
-    if (social != null) __obj.updateDynamic("social")(social)
-    if (white != null) __obj.updateDynamic("white")(white)
+    if (blue != null) __obj.updateDynamic("blue")(blue.asInstanceOf[js.Any])
+    if (cloud != null) __obj.updateDynamic("cloud")(cloud.asInstanceOf[js.Any])
+    if (green != null) __obj.updateDynamic("green")(green.asInstanceOf[js.Any])
+    if (ink != null) __obj.updateDynamic("ink")(ink.asInstanceOf[js.Any])
+    if (orange != null) __obj.updateDynamic("orange")(orange.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (red != null) __obj.updateDynamic("red")(red.asInstanceOf[js.Any])
+    if (social != null) __obj.updateDynamic("social")(social.asInstanceOf[js.Any])
+    if (white != null) __obj.updateDynamic("white")(white.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPalette]
   }
 }

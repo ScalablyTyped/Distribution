@@ -14,9 +14,9 @@ object SocialSharingW3CData {
   @scala.inline
   def apply(text: String = null, title: String = null, url: String = null): SocialSharingW3CData = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocialSharingW3CData]
   }
 }

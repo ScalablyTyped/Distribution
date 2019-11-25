@@ -47,13 +47,13 @@ object UsersUpdateAuthenticatedParams {
     name: String = null
   ): UsersUpdateAuthenticatedParams = {
     val __obj = js.Dynamic.literal()
-    if (bio != null) __obj.updateDynamic("bio")(bio)
-    if (blog != null) __obj.updateDynamic("blog")(blog)
-    if (company != null) __obj.updateDynamic("company")(company)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(hireable)) __obj.updateDynamic("hireable")(hireable)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (bio != null) __obj.updateDynamic("bio")(bio.asInstanceOf[js.Any])
+    if (blog != null) __obj.updateDynamic("blog")(blog.asInstanceOf[js.Any])
+    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(hireable)) __obj.updateDynamic("hireable")(hireable.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersUpdateAuthenticatedParams]
   }
 }

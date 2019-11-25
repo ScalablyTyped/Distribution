@@ -1,12 +1,13 @@
 package typings.markdownDashItDashAnchor.markdownDashItDashAnchorMod
 
-import typings.markdownDashIt.libTokenMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnchorOptions extends js.Object {
-  var callback: js.UndefOr[js.Function2[/* token */ ^, /* anchor_info */ AnchorInfo, Unit]] = js.undefined
+  var callback: js.UndefOr[
+    js.Function2[/* token */ typings.markdownDashIt.libTokenMod.^, /* anchor_info */ AnchorInfo, Unit]
+  ] = js.undefined
   var level: js.UndefOr[Double] = js.undefined
   var permalink: js.UndefOr[Boolean] = js.undefined
   var permalinkBefore: js.UndefOr[Boolean] = js.undefined
@@ -28,7 +29,7 @@ trait AnchorOptions extends js.Object {
 object AnchorOptions {
   @scala.inline
   def apply(
-    callback: (/* token */ ^, /* anchor_info */ AnchorInfo) => Unit = null,
+    callback: (/* token */ typings.markdownDashIt.libTokenMod.^, /* anchor_info */ AnchorInfo) => Unit = null,
     level: Int | Double = null,
     permalink: js.UndefOr[Boolean] = js.undefined,
     permalinkBefore: js.UndefOr[Boolean] = js.undefined,
@@ -41,11 +42,11 @@ object AnchorOptions {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(permalink)) __obj.updateDynamic("permalink")(permalink)
-    if (!js.isUndefined(permalinkBefore)) __obj.updateDynamic("permalinkBefore")(permalinkBefore)
-    if (permalinkClass != null) __obj.updateDynamic("permalinkClass")(permalinkClass)
+    if (!js.isUndefined(permalink)) __obj.updateDynamic("permalink")(permalink.asInstanceOf[js.Any])
+    if (!js.isUndefined(permalinkBefore)) __obj.updateDynamic("permalinkBefore")(permalinkBefore.asInstanceOf[js.Any])
+    if (permalinkClass != null) __obj.updateDynamic("permalinkClass")(permalinkClass.asInstanceOf[js.Any])
     if (permalinkHref != null) __obj.updateDynamic("permalinkHref")(js.Any.fromFunction1(permalinkHref))
-    if (permalinkSymbol != null) __obj.updateDynamic("permalinkSymbol")(permalinkSymbol)
+    if (permalinkSymbol != null) __obj.updateDynamic("permalinkSymbol")(permalinkSymbol.asInstanceOf[js.Any])
     if (renderPermalink != null) __obj.updateDynamic("renderPermalink")(js.Any.fromFunction4(renderPermalink))
     if (slugify != null) __obj.updateDynamic("slugify")(js.Any.fromFunction1(slugify))
     __obj.asInstanceOf[AnchorOptions]

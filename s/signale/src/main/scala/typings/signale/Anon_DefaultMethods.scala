@@ -23,7 +23,7 @@ object Anon_DefaultMethods {
     SignaleConfig: SignaleConfig,
     SignaleOptions: SignaleOptions[DefaultMethods]
   ): Anon_DefaultMethods = {
-    val __obj = js.Dynamic.literal(DefaultMethods = DefaultMethods, Signale = Signale, SignaleConfig = SignaleConfig, SignaleOptions = SignaleOptions)
+    val __obj = js.Dynamic.literal(DefaultMethods = DefaultMethods.asInstanceOf[js.Any], Signale = Signale.asInstanceOf[js.Any], SignaleConfig = SignaleConfig.asInstanceOf[js.Any], SignaleOptions = SignaleOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefaultMethods]
   }

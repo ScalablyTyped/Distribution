@@ -22,7 +22,7 @@ object ProjectsResource {
     templates: TemplatesResource,
     workerMessages: Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => Request[SendWorkerMessagesResponse]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(jobs = jobs, locations = locations, templates = templates, workerMessages = js.Any.fromFunction1(workerMessages))
+    val __obj = js.Dynamic.literal(jobs = jobs.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], workerMessages = js.Any.fromFunction1(workerMessages))
   
     __obj.asInstanceOf[ProjectsResource]
   }

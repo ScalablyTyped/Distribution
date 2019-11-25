@@ -16,8 +16,8 @@ object Options {
     output: typings.powerDashAssertDashFormatter.powerAssertFormatter.Options = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (assertion != null) __obj.updateDynamic("assertion")(assertion)
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (assertion != null) __obj.updateDynamic("assertion")(assertion.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

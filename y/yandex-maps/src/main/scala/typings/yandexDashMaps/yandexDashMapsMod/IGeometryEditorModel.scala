@@ -12,7 +12,7 @@ trait IGeometryEditorModel extends IEventEmitter {
 object IGeometryEditorModel {
   @scala.inline
   def apply(destroy: () => Unit, events: IEventManager, getPixels: () => js.Array[Double]): IGeometryEditorModel = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), events = events, getPixels = js.Any.fromFunction0(getPixels))
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), events = events.asInstanceOf[js.Any], getPixels = js.Any.fromFunction0(getPixels))
   
     __obj.asInstanceOf[IGeometryEditorModel]
   }

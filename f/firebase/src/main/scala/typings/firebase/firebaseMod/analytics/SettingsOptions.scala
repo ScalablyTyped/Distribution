@@ -15,8 +15,8 @@ object SettingsOptions {
   @scala.inline
   def apply(dataLayerName: String = null, gtagName: String = null): SettingsOptions = {
     val __obj = js.Dynamic.literal()
-    if (dataLayerName != null) __obj.updateDynamic("dataLayerName")(dataLayerName)
-    if (gtagName != null) __obj.updateDynamic("gtagName")(gtagName)
+    if (dataLayerName != null) __obj.updateDynamic("dataLayerName")(dataLayerName.asInstanceOf[js.Any])
+    if (gtagName != null) __obj.updateDynamic("gtagName")(gtagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsOptions]
   }
 }

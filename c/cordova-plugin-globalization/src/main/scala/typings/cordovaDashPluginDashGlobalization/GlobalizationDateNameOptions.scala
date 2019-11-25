@@ -13,8 +13,8 @@ object GlobalizationDateNameOptions {
   @scala.inline
   def apply(item: String = null, `type`: String = null): GlobalizationDateNameOptions = {
     val __obj = js.Dynamic.literal()
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalizationDateNameOptions]
   }
 }

@@ -21,10 +21,10 @@ object ItemEffect {
     pokemon_changes: js.Array[ItemPokemonChange] = null,
     triggers_evolution: js.UndefOr[Boolean] = js.undefined
   ): ItemEffect = {
-    val __obj = js.Dynamic.literal(condition = condition, target = target)
-    if (move_changes != null) __obj.updateDynamic("move_changes")(move_changes)
-    if (pokemon_changes != null) __obj.updateDynamic("pokemon_changes")(pokemon_changes)
-    if (!js.isUndefined(triggers_evolution)) __obj.updateDynamic("triggers_evolution")(triggers_evolution)
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (move_changes != null) __obj.updateDynamic("move_changes")(move_changes.asInstanceOf[js.Any])
+    if (pokemon_changes != null) __obj.updateDynamic("pokemon_changes")(pokemon_changes.asInstanceOf[js.Any])
+    if (!js.isUndefined(triggers_evolution)) __obj.updateDynamic("triggers_evolution")(triggers_evolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemEffect]
   }
 }

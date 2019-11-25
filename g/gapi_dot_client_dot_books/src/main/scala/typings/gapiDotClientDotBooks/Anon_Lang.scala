@@ -27,11 +27,11 @@ object Anon_Lang {
     title: String = null
   ): Anon_Lang = {
     val __obj = js.Dynamic.literal()
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl)
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
-    if (snippetUrl != null) __obj.updateDynamic("snippetUrl")(snippetUrl)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl.asInstanceOf[js.Any])
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
+    if (snippetUrl != null) __obj.updateDynamic("snippetUrl")(snippetUrl.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lang]
   }
 }

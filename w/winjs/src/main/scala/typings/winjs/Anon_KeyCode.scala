@@ -14,7 +14,7 @@ trait Anon_KeyCode extends js.Object {
 object Anon_KeyCode {
   @scala.inline
   def apply(keyCode: Double, nextFocusElement: HTMLElement, previousFocusElement: HTMLElement): Anon_KeyCode = {
-    val __obj = js.Dynamic.literal(keyCode = keyCode, nextFocusElement = nextFocusElement, previousFocusElement = previousFocusElement)
+    val __obj = js.Dynamic.literal(keyCode = keyCode.asInstanceOf[js.Any], nextFocusElement = nextFocusElement.asInstanceOf[js.Any], previousFocusElement = previousFocusElement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_KeyCode]
   }

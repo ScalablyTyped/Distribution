@@ -11,7 +11,7 @@ trait Anon_HostedZoneId extends js.Object {
 object Anon_HostedZoneId {
   @scala.inline
   def apply(HostedZoneId: String): Anon_HostedZoneId = {
-    val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId)
+    val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HostedZoneId]
   }

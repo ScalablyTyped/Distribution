@@ -5,7 +5,6 @@ import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.IButtonProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotBaseMod.DialogContentBase
-import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.Key
@@ -49,7 +48,9 @@ trait IDialogContentProps extends ClassAttributes[DialogContentBase] {
   /**
     * Responsive mode passed in from decorator.
     */
-  var responsiveMode: js.UndefOr[ResponsiveMode] = js.undefined
+  var responsiveMode: js.UndefOr[
+    typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
+  ] = js.undefined
   /**
     * Show an 'x' close button in the upper-right corner
     */
@@ -100,7 +101,7 @@ object IDialogContentProps {
     key: Key = null,
     onDismiss: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => _ = null,
     ref: LegacyRef[DialogContentBase] = null,
-    responsiveMode: ResponsiveMode = null,
+    responsiveMode: typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     styles: IStyleFunctionOrObject[IDialogContentStyleProps, IDialogContentStyles] = null,
     subText: String = null,
@@ -112,24 +113,24 @@ object IDialogContentProps {
     `type`: DialogType = null
   ): IDialogContentProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (draggableHeaderClassName != null) __obj.updateDynamic("draggableHeaderClassName")(draggableHeaderClassName)
-    if (!js.isUndefined(isMultiline)) __obj.updateDynamic("isMultiline")(isMultiline)
+    if (draggableHeaderClassName != null) __obj.updateDynamic("draggableHeaderClassName")(draggableHeaderClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMultiline)) __obj.updateDynamic("isMultiline")(isMultiline.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode)
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
+    if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (subText != null) __obj.updateDynamic("subText")(subText)
-    if (subTextId != null) __obj.updateDynamic("subTextId")(subTextId)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (subText != null) __obj.updateDynamic("subText")(subText.asInstanceOf[js.Any])
+    if (subTextId != null) __obj.updateDynamic("subTextId")(subTextId.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleId != null) __obj.updateDynamic("titleId")(titleId)
-    if (topButtonsProps != null) __obj.updateDynamic("topButtonsProps")(topButtonsProps)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (titleId != null) __obj.updateDynamic("titleId")(titleId.asInstanceOf[js.Any])
+    if (topButtonsProps != null) __obj.updateDynamic("topButtonsProps")(topButtonsProps.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogContentProps]
   }
 }

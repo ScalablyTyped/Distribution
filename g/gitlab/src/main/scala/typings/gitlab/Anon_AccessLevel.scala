@@ -13,7 +13,7 @@ object Anon_AccessLevel {
   @scala.inline
   def apply(accessLevel: AccessLevel = null): Anon_AccessLevel = {
     val __obj = js.Dynamic.literal()
-    if (accessLevel != null) __obj.updateDynamic("accessLevel")(accessLevel)
+    if (accessLevel != null) __obj.updateDynamic("accessLevel")(accessLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccessLevel]
   }
 }

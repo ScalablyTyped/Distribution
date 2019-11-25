@@ -19,7 +19,7 @@ object Controller {
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ _
     ]
   ): Controller = {
-    val __obj = js.Dynamic.literal(baseUrl = baseUrl, routes = js.Any.fromFunction0(routes))
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], routes = js.Any.fromFunction0(routes))
   
     __obj.asInstanceOf[Controller]
   }

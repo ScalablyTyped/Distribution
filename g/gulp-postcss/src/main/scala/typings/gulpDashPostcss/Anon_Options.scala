@@ -14,8 +14,8 @@ object Anon_Options {
   @scala.inline
   def apply(options: Options = null, plugins: js.Array[_] = null): Anon_Options = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Options]
   }
 }

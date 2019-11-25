@@ -15,8 +15,8 @@ trait ParsedUri extends js.Object {
 object ParsedUri {
   @scala.inline
   def apply(db: String, hosts: js.Array[Host], options: js.Any, auth: Anon_Pass = null): ParsedUri = {
-    val __obj = js.Dynamic.literal(db = db, hosts = hosts, options = options)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], hosts = hosts.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedUri]
   }
 }

@@ -43,14 +43,14 @@ object Column {
     tooltip: String = null
   ): Column = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignRight)) __obj.updateDynamic("alignRight")(alignRight)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(alignRight)) __obj.updateDynamic("alignRight")(alignRight.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
 }

@@ -27,10 +27,10 @@ object Element {
     parent: NodeBase = null,
     preserveWhitespace: String = null
   ): Element = {
-    val __obj = js.Dynamic.literal(attributes = attributes, children = children, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
 }

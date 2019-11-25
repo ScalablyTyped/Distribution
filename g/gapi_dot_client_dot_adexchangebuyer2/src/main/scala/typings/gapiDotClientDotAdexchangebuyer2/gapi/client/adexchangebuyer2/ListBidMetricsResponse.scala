@@ -22,8 +22,8 @@ object ListBidMetricsResponse {
   @scala.inline
   def apply(bidMetricsRows: js.Array[BidMetricsRow] = null, nextPageToken: String = null): ListBidMetricsResponse = {
     val __obj = js.Dynamic.literal()
-    if (bidMetricsRows != null) __obj.updateDynamic("bidMetricsRows")(bidMetricsRows)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (bidMetricsRows != null) __obj.updateDynamic("bidMetricsRows")(bidMetricsRows.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBidMetricsResponse]
   }
 }

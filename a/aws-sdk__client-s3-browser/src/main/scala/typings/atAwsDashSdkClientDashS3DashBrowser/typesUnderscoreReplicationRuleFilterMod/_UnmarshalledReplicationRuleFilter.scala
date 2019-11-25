@@ -27,9 +27,9 @@ object _UnmarshalledReplicationRuleFilter {
     Tag: _UnmarshalledTag = null
   ): _UnmarshalledReplicationRuleFilter = {
     val __obj = js.Dynamic.literal()
-    if (And != null) __obj.updateDynamic("And")(And)
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
-    if (Tag != null) __obj.updateDynamic("Tag")(Tag)
+    if (And != null) __obj.updateDynamic("And")(And.asInstanceOf[js.Any])
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
+    if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledReplicationRuleFilter]
   }
 }

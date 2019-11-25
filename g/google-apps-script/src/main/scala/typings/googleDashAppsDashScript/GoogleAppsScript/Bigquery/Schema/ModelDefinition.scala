@@ -13,8 +13,8 @@ object ModelDefinition {
   @scala.inline
   def apply(modelOptions: ModelDefinitionModelOptions = null, trainingRuns: js.Array[BqmlTrainingRun] = null): ModelDefinition = {
     val __obj = js.Dynamic.literal()
-    if (modelOptions != null) __obj.updateDynamic("modelOptions")(modelOptions)
-    if (trainingRuns != null) __obj.updateDynamic("trainingRuns")(trainingRuns)
+    if (modelOptions != null) __obj.updateDynamic("modelOptions")(modelOptions.asInstanceOf[js.Any])
+    if (trainingRuns != null) __obj.updateDynamic("trainingRuns")(trainingRuns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelDefinition]
   }
 }

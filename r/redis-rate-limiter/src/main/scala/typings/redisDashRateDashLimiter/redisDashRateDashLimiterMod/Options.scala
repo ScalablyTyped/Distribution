@@ -29,11 +29,11 @@ object Options {
     rate: String = null,
     window: Int | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], redis = redis)
-    if (!js.isUndefined(deleteImmediatelyIfRaceCondition)) __obj.updateDynamic("deleteImmediatelyIfRaceCondition")(deleteImmediatelyIfRaceCondition)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteImmediatelyIfRaceCondition)) __obj.updateDynamic("deleteImmediatelyIfRaceCondition")(deleteImmediatelyIfRaceCondition.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (onPossibleRaceCondition != null) __obj.updateDynamic("onPossibleRaceCondition")(js.Any.fromFunction1(onPossibleRaceCondition))
-    if (rate != null) __obj.updateDynamic("rate")(rate)
+    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

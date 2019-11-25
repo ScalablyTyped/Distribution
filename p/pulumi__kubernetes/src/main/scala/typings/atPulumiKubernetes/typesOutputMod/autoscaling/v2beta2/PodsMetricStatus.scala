@@ -22,7 +22,7 @@ trait PodsMetricStatus extends js.Object {
 object PodsMetricStatus {
   @scala.inline
   def apply(current: MetricValueStatus, metric: MetricIdentifier): PodsMetricStatus = {
-    val __obj = js.Dynamic.literal(current = current, metric = metric)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PodsMetricStatus]
   }

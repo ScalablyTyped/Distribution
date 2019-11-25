@@ -17,8 +17,8 @@ object ArraySqlTokenType {
     `type`: js.Symbol,
     values: PositionalParameterValuesType
   ): ArraySqlTokenType = {
-    val __obj = js.Dynamic.literal(memberType = memberType.asInstanceOf[js.Any], values = values)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(memberType = memberType.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArraySqlTokenType]
   }
 }

@@ -15,8 +15,8 @@ object CheckError {
   @scala.inline
   def apply(code: String = null, detail: String = null): CheckError = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckError]
   }
 }

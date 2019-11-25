@@ -13,7 +13,7 @@ trait QueryMatch extends js.Object {
 object QueryMatch {
   @scala.inline
   def apply(queryId: Double, value: CompileTokenMetadata): QueryMatch = {
-    val __obj = js.Dynamic.literal(queryId = queryId, value = value)
+    val __obj = js.Dynamic.literal(queryId = queryId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryMatch]
   }

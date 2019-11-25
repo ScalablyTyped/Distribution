@@ -22,9 +22,9 @@ object Anon_Date {
   @scala.inline
   def apply(date: date = null, dateTime: datetime = null, timeZone: String = null): Anon_Date = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Date]
   }
 }

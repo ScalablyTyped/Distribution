@@ -24,12 +24,12 @@ object Policy {
     timeUpdated: String = null
   ): Policy = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (timeUpdated != null) __obj.updateDynamic("timeUpdated")(timeUpdated)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (timeUpdated != null) __obj.updateDynamic("timeUpdated")(timeUpdated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policy]
   }
 }

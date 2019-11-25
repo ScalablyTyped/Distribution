@@ -13,7 +13,7 @@ trait Anon_Flat extends js.Object {
 object Anon_Flat {
   @scala.inline
   def apply(flat: Double, oneHop: Double, tree: Double): Anon_Flat = {
-    val __obj = js.Dynamic.literal(flat = flat, oneHop = oneHop, tree = tree)
+    val __obj = js.Dynamic.literal(flat = flat.asInstanceOf[js.Any], oneHop = oneHop.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Flat]
   }

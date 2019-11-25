@@ -54,14 +54,14 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension {
     userVisibleStatusLabel: String = null
   ): GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fulfillmentInfo != null) __obj.updateDynamic("fulfillmentInfo")(fulfillmentInfo)
-    if (purchaseLocationType != null) __obj.updateDynamic("purchaseLocationType")(purchaseLocationType)
-    if (returnsInfo != null) __obj.updateDynamic("returnsInfo")(returnsInfo)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (userVisibleStatusLabel != null) __obj.updateDynamic("userVisibleStatusLabel")(userVisibleStatusLabel)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fulfillmentInfo != null) __obj.updateDynamic("fulfillmentInfo")(fulfillmentInfo.asInstanceOf[js.Any])
+    if (purchaseLocationType != null) __obj.updateDynamic("purchaseLocationType")(purchaseLocationType.asInstanceOf[js.Any])
+    if (returnsInfo != null) __obj.updateDynamic("returnsInfo")(returnsInfo.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (userVisibleStatusLabel != null) __obj.updateDynamic("userVisibleStatusLabel")(userVisibleStatusLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension]
   }
 }

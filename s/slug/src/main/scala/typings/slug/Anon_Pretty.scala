@@ -13,7 +13,7 @@ trait Anon_Pretty extends js.Object {
 object Anon_Pretty {
   @scala.inline
   def apply(pretty: Mode, rfc3986: Mode): Anon_Pretty = {
-    val __obj = js.Dynamic.literal(pretty = pretty, rfc3986 = rfc3986)
+    val __obj = js.Dynamic.literal(pretty = pretty.asInstanceOf[js.Any], rfc3986 = rfc3986.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Pretty]
   }

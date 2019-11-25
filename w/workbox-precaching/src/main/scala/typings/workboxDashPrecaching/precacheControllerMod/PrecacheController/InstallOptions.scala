@@ -19,8 +19,8 @@ object InstallOptions {
     plugins: js.Array[WorkboxPlugin] = null
   ): InstallOptions = {
     val __obj = js.Dynamic.literal()
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallOptions]
   }
 }

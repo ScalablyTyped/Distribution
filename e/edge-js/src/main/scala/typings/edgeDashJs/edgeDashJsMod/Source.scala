@@ -13,7 +13,7 @@ object Source {
   @scala.inline
   def apply(source: String | js.Function, references: js.Array[String] = null): Source = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (references != null) __obj.updateDynamic("references")(references)
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

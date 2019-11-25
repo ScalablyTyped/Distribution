@@ -16,7 +16,7 @@ object Options {
   @scala.inline
   def apply(alignment: LayoutAlignment = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

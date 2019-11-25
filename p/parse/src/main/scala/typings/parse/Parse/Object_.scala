@@ -72,7 +72,7 @@ class Object_[T /* <: js.Any */] () extends BaseObject {
   def fetchWithInclude(keys: String, options: RequestOptions): js.Promise[this.type] = js.native
   def fetchWithInclude(keys: js.Array[String | js.Array[String]]): js.Promise[this.type] = js.native
   def fetchWithInclude(keys: js.Array[String | js.Array[String]], options: RequestOptions): js.Promise[this.type] = js.native
-  def get[K /* <: Exclude[String, js.Symbol | Double] */](attr: K): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native
+  def get[K /* <: Exclude[String, js.Symbol | Double] */](attr: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   def getACL(): js.UndefOr[ACL] = js.native
   def has(attr: String): Boolean = js.native
   def hasChanged(attr: String): Boolean = js.native
@@ -96,18 +96,18 @@ class Object_[T /* <: js.Any */] () extends BaseObject {
   def save(attrs: Null, options: SaveOptions): js.Promise[this.type] = js.native
   def save(attrs: Partial[T]): js.Promise[this.type] = js.native
   def save(attrs: Partial[T], options: SaveOptions): js.Promise[this.type] = js.native
-  def save[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): js.Promise[this.type] = js.native
+  def save[K /* <: String */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): js.Promise[this.type] = js.native
   def save[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
     options: SaveOptions
   ): js.Promise[this.type] = js.native
   def set(attrs: Partial[T]): this.type | `false` = js.native
   def set(attrs: Partial[T], options: SetOptions): this.type | `false` = js.native
-  def set[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type | `false` = js.native
+  def set[K /* <: String */](key: K, value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any): this.type | `false` = js.native
   def set[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any,
     options: SetOptions
   ): this.type | `false` = js.native
   def setACL(acl: ACL): this.type | `false` = js.native

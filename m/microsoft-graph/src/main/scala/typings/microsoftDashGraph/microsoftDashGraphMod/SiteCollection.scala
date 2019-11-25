@@ -15,8 +15,8 @@ object SiteCollection {
   @scala.inline
   def apply(hostname: String = null, root: Root = null): SiteCollection = {
     val __obj = js.Dynamic.literal()
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteCollection]
   }
 }

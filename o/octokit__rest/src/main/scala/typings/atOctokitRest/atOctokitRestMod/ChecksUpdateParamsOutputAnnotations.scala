@@ -32,11 +32,11 @@ object ChecksUpdateParamsOutputAnnotations {
     start_column: Int | Double = null,
     title: String = null
   ): ChecksUpdateParamsOutputAnnotations = {
-    val __obj = js.Dynamic.literal(annotation_level = annotation_level.asInstanceOf[js.Any], end_line = end_line, message = message, path = path, start_line = start_line)
+    val __obj = js.Dynamic.literal(annotation_level = annotation_level.asInstanceOf[js.Any], end_line = end_line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], start_line = start_line.asInstanceOf[js.Any])
     if (end_column != null) __obj.updateDynamic("end_column")(end_column.asInstanceOf[js.Any])
-    if (raw_details != null) __obj.updateDynamic("raw_details")(raw_details)
+    if (raw_details != null) __obj.updateDynamic("raw_details")(raw_details.asInstanceOf[js.Any])
     if (start_column != null) __obj.updateDynamic("start_column")(start_column.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksUpdateParamsOutputAnnotations]
   }
 }

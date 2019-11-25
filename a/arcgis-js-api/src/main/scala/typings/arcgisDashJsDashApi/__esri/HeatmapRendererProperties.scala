@@ -61,10 +61,10 @@ object HeatmapRendererProperties {
     minPixelIntensity: Int | Double = null
   ): HeatmapRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
-    if (colorStops != null) __obj.updateDynamic("colorStops")(colorStops)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (colorStops != null) __obj.updateDynamic("colorStops")(colorStops.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (maxPixelIntensity != null) __obj.updateDynamic("maxPixelIntensity")(maxPixelIntensity.asInstanceOf[js.Any])
     if (minPixelIntensity != null) __obj.updateDynamic("minPixelIntensity")(minPixelIntensity.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapRendererProperties]

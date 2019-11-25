@@ -21,7 +21,7 @@ object PostResponseDataMessage {
     Status: String,
     To: js.Array[PostResponseDataTo]
   ): PostResponseDataMessage = {
-    val __obj = js.Dynamic.literal(Bcc = Bcc, Cc = Cc, CustomID = CustomID, Status = Status, To = To)
+    val __obj = js.Dynamic.literal(Bcc = Bcc.asInstanceOf[js.Any], Cc = Cc.asInstanceOf[js.Any], CustomID = CustomID.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostResponseDataMessage]
   }

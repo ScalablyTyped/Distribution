@@ -23,8 +23,8 @@ object UpdateInstanceRequest {
   @scala.inline
   def apply(fieldMask: String = null, instance: Instance = null): UpdateInstanceRequest = {
     val __obj = js.Dynamic.literal()
-    if (fieldMask != null) __obj.updateDynamic("fieldMask")(fieldMask)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (fieldMask != null) __obj.updateDynamic("fieldMask")(fieldMask.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInstanceRequest]
   }
 }

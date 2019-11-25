@@ -38,11 +38,11 @@ object ApplicationTabBackstageSettingsPage {
     text: String = null
   ): ApplicationTabBackstageSettingsPage = {
     val __obj = js.Dynamic.literal()
-    if (contentID != null) __obj.updateDynamic("contentID")(contentID)
-    if (!js.isUndefined(enableSeparator)) __obj.updateDynamic("enableSeparator")(enableSeparator)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (contentID != null) __obj.updateDynamic("contentID")(contentID.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSeparator)) __obj.updateDynamic("enableSeparator")(enableSeparator.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationTabBackstageSettingsPage]
   }
 }

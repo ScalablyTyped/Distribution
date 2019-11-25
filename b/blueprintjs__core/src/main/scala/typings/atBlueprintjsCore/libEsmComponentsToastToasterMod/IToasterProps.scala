@@ -52,12 +52,12 @@ object IToasterProps {
     usePortal: js.UndefOr[Boolean] = js.undefined
   ): IToasterProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (!js.isUndefined(canEscapeKeyClear)) __obj.updateDynamic("canEscapeKeyClear")(canEscapeKeyClear)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(canEscapeKeyClear)) __obj.updateDynamic("canEscapeKeyClear")(canEscapeKeyClear.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (maxToasts != null) __obj.updateDynamic("maxToasts")(maxToasts.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToasterProps]
   }
 }

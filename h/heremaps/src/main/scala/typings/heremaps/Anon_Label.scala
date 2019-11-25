@@ -29,8 +29,8 @@ object Anon_Label {
     spot: Double,
     `type`: String
   ): Anon_Label = {
-    val __obj = js.Dynamic.literal(label = label, linkId = linkId, mappedPosition = mappedPosition, mappedRoadName = mappedRoadName, originalPosition = originalPosition, shapeIndex = shapeIndex, sideOfStreet = sideOfStreet, spot = spot)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], linkId = linkId.asInstanceOf[js.Any], mappedPosition = mappedPosition.asInstanceOf[js.Any], mappedRoadName = mappedRoadName.asInstanceOf[js.Any], originalPosition = originalPosition.asInstanceOf[js.Any], shapeIndex = shapeIndex.asInstanceOf[js.Any], sideOfStreet = sideOfStreet.asInstanceOf[js.Any], spot = spot.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }
 }

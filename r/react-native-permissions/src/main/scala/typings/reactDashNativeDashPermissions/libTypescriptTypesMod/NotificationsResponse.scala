@@ -12,7 +12,7 @@ trait NotificationsResponse extends js.Object {
 object NotificationsResponse {
   @scala.inline
   def apply(settings: NotificationSettings, status: PermissionStatus): NotificationsResponse = {
-    val __obj = js.Dynamic.literal(settings = settings, status = status)
+    val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationsResponse]
   }

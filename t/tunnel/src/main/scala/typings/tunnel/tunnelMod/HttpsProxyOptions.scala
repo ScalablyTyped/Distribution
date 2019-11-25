@@ -26,14 +26,14 @@ object HttpsProxyOptions {
     proxyAuth: String = null,
     servername: String = null
   ): HttpsProxyOptions = {
-    val __obj = js.Dynamic.literal(host = host, port = port)
-    if (ca != null) __obj.updateDynamic("ca")(ca)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
-    if (proxyAuth != null) __obj.updateDynamic("proxyAuth")(proxyAuth)
-    if (servername != null) __obj.updateDynamic("servername")(servername)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (proxyAuth != null) __obj.updateDynamic("proxyAuth")(proxyAuth.asInstanceOf[js.Any])
+    if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpsProxyOptions]
   }
 }

@@ -23,11 +23,11 @@ object JSZipLoadOptions {
     optimizedBinaryString: js.UndefOr[Boolean] = js.undefined
   ): JSZipLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64)
-    if (!js.isUndefined(checkCRC32)) __obj.updateDynamic("checkCRC32")(checkCRC32)
-    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders)
+    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkCRC32)) __obj.updateDynamic("checkCRC32")(checkCRC32.asInstanceOf[js.Any])
+    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders.asInstanceOf[js.Any])
     if (decodeFileName != null) __obj.updateDynamic("decodeFileName")(js.Any.fromFunction1(decodeFileName))
-    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString)
+    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSZipLoadOptions]
   }
 }

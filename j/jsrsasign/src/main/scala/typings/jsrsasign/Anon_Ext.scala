@@ -27,8 +27,8 @@ object Anon_Ext {
     subject: (StringParam with Anon_Certissuer) | (X500NameParam with Anon_Certissuer) | Anon_CertissuerCertsubject,
     ext: js.Array[Anon_SubjectAltName] = null
   ): Anon_Ext = {
-    val __obj = js.Dynamic.literal(sbjprvkey = sbjprvkey.asInstanceOf[js.Any], sbjpubkey = sbjpubkey.asInstanceOf[js.Any], sigalg = sigalg, subject = subject.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext)
+    val __obj = js.Dynamic.literal(sbjprvkey = sbjprvkey.asInstanceOf[js.Any], sbjpubkey = sbjpubkey.asInstanceOf[js.Any], sigalg = sigalg.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ext]
   }
 }

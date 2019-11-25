@@ -21,9 +21,9 @@ object PageableInitialOptions {
   ): PageableInitialOptions = {
     val __obj = js.Dynamic.literal()
     if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction1(comparator))
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
-    if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageableInitialOptions]
   }
 }

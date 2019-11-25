@@ -17,9 +17,9 @@ object IElementWrapper {
   @scala.inline
   def apply(css: js.Any = null, el: js.Any = null, id: js.Any = null): IElementWrapper = {
     val __obj = js.Dynamic.literal()
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (el != null) __obj.updateDynamic("el")(el)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IElementWrapper]
   }
 }

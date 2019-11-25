@@ -34,7 +34,7 @@ trait AdStyle extends js.Object {
 object AdStyle {
   @scala.inline
   def apply(height: Double, left: Double, realHeight: Double, realWidth: Double, top: Double, width: Double): AdStyle = {
-    val __obj = js.Dynamic.literal(height = height, left = left, realHeight = realHeight, realWidth = realWidth, top = top, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], realHeight = realHeight.asInstanceOf[js.Any], realWidth = realWidth.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AdStyle]
   }

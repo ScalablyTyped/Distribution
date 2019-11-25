@@ -11,7 +11,7 @@ trait TimelineRecordsUpdatedEvent extends RealtimeBuildEvent {
 object TimelineRecordsUpdatedEvent {
   @scala.inline
   def apply(buildId: Double, timelineRecords: js.Array[TimelineRecord]): TimelineRecordsUpdatedEvent = {
-    val __obj = js.Dynamic.literal(buildId = buildId, timelineRecords = timelineRecords)
+    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], timelineRecords = timelineRecords.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimelineRecordsUpdatedEvent]
   }

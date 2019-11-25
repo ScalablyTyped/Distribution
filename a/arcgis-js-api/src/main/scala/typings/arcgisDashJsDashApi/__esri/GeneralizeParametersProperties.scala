@@ -33,8 +33,8 @@ object GeneralizeParametersProperties {
     maxDeviation: Int | Double = null
   ): GeneralizeParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (deviationUnit != null) __obj.updateDynamic("deviationUnit")(deviationUnit)
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (deviationUnit != null) __obj.updateDynamic("deviationUnit")(deviationUnit.asInstanceOf[js.Any])
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
     if (maxDeviation != null) __obj.updateDynamic("maxDeviation")(maxDeviation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralizeParametersProperties]
   }

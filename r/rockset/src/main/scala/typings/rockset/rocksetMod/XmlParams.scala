@@ -27,11 +27,11 @@ object XmlParams {
     value_tag: String = null
   ): XmlParams = {
     val __obj = js.Dynamic.literal()
-    if (attribute_prefix != null) __obj.updateDynamic("attribute_prefix")(attribute_prefix)
-    if (doc_tag != null) __obj.updateDynamic("doc_tag")(doc_tag)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (root_tag != null) __obj.updateDynamic("root_tag")(root_tag)
-    if (value_tag != null) __obj.updateDynamic("value_tag")(value_tag)
+    if (attribute_prefix != null) __obj.updateDynamic("attribute_prefix")(attribute_prefix.asInstanceOf[js.Any])
+    if (doc_tag != null) __obj.updateDynamic("doc_tag")(doc_tag.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (root_tag != null) __obj.updateDynamic("root_tag")(root_tag.asInstanceOf[js.Any])
+    if (value_tag != null) __obj.updateDynamic("value_tag")(value_tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlParams]
   }
 }

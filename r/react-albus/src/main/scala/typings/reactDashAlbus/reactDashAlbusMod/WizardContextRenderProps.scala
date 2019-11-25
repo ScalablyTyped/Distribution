@@ -5,20 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WizardContextRenderProps extends js.Object {
-  var children: js.UndefOr[js.Function1[/* wizard */ WizardContext, ReactNode]] = js.undefined
-  var render: js.UndefOr[js.Function1[/* wizard */ WizardContext, ReactNode]] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.reactDashAlbus.Anon_Render
+  - typings.reactDashAlbus.Anon_Children
+*/
+trait WizardContextRenderProps extends js.Object
 
 object WizardContextRenderProps {
   @scala.inline
-  def apply(
-    children: /* wizard */ WizardContext => ReactNode = null,
-    render: /* wizard */ WizardContext => ReactNode = null
-  ): WizardContextRenderProps = {
+  def Anon_Render(render: /* wizard */ WizardContext => ReactNode = null): WizardContextRenderProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
+    __obj.asInstanceOf[WizardContextRenderProps]
+  }
+  @scala.inline
+  def Anon_Children(children: WizardContext => ReactNode): WizardContextRenderProps = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+  
     __obj.asInstanceOf[WizardContextRenderProps]
   }
 }

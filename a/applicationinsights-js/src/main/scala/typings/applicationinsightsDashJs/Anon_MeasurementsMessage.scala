@@ -22,7 +22,7 @@ object Anon_MeasurementsMessage {
     severityLevel: FieldType,
     ver: FieldType
   ): Anon_MeasurementsMessage = {
-    val __obj = js.Dynamic.literal(measurements = measurements, message = message, properties = properties, severityLevel = severityLevel, ver = ver)
+    val __obj = js.Dynamic.literal(measurements = measurements.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], severityLevel = severityLevel.asInstanceOf[js.Any], ver = ver.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MeasurementsMessage]
   }

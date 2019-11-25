@@ -31,12 +31,12 @@ object MessageOutput {
     user_defined: js.Object = null
   ): MessageOutput = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (debug != null) __obj.updateDynamic("debug")(debug)
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (generic != null) __obj.updateDynamic("generic")(generic)
-    if (intents != null) __obj.updateDynamic("intents")(intents)
-    if (user_defined != null) __obj.updateDynamic("user_defined")(user_defined)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (generic != null) __obj.updateDynamic("generic")(generic.asInstanceOf[js.Any])
+    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (user_defined != null) __obj.updateDynamic("user_defined")(user_defined.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageOutput]
   }
 }

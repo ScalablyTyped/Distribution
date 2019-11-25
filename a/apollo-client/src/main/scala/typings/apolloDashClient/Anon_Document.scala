@@ -14,7 +14,7 @@ trait Anon_Document[TVariables] extends js.Object {
 object Anon_Document {
   @scala.inline
   def apply[TVariables](document: DocumentNode, previousResult: js.Any, variables: TVariables = null): Anon_Document[TVariables] = {
-    val __obj = js.Dynamic.literal(document = document, previousResult = previousResult)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], previousResult = previousResult.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Document[TVariables]]
   }

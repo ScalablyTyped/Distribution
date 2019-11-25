@@ -25,9 +25,9 @@ object Anon_Async {
     id: js.Any = null,
     nice: Int | Double = null
   ): Anon_Async = {
-    val __obj = js.Dynamic.literal(async = async, eventObject = eventObject, fn = fn, once = once)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any], once = once.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Async]
   }

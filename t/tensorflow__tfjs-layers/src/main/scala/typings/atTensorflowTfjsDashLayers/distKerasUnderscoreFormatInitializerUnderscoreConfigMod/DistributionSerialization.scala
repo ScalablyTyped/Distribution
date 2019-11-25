@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait DistributionSerialization extends js.Object
 
+object DistributionSerialization {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def normal: typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.normal = this.cast("normal")
+  @scala.inline
+  def truncated_normal: typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.truncated_normal = this.cast("truncated_normal")
+  @scala.inline
+  def uniform: typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.uniform = this.cast("uniform")
+}
+

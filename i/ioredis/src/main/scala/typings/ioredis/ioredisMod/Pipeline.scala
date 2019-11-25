@@ -11,10 +11,10 @@ import typings.ioredis.ioredisStrings.MAXLEN
 import typings.ioredis.ioredisStrings.NOSAVE
 import typings.ioredis.ioredisStrings.SAVE
 import typings.ioredis.ioredisStrings.WITHSCORES
-import typings.ioredis.ioredisStrings.`match`
-import typings.ioredis.ioredisStrings.count
-import typings.ioredis.ioredisStrings.group
-import typings.ioredis.ioredisStrings.maxlen
+import typings.ioredis.ioredisStrings.count_
+import typings.ioredis.ioredisStrings.group_
+import typings.ioredis.ioredisStrings.match_
+import typings.ioredis.ioredisStrings.maxlen_
 import typings.node.Buffer
 import typings.node.NodeJS.EventEmitter
 import typings.std.Error
@@ -315,21 +315,21 @@ trait Pipeline extends js.Object {
   def save(callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Pipeline = js.native
   def scan(cursor: Double): Pipeline = js.native
   def scan(cursor: Double, countOption: COUNT, count: Double, matchOption: MATCH, pattern: String): Pipeline = js.native
-  def scan(cursor: Double, countOption: COUNT, count: Double, matchOption: `match`, pattern: String): Pipeline = js.native
-  def scan(cursor: Double, countOption: count, count: Double, matchOption: MATCH, pattern: String): Pipeline = js.native
-  def scan(cursor: Double, countOption: count, count: Double, matchOption: `match`, pattern: String): Pipeline = js.native
+  def scan(cursor: Double, countOption: COUNT, count: Double, matchOption: match_, pattern: String): Pipeline = js.native
+  def scan(cursor: Double, countOption: count_, count: Double, matchOption: MATCH, pattern: String): Pipeline = js.native
+  def scan(cursor: Double, countOption: count_, count: Double, matchOption: match_, pattern: String): Pipeline = js.native
   def scan(cursor: Double, matchOption: MATCH, pattern: String, countOption: COUNT, count: Double): Pipeline = js.native
-  def scan(cursor: Double, matchOption: MATCH, pattern: String, countOption: count, count: Double): Pipeline = js.native
-  def scan(cursor: Double, matchOption: `match`, pattern: String, countOption: COUNT, count: Double): Pipeline = js.native
-  def scan(cursor: Double, matchOption: `match`, pattern: String, countOption: count, count: Double): Pipeline = js.native
+  def scan(cursor: Double, matchOption: MATCH, pattern: String, countOption: count_, count: Double): Pipeline = js.native
+  def scan(cursor: Double, matchOption: match_, pattern: String, countOption: COUNT, count: Double): Pipeline = js.native
+  def scan(cursor: Double, matchOption: match_, pattern: String, countOption: count_, count: Double): Pipeline = js.native
   @JSName("scan")
   def scan_COUNT(cursor: Double, countOption: COUNT, count: Double): Pipeline = js.native
   @JSName("scan")
   def scan_MATCH(cursor: Double, matchOption: MATCH, pattern: String): Pipeline = js.native
   @JSName("scan")
-  def scan_count(cursor: Double, countOption: count, count: Double): Pipeline = js.native
+  def scan_count(cursor: Double, countOption: count_, count: Double): Pipeline = js.native
   @JSName("scan")
-  def scan_match(cursor: Double, matchOption: `match`, pattern: String): Pipeline = js.native
+  def scan_match(cursor: Double, matchOption: match_, pattern: String): Pipeline = js.native
   def scard(key: KeyType): Pipeline = js.native
   def scard(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Pipeline = js.native
   def script(args: js.Any*): Pipeline = js.native
@@ -483,12 +483,12 @@ trait Pipeline extends js.Object {
   @JSName("xreadgroup")
   def xreadgroup_GROUP(command: GROUP, group: String, consumer: String, args: js.Any*): Pipeline = js.native
   @JSName("xreadgroup")
-  def xreadgroup_group(command: group, group: String, consumer: String, args: js.Any*): Pipeline = js.native
+  def xreadgroup_group(command: group_, group: String, consumer: String, args: js.Any*): Pipeline = js.native
   def xrevrange(key: KeyType, end: String, start: String, args: js.Any*): Pipeline = js.native
   @JSName("xtrim")
   def xtrim_MAXLEN(key: KeyType, strategy: MAXLEN, args: js.Any*): Pipeline = js.native
   @JSName("xtrim")
-  def xtrim_maxlen(key: KeyType, strategy: maxlen, args: js.Any*): Pipeline = js.native
+  def xtrim_maxlen(key: KeyType, strategy: maxlen_, args: js.Any*): Pipeline = js.native
   def zadd(key: KeyType, args: String*): Pipeline = js.native
   def zcard(key: KeyType): Pipeline = js.native
   def zcard(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Pipeline = js.native

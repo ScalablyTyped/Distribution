@@ -1,7 +1,6 @@
 package typings.bookshelf.bookshelfMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bluebird.bluebirdMod.^
 import typings.bookshelf.Anon_Args
 import typings.knex.knexMod.QueryBuilder
 import typings.knex.knexMod.SafePartial
@@ -35,25 +34,25 @@ class Model[T /* <: Model[_] */] () extends ModelBase[T] {
     foreignKeyTarget: String,
     otherKeyTarget: String
   ): Collection[R] = js.native
-  def count(): ^[Double | String] = js.native
-  def count(column: String): ^[Double | String] = js.native
-  def count(column: String, options: SyncOptions): ^[Double | String] = js.native
-  def destroy(): ^[T] = js.native
-  def destroy(options: DestroyOptions): ^[T] = js.native
-  def fetch(): ^[T] = js.native
-  def fetch(options: FetchOptions): ^[T] = js.native
-  def fetchAll(): ^[Collection[T]] = js.native
-  def fetchAll(options: FetchAllOptions): ^[Collection[T]] = js.native
+  def count(): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def destroy(): typings.bluebird.bluebirdMod.^[T] = js.native
+  def destroy(options: DestroyOptions): typings.bluebird.bluebirdMod.^[T] = js.native
+  def fetch(): typings.bluebird.bluebirdMod.^[T] = js.native
+  def fetch(options: FetchOptions): typings.bluebird.bluebirdMod.^[T] = js.native
+  def fetchAll(): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
+  def fetchAll(options: FetchAllOptions): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
   def hasMany[R /* <: Model[_] */](target: Anon_Args[R]): Collection[R] = js.native
   def hasMany[R /* <: Model[_] */](target: Anon_Args[R], foreignKey: String): Collection[R] = js.native
   def hasMany[R /* <: Model[_] */](target: Anon_Args[R], foreignKey: String, foreignKeyTarget: String): Collection[R] = js.native
   def hasOne[R /* <: Model[_] */](target: Anon_Args[R]): R = js.native
   def hasOne[R /* <: Model[_] */](target: Anon_Args[R], foreignKey: String): R = js.native
   def hasOne[R /* <: Model[_] */](target: Anon_Args[R], foreignKey: String, foreignKeyTarget: String): R = js.native
-  def load(relations: String): ^[T] = js.native
-  def load(relations: String, options: LoadOptions): ^[T] = js.native
-  def load(relations: js.Array[String]): ^[T] = js.native
-  def load(relations: js.Array[String], options: LoadOptions): ^[T] = js.native
+  def load(relations: String): typings.bluebird.bluebirdMod.^[T] = js.native
+  def load(relations: String, options: LoadOptions): typings.bluebird.bluebirdMod.^[T] = js.native
+  def load(relations: js.Array[String]): typings.bluebird.bluebirdMod.^[T] = js.native
+  def load(relations: js.Array[String], options: LoadOptions): typings.bluebird.bluebirdMod.^[T] = js.native
   def morphMany[R /* <: Model[_] */](target: Anon_Args[R]): Collection[R] = js.native
   def morphMany[R /* <: Model[_] */](target: Anon_Args[R], name: String): Collection[R] = js.native
   def morphMany[R /* <: Model[_] */](target: Anon_Args[R], name: String, columnNames: js.Array[String]): Collection[R] = js.native
@@ -72,15 +71,15 @@ class Model[T /* <: Model[_] */] () extends ModelBase[T] {
   def query(callback: js.Function1[/* qb */ QueryBuilder[_, js.Array[SafePartial[_]]], Unit]): T = js.native
   def query(query: String*): T = js.native
   def query(query: StringDictionary[js.Any]): T = js.native
-  def refresh(): ^[T] = js.native
-  def refresh(options: FetchOptions): ^[T] = js.native
+  def refresh(): typings.bluebird.bluebirdMod.^[T] = js.native
+  def refresh(options: FetchOptions): typings.bluebird.bluebirdMod.^[T] = js.native
   def resetQuery(): T = js.native
-  def save(): ^[T] = js.native
-  def save(attrs: StringDictionary[js.Any]): ^[T] = js.native
-  def save(attrs: StringDictionary[js.Any], options: SaveOptions): ^[T] = js.native
-  def save(key: String): ^[T] = js.native
-  def save(key: String, `val`: js.Any): ^[T] = js.native
-  def save(key: String, `val`: js.Any, options: SaveOptions): ^[T] = js.native
+  def save(): typings.bluebird.bluebirdMod.^[T] = js.native
+  def save(attrs: StringDictionary[js.Any]): typings.bluebird.bluebirdMod.^[T] = js.native
+  def save(attrs: StringDictionary[js.Any], options: SaveOptions): typings.bluebird.bluebirdMod.^[T] = js.native
+  def save(key: String): typings.bluebird.bluebirdMod.^[T] = js.native
+  def save(key: String, `val`: js.Any): typings.bluebird.bluebirdMod.^[T] = js.native
+  def save(key: String, `val`: js.Any, options: SaveOptions): typings.bluebird.bluebirdMod.^[T] = js.native
   def through[R /* <: Model[_] */](interim: ModelSubclass): R = js.native
   def through[R /* <: Model[_] */](interim: ModelSubclass, throughForeignKey: String): R = js.native
   def through[R /* <: Model[_] */](interim: ModelSubclass, throughForeignKey: String, otherKey: String): R = js.native
@@ -114,15 +113,15 @@ object Model extends js.Object {
   def collection[T /* <: Model[_] */](): Collection[T] = js.native
   def collection[T /* <: Model[_] */](models: js.Array[T]): Collection[T] = js.native
   def collection[T /* <: Model[_] */](models: js.Array[T], options: CollectionOptions[T]): Collection[T] = js.native
-  def count(): ^[Double | String] = js.native
-  def count(column: String): ^[Double | String] = js.native
-  def count(column: String, options: SyncOptions): ^[Double | String] = js.native
+  def count(): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double | String] = js.native
   /** @deprecated use Typescript classes */
   def extend[T /* <: Model[_] */](): js.Function = js.native
   def extend[T /* <: Model[_] */](prototypeProperties: js.Any): js.Function = js.native
   def extend[T /* <: Model[_] */](prototypeProperties: js.Any, classProperties: js.Any): js.Function = js.native
    // should return a type
-  def fetchAll[T /* <: Model[_] */](): ^[Collection[T]] = js.native
+  def fetchAll[T /* <: Model[_] */](): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
   /** @deprecated should use `new` objects instead. */
   def forge[T](): T = js.native
   def forge[T](attributes: js.Any): T = js.native

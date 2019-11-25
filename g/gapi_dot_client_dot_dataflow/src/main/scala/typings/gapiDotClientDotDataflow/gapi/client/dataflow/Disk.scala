@@ -39,8 +39,8 @@ object Disk {
   @scala.inline
   def apply(diskType: String = null, mountPoint: String = null, sizeGb: Int | Double = null): Disk = {
     val __obj = js.Dynamic.literal()
-    if (diskType != null) __obj.updateDynamic("diskType")(diskType)
-    if (mountPoint != null) __obj.updateDynamic("mountPoint")(mountPoint)
+    if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
+    if (mountPoint != null) __obj.updateDynamic("mountPoint")(mountPoint.asInstanceOf[js.Any])
     if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Disk]
   }

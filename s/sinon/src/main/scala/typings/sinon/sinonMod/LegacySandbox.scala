@@ -12,7 +12,7 @@ trait LegacySandbox extends js.Object {
 object LegacySandbox {
   @scala.inline
   def apply(sandbox: Anon_Config): LegacySandbox = {
-    val __obj = js.Dynamic.literal(sandbox = sandbox)
+    val __obj = js.Dynamic.literal(sandbox = sandbox.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LegacySandbox]
   }

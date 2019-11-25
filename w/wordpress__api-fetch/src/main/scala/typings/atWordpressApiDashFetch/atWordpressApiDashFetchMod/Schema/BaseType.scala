@@ -38,8 +38,8 @@ object BaseType {
     viewable: Boolean,
     _embedded: Record[String, js.Array[_]] = null
   ): BaseType[T] = {
-    val __obj = js.Dynamic.literal(_links = _links, capabilities = capabilities, description = description, hierarchical = hierarchical, labels = labels, name = name, rest_base = rest_base, slug = slug, supports = supports, taxonomies = taxonomies, viewable = viewable)
-    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], capabilities = capabilities.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hierarchical = hierarchical.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rest_base = rest_base.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], supports = supports.asInstanceOf[js.Any], taxonomies = taxonomies.asInstanceOf[js.Any], viewable = viewable.asInstanceOf[js.Any])
+    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseType[T]]
   }
 }

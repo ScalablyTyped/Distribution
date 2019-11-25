@@ -26,8 +26,8 @@ trait CalendarQueryOptions extends js.Object {
 object CalendarQueryOptions {
   @scala.inline
   def apply(filters: js.Array[js.Object], props: js.Array[js.Object], timezone: String, depth: String = null): CalendarQueryOptions = {
-    val __obj = js.Dynamic.literal(filters = filters, props = props, timezone = timezone)
-    if (depth != null) __obj.updateDynamic("depth")(depth)
+    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarQueryOptions]
   }
 }

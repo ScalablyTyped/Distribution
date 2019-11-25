@@ -9,7 +9,6 @@ import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Transform
 import typings.std.Error
 import typings.winston.libWinstonConfigMod.AbstractConfigSetLevels
-import typings.winstonDashTransport.winstonDashTransportMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,14 +55,14 @@ trait Logger
   var silent: Boolean = js.native
   @JSName("silly")
   var silly_Original: LeveledLogMethod = js.native
-  var transports: js.Array[^] = js.native
+  var transports: js.Array[typings.winstonDashTransport.winstonDashTransportMod.^] = js.native
   @JSName("verbose")
   var verbose_Original: LeveledLogMethod = js.native
   @JSName("warn")
   var warn_Original: LeveledLogMethod = js.native
   @JSName("warning")
   var warning_Original: LeveledLogMethod = js.native
-  def add(transport: ^): Logger = js.native
+  def add(transport: typings.winstonDashTransport.winstonDashTransportMod.^): Logger = js.native
   def alert(infoObject: js.Object): Logger = js.native
   def alert(message: String, callback: LogCallback): Logger = js.native
   def alert(message: String, meta: js.Any*): Logger = js.native
@@ -141,7 +140,7 @@ trait Logger
   def query(): js.Any = js.native
   def query(options: QueryOptions): js.Any = js.native
   def query(options: QueryOptions, callback: js.Function2[/* err */ Error, /* results */ js.Any, Unit]): js.Any = js.native
-  def remove(transport: ^): Logger = js.native
+  def remove(transport: typings.winstonDashTransport.winstonDashTransportMod.^): Logger = js.native
   def silly(infoObject: js.Object): Logger = js.native
   def silly(message: String, callback: LogCallback): Logger = js.native
   def silly(message: String, meta: js.Any*): Logger = js.native

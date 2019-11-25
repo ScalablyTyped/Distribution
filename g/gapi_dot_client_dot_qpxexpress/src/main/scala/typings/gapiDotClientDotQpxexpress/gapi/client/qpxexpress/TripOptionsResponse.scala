@@ -24,10 +24,10 @@ object TripOptionsResponse {
     tripOption: js.Array[TripOption] = null
   ): TripOptionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
-    if (tripOption != null) __obj.updateDynamic("tripOption")(tripOption)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
+    if (tripOption != null) __obj.updateDynamic("tripOption")(tripOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[TripOptionsResponse]
   }
 }

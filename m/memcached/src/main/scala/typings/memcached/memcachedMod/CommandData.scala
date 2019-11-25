@@ -33,13 +33,13 @@ object CommandData {
     redundancyEnabled: js.UndefOr[Boolean] = js.undefined,
     value: js.Any = null
   ): CommandData = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), command = command, execution = execution, start = start, validate = validate)
-    __obj.updateDynamic("type")(`type`)
-    if (cas != null) __obj.updateDynamic("cas")(cas)
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), command = command.asInstanceOf[js.Any], execution = execution.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (cas != null) __obj.updateDynamic("cas")(cas.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lifetime != null) __obj.updateDynamic("lifetime")(lifetime.asInstanceOf[js.Any])
-    if (!js.isUndefined(redundancyEnabled)) __obj.updateDynamic("redundancyEnabled")(redundancyEnabled)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(redundancyEnabled)) __obj.updateDynamic("redundancyEnabled")(redundancyEnabled.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandData]
   }
 }

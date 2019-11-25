@@ -39,9 +39,9 @@ object SearchOrganizationsRequest {
   @scala.inline
   def apply(filter: String = null, pageSize: Int | Double = null, pageToken: String = null): SearchOrganizationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOrganizationsRequest]
   }
 }

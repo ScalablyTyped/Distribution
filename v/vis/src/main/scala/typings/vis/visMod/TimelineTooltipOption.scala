@@ -15,7 +15,7 @@ object TimelineTooltipOption {
   @scala.inline
   def apply(followMouse: js.UndefOr[Boolean] = js.undefined, overflowMethod: cap | flip = null): TimelineTooltipOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(followMouse)) __obj.updateDynamic("followMouse")(followMouse)
+    if (!js.isUndefined(followMouse)) __obj.updateDynamic("followMouse")(followMouse.asInstanceOf[js.Any])
     if (overflowMethod != null) __obj.updateDynamic("overflowMethod")(overflowMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineTooltipOption]
   }

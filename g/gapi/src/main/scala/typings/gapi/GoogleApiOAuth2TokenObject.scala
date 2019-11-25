@@ -33,8 +33,8 @@ object GoogleApiOAuth2TokenObject {
     state: String,
     session_state: GoogleApiOAuth2TokenSessionState = null
   ): GoogleApiOAuth2TokenObject = {
-    val __obj = js.Dynamic.literal(access_token = access_token, error = error, expires_in = expires_in, state = state)
-    if (session_state != null) __obj.updateDynamic("session_state")(session_state)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (session_state != null) __obj.updateDynamic("session_state")(session_state.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiOAuth2TokenObject]
   }
 }

@@ -39,9 +39,9 @@ object GetRepositoryTriggersInput {
     $httpOptions: NodeHttpOptions = null,
     $maxRetries: Int | Double = null
   ): GetRepositoryTriggersInput = {
-    val __obj = js.Dynamic.literal(repositoryName = repositoryName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRepositoryTriggersInput]
   }

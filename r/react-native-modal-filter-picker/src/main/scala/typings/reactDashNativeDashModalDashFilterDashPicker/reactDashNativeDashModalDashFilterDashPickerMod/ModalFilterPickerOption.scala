@@ -12,7 +12,7 @@ trait ModalFilterPickerOption extends js.Object {
 object ModalFilterPickerOption {
   @scala.inline
   def apply(key: String, label: String): ModalFilterPickerOption = {
-    val __obj = js.Dynamic.literal(key = key, label = label)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModalFilterPickerOption]
   }

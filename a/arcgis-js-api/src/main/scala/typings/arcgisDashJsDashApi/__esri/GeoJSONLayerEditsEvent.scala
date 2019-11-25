@@ -17,7 +17,7 @@ object GeoJSONLayerEditsEvent {
     deletedFeatures: js.Array[GeoJSONLayerEditsEventDeletedFeatures],
     updatedFeatures: js.Array[GeoJSONLayerEditsEventUpdatedFeatures]
   ): GeoJSONLayerEditsEvent = {
-    val __obj = js.Dynamic.literal(addedFeatures = addedFeatures, deletedFeatures = deletedFeatures, updatedFeatures = updatedFeatures)
+    val __obj = js.Dynamic.literal(addedFeatures = addedFeatures.asInstanceOf[js.Any], deletedFeatures = deletedFeatures.asInstanceOf[js.Any], updatedFeatures = updatedFeatures.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeoJSONLayerEditsEvent]
   }

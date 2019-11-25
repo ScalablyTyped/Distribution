@@ -32,16 +32,16 @@ object EditorImageBrowserMessages {
     uploadFile: String = null
   ): EditorImageBrowserMessages = {
     val __obj = js.Dynamic.literal()
-    if (deleteFile != null) __obj.updateDynamic("deleteFile")(deleteFile)
-    if (directoryNotFound != null) __obj.updateDynamic("directoryNotFound")(directoryNotFound)
-    if (emptyFolder != null) __obj.updateDynamic("emptyFolder")(emptyFolder)
-    if (invalidFileType != null) __obj.updateDynamic("invalidFileType")(invalidFileType)
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
-    if (orderByName != null) __obj.updateDynamic("orderByName")(orderByName)
-    if (orderBySize != null) __obj.updateDynamic("orderBySize")(orderBySize)
-    if (overwriteFile != null) __obj.updateDynamic("overwriteFile")(overwriteFile)
-    if (search != null) __obj.updateDynamic("search")(search)
-    if (uploadFile != null) __obj.updateDynamic("uploadFile")(uploadFile)
+    if (deleteFile != null) __obj.updateDynamic("deleteFile")(deleteFile.asInstanceOf[js.Any])
+    if (directoryNotFound != null) __obj.updateDynamic("directoryNotFound")(directoryNotFound.asInstanceOf[js.Any])
+    if (emptyFolder != null) __obj.updateDynamic("emptyFolder")(emptyFolder.asInstanceOf[js.Any])
+    if (invalidFileType != null) __obj.updateDynamic("invalidFileType")(invalidFileType.asInstanceOf[js.Any])
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
+    if (orderByName != null) __obj.updateDynamic("orderByName")(orderByName.asInstanceOf[js.Any])
+    if (orderBySize != null) __obj.updateDynamic("orderBySize")(orderBySize.asInstanceOf[js.Any])
+    if (overwriteFile != null) __obj.updateDynamic("overwriteFile")(overwriteFile.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (uploadFile != null) __obj.updateDynamic("uploadFile")(uploadFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorImageBrowserMessages]
   }
 }

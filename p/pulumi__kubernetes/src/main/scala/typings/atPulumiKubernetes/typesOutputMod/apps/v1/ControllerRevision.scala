@@ -55,7 +55,7 @@ object ControllerRevision {
     metadata: ObjectMeta,
     revision: Double
   ): ControllerRevision = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, data = data, kind = kind, metadata = metadata, revision = revision)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ControllerRevision]
   }

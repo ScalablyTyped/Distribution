@@ -18,9 +18,9 @@ object RouteQueryParam {
     replace: js.UndefOr[Boolean] = js.undefined
   ): RouteQueryParam = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (!js.isUndefined(refreshModel)) __obj.updateDynamic("refreshModel")(refreshModel)
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshModel)) __obj.updateDynamic("refreshModel")(refreshModel.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteQueryParam]
   }
 }

@@ -14,8 +14,8 @@ object Anon_SourceWords {
   @scala.inline
   def apply(source: Anon_Attribution = null, words: js.Array[Anon_Derivatives] = null): Anon_SourceWords = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (words != null) __obj.updateDynamic("words")(words)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SourceWords]
   }
 }

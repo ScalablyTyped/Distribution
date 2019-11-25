@@ -21,8 +21,8 @@ object Anon_ItemsPosition {
     reference: Element,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_ItemsPosition = {
-    val __obj = js.Dynamic.literal(items = items, position = position, reference = reference)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ItemsPosition]
   }
 }

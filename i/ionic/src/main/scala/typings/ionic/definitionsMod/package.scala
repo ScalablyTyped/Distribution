@@ -29,7 +29,7 @@ package object definitionsMod {
   type Ionic1BuildOptions = BuildOptions[ionic1]
   type LogFn = js.Function1[/* msg */ String, Unit]
   type NamespaceLocateResult = typings.atIonicCliDashFramework.definitionsMod.NamespaceLocateResult[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
-  type OAuthIdentity = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type OAuthIdentity = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ A in ionic.ionic/definitions.AssociationType ]:? ionic.ionic/definitions.OAuthIdentityDetails}
     */ typings.ionic.ionicStrings.OAuthIdentity with js.Any
   type PackageVersions = StringDictionary[String]

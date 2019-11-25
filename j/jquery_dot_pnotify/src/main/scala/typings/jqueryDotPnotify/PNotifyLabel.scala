@@ -22,11 +22,11 @@ object PNotifyLabel {
     stick: String = null
   ): PNotifyLabel = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (redisplay != null) __obj.updateDynamic("redisplay")(redisplay)
-    if (stick != null) __obj.updateDynamic("stick")(stick)
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (redisplay != null) __obj.updateDynamic("redisplay")(redisplay.asInstanceOf[js.Any])
+    if (stick != null) __obj.updateDynamic("stick")(stick.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNotifyLabel]
   }
 }

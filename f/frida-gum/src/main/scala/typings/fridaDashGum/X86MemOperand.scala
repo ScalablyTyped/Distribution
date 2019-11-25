@@ -15,8 +15,8 @@ trait X86MemOperand
 object X86MemOperand {
   @scala.inline
   def apply(size: Double, `type`: mem, value: Anon_Base): X86MemOperand = {
-    val __obj = js.Dynamic.literal(size = size, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[X86MemOperand]
   }
 }

@@ -28,8 +28,8 @@ object BuiltinFrameworks {
     StringDictionary: /** @public */
   StringDictionary[Framework[js.Function]] = null
   ): BuiltinFrameworks = {
-    val __obj = js.Dynamic.literal(express = express, lambda = lambda)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(express = express.asInstanceOf[js.Any], lambda = lambda.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[BuiltinFrameworks]
   }
 }

@@ -24,12 +24,12 @@ object ReportCriteria {
     metricNames: js.Array[String] = null
   ): ReportCriteria = {
     val __obj = js.Dynamic.literal()
-    if (activities != null) __obj.updateDynamic("activities")(activities)
-    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents)
-    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
-    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
+    if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
+    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents.asInstanceOf[js.Any])
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportCriteria]
   }
 }

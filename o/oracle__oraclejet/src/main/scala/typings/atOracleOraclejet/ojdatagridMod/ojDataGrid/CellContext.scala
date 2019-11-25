@@ -36,8 +36,8 @@ object CellContext {
     parentElement: Element,
     datasource: DataProvider[K, D] = null
   ): CellContext[K, D] = {
-    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], componentElement = componentElement, data = data.asInstanceOf[js.Any], extents = extents, indexes = indexes, keys = keys, mode = mode.asInstanceOf[js.Any], parentElement = parentElement)
-    if (datasource != null) __obj.updateDynamic("datasource")(datasource)
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], extents = extents.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
+    if (datasource != null) __obj.updateDynamic("datasource")(datasource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellContext[K, D]]
   }
 }

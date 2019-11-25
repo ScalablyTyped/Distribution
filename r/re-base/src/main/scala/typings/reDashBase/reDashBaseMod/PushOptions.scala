@@ -20,7 +20,7 @@ trait PushOptions extends js.Object {
 object PushOptions {
   @scala.inline
   def apply(data: js.Any, `then`: /* result */ js.Any => Unit = null): PushOptions = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
     __obj.asInstanceOf[PushOptions]
   }

@@ -15,7 +15,7 @@ trait Anon_Acls extends js.Object {
 object Anon_Acls {
   @scala.inline
   def apply(acls: js.Array[ACL], defaultPermission: DENY, http: Anon_Path): Anon_Acls = {
-    val __obj = js.Dynamic.literal(acls = acls, defaultPermission = defaultPermission, http = http)
+    val __obj = js.Dynamic.literal(acls = acls.asInstanceOf[js.Any], defaultPermission = defaultPermission.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Acls]
   }

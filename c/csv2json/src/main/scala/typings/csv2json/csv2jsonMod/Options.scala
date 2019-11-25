@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(dynamicTyping: js.UndefOr[Boolean] = js.undefined, separator: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicTyping)) __obj.updateDynamic("dynamicTyping")(dynamicTyping)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(dynamicTyping)) __obj.updateDynamic("dynamicTyping")(dynamicTyping.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

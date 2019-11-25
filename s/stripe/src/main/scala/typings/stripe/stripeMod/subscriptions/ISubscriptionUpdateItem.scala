@@ -45,11 +45,11 @@ object ISubscriptionUpdateItem {
     quantity: Int | Double = null
   ): ISubscriptionUpdateItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clear_usage)) __obj.updateDynamic("clear_usage")(clear_usage)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (!js.isUndefined(clear_usage)) __obj.updateDynamic("clear_usage")(clear_usage.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionUpdateItem]
   }

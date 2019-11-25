@@ -13,8 +13,8 @@ trait MapError extends js.Object {
 object MapError {
   @scala.inline
   def apply(status: Double, error: Anon_Message = null): MapError = {
-    val __obj = js.Dynamic.literal(status = status)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapError]
   }
 }

@@ -14,8 +14,8 @@ object RegExpOptions {
   @scala.inline
   def apply(attribute: RegExp = null, name: RegExp = null): RegExpOptions = {
     val __obj = js.Dynamic.literal()
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegExpOptions]
   }
 }

@@ -31,7 +31,7 @@ object NamedSubscription {
     timeToLive: Double,
     updatedAt: Date
   ): NamedSubscription = {
-    val __obj = js.Dynamic.literal(createdAt = createdAt, error = error, expiresAt = expiresAt, name = name, objectType = objectType, query = query, state = state, timeToLive = timeToLive, updatedAt = updatedAt)
+    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timeToLive = timeToLive.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NamedSubscription]
   }

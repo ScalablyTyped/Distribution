@@ -21,7 +21,7 @@ object ArtifactVersion {
     sourceId: String,
     versions: js.Array[BuildVersion]
   ): ArtifactVersion = {
-    val __obj = js.Dynamic.literal(alias = alias, defaultVersion = defaultVersion, errorMessage = errorMessage, sourceId = sourceId, versions = versions)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], defaultVersion = defaultVersion.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtifactVersion]
   }

@@ -13,8 +13,8 @@ object Anon_CheckFalsy {
   @scala.inline
   def apply(checkFalsy: js.UndefOr[Boolean] = js.undefined, checkNull: js.UndefOr[Boolean] = js.undefined): Anon_CheckFalsy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkFalsy)) __obj.updateDynamic("checkFalsy")(checkFalsy)
-    if (!js.isUndefined(checkNull)) __obj.updateDynamic("checkNull")(checkNull)
+    if (!js.isUndefined(checkFalsy)) __obj.updateDynamic("checkFalsy")(checkFalsy.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkNull)) __obj.updateDynamic("checkNull")(checkNull.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CheckFalsy]
   }
 }

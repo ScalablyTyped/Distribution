@@ -42,12 +42,12 @@ object MenuItemTheme {
     shortcut: String = null
   ): MenuItemTheme = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (menuItem != null) __obj.updateDynamic("menuItem")(menuItem)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (menuItem != null) __obj.updateDynamic("menuItem")(menuItem.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemTheme]
   }
 }

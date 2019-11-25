@@ -17,7 +17,7 @@ trait Anon_Declaration extends js.Object {
 object Anon_Declaration {
   @scala.inline
   def apply(declaration: Boolean, selfCloseEmpty: Boolean, `type`: xml | html | xhtml, whitespace: Boolean): Anon_Declaration = {
-    val __obj = js.Dynamic.literal(declaration = declaration, selfCloseEmpty = selfCloseEmpty, whitespace = whitespace)
+    val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], selfCloseEmpty = selfCloseEmpty.asInstanceOf[js.Any], whitespace = whitespace.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Declaration]
   }

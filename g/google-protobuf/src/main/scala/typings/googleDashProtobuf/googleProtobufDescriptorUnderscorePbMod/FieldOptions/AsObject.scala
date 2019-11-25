@@ -29,13 +29,13 @@ object AsObject {
     packed: js.UndefOr[Boolean] = js.undefined,
     weak: js.UndefOr[Boolean] = js.undefined
   ): AsObject = {
-    val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList)
-    if (ctype != null) __obj.updateDynamic("ctype")(ctype)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (jstype != null) __obj.updateDynamic("jstype")(jstype)
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed)
-    if (!js.isUndefined(weak)) __obj.updateDynamic("weak")(weak)
+    val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList.asInstanceOf[js.Any])
+    if (ctype != null) __obj.updateDynamic("ctype")(ctype.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (jstype != null) __obj.updateDynamic("jstype")(jstype.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed.asInstanceOf[js.Any])
+    if (!js.isUndefined(weak)) __obj.updateDynamic("weak")(weak.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

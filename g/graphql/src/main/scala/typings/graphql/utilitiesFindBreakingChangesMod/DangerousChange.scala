@@ -12,8 +12,8 @@ trait DangerousChange extends js.Object {
 object DangerousChange {
   @scala.inline
   def apply(description: String, `type`: String): DangerousChange = {
-    val __obj = js.Dynamic.literal(description = description)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DangerousChange]
   }
 }

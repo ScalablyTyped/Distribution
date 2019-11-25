@@ -13,8 +13,8 @@ object Anon_Enabled {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, selected: js.UndefOr[Boolean] = js.undefined): Anon_Enabled = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Enabled]
   }
 }

@@ -27,7 +27,7 @@ object MochaPhantomJS {
     startTime: Date,
     url: String
   ): MochaPhantomJS = {
-    val __obj = js.Dynamic.literal(columns = columns, customizeMocha = js.Any.fromFunction1(customizeMocha), mochaStartWait = mochaStartWait, output = output, run = js.Any.fromFunction0(run), startTime = startTime, url = url)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], customizeMocha = js.Any.fromFunction1(customizeMocha), mochaStartWait = mochaStartWait.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], run = js.Any.fromFunction0(run), startTime = startTime.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MochaPhantomJS]
   }

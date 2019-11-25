@@ -21,10 +21,10 @@ object TransitOptions {
     routingPreference: TransitRoutePreference = null
   ): TransitOptions = {
     val __obj = js.Dynamic.literal()
-    if (arrivalTime != null) __obj.updateDynamic("arrivalTime")(arrivalTime)
-    if (departureTime != null) __obj.updateDynamic("departureTime")(departureTime)
-    if (modes != null) __obj.updateDynamic("modes")(modes)
-    if (routingPreference != null) __obj.updateDynamic("routingPreference")(routingPreference)
+    if (arrivalTime != null) __obj.updateDynamic("arrivalTime")(arrivalTime.asInstanceOf[js.Any])
+    if (departureTime != null) __obj.updateDynamic("departureTime")(departureTime.asInstanceOf[js.Any])
+    if (modes != null) __obj.updateDynamic("modes")(modes.asInstanceOf[js.Any])
+    if (routingPreference != null) __obj.updateDynamic("routingPreference")(routingPreference.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitOptions]
   }
 }

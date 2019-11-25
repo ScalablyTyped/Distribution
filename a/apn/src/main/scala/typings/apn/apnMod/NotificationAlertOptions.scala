@@ -29,15 +29,15 @@ object NotificationAlertOptions {
     `title-loc-args`: js.Array[String] = null,
     `title-loc-key`: String = null
   ): NotificationAlertOptions = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (`action-loc-key` != null) __obj.updateDynamic("action-loc-key")(`action-loc-key`)
-    if (`launch-image` != null) __obj.updateDynamic("launch-image")(`launch-image`)
-    if (`loc-args` != null) __obj.updateDynamic("loc-args")(`loc-args`)
-    if (`loc-key` != null) __obj.updateDynamic("loc-key")(`loc-key`)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`title-loc-args` != null) __obj.updateDynamic("title-loc-args")(`title-loc-args`)
-    if (`title-loc-key` != null) __obj.updateDynamic("title-loc-key")(`title-loc-key`)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (`action-loc-key` != null) __obj.updateDynamic("action-loc-key")(`action-loc-key`.asInstanceOf[js.Any])
+    if (`launch-image` != null) __obj.updateDynamic("launch-image")(`launch-image`.asInstanceOf[js.Any])
+    if (`loc-args` != null) __obj.updateDynamic("loc-args")(`loc-args`.asInstanceOf[js.Any])
+    if (`loc-key` != null) __obj.updateDynamic("loc-key")(`loc-key`.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`title-loc-args` != null) __obj.updateDynamic("title-loc-args")(`title-loc-args`.asInstanceOf[js.Any])
+    if (`title-loc-key` != null) __obj.updateDynamic("title-loc-key")(`title-loc-key`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationAlertOptions]
   }
 }

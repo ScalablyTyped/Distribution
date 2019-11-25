@@ -17,7 +17,7 @@ object SeriesTreemapDataOptions {
   @scala.inline
   def apply(parent: String = null): SeriesTreemapDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesTreemapDataOptions]
   }
 }

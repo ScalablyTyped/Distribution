@@ -56,7 +56,7 @@ object ConnectorsShape {
     if (association != null) __obj.updateDynamic("association")(association.asInstanceOf[js.Any])
     if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (multiplicity != null) __obj.updateDynamic("multiplicity")(multiplicity)
+    if (multiplicity != null) __obj.updateDynamic("multiplicity")(multiplicity.asInstanceOf[js.Any])
     if (relationship != null) __obj.updateDynamic("relationship")(relationship.asInstanceOf[js.Any])
     if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

@@ -20,9 +20,9 @@ object CacheOnlyOptions {
     plugins: js.Array[WorkboxPlugin] = null
   ): CacheOnlyOptions = {
     val __obj = js.Dynamic.literal()
-    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName)
-    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName.asInstanceOf[js.Any])
+    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheOnlyOptions]
   }
 }

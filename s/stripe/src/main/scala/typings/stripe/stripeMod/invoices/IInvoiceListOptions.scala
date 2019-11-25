@@ -74,16 +74,16 @@ object IInvoiceListOptions {
     if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
     if (collection_method != null) __obj.updateDynamic("collection_method")(collection_method.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after)
+    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceListOptions]
   }
 }

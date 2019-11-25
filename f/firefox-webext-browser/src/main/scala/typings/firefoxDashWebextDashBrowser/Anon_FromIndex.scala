@@ -13,7 +13,7 @@ trait Anon_FromIndex extends js.Object {
 object Anon_FromIndex {
   @scala.inline
   def apply(fromIndex: Double, toIndex: Double, windowId: Double): Anon_FromIndex = {
-    val __obj = js.Dynamic.literal(fromIndex = fromIndex, toIndex = toIndex, windowId = windowId)
+    val __obj = js.Dynamic.literal(fromIndex = fromIndex.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FromIndex]
   }

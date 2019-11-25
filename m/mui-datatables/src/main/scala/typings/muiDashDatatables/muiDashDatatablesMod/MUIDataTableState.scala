@@ -31,10 +31,10 @@ object MUIDataTableState {
     announceText: String = null,
     searchText: String = null
   ): MUIDataTableState = {
-    val __obj = js.Dynamic.literal(expandedRows = expandedRows, filterList = filterList, page = page, rowsPerPage = rowsPerPage, rowsPerPageOptions = rowsPerPageOptions, selectedRows = selectedRows, showResponsive = showResponsive)
-    if (activeColumn != null) __obj.updateDynamic("activeColumn")(activeColumn)
-    if (announceText != null) __obj.updateDynamic("announceText")(announceText)
-    if (searchText != null) __obj.updateDynamic("searchText")(searchText)
+    val __obj = js.Dynamic.literal(expandedRows = expandedRows.asInstanceOf[js.Any], filterList = filterList.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], rowsPerPage = rowsPerPage.asInstanceOf[js.Any], rowsPerPageOptions = rowsPerPageOptions.asInstanceOf[js.Any], selectedRows = selectedRows.asInstanceOf[js.Any], showResponsive = showResponsive.asInstanceOf[js.Any])
+    if (activeColumn != null) __obj.updateDynamic("activeColumn")(activeColumn.asInstanceOf[js.Any])
+    if (announceText != null) __obj.updateDynamic("announceText")(announceText.asInstanceOf[js.Any])
+    if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableState]
   }
 }

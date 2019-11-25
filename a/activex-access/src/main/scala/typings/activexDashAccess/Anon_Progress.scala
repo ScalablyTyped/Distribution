@@ -12,7 +12,7 @@ trait Anon_Progress extends js.Object {
 object Anon_Progress {
   @scala.inline
   def apply(Progress: Double, ProgressMax: Double): Anon_Progress = {
-    val __obj = js.Dynamic.literal(Progress = Progress, ProgressMax = ProgressMax)
+    val __obj = js.Dynamic.literal(Progress = Progress.asInstanceOf[js.Any], ProgressMax = ProgressMax.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Progress]
   }

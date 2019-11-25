@@ -32,8 +32,8 @@ object LabelFormatSettings {
     val __obj = js.Dynamic.literal()
     if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText)
-    if (suffixText != null) __obj.updateDynamic("suffixText")(suffixText)
+    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText.asInstanceOf[js.Any])
+    if (suffixText != null) __obj.updateDynamic("suffixText")(suffixText.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelFormatSettings]
   }
 }

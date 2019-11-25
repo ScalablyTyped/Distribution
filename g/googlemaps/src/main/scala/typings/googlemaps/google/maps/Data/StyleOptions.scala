@@ -44,19 +44,19 @@ object StyleOptions {
     zIndex: Int | Double = null
   ): StyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
     if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleOptions]
   }

@@ -20,7 +20,7 @@ object ReadOptions {
   @scala.inline
   def apply(fieldMask: js.Array[String | FieldPath] = null): ReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (fieldMask != null) __obj.updateDynamic("fieldMask")(fieldMask)
+    if (fieldMask != null) __obj.updateDynamic("fieldMask")(fieldMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOptions]
   }
 }

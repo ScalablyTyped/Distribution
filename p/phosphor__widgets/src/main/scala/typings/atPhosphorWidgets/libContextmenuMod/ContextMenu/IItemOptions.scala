@@ -48,12 +48,12 @@ object IItemOptions {
     submenu: Menu = null,
     `type`: ItemType = null
   ): IItemOptions = {
-    val __obj = js.Dynamic.literal(selector = selector)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (command != null) __obj.updateDynamic("command")(command)
+    val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (submenu != null) __obj.updateDynamic("submenu")(submenu)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }
 }

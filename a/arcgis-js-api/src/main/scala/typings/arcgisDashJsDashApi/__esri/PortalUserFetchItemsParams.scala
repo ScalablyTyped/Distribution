@@ -59,11 +59,11 @@ object PortalUserFetchItemsParams {
     sortOrder: String = null,
     start: Int | Double = null
   ): PortalUserFetchItemsParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (folder != null) __obj.updateDynamic("folder")(folder)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
     if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
-    if (sortField != null) __obj.updateDynamic("sortField")(sortField)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalUserFetchItemsParams]
   }

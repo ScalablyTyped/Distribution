@@ -23,7 +23,7 @@ object Anon_01 {
     weekStartsOn: `0` | `1` | `2` | `3` | `4` | `5` | `6` = null
   ): Anon_01 = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (weekStartsOn != null) __obj.updateDynamic("weekStartsOn")(weekStartsOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_01]
   }

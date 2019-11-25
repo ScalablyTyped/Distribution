@@ -14,7 +14,7 @@ object Filter {
   @scala.inline
   def apply(`match`: String = null): Filter = {
     val __obj = js.Dynamic.literal()
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
 }

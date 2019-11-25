@@ -14,7 +14,7 @@ trait Anon_Match extends js.Object {
 object Anon_Match {
   @scala.inline
   def apply(`match`: String => Boolean, matchers: js.Array[IMinimatch], mayContain: String => Boolean): Anon_Match = {
-    val __obj = js.Dynamic.literal(matchers = matchers, mayContain = js.Any.fromFunction1(mayContain))
+    val __obj = js.Dynamic.literal(matchers = matchers.asInstanceOf[js.Any], mayContain = js.Any.fromFunction1(mayContain))
     __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     __obj.asInstanceOf[Anon_Match]
   }

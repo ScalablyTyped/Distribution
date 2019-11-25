@@ -16,9 +16,9 @@ trait Update extends AST {
 object Update {
   @scala.inline
   def apply(set: js.Array[SetList], table: String, `type`: udpate, where: js.Any, db: String = null): Update = {
-    val __obj = js.Dynamic.literal(set = set, table = table, where = where)
-    __obj.updateDynamic("type")(`type`)
-    if (db != null) __obj.updateDynamic("db")(db)
+    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
     __obj.asInstanceOf[Update]
   }
 }

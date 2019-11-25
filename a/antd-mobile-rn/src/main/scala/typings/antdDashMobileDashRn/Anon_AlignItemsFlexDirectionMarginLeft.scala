@@ -21,7 +21,7 @@ object Anon_AlignItemsFlexDirectionMarginLeft {
     paddingRight: Double,
     paddingVertical: Double
   ): Anon_AlignItemsFlexDirectionMarginLeft = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, flexDirection = flexDirection, marginLeft = marginLeft, paddingRight = paddingRight, paddingVertical = paddingVertical)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsFlexDirectionMarginLeft]
   }

@@ -35,15 +35,15 @@ object TransitionInstruction {
   ): TransitionInstruction = {
     val __obj = js.Dynamic.literal()
     if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction5(done))
-    if (!js.isUndefined(enteringRequiresTransition)) __obj.updateDynamic("enteringRequiresTransition")(enteringRequiresTransition)
+    if (!js.isUndefined(enteringRequiresTransition)) __obj.updateDynamic("enteringRequiresTransition")(enteringRequiresTransition.asInstanceOf[js.Any])
     if (insertStart != null) __obj.updateDynamic("insertStart")(insertStart.asInstanceOf[js.Any])
-    if (insertViews != null) __obj.updateDynamic("insertViews")(insertViews)
-    if (!js.isUndefined(leavingRequiresTransition)) __obj.updateDynamic("leavingRequiresTransition")(leavingRequiresTransition)
-    if (opts != null) __obj.updateDynamic("opts")(opts)
+    if (insertViews != null) __obj.updateDynamic("insertViews")(insertViews.asInstanceOf[js.Any])
+    if (!js.isUndefined(leavingRequiresTransition)) __obj.updateDynamic("leavingRequiresTransition")(leavingRequiresTransition.asInstanceOf[js.Any])
+    if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
     if (reject != null) __obj.updateDynamic("reject")(js.Any.fromFunction1(reject))
     if (removeCount != null) __obj.updateDynamic("removeCount")(removeCount.asInstanceOf[js.Any])
     if (removeStart != null) __obj.updateDynamic("removeStart")(removeStart.asInstanceOf[js.Any])
-    if (removeView != null) __obj.updateDynamic("removeView")(removeView)
+    if (removeView != null) __obj.updateDynamic("removeView")(removeView.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
     __obj.asInstanceOf[TransitionInstruction]
   }

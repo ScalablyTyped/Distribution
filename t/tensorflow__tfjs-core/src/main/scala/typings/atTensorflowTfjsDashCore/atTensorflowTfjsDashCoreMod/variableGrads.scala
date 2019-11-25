@@ -2,7 +2,6 @@ package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
 import typings.atTensorflowTfjsDashCore.Anon_GradsValue
 import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +41,9 @@ object variableGrads extends js.Object {
   def apply(f: js.Function0[Scalar]): Anon_GradsValue = js.native
   def apply(
     f: js.Function0[Scalar],
-    varList: js.Array[typings.atTensorflowTfjsDashCore.distTensorMod.Variable[Rank]]
+    varList: js.Array[
+      typings.atTensorflowTfjsDashCore.distTensorMod.Variable[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+    ]
   ): Anon_GradsValue = js.native
 }
 

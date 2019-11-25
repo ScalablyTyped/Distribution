@@ -13,8 +13,8 @@ object PatchGroupParams {
   @scala.inline
   def apply(members: js.Array[String] = null, name: String = null): PatchGroupParams = {
     val __obj = js.Dynamic.literal()
-    if (members != null) __obj.updateDynamic("members")(members)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchGroupParams]
   }
 }

@@ -24,10 +24,10 @@ object MediaMetadataInit {
     title: String = null
   ): MediaMetadataInit = {
     val __obj = js.Dynamic.literal()
-    if (album != null) __obj.updateDynamic("album")(album)
-    if (artist != null) __obj.updateDynamic("artist")(artist)
-    if (artwork != null) __obj.updateDynamic("artwork")(artwork)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (album != null) __obj.updateDynamic("album")(album.asInstanceOf[js.Any])
+    if (artist != null) __obj.updateDynamic("artist")(artist.asInstanceOf[js.Any])
+    if (artwork != null) __obj.updateDynamic("artwork")(artwork.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaMetadataInit]
   }
 }

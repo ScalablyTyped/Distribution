@@ -17,8 +17,8 @@ trait Anon_Index
 object Anon_Index {
   @scala.inline
   def apply($scope: IScope, $template: String, StringDictionary: /* index */ StringDictionary[js.Any] = null): Anon_Index = {
-    val __obj = js.Dynamic.literal($scope = $scope, $template = $template)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal($scope = $scope.asInstanceOf[js.Any], $template = $template.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Index]
   }
 }

@@ -15,7 +15,7 @@ trait Shader extends js.Object {
 object Shader {
   @scala.inline
   def apply(fragmentShader: String, uniforms: StringDictionary[IUniform], vertexShader: String): Shader = {
-    val __obj = js.Dynamic.literal(fragmentShader = fragmentShader, uniforms = uniforms, vertexShader = vertexShader)
+    val __obj = js.Dynamic.literal(fragmentShader = fragmentShader.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any], vertexShader = vertexShader.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Shader]
   }

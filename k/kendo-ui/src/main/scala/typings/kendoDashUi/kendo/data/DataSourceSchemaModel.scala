@@ -19,9 +19,9 @@ object DataSourceSchemaModel {
     id: String = null
   ): DataSourceSchemaModel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSchemaModel]
   }
 }

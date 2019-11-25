@@ -14,9 +14,9 @@ object PDFViewerMessagesDialogsExportAsDialogLabels {
   @scala.inline
   def apply(fileName: String = null, page: String = null, saveAsType: String = null): PDFViewerMessagesDialogsExportAsDialogLabels = {
     val __obj = js.Dynamic.literal()
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (page != null) __obj.updateDynamic("page")(page)
-    if (saveAsType != null) __obj.updateDynamic("saveAsType")(saveAsType)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (saveAsType != null) __obj.updateDynamic("saveAsType")(saveAsType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessagesDialogsExportAsDialogLabels]
   }
 }

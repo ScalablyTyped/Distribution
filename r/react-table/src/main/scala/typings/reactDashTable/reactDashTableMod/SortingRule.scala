@@ -12,7 +12,7 @@ trait SortingRule extends js.Object {
 object SortingRule {
   @scala.inline
   def apply(desc: Boolean, id: String): SortingRule = {
-    val __obj = js.Dynamic.literal(desc = desc, id = id)
+    val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortingRule]
   }

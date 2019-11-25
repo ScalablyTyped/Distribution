@@ -25,7 +25,7 @@ object Anon_AbortedCompleted {
     unspecified: Double,
     waiting: Double
   ): Anon_AbortedCompleted = {
-    val __obj = js.Dynamic.literal(aborted = aborted, completed = completed, inProgress = inProgress, needsInvestigation = needsInvestigation, notStarted = notStarted, unspecified = unspecified, waiting = waiting)
+    val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], needsInvestigation = needsInvestigation.asInstanceOf[js.Any], notStarted = notStarted.asInstanceOf[js.Any], unspecified = unspecified.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AbortedCompleted]
   }

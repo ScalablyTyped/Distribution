@@ -13,7 +13,7 @@ trait IObjectVersionWorkflowState extends js.Object {
 object IObjectVersionWorkflowState {
   @scala.inline
   def apply(State: IPropertyValue, VersionComment: IPropertyValue, Workflow: IPropertyValue): IObjectVersionWorkflowState = {
-    val __obj = js.Dynamic.literal(State = State, VersionComment = VersionComment, Workflow = Workflow)
+    val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], VersionComment = VersionComment.asInstanceOf[js.Any], Workflow = Workflow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IObjectVersionWorkflowState]
   }

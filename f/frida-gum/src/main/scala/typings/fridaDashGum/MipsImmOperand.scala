@@ -13,8 +13,8 @@ trait MipsImmOperand extends MipsOperand {
 object MipsImmOperand {
   @scala.inline
   def apply(`type`: imm, value: Double): MipsImmOperand = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MipsImmOperand]
   }
 }

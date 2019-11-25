@@ -15,7 +15,7 @@ object Anon_FocusElement {
   def apply(focusElement: element | Boolean = null, show: js.UndefOr[Boolean] = js.undefined): Anon_FocusElement = {
     val __obj = js.Dynamic.literal()
     if (focusElement != null) __obj.updateDynamic("focusElement")(focusElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FocusElement]
   }
 }

@@ -14,7 +14,7 @@ object IInterceptable {
   @scala.inline
   def apply[T](intercept: IInterceptor[T] => Lambda, interceptors: js.Array[IInterceptor[T]] = null): IInterceptable[T] = {
     val __obj = js.Dynamic.literal(intercept = js.Any.fromFunction1(intercept))
-    if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors)
+    if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInterceptable[T]]
   }
 }

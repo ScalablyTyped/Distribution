@@ -22,7 +22,7 @@ trait NodeData extends js.Object {
 object NodeData {
   @scala.inline
   def apply(__brand: js.Any): NodeData = {
-    val __obj = js.Dynamic.literal(__brand = __brand)
+    val __obj = js.Dynamic.literal(__brand = __brand.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeData]
   }

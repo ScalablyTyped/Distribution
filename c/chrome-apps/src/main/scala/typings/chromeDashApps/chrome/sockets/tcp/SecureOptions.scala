@@ -20,7 +20,7 @@ object SecureOptions {
   @scala.inline
   def apply(tlsVersion: Anon_Max = null): SecureOptions = {
     val __obj = js.Dynamic.literal()
-    if (tlsVersion != null) __obj.updateDynamic("tlsVersion")(tlsVersion)
+    if (tlsVersion != null) __obj.updateDynamic("tlsVersion")(tlsVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureOptions]
   }
 }

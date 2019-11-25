@@ -12,7 +12,7 @@ trait Anon_MarginLeftMarginRight extends js.Object {
 object Anon_MarginLeftMarginRight {
   @scala.inline
   def apply(marginLeft: Double, marginRight: Double): Anon_MarginLeftMarginRight = {
-    val __obj = js.Dynamic.literal(marginLeft = marginLeft, marginRight = marginRight)
+    val __obj = js.Dynamic.literal(marginLeft = marginLeft.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MarginLeftMarginRight]
   }

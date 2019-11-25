@@ -37,15 +37,15 @@ object SupportOption {
     redirect: SupportOptionRedirect = null,
     since: String = null
   ): SupportOption = {
-    val __obj = js.Dynamic.literal(category = category, default = default.asInstanceOf[js.Any], description = description)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
-    if (choices != null) __obj.updateDynamic("choices")(choices)
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
-    if (oppositeDescription != null) __obj.updateDynamic("oppositeDescription")(oppositeDescription)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
-    if (since != null) __obj.updateDynamic("since")(since)
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (oppositeDescription != null) __obj.updateDynamic("oppositeDescription")(oppositeDescription.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportOption]
   }
 }

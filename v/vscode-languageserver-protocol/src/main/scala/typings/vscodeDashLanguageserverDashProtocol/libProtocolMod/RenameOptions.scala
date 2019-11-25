@@ -15,7 +15,7 @@ object RenameOptions {
   @scala.inline
   def apply(prepareProvider: js.UndefOr[Boolean] = js.undefined): RenameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(prepareProvider)) __obj.updateDynamic("prepareProvider")(prepareProvider)
+    if (!js.isUndefined(prepareProvider)) __obj.updateDynamic("prepareProvider")(prepareProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameOptions]
   }
 }

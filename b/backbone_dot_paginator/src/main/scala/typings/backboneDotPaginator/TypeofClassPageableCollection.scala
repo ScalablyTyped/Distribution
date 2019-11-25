@@ -26,6 +26,6 @@ trait TypeofClassPageableCollection
       /* options */ PageableInitialOptions, 
       PageableCollection[Model]
     ] {
-  def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof PageableCollection */ js.Any = js.native
+  def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof PageableCollection */ js.Any = js.native
 }
 

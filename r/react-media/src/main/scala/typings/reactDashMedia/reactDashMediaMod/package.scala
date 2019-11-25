@@ -30,7 +30,7 @@ package object reactDashMediaMod {
     *   matches => {}
     * }</Media>
     */
-  type QueryResults[Queries] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type QueryResults[Queries] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof Queries ]: boolean}
     */ typings.reactDashMedia.reactDashMediaStrings.QueryResults with js.Any
   type SingleQueryProps = BaseProps with Anon_ChildrenDefaultMatches

@@ -22,10 +22,10 @@ object Anon_Connection {
     refetch: ReaderRefetchMetadata = null
   ): Anon_Connection = {
     val __obj = js.Dynamic.literal()
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
-    if (!js.isUndefined(plural)) __obj.updateDynamic("plural")(plural)
-    if (refetch != null) __obj.updateDynamic("refetch")(refetch)
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (!js.isUndefined(plural)) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
+    if (refetch != null) __obj.updateDynamic("refetch")(refetch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Connection]
   }
 }

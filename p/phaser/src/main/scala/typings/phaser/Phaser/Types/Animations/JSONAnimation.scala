@@ -72,8 +72,8 @@ object JSONAnimation {
     `type`: String,
     yoyo: Boolean
   ): JSONAnimation = {
-    val __obj = js.Dynamic.literal(delay = delay, duration = duration, frameRate = frameRate, frames = frames, hideOnComplete = hideOnComplete, key = key, repeat = repeat, repeatDelay = repeatDelay, showOnStart = showOnStart, skipMissedFrames = skipMissedFrames, yoyo = yoyo)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], frameRate = frameRate.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], hideOnComplete = hideOnComplete.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any], repeatDelay = repeatDelay.asInstanceOf[js.Any], showOnStart = showOnStart.asInstanceOf[js.Any], skipMissedFrames = skipMissedFrames.asInstanceOf[js.Any], yoyo = yoyo.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONAnimation]
   }
 }

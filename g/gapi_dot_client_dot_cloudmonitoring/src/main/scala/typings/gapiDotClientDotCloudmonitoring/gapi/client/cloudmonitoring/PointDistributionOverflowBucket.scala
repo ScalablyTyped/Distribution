@@ -15,7 +15,7 @@ object PointDistributionOverflowBucket {
   @scala.inline
   def apply(count: String = null, lowerBound: Int | Double = null): PointDistributionOverflowBucket = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointDistributionOverflowBucket]
   }

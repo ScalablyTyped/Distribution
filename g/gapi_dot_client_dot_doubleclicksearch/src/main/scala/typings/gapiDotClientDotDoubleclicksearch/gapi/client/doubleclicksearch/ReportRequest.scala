@@ -77,20 +77,20 @@ object ReportRequest {
     verifySingleTimeZone: js.UndefOr[Boolean] = js.undefined
   ): ReportRequest = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (downloadFormat != null) __obj.updateDynamic("downloadFormat")(downloadFormat)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(includeDeletedEntities)) __obj.updateDynamic("includeDeletedEntities")(includeDeletedEntities)
-    if (!js.isUndefined(includeRemovedEntities)) __obj.updateDynamic("includeRemovedEntities")(includeRemovedEntities)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (downloadFormat != null) __obj.updateDynamic("downloadFormat")(downloadFormat.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDeletedEntities)) __obj.updateDynamic("includeDeletedEntities")(includeDeletedEntities.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeRemovedEntities)) __obj.updateDynamic("includeRemovedEntities")(includeRemovedEntities.asInstanceOf[js.Any])
     if (maxRowsPerFile != null) __obj.updateDynamic("maxRowsPerFile")(maxRowsPerFile.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
-    if (reportScope != null) __obj.updateDynamic("reportScope")(reportScope)
-    if (reportType != null) __obj.updateDynamic("reportType")(reportType)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
+    if (reportScope != null) __obj.updateDynamic("reportScope")(reportScope.asInstanceOf[js.Any])
+    if (reportType != null) __obj.updateDynamic("reportType")(reportType.asInstanceOf[js.Any])
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
     if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
-    if (statisticsCurrency != null) __obj.updateDynamic("statisticsCurrency")(statisticsCurrency)
-    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange)
-    if (!js.isUndefined(verifySingleTimeZone)) __obj.updateDynamic("verifySingleTimeZone")(verifySingleTimeZone)
+    if (statisticsCurrency != null) __obj.updateDynamic("statisticsCurrency")(statisticsCurrency.asInstanceOf[js.Any])
+    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifySingleTimeZone)) __obj.updateDynamic("verifySingleTimeZone")(verifySingleTimeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportRequest]
   }
 }

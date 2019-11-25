@@ -15,7 +15,7 @@ object Options {
   def apply(amount: Int | Double = null, currency: Currency = null, precision: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

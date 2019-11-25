@@ -32,7 +32,7 @@ object AnnotationsElliottWaveTypePointsOptions {
   ): AnnotationsElliottWaveTypePointsOptions = {
     val __obj = js.Dynamic.literal()
     if (controlPoint != null) __obj.updateDynamic("controlPoint")(controlPoint.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsElliottWaveTypePointsOptions]

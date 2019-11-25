@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait SelectionMode extends js.Object
 
+object SelectionMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def end: typings.std.stdStrings.end = this.cast("end")
+  @scala.inline
+  def preserve: typings.std.stdStrings.preserve = this.cast("preserve")
+  @scala.inline
+  def select: typings.std.stdStrings.select = this.cast("select")
+  @scala.inline
+  def start: typings.std.stdStrings.start = this.cast("start")
+}
+

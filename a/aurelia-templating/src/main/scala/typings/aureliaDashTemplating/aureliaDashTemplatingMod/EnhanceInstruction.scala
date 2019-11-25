@@ -38,11 +38,11 @@ object EnhanceInstruction {
     overrideContext: js.Any = null,
     resources: ViewResources = null
   ): EnhanceInstruction = {
-    val __obj = js.Dynamic.literal(element = element)
-    if (bindingContext != null) __obj.updateDynamic("bindingContext")(bindingContext)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (overrideContext != null) __obj.updateDynamic("overrideContext")(overrideContext)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+    if (bindingContext != null) __obj.updateDynamic("bindingContext")(bindingContext.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (overrideContext != null) __obj.updateDynamic("overrideContext")(overrideContext.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhanceInstruction]
   }
 }

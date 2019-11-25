@@ -46,7 +46,7 @@ object EditFlags {
     canSelectAll: Boolean,
     canUndo: Boolean
   ): EditFlags = {
-    val __obj = js.Dynamic.literal(canCopy = canCopy, canCut = canCut, canDelete = canDelete, canPaste = canPaste, canRedo = canRedo, canSelectAll = canSelectAll, canUndo = canUndo)
+    val __obj = js.Dynamic.literal(canCopy = canCopy.asInstanceOf[js.Any], canCut = canCut.asInstanceOf[js.Any], canDelete = canDelete.asInstanceOf[js.Any], canPaste = canPaste.asInstanceOf[js.Any], canRedo = canRedo.asInstanceOf[js.Any], canSelectAll = canSelectAll.asInstanceOf[js.Any], canUndo = canUndo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EditFlags]
   }

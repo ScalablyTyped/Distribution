@@ -11,7 +11,7 @@ trait Anon_Listener extends js.Object {
 object Anon_Listener {
   @scala.inline
   def apply(listener: js.Function): Anon_Listener = {
-    val __obj = js.Dynamic.literal(listener = listener)
+    val __obj = js.Dynamic.literal(listener = listener.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Listener]
   }

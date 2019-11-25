@@ -35,13 +35,13 @@ object ImagePickerPropTypes {
     styles: js.Object = null
   ): ImagePickerPropTypes = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (onAddImageClick != null) __obj.updateDynamic("onAddImageClick")(js.Any.fromFunction0(onAddImageClick))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
     if (onFail != null) __obj.updateDynamic("onFail")(js.Any.fromFunction1(onFail))
     if (onImageClick != null) __obj.updateDynamic("onImageClick")(js.Any.fromFunction2(onImageClick))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePickerPropTypes]
   }
 }

@@ -76,11 +76,11 @@ object Configuration {
     developerName: String = null,
     developerURL: String = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal(background = background, dir = dir, display = display.asInstanceOf[js.Any], icons = icons, lang = lang, logging = logging, orientation = orientation.asInstanceOf[js.Any], path = path, pixel_art = pixel_art, start_url = start_url, theme_color = theme_color, version = version)
-    if (appDescription != null) __obj.updateDynamic("appDescription")(appDescription)
-    if (appName != null) __obj.updateDynamic("appName")(appName)
-    if (developerName != null) __obj.updateDynamic("developerName")(developerName)
-    if (developerURL != null) __obj.updateDynamic("developerURL")(developerURL)
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], logging = logging.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pixel_art = pixel_art.asInstanceOf[js.Any], start_url = start_url.asInstanceOf[js.Any], theme_color = theme_color.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (appDescription != null) __obj.updateDynamic("appDescription")(appDescription.asInstanceOf[js.Any])
+    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
+    if (developerName != null) __obj.updateDynamic("developerName")(developerName.asInstanceOf[js.Any])
+    if (developerURL != null) __obj.updateDynamic("developerURL")(developerURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

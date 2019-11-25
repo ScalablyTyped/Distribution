@@ -23,9 +23,9 @@ object IDateColumn {
     format: java.lang.String = null
   ): IDateColumn = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IColumn)
+    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
     if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(js.Any.fromFunction1(defaultRenderer))
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDateColumn]
   }
 }

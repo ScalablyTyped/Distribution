@@ -14,7 +14,7 @@ object ListCollectionsResponse {
   @scala.inline
   def apply(collections: js.Array[Collection] = null): ListCollectionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (collections != null) __obj.updateDynamic("collections")(collections)
+    if (collections != null) __obj.updateDynamic("collections")(collections.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCollectionsResponse]
   }
 }

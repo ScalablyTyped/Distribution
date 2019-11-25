@@ -16,8 +16,8 @@ object MachineTypesScopedList {
   @scala.inline
   def apply(machineTypes: js.Array[MachineType] = null, warning: Anon_Code = null): MachineTypesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (machineTypes != null) __obj.updateDynamic("machineTypes")(machineTypes)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (machineTypes != null) __obj.updateDynamic("machineTypes")(machineTypes.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[MachineTypesScopedList]
   }
 }

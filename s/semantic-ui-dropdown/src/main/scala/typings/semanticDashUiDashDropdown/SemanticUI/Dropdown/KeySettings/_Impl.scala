@@ -67,7 +67,7 @@ object _Impl {
     rightArrow: Double,
     upArrow: Double
   ): _Impl = {
-    val __obj = js.Dynamic.literal(backspace = backspace, deleteKey = deleteKey, delimiter = delimiter.asInstanceOf[js.Any], downArrow = downArrow, enter = enter, escape = escape, leftArrow = leftArrow, pageDown = pageDown, pageUp = pageUp, rightArrow = rightArrow, upArrow = upArrow)
+    val __obj = js.Dynamic.literal(backspace = backspace.asInstanceOf[js.Any], deleteKey = deleteKey.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any], downArrow = downArrow.asInstanceOf[js.Any], enter = enter.asInstanceOf[js.Any], escape = escape.asInstanceOf[js.Any], leftArrow = leftArrow.asInstanceOf[js.Any], pageDown = pageDown.asInstanceOf[js.Any], pageUp = pageUp.asInstanceOf[js.Any], rightArrow = rightArrow.asInstanceOf[js.Any], upArrow = upArrow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

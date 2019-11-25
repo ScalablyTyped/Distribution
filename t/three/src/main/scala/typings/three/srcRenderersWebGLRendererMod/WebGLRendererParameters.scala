@@ -72,17 +72,17 @@ object WebGLRendererParameters {
     stencil: js.UndefOr[Boolean] = js.undefined
   ): WebGLRendererParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha)
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
     if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth)
-    if (!js.isUndefined(logarithmicDepthBuffer)) __obj.updateDynamic("logarithmicDepthBuffer")(logarithmicDepthBuffer)
-    if (powerPreference != null) __obj.updateDynamic("powerPreference")(powerPreference)
-    if (precision != null) __obj.updateDynamic("precision")(precision)
-    if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
-    if (!js.isUndefined(stencil)) __obj.updateDynamic("stencil")(stencil)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(logarithmicDepthBuffer)) __obj.updateDynamic("logarithmicDepthBuffer")(logarithmicDepthBuffer.asInstanceOf[js.Any])
+    if (powerPreference != null) __obj.updateDynamic("powerPreference")(powerPreference.asInstanceOf[js.Any])
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencil)) __obj.updateDynamic("stencil")(stencil.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLRendererParameters]
   }
 }

@@ -43,17 +43,17 @@ object ResultError {
     statementPosition: String = null,
     tableName: String = null
   ): ResultError = {
-    val __obj = js.Dynamic.literal(messagePrimary = messagePrimary, severity = severity, sourceFile = sourceFile, sourceFunction = sourceFunction, sourceLine = sourceLine, sqlState = sqlState)
-    if (constraintName != null) __obj.updateDynamic("constraintName")(constraintName)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName)
-    if (internalPosition != null) __obj.updateDynamic("internalPosition")(internalPosition)
-    if (internalQuery != null) __obj.updateDynamic("internalQuery")(internalQuery)
-    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)
-    if (messageHint != null) __obj.updateDynamic("messageHint")(messageHint)
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
-    if (statementPosition != null) __obj.updateDynamic("statementPosition")(statementPosition)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(messagePrimary = messagePrimary.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], sourceFile = sourceFile.asInstanceOf[js.Any], sourceFunction = sourceFunction.asInstanceOf[js.Any], sourceLine = sourceLine.asInstanceOf[js.Any], sqlState = sqlState.asInstanceOf[js.Any])
+    if (constraintName != null) __obj.updateDynamic("constraintName")(constraintName.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName.asInstanceOf[js.Any])
+    if (internalPosition != null) __obj.updateDynamic("internalPosition")(internalPosition.asInstanceOf[js.Any])
+    if (internalQuery != null) __obj.updateDynamic("internalQuery")(internalQuery.asInstanceOf[js.Any])
+    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail.asInstanceOf[js.Any])
+    if (messageHint != null) __obj.updateDynamic("messageHint")(messageHint.asInstanceOf[js.Any])
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
+    if (statementPosition != null) __obj.updateDynamic("statementPosition")(statementPosition.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultError]
   }
 }

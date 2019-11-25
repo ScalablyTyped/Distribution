@@ -21,9 +21,9 @@ object NewsRepositoryInboxResponseOldStoriesItem {
     `type`: Double,
     pk: String = null
   ): NewsRepositoryInboxResponseOldStoriesItem = {
-    val __obj = js.Dynamic.literal(args = args, counts = counts, story_type = story_type)
-    __obj.updateDynamic("type")(`type`)
-    if (pk != null) __obj.updateDynamic("pk")(pk)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], counts = counts.asInstanceOf[js.Any], story_type = story_type.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (pk != null) __obj.updateDynamic("pk")(pk.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseOldStoriesItem]
   }
 }

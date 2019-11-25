@@ -38,17 +38,17 @@ object Anon_EllipsoidEnablePickFeatures {
     tilingScheme: TilingScheme = null,
     usePreCachedTilesIfAvailable: js.UndefOr[Boolean] = js.undefined
   ): Anon_EllipsoidEnablePickFeatures = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (!js.isUndefined(enablePickFeatures)) __obj.updateDynamic("enablePickFeatures")(enablePickFeatures)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePickFeatures)) __obj.updateDynamic("enablePickFeatures")(enablePickFeatures.asInstanceOf[js.Any])
     if (maximumLevel != null) __obj.updateDynamic("maximumLevel")(maximumLevel.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
-    if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
+    if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy.asInstanceOf[js.Any])
     if (tileHeight != null) __obj.updateDynamic("tileHeight")(tileHeight.asInstanceOf[js.Any])
     if (tileWidth != null) __obj.updateDynamic("tileWidth")(tileWidth.asInstanceOf[js.Any])
-    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme)
-    if (!js.isUndefined(usePreCachedTilesIfAvailable)) __obj.updateDynamic("usePreCachedTilesIfAvailable")(usePreCachedTilesIfAvailable)
+    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePreCachedTilesIfAvailable)) __obj.updateDynamic("usePreCachedTilesIfAvailable")(usePreCachedTilesIfAvailable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EllipsoidEnablePickFeatures]
   }
 }

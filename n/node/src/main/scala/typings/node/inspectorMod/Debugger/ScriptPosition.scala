@@ -16,7 +16,7 @@ trait ScriptPosition extends js.Object {
 object ScriptPosition {
   @scala.inline
   def apply(columnNumber: Double, lineNumber: Double): ScriptPosition = {
-    val __obj = js.Dynamic.literal(columnNumber = columnNumber, lineNumber = lineNumber)
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScriptPosition]
   }

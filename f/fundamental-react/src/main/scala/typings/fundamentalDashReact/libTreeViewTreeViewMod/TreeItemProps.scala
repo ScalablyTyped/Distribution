@@ -30,12 +30,12 @@ object TreeItemProps {
     rowId: String = null
   ): TreeItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (expandData != null) __obj.updateDynamic("expandData")(expandData)
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (expandData != null) __obj.updateDynamic("expandData")(expandData.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (onExpandClick != null) __obj.updateDynamic("onExpandClick")(js.Any.fromFunction1(onExpandClick))
-    if (rowId != null) __obj.updateDynamic("rowId")(rowId)
+    if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeItemProps]
   }
 }

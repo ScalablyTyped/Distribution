@@ -17,8 +17,8 @@ object IOpenUrlAction {
   @scala.inline
   def apply(url: String = null, urlTypeHint: UrlTypeHint = null): IOpenUrlAction = {
     val __obj = js.Dynamic.literal()
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (urlTypeHint != null) __obj.updateDynamic("urlTypeHint")(urlTypeHint)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (urlTypeHint != null) __obj.updateDynamic("urlTypeHint")(urlTypeHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpenUrlAction]
   }
 }

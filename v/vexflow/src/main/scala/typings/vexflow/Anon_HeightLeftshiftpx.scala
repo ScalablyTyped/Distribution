@@ -14,7 +14,7 @@ trait Anon_HeightLeftshiftpx extends js.Object {
 object Anon_HeightLeftshiftpx {
   @scala.inline
   def apply(left_shift_px: Double, right_shift_px: Double, y_shift: Double, height: Int | Double = null): Anon_HeightLeftshiftpx = {
-    val __obj = js.Dynamic.literal(left_shift_px = left_shift_px, right_shift_px = right_shift_px, y_shift = y_shift)
+    val __obj = js.Dynamic.literal(left_shift_px = left_shift_px.asInstanceOf[js.Any], right_shift_px = right_shift_px.asInstanceOf[js.Any], y_shift = y_shift.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HeightLeftshiftpx]
   }

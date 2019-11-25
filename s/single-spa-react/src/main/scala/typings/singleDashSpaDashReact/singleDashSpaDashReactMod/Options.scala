@@ -29,12 +29,12 @@ object Options {
     rootComponent: ComponentClass[_, _] = null,
     suppressComponentDidCatchWarning: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(React = React, ReactDOM = ReactDOM)
+    val __obj = js.Dynamic.literal(React = React.asInstanceOf[js.Any], ReactDOM = ReactDOM.asInstanceOf[js.Any])
     if (domElementGetter != null) __obj.updateDynamic("domElementGetter")(js.Any.fromFunction0(domElementGetter))
     if (loadRootComponent != null) __obj.updateDynamic("loadRootComponent")(js.Any.fromFunction0(loadRootComponent))
-    if (!js.isUndefined(parcelCanUpdate)) __obj.updateDynamic("parcelCanUpdate")(parcelCanUpdate)
-    if (rootComponent != null) __obj.updateDynamic("rootComponent")(rootComponent)
-    if (!js.isUndefined(suppressComponentDidCatchWarning)) __obj.updateDynamic("suppressComponentDidCatchWarning")(suppressComponentDidCatchWarning)
+    if (!js.isUndefined(parcelCanUpdate)) __obj.updateDynamic("parcelCanUpdate")(parcelCanUpdate.asInstanceOf[js.Any])
+    if (rootComponent != null) __obj.updateDynamic("rootComponent")(rootComponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressComponentDidCatchWarning)) __obj.updateDynamic("suppressComponentDidCatchWarning")(suppressComponentDidCatchWarning.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

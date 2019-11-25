@@ -35,17 +35,17 @@ object TextTruncateProps {
     truncateText: String = null
   ): TextTruncateProps = {
     val __obj = js.Dynamic.literal()
-    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName)
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (maxCalculateTimes != null) __obj.updateDynamic("maxCalculateTimes")(maxCalculateTimes.asInstanceOf[js.Any])
     if (onCalculated != null) __obj.updateDynamic("onCalculated")(js.Any.fromFunction0(onCalculated))
     if (onToggled != null) __obj.updateDynamic("onToggled")(js.Any.fromFunction1(onToggled))
     if (onTruncated != null) __obj.updateDynamic("onTruncated")(js.Any.fromFunction0(onTruncated))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textElement != null) __obj.updateDynamic("textElement")(textElement.asInstanceOf[js.Any])
     if (textTruncateChild != null) __obj.updateDynamic("textTruncateChild")(textTruncateChild.asInstanceOf[js.Any])
-    if (truncateText != null) __obj.updateDynamic("truncateText")(truncateText)
+    if (truncateText != null) __obj.updateDynamic("truncateText")(truncateText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTruncateProps]
   }
 }

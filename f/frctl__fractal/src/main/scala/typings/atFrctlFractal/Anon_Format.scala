@@ -14,7 +14,7 @@ object Anon_Format {
   def apply(format: /* str */ String => String = null, text: String = null): Anon_Format = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]
   }
 }

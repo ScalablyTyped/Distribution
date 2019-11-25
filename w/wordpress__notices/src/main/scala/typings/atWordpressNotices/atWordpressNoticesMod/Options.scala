@@ -47,7 +47,7 @@ object Options {
     speak: Boolean,
     `type`: default | snackbar
   ): Options = {
-    val __obj = js.Dynamic.literal(actions = actions, context = context, id = id, isDismissible = isDismissible, speak = speak)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isDismissible = isDismissible.asInstanceOf[js.Any], speak = speak.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

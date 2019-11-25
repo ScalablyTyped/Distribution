@@ -4,35 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GeneralNameParam extends js.Object {
-  var certissuer: js.UndefOr[String] = js.undefined
-  var certsubj: js.UndefOr[String] = js.undefined
-  var dn: js.UndefOr[String] = js.undefined
-  var dns: js.UndefOr[String] = js.undefined
-  var ldapdn: js.UndefOr[String] = js.undefined
-  var rfc822: js.UndefOr[String] = js.undefined
-  var uri: js.UndefOr[String] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.jsrsasign.Anon_Rfc822
+  - typings.jsrsasign.Anon_Dns
+  - typings.jsrsasign.Anon_Uri
+  - typings.jsrsasign.Anon_Dn
+  - typings.jsrsasign.Anon_Ldapdn
+  - typings.jsrsasign.Anon_CertissuerString
+  - typings.jsrsasign.Anon_Certsubj
+*/
+trait GeneralNameParam extends js.Object
 
 object GeneralNameParam {
   @scala.inline
-  def apply(
-    certissuer: String = null,
-    certsubj: String = null,
-    dn: String = null,
-    dns: String = null,
-    ldapdn: String = null,
-    rfc822: String = null,
-    uri: String = null
-  ): GeneralNameParam = {
-    val __obj = js.Dynamic.literal()
-    if (certissuer != null) __obj.updateDynamic("certissuer")(certissuer)
-    if (certsubj != null) __obj.updateDynamic("certsubj")(certsubj)
-    if (dn != null) __obj.updateDynamic("dn")(dn)
-    if (dns != null) __obj.updateDynamic("dns")(dns)
-    if (ldapdn != null) __obj.updateDynamic("ldapdn")(ldapdn)
-    if (rfc822 != null) __obj.updateDynamic("rfc822")(rfc822)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+  def Anon_Certsubj(certsubj: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(certsubj = certsubj.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeneralNameParam]
+  }
+  @scala.inline
+  def Anon_Uri(uri: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeneralNameParam]
+  }
+  @scala.inline
+  def Anon_Rfc822(rfc822: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(rfc822 = rfc822.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeneralNameParam]
+  }
+  @scala.inline
+  def Anon_Dns(dns: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(dns = dns.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeneralNameParam]
+  }
+  @scala.inline
+  def Anon_Ldapdn(ldapdn: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(ldapdn = ldapdn.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeneralNameParam]
+  }
+  @scala.inline
+  def Anon_CertissuerString(certissuer: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(certissuer = certissuer.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeneralNameParam]
+  }
+  @scala.inline
+  def Anon_Dn(dn: String): GeneralNameParam = {
+    val __obj = js.Dynamic.literal(dn = dn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[GeneralNameParam]
   }
 }

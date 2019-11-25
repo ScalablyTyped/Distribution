@@ -16,7 +16,7 @@ trait StreamDotsItemProps extends js.Object {
 object StreamDotsItemProps {
   @scala.inline
   def apply(borderColor: String, borderWidth: Double, color: String, size: Double, x: Double, y: Double): StreamDotsItemProps = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, borderWidth = borderWidth, color = color, size = size, x = x, y = y)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StreamDotsItemProps]
   }

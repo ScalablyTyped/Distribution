@@ -12,7 +12,7 @@ trait TeamsDeleteDiscussionParams extends js.Object {
 object TeamsDeleteDiscussionParams {
   @scala.inline
   def apply(discussion_number: Double, team_id: Double): TeamsDeleteDiscussionParams = {
-    val __obj = js.Dynamic.literal(discussion_number = discussion_number, team_id = team_id)
+    val __obj = js.Dynamic.literal(discussion_number = discussion_number.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamsDeleteDiscussionParams]
   }

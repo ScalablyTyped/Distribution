@@ -19,8 +19,8 @@ object Anon_Collections {
     throttledSaves: Boolean,
     name: String = null
   ): Anon_Collections = {
-    val __obj = js.Dynamic.literal(collections = collections, databaseVersion = databaseVersion, throttledSaves = throttledSaves)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any], databaseVersion = databaseVersion.asInstanceOf[js.Any], throttledSaves = throttledSaves.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Collections]
   }
 }

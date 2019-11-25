@@ -33,11 +33,11 @@ object CommitAction {
     lastCommitId: String = null,
     previousPath: String = null
   ): CommitAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], filePath = filePath)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (lastCommitId != null) __obj.updateDynamic("lastCommitId")(lastCommitId)
-    if (previousPath != null) __obj.updateDynamic("previousPath")(previousPath)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (lastCommitId != null) __obj.updateDynamic("lastCommitId")(lastCommitId.asInstanceOf[js.Any])
+    if (previousPath != null) __obj.updateDynamic("previousPath")(previousPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitAction]
   }
 }

@@ -62,7 +62,7 @@ object Anon_ABORT {
     SECURITY: SECURITY,
     TOO_MANY_OPENED: TOO_MANY_OPENED
   ): Anon_ABORT = {
-    val __obj = js.Dynamic.literal(ABORT = ABORT, ACCESS_DENIED = ACCESS_DENIED, EXISTS = EXISTS, FAILED = FAILED, INVALID_OPERATION = INVALID_OPERATION, INVALID_URL = INVALID_URL, IN_USE = IN_USE, IO = IO, NOT_A_DIRECTORY = NOT_A_DIRECTORY, NOT_A_FILE = NOT_A_FILE, NOT_EMPTY = NOT_EMPTY, NOT_FOUND = NOT_FOUND, NO_MEMORY = NO_MEMORY, NO_SPACE = NO_SPACE, OK = OK, SECURITY = SECURITY, TOO_MANY_OPENED = TOO_MANY_OPENED)
+    val __obj = js.Dynamic.literal(ABORT = ABORT.asInstanceOf[js.Any], ACCESS_DENIED = ACCESS_DENIED.asInstanceOf[js.Any], EXISTS = EXISTS.asInstanceOf[js.Any], FAILED = FAILED.asInstanceOf[js.Any], INVALID_OPERATION = INVALID_OPERATION.asInstanceOf[js.Any], INVALID_URL = INVALID_URL.asInstanceOf[js.Any], IN_USE = IN_USE.asInstanceOf[js.Any], IO = IO.asInstanceOf[js.Any], NOT_A_DIRECTORY = NOT_A_DIRECTORY.asInstanceOf[js.Any], NOT_A_FILE = NOT_A_FILE.asInstanceOf[js.Any], NOT_EMPTY = NOT_EMPTY.asInstanceOf[js.Any], NOT_FOUND = NOT_FOUND.asInstanceOf[js.Any], NO_MEMORY = NO_MEMORY.asInstanceOf[js.Any], NO_SPACE = NO_SPACE.asInstanceOf[js.Any], OK = OK.asInstanceOf[js.Any], SECURITY = SECURITY.asInstanceOf[js.Any], TOO_MANY_OPENED = TOO_MANY_OPENED.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ABORT]
   }

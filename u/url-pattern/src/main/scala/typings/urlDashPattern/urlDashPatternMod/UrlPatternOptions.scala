@@ -26,13 +26,13 @@ object UrlPatternOptions {
     wildcardChar: String = null
   ): UrlPatternOptions = {
     val __obj = js.Dynamic.literal()
-    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar)
-    if (optionalSegmentEndChar != null) __obj.updateDynamic("optionalSegmentEndChar")(optionalSegmentEndChar)
-    if (optionalSegmentStartChar != null) __obj.updateDynamic("optionalSegmentStartChar")(optionalSegmentStartChar)
-    if (segmentNameCharset != null) __obj.updateDynamic("segmentNameCharset")(segmentNameCharset)
-    if (segmentNameStartChar != null) __obj.updateDynamic("segmentNameStartChar")(segmentNameStartChar)
-    if (segmentValueCharset != null) __obj.updateDynamic("segmentValueCharset")(segmentValueCharset)
-    if (wildcardChar != null) __obj.updateDynamic("wildcardChar")(wildcardChar)
+    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar.asInstanceOf[js.Any])
+    if (optionalSegmentEndChar != null) __obj.updateDynamic("optionalSegmentEndChar")(optionalSegmentEndChar.asInstanceOf[js.Any])
+    if (optionalSegmentStartChar != null) __obj.updateDynamic("optionalSegmentStartChar")(optionalSegmentStartChar.asInstanceOf[js.Any])
+    if (segmentNameCharset != null) __obj.updateDynamic("segmentNameCharset")(segmentNameCharset.asInstanceOf[js.Any])
+    if (segmentNameStartChar != null) __obj.updateDynamic("segmentNameStartChar")(segmentNameStartChar.asInstanceOf[js.Any])
+    if (segmentValueCharset != null) __obj.updateDynamic("segmentValueCharset")(segmentValueCharset.asInstanceOf[js.Any])
+    if (wildcardChar != null) __obj.updateDynamic("wildcardChar")(wildcardChar.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlPatternOptions]
   }
 }

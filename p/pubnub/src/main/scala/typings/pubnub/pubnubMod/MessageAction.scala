@@ -15,8 +15,8 @@ trait MessageAction extends js.Object {
 object MessageAction {
   @scala.inline
   def apply(actionTimetoken: String, messageTimetoken: String, `type`: String, uuid: String, value: String): MessageAction = {
-    val __obj = js.Dynamic.literal(actionTimetoken = actionTimetoken, messageTimetoken = messageTimetoken, uuid = uuid, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(actionTimetoken = actionTimetoken.asInstanceOf[js.Any], messageTimetoken = messageTimetoken.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageAction]
   }
 }

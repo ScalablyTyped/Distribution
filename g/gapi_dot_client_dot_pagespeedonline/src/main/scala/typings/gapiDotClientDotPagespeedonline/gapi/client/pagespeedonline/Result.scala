@@ -47,16 +47,16 @@ object Result {
     version: Anon_Major = null
   ): Result = {
     val __obj = js.Dynamic.literal()
-    if (formattedResults != null) __obj.updateDynamic("formattedResults")(formattedResults)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (invalidRules != null) __obj.updateDynamic("invalidRules")(invalidRules)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (pageStats != null) __obj.updateDynamic("pageStats")(pageStats)
+    if (formattedResults != null) __obj.updateDynamic("formattedResults")(formattedResults.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (invalidRules != null) __obj.updateDynamic("invalidRules")(invalidRules.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (pageStats != null) __obj.updateDynamic("pageStats")(pageStats.asInstanceOf[js.Any])
     if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
-    if (ruleGroups != null) __obj.updateDynamic("ruleGroups")(ruleGroups)
-    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (ruleGroups != null) __obj.updateDynamic("ruleGroups")(ruleGroups.asInstanceOf[js.Any])
+    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

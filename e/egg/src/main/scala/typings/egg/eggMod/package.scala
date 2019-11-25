@@ -35,7 +35,7 @@ package object eggMod {
   type LoggerLevel = typings.eggDashLogger.eggDashLoggerMod.LoggerLevel
   // plain object
   type PlainObject[T] = StringDictionary[T]
-  type PowerPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type PowerPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ U in keyof T ]:? T[U] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias egg.egg.PowerPartial<T[U]> * / object : T[U]}
     */ typings.egg.eggStrings.PowerPartial with js.Any
   // Remove specific property from the specific class

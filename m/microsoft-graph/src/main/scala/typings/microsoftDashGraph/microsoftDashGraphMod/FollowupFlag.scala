@@ -24,10 +24,10 @@ object FollowupFlag {
     startDateTime: DateTimeTimeZone = null
   ): FollowupFlag = {
     val __obj = js.Dynamic.literal()
-    if (completedDateTime != null) __obj.updateDynamic("completedDateTime")(completedDateTime)
-    if (dueDateTime != null) __obj.updateDynamic("dueDateTime")(dueDateTime)
-    if (flagStatus != null) __obj.updateDynamic("flagStatus")(flagStatus)
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime)
+    if (completedDateTime != null) __obj.updateDynamic("completedDateTime")(completedDateTime.asInstanceOf[js.Any])
+    if (dueDateTime != null) __obj.updateDynamic("dueDateTime")(dueDateTime.asInstanceOf[js.Any])
+    if (flagStatus != null) __obj.updateDynamic("flagStatus")(flagStatus.asInstanceOf[js.Any])
+    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[FollowupFlag]
   }
 }

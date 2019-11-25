@@ -14,7 +14,7 @@ trait Anon_MessageSignature extends js.Object {
 object Anon_MessageSignature {
   @scala.inline
   def apply(message: Message, signature: Signature): Anon_MessageSignature = {
-    val __obj = js.Dynamic.literal(message = message, signature = signature)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MessageSignature]
   }

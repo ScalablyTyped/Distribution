@@ -76,7 +76,7 @@ package object protobufjsMod {
     */
   type PoolSlicer = js.ThisFunction2[/* this */ Uint8Array, /* start */ Double, /* end */ Double, Uint8Array]
   /** Properties type. */
-  type Properties[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Properties[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P]}
     */ typings.protobufjs.protobufjsStrings.Properties with T
   /**

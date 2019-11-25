@@ -42,9 +42,9 @@ object ExpressMiddlewareOptions {
     timeByUrl: js.UndefOr[Boolean] = js.undefined
   ): ExpressMiddlewareOptions = {
     val __obj = js.Dynamic.literal()
-    if (notFoundRouteName != null) __obj.updateDynamic("notFoundRouteName")(notFoundRouteName)
+    if (notFoundRouteName != null) __obj.updateDynamic("notFoundRouteName")(notFoundRouteName.asInstanceOf[js.Any])
     if (onResponseEnd != null) __obj.updateDynamic("onResponseEnd")(js.Any.fromFunction4(onResponseEnd))
-    if (!js.isUndefined(timeByUrl)) __obj.updateDynamic("timeByUrl")(timeByUrl)
+    if (!js.isUndefined(timeByUrl)) __obj.updateDynamic("timeByUrl")(timeByUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressMiddlewareOptions]
   }
 }

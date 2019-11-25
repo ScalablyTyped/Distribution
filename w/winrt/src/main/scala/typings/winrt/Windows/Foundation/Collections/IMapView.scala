@@ -21,7 +21,7 @@ object IMapView {
     size: Double,
     split: () => Anon_First[K, V]
   ): IMapView[K, V] = {
-    val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first), hasKey = js.Any.fromFunction1(hasKey), lookup = js.Any.fromFunction1(lookup), size = size, split = js.Any.fromFunction0(split))
+    val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first), hasKey = js.Any.fromFunction1(hasKey), lookup = js.Any.fromFunction1(lookup), size = size.asInstanceOf[js.Any], split = js.Any.fromFunction0(split))
   
     __obj.asInstanceOf[IMapView[K, V]]
   }

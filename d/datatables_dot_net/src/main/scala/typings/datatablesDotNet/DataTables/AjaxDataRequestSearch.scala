@@ -12,7 +12,7 @@ trait AjaxDataRequestSearch extends js.Object {
 object AjaxDataRequestSearch {
   @scala.inline
   def apply(regex: Boolean, value: String): AjaxDataRequestSearch = {
-    val __obj = js.Dynamic.literal(regex = regex, value = value)
+    val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AjaxDataRequestSearch]
   }

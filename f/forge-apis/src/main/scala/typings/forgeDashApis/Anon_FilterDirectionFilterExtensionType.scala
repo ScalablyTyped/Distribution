@@ -22,11 +22,11 @@ object Anon_FilterDirectionFilterExtensionType {
     filterType: js.Array[String] = null
   ): Anon_FilterDirectionFilterExtensionType = {
     val __obj = js.Dynamic.literal()
-    if (filterDirection != null) __obj.updateDynamic("filterDirection")(filterDirection)
-    if (filterExtensionType != null) __obj.updateDynamic("filterExtensionType")(filterExtensionType)
-    if (filterId != null) __obj.updateDynamic("filterId")(filterId)
-    if (filterRefType != null) __obj.updateDynamic("filterRefType")(filterRefType)
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
+    if (filterDirection != null) __obj.updateDynamic("filterDirection")(filterDirection.asInstanceOf[js.Any])
+    if (filterExtensionType != null) __obj.updateDynamic("filterExtensionType")(filterExtensionType.asInstanceOf[js.Any])
+    if (filterId != null) __obj.updateDynamic("filterId")(filterId.asInstanceOf[js.Any])
+    if (filterRefType != null) __obj.updateDynamic("filterRefType")(filterRefType.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FilterDirectionFilterExtensionType]
   }
 }

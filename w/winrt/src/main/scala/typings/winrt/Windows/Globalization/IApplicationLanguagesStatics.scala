@@ -18,7 +18,7 @@ object IApplicationLanguagesStatics {
     manifestLanguages: IVectorView[String],
     primaryLanguageOverride: String
   ): IApplicationLanguagesStatics = {
-    val __obj = js.Dynamic.literal(languages = languages, manifestLanguages = manifestLanguages, primaryLanguageOverride = primaryLanguageOverride)
+    val __obj = js.Dynamic.literal(languages = languages.asInstanceOf[js.Any], manifestLanguages = manifestLanguages.asInstanceOf[js.Any], primaryLanguageOverride = primaryLanguageOverride.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IApplicationLanguagesStatics]
   }

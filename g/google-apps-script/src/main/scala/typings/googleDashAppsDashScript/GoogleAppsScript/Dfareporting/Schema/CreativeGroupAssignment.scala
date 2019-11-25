@@ -13,8 +13,8 @@ object CreativeGroupAssignment {
   @scala.inline
   def apply(creativeGroupId: String = null, creativeGroupNumber: String = null): CreativeGroupAssignment = {
     val __obj = js.Dynamic.literal()
-    if (creativeGroupId != null) __obj.updateDynamic("creativeGroupId")(creativeGroupId)
-    if (creativeGroupNumber != null) __obj.updateDynamic("creativeGroupNumber")(creativeGroupNumber)
+    if (creativeGroupId != null) __obj.updateDynamic("creativeGroupId")(creativeGroupId.asInstanceOf[js.Any])
+    if (creativeGroupNumber != null) __obj.updateDynamic("creativeGroupNumber")(creativeGroupNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeGroupAssignment]
   }
 }

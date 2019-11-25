@@ -35,11 +35,11 @@ object PropsType {
     refreshing: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): PropsType = {
-    val __obj = js.Dynamic.literal(damping = damping, direction = direction.asInstanceOf[js.Any], distanceToRefresh = distanceToRefresh, getScrollContainer = js.Any.fromFunction0(getScrollContainer), indicator = indicator, onRefresh = js.Any.fromFunction0(onRefresh))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(damping = damping.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], distanceToRefresh = distanceToRefresh.asInstanceOf[js.Any], getScrollContainer = js.Any.fromFunction0(getScrollContainer), indicator = indicator.asInstanceOf[js.Any], onRefresh = js.Any.fromFunction0(onRefresh))
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropsType]
   }
 }

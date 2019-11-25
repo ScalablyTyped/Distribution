@@ -15,10 +15,10 @@ object MjmlCarouselImageProps {
   @scala.inline
   def apply(alt: String = null, src: String = null, thumbnailsSrc: String = null, title: String = null): MjmlCarouselImageProps = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (thumbnailsSrc != null) __obj.updateDynamic("thumbnailsSrc")(thumbnailsSrc)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (thumbnailsSrc != null) __obj.updateDynamic("thumbnailsSrc")(thumbnailsSrc.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MjmlCarouselImageProps]
   }
 }

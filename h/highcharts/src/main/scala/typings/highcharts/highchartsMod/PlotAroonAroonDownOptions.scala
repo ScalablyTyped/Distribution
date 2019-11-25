@@ -15,7 +15,7 @@ object PlotAroonAroonDownOptions {
   @scala.inline
   def apply(styles: PlotAroonAroonDownStylesOptions = null): PlotAroonAroonDownOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAroonAroonDownOptions]
   }
 }

@@ -41,10 +41,10 @@ object Attribute {
     extensions: js.Array[_] = null,
     shortName: String = null
   ): Attribute = {
-    val __obj = js.Dynamic.literal(name = name, value = value, valueTagClass = valueTagClass)
-    __obj.updateDynamic("type")(`type`)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueTagClass = valueTagClass.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }
 }

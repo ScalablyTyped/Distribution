@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AnchorPlacement extends js.Object
 
+object AnchorPlacement {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.anchorDashJs.anchorDashJsStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.anchorDashJs.anchorDashJsStrings.right = this.cast("right")
+}
+

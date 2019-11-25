@@ -13,9 +13,9 @@ trait MessageDescriptor extends js.Object {
 object MessageDescriptor {
   @scala.inline
   def apply(id: js.Any, defaultMessage: String = null, description: String = null): MessageDescriptor = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageDescriptor]
   }
 }

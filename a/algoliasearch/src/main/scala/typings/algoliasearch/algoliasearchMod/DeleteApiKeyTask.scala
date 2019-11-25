@@ -11,7 +11,7 @@ trait DeleteApiKeyTask extends js.Object {
 object DeleteApiKeyTask {
   @scala.inline
   def apply(deletedAt: String): DeleteApiKeyTask = {
-    val __obj = js.Dynamic.literal(deletedAt = deletedAt)
+    val __obj = js.Dynamic.literal(deletedAt = deletedAt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteApiKeyTask]
   }

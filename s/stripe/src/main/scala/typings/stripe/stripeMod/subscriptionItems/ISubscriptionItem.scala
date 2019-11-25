@@ -58,9 +58,9 @@ object ISubscriptionItem {
     billing_thresholds: Anon_Usagegte = null,
     quantity: Int | Double = null
   ): ISubscriptionItem = {
-    val __obj = js.Dynamic.literal(created = created, id = id, metadata = metadata, plan = plan, subscription = subscription)
-    __obj.updateDynamic("object")(`object`)
-    if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionItem]
   }

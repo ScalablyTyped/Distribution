@@ -20,10 +20,10 @@ object Anon_Addresses {
     tags: js.Array[String] = null
   ): Anon_Addresses = {
     val __obj = js.Dynamic.literal()
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
-    if (approvees != null) __obj.updateDynamic("approvees")(approvees)
-    if (bundles != null) __obj.updateDynamic("bundles")(bundles)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
+    if (approvees != null) __obj.updateDynamic("approvees")(approvees.asInstanceOf[js.Any])
+    if (bundles != null) __obj.updateDynamic("bundles")(bundles.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Addresses]
   }
 }

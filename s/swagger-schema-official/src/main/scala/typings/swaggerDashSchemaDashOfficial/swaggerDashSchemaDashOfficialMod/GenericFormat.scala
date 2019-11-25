@@ -13,8 +13,8 @@ object GenericFormat {
   @scala.inline
   def apply(format: String = null, `type`: ParameterType = null): GenericFormat = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericFormat]
   }
 }

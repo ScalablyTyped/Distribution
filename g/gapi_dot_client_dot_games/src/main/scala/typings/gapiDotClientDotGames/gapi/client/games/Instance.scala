@@ -45,15 +45,15 @@ object Instance {
     webInstance: InstanceWebDetails = null
   ): Instance = {
     val __obj = js.Dynamic.literal()
-    if (acquisitionUri != null) __obj.updateDynamic("acquisitionUri")(acquisitionUri)
-    if (androidInstance != null) __obj.updateDynamic("androidInstance")(androidInstance)
-    if (iosInstance != null) __obj.updateDynamic("iosInstance")(iosInstance)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
-    if (!js.isUndefined(realtimePlay)) __obj.updateDynamic("realtimePlay")(realtimePlay)
-    if (!js.isUndefined(turnBasedPlay)) __obj.updateDynamic("turnBasedPlay")(turnBasedPlay)
-    if (webInstance != null) __obj.updateDynamic("webInstance")(webInstance)
+    if (acquisitionUri != null) __obj.updateDynamic("acquisitionUri")(acquisitionUri.asInstanceOf[js.Any])
+    if (androidInstance != null) __obj.updateDynamic("androidInstance")(androidInstance.asInstanceOf[js.Any])
+    if (iosInstance != null) __obj.updateDynamic("iosInstance")(iosInstance.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtimePlay)) __obj.updateDynamic("realtimePlay")(realtimePlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(turnBasedPlay)) __obj.updateDynamic("turnBasedPlay")(turnBasedPlay.asInstanceOf[js.Any])
+    if (webInstance != null) __obj.updateDynamic("webInstance")(webInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
 }

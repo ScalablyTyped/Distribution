@@ -27,10 +27,10 @@ object DownloadRequest {
     version: String = null
   ): DownloadRequest = {
     val __obj = js.Dynamic.literal()
-    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes)
-    if (filterIds != null) __obj.updateDynamic("filterIds")(filterIds)
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
+    if (filterIds != null) __obj.updateDynamic("filterIds")(filterIds.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadRequest]
   }
 }

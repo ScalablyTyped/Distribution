@@ -17,7 +17,7 @@ object StickyHeaderProps {
   def apply(onScroll: /* e */ Partial[UIEvent] => Unit = null, tableBody: HTMLElement = null): StickyHeaderProps = {
     val __obj = js.Dynamic.literal()
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (tableBody != null) __obj.updateDynamic("tableBody")(tableBody)
+    if (tableBody != null) __obj.updateDynamic("tableBody")(tableBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickyHeaderProps]
   }
 }

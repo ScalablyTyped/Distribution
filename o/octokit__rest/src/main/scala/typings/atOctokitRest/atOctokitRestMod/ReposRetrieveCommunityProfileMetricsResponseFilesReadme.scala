@@ -12,7 +12,7 @@ trait ReposRetrieveCommunityProfileMetricsResponseFilesReadme extends js.Object 
 object ReposRetrieveCommunityProfileMetricsResponseFilesReadme {
   @scala.inline
   def apply(html_url: String, url: String): ReposRetrieveCommunityProfileMetricsResponseFilesReadme = {
-    val __obj = js.Dynamic.literal(html_url = html_url, url = url)
+    val __obj = js.Dynamic.literal(html_url = html_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposRetrieveCommunityProfileMetricsResponseFilesReadme]
   }

@@ -62,17 +62,17 @@ object SearchBarProps {
     returnKeyType: ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS = null,
     textStyle: TextStyle = null
   ): SearchBarProps = {
-    val __obj = js.Dynamic.literal(height = height)
-    if (!js.isUndefined(alwaysShowBackButton)) __obj.updateDynamic("alwaysShowBackButton")(alwaysShowBackButton)
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
-    if (iconBackName != null) __obj.updateDynamic("iconBackName")(iconBackName)
-    if (iconCloseName != null) __obj.updateDynamic("iconCloseName")(iconCloseName)
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysShowBackButton)) __obj.updateDynamic("alwaysShowBackButton")(alwaysShowBackButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
+    if (iconBackName != null) __obj.updateDynamic("iconBackName")(iconBackName.asInstanceOf[js.Any])
+    if (iconCloseName != null) __obj.updateDynamic("iconCloseName")(iconCloseName.asInstanceOf[js.Any])
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
     if (iconPadding != null) __obj.updateDynamic("iconPadding")(iconPadding.asInstanceOf[js.Any])
-    if (iconSearchName != null) __obj.updateDynamic("iconSearchName")(iconSearchName)
+    if (iconSearchName != null) __obj.updateDynamic("iconSearchName")(iconSearchName.asInstanceOf[js.Any])
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
-    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle)
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
+    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
     if (onBackPress != null) __obj.updateDynamic("onBackPress")(js.Any.fromFunction0(onBackPress))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
@@ -81,10 +81,10 @@ object SearchBarProps {
     if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction1(onSearchChange))
     if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction0(onSubmitEditing))
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (placeholderColor != null) __obj.updateDynamic("placeholderColor")(placeholderColor)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (placeholderColor != null) __obj.updateDynamic("placeholderColor")(placeholderColor.asInstanceOf[js.Any])
     if (returnKeyType != null) __obj.updateDynamic("returnKeyType")(returnKeyType.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBarProps]
   }
 }

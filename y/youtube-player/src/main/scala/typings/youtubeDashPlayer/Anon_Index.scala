@@ -21,11 +21,11 @@ object Anon_Index {
     startSeconds: Int | Double = null,
     suggestedQuality: String = null
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal(listType = listType)
+    val __obj = js.Dynamic.literal(listType = listType.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list)
+    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
     if (startSeconds != null) __obj.updateDynamic("startSeconds")(startSeconds.asInstanceOf[js.Any])
-    if (suggestedQuality != null) __obj.updateDynamic("suggestedQuality")(suggestedQuality)
+    if (suggestedQuality != null) __obj.updateDynamic("suggestedQuality")(suggestedQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Index]
   }
 }

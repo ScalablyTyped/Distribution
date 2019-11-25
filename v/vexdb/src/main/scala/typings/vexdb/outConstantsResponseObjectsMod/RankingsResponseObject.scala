@@ -41,7 +41,7 @@ object RankingsResponseObject {
     wins: Double,
     wp: Double
   ): RankingsResponseObject = {
-    val __obj = js.Dynamic.literal(ap = ap, ccwm = ccwm, division = division, dpr = dpr, losses = losses, max_score = max_score, opr = opr, rank = rank, sku = sku, sp = sp, team = team, ties = ties, trsp = trsp, wins = wins, wp = wp)
+    val __obj = js.Dynamic.literal(ap = ap.asInstanceOf[js.Any], ccwm = ccwm.asInstanceOf[js.Any], division = division.asInstanceOf[js.Any], dpr = dpr.asInstanceOf[js.Any], losses = losses.asInstanceOf[js.Any], max_score = max_score.asInstanceOf[js.Any], opr = opr.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], ties = ties.asInstanceOf[js.Any], trsp = trsp.asInstanceOf[js.Any], wins = wins.asInstanceOf[js.Any], wp = wp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RankingsResponseObject]
   }

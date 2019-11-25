@@ -21,8 +21,8 @@ trait GetQueueUrlOutput extends OutputTypesUnion {
 object GetQueueUrlOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, QueueUrl: String = null): GetQueueUrlOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (QueueUrl != null) __obj.updateDynamic("QueueUrl")(QueueUrl)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (QueueUrl != null) __obj.updateDynamic("QueueUrl")(QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueueUrlOutput]
   }
 }

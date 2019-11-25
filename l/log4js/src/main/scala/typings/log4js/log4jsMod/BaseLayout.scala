@@ -13,7 +13,7 @@ object BaseLayout {
   @scala.inline
   def apply(`type`: basic): BaseLayout = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseLayout]
   }
 }

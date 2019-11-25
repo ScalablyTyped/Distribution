@@ -25,12 +25,12 @@ object BeforeAfterWrapperProps {
     style: CSSProperties = null
   ): BeforeAfterWrapperProps = {
     val __obj = js.Dynamic.literal()
-    if (afterElementType != null) __obj.updateDynamic("afterElementType")(afterElementType)
-    if (afterStyle != null) __obj.updateDynamic("afterStyle")(afterStyle)
-    if (beforeElementType != null) __obj.updateDynamic("beforeElementType")(beforeElementType)
-    if (beforeStyle != null) __obj.updateDynamic("beforeStyle")(beforeStyle)
-    if (elementType != null) __obj.updateDynamic("elementType")(elementType)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (afterElementType != null) __obj.updateDynamic("afterElementType")(afterElementType.asInstanceOf[js.Any])
+    if (afterStyle != null) __obj.updateDynamic("afterStyle")(afterStyle.asInstanceOf[js.Any])
+    if (beforeElementType != null) __obj.updateDynamic("beforeElementType")(beforeElementType.asInstanceOf[js.Any])
+    if (beforeStyle != null) __obj.updateDynamic("beforeStyle")(beforeStyle.asInstanceOf[js.Any])
+    if (elementType != null) __obj.updateDynamic("elementType")(elementType.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeAfterWrapperProps]
   }
 }

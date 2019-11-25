@@ -13,7 +13,7 @@ object ApksAddExternallyHostedRequest {
   @scala.inline
   def apply(externallyHostedApk: ExternallyHostedApk = null): ApksAddExternallyHostedRequest = {
     val __obj = js.Dynamic.literal()
-    if (externallyHostedApk != null) __obj.updateDynamic("externallyHostedApk")(externallyHostedApk)
+    if (externallyHostedApk != null) __obj.updateDynamic("externallyHostedApk")(externallyHostedApk.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApksAddExternallyHostedRequest]
   }
 }

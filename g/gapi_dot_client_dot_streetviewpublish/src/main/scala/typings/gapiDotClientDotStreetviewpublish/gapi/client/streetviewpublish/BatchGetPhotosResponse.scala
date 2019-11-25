@@ -18,7 +18,7 @@ object BatchGetPhotosResponse {
   @scala.inline
   def apply(results: js.Array[PhotoResponse] = null): BatchGetPhotosResponse = {
     val __obj = js.Dynamic.literal()
-    if (results != null) __obj.updateDynamic("results")(results)
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetPhotosResponse]
   }
 }

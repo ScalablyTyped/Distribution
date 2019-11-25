@@ -41,9 +41,9 @@ object colorCreatePCTrueColorRendererParams {
     density: Int | Double = null,
     size: String = null
   ): colorCreatePCTrueColorRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[colorCreatePCTrueColorRendererParams]
   }
 }

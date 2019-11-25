@@ -24,12 +24,12 @@ object Anon_AriaCloseSkipLink {
     ariaLiveRegionInitialFocusNoneTouch: String = null
   ): Anon_AriaCloseSkipLink = {
     val __obj = js.Dynamic.literal()
-    if (ariaCloseSkipLink != null) __obj.updateDynamic("ariaCloseSkipLink")(ariaCloseSkipLink)
-    if (ariaFocusSkipLink != null) __obj.updateDynamic("ariaFocusSkipLink")(ariaFocusSkipLink)
-    if (ariaLiveRegionInitialFocusFirstFocusable != null) __obj.updateDynamic("ariaLiveRegionInitialFocusFirstFocusable")(ariaLiveRegionInitialFocusFirstFocusable)
-    if (ariaLiveRegionInitialFocusFirstFocusableTouch != null) __obj.updateDynamic("ariaLiveRegionInitialFocusFirstFocusableTouch")(ariaLiveRegionInitialFocusFirstFocusableTouch)
-    if (ariaLiveRegionInitialFocusNone != null) __obj.updateDynamic("ariaLiveRegionInitialFocusNone")(ariaLiveRegionInitialFocusNone)
-    if (ariaLiveRegionInitialFocusNoneTouch != null) __obj.updateDynamic("ariaLiveRegionInitialFocusNoneTouch")(ariaLiveRegionInitialFocusNoneTouch)
+    if (ariaCloseSkipLink != null) __obj.updateDynamic("ariaCloseSkipLink")(ariaCloseSkipLink.asInstanceOf[js.Any])
+    if (ariaFocusSkipLink != null) __obj.updateDynamic("ariaFocusSkipLink")(ariaFocusSkipLink.asInstanceOf[js.Any])
+    if (ariaLiveRegionInitialFocusFirstFocusable != null) __obj.updateDynamic("ariaLiveRegionInitialFocusFirstFocusable")(ariaLiveRegionInitialFocusFirstFocusable.asInstanceOf[js.Any])
+    if (ariaLiveRegionInitialFocusFirstFocusableTouch != null) __obj.updateDynamic("ariaLiveRegionInitialFocusFirstFocusableTouch")(ariaLiveRegionInitialFocusFirstFocusableTouch.asInstanceOf[js.Any])
+    if (ariaLiveRegionInitialFocusNone != null) __obj.updateDynamic("ariaLiveRegionInitialFocusNone")(ariaLiveRegionInitialFocusNone.asInstanceOf[js.Any])
+    if (ariaLiveRegionInitialFocusNoneTouch != null) __obj.updateDynamic("ariaLiveRegionInitialFocusNoneTouch")(ariaLiveRegionInitialFocusNoneTouch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AriaCloseSkipLink]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Decimals extends js.Object {
 object Anon_Decimals {
   @scala.inline
   def apply(length: Double, decimals: Int | Double = null): Anon_Decimals = {
-    val __obj = js.Dynamic.literal(length = length)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Decimals]
   }

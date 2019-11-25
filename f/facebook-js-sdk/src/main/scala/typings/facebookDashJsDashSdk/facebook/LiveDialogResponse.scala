@@ -21,9 +21,9 @@ object LiveDialogResponse {
     error_code: Int | Double = null,
     error_message: String = null
   ): LiveDialogResponse = {
-    val __obj = js.Dynamic.literal(id = id, secure_stream_url = secure_stream_url, status = status, stream_url = stream_url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], secure_stream_url = secure_stream_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stream_url = stream_url.asInstanceOf[js.Any])
     if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveDialogResponse]
   }
 }

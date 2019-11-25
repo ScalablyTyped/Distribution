@@ -36,12 +36,12 @@ object DragEventArgs {
     `type`: String = null
   ): DragEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (targetElementName != null) __obj.updateDynamic("targetElementName")(targetElementName)
-    if (targetPath != null) __obj.updateDynamic("targetPath")(targetPath)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (targetElementName != null) __obj.updateDynamic("targetElementName")(targetElementName.asInstanceOf[js.Any])
+    if (targetPath != null) __obj.updateDynamic("targetPath")(targetPath.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragEventArgs]
   }
 }

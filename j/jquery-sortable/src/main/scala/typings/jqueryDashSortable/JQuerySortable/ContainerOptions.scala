@@ -22,11 +22,11 @@ object ContainerOptions {
     vertical: js.UndefOr[Boolean] = js.undefined
   ): ContainerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag)
-    if (!js.isUndefined(drop)) __obj.updateDynamic("drop")(drop)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (!js.isUndefined(nested)) __obj.updateDynamic("nested")(nested)
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
+    if (!js.isUndefined(drop)) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(nested)) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerOptions]
   }
 }

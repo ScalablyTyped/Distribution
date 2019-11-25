@@ -30,8 +30,8 @@ object ListProjectsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, projects: js.Array[Project] = null): ListProjectsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (projects != null) __obj.updateDynamic("projects")(projects)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (projects != null) __obj.updateDynamic("projects")(projects.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProjectsResponse]
   }
 }

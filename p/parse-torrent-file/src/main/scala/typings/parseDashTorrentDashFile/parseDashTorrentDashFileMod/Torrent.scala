@@ -27,13 +27,13 @@ object Torrent {
     `url-list`: Buffer = null
   ): Torrent = {
     val __obj = js.Dynamic.literal()
-    if (announce != null) __obj.updateDynamic("announce")(announce)
-    if (`announce-list` != null) __obj.updateDynamic("announce-list")(`announce-list`)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (`created by` != null) __obj.updateDynamic("created by")(`created by`)
+    if (announce != null) __obj.updateDynamic("announce")(announce.asInstanceOf[js.Any])
+    if (`announce-list` != null) __obj.updateDynamic("announce-list")(`announce-list`.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (`created by` != null) __obj.updateDynamic("created by")(`created by`.asInstanceOf[js.Any])
     if (`creation date` != null) __obj.updateDynamic("creation date")(`creation date`.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (`url-list` != null) __obj.updateDynamic("url-list")(`url-list`)
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (`url-list` != null) __obj.updateDynamic("url-list")(`url-list`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Torrent]
   }
 }

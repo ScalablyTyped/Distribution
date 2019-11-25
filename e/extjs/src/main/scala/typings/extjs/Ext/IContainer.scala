@@ -26,8 +26,8 @@ object IContainer {
     getChildByElement: (/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => IComponent = null
   ): IContainer = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IAbstractContainer)
-    if (anchorSize != null) __obj.updateDynamic("anchorSize")(anchorSize)
+    if (IAbstractContainer != null) js.Dynamic.global.Object.assign(__obj, IAbstractContainer)
+    if (anchorSize != null) __obj.updateDynamic("anchorSize")(anchorSize.asInstanceOf[js.Any])
     if (getChildByElement != null) __obj.updateDynamic("getChildByElement")(js.Any.fromFunction2(getChildByElement))
     __obj.asInstanceOf[IContainer]
   }

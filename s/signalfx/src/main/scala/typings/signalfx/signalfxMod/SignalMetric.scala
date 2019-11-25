@@ -13,7 +13,7 @@ trait SignalMetric extends js.Object {
 object SignalMetric {
   @scala.inline
   def apply(metric: String, value: Double, timestamp: Int | Double = null): SignalMetric = {
-    val __obj = js.Dynamic.literal(metric = metric, value = value)
+    val __obj = js.Dynamic.literal(metric = metric.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalMetric]
   }

@@ -20,8 +20,8 @@ trait GitCreateTreeParams extends js.Object {
 object GitCreateTreeParams {
   @scala.inline
   def apply(owner: String, repo: String, tree: js.Array[GitCreateTreeParamsTree], base_tree: String = null): GitCreateTreeParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, tree = tree)
-    if (base_tree != null) __obj.updateDynamic("base_tree")(base_tree)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
+    if (base_tree != null) __obj.updateDynamic("base_tree")(base_tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateTreeParams]
   }
 }

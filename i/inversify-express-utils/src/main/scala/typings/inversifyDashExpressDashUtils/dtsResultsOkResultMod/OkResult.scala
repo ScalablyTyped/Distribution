@@ -13,7 +13,7 @@ trait OkResult extends IHttpActionResult {
 object OkResult {
   @scala.inline
   def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): OkResult = {
-    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = js.Any.fromFunction0(executeAsync))
+    val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync))
   
     __obj.asInstanceOf[OkResult]
   }

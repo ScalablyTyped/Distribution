@@ -15,8 +15,8 @@ object TextAnnotation {
   @scala.inline
   def apply(pages: js.Array[Page] = null, text: String = null): TextAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAnnotation]
   }
 }

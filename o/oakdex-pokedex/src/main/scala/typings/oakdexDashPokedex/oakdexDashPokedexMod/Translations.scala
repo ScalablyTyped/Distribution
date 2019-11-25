@@ -33,16 +33,16 @@ object Translations {
     pl: String = null,
     tr: String = null
   ): Translations = {
-    val __obj = js.Dynamic.literal(de = de, en = en)
-    if (cz != null) __obj.updateDynamic("cz")(cz)
-    if (dk != null) __obj.updateDynamic("dk")(dk)
-    if (es != null) __obj.updateDynamic("es")(es)
-    if (fr != null) __obj.updateDynamic("fr")(fr)
-    if (gr != null) __obj.updateDynamic("gr")(gr)
-    if (it != null) __obj.updateDynamic("it")(it)
-    if (jp != null) __obj.updateDynamic("jp")(jp)
-    if (pl != null) __obj.updateDynamic("pl")(pl)
-    if (tr != null) __obj.updateDynamic("tr")(tr)
+    val __obj = js.Dynamic.literal(de = de.asInstanceOf[js.Any], en = en.asInstanceOf[js.Any])
+    if (cz != null) __obj.updateDynamic("cz")(cz.asInstanceOf[js.Any])
+    if (dk != null) __obj.updateDynamic("dk")(dk.asInstanceOf[js.Any])
+    if (es != null) __obj.updateDynamic("es")(es.asInstanceOf[js.Any])
+    if (fr != null) __obj.updateDynamic("fr")(fr.asInstanceOf[js.Any])
+    if (gr != null) __obj.updateDynamic("gr")(gr.asInstanceOf[js.Any])
+    if (it != null) __obj.updateDynamic("it")(it.asInstanceOf[js.Any])
+    if (jp != null) __obj.updateDynamic("jp")(jp.asInstanceOf[js.Any])
+    if (pl != null) __obj.updateDynamic("pl")(pl.asInstanceOf[js.Any])
+    if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Translations]
   }
 }

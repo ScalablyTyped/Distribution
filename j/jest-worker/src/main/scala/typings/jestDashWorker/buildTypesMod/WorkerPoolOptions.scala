@@ -22,7 +22,7 @@ object WorkerPoolOptions {
     numWorkers: Double,
     setupArgs: js.Array[_]
   ): WorkerPoolOptions = {
-    val __obj = js.Dynamic.literal(enableWorkerThreads = enableWorkerThreads, forkOptions = forkOptions, maxRetries = maxRetries, numWorkers = numWorkers, setupArgs = setupArgs)
+    val __obj = js.Dynamic.literal(enableWorkerThreads = enableWorkerThreads.asInstanceOf[js.Any], forkOptions = forkOptions.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any], numWorkers = numWorkers.asInstanceOf[js.Any], setupArgs = setupArgs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkerPoolOptions]
   }

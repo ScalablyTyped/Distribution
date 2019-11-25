@@ -25,9 +25,9 @@ object BaseOAuthSecurity {
     scopes: OAuthScope = null
   ): BaseOAuthSecurity = {
     val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOAuthSecurity]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "create-xpub"
-version := "2.1-dt-20190201Z-8129d2"
+version := "2.1-dt-20190201Z-c11dba"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

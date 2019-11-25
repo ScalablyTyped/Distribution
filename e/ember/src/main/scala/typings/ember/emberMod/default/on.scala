@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object on
   extends TopLevel[
       js.Function2[
-        /* eventNames */ String, 
+        /* eventNames */ java.lang.String, 
         /* func */ js.Function1[/* repeated */ js.Any, Unit], 
         js.Function1[/* repeated */ js.Any, Unit]
       ]

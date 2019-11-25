@@ -26,8 +26,8 @@ object CustomPropertyCommon {
     `type`: string | integer | number | array | boolean | items = null
   ): CustomPropertyCommon = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyCommon]

@@ -61,60 +61,65 @@ object rosieMod extends js.Object {
       * @param any
       * @return {Factory}
       */
-    def attr[K /* <: String */](name: K, defaultValue: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): IFactory[T] = js.native
     def attr[K /* <: String */](
       name: K,
-      generatorFunction: js.Function0[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+      defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): IFactory[T] = js.native
+    def attr[K /* <: String */](
+      name: K,
+      generatorFunction: js.Function0[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+        ]
     ): IFactory[T] = js.native
     def attr[K /* <: String */, D /* <: String */](name: K, dependencies: js.Array[D], generatorFunction: js.Any): IFactory[T] = js.native
     def attr[K /* <: String */, D /* <: String */](
       name: K,
       dependencies: js.Array[D],
       generatorFunction: js.Function1[
-          /* import warning: ImportType.apply Failed type conversion: T[D] */ /* value */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D] */ /* value */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): IFactory[T] = js.native
     def attr[K /* <: String */, D1 /* <: String */, D2 /* <: String */](
       name: K,
       dependencies: js.Tuple2[D1, D2],
       generatorFunction: js.Function2[
-          /* import warning: ImportType.apply Failed type conversion: T[D1] */ /* value1 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D2] */ /* value2 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D1] */ /* value1 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D2] */ /* value2 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): IFactory[T] = js.native
     def attr[K /* <: String */, D1 /* <: String */, D2 /* <: String */, D3 /* <: String */](
       name: K,
       dependencies: js.Tuple3[D1, D2, D3],
       generatorFunction: js.Function3[
-          /* import warning: ImportType.apply Failed type conversion: T[D1] */ /* value1 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D2] */ /* value2 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D3] */ /* value3 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D1] */ /* value1 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D2] */ /* value2 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D3] */ /* value3 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): IFactory[T] = js.native
     def attr[K /* <: String */, D1 /* <: String */, D2 /* <: String */, D3 /* <: String */, D4 /* <: String */](
       name: K,
       dependencies: js.Tuple4[D1, D2, D3, D4],
       generatorFunction: js.Function4[
-          /* import warning: ImportType.apply Failed type conversion: T[D1] */ /* value1 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D2] */ /* value2 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D3] */ /* value3 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D4] */ /* value4 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D1] */ /* value1 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D2] */ /* value2 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D3] */ /* value3 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D4] */ /* value4 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): IFactory[T] = js.native
     def attr[K /* <: String */, D1 /* <: String */, D2 /* <: String */, D3 /* <: String */, D4 /* <: String */, D5 /* <: String */](
       name: K,
       dependencies: js.Tuple5[D1, D2, D3, D4, D5],
       generatorFunction: js.Function5[
-          /* import warning: ImportType.apply Failed type conversion: T[D1] */ /* value1 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D2] */ /* value2 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D3] */ /* value3 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D4] */ /* value4 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[D5] */ /* value5 */ js.Any, 
-          /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D1] */ /* value1 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D2] */ /* value2 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D3] */ /* value3 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D4] */ /* value4 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D5] */ /* value5 */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): IFactory[T] = js.native
     /**
@@ -128,12 +133,12 @@ object rosieMod extends js.Object {
       */
     def attributes(): T = js.native
     def attributes(
-      attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactory with T
     ): T = js.native
     def attributes(
-      attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactory with T,
       options: js.Any
@@ -154,7 +159,7 @@ object rosieMod extends js.Object {
       * @return {Factory}
       */
     def attrs[Keys /* <: String */](
-      attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in Keys ]: T[K] | (opts? : any): T[K]}
       */ typings.rosie.rosieStrings.IFactory with js.Any
     ): IFactory[T] = js.native
@@ -168,12 +173,12 @@ object rosieMod extends js.Object {
       */
     def build(): T = js.native
     def build(
-      attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactory with T
     ): T = js.native
     def build(
-      attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactory with T,
       options: js.Any
@@ -181,13 +186,13 @@ object rosieMod extends js.Object {
     def buildList(size: Double): js.Array[T] = js.native
     def buildList(
       size: Double,
-      attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactory with T
     ): js.Array[T] = js.native
     def buildList(
       size: Double,
-      attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactory with T,
       options: js.Any
@@ -301,13 +306,13 @@ object rosieMod extends js.Object {
     def build[T](name: String): T = js.native
     def build[T](
       name: String,
-      attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactoryStatic with T
     ): T = js.native
     def build[T](
       name: String,
-      attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+      attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactoryStatic with T,
       options: js.Any

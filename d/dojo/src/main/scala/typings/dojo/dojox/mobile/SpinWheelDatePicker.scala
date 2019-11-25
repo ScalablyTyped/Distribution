@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.dayPattern
 import typings.dojo.dojoStrings.monthPattern
 import typings.dojo.dojoStrings.value
@@ -103,12 +102,44 @@ class SpinWheelDatePicker () extends SpinWheel {
   @JSName("set")
   def set_yearPattern(property: yearPattern, value: String): Unit = js.native
   @JSName("watch")
-  def watch_dayPattern(property: dayPattern, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_dayPattern(
+    property: dayPattern,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_monthPattern(property: monthPattern, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_monthPattern(
+    property: monthPattern,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_value(
+    property: value,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_yearPattern(property: yearPattern, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_yearPattern(
+    property: yearPattern,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -23,7 +23,7 @@ object CloudStreamProgress {
   def apply(progress: Int | Double = null, url: String = null): CloudStreamProgress = {
     val __obj = js.Dynamic.literal()
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudStreamProgress]
   }
 }

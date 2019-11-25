@@ -40,13 +40,13 @@ object GetImageEventArgs {
     `type`: String = null
   ): GetImageEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (originalArgs != null) __obj.updateDynamic("originalArgs")(originalArgs)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (originalArgs != null) __obj.updateDynamic("originalArgs")(originalArgs.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetImageEventArgs]
   }
 }

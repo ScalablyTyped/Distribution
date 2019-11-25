@@ -12,7 +12,7 @@ object IForceOptions {
   @scala.inline
   def apply(targets: js.Array[_] = null): IForceOptions = {
     val __obj = js.Dynamic.literal()
-    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[IForceOptions]
   }
 }

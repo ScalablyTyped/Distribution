@@ -18,9 +18,9 @@ object APIResponsePageTokenMeta {
     next_page_token: String = null,
     prev_page_token: String = null
   ): APIResponsePageTokenMeta = {
-    val __obj = js.Dynamic.literal(request_id = request_id, status = status, version = version)
-    if (next_page_token != null) __obj.updateDynamic("next_page_token")(next_page_token)
-    if (prev_page_token != null) __obj.updateDynamic("prev_page_token")(prev_page_token)
+    val __obj = js.Dynamic.literal(request_id = request_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (next_page_token != null) __obj.updateDynamic("next_page_token")(next_page_token.asInstanceOf[js.Any])
+    if (prev_page_token != null) __obj.updateDynamic("prev_page_token")(prev_page_token.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIResponsePageTokenMeta]
   }
 }

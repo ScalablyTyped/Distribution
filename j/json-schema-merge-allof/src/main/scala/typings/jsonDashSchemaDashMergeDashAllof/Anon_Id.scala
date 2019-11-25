@@ -13,7 +13,7 @@ object Anon_Id {
   @scala.inline
   def apply($id: js.Any = null): Anon_Id = {
     val __obj = js.Dynamic.literal()
-    if ($id != null) __obj.updateDynamic("$id")($id)
+    if ($id != null) __obj.updateDynamic("$id")($id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Id]
   }
 }

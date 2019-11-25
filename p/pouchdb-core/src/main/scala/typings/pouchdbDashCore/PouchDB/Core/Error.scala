@@ -30,11 +30,11 @@ object Error {
   ): Error = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (rev != null) __obj.updateDynamic("rev")(rev)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (rev != null) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }

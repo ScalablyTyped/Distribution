@@ -28,11 +28,11 @@ object TopologyConfig {
     userStageToComputationNameMap: Record[String, String] = null
   ): TopologyConfig = {
     val __obj = js.Dynamic.literal()
-    if (computations != null) __obj.updateDynamic("computations")(computations)
-    if (dataDiskAssignments != null) __obj.updateDynamic("dataDiskAssignments")(dataDiskAssignments)
+    if (computations != null) __obj.updateDynamic("computations")(computations.asInstanceOf[js.Any])
+    if (dataDiskAssignments != null) __obj.updateDynamic("dataDiskAssignments")(dataDiskAssignments.asInstanceOf[js.Any])
     if (forwardingKeyBits != null) __obj.updateDynamic("forwardingKeyBits")(forwardingKeyBits.asInstanceOf[js.Any])
     if (persistentStateVersion != null) __obj.updateDynamic("persistentStateVersion")(persistentStateVersion.asInstanceOf[js.Any])
-    if (userStageToComputationNameMap != null) __obj.updateDynamic("userStageToComputationNameMap")(userStageToComputationNameMap)
+    if (userStageToComputationNameMap != null) __obj.updateDynamic("userStageToComputationNameMap")(userStageToComputationNameMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopologyConfig]
   }
 }

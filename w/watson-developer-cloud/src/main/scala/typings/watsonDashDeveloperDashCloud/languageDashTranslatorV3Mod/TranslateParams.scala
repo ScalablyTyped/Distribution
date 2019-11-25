@@ -31,12 +31,12 @@ object TranslateParams {
     source: String = null,
     target: String = null
   ): TranslateParams = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (model_id != null) __obj.updateDynamic("model_id")(model_id)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateParams]
   }
 }

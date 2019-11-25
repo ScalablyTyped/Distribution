@@ -25,10 +25,10 @@ object RelationsResult {
     `type`: String = null
   ): RelationsResult = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
-    if (sentence != null) __obj.updateDynamic("sentence")(sentence)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (sentence != null) __obj.updateDynamic("sentence")(sentence.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationsResult]
   }
 }

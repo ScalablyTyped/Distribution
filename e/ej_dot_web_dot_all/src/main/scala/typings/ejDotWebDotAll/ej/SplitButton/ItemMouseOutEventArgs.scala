@@ -36,12 +36,12 @@ object ItemMouseOutEventArgs {
     `type`: String = null
   ): ItemMouseOutEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (ID != null) __obj.updateDynamic("ID")(ID)
-    if (Text != null) __obj.updateDynamic("Text")(Text)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
+    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemMouseOutEventArgs]
   }
 }

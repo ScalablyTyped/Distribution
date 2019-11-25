@@ -21,10 +21,10 @@ object ElectoralDistrict {
   @scala.inline
   def apply(id: String = null, kgForeignKey: String = null, name: String = null, scope: String = null): ElectoralDistrict = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kgForeignKey != null) __obj.updateDynamic("kgForeignKey")(kgForeignKey)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kgForeignKey != null) __obj.updateDynamic("kgForeignKey")(kgForeignKey.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElectoralDistrict]
   }
 }

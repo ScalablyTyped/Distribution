@@ -13,9 +13,9 @@ trait RemoteUploadParam extends js.Object {
 object RemoteUploadParam {
   @scala.inline
   def apply(url: String, folder: String = null, headers: String = null): RemoteUploadParam = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (folder != null) __obj.updateDynamic("folder")(folder)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteUploadParam]
   }
 }

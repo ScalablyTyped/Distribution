@@ -36,10 +36,10 @@ object DocumentOrShadowRoot {
     fullscreenElement: Element = null,
     pointerLockElement: Element = null
   ): DocumentOrShadowRoot = {
-    val __obj = js.Dynamic.literal(caretPositionFromPoint = js.Any.fromFunction2(caretPositionFromPoint), caretRangeFromPoint = js.Any.fromFunction2(caretRangeFromPoint), elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets)
-    if (activeElement != null) __obj.updateDynamic("activeElement")(activeElement)
-    if (fullscreenElement != null) __obj.updateDynamic("fullscreenElement")(fullscreenElement)
-    if (pointerLockElement != null) __obj.updateDynamic("pointerLockElement")(pointerLockElement)
+    val __obj = js.Dynamic.literal(caretPositionFromPoint = js.Any.fromFunction2(caretPositionFromPoint), caretRangeFromPoint = js.Any.fromFunction2(caretRangeFromPoint), elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets.asInstanceOf[js.Any])
+    if (activeElement != null) __obj.updateDynamic("activeElement")(activeElement.asInstanceOf[js.Any])
+    if (fullscreenElement != null) __obj.updateDynamic("fullscreenElement")(fullscreenElement.asInstanceOf[js.Any])
+    if (pointerLockElement != null) __obj.updateDynamic("pointerLockElement")(pointerLockElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }
 }

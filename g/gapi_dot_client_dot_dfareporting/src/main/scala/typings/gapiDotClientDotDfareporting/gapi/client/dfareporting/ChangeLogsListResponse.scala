@@ -17,9 +17,9 @@ object ChangeLogsListResponse {
   @scala.inline
   def apply(changeLogs: js.Array[ChangeLog] = null, kind: String = null, nextPageToken: String = null): ChangeLogsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (changeLogs != null) __obj.updateDynamic("changeLogs")(changeLogs)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (changeLogs != null) __obj.updateDynamic("changeLogs")(changeLogs.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeLogsListResponse]
   }
 }

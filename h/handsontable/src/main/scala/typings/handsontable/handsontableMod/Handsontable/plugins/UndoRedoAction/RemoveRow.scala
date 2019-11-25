@@ -18,7 +18,7 @@ object RemoveRow {
     data: js.Array[js.Array[typings.handsontable.handsontableMod.Handsontable.plugins.CellValue]],
     index: Double
   ): RemoveRow = {
-    val __obj = js.Dynamic.literal(actionType = actionType, data = data, index = index)
+    val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RemoveRow]
   }

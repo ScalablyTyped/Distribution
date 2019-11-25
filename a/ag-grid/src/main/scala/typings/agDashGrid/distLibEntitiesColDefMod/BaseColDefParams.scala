@@ -29,7 +29,7 @@ object BaseColDefParams {
     data: js.Any,
     node: RowNode
   ): BaseColDefParams = {
-    val __obj = js.Dynamic.literal(api = api, colDef = colDef, column = column, columnApi = columnApi, context = context, data = data, node = node)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], colDef = colDef.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseColDefParams]
   }

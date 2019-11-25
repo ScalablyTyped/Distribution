@@ -23,9 +23,9 @@ object ILogOptions {
   ): ILogOptions = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction3(action))
-    if (excludeTags != null) __obj.updateDynamic("excludeTags")(excludeTags)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (excludeTags != null) __obj.updateDynamic("excludeTags")(excludeTags.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILogOptions]
   }
 }

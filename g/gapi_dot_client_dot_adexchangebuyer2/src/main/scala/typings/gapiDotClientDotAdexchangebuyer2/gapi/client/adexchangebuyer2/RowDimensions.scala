@@ -13,7 +13,7 @@ object RowDimensions {
   @scala.inline
   def apply(timeInterval: TimeInterval = null): RowDimensions = {
     val __obj = js.Dynamic.literal()
-    if (timeInterval != null) __obj.updateDynamic("timeInterval")(timeInterval)
+    if (timeInterval != null) __obj.updateDynamic("timeInterval")(timeInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDimensions]
   }
 }

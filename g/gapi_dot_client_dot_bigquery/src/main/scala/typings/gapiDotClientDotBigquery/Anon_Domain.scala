@@ -41,12 +41,12 @@ object Anon_Domain {
     view: TableReference = null
   ): Anon_Domain = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (groupByEmail != null) __obj.updateDynamic("groupByEmail")(groupByEmail)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (specialGroup != null) __obj.updateDynamic("specialGroup")(specialGroup)
-    if (userByEmail != null) __obj.updateDynamic("userByEmail")(userByEmail)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (groupByEmail != null) __obj.updateDynamic("groupByEmail")(groupByEmail.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (specialGroup != null) __obj.updateDynamic("specialGroup")(specialGroup.asInstanceOf[js.Any])
+    if (userByEmail != null) __obj.updateDynamic("userByEmail")(userByEmail.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Domain]
   }
 }

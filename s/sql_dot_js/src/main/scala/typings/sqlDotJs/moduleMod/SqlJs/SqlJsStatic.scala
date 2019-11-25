@@ -13,7 +13,7 @@ trait SqlJsStatic extends js.Object {
 object SqlJsStatic {
   @scala.inline
   def apply(Database: Instantiable0[Database], Statement: Instantiable0[Statement]): SqlJsStatic = {
-    val __obj = js.Dynamic.literal(Database = Database, Statement = Statement)
+    val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any], Statement = Statement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SqlJsStatic]
   }

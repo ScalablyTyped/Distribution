@@ -12,7 +12,7 @@ object IHelmetHidePoweredByConfiguration {
   @scala.inline
   def apply(setTo: String = null): IHelmetHidePoweredByConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (setTo != null) __obj.updateDynamic("setTo")(setTo)
+    if (setTo != null) __obj.updateDynamic("setTo")(setTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHelmetHidePoweredByConfiguration]
   }
 }

@@ -15,7 +15,7 @@ trait ClientInfo extends js.Object {
 object ClientInfo {
   @scala.inline
   def apply(origin: String, req: Request[ParamsDictionary], secure: Boolean): ClientInfo = {
-    val __obj = js.Dynamic.literal(origin = origin, req = req, secure = secure)
+    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientInfo]
   }

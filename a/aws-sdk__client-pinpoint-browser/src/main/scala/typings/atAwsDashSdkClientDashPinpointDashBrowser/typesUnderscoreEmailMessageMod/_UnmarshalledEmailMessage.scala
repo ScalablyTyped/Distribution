@@ -42,13 +42,13 @@ object _UnmarshalledEmailMessage {
     Substitutions: StringDictionary[js.Array[String]] = null
   ): _UnmarshalledEmailMessage = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body)
-    if (FeedbackForwardingAddress != null) __obj.updateDynamic("FeedbackForwardingAddress")(FeedbackForwardingAddress)
-    if (FromAddress != null) __obj.updateDynamic("FromAddress")(FromAddress)
-    if (RawEmail != null) __obj.updateDynamic("RawEmail")(RawEmail)
-    if (ReplyToAddresses != null) __obj.updateDynamic("ReplyToAddresses")(ReplyToAddresses)
-    if (SimpleEmail != null) __obj.updateDynamic("SimpleEmail")(SimpleEmail)
-    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions)
+    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
+    if (FeedbackForwardingAddress != null) __obj.updateDynamic("FeedbackForwardingAddress")(FeedbackForwardingAddress.asInstanceOf[js.Any])
+    if (FromAddress != null) __obj.updateDynamic("FromAddress")(FromAddress.asInstanceOf[js.Any])
+    if (RawEmail != null) __obj.updateDynamic("RawEmail")(RawEmail.asInstanceOf[js.Any])
+    if (ReplyToAddresses != null) __obj.updateDynamic("ReplyToAddresses")(ReplyToAddresses.asInstanceOf[js.Any])
+    if (SimpleEmail != null) __obj.updateDynamic("SimpleEmail")(SimpleEmail.asInstanceOf[js.Any])
+    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEmailMessage]
   }
 }

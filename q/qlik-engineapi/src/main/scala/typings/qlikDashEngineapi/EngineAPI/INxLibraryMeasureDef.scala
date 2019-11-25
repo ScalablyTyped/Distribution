@@ -41,7 +41,7 @@ object INxLibraryMeasureDef {
     qLabel: String,
     qGrouping: NxGrpType = null
   ): INxLibraryMeasureDef = {
-    val __obj = js.Dynamic.literal(qActiveExpression = qActiveExpression, qDef = qDef, qExpressions = qExpressions, qLabel = qLabel)
+    val __obj = js.Dynamic.literal(qActiveExpression = qActiveExpression.asInstanceOf[js.Any], qDef = qDef.asInstanceOf[js.Any], qExpressions = qExpressions.asInstanceOf[js.Any], qLabel = qLabel.asInstanceOf[js.Any])
     if (qGrouping != null) __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxLibraryMeasureDef]
   }

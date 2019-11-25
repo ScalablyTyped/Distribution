@@ -17,9 +17,9 @@ object Anon_Redirecturi {
   @scala.inline
   def apply(redirect_uri: String = null, scope: String | js.Array[String] = null, state: String = null): Anon_Redirecturi = {
     val __obj = js.Dynamic.literal()
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Redirecturi]
   }
 }

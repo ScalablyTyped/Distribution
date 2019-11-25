@@ -13,7 +13,7 @@ object Route {
   @scala.inline
   def apply(children: js.Array[Route] = null, loadChildren: String | Type | js.Any = null): Route = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (loadChildren != null) __obj.updateDynamic("loadChildren")(loadChildren.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }

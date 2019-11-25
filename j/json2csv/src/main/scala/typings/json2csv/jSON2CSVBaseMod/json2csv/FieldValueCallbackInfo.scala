@@ -12,8 +12,8 @@ trait FieldValueCallbackInfo extends js.Object {
 object FieldValueCallbackInfo {
   @scala.inline
   def apply(label: String, default: String = null): FieldValueCallbackInfo = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (default != null) __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldValueCallbackInfo]
   }
 }

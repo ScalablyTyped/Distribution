@@ -15,9 +15,9 @@ object ColorPickerMessages {
   @scala.inline
   def apply(apply: String = null, cancel: String = null, previewInput: String = null): ColorPickerMessages = {
     val __obj = js.Dynamic.literal()
-    if (apply != null) __obj.updateDynamic("apply")(apply)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (previewInput != null) __obj.updateDynamic("previewInput")(previewInput)
+    if (apply != null) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (previewInput != null) __obj.updateDynamic("previewInput")(previewInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorPickerMessages]
   }
 }

@@ -2,7 +2,6 @@ package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_XYD3Scale
-import typings.victory.Fn_DataAnyString
 import typings.victory.victoryStrings.all
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.labels
@@ -93,7 +92,7 @@ object VictoryAreaProps {
     height: Int | Double = null,
     horizontal: js.UndefOr[Boolean] = js.undefined,
     interpolation: InterpolationPropType = null,
-    label: String | Fn_DataAnyString = null,
+    label: String | (js.Function1[/* data */ js.Any, String]) = null,
     labelComponent: ReactElement = null,
     labels: (js.Array[Double | String]) | js.Function = null,
     name: String = null,
@@ -109,27 +108,27 @@ object VictoryAreaProps {
     y0: DataGetterPropType = null
   ): VictoryAreaProps = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
-    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

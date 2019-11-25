@@ -13,17 +13,17 @@ object fetchQuery_variables extends js.Object {
   def apply[T /* <: OperationType */](
     environment: typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: T['variables'] */ js.Any
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any
   ): js.Promise[
-    /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
   ] = js.native
   def apply[T /* <: OperationType */](
     environment: typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: T['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any,
     cacheConfig: CacheConfig
   ): js.Promise[
-    /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
   ] = js.native
 }
 

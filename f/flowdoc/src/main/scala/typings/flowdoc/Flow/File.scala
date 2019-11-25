@@ -13,7 +13,7 @@ trait File extends js.Object {
 object File {
   @scala.inline
   def apply(document: Document, schemaVersion: SchemaVersion, settings: Settings): File = {
-    val __obj = js.Dynamic.literal(document = document, schemaVersion = schemaVersion, settings = settings)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], schemaVersion = schemaVersion.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[File]
   }

@@ -50,11 +50,11 @@ object InitiateVaultLockInput {
     $maxRetries: Int | Double = null,
     policy: _VaultLockPolicy = null
   ): InitiateVaultLockInput = {
-    val __obj = js.Dynamic.literal(accountId = accountId, vaultName = vaultName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateVaultLockInput]
   }
 }

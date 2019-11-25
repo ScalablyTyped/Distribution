@@ -54,7 +54,7 @@ object ConfigMap {
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.ConfigMap,
     metadata: ObjectMeta
   ): ConfigMap = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, binaryData = binaryData, data = data, kind = kind, metadata = metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], binaryData = binaryData.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfigMap]
   }

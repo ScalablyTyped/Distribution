@@ -15,8 +15,8 @@ object Anon_Edge {
   @scala.inline
   def apply(edge: StringDictionary[js.Any] = null, gecko: FirefoxSpecificProperties = null): Anon_Edge = {
     val __obj = js.Dynamic.literal()
-    if (edge != null) __obj.updateDynamic("edge")(edge)
-    if (gecko != null) __obj.updateDynamic("gecko")(gecko)
+    if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
+    if (gecko != null) __obj.updateDynamic("gecko")(gecko.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Edge]
   }
 }

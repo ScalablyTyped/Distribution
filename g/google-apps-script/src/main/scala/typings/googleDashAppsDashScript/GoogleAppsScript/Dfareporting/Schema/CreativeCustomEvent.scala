@@ -32,16 +32,16 @@ object CreativeCustomEvent {
     videoReportingId: String = null
   ): CreativeCustomEvent = {
     val __obj = js.Dynamic.literal()
-    if (advertiserCustomEventId != null) __obj.updateDynamic("advertiserCustomEventId")(advertiserCustomEventId)
-    if (advertiserCustomEventName != null) __obj.updateDynamic("advertiserCustomEventName")(advertiserCustomEventName)
-    if (advertiserCustomEventType != null) __obj.updateDynamic("advertiserCustomEventType")(advertiserCustomEventType)
-    if (artworkLabel != null) __obj.updateDynamic("artworkLabel")(artworkLabel)
-    if (artworkType != null) __obj.updateDynamic("artworkType")(artworkType)
-    if (exitClickThroughUrl != null) __obj.updateDynamic("exitClickThroughUrl")(exitClickThroughUrl)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (popupWindowProperties != null) __obj.updateDynamic("popupWindowProperties")(popupWindowProperties)
-    if (targetType != null) __obj.updateDynamic("targetType")(targetType)
-    if (videoReportingId != null) __obj.updateDynamic("videoReportingId")(videoReportingId)
+    if (advertiserCustomEventId != null) __obj.updateDynamic("advertiserCustomEventId")(advertiserCustomEventId.asInstanceOf[js.Any])
+    if (advertiserCustomEventName != null) __obj.updateDynamic("advertiserCustomEventName")(advertiserCustomEventName.asInstanceOf[js.Any])
+    if (advertiserCustomEventType != null) __obj.updateDynamic("advertiserCustomEventType")(advertiserCustomEventType.asInstanceOf[js.Any])
+    if (artworkLabel != null) __obj.updateDynamic("artworkLabel")(artworkLabel.asInstanceOf[js.Any])
+    if (artworkType != null) __obj.updateDynamic("artworkType")(artworkType.asInstanceOf[js.Any])
+    if (exitClickThroughUrl != null) __obj.updateDynamic("exitClickThroughUrl")(exitClickThroughUrl.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (popupWindowProperties != null) __obj.updateDynamic("popupWindowProperties")(popupWindowProperties.asInstanceOf[js.Any])
+    if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
+    if (videoReportingId != null) __obj.updateDynamic("videoReportingId")(videoReportingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeCustomEvent]
   }
 }

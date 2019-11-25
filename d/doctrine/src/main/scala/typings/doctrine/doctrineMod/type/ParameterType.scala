@@ -14,8 +14,8 @@ trait ParameterType extends Type {
 object ParameterType {
   @scala.inline
   def apply(expression: Type, name: String, `type`: typings.doctrine.doctrineStrings.ParameterType): ParameterType = {
-    val __obj = js.Dynamic.literal(expression = expression, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterType]
   }
 }

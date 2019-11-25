@@ -12,7 +12,7 @@ trait SortComparators[D] extends js.Object {
 object SortComparators {
   @scala.inline
   def apply[D](comparators: Map[String, js.Function2[/* a */ _, /* b */ _, Double]]): SortComparators[D] = {
-    val __obj = js.Dynamic.literal(comparators = comparators)
+    val __obj = js.Dynamic.literal(comparators = comparators.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortComparators[D]]
   }

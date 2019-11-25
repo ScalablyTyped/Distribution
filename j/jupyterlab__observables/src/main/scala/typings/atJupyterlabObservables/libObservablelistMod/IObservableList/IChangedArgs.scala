@@ -45,8 +45,8 @@ object IChangedArgs {
     oldValues: js.Array[T],
     `type`: ChangeType
   ): IChangedArgs[T] = {
-    val __obj = js.Dynamic.literal(newIndex = newIndex, newValues = newValues, oldIndex = oldIndex, oldValues = oldValues)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(newIndex = newIndex.asInstanceOf[js.Any], newValues = newValues.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldValues = oldValues.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangedArgs[T]]
   }
 }

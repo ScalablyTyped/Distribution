@@ -52,14 +52,14 @@ object StickemSettings {
     stickClass: String = null
   ): StickemSettings = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (endStickClass != null) __obj.updateDynamic("endStickClass")(endStickClass)
-    if (item != null) __obj.updateDynamic("item")(item)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (endStickClass != null) __obj.updateDynamic("endStickClass")(endStickClass.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onStick != null) __obj.updateDynamic("onStick")(js.Any.fromFunction0(onStick))
     if (onUnstick != null) __obj.updateDynamic("onUnstick")(js.Any.fromFunction0(onUnstick))
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (stickClass != null) __obj.updateDynamic("stickClass")(stickClass)
+    if (stickClass != null) __obj.updateDynamic("stickClass")(stickClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickemSettings]
   }
 }

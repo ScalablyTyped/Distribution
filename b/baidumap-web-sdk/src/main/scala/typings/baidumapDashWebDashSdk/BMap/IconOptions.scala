@@ -20,10 +20,10 @@ object IconOptions {
     printImageUrl: String = null
   ): IconOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (imageOffset != null) __obj.updateDynamic("imageOffset")(imageOffset)
-    if (infoWindowAnchor != null) __obj.updateDynamic("infoWindowAnchor")(infoWindowAnchor)
-    if (printImageUrl != null) __obj.updateDynamic("printImageUrl")(printImageUrl)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (imageOffset != null) __obj.updateDynamic("imageOffset")(imageOffset.asInstanceOf[js.Any])
+    if (infoWindowAnchor != null) __obj.updateDynamic("infoWindowAnchor")(infoWindowAnchor.asInstanceOf[js.Any])
+    if (printImageUrl != null) __obj.updateDynamic("printImageUrl")(printImageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconOptions]
   }
 }

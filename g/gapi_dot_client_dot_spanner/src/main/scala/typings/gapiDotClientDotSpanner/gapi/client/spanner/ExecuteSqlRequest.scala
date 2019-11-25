@@ -68,12 +68,12 @@ object ExecuteSqlRequest {
     transaction: TransactionSelector = null
   ): ExecuteSqlRequest = {
     val __obj = js.Dynamic.literal()
-    if (paramTypes != null) __obj.updateDynamic("paramTypes")(paramTypes)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (queryMode != null) __obj.updateDynamic("queryMode")(queryMode)
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken)
-    if (sql != null) __obj.updateDynamic("sql")(sql)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (paramTypes != null) __obj.updateDynamic("paramTypes")(paramTypes.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (queryMode != null) __obj.updateDynamic("queryMode")(queryMode.asInstanceOf[js.Any])
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
+    if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteSqlRequest]
   }
 }

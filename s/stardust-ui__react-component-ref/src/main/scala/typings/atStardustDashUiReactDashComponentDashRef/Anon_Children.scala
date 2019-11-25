@@ -15,7 +15,7 @@ trait Anon_Children extends js.Object {
 object Anon_Children {
   @scala.inline
   def apply(children: Validator[ReactElementLike], innerRef: Validator[Ref[_]]): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children, innerRef = innerRef)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], innerRef = innerRef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Children]
   }

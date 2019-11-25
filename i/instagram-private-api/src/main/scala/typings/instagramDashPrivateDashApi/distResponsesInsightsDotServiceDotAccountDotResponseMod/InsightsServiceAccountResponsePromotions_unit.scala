@@ -11,7 +11,7 @@ trait InsightsServiceAccountResponsePromotions_unit extends js.Object {
 object InsightsServiceAccountResponsePromotions_unit {
   @scala.inline
   def apply(summary_promotions: InsightsServiceAccountResponseSummary_promotions): InsightsServiceAccountResponsePromotions_unit = {
-    val __obj = js.Dynamic.literal(summary_promotions = summary_promotions)
+    val __obj = js.Dynamic.literal(summary_promotions = summary_promotions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponsePromotions_unit]
   }

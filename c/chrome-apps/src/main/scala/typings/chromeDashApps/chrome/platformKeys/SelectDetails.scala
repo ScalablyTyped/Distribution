@@ -27,8 +27,8 @@ trait SelectDetails extends js.Object {
 object SelectDetails {
   @scala.inline
   def apply(interactive: Boolean, request: ClientCertificateRequest, clientCerts: js.Array[ArrayBuffer] = null): SelectDetails = {
-    val __obj = js.Dynamic.literal(interactive = interactive, request = request)
-    if (clientCerts != null) __obj.updateDynamic("clientCerts")(clientCerts)
+    val __obj = js.Dynamic.literal(interactive = interactive.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    if (clientCerts != null) __obj.updateDynamic("clientCerts")(clientCerts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectDetails]
   }
 }

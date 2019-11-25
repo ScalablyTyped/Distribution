@@ -12,7 +12,7 @@ trait Anon_ErrorsWarnings extends js.Object {
 object Anon_ErrorsWarnings {
   @scala.inline
   def apply(errors: js.Array[String], warnings: js.Array[String]): Anon_ErrorsWarnings = {
-    val __obj = js.Dynamic.literal(errors = errors, warnings = warnings)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ErrorsWarnings]
   }

@@ -23,9 +23,9 @@ object UpdateDetails {
     total: DisplayItem = null
   ): UpdateDetails = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
-    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions)
-    if (total != null) __obj.updateDynamic("total")(total)
+    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems.asInstanceOf[js.Any])
+    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions.asInstanceOf[js.Any])
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDetails]
   }
 }

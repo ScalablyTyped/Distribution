@@ -21,9 +21,9 @@ object WorkbookProperties {
     filterPrivacy: js.UndefOr[Boolean] = js.undefined
   ): WorkbookProperties = {
     val __obj = js.Dynamic.literal()
-    if (CodeName != null) __obj.updateDynamic("CodeName")(CodeName)
-    if (!js.isUndefined(date1904)) __obj.updateDynamic("date1904")(date1904)
-    if (!js.isUndefined(filterPrivacy)) __obj.updateDynamic("filterPrivacy")(filterPrivacy)
+    if (CodeName != null) __obj.updateDynamic("CodeName")(CodeName.asInstanceOf[js.Any])
+    if (!js.isUndefined(date1904)) __obj.updateDynamic("date1904")(date1904.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterPrivacy)) __obj.updateDynamic("filterPrivacy")(filterPrivacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookProperties]
   }
 }

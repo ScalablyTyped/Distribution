@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(splitCollection: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(splitCollection)) __obj.updateDynamic("splitCollection")(splitCollection)
+    if (!js.isUndefined(splitCollection)) __obj.updateDynamic("splitCollection")(splitCollection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -21,9 +21,9 @@ object DeleteOrderDealsRequest {
     updateAction: String = null
   ): DeleteOrderDealsRequest = {
     val __obj = js.Dynamic.literal()
-    if (dealIds != null) __obj.updateDynamic("dealIds")(dealIds)
-    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber)
-    if (updateAction != null) __obj.updateDynamic("updateAction")(updateAction)
+    if (dealIds != null) __obj.updateDynamic("dealIds")(dealIds.asInstanceOf[js.Any])
+    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber.asInstanceOf[js.Any])
+    if (updateAction != null) __obj.updateDynamic("updateAction")(updateAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOrderDealsRequest]
   }
 }

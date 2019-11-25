@@ -21,8 +21,8 @@ object AuditActivityInitiator {
   @scala.inline
   def apply(app: AppIdentity = null, user: UserIdentity = null): AuditActivityInitiator = {
     val __obj = js.Dynamic.literal()
-    if (app != null) __obj.updateDynamic("app")(app)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditActivityInitiator]
   }
 }

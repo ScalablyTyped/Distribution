@@ -13,8 +13,8 @@ trait ModeSwitchItem extends js.Object {
 object ModeSwitchItem {
   @scala.inline
   def apply(name: String, value: Double, default: js.UndefOr[Boolean] = js.undefined): ModeSwitchItem = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModeSwitchItem]
   }
 }

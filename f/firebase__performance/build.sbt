@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "firebase__performance"
-version := "0.2.26-b24a41"
+version := "0.2.26-bac8c6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.4.7-c4a47c",
-  "org.scalablytyped" %%% "firebase__performance-types" % "0.0.6-7801cc",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.33-12794d",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "firebase__app-types" % "0.4.7-3cab41",
+  "org.scalablytyped" %%% "firebase__performance-types" % "0.0.6-ad7fea",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.33-a09405",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -51,7 +51,7 @@ object defaultMarkers {
     TRIANGLE_INVERTED: String,
     X: String
   ): defaultMarkers = {
-    val __obj = js.Dynamic.literal(CIRCLE = CIRCLE, CROSS = CROSS, DIAMOND = DIAMOND, SQUARE = SQUARE, TRIANGLE = TRIANGLE, TRIANGLE_INVERTED = TRIANGLE_INVERTED, X = X)
+    val __obj = js.Dynamic.literal(CIRCLE = CIRCLE.asInstanceOf[js.Any], CROSS = CROSS.asInstanceOf[js.Any], DIAMOND = DIAMOND.asInstanceOf[js.Any], SQUARE = SQUARE.asInstanceOf[js.Any], TRIANGLE = TRIANGLE.asInstanceOf[js.Any], TRIANGLE_INVERTED = TRIANGLE_INVERTED.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[defaultMarkers]
   }

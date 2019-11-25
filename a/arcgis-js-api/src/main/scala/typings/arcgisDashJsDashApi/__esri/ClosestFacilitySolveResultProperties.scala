@@ -68,14 +68,14 @@ object ClosestFacilitySolveResultProperties {
     routes: js.Array[GraphicProperties] = null
   ): ClosestFacilitySolveResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (directions != null) __obj.updateDynamic("directions")(directions)
-    if (facilities != null) __obj.updateDynamic("facilities")(facilities)
-    if (incidents != null) __obj.updateDynamic("incidents")(incidents)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers)
-    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers)
-    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (directions != null) __obj.updateDynamic("directions")(directions.asInstanceOf[js.Any])
+    if (facilities != null) __obj.updateDynamic("facilities")(facilities.asInstanceOf[js.Any])
+    if (incidents != null) __obj.updateDynamic("incidents")(incidents.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
+    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
+    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClosestFacilitySolveResultProperties]
   }
 }

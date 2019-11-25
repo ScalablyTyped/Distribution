@@ -18,9 +18,9 @@ object Anon_Algorithms {
     strict: js.UndefOr[Boolean] = js.undefined
   ): Anon_Algorithms = {
     val __obj = js.Dynamic.literal()
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Algorithms]
   }
 }

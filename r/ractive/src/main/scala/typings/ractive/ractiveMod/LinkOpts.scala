@@ -23,9 +23,9 @@ object LinkOpts {
   @scala.inline
   def apply(instance: Ractive[Ractive[_]] = null, keypath: String = null, ractive: Ractive[Ractive[_]] = null): LinkOpts = {
     val __obj = js.Dynamic.literal()
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (keypath != null) __obj.updateDynamic("keypath")(keypath)
-    if (ractive != null) __obj.updateDynamic("ractive")(ractive)
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (keypath != null) __obj.updateDynamic("keypath")(keypath.asInstanceOf[js.Any])
+    if (ractive != null) __obj.updateDynamic("ractive")(ractive.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkOpts]
   }
 }

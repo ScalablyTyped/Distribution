@@ -24,10 +24,10 @@ object PartnerClaim {
     sectionType: String = null
   ): PartnerClaim = {
     val __obj = js.Dynamic.literal()
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
-    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier)
-    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata)
-    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType)
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
+    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier.asInstanceOf[js.Any])
+    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata.asInstanceOf[js.Any])
+    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartnerClaim]
   }
 }

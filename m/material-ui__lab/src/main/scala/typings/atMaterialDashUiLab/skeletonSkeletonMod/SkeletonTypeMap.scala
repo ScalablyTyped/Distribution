@@ -16,7 +16,7 @@ trait SkeletonTypeMap[P, D /* <: ElementType[_] */] extends js.Object {
 object SkeletonTypeMap {
   @scala.inline
   def apply[P, D /* <: ElementType[_] */](classKey: SkeletonClassKey, defaultComponent: div, props: P with Anon_Circle): SkeletonTypeMap[P, D] = {
-    val __obj = js.Dynamic.literal(classKey = classKey, defaultComponent = defaultComponent, props = props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SkeletonTypeMap[P, D]]
   }

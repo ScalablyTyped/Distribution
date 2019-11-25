@@ -13,7 +13,7 @@ trait ReviewRequests extends js.Object {
 object ReviewRequests {
   @scala.inline
   def apply(teams: js.Array[Team], users: js.Array[UserSummary]): ReviewRequests = {
-    val __obj = js.Dynamic.literal(teams = teams, users = users)
+    val __obj = js.Dynamic.literal(teams = teams.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReviewRequests]
   }

@@ -48,12 +48,12 @@ object GoogleActionsV2UiElementsTableCard {
     title: String = null
   ): GoogleActionsV2UiElementsTableCard = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCard]
   }
 }

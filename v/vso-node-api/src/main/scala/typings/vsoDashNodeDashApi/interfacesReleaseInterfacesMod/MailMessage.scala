@@ -32,7 +32,7 @@ object MailMessage {
     subject: String,
     to: EmailRecipients
   ): MailMessage = {
-    val __obj = js.Dynamic.literal(body = body, cC = cC, inReplyTo = inReplyTo, messageId = messageId, replyBy = replyBy, replyTo = replyTo, sections = sections, senderType = senderType, subject = subject, to = to)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], cC = cC.asInstanceOf[js.Any], inReplyTo = inReplyTo.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], replyBy = replyBy.asInstanceOf[js.Any], replyTo = replyTo.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], senderType = senderType.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MailMessage]
   }

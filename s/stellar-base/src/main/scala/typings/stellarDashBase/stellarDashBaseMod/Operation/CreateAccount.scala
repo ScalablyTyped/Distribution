@@ -18,9 +18,9 @@ object CreateAccount {
     `type`: typings.stellarDashBase.stellarDashBaseMod.OperationType.CreateAccount,
     source: String = null
   ): CreateAccount = {
-    val __obj = js.Dynamic.literal(destination = destination, startingBalance = startingBalance)
-    __obj.updateDynamic("type")(`type`)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], startingBalance = startingBalance.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccount]
   }
 }

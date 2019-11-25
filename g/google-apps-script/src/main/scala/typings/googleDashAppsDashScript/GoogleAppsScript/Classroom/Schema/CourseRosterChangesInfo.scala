@@ -12,7 +12,7 @@ object CourseRosterChangesInfo {
   @scala.inline
   def apply(courseId: String = null): CourseRosterChangesInfo = {
     val __obj = js.Dynamic.literal()
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId)
+    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CourseRosterChangesInfo]
   }
 }

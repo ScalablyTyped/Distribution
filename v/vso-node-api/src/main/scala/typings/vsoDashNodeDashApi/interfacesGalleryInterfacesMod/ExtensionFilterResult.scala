@@ -26,7 +26,7 @@ object ExtensionFilterResult {
     pagingToken: String,
     resultMetadata: js.Array[ExtensionFilterResultMetadata]
   ): ExtensionFilterResult = {
-    val __obj = js.Dynamic.literal(extensions = extensions, pagingToken = pagingToken, resultMetadata = resultMetadata)
+    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], pagingToken = pagingToken.asInstanceOf[js.Any], resultMetadata = resultMetadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionFilterResult]
   }

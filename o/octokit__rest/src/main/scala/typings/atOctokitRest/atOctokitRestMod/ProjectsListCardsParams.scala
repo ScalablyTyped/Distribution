@@ -31,7 +31,7 @@ object ProjectsListCardsParams {
     page: Int | Double = null,
     per_page: Int | Double = null
   ): ProjectsListCardsParams = {
-    val __obj = js.Dynamic.literal(column_id = column_id)
+    val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any])
     if (archived_state != null) __obj.updateDynamic("archived_state")(archived_state.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

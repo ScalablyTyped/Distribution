@@ -14,8 +14,8 @@ trait TelemetryIPCMessage extends IPCMessage {
 object TelemetryIPCMessage {
   @scala.inline
   def apply(data: Anon_Args, `type`: telemetry): TelemetryIPCMessage = {
-    val __obj = js.Dynamic.literal(data = data)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelemetryIPCMessage]
   }
 }

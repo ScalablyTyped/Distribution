@@ -39,7 +39,7 @@ object Transform {
     `type`: aggregate | filter | groupby | sort,
     value: js.Any
   ): Transform = {
-    val __obj = js.Dynamic.literal(aggregations = aggregations, enabled = enabled, groups = groups.asInstanceOf[js.Any], nameformat = nameformat, operation = operation, order = order.asInstanceOf[js.Any], preservegaps = preservegaps, styles = styles, target = target.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(aggregations = aggregations.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], nameformat = nameformat.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], preservegaps = preservegaps.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transform]
   }

@@ -13,7 +13,7 @@ object Experimental {
   @scala.inline
   def apply(authorization: AuthorizationConfig = null): Experimental = {
     val __obj = js.Dynamic.literal()
-    if (authorization != null) __obj.updateDynamic("authorization")(authorization)
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
     __obj.asInstanceOf[Experimental]
   }
 }

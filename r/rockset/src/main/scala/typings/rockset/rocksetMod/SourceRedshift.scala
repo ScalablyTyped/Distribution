@@ -18,8 +18,8 @@ trait SourceRedshift extends js.Object {
 object SourceRedshift {
   @scala.inline
   def apply(database: String, schema: String, table_name: String, incremental_field: String = null): SourceRedshift = {
-    val __obj = js.Dynamic.literal(database = database, schema = schema, table_name = table_name)
-    if (incremental_field != null) __obj.updateDynamic("incremental_field")(incremental_field)
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], table_name = table_name.asInstanceOf[js.Any])
+    if (incremental_field != null) __obj.updateDynamic("incremental_field")(incremental_field.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceRedshift]
   }
 }

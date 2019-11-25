@@ -36,18 +36,18 @@ object GetQueryResultsResponse {
     totalRows: String = null
   ): GetQueryResultsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (!js.isUndefined(jobComplete)) __obj.updateDynamic("jobComplete")(jobComplete)
-    if (jobReference != null) __obj.updateDynamic("jobReference")(jobReference)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed)
-    if (totalRows != null) __obj.updateDynamic("totalRows")(totalRows)
+    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (!js.isUndefined(jobComplete)) __obj.updateDynamic("jobComplete")(jobComplete.asInstanceOf[js.Any])
+    if (jobReference != null) __obj.updateDynamic("jobReference")(jobReference.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed.asInstanceOf[js.Any])
+    if (totalRows != null) __obj.updateDynamic("totalRows")(totalRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueryResultsResponse]
   }
 }

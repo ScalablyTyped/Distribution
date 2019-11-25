@@ -22,7 +22,7 @@ trait ClickOptions
 object ClickOptions {
   @scala.inline
   def apply(force: Boolean, log: Boolean, multiple: Boolean, timeout: Double): ClickOptions = {
-    val __obj = js.Dynamic.literal(force = force, log = log, multiple = multiple, timeout = timeout)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClickOptions]
   }

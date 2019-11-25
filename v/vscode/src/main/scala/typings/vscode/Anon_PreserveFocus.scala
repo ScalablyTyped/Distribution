@@ -13,8 +13,8 @@ trait Anon_PreserveFocus extends js.Object {
 object Anon_PreserveFocus {
   @scala.inline
   def apply(viewColumn: ViewColumn, preserveFocus: js.UndefOr[Boolean] = js.undefined): Anon_PreserveFocus = {
-    val __obj = js.Dynamic.literal(viewColumn = viewColumn)
-    if (!js.isUndefined(preserveFocus)) __obj.updateDynamic("preserveFocus")(preserveFocus)
+    val __obj = js.Dynamic.literal(viewColumn = viewColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveFocus)) __obj.updateDynamic("preserveFocus")(preserveFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PreserveFocus]
   }
 }

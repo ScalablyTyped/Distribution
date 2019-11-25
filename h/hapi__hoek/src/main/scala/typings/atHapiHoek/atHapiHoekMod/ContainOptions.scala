@@ -24,10 +24,10 @@ object ContainOptions {
     part: js.UndefOr[Boolean] = js.undefined
   ): ContainOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
-    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only)
-    if (!js.isUndefined(part)) __obj.updateDynamic("part")(part)
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (!js.isUndefined(part)) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainOptions]
   }
 }

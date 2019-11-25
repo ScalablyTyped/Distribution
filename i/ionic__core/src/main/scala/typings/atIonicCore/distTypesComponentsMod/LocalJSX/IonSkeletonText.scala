@@ -19,8 +19,8 @@ object IonSkeletonText {
   @scala.inline
   def apply(animated: js.UndefOr[Boolean] = js.undefined, width: String = null): IonSkeletonText = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSkeletonText]
   }
 }

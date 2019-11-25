@@ -25,7 +25,7 @@ object PlaybackRestrictions {
     disallow_skipping_next_reasons: js.Array[String],
     disallow_skipping_prev_reasons: js.Array[String]
   ): PlaybackRestrictions = {
-    val __obj = js.Dynamic.literal(disallow_pausing_reasons = disallow_pausing_reasons, disallow_peeking_next_reasons = disallow_peeking_next_reasons, disallow_peeking_prev_reasons = disallow_peeking_prev_reasons, disallow_resuming_reasons = disallow_resuming_reasons, disallow_seeking_reasons = disallow_seeking_reasons, disallow_skipping_next_reasons = disallow_skipping_next_reasons, disallow_skipping_prev_reasons = disallow_skipping_prev_reasons)
+    val __obj = js.Dynamic.literal(disallow_pausing_reasons = disallow_pausing_reasons.asInstanceOf[js.Any], disallow_peeking_next_reasons = disallow_peeking_next_reasons.asInstanceOf[js.Any], disallow_peeking_prev_reasons = disallow_peeking_prev_reasons.asInstanceOf[js.Any], disallow_resuming_reasons = disallow_resuming_reasons.asInstanceOf[js.Any], disallow_seeking_reasons = disallow_seeking_reasons.asInstanceOf[js.Any], disallow_skipping_next_reasons = disallow_skipping_next_reasons.asInstanceOf[js.Any], disallow_skipping_prev_reasons = disallow_skipping_prev_reasons.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlaybackRestrictions]
   }

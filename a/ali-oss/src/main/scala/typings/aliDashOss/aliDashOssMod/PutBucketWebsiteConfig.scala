@@ -13,8 +13,8 @@ trait PutBucketWebsiteConfig extends js.Object {
 object PutBucketWebsiteConfig {
   @scala.inline
   def apply(index: String, error: String = null): PutBucketWebsiteConfig = {
-    val __obj = js.Dynamic.literal(index = index)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketWebsiteConfig]
   }
 }

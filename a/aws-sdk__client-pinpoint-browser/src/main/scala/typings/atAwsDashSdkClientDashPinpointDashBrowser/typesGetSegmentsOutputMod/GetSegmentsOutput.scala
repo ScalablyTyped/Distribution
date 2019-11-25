@@ -22,7 +22,7 @@ trait GetSegmentsOutput extends OutputTypesUnion {
 object GetSegmentsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, SegmentsResponse: _UnmarshalledSegmentsResponse): GetSegmentsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, SegmentsResponse = SegmentsResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SegmentsResponse = SegmentsResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetSegmentsOutput]
   }

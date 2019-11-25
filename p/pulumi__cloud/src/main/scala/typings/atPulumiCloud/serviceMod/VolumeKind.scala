@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait VolumeKind extends js.Object
 
+object VolumeKind {
+  @scala.inline
+  def HostPathVolume: typings.atPulumiCloud.atPulumiCloudStrings.HostPathVolume = this.cast("HostPathVolume")
+  @scala.inline
+  def SharedVolume: typings.atPulumiCloud.atPulumiCloudStrings.SharedVolume = this.cast("SharedVolume")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

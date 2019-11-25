@@ -22,7 +22,7 @@ object Options {
   @scala.inline
   def apply(immediate: js.UndefOr[Boolean] = js.undefined, wait: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
     if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -23,7 +23,7 @@ object setDashValueMod extends js.Object {
   def apply[T, K /* <: String */](
     `object`: T,
     prop: K,
-    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): Unit = js.native
 }
 

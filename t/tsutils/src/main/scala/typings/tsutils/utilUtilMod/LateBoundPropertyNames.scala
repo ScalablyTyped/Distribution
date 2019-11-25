@@ -12,7 +12,7 @@ trait LateBoundPropertyNames extends js.Object {
 object LateBoundPropertyNames {
   @scala.inline
   def apply(known: Boolean, names: js.Array[PropertyName]): LateBoundPropertyNames = {
-    val __obj = js.Dynamic.literal(known = known, names = names)
+    val __obj = js.Dynamic.literal(known = known.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LateBoundPropertyNames]
   }

@@ -12,7 +12,7 @@ trait Anon_NewGroup extends js.Object {
 object Anon_NewGroup {
   @scala.inline
   def apply(NewGroup: OutlookBarGroup): Anon_NewGroup = {
-    val __obj = js.Dynamic.literal(NewGroup = NewGroup)
+    val __obj = js.Dynamic.literal(NewGroup = NewGroup.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NewGroup]
   }

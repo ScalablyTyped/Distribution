@@ -30,13 +30,13 @@ object ContainerProps {
     headerStyle: ViewStyle = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): ContainerProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (blurComponentIOS != null) __obj.updateDynamic("blurComponentIOS")(blurComponentIOS.asInstanceOf[js.Any])
-    if (buttonSeparatorStyle != null) __obj.updateDynamic("buttonSeparatorStyle")(buttonSeparatorStyle)
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
-    if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle)
-    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (buttonSeparatorStyle != null) __obj.updateDynamic("buttonSeparatorStyle")(buttonSeparatorStyle.asInstanceOf[js.Any])
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
+    if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle.asInstanceOf[js.Any])
+    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerProps]
   }
 }

@@ -37,7 +37,7 @@ object Anon_D {
     u: String,
     y: String
   ): Anon_D = {
-    val __obj = js.Dynamic.literal(D = D, F = F, G = G, M = M, T = T, Y = Y, d = d, g = g, m = m, s = s, t = t, u = u, y = y)
+    val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], F = F.asInstanceOf[js.Any], G = G.asInstanceOf[js.Any], M = M.asInstanceOf[js.Any], T = T.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_D]
   }

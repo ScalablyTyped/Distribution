@@ -17,7 +17,7 @@ object CustomDetector {
     name: String,
     cacheUserLanguage: (/* lng */ String, /* options */ DetectorOptions) => Unit = null
   ): CustomDetector = {
-    val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), name = name)
+    val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), name = name.asInstanceOf[js.Any])
     if (cacheUserLanguage != null) __obj.updateDynamic("cacheUserLanguage")(js.Any.fromFunction2(cacheUserLanguage))
     __obj.asInstanceOf[CustomDetector]
   }

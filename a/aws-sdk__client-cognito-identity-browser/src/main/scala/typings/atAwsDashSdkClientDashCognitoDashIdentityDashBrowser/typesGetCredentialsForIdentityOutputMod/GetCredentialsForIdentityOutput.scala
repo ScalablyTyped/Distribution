@@ -30,9 +30,9 @@ object GetCredentialsForIdentityOutput {
     Credentials: _UnmarshalledCredentials = null,
     IdentityId: String = null
   ): GetCredentialsForIdentityOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials)
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
+    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCredentialsForIdentityOutput]
   }
 }

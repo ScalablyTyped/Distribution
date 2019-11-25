@@ -12,7 +12,7 @@ trait CanceledMessageEvent extends MessageEvent {
 object CanceledMessageEvent {
   @scala.inline
   def apply(event: signature_request_canceled): CanceledMessageEvent = {
-    val __obj = js.Dynamic.literal(event = event)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CanceledMessageEvent]
   }

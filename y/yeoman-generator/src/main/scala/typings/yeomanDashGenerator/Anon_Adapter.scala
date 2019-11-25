@@ -13,7 +13,7 @@ trait Anon_Adapter extends js.Object {
 object Anon_Adapter {
   @scala.inline
   def apply(adapter: Anon_PromptModule, error: /* repeated */ Error => Unit): Anon_Adapter = {
-    val __obj = js.Dynamic.literal(adapter = adapter, error = js.Any.fromFunction1(error))
+    val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], error = js.Any.fromFunction1(error))
   
     __obj.asInstanceOf[Anon_Adapter]
   }

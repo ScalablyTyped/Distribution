@@ -14,8 +14,8 @@ trait numbers extends MDCNumbers {
 object numbers {
   @scala.inline
   def apply(PAGE_FACTOR: `4`, StringDictionary: StringDictionary[Double] = null): numbers = {
-    val __obj = js.Dynamic.literal(PAGE_FACTOR = PAGE_FACTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(PAGE_FACTOR = PAGE_FACTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[numbers]
   }
 }

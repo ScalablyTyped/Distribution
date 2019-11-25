@@ -14,8 +14,8 @@ trait DeepOptions extends Options {
 object DeepOptions {
   @scala.inline
   def apply(deep: `true`, target: StringDictionary[js.Any] = null): DeepOptions = {
-    val __obj = js.Dynamic.literal(deep = deep)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(deep = deep.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeepOptions]
   }
 }

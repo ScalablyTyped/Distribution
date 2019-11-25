@@ -1,9 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.autoWidth
 import typings.dojo.dojoStrings.dropDown
@@ -232,14 +229,54 @@ class DropDownButton () extends Button {
     */
   def toggleDropDown(): Unit = js.native
   @JSName("watch")
-  def watch_autoWidth(property: autoWidth, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_autoWidth(
+    property: autoWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dropDown(property: dropDown, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_dropDown(
+    property: dropDown,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_dropDownPosition(property: dropDownPosition, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_dropDownPosition(
+    property: dropDownPosition,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_forceWidth(property: forceWidth, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_forceWidth(
+    property: forceWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_maxHeight(property: maxHeight, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_maxHeight(
+    property: maxHeight,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

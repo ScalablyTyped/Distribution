@@ -32,16 +32,16 @@ object SectionDescriptor {
     tableRows: js.Array[RowDescriptor] = null,
     titleLinkText: String = null
   ): SectionDescriptor = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement)
-    if (footerLinkText != null) __obj.updateDynamic("footerLinkText")(footerLinkText)
-    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement.asInstanceOf[js.Any])
+    if (footerLinkText != null) __obj.updateDynamic("footerLinkText")(footerLinkText.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.asInstanceOf[js.Any])
     if (onDropdownClick != null) __obj.updateDynamic("onDropdownClick")(js.Any.fromFunction1(onDropdownClick))
     if (onFooterLinkClick != null) __obj.updateDynamic("onFooterLinkClick")(js.Any.fromFunction1(onFooterLinkClick))
     if (onTitleLinkClick != null) __obj.updateDynamic("onTitleLinkClick")(js.Any.fromFunction0(onTitleLinkClick))
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows)
-    if (titleLinkText != null) __obj.updateDynamic("titleLinkText")(titleLinkText)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows.asInstanceOf[js.Any])
+    if (titleLinkText != null) __obj.updateDynamic("titleLinkText")(titleLinkText.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionDescriptor]
   }
 }

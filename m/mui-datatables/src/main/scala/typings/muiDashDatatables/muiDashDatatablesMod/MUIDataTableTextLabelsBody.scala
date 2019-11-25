@@ -12,7 +12,7 @@ trait MUIDataTableTextLabelsBody extends js.Object {
 object MUIDataTableTextLabelsBody {
   @scala.inline
   def apply(noMatch: String, toolTip: String): MUIDataTableTextLabelsBody = {
-    val __obj = js.Dynamic.literal(noMatch = noMatch, toolTip = toolTip)
+    val __obj = js.Dynamic.literal(noMatch = noMatch.asInstanceOf[js.Any], toolTip = toolTip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MUIDataTableTextLabelsBody]
   }

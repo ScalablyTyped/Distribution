@@ -30,9 +30,9 @@ object NavigationAnnotationsEventsOptions {
     remove: EventCallbackFunction[Annotation] = null
   ): NavigationAnnotationsEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(afterUpdate)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (add != null) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(afterUpdate.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationAnnotationsEventsOptions]
   }
 }

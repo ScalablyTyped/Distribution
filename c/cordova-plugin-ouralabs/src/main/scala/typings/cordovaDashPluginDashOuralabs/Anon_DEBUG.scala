@@ -16,7 +16,7 @@ trait Anon_DEBUG extends js.Object {
 object Anon_DEBUG {
   @scala.inline
   def apply(DEBUG: Double, ERROR: Double, FATAL: Double, INFO: Double, TRACE: Double, WARN: Double): Anon_DEBUG = {
-    val __obj = js.Dynamic.literal(DEBUG = DEBUG, ERROR = ERROR, FATAL = FATAL, INFO = INFO, TRACE = TRACE, WARN = WARN)
+    val __obj = js.Dynamic.literal(DEBUG = DEBUG.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], FATAL = FATAL.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], TRACE = TRACE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DEBUG]
   }

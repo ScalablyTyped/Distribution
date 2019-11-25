@@ -12,7 +12,7 @@ trait Anon_SupportsColor extends js.Object {
 object Anon_SupportsColor {
   @scala.inline
   def apply(supportsColor: ColorSupport): Anon_SupportsColor = {
-    val __obj = js.Dynamic.literal(supportsColor = supportsColor)
+    val __obj = js.Dynamic.literal(supportsColor = supportsColor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SupportsColor]
   }

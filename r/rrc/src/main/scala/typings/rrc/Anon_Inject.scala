@@ -13,7 +13,7 @@ object Anon_Inject {
   @scala.inline
   def apply(inject: StringDictionary[js.Any] = null): Anon_Inject = {
     val __obj = js.Dynamic.literal()
-    if (inject != null) __obj.updateDynamic("inject")(inject)
+    if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Inject]
   }
 }

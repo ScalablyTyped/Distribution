@@ -37,7 +37,7 @@ object PortalUserAddItemParams {
     data: String | js.Any = null,
     folder: String | PortalFolder = null
   ): PortalUserAddItemParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), item = item, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), item = item.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalUserAddItemParams]

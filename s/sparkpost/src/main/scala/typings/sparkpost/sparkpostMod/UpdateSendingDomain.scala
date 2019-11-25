@@ -27,11 +27,11 @@ object UpdateSendingDomain {
     tracking_domain: String = null
   ): UpdateSendingDomain = {
     val __obj = js.Dynamic.literal()
-    if (dkim != null) __obj.updateDynamic("dkim")(dkim)
+    if (dkim != null) __obj.updateDynamic("dkim")(dkim.asInstanceOf[js.Any])
     if (dkim_key_length != null) __obj.updateDynamic("dkim_key_length")(dkim_key_length.asInstanceOf[js.Any])
-    if (!js.isUndefined(generate_dkim)) __obj.updateDynamic("generate_dkim")(generate_dkim)
-    if (!js.isUndefined(shared_with_subaccounts)) __obj.updateDynamic("shared_with_subaccounts")(shared_with_subaccounts)
-    if (tracking_domain != null) __obj.updateDynamic("tracking_domain")(tracking_domain)
+    if (!js.isUndefined(generate_dkim)) __obj.updateDynamic("generate_dkim")(generate_dkim.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared_with_subaccounts)) __obj.updateDynamic("shared_with_subaccounts")(shared_with_subaccounts.asInstanceOf[js.Any])
+    if (tracking_domain != null) __obj.updateDynamic("tracking_domain")(tracking_domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSendingDomain]
   }
 }

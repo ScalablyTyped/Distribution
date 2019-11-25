@@ -20,9 +20,9 @@ object Options {
     property: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

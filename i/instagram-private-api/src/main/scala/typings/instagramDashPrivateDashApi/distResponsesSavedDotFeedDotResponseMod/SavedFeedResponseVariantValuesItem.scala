@@ -15,7 +15,7 @@ trait SavedFeedResponseVariantValuesItem extends js.Object {
 object SavedFeedResponseVariantValuesItem {
   @scala.inline
   def apply(id: String, is_preselected: Boolean, name: String, value: String, visual_style: String): SavedFeedResponseVariantValuesItem = {
-    val __obj = js.Dynamic.literal(id = id, is_preselected = is_preselected, name = name, value = value, visual_style = visual_style)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], is_preselected = is_preselected.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visual_style = visual_style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SavedFeedResponseVariantValuesItem]
   }

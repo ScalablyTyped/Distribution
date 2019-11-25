@@ -44,10 +44,10 @@ object MinifyOptions {
     val __obj = js.Dynamic.literal()
     if (afterCompress != null) __obj.updateDynamic("afterCompress")(afterCompress.asInstanceOf[js.Any])
     if (beforeCompress != null) __obj.updateDynamic("beforeCompress")(beforeCompress.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(restructure)) __obj.updateDynamic("restructure")(restructure)
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(restructure)) __obj.updateDynamic("restructure")(restructure.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinifyOptions]
   }
 }

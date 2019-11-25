@@ -17,8 +17,8 @@ trait IMediaEncodingProperties extends js.Object {
 object IMediaEncodingProperties {
   @scala.inline
   def apply(properties: MediaPropertySet, subtype: String, `type`: String): IMediaEncodingProperties = {
-    val __obj = js.Dynamic.literal(properties = properties, subtype = subtype)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaEncodingProperties]
   }
 }

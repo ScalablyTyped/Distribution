@@ -11,7 +11,7 @@ trait Anon_Manifest extends js.Object {
 object Anon_Manifest {
   @scala.inline
   def apply(Manifest: String): Anon_Manifest = {
-    val __obj = js.Dynamic.literal(Manifest = Manifest)
+    val __obj = js.Dynamic.literal(Manifest = Manifest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Manifest]
   }

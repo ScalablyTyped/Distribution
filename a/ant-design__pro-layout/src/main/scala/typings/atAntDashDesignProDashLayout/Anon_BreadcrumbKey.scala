@@ -14,7 +14,7 @@ trait Anon_BreadcrumbKey extends js.Object {
 object Anon_BreadcrumbKey {
   @scala.inline
   def apply(breadcrumb: StringDictionary[MenuDataItem], menuData: js.Array[MenuDataItem]): Anon_BreadcrumbKey = {
-    val __obj = js.Dynamic.literal(breadcrumb = breadcrumb, menuData = menuData)
+    val __obj = js.Dynamic.literal(breadcrumb = breadcrumb.asInstanceOf[js.Any], menuData = menuData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BreadcrumbKey]
   }

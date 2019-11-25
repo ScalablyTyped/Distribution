@@ -38,9 +38,9 @@ object ServiceConfig {
     authClient: GoogleAuth = null,
     projectIdRequired: js.UndefOr[Boolean] = js.undefined
   ): ServiceConfig = {
-    val __obj = js.Dynamic.literal(apiEndpoint = apiEndpoint, baseUrl = baseUrl, packageJson = packageJson, scopes = scopes)
-    if (authClient != null) __obj.updateDynamic("authClient")(authClient)
-    if (!js.isUndefined(projectIdRequired)) __obj.updateDynamic("projectIdRequired")(projectIdRequired)
+    val __obj = js.Dynamic.literal(apiEndpoint = apiEndpoint.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], packageJson = packageJson.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
+    if (authClient != null) __obj.updateDynamic("authClient")(authClient.asInstanceOf[js.Any])
+    if (!js.isUndefined(projectIdRequired)) __obj.updateDynamic("projectIdRequired")(projectIdRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceConfig]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_AnimateStarted extends js.Object {
 object Anon_AnimateStarted {
   @scala.inline
   def apply(animateStarted: Boolean): Anon_AnimateStarted = {
-    val __obj = js.Dynamic.literal(animateStarted = animateStarted)
+    val __obj = js.Dynamic.literal(animateStarted = animateStarted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AnimateStarted]
   }

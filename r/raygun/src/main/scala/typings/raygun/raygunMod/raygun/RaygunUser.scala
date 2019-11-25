@@ -21,11 +21,11 @@ object RaygunUser {
     fullName: String = null,
     uuid: String = null
   ): RaygunUser = {
-    val __obj = js.Dynamic.literal(identifier = identifier)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaygunUser]
   }
 }

@@ -38,12 +38,12 @@ object PawsRegisterRequest {
     version: String = null
   ): PawsRegisterRequest = {
     val __obj = js.Dynamic.literal()
-    if (antenna != null) __obj.updateDynamic("antenna")(antenna)
-    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
-    if (deviceOwner != null) __obj.updateDynamic("deviceOwner")(deviceOwner)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (antenna != null) __obj.updateDynamic("antenna")(antenna.asInstanceOf[js.Any])
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc.asInstanceOf[js.Any])
+    if (deviceOwner != null) __obj.updateDynamic("deviceOwner")(deviceOwner.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PawsRegisterRequest]
   }
 }

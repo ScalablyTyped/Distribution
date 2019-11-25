@@ -36,7 +36,7 @@ object ICodeCellMetadata {
     tags: js.Array[String],
     trusted: Boolean
   ): ICodeCellMetadata = {
-    val __obj = js.Dynamic.literal(collapsed = collapsed, jupyter = jupyter, name = name, scrolled = scrolled.asInstanceOf[js.Any], tags = tags, trusted = trusted)
+    val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], jupyter = jupyter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scrolled = scrolled.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICodeCellMetadata]
   }

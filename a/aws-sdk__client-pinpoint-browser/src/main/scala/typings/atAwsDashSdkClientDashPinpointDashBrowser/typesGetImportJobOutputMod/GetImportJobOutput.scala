@@ -22,7 +22,7 @@ trait GetImportJobOutput extends OutputTypesUnion {
 object GetImportJobOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ImportJobResponse: _UnmarshalledImportJobResponse): GetImportJobOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, ImportJobResponse = ImportJobResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ImportJobResponse = ImportJobResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetImportJobOutput]
   }

@@ -53,9 +53,9 @@ object BaseComment {
     `type`: String,
     _embedded: Record[String, js.Array[_]] = null
   ): BaseComment[T] = {
-    val __obj = js.Dynamic.literal(_links = _links, author = author, author_avatar_urls = author_avatar_urls, author_email = author_email, author_ip = author_ip, author_name = author_name, author_url = author_url, author_user_agent = author_user_agent, content = content.asInstanceOf[js.Any], date = date, date_gmt = date_gmt, id = id, link = link, meta = meta, parent = parent, post = post, status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], author_avatar_urls = author_avatar_urls.asInstanceOf[js.Any], author_email = author_email.asInstanceOf[js.Any], author_ip = author_ip.asInstanceOf[js.Any], author_name = author_name.asInstanceOf[js.Any], author_url = author_url.asInstanceOf[js.Any], author_user_agent = author_user_agent.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], date_gmt = date_gmt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseComment[T]]
   }
 }

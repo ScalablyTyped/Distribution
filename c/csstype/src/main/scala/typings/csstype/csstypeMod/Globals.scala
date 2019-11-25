@@ -12,139 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.csstype.csstypeStrings.unset
 */
 trait Globals
-  extends AlignmentBaselineProperty
-     with AppearanceProperty
-     with BackfaceVisibilityProperty
-     with BorderBlockEndStyleProperty
-     with BorderBlockStartStyleProperty
-     with BorderBlockStyleProperty
-     with BorderBottomStyleProperty
-     with BorderCollapseProperty
-     with BorderInlineEndStyleProperty
-     with BorderInlineStartStyleProperty
-     with BorderInlineStyleProperty
-     with BorderLeftStyleProperty
-     with BorderRightStyleProperty
-     with BorderTopStyleProperty
-     with BoxAlignProperty
-     with BoxDecorationBreakProperty
-     with BoxDirectionProperty
-     with BoxLinesProperty
-     with BoxOrientProperty
-     with BoxPackProperty
-     with BoxSizingProperty
-     with BreakAfterProperty
-     with BreakBeforeProperty
-     with BreakInsideProperty
-     with CaptionSideProperty
-     with ClearProperty
-     with ClipRuleProperty
-     with ColorAdjustProperty
-     with ColorInterpolationProperty
-     with ColorRenderingProperty
-     with ColumnFillProperty
-     with ColumnSpanProperty
-     with DirectionProperty
-     with DominantBaselineProperty
-     with EmptyCellsProperty
-     with FillRuleProperty
-     with FlexDirectionProperty
-     with FlexWrapProperty
-     with FloatProperty
-     with FontKerningProperty
-     with FontOpticalSizingProperty
-     with FontVariantCapsProperty
-     with FontVariantPositionProperty
-     with HyphensProperty
-     with ImageRenderingProperty
-     with ImeModeProperty
-     with IsolationProperty
-     with LineBreakProperty
-     with ListStylePositionProperty
-     with MaskBorderModeProperty
-     with MaskTypeProperty
-     with MixBlendModeProperty
-     with MozAppearanceProperty
-     with MozFloatEdgeProperty
-     with MozOrientProperty
-     with MozStackSizingProperty
-     with MozTextBlinkProperty
-     with MozUserFocusProperty
-     with MozUserInputProperty
-     with MozUserModifyProperty
-     with MozWindowDraggingProperty
-     with MozWindowShadowProperty
-     with MsAcceleratorProperty
-     with MsBlockProgressionProperty
-     with MsContentZoomChainingProperty
-     with MsContentZoomSnapTypeProperty
-     with MsContentZoomingProperty
-     with MsHighContrastAdjustProperty
-     with MsImeAlignProperty
-     with MsOverflowStyleProperty
-     with MsScrollChainingProperty
-     with MsScrollRailsProperty
-     with MsScrollSnapTypeProperty
-     with MsScrollTranslationProperty
-     with MsTextAutospaceProperty
-     with MsTouchSelectProperty
-     with MsUserSelectProperty
-     with MsWrapFlowProperty
-     with MsWrapThroughProperty
-     with ObjectFitProperty
-     with OverflowAnchorProperty
-     with OverflowBlockProperty
-     with OverflowClipBoxProperty
-     with OverflowInlineProperty
-     with OverflowWrapProperty
-     with OverflowXProperty
-     with OverflowYProperty
-     with OverscrollBehaviorXProperty
-     with OverscrollBehaviorYProperty
-     with PageBreakAfterProperty
-     with PageBreakBeforeProperty
-     with PageBreakInsideProperty
-     with PointerEventsProperty
-     with PositionProperty
-     with ResizeProperty
-     with RubyAlignProperty
-     with RubyMergeProperty
-     with RubyPositionProperty
-     with ScrollBehaviorProperty
-     with ScrollSnapStopProperty
-     with ScrollSnapTypeXProperty
-     with ScrollSnapTypeYProperty
-     with ScrollbarWidthProperty
-     with ShapeRenderingProperty
-     with StrokeLinecapProperty
-     with StrokeLinejoinProperty
-     with TableLayoutProperty
-     with TextAlignLastProperty
-     with TextAlignProperty
-     with TextAnchorProperty
-     with TextDecorationSkipInkProperty
-     with TextDecorationStyleProperty
-     with TextJustifyProperty
-     with TextOrientationProperty
-     with TextRenderingProperty
-     with TextTransformProperty
-     with TransformBoxProperty
-     with TransformStyleProperty
-     with UnicodeBidiProperty
-     with UserSelectProperty
-     with VectorEffectProperty
-     with VisibilityProperty
-     with WebkitAppearanceProperty
-     with WebkitMaskRepeatXProperty
-     with WebkitMaskRepeatYProperty
-     with WebkitOverflowScrollingProperty
-     with WebkitTouchCalloutProperty
-     with WebkitUserModifyProperty
-     with WhiteSpaceProperty
-     with WordBreakProperty
-     with WordWrapProperty
-     with WritingModeProperty
-     with _AlignContentProperty
+  extends _AlignContentProperty
      with _AlignItemsProperty
      with _AlignSelfProperty
      with _AnimationDirectionProperty
@@ -436,4 +304,19 @@ trait Globals
      with _WordSpacingProperty[js.Any]
      with _ZIndexProperty
      with _ZoomProperty
+
+object Globals {
+  @scala.inline
+  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = this.cast("-moz-initial")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def inherit: typings.csstype.csstypeStrings.inherit = this.cast("inherit")
+  @scala.inline
+  def initial: typings.csstype.csstypeStrings.initial = this.cast("initial")
+  @scala.inline
+  def revert: typings.csstype.csstypeStrings.revert = this.cast("revert")
+  @scala.inline
+  def unset: typings.csstype.csstypeStrings.unset = this.cast("unset")
+}
 

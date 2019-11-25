@@ -13,8 +13,8 @@ trait ArrayType extends Type {
 object ArrayType {
   @scala.inline
   def apply(elements: js.Array[Type], `type`: typings.doctrine.doctrineStrings.ArrayType): ArrayType = {
-    val __obj = js.Dynamic.literal(elements = elements)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayType]
   }
 }

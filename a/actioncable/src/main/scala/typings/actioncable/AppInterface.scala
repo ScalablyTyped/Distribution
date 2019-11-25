@@ -15,8 +15,8 @@ object AppInterface {
   @scala.inline
   def apply(cable: Cable = null, network: Channel = null): AppInterface = {
     val __obj = js.Dynamic.literal()
-    if (cable != null) __obj.updateDynamic("cable")(cable)
-    if (network != null) __obj.updateDynamic("network")(network)
+    if (cable != null) __obj.updateDynamic("cable")(cable.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppInterface]
   }
 }

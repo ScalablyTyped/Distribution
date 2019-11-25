@@ -20,10 +20,10 @@ object Anon_CalendarCalendars {
     numberFormat: Anon_Currency = null
   ): Anon_CalendarCalendars = {
     val __obj = js.Dynamic.literal()
-    if (calendar != null) __obj.updateDynamic("calendar")(calendar)
-    if (calendars != null) __obj.updateDynamic("calendars")(calendars)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])
+    if (calendars != null) __obj.updateDynamic("calendars")(calendars.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CalendarCalendars]
   }
 }

@@ -54,8 +54,8 @@ object OnMessageEventDetails {
     `type`: ResourceType,
     url: String
   ): OnMessageEventDetails = {
-    val __obj = js.Dynamic.literal(frameId = frameId, message = message, method = method, parentFrameId = parentFrameId, requestId = requestId, stage = stage, tabId = tabId, timeStamp = timeStamp, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnMessageEventDetails]
   }
 }

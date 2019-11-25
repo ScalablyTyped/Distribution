@@ -61,8 +61,8 @@ object TerminalMenuOptions {
     y: Int | Double = null
   ): TerminalMenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (bg != null) __obj.updateDynamic("bg")(bg)
-    if (fg != null) __obj.updateDynamic("fg")(fg)
+    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (fg != null) __obj.updateDynamic("fg")(fg.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

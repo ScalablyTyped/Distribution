@@ -56,11 +56,11 @@ object DataObject {
     name: String = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()
-    if (coords != null) __obj.updateDynamic("coords")(coords)
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

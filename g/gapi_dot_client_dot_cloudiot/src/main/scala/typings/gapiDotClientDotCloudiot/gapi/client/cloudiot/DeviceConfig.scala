@@ -42,10 +42,10 @@ object DeviceConfig {
     version: String = null
   ): DeviceConfig = {
     val __obj = js.Dynamic.literal()
-    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData)
-    if (cloudUpdateTime != null) __obj.updateDynamic("cloudUpdateTime")(cloudUpdateTime)
-    if (deviceAckTime != null) __obj.updateDynamic("deviceAckTime")(deviceAckTime)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData.asInstanceOf[js.Any])
+    if (cloudUpdateTime != null) __obj.updateDynamic("cloudUpdateTime")(cloudUpdateTime.asInstanceOf[js.Any])
+    if (deviceAckTime != null) __obj.updateDynamic("deviceAckTime")(deviceAckTime.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceConfig]
   }
 }

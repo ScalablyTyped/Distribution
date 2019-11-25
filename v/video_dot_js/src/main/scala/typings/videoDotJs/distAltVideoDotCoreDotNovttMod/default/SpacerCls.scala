@@ -2,15 +2,14 @@ package typings.videoDotJs.distAltVideoDotCoreDotNovttMod.default
 
 import typings.videoDotJs.videoDotJsMod.videojs.Component.ReadyCallback
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
-import typings.videoDotJs.videoDotJsMod.videojs.Spacer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("video.js/dist/alt/video.core.novtt", "Spacer")
 @js.native
-class SpacerCls protected () extends Spacer {
+class SpacerCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.Spacer {
   /**
     * Creates an instance of this class.
     *
@@ -23,8 +22,12 @@ class SpacerCls protected () extends Spacer {
     * @param [ready]
     *        Function that gets called when the `Component` is ready.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: ComponentOptions) = this()
-  def this(player: Player, options: ComponentOptions, ready: ReadyCallback) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: ComponentOptions) = this()
+  def this(
+    player: typings.videoDotJs.videoDotJsMod.videojs.Player,
+    options: ComponentOptions,
+    ready: ReadyCallback
+  ) = this()
 }
 

@@ -12,8 +12,8 @@ trait Anon_Category extends js.Object {
 object Anon_Category {
   @scala.inline
   def apply(documentId: String, category: String = null): Anon_Category = {
-    val __obj = js.Dynamic.literal(documentId = documentId)
-    if (category != null) __obj.updateDynamic("category")(category)
+    val __obj = js.Dynamic.literal(documentId = documentId.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Category]
   }
 }

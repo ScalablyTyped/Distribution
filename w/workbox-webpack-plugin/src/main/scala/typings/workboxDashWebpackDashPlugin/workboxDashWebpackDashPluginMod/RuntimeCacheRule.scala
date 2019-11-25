@@ -29,8 +29,8 @@ object RuntimeCacheRule {
     urlPattern: String | RegExp = null
   ): RuntimeCacheRule = {
     val __obj = js.Dynamic.literal()
-    if (handler != null) __obj.updateDynamic("handler")(handler)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (urlPattern != null) __obj.updateDynamic("urlPattern")(urlPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeCacheRule]
   }

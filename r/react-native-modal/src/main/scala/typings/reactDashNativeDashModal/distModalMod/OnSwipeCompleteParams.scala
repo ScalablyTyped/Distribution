@@ -12,7 +12,7 @@ trait OnSwipeCompleteParams extends js.Object {
 object OnSwipeCompleteParams {
   @scala.inline
   def apply(swipingDirection: Direction): OnSwipeCompleteParams = {
-    val __obj = js.Dynamic.literal(swipingDirection = swipingDirection)
+    val __obj = js.Dynamic.literal(swipingDirection = swipingDirection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnSwipeCompleteParams]
   }

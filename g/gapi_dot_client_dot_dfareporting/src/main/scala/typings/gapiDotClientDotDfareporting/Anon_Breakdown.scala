@@ -36,13 +36,13 @@ object Anon_Breakdown {
     pivoted: js.UndefOr[Boolean] = js.undefined
   ): Anon_Breakdown = {
     val __obj = js.Dynamic.literal()
-    if (breakdown != null) __obj.updateDynamic("breakdown")(breakdown)
-    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
-    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
-    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
-    if (overlapMetricNames != null) __obj.updateDynamic("overlapMetricNames")(overlapMetricNames)
-    if (!js.isUndefined(pivoted)) __obj.updateDynamic("pivoted")(pivoted)
+    if (breakdown != null) __obj.updateDynamic("breakdown")(breakdown.asInstanceOf[js.Any])
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters.asInstanceOf[js.Any])
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames.asInstanceOf[js.Any])
+    if (overlapMetricNames != null) __obj.updateDynamic("overlapMetricNames")(overlapMetricNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(pivoted)) __obj.updateDynamic("pivoted")(pivoted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Breakdown]
   }
 }

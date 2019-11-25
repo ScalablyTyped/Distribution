@@ -27,7 +27,7 @@ object TinderMessage {
     timestamp: Double,
     to: String
   ): TinderMessage = {
-    val __obj = js.Dynamic.literal(_id = _id, created_date = created_date, from = from, match_id = match_id, message = message, sent_date = sent_date, timestamp = timestamp, to = to)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], created_date = created_date.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], match_id = match_id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sent_date = sent_date.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TinderMessage]
   }

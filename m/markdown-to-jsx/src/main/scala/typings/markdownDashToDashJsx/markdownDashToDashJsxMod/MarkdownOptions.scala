@@ -42,9 +42,9 @@ object MarkdownOptions {
   ): MarkdownOptions = {
     val __obj = js.Dynamic.literal()
     if (createElement != null) __obj.updateDynamic("createElement")(js.Any.fromFunction3(createElement))
-    if (!js.isUndefined(forceBlock)) __obj.updateDynamic("forceBlock")(forceBlock)
-    if (!js.isUndefined(forceInline)) __obj.updateDynamic("forceInline")(forceInline)
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    if (!js.isUndefined(forceBlock)) __obj.updateDynamic("forceBlock")(forceBlock.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceInline)) __obj.updateDynamic("forceInline")(forceInline.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (slugify != null) __obj.updateDynamic("slugify")(js.Any.fromFunction1(slugify))
     __obj.asInstanceOf[MarkdownOptions]
   }

@@ -22,11 +22,11 @@ object AccountsCustomBatchResponseEntry {
     linkStatus: String = null
   ): AccountsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account)
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (linkStatus != null) __obj.updateDynamic("linkStatus")(linkStatus)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (linkStatus != null) __obj.updateDynamic("linkStatus")(linkStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountsCustomBatchResponseEntry]
   }
 }

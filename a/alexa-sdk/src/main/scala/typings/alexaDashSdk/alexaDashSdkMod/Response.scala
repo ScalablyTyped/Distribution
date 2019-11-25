@@ -22,11 +22,11 @@ object Response {
     shouldEndSession: js.UndefOr[Boolean] = js.undefined
   ): Response = {
     val __obj = js.Dynamic.literal()
-    if (card != null) __obj.updateDynamic("card")(card)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (outputSpeech != null) __obj.updateDynamic("outputSpeech")(outputSpeech)
-    if (reprompt != null) __obj.updateDynamic("reprompt")(reprompt)
-    if (!js.isUndefined(shouldEndSession)) __obj.updateDynamic("shouldEndSession")(shouldEndSession)
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (outputSpeech != null) __obj.updateDynamic("outputSpeech")(outputSpeech.asInstanceOf[js.Any])
+    if (reprompt != null) __obj.updateDynamic("reprompt")(reprompt.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldEndSession)) __obj.updateDynamic("shouldEndSession")(shouldEndSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

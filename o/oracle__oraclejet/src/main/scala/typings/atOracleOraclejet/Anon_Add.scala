@@ -38,16 +38,16 @@ object Anon_Add {
     until: js.Any = null
   ): Anon_Add = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (fetchSize != null) __obj.updateDynamic("fetchSize")(fetchSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(set)) __obj.updateDynamic("set")(set)
-    if (since != null) __obj.updateDynamic("since")(since)
-    if (startID != null) __obj.updateDynamic("startID")(startID)
+    if (!js.isUndefined(set)) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
+    if (startID != null) __obj.updateDynamic("startID")(startID.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
-    if (until != null) __obj.updateDynamic("until")(until)
+    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Add]
   }
 }

@@ -14,7 +14,7 @@ trait Request$ extends js.Object {
 object Request$ {
   @scala.inline
   def apply(id: String, `type`: pubsub | request): Request$ = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request$]
   }

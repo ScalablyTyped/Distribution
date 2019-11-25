@@ -41,20 +41,20 @@ object PublishOptions {
     user: Anon_Email = null
   ): PublishOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add)
-    if (branch != null) __obj.updateDynamic("branch")(branch)
-    if (dest != null) __obj.updateDynamic("dest")(dest)
-    if (!js.isUndefined(dotfiles)) __obj.updateDynamic("dotfiles")(dotfiles)
-    if (git != null) __obj.updateDynamic("git")(git)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (only != null) __obj.updateDynamic("only")(only)
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push)
-    if (remote != null) __obj.updateDynamic("remote")(remote)
-    if (repo != null) __obj.updateDynamic("repo")(repo)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotfiles)) __obj.updateDynamic("dotfiles")(dotfiles.asInstanceOf[js.Any])
+    if (git != null) __obj.updateDynamic("git")(git.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
+    if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishOptions]
   }
 }

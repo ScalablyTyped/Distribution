@@ -15,7 +15,7 @@ trait PublicKey extends js.Object {
 object PublicKey {
   @scala.inline
   def apply(algo: String, data: Buffer): PublicKey = {
-    val __obj = js.Dynamic.literal(algo = algo, data = data)
+    val __obj = js.Dynamic.literal(algo = algo.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PublicKey]
   }

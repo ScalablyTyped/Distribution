@@ -17,7 +17,7 @@ object NetworkRoutingConfig {
   @scala.inline
   def apply(routingMode: String = null): NetworkRoutingConfig = {
     val __obj = js.Dynamic.literal()
-    if (routingMode != null) __obj.updateDynamic("routingMode")(routingMode)
+    if (routingMode != null) __obj.updateDynamic("routingMode")(routingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkRoutingConfig]
   }
 }

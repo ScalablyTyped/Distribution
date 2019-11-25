@@ -12,7 +12,7 @@ trait DataSourceItemObject extends js.Object {
 object DataSourceItemObject {
   @scala.inline
   def apply(text: String, value: String): DataSourceItemObject = {
-    val __obj = js.Dynamic.literal(text = text, value = value)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataSourceItemObject]
   }

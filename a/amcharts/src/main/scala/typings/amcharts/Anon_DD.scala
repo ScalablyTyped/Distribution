@@ -14,7 +14,7 @@ trait Anon_DD extends js.Object {
 object Anon_DD {
   @scala.inline
   def apply(DD: String, hh: String, mm: String, ss: String): Anon_DD = {
-    val __obj = js.Dynamic.literal(DD = DD, hh = hh, mm = mm, ss = ss)
+    val __obj = js.Dynamic.literal(DD = DD.asInstanceOf[js.Any], hh = hh.asInstanceOf[js.Any], mm = mm.asInstanceOf[js.Any], ss = ss.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DD]
   }

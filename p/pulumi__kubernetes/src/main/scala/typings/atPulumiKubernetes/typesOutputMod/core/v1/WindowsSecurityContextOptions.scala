@@ -33,7 +33,7 @@ trait WindowsSecurityContextOptions extends js.Object {
 object WindowsSecurityContextOptions {
   @scala.inline
   def apply(gmsaCredentialSpec: String, gmsaCredentialSpecName: String, runAsUserName: String): WindowsSecurityContextOptions = {
-    val __obj = js.Dynamic.literal(gmsaCredentialSpec = gmsaCredentialSpec, gmsaCredentialSpecName = gmsaCredentialSpecName, runAsUserName = runAsUserName)
+    val __obj = js.Dynamic.literal(gmsaCredentialSpec = gmsaCredentialSpec.asInstanceOf[js.Any], gmsaCredentialSpecName = gmsaCredentialSpecName.asInstanceOf[js.Any], runAsUserName = runAsUserName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WindowsSecurityContextOptions]
   }

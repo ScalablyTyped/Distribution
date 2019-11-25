@@ -30,7 +30,7 @@ object OptionsWithoutRender {
   ): OptionsWithoutRender[Props] = {
     val __obj = js.Dynamic.literal(loader = js.Any.fromFunction0(loader), loading = loading.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (webpack != null) __obj.updateDynamic("webpack")(js.Any.fromFunction0(webpack))
     __obj.asInstanceOf[OptionsWithoutRender[Props]]

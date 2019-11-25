@@ -33,9 +33,9 @@ object IgZoombarDefaultZoomWindow {
     width: String = null
   ): IgZoombarDefaultZoomWindow = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgZoombarDefaultZoomWindow]
   }
 }

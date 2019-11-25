@@ -13,8 +13,8 @@ object ChannelConversionPing {
   @scala.inline
   def apply(context: String = null, conversionUrl: String = null): ChannelConversionPing = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (conversionUrl != null) __obj.updateDynamic("conversionUrl")(conversionUrl)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (conversionUrl != null) __obj.updateDynamic("conversionUrl")(conversionUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelConversionPing]
   }
 }

@@ -30,7 +30,7 @@ object QueryResult {
     propertyIsEnumerable: PropertyKey => Boolean,
     rows: js.Array[String]
   ): QueryResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, fields = fields, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rows = rows)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryResult]
   }

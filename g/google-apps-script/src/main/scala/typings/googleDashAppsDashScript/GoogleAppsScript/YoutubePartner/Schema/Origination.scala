@@ -13,8 +13,8 @@ object Origination {
   @scala.inline
   def apply(owner: String = null, source: String = null): Origination = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Origination]
   }
 }

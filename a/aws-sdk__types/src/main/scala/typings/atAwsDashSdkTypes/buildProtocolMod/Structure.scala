@@ -29,12 +29,12 @@ object Structure {
     payload: java.lang.String = null,
     sensitive: js.UndefOr[scala.Boolean] = js.undefined
   ): Structure = {
-    val __obj = js.Dynamic.literal(members = members, required = required)
-    __obj.updateDynamic("type")(`type`)
-    if (exceptionCode != null) __obj.updateDynamic("exceptionCode")(exceptionCode)
-    if (exceptionType != null) __obj.updateDynamic("exceptionType")(exceptionType)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (exceptionCode != null) __obj.updateDynamic("exceptionCode")(exceptionCode.asInstanceOf[js.Any])
+    if (exceptionType != null) __obj.updateDynamic("exceptionType")(exceptionType.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Structure]
   }
 }

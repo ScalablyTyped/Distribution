@@ -39,16 +39,16 @@ object StartOpts {
     version: String = null
   ): StartOpts = {
     val __obj = js.Dynamic.literal()
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
     if (cb != null) __obj.updateDynamic("cb")(js.Any.fromFunction2(cb))
-    if (drivers != null) __obj.updateDynamic("drivers")(drivers)
-    if (javaArgs != null) __obj.updateDynamic("javaArgs")(javaArgs)
-    if (javaPath != null) __obj.updateDynamic("javaPath")(javaPath)
+    if (drivers != null) __obj.updateDynamic("drivers")(drivers.asInstanceOf[js.Any])
+    if (javaArgs != null) __obj.updateDynamic("javaArgs")(javaArgs.asInstanceOf[js.Any])
+    if (javaPath != null) __obj.updateDynamic("javaPath")(javaPath.asInstanceOf[js.Any])
     if (requestOpts != null) __obj.updateDynamic("requestOpts")(requestOpts.asInstanceOf[js.Any])
-    if (seleniumArgs != null) __obj.updateDynamic("seleniumArgs")(seleniumArgs)
+    if (seleniumArgs != null) __obj.updateDynamic("seleniumArgs")(seleniumArgs.asInstanceOf[js.Any])
     if (spawnCb != null) __obj.updateDynamic("spawnCb")(js.Any.fromFunction1(spawnCb))
-    if (spawnOptions != null) __obj.updateDynamic("spawnOptions")(spawnOptions)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (spawnOptions != null) __obj.updateDynamic("spawnOptions")(spawnOptions.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOpts]
   }
 }

@@ -20,10 +20,10 @@ object TileLayerOptions {
     urlTemplate: String = null
   ): TileLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate)
+    if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileLayerOptions]
   }
 }

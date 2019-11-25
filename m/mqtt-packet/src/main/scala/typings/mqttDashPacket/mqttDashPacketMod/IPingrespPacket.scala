@@ -15,7 +15,7 @@ trait IPingrespPacket
 object IPingrespPacket {
   @scala.inline
   def apply(cmd: pingresp, length: Int | Double = null, messageId: Int | Double = null): IPingrespPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd)
+    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPingrespPacket]

@@ -14,9 +14,9 @@ object OrderpaymentsNotifyRefundRequest {
   @scala.inline
   def apply(invoiceId: String = null, invoiceIds: js.Array[String] = null, refundState: String = null): OrderpaymentsNotifyRefundRequest = {
     val __obj = js.Dynamic.literal()
-    if (invoiceId != null) __obj.updateDynamic("invoiceId")(invoiceId)
-    if (invoiceIds != null) __obj.updateDynamic("invoiceIds")(invoiceIds)
-    if (refundState != null) __obj.updateDynamic("refundState")(refundState)
+    if (invoiceId != null) __obj.updateDynamic("invoiceId")(invoiceId.asInstanceOf[js.Any])
+    if (invoiceIds != null) __obj.updateDynamic("invoiceIds")(invoiceIds.asInstanceOf[js.Any])
+    if (refundState != null) __obj.updateDynamic("refundState")(refundState.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderpaymentsNotifyRefundRequest]
   }
 }

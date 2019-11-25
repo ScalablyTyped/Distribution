@@ -14,7 +14,7 @@ trait History extends js.Object {
 object History {
   @scala.inline
   def apply(configurable: Boolean, enumerable: Boolean, value: Boolean, writable: Boolean): History = {
-    val __obj = js.Dynamic.literal(configurable = configurable, enumerable = enumerable, value = value, writable = writable)
+    val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], enumerable = enumerable.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[History]
   }

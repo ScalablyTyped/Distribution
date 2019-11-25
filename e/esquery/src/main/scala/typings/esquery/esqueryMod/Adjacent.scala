@@ -13,9 +13,9 @@ trait Adjacent extends BinarySelector {
 object Adjacent {
   @scala.inline
   def apply(left: Selector, right: Selector, `type`: adjacent, subject: js.UndefOr[Boolean] = js.undefined): Adjacent = {
-    val __obj = js.Dynamic.literal(left = left, right = right)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Adjacent]
   }
 }

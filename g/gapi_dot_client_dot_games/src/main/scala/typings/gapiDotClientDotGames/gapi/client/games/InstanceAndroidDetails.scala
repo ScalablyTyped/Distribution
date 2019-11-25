@@ -24,10 +24,10 @@ object InstanceAndroidDetails {
     preferred: js.UndefOr[Boolean] = js.undefined
   ): InstanceAndroidDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePiracyCheck)) __obj.updateDynamic("enablePiracyCheck")(enablePiracyCheck)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred)
+    if (!js.isUndefined(enablePiracyCheck)) __obj.updateDynamic("enablePiracyCheck")(enablePiracyCheck.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceAndroidDetails]
   }
 }

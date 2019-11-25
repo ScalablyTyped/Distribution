@@ -253,15 +253,15 @@ object Config {
     ROUNDING_MODE: RoundingMode = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (ALPHABET != null) __obj.updateDynamic("ALPHABET")(ALPHABET)
-    if (!js.isUndefined(CRYPTO)) __obj.updateDynamic("CRYPTO")(CRYPTO)
+    if (ALPHABET != null) __obj.updateDynamic("ALPHABET")(ALPHABET.asInstanceOf[js.Any])
+    if (!js.isUndefined(CRYPTO)) __obj.updateDynamic("CRYPTO")(CRYPTO.asInstanceOf[js.Any])
     if (DECIMAL_PLACES != null) __obj.updateDynamic("DECIMAL_PLACES")(DECIMAL_PLACES.asInstanceOf[js.Any])
     if (EXPONENTIAL_AT != null) __obj.updateDynamic("EXPONENTIAL_AT")(EXPONENTIAL_AT.asInstanceOf[js.Any])
-    if (FORMAT != null) __obj.updateDynamic("FORMAT")(FORMAT)
-    if (MODULO_MODE != null) __obj.updateDynamic("MODULO_MODE")(MODULO_MODE)
+    if (FORMAT != null) __obj.updateDynamic("FORMAT")(FORMAT.asInstanceOf[js.Any])
+    if (MODULO_MODE != null) __obj.updateDynamic("MODULO_MODE")(MODULO_MODE.asInstanceOf[js.Any])
     if (POW_PRECISION != null) __obj.updateDynamic("POW_PRECISION")(POW_PRECISION.asInstanceOf[js.Any])
     if (RANGE != null) __obj.updateDynamic("RANGE")(RANGE.asInstanceOf[js.Any])
-    if (ROUNDING_MODE != null) __obj.updateDynamic("ROUNDING_MODE")(ROUNDING_MODE)
+    if (ROUNDING_MODE != null) __obj.updateDynamic("ROUNDING_MODE")(ROUNDING_MODE.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

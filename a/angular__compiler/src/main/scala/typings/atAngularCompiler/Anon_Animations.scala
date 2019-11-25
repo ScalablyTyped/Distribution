@@ -38,12 +38,12 @@ object Anon_Animations {
     template: String = null,
     templateUrl: String = null
   ): Anon_Animations = {
-    val __obj = js.Dynamic.literal(animations = animations, externalStylesheets = externalStylesheets, isInline = isInline, ngContentSelectors = ngContentSelectors, preserveWhitespaces = preserveWhitespaces, styleUrls = styleUrls, styles = styles)
-    if (encapsulation != null) __obj.updateDynamic("encapsulation")(encapsulation)
-    if (htmlAst != null) __obj.updateDynamic("htmlAst")(htmlAst)
-    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], externalStylesheets = externalStylesheets.asInstanceOf[js.Any], isInline = isInline.asInstanceOf[js.Any], ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], preserveWhitespaces = preserveWhitespaces.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+    if (encapsulation != null) __obj.updateDynamic("encapsulation")(encapsulation.asInstanceOf[js.Any])
+    if (htmlAst != null) __obj.updateDynamic("htmlAst")(htmlAst.asInstanceOf[js.Any])
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Animations]
   }
 }

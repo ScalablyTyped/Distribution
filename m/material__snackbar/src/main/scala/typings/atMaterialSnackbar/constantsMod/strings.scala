@@ -29,8 +29,8 @@ object strings {
     TEXT_SELECTOR: `DOTmdc-snackbar__text`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(ACTION_BUTTON_SELECTOR = ACTION_BUTTON_SELECTOR, ACTION_WRAPPER_SELECTOR = ACTION_WRAPPER_SELECTOR, HIDE_EVENT = HIDE_EVENT, SHOW_EVENT = SHOW_EVENT, TEXT_SELECTOR = TEXT_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ACTION_BUTTON_SELECTOR = ACTION_BUTTON_SELECTOR.asInstanceOf[js.Any], ACTION_WRAPPER_SELECTOR = ACTION_WRAPPER_SELECTOR.asInstanceOf[js.Any], HIDE_EVENT = HIDE_EVENT.asInstanceOf[js.Any], SHOW_EVENT = SHOW_EVENT.asInstanceOf[js.Any], TEXT_SELECTOR = TEXT_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

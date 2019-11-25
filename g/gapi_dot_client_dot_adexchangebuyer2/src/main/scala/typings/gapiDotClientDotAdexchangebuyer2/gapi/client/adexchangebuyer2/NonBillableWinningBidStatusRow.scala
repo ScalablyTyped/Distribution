@@ -17,9 +17,9 @@ object NonBillableWinningBidStatusRow {
   @scala.inline
   def apply(bidCount: MetricValue = null, rowDimensions: RowDimensions = null, status: String = null): NonBillableWinningBidStatusRow = {
     val __obj = js.Dynamic.literal()
-    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount)
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount.asInstanceOf[js.Any])
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonBillableWinningBidStatusRow]
   }
 }

@@ -68,7 +68,7 @@ object LocationCoordinates {
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (altitudeAccuracy != null) __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy.asInstanceOf[js.Any])
-    if (floor != null) __obj.updateDynamic("floor")(floor)
+    if (floor != null) __obj.updateDynamic("floor")(floor.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])

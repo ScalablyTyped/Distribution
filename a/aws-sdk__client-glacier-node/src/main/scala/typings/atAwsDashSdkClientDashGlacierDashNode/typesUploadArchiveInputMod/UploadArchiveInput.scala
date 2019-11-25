@@ -60,13 +60,13 @@ object UploadArchiveInput {
     body: ArrayBuffer | ArrayBufferView | String | StreamType = null,
     checksum: String = null
   ): UploadArchiveInput[StreamType] = {
-    val __obj = js.Dynamic.literal(accountId = accountId, vaultName = vaultName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (archiveDescription != null) __obj.updateDynamic("archiveDescription")(archiveDescription)
+    if (archiveDescription != null) __obj.updateDynamic("archiveDescription")(archiveDescription.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum)
+    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadArchiveInput[StreamType]]
   }
 }

@@ -20,8 +20,8 @@ object DeviceAuthorizationExtras {
   @scala.inline
   def apply(clientAssertionPayload: js.Object = null, exchangeBody: js.Object = null): DeviceAuthorizationExtras = {
     val __obj = js.Dynamic.literal()
-    if (clientAssertionPayload != null) __obj.updateDynamic("clientAssertionPayload")(clientAssertionPayload)
-    if (exchangeBody != null) __obj.updateDynamic("exchangeBody")(exchangeBody)
+    if (clientAssertionPayload != null) __obj.updateDynamic("clientAssertionPayload")(clientAssertionPayload.asInstanceOf[js.Any])
+    if (exchangeBody != null) __obj.updateDynamic("exchangeBody")(exchangeBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceAuthorizationExtras]
   }
 }

@@ -29,13 +29,13 @@ object Anon_BrowserstyleDefaulticon {
     show_matches: js.Array[MatchPattern] = null
   ): Anon_BrowserstyleDefaulticon = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browser_style)) __obj.updateDynamic("browser_style")(browser_style)
+    if (!js.isUndefined(browser_style)) __obj.updateDynamic("browser_style")(browser_style.asInstanceOf[js.Any])
     if (default_icon != null) __obj.updateDynamic("default_icon")(default_icon.asInstanceOf[js.Any])
-    if (default_popup != null) __obj.updateDynamic("default_popup")(default_popup)
-    if (default_title != null) __obj.updateDynamic("default_title")(default_title)
-    if (hide_matches != null) __obj.updateDynamic("hide_matches")(hide_matches)
-    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
-    if (show_matches != null) __obj.updateDynamic("show_matches")(show_matches)
+    if (default_popup != null) __obj.updateDynamic("default_popup")(default_popup.asInstanceOf[js.Any])
+    if (default_title != null) __obj.updateDynamic("default_title")(default_title.asInstanceOf[js.Any])
+    if (hide_matches != null) __obj.updateDynamic("hide_matches")(hide_matches.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
+    if (show_matches != null) __obj.updateDynamic("show_matches")(show_matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BrowserstyleDefaulticon]
   }
 }

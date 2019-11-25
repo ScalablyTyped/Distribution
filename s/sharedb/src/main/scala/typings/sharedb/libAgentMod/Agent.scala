@@ -44,7 +44,7 @@ object Agent {
     send: JSONObject => Unit,
     stream: Duplex with Anon_IsServer
   ): Agent = {
-    val __obj = js.Dynamic.literal(backend = backend, custom = custom, send = js.Any.fromFunction1(send), stream = stream)
+    val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], send = js.Any.fromFunction1(send), stream = stream.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Agent]
   }

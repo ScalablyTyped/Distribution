@@ -21,8 +21,8 @@ object NgModuleDefinition {
     providersByKey: StringDictionary[NgModuleProviderDef],
     factory: NgModuleDefinitionFactory = null
   ): NgModuleDefinition = {
-    val __obj = js.Dynamic.literal(isRoot = isRoot, modules = modules, providers = providers, providersByKey = providersByKey)
-    if (factory != null) __obj.updateDynamic("factory")(factory)
+    val __obj = js.Dynamic.literal(isRoot = isRoot.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], providersByKey = providersByKey.asInstanceOf[js.Any])
+    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
     __obj.asInstanceOf[NgModuleDefinition]
   }
 }

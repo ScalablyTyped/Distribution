@@ -57,12 +57,12 @@ object TimerEventConfig {
     timeScale: Int | Double = null
   ): TimerEventConfig = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (callbackScope != null) __obj.updateDynamic("callbackScope")(callbackScope)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (callbackScope != null) __obj.updateDynamic("callbackScope")(callbackScope.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
     if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
     if (timeScale != null) __obj.updateDynamic("timeScale")(timeScale.asInstanceOf[js.Any])

@@ -21,9 +21,9 @@ object ListThreadsResponse {
     threads: js.Array[Thread] = null
   ): ListThreadsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (resultSizeEstimate != null) __obj.updateDynamic("resultSizeEstimate")(resultSizeEstimate.asInstanceOf[js.Any])
-    if (threads != null) __obj.updateDynamic("threads")(threads)
+    if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThreadsResponse]
   }
 }

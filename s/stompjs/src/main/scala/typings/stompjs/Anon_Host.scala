@@ -13,8 +13,8 @@ trait Anon_Host extends js.Object {
 object Anon_Host {
   @scala.inline
   def apply(login: String, passcode: String, host: String = null): Anon_Host = {
-    val __obj = js.Dynamic.literal(login = login, passcode = passcode)
-    if (host != null) __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(login = login.asInstanceOf[js.Any], passcode = passcode.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Host]
   }
 }

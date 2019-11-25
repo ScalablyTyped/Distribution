@@ -16,3 +16,24 @@ import scala.scalajs.js.annotation._
 */
 trait ButtonSkin extends js.Object
 
+object ButtonSkin {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dark: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.dark = this.cast("dark")
+  @scala.inline
+  def destructive: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.destructive = this.cast("destructive")
+  @scala.inline
+  def inverted: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.inverted = this.cast("inverted")
+  @scala.inline
+  def light: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.light = this.cast("light")
+  @scala.inline
+  def premium: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.premium = this.cast("premium")
+  @scala.inline
+  def `premium-light`: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.`premium-light` = this.cast("premium-light")
+  @scala.inline
+  def standard: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.standard = this.cast("standard")
+  @scala.inline
+  def transparent: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.transparent = this.cast("transparent")
+}
+

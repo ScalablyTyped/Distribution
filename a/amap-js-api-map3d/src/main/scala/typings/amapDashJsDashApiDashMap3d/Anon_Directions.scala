@@ -13,7 +13,7 @@ trait Anon_Directions extends js.Object {
 object Anon_Directions {
   @scala.inline
   def apply(directions: js.Array[Double], textureIndices: js.Array[Double], vertexIndices: js.Array[Double]): Anon_Directions = {
-    val __obj = js.Dynamic.literal(directions = directions, textureIndices = textureIndices, vertexIndices = vertexIndices)
+    val __obj = js.Dynamic.literal(directions = directions.asInstanceOf[js.Any], textureIndices = textureIndices.asInstanceOf[js.Any], vertexIndices = vertexIndices.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Directions]
   }

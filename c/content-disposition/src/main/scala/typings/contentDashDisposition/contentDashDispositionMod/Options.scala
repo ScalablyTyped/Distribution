@@ -14,7 +14,7 @@ object Options {
   def apply(fallback: String | Boolean = null, `type`: String = null): Options = {
     val __obj = js.Dynamic.literal()
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

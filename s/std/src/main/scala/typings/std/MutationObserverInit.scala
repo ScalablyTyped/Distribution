@@ -47,13 +47,13 @@ object MutationObserverInit {
     subtree: js.UndefOr[scala.Boolean] = js.undefined
   ): MutationObserverInit = {
     val __obj = js.Dynamic.literal()
-    if (attributeFilter != null) __obj.updateDynamic("attributeFilter")(attributeFilter)
-    if (!js.isUndefined(attributeOldValue)) __obj.updateDynamic("attributeOldValue")(attributeOldValue)
-    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes)
-    if (!js.isUndefined(characterData)) __obj.updateDynamic("characterData")(characterData)
-    if (!js.isUndefined(characterDataOldValue)) __obj.updateDynamic("characterDataOldValue")(characterDataOldValue)
-    if (!js.isUndefined(childList)) __obj.updateDynamic("childList")(childList)
-    if (!js.isUndefined(subtree)) __obj.updateDynamic("subtree")(subtree)
+    if (attributeFilter != null) __obj.updateDynamic("attributeFilter")(attributeFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributeOldValue)) __obj.updateDynamic("attributeOldValue")(attributeOldValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(characterData)) __obj.updateDynamic("characterData")(characterData.asInstanceOf[js.Any])
+    if (!js.isUndefined(characterDataOldValue)) __obj.updateDynamic("characterDataOldValue")(characterDataOldValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(childList)) __obj.updateDynamic("childList")(childList.asInstanceOf[js.Any])
+    if (!js.isUndefined(subtree)) __obj.updateDynamic("subtree")(subtree.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationObserverInit]
   }
 }

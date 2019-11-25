@@ -25,7 +25,7 @@ object LabelLayout {
     x: Double,
     y: Double
   ): LabelLayout = {
-    val __obj = js.Dynamic.literal(angle = angle, halign = halign, rotationPointX = rotationPointX, rotationPointY = rotationPointY, valign = valign, x = x, y = y)
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], halign = halign.asInstanceOf[js.Any], rotationPointX = rotationPointX.asInstanceOf[js.Any], rotationPointY = rotationPointY.asInstanceOf[js.Any], valign = valign.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LabelLayout]
   }

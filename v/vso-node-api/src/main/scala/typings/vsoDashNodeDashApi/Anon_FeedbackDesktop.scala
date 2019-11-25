@@ -25,7 +25,7 @@ object Anon_FeedbackDesktop {
     xTDesktop2: Double,
     xTWeb: Double
   ): Anon_FeedbackDesktop = {
-    val __obj = js.Dynamic.literal(feedbackDesktop = feedbackDesktop, feedbackWeb = feedbackWeb, sessionInsightsForAll = sessionInsightsForAll, unknown = unknown, xTDesktop = xTDesktop, xTDesktop2 = xTDesktop2, xTWeb = xTWeb)
+    val __obj = js.Dynamic.literal(feedbackDesktop = feedbackDesktop.asInstanceOf[js.Any], feedbackWeb = feedbackWeb.asInstanceOf[js.Any], sessionInsightsForAll = sessionInsightsForAll.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any], xTDesktop = xTDesktop.asInstanceOf[js.Any], xTDesktop2 = xTDesktop2.asInstanceOf[js.Any], xTWeb = xTWeb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FeedbackDesktop]
   }

@@ -55,19 +55,19 @@ object MeasureGroup {
     population: js.Array[MeasureGroupPopulation] = null,
     stratifier: js.Array[MeasureGroupStratifier] = null
   ): MeasureGroup = {
-    val __obj = js.Dynamic.literal(identifier = identifier)
-    if (_description != null) __obj.updateDynamic("_description")(_description)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_name != null) __obj.updateDynamic("_name")(_name)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (population != null) __obj.updateDynamic("population")(population)
-    if (stratifier != null) __obj.updateDynamic("stratifier")(stratifier)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
+    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (population != null) __obj.updateDynamic("population")(population.asInstanceOf[js.Any])
+    if (stratifier != null) __obj.updateDynamic("stratifier")(stratifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeasureGroup]
   }
 }

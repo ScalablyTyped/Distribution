@@ -69,6 +69,6 @@ object unistDashUtilDashIsMod extends js.Object {
     *
     * @typeParam T type of node that passes test
     */
-  type TestType[T /* <: Node */] = /* import warning: ImportType.apply Failed type conversion: T['type'] */ js.Any
+  type TestType[T /* <: Node */] = /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any
 }
 

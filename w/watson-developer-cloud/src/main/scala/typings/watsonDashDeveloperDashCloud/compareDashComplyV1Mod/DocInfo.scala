@@ -18,9 +18,9 @@ object DocInfo {
   @scala.inline
   def apply(hash: String = null, html: String = null, title: String = null): DocInfo = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocInfo]
   }
 }

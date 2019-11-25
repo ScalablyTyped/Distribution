@@ -56,8 +56,8 @@ object DateTimePickerProps {
     value: String | Date | Double | (js.Array[String | Date | Double]) = null
   ): DateTimePickerProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4(onChange))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction4(onClose))
     if (onDayCreate != null) __obj.updateDynamic("onDayCreate")(js.Any.fromFunction4(onDayCreate))
@@ -66,7 +66,7 @@ object DateTimePickerProps {
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction4(onReady))
     if (onValueUpdate != null) __obj.updateDynamic("onValueUpdate")(js.Any.fromFunction4(onValueUpdate))
     if (onYearChange != null) __obj.updateDynamic("onYearChange")(js.Any.fromFunction4(onYearChange))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimePickerProps]

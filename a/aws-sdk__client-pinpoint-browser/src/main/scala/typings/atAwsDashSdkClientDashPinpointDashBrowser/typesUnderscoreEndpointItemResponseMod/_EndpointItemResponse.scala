@@ -19,7 +19,7 @@ object _EndpointItemResponse {
   @scala.inline
   def apply(Message: String = null, StatusCode: Int | Double = null): _EndpointItemResponse = {
     val __obj = js.Dynamic.literal()
-    if (Message != null) __obj.updateDynamic("Message")(Message)
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EndpointItemResponse]
   }

@@ -30,16 +30,16 @@ object BundleRendererOptions {
     template: String = null
   ): BundleRendererOptions = {
     val __obj = js.Dynamic.literal()
-    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (clientManifest != null) __obj.updateDynamic("clientManifest")(clientManifest)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject)
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (clientManifest != null) __obj.updateDynamic("clientManifest")(clientManifest.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
     if (runInNewContext != null) __obj.updateDynamic("runInNewContext")(runInNewContext.asInstanceOf[js.Any])
     if (serializer != null) __obj.updateDynamic("serializer")(js.Any.fromFunction1(serializer))
     if (shouldPrefetch != null) __obj.updateDynamic("shouldPrefetch")(js.Any.fromFunction2(shouldPrefetch))
     if (shouldPreload != null) __obj.updateDynamic("shouldPreload")(js.Any.fromFunction2(shouldPreload))
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleRendererOptions]
   }
 }

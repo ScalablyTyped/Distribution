@@ -46,11 +46,11 @@ object GoogleActionsOrdersV3VerticalsCommonVehicle {
     model: String = null
   ): GoogleActionsOrdersV3VerticalsCommonVehicle = {
     val __obj = js.Dynamic.literal()
-    if (colorName != null) __obj.updateDynamic("colorName")(colorName)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (licensePlate != null) __obj.updateDynamic("licensePlate")(licensePlate)
-    if (make != null) __obj.updateDynamic("make")(make)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (colorName != null) __obj.updateDynamic("colorName")(colorName.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (licensePlate != null) __obj.updateDynamic("licensePlate")(licensePlate.asInstanceOf[js.Any])
+    if (make != null) __obj.updateDynamic("make")(make.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsCommonVehicle]
   }
 }

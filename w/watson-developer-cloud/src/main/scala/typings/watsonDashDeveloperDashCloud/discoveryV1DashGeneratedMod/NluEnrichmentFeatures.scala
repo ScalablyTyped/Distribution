@@ -37,14 +37,14 @@ object NluEnrichmentFeatures {
     sentiment: NluEnrichmentSentiment = null
   ): NluEnrichmentFeatures = {
     val __obj = js.Dynamic.literal()
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (concepts != null) __obj.updateDynamic("concepts")(concepts)
-    if (emotion != null) __obj.updateDynamic("emotion")(emotion)
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (relations != null) __obj.updateDynamic("relations")(relations)
-    if (semantic_roles != null) __obj.updateDynamic("semantic_roles")(semantic_roles)
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (concepts != null) __obj.updateDynamic("concepts")(concepts.asInstanceOf[js.Any])
+    if (emotion != null) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (relations != null) __obj.updateDynamic("relations")(relations.asInstanceOf[js.Any])
+    if (semantic_roles != null) __obj.updateDynamic("semantic_roles")(semantic_roles.asInstanceOf[js.Any])
+    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
     __obj.asInstanceOf[NluEnrichmentFeatures]
   }
 }

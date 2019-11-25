@@ -18,7 +18,7 @@ trait SaveEventParams extends js.Object {
 object SaveEventParams {
   @scala.inline
   def apply(encoded: String, pathName: String): SaveEventParams = {
-    val __obj = js.Dynamic.literal(encoded = encoded, pathName = pathName)
+    val __obj = js.Dynamic.literal(encoded = encoded.asInstanceOf[js.Any], pathName = pathName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SaveEventParams]
   }

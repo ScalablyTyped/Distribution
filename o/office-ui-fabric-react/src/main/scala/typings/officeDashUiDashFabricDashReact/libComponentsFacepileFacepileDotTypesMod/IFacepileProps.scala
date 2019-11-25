@@ -98,26 +98,26 @@ object IFacepileProps {
     styles: IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles] = null,
     theme: ITheme = null
   ): IFacepileProps = {
-    val __obj = js.Dynamic.literal(personas = personas)
-    if (addButtonProps != null) __obj.updateDynamic("addButtonProps")(addButtonProps)
-    if (ariaDescription != null) __obj.updateDynamic("ariaDescription")(ariaDescription)
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (chevronButtonProps != null) __obj.updateDynamic("chevronButtonProps")(chevronButtonProps)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(personas = personas.asInstanceOf[js.Any])
+    if (addButtonProps != null) __obj.updateDynamic("addButtonProps")(addButtonProps.asInstanceOf[js.Any])
+    if (ariaDescription != null) __obj.updateDynamic("ariaDescription")(ariaDescription.asInstanceOf[js.Any])
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (chevronButtonProps != null) __obj.updateDynamic("chevronButtonProps")(chevronButtonProps.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (getPersonaProps != null) __obj.updateDynamic("getPersonaProps")(js.Any.fromFunction1(getPersonaProps))
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxDisplayablePersonas != null) __obj.updateDynamic("maxDisplayablePersonas")(maxDisplayablePersonas.asInstanceOf[js.Any])
     if (onRenderPersona != null) __obj.updateDynamic("onRenderPersona")(js.Any.fromFunction2(onRenderPersona))
     if (onRenderPersonaCoin != null) __obj.updateDynamic("onRenderPersonaCoin")(js.Any.fromFunction2(onRenderPersonaCoin))
-    if (overflowButtonProps != null) __obj.updateDynamic("overflowButtonProps")(overflowButtonProps)
-    if (overflowButtonType != null) __obj.updateDynamic("overflowButtonType")(overflowButtonType)
-    if (overflowPersonas != null) __obj.updateDynamic("overflowPersonas")(overflowPersonas)
-    if (personaSize != null) __obj.updateDynamic("personaSize")(personaSize)
+    if (overflowButtonProps != null) __obj.updateDynamic("overflowButtonProps")(overflowButtonProps.asInstanceOf[js.Any])
+    if (overflowButtonType != null) __obj.updateDynamic("overflowButtonType")(overflowButtonType.asInstanceOf[js.Any])
+    if (overflowPersonas != null) __obj.updateDynamic("overflowPersonas")(overflowPersonas.asInstanceOf[js.Any])
+    if (personaSize != null) __obj.updateDynamic("personaSize")(personaSize.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAddButton)) __obj.updateDynamic("showAddButton")(showAddButton)
+    if (!js.isUndefined(showAddButton)) __obj.updateDynamic("showAddButton")(showAddButton.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFacepileProps]
   }
 }

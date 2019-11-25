@@ -22,10 +22,10 @@ object ISdkConfig {
     transportation: ITransportation = null
   ): ISdkConfig = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint)
-    if (transportation != null) __obj.updateDynamic("transportation")(transportation)
+    if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint.asInstanceOf[js.Any])
+    if (transportation != null) __obj.updateDynamic("transportation")(transportation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISdkConfig]
   }
 }

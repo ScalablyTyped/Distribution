@@ -21,8 +21,8 @@ object MoveToOptions {
   ): MoveToOptions = {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveToOptions]
   }

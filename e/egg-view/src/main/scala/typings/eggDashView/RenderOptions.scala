@@ -23,10 +23,10 @@ object RenderOptions {
     viewEngine: String = null
   ): RenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (locals != null) __obj.updateDynamic("locals")(locals)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (viewEngine != null) __obj.updateDynamic("viewEngine")(viewEngine)
+    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (viewEngine != null) __obj.updateDynamic("viewEngine")(viewEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
 }

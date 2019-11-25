@@ -38,11 +38,11 @@ object PhysicalLocation {
     region: Region = null
   ): PhysicalLocation = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (artifactLocation != null) __obj.updateDynamic("artifactLocation")(artifactLocation)
-    if (contextRegion != null) __obj.updateDynamic("contextRegion")(contextRegion)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (artifactLocation != null) __obj.updateDynamic("artifactLocation")(artifactLocation.asInstanceOf[js.Any])
+    if (contextRegion != null) __obj.updateDynamic("contextRegion")(contextRegion.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhysicalLocation]
   }
 }

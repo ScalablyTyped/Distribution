@@ -14,9 +14,9 @@ object ISplitEmail {
   @scala.inline
   def apply(address: String = null, domain: String = null, topLevelDomain: String = null): ISplitEmail = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (topLevelDomain != null) __obj.updateDynamic("topLevelDomain")(topLevelDomain)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (topLevelDomain != null) __obj.updateDynamic("topLevelDomain")(topLevelDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISplitEmail]
   }
 }

@@ -11,7 +11,7 @@ trait GitignoreGetTemplateParams extends js.Object {
 object GitignoreGetTemplateParams {
   @scala.inline
   def apply(name: String): GitignoreGetTemplateParams = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitignoreGetTemplateParams]
   }

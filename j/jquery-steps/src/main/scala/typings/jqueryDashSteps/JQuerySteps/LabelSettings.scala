@@ -49,13 +49,13 @@ object LabelSettings {
     previous: String = null
   ): LabelSettings = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (current != null) __obj.updateDynamic("current")(current)
-    if (finish != null) __obj.updateDynamic("finish")(finish)
-    if (loading != null) __obj.updateDynamic("loading")(loading)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (pagination != null) __obj.updateDynamic("pagination")(pagination)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (finish != null) __obj.updateDynamic("finish")(finish.asInstanceOf[js.Any])
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelSettings]
   }
 }

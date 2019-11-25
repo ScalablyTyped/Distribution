@@ -22,11 +22,11 @@ object TrayOption {
     tooltip: String = null
   ): TrayOption = {
     val __obj = js.Dynamic.literal()
-    if (alticon != null) __obj.updateDynamic("alticon")(alticon)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (alticon != null) __obj.updateDynamic("alticon")(alticon.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrayOption]
   }
 }

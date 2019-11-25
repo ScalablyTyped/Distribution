@@ -12,7 +12,7 @@ trait AccountRepositoryLoginResponseRootObject extends js.Object {
 object AccountRepositoryLoginResponseRootObject {
   @scala.inline
   def apply(logged_in_user: AccountRepositoryLoginResponseLogged_in_user, status: String): AccountRepositoryLoginResponseRootObject = {
-    val __obj = js.Dynamic.literal(logged_in_user = logged_in_user, status = status)
+    val __obj = js.Dynamic.literal(logged_in_user = logged_in_user.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountRepositoryLoginResponseRootObject]
   }

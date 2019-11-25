@@ -82,20 +82,20 @@ object AppXOptions {
     showNameOnTiles: js.UndefOr[Boolean] = js.undefined
   ): AppXOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addAutoLaunchExtension)) __obj.updateDynamic("addAutoLaunchExtension")(addAutoLaunchExtension)
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId)
-    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(electronUpdaterAware)) __obj.updateDynamic("electronUpdaterAware")(electronUpdaterAware)
-    if (identityName != null) __obj.updateDynamic("identityName")(identityName)
+    if (!js.isUndefined(addAutoLaunchExtension)) __obj.updateDynamic("addAutoLaunchExtension")(addAutoLaunchExtension.asInstanceOf[js.Any])
+    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(electronUpdaterAware)) __obj.updateDynamic("electronUpdaterAware")(electronUpdaterAware.asInstanceOf[js.Any])
+    if (identityName != null) __obj.updateDynamic("identityName")(identityName.asInstanceOf[js.Any])
     if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (makeappxArgs != null) __obj.updateDynamic("makeappxArgs")(makeappxArgs)
+    if (makeappxArgs != null) __obj.updateDynamic("makeappxArgs")(makeappxArgs.asInstanceOf[js.Any])
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
-    if (publisherDisplayName != null) __obj.updateDynamic("publisherDisplayName")(publisherDisplayName)
-    if (!js.isUndefined(setBuildNumber)) __obj.updateDynamic("setBuildNumber")(setBuildNumber)
-    if (!js.isUndefined(showNameOnTiles)) __obj.updateDynamic("showNameOnTiles")(showNameOnTiles)
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
+    if (publisherDisplayName != null) __obj.updateDynamic("publisherDisplayName")(publisherDisplayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(setBuildNumber)) __obj.updateDynamic("setBuildNumber")(setBuildNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNameOnTiles)) __obj.updateDynamic("showNameOnTiles")(showNameOnTiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppXOptions]
   }
 }

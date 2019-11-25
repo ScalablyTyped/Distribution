@@ -9,35 +9,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Action extends js.Object {
-  var environment: js.UndefOr[Environment] = js.undefined
-  var fetchPolicy: js.UndefOr[FetchPolicy] = js.undefined
-  var fragmentIdentifier: js.UndefOr[String] = js.undefined
-  var onComplete: js.UndefOr[js.Function1[/* args */ Error | Null, Unit]] = js.undefined
-  var refetchVariables: js.UndefOr[Variables] = js.undefined
-  var renderPolicy: js.UndefOr[RenderPolicy] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.atEntriaRelayDashExperimental.Anon_Environment
+  - typings.atEntriaRelayDashExperimental.Anon_Args
+*/
+trait Action extends js.Object
 
 object Action {
   @scala.inline
-  def apply(
-    environment: Environment = null,
+  def Anon_Environment(environment: Environment, fragmentIdentifier: String, `type`: String): Action = {
+    val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], fragmentIdentifier = fragmentIdentifier.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Action]
+  }
+  @scala.inline
+  def Anon_Args(
+    environment: Environment,
+    refetchVariables: Variables,
+    `type`: String,
     fetchPolicy: FetchPolicy = null,
-    fragmentIdentifier: String = null,
     onComplete: /* args */ Error | Null => Unit = null,
-    refetchVariables: Variables = null,
-    renderPolicy: RenderPolicy = null,
-    `type`: String = null
+    renderPolicy: RenderPolicy = null
   ): Action = {
-    val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
-    if (fragmentIdentifier != null) __obj.updateDynamic("fragmentIdentifier")(fragmentIdentifier)
+    val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], refetchVariables = refetchVariables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (refetchVariables != null) __obj.updateDynamic("refetchVariables")(refetchVariables)
-    if (renderPolicy != null) __obj.updateDynamic("renderPolicy")(renderPolicy)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (renderPolicy != null) __obj.updateDynamic("renderPolicy")(renderPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
 }

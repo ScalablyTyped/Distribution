@@ -22,9 +22,9 @@ object Anon_Path {
     storyId: String = null,
     viewMode: String = null
   ): Anon_Path = {
-    val __obj = js.Dynamic.literal(path = path, queryParams = queryParams, url = url)
-    if (storyId != null) __obj.updateDynamic("storyId")(storyId)
-    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], queryParams = queryParams.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (storyId != null) __obj.updateDynamic("storyId")(storyId.asInstanceOf[js.Any])
+    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Path]
   }
 }

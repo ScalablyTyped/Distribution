@@ -25,7 +25,7 @@ object Anon_AlignItemsBorderBottomColorBorderBottomWidth {
     height: Double,
     justifyContent: String
   ): Anon_AlignItemsBorderBottomColorBorderBottomWidth = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, borderBottomColor = borderBottomColor, borderBottomWidth = borderBottomWidth, flexDirection = flexDirection, flexGrow = flexGrow, height = height, justifyContent = justifyContent)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], borderBottomColor = borderBottomColor.asInstanceOf[js.Any], borderBottomWidth = borderBottomWidth.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsBorderBottomColorBorderBottomWidth]
   }

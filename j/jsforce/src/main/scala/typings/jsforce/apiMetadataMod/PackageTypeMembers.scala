@@ -12,7 +12,7 @@ trait PackageTypeMembers extends js.Object {
 object PackageTypeMembers {
   @scala.inline
   def apply(members: js.Array[String], name: String): PackageTypeMembers = {
-    val __obj = js.Dynamic.literal(members = members, name = name)
+    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PackageTypeMembers]
   }

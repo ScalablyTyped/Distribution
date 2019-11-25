@@ -30,7 +30,7 @@ trait RowUpdateEvent[T] extends js.Object {
 object RowUpdateEvent {
   @scala.inline
   def apply[T](cellKey: String, key: String, rowIdx: Double, updated: T): RowUpdateEvent[T] = {
-    val __obj = js.Dynamic.literal(cellKey = cellKey, key = key, rowIdx = rowIdx, updated = updated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cellKey = cellKey.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RowUpdateEvent[T]]
   }

@@ -36,18 +36,18 @@ object Anon_AccessibleReorderAfterItem {
     selectedLabel: String = null
   ): Anon_AccessibleReorderAfterItem = {
     val __obj = js.Dynamic.literal()
-    if (accessibleReorderAfterItem != null) __obj.updateDynamic("accessibleReorderAfterItem")(accessibleReorderAfterItem)
-    if (accessibleReorderBeforeItem != null) __obj.updateDynamic("accessibleReorderBeforeItem")(accessibleReorderBeforeItem)
-    if (accessibleReorderTouchInstructionText != null) __obj.updateDynamic("accessibleReorderTouchInstructionText")(accessibleReorderTouchInstructionText)
-    if (labelCut != null) __obj.updateDynamic("labelCut")(labelCut)
-    if (labelPasteAfter != null) __obj.updateDynamic("labelPasteAfter")(labelPasteAfter)
-    if (labelPasteBefore != null) __obj.updateDynamic("labelPasteBefore")(labelPasteBefore)
-    if (labelRemove != null) __obj.updateDynamic("labelRemove")(labelRemove)
-    if (msgFetchingData != null) __obj.updateDynamic("msgFetchingData")(msgFetchingData)
-    if (msgNoData != null) __obj.updateDynamic("msgNoData")(msgNoData)
-    if (overflowItemLabel != null) __obj.updateDynamic("overflowItemLabel")(overflowItemLabel)
-    if (removeCueText != null) __obj.updateDynamic("removeCueText")(removeCueText)
-    if (selectedLabel != null) __obj.updateDynamic("selectedLabel")(selectedLabel)
+    if (accessibleReorderAfterItem != null) __obj.updateDynamic("accessibleReorderAfterItem")(accessibleReorderAfterItem.asInstanceOf[js.Any])
+    if (accessibleReorderBeforeItem != null) __obj.updateDynamic("accessibleReorderBeforeItem")(accessibleReorderBeforeItem.asInstanceOf[js.Any])
+    if (accessibleReorderTouchInstructionText != null) __obj.updateDynamic("accessibleReorderTouchInstructionText")(accessibleReorderTouchInstructionText.asInstanceOf[js.Any])
+    if (labelCut != null) __obj.updateDynamic("labelCut")(labelCut.asInstanceOf[js.Any])
+    if (labelPasteAfter != null) __obj.updateDynamic("labelPasteAfter")(labelPasteAfter.asInstanceOf[js.Any])
+    if (labelPasteBefore != null) __obj.updateDynamic("labelPasteBefore")(labelPasteBefore.asInstanceOf[js.Any])
+    if (labelRemove != null) __obj.updateDynamic("labelRemove")(labelRemove.asInstanceOf[js.Any])
+    if (msgFetchingData != null) __obj.updateDynamic("msgFetchingData")(msgFetchingData.asInstanceOf[js.Any])
+    if (msgNoData != null) __obj.updateDynamic("msgNoData")(msgNoData.asInstanceOf[js.Any])
+    if (overflowItemLabel != null) __obj.updateDynamic("overflowItemLabel")(overflowItemLabel.asInstanceOf[js.Any])
+    if (removeCueText != null) __obj.updateDynamic("removeCueText")(removeCueText.asInstanceOf[js.Any])
+    if (selectedLabel != null) __obj.updateDynamic("selectedLabel")(selectedLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccessibleReorderAfterItem]
   }
 }

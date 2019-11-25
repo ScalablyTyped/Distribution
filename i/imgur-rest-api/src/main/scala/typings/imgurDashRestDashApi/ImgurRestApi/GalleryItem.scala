@@ -47,11 +47,11 @@ object GalleryItem {
     nsfw: js.UndefOr[Boolean] = js.undefined,
     vote: String = null
   ): GalleryItem = {
-    val __obj = js.Dynamic.literal(comment_count = comment_count, datetime = datetime, description = description, downs = downs, favorite = favorite, id = id, is_album = is_album, link = link, score = score, title = title, topic = topic, topic_id = topic_id, ups = ups, views = views)
+    val __obj = js.Dynamic.literal(comment_count = comment_count.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], downs = downs.asInstanceOf[js.Any], favorite = favorite.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_album = is_album.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], topic_id = topic_id.asInstanceOf[js.Any], ups = ups.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
     if (account_id != null) __obj.updateDynamic("account_id")(account_id.asInstanceOf[js.Any])
-    if (account_url != null) __obj.updateDynamic("account_url")(account_url)
-    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw)
-    if (vote != null) __obj.updateDynamic("vote")(vote)
+    if (account_url != null) __obj.updateDynamic("account_url")(account_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw.asInstanceOf[js.Any])
+    if (vote != null) __obj.updateDynamic("vote")(vote.asInstanceOf[js.Any])
     __obj.asInstanceOf[GalleryItem]
   }
 }

@@ -21,9 +21,9 @@ object StartOptions {
     ignoreWarning: js.UndefOr[Boolean] = js.undefined
   ): StartOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
-    if (framework != null) __obj.updateDynamic("framework")(framework)
-    if (!js.isUndefined(ignoreWarning)) __obj.updateDynamic("ignoreWarning")(ignoreWarning)
+    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
+    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWarning)) __obj.updateDynamic("ignoreWarning")(ignoreWarning.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOptions]
   }
 }

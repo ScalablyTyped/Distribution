@@ -18,9 +18,9 @@ object Options {
     stripBOM: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addBOM)) __obj.updateDynamic("addBOM")(addBOM)
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
-    if (!js.isUndefined(stripBOM)) __obj.updateDynamic("stripBOM")(stripBOM)
+    if (!js.isUndefined(addBOM)) __obj.updateDynamic("addBOM")(addBOM.asInstanceOf[js.Any])
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripBOM)) __obj.updateDynamic("stripBOM")(stripBOM.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

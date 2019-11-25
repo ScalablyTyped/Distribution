@@ -1,6 +1,5 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +19,7 @@ object print extends js.Object {
     * including dtype and size.
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
-  def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](x: T): Unit = js.native
-  def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](x: T, verbose: Boolean): Unit = js.native
+  def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](x: T): Unit = js.native
+  def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](x: T, verbose: Boolean): Unit = js.native
 }
 

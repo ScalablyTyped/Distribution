@@ -29,9 +29,9 @@ object AcceptOptions {
     mimeTypes: js.Array[String] = null
   ): AcceptOptions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptOptions]
   }
 }

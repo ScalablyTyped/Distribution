@@ -22,7 +22,7 @@ object Block {
     data: Buffer,
     dataSize: Double,
     end: Double,
-    name: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
+    name: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.EBMLTagSchema['name'] */ js.Any,
     payload: Buffer,
     start: Double,
     tag: Double,
@@ -31,8 +31,8 @@ object Block {
     `type`: b,
     value: Double
   ): Block = {
-    val __obj = js.Dynamic.literal(data = data, dataSize = dataSize, end = end, name = name, payload = payload, start = start, tag = tag, tagStr = tagStr, track = track, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataSize = dataSize.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagStr = tagStr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }
 }

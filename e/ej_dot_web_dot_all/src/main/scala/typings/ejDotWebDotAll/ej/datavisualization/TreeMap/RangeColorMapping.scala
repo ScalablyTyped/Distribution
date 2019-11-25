@@ -37,10 +37,10 @@ object RangeColorMapping {
     to: Int | Double = null
   ): RangeColorMapping = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors)
-    if (legendLabel != null) __obj.updateDynamic("legendLabel")(legendLabel)
+    if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors.asInstanceOf[js.Any])
+    if (legendLabel != null) __obj.updateDynamic("legendLabel")(legendLabel.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeColorMapping]
   }

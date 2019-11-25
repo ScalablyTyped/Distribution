@@ -34,17 +34,17 @@ object DistanceMatrixRequest {
     unitSystem: UnitSystem = null
   ): DistanceMatrixRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(avoidFerries)) __obj.updateDynamic("avoidFerries")(avoidFerries)
-    if (!js.isUndefined(avoidHighways)) __obj.updateDynamic("avoidHighways")(avoidHighways)
-    if (!js.isUndefined(avoidTolls)) __obj.updateDynamic("avoidTolls")(avoidTolls)
-    if (destinations != null) __obj.updateDynamic("destinations")(destinations)
-    if (drivingOptions != null) __obj.updateDynamic("drivingOptions")(drivingOptions)
-    if (!js.isUndefined(durationInTraffic)) __obj.updateDynamic("durationInTraffic")(durationInTraffic)
-    if (origins != null) __obj.updateDynamic("origins")(origins)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (transitOptions != null) __obj.updateDynamic("transitOptions")(transitOptions)
-    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
-    if (unitSystem != null) __obj.updateDynamic("unitSystem")(unitSystem)
+    if (!js.isUndefined(avoidFerries)) __obj.updateDynamic("avoidFerries")(avoidFerries.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidHighways)) __obj.updateDynamic("avoidHighways")(avoidHighways.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidTolls)) __obj.updateDynamic("avoidTolls")(avoidTolls.asInstanceOf[js.Any])
+    if (destinations != null) __obj.updateDynamic("destinations")(destinations.asInstanceOf[js.Any])
+    if (drivingOptions != null) __obj.updateDynamic("drivingOptions")(drivingOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationInTraffic)) __obj.updateDynamic("durationInTraffic")(durationInTraffic.asInstanceOf[js.Any])
+    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (transitOptions != null) __obj.updateDynamic("transitOptions")(transitOptions.asInstanceOf[js.Any])
+    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode.asInstanceOf[js.Any])
+    if (unitSystem != null) __obj.updateDynamic("unitSystem")(unitSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceMatrixRequest]
   }
 }

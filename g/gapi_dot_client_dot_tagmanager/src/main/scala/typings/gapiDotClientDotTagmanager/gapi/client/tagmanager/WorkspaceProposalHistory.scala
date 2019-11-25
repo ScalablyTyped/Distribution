@@ -27,11 +27,11 @@ object WorkspaceProposalHistory {
     `type`: String = null
   ): WorkspaceProposalHistory = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)
-    if (createdTimestamp != null) __obj.updateDynamic("createdTimestamp")(createdTimestamp)
-    if (statusChange != null) __obj.updateDynamic("statusChange")(statusChange)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
+    if (createdTimestamp != null) __obj.updateDynamic("createdTimestamp")(createdTimestamp.asInstanceOf[js.Any])
+    if (statusChange != null) __obj.updateDynamic("statusChange")(statusChange.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceProposalHistory]
   }
 }

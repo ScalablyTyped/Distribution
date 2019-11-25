@@ -23,7 +23,7 @@ object ShippingAddress {
     street_line1: String,
     street_line2: String
   ): ShippingAddress = {
-    val __obj = js.Dynamic.literal(city = city, country_code = country_code, post_code = post_code, state = state, street_line1 = street_line1, street_line2 = street_line2)
+    val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country_code = country_code.asInstanceOf[js.Any], post_code = post_code.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], street_line1 = street_line1.asInstanceOf[js.Any], street_line2 = street_line2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShippingAddress]
   }

@@ -22,9 +22,9 @@ object WorkspaceSystemSettings {
     tooling: WorkspaceSystemSettingsTooling = null
   ): WorkspaceSystemSettings = {
     val __obj = js.Dynamic.literal()
-    if (disambiguation != null) __obj.updateDynamic("disambiguation")(disambiguation)
-    if (human_agent_assist != null) __obj.updateDynamic("human_agent_assist")(human_agent_assist)
-    if (tooling != null) __obj.updateDynamic("tooling")(tooling)
+    if (disambiguation != null) __obj.updateDynamic("disambiguation")(disambiguation.asInstanceOf[js.Any])
+    if (human_agent_assist != null) __obj.updateDynamic("human_agent_assist")(human_agent_assist.asInstanceOf[js.Any])
+    if (tooling != null) __obj.updateDynamic("tooling")(tooling.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceSystemSettings]
   }
 }

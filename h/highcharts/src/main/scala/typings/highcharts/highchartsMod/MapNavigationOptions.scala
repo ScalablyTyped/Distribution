@@ -78,14 +78,14 @@ object MapNavigationOptions {
     mouseWheelSensitivity: Int | Double = null
   ): MapNavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (!js.isUndefined(enableButtons)) __obj.updateDynamic("enableButtons")(enableButtons)
-    if (!js.isUndefined(enableDoubleClickZoom)) __obj.updateDynamic("enableDoubleClickZoom")(enableDoubleClickZoom)
-    if (!js.isUndefined(enableDoubleClickZoomTo)) __obj.updateDynamic("enableDoubleClickZoomTo")(enableDoubleClickZoomTo)
-    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom)
-    if (!js.isUndefined(enableTouchZoom)) __obj.updateDynamic("enableTouchZoom")(enableTouchZoom)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableButtons)) __obj.updateDynamic("enableButtons")(enableButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDoubleClickZoom)) __obj.updateDynamic("enableDoubleClickZoom")(enableDoubleClickZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDoubleClickZoomTo)) __obj.updateDynamic("enableDoubleClickZoomTo")(enableDoubleClickZoomTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouchZoom)) __obj.updateDynamic("enableTouchZoom")(enableTouchZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (mouseWheelSensitivity != null) __obj.updateDynamic("mouseWheelSensitivity")(mouseWheelSensitivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapNavigationOptions]
   }

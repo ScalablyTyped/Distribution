@@ -10,7 +10,7 @@ package object createDashEmotionMod {
   import typings.std.TemplateStringsArray
 
   type CSSBaseObject = PropertiesFallback[Double | String]
-  type CSSPseudoObject = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type CSSPseudoObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in csstype.csstype.Pseudos ]:? create-emotion.create-emotion.CSSObject}
     */ typings.createDashEmotion.createDashEmotionStrings.CSSPseudoObject with js.Any
   type ClassNameArg = js.UndefOr[

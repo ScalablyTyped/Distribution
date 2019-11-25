@@ -12,7 +12,7 @@ trait PagePaginatorState extends PaginatorState {
 object PagePaginatorState {
   @scala.inline
   def apply(done: Boolean, loaded: Double, page: Double, page_size: Int | Double = null): PagePaginatorState = {
-    val __obj = js.Dynamic.literal(done = done, loaded = loaded, page = page)
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
     if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagePaginatorState]
   }

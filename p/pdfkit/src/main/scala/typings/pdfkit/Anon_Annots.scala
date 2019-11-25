@@ -21,10 +21,10 @@ object Anon_Annots {
     Font: js.Any = null,
     XObject: js.Any = null
   ): Anon_Annots = {
-    val __obj = js.Dynamic.literal(Annots = Annots, Pattern = Pattern)
-    if (ExtGState != null) __obj.updateDynamic("ExtGState")(ExtGState)
-    if (Font != null) __obj.updateDynamic("Font")(Font)
-    if (XObject != null) __obj.updateDynamic("XObject")(XObject)
+    val __obj = js.Dynamic.literal(Annots = Annots.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any])
+    if (ExtGState != null) __obj.updateDynamic("ExtGState")(ExtGState.asInstanceOf[js.Any])
+    if (Font != null) __obj.updateDynamic("Font")(Font.asInstanceOf[js.Any])
+    if (XObject != null) __obj.updateDynamic("XObject")(XObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Annots]
   }
 }

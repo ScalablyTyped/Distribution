@@ -22,7 +22,7 @@ trait UpdateApplicationSettingsOutput extends OutputTypesUnion {
 object UpdateApplicationSettingsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, ApplicationSettingsResource: _UnmarshalledApplicationSettingsResource): UpdateApplicationSettingsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, ApplicationSettingsResource = ApplicationSettingsResource)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationSettingsResource = ApplicationSettingsResource.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateApplicationSettingsOutput]
   }

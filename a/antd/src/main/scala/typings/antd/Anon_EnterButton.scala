@@ -11,7 +11,7 @@ trait Anon_EnterButton extends js.Object {
 object Anon_EnterButton {
   @scala.inline
   def apply(enterButton: Boolean): Anon_EnterButton = {
-    val __obj = js.Dynamic.literal(enterButton = enterButton)
+    val __obj = js.Dynamic.literal(enterButton = enterButton.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnterButton]
   }

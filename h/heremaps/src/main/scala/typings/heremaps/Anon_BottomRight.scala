@@ -12,7 +12,7 @@ trait Anon_BottomRight extends js.Object {
 object Anon_BottomRight {
   @scala.inline
   def apply(BottomRight: Anon_LatitudeLongitude, TopLeft: Anon_LatitudeLongitude): Anon_BottomRight = {
-    val __obj = js.Dynamic.literal(BottomRight = BottomRight, TopLeft = TopLeft)
+    val __obj = js.Dynamic.literal(BottomRight = BottomRight.asInstanceOf[js.Any], TopLeft = TopLeft.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BottomRight]
   }

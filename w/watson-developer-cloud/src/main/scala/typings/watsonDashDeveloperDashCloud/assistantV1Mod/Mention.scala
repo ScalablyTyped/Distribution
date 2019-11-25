@@ -15,7 +15,7 @@ trait Mention extends js.Object {
 object Mention {
   @scala.inline
   def apply(entity: String, location: js.Array[Double]): Mention = {
-    val __obj = js.Dynamic.literal(entity = entity, location = location)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Mention]
   }

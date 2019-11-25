@@ -23,9 +23,9 @@ object AzureResumableFileObject {
     uuid: Int | Double = null
   ): AzureResumableFileObject = {
     val __obj = js.Dynamic.literal()
-    if (customResumeData != null) __obj.updateDynamic("customResumeData")(customResumeData)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (customResumeData != null) __obj.updateDynamic("customResumeData")(customResumeData.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (remaining != null) __obj.updateDynamic("remaining")(remaining.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])

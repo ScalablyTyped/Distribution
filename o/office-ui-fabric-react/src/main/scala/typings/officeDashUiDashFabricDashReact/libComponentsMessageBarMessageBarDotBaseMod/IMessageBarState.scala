@@ -18,9 +18,9 @@ object IMessageBarState {
     showContent: js.UndefOr[Boolean] = js.undefined
   ): IMessageBarState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expandSingleLine)) __obj.updateDynamic("expandSingleLine")(expandSingleLine)
-    if (labelId != null) __obj.updateDynamic("labelId")(labelId)
-    if (!js.isUndefined(showContent)) __obj.updateDynamic("showContent")(showContent)
+    if (!js.isUndefined(expandSingleLine)) __obj.updateDynamic("expandSingleLine")(expandSingleLine.asInstanceOf[js.Any])
+    if (labelId != null) __obj.updateDynamic("labelId")(labelId.asInstanceOf[js.Any])
+    if (!js.isUndefined(showContent)) __obj.updateDynamic("showContent")(showContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageBarState]
   }
 }

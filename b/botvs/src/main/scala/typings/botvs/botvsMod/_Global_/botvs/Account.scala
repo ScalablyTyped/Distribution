@@ -31,7 +31,7 @@ trait Account extends js.Object {
 object Account {
   @scala.inline
   def apply(Balance: Double, FrozenBalance: Double, FrozenStocks: Double, Stocks: Double): Account = {
-    val __obj = js.Dynamic.literal(Balance = Balance, FrozenBalance = FrozenBalance, FrozenStocks = FrozenStocks, Stocks = Stocks)
+    val __obj = js.Dynamic.literal(Balance = Balance.asInstanceOf[js.Any], FrozenBalance = FrozenBalance.asInstanceOf[js.Any], FrozenStocks = FrozenStocks.asInstanceOf[js.Any], Stocks = Stocks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Account]
   }

@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait DialogMessageType extends js.Object
 
+object DialogMessageType {
+  @scala.inline
+  def alert: typings.chromeDashApps.chromeDashAppsStrings.alert = this.cast("alert")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def confirm: typings.chromeDashApps.chromeDashAppsStrings.confirm = this.cast("confirm")
+  @scala.inline
+  def prompt: typings.chromeDashApps.chromeDashAppsStrings.prompt = this.cast("prompt")
+}
+

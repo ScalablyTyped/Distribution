@@ -55,20 +55,20 @@ object LogQueryResponseResult {
     session_token: String = null
   ): LogQueryResponseResult = {
     val __obj = js.Dynamic.literal()
-    if (client_timestamp != null) __obj.updateDynamic("client_timestamp")(client_timestamp)
-    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id)
-    if (created_timestamp != null) __obj.updateDynamic("created_timestamp")(created_timestamp)
-    if (customer_id != null) __obj.updateDynamic("customer_id")(customer_id)
+    if (client_timestamp != null) __obj.updateDynamic("client_timestamp")(client_timestamp.asInstanceOf[js.Any])
+    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
+    if (created_timestamp != null) __obj.updateDynamic("created_timestamp")(created_timestamp.asInstanceOf[js.Any])
+    if (customer_id != null) __obj.updateDynamic("customer_id")(customer_id.asInstanceOf[js.Any])
     if (display_rank != null) __obj.updateDynamic("display_rank")(display_rank.asInstanceOf[js.Any])
-    if (document_id != null) __obj.updateDynamic("document_id")(document_id)
-    if (document_results != null) __obj.updateDynamic("document_results")(document_results)
-    if (document_type != null) __obj.updateDynamic("document_type")(document_type)
-    if (environment_id != null) __obj.updateDynamic("environment_id")(environment_id)
-    if (event_type != null) __obj.updateDynamic("event_type")(event_type)
-    if (natural_language_query != null) __obj.updateDynamic("natural_language_query")(natural_language_query)
-    if (query_id != null) __obj.updateDynamic("query_id")(query_id)
-    if (result_type != null) __obj.updateDynamic("result_type")(result_type)
-    if (session_token != null) __obj.updateDynamic("session_token")(session_token)
+    if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
+    if (document_results != null) __obj.updateDynamic("document_results")(document_results.asInstanceOf[js.Any])
+    if (document_type != null) __obj.updateDynamic("document_type")(document_type.asInstanceOf[js.Any])
+    if (environment_id != null) __obj.updateDynamic("environment_id")(environment_id.asInstanceOf[js.Any])
+    if (event_type != null) __obj.updateDynamic("event_type")(event_type.asInstanceOf[js.Any])
+    if (natural_language_query != null) __obj.updateDynamic("natural_language_query")(natural_language_query.asInstanceOf[js.Any])
+    if (query_id != null) __obj.updateDynamic("query_id")(query_id.asInstanceOf[js.Any])
+    if (result_type != null) __obj.updateDynamic("result_type")(result_type.asInstanceOf[js.Any])
+    if (session_token != null) __obj.updateDynamic("session_token")(session_token.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogQueryResponseResult]
   }
 }

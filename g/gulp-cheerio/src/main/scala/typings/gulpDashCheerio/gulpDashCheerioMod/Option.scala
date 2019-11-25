@@ -21,8 +21,8 @@ object Option {
     run: (/* $ */ CheerioStatic, /* file */ File, /* done */ js.UndefOr[js.Function]) => js.Any = null
   ): Option = {
     val __obj = js.Dynamic.literal()
-    if (cheerio != null) __obj.updateDynamic("cheerio")(cheerio)
-    if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions)
+    if (cheerio != null) __obj.updateDynamic("cheerio")(cheerio.asInstanceOf[js.Any])
+    if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions.asInstanceOf[js.Any])
     if (run != null) __obj.updateDynamic("run")(js.Any.fromFunction3(run))
     __obj.asInstanceOf[Option]
   }

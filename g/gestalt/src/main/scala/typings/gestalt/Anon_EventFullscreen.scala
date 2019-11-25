@@ -15,7 +15,7 @@ trait Anon_EventFullscreen extends js.Object {
 object Anon_EventFullscreen {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLDivElement, Event], fullscreen: Boolean): Anon_EventFullscreen = {
-    val __obj = js.Dynamic.literal(event = event, fullscreen = fullscreen)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], fullscreen = fullscreen.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventFullscreen]
   }

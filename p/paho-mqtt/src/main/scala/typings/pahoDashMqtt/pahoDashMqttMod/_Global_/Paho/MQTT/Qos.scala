@@ -19,3 +19,14 @@ import scala.scalajs.js.annotation._
 */
 trait Qos extends js.Object
 
+object Qos {
+  @scala.inline
+  def `0`: typings.pahoDashMqtt.pahoDashMqttNumbers.`0` = this.cast(0)
+  @scala.inline
+  def `1`: typings.pahoDashMqtt.pahoDashMqttNumbers.`1` = this.cast(1)
+  @scala.inline
+  def `2`: typings.pahoDashMqtt.pahoDashMqttNumbers.`2` = this.cast(2)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -34,11 +34,11 @@ object Order {
     notAfter: String = null,
     notBefore: String = null
   ): Order = {
-    val __obj = js.Dynamic.literal(authorizations = authorizations, finalize = finalize, identifiers = identifiers, status = status.asInstanceOf[js.Any])
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate)
-    if (expires != null) __obj.updateDynamic("expires")(expires)
-    if (notAfter != null) __obj.updateDynamic("notAfter")(notAfter)
-    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore)
+    val __obj = js.Dynamic.literal(authorizations = authorizations.asInstanceOf[js.Any], finalize = finalize.asInstanceOf[js.Any], identifiers = identifiers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (notAfter != null) __obj.updateDynamic("notAfter")(notAfter.asInstanceOf[js.Any])
+    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Order]
   }
 }

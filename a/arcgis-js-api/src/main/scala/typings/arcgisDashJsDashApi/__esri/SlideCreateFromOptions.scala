@@ -23,8 +23,8 @@ object SlideCreateFromOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     screenshot: SlideCreateFromOptionsScreenshot = null
   ): SlideCreateFromOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideCreateFromOptions]
   }
 }

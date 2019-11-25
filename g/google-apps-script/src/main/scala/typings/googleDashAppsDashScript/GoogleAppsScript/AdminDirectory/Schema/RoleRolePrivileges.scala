@@ -13,8 +13,8 @@ object RoleRolePrivileges {
   @scala.inline
   def apply(privilegeName: String = null, serviceId: String = null): RoleRolePrivileges = {
     val __obj = js.Dynamic.literal()
-    if (privilegeName != null) __obj.updateDynamic("privilegeName")(privilegeName)
-    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId)
+    if (privilegeName != null) __obj.updateDynamic("privilegeName")(privilegeName.asInstanceOf[js.Any])
+    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleRolePrivileges]
   }
 }

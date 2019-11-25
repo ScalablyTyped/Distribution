@@ -20,11 +20,11 @@ object DiffOptions {
     rootId: String = null,
     variables: js.Any = null
   ): DiffOptions = {
-    val __obj = js.Dynamic.literal(optimistic = optimistic, query = query)
-    if (previousResult != null) __obj.updateDynamic("previousResult")(previousResult)
-    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData)
-    if (rootId != null) __obj.updateDynamic("rootId")(rootId)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(optimistic = optimistic.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (previousResult != null) __obj.updateDynamic("previousResult")(previousResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData.asInstanceOf[js.Any])
+    if (rootId != null) __obj.updateDynamic("rootId")(rootId.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffOptions]
   }
 }

@@ -32,7 +32,7 @@ object WatchPlugin {
     val __obj = js.Dynamic.literal()
     if (apply != null) __obj.updateDynamic("apply")(js.Any.fromFunction1(apply))
     if (getUsageInfo != null) __obj.updateDynamic("getUsageInfo")(js.Any.fromFunction1(getUsageInfo))
-    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal)
+    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal.asInstanceOf[js.Any])
     if (onKey != null) __obj.updateDynamic("onKey")(js.Any.fromFunction1(onKey))
     if (run != null) __obj.updateDynamic("run")(js.Any.fromFunction2(run))
     __obj.asInstanceOf[WatchPlugin]

@@ -13,7 +13,7 @@ object ImageProperties {
   @scala.inline
   def apply(dominantColors: DominantColorsAnnotation = null): ImageProperties = {
     val __obj = js.Dynamic.literal()
-    if (dominantColors != null) __obj.updateDynamic("dominantColors")(dominantColors)
+    if (dominantColors != null) __obj.updateDynamic("dominantColors")(dominantColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProperties]
   }
 }

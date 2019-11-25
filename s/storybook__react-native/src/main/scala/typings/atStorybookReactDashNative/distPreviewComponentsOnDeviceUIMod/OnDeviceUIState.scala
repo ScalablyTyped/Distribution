@@ -14,7 +14,7 @@ trait OnDeviceUIState extends js.Object {
 object OnDeviceUIState {
   @scala.inline
   def apply(previewHeight: Double, previewWidth: Double, slideBetweenAnimation: Boolean, tabOpen: Double): OnDeviceUIState = {
-    val __obj = js.Dynamic.literal(previewHeight = previewHeight, previewWidth = previewWidth, slideBetweenAnimation = slideBetweenAnimation, tabOpen = tabOpen)
+    val __obj = js.Dynamic.literal(previewHeight = previewHeight.asInstanceOf[js.Any], previewWidth = previewWidth.asInstanceOf[js.Any], slideBetweenAnimation = slideBetweenAnimation.asInstanceOf[js.Any], tabOpen = tabOpen.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnDeviceUIState]
   }

@@ -12,7 +12,7 @@ object ChartZoomableMousewheel {
   @scala.inline
   def apply(lock: String = null): ChartZoomableMousewheel = {
     val __obj = js.Dynamic.literal()
-    if (lock != null) __obj.updateDynamic("lock")(lock)
+    if (lock != null) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartZoomableMousewheel]
   }
 }

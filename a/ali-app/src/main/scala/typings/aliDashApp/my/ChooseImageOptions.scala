@@ -25,7 +25,7 @@ object ChooseImageOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): ChooseImageOptions = {
-    val __obj = js.Dynamic.literal(count = count, sourceType = sourceType, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[ChooseImageOptions]

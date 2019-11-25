@@ -12,7 +12,7 @@ object GooglePrivacyDlpV2beta1CloudStorageOptions {
   @scala.inline
   def apply(fileSet: GooglePrivacyDlpV2beta1FileSet = null): GooglePrivacyDlpV2beta1CloudStorageOptions = {
     val __obj = js.Dynamic.literal()
-    if (fileSet != null) __obj.updateDynamic("fileSet")(fileSet)
+    if (fileSet != null) __obj.updateDynamic("fileSet")(fileSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CloudStorageOptions]
   }
 }

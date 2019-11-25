@@ -36,12 +36,12 @@ object Fields {
     url: String = null
   ): Fields = {
     val __obj = js.Dynamic.literal()
-    if (linkAttribute != null) __obj.updateDynamic("linkAttribute")(linkAttribute)
-    if (targetAttribute != null) __obj.updateDynamic("targetAttribute")(targetAttribute)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (thumbnailText != null) __obj.updateDynamic("thumbnailText")(thumbnailText)
-    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (linkAttribute != null) __obj.updateDynamic("linkAttribute")(linkAttribute.asInstanceOf[js.Any])
+    if (targetAttribute != null) __obj.updateDynamic("targetAttribute")(targetAttribute.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (thumbnailText != null) __obj.updateDynamic("thumbnailText")(thumbnailText.asInstanceOf[js.Any])
+    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
 }

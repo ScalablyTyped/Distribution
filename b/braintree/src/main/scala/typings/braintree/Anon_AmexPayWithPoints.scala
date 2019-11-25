@@ -17,7 +17,7 @@ object Anon_AmexPayWithPoints {
     CardTypeIndicators: Anon_Commercial,
     Dispute: Anon_Chargeback
   ): Anon_AmexPayWithPoints = {
-    val __obj = js.Dynamic.literal(AmexPayWithPoints = AmexPayWithPoints, CardTypeIndicators = CardTypeIndicators, Dispute = Dispute)
+    val __obj = js.Dynamic.literal(AmexPayWithPoints = AmexPayWithPoints.asInstanceOf[js.Any], CardTypeIndicators = CardTypeIndicators.asInstanceOf[js.Any], Dispute = Dispute.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AmexPayWithPoints]
   }

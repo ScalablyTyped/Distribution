@@ -13,7 +13,7 @@ trait Anon_BorderRadius extends js.Object {
 object Anon_BorderRadius {
   @scala.inline
   def apply(borderRadius: Double, height: Double, width: Double): Anon_BorderRadius = {
-    val __obj = js.Dynamic.literal(borderRadius = borderRadius, height = height, width = width)
+    val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderRadius]
   }

@@ -81,7 +81,7 @@ object ablyStrings {
   sealed trait enter extends js.Object
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed_ extends js.Object
   
   @js.native
   sealed trait history extends capabilityOp
@@ -207,7 +207,7 @@ object ablyStrings {
   @scala.inline
   def enter: enter = "enter".asInstanceOf[enter]
   @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  def failed_ : failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
   def history: history = "history".asInstanceOf[history]
   @scala.inline

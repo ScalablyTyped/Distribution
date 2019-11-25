@@ -17,7 +17,7 @@ object IGridRow {
   @scala.inline
   def apply(allowCellFocus: js.UndefOr[Boolean] = js.undefined): IGridRow = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCellFocus)) __obj.updateDynamic("allowCellFocus")(allowCellFocus)
+    if (!js.isUndefined(allowCellFocus)) __obj.updateDynamic("allowCellFocus")(allowCellFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridRow]
   }
 }

@@ -14,8 +14,8 @@ trait Sha1AsBytesOptions extends Sha1Options {
 object Sha1AsBytesOptions {
   @scala.inline
   def apply(asBytes: `true`, asString: `false` = null): Sha1AsBytesOptions = {
-    val __obj = js.Dynamic.literal(asBytes = asBytes)
-    if (asString != null) __obj.updateDynamic("asString")(asString)
+    val __obj = js.Dynamic.literal(asBytes = asBytes.asInstanceOf[js.Any])
+    if (asString != null) __obj.updateDynamic("asString")(asString.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sha1AsBytesOptions]
   }
 }

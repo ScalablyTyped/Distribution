@@ -30,11 +30,11 @@ object RowStatus {
     rowNumber: Int | Double = null
   ): RowStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(changed)) __obj.updateDynamic("changed")(changed)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (entityName != null) __obj.updateDynamic("entityName")(entityName)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (!js.isUndefined(persisted)) __obj.updateDynamic("persisted")(persisted)
+    if (!js.isUndefined(changed)) __obj.updateDynamic("changed")(changed.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (entityName != null) __obj.updateDynamic("entityName")(entityName.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (!js.isUndefined(persisted)) __obj.updateDynamic("persisted")(persisted.asInstanceOf[js.Any])
     if (rowNumber != null) __obj.updateDynamic("rowNumber")(rowNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowStatus]
   }

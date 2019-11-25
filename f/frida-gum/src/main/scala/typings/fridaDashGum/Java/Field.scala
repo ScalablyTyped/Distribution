@@ -26,7 +26,7 @@ trait Field extends js.Object {
 object Field {
   @scala.inline
   def apply(fieldReturnType: Type, fieldType: FieldType, holder: Wrapper, value: js.Any): Field = {
-    val __obj = js.Dynamic.literal(fieldReturnType = fieldReturnType, fieldType = fieldType, holder = holder, value = value)
+    val __obj = js.Dynamic.literal(fieldReturnType = fieldReturnType.asInstanceOf[js.Any], fieldType = fieldType.asInstanceOf[js.Any], holder = holder.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Field]
   }

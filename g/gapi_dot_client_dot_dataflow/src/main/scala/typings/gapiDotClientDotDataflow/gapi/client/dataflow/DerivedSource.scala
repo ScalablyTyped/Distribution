@@ -15,8 +15,8 @@ object DerivedSource {
   @scala.inline
   def apply(derivationMode: String = null, source: Source = null): DerivedSource = {
     val __obj = js.Dynamic.literal()
-    if (derivationMode != null) __obj.updateDynamic("derivationMode")(derivationMode)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (derivationMode != null) __obj.updateDynamic("derivationMode")(derivationMode.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DerivedSource]
   }
 }

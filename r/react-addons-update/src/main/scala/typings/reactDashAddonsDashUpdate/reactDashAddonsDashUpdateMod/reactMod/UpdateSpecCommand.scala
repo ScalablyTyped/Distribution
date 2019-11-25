@@ -18,8 +18,8 @@ object UpdateSpecCommand {
   def apply($apply: /* value */ js.Any => _ = null, $merge: js.Object = null, $set: js.Any = null): UpdateSpecCommand = {
     val __obj = js.Dynamic.literal()
     if ($apply != null) __obj.updateDynamic("$apply")(js.Any.fromFunction1($apply))
-    if ($merge != null) __obj.updateDynamic("$merge")($merge)
-    if ($set != null) __obj.updateDynamic("$set")($set)
+    if ($merge != null) __obj.updateDynamic("$merge")($merge.asInstanceOf[js.Any])
+    if ($set != null) __obj.updateDynamic("$set")($set.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSpecCommand]
   }
 }

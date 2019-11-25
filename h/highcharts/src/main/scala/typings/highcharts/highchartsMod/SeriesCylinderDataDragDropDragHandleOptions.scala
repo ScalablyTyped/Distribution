@@ -52,12 +52,12 @@ object SeriesCylinderDataDragDropDragHandleOptions {
     zIndex: Int | Double = null
   ): SeriesCylinderDataDragDropDragHandleOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (pathFormatter != null) __obj.updateDynamic("pathFormatter")(pathFormatter)
+    if (pathFormatter != null) __obj.updateDynamic("pathFormatter")(pathFormatter.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesCylinderDataDragDropDragHandleOptions]
   }

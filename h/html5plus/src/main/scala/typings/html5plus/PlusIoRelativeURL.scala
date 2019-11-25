@@ -46,10 +46,10 @@ object PlusIoRelativeURL {
   @scala.inline
   def apply(_doc: String = null, _documents: String = null, _downloads: String = null, _www: String = null): PlusIoRelativeURL = {
     val __obj = js.Dynamic.literal()
-    if (_doc != null) __obj.updateDynamic("_doc")(_doc)
-    if (_documents != null) __obj.updateDynamic("_documents")(_documents)
-    if (_downloads != null) __obj.updateDynamic("_downloads")(_downloads)
-    if (_www != null) __obj.updateDynamic("_www")(_www)
+    if (_doc != null) __obj.updateDynamic("_doc")(_doc.asInstanceOf[js.Any])
+    if (_documents != null) __obj.updateDynamic("_documents")(_documents.asInstanceOf[js.Any])
+    if (_downloads != null) __obj.updateDynamic("_downloads")(_downloads.asInstanceOf[js.Any])
+    if (_www != null) __obj.updateDynamic("_www")(_www.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusIoRelativeURL]
   }
 }

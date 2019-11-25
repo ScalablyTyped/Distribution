@@ -26,13 +26,13 @@ object Anon_Giftwrap {
     tax: String = null
   ): Anon_Giftwrap = {
     val __obj = js.Dynamic.literal()
-    if (gift_wrap != null) __obj.updateDynamic("gift_wrap")(gift_wrap)
-    if (handling_fee != null) __obj.updateDynamic("handling_fee")(handling_fee)
-    if (insurance != null) __obj.updateDynamic("insurance")(insurance)
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
-    if (shipping_discout != null) __obj.updateDynamic("shipping_discout")(shipping_discout)
-    if (subtotal != null) __obj.updateDynamic("subtotal")(subtotal)
-    if (tax != null) __obj.updateDynamic("tax")(tax)
+    if (gift_wrap != null) __obj.updateDynamic("gift_wrap")(gift_wrap.asInstanceOf[js.Any])
+    if (handling_fee != null) __obj.updateDynamic("handling_fee")(handling_fee.asInstanceOf[js.Any])
+    if (insurance != null) __obj.updateDynamic("insurance")(insurance.asInstanceOf[js.Any])
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
+    if (shipping_discout != null) __obj.updateDynamic("shipping_discout")(shipping_discout.asInstanceOf[js.Any])
+    if (subtotal != null) __obj.updateDynamic("subtotal")(subtotal.asInstanceOf[js.Any])
+    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Giftwrap]
   }
 }

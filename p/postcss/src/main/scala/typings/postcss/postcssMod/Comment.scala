@@ -1,6 +1,5 @@
 package typings.postcss.postcssMod
 
-import typings.postcss.postcssStrings.comment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,7 @@ trait Comment
     * The comment's text.
     */
   var text: String = js.native
-  var `type`: comment = js.native
+  var `type`: typings.postcss.postcssStrings.comment = js.native
 }
 
 @JSImport("postcss", "comment")

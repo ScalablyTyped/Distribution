@@ -27,11 +27,11 @@ object GooglePrivacyDlpV2beta1Finding {
     quote: String = null
   ): GooglePrivacyDlpV2beta1Finding = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (infoType != null) __obj.updateDynamic("infoType")(infoType)
-    if (likelihood != null) __obj.updateDynamic("likelihood")(likelihood)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (quote != null) __obj.updateDynamic("quote")(quote)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
+    if (likelihood != null) __obj.updateDynamic("likelihood")(likelihood.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Finding]
   }
 }

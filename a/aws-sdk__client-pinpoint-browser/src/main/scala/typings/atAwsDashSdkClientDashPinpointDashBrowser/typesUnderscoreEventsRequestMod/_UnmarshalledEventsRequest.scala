@@ -18,7 +18,7 @@ object _UnmarshalledEventsRequest {
   @scala.inline
   def apply(BatchItem: StringDictionary[_UnmarshalledEventsBatch] = null): _UnmarshalledEventsRequest = {
     val __obj = js.Dynamic.literal()
-    if (BatchItem != null) __obj.updateDynamic("BatchItem")(BatchItem)
+    if (BatchItem != null) __obj.updateDynamic("BatchItem")(BatchItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledEventsRequest]
   }
 }

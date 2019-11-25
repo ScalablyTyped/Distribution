@@ -51,11 +51,11 @@ object BuildReporterBuild {
     releaseStage: String = null,
     sourceControl: Anon_Bitbucket = null
   ): BuildReporterBuild = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey, appVersion = appVersion)
-    if (!js.isUndefined(autoAssignRelease)) __obj.updateDynamic("autoAssignRelease")(autoAssignRelease)
-    if (builderName != null) __obj.updateDynamic("builderName")(builderName)
-    if (releaseStage != null) __obj.updateDynamic("releaseStage")(releaseStage)
-    if (sourceControl != null) __obj.updateDynamic("sourceControl")(sourceControl)
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appVersion = appVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAssignRelease)) __obj.updateDynamic("autoAssignRelease")(autoAssignRelease.asInstanceOf[js.Any])
+    if (builderName != null) __obj.updateDynamic("builderName")(builderName.asInstanceOf[js.Any])
+    if (releaseStage != null) __obj.updateDynamic("releaseStage")(releaseStage.asInstanceOf[js.Any])
+    if (sourceControl != null) __obj.updateDynamic("sourceControl")(sourceControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildReporterBuild]
   }
 }

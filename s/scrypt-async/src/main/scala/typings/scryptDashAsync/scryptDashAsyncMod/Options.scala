@@ -25,9 +25,9 @@ object Options {
     interruptStep: Int | Double = null,
     logN: Int | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(dkLen = dkLen, p = p, r = r)
+    val __obj = js.Dynamic.literal(dkLen = dkLen.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     if (N != null) __obj.updateDynamic("N")(N.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (interruptStep != null) __obj.updateDynamic("interruptStep")(interruptStep.asInstanceOf[js.Any])
     if (logN != null) __obj.updateDynamic("logN")(logN.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

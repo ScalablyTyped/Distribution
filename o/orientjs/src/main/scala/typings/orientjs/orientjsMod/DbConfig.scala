@@ -21,11 +21,11 @@ object DbConfig {
     `type`: String = null,
     username: String = null
   ): DbConfig = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (storage != null) __obj.updateDynamic("storage")(storage)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[DbConfig]
   }
 }

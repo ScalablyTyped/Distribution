@@ -24,7 +24,7 @@ object Tag {
     posts: Model[typings.hexo.hexoMod.Locals.Post],
     slug: String
   ): Tag = {
-    val __obj = js.Dynamic.literal(length = length, name = name, path = path, permalink = permalink, posts = posts, slug = slug)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], permalink = permalink.asInstanceOf[js.Any], posts = posts.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tag]
   }

@@ -27,9 +27,9 @@ object _ClientCapabilities {
     workspace: WorkspaceClientCapabilities = null
   ): _ClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (experimental != null) __obj.updateDynamic("experimental")(experimental)
-    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument)
-    if (workspace != null) __obj.updateDynamic("workspace")(workspace)
+    if (experimental != null) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument.asInstanceOf[js.Any])
+    if (workspace != null) __obj.updateDynamic("workspace")(workspace.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ClientCapabilities]
   }
 }

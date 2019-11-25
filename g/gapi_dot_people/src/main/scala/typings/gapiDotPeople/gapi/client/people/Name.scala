@@ -39,7 +39,7 @@ object Name {
     phoneticHonorificSuffix: String,
     phoneticMiddleName: String
   ): Name = {
-    val __obj = js.Dynamic.literal(displayName = displayName, displayNameLastFirst = displayNameLastFirst, familyName = familyName, givenName = givenName, honorificPrefix = honorificPrefix, honorificSuffix = honorificSuffix, metadata = metadata, middleName = middleName, phoneticFamilyName = phoneticFamilyName, phoneticFullName = phoneticFullName, phoneticGivenName = phoneticGivenName, phoneticHonorificPrefix = phoneticHonorificPrefix, phoneticHonorificSuffix = phoneticHonorificSuffix, phoneticMiddleName = phoneticMiddleName)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], displayNameLastFirst = displayNameLastFirst.asInstanceOf[js.Any], familyName = familyName.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any], honorificPrefix = honorificPrefix.asInstanceOf[js.Any], honorificSuffix = honorificSuffix.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], middleName = middleName.asInstanceOf[js.Any], phoneticFamilyName = phoneticFamilyName.asInstanceOf[js.Any], phoneticFullName = phoneticFullName.asInstanceOf[js.Any], phoneticGivenName = phoneticGivenName.asInstanceOf[js.Any], phoneticHonorificPrefix = phoneticHonorificPrefix.asInstanceOf[js.Any], phoneticHonorificSuffix = phoneticHonorificSuffix.asInstanceOf[js.Any], phoneticMiddleName = phoneticMiddleName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Name]
   }

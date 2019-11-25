@@ -29,12 +29,12 @@ object CreateIndexOptions {
     where: String = null
   ): CreateIndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(concurrently)) __obj.updateDynamic("concurrently")(concurrently)
+    if (!js.isUndefined(concurrently)) __obj.updateDynamic("concurrently")(concurrently.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (opclass != null) __obj.updateDynamic("opclass")(opclass)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (opclass != null) __obj.updateDynamic("opclass")(opclass.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIndexOptions]
   }
 }

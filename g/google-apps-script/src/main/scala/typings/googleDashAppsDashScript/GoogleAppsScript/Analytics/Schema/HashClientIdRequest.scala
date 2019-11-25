@@ -14,9 +14,9 @@ object HashClientIdRequest {
   @scala.inline
   def apply(clientId: String = null, kind: String = null, webPropertyId: String = null): HashClientIdRequest = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashClientIdRequest]
   }
 }

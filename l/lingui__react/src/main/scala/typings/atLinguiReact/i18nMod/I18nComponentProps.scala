@@ -20,8 +20,8 @@ object I18nComponentProps {
     withHash: js.UndefOr[Boolean] = js.undefined
   ): I18nComponentProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
-    if (!js.isUndefined(withHash)) __obj.updateDynamic("withHash")(withHash)
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (!js.isUndefined(withHash)) __obj.updateDynamic("withHash")(withHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[I18nComponentProps]
   }
 }

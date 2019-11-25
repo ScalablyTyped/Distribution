@@ -24,9 +24,9 @@ object StoreLayout {
   @scala.inline
   def apply(homepageId: String = null, kind: String = null, storeLayoutType: String = null): StoreLayout = {
     val __obj = js.Dynamic.literal()
-    if (homepageId != null) __obj.updateDynamic("homepageId")(homepageId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (storeLayoutType != null) __obj.updateDynamic("storeLayoutType")(storeLayoutType)
+    if (homepageId != null) __obj.updateDynamic("homepageId")(homepageId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (storeLayoutType != null) __obj.updateDynamic("storeLayoutType")(storeLayoutType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreLayout]
   }
 }

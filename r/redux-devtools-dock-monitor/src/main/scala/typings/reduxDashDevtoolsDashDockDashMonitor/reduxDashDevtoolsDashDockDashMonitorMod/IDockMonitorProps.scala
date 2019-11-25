@@ -66,13 +66,13 @@ object IDockMonitorProps {
     defaultSize: Int | Double = null,
     fluid: js.UndefOr[Boolean] = js.undefined
   ): IDockMonitorProps = {
-    val __obj = js.Dynamic.literal(changePositionKey = changePositionKey, toggleVisibilityKey = toggleVisibilityKey)
-    if (changeMonitorKey != null) __obj.updateDynamic("changeMonitorKey")(changeMonitorKey)
+    val __obj = js.Dynamic.literal(changePositionKey = changePositionKey.asInstanceOf[js.Any], toggleVisibilityKey = toggleVisibilityKey.asInstanceOf[js.Any])
+    if (changeMonitorKey != null) __obj.updateDynamic("changeMonitorKey")(changeMonitorKey.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultIsVisible)) __obj.updateDynamic("defaultIsVisible")(defaultIsVisible)
-    if (defaultPosition != null) __obj.updateDynamic("defaultPosition")(defaultPosition)
+    if (!js.isUndefined(defaultIsVisible)) __obj.updateDynamic("defaultIsVisible")(defaultIsVisible.asInstanceOf[js.Any])
+    if (defaultPosition != null) __obj.updateDynamic("defaultPosition")(defaultPosition.asInstanceOf[js.Any])
     if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDockMonitorProps]
   }
 }

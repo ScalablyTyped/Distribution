@@ -97,21 +97,21 @@ object IgSlider {
     value: Int | Double = null
   ): IgSlider = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (bookmarkClick != null) __obj.updateDynamic("bookmarkClick")(js.Any.fromFunction2(bookmarkClick))
     if (bookmarkHit != null) __obj.updateDynamic("bookmarkHit")(js.Any.fromFunction2(bookmarkHit))
-    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks)
+    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (!js.isUndefined(showBookmarkTitle)) __obj.updateDynamic("showBookmarkTitle")(showBookmarkTitle)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBookmarkTitle)) __obj.updateDynamic("showBookmarkTitle")(showBookmarkTitle.asInstanceOf[js.Any])
     if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction2(slide))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
-    if (!js.isUndefined(syncHandleWithBookmark)) __obj.updateDynamic("syncHandleWithBookmark")(syncHandleWithBookmark)
+    if (!js.isUndefined(syncHandleWithBookmark)) __obj.updateDynamic("syncHandleWithBookmark")(syncHandleWithBookmark.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSlider]
   }

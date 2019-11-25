@@ -19,9 +19,9 @@ object Options {
     altitude: Int | Double = null,
     dashArray: js.Array[Double] = null
   ): Options = {
-    val __obj = js.Dynamic.literal(color = color, path = path)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray)
+    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

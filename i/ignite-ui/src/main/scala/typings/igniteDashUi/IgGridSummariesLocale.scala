@@ -57,13 +57,13 @@ object IgGridSummariesLocale {
     summariesHeaderButtonTooltip: String = null
   ): IgGridSummariesLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dialogButtonCancelText != null) __obj.updateDynamic("dialogButtonCancelText")(dialogButtonCancelText)
-    if (dialogButtonOKText != null) __obj.updateDynamic("dialogButtonOKText")(dialogButtonOKText)
-    if (emptyCellText != null) __obj.updateDynamic("emptyCellText")(emptyCellText)
-    if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText)
-    if (featureChooserTextHide != null) __obj.updateDynamic("featureChooserTextHide")(featureChooserTextHide)
-    if (summariesHeaderButtonTooltip != null) __obj.updateDynamic("summariesHeaderButtonTooltip")(summariesHeaderButtonTooltip)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dialogButtonCancelText != null) __obj.updateDynamic("dialogButtonCancelText")(dialogButtonCancelText.asInstanceOf[js.Any])
+    if (dialogButtonOKText != null) __obj.updateDynamic("dialogButtonOKText")(dialogButtonOKText.asInstanceOf[js.Any])
+    if (emptyCellText != null) __obj.updateDynamic("emptyCellText")(emptyCellText.asInstanceOf[js.Any])
+    if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText.asInstanceOf[js.Any])
+    if (featureChooserTextHide != null) __obj.updateDynamic("featureChooserTextHide")(featureChooserTextHide.asInstanceOf[js.Any])
+    if (summariesHeaderButtonTooltip != null) __obj.updateDynamic("summariesHeaderButtonTooltip")(summariesHeaderButtonTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridSummariesLocale]
   }
 }

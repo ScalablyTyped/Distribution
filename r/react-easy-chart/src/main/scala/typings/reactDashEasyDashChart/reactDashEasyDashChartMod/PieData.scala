@@ -13,8 +13,8 @@ trait PieData extends js.Object {
 object PieData {
   @scala.inline
   def apply(key: String, value: Double, color: String = null): PieData = {
-    val __obj = js.Dynamic.literal(key = key, value = value)
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieData]
   }
 }

@@ -14,9 +14,9 @@ object Feature {
   @scala.inline
   def apply(etags: String = null, kind: String = null, name: String = null): Feature = {
     val __obj = js.Dynamic.literal()
-    if (etags != null) __obj.updateDynamic("etags")(etags)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (etags != null) __obj.updateDynamic("etags")(etags.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feature]
   }
 }

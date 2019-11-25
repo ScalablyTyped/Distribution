@@ -25,9 +25,9 @@ object SecuritySchemeOauth2Application {
     `type`: basic | apiKey | oauth2,
     description: String = null
   ): SecuritySchemeOauth2Application = {
-    val __obj = js.Dynamic.literal(flow = flow, scopes = scopes, tokenUrl = tokenUrl)
+    val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecuritySchemeOauth2Application]
   }
 }

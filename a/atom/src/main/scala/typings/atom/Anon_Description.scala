@@ -22,9 +22,9 @@ object Anon_Description {
     hiddenInCommandPalette: js.UndefOr[Boolean] = js.undefined
   ): Anon_Description[TargetType] = {
     val __obj = js.Dynamic.literal(didDispatch = js.Any.fromFunction1(didDispatch))
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(hiddenInCommandPalette)) __obj.updateDynamic("hiddenInCommandPalette")(hiddenInCommandPalette)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(hiddenInCommandPalette)) __obj.updateDynamic("hiddenInCommandPalette")(hiddenInCommandPalette.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Description[TargetType]]
   }
 }

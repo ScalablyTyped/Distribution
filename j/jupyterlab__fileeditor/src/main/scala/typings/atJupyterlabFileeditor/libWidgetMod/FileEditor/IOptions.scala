@@ -33,7 +33,7 @@ object IOptions {
     factory: /* options */ typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions => IEditor,
     mimeTypeService: IEditorMimeTypeService
   ): IOptions = {
-    val __obj = js.Dynamic.literal(context = context, factory = js.Any.fromFunction1(factory), mimeTypeService = mimeTypeService)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], factory = js.Any.fromFunction1(factory), mimeTypeService = mimeTypeService.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

@@ -13,7 +13,7 @@ trait NextPage extends js.Object {
 object NextPage {
   @scala.inline
   def apply(offset: String, path: String, uri: String): NextPage = {
-    val __obj = js.Dynamic.literal(offset = offset, path = path, uri = uri)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NextPage]
   }

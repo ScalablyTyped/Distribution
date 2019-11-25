@@ -4,7 +4,7 @@ import typings.atOracleOraclejet.Anon_AutoBillionCenter
 import typings.atOracleOraclejet.Anon_AutoBorderColor
 import typings.atOracleOraclejet.Anon_AutoCenter
 import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.all
 import typings.atOracleOraclejet.atOracleOraclejetStrings.angleExtent
@@ -45,8 +45,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.orientation
 import typings.atOracleOraclejet.atOracleOraclejetStrings.orientationChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.plotArea
 import typings.atOracleOraclejet.atOracleOraclejetStrings.plotAreaChanged
-import typings.atOracleOraclejet.atOracleOraclejetStrings.readonly
-import typings.atOracleOraclejet.atOracleOraclejetStrings.readonlyChanged
+import typings.atOracleOraclejet.atOracleOraclejetStrings.readonlyChanged_
+import typings.atOracleOraclejet.atOracleOraclejetStrings.readonly_
 import typings.atOracleOraclejet.atOracleOraclejetStrings.referenceLines
 import typings.atOracleOraclejet.atOracleOraclejetStrings.referenceLinesChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.startAngle
@@ -119,14 +119,14 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var onSvgClassNameChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onSvgStyleChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any
     ], 
     _
   ]) | Null = js.native
   var onThresholdDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[currentOnly | all | onIndicator], _]) | Null = js.native
   var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
   var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142], 
+    /* event */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792], 
     _
   ]) | Null = js.native
   var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
@@ -142,7 +142,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var svgStyle: js.Object = js.native
   var thresholdDisplay: currentOnly | all | onIndicator = js.native
   var thresholds: js.Array[Threshold] = js.native
-  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142 = js.native
+  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792 = js.native
   val transientValue: Double | Null = js.native
   var value: Double | Null = js.native
   var visualEffects: none | auto = js.native
@@ -186,7 +186,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any
       ], 
       _
     ]
@@ -196,7 +196,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any
       ], 
       _
     ],
@@ -381,12 +381,12 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
-    `type`: readonlyChanged,
+    `type`: readonlyChanged_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
-    `type`: readonlyChanged,
+    `type`: readonlyChanged_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
     useCapture: Boolean
   ): Unit = js.native
@@ -450,7 +450,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142], 
+      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792], 
       _
     ]
   ): Unit = js.native
@@ -459,7 +459,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142], 
+      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792], 
       _
     ],
     useCapture: Boolean
@@ -520,7 +520,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("getProperty")
   def getProperty_plotArea(property: plotArea): Anon_AutoBorderColor = js.native
   @JSName("getProperty")
-  def getProperty_readonly(property: readonly): Boolean = js.native
+  def getProperty_readonly(property: readonly_): Boolean = js.native
   @JSName("getProperty")
   def getProperty_referenceLines(property: referenceLines): js.Array[ReferenceLine] = js.native
   @JSName("getProperty")
@@ -530,13 +530,13 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("getProperty")
   def getProperty_svgClassName(property: svgClassName): String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: svgStyle): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any = js.native
+  def getProperty_svgStyle(property: svgStyle): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGauge['svgStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_thresholdDisplay(property: thresholdDisplay): currentOnly | all | onIndicator = js.native
   @JSName("getProperty")
   def getProperty_thresholds(property: thresholds): js.Array[Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142 = js.native
+  def getProperty_tooltip(property: tooltip): Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792 = js.native
   @JSName("getProperty")
   def getProperty_transientValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.transientValue): Double | Null = js.native
   @JSName("getProperty")
@@ -583,7 +583,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("setProperty")
   def setProperty_plotArea(property: plotArea, value: Anon_AutoBorderColor): Unit = js.native
   @JSName("setProperty")
-  def setProperty_readonly(property: readonly, value: Boolean): Unit = js.native
+  def setProperty_readonly(property: readonly_, value: Boolean): Unit = js.native
   @JSName("setProperty")
   def setProperty_referenceLines(property: referenceLines, value: js.Array[ReferenceLine]): Unit = js.native
   @JSName("setProperty")
@@ -599,7 +599,10 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("setProperty")
   def setProperty_thresholds(property: thresholds, value: js.Array[Threshold]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_295264142): Unit = js.native
+  def setProperty_tooltip(
+    property: tooltip,
+    value: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792
+  ): Unit = js.native
   @JSName("setProperty")
   def setProperty_transientValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.transientValue): Unit = js.native
   @JSName("setProperty")

@@ -30,11 +30,11 @@ object CarouselIndicatorsProps {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     cssModule: CSSModule = null
   ): CarouselIndicatorsProps = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex, items = items, onClickHandler = js.Any.fromFunction1(onClickHandler))
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], onClickHandler = js.Any.fromFunction1(onClickHandler))
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselIndicatorsProps]
   }
 }

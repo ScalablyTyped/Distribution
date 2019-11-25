@@ -22,11 +22,11 @@ object Anon_BufferUsageReportingInterval {
     tracingCategories: js.UndefOr[Boolean] = js.undefined
   ): Anon_BufferUsageReportingInterval = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bufferUsageReportingInterval)) __obj.updateDynamic("bufferUsageReportingInterval")(bufferUsageReportingInterval)
-    if (!js.isUndefined(enableNetwork)) __obj.updateDynamic("enableNetwork")(enableNetwork)
-    if (!js.isUndefined(enablePage)) __obj.updateDynamic("enablePage")(enablePage)
-    if (!js.isUndefined(enableTimeline)) __obj.updateDynamic("enableTimeline")(enableTimeline)
-    if (!js.isUndefined(tracingCategories)) __obj.updateDynamic("tracingCategories")(tracingCategories)
+    if (!js.isUndefined(bufferUsageReportingInterval)) __obj.updateDynamic("bufferUsageReportingInterval")(bufferUsageReportingInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNetwork)) __obj.updateDynamic("enableNetwork")(enableNetwork.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePage)) __obj.updateDynamic("enablePage")(enablePage.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTimeline)) __obj.updateDynamic("enableTimeline")(enableTimeline.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracingCategories)) __obj.updateDynamic("tracingCategories")(tracingCategories.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BufferUsageReportingInterval]
   }
 }

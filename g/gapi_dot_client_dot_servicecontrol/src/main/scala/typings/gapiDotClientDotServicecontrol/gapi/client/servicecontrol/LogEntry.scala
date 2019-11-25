@@ -59,14 +59,14 @@ object LogEntry {
     timestamp: String = null
   ): LogEntry = {
     val __obj = js.Dynamic.literal()
-    if (insertId != null) __obj.updateDynamic("insertId")(insertId)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (protoPayload != null) __obj.updateDynamic("protoPayload")(protoPayload)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (structPayload != null) __obj.updateDynamic("structPayload")(structPayload)
-    if (textPayload != null) __obj.updateDynamic("textPayload")(textPayload)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (insertId != null) __obj.updateDynamic("insertId")(insertId.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (protoPayload != null) __obj.updateDynamic("protoPayload")(protoPayload.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (structPayload != null) __obj.updateDynamic("structPayload")(structPayload.asInstanceOf[js.Any])
+    if (textPayload != null) __obj.updateDynamic("textPayload")(textPayload.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogEntry]
   }
 }

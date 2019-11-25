@@ -23,7 +23,7 @@ object TypeAction {
     hoverOpacity: Double,
     selected: String
   ): TypeAction = {
-    val __obj = js.Dynamic.literal(active = active, disabled = disabled, disabledBackground = disabledBackground, hover = hover, hoverOpacity = hoverOpacity, selected = selected)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], disabledBackground = disabledBackground.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], hoverOpacity = hoverOpacity.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeAction]
   }

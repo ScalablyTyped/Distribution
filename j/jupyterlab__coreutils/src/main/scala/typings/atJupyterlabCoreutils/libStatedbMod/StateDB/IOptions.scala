@@ -28,8 +28,8 @@ object IOptions {
     transform: js.Promise[DataTransform] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (connector != null) __obj.updateDynamic("connector")(connector)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

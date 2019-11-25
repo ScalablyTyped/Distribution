@@ -12,7 +12,7 @@ object CommsNotifications {
   @scala.inline
   def apply(value: js.Array[CommsNotification] = null): CommsNotifications = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommsNotifications]
   }
 }

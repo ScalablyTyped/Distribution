@@ -13,7 +13,7 @@ object Anon_Timer {
   @scala.inline
   def apply(timer: default = null): Anon_Timer = {
     val __obj = js.Dynamic.literal()
-    if (timer != null) __obj.updateDynamic("timer")(timer)
+    if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Timer]
   }
 }

@@ -24,8 +24,8 @@ object ExpectationResult {
     trace: Trace,
     `type`: String
   ): ExpectationResult = {
-    val __obj = js.Dynamic.literal(actual = actual, expected = expected, matcherName = matcherName, message = message, passed = js.Any.fromFunction0(passed), trace = trace)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], matcherName = matcherName.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], passed = js.Any.fromFunction0(passed), trace = trace.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpectationResult]
   }
 }

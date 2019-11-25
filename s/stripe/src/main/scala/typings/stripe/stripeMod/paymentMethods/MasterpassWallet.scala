@@ -13,8 +13,8 @@ trait MasterpassWallet extends CardWallet {
 object MasterpassWallet {
   @scala.inline
   def apply(masterpass: WalletData, `type`: masterpass): MasterpassWallet = {
-    val __obj = js.Dynamic.literal(masterpass = masterpass)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(masterpass = masterpass.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasterpassWallet]
   }
 }

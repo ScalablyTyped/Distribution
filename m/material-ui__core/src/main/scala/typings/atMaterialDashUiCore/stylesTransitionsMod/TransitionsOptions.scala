@@ -30,8 +30,8 @@ object TransitionsOptions {
   ): TransitionsOptions = {
     val __obj = js.Dynamic.literal()
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (getAutoHeightDuration != null) __obj.updateDynamic("getAutoHeightDuration")(js.Any.fromFunction1(getAutoHeightDuration))
     __obj.asInstanceOf[TransitionsOptions]
   }

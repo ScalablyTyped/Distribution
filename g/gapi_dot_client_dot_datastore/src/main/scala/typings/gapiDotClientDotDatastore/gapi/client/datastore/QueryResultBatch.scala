@@ -46,13 +46,13 @@ object QueryResultBatch {
     snapshotVersion: String = null
   ): QueryResultBatch = {
     val __obj = js.Dynamic.literal()
-    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor)
-    if (entityResultType != null) __obj.updateDynamic("entityResultType")(entityResultType)
-    if (entityResults != null) __obj.updateDynamic("entityResults")(entityResults)
-    if (moreResults != null) __obj.updateDynamic("moreResults")(moreResults)
-    if (skippedCursor != null) __obj.updateDynamic("skippedCursor")(skippedCursor)
+    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor.asInstanceOf[js.Any])
+    if (entityResultType != null) __obj.updateDynamic("entityResultType")(entityResultType.asInstanceOf[js.Any])
+    if (entityResults != null) __obj.updateDynamic("entityResults")(entityResults.asInstanceOf[js.Any])
+    if (moreResults != null) __obj.updateDynamic("moreResults")(moreResults.asInstanceOf[js.Any])
+    if (skippedCursor != null) __obj.updateDynamic("skippedCursor")(skippedCursor.asInstanceOf[js.Any])
     if (skippedResults != null) __obj.updateDynamic("skippedResults")(skippedResults.asInstanceOf[js.Any])
-    if (snapshotVersion != null) __obj.updateDynamic("snapshotVersion")(snapshotVersion)
+    if (snapshotVersion != null) __obj.updateDynamic("snapshotVersion")(snapshotVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResultBatch]
   }
 }

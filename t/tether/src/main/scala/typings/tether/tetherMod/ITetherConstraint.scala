@@ -23,10 +23,10 @@ object ITetherConstraint {
     to: String | HTMLElement | js.Array[Double] = null
   ): ITetherConstraint = {
     val __obj = js.Dynamic.literal()
-    if (attachment != null) __obj.updateDynamic("attachment")(attachment)
-    if (outOfBoundsClass != null) __obj.updateDynamic("outOfBoundsClass")(outOfBoundsClass)
+    if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
+    if (outOfBoundsClass != null) __obj.updateDynamic("outOfBoundsClass")(outOfBoundsClass.asInstanceOf[js.Any])
     if (pin != null) __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
-    if (pinnedClass != null) __obj.updateDynamic("pinnedClass")(pinnedClass)
+    if (pinnedClass != null) __obj.updateDynamic("pinnedClass")(pinnedClass.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITetherConstraint]
   }

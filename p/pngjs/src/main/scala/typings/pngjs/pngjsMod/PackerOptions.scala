@@ -34,16 +34,16 @@ object PackerOptions {
     inputHasAlpha: js.UndefOr[Boolean] = js.undefined
   ): PackerOptions = {
     val __obj = js.Dynamic.literal()
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
-    if (bitDepth != null) __obj.updateDynamic("bitDepth")(bitDepth)
-    if (colorType != null) __obj.updateDynamic("colorType")(colorType)
+    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+    if (bitDepth != null) __obj.updateDynamic("bitDepth")(bitDepth.asInstanceOf[js.Any])
+    if (colorType != null) __obj.updateDynamic("colorType")(colorType.asInstanceOf[js.Any])
     if (deflateChunkSize != null) __obj.updateDynamic("deflateChunkSize")(deflateChunkSize.asInstanceOf[js.Any])
-    if (deflateFactory != null) __obj.updateDynamic("deflateFactory")(deflateFactory)
+    if (deflateFactory != null) __obj.updateDynamic("deflateFactory")(deflateFactory.asInstanceOf[js.Any])
     if (deflateLevel != null) __obj.updateDynamic("deflateLevel")(deflateLevel.asInstanceOf[js.Any])
     if (deflateStrategy != null) __obj.updateDynamic("deflateStrategy")(deflateStrategy.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (inputColorType != null) __obj.updateDynamic("inputColorType")(inputColorType)
-    if (!js.isUndefined(inputHasAlpha)) __obj.updateDynamic("inputHasAlpha")(inputHasAlpha)
+    if (inputColorType != null) __obj.updateDynamic("inputColorType")(inputColorType.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputHasAlpha)) __obj.updateDynamic("inputHasAlpha")(inputHasAlpha.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackerOptions]
   }
 }

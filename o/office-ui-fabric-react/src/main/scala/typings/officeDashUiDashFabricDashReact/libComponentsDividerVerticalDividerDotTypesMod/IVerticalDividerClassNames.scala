@@ -18,7 +18,7 @@ trait IVerticalDividerClassNames extends js.Object {
 object IVerticalDividerClassNames {
   @scala.inline
   def apply(divider: String, wrapper: String): IVerticalDividerClassNames = {
-    val __obj = js.Dynamic.literal(divider = divider, wrapper = wrapper)
+    val __obj = js.Dynamic.literal(divider = divider.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IVerticalDividerClassNames]
   }

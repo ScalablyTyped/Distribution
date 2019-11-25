@@ -15,8 +15,8 @@ trait Anon_Executionid extends js.Object {
 object Anon_Executionid {
   @scala.inline
   def apply(`execution-id`: String, pipeline: String, state: CodePipelineState, version: Double): Anon_Executionid = {
-    val __obj = js.Dynamic.literal(pipeline = pipeline, state = state, version = version)
-    __obj.updateDynamic("execution-id")(`execution-id`)
+    val __obj = js.Dynamic.literal(pipeline = pipeline.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("execution-id")(`execution-id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Executionid]
   }
 }

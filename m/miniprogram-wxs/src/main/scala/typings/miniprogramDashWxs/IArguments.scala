@@ -14,8 +14,8 @@ trait IArguments
 object IArguments {
   @scala.inline
   def apply(callee: Function, length: Double, NumberDictionary: /* index */ NumberDictionary[js.Any] = null): IArguments = {
-    val __obj = js.Dynamic.literal(callee = callee, length = length)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[IArguments]
   }
 }

@@ -14,8 +14,8 @@ trait Anon_Feature extends js.Object {
 object Anon_Feature {
   @scala.inline
   def apply(feature: js.Array[_], trafficMode: String, transportModes: js.Array[String], `type`: String): Anon_Feature = {
-    val __obj = js.Dynamic.literal(feature = feature, trafficMode = trafficMode, transportModes = transportModes)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], trafficMode = trafficMode.asInstanceOf[js.Any], transportModes = transportModes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Feature]
   }
 }

@@ -15,7 +15,7 @@ trait DelegationTokenOptions extends js.Object {
 object DelegationTokenOptions {
   @scala.inline
   def apply(api_type: String, grant_type: String, id_token: String, scope: String, target: String): DelegationTokenOptions = {
-    val __obj = js.Dynamic.literal(api_type = api_type, grant_type = grant_type, id_token = id_token, scope = scope, target = target)
+    val __obj = js.Dynamic.literal(api_type = api_type.asInstanceOf[js.Any], grant_type = grant_type.asInstanceOf[js.Any], id_token = id_token.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DelegationTokenOptions]
   }

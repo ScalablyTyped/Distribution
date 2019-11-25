@@ -31,12 +31,12 @@ object User {
     scopes: js.Array[String] = null,
     serverAuthCode: String = null
   ): User = {
-    val __obj = js.Dynamic.literal(user = user)
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
     if (accessTokenExpirationDate != null) __obj.updateDynamic("accessTokenExpirationDate")(accessTokenExpirationDate.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
-    if (serverAuthCode != null) __obj.updateDynamic("serverAuthCode")(serverAuthCode)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
+    if (serverAuthCode != null) __obj.updateDynamic("serverAuthCode")(serverAuthCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

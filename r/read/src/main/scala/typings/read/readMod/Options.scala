@@ -30,14 +30,14 @@ object Options {
     timeout: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (!js.isUndefined(edit)) __obj.updateDynamic("edit")(edit)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (replace != null) __obj.updateDynamic("replace")(replace)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(edit)) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

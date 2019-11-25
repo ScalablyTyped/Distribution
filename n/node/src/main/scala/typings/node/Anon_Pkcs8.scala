@@ -13,7 +13,7 @@ object Anon_Pkcs8 {
   @scala.inline
   def apply(`type`: pkcs8): Anon_Pkcs8 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Pkcs8]
   }
 }

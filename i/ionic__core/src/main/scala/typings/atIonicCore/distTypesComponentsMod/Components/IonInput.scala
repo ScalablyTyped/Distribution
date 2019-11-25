@@ -12,8 +12,6 @@ import typings.atIonicCore.atIonicCoreStrings.search
 import typings.atIonicCore.atIonicCoreStrings.tel
 import typings.atIonicCore.atIonicCoreStrings.text
 import typings.atIonicCore.atIonicCoreStrings.url
-import typings.atIonicCore.distTypesInterfaceMod.Color
-import typings.atIonicCore.distTypesInterfaceMod.TextFieldTypes
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +49,9 @@ trait IonInput extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke.
     */
@@ -123,7 +123,7 @@ trait IonInput extends js.Object {
   /**
     * The type of control to display. The default type is text.
     */
-  var `type`: TextFieldTypes
+  var `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any
   /**
     * The value of the input.
     */
@@ -154,10 +154,10 @@ object IonInput {
     required: Boolean,
     setFocus: () => js.Promise[Unit],
     spellcheck: Boolean,
-    `type`: TextFieldTypes,
+    `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any,
     accept: String = null,
     clearOnEdit: js.UndefOr[Boolean] = js.undefined,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     inputmode: none | text | tel | url | email | numeric | decimal | search = null,
     max: String = null,
     maxlength: Int | Double = null,
@@ -171,23 +171,23 @@ object IonInput {
     step: String = null,
     value: String = null
   ): IonInput = {
-    val __obj = js.Dynamic.literal(autocapitalize = autocapitalize, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], autofocus = autofocus, clearInput = clearInput, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), name = name, readonly = readonly, required = required, setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck)
-    __obj.updateDynamic("type")(`type`)
-    if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (!js.isUndefined(clearOnEdit)) __obj.updateDynamic("clearOnEdit")(clearOnEdit)
+    val __obj = js.Dynamic.literal(autocapitalize = autocapitalize.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], clearInput = clearInput.asInstanceOf[js.Any], debounce = debounce.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], getInputElement = js.Any.fromFunction0(getInputElement), name = name.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnEdit)) __obj.updateDynamic("clearOnEdit")(clearOnEdit.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min)
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonInput]
   }
 }

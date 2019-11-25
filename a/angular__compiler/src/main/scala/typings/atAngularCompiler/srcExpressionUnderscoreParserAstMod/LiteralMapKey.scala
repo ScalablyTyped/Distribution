@@ -12,7 +12,7 @@ trait LiteralMapKey extends js.Object {
 object LiteralMapKey {
   @scala.inline
   def apply(key: String, quoted: Boolean): LiteralMapKey = {
-    val __obj = js.Dynamic.literal(key = key, quoted = quoted)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LiteralMapKey]
   }

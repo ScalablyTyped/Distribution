@@ -14,8 +14,8 @@ trait HeatmapSliderThumbDragEvent extends js.Object {
 object HeatmapSliderThumbDragEvent {
   @scala.inline
   def apply(index: Double, state: String, `type`: String, value: Double): HeatmapSliderThumbDragEvent = {
-    val __obj = js.Dynamic.literal(index = index, state = state, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapSliderThumbDragEvent]
   }
 }

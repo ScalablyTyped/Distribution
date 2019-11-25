@@ -19,9 +19,9 @@ object AsObject {
     event: typings.libraDashCore.libAtGeneratedEventsUnderscorePbMod.Event.AsObject = null,
     proof: typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.EventProof.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(eventIndex = eventIndex, transactionVersion = transactionVersion)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (proof != null) __obj.updateDynamic("proof")(proof)
+    val __obj = js.Dynamic.literal(eventIndex = eventIndex.asInstanceOf[js.Any], transactionVersion = transactionVersion.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (proof != null) __obj.updateDynamic("proof")(proof.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

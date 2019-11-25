@@ -31,7 +31,7 @@ object Anon_Appid {
     state: String,
     template_id: String
   ): Anon_Appid = {
-    val __obj = js.Dynamic.literal(app_id = app_id, auth_code = auth_code, out_string = out_string, request_id = request_id, scope = scope, state = state, template_id = template_id)
+    val __obj = js.Dynamic.literal(app_id = app_id.asInstanceOf[js.Any], auth_code = auth_code.asInstanceOf[js.Any], out_string = out_string.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Appid]
   }

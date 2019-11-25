@@ -13,7 +13,7 @@ object Deep {
   def apply(
     equalInAnyOrder: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Equal */ js.Any
   ): Deep = {
-    val __obj = js.Dynamic.literal(equalInAnyOrder = equalInAnyOrder)
+    val __obj = js.Dynamic.literal(equalInAnyOrder = equalInAnyOrder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Deep]
   }

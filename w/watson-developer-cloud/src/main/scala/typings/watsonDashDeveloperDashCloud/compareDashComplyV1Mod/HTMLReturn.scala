@@ -28,11 +28,11 @@ object HTMLReturn {
     title: String = null
   ): HTMLReturn = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (num_pages != null) __obj.updateDynamic("num_pages")(num_pages)
-    if (publication_date != null) __obj.updateDynamic("publication_date")(publication_date)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (num_pages != null) __obj.updateDynamic("num_pages")(num_pages.asInstanceOf[js.Any])
+    if (publication_date != null) __obj.updateDynamic("publication_date")(publication_date.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLReturn]
   }
 }

@@ -14,8 +14,8 @@ trait OptionsParsed
 object OptionsParsed {
   @scala.inline
   def apply(argv: Anon_Cooked, StringDictionary: /* k */ StringDictionary[js.Any] = null): OptionsParsed = {
-    val __obj = js.Dynamic.literal(argv = argv)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[OptionsParsed]
   }
 }

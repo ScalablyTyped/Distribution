@@ -29,13 +29,13 @@ object MarkerProps {
     onDragEnd: /* event */ DragEvent => Unit = null,
     onDragStart: /* event */ DragEvent => Unit = null
   ): MarkerProps = {
-    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
-    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick)
-    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick)
-    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag)
-    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (offsetLeft != null) __obj.updateDynamic("offsetLeft")(offsetLeft.asInstanceOf[js.Any])
     if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))

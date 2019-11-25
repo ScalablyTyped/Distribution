@@ -13,8 +13,8 @@ trait NavigationResetActionPayload extends js.Object {
 object NavigationResetActionPayload {
   @scala.inline
   def apply(actions: js.Array[NavigationNavigateAction], index: Double, key: String = null): NavigationResetActionPayload = {
-    val __obj = js.Dynamic.literal(actions = actions, index = index)
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationResetActionPayload]
   }
 }

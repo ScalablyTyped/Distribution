@@ -18,8 +18,8 @@ object SSLConfiguration {
     validateCallback: /* sslVerifyObject */ SSLVerifyObject => Boolean = null
   ): SSLConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (certificatePath != null) __obj.updateDynamic("certificatePath")(certificatePath)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (certificatePath != null) __obj.updateDynamic("certificatePath")(certificatePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     if (validateCallback != null) __obj.updateDynamic("validateCallback")(js.Any.fromFunction1(validateCallback))
     __obj.asInstanceOf[SSLConfiguration]
   }

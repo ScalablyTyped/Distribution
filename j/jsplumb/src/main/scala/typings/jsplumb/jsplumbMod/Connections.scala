@@ -13,7 +13,7 @@ trait Connections extends js.Object {
 object Connections {
   @scala.inline
   def apply(detach: () => Unit, each: js.Function1[/* c */ Connection, Unit] => Unit, length: Double): Connections = {
-    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), each = js.Any.fromFunction1(each), length = length)
+    val __obj = js.Dynamic.literal(detach = js.Any.fromFunction0(detach), each = js.Any.fromFunction1(each), length = length.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Connections]
   }

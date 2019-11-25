@@ -29,10 +29,10 @@ object FfmpegCommandOptions {
     timeout: Int | Double = null
   ): FfmpegCommandOptions = {
     val __obj = js.Dynamic.literal()
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (niceness != null) __obj.updateDynamic("niceness")(niceness.asInstanceOf[js.Any])
-    if (preset != null) __obj.updateDynamic("preset")(preset)
-    if (presets != null) __obj.updateDynamic("presets")(presets)
+    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
+    if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (stdoutLines != null) __obj.updateDynamic("stdoutLines")(stdoutLines.asInstanceOf[js.Any])

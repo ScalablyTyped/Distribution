@@ -14,7 +14,7 @@ trait Anon_DatePickerLocale extends js.Object {
 object Anon_DatePickerLocale {
   @scala.inline
   def apply(DatePickerLocale: Anon_Am, dismissText: String, extra: String, okText: String): Anon_DatePickerLocale = {
-    val __obj = js.Dynamic.literal(DatePickerLocale = DatePickerLocale, dismissText = dismissText, extra = extra, okText = okText)
+    val __obj = js.Dynamic.literal(DatePickerLocale = DatePickerLocale.asInstanceOf[js.Any], dismissText = dismissText.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DatePickerLocale]
   }

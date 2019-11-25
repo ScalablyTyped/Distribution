@@ -13,7 +13,7 @@ trait RosterResource extends js.Object {
 object RosterResource {
   @scala.inline
   def apply(priority: String, show: String, status: String): RosterResource = {
-    val __obj = js.Dynamic.literal(priority = priority, show = show, status = status)
+    val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RosterResource]
   }

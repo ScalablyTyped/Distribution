@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "single-line-log"
-version := "1.1-dt-20180226Z-851f36"
+version := "1.1-dt-20180226Z-70baaf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

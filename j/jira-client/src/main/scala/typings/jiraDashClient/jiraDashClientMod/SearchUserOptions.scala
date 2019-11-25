@@ -21,9 +21,9 @@ object SearchUserOptions {
     maxResults: Int | Double = null,
     startAt: Int | Double = null
   ): SearchUserOptions = {
-    val __obj = js.Dynamic.literal(username = username)
-    if (!js.isUndefined(includeActive)) __obj.updateDynamic("includeActive")(includeActive)
-    if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive)
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeActive)) __obj.updateDynamic("includeActive")(includeActive.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchUserOptions]

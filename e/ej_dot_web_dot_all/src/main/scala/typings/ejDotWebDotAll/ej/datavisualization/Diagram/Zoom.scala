@@ -24,8 +24,8 @@ object Zoom {
     zoomFactor: Int | Double = null
   ): Zoom = {
     val __obj = js.Dynamic.literal()
-    if (focusPoint != null) __obj.updateDynamic("focusPoint")(focusPoint)
-    if (zoomCommand != null) __obj.updateDynamic("zoomCommand")(zoomCommand)
+    if (focusPoint != null) __obj.updateDynamic("focusPoint")(focusPoint.asInstanceOf[js.Any])
+    if (zoomCommand != null) __obj.updateDynamic("zoomCommand")(zoomCommand.asInstanceOf[js.Any])
     if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Zoom]
   }

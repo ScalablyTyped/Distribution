@@ -12,7 +12,7 @@ trait GeolocationError extends js.Object {
 object GeolocationError {
   @scala.inline
   def apply(error: Anon_Code): GeolocationError = {
-    val __obj = js.Dynamic.literal(error = error)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeolocationError]
   }

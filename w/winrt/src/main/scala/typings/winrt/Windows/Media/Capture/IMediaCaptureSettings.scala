@@ -21,7 +21,7 @@ object IMediaCaptureSettings {
     videoDeviceCharacteristic: VideoDeviceCharacteristic,
     videoDeviceId: String
   ): IMediaCaptureSettings = {
-    val __obj = js.Dynamic.literal(audioDeviceId = audioDeviceId, photoCaptureSource = photoCaptureSource, streamingCaptureMode = streamingCaptureMode, videoDeviceCharacteristic = videoDeviceCharacteristic, videoDeviceId = videoDeviceId)
+    val __obj = js.Dynamic.literal(audioDeviceId = audioDeviceId.asInstanceOf[js.Any], photoCaptureSource = photoCaptureSource.asInstanceOf[js.Any], streamingCaptureMode = streamingCaptureMode.asInstanceOf[js.Any], videoDeviceCharacteristic = videoDeviceCharacteristic.asInstanceOf[js.Any], videoDeviceId = videoDeviceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMediaCaptureSettings]
   }

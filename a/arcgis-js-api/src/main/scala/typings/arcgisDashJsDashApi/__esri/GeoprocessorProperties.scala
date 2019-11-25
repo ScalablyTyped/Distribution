@@ -59,13 +59,13 @@ object GeoprocessorProperties {
     url: String = null
   ): GeoprocessorProperties = {
     val __obj = js.Dynamic.literal()
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
-    if (processExtent != null) __obj.updateDynamic("processExtent")(processExtent)
-    if (processSpatialReference != null) __obj.updateDynamic("processSpatialReference")(processSpatialReference)
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
-    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM)
-    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
+    if (processExtent != null) __obj.updateDynamic("processExtent")(processExtent.asInstanceOf[js.Any])
+    if (processSpatialReference != null) __obj.updateDynamic("processSpatialReference")(processSpatialReference.asInstanceOf[js.Any])
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoprocessorProperties]
   }
 }

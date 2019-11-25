@@ -50,18 +50,18 @@ object WritableStreamBufferOptions {
     ] = null
   ): WritableStreamBufferOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
-    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose)
-    if (`final` != null) __obj.updateDynamic("final")(`final`)
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.asInstanceOf[js.Any])
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose.asInstanceOf[js.Any])
+    if (`final` != null) __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
     if (incrementAmount != null) __obj.updateDynamic("incrementAmount")(incrementAmount.asInstanceOf[js.Any])
     if (initialSize != null) __obj.updateDynamic("initialSize")(initialSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
-    if (write != null) __obj.updateDynamic("write")(write)
-    if (writev != null) __obj.updateDynamic("writev")(writev)
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
+    if (writev != null) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])
     __obj.asInstanceOf[WritableStreamBufferOptions]
   }
 }

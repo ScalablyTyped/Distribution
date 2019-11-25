@@ -38,19 +38,19 @@ object PageElement {
     wordArt: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.WordArt = null
   ): PageElement = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (elementGroup != null) __obj.updateDynamic("elementGroup")(elementGroup)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (sheetsChart != null) __obj.updateDynamic("sheetsChart")(sheetsChart)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
-    if (video != null) __obj.updateDynamic("video")(video)
-    if (wordArt != null) __obj.updateDynamic("wordArt")(wordArt)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (elementGroup != null) __obj.updateDynamic("elementGroup")(elementGroup.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (sheetsChart != null) __obj.updateDynamic("sheetsChart")(sheetsChart.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
+    if (wordArt != null) __obj.updateDynamic("wordArt")(wordArt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageElement]
   }
 }

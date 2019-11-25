@@ -12,7 +12,7 @@ trait Anon_EnableSubstitutiontag extends js.Object {
 object Anon_EnableSubstitutiontag {
   @scala.inline
   def apply(enable: Boolean, substitution_tag: String): Anon_EnableSubstitutiontag = {
-    val __obj = js.Dynamic.literal(enable = enable, substitution_tag = substitution_tag)
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], substitution_tag = substitution_tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnableSubstitutiontag]
   }

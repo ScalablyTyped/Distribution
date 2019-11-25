@@ -33,12 +33,12 @@ object StaticMapRequest {
     logo: js.UndefOr[Boolean] = js.undefined,
     overlays: js.Array[CustomMarkerOverlay | GeoJsonOverlay | PathOverlay] = null
   ): StaticMapRequest = {
-    val __obj = js.Dynamic.literal(height = height, ownerId = ownerId, position = position.asInstanceOf[js.Any], styleId = styleId, width = width)
-    if (!js.isUndefined(attribution)) __obj.updateDynamic("attribution")(attribution)
-    if (!js.isUndefined(highRes)) __obj.updateDynamic("highRes")(highRes)
-    if (insertOverlayBeforeLayer != null) __obj.updateDynamic("insertOverlayBeforeLayer")(insertOverlayBeforeLayer)
-    if (!js.isUndefined(logo)) __obj.updateDynamic("logo")(logo)
-    if (overlays != null) __obj.updateDynamic("overlays")(overlays)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], ownerId = ownerId.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (!js.isUndefined(attribution)) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (!js.isUndefined(highRes)) __obj.updateDynamic("highRes")(highRes.asInstanceOf[js.Any])
+    if (insertOverlayBeforeLayer != null) __obj.updateDynamic("insertOverlayBeforeLayer")(insertOverlayBeforeLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(logo)) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (overlays != null) __obj.updateDynamic("overlays")(overlays.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticMapRequest]
   }
 }

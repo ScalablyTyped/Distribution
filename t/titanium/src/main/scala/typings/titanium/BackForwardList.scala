@@ -40,11 +40,11 @@ object BackForwardList {
     forwardList: js.Array[BackForwardListItem] = null
   ): BackForwardList = {
     val __obj = js.Dynamic.literal()
-    if (backItem != null) __obj.updateDynamic("backItem")(backItem)
-    if (backList != null) __obj.updateDynamic("backList")(backList)
-    if (currentItem != null) __obj.updateDynamic("currentItem")(currentItem)
-    if (forwardItem != null) __obj.updateDynamic("forwardItem")(forwardItem)
-    if (forwardList != null) __obj.updateDynamic("forwardList")(forwardList)
+    if (backItem != null) __obj.updateDynamic("backItem")(backItem.asInstanceOf[js.Any])
+    if (backList != null) __obj.updateDynamic("backList")(backList.asInstanceOf[js.Any])
+    if (currentItem != null) __obj.updateDynamic("currentItem")(currentItem.asInstanceOf[js.Any])
+    if (forwardItem != null) __obj.updateDynamic("forwardItem")(forwardItem.asInstanceOf[js.Any])
+    if (forwardList != null) __obj.updateDynamic("forwardList")(forwardList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackForwardList]
   }
 }

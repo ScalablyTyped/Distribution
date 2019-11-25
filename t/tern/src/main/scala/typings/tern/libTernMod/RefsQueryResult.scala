@@ -18,7 +18,7 @@ trait RefsQueryResult extends js.Object {
 object RefsQueryResult {
   @scala.inline
   def apply(name: String, refs: js.Array[Anon_End], `type`: global | local = null): RefsQueryResult = {
-    val __obj = js.Dynamic.literal(name = name, refs = refs)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefsQueryResult]
   }

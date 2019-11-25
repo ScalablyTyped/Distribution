@@ -19,8 +19,8 @@ object Sentence {
   @scala.inline
   def apply(sentiment: Sentiment = null, text: TextSpan = null): Sentence = {
     val __obj = js.Dynamic.literal()
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sentence]
   }
 }

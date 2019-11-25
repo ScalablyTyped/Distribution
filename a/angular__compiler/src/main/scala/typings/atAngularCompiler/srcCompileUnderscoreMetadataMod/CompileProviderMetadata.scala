@@ -25,13 +25,13 @@ object CompileProviderMetadata {
     useFactory: CompileFactoryMetadata = null,
     useValue: js.Any = null
   ): CompileProviderMetadata = {
-    val __obj = js.Dynamic.literal(token = token)
-    if (deps != null) __obj.updateDynamic("deps")(deps)
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
-    if (useClass != null) __obj.updateDynamic("useClass")(useClass)
-    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)
-    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory)
-    if (useValue != null) __obj.updateDynamic("useValue")(useValue)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
+    if (useClass != null) __obj.updateDynamic("useClass")(useClass.asInstanceOf[js.Any])
+    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting.asInstanceOf[js.Any])
+    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory.asInstanceOf[js.Any])
+    if (useValue != null) __obj.updateDynamic("useValue")(useValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileProviderMetadata]
   }
 }

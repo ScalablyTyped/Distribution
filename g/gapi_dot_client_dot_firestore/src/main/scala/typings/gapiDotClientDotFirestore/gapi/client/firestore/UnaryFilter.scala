@@ -15,8 +15,8 @@ object UnaryFilter {
   @scala.inline
   def apply(field: FieldReference = null, op: String = null): UnaryFilter = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (op != null) __obj.updateDynamic("op")(op)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnaryFilter]
   }
 }

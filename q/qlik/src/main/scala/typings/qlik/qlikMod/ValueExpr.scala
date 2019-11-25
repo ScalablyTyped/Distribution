@@ -11,7 +11,7 @@ trait ValueExpr extends js.Object {
 object ValueExpr {
   @scala.inline
   def apply(qv: String): ValueExpr = {
-    val __obj = js.Dynamic.literal(qv = qv)
+    val __obj = js.Dynamic.literal(qv = qv.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ValueExpr]
   }

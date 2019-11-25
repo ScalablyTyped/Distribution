@@ -17,7 +17,7 @@ object Visibility {
   @scala.inline
   def apply(rules: js.Array[VisibilityRule] = null): Visibility = {
     val __obj = js.Dynamic.literal()
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Visibility]
   }
 }

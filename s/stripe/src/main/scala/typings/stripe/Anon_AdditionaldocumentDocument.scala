@@ -23,8 +23,8 @@ object Anon_AdditionaldocumentDocument {
     document: IPersonDocumentCreateUpdateOptions = null
   ): Anon_AdditionaldocumentDocument = {
     val __obj = js.Dynamic.literal()
-    if (additional_document != null) __obj.updateDynamic("additional_document")(additional_document)
-    if (document != null) __obj.updateDynamic("document")(document)
+    if (additional_document != null) __obj.updateDynamic("additional_document")(additional_document.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AdditionaldocumentDocument]
   }
 }

@@ -13,8 +13,8 @@ trait CalendarState extends js.Object {
 object CalendarState {
   @scala.inline
   def apply(value: Moment, mode: CalendarMode = null): CalendarState = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarState]
   }
 }

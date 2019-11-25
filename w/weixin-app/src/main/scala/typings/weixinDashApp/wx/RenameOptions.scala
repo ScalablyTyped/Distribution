@@ -20,7 +20,7 @@ object RenameOptions {
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null
   ): RenameOptions = {
-    val __obj = js.Dynamic.literal(newPath = newPath, oldPath = oldPath)
+    val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

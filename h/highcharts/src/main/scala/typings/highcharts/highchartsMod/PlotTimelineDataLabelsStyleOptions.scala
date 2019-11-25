@@ -14,9 +14,9 @@ object PlotTimelineDataLabelsStyleOptions {
   @scala.inline
   def apply(fontSize: String = null, fontWeight: String = null, textOutline: String = null): PlotTimelineDataLabelsStyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (textOutline != null) __obj.updateDynamic("textOutline")(textOutline)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (textOutline != null) __obj.updateDynamic("textOutline")(textOutline.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTimelineDataLabelsStyleOptions]
   }
 }

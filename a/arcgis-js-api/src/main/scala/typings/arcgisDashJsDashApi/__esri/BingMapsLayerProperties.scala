@@ -62,21 +62,21 @@ object BingMapsLayerProperties {
     visible: js.UndefOr[Boolean] = js.undefined
   ): BingMapsLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (culture != null) __obj.updateDynamic("culture")(culture)
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BingMapsLayerProperties]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("CDATASection")
 @js.native
-class CDATASectionCls () extends CDATASection {
+class CDATASectionCls () extends Text {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | Null = js.native
   /**

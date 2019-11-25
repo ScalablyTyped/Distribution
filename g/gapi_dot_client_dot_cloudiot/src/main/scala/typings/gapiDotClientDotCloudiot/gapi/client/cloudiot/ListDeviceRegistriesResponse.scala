@@ -19,8 +19,8 @@ object ListDeviceRegistriesResponse {
   @scala.inline
   def apply(deviceRegistries: js.Array[DeviceRegistry] = null, nextPageToken: String = null): ListDeviceRegistriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (deviceRegistries != null) __obj.updateDynamic("deviceRegistries")(deviceRegistries)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (deviceRegistries != null) __obj.updateDynamic("deviceRegistries")(deviceRegistries.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeviceRegistriesResponse]
   }
 }

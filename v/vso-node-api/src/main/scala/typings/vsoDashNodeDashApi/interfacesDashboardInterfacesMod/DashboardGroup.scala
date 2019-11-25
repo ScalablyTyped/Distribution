@@ -30,7 +30,7 @@ object DashboardGroup {
     teamDashboardPermission: TeamDashboardPermission,
     url: String
   ): DashboardGroup = {
-    val __obj = js.Dynamic.literal(_links = _links, dashboardEntries = dashboardEntries, permission = permission, teamDashboardPermission = teamDashboardPermission, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], dashboardEntries = dashboardEntries.asInstanceOf[js.Any], permission = permission.asInstanceOf[js.Any], teamDashboardPermission = teamDashboardPermission.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DashboardGroup]
   }

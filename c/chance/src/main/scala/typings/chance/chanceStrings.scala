@@ -65,7 +65,9 @@ object chanceStrings {
   sealed trait de extends LastNameNationalities
   
   @js.native
-  sealed trait en extends FirstNameNationalities
+  sealed trait en
+    extends FirstNameNationalities
+       with LastNameNationalities
   
   @js.native
   sealed trait es extends LastNameNationalities
@@ -80,7 +82,9 @@ object chanceStrings {
   sealed trait fr extends LastNameNationalities
   
   @js.native
-  sealed trait it extends FirstNameNationalities
+  sealed trait it
+    extends FirstNameNationalities
+       with LastNameNationalities
   
   @js.native
   sealed trait jp extends LastNameNationalities

@@ -14,8 +14,8 @@ trait IModelEvent extends js.Object {
 object IModelEvent {
   @scala.inline
   def apply(deltas: js.Array[Delta], id: Double, `type`: String): IModelEvent = {
-    val __obj = js.Dynamic.literal(deltas = deltas, id = id)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(deltas = deltas.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelEvent]
   }
 }

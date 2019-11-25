@@ -35,14 +35,14 @@ object PGStoreOptions {
     ttl: Int | Double = null
   ): PGStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (conObject != null) __obj.updateDynamic("conObject")(conObject)
-    if (conString != null) __obj.updateDynamic("conString")(conString)
+    if (conObject != null) __obj.updateDynamic("conObject")(conObject.asInstanceOf[js.Any])
+    if (conString != null) __obj.updateDynamic("conString")(conString.asInstanceOf[js.Any])
     if (errorLog != null) __obj.updateDynamic("errorLog")(js.Any.fromFunction1(errorLog))
-    if (pgPromise != null) __obj.updateDynamic("pgPromise")(pgPromise)
-    if (pool != null) __obj.updateDynamic("pool")(pool)
+    if (pgPromise != null) __obj.updateDynamic("pgPromise")(pgPromise.asInstanceOf[js.Any])
+    if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
     if (pruneSessionInterval != null) __obj.updateDynamic("pruneSessionInterval")(pruneSessionInterval.asInstanceOf[js.Any])
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PGStoreOptions]
   }

@@ -27,7 +27,7 @@ object GetLocationOptions {
     `type`: wgs84 | gcj02 = null
   ): GetLocationOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude)
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

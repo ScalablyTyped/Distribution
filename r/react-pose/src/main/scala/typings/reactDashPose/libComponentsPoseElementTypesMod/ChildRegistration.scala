@@ -16,7 +16,7 @@ trait ChildRegistration extends js.Object {
 object ChildRegistration {
   @scala.inline
   def apply(element: Element, onRegistered: DomPopmotionPoser => Unit, poseConfig: DomPopmotionConfig): ChildRegistration = {
-    val __obj = js.Dynamic.literal(element = element, onRegistered = js.Any.fromFunction1(onRegistered), poseConfig = poseConfig)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], onRegistered = js.Any.fromFunction1(onRegistered), poseConfig = poseConfig.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChildRegistration]
   }

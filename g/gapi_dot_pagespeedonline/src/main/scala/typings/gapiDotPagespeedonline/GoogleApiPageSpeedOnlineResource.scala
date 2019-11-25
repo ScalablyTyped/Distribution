@@ -56,7 +56,7 @@ object GoogleApiPageSpeedOnlineResource {
     title: String,
     version: Anon_Major
   ): GoogleApiPageSpeedOnlineResource = {
-    val __obj = js.Dynamic.literal(formattedResults = formattedResults, id = id, invalidRules = invalidRules, kind = kind, pageStats = pageStats, responseCode = responseCode, score = score, title = title, version = version)
+    val __obj = js.Dynamic.literal(formattedResults = formattedResults.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invalidRules = invalidRules.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], pageStats = pageStats.asInstanceOf[js.Any], responseCode = responseCode.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiPageSpeedOnlineResource]
   }

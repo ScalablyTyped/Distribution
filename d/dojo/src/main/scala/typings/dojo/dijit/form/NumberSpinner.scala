@@ -1,7 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojoStrings.editOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -43,6 +42,14 @@ class NumberSpinner () extends _Spinner {
   @JSName("set")
   def set_editOptions(property: editOptions, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_editOptions(property: editOptions, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_editOptions(
+    property: editOptions,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

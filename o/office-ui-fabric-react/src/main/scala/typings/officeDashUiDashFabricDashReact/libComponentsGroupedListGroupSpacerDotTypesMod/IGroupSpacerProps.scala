@@ -33,10 +33,10 @@ object IGroupSpacerProps {
     styles: IStyleFunctionOrObject[IGroupSpacerStyleProps, IGroupSpacerStyles] = null,
     theme: ITheme = null
   ): IGroupSpacerProps = {
-    val __obj = js.Dynamic.literal(count = count)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupSpacerProps]
   }
 }

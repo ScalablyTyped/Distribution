@@ -42,9 +42,9 @@ object IOptions {
     setBusy: () => IDisposable = null,
     when: js.Promise[Unit] = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(manager = manager, opener = opener, registry = registry)
+    val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any], opener = opener.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any])
     if (setBusy != null) __obj.updateDynamic("setBusy")(js.Any.fromFunction0(setBusy))
-    if (when != null) __obj.updateDynamic("when")(when)
+    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -72,7 +72,7 @@ object CarouselSlideRenderControlProps {
     slidesToShow: Double,
     wrapAround: Boolean
   ): CarouselSlideRenderControlProps = {
-    val __obj = js.Dynamic.literal(cellAlign = cellAlign, cellSpacing = cellSpacing, currentSlide = currentSlide, frameWidth = frameWidth, goToSlide = js.Any.fromFunction1(goToSlide), nextSlide = js.Any.fromFunction0(nextSlide), previousSlide = js.Any.fromFunction0(previousSlide), slideCount = slideCount, slideWidth = slideWidth, slidesToScroll = slidesToScroll, slidesToShow = slidesToShow, wrapAround = wrapAround)
+    val __obj = js.Dynamic.literal(cellAlign = cellAlign.asInstanceOf[js.Any], cellSpacing = cellSpacing.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], frameWidth = frameWidth.asInstanceOf[js.Any], goToSlide = js.Any.fromFunction1(goToSlide), nextSlide = js.Any.fromFunction0(nextSlide), previousSlide = js.Any.fromFunction0(previousSlide), slideCount = slideCount.asInstanceOf[js.Any], slideWidth = slideWidth.asInstanceOf[js.Any], slidesToScroll = slidesToScroll.asInstanceOf[js.Any], slidesToShow = slidesToShow.asInstanceOf[js.Any], wrapAround = wrapAround.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CarouselSlideRenderControlProps]
   }

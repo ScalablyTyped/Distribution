@@ -16,7 +16,7 @@ object MSIVmOptions {
   def apply(port: Int | Double = null, resource: String = null): MSIVmOptions = {
     val __obj = js.Dynamic.literal()
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSIVmOptions]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "skin-tone"
-version := "2.0.0-4256b4"
+version := "2.0.0-001c1f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

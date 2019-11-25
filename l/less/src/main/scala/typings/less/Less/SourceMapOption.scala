@@ -22,11 +22,11 @@ object SourceMapOption {
     sourceMapURL: String = null
   ): SourceMapOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(outputSourceFiles)) __obj.updateDynamic("outputSourceFiles")(outputSourceFiles)
-    if (sourceMapBasepath != null) __obj.updateDynamic("sourceMapBasepath")(sourceMapBasepath)
-    if (!js.isUndefined(sourceMapFileInline)) __obj.updateDynamic("sourceMapFileInline")(sourceMapFileInline)
-    if (sourceMapRootpath != null) __obj.updateDynamic("sourceMapRootpath")(sourceMapRootpath)
-    if (sourceMapURL != null) __obj.updateDynamic("sourceMapURL")(sourceMapURL)
+    if (!js.isUndefined(outputSourceFiles)) __obj.updateDynamic("outputSourceFiles")(outputSourceFiles.asInstanceOf[js.Any])
+    if (sourceMapBasepath != null) __obj.updateDynamic("sourceMapBasepath")(sourceMapBasepath.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMapFileInline)) __obj.updateDynamic("sourceMapFileInline")(sourceMapFileInline.asInstanceOf[js.Any])
+    if (sourceMapRootpath != null) __obj.updateDynamic("sourceMapRootpath")(sourceMapRootpath.asInstanceOf[js.Any])
+    if (sourceMapURL != null) __obj.updateDynamic("sourceMapURL")(sourceMapURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMapOption]
   }
 }

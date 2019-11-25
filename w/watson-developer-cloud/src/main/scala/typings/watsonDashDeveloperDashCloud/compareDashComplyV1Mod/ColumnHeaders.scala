@@ -37,14 +37,14 @@ object ColumnHeaders {
     text_normalized: String = null
   ): ColumnHeaders = {
     val __obj = js.Dynamic.literal()
-    if (cell_id != null) __obj.updateDynamic("cell_id")(cell_id)
+    if (cell_id != null) __obj.updateDynamic("cell_id")(cell_id.asInstanceOf[js.Any])
     if (column_index_begin != null) __obj.updateDynamic("column_index_begin")(column_index_begin.asInstanceOf[js.Any])
     if (column_index_end != null) __obj.updateDynamic("column_index_end")(column_index_end.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (row_index_begin != null) __obj.updateDynamic("row_index_begin")(row_index_begin.asInstanceOf[js.Any])
     if (row_index_end != null) __obj.updateDynamic("row_index_end")(row_index_end.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (text_normalized != null) __obj.updateDynamic("text_normalized")(text_normalized)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (text_normalized != null) __obj.updateDynamic("text_normalized")(text_normalized.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnHeaders]
   }
 }

@@ -22,8 +22,8 @@ object Options {
   @scala.inline
   def apply(endpoint: String = null, useIPv6: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (!js.isUndefined(useIPv6)) __obj.updateDynamic("useIPv6")(useIPv6)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIPv6)) __obj.updateDynamic("useIPv6")(useIPv6.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

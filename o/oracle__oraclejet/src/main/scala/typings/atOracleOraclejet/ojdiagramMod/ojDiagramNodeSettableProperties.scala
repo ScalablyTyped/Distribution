@@ -39,14 +39,14 @@ object ojDiagramNodeSettableProperties {
     showDisclosure: on | off = null
   ): ojDiagramNodeSettableProperties = {
     val __obj = js.Dynamic.literal()
-    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (descendantsConnectivity != null) __obj.updateDynamic("descendantsConnectivity")(descendantsConnectivity.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
-    if (overview != null) __obj.updateDynamic("overview")(overview)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
+    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     if (showDisclosure != null) __obj.updateDynamic("showDisclosure")(showDisclosure.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojDiagramNodeSettableProperties]
   }

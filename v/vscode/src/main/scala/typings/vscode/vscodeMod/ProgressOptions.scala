@@ -26,9 +26,9 @@ trait ProgressOptions extends js.Object {
 object ProgressOptions {
   @scala.inline
   def apply(location: ProgressLocation, cancellable: js.UndefOr[Boolean] = js.undefined, title: String = null): ProgressOptions = {
-    val __obj = js.Dynamic.literal(location = location)
-    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressOptions]
   }
 }

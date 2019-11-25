@@ -19,8 +19,8 @@ object RenderingEventUIParam {
   @scala.inline
   def apply(element: js.Any = null, owner: js.Any = null): RenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderingEventUIParam]
   }
 }

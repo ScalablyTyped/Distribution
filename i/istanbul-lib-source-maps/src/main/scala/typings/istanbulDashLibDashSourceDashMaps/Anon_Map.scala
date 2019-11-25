@@ -13,7 +13,7 @@ trait Anon_Map extends js.Object {
 object Anon_Map {
   @scala.inline
   def apply(map: CoverageMap, sourceFinder: String => String): Anon_Map = {
-    val __obj = js.Dynamic.literal(map = map, sourceFinder = js.Any.fromFunction1(sourceFinder))
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], sourceFinder = js.Any.fromFunction1(sourceFinder))
   
     __obj.asInstanceOf[Anon_Map]
   }

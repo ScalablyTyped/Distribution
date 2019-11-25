@@ -13,8 +13,8 @@ object Anon_SkipImmediate {
   @scala.inline
   def apply(skipImmediate: js.UndefOr[Boolean] = js.undefined, timezone: String = null): Anon_SkipImmediate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(skipImmediate)) __obj.updateDynamic("skipImmediate")(skipImmediate)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (!js.isUndefined(skipImmediate)) __obj.updateDynamic("skipImmediate")(skipImmediate.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SkipImmediate]
   }
 }

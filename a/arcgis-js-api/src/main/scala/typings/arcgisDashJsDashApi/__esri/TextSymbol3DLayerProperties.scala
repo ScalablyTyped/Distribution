@@ -49,11 +49,11 @@ object TextSymbol3DLayerProperties {
     text: String = null
   ): TextSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (halo != null) __obj.updateDynamic("halo")(halo)
-    if (material != null) __obj.updateDynamic("material")(material)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (halo != null) __obj.updateDynamic("halo")(halo.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSymbol3DLayerProperties]
   }
 }

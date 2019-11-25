@@ -13,8 +13,8 @@ object Anon_Method {
   @scala.inline
   def apply(method: String = null, url: String = null): Anon_Method = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Method]
   }
 }

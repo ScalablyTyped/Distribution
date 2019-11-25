@@ -13,7 +13,7 @@ trait Anon_NetworkType extends js.Object {
 object Anon_NetworkType {
   @scala.inline
   def apply(Networks: StringDictionary[NetworkInfo]): Anon_NetworkType = {
-    val __obj = js.Dynamic.literal(Networks = Networks)
+    val __obj = js.Dynamic.literal(Networks = Networks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NetworkType]
   }

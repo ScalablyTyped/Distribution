@@ -16,8 +16,8 @@ trait IDatePickerShortcut extends IDateShortcutBase {
 object IDatePickerShortcut {
   @scala.inline
   def apply(date: Date, label: String, includeTime: js.UndefOr[Boolean] = js.undefined): IDatePickerShortcut = {
-    val __obj = js.Dynamic.literal(date = date, label = label)
-    if (!js.isUndefined(includeTime)) __obj.updateDynamic("includeTime")(includeTime)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTime)) __obj.updateDynamic("includeTime")(includeTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePickerShortcut]
   }
 }

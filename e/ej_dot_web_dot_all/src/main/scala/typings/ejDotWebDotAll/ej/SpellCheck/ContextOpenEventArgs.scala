@@ -32,11 +32,11 @@ object ContextOpenEventArgs {
     `type`: String = null
   ): ContextOpenEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
-    if (selectedErrorWord != null) __obj.updateDynamic("selectedErrorWord")(selectedErrorWord)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
+    if (selectedErrorWord != null) __obj.updateDynamic("selectedErrorWord")(selectedErrorWord.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextOpenEventArgs]
   }
 }

@@ -31,7 +31,7 @@ object Anon_AutoAdjustHeight {
     placeholder: String,
     prefixCls: String
   ): Anon_AutoAdjustHeight = {
-    val __obj = js.Dynamic.literal(autoAdjustHeight = autoAdjustHeight, disabled = disabled, editable = editable, keyboardPrefixCls = keyboardPrefixCls, onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onFocus = js.Any.fromFunction0(onFocus), onVirtualKeyboardConfirm = js.Any.fromFunction0(onVirtualKeyboardConfirm), placeholder = placeholder, prefixCls = prefixCls)
+    val __obj = js.Dynamic.literal(autoAdjustHeight = autoAdjustHeight.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], keyboardPrefixCls = keyboardPrefixCls.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onFocus = js.Any.fromFunction0(onFocus), onVirtualKeyboardConfirm = js.Any.fromFunction0(onVirtualKeyboardConfirm), placeholder = placeholder.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoAdjustHeight]
   }

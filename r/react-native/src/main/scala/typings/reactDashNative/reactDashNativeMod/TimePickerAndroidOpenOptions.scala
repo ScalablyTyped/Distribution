@@ -24,7 +24,7 @@ object TimePickerAndroidOpenOptions {
   ): TimePickerAndroidOpenOptions = {
     val __obj = js.Dynamic.literal()
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour)
+    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour.asInstanceOf[js.Any])
     if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerAndroidOpenOptions]

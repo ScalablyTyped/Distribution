@@ -41,7 +41,7 @@ object Anon_GH2O {
     ZH2O: XZH2O,
     ZHO2: XZHO2
   ): Anon_GH2O = {
-    val __obj = js.Dynamic.literal(GH2O = GH2O, GHO2 = GHO2, KH2O = KH2O, KHO2 = KHO2, LH2O = LH2O, LHO2 = LHO2, UH2O = UH2O, UHO2 = UHO2, ZH2O = ZH2O, ZHO2 = ZHO2)
+    val __obj = js.Dynamic.literal(GH2O = GH2O.asInstanceOf[js.Any], GHO2 = GHO2.asInstanceOf[js.Any], KH2O = KH2O.asInstanceOf[js.Any], KHO2 = KHO2.asInstanceOf[js.Any], LH2O = LH2O.asInstanceOf[js.Any], LHO2 = LHO2.asInstanceOf[js.Any], UH2O = UH2O.asInstanceOf[js.Any], UHO2 = UHO2.asInstanceOf[js.Any], ZH2O = ZH2O.asInstanceOf[js.Any], ZHO2 = ZHO2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GH2O]
   }

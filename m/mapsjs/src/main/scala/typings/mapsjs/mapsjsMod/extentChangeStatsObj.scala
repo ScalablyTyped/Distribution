@@ -29,7 +29,7 @@ object extentChangeStatsObj {
     mapUnitsPerPixel: Double,
     zoomLevel: Double
   ): extentChangeStatsObj = {
-    val __obj = js.Dynamic.literal(centerLat = centerLat, centerLon = centerLon, centerX = centerX, centerY = centerY, extents = extents, mapScale = mapScale, mapScaleProjected = mapScaleProjected, mapUnitsPerPixel = mapUnitsPerPixel, zoomLevel = zoomLevel)
+    val __obj = js.Dynamic.literal(centerLat = centerLat.asInstanceOf[js.Any], centerLon = centerLon.asInstanceOf[js.Any], centerX = centerX.asInstanceOf[js.Any], centerY = centerY.asInstanceOf[js.Any], extents = extents.asInstanceOf[js.Any], mapScale = mapScale.asInstanceOf[js.Any], mapScaleProjected = mapScaleProjected.asInstanceOf[js.Any], mapUnitsPerPixel = mapUnitsPerPixel.asInstanceOf[js.Any], zoomLevel = zoomLevel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[extentChangeStatsObj]
   }

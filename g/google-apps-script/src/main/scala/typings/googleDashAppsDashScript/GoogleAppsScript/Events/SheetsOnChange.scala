@@ -13,7 +13,7 @@ trait SheetsOnChange extends AppsScriptEvent {
 object SheetsOnChange {
   @scala.inline
   def apply(authMode: AuthMode, changeType: SheetsOnChangeChangeType, triggerUid: String, user: User): SheetsOnChange = {
-    val __obj = js.Dynamic.literal(authMode = authMode, changeType = changeType, triggerUid = triggerUid, user = user)
+    val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SheetsOnChange]
   }

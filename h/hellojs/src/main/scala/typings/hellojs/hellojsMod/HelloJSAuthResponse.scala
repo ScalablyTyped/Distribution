@@ -36,18 +36,18 @@ object HelloJSAuthResponse {
     token_type: String = null
   ): HelloJSAuthResponse = {
     val __obj = js.Dynamic.literal()
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (display != null) __obj.updateDynamic("display")(display)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
-    if (id_token != null) __obj.updateDynamic("id_token")(id_token)
-    if (network != null) __obj.updateDynamic("network")(network)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (session_state != null) __obj.updateDynamic("session_state")(session_state)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (token_type != null) __obj.updateDynamic("token_type")(token_type)
+    if (id_token != null) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (session_state != null) __obj.updateDynamic("session_state")(session_state.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (token_type != null) __obj.updateDynamic("token_type")(token_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[HelloJSAuthResponse]
   }
 }

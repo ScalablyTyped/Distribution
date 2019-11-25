@@ -36,10 +36,10 @@ object OptionItem {
     image: GoogleActionsV2UiElementsImage = null,
     synonyms: js.Array[String] = null
   ): OptionItem = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionItem]
   }
 }

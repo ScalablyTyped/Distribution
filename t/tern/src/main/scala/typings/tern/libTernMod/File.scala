@@ -28,7 +28,7 @@ object File {
     asLineChar: /* nodePosition */ Double => Position = null,
     `type`: full | part | delete = null
   ): File = {
-    val __obj = js.Dynamic.literal(ast = ast, name = name, scope = scope, text = text)
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (asLineChar != null) __obj.updateDynamic("asLineChar")(js.Any.fromFunction1(asLineChar))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]

@@ -25,7 +25,7 @@ object Anon_BoolCount {
     strCount: Double,
     strTableSize: Double
   ): Anon_BoolCount = {
-    val __obj = js.Dynamic.literal(boolCount = boolCount, dataSize = dataSize, headerSize = headerSize, lastStrTableOffset = lastStrTableOffset, numCount = numCount, strCount = strCount, strTableSize = strTableSize)
+    val __obj = js.Dynamic.literal(boolCount = boolCount.asInstanceOf[js.Any], dataSize = dataSize.asInstanceOf[js.Any], headerSize = headerSize.asInstanceOf[js.Any], lastStrTableOffset = lastStrTableOffset.asInstanceOf[js.Any], numCount = numCount.asInstanceOf[js.Any], strCount = strCount.asInstanceOf[js.Any], strTableSize = strTableSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BoolCount]
   }

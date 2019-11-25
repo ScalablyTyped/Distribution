@@ -1,13 +1,12 @@
 package typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreMod
 
-import typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.counter
 import typings.std.HTMLCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Counter extends FontawesomeObject {
-  val `type`: counter
+  val `type`: typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.counter
 }
 
 object Counter {
@@ -16,11 +15,11 @@ object Counter {
     `abstract`: js.Array[AbstractElement],
     html: js.Array[String],
     node: HTMLCollection,
-    `type`: counter
+    `type`: typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.counter
   ): Counter = {
-    val __obj = js.Dynamic.literal(html = html, node = node)
-    __obj.updateDynamic("abstract")(`abstract`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Counter]
   }
 }

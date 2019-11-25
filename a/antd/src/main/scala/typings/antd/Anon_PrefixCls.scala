@@ -19,7 +19,7 @@ object Anon_PrefixCls {
     routes: Requireable[js.Array[_]],
     separator: Requireable[ReactNodeLike]
   ): Anon_PrefixCls = {
-    val __obj = js.Dynamic.literal(prefixCls = prefixCls, routes = routes, separator = separator)
+    val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrefixCls]
   }

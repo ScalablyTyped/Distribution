@@ -18,7 +18,7 @@ trait CoreProviderParentApp extends js.Object {
 object CoreProviderParentApp {
   @scala.inline
   def apply(config: Anon_ViewName, global: Anon_B, manifestId: String): CoreProviderParentApp = {
-    val __obj = js.Dynamic.literal(config = config, global = global, manifestId = manifestId)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], manifestId = manifestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CoreProviderParentApp]
   }

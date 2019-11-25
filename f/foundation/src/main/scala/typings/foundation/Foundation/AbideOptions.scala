@@ -26,13 +26,13 @@ object AbideOptions {
     validators: js.Object = null
   ): AbideOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(error_labels)) __obj.updateDynamic("error_labels")(error_labels)
-    if (!js.isUndefined(focus_on_invalid)) __obj.updateDynamic("focus_on_invalid")(focus_on_invalid)
-    if (!js.isUndefined(live_validate)) __obj.updateDynamic("live_validate")(live_validate)
-    if (patterns != null) __obj.updateDynamic("patterns")(patterns)
+    if (!js.isUndefined(error_labels)) __obj.updateDynamic("error_labels")(error_labels.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus_on_invalid)) __obj.updateDynamic("focus_on_invalid")(focus_on_invalid.asInstanceOf[js.Any])
+    if (!js.isUndefined(live_validate)) __obj.updateDynamic("live_validate")(live_validate.asInstanceOf[js.Any])
+    if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate_on_blur)) __obj.updateDynamic("validate_on_blur")(validate_on_blur)
-    if (validators != null) __obj.updateDynamic("validators")(validators)
+    if (!js.isUndefined(validate_on_blur)) __obj.updateDynamic("validate_on_blur")(validate_on_blur.asInstanceOf[js.Any])
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbideOptions]
   }
 }

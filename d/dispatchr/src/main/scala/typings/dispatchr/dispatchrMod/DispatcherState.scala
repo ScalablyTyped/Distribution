@@ -12,7 +12,7 @@ trait DispatcherState extends js.Object {
 object DispatcherState {
   @scala.inline
   def apply(stores: StringDictionary[js.Any]): DispatcherState = {
-    val __obj = js.Dynamic.literal(stores = stores)
+    val __obj = js.Dynamic.literal(stores = stores.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DispatcherState]
   }

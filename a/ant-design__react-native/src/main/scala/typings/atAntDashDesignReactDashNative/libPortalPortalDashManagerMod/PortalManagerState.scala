@@ -11,7 +11,7 @@ trait PortalManagerState extends js.Object {
 object PortalManagerState {
   @scala.inline
   def apply(portals: js.Array[_]): PortalManagerState = {
-    val __obj = js.Dynamic.literal(portals = portals)
+    val __obj = js.Dynamic.literal(portals = portals.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PortalManagerState]
   }

@@ -22,10 +22,10 @@ object DataSourceGroupItem {
     field: String = null
   ): DataSourceGroupItem = {
     val __obj = js.Dynamic.literal()
-    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates)
+    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates.asInstanceOf[js.Any])
     if (compare != null) __obj.updateDynamic("compare")(js.Any.fromFunction2(compare))
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceGroupItem]
   }
 }

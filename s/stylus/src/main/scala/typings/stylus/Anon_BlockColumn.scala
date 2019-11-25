@@ -29,8 +29,8 @@ object Anon_BlockColumn {
     lineno: Double,
     `val`: String
   ): Anon_BlockColumn = {
-    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, expr = expr, filename = filename, key = key, lineno = lineno)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BlockColumn]
   }
 }

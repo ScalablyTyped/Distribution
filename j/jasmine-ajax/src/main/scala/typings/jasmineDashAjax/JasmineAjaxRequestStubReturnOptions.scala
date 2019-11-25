@@ -23,10 +23,10 @@ object JasmineAjaxRequestStubReturnOptions {
     status: Int | Double = null
   ): JasmineAjaxRequestStubReturnOptions = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
-    if (responseText != null) __obj.updateDynamic("responseText")(responseText)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
+    if (responseText != null) __obj.updateDynamic("responseText")(responseText.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[JasmineAjaxRequestStubReturnOptions]
   }

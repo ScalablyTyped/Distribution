@@ -12,7 +12,7 @@ trait PollOption extends js.Object {
 object PollOption {
   @scala.inline
   def apply(text: String, voter_count: Double): PollOption = {
-    val __obj = js.Dynamic.literal(text = text, voter_count = voter_count)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], voter_count = voter_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PollOption]
   }

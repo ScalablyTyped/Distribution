@@ -13,8 +13,8 @@ trait Document extends Node {
 object Document {
   @scala.inline
   def apply(definitions: js.Array[Definition], kind: String, loc: Location = null): Document = {
-    val __obj = js.Dynamic.literal(definitions = definitions, kind = kind)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
 }

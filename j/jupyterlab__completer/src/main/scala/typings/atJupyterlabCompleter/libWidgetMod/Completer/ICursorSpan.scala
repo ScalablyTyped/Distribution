@@ -22,7 +22,7 @@ trait ICursorSpan extends JSONObject {
 object ICursorSpan {
   @scala.inline
   def apply(end: Double, start: Double): ICursorSpan = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICursorSpan]
   }

@@ -62,9 +62,9 @@ object Type {
     toJni: /* value */ js.Any => _ = null,
     write: (/* address */ NativePointerValue, /* value */ js.Any) => Unit = null
   ): Type = {
-    val __obj = js.Dynamic.literal(byteSize = byteSize, isCompatible = js.Any.fromFunction1(isCompatible), name = name, size = size)
-    __obj.updateDynamic("type")(`type`)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(byteSize = byteSize.asInstanceOf[js.Any], isCompatible = js.Any.fromFunction1(isCompatible), name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (fromJni != null) __obj.updateDynamic("fromJni")(js.Any.fromFunction1(fromJni))
     if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction1(read))
     if (toJni != null) __obj.updateDynamic("toJni")(js.Any.fromFunction1(toJni))

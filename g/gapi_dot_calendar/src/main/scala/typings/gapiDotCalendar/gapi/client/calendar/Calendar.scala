@@ -26,10 +26,10 @@ object Calendar {
     location: String = null,
     timeZone: String = null
   ): Calendar = {
-    val __obj = js.Dynamic.literal(etag = etag, id = id, kind = kind, summary = summary)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calendar]
   }
 }

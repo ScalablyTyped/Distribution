@@ -13,7 +13,7 @@ trait CommandHelpSchemaInput extends js.Object {
 object CommandHelpSchemaInput {
   @scala.inline
   def apply(name: String, required: Boolean, summary: String): CommandHelpSchemaInput = {
-    val __obj = js.Dynamic.literal(name = name, required = required, summary = summary)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommandHelpSchemaInput]
   }

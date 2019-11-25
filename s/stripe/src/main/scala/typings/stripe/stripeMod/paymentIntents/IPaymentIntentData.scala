@@ -62,14 +62,14 @@ object IPaymentIntentData {
   ): IPaymentIntentData = {
     val __obj = js.Dynamic.literal()
     if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
-    if (capture_method != null) __obj.updateDynamic("capture_method")(capture_method)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
-    if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage)
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
-    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
+    if (capture_method != null) __obj.updateDynamic("capture_method")(capture_method.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
+    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
+    if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage.asInstanceOf[js.Any])
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
+    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentData]
   }
 }

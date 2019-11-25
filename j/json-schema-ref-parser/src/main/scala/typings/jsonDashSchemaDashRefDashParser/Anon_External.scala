@@ -24,7 +24,7 @@ object Anon_External {
     http: HTTPResolverOptions | Boolean = null
   ): Anon_External = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external)
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_External]

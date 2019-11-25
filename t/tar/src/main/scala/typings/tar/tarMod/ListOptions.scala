@@ -54,13 +54,13 @@ object ListOptions {
     strict: js.UndefOr[Boolean] = js.undefined
   ): ListOptions = {
     val __obj = js.Dynamic.literal()
-    if (C != null) __obj.updateDynamic("C")(C)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (C != null) __obj.updateDynamic("C")(C.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
     if (maxReadSize != null) __obj.updateDynamic("maxReadSize")(maxReadSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(noResume)) __obj.updateDynamic("noResume")(noResume)
+    if (!js.isUndefined(noResume)) __obj.updateDynamic("noResume")(noResume.asInstanceOf[js.Any])
     if (onentry != null) __obj.updateDynamic("onentry")(js.Any.fromFunction1(onentry))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOptions]
   }
 }

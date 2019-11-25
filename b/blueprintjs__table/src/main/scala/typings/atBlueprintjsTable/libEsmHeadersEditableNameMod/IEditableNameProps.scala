@@ -50,10 +50,10 @@ object IEditableNameProps {
     onConfirm: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit = null
   ): IEditableNameProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction2(onCancel))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction2(onConfirm))

@@ -36,14 +36,14 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (appear != null) __obj.updateDynamic("appear")(js.Any.fromFunction2(appear))
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (data_attribute != null) __obj.updateDynamic("data_attribute")(data_attribute)
-    if (effect != null) __obj.updateDynamic("effect")(effect)
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (data_attribute != null) __obj.updateDynamic("data_attribute")(data_attribute.asInstanceOf[js.Any])
+    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (failure_limit != null) __obj.updateDynamic("failure_limit")(failure_limit.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction2(load))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (!js.isUndefined(skip_invisible)) __obj.updateDynamic("skip_invisible")(skip_invisible)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip_invisible)) __obj.updateDynamic("skip_invisible")(skip_invisible.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

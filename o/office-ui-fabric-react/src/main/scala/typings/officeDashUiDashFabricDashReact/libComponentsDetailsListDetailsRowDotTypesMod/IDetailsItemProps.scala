@@ -66,15 +66,15 @@ object IDetailsItemProps {
     viewport: IViewport = null
   ): IDetailsItemProps = {
     val __obj = js.Dynamic.literal()
-    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps)
-    if (checkboxVisibility != null) __obj.updateDynamic("checkboxVisibility")(checkboxVisibility)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
+    if (checkboxVisibility != null) __obj.updateDynamic("checkboxVisibility")(checkboxVisibility.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (groupNestingDepth != null) __obj.updateDynamic("groupNestingDepth")(groupNestingDepth.asInstanceOf[js.Any])
     if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
     if (rowWidth != null) __obj.updateDynamic("rowWidth")(rowWidth.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection)
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsItemProps]
   }
 }

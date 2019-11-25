@@ -18,9 +18,9 @@ object Anon_KdfAlgorithm {
     oaepHashAlgorithm: String = null
   ): Anon_KdfAlgorithm = {
     val __obj = js.Dynamic.literal()
-    if (kdfAlgorithm != null) __obj.updateDynamic("kdfAlgorithm")(kdfAlgorithm)
+    if (kdfAlgorithm != null) __obj.updateDynamic("kdfAlgorithm")(kdfAlgorithm.asInstanceOf[js.Any])
     if (kekEncryptionLength != null) __obj.updateDynamic("kekEncryptionLength")(kekEncryptionLength.asInstanceOf[js.Any])
-    if (oaepHashAlgorithm != null) __obj.updateDynamic("oaepHashAlgorithm")(oaepHashAlgorithm)
+    if (oaepHashAlgorithm != null) __obj.updateDynamic("oaepHashAlgorithm")(oaepHashAlgorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KdfAlgorithm]
   }
 }

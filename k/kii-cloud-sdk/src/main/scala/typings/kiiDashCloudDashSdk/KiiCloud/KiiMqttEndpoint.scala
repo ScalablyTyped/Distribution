@@ -31,8 +31,8 @@ object KiiMqttEndpoint {
     portWSS: Double,
     username: String
   ): KiiMqttEndpoint = {
-    val __obj = js.Dynamic.literal(host = host, installationID = installationID, mqttTopic = mqttTopic, password = password, portSSL = portSSL, portTCP = portTCP, portWS = portWS, portWSS = portWSS, username = username)
-    __obj.updateDynamic("X-MQTT-TTL")(`X-MQTT-TTL`)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], installationID = installationID.asInstanceOf[js.Any], mqttTopic = mqttTopic.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], portSSL = portSSL.asInstanceOf[js.Any], portTCP = portTCP.asInstanceOf[js.Any], portWS = portWS.asInstanceOf[js.Any], portWSS = portWSS.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    __obj.updateDynamic("X-MQTT-TTL")(`X-MQTT-TTL`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KiiMqttEndpoint]
   }
 }

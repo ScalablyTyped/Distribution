@@ -24,7 +24,7 @@ object FaxServer_OnDeviceStatusChange_Parameter {
     lDeviceId: Double,
     pFaxServer: FaxServer
   ): FaxServer_OnDeviceStatusChange_Parameter = {
-    val __obj = js.Dynamic.literal(bPoweredOff = bPoweredOff, bReceiving = bReceiving, bRinging = bRinging, bSending = bSending, lDeviceId = lDeviceId, pFaxServer = pFaxServer)
+    val __obj = js.Dynamic.literal(bPoweredOff = bPoweredOff.asInstanceOf[js.Any], bReceiving = bReceiving.asInstanceOf[js.Any], bRinging = bRinging.asInstanceOf[js.Any], bSending = bSending.asInstanceOf[js.Any], lDeviceId = lDeviceId.asInstanceOf[js.Any], pFaxServer = pFaxServer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FaxServer_OnDeviceStatusChange_Parameter]
   }

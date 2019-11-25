@@ -15,7 +15,7 @@ object Anon_Node {
   @scala.inline
   def apply(node: Node | Bus, `type`: String): Anon_Node = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Node]
   }
 }

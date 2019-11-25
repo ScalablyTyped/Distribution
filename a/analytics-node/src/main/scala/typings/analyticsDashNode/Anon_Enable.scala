@@ -20,10 +20,10 @@ object Anon_Enable {
     host: String = null
   ): Anon_Enable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (flushAt != null) __obj.updateDynamic("flushAt")(flushAt.asInstanceOf[js.Any])
     if (flushInterval != null) __obj.updateDynamic("flushInterval")(flushInterval.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Enable]
   }
 }

@@ -62,14 +62,14 @@ object FeatureFormProperties {
   ): FeatureFormProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
-    if (feature != null) __obj.updateDynamic("feature")(feature)
-    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig)
-    if (groupDisplay != null) __obj.updateDynamic("groupDisplay")(groupDisplay)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
+    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
+    if (groupDisplay != null) __obj.updateDynamic("groupDisplay")(groupDisplay.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureFormProperties]
   }
 }

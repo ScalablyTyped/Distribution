@@ -26,7 +26,7 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(active: String, disabled: String, placeholder: String, visible: String): _Impl = {
-    val __obj = js.Dynamic.literal(active = active, disabled = disabled, placeholder = placeholder, visible = visible)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

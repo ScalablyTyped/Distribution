@@ -17,7 +17,7 @@ trait Put[TResponse] extends js.Object {
 object Put {
   @scala.inline
   def apply[TResponse](request: Anon_MethodPUT, response: Anon_Data[TResponse]): Put[TResponse] = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Put[TResponse]]
   }

@@ -22,10 +22,10 @@ object ILinterOptions {
     quiet: js.UndefOr[Boolean] = js.undefined,
     rulesDirectory: String | js.Array[String] = null
   ): ILinterOptions = {
-    val __obj = js.Dynamic.literal(fix = fix)
+    val __obj = js.Dynamic.literal(fix = fix.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (formattersDirectory != null) __obj.updateDynamic("formattersDirectory")(formattersDirectory)
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (formattersDirectory != null) __obj.updateDynamic("formattersDirectory")(formattersDirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
     if (rulesDirectory != null) __obj.updateDynamic("rulesDirectory")(rulesDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinterOptions]
   }

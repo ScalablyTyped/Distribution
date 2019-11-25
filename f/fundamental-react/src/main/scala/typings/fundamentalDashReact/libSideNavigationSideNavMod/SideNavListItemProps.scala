@@ -52,17 +52,17 @@ object SideNavListItemProps {
     url: String = null
   ): SideNavListItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isSubItem)) __obj.updateDynamic("isSubItem")(isSubItem)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSubItem)) __obj.updateDynamic("isSubItem")(isSubItem.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onItemSelect != null) __obj.updateDynamic("onItemSelect")(js.Any.fromFunction3(onItemSelect))
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (selectedId != null) __obj.updateDynamic("selectedId")(selectedId)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (selectedId != null) __obj.updateDynamic("selectedId")(selectedId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SideNavListItemProps]
   }
 }

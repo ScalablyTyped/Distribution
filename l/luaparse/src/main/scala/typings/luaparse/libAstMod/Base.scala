@@ -15,7 +15,7 @@ object Base {
   def apply[TType /* <: String */](`type`: TType, loc: Anon_End = null): Base[TType] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base[TType]]
   }
 }

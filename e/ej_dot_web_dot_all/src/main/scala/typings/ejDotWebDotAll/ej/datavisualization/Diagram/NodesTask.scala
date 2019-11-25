@@ -36,9 +36,9 @@ object NodesTask {
     `type`: BPMNTasks | String = null
   ): NodesTask = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(call)) __obj.updateDynamic("call")(call)
-    if (!js.isUndefined(compensation)) __obj.updateDynamic("compensation")(compensation)
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (!js.isUndefined(call)) __obj.updateDynamic("call")(call.asInstanceOf[js.Any])
+    if (!js.isUndefined(compensation)) __obj.updateDynamic("compensation")(compensation.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesTask]

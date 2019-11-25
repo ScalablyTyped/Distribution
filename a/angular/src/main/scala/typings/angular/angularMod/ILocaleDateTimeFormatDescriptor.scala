@@ -37,7 +37,7 @@ object ILocaleDateTimeFormatDescriptor {
     shortDate: String,
     shortTime: String
   ): ILocaleDateTimeFormatDescriptor = {
-    val __obj = js.Dynamic.literal(AMPMS = AMPMS, DAY = DAY, MONTH = MONTH, SHORTDAY = SHORTDAY, SHORTMONTH = SHORTMONTH, fullDate = fullDate, longDate = longDate, medium = medium, mediumDate = mediumDate, mediumTime = mediumTime, short = short, shortDate = shortDate, shortTime = shortTime)
+    val __obj = js.Dynamic.literal(AMPMS = AMPMS.asInstanceOf[js.Any], DAY = DAY.asInstanceOf[js.Any], MONTH = MONTH.asInstanceOf[js.Any], SHORTDAY = SHORTDAY.asInstanceOf[js.Any], SHORTMONTH = SHORTMONTH.asInstanceOf[js.Any], fullDate = fullDate.asInstanceOf[js.Any], longDate = longDate.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], mediumDate = mediumDate.asInstanceOf[js.Any], mediumTime = mediumTime.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any], shortDate = shortDate.asInstanceOf[js.Any], shortTime = shortTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILocaleDateTimeFormatDescriptor]
   }

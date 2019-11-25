@@ -27,19 +27,17 @@ object ILabel {
   @scala.inline
   def apply(
     IComponent: IComponent = null,
-    autoEl: js.Any = null,
     forId: java.lang.String = null,
     html: java.lang.String = null,
     setText: (/* text */ js.UndefOr[java.lang.String], /* encode */ js.UndefOr[Boolean]) => ILabel = null,
     text: java.lang.String = null
   ): ILabel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (autoEl != null) __obj.updateDynamic("autoEl")(autoEl)
-    if (forId != null) __obj.updateDynamic("forId")(forId)
-    if (html != null) __obj.updateDynamic("html")(html)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (forId != null) __obj.updateDynamic("forId")(forId.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction2(setText))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILabel]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_Equals extends js.Object {
 object Anon_Equals {
   @scala.inline
   def apply(equals: Double, notEquals: Double): Anon_Equals = {
-    val __obj = js.Dynamic.literal(equals = equals, notEquals = notEquals)
+    val __obj = js.Dynamic.literal(equals = equals.asInstanceOf[js.Any], notEquals = notEquals.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Equals]
   }

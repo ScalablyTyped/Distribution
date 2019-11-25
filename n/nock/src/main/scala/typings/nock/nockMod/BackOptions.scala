@@ -23,7 +23,7 @@ object BackOptions {
     if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
     if (afterRecord != null) __obj.updateDynamic("afterRecord")(js.Any.fromFunction1(afterRecord))
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
-    if (recorder != null) __obj.updateDynamic("recorder")(recorder)
+    if (recorder != null) __obj.updateDynamic("recorder")(recorder.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackOptions]
   }
 }

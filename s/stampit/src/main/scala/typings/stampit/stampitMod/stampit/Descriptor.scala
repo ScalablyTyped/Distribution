@@ -54,17 +54,17 @@ object Descriptor {
     staticPropertyDescriptors: PropertyDescriptorMap = null
   ): Descriptor[Obj, S̤t̤a̤m̤p̤] = {
     val __obj = js.Dynamic.literal()
-    if (composers != null) __obj.updateDynamic("composers")(composers)
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
-    if (deepConfiguration != null) __obj.updateDynamic("deepConfiguration")(deepConfiguration)
-    if (deepProperties != null) __obj.updateDynamic("deepProperties")(deepProperties)
+    if (composers != null) __obj.updateDynamic("composers")(composers.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (deepConfiguration != null) __obj.updateDynamic("deepConfiguration")(deepConfiguration.asInstanceOf[js.Any])
+    if (deepProperties != null) __obj.updateDynamic("deepProperties")(deepProperties.asInstanceOf[js.Any])
     if (initializers != null) __obj.updateDynamic("initializers")(initializers.asInstanceOf[js.Any])
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (propertyDescriptors != null) __obj.updateDynamic("propertyDescriptors")(propertyDescriptors)
-    if (staticDeepProperties != null) __obj.updateDynamic("staticDeepProperties")(staticDeepProperties)
-    if (staticProperties != null) __obj.updateDynamic("staticProperties")(staticProperties)
-    if (staticPropertyDescriptors != null) __obj.updateDynamic("staticPropertyDescriptors")(staticPropertyDescriptors)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (propertyDescriptors != null) __obj.updateDynamic("propertyDescriptors")(propertyDescriptors.asInstanceOf[js.Any])
+    if (staticDeepProperties != null) __obj.updateDynamic("staticDeepProperties")(staticDeepProperties.asInstanceOf[js.Any])
+    if (staticProperties != null) __obj.updateDynamic("staticProperties")(staticProperties.asInstanceOf[js.Any])
+    if (staticPropertyDescriptors != null) __obj.updateDynamic("staticPropertyDescriptors")(staticPropertyDescriptors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Descriptor[Obj, S̤t̤a̤m̤p̤]]
   }
 }

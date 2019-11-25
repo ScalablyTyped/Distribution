@@ -35,15 +35,15 @@ object RecordingOptions {
     SampleRate: Int | Double = null
   ): RecordingOptions = {
     val __obj = js.Dynamic.literal()
-    if (AudioEncoding != null) __obj.updateDynamic("AudioEncoding")(AudioEncoding)
+    if (AudioEncoding != null) __obj.updateDynamic("AudioEncoding")(AudioEncoding.asInstanceOf[js.Any])
     if (AudioEncodingBitRate != null) __obj.updateDynamic("AudioEncodingBitRate")(AudioEncodingBitRate.asInstanceOf[js.Any])
     if (AudioQuality != null) __obj.updateDynamic("AudioQuality")(AudioQuality.asInstanceOf[js.Any])
     if (AudioSource != null) __obj.updateDynamic("AudioSource")(AudioSource.asInstanceOf[js.Any])
     if (Channels != null) __obj.updateDynamic("Channels")(Channels.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeBase64)) __obj.updateDynamic("IncludeBase64")(IncludeBase64)
-    if (!js.isUndefined(MeasurementMode)) __obj.updateDynamic("MeasurementMode")(MeasurementMode)
-    if (!js.isUndefined(MeteringEnabled)) __obj.updateDynamic("MeteringEnabled")(MeteringEnabled)
-    if (OutputFormat != null) __obj.updateDynamic("OutputFormat")(OutputFormat)
+    if (!js.isUndefined(IncludeBase64)) __obj.updateDynamic("IncludeBase64")(IncludeBase64.asInstanceOf[js.Any])
+    if (!js.isUndefined(MeasurementMode)) __obj.updateDynamic("MeasurementMode")(MeasurementMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(MeteringEnabled)) __obj.updateDynamic("MeteringEnabled")(MeteringEnabled.asInstanceOf[js.Any])
+    if (OutputFormat != null) __obj.updateDynamic("OutputFormat")(OutputFormat.asInstanceOf[js.Any])
     if (SampleRate != null) __obj.updateDynamic("SampleRate")(SampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordingOptions]
   }

@@ -18,8 +18,8 @@ trait ConnectionAuthentication extends js.Object {
 object ConnectionAuthentication {
   @scala.inline
   def apply(options: ConnectionAuthenticationOptions, `type`: String = null): ConnectionAuthentication = {
-    val __obj = js.Dynamic.literal(options = options)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAuthentication]
   }
 }

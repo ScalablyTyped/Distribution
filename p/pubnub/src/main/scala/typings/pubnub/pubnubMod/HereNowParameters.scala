@@ -21,10 +21,10 @@ object HereNowParameters {
     includeUUIDs: js.UndefOr[Boolean] = js.undefined
   ): HereNowParameters = {
     val __obj = js.Dynamic.literal()
-    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups)
-    if (channels != null) __obj.updateDynamic("channels")(channels)
-    if (!js.isUndefined(includeState)) __obj.updateDynamic("includeState")(includeState)
-    if (!js.isUndefined(includeUUIDs)) __obj.updateDynamic("includeUUIDs")(includeUUIDs)
+    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeState)) __obj.updateDynamic("includeState")(includeState.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeUUIDs)) __obj.updateDynamic("includeUUIDs")(includeUUIDs.asInstanceOf[js.Any])
     __obj.asInstanceOf[HereNowParameters]
   }
 }

@@ -15,8 +15,8 @@ trait CastParam extends js.Object {
 object CastParam {
   @scala.inline
   def apply(active: Boolean, available: Boolean, deviceName: String, `type`: cast): CastParam = {
-    val __obj = js.Dynamic.literal(active = active, available = available, deviceName = deviceName)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], available = available.asInstanceOf[js.Any], deviceName = deviceName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CastParam]
   }
 }

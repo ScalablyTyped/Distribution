@@ -41,13 +41,13 @@ object UpdateDocumentParams {
     metadata: String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): UpdateDocumentParams = {
-    val __obj = js.Dynamic.literal(collection_id = collection_id, document_id = document_id, environment_id = environment_id)
+    val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], document_id = document_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (file_content_type != null) __obj.updateDynamic("file_content_type")(file_content_type.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDocumentParams]
   }
 }

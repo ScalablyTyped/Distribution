@@ -13,7 +13,7 @@ trait Anon_OnClose extends js.Object {
 object Anon_OnClose {
   @scala.inline
   def apply(onClose: () => Unit, prefixCls: String, visible: Boolean): Anon_OnClose = {
-    val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose), prefixCls = prefixCls, visible = visible)
+    val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose), prefixCls = prefixCls.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OnClose]
   }

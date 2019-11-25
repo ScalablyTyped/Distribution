@@ -22,7 +22,7 @@ trait SearchResult extends js.Object {
 object SearchResult {
   @scala.inline
   def apply(count: Double, info: String, tips: js.Array[Tip]): SearchResult = {
-    val __obj = js.Dynamic.literal(count = count, info = info, tips = tips)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchResult]
   }

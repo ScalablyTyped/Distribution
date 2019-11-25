@@ -13,8 +13,8 @@ object WebStaticConfig {
   @scala.inline
   def apply(mount: String = null, path: String = null): WebStaticConfig = {
     val __obj = js.Dynamic.literal()
-    if (mount != null) __obj.updateDynamic("mount")(mount)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (mount != null) __obj.updateDynamic("mount")(mount.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebStaticConfig]
   }
 }

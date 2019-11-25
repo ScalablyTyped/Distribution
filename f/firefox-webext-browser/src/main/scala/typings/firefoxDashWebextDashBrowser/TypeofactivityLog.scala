@@ -16,7 +16,7 @@ object TypeofactivityLog {
   def apply(
     onExtensionActivity: _ActivityLogOnExtensionActivityEvent[js.Function1[/* details */ Anon_Data, Unit]]
   ): TypeofactivityLog = {
-    val __obj = js.Dynamic.literal(onExtensionActivity = onExtensionActivity)
+    val __obj = js.Dynamic.literal(onExtensionActivity = onExtensionActivity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofactivityLog]
   }

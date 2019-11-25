@@ -23,8 +23,8 @@ object EmailTemplates {
     verifyEmail: typings.meteorDashTypings.meteorAccountsDashBaseMod.EmailFields,
     headers: typings.meteorDashTypings.meteorAccountsDashBaseMod.Header = null
   ): EmailTemplates = {
-    val __obj = js.Dynamic.literal(enrollAccount = enrollAccount, from = from, resetPassword = resetPassword, siteName = siteName, verifyEmail = verifyEmail)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(enrollAccount = enrollAccount.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], resetPassword = resetPassword.asInstanceOf[js.Any], siteName = siteName.asInstanceOf[js.Any], verifyEmail = verifyEmail.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailTemplates]
   }
 }

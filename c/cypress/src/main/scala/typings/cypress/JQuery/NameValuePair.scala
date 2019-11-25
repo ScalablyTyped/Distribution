@@ -15,7 +15,7 @@ trait NameValuePair extends js.Object {
 object NameValuePair {
   @scala.inline
   def apply(name: String, value: String): NameValuePair = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NameValuePair]
   }

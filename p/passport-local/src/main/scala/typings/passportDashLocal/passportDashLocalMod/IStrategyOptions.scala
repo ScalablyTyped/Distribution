@@ -21,10 +21,10 @@ object IStrategyOptions {
     usernameField: String = null
   ): IStrategyOptions = {
     val __obj = js.Dynamic.literal()
-    if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
-    if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField)
-    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session)
-    if (usernameField != null) __obj.updateDynamic("usernameField")(usernameField)
+    if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
+    if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (usernameField != null) __obj.updateDynamic("usernameField")(usernameField.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStrategyOptions]
   }
 }

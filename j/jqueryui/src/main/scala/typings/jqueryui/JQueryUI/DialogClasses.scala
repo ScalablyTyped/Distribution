@@ -34,17 +34,17 @@ object DialogClasses {
     `ui-widget-overlay`: String = null
   ): DialogClasses = {
     val __obj = js.Dynamic.literal()
-    if (`ui-dialog` != null) __obj.updateDynamic("ui-dialog")(`ui-dialog`)
-    if (`ui-dialog-buttonpane` != null) __obj.updateDynamic("ui-dialog-buttonpane")(`ui-dialog-buttonpane`)
-    if (`ui-dialog-buttons` != null) __obj.updateDynamic("ui-dialog-buttons")(`ui-dialog-buttons`)
-    if (`ui-dialog-buttonset` != null) __obj.updateDynamic("ui-dialog-buttonset")(`ui-dialog-buttonset`)
-    if (`ui-dialog-content` != null) __obj.updateDynamic("ui-dialog-content")(`ui-dialog-content`)
-    if (`ui-dialog-dragging` != null) __obj.updateDynamic("ui-dialog-dragging")(`ui-dialog-dragging`)
-    if (`ui-dialog-resizing` != null) __obj.updateDynamic("ui-dialog-resizing")(`ui-dialog-resizing`)
-    if (`ui-dialog-title` != null) __obj.updateDynamic("ui-dialog-title")(`ui-dialog-title`)
-    if (`ui-dialog-titlebar` != null) __obj.updateDynamic("ui-dialog-titlebar")(`ui-dialog-titlebar`)
-    if (`ui-dialog-titlebar-close` != null) __obj.updateDynamic("ui-dialog-titlebar-close")(`ui-dialog-titlebar-close`)
-    if (`ui-widget-overlay` != null) __obj.updateDynamic("ui-widget-overlay")(`ui-widget-overlay`)
+    if (`ui-dialog` != null) __obj.updateDynamic("ui-dialog")(`ui-dialog`.asInstanceOf[js.Any])
+    if (`ui-dialog-buttonpane` != null) __obj.updateDynamic("ui-dialog-buttonpane")(`ui-dialog-buttonpane`.asInstanceOf[js.Any])
+    if (`ui-dialog-buttons` != null) __obj.updateDynamic("ui-dialog-buttons")(`ui-dialog-buttons`.asInstanceOf[js.Any])
+    if (`ui-dialog-buttonset` != null) __obj.updateDynamic("ui-dialog-buttonset")(`ui-dialog-buttonset`.asInstanceOf[js.Any])
+    if (`ui-dialog-content` != null) __obj.updateDynamic("ui-dialog-content")(`ui-dialog-content`.asInstanceOf[js.Any])
+    if (`ui-dialog-dragging` != null) __obj.updateDynamic("ui-dialog-dragging")(`ui-dialog-dragging`.asInstanceOf[js.Any])
+    if (`ui-dialog-resizing` != null) __obj.updateDynamic("ui-dialog-resizing")(`ui-dialog-resizing`.asInstanceOf[js.Any])
+    if (`ui-dialog-title` != null) __obj.updateDynamic("ui-dialog-title")(`ui-dialog-title`.asInstanceOf[js.Any])
+    if (`ui-dialog-titlebar` != null) __obj.updateDynamic("ui-dialog-titlebar")(`ui-dialog-titlebar`.asInstanceOf[js.Any])
+    if (`ui-dialog-titlebar-close` != null) __obj.updateDynamic("ui-dialog-titlebar-close")(`ui-dialog-titlebar-close`.asInstanceOf[js.Any])
+    if (`ui-widget-overlay` != null) __obj.updateDynamic("ui-widget-overlay")(`ui-widget-overlay`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogClasses]
   }
 }

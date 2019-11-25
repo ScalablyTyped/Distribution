@@ -15,9 +15,9 @@ object Anon_Format {
   @scala.inline
   def apply(format: String = null, parsed: StringDictionary[String] = null, raw: String = null): Anon_Format = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (parsed != null) __obj.updateDynamic("parsed")(parsed)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (parsed != null) __obj.updateDynamic("parsed")(parsed.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]
   }
 }

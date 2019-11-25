@@ -11,7 +11,7 @@ trait OAuthTokenOptions extends js.Object {
 object OAuthTokenOptions {
   @scala.inline
   def apply(secure: Boolean): OAuthTokenOptions = {
-    val __obj = js.Dynamic.literal(secure = secure)
+    val __obj = js.Dynamic.literal(secure = secure.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OAuthTokenOptions]
   }

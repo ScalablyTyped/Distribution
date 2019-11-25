@@ -74,14 +74,14 @@ object relationshipGetSchemesByTagParams {
     view: SceneView = null,
     worldScale: js.UndefOr[Boolean] = js.undefined
   ): relationshipGetSchemesByTagParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, geometryType = geometryType, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme)
-    if (excludedTags != null) __obj.updateDynamic("excludedTags")(excludedTags)
-    if (includedTags != null) __obj.updateDynamic("includedTags")(includedTags)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (view != null) __obj.updateDynamic("view")(view)
-    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale)
+    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme.asInstanceOf[js.Any])
+    if (excludedTags != null) __obj.updateDynamic("excludedTags")(excludedTags.asInstanceOf[js.Any])
+    if (includedTags != null) __obj.updateDynamic("includedTags")(includedTags.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[relationshipGetSchemesByTagParams]
   }
 }

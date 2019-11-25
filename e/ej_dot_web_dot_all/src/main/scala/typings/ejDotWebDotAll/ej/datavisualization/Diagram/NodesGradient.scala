@@ -24,9 +24,9 @@ object NodesGradient {
     Stop: NodesGradientStop = null
   ): NodesGradient = {
     val __obj = js.Dynamic.literal()
-    if (LinearGradient != null) __obj.updateDynamic("LinearGradient")(LinearGradient)
-    if (RadialGradient != null) __obj.updateDynamic("RadialGradient")(RadialGradient)
-    if (Stop != null) __obj.updateDynamic("Stop")(Stop)
+    if (LinearGradient != null) __obj.updateDynamic("LinearGradient")(LinearGradient.asInstanceOf[js.Any])
+    if (RadialGradient != null) __obj.updateDynamic("RadialGradient")(RadialGradient.asInstanceOf[js.Any])
+    if (Stop != null) __obj.updateDynamic("Stop")(Stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesGradient]
   }
 }

@@ -13,7 +13,7 @@ trait IssuesListResponseItemRepositoryPermissions extends js.Object {
 object IssuesListResponseItemRepositoryPermissions {
   @scala.inline
   def apply(admin: Boolean, pull: Boolean, push: Boolean): IssuesListResponseItemRepositoryPermissions = {
-    val __obj = js.Dynamic.literal(admin = admin, pull = pull, push = push)
+    val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssuesListResponseItemRepositoryPermissions]
   }

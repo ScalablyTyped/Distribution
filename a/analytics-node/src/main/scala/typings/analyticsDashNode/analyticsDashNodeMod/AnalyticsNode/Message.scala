@@ -28,11 +28,11 @@ object Message {
     timestamp: Date = null,
     userId: String | Double = null
   ): Message = {
-    val __obj = js.Dynamic.literal(_metadata = _metadata, context = context)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_metadata = _metadata.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }

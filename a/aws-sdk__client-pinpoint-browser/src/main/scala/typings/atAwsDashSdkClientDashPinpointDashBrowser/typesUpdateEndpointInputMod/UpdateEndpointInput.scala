@@ -50,9 +50,9 @@ object UpdateEndpointInput {
     $httpOptions: BrowserHttpOptions = null,
     $maxRetries: Int | Double = null
   ): UpdateEndpointInput = {
-    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, EndpointId = EndpointId, EndpointRequest = EndpointRequest)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointId = EndpointId.asInstanceOf[js.Any], EndpointRequest = EndpointRequest.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointInput]
   }

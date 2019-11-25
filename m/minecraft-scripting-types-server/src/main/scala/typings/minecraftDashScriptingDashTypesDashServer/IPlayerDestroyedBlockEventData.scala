@@ -27,7 +27,7 @@ trait IPlayerDestroyedBlockEventData extends js.Object {
 object IPlayerDestroyedBlockEventData {
   @scala.inline
   def apply(block_identifier: String, block_position: VectorXYZ, player: IEntity): IPlayerDestroyedBlockEventData = {
-    val __obj = js.Dynamic.literal(block_identifier = block_identifier, block_position = block_position, player = player)
+    val __obj = js.Dynamic.literal(block_identifier = block_identifier.asInstanceOf[js.Any], block_position = block_position.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPlayerDestroyedBlockEventData]
   }

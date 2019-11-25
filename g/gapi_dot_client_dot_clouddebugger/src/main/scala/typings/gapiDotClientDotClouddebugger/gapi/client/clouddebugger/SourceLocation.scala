@@ -16,7 +16,7 @@ object SourceLocation {
   def apply(line: Int | Double = null, path: String = null): SourceLocation = {
     val __obj = js.Dynamic.literal()
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceLocation]
   }
 }

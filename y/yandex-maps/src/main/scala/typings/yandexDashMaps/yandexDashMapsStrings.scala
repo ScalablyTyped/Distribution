@@ -1,5 +1,6 @@
 package typings.yandexDashMaps
 
+import typings.yandexDashMaps.yandexDashMapsMod.ControlKey
 import typings.yandexDashMaps.yandexDashMapsMod.ControlSetKey
 import typings.yandexDashMaps.yandexDashMapsMod.ControlSingleKey
 import typings.yandexDashMaps.yandexDashMapsMod._InteractivityModelKey
@@ -25,7 +26,9 @@ object yandexDashMapsStrings {
   sealed trait `cluster#balloonTwoColumns` extends js.Object
   
   @js.native
-  sealed trait default extends ControlSetKey
+  sealed trait default
+    extends ControlKey
+       with ControlSetKey
   
   @js.native
   sealed trait `default#circle` extends _OverlayKey
@@ -67,10 +70,14 @@ object yandexDashMapsStrings {
   sealed trait evenOdd extends js.Object
   
   @js.native
-  sealed trait fullscreenControl extends ControlSingleKey
+  sealed trait fullscreenControl
+    extends ControlKey
+       with ControlSingleKey
   
   @js.native
-  sealed trait geolocationControl extends ControlSingleKey
+  sealed trait geolocationControl
+    extends ControlKey
+       with ControlSingleKey
   
   @js.native
   sealed trait hidden extends js.Object
@@ -115,7 +122,9 @@ object yandexDashMapsStrings {
   sealed trait large extends js.Object
   
   @js.native
-  sealed trait largeMapDefaultSet extends ControlSetKey
+  sealed trait largeMapDefaultSet
+    extends ControlKey
+       with ControlSetKey
   
   @js.native
   sealed trait latlong extends js.Object
@@ -136,7 +145,9 @@ object yandexDashMapsStrings {
   sealed trait medium extends js.Object
   
   @js.native
-  sealed trait mediumMapDefaultSet extends ControlSetKey
+  sealed trait mediumMapDefaultSet
+    extends ControlKey
+       with ControlSetKey
   
   @js.native
   sealed trait metro extends js.Object
@@ -154,13 +165,19 @@ object yandexDashMapsStrings {
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait routeEditor extends ControlSingleKey
+  sealed trait routeEditor
+    extends ControlKey
+       with ControlSingleKey
   
   @js.native
-  sealed trait rulerControl extends ControlSingleKey
+  sealed trait rulerControl
+    extends ControlKey
+       with ControlSingleKey
   
   @js.native
-  sealed trait searchControl extends ControlSingleKey
+  sealed trait searchControl
+    extends ControlKey
+       with ControlSingleKey
   
   @js.native
   sealed trait selectable extends js.Object
@@ -175,7 +192,9 @@ object yandexDashMapsStrings {
   sealed trait small extends js.Object
   
   @js.native
-  sealed trait smallMapDefaultSet extends ControlSetKey
+  sealed trait smallMapDefaultSet
+    extends ControlKey
+       with ControlSetKey
   
   @js.native
   sealed trait static extends js.Object
@@ -193,10 +212,14 @@ object yandexDashMapsStrings {
   sealed trait tile extends js.Object
   
   @js.native
-  sealed trait trafficControl extends ControlSingleKey
+  sealed trait trafficControl
+    extends ControlKey
+       with ControlSingleKey
   
   @js.native
-  sealed trait typeSelector extends ControlSingleKey
+  sealed trait typeSelector
+    extends ControlKey
+       with ControlSingleKey
   
   @js.native
   sealed trait visible extends js.Object
@@ -220,7 +243,9 @@ object yandexDashMapsStrings {
   sealed trait `yandex#search` extends js.Object
   
   @js.native
-  sealed trait zoomControl extends ControlSingleKey
+  sealed trait zoomControl
+    extends ControlKey
+       with ControlSingleKey
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

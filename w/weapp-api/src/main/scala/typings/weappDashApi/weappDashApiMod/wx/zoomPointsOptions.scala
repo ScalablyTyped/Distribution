@@ -20,10 +20,10 @@ object zoomPointsOptions {
     padding: js.Array[Double] = null,
     success: /* res */ js.Any => Unit = null
   ): zoomPointsOptions = {
-    val __obj = js.Dynamic.literal(points = points)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[zoomPointsOptions]
   }

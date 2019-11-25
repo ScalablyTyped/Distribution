@@ -1,10 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.center
 import typings.dojo.dojoStrings.colors
@@ -166,18 +162,64 @@ class ProgressIndicator () extends _WidgetBase {
     */
   def stop(): Unit = js.native
   @JSName("watch")
-  def watch_center(property: center, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_center(
+    property: center,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_colors(property: colors, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_colors(
+    property: colors,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_interval(property: interval, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_interval(
+    property: interval,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_removeOnStop(property: removeOnStop, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_removeOnStop(
+    property: removeOnStop,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_size(property: size, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_size(
+    property: size,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_startSpinning(property: startSpinning, callback: Fn_NewValue): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_startSpinning(
+    property: startSpinning,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

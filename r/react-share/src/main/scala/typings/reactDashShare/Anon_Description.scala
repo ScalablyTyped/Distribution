@@ -14,8 +14,8 @@ trait Anon_Description extends js.Object {
 object Anon_Description {
   @scala.inline
   def apply(media: String, description: String = null): Anon_Description = {
-    val __obj = js.Dynamic.literal(media = media)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Description]
   }
 }

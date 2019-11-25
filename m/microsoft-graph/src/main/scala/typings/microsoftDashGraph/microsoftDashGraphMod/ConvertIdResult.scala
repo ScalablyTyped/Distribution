@@ -20,9 +20,9 @@ object ConvertIdResult {
   @scala.inline
   def apply(errorDetails: GenericError = null, sourceId: String = null, targetId: String = null): ConvertIdResult = {
     val __obj = js.Dynamic.literal()
-    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails)
-    if (sourceId != null) __obj.updateDynamic("sourceId")(sourceId)
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId)
+    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails.asInstanceOf[js.Any])
+    if (sourceId != null) __obj.updateDynamic("sourceId")(sourceId.asInstanceOf[js.Any])
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvertIdResult]
   }
 }

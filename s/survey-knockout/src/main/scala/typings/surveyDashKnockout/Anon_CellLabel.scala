@@ -25,7 +25,7 @@ object Anon_CellLabel {
     label: String,
     root: String
   ): Anon_CellLabel = {
-    val __obj = js.Dynamic.literal(cellLabel = cellLabel, cellText = cellText, cellTextSelected = cellTextSelected, itemChecked = itemChecked, itemDecorator = itemDecorator, label = label, root = root)
+    val __obj = js.Dynamic.literal(cellLabel = cellLabel.asInstanceOf[js.Any], cellText = cellText.asInstanceOf[js.Any], cellTextSelected = cellTextSelected.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CellLabel]
   }

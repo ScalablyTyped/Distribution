@@ -29,11 +29,11 @@ object IOptions {
     spacing: Int | Double = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (edges != null) __obj.updateDynamic("edges")(edges)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

@@ -23,9 +23,9 @@ object PageHeaderTabConfig {
   ): PageHeaderTabConfig = {
     val __obj = js.Dynamic.literal()
     if (onTabChange != null) __obj.updateDynamic("onTabChange")(js.Any.fromFunction1(onTabChange))
-    if (tabActiveKey != null) __obj.updateDynamic("tabActiveKey")(tabActiveKey)
+    if (tabActiveKey != null) __obj.updateDynamic("tabActiveKey")(tabActiveKey.asInstanceOf[js.Any])
     if (tabBarExtraContent != null) __obj.updateDynamic("tabBarExtraContent")(tabBarExtraContent.asInstanceOf[js.Any])
-    if (tabList != null) __obj.updateDynamic("tabList")(tabList)
+    if (tabList != null) __obj.updateDynamic("tabList")(tabList.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageHeaderTabConfig]
   }
 }

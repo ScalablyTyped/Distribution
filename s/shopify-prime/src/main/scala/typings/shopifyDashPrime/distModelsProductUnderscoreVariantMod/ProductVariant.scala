@@ -118,12 +118,12 @@ object ProductVariant {
     option2: String = null,
     option3: String = null
   ): ProductVariant = {
-    val __obj = js.Dynamic.literal(barcode = barcode, created_at = created_at, fulfillment_service = fulfillment_service, grams = grams, inventory_item_id = inventory_item_id, inventory_management = inventory_management, inventory_policy = inventory_policy, inventory_quantity = inventory_quantity, option1 = option1, position = position, price = price, product_id = product_id, requires_shipping = requires_shipping, sku = sku, taxable = taxable, title = title, updated_at = updated_at, weight = weight, weight_unit = weight_unit)
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (compare_at_price != null) __obj.updateDynamic("compare_at_price")(compare_at_price)
+    val __obj = js.Dynamic.literal(barcode = barcode.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], fulfillment_service = fulfillment_service.asInstanceOf[js.Any], grams = grams.asInstanceOf[js.Any], inventory_item_id = inventory_item_id.asInstanceOf[js.Any], inventory_management = inventory_management.asInstanceOf[js.Any], inventory_policy = inventory_policy.asInstanceOf[js.Any], inventory_quantity = inventory_quantity.asInstanceOf[js.Any], option1 = option1.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any], requires_shipping = requires_shipping.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], taxable = taxable.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], weight_unit = weight_unit.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (compare_at_price != null) __obj.updateDynamic("compare_at_price")(compare_at_price.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (option2 != null) __obj.updateDynamic("option2")(option2)
-    if (option3 != null) __obj.updateDynamic("option3")(option3)
+    if (option2 != null) __obj.updateDynamic("option2")(option2.asInstanceOf[js.Any])
+    if (option3 != null) __obj.updateDynamic("option3")(option3.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductVariant]
   }
 }

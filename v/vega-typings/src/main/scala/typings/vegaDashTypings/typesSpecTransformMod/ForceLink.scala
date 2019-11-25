@@ -26,11 +26,11 @@ object ForceLink {
     links: DataName = null,
     strength: Double | SignalRef | ExprRef = null
   ): ForceLink = {
-    val __obj = js.Dynamic.literal(force = force)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links)
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForceLink]
   }

@@ -12,7 +12,7 @@ object SessionTokenOption {
   @scala.inline
   def apply(sessionToken: String = null): SessionTokenOption = {
     val __obj = js.Dynamic.literal()
-    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionTokenOption]
   }
 }

@@ -33,15 +33,15 @@ object VastCreativeLinear {
     skipDelay: Int | Double = null,
     videoClickThroughURLTemplate: String = null
   ): VastCreativeLinear = {
-    val __obj = js.Dynamic.literal(duration = duration, icons = icons, mediaFiles = mediaFiles, trackingEvents = trackingEvents, videoClickTrackingURLTemplates = videoClickTrackingURLTemplates, videoCustomClickURLTemplates = videoCustomClickURLTemplates)
-    __obj.updateDynamic("type")(`type`)
-    if (adId != null) __obj.updateDynamic("adId")(adId)
-    if (adParameters != null) __obj.updateDynamic("adParameters")(adParameters)
-    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], icons = icons.asInstanceOf[js.Any], mediaFiles = mediaFiles.asInstanceOf[js.Any], trackingEvents = trackingEvents.asInstanceOf[js.Any], videoClickTrackingURLTemplates = videoClickTrackingURLTemplates.asInstanceOf[js.Any], videoCustomClickURLTemplates = videoCustomClickURLTemplates.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (adId != null) __obj.updateDynamic("adId")(adId.asInstanceOf[js.Any])
+    if (adParameters != null) __obj.updateDynamic("adParameters")(adParameters.asInstanceOf[js.Any])
+    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
     if (skipDelay != null) __obj.updateDynamic("skipDelay")(skipDelay.asInstanceOf[js.Any])
-    if (videoClickThroughURLTemplate != null) __obj.updateDynamic("videoClickThroughURLTemplate")(videoClickThroughURLTemplate)
+    if (videoClickThroughURLTemplate != null) __obj.updateDynamic("videoClickThroughURLTemplate")(videoClickThroughURLTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCreativeLinear]
   }
 }

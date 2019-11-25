@@ -11,7 +11,7 @@ trait OauthAuthorizationsDeleteGrantParams extends js.Object {
 object OauthAuthorizationsDeleteGrantParams {
   @scala.inline
   def apply(grant_id: Double): OauthAuthorizationsDeleteGrantParams = {
-    val __obj = js.Dynamic.literal(grant_id = grant_id)
+    val __obj = js.Dynamic.literal(grant_id = grant_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OauthAuthorizationsDeleteGrantParams]
   }

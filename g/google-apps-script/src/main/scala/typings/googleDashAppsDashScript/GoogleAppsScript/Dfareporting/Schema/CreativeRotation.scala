@@ -20,10 +20,10 @@ object CreativeRotation {
     weightCalculationStrategy: String = null
   ): CreativeRotation = {
     val __obj = js.Dynamic.literal()
-    if (creativeAssignments != null) __obj.updateDynamic("creativeAssignments")(creativeAssignments)
-    if (creativeOptimizationConfigurationId != null) __obj.updateDynamic("creativeOptimizationConfigurationId")(creativeOptimizationConfigurationId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (weightCalculationStrategy != null) __obj.updateDynamic("weightCalculationStrategy")(weightCalculationStrategy)
+    if (creativeAssignments != null) __obj.updateDynamic("creativeAssignments")(creativeAssignments.asInstanceOf[js.Any])
+    if (creativeOptimizationConfigurationId != null) __obj.updateDynamic("creativeOptimizationConfigurationId")(creativeOptimizationConfigurationId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (weightCalculationStrategy != null) __obj.updateDynamic("weightCalculationStrategy")(weightCalculationStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeRotation]
   }
 }

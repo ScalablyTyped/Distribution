@@ -36,10 +36,10 @@ object Anon_Children {
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal(closingElement = closingElement, openingElement = openingElement)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(closingElement = closingElement.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

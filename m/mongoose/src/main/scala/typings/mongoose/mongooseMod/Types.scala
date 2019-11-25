@@ -1,10 +1,10 @@
 package typings.mongoose.mongooseMod
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.mongodb.mongodbMod.Binary
 import typings.mongodb.mongodbMod.ObjectID
 import typings.mongoose.Anon_FlattenMaps
 import typings.mongoose.Anon_Noop
+import typings.mongoose.TypeofClassObjectID
 import typings.mongoose.mongooseMod.Types.Array
 import typings.mongoose.mongooseMod.Types.DocumentArray
 import typings.mongoose.mongooseMod.Types.ObjectId
@@ -194,46 +194,6 @@ object Types extends js.Object {
     def toObject(options: js.Any): GlobalMap[String, V] = js.native
   }
   
-  // mongodb.ObjectID does not allow mongoose.Types.ObjectId(id). This is
-  //   commonly used in mongoose and is found in an example in the docs:
-  //   http://mongoosejs.com/docs/api.html#aggregate_Aggregate
-  // constructor exposes static methods of mongodb.ObjectID and ObjectId(id)
-  @js.native
-  trait ObjectIdConstructor extends Instantiable0[ObjectID] {
-    /** If true cache the hex string representation of ObjectId */
-    var cacheHexString: js.UndefOr[Boolean] = js.native
-    def apply(): ObjectID = js.native
-    def apply(s: String): ObjectID = js.native
-    def apply(s: Double): ObjectID = js.native
-    /**
-      * Creates an ObjectId from a hex string representation of an ObjectId.
-      * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
-      * @return {ObjectId} return the created ObjectId
-      */
-    def createFromHexString(hexString: String): typings.bson.bsonMod.ObjectId = js.native
-    /**
-      * Creates an ObjectId from a second based number, with the rest of the ObjectId zeroed out. Used for comparisons or sorting the ObjectId.
-      * @param {number} time an integer number representing a number of seconds.
-      * @return {ObjectId} return the created ObjectId
-      */
-    def createFromTime(time: Double): typings.bson.bsonMod.ObjectId = js.native
-    /**
-      * Generate a 12 byte id string used in ObjectId's
-      * @param {number} time optional parameter allowing to pass in a second based timestamp.
-      * @return {string} return the 12 byte id binary string.
-      */
-    def generate(): typings.node.Buffer = js.native
-    def generate(time: Double): typings.node.Buffer = js.native
-    /**
-      * Checks if a value is a valid bson ObjectId
-      *
-      * @return {boolean} return true if the value is a valid bson ObjectId, return false otherwise.
-      */
-    def isValid(id: String): Boolean = js.native
-    def isValid(id: Double): Boolean = js.native
-    def isValid(id: typings.bson.bsonMod.ObjectId): Boolean = js.native
-  }
-  
   /*
     * section types/subdocument.js
     * http://mongoosejs.com/docs/api.html#types-subdocument-js
@@ -256,5 +216,10 @@ object Types extends js.Object {
   // var objectId: mongoose.Types.ObjectId should reference mongodb.ObjectID not
   //   the ObjectIdConstructor, so we add the interface below
   type ObjectId = ObjectID
+  // mongodb.ObjectID does not allow mongoose.Types.ObjectId(id). This is
+  //   commonly used in mongoose and is found in an example in the docs:
+  //   http://mongoosejs.com/docs/api.html#aggregate_Aggregate
+  // constructor exposes static methods of mongodb.ObjectID and ObjectId(id)
+  type ObjectIdConstructor = TypeofClassObjectID with (js.Function1[/* s */ js.UndefOr[String | Double], ObjectID])
 }
 

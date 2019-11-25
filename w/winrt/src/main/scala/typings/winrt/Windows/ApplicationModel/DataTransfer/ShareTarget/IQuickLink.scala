@@ -23,7 +23,7 @@ object IQuickLink {
     thumbnail: RandomAccessStreamReference,
     title: String
   ): IQuickLink = {
-    val __obj = js.Dynamic.literal(id = id, supportedDataFormats = supportedDataFormats, supportedFileTypes = supportedFileTypes, thumbnail = thumbnail, title = title)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], supportedDataFormats = supportedDataFormats.asInstanceOf[js.Any], supportedFileTypes = supportedFileTypes.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IQuickLink]
   }

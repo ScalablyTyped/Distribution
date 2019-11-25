@@ -13,7 +13,7 @@ object Anon_Suggested {
   @scala.inline
   def apply(suggested: js.UndefOr[Boolean] = js.undefined): Anon_Suggested = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(suggested)) __obj.updateDynamic("suggested")(suggested)
+    if (!js.isUndefined(suggested)) __obj.updateDynamic("suggested")(suggested.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Suggested]
   }
 }

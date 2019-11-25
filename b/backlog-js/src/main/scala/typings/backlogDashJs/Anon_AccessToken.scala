@@ -14,9 +14,9 @@ trait Anon_AccessToken extends js.Object {
 object Anon_AccessToken {
   @scala.inline
   def apply(host: String, accessToken: String = null, apiKey: String = null, timeout: Int | Double = null): Anon_AccessToken = {
-    val __obj = js.Dynamic.literal(host = host)
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccessToken]
   }

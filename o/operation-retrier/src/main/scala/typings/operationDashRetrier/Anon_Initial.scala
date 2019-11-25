@@ -23,7 +23,7 @@ object Anon_Initial {
     maxAttemptsTime: Int | Double = null,
     randomness: Int | Double = null
   ): Anon_Initial = {
-    val __obj = js.Dynamic.literal(max = max, min = min)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
     if (maxAttemptsCount != null) __obj.updateDynamic("maxAttemptsCount")(maxAttemptsCount.asInstanceOf[js.Any])
     if (maxAttemptsTime != null) __obj.updateDynamic("maxAttemptsTime")(maxAttemptsTime.asInstanceOf[js.Any])

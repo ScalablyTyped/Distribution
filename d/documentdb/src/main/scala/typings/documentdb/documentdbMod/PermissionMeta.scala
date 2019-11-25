@@ -28,10 +28,10 @@ object PermissionMeta {
     _etag: String = null,
     _rid: String = null
   ): PermissionMeta = {
-    val __obj = js.Dynamic.literal(_self = _self, _ts = _ts, id = id, permissionMode = permissionMode, resource = resource)
-    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
-    if (_etag != null) __obj.updateDynamic("_etag")(_etag)
-    if (_rid != null) __obj.updateDynamic("_rid")(_rid)
+    val __obj = js.Dynamic.literal(_self = _self.asInstanceOf[js.Any], _ts = _ts.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], permissionMode = permissionMode.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
+    if (_etag != null) __obj.updateDynamic("_etag")(_etag.asInstanceOf[js.Any])
+    if (_rid != null) __obj.updateDynamic("_rid")(_rid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionMeta]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_ClientKey extends js.Object {
 object Anon_ClientKey {
   @scala.inline
   def apply(clientKey: String, csr: String): Anon_ClientKey = {
-    val __obj = js.Dynamic.literal(clientKey = clientKey, csr = csr)
+    val __obj = js.Dynamic.literal(clientKey = clientKey.asInstanceOf[js.Any], csr = csr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClientKey]
   }

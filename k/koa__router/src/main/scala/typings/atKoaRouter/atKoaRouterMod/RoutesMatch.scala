@@ -13,7 +13,7 @@ trait RoutesMatch extends js.Object {
 object RoutesMatch {
   @scala.inline
   def apply(path: js.Array[Layer], pathAndMethod: js.Array[Layer], route: Boolean): RoutesMatch = {
-    val __obj = js.Dynamic.literal(path = path, pathAndMethod = pathAndMethod, route = route)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], pathAndMethod = pathAndMethod.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RoutesMatch]
   }

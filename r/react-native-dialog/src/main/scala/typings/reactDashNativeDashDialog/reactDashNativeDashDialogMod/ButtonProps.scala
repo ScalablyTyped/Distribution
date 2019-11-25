@@ -29,10 +29,10 @@ object ButtonProps {
     color: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined
   ): ButtonProps = {
-    val __obj = js.Dynamic.literal(label = label, onPress = js.Any.fromFunction0(onPress))
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
 }

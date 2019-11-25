@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait RTCDtxStatus extends js.Object
 
+object RTCDtxStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def disabled: typings.std.stdStrings.disabled = this.cast("disabled")
+  @scala.inline
+  def enabled: typings.std.stdStrings.enabled = this.cast("enabled")
+}
+

@@ -22,9 +22,9 @@ object NavigationJumpToAction {
     `type`: `Navigation/JUMP_TO`,
     params: NavigationParams = null
   ): NavigationJumpToAction = {
-    val __obj = js.Dynamic.literal(key = key, preserveFocus = preserveFocus, routeName = routeName)
-    __obj.updateDynamic("type")(`type`)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], preserveFocus = preserveFocus.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationJumpToAction]
   }
 }

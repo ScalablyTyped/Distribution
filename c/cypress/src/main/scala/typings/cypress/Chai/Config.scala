@@ -22,7 +22,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(includeStack: Boolean, showDiff: Boolean, truncateThreshold: Double): Config = {
-    val __obj = js.Dynamic.literal(includeStack = includeStack, showDiff = showDiff, truncateThreshold = truncateThreshold)
+    val __obj = js.Dynamic.literal(includeStack = includeStack.asInstanceOf[js.Any], showDiff = showDiff.asInstanceOf[js.Any], truncateThreshold = truncateThreshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

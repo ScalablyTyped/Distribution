@@ -26,13 +26,13 @@ object OverlayPanelProps {
     style: js.Object = null
   ): OverlayPanelProps = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(dismissable)) __obj.updateDynamic("dismissable")(dismissable)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissable)) __obj.updateDynamic("dismissable")(dismissable.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
-    if (!js.isUndefined(showCloseIcon)) __obj.updateDynamic("showCloseIcon")(showCloseIcon)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(showCloseIcon)) __obj.updateDynamic("showCloseIcon")(showCloseIcon.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayPanelProps]
   }
 }

@@ -20,8 +20,8 @@ object _UnmarshalledLoggingEnabled {
     TargetPrefix: String,
     TargetGrants: js.Array[_UnmarshalledTargetGrant] = null
   ): _UnmarshalledLoggingEnabled = {
-    val __obj = js.Dynamic.literal(TargetBucket = TargetBucket, TargetPrefix = TargetPrefix)
-    if (TargetGrants != null) __obj.updateDynamic("TargetGrants")(TargetGrants)
+    val __obj = js.Dynamic.literal(TargetBucket = TargetBucket.asInstanceOf[js.Any], TargetPrefix = TargetPrefix.asInstanceOf[js.Any])
+    if (TargetGrants != null) __obj.updateDynamic("TargetGrants")(TargetGrants.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledLoggingEnabled]
   }
 }

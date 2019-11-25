@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait RecurrenceRangeType extends js.Object
 
+object RecurrenceRangeType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def endDate: typings.microsoftDashGraph.microsoftDashGraphStrings.endDate = this.cast("endDate")
+  @scala.inline
+  def noEnd: typings.microsoftDashGraph.microsoftDashGraphStrings.noEnd = this.cast("noEnd")
+  @scala.inline
+  def numbered: typings.microsoftDashGraph.microsoftDashGraphStrings.numbered = this.cast("numbered")
+}
+

@@ -13,7 +13,7 @@ trait EnvironmentRetentionPolicy extends js.Object {
 object EnvironmentRetentionPolicy {
   @scala.inline
   def apply(daysToKeep: Double, releasesToKeep: Double, retainBuild: Boolean): EnvironmentRetentionPolicy = {
-    val __obj = js.Dynamic.literal(daysToKeep = daysToKeep, releasesToKeep = releasesToKeep, retainBuild = retainBuild)
+    val __obj = js.Dynamic.literal(daysToKeep = daysToKeep.asInstanceOf[js.Any], releasesToKeep = releasesToKeep.asInstanceOf[js.Any], retainBuild = retainBuild.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EnvironmentRetentionPolicy]
   }

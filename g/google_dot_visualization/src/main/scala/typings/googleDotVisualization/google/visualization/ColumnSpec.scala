@@ -27,12 +27,12 @@ object ColumnSpec {
   ): ColumnSpec = {
     val __obj = js.Dynamic.literal()
     if (calc != null) __obj.updateDynamic("calc")(js.Any.fromFunction2(calc))
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (sourceColumn != null) __obj.updateDynamic("sourceColumn")(sourceColumn.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSpec]
   }
 }

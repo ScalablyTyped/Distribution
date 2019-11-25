@@ -27,11 +27,11 @@ object AnalyticsSummary {
     week: AnalyticsSnapshot = null
   ): AnalyticsSummary = {
     val __obj = js.Dynamic.literal()
-    if (allTime != null) __obj.updateDynamic("allTime")(allTime)
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (month != null) __obj.updateDynamic("month")(month)
-    if (twoHours != null) __obj.updateDynamic("twoHours")(twoHours)
-    if (week != null) __obj.updateDynamic("week")(week)
+    if (allTime != null) __obj.updateDynamic("allTime")(allTime.asInstanceOf[js.Any])
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (twoHours != null) __obj.updateDynamic("twoHours")(twoHours.asInstanceOf[js.Any])
+    if (week != null) __obj.updateDynamic("week")(week.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsSummary]
   }
 }

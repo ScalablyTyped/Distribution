@@ -18,8 +18,8 @@ trait ParticleEmitterDeathZoneConfig extends js.Object {
 object ParticleEmitterDeathZoneConfig {
   @scala.inline
   def apply(source: DeathZoneSource, `type`: String = null): ParticleEmitterDeathZoneConfig = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterDeathZoneConfig]
   }
 }

@@ -44,13 +44,13 @@ object Point {
     stringValue: String = null
   ): Point = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
-    if (distributionValue != null) __obj.updateDynamic("distributionValue")(distributionValue)
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.asInstanceOf[js.Any])
+    if (distributionValue != null) __obj.updateDynamic("distributionValue")(distributionValue.asInstanceOf[js.Any])
     if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
 }

@@ -44,15 +44,15 @@ object Anon_Configuration {
     user_email: String = null
   ): Anon_Configuration = {
     val __obj = js.Dynamic.literal()
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
-    if (errorResult != null) __obj.updateDynamic("errorResult")(errorResult)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (jobReference != null) __obj.updateDynamic("jobReference")(jobReference)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (user_email != null) __obj.updateDynamic("user_email")(user_email)
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (errorResult != null) __obj.updateDynamic("errorResult")(errorResult.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (jobReference != null) __obj.updateDynamic("jobReference")(jobReference.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (user_email != null) __obj.updateDynamic("user_email")(user_email.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Configuration]
   }
 }

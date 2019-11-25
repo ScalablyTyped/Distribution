@@ -27,9 +27,9 @@ trait UnixConnectOptions extends SocketConnectOptions {
 object UnixConnectOptions {
   @scala.inline
   def apply(family: unix, path: String, tls: js.UndefOr[Boolean] = js.undefined, `type`: UnixSocketType = null): UnixConnectOptions = {
-    val __obj = js.Dynamic.literal(family = family, path = path)
-    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnixConnectOptions]
   }
 }

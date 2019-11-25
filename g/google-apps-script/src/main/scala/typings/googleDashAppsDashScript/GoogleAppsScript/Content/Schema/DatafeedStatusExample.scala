@@ -14,9 +14,9 @@ object DatafeedStatusExample {
   @scala.inline
   def apply(itemId: String = null, lineNumber: String = null, value: String = null): DatafeedStatusExample = {
     val __obj = js.Dynamic.literal()
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
+    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedStatusExample]
   }
 }

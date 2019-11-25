@@ -11,7 +11,7 @@ trait Cordova extends js.Object {
 object Cordova {
   @scala.inline
   def apply(InAppBrowser: InAppBrowser): Cordova = {
-    val __obj = js.Dynamic.literal(InAppBrowser = InAppBrowser)
+    val __obj = js.Dynamic.literal(InAppBrowser = InAppBrowser.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Cordova]
   }

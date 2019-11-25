@@ -55,17 +55,17 @@ object Router {
     selfLink: String = null
   ): Router = {
     val __obj = js.Dynamic.literal()
-    if (bgp != null) __obj.updateDynamic("bgp")(bgp)
-    if (bgpPeers != null) __obj.updateDynamic("bgpPeers")(bgpPeers)
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (network != null) __obj.updateDynamic("network")(network)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (bgp != null) __obj.updateDynamic("bgp")(bgp.asInstanceOf[js.Any])
+    if (bgpPeers != null) __obj.updateDynamic("bgpPeers")(bgpPeers.asInstanceOf[js.Any])
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Router]
   }
 }

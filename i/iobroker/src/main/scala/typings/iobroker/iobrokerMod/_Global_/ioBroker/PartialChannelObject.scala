@@ -14,7 +14,7 @@ object PartialChannelObject {
   @scala.inline
   def apply(common: Partial[ChannelCommon] = null): PartialChannelObject = {
     val __obj = js.Dynamic.literal()
-    if (common != null) __obj.updateDynamic("common")(common)
+    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialChannelObject]
   }
 }

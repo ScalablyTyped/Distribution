@@ -10,7 +10,7 @@ import typings.plotlyDotJs.plotlyDotJsStrings.array
 import typings.plotlyDotJs.plotlyDotJsStrings.auto
 import typings.plotlyDotJs.plotlyDotJsStrings.bottom
 import typings.plotlyDotJs.plotlyDotJsStrings.center
-import typings.plotlyDotJs.plotlyDotJsStrings.e
+import typings.plotlyDotJs.plotlyDotJsStrings.e_
 import typings.plotlyDotJs.plotlyDotJsStrings.first
 import typings.plotlyDotJs.plotlyDotJsStrings.fraction
 import typings.plotlyDotJs.plotlyDotJsStrings.inside
@@ -33,7 +33,7 @@ trait ColorBar extends js.Object {
   var bordercolor: Color
   var borderwidth: Color
   var dtick: Double | String
-  var exponentformat: none | e | E | power | SI | B
+  var exponentformat: none | e_ | E | power | SI | B
   var len: Double
   var lenmode: fraction | pixels
   var nticks: Double
@@ -80,7 +80,7 @@ object ColorBar {
     bordercolor: Color,
     borderwidth: Color,
     dtick: Double | String,
-    exponentformat: none | e | E | power | SI | B,
+    exponentformat: none | e_ | E | power | SI | B,
     len: Double,
     lenmode: fraction | pixels,
     nticks: Double,
@@ -119,7 +119,7 @@ object ColorBar {
     yanchor: top | middle | bottom,
     ypad: Double
   ): ColorBar = {
-    val __obj = js.Dynamic.literal(bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderwidth = borderwidth.asInstanceOf[js.Any], dtick = dtick.asInstanceOf[js.Any], exponentformat = exponentformat.asInstanceOf[js.Any], len = len, lenmode = lenmode.asInstanceOf[js.Any], nticks = nticks, outlinecolor = outlinecolor.asInstanceOf[js.Any], outlinewidth = outlinewidth, separatethousands = separatethousands, showexponent = showexponent.asInstanceOf[js.Any], showticklabels = showticklabels, showtickprefix = showtickprefix.asInstanceOf[js.Any], showticksuffix = showticksuffix.asInstanceOf[js.Any], thickness = thickness, thicknessmode = thicknessmode.asInstanceOf[js.Any], tick0 = tick0.asInstanceOf[js.Any], tickangle = tickangle, tickcolor = tickcolor.asInstanceOf[js.Any], tickfont = tickfont, tickformat = tickformat, tickformatstops = tickformatstops, ticklen = ticklen, tickmode = tickmode.asInstanceOf[js.Any], tickprefix = tickprefix, ticks = ticks.asInstanceOf[js.Any], ticksuffix = ticksuffix, ticktext = ticktext.asInstanceOf[js.Any], ticktextsrc = ticktextsrc, tickvals = tickvals.asInstanceOf[js.Any], tickvalssrc = tickvalssrc, tickwidth = tickwidth, title = title, titlefont = titlefont, titleside = titleside.asInstanceOf[js.Any], x = x, xanchor = xanchor.asInstanceOf[js.Any], xpad = xpad, y = y, yanchor = yanchor.asInstanceOf[js.Any], ypad = ypad)
+    val __obj = js.Dynamic.literal(bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderwidth = borderwidth.asInstanceOf[js.Any], dtick = dtick.asInstanceOf[js.Any], exponentformat = exponentformat.asInstanceOf[js.Any], len = len.asInstanceOf[js.Any], lenmode = lenmode.asInstanceOf[js.Any], nticks = nticks.asInstanceOf[js.Any], outlinecolor = outlinecolor.asInstanceOf[js.Any], outlinewidth = outlinewidth.asInstanceOf[js.Any], separatethousands = separatethousands.asInstanceOf[js.Any], showexponent = showexponent.asInstanceOf[js.Any], showticklabels = showticklabels.asInstanceOf[js.Any], showtickprefix = showtickprefix.asInstanceOf[js.Any], showticksuffix = showticksuffix.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any], thicknessmode = thicknessmode.asInstanceOf[js.Any], tick0 = tick0.asInstanceOf[js.Any], tickangle = tickangle.asInstanceOf[js.Any], tickcolor = tickcolor.asInstanceOf[js.Any], tickfont = tickfont.asInstanceOf[js.Any], tickformat = tickformat.asInstanceOf[js.Any], tickformatstops = tickformatstops.asInstanceOf[js.Any], ticklen = ticklen.asInstanceOf[js.Any], tickmode = tickmode.asInstanceOf[js.Any], tickprefix = tickprefix.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any], ticksuffix = ticksuffix.asInstanceOf[js.Any], ticktext = ticktext.asInstanceOf[js.Any], ticktextsrc = ticktextsrc.asInstanceOf[js.Any], tickvals = tickvals.asInstanceOf[js.Any], tickvalssrc = tickvalssrc.asInstanceOf[js.Any], tickwidth = tickwidth.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titlefont = titlefont.asInstanceOf[js.Any], titleside = titleside.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], xpad = xpad.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any], ypad = ypad.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColorBar]
   }

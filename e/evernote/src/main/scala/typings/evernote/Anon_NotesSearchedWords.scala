@@ -24,9 +24,9 @@ object Anon_NotesSearchedWords {
     stoppedWords: js.Array[String] = null,
     updateCount: Int | Double = null
   ): Anon_NotesSearchedWords = {
-    val __obj = js.Dynamic.literal(notes = notes, startIndex = startIndex, totalNotes = totalNotes)
-    if (searchedWords != null) __obj.updateDynamic("searchedWords")(searchedWords)
-    if (stoppedWords != null) __obj.updateDynamic("stoppedWords")(stoppedWords)
+    val __obj = js.Dynamic.literal(notes = notes.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], totalNotes = totalNotes.asInstanceOf[js.Any])
+    if (searchedWords != null) __obj.updateDynamic("searchedWords")(searchedWords.asInstanceOf[js.Any])
+    if (stoppedWords != null) __obj.updateDynamic("stoppedWords")(stoppedWords.asInstanceOf[js.Any])
     if (updateCount != null) __obj.updateDynamic("updateCount")(updateCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NotesSearchedWords]
   }

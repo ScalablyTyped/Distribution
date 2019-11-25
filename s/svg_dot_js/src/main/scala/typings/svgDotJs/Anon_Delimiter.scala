@@ -48,7 +48,7 @@ object Anon_Delimiter {
     transforms: RegExp,
     whitespace: RegExp
   ): Anon_Delimiter = {
-    val __obj = js.Dynamic.literal(delimiter = delimiter, dots = dots, hex = hex, hyphen = hyphen, isBlank = isBlank, isCss = isCss, isHex = isHex, isImage = isImage, isNumber = isNumber, isPathLetter = isPathLetter, isPercent = isPercent, isRgb = isRgb, numberAndUnit = numberAndUnit, pathLetters = pathLetters, reference = reference, rgb = rgb, transforms = transforms, whitespace = whitespace)
+    val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any], dots = dots.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], hyphen = hyphen.asInstanceOf[js.Any], isBlank = isBlank.asInstanceOf[js.Any], isCss = isCss.asInstanceOf[js.Any], isHex = isHex.asInstanceOf[js.Any], isImage = isImage.asInstanceOf[js.Any], isNumber = isNumber.asInstanceOf[js.Any], isPathLetter = isPathLetter.asInstanceOf[js.Any], isPercent = isPercent.asInstanceOf[js.Any], isRgb = isRgb.asInstanceOf[js.Any], numberAndUnit = numberAndUnit.asInstanceOf[js.Any], pathLetters = pathLetters.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], whitespace = whitespace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Delimiter]
   }

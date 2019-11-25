@@ -55,11 +55,11 @@ trait TypeofsyncFileSystem extends js.Object {
   def getConflictResolutionPolicy(
     callback: js.Function1[
       /* policy */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
         ]
       ], 
       Unit
@@ -75,11 +75,11 @@ trait TypeofsyncFileSystem extends js.Object {
     fileEntry: FileEntry,
     callback: js.Function1[
       /* status */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof FileStatus */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof FileStatus */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof FileStatus[keyof typeof FileStatus] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof FileStatus[keyof typeof FileStatus] */ js.Any
         ]
       ], 
       Unit
@@ -99,11 +99,11 @@ trait TypeofsyncFileSystem extends js.Object {
   def getServiceStatus(
     callback: js.Function1[
       /* status */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof ServiceStatus */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof ServiceStatus */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof ServiceStatus[keyof typeof ServiceStatus] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof ServiceStatus[keyof typeof ServiceStatus] */ js.Any
         ]
       ], 
       Unit
@@ -142,21 +142,21 @@ trait TypeofsyncFileSystem extends js.Object {
     */
   def setConflictResolutionPolicy(
     policy: ToStringLiteral[
-      /* import warning: ImportType.apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
       String, 
       Exclude[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
       ]
     ]
   ): Unit = js.native
   def setConflictResolutionPolicy(
     policy: ToStringLiteral[
-      /* import warning: ImportType.apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
       String, 
       Exclude[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
       ]
     ],
     callback: js.Function0[Unit]

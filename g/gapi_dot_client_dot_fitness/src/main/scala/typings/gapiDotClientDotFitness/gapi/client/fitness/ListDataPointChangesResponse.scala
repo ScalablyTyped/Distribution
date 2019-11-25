@@ -24,10 +24,10 @@ object ListDataPointChangesResponse {
     nextPageToken: String = null
   ): ListDataPointChangesResponse = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId)
-    if (deletedDataPoint != null) __obj.updateDynamic("deletedDataPoint")(deletedDataPoint)
-    if (insertedDataPoint != null) __obj.updateDynamic("insertedDataPoint")(insertedDataPoint)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
+    if (deletedDataPoint != null) __obj.updateDynamic("deletedDataPoint")(deletedDataPoint.asInstanceOf[js.Any])
+    if (insertedDataPoint != null) __obj.updateDynamic("insertedDataPoint")(insertedDataPoint.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataPointChangesResponse]
   }
 }

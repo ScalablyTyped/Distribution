@@ -36,8 +36,8 @@ object ProcessProperties {
     parentProcessTypeId: String,
     version: String
   ): ProcessProperties = {
-    val __obj = js.Dynamic.literal(isDefault = isDefault, isEnabled = isEnabled, parentProcessTypeId = parentProcessTypeId, version = version)
-    __obj.updateDynamic("class")(`class`)
+    val __obj = js.Dynamic.literal(isDefault = isDefault.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], parentProcessTypeId = parentProcessTypeId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessProperties]
   }
 }

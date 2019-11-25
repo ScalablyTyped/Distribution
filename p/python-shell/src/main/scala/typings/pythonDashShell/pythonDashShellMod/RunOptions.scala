@@ -28,14 +28,14 @@ object RunOptions {
     scriptPath: String = null
   ): RunOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
-    if (pythonOptions != null) __obj.updateDynamic("pythonOptions")(pythonOptions)
-    if (pythonPath != null) __obj.updateDynamic("pythonPath")(pythonPath)
-    if (scriptPath != null) __obj.updateDynamic("scriptPath")(scriptPath)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
+    if (pythonOptions != null) __obj.updateDynamic("pythonOptions")(pythonOptions.asInstanceOf[js.Any])
+    if (pythonPath != null) __obj.updateDynamic("pythonPath")(pythonPath.asInstanceOf[js.Any])
+    if (scriptPath != null) __obj.updateDynamic("scriptPath")(scriptPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOptions]
   }
 }

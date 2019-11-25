@@ -43,9 +43,9 @@ object TextEditorOptions {
     tabSize: Double | String = null
   ): TextEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle)
+    if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
     if (insertSpaces != null) __obj.updateDynamic("insertSpaces")(insertSpaces.asInstanceOf[js.Any])
-    if (lineNumbers != null) __obj.updateDynamic("lineNumbers")(lineNumbers)
+    if (lineNumbers != null) __obj.updateDynamic("lineNumbers")(lineNumbers.asInstanceOf[js.Any])
     if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEditorOptions]
   }

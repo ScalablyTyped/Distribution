@@ -102,14 +102,14 @@ object ImageParametersProperties {
   ): ImageParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (imageSpatialReference != null) __obj.updateDynamic("imageSpatialReference")(imageSpatialReference)
-    if (layerDefinitions != null) __obj.updateDynamic("layerDefinitions")(layerDefinitions)
-    if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds)
+    if (imageSpatialReference != null) __obj.updateDynamic("imageSpatialReference")(imageSpatialReference.asInstanceOf[js.Any])
+    if (layerDefinitions != null) __obj.updateDynamic("layerDefinitions")(layerDefinitions.asInstanceOf[js.Any])
+    if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds.asInstanceOf[js.Any])
     if (layerOption != null) __obj.updateDynamic("layerOption")(layerOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageParametersProperties]
   }

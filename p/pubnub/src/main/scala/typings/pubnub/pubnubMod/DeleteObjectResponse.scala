@@ -12,7 +12,7 @@ trait DeleteObjectResponse extends js.Object {
 object DeleteObjectResponse {
   @scala.inline
   def apply(data: Null, status: Double): DeleteObjectResponse = {
-    val __obj = js.Dynamic.literal(data = data, status = status)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteObjectResponse]
   }

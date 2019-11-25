@@ -17,7 +17,7 @@ trait DeleteIdentityPoolOutput extends OutputTypesUnion {
 object DeleteIdentityPoolOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): DeleteIdentityPoolOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteIdentityPoolOutput]
   }

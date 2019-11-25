@@ -20,7 +20,7 @@ object Anon_1EmptyLeft {
     multiLeft: js.Any,
     singleLeft: Prepend[Right, _]
   ): Anon_1EmptyLeft[Right, Left] = {
-    val __obj = js.Dynamic.literal(emptyLeft = emptyLeft.asInstanceOf[js.Any], infiniteLeft = infiniteLeft, multiLeft = multiLeft, singleLeft = singleLeft)
+    val __obj = js.Dynamic.literal(emptyLeft = emptyLeft.asInstanceOf[js.Any], infiniteLeft = infiniteLeft.asInstanceOf[js.Any], multiLeft = multiLeft.asInstanceOf[js.Any], singleLeft = singleLeft.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_1EmptyLeft[Right, Left]]
   }

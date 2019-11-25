@@ -70,14 +70,14 @@ object UploadFileOption {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
     if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (formData != null) __obj.updateDynamic("formData")(formData)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileOption]
   }
 }

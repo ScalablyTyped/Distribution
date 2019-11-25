@@ -44,7 +44,7 @@ trait ChildWidgetProperties extends js.Object {
 object ChildWidgetProperties {
   @scala.inline
   def apply(closable: Boolean, disabled: Boolean, iconClass: String, selected: Boolean, showTitle: Boolean): ChildWidgetProperties = {
-    val __obj = js.Dynamic.literal(closable = closable, disabled = disabled, iconClass = iconClass, selected = selected, showTitle = showTitle)
+    val __obj = js.Dynamic.literal(closable = closable.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], showTitle = showTitle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChildWidgetProperties]
   }

@@ -26,7 +26,7 @@ trait IMediaList extends js.Object {
 object IMediaList {
   @scala.inline
   def apply(qItems: js.Array[IMediaListItem]): IMediaList = {
-    val __obj = js.Dynamic.literal(qItems = qItems)
+    val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMediaList]
   }

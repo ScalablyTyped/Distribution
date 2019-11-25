@@ -48,16 +48,16 @@ object CellObject {
     w: String = null,
     z: NumberFormat = null
   ): CellObject = {
-    val __obj = js.Dynamic.literal(t = t)
-    if (F != null) __obj.updateDynamic("F")(F)
-    if (c != null) __obj.updateDynamic("c")(c)
-    if (f != null) __obj.updateDynamic("f")(f)
-    if (h != null) __obj.updateDynamic("h")(h)
-    if (l != null) __obj.updateDynamic("l")(l)
-    if (r != null) __obj.updateDynamic("r")(r)
-    if (s != null) __obj.updateDynamic("s")(s)
+    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+    if (F != null) __obj.updateDynamic("F")(F.asInstanceOf[js.Any])
+    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
+    if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
+    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
+    if (l != null) __obj.updateDynamic("l")(l.asInstanceOf[js.Any])
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
     if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w)
+    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellObject]
   }

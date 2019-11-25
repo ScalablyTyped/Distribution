@@ -33,7 +33,7 @@ object Cell {
     textAlign: js.Any,
     textColor: js.Any
   ): Cell = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, font = font, fontSize = fontSize, fontStyle = fontStyle, fontWeight = fontWeight, textAlign = textAlign, textColor = textColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any], textColor = textColor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Cell]
   }

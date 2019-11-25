@@ -23,9 +23,9 @@ object RequestErrorEventUIParam {
   @scala.inline
   def apply(message: String = null, owner: js.Any = null, response: js.Any = null): RequestErrorEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestErrorEventUIParam]
   }
 }

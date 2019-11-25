@@ -13,7 +13,7 @@ trait Anon_GainedFocus extends js.Object {
 object Anon_GainedFocus {
   @scala.inline
   def apply(gainedFocus: HTMLElement, lostFocus: HTMLElement): Anon_GainedFocus = {
-    val __obj = js.Dynamic.literal(gainedFocus = gainedFocus, lostFocus = lostFocus)
+    val __obj = js.Dynamic.literal(gainedFocus = gainedFocus.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GainedFocus]
   }

@@ -29,9 +29,9 @@ object RestartFrameReturnType {
     asyncStackTrace: StackTrace = null,
     asyncStackTraceId: StackTraceId = null
   ): RestartFrameReturnType = {
-    val __obj = js.Dynamic.literal(callFrames = callFrames)
-    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace)
-    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId)
+    val __obj = js.Dynamic.literal(callFrames = callFrames.asInstanceOf[js.Any])
+    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace.asInstanceOf[js.Any])
+    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestartFrameReturnType]
   }
 }

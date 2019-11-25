@@ -21,7 +21,7 @@ object Anon_BorderColorBorderTopWidth {
     minHeight: Double,
     paddingVertical: Double
   ): Anon_BorderColorBorderTopWidth = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor, borderTopWidth = borderTopWidth, flexGrow = flexGrow, minHeight = minHeight, paddingVertical = paddingVertical)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderTopWidth = borderTopWidth.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderColorBorderTopWidth]
   }

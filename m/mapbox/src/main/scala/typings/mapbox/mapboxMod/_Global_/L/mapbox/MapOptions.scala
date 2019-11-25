@@ -25,12 +25,12 @@ object MapOptions {
     tileLayer: TileLayerOptions = null
   ): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (featureLayer != null) __obj.updateDynamic("featureLayer")(featureLayer)
-    if (gridLayer != null) __obj.updateDynamic("gridLayer")(gridLayer)
-    if (infoControl != null) __obj.updateDynamic("infoControl")(infoControl)
-    if (legendControl != null) __obj.updateDynamic("legendControl")(legendControl)
-    if (shareControl != null) __obj.updateDynamic("shareControl")(shareControl)
-    if (tileLayer != null) __obj.updateDynamic("tileLayer")(tileLayer)
+    if (featureLayer != null) __obj.updateDynamic("featureLayer")(featureLayer.asInstanceOf[js.Any])
+    if (gridLayer != null) __obj.updateDynamic("gridLayer")(gridLayer.asInstanceOf[js.Any])
+    if (infoControl != null) __obj.updateDynamic("infoControl")(infoControl.asInstanceOf[js.Any])
+    if (legendControl != null) __obj.updateDynamic("legendControl")(legendControl.asInstanceOf[js.Any])
+    if (shareControl != null) __obj.updateDynamic("shareControl")(shareControl.asInstanceOf[js.Any])
+    if (tileLayer != null) __obj.updateDynamic("tileLayer")(tileLayer.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
 }

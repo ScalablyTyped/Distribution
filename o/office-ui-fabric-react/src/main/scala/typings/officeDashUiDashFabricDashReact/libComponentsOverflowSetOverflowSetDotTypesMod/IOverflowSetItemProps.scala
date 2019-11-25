@@ -31,9 +31,9 @@ object IOverflowSetItemProps {
   /* propertyName */ StringDictionary[js.Any] = null,
     keytipProps: IKeytipProps = null
   ): IOverflowSetItemProps = {
-    val __obj = js.Dynamic.literal(key = key)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOverflowSetItemProps]
   }
 }

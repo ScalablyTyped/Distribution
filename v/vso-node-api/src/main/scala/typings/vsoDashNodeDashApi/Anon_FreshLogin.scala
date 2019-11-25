@@ -14,7 +14,7 @@ trait Anon_FreshLogin extends js.Object {
 object Anon_FreshLogin {
   @scala.inline
   def apply(freshLogin: Double, login: Double, noOption: Double, selectAccount: Double): Anon_FreshLogin = {
-    val __obj = js.Dynamic.literal(freshLogin = freshLogin, login = login, noOption = noOption, selectAccount = selectAccount)
+    val __obj = js.Dynamic.literal(freshLogin = freshLogin.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], noOption = noOption.asInstanceOf[js.Any], selectAccount = selectAccount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FreshLogin]
   }

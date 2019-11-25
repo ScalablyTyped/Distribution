@@ -33,7 +33,7 @@ object Anon_ContenttypeCstatus {
     status: String,
     upload_at: String
   ): Anon_ContenttypeCstatus = {
-    val __obj = js.Dynamic.literal(content_type = content_type, cstatus = cstatus, download_count = download_count, folderid = folderid, link = link, linkextid = linkextid, name = name, sha1 = sha1, size = size, status = status, upload_at = upload_at)
+    val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], cstatus = cstatus.asInstanceOf[js.Any], download_count = download_count.asInstanceOf[js.Any], folderid = folderid.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkextid = linkextid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], upload_at = upload_at.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContenttypeCstatus]
   }

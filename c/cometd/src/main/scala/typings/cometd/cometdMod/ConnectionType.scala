@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ConnectionType extends js.Object
 
+object ConnectionType {
+  @scala.inline
+  def `callback-polling`: typings.cometd.cometdStrings.`callback-polling` = this.cast("callback-polling")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def flash: typings.cometd.cometdStrings.flash = this.cast("flash")
+  @scala.inline
+  def iframe: typings.cometd.cometdStrings.iframe = this.cast("iframe")
+  @scala.inline
+  def `long-polling`: typings.cometd.cometdStrings.`long-polling` = this.cast("long-polling")
+}
+

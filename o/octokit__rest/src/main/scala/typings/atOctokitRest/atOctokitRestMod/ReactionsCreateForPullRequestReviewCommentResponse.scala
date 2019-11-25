@@ -21,7 +21,7 @@ object ReactionsCreateForPullRequestReviewCommentResponse {
     node_id: String,
     user: ReactionsCreateForPullRequestReviewCommentResponseUser
   ): ReactionsCreateForPullRequestReviewCommentResponse = {
-    val __obj = js.Dynamic.literal(content = content, created_at = created_at, id = id, node_id = node_id, user = user)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReactionsCreateForPullRequestReviewCommentResponse]
   }

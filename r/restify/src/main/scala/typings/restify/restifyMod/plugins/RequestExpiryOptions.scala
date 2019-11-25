@@ -23,9 +23,9 @@ object RequestExpiryOptions {
   @scala.inline
   def apply(absoluteHeader: String = null, startHeader: String = null, timeoutHeader: String = null): RequestExpiryOptions = {
     val __obj = js.Dynamic.literal()
-    if (absoluteHeader != null) __obj.updateDynamic("absoluteHeader")(absoluteHeader)
-    if (startHeader != null) __obj.updateDynamic("startHeader")(startHeader)
-    if (timeoutHeader != null) __obj.updateDynamic("timeoutHeader")(timeoutHeader)
+    if (absoluteHeader != null) __obj.updateDynamic("absoluteHeader")(absoluteHeader.asInstanceOf[js.Any])
+    if (startHeader != null) __obj.updateDynamic("startHeader")(startHeader.asInstanceOf[js.Any])
+    if (timeoutHeader != null) __obj.updateDynamic("timeoutHeader")(timeoutHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestExpiryOptions]
   }
 }

@@ -80,12 +80,12 @@ object ScalingOptions {
     val __obj = js.Dynamic.literal()
     if (customResizer != null) __obj.updateDynamic("customResizer")(js.Any.fromFunction1(customResizer))
     if (defaultQuality != null) __obj.updateDynamic("defaultQuality")(defaultQuality.asInstanceOf[js.Any])
-    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
-    if (failureText != null) __obj.updateDynamic("failureText")(failureText)
-    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif)
-    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient)
-    if (!js.isUndefined(sendOriginal)) __obj.updateDynamic("sendOriginal")(sendOriginal)
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
+    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType.asInstanceOf[js.Any])
+    if (failureText != null) __obj.updateDynamic("failureText")(failureText.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif.asInstanceOf[js.Any])
+    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendOriginal)) __obj.updateDynamic("sendOriginal")(sendOriginal.asInstanceOf[js.Any])
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingOptions]
   }
 }

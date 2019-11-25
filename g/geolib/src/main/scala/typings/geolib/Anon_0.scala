@@ -25,7 +25,7 @@ object Anon_0 {
     latitude: lat | latitude | `1` = null,
     longitude: `0` | lng | lon | longitude = null
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal(altitude = altitude)
+    val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_0]

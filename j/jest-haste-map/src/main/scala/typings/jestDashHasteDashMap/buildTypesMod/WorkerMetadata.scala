@@ -20,10 +20,10 @@ object WorkerMetadata {
     sha1: String = null
   ): WorkerMetadata = {
     val __obj = js.Dynamic.literal()
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (module != null) __obj.updateDynamic("module")(module)
-    if (sha1 != null) __obj.updateDynamic("sha1")(sha1)
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerMetadata]
   }
 }

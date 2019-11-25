@@ -48,7 +48,7 @@ object TransferConfigsResource {
     runs: RunsResource,
     scheduleRuns: Anon_AccesstokenAltBearertokenCallbackFields => Request[ScheduleTransferRunsResponse]
   ): TransferConfigsResource = {
-    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), runs = runs, scheduleRuns = js.Any.fromFunction1(scheduleRuns))
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), runs = runs.asInstanceOf[js.Any], scheduleRuns = js.Any.fromFunction1(scheduleRuns))
   
     __obj.asInstanceOf[TransferConfigsResource]
   }

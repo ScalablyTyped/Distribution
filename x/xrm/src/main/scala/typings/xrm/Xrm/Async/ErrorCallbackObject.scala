@@ -21,7 +21,7 @@ trait ErrorCallbackObject extends js.Object {
 object ErrorCallbackObject {
   @scala.inline
   def apply(errorCode: Double, message: String): ErrorCallbackObject = {
-    val __obj = js.Dynamic.literal(errorCode = errorCode, message = message)
+    val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ErrorCallbackObject]
   }

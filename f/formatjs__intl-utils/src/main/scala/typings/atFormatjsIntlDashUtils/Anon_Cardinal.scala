@@ -12,7 +12,7 @@ trait Anon_Cardinal extends js.Object {
 object Anon_Cardinal {
   @scala.inline
   def apply(cardinal: js.Array[String], ordinal: js.Array[String]): Anon_Cardinal = {
-    val __obj = js.Dynamic.literal(cardinal = cardinal, ordinal = ordinal)
+    val __obj = js.Dynamic.literal(cardinal = cardinal.asInstanceOf[js.Any], ordinal = ordinal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cardinal]
   }

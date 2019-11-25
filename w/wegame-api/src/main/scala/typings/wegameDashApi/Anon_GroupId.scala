@@ -36,8 +36,8 @@ object Anon_GroupId {
     timeStamp: Double,
     muteConfig: Anon_MuteEarphone = null
   ): Anon_GroupId = {
-    val __obj = js.Dynamic.literal(groupId = groupId, nonceStr = nonceStr, signature = signature, timeStamp = timeStamp)
-    if (muteConfig != null) __obj.updateDynamic("muteConfig")(muteConfig)
+    val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any], nonceStr = nonceStr.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+    if (muteConfig != null) __obj.updateDynamic("muteConfig")(muteConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GroupId]
   }
 }

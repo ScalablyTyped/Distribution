@@ -25,12 +25,12 @@ object Anon_ClosedByChildren {
     isVoid: js.UndefOr[Boolean] = js.undefined
   ): Anon_ClosedByChildren = {
     val __obj = js.Dynamic.literal()
-    if (closedByChildren != null) __obj.updateDynamic("closedByChildren")(closedByChildren)
-    if (!js.isUndefined(closedByParent)) __obj.updateDynamic("closedByParent")(closedByParent)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (!js.isUndefined(ignoreFirstLf)) __obj.updateDynamic("ignoreFirstLf")(ignoreFirstLf)
-    if (implicitNamespacePrefix != null) __obj.updateDynamic("implicitNamespacePrefix")(implicitNamespacePrefix)
-    if (!js.isUndefined(isVoid)) __obj.updateDynamic("isVoid")(isVoid)
+    if (closedByChildren != null) __obj.updateDynamic("closedByChildren")(closedByChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(closedByParent)) __obj.updateDynamic("closedByParent")(closedByParent.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreFirstLf)) __obj.updateDynamic("ignoreFirstLf")(ignoreFirstLf.asInstanceOf[js.Any])
+    if (implicitNamespacePrefix != null) __obj.updateDynamic("implicitNamespacePrefix")(implicitNamespacePrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVoid)) __obj.updateDynamic("isVoid")(isVoid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClosedByChildren]
   }
 }

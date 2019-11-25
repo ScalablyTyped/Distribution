@@ -15,8 +15,8 @@ object LineReaderOptions {
   def apply(bufferSize: Int | Double = null, encoding: String = null, separator: js.Any = null): LineReaderOptions = {
     val __obj = js.Dynamic.literal()
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineReaderOptions]
   }
 }

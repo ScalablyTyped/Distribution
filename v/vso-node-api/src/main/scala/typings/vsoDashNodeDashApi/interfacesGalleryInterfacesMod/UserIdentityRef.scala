@@ -18,7 +18,7 @@ trait UserIdentityRef extends js.Object {
 object UserIdentityRef {
   @scala.inline
   def apply(displayName: String, id: String): UserIdentityRef = {
-    val __obj = js.Dynamic.literal(displayName = displayName, id = id)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserIdentityRef]
   }

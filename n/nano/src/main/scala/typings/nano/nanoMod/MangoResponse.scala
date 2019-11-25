@@ -24,10 +24,10 @@ object MangoResponse {
     execution_stats: MangoExecutionStats = null,
     warning: String = null
   ): MangoResponse[D] = {
-    val __obj = js.Dynamic.literal(docs = docs)
-    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark)
-    if (execution_stats != null) __obj.updateDynamic("execution_stats")(execution_stats)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
+    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark.asInstanceOf[js.Any])
+    if (execution_stats != null) __obj.updateDynamic("execution_stats")(execution_stats.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[MangoResponse[D]]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_AREASELECTOR extends js.Object {
 object Anon_AREASELECTOR {
   @scala.inline
   def apply(AREA_SELECTOR: String, CONTENT_SELECTOR: String): Anon_AREASELECTOR = {
-    val __obj = js.Dynamic.literal(AREA_SELECTOR = AREA_SELECTOR, CONTENT_SELECTOR = CONTENT_SELECTOR)
+    val __obj = js.Dynamic.literal(AREA_SELECTOR = AREA_SELECTOR.asInstanceOf[js.Any], CONTENT_SELECTOR = CONTENT_SELECTOR.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AREASELECTOR]
   }

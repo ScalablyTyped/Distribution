@@ -34,17 +34,17 @@ object ActionDetail {
     settingsChange: SettingsChange = null
   ): ActionDetail = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (dlpChange != null) __obj.updateDynamic("dlpChange")(dlpChange)
-    if (edit != null) __obj.updateDynamic("edit")(edit)
-    if (move != null) __obj.updateDynamic("move")(move)
-    if (permissionChange != null) __obj.updateDynamic("permissionChange")(permissionChange)
-    if (reference != null) __obj.updateDynamic("reference")(reference)
-    if (rename != null) __obj.updateDynamic("rename")(rename)
-    if (restore != null) __obj.updateDynamic("restore")(restore)
-    if (settingsChange != null) __obj.updateDynamic("settingsChange")(settingsChange)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (dlpChange != null) __obj.updateDynamic("dlpChange")(dlpChange.asInstanceOf[js.Any])
+    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
+    if (permissionChange != null) __obj.updateDynamic("permissionChange")(permissionChange.asInstanceOf[js.Any])
+    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
+    if (rename != null) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
+    if (restore != null) __obj.updateDynamic("restore")(restore.asInstanceOf[js.Any])
+    if (settingsChange != null) __obj.updateDynamic("settingsChange")(settingsChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionDetail]
   }
 }

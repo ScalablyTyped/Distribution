@@ -25,13 +25,6 @@ trait Anon_AUDIO extends js.Object {
   var video: js.UndefOr[js.Array[Rendition[VIDEO]]] = js.undefined
 }
 
-trait Anon_Audio extends js.Object {
-  var audio: js.UndefOr[Double] = js.undefined
-  var closedCaptions: js.UndefOr[Double] = js.undefined
-  var subtitles: js.UndefOr[Double] = js.undefined
-  var video: js.UndefOr[Double] = js.undefined
-}
-
 object Anon_AUDIO {
   @scala.inline
   def apply(
@@ -49,20 +42,27 @@ object Anon_AUDIO {
     subtitles: js.Array[Rendition[SUBTITLES]] = null,
     video: js.Array[Rendition[VIDEO]] = null
   ): Anon_AUDIO = {
-    val __obj = js.Dynamic.literal(bandwidth = bandwidth, uri = uri)
-    if (audio != null) __obj.updateDynamic("audio")(audio)
+    val __obj = js.Dynamic.literal(bandwidth = bandwidth.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
     if (averageBandwidth != null) __obj.updateDynamic("averageBandwidth")(averageBandwidth.asInstanceOf[js.Any])
-    if (closedCaptions != null) __obj.updateDynamic("closedCaptions")(closedCaptions)
-    if (codecs != null) __obj.updateDynamic("codecs")(codecs)
-    if (currentRenditions != null) __obj.updateDynamic("currentRenditions")(currentRenditions)
+    if (closedCaptions != null) __obj.updateDynamic("closedCaptions")(closedCaptions.asInstanceOf[js.Any])
+    if (codecs != null) __obj.updateDynamic("codecs")(codecs.asInstanceOf[js.Any])
+    if (currentRenditions != null) __obj.updateDynamic("currentRenditions")(currentRenditions.asInstanceOf[js.Any])
     if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (hdcpLevel != null) __obj.updateDynamic("hdcpLevel")(hdcpLevel)
-    if (!js.isUndefined(isIFrameOnly)) __obj.updateDynamic("isIFrameOnly")(isIFrameOnly)
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution)
-    if (subtitles != null) __obj.updateDynamic("subtitles")(subtitles)
-    if (video != null) __obj.updateDynamic("video")(video)
+    if (hdcpLevel != null) __obj.updateDynamic("hdcpLevel")(hdcpLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIFrameOnly)) __obj.updateDynamic("isIFrameOnly")(isIFrameOnly.asInstanceOf[js.Any])
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (subtitles != null) __obj.updateDynamic("subtitles")(subtitles.asInstanceOf[js.Any])
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AUDIO]
   }
+}
+
+trait Anon_Audio extends js.Object {
+  var audio: js.UndefOr[Double] = js.undefined
+  var closedCaptions: js.UndefOr[Double] = js.undefined
+  var subtitles: js.UndefOr[Double] = js.undefined
+  var video: js.UndefOr[Double] = js.undefined
 }
 
 object Anon_Audio {

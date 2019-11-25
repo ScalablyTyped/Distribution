@@ -30,15 +30,15 @@ object BqmlTrainingRunTrainingOptions {
     warmStart: js.UndefOr[Boolean] = js.undefined
   ): BqmlTrainingRunTrainingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(earlyStop)) __obj.updateDynamic("earlyStop")(earlyStop)
+    if (!js.isUndefined(earlyStop)) __obj.updateDynamic("earlyStop")(earlyStop.asInstanceOf[js.Any])
     if (l1Reg != null) __obj.updateDynamic("l1Reg")(l1Reg.asInstanceOf[js.Any])
     if (l2Reg != null) __obj.updateDynamic("l2Reg")(l2Reg.asInstanceOf[js.Any])
     if (learnRate != null) __obj.updateDynamic("learnRate")(learnRate.asInstanceOf[js.Any])
-    if (learnRateStrategy != null) __obj.updateDynamic("learnRateStrategy")(learnRateStrategy)
+    if (learnRateStrategy != null) __obj.updateDynamic("learnRateStrategy")(learnRateStrategy.asInstanceOf[js.Any])
     if (lineSearchInitLearnRate != null) __obj.updateDynamic("lineSearchInitLearnRate")(lineSearchInitLearnRate.asInstanceOf[js.Any])
-    if (maxIteration != null) __obj.updateDynamic("maxIteration")(maxIteration)
+    if (maxIteration != null) __obj.updateDynamic("maxIteration")(maxIteration.asInstanceOf[js.Any])
     if (minRelProgress != null) __obj.updateDynamic("minRelProgress")(minRelProgress.asInstanceOf[js.Any])
-    if (!js.isUndefined(warmStart)) __obj.updateDynamic("warmStart")(warmStart)
+    if (!js.isUndefined(warmStart)) __obj.updateDynamic("warmStart")(warmStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[BqmlTrainingRunTrainingOptions]
   }
 }

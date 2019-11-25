@@ -11,7 +11,7 @@ trait D3v3Context extends js.Object {
 object D3v3Context {
   @scala.inline
   def apply(version: String): D3v3Context = {
-    val __obj = js.Dynamic.literal(version = version)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[D3v3Context]
   }

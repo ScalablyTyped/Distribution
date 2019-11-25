@@ -35,8 +35,8 @@ object Profile {
     star: String,
     username: String
   ): Profile = {
-    val __obj = js.Dynamic.literal(competitive = competitive, endorsement = endorsement, games = games, level = level, levelFrame = levelFrame, playtime = playtime, portrait = portrait, star = star, username = username)
-    __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(competitive = competitive.asInstanceOf[js.Any], endorsement = endorsement.asInstanceOf[js.Any], games = games.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], levelFrame = levelFrame.asInstanceOf[js.Any], playtime = playtime.asInstanceOf[js.Any], portrait = portrait.asInstanceOf[js.Any], star = star.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

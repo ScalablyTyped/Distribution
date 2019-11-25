@@ -36,18 +36,18 @@ object Anon_MedianSvgClassNameMedianSvgStyle {
     whiskerSvgStyle: js.Object = null
   ): Anon_MedianSvgClassNameMedianSvgStyle = {
     val __obj = js.Dynamic.literal()
-    if (medianSvgClassName != null) __obj.updateDynamic("medianSvgClassName")(medianSvgClassName)
-    if (medianSvgStyle != null) __obj.updateDynamic("medianSvgStyle")(medianSvgStyle)
-    if (q2Color != null) __obj.updateDynamic("q2Color")(q2Color)
-    if (q2SvgClassName != null) __obj.updateDynamic("q2SvgClassName")(q2SvgClassName)
-    if (q2SvgStyle != null) __obj.updateDynamic("q2SvgStyle")(q2SvgStyle)
-    if (q3SvgClassName != null) __obj.updateDynamic("q3SvgClassName")(q3SvgClassName)
-    if (q3SvgStyle != null) __obj.updateDynamic("q3SvgStyle")(q3SvgStyle)
-    if (whiskerEndLength != null) __obj.updateDynamic("whiskerEndLength")(whiskerEndLength)
-    if (whiskerEndSvgClassName != null) __obj.updateDynamic("whiskerEndSvgClassName")(whiskerEndSvgClassName)
-    if (whiskerEndSvgStyle != null) __obj.updateDynamic("whiskerEndSvgStyle")(whiskerEndSvgStyle)
-    if (whiskerSvgClassName != null) __obj.updateDynamic("whiskerSvgClassName")(whiskerSvgClassName)
-    if (whiskerSvgStyle != null) __obj.updateDynamic("whiskerSvgStyle")(whiskerSvgStyle)
+    if (medianSvgClassName != null) __obj.updateDynamic("medianSvgClassName")(medianSvgClassName.asInstanceOf[js.Any])
+    if (medianSvgStyle != null) __obj.updateDynamic("medianSvgStyle")(medianSvgStyle.asInstanceOf[js.Any])
+    if (q2Color != null) __obj.updateDynamic("q2Color")(q2Color.asInstanceOf[js.Any])
+    if (q2SvgClassName != null) __obj.updateDynamic("q2SvgClassName")(q2SvgClassName.asInstanceOf[js.Any])
+    if (q2SvgStyle != null) __obj.updateDynamic("q2SvgStyle")(q2SvgStyle.asInstanceOf[js.Any])
+    if (q3SvgClassName != null) __obj.updateDynamic("q3SvgClassName")(q3SvgClassName.asInstanceOf[js.Any])
+    if (q3SvgStyle != null) __obj.updateDynamic("q3SvgStyle")(q3SvgStyle.asInstanceOf[js.Any])
+    if (whiskerEndLength != null) __obj.updateDynamic("whiskerEndLength")(whiskerEndLength.asInstanceOf[js.Any])
+    if (whiskerEndSvgClassName != null) __obj.updateDynamic("whiskerEndSvgClassName")(whiskerEndSvgClassName.asInstanceOf[js.Any])
+    if (whiskerEndSvgStyle != null) __obj.updateDynamic("whiskerEndSvgStyle")(whiskerEndSvgStyle.asInstanceOf[js.Any])
+    if (whiskerSvgClassName != null) __obj.updateDynamic("whiskerSvgClassName")(whiskerSvgClassName.asInstanceOf[js.Any])
+    if (whiskerSvgStyle != null) __obj.updateDynamic("whiskerSvgStyle")(whiskerSvgStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MedianSvgClassNameMedianSvgStyle]
   }
 }

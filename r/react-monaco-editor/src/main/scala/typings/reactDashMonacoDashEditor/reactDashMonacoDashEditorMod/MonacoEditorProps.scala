@@ -54,17 +54,17 @@ object MonacoEditorProps {
     width: String | Double = null
   ): MonacoEditorProps = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (editorDidMount != null) __obj.updateDynamic("editorDidMount")(js.Any.fromFunction2(editorDidMount))
     if (editorWillMount != null) __obj.updateDynamic("editorWillMount")(js.Any.fromFunction1(editorWillMount))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (overrideServices != null) __obj.updateDynamic("overrideServices")(overrideServices)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (overrideServices != null) __obj.updateDynamic("overrideServices")(overrideServices.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonacoEditorProps]
   }

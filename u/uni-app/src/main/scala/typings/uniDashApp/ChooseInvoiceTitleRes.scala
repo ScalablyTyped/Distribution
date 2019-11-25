@@ -52,14 +52,14 @@ object ChooseInvoiceTitleRes {
     `type`: String = null
   ): ChooseInvoiceTitleRes = {
     val __obj = js.Dynamic.literal()
-    if (bankAccount != null) __obj.updateDynamic("bankAccount")(bankAccount)
-    if (bankName != null) __obj.updateDynamic("bankName")(bankName)
-    if (companyAddress != null) __obj.updateDynamic("companyAddress")(companyAddress)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
-    if (taxNumber != null) __obj.updateDynamic("taxNumber")(taxNumber)
-    if (telephone != null) __obj.updateDynamic("telephone")(telephone)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (bankAccount != null) __obj.updateDynamic("bankAccount")(bankAccount.asInstanceOf[js.Any])
+    if (bankName != null) __obj.updateDynamic("bankName")(bankName.asInstanceOf[js.Any])
+    if (companyAddress != null) __obj.updateDynamic("companyAddress")(companyAddress.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    if (taxNumber != null) __obj.updateDynamic("taxNumber")(taxNumber.asInstanceOf[js.Any])
+    if (telephone != null) __obj.updateDynamic("telephone")(telephone.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseInvoiceTitleRes]
   }
 }

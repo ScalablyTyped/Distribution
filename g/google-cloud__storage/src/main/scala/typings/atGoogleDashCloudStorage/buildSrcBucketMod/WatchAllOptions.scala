@@ -26,13 +26,13 @@ object WatchAllOptions {
     versions: js.UndefOr[Boolean] = js.undefined
   ): WatchAllOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
-    if (!js.isUndefined(versions)) __obj.updateDynamic("versions")(versions)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
+    if (!js.isUndefined(versions)) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchAllOptions]
   }
 }

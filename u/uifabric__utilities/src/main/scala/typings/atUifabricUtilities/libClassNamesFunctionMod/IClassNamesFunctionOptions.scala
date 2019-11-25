@@ -15,7 +15,7 @@ object IClassNamesFunctionOptions {
   @scala.inline
   def apply(disableCaching: js.UndefOr[Boolean] = js.undefined): IClassNamesFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableCaching)) __obj.updateDynamic("disableCaching")(disableCaching)
+    if (!js.isUndefined(disableCaching)) __obj.updateDynamic("disableCaching")(disableCaching.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClassNamesFunctionOptions]
   }
 }

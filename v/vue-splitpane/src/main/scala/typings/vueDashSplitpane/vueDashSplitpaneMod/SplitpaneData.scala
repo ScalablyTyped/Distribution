@@ -24,8 +24,8 @@ object SplitpaneData {
     resizeType: String,
     `type`: String
   ): SplitpaneData = {
-    val __obj = js.Dynamic.literal(active = active, hasMoved = hasMoved, height = height, percent = percent, resizeType = resizeType)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], hasMoved = hasMoved.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], resizeType = resizeType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitpaneData]
   }
 }

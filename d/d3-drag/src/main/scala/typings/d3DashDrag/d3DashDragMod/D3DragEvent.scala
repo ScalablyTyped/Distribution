@@ -1,6 +1,5 @@
 package typings.d3DashDrag.d3DashDragMod
 
-import typings.d3DashDrag.d3DashDragStrings.drag
 import typings.d3DashDrag.d3DashDragStrings.end
 import typings.d3DashDrag.d3DashDragStrings.mouse
 import typings.d3DashDrag.d3DashDragStrings.start
@@ -49,7 +48,7 @@ trait D3DragEvent[GElement /* <: DraggedElementBaseType */, Datum, Subject] exte
   /**
     * The event type for the DragEvent
     */
-  var `type`: start | drag | end | String = js.native
+  var `type`: start | typings.d3DashDrag.d3DashDragStrings.drag | end | String = js.native
   /**
     * The new x-coordinate of the subject, relative to the container
     */

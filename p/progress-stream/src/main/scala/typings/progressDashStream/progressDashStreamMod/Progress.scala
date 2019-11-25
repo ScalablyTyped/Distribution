@@ -27,7 +27,7 @@ object Progress {
     speed: Double,
     transferred: Double
   ): Progress = {
-    val __obj = js.Dynamic.literal(delta = delta, eta = eta, length = length, percentage = percentage, remaining = remaining, runtime = runtime, speed = speed, transferred = transferred)
+    val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], eta = eta.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any], remaining = remaining.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], transferred = transferred.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Progress]
   }

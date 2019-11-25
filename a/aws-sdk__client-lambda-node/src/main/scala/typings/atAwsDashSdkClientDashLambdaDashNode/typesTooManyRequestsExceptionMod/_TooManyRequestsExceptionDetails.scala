@@ -40,9 +40,9 @@ object _TooManyRequestsExceptionDetails {
   ): _TooManyRequestsExceptionDetails = {
     val __obj = js.Dynamic.literal()
     if (Reason != null) __obj.updateDynamic("Reason")(Reason.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (retryAfterSeconds != null) __obj.updateDynamic("retryAfterSeconds")(retryAfterSeconds)
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (retryAfterSeconds != null) __obj.updateDynamic("retryAfterSeconds")(retryAfterSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[_TooManyRequestsExceptionDetails]
   }
 }

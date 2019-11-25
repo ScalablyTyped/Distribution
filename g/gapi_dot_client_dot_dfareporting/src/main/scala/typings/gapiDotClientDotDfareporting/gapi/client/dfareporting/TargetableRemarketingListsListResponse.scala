@@ -21,9 +21,9 @@ object TargetableRemarketingListsListResponse {
     targetableRemarketingLists: js.Array[TargetableRemarketingList] = null
   ): TargetableRemarketingListsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (targetableRemarketingLists != null) __obj.updateDynamic("targetableRemarketingLists")(targetableRemarketingLists)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (targetableRemarketingLists != null) __obj.updateDynamic("targetableRemarketingLists")(targetableRemarketingLists.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetableRemarketingListsListResponse]
   }
 }

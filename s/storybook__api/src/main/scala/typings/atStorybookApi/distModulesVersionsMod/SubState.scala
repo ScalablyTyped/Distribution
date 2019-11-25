@@ -17,8 +17,8 @@ object SubState {
     versions: Versions with UnknownEntries,
     dismissedVersionNotification: String = null
   ): SubState = {
-    val __obj = js.Dynamic.literal(lastVersionCheck = lastVersionCheck, versions = versions)
-    if (dismissedVersionNotification != null) __obj.updateDynamic("dismissedVersionNotification")(dismissedVersionNotification)
+    val __obj = js.Dynamic.literal(lastVersionCheck = lastVersionCheck.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
+    if (dismissedVersionNotification != null) __obj.updateDynamic("dismissedVersionNotification")(dismissedVersionNotification.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubState]
   }
 }

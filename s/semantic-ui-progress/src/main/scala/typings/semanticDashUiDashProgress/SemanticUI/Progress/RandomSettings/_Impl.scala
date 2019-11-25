@@ -18,7 +18,7 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(max: Double, min: Double): _Impl = {
-    val __obj = js.Dynamic.literal(max = max, min = min)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

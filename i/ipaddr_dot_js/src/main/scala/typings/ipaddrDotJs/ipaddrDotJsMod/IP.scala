@@ -17,10 +17,9 @@ object IP {
   def apply(
     prefixLengthFromSubnetMask: () => Double | `false`,
     toByteArray: () => js.Array[Double],
-    toNormalizedString: () => String,
-    toString: () => String
+    toNormalizedString: () => String
   ): IP = {
-    val __obj = js.Dynamic.literal(prefixLengthFromSubnetMask = js.Any.fromFunction0(prefixLengthFromSubnetMask), toByteArray = js.Any.fromFunction0(toByteArray), toNormalizedString = js.Any.fromFunction0(toNormalizedString), toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(prefixLengthFromSubnetMask = js.Any.fromFunction0(prefixLengthFromSubnetMask), toByteArray = js.Any.fromFunction0(toByteArray), toNormalizedString = js.Any.fromFunction0(toNormalizedString))
   
     __obj.asInstanceOf[IP]
   }

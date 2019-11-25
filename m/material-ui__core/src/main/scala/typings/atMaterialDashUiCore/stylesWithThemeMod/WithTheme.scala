@@ -12,7 +12,7 @@ trait WithTheme extends js.Object {
 object WithTheme {
   @scala.inline
   def apply(theme: Theme): WithTheme = {
-    val __obj = js.Dynamic.literal(theme = theme)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WithTheme]
   }

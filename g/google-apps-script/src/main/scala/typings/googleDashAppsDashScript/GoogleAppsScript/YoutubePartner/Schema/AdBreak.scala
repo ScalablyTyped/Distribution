@@ -15,8 +15,8 @@ object AdBreak {
   def apply(midrollSeconds: Int | Double = null, position: String = null, slot: js.Array[AdSlot] = null): AdBreak = {
     val __obj = js.Dynamic.literal()
     if (midrollSeconds != null) __obj.updateDynamic("midrollSeconds")(midrollSeconds.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (slot != null) __obj.updateDynamic("slot")(slot)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdBreak]
   }
 }

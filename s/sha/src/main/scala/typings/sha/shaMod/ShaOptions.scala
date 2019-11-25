@@ -13,7 +13,7 @@ object ShaOptions {
   @scala.inline
   def apply(algorithm: String = null): ShaOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShaOptions]
   }
 }

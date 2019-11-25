@@ -24,10 +24,10 @@ object VideoFileDetailsAudioStream {
     vendor: String = null
   ): VideoFileDetailsAudioStream = {
     val __obj = js.Dynamic.literal()
-    if (bitrateBps != null) __obj.updateDynamic("bitrateBps")(bitrateBps)
+    if (bitrateBps != null) __obj.updateDynamic("bitrateBps")(bitrateBps.asInstanceOf[js.Any])
     if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (codec != null) __obj.updateDynamic("codec")(codec)
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoFileDetailsAudioStream]
   }
 }

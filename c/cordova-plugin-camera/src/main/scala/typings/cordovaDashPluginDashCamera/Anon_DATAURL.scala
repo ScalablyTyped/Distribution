@@ -13,7 +13,7 @@ trait Anon_DATAURL extends js.Object {
 object Anon_DATAURL {
   @scala.inline
   def apply(DATA_URL: Double, FILE_URI: Double, NATIVE_URI: Double): Anon_DATAURL = {
-    val __obj = js.Dynamic.literal(DATA_URL = DATA_URL, FILE_URI = FILE_URI, NATIVE_URI = NATIVE_URI)
+    val __obj = js.Dynamic.literal(DATA_URL = DATA_URL.asInstanceOf[js.Any], FILE_URI = FILE_URI.asInstanceOf[js.Any], NATIVE_URI = NATIVE_URI.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DATAURL]
   }

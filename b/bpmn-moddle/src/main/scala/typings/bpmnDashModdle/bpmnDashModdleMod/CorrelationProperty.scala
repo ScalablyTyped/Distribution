@@ -25,12 +25,12 @@ object CorrelationProperty {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CorrelationProperty = {
-    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, correlationPropertyRetrievalExpression = correlationPropertyRetrievalExpression, id = id, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)
-    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements)
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], correlationPropertyRetrievalExpression = correlationPropertyRetrievalExpression.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions.asInstanceOf[js.Any])
+    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[CorrelationProperty]
   }
 }

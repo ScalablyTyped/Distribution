@@ -12,7 +12,7 @@ trait _model extends js.Object {
 object _model {
   @scala.inline
   def apply(name: String, reducers: js.Any): _model = {
-    val __obj = js.Dynamic.literal(name = name, reducers = reducers)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], reducers = reducers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_model]
   }

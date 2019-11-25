@@ -17,9 +17,9 @@ object TurnBasedMatchModification {
   @scala.inline
   def apply(kind: String = null, modifiedTimestampMillis: String = null, participantId: String = null): TurnBasedMatchModification = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (modifiedTimestampMillis != null) __obj.updateDynamic("modifiedTimestampMillis")(modifiedTimestampMillis)
-    if (participantId != null) __obj.updateDynamic("participantId")(participantId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (modifiedTimestampMillis != null) __obj.updateDynamic("modifiedTimestampMillis")(modifiedTimestampMillis.asInstanceOf[js.Any])
+    if (participantId != null) __obj.updateDynamic("participantId")(participantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TurnBasedMatchModification]
   }
 }

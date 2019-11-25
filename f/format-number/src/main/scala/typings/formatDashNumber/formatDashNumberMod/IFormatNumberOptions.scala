@@ -44,19 +44,19 @@ object IFormatNumberOptions {
     truncate: Int | Double = null
   ): IFormatNumberOptions = {
     val __obj = js.Dynamic.literal()
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
-    if (decimalsSeparator != null) __obj.updateDynamic("decimalsSeparator")(decimalsSeparator)
-    if (integerSeparator != null) __obj.updateDynamic("integerSeparator")(integerSeparator)
-    if (!js.isUndefined(negativeLeftOut)) __obj.updateDynamic("negativeLeftOut")(negativeLeftOut)
-    if (negativeLeftSymbol != null) __obj.updateDynamic("negativeLeftSymbol")(negativeLeftSymbol)
-    if (!js.isUndefined(negativeRightOut)) __obj.updateDynamic("negativeRightOut")(negativeRightOut)
-    if (negativeRightSymbol != null) __obj.updateDynamic("negativeRightSymbol")(negativeRightSymbol)
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
+    if (decimalsSeparator != null) __obj.updateDynamic("decimalsSeparator")(decimalsSeparator.asInstanceOf[js.Any])
+    if (integerSeparator != null) __obj.updateDynamic("integerSeparator")(integerSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(negativeLeftOut)) __obj.updateDynamic("negativeLeftOut")(negativeLeftOut.asInstanceOf[js.Any])
+    if (negativeLeftSymbol != null) __obj.updateDynamic("negativeLeftSymbol")(negativeLeftSymbol.asInstanceOf[js.Any])
+    if (!js.isUndefined(negativeRightOut)) __obj.updateDynamic("negativeRightOut")(negativeRightOut.asInstanceOf[js.Any])
+    if (negativeRightSymbol != null) __obj.updateDynamic("negativeRightSymbol")(negativeRightSymbol.asInstanceOf[js.Any])
     if (negativeType != null) __obj.updateDynamic("negativeType")(negativeType.asInstanceOf[js.Any])
     if (padLeft != null) __obj.updateDynamic("padLeft")(padLeft.asInstanceOf[js.Any])
     if (padRight != null) __obj.updateDynamic("padRight")(padRight.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFormatNumberOptions]
   }

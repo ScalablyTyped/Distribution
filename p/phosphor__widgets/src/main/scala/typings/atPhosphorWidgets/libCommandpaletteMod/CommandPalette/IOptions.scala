@@ -24,8 +24,8 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(commands: CommandRegistry, renderer: IRenderer = null): IOptions = {
-    val __obj = js.Dynamic.literal(commands = commands)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

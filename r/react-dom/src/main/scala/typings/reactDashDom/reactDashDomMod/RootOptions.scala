@@ -17,8 +17,8 @@ object RootOptions {
     hydrationOptions: typings.reactDashDom.experimentalMod.reactDashDomMod.HydrationOptions = null
   ): RootOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hydrate)) __obj.updateDynamic("hydrate")(hydrate)
-    if (hydrationOptions != null) __obj.updateDynamic("hydrationOptions")(hydrationOptions)
+    if (!js.isUndefined(hydrate)) __obj.updateDynamic("hydrate")(hydrate.asInstanceOf[js.Any])
+    if (hydrationOptions != null) __obj.updateDynamic("hydrationOptions")(hydrationOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RootOptions]
   }
 }

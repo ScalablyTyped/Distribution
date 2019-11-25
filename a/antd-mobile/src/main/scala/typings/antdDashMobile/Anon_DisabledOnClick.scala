@@ -13,7 +13,7 @@ trait Anon_DisabledOnClick extends js.Object {
 object Anon_DisabledOnClick {
   @scala.inline
   def apply(disabled: Boolean, onClick: () => Unit, prefixCls: String): Anon_DisabledOnClick = {
-    val __obj = js.Dynamic.literal(disabled = disabled, onClick = js.Any.fromFunction0(onClick), prefixCls = prefixCls)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), prefixCls = prefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DisabledOnClick]
   }

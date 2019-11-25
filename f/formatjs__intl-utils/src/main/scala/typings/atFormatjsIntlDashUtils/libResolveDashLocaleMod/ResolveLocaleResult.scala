@@ -14,8 +14,8 @@ trait ResolveLocaleResult
 object ResolveLocaleResult {
   @scala.inline
   def apply(dataLocale: String, locale: String, StringDictionary: /* k */ StringDictionary[js.Any] = null): ResolveLocaleResult = {
-    val __obj = js.Dynamic.literal(dataLocale = dataLocale, locale = locale)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(dataLocale = dataLocale.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ResolveLocaleResult]
   }
 }

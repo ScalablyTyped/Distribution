@@ -35,10 +35,10 @@ object TabNavigatorProps {
     tabBarStyle: ViewStyle = null
   ): TabNavigatorProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hidesTabTouch)) __obj.updateDynamic("hidesTabTouch")(hidesTabTouch)
-    if (sceneStyle != null) __obj.updateDynamic("sceneStyle")(sceneStyle)
-    if (tabBarShadowStyle != null) __obj.updateDynamic("tabBarShadowStyle")(tabBarShadowStyle)
-    if (tabBarStyle != null) __obj.updateDynamic("tabBarStyle")(tabBarStyle)
+    if (!js.isUndefined(hidesTabTouch)) __obj.updateDynamic("hidesTabTouch")(hidesTabTouch.asInstanceOf[js.Any])
+    if (sceneStyle != null) __obj.updateDynamic("sceneStyle")(sceneStyle.asInstanceOf[js.Any])
+    if (tabBarShadowStyle != null) __obj.updateDynamic("tabBarShadowStyle")(tabBarShadowStyle.asInstanceOf[js.Any])
+    if (tabBarStyle != null) __obj.updateDynamic("tabBarStyle")(tabBarStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabNavigatorProps]
   }
 }

@@ -15,10 +15,10 @@ trait ODatabaseSessionPoolOptions extends js.Object {
 object ODatabaseSessionPoolOptions {
   @scala.inline
   def apply(name: String, password: String = null, pool: Anon_Max = null, username: String = null): ODatabaseSessionPoolOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (pool != null) __obj.updateDynamic("pool")(pool)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ODatabaseSessionPoolOptions]
   }
 }

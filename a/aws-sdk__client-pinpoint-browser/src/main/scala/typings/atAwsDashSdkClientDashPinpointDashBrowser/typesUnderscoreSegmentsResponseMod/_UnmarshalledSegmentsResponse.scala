@@ -17,8 +17,8 @@ object _UnmarshalledSegmentsResponse {
   @scala.inline
   def apply(Item: js.Array[_UnmarshalledSegmentResponse] = null, NextToken: String = null): _UnmarshalledSegmentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Item != null) __obj.updateDynamic("Item")(Item)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSegmentsResponse]
   }
 }

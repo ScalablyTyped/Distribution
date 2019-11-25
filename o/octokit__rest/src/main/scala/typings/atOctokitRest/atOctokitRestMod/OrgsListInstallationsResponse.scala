@@ -12,7 +12,7 @@ trait OrgsListInstallationsResponse extends js.Object {
 object OrgsListInstallationsResponse {
   @scala.inline
   def apply(installations: js.Array[OrgsListInstallationsResponseInstallationsItem], total_count: Double): OrgsListInstallationsResponse = {
-    val __obj = js.Dynamic.literal(installations = installations, total_count = total_count)
+    val __obj = js.Dynamic.literal(installations = installations.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrgsListInstallationsResponse]
   }

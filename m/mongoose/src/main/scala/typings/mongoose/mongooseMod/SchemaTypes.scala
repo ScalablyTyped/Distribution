@@ -24,8 +24,7 @@ object SchemaTypes extends js.Object {
     * http://mongoosejs.com/docs/api.html#schema-embedded-js
     */
   @js.native
-  class Embedded protected ()
-    extends typings.mongoose.mongooseMod.Schema.Types.Embedded {
+  class Embedded protected () extends SchemaType {
     /** Sub-schema schematype constructor */
     def this(schema: Schema[_], key: String) = this()
     def this(schema: Schema[_], key: String, options: js.Any) = this()
@@ -36,8 +35,7 @@ object SchemaTypes extends js.Object {
     * https://mongoosejs.com/docs/schematypes.html#maps
     */
   @js.native
-  class Map protected ()
-    extends typings.mongoose.mongooseMod.Schema.Types.Map {
+  class Map protected () extends SchemaType {
     /** Sub-schema schematype constructor */
     def this(key: String) = this()
     def this(key: String, options: js.Any) = this()

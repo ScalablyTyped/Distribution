@@ -13,7 +13,7 @@ trait Anon_ArrayLimit extends js.Object {
 object Anon_ArrayLimit {
   @scala.inline
   def apply(arrayLimit: Double, depth: Double, parameterLimit: Double): Anon_ArrayLimit = {
-    val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, depth = depth, parameterLimit = parameterLimit)
+    val __obj = js.Dynamic.literal(arrayLimit = arrayLimit.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], parameterLimit = parameterLimit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArrayLimit]
   }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait AssociatedMenuBehavior extends js.Object
 
+object AssociatedMenuBehavior {
+  @scala.inline
+  def DoNotDisplay: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapStrings.DoNotDisplay = this.cast("DoNotDisplay")
+  @scala.inline
+  def UseCollectionName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapStrings.UseCollectionName = this.cast("UseCollectionName")
+  @scala.inline
+  def UseLabel: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapStrings.UseLabel = this.cast("UseLabel")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

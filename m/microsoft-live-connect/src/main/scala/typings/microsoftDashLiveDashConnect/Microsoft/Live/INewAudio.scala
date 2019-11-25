@@ -49,13 +49,13 @@ object INewAudio {
     genre: String = null,
     title: String = null
   ): INewAudio = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (album != null) __obj.updateDynamic("album")(album)
-    if (album_artist != null) __obj.updateDynamic("album_artist")(album_artist)
-    if (artist != null) __obj.updateDynamic("artist")(artist)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (genre != null) __obj.updateDynamic("genre")(genre)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (album != null) __obj.updateDynamic("album")(album.asInstanceOf[js.Any])
+    if (album_artist != null) __obj.updateDynamic("album_artist")(album_artist.asInstanceOf[js.Any])
+    if (artist != null) __obj.updateDynamic("artist")(artist.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (genre != null) __obj.updateDynamic("genre")(genre.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewAudio]
   }
 }

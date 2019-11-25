@@ -16,10 +16,10 @@ object AtTrackingOptions {
     format: String = null,
     updatedAtField: String = null
   ): AtTrackingOptions = {
-    val __obj = js.Dynamic.literal(access = access)
-    if (createdAtField != null) __obj.updateDynamic("createdAtField")(createdAtField)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (updatedAtField != null) __obj.updateDynamic("updatedAtField")(updatedAtField)
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any])
+    if (createdAtField != null) __obj.updateDynamic("createdAtField")(createdAtField.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (updatedAtField != null) __obj.updateDynamic("updatedAtField")(updatedAtField.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtTrackingOptions]
   }
 }

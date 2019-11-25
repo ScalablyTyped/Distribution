@@ -17,9 +17,9 @@ object CSSProperties {
     CSSPropertiesPseudo: CSSPropertiesPseudo = null
   ): CSSProperties = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, CSSPropertiesComplete)
-    js.Dynamic.global.Object.assign(__obj, CSSPropertiesLossy)
-    js.Dynamic.global.Object.assign(__obj, CSSPropertiesPseudo)
+    if (CSSPropertiesComplete != null) js.Dynamic.global.Object.assign(__obj, CSSPropertiesComplete)
+    if (CSSPropertiesLossy != null) js.Dynamic.global.Object.assign(__obj, CSSPropertiesLossy)
+    if (CSSPropertiesPseudo != null) js.Dynamic.global.Object.assign(__obj, CSSPropertiesPseudo)
     __obj.asInstanceOf[CSSProperties]
   }
 }

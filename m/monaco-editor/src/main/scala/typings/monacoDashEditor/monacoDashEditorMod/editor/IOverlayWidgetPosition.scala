@@ -15,7 +15,7 @@ object IOverlayWidgetPosition {
   @scala.inline
   def apply(preference: OverlayWidgetPositionPreference = null): IOverlayWidgetPosition = {
     val __obj = js.Dynamic.literal()
-    if (preference != null) __obj.updateDynamic("preference")(preference)
+    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOverlayWidgetPosition]
   }
 }

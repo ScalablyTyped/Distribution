@@ -42,10 +42,10 @@ object BrowseCarouselItemOptions {
     footer: String = null,
     image: GoogleActionsV2UiElementsImage = null
   ): BrowseCarouselItemOptions = {
-    val __obj = js.Dynamic.literal(title = title, url = url)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (image != null) __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowseCarouselItemOptions]
   }
 }

@@ -27,7 +27,7 @@ trait _parseURLargs extends js.Object {
 object _parseURLargs {
   @scala.inline
   def apply(isDebug: Boolean, noGlobals: Boolean, scopeMap: js.Array[_]): _parseURLargs = {
-    val __obj = js.Dynamic.literal(isDebug = isDebug, noGlobals = noGlobals, scopeMap = scopeMap)
+    val __obj = js.Dynamic.literal(isDebug = isDebug.asInstanceOf[js.Any], noGlobals = noGlobals.asInstanceOf[js.Any], scopeMap = scopeMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_parseURLargs]
   }

@@ -22,7 +22,7 @@ trait PutEventStreamOutput extends OutputTypesUnion {
 object PutEventStreamOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, EventStream: _UnmarshalledEventStream): PutEventStreamOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, EventStream = EventStream)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EventStream = EventStream.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutEventStreamOutput]
   }

@@ -49,17 +49,17 @@ object ButtonProps {
     typeAttr: submit | reset | button = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(dropdown)) __obj.updateDynamic("dropdown")(dropdown)
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
-    if (!js.isUndefined(navbar)) __obj.updateDynamic("navbar")(navbar)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropdown)) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
+    if (!js.isUndefined(navbar)) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (option != null) __obj.updateDynamic("option")(option)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (option != null) __obj.updateDynamic("option")(option.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeAttr != null) __obj.updateDynamic("typeAttr")(typeAttr.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }

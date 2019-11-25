@@ -18,7 +18,7 @@ trait SearchErrorResult extends SearchResult {
 object SearchErrorResult {
   @scala.inline
   def apply(error: Error, id: String, status: `1`): SearchErrorResult = {
-    val __obj = js.Dynamic.literal(error = error, id = id, status = status)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchErrorResult]
   }

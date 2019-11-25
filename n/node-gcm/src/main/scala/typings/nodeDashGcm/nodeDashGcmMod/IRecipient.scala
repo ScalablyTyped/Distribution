@@ -24,12 +24,12 @@ object IRecipient {
     topic: String = null
   ): IRecipient = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (notificationKey != null) __obj.updateDynamic("notificationKey")(notificationKey)
-    if (registrationIds != null) __obj.updateDynamic("registrationIds")(registrationIds)
-    if (registrationTokens != null) __obj.updateDynamic("registrationTokens")(registrationTokens)
-    if (to != null) __obj.updateDynamic("to")(to)
-    if (topic != null) __obj.updateDynamic("topic")(topic)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (notificationKey != null) __obj.updateDynamic("notificationKey")(notificationKey.asInstanceOf[js.Any])
+    if (registrationIds != null) __obj.updateDynamic("registrationIds")(registrationIds.asInstanceOf[js.Any])
+    if (registrationTokens != null) __obj.updateDynamic("registrationTokens")(registrationTokens.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRecipient]
   }
 }

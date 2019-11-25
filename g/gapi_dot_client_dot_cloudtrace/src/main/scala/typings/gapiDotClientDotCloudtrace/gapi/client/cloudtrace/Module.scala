@@ -21,8 +21,8 @@ object Module {
   @scala.inline
   def apply(buildId: TruncatableString = null, module: TruncatableString = null): Module = {
     val __obj = js.Dynamic.literal()
-    if (buildId != null) __obj.updateDynamic("buildId")(buildId)
-    if (module != null) __obj.updateDynamic("module")(module)
+    if (buildId != null) __obj.updateDynamic("buildId")(buildId.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module]
   }
 }

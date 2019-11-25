@@ -13,7 +13,7 @@ trait HapiRouterArgs extends js.Object {
 object HapiRouterArgs {
   @scala.inline
   def apply(request: Anon_Path, routes: Routes): HapiRouterArgs = {
-    val __obj = js.Dynamic.literal(request = request, routes = routes)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HapiRouterArgs]
   }

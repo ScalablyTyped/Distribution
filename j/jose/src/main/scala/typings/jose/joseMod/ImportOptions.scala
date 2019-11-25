@@ -12,7 +12,7 @@ object ImportOptions {
   @scala.inline
   def apply(calculateMissingRSAPrimes: js.UndefOr[Boolean] = js.undefined): ImportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(calculateMissingRSAPrimes)) __obj.updateDynamic("calculateMissingRSAPrimes")(calculateMissingRSAPrimes)
+    if (!js.isUndefined(calculateMissingRSAPrimes)) __obj.updateDynamic("calculateMissingRSAPrimes")(calculateMissingRSAPrimes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportOptions]
   }
 }

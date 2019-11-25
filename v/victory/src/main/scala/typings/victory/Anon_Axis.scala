@@ -23,11 +23,11 @@ object Anon_Axis {
     ticks: CSSProperties = null
   ): Anon_Axis = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (axisLabel != null) __obj.updateDynamic("axisLabel")(axisLabel)
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (tickLabels != null) __obj.updateDynamic("tickLabels")(tickLabels)
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (axisLabel != null) __obj.updateDynamic("axisLabel")(axisLabel.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (tickLabels != null) __obj.updateDynamic("tickLabels")(tickLabels.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Axis]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Off extends js.Object {
 object Anon_Off {
   @scala.inline
   def apply(off: js.Function, on: js.Function): Anon_Off = {
-    val __obj = js.Dynamic.literal(off = off, on = on)
+    val __obj = js.Dynamic.literal(off = off.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Off]
   }

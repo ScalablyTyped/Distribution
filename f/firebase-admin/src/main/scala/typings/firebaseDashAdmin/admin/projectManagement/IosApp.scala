@@ -46,7 +46,7 @@ object IosApp {
     getMetadata: () => js.Promise[IosAppMetadata],
     setDisplayName: String => js.Promise[Unit]
   ): IosApp = {
-    val __obj = js.Dynamic.literal(appId = appId, getConfig = js.Any.fromFunction0(getConfig), getMetadata = js.Any.fromFunction0(getMetadata), setDisplayName = js.Any.fromFunction1(setDisplayName))
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], getConfig = js.Any.fromFunction0(getConfig), getMetadata = js.Any.fromFunction0(getMetadata), setDisplayName = js.Any.fromFunction1(setDisplayName))
   
     __obj.asInstanceOf[IosApp]
   }

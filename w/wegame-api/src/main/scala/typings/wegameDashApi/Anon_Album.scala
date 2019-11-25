@@ -33,7 +33,7 @@ object Anon_Album {
     fail: () => Unit = null,
     success: /* res */ Anon_TempFilePaths => Unit = null
   ): Anon_Album = {
-    val __obj = js.Dynamic.literal(count = count, sizeType = sizeType.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], sizeType = sizeType.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

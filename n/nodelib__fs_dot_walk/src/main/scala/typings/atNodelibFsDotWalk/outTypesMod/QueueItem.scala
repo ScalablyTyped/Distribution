@@ -12,8 +12,8 @@ trait QueueItem extends js.Object {
 object QueueItem {
   @scala.inline
   def apply(dir: String, base: String = null): QueueItem = {
-    val __obj = js.Dynamic.literal(dir = dir)
-    if (base != null) __obj.updateDynamic("base")(base)
+    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueItem]
   }
 }

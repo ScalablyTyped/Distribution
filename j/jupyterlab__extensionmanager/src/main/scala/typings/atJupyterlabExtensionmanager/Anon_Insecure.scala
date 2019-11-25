@@ -18,7 +18,7 @@ trait Anon_Insecure extends js.Object {
 object Anon_Insecure {
   @scala.inline
   def apply(insecure: Double, unstable: Boolean): Anon_Insecure = {
-    val __obj = js.Dynamic.literal(insecure = insecure, unstable = unstable)
+    val __obj = js.Dynamic.literal(insecure = insecure.asInstanceOf[js.Any], unstable = unstable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Insecure]
   }

@@ -20,9 +20,9 @@ object CompileTemplateSummary {
     animations: js.Array[_] = null,
     encapsulation: ViewEncapsulation = null
   ): CompileTemplateSummary = {
-    val __obj = js.Dynamic.literal(ngContentSelectors = ngContentSelectors, styles = styles)
-    if (animations != null) __obj.updateDynamic("animations")(animations)
-    if (encapsulation != null) __obj.updateDynamic("encapsulation")(encapsulation)
+    val __obj = js.Dynamic.literal(ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+    if (animations != null) __obj.updateDynamic("animations")(animations.asInstanceOf[js.Any])
+    if (encapsulation != null) __obj.updateDynamic("encapsulation")(encapsulation.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileTemplateSummary]
   }
 }

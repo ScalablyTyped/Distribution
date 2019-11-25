@@ -12,7 +12,7 @@ trait Contact extends js.Object {
 object Contact {
   @scala.inline
   def apply(emailAddress: String, name: String): Contact = {
-    val __obj = js.Dynamic.literal(emailAddress = emailAddress, name = name)
+    val __obj = js.Dynamic.literal(emailAddress = emailAddress.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Contact]
   }

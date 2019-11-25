@@ -22,12 +22,12 @@ object RevoluteConstraintOptions {
     worldPivot: js.Tuple2[Double, Double] = null
   ): RevoluteConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected)
-    if (localPivotA != null) __obj.updateDynamic("localPivotA")(localPivotA)
-    if (localPivotB != null) __obj.updateDynamic("localPivotB")(localPivotB)
+    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected.asInstanceOf[js.Any])
+    if (localPivotA != null) __obj.updateDynamic("localPivotA")(localPivotA.asInstanceOf[js.Any])
+    if (localPivotB != null) __obj.updateDynamic("localPivotB")(localPivotB.asInstanceOf[js.Any])
     if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
-    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies)
-    if (worldPivot != null) __obj.updateDynamic("worldPivot")(worldPivot)
+    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies.asInstanceOf[js.Any])
+    if (worldPivot != null) __obj.updateDynamic("worldPivot")(worldPivot.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevoluteConstraintOptions]
   }
 }

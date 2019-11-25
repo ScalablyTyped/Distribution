@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait CustomerLocation extends js.Object
 
+object CustomerLocation {
+  @scala.inline
+  def International: typings.braintree.braintreeStrings.International = this.cast("International")
+  @scala.inline
+  def US: typings.braintree.braintreeStrings.US = this.cast("US")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

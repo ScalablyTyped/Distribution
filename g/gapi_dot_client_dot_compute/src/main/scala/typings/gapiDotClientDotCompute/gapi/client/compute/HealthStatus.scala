@@ -24,9 +24,9 @@ object HealthStatus {
     port: Int | Double = null
   ): HealthStatus = {
     val __obj = js.Dynamic.literal()
-    if (healthState != null) __obj.updateDynamic("healthState")(healthState)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
+    if (healthState != null) __obj.updateDynamic("healthState")(healthState.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthStatus]
   }

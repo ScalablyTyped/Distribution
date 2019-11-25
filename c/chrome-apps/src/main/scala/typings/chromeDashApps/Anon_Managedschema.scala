@@ -16,7 +16,7 @@ trait Anon_Managedschema extends js.Object {
 object Anon_Managedschema {
   @scala.inline
   def apply(managed_schema: String): Anon_Managedschema = {
-    val __obj = js.Dynamic.literal(managed_schema = managed_schema)
+    val __obj = js.Dynamic.literal(managed_schema = managed_schema.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Managedschema]
   }

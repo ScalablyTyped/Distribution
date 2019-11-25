@@ -58,15 +58,15 @@ object XHRSettingsObject {
     timeout: Int | Double = null,
     user: String = null
   ): XHRSettingsObject = {
-    val __obj = js.Dynamic.literal(responseType = responseType)
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (headerValue != null) __obj.updateDynamic("headerValue")(headerValue)
-    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (requestedWith != null) __obj.updateDynamic("requestedWith")(requestedWith)
+    val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (headerValue != null) __obj.updateDynamic("headerValue")(headerValue.asInstanceOf[js.Any])
+    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (requestedWith != null) __obj.updateDynamic("requestedWith")(requestedWith.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[XHRSettingsObject]
   }
 }

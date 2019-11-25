@@ -20,7 +20,7 @@ trait ApplyWorkspaceEditResponse extends js.Object {
 object ApplyWorkspaceEditResponse {
   @scala.inline
   def apply(applied: Boolean, failedChange: Int | Double = null): ApplyWorkspaceEditResponse = {
-    val __obj = js.Dynamic.literal(applied = applied)
+    val __obj = js.Dynamic.literal(applied = applied.asInstanceOf[js.Any])
     if (failedChange != null) __obj.updateDynamic("failedChange")(failedChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyWorkspaceEditResponse]
   }

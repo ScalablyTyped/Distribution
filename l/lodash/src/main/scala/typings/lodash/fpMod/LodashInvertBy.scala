@@ -13,7 +13,9 @@ import scala.scalajs.js.annotation._
 trait LodashInvertBy extends js.Object {
   def apply[T](interatee: ValueIteratee[T]): Dictionary[js.Array[String]] = js.native
   def apply[T /* <: js.Object */](
-    interatee: ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
+    interatee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ],
     `object`: T
   ): Dictionary[js.Array[String]] = js.native
   def apply[T](interatee: ValueIteratee[T], `object`: Dictionary[T]): Dictionary[js.Array[String]] = js.native

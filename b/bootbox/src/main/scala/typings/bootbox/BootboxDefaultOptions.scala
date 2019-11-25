@@ -25,12 +25,12 @@ object BootboxDefaultOptions {
     show: js.UndefOr[Boolean] = js.undefined
   ): BootboxDefaultOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxDefaultOptions]
   }
 }

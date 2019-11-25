@@ -21,9 +21,9 @@ object ContextRule {
   @scala.inline
   def apply(provided: js.Array[String] = null, requested: js.Array[String] = null, selector: String = null): ContextRule = {
     val __obj = js.Dynamic.literal()
-    if (provided != null) __obj.updateDynamic("provided")(provided)
-    if (requested != null) __obj.updateDynamic("requested")(requested)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (provided != null) __obj.updateDynamic("provided")(provided.asInstanceOf[js.Any])
+    if (requested != null) __obj.updateDynamic("requested")(requested.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextRule]
   }
 }

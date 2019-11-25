@@ -23,7 +23,7 @@ object SimpleSignal {
     remove: F => Boolean,
     removeAll: () => Boolean
   ): SimpleSignal[F] = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), dispatch = js.Any.fromFunction1(dispatch), functions = functions, numItems = numItems, remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), dispatch = js.Any.fromFunction1(dispatch), functions = functions.asInstanceOf[js.Any], numItems = numItems.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll))
   
     __obj.asInstanceOf[SimpleSignal[F]]
   }

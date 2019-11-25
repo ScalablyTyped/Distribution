@@ -10,10 +10,10 @@ trait ObjectContaining[T]
      with _Expected[T] {
   var `new`: js.UndefOr[
     js.Function1[
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? any}
     */ /* sample */ typings.jasmine.jasmineStrings.ObjectContaining with js.Any, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? any}
     */ typings.jasmine.jasmineStrings.ObjectContaining with js.Any
     ]
@@ -27,9 +27,9 @@ object ObjectContaining {
     asymmetricMatch: (js.Any, js.Array[CustomEqualityTester]) => Boolean,
     jasmineMatches: (js.Any, js.Array[_], js.Array[_]) => Boolean,
     jasmineToString: () => String = null,
-    `new`: /* import warning: ImportType.apply c Unsupported type mapping: 
+    `new`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? any}
-    */ /* sample */ typings.jasmine.jasmineStrings.ObjectContaining with js.Any => /* import warning: ImportType.apply c Unsupported type mapping: 
+    */ /* sample */ typings.jasmine.jasmineStrings.ObjectContaining with js.Any => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? any}
     */ typings.jasmine.jasmineStrings.ObjectContaining with js.Any = null
   ): ObjectContaining[T] = {

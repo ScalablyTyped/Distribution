@@ -25,10 +25,10 @@ object MessageOutputDebug {
     nodes_visited: js.Array[DialogNodesVisited] = null
   ): MessageOutputDebug = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(branch_exited)) __obj.updateDynamic("branch_exited")(branch_exited)
-    if (branch_exited_reason != null) __obj.updateDynamic("branch_exited_reason")(branch_exited_reason)
-    if (log_messages != null) __obj.updateDynamic("log_messages")(log_messages)
-    if (nodes_visited != null) __obj.updateDynamic("nodes_visited")(nodes_visited)
+    if (!js.isUndefined(branch_exited)) __obj.updateDynamic("branch_exited")(branch_exited.asInstanceOf[js.Any])
+    if (branch_exited_reason != null) __obj.updateDynamic("branch_exited_reason")(branch_exited_reason.asInstanceOf[js.Any])
+    if (log_messages != null) __obj.updateDynamic("log_messages")(log_messages.asInstanceOf[js.Any])
+    if (nodes_visited != null) __obj.updateDynamic("nodes_visited")(nodes_visited.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageOutputDebug]
   }
 }

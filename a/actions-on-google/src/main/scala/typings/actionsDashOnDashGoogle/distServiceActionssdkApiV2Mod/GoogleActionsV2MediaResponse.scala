@@ -22,8 +22,8 @@ object GoogleActionsV2MediaResponse {
     mediaType: GoogleActionsV2MediaResponseMediaType = null
   ): GoogleActionsV2MediaResponse = {
     val __obj = js.Dynamic.literal()
-    if (mediaObjects != null) __obj.updateDynamic("mediaObjects")(mediaObjects)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    if (mediaObjects != null) __obj.updateDynamic("mediaObjects")(mediaObjects.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2MediaResponse]
   }
 }

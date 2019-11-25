@@ -26,7 +26,7 @@ object KeyExportOptions {
   ): KeyExportOptions[T] = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (cipher != null) __obj.updateDynamic("cipher")(cipher)
+    if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyExportOptions[T]]
   }

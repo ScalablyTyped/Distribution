@@ -21,8 +21,8 @@ object Group {
     toCrowd: () => GroupObj,
     attributes: js.Any = null
   ): Group = {
-    val __obj = js.Dynamic.literal(active = active, description = description, groupname = groupname, toCrowd = js.Any.fromFunction0(toCrowd))
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], groupname = groupname.asInstanceOf[js.Any], toCrowd = js.Any.fromFunction0(toCrowd))
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
 }

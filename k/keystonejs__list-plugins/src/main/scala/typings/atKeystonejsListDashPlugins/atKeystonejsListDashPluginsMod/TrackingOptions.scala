@@ -14,9 +14,9 @@ trait TrackingOptions extends js.Object {
 object TrackingOptions {
   @scala.inline
   def apply(access: js.Any, createdAtField: String = null, updatedAtField: String = null): TrackingOptions = {
-    val __obj = js.Dynamic.literal(access = access)
-    if (createdAtField != null) __obj.updateDynamic("createdAtField")(createdAtField)
-    if (updatedAtField != null) __obj.updateDynamic("updatedAtField")(updatedAtField)
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any])
+    if (createdAtField != null) __obj.updateDynamic("createdAtField")(createdAtField.asInstanceOf[js.Any])
+    if (updatedAtField != null) __obj.updateDynamic("updatedAtField")(updatedAtField.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackingOptions]
   }
 }

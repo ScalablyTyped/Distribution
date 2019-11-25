@@ -16,7 +16,7 @@ import typings.stripeDashV3.stripeDashV3Strings.not_assessed
 import typings.stripeDashV3.stripeDashV3Strings.not_sent_to_network
 import typings.stripeDashV3.stripeDashV3Strings.reversed_after_approval
 import typings.stripeDashV3.stripeDashV3Strings.rule
-import typings.stripeDashV3.stripeDashV3Strings.unknown
+import typings.stripeDashV3.stripeDashV3Strings.unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Approvedbynetwork extends js.Object {
   var network_status: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval
   var reason: highest_risk_level | elevated_risk_level | rule | Null
-  var risk_level: normal | elevated | highest | not_assessed | unknown
+  var risk_level: normal | elevated | highest | not_assessed | unknown_
   var risk_score: Double
   var rule: js.UndefOr[String] = js.undefined
   var seller_message: String
@@ -35,17 +35,17 @@ object Anon_Approvedbynetwork {
   @scala.inline
   def apply(
     network_status: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval,
-    risk_level: normal | elevated | highest | not_assessed | unknown,
+    risk_level: normal | elevated | highest | not_assessed | unknown_,
     risk_score: Double,
     seller_message: String,
     `type`: authorized | manual_review | issuer_declined | blocked | invalid,
     reason: highest_risk_level | elevated_risk_level | rule = null,
     rule: String = null
   ): Anon_Approvedbynetwork = {
-    val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], risk_level = risk_level.asInstanceOf[js.Any], risk_score = risk_score, seller_message = seller_message)
+    val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], risk_level = risk_level.asInstanceOf[js.Any], risk_score = risk_score.asInstanceOf[js.Any], seller_message = seller_message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Approvedbynetwork]
   }
 }

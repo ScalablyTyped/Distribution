@@ -18,7 +18,7 @@ trait TypeofMoveable extends js.Object {
 object TypeofMoveable {
   @scala.inline
   def apply(__MoveableArgs: Instantiable0[__MoveableArgs]): TypeofMoveable = {
-    val __obj = js.Dynamic.literal(__MoveableArgs = __MoveableArgs)
+    val __obj = js.Dynamic.literal(__MoveableArgs = __MoveableArgs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofMoveable]
   }

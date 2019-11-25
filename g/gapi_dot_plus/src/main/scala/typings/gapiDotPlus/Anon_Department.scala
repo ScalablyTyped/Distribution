@@ -29,8 +29,8 @@ object Anon_Department {
     title: String,
     `type`: String
   ): Anon_Department = {
-    val __obj = js.Dynamic.literal(department = department, description = description, endDate = endDate, location = location, name = name, primary = primary, startDate = startDate, title = title)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(department = department.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Department]
   }
 }

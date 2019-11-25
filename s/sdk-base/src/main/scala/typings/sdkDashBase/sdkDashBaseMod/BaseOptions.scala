@@ -14,8 +14,8 @@ object BaseOptions {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, initMethod: String = null): BaseOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (initMethod != null) __obj.updateDynamic("initMethod")(initMethod)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (initMethod != null) __obj.updateDynamic("initMethod")(initMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]
   }
 }

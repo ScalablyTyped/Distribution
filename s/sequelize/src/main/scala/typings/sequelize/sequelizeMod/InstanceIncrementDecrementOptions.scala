@@ -45,7 +45,7 @@ object InstanceIncrementDecrementOptions {
     val __obj = js.Dynamic.literal()
     if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceIncrementDecrementOptions]
   }

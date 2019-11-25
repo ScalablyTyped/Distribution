@@ -25,11 +25,11 @@ object Anon_AutoFreeze {
     useProxies: js.UndefOr[Boolean] = js.undefined
   ): Anon_AutoFreeze = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFreeze)) __obj.updateDynamic("autoFreeze")(autoFreeze)
+    if (!js.isUndefined(autoFreeze)) __obj.updateDynamic("autoFreeze")(autoFreeze.asInstanceOf[js.Any])
     if (onAssign != null) __obj.updateDynamic("onAssign")(js.Any.fromFunction3(onAssign))
     if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
     if (onDelete != null) __obj.updateDynamic("onDelete")(js.Any.fromFunction2(onDelete))
-    if (!js.isUndefined(useProxies)) __obj.updateDynamic("useProxies")(useProxies)
+    if (!js.isUndefined(useProxies)) __obj.updateDynamic("useProxies")(useProxies.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoFreeze]
   }
 }

@@ -14,9 +14,9 @@ object Anon_Indexes {
   @scala.inline
   def apply(indexes: js.Array[Double] = null, isSelectedKey: String = null, keys: Anon_RowKey = null): Anon_Indexes = {
     val __obj = js.Dynamic.literal()
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
-    if (isSelectedKey != null) __obj.updateDynamic("isSelectedKey")(isSelectedKey)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
+    if (isSelectedKey != null) __obj.updateDynamic("isSelectedKey")(isSelectedKey.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Indexes]
   }
 }

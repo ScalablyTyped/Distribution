@@ -60,10 +60,10 @@ object Anon_CustomQueryParams {
     navigate: NavigateFn = null,
     uri: String = null
   ): Anon_CustomQueryParams = {
-    val __obj = js.Dynamic.literal(customQueryParams = customQueryParams, dismissedVersionNotification = dismissedVersionNotification, lastVersionCheck = lastVersionCheck, layout = layout, location = location, notifications = notifications, path = path, selectedPanel = selectedPanel, shortcuts = shortcuts, storiesConfigured = storiesConfigured, storiesHash = storiesHash, storyId = storyId, theme = theme, ui = ui, versions = versions, viewMode = viewMode)
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
-    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(customQueryParams = customQueryParams.asInstanceOf[js.Any], dismissedVersionNotification = dismissedVersionNotification.asInstanceOf[js.Any], lastVersionCheck = lastVersionCheck.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], selectedPanel = selectedPanel.asInstanceOf[js.Any], shortcuts = shortcuts.asInstanceOf[js.Any], storiesConfigured = storiesConfigured.asInstanceOf[js.Any], storiesHash = storiesHash.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (navigate != null) __obj.updateDynamic("navigate")(navigate.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomQueryParams]
   }
 }

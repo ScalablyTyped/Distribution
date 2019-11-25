@@ -40,11 +40,10 @@ object Layout {
     height: Double,
     left: Double,
     right: Double,
-    toString: () => String,
     top: Double,
     width: Double
   ): Layout = {
-    val __obj = js.Dynamic.literal(bottom = bottom, fromJs = js.Any.fromFunction1(fromJs), height = height, left = left, right = right, toString = js.Any.fromFunction0(toString), top = top, width = width)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], fromJs = js.Any.fromFunction1(fromJs), height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Layout]
   }

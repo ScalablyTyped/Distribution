@@ -20,10 +20,10 @@ trait MostVisitedURL extends js.Object {
 object MostVisitedURL {
   @scala.inline
   def apply(url: String, favicon: String = null, title: String = null, `type`: _MostVisitedURLType = null): MostVisitedURL = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (favicon != null) __obj.updateDynamic("favicon")(favicon)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (favicon != null) __obj.updateDynamic("favicon")(favicon.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MostVisitedURL]
   }
 }

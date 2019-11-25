@@ -13,7 +13,7 @@ trait Button extends js.Object {
 object Button {
   @scala.inline
   def apply(color: String, link: String, text: String): Button = {
-    val __obj = js.Dynamic.literal(color = color, link = link, text = text)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Button]
   }

@@ -26,7 +26,7 @@ object AuthTokenRequest {
     failureCallback: /* reason */ String => Unit = null,
     successCallback: /* token */ String => Unit = null
   ): AuthTokenRequest = {
-    val __obj = js.Dynamic.literal(resources = resources)
+    val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any])
     if (failureCallback != null) __obj.updateDynamic("failureCallback")(js.Any.fromFunction1(failureCallback))
     if (successCallback != null) __obj.updateDynamic("successCallback")(js.Any.fromFunction1(successCallback))
     __obj.asInstanceOf[AuthTokenRequest]

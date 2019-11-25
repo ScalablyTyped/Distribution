@@ -22,7 +22,7 @@ trait ISendUIEventParameters extends js.Object {
 object ISendUIEventParameters {
   @scala.inline
   def apply(data: String, eventIdentifier: String): ISendUIEventParameters = {
-    val __obj = js.Dynamic.literal(data = data, eventIdentifier = eventIdentifier)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], eventIdentifier = eventIdentifier.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISendUIEventParameters]
   }

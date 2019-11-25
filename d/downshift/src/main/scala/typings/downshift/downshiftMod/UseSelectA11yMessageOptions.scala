@@ -14,7 +14,7 @@ trait UseSelectA11yMessageOptions[Item] extends js.Object {
 object UseSelectA11yMessageOptions {
   @scala.inline
   def apply[Item](isOpen: Boolean, itemToString: Item => String, items: js.Array[Item], selectedItem: Item): UseSelectA11yMessageOptions[Item] = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen, itemToString = js.Any.fromFunction1(itemToString), items = items, selectedItem = selectedItem.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], itemToString = js.Any.fromFunction1(itemToString), items = items.asInstanceOf[js.Any], selectedItem = selectedItem.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UseSelectA11yMessageOptions[Item]]
   }

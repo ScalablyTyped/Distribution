@@ -12,7 +12,7 @@ object PlotPriceenvelopesBottomLineOptions {
   @scala.inline
   def apply(styles: PlotPriceenvelopesBottomLineStylesOptions = null): PlotPriceenvelopesBottomLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPriceenvelopesBottomLineOptions]
   }
 }

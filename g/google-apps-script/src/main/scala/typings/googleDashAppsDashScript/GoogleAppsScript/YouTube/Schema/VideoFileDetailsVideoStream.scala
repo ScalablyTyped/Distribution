@@ -29,12 +29,12 @@ object VideoFileDetailsVideoStream {
   ): VideoFileDetailsVideoStream = {
     val __obj = js.Dynamic.literal()
     if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (bitrateBps != null) __obj.updateDynamic("bitrateBps")(bitrateBps)
-    if (codec != null) __obj.updateDynamic("codec")(codec)
+    if (bitrateBps != null) __obj.updateDynamic("bitrateBps")(bitrateBps.asInstanceOf[js.Any])
+    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
     if (frameRateFps != null) __obj.updateDynamic("frameRateFps")(frameRateFps.asInstanceOf[js.Any])
     if (heightPixels != null) __obj.updateDynamic("heightPixels")(heightPixels.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation)
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     if (widthPixels != null) __obj.updateDynamic("widthPixels")(widthPixels.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoFileDetailsVideoStream]
   }

@@ -28,14 +28,14 @@ object ProtectedRange {
     warningOnly: js.UndefOr[Boolean] = js.undefined
   ): ProtectedRange = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (editors != null) __obj.updateDynamic("editors")(editors)
-    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (editors != null) __obj.updateDynamic("editors")(editors.asInstanceOf[js.Any])
+    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
     if (protectedRangeId != null) __obj.updateDynamic("protectedRangeId")(protectedRangeId.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (!js.isUndefined(requestingUserCanEdit)) __obj.updateDynamic("requestingUserCanEdit")(requestingUserCanEdit)
-    if (unprotectedRanges != null) __obj.updateDynamic("unprotectedRanges")(unprotectedRanges)
-    if (!js.isUndefined(warningOnly)) __obj.updateDynamic("warningOnly")(warningOnly)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestingUserCanEdit)) __obj.updateDynamic("requestingUserCanEdit")(requestingUserCanEdit.asInstanceOf[js.Any])
+    if (unprotectedRanges != null) __obj.updateDynamic("unprotectedRanges")(unprotectedRanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(warningOnly)) __obj.updateDynamic("warningOnly")(warningOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectedRange]
   }
 }

@@ -26,22 +26,16 @@ trait Process extends js.Object {
 object Process {
   @scala.inline
   def apply(
-    addListener_deprecation: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process,
-    emit_deprecation: (deprecation, DeprecationError) => Boolean,
-    listeners_deprecation: deprecation => js.Array[DeprecationError],
-    on_deprecation: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process,
-    once_deprecation: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process,
-    prependListener_deprecation: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process,
-    prependOnceListener_deprecation: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process
+    addListener: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process,
+    emit: (deprecation, DeprecationError) => Boolean,
+    listeners: deprecation => js.Array[DeprecationError],
+    on: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process,
+    once: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process,
+    prependListener: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process,
+    prependOnceListener: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process
   ): Process = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(js.Any.fromFunction2(addListener_deprecation))
-    __obj.updateDynamic("emit")(js.Any.fromFunction2(emit_deprecation))
-    __obj.updateDynamic("listeners")(js.Any.fromFunction1(listeners_deprecation))
-    __obj.updateDynamic("on")(js.Any.fromFunction2(on_deprecation))
-    __obj.updateDynamic("once")(js.Any.fromFunction2(once_deprecation))
-    __obj.updateDynamic("prependListener")(js.Any.fromFunction2(prependListener_deprecation))
-    __obj.updateDynamic("prependOnceListener")(js.Any.fromFunction2(prependOnceListener_deprecation))
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), emit = js.Any.fromFunction2(emit), listeners = js.Any.fromFunction1(listeners), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), prependListener = js.Any.fromFunction2(prependListener), prependOnceListener = js.Any.fromFunction2(prependOnceListener))
+  
     __obj.asInstanceOf[Process]
   }
 }

@@ -14,8 +14,8 @@ object Options {
   @scala.inline
   def apply(integrity: String = null, memoize: js.UndefOr[Boolean] = js.undefined, size: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity)
-    if (!js.isUndefined(memoize)) __obj.updateDynamic("memoize")(memoize)
+    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
+    if (!js.isUndefined(memoize)) __obj.updateDynamic("memoize")(memoize.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

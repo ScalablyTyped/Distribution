@@ -17,7 +17,7 @@ object Anon_UpdateQuery {
   ): Anon_UpdateQuery = {
     val __obj = js.Dynamic.literal()
     if (updateQuery != null) __obj.updateDynamic("updateQuery")(updateQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForRefetchQueries)) __obj.updateDynamic("waitForRefetchQueries")(waitForRefetchQueries)
+    if (!js.isUndefined(waitForRefetchQueries)) __obj.updateDynamic("waitForRefetchQueries")(waitForRefetchQueries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_UpdateQuery]
   }
 }

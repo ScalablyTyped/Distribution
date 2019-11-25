@@ -20,7 +20,7 @@ object CommonInterface {
     nativeImage: TypeofClassNativeImage,
     shell: Shell
   ): CommonInterface = {
-    val __obj = js.Dynamic.literal(clipboard = clipboard, crashReporter = crashReporter, nativeImage = nativeImage, shell = shell)
+    val __obj = js.Dynamic.literal(clipboard = clipboard.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], nativeImage = nativeImage.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommonInterface]
   }

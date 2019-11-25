@@ -70,11 +70,11 @@ object IOptions {
     quoteParser: js.UndefOr[Boolean] = js.undefined,
     rowDelimiter: BACKSLASHrBACKSLASHn | BACKSLASHr | BACKSLASHn = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(data = data, delimiter = delimiter)
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (initialRows != null) __obj.updateDynamic("initialRows")(initialRows.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote)
-    if (!js.isUndefined(quoteParser)) __obj.updateDynamic("quoteParser")(quoteParser)
+    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
+    if (!js.isUndefined(quoteParser)) __obj.updateDynamic("quoteParser")(quoteParser.asInstanceOf[js.Any])
     if (rowDelimiter != null) __obj.updateDynamic("rowDelimiter")(rowDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

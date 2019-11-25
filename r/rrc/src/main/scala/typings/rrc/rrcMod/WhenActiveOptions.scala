@@ -25,12 +25,12 @@ object WhenActiveOptions {
     style: CSSProperties = null
   ): WhenActiveOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
     if (isActive != null) __obj.updateDynamic("isActive")(js.Any.fromFunction0(isActive))
-    if (pathProp != null) __obj.updateDynamic("pathProp")(pathProp)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (pathProp != null) __obj.updateDynamic("pathProp")(pathProp.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhenActiveOptions]
   }
 }

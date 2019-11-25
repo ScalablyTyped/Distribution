@@ -12,7 +12,7 @@ trait Anon_Executionstate extends js.Object {
 object Anon_Executionstate {
   @scala.inline
   def apply(execution_state: Status): Anon_Executionstate = {
-    val __obj = js.Dynamic.literal(execution_state = execution_state)
+    val __obj = js.Dynamic.literal(execution_state = execution_state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Executionstate]
   }

@@ -27,13 +27,13 @@ object UpdateDocInfo {
     when: StringDictionary[js.Any] = null
   ): UpdateDocInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteOnlyColumns)) __obj.updateDynamic("deleteOnlyColumns")(deleteOnlyColumns)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(ifExists)) __obj.updateDynamic("ifExists")(ifExists)
+    if (!js.isUndefined(deleteOnlyColumns)) __obj.updateDynamic("deleteOnlyColumns")(deleteOnlyColumns.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(ifExists)) __obj.updateDynamic("ifExists")(ifExists.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (when != null) __obj.updateDynamic("when")(when)
+    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDocInfo]
   }
 }

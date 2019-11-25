@@ -34,12 +34,12 @@ object Anon_Children {
   ): Anon_Children = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix)
-    if (!js.isUndefined(disableStylesGeneration)) __obj.updateDynamic("disableStylesGeneration")(disableStylesGeneration)
+    if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStylesGeneration)) __obj.updateDynamic("disableStylesGeneration")(disableStylesGeneration.asInstanceOf[js.Any])
     if (generateId != null) __obj.updateDynamic("generateId")(js.Any.fromFunction2(generateId))
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (jss != null) __obj.updateDynamic("jss")(jss)
-    if (registry != null) __obj.updateDynamic("registry")(registry)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (jss != null) __obj.updateDynamic("jss")(jss.asInstanceOf[js.Any])
+    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

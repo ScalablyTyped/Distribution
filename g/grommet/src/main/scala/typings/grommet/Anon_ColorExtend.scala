@@ -27,8 +27,8 @@ object Anon_ColorExtend {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration)
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorExtend]
   }
 }

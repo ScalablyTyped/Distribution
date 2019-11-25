@@ -43,16 +43,16 @@ object INode {
     `type`: String = null
   ): INode = {
     val __obj = js.Dynamic.literal()
-    if (cachePolicy != null) __obj.updateDynamic("cachePolicy")(cachePolicy)
-    if (child != null) __obj.updateDynamic("child")(child)
+    if (cachePolicy != null) __obj.updateDynamic("cachePolicy")(cachePolicy.asInstanceOf[js.Any])
+    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (originalFieldName != null) __obj.updateDynamic("originalFieldName")(originalFieldName)
-    if (parentType != null) __obj.updateDynamic("parentType")(parentType)
-    if (responseName != null) __obj.updateDynamic("responseName")(responseName)
+    if (originalFieldName != null) __obj.updateDynamic("originalFieldName")(originalFieldName.asInstanceOf[js.Any])
+    if (parentType != null) __obj.updateDynamic("parentType")(parentType.asInstanceOf[js.Any])
+    if (responseName != null) __obj.updateDynamic("responseName")(responseName.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[INode]
   }
 }

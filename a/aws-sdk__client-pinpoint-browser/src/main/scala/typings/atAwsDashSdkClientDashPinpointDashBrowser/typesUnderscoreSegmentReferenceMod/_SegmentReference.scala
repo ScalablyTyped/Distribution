@@ -19,7 +19,7 @@ object _SegmentReference {
   @scala.inline
   def apply(Id: String = null, Version: Int | Double = null): _SegmentReference = {
     val __obj = js.Dynamic.literal()
-    if (Id != null) __obj.updateDynamic("Id")(Id)
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SegmentReference]
   }

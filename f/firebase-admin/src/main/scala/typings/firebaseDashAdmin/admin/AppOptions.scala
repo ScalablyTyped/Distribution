@@ -75,13 +75,13 @@ object AppOptions {
     storageBucket: String = null
   ): AppOptions = {
     val __obj = js.Dynamic.literal()
-    if (credential != null) __obj.updateDynamic("credential")(credential)
-    if (databaseAuthVariableOverride != null) __obj.updateDynamic("databaseAuthVariableOverride")(databaseAuthVariableOverride)
-    if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL)
-    if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (serviceAccountId != null) __obj.updateDynamic("serviceAccountId")(serviceAccountId)
-    if (storageBucket != null) __obj.updateDynamic("storageBucket")(storageBucket)
+    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
+    if (databaseAuthVariableOverride != null) __obj.updateDynamic("databaseAuthVariableOverride")(databaseAuthVariableOverride.asInstanceOf[js.Any])
+    if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL.asInstanceOf[js.Any])
+    if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (serviceAccountId != null) __obj.updateDynamic("serviceAccountId")(serviceAccountId.asInstanceOf[js.Any])
+    if (storageBucket != null) __obj.updateDynamic("storageBucket")(storageBucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppOptions]
   }
 }

@@ -15,7 +15,7 @@ trait DidOpenTextDocumentParams extends js.Object {
 object DidOpenTextDocumentParams {
   @scala.inline
   def apply(textDocument: TextDocumentItem): DidOpenTextDocumentParams = {
-    val __obj = js.Dynamic.literal(textDocument = textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DidOpenTextDocumentParams]
   }

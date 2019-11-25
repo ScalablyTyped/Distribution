@@ -16,7 +16,7 @@ trait SchedulerInteraction extends js.Object {
 object SchedulerInteraction {
   @scala.inline
   def apply(id: Double, name: String, timestamp: Double): SchedulerInteraction = {
-    val __obj = js.Dynamic.literal(id = id, name = name, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SchedulerInteraction]
   }

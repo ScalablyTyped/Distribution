@@ -98,14 +98,14 @@ object ReceiveMessageInput {
     VisibilityTimeout: Int | Double = null,
     WaitTimeSeconds: Int | Double = null
   ): ReceiveMessageInput = {
-    val __obj = js.Dynamic.literal(QueueUrl = QueueUrl)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     if (AttributeNames != null) __obj.updateDynamic("AttributeNames")(AttributeNames.asInstanceOf[js.Any])
     if (MaxNumberOfMessages != null) __obj.updateDynamic("MaxNumberOfMessages")(MaxNumberOfMessages.asInstanceOf[js.Any])
     if (MessageAttributeNames != null) __obj.updateDynamic("MessageAttributeNames")(MessageAttributeNames.asInstanceOf[js.Any])
-    if (ReceiveRequestAttemptId != null) __obj.updateDynamic("ReceiveRequestAttemptId")(ReceiveRequestAttemptId)
+    if (ReceiveRequestAttemptId != null) __obj.updateDynamic("ReceiveRequestAttemptId")(ReceiveRequestAttemptId.asInstanceOf[js.Any])
     if (VisibilityTimeout != null) __obj.updateDynamic("VisibilityTimeout")(VisibilityTimeout.asInstanceOf[js.Any])
     if (WaitTimeSeconds != null) __obj.updateDynamic("WaitTimeSeconds")(WaitTimeSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiveMessageInput]

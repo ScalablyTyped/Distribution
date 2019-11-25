@@ -12,7 +12,7 @@ trait StoryCta extends js.Object {
 object StoryCta {
   @scala.inline
   def apply(links: js.Array[Anon_WebUri]): StoryCta = {
-    val __obj = js.Dynamic.literal(links = links)
+    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoryCta]
   }

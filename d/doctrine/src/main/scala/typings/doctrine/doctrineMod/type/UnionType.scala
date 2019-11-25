@@ -13,8 +13,8 @@ trait UnionType extends Type {
 object UnionType {
   @scala.inline
   def apply(elements: js.Array[Type], `type`: typings.doctrine.doctrineStrings.UnionType): UnionType = {
-    val __obj = js.Dynamic.literal(elements = elements)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnionType]
   }
 }

@@ -22,11 +22,11 @@ object Options {
     keepSymbols: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (char != null) __obj.updateDynamic("char")(char)
+    if (char != null) __obj.updateDynamic("char")(char.asInstanceOf[js.Any])
     if (compactTo != null) __obj.updateDynamic("compactTo")(compactTo.asInstanceOf[js.Any])
     if (keepLeft != null) __obj.updateDynamic("keepLeft")(keepLeft.asInstanceOf[js.Any])
     if (keepRight != null) __obj.updateDynamic("keepRight")(keepRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepSymbols)) __obj.updateDynamic("keepSymbols")(keepSymbols)
+    if (!js.isUndefined(keepSymbols)) __obj.updateDynamic("keepSymbols")(keepSymbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

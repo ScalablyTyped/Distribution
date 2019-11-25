@@ -18,14 +18,12 @@ object ComboboxListProps {
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     ClassAttributes: ClassAttributes[HTMLElement] = null,
-    as: String = null,
     persistSelection: js.UndefOr[Boolean] = js.undefined
   ): ComboboxListProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboboxListProps]
   }
 }

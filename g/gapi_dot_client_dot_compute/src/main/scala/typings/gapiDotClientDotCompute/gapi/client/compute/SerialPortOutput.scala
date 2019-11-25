@@ -30,11 +30,11 @@ object SerialPortOutput {
     start: String = null
   ): SerialPortOutput = {
     val __obj = js.Dynamic.literal()
-    if (contents != null) __obj.updateDynamic("contents")(contents)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerialPortOutput]
   }
 }

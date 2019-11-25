@@ -34,10 +34,10 @@ object MountOptions {
     supportsNotifyTag: js.UndefOr[Boolean] = js.undefined,
     writable: js.UndefOr[Boolean] = js.undefined
   ): MountOptions = {
-    val __obj = js.Dynamic.literal(displayName = displayName, fileSystemId = fileSystemId)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any])
     if (openedFilesLimit != null) __obj.updateDynamic("openedFilesLimit")(openedFilesLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsNotifyTag)) __obj.updateDynamic("supportsNotifyTag")(supportsNotifyTag)
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    if (!js.isUndefined(supportsNotifyTag)) __obj.updateDynamic("supportsNotifyTag")(supportsNotifyTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[MountOptions]
   }
 }

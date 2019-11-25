@@ -22,9 +22,9 @@ object Anon_FilterExtensionType {
     pageNumber: Int | Double = null
   ): Anon_FilterExtensionType = {
     val __obj = js.Dynamic.literal()
-    if (filterExtensionType != null) __obj.updateDynamic("filterExtensionType")(filterExtensionType)
-    if (filterId != null) __obj.updateDynamic("filterId")(filterId)
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
+    if (filterExtensionType != null) __obj.updateDynamic("filterExtensionType")(filterExtensionType.asInstanceOf[js.Any])
+    if (filterId != null) __obj.updateDynamic("filterId")(filterId.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (pageLimit != null) __obj.updateDynamic("pageLimit")(pageLimit.asInstanceOf[js.Any])
     if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FilterExtensionType]

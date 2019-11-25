@@ -25,7 +25,7 @@ object DragBoxOptions {
   ): DragBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (boxEndCondition != null) __obj.updateDynamic("boxEndCondition")(js.Any.fromFunction3(boxEndCondition))
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
     if (minArea != null) __obj.updateDynamic("minArea")(minArea.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragBoxOptions]

@@ -17,8 +17,8 @@ trait City extends js.Object {
 object City {
   @scala.inline
   def apply(adCode: String, city: String, spell: String = null): City = {
-    val __obj = js.Dynamic.literal(adCode = adCode, city = city)
-    if (spell != null) __obj.updateDynamic("spell")(spell)
+    val __obj = js.Dynamic.literal(adCode = adCode.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any])
+    if (spell != null) __obj.updateDynamic("spell")(spell.asInstanceOf[js.Any])
     __obj.asInstanceOf[City]
   }
 }

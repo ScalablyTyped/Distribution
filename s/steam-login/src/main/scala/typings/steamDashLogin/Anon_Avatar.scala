@@ -51,17 +51,17 @@ object Anon_Avatar {
     realname: String = null,
     timecreated: Int | Double = null
   ): Anon_Avatar = {
-    val __obj = js.Dynamic.literal(avatar = avatar, avatarfull = avatarfull, avatarmedium = avatarmedium, communityvisibilitystate = communityvisibilitystate, lastlogoff = lastlogoff, personaname = personaname, personastate = personastate, profileurl = profileurl, steamid = steamid)
+    val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], avatarfull = avatarfull.asInstanceOf[js.Any], avatarmedium = avatarmedium.asInstanceOf[js.Any], communityvisibilitystate = communityvisibilitystate.asInstanceOf[js.Any], lastlogoff = lastlogoff.asInstanceOf[js.Any], personaname = personaname.asInstanceOf[js.Any], personastate = personastate.asInstanceOf[js.Any], profileurl = profileurl.asInstanceOf[js.Any], steamid = steamid.asInstanceOf[js.Any])
     if (commentpermission != null) __obj.updateDynamic("commentpermission")(commentpermission.asInstanceOf[js.Any])
-    if (gameextrainfo != null) __obj.updateDynamic("gameextrainfo")(gameextrainfo)
-    if (gameid != null) __obj.updateDynamic("gameid")(gameid)
-    if (gameserverip != null) __obj.updateDynamic("gameserverip")(gameserverip)
+    if (gameextrainfo != null) __obj.updateDynamic("gameextrainfo")(gameextrainfo.asInstanceOf[js.Any])
+    if (gameid != null) __obj.updateDynamic("gameid")(gameid.asInstanceOf[js.Any])
+    if (gameserverip != null) __obj.updateDynamic("gameserverip")(gameserverip.asInstanceOf[js.Any])
     if (loccityid != null) __obj.updateDynamic("loccityid")(loccityid.asInstanceOf[js.Any])
-    if (loccountrycode != null) __obj.updateDynamic("loccountrycode")(loccountrycode)
-    if (locstatecode != null) __obj.updateDynamic("locstatecode")(locstatecode)
-    if (primaryclanid != null) __obj.updateDynamic("primaryclanid")(primaryclanid)
+    if (loccountrycode != null) __obj.updateDynamic("loccountrycode")(loccountrycode.asInstanceOf[js.Any])
+    if (locstatecode != null) __obj.updateDynamic("locstatecode")(locstatecode.asInstanceOf[js.Any])
+    if (primaryclanid != null) __obj.updateDynamic("primaryclanid")(primaryclanid.asInstanceOf[js.Any])
     if (profilestate != null) __obj.updateDynamic("profilestate")(profilestate.asInstanceOf[js.Any])
-    if (realname != null) __obj.updateDynamic("realname")(realname)
+    if (realname != null) __obj.updateDynamic("realname")(realname.asInstanceOf[js.Any])
     if (timecreated != null) __obj.updateDynamic("timecreated")(timecreated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Avatar]
   }

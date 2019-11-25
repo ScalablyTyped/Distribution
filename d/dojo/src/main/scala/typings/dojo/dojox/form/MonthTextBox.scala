@@ -1,7 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.selector
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -71,6 +70,14 @@ class MonthTextBox () extends DateTextBox {
     */
   def validator(value: js.Any): Boolean = js.native
   @JSName("watch")
-  def watch_selector(property: selector, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_selector(
+    property: selector,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

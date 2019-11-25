@@ -12,7 +12,7 @@ trait TimeInterval[T] extends js.Object {
 object TimeInterval {
   @scala.inline
   def apply[T](interval: Double, value: T): TimeInterval[T] = {
-    val __obj = js.Dynamic.literal(interval = interval, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeInterval[T]]
   }

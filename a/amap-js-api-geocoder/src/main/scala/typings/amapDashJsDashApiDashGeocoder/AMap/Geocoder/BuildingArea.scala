@@ -23,7 +23,7 @@ trait BuildingArea extends js.Object {
 object BuildingArea {
   @scala.inline
   def apply(id: String, location: LngLat, name: String): BuildingArea = {
-    val __obj = js.Dynamic.literal(id = id, location = location, name = name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildingArea]
   }

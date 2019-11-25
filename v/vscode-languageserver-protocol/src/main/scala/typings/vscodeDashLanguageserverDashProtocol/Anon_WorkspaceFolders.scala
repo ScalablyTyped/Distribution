@@ -15,7 +15,7 @@ object Anon_WorkspaceFolders {
   @scala.inline
   def apply(workspaceFolders: js.UndefOr[Boolean] = js.undefined): Anon_WorkspaceFolders = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(workspaceFolders)) __obj.updateDynamic("workspaceFolders")(workspaceFolders)
+    if (!js.isUndefined(workspaceFolders)) __obj.updateDynamic("workspaceFolders")(workspaceFolders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_WorkspaceFolders]
   }
 }

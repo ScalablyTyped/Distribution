@@ -15,7 +15,7 @@ object Anon_Fn {
   def apply(fn: (/* snippet */ String, /* match */ String) => _ = null, `match`: RegExp = null): Anon_Fn = {
     val __obj = js.Dynamic.literal()
     if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction2(fn))
-    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fn]
   }
 }

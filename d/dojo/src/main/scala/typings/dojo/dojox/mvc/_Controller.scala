@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mvc
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojoStrings.`data-mvc-bindings`
 import typings.dojo.dojoStrings.dataBindAttr
@@ -63,8 +62,24 @@ class _Controller () extends Stateful {
     */
   def startup(): Unit = js.native
   @JSName("watch")
-  def watch_dataBindAttr(property: dataBindAttr, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_dataBindAttr(
+    property: dataBindAttr,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_datamvcbindings(property: `data-mvc-bindings`, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_datamvcbindings(
+    property: `data-mvc-bindings`,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

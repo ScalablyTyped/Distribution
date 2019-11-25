@@ -44,10 +44,10 @@ object ClientOptions {
     timeout: Int | Double = null
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_useRequestCache)) __obj.updateDynamic("_useRequestCache")(_useRequestCache)
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts)
-    if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (!js.isUndefined(_useRequestCache)) __obj.updateDynamic("_useRequestCache")(_useRequestCache.asInstanceOf[js.Any])
+    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
+    if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }

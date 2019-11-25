@@ -13,7 +13,7 @@ trait NotificationReason extends js.Object {
 object NotificationReason {
   @scala.inline
   def apply(notificationReasonType: NotificationReasonType, targetIdentities: js.Array[IdentityRef]): NotificationReason = {
-    val __obj = js.Dynamic.literal(notificationReasonType = notificationReasonType, targetIdentities = targetIdentities)
+    val __obj = js.Dynamic.literal(notificationReasonType = notificationReasonType.asInstanceOf[js.Any], targetIdentities = targetIdentities.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationReason]
   }

@@ -33,12 +33,12 @@ object Anon_ActiveBackground {
     pad: PadType = null
   ): Anon_ActiveBackground = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActiveBackground]

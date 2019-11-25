@@ -12,7 +12,7 @@ trait Anon_CanPickMany extends js.Object {
 object Anon_CanPickMany {
   @scala.inline
   def apply(canPickMany: `true`): Anon_CanPickMany = {
-    val __obj = js.Dynamic.literal(canPickMany = canPickMany)
+    val __obj = js.Dynamic.literal(canPickMany = canPickMany.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CanPickMany]
   }

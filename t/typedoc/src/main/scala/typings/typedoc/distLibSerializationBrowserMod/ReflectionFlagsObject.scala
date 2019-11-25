@@ -32,16 +32,16 @@ object ReflectionFlagsObject {
     isStatic: js.UndefOr[Boolean] = js.undefined
   ): ReflectionFlagsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasExportAssignment)) __obj.updateDynamic("hasExportAssignment")(hasExportAssignment)
-    if (!js.isUndefined(isConstructorProperty)) __obj.updateDynamic("isConstructorProperty")(isConstructorProperty)
-    if (!js.isUndefined(isExported)) __obj.updateDynamic("isExported")(isExported)
-    if (!js.isUndefined(isExternal)) __obj.updateDynamic("isExternal")(isExternal)
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional)
-    if (!js.isUndefined(isPrivate)) __obj.updateDynamic("isPrivate")(isPrivate)
-    if (!js.isUndefined(isProtected)) __obj.updateDynamic("isProtected")(isProtected)
-    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic)
-    if (!js.isUndefined(isRest)) __obj.updateDynamic("isRest")(isRest)
-    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic)
+    if (!js.isUndefined(hasExportAssignment)) __obj.updateDynamic("hasExportAssignment")(hasExportAssignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(isConstructorProperty)) __obj.updateDynamic("isConstructorProperty")(isConstructorProperty.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExported)) __obj.updateDynamic("isExported")(isExported.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExternal)) __obj.updateDynamic("isExternal")(isExternal.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrivate)) __obj.updateDynamic("isPrivate")(isPrivate.asInstanceOf[js.Any])
+    if (!js.isUndefined(isProtected)) __obj.updateDynamic("isProtected")(isProtected.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRest)) __obj.updateDynamic("isRest")(isRest.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReflectionFlagsObject]
   }
 }

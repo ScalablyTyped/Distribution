@@ -113,7 +113,7 @@ object DragAndDrop5 {
     setTextTypeJson: js.UndefOr[Boolean] = js.undefined
   ): DragAndDrop5 = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (autoExpandMS != null) __obj.updateDynamic("autoExpandMS")(autoExpandMS.asInstanceOf[js.Any])
     if (dragDrag != null) __obj.updateDynamic("dragDrag")(js.Any.fromFunction2(dragDrag))
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(js.Any.fromFunction2(dragDrop))
@@ -125,15 +125,15 @@ object DragAndDrop5 {
     if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction2(dragStart))
     if (dropMarkerInsertOffsetX != null) __obj.updateDynamic("dropMarkerInsertOffsetX")(dropMarkerInsertOffsetX.asInstanceOf[js.Any])
     if (dropMarkerOffsetX != null) __obj.updateDynamic("dropMarkerOffsetX")(dropMarkerOffsetX.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSource)) __obj.updateDynamic("multiSource")(multiSource)
-    if (!js.isUndefined(preventForeignNodes)) __obj.updateDynamic("preventForeignNodes")(preventForeignNodes)
-    if (!js.isUndefined(preventNonNodes)) __obj.updateDynamic("preventNonNodes")(preventNonNodes)
-    if (!js.isUndefined(preventRecursiveMoves)) __obj.updateDynamic("preventRecursiveMoves")(preventRecursiveMoves)
-    if (!js.isUndefined(preventVoidMoves)) __obj.updateDynamic("preventVoidMoves")(preventVoidMoves)
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (!js.isUndefined(multiSource)) __obj.updateDynamic("multiSource")(multiSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventForeignNodes)) __obj.updateDynamic("preventForeignNodes")(preventForeignNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventNonNodes)) __obj.updateDynamic("preventNonNodes")(preventNonNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventRecursiveMoves)) __obj.updateDynamic("preventRecursiveMoves")(preventRecursiveMoves.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventVoidMoves)) __obj.updateDynamic("preventVoidMoves")(preventVoidMoves.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
     if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(setTextTypeJson)) __obj.updateDynamic("setTextTypeJson")(setTextTypeJson)
+    if (!js.isUndefined(setTextTypeJson)) __obj.updateDynamic("setTextTypeJson")(setTextTypeJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragAndDrop5]
   }
 }

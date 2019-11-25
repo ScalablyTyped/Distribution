@@ -36,7 +36,7 @@ object ExternalMetricStatus {
     metricName: String,
     metricSelector: LabelSelector
   ): ExternalMetricStatus = {
-    val __obj = js.Dynamic.literal(currentAverageValue = currentAverageValue, currentValue = currentValue, metricName = metricName, metricSelector = metricSelector)
+    val __obj = js.Dynamic.literal(currentAverageValue = currentAverageValue.asInstanceOf[js.Any], currentValue = currentValue.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any], metricSelector = metricSelector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExternalMetricStatus]
   }

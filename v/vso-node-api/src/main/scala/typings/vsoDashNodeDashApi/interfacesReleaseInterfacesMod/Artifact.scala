@@ -34,8 +34,8 @@ object Artifact {
     sourceId: String,
     `type`: String
   ): Artifact = {
-    val __obj = js.Dynamic.literal(alias = alias, definitionReference = definitionReference, isPrimary = isPrimary, sourceId = sourceId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], definitionReference = definitionReference.asInstanceOf[js.Any], isPrimary = isPrimary.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Artifact]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_IgnoreCanceled extends js.Object {
 object Anon_IgnoreCanceled {
   @scala.inline
   def apply(ignoreCanceled: Boolean, ignoreExpired: Boolean): Anon_IgnoreCanceled = {
-    val __obj = js.Dynamic.literal(ignoreCanceled = ignoreCanceled, ignoreExpired = ignoreExpired)
+    val __obj = js.Dynamic.literal(ignoreCanceled = ignoreCanceled.asInstanceOf[js.Any], ignoreExpired = ignoreExpired.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IgnoreCanceled]
   }

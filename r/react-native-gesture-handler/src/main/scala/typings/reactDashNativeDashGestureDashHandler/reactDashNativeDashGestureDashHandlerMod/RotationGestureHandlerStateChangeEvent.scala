@@ -12,7 +12,7 @@ trait RotationGestureHandlerStateChangeEvent extends GestureHandlerStateChangeEv
 object RotationGestureHandlerStateChangeEvent {
   @scala.inline
   def apply(nativeEvent: GestureHandlerStateChangeNativeEvent with RotationGestureHandlerEventExtra): RotationGestureHandlerStateChangeEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RotationGestureHandlerStateChangeEvent]
   }

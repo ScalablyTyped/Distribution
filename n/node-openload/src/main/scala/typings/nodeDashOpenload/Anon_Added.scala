@@ -31,7 +31,7 @@ object Anon_Added {
     status: String,
     url: String | Boolean
   ): Anon_Added = {
-    val __obj = js.Dynamic.literal(added = added, bytes_loaded = bytes_loaded, bytes_total = bytes_total, extid = extid.asInstanceOf[js.Any], folderid = folderid, id = id, last_update = last_update, remoteurl = remoteurl, status = status, url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], bytes_loaded = bytes_loaded.asInstanceOf[js.Any], bytes_total = bytes_total.asInstanceOf[js.Any], extid = extid.asInstanceOf[js.Any], folderid = folderid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_update = last_update.asInstanceOf[js.Any], remoteurl = remoteurl.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Added]
   }

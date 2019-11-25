@@ -13,8 +13,8 @@ object AsanaAuthorizeUrlOptions {
   @scala.inline
   def apply(asanaBaseUrl: String = null, redirectUri: String = null): AsanaAuthorizeUrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (asanaBaseUrl != null) __obj.updateDynamic("asanaBaseUrl")(asanaBaseUrl)
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (asanaBaseUrl != null) __obj.updateDynamic("asanaBaseUrl")(asanaBaseUrl.asInstanceOf[js.Any])
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsanaAuthorizeUrlOptions]
   }
 }

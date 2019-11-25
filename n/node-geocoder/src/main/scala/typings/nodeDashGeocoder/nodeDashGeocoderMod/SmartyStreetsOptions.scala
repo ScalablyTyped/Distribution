@@ -14,7 +14,7 @@ trait SmartyStreetsOptions extends js.Object {
 object SmartyStreetsOptions {
   @scala.inline
   def apply(auth_id: String, auth_token: String, provider: smartyStreet): SmartyStreetsOptions = {
-    val __obj = js.Dynamic.literal(auth_id = auth_id, auth_token = auth_token, provider = provider)
+    val __obj = js.Dynamic.literal(auth_id = auth_id.asInstanceOf[js.Any], auth_token = auth_token.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SmartyStreetsOptions]
   }

@@ -22,7 +22,7 @@ trait DescribeStreamOutput extends OutputTypesUnion {
 object DescribeStreamOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, StreamDescription: _UnmarshalledStreamDescription): DescribeStreamOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, StreamDescription = StreamDescription)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], StreamDescription = StreamDescription.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DescribeStreamOutput]
   }

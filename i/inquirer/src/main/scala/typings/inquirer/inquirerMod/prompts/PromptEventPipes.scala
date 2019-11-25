@@ -25,7 +25,7 @@ trait PromptEventPipes[T] extends js.Object {
 object PromptEventPipes {
   @scala.inline
   def apply[T](error: Observable[FailedPromptStateData], success: Observable[SuccessfulPromptStateData[T]]): PromptEventPipes[T] = {
-    val __obj = js.Dynamic.literal(error = error, success = success)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PromptEventPipes[T]]
   }

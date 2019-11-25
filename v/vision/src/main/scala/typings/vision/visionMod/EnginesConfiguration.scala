@@ -19,7 +19,7 @@ object EnginesConfiguration {
   @scala.inline
   def apply(engines: StringDictionary[NpmModule] | ServerViewsEnginesOptions, defaultExtension: String = null): EnginesConfiguration = {
     val __obj = js.Dynamic.literal(engines = engines.asInstanceOf[js.Any])
-    if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension)
+    if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnginesConfiguration]
   }
 }

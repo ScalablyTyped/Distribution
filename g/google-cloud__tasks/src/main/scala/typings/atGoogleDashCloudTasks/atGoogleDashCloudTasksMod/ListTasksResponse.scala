@@ -12,8 +12,8 @@ trait ListTasksResponse extends js.Object {
 object ListTasksResponse {
   @scala.inline
   def apply(tasks: js.Array[Task], nextPageToken: String = null): ListTasksResponse = {
-    val __obj = js.Dynamic.literal(tasks = tasks)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    val __obj = js.Dynamic.literal(tasks = tasks.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTasksResponse]
   }
 }

@@ -18,7 +18,7 @@ object Anon_AutoIndexId {
     size: Int | Double = null
   ): Anon_AutoIndexId = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIndexId)) __obj.updateDynamic("autoIndexId")(autoIndexId)
+    if (!js.isUndefined(autoIndexId)) __obj.updateDynamic("autoIndexId")(autoIndexId.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoIndexId]

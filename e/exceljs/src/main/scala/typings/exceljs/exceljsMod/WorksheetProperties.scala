@@ -39,7 +39,7 @@ object WorksheetProperties {
     showGridLines: Boolean,
     tabColor: Partial[Color]
   ): WorksheetProperties = {
-    val __obj = js.Dynamic.literal(defaultRowHeight = defaultRowHeight, dyDescent = dyDescent, outlineLevelCol = outlineLevelCol, outlineLevelRow = outlineLevelRow, showGridLines = showGridLines, tabColor = tabColor)
+    val __obj = js.Dynamic.literal(defaultRowHeight = defaultRowHeight.asInstanceOf[js.Any], dyDescent = dyDescent.asInstanceOf[js.Any], outlineLevelCol = outlineLevelCol.asInstanceOf[js.Any], outlineLevelRow = outlineLevelRow.asInstanceOf[js.Any], showGridLines = showGridLines.asInstanceOf[js.Any], tabColor = tabColor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorksheetProperties]
   }

@@ -62,13 +62,13 @@ object EntityFormOptions {
     width: Int | Double = null,
     windowPosition: Int | Double = null
   ): EntityFormOptions = {
-    val __obj = js.Dynamic.literal(entityName = entityName)
-    if (createFromEntity != null) __obj.updateDynamic("createFromEntity")(createFromEntity)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (formId != null) __obj.updateDynamic("formId")(formId)
+    val __obj = js.Dynamic.literal(entityName = entityName.asInstanceOf[js.Any])
+    if (createFromEntity != null) __obj.updateDynamic("createFromEntity")(createFromEntity.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (formId != null) __obj.updateDynamic("formId")(formId.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(openInNewWindow)) __obj.updateDynamic("openInNewWindow")(openInNewWindow)
-    if (!js.isUndefined(useQuickCreateForm)) __obj.updateDynamic("useQuickCreateForm")(useQuickCreateForm)
+    if (!js.isUndefined(openInNewWindow)) __obj.updateDynamic("openInNewWindow")(openInNewWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(useQuickCreateForm)) __obj.updateDynamic("useQuickCreateForm")(useQuickCreateForm.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (windowPosition != null) __obj.updateDynamic("windowPosition")(windowPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityFormOptions]

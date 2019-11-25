@@ -15,10 +15,9 @@ object Equation {
   def apply(
     lhs: typings.algebraDotJs.algebraDotJsMod.algebra.js.Expression,
     rhs: typings.algebraDotJs.algebraDotJsMod.algebra.js.Expression,
-    solveFor: String => typings.algebraDotJs.algebraDotJsMod.algebra.js.Fraction | (js.Array[Double | typings.algebraDotJs.algebraDotJsMod.algebra.js.Fraction]),
-    toString: () => String
+    solveFor: String => typings.algebraDotJs.algebraDotJsMod.algebra.js.Fraction | (js.Array[Double | typings.algebraDotJs.algebraDotJsMod.algebra.js.Fraction])
   ): Equation = {
-    val __obj = js.Dynamic.literal(lhs = lhs, rhs = rhs, solveFor = js.Any.fromFunction1(solveFor), toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(lhs = lhs.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any], solveFor = js.Any.fromFunction1(solveFor))
   
     __obj.asInstanceOf[Equation]
   }

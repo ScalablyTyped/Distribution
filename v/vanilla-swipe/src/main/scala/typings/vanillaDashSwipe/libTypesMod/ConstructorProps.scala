@@ -26,8 +26,8 @@ object ConstructorProps {
     delta: Double | `10` = null,
     element: HTMLElement = null,
     mouseTrackingEnabled: js.UndefOr[Boolean] = js.undefined,
-    onSwiped: EventHandler = null,
-    onSwiping: EventHandler = null,
+    onSwiped: (/* e */ Event, /* deltaX */ Double, /* deltaY */ Double, /* absX */ Double, /* absY */ Double, /* duration */ Double) => Unit = null,
+    onSwiping: (/* e */ Event, /* deltaX */ Double, /* deltaY */ Double, /* absX */ Double, /* absY */ Double, /* duration */ Double) => Unit = null,
     onTap: /* e */ Event => Unit = null,
     preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined,
     rotationAngle: Double | `0` = null,
@@ -35,14 +35,14 @@ object ConstructorProps {
   ): ConstructorProps = {
     val __obj = js.Dynamic.literal()
     if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (!js.isUndefined(mouseTrackingEnabled)) __obj.updateDynamic("mouseTrackingEnabled")(mouseTrackingEnabled)
-    if (onSwiped != null) __obj.updateDynamic("onSwiped")(onSwiped)
-    if (onSwiping != null) __obj.updateDynamic("onSwiping")(onSwiping)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseTrackingEnabled)) __obj.updateDynamic("mouseTrackingEnabled")(mouseTrackingEnabled.asInstanceOf[js.Any])
+    if (onSwiped != null) __obj.updateDynamic("onSwiped")(js.Any.fromFunction6(onSwiped))
+    if (onSwiping != null) __obj.updateDynamic("onSwiping")(js.Any.fromFunction6(onSwiping))
     if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
-    if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent)
+    if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent.asInstanceOf[js.Any])
     if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchTrackingEnabled)) __obj.updateDynamic("touchTrackingEnabled")(touchTrackingEnabled)
+    if (!js.isUndefined(touchTrackingEnabled)) __obj.updateDynamic("touchTrackingEnabled")(touchTrackingEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorProps]
   }
 }

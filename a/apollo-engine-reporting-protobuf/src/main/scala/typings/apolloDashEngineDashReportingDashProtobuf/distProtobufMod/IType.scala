@@ -15,8 +15,8 @@ object IType {
   @scala.inline
   def apply(field: js.Array[IField] = null, name: String = null): IType = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IType]
   }
 }

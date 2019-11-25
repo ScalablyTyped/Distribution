@@ -38,10 +38,10 @@ object BatchWriteItemOutput {
     ItemCollectionMetrics: StringDictionary[js.Array[_UnmarshalledItemCollectionMetrics]] = null,
     UnprocessedItems: StringDictionary[js.Array[_UnmarshalledWriteRequest]] = null
   ): BatchWriteItemOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
-    if (ItemCollectionMetrics != null) __obj.updateDynamic("ItemCollectionMetrics")(ItemCollectionMetrics)
-    if (UnprocessedItems != null) __obj.updateDynamic("UnprocessedItems")(UnprocessedItems)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity.asInstanceOf[js.Any])
+    if (ItemCollectionMetrics != null) __obj.updateDynamic("ItemCollectionMetrics")(ItemCollectionMetrics.asInstanceOf[js.Any])
+    if (UnprocessedItems != null) __obj.updateDynamic("UnprocessedItems")(UnprocessedItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchWriteItemOutput]
   }
 }

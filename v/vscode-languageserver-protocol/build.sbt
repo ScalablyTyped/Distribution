@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "vscode-languageserver-protocol"
-version := "3.14.1-f75d30"
+version := "3.14.1-296739"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "vscode-jsonrpc" % "4.0.0-1a746d",
-  "org.scalablytyped" %%% "vscode-languageserver-types" % "3.14.0-605b28")
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d",
+  "org.scalablytyped" %%% "vscode-jsonrpc" % "4.0.0-5ad886",
+  "org.scalablytyped" %%% "vscode-languageserver-types" % "3.14.0-17335f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

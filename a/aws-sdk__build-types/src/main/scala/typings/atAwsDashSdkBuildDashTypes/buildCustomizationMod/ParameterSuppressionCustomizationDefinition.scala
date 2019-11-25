@@ -24,8 +24,8 @@ trait ParameterSuppressionCustomizationDefinition extends CustomizationDefinitio
 object ParameterSuppressionCustomizationDefinition {
   @scala.inline
   def apply(location: input | output, name: String, `type`: ParameterSuppression): ParameterSuppressionCustomizationDefinition = {
-    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterSuppressionCustomizationDefinition]
   }
 }

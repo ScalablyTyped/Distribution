@@ -26,7 +26,7 @@ object ContributionNodeQuery {
     includeProviderDetails: Boolean,
     queryOptions: ContributionQueryOptions
   ): ContributionNodeQuery = {
-    val __obj = js.Dynamic.literal(contributionIds = contributionIds, includeProviderDetails = includeProviderDetails, queryOptions = queryOptions)
+    val __obj = js.Dynamic.literal(contributionIds = contributionIds.asInstanceOf[js.Any], includeProviderDetails = includeProviderDetails.asInstanceOf[js.Any], queryOptions = queryOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContributionNodeQuery]
   }

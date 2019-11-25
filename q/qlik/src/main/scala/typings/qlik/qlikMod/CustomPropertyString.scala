@@ -30,12 +30,12 @@ object CustomPropertyString {
     show: Boolean | ShowFunction = null
   ): CustomPropertyString = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyString]
   }

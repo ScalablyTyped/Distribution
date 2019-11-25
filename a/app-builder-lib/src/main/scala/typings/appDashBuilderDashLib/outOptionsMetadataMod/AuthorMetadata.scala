@@ -12,8 +12,8 @@ trait AuthorMetadata extends js.Object {
 object AuthorMetadata {
   @scala.inline
   def apply(name: String, email: String = null): AuthorMetadata = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (email != null) __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorMetadata]
   }
 }

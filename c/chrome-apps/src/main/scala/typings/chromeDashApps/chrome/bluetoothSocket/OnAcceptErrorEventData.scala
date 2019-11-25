@@ -24,7 +24,7 @@ trait OnAcceptErrorEventData extends js.Object {
 object OnAcceptErrorEventData {
   @scala.inline
   def apply(error: OnAcceptErrorCode, errorMessage: String, socketId: integer): OnAcceptErrorEventData = {
-    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, socketId = socketId)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnAcceptErrorEventData]
   }

@@ -24,9 +24,9 @@ object StepperProps {
   ): StepperProps = {
     val __obj = js.Dynamic.literal()
     if (activeStep != null) __obj.updateDynamic("activeStep")(activeStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(linear)) __obj.updateDynamic("linear")(linear)
+    if (!js.isUndefined(linear)) __obj.updateDynamic("linear")(linear.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepperProps]
   }
 }

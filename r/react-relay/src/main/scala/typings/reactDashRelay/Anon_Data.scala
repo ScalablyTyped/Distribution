@@ -13,7 +13,7 @@ object Anon_Data {
   @scala.inline
   def apply(` $data`: js.Any = null): Anon_Data = {
     val __obj = js.Dynamic.literal()
-    if (` $data` != null) __obj.updateDynamic(" $data")(` $data`)
+    if (` $data` != null) __obj.updateDynamic(" $data")(` $data`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]
   }
 }

@@ -31,10 +31,10 @@ object TooltipFormatterContextObject {
     points: js.Array[TooltipFormatterContextObject] = null,
     total: Int | Double = null
   ): TooltipFormatterContextObject = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], key = key, point = point, series = series, x = x, y = y)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipFormatterContextObject]
   }

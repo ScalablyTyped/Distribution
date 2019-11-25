@@ -44,13 +44,13 @@ object RootQuerySelector {
   /* key */ StringDictionary[js.Any] = null
   ): RootQuerySelector[T] = {
     val __obj = js.Dynamic.literal()
-    if ($and != null) __obj.updateDynamic("$and")($and)
-    if ($comment != null) __obj.updateDynamic("$comment")($comment)
-    if ($nor != null) __obj.updateDynamic("$nor")($nor)
-    if ($or != null) __obj.updateDynamic("$or")($or)
-    if ($text != null) __obj.updateDynamic("$text")($text)
+    if ($and != null) __obj.updateDynamic("$and")($and.asInstanceOf[js.Any])
+    if ($comment != null) __obj.updateDynamic("$comment")($comment.asInstanceOf[js.Any])
+    if ($nor != null) __obj.updateDynamic("$nor")($nor.asInstanceOf[js.Any])
+    if ($or != null) __obj.updateDynamic("$or")($or.asInstanceOf[js.Any])
+    if ($text != null) __obj.updateDynamic("$text")($text.asInstanceOf[js.Any])
     if ($where != null) __obj.updateDynamic("$where")($where.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[RootQuerySelector[T]]
   }
 }

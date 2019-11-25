@@ -32,9 +32,9 @@ object IsDecimalOptions {
     locale: typings.validator.validatorMod.DecimalLocale = null
   ): IsDecimalOptions = {
     val __obj = js.Dynamic.literal()
-    if (decimal_digits != null) __obj.updateDynamic("decimal_digits")(decimal_digits)
-    if (!js.isUndefined(force_decimal)) __obj.updateDynamic("force_decimal")(force_decimal)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (decimal_digits != null) __obj.updateDynamic("decimal_digits")(decimal_digits.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_decimal)) __obj.updateDynamic("force_decimal")(force_decimal.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsDecimalOptions]
   }
 }

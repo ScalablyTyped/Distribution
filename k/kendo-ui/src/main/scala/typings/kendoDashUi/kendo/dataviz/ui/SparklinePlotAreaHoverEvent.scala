@@ -22,11 +22,11 @@ object SparklinePlotAreaHoverEvent {
     originalEvent: js.Any = null,
     value: js.Any = null
   ): SparklinePlotAreaHoverEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklinePlotAreaHoverEvent]
   }
 }

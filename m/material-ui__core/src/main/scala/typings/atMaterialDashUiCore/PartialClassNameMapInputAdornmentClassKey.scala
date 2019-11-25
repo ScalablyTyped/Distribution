@@ -23,11 +23,11 @@ object PartialClassNameMapInputAdornmentClassKey {
     root: String = null
   ): PartialClassNameMapInputAdornmentClassKey = {
     val __obj = js.Dynamic.literal()
-    if (disablePointerEvents != null) __obj.updateDynamic("disablePointerEvents")(disablePointerEvents)
-    if (filled != null) __obj.updateDynamic("filled")(filled)
-    if (positionEnd != null) __obj.updateDynamic("positionEnd")(positionEnd)
-    if (positionStart != null) __obj.updateDynamic("positionStart")(positionStart)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (disablePointerEvents != null) __obj.updateDynamic("disablePointerEvents")(disablePointerEvents.asInstanceOf[js.Any])
+    if (filled != null) __obj.updateDynamic("filled")(filled.asInstanceOf[js.Any])
+    if (positionEnd != null) __obj.updateDynamic("positionEnd")(positionEnd.asInstanceOf[js.Any])
+    if (positionStart != null) __obj.updateDynamic("positionStart")(positionStart.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapInputAdornmentClassKey]
   }
 }

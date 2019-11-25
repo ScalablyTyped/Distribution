@@ -13,8 +13,8 @@ trait StateACL extends ObjectACL {
 object StateACL {
   @scala.inline
   def apply(`object`: Double, owner: String, ownerGroup: String, state: Double): StateACL = {
-    val __obj = js.Dynamic.literal(owner = owner, ownerGroup = ownerGroup, state = state)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ownerGroup = ownerGroup.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateACL]
   }
 }

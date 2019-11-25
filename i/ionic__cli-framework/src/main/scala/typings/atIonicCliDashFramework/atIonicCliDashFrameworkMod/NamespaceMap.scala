@@ -9,9 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.std.Map because Already inherited
-- typings.atIonicCliDashFramework.definitionsMod.INamespaceMap because Already inherited */ @JSImport("@ionic/cli-framework", "NamespaceMap")
+@JSImport("@ionic/cli-framework", "NamespaceMap")
 @js.native
 class NamespaceMap ()
   extends AliasedMap[

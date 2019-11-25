@@ -47,17 +47,17 @@ object ProxyConfig {
     ssl: String = null
   ): ProxyConfig = {
     val __obj = js.Dynamic.literal()
-    if (autoConfigUrl != null) __obj.updateDynamic("autoConfigUrl")(autoConfigUrl)
-    if (!js.isUndefined(autoLogin)) __obj.updateDynamic("autoLogin")(autoLogin)
-    if (ftp != null) __obj.updateDynamic("ftp")(ftp)
-    if (http != null) __obj.updateDynamic("http")(http)
-    if (!js.isUndefined(httpProxyAll)) __obj.updateDynamic("httpProxyAll")(httpProxyAll)
-    if (passthrough != null) __obj.updateDynamic("passthrough")(passthrough)
-    if (!js.isUndefined(proxyDNS)) __obj.updateDynamic("proxyDNS")(proxyDNS)
-    if (proxyType != null) __obj.updateDynamic("proxyType")(proxyType)
-    if (socks != null) __obj.updateDynamic("socks")(socks)
+    if (autoConfigUrl != null) __obj.updateDynamic("autoConfigUrl")(autoConfigUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLogin)) __obj.updateDynamic("autoLogin")(autoLogin.asInstanceOf[js.Any])
+    if (ftp != null) __obj.updateDynamic("ftp")(ftp.asInstanceOf[js.Any])
+    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpProxyAll)) __obj.updateDynamic("httpProxyAll")(httpProxyAll.asInstanceOf[js.Any])
+    if (passthrough != null) __obj.updateDynamic("passthrough")(passthrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(proxyDNS)) __obj.updateDynamic("proxyDNS")(proxyDNS.asInstanceOf[js.Any])
+    if (proxyType != null) __obj.updateDynamic("proxyType")(proxyType.asInstanceOf[js.Any])
+    if (socks != null) __obj.updateDynamic("socks")(socks.asInstanceOf[js.Any])
     if (socksVersion != null) __obj.updateDynamic("socksVersion")(socksVersion.asInstanceOf[js.Any])
-    if (ssl != null) __obj.updateDynamic("ssl")(ssl)
+    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfig]
   }
 }

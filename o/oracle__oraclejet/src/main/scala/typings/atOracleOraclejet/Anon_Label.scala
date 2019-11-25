@@ -22,10 +22,10 @@ object Anon_Label {
     width: String = null
   ): Anon_Label[K2, D2] = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (rendered != null) __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label[K2, D2]]
   }
 }

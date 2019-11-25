@@ -17,9 +17,9 @@ object FeatureDescription {
   @scala.inline
   def apply(headline: String = null, image: Image = null, text: String = null): FeatureDescription = {
     val __obj = js.Dynamic.literal()
-    if (headline != null) __obj.updateDynamic("headline")(headline)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureDescription]
   }
 }

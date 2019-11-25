@@ -13,8 +13,8 @@ object AuthToken {
   @scala.inline
   def apply(authToken: String = null, `type`: String = null): AuthToken = {
     val __obj = js.Dynamic.literal()
-    if (authToken != null) __obj.updateDynamic("authToken")(authToken)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (authToken != null) __obj.updateDynamic("authToken")(authToken.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthToken]
   }
 }

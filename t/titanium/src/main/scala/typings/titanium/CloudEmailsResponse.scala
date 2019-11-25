@@ -41,10 +41,10 @@ object CloudEmailsResponse {
   ): CloudEmailsResponse = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudEmailsResponse]
   }
 }

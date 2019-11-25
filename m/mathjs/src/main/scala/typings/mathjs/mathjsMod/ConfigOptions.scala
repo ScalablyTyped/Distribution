@@ -25,11 +25,11 @@ object ConfigOptions {
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
     if (epsilon != null) __obj.updateDynamic("epsilon")(epsilon.asInstanceOf[js.Any])
-    if (matrix != null) __obj.updateDynamic("matrix")(matrix)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (parenthesis != null) __obj.updateDynamic("parenthesis")(parenthesis)
+    if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (parenthesis != null) __obj.updateDynamic("parenthesis")(parenthesis.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (randomSeed != null) __obj.updateDynamic("randomSeed")(randomSeed)
+    if (randomSeed != null) __obj.updateDynamic("randomSeed")(randomSeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

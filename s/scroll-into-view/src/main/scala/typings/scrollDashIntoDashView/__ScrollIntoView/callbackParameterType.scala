@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait callbackParameterType extends js.Object
 
+object callbackParameterType {
+  @scala.inline
+  def canceled: typings.scrollDashIntoDashView.scrollDashIntoDashViewStrings.canceled = this.cast("canceled")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def complete: typings.scrollDashIntoDashView.scrollDashIntoDashViewStrings.complete = this.cast("complete")
+}
+

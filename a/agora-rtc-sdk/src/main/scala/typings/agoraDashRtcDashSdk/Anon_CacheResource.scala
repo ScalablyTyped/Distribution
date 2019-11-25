@@ -60,11 +60,11 @@ object Anon_CacheResource {
     loop: js.UndefOr[Boolean] = js.undefined,
     replace: js.UndefOr[Boolean] = js.undefined
   ): Anon_CacheResource = {
-    val __obj = js.Dynamic.literal(filePath = filePath, playTime = playTime)
-    if (!js.isUndefined(cacheResource)) __obj.updateDynamic("cacheResource")(cacheResource)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], playTime = playTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheResource)) __obj.updateDynamic("cacheResource")(cacheResource.asInstanceOf[js.Any])
     if (cycle != null) __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CacheResource]
   }
 }

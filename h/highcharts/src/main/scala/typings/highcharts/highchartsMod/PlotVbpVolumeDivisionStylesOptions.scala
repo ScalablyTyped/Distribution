@@ -19,8 +19,8 @@ object PlotVbpVolumeDivisionStylesOptions {
   @scala.inline
   def apply(negativeColor: ColorString = null, positiveColor: ColorString = null): PlotVbpVolumeDivisionStylesOptions = {
     val __obj = js.Dynamic.literal()
-    if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor)
-    if (positiveColor != null) __obj.updateDynamic("positiveColor")(positiveColor)
+    if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
+    if (positiveColor != null) __obj.updateDynamic("positiveColor")(positiveColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotVbpVolumeDivisionStylesOptions]
   }
 }

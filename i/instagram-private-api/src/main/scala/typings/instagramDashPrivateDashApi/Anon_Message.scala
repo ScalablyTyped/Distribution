@@ -18,7 +18,7 @@ object Anon_Message {
     previewWidth: Double | String = null
   ): Anon_Message = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (previewHeight != null) __obj.updateDynamic("previewHeight")(previewHeight.asInstanceOf[js.Any])
     if (previewWidth != null) __obj.updateDynamic("previewWidth")(previewWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Message]

@@ -13,8 +13,8 @@ object GroupObjectsRequest {
   @scala.inline
   def apply(childrenObjectIds: js.Array[String] = null, groupObjectId: String = null): GroupObjectsRequest = {
     val __obj = js.Dynamic.literal()
-    if (childrenObjectIds != null) __obj.updateDynamic("childrenObjectIds")(childrenObjectIds)
-    if (groupObjectId != null) __obj.updateDynamic("groupObjectId")(groupObjectId)
+    if (childrenObjectIds != null) __obj.updateDynamic("childrenObjectIds")(childrenObjectIds.asInstanceOf[js.Any])
+    if (groupObjectId != null) __obj.updateDynamic("groupObjectId")(groupObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupObjectsRequest]
   }
 }

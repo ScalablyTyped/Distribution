@@ -40,8 +40,8 @@ object DefaultTreeElement {
     tagName: String,
     sourceCodeLocation: ElementLocation = null
   ): DefaultTreeElement = {
-    val __obj = js.Dynamic.literal(attrs = attrs, childNodes = childNodes, namespaceURI = namespaceURI, nodeName = nodeName, parentNode = parentNode, tagName = tagName)
-    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], namespaceURI = namespaceURI.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultTreeElement]
   }
 }

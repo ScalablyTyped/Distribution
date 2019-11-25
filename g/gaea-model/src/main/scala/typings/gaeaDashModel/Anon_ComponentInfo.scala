@@ -17,7 +17,7 @@ trait Anon_ComponentInfo extends js.Object {
 object Anon_ComponentInfo {
   @scala.inline
   def apply(componentInfo: ViewportComponentFullInfo, index: Double, parentMapUniqueKey: String): Anon_ComponentInfo = {
-    val __obj = js.Dynamic.literal(componentInfo = componentInfo, index = index, parentMapUniqueKey = parentMapUniqueKey)
+    val __obj = js.Dynamic.literal(componentInfo = componentInfo.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], parentMapUniqueKey = parentMapUniqueKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ComponentInfo]
   }

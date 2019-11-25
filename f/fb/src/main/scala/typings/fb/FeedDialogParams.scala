@@ -38,17 +38,17 @@ object FeedDialogParams {
     source: String = null,
     to: String = null
   ): FeedDialogParams = {
-    val __obj = js.Dynamic.literal(app_id = app_id, method = method, name = name)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (display != null) __obj.updateDynamic("display")(display)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (picture != null) __obj.updateDynamic("picture")(picture)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (to != null) __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(app_id = app_id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedDialogParams]
   }
 }

@@ -69,17 +69,17 @@ object IonIcon {
     src: String = null
   ): IonIcon = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lazy")(`lazy`)
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(flipRtl)) __obj.updateDynamic("flipRtl")(flipRtl)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (ios != null) __obj.updateDynamic("ios")(ios)
-    if (md != null) __obj.updateDynamic("md")(md)
+    __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipRtl)) __obj.updateDynamic("flipRtl")(flipRtl.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
+    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonIcon]
   }
 }

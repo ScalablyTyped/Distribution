@@ -12,8 +12,8 @@ object CloseButtonOptions {
   @scala.inline
   def apply(children: js.Array[Child] = null, controlText: String = null): CloseButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (controlText != null) __obj.updateDynamic("controlText")(controlText)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (controlText != null) __obj.updateDynamic("controlText")(controlText.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseButtonOptions]
   }
 }

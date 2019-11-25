@@ -14,7 +14,7 @@ trait LexerRange extends js.Object {
 object LexerRange {
   @scala.inline
   def apply(endPos: Double, startCol: Double, startLine: Double, startPos: Double): LexerRange = {
-    val __obj = js.Dynamic.literal(endPos = endPos, startCol = startCol, startLine = startLine, startPos = startPos)
+    val __obj = js.Dynamic.literal(endPos = endPos.asInstanceOf[js.Any], startCol = startCol.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any], startPos = startPos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LexerRange]
   }

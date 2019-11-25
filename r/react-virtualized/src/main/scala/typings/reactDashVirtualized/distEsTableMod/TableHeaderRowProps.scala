@@ -25,7 +25,7 @@ object TableHeaderRowProps {
     style: CSSProperties,
     width: Double
   ): TableHeaderRowProps = {
-    val __obj = js.Dynamic.literal(className = className, columns = columns, height = height, scrollbarWidth = scrollbarWidth, style = style, width = width)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], scrollbarWidth = scrollbarWidth.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TableHeaderRowProps]
   }

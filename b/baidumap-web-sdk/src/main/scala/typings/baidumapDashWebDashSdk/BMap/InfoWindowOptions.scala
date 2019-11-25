@@ -30,14 +30,14 @@ object InfoWindowOptions {
     width: Int | Double = null
   ): InfoWindowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableAutoPan)) __obj.updateDynamic("enableAutoPan")(enableAutoPan)
-    if (!js.isUndefined(enableCloseOnClick)) __obj.updateDynamic("enableCloseOnClick")(enableCloseOnClick)
-    if (!js.isUndefined(enableMessage)) __obj.updateDynamic("enableMessage")(enableMessage)
+    if (!js.isUndefined(enableAutoPan)) __obj.updateDynamic("enableAutoPan")(enableAutoPan.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCloseOnClick)) __obj.updateDynamic("enableCloseOnClick")(enableCloseOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableMessage)) __obj.updateDynamic("enableMessage")(enableMessage.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoWindowOptions]
   }

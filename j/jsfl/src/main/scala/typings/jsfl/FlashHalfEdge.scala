@@ -32,7 +32,7 @@ object FlashHalfEdge {
     id: Double,
     index: Double
   ): FlashHalfEdge = {
-    val __obj = js.Dynamic.literal(getEdge = js.Any.fromFunction0(getEdge), getNext = js.Any.fromFunction0(getNext), getOppositeHalfEdge = js.Any.fromFunction0(getOppositeHalfEdge), getPrev = js.Any.fromFunction0(getPrev), getVertex = js.Any.fromFunction0(getVertex), id = id, index = index)
+    val __obj = js.Dynamic.literal(getEdge = js.Any.fromFunction0(getEdge), getNext = js.Any.fromFunction0(getNext), getOppositeHalfEdge = js.Any.fromFunction0(getOppositeHalfEdge), getPrev = js.Any.fromFunction0(getPrev), getVertex = js.Any.fromFunction0(getVertex), id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlashHalfEdge]
   }

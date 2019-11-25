@@ -21,7 +21,7 @@ object Anon_Cache {
     mapping: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlainObject<string> */ js.Any,
     root: String
   ): Anon_Cache = {
-    val __obj = js.Dynamic.literal(cache = cache, defaultExtension = defaultExtension, defaultViewEngine = defaultViewEngine, mapping = mapping, root = root)
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], defaultExtension = defaultExtension.asInstanceOf[js.Any], defaultViewEngine = defaultViewEngine.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cache]
   }

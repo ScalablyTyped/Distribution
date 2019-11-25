@@ -48,17 +48,17 @@ object DestroyOptions {
     where: AnyWhereOptions = null
   ): DestroyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
-    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
-    if (!js.isUndefined(individualHooks)) __obj.updateDynamic("individualHooks")(individualHooks)
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.asInstanceOf[js.Any])
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(individualHooks)) __obj.updateDynamic("individualHooks")(individualHooks.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestroyOptions]
   }
 }

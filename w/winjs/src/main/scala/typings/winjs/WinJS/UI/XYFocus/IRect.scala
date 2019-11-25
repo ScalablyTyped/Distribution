@@ -23,7 +23,7 @@ object IRect {
     bottom: Int | Double = null,
     right: Int | Double = null
   ): IRect = {
-    val __obj = js.Dynamic.literal(height = height, left = left, top = top, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRect]

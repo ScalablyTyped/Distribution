@@ -26,7 +26,7 @@ object reactStrings {
   sealed trait WeakValidationMap extends js.Object
   
   @js.native
-  sealed trait a extends js.Object
+  sealed trait a_ extends js.Object
   
   @js.native
   sealed trait abbr extends js.Object
@@ -394,7 +394,7 @@ object reactStrings {
   sealed trait html extends js.Object
   
   @js.native
-  sealed trait i extends js.Object
+  sealed trait i_ extends js.Object
   
   @js.native
   sealed trait ideographic extends js.Object
@@ -843,7 +843,7 @@ object reactStrings {
   @scala.inline
   def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
   @scala.inline
-  def a: a = "a".asInstanceOf[a]
+  def a_ : a_ = "a".asInstanceOf[a_]
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
   @scala.inline
@@ -1083,7 +1083,7 @@ object reactStrings {
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline
-  def i: i = "i".asInstanceOf[i]
+  def i_ : i_ = "i".asInstanceOf[i_]
   @scala.inline
   def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   @scala.inline

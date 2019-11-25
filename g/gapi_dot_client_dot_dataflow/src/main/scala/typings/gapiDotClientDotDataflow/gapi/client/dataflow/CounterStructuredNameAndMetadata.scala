@@ -15,8 +15,8 @@ object CounterStructuredNameAndMetadata {
   @scala.inline
   def apply(metadata: CounterMetadata = null, name: CounterStructuredName = null): CounterStructuredNameAndMetadata = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterStructuredNameAndMetadata]
   }
 }

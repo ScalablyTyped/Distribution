@@ -29,7 +29,7 @@ object Anon_Done {
     refreshableTitleRefreshing: String,
     refreshableTitleRelease: String
   ): Anon_Done = {
-    val __obj = js.Dynamic.literal(done = done, loading = loading, noData = noData, refreshableTitlePull = refreshableTitlePull, refreshableTitleRefreshing = refreshableTitleRefreshing, refreshableTitleRelease = refreshableTitleRelease)
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], noData = noData.asInstanceOf[js.Any], refreshableTitlePull = refreshableTitlePull.asInstanceOf[js.Any], refreshableTitleRefreshing = refreshableTitleRefreshing.asInstanceOf[js.Any], refreshableTitleRelease = refreshableTitleRelease.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Done]
   }

@@ -17,8 +17,8 @@ trait ColumnInfo extends js.Object {
 object ColumnInfo {
   @scala.inline
   def apply(defaultValue: Value, maxLength: Double, nullable: Boolean, `type`: String): ColumnInfo = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], maxLength = maxLength, nullable = nullable)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnInfo]
   }
 }

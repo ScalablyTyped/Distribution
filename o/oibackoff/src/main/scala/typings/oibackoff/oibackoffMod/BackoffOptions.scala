@@ -1,14 +1,13 @@
 package typings.oibackoff.oibackoffMod
 
-import typings.oibackoff.oibackoffStrings.exponential
-import typings.oibackoff.oibackoffStrings.fibonacci
-import typings.oibackoff.oibackoffStrings.incremental
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BackoffOptions extends js.Object {
-  var algorithm: js.UndefOr[incremental | exponential | fibonacci] = js.undefined
+  var algorithm: js.UndefOr[
+    typings.oibackoff.oibackoffStrings.incremental | typings.oibackoff.oibackoffStrings.exponential | typings.oibackoff.oibackoffStrings.fibonacci
+  ] = js.undefined
   var delayRatio: js.UndefOr[Double] = js.undefined
   var maxDelay: js.UndefOr[Double] = js.undefined
   var maxTries: js.UndefOr[Double] = js.undefined
@@ -17,7 +16,7 @@ trait BackoffOptions extends js.Object {
 object BackoffOptions {
   @scala.inline
   def apply(
-    algorithm: incremental | exponential | fibonacci = null,
+    algorithm: typings.oibackoff.oibackoffStrings.incremental | typings.oibackoff.oibackoffStrings.exponential | typings.oibackoff.oibackoffStrings.fibonacci = null,
     delayRatio: Int | Double = null,
     maxDelay: Int | Double = null,
     maxTries: Int | Double = null

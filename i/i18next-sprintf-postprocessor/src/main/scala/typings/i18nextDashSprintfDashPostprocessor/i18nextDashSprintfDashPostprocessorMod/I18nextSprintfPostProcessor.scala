@@ -20,12 +20,10 @@ object I18nextSprintfPostProcessor {
     name: String,
     overloadTranslationOptionHandler: js.Array[String] => Anon_PostProcess,
     process: (js.Any, String, js.Any) => js.Any,
-    `type`: postProcessor,
-    type_PostProcessorModule: typings.i18next.i18nextStrings.postProcessor
+    `type`: postProcessor
   ): I18nextSprintfPostProcessor = {
-    val __obj = js.Dynamic.literal(name = name, overloadTranslationOptionHandler = js.Any.fromFunction1(overloadTranslationOptionHandler), process = js.Any.fromFunction3(process))
-    __obj.updateDynamic("type")(`type`)
-    __obj.updateDynamic("type")(type_PostProcessorModule)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], overloadTranslationOptionHandler = js.Any.fromFunction1(overloadTranslationOptionHandler), process = js.Any.fromFunction3(process))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[I18nextSprintfPostProcessor]
   }
 }

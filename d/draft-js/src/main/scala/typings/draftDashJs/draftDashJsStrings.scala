@@ -96,7 +96,7 @@ object draftDashJsStrings {
   sealed trait blockquote extends CoreDraftBlockType
   
   @js.native
-  sealed trait bold extends DraftEditorCommand
+  sealed trait bold_ extends DraftEditorCommand
   
   @js.native
   sealed trait center extends DraftTextAlignment
@@ -111,10 +111,10 @@ object draftDashJsStrings {
   sealed trait `change-inline-style` extends EditorChangeType
   
   @js.native
-  sealed trait code extends DraftEditorCommand
+  sealed trait `code-block` extends CoreDraftBlockType
   
   @js.native
-  sealed trait `code-block` extends CoreDraftBlockType
+  sealed trait code_ extends DraftEditorCommand
   
   @js.native
   sealed trait delete extends DraftEditorCommand
@@ -162,7 +162,7 @@ object draftDashJsStrings {
   sealed trait internal extends DraftDragType
   
   @js.native
-  sealed trait italic extends DraftEditorCommand
+  sealed trait italic_ extends DraftEditorCommand
   
   @js.native
   sealed trait left extends DraftTextAlignment
@@ -211,13 +211,13 @@ object draftDashJsStrings {
        with EditorChangeType
   
   @js.native
-  sealed trait strikethrough extends DraftEditorCommand
+  sealed trait strikethrough_ extends DraftEditorCommand
   
   @js.native
   sealed trait `transpose-characters` extends DraftEditorCommand
   
   @js.native
-  sealed trait underline extends DraftEditorCommand
+  sealed trait underline_ extends DraftEditorCommand
   
   @js.native
   sealed trait undo
@@ -283,7 +283,7 @@ object draftDashJsStrings {
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
+  def bold_ : bold_ = "bold".asInstanceOf[bold_]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
@@ -293,9 +293,9 @@ object draftDashJsStrings {
   @scala.inline
   def `change-inline-style`: `change-inline-style` = "change-inline-style".asInstanceOf[`change-inline-style`]
   @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
   def `code-block`: `code-block` = "code-block".asInstanceOf[`code-block`]
+  @scala.inline
+  def code_ : code_ = "code".asInstanceOf[code_]
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline
@@ -327,7 +327,7 @@ object draftDashJsStrings {
   @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   @scala.inline
-  def italic: italic = "italic".asInstanceOf[italic]
+  def italic_ : italic_ = "italic".asInstanceOf[italic_]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -357,11 +357,11 @@ object draftDashJsStrings {
   @scala.inline
   def `split-block`: `split-block` = "split-block".asInstanceOf[`split-block`]
   @scala.inline
-  def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
+  def strikethrough_ : strikethrough_ = "strikethrough".asInstanceOf[strikethrough_]
   @scala.inline
   def `transpose-characters`: `transpose-characters` = "transpose-characters".asInstanceOf[`transpose-characters`]
   @scala.inline
-  def underline: underline = "underline".asInstanceOf[underline]
+  def underline_ : underline_ = "underline".asInstanceOf[underline_]
   @scala.inline
   def undo: undo = "undo".asInstanceOf[undo]
   @scala.inline

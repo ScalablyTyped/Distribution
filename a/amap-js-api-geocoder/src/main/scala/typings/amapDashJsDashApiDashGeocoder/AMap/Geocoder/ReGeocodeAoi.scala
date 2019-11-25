@@ -17,8 +17,8 @@ trait ReGeocodeAoi extends js.Object {
 object ReGeocodeAoi {
   @scala.inline
   def apply(adcode: String, area: String, id: String, location: LngLat, name: String, `type`: String): ReGeocodeAoi = {
-    val __obj = js.Dynamic.literal(adcode = adcode, area = area, id = id, location = location, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReGeocodeAoi]
   }
 }

@@ -13,8 +13,8 @@ trait PathCommandObject extends js.Object {
 object PathCommandObject {
   @scala.inline
   def apply(`type`: String, x: Double, y: Double): PathCommandObject = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathCommandObject]
   }
 }

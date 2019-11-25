@@ -23,8 +23,8 @@ object CheckResultAndHandleErrors {
     transformRequest: /* originalRequest */ Request => Request = null,
     transformSchema: /* schema */ GraphQLSchema => GraphQLSchema = null
   ): CheckResultAndHandleErrors = {
-    val __obj = js.Dynamic.literal(info = info, transformResult = js.Any.fromFunction1(transformResult))
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], transformResult = js.Any.fromFunction1(transformResult))
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
     if (transformSchema != null) __obj.updateDynamic("transformSchema")(js.Any.fromFunction1(transformSchema))
     __obj.asInstanceOf[CheckResultAndHandleErrors]

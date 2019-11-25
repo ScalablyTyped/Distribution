@@ -13,7 +13,7 @@ trait ReleaseDefinitionEnvironmentSummary extends js.Object {
 object ReleaseDefinitionEnvironmentSummary {
   @scala.inline
   def apply(id: Double, lastReleases: js.Array[ReleaseShallowReference], name: String): ReleaseDefinitionEnvironmentSummary = {
-    val __obj = js.Dynamic.literal(id = id, lastReleases = lastReleases, name = name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], lastReleases = lastReleases.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentSummary]
   }

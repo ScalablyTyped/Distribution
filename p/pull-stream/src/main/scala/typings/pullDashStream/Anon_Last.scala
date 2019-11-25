@@ -11,7 +11,7 @@ trait Anon_Last extends js.Object {
 object Anon_Last {
   @scala.inline
   def apply(last: Boolean): Anon_Last = {
-    val __obj = js.Dynamic.literal(last = last)
+    val __obj = js.Dynamic.literal(last = last.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Last]
   }

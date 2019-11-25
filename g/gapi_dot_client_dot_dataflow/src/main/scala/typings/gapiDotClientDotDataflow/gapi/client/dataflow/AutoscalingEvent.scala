@@ -34,11 +34,11 @@ object AutoscalingEvent {
     time: String = null
   ): AutoscalingEvent = {
     val __obj = js.Dynamic.literal()
-    if (currentNumWorkers != null) __obj.updateDynamic("currentNumWorkers")(currentNumWorkers)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType)
-    if (targetNumWorkers != null) __obj.updateDynamic("targetNumWorkers")(targetNumWorkers)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (currentNumWorkers != null) __obj.updateDynamic("currentNumWorkers")(currentNumWorkers.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
+    if (targetNumWorkers != null) __obj.updateDynamic("targetNumWorkers")(targetNumWorkers.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoscalingEvent]
   }
 }

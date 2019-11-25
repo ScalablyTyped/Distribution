@@ -55,7 +55,7 @@ object ConfigOptions {
     stringMap: js.Array[StringMap],
     useCalc: Boolean
   ): ConfigOptions = {
-    val __obj = js.Dynamic.literal(autoRename = autoRename, autoRenameStrict = autoRenameStrict, blacklist = blacklist, clean = clean, greedy = greedy, processUrls = processUrls.asInstanceOf[js.Any], stringMap = stringMap, useCalc = useCalc)
+    val __obj = js.Dynamic.literal(autoRename = autoRename.asInstanceOf[js.Any], autoRenameStrict = autoRenameStrict.asInstanceOf[js.Any], blacklist = blacklist.asInstanceOf[js.Any], clean = clean.asInstanceOf[js.Any], greedy = greedy.asInstanceOf[js.Any], processUrls = processUrls.asInstanceOf[js.Any], stringMap = stringMap.asInstanceOf[js.Any], useCalc = useCalc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfigOptions]
   }

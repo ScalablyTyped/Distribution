@@ -29,7 +29,7 @@ object ILicenseStatus {
     NumOfReadonlyLicenses: Double,
     SerialNumber: String
   ): ILicenseStatus = {
-    val __obj = js.Dynamic.literal(ClearLicenseCode = js.Any.fromFunction0(ClearLicenseCode), EvaluationDaysLeft = EvaluationDaysLeft, EvaluationMode = EvaluationMode, Expired = Expired, LicenseCode = LicenseCode, NumOfConcurrentUserLicenses = NumOfConcurrentUserLicenses, NumOfNamedUserLicenses = NumOfNamedUserLicenses, NumOfReadonlyLicenses = NumOfReadonlyLicenses, SerialNumber = SerialNumber)
+    val __obj = js.Dynamic.literal(ClearLicenseCode = js.Any.fromFunction0(ClearLicenseCode), EvaluationDaysLeft = EvaluationDaysLeft.asInstanceOf[js.Any], EvaluationMode = EvaluationMode.asInstanceOf[js.Any], Expired = Expired.asInstanceOf[js.Any], LicenseCode = LicenseCode.asInstanceOf[js.Any], NumOfConcurrentUserLicenses = NumOfConcurrentUserLicenses.asInstanceOf[js.Any], NumOfNamedUserLicenses = NumOfNamedUserLicenses.asInstanceOf[js.Any], NumOfReadonlyLicenses = NumOfReadonlyLicenses.asInstanceOf[js.Any], SerialNumber = SerialNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILicenseStatus]
   }

@@ -1,9 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
-import typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod.NavComponent
-import typings.atIonicCore.distTypesInterfaceMod.ComponentProps
-import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
-import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +13,9 @@ trait IonNav extends js.Object {
   /**
     * By default `ion-nav` animates transition between pages based in the mode (ios or material design). However, this property allows to create custom transition using `AnimateBuilder` functions.
     */
-  var animation: js.UndefOr[AnimationBuilder] = js.undefined
+  var animation: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
+  ] = js.undefined
   /**
     * Event fired when the nav has changed components
     */
@@ -29,11 +27,15 @@ trait IonNav extends js.Object {
   /**
     * Root NavComponent to load
     */
-  var root: js.UndefOr[NavComponent] = js.undefined
+  var root: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any
+  ] = js.undefined
   /**
     * Any parameters for the root component
     */
-  var rootParams: js.UndefOr[ComponentProps[Null]] = js.undefined
+  var rootParams: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
+  ] = js.undefined
   /**
     * If the nav component should allow for swipe-to-go-back.
     */
@@ -44,21 +46,21 @@ object IonNav {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    animation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
+    animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
     onIonNavDidChange: /* event */ CustomEvent[Unit] => Unit = null,
     onIonNavWillChange: /* event */ CustomEvent[Unit] => Unit = null,
-    root: NavComponent = null,
-    rootParams: ComponentProps[Null] = null,
+    root: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any = null,
+    rootParams: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any = null,
     swipeGesture: js.UndefOr[Boolean] = js.undefined
   ): IonNav = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (animation != null) __obj.updateDynamic("animation")(js.Any.fromFunction3(animation))
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (onIonNavDidChange != null) __obj.updateDynamic("onIonNavDidChange")(js.Any.fromFunction1(onIonNavDidChange))
     if (onIonNavWillChange != null) __obj.updateDynamic("onIonNavWillChange")(js.Any.fromFunction1(onIonNavWillChange))
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (rootParams != null) __obj.updateDynamic("rootParams")(rootParams)
-    if (!js.isUndefined(swipeGesture)) __obj.updateDynamic("swipeGesture")(swipeGesture)
+    if (rootParams != null) __obj.updateDynamic("rootParams")(rootParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeGesture)) __obj.updateDynamic("swipeGesture")(swipeGesture.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonNav]
   }
 }

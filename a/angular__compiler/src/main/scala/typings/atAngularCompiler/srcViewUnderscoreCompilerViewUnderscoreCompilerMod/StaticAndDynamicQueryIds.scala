@@ -13,7 +13,7 @@ trait StaticAndDynamicQueryIds extends js.Object {
 object StaticAndDynamicQueryIds {
   @scala.inline
   def apply(dynamicQueryIds: Set[Double], staticQueryIds: Set[Double]): StaticAndDynamicQueryIds = {
-    val __obj = js.Dynamic.literal(dynamicQueryIds = dynamicQueryIds, staticQueryIds = staticQueryIds)
+    val __obj = js.Dynamic.literal(dynamicQueryIds = dynamicQueryIds.asInstanceOf[js.Any], staticQueryIds = staticQueryIds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StaticAndDynamicQueryIds]
   }

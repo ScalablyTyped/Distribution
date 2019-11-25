@@ -31,7 +31,7 @@ trait AzureFilePersistentVolumeSource extends js.Object {
 object AzureFilePersistentVolumeSource {
   @scala.inline
   def apply(readOnly: Boolean, secretName: String, secretNamespace: String, shareName: String): AzureFilePersistentVolumeSource = {
-    val __obj = js.Dynamic.literal(readOnly = readOnly, secretName = secretName, secretNamespace = secretNamespace, shareName = shareName)
+    val __obj = js.Dynamic.literal(readOnly = readOnly.asInstanceOf[js.Any], secretName = secretName.asInstanceOf[js.Any], secretNamespace = secretNamespace.asInstanceOf[js.Any], shareName = shareName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AzureFilePersistentVolumeSource]
   }

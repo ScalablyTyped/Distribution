@@ -11,7 +11,7 @@ trait KnockoutStatic extends js.Object {
 object KnockoutStatic {
   @scala.inline
   def apply(secureBindingsProvider: Anon_Options): KnockoutStatic = {
-    val __obj = js.Dynamic.literal(secureBindingsProvider = secureBindingsProvider)
+    val __obj = js.Dynamic.literal(secureBindingsProvider = secureBindingsProvider.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KnockoutStatic]
   }

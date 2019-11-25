@@ -12,7 +12,7 @@ trait IDialRequestedEventArgs extends js.Object {
 object IDialRequestedEventArgs {
   @scala.inline
   def apply(contact: js.Any, handled: () => Unit): IDialRequestedEventArgs = {
-    val __obj = js.Dynamic.literal(contact = contact, handled = js.Any.fromFunction0(handled))
+    val __obj = js.Dynamic.literal(contact = contact.asInstanceOf[js.Any], handled = js.Any.fromFunction0(handled))
   
     __obj.asInstanceOf[IDialRequestedEventArgs]
   }

@@ -24,11 +24,11 @@ object DialogButtonOptions {
     text: String = null
   ): DialogButtonOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (showText != null) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogButtonOptions]
   }
 }

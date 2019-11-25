@@ -22,7 +22,7 @@ object PersistGateProps {
     loading: ReactNode = null,
     onBeforeLift: () => Unit | js.Promise[Unit] = null
   ): PersistGateProps = {
-    val __obj = js.Dynamic.literal(persistor = persistor)
+    val __obj = js.Dynamic.literal(persistor = persistor.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (onBeforeLift != null) __obj.updateDynamic("onBeforeLift")(js.Any.fromFunction0(onBeforeLift))

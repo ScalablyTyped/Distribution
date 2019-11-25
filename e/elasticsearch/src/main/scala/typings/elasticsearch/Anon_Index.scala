@@ -24,10 +24,10 @@ object Anon_Index {
     `type`: String | js.Array[String] = null
   ): Anon_Index = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (remote != null) __obj.updateDynamic("remote")(remote)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Index]
   }

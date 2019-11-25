@@ -12,7 +12,7 @@ trait Increment extends IBaseObject {
 object Increment {
   @scala.inline
   def apply(amount: Double, toJSON: () => js.Any): Increment = {
-    val __obj = js.Dynamic.literal(amount = amount, toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[Increment]
   }

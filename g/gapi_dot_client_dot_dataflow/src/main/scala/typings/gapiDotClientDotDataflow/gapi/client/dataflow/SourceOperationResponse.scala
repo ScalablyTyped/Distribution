@@ -15,8 +15,8 @@ object SourceOperationResponse {
   @scala.inline
   def apply(getMetadata: SourceGetMetadataResponse = null, split: SourceSplitResponse = null): SourceOperationResponse = {
     val __obj = js.Dynamic.literal()
-    if (getMetadata != null) __obj.updateDynamic("getMetadata")(getMetadata)
-    if (split != null) __obj.updateDynamic("split")(split)
+    if (getMetadata != null) __obj.updateDynamic("getMetadata")(getMetadata.asInstanceOf[js.Any])
+    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOperationResponse]
   }
 }

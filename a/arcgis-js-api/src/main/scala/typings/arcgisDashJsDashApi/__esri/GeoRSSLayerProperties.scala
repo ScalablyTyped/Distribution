@@ -53,18 +53,18 @@ object GeoRSSLayerProperties {
     visible: js.UndefOr[Boolean] = js.undefined
   ): GeoRSSLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lineSymbol != null) __obj.updateDynamic("lineSymbol")(lineSymbol)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lineSymbol != null) __obj.updateDynamic("lineSymbol")(lineSymbol.asInstanceOf[js.Any])
     if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(pointSymbol)
-    if (polygonSymbol != null) __obj.updateDynamic("polygonSymbol")(polygonSymbol)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(pointSymbol.asInstanceOf[js.Any])
+    if (polygonSymbol != null) __obj.updateDynamic("polygonSymbol")(polygonSymbol.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoRSSLayerProperties]
   }
 }

@@ -25,7 +25,7 @@ object SetCookieOptions {
     secure: Boolean,
     timeout: Double
   ): SetCookieOptions = {
-    val __obj = js.Dynamic.literal(domain = domain, expiry = expiry, httpOnly = httpOnly, log = log, path = path, secure = secure, timeout = timeout)
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], expiry = expiry.asInstanceOf[js.Any], httpOnly = httpOnly.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetCookieOptions]
   }

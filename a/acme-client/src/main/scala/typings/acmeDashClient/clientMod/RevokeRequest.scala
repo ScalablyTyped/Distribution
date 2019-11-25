@@ -12,7 +12,7 @@ object RevokeRequest {
   @scala.inline
   def apply(reason: RevocationReason = null): RevokeRequest = {
     val __obj = js.Dynamic.literal()
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeRequest]
   }
 }

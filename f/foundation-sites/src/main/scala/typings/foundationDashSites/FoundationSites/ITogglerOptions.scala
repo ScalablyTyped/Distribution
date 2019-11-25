@@ -12,7 +12,7 @@ object ITogglerOptions {
   @scala.inline
   def apply(animate: js.UndefOr[Boolean] = js.undefined): ITogglerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITogglerOptions]
   }
 }

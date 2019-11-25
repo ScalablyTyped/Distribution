@@ -12,7 +12,7 @@ trait Anon_Paused extends js.Object {
 object Anon_Paused {
   @scala.inline
   def apply(paused: Boolean, scid: Double | String): Anon_Paused = {
-    val __obj = js.Dynamic.literal(paused = paused, scid = scid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(paused = paused.asInstanceOf[js.Any], scid = scid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Paused]
   }

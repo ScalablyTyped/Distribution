@@ -14,8 +14,8 @@ object Anon_InteropIndex {
   @scala.inline
   def apply(InteropIndex: String = null, InteropVersion: Buffer = null): Anon_InteropIndex = {
     val __obj = js.Dynamic.literal()
-    if (InteropIndex != null) __obj.updateDynamic("InteropIndex")(InteropIndex)
-    if (InteropVersion != null) __obj.updateDynamic("InteropVersion")(InteropVersion)
+    if (InteropIndex != null) __obj.updateDynamic("InteropIndex")(InteropIndex.asInstanceOf[js.Any])
+    if (InteropVersion != null) __obj.updateDynamic("InteropVersion")(InteropVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InteropIndex]
   }
 }

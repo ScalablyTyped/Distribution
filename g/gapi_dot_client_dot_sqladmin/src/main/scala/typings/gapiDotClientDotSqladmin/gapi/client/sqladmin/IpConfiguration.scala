@@ -24,9 +24,9 @@ object IpConfiguration {
     requireSsl: js.UndefOr[Boolean] = js.undefined
   ): IpConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (authorizedNetworks != null) __obj.updateDynamic("authorizedNetworks")(authorizedNetworks)
-    if (!js.isUndefined(ipv4Enabled)) __obj.updateDynamic("ipv4Enabled")(ipv4Enabled)
-    if (!js.isUndefined(requireSsl)) __obj.updateDynamic("requireSsl")(requireSsl)
+    if (authorizedNetworks != null) __obj.updateDynamic("authorizedNetworks")(authorizedNetworks.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipv4Enabled)) __obj.updateDynamic("ipv4Enabled")(ipv4Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireSsl)) __obj.updateDynamic("requireSsl")(requireSsl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpConfiguration]
   }
 }

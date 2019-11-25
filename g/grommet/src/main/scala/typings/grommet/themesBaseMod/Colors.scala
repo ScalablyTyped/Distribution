@@ -89,7 +89,7 @@ object Colors {
     white: ColorType = null
   ): Colors = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`accent-1` != null) __obj.updateDynamic("accent-1")(`accent-1`.asInstanceOf[js.Any])
     if (`accent-2` != null) __obj.updateDynamic("accent-2")(`accent-2`.asInstanceOf[js.Any])
     if (`accent-3` != null) __obj.updateDynamic("accent-3")(`accent-3`.asInstanceOf[js.Any])

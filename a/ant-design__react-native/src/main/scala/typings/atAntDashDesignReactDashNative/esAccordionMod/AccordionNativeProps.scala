@@ -19,7 +19,7 @@ object AccordionNativeProps {
   def apply[T](style: StyleProp[ViewStyle] = null, styles: Partial[AccordionStyle] = null): AccordionNativeProps[T] = {
     val __obj = js.Dynamic.literal()
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionNativeProps[T]]
   }
 }

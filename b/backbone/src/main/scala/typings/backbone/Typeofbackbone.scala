@@ -214,7 +214,7 @@ trait Typeofbackbone extends js.Object {
   def ajax(): JQueryXHR = js.native
   def ajax(options: JQueryAjaxSettings): JQueryXHR = js.native
   // Utility
-  def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof Backbone */ js.Any = js.native
+  def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Backbone */ js.Any = js.native
   def sync(method: String, model: Collection[Model]): js.Any = js.native
   def sync(method: String, model: Collection[Model], options: JQueryAjaxSettings): js.Any = js.native
   // SYNC

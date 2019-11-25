@@ -52,7 +52,7 @@ object RuleListener {
     onCodePathStart: (/* codePath */ CodePath, /* node */ Node) => Unit = null
   ): RuleListener = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onCodePathEnd != null) __obj.updateDynamic("onCodePathEnd")(js.Any.fromFunction2(onCodePathEnd))
     if (onCodePathSegmentEnd != null) __obj.updateDynamic("onCodePathSegmentEnd")(js.Any.fromFunction2(onCodePathSegmentEnd))
     if (onCodePathSegmentLoop != null) __obj.updateDynamic("onCodePathSegmentLoop")(js.Any.fromFunction3(onCodePathSegmentLoop))

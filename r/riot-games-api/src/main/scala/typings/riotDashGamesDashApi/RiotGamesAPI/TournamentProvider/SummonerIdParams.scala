@@ -11,7 +11,7 @@ trait SummonerIdParams extends js.Object {
 object SummonerIdParams {
   @scala.inline
   def apply(participants: js.Array[Double]): SummonerIdParams = {
-    val __obj = js.Dynamic.literal(participants = participants)
+    val __obj = js.Dynamic.literal(participants = participants.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SummonerIdParams]
   }

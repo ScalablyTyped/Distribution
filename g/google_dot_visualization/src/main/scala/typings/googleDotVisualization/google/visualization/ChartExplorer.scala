@@ -24,9 +24,9 @@ object ChartExplorer {
     zoomDelta: Int | Double = null
   ): ChartExplorer = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (!js.isUndefined(keepInBounds)) __obj.updateDynamic("keepInBounds")(keepInBounds)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepInBounds)) __obj.updateDynamic("keepInBounds")(keepInBounds.asInstanceOf[js.Any])
     if (maxZoomIn != null) __obj.updateDynamic("maxZoomIn")(maxZoomIn.asInstanceOf[js.Any])
     if (maxZoomOut != null) __obj.updateDynamic("maxZoomOut")(maxZoomOut.asInstanceOf[js.Any])
     if (zoomDelta != null) __obj.updateDynamic("zoomDelta")(zoomDelta.asInstanceOf[js.Any])

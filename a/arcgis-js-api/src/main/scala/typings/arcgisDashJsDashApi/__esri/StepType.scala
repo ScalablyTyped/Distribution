@@ -93,7 +93,7 @@ object StepType {
     supportedPlatform: String,
     visible: Boolean
   ): StepType = {
-    val __obj = js.Dynamic.literal(arguments = arguments, constructor = constructor, description = description, executionType = executionType, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, program = program, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stepDescriptionLink = stepDescriptionLink, stepDescriptionType = stepDescriptionType, stepIndicatorType = stepIndicatorType, supportedPlatform = supportedPlatform, visible = visible)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], executionType = executionType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stepDescriptionLink = stepDescriptionLink.asInstanceOf[js.Any], stepDescriptionType = stepDescriptionType.asInstanceOf[js.Any], stepIndicatorType = stepIndicatorType.asInstanceOf[js.Any], supportedPlatform = supportedPlatform.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StepType]
   }

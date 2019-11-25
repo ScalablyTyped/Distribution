@@ -95,15 +95,15 @@ object Task {
     view: String = null
   ): Task = {
     val __obj = js.Dynamic.literal()
-    if (appEngineHttpRequest != null) __obj.updateDynamic("appEngineHttpRequest")(appEngineHttpRequest)
-    if (appEngineTaskTarget != null) __obj.updateDynamic("appEngineTaskTarget")(appEngineTaskTarget)
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pullMessage != null) __obj.updateDynamic("pullMessage")(pullMessage)
-    if (pullTaskTarget != null) __obj.updateDynamic("pullTaskTarget")(pullTaskTarget)
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
-    if (taskStatus != null) __obj.updateDynamic("taskStatus")(taskStatus)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (appEngineHttpRequest != null) __obj.updateDynamic("appEngineHttpRequest")(appEngineHttpRequest.asInstanceOf[js.Any])
+    if (appEngineTaskTarget != null) __obj.updateDynamic("appEngineTaskTarget")(appEngineTaskTarget.asInstanceOf[js.Any])
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pullMessage != null) __obj.updateDynamic("pullMessage")(pullMessage.asInstanceOf[js.Any])
+    if (pullTaskTarget != null) __obj.updateDynamic("pullTaskTarget")(pullTaskTarget.asInstanceOf[js.Any])
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
+    if (taskStatus != null) __obj.updateDynamic("taskStatus")(taskStatus.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
 }

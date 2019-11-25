@@ -21,9 +21,9 @@ object GradientRule {
     minpoint: InterpolationPoint = null
   ): GradientRule = {
     val __obj = js.Dynamic.literal()
-    if (maxpoint != null) __obj.updateDynamic("maxpoint")(maxpoint)
-    if (midpoint != null) __obj.updateDynamic("midpoint")(midpoint)
-    if (minpoint != null) __obj.updateDynamic("minpoint")(minpoint)
+    if (maxpoint != null) __obj.updateDynamic("maxpoint")(maxpoint.asInstanceOf[js.Any])
+    if (midpoint != null) __obj.updateDynamic("midpoint")(midpoint.asInstanceOf[js.Any])
+    if (minpoint != null) __obj.updateDynamic("minpoint")(minpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientRule]
   }
 }

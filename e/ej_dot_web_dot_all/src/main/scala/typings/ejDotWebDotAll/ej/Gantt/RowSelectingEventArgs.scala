@@ -48,15 +48,15 @@ object RowSelectingEventArgs {
     targetGridRow: js.Any = null
   ): RowSelectingEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (previousChartRow != null) __obj.updateDynamic("previousChartRow")(previousChartRow)
-    if (previousData != null) __obj.updateDynamic("previousData")(previousData)
-    if (previousGridRow != null) __obj.updateDynamic("previousGridRow")(previousGridRow)
-    if (previousIndex != null) __obj.updateDynamic("previousIndex")(previousIndex)
-    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex)
-    if (targetChartRow != null) __obj.updateDynamic("targetChartRow")(targetChartRow)
-    if (targetGridRow != null) __obj.updateDynamic("targetGridRow")(targetGridRow)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (previousChartRow != null) __obj.updateDynamic("previousChartRow")(previousChartRow.asInstanceOf[js.Any])
+    if (previousData != null) __obj.updateDynamic("previousData")(previousData.asInstanceOf[js.Any])
+    if (previousGridRow != null) __obj.updateDynamic("previousGridRow")(previousGridRow.asInstanceOf[js.Any])
+    if (previousIndex != null) __obj.updateDynamic("previousIndex")(previousIndex.asInstanceOf[js.Any])
+    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex.asInstanceOf[js.Any])
+    if (targetChartRow != null) __obj.updateDynamic("targetChartRow")(targetChartRow.asInstanceOf[js.Any])
+    if (targetGridRow != null) __obj.updateDynamic("targetGridRow")(targetGridRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSelectingEventArgs]
   }
 }

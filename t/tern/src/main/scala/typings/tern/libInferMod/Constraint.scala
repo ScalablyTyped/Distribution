@@ -14,12 +14,6 @@ trait Constraint extends ANull {
   def typeHint(): js.UndefOr[Type]
 }
 
-@JSImport("tern/lib/infer", "constraint")
-@js.native
-class constraint protected () extends Anon_Constraint {
-  def this(methods: StringDictionary[js.Any]) = this()
-}
-
 object Constraint {
   @scala.inline
   def apply(
@@ -43,6 +37,12 @@ object Constraint {
   
     __obj.asInstanceOf[Constraint]
   }
+}
+
+@JSImport("tern/lib/infer", "constraint")
+@js.native
+class constraint protected () extends Anon_Constraint {
+  def this(methods: StringDictionary[js.Any]) = this()
 }
 
 @JSImport("tern/lib/infer", "constraint")

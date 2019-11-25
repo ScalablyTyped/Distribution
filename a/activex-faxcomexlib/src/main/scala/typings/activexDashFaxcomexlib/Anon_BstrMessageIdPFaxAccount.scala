@@ -13,7 +13,7 @@ trait Anon_BstrMessageIdPFaxAccount extends js.Object {
 object Anon_BstrMessageIdPFaxAccount {
   @scala.inline
   def apply(bstrMessageId: String, pFaxAccount: FaxAccount): Anon_BstrMessageIdPFaxAccount = {
-    val __obj = js.Dynamic.literal(bstrMessageId = bstrMessageId, pFaxAccount = pFaxAccount)
+    val __obj = js.Dynamic.literal(bstrMessageId = bstrMessageId.asInstanceOf[js.Any], pFaxAccount = pFaxAccount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BstrMessageIdPFaxAccount]
   }

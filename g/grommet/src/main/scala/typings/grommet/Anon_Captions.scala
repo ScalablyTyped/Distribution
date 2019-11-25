@@ -20,10 +20,10 @@ object Anon_Captions {
     scrubber: Anon_ColorColorType = null
   ): Anon_Captions = {
     val __obj = js.Dynamic.literal()
-    if (captions != null) __obj.updateDynamic("captions")(captions)
-    if (controls != null) __obj.updateDynamic("controls")(controls)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (scrubber != null) __obj.updateDynamic("scrubber")(scrubber)
+    if (captions != null) __obj.updateDynamic("captions")(captions.asInstanceOf[js.Any])
+    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (scrubber != null) __obj.updateDynamic("scrubber")(scrubber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Captions]
   }
 }

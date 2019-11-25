@@ -27,9 +27,9 @@ object HeadersSortedEventUIParam {
     owner: js.Any = null
   ): HeadersSortedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (appliedLevelSortDirections != null) __obj.updateDynamic("appliedLevelSortDirections")(appliedLevelSortDirections)
-    if (levelSortDirections != null) __obj.updateDynamic("levelSortDirections")(levelSortDirections)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (appliedLevelSortDirections != null) __obj.updateDynamic("appliedLevelSortDirections")(appliedLevelSortDirections.asInstanceOf[js.Any])
+    if (levelSortDirections != null) __obj.updateDynamic("levelSortDirections")(levelSortDirections.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadersSortedEventUIParam]
   }
 }

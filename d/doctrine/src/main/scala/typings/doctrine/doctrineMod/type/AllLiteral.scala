@@ -13,7 +13,7 @@ object AllLiteral {
   @scala.inline
   def apply(`type`: typings.doctrine.doctrineStrings.AllLiteral): AllLiteral = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllLiteral]
   }
 }

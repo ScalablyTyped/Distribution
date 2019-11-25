@@ -13,7 +13,7 @@ trait Anon_ExcludeDeleted extends js.Object {
 object Anon_ExcludeDeleted {
   @scala.inline
   def apply(excludeDeleted: Double, includeDeleted: Double, onlyDeleted: Double): Anon_ExcludeDeleted = {
-    val __obj = js.Dynamic.literal(excludeDeleted = excludeDeleted, includeDeleted = includeDeleted, onlyDeleted = onlyDeleted)
+    val __obj = js.Dynamic.literal(excludeDeleted = excludeDeleted.asInstanceOf[js.Any], includeDeleted = includeDeleted.asInstanceOf[js.Any], onlyDeleted = onlyDeleted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExcludeDeleted]
   }

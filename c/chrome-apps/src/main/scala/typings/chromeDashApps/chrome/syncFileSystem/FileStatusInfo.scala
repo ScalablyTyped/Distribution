@@ -30,8 +30,8 @@ object FileStatusInfo {
     status: ToStringLiteral[Anon_CONFLICTING, String, Exclude[String, synced | pending | conflicting]],
     error: String = null
   ): FileStatusInfo = {
-    val __obj = js.Dynamic.literal(fileEntry = fileEntry, status = status.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(fileEntry = fileEntry.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileStatusInfo]
   }
 }

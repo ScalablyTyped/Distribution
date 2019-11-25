@@ -51,16 +51,16 @@ object Anon_Content {
     url: String = null
   ): Anon_Content = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (embed != null) __obj.updateDynamic("embed")(embed)
-    if (fullImage != null) __obj.updateDynamic("fullImage")(fullImage)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
-    if (previewThumbnails != null) __obj.updateDynamic("previewThumbnails")(previewThumbnails)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (embed != null) __obj.updateDynamic("embed")(embed.asInstanceOf[js.Any])
+    if (fullImage != null) __obj.updateDynamic("fullImage")(fullImage.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
+    if (previewThumbnails != null) __obj.updateDynamic("previewThumbnails")(previewThumbnails.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Content]
   }
 }

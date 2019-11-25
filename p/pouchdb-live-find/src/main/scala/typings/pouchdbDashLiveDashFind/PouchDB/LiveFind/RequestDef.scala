@@ -13,7 +13,7 @@ object RequestDef {
   @scala.inline
   def apply[Content /* <: js.Object */](aggregate: js.UndefOr[Boolean] = js.undefined): RequestDef[Content] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aggregate)) __obj.updateDynamic("aggregate")(aggregate)
+    if (!js.isUndefined(aggregate)) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDef[Content]]
   }
 }

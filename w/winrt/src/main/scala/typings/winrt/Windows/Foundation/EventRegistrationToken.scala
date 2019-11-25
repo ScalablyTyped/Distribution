@@ -11,7 +11,7 @@ trait EventRegistrationToken extends js.Object {
 object EventRegistrationToken {
   @scala.inline
   def apply(value: Double): EventRegistrationToken = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventRegistrationToken]
   }

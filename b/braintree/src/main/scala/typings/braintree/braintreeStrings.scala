@@ -135,7 +135,7 @@ object braintreeStrings {
   sealed trait android_pay_card extends PaymentInstrumentType
   
   @js.native
-  sealed trait api extends SubscriptionSource
+  sealed trait api_ extends SubscriptionSource
   
   @js.native
   sealed trait apple_pay_card extends PaymentInstrumentType
@@ -201,7 +201,7 @@ object braintreeStrings {
   sealed trait processor_declined extends TransactionStatus
   
   @js.native
-  sealed trait recurring extends SubscriptionSource
+  sealed trait recurring_ extends SubscriptionSource
   
   @js.native
   sealed trait refunded extends EscrowStatus
@@ -310,7 +310,7 @@ object braintreeStrings {
   @scala.inline
   def android_pay_card: android_pay_card = "android_pay_card".asInstanceOf[android_pay_card]
   @scala.inline
-  def api: api = "api".asInstanceOf[api]
+  def api_ : api_ = "api".asInstanceOf[api_]
   @scala.inline
   def apple_pay_card: apple_pay_card = "apple_pay_card".asInstanceOf[apple_pay_card]
   @scala.inline
@@ -354,7 +354,7 @@ object braintreeStrings {
   @scala.inline
   def processor_declined: processor_declined = "processor_declined".asInstanceOf[processor_declined]
   @scala.inline
-  def recurring: recurring = "recurring".asInstanceOf[recurring]
+  def recurring_ : recurring_ = "recurring".asInstanceOf[recurring_]
   @scala.inline
   def refunded: refunded = "refunded".asInstanceOf[refunded]
   @scala.inline

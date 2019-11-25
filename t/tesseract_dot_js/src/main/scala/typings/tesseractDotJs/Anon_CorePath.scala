@@ -13,7 +13,7 @@ trait Anon_CorePath extends js.Object {
 object Anon_CorePath {
   @scala.inline
   def apply(corePath: String, langPath: String, workerPath: String): Anon_CorePath = {
-    val __obj = js.Dynamic.literal(corePath = corePath, langPath = langPath, workerPath = workerPath)
+    val __obj = js.Dynamic.literal(corePath = corePath.asInstanceOf[js.Any], langPath = langPath.asInstanceOf[js.Any], workerPath = workerPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CorePath]
   }

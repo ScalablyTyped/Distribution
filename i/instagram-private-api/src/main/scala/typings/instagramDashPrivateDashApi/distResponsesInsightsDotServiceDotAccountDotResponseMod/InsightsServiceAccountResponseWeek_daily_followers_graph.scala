@@ -11,7 +11,7 @@ trait InsightsServiceAccountResponseWeek_daily_followers_graph extends js.Object
 object InsightsServiceAccountResponseWeek_daily_followers_graph {
   @scala.inline
   def apply(data_points: js.Array[InsightsServiceAccountResponseDataPointsItem]): InsightsServiceAccountResponseWeek_daily_followers_graph = {
-    val __obj = js.Dynamic.literal(data_points = data_points)
+    val __obj = js.Dynamic.literal(data_points = data_points.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseWeek_daily_followers_graph]
   }

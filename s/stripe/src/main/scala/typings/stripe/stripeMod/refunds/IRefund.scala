@@ -9,7 +9,7 @@ import typings.stripe.stripeStrings.failed
 import typings.stripe.stripeStrings.lost_or_stolen_card
 import typings.stripe.stripeStrings.pending
 import typings.stripe.stripeStrings.succeeded
-import typings.stripe.stripeStrings.unknown
+import typings.stripe.stripeStrings.unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ trait IRefund extends js.Object {
   /**
     * If the refund failed, the reason for refund failure if known.
     */
-  var failure_reason: js.UndefOr[lost_or_stolen_card | expired_or_canceled_card | unknown] = js.undefined
+  var failure_reason: js.UndefOr[lost_or_stolen_card | expired_or_canceled_card | unknown_] = js.undefined
   var id: String
   /**
     * A set of key/value pairs that you can attach to the object. It can be useful
@@ -87,16 +87,16 @@ object IRefund {
     receipt_number: String,
     status: pending | succeeded | failed | canceled,
     description: String = null,
-    failure_reason: lost_or_stolen_card | expired_or_canceled_card | unknown = null,
+    failure_reason: lost_or_stolen_card | expired_or_canceled_card | unknown_ = null,
     source_transfer_reversal: String = null,
     transfer_reversal: String = null
   ): IRefund = {
-    val __obj = js.Dynamic.literal(amount = amount, balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created, currency = currency, id = id, metadata = metadata, reason = reason, receipt_number = receipt_number, status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], receipt_number = receipt_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
-    if (source_transfer_reversal != null) __obj.updateDynamic("source_transfer_reversal")(source_transfer_reversal)
-    if (transfer_reversal != null) __obj.updateDynamic("transfer_reversal")(transfer_reversal)
+    if (source_transfer_reversal != null) __obj.updateDynamic("source_transfer_reversal")(source_transfer_reversal.asInstanceOf[js.Any])
+    if (transfer_reversal != null) __obj.updateDynamic("transfer_reversal")(transfer_reversal.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRefund]
   }
 }

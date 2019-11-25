@@ -14,7 +14,7 @@ object Anon_ContainerInstructionsInitiallyVisible {
   @scala.inline
   def apply(container: Element | String, instructionsInitiallyVisible: js.UndefOr[Boolean] = js.undefined): Anon_ContainerInstructionsInitiallyVisible = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-    if (!js.isUndefined(instructionsInitiallyVisible)) __obj.updateDynamic("instructionsInitiallyVisible")(instructionsInitiallyVisible)
+    if (!js.isUndefined(instructionsInitiallyVisible)) __obj.updateDynamic("instructionsInitiallyVisible")(instructionsInitiallyVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContainerInstructionsInitiallyVisible]
   }
 }

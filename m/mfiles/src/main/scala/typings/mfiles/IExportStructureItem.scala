@@ -20,7 +20,7 @@ object IExportStructureItem {
     StructureItemID: Double,
     StructureItemType: MFMetadataStructureItem
   ): IExportStructureItem = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), StructureItemGUID = StructureItemGUID, StructureItemID = StructureItemID, StructureItemType = StructureItemType)
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), StructureItemGUID = StructureItemGUID.asInstanceOf[js.Any], StructureItemID = StructureItemID.asInstanceOf[js.Any], StructureItemType = StructureItemType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IExportStructureItem]
   }

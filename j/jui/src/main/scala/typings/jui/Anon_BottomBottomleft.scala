@@ -71,15 +71,15 @@ object Anon_BottomBottomleft {
   ): Anon_BottomBottomleft = {
     val __obj = js.Dynamic.literal()
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (hideDuration != null) __obj.updateDynamic("hideDuration")(hideDuration.asInstanceOf[js.Any])
-    if (hideEasing != null) __obj.updateDynamic("hideEasing")(hideEasing)
+    if (hideEasing != null) __obj.updateDynamic("hideEasing")(hideEasing.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (showDuration != null) __obj.updateDynamic("showDuration")(showDuration.asInstanceOf[js.Any])
-    if (showEasing != null) __obj.updateDynamic("showEasing")(showEasing)
+    if (showEasing != null) __obj.updateDynamic("showEasing")(showEasing.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BottomBottomleft]
   }
 }

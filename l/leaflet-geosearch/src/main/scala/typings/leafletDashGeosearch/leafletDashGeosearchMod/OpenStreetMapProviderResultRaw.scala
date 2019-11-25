@@ -38,9 +38,9 @@ object OpenStreetMapProviderResultRaw {
     place_id: Double,
     `type`: String
   ): OpenStreetMapProviderResultRaw = {
-    val __obj = js.Dynamic.literal(boundingbox = boundingbox, display_name = display_name, icon = icon, importance = importance, lat = lat, licence = licence, lon = lon, osm_id = osm_id, osm_type = osm_type, place_id = place_id)
-    __obj.updateDynamic("class")(`class`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(boundingbox = boundingbox.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], importance = importance.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], licence = licence.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any], osm_id = osm_id.asInstanceOf[js.Any], osm_type = osm_type.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapProviderResultRaw]
   }
 }

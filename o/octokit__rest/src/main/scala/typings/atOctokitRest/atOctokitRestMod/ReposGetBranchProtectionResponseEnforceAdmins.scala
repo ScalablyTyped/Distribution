@@ -12,7 +12,7 @@ trait ReposGetBranchProtectionResponseEnforceAdmins extends js.Object {
 object ReposGetBranchProtectionResponseEnforceAdmins {
   @scala.inline
   def apply(enabled: Boolean, url: String): ReposGetBranchProtectionResponseEnforceAdmins = {
-    val __obj = js.Dynamic.literal(enabled = enabled, url = url)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetBranchProtectionResponseEnforceAdmins]
   }

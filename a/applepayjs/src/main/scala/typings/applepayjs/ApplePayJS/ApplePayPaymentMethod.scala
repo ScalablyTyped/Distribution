@@ -34,8 +34,8 @@ object ApplePayPaymentMethod {
     paymentPass: ApplePayPaymentPass,
     `type`: ApplePayPaymentMethodType
   ): ApplePayPaymentMethod = {
-    val __obj = js.Dynamic.literal(displayName = displayName, network = network, paymentPass = paymentPass)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], paymentPass = paymentPass.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentMethod]
   }
 }

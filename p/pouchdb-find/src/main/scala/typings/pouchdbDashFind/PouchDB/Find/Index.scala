@@ -18,10 +18,10 @@ trait Index extends js.Object {
 object Index {
   @scala.inline
   def apply(`def`: Anon_FieldName, name: String, `type`: String, ddoc: String = null): Index = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("def")(`def`)
-    __obj.updateDynamic("type")(`type`)
-    if (ddoc != null) __obj.updateDynamic("ddoc")(ddoc)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (ddoc != null) __obj.updateDynamic("ddoc")(ddoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
 }

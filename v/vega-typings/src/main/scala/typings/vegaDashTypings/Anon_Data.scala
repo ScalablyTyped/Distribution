@@ -23,7 +23,7 @@ object Anon_Data {
   ): Anon_Data = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(js.Any.fromFunction2(data))
-    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse)
+    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.asInstanceOf[js.Any])
     if (signals != null) __obj.updateDynamic("signals")(js.Any.fromFunction2(signals))
     __obj.asInstanceOf[Anon_Data]
   }

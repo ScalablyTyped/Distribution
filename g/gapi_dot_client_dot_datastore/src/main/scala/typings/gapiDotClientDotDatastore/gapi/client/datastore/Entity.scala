@@ -30,8 +30,8 @@ object Entity {
   @scala.inline
   def apply(key: Key = null, properties: Record[String, Value] = null): Entity = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity]
   }
 }

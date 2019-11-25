@@ -13,7 +13,7 @@ object Anon_ExtensionsOptional {
   @scala.inline
   def apply(extensions: Extensions = null): Anon_ExtensionsOptional = {
     val __obj = js.Dynamic.literal()
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtensionsOptional]
   }
 }

@@ -20,7 +20,7 @@ object Export {
     lastModified: Date,
     max: Int | Double = null
   ): Export[T, X] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items, lastModified = lastModified)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[Export[T, X]]
   }

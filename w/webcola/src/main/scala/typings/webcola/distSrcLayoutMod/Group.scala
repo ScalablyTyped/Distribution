@@ -20,10 +20,10 @@ object Group {
     groups: js.Array[Group] = null,
     leaves: js.Array[Node] = null
   ): Group = {
-    val __obj = js.Dynamic.literal(padding = padding)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (leaves != null) __obj.updateDynamic("leaves")(leaves)
+    val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (leaves != null) __obj.updateDynamic("leaves")(leaves.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
 }

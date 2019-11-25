@@ -13,7 +13,7 @@ trait Anon_W1W2 extends js.Object {
 object Anon_W1W2 {
   @scala.inline
   def apply(W1: Motor, W2: Motor): Anon_W1W2 = {
-    val __obj = js.Dynamic.literal(W1 = W1, W2 = W2)
+    val __obj = js.Dynamic.literal(W1 = W1.asInstanceOf[js.Any], W2 = W2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_W1W2]
   }

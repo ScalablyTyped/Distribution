@@ -13,7 +13,7 @@ trait Anon_DataUuid extends js.Object {
 object Anon_DataUuid {
   @scala.inline
   def apply(data: js.Array[integer], uuid: String): Anon_DataUuid = {
-    val __obj = js.Dynamic.literal(data = data, uuid = uuid)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataUuid]
   }

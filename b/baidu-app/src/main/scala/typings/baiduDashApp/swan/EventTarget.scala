@@ -14,7 +14,7 @@ trait EventTarget extends js.Object {
 object EventTarget {
   @scala.inline
   def apply(dataset: StringDictionary[String], id: String, tagName: String): EventTarget = {
-    val __obj = js.Dynamic.literal(dataset = dataset, id = id, tagName = tagName)
+    val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventTarget]
   }

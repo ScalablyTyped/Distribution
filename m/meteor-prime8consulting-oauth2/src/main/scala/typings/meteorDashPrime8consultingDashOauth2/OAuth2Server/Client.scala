@@ -14,7 +14,7 @@ trait Client extends js.Object {
 object Client {
   @scala.inline
   def apply(active: Boolean, clientId: String, clientSecret: String, redirectUri: String): Client = {
-    val __obj = js.Dynamic.literal(active = active, clientId = clientId, clientSecret = clientSecret, redirectUri = redirectUri)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Client]
   }

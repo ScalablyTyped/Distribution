@@ -18,7 +18,7 @@ object Anon_Debug {
   @scala.inline
   def apply(level: trace | debug | info | warn | error, timestamp: js.UndefOr[Boolean] = js.undefined): Anon_Debug = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp)
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Debug]
   }
 }

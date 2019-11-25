@@ -44,11 +44,11 @@ object ChangePlanRequest {
     seats: Seats = null
   ): ChangePlanRequest = {
     val __obj = js.Dynamic.literal()
-    if (dealCode != null) __obj.updateDynamic("dealCode")(dealCode)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (planName != null) __obj.updateDynamic("planName")(planName)
-    if (purchaseOrderId != null) __obj.updateDynamic("purchaseOrderId")(purchaseOrderId)
-    if (seats != null) __obj.updateDynamic("seats")(seats)
+    if (dealCode != null) __obj.updateDynamic("dealCode")(dealCode.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (planName != null) __obj.updateDynamic("planName")(planName.asInstanceOf[js.Any])
+    if (purchaseOrderId != null) __obj.updateDynamic("purchaseOrderId")(purchaseOrderId.asInstanceOf[js.Any])
+    if (seats != null) __obj.updateDynamic("seats")(seats.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangePlanRequest]
   }
 }

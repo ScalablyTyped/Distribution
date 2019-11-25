@@ -23,9 +23,9 @@ object DropDownOKClickedEventUIParam {
   @scala.inline
   def apply(columnKey: String = null, eventData: js.Any = null, owner: js.Any = null): DropDownOKClickedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (eventData != null) __obj.updateDynamic("eventData")(eventData)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (eventData != null) __obj.updateDynamic("eventData")(eventData.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownOKClickedEventUIParam]
   }
 }

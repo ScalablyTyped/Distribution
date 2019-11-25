@@ -18,8 +18,8 @@ object TreeViewCheckboxes {
     template: String | js.Function = null
   ): TreeViewCheckboxes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkChildren)) __obj.updateDynamic("checkChildren")(checkChildren)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(checkChildren)) __obj.updateDynamic("checkChildren")(checkChildren.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewCheckboxes]
   }

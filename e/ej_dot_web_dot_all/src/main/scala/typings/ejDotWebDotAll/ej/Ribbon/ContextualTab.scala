@@ -23,9 +23,9 @@ object ContextualTab {
   @scala.inline
   def apply(backgroundColor: String = null, borderColor: String = null, tabs: js.Array[_] = null): ContextualTab = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (tabs != null) __obj.updateDynamic("tabs")(tabs)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextualTab]
   }
 }

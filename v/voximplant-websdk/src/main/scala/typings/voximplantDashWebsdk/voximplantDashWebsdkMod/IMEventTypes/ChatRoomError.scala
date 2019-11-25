@@ -30,7 +30,7 @@ trait ChatRoomError extends VoxImplantIMEvent {
 object ChatRoomError {
   @scala.inline
   def apply(code: String, operation: String, room: String, text: String): ChatRoomError = {
-    val __obj = js.Dynamic.literal(code = code, operation = operation, room = room, text = text)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChatRoomError]
   }

@@ -21,8 +21,8 @@ object MultipointDrawActionVertexAddEvent {
     vertexIndex: Double,
     vertices: js.Array[js.Array[Double]]
   ): MultipointDrawActionVertexAddEvent = {
-    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented, preventDefault = preventDefault, vertexIndex = vertexIndex, vertices = vertices)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], vertexIndex = vertexIndex.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipointDrawActionVertexAddEvent]
   }
 }

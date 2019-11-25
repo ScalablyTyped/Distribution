@@ -44,7 +44,7 @@ object RequireMap {
     prefix: String,
     url: String
   ): RequireMap = {
-    val __obj = js.Dynamic.literal(fullName = fullName, name = name, originalName = originalName, parentMap = parentMap, prefix = prefix, url = url)
+    val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], originalName = originalName.asInstanceOf[js.Any], parentMap = parentMap.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequireMap]
   }

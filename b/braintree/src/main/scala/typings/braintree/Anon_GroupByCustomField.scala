@@ -12,8 +12,8 @@ trait Anon_GroupByCustomField extends js.Object {
 object Anon_GroupByCustomField {
   @scala.inline
   def apply(settlementDate: String, groupByCustomField: String = null): Anon_GroupByCustomField = {
-    val __obj = js.Dynamic.literal(settlementDate = settlementDate)
-    if (groupByCustomField != null) __obj.updateDynamic("groupByCustomField")(groupByCustomField)
+    val __obj = js.Dynamic.literal(settlementDate = settlementDate.asInstanceOf[js.Any])
+    if (groupByCustomField != null) __obj.updateDynamic("groupByCustomField")(groupByCustomField.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GroupByCustomField]
   }
 }

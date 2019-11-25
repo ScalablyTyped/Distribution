@@ -21,9 +21,9 @@ object Anon_CommentsLocTail {
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null
   ): Anon_CommentsLocTail = {
-    val __obj = js.Dynamic.literal(tail = tail, value = value)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(tail = tail.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocTail]
   }
 }

@@ -26,7 +26,7 @@ object Element {
     matches: String => Boolean,
     prepend: /* repeated */ Node | String => Unit
   ): Element = {
-    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), children = children, closest = js.Any.fromFunction1(closest), matches = js.Any.fromFunction1(matches), prepend = js.Any.fromFunction1(prepend))
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), children = children.asInstanceOf[js.Any], closest = js.Any.fromFunction1(closest), matches = js.Any.fromFunction1(matches), prepend = js.Any.fromFunction1(prepend))
   
     __obj.asInstanceOf[Element]
   }

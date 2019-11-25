@@ -51,14 +51,14 @@ object QuantitativeScaleSettingsLabelSettings {
     stroke: String = null
   ): QuantitativeScaleSettingsLabelSettings = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
-    if (labelPrefix != null) __obj.updateDynamic("labelPrefix")(labelPrefix)
-    if (labelSuffix != null) __obj.updateDynamic("labelSuffix")(labelSuffix)
+    if (labelPrefix != null) __obj.updateDynamic("labelPrefix")(labelPrefix.asInstanceOf[js.Any])
+    if (labelSuffix != null) __obj.updateDynamic("labelSuffix")(labelSuffix.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantitativeScaleSettingsLabelSettings]
   }
 }

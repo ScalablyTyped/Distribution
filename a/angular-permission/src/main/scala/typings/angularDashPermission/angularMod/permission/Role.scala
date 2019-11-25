@@ -20,7 +20,7 @@ object Role {
     validateRole: () => IPromise[_],
     validationFunction: (/* roleName */ js.UndefOr[String], /* transitionProperties */ js.UndefOr[TransitionProperties]) => Boolean | IPromise[js.Any] = null
   ): Role = {
-    val __obj = js.Dynamic.literal(permissionNames = permissionNames, roleName = roleName, validateRole = js.Any.fromFunction0(validateRole))
+    val __obj = js.Dynamic.literal(permissionNames = permissionNames.asInstanceOf[js.Any], roleName = roleName.asInstanceOf[js.Any], validateRole = js.Any.fromFunction0(validateRole))
     if (validationFunction != null) __obj.updateDynamic("validationFunction")(js.Any.fromFunction2(validationFunction))
     __obj.asInstanceOf[Role]
   }

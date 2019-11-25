@@ -36,10 +36,10 @@ object BannerInstruction {
     sub: Sub = null,
     `then`: js.Any = null
   ): BannerInstruction = {
-    val __obj = js.Dynamic.literal(distanceAlongGeometry = distanceAlongGeometry, primary = primary)
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary)
-    if (sub != null) __obj.updateDynamic("sub")(sub)
-    if (`then` != null) __obj.updateDynamic("then")(`then`)
+    val __obj = js.Dynamic.literal(distanceAlongGeometry = distanceAlongGeometry.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any])
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (sub != null) __obj.updateDynamic("sub")(sub.asInstanceOf[js.Any])
+    if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BannerInstruction]
   }
 }

@@ -30,3 +30,26 @@ import scala.scalajs.js.annotation._
 */
 trait Scope extends js.Object
 
+object Scope {
+  @scala.inline
+  def address: typings.weappDashApi.weappDashApiStrings.address = this.cast("address")
+  @scala.inline
+  def camera: typings.weappDashApi.weappDashApiStrings.camera = this.cast("camera")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def invoice: typings.weappDashApi.weappDashApiStrings.invoice = this.cast("invoice")
+  @scala.inline
+  def invoiceTitle: typings.weappDashApi.weappDashApiStrings.invoiceTitle = this.cast("invoiceTitle")
+  @scala.inline
+  def record: typings.weappDashApi.weappDashApiStrings.record = this.cast("record")
+  @scala.inline
+  def userInfo: typings.weappDashApi.weappDashApiStrings.userInfo = this.cast("userInfo")
+  @scala.inline
+  def userLocation: typings.weappDashApi.weappDashApiStrings.userLocation = this.cast("userLocation")
+  @scala.inline
+  def werun: typings.weappDashApi.weappDashApiStrings.werun = this.cast("werun")
+  @scala.inline
+  def writePhotosAlbum: typings.weappDashApi.weappDashApiStrings.writePhotosAlbum = this.cast("writePhotosAlbum")
+}
+

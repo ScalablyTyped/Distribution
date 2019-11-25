@@ -20,7 +20,7 @@ trait IssuesCreateCommentParamsDeprecatedNumber extends js.Object {
 object IssuesCreateCommentParamsDeprecatedNumber {
   @scala.inline
   def apply(body: String, number: Double, owner: String, repo: String): IssuesCreateCommentParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(body = body, number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssuesCreateCommentParamsDeprecatedNumber]
   }

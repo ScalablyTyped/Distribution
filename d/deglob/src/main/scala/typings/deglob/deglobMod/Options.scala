@@ -24,12 +24,12 @@ object Options {
     usePackageJson: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (configKey != null) __obj.updateDynamic("configKey")(configKey)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (gitIgnoreFile != null) __obj.updateDynamic("gitIgnoreFile")(gitIgnoreFile)
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (!js.isUndefined(useGitIgnore)) __obj.updateDynamic("useGitIgnore")(useGitIgnore)
-    if (!js.isUndefined(usePackageJson)) __obj.updateDynamic("usePackageJson")(usePackageJson)
+    if (configKey != null) __obj.updateDynamic("configKey")(configKey.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (gitIgnoreFile != null) __obj.updateDynamic("gitIgnoreFile")(gitIgnoreFile.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGitIgnore)) __obj.updateDynamic("useGitIgnore")(useGitIgnore.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePackageJson)) __obj.updateDynamic("usePackageJson")(usePackageJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

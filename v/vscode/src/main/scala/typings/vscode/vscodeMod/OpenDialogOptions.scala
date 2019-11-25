@@ -50,12 +50,12 @@ object OpenDialogOptions {
     openLabel: String = null
   ): OpenDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canSelectFiles)) __obj.updateDynamic("canSelectFiles")(canSelectFiles)
-    if (!js.isUndefined(canSelectFolders)) __obj.updateDynamic("canSelectFolders")(canSelectFolders)
-    if (!js.isUndefined(canSelectMany)) __obj.updateDynamic("canSelectMany")(canSelectMany)
-    if (defaultUri != null) __obj.updateDynamic("defaultUri")(defaultUri)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (openLabel != null) __obj.updateDynamic("openLabel")(openLabel)
+    if (!js.isUndefined(canSelectFiles)) __obj.updateDynamic("canSelectFiles")(canSelectFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSelectFolders)) __obj.updateDynamic("canSelectFolders")(canSelectFolders.asInstanceOf[js.Any])
+    if (!js.isUndefined(canSelectMany)) __obj.updateDynamic("canSelectMany")(canSelectMany.asInstanceOf[js.Any])
+    if (defaultUri != null) __obj.updateDynamic("defaultUri")(defaultUri.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (openLabel != null) __obj.updateDynamic("openLabel")(openLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDialogOptions]
   }
 }

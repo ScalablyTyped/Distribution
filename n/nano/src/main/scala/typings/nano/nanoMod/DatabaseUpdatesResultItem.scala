@@ -17,8 +17,8 @@ trait DatabaseUpdatesResultItem extends js.Object {
 object DatabaseUpdatesResultItem {
   @scala.inline
   def apply(db_name: String, seq: js.Any, `type`: String): DatabaseUpdatesResultItem = {
-    val __obj = js.Dynamic.literal(db_name = db_name, seq = seq)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(db_name = db_name.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseUpdatesResultItem]
   }
 }

@@ -16,9 +16,9 @@ object AccountstatusesListResponse {
   @scala.inline
   def apply(kind: String = null, nextPageToken: String = null, resources: js.Array[AccountStatus] = null): AccountstatusesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountstatusesListResponse]
   }
 }

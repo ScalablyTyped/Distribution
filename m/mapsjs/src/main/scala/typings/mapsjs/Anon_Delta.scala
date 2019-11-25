@@ -24,7 +24,7 @@ object Anon_Delta {
     upAction: /* upPoint */ point => Unit = null,
     wheelAction: /* delta */ Double => Unit = null
   ): Anon_Delta = {
-    val __obj = js.Dynamic.literal(dragEnabled = dragEnabled, useElementInsteadOfNewGestureOverlay = useElementInsteadOfNewGestureOverlay)
+    val __obj = js.Dynamic.literal(dragEnabled = dragEnabled.asInstanceOf[js.Any], useElementInsteadOfNewGestureOverlay = useElementInsteadOfNewGestureOverlay.asInstanceOf[js.Any])
     if (downAction != null) __obj.updateDynamic("downAction")(js.Any.fromFunction1(downAction))
     if (moveAction != null) __obj.updateDynamic("moveAction")(js.Any.fromFunction1(moveAction))
     if (upAction != null) __obj.updateDynamic("upAction")(js.Any.fromFunction1(upAction))

@@ -19,7 +19,7 @@ object IndicatorsLowerLine {
   @scala.inline
   def apply(fill: String = null, width: Int | Double = null): IndicatorsLowerLine = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicatorsLowerLine]
   }

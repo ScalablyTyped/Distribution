@@ -28,9 +28,9 @@ object Anon_BookmarkId {
     tabId: Int | Double = null
   ): Anon_BookmarkId = {
     val __obj = js.Dynamic.literal()
-    if (bookmarkId != null) __obj.updateDynamic("bookmarkId")(bookmarkId)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(showDefaults)) __obj.updateDynamic("showDefaults")(showDefaults)
+    if (bookmarkId != null) __obj.updateDynamic("bookmarkId")(bookmarkId.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDefaults)) __obj.updateDynamic("showDefaults")(showDefaults.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BookmarkId]
   }

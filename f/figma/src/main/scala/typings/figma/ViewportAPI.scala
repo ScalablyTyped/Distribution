@@ -13,7 +13,7 @@ trait ViewportAPI extends js.Object {
 object ViewportAPI {
   @scala.inline
   def apply(center: Anon_X, scrollAndZoomIntoView: js.Array[BaseNode] => Unit, zoom: Double): ViewportAPI = {
-    val __obj = js.Dynamic.literal(center = center, scrollAndZoomIntoView = js.Any.fromFunction1(scrollAndZoomIntoView), zoom = zoom)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], scrollAndZoomIntoView = js.Any.fromFunction1(scrollAndZoomIntoView), zoom = zoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViewportAPI]
   }

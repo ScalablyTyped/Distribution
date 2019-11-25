@@ -20,8 +20,8 @@ trait DeferrableAbstract extends js.Object {
 
 object DeferrableAbstract {
   @scala.inline
-  def apply(toSql: () => String, toString: () => String): DeferrableAbstract = {
-    val __obj = js.Dynamic.literal(toSql = js.Any.fromFunction0(toSql), toString = js.Any.fromFunction0(toString))
+  def apply(toSql: () => String): DeferrableAbstract = {
+    val __obj = js.Dynamic.literal(toSql = js.Any.fromFunction0(toSql))
   
     __obj.asInstanceOf[DeferrableAbstract]
   }

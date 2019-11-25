@@ -12,7 +12,7 @@ trait ReleaseDefinitionApprovals extends js.Object {
 object ReleaseDefinitionApprovals {
   @scala.inline
   def apply(approvalOptions: ApprovalOptions, approvals: js.Array[ReleaseDefinitionApprovalStep]): ReleaseDefinitionApprovals = {
-    val __obj = js.Dynamic.literal(approvalOptions = approvalOptions, approvals = approvals)
+    val __obj = js.Dynamic.literal(approvalOptions = approvalOptions.asInstanceOf[js.Any], approvals = approvals.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseDefinitionApprovals]
   }

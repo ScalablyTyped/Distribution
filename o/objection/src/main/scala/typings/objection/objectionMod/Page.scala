@@ -12,7 +12,7 @@ trait Page[QM] extends js.Object {
 object Page {
   @scala.inline
   def apply[QM](results: js.Array[QM], total: Double): Page[QM] = {
-    val __obj = js.Dynamic.literal(results = results, total = total)
+    val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Page[QM]]
   }

@@ -12,7 +12,7 @@ object LanguageSettings {
   @scala.inline
   def apply(buttons: js.Object = null): LanguageSettings = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageSettings]
   }
 }

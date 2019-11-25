@@ -23,3 +23,38 @@ import scala.scalajs.js.annotation._
 */
 trait Category extends js.Object
 
+object Category {
+  @scala.inline
+  def alarm: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.alarm = this.cast("alarm")
+  @scala.inline
+  def call: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.call = this.cast("call")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def email: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.email = this.cast("email")
+  @scala.inline
+  def err: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.err = this.cast("err")
+  @scala.inline
+  def event: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.event = this.cast("event")
+  @scala.inline
+  def msg: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.msg = this.cast("msg")
+  @scala.inline
+  def progress: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.progress = this.cast("progress")
+  @scala.inline
+  def promo: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.promo = this.cast("promo")
+  @scala.inline
+  def recommendation: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.recommendation = this.cast("recommendation")
+  @scala.inline
+  def reminder: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.reminder = this.cast("reminder")
+  @scala.inline
+  def service: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.service = this.cast("service")
+  @scala.inline
+  def social: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.social = this.cast("social")
+  @scala.inline
+  def status: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.status = this.cast("status")
+  @scala.inline
+  def system: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.system = this.cast("system")
+  @scala.inline
+  def transport: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.transport = this.cast("transport")
+}
+

@@ -30,11 +30,11 @@ object AdministrationRegion {
     sources: js.Array[Source] = null
   ): AdministrationRegion = {
     val __obj = js.Dynamic.literal()
-    if (electionAdministrationBody != null) __obj.updateDynamic("electionAdministrationBody")(electionAdministrationBody)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (local_jurisdiction != null) __obj.updateDynamic("local_jurisdiction")(local_jurisdiction)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (electionAdministrationBody != null) __obj.updateDynamic("electionAdministrationBody")(electionAdministrationBody.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (local_jurisdiction != null) __obj.updateDynamic("local_jurisdiction")(local_jurisdiction.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdministrationRegion]
   }
 }

@@ -12,7 +12,7 @@ trait Currencies extends js.Object {
 object Currencies {
   @scala.inline
   def apply(data: js.Array[Anon_IdMinsize]): Currencies = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Currencies]
   }

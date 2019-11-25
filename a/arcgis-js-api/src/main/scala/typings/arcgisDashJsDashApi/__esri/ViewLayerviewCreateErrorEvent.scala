@@ -12,7 +12,7 @@ trait ViewLayerviewCreateErrorEvent extends js.Object {
 object ViewLayerviewCreateErrorEvent {
   @scala.inline
   def apply(error: Error, layer: Layer): ViewLayerviewCreateErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error, layer = layer)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViewLayerviewCreateErrorEvent]
   }

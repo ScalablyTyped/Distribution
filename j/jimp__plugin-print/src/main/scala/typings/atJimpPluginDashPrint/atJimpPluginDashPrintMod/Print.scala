@@ -13,8 +13,8 @@ trait Print extends js.Object {
 object Print {
   @scala.inline
   def apply(`class`: PrintClass, constants: Anon_Cb): Print = {
-    val __obj = js.Dynamic.literal(constants = constants)
-    __obj.updateDynamic("class")(`class`)
+    val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Print]
   }
 }

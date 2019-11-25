@@ -14,9 +14,9 @@ object UnitInvoiceTaxLine {
   @scala.inline
   def apply(taxAmount: Price = null, taxName: String = null, taxType: String = null): UnitInvoiceTaxLine = {
     val __obj = js.Dynamic.literal()
-    if (taxAmount != null) __obj.updateDynamic("taxAmount")(taxAmount)
-    if (taxName != null) __obj.updateDynamic("taxName")(taxName)
-    if (taxType != null) __obj.updateDynamic("taxType")(taxType)
+    if (taxAmount != null) __obj.updateDynamic("taxAmount")(taxAmount.asInstanceOf[js.Any])
+    if (taxName != null) __obj.updateDynamic("taxName")(taxName.asInstanceOf[js.Any])
+    if (taxType != null) __obj.updateDynamic("taxType")(taxType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitInvoiceTaxLine]
   }
 }

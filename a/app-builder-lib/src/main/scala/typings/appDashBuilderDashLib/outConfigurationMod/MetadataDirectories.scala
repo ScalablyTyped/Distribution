@@ -27,9 +27,9 @@ object MetadataDirectories {
   @scala.inline
   def apply(app: String = null, buildResources: String = null, output: String = null): MetadataDirectories = {
     val __obj = js.Dynamic.literal()
-    if (app != null) __obj.updateDynamic("app")(app)
-    if (buildResources != null) __obj.updateDynamic("buildResources")(buildResources)
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
+    if (buildResources != null) __obj.updateDynamic("buildResources")(buildResources.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataDirectories]
   }
 }

@@ -12,7 +12,7 @@ object Anon_BsClass {
   @scala.inline
   def apply(bsClass: js.Any = null): Anon_BsClass = {
     val __obj = js.Dynamic.literal()
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BsClass]
   }
 }

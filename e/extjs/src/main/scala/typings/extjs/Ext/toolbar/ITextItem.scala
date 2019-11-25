@@ -17,17 +17,13 @@ object ITextItem {
   @scala.inline
   def apply(
     IItem: IItem = null,
-    baseCls: java.lang.String = null,
-    renderTpl: js.Any = null,
     setText: /* text */ js.UndefOr[java.lang.String] => Unit = null,
     text: java.lang.String = null
   ): ITextItem = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IItem)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (IItem != null) js.Dynamic.global.Object.assign(__obj, IItem)
     if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction1(setText))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextItem]
   }
 }

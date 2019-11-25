@@ -30,12 +30,12 @@ object Anon_FamilyNameFormatted {
     middleName: String = null
   ): Anon_FamilyNameFormatted = {
     val __obj = js.Dynamic.literal()
-    if (familyName != null) __obj.updateDynamic("familyName")(familyName)
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
-    if (givenName != null) __obj.updateDynamic("givenName")(givenName)
-    if (honorificPrefix != null) __obj.updateDynamic("honorificPrefix")(honorificPrefix)
-    if (honorificSuffix != null) __obj.updateDynamic("honorificSuffix")(honorificSuffix)
-    if (middleName != null) __obj.updateDynamic("middleName")(middleName)
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
+    if (honorificPrefix != null) __obj.updateDynamic("honorificPrefix")(honorificPrefix.asInstanceOf[js.Any])
+    if (honorificSuffix != null) __obj.updateDynamic("honorificSuffix")(honorificSuffix.asInstanceOf[js.Any])
+    if (middleName != null) __obj.updateDynamic("middleName")(middleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FamilyNameFormatted]
   }
 }

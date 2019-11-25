@@ -14,7 +14,7 @@ trait Anon_CountDot extends js.Object {
 object Anon_CountDot {
   @scala.inline
   def apply(count: Null, dot: Boolean, overflowCount: Double, showZero: Boolean): Anon_CountDot = {
-    val __obj = js.Dynamic.literal(count = count, dot = dot, overflowCount = overflowCount, showZero = showZero)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], overflowCount = overflowCount.asInstanceOf[js.Any], showZero = showZero.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CountDot]
   }

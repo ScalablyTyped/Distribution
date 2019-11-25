@@ -38,10 +38,10 @@ object MapiError {
     message: String = null,
     statusCode: Int | Double = null
   ): MapiError = {
-    val __obj = js.Dynamic.literal(request = request)
-    __obj.updateDynamic("type")(`type`)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapiError]
   }

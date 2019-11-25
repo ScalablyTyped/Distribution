@@ -93,12 +93,12 @@ trait CheckType extends js.Object {
   def map[T /* <: StringDictionary[js.Any] */](
     arr: T,
     predicates: Partial[
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: (args : ...any): boolean}
     */ typings.checkDashTypes.checkDashTypesStrings.CheckType with js.Any
     ]
   ): Partial[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: any}
     */ typings.checkDashTypes.checkDashTypesStrings.CheckType with js.Any
   ] = js.native

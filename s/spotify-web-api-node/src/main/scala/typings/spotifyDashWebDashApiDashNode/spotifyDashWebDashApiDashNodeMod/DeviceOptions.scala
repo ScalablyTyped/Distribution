@@ -12,7 +12,7 @@ object DeviceOptions {
   @scala.inline
   def apply(device_id: String = null): DeviceOptions = {
     val __obj = js.Dynamic.literal()
-    if (device_id != null) __obj.updateDynamic("device_id")(device_id)
+    if (device_id != null) __obj.updateDynamic("device_id")(device_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceOptions]
   }
 }

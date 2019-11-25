@@ -24,9 +24,9 @@ object Windows10NetworkProxyServer {
     useForLocalAddresses: js.UndefOr[Boolean] = js.undefined
   ): Windows10NetworkProxyServer = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions)
-    if (!js.isUndefined(useForLocalAddresses)) __obj.updateDynamic("useForLocalAddresses")(useForLocalAddresses)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(useForLocalAddresses)) __obj.updateDynamic("useForLocalAddresses")(useForLocalAddresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Windows10NetworkProxyServer]
   }
 }

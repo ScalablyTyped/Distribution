@@ -14,7 +14,7 @@ trait _ChangeMessageVisibilityBatchResultEntry extends js.Object {
 object _ChangeMessageVisibilityBatchResultEntry {
   @scala.inline
   def apply(Id: String): _ChangeMessageVisibilityBatchResultEntry = {
-    val __obj = js.Dynamic.literal(Id = Id)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_ChangeMessageVisibilityBatchResultEntry]
   }

@@ -14,7 +14,7 @@ trait Response[Content /* <: js.Object */] extends js.Object {
 object Response {
   @scala.inline
   def apply[Content /* <: js.Object */](offset: Double, rows: js.Array[Anon_Doc[Content]], total_rows: Double): Response[Content] = {
-    val __obj = js.Dynamic.literal(offset = offset, rows = rows, total_rows = total_rows)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], total_rows = total_rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Response[Content]]
   }

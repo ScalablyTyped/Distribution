@@ -15,9 +15,9 @@ trait PushSignal
 object PushSignal {
   @scala.inline
   def apply(name: String, push: outer, description: String = null, on: js.Array[OnEvent] = null): PushSignal = {
-    val __obj = js.Dynamic.literal(name = name, push = push)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (on != null) __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushSignal]
   }
 }

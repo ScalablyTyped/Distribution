@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ObjectType extends js.Object
 
+object ObjectType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def channel: typings.iobroker.iobrokerStrings.channel = this.cast("channel")
+  @scala.inline
+  def device: typings.iobroker.iobrokerStrings.device = this.cast("device")
+  @scala.inline
+  def state: typings.iobroker.iobrokerStrings.state = this.cast("state")
+}
+

@@ -12,7 +12,7 @@ trait InsightsServicePostResponseReach extends js.Object {
 object InsightsServicePostResponseReach {
   @scala.inline
   def apply(follow_status: InsightsServicePostResponseFollow_status, value: Double): InsightsServicePostResponseReach = {
-    val __obj = js.Dynamic.literal(follow_status = follow_status, value = value)
+    val __obj = js.Dynamic.literal(follow_status = follow_status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServicePostResponseReach]
   }

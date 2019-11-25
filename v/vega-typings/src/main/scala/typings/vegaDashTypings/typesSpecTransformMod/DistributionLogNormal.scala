@@ -15,7 +15,7 @@ trait DistributionLogNormal extends Distribution {
 object DistributionLogNormal {
   @scala.inline
   def apply(function: lognormal, mean: Double | SignalRef = null, stdev: Double | SignalRef = null): DistributionLogNormal = {
-    val __obj = js.Dynamic.literal(function = function)
+    val __obj = js.Dynamic.literal(function = function.asInstanceOf[js.Any])
     if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
     if (stdev != null) __obj.updateDynamic("stdev")(stdev.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionLogNormal]

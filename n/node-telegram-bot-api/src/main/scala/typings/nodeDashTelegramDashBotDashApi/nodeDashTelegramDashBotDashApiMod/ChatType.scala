@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ChatType extends js.Object
 
+object ChatType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def channel: typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.channel = this.cast("channel")
+  @scala.inline
+  def group: typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.group = this.cast("group")
+  @scala.inline
+  def `private`: typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.`private` = this.cast("private")
+  @scala.inline
+  def supergroup: typings.nodeDashTelegramDashBotDashApi.nodeDashTelegramDashBotDashApiStrings.supergroup = this.cast("supergroup")
+}
+

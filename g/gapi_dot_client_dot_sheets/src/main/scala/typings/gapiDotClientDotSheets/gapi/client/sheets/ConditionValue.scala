@@ -30,8 +30,8 @@ object ConditionValue {
   @scala.inline
   def apply(relativeDate: String = null, userEnteredValue: String = null): ConditionValue = {
     val __obj = js.Dynamic.literal()
-    if (relativeDate != null) __obj.updateDynamic("relativeDate")(relativeDate)
-    if (userEnteredValue != null) __obj.updateDynamic("userEnteredValue")(userEnteredValue)
+    if (relativeDate != null) __obj.updateDynamic("relativeDate")(relativeDate.asInstanceOf[js.Any])
+    if (userEnteredValue != null) __obj.updateDynamic("userEnteredValue")(userEnteredValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionValue]
   }
 }

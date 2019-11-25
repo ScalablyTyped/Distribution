@@ -1037,16 +1037,16 @@ object actionsDashOnDashGoogleStrings {
   sealed trait custom_payload extends js.Object
   
   @js.native
-  sealed trait facebook extends js.Object
+  sealed trait facebook_ extends js.Object
   
   @js.native
   sealed trait google extends js.Object
   
   @js.native
-  sealed trait kik extends js.Object
+  sealed trait kik_ extends js.Object
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait line_ extends js.Object
   
   @js.native
   sealed trait link_out_chip extends js.Object
@@ -1064,10 +1064,10 @@ object actionsDashOnDashGoogleStrings {
   sealed trait simple_response extends js.Object
   
   @js.native
-  sealed trait skype extends js.Object
+  sealed trait skype_ extends js.Object
   
   @js.native
-  sealed trait slack extends js.Object
+  sealed trait slack_ extends js.Object
   
   @js.native
   sealed trait string extends js.Object
@@ -1076,7 +1076,7 @@ object actionsDashOnDashGoogleStrings {
   sealed trait suggestion_chips extends js.Object
   
   @js.native
-  sealed trait telegram extends js.Object
+  sealed trait telegram_ extends js.Object
   
   @js.native
   sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTCompletePurchaseValueSpec` extends InputValueSpec
@@ -1133,7 +1133,7 @@ object actionsDashOnDashGoogleStrings {
   sealed trait `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionRequirementsCheckSpec` extends InputValueSpec
   
   @js.native
-  sealed trait viber extends js.Object
+  sealed trait viber_ extends js.Object
   
   @scala.inline
   def ACCEPTED: ACCEPTED = "ACCEPTED".asInstanceOf[ACCEPTED]
@@ -1650,13 +1650,13 @@ object actionsDashOnDashGoogleStrings {
   @scala.inline
   def custom_payload: custom_payload = "custom_payload".asInstanceOf[custom_payload]
   @scala.inline
-  def facebook: facebook = "facebook".asInstanceOf[facebook]
+  def facebook_ : facebook_ = "facebook".asInstanceOf[facebook_]
   @scala.inline
   def google: google = "google".asInstanceOf[google]
   @scala.inline
-  def kik: kik = "kik".asInstanceOf[kik]
+  def kik_ : kik_ = "kik".asInstanceOf[kik_]
   @scala.inline
-  def line: line = "line".asInstanceOf[line]
+  def line_ : line_ = "line".asInstanceOf[line_]
   @scala.inline
   def link_out_chip: link_out_chip = "link_out_chip".asInstanceOf[link_out_chip]
   @scala.inline
@@ -1668,15 +1668,15 @@ object actionsDashOnDashGoogleStrings {
   @scala.inline
   def simple_response: simple_response = "simple_response".asInstanceOf[simple_response]
   @scala.inline
-  def skype: skype = "skype".asInstanceOf[skype]
+  def skype_ : skype_ = "skype".asInstanceOf[skype_]
   @scala.inline
-  def slack: slack = "slack".asInstanceOf[slack]
+  def slack_ : slack_ = "slack".asInstanceOf[slack_]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
   def suggestion_chips: suggestion_chips = "suggestion_chips".asInstanceOf[suggestion_chips]
   @scala.inline
-  def telegram: telegram = "telegram".asInstanceOf[telegram]
+  def telegram_ : telegram_ = "telegram".asInstanceOf[telegram_]
   @scala.inline
   def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTCompletePurchaseValueSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTCompletePurchaseValueSpec` = "type.googleapis.com/google.actions.transactions.v3.CompletePurchaseValueSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTtransactionsDOTv3DOTCompletePurchaseValueSpec`]
   @scala.inline
@@ -1714,6 +1714,6 @@ object actionsDashOnDashGoogleStrings {
   @scala.inline
   def `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionRequirementsCheckSpec`: `typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionRequirementsCheckSpec` = "type.googleapis.com/google.actions.v2.TransactionRequirementsCheckSpec".asInstanceOf[`typeDOTgoogleapisDOTcom/googleDOTactionsDOTv2DOTTransactionRequirementsCheckSpec`]
   @scala.inline
-  def viber: viber = "viber".asInstanceOf[viber]
+  def viber_ : viber_ = "viber".asInstanceOf[viber_]
 }
 

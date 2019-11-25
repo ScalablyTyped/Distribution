@@ -25,12 +25,12 @@ object ToolbarOptions {
     position: String = null
   ): ToolbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteLayer)) __obj.updateDynamic("deleteLayer")(deleteLayer)
-    if (!js.isUndefined(drawMarker)) __obj.updateDynamic("drawMarker")(drawMarker)
-    if (!js.isUndefined(drawPolygon)) __obj.updateDynamic("drawPolygon")(drawPolygon)
-    if (!js.isUndefined(drawPolyline)) __obj.updateDynamic("drawPolyline")(drawPolyline)
-    if (!js.isUndefined(editPolygon)) __obj.updateDynamic("editPolygon")(editPolygon)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(deleteLayer)) __obj.updateDynamic("deleteLayer")(deleteLayer.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawMarker)) __obj.updateDynamic("drawMarker")(drawMarker.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawPolygon)) __obj.updateDynamic("drawPolygon")(drawPolygon.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawPolyline)) __obj.updateDynamic("drawPolyline")(drawPolyline.asInstanceOf[js.Any])
+    if (!js.isUndefined(editPolygon)) __obj.updateDynamic("editPolygon")(editPolygon.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarOptions]
   }
 }

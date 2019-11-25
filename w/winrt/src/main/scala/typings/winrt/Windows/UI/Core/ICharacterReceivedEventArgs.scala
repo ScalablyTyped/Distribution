@@ -12,7 +12,7 @@ trait ICharacterReceivedEventArgs extends ICoreWindowEventArgs {
 object ICharacterReceivedEventArgs {
   @scala.inline
   def apply(handled: Boolean, keyCode: Double, keyStatus: CorePhysicalKeyStatus): ICharacterReceivedEventArgs = {
-    val __obj = js.Dynamic.literal(handled = handled, keyCode = keyCode, keyStatus = keyStatus)
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], keyStatus = keyStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICharacterReceivedEventArgs]
   }

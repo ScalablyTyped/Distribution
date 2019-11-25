@@ -26,13 +26,11 @@ object ITemplateColumn {
   @scala.inline
   def apply(
     IColumn: typings.extjs.Ext.grid.column.IColumn = null,
-    defaultRenderer: (/* value */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any]) => Unit = null,
-    tpl: js.Any = null
+    defaultRenderer: (/* value */ js.UndefOr[js.Any], /* meta */ js.UndefOr[js.Any], /* record */ js.UndefOr[js.Any]) => Unit = null
   ): ITemplateColumn = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IColumn)
+    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
     if (defaultRenderer != null) __obj.updateDynamic("defaultRenderer")(js.Any.fromFunction3(defaultRenderer))
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
     __obj.asInstanceOf[ITemplateColumn]
   }
 }

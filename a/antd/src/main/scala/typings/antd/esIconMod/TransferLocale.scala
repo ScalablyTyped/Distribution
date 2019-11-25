@@ -11,7 +11,7 @@ trait TransferLocale extends js.Object {
 object TransferLocale {
   @scala.inline
   def apply(icon: String): TransferLocale = {
-    val __obj = js.Dynamic.literal(icon = icon)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransferLocale]
   }

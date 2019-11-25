@@ -11,7 +11,7 @@ trait TypeofSchema extends js.Object {
 object TypeofSchema {
   @scala.inline
   def apply(Types: js.Any): TypeofSchema = {
-    val __obj = js.Dynamic.literal(Types = Types)
+    val __obj = js.Dynamic.literal(Types = Types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofSchema]
   }

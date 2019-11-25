@@ -28,12 +28,12 @@ object DateInputOptions {
   ): DateInputOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateInputOptions]
   }
 }

@@ -16,9 +16,9 @@ object PsbtGlobal {
     globalXpub: js.Array[GlobalXpub] = null,
     unknownKeyVals: js.Array[KeyValue] = null
   ): PsbtGlobal = {
-    val __obj = js.Dynamic.literal(unsignedTx = unsignedTx)
-    if (globalXpub != null) __obj.updateDynamic("globalXpub")(globalXpub)
-    if (unknownKeyVals != null) __obj.updateDynamic("unknownKeyVals")(unknownKeyVals)
+    val __obj = js.Dynamic.literal(unsignedTx = unsignedTx.asInstanceOf[js.Any])
+    if (globalXpub != null) __obj.updateDynamic("globalXpub")(globalXpub.asInstanceOf[js.Any])
+    if (unknownKeyVals != null) __obj.updateDynamic("unknownKeyVals")(unknownKeyVals.asInstanceOf[js.Any])
     __obj.asInstanceOf[PsbtGlobal]
   }
 }

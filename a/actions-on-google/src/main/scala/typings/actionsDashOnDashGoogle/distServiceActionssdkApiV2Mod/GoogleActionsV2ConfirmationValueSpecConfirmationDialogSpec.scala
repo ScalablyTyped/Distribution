@@ -16,7 +16,7 @@ object GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec {
   @scala.inline
   def apply(requestConfirmationText: String = null): GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec = {
     val __obj = js.Dynamic.literal()
-    if (requestConfirmationText != null) __obj.updateDynamic("requestConfirmationText")(requestConfirmationText)
+    if (requestConfirmationText != null) __obj.updateDynamic("requestConfirmationText")(requestConfirmationText.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec]
   }
 }

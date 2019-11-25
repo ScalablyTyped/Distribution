@@ -37,21 +37,21 @@ object FetchRequestProps {
     signal: AbortSignal = null,
     window: js.Any = null
   ): FetchRequestProps = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity)
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive)
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
-    if (window != null) __obj.updateDynamic("window")(window)
+    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchRequestProps]
   }
 }

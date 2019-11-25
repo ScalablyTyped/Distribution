@@ -24,7 +24,7 @@ object ClientExtension {
     selections: js.Array[Selection],
     metadata: Metadata = null
   ): ClientExtension = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, selections = selections)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientExtension]
   }

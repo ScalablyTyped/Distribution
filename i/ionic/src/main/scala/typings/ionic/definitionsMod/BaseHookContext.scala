@@ -15,7 +15,7 @@ trait BaseHookContext extends js.Object {
 object BaseHookContext {
   @scala.inline
   def apply(argv: js.Array[String], env: ProcessEnv, project: Anon_Dir): BaseHookContext = {
-    val __obj = js.Dynamic.literal(argv = argv, env = env, project = project)
+    val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseHookContext]
   }

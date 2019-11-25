@@ -1,12 +1,12 @@
 package typings.three.threeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.three.srcConstantsMod.StencilOp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("three", "KeepStencilOp")
 @js.native
-object KeepStencilOp extends TopLevel[StencilOp]
+object KeepStencilOp
+  extends TopLevel[typings.three.srcConstantsMod.StencilOp]
 

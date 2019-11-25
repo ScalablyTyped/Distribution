@@ -17,7 +17,7 @@ object IProtocolActivatedEventArgs {
     splashScreen: SplashScreen,
     uri: Uri
   ): IProtocolActivatedEventArgs = {
-    val __obj = js.Dynamic.literal(kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen, uri = uri)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProtocolActivatedEventArgs]
   }

@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.avg
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.max
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.same
 import typings.atTensorflowTfjs.atTensorflowTfjsStrings.valid
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
@@ -17,20 +16,20 @@ object pool extends js.Object {
   def apply[T /* <: Tensor3D | Tensor4D */](
     input: T | TensorLike,
     windowShape: (js.Tuple2[Double, Double]) | Double,
-    poolingType: avg | max,
+    poolingType: avg | typings.atTensorflowTfjs.atTensorflowTfjsStrings.max,
     pad: valid | same | Double
   ): T = js.native
   def apply[T /* <: Tensor3D | Tensor4D */](
     input: T | TensorLike,
     windowShape: (js.Tuple2[Double, Double]) | Double,
-    poolingType: avg | max,
+    poolingType: avg | typings.atTensorflowTfjs.atTensorflowTfjsStrings.max,
     pad: valid | same | Double,
     dilations: (js.Tuple2[Double, Double]) | Double
   ): T = js.native
   def apply[T /* <: Tensor3D | Tensor4D */](
     input: T | TensorLike,
     windowShape: (js.Tuple2[Double, Double]) | Double,
-    poolingType: avg | max,
+    poolingType: avg | typings.atTensorflowTfjs.atTensorflowTfjsStrings.max,
     pad: valid | same | Double,
     dilations: (js.Tuple2[Double, Double]) | Double,
     strides: (js.Tuple2[Double, Double]) | Double

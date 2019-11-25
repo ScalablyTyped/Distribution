@@ -14,7 +14,7 @@ trait Anon_IsExact extends js.Object {
 object Anon_IsExact {
   @scala.inline
   def apply(isExact: Boolean, params: js.Any, path: String, url: String): Anon_IsExact = {
-    val __obj = js.Dynamic.literal(isExact = isExact, params = params, path = path, url = url)
+    val __obj = js.Dynamic.literal(isExact = isExact.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsExact]
   }

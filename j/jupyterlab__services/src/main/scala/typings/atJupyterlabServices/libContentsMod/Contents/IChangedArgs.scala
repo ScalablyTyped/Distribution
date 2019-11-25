@@ -36,8 +36,8 @@ object IChangedArgs {
   ): IChangedArgs = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangedArgs]
   }
 }

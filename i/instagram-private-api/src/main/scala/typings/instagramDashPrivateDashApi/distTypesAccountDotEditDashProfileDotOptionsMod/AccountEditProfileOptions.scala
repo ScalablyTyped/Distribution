@@ -25,7 +25,7 @@ object AccountEditProfileOptions {
     phone_number: String,
     username: String
   ): AccountEditProfileOptions = {
-    val __obj = js.Dynamic.literal(biography = biography, email = email, external_url = external_url, first_name = first_name, gender = gender, phone_number = phone_number, username = username)
+    val __obj = js.Dynamic.literal(biography = biography.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], external_url = external_url.asInstanceOf[js.Any], first_name = first_name.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountEditProfileOptions]
   }

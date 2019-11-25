@@ -28,8 +28,8 @@ object TransitionConfig {
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (cond != null) __obj.updateDynamic("cond")(cond.asInstanceOf[js.Any])
     if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionConfig[TContext, TEvent]]
   }

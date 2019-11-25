@@ -20,10 +20,10 @@ object RedirectOptions {
     scope: String = null
   ): RedirectOptions = {
     val __obj = js.Dynamic.literal()
-    if (redirectFile != null) __obj.updateDynamic("redirectFile")(redirectFile)
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
-    if (!js.isUndefined(rememberUser)) __obj.updateDynamic("rememberUser")(rememberUser)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (redirectFile != null) __obj.updateDynamic("redirectFile")(redirectFile.asInstanceOf[js.Any])
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(rememberUser)) __obj.updateDynamic("rememberUser")(rememberUser.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectOptions]
   }
 }

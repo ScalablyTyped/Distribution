@@ -25,11 +25,11 @@ object ImageMapTypeOptions {
     name: String = null,
     opacity: Int | Double = null
   ): ImageMapTypeOptions = {
-    val __obj = js.Dynamic.literal(getTileUrl = js.Any.fromFunction2(getTileUrl), tileSize = tileSize)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
+    val __obj = js.Dynamic.literal(getTileUrl = js.Any.fromFunction2(getTileUrl), tileSize = tileSize.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageMapTypeOptions]
   }

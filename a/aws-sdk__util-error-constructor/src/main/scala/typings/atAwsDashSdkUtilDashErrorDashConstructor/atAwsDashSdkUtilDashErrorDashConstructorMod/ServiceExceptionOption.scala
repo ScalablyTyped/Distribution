@@ -27,11 +27,11 @@ object ServiceExceptionOption {
     operationName: String = null,
     rawException: js.Any = null
   ): ServiceExceptionOption = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
-    if (rawException != null) __obj.updateDynamic("rawException")(rawException)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
+    if (rawException != null) __obj.updateDynamic("rawException")(rawException.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceExceptionOption]
   }
 }

@@ -59,19 +59,19 @@ object Anon_AltCpksverFeatures {
     userIp: String = null,
     volumeIds: String = null
   ): Anon_AltCpksverFeatures = {
-    val __obj = js.Dynamic.literal(cpksver = cpksver, nonce = nonce, source = source)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(includeNonComicsSeries)) __obj.updateDynamic("includeNonComicsSeries")(includeNonComicsSeries)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (!js.isUndefined(showPreorders)) __obj.updateDynamic("showPreorders")(showPreorders)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
-    if (volumeIds != null) __obj.updateDynamic("volumeIds")(volumeIds)
+    val __obj = js.Dynamic.literal(cpksver = cpksver.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNonComicsSeries)) __obj.updateDynamic("includeNonComicsSeries")(includeNonComicsSeries.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPreorders)) __obj.updateDynamic("showPreorders")(showPreorders.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
+    if (volumeIds != null) __obj.updateDynamic("volumeIds")(volumeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltCpksverFeatures]
   }
 }

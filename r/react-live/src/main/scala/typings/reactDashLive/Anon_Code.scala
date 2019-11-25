@@ -29,12 +29,12 @@ object Anon_Code {
     transformCode: /* code */ String => String = null
   ): Anon_Code = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (!js.isUndefined(noInline)) __obj.updateDynamic("noInline")(noInline)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (!js.isUndefined(noInline)) __obj.updateDynamic("noInline")(noInline.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (transformCode != null) __obj.updateDynamic("transformCode")(js.Any.fromFunction1(transformCode))
     __obj.asInstanceOf[Anon_Code]
   }

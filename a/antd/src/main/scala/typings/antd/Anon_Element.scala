@@ -47,12 +47,12 @@ object Anon_Element {
     removeOnLeave: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined
   ): Anon_Element = {
-    val __obj = js.Dynamic.literal(motionAppear = motionAppear)
-    if (leavedClassName != null) __obj.updateDynamic("leavedClassName")(leavedClassName)
-    if (!js.isUndefined(motionEnter)) __obj.updateDynamic("motionEnter")(motionEnter)
-    if (!js.isUndefined(motionLeave)) __obj.updateDynamic("motionLeave")(motionLeave)
-    if (!js.isUndefined(motionLeaveImmediately)) __obj.updateDynamic("motionLeaveImmediately")(motionLeaveImmediately)
-    if (motionName != null) __obj.updateDynamic("motionName")(motionName)
+    val __obj = js.Dynamic.literal(motionAppear = motionAppear.asInstanceOf[js.Any])
+    if (leavedClassName != null) __obj.updateDynamic("leavedClassName")(leavedClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionEnter)) __obj.updateDynamic("motionEnter")(motionEnter.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionLeave)) __obj.updateDynamic("motionLeave")(motionLeave.asInstanceOf[js.Any])
+    if (!js.isUndefined(motionLeaveImmediately)) __obj.updateDynamic("motionLeaveImmediately")(motionLeaveImmediately.asInstanceOf[js.Any])
+    if (motionName != null) __obj.updateDynamic("motionName")(motionName.asInstanceOf[js.Any])
     if (onAppearActive != null) __obj.updateDynamic("onAppearActive")(js.Any.fromFunction1(onAppearActive))
     if (onAppearEnd != null) __obj.updateDynamic("onAppearEnd")(js.Any.fromFunction1(onAppearEnd))
     if (onAppearStart != null) __obj.updateDynamic("onAppearStart")(js.Any.fromFunction1(onAppearStart))
@@ -62,8 +62,8 @@ object Anon_Element {
     if (onLeaveActive != null) __obj.updateDynamic("onLeaveActive")(js.Any.fromFunction1(onLeaveActive))
     if (onLeaveEnd != null) __obj.updateDynamic("onLeaveEnd")(js.Any.fromFunction1(onLeaveEnd))
     if (onLeaveStart != null) __obj.updateDynamic("onLeaveStart")(js.Any.fromFunction1(onLeaveStart))
-    if (!js.isUndefined(removeOnLeave)) __obj.updateDynamic("removeOnLeave")(removeOnLeave)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(removeOnLeave)) __obj.updateDynamic("removeOnLeave")(removeOnLeave.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Element]
   }
 }

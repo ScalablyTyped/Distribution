@@ -23,11 +23,11 @@ object AccordionOptions {
     toggleable: js.UndefOr[Boolean] = js.undefined
   ): AccordionOptions = {
     val __obj = js.Dynamic.literal()
-    if (active_class != null) __obj.updateDynamic("active_class")(active_class)
+    if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (content_class != null) __obj.updateDynamic("content_class")(content_class)
-    if (!js.isUndefined(multi_expand)) __obj.updateDynamic("multi_expand")(multi_expand)
-    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable)
+    if (content_class != null) __obj.updateDynamic("content_class")(content_class.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi_expand)) __obj.updateDynamic("multi_expand")(multi_expand.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionOptions]
   }
 }

@@ -12,7 +12,7 @@ trait ValidationResult extends js.Object {
 object ValidationResult {
   @scala.inline
   def apply(errors: js.Array[ValidationError], status: ValidationResultStatus): ValidationResult = {
-    val __obj = js.Dynamic.literal(errors = errors, status = status)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ValidationResult]
   }

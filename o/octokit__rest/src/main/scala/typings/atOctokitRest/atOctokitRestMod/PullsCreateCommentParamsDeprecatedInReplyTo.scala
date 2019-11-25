@@ -66,7 +66,7 @@ object PullsCreateCommentParamsDeprecatedInReplyTo {
     start_line: Int | Double = null,
     start_side: LEFT | RIGHT | side = null
   ): PullsCreateCommentParamsDeprecatedInReplyTo = {
-    val __obj = js.Dynamic.literal(body = body, commit_id = commit_id, owner = owner, path = path, pull_number = pull_number, repo = repo)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], commit_id = commit_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (in_reply_to != null) __obj.updateDynamic("in_reply_to")(in_reply_to.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

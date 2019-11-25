@@ -16,7 +16,7 @@ trait MessageViewLinkDescriptor extends js.Object {
 object MessageViewLinkDescriptor {
   @scala.inline
   def apply(element: HTMLElement, href: String, html: String, isInQuotedArea: Boolean, text: String): MessageViewLinkDescriptor = {
-    val __obj = js.Dynamic.literal(element = element, href = href, html = html, isInQuotedArea = isInQuotedArea, text = text)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], isInQuotedArea = isInQuotedArea.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageViewLinkDescriptor]
   }

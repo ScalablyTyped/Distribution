@@ -12,7 +12,7 @@ object Anon_KeyString {
   @scala.inline
   def apply(key: String = null): Anon_KeyString = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeyString]
   }
 }

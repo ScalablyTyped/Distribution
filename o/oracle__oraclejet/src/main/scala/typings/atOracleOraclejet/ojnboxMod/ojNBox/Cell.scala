@@ -41,18 +41,18 @@ object Cell {
     svgClassName: String = null,
     svgStyle: js.Object = null
   ): Cell = {
-    val __obj = js.Dynamic.literal(column = column, row = row)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelHalign != null) __obj.updateDynamic("labelHalign")(labelHalign)
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
-    if (maximizedSvgClassName != null) __obj.updateDynamic("maximizedSvgClassName")(maximizedSvgClassName)
-    if (maximizedSvgStyle != null) __obj.updateDynamic("maximizedSvgStyle")(maximizedSvgStyle)
-    if (minimizedSvgClassName != null) __obj.updateDynamic("minimizedSvgClassName")(minimizedSvgClassName)
-    if (minimizedSvgStyle != null) __obj.updateDynamic("minimizedSvgStyle")(minimizedSvgStyle)
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelHalign != null) __obj.updateDynamic("labelHalign")(labelHalign.asInstanceOf[js.Any])
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
+    if (maximizedSvgClassName != null) __obj.updateDynamic("maximizedSvgClassName")(maximizedSvgClassName.asInstanceOf[js.Any])
+    if (maximizedSvgStyle != null) __obj.updateDynamic("maximizedSvgStyle")(maximizedSvgStyle.asInstanceOf[js.Any])
+    if (minimizedSvgClassName != null) __obj.updateDynamic("minimizedSvgClassName")(minimizedSvgClassName.asInstanceOf[js.Any])
+    if (minimizedSvgStyle != null) __obj.updateDynamic("minimizedSvgStyle")(minimizedSvgStyle.asInstanceOf[js.Any])
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
     if (showCount != null) __obj.updateDynamic("showCount")(showCount.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cell]
   }
 }

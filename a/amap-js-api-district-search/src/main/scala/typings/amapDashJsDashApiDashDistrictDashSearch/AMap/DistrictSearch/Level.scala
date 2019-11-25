@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait Level extends js.Object
 
+object Level {
+  @scala.inline
+  def biz_area: typings.amapDashJsDashApiDashDistrictDashSearch.amapDashJsDashApiDashDistrictDashSearchStrings.biz_area = this.cast("biz_area")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def city: typings.amapDashJsDashApiDashDistrictDashSearch.amapDashJsDashApiDashDistrictDashSearchStrings.city = this.cast("city")
+  @scala.inline
+  def country: typings.amapDashJsDashApiDashDistrictDashSearch.amapDashJsDashApiDashDistrictDashSearchStrings.country = this.cast("country")
+  @scala.inline
+  def district: typings.amapDashJsDashApiDashDistrictDashSearch.amapDashJsDashApiDashDistrictDashSearchStrings.district = this.cast("district")
+  @scala.inline
+  def province: typings.amapDashJsDashApiDashDistrictDashSearch.amapDashJsDashApiDashDistrictDashSearchStrings.province = this.cast("province")
+}
+

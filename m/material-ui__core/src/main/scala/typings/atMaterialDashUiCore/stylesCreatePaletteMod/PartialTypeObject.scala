@@ -25,10 +25,10 @@ object PartialTypeObject {
     text: PartialTypeText = null
   ): PartialTypeObject = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (divider != null) __obj.updateDynamic("divider")(divider)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTypeObject]
   }
 }

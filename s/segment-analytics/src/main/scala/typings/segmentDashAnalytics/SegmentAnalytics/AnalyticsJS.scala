@@ -2,9 +2,6 @@ package typings.segmentDashAnalytics.SegmentAnalytics
 
 import typings.segmentDashAnalytics.Anon_AnonymousId
 import typings.segmentDashAnalytics.Anon_Id
-import typings.segmentDashAnalytics.Fn_Elm
-import typings.segmentDashAnalytics.Fn_ElmElement
-import typings.segmentDashAnalytics.Fn_Event
 import typings.segmentDashAnalytics.JQuery
 import typings.std.Element
 import scala.scalajs.js
@@ -68,7 +65,10 @@ trait AnalyticsJS extends js.Object {
   /* The global analytics object emits events whenever you call alias, group,
     identify, track or page. That way you can listen to those events and run
     your own custom code. */
-  def on(event: String, callback: Fn_Event): Unit = js.native
+  def on(
+    event: String,
+    callback: js.Function3[/* event */ String, /* properties */ js.Object, /* options */ SegmentOpts, Unit]
+  ): Unit = js.native
   /* The page method lets you record page views on your website, along with
     optional extra information about the page being viewed. */
   def page(): Unit = js.native
@@ -113,49 +113,73 @@ trait AnalyticsJS extends js.Object {
   def track(event: String, properties: js.Object, options: SegmentOpts): Unit = js.native
   def track(event: String, properties: js.Object, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
   def trackForm(elements: js.Array[Element], event: String): Unit = js.native
+  def trackForm(elements: js.Array[Element], event: String, properties: js.Function1[/* elm */ Element, js.Object]): Unit = js.native
   def trackForm(elements: js.Array[Element], event: String, properties: js.Object): Unit = js.native
-  def trackForm(elements: js.Array[Element], event: String, properties: Fn_ElmElement): Unit = js.native
-  def trackForm(elements: js.Array[Element], event: Fn_Elm): Unit = js.native
-  def trackForm(elements: js.Array[Element], event: Fn_Elm, properties: js.Object): Unit = js.native
-  def trackForm(elements: js.Array[Element], event: Fn_Elm, properties: Fn_ElmElement): Unit = js.native
+  def trackForm(elements: js.Array[Element], event: js.Function1[/* elm */ Element, String]): Unit = js.native
+  def trackForm(
+    elements: js.Array[Element],
+    event: js.Function1[/* elm */ Element, String],
+    properties: js.Function1[/* elm */ Element, js.Object]
+  ): Unit = js.native
+  def trackForm(elements: js.Array[Element], event: js.Function1[/* elm */ Element, String], properties: js.Object): Unit = js.native
   /* trackForm is a helper that binds a track call to a form submission.
     Usually the page would change before you could call track, but with
     trackForm a small timeout is inserted to give the track call enough
     time to fire. */
   def trackForm(elements: JQuery, event: String): Unit = js.native
+  def trackForm(elements: JQuery, event: String, properties: js.Function1[/* elm */ Element, js.Object]): Unit = js.native
   def trackForm(elements: JQuery, event: String, properties: js.Object): Unit = js.native
-  def trackForm(elements: JQuery, event: String, properties: Fn_ElmElement): Unit = js.native
-  def trackForm(elements: JQuery, event: Fn_Elm): Unit = js.native
-  def trackForm(elements: JQuery, event: Fn_Elm, properties: js.Object): Unit = js.native
-  def trackForm(elements: JQuery, event: Fn_Elm, properties: Fn_ElmElement): Unit = js.native
+  def trackForm(elements: JQuery, event: js.Function1[/* elm */ Element, String]): Unit = js.native
+  def trackForm(
+    elements: JQuery,
+    event: js.Function1[/* elm */ Element, String],
+    properties: js.Function1[/* elm */ Element, js.Object]
+  ): Unit = js.native
+  def trackForm(elements: JQuery, event: js.Function1[/* elm */ Element, String], properties: js.Object): Unit = js.native
   def trackForm(elements: Element, event: String): Unit = js.native
+  def trackForm(elements: Element, event: String, properties: js.Function1[/* elm */ Element, js.Object]): Unit = js.native
   def trackForm(elements: Element, event: String, properties: js.Object): Unit = js.native
-  def trackForm(elements: Element, event: String, properties: Fn_ElmElement): Unit = js.native
-  def trackForm(elements: Element, event: Fn_Elm): Unit = js.native
-  def trackForm(elements: Element, event: Fn_Elm, properties: js.Object): Unit = js.native
-  def trackForm(elements: Element, event: Fn_Elm, properties: Fn_ElmElement): Unit = js.native
+  def trackForm(elements: Element, event: js.Function1[/* elm */ Element, String]): Unit = js.native
+  def trackForm(
+    elements: Element,
+    event: js.Function1[/* elm */ Element, String],
+    properties: js.Function1[/* elm */ Element, js.Object]
+  ): Unit = js.native
+  def trackForm(elements: Element, event: js.Function1[/* elm */ Element, String], properties: js.Object): Unit = js.native
   def trackLink(elements: js.Array[Element], event: String): Unit = js.native
+  def trackLink(elements: js.Array[Element], event: String, properties: js.Function1[/* elm */ Element, js.Object]): Unit = js.native
   def trackLink(elements: js.Array[Element], event: String, properties: js.Object): Unit = js.native
-  def trackLink(elements: js.Array[Element], event: String, properties: Fn_ElmElement): Unit = js.native
-  def trackLink(elements: js.Array[Element], event: Fn_Elm): Unit = js.native
-  def trackLink(elements: js.Array[Element], event: Fn_Elm, properties: js.Object): Unit = js.native
-  def trackLink(elements: js.Array[Element], event: Fn_Elm, properties: Fn_ElmElement): Unit = js.native
+  def trackLink(elements: js.Array[Element], event: js.Function1[/* elm */ Element, String]): Unit = js.native
+  def trackLink(
+    elements: js.Array[Element],
+    event: js.Function1[/* elm */ Element, String],
+    properties: js.Function1[/* elm */ Element, js.Object]
+  ): Unit = js.native
+  def trackLink(elements: js.Array[Element], event: js.Function1[/* elm */ Element, String], properties: js.Object): Unit = js.native
   /* trackLink is a helper that binds a track call to whenever a link is
     clicked. Usually the page would change before you could call track, but
     with trackLink a small timeout is inserted to give the track call enough
     time to fire. */
   def trackLink(elements: JQuery, event: String): Unit = js.native
+  def trackLink(elements: JQuery, event: String, properties: js.Function1[/* elm */ Element, js.Object]): Unit = js.native
   def trackLink(elements: JQuery, event: String, properties: js.Object): Unit = js.native
-  def trackLink(elements: JQuery, event: String, properties: Fn_ElmElement): Unit = js.native
-  def trackLink(elements: JQuery, event: Fn_Elm): Unit = js.native
-  def trackLink(elements: JQuery, event: Fn_Elm, properties: js.Object): Unit = js.native
-  def trackLink(elements: JQuery, event: Fn_Elm, properties: Fn_ElmElement): Unit = js.native
+  def trackLink(elements: JQuery, event: js.Function1[/* elm */ Element, String]): Unit = js.native
+  def trackLink(
+    elements: JQuery,
+    event: js.Function1[/* elm */ Element, String],
+    properties: js.Function1[/* elm */ Element, js.Object]
+  ): Unit = js.native
+  def trackLink(elements: JQuery, event: js.Function1[/* elm */ Element, String], properties: js.Object): Unit = js.native
   def trackLink(elements: Element, event: String): Unit = js.native
+  def trackLink(elements: Element, event: String, properties: js.Function1[/* elm */ Element, js.Object]): Unit = js.native
   def trackLink(elements: Element, event: String, properties: js.Object): Unit = js.native
-  def trackLink(elements: Element, event: String, properties: Fn_ElmElement): Unit = js.native
-  def trackLink(elements: Element, event: Fn_Elm): Unit = js.native
-  def trackLink(elements: Element, event: Fn_Elm, properties: js.Object): Unit = js.native
-  def trackLink(elements: Element, event: Fn_Elm, properties: Fn_ElmElement): Unit = js.native
+  def trackLink(elements: Element, event: js.Function1[/* elm */ Element, String]): Unit = js.native
+  def trackLink(
+    elements: Element,
+    event: js.Function1[/* elm */ Element, String],
+    properties: js.Function1[/* elm */ Element, js.Object]
+  ): Unit = js.native
+  def trackLink(elements: Element, event: js.Function1[/* elm */ Element, String], properties: js.Object): Unit = js.native
   /* Use a plugin */
   def use(plugin: js.Function1[/* analytics */ this.type, Unit]): this.type = js.native
   /* Once Analytics.js loaded, you can retrieve information about the

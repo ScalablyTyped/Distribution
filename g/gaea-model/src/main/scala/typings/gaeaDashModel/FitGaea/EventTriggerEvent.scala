@@ -12,7 +12,7 @@ object EventTriggerEvent {
   @scala.inline
   def apply(listen: String = null): EventTriggerEvent = {
     val __obj = js.Dynamic.literal()
-    if (listen != null) __obj.updateDynamic("listen")(listen)
+    if (listen != null) __obj.updateDynamic("listen")(listen.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTriggerEvent]
   }
 }

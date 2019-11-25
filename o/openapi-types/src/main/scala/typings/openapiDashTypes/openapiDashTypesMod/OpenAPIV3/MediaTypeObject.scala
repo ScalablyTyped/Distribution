@@ -21,9 +21,9 @@ object MediaTypeObject {
     schema: ReferenceObject | SchemaObject = null
   ): MediaTypeObject = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (example != null) __obj.updateDynamic("example")(example)
-    if (examples != null) __obj.updateDynamic("examples")(examples)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTypeObject]
   }

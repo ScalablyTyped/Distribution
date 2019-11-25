@@ -13,7 +13,7 @@ trait Anon_AlignItemsHeight extends js.Object {
 object Anon_AlignItemsHeight {
   @scala.inline
   def apply(alignItems: String, height: Double, justifyContent: String): Anon_AlignItemsHeight = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, height = height, justifyContent = justifyContent)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsHeight]
   }

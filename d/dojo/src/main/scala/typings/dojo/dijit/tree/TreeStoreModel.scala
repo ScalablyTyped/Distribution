@@ -1,6 +1,5 @@
 package typings.dojo.dijit.tree
 
-import typings.dojo.Fn_Items
 import typings.dojo.dijit.tree.dndSource.__Item
 import typings.dojo.dojo.data.api.Item
 import scala.scalajs.js
@@ -90,7 +89,7 @@ class TreeStoreModel protected () extends js.Object {
     * @param onComplete             
     * @param onError             
     */
-  def getChildren(parentItem: Item, onComplete: Fn_Items, onError: js.Function): Unit = js.native
+  def getChildren(parentItem: Item, onComplete: js.Function1[/* items */ js.Array[_], _], onError: js.Function): Unit = js.native
   /**
     * 
     * @param item             

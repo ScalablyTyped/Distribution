@@ -16,7 +16,7 @@ trait Anon_Failed extends js.Object {
 object Anon_Failed {
   @scala.inline
   def apply(failed: Double, module: String, name: String, passed: Double, runtime: Double, total: Double): Anon_Failed = {
-    val __obj = js.Dynamic.literal(failed = failed, module = module, name = name, passed = passed, runtime = runtime, total = total)
+    val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Failed]
   }

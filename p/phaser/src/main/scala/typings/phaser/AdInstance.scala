@@ -26,7 +26,7 @@ trait AdInstance extends js.Object {
 object AdInstance {
   @scala.inline
   def apply(instance: js.Any, placementID: String, shown: Boolean, video: Boolean): AdInstance = {
-    val __obj = js.Dynamic.literal(instance = instance, placementID = placementID, shown = shown, video = video)
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], placementID = placementID.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AdInstance]
   }

@@ -22,9 +22,9 @@ object InlineHelpProps {
     StringDictionary: /* x */ StringDictionary[js.Any] = null,
     className: String = null
   ): InlineHelpProps = {
-    val __obj = js.Dynamic.literal(placement = placement, text = text)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineHelpProps]
   }
 }

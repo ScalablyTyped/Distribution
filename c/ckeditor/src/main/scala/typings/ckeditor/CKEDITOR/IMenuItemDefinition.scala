@@ -15,7 +15,7 @@ trait IMenuItemDefinition extends js.Object {
 object IMenuItemDefinition {
   @scala.inline
   def apply(command: String, group: String, icon: String, label: String, order: Double): IMenuItemDefinition = {
-    val __obj = js.Dynamic.literal(command = command, group = group, icon = icon, label = label, order = order)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMenuItemDefinition]
   }

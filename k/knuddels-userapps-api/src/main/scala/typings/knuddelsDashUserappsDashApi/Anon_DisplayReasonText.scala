@@ -21,10 +21,10 @@ object Anon_DisplayReasonText {
     transferDisplayType: KnuddelTransferDisplayType = null
   ): Anon_DisplayReasonText = {
     val __obj = js.Dynamic.literal()
-    if (displayReasonText != null) __obj.updateDynamic("displayReasonText")(displayReasonText)
+    if (displayReasonText != null) __obj.updateDynamic("displayReasonText")(displayReasonText.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
-    if (transferDisplayType != null) __obj.updateDynamic("transferDisplayType")(transferDisplayType)
+    if (transferDisplayType != null) __obj.updateDynamic("transferDisplayType")(transferDisplayType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisplayReasonText]
   }
 }

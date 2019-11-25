@@ -32,10 +32,10 @@ object CreateLabelRenderParamsXmlParams {
     shadowDepth: Int | Double = null
   ): CreateLabelRenderParamsXmlParams = {
     val __obj = js.Dynamic.literal()
-    if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection)
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
-    if (!js.isUndefined(pngUseDisplayResolution)) __obj.updateDynamic("pngUseDisplayResolution")(pngUseDisplayResolution)
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection.asInstanceOf[js.Any])
+    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(pngUseDisplayResolution)) __obj.updateDynamic("pngUseDisplayResolution")(pngUseDisplayResolution.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
     if (shadowDepth != null) __obj.updateDynamic("shadowDepth")(shadowDepth.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLabelRenderParamsXmlParams]
   }

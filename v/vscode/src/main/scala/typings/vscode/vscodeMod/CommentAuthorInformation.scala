@@ -18,8 +18,8 @@ trait CommentAuthorInformation extends js.Object {
 object CommentAuthorInformation {
   @scala.inline
   def apply(name: String, iconPath: Uri = null): CommentAuthorInformation = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentAuthorInformation]
   }
 }

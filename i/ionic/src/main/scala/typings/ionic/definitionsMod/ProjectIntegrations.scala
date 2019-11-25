@@ -18,9 +18,9 @@ object ProjectIntegrations {
     enterprise: EnterpriseProjectIntegration = null
   ): ProjectIntegrations = {
     val __obj = js.Dynamic.literal()
-    if (capacitor != null) __obj.updateDynamic("capacitor")(capacitor)
-    if (cordova != null) __obj.updateDynamic("cordova")(cordova)
-    if (enterprise != null) __obj.updateDynamic("enterprise")(enterprise)
+    if (capacitor != null) __obj.updateDynamic("capacitor")(capacitor.asInstanceOf[js.Any])
+    if (cordova != null) __obj.updateDynamic("cordova")(cordova.asInstanceOf[js.Any])
+    if (enterprise != null) __obj.updateDynamic("enterprise")(enterprise.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectIntegrations]
   }
 }

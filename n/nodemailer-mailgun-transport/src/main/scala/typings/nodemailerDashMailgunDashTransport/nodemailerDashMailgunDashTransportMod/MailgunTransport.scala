@@ -1,6 +1,5 @@
 package typings.nodemailerDashMailgunDashTransport.nodemailerDashMailgunDashTransportMod
 
-import typings.nodemailer.libMailerMailDashMessageMod.^
 import typings.nodemailer.nodemailerMod.SentMessageInfo
 import typings.nodemailer.nodemailerMod.Transport
 import typings.std.Error
@@ -16,6 +15,9 @@ class MailgunTransport () extends Transport {
   /* CompleteClass */
   override var version: String = js.native
   /* CompleteClass */
-  override def send(mail: ^, callback: js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]): Unit = js.native
+  override def send(
+    mail: typings.nodemailer.libMailerMailDashMessageMod.^,
+    callback: js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]
+  ): Unit = js.native
 }
 

@@ -12,7 +12,7 @@ trait Anon_ApplyType extends js.Object {
 object Anon_ApplyType {
   @scala.inline
   def apply(ApplyType: Double, Cancel: Double): Anon_ApplyType = {
-    val __obj = js.Dynamic.literal(ApplyType = ApplyType, Cancel = Cancel)
+    val __obj = js.Dynamic.literal(ApplyType = ApplyType.asInstanceOf[js.Any], Cancel = Cancel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApplyType]
   }

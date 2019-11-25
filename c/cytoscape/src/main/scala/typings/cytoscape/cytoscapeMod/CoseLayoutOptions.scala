@@ -74,11 +74,11 @@ object CoseLayoutOptions {
     spacingFactor: Int | Double = null,
     stop: /* e */ LayoutEventObject => Unit = null
   ): CoseLayoutOptions = {
-    val __obj = js.Dynamic.literal(componentSpacing = componentSpacing, coolingFactor = coolingFactor, edgeElasticity = js.Any.fromFunction1(edgeElasticity), fit = fit, gravity = gravity, idealEdgeLength = js.Any.fromFunction1(idealEdgeLength), initialTemp = initialTemp, minTemp = minTemp, name = name, nestingFactor = nestingFactor, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, nodeOverlap = nodeOverlap, nodeRepulsion = js.Any.fromFunction1(nodeRepulsion), numIter = numIter, randomize = randomize, refresh = refresh, weaver = weaver)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    val __obj = js.Dynamic.literal(componentSpacing = componentSpacing.asInstanceOf[js.Any], coolingFactor = coolingFactor.asInstanceOf[js.Any], edgeElasticity = js.Any.fromFunction1(edgeElasticity), fit = fit.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any], idealEdgeLength = js.Any.fromFunction1(idealEdgeLength), initialTemp = initialTemp.asInstanceOf[js.Any], minTemp = minTemp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nestingFactor = nestingFactor.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], nodeOverlap = nodeOverlap.asInstanceOf[js.Any], nodeRepulsion = js.Any.fromFunction1(nodeRepulsion), numIter = numIter.asInstanceOf[js.Any], randomize = randomize.asInstanceOf[js.Any], refresh = refresh.asInstanceOf[js.Any], weaver = weaver.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)
-    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap)
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap.asInstanceOf[js.Any])
     if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))

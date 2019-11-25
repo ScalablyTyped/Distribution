@@ -39,16 +39,16 @@ object GraphQLRequestContext {
     response: GraphQLResponse = null,
     source: String = null
   ): GraphQLRequestContext[TContext] = {
-    val __obj = js.Dynamic.literal(cache = cache, context = context.asInstanceOf[js.Any], request = request)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
-    if (queryHash != null) __obj.updateDynamic("queryHash")(queryHash)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
+    if (queryHash != null) __obj.updateDynamic("queryHash")(queryHash.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLRequestContext[TContext]]
   }
 }

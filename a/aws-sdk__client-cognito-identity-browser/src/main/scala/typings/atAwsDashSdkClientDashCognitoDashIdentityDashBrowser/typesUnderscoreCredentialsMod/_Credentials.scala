@@ -33,10 +33,10 @@ object _Credentials {
     SessionToken: String = null
   ): _Credentials = {
     val __obj = js.Dynamic.literal()
-    if (AccessKeyId != null) __obj.updateDynamic("AccessKeyId")(AccessKeyId)
+    if (AccessKeyId != null) __obj.updateDynamic("AccessKeyId")(AccessKeyId.asInstanceOf[js.Any])
     if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
-    if (SecretKey != null) __obj.updateDynamic("SecretKey")(SecretKey)
-    if (SessionToken != null) __obj.updateDynamic("SessionToken")(SessionToken)
+    if (SecretKey != null) __obj.updateDynamic("SecretKey")(SecretKey.asInstanceOf[js.Any])
+    if (SessionToken != null) __obj.updateDynamic("SessionToken")(SessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Credentials]
   }
 }

@@ -15,7 +15,7 @@ trait GitFile extends js.Object {
 object GitFile {
   @scala.inline
   def apply(changes: GitChanges, filename: String, patch: String, status: modified): GitFile = {
-    val __obj = js.Dynamic.literal(changes = changes, filename = filename, patch = patch, status = status)
+    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitFile]
   }

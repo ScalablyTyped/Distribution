@@ -33,7 +33,7 @@ trait TabsOptions extends js.Object {
 object TabsOptions {
   @scala.inline
   def apply(duration: Double, onShow: (Tabs, Element) => Unit, responsiveThreshold: Double, swipeable: Boolean): TabsOptions = {
-    val __obj = js.Dynamic.literal(duration = duration, onShow = js.Any.fromFunction2(onShow), responsiveThreshold = responsiveThreshold, swipeable = swipeable)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], onShow = js.Any.fromFunction2(onShow), responsiveThreshold = responsiveThreshold.asInstanceOf[js.Any], swipeable = swipeable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TabsOptions]
   }

@@ -28,7 +28,7 @@ object AuthResponse {
     login_hint: String,
     scope: String
   ): AuthResponse = {
-    val __obj = js.Dynamic.literal(access_token = access_token, expires_at = expires_at, expires_in = expires_in, first_issued_at = first_issued_at, id_token = id_token, login_hint = login_hint, scope = scope)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], first_issued_at = first_issued_at.asInstanceOf[js.Any], id_token = id_token.asInstanceOf[js.Any], login_hint = login_hint.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthResponse]
   }

@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(caseSensitive: js.UndefOr[Boolean] = js.undefined, sort: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

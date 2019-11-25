@@ -27,14 +27,14 @@ object Query {
     user_id: String = null,
     user_name: String = null
   ): Query = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (channel_id != null) __obj.updateDynamic("channel_id")(channel_id)
-    if (channel_name != null) __obj.updateDynamic("channel_name")(channel_name)
-    if (team_id != null) __obj.updateDynamic("team_id")(team_id)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (channel_id != null) __obj.updateDynamic("channel_id")(channel_id.asInstanceOf[js.Any])
+    if (channel_name != null) __obj.updateDynamic("channel_name")(channel_name.asInstanceOf[js.Any])
+    if (team_id != null) __obj.updateDynamic("team_id")(team_id.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id)
-    if (user_name != null) __obj.updateDynamic("user_name")(user_name)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
+    if (user_name != null) __obj.updateDynamic("user_name")(user_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
 }

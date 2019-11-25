@@ -14,7 +14,7 @@ trait ResponseInfo extends js.Object {
 object ResponseInfo {
   @scala.inline
   def apply(certStatus: String, nextUpdate: String, responseStatus: Double, thisUpdate: String): ResponseInfo = {
-    val __obj = js.Dynamic.literal(certStatus = certStatus, nextUpdate = nextUpdate, responseStatus = responseStatus, thisUpdate = thisUpdate)
+    val __obj = js.Dynamic.literal(certStatus = certStatus.asInstanceOf[js.Any], nextUpdate = nextUpdate.asInstanceOf[js.Any], responseStatus = responseStatus.asInstanceOf[js.Any], thisUpdate = thisUpdate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponseInfo]
   }

@@ -1,5 +1,7 @@
 package typings.reactDashColor
 
+import typings.reactDashColor.reactDashColorMod.ColorPickerProps
+import typings.reactDashColor.reactDashColorMod.CustomPickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +55,11 @@ trait reactDashColorProps {
   @scala.inline
   def HuePickerProps: typings.reactDashColor.libComponentsHueHueMod.HuePickerProps.type = typings.reactDashColor.libComponentsHueHueMod.HuePickerProps
   type HuePickerProps = typings.reactDashColor.libComponentsHueHueMod.HuePickerProps
+  @scala.inline
+  def MaterialProps: ColorPickerProps.type = typings.reactDashColor.reactDashColorMod.ColorPickerProps
   type MaterialProps = typings.reactDashColor.libComponentsMaterialMaterialMod.MaterialPickerProps
+  @scala.inline
+  def MaterialPickerProps: ColorPickerProps.type = typings.reactDashColor.reactDashColorMod.ColorPickerProps
   type MaterialPickerProps = typings.reactDashColor.libComponentsMaterialMaterialMod.MaterialPickerProps
   @scala.inline
   def PhotoshopProps: typings.reactDashColor.libComponentsPhotoshopPhotoshopMod.PhotoshopPickerProps.type = typings.reactDashColor.libComponentsPhotoshopPhotoshopMod.PhotoshopPickerProps
@@ -61,6 +67,8 @@ trait reactDashColorProps {
   @scala.inline
   def PhotoshopPickerProps: typings.reactDashColor.libComponentsPhotoshopPhotoshopMod.PhotoshopPickerProps.type = typings.reactDashColor.libComponentsPhotoshopPhotoshopMod.PhotoshopPickerProps
   type PhotoshopPickerProps = typings.reactDashColor.libComponentsPhotoshopPhotoshopMod.PhotoshopPickerProps
+  @scala.inline
+  def SaturationProps: CustomPickerProps.type = typings.reactDashColor.reactDashColorMod.CustomPickerProps
   type SaturationProps = typings.reactDashColor.libComponentsCommonSaturationMod.SaturationProps
   @scala.inline
   def SketchProps: typings.reactDashColor.libComponentsSketchSketchMod.SketchPickerProps.type = typings.reactDashColor.libComponentsSketchSketchMod.SketchPickerProps
@@ -68,7 +76,11 @@ trait reactDashColorProps {
   @scala.inline
   def SketchPickerProps: typings.reactDashColor.libComponentsSketchSketchMod.SketchPickerProps.type = typings.reactDashColor.libComponentsSketchSketchMod.SketchPickerProps
   type SketchPickerProps = typings.reactDashColor.libComponentsSketchSketchMod.SketchPickerProps
+  @scala.inline
+  def SliderProps: ColorPickerProps.type = typings.reactDashColor.reactDashColorMod.ColorPickerProps
   type SliderProps = typings.reactDashColor.libComponentsSliderSliderMod.SliderPickerProps
+  @scala.inline
+  def SliderPickerProps: ColorPickerProps.type = typings.reactDashColor.reactDashColorMod.ColorPickerProps
   type SliderPickerProps = typings.reactDashColor.libComponentsSliderSliderMod.SliderPickerProps
   @scala.inline
   def SwatchesProps: typings.reactDashColor.libComponentsSwatchesSwatchesMod.SwatchesPickerProps.type = typings.reactDashColor.libComponentsSwatchesSwatchesMod.SwatchesPickerProps

@@ -15,8 +15,8 @@ object JobMetrics {
   @scala.inline
   def apply(metricTime: String = null, metrics: js.Array[MetricUpdate] = null): JobMetrics = {
     val __obj = js.Dynamic.literal()
-    if (metricTime != null) __obj.updateDynamic("metricTime")(metricTime)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (metricTime != null) __obj.updateDynamic("metricTime")(metricTime.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobMetrics]
   }
 }

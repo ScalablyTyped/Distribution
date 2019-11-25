@@ -13,7 +13,7 @@ trait PickDirectInboxFeedResponseThreadsItemthreadidolde extends js.Object {
 object PickDirectInboxFeedResponseThreadsItemthreadidolde {
   @scala.inline
   def apply(oldest_cursor: String, thread_id: String): PickDirectInboxFeedResponseThreadsItemthreadidolde = {
-    val __obj = js.Dynamic.literal(oldest_cursor = oldest_cursor, thread_id = thread_id)
+    val __obj = js.Dynamic.literal(oldest_cursor = oldest_cursor.asInstanceOf[js.Any], thread_id = thread_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PickDirectInboxFeedResponseThreadsItemthreadidolde]
   }

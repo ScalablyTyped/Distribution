@@ -44,14 +44,14 @@ object UnselectEventArgs {
     unselectedItems: js.Array[_] = null
   ): UnselectEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (names != null) __obj.updateDynamic("names")(names)
-    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (unselectedItem != null) __obj.updateDynamic("unselectedItem")(unselectedItem)
-    if (unselectedItems != null) __obj.updateDynamic("unselectedItems")(unselectedItems)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
+    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (unselectedItem != null) __obj.updateDynamic("unselectedItem")(unselectedItem.asInstanceOf[js.Any])
+    if (unselectedItems != null) __obj.updateDynamic("unselectedItems")(unselectedItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnselectEventArgs]
   }
 }

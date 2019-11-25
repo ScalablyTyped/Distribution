@@ -32,11 +32,11 @@ object GalleryItemClickEventArgs {
     `type`: String = null
   ): GalleryItemClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (galleryModel != null) __obj.updateDynamic("galleryModel")(galleryModel)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (galleryModel != null) __obj.updateDynamic("galleryModel")(galleryModel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GalleryItemClickEventArgs]
   }
 }

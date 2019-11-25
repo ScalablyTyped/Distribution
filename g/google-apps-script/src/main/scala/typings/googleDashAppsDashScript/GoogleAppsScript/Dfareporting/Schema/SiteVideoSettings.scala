@@ -22,11 +22,11 @@ object SiteVideoSettings {
     transcodeSettings: SiteTranscodeSetting = null
   ): SiteVideoSettings = {
     val __obj = js.Dynamic.literal()
-    if (companionSettings != null) __obj.updateDynamic("companionSettings")(companionSettings)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (skippableSettings != null) __obj.updateDynamic("skippableSettings")(skippableSettings)
-    if (transcodeSettings != null) __obj.updateDynamic("transcodeSettings")(transcodeSettings)
+    if (companionSettings != null) __obj.updateDynamic("companionSettings")(companionSettings.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (skippableSettings != null) __obj.updateDynamic("skippableSettings")(skippableSettings.asInstanceOf[js.Any])
+    if (transcodeSettings != null) __obj.updateDynamic("transcodeSettings")(transcodeSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteVideoSettings]
   }
 }

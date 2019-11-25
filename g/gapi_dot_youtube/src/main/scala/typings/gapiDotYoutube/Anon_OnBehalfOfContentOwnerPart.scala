@@ -22,9 +22,9 @@ trait Anon_OnBehalfOfContentOwnerPart extends js.Object {
 object Anon_OnBehalfOfContentOwnerPart {
   @scala.inline
   def apply(part: String, RequestBody: String = null, onBehalfOfContentOwner: String = null): Anon_OnBehalfOfContentOwnerPart = {
-    val __obj = js.Dynamic.literal(part = part)
-    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody)
-    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody.asInstanceOf[js.Any])
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OnBehalfOfContentOwnerPart]
   }
 }

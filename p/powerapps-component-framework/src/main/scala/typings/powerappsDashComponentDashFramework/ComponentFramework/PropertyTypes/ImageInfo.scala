@@ -21,7 +21,7 @@ trait ImageInfo extends js.Object {
 object ImageInfo {
   @scala.inline
   def apply(Tooltip: String, Url: String): ImageInfo = {
-    val __obj = js.Dynamic.literal(Tooltip = Tooltip, Url = Url)
+    val __obj = js.Dynamic.literal(Tooltip = Tooltip.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImageInfo]
   }

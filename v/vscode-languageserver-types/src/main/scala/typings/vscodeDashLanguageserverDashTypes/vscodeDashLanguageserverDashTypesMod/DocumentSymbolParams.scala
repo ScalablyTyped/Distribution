@@ -14,7 +14,7 @@ trait DocumentSymbolParams extends js.Object {
 object DocumentSymbolParams {
   @scala.inline
   def apply(textDocument: TextDocumentIdentifier): DocumentSymbolParams = {
-    val __obj = js.Dynamic.literal(textDocument = textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocumentSymbolParams]
   }

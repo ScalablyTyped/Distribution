@@ -48,13 +48,13 @@ object AboutPanelOptionsOptions {
     website: String = null
   ): AboutPanelOptionsOptions = {
     val __obj = js.Dynamic.literal()
-    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName)
-    if (applicationVersion != null) __obj.updateDynamic("applicationVersion")(applicationVersion)
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (credits != null) __obj.updateDynamic("credits")(credits)
-    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath)
-    if (version != null) __obj.updateDynamic("version")(version)
-    if (website != null) __obj.updateDynamic("website")(website)
+    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
+    if (applicationVersion != null) __obj.updateDynamic("applicationVersion")(applicationVersion.asInstanceOf[js.Any])
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (credits != null) __obj.updateDynamic("credits")(credits.asInstanceOf[js.Any])
+    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[AboutPanelOptionsOptions]
   }
 }

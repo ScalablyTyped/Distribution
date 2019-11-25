@@ -246,7 +246,6 @@ object IContainer {
     control: js.Any = null,
     defaultType: java.lang.String = null,
     defaults: js.Any = null,
-    destroy: () => Unit = null,
     down: /* selector */ js.UndefOr[java.lang.String] => IComponent = null,
     getActiveItem: () => _ = null,
     getAt: /* index */ js.UndefOr[Double] => IComponent = null,
@@ -264,20 +263,17 @@ object IContainer {
     getModal: () => Boolean = null,
     getScrollable: () => IView = null,
     hide: () => IComponent = null,
-    hideOnMaskTap: js.UndefOr[Boolean] = js.undefined,
     insert: (/* index */ js.UndefOr[Double], /* item */ js.UndefOr[js.Any]) => Unit = null,
     items: js.Any = null,
     layout: js.Any = null,
     mask: /* mask */ js.UndefOr[js.Any] => Unit = null,
     masked: js.Any = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
     query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
     remove: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean]) => IComponent = null,
     removeAll: (/* destroy */ js.UndefOr[Boolean], /* everything */ js.UndefOr[Boolean]) => IComponent = null,
     removeAt: /* index */ js.UndefOr[Double] => IContainer = null,
     removeDocked: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean]) => IComponent = null,
     removeInnerAt: /* index */ js.UndefOr[Double] => IContainer = null,
-    scroll: js.Any = null,
     scrollable: js.Any = null,
     setActiveItem: /* activeItem */ js.UndefOr[js.Any] => Unit = null,
     setAutoDestroy: /* autoDestroy */ js.UndefOr[Boolean] => Unit = null,
@@ -294,19 +290,18 @@ object IContainer {
     unmask: () => Unit = null
   ): IContainer = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem.asInstanceOf[js.Any])
     if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
     if (addAll != null) __obj.updateDynamic("addAll")(js.Any.fromFunction1(addAll))
     if (animateActiveItem != null) __obj.updateDynamic("animateActiveItem")(js.Any.fromFunction2(animateActiveItem))
     if (applyMasked != null) __obj.updateDynamic("applyMasked")(js.Any.fromFunction1(applyMasked))
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
-    if (cardSwitchAnimation != null) __obj.updateDynamic("cardSwitchAnimation")(cardSwitchAnimation)
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.asInstanceOf[js.Any])
+    if (cardSwitchAnimation != null) __obj.updateDynamic("cardSwitchAnimation")(cardSwitchAnimation.asInstanceOf[js.Any])
     if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction1(child))
-    if (control != null) __obj.updateDynamic("control")(control)
-    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
+    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
+    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
     if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
     if (getActiveItem != null) __obj.updateDynamic("getActiveItem")(js.Any.fromFunction0(getActiveItem))
     if (getAt != null) __obj.updateDynamic("getAt")(js.Any.fromFunction1(getAt))
@@ -324,21 +319,18 @@ object IContainer {
     if (getModal != null) __obj.updateDynamic("getModal")(js.Any.fromFunction0(getModal))
     if (getScrollable != null) __obj.updateDynamic("getScrollable")(js.Any.fromFunction0(getScrollable))
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
-    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap)
     if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction2(insert))
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(js.Any.fromFunction1(mask))
-    if (masked != null) __obj.updateDynamic("masked")(masked)
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (masked != null) __obj.updateDynamic("masked")(masked.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction2(remove))
     if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction2(removeAll))
     if (removeAt != null) __obj.updateDynamic("removeAt")(js.Any.fromFunction1(removeAt))
     if (removeDocked != null) __obj.updateDynamic("removeDocked")(js.Any.fromFunction2(removeDocked))
     if (removeInnerAt != null) __obj.updateDynamic("removeInnerAt")(js.Any.fromFunction1(removeInnerAt))
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable)
+    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
     if (setActiveItem != null) __obj.updateDynamic("setActiveItem")(js.Any.fromFunction1(setActiveItem))
     if (setAutoDestroy != null) __obj.updateDynamic("setAutoDestroy")(js.Any.fromFunction1(setAutoDestroy))
     if (setControl != null) __obj.updateDynamic("setControl")(js.Any.fromFunction1(setControl))

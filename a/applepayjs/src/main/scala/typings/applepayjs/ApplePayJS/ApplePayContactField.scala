@@ -16,3 +16,18 @@ import scala.scalajs.js.annotation._
 */
 trait ApplePayContactField extends js.Object
 
+object ApplePayContactField {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def email: typings.applepayjs.applepayjsStrings.email = this.cast("email")
+  @scala.inline
+  def name: typings.applepayjs.applepayjsStrings.name = this.cast("name")
+  @scala.inline
+  def phone: typings.applepayjs.applepayjsStrings.phone = this.cast("phone")
+  @scala.inline
+  def phoneticName: typings.applepayjs.applepayjsStrings.phoneticName = this.cast("phoneticName")
+  @scala.inline
+  def postalAddress: typings.applepayjs.applepayjsStrings.postalAddress = this.cast("postalAddress")
+}
+

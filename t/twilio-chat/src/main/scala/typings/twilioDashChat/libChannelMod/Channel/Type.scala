@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Type extends js.Object
 
+object Type {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `private`: typings.twilioDashChat.twilioDashChatStrings.`private` = this.cast("private")
+  @scala.inline
+  def public: typings.twilioDashChat.twilioDashChatStrings.public = this.cast("public")
+}
+

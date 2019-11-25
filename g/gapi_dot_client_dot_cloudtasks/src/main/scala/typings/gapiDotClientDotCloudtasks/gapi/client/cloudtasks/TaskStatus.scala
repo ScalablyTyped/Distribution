@@ -53,10 +53,10 @@ object TaskStatus {
     lastAttemptStatus: AttemptStatus = null
   ): TaskStatus = {
     val __obj = js.Dynamic.literal()
-    if (attemptDispatchCount != null) __obj.updateDynamic("attemptDispatchCount")(attemptDispatchCount)
-    if (attemptResponseCount != null) __obj.updateDynamic("attemptResponseCount")(attemptResponseCount)
-    if (firstAttemptStatus != null) __obj.updateDynamic("firstAttemptStatus")(firstAttemptStatus)
-    if (lastAttemptStatus != null) __obj.updateDynamic("lastAttemptStatus")(lastAttemptStatus)
+    if (attemptDispatchCount != null) __obj.updateDynamic("attemptDispatchCount")(attemptDispatchCount.asInstanceOf[js.Any])
+    if (attemptResponseCount != null) __obj.updateDynamic("attemptResponseCount")(attemptResponseCount.asInstanceOf[js.Any])
+    if (firstAttemptStatus != null) __obj.updateDynamic("firstAttemptStatus")(firstAttemptStatus.asInstanceOf[js.Any])
+    if (lastAttemptStatus != null) __obj.updateDynamic("lastAttemptStatus")(lastAttemptStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskStatus]
   }
 }

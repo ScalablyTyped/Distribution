@@ -37,10 +37,10 @@ object Settings {
     path: String = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (!js.isUndefined(openAsHidden)) __obj.updateDynamic("openAsHidden")(openAsHidden)
-    if (!js.isUndefined(openAtLogin)) __obj.updateDynamic("openAtLogin")(openAtLogin)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(openAsHidden)) __obj.updateDynamic("openAsHidden")(openAsHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(openAtLogin)) __obj.updateDynamic("openAtLogin")(openAtLogin.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

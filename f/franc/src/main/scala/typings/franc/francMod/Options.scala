@@ -19,9 +19,9 @@ object Options {
     whitelist: js.Array[ISO6393] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -22,7 +22,7 @@ object ButtonInformation {
     buttonStyle: StyleProp[ViewStyle] = null,
     titleStyle: StyleProp[TextStyle] = null
   ): ButtonInformation = {
-    val __obj = js.Dynamic.literal(icon = icon, title = title)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
     if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonInformation]

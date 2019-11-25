@@ -28,7 +28,7 @@ object Registries {
     interpolators: Registry[Interpolator],
     partials: Registry[Partial]
   ): Registries[T] = {
-    val __obj = js.Dynamic.literal(adaptors = adaptors, components = components, decorators = decorators, easings = easings, events = events, helpers = helpers, interpolators = interpolators, partials = partials)
+    val __obj = js.Dynamic.literal(adaptors = adaptors.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], easings = easings.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], helpers = helpers.asInstanceOf[js.Any], interpolators = interpolators.asInstanceOf[js.Any], partials = partials.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Registries[T]]
   }

@@ -24,12 +24,12 @@ object FileLabels {
     viewed: js.UndefOr[Boolean] = js.undefined
   ): FileLabels = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (!js.isUndefined(modified)) __obj.updateDynamic("modified")(modified)
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted)
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred)
-    if (!js.isUndefined(trashed)) __obj.updateDynamic("trashed")(trashed)
-    if (!js.isUndefined(viewed)) __obj.updateDynamic("viewed")(viewed)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(modified)) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
+    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
+    if (!js.isUndefined(trashed)) __obj.updateDynamic("trashed")(trashed.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewed)) __obj.updateDynamic("viewed")(viewed.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileLabels]
   }
 }

@@ -1,8 +1,6 @@
 package typings.dojo.dojox.dgauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojoStrings.majorTicks
 import typings.dojo.dojoStrings.maximum
@@ -101,12 +99,44 @@ class LogScaler () extends Stateful {
     */
   def valueForPosition(position: Double): js.Any = js.native
   @JSName("watch")
-  def watch_majorTicks(property: majorTicks, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_majorTicks(
+    property: majorTicks,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_maximum(property: maximum, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_maximum(
+    property: maximum,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_minimum(property: minimum, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_minimum(
+    property: minimum,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_multiplier(property: multiplier, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_multiplier(
+    property: multiplier,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -14,7 +14,7 @@ trait Anon_Move[S /* <: Schema[_, _] */] extends js.Object {
 object Anon_Move {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](move: Boolean, slice: Slice[S]): Anon_Move[S] = {
-    val __obj = js.Dynamic.literal(move = move, slice = slice)
+    val __obj = js.Dynamic.literal(move = move.asInstanceOf[js.Any], slice = slice.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Move[S]]
   }

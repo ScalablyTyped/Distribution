@@ -20,7 +20,7 @@ object IQConfig {
     qServices: js.Array[Anon_QNameQUrl],
     qSystemProperties: Anon_QPathSeparator
   ): IQConfig = {
-    val __obj = js.Dynamic.literal(qFeatures = qFeatures, qServices = qServices, qSystemProperties = qSystemProperties)
+    val __obj = js.Dynamic.literal(qFeatures = qFeatures.asInstanceOf[js.Any], qServices = qServices.asInstanceOf[js.Any], qSystemProperties = qSystemProperties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IQConfig]
   }

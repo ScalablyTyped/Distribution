@@ -56,19 +56,19 @@ object BundleEntry {
     search: BundleEntrySearch = null
   ): BundleEntry = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_fullUrl != null) __obj.updateDynamic("_fullUrl")(_fullUrl)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (fullUrl != null) __obj.updateDynamic("fullUrl")(fullUrl)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (search != null) __obj.updateDynamic("search")(search)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_fullUrl != null) __obj.updateDynamic("_fullUrl")(_fullUrl.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (fullUrl != null) __obj.updateDynamic("fullUrl")(fullUrl.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleEntry]
   }
 }

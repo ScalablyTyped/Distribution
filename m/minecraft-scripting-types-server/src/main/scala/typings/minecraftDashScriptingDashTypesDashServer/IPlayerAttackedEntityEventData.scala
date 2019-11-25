@@ -22,7 +22,7 @@ trait IPlayerAttackedEntityEventData extends js.Object {
 object IPlayerAttackedEntityEventData {
   @scala.inline
   def apply(attacked_entity: IEntity, player: IEntity): IPlayerAttackedEntityEventData = {
-    val __obj = js.Dynamic.literal(attacked_entity = attacked_entity, player = player)
+    val __obj = js.Dynamic.literal(attacked_entity = attacked_entity.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPlayerAttackedEntityEventData]
   }

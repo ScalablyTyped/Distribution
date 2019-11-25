@@ -19,8 +19,8 @@ trait SendButtonProps extends js.Object {
 object SendButtonProps {
   @scala.inline
   def apply(shareContent: ShareContent, style: ViewStyle = null): SendButtonProps = {
-    val __obj = js.Dynamic.literal(shareContent = shareContent)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(shareContent = shareContent.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendButtonProps]
   }
 }

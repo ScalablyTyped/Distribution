@@ -23,9 +23,9 @@ object RequestEvent {
     account: String = null,
     idempotency_key: String = null
   ): RequestEvent = {
-    val __obj = js.Dynamic.literal(api_version = api_version, method = method, path = path, request_start_time = request_start_time)
-    if (account != null) __obj.updateDynamic("account")(account)
-    if (idempotency_key != null) __obj.updateDynamic("idempotency_key")(idempotency_key)
+    val __obj = js.Dynamic.literal(api_version = api_version.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], request_start_time = request_start_time.asInstanceOf[js.Any])
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
+    if (idempotency_key != null) __obj.updateDynamic("idempotency_key")(idempotency_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestEvent]
   }
 }

@@ -13,8 +13,8 @@ trait ValdrConstraintValidator
 object ValdrConstraintValidator {
   @scala.inline
   def apply(message: String, StringDictionary: /* argumentName */ StringDictionary[js.Any] = null): ValdrConstraintValidator = {
-    val __obj = js.Dynamic.literal(message = message)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ValdrConstraintValidator]
   }
 }

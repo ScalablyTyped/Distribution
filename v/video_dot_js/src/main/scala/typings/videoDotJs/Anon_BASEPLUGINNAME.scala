@@ -39,7 +39,7 @@ Instantiable1[/* player */ Player, Plugin] {
     *
     * @return The plugin (or `undefined`).
     */
-  def getPlugin(name: String): /* import warning: ImportType.apply Failed type conversion: typeof Plugin */ js.Any = js.native
+  def getPlugin(name: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof Plugin */ js.Any = js.native
   /**
     * Gets a plugin's version, if available
     *
@@ -74,7 +74,7 @@ Instantiable1[/* player */ Player, Plugin] {
     */
   def isBasic(plugin: String): Boolean = js.native
   def isBasic(plugin: js.Function0[_]): Boolean = js.native
-  def registerPlugin[T /* <: /* import warning: ImportType.apply Failed type conversion: typeof Plugin */ js.Any */](name: String, plugin: T): js.Function0[T] = js.native
+  def registerPlugin[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Plugin */ js.Any */](name: String, plugin: T): js.Function0[T] = js.native
   /**
     * Register a Video.js plugin.
     *

@@ -25,13 +25,13 @@ object DataSourceChangeEvent {
     value: Model = null
   ): DataSourceChangeEvent = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (sender != null) __obj.updateDynamic("sender")(sender)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceChangeEvent]
   }
 }

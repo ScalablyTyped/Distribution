@@ -28,11 +28,11 @@ object CustomChannel {
     targetingInfo: Anon_AdsAppearOn = null
   ): CustomChannel = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (targetingInfo != null) __obj.updateDynamic("targetingInfo")(targetingInfo)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (targetingInfo != null) __obj.updateDynamic("targetingInfo")(targetingInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomChannel]
   }
 }

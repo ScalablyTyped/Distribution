@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AppEvent extends js.Object
 
+object AppEvent {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def exit: typings.carlo.carloStrings.exit = this.cast("exit")
+  @scala.inline
+  def window: typings.carlo.carloStrings.window = this.cast("window")
+}
+

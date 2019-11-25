@@ -23,8 +23,8 @@ object _UnmarshalledWriteRequest {
   @scala.inline
   def apply(DeleteRequest: _UnmarshalledDeleteRequest = null, PutRequest: _UnmarshalledPutRequest = null): _UnmarshalledWriteRequest = {
     val __obj = js.Dynamic.literal()
-    if (DeleteRequest != null) __obj.updateDynamic("DeleteRequest")(DeleteRequest)
-    if (PutRequest != null) __obj.updateDynamic("PutRequest")(PutRequest)
+    if (DeleteRequest != null) __obj.updateDynamic("DeleteRequest")(DeleteRequest.asInstanceOf[js.Any])
+    if (PutRequest != null) __obj.updateDynamic("PutRequest")(PutRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledWriteRequest]
   }
 }

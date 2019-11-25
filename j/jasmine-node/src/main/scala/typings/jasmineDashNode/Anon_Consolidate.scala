@@ -14,7 +14,7 @@ trait Anon_Consolidate extends js.Object {
 object Anon_Consolidate {
   @scala.inline
   def apply(consolidate: Boolean, report: Boolean, savePath: String, useDotNotation: Boolean): Anon_Consolidate = {
-    val __obj = js.Dynamic.literal(consolidate = consolidate, report = report, savePath = savePath, useDotNotation = useDotNotation)
+    val __obj = js.Dynamic.literal(consolidate = consolidate.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any], savePath = savePath.asInstanceOf[js.Any], useDotNotation = useDotNotation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Consolidate]
   }

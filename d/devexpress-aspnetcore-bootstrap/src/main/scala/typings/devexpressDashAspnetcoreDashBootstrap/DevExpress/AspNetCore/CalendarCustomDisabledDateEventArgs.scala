@@ -13,7 +13,7 @@ trait CalendarCustomDisabledDateEventArgs extends EventArgs {
 object CalendarCustomDisabledDateEventArgs {
   @scala.inline
   def apply(date: Date, isDisabled: Boolean, sender: Control): CalendarCustomDisabledDateEventArgs = {
-    val __obj = js.Dynamic.literal(date = date, isDisabled = isDisabled, sender = sender)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CalendarCustomDisabledDateEventArgs]
   }

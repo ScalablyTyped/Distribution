@@ -22,9 +22,9 @@ object LeadingSentence {
     text: String = null
   ): LeadingSentence = {
     val __obj = js.Dynamic.literal()
-    if (element_locations != null) __obj.updateDynamic("element_locations")(element_locations)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (element_locations != null) __obj.updateDynamic("element_locations")(element_locations.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeadingSentence]
   }
 }

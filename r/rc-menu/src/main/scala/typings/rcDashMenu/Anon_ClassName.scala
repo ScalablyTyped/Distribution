@@ -27,7 +27,7 @@ object Anon_ClassName {
     prefixCls: String,
     visible: Boolean
   ): Anon_ClassName = {
-    val __obj = js.Dynamic.literal(className = className, focusable = focusable, inlineIndent = inlineIndent, level = level, manualRef = js.Any.fromFunction0(manualRef), mode = mode, prefixCls = prefixCls, visible = visible)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], focusable = focusable.asInstanceOf[js.Any], inlineIndent = inlineIndent.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], manualRef = js.Any.fromFunction0(manualRef), mode = mode.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClassName]
   }

@@ -21,10 +21,10 @@ object TransportRequestParams {
     bulkBody: anyObject = null,
     querystring: anyObject = null
   ): TransportRequestParams = {
-    val __obj = js.Dynamic.literal(method = method, path = path)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (bulkBody != null) __obj.updateDynamic("bulkBody")(bulkBody)
-    if (querystring != null) __obj.updateDynamic("querystring")(querystring)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (bulkBody != null) __obj.updateDynamic("bulkBody")(bulkBody.asInstanceOf[js.Any])
+    if (querystring != null) __obj.updateDynamic("querystring")(querystring.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportRequestParams]
   }
 }

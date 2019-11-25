@@ -14,7 +14,7 @@ trait Anon_DEFAULT extends js.Object {
 object Anon_DEFAULT {
   @scala.inline
   def apply(DEFAULT: String, SNIFF_INTERVAL: String, SNIFF_ON_CONNECTION_FAULT: String, SNIFF_ON_START: String): Anon_DEFAULT = {
-    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT, SNIFF_INTERVAL = SNIFF_INTERVAL, SNIFF_ON_CONNECTION_FAULT = SNIFF_ON_CONNECTION_FAULT, SNIFF_ON_START = SNIFF_ON_START)
+    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT.asInstanceOf[js.Any], SNIFF_INTERVAL = SNIFF_INTERVAL.asInstanceOf[js.Any], SNIFF_ON_CONNECTION_FAULT = SNIFF_ON_CONNECTION_FAULT.asInstanceOf[js.Any], SNIFF_ON_START = SNIFF_ON_START.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DEFAULT]
   }

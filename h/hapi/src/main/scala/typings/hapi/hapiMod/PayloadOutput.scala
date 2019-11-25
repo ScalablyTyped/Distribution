@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait PayloadOutput extends js.Object
 
+object PayloadOutput {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def data: typings.hapi.hapiStrings.data = this.cast("data")
+  @scala.inline
+  def file: typings.hapi.hapiStrings.file = this.cast("file")
+  @scala.inline
+  def stream: typings.hapi.hapiStrings.stream = this.cast("stream")
+}
+

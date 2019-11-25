@@ -82,7 +82,7 @@ trait Anon_ContentQueriesExportAs[T] extends js.Object {
     *    API will be simplified to be consistent with `output`.
     */
   var inputs: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string] | undefined}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ContentQueriesExportAs with js.Any
   ] = js.native
@@ -97,7 +97,7 @@ trait Anon_ContentQueriesExportAs[T] extends js.Object {
     * of properties.
     */
   var outputs: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | undefined}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ContentQueriesExportAs with js.Any
   ] = js.native

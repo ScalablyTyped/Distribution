@@ -34,8 +34,8 @@ object IonSplitPane {
     when: String | Boolean = null
   ): IonSplitPane = {
     val __obj = js.Dynamic.literal()
-    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (onIonSplitPaneVisible != null) __obj.updateDynamic("onIonSplitPaneVisible")(js.Any.fromFunction1(onIonSplitPaneVisible))
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSplitPane]

@@ -34,7 +34,7 @@ trait TernServer extends js.Object {
     callback: js.Function2[
       /* error */ js.UndefOr[Error], 
       /* data */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ js.Any
       ], 
       Unit
     ]
@@ -45,32 +45,32 @@ trait TernServer extends js.Object {
     callback: js.Function2[
       /* error */ js.UndefOr[Error], 
       /* data */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ js.Any
       ], 
       Unit
     ],
     pos: Position
   ): Unit = js.native
   @JSName("request")
-  def request_result[Q /* <: /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.Query['type'] */ js.Any */](
+  def request_result[Q /* <: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Query['type'] */ js.Any */](
     cm: Doc,
     query: Q,
     callback: js.Function2[
       /* error */ js.UndefOr[Error], 
       /* data */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q]['result'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q]['result'] */ js.Any
       ], 
       Unit
     ]
   ): Unit = js.native
   @JSName("request")
-  def request_result[Q /* <: /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.Query['type'] */ js.Any */](
+  def request_result[Q /* <: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Query['type'] */ js.Any */](
     cm: Doc,
     query: Q,
     callback: js.Function2[
       /* error */ js.UndefOr[Error], 
       /* data */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q]['result'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q]['result'] */ js.Any
       ], 
       Unit
     ],

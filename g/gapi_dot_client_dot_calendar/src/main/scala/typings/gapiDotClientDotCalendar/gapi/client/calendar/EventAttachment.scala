@@ -33,11 +33,11 @@ object EventAttachment {
     title: String = null
   ): EventAttachment = {
     val __obj = js.Dynamic.literal()
-    if (fileId != null) __obj.updateDynamic("fileId")(fileId)
-    if (fileUrl != null) __obj.updateDynamic("fileUrl")(fileUrl)
-    if (iconLink != null) __obj.updateDynamic("iconLink")(iconLink)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
+    if (fileUrl != null) __obj.updateDynamic("fileUrl")(fileUrl.asInstanceOf[js.Any])
+    if (iconLink != null) __obj.updateDynamic("iconLink")(iconLink.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventAttachment]
   }
 }

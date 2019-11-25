@@ -11,7 +11,7 @@ trait Anon_PriorityNumber extends js.Object {
 object Anon_PriorityNumber {
   @scala.inline
   def apply(priority: Double): Anon_PriorityNumber = {
-    val __obj = js.Dynamic.literal(priority = priority)
+    val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PriorityNumber]
   }

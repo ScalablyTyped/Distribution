@@ -20,9 +20,9 @@ object TimelineActionClickEvent {
     dataItem: Model = null,
     element: JQuery = null
   ): TimelineActionClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
-    if (element != null) __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineActionClickEvent]
   }
 }

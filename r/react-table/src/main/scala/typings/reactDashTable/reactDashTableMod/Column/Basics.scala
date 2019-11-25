@@ -48,16 +48,16 @@ object Basics {
     sortMethod: (/* a */ js.Any, /* b */ js.Any, /* desc */ js.Any) => Double = null,
     sortable: js.UndefOr[Boolean] = js.undefined
   ): Basics = {
-    val __obj = js.Dynamic.literal(minWidth = minWidth, show = show)
+    val __obj = js.Dynamic.literal(minWidth = minWidth.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
     if (Aggregated != null) __obj.updateDynamic("Aggregated")(Aggregated.asInstanceOf[js.Any])
     if (Expander != null) __obj.updateDynamic("Expander")(Expander.asInstanceOf[js.Any])
     if (Pivot != null) __obj.updateDynamic("Pivot")(Pivot.asInstanceOf[js.Any])
     if (PivotValue != null) __obj.updateDynamic("PivotValue")(PivotValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultSortDesc)) __obj.updateDynamic("defaultSortDesc")(defaultSortDesc)
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable)
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (!js.isUndefined(defaultSortDesc)) __obj.updateDynamic("defaultSortDesc")(defaultSortDesc.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
     if (sortMethod != null) __obj.updateDynamic("sortMethod")(js.Any.fromFunction3(sortMethod))
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Basics]
   }
 }

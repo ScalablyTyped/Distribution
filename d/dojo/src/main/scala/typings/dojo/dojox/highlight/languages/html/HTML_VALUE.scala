@@ -27,7 +27,7 @@ trait HTML_VALUE extends js.Object {
 object HTML_VALUE {
   @scala.inline
   def apply(begin: String, className: String, end: String): HTML_VALUE = {
-    val __obj = js.Dynamic.literal(begin = begin, className = className, end = end)
+    val __obj = js.Dynamic.literal(begin = begin.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HTML_VALUE]
   }

@@ -20,9 +20,9 @@ object TableRow {
     tableRowProperties: TableRowProperties = null
   ): TableRow = {
     val __obj = js.Dynamic.literal()
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight)
-    if (tableCells != null) __obj.updateDynamic("tableCells")(tableCells)
-    if (tableRowProperties != null) __obj.updateDynamic("tableRowProperties")(tableRowProperties)
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (tableCells != null) __obj.updateDynamic("tableCells")(tableCells.asInstanceOf[js.Any])
+    if (tableRowProperties != null) __obj.updateDynamic("tableRowProperties")(tableRowProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRow]
   }
 }

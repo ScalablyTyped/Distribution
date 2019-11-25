@@ -22,8 +22,8 @@ trait CreateRepositoryOutput extends OutputTypesUnion {
 object CreateRepositoryOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, repositoryMetadata: _UnmarshalledRepositoryMetadata = null): CreateRepositoryOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (repositoryMetadata != null) __obj.updateDynamic("repositoryMetadata")(repositoryMetadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (repositoryMetadata != null) __obj.updateDynamic("repositoryMetadata")(repositoryMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRepositoryOutput]
   }
 }

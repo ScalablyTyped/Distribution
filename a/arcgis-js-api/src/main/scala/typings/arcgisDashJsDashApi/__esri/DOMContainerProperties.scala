@@ -35,8 +35,8 @@ object DOMContainerProperties {
   ): DOMContainerProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup)
-    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMContainerProperties]
   }
 }

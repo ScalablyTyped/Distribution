@@ -19,7 +19,7 @@ object multi extends js.Object {
     *  });
     * ```
     */
-  def apply[S /* <: StringDictionary[String | ParseWithFallback | ParseWithEachType] */](spec: S): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def apply[S /* <: StringDictionary[String | ParseWithFallback | ParseWithEachType] */](spec: S): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
     */ typings.getenv.getenvStrings.multi with js.Any = js.native
 }

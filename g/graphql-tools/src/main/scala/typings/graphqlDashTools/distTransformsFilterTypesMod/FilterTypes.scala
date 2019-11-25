@@ -22,7 +22,7 @@ object FilterTypes {
     transformRequest: /* originalRequest */ Request => Request = null,
     transformResult: /* result */ Result => Result = null
   ): FilterTypes = {
-    val __obj = js.Dynamic.literal(filter = filter, transformSchema = js.Any.fromFunction1(transformSchema))
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], transformSchema = js.Any.fromFunction1(transformSchema))
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
     if (transformResult != null) __obj.updateDynamic("transformResult")(js.Any.fromFunction1(transformResult))
     __obj.asInstanceOf[FilterTypes]

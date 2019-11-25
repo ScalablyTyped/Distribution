@@ -16,7 +16,7 @@ trait IUiGridCellNavConstants extends js.Object {
 object IUiGridCellNavConstants {
   @scala.inline
   def apply(CELL_NAV_EVENT: String, EVENT_TYPE: Anon_CLEAR, FEATURE_NAME: String, direction: Anon_DOWNLEFT): IUiGridCellNavConstants = {
-    val __obj = js.Dynamic.literal(CELL_NAV_EVENT = CELL_NAV_EVENT, EVENT_TYPE = EVENT_TYPE, FEATURE_NAME = FEATURE_NAME, direction = direction)
+    val __obj = js.Dynamic.literal(CELL_NAV_EVENT = CELL_NAV_EVENT.asInstanceOf[js.Any], EVENT_TYPE = EVENT_TYPE.asInstanceOf[js.Any], FEATURE_NAME = FEATURE_NAME.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IUiGridCellNavConstants]
   }

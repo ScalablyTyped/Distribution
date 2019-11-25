@@ -40,13 +40,13 @@ object ActionBeginEventArgs {
     `type`: String = null
   ): ActionBeginEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (currentAction != null) __obj.updateDynamic("currentAction")(currentAction)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (currentAction != null) __obj.updateDynamic("currentAction")(currentAction.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionBeginEventArgs]
   }
 }

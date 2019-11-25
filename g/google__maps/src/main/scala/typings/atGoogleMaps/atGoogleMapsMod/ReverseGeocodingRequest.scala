@@ -56,11 +56,11 @@ object ReverseGeocodingRequest {
     result_type: AddressType = null
   ): ReverseGeocodingRequest = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (latlng != null) __obj.updateDynamic("latlng")(latlng.asInstanceOf[js.Any])
-    if (location_type != null) __obj.updateDynamic("location_type")(location_type)
-    if (place_id != null) __obj.updateDynamic("place_id")(place_id)
-    if (result_type != null) __obj.updateDynamic("result_type")(result_type)
+    if (location_type != null) __obj.updateDynamic("location_type")(location_type.asInstanceOf[js.Any])
+    if (place_id != null) __obj.updateDynamic("place_id")(place_id.asInstanceOf[js.Any])
+    if (result_type != null) __obj.updateDynamic("result_type")(result_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReverseGeocodingRequest]
   }
 }

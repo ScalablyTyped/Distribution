@@ -51,7 +51,7 @@ object JobType {
     propertyIsEnumerable: PropertyKey => Boolean,
     state: String
   ): JobType = {
-    val __obj = js.Dynamic.literal(category = category, constructor = constructor, description = description, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobType]
   }

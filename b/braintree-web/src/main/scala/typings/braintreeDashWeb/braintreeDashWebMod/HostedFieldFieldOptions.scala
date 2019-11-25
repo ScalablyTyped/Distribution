@@ -33,11 +33,11 @@ object HostedFieldFieldOptions {
     expirationYear: HostedFieldsField = null,
     postalCode: HostedFieldsField = null
   ): HostedFieldFieldOptions = {
-    val __obj = js.Dynamic.literal(cvv = cvv, number = number)
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
-    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth)
-    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
+    val __obj = js.Dynamic.literal(cvv = cvv.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
+    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedFieldFieldOptions]
   }
 }

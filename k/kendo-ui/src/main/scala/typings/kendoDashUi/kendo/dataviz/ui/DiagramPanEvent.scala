@@ -12,8 +12,8 @@ trait DiagramPanEvent extends DiagramEvent {
 object DiagramPanEvent {
   @scala.inline
   def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram, pan: Point = null): DiagramPanEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (pan != null) __obj.updateDynamic("pan")(pan)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramPanEvent]
   }
 }

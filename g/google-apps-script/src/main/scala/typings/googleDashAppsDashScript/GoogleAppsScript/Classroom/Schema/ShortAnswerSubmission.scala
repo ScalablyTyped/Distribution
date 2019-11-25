@@ -12,7 +12,7 @@ object ShortAnswerSubmission {
   @scala.inline
   def apply(answer: String = null): ShortAnswerSubmission = {
     val __obj = js.Dynamic.literal()
-    if (answer != null) __obj.updateDynamic("answer")(answer)
+    if (answer != null) __obj.updateDynamic("answer")(answer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortAnswerSubmission]
   }
 }

@@ -25,9 +25,9 @@ object ActivitySetRepoSubscriptionParams {
     ignored: js.UndefOr[Boolean] = js.undefined,
     subscribed: js.UndefOr[Boolean] = js.undefined
   ): ActivitySetRepoSubscriptionParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (!js.isUndefined(ignored)) __obj.updateDynamic("ignored")(ignored)
-    if (!js.isUndefined(subscribed)) __obj.updateDynamic("subscribed")(subscribed)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignored)) __obj.updateDynamic("ignored")(ignored.asInstanceOf[js.Any])
+    if (!js.isUndefined(subscribed)) __obj.updateDynamic("subscribed")(subscribed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitySetRepoSubscriptionParams]
   }
 }

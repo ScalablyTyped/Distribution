@@ -257,12 +257,12 @@ class SObject[T] () extends js.Object {
   def select(): Query[js.Array[T]] = js.native
   def select(callback: Callback[js.Array[T]]): Query[js.Array[T]] = js.native
   def select(
-    fields: /* import warning: ImportType.apply c Unsupported type mapping: 
+    fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
     */ typings.jsforce.jsforceStrings.SObject with js.Any
   ): Query[js.Array[Partial[T]]] = js.native
   def select(
-    fields: /* import warning: ImportType.apply c Unsupported type mapping: 
+    fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
     */ typings.jsforce.jsforceStrings.SObject with js.Any,
     callback: Callback[js.Array[Partial[T]]]

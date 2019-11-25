@@ -18,7 +18,7 @@ object PathItem {
     state: State[TContext, TEvent],
     weight: Int | Double = null
   ): PathItem[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(path = path, state = state)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathItem[TContext, TEvent]]
   }

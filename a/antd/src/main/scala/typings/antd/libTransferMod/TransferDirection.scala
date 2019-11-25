@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait TransferDirection extends js.Object
 
+object TransferDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.antd.antdStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.antd.antdStrings.right = this.cast("right")
+}
+

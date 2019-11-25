@@ -21,7 +21,7 @@ object ClientContextClient {
     appVersionName: String,
     installationId: String
   ): ClientContextClient = {
-    val __obj = js.Dynamic.literal(appPackageName = appPackageName, appTitle = appTitle, appVersionCode = appVersionCode, appVersionName = appVersionName, installationId = installationId)
+    val __obj = js.Dynamic.literal(appPackageName = appPackageName.asInstanceOf[js.Any], appTitle = appTitle.asInstanceOf[js.Any], appVersionCode = appVersionCode.asInstanceOf[js.Any], appVersionName = appVersionName.asInstanceOf[js.Any], installationId = installationId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientContextClient]
   }

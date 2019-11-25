@@ -21,8 +21,8 @@ trait GetKeyRotationStatusOutput extends OutputTypesUnion {
 object GetKeyRotationStatusOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, KeyRotationEnabled: js.UndefOr[Boolean] = js.undefined): GetKeyRotationStatusOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (!js.isUndefined(KeyRotationEnabled)) __obj.updateDynamic("KeyRotationEnabled")(KeyRotationEnabled)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(KeyRotationEnabled)) __obj.updateDynamic("KeyRotationEnabled")(KeyRotationEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyRotationStatusOutput]
   }
 }

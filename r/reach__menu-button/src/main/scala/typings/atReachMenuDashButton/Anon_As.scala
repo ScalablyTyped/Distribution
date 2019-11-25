@@ -42,15 +42,15 @@ object Anon_As {
   ): Anon_As[T] = {
     val __obj = js.Dynamic.literal()
     if (_ref != null) __obj.updateDynamic("_ref")(js.Any.fromFunction1(_ref))
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (setState != null) __obj.updateDynamic("setState")(js.Any.fromFunction1(setState))
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_As[T]]
   }
 }

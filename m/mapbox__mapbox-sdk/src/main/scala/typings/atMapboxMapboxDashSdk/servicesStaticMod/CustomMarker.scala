@@ -13,7 +13,7 @@ trait CustomMarker extends js.Object {
 object CustomMarker {
   @scala.inline
   def apply(coordinates: LngLatLike, url: String): CustomMarker = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], url = url)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomMarker]
   }

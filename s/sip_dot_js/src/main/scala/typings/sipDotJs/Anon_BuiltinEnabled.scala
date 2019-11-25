@@ -25,7 +25,7 @@ object Anon_BuiltinEnabled {
     connector: (/* level */ String, /* category */ String, /* label */ js.UndefOr[String], /* content */ js.Any) => Unit = null,
     level: String | Double = null
   ): Anon_BuiltinEnabled = {
-    val __obj = js.Dynamic.literal(builtinEnabled = builtinEnabled)
+    val __obj = js.Dynamic.literal(builtinEnabled = builtinEnabled.asInstanceOf[js.Any])
     if (connector != null) __obj.updateDynamic("connector")(js.Any.fromFunction4(connector))
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BuiltinEnabled]

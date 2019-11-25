@@ -24,10 +24,10 @@ object AppIdentity {
     servicePrincipalName: String = null
   ): AppIdentity = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (servicePrincipalId != null) __obj.updateDynamic("servicePrincipalId")(servicePrincipalId)
-    if (servicePrincipalName != null) __obj.updateDynamic("servicePrincipalName")(servicePrincipalName)
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (servicePrincipalId != null) __obj.updateDynamic("servicePrincipalId")(servicePrincipalId.asInstanceOf[js.Any])
+    if (servicePrincipalName != null) __obj.updateDynamic("servicePrincipalName")(servicePrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppIdentity]
   }
 }

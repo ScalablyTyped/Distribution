@@ -14,8 +14,8 @@ trait Tensor extends js.Object {
 object Tensor {
   @scala.inline
   def apply(shape: js.Array[Double], `type`: Types, value: Buffer | TensorValue): Tensor = {
-    val __obj = js.Dynamic.literal(shape = shape, value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tensor]
   }
 }

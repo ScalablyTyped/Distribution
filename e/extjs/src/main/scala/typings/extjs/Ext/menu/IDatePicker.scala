@@ -22,10 +22,10 @@ object IDatePicker {
     pickerId: java.lang.String = null
   ): IDatePicker = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IMenu)
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
-    if (picker != null) __obj.updateDynamic("picker")(picker)
-    if (pickerId != null) __obj.updateDynamic("pickerId")(pickerId)
+    if (IMenu != null) js.Dynamic.global.Object.assign(__obj, IMenu)
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.asInstanceOf[js.Any])
+    if (picker != null) __obj.updateDynamic("picker")(picker.asInstanceOf[js.Any])
+    if (pickerId != null) __obj.updateDynamic("pickerId")(pickerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePicker]
   }
 }

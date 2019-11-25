@@ -31,17 +31,17 @@ object PaginationProps {
     simple: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): PaginationProps = {
-    val __obj = js.Dynamic.literal(current = current, total = total)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction0(onNext))
     if (onPrev != null) __obj.updateDynamic("onPrev")(js.Any.fromFunction0(onPrev))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (prevText != null) __obj.updateDynamic("prevText")(prevText)
-    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
+    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
 }

@@ -33,9 +33,9 @@ object PermissionRequestHandlerDetails {
     externalURL: String = null,
     mediaTypes: js.Array[video | audio] = null
   ): PermissionRequestHandlerDetails = {
-    val __obj = js.Dynamic.literal(isMainFrame = isMainFrame, requestingUrl = requestingUrl)
-    if (externalURL != null) __obj.updateDynamic("externalURL")(externalURL)
-    if (mediaTypes != null) __obj.updateDynamic("mediaTypes")(mediaTypes)
+    val __obj = js.Dynamic.literal(isMainFrame = isMainFrame.asInstanceOf[js.Any], requestingUrl = requestingUrl.asInstanceOf[js.Any])
+    if (externalURL != null) __obj.updateDynamic("externalURL")(externalURL.asInstanceOf[js.Any])
+    if (mediaTypes != null) __obj.updateDynamic("mediaTypes")(mediaTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionRequestHandlerDetails]
   }
 }

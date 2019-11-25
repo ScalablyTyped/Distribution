@@ -16,7 +16,7 @@ trait Anon_Mozilla extends js.Object {
 object Anon_Mozilla {
   @scala.inline
   def apply(mozilla: Boolean, msie: Boolean, webkit: Boolean): Anon_Mozilla = {
-    val __obj = js.Dynamic.literal(mozilla = mozilla, msie = msie, webkit = webkit)
+    val __obj = js.Dynamic.literal(mozilla = mozilla.asInstanceOf[js.Any], msie = msie.asInstanceOf[js.Any], webkit = webkit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Mozilla]
   }

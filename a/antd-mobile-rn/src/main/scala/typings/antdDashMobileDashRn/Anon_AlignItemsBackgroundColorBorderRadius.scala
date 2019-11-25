@@ -31,7 +31,7 @@ object Anon_AlignItemsBackgroundColorBorderRadius {
     top: Double,
     width: Double
   ): Anon_AlignItemsBackgroundColorBorderRadius = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, backgroundColor = backgroundColor, borderRadius = borderRadius, height = height, justifyContent = justifyContent, overflow = overflow, position = position, right = right, top = top, width = width)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsBackgroundColorBorderRadius]
   }

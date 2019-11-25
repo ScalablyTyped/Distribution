@@ -355,28 +355,24 @@ object IComponent {
     afterSetPosition: (/* ax */ js.UndefOr[js.Any], /* ay */ js.UndefOr[js.Any]) => Unit = null,
     afterShow: (/* animateTarget */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     autoScroll: js.UndefOr[Boolean] = js.undefined,
-    beforeLayout: () => Unit = null,
     beforeShow: () => Unit = null,
     bubble: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => IComponent = null,
     cancelFocus: () => Unit = null,
-    center: () => IComponent = null,
+    center: () => IComponent | IComponent = null,
     cloneConfig: /* overrides */ js.UndefOr[js.Any] => IComponent = null,
     columnWidth: js.Any = null,
     constrain: js.UndefOr[Boolean] = js.undefined,
     constrainTo: js.Any = null,
     constraintInsets: js.Any = null,
     defaultAlign: java.lang.String = null,
-    doConstrain: /* constrainTo */ js.UndefOr[js.Any] => Unit = null,
+    doConstrain: js.UndefOr[js.Any] => Unit = null,
     findParentBy: /* fn */ js.UndefOr[js.Any] => typings.extjs.Ext.container.IContainer = null,
     findParentByType: /* xtype */ js.UndefOr[js.Any] => typings.extjs.Ext.container.IContainer = null,
     fixed: js.UndefOr[Boolean] = js.undefined,
     floatParent: IContainer = null,
-    floating: js.UndefOr[Boolean] = js.undefined,
     focus: (/* selectText */ js.UndefOr[Boolean], /* delay */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IComponent = null,
     focusOnToFront: js.UndefOr[Boolean] = js.undefined,
     formBind: js.UndefOr[Boolean] = js.undefined,
-    getEl: () => typings.extjs.Ext.dom.IElement = null,
-    getId: () => java.lang.String = null,
     getPosition: /* local */ js.UndefOr[Boolean] => Array = null,
     getXType: () => java.lang.String = null,
     hide: (/* animateTarget */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IComponent = null,
@@ -393,7 +389,7 @@ object IComponent {
     resizeHandles: java.lang.String = null,
     scrollBy: (/* deltaX */ js.UndefOr[js.Any], /* deltaY */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => Unit = null,
     scrollFlags: js.Any = null,
-    setActive: (/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent]) => Unit = null,
+    setActive: (js.UndefOr[Boolean], js.UndefOr[IComponent]) => Unit = null,
     setAutoScroll: /* scroll */ js.UndefOr[Boolean] => IComponent = null,
     setBorderRegion: /* region */ js.UndefOr[java.lang.String] => java.lang.String = null,
     setLoading: (/* load */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[Boolean]) => ILoadMask = null,
@@ -406,43 +402,39 @@ object IComponent {
     show: (/* animateTarget */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IComponent = null,
     showAt: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IComponent = null,
     showBy: (/* component */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => IComponent = null,
-    toBack: () => IComponent = null,
-    toFront: /* preventFocus */ js.UndefOr[Boolean] => IComponent = null,
+    toBack: () => IComponent | IComponent = null,
+    toFront: js.UndefOr[Boolean] => IComponent | IComponent = null,
     toFrontOnShow: js.UndefOr[Boolean] = js.undefined,
     updateBox: /* box */ js.UndefOr[js.Any] => IComponent = null,
     zIndexManager: IZIndexManager = null,
     zIndexParent: IContainer = null
   ): IComponent = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IAbstractComponent)
+    if (IAbstractComponent != null) js.Dynamic.global.Object.assign(__obj, IAbstractComponent)
     if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(js.Any.fromFunction0(afterComponentLayout))
     if (afterHide != null) __obj.updateDynamic("afterHide")(js.Any.fromFunction2(afterHide))
     if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
     if (afterSetPosition != null) __obj.updateDynamic("afterSetPosition")(js.Any.fromFunction2(afterSetPosition))
     if (afterShow != null) __obj.updateDynamic("afterShow")(js.Any.fromFunction3(afterShow))
-    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll)
-    if (beforeLayout != null) __obj.updateDynamic("beforeLayout")(js.Any.fromFunction0(beforeLayout))
+    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll.asInstanceOf[js.Any])
     if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction0(beforeShow))
     if (bubble != null) __obj.updateDynamic("bubble")(js.Any.fromFunction3(bubble))
     if (cancelFocus != null) __obj.updateDynamic("cancelFocus")(js.Any.fromFunction0(cancelFocus))
     if (center != null) __obj.updateDynamic("center")(js.Any.fromFunction0(center))
     if (cloneConfig != null) __obj.updateDynamic("cloneConfig")(js.Any.fromFunction1(cloneConfig))
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth)
-    if (!js.isUndefined(constrain)) __obj.updateDynamic("constrain")(constrain)
-    if (constrainTo != null) __obj.updateDynamic("constrainTo")(constrainTo)
-    if (constraintInsets != null) __obj.updateDynamic("constraintInsets")(constraintInsets)
-    if (defaultAlign != null) __obj.updateDynamic("defaultAlign")(defaultAlign)
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrain)) __obj.updateDynamic("constrain")(constrain.asInstanceOf[js.Any])
+    if (constrainTo != null) __obj.updateDynamic("constrainTo")(constrainTo.asInstanceOf[js.Any])
+    if (constraintInsets != null) __obj.updateDynamic("constraintInsets")(constraintInsets.asInstanceOf[js.Any])
+    if (defaultAlign != null) __obj.updateDynamic("defaultAlign")(defaultAlign.asInstanceOf[js.Any])
     if (doConstrain != null) __obj.updateDynamic("doConstrain")(js.Any.fromFunction1(doConstrain))
     if (findParentBy != null) __obj.updateDynamic("findParentBy")(js.Any.fromFunction1(findParentBy))
     if (findParentByType != null) __obj.updateDynamic("findParentByType")(js.Any.fromFunction1(findParentByType))
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
-    if (floatParent != null) __obj.updateDynamic("floatParent")(floatParent)
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
+    if (floatParent != null) __obj.updateDynamic("floatParent")(floatParent.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction4(focus))
-    if (!js.isUndefined(focusOnToFront)) __obj.updateDynamic("focusOnToFront")(focusOnToFront)
-    if (!js.isUndefined(formBind)) __obj.updateDynamic("formBind")(formBind)
-    if (getEl != null) __obj.updateDynamic("getEl")(js.Any.fromFunction0(getEl))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
+    if (!js.isUndefined(focusOnToFront)) __obj.updateDynamic("focusOnToFront")(focusOnToFront.asInstanceOf[js.Any])
+    if (!js.isUndefined(formBind)) __obj.updateDynamic("formBind")(formBind.asInstanceOf[js.Any])
     if (getPosition != null) __obj.updateDynamic("getPosition")(js.Any.fromFunction1(getPosition))
     if (getXType != null) __obj.updateDynamic("getXType")(js.Any.fromFunction0(getXType))
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction3(hide))
@@ -452,13 +444,13 @@ object IComponent {
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction3(onHide))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction3(onShow))
     if (onShowComplete != null) __obj.updateDynamic("onShowComplete")(js.Any.fromFunction2(onShowComplete))
-    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX)
-    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (resizable != null) __obj.updateDynamic("resizable")(resizable)
-    if (resizeHandles != null) __obj.updateDynamic("resizeHandles")(resizeHandles)
+    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
+    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (resizeHandles != null) __obj.updateDynamic("resizeHandles")(resizeHandles.asInstanceOf[js.Any])
     if (scrollBy != null) __obj.updateDynamic("scrollBy")(js.Any.fromFunction3(scrollBy))
-    if (scrollFlags != null) __obj.updateDynamic("scrollFlags")(scrollFlags)
+    if (scrollFlags != null) __obj.updateDynamic("scrollFlags")(scrollFlags.asInstanceOf[js.Any])
     if (setActive != null) __obj.updateDynamic("setActive")(js.Any.fromFunction2(setActive))
     if (setAutoScroll != null) __obj.updateDynamic("setAutoScroll")(js.Any.fromFunction1(setAutoScroll))
     if (setBorderRegion != null) __obj.updateDynamic("setBorderRegion")(js.Any.fromFunction1(setBorderRegion))
@@ -467,17 +459,17 @@ object IComponent {
     if (setPagePosition != null) __obj.updateDynamic("setPagePosition")(js.Any.fromFunction3(setPagePosition))
     if (setPosition != null) __obj.updateDynamic("setPosition")(js.Any.fromFunction3(setPosition))
     if (setRegionWeight != null) __obj.updateDynamic("setRegionWeight")(js.Any.fromFunction1(setRegionWeight))
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction3(show))
     if (showAt != null) __obj.updateDynamic("showAt")(js.Any.fromFunction3(showAt))
     if (showBy != null) __obj.updateDynamic("showBy")(js.Any.fromFunction3(showBy))
     if (toBack != null) __obj.updateDynamic("toBack")(js.Any.fromFunction0(toBack))
     if (toFront != null) __obj.updateDynamic("toFront")(js.Any.fromFunction1(toFront))
-    if (!js.isUndefined(toFrontOnShow)) __obj.updateDynamic("toFrontOnShow")(toFrontOnShow)
+    if (!js.isUndefined(toFrontOnShow)) __obj.updateDynamic("toFrontOnShow")(toFrontOnShow.asInstanceOf[js.Any])
     if (updateBox != null) __obj.updateDynamic("updateBox")(js.Any.fromFunction1(updateBox))
-    if (zIndexManager != null) __obj.updateDynamic("zIndexManager")(zIndexManager)
-    if (zIndexParent != null) __obj.updateDynamic("zIndexParent")(zIndexParent)
+    if (zIndexManager != null) __obj.updateDynamic("zIndexManager")(zIndexManager.asInstanceOf[js.Any])
+    if (zIndexParent != null) __obj.updateDynamic("zIndexParent")(zIndexParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponent]
   }
 }

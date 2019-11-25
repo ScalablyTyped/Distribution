@@ -24,14 +24,14 @@ object IStructureVersionInfo {
     public: IModifierValueHistory = null
   ): IStructureVersionInfo = {
     val __obj = js.Dynamic.literal()
-    if (deleted != null) __obj.updateDynamic("deleted")(deleted)
-    if (deletionMessage != null) __obj.updateDynamic("deletionMessage")(deletionMessage)
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
-    if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage)
-    if (experimental != null) __obj.updateDynamic("experimental")(experimental)
-    if (introduced != null) __obj.updateDynamic("introduced")(introduced)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (public != null) __obj.updateDynamic("public")(public)
+    if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (deletionMessage != null) __obj.updateDynamic("deletionMessage")(deletionMessage.asInstanceOf[js.Any])
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage.asInstanceOf[js.Any])
+    if (experimental != null) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (introduced != null) __obj.updateDynamic("introduced")(introduced.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStructureVersionInfo]
   }
 }

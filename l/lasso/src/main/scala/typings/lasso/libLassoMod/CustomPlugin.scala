@@ -12,7 +12,7 @@ trait CustomPlugin extends js.Object {
 object CustomPlugin {
   @scala.inline
   def apply(config: js.Any, plugin: String): CustomPlugin = {
-    val __obj = js.Dynamic.literal(config = config, plugin = plugin)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomPlugin]
   }

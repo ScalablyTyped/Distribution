@@ -36,7 +36,7 @@ object BuildServer {
     url: String,
     version: Double
   ): BuildServer = {
-    val __obj = js.Dynamic.literal(agents = agents, controller = controller, id = id, isVirtual = isVirtual, messageQueueUrl = messageQueueUrl, name = name, requireClientCertificates = requireClientCertificates, status = status, statusChangedDate = statusChangedDate, uri = uri, url = url, version = version)
+    val __obj = js.Dynamic.literal(agents = agents.asInstanceOf[js.Any], controller = controller.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isVirtual = isVirtual.asInstanceOf[js.Any], messageQueueUrl = messageQueueUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], requireClientCertificates = requireClientCertificates.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusChangedDate = statusChangedDate.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildServer]
   }

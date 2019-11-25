@@ -32,7 +32,7 @@ object IRowCol {
     getIntersectionValueRaw: () => String | Number | js.Object,
     row: IGridRowOf[TEntity]
   ): IRowCol[TEntity] = {
-    val __obj = js.Dynamic.literal(col = col, getIntersectionValueFiltered = js.Any.fromFunction0(getIntersectionValueFiltered), getIntersectionValueRaw = js.Any.fromFunction0(getIntersectionValueRaw), row = row)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], getIntersectionValueFiltered = js.Any.fromFunction0(getIntersectionValueFiltered), getIntersectionValueRaw = js.Any.fromFunction0(getIntersectionValueRaw), row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRowCol[TEntity]]
   }

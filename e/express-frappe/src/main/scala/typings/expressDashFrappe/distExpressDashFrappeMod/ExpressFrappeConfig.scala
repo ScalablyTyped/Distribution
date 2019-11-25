@@ -42,9 +42,9 @@ object ExpressFrappeConfig {
     if (bodyParser != null) __obj.updateDynamic("bodyParser")(bodyParser.asInstanceOf[js.Any])
     if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction4(errorHandler))
-    if (io != null) __obj.updateDynamic("io")(io)
-    if (middleware != null) __obj.updateDynamic("middleware")(middleware)
-    if (!js.isUndefined(morgan)) __obj.updateDynamic("morgan")(morgan)
+    if (io != null) __obj.updateDynamic("io")(io.asInstanceOf[js.Any])
+    if (middleware != null) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
+    if (!js.isUndefined(morgan)) __obj.updateDynamic("morgan")(morgan.asInstanceOf[js.Any])
     if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     if (static != null) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressFrappeConfig]

@@ -45,16 +45,16 @@ object IDescriptorProto {
     reservedRange: js.Array[IReservedRange] = null
   ): IDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (enumType != null) __obj.updateDynamic("enumType")(enumType)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (extensionRange != null) __obj.updateDynamic("extensionRange")(extensionRange)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nestedType != null) __obj.updateDynamic("nestedType")(nestedType)
-    if (oneofDecl != null) __obj.updateDynamic("oneofDecl")(oneofDecl)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (reservedName != null) __obj.updateDynamic("reservedName")(reservedName)
-    if (reservedRange != null) __obj.updateDynamic("reservedRange")(reservedRange)
+    if (enumType != null) __obj.updateDynamic("enumType")(enumType.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (extensionRange != null) __obj.updateDynamic("extensionRange")(extensionRange.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nestedType != null) __obj.updateDynamic("nestedType")(nestedType.asInstanceOf[js.Any])
+    if (oneofDecl != null) __obj.updateDynamic("oneofDecl")(oneofDecl.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (reservedName != null) __obj.updateDynamic("reservedName")(reservedName.asInstanceOf[js.Any])
+    if (reservedRange != null) __obj.updateDynamic("reservedRange")(reservedRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDescriptorProto]
   }
 }

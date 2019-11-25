@@ -31,12 +31,12 @@ object ElementPair {
     types: js.Array[TypeLabelComparison] = null
   ): ElementPair = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (document_label != null) __obj.updateDynamic("document_label")(document_label)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (document_label != null) __obj.updateDynamic("document_label")(document_label.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementPair]
   }
 }

@@ -45,6 +45,8 @@ trait atStorybookComponentsProps {
   @scala.inline
   def PreviewProps: typings.atStorybookComponents.distBlocksPreviewMod.PreviewProps.type = typings.atStorybookComponents.distBlocksPreviewMod.PreviewProps
   type PreviewProps = typings.atStorybookComponents.distBlocksPreviewMod.PreviewProps
+  @scala.inline
+  def PropsTableProps: typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableProps.type = typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableProps
   type PropsTableProps = typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableProps
   @scala.inline
   def ScrollAreaProps: typings.atStorybookComponents.distScrollAreaScrollAreaMod.ScrollAreaProps.type = typings.atStorybookComponents.distScrollAreaScrollAreaMod.ScrollAreaProps

@@ -37,7 +37,7 @@ object Anon_Alert {
     timeout: Int | Double = null
   ): Anon_Alert = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert)
+    if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
     if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (pullUpDown != null) __obj.updateDynamic("pullUpDown")(pullUpDown.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ trait ProcessingModeEventArgs extends EventArgs {
 object ProcessingModeEventArgs {
   @scala.inline
   def apply(processOnServer: Boolean, sender: Control): ProcessingModeEventArgs = {
-    val __obj = js.Dynamic.literal(processOnServer = processOnServer, sender = sender)
+    val __obj = js.Dynamic.literal(processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProcessingModeEventArgs]
   }

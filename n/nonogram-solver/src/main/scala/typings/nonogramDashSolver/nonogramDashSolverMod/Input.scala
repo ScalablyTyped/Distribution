@@ -17,8 +17,8 @@ object Input {
     rows: js.Array[js.Array[Double]],
     content: js.Array[State] = null
   ): Input = {
-    val __obj = js.Dynamic.literal(columns = columns, rows = rows)
-    if (content != null) __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
   }
 }

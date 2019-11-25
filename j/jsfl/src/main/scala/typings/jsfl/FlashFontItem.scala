@@ -38,7 +38,7 @@ object FlashFontItem {
     italic: Boolean,
     size: Double
   ): FlashFontItem = {
-    val __obj = js.Dynamic.literal(bitmap = bitmap, bold = bold, embedRanges = embedRanges, embedVariantGlyphs = embedVariantGlyphs, embeddedCharacters = embeddedCharacters, font = font, isDefineFont4Symbol = isDefineFont4Symbol, italic = italic, size = size)
+    val __obj = js.Dynamic.literal(bitmap = bitmap.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], embedRanges = embedRanges.asInstanceOf[js.Any], embedVariantGlyphs = embedVariantGlyphs.asInstanceOf[js.Any], embeddedCharacters = embeddedCharacters.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], isDefineFont4Symbol = isDefineFont4Symbol.asInstanceOf[js.Any], italic = italic.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlashFontItem]
   }

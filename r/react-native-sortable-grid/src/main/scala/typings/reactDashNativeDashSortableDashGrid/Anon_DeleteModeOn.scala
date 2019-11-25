@@ -11,7 +11,7 @@ trait Anon_DeleteModeOn extends js.Object {
 object Anon_DeleteModeOn {
   @scala.inline
   def apply(deleteModeOn: Boolean): Anon_DeleteModeOn = {
-    val __obj = js.Dynamic.literal(deleteModeOn = deleteModeOn)
+    val __obj = js.Dynamic.literal(deleteModeOn = deleteModeOn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DeleteModeOn]
   }

@@ -150,7 +150,7 @@ trait Options[T] extends js.Object {
   		**Note:** The `default` value will be overwritten by the `defaults` option if set.
   		*/
   val schema: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: conf.conf.Schema}
     */ typings.conf.confStrings.Options with js.Any
   ] = js.undefined
@@ -183,28 +183,28 @@ object Options {
     projectName: String = null,
     projectSuffix: String = null,
     projectVersion: String = null,
-    schema: /* import warning: ImportType.apply c Unsupported type mapping: 
+    schema: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: conf.conf.Schema}
     */ typings.conf.confStrings.Options with js.Any = null,
     serialize: /* value */ T => String = null,
     watch: js.UndefOr[Boolean] = js.undefined
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accessPropertiesByDotNotation)) __obj.updateDynamic("accessPropertiesByDotNotation")(accessPropertiesByDotNotation)
-    if (!js.isUndefined(clearInvalidConfig)) __obj.updateDynamic("clearInvalidConfig")(clearInvalidConfig)
-    if (configName != null) __obj.updateDynamic("configName")(configName)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (!js.isUndefined(accessPropertiesByDotNotation)) __obj.updateDynamic("accessPropertiesByDotNotation")(accessPropertiesByDotNotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearInvalidConfig)) __obj.updateDynamic("clearInvalidConfig")(clearInvalidConfig.asInstanceOf[js.Any])
+    if (configName != null) __obj.updateDynamic("configName")(configName.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
     if (deserialize != null) __obj.updateDynamic("deserialize")(js.Any.fromFunction1(deserialize))
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
-    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension)
-    if (migrations != null) __obj.updateDynamic("migrations")(migrations)
-    if (projectName != null) __obj.updateDynamic("projectName")(projectName)
-    if (projectSuffix != null) __obj.updateDynamic("projectSuffix")(projectSuffix)
-    if (projectVersion != null) __obj.updateDynamic("projectVersion")(projectVersion)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension.asInstanceOf[js.Any])
+    if (migrations != null) __obj.updateDynamic("migrations")(migrations.asInstanceOf[js.Any])
+    if (projectName != null) __obj.updateDynamic("projectName")(projectName.asInstanceOf[js.Any])
+    if (projectSuffix != null) __obj.updateDynamic("projectSuffix")(projectSuffix.asInstanceOf[js.Any])
+    if (projectVersion != null) __obj.updateDynamic("projectVersion")(projectVersion.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[T]]
   }
 }

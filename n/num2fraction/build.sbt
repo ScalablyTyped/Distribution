@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "num2fraction"
-version := "1.2-dt-20190724Z-f839c3"
+version := "1.2-dt-20190724Z-c0810a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

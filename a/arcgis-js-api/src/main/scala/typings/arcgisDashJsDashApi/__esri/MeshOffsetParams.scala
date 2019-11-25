@@ -23,8 +23,8 @@ object MeshOffsetParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     geographic: js.UndefOr[Boolean] = js.undefined
   ): MeshOffsetParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshOffsetParams]
   }
 }

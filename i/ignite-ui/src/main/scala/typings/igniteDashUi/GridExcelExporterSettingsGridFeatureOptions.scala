@@ -83,13 +83,13 @@ object GridExcelExporterSettingsGridFeatureOptions {
     summaries: String = null
   ): GridExcelExporterSettingsGridFeatureOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnfixing != null) __obj.updateDynamic("columnfixing")(columnfixing)
-    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
-    if (hiding != null) __obj.updateDynamic("hiding")(hiding)
-    if (paging != null) __obj.updateDynamic("paging")(paging)
-    if (sorting != null) __obj.updateDynamic("sorting")(sorting)
-    if (summaries != null) __obj.updateDynamic("summaries")(summaries)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnfixing != null) __obj.updateDynamic("columnfixing")(columnfixing.asInstanceOf[js.Any])
+    if (filtering != null) __obj.updateDynamic("filtering")(filtering.asInstanceOf[js.Any])
+    if (hiding != null) __obj.updateDynamic("hiding")(hiding.asInstanceOf[js.Any])
+    if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
+    if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
+    if (summaries != null) __obj.updateDynamic("summaries")(summaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridExcelExporterSettingsGridFeatureOptions]
   }
 }

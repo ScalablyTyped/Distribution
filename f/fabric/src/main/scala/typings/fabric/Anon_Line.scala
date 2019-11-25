@@ -12,7 +12,7 @@ trait Anon_Line extends js.Object {
 object Anon_Line {
   @scala.inline
   def apply(line: Double, offset: Double): Anon_Line = {
-    val __obj = js.Dynamic.literal(line = line, offset = offset)
+    val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Line]
   }

@@ -38,12 +38,12 @@ object FunctionalComponentOptions {
       VNode | js.Array[VNode]
     ] = null
   ): FunctionalComponentOptions[Props, PropDefs] = {
-    val __obj = js.Dynamic.literal(functional = functional)
+    val __obj = js.Dynamic.literal(functional = functional.asInstanceOf[js.Any])
     if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionalComponentOptions[Props, PropDefs]]
   }
 }

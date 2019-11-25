@@ -37,12 +37,12 @@ object DetectFacesParams {
   ): DetectFacesParams = {
     val __obj = js.Dynamic.literal()
     if (accept_language != null) __obj.updateDynamic("accept_language")(accept_language.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (images_file != null) __obj.updateDynamic("images_file")(images_file.asInstanceOf[js.Any])
-    if (images_file_content_type != null) __obj.updateDynamic("images_file_content_type")(images_file_content_type)
-    if (images_filename != null) __obj.updateDynamic("images_filename")(images_filename)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (images_file_content_type != null) __obj.updateDynamic("images_file_content_type")(images_file_content_type.asInstanceOf[js.Any])
+    if (images_filename != null) __obj.updateDynamic("images_filename")(images_filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectFacesParams]
   }
 }

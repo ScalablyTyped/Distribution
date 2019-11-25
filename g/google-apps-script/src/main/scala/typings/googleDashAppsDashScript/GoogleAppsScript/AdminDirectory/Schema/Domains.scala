@@ -26,13 +26,13 @@ object Domains {
     verified: js.UndefOr[Boolean] = js.undefined
   ): Domains = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (domainAliases != null) __obj.updateDynamic("domainAliases")(domainAliases)
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (domainAliases != null) __obj.updateDynamic("domainAliases")(domainAliases.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
     __obj.asInstanceOf[Domains]
   }
 }

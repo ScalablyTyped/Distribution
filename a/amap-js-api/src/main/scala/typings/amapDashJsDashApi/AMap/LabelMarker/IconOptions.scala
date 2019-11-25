@@ -34,15 +34,15 @@ object IconOptions {
     zooms: js.Tuple2[Double, Double] = null
   ): IconOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (angel != null) __obj.updateDynamic("angel")(angel.asInstanceOf[js.Any])
     if (clipOrigin != null) __obj.updateDynamic("clipOrigin")(clipOrigin.asInstanceOf[js.Any])
-    if (clipSize != null) __obj.updateDynamic("clipSize")(clipSize)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (!js.isUndefined(retina)) __obj.updateDynamic("retina")(retina)
+    if (clipSize != null) __obj.updateDynamic("clipSize")(clipSize.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(retina)) __obj.updateDynamic("retina")(retina.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconOptions]
   }
 }

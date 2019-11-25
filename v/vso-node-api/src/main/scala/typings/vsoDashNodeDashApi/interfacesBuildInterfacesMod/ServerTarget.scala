@@ -14,8 +14,8 @@ trait ServerTarget extends PhaseTarget {
 object ServerTarget {
   @scala.inline
   def apply(executionOptions: ServerTargetExecutionOptions, `type`: Double): ServerTarget = {
-    val __obj = js.Dynamic.literal(executionOptions = executionOptions)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(executionOptions = executionOptions.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerTarget]
   }
 }

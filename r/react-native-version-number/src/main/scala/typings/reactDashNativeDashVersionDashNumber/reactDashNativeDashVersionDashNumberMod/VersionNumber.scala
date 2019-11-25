@@ -14,9 +14,9 @@ object VersionNumber {
   @scala.inline
   def apply(appVersion: String = null, buildVersion: String = null, bundleIdentifier: String = null): VersionNumber = {
     val __obj = js.Dynamic.literal()
-    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
-    if (buildVersion != null) __obj.updateDynamic("buildVersion")(buildVersion)
-    if (bundleIdentifier != null) __obj.updateDynamic("bundleIdentifier")(bundleIdentifier)
+    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion.asInstanceOf[js.Any])
+    if (buildVersion != null) __obj.updateDynamic("buildVersion")(buildVersion.asInstanceOf[js.Any])
+    if (bundleIdentifier != null) __obj.updateDynamic("bundleIdentifier")(bundleIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionNumber]
   }
 }

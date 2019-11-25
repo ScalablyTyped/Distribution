@@ -23,7 +23,7 @@ trait Config extends js.Object {
     * An alias of the `defaultSource`-property.
     */
   var default: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['defaultSource'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['defaultSource'] */ js.Any
   ] = js.undefined
   /**
     * The default icon-set to provide.
@@ -37,7 +37,7 @@ trait Config extends js.Object {
     * An alias of the `defaultIconSetUrl`-property.
     */
   var defaultSvgIconSetUrl: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any
   ] = js.undefined
   /**
     * The default size for svg-icons.
@@ -47,13 +47,13 @@ trait Config extends js.Object {
     * An alias of the `defaultIconSetUrl`-property.
     */
   var defaultSvgSetUrl: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `fonts`-property.
     */
   var font: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['fonts'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['fonts'] */ js.Any
   ] = js.undefined
   /**
     * A set of icon-fonts to provide.
@@ -63,19 +63,19 @@ trait Config extends js.Object {
     * An alias of the `icons`-property.
     */
   var icon: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['icons'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['icons'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `svgSets`-property.
     */
   var iconSet: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `svgSets`-property.
     */
   var iconSets: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any
   ] = js.undefined
   /**
     * The icons to provide.
@@ -85,13 +85,13 @@ trait Config extends js.Object {
     * An alias of the `alias`-property.
     */
   var sourceAlias: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['alias'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['alias'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `sprites`-property.
     */
   var sprite: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['sprites'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['sprites'] */ js.Any
   ] = js.undefined
   /**
     * A set of sprite-icons to provide.
@@ -101,7 +101,7 @@ trait Config extends js.Object {
     * An alias of the `svgSets`-property.
     */
   var svgSet: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any
   ] = js.undefined
   /**
     * The svg-sets to provide.
@@ -113,42 +113,42 @@ object Config {
   @scala.inline
   def apply(
     alias: IdentityMap[String, AliasOptions] = null,
-    default: /* import warning: ImportType.apply Failed type conversion: this['defaultSource'] */ js.Any = null,
+    default: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultSource'] */ js.Any = null,
     defaultIconSetUrl: String | SvgIconSetOptions | SvgCumulativeIconSetOptions = null,
     defaultSource: String | Identifiable = null,
-    defaultSvgIconSetUrl: /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = null,
+    defaultSvgIconSetUrl: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = null,
     defaultSvgIconSize: Double | SizeableOptions = null,
-    defaultSvgSetUrl: /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = null,
-    font: /* import warning: ImportType.apply Failed type conversion: this['fonts'] */ js.Any = null,
+    defaultSvgSetUrl: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any = null,
+    font: /* import warning: importer.ImportType#apply Failed type conversion: this['fonts'] */ js.Any = null,
     fonts: IdentityMap[CssClassConfig, CssIconSetOptions] = null,
-    icon: /* import warning: ImportType.apply Failed type conversion: this['icons'] */ js.Any = null,
-    iconSet: /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.Any = null,
-    iconSets: /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.Any = null,
+    icon: /* import warning: importer.ImportType#apply Failed type conversion: this['icons'] */ js.Any = null,
+    iconSet: /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any = null,
+    iconSets: /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any = null,
     icons: IdentityMap[String, ImageIconOptions | SvgIconOptions] = null,
-    sourceAlias: /* import warning: ImportType.apply Failed type conversion: this['alias'] */ js.Any = null,
-    sprite: /* import warning: ImportType.apply Failed type conversion: this['sprites'] */ js.Any = null,
+    sourceAlias: /* import warning: importer.ImportType#apply Failed type conversion: this['alias'] */ js.Any = null,
+    sprite: /* import warning: importer.ImportType#apply Failed type conversion: this['sprites'] */ js.Any = null,
     sprites: IdentityMap[CssClassConfig, CssIconSetOptions] = null,
-    svgSet: /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.Any = null,
+    svgSet: /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any = null,
     svgSets: IdentityMap[String, SvgIconSetOptions | SvgCumulativeIconSetOptions] = null
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (defaultIconSetUrl != null) __obj.updateDynamic("defaultIconSetUrl")(defaultIconSetUrl.asInstanceOf[js.Any])
     if (defaultSource != null) __obj.updateDynamic("defaultSource")(defaultSource.asInstanceOf[js.Any])
-    if (defaultSvgIconSetUrl != null) __obj.updateDynamic("defaultSvgIconSetUrl")(defaultSvgIconSetUrl)
+    if (defaultSvgIconSetUrl != null) __obj.updateDynamic("defaultSvgIconSetUrl")(defaultSvgIconSetUrl.asInstanceOf[js.Any])
     if (defaultSvgIconSize != null) __obj.updateDynamic("defaultSvgIconSize")(defaultSvgIconSize.asInstanceOf[js.Any])
-    if (defaultSvgSetUrl != null) __obj.updateDynamic("defaultSvgSetUrl")(defaultSvgSetUrl)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (defaultSvgSetUrl != null) __obj.updateDynamic("defaultSvgSetUrl")(defaultSvgSetUrl.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconSet != null) __obj.updateDynamic("iconSet")(iconSet)
-    if (iconSets != null) __obj.updateDynamic("iconSets")(iconSets)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconSet != null) __obj.updateDynamic("iconSet")(iconSet.asInstanceOf[js.Any])
+    if (iconSets != null) __obj.updateDynamic("iconSets")(iconSets.asInstanceOf[js.Any])
     if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (sourceAlias != null) __obj.updateDynamic("sourceAlias")(sourceAlias)
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite)
+    if (sourceAlias != null) __obj.updateDynamic("sourceAlias")(sourceAlias.asInstanceOf[js.Any])
+    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
     if (sprites != null) __obj.updateDynamic("sprites")(sprites.asInstanceOf[js.Any])
-    if (svgSet != null) __obj.updateDynamic("svgSet")(svgSet)
+    if (svgSet != null) __obj.updateDynamic("svgSet")(svgSet.asInstanceOf[js.Any])
     if (svgSets != null) __obj.updateDynamic("svgSets")(svgSets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }

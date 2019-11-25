@@ -38,15 +38,15 @@ object Source {
     s3: SourceS3 = null,
     status: Status = null
   ): Source = {
-    val __obj = js.Dynamic.literal(integration_name = integration_name)
-    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb)
-    if (file_upload != null) __obj.updateDynamic("file_upload")(file_upload)
-    if (format_params != null) __obj.updateDynamic("format_params")(format_params)
-    if (gcs != null) __obj.updateDynamic("gcs")(gcs)
-    if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis)
-    if (redshift != null) __obj.updateDynamic("redshift")(redshift)
-    if (s3 != null) __obj.updateDynamic("s3")(s3)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(integration_name = integration_name.asInstanceOf[js.Any])
+    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb.asInstanceOf[js.Any])
+    if (file_upload != null) __obj.updateDynamic("file_upload")(file_upload.asInstanceOf[js.Any])
+    if (format_params != null) __obj.updateDynamic("format_params")(format_params.asInstanceOf[js.Any])
+    if (gcs != null) __obj.updateDynamic("gcs")(gcs.asInstanceOf[js.Any])
+    if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis.asInstanceOf[js.Any])
+    if (redshift != null) __obj.updateDynamic("redshift")(redshift.asInstanceOf[js.Any])
+    if (s3 != null) __obj.updateDynamic("s3")(s3.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

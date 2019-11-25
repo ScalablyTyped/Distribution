@@ -45,17 +45,17 @@ object OperationDefinitionParameterBinding {
     valueSetReference: Reference = null,
     valueSetUri: uri = null
   ): OperationDefinitionParameterBinding = {
-    val __obj = js.Dynamic.literal(strength = strength)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_strength != null) __obj.updateDynamic("_strength")(_strength)
-    if (_valueSetUri != null) __obj.updateDynamic("_valueSetUri")(_valueSetUri)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (valueSetReference != null) __obj.updateDynamic("valueSetReference")(valueSetReference)
-    if (valueSetUri != null) __obj.updateDynamic("valueSetUri")(valueSetUri)
+    val __obj = js.Dynamic.literal(strength = strength.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_strength != null) __obj.updateDynamic("_strength")(_strength.asInstanceOf[js.Any])
+    if (_valueSetUri != null) __obj.updateDynamic("_valueSetUri")(_valueSetUri.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (valueSetReference != null) __obj.updateDynamic("valueSetReference")(valueSetReference.asInstanceOf[js.Any])
+    if (valueSetUri != null) __obj.updateDynamic("valueSetUri")(valueSetUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationDefinitionParameterBinding]
   }
 }

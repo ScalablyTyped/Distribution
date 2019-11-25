@@ -15,8 +15,8 @@ object ReceivedMessage {
   @scala.inline
   def apply(ackId: String = null, message: PubsubMessage = null): ReceivedMessage = {
     val __obj = js.Dynamic.literal()
-    if (ackId != null) __obj.updateDynamic("ackId")(ackId)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (ackId != null) __obj.updateDynamic("ackId")(ackId.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceivedMessage]
   }
 }

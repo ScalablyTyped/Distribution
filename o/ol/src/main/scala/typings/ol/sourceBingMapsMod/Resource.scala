@@ -25,8 +25,8 @@ object Resource {
     zoomMin: Double,
     imageryProviders: js.Array[ImageryProvider] = null
   ): Resource = {
-    val __obj = js.Dynamic.literal(imageHeight = imageHeight, imageUrl = imageUrl, imageUrlSubdomains = imageUrlSubdomains, imageWidth = imageWidth, zoomMax = zoomMax, zoomMin = zoomMin)
-    if (imageryProviders != null) __obj.updateDynamic("imageryProviders")(imageryProviders)
+    val __obj = js.Dynamic.literal(imageHeight = imageHeight.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any], imageUrlSubdomains = imageUrlSubdomains.asInstanceOf[js.Any], imageWidth = imageWidth.asInstanceOf[js.Any], zoomMax = zoomMax.asInstanceOf[js.Any], zoomMin = zoomMin.asInstanceOf[js.Any])
+    if (imageryProviders != null) __obj.updateDynamic("imageryProviders")(imageryProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
 }

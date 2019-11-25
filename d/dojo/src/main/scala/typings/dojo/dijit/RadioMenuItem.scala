@@ -1,7 +1,6 @@
 package typings.dojo.dijit
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.group
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -31,6 +30,14 @@ class RadioMenuItem () extends CheckedMenuItem {
   @JSName("set")
   def set_group(property: group, value: String): Unit = js.native
   @JSName("watch")
-  def watch_group(property: group, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_group(
+    property: group,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

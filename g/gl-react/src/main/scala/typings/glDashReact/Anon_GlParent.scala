@@ -14,7 +14,7 @@ trait Anon_GlParent extends js.Object {
 object Anon_GlParent {
   @scala.inline
   def apply(glParent: Surface[_] | Node, glSurface: Surface[_]): Anon_GlParent = {
-    val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any], glSurface = glSurface)
+    val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any], glSurface = glSurface.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GlParent]
   }

@@ -20,10 +20,10 @@ object MkdirOptions {
     recursive: js.UndefOr[Boolean] = js.undefined,
     success: js.Any => Unit = null
   ): MkdirOptions = {
-    val __obj = js.Dynamic.literal(dirPath = dirPath)
+    val __obj = js.Dynamic.literal(dirPath = dirPath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[MkdirOptions]
   }

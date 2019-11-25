@@ -25,7 +25,7 @@ object NodeSelectorTerm {
     matchExpressions: js.Array[NodeSelectorRequirement],
     matchFields: js.Array[NodeSelectorRequirement]
   ): NodeSelectorTerm = {
-    val __obj = js.Dynamic.literal(matchExpressions = matchExpressions, matchFields = matchFields)
+    val __obj = js.Dynamic.literal(matchExpressions = matchExpressions.asInstanceOf[js.Any], matchFields = matchFields.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeSelectorTerm]
   }

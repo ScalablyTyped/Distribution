@@ -48,10 +48,10 @@ object PlusNativeObjAnimationViewStyles {
     textStyles: PlusNativeObjTextStyles = null
   ): PlusNativeObjAnimationViewStyles = {
     val __obj = js.Dynamic.literal()
-    if (bitmap != null) __obj.updateDynamic("bitmap")(bitmap)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textRect != null) __obj.updateDynamic("textRect")(textRect)
-    if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles)
+    if (bitmap != null) __obj.updateDynamic("bitmap")(bitmap.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textRect != null) __obj.updateDynamic("textRect")(textRect.asInstanceOf[js.Any])
+    if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjAnimationViewStyles]
   }
 }

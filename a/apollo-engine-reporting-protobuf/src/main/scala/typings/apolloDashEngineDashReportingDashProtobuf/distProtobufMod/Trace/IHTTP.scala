@@ -40,13 +40,13 @@ object IHTTP {
     statusCode: Int | Double = null
   ): IHTTP = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHTTP]
   }

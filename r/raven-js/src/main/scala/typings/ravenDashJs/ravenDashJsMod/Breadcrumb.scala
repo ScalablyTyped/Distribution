@@ -22,11 +22,11 @@ object Breadcrumb {
     `type`: BreadcrumbType = null
   ): Breadcrumb = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Breadcrumb]
   }
 }

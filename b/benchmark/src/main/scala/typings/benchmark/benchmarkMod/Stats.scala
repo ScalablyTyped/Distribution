@@ -25,7 +25,7 @@ object Stats {
     sem: Double,
     variance: Double
   ): Stats = {
-    val __obj = js.Dynamic.literal(deviation = deviation, mean = mean, moe = moe, rme = rme, sample = sample, sem = sem, variance = variance)
+    val __obj = js.Dynamic.literal(deviation = deviation.asInstanceOf[js.Any], mean = mean.asInstanceOf[js.Any], moe = moe.asInstanceOf[js.Any], rme = rme.asInstanceOf[js.Any], sample = sample.asInstanceOf[js.Any], sem = sem.asInstanceOf[js.Any], variance = variance.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stats]
   }

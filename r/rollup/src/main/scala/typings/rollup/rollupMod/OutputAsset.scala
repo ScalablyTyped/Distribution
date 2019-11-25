@@ -18,8 +18,8 @@ trait OutputAsset extends js.Object {
 object OutputAsset {
   @scala.inline
   def apply(fileName: String, isAsset: `true`, source: String | Buffer, `type`: asset): OutputAsset = {
-    val __obj = js.Dynamic.literal(fileName = fileName, isAsset = isAsset, source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isAsset = isAsset.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputAsset]
   }
 }

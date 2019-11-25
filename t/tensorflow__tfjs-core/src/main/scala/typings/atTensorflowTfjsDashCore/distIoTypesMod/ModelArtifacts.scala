@@ -70,14 +70,14 @@ object ModelArtifacts {
     weightSpecs: js.Array[WeightsManifestEntry] = null
   ): ModelArtifacts = {
     val __obj = js.Dynamic.literal()
-    if (convertedBy != null) __obj.updateDynamic("convertedBy")(convertedBy)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (generatedBy != null) __obj.updateDynamic("generatedBy")(generatedBy)
+    if (convertedBy != null) __obj.updateDynamic("convertedBy")(convertedBy.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (generatedBy != null) __obj.updateDynamic("generatedBy")(generatedBy.asInstanceOf[js.Any])
     if (modelTopology != null) __obj.updateDynamic("modelTopology")(modelTopology.asInstanceOf[js.Any])
-    if (trainingConfig != null) __obj.updateDynamic("trainingConfig")(trainingConfig)
-    if (userDefinedMetadata != null) __obj.updateDynamic("userDefinedMetadata")(userDefinedMetadata)
-    if (weightData != null) __obj.updateDynamic("weightData")(weightData)
-    if (weightSpecs != null) __obj.updateDynamic("weightSpecs")(weightSpecs)
+    if (trainingConfig != null) __obj.updateDynamic("trainingConfig")(trainingConfig.asInstanceOf[js.Any])
+    if (userDefinedMetadata != null) __obj.updateDynamic("userDefinedMetadata")(userDefinedMetadata.asInstanceOf[js.Any])
+    if (weightData != null) __obj.updateDynamic("weightData")(weightData.asInstanceOf[js.Any])
+    if (weightSpecs != null) __obj.updateDynamic("weightSpecs")(weightSpecs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelArtifacts]
   }
 }

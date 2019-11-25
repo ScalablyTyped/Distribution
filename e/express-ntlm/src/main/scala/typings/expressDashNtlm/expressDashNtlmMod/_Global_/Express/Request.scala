@@ -13,7 +13,7 @@ object Request {
   @scala.inline
   def apply(ntlm: RequestNtlm = null): Request = {
     val __obj = js.Dynamic.literal()
-    if (ntlm != null) __obj.updateDynamic("ntlm")(ntlm)
+    if (ntlm != null) __obj.updateDynamic("ntlm")(ntlm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

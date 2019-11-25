@@ -12,8 +12,8 @@ object FABButtonProps {
   @scala.inline
   def apply(ButtonProps: ButtonProps = null, mini: js.UndefOr[Boolean] = js.undefined): FABButtonProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ButtonProps)
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini)
+    if (ButtonProps != null) js.Dynamic.global.Object.assign(__obj, ButtonProps)
+    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
     __obj.asInstanceOf[FABButtonProps]
   }
 }

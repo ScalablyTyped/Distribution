@@ -68,7 +68,7 @@ object RuleModule {
     if (beforeSendResponse != null) __obj.updateDynamic("beforeSendResponse")(js.Any.fromFunction2(beforeSendResponse))
     if (onConnectError != null) __obj.updateDynamic("onConnectError")(js.Any.fromFunction2(onConnectError))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction2(onError))
-    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleModule]
   }
 }

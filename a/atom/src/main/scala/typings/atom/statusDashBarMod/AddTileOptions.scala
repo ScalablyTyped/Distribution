@@ -20,7 +20,7 @@ trait AddTileOptions extends js.Object {
 object AddTileOptions {
   @scala.inline
   def apply(item: js.Object, priority: Double): AddTileOptions = {
-    val __obj = js.Dynamic.literal(item = item, priority = priority)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddTileOptions]
   }

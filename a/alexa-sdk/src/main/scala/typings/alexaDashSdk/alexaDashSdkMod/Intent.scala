@@ -14,8 +14,8 @@ trait Intent extends js.Object {
 object Intent {
   @scala.inline
   def apply(name: String, slots: Record[String, SlotValue], confirmationStatus: ConfirmationStatuses = null): Intent = {
-    val __obj = js.Dynamic.literal(name = name, slots = slots)
-    if (confirmationStatus != null) __obj.updateDynamic("confirmationStatus")(confirmationStatus)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
+    if (confirmationStatus != null) __obj.updateDynamic("confirmationStatus")(confirmationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Intent]
   }
 }

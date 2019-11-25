@@ -22,7 +22,7 @@ trait Typeofshipit extends js.Object {
   def blTask(name: String, depsOrFn: EmptyCallback): js.Any = js.native
   def blTask(name: String, depsOrFn: EmptyCallback, fn: js.Function0[Unit]): js.Any = js.native
   def emit(name: String): js.Any = js.native
-  def initConfig(config: js.Object): /* import warning: ImportType.apply Failed type conversion: typeof shipit */ js.Any = js.native
+  def initConfig(config: js.Object): /* import warning: importer.ImportType#apply Failed type conversion: typeof shipit */ js.Any = js.native
   def local(command: String): js.Thenable[ShipitLocal] = js.native
   def local(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
   def local(
@@ -48,12 +48,12 @@ trait Typeofshipit extends js.Object {
     options: ExecOptions,
     callback: js.Function3[/* error */ Error, /* stdout */ String, /* stderr */ String, Unit]
   ): js.Thenable[ShipitLocal] = js.native
-  def start(tasks: String*): /* import warning: ImportType.apply Failed type conversion: typeof shipit */ js.Any = js.native
-  def start(tasks: String): /* import warning: ImportType.apply Failed type conversion: typeof shipit */ js.Any = js.native
-  def start(tasks: js.Array[String]): /* import warning: ImportType.apply Failed type conversion: typeof shipit */ js.Any = js.native
-  def task(name: String, depsOrFn: js.Array[String]): /* import warning: ImportType.apply Failed type conversion: typeof shipit */ js.Any = js.native
-  def task(name: String, depsOrFn: js.Array[String], fn: js.Function0[Unit]): /* import warning: ImportType.apply Failed type conversion: typeof shipit */ js.Any = js.native
-  def task(name: String, depsOrFn: EmptyCallback): /* import warning: ImportType.apply Failed type conversion: typeof shipit */ js.Any = js.native
-  def task(name: String, depsOrFn: EmptyCallback, fn: js.Function0[Unit]): /* import warning: ImportType.apply Failed type conversion: typeof shipit */ js.Any = js.native
+  def start(tasks: String*): /* import warning: importer.ImportType#apply Failed type conversion: typeof shipit */ js.Any = js.native
+  def start(tasks: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof shipit */ js.Any = js.native
+  def start(tasks: js.Array[String]): /* import warning: importer.ImportType#apply Failed type conversion: typeof shipit */ js.Any = js.native
+  def task(name: String, depsOrFn: js.Array[String]): /* import warning: importer.ImportType#apply Failed type conversion: typeof shipit */ js.Any = js.native
+  def task(name: String, depsOrFn: js.Array[String], fn: js.Function0[Unit]): /* import warning: importer.ImportType#apply Failed type conversion: typeof shipit */ js.Any = js.native
+  def task(name: String, depsOrFn: EmptyCallback): /* import warning: importer.ImportType#apply Failed type conversion: typeof shipit */ js.Any = js.native
+  def task(name: String, depsOrFn: EmptyCallback, fn: js.Function0[Unit]): /* import warning: importer.ImportType#apply Failed type conversion: typeof shipit */ js.Any = js.native
 }
 

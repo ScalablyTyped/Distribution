@@ -60,11 +60,11 @@ object _ViewDeclaration {
     $uiViewName: String = null
   ): _ViewDeclaration = {
     val __obj = js.Dynamic.literal()
-    if ($context != null) __obj.updateDynamic("$context")($context)
-    if ($name != null) __obj.updateDynamic("$name")($name)
-    if ($type != null) __obj.updateDynamic("$type")($type)
-    if ($uiViewContextAnchor != null) __obj.updateDynamic("$uiViewContextAnchor")($uiViewContextAnchor)
-    if ($uiViewName != null) __obj.updateDynamic("$uiViewName")($uiViewName)
+    if ($context != null) __obj.updateDynamic("$context")($context.asInstanceOf[js.Any])
+    if ($name != null) __obj.updateDynamic("$name")($name.asInstanceOf[js.Any])
+    if ($type != null) __obj.updateDynamic("$type")($type.asInstanceOf[js.Any])
+    if ($uiViewContextAnchor != null) __obj.updateDynamic("$uiViewContextAnchor")($uiViewContextAnchor.asInstanceOf[js.Any])
+    if ($uiViewName != null) __obj.updateDynamic("$uiViewName")($uiViewName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ViewDeclaration]
   }
 }

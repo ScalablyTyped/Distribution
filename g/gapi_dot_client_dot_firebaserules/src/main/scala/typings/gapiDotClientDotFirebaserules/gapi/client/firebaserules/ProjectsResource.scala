@@ -43,7 +43,7 @@ object ProjectsResource {
     rulesets: RulesetsResource,
     test: Anon_Accesstoken => Request[TestRulesetResponse]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(releases = releases, rulesets = rulesets, test = js.Any.fromFunction1(test))
+    val __obj = js.Dynamic.literal(releases = releases.asInstanceOf[js.Any], rulesets = rulesets.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[ProjectsResource]
   }

@@ -31,11 +31,11 @@ object MicrophoneConfig {
     smoothingTimeConstant: Int | Double = null
   ): MicrophoneConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioTrackConstraints != null) __obj.updateDynamic("audioTrackConstraints")(audioTrackConstraints)
+    if (audioTrackConstraints != null) __obj.updateDynamic("audioTrackConstraints")(audioTrackConstraints.asInstanceOf[js.Any])
     if (columnTruncateLength != null) __obj.updateDynamic("columnTruncateLength")(columnTruncateLength.asInstanceOf[js.Any])
     if (fftSize != null) __obj.updateDynamic("fftSize")(fftSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSpectrogram)) __obj.updateDynamic("includeSpectrogram")(includeSpectrogram)
-    if (!js.isUndefined(includeWaveform)) __obj.updateDynamic("includeWaveform")(includeWaveform)
+    if (!js.isUndefined(includeSpectrogram)) __obj.updateDynamic("includeSpectrogram")(includeSpectrogram.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeWaveform)) __obj.updateDynamic("includeWaveform")(includeWaveform.asInstanceOf[js.Any])
     if (numFramesPerSpectrogram != null) __obj.updateDynamic("numFramesPerSpectrogram")(numFramesPerSpectrogram.asInstanceOf[js.Any])
     if (sampleRateHz != null) __obj.updateDynamic("sampleRateHz")(sampleRateHz.asInstanceOf[js.Any])
     if (smoothingTimeConstant != null) __obj.updateDynamic("smoothingTimeConstant")(smoothingTimeConstant.asInstanceOf[js.Any])

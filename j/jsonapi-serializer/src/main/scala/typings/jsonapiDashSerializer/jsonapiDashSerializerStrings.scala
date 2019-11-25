@@ -9,7 +9,7 @@ object jsonapiDashSerializerStrings {
   sealed trait CamelCase extends js.Object
   
   @js.native
-  sealed trait camelCase extends js.Object
+  sealed trait camelCase_ extends js.Object
   
   @js.native
   sealed trait `dash-case` extends js.Object
@@ -32,7 +32,7 @@ object jsonapiDashSerializerStrings {
   @scala.inline
   def CamelCase: CamelCase = "CamelCase".asInstanceOf[CamelCase]
   @scala.inline
-  def camelCase: camelCase = "camelCase".asInstanceOf[camelCase]
+  def camelCase_ : camelCase_ = "camelCase".asInstanceOf[camelCase_]
   @scala.inline
   def `dash-case`: `dash-case` = "dash-case".asInstanceOf[`dash-case`]
   @scala.inline

@@ -17,7 +17,7 @@ object AsObject {
       typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProto.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(fileList = fileList)
+    val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

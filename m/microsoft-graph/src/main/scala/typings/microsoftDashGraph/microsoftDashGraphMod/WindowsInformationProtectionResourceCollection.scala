@@ -15,8 +15,8 @@ object WindowsInformationProtectionResourceCollection {
   @scala.inline
   def apply(displayName: String = null, resources: js.Array[String] = null): WindowsInformationProtectionResourceCollection = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionResourceCollection]
   }
 }

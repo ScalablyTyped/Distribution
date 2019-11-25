@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait StepButtonClasskey extends js.Object
 
+object StepButtonClasskey {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def root: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.root = this.cast("root")
+  @scala.inline
+  def touchRipple: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.touchRipple = this.cast("touchRipple")
+  @scala.inline
+  def vertical: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical = this.cast("vertical")
+}
+

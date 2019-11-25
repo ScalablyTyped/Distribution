@@ -19,8 +19,8 @@ object Options {
   @scala.inline
   def apply(cwd: String = null, extension: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

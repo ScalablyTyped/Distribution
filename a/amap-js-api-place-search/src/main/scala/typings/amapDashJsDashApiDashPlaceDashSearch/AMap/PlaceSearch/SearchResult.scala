@@ -31,9 +31,9 @@ object SearchResult {
     cityList: js.Array[CityInfo] = null,
     keywordList: js.Array[String] = null
   ): SearchResult = {
-    val __obj = js.Dynamic.literal(info = info, poiList = poiList)
-    if (cityList != null) __obj.updateDynamic("cityList")(cityList)
-    if (keywordList != null) __obj.updateDynamic("keywordList")(keywordList)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], poiList = poiList.asInstanceOf[js.Any])
+    if (cityList != null) __obj.updateDynamic("cityList")(cityList.asInstanceOf[js.Any])
+    if (keywordList != null) __obj.updateDynamic("keywordList")(keywordList.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }
 }

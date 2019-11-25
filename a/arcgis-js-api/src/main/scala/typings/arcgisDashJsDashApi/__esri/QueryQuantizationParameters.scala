@@ -50,9 +50,9 @@ object QueryQuantizationParameters {
     originPosition: `upper-left` | `lower-left` = null,
     tolerance: Int | Double = null
   ): QueryQuantizationParameters = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (originPosition != null) __obj.updateDynamic("originPosition")(originPosition.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryQuantizationParameters]

@@ -13,7 +13,7 @@ import typings.reactDashDataDashGrid.reactDashDataDashGridStrings.NONE
 import typings.reactDashDataDashGrid.reactDashDataDashGridStrings.changeRow
 import typings.reactDashDataDashGrid.reactDashDataDashGridStrings.loopOverRow
 import typings.reactDashDataDashGrid.reactDashDataDashGridStrings.multi
-import typings.reactDashDataDashGrid.reactDashDataDashGridStrings.none
+import typings.reactDashDataDashGrid.reactDashDataDashGridStrings.none_
 import typings.reactDashDataDashGrid.reactDashDataDashGridStrings.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ trait GridProps[T] extends js.Object {
     * 'none' will do nothing.
     * @default none
     */
-  var cellNavigationMode: js.UndefOr[none | loopOverRow | changeRow] = js.undefined
+  var cellNavigationMode: js.UndefOr[none_ | loopOverRow | changeRow] = js.undefined
   /**
     * The columns to render.
     */
@@ -252,7 +252,7 @@ object GridProps {
   def apply[T](
     rowGetter: js.Array[T] | (js.Function1[/* rowIdx */ Double, T]),
     rowsCount: Double,
-    cellNavigationMode: none | loopOverRow | changeRow = null,
+    cellNavigationMode: none_ | loopOverRow | changeRow = null,
     columns: js.Array[Column[T]] = null,
     contextMenu: ReactElement = null,
     emptyRowsView: (ComponentClass[_, ComponentState]) | StatelessComponent[_] = null,
@@ -295,13 +295,13 @@ object GridProps {
     sortDirection: ASC | DESC | NONE = null,
     toolbar: ReactElement = null
   ): GridProps[T] = {
-    val __obj = js.Dynamic.literal(rowGetter = rowGetter.asInstanceOf[js.Any], rowsCount = rowsCount)
+    val __obj = js.Dynamic.literal(rowGetter = rowGetter.asInstanceOf[js.Any], rowsCount = rowsCount.asInstanceOf[js.Any])
     if (cellNavigationMode != null) __obj.updateDynamic("cellNavigationMode")(cellNavigationMode.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (emptyRowsView != null) __obj.updateDynamic("emptyRowsView")(emptyRowsView.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellSelect)) __obj.updateDynamic("enableCellSelect")(enableCellSelect)
-    if (!js.isUndefined(enableDragAndDrop)) __obj.updateDynamic("enableDragAndDrop")(enableDragAndDrop)
+    if (!js.isUndefined(enableCellSelect)) __obj.updateDynamic("enableCellSelect")(enableCellSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDragAndDrop)) __obj.updateDynamic("enableDragAndDrop")(enableDragAndDrop.asInstanceOf[js.Any])
     if (enableRowSelect != null) __obj.updateDynamic("enableRowSelect")(enableRowSelect.asInstanceOf[js.Any])
     if (getCellActions != null) __obj.updateDynamic("getCellActions")(js.Any.fromFunction2(getCellActions))
     if (getSubRowDetails != null) __obj.updateDynamic("getSubRowDetails")(js.Any.fromFunction1(getSubRowDetails))
@@ -330,14 +330,14 @@ object GridProps {
     if (rowActionsCell != null) __obj.updateDynamic("rowActionsCell")(rowActionsCell.asInstanceOf[js.Any])
     if (rowGroupRenderer != null) __obj.updateDynamic("rowGroupRenderer")(rowGroupRenderer.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
+    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(rowRenderer.asInstanceOf[js.Any])
     if (rowScrollTimeout != null) __obj.updateDynamic("rowScrollTimeout")(rowScrollTimeout.asInstanceOf[js.Any])
-    if (rowSelection != null) __obj.updateDynamic("rowSelection")(rowSelection)
+    if (rowSelection != null) __obj.updateDynamic("rowSelection")(rowSelection.asInstanceOf[js.Any])
     if (selectAllRenderer != null) __obj.updateDynamic("selectAllRenderer")(selectAllRenderer.asInstanceOf[js.Any])
-    if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn)
+    if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn.asInstanceOf[js.Any])
     if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps[T]]
   }
 }

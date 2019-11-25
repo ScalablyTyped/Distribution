@@ -20,10 +20,10 @@ object SubscriptionOptions {
     update: js.UndefOr[Boolean] = js.undefined
   ): SubscriptionOptions = {
     val __obj = js.Dynamic.literal()
-    if (includeLinkingObjects != null) __obj.updateDynamic("includeLinkingObjects")(includeLinkingObjects)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (includeLinkingObjects != null) __obj.updateDynamic("includeLinkingObjects")(includeLinkingObjects.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (timeToLive != null) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionOptions]
   }
 }

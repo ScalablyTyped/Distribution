@@ -78,13 +78,13 @@ object RemoteMethodArgument {
     required: js.UndefOr[Boolean] = js.undefined,
     root: js.UndefOr[Boolean] = js.undefined
   ): RemoteMethodArgument = {
-    val __obj = js.Dynamic.literal(arg = arg)
+    val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (http != null) __obj.updateDynamic("http")(http)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root)
+    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteMethodArgument]
   }
 }

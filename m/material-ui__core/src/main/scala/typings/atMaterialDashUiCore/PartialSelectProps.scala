@@ -198,170 +198,89 @@ trait PartialSelectProps extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var native: js.UndefOr[Boolean] = js.undefined
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onAbortCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
-  var onAnimationEndCapture: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
-  var onAnimationIterationCapture: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
-  var onAnimationStartCapture: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onAuxClickCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
-  var onBeforeInputCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
-  var onBlurCapture: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onCanPlayCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onCanPlayThroughCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode, Unit]
   ] = js.undefined
-  var onChangeCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onClickCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onClose: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
   var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
-  var onCompositionEndCapture: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
-  var onCompositionStartCapture: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
-  var onCompositionUpdateCapture: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onContextMenuCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
-  var onCopyCapture: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   var onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
-  var onCutCapture: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onDoubleClickCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onDrag: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
-  var onDragCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   var onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
-  var onDragEndCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   var onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
-  var onDragEnterCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   var onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
-  var onDragExitCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   var onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
-  var onDragLeaveCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   var onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
-  var onDragOverCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   var onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
-  var onDragStartCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   var onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
-  var onDropCapture: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   var onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onDurationChangeCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onEmptiedCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onEncryptedCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onEndedCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onErrorCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onFilled: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
-  var onFocusCapture: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
-  var onGotPointerCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onGotPointerCaptureCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
-  var onInputCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
-  var onInvalidCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement | HTMLInputElement]] = js.undefined
-  var onKeyDownCapture: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
-  var onKeyPressCapture: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement | HTMLInputElement]] = js.undefined
-  var onKeyUpCapture: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   var onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onLoadCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onLoadStartCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onLoadedDataCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onLoadedMetadataCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onLostPointerCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onLostPointerCaptureCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onMouseDownCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onMouseMoveCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onMouseOutCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onMouseOverCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onMouseUpCapture: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   var onOpen: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
   var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
-  var onPasteCapture: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   var onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onPauseCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onPlayCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onPlayingCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onPointerCancelCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onPointerDownCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onPointerEnterCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onPointerLeaveCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onPointerMoveCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onPointerOutCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onPointerOverCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  var onPointerUpCapture: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onProgressCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onRateChangeCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
-  var onResetCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
-  var onScrollCapture: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onSeekedCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onSeekingCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onSelectCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onStalledCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
-  var onSubmitCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onSuspendCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onTimeUpdateCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
-  var onTouchCancelCapture: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
-  var onTouchEndCapture: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   var onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
-  var onTouchMoveCapture: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
-  var onTouchStartCapture: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
-  var onTransitionEndCapture: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
   var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onVolumeChangeCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  var onWaitingCapture: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
-  var onWheelCapture: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
   var open: js.UndefOr[Boolean] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
@@ -621,103 +540,103 @@ object PartialSelectProps {
   ): PartialSelectProps = {
     val __obj = js.Dynamic.literal()
     if (IconComponent != null) __obj.updateDynamic("IconComponent")(IconComponent.asInstanceOf[js.Any])
-    if (MenuProps != null) __obj.updateDynamic("MenuProps")(MenuProps)
-    if (SelectDisplayProps != null) __obj.updateDynamic("SelectDisplayProps")(SelectDisplayProps)
-    if (about != null) __obj.updateDynamic("about")(about)
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`)
+    if (MenuProps != null) __obj.updateDynamic("MenuProps")(MenuProps.asInstanceOf[js.Any])
+    if (SelectDisplayProps != null) __obj.updateDynamic("SelectDisplayProps")(SelectDisplayProps.asInstanceOf[js.Any])
+    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
+    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`)
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
     if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
     if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
     if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`)
+    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`)
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`)
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`)
+    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
+    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`)
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`)
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`)
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`)
+    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`)
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`)
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`)
+    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
+    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
+    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
     if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`)
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`)
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`)
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`)
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`)
+    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
+    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
     if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`)
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`)
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`)
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
     if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
     if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
     if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`)
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
     if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
     if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
     if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
     if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`)
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect)
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave)
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
+    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
+    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
+    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
+    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable)
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu)
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML)
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype)
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
+    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
+    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (!js.isUndefined(disableUnderline)) __obj.updateDynamic("disableUnderline")(disableUnderline)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(displayEmpty)) __obj.updateDynamic("displayEmpty")(displayEmpty)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableUnderline)) __obj.updateDynamic("disableUnderline")(disableUnderline.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayEmpty)) __obj.updateDynamic("displayEmpty")(displayEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (endAdornment != null) __obj.updateDynamic("endAdornment")(endAdornment.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (inputComponent != null) __obj.updateDynamic("inputComponent")(inputComponent.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is)
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID)
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef)
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope)
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
+    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
+    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
+    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native)
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
@@ -800,36 +719,36 @@ object PartialSelectProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (renderPrefix != null) __obj.updateDynamic("renderPrefix")(js.Any.fromFunction1(renderPrefix))
     if (renderValue != null) __obj.updateDynamic("renderValue")(js.Any.fromFunction1(renderValue))
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (rowsMax != null) __obj.updateDynamic("rowsMax")(rowsMax.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security)
-    if (slot != null) __obj.updateDynamic("slot")(slot)
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
     if (startAdornment != null) __obj.updateDynamic("startAdornment")(startAdornment.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning)
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (typeof != null) __obj.updateDynamic("typeof")(typeof)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
-    if (vocab != null) __obj.updateDynamic("vocab")(vocab)
+    if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialSelectProps]
   }
 }

@@ -21,10 +21,10 @@ object InitialProps {
     shell: js.UndefOr[Boolean] = js.undefined,
     shellManifestUrl: String = null
   ): InitialProps = {
-    val __obj = js.Dynamic.literal(exp = exp)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(shell)) __obj.updateDynamic("shell")(shell)
-    if (shellManifestUrl != null) __obj.updateDynamic("shellManifestUrl")(shellManifestUrl)
+    val __obj = js.Dynamic.literal(exp = exp.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(shell)) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
+    if (shellManifestUrl != null) __obj.updateDynamic("shellManifestUrl")(shellManifestUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialProps]
   }
 }

@@ -12,7 +12,7 @@ trait Format extends js.Object {
 object Format {
   @scala.inline
   def apply(indent: Double, trailing: Boolean): Format = {
-    val __obj = js.Dynamic.literal(indent = indent, trailing = trailing)
+    val __obj = js.Dynamic.literal(indent = indent.asInstanceOf[js.Any], trailing = trailing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Format]
   }

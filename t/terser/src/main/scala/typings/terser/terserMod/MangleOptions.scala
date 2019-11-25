@@ -29,14 +29,14 @@ object MangleOptions {
     toplevel: js.UndefOr[Boolean] = js.undefined
   ): MangleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval)
+    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval.asInstanceOf[js.Any])
     if (keep_classnames != null) __obj.updateDynamic("keep_classnames")(keep_classnames.asInstanceOf[js.Any])
     if (keep_fnames != null) __obj.updateDynamic("keep_fnames")(keep_fnames.asInstanceOf[js.Any])
-    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module)
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (reserved != null) __obj.updateDynamic("reserved")(reserved)
-    if (!js.isUndefined(safari10)) __obj.updateDynamic("safari10")(safari10)
-    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel)
+    if (reserved != null) __obj.updateDynamic("reserved")(reserved.asInstanceOf[js.Any])
+    if (!js.isUndefined(safari10)) __obj.updateDynamic("safari10")(safari10.asInstanceOf[js.Any])
+    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[MangleOptions]
   }
 }

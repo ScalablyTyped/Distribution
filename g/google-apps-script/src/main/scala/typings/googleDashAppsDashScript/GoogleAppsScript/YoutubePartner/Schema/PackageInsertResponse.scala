@@ -20,10 +20,10 @@ object PackageInsertResponse {
     status: String = null
   ): PackageInsertResponse = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageInsertResponse]
   }
 }

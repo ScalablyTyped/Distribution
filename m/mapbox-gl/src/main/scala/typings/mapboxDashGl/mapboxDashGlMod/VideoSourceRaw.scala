@@ -17,9 +17,9 @@ object VideoSourceRaw {
   @scala.inline
   def apply(`type`: video, coordinates: js.Array[js.Array[Double]] = null, urls: js.Array[String] = null): VideoSourceRaw = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSourceRaw]
   }
 }

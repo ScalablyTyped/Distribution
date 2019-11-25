@@ -31,13 +31,13 @@ object PerMessageDeflateOptions {
   ): PerMessageDeflateOptions = {
     val __obj = js.Dynamic.literal()
     if (clientMaxWindowBits != null) __obj.updateDynamic("clientMaxWindowBits")(clientMaxWindowBits.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientNoContextTakeover)) __obj.updateDynamic("clientNoContextTakeover")(clientNoContextTakeover)
+    if (!js.isUndefined(clientNoContextTakeover)) __obj.updateDynamic("clientNoContextTakeover")(clientNoContextTakeover.asInstanceOf[js.Any])
     if (concurrencyLimit != null) __obj.updateDynamic("concurrencyLimit")(concurrencyLimit.asInstanceOf[js.Any])
     if (serverMaxWindowBits != null) __obj.updateDynamic("serverMaxWindowBits")(serverMaxWindowBits.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverNoContextTakeover)) __obj.updateDynamic("serverNoContextTakeover")(serverNoContextTakeover)
+    if (!js.isUndefined(serverNoContextTakeover)) __obj.updateDynamic("serverNoContextTakeover")(serverNoContextTakeover.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (zlibDeflateOptions != null) __obj.updateDynamic("zlibDeflateOptions")(zlibDeflateOptions)
-    if (zlibInflateOptions != null) __obj.updateDynamic("zlibInflateOptions")(zlibInflateOptions)
+    if (zlibDeflateOptions != null) __obj.updateDynamic("zlibDeflateOptions")(zlibDeflateOptions.asInstanceOf[js.Any])
+    if (zlibInflateOptions != null) __obj.updateDynamic("zlibInflateOptions")(zlibInflateOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerMessageDeflateOptions]
   }
 }

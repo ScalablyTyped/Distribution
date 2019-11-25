@@ -42,12 +42,12 @@ object DialogTheme {
     title: String = null
   ): DialogTheme = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (dialog != null) __obj.updateDynamic("dialog")(dialog)
-    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (dialog != null) __obj.updateDynamic("dialog")(dialog.asInstanceOf[js.Any])
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogTheme]
   }
 }

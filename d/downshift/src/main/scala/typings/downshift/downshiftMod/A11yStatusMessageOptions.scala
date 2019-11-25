@@ -27,7 +27,7 @@ object A11yStatusMessageOptions {
     selectedItem: Item,
     highlightedIndex: Int | Double = null
   ): A11yStatusMessageOptions[Item] = {
-    val __obj = js.Dynamic.literal(highlightedItem = highlightedItem.asInstanceOf[js.Any], inputValue = inputValue, isOpen = isOpen, itemToString = js.Any.fromFunction1(itemToString), previousResultCount = previousResultCount, resultCount = resultCount, selectedItem = selectedItem.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(highlightedItem = highlightedItem.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], itemToString = js.Any.fromFunction1(itemToString), previousResultCount = previousResultCount.asInstanceOf[js.Any], resultCount = resultCount.asInstanceOf[js.Any], selectedItem = selectedItem.asInstanceOf[js.Any])
     if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[A11yStatusMessageOptions[Item]]
   }

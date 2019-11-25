@@ -53,12 +53,12 @@ object IgTreeGridDataSourceSettings {
     propertyExpanded: js.Any = null
   ): IgTreeGridDataSourceSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dataLevelKey != null) __obj.updateDynamic("dataLevelKey")(dataLevelKey)
-    if (expandedKey != null) __obj.updateDynamic("expandedKey")(expandedKey)
-    if (!js.isUndefined(initialFlatDataView)) __obj.updateDynamic("initialFlatDataView")(initialFlatDataView)
-    if (propertyDataLevel != null) __obj.updateDynamic("propertyDataLevel")(propertyDataLevel)
-    if (propertyExpanded != null) __obj.updateDynamic("propertyExpanded")(propertyExpanded)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dataLevelKey != null) __obj.updateDynamic("dataLevelKey")(dataLevelKey.asInstanceOf[js.Any])
+    if (expandedKey != null) __obj.updateDynamic("expandedKey")(expandedKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialFlatDataView)) __obj.updateDynamic("initialFlatDataView")(initialFlatDataView.asInstanceOf[js.Any])
+    if (propertyDataLevel != null) __obj.updateDynamic("propertyDataLevel")(propertyDataLevel.asInstanceOf[js.Any])
+    if (propertyExpanded != null) __obj.updateDynamic("propertyExpanded")(propertyExpanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridDataSourceSettings]
   }
 }

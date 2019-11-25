@@ -49,7 +49,7 @@ object ContainerStateTerminated {
     signal: Double,
     startedAt: String
   ): ContainerStateTerminated = {
-    val __obj = js.Dynamic.literal(containerID = containerID, exitCode = exitCode, finishedAt = finishedAt, message = message, reason = reason, signal = signal, startedAt = startedAt)
+    val __obj = js.Dynamic.literal(containerID = containerID.asInstanceOf[js.Any], exitCode = exitCode.asInstanceOf[js.Any], finishedAt = finishedAt.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any], startedAt = startedAt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContainerStateTerminated]
   }

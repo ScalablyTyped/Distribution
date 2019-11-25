@@ -13,7 +13,7 @@ trait CollectionChange extends js.Object {
 object CollectionChange {
   @scala.inline
   def apply(name: String, obj: js.Any, operation: String): CollectionChange = {
-    val __obj = js.Dynamic.literal(name = name, obj = obj, operation = operation)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollectionChange]
   }

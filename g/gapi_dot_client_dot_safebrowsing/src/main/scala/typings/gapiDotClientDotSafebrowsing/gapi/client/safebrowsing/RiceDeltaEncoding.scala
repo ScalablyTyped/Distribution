@@ -34,8 +34,8 @@ object RiceDeltaEncoding {
     riceParameter: Int | Double = null
   ): RiceDeltaEncoding = {
     val __obj = js.Dynamic.literal()
-    if (encodedData != null) __obj.updateDynamic("encodedData")(encodedData)
-    if (firstValue != null) __obj.updateDynamic("firstValue")(firstValue)
+    if (encodedData != null) __obj.updateDynamic("encodedData")(encodedData.asInstanceOf[js.Any])
+    if (firstValue != null) __obj.updateDynamic("firstValue")(firstValue.asInstanceOf[js.Any])
     if (numEntries != null) __obj.updateDynamic("numEntries")(numEntries.asInstanceOf[js.Any])
     if (riceParameter != null) __obj.updateDynamic("riceParameter")(riceParameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[RiceDeltaEncoding]

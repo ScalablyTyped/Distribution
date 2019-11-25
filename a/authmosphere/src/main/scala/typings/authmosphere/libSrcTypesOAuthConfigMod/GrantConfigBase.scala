@@ -22,10 +22,10 @@ object GrantConfigBase {
     queryParams: StringDictionary[String] = null,
     scopes: js.Array[String] = null
   ): GrantConfigBase = {
-    val __obj = js.Dynamic.literal(accessTokenEndpoint = accessTokenEndpoint, grantType = grantType)
-    if (bodyParams != null) __obj.updateDynamic("bodyParams")(bodyParams)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(accessTokenEndpoint = accessTokenEndpoint.asInstanceOf[js.Any], grantType = grantType.asInstanceOf[js.Any])
+    if (bodyParams != null) __obj.updateDynamic("bodyParams")(bodyParams.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantConfigBase]
   }
 }

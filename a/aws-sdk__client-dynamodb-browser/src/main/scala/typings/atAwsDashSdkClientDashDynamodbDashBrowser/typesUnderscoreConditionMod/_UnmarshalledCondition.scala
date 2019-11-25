@@ -33,7 +33,7 @@ object _UnmarshalledCondition {
     AttributeValueList: js.Array[_UnmarshalledAttributeValue] = null
   ): _UnmarshalledCondition = {
     val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any])
-    if (AttributeValueList != null) __obj.updateDynamic("AttributeValueList")(AttributeValueList)
+    if (AttributeValueList != null) __obj.updateDynamic("AttributeValueList")(AttributeValueList.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledCondition]
   }
 }

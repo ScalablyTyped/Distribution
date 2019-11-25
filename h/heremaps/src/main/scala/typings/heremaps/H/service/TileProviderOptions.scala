@@ -16,7 +16,7 @@ object TileProviderOptions {
   @scala.inline
   def apply(crossOrigin: js.UndefOr[Boolean] = js.undefined): TileProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(crossOrigin)) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (!js.isUndefined(crossOrigin)) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileProviderOptions]
   }
 }

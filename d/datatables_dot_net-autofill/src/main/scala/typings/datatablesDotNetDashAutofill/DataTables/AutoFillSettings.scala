@@ -28,8 +28,8 @@ object AutoFillSettings {
     enable: js.UndefOr[Boolean] = js.undefined
   ): AutoFillSettings = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysAsk)) __obj.updateDynamic("alwaysAsk")(alwaysAsk)
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (!js.isUndefined(alwaysAsk)) __obj.updateDynamic("alwaysAsk")(alwaysAsk.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoFillSettings]
   }
 }

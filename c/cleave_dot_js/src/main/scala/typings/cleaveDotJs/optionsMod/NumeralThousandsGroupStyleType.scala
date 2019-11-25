@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait NumeralThousandsGroupStyleType extends js.Object
 
+object NumeralThousandsGroupStyleType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def lakh: typings.cleaveDotJs.cleaveDotJsStrings.lakh = this.cast("lakh")
+  @scala.inline
+  def none: typings.cleaveDotJs.cleaveDotJsStrings.none = this.cast("none")
+  @scala.inline
+  def thousand: typings.cleaveDotJs.cleaveDotJsStrings.thousand = this.cast("thousand")
+  @scala.inline
+  def wan: typings.cleaveDotJs.cleaveDotJsStrings.wan = this.cast("wan")
+}
+

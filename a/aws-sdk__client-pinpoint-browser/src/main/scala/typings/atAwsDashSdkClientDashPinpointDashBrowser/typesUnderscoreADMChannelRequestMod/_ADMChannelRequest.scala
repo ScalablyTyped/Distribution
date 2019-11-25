@@ -23,9 +23,9 @@ object _ADMChannelRequest {
   @scala.inline
   def apply(ClientId: String = null, ClientSecret: String = null, Enabled: js.UndefOr[Boolean] = js.undefined): _ADMChannelRequest = {
     val __obj = js.Dynamic.literal()
-    if (ClientId != null) __obj.updateDynamic("ClientId")(ClientId)
-    if (ClientSecret != null) __obj.updateDynamic("ClientSecret")(ClientSecret)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
+    if (ClientId != null) __obj.updateDynamic("ClientId")(ClientId.asInstanceOf[js.Any])
+    if (ClientSecret != null) __obj.updateDynamic("ClientSecret")(ClientSecret.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ADMChannelRequest]
   }
 }

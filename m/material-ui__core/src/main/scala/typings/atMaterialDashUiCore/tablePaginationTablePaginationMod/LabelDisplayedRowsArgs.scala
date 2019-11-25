@@ -14,7 +14,7 @@ trait LabelDisplayedRowsArgs extends js.Object {
 object LabelDisplayedRowsArgs {
   @scala.inline
   def apply(count: Double, from: Double, page: Double, to: Double): LabelDisplayedRowsArgs = {
-    val __obj = js.Dynamic.literal(count = count, from = from, page = page, to = to)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LabelDisplayedRowsArgs]
   }

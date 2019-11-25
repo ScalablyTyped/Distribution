@@ -36,17 +36,17 @@ object PartialStyleRulesListItemClassKey {
     selected: CSSProperties = null
   ): PartialStyleRulesListItemClassKey = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (dense != null) __obj.updateDynamic("dense")(dense)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (divider != null) __obj.updateDynamic("divider")(divider)
-    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible)
-    if (gutters != null) __obj.updateDynamic("gutters")(gutters)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (secondaryAction != null) __obj.updateDynamic("secondaryAction")(secondaryAction)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (dense != null) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible.asInstanceOf[js.Any])
+    if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (secondaryAction != null) __obj.updateDynamic("secondaryAction")(secondaryAction.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesListItemClassKey]
   }
 }

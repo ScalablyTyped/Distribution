@@ -228,7 +228,7 @@ object dojoStrings {
   sealed trait autoWidth extends js.Object
   
   @js.native
-  sealed trait autofocus extends js.Object
+  sealed trait autofocus_ extends js.Object
   
   @js.native
   sealed trait back extends js.Object
@@ -2877,9 +2877,6 @@ object dojoStrings {
   sealed trait toolTip extends js.Object
   
   @js.native
-  sealed trait tooltip extends js.Object
-  
-  @js.native
   sealed trait tooltipAttr extends js.Object
   
   @js.native
@@ -2887,6 +2884,9 @@ object dojoStrings {
   
   @js.native
   sealed trait tooltipPosition extends js.Object
+  
+  @js.native
+  sealed trait tooltip_ extends js.Object
   
   @js.native
   sealed trait top extends js.Object
@@ -3280,7 +3280,7 @@ object dojoStrings {
   @scala.inline
   def autoWidth: autoWidth = "autoWidth".asInstanceOf[autoWidth]
   @scala.inline
-  def autofocus: autofocus = "autofocus".asInstanceOf[autofocus]
+  def autofocus_ : autofocus_ = "autofocus".asInstanceOf[autofocus_]
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   @scala.inline
@@ -5046,13 +5046,13 @@ object dojoStrings {
   @scala.inline
   def toolTip: toolTip = "toolTip".asInstanceOf[toolTip]
   @scala.inline
-  def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
-  @scala.inline
   def tooltipAttr: tooltipAttr = "tooltipAttr".asInstanceOf[tooltipAttr]
   @scala.inline
   def tooltipIndex: tooltipIndex = "tooltipIndex".asInstanceOf[tooltipIndex]
   @scala.inline
   def tooltipPosition: tooltipPosition = "tooltipPosition".asInstanceOf[tooltipPosition]
+  @scala.inline
+  def tooltip_ : tooltip_ = "tooltip".asInstanceOf[tooltip_]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

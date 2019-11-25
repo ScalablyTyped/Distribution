@@ -31,10 +31,10 @@ object InfiniteScrollProps {
   ): InfiniteScrollProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (onMore != null) __obj.updateDynamic("onMore")(js.Any.fromFunction1(onMore))
     if (renderMarker != null) __obj.updateDynamic("renderMarker")(js.Any.fromFunction1(renderMarker))
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     if (scrollableAncestor != null) __obj.updateDynamic("scrollableAncestor")(scrollableAncestor.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])

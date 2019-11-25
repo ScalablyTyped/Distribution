@@ -19,8 +19,8 @@ object AbortErrorClass {
     originalError: Error,
     stack: String = null
   ): AbortErrorClass = {
-    val __obj = js.Dynamic.literal(message = message, name = name, originalError = originalError)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], originalError = originalError.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortErrorClass]
   }
 }

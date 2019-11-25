@@ -31,16 +31,16 @@ object CoinHiveProps {
     throttle: Int | Double = null,
     userName: String = null
   ): CoinHiveProps = {
-    val __obj = js.Dynamic.literal(siteKey = siteKey)
-    if (!js.isUndefined(autoThreads)) __obj.updateDynamic("autoThreads")(autoThreads)
+    val __obj = js.Dynamic.literal(siteKey = siteKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoThreads)) __obj.updateDynamic("autoThreads")(autoThreads.asInstanceOf[js.Any])
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction1(onInit))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
     if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1(onStop))
-    if (!js.isUndefined(run)) __obj.updateDynamic("run")(run)
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (!js.isUndefined(run)) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoinHiveProps]
   }
 }

@@ -22,7 +22,7 @@ trait RemoveAttributesOutput extends OutputTypesUnion {
 object RemoveAttributesOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, AttributesResource: _UnmarshalledAttributesResource): RemoveAttributesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, AttributesResource = AttributesResource)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], AttributesResource = AttributesResource.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RemoveAttributesOutput]
   }

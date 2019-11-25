@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait DialogType extends js.Object
 
+object DialogType {
+  @scala.inline
+  def alert: typings.puppeteer.puppeteerStrings.alert = this.cast("alert")
+  @scala.inline
+  def beforeunload: typings.puppeteer.puppeteerStrings.beforeunload = this.cast("beforeunload")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def confirm: typings.puppeteer.puppeteerStrings.confirm = this.cast("confirm")
+  @scala.inline
+  def prompt: typings.puppeteer.puppeteerStrings.prompt = this.cast("prompt")
+}
+

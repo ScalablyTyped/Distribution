@@ -976,7 +976,7 @@ object arcgisDashJsDashApiStrings {
   sealed trait imperial extends js.Object
   
   @js.native
-  sealed trait in extends js.Object
+  sealed trait in_ extends js.Object
   
   @js.native
   sealed trait inches extends js.Object
@@ -2807,7 +2807,7 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def imperial: imperial = "imperial".asInstanceOf[imperial]
   @scala.inline
-  def in: in = "in".asInstanceOf[in]
+  def in_ : in_ = "in".asInstanceOf[in_]
   @scala.inline
   def inches: inches = "inches".asInstanceOf[inches]
   @scala.inline

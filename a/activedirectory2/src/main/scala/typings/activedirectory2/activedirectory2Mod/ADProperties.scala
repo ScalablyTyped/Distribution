@@ -37,11 +37,11 @@ object ADProperties {
     pageSize: `1000` = null,
     referrals: Anon_Enabled = null
   ): ADProperties = {
-    val __obj = js.Dynamic.literal(baseDN = baseDN, password = password, url = url, username = username)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(baseDN = baseDN.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (entryParser != null) __obj.updateDynamic("entryParser")(js.Any.fromFunction3(entryParser))
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize)
-    if (referrals != null) __obj.updateDynamic("referrals")(referrals)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (referrals != null) __obj.updateDynamic("referrals")(referrals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ADProperties]
   }
 }

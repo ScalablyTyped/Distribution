@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ServiceWorkerUpdateViaCache extends js.Object
 
+object ServiceWorkerUpdateViaCache {
+  @scala.inline
+  def all: typings.std.stdStrings.all = this.cast("all")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def imports: typings.std.stdStrings.imports = this.cast("imports")
+  @scala.inline
+  def none: typings.std.stdStrings.none = this.cast("none")
+}
+

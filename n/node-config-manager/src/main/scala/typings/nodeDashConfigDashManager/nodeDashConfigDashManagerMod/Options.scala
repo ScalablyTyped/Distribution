@@ -13,7 +13,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(camelCase: Boolean, configDir: String, env: String): Options = {
-    val __obj = js.Dynamic.literal(camelCase = camelCase, configDir = configDir, env = env)
+    val __obj = js.Dynamic.literal(camelCase = camelCase.asInstanceOf[js.Any], configDir = configDir.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

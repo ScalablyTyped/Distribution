@@ -40,13 +40,13 @@ object StaticFilesHandler {
     uploadPathRegex: String = null
   ): StaticFilesHandler = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applicationReadable)) __obj.updateDynamic("applicationReadable")(applicationReadable)
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
-    if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(requireMatchingFile)) __obj.updateDynamic("requireMatchingFile")(requireMatchingFile)
-    if (uploadPathRegex != null) __obj.updateDynamic("uploadPathRegex")(uploadPathRegex)
+    if (!js.isUndefined(applicationReadable)) __obj.updateDynamic("applicationReadable")(applicationReadable.asInstanceOf[js.Any])
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireMatchingFile)) __obj.updateDynamic("requireMatchingFile")(requireMatchingFile.asInstanceOf[js.Any])
+    if (uploadPathRegex != null) __obj.updateDynamic("uploadPathRegex")(uploadPathRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticFilesHandler]
   }
 }

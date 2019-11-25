@@ -35,16 +35,16 @@ object SCBrokerClusterServerOptions {
     processTermTimeout: Int | Double = null,
     secretKey: String = null
   ): SCBrokerClusterServerOptions = {
-    val __obj = js.Dynamic.literal(brokers = brokers, downgradeToUser = downgradeToUser.asInstanceOf[js.Any])
-    if (appBrokerControllerPath != null) __obj.updateDynamic("appBrokerControllerPath")(appBrokerControllerPath)
-    if (brokerOptions != null) __obj.updateDynamic("brokerOptions")(brokerOptions)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    val __obj = js.Dynamic.literal(brokers = brokers.asInstanceOf[js.Any], downgradeToUser = downgradeToUser.asInstanceOf[js.Any])
+    if (appBrokerControllerPath != null) __obj.updateDynamic("appBrokerControllerPath")(appBrokerControllerPath.asInstanceOf[js.Any])
+    if (brokerOptions != null) __obj.updateDynamic("brokerOptions")(brokerOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (expiryAccuracy != null) __obj.updateDynamic("expiryAccuracy")(expiryAccuracy.asInstanceOf[js.Any])
-    if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     if (ipcAckTimeout != null) __obj.updateDynamic("ipcAckTimeout")(ipcAckTimeout.asInstanceOf[js.Any])
     if (processTermTimeout != null) __obj.updateDynamic("processTermTimeout")(processTermTimeout.asInstanceOf[js.Any])
-    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey)
+    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SCBrokerClusterServerOptions]
   }
 }

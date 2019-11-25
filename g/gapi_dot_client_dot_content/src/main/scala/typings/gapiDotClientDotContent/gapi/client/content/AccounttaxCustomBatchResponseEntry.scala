@@ -24,10 +24,10 @@ object AccounttaxCustomBatchResponseEntry {
     kind: String = null
   ): AccounttaxCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (accountTax != null) __obj.updateDynamic("accountTax")(accountTax)
+    if (accountTax != null) __obj.updateDynamic("accountTax")(accountTax.asInstanceOf[js.Any])
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccounttaxCustomBatchResponseEntry]
   }
 }

@@ -50,14 +50,14 @@ object MixinViolation {
     `type`: missing | (`attribute collision`) | (`set collision`) | (`pointer collision`) | (`containment collision`) | (`aspect collision`) | (`constraint collision`) = null
   ): MixinViolation = {
     val __obj = js.Dynamic.literal()
-    if (collisionNodes != null) __obj.updateDynamic("collisionNodes")(collisionNodes)
-    if (collisionPaths != null) __obj.updateDynamic("collisionPaths")(collisionPaths)
-    if (hint != null) __obj.updateDynamic("hint")(hint)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName)
+    if (collisionNodes != null) __obj.updateDynamic("collisionNodes")(collisionNodes.asInstanceOf[js.Any])
+    if (collisionPaths != null) __obj.updateDynamic("collisionPaths")(collisionPaths.asInstanceOf[js.Any])
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName.asInstanceOf[js.Any])
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (targetInfo != null) __obj.updateDynamic("targetInfo")(targetInfo)
-    if (targetNode != null) __obj.updateDynamic("targetNode")(targetNode)
+    if (targetInfo != null) __obj.updateDynamic("targetInfo")(targetInfo.asInstanceOf[js.Any])
+    if (targetNode != null) __obj.updateDynamic("targetNode")(targetNode.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MixinViolation]
   }

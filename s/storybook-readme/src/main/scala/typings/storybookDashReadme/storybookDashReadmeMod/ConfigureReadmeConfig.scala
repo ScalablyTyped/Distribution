@@ -30,8 +30,8 @@ object ConfigureReadmeConfig {
     if (FooterPreview != null) __obj.updateDynamic("FooterPreview")(js.Any.fromFunction1(FooterPreview))
     if (HeaderPreview != null) __obj.updateDynamic("HeaderPreview")(js.Any.fromFunction1(HeaderPreview))
     if (StoryPreview != null) __obj.updateDynamic("StoryPreview")(js.Any.fromFunction1(StoryPreview))
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureReadmeConfig]
   }
 }

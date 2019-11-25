@@ -13,8 +13,8 @@ object Anon_Invalid {
   @scala.inline
   def apply(invalid: String = null, required: String = null): Anon_Invalid = {
     val __obj = js.Dynamic.literal()
-    if (invalid != null) __obj.updateDynamic("invalid")(invalid)
-    if (required != null) __obj.updateDynamic("required")(required)
+    if (invalid != null) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Invalid]
   }
 }

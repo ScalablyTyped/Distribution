@@ -17,9 +17,9 @@ object HiddenPlayer {
   @scala.inline
   def apply(hiddenTimeMillis: String = null, kind: String = null, player: Player = null): HiddenPlayer = {
     val __obj = js.Dynamic.literal()
-    if (hiddenTimeMillis != null) __obj.updateDynamic("hiddenTimeMillis")(hiddenTimeMillis)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (player != null) __obj.updateDynamic("player")(player)
+    if (hiddenTimeMillis != null) __obj.updateDynamic("hiddenTimeMillis")(hiddenTimeMillis.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (player != null) __obj.updateDynamic("player")(player.asInstanceOf[js.Any])
     __obj.asInstanceOf[HiddenPlayer]
   }
 }

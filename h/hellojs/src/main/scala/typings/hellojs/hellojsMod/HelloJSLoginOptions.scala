@@ -32,15 +32,15 @@ object HelloJSLoginOptions {
     timeout: Int | Double = null
   ): HelloJSLoginOptions = {
     val __obj = js.Dynamic.literal()
-    if (default_service != null) __obj.updateDynamic("default_service")(default_service)
-    if (display != null) __obj.updateDynamic("display")(display)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (oauth_proxy != null) __obj.updateDynamic("oauth_proxy")(oauth_proxy)
-    if (popup != null) __obj.updateDynamic("popup")(popup)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (default_service != null) __obj.updateDynamic("default_service")(default_service.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (oauth_proxy != null) __obj.updateDynamic("oauth_proxy")(oauth_proxy.asInstanceOf[js.Any])
+    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[HelloJSLoginOptions]
   }

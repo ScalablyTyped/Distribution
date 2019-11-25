@@ -30,14 +30,14 @@ object Options {
     remote: String = null
   ): Options[TExecOptions] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFile)) __obj.updateDynamic("forceFile")(forceFile)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push)
-    if (remote != null) __obj.updateDynamic("remote")(remote)
+    if (!js.isUndefined(forceFile)) __obj.updateDynamic("forceFile")(forceFile.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[TExecOptions]]
   }
 }

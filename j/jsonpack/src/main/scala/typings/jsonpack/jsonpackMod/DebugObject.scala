@@ -15,7 +15,7 @@ trait DebugObject extends js.Object {
 object DebugObject {
   @scala.inline
   def apply(ast: js.Array[Anon_Index], dictionary: Anon_Floats, packed: String): DebugObject = {
-    val __obj = js.Dynamic.literal(ast = ast, dictionary = dictionary, packed = packed)
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], dictionary = dictionary.asInstanceOf[js.Any], packed = packed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DebugObject]
   }

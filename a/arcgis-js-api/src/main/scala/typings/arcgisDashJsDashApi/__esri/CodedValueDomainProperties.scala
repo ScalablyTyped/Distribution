@@ -24,8 +24,8 @@ object CodedValueDomainProperties {
     `type`: range | `coded-value` | inherited = null
   ): CodedValueDomainProperties = {
     val __obj = js.Dynamic.literal()
-    if (codedValues != null) __obj.updateDynamic("codedValues")(codedValues)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (codedValues != null) __obj.updateDynamic("codedValues")(codedValues.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodedValueDomainProperties]
   }

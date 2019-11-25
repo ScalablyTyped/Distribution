@@ -25,12 +25,12 @@ object ChartCrosshair {
     trigger: String = null
   ): ChartCrosshair = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (focused != null) __obj.updateDynamic("focused")(focused)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartCrosshair]
   }
 }

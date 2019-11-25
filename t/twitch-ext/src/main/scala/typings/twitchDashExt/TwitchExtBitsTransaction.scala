@@ -41,7 +41,7 @@ object TwitchExtBitsTransaction {
     transactionReceipt: String,
     userId: String
   ): TwitchExtBitsTransaction = {
-    val __obj = js.Dynamic.literal(displayName = displayName, initiator = initiator.asInstanceOf[js.Any], product = product, transactionID = transactionID, transactionReceipt = transactionReceipt, userId = userId)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], initiator = initiator.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], transactionReceipt = transactionReceipt.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TwitchExtBitsTransaction]
   }

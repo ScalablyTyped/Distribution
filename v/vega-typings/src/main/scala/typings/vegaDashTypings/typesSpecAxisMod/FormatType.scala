@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait FormatType extends js.Object
 
+object FormatType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def number: typings.vegaDashTypings.vegaDashTypingsStrings.number = this.cast("number")
+  @scala.inline
+  def time: typings.vegaDashTypings.vegaDashTypingsStrings.time = this.cast("time")
+  @scala.inline
+  def utc: typings.vegaDashTypings.vegaDashTypingsStrings.utc = this.cast("utc")
+}
+

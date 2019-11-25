@@ -14,9 +14,9 @@ trait WitOption extends js.Object {
 object WitOption {
   @scala.inline
   def apply(accessToken: String, actions: js.Any = null, logger: Logger = null): WitOption = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[WitOption]
   }
 }

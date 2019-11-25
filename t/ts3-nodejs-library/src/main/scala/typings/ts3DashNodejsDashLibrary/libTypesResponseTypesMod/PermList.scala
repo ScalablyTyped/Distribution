@@ -21,9 +21,9 @@ object PermList {
     permid: Int | Double = null,
     permsid: String = null
   ): PermList = {
-    val __obj = js.Dynamic.literal(permnegated = permnegated, permskip = permskip, permvalue = permvalue)
+    val __obj = js.Dynamic.literal(permnegated = permnegated.asInstanceOf[js.Any], permskip = permskip.asInstanceOf[js.Any], permvalue = permvalue.asInstanceOf[js.Any])
     if (permid != null) __obj.updateDynamic("permid")(permid.asInstanceOf[js.Any])
-    if (permsid != null) __obj.updateDynamic("permsid")(permsid)
+    if (permsid != null) __obj.updateDynamic("permsid")(permsid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermList]
   }
 }

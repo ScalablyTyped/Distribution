@@ -25,13 +25,13 @@ object MerchantFunding {
     mobilePhone: String = null,
     routingNumber: String = null
   ): MerchantFunding = {
-    val __obj = js.Dynamic.literal(destination = destination)
-    if (accountNumber != null) __obj.updateDynamic("accountNumber")(accountNumber)
-    if (accountNumberLast4 != null) __obj.updateDynamic("accountNumberLast4")(accountNumberLast4)
-    if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (mobilePhone != null) __obj.updateDynamic("mobilePhone")(mobilePhone)
-    if (routingNumber != null) __obj.updateDynamic("routingNumber")(routingNumber)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
+    if (accountNumber != null) __obj.updateDynamic("accountNumber")(accountNumber.asInstanceOf[js.Any])
+    if (accountNumberLast4 != null) __obj.updateDynamic("accountNumberLast4")(accountNumberLast4.asInstanceOf[js.Any])
+    if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (mobilePhone != null) __obj.updateDynamic("mobilePhone")(mobilePhone.asInstanceOf[js.Any])
+    if (routingNumber != null) __obj.updateDynamic("routingNumber")(routingNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantFunding]
   }
 }

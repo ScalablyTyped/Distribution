@@ -16,7 +16,7 @@ trait PasswordTokenConfig extends js.Object {
 object PasswordTokenConfig {
   @scala.inline
   def apply(password: String, scope: String | js.Array[String], username: String): PasswordTokenConfig = {
-    val __obj = js.Dynamic.literal(password = password, scope = scope.asInstanceOf[js.Any], username = username)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PasswordTokenConfig]
   }

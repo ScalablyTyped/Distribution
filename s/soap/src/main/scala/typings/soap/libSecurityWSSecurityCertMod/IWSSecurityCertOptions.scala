@@ -20,10 +20,10 @@ object IWSSecurityCertOptions {
     signerOptions: IXmlSignerOptions = null
   ): IWSSecurityCertOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasTimeStamp)) __obj.updateDynamic("hasTimeStamp")(hasTimeStamp)
-    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm)
-    if (signatureTransformations != null) __obj.updateDynamic("signatureTransformations")(signatureTransformations)
-    if (signerOptions != null) __obj.updateDynamic("signerOptions")(signerOptions)
+    if (!js.isUndefined(hasTimeStamp)) __obj.updateDynamic("hasTimeStamp")(hasTimeStamp.asInstanceOf[js.Any])
+    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
+    if (signatureTransformations != null) __obj.updateDynamic("signatureTransformations")(signatureTransformations.asInstanceOf[js.Any])
+    if (signerOptions != null) __obj.updateDynamic("signerOptions")(signerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWSSecurityCertOptions]
   }
 }

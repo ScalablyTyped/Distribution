@@ -291,7 +291,7 @@ object atUifabricUtilitiesMod extends js.Object {
   def enableBodyScroll(): Unit = js.native
   def extendComponent[T /* <: Component[js.Object, js.Object, _] */](
     parent: T,
-    methods: /* import warning: ImportType.apply c Unsupported type mapping: 
+    methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? T[key]}
     */ typings.atUifabricUtilities.atUifabricUtilitiesStrings.extendComponent with T
   ): Unit = js.native

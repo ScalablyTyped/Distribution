@@ -22,8 +22,8 @@ object Options {
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[T]]
   }

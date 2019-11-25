@@ -27,10 +27,10 @@ object OnPremisesProvisioningError {
     value: String = null
   ): OnPremisesProvisioningError = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (occurredDateTime != null) __obj.updateDynamic("occurredDateTime")(occurredDateTime)
-    if (propertyCausingError != null) __obj.updateDynamic("propertyCausingError")(propertyCausingError)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (occurredDateTime != null) __obj.updateDynamic("occurredDateTime")(occurredDateTime.asInstanceOf[js.Any])
+    if (propertyCausingError != null) __obj.updateDynamic("propertyCausingError")(propertyCausingError.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnPremisesProvisioningError]
   }
 }

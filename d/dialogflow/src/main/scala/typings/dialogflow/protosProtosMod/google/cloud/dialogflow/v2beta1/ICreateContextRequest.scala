@@ -16,8 +16,8 @@ object ICreateContextRequest {
   @scala.inline
   def apply(context: IContext = null, parent: String = null): ICreateContextRequest = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateContextRequest]
   }
 }

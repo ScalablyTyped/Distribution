@@ -18,9 +18,9 @@ object Anon_MaintainHistoryPersistent {
     role: String = null
   ): Anon_MaintainHistoryPersistent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maintainHistory)) __obj.updateDynamic("maintainHistory")(maintainHistory)
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (!js.isUndefined(maintainHistory)) __obj.updateDynamic("maintainHistory")(maintainHistory.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaintainHistoryPersistent]
   }
 }

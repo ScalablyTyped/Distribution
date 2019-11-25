@@ -15,7 +15,7 @@ object Anon_Atlas {
   @scala.inline
   def apply(atlas: TextureAtlas = null, pixelsPerUnit: Int | Double = null, renderMode: Int | Double = null): Anon_Atlas = {
     val __obj = js.Dynamic.literal()
-    if (atlas != null) __obj.updateDynamic("atlas")(atlas)
+    if (atlas != null) __obj.updateDynamic("atlas")(atlas.asInstanceOf[js.Any])
     if (pixelsPerUnit != null) __obj.updateDynamic("pixelsPerUnit")(pixelsPerUnit.asInstanceOf[js.Any])
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Atlas]

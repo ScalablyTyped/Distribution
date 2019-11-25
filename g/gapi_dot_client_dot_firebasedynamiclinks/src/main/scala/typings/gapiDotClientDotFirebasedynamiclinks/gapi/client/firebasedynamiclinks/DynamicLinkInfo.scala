@@ -58,13 +58,13 @@ object DynamicLinkInfo {
     socialMetaTagInfo: SocialMetaTagInfo = null
   ): DynamicLinkInfo = {
     val __obj = js.Dynamic.literal()
-    if (analyticsInfo != null) __obj.updateDynamic("analyticsInfo")(analyticsInfo)
-    if (androidInfo != null) __obj.updateDynamic("androidInfo")(androidInfo)
-    if (dynamicLinkDomain != null) __obj.updateDynamic("dynamicLinkDomain")(dynamicLinkDomain)
-    if (iosInfo != null) __obj.updateDynamic("iosInfo")(iosInfo)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (navigationInfo != null) __obj.updateDynamic("navigationInfo")(navigationInfo)
-    if (socialMetaTagInfo != null) __obj.updateDynamic("socialMetaTagInfo")(socialMetaTagInfo)
+    if (analyticsInfo != null) __obj.updateDynamic("analyticsInfo")(analyticsInfo.asInstanceOf[js.Any])
+    if (androidInfo != null) __obj.updateDynamic("androidInfo")(androidInfo.asInstanceOf[js.Any])
+    if (dynamicLinkDomain != null) __obj.updateDynamic("dynamicLinkDomain")(dynamicLinkDomain.asInstanceOf[js.Any])
+    if (iosInfo != null) __obj.updateDynamic("iosInfo")(iosInfo.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (navigationInfo != null) __obj.updateDynamic("navigationInfo")(navigationInfo.asInstanceOf[js.Any])
+    if (socialMetaTagInfo != null) __obj.updateDynamic("socialMetaTagInfo")(socialMetaTagInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicLinkInfo]
   }
 }

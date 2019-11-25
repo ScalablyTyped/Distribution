@@ -21,10 +21,10 @@ object Anon_KeyPagelocation {
     page_title: String = null
   ): Anon_KeyPagelocation = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (page_location != null) __obj.updateDynamic("page_location")(page_location)
-    if (page_path != null) __obj.updateDynamic("page_path")(page_path)
-    if (page_title != null) __obj.updateDynamic("page_title")(page_title)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (page_location != null) __obj.updateDynamic("page_location")(page_location.asInstanceOf[js.Any])
+    if (page_path != null) __obj.updateDynamic("page_path")(page_path.asInstanceOf[js.Any])
+    if (page_title != null) __obj.updateDynamic("page_title")(page_title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeyPagelocation]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Fail extends js.Object {
 object Anon_Fail {
   @scala.inline
   def apply(fail: Double, omit: Double): Anon_Fail = {
-    val __obj = js.Dynamic.literal(fail = fail, omit = omit)
+    val __obj = js.Dynamic.literal(fail = fail.asInstanceOf[js.Any], omit = omit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fail]
   }

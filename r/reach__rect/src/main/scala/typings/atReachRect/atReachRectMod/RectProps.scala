@@ -22,7 +22,7 @@ object RectProps {
   ): RectProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (!js.isUndefined(observe)) __obj.updateDynamic("observe")(observe)
+    if (!js.isUndefined(observe)) __obj.updateDynamic("observe")(observe.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[RectProps]
   }

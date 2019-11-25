@@ -26,7 +26,7 @@ object compressImageOptions {
     fail: js.Any => Unit = null,
     quality: Int | Double = null
   ): compressImageOptions = {
-    val __obj = js.Dynamic.literal(src = src, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])

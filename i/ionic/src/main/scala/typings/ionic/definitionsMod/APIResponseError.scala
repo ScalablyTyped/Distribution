@@ -12,7 +12,7 @@ trait APIResponseError extends APIResponse {
 object APIResponseError {
   @scala.inline
   def apply(error: APIResponseErrorError, meta: APIResponseMeta): APIResponseError = {
-    val __obj = js.Dynamic.literal(error = error, meta = meta)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[APIResponseError]
   }

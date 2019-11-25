@@ -31,7 +31,7 @@ package object slonikMod {
     /* args */ QueryMethodParams[js.Any], 
     js.Promise[
       js.Array[
-        /* import warning: ImportType.apply Failed type conversion: any[keyof any] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
       ]
     ]
   ]
@@ -43,7 +43,7 @@ package object slonikMod {
   type QueryMaybeOneFirstFunctionType = js.Function1[
     /* args */ QueryMethodParams[js.Any], 
     js.Promise[
-      (/* import warning: ImportType.apply Failed type conversion: any[keyof any] */ js.Any) | Null
+      (/* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any) | Null
     ]
   ]
   type QueryMaybeOneFunctionType = js.Function1[/* args */ QueryMethodParams[js.Any], js.Promise[js.Any | Null]]
@@ -56,12 +56,12 @@ package object slonikMod {
   type QueryOneFirstFunctionType = js.Function1[
     /* args */ QueryMethodParams[js.Any], 
     js.Promise[
-      /* import warning: ImportType.apply Failed type conversion: any[keyof any] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
     ]
   ]
   type QueryOneFunctionType = js.Function1[/* args */ QueryMethodParams[js.Any], js.Promise[js.Any]]
   type QueryResultRowColumnType = String | Double
-  type QueryResultRowType[ColumnName /* <: String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type QueryResultRowType[ColumnName /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in ColumnName ]: slonik.slonik.QueryResultRowColumnType}
     */ typings.slonik.slonikStrings.QueryResultRowType with js.Any
   /* Rewritten from type alias, can be one of: 

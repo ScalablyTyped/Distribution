@@ -22,7 +22,7 @@ trait AssetRecord
 object AssetRecord {
   @scala.inline
   def apply(
-    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     amount: String,
@@ -33,7 +33,7 @@ object AssetRecord {
     num_accounts: Double,
     paging_token: String
   ): AssetRecord = {
-    val __obj = js.Dynamic.literal(_links = _links, amount = amount, asset_code = asset_code, asset_issuer = asset_issuer, asset_type = asset_type.asInstanceOf[js.Any], flags = flags, num_accounts = num_accounts, paging_token = paging_token)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], asset_code = asset_code.asInstanceOf[js.Any], asset_issuer = asset_issuer.asInstanceOf[js.Any], asset_type = asset_type.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], num_accounts = num_accounts.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AssetRecord]
   }

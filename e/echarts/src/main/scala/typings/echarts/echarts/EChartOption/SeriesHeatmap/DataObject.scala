@@ -58,11 +58,11 @@ object DataObject {
     value: js.Array[_] = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
 }

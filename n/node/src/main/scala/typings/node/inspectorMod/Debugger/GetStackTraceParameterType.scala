@@ -12,7 +12,7 @@ trait GetStackTraceParameterType extends js.Object {
 object GetStackTraceParameterType {
   @scala.inline
   def apply(stackTraceId: StackTraceId): GetStackTraceParameterType = {
-    val __obj = js.Dynamic.literal(stackTraceId = stackTraceId)
+    val __obj = js.Dynamic.literal(stackTraceId = stackTraceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetStackTraceParameterType]
   }

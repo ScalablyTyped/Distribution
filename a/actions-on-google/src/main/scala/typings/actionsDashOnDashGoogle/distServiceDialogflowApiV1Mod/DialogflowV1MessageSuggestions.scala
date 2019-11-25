@@ -19,9 +19,9 @@ object DialogflowV1MessageSuggestions {
     suggestions: js.Array[DialogflowV1MessageSuggestion] = null,
     `type`: suggestion_chips = null
   ): DialogflowV1MessageSuggestions = {
-    val __obj = js.Dynamic.literal(platform = platform)
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1MessageSuggestions]
   }
 }

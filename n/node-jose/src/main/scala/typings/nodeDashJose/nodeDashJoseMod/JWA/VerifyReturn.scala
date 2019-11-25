@@ -16,7 +16,7 @@ trait VerifyReturn extends js.Object {
 object VerifyReturn {
   @scala.inline
   def apply(data: Buffer, mac: Buffer, valid: Boolean): VerifyReturn = {
-    val __obj = js.Dynamic.literal(data = data, mac = mac, valid = valid)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VerifyReturn]
   }

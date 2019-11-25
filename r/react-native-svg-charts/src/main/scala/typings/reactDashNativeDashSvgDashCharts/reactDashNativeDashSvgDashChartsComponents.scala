@@ -24,7 +24,11 @@ object reactDashNativeDashSvgDashChartsComponents extends reactDashNativeDashSvg
   @scala.inline
   def Path: ComponentType[PathProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.Path].asInstanceOf[typings.react.reactMod.ComponentType[PathProps]]
   @scala.inline
-  def PieChart[T /* <: PieChartData */]: ComponentType[PieChartProps[T]] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PieChart[T]].asInstanceOf[typings.react.reactMod.ComponentType[PieChartProps[T]]]
+  def PieChart: ComponentType[PieChartProps[PieChartData]] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PieChart[
+  typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PieChartData]].asInstanceOf[typings.react.reactMod.ComponentType[
+  PieChartProps[
+    typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.PieChartData
+  ]]]
   @scala.inline
   def ProgressCircle: ComponentType[ProgressCircleProps] = js.constructorOf[typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod.ProgressCircle].asInstanceOf[typings.react.reactMod.ComponentType[ProgressCircleProps]]
   @scala.inline

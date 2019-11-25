@@ -43,12 +43,12 @@ object DataLabelSettings {
     visible: js.UndefOr[Boolean] = js.undefined
   ): DataLabelSettings = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (labelOverflowMode != null) __obj.updateDynamic("labelOverflowMode")(labelOverflowMode.asInstanceOf[js.Any])
     if (labelRotationMode != null) __obj.updateDynamic("labelRotationMode")(labelRotationMode.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLabelSettings]
   }
 }

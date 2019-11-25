@@ -21,10 +21,10 @@ object FeatureSet {
     sourceDirectories: js.UndefOr[Boolean] = js.undefined
   ): FeatureSet = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(needsCacheFlag)) __obj.updateDynamic("needsCacheFlag")(needsCacheFlag)
-    if (!js.isUndefined(persistentOutputFlag)) __obj.updateDynamic("persistentOutputFlag")(persistentOutputFlag)
-    if (!js.isUndefined(sourceDirectories)) __obj.updateDynamic("sourceDirectories")(sourceDirectories)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(needsCacheFlag)) __obj.updateDynamic("needsCacheFlag")(needsCacheFlag.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentOutputFlag)) __obj.updateDynamic("persistentOutputFlag")(persistentOutputFlag.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceDirectories)) __obj.updateDynamic("sourceDirectories")(sourceDirectories.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureSet]
   }
 }

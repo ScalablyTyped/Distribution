@@ -21,8 +21,8 @@ object StreetViewTileData {
   ): StreetViewTileData = {
     val __obj = js.Dynamic.literal(getTileUrl = js.Any.fromFunction4(getTileUrl))
     if (centerHeading != null) __obj.updateDynamic("centerHeading")(centerHeading.asInstanceOf[js.Any])
-    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize)
-    if (worldSize != null) __obj.updateDynamic("worldSize")(worldSize)
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (worldSize != null) __obj.updateDynamic("worldSize")(worldSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreetViewTileData]
   }
 }

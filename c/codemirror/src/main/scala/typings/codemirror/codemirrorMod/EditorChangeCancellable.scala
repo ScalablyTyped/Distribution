@@ -29,9 +29,9 @@ object EditorChangeCancellable {
     removed: js.Array[String] = null,
     update: (/* from */ js.UndefOr[Position], /* to */ js.UndefOr[Position], /* text */ js.UndefOr[js.Array[String]]) => Unit = null
   ): EditorChangeCancellable = {
-    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), from = from, text = text, to = to)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (removed != null) __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), from = from.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (removed != null) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction3(update))
     __obj.asInstanceOf[EditorChangeCancellable]
   }

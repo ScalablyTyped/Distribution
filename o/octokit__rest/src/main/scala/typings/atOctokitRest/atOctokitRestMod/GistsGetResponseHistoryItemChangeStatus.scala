@@ -13,7 +13,7 @@ trait GistsGetResponseHistoryItemChangeStatus extends js.Object {
 object GistsGetResponseHistoryItemChangeStatus {
   @scala.inline
   def apply(additions: Double, deletions: Double, total: Double): GistsGetResponseHistoryItemChangeStatus = {
-    val __obj = js.Dynamic.literal(additions = additions, deletions = deletions, total = total)
+    val __obj = js.Dynamic.literal(additions = additions.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GistsGetResponseHistoryItemChangeStatus]
   }

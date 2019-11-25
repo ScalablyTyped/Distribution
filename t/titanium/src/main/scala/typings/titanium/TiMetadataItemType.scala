@@ -35,9 +35,9 @@ object TiMetadataItemType {
     value: String | Double | Boolean = null
   ): TiMetadataItemType = {
     val __obj = js.Dynamic.literal()
-    if (extraAttributes != null) __obj.updateDynamic("extraAttributes")(extraAttributes)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (keySpace != null) __obj.updateDynamic("keySpace")(keySpace)
+    if (extraAttributes != null) __obj.updateDynamic("extraAttributes")(extraAttributes.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (keySpace != null) __obj.updateDynamic("keySpace")(keySpace.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TiMetadataItemType]
   }

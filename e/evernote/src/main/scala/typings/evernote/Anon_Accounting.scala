@@ -47,21 +47,21 @@ object Anon_Accounting {
     username: String = null
   ): Anon_Accounting = {
     val __obj = js.Dynamic.literal()
-    if (accounting != null) __obj.updateDynamic("accounting")(accounting)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (businessUserInfo != null) __obj.updateDynamic("businessUserInfo")(businessUserInfo)
+    if (accounting != null) __obj.updateDynamic("accounting")(accounting.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (businessUserInfo != null) __obj.updateDynamic("businessUserInfo")(businessUserInfo.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (premiumInfo != null) __obj.updateDynamic("premiumInfo")(premiumInfo)
-    if (privilege != null) __obj.updateDynamic("privilege")(privilege)
-    if (shardId != null) __obj.updateDynamic("shardId")(shardId)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (premiumInfo != null) __obj.updateDynamic("premiumInfo")(premiumInfo.asInstanceOf[js.Any])
+    if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
+    if (shardId != null) __obj.updateDynamic("shardId")(shardId.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Accounting]
   }
 }

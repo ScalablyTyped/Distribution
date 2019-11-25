@@ -56,19 +56,19 @@ object FancyBoxSlide {
     thumb: js.Any = null,
     `type`: image | `inline` | ajax | iframe | html = null
   ): FancyBoxSlide = {
-    val __obj = js.Dynamic.literal(height = height, isComplete = isComplete, isLoaded = isLoaded, isLoading = isLoading, isRevealed = isRevealed, pos = pos, src = src, width = width)
-    if ($content != null) __obj.updateDynamic("$content")($content)
-    if ($iframe != null) __obj.updateDynamic("$iframe")($iframe)
-    if ($image != null) __obj.updateDynamic("$image")($image)
-    if ($slide != null) __obj.updateDynamic("$slide")($slide)
-    if ($spinner != null) __obj.updateDynamic("$spinner")($spinner)
-    if ($thumb != null) __obj.updateDynamic("$thumb")($thumb)
-    if (contentSource != null) __obj.updateDynamic("contentSource")(contentSource)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], isComplete = isComplete.asInstanceOf[js.Any], isLoaded = isLoaded.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], isRevealed = isRevealed.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if ($content != null) __obj.updateDynamic("$content")($content.asInstanceOf[js.Any])
+    if ($iframe != null) __obj.updateDynamic("$iframe")($iframe.asInstanceOf[js.Any])
+    if ($image != null) __obj.updateDynamic("$image")($image.asInstanceOf[js.Any])
+    if ($slide != null) __obj.updateDynamic("$slide")($slide.asInstanceOf[js.Any])
+    if ($spinner != null) __obj.updateDynamic("$spinner")($spinner.asInstanceOf[js.Any])
+    if ($thumb != null) __obj.updateDynamic("$thumb")($thumb.asInstanceOf[js.Any])
+    if (contentSource != null) __obj.updateDynamic("contentSource")(contentSource.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (forcedDuration != null) __obj.updateDynamic("forcedDuration")(forcedDuration.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (opts != null) __obj.updateDynamic("opts")(opts)
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
+    if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxSlide]
   }

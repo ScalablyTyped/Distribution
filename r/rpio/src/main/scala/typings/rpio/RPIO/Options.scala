@@ -38,7 +38,7 @@ object Options {
   @scala.inline
   def apply(gpiomem: js.UndefOr[Boolean] = js.undefined, mapping: gpio | physical = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gpiomem)) __obj.updateDynamic("gpiomem")(gpiomem)
+    if (!js.isUndefined(gpiomem)) __obj.updateDynamic("gpiomem")(gpiomem.asInstanceOf[js.Any])
     if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

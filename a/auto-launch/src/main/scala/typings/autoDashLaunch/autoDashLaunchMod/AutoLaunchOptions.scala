@@ -32,10 +32,10 @@ object AutoLaunchOptions {
     mac: Anon_UseLaunchAgent = null,
     path: String = null
   ): AutoLaunchOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden)
-    if (mac != null) __obj.updateDynamic("mac")(mac)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden.asInstanceOf[js.Any])
+    if (mac != null) __obj.updateDynamic("mac")(mac.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoLaunchOptions]
   }
 }

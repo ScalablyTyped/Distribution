@@ -24,7 +24,7 @@ object ModuleOptions {
     transformCode: (/* el */ ASTElement, /* code */ String) => String = null
   ): ModuleOptions = {
     val __obj = js.Dynamic.literal(genData = js.Any.fromFunction1(genData), postTransformNode = js.Any.fromFunction1(postTransformNode), preTransformNode = js.Any.fromFunction1(preTransformNode), transformNode = js.Any.fromFunction1(transformNode))
-    if (staticKeys != null) __obj.updateDynamic("staticKeys")(staticKeys)
+    if (staticKeys != null) __obj.updateDynamic("staticKeys")(staticKeys.asInstanceOf[js.Any])
     if (transformCode != null) __obj.updateDynamic("transformCode")(js.Any.fromFunction2(transformCode))
     __obj.asInstanceOf[ModuleOptions]
   }

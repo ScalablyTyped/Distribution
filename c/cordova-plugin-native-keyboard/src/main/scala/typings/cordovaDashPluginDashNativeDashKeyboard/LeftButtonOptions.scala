@@ -23,11 +23,11 @@ object LeftButtonOptions {
     `type`: String = null,
     value: String = null
   ): LeftButtonOptions = {
-    val __obj = js.Dynamic.literal(color = color, onPress = js.Any.fromFunction0(onPress))
-    if (!js.isUndefined(disabledWhenTextEntered)) __obj.updateDynamic("disabledWhenTextEntered")(disabledWhenTextEntered)
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
+    if (!js.isUndefined(disabledWhenTextEntered)) __obj.updateDynamic("disabledWhenTextEntered")(disabledWhenTextEntered.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeftButtonOptions]
   }
 }

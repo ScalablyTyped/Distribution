@@ -25,7 +25,7 @@ object Anon_MedianSvgClassName {
     whiskerSvgClassName: String,
     whiskerSvgStyle: js.Object
   ): Anon_MedianSvgClassName = {
-    val __obj = js.Dynamic.literal(medianSvgClassName = medianSvgClassName, medianSvgStyle = medianSvgStyle, whiskerEndLength = whiskerEndLength, whiskerEndSvgClassName = whiskerEndSvgClassName, whiskerEndSvgStyle = whiskerEndSvgStyle, whiskerSvgClassName = whiskerSvgClassName, whiskerSvgStyle = whiskerSvgStyle)
+    val __obj = js.Dynamic.literal(medianSvgClassName = medianSvgClassName.asInstanceOf[js.Any], medianSvgStyle = medianSvgStyle.asInstanceOf[js.Any], whiskerEndLength = whiskerEndLength.asInstanceOf[js.Any], whiskerEndSvgClassName = whiskerEndSvgClassName.asInstanceOf[js.Any], whiskerEndSvgStyle = whiskerEndSvgStyle.asInstanceOf[js.Any], whiskerSvgClassName = whiskerSvgClassName.asInstanceOf[js.Any], whiskerSvgStyle = whiskerSvgStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MedianSvgClassName]
   }

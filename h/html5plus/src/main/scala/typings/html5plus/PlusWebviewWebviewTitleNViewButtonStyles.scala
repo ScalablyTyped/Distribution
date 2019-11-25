@@ -191,20 +191,20 @@ object PlusWebviewWebviewTitleNViewButtonStyles {
     width: String = null
   ): PlusWebviewWebviewTitleNViewButtonStyles = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (badgeText != null) __obj.updateDynamic("badgeText")(badgeText)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (colorPressed != null) __obj.updateDynamic("colorPressed")(colorPressed)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (badgeText != null) __obj.updateDynamic("badgeText")(badgeText.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (colorPressed != null) __obj.updateDynamic("colorPressed")(colorPressed.asInstanceOf[js.Any])
     if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
-    if (fontSrc != null) __obj.updateDynamic("fontSrc")(fontSrc)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontSrc != null) __obj.updateDynamic("fontSrc")(fontSrc.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
-    if (!js.isUndefined(redDot)) __obj.updateDynamic("redDot")(redDot)
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(redDot)) __obj.updateDynamic("redDot")(redDot.asInstanceOf[js.Any])
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewTitleNViewButtonStyles]
   }
 }

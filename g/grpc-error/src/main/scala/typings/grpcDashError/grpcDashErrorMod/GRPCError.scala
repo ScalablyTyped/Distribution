@@ -13,8 +13,8 @@ trait GRPCError extends Error {
 object GRPCError {
   @scala.inline
   def apply(code: Double, message: String, metadata: js.Object, name: String, stack: String = null): GRPCError = {
-    val __obj = js.Dynamic.literal(code = code, message = message, metadata = metadata, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[GRPCError]
   }
 }

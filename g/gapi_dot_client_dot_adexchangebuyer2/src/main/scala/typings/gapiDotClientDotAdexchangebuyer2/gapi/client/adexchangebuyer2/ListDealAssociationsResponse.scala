@@ -21,8 +21,8 @@ object ListDealAssociationsResponse {
   @scala.inline
   def apply(associations: js.Array[CreativeDealAssociation] = null, nextPageToken: String = null): ListDealAssociationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (associations != null) __obj.updateDynamic("associations")(associations)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (associations != null) __obj.updateDynamic("associations")(associations.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDealAssociationsResponse]
   }
 }

@@ -43,10 +43,10 @@ object AzureUploadSuccessOptions {
     params: js.Any = null
   ): AzureUploadSuccessOptions = {
     val __obj = js.Dynamic.literal()
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureUploadSuccessOptions]
   }
 }

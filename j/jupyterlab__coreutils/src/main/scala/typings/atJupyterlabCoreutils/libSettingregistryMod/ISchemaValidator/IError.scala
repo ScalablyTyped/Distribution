@@ -40,8 +40,8 @@ object IError {
     schemaPath: String,
     params: ReadonlyJSONObject = null
   ): IError = {
-    val __obj = js.Dynamic.literal(dataPath = dataPath, keyword = keyword, message = message, schemaPath = schemaPath)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[IError]
   }
 }

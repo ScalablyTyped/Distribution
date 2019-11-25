@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DirectionsSide extends js.Object
 
+object DirectionsSide {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.atMapboxMapboxDashSdk.atMapboxMapboxDashSdkStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.atMapboxMapboxDashSdk.atMapboxMapboxDashSdkStrings.right = this.cast("right")
+}
+

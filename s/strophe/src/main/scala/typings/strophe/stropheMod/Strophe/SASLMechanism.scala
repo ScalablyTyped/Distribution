@@ -61,7 +61,7 @@ trait SASLMechanism extends js.Object {
 object SASLMechanism {
   @scala.inline
   def apply(priority: Double, test: Connection => Boolean): SASLMechanism = {
-    val __obj = js.Dynamic.literal(priority = priority, test = js.Any.fromFunction1(test))
+    val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
   
     __obj.asInstanceOf[SASLMechanism]
   }

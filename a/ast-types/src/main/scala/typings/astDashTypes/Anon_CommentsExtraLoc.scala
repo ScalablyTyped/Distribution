@@ -24,10 +24,10 @@ object Anon_CommentsExtraLoc {
     regex: Anon_Flags = null
   ): Anon_CommentsExtraLoc = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (regex != null) __obj.updateDynamic("regex")(regex)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsExtraLoc]
   }
 }

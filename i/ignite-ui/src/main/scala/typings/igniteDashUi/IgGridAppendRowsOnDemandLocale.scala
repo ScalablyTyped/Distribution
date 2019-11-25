@@ -27,8 +27,8 @@ object IgGridAppendRowsOnDemandLocale {
     loadMoreDataButtonText: String = null
   ): IgGridAppendRowsOnDemandLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (loadMoreDataButtonText != null) __obj.updateDynamic("loadMoreDataButtonText")(loadMoreDataButtonText)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (loadMoreDataButtonText != null) __obj.updateDynamic("loadMoreDataButtonText")(loadMoreDataButtonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridAppendRowsOnDemandLocale]
   }
 }

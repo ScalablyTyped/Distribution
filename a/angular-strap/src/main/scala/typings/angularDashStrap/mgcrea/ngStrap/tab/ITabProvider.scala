@@ -11,7 +11,7 @@ trait ITabProvider extends js.Object {
 object ITabProvider {
   @scala.inline
   def apply(defaults: ITabOptions): ITabProvider = {
-    val __obj = js.Dynamic.literal(defaults = defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITabProvider]
   }

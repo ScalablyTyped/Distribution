@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "string-pixel-width"
-version := "1.7-dt-20190429Z-f13190"
+version := "1.7-dt-20190429Z-b7fe2d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

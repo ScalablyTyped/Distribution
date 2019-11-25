@@ -26,9 +26,9 @@ trait Anon_DisplayRegion[Q] extends js.Object {
 object Anon_DisplayRegion {
   @scala.inline
   def apply[Q](places: js.Array[Place], displayRegion: CoordinateRegion = null, query: String = null): Anon_DisplayRegion[Q] = {
-    val __obj = js.Dynamic.literal(places = places)
-    if (displayRegion != null) __obj.updateDynamic("displayRegion")(displayRegion)
-    if (query != null) __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(places = places.asInstanceOf[js.Any])
+    if (displayRegion != null) __obj.updateDynamic("displayRegion")(displayRegion.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisplayRegion[Q]]
   }
 }

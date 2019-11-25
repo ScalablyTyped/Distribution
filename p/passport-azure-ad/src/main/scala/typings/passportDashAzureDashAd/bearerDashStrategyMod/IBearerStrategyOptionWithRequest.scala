@@ -29,17 +29,17 @@ object IBearerStrategyOptionWithRequest {
     scope: js.Array[String] = null,
     validateIssuer: js.UndefOr[Boolean] = js.undefined
   ): IBearerStrategyOptionWithRequest = {
-    val __obj = js.Dynamic.literal(clientID = clientID, identityMetadata = identityMetadata, passReqToCallback = passReqToCallback)
-    if (!js.isUndefined(allowMultiAudiencesInToken)) __obj.updateDynamic("allowMultiAudiencesInToken")(allowMultiAudiencesInToken)
+    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], identityMetadata = identityMetadata.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowMultiAudiencesInToken)) __obj.updateDynamic("allowMultiAudiencesInToken")(allowMultiAudiencesInToken.asInstanceOf[js.Any])
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
     if (clockSkew != null) __obj.updateDynamic("clockSkew")(clockSkew.asInstanceOf[js.Any])
-    if (!js.isUndefined(isB2C)) __obj.updateDynamic("isB2C")(isB2C)
+    if (!js.isUndefined(isB2C)) __obj.updateDynamic("isB2C")(isB2C.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (loggingLevel != null) __obj.updateDynamic("loggingLevel")(loggingLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(loggingNoPII)) __obj.updateDynamic("loggingNoPII")(loggingNoPII)
-    if (policyName != null) __obj.updateDynamic("policyName")(policyName)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (!js.isUndefined(validateIssuer)) __obj.updateDynamic("validateIssuer")(validateIssuer)
+    if (!js.isUndefined(loggingNoPII)) __obj.updateDynamic("loggingNoPII")(loggingNoPII.asInstanceOf[js.Any])
+    if (policyName != null) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateIssuer)) __obj.updateDynamic("validateIssuer")(validateIssuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBearerStrategyOptionWithRequest]
   }
 }

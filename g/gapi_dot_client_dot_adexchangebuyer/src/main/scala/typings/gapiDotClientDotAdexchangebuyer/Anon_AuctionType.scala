@@ -27,10 +27,10 @@ object Anon_AuctionType {
     platform: js.Array[String] = null
   ): Anon_AuctionType = {
     val __obj = js.Dynamic.literal()
-    if (auctionType != null) __obj.updateDynamic("auctionType")(auctionType)
-    if (contextType != null) __obj.updateDynamic("contextType")(contextType)
-    if (geoCriteriaId != null) __obj.updateDynamic("geoCriteriaId")(geoCriteriaId)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (auctionType != null) __obj.updateDynamic("auctionType")(auctionType.asInstanceOf[js.Any])
+    if (contextType != null) __obj.updateDynamic("contextType")(contextType.asInstanceOf[js.Any])
+    if (geoCriteriaId != null) __obj.updateDynamic("geoCriteriaId")(geoCriteriaId.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuctionType]
   }
 }

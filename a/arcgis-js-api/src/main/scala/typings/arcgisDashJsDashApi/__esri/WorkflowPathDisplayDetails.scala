@@ -79,7 +79,7 @@ object WorkflowPathDisplayDetails {
     propertyIsEnumerable: PropertyKey => Boolean,
     sourceStepID: Double
   ): WorkflowPathDisplayDetails = {
-    val __obj = js.Dynamic.literal(constructor = constructor, destStepId = destStepId, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label, labelColor = labelColor, labelX = labelX, labelY = labelY, lineColor = lineColor, pathObject = pathObject, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sourceStepID = sourceStepID)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], destStepId = destStepId.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), label = label.asInstanceOf[js.Any], labelColor = labelColor.asInstanceOf[js.Any], labelX = labelX.asInstanceOf[js.Any], labelY = labelY.asInstanceOf[js.Any], lineColor = lineColor.asInstanceOf[js.Any], pathObject = pathObject.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sourceStepID = sourceStepID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkflowPathDisplayDetails]
   }

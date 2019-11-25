@@ -40,17 +40,17 @@ object ConnectionOptions {
     socket: Socket = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols)
-    if (ca != null) __obj.updateDynamic("ca")(ca)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx)
+    if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
+    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
-    if (servername != null) __obj.updateDynamic("servername")(servername)
-    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
+    if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

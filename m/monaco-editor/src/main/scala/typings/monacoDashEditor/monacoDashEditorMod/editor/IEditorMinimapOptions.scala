@@ -46,9 +46,9 @@ object IEditorMinimapOptions {
     side: right | left = null
   ): IEditorMinimapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (maxColumn != null) __obj.updateDynamic("maxColumn")(maxColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderCharacters)) __obj.updateDynamic("renderCharacters")(renderCharacters)
+    if (!js.isUndefined(renderCharacters)) __obj.updateDynamic("renderCharacters")(renderCharacters.asInstanceOf[js.Any])
     if (showSlider != null) __obj.updateDynamic("showSlider")(showSlider.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorMinimapOptions]

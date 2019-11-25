@@ -15,8 +15,8 @@ object NetworkPolicy {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, provider: String = null): NetworkPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkPolicy]
   }
 }

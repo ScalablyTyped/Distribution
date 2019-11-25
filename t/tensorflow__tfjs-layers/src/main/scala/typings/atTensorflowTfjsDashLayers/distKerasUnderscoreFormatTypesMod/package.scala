@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distKerasUnderscoreFormatTypesMod {
-  type PyJson[Keys /* <: String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type PyJson[Keys /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ x in Keys ]:? @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/types.PyJsonValue}
     */ typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.PyJson with js.Any
   /* Rewritten from type alias, can be one of: 

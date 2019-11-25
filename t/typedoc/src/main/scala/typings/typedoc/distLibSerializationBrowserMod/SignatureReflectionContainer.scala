@@ -20,10 +20,10 @@ object SignatureReflectionContainer {
     parameters: js.Array[TParameters] = null
   ): SignatureReflectionContainer[TParameters] = {
     val __obj = js.Dynamic.literal()
-    if (implementationOf != null) __obj.updateDynamic("implementationOf")(implementationOf)
-    if (inheritedFrom != null) __obj.updateDynamic("inheritedFrom")(inheritedFrom)
-    if (overwrites != null) __obj.updateDynamic("overwrites")(overwrites)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (implementationOf != null) __obj.updateDynamic("implementationOf")(implementationOf.asInstanceOf[js.Any])
+    if (inheritedFrom != null) __obj.updateDynamic("inheritedFrom")(inheritedFrom.asInstanceOf[js.Any])
+    if (overwrites != null) __obj.updateDynamic("overwrites")(overwrites.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureReflectionContainer[TParameters]]
   }
 }

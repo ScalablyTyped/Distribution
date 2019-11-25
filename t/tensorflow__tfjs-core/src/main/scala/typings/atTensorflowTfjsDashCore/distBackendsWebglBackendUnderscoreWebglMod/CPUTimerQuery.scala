@@ -12,7 +12,7 @@ trait CPUTimerQuery extends js.Object {
 object CPUTimerQuery {
   @scala.inline
   def apply(startMs: Double, endMs: Int | Double = null): CPUTimerQuery = {
-    val __obj = js.Dynamic.literal(startMs = startMs)
+    val __obj = js.Dynamic.literal(startMs = startMs.asInstanceOf[js.Any])
     if (endMs != null) __obj.updateDynamic("endMs")(endMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPUTimerQuery]
   }

@@ -36,18 +36,18 @@ object Options {
     simulateSpacebarClick: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse)
-    if (!js.isUndefined(collapseOnClickOut)) __obj.updateDynamic("collapseOnClickOut")(collapseOnClickOut)
-    if (!js.isUndefined(collapseOnFocusOut)) __obj.updateDynamic("collapseOnFocusOut")(collapseOnFocusOut)
-    if (!js.isUndefined(collapseOnMouseOut)) __obj.updateDynamic("collapseOnMouseOut")(collapseOnMouseOut)
-    if (contentSelector != null) __obj.updateDynamic("contentSelector")(contentSelector)
-    if (!js.isUndefined(expandOnClick)) __obj.updateDynamic("expandOnClick")(expandOnClick)
-    if (!js.isUndefined(expandOnFocus)) __obj.updateDynamic("expandOnFocus")(expandOnFocus)
-    if (!js.isUndefined(expandOnHover)) __obj.updateDynamic("expandOnHover")(expandOnHover)
-    if (expandedClass != null) __obj.updateDynamic("expandedClass")(expandedClass)
-    if (focusManagement != null) __obj.updateDynamic("focusManagement")(focusManagement)
-    if (hostSelector != null) __obj.updateDynamic("hostSelector")(hostSelector)
-    if (!js.isUndefined(simulateSpacebarClick)) __obj.updateDynamic("simulateSpacebarClick")(simulateSpacebarClick)
+    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseOnClickOut)) __obj.updateDynamic("collapseOnClickOut")(collapseOnClickOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseOnFocusOut)) __obj.updateDynamic("collapseOnFocusOut")(collapseOnFocusOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseOnMouseOut)) __obj.updateDynamic("collapseOnMouseOut")(collapseOnMouseOut.asInstanceOf[js.Any])
+    if (contentSelector != null) __obj.updateDynamic("contentSelector")(contentSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandOnClick)) __obj.updateDynamic("expandOnClick")(expandOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandOnFocus)) __obj.updateDynamic("expandOnFocus")(expandOnFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandOnHover)) __obj.updateDynamic("expandOnHover")(expandOnHover.asInstanceOf[js.Any])
+    if (expandedClass != null) __obj.updateDynamic("expandedClass")(expandedClass.asInstanceOf[js.Any])
+    if (focusManagement != null) __obj.updateDynamic("focusManagement")(focusManagement.asInstanceOf[js.Any])
+    if (hostSelector != null) __obj.updateDynamic("hostSelector")(hostSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(simulateSpacebarClick)) __obj.updateDynamic("simulateSpacebarClick")(simulateSpacebarClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

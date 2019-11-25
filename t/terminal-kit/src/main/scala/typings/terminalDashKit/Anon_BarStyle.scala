@@ -14,7 +14,7 @@ object Anon_BarStyle {
   @scala.inline
   def apply(barStyle: CTerminal = null, innerSize: Int | Double = null): Anon_BarStyle = {
     val __obj = js.Dynamic.literal()
-    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle)
+    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
     if (innerSize != null) __obj.updateDynamic("innerSize")(innerSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BarStyle]
   }

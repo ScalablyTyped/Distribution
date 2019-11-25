@@ -21,8 +21,8 @@ object Anon_GetItem {
     storageKey: String = null
   ): Anon_GetItem = {
     val __obj = js.Dynamic.literal()
-    if (storage != null) __obj.updateDynamic("storage")(storage)
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey)
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GetItem]
   }
 }

@@ -13,7 +13,7 @@ trait IDeviceInformationUpdate extends js.Object {
 object IDeviceInformationUpdate {
   @scala.inline
   def apply(id: String, properties: IMapView[String, _]): IDeviceInformationUpdate = {
-    val __obj = js.Dynamic.literal(id = id, properties = properties)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDeviceInformationUpdate]
   }

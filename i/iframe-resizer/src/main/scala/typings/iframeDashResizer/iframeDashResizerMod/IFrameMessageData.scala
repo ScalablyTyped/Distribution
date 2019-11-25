@@ -13,7 +13,7 @@ trait IFrameMessageData extends js.Object {
 object IFrameMessageData {
   @scala.inline
   def apply(iframe: IFrameComponent, message: js.Any): IFrameMessageData = {
-    val __obj = js.Dynamic.literal(iframe = iframe, message = message)
+    val __obj = js.Dynamic.literal(iframe = iframe.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFrameMessageData]
   }

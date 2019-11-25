@@ -44,7 +44,7 @@ object JobQueryContainer {
     propertyIsEnumerable: PropertyKey => Boolean,
     queries: js.Array[JobQuery]
   ): JobQueryContainer = {
-    val __obj = js.Dynamic.literal(constructor = constructor, containers = containers, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), queries = queries)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], containers = containers.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), queries = queries.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobQueryContainer]
   }

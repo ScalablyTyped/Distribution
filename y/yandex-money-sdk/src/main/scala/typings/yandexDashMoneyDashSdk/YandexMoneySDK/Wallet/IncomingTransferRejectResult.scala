@@ -12,8 +12,8 @@ trait IncomingTransferRejectResult extends js.Object {
 object IncomingTransferRejectResult {
   @scala.inline
   def apply(status: String, error: String = null): IncomingTransferRejectResult = {
-    val __obj = js.Dynamic.literal(status = status)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingTransferRejectResult]
   }
 }

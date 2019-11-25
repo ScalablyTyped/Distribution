@@ -27,7 +27,7 @@ object Anon_AColumn {
     lineno: Double,
     s: Double
   ): Anon_AColumn = {
-    val __obj = js.Dynamic.literal(__type = __type, a = a, column = column, filename = filename, h = h, l = l, lineno = lineno, s = s)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], a = a.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AColumn]
   }

@@ -13,7 +13,7 @@ object ojColorSpectrumSettablePropertiesLenient {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null): ojColorSpectrumSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ojColorSpectrumSettablePropertiesLenient]
   }
 }

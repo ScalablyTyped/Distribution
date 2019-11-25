@@ -12,7 +12,7 @@ trait Anon_Request extends js.Object {
 object Anon_Request {
   @scala.inline
   def apply(request: BasicReq): Anon_Request = {
-    val __obj = js.Dynamic.literal(request = request)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Request]
   }

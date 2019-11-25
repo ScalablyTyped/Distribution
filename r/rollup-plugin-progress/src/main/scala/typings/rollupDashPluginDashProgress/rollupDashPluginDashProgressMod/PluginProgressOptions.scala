@@ -12,7 +12,7 @@ object PluginProgressOptions {
   @scala.inline
   def apply(clearLine: js.UndefOr[Boolean] = js.undefined): PluginProgressOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clearLine)) __obj.updateDynamic("clearLine")(clearLine)
+    if (!js.isUndefined(clearLine)) __obj.updateDynamic("clearLine")(clearLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginProgressOptions]
   }
 }

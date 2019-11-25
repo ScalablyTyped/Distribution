@@ -31,14 +31,14 @@ object TarantoolOptions {
   ): TarantoolOptions = {
     val __obj = js.Dynamic.literal()
     if (beforeReserve != null) __obj.updateDynamic("beforeReserve")(beforeReserve.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(lazyConnect)) __obj.updateDynamic("lazyConnect")(lazyConnect)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyConnect)) __obj.updateDynamic("lazyConnect")(lazyConnect.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (reserveHosts != null) __obj.updateDynamic("reserveHosts")(reserveHosts)
+    if (reserveHosts != null) __obj.updateDynamic("reserveHosts")(reserveHosts.asInstanceOf[js.Any])
     if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(js.Any.fromFunction1(retryStrategy))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[TarantoolOptions]
   }
 }

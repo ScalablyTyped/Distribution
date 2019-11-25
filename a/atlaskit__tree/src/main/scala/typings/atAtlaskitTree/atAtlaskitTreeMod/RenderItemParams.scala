@@ -24,7 +24,7 @@ object RenderItemParams {
     provided: TreeDraggableProvided,
     snapshot: DraggableStateSnapshot
   ): RenderItemParams = {
-    val __obj = js.Dynamic.literal(depth = depth, item = item, onCollapse = js.Any.fromFunction1(onCollapse), onExpand = js.Any.fromFunction1(onExpand), provided = provided, snapshot = snapshot)
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], onCollapse = js.Any.fromFunction1(onCollapse), onExpand = js.Any.fromFunction1(onExpand), provided = provided.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderItemParams]
   }

@@ -14,9 +14,9 @@ trait Product extends js.Object {
 object Product {
   @scala.inline
   def apply(link: String, name: String, copyright: String = null, logo: String = null): Product = {
-    val __obj = js.Dynamic.literal(link = link, name = name)
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (logo != null) __obj.updateDynamic("logo")(logo)
+    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Product]
   }
 }

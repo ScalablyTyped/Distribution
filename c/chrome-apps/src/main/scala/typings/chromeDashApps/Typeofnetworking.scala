@@ -40,7 +40,7 @@ trait Typeofnetworking extends js.Object {
 object Typeofnetworking {
   @scala.inline
   def apply(config: Typeofconfig, onc: Typeofonc): Typeofnetworking = {
-    val __obj = js.Dynamic.literal(config = config, onc = onc)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], onc = onc.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofnetworking]
   }

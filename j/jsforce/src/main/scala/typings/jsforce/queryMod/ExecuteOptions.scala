@@ -20,10 +20,10 @@ object ExecuteOptions {
     scanAll: js.UndefOr[Boolean] = js.undefined
   ): ExecuteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFetch)) __obj.updateDynamic("autoFetch")(autoFetch)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(autoFetch)) __obj.updateDynamic("autoFetch")(autoFetch.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (maxFetch != null) __obj.updateDynamic("maxFetch")(maxFetch.asInstanceOf[js.Any])
-    if (!js.isUndefined(scanAll)) __obj.updateDynamic("scanAll")(scanAll)
+    if (!js.isUndefined(scanAll)) __obj.updateDynamic("scanAll")(scanAll.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteOptions]
   }
 }

@@ -15,8 +15,8 @@ trait Attachment extends js.Object {
 object Attachment {
   @scala.inline
   def apply(mime_type: String, name: String, size: Double, url: String, metadata: AttachmentMetadata = null): Attachment = {
-    val __obj = js.Dynamic.literal(mime_type = mime_type, name = name, size = size, url = url)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(mime_type = mime_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
 }

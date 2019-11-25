@@ -33,9 +33,9 @@ object Paragraph {
   @scala.inline
   def apply(boundingBox: BoundingPoly = null, property: TextProperty = null, words: js.Array[Word] = null): Paragraph = {
     val __obj = js.Dynamic.literal()
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (words != null) __obj.updateDynamic("words")(words)
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[Paragraph]
   }
 }

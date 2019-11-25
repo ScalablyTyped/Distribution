@@ -25,8 +25,8 @@ object IBridgeDescription {
     version: Anon_Major,
     icons: js.Array[IBridgeIcon] = null
   ): IBridgeDescription = {
-    val __obj = js.Dynamic.literal(manufacturer = manufacturer, model = model, name = name, url = url, version = version)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
+    val __obj = js.Dynamic.literal(manufacturer = manufacturer.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBridgeDescription]
   }
 }

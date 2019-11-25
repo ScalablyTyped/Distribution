@@ -12,7 +12,7 @@ trait Anon_SnapshotState extends js.Object {
 object Anon_SnapshotState {
   @scala.inline
   def apply(snapshotState: default): Anon_SnapshotState = {
-    val __obj = js.Dynamic.literal(snapshotState = snapshotState)
+    val __obj = js.Dynamic.literal(snapshotState = snapshotState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SnapshotState]
   }

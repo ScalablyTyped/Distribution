@@ -16,8 +16,8 @@ object RunOnlyObject {
     include: js.Array[js.Array[String] | String] = null
   ): RunOnlyObject = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOnlyObject]
   }
 }

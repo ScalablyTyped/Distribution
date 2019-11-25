@@ -51,9 +51,9 @@ object RelayUptime {
     ] = null,
     uptime: Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]] = null
   ): RelayUptime = {
-    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (uptime != null) __obj.updateDynamic("uptime")(uptime)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (uptime != null) __obj.updateDynamic("uptime")(uptime.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayUptime]
   }
 }

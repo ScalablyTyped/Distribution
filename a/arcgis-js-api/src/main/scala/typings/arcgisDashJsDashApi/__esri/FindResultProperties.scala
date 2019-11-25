@@ -54,12 +54,12 @@ object FindResultProperties {
     value: String = null
   ): FindResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
-    if (feature != null) __obj.updateDynamic("feature")(feature)
-    if (foundFieldName != null) __obj.updateDynamic("foundFieldName")(foundFieldName)
+    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName.asInstanceOf[js.Any])
+    if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
+    if (foundFieldName != null) __obj.updateDynamic("foundFieldName")(foundFieldName.asInstanceOf[js.Any])
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
-    if (layerName != null) __obj.updateDynamic("layerName")(layerName)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (layerName != null) __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindResultProperties]
   }
 }

@@ -31,14 +31,14 @@ object KeycloakProfile {
   ): KeycloakProfile = {
     val __obj = js.Dynamic.literal()
     if (createdTimestamp != null) __obj.updateDynamic("createdTimestamp")(createdTimestamp.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
-    if (!js.isUndefined(totp)) __obj.updateDynamic("totp")(totp)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
+    if (!js.isUndefined(totp)) __obj.updateDynamic("totp")(totp.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeycloakProfile]
   }
 }

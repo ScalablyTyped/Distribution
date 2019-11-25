@@ -30,7 +30,7 @@ object CreationInfo {
     propertyIsEnumerable: PropertyKey => Boolean,
     template: FeatureTemplate
   ): CreationInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), template = template)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), template = template.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreationInfo]
   }

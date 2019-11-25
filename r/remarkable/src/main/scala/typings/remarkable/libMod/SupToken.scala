@@ -22,10 +22,10 @@ object SupToken {
     block: js.UndefOr[Boolean] = js.undefined,
     lines: js.Tuple2[Double, Double] = null
   ): SupToken = {
-    val __obj = js.Dynamic.literal(content = content, level = level)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
-    if (lines != null) __obj.updateDynamic("lines")(lines)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupToken]
   }
 }

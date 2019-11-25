@@ -81,16 +81,16 @@ object IColorRectangleProps {
     styles: IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles] = null,
     theme: ITheme = null
   ): IColorRectangleProps = {
-    val __obj = js.Dynamic.literal(color = color)
-    if (ariaDescription != null) __obj.updateDynamic("ariaDescription")(ariaDescription)
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (ariaValueFormat != null) __obj.updateDynamic("ariaValueFormat")(ariaValueFormat)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+    if (ariaDescription != null) __obj.updateDynamic("ariaDescription")(ariaDescription.asInstanceOf[js.Any])
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (ariaValueFormat != null) __obj.updateDynamic("ariaValueFormat")(ariaValueFormat.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorRectangleProps]
   }
 }

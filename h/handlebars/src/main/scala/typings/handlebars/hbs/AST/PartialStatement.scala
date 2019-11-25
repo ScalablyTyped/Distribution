@@ -25,8 +25,8 @@ object PartialStatement {
     strip: StripFlags,
     `type`: typings.handlebars.handlebarsStrings.PartialStatement
   ): PartialStatement = {
-    val __obj = js.Dynamic.literal(hash = hash, indent = indent, loc = loc, name = name.asInstanceOf[js.Any], params = params, strip = strip)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], strip = strip.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStatement]
   }
 }

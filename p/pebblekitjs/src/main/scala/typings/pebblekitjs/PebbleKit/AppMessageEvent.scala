@@ -12,8 +12,8 @@ trait AppMessageEvent extends js.Object {
 object AppMessageEvent {
   @scala.inline
   def apply(data: AppMessageData, error: Error = null): AppMessageEvent = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppMessageEvent]
   }
 }

@@ -51,7 +51,7 @@ object TfvcChangesetSearchCriteria {
     toDate: String,
     toId: Double
   ): TfvcChangesetSearchCriteria = {
-    val __obj = js.Dynamic.literal(author = author, followRenames = followRenames, fromDate = fromDate, fromId = fromId, includeLinks = includeLinks, itemPath = itemPath, toDate = toDate, toId = toId)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], followRenames = followRenames.asInstanceOf[js.Any], fromDate = fromDate.asInstanceOf[js.Any], fromId = fromId.asInstanceOf[js.Any], includeLinks = includeLinks.asInstanceOf[js.Any], itemPath = itemPath.asInstanceOf[js.Any], toDate = toDate.asInstanceOf[js.Any], toId = toId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcChangesetSearchCriteria]
   }

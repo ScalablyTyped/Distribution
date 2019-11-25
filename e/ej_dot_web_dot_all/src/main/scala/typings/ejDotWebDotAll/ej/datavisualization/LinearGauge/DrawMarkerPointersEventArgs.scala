@@ -64,19 +64,19 @@ object DrawMarkerPointersEventArgs {
     `type`: js.Any = null
   ): DrawMarkerPointersEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Model != null) __obj.updateDynamic("Model")(Model)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (markerElement != null) __obj.updateDynamic("markerElement")(markerElement)
+    if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (markerElement != null) __obj.updateDynamic("markerElement")(markerElement.asInstanceOf[js.Any])
     if (markerPointerIndex != null) __obj.updateDynamic("markerPointerIndex")(markerPointerIndex.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (pointerAngle != null) __obj.updateDynamic("pointerAngle")(pointerAngle.asInstanceOf[js.Any])
     if (pointerValue != null) __obj.updateDynamic("pointerValue")(pointerValue.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
     if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawMarkerPointersEventArgs]
   }
 }

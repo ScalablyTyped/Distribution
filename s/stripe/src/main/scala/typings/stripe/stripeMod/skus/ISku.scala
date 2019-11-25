@@ -66,8 +66,8 @@ object ISku {
     product: String | IProduct,
     updated: Double
   ): ISku = {
-    val __obj = js.Dynamic.literal(active = active, attributes = attributes, created = created, currency = currency, id = id, image = image, inventory = inventory, livemode = livemode, metadata = metadata, package_dimensions = package_dimensions, price = price, product = product.asInstanceOf[js.Any], updated = updated)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], inventory = inventory.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], package_dimensions = package_dimensions.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISku]
   }
 }

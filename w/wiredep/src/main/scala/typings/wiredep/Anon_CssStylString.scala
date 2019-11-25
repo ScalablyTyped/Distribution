@@ -20,7 +20,7 @@ trait Anon_CssStylString extends js.Object {
 object Anon_CssStylString {
   @scala.inline
   def apply(css: String, styl: String): Anon_CssStylString = {
-    val __obj = js.Dynamic.literal(css = css, styl = styl)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], styl = styl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CssStylString]
   }

@@ -20,7 +20,7 @@ object TagComponentProps {
     onDelete: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit,
     tag: Tag
   ): TagComponentProps = {
-    val __obj = js.Dynamic.literal(classNames = classNames, onDelete = js.Any.fromFunction1(onDelete), tag = tag)
+    val __obj = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any], onDelete = js.Any.fromFunction1(onDelete), tag = tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagComponentProps]
   }

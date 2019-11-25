@@ -21,7 +21,7 @@ object SaveOptions {
   @scala.inline
   def apply(UseSchedulingEngine: js.UndefOr[Boolean] = js.undefined): SaveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(UseSchedulingEngine)) __obj.updateDynamic("UseSchedulingEngine")(UseSchedulingEngine)
+    if (!js.isUndefined(UseSchedulingEngine)) __obj.updateDynamic("UseSchedulingEngine")(UseSchedulingEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveOptions]
   }
 }

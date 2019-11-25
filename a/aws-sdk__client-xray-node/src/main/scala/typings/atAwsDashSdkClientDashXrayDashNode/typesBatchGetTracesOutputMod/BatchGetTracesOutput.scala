@@ -35,10 +35,10 @@ object BatchGetTracesOutput {
     Traces: js.Array[_UnmarshalledTrace] = null,
     UnprocessedTraceIds: js.Array[String] = null
   ): BatchGetTracesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (Traces != null) __obj.updateDynamic("Traces")(Traces)
-    if (UnprocessedTraceIds != null) __obj.updateDynamic("UnprocessedTraceIds")(UnprocessedTraceIds)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (Traces != null) __obj.updateDynamic("Traces")(Traces.asInstanceOf[js.Any])
+    if (UnprocessedTraceIds != null) __obj.updateDynamic("UnprocessedTraceIds")(UnprocessedTraceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetTracesOutput]
   }
 }

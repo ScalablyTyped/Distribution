@@ -12,7 +12,7 @@ trait Anon_BoundingBoxLines extends js.Object {
 object Anon_BoundingBoxLines {
   @scala.inline
   def apply(boundingBox: String, lines: js.Array[Anon_BoundingBoxWords]): Anon_BoundingBoxLines = {
-    val __obj = js.Dynamic.literal(boundingBox = boundingBox, lines = lines)
+    val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BoundingBoxLines]
   }

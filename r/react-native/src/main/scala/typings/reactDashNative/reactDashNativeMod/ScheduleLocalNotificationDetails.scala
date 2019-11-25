@@ -38,16 +38,16 @@ object ScheduleLocalNotificationDetails {
     userInfo: js.Object = null
   ): ScheduleLocalNotificationDetails = {
     val __obj = js.Dynamic.literal()
-    if (alertAction != null) __obj.updateDynamic("alertAction")(alertAction)
-    if (alertBody != null) __obj.updateDynamic("alertBody")(alertBody)
-    if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle)
+    if (alertAction != null) __obj.updateDynamic("alertAction")(alertAction.asInstanceOf[js.Any])
+    if (alertBody != null) __obj.updateDynamic("alertBody")(alertBody.asInstanceOf[js.Any])
+    if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle.asInstanceOf[js.Any])
     if (applicationIconBadgeNumber != null) __obj.updateDynamic("applicationIconBadgeNumber")(applicationIconBadgeNumber.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
     if (fireDate != null) __obj.updateDynamic("fireDate")(fireDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSilent)) __obj.updateDynamic("isSilent")(isSilent)
+    if (!js.isUndefined(isSilent)) __obj.updateDynamic("isSilent")(isSilent.asInstanceOf[js.Any])
     if (repeatInterval != null) __obj.updateDynamic("repeatInterval")(repeatInterval.asInstanceOf[js.Any])
-    if (soundName != null) __obj.updateDynamic("soundName")(soundName)
-    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
+    if (soundName != null) __obj.updateDynamic("soundName")(soundName.asInstanceOf[js.Any])
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleLocalNotificationDetails]
   }
 }

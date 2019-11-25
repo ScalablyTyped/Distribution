@@ -12,7 +12,7 @@ object Anon_ProcessingState {
   @scala.inline
   def apply(processingState: String = null): Anon_ProcessingState = {
     val __obj = js.Dynamic.literal()
-    if (processingState != null) __obj.updateDynamic("processingState")(processingState)
+    if (processingState != null) __obj.updateDynamic("processingState")(processingState.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ProcessingState]
   }
 }

@@ -19,7 +19,7 @@ object ManagedAppPolicyDeploymentSummaryPerApp {
   ): ManagedAppPolicyDeploymentSummaryPerApp = {
     val __obj = js.Dynamic.literal()
     if (configurationAppliedUserCount != null) __obj.updateDynamic("configurationAppliedUserCount")(configurationAppliedUserCount.asInstanceOf[js.Any])
-    if (mobileAppIdentifier != null) __obj.updateDynamic("mobileAppIdentifier")(mobileAppIdentifier)
+    if (mobileAppIdentifier != null) __obj.updateDynamic("mobileAppIdentifier")(mobileAppIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedAppPolicyDeploymentSummaryPerApp]
   }
 }

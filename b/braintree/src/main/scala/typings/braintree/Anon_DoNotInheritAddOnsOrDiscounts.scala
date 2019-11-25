@@ -18,9 +18,9 @@ object Anon_DoNotInheritAddOnsOrDiscounts {
     startImmediately: js.UndefOr[Boolean] = js.undefined
   ): Anon_DoNotInheritAddOnsOrDiscounts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(doNotInheritAddOnsOrDiscounts)) __obj.updateDynamic("doNotInheritAddOnsOrDiscounts")(doNotInheritAddOnsOrDiscounts)
-    if (paypal != null) __obj.updateDynamic("paypal")(paypal)
-    if (!js.isUndefined(startImmediately)) __obj.updateDynamic("startImmediately")(startImmediately)
+    if (!js.isUndefined(doNotInheritAddOnsOrDiscounts)) __obj.updateDynamic("doNotInheritAddOnsOrDiscounts")(doNotInheritAddOnsOrDiscounts.asInstanceOf[js.Any])
+    if (paypal != null) __obj.updateDynamic("paypal")(paypal.asInstanceOf[js.Any])
+    if (!js.isUndefined(startImmediately)) __obj.updateDynamic("startImmediately")(startImmediately.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DoNotInheritAddOnsOrDiscounts]
   }
 }

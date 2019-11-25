@@ -21,10 +21,10 @@ object IRequestOptions {
     headers: js.Object = null,
     longTimeout: js.UndefOr[Boolean] = js.undefined
   ): IRequestOptions = {
-    val __obj = js.Dynamic.literal(method = method, url = url)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(longTimeout)) __obj.updateDynamic("longTimeout")(longTimeout)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(longTimeout)) __obj.updateDynamic("longTimeout")(longTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestOptions]
   }
 }

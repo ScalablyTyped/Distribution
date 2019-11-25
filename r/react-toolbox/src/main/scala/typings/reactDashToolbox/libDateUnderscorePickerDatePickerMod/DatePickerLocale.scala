@@ -37,11 +37,11 @@ object DatePickerLocale {
     weekdaysShort: js.Array[String] = null
   ): DatePickerLocale = {
     val __obj = js.Dynamic.literal()
-    if (months != null) __obj.updateDynamic("months")(months)
-    if (monthsShort != null) __obj.updateDynamic("monthsShort")(monthsShort)
-    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays)
-    if (weekdaysLetter != null) __obj.updateDynamic("weekdaysLetter")(weekdaysLetter)
-    if (weekdaysShort != null) __obj.updateDynamic("weekdaysShort")(weekdaysShort)
+    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
+    if (monthsShort != null) __obj.updateDynamic("monthsShort")(monthsShort.asInstanceOf[js.Any])
+    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays.asInstanceOf[js.Any])
+    if (weekdaysLetter != null) __obj.updateDynamic("weekdaysLetter")(weekdaysLetter.asInstanceOf[js.Any])
+    if (weekdaysShort != null) __obj.updateDynamic("weekdaysShort")(weekdaysShort.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerLocale]
   }
 }

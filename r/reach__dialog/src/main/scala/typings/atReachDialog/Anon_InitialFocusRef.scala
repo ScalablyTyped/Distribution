@@ -14,7 +14,7 @@ object Anon_InitialFocusRef {
   @scala.inline
   def apply(initialFocusRef: RefObject[HTMLElement] = null): Anon_InitialFocusRef = {
     val __obj = js.Dynamic.literal()
-    if (initialFocusRef != null) __obj.updateDynamic("initialFocusRef")(initialFocusRef)
+    if (initialFocusRef != null) __obj.updateDynamic("initialFocusRef")(initialFocusRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InitialFocusRef]
   }
 }

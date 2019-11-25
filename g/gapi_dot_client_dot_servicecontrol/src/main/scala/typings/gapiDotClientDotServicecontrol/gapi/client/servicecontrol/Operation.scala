@@ -119,19 +119,19 @@ object Operation {
     userLabels: Record[String, String] = null
   ): Operation = {
     val __obj = js.Dynamic.literal()
-    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (importance != null) __obj.updateDynamic("importance")(importance)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (logEntries != null) __obj.updateDynamic("logEntries")(logEntries)
-    if (metricValueSets != null) __obj.updateDynamic("metricValueSets")(metricValueSets)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
-    if (quotaProperties != null) __obj.updateDynamic("quotaProperties")(quotaProperties)
-    if (resourceContainer != null) __obj.updateDynamic("resourceContainer")(resourceContainer)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (userLabels != null) __obj.updateDynamic("userLabels")(userLabels)
+    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (importance != null) __obj.updateDynamic("importance")(importance.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (logEntries != null) __obj.updateDynamic("logEntries")(logEntries.asInstanceOf[js.Any])
+    if (metricValueSets != null) __obj.updateDynamic("metricValueSets")(metricValueSets.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
+    if (quotaProperties != null) __obj.updateDynamic("quotaProperties")(quotaProperties.asInstanceOf[js.Any])
+    if (resourceContainer != null) __obj.updateDynamic("resourceContainer")(resourceContainer.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (userLabels != null) __obj.updateDynamic("userLabels")(userLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Operation]
   }
 }

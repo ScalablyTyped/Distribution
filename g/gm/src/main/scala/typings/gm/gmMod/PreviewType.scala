@@ -1,5 +1,6 @@
 package typings.gm.gmMod
 
+import typings.gm.gmStrings.Grayscale_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
   - typings.gm.gmStrings.Gamma
   - typings.gm.gmStrings.Spiff
   - typings.gm.gmStrings.Dull
-  - typings.gm.gmStrings.Grayscale
+  - typings.gm.gmStrings.Grayscale_
   - typings.gm.gmStrings.Quantize
   - typings.gm.gmStrings.Despeckle
   - typings.gm.gmStrings.ReduceNoise
@@ -36,4 +37,67 @@ import scala.scalajs.js.annotation._
   - typings.gm.gmStrings.JPEG
 */
 trait PreviewType extends js.Object
+
+object PreviewType {
+  @scala.inline
+  def AddNoise: typings.gm.gmStrings.AddNoise = this.cast("AddNoise")
+  @scala.inline
+  def Blur: typings.gm.gmStrings.Blur = this.cast("Blur")
+  @scala.inline
+  def Brightness: typings.gm.gmStrings.Brightness = this.cast("Brightness")
+  @scala.inline
+  def CharcoalDrawing: typings.gm.gmStrings.CharcoalDrawing = this.cast("CharcoalDrawing")
+  @scala.inline
+  def Despeckle: typings.gm.gmStrings.Despeckle = this.cast("Despeckle")
+  @scala.inline
+  def Dull: typings.gm.gmStrings.Dull = this.cast("Dull")
+  @scala.inline
+  def EdgeDetect: typings.gm.gmStrings.EdgeDetect = this.cast("EdgeDetect")
+  @scala.inline
+  def Gamma: typings.gm.gmStrings.Gamma = this.cast("Gamma")
+  @scala.inline
+  def Grayscale: Grayscale_ = this.cast("Grayscale")
+  @scala.inline
+  def Hue: typings.gm.gmStrings.Hue = this.cast("Hue")
+  @scala.inline
+  def Implode: typings.gm.gmStrings.Implode = this.cast("Implode")
+  @scala.inline
+  def JPEG: typings.gm.gmStrings.JPEG = this.cast("JPEG")
+  @scala.inline
+  def OilPaint: typings.gm.gmStrings.OilPaint = this.cast("OilPaint")
+  @scala.inline
+  def Quantize: typings.gm.gmStrings.Quantize = this.cast("Quantize")
+  @scala.inline
+  def Raise: typings.gm.gmStrings.Raise = this.cast("Raise")
+  @scala.inline
+  def ReduceNoise: typings.gm.gmStrings.ReduceNoise = this.cast("ReduceNoise")
+  @scala.inline
+  def Roll: typings.gm.gmStrings.Roll = this.cast("Roll")
+  @scala.inline
+  def Rotate: typings.gm.gmStrings.Rotate = this.cast("Rotate")
+  @scala.inline
+  def Saturation: typings.gm.gmStrings.Saturation = this.cast("Saturation")
+  @scala.inline
+  def Segment: typings.gm.gmStrings.Segment = this.cast("Segment")
+  @scala.inline
+  def Shade: typings.gm.gmStrings.Shade = this.cast("Shade")
+  @scala.inline
+  def Sharpen: typings.gm.gmStrings.Sharpen = this.cast("Sharpen")
+  @scala.inline
+  def Shear: typings.gm.gmStrings.Shear = this.cast("Shear")
+  @scala.inline
+  def Solarize: typings.gm.gmStrings.Solarize = this.cast("Solarize")
+  @scala.inline
+  def Spiff: typings.gm.gmStrings.Spiff = this.cast("Spiff")
+  @scala.inline
+  def Spread: typings.gm.gmStrings.Spread = this.cast("Spread")
+  @scala.inline
+  def Swirl: typings.gm.gmStrings.Swirl = this.cast("Swirl")
+  @scala.inline
+  def Threshold: typings.gm.gmStrings.Threshold = this.cast("Threshold")
+  @scala.inline
+  def Wave: typings.gm.gmStrings.Wave = this.cast("Wave")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
 

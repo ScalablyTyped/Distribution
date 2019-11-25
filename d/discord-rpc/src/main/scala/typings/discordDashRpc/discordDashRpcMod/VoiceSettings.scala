@@ -33,10 +33,10 @@ object VoiceSettings {
     mode: Anon_AutoThreshold = null,
     output: Anon_Device = null
   ): VoiceSettings = {
-    val __obj = js.Dynamic.literal(automaticGainControl = automaticGainControl, deaf = deaf, echoCancellation = echoCancellation, mute = mute, noiseSuppression = noiseSuppression, qos = qos, silenceWarning = silenceWarning)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (output != null) __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(automaticGainControl = automaticGainControl.asInstanceOf[js.Any], deaf = deaf.asInstanceOf[js.Any], echoCancellation = echoCancellation.asInstanceOf[js.Any], mute = mute.asInstanceOf[js.Any], noiseSuppression = noiseSuppression.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], silenceWarning = silenceWarning.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceSettings]
   }
 }

@@ -15,8 +15,8 @@ trait ICustomLink extends js.Object {
 object ICustomLink {
   @scala.inline
   def apply(component: link, label: String, `type`: String, url: String): ICustomLink = {
-    val __obj = js.Dynamic.literal(component = component, label = label, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomLink]
   }
 }

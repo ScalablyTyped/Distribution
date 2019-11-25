@@ -29,11 +29,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object distOpsTensorUnderscoreOpsMod extends js.Object {
   def fill[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: String
   ): Tensor[R] = js.native
   def fill[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: String,
     dtype: DataType
   ): Tensor[R] = js.native
@@ -51,11 +51,11 @@ object distOpsTensorUnderscoreOpsMod extends js.Object {
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
   def fill[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: Double
   ): Tensor[R] = js.native
   def fill[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: Double,
     dtype: DataType
   ): Tensor[R] = js.native
@@ -84,10 +84,10 @@ object distOpsTensorUnderscoreOpsMod extends js.Object {
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
   def ones[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
   def ones[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: DataType
   ): Tensor[R] = js.native
   /**
@@ -165,11 +165,11 @@ object distOpsTensorUnderscoreOpsMod extends js.Object {
   def tensor[R /* <: Rank */](values: TensorLike): Tensor[R] = js.native
   def tensor[R /* <: Rank */](
     values: TensorLike,
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
   def tensor[R /* <: Rank */](
     values: TensorLike,
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: DataType
   ): Tensor[R] = js.native
   /**
@@ -350,10 +350,10 @@ object distOpsTensorUnderscoreOpsMod extends js.Object {
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
   def zeros[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
   def zeros[R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: DataType
   ): Tensor[R] = js.native
   @js.native

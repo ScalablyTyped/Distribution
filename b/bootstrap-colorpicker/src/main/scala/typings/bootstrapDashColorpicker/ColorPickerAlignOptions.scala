@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ColorPickerAlignOptions extends js.Object
 
+object ColorPickerAlignOptions {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def left: typings.bootstrapDashColorpicker.bootstrapDashColorpickerStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.bootstrapDashColorpicker.bootstrapDashColorpickerStrings.right = this.cast("right")
+}
+

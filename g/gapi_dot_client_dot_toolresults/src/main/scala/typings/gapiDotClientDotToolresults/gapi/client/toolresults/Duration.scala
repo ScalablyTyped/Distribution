@@ -23,7 +23,7 @@ object Duration {
   def apply(nanos: Int | Double = null, seconds: String = null): Duration = {
     val __obj = js.Dynamic.literal()
     if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds)
+    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
 }

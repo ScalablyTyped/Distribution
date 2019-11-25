@@ -16,7 +16,7 @@ trait Anon_ColorData[K2, D2] extends js.Object {
 object Anon_ColorData {
   @scala.inline
   def apply[K2, D2](color: String, data: RowTask[K2], rowData: Row[K2], itemData: D2 = null): Anon_ColorData[K2, D2] = {
-    val __obj = js.Dynamic.literal(color = color, data = data, rowData = rowData)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any])
     if (itemData != null) __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorData[K2, D2]]
   }

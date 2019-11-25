@@ -13,8 +13,8 @@ trait Anon_ScaleSession extends js.Object {
 object Anon_ScaleSession {
   @scala.inline
   def apply(scale: Double, session: ClientSession = null): Anon_ScaleSession = {
-    val __obj = js.Dynamic.literal(scale = scale)
-    if (session != null) __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ScaleSession]
   }
 }

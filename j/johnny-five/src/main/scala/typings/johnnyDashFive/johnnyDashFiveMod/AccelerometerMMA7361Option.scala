@@ -12,7 +12,7 @@ object AccelerometerMMA7361Option {
   @scala.inline
   def apply(controller: String = null, sleepPin: Double | String = null): AccelerometerMMA7361Option = {
     val __obj = js.Dynamic.literal()
-    if (controller != null) __obj.updateDynamic("controller")(controller)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (sleepPin != null) __obj.updateDynamic("sleepPin")(sleepPin.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerMMA7361Option]
   }

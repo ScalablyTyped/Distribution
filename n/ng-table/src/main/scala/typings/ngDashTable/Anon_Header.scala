@@ -12,7 +12,7 @@ trait Anon_Header extends js.Object {
 object Anon_Header {
   @scala.inline
   def apply(header: String, pagination: String): Anon_Header = {
-    val __obj = js.Dynamic.literal(header = header, pagination = pagination)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Header]
   }

@@ -16,8 +16,8 @@ object BasicAuthenticationSecurity {
   @scala.inline
   def apply(`type`: basic, description: String = null): BasicAuthenticationSecurity = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicAuthenticationSecurity]
   }
 }

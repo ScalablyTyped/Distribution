@@ -96,8 +96,8 @@ object JobAttributes {
     repeatTimezone: String,
     `type`: String
   ): JobAttributes[T] = {
-    val __obj = js.Dynamic.literal(_id = _id, data = data.asInstanceOf[js.Any], disabled = disabled, failCount = failCount, failReason = failReason, failedAt = failedAt, lastFinishedAt = lastFinishedAt, lastModifiedBy = lastModifiedBy, lastRunAt = lastRunAt, lockedAt = lockedAt, name = name, nextRunAt = nextRunAt, priority = priority, repeatInterval = repeatInterval.asInstanceOf[js.Any], repeatTimezone = repeatTimezone)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], failCount = failCount.asInstanceOf[js.Any], failReason = failReason.asInstanceOf[js.Any], failedAt = failedAt.asInstanceOf[js.Any], lastFinishedAt = lastFinishedAt.asInstanceOf[js.Any], lastModifiedBy = lastModifiedBy.asInstanceOf[js.Any], lastRunAt = lastRunAt.asInstanceOf[js.Any], lockedAt = lockedAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nextRunAt = nextRunAt.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], repeatInterval = repeatInterval.asInstanceOf[js.Any], repeatTimezone = repeatTimezone.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobAttributes[T]]
   }
 }

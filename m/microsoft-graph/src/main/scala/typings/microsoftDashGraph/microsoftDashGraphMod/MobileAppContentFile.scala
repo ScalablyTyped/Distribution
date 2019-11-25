@@ -46,16 +46,16 @@ object MobileAppContentFile {
     uploadState: MobileAppContentFileUploadState = null
   ): MobileAppContentFile = {
     val __obj = js.Dynamic.literal()
-    if (azureStorageUri != null) __obj.updateDynamic("azureStorageUri")(azureStorageUri)
-    if (azureStorageUriExpirationDateTime != null) __obj.updateDynamic("azureStorageUriExpirationDateTime")(azureStorageUriExpirationDateTime)
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isCommitted)) __obj.updateDynamic("isCommitted")(isCommitted)
+    if (azureStorageUri != null) __obj.updateDynamic("azureStorageUri")(azureStorageUri.asInstanceOf[js.Any])
+    if (azureStorageUriExpirationDateTime != null) __obj.updateDynamic("azureStorageUriExpirationDateTime")(azureStorageUriExpirationDateTime.asInstanceOf[js.Any])
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCommitted)) __obj.updateDynamic("isCommitted")(isCommitted.asInstanceOf[js.Any])
     if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sizeEncrypted != null) __obj.updateDynamic("sizeEncrypted")(sizeEncrypted.asInstanceOf[js.Any])
-    if (uploadState != null) __obj.updateDynamic("uploadState")(uploadState)
+    if (uploadState != null) __obj.updateDynamic("uploadState")(uploadState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppContentFile]
   }
 }

@@ -29,12 +29,12 @@ object HighlightsRepositoryHighlightsTrayResponseFriendship_status {
     is_private: js.UndefOr[Boolean] = js.undefined,
     muting: js.UndefOr[Boolean] = js.undefined
   ): HighlightsRepositoryHighlightsTrayResponseFriendship_status = {
-    val __obj = js.Dynamic.literal(following = following, is_bestie = is_bestie, is_restricted = is_restricted, outgoing_request = outgoing_request)
-    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking)
-    if (!js.isUndefined(followed_by)) __obj.updateDynamic("followed_by")(followed_by)
-    if (!js.isUndefined(incoming_request)) __obj.updateDynamic("incoming_request")(incoming_request)
-    if (!js.isUndefined(is_private)) __obj.updateDynamic("is_private")(is_private)
-    if (!js.isUndefined(muting)) __obj.updateDynamic("muting")(muting)
+    val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any], is_bestie = is_bestie.asInstanceOf[js.Any], is_restricted = is_restricted.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
+    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking.asInstanceOf[js.Any])
+    if (!js.isUndefined(followed_by)) __obj.updateDynamic("followed_by")(followed_by.asInstanceOf[js.Any])
+    if (!js.isUndefined(incoming_request)) __obj.updateDynamic("incoming_request")(incoming_request.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_private)) __obj.updateDynamic("is_private")(is_private.asInstanceOf[js.Any])
+    if (!js.isUndefined(muting)) __obj.updateDynamic("muting")(muting.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseFriendship_status]
   }
 }

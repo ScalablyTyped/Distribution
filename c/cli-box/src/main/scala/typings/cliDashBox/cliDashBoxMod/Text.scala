@@ -28,10 +28,10 @@ object Text {
     vAlign: top | center | bottom = null
   ): Text = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoEOL)) __obj.updateDynamic("autoEOL")(autoEOL)
+    if (!js.isUndefined(autoEOL)) __obj.updateDynamic("autoEOL")(autoEOL.asInstanceOf[js.Any])
     if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretch)) __obj.updateDynamic("stretch")(stretch)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(stretch)) __obj.updateDynamic("stretch")(stretch.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (vAlign != null) __obj.updateDynamic("vAlign")(vAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[Text]
   }

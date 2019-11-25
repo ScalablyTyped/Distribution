@@ -13,7 +13,7 @@ object StateChangeOptions {
   @scala.inline
   def apply[Item](`type`: StateChangeTypes): StateChangeOptions[Item] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateChangeOptions[Item]]
   }
 }

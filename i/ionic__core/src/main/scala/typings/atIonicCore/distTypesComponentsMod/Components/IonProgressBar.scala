@@ -4,7 +4,6 @@ import typings.atIonicCore.atIonicCoreStrings.determinate
 import typings.atIonicCore.atIonicCoreStrings.indeterminate
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,9 @@ trait IonProgressBar extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -43,10 +44,10 @@ object IonProgressBar {
     reversed: Boolean,
     `type`: determinate | indeterminate,
     value: Double,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     mode: ios | md = null
   ): IonProgressBar = {
-    val __obj = js.Dynamic.literal(buffer = buffer, reversed = reversed, value = value)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], reversed = reversed.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])

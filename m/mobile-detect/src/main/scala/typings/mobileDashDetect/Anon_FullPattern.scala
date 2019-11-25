@@ -14,7 +14,7 @@ trait Anon_FullPattern extends js.Object {
 object Anon_FullPattern {
   @scala.inline
   def apply(fullPattern: RegExp, shortPattern: RegExp, tabletPattern: RegExp): Anon_FullPattern = {
-    val __obj = js.Dynamic.literal(fullPattern = fullPattern, shortPattern = shortPattern, tabletPattern = tabletPattern)
+    val __obj = js.Dynamic.literal(fullPattern = fullPattern.asInstanceOf[js.Any], shortPattern = shortPattern.asInstanceOf[js.Any], tabletPattern = tabletPattern.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FullPattern]
   }

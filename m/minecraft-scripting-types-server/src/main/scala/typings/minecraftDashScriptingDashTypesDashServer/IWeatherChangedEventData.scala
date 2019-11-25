@@ -26,7 +26,7 @@ trait IWeatherChangedEventData extends js.Object {
 object IWeatherChangedEventData {
   @scala.inline
   def apply(dimension: Dimension, lightning: Boolean, raining: Boolean): IWeatherChangedEventData = {
-    val __obj = js.Dynamic.literal(dimension = dimension.asInstanceOf[js.Any], lightning = lightning, raining = raining)
+    val __obj = js.Dynamic.literal(dimension = dimension.asInstanceOf[js.Any], lightning = lightning.asInstanceOf[js.Any], raining = raining.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWeatherChangedEventData]
   }

@@ -1,8 +1,6 @@
 package typings.dojo.dijit
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.checked
 import typings.dojo.dojoStrings.checkedChar
 import typings.dojo.dojoStrings.role
@@ -57,10 +55,34 @@ class CheckedMenuItem () extends MenuItem {
   @JSName("set")
   def set_role(property: role, value: String): Unit = js.native
   @JSName("watch")
-  def watch_checked(property: checked, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_checked(
+    property: checked,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_checkedChar(property: checkedChar, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_checkedChar(
+    property: checkedChar,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_role(property: role, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_role(
+    property: role,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

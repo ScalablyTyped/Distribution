@@ -32,14 +32,14 @@ object ListGroupItemProps {
     listItem: js.UndefOr[Boolean] = js.undefined
   ): ListGroupItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
-    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
+    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(listItem)) __obj.updateDynamic("listItem")(listItem)
+    if (!js.isUndefined(listItem)) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupItemProps]
   }
 }

@@ -21,8 +21,8 @@ object Renderers {
     table: String | js.Function0[Element] = null
   ): Renderers = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[Renderers]
   }

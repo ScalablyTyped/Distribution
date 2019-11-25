@@ -30,9 +30,9 @@ object TitleEncode {
     title: GuideEncodeEntry[TextEncodeEntry] = null
   ): TitleEncode = {
     val __obj = js.Dynamic.literal()
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TitleEncode]
   }
 }

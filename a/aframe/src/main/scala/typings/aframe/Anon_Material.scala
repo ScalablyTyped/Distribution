@@ -11,7 +11,7 @@ trait Anon_Material extends js.Object {
 object Anon_Material {
   @scala.inline
   def apply(material: js.Object): Anon_Material = {
-    val __obj = js.Dynamic.literal(material = material)
+    val __obj = js.Dynamic.literal(material = material.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Material]
   }

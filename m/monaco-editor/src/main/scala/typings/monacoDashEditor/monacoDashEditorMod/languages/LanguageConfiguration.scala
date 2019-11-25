@@ -76,16 +76,16 @@ object LanguageConfiguration {
     wordPattern: RegExp = null
   ): LanguageConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (__electricCharacterSupport != null) __obj.updateDynamic("__electricCharacterSupport")(__electricCharacterSupport)
-    if (autoCloseBefore != null) __obj.updateDynamic("autoCloseBefore")(autoCloseBefore)
-    if (autoClosingPairs != null) __obj.updateDynamic("autoClosingPairs")(autoClosingPairs)
-    if (brackets != null) __obj.updateDynamic("brackets")(brackets)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (folding != null) __obj.updateDynamic("folding")(folding)
-    if (indentationRules != null) __obj.updateDynamic("indentationRules")(indentationRules)
-    if (onEnterRules != null) __obj.updateDynamic("onEnterRules")(onEnterRules)
-    if (surroundingPairs != null) __obj.updateDynamic("surroundingPairs")(surroundingPairs)
-    if (wordPattern != null) __obj.updateDynamic("wordPattern")(wordPattern)
+    if (__electricCharacterSupport != null) __obj.updateDynamic("__electricCharacterSupport")(__electricCharacterSupport.asInstanceOf[js.Any])
+    if (autoCloseBefore != null) __obj.updateDynamic("autoCloseBefore")(autoCloseBefore.asInstanceOf[js.Any])
+    if (autoClosingPairs != null) __obj.updateDynamic("autoClosingPairs")(autoClosingPairs.asInstanceOf[js.Any])
+    if (brackets != null) __obj.updateDynamic("brackets")(brackets.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (folding != null) __obj.updateDynamic("folding")(folding.asInstanceOf[js.Any])
+    if (indentationRules != null) __obj.updateDynamic("indentationRules")(indentationRules.asInstanceOf[js.Any])
+    if (onEnterRules != null) __obj.updateDynamic("onEnterRules")(onEnterRules.asInstanceOf[js.Any])
+    if (surroundingPairs != null) __obj.updateDynamic("surroundingPairs")(surroundingPairs.asInstanceOf[js.Any])
+    if (wordPattern != null) __obj.updateDynamic("wordPattern")(wordPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageConfiguration]
   }
 }

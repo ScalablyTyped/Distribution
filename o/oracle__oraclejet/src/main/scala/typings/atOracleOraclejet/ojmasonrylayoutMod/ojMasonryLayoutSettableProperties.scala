@@ -15,8 +15,8 @@ trait ojMasonryLayoutSettableProperties extends baseComponentSettableProperties 
 object ojMasonryLayoutSettableProperties {
   @scala.inline
   def apply(translations: Anon_LabelCut, reorderHandle: String = null): ojMasonryLayoutSettableProperties = {
-    val __obj = js.Dynamic.literal(translations = translations)
-    if (reorderHandle != null) __obj.updateDynamic("reorderHandle")(reorderHandle)
+    val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any])
+    if (reorderHandle != null) __obj.updateDynamic("reorderHandle")(reorderHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojMasonryLayoutSettableProperties]
   }
 }

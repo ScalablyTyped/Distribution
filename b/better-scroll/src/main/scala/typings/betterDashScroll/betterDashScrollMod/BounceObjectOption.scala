@@ -20,10 +20,10 @@ object BounceObjectOption {
     top: js.UndefOr[Boolean] = js.undefined
   ): BounceObjectOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom)
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right)
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[BounceObjectOption]
   }
 }

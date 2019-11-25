@@ -16,8 +16,8 @@ object DeleteCredentials {
   @scala.inline
   def apply(credential_id: String = null, status: String = null): DeleteCredentials = {
     val __obj = js.Dynamic.literal()
-    if (credential_id != null) __obj.updateDynamic("credential_id")(credential_id)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (credential_id != null) __obj.updateDynamic("credential_id")(credential_id.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCredentials]
   }
 }

@@ -19,7 +19,7 @@ object IChoiceGroup {
   @scala.inline
   def apply(focus: () => Unit, checkedOption: IChoiceGroupOption = null): IChoiceGroup = {
     val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
-    if (checkedOption != null) __obj.updateDynamic("checkedOption")(checkedOption)
+    if (checkedOption != null) __obj.updateDynamic("checkedOption")(checkedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChoiceGroup]
   }
 }

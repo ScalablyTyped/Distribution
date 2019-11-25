@@ -31,8 +31,8 @@ object ReelsMediaFeedResponseLinksItem {
     redirectUri: Null,
     webUri: String
   ): ReelsMediaFeedResponseLinksItem = {
-    val __obj = js.Dynamic.literal(androidClass = androidClass, appInstallObjectiveInvalidationBehavior = appInstallObjectiveInvalidationBehavior, callToActionTitle = callToActionTitle, deeplinkUri = deeplinkUri, igUserId = igUserId, leadGenFormId = leadGenFormId, linkType = linkType, redirectUri = redirectUri, webUri = webUri)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(androidClass = androidClass.asInstanceOf[js.Any], appInstallObjectiveInvalidationBehavior = appInstallObjectiveInvalidationBehavior.asInstanceOf[js.Any], callToActionTitle = callToActionTitle.asInstanceOf[js.Any], deeplinkUri = deeplinkUri.asInstanceOf[js.Any], igUserId = igUserId.asInstanceOf[js.Any], leadGenFormId = leadGenFormId.asInstanceOf[js.Any], linkType = linkType.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any], webUri = webUri.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsMediaFeedResponseLinksItem]
   }
 }

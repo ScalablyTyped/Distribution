@@ -34,13 +34,13 @@ object GraphQLField {
     resolve: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo) => js.Any = null,
     subscribe: (TSource, TArgs, TContext, /* info */ GraphQLResolveInfo) => js.Any = null
   ): GraphQLField[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal(args = args, name = name)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDeprecated)) __obj.updateDynamic("isDeprecated")(isDeprecated)
+    if (!js.isUndefined(isDeprecated)) __obj.updateDynamic("isDeprecated")(isDeprecated.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction4(resolve))
     if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction4(subscribe))
     __obj.asInstanceOf[GraphQLField[TSource, TContext, TArgs]]

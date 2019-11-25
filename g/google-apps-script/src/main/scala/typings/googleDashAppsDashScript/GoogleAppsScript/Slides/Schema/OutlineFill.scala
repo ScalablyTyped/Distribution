@@ -12,7 +12,7 @@ object OutlineFill {
   @scala.inline
   def apply(solidFill: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.SolidFill = null): OutlineFill = {
     val __obj = js.Dynamic.literal()
-    if (solidFill != null) __obj.updateDynamic("solidFill")(solidFill)
+    if (solidFill != null) __obj.updateDynamic("solidFill")(solidFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutlineFill]
   }
 }

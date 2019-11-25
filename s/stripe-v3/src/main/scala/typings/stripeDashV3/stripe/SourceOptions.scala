@@ -48,18 +48,18 @@ object SourceOptions {
     usage: reusable | single_use = null
   ): SourceOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
-    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit)
-    if (sofort != null) __obj.updateDynamic("sofort")(sofort)
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    if (three_d_secure != null) __obj.updateDynamic("three_d_secure")(three_d_secure)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit.asInstanceOf[js.Any])
+    if (sofort != null) __obj.updateDynamic("sofort")(sofort.asInstanceOf[js.Any])
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
+    if (three_d_secure != null) __obj.updateDynamic("three_d_secure")(three_d_secure.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptions]
   }

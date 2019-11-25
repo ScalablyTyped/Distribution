@@ -21,10 +21,10 @@ object PartialClassNameMapGridListTileClassKey {
     tile: String = null
   ): PartialClassNameMapGridListTileClassKey = {
     val __obj = js.Dynamic.literal()
-    if (imgFullHeight != null) __obj.updateDynamic("imgFullHeight")(imgFullHeight)
-    if (imgFullWidth != null) __obj.updateDynamic("imgFullWidth")(imgFullWidth)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (tile != null) __obj.updateDynamic("tile")(tile)
+    if (imgFullHeight != null) __obj.updateDynamic("imgFullHeight")(imgFullHeight.asInstanceOf[js.Any])
+    if (imgFullWidth != null) __obj.updateDynamic("imgFullWidth")(imgFullWidth.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (tile != null) __obj.updateDynamic("tile")(tile.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapGridListTileClassKey]
   }
 }

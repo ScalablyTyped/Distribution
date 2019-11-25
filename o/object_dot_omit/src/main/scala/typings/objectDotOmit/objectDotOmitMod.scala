@@ -11,7 +11,7 @@ object objectDotOmitMod extends js.Object {
   def apply[GObject /* <: js.Object */, GKey /* <: String */](
     `object`: GObject,
     fn: js.Function3[
-      /* import warning: ImportType.apply Failed type conversion: GObject[GKey] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: GObject[GKey] */ /* value */ js.Any, 
       /* key */ GKey, 
       /* obj */ GObject, 
       Boolean

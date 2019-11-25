@@ -28,10 +28,10 @@ object PurchaseItem {
     tags: js.Array[String] = null,
     vars: js.Object = null
   ): PurchaseItem = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], price = price, qty = qty, title = title, url = url)
-    if (images != null) __obj.updateDynamic("images")(images)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (vars != null) __obj.updateDynamic("vars")(vars)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], qty = qty.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vars != null) __obj.updateDynamic("vars")(vars.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseItem]
   }
 }

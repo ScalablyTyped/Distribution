@@ -38,9 +38,9 @@ object Page {
   @scala.inline
   def apply(content: String = null, name: String = null, subpages: js.Array[Page] = null): Page = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (subpages != null) __obj.updateDynamic("subpages")(subpages)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subpages != null) __obj.updateDynamic("subpages")(subpages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }
 }

@@ -25,12 +25,12 @@ object LinkParams {
     urlPrefix: String = null
   ): LinkParams = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelField != null) __obj.updateDynamic("labelField")(labelField)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (urlField != null) __obj.updateDynamic("urlField")(urlField)
-    if (urlPrefix != null) __obj.updateDynamic("urlPrefix")(urlPrefix)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (urlField != null) __obj.updateDynamic("urlField")(urlField.asInstanceOf[js.Any])
+    if (urlPrefix != null) __obj.updateDynamic("urlPrefix")(urlPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkParams]
   }
 }

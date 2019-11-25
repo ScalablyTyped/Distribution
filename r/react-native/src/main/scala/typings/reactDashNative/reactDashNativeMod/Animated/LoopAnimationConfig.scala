@@ -18,7 +18,7 @@ object LoopAnimationConfig {
   def apply(iterations: Int | Double = null, resetBeforeIteration: js.UndefOr[Boolean] = js.undefined): LoopAnimationConfig = {
     val __obj = js.Dynamic.literal()
     if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetBeforeIteration)) __obj.updateDynamic("resetBeforeIteration")(resetBeforeIteration)
+    if (!js.isUndefined(resetBeforeIteration)) __obj.updateDynamic("resetBeforeIteration")(resetBeforeIteration.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoopAnimationConfig]
   }
 }

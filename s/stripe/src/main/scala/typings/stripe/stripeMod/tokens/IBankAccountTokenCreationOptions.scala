@@ -25,9 +25,9 @@ object IBankAccountTokenCreationOptions {
     include: js.Array[String] = null
   ): IBankAccountTokenCreationOptions = {
     val __obj = js.Dynamic.literal(bank_account = bank_account.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBankAccountTokenCreationOptions]
   }
 }

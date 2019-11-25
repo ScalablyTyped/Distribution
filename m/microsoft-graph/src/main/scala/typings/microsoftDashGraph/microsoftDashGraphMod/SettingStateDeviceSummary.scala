@@ -43,12 +43,12 @@ object SettingStateDeviceSummary {
     if (compliantDeviceCount != null) __obj.updateDynamic("compliantDeviceCount")(compliantDeviceCount.asInstanceOf[js.Any])
     if (conflictDeviceCount != null) __obj.updateDynamic("conflictDeviceCount")(conflictDeviceCount.asInstanceOf[js.Any])
     if (errorDeviceCount != null) __obj.updateDynamic("errorDeviceCount")(errorDeviceCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (instancePath != null) __obj.updateDynamic("instancePath")(instancePath)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (instancePath != null) __obj.updateDynamic("instancePath")(instancePath.asInstanceOf[js.Any])
     if (nonCompliantDeviceCount != null) __obj.updateDynamic("nonCompliantDeviceCount")(nonCompliantDeviceCount.asInstanceOf[js.Any])
     if (notApplicableDeviceCount != null) __obj.updateDynamic("notApplicableDeviceCount")(notApplicableDeviceCount.asInstanceOf[js.Any])
     if (remediatedDeviceCount != null) __obj.updateDynamic("remediatedDeviceCount")(remediatedDeviceCount.asInstanceOf[js.Any])
-    if (settingName != null) __obj.updateDynamic("settingName")(settingName)
+    if (settingName != null) __obj.updateDynamic("settingName")(settingName.asInstanceOf[js.Any])
     if (unknownDeviceCount != null) __obj.updateDynamic("unknownDeviceCount")(unknownDeviceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingStateDeviceSummary]
   }

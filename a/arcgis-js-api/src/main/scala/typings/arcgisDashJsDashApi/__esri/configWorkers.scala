@@ -30,9 +30,9 @@ object configWorkers {
     loaderConfig: configWorkersLoaderConfig = null,
     loaderUrl: js.Any = null
   ): configWorkers = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (loaderConfig != null) __obj.updateDynamic("loaderConfig")(loaderConfig)
-    if (loaderUrl != null) __obj.updateDynamic("loaderUrl")(loaderUrl)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (loaderConfig != null) __obj.updateDynamic("loaderConfig")(loaderConfig.asInstanceOf[js.Any])
+    if (loaderUrl != null) __obj.updateDynamic("loaderUrl")(loaderUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[configWorkers]
   }
 }

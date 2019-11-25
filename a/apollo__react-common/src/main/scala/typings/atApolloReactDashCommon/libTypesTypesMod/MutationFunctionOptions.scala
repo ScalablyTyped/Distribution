@@ -32,9 +32,9 @@ object MutationFunctionOptions {
     variables: TVariables = null
   ): MutationFunctionOptions[TData, TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
+    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
     if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))

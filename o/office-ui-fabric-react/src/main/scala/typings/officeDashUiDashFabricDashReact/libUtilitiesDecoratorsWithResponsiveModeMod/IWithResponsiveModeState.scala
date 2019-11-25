@@ -12,7 +12,7 @@ object IWithResponsiveModeState {
   @scala.inline
   def apply(responsiveMode: ResponsiveMode = null): IWithResponsiveModeState = {
     val __obj = js.Dynamic.literal()
-    if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode)
+    if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWithResponsiveModeState]
   }
 }

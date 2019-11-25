@@ -24,9 +24,9 @@ object DialogNodeOutput {
     modifiers: DialogNodeOutputModifiers = null
   ): DialogNodeOutput = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (generic != null) __obj.updateDynamic("generic")(generic)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (generic != null) __obj.updateDynamic("generic")(generic.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeOutput]
   }
 }

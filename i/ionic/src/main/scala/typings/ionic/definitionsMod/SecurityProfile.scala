@@ -24,7 +24,7 @@ object SecurityProfile {
     tag: String,
     `type`: development | production
   ): SecurityProfile = {
-    val __obj = js.Dynamic.literal(created = created, credentials = credentials, name = name, tag = tag)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], credentials = credentials.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityProfile]
   }

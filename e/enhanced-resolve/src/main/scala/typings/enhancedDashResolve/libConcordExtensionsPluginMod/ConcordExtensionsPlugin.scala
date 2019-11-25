@@ -21,7 +21,7 @@ object ConcordExtensionsPlugin {
     source: String,
     target: String
   ): ConcordExtensionsPlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), options = options, source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConcordExtensionsPlugin]
   }

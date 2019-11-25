@@ -29,7 +29,7 @@ object Anon_Bri {
     sat: Double,
     xy: js.Tuple2[Double, Double]
   ): Anon_Bri = {
-    val __obj = js.Dynamic.literal(bri = bri, colormode = colormode, ct = ct, effect = effect, hue = hue, on = on, sat = sat, xy = xy)
+    val __obj = js.Dynamic.literal(bri = bri.asInstanceOf[js.Any], colormode = colormode.asInstanceOf[js.Any], ct = ct.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], hue = hue.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], sat = sat.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bri]
   }

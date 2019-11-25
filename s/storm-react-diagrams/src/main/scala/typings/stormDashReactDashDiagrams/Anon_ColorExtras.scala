@@ -29,8 +29,8 @@ object Anon_ColorExtras {
     x: Double,
     y: Double
   ): Anon_ColorExtras = {
-    val __obj = js.Dynamic.literal(color = color, extras = extras, id = id, name = name, ports = ports, selected = selected, x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], extras = extras.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorExtras]
   }
 }

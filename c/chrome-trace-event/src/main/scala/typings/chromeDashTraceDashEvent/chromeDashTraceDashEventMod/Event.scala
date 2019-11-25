@@ -23,9 +23,9 @@ object Event {
     StringDictionary: /* otherData */ StringDictionary[js.Any] = null,
     ph: String = null
   ): Event = {
-    val __obj = js.Dynamic.literal(pid = pid, tid = tid, ts = ts)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (ph != null) __obj.updateDynamic("ph")(ph)
+    val __obj = js.Dynamic.literal(pid = pid.asInstanceOf[js.Any], tid = tid.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (ph != null) __obj.updateDynamic("ph")(ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

@@ -21,9 +21,9 @@ trait TdError extends js.Object {
 object TdError {
   @scala.inline
   def apply(`@type`: error, code: Double, message: String, `@extra`: string = null): TdError = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
-    __obj.updateDynamic("@type")(`@type`)
-    if (`@extra` != null) __obj.updateDynamic("@extra")(`@extra`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("@type")(`@type`.asInstanceOf[js.Any])
+    if (`@extra` != null) __obj.updateDynamic("@extra")(`@extra`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TdError]
   }
 }

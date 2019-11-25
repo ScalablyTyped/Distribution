@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait LineCapType extends js.Object
 
+object LineCapType {
+  @scala.inline
+  def butt: typings.weixinDashApp.weixinDashAppStrings.butt = this.cast("butt")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def round: typings.weixinDashApp.weixinDashAppStrings.round = this.cast("round")
+  @scala.inline
+  def square: typings.weixinDashApp.weixinDashAppStrings.square = this.cast("square")
+}
+

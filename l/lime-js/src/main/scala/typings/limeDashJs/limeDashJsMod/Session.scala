@@ -32,19 +32,19 @@ object Session {
     scheme: String = null,
     to: String = null
   ): Session = {
-    val __obj = js.Dynamic.literal(state = state)
-    if (authentication != null) __obj.updateDynamic("authentication")(authentication)
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions)
-    if (encryption != null) __obj.updateDynamic("encryption")(encryption)
-    if (encryptionOptions != null) __obj.updateDynamic("encryptionOptions")(encryptionOptions)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (pp != null) __obj.updateDynamic("pp")(pp)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
-    if (to != null) __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+    if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
+    if (encryption != null) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])
+    if (encryptionOptions != null) __obj.updateDynamic("encryptionOptions")(encryptionOptions.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (pp != null) __obj.updateDynamic("pp")(pp.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
 }

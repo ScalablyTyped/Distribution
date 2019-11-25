@@ -12,7 +12,7 @@ trait Anon_Cascader extends js.Object {
 object Anon_Cascader {
   @scala.inline
   def apply(cascader: Element): Anon_Cascader = {
-    val __obj = js.Dynamic.literal(cascader = cascader)
+    val __obj = js.Dynamic.literal(cascader = cascader.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cascader]
   }

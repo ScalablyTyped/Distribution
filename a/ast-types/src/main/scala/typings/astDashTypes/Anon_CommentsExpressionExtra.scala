@@ -25,10 +25,10 @@ object Anon_CommentsExpressionExtra {
     extra: Anon_Parenthesized = null,
     loc: SourceLocationKind = null
   ): Anon_CommentsExpressionExtra = {
-    val __obj = js.Dynamic.literal(expression = expression, typeAnnotation = typeAnnotation)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsExpressionExtra]
   }
 }

@@ -21,9 +21,9 @@ object PlacementStrategiesListResponse {
     placementStrategies: js.Array[PlacementStrategy] = null
   ): PlacementStrategiesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (placementStrategies != null) __obj.updateDynamic("placementStrategies")(placementStrategies)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (placementStrategies != null) __obj.updateDynamic("placementStrategies")(placementStrategies.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementStrategiesListResponse]
   }
 }

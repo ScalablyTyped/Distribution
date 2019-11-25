@@ -26,7 +26,7 @@ object GhostAPI {
     settings: Anon_BrowseBrowseFunction,
     tags: Anon_BrowseReadBrowseFunction
   ): GhostAPI = {
-    val __obj = js.Dynamic.literal(authors = authors, pages = pages, posts = posts, settings = settings, tags = tags)
+    val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], posts = posts.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GhostAPI]
   }

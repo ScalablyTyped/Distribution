@@ -12,8 +12,8 @@ trait SessionAcceptedEvent extends js.Object {
 object SessionAcceptedEvent {
   @scala.inline
   def apply(originator: String, response: IncomingResponse = null): SessionAcceptedEvent = {
-    val __obj = js.Dynamic.literal(originator = originator)
-    if (response != null) __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionAcceptedEvent]
   }
 }

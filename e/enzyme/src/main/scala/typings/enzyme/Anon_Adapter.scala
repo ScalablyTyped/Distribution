@@ -20,8 +20,8 @@ trait Anon_Adapter extends js.Object {
 object Anon_Adapter {
   @scala.inline
   def apply(adapter: EnzymeAdapter, disableLifecycleMethods: js.UndefOr[Boolean] = js.undefined): Anon_Adapter = {
-    val __obj = js.Dynamic.literal(adapter = adapter)
-    if (!js.isUndefined(disableLifecycleMethods)) __obj.updateDynamic("disableLifecycleMethods")(disableLifecycleMethods)
+    val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableLifecycleMethods)) __obj.updateDynamic("disableLifecycleMethods")(disableLifecycleMethods.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Adapter]
   }
 }

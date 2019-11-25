@@ -23,9 +23,9 @@ trait JQuery extends js.Object {
 
 object JQuery {
   @scala.inline
-  def apply(bootpag: Options => JQuery, on_page: (page, PageEventHandler) => JQuery): JQuery = {
-    val __obj = js.Dynamic.literal(bootpag = js.Any.fromFunction1(bootpag))
-    __obj.updateDynamic("on")(js.Any.fromFunction2(on_page))
+  def apply(bootpag: Options => JQuery, on: (page, PageEventHandler) => JQuery): JQuery = {
+    val __obj = js.Dynamic.literal(bootpag = js.Any.fromFunction1(bootpag), on = js.Any.fromFunction2(on))
+  
     __obj.asInstanceOf[JQuery]
   }
 }

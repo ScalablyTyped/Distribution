@@ -18,9 +18,9 @@ object WalkOptions {
     listeners: WalkOptionsListeners = null
   ): WalkOptions = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(followLinks)) __obj.updateDynamic("followLinks")(followLinks)
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(followLinks)) __obj.updateDynamic("followLinks")(followLinks.asInstanceOf[js.Any])
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkOptions]
   }
 }

@@ -20,9 +20,9 @@ object AssertionOptions {
     timeoutSeconds: Int | Double = null
   ): AssertionOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowList != null) __obj.updateDynamic("allowList")(allowList)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (rpId != null) __obj.updateDynamic("rpId")(rpId)
+    if (allowList != null) __obj.updateDynamic("allowList")(allowList.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (rpId != null) __obj.updateDynamic("rpId")(rpId.asInstanceOf[js.Any])
     if (timeoutSeconds != null) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertionOptions]
   }

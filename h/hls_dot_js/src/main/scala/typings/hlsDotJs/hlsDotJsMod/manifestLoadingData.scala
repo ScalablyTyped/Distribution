@@ -11,7 +11,7 @@ trait manifestLoadingData extends js.Object {
 object manifestLoadingData {
   @scala.inline
   def apply(url: String): manifestLoadingData = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[manifestLoadingData]
   }

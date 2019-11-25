@@ -11,8 +11,8 @@ trait ResolvedStarterTemplate extends BaseStarterTemplate {
 object ResolvedStarterTemplate {
   @scala.inline
   def apply(archive: String, name: String, projectType: ProjectType, description: String = null): ResolvedStarterTemplate = {
-    val __obj = js.Dynamic.literal(archive = archive, name = name, projectType = projectType)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(archive = archive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedStarterTemplate]
   }
 }

@@ -23,7 +23,7 @@ object ReturnTypeNode {
     fragmentRef: js.Any,
     refetch: RefetchFnDynamic[TQuery, TKey, TOptions]
   ): ReturnTypeNode[TQuery, TKey, TOptions] = {
-    val __obj = js.Dynamic.literal(disableStoreUpdates = js.Any.fromFunction0(disableStoreUpdates), enableStoreUpdates = js.Any.fromFunction0(enableStoreUpdates), fragmentData = fragmentData, fragmentRef = fragmentRef, refetch = refetch)
+    val __obj = js.Dynamic.literal(disableStoreUpdates = js.Any.fromFunction0(disableStoreUpdates), enableStoreUpdates = js.Any.fromFunction0(enableStoreUpdates), fragmentData = fragmentData.asInstanceOf[js.Any], fragmentRef = fragmentRef.asInstanceOf[js.Any], refetch = refetch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReturnTypeNode[TQuery, TKey, TOptions]]
   }

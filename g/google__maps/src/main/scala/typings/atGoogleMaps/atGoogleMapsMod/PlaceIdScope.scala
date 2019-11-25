@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait PlaceIdScope extends js.Object
 
+object PlaceIdScope {
+  @scala.inline
+  def APP: typings.atGoogleMaps.atGoogleMapsStrings.APP = this.cast("APP")
+  @scala.inline
+  def GOOGLE: typings.atGoogleMaps.atGoogleMapsStrings.GOOGLE = this.cast("GOOGLE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

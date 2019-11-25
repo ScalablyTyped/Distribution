@@ -73,16 +73,16 @@ object Error {
     payment_method: PaymentMethod = null,
     source: Source = null
   ): Error = {
-    val __obj = js.Dynamic.literal(charge = charge)
-    __obj.updateDynamic("type")(`type`)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (decline_code != null) __obj.updateDynamic("decline_code")(decline_code)
-    if (doc_url != null) __obj.updateDynamic("doc_url")(doc_url)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (param != null) __obj.updateDynamic("param")(param)
-    if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent)
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(charge = charge.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (decline_code != null) __obj.updateDynamic("decline_code")(decline_code.asInstanceOf[js.Any])
+    if (doc_url != null) __obj.updateDynamic("doc_url")(doc_url.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
+    if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent.asInstanceOf[js.Any])
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
 }

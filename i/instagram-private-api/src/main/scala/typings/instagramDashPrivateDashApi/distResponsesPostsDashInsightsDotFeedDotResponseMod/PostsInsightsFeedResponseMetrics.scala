@@ -23,7 +23,7 @@ object PostsInsightsFeedResponseMetrics {
     reach_count: Double,
     share_count: PostsInsightsFeedResponseShare_count
   ): PostsInsightsFeedResponseMetrics = {
-    val __obj = js.Dynamic.literal(impression_count = impression_count, owner_account_follows_count = owner_account_follows_count, owner_profile_views_count = owner_profile_views_count, profile_actions = profile_actions, reach_count = reach_count, share_count = share_count)
+    val __obj = js.Dynamic.literal(impression_count = impression_count.asInstanceOf[js.Any], owner_account_follows_count = owner_account_follows_count.asInstanceOf[js.Any], owner_profile_views_count = owner_profile_views_count.asInstanceOf[js.Any], profile_actions = profile_actions.asInstanceOf[js.Any], reach_count = reach_count.asInstanceOf[js.Any], share_count = share_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostsInsightsFeedResponseMetrics]
   }

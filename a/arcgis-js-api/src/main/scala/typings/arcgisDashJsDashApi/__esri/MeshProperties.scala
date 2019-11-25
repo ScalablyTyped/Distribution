@@ -29,11 +29,11 @@ object MeshProperties {
     vertexAttributes: MeshVertexAttributesProperties = null
   ): MeshProperties = {
     val __obj = js.Dynamic.literal()
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
-    if (vertexAttributes != null) __obj.updateDynamic("vertexAttributes")(vertexAttributes)
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
+    if (vertexAttributes != null) __obj.updateDynamic("vertexAttributes")(vertexAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshProperties]
   }
 }

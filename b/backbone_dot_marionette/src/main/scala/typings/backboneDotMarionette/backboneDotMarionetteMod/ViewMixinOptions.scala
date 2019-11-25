@@ -59,14 +59,14 @@ object ViewMixinOptions {
     ui: js.Any = null
   ): ViewMixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
     if (childViewEventPrefix != null) __obj.updateDynamic("childViewEventPrefix")(childViewEventPrefix.asInstanceOf[js.Any])
-    if (childViewEvents != null) __obj.updateDynamic("childViewEvents")(childViewEvents)
-    if (childViewTriggers != null) __obj.updateDynamic("childViewTriggers")(childViewTriggers)
-    if (collectionEvents != null) __obj.updateDynamic("collectionEvents")(collectionEvents)
-    if (modelEvents != null) __obj.updateDynamic("modelEvents")(modelEvents)
-    if (triggers != null) __obj.updateDynamic("triggers")(triggers)
-    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (childViewEvents != null) __obj.updateDynamic("childViewEvents")(childViewEvents.asInstanceOf[js.Any])
+    if (childViewTriggers != null) __obj.updateDynamic("childViewTriggers")(childViewTriggers.asInstanceOf[js.Any])
+    if (collectionEvents != null) __obj.updateDynamic("collectionEvents")(collectionEvents.asInstanceOf[js.Any])
+    if (modelEvents != null) __obj.updateDynamic("modelEvents")(modelEvents.asInstanceOf[js.Any])
+    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
+    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewMixinOptions]
   }
 }

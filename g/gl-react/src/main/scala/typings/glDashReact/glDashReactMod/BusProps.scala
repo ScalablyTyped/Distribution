@@ -13,9 +13,9 @@ trait BusProps extends js.Object {
 object BusProps {
   @scala.inline
   def apply(index: Double, children: js.Any = null, uniform: String = null): BusProps = {
-    val __obj = js.Dynamic.literal(index = index)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (uniform != null) __obj.updateDynamic("uniform")(uniform)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (uniform != null) __obj.updateDynamic("uniform")(uniform.asInstanceOf[js.Any])
     __obj.asInstanceOf[BusProps]
   }
 }

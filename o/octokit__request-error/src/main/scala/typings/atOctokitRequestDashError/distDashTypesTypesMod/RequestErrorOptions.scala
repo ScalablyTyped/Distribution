@@ -17,8 +17,8 @@ object RequestErrorOptions {
     request: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RequestOptions */ js.Any,
     headers: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResponseHeaders */ js.Any = null
   ): RequestErrorOptions = {
-    val __obj = js.Dynamic.literal(request = request)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestErrorOptions]
   }
 }

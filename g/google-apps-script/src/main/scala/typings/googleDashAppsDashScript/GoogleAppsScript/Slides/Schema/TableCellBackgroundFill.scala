@@ -16,8 +16,8 @@ object TableCellBackgroundFill {
     solidFill: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.Schema.SolidFill = null
   ): TableCellBackgroundFill = {
     val __obj = js.Dynamic.literal()
-    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState)
-    if (solidFill != null) __obj.updateDynamic("solidFill")(solidFill)
+    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState.asInstanceOf[js.Any])
+    if (solidFill != null) __obj.updateDynamic("solidFill")(solidFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellBackgroundFill]
   }
 }

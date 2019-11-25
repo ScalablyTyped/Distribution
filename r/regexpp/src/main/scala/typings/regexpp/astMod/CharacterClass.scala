@@ -27,8 +27,8 @@ object CharacterClass {
     start: Double,
     `type`: typings.regexpp.regexppStrings.CharacterClass
   ): CharacterClass = {
-    val __obj = js.Dynamic.literal(elements = elements, end = end, negate = negate, parent = parent.asInstanceOf[js.Any], raw = raw, start = start)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacterClass]
   }
 }

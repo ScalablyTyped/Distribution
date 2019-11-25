@@ -48,15 +48,15 @@ object ModelMapReduceOption {
   ): ModelMapReduceOption[T, Key, Val] = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], reduce = js.Any.fromFunction2(reduce))
     if (finalize != null) __obj.updateDynamic("finalize")(js.Any.fromFunction2(finalize))
-    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode)
-    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp)
+    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (out != null) __obj.updateDynamic("out")(out)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelMapReduceOption[T, Key, Val]]
   }
 }

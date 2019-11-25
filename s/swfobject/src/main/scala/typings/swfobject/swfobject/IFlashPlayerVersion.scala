@@ -13,7 +13,7 @@ trait IFlashPlayerVersion extends js.Object {
 object IFlashPlayerVersion {
   @scala.inline
   def apply(major: Double, minor: Double, release: Double): IFlashPlayerVersion = {
-    val __obj = js.Dynamic.literal(major = major, minor = minor, release = release)
+    val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFlashPlayerVersion]
   }

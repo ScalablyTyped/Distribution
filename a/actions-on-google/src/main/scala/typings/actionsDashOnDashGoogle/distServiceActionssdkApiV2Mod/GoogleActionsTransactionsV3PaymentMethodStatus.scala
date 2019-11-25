@@ -17,8 +17,8 @@ object GoogleActionsTransactionsV3PaymentMethodStatus {
   @scala.inline
   def apply(status: GoogleActionsTransactionsV3PaymentMethodStatusStatus = null, statusMessage: String = null): GoogleActionsTransactionsV3PaymentMethodStatus = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3PaymentMethodStatus]
   }
 }

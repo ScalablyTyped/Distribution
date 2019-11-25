@@ -27,11 +27,11 @@ object WorkItem {
     timestamp: String = null,
     version: Int | Double = null
   ): WorkItem = {
-    val __obj = js.Dynamic.literal(_arguments = _arguments, activityId = activityId, id = id)
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (statusDetail != null) __obj.updateDynamic("statusDetail")(statusDetail)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(_arguments = _arguments.asInstanceOf[js.Any], activityId = activityId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusDetail != null) __obj.updateDynamic("statusDetail")(statusDetail.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItem]
   }

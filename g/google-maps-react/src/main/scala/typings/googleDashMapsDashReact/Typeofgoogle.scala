@@ -11,7 +11,7 @@ trait Typeofgoogle extends js.Object {
 object Typeofgoogle {
   @scala.inline
   def apply(maps: Typeofmaps): Typeofgoogle = {
-    val __obj = js.Dynamic.literal(maps = maps)
+    val __obj = js.Dynamic.literal(maps = maps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofgoogle]
   }

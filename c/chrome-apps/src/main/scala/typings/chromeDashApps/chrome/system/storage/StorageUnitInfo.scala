@@ -5,7 +5,7 @@ import typings.chromeDashApps.chrome.ToStringLiteral
 import typings.chromeDashApps.chrome.integer
 import typings.chromeDashApps.chromeDashAppsStrings.fixed
 import typings.chromeDashApps.chromeDashAppsStrings.removable
-import typings.chromeDashApps.chromeDashAppsStrings.unknown
+import typings.chromeDashApps.chromeDashAppsStrings.unknown_
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ trait StorageUnitInfo extends js.Object {
     * unknown: The storage type is unknown.
     * @see enum StorageUnitType
     */
-  var `type`: ToStringLiteral[Anon_FIXED, String, Exclude[String, fixed | removable | unknown]]
+  var `type`: ToStringLiteral[Anon_FIXED, String, Exclude[String, fixed | removable | unknown_]]
 }
 
 object StorageUnitInfo {
@@ -38,9 +38,9 @@ object StorageUnitInfo {
     capacity: integer,
     id: String,
     name: String,
-    `type`: ToStringLiteral[Anon_FIXED, String, Exclude[String, fixed | removable | unknown]]
+    `type`: ToStringLiteral[Anon_FIXED, String, Exclude[String, fixed | removable | unknown_]]
   ): StorageUnitInfo = {
-    val __obj = js.Dynamic.literal(capacity = capacity, id = id, name = name)
+    val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageUnitInfo]
   }

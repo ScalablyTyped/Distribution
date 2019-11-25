@@ -35,8 +35,8 @@ object BaseWatchPlugin {
     run: (GlobalConfig, UpdateConfigCallback) => js.Promise[Unit | Boolean],
     isInternal: js.UndefOr[Boolean] = js.undefined
   ): BaseWatchPlugin = {
-    val __obj = js.Dynamic.literal(_stdin = _stdin, _stdout = _stdout, apply = js.Any.fromFunction1(apply), getUsageInfo = js.Any.fromFunction1(getUsageInfo), onKey = js.Any.fromFunction1(onKey), run = js.Any.fromFunction2(run))
-    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal)
+    val __obj = js.Dynamic.literal(_stdin = _stdin.asInstanceOf[js.Any], _stdout = _stdout.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), getUsageInfo = js.Any.fromFunction1(getUsageInfo), onKey = js.Any.fromFunction1(onKey), run = js.Any.fromFunction2(run))
+    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseWatchPlugin]
   }
 }

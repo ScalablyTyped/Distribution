@@ -15,8 +15,8 @@ object IncompleteData {
   @scala.inline
   def apply(missingDataBeforeDateTime: String = null, wasThrottled: js.UndefOr[Boolean] = js.undefined): IncompleteData = {
     val __obj = js.Dynamic.literal()
-    if (missingDataBeforeDateTime != null) __obj.updateDynamic("missingDataBeforeDateTime")(missingDataBeforeDateTime)
-    if (!js.isUndefined(wasThrottled)) __obj.updateDynamic("wasThrottled")(wasThrottled)
+    if (missingDataBeforeDateTime != null) __obj.updateDynamic("missingDataBeforeDateTime")(missingDataBeforeDateTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(wasThrottled)) __obj.updateDynamic("wasThrottled")(wasThrottled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncompleteData]
   }
 }

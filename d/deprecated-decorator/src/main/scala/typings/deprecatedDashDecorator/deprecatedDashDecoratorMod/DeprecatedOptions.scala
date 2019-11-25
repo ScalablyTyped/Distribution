@@ -14,9 +14,9 @@ object DeprecatedOptions {
   @scala.inline
   def apply(alternative: String = null, url: String = null, version: String = null): DeprecatedOptions = {
     val __obj = js.Dynamic.literal()
-    if (alternative != null) __obj.updateDynamic("alternative")(alternative)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (alternative != null) __obj.updateDynamic("alternative")(alternative.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecatedOptions]
   }
 }

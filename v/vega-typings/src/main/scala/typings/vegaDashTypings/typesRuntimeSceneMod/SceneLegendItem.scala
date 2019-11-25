@@ -12,7 +12,7 @@ trait SceneLegendItem extends js.Object {
 object SceneLegendItem {
   @scala.inline
   def apply(datum: Anon_Index): SceneLegendItem = {
-    val __obj = js.Dynamic.literal(datum = datum)
+    val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SceneLegendItem]
   }

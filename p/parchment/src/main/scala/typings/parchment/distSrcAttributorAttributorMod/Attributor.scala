@@ -29,8 +29,8 @@ object Attributor {
     value: HTMLElement => String,
     whitelist: js.Array[String] = null
   ): Attributor = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), attrName = attrName, canAdd = js.Any.fromFunction2(canAdd), keyName = keyName, remove = js.Any.fromFunction1(remove), scope = scope, value = js.Any.fromFunction1(value))
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), attrName = attrName.asInstanceOf[js.Any], canAdd = js.Any.fromFunction2(canAdd), keyName = keyName.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), scope = scope.asInstanceOf[js.Any], value = js.Any.fromFunction1(value))
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributor]
   }
 }

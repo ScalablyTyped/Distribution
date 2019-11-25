@@ -16,8 +16,8 @@ object SwitchChangeEvent {
     sender: Switch,
     checked: js.Any = null
   ): SwitchChangeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (checked != null) __obj.updateDynamic("checked")(checked)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchChangeEvent]
   }
 }

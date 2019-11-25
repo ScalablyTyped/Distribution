@@ -18,7 +18,7 @@ object ITemplateScopeOptions {
     templateOptions: ITemplateOptions,
     validation: js.Object
   ): ITemplateScopeOptions = {
-    val __obj = js.Dynamic.literal(formControl = formControl.asInstanceOf[js.Any], templateOptions = templateOptions, validation = validation)
+    val __obj = js.Dynamic.literal(formControl = formControl.asInstanceOf[js.Any], templateOptions = templateOptions.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITemplateScopeOptions]
   }

@@ -18,8 +18,8 @@ object MockResultIncomplete {
   @scala.inline
   def apply(`type`: incomplete, value: js.UndefOr[scala.Nothing] = js.undefined): MockResultIncomplete = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockResultIncomplete]
   }
 }

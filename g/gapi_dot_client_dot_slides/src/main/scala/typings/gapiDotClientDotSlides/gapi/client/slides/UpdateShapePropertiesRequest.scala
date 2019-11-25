@@ -29,9 +29,9 @@ object UpdateShapePropertiesRequest {
   @scala.inline
   def apply(fields: String = null, objectId: String = null, shapeProperties: ShapeProperties = null): UpdateShapePropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (shapeProperties != null) __obj.updateDynamic("shapeProperties")(shapeProperties)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (shapeProperties != null) __obj.updateDynamic("shapeProperties")(shapeProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateShapePropertiesRequest]
   }
 }

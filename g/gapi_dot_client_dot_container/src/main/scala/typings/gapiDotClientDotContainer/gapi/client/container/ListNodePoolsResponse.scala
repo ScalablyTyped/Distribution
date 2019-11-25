@@ -13,7 +13,7 @@ object ListNodePoolsResponse {
   @scala.inline
   def apply(nodePools: js.Array[NodePool] = null): ListNodePoolsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nodePools != null) __obj.updateDynamic("nodePools")(nodePools)
+    if (nodePools != null) __obj.updateDynamic("nodePools")(nodePools.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNodePoolsResponse]
   }
 }

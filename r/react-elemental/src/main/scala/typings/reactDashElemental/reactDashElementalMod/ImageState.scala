@@ -11,7 +11,7 @@ trait ImageState extends js.Object {
 object ImageState {
   @scala.inline
   def apply(load: String): ImageState = {
-    val __obj = js.Dynamic.literal(load = load)
+    val __obj = js.Dynamic.literal(load = load.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImageState]
   }

@@ -35,7 +35,7 @@ object PortFinderOptions {
     stopPort: Int | Double = null
   ): PortFinderOptions = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (startPort != null) __obj.updateDynamic("startPort")(startPort.asInstanceOf[js.Any])
     if (stopPort != null) __obj.updateDynamic("stopPort")(stopPort.asInstanceOf[js.Any])

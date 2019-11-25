@@ -17,7 +17,7 @@ object Anon_FetchSize {
     val __obj = js.Dynamic.literal()
     if (fetchSize != null) __obj.updateDynamic("fetchSize")(fetchSize.asInstanceOf[js.Any])
     if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
-    if (scroller != null) __obj.updateDynamic("scroller")(scroller)
+    if (scroller != null) __obj.updateDynamic("scroller")(scroller.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FetchSize]
   }
 }

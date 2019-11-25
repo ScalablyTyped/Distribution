@@ -19,10 +19,10 @@ object Options {
     fill: typings.ol.styleFillMod.default = null,
     stroke: typings.ol.styleStrokeMod.default = null
   ): Options = {
-    val __obj = js.Dynamic.literal(radius = radius)
-    if (atlasManager != null) __obj.updateDynamic("atlasManager")(atlasManager)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any])
+    if (atlasManager != null) __obj.updateDynamic("atlasManager")(atlasManager.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

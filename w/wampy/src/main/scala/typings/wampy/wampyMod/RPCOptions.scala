@@ -12,7 +12,7 @@ object RPCOptions {
   @scala.inline
   def apply(process: js.UndefOr[Boolean] = js.undefined): RPCOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(process)) __obj.updateDynamic("process")(process)
+    if (!js.isUndefined(process)) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
     __obj.asInstanceOf[RPCOptions]
   }
 }

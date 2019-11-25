@@ -48,7 +48,7 @@ object HistogramViewModelProperties {
   ): HistogramViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
-    if (bins != null) __obj.updateDynamic("bins")(bins)
+    if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

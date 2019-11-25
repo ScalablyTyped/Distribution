@@ -13,8 +13,8 @@ object CountriesRestriction {
   @scala.inline
   def apply(adFormats: js.Array[String] = null, territories: js.Array[String] = null): CountriesRestriction = {
     val __obj = js.Dynamic.literal()
-    if (adFormats != null) __obj.updateDynamic("adFormats")(adFormats)
-    if (territories != null) __obj.updateDynamic("territories")(territories)
+    if (adFormats != null) __obj.updateDynamic("adFormats")(adFormats.asInstanceOf[js.Any])
+    if (territories != null) __obj.updateDynamic("territories")(territories.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountriesRestriction]
   }
 }

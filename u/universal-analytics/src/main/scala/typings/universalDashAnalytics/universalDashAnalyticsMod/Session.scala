@@ -12,7 +12,7 @@ object Session {
   @scala.inline
   def apply(cid: String = null): Session = {
     val __obj = js.Dynamic.literal()
-    if (cid != null) __obj.updateDynamic("cid")(cid)
+    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
 }

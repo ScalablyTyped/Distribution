@@ -14,9 +14,9 @@ trait ConditionId extends js.Object {
 object ConditionId {
   @scala.inline
   def apply(args: js.Array[_], command: Anon_Key = null, name: ConditionName = null): ConditionId = {
-    val __obj = js.Dynamic.literal(args = args)
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionId]
   }
 }

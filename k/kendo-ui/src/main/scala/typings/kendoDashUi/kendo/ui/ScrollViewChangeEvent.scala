@@ -23,10 +23,10 @@ object ScrollViewChangeEvent {
     element: JQuery = null,
     nextPage: Int | Double = null
   ): ScrollViewChangeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (nextPage != null) __obj.updateDynamic("nextPage")(nextPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewChangeEvent]
   }

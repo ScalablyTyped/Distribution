@@ -13,9 +13,9 @@ trait IndexInfo extends js.Object {
 object IndexInfo {
   @scala.inline
   def apply(isReadonly: Boolean, `type`: Type, declaration: IndexSignatureDeclaration = null): IndexInfo = {
-    val __obj = js.Dynamic.literal(isReadonly = isReadonly)
-    __obj.updateDynamic("type")(`type`)
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration)
+    val __obj = js.Dynamic.literal(isReadonly = isReadonly.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexInfo]
   }
 }

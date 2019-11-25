@@ -24,12 +24,12 @@ object StoreSchemaJson {
     `type`: String = null
   ): StoreSchemaJson = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
-    if (!js.isUndefined(dispatchEvents)) __obj.updateDynamic("dispatchEvents")(dispatchEvents)
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
-    if (keyPath != null) __obj.updateDynamic("keyPath")(keyPath)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(dispatchEvents)) __obj.updateDynamic("dispatchEvents")(dispatchEvents.asInstanceOf[js.Any])
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
+    if (keyPath != null) __obj.updateDynamic("keyPath")(keyPath.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreSchemaJson]
   }
 }

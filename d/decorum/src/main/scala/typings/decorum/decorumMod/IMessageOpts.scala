@@ -22,7 +22,7 @@ trait IMessageOpts extends js.Object {
 object IMessageOpts {
   @scala.inline
   def apply(friendlyName: String, property: String, value: String): IMessageOpts = {
-    val __obj = js.Dynamic.literal(friendlyName = friendlyName, property = property, value = value)
+    val __obj = js.Dynamic.literal(friendlyName = friendlyName.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMessageOpts]
   }

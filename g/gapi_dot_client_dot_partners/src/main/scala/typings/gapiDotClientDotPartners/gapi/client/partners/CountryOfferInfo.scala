@@ -24,10 +24,10 @@ object CountryOfferInfo {
     spendXAmount: String = null
   ): CountryOfferInfo = {
     val __obj = js.Dynamic.literal()
-    if (getYAmount != null) __obj.updateDynamic("getYAmount")(getYAmount)
-    if (offerCountryCode != null) __obj.updateDynamic("offerCountryCode")(offerCountryCode)
-    if (offerType != null) __obj.updateDynamic("offerType")(offerType)
-    if (spendXAmount != null) __obj.updateDynamic("spendXAmount")(spendXAmount)
+    if (getYAmount != null) __obj.updateDynamic("getYAmount")(getYAmount.asInstanceOf[js.Any])
+    if (offerCountryCode != null) __obj.updateDynamic("offerCountryCode")(offerCountryCode.asInstanceOf[js.Any])
+    if (offerType != null) __obj.updateDynamic("offerType")(offerType.asInstanceOf[js.Any])
+    if (spendXAmount != null) __obj.updateDynamic("spendXAmount")(spendXAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountryOfferInfo]
   }
 }

@@ -23,10 +23,10 @@ object GeolocationControlOptions {
   ): GeolocationControlOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoLocation)) __obj.updateDynamic("enableAutoLocation")(enableAutoLocation)
-    if (locationIcon != null) __obj.updateDynamic("locationIcon")(locationIcon)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (!js.isUndefined(showAddressBar)) __obj.updateDynamic("showAddressBar")(showAddressBar)
+    if (!js.isUndefined(enableAutoLocation)) __obj.updateDynamic("enableAutoLocation")(enableAutoLocation.asInstanceOf[js.Any])
+    if (locationIcon != null) __obj.updateDynamic("locationIcon")(locationIcon.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAddressBar)) __obj.updateDynamic("showAddressBar")(showAddressBar.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationControlOptions]
   }
 }

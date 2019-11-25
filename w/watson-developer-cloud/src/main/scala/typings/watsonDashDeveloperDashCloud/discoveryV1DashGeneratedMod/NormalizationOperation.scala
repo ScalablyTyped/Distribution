@@ -18,9 +18,9 @@ object NormalizationOperation {
   @scala.inline
   def apply(destination_field: String = null, operation: String = null, source_field: String = null): NormalizationOperation = {
     val __obj = js.Dynamic.literal()
-    if (destination_field != null) __obj.updateDynamic("destination_field")(destination_field)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (source_field != null) __obj.updateDynamic("source_field")(source_field)
+    if (destination_field != null) __obj.updateDynamic("destination_field")(destination_field.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (source_field != null) __obj.updateDynamic("source_field")(source_field.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationOperation]
   }
 }

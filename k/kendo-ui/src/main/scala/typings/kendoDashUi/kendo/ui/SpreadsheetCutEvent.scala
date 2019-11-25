@@ -17,8 +17,8 @@ object SpreadsheetCutEvent {
     sender: Spreadsheet,
     range: Range = null
   ): SpreadsheetCutEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetCutEvent]
   }
 }

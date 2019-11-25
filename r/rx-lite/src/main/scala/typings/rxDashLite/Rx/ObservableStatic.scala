@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rxDashCore.Rx.IDisposable
 import typings.rxDashCore.Rx.IPromise
 import typings.rxDashLite.Anon_Index
-import typings.rxDashLite.Fn_Arg1
-import typings.rxDashLite.Fn_Arg1Arg2
 import typings.std.ArrayLike
 import typings.std.Error
 import scala.scalajs.js
@@ -14,10 +12,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ObservableStatic extends js.Object {
-  @JSName("fromCallback")
-  var fromCallback_Original: Fn_Arg1 = js.native
-  @JSName("fromNodeCallback")
-  var fromNodeCallback_Original: Fn_Arg1Arg2 = js.native
   def `catch`[T](sources: (IPromise[T] | Observable[T])*): Observable[T] = js.native
       // alias for throw
   def `catch`[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[T] = js.native
@@ -316,10 +310,7 @@ trait ObservableStatic extends js.Object {
   def fromArray[T](array: js.Array[T], scheduler: IScheduler): Observable[T] = js.native
   def fromArray[T](array: Anon_Index[T]): Observable[T] = js.native
   def fromArray[T](array: Anon_Index[T], scheduler: IScheduler): Observable[T] = js.native
-  // with any function without selector
   def fromCallback[TResult](func: js.Function): js.Function1[/* repeated */ js.Any, Observable[TResult]] = js.native
-  // with single result callback without selector
-  // with any callback without selector
   def fromCallback[TResult](
     func: js.Function1[
       (/* callback */ js.Function) | (/* callback */ js.Function1[/* result */ TResult, _]), 
@@ -334,7 +325,6 @@ trait ObservableStatic extends js.Object {
     context: js.Any
   ): js.Function0[Observable[TResult]] = js.native
   def fromCallback[TResult](func: js.Function, context: js.Any): js.Function1[/* repeated */ js.Any, Observable[TResult]] = js.native
-  // with any callback with selector
   def fromCallback[TCallbackResult, TResult](
     func: js.Function1[/* callback */ js.Function, _],
     context: js.Any,
@@ -355,7 +345,6 @@ trait ObservableStatic extends js.Object {
     ],
     context: js.Any
   ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
-  // with any function with selector
   def fromCallback[TCallbackResult, TResult](
     func: js.Function,
     context: js.Any,
@@ -433,13 +422,10 @@ trait ObservableStatic extends js.Object {
     removeHandler: js.Function1[/* handler */ js.Function, Unit],
     selector: js.Function1[/* repeated */ js.Any, T]
   ): Observable[T] = js.native
-  // with any function without selector
   def fromNodeCallback[T](func: js.Function): js.Function1[/* repeated */ js.Any, Observable[T]] = js.native
-  // with any callback without selector
   def fromNodeCallback[TR](func: js.Function1[/* callback */ js.Function, _]): js.Function0[Observable[TR]] = js.native
   def fromNodeCallback[TR](func: js.Function1[/* callback */ js.Function, _], context: js.Any): js.Function0[Observable[TR]] = js.native
   def fromNodeCallback[T](func: js.Function, context: js.Any): js.Function1[/* repeated */ js.Any, Observable[T]] = js.native
-  // with any callback with selector
   def fromNodeCallback[TC, TR](
     func: js.Function1[/* callback */ js.Function, _],
     context: js.Any,
@@ -447,7 +433,6 @@ trait ObservableStatic extends js.Object {
   ): js.Function0[Observable[TR]] = js.native
   def fromNodeCallback[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _]): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
   def fromNodeCallback[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _], context: js.Any): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
-  // with any function with selector
   def fromNodeCallback[TC, T](func: js.Function, context: js.Any, selector: js.Function1[/* results */ js.Array[TC], T]): js.Function1[/* repeated */ js.Any, Observable[T]] = js.native
   def fromNodeCallback[T1, TC, TR](
     func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _],
@@ -485,7 +470,6 @@ trait ObservableStatic extends js.Object {
     context: js.Any,
     selector: js.Function1[/* results */ js.Array[TC], TR]
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TR]] = js.native
-  // with single result callback without selector
   @JSName("fromNodeCallback")
   def fromNodeCallback_T[T](func: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* result */ T, _], _]): js.Function0[Observable[T]] = js.native
   @JSName("fromNodeCallback")

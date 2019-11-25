@@ -45,14 +45,14 @@ object Anon_Async {
     returnType: TypeAnnotationKind | TSTypeAnnotationKind = null,
     typeParameters: TypeParameterDeclarationKind | TSTypeParameterDeclarationKind = null
   ): Anon_Async = {
-    val __obj = js.Dynamic.literal(body = body, id = id, params = params)
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression)
-    if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (rest != null) __obj.updateDynamic("rest")(rest)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (rest != null) __obj.updateDynamic("rest")(rest.asInstanceOf[js.Any])
     if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Async]

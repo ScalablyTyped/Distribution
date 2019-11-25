@@ -20,7 +20,7 @@ trait DatabaseChangesResultItem extends js.Object {
 object DatabaseChangesResultItem {
   @scala.inline
   def apply(changes: js.Array[Anon_Rev], deleted: Boolean, id: String, seq: js.Any): DatabaseChangesResultItem = {
-    val __obj = js.Dynamic.literal(changes = changes, deleted = deleted, id = id, seq = seq)
+    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatabaseChangesResultItem]
   }

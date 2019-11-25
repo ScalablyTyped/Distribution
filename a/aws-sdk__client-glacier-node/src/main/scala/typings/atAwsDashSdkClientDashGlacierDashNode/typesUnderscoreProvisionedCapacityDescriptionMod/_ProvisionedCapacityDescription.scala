@@ -23,9 +23,9 @@ object _ProvisionedCapacityDescription {
   @scala.inline
   def apply(CapacityId: String = null, ExpirationDate: String = null, StartDate: String = null): _ProvisionedCapacityDescription = {
     val __obj = js.Dynamic.literal()
-    if (CapacityId != null) __obj.updateDynamic("CapacityId")(CapacityId)
-    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate)
-    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate)
+    if (CapacityId != null) __obj.updateDynamic("CapacityId")(CapacityId.asInstanceOf[js.Any])
+    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
+    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ProvisionedCapacityDescription]
   }
 }

@@ -45,16 +45,16 @@ object Reference {
     reference: String = null
   ): Reference = {
     val __obj = js.Dynamic.literal()
-    if (_display != null) __obj.updateDynamic("_display")(_display)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_reference != null) __obj.updateDynamic("_reference")(_reference)
-    if (display != null) __obj.updateDynamic("display")(display)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
-    if (reference != null) __obj.updateDynamic("reference")(reference)
+    if (_display != null) __obj.updateDynamic("_display")(_display.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_reference != null) __obj.updateDynamic("_reference")(_reference.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
+    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
 }

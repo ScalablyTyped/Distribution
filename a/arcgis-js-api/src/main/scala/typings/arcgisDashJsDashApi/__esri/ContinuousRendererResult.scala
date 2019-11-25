@@ -65,7 +65,7 @@ object ContinuousRendererResult {
     statistics: SummaryStatisticsResult,
     visualVariable: ColorVariable
   ): ContinuousRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, statistics = statistics, visualVariable = visualVariable)
+    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], colorScheme = colorScheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], defaultValuesUsed = defaultValuesUsed.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], visualVariable = visualVariable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContinuousRendererResult]
   }

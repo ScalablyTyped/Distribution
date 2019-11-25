@@ -92,21 +92,21 @@ object Options {
     test: js.UndefOr[Boolean] = js.undefined,
     typeCheck: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(exclude = exclude, files = files)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (formattersDirectory != null) __obj.updateDynamic("formattersDirectory")(formattersDirectory)
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init)
-    if (out != null) __obj.updateDynamic("out")(out)
-    if (!js.isUndefined(outputAbsolutePaths)) __obj.updateDynamic("outputAbsolutePaths")(outputAbsolutePaths)
-    if (!js.isUndefined(printConfig)) __obj.updateDynamic("printConfig")(printConfig)
-    if (project != null) __obj.updateDynamic("project")(project)
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formattersDirectory != null) __obj.updateDynamic("formattersDirectory")(formattersDirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputAbsolutePaths)) __obj.updateDynamic("outputAbsolutePaths")(outputAbsolutePaths.asInstanceOf[js.Any])
+    if (!js.isUndefined(printConfig)) __obj.updateDynamic("printConfig")(printConfig.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
     if (rulesDirectory != null) __obj.updateDynamic("rulesDirectory")(rulesDirectory.asInstanceOf[js.Any])
-    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
-    if (!js.isUndefined(typeCheck)) __obj.updateDynamic("typeCheck")(typeCheck)
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeCheck)) __obj.updateDynamic("typeCheck")(typeCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

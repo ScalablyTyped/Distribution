@@ -20,7 +20,7 @@ trait ManipulationDelta extends js.Object {
 object ManipulationDelta {
   @scala.inline
   def apply(expansion: Double, rotation: Double, scale: Double, translation: Point): ManipulationDelta = {
-    val __obj = js.Dynamic.literal(expansion = expansion, rotation = rotation, scale = scale, translation = translation)
+    val __obj = js.Dynamic.literal(expansion = expansion.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], translation = translation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ManipulationDelta]
   }

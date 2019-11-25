@@ -101,79 +101,53 @@ object IText {
     autoComplete: js.UndefOr[Boolean] = js.undefined,
     autoCorrect: js.UndefOr[Boolean] = js.undefined,
     blur: () => IText = null,
-    bubbleEvents: js.Any = null,
-    clearIcon: js.UndefOr[Boolean] = js.undefined,
-    component: js.Any = null,
     focus: () => IText = null,
     getAutoCapitalize: () => Boolean = null,
     getAutoComplete: () => Boolean = null,
     getAutoCorrect: () => Boolean = null,
-    getClearIcon: () => Boolean = null,
-    getComponent: () => _ = null,
     getMaxLength: () => Double = null,
     getPlaceHolder: () => java.lang.String = null,
     getReadOnly: () => Boolean = null,
-    getUi: () => java.lang.String = null,
-    getValue: () => _ = null,
-    isDirty: () => Boolean = null,
     maxLength: Int | Double = null,
     placeHolder: java.lang.String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     reset: () => typings.senchaUnderscoreTouch.Ext.field.IField = null,
-    resetOriginalValue: () => Unit = null,
     select: () => IText = null,
     setAutoCapitalize: /* autoCapitalize */ js.UndefOr[Boolean] => Unit = null,
     setAutoComplete: /* autoComplete */ js.UndefOr[Boolean] => Unit = null,
     setAutoCorrect: /* autoCorrect */ js.UndefOr[Boolean] => Unit = null,
     setBubbleEvents: /* bubbleEvents */ js.UndefOr[Array] => Unit = null,
-    setClearIcon: /* clearIcon */ js.UndefOr[Boolean] => Unit = null,
-    setComponent: /* component */ js.UndefOr[js.Any] => Unit = null,
     setMaxLength: /* maxLength */ js.UndefOr[Double] => Unit = null,
     setPlaceHolder: /* placeHolder */ js.UndefOr[java.lang.String] => Unit = null,
     setReadOnly: /* readOnly */ js.UndefOr[Boolean] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
-    startValue: js.Any = null,
-    ui: java.lang.String = null
+    startValue: js.Any = null
   ): IText = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IField)
-    if (!js.isUndefined(autoCapitalize)) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
-    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete)
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
+    if (IField != null) js.Dynamic.global.Object.assign(__obj, IField)
+    if (!js.isUndefined(autoCapitalize)) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction0(blur))
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
-    if (!js.isUndefined(clearIcon)) __obj.updateDynamic("clearIcon")(clearIcon)
-    if (component != null) __obj.updateDynamic("component")(component)
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction0(focus))
     if (getAutoCapitalize != null) __obj.updateDynamic("getAutoCapitalize")(js.Any.fromFunction0(getAutoCapitalize))
     if (getAutoComplete != null) __obj.updateDynamic("getAutoComplete")(js.Any.fromFunction0(getAutoComplete))
     if (getAutoCorrect != null) __obj.updateDynamic("getAutoCorrect")(js.Any.fromFunction0(getAutoCorrect))
-    if (getClearIcon != null) __obj.updateDynamic("getClearIcon")(js.Any.fromFunction0(getClearIcon))
-    if (getComponent != null) __obj.updateDynamic("getComponent")(js.Any.fromFunction0(getComponent))
     if (getMaxLength != null) __obj.updateDynamic("getMaxLength")(js.Any.fromFunction0(getMaxLength))
     if (getPlaceHolder != null) __obj.updateDynamic("getPlaceHolder")(js.Any.fromFunction0(getPlaceHolder))
     if (getReadOnly != null) __obj.updateDynamic("getReadOnly")(js.Any.fromFunction0(getReadOnly))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
-    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
-    if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
-    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(js.Any.fromFunction0(resetOriginalValue))
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction0(select))
     if (setAutoCapitalize != null) __obj.updateDynamic("setAutoCapitalize")(js.Any.fromFunction1(setAutoCapitalize))
     if (setAutoComplete != null) __obj.updateDynamic("setAutoComplete")(js.Any.fromFunction1(setAutoComplete))
     if (setAutoCorrect != null) __obj.updateDynamic("setAutoCorrect")(js.Any.fromFunction1(setAutoCorrect))
     if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
-    if (setClearIcon != null) __obj.updateDynamic("setClearIcon")(js.Any.fromFunction1(setClearIcon))
-    if (setComponent != null) __obj.updateDynamic("setComponent")(js.Any.fromFunction1(setComponent))
     if (setMaxLength != null) __obj.updateDynamic("setMaxLength")(js.Any.fromFunction1(setMaxLength))
     if (setPlaceHolder != null) __obj.updateDynamic("setPlaceHolder")(js.Any.fromFunction1(setPlaceHolder))
     if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(js.Any.fromFunction1(setReadOnly))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue)
-    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IText]
   }
 }

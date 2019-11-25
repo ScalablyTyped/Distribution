@@ -43,10 +43,10 @@ object LangAccessibilitySeriesOptions {
     yAxisDescription: String = null
   ): LangAccessibilitySeriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (xAxisDescription != null) __obj.updateDynamic("xAxisDescription")(xAxisDescription)
-    if (yAxisDescription != null) __obj.updateDynamic("yAxisDescription")(yAxisDescription)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (xAxisDescription != null) __obj.updateDynamic("xAxisDescription")(xAxisDescription.asInstanceOf[js.Any])
+    if (yAxisDescription != null) __obj.updateDynamic("yAxisDescription")(yAxisDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilitySeriesOptions]
   }
 }

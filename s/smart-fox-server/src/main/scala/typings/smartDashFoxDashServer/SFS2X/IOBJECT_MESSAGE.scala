@@ -13,7 +13,7 @@ trait IOBJECT_MESSAGE extends js.Object {
 object IOBJECT_MESSAGE {
   @scala.inline
   def apply(message: String, sender: SFSUser): IOBJECT_MESSAGE = {
-    val __obj = js.Dynamic.literal(message = message, sender = sender)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOBJECT_MESSAGE]
   }

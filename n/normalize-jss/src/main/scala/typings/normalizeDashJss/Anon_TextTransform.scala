@@ -11,7 +11,7 @@ trait Anon_TextTransform extends js.Object {
 object Anon_TextTransform {
   @scala.inline
   def apply(textTransform: String): Anon_TextTransform = {
-    val __obj = js.Dynamic.literal(textTransform = textTransform)
+    val __obj = js.Dynamic.literal(textTransform = textTransform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TextTransform]
   }

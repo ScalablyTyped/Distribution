@@ -20,11 +20,11 @@ object Options {
     gas: Int | Double = null,
     gasPrice: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(address = address, jsonInterface = jsonInterface)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (from != null) __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], jsonInterface = jsonInterface.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
-    if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice)
+    if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -22,8 +22,8 @@ object Styles {
   @scala.inline
   def apply(fillStyle: FillStyle = null, lineStyle: LineStyle = null): Styles = {
     val __obj = js.Dynamic.literal()
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Styles]
   }
 }

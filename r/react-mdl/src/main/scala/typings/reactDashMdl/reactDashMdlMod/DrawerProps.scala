@@ -14,13 +14,11 @@ object DrawerProps {
   @scala.inline
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    title: String = null
+    ClassAttributes: ClassAttributes[js.Any] = null
   ): DrawerProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[DrawerProps]
   }
 }

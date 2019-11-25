@@ -14,7 +14,7 @@ trait ComponentConfigPublic extends js.Object {
 object ComponentConfigPublic {
   @scala.inline
   def apply(classAsString: String, cssClass: String, widget: String | Boolean = null): ComponentConfigPublic = {
-    val __obj = js.Dynamic.literal(classAsString = classAsString, cssClass = cssClass)
+    val __obj = js.Dynamic.literal(classAsString = classAsString.asInstanceOf[js.Any], cssClass = cssClass.asInstanceOf[js.Any])
     if (widget != null) __obj.updateDynamic("widget")(widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentConfigPublic]
   }

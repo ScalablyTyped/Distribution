@@ -14,7 +14,7 @@ trait Auth0LockFlashMessageOptions extends js.Object {
 object Auth0LockFlashMessageOptions {
   @scala.inline
   def apply(text: String, `type`: success | error): Auth0LockFlashMessageOptions = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockFlashMessageOptions]
   }

@@ -15,9 +15,9 @@ object DialogflowV1OriginalRequest {
   @scala.inline
   def apply(data: GoogleActionsV2AppRequest = null, source: String = null, version: String = null): DialogflowV1OriginalRequest = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1OriginalRequest]
   }
 }

@@ -37,18 +37,18 @@ object TreeMapOptions {
     valueField: String = null
   ): TreeMapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
-    if (colorField != null) __obj.updateDynamic("colorField")(colorField)
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
+    if (colorField != null) __obj.updateDynamic("colorField")(colorField.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (itemCreated != null) __obj.updateDynamic("itemCreated")(js.Any.fromFunction1(itemCreated))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (textField != null) __obj.updateDynamic("textField")(textField)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField)
+    if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeMapOptions]
   }
 }

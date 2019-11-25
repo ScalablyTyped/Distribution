@@ -110,16 +110,16 @@ object ParsedMail {
     references: js.Array[String] = null,
     replyTo: AddressObject = null
   ): ParsedMail = {
-    val __obj = js.Dynamic.literal(from = from, headers = headers, html = html.asInstanceOf[js.Any], subject = subject, text = text, textAsHtml = textAsHtml, to = to)
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
-    if (cc != null) __obj.updateDynamic("cc")(cc)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo)
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textAsHtml = textAsHtml.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (references != null) __obj.updateDynamic("references")(references)
-    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo)
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedMail]
   }
 }

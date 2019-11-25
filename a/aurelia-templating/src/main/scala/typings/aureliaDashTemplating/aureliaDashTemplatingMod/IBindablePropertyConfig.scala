@@ -50,13 +50,13 @@ object IBindablePropertyConfig {
     primaryProperty: js.UndefOr[Boolean] = js.undefined
   ): IBindablePropertyConfig = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
-    if (changeHandler != null) __obj.updateDynamic("changeHandler")(changeHandler)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (changeHandler != null) __obj.updateDynamic("changeHandler")(changeHandler.asInstanceOf[js.Any])
     if (defaultBindingMode != null) __obj.updateDynamic("defaultBindingMode")(defaultBindingMode.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(primaryProperty)) __obj.updateDynamic("primaryProperty")(primaryProperty)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryProperty)) __obj.updateDynamic("primaryProperty")(primaryProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBindablePropertyConfig]
   }
 }

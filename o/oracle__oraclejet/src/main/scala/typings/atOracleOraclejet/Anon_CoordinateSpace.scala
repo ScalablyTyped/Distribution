@@ -15,7 +15,7 @@ trait Anon_CoordinateSpace extends js.Object {
 object Anon_CoordinateSpace {
   @scala.inline
   def apply(coordinateSpace: js.Any, id: js.Any, labelLayout: LabelLayout, path: String): Anon_CoordinateSpace = {
-    val __obj = js.Dynamic.literal(coordinateSpace = coordinateSpace, id = id, labelLayout = labelLayout, path = path)
+    val __obj = js.Dynamic.literal(coordinateSpace = coordinateSpace.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labelLayout = labelLayout.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CoordinateSpace]
   }

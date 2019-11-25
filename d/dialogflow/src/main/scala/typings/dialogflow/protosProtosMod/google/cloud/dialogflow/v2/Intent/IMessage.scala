@@ -61,18 +61,18 @@ object IMessage {
     text: IText = null
   ): IMessage = {
     val __obj = js.Dynamic.literal()
-    if (basicCard != null) __obj.updateDynamic("basicCard")(basicCard)
-    if (card != null) __obj.updateDynamic("card")(card)
-    if (carouselSelect != null) __obj.updateDynamic("carouselSelect")(carouselSelect)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (linkOutSuggestion != null) __obj.updateDynamic("linkOutSuggestion")(linkOutSuggestion)
-    if (listSelect != null) __obj.updateDynamic("listSelect")(listSelect)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (quickReplies != null) __obj.updateDynamic("quickReplies")(quickReplies)
-    if (simpleResponses != null) __obj.updateDynamic("simpleResponses")(simpleResponses)
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (basicCard != null) __obj.updateDynamic("basicCard")(basicCard.asInstanceOf[js.Any])
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (carouselSelect != null) __obj.updateDynamic("carouselSelect")(carouselSelect.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (linkOutSuggestion != null) __obj.updateDynamic("linkOutSuggestion")(linkOutSuggestion.asInstanceOf[js.Any])
+    if (listSelect != null) __obj.updateDynamic("listSelect")(listSelect.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (quickReplies != null) __obj.updateDynamic("quickReplies")(quickReplies.asInstanceOf[js.Any])
+    if (simpleResponses != null) __obj.updateDynamic("simpleResponses")(simpleResponses.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessage]
   }
 }

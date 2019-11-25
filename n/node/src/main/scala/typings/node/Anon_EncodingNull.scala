@@ -12,7 +12,7 @@ object Anon_EncodingNull {
   @scala.inline
   def apply(encoding: java.lang.String = null): Anon_EncodingNull = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EncodingNull]
   }
 }

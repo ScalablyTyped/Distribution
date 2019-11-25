@@ -31,8 +31,8 @@ object Tasks_ {
     Tasks: TasksCollection = null
   ): Tasks_ = {
     val __obj = js.Dynamic.literal(newTask = js.Any.fromFunction0(newTask), newTaskLinks = js.Any.fromFunction0(newTaskLinks), newTaskList = js.Any.fromFunction0(newTaskList))
-    if (Tasklists != null) __obj.updateDynamic("Tasklists")(Tasklists)
-    if (Tasks != null) __obj.updateDynamic("Tasks")(Tasks)
+    if (Tasklists != null) __obj.updateDynamic("Tasklists")(Tasklists.asInstanceOf[js.Any])
+    if (Tasks != null) __obj.updateDynamic("Tasks")(Tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tasks_]
   }
 }

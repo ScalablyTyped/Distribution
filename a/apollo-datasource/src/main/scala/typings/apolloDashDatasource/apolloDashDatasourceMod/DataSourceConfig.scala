@@ -13,7 +13,7 @@ trait DataSourceConfig[TContext] extends js.Object {
 object DataSourceConfig {
   @scala.inline
   def apply[TContext](cache: KeyValueCache[String], context: TContext): DataSourceConfig[TContext] = {
-    val __obj = js.Dynamic.literal(cache = cache, context = context.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataSourceConfig[TContext]]
   }

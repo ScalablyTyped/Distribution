@@ -20,8 +20,8 @@ object Anon_DataId {
     itemData: js.Object,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_DataId = {
-    val __obj = js.Dynamic.literal(data = data, id = id, itemData = itemData)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_DataId]
   }
 }

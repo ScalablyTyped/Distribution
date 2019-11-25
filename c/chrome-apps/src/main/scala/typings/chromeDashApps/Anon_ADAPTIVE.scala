@@ -16,7 +16,7 @@ trait Anon_ADAPTIVE extends js.Object {
 object Anon_ADAPTIVE {
   @scala.inline
   def apply(ADAPTIVE: adaptive, ASYNCHRONOUS: asynchronous, SYNCHRONOUS: synchronous): Anon_ADAPTIVE = {
-    val __obj = js.Dynamic.literal(ADAPTIVE = ADAPTIVE, ASYNCHRONOUS = ASYNCHRONOUS, SYNCHRONOUS = SYNCHRONOUS)
+    val __obj = js.Dynamic.literal(ADAPTIVE = ADAPTIVE.asInstanceOf[js.Any], ASYNCHRONOUS = ASYNCHRONOUS.asInstanceOf[js.Any], SYNCHRONOUS = SYNCHRONOUS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ADAPTIVE]
   }

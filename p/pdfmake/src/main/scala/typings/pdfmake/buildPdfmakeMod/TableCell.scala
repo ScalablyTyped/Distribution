@@ -21,10 +21,10 @@ object TableCell {
     fillColor: String = null,
     rowSpan: Int | Double = null
   ): TableCell = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (border != null) __obj.updateDynamic("border")(border)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCell]
   }

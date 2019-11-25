@@ -21,7 +21,7 @@ trait IDatabase extends js.Object {
 object IDatabase {
   @scala.inline
   def apply(qIsDefault: Boolean, qName: String): IDatabase = {
-    val __obj = js.Dynamic.literal(qIsDefault = qIsDefault, qName = qName)
+    val __obj = js.Dynamic.literal(qIsDefault = qIsDefault.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDatabase]
   }

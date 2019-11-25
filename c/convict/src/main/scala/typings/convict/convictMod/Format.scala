@@ -19,7 +19,7 @@ object Format {
   ): Format = {
     val __obj = js.Dynamic.literal()
     if (coerce != null) __obj.updateDynamic("coerce")(js.Any.fromFunction1(coerce))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     __obj.asInstanceOf[Format]
   }

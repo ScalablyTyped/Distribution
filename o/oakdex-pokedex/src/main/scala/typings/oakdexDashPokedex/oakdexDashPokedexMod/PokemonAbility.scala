@@ -12,8 +12,8 @@ trait PokemonAbility extends js.Object {
 object PokemonAbility {
   @scala.inline
   def apply(name: String, hidden: js.UndefOr[Boolean] = js.undefined): PokemonAbility = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[PokemonAbility]
   }
 }

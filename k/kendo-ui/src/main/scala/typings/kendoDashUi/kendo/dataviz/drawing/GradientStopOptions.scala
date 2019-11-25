@@ -20,8 +20,8 @@ object GradientStopOptions {
     opacity: Int | Double = null
   ): GradientStopOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientStopOptions]

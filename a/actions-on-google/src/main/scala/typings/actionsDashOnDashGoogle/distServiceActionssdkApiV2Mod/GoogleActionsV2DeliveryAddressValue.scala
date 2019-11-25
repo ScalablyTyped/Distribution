@@ -23,8 +23,8 @@ object GoogleActionsV2DeliveryAddressValue {
     userDecision: GoogleActionsV2DeliveryAddressValueUserDecision = null
   ): GoogleActionsV2DeliveryAddressValue = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (userDecision != null) __obj.updateDynamic("userDecision")(userDecision)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (userDecision != null) __obj.updateDynamic("userDecision")(userDecision.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2DeliveryAddressValue]
   }
 }

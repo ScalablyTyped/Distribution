@@ -31,12 +31,12 @@ object GridsterResizable {
     stop: (/* event */ Event, /* ui */ Anon_Helper, /* $el */ JQuery) => Unit = null
   ): GridsterResizable = {
     val __obj = js.Dynamic.literal()
-    if (axes != null) __obj.updateDynamic("axes")(axes)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (handle_append_to != null) __obj.updateDynamic("handle_append_to")(handle_append_to)
-    if (handle_class != null) __obj.updateDynamic("handle_class")(handle_class)
-    if (max_size != null) __obj.updateDynamic("max_size")(max_size)
-    if (min_size != null) __obj.updateDynamic("min_size")(min_size)
+    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (handle_append_to != null) __obj.updateDynamic("handle_append_to")(handle_append_to.asInstanceOf[js.Any])
+    if (handle_class != null) __obj.updateDynamic("handle_class")(handle_class.asInstanceOf[js.Any])
+    if (max_size != null) __obj.updateDynamic("max_size")(max_size.asInstanceOf[js.Any])
+    if (min_size != null) __obj.updateDynamic("min_size")(min_size.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction3(resize))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction3(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction3(stop))

@@ -17,9 +17,9 @@ trait SecuritySchemeApiKey
 object SecuritySchemeApiKey {
   @scala.inline
   def apply(in: String, name: String, `type`: apiKey, description: String = null): SecuritySchemeApiKey = {
-    val __obj = js.Dynamic.literal(in = in, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecuritySchemeApiKey]
   }
 }

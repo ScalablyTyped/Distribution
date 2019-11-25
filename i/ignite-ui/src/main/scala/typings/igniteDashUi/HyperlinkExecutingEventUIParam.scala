@@ -19,8 +19,8 @@ object HyperlinkExecutingEventUIParam {
   @scala.inline
   def apply(hyperlink: js.Any = null, owner: js.Any = null): HyperlinkExecutingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperlinkExecutingEventUIParam]
   }
 }

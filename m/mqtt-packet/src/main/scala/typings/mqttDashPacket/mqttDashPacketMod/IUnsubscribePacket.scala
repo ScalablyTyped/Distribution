@@ -24,10 +24,10 @@ object IUnsubscribePacket {
     messageId: Int | Double = null,
     properties: Anon_ReasonString = null
   ): IUnsubscribePacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd, unsubscriptions = unsubscriptions)
+    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], unsubscriptions = unsubscriptions.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUnsubscribePacket]
   }
 }

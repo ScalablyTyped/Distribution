@@ -31,17 +31,17 @@ object RouteLinkAttrs {
     options: RouteOptions = null,
     selector: String | (ComponentTypes[_, js.Object]) = null
   ): RouteLinkAttrs = {
-    val __obj = js.Dynamic.literal(href = href)
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove)
-    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate)
-    if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate)
-    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
-    if (onremove != null) __obj.updateDynamic("onremove")(onremove)
-    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove.asInstanceOf[js.Any])
+    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate.asInstanceOf[js.Any])
+    if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate.asInstanceOf[js.Any])
+    if (oninit != null) __obj.updateDynamic("oninit")(oninit.asInstanceOf[js.Any])
+    if (onremove != null) __obj.updateDynamic("onremove")(onremove.asInstanceOf[js.Any])
+    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteLinkAttrs]
   }

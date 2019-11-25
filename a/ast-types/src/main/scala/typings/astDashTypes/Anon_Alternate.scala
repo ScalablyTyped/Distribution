@@ -25,10 +25,10 @@ object Anon_Alternate {
     comments: js.Array[CommentKind] = null,
     loc: SourceLocationKind = null
   ): Anon_Alternate = {
-    val __obj = js.Dynamic.literal(consequent = consequent, test = test)
-    if (alternate != null) __obj.updateDynamic("alternate")(alternate)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+    if (alternate != null) __obj.updateDynamic("alternate")(alternate.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alternate]
   }
 }

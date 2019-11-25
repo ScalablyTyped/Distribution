@@ -28,14 +28,14 @@ object ILanguageExtensionPoint {
     firstLine: String = null,
     mimetypes: js.Array[String] = null
   ): ILanguageExtensionPoint = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (filenamePatterns != null) __obj.updateDynamic("filenamePatterns")(filenamePatterns)
-    if (filenames != null) __obj.updateDynamic("filenames")(filenames)
-    if (firstLine != null) __obj.updateDynamic("firstLine")(firstLine)
-    if (mimetypes != null) __obj.updateDynamic("mimetypes")(mimetypes)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (filenamePatterns != null) __obj.updateDynamic("filenamePatterns")(filenamePatterns.asInstanceOf[js.Any])
+    if (filenames != null) __obj.updateDynamic("filenames")(filenames.asInstanceOf[js.Any])
+    if (firstLine != null) __obj.updateDynamic("firstLine")(firstLine.asInstanceOf[js.Any])
+    if (mimetypes != null) __obj.updateDynamic("mimetypes")(mimetypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILanguageExtensionPoint]
   }
 }

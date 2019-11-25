@@ -20,9 +20,9 @@ object EntityDataWithQuery {
     sort$: js.Any = null
   ): EntityDataWithQuery = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (sort$ != null) __obj.updateDynamic("sort$")(sort$)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (sort$ != null) __obj.updateDynamic("sort$")(sort$.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityDataWithQuery]
   }
 }

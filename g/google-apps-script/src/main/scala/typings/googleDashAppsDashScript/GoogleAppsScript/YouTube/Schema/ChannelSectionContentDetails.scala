@@ -13,8 +13,8 @@ object ChannelSectionContentDetails {
   @scala.inline
   def apply(channels: js.Array[String] = null, playlists: js.Array[String] = null): ChannelSectionContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (channels != null) __obj.updateDynamic("channels")(channels)
-    if (playlists != null) __obj.updateDynamic("playlists")(playlists)
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (playlists != null) __obj.updateDynamic("playlists")(playlists.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSectionContentDetails]
   }
 }

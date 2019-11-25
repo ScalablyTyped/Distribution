@@ -16,8 +16,8 @@ object ParserOptions {
   @scala.inline
   def apply(smart: js.UndefOr[Boolean] = js.undefined, time: js.UndefOr[Boolean] = js.undefined): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart)
-    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time)
+    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
 }

@@ -1,20 +1,19 @@
 package typings.reactDashMapDashGl
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashMapDashGl.reactDashMapDashGlMod.BaseControlProps
-import typings.reactDashMapDashGl.reactDashMapDashGlMod.DraggableControlProps
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashMapDashGlComponents extends reactDashMapDashGlProps {
   @scala.inline
-  def BaseControl[T /* <: BaseControlProps */, S /* <: Element */]: ComponentType[T] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.BaseControl[T, S]].asInstanceOf[typings.react.reactMod.ComponentType[T]]
+  def BaseControl: ComponentType[BaseControlProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.BaseControl[
+  typings.reactDashMapDashGl.reactDashMapDashGlMod.BaseControlProps, 
+  typings.std.Element]].asInstanceOf[typings.react.reactMod.ComponentType[BaseControlProps]]
   @scala.inline
   def CanvasOverlay: ComponentType[CanvasOverlayProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.CanvasOverlay].asInstanceOf[typings.react.reactMod.ComponentType[CanvasOverlayProps]]
   @scala.inline
-  def DraggableControl[T /* <: DraggableControlProps */]: ComponentType[T] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.DraggableControl[T]].asInstanceOf[typings.react.reactMod.ComponentType[T]]
+  def DraggableControl: ComponentType[DraggableControlProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.DraggableControl[typings.reactDashMapDashGl.reactDashMapDashGlMod.DraggableControlProps]].asInstanceOf[typings.react.reactMod.ComponentType[DraggableControlProps]]
   @scala.inline
   def FullscreenControl: ComponentType[FullscreenControlProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.FullscreenControl].asInstanceOf[typings.react.reactMod.ComponentType[FullscreenControlProps]]
   @scala.inline

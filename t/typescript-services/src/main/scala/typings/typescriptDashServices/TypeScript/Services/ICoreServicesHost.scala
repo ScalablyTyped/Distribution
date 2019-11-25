@@ -12,7 +12,7 @@ trait ICoreServicesHost extends js.Object {
 object ICoreServicesHost {
   @scala.inline
   def apply(logger: ILogger): ICoreServicesHost = {
-    val __obj = js.Dynamic.literal(logger = logger)
+    val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICoreServicesHost]
   }

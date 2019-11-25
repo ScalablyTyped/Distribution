@@ -55,13 +55,13 @@ object Anon_APIERRORASSETREPORTERROR {
     mfa_type: String = null,
     view_name: CONNECTED | CREDENTIAL | ERROR | EXIT | LOADING | MFA | RECAPTCHA | SELECT_ACCOUNT | SELECT_INSTITUTION = null
   ): Anon_APIERRORASSETREPORTERROR = {
-    val __obj = js.Dynamic.literal(institution_id = institution_id, institution_name = institution_name, link_session_id = link_session_id, request_id = request_id, timestamp = timestamp)
-    if (error_code != null) __obj.updateDynamic("error_code")(error_code)
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    val __obj = js.Dynamic.literal(institution_id = institution_id.asInstanceOf[js.Any], institution_name = institution_name.asInstanceOf[js.Any], link_session_id = link_session_id.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     if (error_type != null) __obj.updateDynamic("error_type")(error_type.asInstanceOf[js.Any])
     if (exit_status != null) __obj.updateDynamic("exit_status")(exit_status.asInstanceOf[js.Any])
-    if (institution_search_query != null) __obj.updateDynamic("institution_search_query")(institution_search_query)
-    if (mfa_type != null) __obj.updateDynamic("mfa_type")(mfa_type)
+    if (institution_search_query != null) __obj.updateDynamic("institution_search_query")(institution_search_query.asInstanceOf[js.Any])
+    if (mfa_type != null) __obj.updateDynamic("mfa_type")(mfa_type.asInstanceOf[js.Any])
     if (view_name != null) __obj.updateDynamic("view_name")(view_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_APIERRORASSETREPORTERROR]
   }

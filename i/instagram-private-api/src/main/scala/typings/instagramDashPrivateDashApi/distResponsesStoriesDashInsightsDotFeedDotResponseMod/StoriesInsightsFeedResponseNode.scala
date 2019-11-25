@@ -35,7 +35,7 @@ object StoriesInsightsFeedResponseNode {
     taps_back_count: Double,
     taps_forward_count: Double
   ): StoriesInsightsFeedResponseNode = {
-    val __obj = js.Dynamic.literal(__typename = __typename, display_url = display_url, exits_count = exits_count, id = id, impression_count = impression_count, inline_insights_node = inline_insights_node, instagram_media_id = instagram_media_id, reach_count = reach_count, replies_count = replies_count, story_swipe_away_count = story_swipe_away_count, taps_back_count = taps_back_count, taps_forward_count = taps_forward_count)
+    val __obj = js.Dynamic.literal(__typename = __typename.asInstanceOf[js.Any], display_url = display_url.asInstanceOf[js.Any], exits_count = exits_count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], impression_count = impression_count.asInstanceOf[js.Any], inline_insights_node = inline_insights_node.asInstanceOf[js.Any], instagram_media_id = instagram_media_id.asInstanceOf[js.Any], reach_count = reach_count.asInstanceOf[js.Any], replies_count = replies_count.asInstanceOf[js.Any], story_swipe_away_count = story_swipe_away_count.asInstanceOf[js.Any], taps_back_count = taps_back_count.asInstanceOf[js.Any], taps_forward_count = taps_forward_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoriesInsightsFeedResponseNode]
   }

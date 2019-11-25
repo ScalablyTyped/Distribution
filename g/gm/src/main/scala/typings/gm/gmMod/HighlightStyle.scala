@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait HighlightStyle extends js.Object
 
+object HighlightStyle {
+  @scala.inline
+  def Assign: typings.gm.gmStrings.Assign = this.cast("Assign")
+  @scala.inline
+  def Threshold: typings.gm.gmStrings.Threshold = this.cast("Threshold")
+  @scala.inline
+  def Tint: typings.gm.gmStrings.Tint = this.cast("Tint")
+  @scala.inline
+  def XOR: typings.gm.gmStrings.XOR = this.cast("XOR")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

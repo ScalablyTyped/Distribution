@@ -22,11 +22,11 @@ object AdClient {
     supportsReporting: js.UndefOr[Boolean] = js.undefined
   ): AdClient = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arcOptIn)) __obj.updateDynamic("arcOptIn")(arcOptIn)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (productCode != null) __obj.updateDynamic("productCode")(productCode)
-    if (!js.isUndefined(supportsReporting)) __obj.updateDynamic("supportsReporting")(supportsReporting)
+    if (!js.isUndefined(arcOptIn)) __obj.updateDynamic("arcOptIn")(arcOptIn.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (productCode != null) __obj.updateDynamic("productCode")(productCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsReporting)) __obj.updateDynamic("supportsReporting")(supportsReporting.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdClient]
   }
 }

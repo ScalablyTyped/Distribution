@@ -13,8 +13,8 @@ trait PolyOptions extends Options {
 object PolyOptions {
   @scala.inline
   def apply(coords: js.Array[Double], `type`: poly): PolyOptions = {
-    val __obj = js.Dynamic.literal(coords = coords)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolyOptions]
   }
 }

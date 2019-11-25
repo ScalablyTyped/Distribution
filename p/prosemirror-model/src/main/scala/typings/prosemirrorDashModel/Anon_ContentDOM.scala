@@ -13,8 +13,8 @@ trait Anon_ContentDOM extends js.Object {
 object Anon_ContentDOM {
   @scala.inline
   def apply(dom: Node, contentDOM: Node = null): Anon_ContentDOM = {
-    val __obj = js.Dynamic.literal(dom = dom)
-    if (contentDOM != null) __obj.updateDynamic("contentDOM")(contentDOM)
+    val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any])
+    if (contentDOM != null) __obj.updateDynamic("contentDOM")(contentDOM.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentDOM]
   }
 }

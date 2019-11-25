@@ -11,7 +11,7 @@ trait Writer extends js.Object {
 object Writer {
   @scala.inline
   def apply(command: String): Writer = {
-    val __obj = js.Dynamic.literal(command = command)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Writer]
   }

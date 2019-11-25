@@ -24,8 +24,8 @@ object DiagramState {
     windowListener: js.Any,
     action: BaseAction = null
   ): DiagramState = {
-    val __obj = js.Dynamic.literal(diagramEngineListener = diagramEngineListener, document = document, renderedNodes = renderedNodes, wasMoved = wasMoved, windowListener = windowListener)
-    if (action != null) __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(diagramEngineListener = diagramEngineListener.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], renderedNodes = renderedNodes.asInstanceOf[js.Any], wasMoved = wasMoved.asInstanceOf[js.Any], windowListener = windowListener.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramState]
   }
 }

@@ -35,11 +35,11 @@ object ReactTimeagoProps {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction5(formatter))
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live)
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
     if (maxPeriod != null) __obj.updateDynamic("maxPeriod")(maxPeriod.asInstanceOf[js.Any])
     if (minPeriod != null) __obj.updateDynamic("minPeriod")(minPeriod.asInstanceOf[js.Any])
     if (now != null) __obj.updateDynamic("now")(js.Any.fromFunction0(now))
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactTimeagoProps[T]]
   }
 }

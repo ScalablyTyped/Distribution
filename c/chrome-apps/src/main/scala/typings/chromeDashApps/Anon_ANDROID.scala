@@ -22,7 +22,7 @@ trait Anon_ANDROID extends js.Object {
 object Anon_ANDROID {
   @scala.inline
   def apply(ANDROID: android, CROS: cros, LINUX: linux, MAC: mac, OPENBSD: openbsd, WIN: win): Anon_ANDROID = {
-    val __obj = js.Dynamic.literal(ANDROID = ANDROID, CROS = CROS, LINUX = LINUX, MAC = MAC, OPENBSD = OPENBSD, WIN = WIN)
+    val __obj = js.Dynamic.literal(ANDROID = ANDROID.asInstanceOf[js.Any], CROS = CROS.asInstanceOf[js.Any], LINUX = LINUX.asInstanceOf[js.Any], MAC = MAC.asInstanceOf[js.Any], OPENBSD = OPENBSD.asInstanceOf[js.Any], WIN = WIN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ANDROID]
   }

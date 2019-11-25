@@ -22,7 +22,7 @@ object SelectParam {
     keyPath: js.Array[String],
     selectedKeys: js.Array[String]
   ): SelectParam = {
-    val __obj = js.Dynamic.literal(domEvent = domEvent, item = item, key = key, keyPath = keyPath, selectedKeys = selectedKeys)
+    val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any], selectedKeys = selectedKeys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SelectParam]
   }

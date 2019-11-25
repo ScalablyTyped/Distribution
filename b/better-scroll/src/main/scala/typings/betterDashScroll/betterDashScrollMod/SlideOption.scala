@@ -26,7 +26,7 @@ object SlideOption {
     stepY: Double,
     threshold: Double
   ): SlideOption = {
-    val __obj = js.Dynamic.literal(el = el, listenFlick = listenFlick, loop = loop, speed = speed, stepX = stepX, stepY = stepY, threshold = threshold)
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], listenFlick = listenFlick.asInstanceOf[js.Any], loop = loop.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], stepX = stepX.asInstanceOf[js.Any], stepY = stepY.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SlideOption]
   }

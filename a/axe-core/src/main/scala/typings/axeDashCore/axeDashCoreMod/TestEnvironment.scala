@@ -21,9 +21,9 @@ object TestEnvironment {
     orientationAngle: Int | Double = null,
     orientationType: String = null
   ): TestEnvironment = {
-    val __obj = js.Dynamic.literal(userAgent = userAgent, windowHeight = windowHeight, windowWidth = windowWidth)
+    val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any], windowHeight = windowHeight.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any])
     if (orientationAngle != null) __obj.updateDynamic("orientationAngle")(orientationAngle.asInstanceOf[js.Any])
-    if (orientationType != null) __obj.updateDynamic("orientationType")(orientationType)
+    if (orientationType != null) __obj.updateDynamic("orientationType")(orientationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestEnvironment]
   }
 }

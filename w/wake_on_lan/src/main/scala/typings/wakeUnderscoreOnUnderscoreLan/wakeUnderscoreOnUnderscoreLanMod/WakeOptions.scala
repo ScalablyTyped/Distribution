@@ -32,7 +32,7 @@ object WakeOptions {
     port: Int | Double = null
   ): WakeOptions = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (num_packets != null) __obj.updateDynamic("num_packets")(num_packets.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

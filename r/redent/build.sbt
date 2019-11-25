@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "redent"
-version := "3.0.0-208278"
+version := "3.0.0-c1f9c1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "indent-string" % "4.0.0-216dac")
+  "org.scalablytyped" %%% "indent-string" % "4.0.0-bd5294")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

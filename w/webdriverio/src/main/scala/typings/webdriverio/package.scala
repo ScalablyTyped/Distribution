@@ -15,8 +15,8 @@ package object webdriverio {
   import typings.webdriverio.webdriverioStrings.addCommand
   import typings.webdriverio.webdriverioStrings.config
   import typings.webdriverio.webdriverioStrings.dragAndDrop
-  import typings.webdriverio.webdriverioStrings.element
   import typings.webdriverio.webdriverioStrings.elementId
+  import typings.webdriverio.webdriverioStrings.element_
   import typings.webdriverio.webdriverioStrings.options
   import typings.webdriverio.webdriverioStrings.overwriteCommand
   import typings.webdriverio.webdriverioStrings.selector
@@ -51,6 +51,6 @@ package object webdriverio {
   // Properties of TouchAction which are similar in sync and async mode
   type TouchActionSync = Omit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.TouchAction */ js.Any, 
-    element
+    element_
   ]
 }

@@ -23,7 +23,7 @@ object AutosuggestState {
     highlightedSuggestionIndex: Int | Double = null,
     valueBeforeUpDown: TSuggestion = null
   ): AutosuggestState[TSuggestion] = {
-    val __obj = js.Dynamic.literal(isCollapsed = isCollapsed, isFocused = isFocused)
+    val __obj = js.Dynamic.literal(isCollapsed = isCollapsed.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any])
     if (highlightedSectionIndex != null) __obj.updateDynamic("highlightedSectionIndex")(highlightedSectionIndex.asInstanceOf[js.Any])
     if (highlightedSuggestion != null) __obj.updateDynamic("highlightedSuggestion")(highlightedSuggestion.asInstanceOf[js.Any])
     if (highlightedSuggestionIndex != null) __obj.updateDynamic("highlightedSuggestionIndex")(highlightedSuggestionIndex.asInstanceOf[js.Any])

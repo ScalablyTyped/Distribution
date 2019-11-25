@@ -18,8 +18,8 @@ object ListInvitationsResponse {
   @scala.inline
   def apply(invitations: js.Array[Invitation] = null, nextPageToken: String = null): ListInvitationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (invitations != null) __obj.updateDynamic("invitations")(invitations)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (invitations != null) __obj.updateDynamic("invitations")(invitations.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInvitationsResponse]
   }
 }

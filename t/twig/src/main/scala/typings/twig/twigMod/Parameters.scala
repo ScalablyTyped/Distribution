@@ -36,18 +36,18 @@ object Parameters {
     path: js.Any = null
   ): Parameters = {
     val __obj = js.Dynamic.literal()
-    if (async != null) __obj.updateDynamic("async")(async)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (blocks != null) __obj.updateDynamic("blocks")(blocks)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (async != null) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (blocks != null) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
-    if (macros != null) __obj.updateDynamic("macros")(macros)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (macros != null) __obj.updateDynamic("macros")(macros.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters]
   }
 }

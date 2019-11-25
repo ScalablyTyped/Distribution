@@ -37,9 +37,9 @@ object IpadicFeatures {
     pronunciation: String = null,
     reading: String = null
   ): IpadicFeatures = {
-    val __obj = js.Dynamic.literal(basic_form = basic_form, conjugated_form = conjugated_form, conjugated_type = conjugated_type, pos = pos, pos_detail_1 = pos_detail_1, pos_detail_2 = pos_detail_2, pos_detail_3 = pos_detail_3, surface_form = surface_form, word_id = word_id, word_position = word_position, word_type = word_type)
-    if (pronunciation != null) __obj.updateDynamic("pronunciation")(pronunciation)
-    if (reading != null) __obj.updateDynamic("reading")(reading)
+    val __obj = js.Dynamic.literal(basic_form = basic_form.asInstanceOf[js.Any], conjugated_form = conjugated_form.asInstanceOf[js.Any], conjugated_type = conjugated_type.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], pos_detail_1 = pos_detail_1.asInstanceOf[js.Any], pos_detail_2 = pos_detail_2.asInstanceOf[js.Any], pos_detail_3 = pos_detail_3.asInstanceOf[js.Any], surface_form = surface_form.asInstanceOf[js.Any], word_id = word_id.asInstanceOf[js.Any], word_position = word_position.asInstanceOf[js.Any], word_type = word_type.asInstanceOf[js.Any])
+    if (pronunciation != null) __obj.updateDynamic("pronunciation")(pronunciation.asInstanceOf[js.Any])
+    if (reading != null) __obj.updateDynamic("reading")(reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpadicFeatures]
   }
 }

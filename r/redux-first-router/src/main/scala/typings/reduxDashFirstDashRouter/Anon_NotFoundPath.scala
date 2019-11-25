@@ -15,9 +15,9 @@ object Anon_NotFoundPath {
   @scala.inline
   def apply(notFoundPath: String = null, query: Query = null, search: String = null): Anon_NotFoundPath = {
     val __obj = js.Dynamic.literal()
-    if (notFoundPath != null) __obj.updateDynamic("notFoundPath")(notFoundPath)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (search != null) __obj.updateDynamic("search")(search)
+    if (notFoundPath != null) __obj.updateDynamic("notFoundPath")(notFoundPath.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NotFoundPath]
   }
 }

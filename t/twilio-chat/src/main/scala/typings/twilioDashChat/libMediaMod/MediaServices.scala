@@ -12,7 +12,7 @@ trait MediaServices extends js.Object {
 object MediaServices {
   @scala.inline
   def apply(mcsClient: McsClient): MediaServices = {
-    val __obj = js.Dynamic.literal(mcsClient = mcsClient)
+    val __obj = js.Dynamic.literal(mcsClient = mcsClient.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaServices]
   }

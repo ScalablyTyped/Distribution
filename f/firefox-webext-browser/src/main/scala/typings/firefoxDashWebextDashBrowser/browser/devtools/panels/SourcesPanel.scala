@@ -26,7 +26,7 @@ object SourcesPanel {
     onSelectionChanged: WebExtEvent[js.Function0[Unit]],
     createSidebarPane: /* title */ String => js.Promise[ExtensionSidebarPane] = null
   ): SourcesPanel = {
-    val __obj = js.Dynamic.literal(onSelectionChanged = onSelectionChanged)
+    val __obj = js.Dynamic.literal(onSelectionChanged = onSelectionChanged.asInstanceOf[js.Any])
     if (createSidebarPane != null) __obj.updateDynamic("createSidebarPane")(js.Any.fromFunction1(createSidebarPane))
     __obj.asInstanceOf[SourcesPanel]
   }

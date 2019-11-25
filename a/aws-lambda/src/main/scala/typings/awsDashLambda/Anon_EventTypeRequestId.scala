@@ -14,7 +14,7 @@ trait Anon_EventTypeRequestId extends js.Object {
 object Anon_EventTypeRequestId {
   @scala.inline
   def apply(eventType: `viewer-request` | `viewer-response`, requestId: String): Anon_EventTypeRequestId = {
-    val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], requestId = requestId)
+    val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventTypeRequestId]
   }

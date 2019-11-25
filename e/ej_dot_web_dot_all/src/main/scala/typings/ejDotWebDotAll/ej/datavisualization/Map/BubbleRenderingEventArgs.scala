@@ -14,7 +14,7 @@ object BubbleRenderingEventArgs {
   @scala.inline
   def apply(originalEvent: js.Any = null): BubbleRenderingEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[BubbleRenderingEventArgs]
   }
 }

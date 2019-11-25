@@ -15,7 +15,7 @@ trait Anon_Compilation extends js.Object {
 object Anon_Compilation {
   @scala.inline
   def apply(compilation: Compilation, module: Module, paths: js.Array[String]): Anon_Compilation = {
-    val __obj = js.Dynamic.literal(compilation = compilation, module = module, paths = paths)
+    val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Compilation]
   }

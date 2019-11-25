@@ -40,10 +40,10 @@ object PullsCreateReviewParams {
     commit_id: String = null,
     event: APPROVE | REQUEST_CHANGES | COMMENT = null
   ): PullsCreateReviewParams = {
-    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (commit_id != null) __obj.updateDynamic("commit_id")(commit_id)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (commit_id != null) __obj.updateDynamic("commit_id")(commit_id.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsCreateReviewParams]
   }

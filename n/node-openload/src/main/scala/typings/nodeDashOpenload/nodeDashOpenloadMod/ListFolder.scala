@@ -14,7 +14,7 @@ trait ListFolder extends js.Object {
 object ListFolder {
   @scala.inline
   def apply(files: js.Array[Anon_ContenttypeCstatus], folders: js.Array[Anon_Id]): ListFolder = {
-    val __obj = js.Dynamic.literal(files = files, folders = folders)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], folders = folders.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListFolder]
   }

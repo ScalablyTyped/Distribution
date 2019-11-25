@@ -27,8 +27,8 @@ object PartialBlockStatement {
     program: Program,
     `type`: typings.handlebars.handlebarsStrings.PartialBlockStatement
   ): PartialBlockStatement = {
-    val __obj = js.Dynamic.literal(closeStrip = closeStrip, hash = hash, loc = loc, name = name.asInstanceOf[js.Any], openStrip = openStrip, params = params, program = program)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(closeStrip = closeStrip.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], openStrip = openStrip.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialBlockStatement]
   }
 }

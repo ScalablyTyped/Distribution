@@ -22,11 +22,11 @@ object ReactShowMoreProps {
     more: String = null
   ): ReactShowMoreProps = {
     val __obj = js.Dynamic.literal()
-    if (anchorClass != null) __obj.updateDynamic("anchorClass")(anchorClass)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (less != null) __obj.updateDynamic("less")(less)
+    if (anchorClass != null) __obj.updateDynamic("anchorClass")(anchorClass.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (less != null) __obj.updateDynamic("less")(less.asInstanceOf[js.Any])
     if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (more != null) __obj.updateDynamic("more")(more)
+    if (more != null) __obj.updateDynamic("more")(more.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactShowMoreProps]
   }
 }

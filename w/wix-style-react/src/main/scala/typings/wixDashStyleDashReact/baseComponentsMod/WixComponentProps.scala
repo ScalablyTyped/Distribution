@@ -13,8 +13,8 @@ object WixComponentProps {
   @scala.inline
   def apply(dataHook: String = null, styles: String = null): WixComponentProps = {
     val __obj = js.Dynamic.literal()
-    if (dataHook != null) __obj.updateDynamic("dataHook")(dataHook)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (dataHook != null) __obj.updateDynamic("dataHook")(dataHook.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[WixComponentProps]
   }
 }

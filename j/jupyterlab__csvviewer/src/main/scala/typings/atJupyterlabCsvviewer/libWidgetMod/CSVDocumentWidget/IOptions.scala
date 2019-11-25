@@ -25,12 +25,12 @@ object IOptions {
     reveal: js.Promise[_] = null,
     toolbar: Toolbar[Widget] = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(context = context)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (reveal != null) __obj.updateDynamic("reveal")(reveal)
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (reveal != null) __obj.updateDynamic("reveal")(reveal.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

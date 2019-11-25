@@ -32,7 +32,7 @@ trait _Constants extends js.Object {
 object _Constants {
   @scala.inline
   def apply(APP_NS: String, ATOM_NS: String, ATOM_URI: String, PURL_NS: String): _Constants = {
-    val __obj = js.Dynamic.literal(APP_NS = APP_NS, ATOM_NS = ATOM_NS, ATOM_URI = ATOM_URI, PURL_NS = PURL_NS)
+    val __obj = js.Dynamic.literal(APP_NS = APP_NS.asInstanceOf[js.Any], ATOM_NS = ATOM_NS.asInstanceOf[js.Any], ATOM_URI = ATOM_URI.asInstanceOf[js.Any], PURL_NS = PURL_NS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Constants]
   }

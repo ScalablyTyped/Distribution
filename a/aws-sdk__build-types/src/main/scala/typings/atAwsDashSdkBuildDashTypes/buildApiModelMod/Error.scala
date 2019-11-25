@@ -18,9 +18,9 @@ object Error {
     senderFault: js.UndefOr[scala.Boolean] = js.undefined
   ): Error = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (httpStatusCode != null) __obj.updateDynamic("httpStatusCode")(httpStatusCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(senderFault)) __obj.updateDynamic("senderFault")(senderFault)
+    if (!js.isUndefined(senderFault)) __obj.updateDynamic("senderFault")(senderFault.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
 }

@@ -25,10 +25,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (contextAttributes != null) __obj.updateDynamic("contextAttributes")(contextAttributes)
+    if (contextAttributes != null) __obj.updateDynamic("contextAttributes")(contextAttributes.asInstanceOf[js.Any])
     if (latencyHint != null) __obj.updateDynamic("latencyHint")(latencyHint.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline)
+    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.asInstanceOf[js.Any])
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

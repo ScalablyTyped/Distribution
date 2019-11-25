@@ -15,9 +15,9 @@ trait AutomationNonInteractive extends _AutomationOptions {
 object AutomationNonInteractive {
   @scala.inline
   def apply(interact: `false`, desktop: `false` = null, matches: js.Array[String | UrlMatches] = null): AutomationNonInteractive = {
-    val __obj = js.Dynamic.literal(interact = interact)
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop)
-    if (matches != null) __obj.updateDynamic("matches")(matches)
+    val __obj = js.Dynamic.literal(interact = interact.asInstanceOf[js.Any])
+    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomationNonInteractive]
   }
 }

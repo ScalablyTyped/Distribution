@@ -13,8 +13,8 @@ trait ReposUpdateBranchProtectionParamsRestrictions extends js.Object {
 object ReposUpdateBranchProtectionParamsRestrictions {
   @scala.inline
   def apply(teams: js.Array[String], users: js.Array[String], apps: js.Array[String] = null): ReposUpdateBranchProtectionParamsRestrictions = {
-    val __obj = js.Dynamic.literal(teams = teams, users = users)
-    if (apps != null) __obj.updateDynamic("apps")(apps)
+    val __obj = js.Dynamic.literal(teams = teams.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+    if (apps != null) __obj.updateDynamic("apps")(apps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateBranchProtectionParamsRestrictions]
   }
 }

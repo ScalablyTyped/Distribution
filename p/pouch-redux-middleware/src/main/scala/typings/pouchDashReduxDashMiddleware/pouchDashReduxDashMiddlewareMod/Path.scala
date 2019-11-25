@@ -48,8 +48,8 @@ object Path {
     scheduleInset: /* doc */ Document[T] => Unit = null,
     scheduleRemove: /* doc */ Document[T] => Unit = null
   ): Path[T] = {
-    val __obj = js.Dynamic.literal(actions = actions, db = db, path = path)
-    if (docs != null) __obj.updateDynamic("docs")(docs)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (docs != null) __obj.updateDynamic("docs")(docs.asInstanceOf[js.Any])
     if (handleResponse != null) __obj.updateDynamic("handleResponse")(js.Any.fromFunction3(handleResponse))
     if (initialBatchDispatched != null) __obj.updateDynamic("initialBatchDispatched")(js.Any.fromFunction1(initialBatchDispatched))
     if (propagateBatchInsert != null) __obj.updateDynamic("propagateBatchInsert")(js.Any.fromFunction2(propagateBatchInsert))

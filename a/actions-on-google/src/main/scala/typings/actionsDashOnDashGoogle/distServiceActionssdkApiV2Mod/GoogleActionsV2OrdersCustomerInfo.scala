@@ -16,7 +16,7 @@ object GoogleActionsV2OrdersCustomerInfo {
   @scala.inline
   def apply(email: String = null): GoogleActionsV2OrdersCustomerInfo = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersCustomerInfo]
   }
 }

@@ -13,8 +13,8 @@ object SmartClientDeployment {
   @scala.inline
   def apply(simple: String = null, weak: String = null): SmartClientDeployment = {
     val __obj = js.Dynamic.literal()
-    if (simple != null) __obj.updateDynamic("simple")(simple)
-    if (weak != null) __obj.updateDynamic("weak")(weak)
+    if (simple != null) __obj.updateDynamic("simple")(simple.asInstanceOf[js.Any])
+    if (weak != null) __obj.updateDynamic("weak")(weak.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartClientDeployment]
   }
 }

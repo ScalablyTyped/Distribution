@@ -41,12 +41,12 @@ object EquationNumbers {
     useLabelIds: js.UndefOr[Boolean] = js.undefined
   ): EquationNumbers = {
     val __obj = js.Dynamic.literal()
-    if (autoNumber != null) __obj.updateDynamic("autoNumber")(autoNumber)
+    if (autoNumber != null) __obj.updateDynamic("autoNumber")(autoNumber.asInstanceOf[js.Any])
     if (formatID != null) __obj.updateDynamic("formatID")(js.Any.fromFunction0(formatID))
     if (formatNumber != null) __obj.updateDynamic("formatNumber")(js.Any.fromFunction1(formatNumber))
     if (formatTag != null) __obj.updateDynamic("formatTag")(js.Any.fromFunction1(formatTag))
     if (formatURL != null) __obj.updateDynamic("formatURL")(js.Any.fromFunction1(formatURL))
-    if (!js.isUndefined(useLabelIds)) __obj.updateDynamic("useLabelIds")(useLabelIds)
+    if (!js.isUndefined(useLabelIds)) __obj.updateDynamic("useLabelIds")(useLabelIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[EquationNumbers]
   }
 }

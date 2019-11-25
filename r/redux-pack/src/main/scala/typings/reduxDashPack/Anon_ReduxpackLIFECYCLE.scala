@@ -14,8 +14,8 @@ object Anon_ReduxpackLIFECYCLE {
   @scala.inline
   def apply(`redux-pack/LIFECYCLE`: LIFECYCLEValues = null, `redux-pack/TRANSACTION`: String = null): Anon_ReduxpackLIFECYCLE = {
     val __obj = js.Dynamic.literal()
-    if (`redux-pack/LIFECYCLE` != null) __obj.updateDynamic("redux-pack/LIFECYCLE")(`redux-pack/LIFECYCLE`)
-    if (`redux-pack/TRANSACTION` != null) __obj.updateDynamic("redux-pack/TRANSACTION")(`redux-pack/TRANSACTION`)
+    if (`redux-pack/LIFECYCLE` != null) __obj.updateDynamic("redux-pack/LIFECYCLE")(`redux-pack/LIFECYCLE`.asInstanceOf[js.Any])
+    if (`redux-pack/TRANSACTION` != null) __obj.updateDynamic("redux-pack/TRANSACTION")(`redux-pack/TRANSACTION`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ReduxpackLIFECYCLE]
   }
 }

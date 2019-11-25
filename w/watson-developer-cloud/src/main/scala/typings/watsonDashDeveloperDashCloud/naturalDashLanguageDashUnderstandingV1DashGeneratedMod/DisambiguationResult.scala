@@ -18,9 +18,9 @@ object DisambiguationResult {
   @scala.inline
   def apply(dbpedia_resource: String = null, name: String = null, subtype: js.Array[String] = null): DisambiguationResult = {
     val __obj = js.Dynamic.literal()
-    if (dbpedia_resource != null) __obj.updateDynamic("dbpedia_resource")(dbpedia_resource)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
+    if (dbpedia_resource != null) __obj.updateDynamic("dbpedia_resource")(dbpedia_resource.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisambiguationResult]
   }
 }

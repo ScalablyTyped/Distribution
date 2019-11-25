@@ -43,13 +43,13 @@ object AnnotationSet {
     `type`: String = null
   ): AnnotationSet = {
     val __obj = js.Dynamic.literal()
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
-    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId.asInstanceOf[js.Any])
+    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationSet]
   }
 }

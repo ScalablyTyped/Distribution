@@ -23,10 +23,10 @@ object TokenOutputProps {
     key: Key = null,
     style: StyleObj = null
   ): TokenOutputProps = {
-    val __obj = js.Dynamic.literal(children = children, className = className)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenOutputProps]
   }
 }

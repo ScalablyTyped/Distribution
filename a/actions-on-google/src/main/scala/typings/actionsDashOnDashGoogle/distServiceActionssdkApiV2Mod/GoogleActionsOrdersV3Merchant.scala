@@ -37,11 +37,11 @@ object GoogleActionsOrdersV3Merchant {
     phoneNumbers: js.Array[GoogleActionsOrdersV3PhoneNumber] = null
   ): GoogleActionsOrdersV3Merchant = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (phoneNumbers != null) __obj.updateDynamic("phoneNumbers")(phoneNumbers)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (phoneNumbers != null) __obj.updateDynamic("phoneNumbers")(phoneNumbers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3Merchant]
   }
 }

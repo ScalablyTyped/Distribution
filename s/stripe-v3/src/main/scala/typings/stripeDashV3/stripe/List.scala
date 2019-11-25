@@ -27,8 +27,8 @@ trait List[T] extends js.Object {
 object List {
   @scala.inline
   def apply[T](data: js.Array[T], has_more: Boolean, `object`: list, url: String): List[T] = {
-    val __obj = js.Dynamic.literal(data = data, has_more = has_more, url = url)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], has_more = has_more.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[List[T]]
   }
 }

@@ -12,7 +12,7 @@ trait ILanguageStatics extends js.Object {
 object ILanguageStatics {
   @scala.inline
   def apply(currentInputMethodLanguageTag: String, isWellFormed: String => Boolean): ILanguageStatics = {
-    val __obj = js.Dynamic.literal(currentInputMethodLanguageTag = currentInputMethodLanguageTag, isWellFormed = js.Any.fromFunction1(isWellFormed))
+    val __obj = js.Dynamic.literal(currentInputMethodLanguageTag = currentInputMethodLanguageTag.asInstanceOf[js.Any], isWellFormed = js.Any.fromFunction1(isWellFormed))
   
     __obj.asInstanceOf[ILanguageStatics]
   }

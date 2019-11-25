@@ -26,12 +26,12 @@ object Options {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (disableDotRule != null) __obj.updateDynamic("disableDotRule")(disableDotRule)
-    if (htmlAcceptHeaders != null) __obj.updateDynamic("htmlAcceptHeaders")(htmlAcceptHeaders)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (rewrites != null) __obj.updateDynamic("rewrites")(rewrites)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (disableDotRule != null) __obj.updateDynamic("disableDotRule")(disableDotRule.asInstanceOf[js.Any])
+    if (htmlAcceptHeaders != null) __obj.updateDynamic("htmlAcceptHeaders")(htmlAcceptHeaders.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (rewrites != null) __obj.updateDynamic("rewrites")(rewrites.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

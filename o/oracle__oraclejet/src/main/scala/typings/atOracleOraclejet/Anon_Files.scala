@@ -14,8 +14,8 @@ trait Anon_Files
 object Anon_Files {
   @scala.inline
   def apply(files: FileList, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_Files = {
-    val __obj = js.Dynamic.literal(files = files)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Files]
   }
 }

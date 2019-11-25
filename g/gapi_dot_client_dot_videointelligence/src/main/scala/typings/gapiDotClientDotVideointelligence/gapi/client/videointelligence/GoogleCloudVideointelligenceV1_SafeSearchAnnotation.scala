@@ -18,8 +18,8 @@ object GoogleCloudVideointelligenceV1_SafeSearchAnnotation {
   @scala.inline
   def apply(adult: String = null, time: String = null): GoogleCloudVideointelligenceV1_SafeSearchAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (adult != null) __obj.updateDynamic("adult")(adult)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (adult != null) __obj.updateDynamic("adult")(adult.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1_SafeSearchAnnotation]
   }
 }

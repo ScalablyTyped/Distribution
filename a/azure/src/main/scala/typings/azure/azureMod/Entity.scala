@@ -23,10 +23,10 @@ object Entity {
     Timestamp: Date = null,
     etag: String = null
   ): Entity = {
-    val __obj = js.Dynamic.literal(PartitionKey = PartitionKey, RowKey = RowKey)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
+    val __obj = js.Dynamic.literal(PartitionKey = PartitionKey.asInstanceOf[js.Any], RowKey = RowKey.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity]
   }
 }

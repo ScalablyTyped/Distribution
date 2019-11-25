@@ -23,11 +23,11 @@ object Options {
     sep: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
     if (deep != null) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (fs != null) __obj.updateDynamic("fs")(fs)
-    if (sep != null) __obj.updateDynamic("sep")(sep)
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
+    if (sep != null) __obj.updateDynamic("sep")(sep.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

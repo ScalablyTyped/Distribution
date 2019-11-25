@@ -24,11 +24,11 @@ object AvatarProps {
     src: String = null,
     verified: js.UndefOr[Boolean] = js.undefined
   ): AvatarProps = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarProps]
   }
 }

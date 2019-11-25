@@ -26,10 +26,10 @@ package object AMap {
   type MassMarks[D /* <: Data */] = MassMarks_[D]
   type MediaLayer[E /* <: HTMLElement */] = MediaLayer_[E]
   type Merge[O, T] = O with T
-  type Omit[T, E /* <: String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Omit[T, E /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in std.Exclude<keyof T, E> ]: T[K]}
     */ typings.amapDashJsDashApi.amapDashJsDashApiStrings.Omit with T
-  type OptionalKey[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: -? undefined extends T[K]? K : never}[keyof T] */ js.Any
+  type OptionalKey[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: -? undefined extends T[K]? K : never}[keyof T] */ js.Any
   type Overlay[ExtraData] = Overlay_[ExtraData]
   type PathOverlay[ExtraData] = PathOverlay_[ExtraData]
   type Polygon[ExtraData] = Polygon_[ExtraData]

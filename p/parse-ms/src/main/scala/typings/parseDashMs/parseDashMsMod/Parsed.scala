@@ -25,7 +25,7 @@ object Parsed {
     nanoseconds: Double,
     seconds: Double
   ): Parsed = {
-    val __obj = js.Dynamic.literal(days = days, hours = hours, microseconds = microseconds, milliseconds = milliseconds, minutes = minutes, nanoseconds = nanoseconds, seconds = seconds)
+    val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], microseconds = microseconds.asInstanceOf[js.Any], milliseconds = milliseconds.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], nanoseconds = nanoseconds.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Parsed]
   }

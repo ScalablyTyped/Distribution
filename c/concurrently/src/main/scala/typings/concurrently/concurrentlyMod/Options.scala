@@ -47,16 +47,16 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (defaultInputTarget != null) __obj.updateDynamic("defaultInputTarget")(defaultInputTarget.asInstanceOf[js.Any])
-    if (inputStream != null) __obj.updateDynamic("inputStream")(inputStream)
-    if (killOthers != null) __obj.updateDynamic("killOthers")(killOthers)
-    if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream)
+    if (inputStream != null) __obj.updateDynamic("inputStream")(inputStream.asInstanceOf[js.Any])
+    if (killOthers != null) __obj.updateDynamic("killOthers")(killOthers.asInstanceOf[js.Any])
+    if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (prefixLength != null) __obj.updateDynamic("prefixLength")(prefixLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (restartDelay != null) __obj.updateDynamic("restartDelay")(restartDelay.asInstanceOf[js.Any])
     if (restartTries != null) __obj.updateDynamic("restartTries")(restartTries.asInstanceOf[js.Any])
     if (successCondition != null) __obj.updateDynamic("successCondition")(successCondition.asInstanceOf[js.Any])
-    if (timestampFormat != null) __obj.updateDynamic("timestampFormat")(timestampFormat)
+    if (timestampFormat != null) __obj.updateDynamic("timestampFormat")(timestampFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

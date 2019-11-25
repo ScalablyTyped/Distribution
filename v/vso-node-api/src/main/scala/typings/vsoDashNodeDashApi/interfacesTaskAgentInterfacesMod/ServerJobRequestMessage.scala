@@ -21,7 +21,7 @@ object ServerJobRequestMessage {
     taskInstance: TaskInstance,
     timeline: TimelineReference
   ): ServerJobRequestMessage = {
-    val __obj = js.Dynamic.literal(environment = environment, jobId = jobId, jobName = jobName, messageType = messageType, plan = plan, taskDefinition = taskDefinition, taskInstance = taskInstance, timeline = timeline)
+    val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], taskDefinition = taskDefinition.asInstanceOf[js.Any], taskInstance = taskInstance.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerJobRequestMessage]
   }

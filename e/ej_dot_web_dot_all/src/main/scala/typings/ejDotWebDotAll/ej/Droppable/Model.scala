@@ -34,11 +34,11 @@ object Model {
     scope: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
     if (out != null) __obj.updateDynamic("out")(js.Any.fromFunction1(out))
     if (over != null) __obj.updateDynamic("over")(js.Any.fromFunction1(over))
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

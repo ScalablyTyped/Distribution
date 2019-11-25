@@ -23,9 +23,9 @@ trait Session extends js.Object {
 object Session {
   @scala.inline
   def apply(lastModified: Double, tab: Tab = null, window: typings.chrome.chrome.windows.Window = null): Session = {
-    val __obj = js.Dynamic.literal(lastModified = lastModified)
-    if (tab != null) __obj.updateDynamic("tab")(tab)
-    if (window != null) __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(lastModified = lastModified.asInstanceOf[js.Any])
+    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
 }

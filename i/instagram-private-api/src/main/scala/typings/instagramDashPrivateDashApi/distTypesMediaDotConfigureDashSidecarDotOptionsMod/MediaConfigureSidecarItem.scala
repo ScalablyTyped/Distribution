@@ -35,13 +35,13 @@ object MediaConfigureSidecarItem {
     timezone_offset: String = null,
     usertags: PostingUsertags | String = null
   ): MediaConfigureSidecarItem = {
-    val __obj = js.Dynamic.literal(height = height, upload_id = upload_id, width = width)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
     if (edits != null) __obj.updateDynamic("edits")(edits.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (source_type != null) __obj.updateDynamic("source_type")(source_type)
-    if (timezone_offset != null) __obj.updateDynamic("timezone_offset")(timezone_offset)
+    if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
+    if (timezone_offset != null) __obj.updateDynamic("timezone_offset")(timezone_offset.asInstanceOf[js.Any])
     if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaConfigureSidecarItem]
   }

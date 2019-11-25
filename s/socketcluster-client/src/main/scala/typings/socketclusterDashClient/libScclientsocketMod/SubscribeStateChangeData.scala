@@ -21,7 +21,7 @@ object SubscribeStateChangeData {
     oldState: ChannelState,
     subscriptionOptions: SCChannelOptions
   ): SubscribeStateChangeData = {
-    val __obj = js.Dynamic.literal(channel = channel, newState = newState, oldState = oldState, subscriptionOptions = subscriptionOptions)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any], subscriptionOptions = subscriptionOptions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubscribeStateChangeData]
   }

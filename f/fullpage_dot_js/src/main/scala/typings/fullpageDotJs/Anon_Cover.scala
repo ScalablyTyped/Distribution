@@ -17,7 +17,7 @@ object Anon_Cover {
   def apply(percentage: Int | Double = null, property: String = null, `type`: cover | reveal = null): Anon_Cover = {
     val __obj = js.Dynamic.literal()
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cover]
   }

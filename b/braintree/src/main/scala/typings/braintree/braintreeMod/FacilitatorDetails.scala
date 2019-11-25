@@ -13,7 +13,7 @@ trait FacilitatorDetails extends js.Object {
 object FacilitatorDetails {
   @scala.inline
   def apply(oauthApplicationClientId: String, oauthApplicationName: String, sourcePaymentMethodToken: String): FacilitatorDetails = {
-    val __obj = js.Dynamic.literal(oauthApplicationClientId = oauthApplicationClientId, oauthApplicationName = oauthApplicationName, sourcePaymentMethodToken = sourcePaymentMethodToken)
+    val __obj = js.Dynamic.literal(oauthApplicationClientId = oauthApplicationClientId.asInstanceOf[js.Any], oauthApplicationName = oauthApplicationName.asInstanceOf[js.Any], sourcePaymentMethodToken = sourcePaymentMethodToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FacilitatorDetails]
   }

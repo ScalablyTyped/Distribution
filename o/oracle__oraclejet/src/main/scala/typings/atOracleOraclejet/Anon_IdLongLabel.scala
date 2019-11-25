@@ -13,9 +13,9 @@ trait Anon_IdLongLabel extends js.Object {
 object Anon_IdLongLabel {
   @scala.inline
   def apply(id: String, longLabel: String = null, shortLabel: String = null): Anon_IdLongLabel = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (longLabel != null) __obj.updateDynamic("longLabel")(longLabel)
-    if (shortLabel != null) __obj.updateDynamic("shortLabel")(shortLabel)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (longLabel != null) __obj.updateDynamic("longLabel")(longLabel.asInstanceOf[js.Any])
+    if (shortLabel != null) __obj.updateDynamic("shortLabel")(shortLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdLongLabel]
   }
 }

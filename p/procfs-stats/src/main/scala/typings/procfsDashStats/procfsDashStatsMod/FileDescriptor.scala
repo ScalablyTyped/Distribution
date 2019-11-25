@@ -14,8 +14,8 @@ trait FileDescriptor extends js.Object {
 object FileDescriptor {
   @scala.inline
   def apply(info: FileDescriptorInfo, path: String, stat: FileDescriptorStat | Boolean, fd: String = null): FileDescriptor = {
-    val __obj = js.Dynamic.literal(info = info, path = path, stat = stat.asInstanceOf[js.Any])
-    if (fd != null) __obj.updateDynamic("fd")(fd)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
+    if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileDescriptor]
   }
 }

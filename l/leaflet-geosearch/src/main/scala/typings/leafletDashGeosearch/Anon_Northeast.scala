@@ -13,7 +13,7 @@ trait Anon_Northeast extends js.Object {
 object Anon_Northeast {
   @scala.inline
   def apply(northeast: LatLngLiteral, southwest: LatLngLiteral): Anon_Northeast = {
-    val __obj = js.Dynamic.literal(northeast = northeast, southwest = southwest)
+    val __obj = js.Dynamic.literal(northeast = northeast.asInstanceOf[js.Any], southwest = southwest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Northeast]
   }

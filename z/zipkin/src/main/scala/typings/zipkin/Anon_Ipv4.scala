@@ -14,9 +14,9 @@ object Anon_Ipv4 {
   @scala.inline
   def apply(ipv4: String = null, port: Int | Double = null, serviceName: String = null): Anon_Ipv4 = {
     val __obj = js.Dynamic.literal()
-    if (ipv4 != null) __obj.updateDynamic("ipv4")(ipv4)
+    if (ipv4 != null) __obj.updateDynamic("ipv4")(ipv4.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ipv4]
   }
 }

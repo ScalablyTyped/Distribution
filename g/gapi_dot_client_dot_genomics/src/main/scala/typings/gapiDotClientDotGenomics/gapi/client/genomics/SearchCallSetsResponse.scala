@@ -19,8 +19,8 @@ object SearchCallSetsResponse {
   @scala.inline
   def apply(callSets: js.Array[CallSet] = null, nextPageToken: String = null): SearchCallSetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (callSets != null) __obj.updateDynamic("callSets")(callSets)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (callSets != null) __obj.updateDynamic("callSets")(callSets.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchCallSetsResponse]
   }
 }

@@ -60,15 +60,15 @@ object ClassNames {
     suggestion: String = null
   ): ClassNames = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
-    if (empty != null) __obj.updateDynamic("empty")(empty)
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
-    if (hint != null) __obj.updateDynamic("hint")(hint)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassNames]
   }
 }

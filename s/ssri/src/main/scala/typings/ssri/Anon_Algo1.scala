@@ -17,7 +17,7 @@ object Anon_Algo1 {
   ): Anon_Algo1 = {
     val __obj = js.Dynamic.literal()
     if (pickAlgorithm != null) __obj.updateDynamic("pickAlgorithm")(js.Any.fromFunction2(pickAlgorithm))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Algo1]
   }
 }

@@ -13,9 +13,9 @@ trait SerializerError extends Error {
 object SerializerError {
   @scala.inline
   def apply(code: Double, message: String, name: String, data: js.Array[_] = null, stack: String = null): SerializerError = {
-    val __obj = js.Dynamic.literal(code = code, message = message, name = name)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializerError]
   }
 }

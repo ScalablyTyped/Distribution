@@ -22,7 +22,7 @@ trait File extends js.Object {
 object File {
   @scala.inline
   def apply(createTime: Double, filePath: String, size: Double): File = {
-    val __obj = js.Dynamic.literal(createTime = createTime, filePath = filePath, size = size)
+    val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[File]
   }

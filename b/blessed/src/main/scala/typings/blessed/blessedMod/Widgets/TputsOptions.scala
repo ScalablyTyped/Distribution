@@ -28,14 +28,14 @@ object TputsOptions {
     terminfoPrefix: String = null
   ): TputsOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended)
-    if (termcap != null) __obj.updateDynamic("termcap")(termcap)
-    if (termcapFile != null) __obj.updateDynamic("termcapFile")(termcapFile)
-    if (terminal != null) __obj.updateDynamic("terminal")(terminal)
-    if (terminfoFile != null) __obj.updateDynamic("terminfoFile")(terminfoFile)
-    if (terminfoPrefix != null) __obj.updateDynamic("terminfoPrefix")(terminfoPrefix)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])
+    if (termcap != null) __obj.updateDynamic("termcap")(termcap.asInstanceOf[js.Any])
+    if (termcapFile != null) __obj.updateDynamic("termcapFile")(termcapFile.asInstanceOf[js.Any])
+    if (terminal != null) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
+    if (terminfoFile != null) __obj.updateDynamic("terminfoFile")(terminfoFile.asInstanceOf[js.Any])
+    if (terminfoPrefix != null) __obj.updateDynamic("terminfoPrefix")(terminfoPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[TputsOptions]
   }
 }

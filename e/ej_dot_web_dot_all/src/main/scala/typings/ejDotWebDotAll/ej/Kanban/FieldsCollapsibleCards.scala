@@ -19,8 +19,8 @@ object FieldsCollapsibleCards {
   @scala.inline
   def apply(field: String = null, key: String = null): FieldsCollapsibleCards = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsCollapsibleCards]
   }
 }

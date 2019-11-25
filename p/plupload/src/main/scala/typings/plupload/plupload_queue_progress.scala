@@ -27,7 +27,7 @@ object plupload_queue_progress {
     size: Double,
     uploaded: Double
   ): plupload_queue_progress = {
-    val __obj = js.Dynamic.literal(bytesPerSec = bytesPerSec, failed = failed, loaded = loaded, percent = percent, queued = queued, reset = js.Any.fromFunction0(reset), size = size, uploaded = uploaded)
+    val __obj = js.Dynamic.literal(bytesPerSec = bytesPerSec.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), size = size.asInstanceOf[js.Any], uploaded = uploaded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[plupload_queue_progress]
   }

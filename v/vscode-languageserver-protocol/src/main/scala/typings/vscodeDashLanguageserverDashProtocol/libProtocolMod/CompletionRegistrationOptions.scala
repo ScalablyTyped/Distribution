@@ -16,9 +16,9 @@ object CompletionRegistrationOptions {
     triggerCharacters: js.Array[String] = null
   ): CompletionRegistrationOptions = {
     val __obj = js.Dynamic.literal()
-    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector)
-    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider)
-    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters)
+    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider.asInstanceOf[js.Any])
+    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionRegistrationOptions]
   }
 }

@@ -15,10 +15,10 @@ object ActivityActor {
   @scala.inline
   def apply(callerType: String = null, email: String = null, key: String = null, profileId: String = null): ActivityActor = {
     val __obj = js.Dynamic.literal()
-    if (callerType != null) __obj.updateDynamic("callerType")(callerType)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId)
+    if (callerType != null) __obj.updateDynamic("callerType")(callerType.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityActor]
   }
 }

@@ -52,8 +52,8 @@ object AudioFeaturesObject {
     uri: String,
     valence: Double
   ): AudioFeaturesObject = {
-    val __obj = js.Dynamic.literal(acousticness = acousticness, analysis_url = analysis_url, danceability = danceability, duration_ms = duration_ms, energy = energy, id = id, instrumentalness = instrumentalness, key = key, liveness = liveness, loudness = loudness, mode = mode, speechiness = speechiness, tempo = tempo, time_signature = time_signature, track_href = track_href, uri = uri, valence = valence)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(acousticness = acousticness.asInstanceOf[js.Any], analysis_url = analysis_url.asInstanceOf[js.Any], danceability = danceability.asInstanceOf[js.Any], duration_ms = duration_ms.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instrumentalness = instrumentalness.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], liveness = liveness.asInstanceOf[js.Any], loudness = loudness.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], speechiness = speechiness.asInstanceOf[js.Any], tempo = tempo.asInstanceOf[js.Any], time_signature = time_signature.asInstanceOf[js.Any], track_href = track_href.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], valence = valence.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioFeaturesObject]
   }
 }

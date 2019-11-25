@@ -13,7 +13,7 @@ trait Source extends js.Object {
 object Source {
   @scala.inline
   def apply(fileName: String, lineNumber: Double): Source = {
-    val __obj = js.Dynamic.literal(fileName = fileName, lineNumber = lineNumber)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Source]
   }

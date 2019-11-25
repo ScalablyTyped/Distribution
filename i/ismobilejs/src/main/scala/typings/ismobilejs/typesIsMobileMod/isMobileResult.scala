@@ -30,7 +30,7 @@ object isMobileResult {
     tablet: Boolean,
     windows: Anon_DevicePhone
   ): isMobileResult = {
-    val __obj = js.Dynamic.literal(amazon = amazon, android = android, any = any, apple = apple, other = other, phone = phone, tablet = tablet, windows = windows)
+    val __obj = js.Dynamic.literal(amazon = amazon.asInstanceOf[js.Any], android = android.asInstanceOf[js.Any], any = any.asInstanceOf[js.Any], apple = apple.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[isMobileResult]
   }

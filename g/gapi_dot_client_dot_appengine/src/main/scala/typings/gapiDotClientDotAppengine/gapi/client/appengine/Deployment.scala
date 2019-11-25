@@ -21,9 +21,9 @@ object Deployment {
   @scala.inline
   def apply(container: ContainerInfo = null, files: Record[String, FileInfo] = null, zip: ZipInfo = null): Deployment = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (zip != null) __obj.updateDynamic("zip")(zip)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (zip != null) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
   }
 }

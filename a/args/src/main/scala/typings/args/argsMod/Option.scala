@@ -19,8 +19,8 @@ object Option {
     defaultValue: js.Any = null,
     init: /* value */ js.Any => js.Any = null
   ): Option = {
-    val __obj = js.Dynamic.literal(description = description, name = name.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
     __obj.asInstanceOf[Option]
   }

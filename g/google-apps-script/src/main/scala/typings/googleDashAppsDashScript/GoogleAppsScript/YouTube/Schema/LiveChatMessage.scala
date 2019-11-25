@@ -22,11 +22,11 @@ object LiveChatMessage {
     snippet: LiveChatMessageSnippet = null
   ): LiveChatMessage = {
     val __obj = js.Dynamic.literal()
-    if (authorDetails != null) __obj.updateDynamic("authorDetails")(authorDetails)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (authorDetails != null) __obj.updateDynamic("authorDetails")(authorDetails.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatMessage]
   }
 }

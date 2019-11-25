@@ -30,12 +30,12 @@ object IFeature {
     summary: java.lang.String = null
   ): IFeature = {
     val __obj = js.Dynamic.literal()
-    if (abstractsummary != null) __obj.updateDynamic("abstractsummary")(abstractsummary)
-    if (feature != null) __obj.updateDynamic("feature")(feature)
-    if (grouping != null) __obj.updateDynamic("grouping")(grouping)
-    if (groupingsummary != null) __obj.updateDynamic("groupingsummary")(groupingsummary)
-    if (rowbody != null) __obj.updateDynamic("rowbody")(rowbody)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (abstractsummary != null) __obj.updateDynamic("abstractsummary")(abstractsummary.asInstanceOf[js.Any])
+    if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
+    if (grouping != null) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
+    if (groupingsummary != null) __obj.updateDynamic("groupingsummary")(groupingsummary.asInstanceOf[js.Any])
+    if (rowbody != null) __obj.updateDynamic("rowbody")(rowbody.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFeature]
   }
 }

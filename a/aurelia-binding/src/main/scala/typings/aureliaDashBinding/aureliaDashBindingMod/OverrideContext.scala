@@ -12,8 +12,8 @@ trait OverrideContext extends js.Object {
 object OverrideContext {
   @scala.inline
   def apply(bindingContext: js.Any, parentOverrideContext: OverrideContext = null): OverrideContext = {
-    val __obj = js.Dynamic.literal(bindingContext = bindingContext)
-    if (parentOverrideContext != null) __obj.updateDynamic("parentOverrideContext")(parentOverrideContext)
+    val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any])
+    if (parentOverrideContext != null) __obj.updateDynamic("parentOverrideContext")(parentOverrideContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverrideContext]
   }
 }

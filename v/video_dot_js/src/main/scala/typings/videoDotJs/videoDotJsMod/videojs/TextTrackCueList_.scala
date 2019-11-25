@@ -46,8 +46,8 @@ object TextTrackCueList_ {
     */
   /* index */ NumberDictionary[TextTrackCue] = null
   ): TextTrackCueList_ = {
-    val __obj = js.Dynamic.literal(getCueById = js.Any.fromFunction1(getCueById), length = length)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(getCueById = js.Any.fromFunction1(getCueById), length = length.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[TextTrackCueList_]
   }
 }

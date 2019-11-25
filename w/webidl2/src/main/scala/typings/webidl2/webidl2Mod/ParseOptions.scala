@@ -15,8 +15,8 @@ object ParseOptions {
   @scala.inline
   def apply(concrete: js.UndefOr[Boolean] = js.undefined, sourceName: String = null): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(concrete)) __obj.updateDynamic("concrete")(concrete)
-    if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName)
+    if (!js.isUndefined(concrete)) __obj.updateDynamic("concrete")(concrete.asInstanceOf[js.Any])
+    if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

@@ -20,10 +20,10 @@ object HintSpecimenProps {
     warning: js.UndefOr[Boolean] = js.undefined
   ): HintSpecimenProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive)
-    if (!js.isUndefined(important)) __obj.updateDynamic("important")(important)
-    if (!js.isUndefined(neutral)) __obj.updateDynamic("neutral")(neutral)
-    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning)
+    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive.asInstanceOf[js.Any])
+    if (!js.isUndefined(important)) __obj.updateDynamic("important")(important.asInstanceOf[js.Any])
+    if (!js.isUndefined(neutral)) __obj.updateDynamic("neutral")(neutral.asInstanceOf[js.Any])
+    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[HintSpecimenProps]
   }
 }

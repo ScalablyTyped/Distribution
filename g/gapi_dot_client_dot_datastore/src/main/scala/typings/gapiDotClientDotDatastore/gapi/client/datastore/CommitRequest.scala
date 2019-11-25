@@ -35,9 +35,9 @@ object CommitRequest {
   @scala.inline
   def apply(mode: String = null, mutations: js.Array[Mutation] = null, transaction: String = null): CommitRequest = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitRequest]
   }
 }

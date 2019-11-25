@@ -16,8 +16,8 @@ object PDFViewerOpenEvent {
     sender: PDFViewer,
     file: js.Any = null
   ): PDFViewerOpenEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (file != null) __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerOpenEvent]
   }
 }

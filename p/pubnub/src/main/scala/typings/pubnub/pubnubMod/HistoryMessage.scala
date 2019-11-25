@@ -14,8 +14,8 @@ trait HistoryMessage extends js.Object {
 object HistoryMessage {
   @scala.inline
   def apply(entry: js.Any, meta: StringDictionary[String] = null, timetoken: String | Double = null): HistoryMessage = {
-    val __obj = js.Dynamic.literal(entry = entry)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (timetoken != null) __obj.updateDynamic("timetoken")(timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryMessage]
   }

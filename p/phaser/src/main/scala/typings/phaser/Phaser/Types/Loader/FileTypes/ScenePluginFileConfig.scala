@@ -42,12 +42,12 @@ object ScenePluginFileConfig {
     url: String | js.Function = null,
     xhrSettings: XHRSettingsObject = null
   ): ScenePluginFileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (sceneKey != null) __obj.updateDynamic("sceneKey")(sceneKey)
-    if (systemKey != null) __obj.updateDynamic("systemKey")(systemKey)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (sceneKey != null) __obj.updateDynamic("sceneKey")(sceneKey.asInstanceOf[js.Any])
+    if (systemKey != null) __obj.updateDynamic("systemKey")(systemKey.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings)
+    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScenePluginFileConfig]
   }
 }

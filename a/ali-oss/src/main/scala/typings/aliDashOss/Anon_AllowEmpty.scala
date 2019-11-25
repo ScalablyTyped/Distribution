@@ -14,7 +14,7 @@ trait Anon_AllowEmpty extends js.Object {
 object Anon_AllowEmpty {
   @scala.inline
   def apply(allowEmpty: Boolean, referers: js.Array[String], res: NormalSuccessResponse): Anon_AllowEmpty = {
-    val __obj = js.Dynamic.literal(allowEmpty = allowEmpty, referers = referers, res = res)
+    val __obj = js.Dynamic.literal(allowEmpty = allowEmpty.asInstanceOf[js.Any], referers = referers.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllowEmpty]
   }

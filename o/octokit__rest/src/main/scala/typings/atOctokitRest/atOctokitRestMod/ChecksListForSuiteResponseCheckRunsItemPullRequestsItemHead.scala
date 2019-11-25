@@ -13,7 +13,7 @@ trait ChecksListForSuiteResponseCheckRunsItemPullRequestsItemHead extends js.Obj
 object ChecksListForSuiteResponseCheckRunsItemPullRequestsItemHead {
   @scala.inline
   def apply(ref: String, repo: ChecksListForSuiteResponseCheckRunsItemPullRequestsItemHeadRepo, sha: String): ChecksListForSuiteResponseCheckRunsItemPullRequestsItemHead = {
-    val __obj = js.Dynamic.literal(ref = ref, repo = repo, sha = sha)
+    val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksListForSuiteResponseCheckRunsItemPullRequestsItemHead]
   }

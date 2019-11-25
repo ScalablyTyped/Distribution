@@ -17,9 +17,9 @@ object Report {
   @scala.inline
   def apply(key: ReportKey = null, metadata: ReportMetadata = null, params: Parameters = null): Report = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Report]
   }
 }

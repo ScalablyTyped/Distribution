@@ -25,11 +25,11 @@ object QueryOptions {
     port: Int | Double = null,
     socketTimeout: Int | Double = null
   ): QueryOptions = {
-    val __obj = js.Dynamic.literal(host = host)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (attemptTimeout != null) __obj.updateDynamic("attemptTimeout")(attemptTimeout.asInstanceOf[js.Any])
     if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes)
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]

@@ -13,8 +13,8 @@ object CreateHmacKeyOptions {
   @scala.inline
   def apply(projectId: String = null, userProject: String = null): CreateHmacKeyOptions = {
     val __obj = js.Dynamic.literal()
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHmacKeyOptions]
   }
 }

@@ -27,10 +27,10 @@ object _Error {
   @scala.inline
   def apply(Code: String = null, Key: String = null, Message: String = null, VersionId: String = null): _Error = {
     val __obj = js.Dynamic.literal()
-    if (Code != null) __obj.updateDynamic("Code")(Code)
-    if (Key != null) __obj.updateDynamic("Key")(Key)
-    if (Message != null) __obj.updateDynamic("Message")(Message)
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
+    if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Error]
   }
 }

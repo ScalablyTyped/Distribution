@@ -11,7 +11,7 @@ trait CollectionAfterAddEvent extends js.Object {
 object CollectionAfterAddEvent {
   @scala.inline
   def apply(item: js.Any): CollectionAfterAddEvent = {
-    val __obj = js.Dynamic.literal(item = item)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollectionAfterAddEvent]
   }

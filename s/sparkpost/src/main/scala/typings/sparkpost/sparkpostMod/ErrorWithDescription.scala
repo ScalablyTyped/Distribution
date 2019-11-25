@@ -13,7 +13,7 @@ trait ErrorWithDescription extends js.Object {
 object ErrorWithDescription {
   @scala.inline
   def apply(code: String, description: String, message: String): ErrorWithDescription = {
-    val __obj = js.Dynamic.literal(code = code, description = description, message = message)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ErrorWithDescription]
   }

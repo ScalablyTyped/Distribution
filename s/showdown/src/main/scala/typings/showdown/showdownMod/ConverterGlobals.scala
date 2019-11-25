@@ -42,19 +42,19 @@ object ConverterGlobals {
     outputModifiers: js.Array[ShowdownExtension] = null
   ): ConverterGlobals = {
     val __obj = js.Dynamic.literal()
-    if (converter != null) __obj.updateDynamic("converter")(converter)
-    if (gDimensions != null) __obj.updateDynamic("gDimensions")(gDimensions)
-    if (gHtmlBlocks != null) __obj.updateDynamic("gHtmlBlocks")(gHtmlBlocks)
-    if (gHtmlMdBlocks != null) __obj.updateDynamic("gHtmlMdBlocks")(gHtmlMdBlocks)
-    if (gHtmlSpans != null) __obj.updateDynamic("gHtmlSpans")(gHtmlSpans)
+    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
+    if (gDimensions != null) __obj.updateDynamic("gDimensions")(gDimensions.asInstanceOf[js.Any])
+    if (gHtmlBlocks != null) __obj.updateDynamic("gHtmlBlocks")(gHtmlBlocks.asInstanceOf[js.Any])
+    if (gHtmlMdBlocks != null) __obj.updateDynamic("gHtmlMdBlocks")(gHtmlMdBlocks.asInstanceOf[js.Any])
+    if (gHtmlSpans != null) __obj.updateDynamic("gHtmlSpans")(gHtmlSpans.asInstanceOf[js.Any])
     if (gListLevel != null) __obj.updateDynamic("gListLevel")(gListLevel.asInstanceOf[js.Any])
-    if (gTitles != null) __obj.updateDynamic("gTitles")(gTitles)
-    if (gUrls != null) __obj.updateDynamic("gUrls")(gUrls)
-    if (ghCodeBlocks != null) __obj.updateDynamic("ghCodeBlocks")(ghCodeBlocks)
-    if (hashLinkCounts != null) __obj.updateDynamic("hashLinkCounts")(hashLinkCounts)
-    if (langExtensions != null) __obj.updateDynamic("langExtensions")(langExtensions)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (outputModifiers != null) __obj.updateDynamic("outputModifiers")(outputModifiers)
+    if (gTitles != null) __obj.updateDynamic("gTitles")(gTitles.asInstanceOf[js.Any])
+    if (gUrls != null) __obj.updateDynamic("gUrls")(gUrls.asInstanceOf[js.Any])
+    if (ghCodeBlocks != null) __obj.updateDynamic("ghCodeBlocks")(ghCodeBlocks.asInstanceOf[js.Any])
+    if (hashLinkCounts != null) __obj.updateDynamic("hashLinkCounts")(hashLinkCounts.asInstanceOf[js.Any])
+    if (langExtensions != null) __obj.updateDynamic("langExtensions")(langExtensions.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (outputModifiers != null) __obj.updateDynamic("outputModifiers")(outputModifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConverterGlobals]
   }
 }

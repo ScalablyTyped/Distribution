@@ -15,7 +15,7 @@ object Anon_Cnd {
   def apply[Ext](cnd: Boolean | (js.Function1[/* t */ ITask[Ext] with Ext, Boolean]) = null, tag: js.Any = null): Anon_Cnd[Ext] = {
     val __obj = js.Dynamic.literal()
     if (cnd != null) __obj.updateDynamic("cnd")(cnd.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cnd[Ext]]
   }
 }

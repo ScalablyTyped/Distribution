@@ -40,19 +40,19 @@ object Config {
     traceLog: js.UndefOr[Boolean] = js.undefined
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (bloomrun != null) __obj.updateDynamic("bloomrun")(bloomrun)
-    if (!js.isUndefined(childLogger)) __obj.updateDynamic("childLogger")(childLogger)
-    if (errio != null) __obj.updateDynamic("errio")(errio)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
+    if (bloomrun != null) __obj.updateDynamic("bloomrun")(bloomrun.asInstanceOf[js.Any])
+    if (!js.isUndefined(childLogger)) __obj.updateDynamic("childLogger")(childLogger.asInstanceOf[js.Any])
+    if (errio != null) __obj.updateDynamic("errio")(errio.asInstanceOf[js.Any])
+    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (maxRecursion != null) __obj.updateDynamic("maxRecursion")(maxRecursion.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pluginTimeout != null) __obj.updateDynamic("pluginTimeout")(pluginTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyLog)) __obj.updateDynamic("prettyLog")(prettyLog)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (!js.isUndefined(prettyLog)) __obj.updateDynamic("prettyLog")(prettyLog.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceLog)) __obj.updateDynamic("traceLog")(traceLog)
+    if (!js.isUndefined(traceLog)) __obj.updateDynamic("traceLog")(traceLog.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

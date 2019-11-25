@@ -15,8 +15,8 @@ object DownloadAccesses {
   @scala.inline
   def apply(downloadAccessList: js.Array[DownloadAccessRestriction] = null, kind: String = null): DownloadAccesses = {
     val __obj = js.Dynamic.literal()
-    if (downloadAccessList != null) __obj.updateDynamic("downloadAccessList")(downloadAccessList)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (downloadAccessList != null) __obj.updateDynamic("downloadAccessList")(downloadAccessList.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadAccesses]
   }
 }

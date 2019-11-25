@@ -13,8 +13,8 @@ object Anon_Attribution {
   @scala.inline
   def apply(attribution: String = null, url: String = null): Anon_Attribution = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attribution]
   }
 }

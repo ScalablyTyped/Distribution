@@ -15,7 +15,7 @@ trait SortOver extends js.Object {
 object SortOver {
   @scala.inline
   def apply(collection: Offset, index: Double, isKeySorting: Boolean, newIndex: Double, oldIndex: Double): SortOver = {
-    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], index = index, isKeySorting = isKeySorting, newIndex = newIndex, oldIndex = oldIndex)
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isKeySorting = isKeySorting.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortOver]
   }

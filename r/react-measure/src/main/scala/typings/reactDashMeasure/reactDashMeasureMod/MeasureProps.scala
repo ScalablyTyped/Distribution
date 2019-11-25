@@ -30,14 +30,14 @@ object MeasureProps {
     scroll: js.UndefOr[Boolean] = js.undefined
   ): MeasureProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bounds)) __obj.updateDynamic("bounds")(bounds)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client)
+    if (!js.isUndefined(bounds)) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(js.Any.fromFunction1(innerRef))
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin)
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset)
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeasureProps]
   }
 }

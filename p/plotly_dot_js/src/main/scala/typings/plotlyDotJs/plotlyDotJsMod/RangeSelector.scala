@@ -38,7 +38,7 @@ object RangeSelector {
     y: Double,
     yanchor: auto | top | middle | bottom
   ): RangeSelector = {
-    val __obj = js.Dynamic.literal(activecolor = activecolor, bgcolor = bgcolor, bordercolor = bordercolor, borderwidth = borderwidth, buttons = buttons, font = font, visible = visible, x = x, xanchor = xanchor.asInstanceOf[js.Any], y = y, yanchor = yanchor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activecolor = activecolor.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderwidth = borderwidth.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RangeSelector]
   }

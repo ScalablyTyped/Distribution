@@ -31,7 +31,7 @@ object DeliveryViewPropertyCollection {
     markers: js.Array[Marker],
     teamBacklogMappings: js.Array[TeamBacklogMapping]
   ): DeliveryViewPropertyCollection = {
-    val __obj = js.Dynamic.literal(cardSettings = cardSettings, criteria = criteria, markers = markers, teamBacklogMappings = teamBacklogMappings)
+    val __obj = js.Dynamic.literal(cardSettings = cardSettings.asInstanceOf[js.Any], criteria = criteria.asInstanceOf[js.Any], markers = markers.asInstanceOf[js.Any], teamBacklogMappings = teamBacklogMappings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeliveryViewPropertyCollection]
   }

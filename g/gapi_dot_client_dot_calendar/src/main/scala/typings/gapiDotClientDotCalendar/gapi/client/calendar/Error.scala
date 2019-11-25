@@ -22,8 +22,8 @@ object Error {
   @scala.inline
   def apply(domain: String = null, reason: String = null): Error = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
 }

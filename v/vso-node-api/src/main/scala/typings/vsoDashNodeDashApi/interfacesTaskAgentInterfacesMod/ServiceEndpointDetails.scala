@@ -15,8 +15,8 @@ trait ServiceEndpointDetails extends js.Object {
 object ServiceEndpointDetails {
   @scala.inline
   def apply(authorization: EndpointAuthorization, data: StringDictionary[String], `type`: String, url: String): ServiceEndpointDetails = {
-    val __obj = js.Dynamic.literal(authorization = authorization, data = data, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(authorization = authorization.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceEndpointDetails]
   }
 }

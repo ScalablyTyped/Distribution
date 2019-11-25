@@ -17,15 +17,18 @@ class Web () extends EventEmitter {
   def defaultTheme(): WebTheme = js.native
   def defaultTheme(instance: WebTheme): this.type = js.native
   def get[K /* <: String */, V](path: K): js.UndefOr[
-    (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+    (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
   def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
-    (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+    (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
   ] = js.native
   def server(): Server = js.native
   def server(config: WebServerConfig): Server = js.native
   def set[K /* <: String */](path: K): this.type = js.native
-  def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
+  def set[K /* <: String */](
+    path: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): this.type = js.native
   def theme(name: String): this.type = js.native
   def theme(name: String, instance: WebTheme): this.type = js.native
 }

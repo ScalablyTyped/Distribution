@@ -25,8 +25,8 @@ object SceneViewConstraintsCollision {
     propertyIsEnumerable: PropertyKey => Boolean,
     enabled: js.UndefOr[Boolean] = js.undefined
   ): SceneViewConstraintsCollision = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewConstraintsCollision]
   }
 }

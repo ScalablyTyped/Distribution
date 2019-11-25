@@ -13,8 +13,8 @@ object Anon_Name {
   @scala.inline
   def apply(name: String = null, serializerFn: js.Function = null): Anon_Name = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (serializerFn != null) __obj.updateDynamic("serializerFn")(serializerFn)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (serializerFn != null) __obj.updateDynamic("serializerFn")(serializerFn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Name]
   }
 }

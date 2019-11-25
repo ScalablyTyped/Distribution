@@ -24,9 +24,9 @@ object ObjectPermissions {
     users: ObjectOperationPermissions,
     state: ObjectOperationPermissions = null
   ): ObjectPermissions = {
-    val __obj = js.Dynamic.literal(file = file, users = users)
-    __obj.updateDynamic("object")(`object`)
-    if (state != null) __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectPermissions]
   }
 }

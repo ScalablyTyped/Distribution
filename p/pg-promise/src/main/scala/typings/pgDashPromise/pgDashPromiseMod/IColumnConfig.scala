@@ -27,13 +27,13 @@ object IColumnConfig {
     prop: String = null,
     skip: /* col */ IColumnDescriptor => Boolean = null
   ): IColumnConfig = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (cast != null) __obj.updateDynamic("cast")(cast)
-    if (!js.isUndefined(cnd)) __obj.updateDynamic("cnd")(cnd)
-    if (`def` != null) __obj.updateDynamic("def")(`def`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (cast != null) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
+    if (!js.isUndefined(cnd)) __obj.updateDynamic("cnd")(cnd.asInstanceOf[js.Any])
+    if (`def` != null) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (mod != null) __obj.updateDynamic("mod")(mod)
-    if (prop != null) __obj.updateDynamic("prop")(prop)
+    if (mod != null) __obj.updateDynamic("mod")(mod.asInstanceOf[js.Any])
+    if (prop != null) __obj.updateDynamic("prop")(prop.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction1(skip))
     __obj.asInstanceOf[IColumnConfig]
   }

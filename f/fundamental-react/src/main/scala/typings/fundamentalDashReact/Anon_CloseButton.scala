@@ -12,7 +12,7 @@ trait Anon_CloseButton extends js.Object {
 object Anon_CloseButton {
   @scala.inline
   def apply(closeButton: String): Anon_CloseButton = {
-    val __obj = js.Dynamic.literal(closeButton = closeButton)
+    val __obj = js.Dynamic.literal(closeButton = closeButton.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CloseButton]
   }

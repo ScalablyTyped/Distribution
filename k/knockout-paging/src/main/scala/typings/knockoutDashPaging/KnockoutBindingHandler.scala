@@ -46,7 +46,7 @@ object KnockoutBindingHandler {
   ): KnockoutBindingHandler = {
     val __obj = js.Dynamic.literal()
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction5(init))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction3(preprocess))
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction5(update))
     __obj.asInstanceOf[KnockoutBindingHandler]

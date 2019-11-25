@@ -13,7 +13,7 @@ object ZoneViewsRemoveResourcesRequest {
   @scala.inline
   def apply(resources: js.Array[String] = null): ZoneViewsRemoveResourcesRequest = {
     val __obj = js.Dynamic.literal()
-    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneViewsRemoveResourcesRequest]
   }
 }

@@ -16,8 +16,8 @@ object SuggestedTableRowStyle {
     tableRowStyleSuggestionState: TableRowStyleSuggestionState = null
   ): SuggestedTableRowStyle = {
     val __obj = js.Dynamic.literal()
-    if (tableRowStyle != null) __obj.updateDynamic("tableRowStyle")(tableRowStyle)
-    if (tableRowStyleSuggestionState != null) __obj.updateDynamic("tableRowStyleSuggestionState")(tableRowStyleSuggestionState)
+    if (tableRowStyle != null) __obj.updateDynamic("tableRowStyle")(tableRowStyle.asInstanceOf[js.Any])
+    if (tableRowStyleSuggestionState != null) __obj.updateDynamic("tableRowStyleSuggestionState")(tableRowStyleSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedTableRowStyle]
   }
 }

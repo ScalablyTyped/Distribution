@@ -16,9 +16,9 @@ trait LinePartProps extends js.Object {
 object LinePartProps {
   @scala.inline
   def apply(part: Anon_Text, format: /* text */ String => ReactNode = null, style: CSSProperties = null): LinePartProps = {
-    val __obj = js.Dynamic.literal(part = part)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinePartProps]
   }
 }

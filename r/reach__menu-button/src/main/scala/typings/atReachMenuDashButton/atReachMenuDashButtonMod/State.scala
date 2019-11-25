@@ -21,8 +21,8 @@ object State {
     selectionIndex: Double,
     buttonRect: ButtonRect = null
   ): State = {
-    val __obj = js.Dynamic.literal(buttonId = buttonId, closingWithClick = closingWithClick, isOpen = isOpen, selectionIndex = selectionIndex)
-    if (buttonRect != null) __obj.updateDynamic("buttonRect")(buttonRect)
+    val __obj = js.Dynamic.literal(buttonId = buttonId.asInstanceOf[js.Any], closingWithClick = closingWithClick.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], selectionIndex = selectionIndex.asInstanceOf[js.Any])
+    if (buttonRect != null) __obj.updateDynamic("buttonRect")(buttonRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

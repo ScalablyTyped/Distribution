@@ -13,7 +13,7 @@ object ITraces {
   @scala.inline
   def apply(trace: js.Array[ITrace] = null): ITraces = {
     val __obj = js.Dynamic.literal()
-    if (trace != null) __obj.updateDynamic("trace")(trace)
+    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITraces]
   }
 }

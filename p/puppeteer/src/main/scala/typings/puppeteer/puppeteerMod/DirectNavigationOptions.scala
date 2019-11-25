@@ -21,7 +21,7 @@ object DirectNavigationOptions {
     waitUntil: LoadEvent | js.Array[LoadEvent] = null
   ): DirectNavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (referer != null) __obj.updateDynamic("referer")(referer)
+    if (referer != null) __obj.updateDynamic("referer")(referer.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (waitUntil != null) __obj.updateDynamic("waitUntil")(waitUntil.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectNavigationOptions]

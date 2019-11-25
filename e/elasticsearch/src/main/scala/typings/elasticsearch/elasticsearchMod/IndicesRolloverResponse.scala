@@ -26,7 +26,7 @@ object IndicesRolloverResponse {
     rolled_over: Boolean,
     shards_acknowledged: Boolean
   ): IndicesRolloverResponse = {
-    val __obj = js.Dynamic.literal(acknowledged = acknowledged, conditions = conditions, dry_run = dry_run, new_index = new_index, old_index = old_index, rolled_over = rolled_over, shards_acknowledged = shards_acknowledged)
+    val __obj = js.Dynamic.literal(acknowledged = acknowledged.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], dry_run = dry_run.asInstanceOf[js.Any], new_index = new_index.asInstanceOf[js.Any], old_index = old_index.asInstanceOf[js.Any], rolled_over = rolled_over.asInstanceOf[js.Any], shards_acknowledged = shards_acknowledged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IndicesRolloverResponse]
   }

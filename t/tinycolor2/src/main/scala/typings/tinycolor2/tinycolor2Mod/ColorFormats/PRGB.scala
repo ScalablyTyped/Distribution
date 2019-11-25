@@ -14,7 +14,7 @@ trait PRGB extends _ColorInputWithoutInstance {
 object PRGB {
   @scala.inline
   def apply(b: String, g: String, r: String): PRGB = {
-    val __obj = js.Dynamic.literal(b = b, g = g, r = r)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PRGB]
   }

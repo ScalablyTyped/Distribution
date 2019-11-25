@@ -17,7 +17,7 @@ object OptimisticUpdateRelayPayload {
     payload: RelayResponsePayload,
     updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null
   ): OptimisticUpdateRelayPayload = {
-    val __obj = js.Dynamic.literal(operation = operation, payload = payload)
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))
     __obj.asInstanceOf[OptimisticUpdateRelayPayload]
   }

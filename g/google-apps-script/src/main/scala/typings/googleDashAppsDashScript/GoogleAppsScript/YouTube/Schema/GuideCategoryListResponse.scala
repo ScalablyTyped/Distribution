@@ -31,15 +31,15 @@ object GuideCategoryListResponse {
     visitorId: String = null
   ): GuideCategoryListResponse = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
-    if (prevPageToken != null) __obj.updateDynamic("prevPageToken")(prevPageToken)
-    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
-    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
+    if (prevPageToken != null) __obj.updateDynamic("prevPageToken")(prevPageToken.asInstanceOf[js.Any])
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination.asInstanceOf[js.Any])
+    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GuideCategoryListResponse]
   }
 }

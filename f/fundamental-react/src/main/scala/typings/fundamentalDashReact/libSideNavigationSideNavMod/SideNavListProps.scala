@@ -40,15 +40,15 @@ object SideNavListProps {
     titleProps: StringDictionary[js.Any] = null
   ): SideNavListProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(hasParent)) __obj.updateDynamic("hasParent")(hasParent)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasParent)) __obj.updateDynamic("hasParent")(hasParent.asInstanceOf[js.Any])
     if (headingLevel != null) __obj.updateDynamic("headingLevel")(headingLevel.asInstanceOf[js.Any])
     if (onItemSelect != null) __obj.updateDynamic("onItemSelect")(js.Any.fromFunction2(onItemSelect))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (selectedId != null) __obj.updateDynamic("selectedId")(selectedId)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (selectedId != null) __obj.updateDynamic("selectedId")(selectedId.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SideNavListProps]
   }
 }

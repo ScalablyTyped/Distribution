@@ -16,7 +16,7 @@ trait GregorianDateObject extends js.Object {
 object GregorianDateObject {
   @scala.inline
   def apply(gd: Double, gm: Double, gy: Double): GregorianDateObject = {
-    val __obj = js.Dynamic.literal(gd = gd, gm = gm, gy = gy)
+    val __obj = js.Dynamic.literal(gd = gd.asInstanceOf[js.Any], gm = gm.asInstanceOf[js.Any], gy = gy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GregorianDateObject]
   }

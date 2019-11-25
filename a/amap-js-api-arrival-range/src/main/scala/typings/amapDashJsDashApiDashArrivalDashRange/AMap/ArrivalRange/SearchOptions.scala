@@ -33,7 +33,7 @@ object SearchOptions {
   ): SearchOptions = {
     val __obj = js.Dynamic.literal()
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     if (resultType != null) __obj.updateDynamic("resultType")(resultType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }

@@ -23,8 +23,8 @@ object PieChartData {
     value: Int | Double = null
   ): PieChartData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (arc != null) __obj.updateDynamic("arc")(arc)
-    if (svg != null) __obj.updateDynamic("svg")(svg)
+    if (arc != null) __obj.updateDynamic("arc")(arc.asInstanceOf[js.Any])
+    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieChartData]
   }

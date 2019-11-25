@@ -26,13 +26,13 @@ object Options {
     writers: Writers = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (readers != null) __obj.updateDynamic("readers")(readers)
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (writers != null) __obj.updateDynamic("writers")(writers)
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (readers != null) __obj.updateDynamic("readers")(readers.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (writers != null) __obj.updateDynamic("writers")(writers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

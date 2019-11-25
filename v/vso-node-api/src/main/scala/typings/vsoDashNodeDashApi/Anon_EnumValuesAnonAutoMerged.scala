@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonAutoMerged extends js.Object {
 object Anon_EnumValuesAnonAutoMerged {
   @scala.inline
   def apply(enumValues: Anon_AutoMerged): Anon_EnumValuesAnonAutoMerged = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonAutoMerged]
   }

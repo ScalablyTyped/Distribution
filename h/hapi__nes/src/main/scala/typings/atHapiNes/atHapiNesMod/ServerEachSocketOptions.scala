@@ -13,8 +13,8 @@ object ServerEachSocketOptions {
   @scala.inline
   def apply(subscription: String = null, user: js.Any = null): ServerEachSocketOptions = {
     val __obj = js.Dynamic.literal()
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerEachSocketOptions]
   }
 }

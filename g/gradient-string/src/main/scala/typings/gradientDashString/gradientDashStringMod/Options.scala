@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(hsvSpin: String = null, interpolation: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (hsvSpin != null) __obj.updateDynamic("hsvSpin")(hsvSpin)
-    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (hsvSpin != null) __obj.updateDynamic("hsvSpin")(hsvSpin.asInstanceOf[js.Any])
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -74,7 +74,7 @@ object APIResource {
     verbs: js.Array[String],
     version: String
   ): APIResource = {
-    val __obj = js.Dynamic.literal(categories = categories, group = group, kind = kind, name = name, namespaced = namespaced, shortNames = shortNames, singularName = singularName, storageVersionHash = storageVersionHash, verbs = verbs, version = version)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespaced = namespaced.asInstanceOf[js.Any], shortNames = shortNames.asInstanceOf[js.Any], singularName = singularName.asInstanceOf[js.Any], storageVersionHash = storageVersionHash.asInstanceOf[js.Any], verbs = verbs.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[APIResource]
   }

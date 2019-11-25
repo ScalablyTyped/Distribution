@@ -22,7 +22,7 @@ object ParserBlock {
     parse: (String, MarkdownIt, js.Any, js.Array[typings.markdownDashIt.libTokenMod.^]) => Unit,
     ruler: RulerBlock
   ): ParserBlock = {
-    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction4(parse), ruler = ruler)
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction4(parse), ruler = ruler.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParserBlock]
   }

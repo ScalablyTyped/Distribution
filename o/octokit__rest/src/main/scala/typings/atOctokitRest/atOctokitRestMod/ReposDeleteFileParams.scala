@@ -42,10 +42,10 @@ object ReposDeleteFileParams {
     branch: String = null,
     committer: ReposDeleteFileParamsCommitter = null
   ): ReposDeleteFileParams = {
-    val __obj = js.Dynamic.literal(message = message, owner = owner, path = path, repo = repo, sha = sha)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (branch != null) __obj.updateDynamic("branch")(branch)
-    if (committer != null) __obj.updateDynamic("committer")(committer)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (committer != null) __obj.updateDynamic("committer")(committer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposDeleteFileParams]
   }
 }

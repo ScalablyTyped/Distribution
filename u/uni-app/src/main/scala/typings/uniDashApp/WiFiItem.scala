@@ -23,9 +23,9 @@ object WiFiItem {
   @scala.inline
   def apply(BSSID: String = null, SSID: String = null, password: String = null): WiFiItem = {
     val __obj = js.Dynamic.literal()
-    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID)
-    if (SSID != null) __obj.updateDynamic("SSID")(SSID)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID.asInstanceOf[js.Any])
+    if (SSID != null) __obj.updateDynamic("SSID")(SSID.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiItem]
   }
 }

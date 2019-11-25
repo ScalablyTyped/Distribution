@@ -26,13 +26,13 @@ object BingProviderUserContextOptions {
     userRegion: String = null
   ): BingProviderUserContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (ul != null) __obj.updateDynamic("ul")(ul)
-    if (umv != null) __obj.updateDynamic("umv")(umv)
-    if (ur != null) __obj.updateDynamic("ur")(ur)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
-    if (userLocation != null) __obj.updateDynamic("userLocation")(userLocation)
-    if (userMapView != null) __obj.updateDynamic("userMapView")(userMapView)
-    if (userRegion != null) __obj.updateDynamic("userRegion")(userRegion)
+    if (ul != null) __obj.updateDynamic("ul")(ul.asInstanceOf[js.Any])
+    if (umv != null) __obj.updateDynamic("umv")(umv.asInstanceOf[js.Any])
+    if (ur != null) __obj.updateDynamic("ur")(ur.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
+    if (userLocation != null) __obj.updateDynamic("userLocation")(userLocation.asInstanceOf[js.Any])
+    if (userMapView != null) __obj.updateDynamic("userMapView")(userMapView.asInstanceOf[js.Any])
+    if (userRegion != null) __obj.updateDynamic("userRegion")(userRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[BingProviderUserContextOptions]
   }
 }

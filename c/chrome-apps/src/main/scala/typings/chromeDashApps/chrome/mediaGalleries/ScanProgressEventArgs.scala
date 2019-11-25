@@ -30,7 +30,7 @@ object ScanProgressEventArgs {
     videoCount: Int | Double = null
   ): ScanProgressEventArgs = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (audioCount != null) __obj.updateDynamic("audioCount")(audioCount.asInstanceOf[js.Any])
     if (galleryCount != null) __obj.updateDynamic("galleryCount")(galleryCount.asInstanceOf[js.Any])
     if (imageCount != null) __obj.updateDynamic("imageCount")(imageCount.asInstanceOf[js.Any])

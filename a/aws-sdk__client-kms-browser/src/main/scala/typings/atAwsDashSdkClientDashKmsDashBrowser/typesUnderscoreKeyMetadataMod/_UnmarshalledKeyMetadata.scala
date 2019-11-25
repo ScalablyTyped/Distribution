@@ -51,19 +51,19 @@ object _UnmarshalledKeyMetadata {
     Origin: AWS_KMS | EXTERNAL | String = null,
     ValidTo: Date = null
   ): _UnmarshalledKeyMetadata = {
-    val __obj = js.Dynamic.literal(KeyId = KeyId)
-    if (AWSAccountId != null) __obj.updateDynamic("AWSAccountId")(AWSAccountId)
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (DeletionDate != null) __obj.updateDynamic("DeletionDate")(DeletionDate)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
+    val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
+    if (AWSAccountId != null) __obj.updateDynamic("AWSAccountId")(AWSAccountId.asInstanceOf[js.Any])
+    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (DeletionDate != null) __obj.updateDynamic("DeletionDate")(DeletionDate.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
     if (ExpirationModel != null) __obj.updateDynamic("ExpirationModel")(ExpirationModel.asInstanceOf[js.Any])
     if (KeyManager != null) __obj.updateDynamic("KeyManager")(KeyManager.asInstanceOf[js.Any])
     if (KeyState != null) __obj.updateDynamic("KeyState")(KeyState.asInstanceOf[js.Any])
     if (KeyUsage != null) __obj.updateDynamic("KeyUsage")(KeyUsage.asInstanceOf[js.Any])
     if (Origin != null) __obj.updateDynamic("Origin")(Origin.asInstanceOf[js.Any])
-    if (ValidTo != null) __obj.updateDynamic("ValidTo")(ValidTo)
+    if (ValidTo != null) __obj.updateDynamic("ValidTo")(ValidTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledKeyMetadata]
   }
 }

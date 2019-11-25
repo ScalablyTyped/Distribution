@@ -12,7 +12,7 @@ trait ConfirmToastrCustomOptions extends js.Object {
 object ConfirmToastrCustomOptions {
   @scala.inline
   def apply(component: Element): ConfirmToastrCustomOptions = {
-    val __obj = js.Dynamic.literal(component = component)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfirmToastrCustomOptions]
   }

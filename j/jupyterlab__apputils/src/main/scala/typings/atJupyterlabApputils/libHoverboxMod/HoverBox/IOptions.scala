@@ -90,10 +90,10 @@ object IOptions {
     privilege: above | below | forceAbove | forceBelow = null,
     style: CSSStyleDeclaration = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(anchor = anchor, host = host, maxHeight = maxHeight, minHeight = minHeight, node = node)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

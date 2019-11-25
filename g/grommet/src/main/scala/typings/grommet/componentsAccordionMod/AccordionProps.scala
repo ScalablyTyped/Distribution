@@ -36,14 +36,14 @@ object AccordionProps {
     onActive: /* activeIndexes */ js.Array[Double] => Unit = null
   ): AccordionProps = {
     val __obj = js.Dynamic.literal()
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
+    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (onActive != null) __obj.updateDynamic("onActive")(js.Any.fromFunction1(onActive))
     __obj.asInstanceOf[AccordionProps]
   }

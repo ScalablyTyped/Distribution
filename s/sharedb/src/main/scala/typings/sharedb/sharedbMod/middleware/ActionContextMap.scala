@@ -35,7 +35,7 @@ object ActionContextMap {
     reply: ReplyContext,
     submit: SubmitContext
   ): ActionContextMap = {
-    val __obj = js.Dynamic.literal(afterSubmit = afterSubmit, apply = apply, commit = commit, connect = connect, doc = doc, op = op, query = query, readSnapshots = readSnapshots, receive = receive, reply = reply, submit = submit)
+    val __obj = js.Dynamic.literal(afterSubmit = afterSubmit.asInstanceOf[js.Any], apply = apply.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], connect = connect.asInstanceOf[js.Any], doc = doc.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], readSnapshots = readSnapshots.asInstanceOf[js.Any], receive = receive.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActionContextMap]
   }

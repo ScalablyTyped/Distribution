@@ -13,7 +13,7 @@ trait Anon_EndRevision extends js.Object {
 object Anon_EndRevision {
   @scala.inline
   def apply(end: Double, revision: Double, start: Double): Anon_EndRevision = {
-    val __obj = js.Dynamic.literal(end = end, revision = revision, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EndRevision]
   }

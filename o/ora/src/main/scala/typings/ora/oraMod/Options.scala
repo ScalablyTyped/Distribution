@@ -84,16 +84,16 @@ object Options {
     text: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(discardStdin)) __obj.updateDynamic("discardStdin")(discardStdin)
-    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(discardStdin)) __obj.updateDynamic("discardStdin")(discardStdin.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled)
-    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText)
+    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled.asInstanceOf[js.Any])
+    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText.asInstanceOf[js.Any])
     if (spinner != null) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

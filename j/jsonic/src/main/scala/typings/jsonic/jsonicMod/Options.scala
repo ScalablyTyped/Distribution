@@ -23,10 +23,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (maxchars != null) __obj.updateDynamic("maxchars")(maxchars.asInstanceOf[js.Any])
     if (maxitems != null) __obj.updateDynamic("maxitems")(maxitems.asInstanceOf[js.Any])
-    if (omit != null) __obj.updateDynamic("omit")(omit)
+    if (omit != null) __obj.updateDynamic("omit")(omit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

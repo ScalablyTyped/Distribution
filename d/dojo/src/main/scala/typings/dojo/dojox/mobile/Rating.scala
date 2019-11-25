@@ -1,8 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.alt
 import typings.dojo.dojoStrings.numStars
@@ -80,14 +78,44 @@ class Rating () extends _WidgetBase {
   @JSName("set")
   def set_value(property: value, value: Double): Unit = js.native
   @JSName("watch")
-  def watch_alt(property: alt, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_alt(
+    property: alt,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_image(property: typings.dojo.dojoStrings.image, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_image(
+    property: typings.dojo.dojoStrings.image,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_numStars(property: numStars, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_numStars(
+    property: numStars,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_value(
+    property: value,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

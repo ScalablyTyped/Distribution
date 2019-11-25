@@ -18,9 +18,9 @@ object CacheQueryOptions {
     ignoreVary: js.UndefOr[scala.Boolean] = js.undefined
   ): CacheQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreMethod)) __obj.updateDynamic("ignoreMethod")(ignoreMethod)
-    if (!js.isUndefined(ignoreSearch)) __obj.updateDynamic("ignoreSearch")(ignoreSearch)
-    if (!js.isUndefined(ignoreVary)) __obj.updateDynamic("ignoreVary")(ignoreVary)
+    if (!js.isUndefined(ignoreMethod)) __obj.updateDynamic("ignoreMethod")(ignoreMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSearch)) __obj.updateDynamic("ignoreSearch")(ignoreSearch.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreVary)) __obj.updateDynamic("ignoreVary")(ignoreVary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheQueryOptions]
   }
 }

@@ -15,8 +15,8 @@ trait Case extends js.Object {
 object Case {
   @scala.inline
   def apply(file: String, standard: String, success: Boolean, `type`: String, values: CaseValues): Case = {
-    val __obj = js.Dynamic.literal(file = file, standard = standard, success = success, values = values)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Case]
   }
 }

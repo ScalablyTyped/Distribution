@@ -60,7 +60,7 @@ object NodeArgs {
     outputTensors: js.Array[SymbolicTensor],
     tensorIndices: js.Array[Double]
   ): NodeArgs = {
-    val __obj = js.Dynamic.literal(inboundLayers = inboundLayers, inputMasks = inputMasks, inputShapes = inputShapes.asInstanceOf[js.Any], inputTensors = inputTensors, nodeIndices = nodeIndices, outboundLayer = outboundLayer, outputMasks = outputMasks, outputShapes = outputShapes.asInstanceOf[js.Any], outputTensors = outputTensors, tensorIndices = tensorIndices)
+    val __obj = js.Dynamic.literal(inboundLayers = inboundLayers.asInstanceOf[js.Any], inputMasks = inputMasks.asInstanceOf[js.Any], inputShapes = inputShapes.asInstanceOf[js.Any], inputTensors = inputTensors.asInstanceOf[js.Any], nodeIndices = nodeIndices.asInstanceOf[js.Any], outboundLayer = outboundLayer.asInstanceOf[js.Any], outputMasks = outputMasks.asInstanceOf[js.Any], outputShapes = outputShapes.asInstanceOf[js.Any], outputTensors = outputTensors.asInstanceOf[js.Any], tensorIndices = tensorIndices.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeArgs]
   }

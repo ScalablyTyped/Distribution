@@ -33,11 +33,11 @@ object Anon_Groups {
     urlBlocks: js.Array[Anon_Header] = null
   ): Anon_Groups = {
     val __obj = js.Dynamic.literal()
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (localizedRuleName != null) __obj.updateDynamic("localizedRuleName")(localizedRuleName)
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (localizedRuleName != null) __obj.updateDynamic("localizedRuleName")(localizedRuleName.asInstanceOf[js.Any])
     if (ruleImpact != null) __obj.updateDynamic("ruleImpact")(ruleImpact.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (urlBlocks != null) __obj.updateDynamic("urlBlocks")(urlBlocks)
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (urlBlocks != null) __obj.updateDynamic("urlBlocks")(urlBlocks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Groups]
   }
 }

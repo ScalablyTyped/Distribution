@@ -36,8 +36,8 @@ object Voice {
     url: String,
     customization: VoiceModel = null
   ): Voice = {
-    val __obj = js.Dynamic.literal(customizable = customizable, description = description, gender = gender, language = language, name = name, supported_features = supported_features, url = url)
-    if (customization != null) __obj.updateDynamic("customization")(customization)
+    val __obj = js.Dynamic.literal(customizable = customizable.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], supported_features = supported_features.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (customization != null) __obj.updateDynamic("customization")(customization.asInstanceOf[js.Any])
     __obj.asInstanceOf[Voice]
   }
 }

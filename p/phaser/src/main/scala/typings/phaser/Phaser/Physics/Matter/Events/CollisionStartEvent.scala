@@ -26,7 +26,7 @@ trait CollisionStartEvent extends js.Object {
 object CollisionStartEvent {
   @scala.inline
   def apply(name: String, pairs: js.Array[_], source: js.Any, timestamp: Double): CollisionStartEvent = {
-    val __obj = js.Dynamic.literal(name = name, pairs = pairs, source = source, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pairs = pairs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollisionStartEvent]
   }

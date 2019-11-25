@@ -31,7 +31,7 @@ object TestActionResultModel {
     stepIdentifier: String,
     url: String
   ): TestActionResultModel = {
-    val __obj = js.Dynamic.literal(actionPath = actionPath, comment = comment, completedDate = completedDate, durationInMs = durationInMs, errorMessage = errorMessage, iterationId = iterationId, outcome = outcome, sharedStepModel = sharedStepModel, startedDate = startedDate, stepIdentifier = stepIdentifier, url = url)
+    val __obj = js.Dynamic.literal(actionPath = actionPath.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], completedDate = completedDate.asInstanceOf[js.Any], durationInMs = durationInMs.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], iterationId = iterationId.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], sharedStepModel = sharedStepModel.asInstanceOf[js.Any], startedDate = startedDate.asInstanceOf[js.Any], stepIdentifier = stepIdentifier.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestActionResultModel]
   }

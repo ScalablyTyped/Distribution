@@ -54,7 +54,7 @@ object Envelope {
     time: String,
     ver: Double
   ): Envelope = {
-    val __obj = js.Dynamic.literal(data = data, iKey = iKey, name = name, sampleRate = sampleRate, seq = seq, tags = tags, time = time, ver = ver)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], iKey = iKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], ver = ver.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Envelope]
   }

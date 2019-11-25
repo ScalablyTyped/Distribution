@@ -57,20 +57,20 @@ object IToolTip {
     triggerElement: HTMLElement = null
   ): IToolTip = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ITip)
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (ITip != null) js.Dynamic.global.Object.assign(__obj, ITip)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (anchorOffset != null) __obj.updateDynamic("anchorOffset")(anchorOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(anchorToTarget)) __obj.updateDynamic("anchorToTarget")(anchorToTarget)
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
-    if (delegate != null) __obj.updateDynamic("delegate")(delegate)
+    if (!js.isUndefined(anchorToTarget)) __obj.updateDynamic("anchorToTarget")(anchorToTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
+    if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     if (dismissDelay != null) __obj.updateDynamic("dismissDelay")(dismissDelay.asInstanceOf[js.Any])
     if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
-    if (mouseOffset != null) __obj.updateDynamic("mouseOffset")(mouseOffset)
+    if (mouseOffset != null) __obj.updateDynamic("mouseOffset")(mouseOffset.asInstanceOf[js.Any])
     if (setTarget != null) __obj.updateDynamic("setTarget")(js.Any.fromFunction1(setTarget))
     if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (!js.isUndefined(trackMouse)) __obj.updateDynamic("trackMouse")(trackMouse)
-    if (triggerElement != null) __obj.updateDynamic("triggerElement")(triggerElement)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackMouse)) __obj.updateDynamic("trackMouse")(trackMouse.asInstanceOf[js.Any])
+    if (triggerElement != null) __obj.updateDynamic("triggerElement")(triggerElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToolTip]
   }
 }

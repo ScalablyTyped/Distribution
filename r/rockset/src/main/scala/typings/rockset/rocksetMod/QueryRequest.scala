@@ -13,7 +13,7 @@ object QueryRequest {
   @scala.inline
   def apply(sql: QueryRequestSql = null): QueryRequest = {
     val __obj = js.Dynamic.literal()
-    if (sql != null) __obj.updateDynamic("sql")(sql)
+    if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRequest]
   }
 }

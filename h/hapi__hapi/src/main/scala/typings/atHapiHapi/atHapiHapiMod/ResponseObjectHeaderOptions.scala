@@ -20,10 +20,10 @@ object ResponseObjectHeaderOptions {
     separator: String = null
   ): ResponseObjectHeaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append)
-    if (!js.isUndefined(duplicate)) __obj.updateDynamic("duplicate")(duplicate)
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
+    if (!js.isUndefined(duplicate)) __obj.updateDynamic("duplicate")(duplicate.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObjectHeaderOptions]
   }
 }

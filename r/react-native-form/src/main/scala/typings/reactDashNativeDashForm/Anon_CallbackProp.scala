@@ -13,7 +13,7 @@ trait Anon_CallbackProp extends js.Object {
 object Anon_CallbackProp {
   @scala.inline
   def apply(callbackProp: String, controlled: Boolean, valueProp: String): Anon_CallbackProp = {
-    val __obj = js.Dynamic.literal(callbackProp = callbackProp, controlled = controlled, valueProp = valueProp)
+    val __obj = js.Dynamic.literal(callbackProp = callbackProp.asInstanceOf[js.Any], controlled = controlled.asInstanceOf[js.Any], valueProp = valueProp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CallbackProp]
   }

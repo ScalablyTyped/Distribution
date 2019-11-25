@@ -14,9 +14,9 @@ object EditorToolItem {
   @scala.inline
   def apply(context: String = null, text: String = null, value: String = null): EditorToolItem = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorToolItem]
   }
 }

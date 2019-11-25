@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait MemoryOperation extends js.Object
 
+object MemoryOperation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def execute: typings.fridaDashGum.fridaDashGumStrings.execute = this.cast("execute")
+  @scala.inline
+  def read: typings.fridaDashGum.fridaDashGumStrings.read = this.cast("read")
+  @scala.inline
+  def write: typings.fridaDashGum.fridaDashGumStrings.write = this.cast("write")
+}
+

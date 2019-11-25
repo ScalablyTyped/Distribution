@@ -62,7 +62,7 @@ object TQueries {
     template: (TView, TNode) => Unit,
     track: TQuery => Unit
   ): TQueries = {
-    val __obj = js.Dynamic.literal(elementEnd = js.Any.fromFunction1(elementEnd), elementStart = js.Any.fromFunction2(elementStart), embeddedTView = js.Any.fromFunction1(embeddedTView), getByIndex = js.Any.fromFunction1(getByIndex), length = length, template = js.Any.fromFunction2(template), track = js.Any.fromFunction1(track))
+    val __obj = js.Dynamic.literal(elementEnd = js.Any.fromFunction1(elementEnd), elementStart = js.Any.fromFunction2(elementStart), embeddedTView = js.Any.fromFunction1(embeddedTView), getByIndex = js.Any.fromFunction1(getByIndex), length = length.asInstanceOf[js.Any], template = js.Any.fromFunction2(template), track = js.Any.fromFunction1(track))
   
     __obj.asInstanceOf[TQueries]
   }

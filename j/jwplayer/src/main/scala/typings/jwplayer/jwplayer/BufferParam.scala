@@ -17,7 +17,7 @@ trait BufferParam extends js.Object {
 object BufferParam {
   @scala.inline
   def apply(newstate: String, oldstate: String, reason: loading | complete | stalled | error): BufferParam = {
-    val __obj = js.Dynamic.literal(newstate = newstate, oldstate = oldstate, reason = reason.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(newstate = newstate.asInstanceOf[js.Any], oldstate = oldstate.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BufferParam]
   }

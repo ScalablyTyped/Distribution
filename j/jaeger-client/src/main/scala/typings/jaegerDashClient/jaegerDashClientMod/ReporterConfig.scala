@@ -26,13 +26,13 @@ object ReporterConfig {
     username: String = null
   ): ReporterConfig = {
     val __obj = js.Dynamic.literal()
-    if (agentHost != null) __obj.updateDynamic("agentHost")(agentHost)
+    if (agentHost != null) __obj.updateDynamic("agentHost")(agentHost.asInstanceOf[js.Any])
     if (agentPort != null) __obj.updateDynamic("agentPort")(agentPort.asInstanceOf[js.Any])
-    if (collectorEndpoint != null) __obj.updateDynamic("collectorEndpoint")(collectorEndpoint)
+    if (collectorEndpoint != null) __obj.updateDynamic("collectorEndpoint")(collectorEndpoint.asInstanceOf[js.Any])
     if (flushIntervalMs != null) __obj.updateDynamic("flushIntervalMs")(flushIntervalMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(logSpans)) __obj.updateDynamic("logSpans")(logSpans)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (!js.isUndefined(logSpans)) __obj.updateDynamic("logSpans")(logSpans.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReporterConfig]
   }
 }

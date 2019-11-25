@@ -19,8 +19,8 @@ object GenerateOptions {
     modulusLength: Int | Double = null,
     publicExponent: Int | Double = null
   ): GenerateOptions = {
-    val __obj = js.Dynamic.literal(format = format)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (modulusLength != null) __obj.updateDynamic("modulusLength")(modulusLength.asInstanceOf[js.Any])
     if (publicExponent != null) __obj.updateDynamic("publicExponent")(publicExponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOptions]

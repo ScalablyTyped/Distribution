@@ -86,18 +86,18 @@ object OrgsUpdateParams {
     members_can_create_repositories: js.UndefOr[Boolean] = js.undefined,
     name: String = null
   ): OrgsUpdateParams = {
-    val __obj = js.Dynamic.literal(org = org)
-    if (billing_email != null) __obj.updateDynamic("billing_email")(billing_email)
-    if (company != null) __obj.updateDynamic("company")(company)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any])
+    if (billing_email != null) __obj.updateDynamic("billing_email")(billing_email.asInstanceOf[js.Any])
+    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
     if (default_repository_permission != null) __obj.updateDynamic("default_repository_permission")(default_repository_permission.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(has_organization_projects)) __obj.updateDynamic("has_organization_projects")(has_organization_projects)
-    if (!js.isUndefined(has_repository_projects)) __obj.updateDynamic("has_repository_projects")(has_repository_projects)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_organization_projects)) __obj.updateDynamic("has_organization_projects")(has_organization_projects.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_repository_projects)) __obj.updateDynamic("has_repository_projects")(has_repository_projects.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (members_allowed_repository_creation_type != null) __obj.updateDynamic("members_allowed_repository_creation_type")(members_allowed_repository_creation_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(members_can_create_repositories)) __obj.updateDynamic("members_can_create_repositories")(members_can_create_repositories)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(members_can_create_repositories)) __obj.updateDynamic("members_can_create_repositories")(members_can_create_repositories.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsUpdateParams]
   }
 }

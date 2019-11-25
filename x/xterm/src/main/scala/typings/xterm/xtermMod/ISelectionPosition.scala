@@ -29,7 +29,7 @@ trait ISelectionPosition extends js.Object {
 object ISelectionPosition {
   @scala.inline
   def apply(endColumn: Double, endRow: Double, startColumn: Double, startRow: Double): ISelectionPosition = {
-    val __obj = js.Dynamic.literal(endColumn = endColumn, endRow = endRow, startColumn = startColumn, startRow = startRow)
+    val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], endRow = endRow.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startRow = startRow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISelectionPosition]
   }

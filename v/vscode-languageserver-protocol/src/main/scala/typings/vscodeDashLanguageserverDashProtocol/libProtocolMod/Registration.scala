@@ -23,8 +23,8 @@ trait Registration extends js.Object {
 object Registration {
   @scala.inline
   def apply(id: String, method: String, registerOptions: js.Any = null): Registration = {
-    val __obj = js.Dynamic.literal(id = id, method = method)
-    if (registerOptions != null) __obj.updateDynamic("registerOptions")(registerOptions)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    if (registerOptions != null) __obj.updateDynamic("registerOptions")(registerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Registration]
   }
 }

@@ -36,7 +36,7 @@ object StringConfigOptions {
     pattern: String | RegExp = null
   ): StringConfigOptions[K] = {
     val __obj = js.Dynamic.literal()
-    if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues)
+    if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])

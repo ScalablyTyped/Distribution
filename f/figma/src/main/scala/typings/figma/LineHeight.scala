@@ -7,17 +7,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LineHeight extends js.Object {
-  val unit: js.UndefOr[AUTO | PERCENT | PIXELS] = js.undefined
-  val value: js.UndefOr[Double] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.figma.Anon_PERCENT
+  - typings.figma.Anon_AUTO
+*/
+trait LineHeight extends js.Object
 
 object LineHeight {
   @scala.inline
-  def apply(unit: PIXELS | PERCENT = null, value: Int | Double = null): LineHeight = {
-    val __obj = js.Dynamic.literal()
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+  def Anon_PERCENT(unit: PIXELS | PERCENT, value: Double): LineHeight = {
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[LineHeight]
+  }
+  @scala.inline
+  def Anon_AUTO(unit: AUTO): LineHeight = {
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[LineHeight]
   }
 }

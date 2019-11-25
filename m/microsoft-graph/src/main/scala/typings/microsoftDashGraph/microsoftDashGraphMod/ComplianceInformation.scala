@@ -15,8 +15,8 @@ object ComplianceInformation {
   @scala.inline
   def apply(certificationControls: js.Array[CertificationControl] = null, certificationName: String = null): ComplianceInformation = {
     val __obj = js.Dynamic.literal()
-    if (certificationControls != null) __obj.updateDynamic("certificationControls")(certificationControls)
-    if (certificationName != null) __obj.updateDynamic("certificationName")(certificationName)
+    if (certificationControls != null) __obj.updateDynamic("certificationControls")(certificationControls.asInstanceOf[js.Any])
+    if (certificationName != null) __obj.updateDynamic("certificationName")(certificationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceInformation]
   }
 }

@@ -13,7 +13,7 @@ trait IDeploymentResult extends js.Object {
 object IDeploymentResult {
   @scala.inline
   def apply(activityId: String, errorText: String, extendedErrorCode: Double): IDeploymentResult = {
-    val __obj = js.Dynamic.literal(activityId = activityId, errorText = errorText, extendedErrorCode = extendedErrorCode)
+    val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], extendedErrorCode = extendedErrorCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDeploymentResult]
   }

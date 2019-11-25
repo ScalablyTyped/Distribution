@@ -36,8 +36,8 @@ object Anon_Element {
     stop: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit = null
   ): Anon_Element = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (handles != null) __obj.updateDynamic("handles")(handles)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
     if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction3(resize))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction3(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction3(stop))

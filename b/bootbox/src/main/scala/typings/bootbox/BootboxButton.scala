@@ -15,8 +15,8 @@ object BootboxButton {
   def apply(callback: () => _ = null, className: String = null, label: String = null): BootboxButton = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxButton]
   }
 }

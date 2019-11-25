@@ -17,9 +17,9 @@ trait PaymentPortalPost extends js.Object {
 object PaymentPortalPost {
   @scala.inline
   def apply(Method: POST, PostData: String = null, Url: String = null): PaymentPortalPost = {
-    val __obj = js.Dynamic.literal(Method = Method)
-    if (PostData != null) __obj.updateDynamic("PostData")(PostData)
-    if (Url != null) __obj.updateDynamic("Url")(Url)
+    val __obj = js.Dynamic.literal(Method = Method.asInstanceOf[js.Any])
+    if (PostData != null) __obj.updateDynamic("PostData")(PostData.asInstanceOf[js.Any])
+    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentPortalPost]
   }
 }

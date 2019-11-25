@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reserved-words"
-version := "0.1-dt-20190312Z-5f6cc9"
+version := "0.1-dt-20190312Z-aa6336"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

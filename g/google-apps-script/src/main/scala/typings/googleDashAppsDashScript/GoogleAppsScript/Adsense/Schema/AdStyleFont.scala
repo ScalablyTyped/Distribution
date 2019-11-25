@@ -13,8 +13,8 @@ object AdStyleFont {
   @scala.inline
   def apply(family: String = null, size: String = null): AdStyleFont = {
     val __obj = js.Dynamic.literal()
-    if (family != null) __obj.updateDynamic("family")(family)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdStyleFont]
   }
 }

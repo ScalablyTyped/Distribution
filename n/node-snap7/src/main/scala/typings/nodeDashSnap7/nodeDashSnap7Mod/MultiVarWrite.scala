@@ -24,7 +24,7 @@ object MultiVarWrite {
     WordLen: WordLen,
     DBNumber: Int | Double = null
   ): MultiVarWrite = {
-    val __obj = js.Dynamic.literal(Amount = Amount, Area = Area, Data = Data, Start = Start, WordLen = WordLen)
+    val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Area = Area.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any], WordLen = WordLen.asInstanceOf[js.Any])
     if (DBNumber != null) __obj.updateDynamic("DBNumber")(DBNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiVarWrite]
   }

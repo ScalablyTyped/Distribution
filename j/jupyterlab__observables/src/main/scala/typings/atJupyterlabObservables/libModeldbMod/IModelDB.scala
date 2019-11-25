@@ -138,8 +138,8 @@ object IModelDB {
     view: String => IModelDB,
     collaborators: ICollaboratorMap = null
   ): IModelDB = {
-    val __obj = js.Dynamic.literal(basePath = basePath, connected = connected, createList = js.Any.fromFunction1(createList), createMap = js.Any.fromFunction1(createMap), createString = js.Any.fromFunction1(createString), createValue = js.Any.fromFunction1(createValue), dispose = js.Any.fromFunction0(dispose), get = js.Any.fromFunction1(get), getValue = js.Any.fromFunction1(getValue), has = js.Any.fromFunction1(has), isCollaborative = isCollaborative, isDisposed = isDisposed, isPrepopulated = isPrepopulated, setValue = js.Any.fromFunction2(setValue), view = js.Any.fromFunction1(view))
-    if (collaborators != null) __obj.updateDynamic("collaborators")(collaborators)
+    val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any], connected = connected.asInstanceOf[js.Any], createList = js.Any.fromFunction1(createList), createMap = js.Any.fromFunction1(createMap), createString = js.Any.fromFunction1(createString), createValue = js.Any.fromFunction1(createValue), dispose = js.Any.fromFunction0(dispose), get = js.Any.fromFunction1(get), getValue = js.Any.fromFunction1(getValue), has = js.Any.fromFunction1(has), isCollaborative = isCollaborative.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], isPrepopulated = isPrepopulated.asInstanceOf[js.Any], setValue = js.Any.fromFunction2(setValue), view = js.Any.fromFunction1(view))
+    if (collaborators != null) __obj.updateDynamic("collaborators")(collaborators.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelDB]
   }
 }

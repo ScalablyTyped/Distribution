@@ -15,7 +15,7 @@ trait EntityMentionCollection extends js.Object {
 object EntityMentionCollection {
   @scala.inline
   def apply(examples: js.Array[EntityMention], pagination: Pagination): EntityMentionCollection = {
-    val __obj = js.Dynamic.literal(examples = examples, pagination = pagination)
+    val __obj = js.Dynamic.literal(examples = examples.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EntityMentionCollection]
   }

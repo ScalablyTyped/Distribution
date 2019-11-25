@@ -23,10 +23,10 @@ object AddForeignKeyConstraintOptions {
     name: String = null,
     references: Anon_Field = null
   ): AddForeignKeyConstraintOptions = {
-    val __obj = js.Dynamic.literal(onDelete = onDelete, onUpdate = onUpdate)
-    __obj.updateDynamic("type")(`type`)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (references != null) __obj.updateDynamic("references")(references)
+    val __obj = js.Dynamic.literal(onDelete = onDelete.asInstanceOf[js.Any], onUpdate = onUpdate.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddForeignKeyConstraintOptions]
   }
 }

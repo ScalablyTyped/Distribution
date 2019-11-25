@@ -29,7 +29,7 @@ object Anon_PageList {
     sizePerPageDropDown: SizePerPageDropDown,
     totalText: String | ReactElement
   ): Anon_PageList = {
-    val __obj = js.Dynamic.literal(pageList = pageList, sizePerPageDropDown = sizePerPageDropDown, totalText = totalText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pageList = pageList.asInstanceOf[js.Any], sizePerPageDropDown = sizePerPageDropDown.asInstanceOf[js.Any], totalText = totalText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PageList]
   }

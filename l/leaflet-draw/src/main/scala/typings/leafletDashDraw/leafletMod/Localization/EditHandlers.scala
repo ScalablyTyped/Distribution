@@ -14,7 +14,7 @@ trait EditHandlers extends js.Object {
 object EditHandlers {
   @scala.inline
   def apply(edit: Anon_TooltipAnonSubtextText, remove: Anon_TooltipAnonText): EditHandlers = {
-    val __obj = js.Dynamic.literal(edit = edit, remove = remove)
+    val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EditHandlers]
   }

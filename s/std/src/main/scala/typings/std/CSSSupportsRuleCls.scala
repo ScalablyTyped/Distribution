@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("CSSSupportsRule")
 @js.native
-class CSSSupportsRuleCls () extends CSSSupportsRule {
+class CSSSupportsRuleCls () extends CSSConditionRule {
   /* CompleteClass */
   override val CHARSET_RULE: Double = js.native
   /* CompleteClass */

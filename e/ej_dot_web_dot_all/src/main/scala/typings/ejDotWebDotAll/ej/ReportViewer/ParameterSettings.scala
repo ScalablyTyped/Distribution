@@ -39,11 +39,11 @@ object ParameterSettings {
     popupWidth: String = null
   ): ParameterSettings = {
     val __obj = js.Dynamic.literal()
-    if (delimiterChar != null) __obj.updateDynamic("delimiterChar")(delimiterChar)
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth)
-    if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth)
-    if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight)
-    if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth)
+    if (delimiterChar != null) __obj.updateDynamic("delimiterChar")(delimiterChar.asInstanceOf[js.Any])
+    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
+    if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth.asInstanceOf[js.Any])
+    if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight.asInstanceOf[js.Any])
+    if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterSettings]
   }
 }

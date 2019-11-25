@@ -22,11 +22,11 @@ object MediaStream {
     sourceId: String = null
   ): MediaStream = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
-    if (!js.isUndefined(serverMuted)) __obj.updateDynamic("serverMuted")(serverMuted)
-    if (sourceId != null) __obj.updateDynamic("sourceId")(sourceId)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverMuted)) __obj.updateDynamic("serverMuted")(serverMuted.asInstanceOf[js.Any])
+    if (sourceId != null) __obj.updateDynamic("sourceId")(sourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStream]
   }
 }

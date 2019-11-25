@@ -12,7 +12,7 @@ trait ICommandBindKey extends js.Object {
 object ICommandBindKey {
   @scala.inline
   def apply(mac: String, win: String): ICommandBindKey = {
-    val __obj = js.Dynamic.literal(mac = mac, win = win)
+    val __obj = js.Dynamic.literal(mac = mac.asInstanceOf[js.Any], win = win.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICommandBindKey]
   }

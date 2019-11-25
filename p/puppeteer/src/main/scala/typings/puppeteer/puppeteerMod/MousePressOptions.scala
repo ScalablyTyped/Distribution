@@ -21,7 +21,7 @@ object MousePressOptions {
   @scala.inline
   def apply(button: MouseButtons = null, clickCount: Int | Double = null): MousePressOptions = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (clickCount != null) __obj.updateDynamic("clickCount")(clickCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[MousePressOptions]
   }

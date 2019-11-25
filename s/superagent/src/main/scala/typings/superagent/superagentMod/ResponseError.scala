@@ -23,8 +23,8 @@ object ResponseError {
     text: String,
     stack: String = null
   ): ResponseError = {
-    val __obj = js.Dynamic.literal(message = message, method = method, name = name, path = path, status = status, text = text)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseError]
   }
 }

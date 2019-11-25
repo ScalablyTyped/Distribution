@@ -39,15 +39,15 @@ object Segment {
     updated: String = null
   ): Segment = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (definition != null) __obj.updateDynamic("definition")(definition)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Segment]
   }
 }

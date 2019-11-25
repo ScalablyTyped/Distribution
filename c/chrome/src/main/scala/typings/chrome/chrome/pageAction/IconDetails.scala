@@ -34,10 +34,10 @@ object IconDetails {
     imageData: ImageData | NumberDictionary[ImageData] = null,
     path: js.Any = null
   ): IconDetails = {
-    val __obj = js.Dynamic.literal(tabId = tabId)
+    val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
     if (iconIndex != null) __obj.updateDynamic("iconIndex")(iconIndex.asInstanceOf[js.Any])
     if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconDetails]
   }
 }

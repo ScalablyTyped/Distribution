@@ -13,7 +13,7 @@ trait Anon_Id extends js.Object {
 object Anon_Id {
   @scala.inline
   def apply(id: String, message: String, url: String): Anon_Id = {
-    val __obj = js.Dynamic.literal(id = id, message = message, url = url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Id]
   }

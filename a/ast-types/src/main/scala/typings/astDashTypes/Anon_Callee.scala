@@ -22,10 +22,10 @@ object Anon_Callee {
     loc: SourceLocationKind = null,
     `object`: ExpressionKind = null
   ): Anon_Callee = {
-    val __obj = js.Dynamic.literal(callee = callee)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Callee]
   }
 }

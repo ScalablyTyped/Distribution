@@ -12,7 +12,7 @@ trait StateMeta[TContext, TEvent /* <: EventObject */] extends js.Object {
 object StateMeta {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](state: State[TContext, TEvent]): StateMeta[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(state = state)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StateMeta[TContext, TEvent]]
   }

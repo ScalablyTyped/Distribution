@@ -87,13 +87,13 @@ object dotDensityCreateRendererParams {
     legendOptions: dotDensityCreateRendererParamsLegendOptions = null,
     outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   ): dotDensityCreateRendererParams = {
-    val __obj = js.Dynamic.literal(attributes = attributes, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotBlendingEnabled)) __obj.updateDynamic("dotBlendingEnabled")(dotBlendingEnabled)
-    if (dotDensityScheme != null) __obj.updateDynamic("dotDensityScheme")(dotDensityScheme)
-    if (!js.isUndefined(dotValueOptimizationEnabled)) __obj.updateDynamic("dotValueOptimizationEnabled")(dotValueOptimizationEnabled)
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled)
+    if (!js.isUndefined(dotBlendingEnabled)) __obj.updateDynamic("dotBlendingEnabled")(dotBlendingEnabled.asInstanceOf[js.Any])
+    if (dotDensityScheme != null) __obj.updateDynamic("dotDensityScheme")(dotDensityScheme.asInstanceOf[js.Any])
+    if (!js.isUndefined(dotValueOptimizationEnabled)) __obj.updateDynamic("dotValueOptimizationEnabled")(dotValueOptimizationEnabled.asInstanceOf[js.Any])
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[dotDensityCreateRendererParams]
   }
 }

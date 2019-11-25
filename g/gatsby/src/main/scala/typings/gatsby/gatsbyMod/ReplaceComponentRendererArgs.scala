@@ -19,7 +19,7 @@ object ReplaceComponentRendererArgs {
     loader: js.Object,
     props: Anon_
   ): ReplaceComponentRendererArgs = {
-    val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname, getResourcesForPathname = getResourcesForPathname, getResourcesForPathnameSync = getResourcesForPathnameSync, loader = loader, props = props)
+    val __obj = js.Dynamic.literal(getResourceURLsForPathname = getResourceURLsForPathname.asInstanceOf[js.Any], getResourcesForPathname = getResourcesForPathname.asInstanceOf[js.Any], getResourcesForPathnameSync = getResourcesForPathnameSync.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReplaceComponentRendererArgs]
   }

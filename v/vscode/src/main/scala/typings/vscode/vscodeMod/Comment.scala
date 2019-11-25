@@ -57,10 +57,10 @@ object Comment {
     label: String = null,
     reactions: js.Array[CommentReaction] = null
   ): Comment = {
-    val __obj = js.Dynamic.literal(author = author, body = body.asInstanceOf[js.Any], mode = mode)
-    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (reactions != null) __obj.updateDynamic("reactions")(reactions)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
+    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (reactions != null) __obj.updateDynamic("reactions")(reactions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

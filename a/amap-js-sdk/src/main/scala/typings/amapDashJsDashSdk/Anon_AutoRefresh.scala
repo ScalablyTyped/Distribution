@@ -26,13 +26,13 @@ object Anon_AutoRefresh {
     zIndex: Int | Double = null,
     zooms: js.Array[Double] = null
   ): Anon_AutoRefresh = {
-    val __obj = js.Dynamic.literal(map = map)
-    if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh)
-    if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoRefresh]
   }
 }

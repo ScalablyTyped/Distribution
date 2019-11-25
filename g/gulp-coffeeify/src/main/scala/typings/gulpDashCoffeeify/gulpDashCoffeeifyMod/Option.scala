@@ -21,9 +21,9 @@ object Option {
   @scala.inline
   def apply(aliases: Aliases = null, options: Anon_Debug = null, transforms: Transforms = null): Option = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

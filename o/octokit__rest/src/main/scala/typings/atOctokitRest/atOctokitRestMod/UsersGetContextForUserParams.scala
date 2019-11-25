@@ -27,8 +27,8 @@ object UsersGetContextForUserParams {
     subject_id: String = null,
     subject_type: organization | repository | issue | pull_request = null
   ): UsersGetContextForUserParams = {
-    val __obj = js.Dynamic.literal(username = username)
-    if (subject_id != null) __obj.updateDynamic("subject_id")(subject_id)
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
+    if (subject_id != null) __obj.updateDynamic("subject_id")(subject_id.asInstanceOf[js.Any])
     if (subject_type != null) __obj.updateDynamic("subject_type")(subject_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersGetContextForUserParams]
   }

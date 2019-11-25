@@ -22,7 +22,7 @@ object Config {
     viewModel: ViewModelFunction | ViewModelSharedInstance | ViewModelFactoryFunction | AMDModule = null
   ): Config = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous)
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }

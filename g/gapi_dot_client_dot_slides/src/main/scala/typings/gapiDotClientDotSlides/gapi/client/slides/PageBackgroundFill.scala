@@ -28,9 +28,9 @@ object PageBackgroundFill {
     stretchedPictureFill: StretchedPictureFill = null
   ): PageBackgroundFill = {
     val __obj = js.Dynamic.literal()
-    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState)
-    if (solidFill != null) __obj.updateDynamic("solidFill")(solidFill)
-    if (stretchedPictureFill != null) __obj.updateDynamic("stretchedPictureFill")(stretchedPictureFill)
+    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState.asInstanceOf[js.Any])
+    if (solidFill != null) __obj.updateDynamic("solidFill")(solidFill.asInstanceOf[js.Any])
+    if (stretchedPictureFill != null) __obj.updateDynamic("stretchedPictureFill")(stretchedPictureFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageBackgroundFill]
   }
 }

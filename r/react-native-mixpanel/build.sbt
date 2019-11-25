@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-mixpanel"
-version := "0.1-dt-20190717Z-1fe216"
+version := "0.1-dt-20190717Z-06ac1d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

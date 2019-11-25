@@ -12,7 +12,7 @@ trait Anon_Gravity extends js.Object {
 object Anon_Gravity {
   @scala.inline
   def apply(gravity: js.Array[Number]): Anon_Gravity = {
-    val __obj = js.Dynamic.literal(gravity = gravity)
+    val __obj = js.Dynamic.literal(gravity = gravity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Gravity]
   }

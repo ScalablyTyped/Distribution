@@ -32,12 +32,12 @@ object IServerOptions {
     verifyClient: VerifyClientCallbackAsync | VerifyClientCallbackSync = null
   ): IServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clientTracking)) __obj.updateDynamic("clientTracking")(clientTracking)
-    if (!js.isUndefined(disableHixie)) __obj.updateDynamic("disableHixie")(disableHixie)
-    if (handleProtocols != null) __obj.updateDynamic("handleProtocols")(handleProtocols)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(noServer)) __obj.updateDynamic("noServer")(noServer)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(clientTracking)) __obj.updateDynamic("clientTracking")(clientTracking.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHixie)) __obj.updateDynamic("disableHixie")(disableHixie.asInstanceOf[js.Any])
+    if (handleProtocols != null) __obj.updateDynamic("handleProtocols")(handleProtocols.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(noServer)) __obj.updateDynamic("noServer")(noServer.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])

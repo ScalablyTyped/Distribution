@@ -43,13 +43,13 @@ object OauthAuthorizationsUpdateAuthorizationParams {
     remove_scopes: js.Array[String] = null,
     scopes: js.Array[String] = null
   ): OauthAuthorizationsUpdateAuthorizationParams = {
-    val __obj = js.Dynamic.literal(authorization_id = authorization_id)
-    if (add_scopes != null) __obj.updateDynamic("add_scopes")(add_scopes)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (note_url != null) __obj.updateDynamic("note_url")(note_url)
-    if (remove_scopes != null) __obj.updateDynamic("remove_scopes")(remove_scopes)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(authorization_id = authorization_id.asInstanceOf[js.Any])
+    if (add_scopes != null) __obj.updateDynamic("add_scopes")(add_scopes.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (note_url != null) __obj.updateDynamic("note_url")(note_url.asInstanceOf[js.Any])
+    if (remove_scopes != null) __obj.updateDynamic("remove_scopes")(remove_scopes.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthorizationsUpdateAuthorizationParams]
   }
 }

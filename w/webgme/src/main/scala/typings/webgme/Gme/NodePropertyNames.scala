@@ -12,7 +12,7 @@ trait NodePropertyNames extends js.Object {
 object NodePropertyNames {
   @scala.inline
   def apply(Attributes: Anon_Name): NodePropertyNames = {
-    val __obj = js.Dynamic.literal(Attributes = Attributes)
+    val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodePropertyNames]
   }

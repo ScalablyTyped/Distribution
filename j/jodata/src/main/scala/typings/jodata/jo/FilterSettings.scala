@@ -21,10 +21,9 @@ object FilterSettings {
     fullReset: () => Unit,
     isSet: () => Boolean,
     loadFromJson: js.Any => Unit,
-    reset: () => Unit,
-    toString: () => String
+    reset: () => Unit
   ): FilterSettings = {
-    val __obj = js.Dynamic.literal(CapturedFilter = CapturedFilter, DefaultFilters = DefaultFilters, Filters = Filters, fullReset = js.Any.fromFunction0(fullReset), isSet = js.Any.fromFunction0(isSet), loadFromJson = js.Any.fromFunction1(loadFromJson), reset = js.Any.fromFunction0(reset), toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(CapturedFilter = CapturedFilter.asInstanceOf[js.Any], DefaultFilters = DefaultFilters.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], fullReset = js.Any.fromFunction0(fullReset), isSet = js.Any.fromFunction0(isSet), loadFromJson = js.Any.fromFunction1(loadFromJson), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[FilterSettings]
   }

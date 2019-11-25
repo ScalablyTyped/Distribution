@@ -18,9 +18,9 @@ object ListPopulationRule {
     listPopulationClauses: js.Array[ListPopulationClause] = null
   ): ListPopulationRule = {
     val __obj = js.Dynamic.literal()
-    if (floodlightActivityId != null) __obj.updateDynamic("floodlightActivityId")(floodlightActivityId)
-    if (floodlightActivityName != null) __obj.updateDynamic("floodlightActivityName")(floodlightActivityName)
-    if (listPopulationClauses != null) __obj.updateDynamic("listPopulationClauses")(listPopulationClauses)
+    if (floodlightActivityId != null) __obj.updateDynamic("floodlightActivityId")(floodlightActivityId.asInstanceOf[js.Any])
+    if (floodlightActivityName != null) __obj.updateDynamic("floodlightActivityName")(floodlightActivityName.asInstanceOf[js.Any])
+    if (listPopulationClauses != null) __obj.updateDynamic("listPopulationClauses")(listPopulationClauses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPopulationRule]
   }
 }

@@ -16,7 +16,7 @@ object AdditionalDocumentation {
   @scala.inline
   def apply(additionalDocumentation: String = null): AdditionalDocumentation = {
     val __obj = js.Dynamic.literal()
-    if (additionalDocumentation != null) __obj.updateDynamic("additionalDocumentation")(additionalDocumentation)
+    if (additionalDocumentation != null) __obj.updateDynamic("additionalDocumentation")(additionalDocumentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalDocumentation]
   }
 }

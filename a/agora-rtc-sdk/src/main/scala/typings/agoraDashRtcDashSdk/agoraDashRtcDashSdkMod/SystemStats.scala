@@ -14,7 +14,7 @@ trait SystemStats extends js.Object {
 object SystemStats {
   @scala.inline
   def apply(BatteryLevel: string): SystemStats = {
-    val __obj = js.Dynamic.literal(BatteryLevel = BatteryLevel)
+    val __obj = js.Dynamic.literal(BatteryLevel = BatteryLevel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SystemStats]
   }

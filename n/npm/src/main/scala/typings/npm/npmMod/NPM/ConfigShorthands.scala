@@ -83,10 +83,10 @@ object ConfigShorthands {
     verbose: js.Array[_],
     y: js.Array[_]
   ): ConfigShorthands = {
-    val __obj = js.Dynamic.literal(B = B, C = C, D = D, E = E, H = H, N = N, O = O, S = S, d = d, dd = dd, ddd = ddd, desc = desc, f = f, g = g, gangsta = gangsta, gangster = gangster, h = h, help = help, l = l, local = local, m = m, n = n, noreg = noreg, p = p, porcelain = porcelain, q = q, quiet = quiet, reg = reg, s = s, silent = silent, v = v, verbose = verbose, y = y)
-    __obj.updateDynamic("?")(`?`)
-    __obj.updateDynamic("no-desc")(`no-desc`)
-    __obj.updateDynamic("no-reg")(`no-reg`)
+    val __obj = js.Dynamic.literal(B = B.asInstanceOf[js.Any], C = C.asInstanceOf[js.Any], D = D.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], H = H.asInstanceOf[js.Any], N = N.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any], S = S.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], ddd = ddd.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], gangsta = gangsta.asInstanceOf[js.Any], gangster = gangster.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], noreg = noreg.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], porcelain = porcelain.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], reg = reg.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("?")(`?`.asInstanceOf[js.Any])
+    __obj.updateDynamic("no-desc")(`no-desc`.asInstanceOf[js.Any])
+    __obj.updateDynamic("no-reg")(`no-reg`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigShorthands]
   }
 }

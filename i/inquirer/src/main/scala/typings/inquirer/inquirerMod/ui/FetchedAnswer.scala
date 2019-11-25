@@ -21,7 +21,7 @@ trait FetchedAnswer extends js.Object {
 object FetchedAnswer {
   @scala.inline
   def apply(answer: js.Any, name: String): FetchedAnswer = {
-    val __obj = js.Dynamic.literal(answer = answer, name = name)
+    val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FetchedAnswer]
   }

@@ -67,7 +67,7 @@ trait Typeofmarked extends js.Object {
     *
     * @param options Hash of options
     */
-  def options(options: MarkedOptions): /* import warning: ImportType.apply Failed type conversion: typeof marked */ js.Any = js.native
+  def options(options: MarkedOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof marked */ js.Any = js.native
   /**
     * Compiles markdown to HTML.
     *
@@ -105,6 +105,6 @@ trait Typeofmarked extends js.Object {
     *
     * @param options Hash of options
     */
-  def setOptions(options: MarkedOptions): /* import warning: ImportType.apply Failed type conversion: typeof marked */ js.Any = js.native
+  def setOptions(options: MarkedOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof marked */ js.Any = js.native
 }
 

@@ -12,8 +12,8 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(allowJre: Boolean, registry: RegArch = null): IOptions = {
-    val __obj = js.Dynamic.literal(allowJre = allowJre)
-    if (registry != null) __obj.updateDynamic("registry")(registry)
+    val __obj = js.Dynamic.literal(allowJre = allowJre.asInstanceOf[js.Any])
+    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

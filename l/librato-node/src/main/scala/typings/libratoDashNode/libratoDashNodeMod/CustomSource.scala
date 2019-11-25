@@ -11,7 +11,7 @@ trait CustomSource extends js.Object {
 object CustomSource {
   @scala.inline
   def apply(source: String): CustomSource = {
-    val __obj = js.Dynamic.literal(source = source)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomSource]
   }

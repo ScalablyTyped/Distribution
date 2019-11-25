@@ -14,7 +14,7 @@ trait BloomrunConfig extends js.Object {
 object BloomrunConfig {
   @scala.inline
   def apply(indexing: insertion | depth, lookupBeforeAdd: Boolean): BloomrunConfig = {
-    val __obj = js.Dynamic.literal(indexing = indexing.asInstanceOf[js.Any], lookupBeforeAdd = lookupBeforeAdd)
+    val __obj = js.Dynamic.literal(indexing = indexing.asInstanceOf[js.Any], lookupBeforeAdd = lookupBeforeAdd.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BloomrunConfig]
   }

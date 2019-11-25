@@ -14,7 +14,7 @@ trait ReaderModuleImport extends js.Object {
 object ReaderModuleImport {
   @scala.inline
   def apply(documentName: String, fragmentName: String, fragmentPropName: String, kind: String): ReaderModuleImport = {
-    val __obj = js.Dynamic.literal(documentName = documentName, fragmentName = fragmentName, fragmentPropName = fragmentPropName, kind = kind)
+    val __obj = js.Dynamic.literal(documentName = documentName.asInstanceOf[js.Any], fragmentName = fragmentName.asInstanceOf[js.Any], fragmentPropName = fragmentPropName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReaderModuleImport]
   }

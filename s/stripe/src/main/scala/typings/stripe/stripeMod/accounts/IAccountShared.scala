@@ -69,14 +69,14 @@ object IAccountShared {
     tos_acceptance: Anon_Date = null
   ): IAccountShared = {
     val __obj = js.Dynamic.literal()
-    if (business_profile != null) __obj.updateDynamic("business_profile")(business_profile)
+    if (business_profile != null) __obj.updateDynamic("business_profile")(business_profile.asInstanceOf[js.Any])
     if (business_type != null) __obj.updateDynamic("business_type")(business_type.asInstanceOf[js.Any])
-    if (default_currency != null) __obj.updateDynamic("default_currency")(default_currency)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (product_description != null) __obj.updateDynamic("product_description")(product_description)
-    if (requested_capabilities != null) __obj.updateDynamic("requested_capabilities")(requested_capabilities)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
-    if (tos_acceptance != null) __obj.updateDynamic("tos_acceptance")(tos_acceptance)
+    if (default_currency != null) __obj.updateDynamic("default_currency")(default_currency.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (product_description != null) __obj.updateDynamic("product_description")(product_description.asInstanceOf[js.Any])
+    if (requested_capabilities != null) __obj.updateDynamic("requested_capabilities")(requested_capabilities.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (tos_acceptance != null) __obj.updateDynamic("tos_acceptance")(tos_acceptance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccountShared]
   }
 }

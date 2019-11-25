@@ -14,7 +14,7 @@ trait OkResponse extends js.Object {
 object OkResponse {
   @scala.inline
   def apply(ok: Boolean): OkResponse = {
-    val __obj = js.Dynamic.literal(ok = ok)
+    val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OkResponse]
   }

@@ -50,12 +50,12 @@ object ApiKeyOptions {
     validity: Int | Double = null
   ): ApiKeyOptions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
-    if (!js.isUndefined(maxHitsPerQuery)) __obj.updateDynamic("maxHitsPerQuery")(maxHitsPerQuery)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxHitsPerQuery)) __obj.updateDynamic("maxHitsPerQuery")(maxHitsPerQuery.asInstanceOf[js.Any])
     if (maxQueriesPerIPPerHour != null) __obj.updateDynamic("maxQueriesPerIPPerHour")(maxQueriesPerIPPerHour.asInstanceOf[js.Any])
-    if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters)
-    if (referers != null) __obj.updateDynamic("referers")(referers)
+    if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters.asInstanceOf[js.Any])
+    if (referers != null) __obj.updateDynamic("referers")(referers.asInstanceOf[js.Any])
     if (validity != null) __obj.updateDynamic("validity")(validity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKeyOptions]
   }

@@ -78,17 +78,17 @@ object Options {
     width: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (customStylesheet != null) __obj.updateDynamic("customStylesheet")(customStylesheet)
+    if (customStylesheet != null) __obj.updateDynamic("customStylesheet")(customStylesheet.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (inputAttrs != null) __obj.updateDynamic("inputAttrs")(inputAttrs)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (selectOptions != null) __obj.updateDynamic("selectOptions")(selectOptions)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (inputAttrs != null) __obj.updateDynamic("inputAttrs")(inputAttrs.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (selectOptions != null) __obj.updateDynamic("selectOptions")(selectOptions.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHtmlLabel)) __obj.updateDynamic("useHtmlLabel")(useHtmlLabel)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(useHtmlLabel)) __obj.updateDynamic("useHtmlLabel")(useHtmlLabel.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

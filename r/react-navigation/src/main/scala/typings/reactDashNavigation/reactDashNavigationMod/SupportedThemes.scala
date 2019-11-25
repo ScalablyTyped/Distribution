@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SupportedThemes extends js.Object
 
+object SupportedThemes {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dark: typings.reactDashNavigation.reactDashNavigationStrings.dark = this.cast("dark")
+  @scala.inline
+  def light: typings.reactDashNavigation.reactDashNavigationStrings.light = this.cast("light")
+}
+

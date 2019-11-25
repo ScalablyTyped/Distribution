@@ -32,11 +32,11 @@ object BeforeRowDropEventArgs {
     targetIndex: js.Any = null
   ): BeforeRowDropEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (draggedRecords != null) __obj.updateDynamic("draggedRecords")(draggedRecords)
-    if (dropDetails != null) __obj.updateDynamic("dropDetails")(dropDetails)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (targetIndex != null) __obj.updateDynamic("targetIndex")(targetIndex)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (draggedRecords != null) __obj.updateDynamic("draggedRecords")(draggedRecords.asInstanceOf[js.Any])
+    if (dropDetails != null) __obj.updateDynamic("dropDetails")(dropDetails.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (targetIndex != null) __obj.updateDynamic("targetIndex")(targetIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeRowDropEventArgs]
   }
 }

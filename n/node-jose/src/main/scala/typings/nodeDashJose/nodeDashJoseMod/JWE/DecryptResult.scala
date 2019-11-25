@@ -29,8 +29,8 @@ trait DecryptResult extends js.Object {
 object DecryptResult {
   @scala.inline
   def apply(header: js.Object, key: Key, payload: Buffer, plaintext: Buffer, `protected`: js.Array[String]): DecryptResult = {
-    val __obj = js.Dynamic.literal(header = header, key = key, payload = payload, plaintext = plaintext)
-    __obj.updateDynamic("protected")(`protected`)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], plaintext = plaintext.asInstanceOf[js.Any])
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptResult]
   }
 }

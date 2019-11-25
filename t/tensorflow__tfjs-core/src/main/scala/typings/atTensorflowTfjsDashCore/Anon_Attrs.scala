@@ -14,8 +14,8 @@ trait Anon_Attrs extends js.Object {
 object Anon_Attrs {
   @scala.inline
   def apply(inputs: NamedTensorInfoMap, attrs: NamedAttrMap = null): Anon_Attrs = {
-    val __obj = js.Dynamic.literal(inputs = inputs)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any])
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attrs]
   }
 }

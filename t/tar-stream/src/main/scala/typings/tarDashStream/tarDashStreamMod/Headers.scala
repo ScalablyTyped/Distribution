@@ -50,18 +50,18 @@ object Headers {
     uid: Int | Double = null,
     uname: String = null
   ): Headers = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (devmajor != null) __obj.updateDynamic("devmajor")(devmajor.asInstanceOf[js.Any])
     if (devminor != null) __obj.updateDynamic("devminor")(devminor.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (gname != null) __obj.updateDynamic("gname")(gname)
-    if (linkname != null) __obj.updateDynamic("linkname")(linkname)
+    if (gname != null) __obj.updateDynamic("gname")(gname.asInstanceOf[js.Any])
+    if (linkname != null) __obj.updateDynamic("linkname")(linkname.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (mtime != null) __obj.updateDynamic("mtime")(mtime)
+    if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (uname != null) __obj.updateDynamic("uname")(uname)
+    if (uname != null) __obj.updateDynamic("uname")(uname.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
 }

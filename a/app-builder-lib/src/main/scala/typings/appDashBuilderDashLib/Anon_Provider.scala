@@ -20,9 +20,9 @@ object Anon_Provider {
     publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
     publisherName: js.Array[String] = null
   ): Anon_Provider = {
-    val __obj = js.Dynamic.literal(provider = provider, updaterCacheDirName = updaterCacheDirName)
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], updaterCacheDirName = updaterCacheDirName.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Provider]
   }
 }

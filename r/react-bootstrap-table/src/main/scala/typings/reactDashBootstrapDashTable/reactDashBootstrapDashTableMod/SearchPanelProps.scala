@@ -42,7 +42,7 @@ object SearchPanelProps {
     search: String => Unit,
     searchField: ReactElement
   ): SearchPanelProps = {
-    val __obj = js.Dynamic.literal(clearBtn = clearBtn, clearBtnClick = js.Any.fromFunction0(clearBtnClick), defaultValue = defaultValue, placeholder = placeholder, search = js.Any.fromFunction1(search), searchField = searchField)
+    val __obj = js.Dynamic.literal(clearBtn = clearBtn.asInstanceOf[js.Any], clearBtnClick = js.Any.fromFunction0(clearBtnClick), defaultValue = defaultValue.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], search = js.Any.fromFunction1(search), searchField = searchField.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchPanelProps]
   }

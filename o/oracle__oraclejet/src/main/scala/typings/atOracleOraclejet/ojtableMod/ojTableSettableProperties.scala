@@ -81,10 +81,10 @@ object ojTableSettableProperties {
     data: DataProvider[K, D] = null,
     rowRenderer: /* context */ RowRendererContext[K, D] => String | HTMLElement | Unit = null
   ): ojTableSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(accessibility = accessibility, as = as, columnsDefault = columnsDefault, display = display.asInstanceOf[js.Any], dnd = dnd, editMode = editMode.asInstanceOf[js.Any], firstSelectedRow = firstSelectedRow, horizontalGridVisible = horizontalGridVisible.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions, scrollPosition = scrollPosition, selection = selection, selectionMode = selectionMode, selectionRequired = selectionRequired, translations = translations, verticalGridVisible = verticalGridVisible.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (currentRow != null) __obj.updateDynamic("currentRow")(currentRow)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(accessibility = accessibility.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], columnsDefault = columnsDefault.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], dnd = dnd.asInstanceOf[js.Any], editMode = editMode.asInstanceOf[js.Any], firstSelectedRow = firstSelectedRow.asInstanceOf[js.Any], horizontalGridVisible = horizontalGridVisible.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions.asInstanceOf[js.Any], scrollPosition = scrollPosition.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], selectionRequired = selectionRequired.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], verticalGridVisible = verticalGridVisible.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (currentRow != null) __obj.updateDynamic("currentRow")(currentRow.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(js.Any.fromFunction1(rowRenderer))
     __obj.asInstanceOf[ojTableSettableProperties[K, D]]
   }

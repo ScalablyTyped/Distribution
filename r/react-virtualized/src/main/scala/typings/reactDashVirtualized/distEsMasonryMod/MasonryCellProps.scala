@@ -24,8 +24,8 @@ object MasonryCellProps {
     parent: MeasuredCellParent,
     style: CSSProperties = null
   ): MasonryCellProps = {
-    val __obj = js.Dynamic.literal(index = index, isScrolling = isScrolling, key = key.asInstanceOf[js.Any], parent = parent)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasonryCellProps]
   }
 }

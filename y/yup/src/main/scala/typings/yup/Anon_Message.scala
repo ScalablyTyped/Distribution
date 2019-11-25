@@ -13,8 +13,8 @@ object Anon_Message {
   @scala.inline
   def apply(message: String = null, path: String = null): Anon_Message = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Message]
   }
 }

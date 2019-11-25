@@ -30,15 +30,15 @@ object FilterCriteria {
     to: String = null
   ): FilterCriteria = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeChats)) __obj.updateDynamic("excludeChats")(excludeChats)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (!js.isUndefined(hasAttachment)) __obj.updateDynamic("hasAttachment")(hasAttachment)
-    if (negatedQuery != null) __obj.updateDynamic("negatedQuery")(negatedQuery)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(excludeChats)) __obj.updateDynamic("excludeChats")(excludeChats.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasAttachment)) __obj.updateDynamic("hasAttachment")(hasAttachment.asInstanceOf[js.Any])
+    if (negatedQuery != null) __obj.updateDynamic("negatedQuery")(negatedQuery.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sizeComparison != null) __obj.updateDynamic("sizeComparison")(sizeComparison)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (sizeComparison != null) __obj.updateDynamic("sizeComparison")(sizeComparison.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterCriteria]
   }
 }

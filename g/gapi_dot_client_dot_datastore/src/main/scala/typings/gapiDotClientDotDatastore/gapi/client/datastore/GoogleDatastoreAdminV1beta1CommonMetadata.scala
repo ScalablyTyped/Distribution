@@ -34,11 +34,11 @@ object GoogleDatastoreAdminV1beta1CommonMetadata {
     state: String = null
   ): GoogleDatastoreAdminV1beta1CommonMetadata = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleDatastoreAdminV1beta1CommonMetadata]
   }
 }

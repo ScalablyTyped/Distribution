@@ -35,15 +35,15 @@ object Options {
     referrerPolicy: ReferrerPolicy = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

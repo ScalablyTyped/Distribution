@@ -15,7 +15,7 @@ object DocumentLinkOptions {
   @scala.inline
   def apply(resolveProvider: js.UndefOr[Boolean] = js.undefined): DocumentLinkOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider)
+    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentLinkOptions]
   }
 }

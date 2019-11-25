@@ -18,9 +18,9 @@ object EntityUserLinkEntity {
     webPropertyRef: WebPropertyRef = null
   ): EntityUserLinkEntity = {
     val __obj = js.Dynamic.literal()
-    if (accountRef != null) __obj.updateDynamic("accountRef")(accountRef)
-    if (profileRef != null) __obj.updateDynamic("profileRef")(profileRef)
-    if (webPropertyRef != null) __obj.updateDynamic("webPropertyRef")(webPropertyRef)
+    if (accountRef != null) __obj.updateDynamic("accountRef")(accountRef.asInstanceOf[js.Any])
+    if (profileRef != null) __obj.updateDynamic("profileRef")(profileRef.asInstanceOf[js.Any])
+    if (webPropertyRef != null) __obj.updateDynamic("webPropertyRef")(webPropertyRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityUserLinkEntity]
   }
 }

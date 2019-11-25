@@ -23,7 +23,7 @@ object DeviceInfo {
     productId: Int | Double = null,
     vendorId: Int | Double = null
   ): DeviceInfo = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     if (vendorId != null) __obj.updateDynamic("vendorId")(vendorId.asInstanceOf[js.Any])

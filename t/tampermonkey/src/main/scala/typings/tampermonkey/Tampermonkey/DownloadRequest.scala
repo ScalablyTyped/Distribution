@@ -40,13 +40,13 @@ object DownloadRequest {
     saveAs: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null
   ): DownloadRequest = {
-    val __obj = js.Dynamic.literal(name = name, url = url)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror.asInstanceOf[js.Any])
     if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction0(onload))
-    if (onprogress != null) __obj.updateDynamic("onprogress")(onprogress)
+    if (onprogress != null) __obj.updateDynamic("onprogress")(onprogress.asInstanceOf[js.Any])
     if (ontimeout != null) __obj.updateDynamic("ontimeout")(js.Any.fromFunction0(ontimeout))
-    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs)
+    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadRequest]
   }

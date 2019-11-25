@@ -2,7 +2,6 @@ package typings.sipDotJs.libCoreMod
 
 import typings.sipDotJs.libCoreDialogsDialogDashStateMod.DialogState
 import typings.sipDotJs.libCoreSubscriptionSubscriptionDashDelegateMod.SubscriptionDelegate
-import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +13,14 @@ class SubscriptionDialog protected ()
   def this(
     subscriptionEvent: String,
     subscriptionExpires: Double,
-    subscriptionState: SubscriptionState,
+    subscriptionState: typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState,
     core: typings.sipDotJs.libCoreUserDashAgentDashCoreUserDashAgentDashCoreMod.UserAgentCore,
     state: DialogState
   ) = this()
   def this(
     subscriptionEvent: String,
     subscriptionExpires: Double,
-    subscriptionState: SubscriptionState,
+    subscriptionState: typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState,
     core: typings.sipDotJs.libCoreUserDashAgentDashCoreUserDashAgentDashCoreMod.UserAgentCore,
     state: DialogState,
     delegate: SubscriptionDelegate

@@ -37,7 +37,7 @@ object ScrollSyncProps {
   /* key */ StringDictionary[js.Any] = null
   ): ScrollSyncProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ScrollSyncProps]
   }
 }

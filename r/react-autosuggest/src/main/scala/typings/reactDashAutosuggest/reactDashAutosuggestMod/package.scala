@@ -22,7 +22,7 @@ package object reactDashAutosuggestMod {
   /** @internal */
   type Omit[T, K /* <: String */] = Pick[
     T, 
-    /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any
   ]
   type OnSuggestionHighlighted = js.Function1[/* params */ SuggestionHighlightedParams, Unit]
   type OnSuggestionSelected[TSuggestion] = js.Function2[

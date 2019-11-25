@@ -28,14 +28,14 @@ object Member {
     `type`: String = null
   ): Member = {
     val __obj = js.Dynamic.literal()
-    if (delivery_settings != null) __obj.updateDynamic("delivery_settings")(delivery_settings)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (delivery_settings != null) __obj.updateDynamic("delivery_settings")(delivery_settings.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Member]
   }
 }

@@ -19,8 +19,8 @@ object Anon_Expand {
   ): Anon_Expand = {
     val __obj = js.Dynamic.literal()
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Expand]
   }
 }

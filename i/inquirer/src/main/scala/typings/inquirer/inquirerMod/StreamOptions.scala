@@ -24,8 +24,8 @@ object StreamOptions {
   @scala.inline
   def apply(input: ReadStream = null, output: WriteStream = null): StreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamOptions]
   }
 }

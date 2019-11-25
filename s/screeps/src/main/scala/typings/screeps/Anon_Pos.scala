@@ -11,7 +11,7 @@ trait Anon_Pos extends js.Object {
 object Anon_Pos {
   @scala.inline
   def apply(pos: RoomPosition): Anon_Pos = {
-    val __obj = js.Dynamic.literal(pos = pos)
+    val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Pos]
   }

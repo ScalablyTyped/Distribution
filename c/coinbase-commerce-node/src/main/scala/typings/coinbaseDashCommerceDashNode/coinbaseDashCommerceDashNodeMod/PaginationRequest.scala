@@ -46,10 +46,10 @@ object PaginationRequest {
     starting_after: String = null
   ): PaginationRequest = {
     val __obj = js.Dynamic.literal()
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)
+    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after)
+    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationRequest]
   }
 }

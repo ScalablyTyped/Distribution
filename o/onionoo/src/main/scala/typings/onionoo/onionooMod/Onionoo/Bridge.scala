@@ -106,14 +106,14 @@ object Bridge {
     version: String = null,
     version_status: recommended | experimental | obsolete | (`new in series`) | unrecommended = null
   ): Bridge = {
-    val __obj = js.Dynamic.literal(first_seen = first_seen, hashed_fingerprint = hashed_fingerprint, last_seen = last_seen, nickname = nickname, or_addresses = or_addresses, running = running)
+    val __obj = js.Dynamic.literal(first_seen = first_seen.asInstanceOf[js.Any], hashed_fingerprint = hashed_fingerprint.asInstanceOf[js.Any], last_seen = last_seen.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], or_addresses = or_addresses.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any])
     if (advertised_bandwidth != null) __obj.updateDynamic("advertised_bandwidth")(advertised_bandwidth.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (last_restarted != null) __obj.updateDynamic("last_restarted")(last_restarted)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (!js.isUndefined(recommended_version)) __obj.updateDynamic("recommended_version")(recommended_version)
-    if (transports != null) __obj.updateDynamic("transports")(transports)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (last_restarted != null) __obj.updateDynamic("last_restarted")(last_restarted.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (!js.isUndefined(recommended_version)) __obj.updateDynamic("recommended_version")(recommended_version.asInstanceOf[js.Any])
+    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (version_status != null) __obj.updateDynamic("version_status")(version_status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bridge]
   }

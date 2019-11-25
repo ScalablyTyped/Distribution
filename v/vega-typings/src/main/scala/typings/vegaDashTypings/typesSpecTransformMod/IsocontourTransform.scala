@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IsocontourTransform extends Transforms {
+trait IsocontourTransform extends _Transforms {
   var as: js.UndefOr[String | Null | SignalRef] = js.undefined
   var field: js.UndefOr[String | TransformField] = js.undefined
   var levels: js.UndefOr[Double | SignalRef] = js.undefined
@@ -36,7 +36,7 @@ object IsocontourTransform {
     zero: Boolean | SignalRef = null
   ): IsocontourTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])

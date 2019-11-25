@@ -15,8 +15,8 @@ object AchievementResetMultipleForAllRequest {
   @scala.inline
   def apply(achievement_ids: js.Array[String] = null, kind: String = null): AchievementResetMultipleForAllRequest = {
     val __obj = js.Dynamic.literal()
-    if (achievement_ids != null) __obj.updateDynamic("achievement_ids")(achievement_ids)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (achievement_ids != null) __obj.updateDynamic("achievement_ids")(achievement_ids.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementResetMultipleForAllRequest]
   }
 }

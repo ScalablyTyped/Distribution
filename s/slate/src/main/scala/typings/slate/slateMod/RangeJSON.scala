@@ -15,9 +15,9 @@ object RangeJSON {
   @scala.inline
   def apply(anchor: PointJSON = null, focus: PointJSON = null, `object`: range = null): RangeJSON = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeJSON]
   }
 }

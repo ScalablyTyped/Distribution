@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation._
   /**
     * Subset of classnames currently generated in DetailsRow that are used within DetailsRowFields.
     */
-  var rowClassNames: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var rowClassNames: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'> ]: string}
     */ typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.IDetailsRowFieldsProps with js.Any
 }
@@ -49,17 +49,17 @@ object IDetailsRowFieldsProps {
     columns: js.Array[IColumn],
     item: js.Any,
     itemIndex: Double,
-    rowClassNames: /* import warning: ImportType.apply c Unsupported type mapping: 
+    rowClassNames: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsRowStyles, 'isMultiline' | 'isRowHeader' | 'cell' | 'cellAnimation' | 'cellPadded' | 'cellUnpadded' | 'fields'> ]: string}
     */ typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.IDetailsRowFieldsProps with js.Any,
     cellStyleProps: ICellStyleProps = null,
     compact: js.UndefOr[Boolean] = js.undefined,
     enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined
   ): IDetailsRowFieldsProps = {
-    val __obj = js.Dynamic.literal(columnStartIndex = columnStartIndex, columns = columns, item = item, itemIndex = itemIndex, rowClassNames = rowClassNames)
-    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations)
+    val __obj = js.Dynamic.literal(columnStartIndex = columnStartIndex.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any], rowClassNames = rowClassNames.asInstanceOf[js.Any])
+    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsRowFieldsProps]
   }
 }

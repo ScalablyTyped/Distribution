@@ -17,8 +17,8 @@ trait VersionReadParams extends ReadParams {
 object VersionReadParams {
   @scala.inline
   def apply(id: String, `type`: String, versionId: String): VersionReadParams = {
-    val __obj = js.Dynamic.literal(id = id, versionId = versionId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], versionId = versionId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionReadParams]
   }
 }

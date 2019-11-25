@@ -24,10 +24,10 @@ object UpdateWorkspaceProposalRequest {
     status: String = null
   ): UpdateWorkspaceProposalRequest = {
     val __obj = js.Dynamic.literal()
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (newComment != null) __obj.updateDynamic("newComment")(newComment)
-    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (newComment != null) __obj.updateDynamic("newComment")(newComment.asInstanceOf[js.Any])
+    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorkspaceProposalRequest]
   }
 }

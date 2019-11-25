@@ -24,8 +24,8 @@ object IVideoEncodingProperties {
     `type`: String,
     width: Double
   ): IVideoEncodingProperties = {
-    val __obj = js.Dynamic.literal(bitrate = bitrate, frameRate = frameRate, height = height, pixelAspectRatio = pixelAspectRatio, properties = properties, subtype = subtype, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], frameRate = frameRate.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], pixelAspectRatio = pixelAspectRatio.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVideoEncodingProperties]
   }
 }

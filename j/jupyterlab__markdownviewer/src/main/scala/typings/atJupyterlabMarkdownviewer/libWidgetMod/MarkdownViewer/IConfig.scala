@@ -41,8 +41,8 @@ object IConfig {
     lineHeight: Int | Double = null,
     lineWidth: Int | Double = null
   ): IConfig = {
-    val __obj = js.Dynamic.literal(hideFrontMatter = hideFrontMatter, renderTimeout = renderTimeout)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    val __obj = js.Dynamic.literal(hideFrontMatter = hideFrontMatter.asInstanceOf[js.Any], renderTimeout = renderTimeout.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])

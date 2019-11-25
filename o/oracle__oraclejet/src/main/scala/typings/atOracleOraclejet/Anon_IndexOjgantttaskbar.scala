@@ -14,7 +14,7 @@ trait Anon_IndexOjgantttaskbar extends js.Object {
 object Anon_IndexOjgantttaskbar {
   @scala.inline
   def apply(index: Double, rowIndex: Double, subId: `oj-gantt-taskbar`): Anon_IndexOjgantttaskbar = {
-    val __obj = js.Dynamic.literal(index = index, rowIndex = rowIndex, subId = subId)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IndexOjgantttaskbar]
   }

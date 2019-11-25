@@ -15,8 +15,8 @@ object StoreLayoutClustersListResponse {
   @scala.inline
   def apply(cluster: js.Array[StoreCluster] = null, kind: String = null): StoreLayoutClustersListResponse = {
     val __obj = js.Dynamic.literal()
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreLayoutClustersListResponse]
   }
 }

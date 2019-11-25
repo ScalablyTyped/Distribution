@@ -32,15 +32,15 @@ object PlatformManifest {
     web: WebManifest = null
   ): PlatformManifest = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (detach != null) __obj.updateDynamic("detach")(detach)
-    if (developer != null) __obj.updateDynamic("developer")(developer)
-    if (hostUri != null) __obj.updateDynamic("hostUri")(hostUri)
-    if (ios != null) __obj.updateDynamic("ios")(ios)
-    if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
-    if (web != null) __obj.updateDynamic("web")(web)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (detach != null) __obj.updateDynamic("detach")(detach.asInstanceOf[js.Any])
+    if (developer != null) __obj.updateDynamic("developer")(developer.asInstanceOf[js.Any])
+    if (hostUri != null) __obj.updateDynamic("hostUri")(hostUri.asInstanceOf[js.Any])
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
+    if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    if (web != null) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformManifest]
   }
 }

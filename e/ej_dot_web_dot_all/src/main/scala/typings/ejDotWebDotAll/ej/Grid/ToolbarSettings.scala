@@ -27,9 +27,9 @@ object ToolbarSettings {
     toolbarItems: js.Array[ToolBarItems | String] = null
   ): ToolbarSettings = {
     val __obj = js.Dynamic.literal()
-    if (customToolbarItems != null) __obj.updateDynamic("customToolbarItems")(customToolbarItems)
-    if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar)
-    if (toolbarItems != null) __obj.updateDynamic("toolbarItems")(toolbarItems)
+    if (customToolbarItems != null) __obj.updateDynamic("customToolbarItems")(customToolbarItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar.asInstanceOf[js.Any])
+    if (toolbarItems != null) __obj.updateDynamic("toolbarItems")(toolbarItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarSettings]
   }
 }

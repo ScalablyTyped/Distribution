@@ -13,7 +13,7 @@ trait Anon_Compressed extends js.Object {
 object Anon_Compressed {
   @scala.inline
   def apply(compressed: Boolean, privateKey: Buffer): Anon_Compressed = {
-    val __obj = js.Dynamic.literal(compressed = compressed, privateKey = privateKey)
+    val __obj = js.Dynamic.literal(compressed = compressed.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Compressed]
   }

@@ -11,7 +11,7 @@ trait Anon_Stdout extends js.Object {
 object Anon_Stdout {
   @scala.inline
   def apply(stdout: js.Array[String]): Anon_Stdout = {
-    val __obj = js.Dynamic.literal(stdout = stdout)
+    val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Stdout]
   }

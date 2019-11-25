@@ -69,17 +69,17 @@ object IdyllDocumentProps {
     onError: /* err */ Error => Unit = null,
     theme: String = null
   ): IdyllDocumentProps = {
-    val __obj = js.Dynamic.literal(components = components)
-    if (ast != null) __obj.updateDynamic("ast")(ast)
-    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions)
+    val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any])
+    if (ast != null) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
+    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(js.Any.fromFunction1(context))
-    if (datasets != null) __obj.updateDynamic("datasets")(datasets)
+    if (datasets != null) __obj.updateDynamic("datasets")(datasets.asInstanceOf[js.Any])
     if (errorComponent != null) __obj.updateDynamic("errorComponent")(errorComponent.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (markup != null) __obj.updateDynamic("markup")(markup)
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (markup != null) __obj.updateDynamic("markup")(markup.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdyllDocumentProps]
   }
 }

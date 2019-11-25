@@ -8,7 +8,7 @@ import typings.atJestTypes.atJestTypesStrings.`text-summary`
 import typings.atJestTypes.atJestTypesStrings.clover
 import typings.atJestTypes.atJestTypesStrings.cobertura
 import typings.atJestTypes.atJestTypesStrings.html
-import typings.atJestTypes.atJestTypesStrings.json
+import typings.atJestTypes.atJestTypesStrings.json_
 import typings.atJestTypes.atJestTypesStrings.lcovonly
 import typings.atJestTypes.atJestTypesStrings.none
 import typings.atJestTypes.atJestTypesStrings.teamcity
@@ -27,7 +27,7 @@ trait GlobalConfig extends js.Object {
   var coverageDirectory: String
   var coveragePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
   var coverageReporters: js.Array[
-    clover | cobertura | html | json | `json-summary` | lcovonly | none | teamcity | text | `text-lcov` | `text-summary`
+    clover | cobertura | html | json_ | `json-summary` | lcovonly | none | teamcity | text | `text-lcov` | `text-summary`
   ]
   var coverageThreshold: CoverageThreshold
   var detectLeaks: Boolean
@@ -89,7 +89,7 @@ object GlobalConfig {
     collectCoverageFrom: js.Array[Glob],
     coverageDirectory: String,
     coverageReporters: js.Array[
-      clover | cobertura | html | json | `json-summary` | lcovonly | none | teamcity | text | `text-lcov` | `text-summary`
+      clover | cobertura | html | json_ | `json-summary` | lcovonly | none | teamcity | text | `text-lcov` | `text-summary`
     ],
     coverageThreshold: CoverageThreshold,
     detectLeaks: Boolean,
@@ -141,19 +141,19 @@ object GlobalConfig {
     verbose: js.UndefOr[Boolean] = js.undefined,
     watchPlugins: js.Array[Anon_Config] = null
   ): GlobalConfig = {
-    val __obj = js.Dynamic.literal(bail = bail, changedFilesWithAncestor = changedFilesWithAncestor, changedSince = changedSince, collectCoverage = collectCoverage, collectCoverageFrom = collectCoverageFrom, coverageDirectory = coverageDirectory, coverageReporters = coverageReporters, coverageThreshold = coverageThreshold, detectLeaks = detectLeaks, detectOpenHandles = detectOpenHandles, errorOnDeprecated = errorOnDeprecated, expand = expand, extraGlobals = extraGlobals, findRelatedTests = findRelatedTests, forceExit = forceExit, json = json, lastCommit = lastCommit, listTests = listTests, logHeapUsage = logHeapUsage, maxConcurrency = maxConcurrency, maxWorkers = maxWorkers, noStackTrace = noStackTrace, nonFlagArgs = nonFlagArgs, notify = notify, notifyMode = notifyMode, onlyChanged = onlyChanged, onlyFailures = onlyFailures, passWithNoTests = passWithNoTests, projects = projects, reporters = reporters, rootDir = rootDir, runTestsByPath = runTestsByPath, silent = silent, skipFilter = skipFilter, testFailureExitCode = testFailureExitCode, testNamePattern = testNamePattern, testPathPattern = testPathPattern, testSequencer = testSequencer, testTimeout = testTimeout, updateSnapshot = updateSnapshot, useStderr = useStderr, watch = watch, watchAll = watchAll, watchman = watchman)
-    if (collectCoverageOnlyFrom != null) __obj.updateDynamic("collectCoverageOnlyFrom")(collectCoverageOnlyFrom)
-    if (coveragePathIgnorePatterns != null) __obj.updateDynamic("coveragePathIgnorePatterns")(coveragePathIgnorePatterns)
-    if (enabledTestsMap != null) __obj.updateDynamic("enabledTestsMap")(enabledTestsMap)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (globalSetup != null) __obj.updateDynamic("globalSetup")(globalSetup)
-    if (globalTeardown != null) __obj.updateDynamic("globalTeardown")(globalTeardown)
-    if (!js.isUndefined(noSCM)) __obj.updateDynamic("noSCM")(noSCM)
-    if (outputFile != null) __obj.updateDynamic("outputFile")(outputFile)
-    if (replname != null) __obj.updateDynamic("replname")(replname)
-    if (testResultsProcessor != null) __obj.updateDynamic("testResultsProcessor")(testResultsProcessor)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
-    if (watchPlugins != null) __obj.updateDynamic("watchPlugins")(watchPlugins)
+    val __obj = js.Dynamic.literal(bail = bail.asInstanceOf[js.Any], changedFilesWithAncestor = changedFilesWithAncestor.asInstanceOf[js.Any], changedSince = changedSince.asInstanceOf[js.Any], collectCoverage = collectCoverage.asInstanceOf[js.Any], collectCoverageFrom = collectCoverageFrom.asInstanceOf[js.Any], coverageDirectory = coverageDirectory.asInstanceOf[js.Any], coverageReporters = coverageReporters.asInstanceOf[js.Any], coverageThreshold = coverageThreshold.asInstanceOf[js.Any], detectLeaks = detectLeaks.asInstanceOf[js.Any], detectOpenHandles = detectOpenHandles.asInstanceOf[js.Any], errorOnDeprecated = errorOnDeprecated.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], extraGlobals = extraGlobals.asInstanceOf[js.Any], findRelatedTests = findRelatedTests.asInstanceOf[js.Any], forceExit = forceExit.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], lastCommit = lastCommit.asInstanceOf[js.Any], listTests = listTests.asInstanceOf[js.Any], logHeapUsage = logHeapUsage.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], maxWorkers = maxWorkers.asInstanceOf[js.Any], noStackTrace = noStackTrace.asInstanceOf[js.Any], nonFlagArgs = nonFlagArgs.asInstanceOf[js.Any], notify = notify.asInstanceOf[js.Any], notifyMode = notifyMode.asInstanceOf[js.Any], onlyChanged = onlyChanged.asInstanceOf[js.Any], onlyFailures = onlyFailures.asInstanceOf[js.Any], passWithNoTests = passWithNoTests.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], reporters = reporters.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any], runTestsByPath = runTestsByPath.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], skipFilter = skipFilter.asInstanceOf[js.Any], testFailureExitCode = testFailureExitCode.asInstanceOf[js.Any], testNamePattern = testNamePattern.asInstanceOf[js.Any], testPathPattern = testPathPattern.asInstanceOf[js.Any], testSequencer = testSequencer.asInstanceOf[js.Any], testTimeout = testTimeout.asInstanceOf[js.Any], updateSnapshot = updateSnapshot.asInstanceOf[js.Any], useStderr = useStderr.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], watchAll = watchAll.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
+    if (collectCoverageOnlyFrom != null) __obj.updateDynamic("collectCoverageOnlyFrom")(collectCoverageOnlyFrom.asInstanceOf[js.Any])
+    if (coveragePathIgnorePatterns != null) __obj.updateDynamic("coveragePathIgnorePatterns")(coveragePathIgnorePatterns.asInstanceOf[js.Any])
+    if (enabledTestsMap != null) __obj.updateDynamic("enabledTestsMap")(enabledTestsMap.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (globalSetup != null) __obj.updateDynamic("globalSetup")(globalSetup.asInstanceOf[js.Any])
+    if (globalTeardown != null) __obj.updateDynamic("globalTeardown")(globalTeardown.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSCM)) __obj.updateDynamic("noSCM")(noSCM.asInstanceOf[js.Any])
+    if (outputFile != null) __obj.updateDynamic("outputFile")(outputFile.asInstanceOf[js.Any])
+    if (replname != null) __obj.updateDynamic("replname")(replname.asInstanceOf[js.Any])
+    if (testResultsProcessor != null) __obj.updateDynamic("testResultsProcessor")(testResultsProcessor.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (watchPlugins != null) __obj.updateDynamic("watchPlugins")(watchPlugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalConfig]
   }
 }

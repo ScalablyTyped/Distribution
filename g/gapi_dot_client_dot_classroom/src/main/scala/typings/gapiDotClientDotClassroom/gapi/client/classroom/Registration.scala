@@ -35,10 +35,10 @@ object Registration {
     registrationId: String = null
   ): Registration = {
     val __obj = js.Dynamic.literal()
-    if (cloudPubsubTopic != null) __obj.updateDynamic("cloudPubsubTopic")(cloudPubsubTopic)
-    if (expiryTime != null) __obj.updateDynamic("expiryTime")(expiryTime)
-    if (feed != null) __obj.updateDynamic("feed")(feed)
-    if (registrationId != null) __obj.updateDynamic("registrationId")(registrationId)
+    if (cloudPubsubTopic != null) __obj.updateDynamic("cloudPubsubTopic")(cloudPubsubTopic.asInstanceOf[js.Any])
+    if (expiryTime != null) __obj.updateDynamic("expiryTime")(expiryTime.asInstanceOf[js.Any])
+    if (feed != null) __obj.updateDynamic("feed")(feed.asInstanceOf[js.Any])
+    if (registrationId != null) __obj.updateDynamic("registrationId")(registrationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Registration]
   }
 }

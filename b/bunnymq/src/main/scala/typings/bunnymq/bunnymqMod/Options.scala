@@ -36,14 +36,14 @@ object Options {
     transport: js.Any = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (consumerSuffix != null) __obj.updateDynamic("consumerSuffix")(consumerSuffix)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (consumerSuffix != null) __obj.updateDynamic("consumerSuffix")(consumerSuffix.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
-    if (!js.isUndefined(requeue)) __obj.updateDynamic("requeue")(requeue)
+    if (!js.isUndefined(requeue)) __obj.updateDynamic("requeue")(requeue.asInstanceOf[js.Any])
     if (rpcTimeout != null) __obj.updateDynamic("rpcTimeout")(rpcTimeout.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

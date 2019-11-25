@@ -15,8 +15,8 @@ object EndpointsApiService {
   @scala.inline
   def apply(configId: String = null, name: String = null): EndpointsApiService = {
     val __obj = js.Dynamic.literal()
-    if (configId != null) __obj.updateDynamic("configId")(configId)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (configId != null) __obj.updateDynamic("configId")(configId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointsApiService]
   }
 }

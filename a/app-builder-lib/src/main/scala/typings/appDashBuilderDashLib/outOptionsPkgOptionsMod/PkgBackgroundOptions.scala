@@ -27,9 +27,9 @@ object PkgBackgroundOptions {
   @scala.inline
   def apply(alignment: BackgroundAlignment = null, file: String = null, scaling: BackgroundScaling = null): PkgBackgroundOptions = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (scaling != null) __obj.updateDynamic("scaling")(scaling)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
     __obj.asInstanceOf[PkgBackgroundOptions]
   }
 }

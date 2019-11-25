@@ -31,9 +31,9 @@ trait MessageStatus extends VoxImplantIMEvent {
 object MessageStatus {
   @scala.inline
   def apply(id: String, message_id: String, `type`: MessageEventType, resource: String = null): MessageStatus = {
-    val __obj = js.Dynamic.literal(id = id, message_id = message_id)
-    __obj.updateDynamic("type")(`type`)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageStatus]
   }
 }

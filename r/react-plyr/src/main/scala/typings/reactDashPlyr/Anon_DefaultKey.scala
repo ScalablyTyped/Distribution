@@ -23,12 +23,12 @@ object Anon_DefaultKey {
     label: String = null,
     srclang: String = null
   ): Anon_DefaultKey = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (srclang != null) __obj.updateDynamic("srclang")(srclang)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (srclang != null) __obj.updateDynamic("srclang")(srclang.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultKey]
   }
 }

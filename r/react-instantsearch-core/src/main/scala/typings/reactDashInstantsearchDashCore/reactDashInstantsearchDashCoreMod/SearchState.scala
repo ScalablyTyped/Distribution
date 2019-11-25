@@ -42,19 +42,19 @@ object SearchState {
     toggle: StringDictionary[Boolean] = null
   ): SearchState = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (configure != null) __obj.updateDynamic("configure")(configure)
-    if (hierarchicalMenu != null) __obj.updateDynamic("hierarchicalMenu")(hierarchicalMenu)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
+    if (hierarchicalMenu != null) __obj.updateDynamic("hierarchicalMenu")(hierarchicalMenu.asInstanceOf[js.Any])
     if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (indices != null) __obj.updateDynamic("indices")(indices)
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (multiRange != null) __obj.updateDynamic("multiRange")(multiRange)
+    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (multiRange != null) __obj.updateDynamic("multiRange")(multiRange.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (refinementList != null) __obj.updateDynamic("refinementList")(refinementList)
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (refinementList != null) __obj.updateDynamic("refinementList")(refinementList.asInstanceOf[js.Any])
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
+    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchState]
   }
 }

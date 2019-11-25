@@ -11,7 +11,7 @@ trait CreateRefDataMeta extends js.Object {
 object CreateRefDataMeta {
   @scala.inline
   def apply(extension: BaseAttributesExtensionObject): CreateRefDataMeta = {
-    val __obj = js.Dynamic.literal(extension = extension)
+    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateRefDataMeta]
   }

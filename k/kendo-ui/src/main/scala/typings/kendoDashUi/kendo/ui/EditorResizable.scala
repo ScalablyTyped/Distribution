@@ -20,10 +20,10 @@ object EditorResizable {
     toolbar: js.UndefOr[Boolean] = js.undefined
   ): EditorResizable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content)
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar)
+    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorResizable]
   }
 }

@@ -24,13 +24,13 @@ trait IObservableFactory extends js.Object {
   def apply[T /* <: js.Object */](value: T): T with IObservableObject = js.native
   def apply[T /* <: js.Object */](
     value: T,
-    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+    decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? std.Function}
     */ typings.mobx.mobxStrings.IObservableFactory with js.Any
   ): T with IObservableObject = js.native
   def apply[T /* <: js.Object */](
     value: T,
-    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+    decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? std.Function}
     */ typings.mobx.mobxStrings.IObservableFactory with js.Any,
     options: CreateObservableOptions

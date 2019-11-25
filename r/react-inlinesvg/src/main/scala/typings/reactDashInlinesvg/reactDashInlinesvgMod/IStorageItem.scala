@@ -13,7 +13,7 @@ trait IStorageItem extends js.Object {
 object IStorageItem {
   @scala.inline
   def apply(content: String, queue: js.Array[_], status: String): IStorageItem = {
-    val __obj = js.Dynamic.literal(content = content, queue = queue, status = status)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IStorageItem]
   }

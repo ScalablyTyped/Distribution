@@ -16,7 +16,7 @@ trait Anon_0 extends js.Object {
 object Anon_0 {
   @scala.inline
   def apply(hour: String, meridiem: `0` | `1`, minute: String, second: String): Anon_0 = {
-    val __obj = js.Dynamic.literal(hour = hour, meridiem = meridiem.asInstanceOf[js.Any], minute = minute, second = second)
+    val __obj = js.Dynamic.literal(hour = hour.asInstanceOf[js.Any], meridiem = meridiem.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_0]
   }

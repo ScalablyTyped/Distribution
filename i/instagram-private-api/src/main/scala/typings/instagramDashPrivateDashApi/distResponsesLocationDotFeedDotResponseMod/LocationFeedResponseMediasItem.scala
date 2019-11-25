@@ -11,7 +11,7 @@ trait LocationFeedResponseMediasItem extends js.Object {
 object LocationFeedResponseMediasItem {
   @scala.inline
   def apply(media: LocationFeedResponseMedia): LocationFeedResponseMediasItem = {
-    val __obj = js.Dynamic.literal(media = media)
+    val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocationFeedResponseMediasItem]
   }

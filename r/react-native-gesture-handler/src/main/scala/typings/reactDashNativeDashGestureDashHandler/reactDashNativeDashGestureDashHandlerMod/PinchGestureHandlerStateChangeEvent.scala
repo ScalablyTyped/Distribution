@@ -12,7 +12,7 @@ trait PinchGestureHandlerStateChangeEvent extends GestureHandlerStateChangeEvent
 object PinchGestureHandlerStateChangeEvent {
   @scala.inline
   def apply(nativeEvent: GestureHandlerStateChangeNativeEvent with PinchGestureHandlerEventExtra): PinchGestureHandlerStateChangeEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PinchGestureHandlerStateChangeEvent]
   }

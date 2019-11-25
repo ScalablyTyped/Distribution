@@ -19,7 +19,7 @@ object TemporalLayerProperties {
   @scala.inline
   def apply(timeInfo: TimeInfoProperties = null): TemporalLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo)
+    if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemporalLayerProperties]
   }
 }

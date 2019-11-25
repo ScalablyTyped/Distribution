@@ -69,10 +69,10 @@ object IStripeError {
   @scala.inline
   def apply(`type`: String, code: String = null, message: String = null, param: String = null): IStripeError = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (param != null) __obj.updateDynamic("param")(param)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStripeError]
   }
 }

@@ -29,12 +29,12 @@ object Anon_CommentsLocOptional {
     readonly: Boolean | `+` | `-` = null,
     typeAnnotation: TSTypeKind = null
   ): Anon_CommentsLocOptional = {
-    val __obj = js.Dynamic.literal(typeParameter = typeParameter)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (readonly != null) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocOptional]
   }
 }

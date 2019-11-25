@@ -13,8 +13,8 @@ trait FileTextChanges extends js.Object {
 object FileTextChanges {
   @scala.inline
   def apply(fileName: String, textChanges: js.Array[TextChange], isNewFile: js.UndefOr[Boolean] = js.undefined): FileTextChanges = {
-    val __obj = js.Dynamic.literal(fileName = fileName, textChanges = textChanges)
-    if (!js.isUndefined(isNewFile)) __obj.updateDynamic("isNewFile")(isNewFile)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], textChanges = textChanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNewFile)) __obj.updateDynamic("isNewFile")(isNewFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileTextChanges]
   }
 }

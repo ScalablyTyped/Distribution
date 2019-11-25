@@ -26,11 +26,11 @@ object Action {
     promise: js.Promise[TSuccessPayload] = null
   ): Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise)
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]]
   }
 }

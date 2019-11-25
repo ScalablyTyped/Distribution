@@ -22,11 +22,11 @@ object Options {
     title: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
-    if (!js.isUndefined(showFiles)) __obj.updateDynamic("showFiles")(showFiles)
-    if (!js.isUndefined(showTotal)) __obj.updateDynamic("showTotal")(showTotal)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFiles)) __obj.updateDynamic("showFiles")(showFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTotal)) __obj.updateDynamic("showTotal")(showTotal.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

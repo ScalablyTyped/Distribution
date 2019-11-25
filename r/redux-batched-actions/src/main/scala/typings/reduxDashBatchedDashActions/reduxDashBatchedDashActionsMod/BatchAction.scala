@@ -15,8 +15,8 @@ trait BatchAction extends js.Object {
 object BatchAction {
   @scala.inline
   def apply(meta: Anon_Batch, payload: js.Array[Action[_]], `type`: BatchActionType): BatchAction = {
-    val __obj = js.Dynamic.literal(meta = meta, payload = payload)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchAction]
   }
 }

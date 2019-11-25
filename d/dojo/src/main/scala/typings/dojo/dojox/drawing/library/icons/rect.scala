@@ -39,8 +39,8 @@ trait rect extends js.Object {
 object rect {
   @scala.inline
   def apply(borderWidth: Double, height: Double, `type`: String, width: Double, x: Double, y: Double): rect = {
-    val __obj = js.Dynamic.literal(borderWidth = borderWidth, height = height, width = width, x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(borderWidth = borderWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[rect]
   }
 }

@@ -70,17 +70,17 @@ object FnModules {
     source: String = null,
     usedExports: js.UndefOr[Boolean] = js.undefined
   ): FnModules = {
-    val __obj = js.Dynamic.literal(built = built, cacheable = cacheable, chunks = chunks, errors = errors, failed = failed, id = id.asInstanceOf[js.Any], identifier = identifier, index = index, index2 = index2, issuerPath = issuerPath, modules = modules, name = name, optional = optional, prefetched = prefetched, profile = profile, reasons = reasons, size = size, warnings = warnings)
-    if (assets != null) __obj.updateDynamic("assets")(assets)
+    val __obj = js.Dynamic.literal(built = built.asInstanceOf[js.Any], cacheable = cacheable.asInstanceOf[js.Any], chunks = chunks.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], index2 = index2.asInstanceOf[js.Any], issuerPath = issuerPath.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], prefetched = prefetched.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
+    if (assets != null) __obj.updateDynamic("assets")(assets.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(filteredModules)) __obj.updateDynamic("filteredModules")(filteredModules)
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    if (!js.isUndefined(filteredModules)) __obj.updateDynamic("filteredModules")(filteredModules.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (issuerId != null) __obj.updateDynamic("issuerId")(issuerId.asInstanceOf[js.Any])
-    if (issuerName != null) __obj.updateDynamic("issuerName")(issuerName)
-    if (optimizationBailout != null) __obj.updateDynamic("optimizationBailout")(optimizationBailout)
-    if (providedExports != null) __obj.updateDynamic("providedExports")(providedExports)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(usedExports)) __obj.updateDynamic("usedExports")(usedExports)
+    if (issuerName != null) __obj.updateDynamic("issuerName")(issuerName.asInstanceOf[js.Any])
+    if (optimizationBailout != null) __obj.updateDynamic("optimizationBailout")(optimizationBailout.asInstanceOf[js.Any])
+    if (providedExports != null) __obj.updateDynamic("providedExports")(providedExports.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(usedExports)) __obj.updateDynamic("usedExports")(usedExports.asInstanceOf[js.Any])
     __obj.asInstanceOf[FnModules]
   }
 }

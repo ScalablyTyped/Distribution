@@ -56,13 +56,13 @@ object GUIParams {
     width: Int | Double = null
   ): GUIParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPlace)) __obj.updateDynamic("autoPlace")(autoPlace)
-    if (!js.isUndefined(closeOnTop)) __obj.updateDynamic("closeOnTop")(closeOnTop)
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
-    if (!js.isUndefined(hideable)) __obj.updateDynamic("hideable")(hideable)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (preset != null) __obj.updateDynamic("preset")(preset)
+    if (!js.isUndefined(autoPlace)) __obj.updateDynamic("autoPlace")(autoPlace.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnTop)) __obj.updateDynamic("closeOnTop")(closeOnTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideable)) __obj.updateDynamic("hideable")(hideable.asInstanceOf[js.Any])
+    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[GUIParams]
   }

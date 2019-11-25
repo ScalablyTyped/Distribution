@@ -30,12 +30,12 @@ object ProxyRules {
     singleProxy: ProxyServer = null
   ): ProxyRules = {
     val __obj = js.Dynamic.literal()
-    if (bypassList != null) __obj.updateDynamic("bypassList")(bypassList)
-    if (fallbackProxy != null) __obj.updateDynamic("fallbackProxy")(fallbackProxy)
-    if (proxyForFtp != null) __obj.updateDynamic("proxyForFtp")(proxyForFtp)
-    if (proxyForHttp != null) __obj.updateDynamic("proxyForHttp")(proxyForHttp)
-    if (proxyForHttps != null) __obj.updateDynamic("proxyForHttps")(proxyForHttps)
-    if (singleProxy != null) __obj.updateDynamic("singleProxy")(singleProxy)
+    if (bypassList != null) __obj.updateDynamic("bypassList")(bypassList.asInstanceOf[js.Any])
+    if (fallbackProxy != null) __obj.updateDynamic("fallbackProxy")(fallbackProxy.asInstanceOf[js.Any])
+    if (proxyForFtp != null) __obj.updateDynamic("proxyForFtp")(proxyForFtp.asInstanceOf[js.Any])
+    if (proxyForHttp != null) __obj.updateDynamic("proxyForHttp")(proxyForHttp.asInstanceOf[js.Any])
+    if (proxyForHttps != null) __obj.updateDynamic("proxyForHttps")(proxyForHttps.asInstanceOf[js.Any])
+    if (singleProxy != null) __obj.updateDynamic("singleProxy")(singleProxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyRules]
   }
 }

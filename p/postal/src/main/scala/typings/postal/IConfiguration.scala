@@ -13,7 +13,7 @@ trait IConfiguration extends js.Object {
 object IConfiguration {
   @scala.inline
   def apply(DEFAULT_CHANNEL: String, SYSTEM_CHANNEL: String, resolver: IResolver): IConfiguration = {
-    val __obj = js.Dynamic.literal(DEFAULT_CHANNEL = DEFAULT_CHANNEL, SYSTEM_CHANNEL = SYSTEM_CHANNEL, resolver = resolver)
+    val __obj = js.Dynamic.literal(DEFAULT_CHANNEL = DEFAULT_CHANNEL.asInstanceOf[js.Any], SYSTEM_CHANNEL = SYSTEM_CHANNEL.asInstanceOf[js.Any], resolver = resolver.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IConfiguration]
   }

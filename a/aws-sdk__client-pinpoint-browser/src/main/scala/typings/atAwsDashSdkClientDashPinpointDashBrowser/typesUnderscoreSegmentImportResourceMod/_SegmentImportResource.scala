@@ -48,10 +48,10 @@ object _SegmentImportResource {
   ): _SegmentImportResource = {
     val __obj = js.Dynamic.literal()
     if (ChannelCounts != null) __obj.updateDynamic("ChannelCounts")(ChannelCounts.asInstanceOf[js.Any])
-    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId)
+    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
     if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
-    if (S3Url != null) __obj.updateDynamic("S3Url")(S3Url)
+    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
+    if (S3Url != null) __obj.updateDynamic("S3Url")(S3Url.asInstanceOf[js.Any])
     if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SegmentImportResource]
   }

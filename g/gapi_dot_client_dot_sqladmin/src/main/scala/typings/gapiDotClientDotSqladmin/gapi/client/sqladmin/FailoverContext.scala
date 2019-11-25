@@ -15,8 +15,8 @@ object FailoverContext {
   @scala.inline
   def apply(kind: String = null, settingsVersion: String = null): FailoverContext = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (settingsVersion != null) __obj.updateDynamic("settingsVersion")(settingsVersion)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (settingsVersion != null) __obj.updateDynamic("settingsVersion")(settingsVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailoverContext]
   }
 }

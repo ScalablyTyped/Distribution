@@ -36,13 +36,13 @@ object Anon_ClassName {
     scaleMode: js.Any = null
   ): Anon_ClassName = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(clearCanvas)) __obj.updateDynamic("clearCanvas")(clearCanvas)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(hideOnTransparent)) __obj.updateDynamic("hideOnTransparent")(hideOnTransparent)
-    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
-    if (!js.isUndefined(progressiveLoad)) __obj.updateDynamic("progressiveLoad")(progressiveLoad)
-    if (scaleMode != null) __obj.updateDynamic("scaleMode")(scaleMode)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearCanvas)) __obj.updateDynamic("clearCanvas")(clearCanvas.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnTransparent)) __obj.updateDynamic("hideOnTransparent")(hideOnTransparent.asInstanceOf[js.Any])
+    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressiveLoad)) __obj.updateDynamic("progressiveLoad")(progressiveLoad.asInstanceOf[js.Any])
+    if (scaleMode != null) __obj.updateDynamic("scaleMode")(scaleMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassName]
   }
 }

@@ -13,9 +13,9 @@ trait ChangeTrust extends BaseOptions {
 object ChangeTrust {
   @scala.inline
   def apply(asset: Asset, limit: String = null, source: String = null): ChangeTrust = {
-    val __obj = js.Dynamic.literal(asset = asset)
-    if (limit != null) __obj.updateDynamic("limit")(limit)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(asset = asset.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeTrust]
   }
 }

@@ -33,12 +33,12 @@ object BreakpointsOptions {
     val __obj = js.Dynamic.literal()
     if (between != null) __obj.updateDynamic("between")(js.Any.fromFunction2(between))
     if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (only != null) __obj.updateDynamic("only")(js.Any.fromFunction1(only))
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction1(up))
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(js.Any.fromFunction1(width))
     __obj.asInstanceOf[BreakpointsOptions]
   }

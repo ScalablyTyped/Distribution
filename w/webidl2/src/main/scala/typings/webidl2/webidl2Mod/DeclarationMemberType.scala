@@ -25,7 +25,7 @@ object DeclarationMemberType {
     readonly: Boolean,
     `type`: iterable | setlike | maplike
   ): DeclarationMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, readonly = readonly)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarationMemberType]
   }

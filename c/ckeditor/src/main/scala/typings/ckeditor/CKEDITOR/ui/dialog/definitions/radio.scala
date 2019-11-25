@@ -17,7 +17,7 @@ object radio {
     items: js.Array[(js.Tuple2[String, String]) | js.Array[String]],
     validate: () => Boolean = null
   ): radio = {
-    val __obj = js.Dynamic.literal(default = default, items = items)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction0(validate))
     __obj.asInstanceOf[radio]
   }

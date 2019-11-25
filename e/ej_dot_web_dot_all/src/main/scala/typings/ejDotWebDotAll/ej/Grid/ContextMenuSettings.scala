@@ -37,11 +37,11 @@ object ContextMenuSettings {
     subContextMenu: js.Array[ContextMenuSettingsSubContextMenu] = null
   ): ContextMenuSettings = {
     val __obj = js.Dynamic.literal()
-    if (contextMenuItems != null) __obj.updateDynamic("contextMenuItems")(contextMenuItems)
-    if (customContextMenuItems != null) __obj.updateDynamic("customContextMenuItems")(customContextMenuItems)
-    if (!js.isUndefined(disableDefaultItems)) __obj.updateDynamic("disableDefaultItems")(disableDefaultItems)
-    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu)
-    if (subContextMenu != null) __obj.updateDynamic("subContextMenu")(subContextMenu)
+    if (contextMenuItems != null) __obj.updateDynamic("contextMenuItems")(contextMenuItems.asInstanceOf[js.Any])
+    if (customContextMenuItems != null) __obj.updateDynamic("customContextMenuItems")(customContextMenuItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDefaultItems)) __obj.updateDynamic("disableDefaultItems")(disableDefaultItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu.asInstanceOf[js.Any])
+    if (subContextMenu != null) __obj.updateDynamic("subContextMenu")(subContextMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuSettings]
   }
 }

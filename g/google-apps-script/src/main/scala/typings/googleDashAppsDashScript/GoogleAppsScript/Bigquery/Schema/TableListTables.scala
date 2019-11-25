@@ -34,17 +34,17 @@ object TableListTables {
     view: TableListTablesView = null
   ): TableListTables = {
     val __obj = js.Dynamic.literal()
-    if (clustering != null) __obj.updateDynamic("clustering")(clustering)
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (tableReference != null) __obj.updateDynamic("tableReference")(tableReference)
-    if (timePartitioning != null) __obj.updateDynamic("timePartitioning")(timePartitioning)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (clustering != null) __obj.updateDynamic("clustering")(clustering.asInstanceOf[js.Any])
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (tableReference != null) __obj.updateDynamic("tableReference")(tableReference.asInstanceOf[js.Any])
+    if (timePartitioning != null) __obj.updateDynamic("timePartitioning")(timePartitioning.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableListTables]
   }
 }

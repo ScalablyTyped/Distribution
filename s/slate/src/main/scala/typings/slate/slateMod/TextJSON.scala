@@ -16,10 +16,10 @@ object TextJSON {
   @scala.inline
   def apply(key: String = null, marks: js.Array[MarkJSON] = null, `object`: text = null, text: String = null): TextJSON = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (marks != null) __obj.updateDynamic("marks")(marks)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextJSON]
   }
 }

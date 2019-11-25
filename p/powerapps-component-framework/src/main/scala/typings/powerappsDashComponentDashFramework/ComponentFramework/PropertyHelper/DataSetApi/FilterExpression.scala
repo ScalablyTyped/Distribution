@@ -30,8 +30,8 @@ object FilterExpression {
     filterOperator: FilterOperator,
     filters: js.Array[FilterExpression] = null
   ): FilterExpression = {
-    val __obj = js.Dynamic.literal(conditions = conditions, filterOperator = filterOperator)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], filterOperator = filterOperator.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterExpression]
   }
 }

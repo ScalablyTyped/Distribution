@@ -26,8 +26,8 @@ object strings {
     NATIVE_CONTROL_SELECTOR: `DOTmdc-select__native-control`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT, LABEL_SELECTOR = LABEL_SELECTOR, LINE_RIPPLE_SELECTOR = LINE_RIPPLE_SELECTOR, NATIVE_CONTROL_SELECTOR = NATIVE_CONTROL_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT.asInstanceOf[js.Any], LABEL_SELECTOR = LABEL_SELECTOR.asInstanceOf[js.Any], LINE_RIPPLE_SELECTOR = LINE_RIPPLE_SELECTOR.asInstanceOf[js.Any], NATIVE_CONTROL_SELECTOR = NATIVE_CONTROL_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

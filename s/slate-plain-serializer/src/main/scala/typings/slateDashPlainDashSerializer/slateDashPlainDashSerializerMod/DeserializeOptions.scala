@@ -21,9 +21,9 @@ object DeserializeOptions {
     toJson: js.UndefOr[Boolean] = js.undefined
   ): DeserializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultBlock != null) __obj.updateDynamic("defaultBlock")(defaultBlock)
+    if (defaultBlock != null) __obj.updateDynamic("defaultBlock")(defaultBlock.asInstanceOf[js.Any])
     if (defaultMarks != null) __obj.updateDynamic("defaultMarks")(defaultMarks.asInstanceOf[js.Any])
-    if (!js.isUndefined(toJson)) __obj.updateDynamic("toJson")(toJson)
+    if (!js.isUndefined(toJson)) __obj.updateDynamic("toJson")(toJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeserializeOptions]
   }
 }

@@ -1,6 +1,6 @@
 package typings.log4javascript.log4javascriptMod
 
-import typings.log4javascript.Fn_Appender
+import typings.log4javascript.Anon_AppendResult
 import typings.std.HTMLElement
 import typings.std.Window
 import scala.scalajs.js
@@ -51,7 +51,10 @@ class InPageAppender protected () extends Appender {
   	 * Adds a function with the name specified to the list of functions available on the command line. This feature may be used
   	 * to add custom functions to the command line.
   	 */
-  def addCommandLineFunction(functionName: String, commandLineFunction: Fn_Appender): Unit = js.native
+  def addCommandLineFunction(
+    functionName: String,
+    commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ Anon_AppendResult, _]
+  ): Unit = js.native
   /**
   	 * Sets a CSS style property on the HTML element containing the console iframe.
   	 */

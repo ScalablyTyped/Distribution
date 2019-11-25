@@ -5,11 +5,11 @@ import typings.angular.JQLite
 import typings.angular.angularMod.IAttributes
 import typings.angular.angularMod.IController
 import typings.angular.angularMod.IFormController
+import typings.angular.angularMod.IPromise
 import typings.angular.angularMod.IScope
 import typings.angular.angularMod.ITranscludeFunction
 import typings.angularDashFormly.Anon_Attribute
 import typings.angularDashFormly.Anon_ErrorExistsAndShouldBeVisible
-import typings.angularDashFormly.Fn_FieldConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,10 +44,10 @@ object IFieldRuntimeObject {
     optionsTypes: String | js.Array[String] = null,
     resetModel: () => Unit = null,
     runExpressions: () => Unit = null,
-    template: String | Fn_FieldConfiguration = null,
+    template: String | (js.Function1[/* fieldConfiguration */ IFieldConfigurationObject, String | IPromise[String]]) = null,
     templateManipulators: ITemplateManipulators = null,
     templateOptions: ITemplateOptions = null,
-    templateUrl: String | Fn_FieldConfiguration = null,
+    templateUrl: String | (js.Function1[/* fieldConfiguration */ IFieldConfigurationObject, String | IPromise[String]]) = null,
     `type`: String = null,
     updateInitialValue: () => Unit = null,
     validation: Anon_ErrorExistsAndShouldBeVisible = null,
@@ -56,38 +56,38 @@ object IFieldRuntimeObject {
     watcher: IWatcher | js.Array[IWatcher] = null,
     wrapper: String | js.Array[String] = null
   ): IFieldRuntimeObject = {
-    val __obj = js.Dynamic.literal(model = model)
-    if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
+    if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes)
-    if (expressionProperties != null) __obj.updateDynamic("expressionProperties")(expressionProperties)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
+    if (expressionProperties != null) __obj.updateDynamic("expressionProperties")(expressionProperties.asInstanceOf[js.Any])
     if (formControl != null) __obj.updateDynamic("formControl")(formControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
     if (hideExpression != null) __obj.updateDynamic("hideExpression")(hideExpression.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(js.Any.fromFunction5(link))
-    if (modelOptions != null) __obj.updateDynamic("modelOptions")(modelOptions)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (ngModelAttrs != null) __obj.updateDynamic("ngModelAttrs")(ngModelAttrs)
-    if (ngModelElAttrs != null) __obj.updateDynamic("ngModelElAttrs")(ngModelElAttrs)
-    if (!js.isUndefined(noFormControl)) __obj.updateDynamic("noFormControl")(noFormControl)
+    if (modelOptions != null) __obj.updateDynamic("modelOptions")(modelOptions.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ngModelAttrs != null) __obj.updateDynamic("ngModelAttrs")(ngModelAttrs.asInstanceOf[js.Any])
+    if (ngModelElAttrs != null) __obj.updateDynamic("ngModelElAttrs")(ngModelElAttrs.asInstanceOf[js.Any])
+    if (!js.isUndefined(noFormControl)) __obj.updateDynamic("noFormControl")(noFormControl.asInstanceOf[js.Any])
     if (optionsTypes != null) __obj.updateDynamic("optionsTypes")(optionsTypes.asInstanceOf[js.Any])
     if (resetModel != null) __obj.updateDynamic("resetModel")(js.Any.fromFunction0(resetModel))
     if (runExpressions != null) __obj.updateDynamic("runExpressions")(js.Any.fromFunction0(runExpressions))
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateManipulators != null) __obj.updateDynamic("templateManipulators")(templateManipulators)
-    if (templateOptions != null) __obj.updateDynamic("templateOptions")(templateOptions)
+    if (templateManipulators != null) __obj.updateDynamic("templateManipulators")(templateManipulators.asInstanceOf[js.Any])
+    if (templateOptions != null) __obj.updateDynamic("templateOptions")(templateOptions.asInstanceOf[js.Any])
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (updateInitialValue != null) __obj.updateDynamic("updateInitialValue")(js.Any.fromFunction0(updateInitialValue))
-    if (validation != null) __obj.updateDynamic("validation")(validation)
-    if (validators != null) __obj.updateDynamic("validators")(validators)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (watcher != null) __obj.updateDynamic("watcher")(watcher.asInstanceOf[js.Any])
     if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldRuntimeObject]

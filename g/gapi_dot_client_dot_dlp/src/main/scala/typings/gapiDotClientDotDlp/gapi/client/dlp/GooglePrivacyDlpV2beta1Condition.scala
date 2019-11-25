@@ -21,9 +21,9 @@ object GooglePrivacyDlpV2beta1Condition {
     value: GooglePrivacyDlpV2beta1Value = null
   ): GooglePrivacyDlpV2beta1Condition = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Condition]
   }
 }

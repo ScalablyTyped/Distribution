@@ -85,7 +85,7 @@ object IAttachmentsModel_ {
     toJSON: () => IAttachments,
     remove: /* key */ String => Unit = null
   ): IAttachmentsModel_ = {
-    val __obj = js.Dynamic.literal(changed = changed, clear = js.Any.fromFunction0(clear), contentFactory = contentFactory, dispose = js.Any.fromFunction0(dispose), fromJSON = js.Any.fromFunction1(fromJSON), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), isDisposed = isDisposed, keys = keys, length = length, set = js.Any.fromFunction2(set), stateChanged = stateChanged, toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), contentFactory = contentFactory.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), fromJSON = js.Any.fromFunction1(fromJSON), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), isDisposed = isDisposed.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], set = js.Any.fromFunction2(set), stateChanged = stateChanged.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     __obj.asInstanceOf[IAttachmentsModel_]
   }

@@ -21,8 +21,8 @@ object ActionCodeSettings {
     url: String,
     handleCodeInApp: js.UndefOr[Boolean] = js.undefined
   ): ActionCodeSettings = {
-    val __obj = js.Dynamic.literal(android = android, iOS = iOS, url = url)
-    if (!js.isUndefined(handleCodeInApp)) __obj.updateDynamic("handleCodeInApp")(handleCodeInApp)
+    val __obj = js.Dynamic.literal(android = android.asInstanceOf[js.Any], iOS = iOS.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleCodeInApp)) __obj.updateDynamic("handleCodeInApp")(handleCodeInApp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionCodeSettings]
   }
 }

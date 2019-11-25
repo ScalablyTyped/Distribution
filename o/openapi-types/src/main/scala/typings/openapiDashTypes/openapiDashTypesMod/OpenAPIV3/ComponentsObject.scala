@@ -31,15 +31,15 @@ object ComponentsObject {
     securitySchemes: StringDictionary[ReferenceObject | SecuritySchemeObject] = null
   ): ComponentsObject = {
     val __obj = js.Dynamic.literal()
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
-    if (examples != null) __obj.updateDynamic("examples")(examples)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (links != null) __obj.updateDynamic("links")(links)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (requestBodies != null) __obj.updateDynamic("requestBodies")(requestBodies)
-    if (responses != null) __obj.updateDynamic("responses")(responses)
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas)
-    if (securitySchemes != null) __obj.updateDynamic("securitySchemes")(securitySchemes)
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (requestBodies != null) __obj.updateDynamic("requestBodies")(requestBodies.asInstanceOf[js.Any])
+    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
+    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
+    if (securitySchemes != null) __obj.updateDynamic("securitySchemes")(securitySchemes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentsObject]
   }
 }

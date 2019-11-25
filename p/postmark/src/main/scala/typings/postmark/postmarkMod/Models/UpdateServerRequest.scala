@@ -1,6 +1,5 @@
 package typings.postmark.postmarkMod.Models
 
-import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,7 @@ class UpdateServerRequest protected ()
     PostFirstOpenOnly: js.UndefOr[Boolean],
     InboundSpamThreshold: js.UndefOr[Double],
     TrackOpens: js.UndefOr[Boolean],
-    TrackLinks: js.UndefOr[LinkTrackingOptions],
+    TrackLinks: js.UndefOr[typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions],
     IncludeBounceContentInHook: js.UndefOr[Boolean],
     EnableSmtpApiErrorHooks: js.UndefOr[Boolean]
   ) = this()

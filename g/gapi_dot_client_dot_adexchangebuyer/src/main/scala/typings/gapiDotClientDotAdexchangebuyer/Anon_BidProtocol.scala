@@ -42,10 +42,10 @@ object Anon_BidProtocol {
     url: String = null
   ): Anon_BidProtocol = {
     val __obj = js.Dynamic.literal()
-    if (bidProtocol != null) __obj.updateDynamic("bidProtocol")(bidProtocol)
+    if (bidProtocol != null) __obj.updateDynamic("bidProtocol")(bidProtocol.asInstanceOf[js.Any])
     if (maximumQps != null) __obj.updateDynamic("maximumQps")(maximumQps.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BidProtocol]
   }
 }

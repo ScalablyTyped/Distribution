@@ -16,8 +16,8 @@ object McfDataRows {
     primitiveValue: String = null
   ): McfDataRows = {
     val __obj = js.Dynamic.literal()
-    if (conversionPathValue != null) __obj.updateDynamic("conversionPathValue")(conversionPathValue)
-    if (primitiveValue != null) __obj.updateDynamic("primitiveValue")(primitiveValue)
+    if (conversionPathValue != null) __obj.updateDynamic("conversionPathValue")(conversionPathValue.asInstanceOf[js.Any])
+    if (primitiveValue != null) __obj.updateDynamic("primitiveValue")(primitiveValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[McfDataRows]
   }
 }

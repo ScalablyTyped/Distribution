@@ -14,7 +14,7 @@ trait Anon_Extractor extends js.Object {
 object Anon_Extractor {
   @scala.inline
   def apply(extractor: Extractor, staticReflector: StaticReflector): Anon_Extractor = {
-    val __obj = js.Dynamic.literal(extractor = extractor, staticReflector = staticReflector)
+    val __obj = js.Dynamic.literal(extractor = extractor.asInstanceOf[js.Any], staticReflector = staticReflector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Extractor]
   }

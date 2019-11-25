@@ -23,8 +23,8 @@ trait Shard extends js.Object {
 object Shard {
   @scala.inline
   def apply(name: String, ptr: Boolean, `type`: normal): Shard = {
-    val __obj = js.Dynamic.literal(name = name, ptr = ptr)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ptr = ptr.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shard]
   }
 }

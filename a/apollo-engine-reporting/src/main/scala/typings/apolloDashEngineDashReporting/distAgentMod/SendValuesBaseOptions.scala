@@ -5,26 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SendValuesBaseOptions extends VariableValueOptions {
-  var all: js.UndefOr[`true`] = js.undefined
-  var exceptNames: js.UndefOr[js.Array[String]] = js.undefined
-  var none: js.UndefOr[`true`] = js.undefined
-  var onlyNames: js.UndefOr[js.Array[String]] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.apolloDashEngineDashReporting.Anon_OnlyNames
+  - typings.apolloDashEngineDashReporting.Anon_ExceptNames
+  - typings.apolloDashEngineDashReporting.Anon_All
+  - typings.apolloDashEngineDashReporting.Anon_None
+*/
+trait SendValuesBaseOptions extends VariableValueOptions
 
 object SendValuesBaseOptions {
   @scala.inline
-  def apply(
-    all: `true` = null,
-    exceptNames: js.Array[String] = null,
-    none: `true` = null,
-    onlyNames: js.Array[String] = null
-  ): SendValuesBaseOptions = {
-    val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all)
-    if (exceptNames != null) __obj.updateDynamic("exceptNames")(exceptNames)
-    if (none != null) __obj.updateDynamic("none")(none)
-    if (onlyNames != null) __obj.updateDynamic("onlyNames")(onlyNames)
+  def Anon_OnlyNames(onlyNames: js.Array[String]): SendValuesBaseOptions = {
+    val __obj = js.Dynamic.literal(onlyNames = onlyNames.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SendValuesBaseOptions]
+  }
+  @scala.inline
+  def Anon_ExceptNames(exceptNames: js.Array[String]): SendValuesBaseOptions = {
+    val __obj = js.Dynamic.literal(exceptNames = exceptNames.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SendValuesBaseOptions]
+  }
+  @scala.inline
+  def Anon_All(all: `true`): SendValuesBaseOptions = {
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SendValuesBaseOptions]
+  }
+  @scala.inline
+  def Anon_None(none: `true`): SendValuesBaseOptions = {
+    val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SendValuesBaseOptions]
   }
 }

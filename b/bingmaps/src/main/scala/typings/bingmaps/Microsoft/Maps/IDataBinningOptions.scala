@@ -57,11 +57,11 @@ object IDataBinningOptions {
     scaleCallback: (/* binInfo */ IDataBinInfo, /* min */ IDataBinMetrics, /* max */ IDataBinMetrics) => Double = null
   ): IDataBinningOptions = {
     val __obj = js.Dynamic.literal()
-    if (aggregationProperty != null) __obj.updateDynamic("aggregationProperty")(aggregationProperty)
+    if (aggregationProperty != null) __obj.updateDynamic("aggregationProperty")(aggregationProperty.asInstanceOf[js.Any])
     if (colorCallback != null) __obj.updateDynamic("colorCallback")(js.Any.fromFunction3(colorCallback))
-    if (dataBinType != null) __obj.updateDynamic("dataBinType")(dataBinType)
-    if (distanceUnits != null) __obj.updateDynamic("distanceUnits")(distanceUnits)
-    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
+    if (dataBinType != null) __obj.updateDynamic("dataBinType")(dataBinType.asInstanceOf[js.Any])
+    if (distanceUnits != null) __obj.updateDynamic("distanceUnits")(distanceUnits.asInstanceOf[js.Any])
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (scaleCallback != null) __obj.updateDynamic("scaleCallback")(js.Any.fromFunction3(scaleCallback))
     __obj.asInstanceOf[IDataBinningOptions]

@@ -15,8 +15,8 @@ object ConnectedRouterProps {
   @scala.inline
   def apply[State](history: History[LocationState] = null, store: js.Any = null): ConnectedRouterProps[State] = {
     val __obj = js.Dynamic.literal()
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectedRouterProps[State]]
   }
 }

@@ -52,14 +52,14 @@ object _APNSSandboxChannelRequest {
     TokenKeyId: String = null
   ): _APNSSandboxChannelRequest = {
     val __obj = js.Dynamic.literal()
-    if (BundleId != null) __obj.updateDynamic("BundleId")(BundleId)
-    if (Certificate != null) __obj.updateDynamic("Certificate")(Certificate)
-    if (DefaultAuthenticationMethod != null) __obj.updateDynamic("DefaultAuthenticationMethod")(DefaultAuthenticationMethod)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
-    if (PrivateKey != null) __obj.updateDynamic("PrivateKey")(PrivateKey)
-    if (TeamId != null) __obj.updateDynamic("TeamId")(TeamId)
-    if (TokenKey != null) __obj.updateDynamic("TokenKey")(TokenKey)
-    if (TokenKeyId != null) __obj.updateDynamic("TokenKeyId")(TokenKeyId)
+    if (BundleId != null) __obj.updateDynamic("BundleId")(BundleId.asInstanceOf[js.Any])
+    if (Certificate != null) __obj.updateDynamic("Certificate")(Certificate.asInstanceOf[js.Any])
+    if (DefaultAuthenticationMethod != null) __obj.updateDynamic("DefaultAuthenticationMethod")(DefaultAuthenticationMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (PrivateKey != null) __obj.updateDynamic("PrivateKey")(PrivateKey.asInstanceOf[js.Any])
+    if (TeamId != null) __obj.updateDynamic("TeamId")(TeamId.asInstanceOf[js.Any])
+    if (TokenKey != null) __obj.updateDynamic("TokenKey")(TokenKey.asInstanceOf[js.Any])
+    if (TokenKeyId != null) __obj.updateDynamic("TokenKeyId")(TokenKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_APNSSandboxChannelRequest]
   }
 }

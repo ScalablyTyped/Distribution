@@ -12,7 +12,7 @@ trait WidgetMetadataResponse extends js.Object {
 object WidgetMetadataResponse {
   @scala.inline
   def apply(uri: String, widgetMetadata: WidgetMetadata): WidgetMetadataResponse = {
-    val __obj = js.Dynamic.literal(uri = uri, widgetMetadata = widgetMetadata)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any], widgetMetadata = widgetMetadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WidgetMetadataResponse]
   }

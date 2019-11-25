@@ -31,12 +31,12 @@ object TrackerParams {
     useWebGL: js.UndefOr[Boolean] = js.undefined
   ): TrackerParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(constantVelocity)) __obj.updateDynamic("constantVelocity")(constantVelocity)
-    if (faceDetection != null) __obj.updateDynamic("faceDetection")(faceDetection)
+    if (!js.isUndefined(constantVelocity)) __obj.updateDynamic("constantVelocity")(constantVelocity.asInstanceOf[js.Any])
+    if (faceDetection != null) __obj.updateDynamic("faceDetection")(faceDetection.asInstanceOf[js.Any])
     if (scoreThreshold != null) __obj.updateDynamic("scoreThreshold")(scoreThreshold.asInstanceOf[js.Any])
     if (searchWindow != null) __obj.updateDynamic("searchWindow")(searchWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopOnConvergence)) __obj.updateDynamic("stopOnConvergence")(stopOnConvergence)
-    if (!js.isUndefined(useWebGL)) __obj.updateDynamic("useWebGL")(useWebGL)
+    if (!js.isUndefined(stopOnConvergence)) __obj.updateDynamic("stopOnConvergence")(stopOnConvergence.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWebGL)) __obj.updateDynamic("useWebGL")(useWebGL.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackerParams]
   }
 }

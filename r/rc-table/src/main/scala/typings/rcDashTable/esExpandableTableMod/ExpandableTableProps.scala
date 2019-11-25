@@ -2,7 +2,6 @@ package typings.rcDashTable.esExpandableTableMod
 
 import typings.rcDashTable.Anon_Expandable
 import typings.rcDashTable.Anon_HandleExpandChange
-import typings.rcDashTable.esColumnManagerMod.default
 import typings.rcDashTable.esInterfaceMod.ExpandedRowRender
 import typings.rcDashTable.esInterfaceMod.GetRowKey
 import typings.rcDashTable.esInterfaceMod.Key
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 trait ExpandableTableProps[ValueType] extends js.Object {
   var childrenColumnName: js.UndefOr[String] = js.undefined
-  var columnManager: default
+  var columnManager: typings.rcDashTable.esColumnManagerMod.default
   var data: js.UndefOr[js.Array[ValueType]] = js.undefined
   var defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined
   var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
@@ -40,7 +39,7 @@ object ExpandableTableProps {
   @scala.inline
   def apply[ValueType](
     children: Anon_HandleExpandChange[ValueType] => ReactNode,
-    columnManager: default,
+    columnManager: typings.rcDashTable.esColumnManagerMod.default,
     getRowKey: (ValueType, /* index */ Double) => Key,
     prefixCls: String,
     store: TableStore,
@@ -58,16 +57,16 @@ object ExpandableTableProps {
     onExpand: (/* expanded */ Boolean, ValueType) => Unit = null,
     onExpandedRowsChange: /* expandedKeys */ js.Array[Key] => Unit = null
   ): ExpandableTableProps[ValueType] = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), columnManager = columnManager, getRowKey = js.Any.fromFunction2(getRowKey), prefixCls = prefixCls, store = store)
-    if (childrenColumnName != null) __obj.updateDynamic("childrenColumnName")(childrenColumnName)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows)
-    if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), columnManager = columnManager.asInstanceOf[js.Any], getRowKey = js.Any.fromFunction2(getRowKey), prefixCls = prefixCls.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+    if (childrenColumnName != null) __obj.updateDynamic("childrenColumnName")(childrenColumnName.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.asInstanceOf[js.Any])
+    if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
-    if (!js.isUndefined(expandIconAsCell)) __obj.updateDynamic("expandIconAsCell")(expandIconAsCell)
+    if (!js.isUndefined(expandIconAsCell)) __obj.updateDynamic("expandIconAsCell")(expandIconAsCell.asInstanceOf[js.Any])
     if (expandIconColumnIndex != null) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.asInstanceOf[js.Any])
     if (expandedRowClassName != null) __obj.updateDynamic("expandedRowClassName")(js.Any.fromFunction3(expandedRowClassName))
-    if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys)
+    if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys.asInstanceOf[js.Any])
     if (expandedRowRender != null) __obj.updateDynamic("expandedRowRender")(js.Any.fromFunction4(expandedRowRender))
     if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))

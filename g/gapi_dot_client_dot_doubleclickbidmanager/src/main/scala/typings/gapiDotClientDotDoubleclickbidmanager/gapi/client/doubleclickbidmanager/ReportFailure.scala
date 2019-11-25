@@ -13,7 +13,7 @@ object ReportFailure {
   @scala.inline
   def apply(errorCode: String = null): ReportFailure = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportFailure]
   }
 }

@@ -16,8 +16,8 @@ trait Anon_IdentifierType extends js.Object {
 object Anon_IdentifierType {
   @scala.inline
   def apply(identifier: VisitorIdentifier, `type`: user, user: UserIdentifier): Anon_IdentifierType = {
-    val __obj = js.Dynamic.literal(identifier = identifier, user = user)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdentifierType]
   }
 }

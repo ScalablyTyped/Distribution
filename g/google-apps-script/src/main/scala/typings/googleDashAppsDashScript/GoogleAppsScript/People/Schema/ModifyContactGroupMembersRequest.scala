@@ -13,8 +13,8 @@ object ModifyContactGroupMembersRequest {
   @scala.inline
   def apply(resourceNamesToAdd: js.Array[String] = null, resourceNamesToRemove: js.Array[String] = null): ModifyContactGroupMembersRequest = {
     val __obj = js.Dynamic.literal()
-    if (resourceNamesToAdd != null) __obj.updateDynamic("resourceNamesToAdd")(resourceNamesToAdd)
-    if (resourceNamesToRemove != null) __obj.updateDynamic("resourceNamesToRemove")(resourceNamesToRemove)
+    if (resourceNamesToAdd != null) __obj.updateDynamic("resourceNamesToAdd")(resourceNamesToAdd.asInstanceOf[js.Any])
+    if (resourceNamesToRemove != null) __obj.updateDynamic("resourceNamesToRemove")(resourceNamesToRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyContactGroupMembersRequest]
   }
 }

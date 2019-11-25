@@ -15,8 +15,8 @@ trait Anon_Lastread extends _EventData {
 object Anon_Lastread {
   @scala.inline
   def apply(nick: String, timestamp: Double, `type`: last_read): Anon_Lastread = {
-    val __obj = js.Dynamic.literal(nick = nick, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(nick = nick.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lastread]
   }
 }

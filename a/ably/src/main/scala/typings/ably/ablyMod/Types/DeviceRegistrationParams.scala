@@ -20,10 +20,10 @@ object DeviceRegistrationParams {
     state: DevicePushState = null
   ): DeviceRegistrationParams = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceRegistrationParams]
   }
 }

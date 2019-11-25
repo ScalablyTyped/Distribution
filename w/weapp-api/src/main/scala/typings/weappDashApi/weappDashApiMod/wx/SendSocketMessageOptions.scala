@@ -23,7 +23,7 @@ object SendSocketMessageOptions {
     fail: /* res */ js.Any => Unit = null,
     success: /* res */ js.Any => Unit = null
   ): SendSocketMessageOptions = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

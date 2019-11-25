@@ -17,7 +17,7 @@ object Plugin {
     beforeChain: (js.Array[_], js.Any) => js.Array[_],
     name: String
   ): Plugin = {
-    val __obj = js.Dynamic.literal(afterChain = js.Any.fromFunction2(afterChain), beforeChain = js.Any.fromFunction2(beforeChain), name = name)
+    val __obj = js.Dynamic.literal(afterChain = js.Any.fromFunction2(afterChain), beforeChain = js.Any.fromFunction2(beforeChain), name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Plugin]
   }

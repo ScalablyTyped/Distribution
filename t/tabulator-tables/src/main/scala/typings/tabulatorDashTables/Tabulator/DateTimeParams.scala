@@ -20,9 +20,9 @@ object DateTimeParams {
     outputFormat: String = null
   ): DateTimeParams = {
     val __obj = js.Dynamic.literal()
-    if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat)
+    if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat.asInstanceOf[js.Any])
     if (invalidPlaceholder != null) __obj.updateDynamic("invalidPlaceholder")(invalidPlaceholder.asInstanceOf[js.Any])
-    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat)
+    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeParams]
   }
 }

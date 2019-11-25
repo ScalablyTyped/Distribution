@@ -38,10 +38,10 @@ object IProgressBarProps {
     value: Int | Double = null
   ): IProgressBarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (!js.isUndefined(stripes)) __obj.updateDynamic("stripes")(stripes)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripes)) __obj.updateDynamic("stripes")(stripes.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressBarProps]
   }

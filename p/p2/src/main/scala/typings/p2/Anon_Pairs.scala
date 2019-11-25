@@ -13,8 +13,8 @@ trait Anon_Pairs extends js.Object {
 object Anon_Pairs {
   @scala.inline
   def apply(pairs: js.Array[Body], `type`: String): Anon_Pairs = {
-    val __obj = js.Dynamic.literal(pairs = pairs)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(pairs = pairs.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Pairs]
   }
 }

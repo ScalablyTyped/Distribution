@@ -24,10 +24,10 @@ object JobMessage {
     time: String = null
   ): JobMessage = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (messageImportance != null) __obj.updateDynamic("messageImportance")(messageImportance)
-    if (messageText != null) __obj.updateDynamic("messageText")(messageText)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (messageImportance != null) __obj.updateDynamic("messageImportance")(messageImportance.asInstanceOf[js.Any])
+    if (messageText != null) __obj.updateDynamic("messageText")(messageText.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobMessage]
   }
 }

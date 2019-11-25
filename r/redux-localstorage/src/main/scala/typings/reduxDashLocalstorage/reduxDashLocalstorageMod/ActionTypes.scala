@@ -12,7 +12,7 @@ trait ActionTypes extends js.Object {
 object ActionTypes {
   @scala.inline
   def apply(INIT: String): ActionTypes = {
-    val __obj = js.Dynamic.literal(INIT = INIT)
+    val __obj = js.Dynamic.literal(INIT = INIT.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActionTypes]
   }

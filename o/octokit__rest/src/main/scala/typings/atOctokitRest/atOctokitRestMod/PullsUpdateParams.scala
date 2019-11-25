@@ -44,12 +44,12 @@ object PullsUpdateParams {
     state: open | closed = null,
     title: String = null
   ): PullsUpdateParams = {
-    val __obj = js.Dynamic.literal(owner = owner, pull_number = pull_number, repo = repo)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (!js.isUndefined(maintainer_can_modify)) __obj.updateDynamic("maintainer_can_modify")(maintainer_can_modify)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintainer_can_modify)) __obj.updateDynamic("maintainer_can_modify")(maintainer_can_modify.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsUpdateParams]
   }
 }

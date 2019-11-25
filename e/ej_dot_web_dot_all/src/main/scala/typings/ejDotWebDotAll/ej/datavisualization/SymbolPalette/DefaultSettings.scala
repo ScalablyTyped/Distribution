@@ -19,8 +19,8 @@ object DefaultSettings {
   @scala.inline
   def apply(connector: js.Any = null, node: js.Any = null): DefaultSettings = {
     val __obj = js.Dynamic.literal()
-    if (connector != null) __obj.updateDynamic("connector")(connector)
-    if (node != null) __obj.updateDynamic("node")(node)
+    if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultSettings]
   }
 }

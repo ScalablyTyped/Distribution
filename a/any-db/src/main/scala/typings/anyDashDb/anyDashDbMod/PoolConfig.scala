@@ -74,7 +74,7 @@ object PoolConfig {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction2(onConnect))
     if (reapInterval != null) __obj.updateDynamic("reapInterval")(reapInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshIdle)) __obj.updateDynamic("refreshIdle")(refreshIdle)
+    if (!js.isUndefined(refreshIdle)) __obj.updateDynamic("refreshIdle")(refreshIdle.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction2(reset))
     if (shouldDestroyConnection != null) __obj.updateDynamic("shouldDestroyConnection")(js.Any.fromFunction1(shouldDestroyConnection))
     __obj.asInstanceOf[PoolConfig]

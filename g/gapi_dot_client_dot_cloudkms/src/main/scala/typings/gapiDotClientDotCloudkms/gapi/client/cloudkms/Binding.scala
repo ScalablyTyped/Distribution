@@ -50,9 +50,9 @@ object Binding {
   @scala.inline
   def apply(condition: Expr = null, members: js.Array[String] = null, role: String = null): Binding = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (members != null) __obj.updateDynamic("members")(members)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Binding]
   }
 }

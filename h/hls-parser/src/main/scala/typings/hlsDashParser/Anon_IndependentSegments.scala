@@ -23,10 +23,10 @@ object Anon_IndependentSegments {
     uri: String = null,
     version: Int | Double = null
   ): Anon_IndependentSegments = {
-    val __obj = js.Dynamic.literal(independentSegments = independentSegments, isMasterPlaylist = isMasterPlaylist)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(independentSegments = independentSegments.asInstanceOf[js.Any], isMasterPlaylist = isMasterPlaylist.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IndependentSegments]
   }

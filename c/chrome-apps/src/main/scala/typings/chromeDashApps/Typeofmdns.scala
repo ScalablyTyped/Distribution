@@ -50,7 +50,7 @@ object Typeofmdns {
     forceDiscovery: js.Function0[Unit] => Unit,
     onServiceList: FilteredEvent[js.Function1[/* services */ js.Array[Service], Unit], ServiceTypes]
   ): Typeofmdns = {
-    val __obj = js.Dynamic.literal(MAX_SERVICE_INSTANCES_PER_EVENT = MAX_SERVICE_INSTANCES_PER_EVENT, forceDiscovery = js.Any.fromFunction1(forceDiscovery), onServiceList = onServiceList)
+    val __obj = js.Dynamic.literal(MAX_SERVICE_INSTANCES_PER_EVENT = MAX_SERVICE_INSTANCES_PER_EVENT.asInstanceOf[js.Any], forceDiscovery = js.Any.fromFunction1(forceDiscovery), onServiceList = onServiceList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofmdns]
   }

@@ -30,15 +30,15 @@ object FBInitParams {
     xfbml: js.UndefOr[Boolean] = js.undefined
   ): FBInitParams = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId)
-    if (authResponse != null) __obj.updateDynamic("authResponse")(authResponse)
-    if (!js.isUndefined(cookie)) __obj.updateDynamic("cookie")(cookie)
-    if (!js.isUndefined(frictionlessRequests)) __obj.updateDynamic("frictionlessRequests")(frictionlessRequests)
-    if (hideFlashCallback != null) __obj.updateDynamic("hideFlashCallback")(hideFlashCallback)
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
-    if (version != null) __obj.updateDynamic("version")(version)
-    if (!js.isUndefined(xfbml)) __obj.updateDynamic("xfbml")(xfbml)
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (authResponse != null) __obj.updateDynamic("authResponse")(authResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookie)) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (!js.isUndefined(frictionlessRequests)) __obj.updateDynamic("frictionlessRequests")(frictionlessRequests.asInstanceOf[js.Any])
+    if (hideFlashCallback != null) __obj.updateDynamic("hideFlashCallback")(hideFlashCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (!js.isUndefined(xfbml)) __obj.updateDynamic("xfbml")(xfbml.asInstanceOf[js.Any])
     __obj.asInstanceOf[FBInitParams]
   }
 }

@@ -13,9 +13,9 @@ trait Params extends js.Object {
 object Params {
   @scala.inline
   def apply(assemblyFile: String, methodName: String = null, typeName: String = null): Params = {
-    val __obj = js.Dynamic.literal(assemblyFile = assemblyFile)
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
-    if (typeName != null) __obj.updateDynamic("typeName")(typeName)
+    val __obj = js.Dynamic.literal(assemblyFile = assemblyFile.asInstanceOf[js.Any])
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
+    if (typeName != null) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

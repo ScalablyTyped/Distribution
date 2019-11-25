@@ -13,7 +13,7 @@ trait Anon_CMD extends js.Object {
 object Anon_CMD {
   @scala.inline
   def apply(CMD: `BACKSLASHu001D(kBACKSLASHu0003BACKSLASHu00001E`, OPTIONS: Anon_48): Anon_CMD = {
-    val __obj = js.Dynamic.literal(CMD = CMD, OPTIONS = OPTIONS)
+    val __obj = js.Dynamic.literal(CMD = CMD.asInstanceOf[js.Any], OPTIONS = OPTIONS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CMD]
   }

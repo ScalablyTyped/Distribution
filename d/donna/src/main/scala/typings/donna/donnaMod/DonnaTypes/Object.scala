@@ -27,12 +27,12 @@ object Object {
     paramNames: js.Array[String] = null,
     prototypeProperties: js.Array[js.Array[Double]] = null
   ): Object = {
-    val __obj = js.Dynamic.literal(bindingType = bindingType, name = name, range = range)
-    __obj.updateDynamic("type")(`type`)
-    if (classProperties != null) __obj.updateDynamic("classProperties")(classProperties)
-    if (doc != null) __obj.updateDynamic("doc")(doc)
-    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames)
-    if (prototypeProperties != null) __obj.updateDynamic("prototypeProperties")(prototypeProperties)
+    val __obj = js.Dynamic.literal(bindingType = bindingType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (classProperties != null) __obj.updateDynamic("classProperties")(classProperties.asInstanceOf[js.Any])
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
+    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames.asInstanceOf[js.Any])
+    if (prototypeProperties != null) __obj.updateDynamic("prototypeProperties")(prototypeProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Object]
   }
 }

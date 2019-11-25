@@ -16,7 +16,5 @@ object Index extends js.Object {
   def entryIsConflict(entry: typings.nodegit.indexDashEntryMod.IndexEntry): Boolean = js.native
   def entryStage(entry: typings.nodegit.indexDashEntryMod.IndexEntry): Double = js.native
   def open(indexPath: String): js.Promise[typings.nodegit.indexUnderscoreMod.Index] = js.native
-  type ADD_OPTION = typings.nodegit.indexUnderscoreMod.Index.ADD_OPTION
-  type CAP = typings.nodegit.indexUnderscoreMod.Index.CAP
 }
 

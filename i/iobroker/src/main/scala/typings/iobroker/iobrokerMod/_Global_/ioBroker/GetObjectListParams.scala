@@ -13,7 +13,7 @@ trait GetObjectListParams extends GetObjectViewParams {
 object GetObjectListParams {
   @scala.inline
   def apply(endkey: String, include_docs: Boolean, startkey: String): GetObjectListParams = {
-    val __obj = js.Dynamic.literal(endkey = endkey, include_docs = include_docs, startkey = startkey)
+    val __obj = js.Dynamic.literal(endkey = endkey.asInstanceOf[js.Any], include_docs = include_docs.asInstanceOf[js.Any], startkey = startkey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetObjectListParams]
   }

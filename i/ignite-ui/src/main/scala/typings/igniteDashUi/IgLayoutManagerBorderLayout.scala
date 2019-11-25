@@ -57,13 +57,13 @@ object IgLayoutManagerBorderLayout {
     showRight: js.UndefOr[Boolean] = js.undefined
   ): IgLayoutManagerBorderLayout = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (leftWidth != null) __obj.updateDynamic("leftWidth")(leftWidth)
-    if (rightWidth != null) __obj.updateDynamic("rightWidth")(rightWidth)
-    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
-    if (!js.isUndefined(showLeft)) __obj.updateDynamic("showLeft")(showLeft)
-    if (!js.isUndefined(showRight)) __obj.updateDynamic("showRight")(showRight)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (leftWidth != null) __obj.updateDynamic("leftWidth")(leftWidth.asInstanceOf[js.Any])
+    if (rightWidth != null) __obj.updateDynamic("rightWidth")(rightWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLeft)) __obj.updateDynamic("showLeft")(showLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRight)) __obj.updateDynamic("showRight")(showRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLayoutManagerBorderLayout]
   }
 }

@@ -13,7 +13,7 @@ trait Page extends js.Object {
 object Page {
   @scala.inline
   def apply(buffer: Buffer, offset: Double): Page = {
-    val __obj = js.Dynamic.literal(buffer = buffer, offset = offset)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Page]
   }

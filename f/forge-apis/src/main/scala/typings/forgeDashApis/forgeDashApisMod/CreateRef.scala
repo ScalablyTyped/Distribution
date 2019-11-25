@@ -13,8 +13,8 @@ object CreateRef {
   @scala.inline
   def apply(data: CreateRefData = null, jsonapi: JsonApiVersionJsonapi = null): CreateRef = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (jsonapi != null) __obj.updateDynamic("jsonapi")(jsonapi)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (jsonapi != null) __obj.updateDynamic("jsonapi")(jsonapi.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRef]
   }
 }

@@ -30,14 +30,14 @@ object ResponseInfo {
     statusCode: Int | Double = null,
     statusText: String = null
   ): ResponseInfo = {
-    val __obj = js.Dynamic.literal(responseAvailable = responseAvailable)
-    if (allResponseHeaders != null) __obj.updateDynamic("allResponseHeaders")(allResponseHeaders)
+    val __obj = js.Dynamic.literal(responseAvailable = responseAvailable.asInstanceOf[js.Any])
+    if (allResponseHeaders != null) __obj.updateDynamic("allResponseHeaders")(allResponseHeaders.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseInfo]
   }
 }

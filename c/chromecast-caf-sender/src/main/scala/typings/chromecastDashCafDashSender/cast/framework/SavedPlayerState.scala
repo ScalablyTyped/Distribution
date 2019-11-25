@@ -14,8 +14,8 @@ trait SavedPlayerState extends js.Object {
 object SavedPlayerState {
   @scala.inline
   def apply(currentTime: Double, isPaused: Boolean, mediaInfo: PlayerState = null): SavedPlayerState = {
-    val __obj = js.Dynamic.literal(currentTime = currentTime, isPaused = isPaused)
-    if (mediaInfo != null) __obj.updateDynamic("mediaInfo")(mediaInfo)
+    val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any])
+    if (mediaInfo != null) __obj.updateDynamic("mediaInfo")(mediaInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedPlayerState]
   }
 }

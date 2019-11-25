@@ -32,15 +32,15 @@ object TableProps {
     striped: js.UndefOr[Boolean] = js.undefined
   ): TableProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (!js.isUndefined(condensed)) __obj.updateDynamic("condensed")(condensed)
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
-    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover)
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(condensed)) __obj.updateDynamic("condensed")(condensed.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProps]
   }
 }

@@ -20,7 +20,7 @@ object IWebSocketMessageOptions {
   @scala.inline
   def apply(autoApply: js.UndefOr[Boolean] = js.undefined, filter: String | RegExp = null): IWebSocketMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply)
+    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebSocketMessageOptions]
   }

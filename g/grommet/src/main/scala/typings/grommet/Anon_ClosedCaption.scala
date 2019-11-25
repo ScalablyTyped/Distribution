@@ -29,14 +29,14 @@ object Anon_ClosedCaption {
     volume: js.Any = null
   ): Anon_ClosedCaption = {
     val __obj = js.Dynamic.literal()
-    if (closedCaption != null) __obj.updateDynamic("closedCaption")(closedCaption)
+    if (closedCaption != null) __obj.updateDynamic("closedCaption")(closedCaption.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (configure != null) __obj.updateDynamic("configure")(configure)
-    if (fullScreen != null) __obj.updateDynamic("fullScreen")(fullScreen)
-    if (pause != null) __obj.updateDynamic("pause")(pause)
-    if (play != null) __obj.updateDynamic("play")(play)
-    if (reduceVolume != null) __obj.updateDynamic("reduceVolume")(reduceVolume)
-    if (volume != null) __obj.updateDynamic("volume")(volume)
+    if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
+    if (fullScreen != null) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
+    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (play != null) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
+    if (reduceVolume != null) __obj.updateDynamic("reduceVolume")(reduceVolume.asInstanceOf[js.Any])
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClosedCaption]
   }
 }

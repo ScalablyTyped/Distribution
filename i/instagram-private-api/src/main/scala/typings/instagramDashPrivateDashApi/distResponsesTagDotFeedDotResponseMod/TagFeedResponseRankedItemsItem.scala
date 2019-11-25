@@ -77,20 +77,20 @@ object TagFeedResponseRankedItemsItem {
     preview_comments: js.Array[TagFeedResponsePreviewCommentsItem] = null,
     usertags: TagFeedResponseUsertags = null
   ): TagFeedResponseRankedItemsItem = {
-    val __obj = js.Dynamic.literal(can_viewer_reshare = can_viewer_reshare, can_viewer_save = can_viewer_save, caption = caption, caption_is_edited = caption_is_edited, client_cache_key = client_cache_key, code = code, device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type, has_liked = has_liked, id = id, image_versions2 = image_versions2, like_count = like_count, media_type = media_type, organic_tracking_token = organic_tracking_token, original_height = original_height, original_width = original_width, photo_of_you = photo_of_you, pk = pk, taken_at = taken_at, user = user)
-    if (!js.isUndefined(can_view_more_preview_comments)) __obj.updateDynamic("can_view_more_preview_comments")(can_view_more_preview_comments)
+    val __obj = js.Dynamic.literal(can_viewer_reshare = can_viewer_reshare.asInstanceOf[js.Any], can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], has_liked = has_liked.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], like_count = like_count.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (!js.isUndefined(can_view_more_preview_comments)) __obj.updateDynamic("can_view_more_preview_comments")(can_view_more_preview_comments.asInstanceOf[js.Any])
     if (comment_count != null) __obj.updateDynamic("comment_count")(comment_count.asInstanceOf[js.Any])
-    if (!js.isUndefined(comment_likes_enabled)) __obj.updateDynamic("comment_likes_enabled")(comment_likes_enabled)
-    if (!js.isUndefined(comment_threading_enabled)) __obj.updateDynamic("comment_threading_enabled")(comment_threading_enabled)
-    if (!js.isUndefined(comments_disabled)) __obj.updateDynamic("comments_disabled")(comments_disabled)
-    if (!js.isUndefined(has_more_comments)) __obj.updateDynamic("has_more_comments")(has_more_comments)
+    if (!js.isUndefined(comment_likes_enabled)) __obj.updateDynamic("comment_likes_enabled")(comment_likes_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment_threading_enabled)) __obj.updateDynamic("comment_threading_enabled")(comment_threading_enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(comments_disabled)) __obj.updateDynamic("comments_disabled")(comments_disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_more_comments)) __obj.updateDynamic("has_more_comments")(has_more_comments.asInstanceOf[js.Any])
     if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
     if (lng != null) __obj.updateDynamic("lng")(lng.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (max_num_visible_preview_comments != null) __obj.updateDynamic("max_num_visible_preview_comments")(max_num_visible_preview_comments.asInstanceOf[js.Any])
-    if (next_max_id != null) __obj.updateDynamic("next_max_id")(next_max_id)
-    if (preview_comments != null) __obj.updateDynamic("preview_comments")(preview_comments)
-    if (usertags != null) __obj.updateDynamic("usertags")(usertags)
+    if (next_max_id != null) __obj.updateDynamic("next_max_id")(next_max_id.asInstanceOf[js.Any])
+    if (preview_comments != null) __obj.updateDynamic("preview_comments")(preview_comments.asInstanceOf[js.Any])
+    if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagFeedResponseRankedItemsItem]
   }
 }

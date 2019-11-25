@@ -38,10 +38,10 @@ object _InputSerialization {
     Parquet: _ParquetInput = null
   ): _InputSerialization = {
     val __obj = js.Dynamic.literal()
-    if (CSV != null) __obj.updateDynamic("CSV")(CSV)
+    if (CSV != null) __obj.updateDynamic("CSV")(CSV.asInstanceOf[js.Any])
     if (CompressionType != null) __obj.updateDynamic("CompressionType")(CompressionType.asInstanceOf[js.Any])
-    if (JSON != null) __obj.updateDynamic("JSON")(JSON)
-    if (Parquet != null) __obj.updateDynamic("Parquet")(Parquet)
+    if (JSON != null) __obj.updateDynamic("JSON")(JSON.asInstanceOf[js.Any])
+    if (Parquet != null) __obj.updateDynamic("Parquet")(Parquet.asInstanceOf[js.Any])
     __obj.asInstanceOf[_InputSerialization]
   }
 }

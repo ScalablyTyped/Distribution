@@ -13,7 +13,7 @@ object GoogleServiceAccount {
   @scala.inline
   def apply(accountEmail: String = null): GoogleServiceAccount = {
     val __obj = js.Dynamic.literal()
-    if (accountEmail != null) __obj.updateDynamic("accountEmail")(accountEmail)
+    if (accountEmail != null) __obj.updateDynamic("accountEmail")(accountEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleServiceAccount]
   }
 }

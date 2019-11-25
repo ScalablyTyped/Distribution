@@ -62,8 +62,8 @@ object dtdDefinition {
     $transparent: StringDictionary[`1`],
     StringDictionary: /* outerTagName */ StringDictionary[StringDictionary[`1`]] = null
   ): dtdDefinition = {
-    val __obj = js.Dynamic.literal($block = $block, $blockLimit = $blockLimit, $cdata = $cdata, $editable = $editable, $empty = $empty, $inline = $inline, $intermediate = $intermediate, $list = $list, $listItem = $listItem, $nonBodyContent = $nonBodyContent, $nonEditable = $nonEditable, $object = $object, $removeEmpty = $removeEmpty, $tabIndex = $tabIndex, $tableContent = $tableContent, $transparent = $transparent)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal($block = $block.asInstanceOf[js.Any], $blockLimit = $blockLimit.asInstanceOf[js.Any], $cdata = $cdata.asInstanceOf[js.Any], $editable = $editable.asInstanceOf[js.Any], $empty = $empty.asInstanceOf[js.Any], $inline = $inline.asInstanceOf[js.Any], $intermediate = $intermediate.asInstanceOf[js.Any], $list = $list.asInstanceOf[js.Any], $listItem = $listItem.asInstanceOf[js.Any], $nonBodyContent = $nonBodyContent.asInstanceOf[js.Any], $nonEditable = $nonEditable.asInstanceOf[js.Any], $object = $object.asInstanceOf[js.Any], $removeEmpty = $removeEmpty.asInstanceOf[js.Any], $tabIndex = $tabIndex.asInstanceOf[js.Any], $tableContent = $tableContent.asInstanceOf[js.Any], $transparent = $transparent.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[dtdDefinition]
   }
 }

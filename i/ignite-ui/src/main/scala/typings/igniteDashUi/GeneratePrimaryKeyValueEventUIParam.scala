@@ -19,8 +19,8 @@ object GeneratePrimaryKeyValueEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, value: js.Any = null): GeneratePrimaryKeyValueEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratePrimaryKeyValueEventUIParam]
   }
 }

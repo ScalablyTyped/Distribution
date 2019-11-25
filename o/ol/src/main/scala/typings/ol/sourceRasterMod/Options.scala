@@ -24,8 +24,8 @@ object Options {
     operationType: pixel | image = null,
     threads: Int | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(sources = sources)
-    if (lib != null) __obj.updateDynamic("lib")(lib)
+    val __obj = js.Dynamic.literal(sources = sources.asInstanceOf[js.Any])
+    if (lib != null) __obj.updateDynamic("lib")(lib.asInstanceOf[js.Any])
     if (operation != null) __obj.updateDynamic("operation")(js.Any.fromFunction2(operation))
     if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
     if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])

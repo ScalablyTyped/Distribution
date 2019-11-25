@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait atNivoSankeyProps {
   @scala.inline
-  def ResponsiveSankeyProps: typings.atNivoSankey.DataSankeyProps.type = typings.atNivoSankey.DataSankeyProps
+  def ResponsiveSankeyProps: DataSankeyProps.type = typings.atNivoSankey.DataSankeyProps
   type ResponsiveSankeyProps = DataSankeyProps
   @scala.inline
-  def SankeyProps: typings.atNivoSankey.DataSankeyPropsDimensions.type = typings.atNivoSankey.DataSankeyPropsDimensions
+  def SankeyProps: DataSankeyPropsDimensions.type = typings.atNivoSankey.DataSankeyPropsDimensions
   type SankeyProps = DataSankeyPropsDimensions
 }
 

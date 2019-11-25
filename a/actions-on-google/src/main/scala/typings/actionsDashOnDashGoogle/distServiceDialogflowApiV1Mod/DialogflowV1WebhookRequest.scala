@@ -28,14 +28,14 @@ object DialogflowV1WebhookRequest {
     timezone: String = null
   ): DialogflowV1WebhookRequest = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (originalRequest != null) __obj.updateDynamic("originalRequest")(originalRequest)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (originalRequest != null) __obj.updateDynamic("originalRequest")(originalRequest.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1WebhookRequest]
   }
 }

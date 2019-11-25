@@ -22,7 +22,7 @@ object Anon_ClientIDOrigins {
     steps: js.Array[Step[S]],
     version: Double
   ): Anon_ClientIDOrigins[S] = {
-    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], origins = origins, steps = steps, version = version)
+    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClientIDOrigins[S]]
   }

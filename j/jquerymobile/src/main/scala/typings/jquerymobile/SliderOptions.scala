@@ -24,12 +24,12 @@ object SliderOptions {
     trackTheme: String = null
   ): SliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
-    if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector)
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (trackTheme != null) __obj.updateDynamic("trackTheme")(trackTheme)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (trackTheme != null) __obj.updateDynamic("trackTheme")(trackTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOptions]
   }
 }

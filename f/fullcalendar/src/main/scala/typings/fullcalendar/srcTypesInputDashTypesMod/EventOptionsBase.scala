@@ -34,17 +34,17 @@ object EventOptionsBase {
     textColor: String = null
   ): EventOptionsBase = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
-    if (!js.isUndefined(durationEditable)) __obj.updateDynamic("durationEditable")(durationEditable)
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
-    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap)
-    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
-    if (!js.isUndefined(startEditable)) __obj.updateDynamic("startEditable")(startEditable)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationEditable)) __obj.updateDynamic("durationEditable")(durationEditable.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
+    if (rendering != null) __obj.updateDynamic("rendering")(rendering.asInstanceOf[js.Any])
+    if (!js.isUndefined(startEditable)) __obj.updateDynamic("startEditable")(startEditable.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventOptionsBase]
   }
 }

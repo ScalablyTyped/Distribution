@@ -11,7 +11,7 @@ trait InternalModuleOptions extends js.Object {
 object InternalModuleOptions {
   @scala.inline
   def apply(isInternalModule: Boolean): InternalModuleOptions = {
-    val __obj = js.Dynamic.literal(isInternalModule = isInternalModule)
+    val __obj = js.Dynamic.literal(isInternalModule = isInternalModule.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InternalModuleOptions]
   }

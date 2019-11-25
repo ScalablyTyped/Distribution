@@ -24,7 +24,7 @@ object CancelableInvocation {
   @scala.inline
   def apply(onCanceled: () => Unit, address: String = null): CancelableInvocation = {
     val __obj = js.Dynamic.literal(onCanceled = js.Any.fromFunction0(onCanceled))
-    if (address != null) __obj.updateDynamic("address")(address)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelableInvocation]
   }
 }

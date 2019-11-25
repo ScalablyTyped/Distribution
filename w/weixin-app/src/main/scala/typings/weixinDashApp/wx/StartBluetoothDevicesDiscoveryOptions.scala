@@ -32,11 +32,11 @@ object StartBluetoothDevicesDiscoveryOptions {
     success: js.Any => Unit = null
   ): StartBluetoothDevicesDiscoveryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDuplicatesKey)) __obj.updateDynamic("allowDuplicatesKey")(allowDuplicatesKey)
+    if (!js.isUndefined(allowDuplicatesKey)) __obj.updateDynamic("allowDuplicatesKey")(allowDuplicatesKey.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (services != null) __obj.updateDynamic("services")(services)
+    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[StartBluetoothDevicesDiscoveryOptions]
   }

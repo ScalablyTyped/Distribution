@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Direction extends js.Object
 
+object Direction {
+  @scala.inline
+  def asc: typings.knockoutDotKogrid.knockoutDotKogridStrings.asc = this.cast("asc")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def desc: typings.knockoutDotKogrid.knockoutDotKogridStrings.desc = this.cast("desc")
+}
+

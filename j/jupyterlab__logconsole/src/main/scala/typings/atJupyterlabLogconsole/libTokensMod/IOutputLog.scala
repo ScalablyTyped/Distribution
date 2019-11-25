@@ -24,8 +24,8 @@ trait IOutputLog
 object IOutputLog {
   @scala.inline
   def apply(data: IOutput, level: LogLevel, `type`: output): IOutputLog = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOutputLog]
   }
 }

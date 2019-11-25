@@ -13,7 +13,7 @@ trait IncompleteUploadedBucketItem extends js.Object {
 object IncompleteUploadedBucketItem {
   @scala.inline
   def apply(key: String, size: Double, uploadId: String): IncompleteUploadedBucketItem = {
-    val __obj = js.Dynamic.literal(key = key, size = size, uploadId = uploadId)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IncompleteUploadedBucketItem]
   }

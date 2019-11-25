@@ -15,8 +15,8 @@ trait openssh_AuthAgentChannelInfo extends ChannelOpenInfo {
 object openssh_AuthAgentChannelInfo {
   @scala.inline
   def apply(packetSize: Double, sender: Double, `type`: `auth-agent@opensshDOTcom`, window: Double): openssh_AuthAgentChannelInfo = {
-    val __obj = js.Dynamic.literal(packetSize = packetSize, sender = sender, window = window)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[openssh_AuthAgentChannelInfo]
   }
 }

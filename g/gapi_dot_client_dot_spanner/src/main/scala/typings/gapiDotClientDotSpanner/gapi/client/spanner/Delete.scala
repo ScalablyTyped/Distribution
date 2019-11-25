@@ -15,8 +15,8 @@ object Delete {
   @scala.inline
   def apply(keySet: KeySet = null, table: String = null): Delete = {
     val __obj = js.Dynamic.literal()
-    if (keySet != null) __obj.updateDynamic("keySet")(keySet)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (keySet != null) __obj.updateDynamic("keySet")(keySet.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delete]
   }
 }

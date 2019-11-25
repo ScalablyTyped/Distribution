@@ -24,12 +24,12 @@ object ValidatorOptions {
     html: js.UndefOr[Boolean] = js.undefined
   ): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
-    if (feedback != null) __obj.updateDynamic("feedback")(feedback)
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (feedback != null) __obj.updateDynamic("feedback")(feedback.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
 }

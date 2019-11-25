@@ -30,8 +30,8 @@ object CommonQueryFilters {
   def apply(count: Int | Double = null, params: Anon_At = null, since: String = null): CommonQueryFilters = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (since != null) __obj.updateDynamic("since")(since)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonQueryFilters]
   }
 }

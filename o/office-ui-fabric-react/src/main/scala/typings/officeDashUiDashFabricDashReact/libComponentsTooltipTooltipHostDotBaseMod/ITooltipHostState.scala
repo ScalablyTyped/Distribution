@@ -12,7 +12,7 @@ trait ITooltipHostState extends js.Object {
 object ITooltipHostState {
   @scala.inline
   def apply(isAriaPlaceholderRendered: Boolean, isTooltipVisible: Boolean): ITooltipHostState = {
-    val __obj = js.Dynamic.literal(isAriaPlaceholderRendered = isAriaPlaceholderRendered, isTooltipVisible = isTooltipVisible)
+    val __obj = js.Dynamic.literal(isAriaPlaceholderRendered = isAriaPlaceholderRendered.asInstanceOf[js.Any], isTooltipVisible = isTooltipVisible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITooltipHostState]
   }

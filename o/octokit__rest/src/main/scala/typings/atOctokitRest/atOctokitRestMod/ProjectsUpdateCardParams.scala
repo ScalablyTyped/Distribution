@@ -19,9 +19,9 @@ trait ProjectsUpdateCardParams extends js.Object {
 object ProjectsUpdateCardParams {
   @scala.inline
   def apply(card_id: Double, archived: js.UndefOr[Boolean] = js.undefined, note: String = null): ProjectsUpdateCardParams = {
-    val __obj = js.Dynamic.literal(card_id = card_id)
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived)
-    if (note != null) __obj.updateDynamic("note")(note)
+    val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsUpdateCardParams]
   }
 }

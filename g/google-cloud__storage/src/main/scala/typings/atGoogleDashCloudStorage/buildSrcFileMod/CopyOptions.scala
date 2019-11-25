@@ -22,11 +22,11 @@ object CopyOptions {
     userProject: String = null
   ): CopyOptions = {
     val __obj = js.Dynamic.literal()
-    if (destinationKmsKeyName != null) __obj.updateDynamic("destinationKmsKeyName")(destinationKmsKeyName)
-    if (keepAcl != null) __obj.updateDynamic("keepAcl")(keepAcl)
-    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (destinationKmsKeyName != null) __obj.updateDynamic("destinationKmsKeyName")(destinationKmsKeyName.asInstanceOf[js.Any])
+    if (keepAcl != null) __obj.updateDynamic("keepAcl")(keepAcl.asInstanceOf[js.Any])
+    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyOptions]
   }
 }

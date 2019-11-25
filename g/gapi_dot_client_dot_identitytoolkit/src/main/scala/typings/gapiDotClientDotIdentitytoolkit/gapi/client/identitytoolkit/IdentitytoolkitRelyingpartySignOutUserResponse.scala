@@ -13,7 +13,7 @@ object IdentitytoolkitRelyingpartySignOutUserResponse {
   @scala.inline
   def apply(localId: String = null): IdentitytoolkitRelyingpartySignOutUserResponse = {
     val __obj = js.Dynamic.literal()
-    if (localId != null) __obj.updateDynamic("localId")(localId)
+    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySignOutUserResponse]
   }
 }

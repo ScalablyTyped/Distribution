@@ -44,11 +44,11 @@ object VisibleContentElements {
     media: js.UndefOr[Boolean] = js.undefined,
     text: js.UndefOr[Boolean] = js.undefined
   ): VisibleContentElements = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
-    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(media)) __obj.updateDynamic("media")(media)
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(media)) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibleContentElements]
   }
 }

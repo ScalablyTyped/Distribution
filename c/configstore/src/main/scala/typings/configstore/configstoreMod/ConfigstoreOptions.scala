@@ -13,8 +13,8 @@ object ConfigstoreOptions {
   @scala.inline
   def apply(configPath: String = null, globalConfigPath: js.UndefOr[Boolean] = js.undefined): ConfigstoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
-    if (!js.isUndefined(globalConfigPath)) __obj.updateDynamic("globalConfigPath")(globalConfigPath)
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalConfigPath)) __obj.updateDynamic("globalConfigPath")(globalConfigPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigstoreOptions]
   }
 }

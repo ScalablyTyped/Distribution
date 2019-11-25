@@ -26,9 +26,5 @@ object Submodule extends js.Object {
   def setUrl(repo: typings.nodegit.repositoryMod.Repository, name: String, url: String): js.Promise[Double] = js.native
   def status(repo: typings.nodegit.repositoryMod.Repository, name: String, ignore: Double): js.Promise[Double] = js.native
   def updateInitOptions(opts: SubmoduleUpdateOptions, version: Double): Double = js.native
-  type IGNORE = typings.nodegit.submoduleMod.Submodule.IGNORE
-  type RECURSE = typings.nodegit.submoduleMod.Submodule.RECURSE
-  type STATUS = typings.nodegit.submoduleMod.Submodule.STATUS
-  type UPDATE = typings.nodegit.submoduleMod.Submodule.UPDATE
 }
 

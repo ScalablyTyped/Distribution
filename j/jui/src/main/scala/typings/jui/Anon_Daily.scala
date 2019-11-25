@@ -58,12 +58,12 @@ object Anon_Daily {
   ): Anon_Daily = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
-    if (titleFormat != null) __obj.updateDynamic("titleFormat")(titleFormat)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (titleFormat != null) __obj.updateDynamic("titleFormat")(titleFormat.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Daily]
   }

@@ -21,9 +21,9 @@ object SessionOptions {
   ): SessionOptions = {
     val __obj = js.Dynamic.literal()
     if (freshTimeout != null) __obj.updateDynamic("freshTimeout")(freshTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(ipCheck)) __obj.updateDynamic("ipCheck")(ipCheck)
+    if (!js.isUndefined(ipCheck)) __obj.updateDynamic("ipCheck")(ipCheck.asInstanceOf[js.Any])
     if (maxFreshTimeout != null) __obj.updateDynamic("maxFreshTimeout")(maxFreshTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(uaCheck)) __obj.updateDynamic("uaCheck")(uaCheck)
+    if (!js.isUndefined(uaCheck)) __obj.updateDynamic("uaCheck")(uaCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
 }

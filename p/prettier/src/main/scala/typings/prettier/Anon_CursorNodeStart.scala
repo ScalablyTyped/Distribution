@@ -13,9 +13,9 @@ trait Anon_CursorNodeStart extends js.Object {
 object Anon_CursorNodeStart {
   @scala.inline
   def apply(formatted: String, cursorNodeStart: Int | Double = null, cursorNodeText: String = null): Anon_CursorNodeStart = {
-    val __obj = js.Dynamic.literal(formatted = formatted)
+    val __obj = js.Dynamic.literal(formatted = formatted.asInstanceOf[js.Any])
     if (cursorNodeStart != null) __obj.updateDynamic("cursorNodeStart")(cursorNodeStart.asInstanceOf[js.Any])
-    if (cursorNodeText != null) __obj.updateDynamic("cursorNodeText")(cursorNodeText)
+    if (cursorNodeText != null) __obj.updateDynamic("cursorNodeText")(cursorNodeText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CursorNodeStart]
   }
 }

@@ -22,9 +22,9 @@ object SplitArea {
     show: js.UndefOr[Boolean] = js.undefined
   ): SplitArea = {
     val __obj = js.Dynamic.literal()
-    if (areaStyle != null) __obj.updateDynamic("areaStyle")(areaStyle)
+    if (areaStyle != null) __obj.updateDynamic("areaStyle")(areaStyle.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitArea]
   }
 }

@@ -26,8 +26,8 @@ trait OriginalSourcePosition extends js.Object {
 object OriginalSourcePosition {
   @scala.inline
   def apply(column: Double, line: Double, source: String, name: String = null): OriginalSourcePosition = {
-    val __obj = js.Dynamic.literal(column = column, line = line, source = source)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginalSourcePosition]
   }
 }

@@ -12,7 +12,7 @@ trait ParallelExecutionInputBase extends ExecutionInput {
 object ParallelExecutionInputBase {
   @scala.inline
   def apply(continueOnError: Boolean, maxNumberOfAgents: Double, parallelExecutionType: ParallelExecutionTypes): ParallelExecutionInputBase = {
-    val __obj = js.Dynamic.literal(continueOnError = continueOnError, maxNumberOfAgents = maxNumberOfAgents, parallelExecutionType = parallelExecutionType)
+    val __obj = js.Dynamic.literal(continueOnError = continueOnError.asInstanceOf[js.Any], maxNumberOfAgents = maxNumberOfAgents.asInstanceOf[js.Any], parallelExecutionType = parallelExecutionType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParallelExecutionInputBase]
   }

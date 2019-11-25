@@ -20,9 +20,9 @@ object Anon_KeyKeys {
     prefetch: Int | Double = null
   ): Anon_KeyKeys = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeyKeys]
   }

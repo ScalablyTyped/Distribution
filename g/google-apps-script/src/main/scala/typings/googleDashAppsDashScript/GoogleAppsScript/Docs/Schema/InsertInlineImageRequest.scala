@@ -20,10 +20,10 @@ object InsertInlineImageRequest {
     uri: String = null
   ): InsertInlineImageRequest = {
     val __obj = js.Dynamic.literal()
-    if (endOfSegmentLocation != null) __obj.updateDynamic("endOfSegmentLocation")(endOfSegmentLocation)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (objectSize != null) __obj.updateDynamic("objectSize")(objectSize)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (endOfSegmentLocation != null) __obj.updateDynamic("endOfSegmentLocation")(endOfSegmentLocation.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (objectSize != null) __obj.updateDynamic("objectSize")(objectSize.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertInlineImageRequest]
   }
 }

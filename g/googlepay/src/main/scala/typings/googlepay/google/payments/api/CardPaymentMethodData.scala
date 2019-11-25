@@ -14,8 +14,8 @@ trait CardPaymentMethodData extends BasePaymentMethodData {
 object CardPaymentMethodData {
   @scala.inline
   def apply(description: String, info: CardInfo, tokenizationData: PaymentMethodTokenizationData, `type`: CARD): CardPaymentMethodData = {
-    val __obj = js.Dynamic.literal(description = description, info = info, tokenizationData = tokenizationData)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], tokenizationData = tokenizationData.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardPaymentMethodData]
   }
 }

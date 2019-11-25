@@ -17,7 +17,7 @@ trait TabBarStyle extends js.Object {
 object TabBarStyle {
   @scala.inline
   def apply(container: ViewStyle, tab: ViewStyle, tabs: ViewStyle, textStyle: TextStyle, underline: ViewStyle): TabBarStyle = {
-    val __obj = js.Dynamic.literal(container = container, tab = tab, tabs = tabs, textStyle = textStyle, underline = underline)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], textStyle = textStyle.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TabBarStyle]
   }

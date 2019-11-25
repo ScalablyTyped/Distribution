@@ -14,9 +14,9 @@ object ClickTag {
   @scala.inline
   def apply(clickThroughUrl: CreativeClickThroughUrl = null, eventName: String = null, name: String = null): ClickTag = {
     val __obj = js.Dynamic.literal()
-    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl)
-    if (eventName != null) __obj.updateDynamic("eventName")(eventName)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl.asInstanceOf[js.Any])
+    if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickTag]
   }
 }

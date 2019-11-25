@@ -23,10 +23,10 @@ object GlyphiconProps {
     ClassAttributes: ClassAttributes[Glyphicon] = null,
     bsClass: String = null
   ): GlyphiconProps = {
-    val __obj = js.Dynamic.literal(glyph = glyph)
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlyphiconProps]
   }
 }

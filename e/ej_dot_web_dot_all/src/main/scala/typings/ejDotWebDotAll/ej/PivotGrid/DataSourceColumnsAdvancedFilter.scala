@@ -38,12 +38,12 @@ object DataSourceColumnsAdvancedFilter {
     values: js.Array[_] = null
   ): DataSourceColumnsAdvancedFilter = {
     val __obj = js.Dynamic.literal()
-    if (advancedFilterType != null) __obj.updateDynamic("advancedFilterType")(advancedFilterType)
-    if (labelFilterOperator != null) __obj.updateDynamic("labelFilterOperator")(labelFilterOperator)
-    if (measure != null) __obj.updateDynamic("measure")(measure)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (valueFilterOperator != null) __obj.updateDynamic("valueFilterOperator")(valueFilterOperator)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (advancedFilterType != null) __obj.updateDynamic("advancedFilterType")(advancedFilterType.asInstanceOf[js.Any])
+    if (labelFilterOperator != null) __obj.updateDynamic("labelFilterOperator")(labelFilterOperator.asInstanceOf[js.Any])
+    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (valueFilterOperator != null) __obj.updateDynamic("valueFilterOperator")(valueFilterOperator.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceColumnsAdvancedFilter]
   }
 }

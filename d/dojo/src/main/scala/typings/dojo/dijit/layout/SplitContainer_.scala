@@ -1,10 +1,6 @@
 package typings.dojo.dijit.layout
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.ChildWidgetProperties
 import typings.dojo.dojoStrings.activeSizing
 import typings.dojo.dojoStrings.orientation
@@ -104,14 +100,54 @@ class SplitContainer_ () extends _LayoutWidget {
   @JSName("set")
   def set_sizerWidth(property: sizerWidth, value: Double): Unit = js.native
   @JSName("watch")
-  def watch_ChildWidgetProperties(property: ChildWidgetProperties, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_ChildWidgetProperties(
+    property: ChildWidgetProperties,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_activeSizing(property: activeSizing, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_activeSizing(
+    property: activeSizing,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_orientation(property: orientation, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_orientation(
+    property: orientation,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_persist(property: persist, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_persist(
+    property: persist,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_sizerWidth(property: sizerWidth, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_sizerWidth(
+    property: sizerWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

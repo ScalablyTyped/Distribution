@@ -12,7 +12,7 @@ trait AccountRepositoryCurrentUserResponseBiography_with_entities extends js.Obj
 object AccountRepositoryCurrentUserResponseBiography_with_entities {
   @scala.inline
   def apply(entities: js.Array[_], raw_text: String): AccountRepositoryCurrentUserResponseBiography_with_entities = {
-    val __obj = js.Dynamic.literal(entities = entities, raw_text = raw_text)
+    val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountRepositoryCurrentUserResponseBiography_with_entities]
   }

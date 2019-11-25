@@ -24,7 +24,7 @@ object Anon_Buffer {
     prefix: String,
     preload: Boolean
   ): Anon_Buffer = {
-    val __obj = js.Dynamic.literal(buffer = buffer, dir = dir.asInstanceOf[js.Any], dynamic = dynamic, maxFiles = maxFiles, prefix = prefix, preload = preload)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], dynamic = dynamic.asInstanceOf[js.Any], maxFiles = maxFiles.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], preload = preload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Buffer]
   }

@@ -43,7 +43,7 @@ object Binding {
     metadata: ObjectMeta,
     target: ObjectReference
   ): Binding = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, target = target)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Binding]
   }

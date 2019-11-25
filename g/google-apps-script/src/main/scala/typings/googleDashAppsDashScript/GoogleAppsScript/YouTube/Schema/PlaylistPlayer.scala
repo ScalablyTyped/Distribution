@@ -12,7 +12,7 @@ object PlaylistPlayer {
   @scala.inline
   def apply(embedHtml: String = null): PlaylistPlayer = {
     val __obj = js.Dynamic.literal()
-    if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml)
+    if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistPlayer]
   }
 }

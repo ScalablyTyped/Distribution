@@ -25,11 +25,11 @@ object WorkbookChartLegend {
     visible: js.UndefOr[Boolean] = js.undefined
   ): WorkbookChartLegend = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartLegend]
   }
 }

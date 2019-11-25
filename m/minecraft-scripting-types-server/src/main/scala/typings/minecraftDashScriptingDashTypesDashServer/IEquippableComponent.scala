@@ -17,7 +17,7 @@ trait IEquippableComponent extends js.Object {
 object IEquippableComponent {
   @scala.inline
   def apply(slots: js.Array[Anon_Accepteditems]): IEquippableComponent = {
-    val __obj = js.Dynamic.literal(slots = slots)
+    val __obj = js.Dynamic.literal(slots = slots.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEquippableComponent]
   }

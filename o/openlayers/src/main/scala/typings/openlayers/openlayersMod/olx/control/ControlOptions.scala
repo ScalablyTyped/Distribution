@@ -16,7 +16,7 @@ object ControlOptions {
   @scala.inline
   def apply(element: Element = null, render: /* event */ MapEvent => _ = null, target: Element | String = null): ControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlOptions]

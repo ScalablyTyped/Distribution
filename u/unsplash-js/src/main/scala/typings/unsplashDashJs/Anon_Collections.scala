@@ -26,12 +26,12 @@ object Anon_Collections {
     width: Int | Double = null
   ): Anon_Collections = {
     val __obj = js.Dynamic.literal()
-    if (collections != null) __obj.updateDynamic("collections")(collections)
+    if (collections != null) __obj.updateDynamic("collections")(collections.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(featured)) __obj.updateDynamic("featured")(featured)
+    if (!js.isUndefined(featured)) __obj.updateDynamic("featured")(featured.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Collections]
   }

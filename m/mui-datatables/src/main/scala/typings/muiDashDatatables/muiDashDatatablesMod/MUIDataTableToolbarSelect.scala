@@ -23,11 +23,11 @@ object MUIDataTableToolbarSelect {
     rowSelected: js.UndefOr[Boolean] = js.undefined,
     selectRowUpdate: /* args */ js.Any => _ = null
   ): MUIDataTableToolbarSelect = {
-    val __obj = js.Dynamic.literal(options = options)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (displayData != null) __obj.updateDynamic("displayData")(displayData)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (displayData != null) __obj.updateDynamic("displayData")(displayData.asInstanceOf[js.Any])
     if (onRowsDelete != null) __obj.updateDynamic("onRowsDelete")(js.Any.fromFunction1(onRowsDelete))
-    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected)
+    if (!js.isUndefined(rowSelected)) __obj.updateDynamic("rowSelected")(rowSelected.asInstanceOf[js.Any])
     if (selectRowUpdate != null) __obj.updateDynamic("selectRowUpdate")(js.Any.fromFunction1(selectRowUpdate))
     __obj.asInstanceOf[MUIDataTableToolbarSelect]
   }

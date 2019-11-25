@@ -23,11 +23,11 @@ object AddToCalendarEvent {
     title: String = null
   ): AddToCalendarEvent = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddToCalendarEvent]
   }
 }

@@ -28,12 +28,12 @@ object DraggableStateSnapshot {
     dropAnimation: DropAnimation = null,
     mode: MovementMode = null
   ): DraggableStateSnapshot = {
-    val __obj = js.Dynamic.literal(isDragging = isDragging, isDropAnimating = isDropAnimating)
-    if (combineTargetFor != null) __obj.updateDynamic("combineTargetFor")(combineTargetFor)
-    if (combineWith != null) __obj.updateDynamic("combineWith")(combineWith)
-    if (draggingOver != null) __obj.updateDynamic("draggingOver")(draggingOver)
-    if (dropAnimation != null) __obj.updateDynamic("dropAnimation")(dropAnimation)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any], isDropAnimating = isDropAnimating.asInstanceOf[js.Any])
+    if (combineTargetFor != null) __obj.updateDynamic("combineTargetFor")(combineTargetFor.asInstanceOf[js.Any])
+    if (combineWith != null) __obj.updateDynamic("combineWith")(combineWith.asInstanceOf[js.Any])
+    if (draggingOver != null) __obj.updateDynamic("draggingOver")(draggingOver.asInstanceOf[js.Any])
+    if (dropAnimation != null) __obj.updateDynamic("dropAnimation")(dropAnimation.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableStateSnapshot]
   }
 }

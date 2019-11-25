@@ -27,11 +27,11 @@ object Anon_CaseSensitiveField {
     searchString: String = null
   ): Anon_CaseSensitiveField = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (fieldIndex != null) __obj.updateDynamic("fieldIndex")(fieldIndex.asInstanceOf[js.Any])
-    if (replaceString != null) __obj.updateDynamic("replaceString")(replaceString)
-    if (searchString != null) __obj.updateDynamic("searchString")(searchString)
+    if (replaceString != null) __obj.updateDynamic("replaceString")(replaceString.asInstanceOf[js.Any])
+    if (searchString != null) __obj.updateDynamic("searchString")(searchString.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CaseSensitiveField]
   }
 }

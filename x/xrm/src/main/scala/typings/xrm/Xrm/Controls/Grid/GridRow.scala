@@ -26,7 +26,7 @@ trait GridRow extends js.Object {
 object GridRow {
   @scala.inline
   def apply(data: Data, getData: () => GridRowData): GridRow = {
-    val __obj = js.Dynamic.literal(data = data, getData = js.Any.fromFunction0(getData))
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getData = js.Any.fromFunction0(getData))
   
     __obj.asInstanceOf[GridRow]
   }

@@ -22,11 +22,11 @@ object FBLoginOptions {
     scope: String = null
   ): FBLoginOptions = {
     val __obj = js.Dynamic.literal()
-    if (auth_type != null) __obj.updateDynamic("auth_type")(auth_type)
-    if (!js.isUndefined(enable_profile_selector)) __obj.updateDynamic("enable_profile_selector")(enable_profile_selector)
-    if (profile_selector_ids != null) __obj.updateDynamic("profile_selector_ids")(profile_selector_ids)
-    if (!js.isUndefined(return_scopes)) __obj.updateDynamic("return_scopes")(return_scopes)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (auth_type != null) __obj.updateDynamic("auth_type")(auth_type.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable_profile_selector)) __obj.updateDynamic("enable_profile_selector")(enable_profile_selector.asInstanceOf[js.Any])
+    if (profile_selector_ids != null) __obj.updateDynamic("profile_selector_ids")(profile_selector_ids.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_scopes)) __obj.updateDynamic("return_scopes")(return_scopes.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[FBLoginOptions]
   }
 }

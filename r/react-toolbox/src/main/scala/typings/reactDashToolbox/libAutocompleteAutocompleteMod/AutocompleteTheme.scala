@@ -57,15 +57,15 @@ object AutocompleteTheme {
     values: String = null
   ): AutocompleteTheme = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete)
-    if (focus != null) __obj.updateDynamic("focus")(focus)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion)
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
-    if (up != null) __obj.updateDynamic("up")(up)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
+    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteTheme]
   }
 }

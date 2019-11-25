@@ -24,12 +24,12 @@ object AccountInsightsOptions {
     userId: String = null
   ): AccountInsightsOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (!js.isUndefined(activityTab)) __obj.updateDynamic("activityTab")(activityTab)
-    if (!js.isUndefined(audienceTab)) __obj.updateDynamic("audienceTab")(audienceTab)
-    if (!js.isUndefined(contentTab)) __obj.updateDynamic("contentTab")(contentTab)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(activityTab)) __obj.updateDynamic("activityTab")(activityTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(audienceTab)) __obj.updateDynamic("audienceTab")(audienceTab.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentTab)) __obj.updateDynamic("contentTab")(contentTab.asInstanceOf[js.Any])
     if (gridMediaSize != null) __obj.updateDynamic("gridMediaSize")(gridMediaSize.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountInsightsOptions]
   }
 }

@@ -15,8 +15,8 @@ object Series {
   @scala.inline
   def apply(kind: String = null, series: js.Array[Anon_BannerImageUrl] = null): Series = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[Series]
   }
 }

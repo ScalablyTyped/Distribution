@@ -29,8 +29,8 @@ object strings {
     TAB_SELECTOR: `DOTmdc-tab`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(FRAME_SELECTOR = FRAME_SELECTOR, INDICATOR_BACK_SELECTOR = INDICATOR_BACK_SELECTOR, INDICATOR_FORWARD_SELECTOR = INDICATOR_FORWARD_SELECTOR, TABS_SELECTOR = TABS_SELECTOR, TAB_SELECTOR = TAB_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(FRAME_SELECTOR = FRAME_SELECTOR.asInstanceOf[js.Any], INDICATOR_BACK_SELECTOR = INDICATOR_BACK_SELECTOR.asInstanceOf[js.Any], INDICATOR_FORWARD_SELECTOR = INDICATOR_FORWARD_SELECTOR.asInstanceOf[js.Any], TABS_SELECTOR = TABS_SELECTOR.asInstanceOf[js.Any], TAB_SELECTOR = TAB_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

@@ -19,8 +19,8 @@ object RowCollapsingEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, parentrow: String = null): RowCollapsingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (parentrow != null) __obj.updateDynamic("parentrow")(parentrow)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (parentrow != null) __obj.updateDynamic("parentrow")(parentrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowCollapsingEventUIParam]
   }
 }

@@ -26,11 +26,11 @@ object Options {
     options: Anon_ClientId = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (channels != null) __obj.updateDynamic("channels")(channels)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (identity != null) __obj.updateDynamic("identity")(identity)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

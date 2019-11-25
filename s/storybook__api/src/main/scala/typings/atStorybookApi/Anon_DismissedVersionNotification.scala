@@ -13,7 +13,7 @@ trait Anon_DismissedVersionNotification extends js.Object {
 object Anon_DismissedVersionNotification {
   @scala.inline
   def apply(dismissedVersionNotification: String, lastVersionCheck: Double, versions: Anon_Current): Anon_DismissedVersionNotification = {
-    val __obj = js.Dynamic.literal(dismissedVersionNotification = dismissedVersionNotification, lastVersionCheck = lastVersionCheck, versions = versions)
+    val __obj = js.Dynamic.literal(dismissedVersionNotification = dismissedVersionNotification.asInstanceOf[js.Any], lastVersionCheck = lastVersionCheck.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DismissedVersionNotification]
   }

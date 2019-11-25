@@ -13,7 +13,7 @@ object AppOptions {
   @scala.inline
   def apply(debug: js.UndefOr[Boolean] = js.undefined): AppOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppOptions]
   }
 }

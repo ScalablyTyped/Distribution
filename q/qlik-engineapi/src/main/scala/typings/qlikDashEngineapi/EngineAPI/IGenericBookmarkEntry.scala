@@ -21,7 +21,7 @@ trait IGenericBookmarkEntry extends js.Object {
 object IGenericBookmarkEntry {
   @scala.inline
   def apply(qBookmark: INxBookmark, qProperties: IGenericBookmarkProperties): IGenericBookmarkEntry = {
-    val __obj = js.Dynamic.literal(qBookmark = qBookmark, qProperties = qProperties)
+    val __obj = js.Dynamic.literal(qBookmark = qBookmark.asInstanceOf[js.Any], qProperties = qProperties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGenericBookmarkEntry]
   }

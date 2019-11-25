@@ -23,8 +23,8 @@ object cssClasses {
     ANIMATING_DEACTIVATE: `mdc-tab--animating-deactivate`,
     StringDictionary: StringDictionary[String] = null
   ): cssClasses = {
-    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE, ANIMATING_ACTIVATE = ANIMATING_ACTIVATE, ANIMATING_DEACTIVATE = ANIMATING_DEACTIVATE)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE.asInstanceOf[js.Any], ANIMATING_ACTIVATE = ANIMATING_ACTIVATE.asInstanceOf[js.Any], ANIMATING_DEACTIVATE = ANIMATING_DEACTIVATE.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[cssClasses]
   }
 }

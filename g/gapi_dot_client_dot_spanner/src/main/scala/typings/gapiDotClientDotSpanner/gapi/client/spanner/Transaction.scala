@@ -28,8 +28,8 @@ object Transaction {
   @scala.inline
   def apply(id: String = null, readTimestamp: String = null): Transaction = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (readTimestamp != null) __obj.updateDynamic("readTimestamp")(readTimestamp)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (readTimestamp != null) __obj.updateDynamic("readTimestamp")(readTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }
 }

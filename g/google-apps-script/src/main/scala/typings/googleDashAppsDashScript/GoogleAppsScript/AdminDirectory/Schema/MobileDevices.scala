@@ -20,10 +20,10 @@ object MobileDevices {
     nextPageToken: String = null
   ): MobileDevices = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (mobiledevices != null) __obj.updateDynamic("mobiledevices")(mobiledevices)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (mobiledevices != null) __obj.updateDynamic("mobiledevices")(mobiledevices.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileDevices]
   }
 }

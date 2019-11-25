@@ -27,13 +27,13 @@ object StepsProps {
     readOnly: js.UndefOr[Boolean] = js.undefined,
     style: js.Object = null
   ): StepsProps = {
-    val __obj = js.Dynamic.literal(model = model)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepsProps]
   }
 }

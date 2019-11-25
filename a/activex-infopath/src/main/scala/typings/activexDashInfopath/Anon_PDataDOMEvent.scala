@@ -12,7 +12,7 @@ trait Anon_PDataDOMEvent extends js.Object {
 object Anon_PDataDOMEvent {
   @scala.inline
   def apply(pDataDOMEvent: DataDOMEventObject): Anon_PDataDOMEvent = {
-    val __obj = js.Dynamic.literal(pDataDOMEvent = pDataDOMEvent)
+    val __obj = js.Dynamic.literal(pDataDOMEvent = pDataDOMEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PDataDOMEvent]
   }

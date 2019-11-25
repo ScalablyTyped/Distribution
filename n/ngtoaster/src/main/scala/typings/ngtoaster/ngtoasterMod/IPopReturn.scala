@@ -12,7 +12,7 @@ trait IPopReturn extends js.Object {
 object IPopReturn {
   @scala.inline
   def apply(toastId: String | Double, toasterId: Double): IPopReturn = {
-    val __obj = js.Dynamic.literal(toastId = toastId.asInstanceOf[js.Any], toasterId = toasterId)
+    val __obj = js.Dynamic.literal(toastId = toastId.asInstanceOf[js.Any], toasterId = toasterId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPopReturn]
   }

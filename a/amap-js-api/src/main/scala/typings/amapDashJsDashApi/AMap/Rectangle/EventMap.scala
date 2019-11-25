@@ -49,7 +49,7 @@ object EventMap {
     touchmove: MapsEvent[touchmove, I],
     touchstart: MapsEvent[touchstart, I]
   ): EventMap[I] = {
-    val __obj = js.Dynamic.literal(change = change, click = click, dblclick = dblclick, hide = hide, mousedown = mousedown, mousemove = mousemove, mouseover = mouseover, mouseup = mouseup, options = options, rightclick = rightclick, setBounds = setBounds, show = show, touchend = touchend, touchmove = touchmove, touchstart = touchstart)
+    val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], rightclick = rightclick.asInstanceOf[js.Any], setBounds = setBounds.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap[I]]
   }

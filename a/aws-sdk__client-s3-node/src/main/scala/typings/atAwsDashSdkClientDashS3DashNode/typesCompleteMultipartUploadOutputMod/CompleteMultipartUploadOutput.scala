@@ -2,7 +2,7 @@ package typings.atAwsDashSdkClientDashS3DashNode.typesCompleteMultipartUploadOut
 
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.AES256
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.`aws:kms`
-import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester
+import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester_
 import typings.atAwsDashSdkClientDashS3DashNode.typesOutputTypesUnionMod._OutputTypesUnion
 import typings.atAwsDashSdkTypes.buildResponseMod.MetadataBearer
 import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
@@ -36,7 +36,7 @@ trait CompleteMultipartUploadOutput
   /**
     * <p>If present, indicates that the requester was successfully charged for the request.</p>
     */
-  var RequestCharged: js.UndefOr[requester | String] = js.undefined
+  var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
   /**
     * <p>If present, specifies the ID of the AWS Key Management Service (KMS) master encryption key that was used for the object.</p>
     */
@@ -60,21 +60,21 @@ object CompleteMultipartUploadOutput {
     Expiration: String = null,
     Key: String = null,
     Location: String = null,
-    RequestCharged: requester | String = null,
+    RequestCharged: requester_ | String = null,
     SSEKMSKeyId: String = null,
     ServerSideEncryption: AES256 | `aws:kms` | String = null,
     VersionId: String = null
   ): CompleteMultipartUploadOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket)
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag)
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration)
-    if (Key != null) __obj.updateDynamic("Key")(Key)
-    if (Location != null) __obj.updateDynamic("Location")(Location)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
+    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
+    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
+    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
-    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId)
+    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId.asInstanceOf[js.Any])
     if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteMultipartUploadOutput]
   }
 }

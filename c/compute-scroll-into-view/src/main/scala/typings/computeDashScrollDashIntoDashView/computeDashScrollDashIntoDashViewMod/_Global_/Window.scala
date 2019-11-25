@@ -13,7 +13,7 @@ object Window {
   @scala.inline
   def apply(visualViewport: Anon_Height = null): Window = {
     val __obj = js.Dynamic.literal()
-    if (visualViewport != null) __obj.updateDynamic("visualViewport")(visualViewport)
+    if (visualViewport != null) __obj.updateDynamic("visualViewport")(visualViewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
 }

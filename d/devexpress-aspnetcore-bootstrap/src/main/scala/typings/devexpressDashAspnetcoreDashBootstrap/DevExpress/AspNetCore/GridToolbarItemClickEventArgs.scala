@@ -21,7 +21,7 @@ object GridToolbarItemClickEventArgs {
     toolbarName: String,
     usePostBack: Boolean
   ): GridToolbarItemClickEventArgs = {
-    val __obj = js.Dynamic.literal(item = item, processOnServer = processOnServer, sender = sender, toolbarIndex = toolbarIndex, toolbarName = toolbarName, usePostBack = usePostBack)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], toolbarIndex = toolbarIndex.asInstanceOf[js.Any], toolbarName = toolbarName.asInstanceOf[js.Any], usePostBack = usePostBack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridToolbarItemClickEventArgs]
   }

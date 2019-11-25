@@ -29,7 +29,7 @@ trait PutFileOutput extends OutputTypesUnion {
 object PutFileOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, blobId: String, commitId: String, treeId: String): PutFileOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, blobId = blobId, commitId = commitId, treeId = treeId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], blobId = blobId.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], treeId = treeId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutFileOutput]
   }

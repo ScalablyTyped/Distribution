@@ -11,7 +11,7 @@ trait Anon_SelectedIndex extends js.Object {
 object Anon_SelectedIndex {
   @scala.inline
   def apply(selectedIndex: Double): Anon_SelectedIndex = {
-    val __obj = js.Dynamic.literal(selectedIndex = selectedIndex)
+    val __obj = js.Dynamic.literal(selectedIndex = selectedIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SelectedIndex]
   }

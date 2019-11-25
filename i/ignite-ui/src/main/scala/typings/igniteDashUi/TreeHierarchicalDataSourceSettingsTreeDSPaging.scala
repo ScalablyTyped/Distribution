@@ -40,9 +40,9 @@ object TreeHierarchicalDataSourceSettingsTreeDSPaging {
     mode: String = null
   ): TreeHierarchicalDataSourceSettingsTreeDSPaging = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSPaging]
   }
 }

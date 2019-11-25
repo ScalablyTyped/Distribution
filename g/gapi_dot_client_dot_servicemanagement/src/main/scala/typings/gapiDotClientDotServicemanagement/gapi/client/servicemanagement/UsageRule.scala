@@ -29,9 +29,9 @@ object UsageRule {
     skipServiceControl: js.UndefOr[Boolean] = js.undefined
   ): UsageRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnregisteredCalls)) __obj.updateDynamic("allowUnregisteredCalls")(allowUnregisteredCalls)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (!js.isUndefined(skipServiceControl)) __obj.updateDynamic("skipServiceControl")(skipServiceControl)
+    if (!js.isUndefined(allowUnregisteredCalls)) __obj.updateDynamic("allowUnregisteredCalls")(allowUnregisteredCalls.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipServiceControl)) __obj.updateDynamic("skipServiceControl")(skipServiceControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageRule]
   }
 }

@@ -32,15 +32,15 @@ object Page {
     slideProperties: SlideProperties = null
   ): Page = {
     val __obj = js.Dynamic.literal()
-    if (layoutProperties != null) __obj.updateDynamic("layoutProperties")(layoutProperties)
-    if (masterProperties != null) __obj.updateDynamic("masterProperties")(masterProperties)
-    if (notesProperties != null) __obj.updateDynamic("notesProperties")(notesProperties)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (pageElements != null) __obj.updateDynamic("pageElements")(pageElements)
-    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties)
-    if (pageType != null) __obj.updateDynamic("pageType")(pageType)
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
-    if (slideProperties != null) __obj.updateDynamic("slideProperties")(slideProperties)
+    if (layoutProperties != null) __obj.updateDynamic("layoutProperties")(layoutProperties.asInstanceOf[js.Any])
+    if (masterProperties != null) __obj.updateDynamic("masterProperties")(masterProperties.asInstanceOf[js.Any])
+    if (notesProperties != null) __obj.updateDynamic("notesProperties")(notesProperties.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (pageElements != null) __obj.updateDynamic("pageElements")(pageElements.asInstanceOf[js.Any])
+    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties.asInstanceOf[js.Any])
+    if (pageType != null) __obj.updateDynamic("pageType")(pageType.asInstanceOf[js.Any])
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
+    if (slideProperties != null) __obj.updateDynamic("slideProperties")(slideProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }
 }

@@ -16,8 +16,8 @@ object IOperationInfo {
   @scala.inline
   def apply(metadataType: String = null, responseType: String = null): IOperationInfo = {
     val __obj = js.Dynamic.literal()
-    if (metadataType != null) __obj.updateDynamic("metadataType")(metadataType)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (metadataType != null) __obj.updateDynamic("metadataType")(metadataType.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOperationInfo]
   }
 }

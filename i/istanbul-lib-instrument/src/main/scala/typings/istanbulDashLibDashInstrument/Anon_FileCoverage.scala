@@ -13,7 +13,7 @@ trait Anon_FileCoverage extends js.Object {
 object Anon_FileCoverage {
   @scala.inline
   def apply(fileCoverage: FileCoverage, sourceMappingURL: String): Anon_FileCoverage = {
-    val __obj = js.Dynamic.literal(fileCoverage = fileCoverage, sourceMappingURL = sourceMappingURL)
+    val __obj = js.Dynamic.literal(fileCoverage = fileCoverage.asInstanceOf[js.Any], sourceMappingURL = sourceMappingURL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FileCoverage]
   }

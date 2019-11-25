@@ -22,10 +22,10 @@ object PartialStyleRulesSwitchBaseClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesSwitchBaseClassKey = {
     val __obj = js.Dynamic.literal()
-    if (checked != null) __obj.updateDynamic("checked")(checked)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesSwitchBaseClassKey]
   }
 }

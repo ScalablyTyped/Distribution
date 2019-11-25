@@ -13,7 +13,7 @@ trait Anon_CancelDefault extends js.Object {
 object Anon_CancelDefault {
   @scala.inline
   def apply(CancelDefault: Boolean, CommandBarControl: js.Any, handled: Boolean): Anon_CancelDefault = {
-    val __obj = js.Dynamic.literal(CancelDefault = CancelDefault, CommandBarControl = CommandBarControl, handled = handled)
+    val __obj = js.Dynamic.literal(CancelDefault = CancelDefault.asInstanceOf[js.Any], CommandBarControl = CommandBarControl.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelDefault]
   }

@@ -31,7 +31,7 @@ object TypeofDialog {
       _DialogBase
     ]
   ): TypeofDialog = {
-    val __obj = js.Dynamic.literal(_DialogBase = _DialogBase)
+    val __obj = js.Dynamic.literal(_DialogBase = _DialogBase.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofDialog]
   }

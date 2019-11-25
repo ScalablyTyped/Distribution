@@ -27,10 +27,10 @@ object IgButtonLink {
     title: js.Any = null
   ): IgButtonLink = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgButtonLink]
   }
 }

@@ -47,17 +47,17 @@ object GetFieldDecoratorOptions {
     valuePropName: String = null
   ): GetFieldDecoratorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
     if (getValueFromEvent != null) __obj.updateDynamic("getValueFromEvent")(js.Any.fromFunction1(getValueFromEvent))
     if (getValueProps != null) __obj.updateDynamic("getValueProps")(js.Any.fromFunction1(getValueProps))
-    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue)
+    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction3(normalize))
-    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
-    if (!js.isUndefined(validateFirst)) __obj.updateDynamic("validateFirst")(validateFirst)
+    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateFirst)) __obj.updateDynamic("validateFirst")(validateFirst.asInstanceOf[js.Any])
     if (validateTrigger != null) __obj.updateDynamic("validateTrigger")(validateTrigger.asInstanceOf[js.Any])
-    if (valuePropName != null) __obj.updateDynamic("valuePropName")(valuePropName)
+    if (valuePropName != null) __obj.updateDynamic("valuePropName")(valuePropName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFieldDecoratorOptions]
   }
 }

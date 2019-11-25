@@ -24,8 +24,8 @@ object GoogleActionsV2PlaceValueSpecPlaceDialogSpec {
   @scala.inline
   def apply(permissionContext: String = null, requestPrompt: String = null): GoogleActionsV2PlaceValueSpecPlaceDialogSpec = {
     val __obj = js.Dynamic.literal()
-    if (permissionContext != null) __obj.updateDynamic("permissionContext")(permissionContext)
-    if (requestPrompt != null) __obj.updateDynamic("requestPrompt")(requestPrompt)
+    if (permissionContext != null) __obj.updateDynamic("permissionContext")(permissionContext.asInstanceOf[js.Any])
+    if (requestPrompt != null) __obj.updateDynamic("requestPrompt")(requestPrompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2PlaceValueSpecPlaceDialogSpec]
   }
 }

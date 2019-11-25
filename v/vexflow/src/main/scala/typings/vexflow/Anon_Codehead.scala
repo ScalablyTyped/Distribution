@@ -43,10 +43,10 @@ object Anon_Codehead {
     position: String = null,
     rest: js.UndefOr[Boolean] = js.undefined
   ): Anon_Codehead = {
-    val __obj = js.Dynamic.literal(dot_shiftY = dot_shiftY, flag = flag, gracenote_stem_down_extension = gracenote_stem_down_extension, gracenote_stem_up_extension = gracenote_stem_up_extension, head_width = head_width, line_above = line_above, line_below = line_below, stem = stem, stem_down_extension = stem_down_extension, stem_offset = stem_offset, stem_up_extension = stem_up_extension, tabnote_stem_down_extension = tabnote_stem_down_extension, tabnote_stem_up_extension = tabnote_stem_up_extension)
-    if (code_head != null) __obj.updateDynamic("code_head")(code_head)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(rest)) __obj.updateDynamic("rest")(rest)
+    val __obj = js.Dynamic.literal(dot_shiftY = dot_shiftY.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], gracenote_stem_down_extension = gracenote_stem_down_extension.asInstanceOf[js.Any], gracenote_stem_up_extension = gracenote_stem_up_extension.asInstanceOf[js.Any], head_width = head_width.asInstanceOf[js.Any], line_above = line_above.asInstanceOf[js.Any], line_below = line_below.asInstanceOf[js.Any], stem = stem.asInstanceOf[js.Any], stem_down_extension = stem_down_extension.asInstanceOf[js.Any], stem_offset = stem_offset.asInstanceOf[js.Any], stem_up_extension = stem_up_extension.asInstanceOf[js.Any], tabnote_stem_down_extension = tabnote_stem_down_extension.asInstanceOf[js.Any], tabnote_stem_up_extension = tabnote_stem_up_extension.asInstanceOf[js.Any])
+    if (code_head != null) __obj.updateDynamic("code_head")(code_head.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(rest)) __obj.updateDynamic("rest")(rest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Codehead]
   }
 }

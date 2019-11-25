@@ -57,13 +57,13 @@ object AnnotationsFibonacciTypeOptions {
     yAxis: Int | Double = null
   ): AnnotationsFibonacciTypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColors != null) __obj.updateDynamic("backgroundColors")(backgroundColors)
+    if (backgroundColors != null) __obj.updateDynamic("backgroundColors")(backgroundColors.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
-    if (lineColors != null) __obj.updateDynamic("lineColors")(lineColors)
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
+    if (lineColors != null) __obj.updateDynamic("lineColors")(lineColors.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsFibonacciTypeOptions]

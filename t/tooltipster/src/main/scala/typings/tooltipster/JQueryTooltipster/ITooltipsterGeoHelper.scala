@@ -16,7 +16,7 @@ trait ITooltipsterGeoHelper extends js.Object {
 object ITooltipsterGeoHelper {
   @scala.inline
   def apply(document: Anon_Size, origin: Anon_FixedLineage, window: Anon_Scroll): ITooltipsterGeoHelper = {
-    val __obj = js.Dynamic.literal(document = document, origin = origin, window = window)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITooltipsterGeoHelper]
   }

@@ -22,7 +22,7 @@ object Anon_AscendingCount {
     page: Int | Double = null
   ): Anon_AscendingCount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
     if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])

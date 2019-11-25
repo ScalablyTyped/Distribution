@@ -88,7 +88,7 @@ object StorageClass {
     reclaimPolicy: String,
     volumeBindingMode: String
   ): StorageClass = {
-    val __obj = js.Dynamic.literal(allowVolumeExpansion = allowVolumeExpansion, allowedTopologies = allowedTopologies, apiVersion = apiVersion, kind = kind, metadata = metadata, mountOptions = mountOptions, parameters = parameters, provisioner = provisioner, reclaimPolicy = reclaimPolicy, volumeBindingMode = volumeBindingMode)
+    val __obj = js.Dynamic.literal(allowVolumeExpansion = allowVolumeExpansion.asInstanceOf[js.Any], allowedTopologies = allowedTopologies.asInstanceOf[js.Any], apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], mountOptions = mountOptions.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], provisioner = provisioner.asInstanceOf[js.Any], reclaimPolicy = reclaimPolicy.asInstanceOf[js.Any], volumeBindingMode = volumeBindingMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StorageClass]
   }

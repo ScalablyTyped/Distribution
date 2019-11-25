@@ -13,9 +13,9 @@ trait RotatingFileStreamOptions extends js.Object {
 object RotatingFileStreamOptions {
   @scala.inline
   def apply(path: String, count: Int | Double = null, period: String = null): RotatingFileStreamOptions = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period)
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotatingFileStreamOptions]
   }
 }

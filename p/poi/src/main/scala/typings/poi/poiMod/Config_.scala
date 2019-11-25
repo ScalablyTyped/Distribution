@@ -55,18 +55,18 @@ object Config_ {
     publicFolder: PublicFolder = null
   ): Config_ = {
     val __obj = js.Dynamic.literal()
-    if (assets != null) __obj.updateDynamic("assets")(assets)
-    if (babel != null) __obj.updateDynamic("babel")(babel)
+    if (assets != null) __obj.updateDynamic("assets")(assets.asInstanceOf[js.Any])
+    if (babel != null) __obj.updateDynamic("babel")(babel.asInstanceOf[js.Any])
     if (chainWebpack != null) __obj.updateDynamic("chainWebpack")(js.Any.fromFunction2(chainWebpack))
     if (configureWebpack != null) __obj.updateDynamic("configureWebpack")(configureWebpack.asInstanceOf[js.Any])
-    if (constants != null) __obj.updateDynamic("constants")(constants)
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (devServer != null) __obj.updateDynamic("devServer")(devServer)
+    if (constants != null) __obj.updateDynamic("constants")(constants.asInstanceOf[js.Any])
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (devServer != null) __obj.updateDynamic("devServer")(devServer.asInstanceOf[js.Any])
     if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
-    if (envs != null) __obj.updateDynamic("envs")(envs)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (envs != null) __obj.updateDynamic("envs")(envs.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (publicFolder != null) __obj.updateDynamic("publicFolder")(publicFolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config_]
   }

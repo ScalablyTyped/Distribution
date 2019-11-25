@@ -35,10 +35,10 @@ object NativeMMLOutputProcessor {
     styles: js.Any = null
   ): NativeMMLOutputProcessor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(matchFontHeight)) __obj.updateDynamic("matchFontHeight")(matchFontHeight)
+    if (!js.isUndefined(matchFontHeight)) __obj.updateDynamic("matchFontHeight")(matchFontHeight.asInstanceOf[js.Any])
     if (minScaleAdjust != null) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeMMLOutputProcessor]
   }
 }

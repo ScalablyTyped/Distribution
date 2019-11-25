@@ -50,17 +50,17 @@ object Options {
     zooms: js.Tuple2[Double, Double] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (`3d` != null) __obj.updateDynamic("3d")(`3d`)
+    if (`3d` != null) __obj.updateDynamic("3d")(`3d`.asInstanceOf[js.Any])
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity)
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit)
-    if (!js.isUndefined(rejectMapMask)) __obj.updateDynamic("rejectMapMask")(rejectMapMask)
-    if (!js.isUndefined(renderOnZooming)) __obj.updateDynamic("renderOnZooming")(renderOnZooming)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectMapMask)) __obj.updateDynamic("rejectMapMask")(rejectMapMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderOnZooming)) __obj.updateDynamic("renderOnZooming")(renderOnZooming.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

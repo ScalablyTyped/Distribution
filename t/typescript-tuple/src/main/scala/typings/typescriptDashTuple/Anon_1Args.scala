@@ -18,7 +18,7 @@ object Anon_1Args {
     end: Reverse[Holder, js.Array[js.Any]],
     start: js.Any
   ): Anon_1Args[Tuple, Holder] = {
-    val __obj = js.Dynamic.literal(before = before, end = end, start = start)
+    val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_1Args[Tuple, Holder]]
   }

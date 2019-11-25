@@ -12,7 +12,7 @@ object RippleComponent {
   @scala.inline
   def apply(ripple: js.UndefOr[Boolean] = js.undefined): RippleComponent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ripple)) __obj.updateDynamic("ripple")(ripple)
+    if (!js.isUndefined(ripple)) __obj.updateDynamic("ripple")(ripple.asInstanceOf[js.Any])
     __obj.asInstanceOf[RippleComponent]
   }
 }

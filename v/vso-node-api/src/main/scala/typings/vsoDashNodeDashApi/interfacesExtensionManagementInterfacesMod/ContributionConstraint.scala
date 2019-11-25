@@ -41,7 +41,7 @@ object ContributionConstraint {
     properties: js.Any,
     relationships: js.Array[String]
   ): ContributionConstraint = {
-    val __obj = js.Dynamic.literal(group = group, id = id, inverse = inverse, name = name, properties = properties, relationships = relationships)
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], relationships = relationships.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContributionConstraint]
   }

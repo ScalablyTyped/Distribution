@@ -2,7 +2,6 @@ package typings.next.distClientRouterMod
 
 import typings.next.Anon_App
 import typings.next.distNextDashServerLibMittMod.MittEmitter
-import typings.next.distNextDashServerLibRouterRouterMod.default
 import typings.node.querystringMod.ParsedUrlQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("next/dist/client/router", "Router")
 @js.native
-class Router protected () extends default {
+class Router protected ()
+  extends typings.next.distNextDashServerLibRouterRouterMod.default {
   def this(
     pathname: String,
     query: ParsedUrlQuery,

@@ -13,8 +13,8 @@ trait NetworkChangeResult extends js.Object {
 object NetworkChangeResult {
   @scala.inline
   def apply(isConnected: Boolean, `type`: Double): NetworkChangeResult = {
-    val __obj = js.Dynamic.literal(isConnected = isConnected)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(isConnected = isConnected.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkChangeResult]
   }
 }

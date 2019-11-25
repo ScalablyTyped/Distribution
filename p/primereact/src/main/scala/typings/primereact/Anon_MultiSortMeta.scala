@@ -13,7 +13,7 @@ trait Anon_MultiSortMeta extends js.Object {
 object Anon_MultiSortMeta {
   @scala.inline
   def apply(multiSortMeta: js.Any, sortField: String, sortOrder: Double): Anon_MultiSortMeta = {
-    val __obj = js.Dynamic.literal(multiSortMeta = multiSortMeta, sortField = sortField, sortOrder = sortOrder)
+    val __obj = js.Dynamic.literal(multiSortMeta = multiSortMeta.asInstanceOf[js.Any], sortField = sortField.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MultiSortMeta]
   }

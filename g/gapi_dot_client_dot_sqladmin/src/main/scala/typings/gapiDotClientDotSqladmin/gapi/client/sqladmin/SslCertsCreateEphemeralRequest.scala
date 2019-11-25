@@ -13,7 +13,7 @@ object SslCertsCreateEphemeralRequest {
   @scala.inline
   def apply(public_key: String = null): SslCertsCreateEphemeralRequest = {
     val __obj = js.Dynamic.literal()
-    if (public_key != null) __obj.updateDynamic("public_key")(public_key)
+    if (public_key != null) __obj.updateDynamic("public_key")(public_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SslCertsCreateEphemeralRequest]
   }
 }

@@ -44,7 +44,7 @@ object DeviceCompliancePolicyDeviceStateSummary {
     if (configManagerCount != null) __obj.updateDynamic("configManagerCount")(configManagerCount.asInstanceOf[js.Any])
     if (conflictDeviceCount != null) __obj.updateDynamic("conflictDeviceCount")(conflictDeviceCount.asInstanceOf[js.Any])
     if (errorDeviceCount != null) __obj.updateDynamic("errorDeviceCount")(errorDeviceCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inGracePeriodCount != null) __obj.updateDynamic("inGracePeriodCount")(inGracePeriodCount.asInstanceOf[js.Any])
     if (nonCompliantDeviceCount != null) __obj.updateDynamic("nonCompliantDeviceCount")(nonCompliantDeviceCount.asInstanceOf[js.Any])
     if (notApplicableDeviceCount != null) __obj.updateDynamic("notApplicableDeviceCount")(notApplicableDeviceCount.asInstanceOf[js.Any])

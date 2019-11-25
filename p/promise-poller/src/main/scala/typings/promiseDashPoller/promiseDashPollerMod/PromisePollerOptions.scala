@@ -166,7 +166,7 @@ object PromisePollerOptions {
     if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (progressCallback != null) __obj.updateDynamic("progressCallback")(js.Any.fromFunction2(progressCallback))
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (shouldContinue != null) __obj.updateDynamic("shouldContinue")(js.Any.fromFunction2(shouldContinue))

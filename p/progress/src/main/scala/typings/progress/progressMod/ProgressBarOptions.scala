@@ -65,15 +65,15 @@ object ProgressBarOptions {
     stream: WritableStream = null,
     width: Int | Double = null
   ): ProgressBarOptions = {
-    val __obj = js.Dynamic.literal(total = total)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
     if (curr != null) __obj.updateDynamic("curr")(curr.asInstanceOf[js.Any])
-    if (head != null) __obj.updateDynamic("head")(head)
-    if (incomplete != null) __obj.updateDynamic("incomplete")(incomplete)
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
+    if (incomplete != null) __obj.updateDynamic("incomplete")(incomplete.asInstanceOf[js.Any])
     if (renderThrottle != null) __obj.updateDynamic("renderThrottle")(renderThrottle.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarOptions]
   }

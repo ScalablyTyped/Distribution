@@ -50,7 +50,7 @@ object DataPoint {
     stdDev: Double,
     value: Double
   ): DataPoint = {
-    val __obj = js.Dynamic.literal(count = count, kind = kind, max = max, min = min, name = name, stdDev = stdDev, value = value)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stdDev = stdDev.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataPoint]
   }

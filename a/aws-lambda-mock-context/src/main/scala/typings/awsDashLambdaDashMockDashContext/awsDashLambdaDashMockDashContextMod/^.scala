@@ -1,5 +1,6 @@
 package typings.awsDashLambdaDashMockDashContext.awsDashLambdaDashMockDashContextMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.awsDashLambda.awsDashLambdaMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,8 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-lambda-mock-context", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def apply(): Context = js.native
-  def apply(options: ContextOptions): Context = js.native
-}
+object ^
+  extends TopLevel[js.Function1[/* options */ js.UndefOr[ContextOptions], Context]]
 

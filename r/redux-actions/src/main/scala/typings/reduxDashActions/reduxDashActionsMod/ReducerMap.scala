@@ -13,7 +13,7 @@ object ReducerMap {
   @scala.inline
   def apply[State, Payload](StringDictionary: /* actionType */ StringDictionary[ReducerMapValue[State, Payload]] = null): ReducerMap[State, Payload] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ReducerMap[State, Payload]]
   }
 }

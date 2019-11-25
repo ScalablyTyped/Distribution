@@ -14,7 +14,7 @@ trait Layout extends js.Object {
 object Layout {
   @scala.inline
   def apply(height: Double, images: js.Array[Anon_X with Image], width: Double): Layout = {
-    val __obj = js.Dynamic.literal(height = height, images = images, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Layout]
   }

@@ -25,8 +25,8 @@ object LoginOptions {
     serverPresenceControl: js.UndefOr[Boolean] = js.undefined
   ): LoginOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(receiveCalls)) __obj.updateDynamic("receiveCalls")(receiveCalls)
-    if (!js.isUndefined(serverPresenceControl)) __obj.updateDynamic("serverPresenceControl")(serverPresenceControl)
+    if (!js.isUndefined(receiveCalls)) __obj.updateDynamic("receiveCalls")(receiveCalls.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverPresenceControl)) __obj.updateDynamic("serverPresenceControl")(serverPresenceControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginOptions]
   }
 }

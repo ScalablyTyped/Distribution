@@ -13,7 +13,7 @@ object AddDealAssociationRequest {
   @scala.inline
   def apply(association: CreativeDealAssociation = null): AddDealAssociationRequest = {
     val __obj = js.Dynamic.literal()
-    if (association != null) __obj.updateDynamic("association")(association)
+    if (association != null) __obj.updateDynamic("association")(association.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddDealAssociationRequest]
   }
 }

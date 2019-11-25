@@ -11,7 +11,7 @@ trait ProjectsGetCardParams extends js.Object {
 object ProjectsGetCardParams {
   @scala.inline
   def apply(card_id: Double): ProjectsGetCardParams = {
-    val __obj = js.Dynamic.literal(card_id = card_id)
+    val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectsGetCardParams]
   }

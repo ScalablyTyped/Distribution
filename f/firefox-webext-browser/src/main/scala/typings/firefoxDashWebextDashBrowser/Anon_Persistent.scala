@@ -14,8 +14,8 @@ trait Anon_Persistent extends js.Object {
 object Anon_Persistent {
   @scala.inline
   def apply(scripts: js.Array[ExtensionURL], persistent: js.UndefOr[Boolean] = js.undefined): Anon_Persistent = {
-    val __obj = js.Dynamic.literal(scripts = scripts)
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    val __obj = js.Dynamic.literal(scripts = scripts.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Persistent]
   }
 }

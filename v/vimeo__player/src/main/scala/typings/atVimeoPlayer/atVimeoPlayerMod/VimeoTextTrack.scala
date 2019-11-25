@@ -14,8 +14,8 @@ trait VimeoTextTrack extends js.Object {
 object VimeoTextTrack {
   @scala.inline
   def apply(kind: String, label: String, language: String, mode: String = null): VimeoTextTrack = {
-    val __obj = js.Dynamic.literal(kind = kind, label = label, language = language)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[VimeoTextTrack]
   }
 }

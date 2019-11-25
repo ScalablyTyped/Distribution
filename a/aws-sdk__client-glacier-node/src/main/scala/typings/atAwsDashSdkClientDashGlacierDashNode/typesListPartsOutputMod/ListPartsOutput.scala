@@ -55,14 +55,14 @@ object ListPartsOutput {
     Parts: js.Array[_UnmarshalledPartListElement] = null,
     VaultARN: String = null
   ): ListPartsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ArchiveDescription != null) __obj.updateDynamic("ArchiveDescription")(ArchiveDescription)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (MultipartUploadId != null) __obj.updateDynamic("MultipartUploadId")(MultipartUploadId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ArchiveDescription != null) __obj.updateDynamic("ArchiveDescription")(ArchiveDescription.asInstanceOf[js.Any])
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (MultipartUploadId != null) __obj.updateDynamic("MultipartUploadId")(MultipartUploadId.asInstanceOf[js.Any])
     if (PartSizeInBytes != null) __obj.updateDynamic("PartSizeInBytes")(PartSizeInBytes.asInstanceOf[js.Any])
-    if (Parts != null) __obj.updateDynamic("Parts")(Parts)
-    if (VaultARN != null) __obj.updateDynamic("VaultARN")(VaultARN)
+    if (Parts != null) __obj.updateDynamic("Parts")(Parts.asInstanceOf[js.Any])
+    if (VaultARN != null) __obj.updateDynamic("VaultARN")(VaultARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPartsOutput]
   }
 }

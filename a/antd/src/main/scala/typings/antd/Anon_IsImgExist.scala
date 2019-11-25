@@ -13,7 +13,7 @@ trait Anon_IsImgExist extends js.Object {
 object Anon_IsImgExist {
   @scala.inline
   def apply(isImgExist: Boolean, mounted: Boolean, scale: Double): Anon_IsImgExist = {
-    val __obj = js.Dynamic.literal(isImgExist = isImgExist, mounted = mounted, scale = scale)
+    val __obj = js.Dynamic.literal(isImgExist = isImgExist.asInstanceOf[js.Any], mounted = mounted.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsImgExist]
   }

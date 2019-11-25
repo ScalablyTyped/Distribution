@@ -48,18 +48,18 @@ object GraphicsStats {
     totalFrames: String = null
   ): GraphicsStats = {
     val __obj = js.Dynamic.literal()
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
-    if (highInputLatencyCount != null) __obj.updateDynamic("highInputLatencyCount")(highInputLatencyCount)
-    if (jankyFrames != null) __obj.updateDynamic("jankyFrames")(jankyFrames)
-    if (missedVsyncCount != null) __obj.updateDynamic("missedVsyncCount")(missedVsyncCount)
-    if (p50Millis != null) __obj.updateDynamic("p50Millis")(p50Millis)
-    if (p90Millis != null) __obj.updateDynamic("p90Millis")(p90Millis)
-    if (p95Millis != null) __obj.updateDynamic("p95Millis")(p95Millis)
-    if (p99Millis != null) __obj.updateDynamic("p99Millis")(p99Millis)
-    if (slowBitmapUploadCount != null) __obj.updateDynamic("slowBitmapUploadCount")(slowBitmapUploadCount)
-    if (slowDrawCount != null) __obj.updateDynamic("slowDrawCount")(slowDrawCount)
-    if (slowUiThreadCount != null) __obj.updateDynamic("slowUiThreadCount")(slowUiThreadCount)
-    if (totalFrames != null) __obj.updateDynamic("totalFrames")(totalFrames)
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
+    if (highInputLatencyCount != null) __obj.updateDynamic("highInputLatencyCount")(highInputLatencyCount.asInstanceOf[js.Any])
+    if (jankyFrames != null) __obj.updateDynamic("jankyFrames")(jankyFrames.asInstanceOf[js.Any])
+    if (missedVsyncCount != null) __obj.updateDynamic("missedVsyncCount")(missedVsyncCount.asInstanceOf[js.Any])
+    if (p50Millis != null) __obj.updateDynamic("p50Millis")(p50Millis.asInstanceOf[js.Any])
+    if (p90Millis != null) __obj.updateDynamic("p90Millis")(p90Millis.asInstanceOf[js.Any])
+    if (p95Millis != null) __obj.updateDynamic("p95Millis")(p95Millis.asInstanceOf[js.Any])
+    if (p99Millis != null) __obj.updateDynamic("p99Millis")(p99Millis.asInstanceOf[js.Any])
+    if (slowBitmapUploadCount != null) __obj.updateDynamic("slowBitmapUploadCount")(slowBitmapUploadCount.asInstanceOf[js.Any])
+    if (slowDrawCount != null) __obj.updateDynamic("slowDrawCount")(slowDrawCount.asInstanceOf[js.Any])
+    if (slowUiThreadCount != null) __obj.updateDynamic("slowUiThreadCount")(slowUiThreadCount.asInstanceOf[js.Any])
+    if (totalFrames != null) __obj.updateDynamic("totalFrames")(totalFrames.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphicsStats]
   }
 }

@@ -13,8 +13,8 @@ object MergeCellsRequest {
   @scala.inline
   def apply(mergeType: String = null, range: GridRange = null): MergeCellsRequest = {
     val __obj = js.Dynamic.literal()
-    if (mergeType != null) __obj.updateDynamic("mergeType")(mergeType)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (mergeType != null) __obj.updateDynamic("mergeType")(mergeType.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeCellsRequest]
   }
 }

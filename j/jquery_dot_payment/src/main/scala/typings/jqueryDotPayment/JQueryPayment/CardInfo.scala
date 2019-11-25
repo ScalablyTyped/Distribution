@@ -49,13 +49,13 @@ object CardInfo {
     `type`: String = null
   ): CardInfo = {
     val __obj = js.Dynamic.literal()
-    if (cvcLength != null) __obj.updateDynamic("cvcLength")(cvcLength)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (length != null) __obj.updateDynamic("length")(length)
-    if (!js.isUndefined(luhn)) __obj.updateDynamic("luhn")(luhn)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (patterns != null) __obj.updateDynamic("patterns")(patterns)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (cvcLength != null) __obj.updateDynamic("cvcLength")(cvcLength.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (!js.isUndefined(luhn)) __obj.updateDynamic("luhn")(luhn.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (patterns != null) __obj.updateDynamic("patterns")(patterns.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardInfo]
   }
 }

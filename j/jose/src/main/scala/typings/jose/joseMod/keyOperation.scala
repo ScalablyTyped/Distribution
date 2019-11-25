@@ -15,3 +15,22 @@ import scala.scalajs.js.annotation._
 */
 trait keyOperation extends js.Object
 
+object keyOperation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def decrypt: typings.jose.joseStrings.decrypt = this.cast("decrypt")
+  @scala.inline
+  def deriveKey: typings.jose.joseStrings.deriveKey = this.cast("deriveKey")
+  @scala.inline
+  def encrypt: typings.jose.joseStrings.encrypt = this.cast("encrypt")
+  @scala.inline
+  def sign: typings.jose.joseStrings.sign = this.cast("sign")
+  @scala.inline
+  def unwrapKey: typings.jose.joseStrings.unwrapKey = this.cast("unwrapKey")
+  @scala.inline
+  def verify: typings.jose.joseStrings.verify = this.cast("verify")
+  @scala.inline
+  def wrapKey: typings.jose.joseStrings.wrapKey = this.cast("wrapKey")
+}
+

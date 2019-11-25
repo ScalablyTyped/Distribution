@@ -18,7 +18,7 @@ trait IThemeObject extends js.Object {
 object IThemeObject {
   @scala.inline
   def apply(background: String, cursor: String, cursorAccent: String, foreground: String, selection: String): IThemeObject = {
-    val __obj = js.Dynamic.literal(background = background, cursor = cursor, cursorAccent = cursorAccent, foreground = foreground, selection = selection)
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], cursorAccent = cursorAccent.asInstanceOf[js.Any], foreground = foreground.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IThemeObject]
   }

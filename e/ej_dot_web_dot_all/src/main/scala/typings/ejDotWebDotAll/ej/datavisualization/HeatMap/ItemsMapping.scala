@@ -42,12 +42,12 @@ object ItemsMapping {
     value: ItemsMappingValue = null
   ): ItemsMapping = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (columnMapping != null) __obj.updateDynamic("columnMapping")(columnMapping)
-    if (columnStyle != null) __obj.updateDynamic("columnStyle")(columnStyle)
-    if (headerMapping != null) __obj.updateDynamic("headerMapping")(headerMapping)
-    if (row != null) __obj.updateDynamic("row")(row)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (columnMapping != null) __obj.updateDynamic("columnMapping")(columnMapping.asInstanceOf[js.Any])
+    if (columnStyle != null) __obj.updateDynamic("columnStyle")(columnStyle.asInstanceOf[js.Any])
+    if (headerMapping != null) __obj.updateDynamic("headerMapping")(headerMapping.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsMapping]
   }
 }

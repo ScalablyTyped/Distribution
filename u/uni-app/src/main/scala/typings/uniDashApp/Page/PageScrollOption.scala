@@ -14,7 +14,7 @@ trait PageScrollOption extends js.Object {
 object PageScrollOption {
   @scala.inline
   def apply(scrollTop: Double): PageScrollOption = {
-    val __obj = js.Dynamic.literal(scrollTop = scrollTop)
+    val __obj = js.Dynamic.literal(scrollTop = scrollTop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageScrollOption]
   }

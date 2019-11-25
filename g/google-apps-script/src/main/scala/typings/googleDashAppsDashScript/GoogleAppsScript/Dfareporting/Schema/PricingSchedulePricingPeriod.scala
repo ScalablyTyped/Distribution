@@ -22,11 +22,11 @@ object PricingSchedulePricingPeriod {
     units: String = null
   ): PricingSchedulePricingPeriod = {
     val __obj = js.Dynamic.literal()
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (pricingComment != null) __obj.updateDynamic("pricingComment")(pricingComment)
-    if (rateOrCostNanos != null) __obj.updateDynamic("rateOrCostNanos")(rateOrCostNanos)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (pricingComment != null) __obj.updateDynamic("pricingComment")(pricingComment.asInstanceOf[js.Any])
+    if (rateOrCostNanos != null) __obj.updateDynamic("rateOrCostNanos")(rateOrCostNanos.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[PricingSchedulePricingPeriod]
   }
 }

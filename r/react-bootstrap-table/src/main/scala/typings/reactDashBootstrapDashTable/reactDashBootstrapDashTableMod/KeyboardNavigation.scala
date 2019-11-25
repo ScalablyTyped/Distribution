@@ -43,12 +43,12 @@ object KeyboardNavigation {
     enterToSelect: js.UndefOr[Boolean] = js.undefined
   ): KeyboardNavigation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickToNav)) __obj.updateDynamic("clickToNav")(clickToNav)
+    if (!js.isUndefined(clickToNav)) __obj.updateDynamic("clickToNav")(clickToNav.asInstanceOf[js.Any])
     if (customStyle != null) __obj.updateDynamic("customStyle")(js.Any.fromFunction2(customStyle))
     if (customStyleOnEditCell != null) __obj.updateDynamic("customStyleOnEditCell")(js.Any.fromFunction2(customStyleOnEditCell))
-    if (!js.isUndefined(enterToEdit)) __obj.updateDynamic("enterToEdit")(enterToEdit)
-    if (!js.isUndefined(enterToExpand)) __obj.updateDynamic("enterToExpand")(enterToExpand)
-    if (!js.isUndefined(enterToSelect)) __obj.updateDynamic("enterToSelect")(enterToSelect)
+    if (!js.isUndefined(enterToEdit)) __obj.updateDynamic("enterToEdit")(enterToEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterToExpand)) __obj.updateDynamic("enterToExpand")(enterToExpand.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterToSelect)) __obj.updateDynamic("enterToSelect")(enterToSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardNavigation]
   }
 }

@@ -45,11 +45,11 @@ object SetDataRetrievalPolicyInput {
     $maxRetries: Int | Double = null,
     Policy: _DataRetrievalPolicy = null
   ): SetDataRetrievalPolicyInput = {
-    val __obj = js.Dynamic.literal(accountId = accountId)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy)
+    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDataRetrievalPolicyInput]
   }
 }

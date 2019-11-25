@@ -23,10 +23,10 @@ object ChartBoxStyle {
     strokeWidth: Int | Double = null
   ): ChartBoxStyle = {
     val __obj = js.Dynamic.literal()
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
     if (ry != null) __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartBoxStyle]
   }

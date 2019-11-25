@@ -28,11 +28,11 @@ object ClientPattern {
     pubsub$: js.UndefOr[Boolean] = js.undefined,
     timeout$: Int | Double = null
   ): ClientPattern = {
-    val __obj = js.Dynamic.literal(topic = topic)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (expectedMessages$ != null) __obj.updateDynamic("expectedMessages$")(expectedMessages$.asInstanceOf[js.Any])
     if (maxMessages$ != null) __obj.updateDynamic("maxMessages$")(maxMessages$.asInstanceOf[js.Any])
-    if (!js.isUndefined(pubsub$)) __obj.updateDynamic("pubsub$")(pubsub$)
+    if (!js.isUndefined(pubsub$)) __obj.updateDynamic("pubsub$")(pubsub$.asInstanceOf[js.Any])
     if (timeout$ != null) __obj.updateDynamic("timeout$")(timeout$.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientPattern]
   }

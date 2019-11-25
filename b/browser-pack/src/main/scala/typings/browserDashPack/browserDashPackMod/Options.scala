@@ -52,15 +52,15 @@ object Options {
     standaloneModule: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
-    if (externalRequireName != null) __obj.updateDynamic("externalRequireName")(externalRequireName)
-    if (!js.isUndefined(hasExports)) __obj.updateDynamic("hasExports")(hasExports)
-    if (prelude != null) __obj.updateDynamic("prelude")(prelude)
-    if (preludePath != null) __obj.updateDynamic("preludePath")(preludePath)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (sourceMapPrefix != null) __obj.updateDynamic("sourceMapPrefix")(sourceMapPrefix)
-    if (standalone != null) __obj.updateDynamic("standalone")(standalone)
-    if (standaloneModule != null) __obj.updateDynamic("standaloneModule")(standaloneModule)
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir.asInstanceOf[js.Any])
+    if (externalRequireName != null) __obj.updateDynamic("externalRequireName")(externalRequireName.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasExports)) __obj.updateDynamic("hasExports")(hasExports.asInstanceOf[js.Any])
+    if (prelude != null) __obj.updateDynamic("prelude")(prelude.asInstanceOf[js.Any])
+    if (preludePath != null) __obj.updateDynamic("preludePath")(preludePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (sourceMapPrefix != null) __obj.updateDynamic("sourceMapPrefix")(sourceMapPrefix.asInstanceOf[js.Any])
+    if (standalone != null) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (standaloneModule != null) __obj.updateDynamic("standaloneModule")(standaloneModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

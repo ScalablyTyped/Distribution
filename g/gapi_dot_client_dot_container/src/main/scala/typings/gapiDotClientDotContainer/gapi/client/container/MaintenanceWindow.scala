@@ -13,7 +13,7 @@ object MaintenanceWindow {
   @scala.inline
   def apply(dailyMaintenanceWindow: DailyMaintenanceWindow = null): MaintenanceWindow = {
     val __obj = js.Dynamic.literal()
-    if (dailyMaintenanceWindow != null) __obj.updateDynamic("dailyMaintenanceWindow")(dailyMaintenanceWindow)
+    if (dailyMaintenanceWindow != null) __obj.updateDynamic("dailyMaintenanceWindow")(dailyMaintenanceWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindow]
   }
 }

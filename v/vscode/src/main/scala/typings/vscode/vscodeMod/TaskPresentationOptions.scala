@@ -46,12 +46,12 @@ object TaskPresentationOptions {
     showReuseMessage: js.UndefOr[Boolean] = js.undefined
   ): TaskPresentationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear)
-    if (!js.isUndefined(echo)) __obj.updateDynamic("echo")(echo)
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
-    if (panel != null) __obj.updateDynamic("panel")(panel)
-    if (reveal != null) __obj.updateDynamic("reveal")(reveal)
-    if (!js.isUndefined(showReuseMessage)) __obj.updateDynamic("showReuseMessage")(showReuseMessage)
+    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
+    if (!js.isUndefined(echo)) __obj.updateDynamic("echo")(echo.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
+    if (reveal != null) __obj.updateDynamic("reveal")(reveal.asInstanceOf[js.Any])
+    if (!js.isUndefined(showReuseMessage)) __obj.updateDynamic("showReuseMessage")(showReuseMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskPresentationOptions]
   }
 }

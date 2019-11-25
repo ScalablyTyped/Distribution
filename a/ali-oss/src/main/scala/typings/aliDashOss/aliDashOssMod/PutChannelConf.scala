@@ -15,9 +15,9 @@ object PutChannelConf {
   @scala.inline
   def apply(Description: String = null, Status: String = null, Target: Anon_FragCount = null): PutChannelConf = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (Status != null) __obj.updateDynamic("Status")(Status)
-    if (Target != null) __obj.updateDynamic("Target")(Target)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (Target != null) __obj.updateDynamic("Target")(Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutChannelConf]
   }
 }

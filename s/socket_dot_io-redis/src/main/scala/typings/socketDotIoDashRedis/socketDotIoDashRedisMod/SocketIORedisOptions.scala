@@ -49,11 +49,11 @@ object SocketIORedisOptions {
   ): SocketIORedisOptions = {
     val __obj = js.Dynamic.literal()
     if (auth_pass != null) __obj.updateDynamic("auth_pass")(auth_pass.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (pubClient != null) __obj.updateDynamic("pubClient")(pubClient)
-    if (subClient != null) __obj.updateDynamic("subClient")(subClient)
+    if (pubClient != null) __obj.updateDynamic("pubClient")(pubClient.asInstanceOf[js.Any])
+    if (subClient != null) __obj.updateDynamic("subClient")(subClient.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketIORedisOptions]
   }
 }

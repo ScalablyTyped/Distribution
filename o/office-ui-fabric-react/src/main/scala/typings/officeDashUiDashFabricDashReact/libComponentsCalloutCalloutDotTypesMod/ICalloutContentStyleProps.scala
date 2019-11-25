@@ -54,14 +54,14 @@ object ICalloutContentStyleProps {
     overflowYHidden: js.UndefOr[Boolean] = js.undefined,
     positions: ICalloutPositionedInfo = null
   ): ICalloutContentStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (beakWidth != null) __obj.updateDynamic("beakWidth")(beakWidth.asInstanceOf[js.Any])
     if (calloutMaxWidth != null) __obj.updateDynamic("calloutMaxWidth")(calloutMaxWidth.asInstanceOf[js.Any])
     if (calloutWidth != null) __obj.updateDynamic("calloutWidth")(calloutWidth.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(overflowYHidden)) __obj.updateDynamic("overflowYHidden")(overflowYHidden)
-    if (positions != null) __obj.updateDynamic("positions")(positions)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflowYHidden)) __obj.updateDynamic("overflowYHidden")(overflowYHidden.asInstanceOf[js.Any])
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalloutContentStyleProps]
   }
 }

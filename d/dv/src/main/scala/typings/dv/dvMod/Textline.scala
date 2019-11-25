@@ -11,7 +11,7 @@ trait Textline extends js.Object {
 object Textline {
   @scala.inline
   def apply(box: Box): Textline = {
-    val __obj = js.Dynamic.literal(box = box)
+    val __obj = js.Dynamic.literal(box = box.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Textline]
   }

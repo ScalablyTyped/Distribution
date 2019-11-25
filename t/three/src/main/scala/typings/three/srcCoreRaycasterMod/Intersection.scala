@@ -31,13 +31,13 @@ object Intersection {
     index: Int | Double = null,
     uv: Vector2 = null
   ): Intersection = {
-    val __obj = js.Dynamic.literal(distance = distance, point = point)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (distanceToRay != null) __obj.updateDynamic("distanceToRay")(distanceToRay.asInstanceOf[js.Any])
-    if (face != null) __obj.updateDynamic("face")(face)
+    if (face != null) __obj.updateDynamic("face")(face.asInstanceOf[js.Any])
     if (faceIndex != null) __obj.updateDynamic("faceIndex")(faceIndex.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (uv != null) __obj.updateDynamic("uv")(uv)
+    if (uv != null) __obj.updateDynamic("uv")(uv.asInstanceOf[js.Any])
     __obj.asInstanceOf[Intersection]
   }
 }

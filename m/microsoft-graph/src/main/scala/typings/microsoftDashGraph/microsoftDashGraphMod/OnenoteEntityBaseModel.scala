@@ -13,8 +13,8 @@ object OnenoteEntityBaseModel {
   @scala.inline
   def apply(id: String = null, self: String = null): OnenoteEntityBaseModel = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (self != null) __obj.updateDynamic("self")(self)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenoteEntityBaseModel]
   }
 }

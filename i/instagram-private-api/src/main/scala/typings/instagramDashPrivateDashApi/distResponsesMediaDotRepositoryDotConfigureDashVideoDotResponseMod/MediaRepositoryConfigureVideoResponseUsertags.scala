@@ -11,7 +11,7 @@ trait MediaRepositoryConfigureVideoResponseUsertags extends js.Object {
 object MediaRepositoryConfigureVideoResponseUsertags {
   @scala.inline
   def apply(in: js.Array[MediaRepositoryConfigureVideoResponseInItem]): MediaRepositoryConfigureVideoResponseUsertags = {
-    val __obj = js.Dynamic.literal(in = in)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaRepositoryConfigureVideoResponseUsertags]
   }

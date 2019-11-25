@@ -20,9 +20,9 @@ object Anon_Default {
     namespace: String = null
   ): Anon_Default = {
     val __obj = js.Dynamic.literal(locales = locales.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Default]
   }
 }

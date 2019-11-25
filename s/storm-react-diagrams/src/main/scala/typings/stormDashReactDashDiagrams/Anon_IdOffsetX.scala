@@ -15,8 +15,8 @@ trait Anon_IdOffsetX extends js.Object {
 object Anon_IdOffsetX {
   @scala.inline
   def apply(id: String, offsetX: Double, offsetY: Double, selected: Boolean, `type`: String): Anon_IdOffsetX = {
-    val __obj = js.Dynamic.literal(id = id, offsetX = offsetX, offsetY = offsetY, selected = selected)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdOffsetX]
   }
 }

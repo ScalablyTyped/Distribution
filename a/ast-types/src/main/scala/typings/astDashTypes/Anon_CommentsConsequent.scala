@@ -23,10 +23,10 @@ object Anon_CommentsConsequent {
     loc: SourceLocationKind = null,
     test: ExpressionKind = null
   ): Anon_CommentsConsequent = {
-    val __obj = js.Dynamic.literal(consequent = consequent)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (test != null) __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsConsequent]
   }
 }

@@ -30,12 +30,12 @@ object IOrderUpdateOptions {
     status: OrderStatus = null
   ): IOrderUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (coupon != null) __obj.updateDynamic("coupon")(coupon)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (selected_shipping_method != null) __obj.updateDynamic("selected_shipping_method")(selected_shipping_method)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (selected_shipping_method != null) __obj.updateDynamic("selected_shipping_method")(selected_shipping_method.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrderUpdateOptions]
   }
 }

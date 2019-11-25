@@ -22,10 +22,10 @@ object Options {
     duration: Int | Double = null,
     ease: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(offset = offset)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (ease != null) __obj.updateDynamic("ease")(ease)
+    if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

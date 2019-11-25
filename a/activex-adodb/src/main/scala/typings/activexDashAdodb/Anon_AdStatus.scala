@@ -17,7 +17,7 @@ trait Anon_AdStatus extends js.Object {
 object Anon_AdStatus {
   @scala.inline
   def apply(TransactionLevel: Double, adStatus: EventStatusEnum, pConnection: Connection, pError: Error): Anon_AdStatus = {
-    val __obj = js.Dynamic.literal(TransactionLevel = TransactionLevel, adStatus = adStatus, pConnection = pConnection, pError = pError)
+    val __obj = js.Dynamic.literal(TransactionLevel = TransactionLevel.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], pConnection = pConnection.asInstanceOf[js.Any], pError = pError.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdStatus]
   }

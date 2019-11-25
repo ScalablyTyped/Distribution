@@ -11,7 +11,7 @@ trait Anon_DefaultProps extends js.Object {
 object Anon_DefaultProps {
   @scala.inline
   def apply(defaultProps: Anon_IsLink): Anon_DefaultProps = {
-    val __obj = js.Dynamic.literal(defaultProps = defaultProps)
+    val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefaultProps]
   }

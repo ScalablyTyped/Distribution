@@ -41,7 +41,7 @@ object TaskDefinitionEndpoint {
     taskId: String,
     url: String
   ): TaskDefinitionEndpoint = {
-    val __obj = js.Dynamic.literal(connectionId = connectionId, keySelector = keySelector, scope = scope, selector = selector, taskId = taskId, url = url)
+    val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], keySelector = keySelector.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskDefinitionEndpoint]
   }

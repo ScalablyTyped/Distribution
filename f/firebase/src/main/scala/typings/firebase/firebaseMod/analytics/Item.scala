@@ -30,13 +30,13 @@ object Item {
     quantity: Int | Double = null
   ): Item = {
     val __obj = js.Dynamic.literal()
-    if (brand != null) __obj.updateDynamic("brand")(brand)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (creative_name != null) __obj.updateDynamic("creative_name")(creative_name)
-    if (creative_slot != null) __obj.updateDynamic("creative_slot")(creative_slot)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (location_id != null) __obj.updateDynamic("location_id")(location_id)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (creative_name != null) __obj.updateDynamic("creative_name")(creative_name.asInstanceOf[js.Any])
+    if (creative_slot != null) __obj.updateDynamic("creative_slot")(creative_slot.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (location_id != null) __obj.updateDynamic("location_id")(location_id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]

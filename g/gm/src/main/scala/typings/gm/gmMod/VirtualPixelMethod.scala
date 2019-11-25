@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait VirtualPixelMethod extends js.Object
 
+object VirtualPixelMethod {
+  @scala.inline
+  def Constant: typings.gm.gmStrings.Constant = this.cast("Constant")
+  @scala.inline
+  def Edge: typings.gm.gmStrings.Edge = this.cast("Edge")
+  @scala.inline
+  def Mirror: typings.gm.gmStrings.Mirror = this.cast("Mirror")
+  @scala.inline
+  def Tile: typings.gm.gmStrings.Tile = this.cast("Tile")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

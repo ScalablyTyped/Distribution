@@ -11,7 +11,7 @@ trait SyntaxHighlighterState extends js.Object {
 object SyntaxHighlighterState {
   @scala.inline
   def apply(copied: Boolean): SyntaxHighlighterState = {
-    val __obj = js.Dynamic.literal(copied = copied)
+    val __obj = js.Dynamic.literal(copied = copied.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SyntaxHighlighterState]
   }

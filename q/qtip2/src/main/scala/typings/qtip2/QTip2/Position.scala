@@ -29,7 +29,7 @@ object Position {
     viewport: JQuery | Boolean = null
   ): Position = {
     val __obj = js.Dynamic.literal()
-    if (adjust != null) __obj.updateDynamic("adjust")(adjust)
+    if (adjust != null) __obj.updateDynamic("adjust")(adjust.asInstanceOf[js.Any])
     if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])

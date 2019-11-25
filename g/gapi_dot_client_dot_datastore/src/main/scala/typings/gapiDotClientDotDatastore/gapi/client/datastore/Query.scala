@@ -62,15 +62,15 @@ object Query {
     startCursor: String = null
   ): Query = {
     val __obj = js.Dynamic.literal()
-    if (distinctOn != null) __obj.updateDynamic("distinctOn")(distinctOn)
-    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (distinctOn != null) __obj.updateDynamic("distinctOn")(distinctOn.asInstanceOf[js.Any])
+    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
 }

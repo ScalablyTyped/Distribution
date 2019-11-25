@@ -21,8 +21,8 @@ object Anon_Back {
   @scala.inline
   def apply(back: String = null, front: String = null): Anon_Back = {
     val __obj = js.Dynamic.literal()
-    if (back != null) __obj.updateDynamic("back")(back)
-    if (front != null) __obj.updateDynamic("front")(front)
+    if (back != null) __obj.updateDynamic("back")(back.asInstanceOf[js.Any])
+    if (front != null) __obj.updateDynamic("front")(front.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Back]
   }
 }

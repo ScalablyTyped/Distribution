@@ -46,9 +46,9 @@ object Theme {
     overrides: Overrides = null,
     props: ComponentsProps = null
   ): Theme = {
-    val __obj = js.Dynamic.literal(breakpoints = breakpoints, direction = direction, mixins = mixins, palette = palette, shadows = shadows, shape = shape, spacing = spacing, transitions = transitions, typography = typography, zIndex = zIndex)
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
-    if (props != null) __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any], shadows = shadows.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any], typography = typography.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }
 }

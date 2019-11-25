@@ -22,10 +22,10 @@ object WorkbookComment {
     replies: js.Array[WorkbookCommentReply] = null
   ): WorkbookComment = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (replies != null) __obj.updateDynamic("replies")(replies)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookComment]
   }
 }

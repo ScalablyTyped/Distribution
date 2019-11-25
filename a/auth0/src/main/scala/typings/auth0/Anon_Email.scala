@@ -24,12 +24,12 @@ object Anon_Email {
     request_language: String = null
   ): Anon_Email = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number)
-    if (!js.isUndefined(phone_verified)) __obj.updateDynamic("phone_verified")(phone_verified)
-    if (request_language != null) __obj.updateDynamic("request_language")(request_language)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
+    if (!js.isUndefined(phone_verified)) __obj.updateDynamic("phone_verified")(phone_verified.asInstanceOf[js.Any])
+    if (request_language != null) __obj.updateDynamic("request_language")(request_language.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Email]
   }
 }

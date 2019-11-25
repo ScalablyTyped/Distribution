@@ -32,10 +32,10 @@ object DateOptions {
     updated_at_min: String = null
   ): DateOptions = {
     val __obj = js.Dynamic.literal()
-    if (created_at_max != null) __obj.updateDynamic("created_at_max")(created_at_max)
-    if (created_at_min != null) __obj.updateDynamic("created_at_min")(created_at_min)
-    if (updated_at_max != null) __obj.updateDynamic("updated_at_max")(updated_at_max)
-    if (updated_at_min != null) __obj.updateDynamic("updated_at_min")(updated_at_min)
+    if (created_at_max != null) __obj.updateDynamic("created_at_max")(created_at_max.asInstanceOf[js.Any])
+    if (created_at_min != null) __obj.updateDynamic("created_at_min")(created_at_min.asInstanceOf[js.Any])
+    if (updated_at_max != null) __obj.updateDynamic("updated_at_max")(updated_at_max.asInstanceOf[js.Any])
+    if (updated_at_min != null) __obj.updateDynamic("updated_at_min")(updated_at_min.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateOptions]
   }
 }
